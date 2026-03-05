@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+title: "The Organizational Schema Theory: Test-Driven Business Design"
+version: 1.0.0
+date-released: 2026-03-05
+url: "https://github.com/spectralbranding/orgschema-papers"
+repository-code: "https://github.com/spectralbranding/orgschema-framework"
+keywords:
+  - test-driven development
+  - business design
+  - configuration management
+  - design science research
+  - declarative process management
+  - organizational specification
+license: MIT
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+  title: "The Organizational Schema Theory: Test-Driven Business Design"
+  year: 2026
+  url: "https://github.com/spectralbranding/orgschema-papers"
