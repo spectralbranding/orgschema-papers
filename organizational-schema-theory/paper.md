@@ -1,9 +1,6 @@
 # The Organizational Schema Theory: Test-Driven Business Design
 
-**Working Paper Draft v0.1**
-
-*Target: California Management Review, In-Depth Article (6,000--8,000 words)*
-*Style: Chicago Manual of Style 18th ed., endnotes*
+**Dmitry Zharnikov**
 
 ---
 
@@ -88,18 +85,18 @@ Deming's insistence that quality is defined by the customer, not by the producer
 
 Orgschema draws from and extends several established frameworks. The following table clarifies the relationship to each, distinguishing what orgschema inherits from what it contributes:
 
-| Framework | Author(s) | What It Does | Orgschema's Extension |
-|:---|:---|:---|:---|
-| Test-Driven Development | Beck (2003) | Tests before code in software | Extends TDD from code to multi-level business operations |
-| Quality Function Deployment | Akao (1966) | Customer requirements to engineering specs via "House of Quality" | QFD is a paper matrix; orgschema is machine-readable and CI/CD-validatable |
-| Service Blueprinting | Shostack (1984) | Service design from customer touchpoints | Narrative methodology; orgschema is specification-based with automated validation |
-| Jobs to Be Done | Christensen (2003) | Design from customer's functional, emotional, social needs | Conceptual framework; orgschema is operational specification with backward traceability |
-| Backward Design | Wiggins and McTighe (1998) | Curriculum design from learning outcomes | Education domain; orgschema applies backward design to business operations |
-| Lean Pull System | Ohno (1988) | "Start with the customer, work backward" | Production philosophy; orgschema adds formal specification and validation |
-| Quality Management | Deming (1986) | Quality defined by customer | Management philosophy; orgschema operationalizes as testable, versioned specs |
-| Design Science Research | Hevner et al. (2004) | Artifact-centered research methodology | Orgschema's DSR artifact is the methodology itself, not the YAML specifications |
-| Viable System Model | Beer (1972, 1981) | Organizational cybernetics, recursive viable systems | Orgschema maps to VSM S1--S5; adds machine-readable specification at each level |
-| Declarative BPM | Pesic and van der Aalst (2006) | Constraint-based process specification | Declarative BPM stays at process level; orgschema extends to full organizational ontology |
+| Framework | What It Does | Orgschema's Extension |
+|:---|:---|:---|
+| TDD (Beck, 2003) | Tests before code in software | Extends TDD from code to multi-level business operations |
+| QFD (Akao, 1966) | Customer requirements to engineering specs | Paper matrix; orgschema is machine-readable and CI/CD-validatable |
+| Service Blueprinting (Shostack, 1984) | Service design from customer touchpoints | Narrative methodology; orgschema adds automated validation |
+| Jobs to Be Done (Christensen, 2003) | Design from functional, emotional, social needs | Conceptual framework; orgschema adds operational specification with traceability |
+| Backward Design (Wiggins/McTighe, 1998) | Curriculum design from learning outcomes | Education domain; orgschema applies to business operations |
+| Lean Pull System (Ohno, 1988) | Start with customer, work backward | Production philosophy; orgschema adds formal specification and validation |
+| Quality Management (Deming, 1986) | Quality defined by customer | Philosophy; orgschema operationalizes as testable, versioned specs |
+| DSR (Hevner et al., 2004) | Artifact-centered research methodology | Orgschema's artifact is the methodology itself, not the YAML |
+| VSM (Beer, 1972/1981) | Organizational cybernetics, recursive systems | Maps to S1--S5; adds machine-readable specification at each level |
+| Declarative BPM (Pesic/van der Aalst, 2006) | Constraint-based process specification | Process level only; orgschema extends to full organizational ontology |
 
 The common thread in these relationships is that orgschema inherits a design principle from each framework and contributes machine-readability, automated validation, backward traceability, or organizational scope that the original framework lacks. No prior framework combines all four properties for business operations.
 
@@ -478,8 +475,6 @@ The broader implication extends beyond any single business. If operational speci
 
 ---
 
-## Endnotes
-
 [^1]: Kent Beck, *Test-Driven Development: By Example* (Boston: Addison-Wesley, 2003).
 
 [^2]: Taiichi Ohno, *Toyota Production System: Beyond Large-Scale Production* (Portland: Productivity Press, 1988).
@@ -528,7 +523,3 @@ The broader implication extends beyond any single business. If operational speci
 
 [^24]: ISO 9001:2026 (currently at Draft International Standard stage, published August 2025) introduces requirements for digital quality management systems that align with orgschema's specification-first approach. Orgschema can be positioned as an implementation pathway for the new standard.
 
----
-
-*Working paper. Not for circulation without permission.*
-*Prepared for submission to California Management Review (In-Depth Article).*
