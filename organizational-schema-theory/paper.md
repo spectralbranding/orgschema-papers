@@ -73,7 +73,7 @@ The top two levels of orgschema's TDD cascade---customer experience contracts (L
 
 SBT models brand perception across eight dimensions: experiential, semiotic, temporal, ideological, narrative, cultural, social, and economic. Perception is observer-dependent: the same business emits signals that different observer cohorts perceive differently based on their individual priors (training, cultural context, expectations). SBT explicitly prohibits averaging across cohorts---a position grounded in its anti-ergodic epistemology.
 
-In orgschema, SBT serves a prescriptive function. The spectral profile of the desired brand becomes the acceptance test: what should customers perceive across each dimension? Signal requirements then specify what the business must emit to create that perception. This is not brand auditing (measuring what exists) but brand engineering (specifying what should exist and validating that operations produce it).
+In orgschema, SBT serves a prescriptive function. The target perception profile---what observers should perceive across each dimension---becomes the acceptance test. Signal requirements then specify what the business must emit to create that perception. This is not brand auditing (measuring what exists) but brand engineering (specifying what should exist and validating that operations produce it).
 
 ### The Lean Pull System and Quality as Customer-Defined
 
@@ -100,9 +100,11 @@ Orgschema draws from and extends several established frameworks. The following t
 
 The common thread in these relationships is that orgschema inherits a design principle from each framework and contributes machine-readability, automated validation, backward traceability, or organizational scope that the original framework lacks. No prior framework combines all four properties for business operations.
 
+A reviewer might observe that the combination of QFD (translating customer requirements into design parameters), Six Sigma (measurable process specifications), and ERP (integrated operational data) already provides partial customer-to-operations traceability. However, this combination lacks three properties that orgschema provides: (1) machine-readable specification at all levels---QFD's House of Quality is a matrix tool, not a testable specification; (2) automated satisfaction validation through a CI/CD pipeline---Six Sigma's control phase is periodic, not continuous; and (3) version-controlled, forkable specifications that enable test suite portability---ERP configurations are not designed for cross-organization sharing. The contribution is the combination of backward traceability, automated validation, and specification portability in a single machine-readable framework.
+
 ## Methodology: Design Science Research
 
-We follow the Design Science Research methodology as articulated by Hevner and colleagues[^5] and refined through the echeloned DSR (eDSR) approach,[^12] which decomposes the research project into five validated echelons: problem analysis, requirements specification, design, demonstration, and evaluation. Each echelon provides intermediate validation.
+We follow the Design Science Research methodology as articulated by Hevner and colleagues[^5] and refined through the echeloned DSR (eDSR) approach (Mullarkey & Hevner, 2019),[^12] which decomposes the research project into five validated echelons: problem analysis, requirements specification, design, demonstration, and evaluation. Each echelon provides intermediate validation.
 
 The primary contribution is design knowledge---specifically, a Technological Rule in the form: "To achieve testable, traceable, forkable business operations, apply the reverse-design TDD methodology with multi-level specification cascades and CI/CD satisfaction validation." The Spectra Coffee demonstration is one instantiation of this rule. The artifact is the methodology, not the demo.[^13]
 
@@ -196,7 +198,7 @@ Level 0 contracts are executor-invariant, format-invariant, and technology-invar
 
 **Backward traceability.** Every parameter at every level traces back to a customer experience justification. "Why is the extraction temperature 92--94 degrees?" Because the espresso process contract requires it (Level 2), which satisfies the "craft preparation quality" signal (Level 1), which creates the "balanced, sweet, clean finish" customer experience (Level 0). Any parameter that cannot be traced backward is either unjustified or has a missing link in the specification.
 
-**Contract-procedure separation as test-implementation separation.** Approximately 75% of a typical orgschema specification is executor-invariant. The contracts (tests) remain stable across executor profiles. Only the procedures (implementation) change. This has profound implications for franchise models, automation decisions, and knowledge sharing: you can share the test suite without sharing the implementation.
+**Contract-procedure separation as test-implementation separation.** In the Spectra Coffee demonstration, 17 of 23 specification files (74%) define executor-invariant content at Levels 0--2 (experience contracts, signal requirements, process contracts). Only 6 files contain executor-dependent procedures, inputs, or sourcing at Levels 3--5. The contracts (tests) remain stable across executor profiles. Only the procedures (implementation) change. This has profound implications for franchise models, automation decisions, and knowledge sharing: you can share the test suite without sharing the implementation.
 
 **Forkability as test suite portability.** Sharing a business under orgschema means sharing its test suite. A new operator receives the contracts (what must be achieved) and writes their own procedures (how to achieve it). The depth of the fork determines what changes:
 
@@ -265,7 +267,9 @@ Orgschema's multi-level TDD cascade operates across many dimensions simultaneous
 
 Large language models change the feasibility equation. Orgschema specifications are structured data (YAML) that LLMs read natively---no parsing, no interpretation, no ambiguity. The TDD cascade is a directed graph that an LLM can traverse: from experience goals through signals through contracts through procedures through inputs to sourcing. An LLM can answer "What allergens does the oat latte contain?" by traversing the specification. It can perform impact analysis: "If we change this supplier, which customer experience goals are affected?" It can detect waste: "Show me all parameters with no customer-experience justification."
 
-**Table 4: LLM Impact on Orgschema Feasibility**
+Table 4 presents a theoretical comparison of orgschema feasibility with and without LLM assistance. These comparisons represent expected impacts based on the structural properties of orgschema specifications (structured YAML, directed graph traversal, template-based generation) and established LLM capabilities.[^25] Empirical validation of these efficiency gains is a priority for future research.
+
+**Table 4: LLM Impact on Orgschema Feasibility (Theoretical Comparison)**
 
 | Task | Without LLM | With LLM |
 |:---|:---|:---|
@@ -287,7 +291,7 @@ To validate the methodology, we developed a complete orgschema specification for
 
 The Spectra Coffee specification includes:
 
-**Level 0 (Customer Experience Contracts):** 25 acceptance tests across eight SBT dimensions, with proxy indicators and satisfaction targets. The spectral profile scores experiential perception highest (9/10), followed by semiotic and temporal dimensions (7/10), with economic scoring lowest (5/10)---a deliberate design choice reflecting the brand's positioning as a craft-focused, experience-rich operation.
+**Level 0 (Customer Experience Contracts):** 25 acceptance tests across eight SBT dimensions, with proxy indicators and satisfaction targets. The target perception profile scores experiential perception highest (9/10), followed by semiotic and temporal dimensions (7/10), with economic scoring lowest (5/10)---a deliberate design choice reflecting the brand's positioning as a craft-focused, experience-rich operation.
 
 **Level 1 (Signal Requirements):** 18 integration tests mapping required signals to SBT dimensions. Each signal traces to at least one Level 0 customer experience goal. Four observer cohort profiles (morning regular, weekend explorer, delivery app user, food inspector) demonstrate that identical signals produce different perceptions depending on observer priors---validating SBT's anti-ergodic epistemology.
 
@@ -311,7 +315,7 @@ espresso_extraction:
 
 Each quality gate is a measurable test. The `satisfies_signal` and `satisfies_experience` fields are the upward traceability links---the reason this contract exists. A change to any quality gate parameter triggers the CI/CD pipeline, which verifies that the change does not break the satisfaction chain above it.
 
-**Level 3 (Procedures):** Detailed execution steps for the human artisan executor profile. The specification notes that approximately 75% of content is executor-invariant: contracts remain stable across executor types, and only procedures change.
+**Level 3 (Procedures):** Detailed execution steps for the human artisan executor profile. The specification notes that 74% of files (17 of 23) define executor-invariant content: contracts remain stable across executor types, and only procedures change.
 
 **Level 4 (Input Specifications):** Ingredient specifications with measurable parameters (single-origin arabica, roasted within 21 days, ground immediately before use), equipment requirements, and training certifications.
 
@@ -327,18 +331,18 @@ To validate forkability as test suite portability, we created a location fork fo
 
 ### Executor Swap Scenario
 
-A scenario analysis examines what happens when the executor profile changes from human artisan to fully automated:
+To illustrate the cascade's diagnostic capability, we construct a hypothetical executor swap scenario with illustrative perception scores. The specific values are not empirical measurements but serve to demonstrate how the TDD cascade makes otherwise invisible trade-offs quantifiable.
 
-**Table 3: Executor Swap Impact Analysis**
+**Table 3: Executor Swap Impact Analysis (Illustrative Scenario)**
 
 | TDD Level | Human Artisan | Fully Automated | Delta |
 |:---|:---|:---|:---|
 | L2: Process contracts (unit tests) | All pass | All pass | No change |
 | L1: Signal requirements (integration tests) | 18/18 satisfied | 15/18 satisfied | -3 signals lost |
 | L0: Experience contracts (acceptance tests) | All pass | 2 fail | "Personal rapport" and "craft as performance" |
-| Spectral profile (SBT 8-dimension average) | 6.6 | 5.6 | -1.0 (15% decline) |
+| Perceived profile (SBT 8-dimension average) | 6.6 | 5.6 | -1.0 (15% decline) |
 
-All Level 2 process contracts pass---the machine produces espresso within specified tolerances. But the cascade reveals that passing unit tests is insufficient: the integration and acceptance tests expose signal and experience degradation invisible to process-level metrics. This demonstrates that executor choice is a brand decision, not merely an operational one---a finding that the TDD cascade makes visible and quantifiable.
+In this illustrative scenario, all Level 2 process contracts pass---the machine produces espresso within specified tolerances. But the cascade reveals that passing unit tests is insufficient: the integration and acceptance tests expose signal and experience degradation invisible to process-level metrics. The specific magnitude of spectral profile change (here modeled as a 15% decline) would require empirical measurement through SBT's observer-dependent methodology; the contribution is the analytical framework that makes such measurement meaningful, not the illustrative values themselves. This demonstrates that executor choice is a brand decision, not merely an operational one---a finding that the TDD cascade makes visible and quantifiable.
 
 ### Validation Pipeline
 
@@ -346,7 +350,7 @@ A CI/CD pipeline implemented in GitHub Actions validates specifications on every
 
 ## Evaluation
 
-We evaluate the orgschema methodology using the FEDS framework's formative evaluation strategy.[^14] Five independent reviewers, each representing a distinct stakeholder perspective, assessed the Spectra Coffee demonstration against criteria relevant to their domain.
+We evaluate the orgschema methodology using the FEDS framework's formative evaluation strategy.[^14] Five independent reviewers, each representing a distinct stakeholder perspective, assessed the Spectra Coffee demonstration against criteria relevant to their domain. Reviewers were selected to represent complementary evaluation perspectives---quality management, process consulting, academic research, pedagogy, and domain practice---ensuring that the methodology was assessed from both theoretical and practical standpoints. All reviewers assessed the Spectra Coffee demonstration independently, without knowledge of the other reviewers' assessments.
 
 ### Expert Panel
 
@@ -376,7 +380,7 @@ The evaluation validates three claims about the methodology:
 
 First, *instrument validity*: the specification language (YAML with JSON Schema validation) adequately captures business operations at a level of detail sufficient for quality management, compliance, and operational execution. The coffee shop manager confirmed that specifications reflect realistic practice; the quality assurance inspector confirmed they meet compliance documentation standards. Notably, the inspector's assessment applied the same rigor used for ISO 9001 documentation review, finding the orgschema specifications structurally superior to Word-based quality documentation because of automated cross-reference validation.
 
-Second, *purpose validity*: the methodology achieves its stated purpose of producing testable, traceable, forkable business specifications. The CI/CD pipeline validates satisfaction at four of six levels. The fork demonstration (Friedrichshain location variant, 6 parameter overrides at Levels 3--5, identical Levels 0--2) proves test suite portability. The executor swap scenario demonstrates that the TDD cascade makes otherwise invisible trade-offs quantifiable---the process consultant noted that the 15% spectral profile degradation from human-to-automated execution would be invisible without the multi-dimensional measurement framework.
+Second, *purpose validity*: the methodology achieves its stated purpose of producing testable, traceable, forkable business specifications. The CI/CD pipeline validates satisfaction at four of six levels. The fork demonstration (Friedrichshain location variant, 6 parameter overrides at Levels 3--5, identical Levels 0--2) proves test suite portability. The executor swap scenario demonstrates that the TDD cascade makes otherwise invisible trade-offs quantifiable---the process consultant noted that the 15% perceived profile degradation from human-to-automated execution would be invisible without the multi-dimensional measurement framework.
 
 Third, *practical adoptability*: the maturity model provides a realistic incremental path. Even M1 (knowing what you need to specify) represents a significant operational clarity improvement over M0 (tribal knowledge). The professor confirmed that M0-to-M2 migration (from tribal knowledge to contract-level specification) is achievable in a single working day for a simple operation, using LLM-assisted specification generation. The LLM-accelerated migration path makes initial specification generation feasible within hours rather than weeks.
 
@@ -429,9 +433,9 @@ Schema publication---making visible what parameters a well-run business should c
 
 ### Cross-Industry Perception Transplant
 
-The separation of perception specification (Level 0) from operational implementation (Levels 1--5) enables a radical form of knowledge transfer: the *perception transplant*. If a brand's spectral profile---its pattern of perception across SBT's eight dimensions---can be measured quantitatively, that profile becomes a portable Level 0 acceptance test applicable to any industry.
+The separation of perception specification (Level 0) from operational implementation (Levels 1--5) enables a radical form of knowledge transfer: the *perception transplant*. If the perception profile that observers form of a brand---its pattern of perceived brand meaning across SBT's eight dimensions---can be measured quantitatively, that profile becomes a portable Level 0 acceptance test applicable to any industry.
 
-Consider a concrete example. Apple's brand perception might be measured across observer cohorts as: experiential 9, semiotic 9, temporal 8, ideological 8, social 8, economic 8 (premium-as-signal). This spectral *shape*---the relative emphasis across dimensions---is what produces willingness to pay twice the price for functionally equivalent products. Now transplant that shape as the Level 0 acceptance test for a specialty coffee operation. The absolute values and the digital-to-analogue ratio shift (a physical coffee shop cannot replicate Apple's 0.85 digital dominance), but the relative emphasis transfers: semiotic and experiential as dominant dimensions, premium pricing as a quality signal rather than a barrier, social belonging through brand identification.
+Consider a hypothetical example. Suppose a brand's perception were measured across observer cohorts as: experiential 9, semiotic 9, temporal 8, ideological 8, social 8, economic 8 (premium-as-signal). These illustrative scores represent a hypothetical luxury technology brand's spectral profile to demonstrate the transplant mechanism; they are not empirical measurements of any specific brand. This spectral *shape*---the relative emphasis across dimensions---is what produces willingness to pay twice the price for functionally equivalent products. Now transplant that shape as the Level 0 acceptance test for a specialty coffee operation. The absolute values and the digital-to-analogue ratio shift (a physical coffee shop cannot replicate Apple's 0.85 digital dominance), but the relative emphasis transfers: semiotic and experiential as dominant dimensions, premium pricing as a quality signal rather than a barrier, social belonging through brand identification.
 
 Orgschema's TDD cascade then derives everything backward from the transplanted profile. What signals must a coffee shop emit to achieve Apple-like perception scores? Minimalist interior design (semiotic), precision in every tactile surface (experiential), seasonal innovation cadence (temporal), premium materials throughout (economic-as-signal). What processes emit those signals? What inputs and sourcing? Every investment---custom ceramics, extended barista training, direct-trade sourcing---traces to a specific dimension of the target perception profile.
 
@@ -443,7 +447,7 @@ This introduces a third fork type beyond those previously discussed:
 |:---|:---|:---|:---|
 | Location fork | L0--L4 (everything except sourcing) | L5 (suppliers, schedules) | Spectra Coffee Friedrichshain |
 | Business fork | L0--L2 (test suite) | L3--L5 (implementation) | Same concept, different execution |
-| Perception transplant | L0 shape only (spectral profile) | L1--L5 (everything else) | "Apple's emotional architecture, applied to coffee" |
+| Perception transplant | L0 shape only (perception profile) | L1--L5 (everything else) | "Apple's emotional architecture, applied to coffee" |
 
 The perception transplant is the most radical: you copy neither the business nor its test suite implementation, only the *acceptance criteria*---the shape of desired perception. The entire operational stack is designed from scratch to satisfy a borrowed emotional architecture. This has implications for competitive intelligence (a coffee shop's real perception competitor may be Aesop or Muji, not another coffee shop), for investment justification (every expenditure traces to a dimension of the target profile), and for brand strategy (perception engineering from measured first principles rather than intuition).
 
@@ -463,7 +467,7 @@ Third, the current CI/CD pipeline validates structural properties (schema, cross
 
 Fourth, the evaluation relies on formative expert assessment rather than summative field validation. A naturalistic evaluation---deploying orgschema in an operating business and measuring outcomes over time---would provide stronger evidence for the methodology's practical impact.
 
-Future research directions include: automated test generation (can an LLM generate process contracts from signal requirements, or procedures from contracts, making orgschema a generative methodology?); regression testing for business changes (when a supplier changes, which customer experience tests might break?); multi-location test variance (should different locations share identical acceptance tests or adapt them to local cohorts?); digital output provenance (when every process is specified, every physical output can carry a digital trace of its full production history---filtered by audience through the openness taxonomy---enabling customers to query the provenance of their purchase at any depth); and integration with ISO 9001:2026, which introduces requirements for digital quality management that align with orgschema's specification-first approach.[^24]
+Future research directions include: automated test generation (can an LLM generate process contracts from signal requirements, or procedures from contracts, making orgschema a generative methodology?); regression testing for business changes (when a supplier changes, which customer experience tests might break?); multi-location test variance (should different locations share identical acceptance tests or adapt them to local cohorts?); digital output provenance (when every process is specified, every physical output can carry a digital trace of its full production history---filtered by audience through the openness taxonomy---enabling customers to query the provenance of their purchase at any depth); and integration with the forthcoming revision of ISO 9001 (currently in Draft International Standard stage as ISO/DIS 9001:2026), which is expected to introduce requirements for digital quality management that align with orgschema's specification-first approach.[^24]
 
 ## Conclusion
 
@@ -495,9 +499,9 @@ The broader implication extends beyond any single business. If operational speci
 
 [^10]: Clayton M. Christensen, Scott D. Anthony, Gerald Berstell, and Denise Nitterhouse, "Finding the Right Job for Your Product," *MIT Sloan Management Review* 48, no. 3 (2007): 38--47. The JTBD framework originates from Christensen's earlier work on disruptive innovation.
 
-[^11]: Spectral Brand Theory models brand perception across eight observer-dependent dimensions. The framework is detailed in the SBT specification (https://github.com/spectralbranding/sbt-framework). Orgschema uses SBT as the specification language for Levels 0 and 1 of the TDD cascade.
+[^11]: Dmitry Zharnikov, "Spectral Brand Theory: A Computational Framework for Multi-Dimensional Brand Perception," Working paper (2026). Available at https://papers.ssrn.com/abstract=6318718. SBT models brand perception across eight observer-dependent dimensions. The open-source toolkit is at https://github.com/spectralbranding/sbt-framework. Orgschema uses SBT as the specification language for Levels 0 and 1 of the TDD cascade.
 
-[^12]: The echeloned DSR (eDSR) approach decomposes the research project into five validated echelons, each providing intermediate validation. This addresses the common DSR criticism that single demonstrations are insufficient evidence.
+[^12]: Matthew T. Mullarkey and Alan R. Hevner, "An Elaborated Action Design Research Process Model," *European Journal of Information Systems* 28, no. 1 (2019): 6--20. The eDSR approach decomposes the research project into five validated echelons, each providing intermediate validation. This addresses the common DSR criticism that single demonstrations are insufficient evidence.
 
 [^13]: This distinction---artifact as methodology versus artifact as instantiation---is critical for DSR contributions. The Spectra Coffee demo validates the methodology; it is not the methodology itself.
 
@@ -505,7 +509,7 @@ The broader implication extends beyond any single business. If operational speci
 
 [^15]: The Design Science Validity Framework specifies five validity types: instrument, technical, design, purpose, and generalization. We address instrument and purpose validity; technical validity is partially addressed through the CI/CD pipeline.
 
-[^16]: The Toyota Production System exemplifies Level 3 ("Open Core") in orgschema's openness taxonomy. Toyota published the methodology---14 principles, quality standards, process categories---while retaining implementation parameters---specific takt times, supplier contracts, tacit knowledge. The NUMMI case demonstrated that methodology transfer without data transfer has approximately a 10% success rate, validating the schema-data distinction as a competitive moat. See Jeffrey K. Liker, *The Toyota Way* (New York: McGraw-Hill, 2004).
+[^16]: The Toyota Production System exemplifies Level 3 ("Open Core") in orgschema's openness taxonomy. Toyota published the methodology---14 principles, quality standards, process categories---while retaining implementation parameters---specific takt times, supplier contracts, tacit knowledge. The NUMMI case demonstrated the difficulty of methodology transfer without accompanying cultural and operational context---while GM adopted many Toyota Production System techniques at NUMMI, sustained adoption across GM's broader plant network proved challenging, validating the schema-data distinction as a competitive moat. See Jeffrey K. Liker, *The Toyota Way* (New York: McGraw-Hill, 2004).
 
 [^17]: Michael C. Feathers, *Working Effectively with Legacy Code* (Upper Saddle River: Prentice Hall, 2004). Characterization tests capture the current behavior of existing code, enabling safe refactoring. Orgschema applies the same principle to existing business operations.
 
@@ -522,4 +526,6 @@ The broader implication extends beyond any single business. If operational speci
 [^23]: A. Parasuraman, Valarie A. Zeithaml, and Leonard L. Berry, "A Conceptual Model of Service Quality and Its Implications for Future Research," *Journal of Marketing* 49, no. 4 (1985): 41--50.
 
 [^24]: ISO 9001:2026 (currently at Draft International Standard stage, published August 2025) introduces requirements for digital quality management systems that align with orgschema's specification-first approach. Orgschema can be positioned as an implementation pathway for the new standard.
+
+[^25]: Rishi Bommasani et al., "On the Opportunities and Risks of Foundation Models," arXiv preprint arXiv:2108.07258 (2021). This comprehensive survey documents LLM capabilities in structured data generation, code understanding, and task decomposition that are directly relevant to orgschema specification workflows.
 

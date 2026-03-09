@@ -6,7 +6,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 
 | Paper | Words | Refs | Status |
 |-------|-------|------|--------|
-| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~7,800 | 24 | Working paper, Mar 2026 |
+| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper, Mar 2026 |
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
 
@@ -35,7 +35,7 @@ Machine-readable citation: [CITATION.cff](organizational-schema-theory/CITATION.
 | Repository | Description |
 |-----------|-------------|
 | [orgschema-framework](https://github.com/spectralbranding/orgschema-framework) | Python validator + JSON Schema for orgschema specifications |
-| [orgschema-demo](https://github.com/spectralbranding/orgschema-demo) | Spectra Coffee reference implementation -- 26 YAML files, CI/CD pipeline |
+| [orgschema-demo](https://github.com/spectralbranding/orgschema-demo) | Spectra Coffee reference implementation -- 25 YAML files, CI/CD pipeline |
 | [sbt-framework](https://github.com/spectralbranding/sbt-framework) | Spectral Brand Theory -- the perception specification language used for L0-L1 |
 | [sbt-papers](https://github.com/spectralbranding/sbt-papers) | SBT research papers (sibling framework) |
 
