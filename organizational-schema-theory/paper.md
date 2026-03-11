@@ -499,7 +499,7 @@ The broader implication extends beyond any single business. If operational speci
 
 [^10]: Clayton M. Christensen, Scott D. Anthony, Gerald Berstell, and Denise Nitterhouse, "Finding the Right Job for Your Product," *MIT Sloan Management Review* 48, no. 3 (2007): 38--47. The JTBD framework originates from Christensen's earlier work on disruptive innovation.
 
-[^11]: Dmitry Zharnikov, "Spectral Brand Theory: A Computational Framework for Multi-Dimensional Brand Perception," Working paper (2026). Available at https://papers.ssrn.com/abstract=6318718. SBT models brand perception across eight observer-dependent dimensions. The open-source toolkit is at https://github.com/spectralbranding/sbt-framework. Orgschema uses SBT as the specification language for Levels 0 and 1 of the TDD cascade.
+[^11]: Dmitry Zharnikov, "Spectral Brand Theory: A Computational Framework for Multi-Dimensional Brand Perception," Working paper (2026). Available at https://doi.org/10.5281/zenodo.18945912. SBT models brand perception across eight observer-dependent dimensions. The open-source toolkit is at https://github.com/spectralbranding/sbt-framework. Orgschema uses SBT as the specification language for Levels 0 and 1 of the TDD cascade.
 
 [^12]: Matthew T. Mullarkey and Alan R. Hevner, "An Elaborated Action Design Research Process Model," *European Journal of Information Systems* 28, no. 1 (2019): 6--20. The eDSR approach decomposes the research project into five validated echelons, each providing intermediate validation. This addresses the common DSR criticism that single demonstrations are insufficient evidence.
 

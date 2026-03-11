@@ -15,7 +15,7 @@ Introduces the orgschema methodology: a six-level TDD cascade (customer experien
 **Keywords**: test-driven development, business design, configuration management, design science research, declarative process management, organizational specification
 
 - [Read on GitHub](organizational-schema-theory/paper.md)
-- SSRN (forthcoming)
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.18946043)
 
 ## How to Cite
 
