@@ -285,7 +285,7 @@ We argue that orgschema is a methodology whose time has arrived because of LLMs.
 
 ## Demonstration: Spectra Coffee
 
-To validate the methodology, we developed a complete orgschema specification for Spectra Coffee, a specialty coffee operation in Berlin. The demonstration encompasses 23 YAML specification files across all six TDD cascade levels, plus a CI/CD validation pipeline.
+To validate the methodology, we developed a complete orgschema specification for Spectra Coffee, a specialty coffee operation in Berlin. The demonstration encompasses 25 YAML specification files across all six TDD cascade levels, plus a CI/CD validation pipeline.
 
 ### Specification Scope
 
