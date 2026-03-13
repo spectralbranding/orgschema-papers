@@ -4,6 +4,8 @@ authors:
   - family-names: Zharnikov
     given-names: Dmitry
     email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "The Organizational Schema Theory: Test-Driven Business Design"
 version: 1.0.0
 date-released: 2026-03-05
@@ -24,6 +26,10 @@ preferred-citation:
     - family-names: Zharnikov
       given-names: Dmitry
       email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "The Organizational Schema Theory: Test-Driven Business Design"
   year: 2026
   url: "https://github.com/spectralbranding/orgschema-papers"
