@@ -48,6 +48,18 @@ Orgschema is a sibling framework to Spectral Brand Theory (SBT). Both emerge fro
 
 See [Zharnikov 2026a](https://github.com/spectralbranding/sbt-papers) for the SBT paper.
 
+### Cross-Cutting Methodology Papers (in sbt-papers)
+
+Several papers in the [sbt-papers](https://github.com/spectralbranding/sbt-papers) repo are cross-cutting methodology pieces that apply equally to SBT, Orgschema, and the broader specification-first research program. They live in sbt-papers for historical reasons (originated there before the orgschema-papers split) but are conceptually shared between the two frameworks:
+
+| Key | Paper | Relevance to Orgschema |
+|-----|-------|------------------------|
+| R13 | [Paper as Specification: A Machine-Readable Standard for Scientific Claims](https://github.com/spectralbranding/sbt-papers/tree/main/r13-paper-as-specification) | Applies the orgschema test-driven cascade pattern to scientific publishing — papers as testable specifications. |
+| R14 | [Research as Repository: A Git-Native Protocol for Scientific Knowledge Production](https://github.com/spectralbranding/sbt-papers/tree/main/r14-paper-as-repository) | Extends orgschema's "git as system of record" architecture to scientific knowledge production. |
+| 2026l | [The Rendering Problem: From Genetic Expression to Brand Perception](https://github.com/spectralbranding/sbt-papers/tree/main/rendering-problem) | Cross-domain formalization of the specification-rendering gap that orgschema's L1-L5 cascade addresses operationally. |
+
+These papers' Zenodo DOIs and GitHub paths remain in sbt-papers; this repo points to them rather than duplicating.
+
 ## Author
 
 **Dmitry Zharnikov** -- dmitry@spectralbranding.com
