@@ -36,6 +36,8 @@ Test-Driven Development, as formalized by Beck, is frequently misunderstood as a
 
 Orgschema extends this methodology from software to business operations. The parallel is structural, not metaphorical:
 
+**Table 1: The TDD-to-Orgschema Parallel**
+
 | TDD (Software) | Orgschema (Business) |
 |:---|:---|
 | Write tests first | Specify customer experience goals first |
@@ -51,7 +53,7 @@ The critical insight is that TDD's value proposition---architectural decisions d
 
 The forward-design approach to business creation starts with available resources. An entrepreneur identifies accessible suppliers, available staff, and affordable equipment, then builds operations from these constraints upward, hoping that the resulting customer experience will be acceptable. Customer perception is emergent---an undesigned consequence of operational decisions made for operational reasons.
 
-**Table 1: Forward Design vs. Reverse Design**
+**Table 2: Forward Design vs. Reverse Design**
 
 | Property | Forward Design | Reverse Design (Orgschema) |
 |:---|:---|:---|
@@ -85,6 +87,8 @@ Deming's insistence that quality is defined by the customer, not by the producer
 
 Orgschema draws from and extends several established frameworks. The following table clarifies the relationship to each, distinguishing what orgschema inherits from what it contributes:
 
+**Table 3: Framework Lineage and Orgschema's Contribution**
+
 | Framework | What It Does | Orgschema's Extension |
 |:---|:---|:---|
 | TDD (Beck, 2003) | Tests before code in software | Extends TDD from code to multi-level business operations |
@@ -108,7 +112,7 @@ The lineage table above traces *what each framework does and how orgschema exten
 
 Legend: ✓ = present by design, ∼ = partial / domain-limited, --- = absent.
 
-**Table 7: Structural Property Comparison Across Seven Methodologies**
+**Table 4: Structural Property Comparison Across Seven Methodologies**
 
 ```{=typst}
 #block(breakable: false)[
@@ -276,7 +280,7 @@ This maps directly to the five-level openness taxonomy we have described elsewhe
 
 **CI/CD as satisfaction validation.** The validation pipeline implements six levels of checking, each corresponding to a different class of specification defect:
 
-**Table 2: CI/CD Validation Levels**
+**Table 5: CI/CD Validation Levels**
 
 | Level | Validation | TDD Analogy | What It Catches |
 |:---|:---|:---|:---|
@@ -290,6 +294,8 @@ This maps directly to the five-level openness taxonomy we have described elsewhe
 ### The Maturity Model
 
 Existing businesses need not adopt orgschema comprehensively from the start. We propose a six-level maturity model for progressive formalization:
+
+**Table 6: Six-Level Orgschema Maturity Model**
 
 | Level | State | What CI/CD Validates | Value |
 |:---|:---|:---|:---|
@@ -308,9 +314,9 @@ Orgschema's multi-level TDD cascade operates across many dimensions simultaneous
 
 Large language models change the feasibility equation. Orgschema specifications are structured data (YAML) that LLMs read natively---no parsing, no interpretation, no ambiguity. The TDD cascade is a directed graph that an LLM can traverse: from experience goals through signals through contracts through procedures through inputs to sourcing. An LLM can answer "What allergens does the oat latte contain?" by traversing the specification. It can perform impact analysis: "If we change this supplier, which customer experience goals are affected?" It can detect waste: "Show me all parameters with no customer-experience justification."
 
-Table 4 presents a theoretical comparison of orgschema feasibility with and without LLM assistance. These comparisons represent expected impacts based on the structural properties of orgschema specifications (structured YAML, directed graph traversal, template-based generation) and established LLM capabilities.[^25] Empirical validation of these efficiency gains is a priority for future research.
+Table 7 presents a theoretical comparison of orgschema feasibility with and without LLM assistance. These comparisons represent expected impacts based on the structural properties of orgschema specifications (structured YAML, directed graph traversal, template-based generation) and established LLM capabilities.[^25] Empirical validation of these efficiency gains is a priority for future research.
 
-**Table 4: LLM Impact on Orgschema Feasibility (Theoretical Comparison)**
+**Table 7: LLM Impact on Orgschema Feasibility (Theoretical Comparison)**
 
 | Task | Without LLM | With LLM |
 |:---|:---|:---|
@@ -374,7 +380,7 @@ To validate forkability as test suite portability, we created a location fork fo
 
 To illustrate the cascade's diagnostic capability, we construct a hypothetical executor swap scenario with illustrative perception scores. The specific values are not empirical measurements but serve to demonstrate how the TDD cascade makes otherwise invisible trade-offs quantifiable.
 
-**Table 3: Executor Swap Impact Analysis (Illustrative Scenario)**
+**Table 8: Executor Swap Impact Analysis (Illustrative Scenario)**
 
 | TDD Level | Human Artisan | Fully Automated | Delta |
 |:---|:---|:---|:---|
@@ -437,7 +443,7 @@ The backward traceability architecture also enables a new form of waste detectio
 
 Orgschema's structure maps to Beer's Viable System Model, providing theoretical grounding in organizational cybernetics.[^18]
 
-**Table 5: Orgschema to Viable System Model Mapping**
+**Table 9: Orgschema to Viable System Model Mapping**
 
 | VSM System | Function | Orgschema Mapping | Specification Strength |
 |:---|:---|:---|:---|
@@ -482,7 +488,7 @@ Orgschema's TDD cascade then derives everything backward from the transplanted p
 
 This introduces a third fork type beyond those previously discussed:
 
-**Table 6: Three Fork Types**
+**Table 10: Three Fork Types**
 
 | Fork Type | What Is Copied | What Is Rewritten | Example |
 |:---|:---|:---|:---|
