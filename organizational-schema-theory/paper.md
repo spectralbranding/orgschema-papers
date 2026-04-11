@@ -112,10 +112,10 @@ The lineage table above traces *what each framework does and how orgschema exten
 
 Legend: ✓ = present by design, ∼ = partial / domain-limited, --- = absent.
 
-**Table 4: Structural Property Comparison Across Seven Methodologies**
-
 ```{=typst}
 #block(breakable: false)[
+#strong[Table 4: Structural Property Comparison Across Seven Methodologies]
+#v(0.5em)
 #set text(size: 8.5pt)
 #table(
   columns: (auto, 18em, auto, auto, auto, auto, auto, auto, auto),
