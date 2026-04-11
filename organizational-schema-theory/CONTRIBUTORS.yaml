@@ -1,0 +1,65 @@
+# CONTRIBUTORS.yaml -- Organizational Schema Theory
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - investigation
+      - writing-original
+      - writing-review-editing
+      - formal-analysis
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-03-05"
+    last_commit: "2026-04-11"
+
+  - name: "Claude (Anthropic)"
+    type: ai_tool
+    roles:
+      - writing-review
+      - consistency-checking
+      - formal-analysis
+      - literature-positioning
+    disclosure: >
+      Used for manuscript drafting, prior-art positioning, structural
+      property matrix construction, formal evaluation under the FEDS
+      framework, citation cross-checking, and editorial review. The
+      six-level cascade architecture, the contract-procedure separation,
+      the executor topology, the schema-data separation principle, the
+      twelve structural property criteria, the honest two-sided framing
+      of the structural matrix, and all design claims are the author's
+      intellectual contribution. Claude was used as a drafting and
+      review tool, not as an authorial agent.
+
+  - name: "Gemini Deep Research (Google)"
+    type: ai_tool
+    roles:
+      - investigation
+    disclosure: >
+      Used for prior art landscape mapping (BPM, TQM, IS-design literatures,
+      adjacent specification methodologies). All references independently
+      verified against source documents.
+
+  - name: "GPT (OpenAI)"
+    type: ai_tool
+    roles:
+      - writing-review
+      - alternative-framings
+    disclosure: >
+      Used for sentence-level editorial review and to test alternative
+      framings of the design claims. No claims drafted by GPT entered
+      the final manuscript without human review.
+
+  - name: "Anonymous expert reviewers"
+    type: human
+    roles:
+      - validation
+      - critique
+    disclosure: >
+      Five independent reviewers from distinct stakeholder perspectives
+      provided formative expert walk-throughs as part of the FEDS
+      evaluation strategy. Names withheld pending journal acceptance.

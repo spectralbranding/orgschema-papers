@@ -1,0 +1,63 @@
+# DATA_MANIFEST.yaml -- Organizational Schema Theory
+# External data dependencies per the Research-as-Repository protocol
+
+data_manifest:
+  - id: "spectra-coffee-reference-deployment"
+    description: >
+      The Spectra Coffee reference deployment: 25 YAML files specifying
+      a six-product coffee shop across the full L0-L5 cascade. Used as
+      the demonstration artifact in the Design Science Research
+      methodology and as the case for FEDS evaluation.
+    archive: "spectralbranding/orgschema-demo (GitHub)"
+    access: public
+    url: "https://github.com/spectralbranding/orgschema-demo"
+    note: >
+      The demo includes the full CI/CD pipeline that validates the
+      cascade on every commit. Reviewers can clone, run the validator,
+      and observe satisfaction validation in action.
+
+  - id: "orgschema-framework-validator"
+    description: >
+      The orgschema validator (Python) that performs automated
+      satisfaction checks across the L0-L5 cascade. The validator
+      implements: schema validation per level, cross-reference
+      checking, orphan-element detection (waste detection), backward
+      traceability validation, and CI/CD pipeline integration.
+    archive: "spectralbranding/orgschema-framework (GitHub)"
+    access: public
+    url: "https://github.com/spectralbranding/orgschema-framework"
+
+  - id: "expert-walkthrough-feedback"
+    description: >
+      Five expert walk-through sessions providing formative evaluation
+      under the FEDS framework. Reviewers were drawn from distinct
+      stakeholder perspectives (operations, software engineering,
+      quality management, organizational design, brand strategy).
+    archive: "Private session notes"
+    access: restricted
+    note: >
+      Reviewer identities are withheld pending journal acceptance.
+      Aggregated findings inform the limitations and future work
+      sections of the paper.
+
+  - id: "prior-art-comparison-corpus"
+    description: >
+      Source documents for the seventeen frameworks compared in the
+      "Positioning Against Prior Art" section: ten in the lineage table
+      (TDD, QFD, Service Blueprinting, JTBD, Backward Design, Lean Pull,
+      Quality Management, DSR, VSM, Declarative BPM) and seven in the
+      structural property matrix (BDD, BPMN, ISO 9001, IaC, Service
+      Blueprint, OKR + SLO, OST). Each property judgment in the matrix
+      is grounded in the framework's published specification or its
+      canonical implementation tools.
+    archive: "Public literature"
+    access: public
+    note: >
+      Sources include Beck (2003) on TDD, Akao (1966) on QFD, Shostack
+      (1984) on Service Blueprinting, Christensen (2003) on JTBD,
+      Wiggins & McTighe (1998) on Backward Design, Ohno (1988) on Lean
+      Pull, Deming (1986) on Quality Management, Hevner et al. (2004)
+      on DSR, Beer (1972/1981) on VSM, Pesic & van der Aalst (2006) on
+      Declarative BPM, Dan North on BDD, OMG on BPMN, ISO on 9001,
+      HashiCorp on Terraform, RedHat on Ansible, Doerr (2018) on OKRs,
+      Beyer et al. (2016) on Google SRE.

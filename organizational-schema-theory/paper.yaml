@@ -1,0 +1,141 @@
+# paper.yaml -- Organizational Schema Theory: Test-Driven Business Design
+# Citation key: 2026i
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "The Organizational Schema Theory: Test-Driven Business Design"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026i"
+  doi: "10.5281/zenodo.18946043"
+  date: "2026-04-11"
+  version: "1.3.0"
+  status: working_paper
+  license: "CC-BY-NC-ND-4.0"
+  keywords:
+    - test-driven development
+    - business design
+    - configuration management
+    - design science research
+    - declarative process management
+    - organizational specification
+    - infrastructure as code
+    - quality management
+    - service blueprinting
+    - specification cascade
+    - reverse design
+    - CI/CD validation
+
+abstract: >
+  We introduce the Organizational Schema Theory (OST): a Design Science
+  Research methodology that applies Test-Driven Development principles
+  to business operations. Businesses are specified as a six-level
+  cascade of contracts -- customer experience, signal requirements,
+  process contracts, procedures, input specifications, sourcing -- in
+  which each level functions as the acceptance test for the level below
+  it. Specifications are written in YAML, version-controlled, and
+  validated by a CI/CD pipeline that traces every operational parameter
+  back to the customer experience justification it serves. We
+  demonstrate the methodology with Spectra Coffee, a six-product
+  reference deployment with full cascade specification and CI/CD
+  passing on every commit. We position orgschema against ten adjacent
+  frameworks (TDD, QFD, Service Blueprinting, JTBD, Backward Design,
+  Lean Pull, Quality Management, DSR, VSM, Declarative BPM) and a
+  twelve-property structural-comparison matrix across seven adjacent
+  methodologies (BDD, BPMN, ISO 9001, IaC, Service Blueprint,
+  OKR + SLO, OST).
+
+claims:
+  - id: "C1"
+    statement: >
+      Business operations can be specified as a six-level cascade
+      where each level functions as the acceptance test for the level
+      below it.
+    evidence: "Spectra Coffee reference deployment; structural property matrix"
+    status: demonstrated
+  - id: "C2"
+    statement: >
+      Customer-experience traceability for organizational
+      specifications is computable, not only documented in prose.
+    evidence: "Spectra Coffee CI/CD pipeline; orphan-element detection in validator"
+    status: demonstrated
+  - id: "C3"
+    statement: >
+      Orgschema is the first methodology to combine all twelve
+      structural design properties (machine-readable customer
+      requirements, machine-readable process specs, formal
+      satisfaction proofs, orphan detection, version control,
+      continuous validation, non-human customer support, supply chain
+      in scope, schema/data separation, forkability, and perceptual
+      dimensions as upper-level language) under one chain of artifacts.
+    evidence: "Twelve-property structural property matrix in section 'Positioning Against Prior Art'"
+    status: design_claim
+  - id: "C4"
+    statement: >
+      Industrial-scale validation of the methodology remains future
+      work. The current evidence is one reference deployment.
+    evidence: "Spectra Coffee single instantiation"
+    status: limitation_acknowledged
+
+methodology:
+  type: design_science_research
+  framework: "Hevner et al. (2004) DSR + Mullarkey-Hevner (2019) eDSR"
+  artifact: "The methodology itself, not the Spectra Coffee demonstration"
+  evaluation: "Formative Evaluation of Design Science (FEDS); five expert walk-throughs; technical validation via automated schema checking"
+  validity_types_addressed:
+    - "Instrument validity"
+    - "Purpose validity"
+
+submission_history:
+  - venue: "Zenodo"
+    venue_type: preprint
+    submission_date: "2026-03-12"
+    status: published
+    doi: "10.5281/zenodo.18946043"
+    note: >
+      v1.0 initial preprint. Five propositions, six-level cascade,
+      Spectra Coffee demo, ten-row prior-art table, FEDS evaluation.
+  - venue: "Zenodo"
+    venue_type: preprint
+    submission_date: "2026-04-11"
+    status: pending_upload
+    doi: "10.5281/zenodo.18946043"
+    note: >
+      v1.3 (2026-04-11): adds the Structural Property Matrix subsection
+      to "Positioning Against Prior Art" -- a twelve-property comparison
+      across seven adjacent methodologies (BDD, BPMN, ISO 9001, IaC,
+      Service Blueprint, OKR + SLO, Orgschema) with explicit two-sided
+      framing on structural-properties-vs-practical-adoption. No changes
+      to abstract, propositions, methodology, evaluation, or claims;
+      reference list unchanged. Strengthens prior-art positioning with
+      an orthogonal quantitative artifact complementing the existing
+      ten-row lineage table. Aligned with orgschema.com/research and
+      orgschema.com/llms.txt.
+  - venue: "European Journal of Information Systems (EJIS)"
+    venue_type: journal
+    submission_date: "2026-04-01"
+    submission_id: "260787449"
+    status: under_review
+    note: "Double-blind review. Decision expected ~Jul-Oct 2026."
+  - venue: "ICIS 2026"
+    venue_type: conference
+    submission_date: "2026-03-08"
+    submission_id: "ICIS-2026-toolkit"
+    status: under_review
+    note: "Toolkit paper variant; decision ~Aug 2026."
+  - venue: "M@n@gement"
+    venue_type: journal
+    status: drafted
+    note: "Diamond OA, FNEGE-listed. Restructured for organization theory framing. Awaiting EJIS decision before parallel submission."
+
+target_venues:
+  primary: "European Journal of Information Systems"
+  fallback:
+    - "M@n@gement"
+    - "Journal of Management Studies"
+    - "Organization Studies"

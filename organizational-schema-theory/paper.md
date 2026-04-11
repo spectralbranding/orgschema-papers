@@ -108,22 +108,34 @@ The lineage table above traces *what each framework does and how orgschema exten
 
 Legend: ✓ = present by design, ∼ = partial / domain-limited, --- = absent.
 
-**Table: Structural Property Comparison Across Seven Methodologies**
+**Table 7: Structural Property Comparison Across Seven Methodologies**
 
-| # | Property | BDD | BPMN | ISO 9001 | IaC | Service Blueprint | OKR + SLO | Orgschema |
-|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Anchored in customer requirement, not process | ∼ | --- | ∼ | --- | ✓ | ✓ | ✓ |
-| 2 | Machine-readable customer-requirement specification | ✓ | --- | --- | --- | --- | ∼ | ✓ |
-| 3 | Machine-readable process / execution specification | ∼ | ✓ | --- | ✓ | --- | --- | ✓ |
-| 4 | Formal proof that the process satisfies the customer requirement | ∼ | --- | --- | ∼ | --- | ∼ | ✓ |
-| 5 | Orphan / waste detection (process without an upward trace) | --- | --- | --- | ∼ | --- | --- | ✓ |
-| 6 | Version control with git-style readable history | ✓ | ∼ | --- | ✓ | --- | ∼ | ✓ |
-| 7 | Continuous validation instead of periodic audit | ✓ | --- | --- | ✓ | --- | ∼ | ✓ |
-| 8 | Works for non-human customers (API, algorithm, DPP) | ∼ | ∼ | --- | --- | --- | ∼ | ✓ |
-| 9 | Inputs, materials, suppliers in scope | --- | ∼ | ✓ | --- | ∼ | --- | ✓ |
-| 10 | Schema/data separation as first-class design principle | --- | --- | --- | ∼ | --- | --- | ✓ |
-| 11 | Forkability: replicate the tests, reimplement the execution | ∼ | --- | --- | ∼ | --- | --- | ✓ |
-| 12 | Perceptual / brand dimensions as upper-level specification language | --- | --- | --- | --- | ∼ | --- | ✓ |
+```{=typst}
+#block(breakable: false)[
+#set text(size: 8.5pt)
+#table(
+  columns: (auto, 18em, auto, auto, auto, auto, auto, auto, auto),
+  align: (center, left, center, center, center, center, center, center, center),
+  stroke: 0.4pt,
+  inset: (x: 5pt, y: 4pt),
+  table.header(
+    [*\#*], [*Property*], [*BDD*], [*BPMN*], [*ISO\u{00A0}9001*], [*IaC*], [*Svc\u{00A0}Blueprint*], [*OKR\u{00A0}+\u{00A0}SLO*], [*OST*]
+  ),
+  [1], [Customer-anchored, not process-anchored], [∼], [---], [∼], [---], [✓], [✓], [✓],
+  [2], [Machine-readable customer-requirement spec], [✓], [---], [---], [---], [---], [∼], [✓],
+  [3], [Machine-readable process / execution spec], [∼], [✓], [---], [✓], [---], [---], [✓],
+  [4], [Formal proof that process satisfies requirement], [∼], [---], [---], [∼], [---], [∼], [✓],
+  [5], [Orphan / waste detection (no upward trace)], [---], [---], [---], [∼], [---], [---], [✓],
+  [6], [Version control with git-style readable history], [✓], [∼], [---], [✓], [---], [∼], [✓],
+  [7], [Continuous validation, not periodic audit], [✓], [---], [---], [✓], [---], [∼], [✓],
+  [8], [Works for non-human customers (API, algorithm)], [∼], [∼], [---], [---], [---], [∼], [✓],
+  [9], [Inputs, materials, suppliers in scope], [---], [∼], [✓], [---], [∼], [---], [✓],
+  [10], [Schema / data separation as first-class principle], [---], [---], [---], [∼], [---], [---], [✓],
+  [11], [Forkability: copy tests, reimplement execution], [∼], [---], [---], [∼], [---], [---], [✓],
+  [12], [Perceptual dimensions as upper-level spec language], [---], [---], [---], [---], [∼], [---], [✓],
+)
+]
+```
 
 The table is best read with two qualifications stated explicitly. First, the rightmost column is fully filled. The reason is not that orgschema is intrinsically superior to its neighbours: the twelve criteria were chosen to test the structural design of a *cross-stack specification methodology*, which is precisely what orgschema is by definition. If the criteria had been "number of certified organizations worldwide," "production deployments at enterprise scale," "depth of consulting ecosystem," or "training-program graduates per year," the picture would invert. ISO 9001 would receive most checkmarks, BPMN and IaC would hold strong positions, and orgschema would be visibly thin with one reference deployment (Spectra Coffee) and a stack of working papers. The matrix answers a specific question---"which structural properties does each methodology uniquely provide by design"---and conflating that with the question of practical adoption is the easiest way to oversell a young framework.
 
