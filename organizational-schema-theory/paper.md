@@ -102,6 +102,35 @@ The common thread in these relationships is that orgschema inherits a design pri
 
 A reviewer might observe that the combination of QFD (translating customer requirements into design parameters), Six Sigma (measurable process specifications), and ERP (integrated operational data) already provides partial customer-to-operations traceability. However, this combination lacks three properties that orgschema provides: (1) machine-readable specification at all levels---QFD's House of Quality is a matrix tool, not a testable specification; (2) automated satisfaction validation through a CI/CD pipeline---Six Sigma's control phase is periodic, not continuous; and (3) version-controlled, forkable specifications that enable test suite portability---ERP configurations are not designed for cross-organization sharing. The contribution is the combination of backward traceability, automated validation, and specification portability in a single machine-readable framework.
 
+### Structural Property Matrix
+
+The lineage table above traces *what each framework does and how orgschema extends it*. A complementary question is *which structural design properties does each framework provide*---an orthogonal cut that tests the methodology against twelve criteria chosen to be neutral with respect to popularity, tooling maturity, and training-base size. The table below applies this test to seven adjacent methodologies that span the relevant design space: BDD (executable customer specifications in software), BPMN (process modelling), ISO 9001 (quality management), Infrastructure-as-Code (Terraform/Ansible), Service Blueprinting (customer-experience design), OKR + SLO/SRE (outcome-to-operations linkage), and orgschema.
+
+Legend: ✓ = present by design, ∼ = partial / domain-limited, --- = absent.
+
+**Table: Structural Property Comparison Across Seven Methodologies**
+
+| # | Property | BDD | BPMN | ISO 9001 | IaC | Service Blueprint | OKR + SLO | Orgschema |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | Anchored in customer requirement, not process | ∼ | --- | ∼ | --- | ✓ | ✓ | ✓ |
+| 2 | Machine-readable customer-requirement specification | ✓ | --- | --- | --- | --- | ∼ | ✓ |
+| 3 | Machine-readable process / execution specification | ∼ | ✓ | --- | ✓ | --- | --- | ✓ |
+| 4 | Formal proof that the process satisfies the customer requirement | ∼ | --- | --- | ∼ | --- | ∼ | ✓ |
+| 5 | Orphan / waste detection (process without an upward trace) | --- | --- | --- | ∼ | --- | --- | ✓ |
+| 6 | Version control with git-style readable history | ✓ | ∼ | --- | ✓ | --- | ∼ | ✓ |
+| 7 | Continuous validation instead of periodic audit | ✓ | --- | --- | ✓ | --- | ∼ | ✓ |
+| 8 | Works for non-human customers (API, algorithm, DPP) | ∼ | ∼ | --- | --- | --- | ∼ | ✓ |
+| 9 | Inputs, materials, suppliers in scope | --- | ∼ | ✓ | --- | ∼ | --- | ✓ |
+| 10 | Schema/data separation as first-class design principle | --- | --- | --- | ∼ | --- | --- | ✓ |
+| 11 | Forkability: replicate the tests, reimplement the execution | ∼ | --- | --- | ∼ | --- | --- | ✓ |
+| 12 | Perceptual / brand dimensions as upper-level specification language | --- | --- | --- | --- | ∼ | --- | ✓ |
+
+The table is best read with two qualifications stated explicitly. First, the rightmost column is fully filled. The reason is not that orgschema is intrinsically superior to its neighbours: the twelve criteria were chosen to test the structural design of a *cross-stack specification methodology*, which is precisely what orgschema is by definition. If the criteria had been "number of certified organizations worldwide," "production deployments at enterprise scale," "depth of consulting ecosystem," or "training-program graduates per year," the picture would invert. ISO 9001 would receive most checkmarks, BPMN and IaC would hold strong positions, and orgschema would be visibly thin with one reference deployment (Spectra Coffee) and a stack of working papers. The matrix answers a specific question---"which structural properties does each methodology uniquely provide by design"---and conflating that with the question of practical adoption is the easiest way to oversell a young framework.
+
+Second, almost every individual property already exists in some adjacent methodology. "Machine-readable customer specification" is provided by BDD, in the code domain. "Machine-readable process specification" is provided by BPMN. "Continuous validation" is provided by BDD, IaC, and partially SRE. "Supply chain in scope" is provided by ISO 9001. None of these properties is an orgschema invention. The contribution claimed here is *unification*: orgschema is the first methodology, to our knowledge, that combines all twelve structural properties under one chain of artifacts in one machine-readable format. No adjacent methodology fills more than five or six cells simultaneously. The bet on unification carries a real risk---bundling twelve properties under one roof can produce a methodology that is "average at everything and best at nothing," and specialization has historically won against unification in tooling adoption because narrow tools accumulate more polish per unit of investment over time. The argument for orgschema is not that it should outcompete BDD on developer experience or BPMN on enterprise execution. The argument is that the seams between those tools become operationally costly when AI agents begin consuming organizational specifications directly, and at that point a unified machine-readable coordinate system stops being a luxury.
+
+The honest one-sentence formulation: orgschema is the first attempt to build a single version-controlled contract between customer experience, processes, executors, and suppliers, where consistency between levels is checked automatically and continuously rather than documented in prose and audited once a year. The structural property matrix demonstrates the design claim. Industrial validation remains future work.
+
 ## Methodology: Design Science Research
 
 We follow the Design Science Research methodology as articulated by Hevner and colleagues[^5] and refined through the echeloned DSR (eDSR) approach (Mullarkey & Hevner, 2019),[^12] which decomposes the research project into five validated echelons: problem analysis, requirements specification, design, demonstration, and evaluation. Each echelon provides intermediate validation.
