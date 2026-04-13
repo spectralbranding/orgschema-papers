@@ -1,0 +1,78 @@
+# paper.yaml -- OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  doi: "[to be assigned]"
+  date: "2026-04-13"
+  version: "1.0.0"
+  status: draft
+  license: "CC-BY-NC-ND-4.0"
+  keywords:
+    - organizational specification
+    - test-driven business design
+    - operational audit
+    - specification maturity
+    - six-level cascade
+    - experience contracts
+    - organizational schema theory
+    - AI-assisted diagnostics
+
+claims:
+  - id: P1
+    type: proposition
+    description: >
+      Cascade-Position Prioritization: specification failures at higher levels
+      (closer to customer experience) are more consequential than failures at
+      lower levels (closer to sourcing), regardless of symptom severity.
+    status: proposed
+    falsification: >
+      P1 is falsified if controlled field studies show that organizations
+      prioritizing by symptom severity or financial exposure achieve equal or
+      better operational outcomes than those prioritizing by cascade position.
+
+  - id: P2
+    type: proposition
+    description: >
+      Bidirectional Traceability Completeness: any operational parameter that
+      cannot be traced upward to a customer experience justification is
+      specification waste; any customer experience goal that cannot be traced
+      downward to a verifiable operational implementation is specification debt.
+    status: proposed
+    falsification: >
+      P2 is falsified if organizations with complete bidirectional traceability
+      (per audit criteria) show no improvement in operational coherence
+      compared to organizations with partial traceability.
+
+target_venue: "California Management Review"
+target_venue_alt:
+  - "MIT Sloan Management Review"
+  - "Zenodo (standalone working paper)"
+
+submission_history: []
+
+dependencies:
+  - citation: "Zharnikov (2026i)"
+    doi: "10.5281/zenodo.18946043"
+    relationship: extends
+    critical: true
+    description: "OST: six-level specification cascade that this audit operationalizes"
+
+  - citation: "Zharnikov (2026a)"
+    doi: "10.5281/zenodo.18945912"
+    relationship: cites
+    critical: false
+    description: "SBT: eight-dimension model referenced in experience contract specification"
+
+ai_disclosure: >
+  AI tools (Claude, Anthropic) were used for manuscript drafting assistance,
+  literature review, and self-adversarial review. All conceptual contributions,
+  audit protocol design, propositions, and the worked example are solely the
+  author's intellectual contribution.

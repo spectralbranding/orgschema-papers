@@ -1,0 +1,27 @@
+# PROVENANCE.yaml -- OrgSchema Audit
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations"
+  repository: "spectralbranding/orgschema-papers/orgschema-audit"
+
+  versions:
+    - version: "1.0.0"
+      date: "2026-04-13"
+      description: >
+        Initial preprint. Six-level audit protocol with worked example (Spectra Coffee).
+        Two propositions with falsification conditions. 24 references. Positioned against
+        PEMM, service blueprinting, BSC, QFD, and CMMI.
+
+  forks: []
+
+  target_venue:
+    journal: "California Management Review"
+    publisher: "SAGE"
+    status: "pre-submission"
+
+  target_venue_alt:
+    - journal: "MIT Sloan Management Review"
+      publisher: "MIT"
+    - journal: "Zenodo"
+      publisher: "standalone working paper"
