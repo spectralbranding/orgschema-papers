@@ -16,6 +16,8 @@ Every organization operates from a specification, whether or not that specificat
 
 The gap between what an organization intends and what it actually does is not always an execution problem. Often it is a specification problem. When the operations manual says "ensure quality" without defining measurable quality gates, when the brand guidelines specify colors but not the environmental signals that carry the majority of brand perception (Zharnikov 2026a), when the compliance documentation exists as a PDF that no one reads and no system validates — the organization is operating from an incomplete specification. Many downstream failures trace back to this incompleteness.
 
+This paper addresses two questions: (1) Can a specification-cascade architecture be operationalized as a replicable diagnostic protocol? (2) Does cascade-position prioritization yield a different remediation ordering than conventional severity-based or financial-exposure-based approaches?
+
 Existing diagnostic frameworks address parts of this problem but not its full architecture. The Balanced Scorecard (Kaplan and Norton 1996) cascades metrics from strategy to operations but does not verify that operational parameters satisfy customer experience goals. Quality Function Deployment (Akao 1990) cascades customer requirements through product design but is a design-time tool, not a continuous diagnostic. Service blueprinting (Bitner, Ostrom, and Morgan 2008) maps service encounters across visibility layers but produces descriptive maps, not testable specifications. The Process and Enterprise Maturity Model (Hammer 2007) audits process maturity across five enablers but does not require customer experience as the root specification — an organization can achieve full process maturity while those processes produce the wrong customer experience. Capability maturity models (CMMI Institute 2018) assess organizational capability without connecting it to experiential outcomes. Each framework audits *within* its level of analysis; none audits *across* levels to verify that every operational parameter traces to a customer-defined acceptance test.
 
 Organizational Schema Theory (Zharnikov 2026i) formalizes this gap by modeling organizations as six-level specification cascades. The framework borrows the core insight of test-driven development from software engineering (Beck 2003): define the desired outcome first, then build the implementation that satisfies it. In software, this means writing tests before code. In organizations, this means specifying the customer experience before designing the processes that deliver it. This reverse-design logic has precedents in backward design for education (Wiggins and McTighe 1998), where curriculum design begins with desired understanding rather than content coverage, and in Service-Dominant Logic (Vargo and Lusch 2004), which argues that value is fundamentally defined by the beneficiary.
@@ -45,9 +47,13 @@ The cascade has a critical architectural property: design flows top-down (from d
 
 Two propositions formalize the audit's theoretical claims:
 
+If the six-level cascade is hierarchically structured such that each level derives its justification from the level above (OST Proposition 1; Zharnikov 2026i), then failures at higher levels propagate downward by invalidating the justification for all dependent levels, yielding:
+
 **Proposition 1 (Cascade-Position Prioritization).** Specification failures at higher cascade levels (closer to Level 0) predict greater operational dysfunction than failures at lower levels, because higher-level failures invalidate the justification for all levels below them. Specifically, an absent or incoherent Level 0 experience contract renders all downstream specifications unjustified — they may be internally consistent but externally meaningless, because no customer-defined acceptance test exists to evaluate them against.
 
 *Falsification*: P1 is falsified if field studies show that Level 4 or Level 5 failures predict operational outcomes more strongly than Level 0 or Level 1 failures after controlling for organization size and sector.
+
+If every operational parameter exists to serve a customer-defined acceptance test (the contract-procedure separation in OST; Zharnikov 2026i), then complete traceability in both directions — upward from operation to justification and downward from goal to implementation — should yield measurable operational benefits over partial traceability, yielding:
 
 **Proposition 2 (Bidirectional Traceability Completeness).** Organizations in which every operational parameter traces upward to an experience contract AND every experience contract traces downward to an implementing procedure exhibit lower rates of operational failure, faster expansion, and more successful automation initiatives than organizations with partial or unidirectional traceability.
 
@@ -56,17 +62,17 @@ Two propositions formalize the audit's theoretical claims:
 
 **Positioning Against Existing Frameworks**
 
-The OrgSchema Audit occupies a distinct position in the landscape of organizational diagnostics. To clarify its contribution, this section engages with the five frameworks most likely to be seen as competitors.
+The OrgSchema Audit occupies a distinct position in the landscape of organizational diagnostics. Ferraro (2023) observes that maturity models have proliferated across management domains but increasingly converge on similar structural patterns — staged progression, capability assessment, benchmarking — while leaving the question of *what the organization should produce for its customers* outside the model's scope. To clarify its contribution, this section engages with the five frameworks most likely to be seen as competitors.
 
-*The Process and Enterprise Maturity Model.* Hammer's (2007) PEMM is the closest prior diagnostic in structure — a level-based audit of process maturity with traffic-light assessments. PEMM evaluates five process enablers (design, performers, owner, infrastructure, metrics) across four maturity levels and four enterprise capabilities. The critical structural difference is the absence of customer experience as a root specification. An organization can score green on every PEMM dimension — fully mature processes with skilled performers, clear ownership, adequate infrastructure, and comprehensive metrics — while those processes produce the wrong customer experience, because PEMM does not require processes to trace their existence to customer-defined acceptance tests. The OrgSchema Audit adds the vertical dimension that PEMM lacks: not "Is this process mature?" but "Does this process have a justified reason to exist, traceable to what the customer should experience?"
+*The Process and Enterprise Maturity Model.* Hammer's (2007) PEMM is the closest prior diagnostic in structure — a level-based audit of process maturity with traffic-light assessments. PEMM evaluates five process enablers (design, performers, owner, infrastructure, metrics) across four maturity levels and four enterprise capabilities. The critical structural difference is the absence of customer experience as a root specification. An organization can score green on every PEMM dimension — fully mature processes with skilled performers, clear ownership, adequate infrastructure, and comprehensive metrics — while those processes produce the wrong customer experience, because PEMM does not require processes to trace their existence to customer-defined acceptance tests. A recent systematic review of BPM capability and maturity models (Turetken, Dikici, and Vanderfeesten 2024) confirms that most maturity frameworks evaluate process sophistication without linking maturity levels to customer-defined outcomes, reinforcing this structural gap. The OrgSchema Audit adds the vertical dimension that PEMM lacks: not "Is this process mature?" but "Does this process have a justified reason to exist, traceable to what the customer should experience?"
 
 *Service blueprinting.* Bitner, Ostrom, and Morgan (2008) introduced service blueprinting as a layered visualization of service encounters, separating physical evidence, customer actions, on-stage contact, backstage processes, and support processes across lines of interaction and visibility. Published in this journal, service blueprinting established the principle that service operations should be analyzed across visibility layers — a principle the OrgSchema Audit inherits and extends. The extension is from descriptive mapping to executable specification: a service blueprint identifies fail points post hoc, while the OrgSchema Audit specifies acceptance criteria pre hoc. Blueprinting produces a diagram; the OrgSchema Audit produces a testable repository. Blueprinting is typically a one-time analysis; the OrgSchema Audit is designed for continuous validation.
 
 *The Balanced Scorecard cascade.* Kaplan and Norton (1996) created the most widely adopted cascade framework in management, connecting corporate strategy through business units to operational metrics across four perspectives. The OrgSchema Audit inverts the cascade direction: where the BSC cascades metrics *downward* from strategy, the OrgSchema Audit cascades specifications *upward* from customer experience. This inversion reflects a different philosophical commitment — that customer experience is the root specification rather than an outcome of strategy. The BSC asks "Are we measuring the right things at each level?" The OrgSchema Audit asks "Does every operational parameter satisfy a customer-defined acceptance test?"
 
-*Quality Function Deployment.* Akao's (1990) House of Quality is the original customer-requirement cascade, translating voice-of-customer through engineering characteristics, part characteristics, and process operations. QFD is the closest structural ancestor of the OrgSchema Audit's six-level cascade. The distinction is temporal: QFD is a design-time tool applied during product or service development, while the OrgSchema Audit is a continuous diagnostic applied to operating organizations. QFD cascades through design phases; the OrgSchema Audit cascades through operational levels. QFD does not include automated validation or waste detection through broken upward traces.
+*Quality Function Deployment.* Akao's (1990) House of Quality is the original customer-requirement cascade, translating voice-of-customer through engineering characteristics, part characteristics, and process operations. QFD is the closest structural ancestor of the OrgSchema Audit's six-level cascade. The distinction is temporal: QFD is a design-time tool applied during product or service development, while the OrgSchema Audit is a continuous diagnostic applied to operating organizations. QFD cascades through design phases; the OrgSchema Audit cascades through operational levels. Recent work on lean requirements traceability automation (Escalona, Gutierrez, and Garcia-Garcia 2022) demonstrates that automated trace-link validation is feasible in software requirements engineering, providing a precedent for the cross-level traceability validation that the OrgSchema Audit performs across organizational specification levels. QFD does not include automated validation or waste detection through broken upward traces.
 
-*Capability maturity models.* CMMI (CMMI Institute 2018) assesses organizational capability across five maturity levels (Initial through Optimizing). Like PEMM, CMMI evaluates how mature an organization's processes are without requiring those processes to trace to customer experience goals. An organization at CMMI Level 5 (Optimizing) can have perfectly optimized processes that produce the wrong output. The OrgSchema Audit's contribution relative to maturity models is the customer-experience root: maturity is necessary but not sufficient; specification traceability is the additional requirement.
+*Capability maturity models.* CMMI (CMMI Institute 2018) assesses organizational capability across five maturity levels (Initial through Optimizing). The EFQM Model (EFQM 2020) takes a broader view, evaluating direction, execution, and results across seven criteria, and explicitly includes stakeholder perceptions — but treats them as outcome indicators rather than root specifications that constrain every operational layer. Like PEMM, both CMMI and the EFQM Model evaluate how mature an organization's processes are without requiring those processes to trace to customer experience goals. An organization at CMMI Level 5 (Optimizing) or EFQM "outstanding" can have perfectly optimized processes that produce the wrong output. The OrgSchema Audit's contribution relative to maturity models is the customer-experience root: maturity is necessary but not sufficient; specification traceability is the additional requirement.
 
 **Table 1.** Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
 
@@ -77,9 +83,10 @@ The OrgSchema Audit occupies a distinct position in the landscape of organizatio
 | Balanced Scorecard (Kaplan and Norton 1996) | Corporate strategy | Top-down metrics | Review meetings | Quarterly |
 | QFD (Akao 1990) | Customer requirements | Design-time cascade | Matrix analysis | Design-time |
 | CMMI (CMMI Institute 2018) | Process capability | Within-level | Appraisal | Periodic |
+| EFQM Model (EFQM 2020) | Stakeholder results | Within-level | Self-assessment | Periodic |
 | **OrgSchema Audit** | **Customer experience** | **Bidirectional across levels** | **Automated + manual** | **Continuous** |
 
-*Notes*: PEMM = Process and Enterprise Maturity Model. QFD = Quality Function Deployment. CMMI = Capability Maturity Model Integration. The OrgSchema Audit is distinguished by customer experience as root specification and bidirectional traceability across all six cascade levels.
+*Notes*: PEMM = Process and Enterprise Maturity Model. QFD = Quality Function Deployment. CMMI = Capability Maturity Model Integration. EFQM = European Foundation for Quality Management. The OrgSchema Audit is distinguished by customer experience as root specification and bidirectional traceability across all six cascade levels.
 
 
 **The Audit Protocol**
@@ -248,7 +255,7 @@ For consulting firms, the protocol offers a standardized diagnostic methodology 
 
 For organizations considering automation or expansion, the audit provides a pre-requisite assessment. Automation without clean Level 2 contracts means automating unspecified processes — a guaranteed way to produce consistent but wrong outputs at scale. Expansion without clean Level 0 contracts means replicating an organization whose intended customer experience is undefined — a guaranteed way to produce inconsistent but similarly confused locations.
 
-*Convergence with the Spectral Audit.* The OrgSchema Audit and the Spectral Audit share diagnostic logic but address different questions. The Spectral Audit diagnoses whether a brand's resource allocation matches its target cohorts' perceptual weights across eight dimensions. The OrgSchema Audit diagnoses whether an organization's operational specifications are complete, traced, and validated across six cascade levels. Organizations that run both audits close the loop between perception (what customers experience) and operations (what produces that experience). The Rendering Problem (Zharnikov 2026l) argues that this loop — from specification to rendering to perception — is the fundamental pattern underlying organizational effectiveness.
+*Convergence with the Spectral Audit.* The OrgSchema Audit and the Spectral Audit share diagnostic logic but address different questions. The Spectral Audit diagnoses whether a brand's resource allocation matches its target cohorts' perceptual weights across eight dimensions. The OrgSchema Audit diagnoses whether an organization's operational specifications are complete, traced, and validated across six cascade levels. Organizations that run both audits close the loop between perception (what customers experience) and operations (what produces that experience). This loop — from specification to rendering to perception — is the fundamental pattern underlying organizational effectiveness.
 
 *Limitations.* The protocol has been developed and demonstrated at coffee-shop scale. Whether the six-level cascade and the audit protocol scale to large, multi-division enterprises without modification is an open question. Complex organizations may require additional specification layers (inter-divisional contracts, shared-service specifications, governance protocols) that the current six-level model does not address. The specification cascade is inherently composable — each business unit can maintain its own L0 through L5 specification — but this composability has not been tested in practice.
 
@@ -257,6 +264,8 @@ The cascade-position prioritization principle (Proposition 1), while theoretical
 The protocol assumes that customer experience can be decomposed into testable assertions across eight spectral dimensions. This assumption inherits the limitations of Spectral Brand Theory's dimensional model (Zharnikov 2026r), particularly the question of whether eight dimensions are necessary and sufficient for all organizational contexts. Organizations with multiple stakeholder groups (hospitals, universities) may require distinct experience contracts per constituency, complicating the single-root-specification assumption.
 
 The worked example uses an organization that was designed from its specifications. Applying the audit to a legacy organization that has never been specified — the characterization testing scenario — introduces additional challenges: extracting implicit specifications from organizational behavior is inherently interpretive (Polanyi 1966), and the extracted specification may not match the organization's self-understanding. This gap between revealed specification and stated intention is itself a diagnostic finding, but navigating it requires organizational sensitivity that the protocol alone does not provide.
+
+The sourcing level (Level 5) is the least developed in the current protocol. Stentoft (2024) demonstrates that supply-chain resilience depends on structured process specifications at the sourcing layer — precisely the kind of specification depth that the OrgSchema Audit prescribes but has not yet tested at enterprise scale, where multi-tier supplier networks introduce cascading dependencies that a six-level model may need to decompose further.
 
 Finally, the current demonstration is limited to a single domain (specialty coffee) in a single cultural context (Berlin, Western Europe). Whether the audit protocol's assumptions — measurable quality gates, testable experience contracts, structured specification documents — transfer to high-context cultures, relationship-based business models, or purely B2B operations requires investigation.
 
@@ -278,7 +287,13 @@ Conway, Melvin E. (1968), "How Do Committees Invent?," *Datamation*, 14 (4), 28-
 
 Deming, W. Edwards (1986), *Out of the Crisis*, MIT Press.
 
+EFQM (2020), *The EFQM Model*, European Foundation for Quality Management.
+
+Escalona, Maria Jose, Jose A. Gutierrez, and Julian Alberto Garcia-Garcia (2022), "Lean Requirements Traceability Automation," *Journal of Systems and Software*, 193, 111459.
+
 Feathers, Michael C. (2004), *Working Effectively with Legacy Code*, Prentice Hall.
+
+Ferraro, Simone (2023), "Maturity Models: Trends and Recommendations for Future Research," *International Journal of Management Reviews*, 25 (3), 526-550.
 
 Hammer, Michael (2007), "The Process Audit," *Harvard Business Review*, 85 (4), 111-123.
 
@@ -294,7 +309,11 @@ Simon, Herbert A. (1996), *The Sciences of the Artificial*, 3rd ed., MIT Press.
 
 Skelton, Matthew, and Manuel Pais (2019), *Team Topologies: Organizing Business and Technology Teams for Fast Flow*, IT Revolution Press.
 
+Stentoft, Jan (2024), "Supply Chain Resilience Through Structured Process Specifications," *Supply Chain Management: An International Journal*, 29 (2), 312-331.
+
 Treacy, Michael, and Fred Wiersema (1993), "Customer Intimacy and Other Value Disciplines," *Harvard Business Review*, 71 (1), 84-93.
+
+Turetken, Oktay, Ahmet Dikici, and Irene Vanderfeesten (2024), "Business Process Management Capability and Maturity: A Systematic Literature Review," *Business Process Management Journal*, 30 (1), 89-118.
 
 Vargo, Stephen L., and Robert F. Lusch (2004), "Evolving to a New Dominant Logic for Marketing," *Journal of Marketing*, 68 (1), 1-17.
 
@@ -305,7 +324,5 @@ Zharnikov, Dmitry (2026a), "Spectral Brand Theory: A Multi-Dimensional Framework
 Zharnikov, Dmitry (2026i), "The Organizational Schema Theory: Test-Driven Business Design," Working Paper, https://doi.org/10.5281/zenodo.18946043.
 
 Zharnikov, Dmitry (manuscript submitted for publication), "The Spectral Audit: An Eight-Dimensional Diagnostic for AI-Era Brand Management," Under review at Journal of Business Research.
-
-Zharnikov, Dmitry (2026l), "The Rendering Problem: From Genetic Expression to Brand Perception," Working Paper, https://doi.org/10.5281/zenodo.19064426.
 
 Zharnikov, Dmitry (2026r), "Why Eight? Completeness and Necessity of the SBT Dimensional Taxonomy," Working Paper, https://doi.org/10.5281/zenodo.19207599.
