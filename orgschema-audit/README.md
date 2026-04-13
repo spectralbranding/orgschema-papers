@@ -1,6 +1,6 @@
 # The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations
 
-**DOI**: [to be assigned] | **Status**: Working paper v1.0
+**DOI**: [10.5281/zenodo.19555201](https://doi.org/10.5281/zenodo.19555201) | **Status**: Working paper v1.0
 
 ## Paper
 

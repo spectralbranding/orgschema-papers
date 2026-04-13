@@ -2,6 +2,8 @@
 
 Dmitry Zharnikov
 
+DOI: 10.5281/zenodo.19555201
+
 **Abstract**
 
 This paper introduces the OrgSchema Audit, a structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels: experience contracts, signal requirements, process contracts, procedures, input specifications, and sourcing requirements. The protocol parallels the Spectral Audit developed for brand perception (Zharnikov, manuscript submitted for publication) but targets organizational operations rather than perceptual allocation. Each audit level defines what to examine, what a healthy specification looks like, what failure modes indicate, and what corrective actions restore specification integrity. A worked example using a specialty coffee operation demonstrates the full protocol. The paper argues that a significant share of organizational dysfunction originates not from poor execution but from absent or misaligned specifications, and that remediation should be prioritized by cascade position rather than symptom severity. The protocol is designed to be executable with or without AI assistance, though large language models substantially reduce the cost of initial specification extraction from existing documentation.
@@ -66,6 +68,8 @@ The OrgSchema Audit occupies a distinct position in the landscape of organizatio
 
 *Capability maturity models.* CMMI (CMMI Institute 2018) assesses organizational capability across five maturity levels (Initial through Optimizing). Like PEMM, CMMI evaluates how mature an organization's processes are without requiring those processes to trace to customer experience goals. An organization at CMMI Level 5 (Optimizing) can have perfectly optimized processes that produce the wrong output. The OrgSchema Audit's contribution relative to maturity models is the customer-experience root: maturity is necessary but not sufficient; specification traceability is the additional requirement.
 
+**Table 1.** Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
+
 | Framework | Root specification | Cascade direction | Validation | Continuity |
 |:----------|:-------------------|:------------------|:-----------|:-----------|
 | PEMM (Hammer 2007) | Process maturity | Within-level | Manual assessment | Periodic |
@@ -75,7 +79,7 @@ The OrgSchema Audit occupies a distinct position in the landscape of organizatio
 | CMMI (CMMI Institute 2018) | Process capability | Within-level | Appraisal | Periodic |
 | **OrgSchema Audit** | **Customer experience** | **Bidirectional across levels** | **Automated + manual** | **Continuous** |
 
-**Table 1.** Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
+*Notes*: PEMM = Process and Enterprise Maturity Model. QFD = Quality Function Deployment. CMMI = Capability Maturity Model Integration. The OrgSchema Audit is distinguished by customer experience as root specification and bidirectional traceability across all six cascade levels.
 
 
 **The Audit Protocol**
@@ -258,10 +262,6 @@ Finally, the current demonstration is limited to a single domain (specialty coff
 
 *Future research.* Three directions are immediate. First, field validation: applying the OrgSchema Audit to 10 to 20 organizations of varying size and sector, measuring both the time and cost of the audit and the operational outcomes of specification-driven remediation over 6 to 12 months. This would provide the first empirical test of Propositions 1 and 2. Second, scale testing: extending the six-level model to organizations with 50 or more employees to identify where additional specification layers or modified audit procedures are required. Third, integration testing: running the OrgSchema Audit and the Spectral Audit jointly on the same organization to evaluate whether the combined diagnostic produces insights that neither audit alone would reveal — specifically, whether operational specification gaps predict perceptual coherence gaps, and vice versa.
 
-
-**Disclosure**
-
-This paper was drafted with AI assistance (Claude, Anthropic). The author assumes full responsibility for the intellectual content, claims, and any errors.
 
 
 **References**

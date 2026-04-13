@@ -10,6 +10,10 @@ title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Org
 version: "1.0.0"
 date-released: "2026-04-13"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19555201"
+    description: "Zenodo archive (primary)"
 keywords:
   - organizational specification
   - operational audit
