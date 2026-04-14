@@ -14,14 +14,3 @@ provenance:
         PEMM, service blueprinting, BSC, QFD, and CMMI.
 
   forks: []
-
-  target_venue:
-    journal: "California Management Review"
-    publisher: "SAGE"
-    status: "pre-submission"
-
-  target_venue_alt:
-    - journal: "MIT Sloan Management Review"
-      publisher: "MIT"
-    - journal: "Zenodo"
-      publisher: "standalone working paper"

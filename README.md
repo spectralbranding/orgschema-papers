@@ -7,6 +7,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | Paper | Words | Refs | Status |
 |-------|-------|------|--------|
 | [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper, Mar 2026 |
+| [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper, Apr 2026 |
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
 
@@ -16,6 +17,15 @@ Introduces the orgschema methodology: a six-level TDD cascade (customer experien
 
 - [Read on GitHub](organizational-schema-theory/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.18946043)
+
+### The OrgSchema Audit (Zharnikov 2026)
+
+Introduces a structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels. Each audit level defines what to examine, what a healthy specification looks like, what failure modes indicate, and what corrective actions restore specification integrity. Demonstrates the full protocol through a worked example using a specialty coffee operation. Advances two propositions: cascade-position prioritization and bidirectional traceability completeness.
+
+**Keywords**: organizational specification, test-driven business design, operational audit, specification maturity, six-level cascade, experience contracts, organizational schema theory, AI-assisted diagnostics
+
+- [Read on GitHub](orgschema-audit/paper.md)
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.19555201)
 
 ## How to Cite
 
@@ -52,11 +62,11 @@ See [Zharnikov 2026a](https://github.com/spectralbranding/sbt-papers) for the SB
 
 Several papers in the [sbt-papers](https://github.com/spectralbranding/sbt-papers) repo are cross-cutting methodology pieces that apply equally to SBT, Orgschema, and the broader specification-first research program. They live in sbt-papers for historical reasons (originated there before the orgschema-papers split) but are conceptually shared between the two frameworks:
 
-| Key | Paper | Relevance to Orgschema |
-|-----|-------|------------------------|
-| R13 | [Paper as Specification: A Machine-Readable Standard for Scientific Claims](https://github.com/spectralbranding/sbt-papers/tree/main/r13-paper-as-specification) | Applies the orgschema test-driven cascade pattern to scientific publishing — papers as testable specifications. |
-| R14 | [Research as Repository: A Git-Native Protocol for Scientific Knowledge Production](https://github.com/spectralbranding/sbt-papers/tree/main/r14-paper-as-repository) | Extends orgschema's "git as system of record" architecture to scientific knowledge production. |
-| 2026l | [The Rendering Problem: From Genetic Expression to Brand Perception](https://github.com/spectralbranding/sbt-papers/tree/main/rendering-problem) | Cross-domain formalization of the specification-rendering gap that orgschema's L1-L5 cascade addresses operationally. |
+| Key | Paper | DOI | Relevance to Orgschema |
+|-----|-------|-----|------------------------|
+| R13 | [Paper as Specification: A Machine-Readable Standard for Scientific Claims](https://github.com/spectralbranding/sbt-papers/tree/main/r13-paper-as-specification) | [10.5281/zenodo.19210037](https://doi.org/10.5281/zenodo.19210037) | Applies the orgschema test-driven cascade pattern to scientific publishing — papers as testable specifications. |
+| R14 | [Research as Repository: A Git-Native Protocol for Scientific Knowledge Production](https://github.com/spectralbranding/sbt-papers/tree/main/r14-paper-as-repository) | [10.5281/zenodo.19294864](https://doi.org/10.5281/zenodo.19294864) | Extends orgschema's "git as system of record" architecture to scientific knowledge production. |
+| 2026l | [The Rendering Problem: From Genetic Expression to Brand Perception](https://github.com/spectralbranding/sbt-papers/tree/main/rendering-problem) | [10.5281/zenodo.19064426](https://doi.org/10.5281/zenodo.19064426) | Cross-domain formalization of the specification-rendering gap that orgschema's L1-L5 cascade addresses operationally. |
 
 These papers' Zenodo DOIs and GitHub paths remain in sbt-papers; this repo points to them rather than duplicating.
 
