@@ -16,18 +16,16 @@ provenance:
     - version: "1.1.0"
       date: "2026-03-12"
       description: >
-        Zenodo v1.0 upload. Five propositions formalized. CMR submission
-        cycle (CMR -> desk reject -> TQM -> reject -> BPMJ -> reject ->
-        IJQSS -> reject) drove iterative refinement of the prior-art
-        positioning and the executor-topology section.
+        Zenodo v1.0 upload. Five propositions formalized. Early submission
+        cycle drove iterative refinement of the prior-art positioning and
+        the executor-topology section.
     - version: "1.2.0"
       date: "2026-04-01"
       description: >
-        M@n@gement restructuring (organization-theory framing). Added
-        15+ new references (Simon, Galbraith, Thompson, Mintzberg,
-        Freeman, Crozier, Hatchuel, Kaplan & Norton). EJIS submission
-        ready. Restructured for IS / org-theory dual readership with
-        DSR reframing as the primary methodological frame.
+        Organization-theory framing restructuring. Added 15+ new references
+        (Simon, Galbraith, Thompson, Mintzberg, Freeman, Crozier, Hatchuel,
+        Kaplan & Norton). Restructured for IS / org-theory dual readership
+        with DSR reframing as the primary methodological frame.
     - version: "1.3.0"
       date: "2026-04-11"
       description: >
@@ -66,55 +64,43 @@ provenance:
         v1.3 revision upload pending. Adds Structural Property Matrix
         subsection. No changes to abstract, propositions, or claims.
 
-    - id: "fork-2026-03-cmr"
-      target: "California Management Review"
+    - id: "fork-2026-03-j1"
+      target: "[withheld]"
       target_type: journal
       created: "2026-03-05"
       status: desk_rejected
-      decision_date: "2026-03-07"
-      note: "CMR practitioner rewrite cycle initiated."
 
-    - id: "fork-2026-03-tqm"
-      target: "TQM Journal"
+    - id: "fork-2026-03-j2"
+      target: "[withheld]"
       target_type: journal
       status: rejected
-      note: "Restructured for TQM; rejected. Cycle continued to BPMJ."
 
-    - id: "fork-2026-03-bpmj"
-      target: "Business Process Management Journal"
+    - id: "fork-2026-03-j3"
+      target: "[withheld]"
       target_type: journal
       status: rejected
-      note: "BPM-aligned restructure; rejected."
 
-    - id: "fork-2026-03-ijqss"
-      target: "International Journal of Quality and Service Sciences"
+    - id: "fork-2026-03-j4"
+      target: "[withheld]"
       target_type: journal
       status: rejected
       decision_date: "2026-03-23"
-      note: "Quality sciences framing; rejected. Cycle led to M@n@gement reframing."
 
-    - id: "fork-2026-03-icis"
-      target: "ICIS 2026"
+    - id: "fork-2026-03-c1"
+      target: "[withheld]"
       target_type: conference
       created: "2026-03-08"
       status: under_review
-      note: "Toolkit paper variant. Decision expected ~Aug 2026."
 
-    - id: "fork-2026-04-ejis"
-      target: "European Journal of Information Systems"
+    - id: "fork-2026-04-j5"
+      target: "[withheld]"
       target_type: journal
       created: "2026-04-01"
-      submission_id: "260787449"
       status: under_review
-      note: >
-        Double-blind T&F ScholarOne submission. DSR reframing applied.
-        Decision expected ~Jul-Oct 2026. The current EJIS submission
-        is frozen at the v1.2 content level and is not affected by
-        the v1.3 Zenodo revision.
 
   target_venues:
-    primary: "European Journal of Information Systems (under review)"
+    primary: "[withheld]"
     fallback:
-      - "M@n@gement (Diamond OA, FNEGE, drafted)"
-      - "Journal of Management Studies"
-      - "Organization Studies"
+      - "[withheld]"
+      - "[withheld]"
+      - "[withheld]"

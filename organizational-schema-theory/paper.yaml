@@ -116,26 +116,21 @@ submission_history:
       an orthogonal quantitative artifact complementing the existing
       ten-row lineage table. Aligned with orgschema.com/research and
       orgschema.com/llms.txt.
-  - venue: "European Journal of Information Systems (EJIS)"
+  - venue: "[withheld]"
     venue_type: journal
     submission_date: "2026-04-01"
-    submission_id: "260787449"
     status: under_review
-    note: "Double-blind review. Decision expected ~Jul-Oct 2026."
-  - venue: "ICIS 2026"
+  - venue: "[withheld]"
     venue_type: conference
     submission_date: "2026-03-08"
-    submission_id: "ICIS-2026-toolkit"
     status: under_review
-    note: "Toolkit paper variant; decision ~Aug 2026."
-  - venue: "M@n@gement"
+  - venue: "[withheld]"
     venue_type: journal
     status: drafted
-    note: "Diamond OA, FNEGE-listed. Restructured for organization theory framing. Awaiting EJIS decision before parallel submission."
 
 target_venues:
-  primary: "European Journal of Information Systems"
+  primary: "[withheld]"
   fallback:
-    - "M@n@gement"
-    - "Journal of Management Studies"
-    - "Organization Studies"
+    - "[withheld]"
+    - "[withheld]"
+    - "[withheld]"
