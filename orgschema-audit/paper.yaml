@@ -14,7 +14,7 @@ metadata:
   date: "2026-04-13"
   version: "1.0.0"
   status: draft
-  license: "CC-BY-NC-ND-4.0"
+  license: "CC-BY-4.0"
   keywords:
     - organizational specification
     - test-driven business design

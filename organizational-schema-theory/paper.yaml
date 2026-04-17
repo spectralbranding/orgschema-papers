@@ -16,7 +16,7 @@ metadata:
   date: "2026-04-11"
   version: "1.3.0"
   status: working_paper
-  license: "CC-BY-NC-ND-4.0"
+  license: "CC-BY-4.0"
   keywords:
     - test-driven development
     - business design
