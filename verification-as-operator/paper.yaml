@@ -10,8 +10,8 @@ metadata:
   citation_key: "2026ae"
   doi: "10.5281/zenodo.19778588"
   date: "2026-04-26"
-  version: "0.4"
-  status: working_paper
+  version: "1.0.0"
+  status: preprint
   license: "CC-BY-4.0"
   keywords:
     - organizational specification

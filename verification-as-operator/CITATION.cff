@@ -7,7 +7,7 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails"
-version: 0.4
+version: 1.0.0
 date-released: 2026-04-26
 doi: 10.5281/zenodo.19778588
 url: "https://github.com/spectralbranding/orgschema-papers"
