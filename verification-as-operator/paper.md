@@ -252,6 +252,10 @@ This algebraic account unifies three independent research lineages — Beer's (1
 
 The practical upshot is that the choice between audit and acceptance testing is not merely a procedural choice; it is a choice between degenerate and full-rank projection. Organizations with multi-dimensional specifications — which is to say, all organizations that care about multi-dimensional customer experience — require full-rank verification. The information cost of degenerate projection is structural, not contingent, and no improvement in audit design can recover information discarded by projection onto a lower-dimensional subspace. Thurstone (1947) established eighty years ago that factor analysis requires full-rank decomposition to recover latent structure. Chen (2021) and Kannan and Vempala (2009) establish that this principle generalizes from psychometrics to the full modern statistical treatment of spectral methods. The organizational verification literature is reaching the same conclusion, one specification cascade at a time.
 
+**Acknowledgments**
+
+AI assistants (Claude Opus 4.6, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+
 ---
 
 **References**

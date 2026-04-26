@@ -9,8 +9,8 @@ metadata:
       corresponding: true
   citation_key: "2026ae"
   doi: "PENDING"
-  date: "2026-04-25"
-  version: "0.3.0"
+  date: "2026-04-26"
+  version: "0.3.1"
   status: working_paper
   license: "CC-BY-4.0"
   keywords:
