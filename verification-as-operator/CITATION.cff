@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification"
+version: 0.3.0
+date-released: 2026-04-25
+url: "https://github.com/spectralbranding/orgschema-papers"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+keywords:
+  - organizational specification
+  - acceptance testing
+  - spectral projection
+  - organizational cybernetics
+  - viable system model
+  - test-driven development
+  - verification
+  - audit society
+  - brand function
+license: CC-BY-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification"
+  year: 2026
+  url: "https://github.com/spectralbranding/orgschema-papers"

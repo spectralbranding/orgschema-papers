@@ -1,0 +1,109 @@
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026ae"
+  doi: "PENDING"
+  date: "2026-04-25"
+  version: "0.3.0"
+  status: working_paper
+  license: "CC-BY-4.0"
+  keywords:
+    - organizational specification
+    - acceptance testing
+    - spectral projection
+    - organizational cybernetics
+    - viable system model
+    - test-driven development
+    - verification
+    - audit society
+    - brand function
+    - organizational schema theory
+
+abstract: >
+  This paper provides an algebraic account of organizational
+  verification: acceptance testing, as instantiated in Organizational
+  Schema Theory (OST), is a spectral projection operator that maps a
+  noisy organizational state onto the invariant eigenspace defined by
+  the Brand Function. Conventional audit, as analyzed by Power (1997),
+  is a degenerate rank-1 projection that collapses the full
+  dimensionality of organizational performance onto a binary compliance
+  axis, discarding structural information. OST's multi-level cascade is
+  full-rank: each cascade level constitutes an independent projection
+  that preserves dimensional information across the specification
+  hierarchy. The paper draws three lineages to ground this claim --
+  organizational cybernetics (Beer 1972; Beer 1984), behavioral
+  organization theory (March and Simon 1958; Argyris and Schon 1978),
+  and software engineering verification (Beck 2002; Boehm 1981) -- and
+  shows that all three converge on the spectral projection identity
+  without making it explicit. The companion result, that verification
+  rate is bounded and never asymptotically complete (Zharnikov 2026h),
+  finds its operator-theoretic grounding in the rank inequality between
+  the full-rank cascade and the degenerate audit projection.
+
+claims:
+  - id: "C1"
+    statement: >
+      Organizational acceptance testing is algebraically equivalent to
+      spectral projection onto the invariant Brand Function eigenspace.
+    evidence: "Formal operator-theoretic argument; Beck (2002) TDD formalism; OST cascade (Zharnikov 2026i)"
+    status: theoretical
+  - id: "C2"
+    statement: >
+      Conventional audit as analyzed by Power (1997) is a degenerate
+      rank-1 projection; OST's cascade is full-rank.
+    evidence: "Algebraic rank argument; Power (1997) sociological evidence"
+    status: theoretical
+  - id: "C3"
+    statement: >
+      Three independent research lineages -- cybernetics (Beer 1972; Beer 1984),
+      behavioral organization theory (March and Simon 1958; Argyris and
+      Schon 1978), and TDD (Beck 2002) -- independently converge on
+      the spectral projection structure without stating the algebraic
+      identity.
+    evidence: "Synthesis argument; reviewed canonical sources"
+    status: theoretical
+  - id: "C4"
+    statement: >
+      The verification rate bound (Zharnikov 2026h) is the resource
+      cost of maintaining a full-rank cascade; verification bandwidth
+      bounds the maximum sustainable cascade rank.
+    evidence: "Tushman and Nadler (1978) bandwidth framework; Simon (1962) hierarchical decomposition; Lawrence and Lorsch (1967) differentiation; Zharnikov (2026h) impossibility result; Zharnikov (2026aa) rate-distortion bandwidth formalization"
+    status: theoretical
+
+methodology:
+  type: theoretical_synthesis
+  framework: "Operator-theoretic formalization of organizational verification; synthesis of cybernetics, behavioral org theory, and software V&V"
+  artifact: "Algebraic identification of acceptance testing as spectral projection; rank-1-vs-full-rank distinction"
+  evaluation: "Logical consistency of algebraic argument; convergence with three independent research lineages; worked qualitative example"
+  validity_types_addressed:
+    - "Internal logical validity"
+    - "Convergent validity across three lineages"
+
+target_venues:
+  primary: "Organization Science"
+  fallback:
+    - "Management Science (IS track)"
+    - "Academy of Management Review"
+    - "Administrative Science Quarterly"
+
+bridges:
+  - paper: "Zharnikov 2026h (R5)"
+    role: "Verification rate bound; impossibility result grounded in cascade rank"
+  - paper: "Zharnikov 2026i (OST)"
+    role: "L1 acceptance testing cascade as primary instantiation of full-rank projection"
+  - paper: "Zharnikov 2026x (R16)"
+    role: "Brand Function as the invariant eigenspace the cascade must preserve"
+  - paper: "Zharnikov 2026aa (R19)"
+    role: "Rate-distortion / bandwidth framing for AI brand perception encoders; verification bandwidth bounds cascade rank"
+  - paper: "R21 Spectral Immunity (not formally cited; referenced as forthcoming Marketing Science)"
+    role: "Awareness-gate / DO-WHAT distinction; portfolio interference results ground L1 projection properties across AI observers"
+  - paper: "Zharnikov 2026ad (R22, forthcoming)"
+    role: "mu > lambda stability condition for cascade under realistic organizational dynamics"
+
+reference_audit: "DR-8 (2026-04-25/26); v0.2 adds Beer (1984) JORS, Chen (2021) Foundations and Trends ML, Cohen (2022) NeuroImage, Kannan and Vempala (2009), Simon (1962), Lawrence and Lorsch (1967). v0.3 adds Weick (1979), Simons (1995), Luenberger (1969), March (1991), Ashby (1956), Meyer and Rowan (1977), Ocasio (1997). Total refs: 37. Self-cite ratio: 6/37 = 16.2%."
