@@ -1,7 +1,7 @@
 paper_spec_version: "0.1.0"
 
 metadata:
-  title: "Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification"
+  title: "Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails"
   authors:
     - name: "Dmitry Zharnikov"
       orcid: "0009-0000-6893-9231"
@@ -10,7 +10,7 @@ metadata:
   citation_key: "2026ae"
   doi: "PENDING"
   date: "2026-04-26"
-  version: "0.3.1"
+  version: "0.4"
   status: working_paper
   license: "CC-BY-4.0"
   keywords:
@@ -26,25 +26,34 @@ metadata:
     - organizational schema theory
 
 abstract: >
-  This paper provides an algebraic account of organizational
-  verification: acceptance testing, as instantiated in Organizational
-  Schema Theory (OST), is a spectral projection operator that maps a
-  noisy organizational state onto the invariant eigenspace defined by
-  the Brand Function. Conventional audit, as analyzed by Power (1997),
-  is a degenerate rank-1 projection that collapses the full
-  dimensionality of organizational performance onto a binary compliance
-  axis, discarding structural information. OST's multi-level cascade is
-  full-rank: each cascade level constitutes an independent projection
-  that preserves dimensional information across the specification
-  hierarchy. The paper draws three lineages to ground this claim --
-  organizational cybernetics (Beer 1972; Beer 1984), behavioral
-  organization theory (March and Simon 1958; Argyris and Schon 1978),
-  and software engineering verification (Beck 2002; Boehm 1981) -- and
-  shows that all three converge on the spectral projection identity
-  without making it explicit. The companion result, that verification
-  rate is bounded and never asymptotically complete (Zharnikov 2026h),
-  finds its operator-theoretic grounding in the rank inequality between
-  the full-rank cascade and the degenerate audit projection.
+  Organizational verification confronts a persistent paradox: firms
+  invest heavily in audit and compliance yet sociological evidence shows
+  these rituals often substitute procedural legibility for substantive
+  performance alignment. This paper offers an operator-theoretic
+  diagnosis. We formalize verification as a spectral projection operator
+  P that maps noisy organizational states onto invariant eigenspaces
+  defined by acceptance criteria. Conventional audit is a degenerate
+  rank-1 projection onto a single compliance axis, discarding all
+  information orthogonal to that axis -- an algebraic explanation for
+  the information loss documented by Power (1997) and subsequent
+  audit-society research. In contrast, Organizational Schema Theory's
+  multi-level acceptance-testing cascade constitutes a full-rank
+  spectral projection: each level independently projects onto a distinct
+  subspace while preserving dimensional structure across the
+  specification hierarchy. Drawing on three convergent lineages --
+  organizational cybernetics (Beer's variety attenuation), behavioral
+  organization theory (March and Simon satisficing; Argyris and Schon
+  single- versus double-loop learning), and software engineering
+  verification (Beck's test-driven development) -- we show that all
+  three traditions implicitly rely on the projection identity without
+  naming it. Three formal propositions establish the rank inequality,
+  cascade-consistency condition, and bandwidth bound on sustainable
+  projection rank. A qualitative illustration demonstrates that
+  full-rank cascades localize deviations and enable early correction,
+  whereas rank-1 audit cannot. The framework unifies verification rate
+  bounds, Brand Function eigenspaces, and information-processing design,
+  offering both theoretical precision and practical guidance for
+  organizations whose specifications are genuinely multi-dimensional.
 
 claims:
   - id: "C1"
@@ -86,11 +95,11 @@ methodology:
     - "Convergent validity across three lineages"
 
 target_venues:
-  primary: "Organization Science"
+  primary: "Academy of Management Review"
   fallback:
-    - "Management Science (IS track)"
-    - "Academy of Management Review"
+    - "Organization Science"
     - "Administrative Science Quarterly"
+    - "Management Science (IS track)"
 
 bridges:
   - paper: "Zharnikov 2026h (R5)"
@@ -106,4 +115,4 @@ bridges:
   - paper: "Zharnikov 2026ad (R22, forthcoming)"
     role: "mu > lambda stability condition for cascade under realistic organizational dynamics"
 
-reference_audit: "DR-8 (2026-04-25/26); v0.2 adds Beer (1984) JORS, Chen (2021) Foundations and Trends ML, Cohen (2022) NeuroImage, Kannan and Vempala (2009), Simon (1962), Lawrence and Lorsch (1967). v0.3 adds Weick (1979), Simons (1995), Luenberger (1969), March (1991), Ashby (1956), Meyer and Rowan (1977), Ocasio (1997). Total refs: 37. Self-cite ratio: 6/37 = 16.2%."
+reference_audit: "DR-8 (2026-04-25/26). v0.4 structural revision (Grok review). Self-citations reduced from 6 to 1 (Zharnikov 2026i only; dropped 2026a, 2026aa, 2026ad, 2026h, 2026x). Total refs: 31. Self-cite ratio: 1/31 = 3.2%. New title. Target venue: Academy of Management Review. Python simulation added (Appendix B). Proof sketch for Proposition 1. Spectra Coffee in dedicated Illustration subsection."
