@@ -97,6 +97,8 @@ The orthogonal projection onto T_k is the operator P_k: O → T_k satisfying:
 - Self-adjointness: ⟨P_k(u), v⟩ = ⟨u, P_k(v)⟩ for all u, v ∈ O
 - Range: range(P_k) = T_k
 
+The self-adjointness condition is not merely formal: it is the organizational requirement that the acceptance predicate is symmetric — a state lying in the invariant subspace is equally recognized as passing whether the test is applied forward (does the state satisfy the criterion?) or backward (does a passing state retain its status under re-evaluation?). Oblique projections (idempotent but not self-adjoint) could arise if acceptance criteria were asymmetrically applied, but this would imply that the same organizational state could pass verification under one evaluator and fail under another despite no change in state — the very inconsistency that cascade architecture is designed to prevent. The orthogonal projection assumption is therefore both theoretically natural and operationally required by any cascade whose consistency condition (below) is to have determinate content.
+
 The acceptance condition at level k is s_k ∈ T_k, equivalently P_k(s_k) = s_k. The deviation from specification at level k is ‖s_k − P_k(s_k)‖, the norm of the projection residual.
 
 The rank of the projection P_k equals dim(T_k). For OST's six-level cascade, rank(P_0) through rank(P_5) are all positive. The cascade consistency condition requires that the range of P_k is not contained in the kernel of P_{k+1} for all k: range(P_k) ⊄ kernel(P_{k+1}). When this condition holds, each cascade level contributes independent information to the verification outcome. When it fails, the cascade degenerates — one or more levels become redundant, and the effective rank decreases.
@@ -141,7 +143,7 @@ Power's (1997) account of the audit society is the most rigorous sociological an
 
 The operator-theoretic reading of Power's critique is precise. Conventional audit maps the full dimensional structure of organizational performance onto a single compliance/non-compliance axis. This is a rank-1 projection: its range is one-dimensional regardless of the dimensionality of the organizational state space. All information in the state space that cannot be reduced to compliance status is discarded. The audit does not measure how well the organization is performing across the multiple dimensions of its specification; it measures whether the organization can produce legible evidence that it is performing acceptably on the single dimension that audit monitors.
 
-Strathern (2000) extends Power's analysis to the anthropological consequences of audit cultures: organizations optimize for the audit signal rather than for the underlying performance dimensions the audit was intended to proxy. This is the algebraic consequence of the rank-1 projection. When the audit projects onto a one-dimensional compliance axis, organizations learn to perform on that axis, and the covariance between audit performance and underlying dimensional performance decays toward zero. The audit becomes uninformative about the organizational state it was designed to track. Meyer and Rowan (1977) provide the institutional theory account of the same phenomenon: organizations adopt formal structures as myths and ceremonies that confer legitimacy rather than because those structures improve technical performance — institutional decoupling is the sociological name for the covariance decay that the rank-1 projection guarantees algebraically.
+Strathern (2000) extends Power's analysis to the anthropological consequences of audit cultures: organizations optimize for the audit signal rather than for the underlying performance dimensions the audit was intended to proxy. This is the algebraic consequence of the rank-1 projection. When the audit projects onto a one-dimensional compliance axis, organizations learn to perform on that axis, and the covariance between audit performance and underlying dimensional performance decays toward zero. The audit becomes uninformative about the organizational state it was designed to track. Meyer and Rowan (1977) provide the institutional theory account of the same phenomenon: organizations adopt formal structures as myths and ceremonies that confer legitimacy rather than because those structures improve technical performance — institutional decoupling is the sociological name for the covariance decay that the rank-1 projection guarantees algebraically. The institutional logics literature (Thornton and Ocasio 2008) extends this analysis: when a compliance logic dominates a performance logic within an organizational field, the rank-1 audit is not merely a cost-saving choice but a field-level prescriptive norm that makes full-rank verification socially illegible rather than technically infeasible.
 
 Power (1997) identifies the institutional rationality of rank-1 audit: it is cheap, politically legible, and produces the accountability signals that stakeholders demand. The operator account does not contest this rationality; it establishes that institutional rationality and informational adequacy are not co-extensive. An organization can be fully rational in adopting rank-1 audit while guaranteeing, by the rank inequality, that multi-dimensional specification deviations remain structurally undetectable. The audit society is the Bayesian equilibrium under a rank-1 bandwidth budget, not an organizational pathology.
 
@@ -217,6 +219,10 @@ Third, the simulation in Appendix B models a simplified organizational state spa
 
 A productive avenue for future empirical research is the verification bandwidth hypothesis (Proposition 3): organizations with higher verification bandwidth should sustain higher-rank cascades and exhibit better specification alignment. Operationally, verification bandwidth can be estimated as the number of distinct acceptance test dimensions evaluated per review cycle; specification alignment can be estimated from multi-dimensional performance data. Testing this hypothesis requires panel data linking verification architecture to multi-dimensional performance outcomes — data that OST's CI/CD pipeline is designed to generate.
 
+***Cross-Domain Verification: Independent Convergence***
+
+A research program developed independently by Kovalenko (2026) at Manifold Control arrives at closely related verification-theoretic structures from a different starting domain. Kovalenko's Bounded Compositional Verification (BCV) framework classifies system failures along three axes — cover persistence, bounded obstruction, and fidelity threshold — and establishes that a system can satisfy the first two while violating the third, producing what BCV calls *pseudo-coverage*: the system appears fully functional while operating on desynchronized state. The pseudo-coverage diagnosis is structurally identical to the rank-1 audit failure formalized in this paper: an audit that returns a positive verdict on every individual check (cover persistence) while the multi-dimensional cascade integrity (fidelity) is violated. Kovalenko's controlled verification of fidelity collapse in asynchronous ERC-4626 DeFi vaults (Kovalenko 2026, Fidelity Collapse) demonstrates that the BCV failure mode is empirically realizable across heterogeneous architectures — three independent async designs (oracle push, bridge callback, withdrawal queue) all exhibit the predicted fidelity collapse. The convergence of organization-theoretic verification (this paper) and computational-systems verification (BCV) on the same algebraic failure structure suggests the operator-theoretic framing has cross-domain validity beyond either field alone.
+
 ---
 
 **Conclusion**
@@ -247,7 +253,7 @@ The choice between conventional audit and acceptance testing is not a procedural
 
 **Acknowledgments**
 
-AI assistants (Claude Opus 4.6, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+The author thanks James Kovalenko (Manifold Control) for the independent development of the Bounded Compositional Verification framework, whose pseudo-coverage diagnosis closely parallels the rank-1 audit failure mode formalized here. AI assistants (Claude Opus 4.6, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ---
 
@@ -283,6 +289,12 @@ ISO 9001:2015 (2015), *Quality Management Systems — Requirements*, 5th ed., In
 
 Kannan, Ravi and Santosh Vempala (2009), *Spectral Algorithms*, Now Publishers.
 
+Kovalenko, James (2026), "Beyond the Monochord: From Pythagorean Harmony to the Transport-Aggregation Adjunction," *Zenodo*, https://doi.org/10.5281/zenodo.19448729.
+
+Kovalenko, James (2026), "Bounded Compositional Verification and the Structure of Hard Problems," *Zenodo*, https://doi.org/10.5281/zenodo.19471795.
+
+Kovalenko, James (2026), "Fidelity Collapse in Asynchronous ERC-4626 Vaults: A Structural Prediction from Bounded Compositional Verification," *Zenodo*, https://doi.org/10.5281/zenodo.19471805.
+
 Lawrence, Paul R. and Jay W. Lorsch (1967), "Differentiation and Integration in Complex Organizations," *Administrative Science Quarterly*, 12 (1), 1–47.
 
 Luenberger, David G. (1969), *Optimization by Vector Space Methods*, Wiley.
@@ -306,6 +318,8 @@ Simons, Robert (1995), *Levers of Control: How Managers Use Innovative Control S
 Strathern, Marilyn, ed. (2000), *Audit Cultures: Anthropological Studies in Accountability, Ethics and the Academy*, Routledge.
 
 Thompson, James D. (1967), *Organizations in Action: Social Science Bases of Administrative Theory*, McGraw-Hill.
+
+Thornton, Patricia H. and William Ocasio (2008), "Institutional Logics," in *The SAGE Handbook of Organizational Institutionalism*, Royston Greenwood, Christine Oliver, Kerstin Sahlin, and Roy Suddaby, eds., Sage, 99–129.
 
 Thurstone, Louis L. (1947), *Multiple-Factor Analysis: A Development and Expansion of "The Vectors of Mind,"* University of Chicago Press.
 
