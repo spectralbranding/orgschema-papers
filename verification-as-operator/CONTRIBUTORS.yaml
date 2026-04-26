@@ -1,0 +1,29 @@
+# CONTRIBUTORS.yaml -- OST Companion: Verification as Operator
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - writing-original
+      - formal-analysis
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-04-25"
+    last_commit: "2026-04-26"
+
+  - name: "Claude (Anthropic)"
+    type: ai_tool
+    roles:
+      - writing-review
+      - consistency-checking
+      - literature-verification
+    disclosure: >
+      Used for manuscript drafting, cross-source literature verification
+      (DR-8 with cross-check across Claude/Gemini/Grok DeepSearch runs),
+      and review-protocol execution. All theoretical propositions, the
+      rank-1 vs full-rank algebraic distinction, and conclusions are
+      solely the author's work.

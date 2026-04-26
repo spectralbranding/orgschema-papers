@@ -1,0 +1,49 @@
+# PROVENANCE.yaml -- OST Companion: Verification as Operator
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification"
+  citation_key: "2026ae"
+  repository: "spectralbranding/orgschema-papers/verification-as-operator"
+
+  builds_on:
+    - "spectralbranding/orgschema-papers/organizational-schema-theory (2026i) — six-level cascade with L1 acceptance testing being formalized"
+    - "spectralbranding/sbt-papers/r5-specification-impossibility (2026h) — verification rate-bounded, never asymptotic"
+    - "spectralbranding/sbt-papers/r16-ai-native-brand-identity (2026x) — Brand Function as the invariant being projected onto"
+    - "spectralbranding/sbt-papers/r19-rate-distortion (2026aa) — bandwidth grounding (rate-distortion)"
+    - "spectralbranding/sbt-papers/r21-spectral-immunity (2026ac) — awareness-gate / DO-WHAT framing"
+    - "spectralbranding/sbt-papers/r22-spectral-gap-restoration (2026ad) — μ > λ stability inequality"
+
+  forks: []
+
+  drafting_history:
+    - version: "0.1"
+      date: "2026-04-25"
+      summary: "Initial draft from DR-8 verified refs. ~4,900 words, 24 refs, 25% self-cite (structurally constrained: 6 mandatory bridges to R5/SBT/OST/R16/R21/R22). Power (1997) Audit Society as critical foil; rank-1 vs full-rank algebraic distinction central."
+    - version: "0.2"
+      date: "2026-04-25"
+      summary: "Grok cross-check additions (Beer 1984 JORS, Chen 2021, Cohen 2022, Kannan & Vempala 2009) plus Lawrence & Lorsch 1967 ASQ + Simon 1962 PAPS. Self-cite reduced to 20%."
+    - version: "0.3"
+      date: "2026-04-26"
+      summary: "Review-applied. /review-paper RESEARCH PAPER 4/5 (passed Tests 1, 2, 4, 5; v0.2 failed Test 3 — no formal propositions). Three CRITICAL fixes: (C1) added 3 formal Propositions with explicit Falsification lines (P1 audit rank-1, P2 cascade rank ≥ 2 via intersection, P3 rank bounded by bandwidth budget); (C2) algebraic correction — cascade composition replaced with intersection formulation (orthogonal projections onto non-orthogonal subspaces are not generally idempotent); (C3) R21 (2026ac) mischaracterization fixed — R19 (2026aa) now bandwidth authority. Added 7 organization-science refs (Weick 1979, Simons 1995, Luenberger 1969, March 1991 OS, Ashby 1956, Meyer & Rowan 1977, Ocasio 1997). Added 3 must-add positioning sentences (Weick re-enactment as basis change, Power as Bayesian equilibrium under rank-1 budget, Simons diagnostic vs interactive control). Novelty claim softened to 'first explicit algebraic identification.' 37 refs, 16.2% self-cite."
+
+  reviews:
+    - protocol: "/review-paper"
+      file: "spectral-branding/research/reviews/REVIEW_OST_verification_as_operator_v0.2.md"
+      verdict: "RESEARCH PAPER 4/5"
+      findings: "9 CRITICAL, 11 WARNING, 7 NOTE — all CRITICAL applied in v0.3"
+    - protocol: "/review-literature"
+      file: "spectral-branding/research/reviews/REVIEW_LIT_OST_verification_v0.2.md"
+      findings: "3 structural gaps (Weick absent, Simons absent, self-cite 20%) — all addressed in v0.3"
+
+  zenodo:
+    doi: null
+    uploaded: null
+    version: "0.3 (pre-Zenodo working draft)"
+    note: "DOI to be assigned after final Organization Science submission preparation"
+
+  target_venue:
+    name: "Organization Science"
+    publisher: "INFORMS"
+    style: "AMA"
+    review_type: "double-anonymous"

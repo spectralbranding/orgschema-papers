@@ -1,0 +1,29 @@
+# DATA_MANIFEST.yaml -- OST Companion: Verification as Operator
+# Theory paper -- no empirical data
+
+datasets: []
+  # This is a theory paper. The rank-1 (audit) vs full-rank (cascade) algebraic
+  # distinction is a formal claim, not an empirical finding. Worked example in
+  # the manuscript is illustrative, not data-driven.
+
+empirical_anchors:
+  - claim: "Power's (1997) Audit Society diagnosis"
+    formalization: "rank-1 projection P_audit"
+    note: >
+      The paper's central novelty is showing that Power's sociological account of
+      the rise of audit as organizational technology has an algebraic
+      interpretation: conventional audit reduces to a rank-1 projection on the
+      organizational state space. Empirical validation of the rank-1 vs
+      full-rank distinction is left to future work.
+
+  - claim: "Beer's (1972, 1984, 1985) Viable System Model"
+    formalization: "recursive operators maintaining viability"
+    note: >
+      VSM is invoked as the prior cybernetic tradition that uses adjacent
+      vocabulary (variety attenuation, recursive control) but does not state
+      acceptance testing as an algebraic projection identity with explicit rank.
+
+code: []
+  # No experimental code. The OST cascade implementation is in the orgschema-toolkit
+  # repository (https://github.com/spectralbranding/orgschema-toolkit) but is not
+  # required for the theoretical claim in this paper.
