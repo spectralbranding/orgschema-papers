@@ -1,16 +1,16 @@
 # Verification as Operator: Acceptance Testing as Spectral Projection in Organizational Specification
 
-**Dmitry Zharnikov**
+*Dmitry Zharnikov*
 
----
+DOI: pending (Zenodo upload forthcoming)
 
-## Abstract
+Working Paper v0.3.1 -- April 2026
+
+**Abstract**
 
 This paper provides an algebraic account of organizational verification: acceptance testing, as instantiated in Organizational Schema Theory (OST), is a spectral projection operator that maps a noisy organizational state onto the invariant eigenspace defined by the Brand Function. Conventional audit, as analyzed by Power (1997), is a degenerate rank-1 projection that collapses the full dimensionality of organizational performance onto a binary compliance axis, discarding structural information. OST's multi-level cascade is full-rank: each cascade level constitutes an independent projection that preserves dimensional information across the specification hierarchy. The paper draws three lineages to ground this claim — organizational cybernetics (Beer 1972; Beer 1984), behavioral organization theory (March and Simon 1958; Argyris and Schön 1978), and software engineering verification (Beck 2002; Boehm 1981) — and shows that all three converge on the spectral projection identity without making it explicit. The companion result, that verification rate is bounded and never asymptotically complete (Zharnikov 2026h), finds its operator-theoretic grounding in the rank inequality between the full-rank cascade and the degenerate audit projection. The paper presents the first explicit algebraic identification of organizational acceptance testing as a spectral projection operator and derives the rank inequality between OST's cascade and conventional audit.
 
 **Keywords:** organizational specification, acceptance testing, spectral projection, organizational cybernetics, viable system model, test-driven development, verification, audit society, brand function
-
----
 
 Organizational verification has a paradox at its core. Firms spend substantial resources on audit, compliance review, and accreditation — activities explicitly designed to establish that organizational performance meets specification. Yet the sociological literature (Power 1997; Strathern 2000) documents that these rituals systematically fail to produce genuine quality assurance, substituting procedural legibility for substantive alignment. The conventional response treats this as a problem of incentive design or audit independence. This paper proposes a different diagnosis: conventional audit is a degenerate projection operator, and the failure is algebraic before it is institutional.
 
