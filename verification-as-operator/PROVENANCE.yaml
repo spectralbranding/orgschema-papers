@@ -40,10 +40,10 @@ provenance:
       findings: "3 structural gaps (Weick absent, Simons absent, self-cite 20%) — all addressed in v0.3"
 
   zenodo:
-    doi: null
-    uploaded: null
-    version: "0.3 (pre-Zenodo working draft)"
-    note: "DOI to be assigned after final Organization Science submission preparation"
+    doi: "10.5281/zenodo.19778588"
+    uploaded: 2026-04-26
+    version: "0.4"
+    note: "Uploaded as v0.4 working paper. AMR submission to follow."
 
   target_venue:
     name: "Academy of Management Review"

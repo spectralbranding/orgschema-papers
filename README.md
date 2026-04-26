@@ -8,6 +8,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 |-------|-------|------|--------|
 | [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper, Mar 2026 |
 | [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper, Apr 2026 |
+| [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Working paper v0.4, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
 
@@ -17,6 +18,16 @@ Introduces the orgschema methodology: a six-level TDD cascade (customer experien
 
 - [Read on GitHub](organizational-schema-theory/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.18946043)
+
+### Verification as Operator (Zharnikov 2026ae)
+
+Provides the first explicit algebraic identification of organizational acceptance testing as a spectral projection operator. Conventional audit (per Power 1997) is shown to be a degenerate rank-1 projection that discards all dimensions of organizational performance orthogonal to the compliance axis; OST's six-level cascade is full-rank, preserving dimensional structure across the specification hierarchy. The paper synthesizes three convergent lineages — organizational cybernetics (Beer 1972; Beer 1984), behavioral organization theory (March and Simon 1958; Argyris and Schön 1978), and software engineering verification (Beck 2002) — and shows that all three implicitly rely on the projection identity without naming it. Three formal propositions establish the rank inequality, cascade-consistency condition, and bandwidth bound. A Python simulation in Appendix B confirms that rank-1 audit misses ~90% of total organizational deviation across all noise levels.
+
+**Keywords**: organizational verification, spectral projection, acceptance testing, audit society, viable system model, test-driven development, organizational learning, information-processing design
+
+- [Read on GitHub](verification-as-operator/paper.md)
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.19778588)
+- Target venue: Academy of Management Review
 
 ### The OrgSchema Audit (Zharnikov 2026)
 
