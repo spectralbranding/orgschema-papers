@@ -4,7 +4,7 @@
 
 DOI: 10.5281/zenodo.19778588
 
-Working Paper v1.0.0 -- April 26, 2026
+Working Paper v1.0.0 -- April 2026
 
 **Abstract**
 
@@ -250,6 +250,10 @@ The three practical recommendations — specification-before-audit, rank assessm
 ***In Short***
 
 The choice between conventional audit and acceptance testing is not a procedural choice; it is a choice between degenerate and full-rank projection. Information discarded by a rank-1 projection cannot be recovered by making the audit more frequent, more independent, or more rigorous — the information is structurally absent from the audit signal. Organizations that wish to maintain multi-dimensional specifications require full-rank verification. The projection identity makes this conclusion not merely practical but mathematical.
+
+***Reproducibility***
+
+The Appendix B simulation script and full numeric outputs are available in the paper's GitHub repository at <https://github.com/spectralbranding/orgschema-papers/tree/main/verification-as-operator>: `projection_simulation.py` (the script; reproducible with `uv run --with numpy python3 projection_simulation.py`) and `simulation_results.json` (full outputs for all four noise levels, 1,000 trials each, with rank-1 audit and full-rank cascade undetected-deviation magnitudes). All numerics reported in Figure 1 and Appendix B are reproducible from this script.
 
 **Acknowledgments**
 

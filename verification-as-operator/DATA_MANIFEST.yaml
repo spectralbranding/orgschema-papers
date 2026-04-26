@@ -23,7 +23,13 @@ empirical_anchors:
       vocabulary (variety attenuation, recursive control) but does not state
       acceptance testing as an algebraic projection identity with explicit rank.
 
-code: []
-  # No experimental code. The OST cascade implementation is in the orgschema-toolkit
-  # repository (https://github.com/spectralbranding/orgschema-toolkit) but is not
-  # required for the theoretical claim in this paper.
+code:
+  - name: "Projection simulation script"
+    location: "https://github.com/spectralbranding/orgschema-papers/blob/main/verification-as-operator/projection_simulation.py"
+    description: "Reproducible Appendix B simulation: 1,000 trials at four noise levels (sigma = .1, .5, 1.0, 2.0) computing undetected-deviation magnitude under rank-1 audit projection vs. full-rank cascade projection. Run with: uv run --with numpy python3 projection_simulation.py."
+  - name: "Simulation full outputs"
+    location: "https://github.com/spectralbranding/orgschema-papers/blob/main/verification-as-operator/simulation_results.json"
+    description: "Full per-noise-level outputs: rank-1 audit and cascade undetected-deviation magnitudes; analytical sqrt(5)*sigma cross-check. Confirms rank-1 audit misses ~90% of total organizational deviation across all noise levels."
+  - name: "OST cascade implementation"
+    location: "https://github.com/spectralbranding/orgschema-toolkit"
+    description: "Reference implementation of the OST cascade architecture (separate repository; not required for the theoretical claim in this paper)."
