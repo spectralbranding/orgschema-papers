@@ -1,0 +1,52 @@
+# PROVENANCE.yaml -- Organizational Metamerism
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+  repository: "spectralbranding/orgschema-papers/org-as-metadata"
+
+  versions:
+    - version: "0.1.0"
+      date: "2026-03-18"
+      title: "Organizations as Coordination Overhead Made Structural: A Temporal Hierarchy Theory"
+      description: >
+        Initial draft submitted to Organization Theory (OT-26-0095).
+        ~13,915 words. Four loosely-coupled contributions: temporal hierarchy,
+        metadata metaphor, organizational metamerism, organizational form as signal.
+      outcome: "DESK_REJECTED at Organization Theory (2026-04-28, Markus Höllerer Co-Editor). Generic editorial-screening rejection: 'underdeveloped... a number of limitations that hold you back from developing and claiming a theoretical contribution.'"
+
+    - version: "1.0.0"
+      date: "2026-04-29"
+      title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+      description: >
+        Substantial metamerism-led rewrite for Organization Science. Body trimmed
+        to ~8,750 words. Lead contribution: organizational metamerism as
+        state-equivalence (extending equifinality's path-equivalence). Pentland
+        and Feldman (2005) engaged as precedent (~950 words). Gresov and Drazin
+        (1997) engaged as foil (~950 words). Beane and Leonardi (2025) explicitly
+        distinguished. Fiss (2011) and Puranam, Alexy, and Reitzig (2014) added
+        as direct configurational-equivalence overlap candidates. Signaling
+        section cut (logged for spin-off paper "Organizational Form as Signal").
+        Numbered headers removed per AMA formatting. Definition 5 restructured
+        with frame condition + biconditional. Propositions consolidated to
+        four with explicit confirming/refuting evidence criteria.
+      reviews:
+        - type: "review-paper"
+          verdict: "3/5 → addressed via fix pass: CRIT-1 through CRIT-5 + WARN-1 through WARN-9 applied"
+        - type: "review-literature"
+          verdict: "3/5 → addressed via fix pass: dropped Logvinenko, Omidvar, Kretschmer, Orlikowski, Farjoun, Coase, Nelson and Winter, Brynjolfsson, Weick (uncited or fabricated); added Fiss 2011, Puranam et al. 2014, Selznick 1957; verified Klein and Wieczorek arXiv ID; corrected Michel year and Beane and Leonardi volume/pages"
+      outcome: "Working paper ready for Zenodo upload + Organization Science submission via ScholarOne."
+
+  forks: []
+
+  spin_offs_logged:
+    - title: "Organizational Form as Signal: Legitimacy, Identity, and Strategic Impression Management"
+      target_venue: "Organization Science (separate submission, after this paper lands) or Academy of Management Review"
+      estimated_word_count: "9,000-11,000"
+      content: >
+        Develops the full signaling argument cut from v0.1's §3.5 and §4.1 —
+        Spence (1973) signaling, Meyer/Rowan (1977) institutional legitimacy,
+        King/Felin/Whetten (2010) organizational identity — as the primary
+        theoretical contribution, with the organizational metamerism result
+        from this paper serving as the foundation. To be drafted only after
+        this paper is accepted, since it cites the metamerism set concept.

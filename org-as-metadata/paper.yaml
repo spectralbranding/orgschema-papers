@@ -1,0 +1,149 @@
+# paper.yaml -- Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs
+# Citation key: 2026af (reserved; DOI to be assigned on Zenodo upload)
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026af"
+  doi: "TBD (pending Zenodo upload)"
+  date: "2026-04-29"
+  version: "1.0.0"
+  status: working_paper
+  license: "CC-BY-4.0"
+  keywords:
+    - organizational metamerism
+    - equifinality
+    - state equivalence
+    - organizational routines
+    - pace layering
+    - temporal hierarchy
+    - coordination cost
+    - configuration theory
+    - process ontology
+    - observer relativity
+
+abstract: >
+  This paper introduces organizational metamerism — the condition under
+  which structurally distinct organizational configurations produce
+  functionally equivalent value outputs as observed by a particular
+  evaluative observer. Metamerism extends the equifinality literature
+  from path-equivalence (different sequences reach the same end state)
+  to state-equivalence (different configurations are simultaneously
+  equivalent for a given observer). The framework rests on a temporal
+  stability ordering: value output specifications change least often,
+  process specifications change at intermediate frequencies, and
+  organizational configurations change most often. The metadata
+  metaphor — organizational form as the lowest-stability layer of a
+  multi-layered specification stack — explains why coordination cost
+  reductions widen the metamerism set. Four propositions follow with
+  explicit confirming and refuting evidence criteria. The paper
+  engages organizational routines (Pentland and Feldman 2005),
+  configurational equifinality (Gresov and Drazin 1997; Fiss 2011),
+  and pace layering (Beane and Leonardi 2025) as the closest
+  precedents, distinguishing metamerism from each. The framework
+  predicts a decoupling of organizational restructuring frequency
+  from process change frequency in AI-era organizations, with tacit
+  knowledge intensity as a boundary condition.
+
+claims:
+  - id: P1
+    type: proposition
+    description: >
+      Stability ordering: in established organizations operating in
+      stable environments, value output specifications exhibit longer
+      stability periods than process specifications, which in turn
+      exhibit longer stability periods than organizational
+      configurations.
+    status: proposed
+    falsification: >
+      P1 is falsified if longitudinal organizational data show no
+      statistically significant difference in change frequency across
+      the three layers, or if organizational configurations exhibit
+      lower change frequency than process specifications across a
+      sufficient sample.
+
+  - id: P2
+    type: proposition
+    description: >
+      Set size mechanism: the size of the metamerism set M(P,O) for a
+      value output specification P and observer O increases as the
+      proportion of coordination embedded in process specification
+      increases, and decreases as the tacit knowledge intensity of P
+      increases.
+    status: proposed
+    falsification: >
+      P2 is falsified if observed metamerism sets are smaller for
+      organizations with higher process-coordination embedding, or
+      larger for organizations with higher tacit knowledge intensity.
+
+  - id: P3
+    type: proposition
+    description: >
+      AI-era decoupling: as AI adoption increases, the rate of
+      organizational restructuring increases while the rate of process
+      change remains relatively stable. This is a downstream
+      implication of the metadata mechanism rather than a direct test
+      of the metamerism construct.
+    status: proposed
+    falsification: >
+      P3 is falsified if AI adoption correlates with equal increases
+      in process and organizational change rates, or with no change
+      in either rate.
+
+  - id: P4
+    type: proposition
+    description: >
+      Tacit knowledge boundary: organizations with high tacit
+      knowledge intensity exhibit narrow metamerism sets regardless
+      of coordination embedding, because process specification cannot
+      absorb coordination that depends on uncodifiable knowledge.
+    status: proposed
+    falsification: >
+      P4 is falsified if organizations with high tacit knowledge
+      intensity exhibit metamerism sets comparable to or larger than
+      those of low-tacit-knowledge organizations.
+
+target_venue: "Organization Science"
+target_venue_alt:
+  - "Academy of Management Review"
+  - "Strategic Organization"
+  - "Zenodo (standalone working paper)"
+
+submission_history:
+  - venue: "Organization Theory (SAGE/EGOS)"
+    manuscript_id: "OT-26-0095"
+    submitted: "2026-03-18"
+    decision: "desk_rejected"
+    decision_date: "2026-04-28"
+    notes: "Markus Höllerer Co-Editor. Generic editorial-screening rejection. Substantial metamerism-led rewrite produced for Organization Science."
+
+dependencies:
+  - citation: "Zharnikov (2026e)"
+    doi: "10.5281/zenodo.18945352"
+    relationship: cites
+    critical: true
+    description: "Spectral metamerism in brand perception — formal observer-relativity argument grounding the organizational metamerism extension"
+
+  - citation: "Zharnikov (2026h)"
+    doi: "10.5281/zenodo.18945591"
+    relationship: cites
+    critical: false
+    description: "Specification impossibility — establishes that complete specifications are unattainable, motivating the metamerism set framing"
+
+  - citation: "Zharnikov (2026i)"
+    doi: "10.5281/zenodo.18946043"
+    relationship: cites
+    critical: false
+    description: "Organizational Schema Theory — shared metadata-style framing of organizational specification"
+
+ai_disclosure: >
+  AI tools (Claude, Gemini) were used for literature research, manuscript
+  drafting assistance, and self-adversarial review. All theoretical
+  arguments, propositions, and analytical claims are the author's own.

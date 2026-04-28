@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+version: "1.0.0"
+date-released: "2026-04-29"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: other
+    value: "TBD (pending Zenodo upload)"
+    description: "Zenodo DOI to be assigned on first upload"
+keywords:
+  - organizational metamerism
+  - equifinality
+  - state equivalence
+  - organizational routines
+  - pace layering
+  - coordination cost
+  - configuration theory
+  - observer relativity
+license: CC-BY-NC-ND-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+  year: 2026
