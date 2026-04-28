@@ -323,6 +323,6 @@ Zharnikov, Dmitry (2026a), "Spectral Brand Theory: A Multi-Dimensional Framework
 
 Zharnikov, Dmitry (2026i), "The Organizational Schema Theory: Test-Driven Business Design," Working Paper, https://doi.org/10.5281/zenodo.18946043.
 
-Zharnikov, Dmitry (manuscript submitted for publication), "The Spectral Audit: An Eight-Dimensional Diagnostic for AI-Era Brand Management," Under review at Journal of Business Research.
+Zharnikov, Dmitry (manuscript submitted for publication), "The Spectral Audit: An Eight-Dimensional Diagnostic for AI-Era Brand Management," Rejected at Journal of Business Research (JOBR-D-26-02864, 2026-04-27, Stacey G Robinson Co-Editor); on hold pending SBT journal acceptance and at least one of R20/R21/R22 published.
 
 Zharnikov, Dmitry (2026r), "Why Eight? Completeness and Necessity of the SBT Dimensional Taxonomy," Working Paper, https://doi.org/10.5281/zenodo.19207599.
