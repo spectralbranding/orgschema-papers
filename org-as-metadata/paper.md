@@ -1,8 +1,8 @@
 # Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs
 
-**Dmitry Zharnikov**
-Independent Researcher
-dmitry@spectralbranding.com
+**Dmitry Zharnikov**\
+Independent Researcher\
+dmitry@spectralbranding.com\
 ORCID: 0009-0000-6893-9231
 
 ---
