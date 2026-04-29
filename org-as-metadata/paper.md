@@ -142,7 +142,7 @@ This corollary is a derived empirical implication of Proposition 1 that requires
 
 Figure 1: The temporal stability hierarchy with the metadata overlay.
 
-```mermaid
+``` {.mermaid width=50%}
 flowchart TD
   V["Value output specification<br/>(slow change)"]
   P["Process specification<br/>(intermediate change)"]
