@@ -55,7 +55,7 @@ This precision matters because it makes the metamerism set tractable: to know wh
 
 The present paper's primary proposition about the metamerism set — that it expands as coordination costs fall and contracts as tacit knowledge intensity rises — cannot be derived from the equifinality literature because the equifinality literature treats the set of equivalent configurations as an empirical regularity rather than a derived quantity.
 
-Table 2: Equifinality versus organizational metamerism on key theoretical dimensions.
+Table 1: Equifinality versus organizational metamerism on key theoretical dimensions.
 
 | Dimension | Equifinality (Gresov and Drazin 1997) | Organizational metamerism |
 |-----------|----------------------------------------|---------------------------|
@@ -216,7 +216,7 @@ The size of the metamerism set is a derived function of these three antecedents:
 
 where c(P) is the coordination cost per coordinating relation in process P and τ(P) is the proportion of P's coordinating work that depends on uncodifiable knowledge. The set grows with codifiability and with falling coordination cost; it shrinks with rising tacit knowledge intensity. The expression is schematic — operationalization of each antecedent is a research program, not a closed-form claim — but it makes the predicted directional dependencies precise enough for empirical testing.
 
-Table 1: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
+Table 2: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
 
 |  | **High coordination cost** | **Low coordination cost** |
 |---|---|---|
