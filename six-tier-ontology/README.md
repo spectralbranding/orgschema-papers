@@ -6,7 +6,7 @@
 
 **Citation key**: 2026ag
 
-**Status**: Working paper v1.0.0 (2026-04-30). Post-Grok-roadmap structural revisions + consolidated review fix-pass + user-verified citation additions applied. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 published on Zenodo 2026-04-29. Post-Grok-roadmap structural revisions + consolidated review fix-pass + user-verified citation additions applied pre-upload. Target venue: Academy of Management Review.
 
 **DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 

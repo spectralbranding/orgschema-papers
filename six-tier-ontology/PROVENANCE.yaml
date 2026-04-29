@@ -32,7 +32,7 @@ provenance:
         Working draft superseded by the v1.0.0 post-revision release.
 
     - version: "1.0.0"
-      date: "2026-04-30"
+      date: "2026-04-29"
       title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
       doi: "10.5281/zenodo.19895813"
       description: >
