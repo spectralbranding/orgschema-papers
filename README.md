@@ -10,7 +10,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper, Apr 2026 |
 | [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Working paper v0.4, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
 | [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
-| [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,000 | 42 | Pre-Zenodo working draft, Apr 2026 — DOI pending Session 120 structural revisions |
+| [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.0.0 on Zenodo 2026-04-29 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
 
 ### A Six-Tier Ontology of Acquisition-Target Transferability (Zharnikov 2026ag)
 
@@ -19,6 +19,7 @@ Develops a six-tier ontology of the acquisition target — Owner Intent, Busines
 **Keywords**: mergers and acquisitions, organizational ontology, transferability, business model, integration failure, form-invariance, separability diagnostic, dual hierarchy, failure cascade
 
 - [Read on GitHub](six-tier-ontology/paper.md)
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.19895813)
 - Target venue: Academy of Management Review
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
