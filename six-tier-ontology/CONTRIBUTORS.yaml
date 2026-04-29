@@ -1,0 +1,72 @@
+# CONTRIBUTORS.yaml -- Six-Tier Ontology of Acquisition-Target Transferability
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - writing-original
+      - writing-review
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-04-29"
+
+  - name: "Claude (Anthropic)"
+    type: ai
+    roles:
+      - writing-assistance
+      - review-paper
+      - review-literature
+      - hardened-deep-research
+    contributions: >
+      AI-assisted skeleton drafting (Session 118), full v1.0.0 expansion from
+      skeleton (Session 119), parallel /review-paper and /review-literature
+      passes, fix-pass application, and Grok review processing. All
+      theoretical arguments, propositions, and analytical claims are the
+      author's own.
+
+  - name: "Grok (xAI)"
+    type: ai
+    roles:
+      - hardened-deep-research
+      - pre-skeleton-review
+      - post-draft-review
+    contributions: >
+      Cross-source verification across the six-prompt hardened deep-research
+      pass (DR-1 through DR-6) in Session 118; pre-skeleton review providing
+      structural recommendations (abstract revision, self-citation reduction,
+      title polish, recent-citation additions); post-draft AMR-readiness
+      review with major-revision roadmap captured for Session 120 application.
+
+  - name: "Gemini (Google)"
+    type: ai
+    roles:
+      - hardened-deep-research
+      - citation-verification
+    contributions: >
+      Cross-source verification on DR-1, DR-2, DR-3, DR-4, DR-5, DR-6 in
+      Session 118 via Gemini 2.5 Pro REST API with google_search grounding.
+      Caught two critical DOI errors (King 2004 SMJ; Stahl and Voigt 2008 OS).
+
+  - name: "Perplexity"
+    type: ai
+    roles:
+      - hardened-deep-research
+    contributions: >
+      Cross-source verification on DR-6 in Session 118. Surfaced Meirovich
+      (2017) SSRN preprint and Paumen, Kroon, and Khapova (2024) chapter
+      with correct citation details.
+
+  - name: "ChatGPT (OpenAI)"
+    type: ai
+    roles:
+      - hardened-deep-research
+      - structural-critique
+    contributions: >
+      DR-1 substitution run in Session 118; surfaced the ontological-mixing
+      structural objection that became §2.2 of the paper (the "different
+      ontological types" critique was pre-empted in the manuscript design
+      based on ChatGPT-DR-1 output).

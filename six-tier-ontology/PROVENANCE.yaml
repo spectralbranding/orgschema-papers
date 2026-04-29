@@ -1,0 +1,83 @@
+# PROVENANCE.yaml -- Six-Tier Ontology of Acquisition-Target Transferability
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+  repository: "spectralbranding/orgschema-papers/six-tier-ontology"
+
+  versions:
+    - version: "0.1.0-skeleton"
+      date: "2026-04-29 (Session 118 wrap)"
+      title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+      description: >
+        Working paper skeleton at research/six_tier_paper_viability/WORKING_PAPER_SKELETON.md
+        (8,462 words). Output of Session 118 deep-research pipeline:
+        five-prompt hardened DR (prior-art saturation; competitor frameworks;
+        form-invariance novelty; flip case overlap; separability diagnostic
+        novelty) plus DR-6 (failure-propagation cascades) added from ChatGPT
+        structural critique. Cross-source verification across Grok, Gemini,
+        Perplexity, ChatGPT. DR_SYNTHESIS.md (3,238 words) with 9 verified
+        primary-source citations. Cascade claim formalized as
+        antecedent/mechanism/consequence per pathway. Ontological-mixing
+        pre-emption (§2.2 critical passage) baked in.
+      outcome: "Skeleton ready for next-session full drafting. AMR-tier target locked."
+
+    - version: "1.0.0-pre"
+      date: "2026-04-29 (Session 119)"
+      title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+      description: >
+        Pre-Zenodo working draft expanded from skeleton in one sonnet
+        subagent pass. 12,000 words body / 42 references / 218-word abstract
+        / 8 sections / 4 tables / 1 Mermaid Figure 1 / 7 falsifiable
+        propositions P1-P7 with explicit Confirming + Falsifying criteria.
+        AMA format. Self-citation 2/42 = 4.8% (Zharnikov 2026a SBT for
+        Tier 4 instrument example; Zharnikov 2026h R5 for P4 specification-
+        impossibility anchor). Zero MaffinLab/Petroff. Pentland and Feldman
+        (2005) added to §3.5 per skeleton's Mintzberg-Pentland anchor
+        directive.
+      reviews:
+        - type: "review-paper"
+          verdict: "5 CRITICAL + 6 WARNING items addressed in fix-pass"
+          items_applied:
+            - "Bold all 4 table captions + Figure 1 caption"
+            - "Add §8 *Theoretical Contribution* secondary heading"
+            - "Add Klok 2022 page range 25 (3) 495-528"
+            - "Reformat Strobl 2024 BJM advance online publication"
+            - "Reformat Meirovich 2017 SSRN reference"
+        - type: "review-literature"
+          verdict: "3 CRITICAL + 6 WARNING items addressed in fix-pass"
+          items_applied:
+            - "Pentland and Feldman 2005 added to §3.5 + reference list (resolves skeleton ODQ-4 conditional anchor)"
+            - "Bauer and Friesl 2024 added to §6 Separability-as-Screening (citation density gap)"
+            - "Berrone 2012 + Pecis 2025 distinction (static SEW vs longitudinal goal-entanglement) verified explicit in §5.2"
+        - type: "grok-amr-readiness"
+          verdict: "3/10 readiness; major-revision roadmap captured at export/six-tier-ontology/PENDING_UPDATES.md for Session 120"
+          deferred_items:
+            - "Sharpen §1 contribution statement"
+            - "Cut ~30% repetition; condense Tier descriptions"
+            - "Move Bauer 2024 LRP + Bauer-Friesl 2024 JMS engagement upstream into §2"
+            - "Strengthen so-what in §1 + §8"
+            - "Add §5.4 Network/Platform boundary conditions"
+          citations_to_verify:
+            high_risk:
+              - "Cronqvist & Pély 2025/2026 (same hallucination pattern as already-excluded Cronqvist 2026)"
+              - "Felker 2024"
+              - "Du 2026"
+              - "Radoniqi 2025"
+              - "Liu 2025"
+            low_risk:
+              - "Lev & Gu 2024 *The M&A Failure Trap*"
+              - "Angwin 2015+ (real author)"
+              - "Puranam 2024 extensions (real author)"
+            medium_risk:
+              - "van Oorschot 2023 (real author)"
+      outcome: >
+        Pre-Zenodo working draft. User opted to defer first Zenodo upload
+        until Session 120 structural revisions complete; the post-revision
+        version becomes the citable v1.0.0 on Zenodo. PDF + Zenodo metadata
+        staged at export/six-tier-ontology/zenodo/. PENDING_UPDATES.md
+        captures Grok roadmap for Session 120 work.
+
+  forks: []
+
+  spin_offs_logged: []

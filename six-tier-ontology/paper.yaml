@@ -1,0 +1,169 @@
+# paper.yaml -- A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms
+# Citation key: 2026ag (reserved; DOI to be assigned on Zenodo upload)
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026ag"
+  doi: "[to be assigned on Zenodo upload]"
+  date: "2026-04-29"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - mergers and acquisitions
+    - organizational ontology
+    - transferability
+    - business model
+    - integration failure
+    - form-invariance
+    - separability diagnostic
+
+abstract: >
+  Mergers and acquisitions continue to fail at high rates despite decades of
+  research, with meta-analyses attributing the residual variance to
+  unidentified moderators (King et al. 2004; Paumen et al. 2024). Extant
+  explanations remain anchored at single organizational layers — cultural
+  distance, executive turnover, strategic misfit, or business-model
+  misalignment — leaving cross-layer propagation mechanisms underspecified.
+  This paper develops a six-tier ontology of the acquisition target: Owner
+  Intent, Business Model, Business Entity, Product, Process, and
+  Organization. Each tier is specified by one governor, one specification
+  surface, and one distinct transferability mode. The tiers form dual
+  overlapping hierarchies — a service hierarchy running upward and a
+  constraint hierarchy running downward — that jointly determine integration
+  sequencing and generate seven falsifiable propositions on failure cascades.
+  The framework applies across for-profit, NGO, cooperative, and state-owned
+  forms through explicit substitution rules; the substitution mappings for
+  Tiers 2, 4, and 5 are framed as provisional theoretical deductions awaiting
+  empirical validation. The paper contributes (1) the first unified
+  transferability ontology, (2) a formal derivation of cross-tier propagation
+  pathways, and (3) a structured Six-Tier Separability Diagnostic for
+  pre-close risk assessment. Propositions are distinguished from the
+  partially documented empirical record throughout.
+
+claims:
+  - id: P1
+    type: proposition
+    description: >
+      Intent-Model Misalignment: when an acquirer's Owner Intent differs
+      structurally from the target's, the target's Business Model will
+      require fundamental revision and this revision will generate downstream
+      friction at Tier 4 (Product) and Tier 5 (Process) not visible in
+      pre-close due diligence.
+    status: proposed
+    falsification: >
+      P1 is falsified if a systematic comparison of for-profit acquisitions
+      of mission-primary organizations shows no greater rate of Business
+      Model revision or downstream tier disruption than comparable
+      for-profit-to-for-profit acquisitions of equivalent financial profile.
+
+  - id: P2
+    type: proposition
+    description: >
+      Business Model-Product Friction: an imposed Business Model revision
+      causes Product-specification drift and elevated customer churn anchored
+      to the prior dimensional configuration.
+    status: proposed
+    falsification: >
+      P2 is falsified if Business Model revisions show no significant
+      association with Product-dimensional drift in a sample with matched
+      pre- and post-close perceptual data.
+
+  - id: P3
+    type: proposition
+    description: >
+      Entity-Operations Disruption: Entity restructuring (consolidation,
+      re-domiciling, change of legal form) disrupts Tier 5 and Tier 4
+      operational continuity at rates disproportionate to the legal scope.
+    status: proposed
+    falsification: >
+      P3 is falsified if Entity-restructuring events show no significant
+      association with operational-continuity disruption across a sample of
+      acquisitions with documented Entity changes.
+
+  - id: P4
+    type: proposition
+    description: >
+      Product-Process Disruption: revising Product specification without
+      simultaneously revising Process produces a mismatch generating quality
+      failures or cost overruns until Process is rebuilt.
+    status: proposed
+    falsification: >
+      P4 is falsified if Product-specification revisions show no systematic
+      association with quality-failure or cost-overrun rates, controlling
+      for baseline Process maturity.
+
+  - id: P5
+    type: proposition
+    description: >
+      Process-Organization Fracture: imposing Process integration before
+      Tier 4 specification clarity is established produces employee
+      resistance and attrition exceeding rates observed when Process
+      integration follows Product confirmation.
+    status: proposed
+    falsification: >
+      P5 is falsified if Process-integration sequencing (before vs after
+      Product specification clarity) shows no significant difference in
+      attrition rates across a matched sample.
+
+  - id: P6
+    type: proposition
+    description: >
+      Organization Fracture to All-Layer Collapse: exit of key Organization
+      members irreversibly degrades tacit specification across all six tiers
+      at rates not recoverable by post-exit retention or documentation.
+    status: proposed
+    falsification: >
+      P6 is falsified if acquisitions with high pre-close tacit knowledge
+      codification show the same rate of all-layer value degradation
+      following executive turnover as acquisitions with low codification.
+
+  - id: P7
+    type: proposition
+    description: >
+      Bidirectional Feedback: tier failure does not propagate
+      unidirectionally; sustained lower-tier failures force upward revision
+      of Business Model and, in extreme cases, Owner Intent, creating
+      feedback loops that amplify initial shocks.
+    status: proposed
+    falsification: >
+      P7 is falsified if a systematic case comparison shows no instances of
+      lower-tier failures precipitating Business Model or Intent revision
+      in acquisitions where exogenous market shocks are controlled for.
+
+target_venue: "Academy of Management Review"
+target_venue_alt:
+  - "Strategic Organization"
+  - "Long Range Planning"
+  - "Journal of Business Ethics"
+  - "Zenodo (standalone working paper)"
+
+dependencies:
+  - citation: "Zharnikov (2026a)"
+    doi: "10.5281/zenodo.18945912"
+    relationship: cites
+    critical: false
+    description: "Spectral Brand Theory — example of a precision specification instrument for Tier 4 (Product)"
+
+  - citation: "Zharnikov (2026h)"
+    doi: "10.5281/zenodo.18945591"
+    relationship: cites
+    critical: false
+    description: "Specification Impossibility — anchors P4 mechanism on the impossibility of fully specifying Product requirements to arbitrary resolution"
+
+ai_disclosure: >
+  AI tools (Claude, Gemini, Grok, ChatGPT) were used for hardened deep
+  research prior-art saturation, manuscript drafting assistance, and
+  self-adversarial review. All theoretical arguments, propositions, and
+  analytical claims are the author's own. Cross-source verification (DR
+  rounds 1-6) was applied to all citations; two DOI errors and one
+  fabricated citation (Cronqvist 2026) were caught and corrected before
+  drafting.
