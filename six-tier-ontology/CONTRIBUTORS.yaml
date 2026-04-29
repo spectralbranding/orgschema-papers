@@ -22,10 +22,9 @@ contributors:
       - review-literature
       - hardened-deep-research
     contributions: >
-      AI-assisted skeleton drafting (Session 118), full v1.0.0 expansion from
-      skeleton (Session 119), parallel /review-paper and /review-literature
-      passes, fix-pass application, and Grok review processing. All
-      theoretical arguments, propositions, and analytical claims are the
+      AI-assisted skeleton drafting, full draft expansion, parallel
+      review-paper and review-literature passes, and fix-pass application.
+      All theoretical arguments, propositions, and analytical claims are the
       author's own.
 
   - name: "Grok (xAI)"
@@ -36,10 +35,8 @@ contributors:
       - post-draft-review
     contributions: >
       Cross-source verification across the six-prompt hardened deep-research
-      pass (DR-1 through DR-6) in Session 118; pre-skeleton review providing
-      structural recommendations (abstract revision, self-citation reduction,
-      title polish, recent-citation additions); post-draft AMR-readiness
-      review with major-revision roadmap captured for Session 120 application.
+      pass; pre-skeleton structural recommendations; post-draft AMR-readiness
+      review.
 
   - name: "Gemini (Google)"
     type: ai
@@ -47,18 +44,17 @@ contributors:
       - hardened-deep-research
       - citation-verification
     contributions: >
-      Cross-source verification on DR-1, DR-2, DR-3, DR-4, DR-5, DR-6 in
-      Session 118 via Gemini 2.5 Pro REST API with google_search grounding.
-      Caught two critical DOI errors (King 2004 SMJ; Stahl and Voigt 2008 OS).
+      Cross-source verification across the six-prompt deep-research pass via
+      Gemini 2.5 Pro REST API with google_search grounding. Caught DOI errors
+      that were corrected before drafting.
 
   - name: "Perplexity"
     type: ai
     roles:
       - hardened-deep-research
     contributions: >
-      Cross-source verification on DR-6 in Session 118. Surfaced Meirovich
-      (2017) SSRN preprint and Paumen, Kroon, and Khapova (2024) chapter
-      with correct citation details.
+      Cross-source verification on the failure-propagation prompt. Surfaced
+      primary-source-verified citation details for two M&A literature anchors.
 
   - name: "ChatGPT (OpenAI)"
     type: ai
@@ -66,7 +62,5 @@ contributors:
       - hardened-deep-research
       - structural-critique
     contributions: >
-      DR-1 substitution run in Session 118; surfaced the ontological-mixing
-      structural objection that became §2.2 of the paper (the "different
-      ontological types" critique was pre-empted in the manuscript design
-      based on ChatGPT-DR-1 output).
+      Surfaced the ontological-mixing structural objection that became §2.2
+      of the paper.
