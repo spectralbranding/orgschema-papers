@@ -7,13 +7,16 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
-version: "1.0.0-pre"
+version: "1.0.0"
 date-released: "2026-04-29"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
-    value: "[pending Zenodo upload after Session 120 structural revisions]"
-    description: "Zenodo concept DOI to be assigned upon first upload"
+    value: "10.5281/zenodo.19895813"
+    description: "Zenodo concept DOI (always resolves to latest version)"
+  - type: doi
+    value: "10.5281/zenodo.19895814"
+    description: "Zenodo v1 DOI (this version)"
 keywords:
   - mergers and acquisitions
   - organizational ontology

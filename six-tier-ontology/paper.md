@@ -2,7 +2,7 @@
 
 *Dmitry Zharnikov*
 
-DOI: [to be assigned on Zenodo upload]
+DOI: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813)
 
 Working Paper v1.0.0 -- April 2026
 
@@ -56,9 +56,11 @@ Frameworks that restrict to one ontological category — legal frameworks that s
 
 ### *The M&A Failure Literature and Its Missing Layer*
 
+Haspeslagh and Jemison (1991) established the foundational post-merger integration framework, distinguishing capability transfer from administrative integration; the present paper extends that distinction by specifying tier-level transferability modes.
+
 The M&A performance literature has identified four dominant failure explanations, each anchored in a single organizational layer. Cultural distance has accumulated the largest empirical base, with Stahl and Voigt (2005) providing an early integrative model of how cultural differences propagate through integration outcomes, Stahl and Voigt (2008) providing a meta-analytic examination across 46 studies (n = 10,710), and Brede, Gerstel, Wöhrmann, and Bausch (2025) extending that evidence using Glassdoor review data as a cultural-distance proxy. Both Stahl and Voigt papers address Tier 6 (Organization) in isolation: culture is treated as a property of the people and cultural norms layer, with no specification of how cultural disruption propagates to Product specification (Tier 4) or Business Model viability (Tier 2). Executive turnover — studied by Bilgili, Calderon, Allen, and Kedia (2017) in a meta-analytic design — also addresses Tier 6 in isolation, treating executive exit as a post-acquisition performance predictor without asking which tier the departing executive's tacit knowledge was encoding. Strategic misfit — the finding by King et al. (2004) that strategic antecedents explain only a small fraction of variance — is a Tier 2 diagnosis that leaves the transmission mechanism to Tiers 4 through 6 unspecified. Business-model misalignment — identified by Meirovich (2017) as an underexamined culprit in M&A failure — addresses the Tier 2 to Tier 4 boundary but does not connect it to the constraint imposed by Tier 1 (Owner Intent) above or the execution implications for Tier 5 (Process) below.
 
-The common structure of these explanations is the feature that makes them collectively inadequate: each diagnoses a single layer and cannot explain how failure at that layer propagates to adjacent tiers or to overall deal value. King et al. (2004) explicitly call for theory development to explain the residual variance — a call that King et al. (2021) document has not been answered at the integrative level two decades later. Klok, Kroon, and Khapova (2022), reviewing the emotional dimensions of M&A, note that integration outcomes are shaped by emotional processes distributed across multiple organizational levels, further implicating cross-layer dynamics that single-layer models cannot capture.
+The common structure of these explanations is the feature that makes them collectively inadequate: each diagnoses a single layer and cannot explain how failure at that layer propagates to adjacent tiers or to overall deal value. King et al. (2004) explicitly call for theory development to explain the residual variance — a call that King et al. (2021) document has not been answered at the integrative level two decades later. Klok, Kroon, and Khapova (2023), reviewing the emotional dimensions of M&A, note that integration outcomes are shaped by emotional processes distributed across multiple organizational levels, further implicating cross-layer dynamics that single-layer models cannot capture.
 
 The present paper's theoretical gap claim is precise: no existing framework connects the layers into a transferability ontology that explains why misspecifying which tier is being acquired cascades into failure across all others. Smeulders, Dekker, and Van den Abbeele (2023) come closest in the empirical literature, showing that integration controls affect cultural-difference management and employee resistance — a finding that bridges Tier 5 (Process/integration management) to Tier 6 (Organization/resistance) — but their analysis remains anchored within the organizational layer rather than tracing the cascade to Tier 4 Product disruption or Tier 2 Model revision.
 
@@ -237,7 +239,7 @@ The following seven propositions formalize the failure-propagation pathways impl
 
 *Statement:* When Process integration — ERP harmonization, SOP standardization, workflow reengineering — is imposed on the acquired Organization before Tier 4 (Product) specification clarity is established, employee resistance and attrition will exceed rates observed when Process integration follows Product specification confirmation.
 
-*Mechanism:* Organization is constrained by Process via the downward constraint hierarchy: the staffing structure, role design, and decision-allocation of the Organization were built to execute a specific Process in service of a specific Product. Imposing Process changes without establishing the new Product's acceptance criteria deprives the Organization of the purpose context in which those changes make sense. Klok et al. (2022) establish that emotional dynamics during integration — employees' uncertainty about what they are working toward — are systematically underestimated in integration planning, consistent with the mechanism above. Stahl and Voigt (2008) show that integration approach moderates sociocultural integration outcomes; Smeulders et al. (2023) show that integration controls affect employee resistance, providing adjacent empirical links without tracing the full Process-first sequencing effect.
+*Mechanism:* Organization is constrained by Process via the downward constraint hierarchy: the staffing structure, role design, and decision-allocation of the Organization were built to execute a specific Process in service of a specific Product. Imposing Process changes without establishing the new Product's acceptance criteria deprives the Organization of the purpose context in which those changes make sense. Klok et al. (2023) establish that emotional dynamics during integration — employees' uncertainty about what they are working toward — are systematically underestimated in integration planning, consistent with the mechanism above. Stahl and Voigt (2008) show that integration approach moderates sociocultural integration outcomes; Smeulders et al. (2023) show that integration controls affect employee resistance, providing adjacent empirical links without tracing the full Process-first sequencing effect.
 
 *Empirical anchor:* Adjacent links partially documented. No study traces the Process-first versus Product-first sequencing effect specifically.
 
@@ -336,7 +338,7 @@ The formal sequence is: (1) resolve Tier 1 (Intent) compatibility before Tier 2 
 
 *Notes*: The sequencing principle is derived from the constraint hierarchy, not from empirical observation of integration practice. Deviations from this sequence — the modal failure mode in the literature (Larsson and Finkelstein 1999) — produce the cascade pathways formalized in P1–P7. Tier 3 integration is omitted from the sequencing table because it is legally mandated immediately post-close; the design imperative is to minimize its disruption to Tiers 4–6.
 
-The modal failure mode in practice inverts this sequence: acquirers begin with Tier 6 (Organization) — immediately visible, urgent, and socially demanding — and Tier 5 (Process) — operationally critical in the first weeks — while Tiers 1 through 4 remain unresolved. Larsson and Finkelstein (1999) identify inadequate organizational integration as the dominant predictor of synergy failure in their case-survey methodology; in tier-level vocabulary, their finding maps to Tier 5 forced-merge producing Tier 4 drift — a P4 cascade — whose upstream origin in an unresolved Tier 1 compatibility question the authors do not observe because their unit of analysis is the organizational layer, not the full tier stack. Bauer et al. (2024) establish that integration-capability deficits at any domain reduce synergy realization across the full deal, consistent with the dual-hierarchy framework's claim that integration is a cross-tier problem rather than a within-tier problem.
+The modal failure mode in practice inverts this sequence: acquirers begin with Tier 6 (Organization) — immediately visible, urgent, and socially demanding — and Tier 5 (Process) — operationally critical in the first weeks — while Tiers 1 through 4 remain unresolved. Larsson and Finkelstein (1999) identify inadequate organizational integration as the dominant predictor of synergy failure in their case-survey methodology; in tier-level vocabulary, their finding maps to Tier 5 forced-merge producing Tier 4 drift — a P4 cascade — whose upstream origin in an unresolved Tier 1 compatibility question the authors do not observe because their unit of analysis is the organizational layer, not the full tier stack. Jemison and Sitkin (1986) provide the foundational AMR framing of this pathology as the "activity trap" — operational urgency crowding out the strategic-intent resolution that the constraint hierarchy requires. Bauer et al. (2024) establish that integration-capability deficits at any domain reduce synergy realization across the full deal, consistent with the dual-hierarchy framework's claim that integration is a cross-tier problem rather than a within-tier problem.
 
 ### *The Separability-as-Screening Principle*
 
@@ -409,7 +411,11 @@ The seven propositions (P1–P7) represent the first theoretical architecture th
 
 ## Acknowledgments
 
-The author acknowledges the use of large language models (Claude Opus 4.7, Sonnet 4.6; OpenAI ChatGPT-5; Google Gemini 2.5 Pro; xAI Grok 4) for literature search, structural review, and editorial polish during the development of this manuscript. All theoretical propositions, the six-tier ontology, the dual-hierarchy formalization, and the Six-Tier Separability Diagnostic are the author's own. All cited references were verified by the author against primary sources. The author accepts full responsibility for the manuscript's content.
+AI assistants (Claude Opus 4.7, Claude Sonnet 4.6, ChatGPT-5, Gemini 2.5 Pro, Grok 4) were used for hardened deep-research prior-art saturation, structural review, and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+
+## Author Contributions (CRediT)
+
+Dmitry Zharnikov: Conceptualization, Formal analysis, Investigation, Methodology, Project administration, Validation, Writing -- original draft, Writing -- review and editing.
 
 ---
 
@@ -423,7 +429,7 @@ Bauer, Florian and Martin Friesl (2024), "Synergy Evaluation in Mergers and Acqu
 
 Berrone, Pascual, Cristina Cruz, and Luis R. Gomez-Mejia (2012), "Socioemotional Wealth in Family Firms: Theoretical Dimensions, Assessment Approaches, and Agenda for Future Research," *Family Business Review*, 25 (3), 258–279.
 
-Bilgili, Tsvetomira, Christian Calderon, David Allen, and Ben Kedia (2017), "Gone with the Wind: A Meta-Analytic Review of Executive Turnover, Its Antecedents, and Postacquisition Performance," *Journal of Management*, 43, doi:10.1177/0149206316635252.
+Bilgili, Tsvetomira, Christian Calderon, David Allen, and Ben Kedia (2017), "Gone with the Wind: A Meta-Analytic Review of Executive Turnover, Its Antecedents, and Postacquisition Performance," *Journal of Management*, 43 (6), 1966–1997, doi:10.1177/0149206316635252.
 
 Brede, Marius, Hannes Gerstel, Arnt Wöhrmann, and Andreas Bausch (2025), "Mind the Gap: The Effect of Cultural Distance on Mergers and Acquisitions — Evidence from Glassdoor Reviews," *Review of Managerial Science*, 19, 2279–2326, doi:10.1007/s11846-024-00811-8.
 
@@ -441,13 +447,17 @@ Hannan, Michael T. and John Freeman (1984), "Structural Inertia and Organization
 
 Hansmann, Henry (1996), *The Ownership of Enterprise*. Belknap Press of Harvard University Press.
 
+Haspeslagh, Philippe C. and David B. Jemison (1991), *Managing Acquisitions: Creating Value through Corporate Renewal*. New York: Free Press.
+
+Jemison, David B. and Sim B. Sitkin (1986), "Corporate Acquisitions: A Process Perspective," *Academy of Management Review*, 11 (1), 145–163, doi:10.5465/amr.1986.4282648.
+
 Jensen, Michael C. and William H. Meckling (1976), "Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure," *Journal of Financial Economics*, 3 (4), 305–360.
 
 King, David R., Dan R. Dalton, Catherine M. Daily, and Jeffrey G. Covin (2004), "Meta-Analyses of Post-Acquisition Performance: Indications of Unidentified Moderators," *Strategic Management Journal*, 25 (2), 187–200, doi:10.1002/smj.371.
 
 King, David R., Gerardo Wang, Mehdi Samimi, and Antonio F. Cortés (2021), "A Meta-Analytic Integration of Acquisition Performance Prediction," *Journal of Management Studies*, 58 (5), 1198–1236, doi:10.1111/joms.12636.
 
-Klok, Yoeri, Daan P. Kroon, and Svetlana N. Khapova (2022), "The Role of Emotions During Mergers and Acquisitions: A Review of the Past and a Glimpse into the Future," *International Journal of Management Reviews*, 25 (3), 495–528, doi:10.1111/ijmr.12322.
+Klok, Yoeri, Daan P. Kroon, and Svetlana N. Khapova (2023), "The Role of Emotions During Mergers and Acquisitions: A Review of the Past and a Glimpse into the Future," *International Journal of Management Reviews*, 25 (3), 495–528, doi:10.1111/ijmr.12322.
 
 Landis, J. Richard and Gary G. Koch (1977), "The Measurement of Observer Agreement for Categorical Data," *Biometrics*, 33 (1), 159–174.
 
@@ -479,7 +489,7 @@ Selznick, Philip (1957), *Leadership in Administration: A Sociological Interpret
 
 Smeulders, Dieter, Hendrik Jan Dekker, and Alexandra Van den Abbeele (2023), "Postacquisition Integration: Management Control System Use, Cultural Differences, and Acquisition Performance," *Accounting, Organizations and Society*, 109, 101412, doi:10.1016/j.aos.2023.101412.
 
-Stahl, Günter K. and Andreas Voigt (2005), "The Performance Impact of Cultural Differences in Mergers and Acquisitions: A Critical Research Review and an Integrative Model," *Advances in Mergers and Acquisitions*, 4, 51–82, doi:10.1016/S1479-361X(04)04003-7.
+Stahl, Günter K. and Andreas Voigt (2005), "The Performance Impact of Cultural Differences in Mergers and Acquisitions: A Critical Research Review and an Integrative Model," in *Advances in Mergers and Acquisitions, Vol. 4*, Cary L. Cooper and Sidney Finkelstein, eds. Bingley, UK: Emerald Group Publishing, 51–82, doi:10.1016/S1479-361X(04)04003-7.
 
 Stahl, Günter K. and Andreas Voigt (2008), "Do Cultural Differences Matter in Mergers and Acquisitions? A Tentative Model and Examination," *Organization Science*, 19 (1), 160–176, doi:10.1287/orsc.1070.0270.
 
@@ -494,3 +504,7 @@ Williamson, Oliver E. (1985), *The Economic Institutions of Capitalism*. Free Pr
 Zachman, John A. (1987), "A Framework for Information Systems Architecture," *IBM Systems Journal*, 26 (3), 276–292.
 
 Zhao, Ellie Jingjing (2023), "CEO Contractual Incentives and Acquisition Decisions," *Journal of Financial and Quantitative Analysis*, 58 (5), 2121–2158, doi:10.1017/S0022109022001107.
+
+Zharnikov, Dmitry (2026a), "Spectral Brand Theory: A Multi-Dimensional Framework for Brand Perception Analysis," Working Paper, doi:10.5281/zenodo.18945912.
+
+Zharnikov, Dmitry (2026h), "Specification Impossibility in Organizational Design: A High-Dimensional Geometric Analysis," Working Paper, doi:10.5281/zenodo.18945591.

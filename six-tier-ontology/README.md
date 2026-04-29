@@ -6,9 +6,9 @@
 
 **Citation key**: 2026ag
 
-**Status**: Pre-Zenodo working draft (Session 119, 2026-04-29). Structural revisions per Grok roadmap queued for Session 120; first Zenodo upload as v1.0.0 follows. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 (2026-04-29). Post-Grok-roadmap structural revisions + consolidated review fix-pass applied. Target venue: Academy of Management Review.
 
-**DOI**: pending Zenodo upload
+**DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 
 ## What this paper does
 
@@ -22,7 +22,7 @@ Develops a six-tier ontology of the acquisition target — Owner Intent, Busines
 
 ## Files
 
-- `paper.md` — full paper (12,000 words body; 42 references; 4 tables; 1 Mermaid figure; 8 sections)
+- `paper.md` — full paper (~10,800 words body; 44 references; 4 tables; 1 Mermaid figure; 7 sections)
 - `paper.yaml` — paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
 - `CITATION.cff` — citation file (CITATION File Format 1.2.0)
 - `CONTRIBUTORS.yaml` — verified contributor attribution
@@ -43,8 +43,6 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 
 ## How to cite
 
-Once the post-revision v1.0.0 is uploaded to Zenodo and assigned a DOI, the canonical citation will be:
-
 ```
-Zharnikov, Dmitry (2026), "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms," Working Paper v1.0.0, Zenodo, doi:[pending].
+Zharnikov, Dmitry (2026), "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19895813.
 ```
