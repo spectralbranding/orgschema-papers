@@ -6,7 +6,7 @@
 
 **Citation key**: 2026ag
 
-**Status**: Working paper v1.0.0 (2026-04-29). Post-Grok-roadmap structural revisions + consolidated review fix-pass applied. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 (2026-04-30). Post-Grok-roadmap structural revisions + consolidated review fix-pass + user-verified citation additions applied. Target venue: Academy of Management Review.
 
 **DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 
@@ -22,7 +22,7 @@ Develops a six-tier ontology of the acquisition target — Owner Intent, Busines
 
 ## Files
 
-- `paper.md` — full paper (~10,800 words body; 44 references; 4 tables; 1 Mermaid figure; 7 sections)
+- `paper.md` — full paper (~12,500 words body; 53 references; 4 tables; 1 Mermaid figure; 7 sections)
 - `paper.yaml` — paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
 - `CITATION.cff` — citation file (CITATION File Format 1.2.0)
 - `CONTRIBUTORS.yaml` — verified contributor attribution
