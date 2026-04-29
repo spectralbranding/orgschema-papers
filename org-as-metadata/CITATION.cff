@@ -11,9 +11,9 @@ version: "1.0.0"
 date-released: "2026-04-29"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
-  - type: other
-    value: "TBD (pending Zenodo upload)"
-    description: "Zenodo DOI to be assigned on first upload"
+  - type: doi
+    value: "10.5281/zenodo.19869871"
+    description: "Zenodo concept DOI (cite-all-versions; v1 DOI = 10.5281/zenodo.19869872)"
 keywords:
   - organizational metamerism
   - equifinality

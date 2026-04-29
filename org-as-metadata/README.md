@@ -1,6 +1,6 @@
 # Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs
 
-**Status**: Working paper v1.0.0 (April 2026) | **DOI**: TBD (Zenodo upload pending)
+**Status**: Working paper v1.0.0 (April 2026) | **DOI**: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
 
 ## Paper
 
