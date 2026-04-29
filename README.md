@@ -9,7 +9,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper, Mar 2026 |
 | [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper, Apr 2026 |
 | [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Working paper v0.4, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
-| [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~8,750 | 45 | Working paper v1.0.0, Apr 2026 — Zenodo upload pending |
+| [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Working paper v1.0.0, Apr 2026 — Zenodo upload pending |
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
 
