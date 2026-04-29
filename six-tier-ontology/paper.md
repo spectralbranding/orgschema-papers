@@ -157,7 +157,7 @@ The integration sequencing implication follows directly from the constraint hier
 
 **Figure 1: The Dual Hierarchy — Service (Upward) and Constraint (Downward).**
 
-``` {.mermaid width=50%}
+``` {.mermaid width=35%}
 graph TD
     T1["Tier 1: Owner Intent<br/>(Governor: owner psyche / board / charter)"]
     T2["Tier 2: Business Model<br/>(Governor: market reality + owner choice)"]
@@ -366,14 +366,14 @@ The Six-Tier Separability Diagnostic (STSD) is a structured judgment instrument 
 
 | Tier | Diagnostic Question | Fused | Partial | Independent |
 |------|---------------------|-------|---------|-------------|
-| 1 Intent | Can the owner state their Intent in one sentence that does NOT contain the company's name? | No — the company IS the answer | Named but tied to company's continued existence | Yes — stated purpose survives without this specific entity |
-| 2 Business Model | Is the model articulated as a written canvas — value proposition, addressable cohorts, unit economics, channels — independent of "what we have always done"? | No — implicit, inarticulable without reference to history | Partial — some components explicit, others tacit | Yes — fully written; anyone could test the logic |
-| 3 Business Entity | Is the Entity's cap table, debt structure, and counterparty obligations decoupled from the owner's personal balance sheet? | No — personal guarantees, commingled accounts | Some decoupling; residual personal obligations remain | Yes — fully decoupled; clean separation between personal and corporate |
-| 4 Product | Is there a written WHAT-specification — acceptance criteria a third party could read and reconstruct testing against? | No — specification lives in founder's judgment | Partial codification; key acceptance criteria implicit | Yes — written spec, team-held, survives founder exit |
-| 5 Process | Does the process run for a continuous month without the owner physically present? | No — owner must be present for key decisions | Owner required for exceptions; routine operations self-running | Yes — process runs fully; owner presence optional |
-| 6 Organization | Does every role the owner occupies have a named, trained successor? | No — owner occupies irreplaceable roles | Some successors identified; key roles underbacked | Yes — all owner roles covered by named successors |
+| 1 Intent | Can the owner state Intent in one sentence not naming the company? | No — the company IS the answer | Named but tied to company | Yes — purpose survives without this entity |
+| 2 Business Model | Is the model articulated as a written canvas independent of habit? | No — implicit, inarticulable | Some components explicit, others tacit | Yes — fully written; logic independently testable |
+| 3 Business Entity | Are debts and obligations decoupled from the owner's balance sheet? | No — personal guarantees, commingled accounts | Partial decoupling; residual obligations remain | Yes — fully decoupled; clean separation |
+| 4 Product | Is there a written WHAT-specification a third party could test against? | No — spec lives in founder's judgment | Partial codification; key criteria implicit | Yes — written spec; survives founder exit |
+| 5 Process | Does the process run a continuous month without the owner present? | No — owner present for key decisions | Owner required for exceptions only | Yes — runs fully; owner presence optional |
+| 6 Organization | Does every owner role have a named, trained successor? | No — owner occupies irreplaceable roles | Some successors named; key roles thin | Yes — all roles covered by named successors |
 
-*Notes*: The STSD is a structured judgment instrument, not a scored psychometric scale. It produces an ordinal state per tier (Fused / Partial / Independent), not a continuous score. Inter-rater reliability data are the first priority for validation. Identity-bound owners (Domain Craftsman, Family Steward, Mission Founder) will always show Fused at Tier 1; this is a structural state, not a remediable condition. The diagnostic describes reality; it does not prescribe action.
+*Notes*: The STSD produces an ordinal state per tier (Fused / Partial / Independent), not a continuous score. Inter-rater reliability evidence is the first validation priority. Identity-bound owners (Domain Craftsman, Family Steward, Mission Founder) will always show Fused at Tier 1 — a structural state, not a remediable condition.
 
 How to read the profile: a profile of Independent / Independent / Independent / Independent / Partial / Partial indicates a highly transferable business with integration risk concentrated in Tiers 5 and 6 — the SaaS company profile described in the Product tier vignette. A profile of Fused / Fused / Partial / Fused / Partial / Fused indicates a business that presents as a standard transaction from the financial-due-diligence seat but will not survive the transition intact — the regional manufacturer profile described in the Owner Intent vignette. The six-cell structure makes visible what aggregate financial performance measures cannot: the tier-level distribution of value at risk.
 
@@ -409,7 +409,7 @@ The seven propositions (P1–P7) represent the first theoretical architecture th
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.7, Claude Sonnet 4.6, ChatGPT-5, Gemini 2.5 Pro, Grok 4) were used for hardened deep-research prior-art saturation, structural review, and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ## Author Contributions (CRediT)
 

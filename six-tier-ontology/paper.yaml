@@ -161,8 +161,7 @@ dependencies:
     description: "Specification Impossibility — anchors P4 mechanism on the impossibility of fully specifying Product requirements to arbitrary resolution"
 
 ai_disclosure: >
-  AI assistants (Claude Opus 4.7, Claude Sonnet 4.6, ChatGPT-5, Gemini
-  2.5 Pro, Grok 4) were used for hardened deep-research prior-art
-  saturation, structural review, and editorial refinement; all theoretical
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
   claims, propositions, and interpretations are the author's sole
   responsibility.
