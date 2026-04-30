@@ -18,19 +18,26 @@ contributors:
     type: ai
     roles:
       - literature-search
-      - cross-reference-verification
-      - writing-assistance
+      - editorial-refinement
     contributions: >
-      Initial literature search and cross-reference verification during
-      manuscript preparation; editorial assistance with prose. All
-      theoretical frameworks, propositions, and analytical arguments are
-      the author's own work.
+      Initial literature search and editorial refinement during manuscript
+      preparation. All theoretical claims, propositions, and interpretations
+      are the author's sole responsibility.
+
+  - name: "Grok (xAI)"
+    type: ai
+    roles:
+      - literature-search
+      - editorial-refinement
+    contributions: >
+      Initial literature search and editorial refinement during manuscript
+      preparation.
 
   - name: "Gemini (Google)"
     type: ai
     roles:
       - literature-search
-      - cross-reference-verification
+      - editorial-refinement
     contributions: >
-      Initial literature search and cross-reference verification during
-      manuscript preparation.
+      Initial literature search and editorial refinement during manuscript
+      preparation.

@@ -34,10 +34,31 @@ provenance:
         engagement paragraph added in The Tier-4 ontological surface
         subsection. Heading hierarchy normalized. All renumber-fragile
         cross-references replaced with descriptive subsection-name refs.
-        Acknowledgments in 3-engine project-default form.
       outcome: >
-        Working draft awaiting first Zenodo upload (DOI reservation pending
-        by author). After upload, this version becomes v1.0.0.
+        Working draft superseded by v1.0.0 release.
+
+    - version: "1.0.0"
+      date: "2026-04-30"
+      title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+      doi: "10.5281/zenodo.19930157"
+      description: >
+        Concept DOI 10.5281/zenodo.19930157 / v1 DOI 10.5281/zenodo.19930158
+        reserved on Zenodo. Same content as 1.0.0-pre with DOI propagated to
+        author block, paper.yaml metadata.doi, CITATION.cff identifiers
+        (concept + v1), README.md status + how-to-cite, and bundle artifacts
+        (article footer, LinkedIn First Comment, X thread final tweet,
+        Substack Note link, OST cross-post). Acknowledgments in author-
+        preferred minimal-disclosure form: AI tools (Claude Opus 4.7,
+        Gemini 3.1) for initial literature search and cross-reference
+        verification; theoretical frameworks, propositions, and analytical
+        arguments are the author's own work. Figure 1 keep-with-title bug
+        fixed in PDF render (rewrote line "Figure 1 visualizes the per-tier
+        decomposition" to "The per-tier decomposition is visualized below in
+        Figure 1." to avoid the keep-figures.lua regex match that was
+        wrapping the lead-in line with the bold caption).
+      outcome: >
+        Citable working paper. Target venue Strategic Management Journal
+        or Journal of Marketing.
 
   forks: []
 

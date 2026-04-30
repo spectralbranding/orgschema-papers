@@ -1,5 +1,5 @@
 # paper.yaml -- Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture
-# Citation key: 2026ah. Concept DOI [to be assigned on Zenodo upload]; v1 DOI [to be assigned on Zenodo upload].
+# Citation key: 2026ah. Concept DOI 10.5281/zenodo.19930157; v1 DOI 10.5281/zenodo.19930158.
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
@@ -12,7 +12,7 @@ metadata:
       affiliation: "Independent Researcher"
       corresponding: true
   citation_key: "2026ah"
-  doi: "[to be assigned on Zenodo upload]"
+  doi: "10.5281/zenodo.19930157"
   date: "2026-04-30"
   version: "1.0.0-pre"
   status: working_paper
@@ -51,10 +51,10 @@ abstract: >
   empirical validation.
 
 ai_disclosure: >
-  AI tools (Claude Opus 4.7, Gemini 3.1) were used for initial literature
-  search and cross-reference verification during the preparation of this
-  manuscript. The theoretical frameworks, propositions, and analytical
-  arguments are the author's own work.
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
+  claims, propositions, and interpretations are the author's sole
+  responsibility.
 
 dependencies:
   - citation_key: "2026a"

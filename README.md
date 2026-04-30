@@ -11,7 +11,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Working paper v0.4, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
 | [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
 | [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.0.0 on Zenodo 2026-04-29 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
-| [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Working paper v1.0.0-pre, Apr 2026 — DOI pending Zenodo upload |
+| [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Preprint v1.0.0 on Zenodo 2026-04-30 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
 
 ### Brand as Tier-4 Projection (Zharnikov 2026ah)
 
@@ -20,7 +20,7 @@ Extends the six-tier business architecture from Zharnikov (2026ag) into the bran
 **Keywords**: brand portfolio architecture, multi-brand strategy, corporate rebranding, brand failure recovery, tier-level decomposition, brand-business separability, marketing organization, cross-brand function
 
 - [Read on GitHub](brand-as-tier4/paper.md)
-- Preprint DOI: pending Zenodo upload
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.19930157)
 - Target venue: Strategic Management Journal or Journal of Marketing
 
 ### A Six-Tier Ontology of Acquisition-Target Transferability (Zharnikov 2026ag)

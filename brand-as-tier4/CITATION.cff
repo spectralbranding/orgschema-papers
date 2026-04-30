@@ -12,11 +12,11 @@ date-released: "2026-04-30"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
-    value: "[to be assigned on Zenodo upload]"
-    description: "Zenodo concept DOI (always resolves to latest version) — pending"
+    value: "10.5281/zenodo.19930157"
+    description: "Zenodo concept DOI (always resolves to latest version)"
   - type: doi
-    value: "[to be assigned on Zenodo upload]"
-    description: "Zenodo v1 DOI (this version) — pending"
+    value: "10.5281/zenodo.19930158"
+    description: "Zenodo v1 DOI (this version)"
 keywords:
   - brand portfolio architecture
   - multi-brand strategy

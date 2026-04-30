@@ -6,9 +6,9 @@
 
 **Citation key**: 2026ah
 
-**Status**: Working paper v1.0.0-pre. Awaiting first Zenodo upload (concept DOI reservation pending). Five-prompt hardened deep-research saturation completed; parallel review-paper + review-literature passes completed (PASS WITH MINOR REVISIONS, both); consolidated fix-pass applied. Target venue: Strategic Management Journal or Journal of Marketing.
+**Status**: Working paper v1.0.0 published on Zenodo 2026-04-30. Five-prompt hardened deep-research saturation completed; parallel review-paper + review-literature passes completed (PASS WITH MINOR REVISIONS, both); consolidated fix-pass applied. Target venue: Strategic Management Journal or Journal of Marketing.
 
-**DOI**: pending — to be reserved on first Zenodo upload.
+**DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (v1)
 
 ## What this paper does
 
@@ -48,5 +48,5 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture," Working Paper v1.0.0-pre, [DOI to be assigned on Zenodo upload].
+Zharnikov, Dmitry (2026), "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19930157.
 ```

@@ -2,7 +2,7 @@
 
 *Dmitry Zharnikov*
 
-DOI: [to be assigned on Zenodo upload]
+DOI: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
 
 Working Paper v1.0.0 -- April 2026
 
@@ -239,7 +239,7 @@ The framework identifies three structurally distinct recovery pathways under bra
 
 ### *The salvage matrix*
 
-The salvage matrix in the table below operationalizes the three pathways.
+The salvage matrix in Table 3 operationalizes the three pathways.
 
 **Table 3: Per-Tier Salvage Matrix.**
 
@@ -380,9 +380,7 @@ Multi-brand capacity, failed-brand recovery, and marketing-as-cross-brand-functi
 
 ## Acknowledgments
 
-The author thanks the open scholarly infrastructure of Zenodo for archiving and DOI assignment, and the maintainers of pandoc and typst for the document toolchain that produced this manuscript.
-
-AI tools (Claude Opus 4.7, Gemini 3.1) were used for initial literature search and cross-reference verification during the preparation of this manuscript. The theoretical frameworks, propositions, and analytical arguments are the author's own work.
+AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ## CRediT contributions
 
