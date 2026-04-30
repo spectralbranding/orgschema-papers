@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+version: "1.0.0-pre"
+date-released: "2026-04-30"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "[to be assigned on Zenodo upload]"
+    description: "Zenodo concept DOI (always resolves to latest version) — pending"
+  - type: doi
+    value: "[to be assigned on Zenodo upload]"
+    description: "Zenodo v1 DOI (this version) — pending"
+keywords:
+  - brand portfolio architecture
+  - multi-brand strategy
+  - corporate rebranding
+  - brand failure recovery
+  - tier-level decomposition
+  - brand-business separability
+  - marketing organization
+  - cross-brand function
+  - Spectral Brand Theory
+  - Six-Tier Business Architecture
+license: CC-BY-NC-ND-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+  year: 2026

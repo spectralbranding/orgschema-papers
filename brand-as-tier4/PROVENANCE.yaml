@@ -1,0 +1,44 @@
+# PROVENANCE.yaml -- Brand as Tier-4 Projection
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+  repository: "spectralbranding/orgschema-papers/brand-as-tier4"
+
+  versions:
+    - version: "0.1.0-skeleton"
+      date: "2026-04-30"
+      title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+      description: >
+        Working paper skeleton derived from a five-prompt hardened deep-research
+        pass (DR-1 prior-art saturation; DR-2 brand portfolio architecture
+        literature; DR-3 corporate rebranding and failed-brand recovery; DR-4
+        marketing as cross-brand organizational function; DR-5 brand extension
+        and brand-parent transfer). Cross-source verification across web-
+        accessible primary sources. Brand-as-Tier-4 ontological pre-emption
+        baked into Section 3. Citation corrections from saturation pass
+        applied (Webster 1992 not 1997 JM; Hsu Fournier Srinivasan 2016 JAMS
+        not 2010 JM; Verghese 2017 dropped — NOT FOUND; Marques et al. 2020
+        four-author form; Yorkston Nunes Matta 2010 JM not JCR).
+      outcome: "Skeleton ready for full drafting. SMJ / JM target locked."
+
+    - version: "1.0.0-pre"
+      date: "2026-04-30"
+      title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
+      description: >
+        Pre-Zenodo working draft expanded from the skeleton in a single
+        drafting pass. ~9,287 words body / 60 references / 197-word abstract
+        / 8 sections / 4 tables / 1 Mermaid Figure 1 / 7 falsifiable
+        propositions P1-P7 with explicit Confirming and Falsifying criteria.
+        AMA format. Self-citation 5/60 = 8.3%. Hatch-Schultz 2003 EJM
+        engagement paragraph added in The Tier-4 ontological surface
+        subsection. Heading hierarchy normalized. All renumber-fragile
+        cross-references replaced with descriptive subsection-name refs.
+        Acknowledgments in 3-engine project-default form.
+      outcome: >
+        Working draft awaiting first Zenodo upload (DOI reservation pending
+        by author). After upload, this version becomes v1.0.0.
+
+  forks: []
+
+  spin_offs_logged: []

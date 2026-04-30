@@ -1,0 +1,36 @@
+# CONTRIBUTORS.yaml -- Brand as Tier-4 Projection
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - writing-original
+      - writing-review
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-04-30"
+
+  - name: "Claude (Anthropic)"
+    type: ai
+    roles:
+      - literature-search
+      - cross-reference-verification
+      - writing-assistance
+    contributions: >
+      Initial literature search and cross-reference verification during
+      manuscript preparation; editorial assistance with prose. All
+      theoretical frameworks, propositions, and analytical arguments are
+      the author's own work.
+
+  - name: "Gemini (Google)"
+    type: ai
+    roles:
+      - literature-search
+      - cross-reference-verification
+    contributions: >
+      Initial literature search and cross-reference verification during
+      manuscript preparation.
