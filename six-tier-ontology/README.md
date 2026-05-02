@@ -1,6 +1,6 @@
-# Six-Tier Ontology of Acquisition-Target Transferability
+# Dual Hierarchies of Organizational Transferability (2026ag)
 
-**Title**: A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms
+**Title**: Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation
 
 **Author**: Dmitry Zharnikov ([ORCID 0009-0000-6893-9231](https://orcid.org/0009-0000-6893-9231))
 
@@ -44,5 +44,5 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19895813.
+Zharnikov, Dmitry (2026), "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19895813.
 ```

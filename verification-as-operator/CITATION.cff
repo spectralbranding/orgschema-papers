@@ -6,7 +6,7 @@ authors:
     email: dmitry@spectralbranding.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
-title: "Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails"
+title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
 version: 1.0.0
 date-released: 2026-04-26
 doi: 10.5281/zenodo.19778588
@@ -32,7 +32,7 @@ preferred-citation:
       email: dmitry@spectralbranding.com
       affiliation: "Independent Researcher"
       orcid: "https://orcid.org/0009-0000-6893-9231"
-  title: "Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails"
+  title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
   year: 2026
   doi: 10.5281/zenodo.19778588
   url: "https://github.com/spectralbranding/orgschema-papers"

@@ -2,13 +2,13 @@
 # Fork history and submission records per the Research-as-Repository protocol
 
 provenance:
-  paper_title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+  paper_title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
   repository: "spectralbranding/orgschema-papers/six-tier-ontology"
 
   versions:
     - version: "0.1.0-skeleton"
       date: "2026-04-29"
-      title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+      title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
       description: >
         Working paper skeleton derived from a six-prompt hardened deep-research
         pass (prior-art saturation; competitor frameworks; form-invariance
@@ -21,7 +21,7 @@ provenance:
 
     - version: "1.0.0-pre"
       date: "2026-04-29"
-      title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+      title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
       description: >
         Pre-Zenodo working draft expanded from the skeleton in a single
         drafting pass. 12,000 words body / 42 references / 218-word
@@ -33,7 +33,7 @@ provenance:
 
     - version: "1.0.0"
       date: "2026-04-29"
-      title: "A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms"
+      title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
       doi: "10.5281/zenodo.19895813"
       description: >
         First Zenodo upload. ~12,500 words body / 53 references /
