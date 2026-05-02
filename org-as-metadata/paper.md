@@ -111,6 +111,20 @@ One further distinction: Beane and Leonardi (2025) ground their framework in emp
 
 Puranam, Alexy, and Reitzig (2014) ask a related question from yet another angle: when do "new" forms of organizing constitute genuine novelty versus functional equivalence to established forms? The metamerism framework operationalizes this question precisely — genuine novelty appears as non-membership in the metamerism set for a specified observer. Configurations that are new in their structural design but produce identical outputs for the observer in question are metamers, not novel forms. The Puranam et al. framework motivates the question; the metamerism framework provides the formal criterion. A systematic review of the organization design literature by Joseph and Sengul (2024) identifies coordination — alongside configuration, control, and channelization — as one of the four primary research streams in the field; the metamerism framework's focus on the progressive embedding of coordination logic in process specifications represents a direct theoretical extension of this coordination research stream into the AI-era organizational context.
 
+Table 3: Three frames for organizational form heterogeneity.
+
+| Dimension | Equifinality (Gresov and Drazin 1997) | Pace Layering (Beane and Leonardi 2025) | Organizational Metamerism (present paper) |
+|-----------|----------------------------------------|-----------------------------------------|-------------------------------------------|
+| Core claim | Different developmental paths reach equivalent performance | Organizational layers evolve at systematically different rates | Distinct configurations are simultaneously state-equivalent for a given observer and process |
+| Type of equivalence | Path equivalence (retrospective) | Rate-of-change heterogeneity across layers (temporal) | State equivalence (simultaneous, structural) |
+| Time orientation | Historical: establishes convergence post hoc | Dynamic: prescribes managing cross-layer coupling over time | Synchronic: characterizes the space of equivalent configurations at a given moment |
+| Observer treatment | Observer-independent: performance equivalence is configuration-level | Observer-independent: layer rates are structural properties | Observer-relative: equivalence depends on the evaluator's sensitivity function |
+| Mechanism | Path dependence; multiple trajectories to shared end-states | Differential response rates to technological change across layers | Coordination embedding: equivalence set expands as coordination logic is absorbed into process specifications |
+| Predicted observability | Heterogeneity in organizational histories, homogeneity in outcomes | Differential adoption and change lag across organizational layers | Structural diversity of organizations executing the same process for the same observer; systematic observer disagreement across evaluator classes |
+| AI-era implication | None unique | Fast layers (coordination tools) outpace slow layers (relational substrate) | Falling coordination costs expand M(P,O); restructuring frequency decouples from process change frequency |
+
+*Notes*: The three frameworks are complementary. Equifinality addresses how organizations arrive at equivalent performance; pace layering addresses how organizations manage change at different rates; organizational metamerism addresses which configurations are simultaneously substitutable for a given observer. The formal treatment of M(P,O) is in Appendix A.
+
 ---
 
 ## Organizational Metamerism
@@ -316,6 +330,10 @@ Zharnikov (2026e) formalizes this point in the brand perception context, showing
 
 The specification impossibility result in Zharnikov (2026h) adds a complementary methodological implication: in high-dimensional organizational specification spaces, exhaustive characterization of the metamerism set is geometrically intractable. Researchers should expect the empirically observable metamerism set to be a sample from a larger theoretical set, and should design studies accordingly — focusing on the theoretically predicted determinants of set size rather than on cataloguing equivalences.
 
+*Companion Computation Script*
+
+The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 2 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of c(P) and τ(P) per the operationalization guidance in the Propositions section.
+
 ### Practical Implications
 
 For practitioners, the organizational metamerism framework produces two practical insights.
@@ -461,3 +479,79 @@ Zharnikov, D. (2026e). Spectral metamerism in brand perception: Projection bound
 Zharnikov, D. (2026h). Specification impossibility in organizational design: A high-dimensional geometric analysis. Working Paper. https://doi.org/10.5281/zenodo.18945591
 
 Zharnikov, D. (2026i). The Organizational Schema Theory: Test-driven business design. Working Paper. https://doi.org/10.5281/zenodo.18946043
+
+---
+
+## Appendix A: Formal Specification of the Metamerism Set
+
+This appendix formalizes the metamerism set M(P, O) with set notation. The intent is to make the structure of the main argument precise enough for empirical operationalization and for comparison with adjacent mathematical frameworks.
+
+### Configuration Space and Observer Evaluation
+
+Let 𝒞 denote the configuration space — the set of all organizationally feasible configurations for executing a given process P. Each element C ∈ 𝒞 is a tuple specifying the agents, roles, authority relationships, resource allocations, and coordination procedures assembled to execute P.
+
+Let O denote an evaluative observer whose evaluation function f_O: 𝒞 → V maps each configuration C to a value-output perception V = f_O(C, P). V may be a scalar (e.g., a quality score), a vector (e.g., a multidimensional assessment), or a categorical judgment (equivalent / non-equivalent). The evaluation is conditioned on P because the same configuration may produce different value outputs for different processes.
+
+**Definition A1 (Metamerism set)**. The metamerism set of process P under observer O is:
+
+M(P, O) = {C ∈ 𝒞 : f_O(C, P) = f_O(C*, P)}
+
+where C* is an arbitrarily chosen reference configuration and the equality is with respect to observer O's equivalence relation on V. Equivalently, M(P, O) is the equivalence class of C* under the relation ~ defined by C ~ C' iff f_O(C, P) = f_O(C', P).
+
+This definition makes explicit that M(P, O) is a derived set, not an empirical enumeration: its members are those configurations that fall within the same output-evaluation class as the reference under O's evaluation function.
+
+### Observer-Relativity
+
+The most consequential property of M(P, O) is that it is observer-indexed.
+
+**Property A1 (Observer-relativity)**. For two observers O₁ and O₂ with different evaluation functions f_{O1} ≠ f_{O2}:
+
+M(P, O₁) ≠ M(P, O₂) in general
+
+The inequality arises because observers differ in dimensional sensitivity: O₁ may be indifferent to coordination-structure differences that O₂ can detect. A technically oriented buyer evaluating software reliability has evaluation function f_{O1} that maps all configurations producing equivalent defect rates to the same value class, regardless of team structure. An institutional regulator evaluating governance compliance has evaluation function f_{O2} sensitive to authority relationships and reporting lines, and will assign different value classes to configurations that O₁ treats as equivalent.
+
+The practical implication is that the set of "equivalent configurations" is undefined without specifying the observer. Studies of organizational equifinality that aggregate across observer types are measuring the union ⋃_{i} M(P, Oᵢ) or the intersection ⋂_{i} M(P, Oᵢ), depending on operationalization — and these are different quantities with different theoretical meanings.
+
+### Coordination-Cost Mediation
+
+The main text develops the antecedents of set size schematically as:
+
+|M(P, O)| = f(codifiability(P), 1/c(P), 1/τ(P))
+
+A more precise functional form captures the directional predictions formally. Let:
+
+- κ(P) ∈ [0, 1] — codifiability of process P (fraction of steps fully specified)
+- c(P) > 0 — coordination cost per coordination relation in P
+- τ(P) ∈ [0, 1] — tacit knowledge intensity (proportion of coordination work requiring uncodifiable knowledge)
+
+**Property A2 (Coordination-cost mediation)**. The set size |M(P, O)| increases monotonically as c(P) decreases, all else equal:
+
+∂|M(P, O)| / ∂c(P) < 0
+
+As c(P) → 0 (perfect coordination embedding), the coordination arrangement becomes irrelevant to value output, and |M(P, O)| → |𝒞| (all feasible configurations become equivalent for technically oriented observers). As c(P) → ∞, coordination quality becomes the dominant source of value-output variance, and |M(P, O)| → 1 (only the single best-coordinated configuration produces equivalent output to itself).
+
+**Property A3 (Tacit boundary)**. The set size |M(P, O)| decreases monotonically as τ(P) increases, all else equal:
+
+∂|M(P, O)| / ∂τ(P) < 0
+
+For τ(P) = 1 (all coordination is uncodifiable), no configuration substitution preserves value output, and |M(P, O)| = 1. This establishes tacit knowledge intensity as a lower bound on configuration substitutability that coordination cost reductions cannot eliminate — the formal basis for Proposition 4.
+
+### Partial Ordering by Tacit Knowledge Intensity
+
+The metamerism sets for processes varying in tacit intensity form a partial order under set inclusion.
+
+**Property A4 (Tacit partial order)**. For two processes P and P' executing in the same coordination cost regime with κ(P) = κ(P'), if τ(P) < τ(P'), then:
+
+M(P, O) ⊇ M(P', O)
+
+The less tacit process has a weakly larger metamerism set — the collection of equivalent configurations contains the less-tacit process's set as a subset. This partial ordering is the structural basis for the cross-industry comparisons called for in Proposition 4's operationalization: industries with higher tacit intensity will exhibit nested, smaller sets of equivalent configurations relative to industries with lower tacit intensity at comparable coordination cost.
+
+### Illustrative Set-Size Dynamics
+
+The companion computation script (https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/) implements a continuous approximation of the set-size function:
+
+|M(P, O)| ≈ S · κ(P) / [c(P) · (1 + τ(P))]
+
+where S is a normalizing scale constant. Table A1 in the script output shows the predicted monotonic growth as c(P) falls from 1.0 to 0.05 at fixed codifiability and tacit intensity. Table A2 shows the tacit boundary: even as c(P) falls by a factor of 10, high-τ(P) processes retain substantially narrower sets than low-τ(P) processes. Table A3 demonstrates observer-relativity: for the same process portfolio, a technically oriented observer (O₁) has systematically larger sets than an institutional observer (O₂) whose evaluation function weights organizational form independently of output quality. The set-size values are illustrative ordinal predictions calibrated to the directional claims of Propositions 2 and 4; empirical calibration requires domain-specific measurement of c(P) and τ(P).
+
+*Notes*: This appendix formalizes the schematic function stated in the Antecedents of Metamerism subsection. The formalization is intended to sharpen empirical operationalization, not to claim that the continuous approximation is the unique functional form. Alternative specifications (multiplicative, log-linear, threshold-based) are consistent with the directional properties A2–A4 and may fit specific empirical contexts better. The companion script can be adapted to test alternative functional forms.

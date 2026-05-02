@@ -14,7 +14,7 @@ metadata:
   citation_key: "2026af"
   doi: "10.5281/zenodo.19869871"
   date: "2026-05-02"
-  version: "1.1.0-pre"
+  version: "1.1.0"
   status: preprint
   license: "CC-BY-4.0"
   keywords:
@@ -144,6 +144,7 @@ dependencies:
     description: "Organizational Schema Theory — shared metadata-style framing of organizational specification"
 
 ai_disclosure: >
-  AI tools (Claude, Gemini) were used for literature research, manuscript
-  drafting assistance, and self-adversarial review. All theoretical
-  arguments, propositions, and analytical claims are the author's own.
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
+  claims, propositions, and interpretations are the author's sole
+  responsibility.

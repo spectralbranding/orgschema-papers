@@ -7,8 +7,8 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
-version: 1.0.0
-date-released: 2026-04-26
+version: "1.1.0"
+date-released: "2026-05-02"
 doi: 10.5281/zenodo.19778588
 url: "https://github.com/spectralbranding/orgschema-papers"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"

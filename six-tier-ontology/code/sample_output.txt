@@ -1,0 +1,31 @@
+Example 1: SaaS company (Tier 4 vignette)
+--------------------------------------------------
+STSD profile
+==================================================
+  [1] Tier 1 Owner Intent              Independent
+  [2] Tier 2 Business Model            Independent
+  [3] Tier 3 Business Entity           Independent
+  [4] Tier 4 Product                   Independent
+  [5] Tier 5 Process                   Partial
+  [6] Tier 6 Organization              Partial
+
+Fused-tier count : 0 / 6
+Flip case        : False
+
+LOW PRE-CLOSE TRANSFERABILITY RISK based on STSD only.
+
+Example 2: Regional manufacturer (Tier 1 vignette)
+--------------------------------------------------
+STSD profile
+==================================================
+  [1] Tier 1 Owner Intent              Fused
+  [2] Tier 2 Business Model            Fused
+  [3] Tier 3 Business Entity           Partial
+  [4] Tier 4 Product                   Fused
+  [5] Tier 5 Process                   Partial
+  [6] Tier 6 Organization              Fused
+
+Fused-tier count : 4 / 6
+Flip case        : True
+
+FLIP CASE FLAG: Tier 1 = Fused. Per the framework, this is a structural feature of the target, not a remediable information asymmetry. Recommended action: price renegotiation or deal exit, not integration planning.

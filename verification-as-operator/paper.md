@@ -26,7 +26,38 @@ Four contributions organize this paper. First, this paper provides, to the autho
 
 The paper proceeds by first developing the operator framework and demonstrating its presence in the three source literatures. It then formalizes three propositions concerning rank, consistency, and bandwidth. Subsequent sections apply the framework to Power's audit-society critique, illustrate its implications with a qualitative example and analytic simulation, and derive theoretical and practical consequences. The paper concludes by identifying boundary conditions and a new research program on verification bandwidth as a predictor of organizational alignment, learning, and decoupling.
 
-**Figure 1:** Information-loss schematic: rank-1 audit vs. full-rank cascade.
+**Figure 1:** Architectural contrast between rank-1 audit and full-rank cascade. The rank-1 audit funnels every specification dimension through a single compliance bottleneck and emits a binary verdict; the full-rank cascade routes each cascade level through an independent projection that emits a level-localized pass/fail, preserving the dimensional structure of the specification.
+
+```mermaid
+flowchart LR
+  subgraph rank1["Rank-1 Audit (P_audit)"]
+    direction LR
+    A0[L0 customer experience] --> Pa[P_audit rank 1]
+    A1[L1 signals] --> Pa
+    A2[L2 processes] --> Pa
+    A3[L3 procedures] --> Pa
+    A4[L4 inputs] --> Pa
+    A5[L5 sourcing] --> Pa
+    Pa --> Av[Compliant or Non-compliant]
+  end
+  subgraph fullrank["Full-Rank Cascade (P_cascade)"]
+    direction LR
+    B0[L0 customer experience] --> P0[P_0]
+    B1[L1 signals] --> P1[P_1]
+    B2[L2 processes] --> P2[P_2]
+    B3[L3 procedures] --> P3[P_3]
+    B4[L4 inputs] --> P4[P_4]
+    B5[L5 sourcing] --> P5[P_5]
+    P0 --> V0[L0 verdict]
+    P1 --> V1[L1 verdict]
+    P2 --> V2[L2 verdict]
+    P3 --> V3[L3 verdict]
+    P4 --> V4[L4 verdict]
+    P5 --> V5[L5 verdict]
+  end
+```
+
+**Table 1:** Information-loss contrast: rank-1 audit vs. full-rank cascade.
 
 |                      | rank-1 audit (P_audit)        | full-rank cascade (P_cascade)  |
 |----------------------|-------------------------------|--------------------------------|
@@ -84,6 +115,20 @@ Tushman and Nadler's (1978) information-processing framework for organizational 
 This information-processing perspective has a long lineage in organization science. Simon's (1962) analysis of the architecture of complexity established that hierarchical decomposition is the organizational response to bounded information-processing capacity: nearly decomposable systems can be verified layer-by-layer precisely because inter-layer coupling is weak relative to intra-layer coupling. Lawrence and Lorsch (1967) extended this to show that differentiation across sub-units is the structural mechanism by which organizations distribute information-processing demands — each differentiated unit processes a narrower slice of environmental variety, reducing the bandwidth required at each node. Ocasio's (1997) attention-based view of the firm establishes that organizations selectively attend to the issues and answers that their procedural and communication channels make salient — which is precisely the projection operation: attention routes processing resources toward the dimensions with the highest current residual, not uniformly across all dimensions. The multi-level cascade in OST instantiates this principle: each cascade level processes the verification demands relevant to its specification layer, rather than requiring any single unit to process the full-rank projection simultaneously.
 
 The bridge from Tushman and Nadler (1978) to the present algebra is precise: an organization's verification bandwidth determines the rank of the projection it can apply. A verification process with bandwidth β can maintain projection rank at most β; a higher-rank cascade requires bandwidth proportional to its rank. This is the organizational-economics grounding for why full-rank cascades are more resource-intensive than rank-1 audits, and why institutions under cost pressure tend toward the degenerate projection. Simon's (1962) hierarchical decomposition principle and Lawrence and Lorsch's (1967) differentiation framework together identify the organizational design levers for reducing full-rank verification cost: modularization — breaking the cascade into nearly decomposable sub-cascades — and differentiation — assigning verification of each cascade level to a specialized unit with bandwidth matched to that level's projection rank.
+
+***Three Lineages, One Projection Identity***
+
+Cybernetics, behavioral organization theory, and software engineering each name a distinct organizational object as the locus of acceptance. Each lineage describes the projection identity in its own vocabulary — variety attenuation, aspiration adjustment, test pass — and each has historically stopped short of the algebraic identification offered here. Table 2 summarizes the convergence and the gap.
+
+**Table 2:** Three convergent lineages on the projection identity.
+
+| Lineage                          | Object that instantiates the projection                  | What the lineage names                                          | What the lineage misses                                              |
+|----------------------------------|----------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
+| Cybernetics (Beer 1972, 1984; Espejo and Reyes 2011) | Variety attenuator at each VSM recursion level | Bandwidth match between controller and controlled system        | Algebraic rank of the attenuator and the rank-1 vs. full-rank distinction |
+| Behavioral org theory (March and Simon 1958; Cyert and March 1963; Argyris and Schön 1978) | Aspiration-level adjustment and double-loop revision   | Single- vs. double-loop learning as governing-variable change   | Eigenspace structure that distinguishes state correction from basis change |
+| Software engineering (Beck 2002; Boehm 1981; Boehm and Turner 2004) | Acceptance test against an invariant test-passing subspace | Red-green-refactor convergence and early-detection economics    | Rank inequality between single-target compliance and multi-level cascade  |
+
+*Notes*: Each lineage is internally consistent and empirically productive within its own domain. The present paper's contribution is the cross-domain identification: the variety attenuator, the aspiration projection, and the acceptance test are the same algebraic object — an idempotent self-adjoint projection whose rank determines the dimensional resolution of the verification process. Conant and Ashby's (1970) regulator theorem is the closest structural predecessor in adjacent form.
 
 ---
 
@@ -378,7 +423,7 @@ Information loss is measured as the norm of undetected deviation: ‖d − P(d)�
 
 ***Simulation Results***
 
-**Table 1: Undetected Deviation by Projection Architecture and Noise Level.**
+**Table 3: Undetected Deviation by Projection Architecture and Noise Level.**
 
 | Noise (sigma) | Total Dev. | Rank-1 Audit Missed | Full-Rank Cascade Missed | % Missed (Audit) |
 |---------------|------------|---------------------|--------------------------|------------------|
@@ -393,8 +438,8 @@ Information loss is measured as the norm of undetected deviation: ‖d − P(d)�
 
 Under isotropic Gaussian noise, rank-1 audit detects exactly 1/6 (16.7%) of total deviation variance, leaving 5/6 (83.3%) structurally invisible. The simulated miss rate of approximately 90% (slightly above the theoretical 83.3% for squared norms, because we report norm rather than squared norm) is consistent across all noise levels tested, confirming that this is a geometric property of the rank-1 architecture, not a function of noise level. Full-rank cascade miss rate is exactly 0% by construction: the cascade independently projects each of the 6 specification dimensions and detects any deviation in any dimension.
 
-The simulation confirms Proposition 1's analytic result and provides Figure 1's empirical anchors: for sigma = 1.0, rank-1 audit mean undetected deviation = 2.12; full-rank cascade = .00.
+The simulation confirms Proposition 1's analytic result and provides the empirical anchors reported in Table 1: for sigma = 1.0, rank-1 audit mean undetected deviation = 2.12; full-rank cascade = .00.
 
 ***Companion Computation Script***
 
-All numerics reported in Figure 1 and this appendix are fully reproducible from the companion computation script published at <https://github.com/spectralbranding/orgschema-papers/tree/main/verification-as-operator/code/>. The script `projection_simulation.py` uses NumPy with fixed random seed 42 (`np.random.seed(42)`), 1,000 trials per noise level, and 6-dimensional isotropic Gaussian state vectors. Run command: `uv run --with numpy python3 projection_simulation.py`. Full numeric outputs for all four noise levels are saved to `simulation_results.json` in the same directory. No additional dependencies are required beyond NumPy.
+All numerics reported in Table 1 and this appendix are fully reproducible from the companion computation script published at <https://github.com/spectralbranding/orgschema-papers/tree/main/verification-as-operator/code/>. The script `projection_simulation.py` uses NumPy with fixed random seed 42 (`np.random.seed(42)`), 1,000 trials per noise level, and 6-dimensional isotropic Gaussian state vectors. Run command: `uv run --with numpy python3 projection_simulation.py`. Full numeric outputs for all four noise levels are saved to `simulation_results.json` in the same directory. No additional dependencies are required beyond NumPy.
