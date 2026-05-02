@@ -13,9 +13,9 @@ metadata:
       corresponding: true
   citation_key: "2026ag"
   doi: "10.5281/zenodo.19895813"
-  date: "2026-04-29"
-  version: "1.0.0"
-  status: published
+  date: "2026-05-02"
+  version: "1.1.0-pre"
+  status: preprint
   license: "CC-BY-4.0"
   keywords:
     - mergers and acquisitions

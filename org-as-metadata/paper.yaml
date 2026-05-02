@@ -13,8 +13,8 @@ metadata:
       corresponding: true
   citation_key: "2026af"
   doi: "10.5281/zenodo.19869871"
-  date: "2026-04-29"
-  version: "1.0.0"
+  date: "2026-05-02"
+  version: "1.1.0-pre"
   status: preprint
   license: "CC-BY-4.0"
   keywords:
