@@ -4,7 +4,7 @@
 
 DOI: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
 
-Working Paper v1.0.0 -- April 2026
+Working Paper v1.1.0-pre -- May 2026 (v1.0.0 published on Zenodo 2026-04-30; this revision pending v1.1.0 re-upload)
 
 ---
 

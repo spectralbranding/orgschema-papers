@@ -60,6 +60,60 @@ provenance:
         Citable working paper. Target venue Strategic Management Journal
         or Journal of Marketing.
 
+    - version: "1.1.0-pre"
+      date: "2026-05-02"
+      title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+      description: >
+        Phase 3 corpus audit batch 3.9 fix-pass + Grok r1 review +
+        Grok-deferred title/abstract/intro/conclusion rewrites applied.
+        Audit fix-pass: 13 must-fix + 21 should-fix items resolved
+        (Yakimova 2021 fabricated DOI replaced with Joseph et al. 2021
+        JBR; McAlister 2023 6-author list corrected; Nguyen 2018 author
+        names corrected; field-level corrections to Ebbes 2025 / Umashankar
+        2022 / Sridhar 2016 / Whitler 2025; 4 author-pre-flagged DOI tags
+        stripped after confirmation; Peng 2023 vol/issue/pages added;
+        Title-page DOI placeholder replaced; Table 3 forward-ref phrasing;
+        Hatch & Schultz 2003 dedicated paragraph at §3.1; Aaker-
+        Joachimsthaler 2000 paragraph at §2.1; Keller 1993 + Kapferer
+        2012 + Barney 1991 + SSF 1998 + Aaker 1991 + Eisenhardt-Graebner
+        2007 + Joseph et al. 2021 + Merz et al. 2009 + Vargo-Lusch 2004
+        + Zharnikov 2026af added; SDL paragraph; Boundary Conditions
+        subsection; Disconfirming Cases subsection; P5 mechanism +
+        P4 threshold; numbered contributions block in §1).
+        Grok r1 applied: 7 strategy citations added (Baldwin & Clark 2000;
+        Rivkin & Siggelkow 2003 MS 49(3):290-311; Jacobides-Cennamo-Gawer
+        2018 SMJ 39(8):2255-2276; Teece-Pisano-Shuen 1997 SMJ 18(7):509-533;
+        Fauchart & Gruber 2011 AMJ 54(5):935-957; Snihur & Tarziján 2018
+        LRP 51(1):50-63 — DOI confirmed by user); modularity / dynamic
+        capabilities / ecosystem paragraphs in Discussion; Table 2
+        strategy-construct column; SBT abbreviation defined at first use.
+        User-verified citation corrections: Snihur & Tarziján 2018 DOI
+        10.1016/j.lrp.2017.06.010 confirmed (flag stripped);
+        "Strebinger & Treiblmaier 2018" was a fabricated citation —
+        replaced with Strebinger 2004 ACR 31:656-661 (the original BASE
+        multi-axis taxonomy) plus Åsberg & Uggla 2019 JBM 26(5):483-496
+        DOI 10.1057/s41262-018-00147-1 (the actual paper at that DOI;
+        CIMA multi-dimensional architecture extension); Simon 1962 PAPS
+        106(6):467-482 added to bibliography (referenced in Table 2
+        Strategy column).
+        Grok-deferred rewrites applied: title→"Brand as a Modular Layer:
+        Tiered Organizational Architecture, Separability, and Firm
+        Performance in Multi-Brand Strategies" (Grok Option 1; SMJ-aligned;
+        eliminates author-specific tier jargon); abstract→200w with
+        firm-heterogeneity opening; introduction with three rhetorical
+        questions plus strategy-theory bridges (Baldwin-Clark, Teece,
+        Jacobides, Barney, Srivastava, Eisenhardt-Graebner); conclusion
+        opens "Brand binds at Tier 4 only." with dual modularity / DC
+        framing plus Snihur-Tarziján engagement. Venue committed: SMJ.
+        Final metrics: ~13,355 words / ~80 references / 5 tables / 1
+        Mermaid figure. Self-cite 6/80=7.5%. QC PASS.
+      outcome: >
+        Pending v1.1.0 Zenodo re-upload (will receive new v1.1 DOI; the
+        existing v1.0.0 record at concept DOI 10.5281/zenodo.19930157 / v1
+        DOI 10.5281/zenodo.19930158 dated 2026-04-30 stays as the prior
+        version). PDF regeneration via export/PDF_GENERATION.md pipeline
+        required. Word-cut to ~9K body for SMJ submission DEFERRED to user.
+
   forks: []
 
   spin_offs_logged: []

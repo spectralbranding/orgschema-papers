@@ -1,14 +1,14 @@
-# Brand as Tier-4 Projection
+# Brand as a Modular Layer
 
-**Title**: Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture
+**Title**: Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies
 
 **Author**: Dmitry Zharnikov ([ORCID 0009-0000-6893-9231](https://orcid.org/0009-0000-6893-9231))
 
 **Citation key**: 2026ah
 
-**Status**: Working paper v1.0.0 published on Zenodo 2026-04-30. Five-prompt hardened deep-research saturation completed; parallel review-paper + review-literature passes completed (PASS WITH MINOR REVISIONS, both); consolidated fix-pass applied. Target venue: Strategic Management Journal or Journal of Marketing.
+**Status**: Working paper v1.1.0-pre (2026-05-02). v1.0.0 published on Zenodo 2026-04-30 under the prior title "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture." Phase 3 audit + Grok r1 review + title/abstract/intro/conclusion rewrites applied; user-verified DOI corrections applied (Snihur & Tarziján 2018 LRP confirmed; Strebinger & Treiblmaier 2018 fabricated → replaced with Strebinger 2004 ACR + Åsberg & Uggla 2019 JBM); Simon 1962 added to bibliography. Target venue committed: Strategic Management Journal. Pending v1.1.0 Zenodo re-upload.
 
-**DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (v1)
+**DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (v1, 2026-04-30) | v1.1 DOI pending re-upload
 
 ## What this paper does
 
@@ -24,7 +24,7 @@ Three downstream phenomena unify under this single structural identity: (1) mult
 
 ## Files
 
-- `paper.md` — full paper (~9,287 words body; 60 references; 4 tables; 1 Mermaid figure; 8 sections)
+- `paper.md` — full paper (~13,355 words body post-audit + rewrites; ~80 references; 5 tables; 1 Mermaid figure; 8 sections)
 - `paper.yaml` — paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
 - `CITATION.cff` — citation file (CITATION File Format 1.2.0)
 - `CONTRIBUTORS.yaml` — verified contributor attribution
@@ -48,5 +48,5 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19930157.
+Zharnikov, Dmitry (2026), "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies," Working Paper v1.1.0-pre, Zenodo, doi:10.5281/zenodo.19930157.
 ```
