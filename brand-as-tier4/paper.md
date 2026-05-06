@@ -4,7 +4,7 @@
 
 DOI: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
 
-Working Paper v1.1.0-pre -- May 2026 (v1.0.0 published on Zenodo 2026-04-30; this revision pending v1.1.0 re-upload)
+Working Paper v1.1.0 -- May 2026
 
 ---
 
@@ -63,6 +63,8 @@ The brand-extension literature converges on a fit-times-parent-quality model (Aa
 ### *The six-tier business architecture*
 
 The structural foundation for this paper is the six-tier ontology of Zharnikov (2026ag) (concept DOI 10.5281/zenodo.19895813). Tier 1 (Owner Intent, governed by owner psyche / board / charter) sits at the top of the constraint hierarchy. Tier 2 (Business Model, governed by market reality plus owner choice) translates Tier-1 intent into a viable economic structure. Tier 3 (Business Entity, governed by law and regulator) supplies the legal substrate. Tier 4 (Product, governed by customer or beneficiary acceptance) is the customer-facing instance. Tier 5 (Process, governed by management) and Tier 6 (Organization, governed by people and culture) supply the operational and human substrate. Zharnikov (2026ag) develops this ontology for acquisition-target transferability and proves seven falsifiable propositions about which tiers transfer cleanly across acquisition events. The current paper extends the same ontology to brand and the three downstream phenomena.
+
+The six-tier substrate is not static: generative artificial intelligence introduces a specific class of pressures on the organizational layers that support brand specification. Baygi and Huysman (2025) identify three sociotechnical characteristics of GenAI use in the workplace — multipurpose usability, unpredictable plausibility, and hyper-personalizability — and show that under a laissez-faire scenario these characteristics reroute the flows of expertise, trust, and collegiality that constitute the social fabric of organizations, while under a cultivation scenario organizations deliberately weave GenAI into existing work pathways in ways that strengthen rather than erode that fabric. For the tier framework, this distinction maps onto whether GenAI is absorbed at the brand-agnostic Tier-6 shared-services layer — where it can amplify multi-brand capacity by scaling analytics and media-buying without touching Tier-4 specifications — or whether it is left to drift across tier boundaries in ways that compromise the Tier-5 and Tier-6 substrate the specification depends on.
 
 ### *SBT eight-dimension specification*
 
@@ -494,6 +496,8 @@ Bennedsen, Morten; Nielsen, Kasper Meisner; Pérez-González, Francisco; Wolfenz
 
 Barney, Jay B. (1991). Firm resources and sustained competitive advantage. Journal of Management 17(1):99–120. https://doi.org/10.1177/014920639101700108
 
+Baygi, Reza M.; Huysman, Marleen (2025). Generative AI and the social fabric of organizations. Strategic Organization. https://doi.org/10.1177/14761270251385456
+
 Boyd, D. Eric; Chandy, Rajesh K.; Cunha, Marcus, Jr. (2010). When do chief marketing officers affect firm value? A customer power explanation. Journal of Marketing Research 47(6):1162–1176. https://doi.org/10.1509/jmkr.47.6.1162
 
 Daly, Aidan; Moloney, Deirdre (2004). Managing corporate rebranding. Irish Marketing Review 17(1/2):30–36.
@@ -616,13 +620,13 @@ Webster, Frederick E., Jr. (1992). The changing role of marketing in the corpora
 
 Webster, Frederick E., Jr. (1997). The future role of marketing in the organization. In Donald R. Lehmann and Katherine E. Jocz, eds., Reflections on the futures of marketing, Marketing Science Institute, pp. 39–66.
 
-Whitler, Kimberly A.; Rego, Lopo L.; Morgan, Neil A. (2025). Chief marketing officer role design. Journal of the Academy of Marketing Science, online first. https://doi.org/10.1007/s11747-025-01104-6
+Whitler, Kimberly A.; Rego, Lopo L.; Morgan, Neil A. (2025). Chief marketing officer role design: A taxonomy and analysis of role-firm alignment. Journal of the Academy of Marketing Science, online first. https://doi.org/10.1007/s11747-025-01104-6
 
 Wiles, Michael A.; Morgan, Neil A.; Rego, Lopo L. (2012). The effect of brand acquisition and disposal on stock returns. Journal of Marketing 76(1):38–58. https://doi.org/10.1509/jm.09.0567
 
 Joseph, Abraham; Gupta, Suraksha; Wang, YiChuan; Schoefer, Klaus (2021). Corporate rebranding: An internal perspective. Journal of Business Research 130:709–723. https://doi.org/10.1016/j.jbusres.2020.04.020
 
-Yorkston, Eric A.; Nunes, Joseph C.; Matta, Shashi (2010). The malleable brand: The role of implicit theories in evaluating brand extensions. Journal of Marketing 74(1):80–93. https://doi.org/10.1509/jmkg.74.1.80
+Yorkston, Eric A.; Nunes, Joseph C.; Matta, Shashi (2010). The malleable brand: The role of implicit theories in evaluating brand extensions. Journal of Marketing 74(1):80–93. https://doi.org/10.1509/jmkg.74.1.080
 
 Yu, Jungju (2021). A model of brand architecture choice: A house of brands vs. branded house. Marketing Science 40(1):147–167. https://doi.org/10.1287/mksc.2020.1245
 
