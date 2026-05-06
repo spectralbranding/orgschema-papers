@@ -1,0 +1,30 @@
+# PROVENANCE.yaml -- The Tier-Rotation Curve
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+  repository: "spectralbranding/orgschema-papers/tier-rotation"
+
+  versions:
+    - version: "1.0.0-pre"
+      date: "2026-05-06"
+      title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+      description: >
+        First complete draft. Companion paper extending the Tier-Rotation
+        Valuation Dynamics subsection in Zharnikov (2026ah) into a continuous
+        formal model. Pure-deductive theory paper. The model formalizes brand
+        signal accumulation as a logistic process governed by knowledge-
+        externalization effort, sector substitutability, and a separability
+        threshold above which brand assets become acquirable independent of
+        the originating principal. Five falsifiable propositions; four
+        illustrative boundary objects (Yeezy/Adidas, Casamigos/Diageo,
+        Tom Ford/Estée Lauder, Kongō Gumi). Closest prior theoretical
+        purchase: Fournier and Eckhardt (2019) two-bodied brand. AMA citation
+        format throughout.
+      outcome: "Working paper v1.0.0; Zenodo upload pending. Target venue: AMR primary; SMJ + Org Sci alternates."
+
+  submissions: []
+
+  forks: []
+
+  spin_offs_logged: []

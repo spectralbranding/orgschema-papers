@@ -12,6 +12,17 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
 | [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.0.0 on Zenodo 2026-04-29 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
 | [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Preprint v1.0.0 on Zenodo 2026-04-30 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
+| [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | ~545 lines | 44 | Working paper v1.0.0, May 2026 — DOI pending |
+
+### The Tier-Rotation Curve (Zharnikov 2026ai)
+
+Formalizes brand-substrate decoupling as a continuous, logistic-form model governing how brand signal migrates from a founder-bound substrate (Tier 1) to an institutionally separable product-brand substrate (Tier 4) through deliberate knowledge-externalization effort over time. M&A value at exit is derived as a piecewise function of Tier-4 share at deal time, with a separability threshold above which brand assets become acquirable independently of the originating principal. Extends the Tier-Rotation Valuation Dynamics subsection of Zharnikov (2026ah) into a complete continuous model. Five falsifiable propositions; four illustrative boundary objects (Yeezy/Adidas, Casamigos/Diageo, Tom Ford/Estée Lauder, Kongō Gumi).
+
+**Keywords**: brand assets, founder exit, intangible-asset separability, M&A valuation, organizational architecture, resource separability, tier rotation
+
+- [Read on GitHub](tier-rotation/paper.md)
+- DOI pending Zenodo upload
+- Target venue: Academy of Management Review (primary); Strategic Management Journal + Organization Science (alternates)
 
 ### Brand as Tier-4 Projection (Zharnikov 2026ah)
 

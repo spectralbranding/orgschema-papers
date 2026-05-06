@@ -1,0 +1,80 @@
+# paper.yaml -- The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry
+# Citation key: 2026ai. Concept DOI pending Zenodo upload; v1 DOI pending.
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026ai"
+  doi: "PENDING"   # Concept DOI minted at Zenodo upload
+  date: "2026-05-06"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-NC-ND-4.0"
+  keywords:
+    - brand assets
+    - founder exit
+    - intangible-asset separability
+    - M&A valuation
+    - organizational architecture
+    - resource separability
+    - tier rotation
+
+abstract: >
+  When founders exit branded firms, deal outcomes diverge sharply even among
+  principals of comparable quality and brand strength. This paper attributes
+  that variation to the proportion of brand conviction (the factual beliefs
+  observers hold about the brand's performance claims, distinct from evaluative
+  attitude) that has been externalized from the founder's personal judgment into
+  organizational routines, guidelines, decision rights, and trademarks that an
+  acquirer can own independently. Brand signal is modeled as accumulating in an
+  organizational substrate according to a logistic trajectory whose rate is
+  governed by sustained knowledge-externalization effort, a cold-start offset,
+  and sector substitutability. Acquirer willingness-to-pay is a piecewise
+  function of organizational-brand share featuring a separability threshold (the
+  threshold above which brand assets become acquirable independent of the
+  originating principal): below the threshold, founder-flight risk produces
+  discounts and earnout structures; above it, the brand commands a premium
+  increasing with sector substitutability. The model yields three contributions.
+  First, it derives a non-monotonic value geometry with a discontinuous slope at
+  the separability threshold — generating within-founder longitudinal predictions
+  unavailable to cross-sectional human-capital or succession-discount theories,
+  and constituting a sharp empirical wedge against them. Second, it grounds the
+  accumulation process in Nonaka and Takeuchi's (1995) SECI externalization
+  mechanism and identifies four observable proxies — shifts in 10-K language,
+  advertising allocation, media salience, and trademark composition — that allow
+  empirical distinction from quality-based accounts. Third, it endogenizes the
+  RBV's assumption of differential resource mobility for brand assets, extending
+  the dynamic capabilities tradition (Teece, Pisano, and Shuen 1997; Eisenhardt
+  and Martin 2000) by specifying the mechanism, threshold, and sector moderator
+  that determine when initially sticky brand resources become separable. The
+  theory is illustrated with four boundary objects and yields five falsifiable
+  propositions.
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
+  claims, propositions, and interpretations are the author's sole
+  responsibility.
+
+dependencies:
+  - citation_key: "2026a"
+    doi: "10.5281/zenodo.18945912"
+    role: "Eight-dimension specification basis for Tier-4: the SBT framework (Semiotic, Narrative, Ideological, Experiential, Social, Economic, Cultural, Temporal) provides the worked-example dimensional basis for the Tier-4 product specification layer in this paper."
+  - citation_key: "2026ag"
+    doi: "10.5281/zenodo.19895813"
+    role: "FOUNDATION: the six-tier ontology this paper extends. Tier-Rotation Curve formalizes the substrate-conversion process between Tier-1 (founder-bound) and Tier-4 (organizationally codified) over time, using the six-tier architecture of Zharnikov (2026ag) as its structural scaffold."
+  - citation_key: "2026ah"
+    doi: "10.5281/zenodo.19930157"
+    role: "DIRECT PRIOR ART: Brand-as-Tier-4 Projection establishes that brand identity binds at Tier 4. The present paper extends the Tier-Rotation Valuation Dynamics subsection in Zharnikov (2026ah) into a continuous formal model with a logistic accumulation equation, a piecewise M&A value function, and five falsifiable propositions."
+
+target_venue:
+  primary: "Academy of Management Review"
+  secondary: "Strategic Management Journal"
+  tertiary: "Organization Science"
