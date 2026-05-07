@@ -74,6 +74,8 @@ The generative mechanism by which Tier-1 brand signal becomes Tier-4 brand signa
 
 Nonaka, Toyama, and Konno (2000) elaborate this mechanism through the concept of Ba — the shared context space in which knowledge conversion occurs. For brand rotation, Ba is the organizational context in which founder decisions become team decisions: the design studio review that the founder once ran alone, converted into a criteria-based review protocol the team can run; the hiring judgment the founder once made by instinct, converted into a formal creative-role specification. Grant (1996) grounds this at the firm level: organizational routines are the primary vehicle by which tacit knowledge is integrated and made firm-level rather than person-level. For brand rotation, routines are the Tier-4 carriers of formerly Tier-1 brand signal. Mawdsley and Somaya (2016) develop an integrative conceptual framework distinguishing human capital from relational capital as the two channels through which mobile individuals transfer organizational impact; tier rotation is the dual problem — when the originating individual does not move but the brand asset does, the same human-versus-relational distinction maps onto Tier-1 (founder-bound tacit) versus Tier-4 (organizational-codified) substrates, with the separability kink κ marking the threshold at which relational capital has been sufficiently codified to sustain independent transfer.
 
+A moderator on rotation effort intensity (e) deserves explicit naming. Fauchart and Gruber (2011) show that founders self-categorize into distinct identity types — Darwinian (profit-driven), Communitarian (community-focused), and Missionary (cause-oriented) — and that these identity types predict opportunity selection and venture choices that pure economic optimization does not. The same mechanism operates on rotation effort: founders whose self-concept is bound to a personal-creative-vision identity (the body natural as the brand's essential signal carrier) face a higher psychic cost of externalization than founders whose self-concept is bound to an institution-building identity (the body politic as the legitimate inheritor of the founder's contribution). The rotation-effort parameter e is therefore not exogenous to the founder; the founder's identity type is one of its principal antecedents, and a complete empirical specification of the rotation curve must condition rotation rate on founder-identity type as a covariate.
+
 The logistic accumulation equation in the next section is the mathematical encoding of this mechanism. Four observable intermediate markers of rotation progress derive from the mechanism and are specified in Proposition P5 (Table 3): declining founder-language salience in 10-K filings (Externalization → explicit brand documentation); shifting marketing-spend allocation from founder-attribute to product-attribute advertising (Combination → systematic product-brand investment); declining founder-media share of total brand impressions (Internalization → team-driven brand communication); and trademark-portfolio migration from founder-name marks to product-attribute marks (Combination → formal IP codification).
 
 *Decoupling: Substantive Versus Symbolic*
@@ -98,7 +100,7 @@ Three parameters govern the dynamics of s over time:
 
 - **κ** (separability kink): the threshold value of s above which the Tier-4 layer is acquirable as a freestanding asset and below which the buyer must structure around founder-flight risk. κ is determined by the sector's information environment and buyer market structure; it is treated as a structural parameter of the competitive context, not a choice variable of the focal firm.
 
-- **σ** (sector substitutability): the degree to which buyers in the relevant product-market space can substitute one seller's brand specification for another's. σ scales with the sector's credence-goods structure: in credence-goods sectors — luxury, gastronomy, bespoke professional services — observers cannot verify quality independently of the principal's reputation (Darby and Karni 1973; Spence 1973), which means σ is high and the value of a separable Tier-4 specification is greater because the alternative (starting from zero) requires accumulating an entirely new trust signal from scratch. In search-goods sectors (Nelson 1970) — commodity consumer products, standardized B2B inputs — σ is low: specification substitution is feasible at modest cost, and the premium for a separable brand substrate is correspondingly compressed. In credence-goods sectors, consumers additionally resist algorithmic or non-human substitutes (Longoni, Bonezzi, and Morewedge 2019), further amplifying the value of a human-origin brand specification that has successfully migrated to an organizational substrate.
+- **σ** (sector substitutability): the degree to which buyers in the relevant product-market space can substitute one seller's brand specification for another's. σ scales with the sector's credence-goods structure: in credence-goods sectors — luxury, gastronomy, bespoke professional services — observers cannot verify quality independently of the principal's reputation (Darby and Karni 1973; Spence 1973), which means σ is high and the value of a separable Tier-4 specification is greater because the alternative (starting from zero) requires accumulating an entirely new trust signal from scratch. In search-goods sectors (Nelson 1970) — commodity consumer products, standardized B2B inputs — σ is low: specification substitution is feasible at modest cost, and the premium for a separable brand substrate is correspondingly compressed. In credence-goods sectors, consumers additionally resist algorithmic or non-human substitutes (Longoni, Bonezzi, and Morewedge 2019), further amplifying the value of a human-origin brand specification that has successfully migrated to an organizational substrate. Erdem and Keane (1996) and Erdem, Keane, and Sun (2008) establish the empirical foundation for σ in marketing-science: consumers update brand quality beliefs over time through advertising and price signals, and the speed of that updating sets the cost of substituting away from an established brand specification — the higher the substitution cost, the higher σ for the rotation-curve premium calculation.
 
 An additional parameter φ > 0 is the substrate cold-start offset, which serves two purposes. As a mathematical necessity, φ prevents s = 0 from being an absorbing state when e = 0; without it, a firm that has made no rotation investment has no pathway to begin accumulating Tier-4 signal. As an empirical interpretation, φ represents the minimal Tier-4 substrate inherent in corporate form itself — the registered trademark, the corporate identity on packaging, the legal entity as a separate acquisition vehicle. φ therefore connects directly to the Sub-Stage 0 boundary condition: a sole proprietor or unincorporated entity operating without a separate corporate vehicle has φ ≈ 0, recovering the absorbing-zero limit case. The cold-start transition — from Sub-Stage 0 to Stage 1 — requires first establishing a separate legal vehicle, which is a substrate transition rather than a rotation transition within the model's domain. The model treats the founder-principal as continuously occupying the Tier-1 substrate position; succession events at time t* in which a new principal P_new replaces P_old are outside the present formal scope and are addressed in the Discussion (see "Succession as a Distinct Geometric Event").
 
@@ -490,11 +492,11 @@ Adner, Ron. (2017). Ecosystem as structure: An actionable construct for strategy
 
 Anderson, Ronald C., and David M. Reeb. (2003). Founding-family ownership and firm performance: Evidence from the S&P 500. *Journal of Finance*, 58(3), 1301–1328. DOI: 10.1111/1540-6261.00567.
 
-Baldwin, Carliss Y., and Kim B. Clark. (2000). *Design Rules: The Power of Modularity*. MIT Press.
+Baldwin, Carliss Y., and Kim B. Clark. (2000). *Design Rules: The Power of Modularity*. MIT Press. DOI: 10.7551/mitpress/2366.001.0001.
 
 Barney, Jay B. (1991). Firm resources and sustained competitive advantage. *Journal of Management*, 17(1), 99–120. DOI: 10.1177/014920639101700108.
 
-Belo, Frederico, Vito D. Gala, Juliana Salomao, and Maria Ana Vitorino. (2022). Decomposing firm value. *Journal of Financial Economics*, 143(2), 619–639. DOI: 10.1016/j.jfineco.2021.08.010.
+Belo, Frederico, Vito D. Gala, Juliana Salomao, and Maria Ana Vitorino. (2022). Decomposing firm value. *Journal of Financial Economics*, 143(2), 619–639. DOI: 10.1016/j.jfineco.2021.08.007.
 
 Belo, Frederico, Xiaoji Lin, and Maria Ana Vitorino. (2014). Brand capital and firm value. *Review of Economic Dynamics*, 17(1), 150–169. DOI: 10.1016/j.red.2013.05.001.
 
@@ -504,9 +506,9 @@ Bromley, Patricia, and Walter W. Powell. (2012). From smoke and mirrors to walki
 
 Chen, Guoli, Sterling Huang, Philipp Meyer-Doyle, and Denisa Mindruta. (2021). Generalist versus specialist CEOs and acquisitions: Two-sided matching and the impact of CEO characteristics on firm outcomes. *Strategic Management Journal*, 42(6), 1184–1214. DOI: 10.1002/smj.3258.
 
-Crilly, Donal, Morten T. Hansen, and Maurizio Zollo. (2016). The grammar of decoupling: A cognitive-linguistic perspective on firms' sustainability claims and stakeholders' interpretations. *Academy of Management Journal*, 59(2), 705–729. DOI: 10.5465/amj.2014.0171.
+Crilly, Donal, Morten T. Hansen, and Maurizio Zollo. (2016). The grammar of decoupling: A cognitive-linguistic perspective on firms' sustainability claims and stakeholders' interpretations. *Academy of Management Journal*, 59(2), 705–729. DOI: 10.5465/amj.2015.0171.
 
-Custódio, Cláudia, Miguel A. Ferreira, and Pedro Matos. (2019). Do general managerial skills spur innovation? *Management Science*, 65(2), 459–476. DOI: 10.1287/mnsc.2017.2828.
+Custódio, Cláudia, Miguel A. Ferreira, and Pedro Matos. (2017). Do general managerial skills spur innovation? *Management Science*, 65(2), 459–476. DOI: 10.1287/mnsc.2017.2828.
 
 Darby, Michael R., and Edi Karni. (1973). Free competition and the optimal amount of fraud. *Journal of Law and Economics*, 16(1), 67–88. DOI: 10.1086/466756.
 
@@ -514,7 +516,7 @@ Dierickx, Ingemar, and Karel Cool. (1989). Asset stock accumulation and sustaina
 
 Dixit, Avinash K., and Robert S. Pindyck. (1994). *Investment Under Uncertainty*. Princeton University Press. ISBN: 978-0691034102.
 
-Eisenhardt, Kathleen M., and Jeffrey A. Martin. (2000). Dynamic capabilities: What are they? *Strategic Management Journal*, 21(10–11), 1105–1121. DOI: 10.1002/smj.133.
+Eisenhardt, Kathleen M., and Jeffrey A. Martin. (2000). Dynamic capabilities: What are they? *Strategic Management Journal*, 21(10–11), 1105–1121. https://doi.org/10.1002/1097-0266(200010/11)21:10/11%3C1105::AID-SMJ133%3E3.0.CO;2-E
 
 Erdem, Tülin, and Michael P. Keane. (1996). Decision-making under uncertainty: Capturing dynamic brand choice processes in turbulent consumer goods markets. *Marketing Science*, 15(1), 1–20. DOI: 10.1287/mksc.15.1.1.
 
@@ -550,15 +552,15 @@ Mizik, Natalie, and Robert Jacobson. (2009). Valuing branded businesses. *Journa
 
 Nelson, Philip. (1970). Information and consumer behavior. *Journal of Political Economy*, 78(2), 311–329. DOI: 10.1086/259630.
 
-Nonaka, Ikujiro, and Hirotaka Takeuchi. (1995). *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*. Oxford University Press.
+Nonaka, Ikujiro, and Hirotaka Takeuchi. (1995). *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*. Oxford University Press. ISBN: 0195092694.
 
-Nonaka, Ikujiro, Ryoko Toyama, and Noboru Konno. (2000). SECI, Ba and leadership: A unified model of dynamic knowledge creation. *Long Range Planning*, 33(1), 5–34. DOI: 10.1016/S0024-6301(99)00115-6.
+Nonaka, Ikujiro, Ryoko Toyama, and Noboru Konno. (2000). SECI, Ba and leadership: A unified model of dynamic knowledge creation. *Long Range Planning: International Journal of Strategic Management*, 33(1), 5–34. DOI: 10.1016/S0024-6301(99)00115-6.
 
 Peteraf, Margaret A. (1993). The cornerstones of competitive advantage: A resource-based view. *Strategic Management Journal*, 14(3), 179–191. DOI: 10.1002/smj.4250140303.
 
 Pérez-González, Francisco. (2006). Inherited control and firm performance. *American Economic Review*, 96(5), 1559–1588. DOI: 10.1257/aer.96.5.1559.
 
-Priem, Richard L., and John E. Butler. (2001). Is the resource-based "view" a useful perspective for strategic management research? *Academy of Management Review*, 26(1), 22–40. DOI: 10.5465/amr.2001.4011928.
+Priem, Richard L., and John E. Butler. (2001). Is the resource-based "view" a useful perspective for strategic management research? *Academy of Management Review*, 26(1), 22–40. DOI: 10.2307/259392.
 
 Rivkin, Jan W., and Nicolaj Siggelkow. (2003). Balancing search and stability: Interdependencies among elements of organizational design. *Management Science*, 49(3), 290–311. DOI: 10.1287/mnsc.49.3.290.12740.
 
@@ -568,13 +570,13 @@ Spence, A. Michael. (1973). Job market signaling. *Quarterly Journal of Economic
 
 Stahl, Günter K., and Andreas Voigt. (2008). Do cultural differences matter in mergers and acquisitions? A tentative model and examination. *Organization Science*, 19(1), 160–176. DOI: 10.1287/orsc.1070.0270.
 
-Teece, David J., Gary Pisano, and Amy Shuen. (1997). Dynamic capabilities and strategic management. *Strategic Management Journal*, 18(7), 509–533. DOI: 10.1002/smj.4250180612.
+Teece, David J., Gary Pisano, and Amy Shuen. (1997). Dynamic capabilities and strategic management. *Strategic Management Journal*, 18(7), 509–533. http://www.jstor.org/stable/3088148.
 
 Villalonga, Belén, and Raphael Amit. (2006). How do family ownership, control and management affect firm value? *Journal of Financial Economics*, 80(2), 385–417. DOI: 10.1016/j.jfineco.2004.12.005.
 
 Wernerfelt, Birger. (1984). A resource-based view of the firm. *Strategic Management Journal*, 5(2), 171–180. DOI: 10.1002/smj.4250050207.
 
-Zharnikov, Dmitry. (2026a). Spectral brand theory: A multi-dimensional framework for brand perception analysis. Working Paper. https://doi.org/10.5281/zenodo.18945912
+Zharnikov, Dmitry. (2026a). Spectral brand theory: A computational framework for multi-dimensional brand perception. Working Paper. https://doi.org/10.5281/zenodo.18945912
 
 Zharnikov, Dmitry. (2026ag). Dual hierarchies of organizational transferability: A six-tier ontology and theory of acquisition failure propagation. Working Paper. https://doi.org/10.5281/zenodo.19895813
 
