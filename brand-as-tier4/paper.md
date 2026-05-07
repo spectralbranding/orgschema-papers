@@ -125,7 +125,7 @@ Second, the Tier-5 / Tier-6 split between brand-agnostic and brand-bound functio
 
 The per-tier decomposition is visualized below in Figure 1.
 
-**Figure 1: Tier-Level Brand-Agnostic vs Brand-Bound Decomposition.**
+**Figure 1. Tier-Level Brand-Agnostic vs Brand-Bound Decomposition.**
 
 ``` {.mermaid width=35%}
 graph TD
@@ -334,6 +334,12 @@ The framework re-specifies the marketing centralization-versus-decentralization 
 
 *Falsifying criteria.* No effect of partition alignment on effectiveness.
 
+### *Marketing budget as flow component of the firm's substrate-accumulation portfolio*
+
+The cross-brand Tier-6 framing of marketing is not only an organizational-design claim; it is a capital-allocation claim. Marketing, advertising, and PR budgets allocated to Tier-6 functions are structurally flow consumption rather than stock accumulation (Dierickx and Cool 1989): output is generated during the spend period and decays when spending stops, while substrate accumulation in the underlying Tier-4 specification is minimal. Investment in Tier-3, Tier-4, and Tier-5 substrate — capability development, process documentation, codified brand guidelines, IP registration — builds firm-level stock: output compounds and persists when investment slows, and the accumulated substrate retains M&A transfer value.
+
+Two firms with identical aggregate spend allocated differently across this Tier-6/below-Tier-6 axis face structurally different EBIT-persistence profiles and structurally different M&A transfer multiples. Brand assets at Tier-4 accumulate through the operation of Tier-6 marketing functions but are themselves stocks; the marketing function is the conduit, the brand specifications are the residue. This is not merely a theoretical distinction: Mizik and Jacobson (2003) document that firms face a trade-off between value creation (building brand-capital stock) and value appropriation (harvesting returns from current spend), and that the stock market rewards firms that manage this trade-off dynamically over time. Mizik and Jacobson (2009) show further that brand-capital stock — measured independently of current marketing spend — explains incremental variance in firm valuation multiples beyond accounting variables alone, confirming that the Tier-4 residue retains value independently of the Tier-6 flow that created it. The portfolio framing of marketing as a Tier-6 function thus carries a direct implication for capital allocation: marketing budgets are the flow component of the firm's substrate-accumulation portfolio, and misallocating them entirely to Tier-6 spend at the expense of Tier-4 codification degrades the long-run M&A transfer multiple even when current-period revenues are maintained.
+
 ---
 
 ## Discussion and Validation Roadmap
@@ -502,6 +508,8 @@ Boyd, D. Eric; Chandy, Rajesh K.; Cunha, Marcus, Jr. (2010). When do chief marke
 
 Daly, Aidan; Moloney, Deirdre (2004). Managing corporate rebranding. Irish Marketing Review 17(1/2):30–36.
 
+Dierickx, Ingemar; Cool, Karel (1989). Asset stock accumulation and sustainability of competitive advantage. Management Science 35(12):1504–1511. https://doi.org/10.1287/mnsc.35.12.1504
+
 Fauchart, Emmanuelle; Gruber, Marc (2011). Darwinians, communitarians, and missionaries: The role of founder identity in entrepreneurship. Academy of Management Journal 54(5):935–957. https://doi.org/10.5465/amj.2009.0211
 
 Deng, Qing (Christine); Messinger, Paul R. (2022). Dimensions of brand-extension fit. International Journal of Research in Marketing 39(3):764–787. https://doi.org/10.1016/j.ijresmar.2021.09.013
@@ -549,6 +557,10 @@ Merrilees, Bill; Miller, Dale (2008). Principles of corporate rebranding. Europe
 Merz, Michael A.; He, Yi; Vargo, Stephen L. (2009). The evolving brand logic: A service-dominant logic perspective. Journal of the Academy of Marketing Science 37(3):328–344. https://doi.org/10.1007/s11747-009-0143-3
 
 Miller, Dale; Merrilees, Bill; Yakimova, Raisa (2014). Corporate rebranding: An integrative review of major enablers and barriers to the rebranding process. International Journal of Management Reviews 16(3):265–289. https://doi.org/10.1111/ijmr.12020
+
+Mizik, Natalie; Jacobson, Robert (2003). Trading off between value creation and value appropriation: The financial implications of shifts in strategic emphasis. Journal of Marketing 67(1):63–76. https://doi.org/10.1509/jmkg.67.1.63.18595
+
+Mizik, Natalie; Jacobson, Robert (2009). Valuing branded businesses. Journal of Marketing 73(6):137–153. https://doi.org/10.1509/jmkg.73.6.137
 
 Monga, Alokparna Basu; John, Deborah Roedder (2007). Cultural differences in brand extension evaluation: The influence of analytic versus holistic thinking. Journal of Consumer Research 33(4):529–536. https://doi.org/10.1086/510227
 

@@ -23,6 +23,31 @@ provenance:
         format throughout.
       outcome: "Working paper v1.0.0; Zenodo upload pending. Target venue: AMR primary; SMJ + Org Sci alternates."
 
+    - version: "1.0.0-pre-zenodo-update-2026-05-07"
+      date: "2026-05-07"
+      title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+      description: >
+        Pre-Zenodo update: §6.6 added distinguishing succession (Tier-1 occupant
+        replacement) from M&A exit (Tier-1 removal). §3.1 footnote scoping caveat
+        added.
+      outcome: "Working paper v1.0.0; Zenodo upload pending."
+
+    - version: "1.0.0-pre-zenodo §6.7 tier-allocation subsection added"
+      date: "2026-05-06"
+      title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+      description: >
+        Pre-Zenodo update: §6.7 "Tier-Allocation of Capital as a Distinct
+        Decision Margin" added to the Discussion. Distinguishes the temporal
+        rotation question (Tier-1/Tier-4 share evolution) from the spatial
+        tier-allocation question (where investment is deployed across the six
+        tiers in any given period). Establishes Tier-6 spend as flow
+        consumption (Dierickx and Cool 1989) vs. Tier-2–5 investment as stock
+        accumulation. Introduces tier-allocation portfolio formalism
+        w = (w1,...,w6) as a formal extension left to future work. Adds
+        Mizik and Jacobson (2003 JM; 2009 JM) as empirical signature of
+        stock-vs-flow tier-allocation effects. Two new reference list entries.
+      outcome: "Working paper v1.0.0; Zenodo upload pending."
+
   submissions: []
 
   forks: []

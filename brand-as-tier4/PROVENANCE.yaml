@@ -90,6 +90,23 @@ provenance:
         Pending Zenodo re-upload as v1.1.0. PDF regeneration required.
         Word-count optimization for SMJ word limit deferred to user.
 
+    - version: "1.1.0 flow-vs-stock paragraph added to Marketing section"
+      date: "2026-05-06"
+      title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+      description: >
+        Internal pre-Zenodo edit (absorbed into v1.1.0 before upload). New
+        subsection "Marketing budget as flow component of the firm's
+        substrate-accumulation portfolio" added to Marketing, Advertising,
+        and Branding as Cross-Brand Tier-6 Functions section (~200 words).
+        Establishes Tier-6 spend as flow consumption vs. Tier-4 codification
+        as stock accumulation (Dierickx and Cool 1989). Sourced from Tier-
+        Rotation R-paper (2026ai) §6.7 development. Adds Mizik and Jacobson
+        (2003 JM; 2009 JM) as empirical anchor. Three new reference list
+        entries (Dierickx-Cool + two Mizik-Jacobson).
+      outcome: >
+        Incorporated into v1.1.0 pre-upload revision set. Zenodo upload
+        pending alongside other v1.1.0 changes.
+
   forks: []
 
   spin_offs_logged: []
