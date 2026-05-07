@@ -16,7 +16,7 @@ metadata:
   date: "2026-05-07"
   version: "1.0.0"
   status: preprint
-  license: "CC-BY-NC-ND-4.0"
+  license: "CC-BY-4.0"
   keywords:
     - brand assets
     - founder exit
@@ -25,36 +25,42 @@ metadata:
     - organizational architecture
     - resource separability
     - tier rotation
+    - knowledge externalization
+    - SECI mechanism
+    - dynamic capabilities
 
 abstract: >
-  When founders exit branded firms, deal outcomes diverge sharply even among
-  principals of comparable quality and brand strength. This paper attributes
-  that variation to the proportion of brand conviction (the factual beliefs
-  observers hold about the brand's performance claims, distinct from evaluative
-  attitude) that has been externalized from the founder's personal judgment into
-  organizational routines, guidelines, decision rights, and trademarks that an
-  acquirer can own independently. Brand signal is modeled as accumulating in an
-  organizational substrate according to a logistic trajectory whose rate is
-  governed by sustained knowledge-externalization effort, a cold-start offset,
-  and sector substitutability. Acquirer willingness-to-pay is a piecewise
-  function of organizational-brand share featuring a separability threshold (the
+  When founders exit branded firms, deal outcomes diverge sharply even
+  among principals of comparable quality and brand strength. This paper
+  attributes that variation to the proportion of brand conviction (the
+  factual beliefs observers hold about the brand's performance claims,
+  distinct from evaluative attitude) that has been externalized from the
+  founder's personal judgment into organizational routines, guidelines,
+  decision rights, and trademarks that an acquirer can own independently.
+  Brand signal is modeled as accumulating in an organizational substrate
+  according to a logistic trajectory whose rate is governed by sustained
+  knowledge-externalization effort, a cold-start offset, and sector
+  substitutability. Acquirer willingness-to-pay is a piecewise function of
+  organizational-brand share featuring a separability threshold (the
   threshold above which brand assets become acquirable independent of the
-  originating principal): below the threshold, founder-flight risk produces
-  discounts and earnout structures; above it, the brand commands a premium
-  increasing with sector substitutability. The model yields three contributions.
-  First, it derives a non-monotonic value geometry with a discontinuous slope at
-  the separability threshold — generating within-founder longitudinal predictions
-  unavailable to cross-sectional human-capital or succession-discount theories,
-  and constituting a sharp empirical wedge against them. Second, it grounds the
-  accumulation process in Nonaka and Takeuchi's (1995) SECI externalization
-  mechanism and identifies four observable proxies — shifts in 10-K language,
-  advertising allocation, media salience, and trademark composition — that allow
-  empirical distinction from quality-based accounts. Third, it endogenizes the
-  RBV's assumption of differential resource mobility for brand assets, extending
-  the dynamic capabilities tradition (Teece, Pisano, and Shuen 1997; Eisenhardt
-  and Martin 2000) by specifying the mechanism, threshold, and sector moderator
-  that determine when initially sticky brand resources become separable. The
-  theory is illustrated with four boundary objects and yields five falsifiable
+  originating principal): below the threshold, founder-flight risk
+  produces discounts and earnout structures; above it, the brand commands
+  a premium increasing with sector substitutability. The model yields
+  three contributions. First, it derives a non-monotonic value geometry
+  with a discontinuous slope at the separability threshold — generating
+  within-founder longitudinal predictions unavailable to cross-sectional
+  human-capital or succession-discount theories, and constituting a sharp
+  empirical wedge against them. Second, it grounds the accumulation
+  process in Nonaka and Takeuchi's (1995) SECI externalization mechanism
+  and identifies four observable proxies — shifts in 10-K language,
+  advertising allocation, media salience, and trademark composition —
+  that allow empirical distinction from quality-based accounts. Third, it
+  endogenizes the RBV's assumption of differential resource mobility for
+  brand assets, extending the dynamic capabilities tradition (Teece,
+  Pisano, and Shuen 1997; Eisenhardt and Martin 2000) by specifying the
+  mechanism, threshold, and sector moderator that determine when
+  initially sticky brand resources become separable. The theory is
+  illustrated with four boundary objects and yields five falsifiable
   propositions.
 
 ai_disclosure: >
@@ -66,7 +72,7 @@ ai_disclosure: >
 dependencies:
   - citation_key: "2026a"
     doi: "10.5281/zenodo.18945912"
-    role: "Eight-dimension specification basis for Tier-4: the SBT framework (Semiotic, Narrative, Ideological, Experiential, Social, Economic, Cultural, Temporal) provides the worked-example dimensional basis for the Tier-4 product specification layer in this paper."
+    role: "Eight-dimension specification basis for Tier-4: the SBT framework (Semiotic, Narrative, Ideological, Experiential, Social, Economic, Cultural, Temporal) provides the worked-example dimensional basis for the Tier-4 product specification layer."
   - citation_key: "2026ag"
     doi: "10.5281/zenodo.19895813"
     role: "FOUNDATION: the six-tier ontology this paper extends. Tier-Rotation Curve formalizes the substrate-conversion process between Tier-1 (founder-bound) and Tier-4 (organizationally codified) over time, using the six-tier architecture of Zharnikov (2026ag) as its structural scaffold."
@@ -74,6 +80,99 @@ dependencies:
     doi: "10.5281/zenodo.19930157"
     role: "DIRECT PRIOR ART: Brand-as-Tier-4 Projection establishes that brand identity binds at Tier 4. The present paper extends the Tier-Rotation Valuation Dynamics subsection in Zharnikov (2026ah) into a continuous formal model with a logistic accumulation equation, a piecewise M&A value function, and five falsifiable propositions."
 
+propositions:
+  - id: "P1"
+    name: "Non-Monotonicity of M&A Value"
+    statement: >
+      V(s) is non-monotonic in s: for s < κ, each increment of Tier-4
+      share compresses the acquirer discount at a lower marginal rate than
+      the marginal rate at which each increment above κ generates acquirer
+      premium. The slope of V(s) is discontinuous at s = κ; deals where
+      s < κ at close trade at negative optionality relative to standalone
+      operating value; deals where s > κ trade at positive premium.
+    falsification: >
+      P1 is falsified if V(s) is monotonic in s, or if no slope
+      discontinuity is observed at any threshold value of s in a sample of
+      M&A deals coded for Tier-4 share.
+  - id: "P2"
+    name: "Within-Founder Longitudinal Divergence"
+    statement: >
+      For a founder of fixed quality, M&A multiple at exit varies with s
+      at deal time. A founder who exits before crossing κ commands a
+      multiple below V_0; the same founder exiting after crossing κ
+      commands a multiple above V_0. Within-founder variation in multiple
+      is predicted by tier rotation but not by human-capital quality
+      accounts, which predict no multiple variation for a fixed-quality
+      founder across exit timing.
+    falsification: >
+      P2 is falsified if within-founder longitudinal variation in M&A
+      multiple is statistically independent of rotation-proxy score after
+      controlling for human-capital characteristics.
+  - id: "P3"
+    name: "Sector-Substitutability Moderation"
+    statement: >
+      The premium V(s)/V_0 for s > κ is higher in credence-goods sectors
+      (Darby and Karni 1973) than in search-goods sectors (Nelson 1970).
+      In credence-goods sectors, separable Tier-4 brand specification is
+      more valuable because rebuilding brand trust from a new
+      specification is costly and slow.
+    falsification: >
+      P3 is falsified if sector classification on the search-experience-
+      credence axis fails to moderate the s > κ premium coefficient in
+      a regression of deal premium on rotation-proxy score × sector type.
+  - id: "P4"
+    name: "Post-Deal Goodwill Impairment"
+    statement: >
+      Post-deal goodwill impairment frequency is highest for deals closed
+      at s < κ, specifically in cases where founder-flight risk was priced
+      into deal structure but the founder departed earlier than
+      contracted. Deals below κ systematically overestimate the
+      transferability of brand equity to the acquiring entity.
+    falsification: >
+      P4 is falsified if rotation-proxy score fails to predict goodwill
+      impairment hazard in a Cox proportional hazard model with standard
+      M&A controls.
+  - id: "P5"
+    name: "Knowledge-Externalization Observables"
+    statement: >
+      As a brand progresses from s = s_0 toward s → 1, four firm-level
+      observables shift in coordinated and directionally predictable
+      ways: (1) 10-K founder-language salience declines; (2) marketing-
+      spend allocation shifts from founder-attribute to product-attribute
+      advertising; (3) founder-media share of total brand impressions
+      declines; (4) trademark-portfolio composition shifts from founder-
+      name marks to product-attribute marks.
+    falsification: >
+      P5 is falsified if the four observables fail to load on a single
+      principal component, or if the principal component fails to track
+      M&A-multiple variation in the predicted direction.
+
+artifacts:
+  - type: "table"
+    id: "Table 1"
+    title: "Four Stages of Tier Rotation"
+  - type: "table"
+    id: "Table 2"
+    title: "Comparative Statics Summary"
+  - type: "table"
+    id: "Table 3"
+    title: "P5 Knowledge-Externalization Observables"
+  - type: "table"
+    id: "Table 4"
+    title: "Boundary-Object Coordinates on the Rotation Curve"
+  - type: "table"
+    id: "Table 5"
+    title: "Three Event-Type Distinctions in the Six-Tier Architecture"
+  - type: "figure"
+    id: "Figure 1"
+    title: "Tier-Rotation Curve and the Separability Kink"
+    rendered_via: "mermaid (50% width; narrow to 35% if PDF orphan/blank-page artifact appears)"
+
+self_citation_rate: 0.063  # 3 of 48 references (2026a, 2026ag, 2026ah)
+references_count: 48
+body_word_count: 13350  # Session 132 apparent-vs-structural decoupling expansion (~+400 words; +Crilly, Hansen, Zollo 2016 AMJ) + Erdem-Keane 1996/2008 + Fauchart-Gruber 2011 body integration (~+150 words)
+abstract_word_count: 310
+title_word_count: 16
 target_venue:
   primary: "Academy of Management Review"
   secondary: "Strategic Management Journal"
