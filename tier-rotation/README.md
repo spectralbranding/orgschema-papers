@@ -6,9 +6,9 @@
 
 **Citation key**: 2026ai
 
-**Status**: Working paper v1.0.0 (2026-05-06). Zenodo upload pending; concept DOI + v1 DOI will mint at upload time. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 (2026-05-07). Zenodo upload pending; concept DOI + v1 DOI reserved 2026-05-07. Target venue: Academy of Management Review.
 
-**DOI**: pending Zenodo upload
+**DOI**: [10.5281/zenodo.20069605](https://doi.org/10.5281/zenodo.20069605) (concept) | [10.5281/zenodo.20069606](https://doi.org/10.5281/zenodo.20069606) (v1)
 
 ## What this paper does
 
@@ -40,7 +40,7 @@ The Tier-4 product specification layer uses the SBT eight-dimension framework: [
 
 ## How to cite
 
-Zharnikov, Dmitry. (2026). *The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry*. Working paper. Zenodo. [DOI pending]
+Zharnikov, Dmitry. (2026). *The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry*. Working paper. Zenodo. https://doi.org/10.5281/zenodo.20069605
 
 ## License
 

@@ -48,6 +48,25 @@ provenance:
         stock-vs-flow tier-allocation effects. Two new reference list entries.
       outcome: "Working paper v1.0.0; Zenodo upload pending."
 
+    - version: "1.0.0"
+      date: "2026-05-07"
+      doi: "10.5281/zenodo.20069606"
+      concept_doi: "10.5281/zenodo.20069605"
+      title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
+      description: >
+        Final pre-upload state. Session 132 fix-pass applied: §"Decoupling:
+        Substantive Versus Symbolic" expanded ~280 → ~640 words. Adds Crilly,
+        Hansen, and Zollo (2016) AMJ 59(2):705-729 cognitive-linguistic
+        anchor closing the 2012-stop-date concern. Specifies the diagnostic
+        signature distinguishing apparent rotation (partial movement in any
+        single P5 observable) from structural rotation (coordinated movement
+        across all four P5 observables loading on a single principal
+        component). Establishes that the empirical wedge in P2 is meaningful
+        only against structural rotation. Refs 47 → 48; body word count
+        ~12,812 → ~13,200; self-cite 6.4% → 6.3%. Concept DOI reserved
+        2026-05-07 at 10.5281/zenodo.20069605; v1 DOI 10.5281/zenodo.20069606.
+      outcome: "Working paper v1.0.0 ready for Zenodo upload. Target venue: AMR primary; SMJ + Org Sci alternates."
+
   submissions: []
 
   forks: []

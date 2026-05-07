@@ -12,8 +12,11 @@ date-released: "2026-05-06"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
-    value: "PENDING"
-    description: "Zenodo concept DOI (always resolves to latest version) — pending upload"
+    value: "10.5281/zenodo.20069605"
+    description: "Zenodo concept DOI (always resolves to latest version)"
+  - type: doi
+    value: "10.5281/zenodo.20069606"
+    description: "Zenodo v1 DOI (this version)"
 keywords:
   - brand assets
   - founder exit
@@ -34,4 +37,4 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
   year: 2026
-  doi: "PENDING"
+  doi: "10.5281/zenodo.20069605"

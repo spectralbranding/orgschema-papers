@@ -4,6 +4,8 @@
 
 ORCID: 0009-0000-6893-9231
 
+DOI: [10.5281/zenodo.20069605](https://doi.org/10.5281/zenodo.20069605)
+
 Working Paper v1.0.0 -- May 2026
 
 ---
@@ -421,18 +423,18 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ```mermaid
 quadrantChart
-    title Tier-Rotation Curve M&A Value Geometry
-    x-axis Low Tier-4 Share s --> High Tier-4 Share s
-    y-axis Low M&A Value Ratio V(s)/V0 --> High M&A Value Ratio
+    title Tier-Rotation Curve and MandA Value Geometry
+    x-axis Low Tier-4 Share --> High Tier-4 Share
+    y-axis Low MandA Value Ratio --> High MandA Value Ratio
     quadrant-1 Stage 3 to 4 Positive Premium
     quadrant-2 No Region
     quadrant-3 Stage 1 Negative Optionality
     quadrant-4 Stage 2 Transition Band
-    Yeezy_Adidas: [0.08, 0.25]
-    Casamigos_Diageo: [0.45, 0.55]
-    Tom_Ford_EL: [0.72, 0.78]
-    Kongo_Gumi: [0.92, 0.85]
-    Kink_kappa: [0.50, 0.50]
+    Yeezy Adidas: [0.08, 0.25]
+    Casamigos Diageo: [0.45, 0.55]
+    Tom Ford EL: [0.72, 0.78]
+    Kongo Gumi: [0.92, 0.85]
+    Kink kappa: [0.50, 0.50]
 ```
 
 *Notes*: The horizontal axis represents Tier-4 share s from 0 (pure Tier-1 personal substrate) to 1 (pure Tier-4 institutional substrate). The vertical axis represents the M&A value ratio V(s)/V_0 relative to standalone operating value V_0. The separability kink κ (plotted at s = .50 for illustration; actual κ is sector-specific) divides the negative-optionality region (left, Stage 1 and Stage 2: V(s)/V_0 < 1) from the positive-premium region (right, Stage 3 and Stage 4: V(s)/V_0 > 1). The four illustrative cases are plotted at approximate theoretical stage positions, not at empirically measured s values. The slope of V(s) is discontinuous at κ: the marginal value of an additional increment of Tier-4 share is substantially higher above κ than below it. The quadrant chart is a schematic rendering of the V(s) curve for expository purposes; the formal model specifies h(s, κ, σ) as a piecewise continuous function with continuous level and discontinuous first derivative at κ. Sector substitutability σ varies the steepness of h(s) above κ but not the qualitative non-monotonic geometry; for clarity, a single σ level is depicted.

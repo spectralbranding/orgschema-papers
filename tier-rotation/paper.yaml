@@ -1,5 +1,5 @@
 # paper.yaml -- The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry
-# Citation key: 2026ai. Concept DOI pending Zenodo upload; v1 DOI pending.
+# Citation key: 2026ai. Concept DOI 10.5281/zenodo.20069605; v1 DOI 10.5281/zenodo.20069606.
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
@@ -12,7 +12,7 @@ metadata:
       affiliation: "Independent Researcher"
       corresponding: true
   citation_key: "2026ai"
-  doi: "PENDING"   # Concept DOI minted at Zenodo upload
+  doi: "10.5281/zenodo.20069605"   # Concept DOI reserved 2026-05-07
   date: "2026-05-07"
   version: "1.0.0"
   status: preprint
