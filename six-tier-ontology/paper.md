@@ -184,6 +184,10 @@ In standard for-profit transactions, Tier 1 and Tier 4 are distinct: the owner's
 
 Table 2 does not extend to network and platform businesses, which are a distinct boundary condition the current tier definitions do not fully accommodate. In a platform business, Tier 4 (Product) is a market interface generating value by connecting participants on multiple sides, with acceptance criteria held by two or more participant populations rather than a single customer. Tier 6 (Organization) extends beyond payroll to ecosystem participants — developers, third-party vendors, marketplace sellers — whose participation constitutes the platform's value, whose loyalty is not contractually held in standard employment terms, and whose exit following an acquisition may constitute Tier 6 fragmentation financial due diligence would not detect. Tier 2 sits structurally closer to Tier 4 than in unit-good businesses, because the multi-sided pricing architecture and cross-subsidization logic are not separable from the interface design itself. The full extension of the ontology to platform and network businesses — specifying governors, specification surfaces, and transferability modes under multi-sided conditions — is flagged here as a natural next step; the current propositions and diagnostic apply to platform businesses with modification, not without it.
 
+### *Tier-Allocation of Capital as a Distinct Decision Margin*
+
+The constraint hierarchy implies a second decision margin beyond integration sequencing: the allocation of capital across tiers carries a flow-versus-stock character that varies systematically by tier position. Spend directed at Tier 6 — marketing campaigns, advertising flights, public-relations activity — is predominantly flow consumption: output decays when spending stops, the substrate accumulated by the spend is minimal, and the value transferable in an M&A transaction is correspondingly low. Spend directed at Tiers 2 through 5 — business-model architecture, entity-level governance and financial structure, product specification and codification, process documentation and routine refinement — is predominantly stock accumulation: output compounds, the substrate persists in codified form, and the value transferable in an M&A transaction is correspondingly high. Each tier therefore carries a distinct half-life parameter and substrate-accumulation coefficient. Dierickx and Cool (1989) supply the foundational stock-flow distinction for strategic asset accumulation; Mizik and Jacobson (2003, 2009) provide empirical evidence that marketing-versus-operating-asset allocation maps onto distinct stock-flow profiles with measurable equity-value consequences. The tier-allocation margin has direct implications for integration sequencing — high-stock tiers warrant pre-close codification investment because their substrate is what survives the transaction — and for acquirer due-diligence scope: a target whose capital history concentrates at Tier 6 will exhibit weaker post-close substrate than a target with comparable revenue whose history concentrates at Tiers 2–5, even when Tier 3 financial profiles are matched. The full development of tier-specific half-life and accumulation parameters is reserved for future work; the boundary condition relevant here is that the dual hierarchy classifies tiers by transferability mode, while the allocation margin classifies the same tiers by accumulation profile, and the two classifications align: tiers with higher transferability also carry higher accumulation coefficients.
+
 ### *The Integration Sequencing Principle*
 
 The constraint hierarchy derives a sequencing principle for M&A integration that is formal rather than prescriptive: because upper tiers constrain the admissible configurations of lower tiers, specification clarity at upper tiers is logically prior to integration execution at lower tiers. The sequencing implication is a structural necessity — attempting to finalize lower-tier configurations before upper-tier specifications are resolved is building on a foundation that the constraint hierarchy has not yet established.
@@ -323,6 +327,8 @@ Corley, Kevin G. and Dennis A. Gioia (2011), "Building Theory about Theory Build
 
 Cronqvist, Henrik and Désirée-Jessica Pély (2026), "Why Mergers Fail and How to Spot Trouble Early," *MIT Sloan Management Review*, February 18.
 
+Dierickx, Ingemar and Karel Cool (1989), "Asset Stock Accumulation and Sustainability of Competitive Advantage," *Management Science*, 35 (12), 1504–1511, doi:10.1287/mnsc.35.12.1504.
+
 Dietz, Jan L. G. (2006), *Enterprise Ontology: Theory and Methodology*. Springer.
 
 Du, Tingyu and Ulya Tsolmon (2026), "Post-M&A Retention of Top Managers: The Role of Structural Knowledge," *Organization Science*, Articles in Advance, January 14, doi:10.1287/orsc.2024.18686.
@@ -360,6 +366,10 @@ Lev, Baruch and Feng Gu (2024), *The M&A Failure Trap: Why Most Mergers and Acqu
 Marquis, Christopher and András Tilcsik (2013), "Imprinting: Toward a Multilevel Theory," *Academy of Management Annals*, 7 (1), 195–245.
 
 Mintzberg, Henry (1979), *The Structuring of Organizations: A Synthesis of the Research*. Prentice-Hall.
+
+Mizik, Natalie and Robert Jacobson (2003), "Trading Off Between Value Creation and Value Appropriation: The Financial Implications of Shifts in Strategic Emphasis," *Journal of Marketing*, 67 (1), 63–76, doi:10.1509/jmkg.67.1.63.18595.
+
+Mizik, Natalie and Robert Jacobson (2009), "Valuing Branded Businesses," *Journal of Marketing*, 73 (6), 137–153, doi:10.1509/jmkg.73.6.137.
 
 Osterwalder, Alexander (2004), *The Business Model Ontology: A Proposition in a Design Science Approach*. PhD thesis, Université de Lausanne.
 
