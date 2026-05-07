@@ -300,16 +300,6 @@ For two firms with identical aggregate investment *I* over period *T* but differ
 
 The tier-allocation distinction has a parallel in the marketing-finance literature. Mizik and Jacobson (2003) document that firms face a trade-off between value creation (building brand-capital stock) and value appropriation (harvesting returns from existing stock), and that the stock market rewards firms that manage this trade-off dynamically. Mizik and Jacobson (2009) show that brand-capital stock accumulation — measured independently of current marketing spend — explains incremental variance in firm valuation multiples beyond accounting variables alone. The market's reward for maintaining brand-capital stock during periods of marketing-spend volatility is the empirical signature of stock-versus-flow tier-allocation effects: it demonstrates that Tier-4 substrate value, once accumulated, persists independently of the Tier-6 spend flow that created it. The tier-allocation framework proposed here provides the organizational-layer mechanism that prior marketing-finance models have left implicit. The three event types addressed in this paper's discussion — M&A exit, succession, and tier-allocation — are summarized in Table 5.
 
-**Table 5: Three Event-Type Distinctions in the Six-Tier Architecture.**
-
-| Event type | Tier-1 substrate change | Tier-4 substrate question at decision time | Empirical signature | Decision horizon |
-|---|---|---|---|---|
-| M&A exit (paper's primary focus) | Tier-1 *removed* (founder departs; no replacement) | Has Tier-4 share *s* crossed separability kink κ? | V(s) non-monotonicity at deal close; goodwill impairment if s < κ | Single event at deal time |
-| Succession | Tier-1 *replaced* (founder exits; new principal P_new occupies Tier-1) | Has Tier-5 process knowledge transferred from P_old to P_new? | ~4pp ROA decline (Bennedsen et al. 2007); ~14% operating return decline post-family-CEO succession (Pérez-González 2006) | Multi-decade rotation window plus discrete transfer event |
-| Tier-allocation | Tier-1 unchanged | Where in the six-tier portfolio does new investment land? | Two firms with identical aggregate spend but different tier-allocation w produce structurally different M&A multiples and EBIT-persistence half-lives | Within-period (recurring annual decision) |
-
-*Notes*: M&A exit is the focal event of the formal model developed in this paper. Succession and tier-allocation are distinct decision margins discussed in the preceding two subsections; their formal extension is deferred to future work. The three event types share the same six-tier substrate ontology but invoke geometrically distinct questions at the decision moment.
-
 ---
 
 **Limitations and Validation Roadmap**
@@ -418,6 +408,18 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 | Scope | Cross-sectional; family-firm succession; CEO typology | Within-founder longitudinal; any founder-to-product transition | Scope extension; not contradiction |
 
 *Notes*: The Human-Capital Account row consolidates Bennedsen, Nielsen, Pérez-González, and Wolfenzon (2007); Pérez-González (2006); and Chen, Huang, Meyer-Doyle, and Mindruta (2021). The empirical wedge in the fourth row is the core testable divergence between the two accounts. Both accounts are consistent with the cross-sectional evidence; the tier-rotation account makes additional predictions in the longitudinal case that the human-capital account does not. A within-founder or matched-pair design that finds a significant positive rotation-proxy effect after human-capital controls constitutes evidence for the tier-rotation account; a null result supports the human-capital account. The comparison is not intended to suggest that these literatures are competing in the strong sense — human capital and rotation stage may both predict M&A multiple in a multivariate design, with the rotation-proxy score adding incremental R-squared after human-capital controls.
+
+---
+
+**Table 5: Three Event-Type Distinctions in the Six-Tier Architecture.**
+
+| Event type | Tier-1 substrate change | Tier-4 substrate question at decision time | Empirical signature | Decision horizon |
+|---|---|---|---|---|
+| M&A exit (paper's primary focus) | Tier-1 *removed* (founder departs; no replacement) | Has Tier-4 share *s* crossed separability kink κ? | V(s) non-monotonicity at deal close; goodwill impairment if s < κ | Single event at deal time |
+| Succession | Tier-1 *replaced* (founder exits; new principal P_new occupies Tier-1) | Has Tier-5 process knowledge transferred from P_old to P_new? | ~4pp ROA decline (Bennedsen et al. 2007); ~14% operating return decline post-family-CEO succession (Pérez-González 2006) | Multi-decade rotation window plus discrete transfer event |
+| Tier-allocation | Tier-1 unchanged | Where in the six-tier portfolio does new investment land? | Two firms with identical aggregate spend but different tier-allocation w produce structurally different M&A multiples and EBIT-persistence half-lives | Within-period (recurring annual decision) |
+
+*Notes*: M&A exit is the focal event of the formal model developed in this paper. Succession and tier-allocation are distinct decision margins discussed in the *Succession as a Distinct Geometric Event* and *Tier-Allocation of Capital as a Distinct Decision Margin* subsections of the Discussion respectively; their formal extension is deferred to future work. The three event types share the same six-tier substrate ontology but invoke geometrically distinct questions at the decision moment.
 
 ---
 
