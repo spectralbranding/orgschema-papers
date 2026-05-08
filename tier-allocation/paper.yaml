@@ -12,8 +12,8 @@ metadata:
       affiliation: "Independent Researcher"
       corresponding: true
   citation_key: "2026aj"
-  doi: "10.5281/zenodo.20072288"   # Concept DOI reserved 2026-05-07
-  date: "2026-05-08"
+  doi: "10.5281/zenodo.20072288"   # Concept DOI reserved 2026-05-07; v1.0.0 uploaded 2026-05-07
+  date: "2026-05-07"
   version: "1.0.0"
   status: preprint
   license: "CC-BY-4.0"

@@ -13,7 +13,7 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 | [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
 | [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
 | [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | ~13,200 | 48 | Preprint v1.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20069605) |
-| [Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value](tier-allocation/paper.md) | ~13,000 | 62 | Preprint v1.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20072288) |
+| [Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value](tier-allocation/paper.md) | ~13,000 | 62 | Preprint v1.0.0 on Zenodo 2026-05-07 — [DOI](https://doi.org/10.5281/zenodo.20072288) |
 
 ### The Tier-Rotation Curve (Zharnikov 2026ai)
 
