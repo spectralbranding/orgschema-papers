@@ -1,0 +1,54 @@
+# CONTRIBUTORS.yaml -- AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - writing-original
+      - writing-review
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-05-08"
+
+  - name: "Claude (Anthropic)"
+    type: ai
+    roles:
+      - writing-assistance
+      - review-paper
+      - review-literature
+      - hardened-deep-research
+      - code-implementation
+    contributions: >
+      AI-assisted literature search, full draft expansion and editing, parallel
+      review-paper and review-literature passes, fix-pass application, and
+      implementation of the companion computation script
+      (tier_penetration_simulation.py), including the AI-extended optimal-share
+      solver, CES robustness check at sigma in {.5, 1.0, 1.5}, and
+      comparative-statics verification for Propositions P1-P3. All theoretical
+      arguments, propositions, and analytical claims are the author's own.
+
+  - name: "Grok (xAI)"
+    type: ai
+    roles:
+      - hardened-deep-research
+      - pre-skeleton-review
+      - post-draft-review
+    contributions: >
+      Cross-source verification across the hardened deep-research pass; pre-draft
+      structural review (Phase 1.5) that produced a MEDIUM/R&R_LIKELY verdict and
+      identified three structural gaps addressed before drafting commenced;
+      post-draft review (Grok r2) flagging self-citation density and ontology
+      grounding for Path C Hybrid fix-pass.
+
+  - name: "Gemini (Google)"
+    type: ai
+    roles:
+      - hardened-deep-research
+    contributions: >
+      Cross-source verification across the deep-research pass via Gemini 2.5 Pro
+      with google_search grounding; contributed to Phase-2 literature saturation
+      on AI-and-strategy, IT-complementarity, and dynamic-capabilities streams.

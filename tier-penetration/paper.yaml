@@ -1,0 +1,185 @@
+# paper.yaml -- AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage
+# Citation key: 2026ak. Concept DOI 10.5281/zenodo.20087036; v1 DOI 10.5281/zenodo.20087037.
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026ak"
+  doi: "10.5281/zenodo.20087036"   # Concept DOI reserved 2026-05-08; v1.0.0 uploaded 2026-05-08
+  date: "2026-05-08"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - artificial intelligence
+    - capital allocation
+    - firm architecture
+    - tier durability
+    - M&A multiples
+    - AI strategy
+    - substrate accumulation
+
+abstract: >
+  Why do identical AI investments produce sharply divergent M&A multiples
+  despite comparable short-run productivity gains? Strategy research has
+  examined AI spend, task exposure, and decision augmentation but has left
+  unspecified the architectural tier at which AI-generated output
+  accumulates. We address this omission by extending a multi-tier
+  Jorgensonian capital-allocation model with two AI-specific shocks per
+  tier: a cost shock gamma_t that reduces effective rental prices and a
+  durability shock Delta_t that lowers decay rates for substrate-
+  accumulating tiers. The resulting closed-form share rule decomposes AI's
+  consequences into price and persistence channels. Three core propositions
+  emerge. First, surface-tier (Tier 6) cost reductions raise short-run
+  earnings yet lower long-run M&A multiples by reallocating investment away
+  from durable substrate. Second, a discrete substrate-building threshold
+  exists at Tier 4: only proprietary or strongly embedded deployments
+  generate level shifts in valuation. Third, AI's net value effect flips
+  sign with the principal's effective discount rate --- deep-tier
+  deployments that codify tacit knowledge extend founder horizon and
+  reinforce substrate accumulation, while surface deployments compress
+  horizon and erode it. The complementary AI Tier Penetration Curve traces
+  deployment depth as a dynamic-stage trajectory, reframing competitive
+  advantage in the AI era as architectural penetration rather than
+  investment intensity.
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search, editorial refinement, and implementation of
+  the companion computation script (tier_penetration_simulation.py,
+  including the AI-extended optimal-share solver, CES robustness check
+  across sigma in {.5, 1.0, 1.5}, and comparative-statics verification
+  for Propositions P1-P3); all theoretical claims, propositions,
+  interpretations, and numerical results are the author's sole
+  responsibility, and all script outputs were independently verified
+  against the closed-form derivations in Online Supplement S1.
+
+dependencies:
+  - citation_key: "2026aj"
+    doi: "10.5281/zenodo.20072288"
+    role: "PREDECESSOR: 2026aj supplies the un-extended share rule w_t*(r) = alpha_t / (delta_t + r) and the Cobb-Douglas + Jorgensonian maintained specification that 2026ak generalizes with gamma_t cost shocks and Delta_t durability shocks, yielding the AI-extended rule w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)]. Appendix A.3 of 2026ak re-derives the base model in self-contained form so reviewers can evaluate the generalization without consulting 2026aj."
+  - citation_key: "2026ag"
+    doi: "10.5281/zenodo.19895813"
+    role: "SUPPLEMENTARY: the six-tier ontology and architectural-transferability cut-point criterion are inherited from 2026ag and recapped in self-contained form in Appendix A.1. 2026ag is cited for an extended treatment of the dual-hierarchy structure and acquisition-failure propagation."
+  - citation_key: "2026ai"
+    doi: "10.5281/zenodo.20069605"
+    role: "SUPPLEMENTARY: the Tier-Rotation Curve supplies the temporal-stage dynamic context for the AI Tier Penetration Curve introduced in the Discussion. The two curves are coupled at Tier 4 via the SECI-externalization mechanism."
+
+propositions:
+  - id: "P1"
+    name: "Tier-6 Over-Allocation Paradox"
+    statement: >
+      When AI is concentrated at Tier 6 with gamma_6 in (0, 1) and
+      gamma_t = 1 for t <= 5 and all Delta_t = 0, the optimal dollar-
+      weighted Tier-6 share rises monotonically as gamma_6 falls:
+      d(dollar-share_6*)/d(gamma_6) < 0. Surface-only cost reductions
+      raise short-run earnings while lowering long-run M&A multiples
+      by shifting allocation toward the lowest-persistence tier.
+    falsification: >
+      P1 is falsified if firms with exclusively Tier-6 AI deployment
+      show no negative 36-month forward M&A-multiple shift conditional
+      on a positive contemporaneous EBIT shift, in samples matched on
+      aggregate AI investment intensity.
+  - id: "P2"
+    name: "Substrate-Building Threshold at Tier 4"
+    statement: >
+      When gamma_4 in (0, 1) is paired with Delta_4 > 0 (proprietary
+      fine-tune or owned-weights configuration), the long-run Tier-4
+      stock S_4* exhibits a super-linear response above the Delta_4 = 0
+      threshold: dS_4*/dDelta_4 > 0. The first-positive-Delta_4
+      threshold produces a level shift in M&A multiples rather than a
+      continuous slope shift because substrate accumulation is
+      structurally admissible only above the threshold.
+    falsification: >
+      P2 is falsified if firms crossing the disclosure-coded Delta_4
+      threshold show no level shift in M&A multiples relative to firms
+      remaining at Delta_4 = 0, in samples matched on aggregate AI
+      investment intensity.
+  - id: "P3"
+    name: "Horizon-Conditional Sign Flip"
+    statement: >
+      AI deployment at deep tiers (Tier 4, Tier 2) extends the
+      principal's effective decision horizon (lowers effective r),
+      shifting allocation away from Tier 6 toward substrate tiers and
+      producing positive AI value effects in both short and long run.
+      AI deployment at shallow tiers (Tier 6), compressed by
+      algorithmic-feedback loops and shareholder-quarterly logic, raises
+      effective r, shifting allocation toward Tier 6 and producing
+      negative long-run AI value effects despite positive short-run EBIT.
+      The sign of AI's net value effect flips with sign(dr/d(AI
+      deployment type)), via the inherited d(dollar-share_6*)/dr > 0.
+    falsification: >
+      P3 is falsified if no sign flip in the long-run AI-value effect
+      is observed between long-horizon and short-horizon principals at
+      matched aggregate AI spend, conditional on sigma >= 1 prevailing
+      in the sample's tier-complementarity structure.
+
+artifacts:
+  - type: "table"
+    id: "Table 1"
+    title: "Boundary Objects x Tier of Landing x Shock Pattern x M&A-Multiple Implication"
+  - type: "table"
+    id: "Table 2"
+    title: "Calibrated Parameters for the AI-Extended Model"
+  - type: "table"
+    id: "Table 3"
+    title: "Three Core Propositions with Mechanisms and Diagnostic Indicators"
+  - type: "table"
+    id: "Table 4"
+    title: "Tier-Penetration Framework vs. Existing AI-and-Strategy Literatures"
+  - type: "supplement"
+    id: "Online Supplement S1-S5"
+    title: "Lagrangian derivation, CES robustness, alpha calibration sensitivity, identification strategy, companion-script documentation"
+    file: "supplement.md"
+  - type: "code"
+    id: "tier_penetration_simulation.py"
+    title: "Companion computation script (deterministic; reproduces all numerical values)"
+    file: "code/tier_penetration_simulation.py"
+
+self_citation_rate: 0.103  # 6 self-citations of ~58 references (2026ag, 2026ah, 2026ai, 2026aj, 2026h, 2026v)
+references_count: 58
+body_word_count: 13100
+abstract_word_count: 199
+title_word_count: 11
+target_venue:
+  primary: "Strategic Management Journal"
+  secondary: "Management Information Systems Quarterly"
+  tertiary: "Academy of Management Review"
+
+review_history:
+  - round: "Grok r1 (Phase 1.5 pre-draft)"
+    date: "2026-05-08"
+    verdict: "MEDIUM/R&R_LIKELY"
+  - round: "/review-paper r1"
+    date: "2026-05-08"
+    verdict: "REVISE_FIRST / R&R_LIKELY"
+  - round: "/review-literature r1"
+    date: "2026-05-08"
+    verdict: "ADEQUATE"
+  - round: "Grok r2 (post-Phase-3 draft)"
+    date: "2026-05-08"
+    score: "3/10"
+    verdict: "desk-reject-risk"
+  - round: "User Path C Hybrid fix-pass"
+    date: "2026-05-08"
+    description: "Length 16K->13.1K; self-cite 13.7%->10.3%; ontology grounded in Penrose 1959 + Williamson 1985 + Teece 2007 + Dierickx-Cool 1989 + Pentland-Feldman 2005"
+
+verification:
+  computation_script:
+    path: "code/tier_penetration_simulation.py"
+    deterministic: true
+    reproduces_all_numerical_values: true
+    public_mirror: "tier-penetration/code/tier_penetration_simulation.py"
+    key_anchors:
+      - "S3 Baseline: dollar_share_6*(gamma_6=.8) = .065; B/A = 1.93; paradox_mag = .076"
+      - "S3 Conservative: dollar_share_6*(gamma_6=.8) = .112; B/A = 1.55; paradox_mag = .124"
+      - "S3 Concentrated: dollar_share_6*(gamma_6=.8) = .027; B/A = 2.39; paradox_mag = .033"
+      - "CES B/A at sigma=.5 = 1.22; sigma=1.0 = 1.93; sigma=1.5 = 2.17"
+      - "P3 dollar_share_6*(r=.10) < dollar_share_6*(r=.15) < dollar_share_6*(r=.20) confirmed"

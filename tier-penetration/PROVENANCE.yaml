@@ -1,0 +1,67 @@
+# PROVENANCE.yaml -- AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+  repository: "spectralbranding/orgschema-papers/tier-penetration"
+
+  versions:
+    - version: "0.1.0-thesis"
+      date: "2026-05-08"
+      title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+      description: >
+        Phase-0 thesis lock per the pre-draft Grok review workflow. Cross-engine
+        deep research (Phase 1: 8 queries; Phase 2 Round 1: 14 refs / 10 DOIs;
+        Round 2: 8 Grok-flagged refs; Round 3: Bennedsen and Nonaka). Phase-1.5
+        Grok pre-draft structural review produced a MEDIUM/R&R_LIKELY verdict with
+        three fatal gaps identified and flagged for resolution before drafting:
+        (1) framing relative to Acemoglu-Restrepo task-displacement tradition;
+        (2) ontology grounding in canonical strategy-theory anchors (Penrose 1959,
+        Williamson 1985, Teece 2007, Dierickx-Cool 1989, Pentland-Feldman 2005);
+        (3) self-citation density discipline. HARD GATE closed with user GO.
+      outcome: "Phase-0 thesis locked; pre-draft review MEDIUM/R&R_LIKELY; user GO. Drafting authorized."
+
+    - version: "1.0.0-draft"
+      date: "2026-05-08"
+      title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+      description: >
+        Phase-3 first full draft via five-round drafting process. Approximately
+        13,100 words body; 58 references; 3 propositions P1-P3 (Tier-6 paradox,
+        substrate threshold at Tier 4, horizon-conditional sign flip); 4 tables;
+        Appendix A self-contained re-derivation (A.1 tier ontology, A.2 persistence
+        calibration, A.3 Cobb-Douglas + Jorgensonian base model, A.4 separability
+        axioms, A.5 new vs inherited). Generalized share rule
+        w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)] derived.
+        Post-draft trio: /review-paper r1 REVISE_FIRST / R&R_LIKELY; /review-literature
+        r1 ADEQUATE; Grok r2 3/10 desk-reject-risk. User chose Path C Hybrid:
+        length 16K->13.1K; self-cite 13.7%->10.3%; ontology grounded in five
+        canonical anchors; §3.3 non-AI-baseline paragraph (Hermes / Apple-Jobs /
+        Costco) added.
+      outcome: >
+        Working draft ready for Zenodo upload after Path C Hybrid fix-pass applied.
+
+    - version: "1.0.0"
+      date: "2026-05-08"
+      doi: "10.5281/zenodo.20087036"
+      title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+      description: >
+        Zenodo upload-ready version. Path C Hybrid fix-pass applied: length reduced
+        from approximately 16,000 to approximately 13,100 words; self-citation rate
+        reduced from 13.7% to approximately 10.3%; five canonical strategy-theory
+        anchors fully grounded (Penrose 1959, Williamson 1985, Teece 2007,
+        Dierickx-Cool 1989, Pentland-Feldman 2005); Appendix A self-contained
+        re-derivation confirmed. Companion computation script
+        (tier_penetration_simulation.py) published; S3 reconciled to script outputs
+        at v1.0.0 (four values reconciled). Three propositions P1-P3 with
+        falsification criteria. Online Supplement S1-S5. Target venue: Strategic
+        Management Journal (primary); MISQ and AMR as alternates. References ~58;
+        self-citation rate approximately 10.3% (6 of 58).
+      outcome: >
+        Citable working paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI
+        10.5281/zenodo.20087037. Target venue: Strategic Management Journal.
+
+  submissions: []
+
+  forks: []
+
+  spin_offs_logged: []
