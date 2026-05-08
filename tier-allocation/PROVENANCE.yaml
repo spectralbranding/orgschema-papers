@@ -1,0 +1,63 @@
+# PROVENANCE.yaml -- Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value
+# Fork history and submission records per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+  repository: "spectralbranding/orgschema-papers/tier-allocation"
+
+  versions:
+    - version: "0.1.0-thesis"
+      date: "2026-05-07"
+      title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+      description: >
+        Phase-0 thesis lock per the pre-draft Grok review workflow. Cross-engine
+        deep research across capital allocation, dynamic capabilities, intangible-
+        asset depreciation, and internal-capital-markets streams. Pre-draft
+        structural review produced a MEDIUM/R&R_LIKELY verdict with three fatal
+        gaps identified and addressed: architectural-decomposition framing (§1);
+        formal-model assumptions stated with scope conditions; and a two-tier
+        minimal illustration with full arithmetic and sensitivity analysis. Four
+        verified anchor citations integrated. Thesis document revised to v1.1
+        before drafting commenced.
+      outcome: "Phase-0 thesis locked; pre-draft review REVISE+GO. Drafting authorized."
+
+    - version: "1.0.0-draft"
+      date: "2026-05-07"
+      title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+      description: >
+        First full draft. 13,134 words body / 47 references / 4 propositions /
+        4 tables / Appendix A validation roadmap. Discounted Cobb-Douglas
+        aggregator with Jorgensonian user-cost-of-capital maintained
+        specification. Closed-form optimal-share rule w_t*(r) = alpha_t /
+        (delta_t + r) derived. AMA citation format throughout.
+      outcome: >
+        Working draft ready for post-draft review pipeline.
+
+    - version: "1.0.0"
+      date: "2026-05-08"
+      doi: "10.5281/zenodo.20072288"
+      title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+      description: >
+        Zenodo upload-ready version. Post-draft review pipeline applied: multiple
+        rounds of /review-paper, Grok pre-submission review, /review-literature,
+        and Perplexity citation verification. Mathematical derivations, r-
+        sensitivity analyses, alternative alpha calibrations, and CES robustness
+        (sigma = .5, 1.0, 1.5) moved to Online Supplement. Companion computation
+        script (back_of_envelope.py) published; Figure 1 contour plot published.
+        Cross-tier portfolio formalism with discounted-Cobb-Douglas and
+        Jorgensonian user-cost-of-capital as the maintained specification;
+        closed-form share rule w_t*(r) = alpha_t / (delta_t + r) yields
+        d(w_6*)/dr > 0 from the decay-rate differential sign(delta_6 - delta_S) > 0.
+        Citation verification via Perplexity third-source caught and corrected
+        metadata errors before upload. References 62; body ~12,998 words;
+        self-citation rate 3.2% (2 of 62). Target venue: Strategic Management
+        Journal (primary).
+      outcome: >
+        Citable working paper. Concept DOI 10.5281/zenodo.20072288; v1 DOI
+        10.5281/zenodo.20072289. Target venue: Strategic Management Journal.
+
+  submissions: []
+
+  forks: []
+
+  spin_offs_logged: []

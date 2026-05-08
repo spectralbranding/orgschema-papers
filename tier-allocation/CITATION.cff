@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+version: "1.0.0"
+date-released: "2026-05-08"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20072288"
+    description: "Zenodo concept DOI (always resolves to latest version)"
+  - type: doi
+    value: "10.5281/zenodo.20072289"
+    description: "Zenodo v1 DOI (this version)"
+keywords:
+  - capital allocation
+  - dynamic capabilities
+  - brand capital
+  - goodwill impairment
+  - portfolio choice
+  - organizational architecture
+  - tier allocation
+  - intangible capital
+  - resource orchestration
+  - corporate governance
+license: CC-BY-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+  year: 2026
+  doi: "10.5281/zenodo.20072288"

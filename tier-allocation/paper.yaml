@@ -1,0 +1,186 @@
+# paper.yaml -- Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value
+# Citation key: 2026aj. Concept DOI 10.5281/zenodo.20072288; v1 DOI 10.5281/zenodo.20072289.
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026aj"
+  doi: "10.5281/zenodo.20072288"   # Concept DOI reserved 2026-05-07
+  date: "2026-05-08"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - capital allocation
+    - dynamic capabilities
+    - brand capital
+    - goodwill impairment
+    - portfolio choice
+    - organizational architecture
+    - tier allocation
+    - intangible capital
+    - resource orchestration
+    - corporate governance
+
+abstract: >
+  Why do two firms with identical revenues, margins, and aggregate
+  investment generate exit multiples of 2x versus 9x revenue and divergent
+  post-acquisition performance? Capital allocation theory, dynamic
+  capabilities, and marketing-finance literatures have each left the
+  direction of investment within a business implicit. This paper
+  formalizes the cross-tier allocation problem using a vector w spanning
+  five operating tiers that differ in asset durability. Each tier
+  accumulates stock according to a differential equation with tier-
+  specific decay rates delta_t ranging from .50/year at the organizational
+  surface (Tier 6: advertising, paid media) to .05-.10/year at
+  foundational layers (Tiers 2-3: business-model architecture, legal
+  position). Long-run value is a discounted Cobb-Douglas aggregator
+  incorporating Jorgensonian user costs (delta_t + r) and ownership-
+  separability weights. Optimizing subject to the per-tier rental-rate
+  budget constraint yields the closed-form rule w_t*(r) = alpha_t /
+  (delta_t + r) and the comparative static d(w_6*)/dr > 0: higher
+  discount rates increase optimal allocation to the high-decay surface
+  tier at the expense of durable substrate. Four propositions follow:
+  pre-deal surface-tier intensity predicts post-acquisition goodwill
+  impairment; long-horizon governance lowers equilibrium surface-tier
+  share; cost-of-capital shocks shift allocation predictably; and
+  capability-rotation stage moderates returns to codification investment.
+  The framework supplies a missing architectural mechanism that integrates
+  resource-based, dynamic-capability, and internal-capital-market streams,
+  making investment direction --- not merely intensity --- a consequential
+  strategic choice.
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
+  claims, propositions, and interpretations are the author's sole
+  responsibility.
+
+dependencies:
+  - citation_key: "2026ag"
+    doi: "10.5281/zenodo.19895813"
+    role: "SUPPLEMENTARY: the six-tier ontology that the present paper formalizes for the within-firm capital-allocation problem. Tier definitions are restated in 2026aj's own voice grounded in Penrose 1959, Galbraith 1973, Mintzberg 1979, and Galunic-Eisenhardt 1996; 2026ag is cited only for an extended treatment of the dual-hierarchy structure and acquisition-failure propagation."
+  - citation_key: "2026ai"
+    doi: "10.5281/zenodo.20069605"
+    role: "EMPIRICAL-PROXY-ONLY: the Tier-Rotation Curve supplies the empirical proxy --- a trademark-composition ratio --- used to operationalize Tier-Rotation Stage in the P4 test; the theoretical mechanism of rotation-stage moderation of returns to Tier-4 codification investment is derived locally from the per-tier accumulation model and does not depend on 2026ai for its derivation."
+
+propositions:
+  - id: "P1"
+    name: "Pre-Deal Surface-Tier Intensity Predicts Post-Acquisition Goodwill Impairment"
+    statement: >
+      Pre-deal w_6 share predicts elevated post-acquisition goodwill-
+      impairment hazard. High-w_6 acquisitions face elevated impairment
+      hazard because the acquirer realizes post-deal that what was
+      acquired is a flow conduit rather than an accumulating substrate;
+      goodwill impairment is the accounting recognition of that mismatch.
+    falsification: >
+      P1 is falsified if pre-deal advertising-to-total-investment ratio
+      fails to predict goodwill-impairment hazard in a Cox proportional
+      hazard model with standard M&A controls.
+  - id: "P2"
+    name: "Long-Horizon Governance Lowers Equilibrium Surface-Tier Share"
+    statement: >
+      Firms governed by long-horizon principals (founder-CEOs, family-
+      firm boards, patient-capital LPs with low effective discount rate
+      r_P) exhibit equilibrium w_6 share below otherwise-comparable
+      firms governed by short-tenure agents (high effective r_A). The
+      comparative static d(w_6*)/dr > 0 implies a one-to-one mapping
+      from principal discount rate to optimal surface-tier allocation.
+    falsification: >
+      P2 is falsified if matched-pair comparisons of founder-CEO firms
+      vs professional-CEO firms in the same sector fail to show
+      significantly lower w_6 share for founder-CEO governance after
+      controlling for size, age, and sector-cohort composition.
+  - id: "P3"
+    name: "Cost-of-Capital Shocks Shift Allocation Predictably"
+    statement: >
+      Exogenous shocks to firm-level cost of capital r induce
+      directionally predicted shifts in w_6 share. Under the maintained
+      Cobb-Douglas (sigma = 1) and gross-substitutes (sigma > 1)
+      regimes, d(w_6*)/dr > 0 holds; under sufficiently strong gross
+      complementarity (sigma << 1; documented at sigma = .5 in the
+      Online Supplement S4), the comparative static can reverse.
+    falsification: >
+      P3 is falsified if firm-level cost-of-capital shocks (e.g., post-
+      ZLB monetary tightening, sector-specific risk-premium shifts)
+      fail to predict subsequent shifts in advertising-to-total-
+      investment ratio in a difference-in-differences estimation with
+      sector-by-time fixed effects.
+  - id: "P4"
+    name: "Capability-Rotation Stage Moderates Returns to Codification Investment"
+    statement: >
+      The marginal return to Tier-4 codification investment is moderated
+      by the capability-rotation stage of the focal capability, with
+      higher returns at advanced rotation stages where prior
+      codification has accumulated transferable substrate. The
+      Tier-Rotation Curve (Zharnikov 2026ai) supplies the empirical
+      proxy for capability-rotation stage; the theoretical mechanism is
+      derived locally from the per-tier accumulation model.
+    falsification: >
+      P4 is falsified if cross-sectional regression of post-codification
+      Tier-4 stock returns on rotation-stage proxy (trademark-
+      composition ratio) shows no positive interaction effect with
+      Tier-4 investment intensity.
+
+artifacts:
+  - type: "table"
+    id: "Table 1"
+    title: "Calibrated Tier-Specific Decay Rates (delta_t Vector)"
+  - type: "table"
+    id: "Table 2"
+    title: "CES Robustness Check --- B/A Ratio at r = .15"
+  - type: "table"
+    id: "Table 3"
+    title: "Comparative Statics Summary Across Propositions P1-P4"
+  - type: "table"
+    id: "Table 4"
+    title: "Illustrative Cases --- Firm Profiles and Tier-Allocation Predictions"
+  - type: "figure"
+    id: "Figure 1"
+    title: "Long-run value V_LR(w; r) over the (w_4, w_6) plane at r = .15"
+    rendered_via: "matplotlib viridis colormap; figures/tier_allocation_contour.png at 300 DPI"
+  - type: "supplement"
+    id: "Online Supplement S1-S4"
+    title: "Full Lagrangian derivation, r-sensitivity, alternative alpha calibrations, full CES robustness"
+    file: "supplement.md"
+  - type: "code"
+    id: "back_of_envelope.py"
+    title: "Companion computation script (deterministic; reproduces all numerical values)"
+    file: "code/back_of_envelope.py"
+
+self_citation_rate: 0.032  # 2 of ~62 references (2026ag supplementary; 2026ai empirical-proxy-only)
+references_count: 62
+body_word_count: 12998
+abstract_word_count: 270
+title_word_count: 13
+target_venue:
+  primary: "Strategic Management Journal"
+  secondary: "Academy of Management Review"
+  tertiary: "Organization Science"
+  alternates:
+    - "Administrative Science Quarterly"
+    - "Journal of Management"
+    - "Strategic Entrepreneurship Journal"
+    - "Management Science (strategy/entrepreneurship cluster)"
+
+verification:
+  perplexity_third_source:
+    description: "Citation verification via Perplexity third-source caught and corrected metadata errors before upload."
+    computation_script:
+      path: "code/back_of_envelope.py"
+      deterministic: true
+      reproduces_all_numerical_values: true
+      key_anchors:
+        - "V_LR(Profile A) = .221"
+        - "V_LR(Profile B) = .427"
+        - "V_LR(Profile C) = .380"
+        - "V_LR(B) / V_LR(A) = 1.93x (r-invariant under CRS)"
+        - "Tier-6 dollar-share trajectory: .046 (r=.10) -> .053 (r=.15) -> .058 (r=.20)"
+        - "CES B/A ratios: .5 -> 1.22x; 1.0 -> 1.93x; 1.5 -> 2.17x"

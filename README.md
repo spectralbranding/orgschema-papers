@@ -6,13 +6,14 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 
 | Paper | Words | Refs | Status |
 |-------|-------|------|--------|
-| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper, Mar 2026 |
-| [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper, Apr 2026 |
-| [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Working paper v0.4, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
-| [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
-| [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.0.0 on Zenodo 2026-04-29 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
-| [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Preprint v1.0.0 on Zenodo 2026-04-30 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
-| [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | ~545 lines | 44 | Working paper v1.0.0, May 2026 — DOI pending |
+| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | ~8,300 | 25 | Working paper v1.3.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.18946043) |
+| [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | ~9,200 | 24 | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19555201) |
+| [Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails](verification-as-operator/paper.md) | ~6,100 | 31 | Preprint v1.1.0, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
+| [Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs](org-as-metadata/paper.md) | ~10,300 | 48 | Preprint v1.1.0, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
+| [A Six-Tier Ontology of Acquisition-Target Transferability: Dual Hierarchies and Failure-Propagation Mechanisms](six-tier-ontology/paper.md) | ~12,500 | 53 | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
+| [Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture](brand-as-tier4/paper.md) | ~9,300 | 60 | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
+| [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | ~13,200 | 48 | Preprint v1.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20069605) |
+| [Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value](tier-allocation/paper.md) | ~13,000 | 62 | Preprint v1.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20072288) |
 
 ### The Tier-Rotation Curve (Zharnikov 2026ai)
 
@@ -21,8 +22,18 @@ Formalizes brand-substrate decoupling as a continuous, logistic-form model gover
 **Keywords**: brand assets, founder exit, intangible-asset separability, M&A valuation, organizational architecture, resource separability, tier rotation
 
 - [Read on GitHub](tier-rotation/paper.md)
-- DOI pending Zenodo upload
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.20069605)
 - Target venue: Academy of Management Review (primary); Strategic Management Journal + Organization Science (alternates)
+
+### Where to Invest Within the Firm (Zharnikov 2026aj)
+
+Formalizes the cross-tier capital allocation problem using a vector w spanning five operating tiers that differ in asset durability. Each tier accumulates stock with tier-specific decay rates calibrated from Belo, Lin, and Vitorino (2014), ranging from .50/year at the organizational surface (Tier 6: advertising, paid media) to .05-.10/year at foundational layers (Tiers 2-3). Long-run value is a discounted Cobb-Douglas aggregator with Jorgensonian user costs; optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule w_t*(r) = alpha_t / (delta_t + r) and the comparative static d(w_6*)/dr > 0. Four falsifiable propositions link pre-deal surface-tier intensity, governance horizon, cost-of-capital shocks, and capability-rotation stage to M&A outcomes and capability persistence. Companion computation script and Figure 1 contour plot published alongside the paper.
+
+**Keywords**: capital allocation, dynamic capabilities, brand capital, goodwill impairment, portfolio choice, organizational architecture, tier allocation, intangible capital, resource orchestration, corporate governance
+
+- [Read on GitHub](tier-allocation/paper.md)
+- [Preprint (DOI)](https://doi.org/10.5281/zenodo.20072288)
+- Target venue: Strategic Management Journal (primary); Academy of Management Review and Organization Science (alternates)
 
 ### Brand as Tier-4 Projection (Zharnikov 2026ah)
 
