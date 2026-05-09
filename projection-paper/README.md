@@ -6,7 +6,7 @@
 
 **Citation key**: 2026m
 
-**Status**: Working paper v2.1 (pre-Zenodo). v1 preserved at Zenodo concept DOI [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205). v2.1 concept DOI to be minted at release.
+**Status**: Working paper v2.0.0 (pre-Zenodo). v1 preserved at Zenodo concept DOI [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205). v2.0.0 concept DOI to be minted at release.
 
 **Target venue**: Strategic Management Journal (primary); Academy of Management Review, Organization Science (alternates).
 
@@ -58,7 +58,7 @@ This paper extends:
 
 ## How to cite
 
-Zharnikov, Dmitry. (2026). *The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't*. Working paper v2.1. [DOI to be minted at v2.1 release]. https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper-v2
+Zharnikov, Dmitry. (2026). *The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't*. Working paper v2.0.0. [DOI to be minted at v2.0.0 release]. https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper
 
 For v1 (preserved): Zharnikov, Dmitry. (2026). Working paper v1. Zenodo. https://doi.org/10.5281/zenodo.19145205
 

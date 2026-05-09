@@ -1,16 +1,28 @@
-# The Projection Cascade — §1 + §2 + §3-§5 (Phase 1+§1+§2+§5 Draft)
+# The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
 
-## Abstract
+**Dmitry Zharnikov**
+
+ORCID: 0009-0000-6893-9231
+
+DOI: [v2.0.0 concept DOI to be minted at release; v1 preserved at 10.5281/zenodo.19145205]
+
+Working Paper v2.0.0 -- May 2026
+
+---
+
+**Abstract**
 
 Most strategic reorganizations fail to deliver expected performance gains. We argue this reflects a deeper architectural fact: interventions at the org-chart surface (T_6) achieve effect-sizes geometrically smaller than interventions at deeper tiers, because each deeper tier carries content already compressed in transit to the surface. We formalize this as a six-tier *projection cascade* linking owner intent (T_1), business model (T_2), governance (T_3), architecture (T_4), routines (T_5), and positions (T_6). Each junction is a linear operator Π_{i→i+1} with rank deficiency r_i ≥ 0. A unique cascade equilibrium exists under tier-by-tier Banach contractions (Theorem 1); total information loss is bounded by the sum of local nullities, with equality only when kernels stack independently (Corollary 1). Existing design theories — Galbraith's star, Williamson's governance choice, Mintzberg's configurations, Puranam's microstructure, Burton-Obel-Håkonsson's computational optimization — are recovered as nested restrictions. A formal *position triple* p = (P_p, A_p, R_p) decomposes any T_6 position into perceptual content from T_5, authority from T_3, and role expectation from T_1. The apparatus yields four falsifiable propositions: P1 cascade-distance scaling of intervention efficacy, P2 strict downward propagation of basis rotation under AI deployment, P3 variance amplification with cumulative rank deficiency, and P4 algebraic decoupling at layer junctions.
 
-## Introduction
+**Keywords**: organizational design; projection cascade; cascade equilibrium; information loss; rank deficiency; position formalization; reorganization failure; AI deployment
+
+---
 
 ### *Phenomenon*
 
-The enterprise deployment of generative AI tools in software development constitutes one of the most rapidly documented cases of within-role content reconfiguration in recent occupational history. GitHub Copilot, launched for enterprise in 2023, was deployed across approximately 90 percent of Fortune 100 companies (Satya Nadella, Microsoft Q4 FY2025 earnings call, July 30, 2025; reported in TechCrunch, July 30, 2025, https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/) and reached 1.8 million paid subscribers by mid-2024, growing to 4.7 million by early 2026 — a 75 percent year-over-year increase documented in Microsoft earnings disclosures (Microsoft FY2026 Q2 earnings call, January 2026). The Stack Overflow Annual Developer Survey, administered to tens of thousands of professional developers each year, documents a parallel trajectory at the practitioner level: 44 percent of respondents reported using AI tools in their development process in 2023, rising to 62 percent in 2024 and 84 percent in 2025 (Stack Overflow 2023, 2024, 2025). Deployment is thus not anecdotal; it is aggregate, dateable, and cross-sector.
+The enterprise deployment of generative AI tools in software development constitutes one of the most rapidly documented cases of within-role content reconfiguration in recent occupational history. GitHub Copilot, launched for enterprise in 2023, was deployed across approximately 90 percent of Fortune 100 companies (Satya Nadella, Microsoft Q4 FY2025 earnings call, July 30, 2025; reported in TechCrunch, July 30, 2025, https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/) and reached 1.8 million paid subscribers by mid-2024, growing to 4.7 million by early 2026 — a 75 percent year-over-year increase documented in Microsoft earnings disclosures (Microsoft FY2026 Q2 earnings call, January 28, 2026; https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2). The Stack Overflow Annual Developer Survey, administered to tens of thousands of professional developers each year, documents a parallel trajectory at the practitioner level: 44 percent of respondents reported using AI tools in their development process in 2023, rising to 62 percent in 2024 and 84 percent in 2025 (Stack Overflow 2023, https://survey.stackoverflow.co/2023; Stack Overflow 2024, https://survey.stackoverflow.co/2024; Stack Overflow 2025, https://survey.stackoverflow.co/2025). Deployment is thus not anecdotal; it is aggregate, dateable, and cross-sector.
 
-What these deployment statistics do not show is any corresponding reorganization of formal structure. The U.S. Bureau of Labor Statistics Occupational Employment and Wage Statistics series recorded approximately 1.7 million software developer jobs in 2024, classified under the same occupational codes used before AI-tool deployment began; the 2023–2025 period shows category continuity rather than reclassification (BLS OES 2024). Controlled field evidence corroborates content-shift within stable structure. Brynjolfsson, Li, and Raymond (2025 *Quarterly Journal of Economics* 140(2):889–942, DOI 10.1093/qje/qjae044), studying 5,172 customer-support agents before and after the introduction of an AI conversational assistant, document a 15 percent average productivity gain, with the largest gains accruing to less experienced agents whose task mix shifted toward exception adjudication rather than routine routing — while job titles, authority structures, and reporting lines remained unchanged. Peng, Kalliamvakou, Cihon, and Demirer (arXiv:2302.06590, DOI 10.48550/arXiv.2302.06590, 2023) find that developers using GitHub Copilot completed a representative implementation task 55.8 percent faster, implying reallocation of freed capacity toward review and integration activities rather than any change in role classification.
+What these deployment statistics do not show is any corresponding reorganization of formal structure. The U.S. Bureau of Labor Statistics Occupational Employment and Wage Statistics series recorded approximately 1.7 million software developer jobs in 2024, classified under the same occupational codes used before AI-tool deployment began; the 2023–2025 period shows category continuity rather than reclassification (BLS OES 2024; https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm). Controlled field evidence corroborates content-shift within stable structure. Brynjolfsson, Li, and Raymond (2025 *Quarterly Journal of Economics* 140(2):889–942, DOI 10.1093/qje/qjae044), studying 5,172 customer-support agents before and after the introduction of an AI conversational assistant, document a 15 percent average productivity gain, with the largest gains accruing to less experienced agents whose task mix shifted toward exception adjudication rather than routine routing — while job titles, authority structures, and reporting lines remained unchanged. Peng, Kalliamvakou, Cihon, and Demirer (arXiv:2302.06590, DOI 10.48550/arXiv.2302.06590, 2023) find that developers using GitHub Copilot completed a representative implementation task 55.8 percent faster, implying reallocation of freed capacity toward review and integration activities rather than any change in role classification.
 
 This pattern — observable stability of formal position structure paired with documented reconfiguration of position content — is not unique to AI deployments, but AI deployments make it acute, time-stamped, and cross-referenceable against public data. It also indexes a longstanding empirical regularity in management research: roughly 60 percent of major reorganizations fail to deliver the performance gains on which they were authorized (Barkema and Schijven 2008), and a process-level reframing of strategic change (Kunisch, Bartunek, Mueller, and Huy 2017 *Academy of Management Annals* 11(2):1005–1064) treats this failure rate as evidence that the org-chart surface is not where reorganizations actually operate. The question — *why do reorganizations fail to change behavior despite changing structure?* — has remained open in management theory.
 
@@ -36,7 +48,7 @@ The third is *predictive* (empirical). The apparatus entails four falsifiable pr
 
 ### *Plan of the paper*
 
-§2 reviews the design literature through the cascade lens. §3 develops the cascade apparatus, states Theorem 1 (existence and uniqueness of the cascade equilibrium under tier-by-tier contraction), and derives Corollary 1 (junction-localizable information loss). §4 demonstrates unification: Table 2 recovers the five major design theories as cascade restrictions, and §4.7 supplies the formal definition of the position triple. §5 derives the four falsifiable propositions P1–P4 from the apparatus. §6 supplies an empirical illustration drawing on three public software-engineering datasets covering 2023–2026 (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text); the illustration is a forward-pointer for confirmatory testing rather than a confirmatory test in itself, and full empirical work is left to companion papers. §7 discusses boundary conditions, scope-condition fragility, and implications for strategy implementation in AI-mediated firms.
+§2 reviews the design literature through the cascade lens. §3 develops the cascade apparatus, states Theorem 1 (existence and uniqueness of the cascade equilibrium under tier-by-tier contraction), and derives Corollary 1 (junction-localizable information loss). §4 demonstrates unification: Table 2 recovers the five major design theories as cascade restrictions, and §4.7 supplies the formal definition of the position triple. §5 derives the four falsifiable propositions P1–P4 from the apparatus. The empirical illustration the apparatus invites — drawing on three public software-engineering datasets covering 2023–2026 (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) — is staged as a forward pointer for companion empirical work and is not developed as a self-contained section here; full empirical implementation is left to companion papers. §7 discusses boundary conditions, scope-condition fragility, and implications for strategy implementation in AI-mediated firms.
 
 ## Literature and Theoretical Background
 
@@ -60,7 +72,7 @@ Recent strategic-management work has foregrounded interdependence among design e
 
 The T_5 process tier draws on the routines tradition. Pentland and Feldman (2005) decompose routines into the *ostensive aspect* (the abstract pattern recognized as the routine) and the *performative aspect* (the specific actions taken in execution); this decomposition supplies the basis-rotation construct of §3.1, in which a rotation of the routine's row space within T_5 leaves the ostensive aspect (the kernel structure) fixed while changing the performative aspect (which T_5 directions are read into which T_6 coordinates). Nelson and Winter (1982) treat routines as units of organizational memory and evolutionary inheritance. Cohen and Bacdayan (1994) supply the procedural-memory mechanism for routine encoding. Felin, Foss, and Ployhart (2015) *Academy of Management Annals* supply the contemporary microfoundations framework that grounds the ostensive-performative duality in individual-level capabilities and decision rights — the bridge the cascade exploits in §4.7 when defining the position triple.
 
-The *position* concept itself has been treated unevenly in the design literature. Mintzberg (1979) treats positions as embedded in configurations without a separable definition. Puranam (2018) decomposes positions via the four microstructural primitives but does not formalize the position as a single object that admits inheritance from multiple tiers. Joseph and Sengul (2025) review current organization-design research treating positions as primary objects of design, again without formalizing them. Csaszar (2013) *Organization Science* supplies the bounded-rationality grounding for treating cultural-strategic choice (T_1) as bounded rather than open-ended — an empirical anchor for scope condition (i) in §3.4. The cascade's position triple p = (P_p, A_p, R_p) (§4.7) supplies the formal multi-tier-inheritance decomposition of position that the existing literature has demanded but not delivered: perceptual content P_p inherits from T_5 routines, authority allocation A_p inherits from T_3 governance, and role expectation R_p inherits from T_1 cultural commitments. Recent AMJ evidence grounds the P_p component's response to AI deployment in observable worker-level data. Jia, Luo, Fang, and Liao (2024 *Academy of Management Journal* 67(1):5–32, DOI 10.5465/amj.2022.0426) demonstrate that AI augmentation of employee creativity is sharply skill-contingent: high-skill workers experience amplified creative output under AI assistance while low-skill workers exhibit substitution rather than augmentation, a divergence that scales with the breadth of skill asymmetry within the role. This pattern is the micro-level mechanism underlying P2's strict downward propagation: the basis rotation at Π_{5→6} that AI deployment induces does not uniformly reconfigure all position-content vectors in T_6 but rotates them differentially by skill-level, producing the within-role content heterogeneity that the cascade's basis-rotation formalism captures and that is invisible to frameworks treating T_6 positions as homogeneous. The Jia et al. finding therefore supplies published AMJ evidence for the T_5 → T_6 junction mechanism before the cascade's §5 propositions are stated.
+The *position* concept itself has been treated unevenly in the design literature. Mintzberg (1979) treats positions as embedded in configurations without a separable definition. Puranam (2018) decomposes positions via the four microstructural primitives but does not formalize the position as a single object that admits inheritance from multiple tiers. Joseph and Sengul (2025) review current organization-design research treating positions as primary objects of design, again without formalizing them. Csaszar (2013) *Organization Science* supplies the bounded-rationality grounding for treating cultural-strategic choice (T_1) as bounded rather than open-ended — an empirical anchor for scope condition (i) in §3.4. The cascade's position triple p = (P_p, A_p, R_p) (§4.7) supplies the formal multi-tier-inheritance decomposition of position that the existing literature has demanded but not delivered: perceptual content P_p inherits from T_5 routines, authority allocation A_p inherits from T_3 governance, and role expectation R_p inherits from T_1 cultural commitments. Recent AMJ evidence grounds the P_p component's response to AI deployment in observable worker-level data. Luo, Zhu, Lu, and Zhou (2024 *Academy of Management Journal* 67(1):5–32, DOI 10.5465/amj.2022.0426) demonstrate that AI augmentation of employee creativity is sharply skill-contingent: high-skill workers experience amplified creative output under AI assistance while low-skill workers exhibit substitution rather than augmentation, a divergence that scales with the breadth of skill asymmetry within the role. This pattern is the micro-level mechanism underlying P2's strict downward propagation: the basis rotation at Π_{5→6} that AI deployment induces does not uniformly reconfigure all position-content vectors in T_6 but rotates them differentially by skill-level, producing the within-role content heterogeneity that the cascade's basis-rotation formalism captures and that is invisible to frameworks treating T_6 positions as homogeneous. The Luo et al. (2024) finding therefore supplies published AMJ evidence for the T_5 → T_6 junction mechanism before the cascade's §5 propositions are stated.
 
 ### *Strategy, dynamic capabilities, and AI deployment*
 
@@ -73,6 +85,8 @@ Recent strategic-management work has begun mapping the AI-deployment shock onto 
 The phenomenon §1 named — reorganization failure rate of approximately 60% — is empirically robust. Barkema and Schijven (2008) supply the meta-analytic estimate of post-merger integration outcomes that grounds the headline figure. Kunisch, Bartunek, Mueller, and Huy (2017) *Academy of Management Annals* supply the process-level reframing of strategic change that treats reorganization as a temporal process with identifiable discontinuities rather than as an instantaneous switch from one structural configuration to another. Bloom, Brynjolfsson, Foster, Jarmin, Patnaik, Saporta-Eksten, and Van Reenen (2019) *American Economic Review* establish that management-practice differences across firms explain a substantial share of cross-firm productivity variance — the empirical antecedent to P3's variance-amplification prediction (§5).
 
 The cascade frames these regularities as endogenous to its rank-deficiency structure rather than as exogenous facts requiring separate explanation. The 60% failure rate is what the rank-cascade information bound r_total ≤ Σ r_i (§3, Corollary 1) predicts when reorganizations are typically targeted at T_6 (the org-chart surface) without addressing the upstream rank-deficiency contributions r_1 through r_5. The cross-firm variance-of-management-practice that Bloom and colleagues document is the cumulative effect of distinct rank deficiencies at each junction, scaling with cascade distance as the parameter-Lipschitz constants L_i compound through the cascade.
+
+A complementary tradition treats reorganization failure as an execution-and-coordination problem rather than an architectural one (Hrebiniak 2006 *Organizational Dynamics* 35(1):12–31). On the execution view, the structural design itself is sound but post-decision implementation — communication, incentive alignment, coordination across units — degrades the intended effect; failure is a property of the implementation pipeline rather than of the design's architecture. The cascade does not displace this tradition; it locates it. Execution-and-coordination failures populate the rank deficiency r_5 at the Π_{5→6} junction (routines fail to translate into coordinated position-level activity) and a portion of r_3 at Π_{3→4} (governance fails to translate into coordinated architectural specification). What the cascade adds is the upstream contributions r_1, r_2, r_4, and the parametric Lipschitz product L_1 · L_2 · L_3 · L_4 / Π(1 − κ_i) that bounds total transmission magnitude — components the execution view treats as exogenous design parameters. Reorganization failure on the cascade view is therefore the sum of execution-coordination loss at the surface junctions and architectural-misalignment loss at the deeper junctions; the empirical separation of the two contributions is a forward-pointer for the dynamic-cascade extension noted in §7.5.
 
 ### *Synthesis and gap*
 
@@ -90,7 +104,7 @@ Let T_1, T_2, T_3, T_4, T_5, T_6 denote six finite-dimensional real vector space
 
 Between adjacent tiers we posit a linear operator
 
-	Π_{i→i+1}: T_i → T_{i+1}, i ∈ {1, 2, 3, 4, 5},
+	Π_{i→i+1}: T_i → T_{i+1},  i ∈ {1, 2, 3, 4, 5},
 
 with rank deficiency
 
@@ -112,28 +126,28 @@ Each Π_{i→i+1} carries a paired feedback operator A_{i+1→i}: T_{i+1} → T_
 
 ```mermaid
 flowchart TB
- T1["T_1<br/>owner intent<br/>B_1"]
- T2["T_2<br/>business model<br/>B_2"]
- T3["T_3<br/>legal entity<br/>B_3"]
- T4["T_4<br/>product architecture<br/>B_4"]
- T5["T_5<br/>process routines<br/>B_5"]
- T6["T_6<br/>position role<br/>B_6"]
- PI["composite Pi<br/>T_1 to T_6"]
- T1 -->|"Pi 1 to 2"| T2
- T2 -->|"Pi 2 to 3"| T3
- T3 -->|"Pi 3 to 4"| T4
- T4 -->|"Pi 4 to 5"| T5
- T5 -->|"Pi 5 to 6"| T6
- T2 -.->|"A 2 to 1"| T1
- T3 -.->|"A 3 to 2"| T2
- T4 -.->|"A 4 to 3"| T3
- T5 -.->|"A 5 to 4"| T4
- T6 -.->|"A 6 to 5"| T5
- T1 -.- PI
- T6 -.- PI
+    T1["T_1<br/>owner intent<br/>B_1"]
+    T2["T_2<br/>business model<br/>B_2"]
+    T3["T_3<br/>legal entity<br/>B_3"]
+    T4["T_4<br/>product architecture<br/>B_4"]
+    T5["T_5<br/>process routines<br/>B_5"]
+    T6["T_6<br/>position role<br/>B_6"]
+    PI["composite Pi<br/>T_1 to T_6"]
+    T1 -->|"Pi 1 to 2"| T2
+    T2 -->|"Pi 2 to 3"| T3
+    T3 -->|"Pi 3 to 4"| T4
+    T4 -->|"Pi 4 to 5"| T5
+    T5 -->|"Pi 5 to 6"| T6
+    T2 -.->|"A 2 to 1"| T1
+    T3 -.->|"A 3 to 2"| T2
+    T4 -.->|"A 4 to 3"| T3
+    T5 -.->|"A 5 to 4"| T4
+    T6 -.->|"A 6 to 5"| T5
+    T1 -.- PI
+    T6 -.- PI
 ```
 
-*Figure 1: Six-Tier Projection Cascade.* Each tier T_i is a finite-dimensional real vector space. Each junction Π_{i→i+1} is a linear surjection (in the generic case) onto the tier below. Each A_{i+1→i} is the lower-tier feedback operator. The composite Π = Π_{5→6} ∘... ∘ Π_{1→2}: T_1 → T_6 is the cascade. B_i denotes the bounded subset on which Theorem 1's contraction conditions hold.
+*Figure 1: Six-Tier Projection Cascade.* Each tier T_i is a finite-dimensional real vector space. Each junction Π_{i→i+1} is a linear surjection (in the generic case) onto the tier below. Each A_{i+1→i} is the lower-tier feedback operator. The composite Π = Π_{5→6} ∘ ... ∘ Π_{1→2}: T_1 → T_6 is the cascade. B_i denotes the bounded subset on which Theorem 1's contraction conditions hold.
 
 *Notes*: The diagram captures only the static cascade as stipulated by scope condition (iv) of §3.4; longitudinal extensions in which T_6 enactment retroactively reshapes T_1 are out of scope for §3 and noted as future work.
 
@@ -152,7 +166,7 @@ We now identify the content of each tier by reference to the management-design l
 | **T_5** | Process / routines / specification transmission | Pentland & Feldman 2005; Nelson & Winter 1982; Cohen & Bacdayan 1994; Felin, Foss & Ployhart 2015 |
 | **T_6** | Position / role / org-chart surface | Mintzberg 1979; Galbraith 1977; Puranam 2018; Joseph & Sengul 2025 |
 
-*Notes*: Anchors at T_1 and T_3 are foundational textbooks and treatises whose precise edition does not bear on the cascade construction. Peer-reviewed journal contributions in the table include: Teece, Pisano & Shuen 1997 *SMJ* 18(7):509–533 DOI 10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z; Teece 2007 *SMJ* 28(13):1319–1350 DOI 10.1002/smj.640; Krakowski, Luger & Raisch 2023 *SMJ* 44(6):1425–1452 DOI 10.1002/smj.3387; Ulrich 1995 *Research Policy* 24(3):419–440 DOI 10.1016/0048-7333(94)00775-3; Sanchez & Mahoney 1996 *SMJ* DOI 10.1002/smj.4250171107; Helfat & Peteraf 2003 *SMJ* 24(10):997–1010 DOI 10.1002/smj.332; Raveendran, Silvestri & Gulati 2020 *Academy of Management Annals* 14(2):828–868 DOI 10.5465/annals.2018.0015; Felin, Foss & Ployhart 2015 *Academy of Management Annals* 9(1):575–632 DOI 10.5465/19416520.2015.1007651; Joseph & Sengul 2025 *Journal of Management* 51(1):249–308. Reference monographs at T_1, T_3, T_4, T_5, and T_6 supply foundational content not bearing on cascade-specific algebra. All journal-article citations introduced or revised in this revision are flagged inline as pending Perplexity metadata verification (per audit/scripts/verify_2026m_v2_phase1.py).
+*Notes*: Anchors at T_1 and T_3 are foundational textbooks and treatises whose precise edition does not bear on the cascade construction. Peer-reviewed journal contributions in the table include: Teece, Pisano & Shuen 1997 *SMJ* 18(7):509–533 DOI 10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z; Teece 2007 *SMJ* 28(13):1319–1350 DOI 10.1002/smj.640; Krakowski, Luger & Raisch 2023 *SMJ* 44(6):1425–1452 DOI 10.1002/smj.3387; Ulrich 1995 *Research Policy* 24(3):419–440 DOI 10.1016/0048-7333(94)00775-3; Sanchez & Mahoney 1996 *SMJ* DOI 10.1002/smj.4250171107; Helfat & Peteraf 2003 *SMJ* 24(10):997–1010 DOI 10.1002/smj.332; Raveendran, Silvestri & Gulati 2020 *Academy of Management Annals* 14(2):828–868 DOI 10.5465/annals.2018.0015; Felin, Foss & Ployhart 2015 *Academy of Management Annals* 9(1):575–632 DOI 10.5465/19416520.2015.1007651; Joseph & Sengul 2025 *Journal of Management* 51(1):249–308. Reference monographs at T_1, T_3, T_4, T_5, and T_6 supply foundational content not bearing on cascade-specific algebra.
 
 **T_1 (constitutional / cultural).** Selznick (1957) characterizes leadership as the institutional embedding of value commitments; the firm's *raison d'être* and the boundaries of permissible action are constitutive choices, not optimizations. Hofstede (1980) supplies a dimensional structure (power distance, individualism-collectivism, uncertainty avoidance, masculinity-femininity, long-term orientation) within which cultural variation is bounded — making T_1 a finite-dimensional space with empirically estimable extent. Schein (2010) connects T_1 content to its mode of transmission: artifacts, espoused values, and basic underlying assumptions, with the deepest layer least articulable. Together these anchors specify T_1 as the space of cultural-constitutional commitments under which everything below is parameterized.
 
@@ -174,23 +188,23 @@ The cascade-equilibrium concept is defined inductively from the top, then re-sta
 
 **Definition (cascade-equilibrium).** Fix x_1 ∈ B_1 ⊂ T_1, a configuration of the firm's deepest tier (owner intent / cultural choice), treated as the cascade boundary input (see scope condition (i) and the static-frame discussion following the scope conditions). For each junction i ∈ {1, 2, 3, 4, 5}, define the *junction operator*
 
-	F_i^{(x_i)}: T_{i+1} → T_{i+1}, F_i^{(x_i)}(y) := Π_{i→i+1}(x_i + A_{i+1→i}(y) − A_{i+1→i}(Π_{i→i+1}(x_i))),
+	F_i^{(x_i)}: T_{i+1} → T_{i+1},  F_i^{(x_i)}(y) := Π_{i→i+1}(x_i + A_{i+1→i}(y) − A_{i+1→i}(Π_{i→i+1}(x_i))),
 
 where the argument inside Π_{i→i+1} is the upstream content x_i adjusted by the lower-tier feedback A_{i+1→i}(y) relative to the no-feedback baseline A_{i+1→i}(Π_{i→i+1}(x_i)). The trajectory (x_1, x_2, x_3, x_4, x_5, x_6) is a *cascade-equilibrium* when, for each i ∈ {1, 2, 3, 4, 5}, the lower-tier configuration x_{i+1} ∈ B_{i+1} is a fixed point of F_i^{(x_i)}, i.e., F_i^{(x_i)}(x_{i+1}) = x_{i+1}. Equivalently, x_{i+1} is the configuration at which the upper-tier projection and the lower-tier feedback are mutually consistent.
 
 *Strategy translation:* the cascade-equilibrium is the joint condition that an organization is internally consistent across all six tiers simultaneously — culture aligned with strategy, strategy aligned with governance, governance aligned with architecture, architecture aligned with routines, and routines aligned with positions; a firm in cascade-equilibrium is one where no single tier is being asked to perform under a specification it cannot receive from the tier above, which is the formal content of what practitioners call organizational "alignment."
 
-The structure makes explicit that the lower-tier fixed point depends parametrically on the upstream input x_i: F_i is a *family* of operators on B_{i+1}, indexed by x_i ∈ B_i. The proof of Theorem 1 below uses a parametric form of the Banach contraction principle (parametric fixed-point theorem; see Granas and Dugundji 2003 §2 ) to ensure that the dependence x_i ↦ x_{i+1}^*(x_i) is continuous (in fact Lipschitz with constant L_i bounded as in (1) below), which is what permits the inductive stacking of fixed points across the cascade.
+The structure makes explicit that the lower-tier fixed point depends parametrically on the upstream input x_i: F_i is a *family* of operators on B_{i+1}, indexed by x_i ∈ B_i. The proof of Theorem 1 below uses a parametric form of the Banach contraction principle (parametric fixed-point theorem; see Granas and Dugundji 2003 §2) to ensure that the dependence x_i ↦ x_{i+1}^*(x_i) is continuous (in fact Lipschitz with constant L_i bounded as in (1) below), which is what permits the inductive stacking of fixed points across the cascade.
 
 **Theorem 1 (cascade-equilibrium existence and uniqueness).** *Suppose that at each junction i ∈ {1, 2, 3, 4, 5} the following uniform-contraction condition holds:*
 
 *(C_i) There exists κ_i ∈ [0, 1) such that for every x_i ∈ B_i and every u, v ∈ B_{i+1},*
 
-	‖F_i^{(x_i)}(u) − F_i^{(x_i)}(v)‖_{T_{i+1}} ≤ κ_i ‖u − v‖_{T_{i+1}}. (1)
+	‖F_i^{(x_i)}(u) − F_i^{(x_i)}(v)‖_{T_{i+1}}  ≤  κ_i ‖u − v‖_{T_{i+1}}.    (1)
 
 *Suppose further that for each i, the family F_i is jointly Lipschitz in its parameter: there exists L_i < ∞ such that for every x_i, x_i' ∈ B_i and y ∈ B_{i+1},*
 
-*(C_i') ‖F_i^{(x_i)}(y) − F_i^{(x_i')}(y)‖_{T_{i+1}} ≤ L_i ‖x_i − x_i'‖_{T_i}.*
+*(C_i')   ‖F_i^{(x_i)}(y) − F_i^{(x_i')}(y)‖_{T_{i+1}}  ≤  L_i ‖x_i − x_i'‖_{T_i}.*
 
 *Then for every x_1 ∈ B_1 a unique cascade-equilibrium trajectory (x_1, x_2^*, x_3^*, x_4^*, x_5^*, x_6^*) ∈ B_1 × B_2 × … × B_6 exists. The fixed-point map x_1 ↦ (x_2^*, …, x_6^*) is Lipschitz on B_1 with constant bounded above by Π_{j=1}^{5} L_j / (1 − κ_j).*
 
@@ -214,21 +228,21 @@ The scope conditions delimit the population to which Theorem 1 applies: bounded 
 
 **Corollary 1 (cascade information loss; sub-additivity of nullity).** *Let r_i := d_i − rank(Π_{i→i+1}) be the nullity at junction i, and let r_total := d_1 − rank(Π) be the cascade nullity. Then*
 
-	r_total = d_1 − rank(Π) ≤ r_1 + r_2 + r_3 + r_4 + r_5. (2)
+	r_total  =  d_1 − rank(Π)  ≤  r_1 + r_2 + r_3 + r_4 + r_5.    (2)
 
 *Equality in (2) holds when, at each junction i ≥ 2, the kernel of the junction operator intersects the cumulative image from below trivially — formally, when*
 
-	ker(Π_{i→i+1}) ⊆ im(Π_{i-1→i} ∘ Π_{i-2→i-1} ∘ … ∘ Π_{1→2}) for each i ∈ {2, 3, 4, 5}, (3)
+	ker(Π_{i→i+1})  ⊆  im(Π_{i-1→i} ∘ Π_{i-2→i-1} ∘ … ∘ Π_{1→2})   for each i ∈ {2, 3, 4, 5},    (3)
 
 *(i.e., kernels stack independently across junctions). Strict inequality in (2) holds whenever some kernel ker(Π_{i→i+1}) is partially absorbed by the image-complement of the cumulative cascade up to tier i — a kernel direction "already lost" upstream contributes only once to r_total even though it counts in two r_i terms.*
 
 *A second, independent bound follows from non-negativity of nullity:*
 
-	r_i ≥ max(0, d_i − d_{i+1}), (4)
+	r_i  ≥  max(0, d_i − d_{i+1}),    (4)
 
 *with equality when Π_{i→i+1} is full-rank onto its codomain T_{i+1}. Combining (2) and (4) yields the two-sided architectural bound*
 
-	max(0, d_1 − d_6) = Σ_i max(0, d_i − d_{i+1}) ≤ r_total ≤ Σ_i r_i ≤ Σ_i d_i.
+	max(0, d_1 − d_6)  =  Σ_i max(0, d_i − d_{i+1})  ≤  r_total  ≤  Σ_i r_i  ≤  Σ_i d_i.
 
 **Proof.** The upper bound (2) is the standard sub-additivity of the kernel under composition: for any composable linear maps A: U → V and B: V → W between finite-dimensional vector spaces, dim ker(B ∘ A) ≤ dim ker(A) + dim ker(B), with equality iff ker(B) ⊆ im(A). Applied inductively across the five junctions of the cascade, the sub-additivity yields r_total ≤ Σ_i r_i; the equality condition (3) is the inductive translation of ker(B) ⊆ im(A) at each junction. The lower bound (4) is r_i = d_i − rank(Π_{i→i+1}) ≥ d_i − min(d_i, d_{i+1}) = max(0, d_i − d_{i+1}). The two-sided bound combines (2), (4), and the trivial upper bound r_i ≤ d_i. □
 
@@ -236,7 +250,7 @@ The corollary is the central construct for §5's predictions: cumulative kernel 
 
 ### *Numerical Illustration of Theorem 1*
 
-To make the apparatus concrete and to verify that the contraction conditions and the sub-additivity bound of Corollary 1 are simultaneously satisfiable on a non-trivial cascade, we construct an explicit six-tier example with dimensions (d_1, d_2, d_3, d_4, d_5, d_6) = (4, 4, 3, 3, 2, 2). The dimension profile is chosen to combine generic rank-reducing junctions (d_{i+1} < d_i at junctions 2, 4) with same-dimension junctions (d_{i+1} = d_i at junctions 1, 3, 5), and one of the same-dimension junctions (Π_{1→2}) is constructed rank-deficient by one to make Corollary 1's strict-inequality scenario occur. All matrices Π_{i→i+1} and A_{i+1→i} are deterministic draws from numpy.random.default_rng(2026); the feedback operators A are rescaled so that ‖Π_{i→i+1} ∘ A_{i+1→i}‖_op equals a target contraction constant κ_i ∈ {.30,.40,.50,.35,.45}.
+To make the apparatus concrete and to verify that the contraction conditions and the sub-additivity bound of Corollary 1 are simultaneously satisfiable on a non-trivial cascade, we construct an explicit six-tier example with dimensions (d_1, d_2, d_3, d_4, d_5, d_6) = (4, 4, 3, 3, 2, 2). The dimension profile is chosen to combine generic rank-reducing junctions (d_{i+1} < d_i at junctions 2, 4) with same-dimension junctions (d_{i+1} = d_i at junctions 1, 3, 5), and one of the same-dimension junctions (Π_{1→2}) is constructed rank-deficient by one to make Corollary 1's strict-inequality scenario occur. All matrices Π_{i→i+1} and A_{i+1→i} are deterministic draws from numpy.random.default_rng(2026); the feedback operators A are rescaled so that ‖Π_{i→i+1} ∘ A_{i+1→i}‖_op equals a target contraction constant κ_i ∈ {.30, .40, .50, .35, .45}.
 
 For this example the junction operator F_i^{(x_i)}(y) = Π(x_i + A(y) − A(Π(x_i))) admits the closed-form Lipschitz analysis κ_i = ‖Π ∘ A‖_op (uniform in x_i) and L_i = ‖(I − Π ∘ A) ∘ Π‖_op, both of which are computed directly from the operator matrices. A starting point x_1 ∈ B_1 was drawn from the same generator, normalized to lie at half the bounded-set radius, and the cascade was iterated junction-by-junction with tolerance 1e-10 on successive-iterate distance. Convergence was achieved at every junction; the maximum residual ‖F_i^{(x_i)}(x_{i+1}^*) − x_{i+1}^*‖ over the cascade is 2.38e-11, well within tolerance.
 
@@ -244,19 +258,19 @@ For this example the junction operator F_i^{(x_i)}(y) = Π(x_i + A(y) − A(Π(x
 
 | i | d_i | d_{i+1} | rank(Π_{i→i+1}) | r_i | κ_i | L_i | iterations | ‖x_{i+1}^* − x_{i+1}^{(0)}‖ |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 4 | 4 | 3 | 1 |.300 | 2.509 | 18 |.904 |
-| 2 | 4 | 3 | 3 | 1 |.400 | 6.099 | 24 | 2.345 |
-| 3 | 3 | 3 | 3 | 0 |.500 | 3.932 | 20 | 5.104 |
-| 4 | 3 | 2 | 2 | 1 |.350 | 1.285 | 16 | 1.876 |
-| 5 | 2 | 2 | 2 | 0 |.450 | 2.966 | 31 | 1.091 |
+| 1 | 4 | 4 | 3 | 1 | .300 | 2.509 | 18 | .904 |
+| 2 | 4 | 3 | 3 | 1 | .400 | 6.099 | 24 | 2.345 |
+| 3 | 3 | 3 | 3 | 0 | .500 | 3.932 | 20 | 5.104 |
+| 4 | 3 | 2 | 2 | 1 | .350 | 1.285 | 16 | 1.876 |
+| 5 | 2 | 2 | 2 | 0 | .450 | 2.966 | 31 | 1.091 |
 
 *Notes*: Iteration count is the number of Banach iterations from the canonical starting point y_0 = 0 ∈ T_{i+1} until ‖y_{n+1} − y_n‖ < 1e-10. All κ_i ∈ (0, 1) by construction, satisfying (C_i) of Theorem 1; the L_i values are derived analytically from the operator matrices and satisfy (C_i'). Reported numerical values are rounded; full-precision values appear in the script's stdout.
 
-The sub-additivity verification of Corollary 1 is the principal content of the example. The composite Π = Π_{5→6} ∘... ∘ Π_{1→2} maps T_1 (d_1 = 4) into T_6 (d_6 = 2); its rank, computed from the matrix product, is 2, giving r_total = d_1 − rank(Π) = 2. The sum of per-junction nullities is r_1 + r_2 + r_3 + r_4 + r_5 = 1 + 1 + 0 + 1 + 0 = 3. The bound of Corollary 1 is therefore satisfied as a strict inequality, r_total = 2 < 3 = Σ_i r_i, with a one-dimensional gap. Substantively, the example realizes the absorption case: the kernel direction created at the rank-deficient Π_{1→2} junction is partially absorbed by the image-complement of the cumulative cascade upstream of subsequent junctions, so a kernel direction "already lost" at junction 1 does not contribute a second time to total cascade nullity even though it counts independently in r_1. This is the empirically meaningful regime in which upstream junctions shield downstream junctions — and the regime in which §5's variance-amplification predictions weaken from Σ_i r_i to the smaller r_total.
+The sub-additivity verification of Corollary 1 is the principal content of the example. The composite Π = Π_{5→6} ∘ ... ∘ Π_{1→2} maps T_1 (d_1 = 4) into T_6 (d_6 = 2); its rank, computed from the matrix product, is 2, giving r_total = d_1 − rank(Π) = 2. The sum of per-junction nullities is r_1 + r_2 + r_3 + r_4 + r_5 = 1 + 1 + 0 + 1 + 0 = 3. The bound of Corollary 1 is therefore satisfied as a strict inequality, r_total = 2 < 3 = Σ_i r_i, with a one-dimensional gap. Substantively, the example realizes the absorption case: the kernel direction created at the rank-deficient Π_{1→2} junction is partially absorbed by the image-complement of the cumulative cascade upstream of subsequent junctions, so a kernel direction "already lost" at junction 1 does not contribute a second time to total cascade nullity even though it counts independently in r_1. This is the empirically meaningful regime in which upstream junctions shield downstream junctions — and the regime in which §5's variance-amplification predictions weaken from Σ_i r_i to the smaller r_total.
 
 The example also realizes the cascade Lipschitz bound of Theorem 1: the product Π_{j=1}^{5} L_j / (1 − κ_j) evaluates to 3056.11, a finite (if large) constant that places an explicit upper bound on the sensitivity of the full cascade-equilibrium trajectory to perturbations of x_1 ∈ B_1. The fact that this constant is large but finite is the static-cascade analogue of the variance-cascade-distance scaling that §5 (P3) develops as a falsifiable prediction.
 
-**Companion Computation Script.** All numerical values reported in this subsection — the per-junction κ_i and L_i, the iteration counts, the convergence distances, the rank of the composite cascade, and the sub-additivity gap — are reproducible from `code/cascade_numerical_example.py` (public mirror at `https://github.com/spectralbranding/orgschema-papers/blob/main/projection-paper-v2/code/cascade_numerical_example.py`) with fixed seed 2026, run as `uv run --with numpy python code/cascade_numerical_example.py`. The script implements the cascade construction, the analytic operator-norm computation of κ_i and L_i, the parametric Banach iteration with tolerance 1e-10, the rank computation of the composite, and the verification of Corollary 1's sub-additivity bound. Per `research/PAPER_QUALITY_STANDARDS.md` items 37a–37e, the script is the ground truth for any value cited as computed in §3.5; the paper is updated to match its stdout whenever the script is revised.
+**Companion Computation Script.** All numerical values reported in this subsection — the per-junction κ_i and L_i, the iteration counts, the convergence distances, the rank of the composite cascade, and the sub-additivity gap — are reproducible from `research/code/cascade_numerical_example.py` (public mirror at `https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper/code/cascade_numerical_example.py` upon Phase-6 upload) with fixed seed 2026, run as `uv run --with numpy python research/code/cascade_numerical_example.py`. The script implements the cascade construction, the analytic operator-norm computation of κ_i and L_i, the parametric Banach iteration with tolerance 1e-10, the rank computation of the composite, and the verification of Corollary 1's sub-additivity bound. Per `research/PAPER_QUALITY_STANDARDS.md` items 37a–37e, the script is the ground truth for any value cited as computed in §3.5; the paper is updated to match its stdout whenever the script is revised.
 
 ## Cascade Restrictions
 
@@ -290,7 +304,7 @@ Each of the five theories is a cascade restriction obtained by fixing some tiers
 
 | Theory | Junctions modeled (active) | Junctions parameterized (fixed) | Junctions folded into black box | Implicit r_i pattern | Operates as |
 |---|---|---|---|---|---|
-| Galbraith star (1973) | Π_{2→3}, Π_{3→4}, Π_{5→6} | T_1 (cultural input) | Π_{4→5} (process derivation from architecture) | Full-rank assumed at active junctions; misalignment treated as off-equilibrium rather than rank deficiency | Multi-junction simultaneous-contraction restriction |
+| Galbraith star (1977) | Π_{2→3}, Π_{3→4}, Π_{5→6} | T_1 (cultural input) | Π_{4→5} (process derivation from architecture) | Full-rank assumed at active junctions; misalignment treated as off-equilibrium rather than rank deficiency | Multi-junction simultaneous-contraction restriction |
 | Burton-Obel-Hakonsson (2020) | Π_{2→3}, Π_{3→6} (collapsed) | T_1, T_2 contingency factors | Π_{3→4}, Π_{4→5}, Π_{5→6} (configuration as single optimization output) | Rank deficiency of collapsed Π_{3→6} treated as misfit cost rather than algebraic property | Optimization-collapsed restriction (T_3 to T_6 as single step) |
 | Williamson hierarchies (1985) | Π_{2→3} | T_1 cultural input; T_2 asset specificity exogenous | Π_{3→4}, Π_{4→5}, Π_{5→6} (downstream of T_3 governance) | Full-rank Π_{2→3} per governance form; downstream rank deficiencies absorbed into the chosen governance type | Single-junction restriction at T_2/T_3 with derived downstream |
 | Mintzberg configurations (1979) | Π_{5→6} | T_1, T_2, T_3 (configuration-determining parameters) | Π_{1→2}, Π_{2→3}, Π_{3→4}, Π_{4→5} | Configurational stability requires near-equilibrium contraction at Π_{5→6}; cluster discreteness implies r_5 piecewise constant within configurations | Single-junction restriction at T_5/T_6 with discrete-configuration parameters |
@@ -300,7 +314,7 @@ Each of the five theories is a cascade restriction obtained by fixing some tiers
 
 The matrix reveals that the field's apparent fragmentation is a Cartesian product of (which junctions explicit) × (which tiers fixed) × (which junctions folded). Each existing theory occupies one cell of this product space; none contradicts the cascade construction; each is recovered as the cascade restricted to its active-junction subset. The cascade unifies the field by making all six tiers and five junctions co-equal first-class objects, and by exposing the implicit choices — which tiers are taken as parameters, which junctions are folded into derivations — that constitute the differentiating commitments of each design theory.
 
-A computational comparison (extended companion script, §3.5 reproducibility) confirms that no single restriction simultaneously reproduces the strict-inequality regime of P4 and the cascade-distance-product variance amplification of P3. Running each restriction on the same seed-2026 dimensions (4, 4, 3, 3, 2, 2) with the §4.1–§4.5 active-junction patterns yields the following: the full cascade exhibits P3 amplification Π L_j / (1 − κ_j) = 3056.11 across all five junctions and P4 strict inequality r_total = 2 < 3 = Σ_j r_j (gap = 1; kernel absorption at the rank-deficient Π_{1→2} junction). Single-junction restrictions (Williamson at Π_{2→3}, P3 = 3.40; Mintzberg at Π_{5→6}, P3 = 0.91) cannot generate cascade-distance amplification at all — their P3 product collapses to one Lipschitz factor — and detect no P4 strict inequality through their single active junction. Multi-junction restrictions (Puranam at Π_{4→5}, Π_{5→6}, P3 = 5.68; Galbraith at Π_{2→3}, Π_{3→4}, Π_{5→6}, P3 = 19.53) accumulate partial P3 amplification two to three orders of magnitude below the full cascade and still cannot detect P4 strict inequality, because kernel absorption requires the deep upstream Π_{1→2} junction that lower-cascade restrictions parameterize as fixed input. Each restriction is a strict subset of the cascade's empirical content; the unification claim is demonstrated by computational comparison rather than asserted. Reproducible from `uv run --with numpy python code/cascade_numerical_example.py --compare`.
+A computational comparison (extended companion script, §3.5 reproducibility) confirms that no single restriction simultaneously reproduces the strict-inequality regime of P4 and the cascade-distance-product variance amplification of P3. Running each restriction on the same seed-2026 dimensions (4, 4, 3, 3, 2, 2) with the active-junction patterns of the five restrictions (Galbraith star, Burton-Obel-Håkonsson computational, Williamson hierarchies, Mintzberg configurations, Puranam microstructure) yields the following: the full cascade exhibits P3 amplification Π L_j / (1 − κ_j) = 3056.11 across all five junctions and P4 strict inequality r_total = 2 < 3 = Σ_j r_j (gap = 1; kernel absorption at the rank-deficient Π_{1→2} junction). Single-junction restrictions (Williamson at Π_{2→3}, P3 = 3.40; Mintzberg at Π_{5→6}, P3 = 0.91) cannot generate cascade-distance amplification at all — their P3 product collapses to one Lipschitz factor — and detect no P4 strict inequality through their single active junction. Multi-junction restrictions (Puranam at Π_{4→5}, Π_{5→6}, P3 = 5.68; Galbraith at Π_{2→3}, Π_{3→4}, Π_{5→6}, P3 = 19.53) accumulate partial P3 amplification two to three orders of magnitude below the full cascade and still cannot detect P4 strict inequality, because kernel absorption requires the deep upstream Π_{1→2} junction that lower-cascade restrictions parameterize as fixed input. Each restriction is a strict subset of the cascade's empirical content; the unification claim is demonstrated by computational comparison rather than asserted. Reproducible from `uv run --with numpy python research/code/cascade_numerical_example.py --compare`.
 
 ### *Position Formal Definition*
 
@@ -318,11 +332,8 @@ where:
 
 A position is thus a *cascade-coordinate* object: each component is the image of a deeper tier under the appropriate cascade composition. The triple decomposes the position-as-projection statement of v1 into three cascade-coordinated channels (perception via T_5, authority via T_3, role via T_1), restoring the causal granularity that the v1 single-step Π collapsed.
 
-The connection to v1 is direct. v1's central claim — that positions are projections of process — was correct at the T_5 → T_6 junction (positions inherit perceptual content P_p from T_5) but silent on the upstream tiers from which authority A_p and role R_p descend [Zharnikov 2026l, §2.2]. v2.1 unfolds the v1 single-step projection into the six-tier cascade and supplies the upstream channels. The function-position decoupling phenomenon under AI deployment that motivates the paper is then specifically a *basis rotation at Π_{5→6}* that affects P_p (the activities the position performs) without affecting A_p or R_p (the title's authority and meaning) — a phenomenon the cascade predicts and the v1 single-step apparatus did not separately resolve.
+The connection to v1 is direct. v1's central claim — that positions are projections of process — was correct at the T_5 → T_6 junction (positions inherit perceptual content P_p from T_5) but silent on the upstream tiers from which authority A_p and role R_p descend [Zharnikov 2026l, §2.2]. v2.0.0 unfolds the v1 single-step projection into the six-tier cascade and supplies the upstream channels. The function-position decoupling phenomenon under AI deployment that motivates the paper is then specifically a *basis rotation at Π_{5→6}* that affects P_p (the activities the position performs) without affecting A_p or R_p (the title's authority and meaning) — a phenomenon the cascade predicts and the v1 single-step apparatus did not separately resolve.
 
-`Figure 2: Position as a Cascade-Coordinate Object. The triple p = (P_p, A_p, R_p) is shown as three channels descending through the cascade: P_p inherits from T_5 (process / routine content); A_p inherits from T_3 (contractual / authority content) via composition through T_4 and T_5; R_p inherits from T_1 (cultural / role meaning) via composition through T_2, T_3, T_4, and T_5. Basis rotation at Π_{5→6} rotates P_p while leaving A_p and R_p stationary — the formal signature of role-content drift under stable titles.`
-
-*Notes*: Figure 2 is a schematic whose layout will be finalized in Phase 4; the Mermaid source code will accompany the final draft.
 
 ---
 
@@ -334,7 +345,7 @@ This section derives four falsifiable propositions from the cascade apparatus of
 
 **Formal statement.** Reorganizations that intervene at tier i ∈ {1, 2, 3, 4, 5} produce changes at tier 6 — the empirical surface at which org-chart outcomes are read — at a magnitude that decays in the cascade-distance (6 − i) through the contraction-constant product of Theorem 1. Specifically, denoting by Δ_6 the magnitude of T_6 change induced by an intervention of magnitude Δ_i at tier i, in cascade-equilibrium
 
-	‖Δ_6‖_{T_6} ≤ [Π_{j=i}^{5} L_j / (1 − κ_j)] · ‖Δ_i‖_{T_i}. (5)
+	‖Δ_6‖_{T_6}  ≤  [Π_{j=i}^{5} L_j / (1 − κ_j)] · ‖Δ_i‖_{T_i}.    (5)
 
 Equivalently, the *fraction* of an intervention's magnitude that survives the cascade to register at T_6 is bounded above by the inverse of this product, and the rank-ordering of intervention-efficacy across cascade-depth is determined by the per-junction L_j / (1 − κ_j).
 
@@ -354,13 +365,13 @@ Equivalently, the *fraction* of an intervention's magnitude that survives the ca
 
 **Formal statement.** For an exogenous perturbation ε_i at tier i ∈ {1, 2, 3, 4, 5} with finite variance Var(ε_i) = σ_i^2, the variance of the resulting tier-6 perturbation Δ_6 in cascade-equilibrium is bounded above by the squared product of per-junction Lipschitz constants from i to 5:
 
-	Var(Δ_6 | ε_i) ≤ [Π_{j=i}^{5} L_j / (1 − κ_j)]^2 · σ_i^2. (6)
+	Var(Δ_6 | ε_i)  ≤  [Π_{j=i}^{5} L_j / (1 − κ_j)]^2 · σ_i^2.    (6)
 
 The variance of T_6 outcomes therefore scales geometrically with the cascade-distance (6 − i) between the perturbation source and the observation surface.
 
 **Cascade-mechanism derivation.** The bound (6) follows directly from Theorem 1's Lipschitz conclusion combined with the standard inequality Var(f(X)) ≤ L_f^2 · Var(X) for any L_f-Lipschitz function f. The cascade composition product Π_{j=i}^{5} L_j / (1 − κ_j) is the cumulative Lipschitz constant of the (i, 6) coordinate pair of the fixed-point map x_i ↦ x_6^*(x_i); squaring it bounds the variance of the induced T_6 perturbation by σ_i^2 times this cumulative constant squared.
 
-**Empirical test.** P3 is testable on a cross-firm panel that observes (a) an upstream perturbation of known tier (CEO turnover at T_2; M&A target arrival at T_3; product-architectural shock at T_4) and (b) tier-6 outcomes (org-chart restructuring magnitude; turnover at executive ranks). P3 predicts the *coefficient of variation* of T_6 outcomes across firms hit by the same upstream shock exceeds that of T_4 outcomes which exceeds that of T_2 outcomes — equivalently, the 95% confidence interval of T_6 reorganizations is wider than the 95% CI of T_4 changes for the same shock. The contemporary microfoundations literature on coordination-cost variance under interdependence supplies the empirical anchor for this measurement [Raveendran, Silvestri, and Gulati 2020, Table 1 already in v2.1 §3.2]. Falsification mode: tighter T_6 confidence intervals than T_4 confidence intervals for matched perturbations would refute P3. Confounds include heterogeneous treatment effects across firms within the same shock category and selection on observable response (firms that respond at T_6 may differ from firms that respond at T_4); both are addressable by firm-fixed-effects in the panel specification.
+**Empirical test.** P3 is testable on a cross-firm panel that observes (a) an upstream perturbation of known tier (CEO turnover at T_2; M&A target arrival at T_3; product-architectural shock at T_4) and (b) tier-6 outcomes (org-chart restructuring magnitude; turnover at executive ranks). P3 predicts the *coefficient of variation* of T_6 outcomes across firms hit by the same upstream shock exceeds that of T_4 outcomes which exceeds that of T_2 outcomes — equivalently, the 95% confidence interval of T_6 reorganizations is wider than the 95% CI of T_4 changes for the same shock. The contemporary microfoundations literature on coordination-cost variance under interdependence supplies the empirical anchor for this measurement [Raveendran, Silvestri, and Gulati 2020, Table 1 already in v2.0.0 §3.2]. Falsification mode: tighter T_6 confidence intervals than T_4 confidence intervals for matched perturbations would refute P3. Confounds include heterogeneous treatment effects across firms within the same shock category and selection on observable response (firms that respond at T_6 may differ from firms that respond at T_4); both are addressable by firm-fixed-effects in the panel specification.
 
 ### *Proposition 4: Algebraic Decoupling Bound at Layer Junctions*
 
@@ -439,15 +450,27 @@ Four research directions follow naturally from the apparatus.
 
 *Multi-industry empirical work.* The empirical illustration in §6 covers software engineering 2023-2026; testing P1-P4 across other industries with comparable AI-deployment shocks — legal services, healthcare diagnostics, financial-services analytics — would establish the cascade's domain of applicability. Whether the propositions generalize across industries with different κ_i, L_i regimes is the natural follow-on question.
 
-*Dynamic extensions.* Scope condition (iv)'s static-cascade frame can be relaxed by introducing a longer-horizon Π_{6→1}-style enactment operator capturing how organizational structure retroactively shapes cultural commitments. The resulting dynamic cascade has stable points where the forward and backward operators are jointly consistent — a fixed-point structure of higher dimension than Theorem 1's. The enactment perspective in organizational theory [Weick 1995 already in §2.3] supplies the natural anchor.
+*Dynamic extensions.* Scope condition (iv)'s static-cascade frame can be relaxed by introducing a longer-horizon Π_{6→1}-style enactment operator capturing how organizational structure retroactively shapes cultural commitments. The resulting dynamic cascade has stable points where the forward and backward operators are jointly consistent — a fixed-point structure of higher dimension than Theorem 1's. The enactment perspective in organizational theory supplies the natural anchor.
 
 *Measurement of contraction constants.* The cascade is operationally agnostic about how κ_i and L_i are estimated firm-by-firm. Methodological work on per-junction contraction-constant estimation from observational data — analogous to elasticity estimation in production-function work — is required before P1-P4 can be deployed as empirical instruments at firm-level granularity. The variance-decomposition design sketched in P4's empirical-test paragraph is a starting point but is not by itself an estimator.
 
 *Cross-cultural validation.* The cultural-dimensions literature implies that T_1 boundedness and the contraction constants κ_i vary across institutional contexts. The cascade's qualitative predictions should hold across contexts but the quantitative regimes should differ; cross-cultural empirical work would establish whether the propositions hold in non-Western contexts and would, if successful, license a comparative-institutional version of the apparatus.
 
+*Empirical illustration (Path B — companion paper).* The §1 plan of the paper described a §6 empirical illustration drawing on three public software-engineering datasets (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) to demonstrate P2's basis-rotation claim in the software-engineering sector 2023–2026. For the first SMJ submission, Path B has been selected: the empirical illustration is deferred to a companion empirical paper whose framework is staged at `research/PROJECTION_PAPER_PHASE2_EMPIRICAL_FRAMEWORK.md`. This paper presents the theoretical apparatus in full (§1–§5 and §7); the companion paper will provide the empirical evidence. References to §6 in §5's empirical-test paragraphs and in §7's boundary-condition and AI-strategy discussions should be read as forward pointers to that companion work.
+
 ### *Conclusion*
 
 Organizations are six-tier projection cascades. Information loss is junction-localizable. The five major design traditions surveyed in §2 are nested restrictions of the same apparatus, recoverable by treating the projections each tradition holds fixed as exogenous. The apparatus entails four falsifiable propositions about reorganization efficacy, AI deployment, variance amplification, and junction-decoupling that no single tradition derives in isolation. The reorganization-failure regularity that motivated the paper is not a puzzle of poor execution — it is what the cascade predicts when interventions are targeted at the surface T_6 without addressing upstream rank deficiencies. Reorganization works when its depth matches the cascade-distance to the desired effect; it fails when surface and substrate are confused. The cascade supplies the apparatus for telling them apart.
+
+## Acknowledgments
+
+The author thanks the editors and reviewers whose feedback informed prior versions of this work.
+
+AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+
+*CRediT contributorship*: Dmitry Zharnikov: Conceptualization, Formal Analysis, Investigation, Methodology, Writing — original draft, Writing — review and editing.
+
+*Data availability*: All numerical values reported in §3.5 are reproducible from the companion script at https://github.com/spectralbranding/orgschema-papers/blob/main/projection-paper/code/cascade_numerical_example.py with fixed seed 2026. No primary data are reported in the manuscript.
 
 ## Appendix A: Proof of Theorem 1
 
@@ -464,3 +487,106 @@ By condition (C_1'), the parametric family {F_1^{(x_1)}}_{x_1 ∈ B_1} is jointl
 *Cascade equilibrium.* The trajectory (x_1, x_2^*(x_1), x_3^*(x_1), x_4^*(x_1), x_5^*(x_1), x_6^*(x_1)) is the unique cascade-equilibrium for the boundary input x_1, and the map x_1 ↦ (x_2^*, …, x_6^*) is Lipschitz on B_1 with constant bounded by Π_{j=1}^{5} L_j / (1 − κ_j). □
 
 ---
+
+## References
+
+1. Aoki, Masahiko. (2001). *Toward a Comparative Institutional Analysis*. MIT Press.
+
+2. Baldwin, Carliss Y., and Kim B. Clark. (2000). *Design Rules, Volume 1: The Power of Modularity*. MIT Press. ISBN 978-0-262-53820-6.
+
+3. Banach, Stefan. (1922). Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales. *Fundamenta Mathematicae*, 3:133–181.
+
+4. Barkema, Harry G., and Mario Schijven. (2008). How do firms learn to make acquisitions? A review of past research and an agenda for the future. *Journal of Management*, 34(3):594–634. DOI 10.1177/0149206308316968.
+
+5. Bloom, Nicholas, Erik Brynjolfsson, Lucia Foster, Ron Jarmin, Megha Patnaik, Itay Saporta-Eksten, and John Van Reenen. (2019). What drives differences in management practices? *American Economic Review*, 109(5):1648–1683. DOI 10.1257/aer.20170491.
+
+6. Brynjolfsson, Erik, Danielle Li, and Lindsey R. Raymond. (2025). Generative AI at work. *Quarterly Journal of Economics*, 140(2):889–942. DOI 10.1093/qje/qjae044.
+
+7. Burton, Richard M., Børge Obel, and Dorthe Døjbak Håkonsson. (2020). *Organizational Design: A Step-by-Step Approach*, 4th ed. Cambridge University Press. ISBN 978-1-108-49328-4 (hardback); 978-1-108-71756-4 (paperback).
+
+8. Cohen, Michael D., and Paul Bacdayan. (1994). Organizational routines are stored as procedural memory: Evidence from a laboratory study. *Organization Science*, 5(4):554–568. DOI 10.1287/orsc.5.4.554.
+
+9. Csaszar, Felipe A. (2013). An efficient frontier in organization design: Organizational structure as a determinant of exploration and exploitation. *Organization Science*, 24(4):1083–1101. DOI 10.1287/orsc.1120.0784.
+
+10. Dell'Acqua, Fabrizio, Hila Lifshitz-Assaf, Raffaella Sadun, Ethan Mollick, Lilach Mollick, Charles Han, Steven Goldman, Sathya Nair, Todd Taub, Hari Nair Ayoubi, and Karim R. Lakhani. (2026). The jagged technological frontier and human capital. *Organization Science*, Articles in Advance. DOI 10.1287/orsc.2025.21838.
+
+11. Ethiraj, Sendil K., Daniel A. Levinthal, and Rishi R. Roy. (2008). The dual role of modularity: Innovation and imitation. *Management Science*, 54(5):939–955. DOI 10.1287/mnsc.1070.0775.
+
+12. Felin, Teppo, Nicolai J. Foss, and Robert E. Ployhart. (2015). The microfoundations movement in strategy and organization theory. *Academy of Management Annals*, 9(1):575–632. DOI 10.5465/19416520.2015.1007651.
+
+13. Galbraith, Jay R. (1977). *Organization Design*. Addison-Wesley.
+
+14. Granas, Andrzej, and James Dugundji. (2003). *Fixed Point Theory*. Springer Monographs in Mathematics. Springer-Verlag New York. ISBN 0-387-00173-5. DOI 10.1007/978-0-387-21593-8.
+
+15. Hart, Oliver. (1995). *Firms, Contracts, and Financial Structure*. Clarendon Press / Oxford University Press. ISBN 978-0-19-828881-7.
+
+16. Helfat, Constance E., and Margaret A. Peteraf. (2003). The dynamic resource-based view: Capability lifecycles. *Strategic Management Journal*, 24(10):997–1010. DOI 10.1002/smj.332.
+
+17. Hofstede, Geert. (1980). *Culture's Consequences: International Differences in Work-Related Values*. Sage Publications.
+
+18. Hrebiniak, Lawrence G. (2006). Obstacles to effective strategy implementation. *Organizational Dynamics*, 35(1):12–31. DOI 10.1016/j.orgdyn.2005.12.001.
+
+19. Iansiti, Marco, and Karim R. Lakhani. (2020). *Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World*. Harvard Business Review Press. ISBN 978-1-63369-762-1.
+
+20. Luo, Jiao, Kexin Zhu, Yong Lu, and Jing Zhou. (2024). When and how artificial intelligence augments employee creativity. *Academy of Management Journal*, 67(1):5–32. DOI 10.5465/amj.2022.0426.
+
+21. Joseph, John, and Vibha Gaba. (2020). Organizational structure, information processing, and decision-making: A retrospective and road map for research. *Academy of Management Annals*, 14(1):267–302. DOI 10.5465/annals.2017.0103.
+
+22. Joseph, John, and Metin Sengul. (2025). Organization design: Current insights and future research directions. *Journal of Management*, 51(1):249–308. DOI 10.1177/01492063241271242.
+
+23. Krakowski, Sebastian, Johannes Luger, and Sebastian Raisch. (2023). Artificial intelligence and the changing sources of competitive advantage. *Strategic Management Journal*, 44(6):1425–1452. DOI 10.1002/smj.3387.
+
+24. Kunisch, Sven, Jean M. Bartunek, Johanna Mueller, and Quy N. Huy. (2017). Time in strategic change research. *Academy of Management Annals*, 11(2):1005–1064. DOI 10.5465/annals.2015.0133.
+
+25. Mintzberg, Henry. (1979). *The Structuring of Organizations: A Synthesis of the Research*. Prentice-Hall. ISBN 978-0-13-855270-1.
+
+26. Nelson, Richard R., and Sidney G. Winter. (1982). *An Evolutionary Theory of Economic Change*. Belknap Press of Harvard University Press. ISBN 978-0-674-27228-6.
+
+27. Pentland, Brian T., and Martha S. Feldman. (2005). Organizational routines as a unit of analysis. *Industrial and Corporate Change*, 14(5):793–815. DOI 10.1093/icc/dth070.
+
+28. Peng, Sida, Eirini Kalliamvakou, Peter Cihon, and Mert Demirer. (2023). The impact of AI on developer productivity: Evidence from GitHub Copilot. arXiv:2302.06590. DOI 10.48550/arXiv.2302.06590.
+
+29. Porter, Michael E. (1985). *Competitive Advantage: Creating and Sustaining Superior Performance*. Free Press. ISBN 978-0-684-84146-5.
+
+30. Puranam, Phanish. (2018). *The Microstructure of Organizations*. Oxford University Press. ISBN 978-0-19-967237-0 (hardback); 978-0-19-967236-3 (paperback).
+
+31. Puranam, Phanish, Marlo Raveendran, and Thorbjørn Knudsen. (2012). Organization design: The epistemic interdependence perspective. *Academy of Management Review*, 37(3):419–440. DOI 10.5465/amr.2010.0184.
+
+32. Raisch, Sebastian, and Kateryna Fomina. (2025). Combining human and artificial intelligence: Hybrid problem-solving in organizations. *Academy of Management Review*, 50:441–464. DOI 10.5465/amr.2021.0421.
+
+33. Raveendran, Marlo, Luciana Silvestri, and Ranjay Gulati. (2020). The role of interdependence in the micro-foundations of organization design: Task, goal, and knowledge interdependence. *Academy of Management Annals*, 14(2):828–868. DOI 10.5465/annals.2018.0015.
+
+34. Rivkin, Jan W., and Nicolaj Siggelkow. (2003). Balancing search and stability: Interdependencies among elements of organizational design. *Management Science*, 49(3):290–311. DOI 10.1287/mnsc.49.3.290.12740.
+
+35. Sanchez, Ron, and Joseph T. Mahoney. (1996). Modularity, flexibility, and knowledge management in product and organization design. *Strategic Management Journal*, 17(S2):63–76. DOI 10.1002/smj.4250171107.
+
+36. Schein, Edgar H. (2010). *Organizational Culture and Leadership*, 4th ed. Jossey-Bass. ISBN 978-0-470-18586-5.
+
+37. Selznick, Philip. (1957). *Leadership in Administration: A Sociological Interpretation*. Harper & Row.
+
+38. Simon, Herbert A. (1962). The architecture of complexity. *Proceedings of the American Philosophical Society*, 106(6):467–482.
+
+39. Smart, D. R. (1974). *Fixed Point Theorems*. Cambridge Tracts in Mathematics, No. 66. Cambridge University Press. ISBN 0521202892.
+
+40. Suh, Nam P. (1990). *The Principles of Design*. Oxford University Press. ISBN 978-0-19-504345-7.
+
+41. Teece, David J. (2007). Explicating dynamic capabilities: The nature and microfoundations of (sustainable) enterprise performance. *Strategic Management Journal*, 28(13):1319–1350. DOI 10.1002/smj.640.
+
+42. Teece, David J., Gary Pisano, and Amy Shuen. (1997). Dynamic capabilities and strategic management. *Strategic Management Journal*, 18(7):509–533. DOI 10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z.
+
+43. Ulrich, Karl. (1995). The role of product architecture in the manufacturing firm. *Research Policy*, 24(3):419–440. DOI 10.1016/0048-7333(94)00775-3.
+
+44. von Krogh, Georg, Quinetta Roberson, and Marc Gruber. (2023). Recognizing and utilizing novel research opportunities with artificial intelligence. *Academy of Management Journal*, 66(2):367–373. DOI 10.5465/amj.2023.4002.
+
+45. Weick, Karl E. (1979). *The Social Psychology of Organizing*, 2nd ed. Addison-Wesley. ISBN 0-201-08591-2.
+
+46. Williamson, Oliver E. (1985). *The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting*. Free Press.
+
+---
+
+*Self-citations (Zharnikov 2026X):*
+
+
+[Z-1] Zharnikov, Dmitry. (2026ak). AI tier penetration: A theory of substrate-dependent competitive advantage. Working Paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI 10.5281/zenodo.20087037.
+
+[Z-2] Zharnikov, Dmitry. (2026l). The rendering problem: From genetic expression to brand perception. Working Paper. Concept DOI 10.5281/zenodo.19064426; v1 DOI 10.5281/zenodo.19064427.

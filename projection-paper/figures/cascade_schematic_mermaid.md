@@ -1,7 +1,7 @@
 # Figure 1: Six-Tier Projection Cascade — Mermaid Source
 
 **Paper**: The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
-**Citation key**: 2026m (v2.1)
+**Citation key**: 2026m (v2.0.0)
 **Section**: §3.1
 
 This file contains the Mermaid source for Figure 1 of the paper. A vector-graphic upgrade (SVG/PDF via Typst or Graphviz) is pending Phase-6 polish.

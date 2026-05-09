@@ -1,5 +1,5 @@
 # paper.yaml -- The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
-# Citation key: 2026m. v1 concept DOI 10.5281/zenodo.19145205 (preserved). v2.1 concept DOI: [to be minted at release].
+# Citation key: 2026m. v1 concept DOI 10.5281/zenodo.19145205 (preserved). v2.0.0 concept DOI: [to be minted at release].
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
@@ -13,11 +13,11 @@ metadata:
       affiliation: "Independent Researcher"
       corresponding: true
   citation_key: "2026m"
-  doi: "[v2.1 concept DOI to be minted at release]"
+  doi: "[v2.0.0 concept DOI to be minted at release]"
   doi_v1: "10.5281/zenodo.19145205"
-  date: "TBD at v2.1 release"
-  version: "2.1"
-  status: pre-Zenodo (v2.1 draft; v1 preserved at zenodo.19145205)
+  date: "TBD at v2.0.0 release"
+  version: "2.0.0"
+  status: pre-Zenodo (v2.0.0 draft; v1 preserved at zenodo.19145205)
   license: "CC-BY-4.0"
   keywords:
     - organizational design
@@ -85,7 +85,7 @@ dependencies:
   - citation_key: "2026ag"
     role: "FOUNDATION: six-tier ontology this paper extends into a formal cascade apparatus."
   - citation_key: "2026l"
-    role: "DIRECT PRIOR ART: v1 single-step projection apparatus; v2.1 unfolds into six-tier cascade."
+    role: "DIRECT PRIOR ART: v1 single-step projection apparatus; v2.0.0 unfolds into six-tier cascade."
   - citation_key: "2026ak"
     role: "COMPANION: AI tier-penetration paper; P2 scope-condition boundary developed there."
 

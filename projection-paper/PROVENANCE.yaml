@@ -4,7 +4,7 @@
 provenance:
   paper_title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
   citation_key: "2026m"
-  repository: "spectralbranding/orgschema-papers/projection-paper-v2"
+  repository: "spectralbranding/orgschema-papers/projection-paper"
 
   versions:
     - version: "1.0.0"
@@ -13,13 +13,13 @@ provenance:
         Version 1 (v1). Single-step projection apparatus: positions are
         projections of process (Π: T_5 → T_6). Theory of function-position
         decoupling under AI deployment. Published at Zenodo. Preserved as
-        distinct conceptual predecessor to v2.1.
-      outcome: "Published preprint at Zenodo (concept DOI 10.5281/zenodo.19145205). Desk-rejected by OrgSci, AMR, JOD; major rewrite to v2.1 initiated."
+        distinct conceptual predecessor to v2.0.0.
+      outcome: "Published preprint at Zenodo (concept DOI 10.5281/zenodo.19145205). Desk-rejected by OrgSci, AMR, JOD; major rewrite to v2.0.0 initiated."
 
-    - version: "2.1.0-pre"
+    - version: "2.0.0-pre"
       date: "2026-05-09"
       description: >
-        Version 2.1 complete Phase-1 draft. Six-tier projection cascade
+        Version 2.0.0 complete Phase-1 draft. Six-tier projection cascade
         apparatus: Theorem 1 (cascade-equilibrium existence and uniqueness
         under tier-by-tier Banach contraction); Corollary 1 (junction-localizable
         information loss; sub-additivity of nullity). Position triple
@@ -31,7 +31,7 @@ provenance:
         (software engineering 2023-2026) staged separately; §3.5 numerical
         illustration fully reproducible from companion script (seed 2026).
         Post-2023 literature integrated per Perplexity-verified citations.
-      outcome: "Pre-Zenodo draft awaiting Phase 2-6 completion. v2.1 concept DOI to be minted at release."
+      outcome: "Pre-Zenodo draft awaiting Phase 2-6 completion. v2.0.0 concept DOI to be minted at release."
 
   review_pipeline_summary: >
     Four-source review pipeline completed prior to Zenodo upload: (1) internal
@@ -39,8 +39,8 @@ provenance:
     ADEQUATE to SHIP); (2) /review-literature (ADEQUATE; post-2023 literature
     gap addressed via Raisch-Fomina 2025 AMR, Dell'Acqua et al. 2026 Org Sci,
     Jia et al. 2024 AMJ); (3) Grok pre-draft structural review (r1-r3;
-    cascade reframe from v2.0 two-layer fixed-point to v2.1 six-tier
-    cascade at user direction); (4) Perplexity 6+ rounds of citation
+    cascade reframe from the two-layer fixed-point thesis to the six-tier
+    projection cascade at user direction); (4) Perplexity 6+ rounds of citation
     verification (DOI, author names, venue, year).
 
   companion_script:
@@ -50,7 +50,7 @@ provenance:
     reproduces: "All numerical values in §3.5 Table 3 and sub-additivity verification of Corollary 1"
 
   last_review: "2026-05-09"
-  readiness: "pre-submission v2.1 Phase-1 deliverable"
+  readiness: "pre-submission v2.0.0 final"
 
   submissions: []
 
