@@ -1,5 +1,5 @@
 # paper.yaml -- The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
-# Citation key: 2026m. v1 concept DOI 10.5281/zenodo.19145205 (preserved). v2.0.0 concept DOI: [to be minted at release].
+# Citation key: 2026m. Canonical concept DOI 10.5281/zenodo.19145205. Version-specific DOIs (traceability only): v2.0.0 https://doi.org/10.5281/zenodo.20100523; v1.0.0 https://doi.org/10.5281/zenodo.19145206.
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
@@ -15,9 +15,9 @@ metadata:
   citation_key: "2026m"
   doi: "10.5281/zenodo.19145205"
   doi_v1: "10.5281/zenodo.19145205"
-  date: "TBD at v2.0.0 release"
+  date: "2026-05-09"
   version: "2.0.0"
-  status: pre-Zenodo (v2.0.0 draft; v1 preserved at zenodo.19145205)
+  status: published 2026-05-09 (canonical concept DOI 10.5281/zenodo.19145205; version-specific DOIs in PROVENANCE.yaml)
   license: "CC-BY-4.0"
   keywords:
     - organizational design
