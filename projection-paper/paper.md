@@ -50,7 +50,7 @@ The third is *predictive* (empirical). The apparatus entails four falsifiable pr
 
 §2 reviews the design literature through the cascade lens. §3 develops the cascade apparatus, states Theorem 1 (existence and uniqueness of the cascade equilibrium under tier-by-tier contraction), and derives Corollary 1 (junction-localizable information loss). §4 demonstrates unification: Table 3 recovers the five major design theories as cascade restrictions, and §4.7 supplies the formal definition of the position triple. §5 derives the four falsifiable propositions P1–P4 from the apparatus. The empirical illustration the apparatus invites — drawing on three public software-engineering datasets covering 2023–2026 (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) — is staged as a forward pointer for companion empirical work and is not developed as a self-contained section here; full empirical implementation is left to companion papers. §7 discusses boundary conditions, scope-condition fragility, and implications for strategy implementation in AI-mediated firms.
 
-## Literature and Theoretical Background
+## §2. Literature and Theoretical Background
 
 The literature this paper engages spans five major foundational programs in organizational-design theory, each of which has produced a distinct primitive vocabulary and treats organizational structure as a function of variables the other programs do not share. The result is not contradiction — each program is internally coherent and empirically supported within its own scope — but *partial view*: each tradition operates at specific tier-pairs of the cascade we develop in §3 and treats the others as exogenous parameters or downstream consequences. This section reviews the substantive content the cascade absorbs from each tradition, foregrounds the recent work that has begun to surface the fragmentation as such, and identifies the gap that the cascade construction fills.
 
@@ -94,7 +94,7 @@ The literature reviewed above supplies the substantive content for each tier of 
 
 The §3 cascade construction supplies that apparatus. The §4 unification results show that the existing design theories — Galbraith's information-processing star, Williamson's governance choice, Mintzberg's configurational archetypes, Puranam's microstructural decomposition, and Burton-Obel-Håkonsson computational optimization — are recoverable as cascade restrictions: each is a specialization of the cascade in which a subset of the junctions is assumed full-rank, the parameter-Lipschitz constants at the unspecialized junctions are taken to zero, or the basis at a specific junction is held fixed. The §5 propositions supply the cascade's empirical content distinct from a tautological re-description of existing theory: P1's cascade-distance scaling, P2's strict downward propagation under AI deployment, P3's variance amplification with cumulative rank deficiency, and P4's algebraic-decoupling boundary condition together constitute predictions that no single existing tradition operating in isolation can derive. The empirical contribution of the cascade is that these four predictions are joint consequences of a single apparatus, falsifiable in public-data settings (§6), and grounded in the literatures reviewed above as substantive content rather than as primitives the cascade itself must stipulate.
 
-## The Projection Cascade
+## §3. The Projection Cascade
 
 This section stipulates the formal apparatus that the rest of the paper rests on. Six tiers, ordered from deepest organizational primitive (owner intent) to shallowest empirical surface (org-chart position), are linked by a sequence of linear projection operators. The cascade is rank-non-increasing tier-to-tier, so each junction admits a non-trivial kernel and an information-loss bound. A unique cascade-equilibrium exists under a contraction condition applied junction-by-junction; the global fixed point is recovered as a stack of local fixed points (Theorem 1).
 
@@ -272,7 +272,7 @@ The example also realizes the cascade Lipschitz bound of Theorem 1: the product 
 
 **Companion Computation Script.** All numerical values reported in this subsection — the per-junction κ_i and L_i, the iteration counts, the convergence distances, the rank of the composite cascade, and the sub-additivity gap — are reproducible from `code/cascade_numerical_example.py` with fixed seed 2026, run as `uv run --with numpy python code/cascade_numerical_example.py`. The script implements the cascade construction, the analytic operator-norm computation of κ_i and L_i, the parametric Banach iteration with tolerance 1e-10, the rank computation of the composite, and the verification of Corollary 1's sub-additivity bound. Per project documentation standards (PAPER_QUALITY_STANDARDS items 37a–37e), the script is the ground truth for any value cited as computed in §3.5; the paper is updated to match its stdout whenever the script is revised.
 
-## Cascade Restrictions
+## §4. Cascade Restrictions
 
 Existing organizational-design theories — Galbraith star, Burton-Obel-Hakonsson computational, Williamson hierarchy, Mintzberg configurations, Puranam microstructure — fix some tiers and model junctions. Each is a *restriction* of the cascade to a subset of tier-pairs. The cascade frame absorbs them as nested special cases without contradicting any. This subsection makes the nesting explicit, addressing the AE concern that different design theories appear to operate from different sets of givens.
 
@@ -332,12 +332,12 @@ where:
 
 A position is thus a *cascade-coordinate* object: each component is the image of a deeper tier under the appropriate cascade composition. The triple decomposes the position-as-projection statement of v1 into three cascade-coordinated channels (perception via T_5, authority via T_3, role via T_1), restoring the causal granularity that the v1 single-step Π collapsed.
 
-The connection to v1 is direct. v1's central claim — that positions are projections of process — was correct at the T_5 → T_6 junction (positions inherit perceptual content P_p from T_5) but silent on the upstream tiers from which authority A_p and role R_p descend [Zharnikov 2026l, §2.2]. v2.0.0 unfolds the v1 single-step projection into the six-tier cascade and supplies the upstream channels. The function-position decoupling phenomenon under AI deployment that motivates the paper is then specifically a *basis rotation at Π_{5→6}* that affects P_p (the activities the position performs) without affecting A_p or R_p (the title's authority and meaning) — a phenomenon the cascade predicts and the v1 single-step apparatus did not separately resolve.
+The connection to v1 is direct. v1's central claim — that positions are projections of process — was correct at the T_5 → T_6 junction (positions inherit perceptual content P_p from T_5) but silent on the upstream tiers from which authority A_p and role R_p descend (Zharnikov 2026l, §2.2). v2.0.0 unfolds the v1 single-step projection into the six-tier cascade and supplies the upstream channels. The function-position decoupling phenomenon under AI deployment that motivates the paper is then specifically a *basis rotation at Π_{5→6}* that affects P_p (the activities the position performs) without affecting A_p or R_p (the title's authority and meaning) — a phenomenon the cascade predicts and the v1 single-step apparatus did not separately resolve.
 
 
 ---
 
-## Predictions
+## §5. Predictions
 
 This section derives four falsifiable propositions from the cascade apparatus of §3-§4. Each proposition is an empirical implication of the formal structure — Theorem 1's parametric Banach contraction product, Corollary 1's nullity sub-additivity, the basis-rotation invariance of rank, and the scope conditions delimiting the population to which the cascade applies — that would be falsifiable in management-empirical work. Each proposition is paired with: (a) a formal statement, (b) a cascade-mechanism derivation in two to three sentences pointing back to the specific equation that licenses it, (c) a one-paragraph empirical-test sketch identifying data sources, identification strategy, and the form a refutation would take. The four predictions are deliberately distinct from each other in cascade content: P1 concerns the magnitude of cross-tier propagation; P2 concerns its directionality and its decomposition across the position triple; P3 concerns its variance under stochastic perturbation; P4 concerns its junction-by-junction algebraic structure.
 
@@ -359,7 +359,7 @@ Equivalently, the *fraction* of an intervention's magnitude that survives the ca
 
 **Cascade-mechanism derivation.** A basis rotation at Π_{5→6} preserves rank (the rotation is unitary on the operator's row space within T_5) and therefore leaves r_5 = d_5 − rank(Π_{5→6}) unchanged. The rotation alters which T_5 directions are read into which T_6 coordinates — it changes the *cell content* of the Tier-6 → Tier-5 mapping — without changing dim ker(Π_{5→6}) or im(Π_{5→6}). The components A_p (descended from T_3 by composition through Π_{3→6}) and R_p (descended from T_1 by composition through Π_{1→6}) inherit from cascade compositions that are *not* re-parameterized by a Π_{5→6}-only basis rotation, and so are invariant under T_5 → T_6 basis rotation alone.
 
-**Empirical test.** Software-engineering org structure under AI-coding-assistant deployment, 2023-2026, is the canonical setting (per §6 of the paper). Three public datasets jointly observe (i) change in routine-content per software-engineer position (Δ P_p; activities indexed by GitHub commit-pattern distributions and Stack Overflow Annual Developer Survey question-type distributions), (ii) change in authority allocation (Δ A_p; signing-authority and decision-rights changes via LinkedIn job-posting descriptions and HR data), (iii) change in cultural role expectation (Δ R_p; Glassdoor reviews and interview-script analysis). P2 predicts the AI-deployment shock is concentrated in (i) with (ii) and (iii) showing limited or no movement. The falsification mode is direct: AI-driven authority reallocation at scale (for instance, AI agents granted contractual signing authority across a representative panel of firms) would move A_p substantially, falsifying P2. A regime in which this occurs would constitute penetration of the T_3 legal-personhood floor and a transition outside scope condition (iv) of §3.4; companion corpus work develops the substrate-dependent boundary at which such penetration becomes feasible [Zharnikov 2026ak]. Within the modal regime delimited by scope condition (iv), the prediction is that basis rotation at Π_{5→6} dominates the observable change and the upstream channels remain stationary.
+**Empirical test.** Software-engineering org structure under AI-coding-assistant deployment, 2023-2026, is the canonical setting (per §6 of the paper). Three public datasets jointly observe (i) change in routine-content per software-engineer position (Δ P_p; activities indexed by GitHub commit-pattern distributions and Stack Overflow Annual Developer Survey question-type distributions), (ii) change in authority allocation (Δ A_p; signing-authority and decision-rights changes via LinkedIn job-posting descriptions and HR data), (iii) change in cultural role expectation (Δ R_p; Glassdoor reviews and interview-script analysis). P2 predicts the AI-deployment shock is concentrated in (i) with (ii) and (iii) showing limited or no movement. The falsification mode is direct: AI-driven authority reallocation at scale (for instance, AI agents granted contractual signing authority across a representative panel of firms) would move A_p substantially, falsifying P2. A regime in which this occurs would constitute penetration of the T_3 legal-personhood floor and a transition outside scope condition (iv) of §3.4; companion corpus work develops the substrate-dependent boundary at which such penetration becomes feasible (Zharnikov 2026ak). Within the modal regime delimited by scope condition (iv), the prediction is that basis rotation at Π_{5→6} dominates the observable change and the upstream channels remain stationary.
 
 ### *Proposition 3: Variance Amplification with Cascade Distance*
 
@@ -396,7 +396,7 @@ The four propositions establish, jointly, that the cascade is not a tautological
 
 ---
 
-## Discussion
+## §7. Discussion
 
 ### *Theoretical contributions*
 
@@ -462,13 +462,15 @@ Organizations are six-tier projection cascades. Information loss is junction-loc
 
 ## Acknowledgments
 
-The author thanks the editors and reviewers whose feedback informed prior versions of this work.
-
 AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
-*CRediT contributorship*: Dmitry Zharnikov: Conceptualization, Formal Analysis, Investigation, Methodology, Writing — original draft, Writing — review and editing.
+## CRediT contributions
 
-*Data availability*: All numerical values reported in §3.5 are reproducible from the companion script at https://github.com/spectralbranding/orgschema-papers/blob/main/projection-paper/code/cascade_numerical_example.py with fixed seed 2026. No primary data are reported in the manuscript.
+Zharnikov, Dmitry: Conceptualization; Methodology; Formal analysis; Investigation; Writing — original draft; Writing — review and editing.
+
+## Data availability
+
+All numerical values reported in §3.5 are reproducible from the companion script at https://github.com/spectralbranding/orgschema-papers/blob/main/projection-paper/code/cascade_numerical_example.py with fixed seed 2026. The §4.6 comparative-statics experiment runs with the `--compare` flag. No primary data are reported in the manuscript.
 
 ## Appendix A: Proof of Theorem 1
 
@@ -580,11 +582,6 @@ By condition (C_1'), the parametric family {F_1^{(x_1)}}_{x_1 ∈ B_1} is jointl
 
 46. Williamson, Oliver E. (1985). *The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting*. Free Press.
 
----
+47. Zharnikov, Dmitry. (2026ak). AI tier penetration: A theory of substrate-dependent competitive advantage. Working Paper. DOI 10.5281/zenodo.20087036.
 
-*Self-citations (Zharnikov 2026X):*
-
-
-[Z-1] Zharnikov, Dmitry. (2026ak). AI tier penetration: A theory of substrate-dependent competitive advantage. Working Paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI 10.5281/zenodo.20087037.
-
-[Z-2] Zharnikov, Dmitry. (2026l). The rendering problem: From genetic expression to brand perception. Working Paper. Concept DOI 10.5281/zenodo.19064426; v1 DOI 10.5281/zenodo.19064427.
+48. Zharnikov, Dmitry. (2026l). The rendering problem: From genetic expression to brand perception. Working Paper. DOI 10.5281/zenodo.19064426.
