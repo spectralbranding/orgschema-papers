@@ -8,7 +8,7 @@
 
 Specifically:
 
-- **Table 3** (per-junction cascade statistics): d_i, d_{i+1}, rank(Pi_{i->i+1}), r_i, kappa_i, L_i, iteration counts, ||x_{i+1}^* - x_{i+1}^{(0)}|| for i = 1..5.
+- **Table 2** (per-junction cascade statistics): d_i, d_{i+1}, rank(Pi_{i->i+1}), r_i, kappa_i, L_i, iteration counts, ||x_{i+1}^* - x_{i+1}^{(0)}|| for i = 1..5.
 - **Sub-additivity verification of Corollary 1**: r_total = 2, sum_i r_i = 3, strict-inequality status (gap = 1).
 - **Cascade Lipschitz bound of Theorem 1**: product_{j=1}^{5} L_j / (1 - kappa_j) = 3056.11.
 - **Maximum fixed-point residual** across the cascade: 2.38e-11 (tolerance 1e-10).

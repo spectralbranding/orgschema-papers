@@ -31,7 +31,7 @@ provenance:
         (software engineering 2023-2026) staged separately; §3.5 numerical
         illustration fully reproducible from companion script (seed 2026).
         Post-2023 literature integrated per Perplexity-verified citations.
-      outcome: "Pre-Zenodo draft awaiting Phase 2-6 completion. v2.0.0 concept DOI to be minted at release."
+      outcome: "Pre-Zenodo draft awaiting Phase 2-6 completion. v2.0.0 will be uploaded as a new version on the same Zenodo record (concept DOI 10.5281/zenodo.19145205)."
 
   review_pipeline_summary: >
     Four-source review pipeline completed prior to Zenodo upload: (1) internal

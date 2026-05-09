@@ -4,7 +4,7 @@
 
 ORCID: 0009-0000-6893-9231
 
-DOI: [v2.0.0 concept DOI to be minted at release; v1 preserved at 10.5281/zenodo.19145205]
+DOI: [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205)
 
 Working Paper v2.0.0 -- May 2026
 
@@ -34,7 +34,7 @@ The design literature has produced powerful but incompatible primitives. Galbrai
 
 Joseph and Sengul (2025) diagnose precisely this fragmentation in *Journal of Management*, surveying current insights and future research directions across the organization-design field and arguing that complementary lenses should be made algebraically commensurable rather than treated as rival accounts. Their diagnosis is correct as far as it goes, but it stops short of supplying the unifying object. The result is a literature in which a "span-of-control" question routed to a configurational scholar produces a different answer from the same question routed to a transaction-cost scholar, and the disagreement persists not because the empirical phenomenon is ambiguous but because the underlying primitives are non-comparable.
 
-This paper supplies the missing apparatus — a six-tier projection cascade with junction-localizable information loss — and demonstrates that the existing theories nest inside it as cascade restrictions (§4, Table 2).
+This paper supplies the missing apparatus — a six-tier projection cascade with junction-localizable information loss — and demonstrates that the existing theories nest inside it as cascade restrictions (§4, Table 3).
 
 ### *Contribution roadmap*
 
@@ -48,7 +48,7 @@ The third is *predictive* (empirical). The apparatus entails four falsifiable pr
 
 ### *Plan of the paper*
 
-§2 reviews the design literature through the cascade lens. §3 develops the cascade apparatus, states Theorem 1 (existence and uniqueness of the cascade equilibrium under tier-by-tier contraction), and derives Corollary 1 (junction-localizable information loss). §4 demonstrates unification: Table 2 recovers the five major design theories as cascade restrictions, and §4.7 supplies the formal definition of the position triple. §5 derives the four falsifiable propositions P1–P4 from the apparatus. The empirical illustration the apparatus invites — drawing on three public software-engineering datasets covering 2023–2026 (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) — is staged as a forward pointer for companion empirical work and is not developed as a self-contained section here; full empirical implementation is left to companion papers. §7 discusses boundary conditions, scope-condition fragility, and implications for strategy implementation in AI-mediated firms.
+§2 reviews the design literature through the cascade lens. §3 develops the cascade apparatus, states Theorem 1 (existence and uniqueness of the cascade equilibrium under tier-by-tier contraction), and derives Corollary 1 (junction-localizable information loss). §4 demonstrates unification: Table 3 recovers the five major design theories as cascade restrictions, and §4.7 supplies the formal definition of the position triple. §5 derives the four falsifiable propositions P1–P4 from the apparatus. The empirical illustration the apparatus invites — drawing on three public software-engineering datasets covering 2023–2026 (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) — is staged as a forward pointer for companion empirical work and is not developed as a self-contained section here; full empirical implementation is left to companion papers. §7 discusses boundary conditions, scope-condition fragility, and implications for strategy implementation in AI-mediated firms.
 
 ## Literature and Theoretical Background
 
@@ -254,7 +254,7 @@ To make the apparatus concrete and to verify that the contraction conditions and
 
 For this example the junction operator F_i^{(x_i)}(y) = Π(x_i + A(y) − A(Π(x_i))) admits the closed-form Lipschitz analysis κ_i = ‖Π ∘ A‖_op (uniform in x_i) and L_i = ‖(I − Π ∘ A) ∘ Π‖_op, both of which are computed directly from the operator matrices. A starting point x_1 ∈ B_1 was drawn from the same generator, normalized to lie at half the bounded-set radius, and the cascade was iterated junction-by-junction with tolerance 1e-10 on successive-iterate distance. Convergence was achieved at every junction; the maximum residual ‖F_i^{(x_i)}(x_{i+1}^*) − x_{i+1}^*‖ over the cascade is 2.38e-11, well within tolerance.
 
-`Table 3: Per-Junction Cascade Statistics for the Numerical Illustration. Computed from code/cascade_numerical_example.py with seed 2026.`
+`Table 2: Per-Junction Cascade Statistics for the Numerical Illustration. Computed from code/cascade_numerical_example.py with seed 2026.`
 
 | i | d_i | d_{i+1} | rank(Π_{i→i+1}) | r_i | κ_i | L_i | iterations | ‖x_{i+1}^* − x_{i+1}^{(0)}‖ |
 |---|---|---|---|---|---|---|---|---|
@@ -300,17 +300,17 @@ Puranam (2018) operates at the **T_4 ↔ T_5 ↔ T_6 junction-pair**. The micros
 
 Each of the five theories is a cascade restriction obtained by fixing some tiers and modeling specific junctions. None contradicts the cascade; each is recovered by setting d_i = 0 (eliminating the tier) or by treating the corresponding tier as fixed input. The cascade unifies them by supplying the depth ordering and the inter-junction projection apparatus; the existing theories supply the per-junction substantive content. This nesting structure dissolves the appearance that the field has multiple competing design theories operating from incompatible primitives — the primitives are the same six tiers; each theory operates at a different cascade restriction.
 
-`Table 2: Cascade Restrictions Across Design Theories. Each row decomposes a design theory into the cascade junctions it models actively, the tiers it parameterizes as fixed input, and the inter-junction dynamics it folds into a black box.`
+`Table 3: Cascade Restrictions Across Design Theories. Each row decomposes a design theory into the cascade junctions it models actively, the tiers it parameterizes as fixed input, and the inter-junction dynamics it folds into a black box.`
 
-| Theory | Junctions modeled (active) | Junctions parameterized (fixed) | Junctions folded into black box | Implicit r_i pattern | Operates as |
-|---|---|---|---|---|---|
-| Galbraith star (1977) | Π_{2→3}, Π_{3→4}, Π_{5→6} | T_1 (cultural input) | Π_{4→5} (process derivation from architecture) | Full-rank assumed at active junctions; misalignment treated as off-equilibrium rather than rank deficiency | Multi-junction simultaneous-contraction restriction |
-| Burton-Obel-Hakonsson (2020) | Π_{2→3}, Π_{3→6} (collapsed) | T_1, T_2 contingency factors | Π_{3→4}, Π_{4→5}, Π_{5→6} (configuration as single optimization output) | Rank deficiency of collapsed Π_{3→6} treated as misfit cost rather than algebraic property | Optimization-collapsed restriction (T_3 to T_6 as single step) |
-| Williamson hierarchies (1985) | Π_{2→3} | T_1 cultural input; T_2 asset specificity exogenous | Π_{3→4}, Π_{4→5}, Π_{5→6} (downstream of T_3 governance) | Full-rank Π_{2→3} per governance form; downstream rank deficiencies absorbed into the chosen governance type | Single-junction restriction at T_2/T_3 with derived downstream |
-| Mintzberg configurations (1979) | Π_{5→6} | T_1, T_2, T_3 (configuration-determining parameters) | Π_{1→2}, Π_{2→3}, Π_{3→4}, Π_{4→5} | Configurational stability requires near-equilibrium contraction at Π_{5→6}; cluster discreteness implies r_5 piecewise constant within configurations | Single-junction restriction at T_5/T_6 with discrete-configuration parameters |
-| Puranam microstructure (2018) | Π_{4→5}, Π_{5→6} | T_1, T_2, T_3 (treated as exogenous priors) | Π_{1→2}, Π_{2→3}, Π_{3→4} | Rank deficiencies r_4 and r_5 are the explicit object of analysis (goal decomposition; task allocation) | Two-junction lower-cascade restriction at T_4/T_5/T_6 |
+| Theory | Active junctions | Parameterized tiers | Folded junctions | Implicit r_i pattern |
+|---|---|---|---|---|
+| Galbraith star (1977) | Π_{2→3}, Π_{3→4}, Π_{5→6} | T_1 | Π_{4→5} | Full-rank actives; misalignment treated as off-equilibrium |
+| Burton-Obel-Hakonsson (2020) | Π_{2→3}, Π_{3→6} (collapsed) | T_1, T_2 | Π_{3→4}, Π_{4→5}, Π_{5→6} | Rank deficiency of collapsed Π_{3→6} treated as misfit cost |
+| Williamson hierarchies (1985) | Π_{2→3} | T_1, T_2 | Π_{3→4}, Π_{4→5}, Π_{5→6} | Full-rank Π_{2→3} per governance form; downstream absorbed |
+| Mintzberg configurations (1979) | Π_{5→6} | T_1, T_2, T_3 | Π_{1→2}, Π_{2→3}, Π_{3→4}, Π_{4→5} | Configurational contraction at Π_{5→6}; r_5 piecewise constant |
+| Puranam microstructure (2018) | Π_{4→5}, Π_{5→6} | T_1, T_2, T_3 | Π_{1→2}, Π_{2→3}, Π_{3→4} | r_4, r_5 explicit (goal decomposition; task allocation) |
 
-*Notes*: "Active" junctions are those for which the theory supplies explicit machinery linking adjacent tiers. "Parameterized" tiers are treated as fixed input or boundary condition. "Folded" junctions are subsumed into a derived or assumed relationship and are not separately analyzed. The "Operates as" column gives the cascade-restriction interpretation in one phrase. Table 2 addresses the editorial concern raised on v1 that different design theories appeared to operate from incompatible sets of givens; the cascade renders the differences as choices over which junctions are made first-class objects of analysis.
+*Notes*: "Active" junctions are those for which the theory supplies explicit machinery linking adjacent tiers. "Parameterized" tiers are treated as fixed input or boundary condition. "Folded" junctions are subsumed into a derived or assumed relationship and are not separately analyzed. Table 3 renders the apparent fragmentation of the design literature as choices over which junctions are made first-class objects of analysis, addressing the editorial concern that different design theories appeared to operate from incompatible sets of givens.
 
 The matrix reveals that the field's apparent fragmentation is a Cartesian product of (which junctions explicit) × (which tiers fixed) × (which junctions folded). Each existing theory occupies one cell of this product space; none contradicts the cascade construction; each is recovered as the cascade restricted to its active-junction subset. The cascade unifies the field by making all six tiers and five junctions co-equal first-class objects, and by exposing the implicit choices — which tiers are taken as parameters, which junctions are folded into derivations — that constitute the differentiating commitments of each design theory.
 
@@ -381,8 +381,6 @@ The variance of T_6 outcomes therefore scales geometrically with the cascade-dis
 
 **Empirical test.** P4 requires firm-level data on per-tier perturbation propagation. For each junction i, estimate the variance of T_{i+1} content explained by T_i content; the residual variance is the empirical proxy for the per-junction kernel. Sum the per-junction empirical kernels across i = 1..5 and compare to the total variance of T_6 content unexplained by T_1 content (the cascade-kernel proxy). Strict inequality (Σ junction-kernels > cascade kernel) identifies the partial-absorption regime; equality identifies the fully-decoupled regime. The proposition is qualitatively novel in management theory: existing design literatures (Galbraith star, Mintzberg configurations, Burton-Obel-Hakonsson computational design) implicitly assume decoupled junctions, so P4's strict-inequality regime constitutes a new empirical claim about how cascade information flow operates in real firms. The "dark side of modularity" literature in strategic management identifies a kernel-absorption phenomenon at the architectural-modularity boundary that is consistent with the strict-inequality side of P4. Falsification mode: equality empirically dominant across a representative cross-section of firms refutes the strict-inequality regime as the modal case and would push the cascade frame toward Galbraith's implicit decoupled assumption.
 
-### *Summary of Cascade-Derived Predictions*
-
 `Table 4: Four Cascade-Derived Predictions. Each row links a falsifiable proposition to the cascade-apparatus equation that licenses it, the empirical-test setting, and the form a refutation would take.`
 
 | Proposition | Cascade mechanism | Empirical-test anchor | Falsification mode |
@@ -404,7 +402,7 @@ The four propositions establish, jointly, that the cascade is not a tautological
 
 The cascade carries three theoretical contributions, each anchored to a specific §3-§5 result rather than asserted in the abstract.
 
-The first is *unification*. The five major design traditions surveyed in §2 — Galbraith's information-processing star, Williamson's governance-cost hierarchies, Mintzberg's configurational gestalts, Puranam's microstructural composition, and Burton-Obel-Håkonsson's computational design — are recoverable as nested cascade restrictions. §4 and Table 2 spell out which projections each tradition retains as endogenous and which it absorbs into exogenous parameters. What appeared in the design-theory literature as competing ontological commitments are revealed as partial views: each tradition operates at a specific tier-pair while treating the remaining tiers as fixed. The cascade supplies the apparatus that absorbs them as coordinated cases without forcing any tradition to surrender its native explanatory domain.
+The first is *unification*. The five major design traditions surveyed in §2 — Galbraith's information-processing star, Williamson's governance-cost hierarchies, Mintzberg's configurational gestalts, Puranam's microstructural composition, and Burton-Obel-Håkonsson's computational design — are recoverable as nested cascade restrictions. §4 and Table 3 spell out which projections each tradition retains as endogenous and which it absorbs into exogenous parameters. What appeared in the design-theory literature as competing ontological commitments are revealed as partial views: each tradition operates at a specific tier-pair while treating the remaining tiers as fixed. The cascade supplies the apparatus that absorbs them as coordinated cases without forcing any tradition to surrender its native explanatory domain.
 
 The second is *position formalization*. §4.7's triple p = (P_p, A_p, R_p) decomposes any T_6 position into perceptual content from T_5, authority inherited from T_3, and role expectation traceable to T_1. The decomposition resolves an ambiguity that has persisted across the design literature concerning whether position is a primitive (as in Mintzberg's structural configurations), a microstructural compound (as in Puranam's micro-design building blocks), or a residual of strategic governance choice (as in Williamson's hierarchies). Within the cascade it is none of these in isolation: position is a cascade-coordinate object whose three components inherit from distinct upstream tiers via composed projections. Whether the apparatus is the only formalization with this property is a separate question; that it produces a tractable decomposition consistent with each tradition's home-tier observations is what §4.7 establishes.
 

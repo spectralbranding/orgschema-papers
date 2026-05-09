@@ -9,7 +9,7 @@ authors:
 title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
 version: "2.0.0-pre"
 date-released: "TBD at v2.0.0 release"
-doi: "[to be minted at v2.0.0 release]"
+doi: "10.5281/zenodo.19145205"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 url: "https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper"
 license: CC-BY-4.0
@@ -35,5 +35,5 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
   year: 2026
-  doi: "[to be minted at v2.0.0 release]"
+  doi: "10.5281/zenodo.19145205"
   notes: "Version 2.0.0. v1 preserved at https://doi.org/10.5281/zenodo.19145205"
