@@ -1,0 +1,39 @@
+cff-version: "1.2.0"
+message: "If you use this paper, please cite it as below."
+type: article
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
+version: "2.1.0-pre"
+date-released: "TBD at v2.1 release"
+doi: "[to be minted at v2.1 release]"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+url: "https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper-v2"
+license: CC-BY-4.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19145205"
+    description: "Zenodo v1 concept DOI (preserved; v1 paper distinct from v2.1)"
+keywords:
+  - organizational design
+  - projection cascade
+  - information loss
+  - reorganization failure
+  - AI deployment
+  - position structure
+  - design theory
+  - fixed-point theory
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
+  year: 2026
+  doi: "[to be minted at v2.1 release]"
+  notes: "Version 2.1. v1 preserved at https://doi.org/10.5281/zenodo.19145205"

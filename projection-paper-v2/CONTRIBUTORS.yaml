@@ -1,0 +1,44 @@
+# CONTRIBUTORS.yaml -- The Projection Cascade
+# Verified contributor attribution per the Research-as-Repository protocol
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    type: human
+    roles:
+      - conceptualization
+      - methodology
+      - formal-analysis
+      - writing-original
+      - writing-review
+      - project-administration
+    affiliation: "Independent Researcher"
+    first_commit: "2026-05-09"
+
+  - name: "Claude (Anthropic)"
+    type: ai
+    roles:
+      - literature-search
+      - editorial-refinement
+    contributions: >
+      Initial literature search and editorial refinement during manuscript
+      preparation. All theoretical claims, propositions, and interpretations
+      are the author's sole responsibility.
+
+  - name: "Grok (xAI)"
+    type: ai
+    roles:
+      - literature-search
+      - editorial-refinement
+    contributions: >
+      Pre-draft structural review and editorial refinement during manuscript
+      preparation.
+
+  - name: "Gemini (Google)"
+    type: ai
+    roles:
+      - literature-search
+      - editorial-refinement
+    contributions: >
+      Initial literature search and editorial refinement during manuscript
+      preparation.
