@@ -353,11 +353,11 @@ Three falsifiable predictions follow that the frictionless model cannot generate
 
 *Theoretical Implications for Marketing Finance*
 
-The Mizik and Jacobson (2003, 2009) empirical signature — brand-capital stock commands a valuation premium independent of current advertising spend — is a portfolio consequence of the δ₄ ≪ δ₆ differential derived in the Theoretical Foundations section. Firms accumulating Tier-4 stock while maintaining moderate Tier-6 flow achieve the valuation premium because S₄* is large and durable. Firms harvesting Tier-4 stock by diverting investment to Tier-6 flow achieve short-run earnings improvement at the cost of long-run stock depletion — exactly the trade-off Mizik and Jacobson document, now explained by the structural non-fungibility of the two investment categories.
+The Mizik and Jacobson (2003, 2009) empirical signature — brand-capital stock commands a valuation premium independent of current advertising spend — is a portfolio consequence of the δ₄ ≪ δ₆ differential derived in the Theoretical Foundations section. Firms accumulating Tier-4 stock while maintaining moderate Tier-6 flow achieve the valuation premium because S₄* is large and durable. Firms harvesting Tier-4 stock by diverting investment to Tier-6 flow achieve short-run earnings improvement at the cost of long-run stock depletion — exactly the trade-off Mizik and Jacobson document, now explained by the structural non-fungibility of the two investment categories. External capital-markets evidence is consistent with the model's predicted Tier-4 valuation premium. Brand Finance's *World's Most Valuable B2B Brands 2026* (Brand Finance 2026) finds that AAA-rated B2B brands trade at 20.9× EBIT, 19.7× forward P/E, and 3.4× revenue, versus 14.3×, 11.9×, and 1.0× respectively for B-rated peers (the 65% forward-P/E premium representing the headline gap). Aggregate B2B brand value reached $4 trillion in 2026, equal to approximately 11% of total enterprise value across the 300-firm sample.
 
 *Managerial Implications*
 
-Four practical implications follow directly. Firms approaching exit should audit tier-allocation ratios prospectively: high surface-tier intensity signals elevated goodwill-impairment risk and discounted acquisition multiples. PE-backed firms should calibrate optimal Tier-6 compression to hold-period discount rate; the residual sale creates impairment risk for the next buyer. Long-horizon investors should screen targets for w₄/w₅ share as a value indicator analogous to price-to-book. Governance structures should align the principal's effective discount rate with the tier-allocation portfolio: founder-controlled firms with Tier-6-heavy portfolios face a structural misalignment that the agency extension predicts produces equilibrium over-investment in marketing surface.
+Four practical implications follow directly. Firms approaching exit should audit tier-allocation ratios prospectively: high surface-tier intensity signals elevated goodwill-impairment risk and discounted acquisition multiples. PE-backed firms should calibrate optimal Tier-6 compression to hold-period discount rate; the residual sale creates impairment risk for the next buyer. Long-horizon investors should screen targets for w₄/w₅ share as a value indicator analogous to price-to-book. Governance structures should align the principal's effective discount rate with the tier-allocation portfolio: founder-controlled firms with Tier-6-heavy portfolios face a structural misalignment that the agency extension predicts produces equilibrium over-investment in marketing surface. Recent enterprise-survey data (Gartner 2026) corroborate this prediction: among 350 AI-deploying enterprises, 80% reported workforce reductions but the firms achieving higher ROI exhibited equivalent reduction rates to those with negative outcomes — workforce reduction at the operational tier does not, on its own, translate into the multi-tier value-creation the cascade predicts.
 
 ---
 
@@ -433,6 +433,8 @@ Bertrand, Marianne, and Antoinette Schoar. (2006). The role of family in family 
 
 Bloom, Nicholas, Raffaella Sadun, and John Van Reenen. (2012). The organization of firms across countries. *Quarterly Journal of Economics*, 127(4), 1663–1705. DOI: 10.1093/qje/qje029.
 
+Brand Finance. (2026). *World's Most Valuable B2B Brands 2026*. London: Brand Finance. https://brandirectory.com/reports/b2b
+
 Corrado, Carol A., Charles R. Hulten, and Daniel E. Sichel. (2009). Intangible capital and U.S. economic growth. *Review of Income and Wealth*, 55(3), 661–685. DOI: 10.1111/j.1475-4991.2009.00343.x.
 
 Dierickx, Ingemar, and Karel Cool. (1989). Asset stock accumulation and sustainability of competitive advantage. *Management Science*, 35(12), 1504–1511. DOI: 10.1287/mnsc.35.12.1504.
@@ -456,6 +458,8 @@ Galunic, D. Charles, and Kathleen M. Eisenhardt. (1996). The evolution of intrac
 Ghemawat, Pankaj. (1991). *Commitment: The Dynamic of Strategy*. New York: Free Press. ISBN: 978-0029116715.
 
 Ghemawat, Pankaj, and Daniel Levinthal. (2008). Choice interactions and business strategy. *Management Science*, 54(9), 1638–1651. DOI: 10.1287/mnsc.1080.0883.
+
+Gartner. (2026, May 5). Gartner Says Autonomous Business and AI Layoffs May Create Budget Room, but Do Not Deliver Returns [press release]. Stamford, CT: Gartner. https://www.gartner.com/en/newsroom/press-releases/2026-05-05-gartner-says-autonomous-business-and-artificial-intelligence-layoffs-may-create-budget-room-but-do-not-deliver-returns
 
 Glaser, Markus, Florencio Lopez-de-Silanes, and Zacharias Sautner. (2013). Opening the black box: Internal capital markets and managerial power. *Journal of Finance*, 68(4), 1577–1631. DOI: 10.1111/jofi.12046.
 

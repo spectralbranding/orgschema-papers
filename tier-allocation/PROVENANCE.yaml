@@ -56,6 +56,26 @@ provenance:
         Citable working paper. Concept DOI 10.5281/zenodo.20072288; v1 DOI
         10.5281/zenodo.20072289. Target venue: Strategic Management Journal.
 
+    - version: "1.0.0+Session145"
+      date: "2026-05-10"
+      title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+      description: >
+        Applied two PENDING_UPDATES entries (Brand Finance B2B 2026 + Gartner
+        AI/ROI 2026). Brand Finance: 3-sentence paragraph added at end of
+        "Theoretical Implications for Marketing Finance" section (AAA vs B EBIT
+        multiples; $4T B2B brand value). Brand Finance (2026) reference added
+        alphabetically after Bloom (2012) in References. Gartner: 1-sentence
+        paragraph added at end of "Managerial Implications" section (350-enterprise
+        survey; no ROI correlation with workforce reduction). Gartner (2026)
+        reference added alphabetically after Ghemawat-Levinthal (2008) in
+        References. 3 deferred items (non-AI exemplars; 2026ak forward-ref; CES
+        generalization) left QUEUED per original react-only gating logic.
+        Self-cite density unchanged at 2/64 = 3.1% (no self-cites added).
+      outcome: >
+        Staged for next Zenodo re-upload (v1.1.0). No version bump until upload
+        is minted. SMJ submission window open; PENDING_UPDATES applied to
+        Zenodo PDF as part of pre-submission staging.
+
   submissions: []
 
   forks: []
