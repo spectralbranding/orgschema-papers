@@ -107,6 +107,25 @@ provenance:
         Incorporated into v1.1.0 pre-upload revision set. Zenodo upload
         pending alongside other v1.1.0 changes.
 
+    - version: "1.1.0+Session145"
+      date: "2026-05-10"
+      title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+      description: >
+        Applied two PENDING_UPDATES entries from export/brand-as-tier4/PENDING_UPDATES.md.
+        (1) 2026m back-cite: added one sentence at end of Theoretical contribution
+        subsection citing Zharnikov (2026m) cascade contraction theorem. Zharnikov
+        (2026m) reference added to end of Zharnikov block in References.
+        (2) Brand Finance B2B 2026: added 3-sentence paragraph at end of "Marketing
+        budget as flow component" section with AAA vs B-rated B2B brand valuation
+        data (65% forward-P/E premium; 45% EBIT gap; $4T aggregate value). Brand
+        Finance (2026) reference added alphabetically between Boyd (2010) and Daly
+        (2004). Both edits applied to SSOT and to public mirror simultaneously.
+        Self-cite density: 7/83 = 8.4% (up from 6/82 = 7.3%; SMJ target; already
+        above 3% SMJ norm but 2026ah is a JM-tier not pure-strategy target).
+      outcome: >
+        Staged for next Zenodo re-upload (v1.1.0 or later). No version bump;
+        version stays at 1.1.0 until Zenodo upload is minted.
+
   forks: []
 
   spin_offs_logged: []
