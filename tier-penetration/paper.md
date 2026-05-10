@@ -218,6 +218,8 @@ The diagnostic indicator is a sign flip in the long-run-value effect of AI betwe
 
 *Falsification*: P3 is falsified if no sign flip in the long-run AI-value effect is observed between long-horizon and short-horizon principals at matched aggregate AI spend, conditional on σ ≥ 1 prevailing in the sample's tier-complementarity structure.
 
+Aggregate enterprise-survey evidence is consistent with P3. Gartner (2026) surveyed 350 global enterprises with at least $1 billion in revenue, all of which were piloting or deploying autonomous AI capabilities. Eighty percent reported workforce reductions tied to AI initiatives. Critically, the workforce-reduction rate was nearly identical for firms reporting higher ROI versus those experiencing only modest gains or negative outcomes — i.e., the magnitude of workforce reduction had no measurable correlation with ROI realization. Some respondents had cut up to 20% of headcount. The Klarna and BloombergGPT cases are not isolated anomalies; they are predictable consequences of treating tier-6 cost reduction as a substitute for cascade-deeper substrate investment. As Gartner Distinguished VP Analyst Helen Poitevin stated: "Many CEOs turn to layoffs to demonstrate quick AI returns; however, this disposition is misplaced. Workforce reductions may create budget room, but they do not create return."
+
 *Table 3: Three Core Propositions with Mechanisms and Diagnostic Indicators.*
 
 | Proposition | Shock pattern | Sign condition | Diagnostic indicator | Illustrative anchor |
@@ -439,6 +441,8 @@ Eisfeldt, Andrea L., and Dimitris Papanikolaou. (2013). Organization capital and
 Felten, Edward W., Manav Raj, and Robert Seamans. (2021). Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses. *Strategic Management Journal*, 42(12), 2195-2217. DOI: 10.1002/smj.3286.
 
 Foss, Nicolai J., and Peter G. Klein. (2014). Why managers still matter. *MIT Sloan Management Review*, 56(1), 73-80.
+
+Gartner. (2026, May 5). Gartner Says Autonomous Business and AI Layoffs May Create Budget Room, but Do Not Deliver Returns [press release]. Stamford, CT: Gartner. https://www.gartner.com/en/newsroom/press-releases/2026-05-05-gartner-says-autonomous-business-and-artificial-intelligence-layoffs-may-create-budget-room-but-do-not-deliver-returns
 
 Grant, Robert M. (1996). Toward a knowledge-based theory of the firm. *Strategic Management Journal*, 17(S2), 109-122. DOI: 10.1002/smj.4250171110.
 

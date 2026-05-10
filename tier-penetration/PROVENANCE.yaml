@@ -60,6 +60,21 @@ provenance:
         Citable working paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI
         10.5281/zenodo.20087037. Target venue: Strategic Management Journal.
 
+    - version: "1.0.0+Session145"
+      date: "2026-05-10"
+      title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
+      description: >
+        Applied PENDING_UPDATES Gartner AI/ROI 2026 entry. Inserted paragraph
+        after P3 Falsification statement (before Table 3) with Gartner (2026) 350-
+        enterprise survey data showing no ROI correlation with workforce reduction;
+        includes Helen Poitevin quote anchor. Gartner (2026) reference added
+        alphabetically before Grant (1996) in References. Applied to SSOT and public
+        mirror simultaneously. Self-cite density unchanged at 6/63 = 9.5% (Gartner
+        is a non-self-cite; no self-cites added).
+      outcome: >
+        Staged for next Zenodo re-upload (v1.0.1 or v1.1.0). No version bump until
+        upload is minted.
+
   submissions: []
 
   forks: []
