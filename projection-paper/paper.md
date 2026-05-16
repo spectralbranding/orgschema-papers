@@ -456,6 +456,10 @@ Four research directions follow naturally from the apparatus.
 
 *Empirical illustration (Path B — companion paper).* The §1 plan of the paper described a §6 empirical illustration drawing on three public software-engineering datasets (GitHub commit-level activity, Stack Overflow developer surveys, and LinkedIn job-posting text) to demonstrate P2's basis-rotation claim in the software-engineering sector 2023–2026. For the first SMJ submission, Path B has been selected: the empirical illustration is deferred to a companion empirical paper whose framework is staged at `research/PROJECTION_PAPER_PHASE2_EMPIRICAL_FRAMEWORK.md`. This paper presents the theoretical apparatus in full (§1–§5 and §7); the companion paper will provide the empirical evidence. References to §6 in §5's empirical-test paragraphs and in §7's boundary-condition and AI-strategy discussions should be read as forward pointers to that companion work.
 
+### *An open meta-question*
+
+The cascade apparatus is a linear-algebra structure — projection operators, parametric composition, contraction conditions — developed for its mathematical tractability rather than from any prior commitment to organizational ontology. That the structure recovers Galbraith, Williamson, Mintzberg, Puranam, and Burton-Obel-Håkonsson as nested restrictions, and that it generates falsifiable propositions about organizational outcomes, is an empirical fact about the apparatus rather than an a priori one. The classical version of this puzzle — why abstract mathematics developed without commitment to a substrate should describe physical reality so well — was posed by Wigner (1960). Whether the same question applies one tier up, to social and organizational substrates rather than physical ones, is outside the scope of the present paper but is the natural meta-question the apparatus invites. The cascade documents an instance of the puzzle rather than answering it.
+
 ### *Conclusion*
 
 Organizations are six-tier projection cascades. Information loss is junction-localizable. The five major design traditions surveyed in §2 are nested restrictions of the same apparatus, recoverable by treating the projections each tradition holds fixed as exogenous. The apparatus entails four falsifiable propositions about reorganization efficacy, AI deployment, variance amplification, and junction-decoupling that no single tradition derives in isolation. The reorganization-failure regularity that motivated the paper is not a puzzle of poor execution — it is what the cascade predicts when interventions are targeted at the surface T_6 without addressing upstream rank deficiencies. Reorganization works when its depth matches the cascade-distance to the desired effect; it fails when surface and substrate are confused. The cascade supplies the apparatus for telling them apart.
@@ -580,8 +584,10 @@ By condition (C_1'), the parametric family {F_1^{(x_1)}}_{x_1 ∈ B_1} is jointl
 
 45. Weick, Karl E. (1979). *The Social Psychology of Organizing*, 2nd ed. Addison-Wesley. ISBN 0-201-08591-2.
 
-46. Williamson, Oliver E. (1985). *The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting*. Free Press.
+46. Wigner, Eugene P. (1960). The unreasonable effectiveness of mathematics in the natural sciences. *Communications on Pure and Applied Mathematics*, 13(1):1–14. DOI 10.1002/cpa.3160130102.
 
-47. Zharnikov, Dmitry. (2026ak). AI tier penetration: A theory of substrate-dependent competitive advantage. Working Paper. DOI 10.5281/zenodo.20087036.
+47. Williamson, Oliver E. (1985). *The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting*. Free Press.
 
-48. Zharnikov, Dmitry. (2026l). The rendering problem: From genetic expression to brand perception. Working Paper. DOI 10.5281/zenodo.19064426.
+48. Zharnikov, Dmitry. (2026ak). AI tier penetration: A theory of substrate-dependent competitive advantage. Working Paper. DOI 10.5281/zenodo.20087036.
+
+49. Zharnikov, Dmitry. (2026l). The rendering problem: From genetic expression to brand perception. Working Paper. DOI 10.5281/zenodo.19064426.
