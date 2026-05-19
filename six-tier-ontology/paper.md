@@ -61,13 +61,38 @@ The six-tier ontology specifies each tier of an acquisition target by its govern
 | 5 | Process | Management | SOPs + workflow maps + ERP configuration + supply-chain architecture | If codified; tacit if not |
 | 6 | Organization | People and culture | Roles + employment contracts + tacit knowledge + relational networks | Partial only (retention contracts at best) |
 
-*Notes*: Tiers are ordered by position in the constraint hierarchy (Tier 1 highest, Tier 6 lowest). SBT = Spectral Brand Theory (Zharnikov 2026a); the SBT eight-dimension framework is one example of a precision specification instrument for Tier 4. The service hierarchy runs in the opposite direction — upward from Tier 6 to Tier 1. The "Service Hierarchy and Constraint Hierarchy" subsection develops both hierarchies formally.
+*Notes*: Tiers are ordered by position in the constraint hierarchy (Tier 1 highest, Tier 6 lowest). SBT = Spectral Brand Theory (Zharnikov 2026a); the SBT eight-dimension framework is one example of a precision specification instrument for Tier 4. The service hierarchy runs in the opposite direction — upward from Tier 6 to Tier 1. The "Service Hierarchy and Constraint Hierarchy" subsection develops both hierarchies formally. Two attribution refinements developed in the per-tier sections below merit notice here: Tier 1 attaches to the controlling principal rather than to the asset and imprints onto the asset's downstream tiers (Figure 2 and its accompanying paragraph); Tier 3 is the most jurisdictionally mutable of the six tiers — the legal vehicle can swap (redomiciliation, opco/holdco interposition, sole-proprietor-to-LLC conversion) while Tiers 2, 4, 5, and 6 continue — so the persistent identity of a business does not reside in Tier 3.
 
 ### *Tier 1 — Owner Intent*
 
 Owner Intent is the psychic and strategic commitment of the controlling principal — the answer to "why does this exist, and when would it be rational to stop?" It is topmost in the constraint hierarchy because it constrains every downstream choice. Its specification surface is stated purpose, time horizon, and exit criteria, observable in founding documents, investor communications, and interview data. Theoretically, Schumpeter (1934) grounds the entrepreneurial function as domain commitment, not financial optimization; Jensen and Meckling (1976) supply the principal-agent framing in which Intent is the principal's objective function; Selznick's (1957) "infusion with value" supplies the structural precursor to the flip case below; Marquis and Tilcsik (2013) establish imprinting as the propagation mechanism.
 
 *Vignette:* A sixty-two-year-old regional manufacturer has operated in the same trade for forty years. Their Intent, probed across several conversations, produces no sentence that survives without the company's name. Tier 1 is Fused.
+
+*Attribution refinement.* The framework as introduced above treats Tier 1 as a property of the target, in parallel with Tiers 2 through 6. Strictly, Tier 1 attaches to the controlling principal — the agent whose psyche, board commitment, or charter custody specifies the purpose — and imprints onto the asset's downstream tiers. The asset itself does not carry an Intent independent of the principal who currently controls it. Two consequences follow. First, Tier 1 is replaced rather than transferred across ownership transactions: under a new principal, the asset receives a new Tier 1 imprint, while Tiers 2 through 6 carry forward (subject to the integration cascade developed in the "Failure-Propagation Propositions" and "Form-Invariance" sections below). The pre-transaction Tier 1 of the prior principal does not transfer with the entity; it exits with the principal. Second, a single principal who controls multiple assets — a founder of a for-profit operating company who also endows a research foundation; a family-office head with positions in two operating businesses — carries multiple Tier 1 specifications, one per controlled asset, rather than a single global Intent attributable to the principal as an agent. The owner-archetype map developed in "The Flip Case" subsection is, accordingly, a covering distribution of admissible Tier 1 configurations per principal: each per-asset Tier 1 is a sample from that distribution, and the same principal may exhibit different archetype expressions across different assets. The propositions and diagnostic are unaffected by this refinement; the operational consequence is that Tier 1 records persist on the controlling-principal substrate and Tiers 2 through 6 persist on the asset substrate, with deal-time overlays capturing per-transaction refinements. Figure 2 presents the resulting attribution.
+
+**Figure 2: Tier-1 Attribution — Principal Carrier and Imprint on the Asset.**
+
+``` {.mermaid width=55%}
+graph LR
+    subgraph Principal["Principal (controlling agent)"]
+        T1["Tier 1: Owner Intent<br/>(carried on principal record)"]
+    end
+    subgraph Asset["Asset (target business)"]
+        T2["Tier 2: Business Model"]
+        T3["Tier 3: Business Entity"]
+        T4["Tier 4: Product"]
+        T5["Tier 5: Process"]
+        T6["Tier 6: Organization"]
+        T2 --> T3
+        T3 --> T4
+        T4 --> T5
+        T5 --> T6
+    end
+    T1 -.->|"imprint"| T2
+```
+
+*Notes*: Tier 1 attaches to the controlling principal and imprints onto the asset's downstream tiers (dashed arrow). The asset substrate carries Tiers 2 through 6; the principal substrate carries Tier 1. Under a new principal, Tier 1 is replaced (the prior imprint exits with the prior principal); Tiers 2 through 6 carry forward subject to the integration cascade. A principal who controls multiple assets contributes a distinct Tier 1 imprint to each — Tier 1_A and Tier 1_B for assets A and B — drawn from the same principal's archetype distribution but expressing as different per-asset configurations.
 
 ### *Tier 2 — Business Model*
 
@@ -80,6 +105,8 @@ The Business Model is the mechanism by which value flows from the market into or
 The Business Entity is the legal and regulatory construct that holds rights, obligations, and property — what actually transfers in a share deal. Its specification surface is the charter, cap table, debt structure, counterparty contracts, and audited financials. Coase (1937) grounds the firm boundary economically; Williamson (1985) extends this to vertical-integration governance. The critical analytical point is that a clean Tier 3 is necessary but not sufficient: financial due diligence is designed to examine Tier 3 — and Tier 3 only. A financially healthy Entity can hold a business whose Tier 4 Product is tacit, whose Tier 1 Intent is Fused to the founder, and whose Tier 6 will fracture within twelve months of close.
 
 *Vignette:* A clean LLC with a three-year audit history passes financial due diligence without exception. What the data room cannot show is that the product specification lives entirely in the founder's head. The Entity is Independent; Tier 4 is Fused. The gap is the value the buyer will discover missing on day sixty.
+
+*Jurisdictional mutability.* Of the six tiers, Tier 3 is the most jurisdictionally mutable. A business can swap its legal vehicle — cross-border redomiciliation, opco/holdco interposition, special-purpose-vehicle insertion, sole-proprietor-to-LLC conversion, and other documentary restructurings — while Tier 2 Model, Tier 4 Product, Tier 5 Process, and Tier 6 Organization continue without operational disruption. The legal artifact is the registered counterparty of the moment; it is not the persistent identity of "the business." The constraint-hierarchy implications are asymmetric: Tier 3 swaps that preserve Tiers 2 through 6 carry low transactional cost — a documentary event without operational propagation — whereas Tier 3 swaps that force re-licensing, contract reassignment, or regulatory re-certification propagate via the Tier 3 → Tier 4/5 channel that P3 (Entity–Operations Disruption) formalizes. The diagnostic question for Tier 3 in Table 4 is correctly framed as decoupling of obligations from the principal's personal balance sheet rather than as identification with a specific legal form: the form is mutable; the decoupling is the substantive transferability claim.
 
 ### *Tier 4 — Product*
 
@@ -179,6 +206,44 @@ The six-tier structure does not require a for-profit assumption. Each tier has a
 ### *The Flip Case: Intent Equals Product*
 
 In standard for-profit transactions, Tier 1 and Tier 4 are distinct: the owner's purpose is to capture return in a domain, and the Product is the specific mechanism through which that return is generated. In identity-bound cases — the Domain Craftsman, the Family Steward, the Mission Founder — Intent is not separable from Product. The founder does not have an Intent to which the business happens to be the answer; the business is the Intent's only possible expression. Structurally: Intent ≡ Product. The chain collapses to Intent ≡ Product ← (Model = funding wrapper) ← Entity (legal cover) ← Process ← Organization. Tiers below Intent remain separately transferable in limited forms — assets can be sold, IP can be licensed — but the separability of Intent from Product is destroyed. Selznick (1957) provides the closest prior formulation in "infusion with value"; Marquis and Tilcsik (2013) establish imprinting as the mechanism; Whetten (2006) grounds organizational identity as central, enduring, distinctive attributes; Pecis et al. (2025) trace family-business goal entanglement through rhetorical history; Berrone et al. (2012) establish the SEW consequence: identity-bound principals systematically overvalue the firm relative to its financial utility, producing a reservation price above rational valuation that makes the firm effectively unsellable to pure financial buyers. The categorical M&A consequence is that firms in the flipped chain are unsellable as going concerns to a buyer who does not share the founder's identity commitment.
+
+*Generalization: tier-collapse patterns are parameterized over tier pairs.* The Intent ≡ Product collapse is one canonical instance of a broader structural pattern in which the governor of one tier is identical to the governor of another. A second canonical instance is the sole-proprietor case, in which the registered legal entity (Tier 3) is the natural person who holds Tier 1: the principal is the entity. Sole-proprietor registrations across jurisdictions — including RU индивидуальный предприниматель (ИП), US sole proprietorship with EIN, UK sole trader with UTR, DE Einzelunternehmen, FR entreprise individuelle (EI), IT ditta individuale, PL jednoosobowa działalność gospodarcza (JDG), and CY self-employed registration — share the structural feature that the legal person and the natural person are the same juridical subject, producing the collapse Tier 1 ≡ Tier 3. The categorical consequences parallel the Tier 1 ≡ Tier 4 case at a different tier pair: the sole-proprietor registration cannot be transferred as a going concern because the registered subject is the natural person who holds the Intent and dies with that person; the substrate at Tier 2, Tier 4, Tier 5, and Tier 6 can be wound down and reconstructed under a new Tier 3 vehicle held by a new principal, but the original Tier 3 is structurally untransferable. The same admissibility constraint governs the Tier 1 ≡ Tier 4 case: a Domain Craftsman cannot fork Tier 4 to a new owner without simultaneously transferring the Tier 1 imprint that legal instruments cannot convey — different tier pair, identical collapse mechanism. The collapse pattern is therefore parameterized over tier pairs; Figure 3 presents the two canonical instances and the generalization. The Tier 3 mutability noted earlier and the Tier 1 ≡ Tier 3 collapse case are not in tension: in the standard for-profit case Tier 3 is mutable precisely because it is structurally distinct from Tier 1; in the sole-proprietor collapse Tier 3 inherits the immutability of Tier 1 by identification with it.
+
+**Figure 3: Tier-Collapse Patterns — Tier 1 ≡ Tier 4 (Intent–Product) and Tier 1 ≡ Tier 3 (Intent–Entity).**
+
+``` {.mermaid width=70%}
+graph TD
+    subgraph Panel_A["Panel A: T1 ≡ T4 (Domain Craftsman / Family Steward / Mission Founder)"]
+        A1["T1 Owner Intent"]
+        A2["T2 Business Model"]
+        A3["T3 Business Entity"]
+        A4["T4 Product"]
+        A5["T5 Process"]
+        A6["T6 Organization"]
+        A1 --> A2
+        A2 --> A3
+        A3 --> A4
+        A4 --> A5
+        A5 --> A6
+        A1 -.->|"≡ fused"| A4
+    end
+    subgraph Panel_B["Panel B: T1 ≡ T3 (Sole-Proprietor: ИП / sole prop / sole trader / Einzelunternehmen)"]
+        B1["T1 Owner Intent"]
+        B2["T2 Business Model"]
+        B3["T3 Business Entity<br/>(= natural person)"]
+        B4["T4 Product"]
+        B5["T5 Process"]
+        B6["T6 Organization"]
+        B1 --> B2
+        B2 --> B3
+        B3 --> B4
+        B4 --> B5
+        B5 --> B6
+        B1 -.->|"≡ fused"| B3
+    end
+```
+
+*Notes*: Both panels show the canonical six-tier stack with one collapse overlay (dotted arrow indicating tier identification). In Panel A, the principal's identity is the Product specification — the founder is what the customer is buying. In Panel B, the principal's identity is the legal subject — the registered entity is the natural person. In each panel, the categorical M&A consequence is the same: the asset cannot be transferred as a going concern at the fused tier, because the fused tier carries the principal's identity and identity is not conveyable by legal instrument. Cross-jurisdictional sole-proprietor examples are listed in the accompanying paragraph; the structural pattern is jurisdiction-invariant.
 
 ### *Network and Platform Boundary Conditions*
 
@@ -280,6 +345,10 @@ The STSD translates the framework directly into due-diligence practice and yield
 **Multi-principal Intent configurations.** The framework assumes a dominant principal whose Intent is characterizable as a relatively stable stance. When ownership is dispersed — public companies, VC-backed startups with multiple investor classes, sibling co-owners — Intent is a vector, not a scalar. The framework applies most cleanly to closely-held businesses; extension to publicly-traded targets and dispersed-ownership structures requires the multi-principal Intent adaptation and remains a future-research priority.
 
 **Platform and network boundary conditions.** As detailed above, tier definitions require modification for two-sided markets and ecosystem orchestrators; the propositions apply to platforms with modification, not without it.
+
+### *Future Research and Theoretical Extensions*
+
+A companion working paper formalizes the deal-type taxonomy implicit in this paper's form-invariance and integration sections as a tier-bundle algebra. Under that framing, each acquisition type is the typed bundle of fork operations executed across the seller's tier graph: an asset deal is a fork of {Tier 4, Tier 5, Tier 6} from the seller's Tier 3 to the buyer's Tier 3; a carve-out is a subset-fork; an acqui-hire is a fork of Tier 6 alone; a roll-up is an N-to-1 merge of {Tier 4, Tier 5} from N targets into a holding company's unified Tier 4 and Tier 5; a spin-out is a 1-to-N fork; a franchise relationship is a read-only fork of Tier 4 from a parent into licensees that hold their own Tier 5 and Tier 6; an intra-business pivot is a fork of Tier 4 along the time axis. The unit of analysis under that framing is not "the business" but the tier-bundle that transfers. The collapse patterns of Figure 3 govern which fork operations are admissible per archetype: a principal in the Tier 1 ≡ Tier 4 collapse cannot fork Tier 4 without simultaneously transferring the Tier 1 imprint that legal instruments cannot convey; a principal in the Tier 1 ≡ Tier 3 collapse cannot transfer Tier 3 because the registered subject is the natural person. The companion paper develops the cascade rules — which tier-forks imply forks at adjacent tiers under the service hierarchy, and which do not — together with the typed bundle-signature of each deal type. The present paper supplies the ontology over which that algebra is defined; the companion paper supplies the compositional grammar under which deal types decompose into tier-fork operations.
 
 Nevertheless, by supplying a shared ontological vocabulary and a propagation logic, this theory reframes the M&A failure problem from an empirical puzzle into a predictable consequence of hierarchical constraint architecture. Ownership transfer necessarily perturbs the acquired firm's constraint hierarchy; the extent to which acquirers can specify and manage that perturbation before the pre-close codification window closes determines whether value is preserved or destroyed. Future work that tests, extends, or challenges this architecture will advance not only M&A scholarship but our understanding of how organizations cohere across ownership changes.
 
