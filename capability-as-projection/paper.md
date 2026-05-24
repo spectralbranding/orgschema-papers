@@ -1,26 +1,3 @@
----
-title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
-author: Dmitry Zharnikov
-orcid: 0009-0000-6893-9231
-date: 2026-05-24
-version: Working Paper v1.0.0 — May 2026
-status: preprint
-license: CC-BY-4.0
-paper_type: theoretical
-citation_key: "2026al"
-doi_concept: "10.5281/zenodo.20367459"
-doi_v1: "10.5281/zenodo.20367460"
-keywords:
-  - event sourcing
-  - dynamic capabilities
-  - organizational capability
-  - capability as projection
-  - append-only organizational log
-  - M&A integration
-  - snapshot import
-  - transfer failure
----
-
 # Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure
 
 *Dmitry Zharnikov*
@@ -36,6 +13,8 @@ Working Paper v1.0.0 -- May 2026
 ## Abstract
 
 This paper specifies an event-sourced substrate beneath organizational capability rather than treating capability as a stored stock of resources or routines. Capabilities are computed from the cumulative trace of what a firm has actually done, evaluated at the moment a strategic question is asked. The paper specifies three formal objects: a partially ordered log of immutable events, a projection operator that reads the log under a query and a render time, and a compatibility function that scores log-merge events such as acquisitions. Four propositions follow: clean log merges preserve projection continuity; snapshot imports without the underlying log diverge within three years; writedown magnitude in failed M&A is jointly determined by raw log incompatibility and acquirer integration-policy choice; imitators who observe only the projection cannot replicate capability responses to novel queries. The framework is illustrated by three honestly coded process-traced cases — Disney's 2006 acquisition of Pixar, Microsoft's 2014 acquisition of Nokia's handset assets, and persistent imitation failure of the Toyota Production System — under a single-coder pass of a pre-registered protocol. A worked Monte Carlo simulation reproduces the predicted comparative statics. The substrate-projection distinction reframes the long-running tautology critique of dynamic capabilities as a category error and generates falsifiable predictions about transfer failure.
+
+**Keywords**: capability as projection; append-only organizational log; event sourcing; dynamic capabilities; organizational capability; substrate theory; M&A integration; log-merge; transfer failure; process mining; snapshot import; Pentland-Feldman; Penrose-Teece-Helfat; Nakajima ActiveGraph
 
 ---
 
