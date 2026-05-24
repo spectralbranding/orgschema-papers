@@ -6,7 +6,7 @@
 
 **Citation key**: 2026al
 
-**Status**: Working paper v1.0.0 pre-Zenodo. Phase-1.5 Grok pre-draft review complete (verdict: MEDIUM/R&R_LIKELY/GO). Phase-4 post-draft review cycle complete; fix pass in progress. Companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Zenodo upload follows fix pass completion. Target venue: Strategic Management Journal (primary); Academy of Management Review (secondary).
+**Status**: Working paper v1.0.0. Phase-1.5 pre-draft critical review complete (verdict: GO). Phase-4 post-draft review cycle complete; companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Journal submission forthcoming after Zenodo upload.
 
 **Concept DOI**: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 **v1.0.0 DOI**: [10.5281/zenodo.20367460](https://doi.org/10.5281/zenodo.20367460)
