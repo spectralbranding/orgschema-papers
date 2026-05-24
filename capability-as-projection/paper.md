@@ -2,9 +2,7 @@
 
 *Dmitry Zharnikov*
 
-DOI: [10.5281/zenodo.20367460](https://doi.org/10.5281/zenodo.20367460)
-
-Concept DOI: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
+DOI: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 
 Working Paper v1.0.0 -- May 2026
 
@@ -286,7 +284,7 @@ Treating the append-only event log as the substrate beneath the firm rather than
 
 The author thanks the practitioners and commenters who engaged with prior work in the Spectral Brand Theory and Organizational Schema Theory corpora; their named-case additions and objections sharpened the theoretical argument during drafting. André Lindenberg surfaced Nakajima's ActiveGraph runtime as the engineering anchor at a critical point in the drafting cycle.
 
-AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search, editorial refinement, and implementation of the companion computation scripts and event-coding pass; all theoretical claims, propositions, interpretations, and the integrity of the empirical record are the author's sole responsibility.
 
 ## CRediT Contributions
 
@@ -396,7 +394,7 @@ Zollo, Maurizio, and Harbir Singh (2004), "Deliberate Learning in Corporate Acqu
 
 ## Appendix A: Methods Appendix — Ex-Ante Event Coding Protocol (Pre-Registered)
 
-*This appendix reproduces the pre-registered coding protocol committed to before any of the three process-traced cases in this paper were written up. The protocol is time-stamped at Session 160 (2026-05-24) and lives at `research/capability_as_projection_paper/METHODS_APPENDIX_event_coding_protocol.md` in the internal SSOT repository. Modifications during drafting require an explicit changelog entry in that document.*
+*This appendix reproduces the pre-registered coding protocol committed to before any of the three process-traced cases in this paper were written up. The pre-registered protocol is published at `github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/METHODS_APPENDIX_event_coding_protocol.md` and time-stamped at the initial Zenodo deposit. Modifications during drafting are recorded in the version history of that file.*
 
 ### A.1 Unit of Analysis
 
@@ -458,7 +456,7 @@ Primary identification for the companion empirical paper: regression discontinui
 
 ### A.9 Pre-Registration
 
-This protocol is pre-registered in the paper's `paper_slug` directory at `research/capability_as_projection_paper/METHODS_APPENDIX_event_coding_protocol.md` and time-stamped at Session 160 (2026-05-24). The pre-registered version is the one shipped with the final paper as Methods Appendix and as a separate file in the public-mirror `orgschema-papers/capability-as-projection/` repository.
+This protocol is pre-registered as part of the initial Zenodo deposit and published at `github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/METHODS_APPENDIX_event_coding_protocol.md`. The pre-registered version is the one shipped with the final paper as this Methods Appendix and as a separate file in the public-mirror repository.
 
 ### A.10 Note on Circularity Defence
 

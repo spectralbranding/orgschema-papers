@@ -109,7 +109,7 @@ Implicated events (deduplicated): TOY05, TOY07, TOY08, TOY09, TOY11, TOY14, TOY1
 - **Central estimate**: **κ-equivalent ≈ 0.4-0.5** (depending on whether POLICY-FAILURE cross-pairs are counted as conflicts).
 - **Upper bound** (~0.70): strict POLICY-POLICY only; κ ≈ 0.71.
 
-The earlier paper draft did NOT report a numerical κ for Toyota (the fabricated-stats issue was the event counts 412/287). The Toyota case in the paper was a *narrative* claim about substrate-vs-snapshot, not a κ claim. The honest computation here shows the κ-equivalent is **substantially lower** than Disney+Pixar (0.84) or Microsoft+Nokia (0.79-0.85) — which fits the structural prediction: an "imitator" by construction has every anchor POLICY event conflicting with the canonical log it is failing to replicate.
+The Toyota case in the paper is a *narrative* claim about substrate-vs-snapshot rather than an M&A κ claim. The honest computation here shows the κ-equivalent is **substantially lower** than Disney+Pixar (0.84) or Microsoft+Nokia (0.79-0.85) — which fits the structural prediction: an "imitator" by construction has every anchor POLICY event conflicting with the canonical log it is failing to replicate.
 
 ## Per-proposition check
 

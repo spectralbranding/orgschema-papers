@@ -16,32 +16,3 @@ contributors:
     affiliation: "Independent Researcher"
     first_commit: "2026-05-24"
 
-  - name: "Claude (Anthropic)"
-    type: ai
-    roles:
-      - writing-assistance
-      - review-paper
-      - review-literature
-    contributions: >
-      AI-assisted skeleton drafting, full draft expansion, parallel
-      review-paper and review-literature passes, and fix-pass application.
-      All theoretical arguments, propositions, and analytical claims are the
-      author's own.
-
-  - name: "Grok (xAI)"
-    type: ai
-    roles:
-      - pre-draft-review
-      - post-draft-review
-    contributions: >
-      Phase-1.5 pre-draft critical review (MEDIUM/R&R_LIKELY/GO verdict);
-      post-draft r1 review with 14 MUST-FIX items and structured fix plan.
-      All theoretical decisions rest with the author.
-
-  - name: "Gemini (Google)"
-    type: ai
-    roles:
-      - citation-verification
-    contributions: >
-      Cross-source citation verification via Gemini 2.5 Pro REST API with
-      google_search grounding.

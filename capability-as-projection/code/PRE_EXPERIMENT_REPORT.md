@@ -1,6 +1,5 @@
 ---
 title: "Pre-experiment Report: Firm-as-Event-Log Companion Computation"
-paper_slug: capability_as_projection_paper
 date: 2026-05-24
 status: PRE-REGISTERED before execution
 ---

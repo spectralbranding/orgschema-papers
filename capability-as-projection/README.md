@@ -6,7 +6,7 @@
 
 **Citation key**: 2026al
 
-**Status**: Working paper v1.0.0. Phase-1.5 pre-draft critical review complete (verdict: GO). Phase-4 post-draft review cycle complete; companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Journal submission forthcoming after Zenodo upload.
+**Status**: Working paper v1.0.0. Companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Journal submission forthcoming after Zenodo upload.
 
 **Concept DOI**: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 **v1.0.0 DOI**: [10.5281/zenodo.20367460](https://doi.org/10.5281/zenodo.20367460)
@@ -27,7 +27,7 @@ The substrate-projection distinction relocates the persistent tautology critique
 
 ## Files
 
-- `paper.md` — full paper (revised version incorporating Phase-4 fix pass and honest event-coding results forthcoming)
+- `paper.md` — full paper (incorporating honest event-coding results)
 - `paper.yaml` — paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
 - `CITATION.cff` — citation file (CITATION File Format 1.2.0)
 - `CONTRIBUTORS.yaml` — verified contributor attribution (CRediT taxonomy)
@@ -39,9 +39,9 @@ The substrate-projection distinction relocates the persistent tautology critique
 This paper is preceded by a four-article public companion series:
 
 - SBT *The Log Is the Brand: Why Marketing Is Runtime Exhaust* — [spectralbranding.substack.com](https://spectralbranding.substack.com/p/the-log-is-the-brand-why-marketing-is-runtime-exhaust) (Tue Aug 25)
-- OST *The Business Is a Repository: Operations as Append-Only Log* — Thu Aug 27 (URL to follow)
-- OST *Git Semantics for Companies* — Thu Sep 3 (URL to follow)
-- OST *Capability Is Not What You Have. It's What Your History Renders.* — Sat Sep 12 (URL to follow)
+- OST [*The Business Is a Repository: Operations as Append-Only Log*](https://orgschema.substack.com/p/the-business-is-a-repository) (Thu Aug 27)
+- OST [*Your Company Already Forks, Merges, and Tags — Just Without the Discipline*](https://orgschema.substack.com/p/your-company-already-forks-merges-and-tags) (Thu Sep 3)
+- OST [*Capability Is Not What You Have. It's What Your History Renders.*](https://orgschema.substack.com/p/capability-is-not-what-you-have) (Sat Sep 12)
 
 ## Related work
 

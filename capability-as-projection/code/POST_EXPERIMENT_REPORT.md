@@ -1,6 +1,5 @@
 ---
 title: "Post-experiment Report: Firm-as-Event-Log Companion Computation"
-paper_slug: capability_as_projection_paper
 date: 2026-05-24
 status: EXECUTED — results below match those in monte_carlo_results.csv
 ---

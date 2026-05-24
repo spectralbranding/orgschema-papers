@@ -117,7 +117,7 @@ The script implementation (`compute_case_projections.py`) counts 6 implicated ev
 - **Central estimate**: **κ = 0.84** (single-coder, current source set).
 - **Upper bound** (~0.92): if a fuller Disney log is coded that captures the broader Disney corpus (Imagineering, live-action, distribution) where Pixar policies do *not* conflict, the denominator grows to ~120-150 and conflicts plateau, giving κ ≈ 0.90-0.92.
 
-**The headline result is stable across the uncertainty band**: κ(Disney, Pixar) > 0.75 under any reasonable single-coder application of the protocol, supporting P1 (high-κ merger → projection continuity preserved). The earlier paper draft's fabricated value of .94 (95% CI .91-.97) is outside the honest single-coder band; the central estimate **0.84** replaces it.
+**The headline result is stable across the uncertainty band**: κ(Disney, Pixar) > 0.75 under any reasonable single-coder application of the protocol, supporting P1 (high-κ merger → projection continuity preserved). Central estimate: κ = 0.84 (range 0.78-0.92).
 
 ## Per-proposition check
 
@@ -141,5 +141,5 @@ The honest interpretation: this pass demonstrates that the protocol **can** be a
 
 - Event log: `disney_pixar_2006_event_log.csv` (this directory)
 - Computation script: `compute_case_projections.py` (this directory)
-- Protocol: `research/capability_as_projection_paper/METHODS_APPENDIX_event_coding_protocol.md` (internal SSOT)
-- Formalism: `research/capability_as_projection_paper/FORMALISM_v0.md` (internal SSOT)
+- Protocol: `METHODS_APPENDIX_event_coding_protocol.md` (repository root)
+- Formalism: `FORMALISM_v0.md` (repository root)

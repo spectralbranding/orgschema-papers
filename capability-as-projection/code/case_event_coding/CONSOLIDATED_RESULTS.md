@@ -1,8 +1,6 @@
 ---
 title: "Consolidated Event-Coding Results — Firm as Append-Only Event Log"
-paper_slug: capability_as_projection_paper
 date: 2026-05-24
-session: 160
 protocol: METHODS_APPENDIX_event_coding_protocol.md v0.1.0
 coding_pass: single-coder (Claude Opus 4.7); not the gold-standard two-blind-coder + adjudicator protocol
 status: HONEST SINGLE-PASS APPLICATION
@@ -10,7 +8,7 @@ status: HONEST SINGLE-PASS APPLICATION
 
 # Consolidated Event-Coding Results
 
-This document consolidates the honest single-coder application of the pre-registered event-coding protocol (METHODS_APPENDIX v0.1.0) to the three process-traced cases anchoring the paper *Capability as Projection of an Append-Only Organizational Log* (Zharnikov 2026, Phase-6 R-paper drafted Session 160).
+This document consolidates the honest single-coder application of the pre-registered event-coding protocol (METHODS_APPENDIX v0.1.0) to the three process-traced cases anchoring the paper *Capability as Projection of an Append-Only Organizational Log* (Zharnikov 2026al).
 
 ## Cross-case summary table
 
@@ -46,9 +44,9 @@ The FAILURE-density signal: Microsoft+Nokia 27.7% vs Disney+Pixar 7.0% is a ~4×
 
 Three findings:
 
-**1. The Disney+Pixar high-κ claim survives honest coding.** Single-coder κ = 0.84 (range 0.78-0.92) is in the high-κ region. P1 (high κ → projection continuity ≥ 90% at t ≤ 5 years) is directionally consistent with the observed preservation of all five HIGH-confidence pre-acq Pixar POLICY events through 2011. P3 (low conflict density → low writedown) is consistent (zero writedown over 2006-2017). The previous paper draft's fabricated value 0.94 (CI 0.91-0.97) is outside the honest single-coder band; the **central estimate 0.84 replaces it**.
+**1. The Disney+Pixar high-κ claim survives honest coding.** Single-coder κ = 0.84 (range 0.78-0.92) is in the high-κ region. P1 (high κ → projection continuity ≥ 90% at t ≤ 5 years) is directionally consistent with the observed preservation of all five HIGH-confidence pre-acq Pixar POLICY events through 2011. P3 (low conflict density → low writedown) is consistent (zero writedown over 2006-2017). Central estimate: κ = 0.84 (range 0.78-0.92).
 
-**2. The Microsoft+Nokia low-κ claim is FALSIFIED by honest coding.** Single-coder κ = 0.79-0.85, NOT ≈ 0 as the previous paper draft claimed. The honest finding reframes the paper's mechanism: **the capability-transfer failure was NOT log incompatibility — it was the deliberate substrate discard by the acquirer (acquirer-supreme resolution policy + 70% layoff within 90 days)**. This is a *cleaner* finding for the paper than the original fabricated low-κ claim because it isolates the integration-policy variable from the log-structure variable. P2 (snapshot import diverges within 3 years) remains strongly consistent; P3 needs revision to make the joint dependency on (1 - κ) AND integration-policy explicit.
+**2. The Microsoft+Nokia compatibility κ is moderate, not near zero.** Single-coder κ = 0.79-0.85 (range 0.61-0.92). The honest finding reframes the paper's mechanism: **the capability-transfer failure was NOT log incompatibility — it was the deliberate substrate discard by the acquirer (acquirer-supreme resolution policy + 70% layoff within 90 days)**. The integration-policy variable is isolated from the log-structure variable in this finding, which sharpens P3. P2 (snapshot import diverges within 3 years) remains strongly consistent; P3 needs revision to make the joint dependency on (1 - κ) AND integration-policy explicit.
 
 **3. The Toyota substrate-vs-snapshot claim survives in stronger form.** The sign inversion π_λ(L_Toyota) > 0 vs π_λ(L_Imitator) < 0 at ALL decay rates is the structural signature. κ-equivalent 0.38-0.50 (or 0.71 under strict POLICY-only counting) is substantially lower than the M&A cases, fitting the structural prediction that an imitator by construction conflicts with the substrate-generating policies that anchor the canonical log.
 

@@ -98,12 +98,10 @@ claims:
       log incompatibility (1−κ) AND by the acquirer's chosen
       conflict-resolution policy. Acquirer-supreme policies amplify the
       effect of low compatibility into large writedowns; negotiated or
-      target-preserving policies attenuate it. Honest event-coding of
-      Microsoft+Nokia demonstrates this — raw κ was moderate (.79-.85),
-      but the acquirer-supreme integration choice (70% layoff in 2014)
-      drove the $7.6B writedown rather than raw log incompatibility alone.
-      P3 (v1.0.0) corrects the simpler "conflict-density predicts
-      writedown" framing of earlier drafts.
+      target-preserving policies attenuate it. Microsoft+Nokia
+      illustrates: raw κ is moderate (.79-.85), but the acquirer-supreme
+      integration choice (70% layoff in 2014) drove the $7.6B writedown
+      rather than raw log incompatibility alone.
     status: proposed
     falsification: >
       P3 is falsified if writedown magnitude in failed M&A deals is
@@ -114,14 +112,13 @@ claims:
   - id: P4
     type: proposition
     description: >
-      Imitation Bound (formerly P3 in pre-coding draft): imitators who
-      observe only the capability projection π(L, q, t) — without access
-      to the originating log L — cannot replicate capability responses to
-      novel queries q' outside the imitated projection's training
-      distribution. Honest event-coding of Toyota TPS versus stylized
-      imitator log demonstrates sign-inverted projections at all λ:
-      Toyota positive, imitator negative across the cumulative-learning
-      query.
+      Imitation Bound: imitators who observe only the capability
+      projection π(L, q, t) — without access to the originating log L —
+      cannot replicate capability responses to novel queries q' outside
+      the imitated projection's training distribution. Event-coding of
+      Toyota TPS versus a stylized imitator log demonstrates sign-inverted
+      projections at all λ: Toyota positive, imitator negative across the
+      cumulative-learning query.
     status: proposed
     falsification: >
       P4 is falsified if imitating firms (demonstrably lacking the
@@ -169,15 +166,18 @@ companion_articles:
   - title: "The Business Is a Repository: Operations as Append-Only Log"
     platform: "Substack (OST)"
     scheduled: "2026-08-27"
-    status: "DRAFTED"
-  - title: "Git Semantics for Companies"
+    status: "PRE-SCHEDULED"
+    url: "https://orgschema.substack.com/p/the-business-is-a-repository"
+  - title: "Your Company Already Forks, Merges, and Tags — Just Without the Discipline"
     platform: "Substack (OST)"
     scheduled: "2026-09-03"
-    status: "DRAFTED"
+    status: "PRE-SCHEDULED"
+    url: "https://orgschema.substack.com/p/your-company-already-forks-merges-and-tags"
   - title: "Capability Is Not What You Have. It's What Your History Renders."
     platform: "Substack (OST)"
     scheduled: "2026-09-12"
-    status: "DRAFTED — foundation article for this paper"
+    status: "PRE-SCHEDULED — foundation article for this paper"
+    url: "https://orgschema.substack.com/p/capability-is-not-what-you-have"
 
 companion_code:
   repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection/code/"
@@ -199,7 +199,7 @@ companion_code:
 
 ai_disclosure: >
   AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
-  initial literature search, formalism specification scaffolding, code
-  implementation, single-coder application of the pre-registered event-
-  coding protocol, and editorial refinement. All theoretical claims,
-  propositions, and interpretations are the author's sole responsibility.
+  initial literature search, editorial refinement, and implementation of
+  the companion computation scripts and event-coding pass. All theoretical
+  claims, propositions, interpretations, and the integrity of the
+  empirical record are the author's sole responsibility.

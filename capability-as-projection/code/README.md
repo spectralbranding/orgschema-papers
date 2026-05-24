@@ -2,7 +2,7 @@
 
 Companion code for:
 
-> Zharnikov, D. (2026). *Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure*. Working paper. doi:[TO_BE_MINTED — Zenodo upload after Phase 4 fix pass]
+> Zharnikov, D. (2026). *Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure*. Working paper. doi:10.5281/zenodo.20367460
 
 Per PAPER_QUALITY_STANDARDS items 37a-37e, every computed numerical value cited in the paper must be reproducible from a script in this directory with a fixed seed and a documented run command.
 
@@ -20,7 +20,7 @@ Per PAPER_QUALITY_STANDARDS items 37a-37e, every computed numerical value cited 
 | `plots/plot_writedown_vs_conflict_density.png` | P3 visualization |
 | `logs/projection_demo_output.txt` | Captured stdout from `projection_demo.py` |
 | `logs/monte_carlo_run_output.txt` | Captured stdout from `monte_carlo_simulation.py` |
-| `case_event_coding/` | Placeholder for the three process-traced case event logs (Phase-4 Option A deliverable; committed alongside Zenodo upload) |
+| `case_event_coding/` | Event logs and coding reports for the three process-traced cases; committed alongside the Zenodo upload |
 
 ## Run order
 
@@ -68,7 +68,7 @@ Event-log CSVs and coding reports for the three process-traced cases will be com
 - `toyota_tps_events.csv` — coded event log for the Toyota Production System (longitudinal sample)
 - `coding_report.md` — inter-rater reliability report and coding protocol
 
-Placeholders in v1.0.0 pre-Zenodo (Phase-4 Option A deliverable).
+These case event-coding outputs ship alongside the paper in the v1.0.0 Zenodo deposit.
 
 ## License
 

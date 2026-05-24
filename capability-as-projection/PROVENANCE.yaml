@@ -12,22 +12,13 @@ provenance:
       date: "2026-05-24"
       title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
       description: >
-        Initial pre-Zenodo draft. Phase-0 thesis document completed 2026-05-24.
-        Phase-1.5 Grok pre-draft review completed (verdict: MEDIUM/R&R_LIKELY/GO).
-        Full draft written in Phase-3. Three independent post-draft reviews
-        completed (Grok r1, /review-paper, /review-literature). Phase-4
-        consolidated fix plan documents convergent MUST-FIX items. Companion
-        code complete (projection_demo.py + 20,000-trial monte_carlo_simulation.py
-        + honest event-coding pass for Disney+Pixar / Microsoft+Nokia / Toyota
-        TPS). Title corrected from earlier draft "The Firm as Append-Only Event
-        Log..." to current title (firm = Tier-3 in OST six-tier ontology;
-        substrate sits beneath all six tiers; renaming captures the tier-agnostic
-        substrate claim). Zenodo DOIs reserved 2026-05-24 (concept
-        10.5281/zenodo.20367459; v1 10.5281/zenodo.20367460). Fix pass + Zenodo
-        upload to follow.
-      outcome: >
-        Working draft in active revision. Phase-4 fix pass in progress.
-        Zenodo upload scheduled after fix pass completes and Grok r2 readiness >= 6/10.
+        Initial Zenodo deposit. Specifies the substrate-projection distinction
+        beneath the Penrose-Teece-Helfat dynamic-capabilities tradition with three
+        formal primitives (log L, projection π, compatibility κ), four propositions,
+        three honestly coded process-traced cases, and a 20,000-trial Monte Carlo
+        simulation reproducing the predicted comparative statics. Companion
+        open-source code published under Apache-2.0 in the `code/` directory.
+      outcome: "Working paper v1.0.0; pre-print."
 
   forks: []
 
@@ -39,12 +30,15 @@ provenance:
     - title: "The Business Is a Repository: Operations as Append-Only Log"
       type: "companion-article"
       platform: "Substack (OST)"
-      status: "DRAFTED, slot 2026-08-27"
-    - title: "Git Semantics for Companies"
+      status: "PRE-SCHEDULED 2026-08-27"
+      url: "https://orgschema.substack.com/p/the-business-is-a-repository"
+    - title: "Your Company Already Forks, Merges, and Tags — Just Without the Discipline"
       type: "companion-article"
       platform: "Substack (OST)"
-      status: "DRAFTED, slot 2026-09-03"
+      status: "PRE-SCHEDULED 2026-09-03"
+      url: "https://orgschema.substack.com/p/your-company-already-forks-merges-and-tags"
     - title: "Capability Is Not What You Have. It's What Your History Renders."
       type: "companion-article"
       platform: "Substack (OST)"
-      status: "DRAFTED, slot 2026-09-12 — foundation article for this paper"
+      status: "PRE-SCHEDULED 2026-09-12 — foundation article for this paper"
+      url: "https://orgschema.substack.com/p/capability-is-not-what-you-have"
