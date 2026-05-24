@@ -1,0 +1,12 @@
+# Pinned dependencies for the capability-as-projection companion code.
+# Versions reflect latest stable as of 2026-05.
+
+# Numerical arrays for the Monte Carlo simulation.
+numpy==2.2.2
+
+# Plot rendering (Agg backend; no display required).
+matplotlib==3.10.0
+
+# Tabular handling (optional; CSV writing uses the stdlib csv module,
+# pandas is listed for convenience downstream / replication notebooks).
+pandas==2.2.3

@@ -1,0 +1,205 @@
+# paper.yaml -- Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure
+# Citation key: 2026al. Concept DOI 10.5281/zenodo.20367459; v1 DOI 10.5281/zenodo.20367460.
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026al"
+  doi: "10.5281/zenodo.20367459"   # Concept DOI (canonical; always resolves to latest version)
+  doi_v1: "10.5281/zenodo.20367460"   # Version DOI for v1.0.0
+  date: "2026-05-24"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - capability as projection
+    - append-only organizational log
+    - event sourcing
+    - dynamic capabilities
+    - organizational capability
+    - substrate theory
+    - M&A integration
+    - log-merge
+    - transfer failure
+    - process mining
+    - snapshot import
+    - Penrose-Teece-Helfat
+    - Pentland-Feldman
+    - ActiveGraph
+
+abstract: >
+  Organizational capability is commonly treated as a stock of resources or a
+  bundle of routines. This paper argues that this conceptualization obscures
+  a more fundamental object: an append-only, partially ordered organizational
+  log that serves as the immutable substrate from which capabilities are
+  computed. Capability itself is a render-time projection — π(L, q, t) —
+  evaluated against a query-relevant subset of that log at the moment a
+  strategic question is asked. The paper formalizes the log as a poset of
+  typed immutable events, defines a projection operator satisfying prefix
+  monotonicity, conditional determinism, and locality, and introduces a
+  compatibility function κ measuring conflict density between logs to be
+  merged. Three mechanistic predictions follow about post-acquisition
+  projection continuity, snapshot-import divergence, and the conjunction of
+  conflict density and integration policy in predicting writedown magnitude.
+  The framework is anchored in three process-traced cases — Disney's
+  preservation of Pixar's creative log, Microsoft's snapshot import of
+  Nokia's handset capability, and persistent imitation failure of the
+  Toyota Production System — coded under a pre-registered protocol. An
+  open-source contemporaneous event-sourced runtime (Nakajima 2026 —
+  ActiveGraph) supplies an existence proof that the proposed substrate is
+  computationally tractable. The framework relocates the persistent
+  tautology critique of dynamic capabilities from the projection to the
+  unobserved substrate layer.
+
+claims:
+  - id: P1
+    type: proposition
+    description: >
+      Log-Compatible Merge Preserves Projection Continuity: when log
+      compatibility κ(L_A, L_B) exceeds a calibrated threshold θ_high,
+      post-merge projection continuity is at least 90% for t ≤ 5 years
+      following the merge, holding deal size and industry constant.
+    status: proposed
+    falsification: >
+      P1 is falsified if a sample of high-κ merger pairs shows no
+      significant difference in post-merge projection continuity outcomes
+      versus low-κ pairs after controlling for deal size, industry, and
+      pre-close resource similarity.
+
+  - id: P2
+    type: proposition
+    description: >
+      Snapshot Import Divergence: when the acquirer imports a snapshot
+      S_B = π(L_B, q, t_0) without merging the underlying log L_B (the
+      acquirer-supreme conflict-resolution policy in which κ approaches 0
+      by construction because L_B is discarded), then for t > t_0 + 3 years,
+      π(L_A ∪ {S_B}, q, t) diverges from π(L_A ⊕ L_B, q, t) for any query q
+      that depends on capability-substrate (as opposed to identity-substrate
+      such as brand names that can be imported without their log).
+    status: proposed
+    falsification: >
+      P2 is falsified if post-snapshot-import projection divergence is
+      statistically independent of operational novelty density across a
+      sample of acquisitions in which the acquirer chose acquirer-supreme
+      integration, tracked 3-7 years post-close.
+
+  - id: P3
+    type: proposition
+    description: >
+      Joint Dependence of Writedown on (1−κ) and Integration Policy: the
+      magnitude of post-acquisition writedown is jointly determined by raw
+      log incompatibility (1−κ) AND by the acquirer's chosen
+      conflict-resolution policy. Acquirer-supreme policies amplify the
+      effect of low compatibility into large writedowns; negotiated or
+      target-preserving policies attenuate it. Honest event-coding of
+      Microsoft+Nokia demonstrates this — raw κ was moderate (.79-.85),
+      but the acquirer-supreme integration choice (70% layoff in 2014)
+      drove the $7.6B writedown rather than raw log incompatibility alone.
+      P3 (v1.0.0) corrects the simpler "conflict-density predicts
+      writedown" framing of earlier drafts.
+    status: proposed
+    falsification: >
+      P3 is falsified if writedown magnitude in failed M&A deals is
+      independent of either (1−κ) or integration policy, OR if the
+      interaction term between (1−κ) and integration policy is not
+      significant in a coded panel of M&A integrations.
+
+  - id: P4
+    type: proposition
+    description: >
+      Imitation Bound (formerly P3 in pre-coding draft): imitators who
+      observe only the capability projection π(L, q, t) — without access
+      to the originating log L — cannot replicate capability responses to
+      novel queries q' outside the imitated projection's training
+      distribution. Honest event-coding of Toyota TPS versus stylized
+      imitator log demonstrates sign-inverted projections at all λ:
+      Toyota positive, imitator negative across the cumulative-learning
+      query.
+    status: proposed
+    falsification: >
+      P4 is falsified if imitating firms (demonstrably lacking the
+      target's operational log) show equivalent capability responses to
+      novel-condition stimuli as the original log-holding firm in a
+      matched-pair test across a capability domain.
+
+target_venue: "Strategic Management Journal"
+target_venue_alt:
+  - "Academy of Management Review"
+  - "Organization Science"
+  - "Strategy Science"
+
+dependencies:
+  - citation: "Zharnikov (2026i)"
+    doi: "10.5281/zenodo.18946043"
+    relationship: cites
+    critical: true
+    description: "Organizational Schema Theory — the OST six-tier architecture; the substrate (log) sits BENEATH all six tiers, each rendering a projection of the same log"
+
+  - citation: "Zharnikov (2026ag)"
+    doi: "10.5281/zenodo.19895813"
+    relationship: cites
+    critical: true
+    description: "Six-Tier Ontology — M&A failure propagation across tiers; this paper supplies the substrate (the log) beneath all six tiers"
+
+  - citation: "Zharnikov (2026ai)"
+    doi: "10.5281/zenodo.20069605"
+    relationship: cites
+    critical: false
+    description: "Tier-Rotation Curve — brand-substrate decoupling; the present paper extends the substrate concept from brand to the full operational log"
+
+  - citation: "Zharnikov (2026m)"
+    doi: "10.5281/zenodo.19145205"
+    relationship: cites
+    critical: false
+    description: "Projection Cascade — reorganization failure through specification cascade; the event-log model supplies the substrate object missing from that paper"
+
+companion_articles:
+  - title: "The Log Is the Brand: Why Marketing Is Runtime Exhaust"
+    platform: "Substack (SBT)"
+    url: "https://spectralbranding.substack.com/p/the-log-is-the-brand-why-marketing-is-runtime-exhaust"
+    scheduled: "2026-08-25"
+    status: "PRE-SCHEDULED"
+  - title: "The Business Is a Repository: Operations as Append-Only Log"
+    platform: "Substack (OST)"
+    scheduled: "2026-08-27"
+    status: "DRAFTED"
+  - title: "Git Semantics for Companies"
+    platform: "Substack (OST)"
+    scheduled: "2026-09-03"
+    status: "DRAFTED"
+  - title: "Capability Is Not What You Have. It's What Your History Renders."
+    platform: "Substack (OST)"
+    scheduled: "2026-09-12"
+    status: "DRAFTED — foundation article for this paper"
+
+companion_code:
+  repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection/code/"
+  scripts:
+    - filename: "projection_demo.py"
+      url: "https://github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/code/projection_demo.py"
+      description: "Worked formalism example: demonstrates π_λ projection over a 20-event synthetic two-firm scenario with fixed seed (42); computes κ between L_A and L_B"
+    - filename: "monte_carlo_simulation.py"
+      url: "https://github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/code/monte_carlo_simulation.py"
+      description: "20,000-trial Monte Carlo of π_λ under varying λ (4 values) and conflict density (5 values) and two conflict-resolution policies (acquirer-supreme, negotiated); generates comparative statics for the formal model section"
+    - filename: "compute_case_projections.py"
+      url: "https://github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/code/case_event_coding/compute_case_projections.py"
+      description: "Computes π_λ + κ on the 3 process-traced case event logs (Disney+Pixar, Microsoft+Nokia, Toyota TPS) using the honest single-coder pass"
+    - directory: "case_event_coding/"
+      url: "https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection/code/case_event_coding/"
+      description: "Event-log CSVs + per-case coding reports + consolidated results for the 3 process-traced cases. Single-coder honest pass per METHODS_APPENDIX protocol; primary-source-access caveats documented"
+    - pre_experiment_report: "https://github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/code/PRE_EXPERIMENT_REPORT.md"
+    - post_experiment_report: "https://github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/code/POST_EXPERIMENT_REPORT.md"
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search, formalism specification scaffolding, code
+  implementation, single-coder application of the pre-registered event-
+  coding protocol, and editorial refinement. All theoretical claims,
+  propositions, and interpretations are the author's sole responsibility.

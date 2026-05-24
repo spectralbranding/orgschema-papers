@@ -1,0 +1,32 @@
+projection_demo.py — Firm-as-Event-Log formalism worked example
+====================================================================
+RANDOM_SEED = 42
+render time t = 2021-04-15T00:00:00+00:00
+|L_A| = 10 events; |L_B| = 10 events
+
+Projection pi_lambda(L, scaling_query, t) under varying lambda
+--------------------------------------------------------------------
+  lambda |    pi(L_A) |    pi(L_B) |  pi(L_A) - pi(L_B)
+    0.00 |     4.5000 |     6.0000 |            -1.5000
+    0.10 |     3.6774 |     5.0543 |            -1.3769
+    0.50 |     1.8935 |     2.8646 |            -0.9711
+
+Interpretation: as lambda increases, older events lose weight.
+Firm A's earlier FAILURE events (a03, a07) decay out faster than
+the later POLICY corrections, so pi(L_A) increases with lambda
+relative to the lambda=0 raw-sum baseline.
+
+Compatibility kappa(L_A, L_B)
+--------------------------------------------------------------------
+kappa = 0.6000
+  events in L_A implicated in >= 1 conflict pair: 4
+  events in L_B implicated in >= 1 conflict pair: 4
+  |L_A| + |L_B| = 20
+
+Interpretation: POLICY-POLICY conflicts (regional-autonomy vs
+centralized-ops) and PERSONNEL-PERSONNEL conflicts (both firms
+named a regional GM) drive the implicated-event count. kappa
+falls below 1 but well above 0 — a partial-merge case, not the
+Microsoft-Nokia snapshot-import failure mode.
+
+OK — projection_demo.py completed.

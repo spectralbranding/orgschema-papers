@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: fermeradar@gmail.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
+version: "1.0.0"
+date-released: "2026-05-24"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+url: "https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20367459"
+    description: "Zenodo concept DOI (always resolves to latest version)"
+  - type: doi
+    value: "10.5281/zenodo.20367460"
+    description: "Zenodo v1 DOI (this version)"
+keywords:
+  - capability as projection
+  - append-only organizational log
+  - event sourcing
+  - dynamic capabilities
+  - organizational capability
+  - substrate theory
+  - M&A integration
+  - log-merge
+  - transfer failure
+  - process mining
+  - snapshot import
+  - Penrose-Teece-Helfat
+  - Pentland-Feldman
+  - ActiveGraph
+license: CC-BY-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: fermeradar@gmail.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
+  year: 2026
+  doi: "10.5281/zenodo.20367459"
