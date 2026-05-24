@@ -6,7 +6,7 @@
 
 **Citation key**: 2026al
 
-**Status**: Working paper v1.0.0. Companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Journal submission forthcoming after Zenodo upload.
+**Status**: Working paper v1.0.0. Published on Zenodo 2026-05-24. Companion code + Monte Carlo + honest event-coding pass complete and published in `code/`. Journal submission forthcoming.
 
 **Concept DOI**: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 **v1.0.0 DOI**: [10.5281/zenodo.20367460](https://doi.org/10.5281/zenodo.20367460)
