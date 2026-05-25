@@ -10,7 +10,7 @@ title: "Specification Readiness and Endogenous Friction: An Information-Theoreti
 version: "1.0.0"
 date-released: "2026-05-25"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
-url: "https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling"
+url: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20379981"

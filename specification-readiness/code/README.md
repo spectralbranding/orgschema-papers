@@ -137,7 +137,7 @@ The paper body "Companion Computation Script" subsection references this
 directory at:
 
 ```
-https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling/code/
+https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/
 ```
 
 (URL confirmed at Zenodo v1 upload time; placeholder until then.)

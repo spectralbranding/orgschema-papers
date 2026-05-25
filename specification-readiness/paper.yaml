@@ -180,7 +180,7 @@ companion_articles: []
 # but not yet auto-published. Leave empty until Substack URLs are live.
 
 companion_code:
-  repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling/code/"
+  repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/"
   description: >
     Companion computation repository establishing numerical coherence of the
     rendering operator and friction-tax derivations. Monte Carlo and
