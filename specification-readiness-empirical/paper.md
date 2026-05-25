@@ -1,3 +1,10 @@
+```{=typst}
+#set page(margin: (top: 1in, bottom: 1.25in, x: 1in))
+#set table(inset: 3pt)
+#show figure.where(kind: table): set block(breakable: true)
+#show table: set block(breakable: false)
+```
+
 # Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
 
 Dmitry Zharnikov
@@ -460,7 +467,3 @@ The full pre-registered methods appendix — covering the Monte Carlo simulation
 The pre-registered Monte Carlo and regression-identification simulation package developed for this paper is offered as a methodological template that future friction-tax research can adopt. The template structure is as follows. First, a formal Monte Carlo simulation operationalizes the theoretical mechanism over a pre-specified parameter grid with a fixed seed; the simulation outputs a phase-shift threshold and an effect-size magnitude that the empirical study should be able to detect at the analogous parameter values. Second, a regression-identification simulation generates synthetic panel datasets with the pre-registered effect size under H₁ and tests the design's statistical power; the same simulation under H₀ tests for nominal Type I error coverage. Third, the simulation outputs are logged transparently in a `POST_EXPERIMENT_REPORT.md` file in the code companion, including any post-hoc deviations from the pre-registration and the remediation specified to address them. Fourth, the empirical study uses the remediated estimator as the primary specification.
 
 This template addresses three credibility challenges that pre-registration of point estimates alone does not address. It exposes implementation errors in the data-generating process that pure pre-registration does not catch; it confirms statistical power before the data are observed; and it disciplines the researcher to report estimator deviations publicly rather than silently switching specifications during analysis. The template is offered without claim of originality on any individual component; the combination is the contribution. Friction-tax research that adopts the template will not be measurably more credible than research that does not, but it will be auditable in ways that current friction-tax research is not.
-
----
-
-*End of paper.md v1.0.0 — Zharnikov 2026an.*
