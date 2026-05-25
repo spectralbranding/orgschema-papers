@@ -1,10 +1,10 @@
-# Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture
+# Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture
 
 Dmitry Zharnikov
 
 ORCID: 0009-0000-6893-9231
 
-Working Paper v1.1.0 – May 2026
+Working Paper v1.0.0 – May 2026
 
 ---
 

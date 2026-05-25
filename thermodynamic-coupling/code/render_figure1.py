@@ -1,10 +1,10 @@
 """render_figure1.py — Render Figure 1 (Multi-Interface Specification Model)
-for R-paper 2026am v1.1.0.
+for R-paper 2026am v1.0.0.
 
 Companion figure-render script for:
 
     Zharnikov, D. (2026). Specification Readiness and Endogenous Friction:
-    An Information-Theoretic Theory of Multi-Interface Organizational
+    An Information-Theoretic Model of Multi-Interface Organizational
     Architecture. Working paper key: 2026am.
 
 Produces a clean academic hub-and-spoke diagram showing:

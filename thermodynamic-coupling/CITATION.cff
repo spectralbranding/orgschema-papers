@@ -6,18 +6,18 @@ authors:
     email: fermeradar@gmail.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
-title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
-version: "1.1.0"
+title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture"
+version: "1.0.0"
 date-released: "2026-05-25"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 url: "https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling"
 identifiers:
   - type: doi
-    value: ""
-    description: "Zenodo concept DOI (always resolves to latest version) — to be assigned at Zenodo upload"
+    value: "10.5281/zenodo.20379981"
+    description: "Zenodo concept DOI (always resolves to latest version)"
   - type: doi
-    value: ""
-    description: "Zenodo v1 DOI (this version) — to be assigned at Zenodo upload"
+    value: "10.5281/zenodo.20379982"
+    description: "Zenodo v1 DOI (this version)"
 keywords:
   - organizational coupling
   - multi-interface architecture
@@ -41,6 +41,6 @@ preferred-citation:
       email: fermeradar@gmail.com
       affiliation: "Independent Researcher"
       orcid: "https://orcid.org/0009-0000-6893-9231"
-  title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
+  title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture"
   year: 2026
-  doi: ""  # Concept DOI — to be assigned at Zenodo upload
+  doi: "10.5281/zenodo.20379981"

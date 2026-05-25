@@ -1,31 +1,31 @@
-# PROVENANCE.yaml -- Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture
+# PROVENANCE.yaml -- Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture
 # Version history and related-work record per the Research-as-Repository protocol
 
 provenance:
-  paper_title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
+  paper_title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture"
   repository: "spectralbranding/orgschema-papers/thermodynamic-coupling"
-  doi_concept: ""   # To be assigned at Zenodo upload
-  doi_v1: ""        # To be assigned at Zenodo upload
+  doi_concept: "10.5281/zenodo.20379981"
+  doi_v1: "10.5281/zenodo.20379982"
 
 versions:
-  - version: "1.1.0"
-    date: "2026-05-25"
-    doi: ""  # Assigned at Zenodo upload
-    notes: >
-      Vocabulary generalization applied Mon May 25 EOD Session 164.
-      Replaced four-term split (Surface-AI, Substrate-AI, surface-human/operator,
-      substrate-human/operator) with two generalized terms: Substrate-Operator
-      (human OR AI querying the codified specification substrate) and
-      Surface-Operator (human OR AI producing output without specification grounding).
-      Section 6 rewritten to open with the AI/human substitutability argument.
-      Abstract revised to <=200 words. Table 2 AI row updated.
-      P4 reframed at agent level. Keywords updated in paper.yaml and CITATION.cff.
-    file: "paper.md"
-
   - version: "1.0.0"
     date: "2026-05-25"
-    doi: ""  # Assigned at Zenodo upload
-    notes: "Initial working paper release."
+    doi: "10.5281/zenodo.20379982"
+    notes: >
+      Initial working paper release. Pre-Zenodo internal refinements applied
+      during Session 164 (Mon May 25): pure-theory restructure per Grok r2;
+      addition of five formal theoretical propositions with comparative statics;
+      Table 2 deficiency comparison (TCE / stakeholder theory / dynamic
+      capabilities / proposed framework); Shannon-1948 cross-entropy derivation
+      via Gibbs inequality; vocabulary refinement from a four-term split
+      (Surface-AI / Substrate-AI / surface-human / substrate-human) to a
+      two-term generalization (Substrate-Operator / Surface-Operator;
+      "operator" in the mathematical sense — the entity that executes the
+      rendering function R_i); Section 6 rewritten around the AI/human
+      substitutability argument; Figure 1 rendered via matplotlib companion
+      script (code/render_figure1.py). Per the project version-bump rule,
+      pre-Zenodo iterations remain v1.0.0; the version field will only
+      increment when a new Zenodo DOI is minted.
     file: "paper.md"
 
 submission_record:
