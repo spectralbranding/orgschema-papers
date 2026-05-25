@@ -1,12 +1,16 @@
 # Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society
 
-*Dmitry Zharnikov*
+**Dmitry Zharnikov**
 
-DOI: 10.5281/zenodo.19778588
+ORCID: 0009-0000-6893-9231
 
-Working Paper v1.0.0 -- April 2026
+DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588)
 
-**Abstract**
+Working Paper v1.0.0 – April 2026
+
+---
+
+## Abstract
 
 Organizational verification systems consume enormous resources yet frequently fail to produce substantive alignment between behavior and objectives. This paper develops an operator-theoretic explanation. Verification is formalized as a spectral projection operator P that maps organizational states onto invariant subspaces defined by acceptance criteria. Conventional audit operates as a degenerate rank-1 projection onto a single compliance axis, discarding by construction all information orthogonal to that axis. This algebraic property explains the persistent information loss documented in the audit-society literature. In contrast, the acceptance-testing cascade developed in Organizational Schema Theory constitutes a full-rank spectral projection in which each hierarchical level independently projects onto a distinct performance subspace while preserving the overall dimensional structure of the specification.
 

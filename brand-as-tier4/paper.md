@@ -1,10 +1,12 @@
 # Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies
 
-*Dmitry Zharnikov*
+Dmitry Zharnikov
+
+ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
 
-Working Paper v1.1.0 -- May 2026
+Working Paper v1.1.0 – May 2026
 
 ---
 

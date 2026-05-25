@@ -10,16 +10,15 @@ provenance:
       date: "2026-04-30"
       title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
       description: >
-        Working paper skeleton derived from a five-prompt hardened deep-research
-        pass (DR-1 prior-art saturation; DR-2 brand portfolio architecture
-        literature; DR-3 corporate rebranding and failed-brand recovery; DR-4
-        marketing as cross-brand organizational function; DR-5 brand extension
-        and brand-parent transfer). Cross-source verification across web-
-        accessible primary sources. Brand-as-Tier-4 ontological pre-emption
-        baked into Section 3. Citation corrections from saturation pass
-        applied (Webster 1992 not 1997 JM; Hsu Fournier Srinivasan 2016 JAMS
-        not 2010 JM; Verghese 2017 dropped — NOT FOUND; Marques et al. 2020
-        four-author form; Yorkston Nunes Matta 2010 JM not JCR).
+        Working paper skeleton. Prior-art saturation across five literature
+        areas: brand portfolio architecture; corporate rebranding and failed-brand
+        recovery; marketing as cross-brand organizational function; brand extension
+        and brand-parent transfer. Cross-source verification across web-accessible
+        primary sources. Brand-as-Tier-4 ontological pre-emption baked into
+        Section 3. Citation corrections applied (Webster 1992 not 1997 JM;
+        Hsu Fournier Srinivasan 2016 JAMS not 2010 JM; Verghese 2017 dropped —
+        NOT FOUND; Marques et al. 2020 four-author form; Yorkston Nunes Matta
+        2010 JM not JCR).
       outcome: "Skeleton ready for full drafting. SMJ / JM target locked."
 
     - version: "1.0.0-pre"
@@ -90,38 +89,33 @@ provenance:
         Pending Zenodo re-upload as v1.1.0. PDF regeneration required.
         Word-count optimization for SMJ word limit deferred to user.
 
-    - version: "1.1.0 flow-vs-stock paragraph added to Marketing section"
+    - version: "1.1.0-pre (marketing section addition)"
       date: "2026-05-06"
       title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
       description: >
-        Internal pre-Zenodo edit (absorbed into v1.1.0 before upload). New
-        subsection "Marketing budget as flow component of the firm's
-        substrate-accumulation portfolio" added to Marketing, Advertising,
-        and Branding as Cross-Brand Tier-6 Functions section (~200 words).
-        Establishes Tier-6 spend as flow consumption vs. Tier-4 codification
-        as stock accumulation (Dierickx and Cool 1989). Sourced from Tier-
-        Rotation R-paper (2026ai) §6.7 development. Adds Mizik and Jacobson
-        (2003 JM; 2009 JM) as empirical anchor. Three new reference list
-        entries (Dierickx-Cool + two Mizik-Jacobson).
+        Pre-upload revision (absorbed into v1.1.0). New subsection "Marketing
+        budget as flow component of the firm's substrate-accumulation portfolio"
+        added to the Marketing, Advertising, and Branding as Cross-Brand Tier-6
+        Functions section. Establishes Tier-6 spend as flow consumption vs.
+        Tier-4 codification as stock accumulation (Dierickx and Cool 1989). Adds
+        Mizik and Jacobson (2003 JM; 2009 JM) as empirical anchor. Three new
+        reference list entries.
       outcome: >
-        Incorporated into v1.1.0 pre-upload revision set. Zenodo upload
-        pending alongside other v1.1.0 changes.
+        Incorporated into v1.1.0 revision set. Zenodo upload pending.
 
-    - version: "1.1.0+Session145"
+    - version: "1.1.0-pre (citation additions 2026-05-10)"
       date: "2026-05-10"
       title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
       description: >
-        Applied two PENDING_UPDATES entries from export/brand-as-tier4/PENDING_UPDATES.md.
-        (1) 2026m back-cite: added one sentence at end of Theoretical contribution
+        Two citation additions applied.
+        (1) 2026m back-cite: one sentence added at end of Theoretical contribution
         subsection citing Zharnikov (2026m) cascade contraction theorem. Zharnikov
         (2026m) reference added to end of Zharnikov block in References.
-        (2) Brand Finance B2B 2026: added 3-sentence paragraph at end of "Marketing
+        (2) Brand Finance B2B 2026: 3-sentence paragraph added at end of "Marketing
         budget as flow component" section with AAA vs B-rated B2B brand valuation
         data (65% forward-P/E premium; 45% EBIT gap; $4T aggregate value). Brand
         Finance (2026) reference added alphabetically between Boyd (2010) and Daly
-        (2004). Both edits applied to SSOT and to public mirror simultaneously.
-        Self-cite density: 7/83 = 8.4% (up from 6/82 = 7.3%; SMJ target; already
-        above 3% SMJ norm but 2026ah is a JM-tier not pure-strategy target).
+        (2004). Self-cite density: 7/83 = 8.4%.
       outcome: >
         Staged for next Zenodo re-upload (v1.1.0 or later). No version bump;
         version stays at 1.1.0 until Zenodo upload is minted.

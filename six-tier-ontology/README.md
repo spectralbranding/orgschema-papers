@@ -6,7 +6,7 @@
 
 **Citation key**: 2026ag
 
-**Status**: Working paper v1.0.0 published on Zenodo 2026-04-29. Post-Grok-roadmap structural revisions + consolidated review fix-pass + user-verified citation additions applied pre-upload. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 published on Zenodo 2026-04-29. Structural revisions and citation additions applied pre-upload. Target venue: Academy of Management Review.
 
 **DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 
@@ -26,7 +26,7 @@ Develops a six-tier ontology of the acquisition target — Owner Intent, Busines
 - `paper.yaml` — paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
 - `CITATION.cff` — citation file (CITATION File Format 1.2.0)
 - `CONTRIBUTORS.yaml` — verified contributor attribution
-- `PROVENANCE.yaml` — version history + review records + Grok roadmap
+- `PROVENANCE.yaml` — version history and review records
 
 ## Related work
 

@@ -54,8 +54,8 @@ provenance:
       concept_doi: "10.5281/zenodo.20069605"
       title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
       description: >
-        Final pre-upload state. Session 132 fix-pass applied: §"Decoupling:
-        Substantive Versus Symbolic" expanded ~280 → ~640 words. Adds Crilly,
+        Final pre-upload state. §"Decoupling: Substantive Versus Symbolic" expanded
+        ~280 → ~640 words. Adds Crilly,
         Hansen, and Zollo (2016) AMJ 59(2):705-729 cognitive-linguistic
         anchor closing the 2012-stop-date concern. Specifies the diagnostic
         signature distinguishing apparent rotation (partial movement in any
@@ -67,23 +67,23 @@ provenance:
         2026-05-07 at 10.5281/zenodo.20069605; v1 DOI 10.5281/zenodo.20069606.
       outcome: "Working paper v1.0.0 ready for Zenodo upload. Target venue: AMR primary; SMJ + Org Sci alternates."
 
-    - version: "1.0.0+Session145"
+    - version: "1.0.0+post-upload-update"
       date: "2026-05-10"
       title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
       description: >
-        Applied three PENDING_UPDATES entries simultaneously:
-        (1) Cascade-label fix at line 47: replaced non-canonical tier-2 through
-        tier-6 paraphrase with canonical labels (Business Model / Business Entity /
+        Applied three updates simultaneously:
+        (1) Cascade-label fix: replaced non-canonical tier-2 through tier-6
+        paraphrase with canonical labels (Business Model / Business Entity /
         Product Specification / Process / Organizational Surface).
         (2) 2026m back-cite: added one sentence at end of "Tier-Allocation of
         Capital as a Distinct Decision Margin" subsection citing Zharnikov (2026m)
         cascade rank-deficiency micro-mechanism. Zharnikov (2026m) reference added
         at end of Zharnikov block in References.
-        (3) Gartner AI rehire prediction: added 3-sentence paragraph immediately
-        after the 2026m sentence (rotation-not-reduction reading). Gartner (2026)
-        reference added alphabetically before Grant (1996) in References.
+        (3) Gartner AI rehire prediction: added 3-sentence paragraph
+        (rotation-not-reduction reading). Gartner (2026) reference added
+        alphabetically before Grant (1996) in References.
         Self-cite density after edit: 4/58 = 6.9% (was 3/56 = 5.4%; AMR ≤3% cap
-        already exceeded pre-edit; flagged in session report per task constraint).
+        already exceeded pre-edit).
         AMR package at export/tier-rotation/amr/ not re-synced (user instruction).
       outcome: >
         Staged for next Zenodo re-upload (v1.0.1). No version bump until upload

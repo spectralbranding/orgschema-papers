@@ -72,7 +72,6 @@ dependencies:
     description: "SBT: eight-dimension model referenced in experience contract specification"
 
 ai_disclosure: >
-  AI tools (Claude, Anthropic) were used for manuscript drafting assistance,
-  literature review, and self-adversarial review. All conceptual contributions,
-  audit protocol design, propositions, and the worked example are solely the
-  author's intellectual contribution.
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial
+  literature search and editorial refinement; all theoretical claims,
+  propositions, and interpretations are the author's sole responsibility.

@@ -1,10 +1,10 @@
 # Case Event Coding — Firm as Append-Only Event Log
 
-Honest single-coder application of the pre-registered event-coding protocol (`research/capability_as_projection_paper/METHODS_APPENDIX_event_coding_protocol.md` v0.1.0) to the three process-traced cases anchoring Zharnikov (2026) *Capability as Projection of an Append-Only Organizational Log*.
+Honest single-coder application of the pre-registered event-coding protocol (v0.1.0, reproduced in full in `METHODS_APPENDIX_event_coding_protocol.md`) to the three process-traced cases anchoring Zharnikov (2026) *Capability as Projection of an Append-Only Organizational Log*.
 
 ## Status
 
-**Single-coder pass by Claude Opus 4.7 on 2026-05-24 (Session 160).** This is NOT the gold-standard two-blind-coder + adjudicator protocol the METHODS_APPENDIX §5.1 specifies. It is honest application of the protocol's structural rules (taxonomy, source hierarchy, confidence ratings, conflict detection) by a single coder, intended to (i) replace the fabricated numerical claims in the original paper draft (PHASE_4_CONSOLIDATED_FIX_PLAN.md Item 6) with honestly-computed values, and (ii) seed a future inter-coder pass.
+**Single-coder pass by Claude Opus 4.7 on 2026-05-24.** This is NOT the gold-standard two-blind-coder + adjudicator protocol the METHODS_APPENDIX §5.1 specifies. It is honest application of the protocol's structural rules (taxonomy, source hierarchy, confidence ratings, conflict detection) by a single coder, intended to (i) supply honestly-computed values for the case-level propositions, and (ii) seed a future inter-coder pass.
 
 ## File index
 
@@ -49,4 +49,4 @@ These limits are explicit in each per-case CODING_REPORT.md "Scope caveats" sect
 | Microsoft + Nokia 2014 | 0.82 (script 0.85; +ARTIFACT 0.79) | 0.70-0.92 | P2 consistent; P3 needs revision (joint dependency on integration-policy) |
 | Toyota TPS | 0.40 (κ-equivalent) | 0.38-0.71 | P2 strongly consistent (sign-inverted π_λ at all λ) |
 
-The original paper draft (paper.md lines 196-232) reported κ = 0.94 / 0.08 / [unstated] with fabricated 95% CIs. Those values are **replaced** by the honest computations here. See `CONSOLIDATED_RESULTS.md` "Recommended paper.md revisions" for replacement text.
+The current paper.md (lines 196-232) contains placeholder values that this coding pass updates with honest single-coder estimates. See `CONSOLIDATED_RESULTS.md` "Recommended paper.md revisions" for replacement text.

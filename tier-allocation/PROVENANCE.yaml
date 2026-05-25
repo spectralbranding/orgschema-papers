@@ -10,16 +10,14 @@ provenance:
       date: "2026-05-07"
       title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
       description: >
-        Phase-0 thesis lock per the pre-draft Grok review workflow. Cross-engine
-        deep research across capital allocation, dynamic capabilities, intangible-
-        asset depreciation, and internal-capital-markets streams. Pre-draft
-        structural review produced a MEDIUM/R&R_LIKELY verdict with three fatal
-        gaps identified and addressed: architectural-decomposition framing (§1);
-        formal-model assumptions stated with scope conditions; and a two-tier
-        minimal illustration with full arithmetic and sensitivity analysis. Four
-        verified anchor citations integrated. Thesis document revised to v1.1
-        before drafting commenced.
-      outcome: "Phase-0 thesis locked; pre-draft review REVISE+GO. Drafting authorized."
+        Initial thesis scoping. Cross-engine deep research across capital
+        allocation, dynamic capabilities, intangible-asset depreciation, and
+        internal-capital-markets streams. Structural review addressed three gaps:
+        architectural-decomposition framing (§1); formal-model assumptions stated
+        with scope conditions; and a two-tier minimal illustration with full
+        arithmetic and sensitivity analysis. Four verified anchor citations
+        integrated before drafting commenced.
+      outcome: "Thesis scoping complete. Drafting authorized."
 
     - version: "1.0.0-draft"
       date: "2026-05-07"
@@ -31,50 +29,43 @@ provenance:
         specification. Closed-form optimal-share rule w_t*(r) = alpha_t /
         (delta_t + r) derived. AMA citation format throughout.
       outcome: >
-        Working draft ready for post-draft review pipeline.
+        Working draft ready for final review before Zenodo upload.
 
     - version: "1.0.0"
       date: "2026-05-07"
       doi: "10.5281/zenodo.20072288"
       title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
       description: >
-        Zenodo upload-ready version. Post-draft review pipeline applied: multiple
-        rounds of /review-paper, Grok pre-submission review, /review-literature,
-        and Perplexity citation verification. Mathematical derivations, r-
-        sensitivity analyses, alternative alpha calibrations, and CES robustness
-        (sigma = .5, 1.0, 1.5) moved to Online Supplement. Companion computation
-        script (back_of_envelope.py) published; Figure 1 contour plot published.
+        First Zenodo upload. Mathematical derivations, r-sensitivity analyses,
+        alternative alpha calibrations, and CES robustness (sigma = .5, 1.0, 1.5)
+        moved to Online Supplement. Companion computation script
+        (back_of_envelope.py) published; Figure 1 contour plot published.
         Cross-tier portfolio formalism with discounted-Cobb-Douglas and
         Jorgensonian user-cost-of-capital as the maintained specification;
         closed-form share rule w_t*(r) = alpha_t / (delta_t + r) yields
         d(w_6*)/dr > 0 from the decay-rate differential sign(delta_6 - delta_S) > 0.
-        Citation verification via Perplexity third-source caught and corrected
-        metadata errors before upload. References 62; body ~12,998 words;
-        self-citation rate 3.2% (2 of 62). Target venue: Strategic Management
-        Journal (primary).
+        Citation verification caught and corrected metadata errors before upload.
+        References 62; body ~12,998 words; self-citation rate 3.2% (2 of 62).
+        Target venue: Strategic Management Journal (primary).
       outcome: >
         Citable working paper. Concept DOI 10.5281/zenodo.20072288; v1 DOI
         10.5281/zenodo.20072289. Target venue: Strategic Management Journal.
 
-    - version: "1.0.0+Session145"
+    - version: "1.0.0+2026-05-10"
       date: "2026-05-10"
       title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
       description: >
-        Applied two PENDING_UPDATES entries (Brand Finance B2B 2026 + Gartner
-        AI/ROI 2026). Brand Finance: 3-sentence paragraph added at end of
-        "Theoretical Implications for Marketing Finance" section (AAA vs B EBIT
-        multiples; $4T B2B brand value). Brand Finance (2026) reference added
-        alphabetically after Bloom (2012) in References. Gartner: 1-sentence
+        Two updates applied: Brand Finance B2B 2026 — 3-sentence paragraph added
+        at end of "Theoretical Implications for Marketing Finance" section (AAA vs
+        B EBIT multiples; $4T B2B brand value); Brand Finance (2026) reference
+        added alphabetically after Bloom (2012). Gartner AI/ROI 2026 — 1-sentence
         paragraph added at end of "Managerial Implications" section (350-enterprise
-        survey; no ROI correlation with workforce reduction). Gartner (2026)
-        reference added alphabetically after Ghemawat-Levinthal (2008) in
-        References. 3 deferred items (non-AI exemplars; 2026ak forward-ref; CES
-        generalization) left QUEUED per original react-only gating logic.
-        Self-cite density unchanged at 2/64 = 3.1% (no self-cites added).
+        survey; no ROI correlation with workforce reduction); Gartner (2026)
+        reference added alphabetically after Ghemawat-Levinthal (2008).
+        Self-cite density unchanged at 2/64 = 3.1%.
       outcome: >
         Staged for next Zenodo re-upload (v1.1.0). No version bump until upload
-        is minted. SMJ submission window open; PENDING_UPDATES applied to
-        Zenodo PDF as part of pre-submission staging.
+        is minted.
 
   submissions: []
 

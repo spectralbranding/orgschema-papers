@@ -1,16 +1,16 @@
 # The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
 
-**Dmitry Zharnikov**
+Dmitry Zharnikov
 
 ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205)
 
-Working Paper v2.0.0 -- May 2026
+Working Paper v2.0.0 – May 2026
 
 ---
 
-**Abstract**
+## Abstract
 
 Most strategic reorganizations fail to deliver expected performance gains. We argue this reflects a deeper architectural fact: interventions at the org-chart surface (T_6) achieve effect-sizes geometrically smaller than interventions at deeper tiers, because each deeper tier carries content already compressed in transit to the surface. We formalize this as a six-tier *projection cascade* linking owner intent (T_1), business model (T_2), governance (T_3), architecture (T_4), routines (T_5), and positions (T_6). Each junction is a linear operator Π_{i→i+1} with rank deficiency r_i ≥ 0. A unique cascade equilibrium exists under tier-by-tier Banach contractions (Theorem 1); total information loss is bounded by the sum of local nullities, with equality only when kernels stack independently (Corollary 1). Existing design theories — Galbraith's star, Williamson's governance choice, Mintzberg's configurations, Puranam's microstructure, Burton-Obel-Håkonsson's computational optimization — are recovered as nested restrictions. A formal *position triple* p = (P_p, A_p, R_p) decomposes any T_6 position into perceptual content from T_5, authority from T_3, and role expectation from T_1. The apparatus yields four falsifiable propositions: P1 cascade-distance scaling of intervention efficacy, P2 strict downward propagation of basis rotation under AI deployment, P3 variance amplification with cumulative rank deficiency, and P4 algebraic decoupling at layer junctions.
 

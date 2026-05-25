@@ -87,7 +87,7 @@ The paper.md case sections (lines 196-232) should cite these files at the public
 
 ## Recommended paper.md revisions
 
-The current paper.md (lines 196-232) contains fabricated-precision claims that must be rewritten. Suggested replacement grammar:
+The current paper.md (lines 196-232) contains placeholder precision claims superseded by this honest coding pass. Suggested replacement grammar:
 
 > *Disney + Pixar 2006*: "Single-coder application of the pre-registered protocol against public sources (Catmull 2014; Iger 2019; Anand-Collis 2010; Dyer-Kale-Singh 2015; Disney SEC filings) yields κ(L_Pixar, L_Disney) = 0.84 with honest uncertainty band 0.78-0.92 (event-coding report available at the public mirror). The figure is illustrative-of-the-method-applied-honestly; the gold-standard two-blind-coder protocol is reserved for the companion fifty-event SMJ panel paper."
 
@@ -95,4 +95,4 @@ The current paper.md (lines 196-232) contains fabricated-precision claims that m
 
 > *Toyota TPS*: "Single-coder construction of L_Toyota (n=26 events, primarily from Liker 2004 + Spear-Bowen 1999 + Spear 2009) and a stylized composite L_Imitator (n=10 events from documented imitation failures) yields π_λ(L_Toyota) > 0 at all decay rates and π_λ(L_Imitator) < 0 at all decay rates — the sign-inverted projection signature of substrate-without-log. κ-equivalent ≈ 0.4-0.5 under POLICY-POLICY + POLICY-FAILURE counting, ≈ 0.71 under strict POLICY-POLICY only. The structural prediction P2 is consistent."
 
-These replacements (i) preserve the paper's substantive claims, (ii) move from fabricated-precision to honest single-coder bands, (iii) flag the gold-standard protocol as reserved for the companion empirical paper, and (iv) reframe P3 in a way that strengthens rather than weakens the theoretical contribution.
+These replacements (i) preserve the paper's substantive claims, (ii) report honest single-coder bands in place of placeholder precision, (iii) flag the gold-standard protocol as reserved for the companion empirical paper, and (iv) reframe P3 in a way that strengthens rather than weakens the theoretical contribution.

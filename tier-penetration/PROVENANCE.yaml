@@ -10,35 +10,30 @@ provenance:
       date: "2026-05-08"
       title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
       description: >
-        Phase-0 thesis lock per the pre-draft Grok review workflow. Cross-engine
-        deep research (Phase 1: 8 queries; Phase 2 Round 1: 14 refs / 10 DOIs;
-        Round 2: 8 Grok-flagged refs; Round 3: Bennedsen and Nonaka). Phase-1.5
-        Grok pre-draft structural review produced a MEDIUM/R&R_LIKELY verdict with
-        three fatal gaps identified and flagged for resolution before drafting:
-        (1) framing relative to Acemoglu-Restrepo task-displacement tradition;
-        (2) ontology grounding in canonical strategy-theory anchors (Penrose 1959,
-        Williamson 1985, Teece 2007, Dierickx-Cool 1989, Pentland-Feldman 2005);
-        (3) self-citation density discipline. HARD GATE closed with user GO.
-      outcome: "Phase-0 thesis locked; pre-draft review MEDIUM/R&R_LIKELY; user GO. Drafting authorized."
+        Initial thesis lock. Deep research across multiple rounds establishing
+        coverage of the Acemoglu-Restrepo task-displacement tradition, canonical
+        strategy-theory anchors (Penrose 1959, Williamson 1985, Teece 2007,
+        Dierickx-Cool 1989, Pentland-Feldman 2005), and self-citation discipline.
+        Three structural gaps identified and resolved before drafting commenced.
+      outcome: "Thesis structure confirmed; drafting authorized."
 
     - version: "1.0.0-draft"
       date: "2026-05-08"
       title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
       description: >
-        Phase-3 first full draft via five-round drafting process. Approximately
-        13,100 words body; 58 references; 3 propositions P1-P3 (Tier-6 paradox,
-        substrate threshold at Tier 4, horizon-conditional sign flip); 4 tables;
-        Appendix A self-contained re-derivation (A.1 tier ontology, A.2 persistence
-        calibration, A.3 Cobb-Douglas + Jorgensonian base model, A.4 separability
-        axioms, A.5 new vs inherited). Generalized share rule
+        First full draft. Approximately 13,100 words body; 58 references; 3
+        propositions P1-P3 (Tier-6 paradox, substrate threshold at Tier 4,
+        horizon-conditional sign flip); 4 tables; Appendix A self-contained
+        re-derivation (A.1 tier ontology, A.2 persistence calibration,
+        A.3 Cobb-Douglas + Jorgensonian base model, A.4 separability axioms,
+        A.5 new vs inherited). Generalized share rule
         w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)] derived.
-        Post-draft trio: /review-paper r1 REVISE_FIRST / R&R_LIKELY; /review-literature
-        r1 ADEQUATE; Grok r2 3/10 desk-reject-risk. User chose Path C Hybrid:
-        length 16K->13.1K; self-cite 13.7%->10.3%; ontology grounded in five
-        canonical anchors; §3.3 non-AI-baseline paragraph (Hermes / Apple-Jobs /
-        Costco) added.
+        Post-draft structural review; length reduced from approximately 16,000 to
+        13,100 words; self-citation rate reduced from 13.7% to approximately 10.3%;
+        ontology grounded in five canonical strategy-theory anchors; §3.3
+        non-AI-baseline paragraph (Hermès / Apple-Jobs / Costco) added.
       outcome: >
-        Working draft ready for Zenodo upload after Path C Hybrid fix-pass applied.
+        Working draft ready for Zenodo upload after fix-pass applied.
 
     - version: "1.0.0"
       date: "2026-05-08"
@@ -60,17 +55,16 @@ provenance:
         Citable working paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI
         10.5281/zenodo.20087037. Target venue: Strategic Management Journal.
 
-    - version: "1.0.0+Session145"
+    - version: "1.0.0+post-upload-update"
       date: "2026-05-10"
       title: "AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage"
       description: >
-        Applied PENDING_UPDATES Gartner AI/ROI 2026 entry. Inserted paragraph
-        after P3 Falsification statement (before Table 3) with Gartner (2026) 350-
-        enterprise survey data showing no ROI correlation with workforce reduction;
-        includes Helen Poitevin quote anchor. Gartner (2026) reference added
-        alphabetically before Grant (1996) in References. Applied to SSOT and public
-        mirror simultaneously. Self-cite density unchanged at 6/63 = 9.5% (Gartner
-        is a non-self-cite; no self-cites added).
+        Inserted paragraph after P3 Falsification statement (before Table 3) with
+        Gartner (2026) 350-enterprise survey data showing no ROI correlation with
+        workforce reduction; includes Helen Poitevin quote anchor. Gartner (2026)
+        reference added alphabetically before Grant (1996) in References.
+        Self-cite density unchanged at 6/63 = 9.5% (Gartner is a non-self-cite;
+        no self-cites added).
       outcome: >
         Staged for next Zenodo re-upload (v1.0.1 or v1.1.0). No version bump until
         upload is minted.

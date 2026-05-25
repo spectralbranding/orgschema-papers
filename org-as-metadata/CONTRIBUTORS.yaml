@@ -17,10 +17,9 @@ contributors:
   - name: "Claude (Anthropic)"
     type: ai
     roles:
-      - writing-assistance
-      - review-paper
-      - review-literature
+      - literature-search
+      - editorial-refinement
     contributions: >
-      AI-assisted drafting, literature search and verification, and
-      self-adversarial review. All theoretical arguments, propositions,
-      and analytical claims are the author's own.
+      Initial literature search and editorial refinement during manuscript
+      preparation. All theoretical arguments, propositions, and analytical
+      claims are the author's sole responsibility.

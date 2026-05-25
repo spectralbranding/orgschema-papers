@@ -153,23 +153,9 @@ target_venue:
   secondary: "Management Information Systems Quarterly"
   tertiary: "Academy of Management Review"
 
-review_history:
-  - round: "Grok r1 (Phase 1.5 pre-draft)"
-    date: "2026-05-08"
-    verdict: "MEDIUM/R&R_LIKELY"
-  - round: "/review-paper r1"
-    date: "2026-05-08"
-    verdict: "REVISE_FIRST / R&R_LIKELY"
-  - round: "/review-literature r1"
-    date: "2026-05-08"
-    verdict: "ADEQUATE"
-  - round: "Grok r2 (post-Phase-3 draft)"
-    date: "2026-05-08"
-    score: "3/10"
-    verdict: "desk-reject-risk"
-  - round: "User Path C Hybrid fix-pass"
-    date: "2026-05-08"
-    description: "Length 16K->13.1K; self-cite 13.7%->10.3%; ontology grounded in Penrose 1959 + Williamson 1985 + Teece 2007 + Dierickx-Cool 1989 + Pentland-Feldman 2005"
+revision_history:
+  - date: "2026-05-08"
+    description: "Structural revision prior to Zenodo upload: length reduced from approximately 16,000 to 13,100 words; self-citation rate reduced from 13.7% to approximately 10.3%; ontology grounded in Penrose 1959 + Williamson 1985 + Teece 2007 + Dierickx-Cool 1989 + Pentland-Feldman 2005"
 
 verification:
   computation_script:

@@ -6,7 +6,7 @@
 
 **Citation key**: 2026ah
 
-**Status**: Working paper v1.1.0-pre (2026-05-02). v1.0.0 published on Zenodo 2026-04-30 under the prior title "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture." Phase 3 audit + Grok r1 review + title/abstract/intro/conclusion rewrites applied; user-verified DOI corrections applied (Snihur & Tarziján 2018 LRP confirmed; Strebinger & Treiblmaier 2018 fabricated → replaced with Strebinger 2004 ACR + Åsberg & Uggla 2019 JBM); Simon 1962 added to bibliography. Target venue committed: Strategic Management Journal. Pending v1.1.0 Zenodo re-upload.
+**Status**: Working paper v1.1.0-pre. v1.0.0 published on Zenodo 2026-04-30 under the prior title "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture." Title, abstract, introduction, and conclusion revised for Strategic Management Journal; DOI corrections applied (Snihur & Tarziján 2018 LRP confirmed; Strebinger & Treiblmaier 2018 replaced with Strebinger 2004 ACR + Åsberg & Uggla 2019 JBM); Simon 1962 added to bibliography. Pending v1.1.0 Zenodo re-upload.
 
 **DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (v1, 2026-04-30) | v1.1 DOI pending re-upload
 

@@ -10,14 +10,12 @@ provenance:
       date: "2026-04-29"
       title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
       description: >
-        Working paper skeleton derived from a six-prompt hardened deep-research
-        pass (prior-art saturation; competitor frameworks; form-invariance
-        novelty; flip case overlap; separability diagnostic novelty;
-        failure-propagation cascades). Cross-source verification across four
-        engines. Cascade claim formalized as
+        Working paper skeleton. Prior-art saturation, competitor-framework
+        analysis, form-invariance novelty assessment, and failure-propagation
+        cascade scoping completed. Cascade claim formalized as
         antecedent/mechanism/consequence per pathway. Ontological-mixing
-        pre-emption baked into the §2.2 critical passage.
-      outcome: "Skeleton ready for full drafting. AMR-tier target locked."
+        pre-emption developed for §2.2.
+      outcome: "Skeleton ready for full drafting."
 
     - version: "1.0.0-pre"
       date: "2026-04-29"

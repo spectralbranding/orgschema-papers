@@ -18,14 +18,12 @@ contributors:
     type: ai
     roles:
       - writing-assistance
-      - review-paper
-      - review-literature
-      - hardened-deep-research
+      - literature-search
+      - editorial-refinement
       - code-implementation
     contributions: >
-      AI-assisted literature search, full draft expansion and editing, parallel
-      review-paper and review-literature passes, fix-pass application, and
-      implementation of the companion computation script (back_of_envelope.py),
+      AI-assisted literature search, drafting assistance, editorial refinement,
+      and implementation of the companion computation script (back_of_envelope.py),
       including the contour-plot generation function, CES robustness check, and
       optimal-share solver. All theoretical arguments, propositions, and
       analytical claims are the author's own.
@@ -33,19 +31,18 @@ contributors:
   - name: "Grok (xAI)"
     type: ai
     roles:
-      - hardened-deep-research
-      - pre-skeleton-review
-      - post-draft-review
+      - literature-search
+      - editorial-refinement
     contributions: >
-      Cross-source verification across the hardened deep-research pass; pre-draft
-      structural recommendations that shaped the Cobb-Douglas / Jorgensonian
-      user-cost-of-capital maintained specification and the agency-extension
-      framing; multiple post-draft SMJ-readiness reviews.
+      Cross-source verification across the deep-research pass; structural
+      recommendations that shaped the Cobb-Douglas / Jorgensonian user-cost-of-
+      capital maintained specification and the agency-extension framing; editorial
+      review.
 
   - name: "Perplexity"
     type: ai
     roles:
-      - hardened-deep-research
+      - literature-search
       - citation-verification
     contributions: >
       Cross-source verification on bibliography anchors; third-source citation
@@ -55,8 +52,8 @@ contributors:
   - name: "Gemini (Google)"
     type: ai
     roles:
-      - hardened-deep-research
+      - literature-search
     contributions: >
       Cross-source verification across the deep-research pass via Gemini 2.5 Pro
-      with google_search grounding; contributed to Phase-2 literature saturation
-      on capital allocation and intangible-asset depreciation streams.
+      with google_search grounding; contributed to literature saturation on
+      capital allocation and intangible-asset depreciation streams.

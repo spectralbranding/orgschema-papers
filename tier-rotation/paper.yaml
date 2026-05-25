@@ -170,7 +170,7 @@ artifacts:
 
 self_citation_rate: 0.063  # 3 of 48 references (2026a, 2026ag, 2026ah)
 references_count: 48
-body_word_count: 13350  # Session 132 apparent-vs-structural decoupling expansion (~+400 words; +Crilly, Hansen, Zollo 2016 AMJ) + Erdem-Keane 1996/2008 + Fauchart-Gruber 2011 body integration (~+150 words)
+body_word_count: 13350  # apparent-vs-structural decoupling expansion (~+400 words; +Crilly, Hansen, Zollo 2016 AMJ) + Erdem-Keane 1996/2008 + Fauchart-Gruber 2011 body integration (~+150 words)
 abstract_word_count: 310
 title_word_count: 16
 target_venue:

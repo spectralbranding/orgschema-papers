@@ -30,7 +30,7 @@ Requires: Python 3.12+, numpy. No proprietary data. Fixed seed `SEED = 2026`.
 ## Zenodo DOI
 
 Paper v1 (preserved): [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205).
-Paper v2.0.0 concept DOI: to be minted at Phase-6 Zenodo upload.
+Paper v2.0.0 concept DOI: [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205).
 Public mirror: https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper/
 
 ## Method

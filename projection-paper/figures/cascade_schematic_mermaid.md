@@ -4,7 +4,7 @@
 **Citation key**: 2026m (v2.0.0)
 **Section**: §3.1
 
-This file contains the Mermaid source for Figure 1 of the paper. A vector-graphic upgrade (SVG/PDF via Typst or Graphviz) is pending Phase-6 polish.
+This file contains the Mermaid source for Figure 1 of the paper. A vector-graphic upgrade (SVG/PDF via Typst or Graphviz) is pending before submission.
 
 ## Caption
 
@@ -42,4 +42,4 @@ flowchart TB
 - Solid arrows (-->) represent downward projection operators Pi_{i->i+1}.
 - Dashed arrows (-.->) represent upward feedback operators A_{i+1->i}.
 - The PI node represents the composite cascade operator from T_1 to T_6.
-- Vector-graphic upgrade (SVG export from Mermaid CLI or Graphviz redraw) is flagged for Phase-6 polish before submission.
+- Vector-graphic upgrade (SVG export from Mermaid CLI or Graphviz redraw) is flagged for completion before submission.

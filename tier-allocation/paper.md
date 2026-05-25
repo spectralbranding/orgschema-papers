@@ -1,16 +1,16 @@
 # Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value
 
-**Dmitry Zharnikov**
+Dmitry Zharnikov
 
 ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
 
-Working Paper v1.0.0 -- May 2026
+Working Paper v1.0.0 – May 2026
 
 ---
 
-**Abstract**
+## Abstract
 
 Why do two firms with identical revenues, margins, and aggregate investment generate exit multiples of 2× versus 9× revenue and divergent post-acquisition performance? Capital allocation theory, dynamic capabilities, and marketing-finance literatures have each left the direction of investment within a business implicit. This paper formalizes the cross-tier allocation problem using a vector w spanning five operating tiers that differ in asset durability. Each tier accumulates stock according to a differential equation with tier-specific decay rates δ_t ranging from .50/year at the organizational surface (Tier 6: advertising, paid media) to .05–.10/year at foundational layers (Tiers 2–3: business-model architecture, legal position). Long-run value is a discounted Cobb-Douglas aggregator incorporating Jorgensonian user costs (δ_t + r) and ownership-separability weights. Optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule w_t*(r) = α_t / (δ_t + r) and the comparative static ∂w₆*/∂r > 0: higher discount rates increase optimal allocation to the high-decay surface tier at the expense of durable substrate.
 

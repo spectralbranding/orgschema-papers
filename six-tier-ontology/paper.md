@@ -1,10 +1,12 @@
 # Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation
 
-*Dmitry Zharnikov*
+Dmitry Zharnikov
+
+ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813)
 
-Working Paper v1.0.0 -- April 2026
+Working Paper v1.0.0 – April 2026
 
 ---
 

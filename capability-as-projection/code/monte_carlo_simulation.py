@@ -6,9 +6,8 @@ Companion computation script for:
     Zharnikov, D. (2026). Capability as Projection of an Append-Only Organizational Log: Toward an
     Event-Sourced Theory of Organizational Capability. Working paper.
 
-Implements the comparative-statics simulation requested by Grok r1
-post-draft review Sections 5 and 6 (PHASE_4_CONSOLIDATED_FIX_PLAN
-item 11, "elevate the formalism"):
+Implements the comparative-statics simulation for Sections 5 and 6
+of the paper ("elevate the formalism"):
 
     Vary conflict density d in {0.0, 0.1, 0.2, 0.5, 0.9} and decay
     parameter lambda in {0.0, 0.05, 0.1, 0.5} across N = 500 trials.

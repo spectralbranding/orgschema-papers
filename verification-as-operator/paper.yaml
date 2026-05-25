@@ -115,4 +115,4 @@ bridges:
   - paper: "Zharnikov 2026ad (R22, forthcoming)"
     role: "mu > lambda stability condition for cascade under realistic organizational dynamics"
 
-reference_audit: "DR-8 (2026-04-25/26). v0.4 structural revision (Grok review). Self-citations reduced from 6 to 1 (Zharnikov 2026i only; dropped 2026a, 2026aa, 2026ad, 2026h, 2026x). Total refs: 31. Self-cite ratio: 1/31 = 3.2%. New title. Target venue: Academy of Management Review. Python simulation added (Appendix B). Proof sketch for Proposition 1. Spectra Coffee in dedicated Illustration subsection."
+reference_audit: "v0.4 structural revision (2026-04-25). Self-citations reduced from 6 to 1 (Zharnikov 2026i only; dropped 2026a, 2026aa, 2026ad, 2026h, 2026x). Total refs: 31. Self-cite ratio: 1/31 = 3.2%. Target venue: Academy of Management Review. Python simulation added (Appendix B). Proof sketch for Proposition 1. Spectra Coffee in dedicated Illustration subsection."

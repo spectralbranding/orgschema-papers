@@ -77,7 +77,7 @@ artifacts:
   - type: "figure"
     id: "Figure 2"
     title: "Position as a Cascade-Coordinate Object"
-    note: "Schematic; Mermaid source to be finalized in Phase 4"
+    note: "Schematic; Mermaid source pending finalization"
 
 companion_script: "code/cascade_numerical_example.py"
 

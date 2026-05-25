@@ -2,9 +2,15 @@
 
 Dmitry Zharnikov
 
-DOI: 10.5281/zenodo.19555201
+ORCID: 0009-0000-6893-9231
 
-**Abstract**
+DOI: [10.5281/zenodo.19555201](https://doi.org/10.5281/zenodo.19555201)
+
+Working Paper v1.0.0 – April 2026
+
+---
+
+## Abstract
 
 This paper introduces the OrgSchema Audit, a structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels: experience contracts, signal requirements, process contracts, procedures, input specifications, and sourcing requirements. The protocol parallels the Spectral Audit developed for brand perception (Zharnikov, manuscript submitted for publication) but targets organizational operations rather than perceptual allocation. Each audit level defines what to examine, what a healthy specification looks like, what failure modes indicate, and what corrective actions restore specification integrity. A worked example using a specialty coffee operation demonstrates the full protocol. The paper argues that a significant share of organizational dysfunction originates not from poor execution but from absent or misaligned specifications, and that remediation should be prioritized by cascade position rather than symptom severity. The protocol is designed to be executable with or without AI assistance, though large language models substantially reduce the cost of initial specification extraction from existing documentation.
 

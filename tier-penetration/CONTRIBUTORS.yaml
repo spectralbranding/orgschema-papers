@@ -18,13 +18,9 @@ contributors:
     type: ai
     roles:
       - writing-assistance
-      - review-paper
-      - review-literature
-      - hardened-deep-research
       - code-implementation
     contributions: >
-      AI-assisted literature search, full draft expansion and editing, parallel
-      review-paper and review-literature passes, fix-pass application, and
+      AI-assisted literature search, draft expansion and editing, and
       implementation of the companion computation script
       (tier_penetration_simulation.py), including the AI-extended optimal-share
       solver, CES robustness check at sigma in {.5, 1.0, 1.5}, and
@@ -34,21 +30,16 @@ contributors:
   - name: "Grok (xAI)"
     type: ai
     roles:
-      - hardened-deep-research
-      - pre-skeleton-review
-      - post-draft-review
+      - literature-search
     contributions: >
-      Cross-source verification across the hardened deep-research pass; pre-draft
-      structural review (Phase 1.5) that produced a MEDIUM/R&R_LIKELY verdict and
-      identified three structural gaps addressed before drafting commenced;
-      post-draft review (Grok r2) flagging self-citation density and ontology
-      grounding for Path C Hybrid fix-pass.
+      Cross-source verification during the deep-research pass on AI-and-strategy,
+      IT-complementarity, and dynamic-capabilities streams.
 
   - name: "Gemini (Google)"
     type: ai
     roles:
-      - hardened-deep-research
+      - literature-search
     contributions: >
-      Cross-source verification across the deep-research pass via Gemini 2.5 Pro
-      with google_search grounding; contributed to Phase-2 literature saturation
-      on AI-and-strategy, IT-complementarity, and dynamic-capabilities streams.
+      Cross-source verification during the deep-research pass via Gemini 2.5 Pro
+      with google_search grounding on AI-and-strategy, IT-complementarity, and
+      dynamic-capabilities streams.

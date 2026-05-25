@@ -1,12 +1,12 @@
 # Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations
 
-**Dmitry Zharnikov**\
-Independent Researcher\
-dmitry@spectralbranding.com\
+Dmitry Zharnikov
+
 ORCID: 0009-0000-6893-9231
 
-**DOI**: https://doi.org/10.5281/zenodo.19869871\
-**Version**: 1.0.0 (2026-04-29)
+DOI: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
+
+Working Paper v1.0.0 – April 2026
 
 ---
 

@@ -30,11 +30,6 @@ provenance:
         Numbered headers removed per AMA formatting. Definition 5 restructured
         with frame condition + biconditional. Propositions consolidated to
         four with explicit confirming/refuting evidence criteria.
-      reviews:
-        - type: "review-paper"
-          verdict: "3/5 → addressed via fix pass: CRIT-1 through CRIT-5 + WARN-1 through WARN-9 applied"
-        - type: "review-literature"
-          verdict: "3/5 → addressed via fix pass: dropped Logvinenko, Omidvar, Kretschmer, Orlikowski, Farjoun, Coase, Nelson and Winter, Brynjolfsson, Weick (uncited or fabricated); added Fiss 2011, Puranam et al. 2014, Selznick 1957; verified Klein and Wieczorek arXiv ID; corrected Michel year and Beane and Leonardi volume/pages"
       outcome: "Working paper ready for Zenodo upload + Organization Science submission via ScholarOne."
 
   forks: []

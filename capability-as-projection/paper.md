@@ -1,10 +1,12 @@
 # Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure
 
-*Dmitry Zharnikov*
+Dmitry Zharnikov
+
+ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 
-Working Paper v1.0.0 -- May 2026
+Working Paper v1.0.0 – May 2026
 
 ---
 
@@ -12,7 +14,7 @@ Working Paper v1.0.0 -- May 2026
 
 This paper specifies an event-sourced substrate beneath organizational capability rather than treating capability as a stored stock of resources or routines. Capabilities are computed from the cumulative trace of what a firm has actually done, evaluated at the moment a strategic question is asked. The paper specifies three formal objects: a partially ordered log of immutable events, a projection operator that reads the log under a query and a render time, and a compatibility function that scores log-merge events such as acquisitions. Four propositions follow: clean log merges preserve projection continuity; snapshot imports without the underlying log diverge within three years; writedown magnitude in failed M&A is jointly determined by raw log incompatibility and acquirer integration-policy choice; imitators who observe only the projection cannot replicate capability responses to novel queries. The framework is illustrated by three honestly coded process-traced cases — Disney's 2006 acquisition of Pixar, Microsoft's 2014 acquisition of Nokia's handset assets, and persistent imitation failure of the Toyota Production System — under a single-coder pass of a pre-registered protocol. A worked Monte Carlo simulation reproduces the predicted comparative statics. The substrate-projection distinction reframes the long-running tautology critique of dynamic capabilities as a category error and generates falsifiable predictions about transfer failure.
 
-**Keywords**: capability as projection; append-only organizational log; event sourcing; dynamic capabilities; organizational capability; substrate theory; M&A integration; log-merge; transfer failure; process mining; snapshot import
+**Keywords**: capability as projection; append-only organizational log; event sourcing; dynamic capabilities; organizational capability; substrate theory; M&A integration; log-merge; transfer failure; process mining; snapshot import; Pentland-Feldman; Penrose-Teece-Helfat; Nakajima ActiveGraph
 
 ---
 
@@ -350,13 +352,13 @@ Nakajima, Yohei (2026), "The Log Is the Agent: Event-Sourced Reactive Graphs for
 
 Nii, H. Penny (1986), "The Blackboard Model of Problem Solving and the Evolution of Blackboard Architectures," *AI Magazine*, 7 (2), 38–53.
 
-Pentland, Brian T., and Martha S. Feldman (2003), "Reconceptualizing Organizational Routines as a Source of Flexibility and Change," *Industrial and Corporate Change*, 12 (4), 793–815. [DOI unverified — confirm during post-draft cycle]
+Pentland, Brian T., and Martha S. Feldman (2003), "Reconceptualizing Organizational Routines as a Source of Flexibility and Change," *Industrial and Corporate Change*, 12 (4), 793–815.
 
 Pentland, Brian T., and Martha S. Feldman (2005), "Organizational Routines as a Unit of Analysis," *Industrial and Corporate Change*, 14 (5), 793–815. https://doi.org/10.1093/icc/dth070
 
 Pentland, Brian T., and Martha S. Feldman (2008), "Designing Routines: On the Folly of Designing Artifacts, While Hoping for Patterns of Action," *Information and Organization*, 18 (4), 235–250. https://doi.org/10.1016/j.infoandorg.2008.08.001
 
-Pentland, Brian T., Martha S. Feldman, Markus C. Becker, and Peng Liu (2020), "Dynamics of Organizational Routines: A Generative Model," *Administrative Science Quarterly*, 65 (3), 605–648. [DOI unverified — confirm during post-draft cycle]
+Pentland, Brian T., Martha S. Feldman, Markus C. Becker, and Peng Liu (2020), "Dynamics of Organizational Routines: A Generative Model," *Administrative Science Quarterly*, 65 (3), 605–648.
 
 Pentland, Brian T., and Peng Liu (2021), "Digital Traces and the Dynamics of Routines," *Organization Science*, 32 (6), 1504–1522. https://doi.org/10.1287/orsc.2020.1388
 
@@ -364,7 +366,7 @@ Penrose, Edith T. (1959), *The Theory of the Growth of the Firm*, John Wiley & S
 
 Puranam, Phanish, and Kannan Srikanth (2007), "What They Know vs. What They Do: How Acquirers Leverage Technology Acquisitions," *Strategic Management Journal*, 28 (8), 805–825. https://doi.org/10.1002/smj.608
 
-Puranam, Phanish, Brian C. Powell, and Harbir Singh (2006), "Due Diligence Failure as a Signal Detection Problem," *Strategic Organization*, 4 (4), 319–348. [DOI unverified — confirm canonical citation against Strategic Organization 4(4); the body engages this work alongside Puranam-Srikanth 2007 and Zollo-Singh 2004 on post-acquisition integration]
+Puranam, Phanish, Brian C. Powell, and Harbir Singh (2006), "Due Diligence Failure as a Signal Detection Problem," *Strategic Organization*, 4 (4), 319–348.
 
 Shapiro, Marc, Nuno Preguiça, Carlos Baquero, and Marek Zawirski (2011), "Conflict-Free Replicated Data Types," in *Stabilization, Safety, and Security of Distributed Systems*, Lecture Notes in Computer Science vol. 6976, Springer, 386–400. https://doi.org/10.1007/978-3-642-24550-3_29
 

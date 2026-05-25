@@ -6,11 +6,11 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20087036](https://doi.org/10.5281/zenodo.20087036)
 
-Working Paper v1.0.0 -- May 2026
+Working Paper v1.0.0 – May 2026
 
 ---
 
-**Abstract**
+## Abstract
 
 Why do identical AI investments produce sharply divergent M&A multiples despite comparable short-run productivity gains? Strategy research has examined AI spend, task exposure, and decision augmentation but has left unspecified the architectural tier at which AI-generated output accumulates. We address this omission by extending a multi-tier Jorgensonian capital-allocation model with two AI-specific shocks per tier: a cost shock γ_t that reduces effective rental prices and a durability shock Δ_t that lowers decay rates for substrate-accumulating tiers. The resulting closed-form share rule decomposes AI's consequences into price and persistence channels. Three core propositions emerge. First, surface-tier (Tier 6) cost reductions raise short-run earnings yet lower long-run M&A multiples by reallocating investment away from durable substrate. Second, a discrete substrate-building threshold exists at Tier 4: only proprietary or strongly embedded deployments generate level shifts in valuation. Third, AI's net value effect flips sign with the principal's effective discount rate — deep-tier deployments that codify tacit knowledge extend founder horizon and reinforce substrate accumulation, while surface deployments compress horizon and erode it. The complementary AI Tier Penetration Curve traces deployment depth as a dynamic-stage trajectory, reframing competitive advantage in the AI era as architectural penetration rather than investment intensity.
 

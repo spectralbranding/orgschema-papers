@@ -18,49 +18,44 @@ contributors:
     type: ai
     roles:
       - writing-assistance
-      - review-paper
-      - review-literature
-      - hardened-deep-research
+      - literature-search
+      - editorial-refinement
     contributions: >
-      AI-assisted skeleton drafting, full draft expansion, parallel
-      review-paper and review-literature passes, and fix-pass application.
-      All theoretical arguments, propositions, and analytical claims are the
-      author's own.
+      AI-assisted literature search, drafting assistance, and editorial
+      refinement. All theoretical arguments, propositions, and analytical
+      claims are the author's own.
 
   - name: "Grok (xAI)"
     type: ai
     roles:
-      - hardened-deep-research
-      - pre-skeleton-review
-      - post-draft-review
+      - literature-search
+      - editorial-refinement
     contributions: >
-      Cross-source verification across the six-prompt hardened deep-research
-      pass; pre-skeleton structural recommendations; post-draft AMR-readiness
-      review.
+      Cross-source verification across the deep-research pass; structural
+      recommendations and editorial review.
 
   - name: "Gemini (Google)"
     type: ai
     roles:
-      - hardened-deep-research
+      - literature-search
       - citation-verification
     contributions: >
-      Cross-source verification across the six-prompt deep-research pass via
-      Gemini 2.5 Pro REST API with google_search grounding. Caught DOI errors
-      that were corrected before drafting.
+      Cross-source verification via Gemini 2.5 Pro REST API with google_search
+      grounding. Citation verification prior to drafting.
 
   - name: "Perplexity"
     type: ai
     roles:
-      - hardened-deep-research
+      - literature-search
     contributions: >
-      Cross-source verification on the failure-propagation prompt. Surfaced
+      Cross-source verification on the failure-propagation literature. Surfaced
       primary-source-verified citation details for two M&A literature anchors.
 
   - name: "ChatGPT (OpenAI)"
     type: ai
     roles:
-      - hardened-deep-research
-      - structural-critique
+      - literature-search
+      - editorial-refinement
     contributions: >
       Surfaced the ontological-mixing structural objection that became §2.2
       of the paper.
