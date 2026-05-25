@@ -1,0 +1,76 @@
+# PROVENANCE.yaml -- Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
+# Version history and related-work record
+
+provenance:
+  paper_title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
+  repository: "spectralbranding/orgschema-papers/specification-readiness-empirical"
+  doi_concept: "[DOI reserved at upload]"
+  doi_v1: "[DOI reserved at upload]"
+
+versions:
+  - version: "1.0.0"
+    date: "2026-05-25"
+    doi: "[DOI reserved at upload]"
+    notes: >
+      Initial working paper release. Companion empirical operationalization
+      of Zharnikov (2026am) Specification Readiness and Endogenous Friction.
+      Develops the Specification Coherence Index (SCI) as the first scalable
+      archival measure of specification readiness; pairs continuous 10-K
+      linguistic-coherence treatment with a four-event sharp robustness
+      index (handbook publication, ISO 9001 certification, design-system
+      release, investor-day overhaul); specifies a multi-arm identification
+      strategy combining within-firm continuous treatment, staggered
+      difference-in-differences (Callaway-Sant'Anna 2021; Goodman-Bacon
+      2021), regulatory-compliance instrumental variables (Sarbanes-Oxley
+      Section 404 phase-in; EEOC reporting mandates), and event studies
+      around advertising-spend cessation, with Oster (2019) omitted-variable
+      bounds. Five hypotheses H1-H5 are stated as empirical readings of the
+      five comparative-statics propositions P1-P5 in 2026am, each with a
+      directional prediction, primary and secondary proxy, identification
+      strategy, threats register, pre-registered economic magnitude, and
+      Cohen's d. Pre-registered Monte Carlo mechanism test (12.96 million
+      trials under fixed seed 20260525) confirms the friction-tax phase
+      shift; regression-identification simulation confirms power greater
+      than .80 for all five hypotheses at the pre-registered effect sizes.
+      Archival panel implementation is in execution as future work
+      (companion paper v2.0 / Paper C). Per the project version-bump rule,
+      pre-Zenodo iterations remain v1.0.0; the version field will only
+      increment when a new Zenodo DOI is minted.
+    file: "paper.md"
+
+submission_record:
+  - venue: ""
+    date: ""
+    status: "not yet submitted"
+
+related_work:
+  - title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture"
+    citation: "Zharnikov (2026am)"
+    doi: "10.5281/zenodo.20379981"
+    relationship: "Foundation. The theoretical contribution operationalized by this paper. The five hypotheses H1-H5 are empirical readings of the five comparative-statics propositions P1-P5 in 2026am."
+  - title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
+    citation: "Zharnikov (2026ag)"
+    doi: "10.5281/zenodo.19895813"
+    relationship: "Substrate. The six-tier ontology across which specification codification is measured."
+  - title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+    citation: "Zharnikov (2026ah)"
+    doi: "10.5281/zenodo.19930157"
+    relationship: "Prior single-interface model that 2026am generalizes laterally and this paper tests empirically."
+  - title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
+    citation: "Zharnikov (2026al)"
+    doi: "10.5281/zenodo.20367459"
+    relationship: "Sister paper. The Substrate-Operator distinction in 2026am aligns with the projection-operator pi in 2026al via the same operator-in-the-mathematical-sense convention."
+
+shared_code_companion:
+  description: >
+    The Monte Carlo friction-tax simulation and regression-identification
+    power simulation cited in this paper as mechanism-test evidence are
+    shared with paper 2026am and live at the companion code repository
+    below. The five hypotheses H1-H5 share the underlying theoretical
+    mechanism with the five propositions P1-P5 in 2026am, so the simulation
+    infrastructure is reused without duplication.
+  repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/"
+  seed: "20260525"
+  primary_simulations:
+    - "friction_tax_montecarlo.py — 12.96 million trials confirming the friction-tax phase shift at alpha* approximately .91; mu_push/mu_pull approximately 19,993; Cohen's d approximately 88.4"
+    - "push_pull_regression_sim.py — pre-registered regression-identification simulation; all H1-H5 power greater than or equal to .80 at pre-registered effect sizes; one post-hoc deviation in cluster-robust SE specification transparently reported"

@@ -1,0 +1,206 @@
+# paper.yaml -- Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
+# Citation key: 2026an. Concept DOI and v1 DOI to be assigned at Zenodo upload.
+# Companion empirical paper to Zharnikov (2026am) Specification Readiness and Endogenous Friction
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026an"
+  doi: "[DOI reserved at upload]"   # Concept DOI (resolves to latest version)
+  doi_v1: "[DOI reserved at upload]"   # Version DOI for v1.0.0
+  date: "2026-05-25"
+  version: "1.0.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - specification readiness
+    - multi-interface architecture
+    - friction tax
+    - staggered difference-in-differences
+    - organizational coupling
+    - 10-K linguistic coherence
+    - Callaway-Sant'Anna estimator
+    - Goodman-Bacon decomposition
+    - AI augmentation paradox
+    - brand capital
+    - organizational design
+    - text-as-data
+
+abstract: >
+  This paper introduces specification readiness — the degree to which a
+  firm's commitments are codified in versioned, machine-readable, queryable
+  form — as a new strategic construct and supplies a scalable archival
+  operationalization. Drawing on an information-theoretic model of
+  multi-interface architecture (Zharnikov 2026am), the construct is argued
+  to substitute query-based alignment for costly interface-maintenance
+  functions, reducing a structural friction tax, accelerating brand-capital
+  accumulation, lowering cross-stakeholder valuation dispersion, and raising
+  returns to artificial-intelligence deployment. The primary measure is a
+  continuous Specification Coherence Index built from year-over-year cosine
+  similarity of 10-K narrative embeddings; a four-event sharp index supplies
+  robustness. Five hypotheses (H1-H5) link the construct to these outcomes
+  for US public firms 2010-2025, identified by within-firm continuous
+  treatment, staggered difference-in-differences (Callaway and Sant'Anna
+  2021; Goodman-Bacon 2021), regulatory-compliance instruments, and
+  advertising-cessation event studies, with Oster (2019) bounds.
+  Pre-registered Monte Carlo mechanism tests confirm the friction-tax phase
+  shift. Three contributions follow: a first scalable archival measure of
+  specification readiness, a reusable identification template pairing
+  continuous textual treatment with sharp codification events, and formal
+  evidence that specification readiness moderates the AI augmentation
+  paradox.
+
+claims:
+  - id: H1
+    type: hypothesis
+    description: >
+      Specification Readiness Reduces Functional Friction Tax. Within firms,
+      a one-standard-deviation increase in SCI is associated with
+      approximately one percentage point reduction in the functional
+      friction-tax ratio (interface-maintaining SG&A composition / total
+      revenue); Cohen's d approximately .5; pre-registered coefficient
+      magnitude beta approximately -.08.
+    status: proposed
+    falsification: >
+      H1 is falsified if SCI shows no significant negative relationship with
+      functional friction-tax ratio after firm and industry-year fixed
+      effects, under the pre-registered specification.
+
+  - id: H2
+    type: hypothesis
+    description: >
+      Specification Readiness Accelerates Brand-Capital Accumulation.
+      Within firms, higher SCI predicts faster Belo-Lin-Vitorino
+      brand-capital stock accumulation per dollar of advertising spend;
+      Cohen's d approximately .3; pre-registered coefficient magnitude
+      approximately 12 percent acceleration per standard deviation.
+    status: proposed
+    falsification: >
+      H2 is falsified if SCI shows no significant positive relationship
+      with brand-capital accumulation rate after firm fixed effects and
+      controls, under the pre-registered specification.
+
+  - id: H3
+    type: hypothesis
+    description: >
+      Multi-Interface Incoherence Raises Cross-Stakeholder Valuation
+      Dispersion. Within firms, higher cross-interface linguistic
+      contradiction (10-K vs Glassdoor vs analyst notes) predicts greater
+      cross-stakeholder valuation dispersion; Cohen's d approximately .4;
+      pre-registered coefficient magnitude approximately 10 percent
+      dispersion increase per standard deviation of contradiction.
+    status: proposed
+    falsification: >
+      H3 is falsified if cross-interface contradiction shows no significant
+      positive relationship with valuation dispersion after firm and
+      industry-year fixed effects.
+
+  - id: H4
+    type: hypothesis
+    description: >
+      Substrate Readiness Conditions AI Deployment ROI. Within firms,
+      pre-deployment SCI moderates the effect of AI deployment on firm
+      productivity; Cohen's d approximately .5; pre-registered coefficient
+      magnitude approximately 15 percent AI-ROI increase per standard
+      deviation of pre-deployment SCI.
+    status: proposed
+    falsification: >
+      H4 is falsified if the interaction term between pre-deployment SCI
+      and AI deployment shows no significant positive coefficient on
+      productivity outcomes after firm fixed effects.
+
+  - id: H5
+    type: hypothesis
+    description: >
+      Pull Architecture Shrinks Function-as-Friction-Tax. Event-study
+      analysis of advertising-spend cessation events shows sharper negative
+      cumulative abnormal returns for low-SCI firms than high-SCI firms;
+      pre-registered CAR differential approximately -15 percentage points;
+      Cohen's d approximately .7.
+    status: proposed
+    falsification: >
+      H5 is falsified if the CAR differential between high-SCI and low-SCI
+      firms around advertising-cessation events is not statistically
+      significant or shows the opposite sign.
+
+dependencies:
+  - citation: "Zharnikov (2026am)"
+    doi: "10.5281/zenodo.20379981"
+    relationship: cites
+    critical: true
+    description: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture — foundational theoretical contribution operationalized by this paper. The 5 hypotheses H1-H5 are empirical readings of the comparative-statics propositions P1-P5 from 2026am."
+
+  - citation: "Zharnikov (2026ag)"
+    doi: "10.5281/zenodo.19895813"
+    relationship: cites
+    critical: true
+    description: "Six-Tier Ontology of Organizational Transferability — the six tiers across which specification codification is measured."
+
+  - citation: "Zharnikov (2026ah)"
+    doi: "10.5281/zenodo.19930157"
+    relationship: cites
+    critical: false
+    description: "Brand as a Modular Layer — prior single-interface model that 2026am generalizes laterally and this paper tests empirically."
+
+companion_articles:
+  # Practitioner expression in the SBT and OST corpora.
+  - title: "Brand Is One Interface"
+    publication: "Substack (SBT)"
+    status: pre-scheduled
+  - title: "Marketing Is Push"
+    publication: "Substack (SBT)"
+    status: pre-scheduled
+  - title: "The Headless Company"
+    publication: "Substack (SBT)"
+    status: pre-scheduled
+  - title: "The Hidden Content Generator"
+    publication: "Substack (SBT)"
+    status: pre-scheduled
+  - title: "The Log Is the Brand"
+    publication: "Substack (SBT)"
+    url: "https://spectralbranding.substack.com/p/the-log-is-the-brand-why-marketing-is-runtime-exhaust"
+    status: pre-scheduled
+  - title: "The Business Is a Repository: Operations as Append-Only Log"
+    publication: "Substack (OST)"
+    url: "https://orgschema.substack.com/p/the-business-is-a-repository"
+    status: pre-scheduled
+  - title: "Your Company Already Forks, Merges, and Tags"
+    publication: "Substack (OST)"
+    url: "https://orgschema.substack.com/p/your-company-already-forks-merges-and-tags"
+    status: pre-scheduled
+  - title: "Capability Is Not What You Have. It's What Your History Renders."
+    publication: "Substack (OST)"
+    url: "https://orgschema.substack.com/p/capability-is-not-what-you-have"
+    status: pre-scheduled
+
+companion_code:
+  repository: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/"
+  description: >
+    Companion computation repository SHARED with Paper A (Zharnikov 2026am).
+    Monte Carlo friction-tax simulation and regression-identification power
+    simulation are executed under fixed seed 20260525 against the rendering
+    operator and friction-tax derivations in 2026am. Outputs cited as the
+    mechanism-test evidence in this paper. The five hypotheses H1-H5 share
+    the underlying theoretical mechanism with the five propositions P1-P5
+    in 2026am, so the simulation infrastructure is reused without
+    duplication. Run command: cd specification-readiness/code &&
+    bws run -- uv run python friction_tax_montecarlo.py &&
+    bws run -- uv run python push_pull_regression_sim.py
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.20 reasoning, Perplexity sonar-pro)
+  were used for initial literature search, citation verification, and
+  editorial refinement; the companion computation code (shared with paper
+  2026am) was AI-assisted in initial drafting and executed under
+  pre-registered fixed seed with results reported transparently including
+  honest documentation of one post-hoc deviation in the cluster-robust
+  standard-error specification. All theoretical claims, propositions,
+  hypothesis specifications, identification strategy choices, and
+  interpretations are the author's sole responsibility.

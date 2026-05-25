@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: dmitry@spectralbranding.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
+version: "1.0.0"
+date-released: "2026-05-25"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+url: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness-empirical"
+identifiers:
+  - type: doi
+    value: "[DOI reserved at upload]"
+    description: "Zenodo concept DOI (always resolves to latest version)"
+  - type: doi
+    value: "[DOI reserved at upload]"
+    description: "Zenodo v1 DOI (this version)"
+keywords:
+  - specification readiness
+  - multi-interface architecture
+  - friction tax
+  - staggered difference-in-differences
+  - organizational coupling
+  - 10-K linguistic coherence
+  - Callaway-Sant'Anna estimator
+  - Goodman-Bacon decomposition
+  - AI augmentation paradox
+  - brand capital
+  - organizational design
+  - text-as-data
+license: CC-BY-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: dmitry@spectralbranding.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
+  year: 2026
+  doi: "[DOI reserved at upload]"
