@@ -1,9 +1,3 @@
----
-margin:
-  x: 1in
-  y: 1in
----
-
 # Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
 
 Dmitry Zharnikov
