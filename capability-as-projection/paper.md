@@ -53,9 +53,9 @@ Constance Helfat and colleagues (2007) developed the capability lifecycle — fo
 
 ***Routines as Performances***
 
-The closest prior art is the routines-as-performances tradition of Brian Pentland and Martha Feldman. Their 2003 *Industrial and Corporate Change* paper distinguished ostensive from performative routines; their 2005 ICC paper developed the relationship as a generative cycle; their 2008 *Information and Organization* paper argued that routines cannot be designed directly — only the artifacts and conditions that shape streams of performances can.
+The closest prior art is the routines-as-performances tradition of Brian Pentland and Martha Feldman. Their 2005 *Industrial and Corporate Change* paper distinguished ostensive from performative routines and developed the relationship as a generative cycle; their 2008 *Information and Organization* paper argued that routines cannot be designed directly — only the artifacts and conditions that shape streams of performances can. A recent literature review (Baldessarelli, Lazaric, and Pezzoni 2022) traces the evolution of this tradition through two parallel research communities and consolidates its core constructs.
 
-The substrate-projection distinction maps onto the ostensive-performative duality but is not identical to it. The ostensive routine is one snapshot among many possible projections of the log; the performative routine is a live rendering. The 2008 design argument restates cleanly: capability cannot be designed directly because capability is a projection; only the log can be designed. The reformulation supplies the formal vocabulary — log, projection, compatibility — that Pentland and Feldman's work stopped short of articulating. Pentland and colleagues (2020) and Pentland and Liu (2021) showed empirically that routine dynamics can be modeled as generative systems and reconstructed from digital trace data; the present paper lifts that methodological observation to an ontological commitment.
+The substrate-projection distinction maps onto the ostensive-performative duality but is not identical to it. The ostensive routine is one snapshot among many possible projections of the log; the performative routine is a live rendering. The 2008 design argument restates cleanly: capability cannot be designed directly because capability is a projection; only the log can be designed. The reformulation supplies the formal vocabulary — log, projection, compatibility — that Pentland and Feldman's work stopped short of articulating. Pentland and colleagues (2012) and Pentland and Liu (2021) showed empirically that routine dynamics can be modeled as generative systems and reconstructed from digital trace data; the present paper lifts that methodological observation to an ontological commitment.
 
 ***Microfoundations and the Knowledge-Based View***
 
@@ -352,13 +352,13 @@ Nakajima, Yohei (2026), "The Log Is the Agent: Event-Sourced Reactive Graphs for
 
 Nii, H. Penny (1986), "The Blackboard Model of Problem Solving and the Evolution of Blackboard Architectures," *AI Magazine*, 7 (2), 38–53.
 
-Pentland, Brian T., and Martha S. Feldman (2003), "Reconceptualizing Organizational Routines as a Source of Flexibility and Change," *Industrial and Corporate Change*, 12 (4), 793–815.
+Baldessarelli, Giada, Nathalie Lazaric, and Michele Pezzoni (2022), "Organizational Routines: Evolution in the Research Landscape of Two Core Communities," *Journal of Evolutionary Economics*, 32, 1119–1154. https://doi.org/10.1007/s00191-022-00779-2
 
 Pentland, Brian T., and Martha S. Feldman (2005), "Organizational Routines as a Unit of Analysis," *Industrial and Corporate Change*, 14 (5), 793–815. https://doi.org/10.1093/icc/dth070
 
 Pentland, Brian T., and Martha S. Feldman (2008), "Designing Routines: On the Folly of Designing Artifacts, While Hoping for Patterns of Action," *Information and Organization*, 18 (4), 235–250. https://doi.org/10.1016/j.infoandorg.2008.08.001
 
-Pentland, Brian T., Martha S. Feldman, Markus C. Becker, and Peng Liu (2020), "Dynamics of Organizational Routines: A Generative Model," *Administrative Science Quarterly*, 65 (3), 605–648.
+Pentland, Brian T., Martha S. Feldman, Markus C. Becker, and Peng Liu (2012), "Dynamics of Organizational Routines: A Generative Model," *Journal of Management Studies*, 49 (8), 1484–1508. https://doi.org/10.1111/j.1467-6486.2012.01064.x
 
 Pentland, Brian T., and Peng Liu (2021), "Digital Traces and the Dynamics of Routines," *Organization Science*, 32 (6), 1504–1522. https://doi.org/10.1287/orsc.2020.1388
 
@@ -366,7 +366,7 @@ Penrose, Edith T. (1959), *The Theory of the Growth of the Firm*, John Wiley & S
 
 Puranam, Phanish, and Kannan Srikanth (2007), "What They Know vs. What They Do: How Acquirers Leverage Technology Acquisitions," *Strategic Management Journal*, 28 (8), 805–825. https://doi.org/10.1002/smj.608
 
-Puranam, Phanish, Brian C. Powell, and Harbir Singh (2006), "Due Diligence Failure as a Signal Detection Problem," *Strategic Organization*, 4 (4), 319–348.
+Puranam, Phanish, Brian C. Powell, and Harbir Singh (2006), "Due Diligence Failure as a Signal Detection Problem," *Strategic Organization*, 4 (4), 319–348. https://doi.org/10.1177/1476127006069426
 
 Shapiro, Marc, Nuno Preguiça, Carlos Baquero, and Marek Zawirski (2011), "Conflict-Free Replicated Data Types," in *Stabilization, Safety, and Security of Distributed Systems*, Lecture Notes in Computer Science vol. 6976, Springer, 386–400. https://doi.org/10.1007/978-3-642-24550-3_29
 
