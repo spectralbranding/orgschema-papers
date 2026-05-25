@@ -13,8 +13,8 @@ metadata:
       affiliation: "Independent Researcher"
       corresponding: true
   citation_key: "2026an"
-  doi: "[DOI reserved at upload]"   # Concept DOI (resolves to latest version)
-  doi_v1: "[DOI reserved at upload]"   # Version DOI for v1.0.0
+  doi: "10.5281/zenodo.20384084"   # Concept DOI (resolves to latest version)
+  doi_v1: "10.5281/zenodo.20384085"   # Version DOI for v1.0.0
   date: "2026-05-25"
   version: "1.0.0"
   status: preprint

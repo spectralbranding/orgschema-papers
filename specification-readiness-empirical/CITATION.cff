@@ -7,16 +7,17 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
+abstract: "This paper introduces specification readiness — the degree to which a firm's commitments are codified in versioned, machine-readable, queryable form — as a new strategic construct and supplies a scalable archival operationalization. Drawing on an information-theoretic model of multi-interface architecture, the construct is argued to substitute query-based alignment for costly interface-maintenance functions, reducing a structural friction tax, accelerating brand-capital accumulation, lowering cross-stakeholder valuation dispersion, and raising returns to artificial-intelligence deployment."
 version: "1.0.0"
 date-released: "2026-05-25"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 url: "https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness-empirical"
 identifiers:
   - type: doi
-    value: "[DOI reserved at upload]"
+    value: "10.5281/zenodo.20384084"
     description: "Zenodo concept DOI (always resolves to latest version)"
   - type: doi
-    value: "[DOI reserved at upload]"
+    value: "10.5281/zenodo.20384085"
     description: "Zenodo v1 DOI (this version)"
 keywords:
   - specification readiness
@@ -43,4 +44,4 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
   year: 2026
-  doi: "[DOI reserved at upload]"
+  doi: "10.5281/zenodo.20384084"

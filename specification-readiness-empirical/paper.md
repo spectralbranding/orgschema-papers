@@ -1,15 +1,16 @@
-```{=typst}
-#set page(margin: (top: 1in, bottom: 1.25in, x: 1in))
-#set table(inset: 3pt)
-#show figure.where(kind: table): set block(breakable: true)
-#show table: set block(breakable: false)
-```
+---
+margin:
+  x: 1in
+  y: 1in
+---
 
 # Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
 
 Dmitry Zharnikov
 
 ORCID: 0009-0000-6893-9231
+
+DOI: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
 
 Working Paper v1.0.0 – May 2026
 
@@ -229,7 +230,7 @@ Power under H₁ at the pre-registered effect sizes is reported in Table 3.
 | H4 (SCI → AI-ROI) | β = +.15 | .5 | 1.00 | +.151 | 1.00 |
 | H5 (push-intensity × cessation → CAR) | CAR diff = −15 pp | .7 | .99 | −15.1 pp | 1.00 |
 
-*Notes*: Simulated power is the fraction of 1,000 simulated datasets per hypothesis in which the null is rejected at α = .05 against the directional alternative. Mean estimate is the across-simulation mean of the point estimate under H₁. Correct-sign fraction is the fraction of simulated datasets in which the point estimate is in the predicted direction. All hypotheses achieve power ≥ .80 at the pre-registered effect sizes; mean estimates fall within one percent of the pre-registered β values; the correct-sign fraction is 1.00 for all five hypotheses. Fixed seed: `np.random.seed(20260525)`. Full simulation specification in the Methods Appendix; full PASS/FAIL log in `code/POST_EXPERIMENT_REPORT.md`.
+*Notes*: Simulated power is the fraction of 1,000 simulated datasets per hypothesis in which the null is rejected at α = .05 against the directional alternative. Mean estimate is the across-simulation mean of the point estimate under H₁. Correct-sign fraction is the fraction of simulated datasets in which the point estimate is in the predicted direction. All hypotheses achieve power ≥ .80 at the pre-registered effect sizes; mean estimates fall within one percent of the pre-registered β values; the correct-sign fraction is 1.00 for all five hypotheses. Fixed seed: `np.random.seed(20260525)`. Full simulation specification in the Methods Appendix (Appendix B); full PASS/FAIL log in the shared code companion (see Companion Computation Script section).
 
 ***Post-hoc deviation transparency***
 
@@ -458,7 +459,7 @@ The threats register summarized in Table 2 is developed at greater length here. 
 
 ## Appendix B: Methods Appendix
 
-The full pre-registered methods appendix — covering the Monte Carlo simulation design, the regression-identification simulation design, the H₀ and H₁ specifications, the anti-HARKing decision rules, the alternative-explanations register, and the output-artifact list — is published as a companion file at `research/multi_interface_paper/METHODS_APPENDIX.md` in the working repository and is mirrored to the public repository alongside the code companion. The methods appendix is the authoritative pre-registration anchor; this paper's Results section reports the headline numbers and the post-hoc deviation, while the methods appendix preserves the full pre-registration record. Per PAPER_QUALITY_STANDARDS items 37a–37e, any revision to the published numerical figures requires a parallel revision to the methods appendix and the code companion.
+The full pre-registered methods appendix — covering the Monte Carlo simulation design, the regression-identification simulation design, the H₀ and H₁ specifications, the anti-HARKing decision rules, the alternative-explanations register, and the output-artifact list — is published as a companion file at https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/METHODS_APPENDIX.md (shared with the foundational theoretical paper Zharnikov 2026am, since the mechanism tests reported in this paper draw from the same pre-registered simulation infrastructure). The methods appendix is the authoritative pre-registration anchor; this paper's Mechanism Tests section reports the headline numbers and the post-hoc deviation, while the methods appendix preserves the full pre-registration record.
 
 ---
 

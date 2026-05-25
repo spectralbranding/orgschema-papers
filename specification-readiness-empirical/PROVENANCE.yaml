@@ -4,13 +4,13 @@
 provenance:
   paper_title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
   repository: "spectralbranding/orgschema-papers/specification-readiness-empirical"
-  doi_concept: "[DOI reserved at upload]"
-  doi_v1: "[DOI reserved at upload]"
+  doi_concept: "10.5281/zenodo.20384084"
+  doi_v1: "10.5281/zenodo.20384085"
 
 versions:
   - version: "1.0.0"
     date: "2026-05-25"
-    doi: "[DOI reserved at upload]"
+    doi: "10.5281/zenodo.20384085"
     notes: >
       Initial working paper release. Companion empirical operationalization
       of Zharnikov (2026am) Specification Readiness and Endogenous Friction.

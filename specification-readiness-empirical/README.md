@@ -8,8 +8,8 @@
 
 **Status**: Working paper v1.0.0 (May 2026).
 
-**Concept DOI**: TBD (to be assigned at Zenodo upload)
-**v1.0.0 DOI**: TBD
+**Concept DOI**: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
+**v1.0.0 DOI**: [10.5281/zenodo.20384085](https://doi.org/10.5281/zenodo.20384085)
 
 ## What this paper does
 
@@ -59,5 +59,5 @@ Creative Commons Attribution 4.0 International (CC BY 4.0) for the paper text; M
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns," Working Paper v1.0.0, Zenodo, doi:TBD-at-upload.
+Zharnikov, Dmitry (2026), "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns," Working Paper v1.0.0, Zenodo, https://doi.org/10.5281/zenodo.20384084.
 ```
