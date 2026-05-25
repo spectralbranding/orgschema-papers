@@ -6,10 +6,10 @@
 
 **Citation key**: 2026am
 
-**Status**: Working paper v1.1.0 (May 2026).
+**Status**: Working paper v1.0.0. Published on Zenodo 2026-05-25.
 
-**Concept DOI**: TBD (to be assigned at Zenodo upload)
-**v1.0.0 DOI**: TBD
+**Concept DOI**: [10.5281/zenodo.20379981](https://doi.org/10.5281/zenodo.20379981)
+**v1.0.0 DOI**: [10.5281/zenodo.20379982](https://doi.org/10.5281/zenodo.20379982)
 
 ## What this paper does
 
@@ -54,5 +54,5 @@ Creative Commons Attribution 4.0 International (CC BY 4.0).
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture," Working Paper v1.0.0, Zenodo, doi:TBD-at-upload.
+Zharnikov, Dmitry (2026), "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.20379982. Concept DOI: 10.5281/zenodo.20379981.
 ```
