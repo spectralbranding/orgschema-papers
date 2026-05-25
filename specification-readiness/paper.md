@@ -134,7 +134,7 @@ Five scope conditions define the theory's domain and appear here, immediately af
 
 ***Formal Propositions***
 
-Five formal propositions with comparative statics follow from the three-layer architecture and the rendering operator. These are theoretical predictions derived from the model's structure — not empirical propositions with identification strategies, which are developed in companion empirical work.
+Five formal propositions with comparative statics follow from the three-layer architecture and the rendering operator. These are theoretical predictions derived from the model's structure — not empirical propositions with identification strategies, which are developed in the companion empirical paper Zharnikov (2026an).
 
 **Proposition 1 (Interface Coherence).** Interface coherence — measured as the minimum cosine similarity between normalized renderings across pairs of recipient classes — is non-decreasing in specification consistency across tiers. Formally, if specification **S** is consistent across tiers t_1, t_2 (i.e., the value assigned to each attribute is identical across tier renderings), then min_{i,j} cos(R_i(**S**, **w**_i), R_j(**S**, **w**_j)) ≥ θ for some threshold θ > 0; if specification is inconsistent, coherence is unbounded below. *Comparative static*: ∂(min_{i,j} cos(·))/∂c ≥ 0, where c is specification codification completeness. Higher codification produces weakly greater inter-interface coherence.
 
@@ -258,7 +258,7 @@ Five scope conditions bound the theory's domain, each generating a falsifiable r
 
 The theory generates several falsifiable predictions. First, a negative relationship between specification codification investment and functional headcount in interface-maintaining roles: as specification codification increases, functional headcount decreases — not merely becomes more efficient. This is observationally distinct from TCE predictions. Second, a positive interaction between specification readiness and AI adoption in predicting performance outcomes: firms with higher pre-AI specification codification should realize greater returns from subsequent AI investment, holding AI spend constant. Third, inter-interface coherence should covary positively with specification consistency across tiers, and negatively with push-proxy magnitudes from Table 2. Fourth — discriminating against Open Strategy (Hautz, Seidl, and Whittington 2017) — under the specification-readiness theory, inclusion-high / codification-low firms (process-heavy consultancies that revisit specifications each engagement) realize lower AI ROI than inclusion-low / codification-high firms (regulatory-disclosure firms with exhaustively codified but bounded-internal specifications); under Open Strategy, the prediction is the reverse. This contrast can be tested in panel data that measures both inclusion intensity (multi-stakeholder participation in strategy formation) and codification completeness (machine-readable specification coverage) alongside AI deployment outcomes.
 
-Operational empirical hypotheses derived from this theory are developed in companion empirical work. Future theoretical work should model mixed-adversarial portfolios, in which some recipient classes are cooperative and others adversarial, to specify the tradeoff between pull efficiency and extraction vulnerability. Future research should also formalize the optimal specification investment path under stochastic recipient perception vectors, building on Levinthal and Wu's (2024) resource-redeployment framework to model how specification investment evolves as firms redeploy capability stocks toward new best uses over time.
+Operational empirical hypotheses derived from this theory are developed in the companion empirical paper Zharnikov (2026an), which states the five propositions as falsifiable empirical hypotheses H1–H5 with pre-registered identification strategies and Monte Carlo mechanism tests. Future theoretical work should model mixed-adversarial portfolios, in which some recipient classes are cooperative and others adversarial, to specify the tradeoff between pull efficiency and extraction vulnerability. Future research should also formalize the optimal specification investment path under stochastic recipient perception vectors, building on Levinthal and Wu's (2024) resource-redeployment framework to model how specification investment evolves as firms redeploy capability stocks toward new best uses over time.
 
 ---
 
@@ -424,6 +424,8 @@ Zharnikov, Dmitry (2026ag), "Dual Hierarchies of Organizational Transferability:
 
 Zharnikov, Dmitry (2026ah), "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies," Working Paper. https://doi.org/10.5281/zenodo.19930157
 
+Zharnikov, Dmitry (2026an), "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns," Working Paper. https://doi.org/10.5281/zenodo.20384084
+
 ---
 
 **Table 2: The Six Canonical Interfaces of the Multi-Interface Specification Model.**
@@ -437,4 +439,4 @@ Zharnikov, Dmitry (2026ah), "Brand as a Modular Layer: Tiered Organizational Arc
 | Supplier-Partner | Supply-chain and distribution counterparties | Procurement decisions; partnership terms | Supplier-outreach headcount / supplier NPS | Structured supplier specification; API-accessible procurement requirements | Procurement |
 | Peer-and-Media | Competitors, analysts, journalists | Competitive positioning; narrative framing | PR and comms headcount / media mentions | Machine-queryable specification; structured research access | Communications |
 
-*Notes*: Push proxies are the archival operationalizations for empirical work in companion papers; pull proxies identify the pull-capable state in each interface dimension.
+*Notes*: Push proxies are the archival operationalizations developed in the companion empirical paper Zharnikov (2026an); pull proxies identify the pull-capable state in each interface dimension.
