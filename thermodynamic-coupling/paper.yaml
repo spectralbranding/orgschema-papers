@@ -15,7 +15,7 @@ metadata:
   doi: ""          # Concept DOI — to be assigned at Zenodo upload
   doi_v1: ""       # v1 DOI — to be assigned at Zenodo upload
   date: "2026-05-25"
-  version: "1.0.0"
+  version: "1.1.0"
   status: preprint
   license: "CC-BY-4.0"
   keywords:
@@ -28,35 +28,34 @@ metadata:
     - information-theoretic theory
     - Shannon cross-entropy
     - AI-mediated pull
-    - substrate-AI vs surface-AI
+    - Substrate-Operator vs Surface-Operator
     - function-as-friction-tax
     - theory of the firm
 
 abstract: >
-  Organizations incur substantial friction when they must guess recipients'
-  need profiles and push outputs toward those guesses. This paper develops
-  an information-theoretic theory that treats alignment friction as endogenous
-  to specification codification. Organizational architecture is decomposed into
-  three layers: a codified specification substrate encoding commitments across
-  six ontological tiers, an interface layer defined by recipient-class
-  perception-weight vectors, and a function layer whose headcount and spend
-  constitute a measurable tax on specification gaps. In push regimes, energy
-  loss scales with cross-entropy between guessed and actual need profiles. In
-  pull regimes, enabled by consumption-layer AI, recipients query the
-  specification directly, collapsing misalignment toward zero as codification
-  completeness rises. Recipient classes are architectural primitives whose
-  distinct perception geometries impose coherence conditions across interfaces.
-  The theory yields four contributions. First, it formalizes push-pull cost
-  asymmetry as a structural analog to Shannon's cross-entropy. Second, it
-  supplies geometric machinery linking specification to interface rendering.
-  Third, it derives that functional friction is a consequence of specification
-  investment rather than governance choice. Fourth, it establishes specification
-  readiness as the critical moderator of AI returns, distinguishing Substrate-AI
-  (query-constrained) from Surface-AI (locally fluent but globally inconsistent).
-  By positioning specification codification as sequentially prior to governance,
-  salience ranking, and capability deployment, the theory generates predictions
-  distinct from transaction-cost economics, stakeholder theory, and existing
-  AI-augmentation scholarship.
+  Organizations incur substantial friction when guessing recipients' need
+  profiles and pushing outputs toward those guesses. This paper develops an
+  information-theoretic theory treating alignment friction as endogenous to
+  specification codification. Architecture decomposes into three layers: a
+  codified specification substrate encoding commitments across six ontological
+  tiers, an interface layer defined by recipient-class perception-weight vectors,
+  and a function layer whose headcount and spend constitute a measurable tax on
+  specification gaps. In push regimes, energy loss scales with cross-entropy
+  between guessed and actual need profiles. In pull regimes, consumption-layer
+  AI lets recipients query the specification directly, collapsing misalignment
+  toward zero as codification completeness rises. Recipient classes are
+  architectural primitives whose distinct perception geometries impose coherence
+  conditions across interfaces. Four contributions follow. First, push-pull cost
+  asymmetry is formalized as a structural analog to Shannon's cross-entropy.
+  Second, geometric machinery links specification to interface rendering. Third,
+  functional friction is a consequence of specification investment rather than
+  governance choice. Fourth, specification readiness is the critical moderator
+  of AI returns, distinguishing Substrate-Operator execution
+  (specification-constrained, coherent across interfaces) from Surface-Operator
+  execution (locally fluent, globally inconsistent). Specification codification
+  is sequentially prior to governance and capability deployment; the theory
+  generates predictions distinct from transaction-cost economics, stakeholder
+  theory, and existing AI-augmentation scholarship.
 
 claims:
   - id: P1
@@ -124,16 +123,17 @@ claims:
       substrates (financial accounting, manufacturing parts catalogs) operate in
       pull. For alpha >= alpha* approximately .6-.9 (domain-dependent), nearly
       all coupling domains become pull-viable. Comparative static:
-      d(pull-viable fraction)/d(alpha) > 0. Substrate-AI —
-      specification-query-constrained generation — realizes the pull regime;
-      Surface-AI — locally fluent but globally inconsistent generation — does not.
+      d(pull-viable fraction)/d(alpha) > 0. Substrate-Operator execution —
+      whether by a human or AI querying the specification — realizes the pull
+      regime; Surface-Operator execution — locally fluent but globally inconsistent
+      output produced without specification grounding — does not.
     status: proposed
     falsification: >
       P4 is falsified if AI penetration at the consumption layer shows no
       significant positive relationship with the proportion of firms that
-      reduce push-proxy magnitudes, or if Substrate-AI and Surface-AI deployments
-      produce indistinguishable interface-coherence outcomes in a matched-firm
-      comparison.
+      reduce push-proxy magnitudes, or if Substrate-Operator and Surface-Operator
+      deployments produce indistinguishable interface-coherence outcomes in a
+      matched-firm comparison.
 
   - id: P5
     type: proposition
@@ -142,10 +142,13 @@ claims:
       AI spend constant, is monotonically increasing in pre-AI specification
       codification c. Formally, d(ROI_AI)/dc|_{spend} > 0. Comparative static:
       d(ROI_AI)/d(spend)|_{c} is bounded above by a function of c — high AI
-      spend without codification produces bounded marginal returns. This
-      proposition operationalizes the complementarity finding by specifying that
-      the complementary investment must be codification of the specification
-      substrate that AI queries rather than substitutes.
+      spend without codification produces bounded marginal returns. Specification
+      readiness moderates the substitutability of human Substrate-Operators by AI
+      Substrate-Operators: firms with codified specifications realize higher AI
+      returns because the AI-substitutable share of agent roles is larger. The
+      complementary investment is codification of the specification substrate
+      that enables AI Substrate-Operator execution rather than Surface-Operator
+      substitution.
     status: proposed
     falsification: >
       P5 is falsified if pre-AI specification codification shows no significant

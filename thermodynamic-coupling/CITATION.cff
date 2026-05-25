@@ -7,7 +7,7 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-05-25"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 url: "https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling"
@@ -28,7 +28,7 @@ keywords:
   - information-theoretic theory
   - Shannon cross-entropy
   - AI-mediated pull
-  - substrate-AI vs surface-AI
+  - Substrate-Operator vs Surface-Operator
   - function-as-friction-tax
   - theory of the firm
 license: CC-BY-4.0

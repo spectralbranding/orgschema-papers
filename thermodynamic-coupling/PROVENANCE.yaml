@@ -8,6 +8,20 @@ provenance:
   doi_v1: ""        # To be assigned at Zenodo upload
 
 versions:
+  - version: "1.1.0"
+    date: "2026-05-25"
+    doi: ""  # Assigned at Zenodo upload
+    notes: >
+      Vocabulary generalization applied Mon May 25 EOD Session 164.
+      Replaced four-term split (Surface-AI, Substrate-AI, surface-human/operator,
+      substrate-human/operator) with two generalized terms: Substrate-Operator
+      (human OR AI querying the codified specification substrate) and
+      Surface-Operator (human OR AI producing output without specification grounding).
+      Section 6 rewritten to open with the AI/human substitutability argument.
+      Abstract revised to <=200 words. Table 2 AI row updated.
+      P4 reframed at agent level. Keywords updated in paper.yaml and CITATION.cff.
+    file: "paper.md"
+
   - version: "1.0.0"
     date: "2026-05-25"
     doi: ""  # Assigned at Zenodo upload

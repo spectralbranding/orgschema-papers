@@ -6,7 +6,7 @@
 
 **Citation key**: 2026am
 
-**Status**: Working paper v1.0.0 (May 2026).
+**Status**: Working paper v1.1.0 (May 2026).
 
 **Concept DOI**: TBD (to be assigned at Zenodo upload)
 **v1.0.0 DOI**: TBD
@@ -15,7 +15,7 @@
 
 Organizations incur substantial friction when they must guess recipients' need profiles and push outputs toward those guesses. This paper develops an information-theoretic theory that treats alignment friction as endogenous to specification codification. Organizational architecture is decomposed into three layers: a codified specification substrate encoding commitments across six ontological tiers, an interface layer defined by recipient-class perception-weight vectors, and a function layer whose headcount and spend constitute a measurable tax on specification gaps.
 
-In push regimes, energy loss scales with cross-entropy between guessed and actual need profiles. In pull regimes, enabled by consumption-layer AI, recipients query the specification directly, collapsing misalignment toward zero as codification completeness rises. The theory distinguishes Substrate-AI (specification-query-constrained generation) from Surface-AI (locally fluent but globally inconsistent generation), and establishes specification readiness as the critical moderator of AI returns.
+In push regimes, energy loss scales with cross-entropy between guessed and actual need profiles. In pull regimes, enabled by consumption-layer AI, recipients query the specification directly, collapsing misalignment toward zero as codification completeness rises. The theory distinguishes Substrate-Operator execution (specification-query-constrained, coherent across interfaces by construction) from Surface-Operator execution (locally fluent but globally inconsistent), and establishes specification readiness as the critical moderator of AI returns. The distinction applies equally to human and AI agents: the agent can be human or AI; the Substrate/Surface distinction is orthogonal to that choice.
 
 By positioning specification codification as sequentially prior to governance, salience ranking, and capability deployment, the theory generates predictions distinct from transaction-cost economics, stakeholder theory, and existing AI-augmentation scholarship.
 
