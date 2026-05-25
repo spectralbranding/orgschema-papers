@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    email: fermeradar@gmail.com
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
+version: "1.0.0"
+date-released: "2026-05-25"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+url: "https://github.com/spectralbranding/orgschema-papers/tree/main/thermodynamic-coupling"
+identifiers:
+  - type: doi
+    value: ""
+    description: "Zenodo concept DOI (always resolves to latest version) — to be assigned at Zenodo upload"
+  - type: doi
+    value: ""
+    description: "Zenodo v1 DOI (this version) — to be assigned at Zenodo upload"
+keywords:
+  - organizational coupling
+  - multi-interface architecture
+  - specification codification
+  - endogenous friction
+  - push-pull systems
+  - perception geometry
+  - information-theoretic theory
+  - Shannon cross-entropy
+  - AI-mediated pull
+  - substrate-AI vs surface-AI
+  - function-as-friction-tax
+  - theory of the firm
+license: CC-BY-4.0
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+      email: fermeradar@gmail.com
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0000-6893-9231"
+  title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
+  year: 2026
+  doi: ""  # Concept DOI — to be assigned at Zenodo upload

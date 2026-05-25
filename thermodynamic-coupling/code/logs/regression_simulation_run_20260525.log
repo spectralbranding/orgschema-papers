@@ -1,0 +1,92 @@
+2026-05-25 13:24:47,077 push_pull_regression_sim.py -- Thermodynamic Coupling (Zharnikov 2026am)
+2026-05-25 13:24:47,077 ========================================================================
+2026-05-25 13:24:47,077 RANDOM_SEED = 20260525
+2026-05-25 13:24:47,077 N_SIM       = 1,000 simulated datasets per condition
+2026-05-25 13:24:47,077 N_FIRMS     = 1,000  T = 10 years (P1/P2/P4/P5)
+2026-05-25 13:24:47,077 N_EVENTS    = 200  window = 5 years (P3)
+2026-05-25 13:24:47,077 ALPHA_TEST  = 0.05
+2026-05-25 13:24:47,077 
+2026-05-25 13:24:47,077 Pre-registered effect sizes:
+2026-05-25 13:24:47,077   P1: beta=-0.08, d=0.5, R2=0.15
+2026-05-25 13:24:47,077   P2: beta=-0.12, d=0.3, R2=0.1
+2026-05-25 13:24:47,077   P3: beta=-0.15, d=0.7, R2=0.2
+2026-05-25 13:24:47,077   P4: beta=+0.10, d=0.4, R2=0.12
+2026-05-25 13:24:47,077   P5: beta=+0.15, d=0.5, R2=0.18
+2026-05-25 13:24:47,077 
+2026-05-25 13:24:47,077 --- Primary specification ---
+2026-05-25 13:24:47,077   Running P1 (primary) ...
+2026-05-25 13:24:53,368     P1: power=1.00, Type_I=0.042, mean_beta=-0.0803, pct_correct_sign=1.00
+2026-05-25 13:24:53,368     elapsed: 6.3s
+2026-05-25 13:24:53,368   Running P2 (primary) ...
+2026-05-25 13:24:59,683     P2: power=0.94, Type_I=0.053, mean_beta=-0.1204, pct_correct_sign=1.00
+2026-05-25 13:24:59,683     elapsed: 12.6s
+2026-05-25 13:24:59,683   Running P3 (primary) ...
+2026-05-25 13:25:00,327     P3: power=0.99, Type_I=0.080, mean_beta=-0.1500, pct_correct_sign=1.00
+2026-05-25 13:25:00,328     elapsed: 13.3s
+2026-05-25 13:25:00,328   Running P4 (primary) ...
+2026-05-25 13:25:06,969     P4: power=0.98, Type_I=0.062, mean_beta=0.0998, pct_correct_sign=1.00
+2026-05-25 13:25:06,969     elapsed: 19.9s
+2026-05-25 13:25:06,969   Running P5 (primary) ...
+2026-05-25 13:25:13,354     P5: power=1.00, Type_I=0.058, mean_beta=0.1497, pct_correct_sign=1.00
+2026-05-25 13:25:13,354     elapsed: 26.3s
+2026-05-25 13:25:13,354 
+--- Alternative specification (no FE) ---
+2026-05-25 13:25:13,354   Running P1 (no-FE alt) ...
+2026-05-25 13:25:14,327     P1: power=1.00, Type_I=0.052, mean_beta=-0.0803
+2026-05-25 13:25:14,327     elapsed: 27.2s
+2026-05-25 13:25:14,327   Running P2 (no-FE alt) ...
+2026-05-25 13:25:15,320     P2: power=0.93, Type_I=0.039, mean_beta=-0.1210
+2026-05-25 13:25:15,320     elapsed: 28.2s
+2026-05-25 13:25:15,320   Running P3 (no-FE alt) ...
+2026-05-25 13:25:15,553     P3: power=0.99, Type_I=0.091, mean_beta=-0.1510
+2026-05-25 13:25:15,553     elapsed: 28.5s
+2026-05-25 13:25:15,553   Running P4 (no-FE alt) ...
+2026-05-25 13:25:16,870     P4: power=0.99, Type_I=0.060, mean_beta=0.1002
+2026-05-25 13:25:16,870     elapsed: 29.8s
+2026-05-25 13:25:16,870   Running P5 (no-FE alt) ...
+2026-05-25 13:25:17,849     P5: power=1.00, Type_I=0.049, mean_beta=0.1495
+2026-05-25 13:25:17,849     elapsed: 30.8s
+2026-05-25 13:25:17,849 
+--- Power curves ---
+2026-05-25 13:25:17,849   Power curve P1 ...
+2026-05-25 13:25:30,621     P1: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-05-25 13:25:30,621     elapsed: 43.5s
+2026-05-25 13:25:30,621   Power curve P2 ...
+2026-05-25 13:25:43,441     P2: power at pre-reg d = 0.92 (index 3 = 1.0x d)
+2026-05-25 13:25:43,441     elapsed: 56.4s
+2026-05-25 13:25:43,441   Power curve P3 ...
+2026-05-25 13:25:44,724     P3: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-05-25 13:25:44,724     elapsed: 57.6s
+2026-05-25 13:25:44,724   Power curve P4 ...
+2026-05-25 13:25:58,771     P4: power at pre-reg d = 0.99 (index 3 = 1.0x d)
+2026-05-25 13:25:58,771     elapsed: 71.7s
+2026-05-25 13:25:58,771   Power curve P5 ...
+2026-05-25 13:26:11,703     P5: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-05-25 13:26:11,703     elapsed: 84.6s
+2026-05-25 13:26:11,704 
+Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/regression_simulation_summary.csv
+2026-05-25 13:26:11,704 
+--- Decision-rule verdicts (METHODS_APPENDIX B.6) ---
+2026-05-25 13:26:11,704   P1 [primary]: power=1.00 PASS | Type_I=0.042 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P2 [primary]: power=0.94 PASS | Type_I=0.053 FAIL (inflated Type I) | pct_in_range=0.97 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P3 [primary]: power=0.99 PASS | Type_I=0.080 FAIL (inflated Type I) | pct_in_range=0.99 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P4 [primary]: power=0.98 PASS | Type_I=0.062 FAIL (inflated Type I) | pct_in_range=0.98 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P5 [primary]: power=1.00 PASS | Type_I=0.058 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P1 [no_FE]: power=1.00 PASS | Type_I=0.052 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P2 [no_FE]: power=0.93 PASS | Type_I=0.039 PASS | pct_in_range=0.97 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P3 [no_FE]: power=0.99 PASS | Type_I=0.091 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P4 [no_FE]: power=0.99 PASS | Type_I=0.060 FAIL (inflated Type I) | pct_in_range=0.99 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704   P5 [no_FE]: power=1.00 PASS | Type_I=0.049 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-05-25 13:26:11,704 
+--- Generating plots ---
+2026-05-25 13:26:12,336   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P1.png
+2026-05-25 13:26:12,386   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P2.png
+2026-05-25 13:26:12,437   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P3.png
+2026-05-25 13:26:12,488   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P4.png
+2026-05-25 13:26:12,537   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P5.png
+2026-05-25 13:26:12,764   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/null_distribution_qq.png
+2026-05-25 13:26:12,827   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/effect_size_sensitivity.png
+2026-05-25 13:26:12,827 
+Total runtime: 85.8s (1.4 min)
+2026-05-25 13:26:12,827 Log written to: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/logs/regression_simulation_run_20260525.log
+2026-05-25 13:26:12,827 OK -- push_pull_regression_sim.py completed.

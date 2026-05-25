@@ -1,0 +1,30 @@
+# PROVENANCE.yaml -- Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture
+# Version history and related-work record per the Research-as-Repository protocol
+
+provenance:
+  paper_title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture"
+  repository: "spectralbranding/orgschema-papers/thermodynamic-coupling"
+  doi_concept: ""   # To be assigned at Zenodo upload
+  doi_v1: ""        # To be assigned at Zenodo upload
+
+versions:
+  - version: "1.0.0"
+    date: "2026-05-25"
+    doi: ""  # Assigned at Zenodo upload
+    notes: "Initial working paper release."
+    file: "paper.md"
+
+submission_record:
+  - venue: ""
+    date: ""
+    status: "not yet submitted"
+
+related_work:
+  - title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
+    citation: "Zharnikov (2026ag)"
+    doi: "10.5281/zenodo.19895813"
+    relationship: "Foundation. The six-tier ontology provides the substrate across which specification codification is measured in this paper."
+  - title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+    citation: "Zharnikov (2026ah)"
+    doi: "10.5281/zenodo.19930157"
+    relationship: "Lateral extension. The present paper generalizes the modular-layer treatment from brand to N recipient-class interfaces at Tier 4."

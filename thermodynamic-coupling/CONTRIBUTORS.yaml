@@ -1,0 +1,18 @@
+# CONTRIBUTORS.yaml -- Specification Readiness and Endogenous Friction: An Information-Theoretic Theory of Multi-Interface Organizational Architecture
+# Contributor attribution per the CRediT taxonomy
+
+contributors:
+  - name: "Dmitry Zharnikov"
+    orcid: "0009-0000-6893-9231"
+    role: "primary author"
+    credit:
+      - Conceptualization
+      - Methodology
+      - Investigation
+      - Writing — Original Draft
+      - Writing — Review and Editing
+
+ai_assistance_disclosure: >
+  AI assistants (Claude, Grok, Perplexity) were used for initial literature
+  search and editorial refinement. All theoretical claims, propositions, and
+  interpretations are the author's sole responsibility.
