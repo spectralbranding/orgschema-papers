@@ -202,7 +202,7 @@ the comparative statics the propositions predict.
 
 Once committed to `main` of `spectralbranding/orgschema-papers`, the
 paper should reference these scripts and outputs at the following
-URLs (per PAPER_QUALITY_STANDARDS items 37a-37e, "Companion
+URLs (per the corpus computational-reproducibility standard, "Companion
 Computation Script" subsection):
 
 - Projection demo:

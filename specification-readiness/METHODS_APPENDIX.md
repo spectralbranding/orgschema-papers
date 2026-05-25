@@ -20,7 +20,7 @@ The appendix covers two independent experiments:
 
 Both experiments are numerical-coherence checks for the formalism developed in the paper. They demonstrate that the formal model is internally consistent across the specified parameter space; they do not constitute empirical confirmation in real firms. Real-firm confirmation requires the archival panel study described in the paper's empirical strategy section.
 
-Reproducibility follows PAPER_QUALITY_STANDARDS items 37a–37e: fixed seeds, documented run commands, public-mirror publication before Zenodo v1 upload.
+Reproducibility follows the corpus computational-reproducibility standard: fixed seeds, documented run commands, public-mirror publication before Zenodo v1 upload.
 
 ---
 
@@ -409,7 +409,7 @@ uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
 
 ## D. Code Companion Publication Plan
 
-Per PAPER_QUALITY_STANDARDS items 37a–37e, the `code/` directory must be mirrored to the public companion repository before the Zenodo v1 upload. The companion script subsection in the paper body names the public URL and run command verbatim.
+Per the corpus computational-reproducibility standard, the `code/` directory must be mirrored to the public companion repository before the Zenodo v1 upload. The companion script subsection in the paper body names the public URL and run command verbatim.
 
 **Final public-mirror path**: TBD at Zenodo upload time. Anticipated path: `sbt-papers/specification-readiness/code/` or equivalent depending on public-repo naming convention confirmed at upload. Placeholder for paper body:
 
@@ -425,7 +425,7 @@ uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        python friction_tax_montecarlo.py && python push_pull_regression_sim.py
 ```
 
-**Publication sequence** (hard rule per PAPER_QUALITY_STANDARDS 37e):
+**Publication sequence** (hard rule):
 
 1. Run both simulations locally; confirm outputs match pre-registered expectations.
 2. Write `POST_EXPERIMENT_REPORT.md` with honest PASS/FAIL evaluation.

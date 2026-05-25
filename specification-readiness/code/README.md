@@ -13,7 +13,7 @@ derived from that theory are developed in companion empirical work (in
 preparation), which will reference this repository as its primary
 computational instrument.
 
-Per PAPER_QUALITY_STANDARDS items 37a-37e, every computed numerical value
+Per the corpus computational-reproducibility standard, every computed numerical value
 cited in the paper must be reproducible from a script in this directory
 with a fixed seed and a documented run command.
 

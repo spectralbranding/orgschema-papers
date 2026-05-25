@@ -100,7 +100,7 @@ For each conflict, the coder records which resolution policy the acquiring organ
 - **NEGOTIATED**: new combined policy supersedes both; merged log accepts a new POLICY event with `caused_by` pointing to both originals.
 - **DEFERRED**: conflict noted, neither resolved; both events sit in the merged log creating ongoing operational friction.
 
-κ measurement excludes NEGOTIATED resolutions from the conflict count (they resolved cleanly); ACQUIRER, TARGET, and DEFERRED count toward conflicts. LWW depends on timestamp ordering; counted as conflict only if older event was operationally load-bearing.
+κ measurement excludes NEGOTIATED resolutions from the conflict count (they resolved cleanly); ACQUIRER, TARGET, and DEFERRED count toward conflicts. LWW depends on timestamp ordering; counted as conflict only if older event was operationally critical.
 
 ## 7. Robustness checks (pre-registered)
 

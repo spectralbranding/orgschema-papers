@@ -4,7 +4,7 @@ Companion code for:
 
 > Zharnikov, D. (2026). *Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure*. Working paper. doi:10.5281/zenodo.20367460
 
-Per PAPER_QUALITY_STANDARDS items 37a-37e, every computed numerical value cited in the paper must be reproducible from a script in this directory with a fixed seed and a documented run command.
+Per the corpus computational-reproducibility standard, every computed numerical value cited in the paper must be reproducible from a script in this directory with a fixed seed and a documented run command.
 
 ## Files in this directory
 
