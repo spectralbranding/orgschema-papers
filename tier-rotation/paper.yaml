@@ -3,6 +3,7 @@
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
+corpus_role: ost
 
 metadata:
   title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
