@@ -16,7 +16,7 @@ identifiers:
     description: "Zenodo concept DOI (always resolves to latest version)"
   - type: doi
     value: "10.5281/zenodo.19895814"
-    description: "Zenodo v1 DOI (this version)"
+    description: "Zenodo versioned DOI for v1.1.0 (in-place upload 2026-05-29; previously v1.0.0 2026-04-29)"
 keywords:
   - mergers and acquisitions
   - organizational ontology

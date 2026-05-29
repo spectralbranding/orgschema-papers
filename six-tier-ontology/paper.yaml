@@ -1,7 +1,6 @@
 # paper.yaml -- Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation
 # Citation key: 2026ag. Concept DOI 10.5281/zenodo.19895813.
-# v1.0.0 versioned DOI 10.5281/zenodo.19895814 (frozen, 2026-04-29).
-# v1.1.0 versioned DOI: TBD (assigned by Zenodo on the 2026-05-29 re-upload).
+# Versioned DOI 10.5281/zenodo.19895814 -- v1.1.0 (in-place upload 2026-05-29; previously v1.0.0 2026-04-29).
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
