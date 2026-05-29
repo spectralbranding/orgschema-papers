@@ -75,17 +75,18 @@ Owner Intent is the psychic and strategic commitment of the controlling principa
 
 **Figure 1: Tier-1 Attribution — Principal Carrier and Imprint on the Asset.**
 
-``` {.mermaid width=90%}
+``` {.mermaid width=100%}
 graph LR
-    subgraph Principal["Principal (controlling agent)"]
-        T1["Tier 1: Owner Intent<br/>(carried on principal record)"]
+    subgraph Principal["Principal substrate"]
+        T1["Tier 1<br/>Owner Intent"]
     end
-    subgraph Asset["Asset (target business)"]
-        T2["Tier 2: Business Model"]
-        T3["Tier 3: Business Entity"]
-        T4["Tier 4: Product"]
-        T5["Tier 5: Process"]
-        T6["Tier 6: Organization"]
+    subgraph Asset["Asset substrate"]
+        direction TB
+        T2["Tier 2<br/>Business Model"]
+        T3["Tier 3<br/>Business Entity"]
+        T4["Tier 4<br/>Product"]
+        T5["Tier 5<br/>Process"]
+        T6["Tier 6<br/>Organization"]
         T2 --> T3
         T3 --> T4
         T4 --> T5
@@ -213,36 +214,32 @@ In standard for-profit transactions, Tier 1 and Tier 4 are distinct: the owner's
 
 **Figure 3: Tier-Collapse Patterns — Tier 1 ≡ Tier 4 (Intent–Product) and Tier 1 ≡ Tier 3 (Intent–Entity).**
 
+*Panel A: Tier 1 ≡ Tier 4 collapse (Domain Craftsman, Family Steward, Mission Founder).*
+
 ``` {.mermaid width=95%}
-graph TD
-    subgraph Panel_A["Panel A: T1 ≡ T4 (Domain Craftsman / Family Steward / Mission Founder)"]
-        A1["T1 Owner Intent"]
-        A2["T2 Business Model"]
-        A3["T3 Business Entity"]
-        A4["T4 Product"]
-        A5["T5 Process"]
-        A6["T6 Organization"]
-        A1 --> A2
-        A2 --> A3
-        A3 --> A4
-        A4 --> A5
-        A5 --> A6
-        A1 -.->|"≡ fused"| A4
-    end
-    subgraph Panel_B["Panel B: T1 ≡ T3 (Sole-Proprietor: ИП / sole prop / sole trader / Einzelunternehmen)"]
-        B1["T1 Owner Intent"]
-        B2["T2 Business Model"]
-        B3["T3 Business Entity<br/>(= natural person)"]
-        B4["T4 Product"]
-        B5["T5 Process"]
-        B6["T6 Organization"]
-        B1 --> B2
-        B2 --> B3
-        B3 --> B4
-        B4 --> B5
-        B5 --> B6
-        B1 -.->|"≡ fused"| B3
-    end
+graph LR
+    A1["Tier 1<br/>Owner Intent"]
+    A2["Tier 2<br/>Business Model"]
+    A3["Tier 3<br/>Business Entity"]
+    A4["Tier 4<br/>Product"]
+    A5["Tier 5<br/>Process"]
+    A6["Tier 6<br/>Organization"]
+    A1 --> A2 --> A3 --> A4 --> A5 --> A6
+    A1 -.->|"fused"| A4
+```
+
+*Panel B: Tier 1 ≡ Tier 3 collapse (Sole-Proprietor — RU ИП, US sole proprietorship, UK sole trader, DE Einzelunternehmen, FR EI, IT ditta individuale, PL JDG, CY self-employed).*
+
+``` {.mermaid width=95%}
+graph LR
+    B1["Tier 1<br/>Owner Intent"]
+    B2["Tier 2<br/>Business Model"]
+    B3["Tier 3<br/>Business Entity<br/>(natural person)"]
+    B4["Tier 4<br/>Product"]
+    B5["Tier 5<br/>Process"]
+    B6["Tier 6<br/>Organization"]
+    B1 --> B2 --> B3 --> B4 --> B5 --> B6
+    B1 -.->|"fused"| B3
 ```
 
 *Notes*: Both panels show the canonical six-tier stack with one collapse overlay (dotted arrow indicating tier identification). In Panel A, the principal's identity is the Product specification — the founder is what the customer is buying. In Panel B, the principal's identity is the legal subject — the registered entity is the natural person. In each panel, the categorical M&A consequence is the same: the asset cannot be transferred as a going concern at the fused tier, because the fused tier carries the principal's identity and identity is not conveyable by legal instrument. Cross-jurisdictional sole-proprietor examples are listed in the accompanying paragraph; the structural pattern is jurisdiction-invariant.
