@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # The Projection Cascade
 
 **Title**: The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't
@@ -7,8 +11,6 @@
 **Citation key**: 2026m
 
 **Status**: Working paper v2.0.0 (published 2026-05-09 on Zenodo). Canonical concept DOI [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205) is the citation target; version-specific DOIs are recorded in `PROVENANCE.yaml` for traceability. v1 preserved as a distinct working paper.
-
-**Target venue**: Strategic Management Journal (primary); Academy of Management Review, Organization Science (alternates).
 
 ## What this paper does
 
@@ -64,4 +66,8 @@ For v1 (preserved): Zharnikov, Dmitry. (2026). Working paper v1. Zenodo. https:/
 
 ## License
 
-CC-BY-4.0. Reuse permitted with attribution.
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+---
+
+*Last updated: 2026-05-29*

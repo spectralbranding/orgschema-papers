@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs
 
 **Status**: Working paper v1.0.0 (April 2026) | **DOI**: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
@@ -21,23 +25,48 @@ The paper engages organizational routines (Pentland and Feldman 2005), configura
 | P3 | AI-era decoupling: restructuring frequency rises while process change frequency remains stable | Proposed |
 | P4 | Tacit knowledge boundary: high-tacit organizations have narrow metamerism sets regardless of coordination embedding | Proposed |
 
-## Target venue
-
-- **Primary**: Organization Science
-- **Alternatives**: Academy of Management Review, Strategic Organization
-
-## Submission history
-
-| Date | Venue | Status |
-|------|-------|--------|
-| 2026-03-18 | Organization Theory (OT-26-0095) | Desk-rejected 2026-04-28 (Höllerer Co-Editor). Substantial rewrite produced for Organization Science. |
-
 ## Companion papers
 
 - **Spectral metamerism in brand perception** (Zharnikov 2026e) — formal observer-relativity argument grounding the organizational extension. [DOI](https://doi.org/10.5281/zenodo.18945352)
 - **Specification impossibility in organizational design** (Zharnikov 2026h) — establishes that complete specifications are unattainable, motivating the metamerism set framing. [DOI](https://doi.org/10.5281/zenodo.18945591)
 - **The Organizational Schema Theory** (Zharnikov 2026i) — shared metadata-style framing of organizational specification. [DOI](https://doi.org/10.5281/zenodo.18946043)
 
-## License
+---
 
-CC BY-NC-ND 4.0
+## 1 | Project Layout
+
+```
+org-as-metadata/
+├── README.md              # this file
+├── CITATION.cff           # machine-readable citation
+├── paper.md               # full manuscript
+├── paper.yaml             # paper specification
+├── code/                  # companion computation scripts
+│   └── metamerism_set_simulation.py
+├── CONTRIBUTORS.yaml
+└── PROVENANCE.yaml
+```
+
+## 2 | Companion Computation Script
+
+`code/metamerism_set_simulation.py` — illustrative simulation of metamerism set size as a function of coordination embedding and tacit knowledge intensity. Run command and dependencies documented in the script docstring.
+
+## 3 | Dependencies
+
+Python 3.12+. See script docstring in `code/metamerism_set_simulation.py` for any specific package requirements.
+
+## 4 | Citation
+
+Verbatim title (per `paper.yaml`):
+
+> Zharnikov, D. (2026). Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations. Working Paper v1.1.0. DOI: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871).
+
+See [CITATION.cff](CITATION.cff) for machine-readable citation. GitHub and Zenodo render this natively via the "Cite this repository" affordance.
+
+## 5 | Licence
+
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+---
+
+*Last updated: 2026-05-29*
