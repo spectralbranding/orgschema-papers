@@ -6,7 +6,7 @@
 
 **Citation key**: 2026ag
 
-**Status**: Working paper v1.0.0 published on Zenodo 2026-04-29. Structural revisions and citation additions applied pre-upload. Target venue: Academy of Management Review.
+**Status**: Working paper v1.1.0 prepared for Zenodo re-upload 2026-05-29 (clean reference-list pass + 3 added references: Barney 1991, Teece-Pisano-Shuen 1997, Zharnikov 2026m back-cite; substantive Smeulders 2023 citation correction). v1.0.0 originally published 2026-04-29. Target venue: Academy of Management Review.
 
 **DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 
@@ -44,5 +44,5 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 ## How to cite
 
 ```
-Zharnikov, Dmitry (2026), "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.19895813.
+Zharnikov, Dmitry (2026), "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation," Working Paper v1.1.0, Zenodo, doi:10.5281/zenodo.19895813.
 ```
