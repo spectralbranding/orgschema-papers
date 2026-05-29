@@ -644,7 +644,7 @@ Joseph, Abraham; Gupta, Suraksha; Wang, YiChuan; Schoefer, Klaus (2021). Corpora
 
 Yorkston, Eric A.; Nunes, Joseph C.; Matta, Shashi (2010). The malleable brand: The role of implicit theories in evaluating brand extensions. Journal of Marketing 74(1):80–93. https://doi.org/10.1509/jmkg.74.1.080
 
-Yu, Jungju (2021). A model of brand architecture choice: A house of brands vs. branded house. Marketing Science 40(1):147–167. https://doi.org/10.1287/mksc.2020.1245
+Yu, Jungju (2021). A model of brand architecture choice: A house of brands vs. a branded house. Marketing Science 40(1):147–167. https://doi.org/10.1287/mksc.2020.1245 (SSRN preprint: https://doi.org/10.2139/ssrn.3116284)
 
 Zharnikov, Dmitry (2026a). Spectral Brand Theory: A multi-dimensional framework for brand perception analysis. Working Paper. https://doi.org/10.5281/zenodo.18945912
 
