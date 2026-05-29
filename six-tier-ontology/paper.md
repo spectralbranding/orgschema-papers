@@ -468,7 +468,7 @@ Selznick, Philip (1957), *Leadership in Administration: A Sociological Interpret
 
 Simon, Herbert A. (1962), "The Architecture of Complexity," *Proceedings of the American Philosophical Society*, 106 (6), 467–482.
 
-Smeulders, Dieter, Hendrik Jan Dekker, and Alexandra Van den Abbeele (2023), "Postacquisition Integration: Management Control System Use, Cultural Differences, and Acquisition Performance," *Accounting, Organizations and Society*, 109, 101412, doi:10.1016/j.aos.2023.101412.
+Smeulders, Dieter, Henri C. Dekker, and Alexandra Van den Abbeele (2023), "Post-acquisition Integration: Managing Cultural Differences and Employee Resistance Using Integration Controls," *Accounting, Organizations and Society*, 107, 101427, doi:10.1016/j.aos.2022.101427.
 
 Stahl, Günter K. and Andreas Voigt (2005), "The Performance Impact of Cultural Differences in Mergers and Acquisitions: A Critical Research Review and an Integrative Model," in *Advances in Mergers and Acquisitions, Vol. 4*, Cary L. Cooper and Sidney Finkelstein, eds. Bingley, UK: Emerald Group Publishing, 51–82, doi:10.1016/S1479-361X(04)04003-7.
 
