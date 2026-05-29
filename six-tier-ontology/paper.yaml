@@ -1,5 +1,7 @@
 # paper.yaml -- Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation
-# Citation key: 2026ag. Concept DOI 10.5281/zenodo.19895813; v1 DOI 10.5281/zenodo.19895814.
+# Citation key: 2026ag. Concept DOI 10.5281/zenodo.19895813.
+# v1.0.0 versioned DOI 10.5281/zenodo.19895814 (frozen, 2026-04-29).
+# v1.1.0 versioned DOI: TBD (assigned by Zenodo on the 2026-05-29 re-upload).
 # Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
 
 paper_spec_version: "0.1.0"
@@ -25,6 +27,9 @@ metadata:
     - integration failure
     - form-invariance
     - separability diagnostic
+    - dual hierarchy
+    - failure cascade
+    - six-tier ontology
 
 abstract: >
   Mergers and acquisitions continue to fail at high rates despite decades of
@@ -159,6 +164,18 @@ dependencies:
     relationship: cites
     critical: false
     description: "Specification Impossibility — anchors P4 mechanism on the impossibility of fully specifying Product requirements to arbitrary resolution"
+
+  - citation: "Zharnikov (2026ah)"
+    doi: "10.5281/zenodo.19930157"
+    relationship: cites
+    critical: false
+    description: "Brand as Tier-4 Projection — multi-brand and recovery theory referenced in §3 Tier 4 as the brand-portfolio extension of the six-tier ontology"
+
+  - citation: "Zharnikov (2026m)"
+    doi: "10.5281/zenodo.19145205"
+    relationship: extends
+    critical: false
+    description: "The Projection Cascade — formalizes the cascade-projection structure that the dual-hierarchy framework proposes at the ontological level (junction-localized rank-deficiency bound + sub-additivity inequality via uniform contraction); added v1.1.0 back-cite in §4"
 
 ai_disclosure: >
   AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
