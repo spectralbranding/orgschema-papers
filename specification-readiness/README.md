@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Specification Readiness and Endogenous Friction (2026am)
 
 **Title**: Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture
@@ -49,10 +53,14 @@ This paper extends and is grounded in two prior contributions:
 
 ## License
 
-Creative Commons Attribution 4.0 International (CC BY 4.0).
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
 
 ## How to cite
 
 ```
 Zharnikov, Dmitry (2026), "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.20379982. Concept DOI: 10.5281/zenodo.20379981.
 ```
+
+---
+
+*Last updated: 2026-05-29*

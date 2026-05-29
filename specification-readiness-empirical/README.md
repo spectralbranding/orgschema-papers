@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Specification Readiness: Measuring an Architectural Antecedent (2026an)
 
 **Title**: Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns
@@ -10,6 +14,41 @@
 
 **Concept DOI**: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
 **v1.0.0 DOI**: [10.5281/zenodo.20384085](https://doi.org/10.5281/zenodo.20384085)
+
+## 1 | Getting Started
+
+This is a paper-slug mirror under the `orgschema-papers` hub. Hub-level conventions (LICENSE, LICENSE-data, .gitignore, reproduce orchestration) are inherited from the hub root; this slug ships paper artifacts plus a code pointer companion shared with paper 2026am.
+
+## 2 | Project Layout
+
+- `paper.md` — full paper (body ≈ 10,780 words; 48 references; 3 appendices)
+- `paper.yaml` — paper-spec schema (citation key, hypotheses, falsification criteria, dependencies, AI disclosure)
+- `CITATION.cff` — citation file (CFF 1.2.0)
+- `CONTRIBUTORS.yaml` — contributor attribution (CRediT taxonomy; Form A AI disclosure)
+- `PROVENANCE.yaml` — version history and related-work record
+- `code/` — pointer to the shared code companion with paper 2026am (see `code/README.md`)
+
+## 3 | Quick Start
+
+Companion code is shared with paper 2026am at [specification-readiness/code/](https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/). Monte Carlo friction-tax simulation and regression-identification power simulation are executed under fixed seed 20260525:
+
+```bash
+cd ../specification-readiness/code
+bws run -- uv run python friction_tax_montecarlo.py
+bws run -- uv run python push_pull_regression_sim.py
+```
+
+See `code/README.md` for the local pointer.
+
+## 4 | Dependencies
+
+The shared companion code resolves Python dependencies via `uv` under the hub-level project anchor. Run commands above pull pinned versions automatically; secrets are resolved at runtime via `bws` and not stored in this repo.
+
+## 5 | Licence
+
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+---
 
 ## What this paper does
 
@@ -27,22 +66,9 @@ This is the empirical companion to Zharnikov (2026am) Specification Readiness an
 - **H4 (Substrate Readiness Conditions AI Deployment ROI)**: within firms, pre-deployment SCI moderates the effect of AI deployment on firm productivity (Cohen's d ≈ .5).
 - **H5 (Pull Architecture Shrinks Function-as-Friction-Tax)**: event-study analysis of advertising-cessation events shows sharper negative CARs for low-SCI firms than high-SCI firms (Cohen's d ≈ .7).
 
-## Files
-
-- `paper.md` — full paper (body ≈ 10,780 words; 48 references; 3 appendices)
-- `paper.yaml` — paper-spec schema (citation key, hypotheses, falsification criteria, dependencies, AI disclosure)
-- `CITATION.cff` — citation file (CFF 1.2.0)
-- `CONTRIBUTORS.yaml` — contributor attribution (CRediT taxonomy; Form A AI disclosure)
-- `PROVENANCE.yaml` — version history and related-work record
-- `code/` — pointer to the shared code companion with paper 2026am (see `code/README.md`)
-
 ## Companion theoretical work
 
 Foundational theory: [Zharnikov (2026am)](https://doi.org/10.5281/zenodo.20379981) Specification Readiness and Endogenous Friction — develops the information-theoretic model whose five propositions P1–P5 this paper operationalizes empirically.
-
-## Companion code
-
-Monte Carlo friction-tax simulation and regression-identification power simulation are shared with paper 2026am at [specification-readiness/code/](https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/). Run under fixed seed 20260525.
 
 ## Companion articles (practitioner expression)
 
@@ -52,12 +78,12 @@ The architectural construct and its empirical implications are developed in plai
 
 The pre-registered design specified in this paper is in execution as future work (companion paper v2.0 / Paper C). When the archival panel results are available, the empirical estimates with confidence intervals, first-stage F-statistics, Oster δ-bounds, and economic magnitudes in dollars of SG&A savings will be reported in that follow-up paper.
 
-## License
-
-Creative Commons Attribution 4.0 International (CC BY 4.0) for the paper text; MIT License for the companion computation code.
-
 ## How to cite
 
 ```
 Zharnikov, Dmitry (2026), "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns," Working Paper v1.0.0, Zenodo, https://doi.org/10.5281/zenodo.20384084.
 ```
+
+---
+
+*Last updated: 2026-05-29*

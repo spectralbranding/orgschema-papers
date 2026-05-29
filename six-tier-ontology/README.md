@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Dual Hierarchies of Organizational Transferability (2026ag)
 
 **Title**: Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation
@@ -46,3 +50,44 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC B
 ```
 Zharnikov, Dmitry (2026), "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation," Working Paper v1.1.0, Zenodo, doi:10.5281/zenodo.19895813.
 ```
+
+---
+
+## 1 | Paper
+
+[paper.md](paper.md) — version 1.1.0. Zenodo versioned DOI: [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814). Concept DOI (always resolves to latest): [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813).
+
+## 2 | Companion Data
+
+No companion dataset for this paper.
+
+## 3 | Reproduction
+
+The [`code/`](code/) directory contains the Six-Tier Separability Diagnostic (STSD) scoring utility derived in the paper:
+
+- `code/stsd_scorer.py` — STSD ordinal scorer (Fused / Partial / Independent per tier).
+- `code/sample_output.txt` — reference output from the scorer.
+- `code/README.md` — usage notes and invocation.
+
+Run from the slug root: `python code/stsd_scorer.py`.
+
+## 4 | Citation
+
+```bibtex
+@article{zharnikov2026sixtier,
+  author  = {Zharnikov, Dmitry},
+  title   = {Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation},
+  year    = {2026},
+  doi     = {10.5281/zenodo.19895814}
+}
+```
+
+Machine-readable: [CITATION.cff](CITATION.cff).
+
+## 5 | Licence
+
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+---
+
+*Last updated: 2026-05-29*

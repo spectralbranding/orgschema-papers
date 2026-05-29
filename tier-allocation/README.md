@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Where to Invest Within the Firm (2026aj)
 
 **Title**: Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value
@@ -9,6 +13,35 @@
 **Status**: Working paper v1.0.0 published on Zenodo 2026-05-07. Target venue: Strategic Management Journal (primary); Academy of Management Review and Organization Science as alternates.
 
 **DOI**: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288) (concept) | [10.5281/zenodo.20072289](https://doi.org/10.5281/zenodo.20072289) (v1)
+
+## 1 | Getting Started
+
+This slug is a per-paper subdirectory inside the `orgschema-papers` public mirror. Hub-level files (LICENSE, LICENSE-data, .gitignore) live one directory up; this README documents the slug-level artifacts only.
+
+## 2 | Project Layout
+
+- `paper.md` -- full paper (~12,998 words body; 62 references; 4 propositions; 4 tables; Figure 1 contour plot)
+- `supplement.md` -- Online Supplement S1-S4 (full Lagrangian derivation, r-sensitivity, alternative alpha calibrations, CES robustness at sigma = .5 / 1.0 / 1.5)
+- `paper.yaml` -- paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
+- `CITATION.cff` -- citation file (CITATION File Format 1.2.0)
+- `CONTRIBUTORS.yaml` -- verified contributor attribution
+- `PROVENANCE.yaml` -- version history and submission records
+- `code/back_of_envelope.py` -- companion computation script (deterministic; reproduces all numerical values; generates Figure 1)
+- `figures/tier_allocation_contour.png` -- Figure 1: long-run value contour over the (w_4, w_6) plane at r = .15
+
+## 3 | Quick Start
+
+Reproduce the paper's numerical values and Figure 1 deterministically:
+
+```
+python code/back_of_envelope.py
+```
+
+The script is self-contained and reproduces all numerical anchors listed in `paper.yaml` (V_LR profiles, Tier-6 dollar-share trajectory, CES B/A ratios).
+
+## 4 | Dependencies
+
+Python 3.12+ with `matplotlib` and `numpy`. See hub-level dependency conventions if running across multiple slugs.
 
 ## What this paper does
 
@@ -24,17 +57,6 @@ Two consumer-goods firms with identical revenues, margins, and aggregate investm
 
 4. **Agency extension closing the model-empirical gap.** Short-tenure professional managers face effective r_A > r_P relative to patient principals; the comparative static directly predicts over-allocation to Tier 6 as an agency equilibrium outcome, not merely as a behavioral bias, generating the governance-structure predictions in P2 and strengthening the directional propositions for empirical identification.
 
-## Files
-
-- `paper.md` -- full paper (~12,998 words body; 62 references; 4 propositions; 4 tables; Figure 1 contour plot)
-- `supplement.md` -- Online Supplement S1-S4 (full Lagrangian derivation, r-sensitivity, alternative alpha calibrations, CES robustness at sigma = .5 / 1.0 / 1.5)
-- `paper.yaml` -- paper-spec schema (citation key, propositions, falsification criteria, dependencies, AI disclosure)
-- `CITATION.cff` -- citation file (CITATION File Format 1.2.0)
-- `CONTRIBUTORS.yaml` -- verified contributor attribution
-- `PROVENANCE.yaml` -- version history and submission records
-- `code/back_of_envelope.py` -- companion computation script (deterministic; reproduces all numerical values; generates Figure 1)
-- `figures/tier_allocation_contour.png` -- Figure 1: long-run value contour over the (w_4, w_6) plane at r = .15
-
 ## Related work
 
 This paper is a companion to the SBT-OST cross-cutting series on organizational tier structure and capital allocation:
@@ -43,12 +65,16 @@ This paper is a companion to the SBT-OST cross-cutting series on organizational 
 - The Tier-Rotation Curve, whose trademark-composition empirical proxy operationalizes the P4 rotation-stage moderator: [Zharnikov (2026ai) The Tier-Rotation Curve](https://doi.org/10.5281/zenodo.20069605).
 - The Brand-as-Tier-4 paper that established brand as a Tier-4 product specification layer, motivating the Tier-4 decay calibration: [Zharnikov (2026ah) Brand as Tier-4 Projection](https://doi.org/10.5281/zenodo.19930157).
 
-## How to cite
+## 6 | Citation
 
 ```
 Zharnikov, Dmitry (2026), "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value," Working Paper v1.0.0, Zenodo, doi:10.5281/zenodo.20072288.
 ```
 
-## License
+Machine-readable metadata in [CITATION.cff](CITATION.cff).
 
-Creative Commons Attribution 4.0 International (CC BY 4.0).
+## 7 | Licence
+
+Code (if any): MIT -- see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 -- see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+*Last updated: 2026-05-29*
