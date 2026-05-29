@@ -1,4 +1,9 @@
 
+# Secrets / environment
+.env
+.env.*
+*.env
+
 # Claude decision traces
 .claude-decisions/
 

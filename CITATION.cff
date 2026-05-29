@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Organizational Schema Theory — Research Papers"
+version: "1.0.0"
+authors:
+  - family-names: "Zharnikov"
+    given-names: "Dmitry"
+    orcid: "0009-0000-6893-9231"
+date-released: "2026-05-29"
+license: "MIT"
+license-url: "https://opensource.org/licenses/MIT"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+url: "https://github.com/spectralbranding/orgschema-papers"
+abstract: >
+  Hub repository indexing the Organizational Schema Theory (OST) research corpus.
+  OST is a reverse-design test-driven methodology for business operations in which
+  organizations are specified backward from desired customer experience through a
+  six-tier cascade of testable, version-controlled specifications. Each paper-slug
+  subdirectory contains a peer-reviewed working paper, supporting computation, and
+  per-paper reproduction artifacts (CITATION.cff, reproduce.sh, output/). The hub
+  itself provides the cross-paper index, the dual-licence framing, and the
+  orchestrator that iterates per-paper reproduction pipelines.
+keywords:
+  - "organizational schema theory"
+  - "six-tier ontology"
+  - "specification readiness"
+  - "test-driven business design"
+  - "verification as operator"
+  - "spectral brand theory"

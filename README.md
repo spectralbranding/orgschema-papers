@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Organizational Schema Theory -- Research Papers
 
 Research publications on Organizational Schema Theory (orgschema), a reverse-design TDD methodology for business operations. Businesses are designed backward from desired customer experience through testable, version-controlled specifications where each operational layer validates the layer above it.
@@ -139,3 +143,113 @@ All papers are released under [MIT License](LICENSE). Use, cite, and build upon 
 ## Trademarks
 
 "Organizational Schema Theory" and "orgschema" are trademarks of Dmitry Zharnikov. The MIT license applies to the source code and text only and does not grant permission to use the project trademarks.
+
+---
+
+## 1 | Getting Started
+
+This repository is the hub index for the Organizational Schema Theory (OST) research corpus. Each subdirectory is a paper-slug (for example, `organizational-schema-theory/`, `six-tier-ontology/`, `tier-rotation/`) containing the paper source, supporting computation, and per-paper `README.md`, `CITATION.cff`, and reproduction artifacts.
+
+Clone the hub:
+
+```bash
+git clone https://github.com/spectralbranding/orgschema-papers.git
+cd orgschema-papers
+```
+
+To work on a specific paper, change into its subdirectory and read that paper's `README.md`:
+
+```bash
+cd six-tier-ontology
+cat README.md
+```
+
+The project anchor at the hub root is `pyproject.toml` (`name = "orgschema-papers-hub"`). Individual papers may declare their own `pyproject.toml` for paper-specific dependencies.
+
+## 2 | Project Layout
+
+```
+orgschema-papers/
+|-- README.md                          <- this file (hub index)
+|-- CITATION.cff                       <- machine-readable hub citation
+|-- LICENSE                            <- MIT (code, text)
+|-- LICENSE-data                       <- CC BY 4.0 (figures, tables, data)
+|-- pyproject.toml                     <- hub project anchor
+|-- reproduce.sh                       <- hub orchestrator (iterates paper subdirs)
+|-- .gitignore
+|-- output/
+|   |-- figures/.gitkeep
+|   |-- tables/.gitkeep
+|   `-- logs/.gitkeep                  <- hub_run.log lands here
+|-- organizational-schema-theory/      <- Zharnikov 2026c
+|-- orgschema-audit/                   <- Zharnikov 2026
+|-- verification-as-operator/          <- Zharnikov 2026ae
+|-- org-as-metadata/                   <- organizational metamerism
+|-- six-tier-ontology/                 <- Zharnikov 2026ag
+|-- brand-as-tier4/                    <- Zharnikov 2026ah
+|-- tier-rotation/                     <- Zharnikov 2026ai
+|-- tier-allocation/                   <- Zharnikov 2026aj
+|-- capability-as-projection/
+|-- projection-paper/
+|-- specification-readiness/
+|-- specification-readiness-empirical/
+|-- tier-penetration/
+`-- ...                                <- additional paper-slugs
+```
+
+Each paper-slug subdirectory follows the per-paper layout defined in `PUBLIC_MIRROR_STANDARD.md` v1.0.0.
+
+## 3 | Quick Start
+
+Each paper that ships a reproduction pipeline carries its own `reproduce.sh`. The hub-level orchestrator iterates paper-slug subdirectories and invokes each per-paper `reproduce.sh` in turn:
+
+```bash
+./reproduce.sh                  # iterate all paper-slug subdirs, run each reproduce.sh
+./reproduce.sh --check-only     # verify dependencies only
+./reproduce.sh --fast           # skip expensive blocks (power analyses, LLM calls)
+```
+
+Run logs land in `output/logs/hub_run.log`. To reproduce a single paper directly:
+
+```bash
+cd six-tier-ontology
+./reproduce.sh
+```
+
+## 4 | Dependencies
+
+- Python `>=3.12`
+- `uv` package manager ([install](https://docs.astral.sh/uv/getting-started/installation/))
+- `git` (history-tracking; SHA recorded in run logs)
+
+Per-paper subdirectories may declare additional dependencies (LLM API SDKs, scientific computing libraries) via their own `pyproject.toml`. The hub anchor at root scopes only the orchestration layer.
+
+## 6 | Citation
+
+To cite the hub repository:
+
+> Zharnikov D. *Organizational Schema Theory -- Research Papers.* GitHub repository, 2026. https://github.com/spectralbranding/orgschema-papers
+
+Machine-readable form: [`CITATION.cff`](CITATION.cff). GitHub renders a "Cite this repository" widget from that file.
+
+For individual papers, cite the concept DOI listed in the paper table at the top of this README, or use the per-paper `CITATION.cff`. Selected concept DOIs:
+
+- Organizational Schema Theory (Zharnikov 2026c): [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043)
+- OrgSchema Audit: [10.5281/zenodo.19555201](https://doi.org/10.5281/zenodo.19555201)
+- Verification as Operator (2026ae): [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588)
+- Organizational Metamerism: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
+- Six-Tier Ontology (2026ag): [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813)
+- Brand as Tier-4 Projection (2026ah): [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
+- Tier-Rotation Curve (2026ai): [10.5281/zenodo.20069605](https://doi.org/10.5281/zenodo.20069605)
+- Where to Invest Within the Firm (2026aj): [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
+
+## 7 | Licence
+
+This hub adopts the dual-licence discipline defined in `PUBLIC_MIRROR_STANDARD.md`:
+
+- **Code** (scripts, configs, computational artifacts) -- MIT, see [`LICENSE`](LICENSE)
+- **Data, figures, tables, paper text, rendered artifacts** -- Creative Commons Attribution 4.0 International (CC BY 4.0), see [`LICENSE-data`](LICENSE-data)
+
+Per-paper subdirectories inherit this licence pairing unless they declare otherwise.
+
+*Last updated: 2026-05-29*
