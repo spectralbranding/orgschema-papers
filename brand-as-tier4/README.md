@@ -10,9 +10,9 @@
 
 **Citation key**: 2026ah
 
-**Status**: Working paper v1.1.0-pre. v1.0.0 published on Zenodo 2026-04-30 under the prior title "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture." Title, abstract, introduction, and conclusion revised; DOI corrections applied (Snihur & Tarziján 2018 LRP confirmed; Strebinger & Treiblmaier 2018 replaced with Strebinger 2004 ACR + Åsberg & Uggla 2019 JBM); Simon 1962 added to bibliography. Pending v1.1.0 Zenodo re-upload.
+**Status**: Working paper v1.1.0 prepared for Zenodo in-place upload 2026-05-29 (versioned DOI 10.5281/zenodo.19930158 retained, now corresponds to v1.1.0; concept DOI 10.5281/zenodo.19930157 unchanged). Net delta vs v1.0.0 (2026-04-30 publication): title/abstract/introduction/conclusion revision pass; DOI corrections (Snihur & Tarziján 2018 LRP confirmed; Strebinger & Treiblmaier 2018 replaced with Strebinger 2004 ACR + Åsberg & Uggla 2019 JBM); Simon 1962 added; 4 originally-flagged citations cleared via substrate verification cascade (Brand Finance 2026 report reclassified; Kapferer 2012 book reclassified with ISBN; Webster 1997 chapter reclassified; Yu 2021 SSRN preprint DOI added inline).
 
-**DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (v1, 2026-04-30) | v1.1 DOI pending re-upload
+**DOI**: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157) (concept, always resolves to latest version) | [10.5281/zenodo.19930158](https://doi.org/10.5281/zenodo.19930158) (versioned DOI, currently v1.1.0 — in-place upload 2026-05-29; previously v1.0.0 2026-04-30)
 
 ## What this paper does
 

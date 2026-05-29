@@ -8,7 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
 version: "1.1.0"
-date-released: "2026-05-02"
+date-released: "2026-05-29"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
@@ -16,7 +16,7 @@ identifiers:
     description: "Zenodo concept DOI (always resolves to latest version)"
   - type: doi
     value: "10.5281/zenodo.19930158"
-    description: "Zenodo v1 DOI (this version)"
+    description: "Zenodo versioned DOI for v1.1.0 (in-place upload 2026-05-29; previously v1.0.0 2026-04-30)"
 keywords:
   - brand portfolio architecture
   - multi-brand strategy

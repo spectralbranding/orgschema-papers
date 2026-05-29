@@ -372,9 +372,7 @@ Two diagnostic instruments emerge from the framework. The *Multi-Brand Capacity 
 
 The *Recovery Salvage Matrix* converts Table 3 into a pre-failure infrastructure-audit instrument. Inputs: the per-tier salvage entries from Table 3 conditional on the firm's specific configuration. Output: under each of the three recovery pathways (A, B, C), which substrate is preserved, what residual value can be re-specified, and which Tier-1 commitments would be violated by Pathway B. Boards weighing recovery strategy after brand failure can run the matrix in advance.
 
-Table 5 consolidates the three contributions developed in the Introduction with the propositions, empirical regularities, and diagnostic instruments that carry each.
-
-**Table 5: Mapping of Contributions, Propositions, Empirical Regularities, and Diagnostic Instruments.**
+**Table 5: Mapping of Contributions, Propositions, Empirical Regularities, and Diagnostic Instruments.** The next table consolidates the three contributions developed in the Introduction with the propositions, empirical regularities, and diagnostic instruments that carry each.
 
 | Contribution | Carrying propositions | Empirical regularity reinterpreted | Diagnostic instrument |
 |---|---|---|---|
@@ -447,11 +445,7 @@ The V parameter measurement equation in P7 — V = w₁ · v_name + w₂ · v_vi
 
 *Aggregation.* Compute v_name, v_visual, v_endorse as the mean of per-instance 0/1 scores over all Tier-4 instances in the firm's portfolio. Apply equal weights w₁ = w₂ = w₃ = 1/3 unless sector-level recalibration is available. Compute V; assign architecture class as Branded House (V ≥ .85), Sub-brand (.55 ≤ V < .85), Endorsed (.20 ≤ V < .55), House of Brands (V < .20). Inter-rater agreement (Krippendorff's alpha) of .80 or higher across two independent raters is the recommended reliability threshold per P7.
 
-### *MBCD scoring rubric*
-
-Table 6 supplies the per-tier scoring rubric for the Multi-Brand Capacity Diagnostic (MBCD) introduced in P1 and Table 4. Each tier is scored on a 1–5 separability scale; Tier 4 is omitted because it is the brand instance itself.
-
-**Table 6: MBCD Per-Tier Scoring Rubric.**
+**Table 6: MBCD Per-Tier Scoring Rubric.** The rubric below supplies the per-tier scoring for the Multi-Brand Capacity Diagnostic (MBCD) introduced in P1 and Table 4. Each tier is scored on a 1–5 separability scale; Tier 4 is omitted because it is the brand instance itself.
 
 | Score | Tier 1 (Owner Intent) | Tier 2 (Business Model) | Tier 3 (Business Entity) | Tier 5 (Process) | Tier 6 (Organization) |
 |---|---|---|---|---|---|
