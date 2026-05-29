@@ -1,3 +1,8 @@
+```{=typst}
+#show table: set block(breakable: true)
+#show figure.where(kind: table): set block(breakable: true)
+```
+
 # Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies
 
 Dmitry Zharnikov
@@ -127,8 +132,6 @@ Second, the Tier-5 / Tier-6 split between brand-agnostic and brand-bound functio
 
 The per-tier decomposition is visualized below in Figure 1.
 
-**Figure 1. Tier-Level Brand-Agnostic vs Brand-Bound Decomposition.**
-
 ``` {.mermaid width=35%}
 graph TD
     T1[Tier 1: Owner Intent<br/>Low separability]
@@ -145,6 +148,8 @@ graph TD
     T5 -.shared substrate.-> T4
     T6 -.shared substrate.-> T4
 ```
+
+**Figure 1. Tier-Level Brand-Agnostic vs Brand-Bound Decomposition.**
 
 *Notes*: Solid arrows trace the constraint hierarchy from Tier 1 downward. Dashed arrows trace the shared-substrate relationship: Tiers 5 and 6 host multiple Tier-4 instances when their brand-agnostic subcomponents dominate the tier mix. Tier 4 is the only tier whose entire content is brand-bound by construction; multi-brand capacity is therefore a property of how separable the *other five tiers* are.
 
