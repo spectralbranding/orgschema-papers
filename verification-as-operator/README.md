@@ -1,8 +1,10 @@
-# Verification as Operator
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
 
-**Verification as Operator: Why Acceptance Testing Succeeds Where Conventional Audit Fails**
+# Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society
 
-Citation key: `2026ae` | Zenodo DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588) | Working Paper v1.0.0 (Apr 26, 2026) | Target venue: Academy of Management Review
+Citation key: `2026ae` | Zenodo DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588) | Working Paper v1.1.0 (2026-05-02)
 
 ## Summary
 
@@ -35,7 +37,7 @@ Python simulation (Appendix B): rank-1 audit misses approximately 90% of total o
 
 ## Status
 
-**Working Paper v1.0.0.** 35 references, 2.9% self-cite. Target: Academy of Management Review. Fallback: Organization Science, Administrative Science Quarterly, Management Science (IS track).
+**Working Paper v1.1.0.** 35 references, 2.9% self-cite.
 
 ## Relationship to Other Papers
 
@@ -44,3 +46,36 @@ Python simulation (Appendix B): rank-1 audit misses approximately 90% of total o
 - **R16 (2026x)** -- Brand Function as the invariant eigenspace the cascade must preserve
 - **R19 (2026aa)** -- Rate-distortion / bandwidth framing; verification bandwidth bounds cascade rank
 - **R22 (2026ad)** -- μ > λ stability condition for cascade under realistic organizational dynamics
+
+---
+
+## 1 | Paper
+
+See [paper.md](paper.md). Working Paper v1.1.0. Zenodo DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588).
+
+## 2 | Companion Data
+
+No companion dataset for this paper. Simulation outputs at [`simulation_results.json`](simulation_results.json).
+
+## 3 | Reproduction
+
+Python simulation companion: [`projection_simulation.py`](projection_simulation.py) at slug root (Appendix B reproducer); outputs written to `simulation_results.json`. The hub orchestrator at [../reproduce.sh](../reproduce.sh) iterates all slugs.
+
+## 4 | Citation
+
+```bibtex
+@article{zharnikov2026ae,
+  author = {Zharnikov, Dmitry},
+  title  = {Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society},
+  year   = {2026},
+  doi    = {10.5281/zenodo.19778588}
+}
+```
+
+Machine-readable: [CITATION.cff](CITATION.cff).
+
+## 5 | Licence
+
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+
+*Last updated: 2026-05-29*
