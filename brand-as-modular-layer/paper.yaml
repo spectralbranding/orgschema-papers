@@ -1,0 +1,187 @@
+# paper.yaml -- Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies
+# Citation key: 2026ah. Concept DOI 10.5281/zenodo.19930157.
+# Versioned DOI 10.5281/zenodo.19930158 -- v1.1.0 (in-place upload 2026-05-29; previously v1.0.0 2026-04-30 under prior title "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture").
+# Paper Spec schema: https://github.com/spectralbranding/paper-spec/SPECIFICATION.md
+
+paper_spec_version: "0.1.0"
+
+metadata:
+  title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+  authors:
+    - name: "Dmitry Zharnikov"
+      orcid: "0009-0000-6893-9231"
+      affiliation: "Independent Researcher"
+      corresponding: true
+  citation_key: "2026ah"
+  doi: "10.5281/zenodo.19930157"
+  date: "2026-05-29"
+  version: "1.1.0"
+  status: preprint
+  license: "CC-BY-4.0"
+  keywords:
+    - brand portfolio architecture
+    - multi-brand strategy
+    - corporate rebranding
+    - brand failure recovery
+    - tier-level decomposition
+    - brand-business separability
+    - marketing organization
+    - cross-brand function
+
+abstract: >
+  The brand-portfolio architecture literature has produced a mature taxonomy
+  of relationships between brands but no theory of which organizational
+  layers carry the brand boundary. This paper proposes that brand IS Tier 4
+  — the Product specification surface — of the six-tier business
+  architecture in Zharnikov (2026ag), projected through an observer
+  perceptual filter into observed brand-perception space. Three downstream
+  phenomena unify under this single structural identity: multi-brand
+  capacity is the firm's tier-level separability profile; failed-brand
+  recovery is tier-level salvage of brand-agnostic infrastructure under
+  brand-bound failure; and marketing, advertising, and branding are Tier-6
+  organizational functions that create, operate, and retire Tier-4
+  instances. Seven falsifiable propositions are derived. P1 predicts
+  portfolio capacity scales with Tier-3 / Tier-5 / Tier-6 independence
+  rather than Business Model diversification. P2 predicts recovery success
+  scales with the brand-agnostic substrate preserved through failure. P7
+  operationalizes the Aaker-Joachimsthaler Brand Relationship Spectrum as a
+  single Tier-3-visibility-in-Tier-4 parameter. The Spectral Brand Theory
+  eight-dimension framework (Zharnikov 2026a) supplies the per-instance
+  Tier-4 specification. Two diagnostic instruments — the Multi-Brand
+  Capacity Diagnostic and the Recovery Salvage Matrix — are sketched for
+  empirical validation.
+
+ai_disclosure: >
+  AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for
+  initial literature search and editorial refinement; all theoretical
+  claims, propositions, and interpretations are the author's sole
+  responsibility.
+
+dependencies:
+  - citation_key: "2026a"
+    doi: "10.5281/zenodo.18945912"
+    role: "Tier-4 specification surface (SBT eight-dimension framework supplies the per-instance Tier-4 specification basis: Semiotic, Narrative, Ideological, Experiential, Social, Economic, Cultural, Temporal)."
+  - citation_key: "2026h"
+    doi: "10.5281/zenodo.18945591"
+    role: "Specification impossibility result anchoring the tacit Tier-4 transfer impossibility argument when codification is incomplete."
+  - citation_key: "2026p"
+    doi: "10.5281/zenodo.19139258"
+    role: "Empirical anchor for longitudinal Tier-4 evolution (Dove case study) supporting the Tier-4 temporal-character claim and P5 Cultural/Ideological transfer prediction."
+  - citation_key: "2026ac"
+    doi: "10.5281/zenodo.19765401"
+    role: "Portfolio interference DO/WHAT distinction connecting brand-portfolio architecture to multi-brand spectral-immunity findings."
+  - citation_key: "2026ag"
+    doi: "10.5281/zenodo.19895813"
+    role: "FOUNDATION: the six-tier ontology this paper extends. Brand-as-Tier-4 is one application of the six-tier framework; the Multi-Brand Capacity Diagnostic extends the Six-Tier Separability Diagnostic."
+
+propositions:
+  - id: "P1"
+    name: "Multi-Brand Capacity"
+    statement: >
+      Portfolio capacity (number of brands hostable on one business substrate
+      without performance degradation) scales with Tier-3, Tier-5, and Tier-6
+      Independence in the firm's separability profile, NOT with Tier-2
+      Business Model diversification.
+    falsification: >
+      P1 is falsified if a systematic comparison of multi-brand firms shows
+      portfolio capacity scaling with Tier-2 Business Model diversification
+      independent of Tier-3 / Tier-5 / Tier-6 separability, or if separability
+      shows no relationship to capacity at constant Tier-2 diversification.
+  - id: "P2"
+    name: "Recovery Substrate"
+    statement: >
+      Failed-brand recovery success (probability the new brand on the salvaged
+      substrate reaches the predecessor's revenue band within 36 months) scales
+      with the proportion of brand-agnostic infrastructure preserved through
+      the failure event.
+    falsification: >
+      P2 is falsified if recovery success rate is statistically independent of
+      preserved brand-agnostic infrastructure proportion in a population of
+      post-failure recoveries with comparable Tier-1 Owner Intent profiles.
+  - id: "P3"
+    name: "Architecture Risk-Return"
+    statement: >
+      Branded-house architectures expose all Tier-4 instances to Tier-1 / Tier-2
+      shocks; house-of-brands architectures isolate them. Risk-return profiles
+      documented in Rao (2004) and Hsu, Fournier and Srinivasan (2016) are
+      derivable from this isolation parameter.
+    falsification: >
+      P3 is falsified if the cross-architecture variance in risk-return
+      profile shows no monotonic relationship to the Tier-3-visibility-in-Tier-4
+      parameter when controlling for industry and firm size.
+  - id: "P4"
+    name: "Cross-Brand Marketing Effectiveness"
+    statement: >
+      Cross-brand marketing-function effectiveness is a function of Tier-4
+      governance separation: shared services for brand-agnostic functions
+      (media buying, analytics, platform tooling); per-brand teams for
+      brand-bound functions (creative, brand management, customer service tone).
+    falsification: >
+      P4 is falsified if firms that pool brand-bound functions across brands
+      show effectiveness equal to or greater than firms that segregate them,
+      controlling for portfolio breadth.
+  - id: "P5"
+    name: "Brand Extension SBT-Overlap"
+    statement: >
+      Brand extension success is predicted to scale with SBT-dimensional
+      overlap between parent and extension on the Cultural and Ideological
+      dimensions specifically; mismatch on those axes is reliably predicted to
+      forecast extension failure (extending Aaker and Keller 1990 with the
+      SBT eight-dimension machinery, supported by Torelli and Ahluwalia 2012
+      cultural-schema transfer evidence and Spiggle, Nguyen and Caravella
+      2012 authenticity transfer evidence).
+    falsification: >
+      P5 is falsified if axis-specific dimensional overlap on Cultural and
+      Ideological dimensions shows no greater predictive power than other
+      SBT axes, or no greater than aggregate fit measures, in a re-coded
+      meta-analytic sample.
+  - id: "P6"
+    name: "Recovery Tier-1 Constraint"
+    statement: >
+      Brand recovery is more constrained by Tier-1 (Owner Intent) compatibility
+      with the new Tier-4 configuration than by Tier-5 / Tier-6 capacity
+      availability. Owners with Tier-1 misalignment to the new brand-face fail
+      recovery even when substrate is fully preserved.
+    falsification: >
+      P6 is falsified if Tier-1 Owner Intent compatibility fails to predict
+      recovery success at higher conditional rate than Tier-5 / Tier-6
+      capacity measures in a sample of post-failure recoveries.
+  - id: "P7"
+    name: "Aaker Spectrum Operationalization"
+    statement: >
+      The Aaker and Joachimsthaler (2000) Brand Relationship Spectrum is
+      operationalizable as a single Tier-3-visibility-in-Tier-4 parameter
+      projecting onto SBT Social and Economic dimensions, making it
+      measurable rather than only typological.
+    falsification: >
+      P7 is falsified if Tier-3-visibility coding fails to recover the four
+      canonical spectrum positions (branded house / sub-brand / endorsed /
+      house of brands) in a coding study, or if the parameter fails to
+      project monotonically onto SBT Social and Economic dimensions.
+
+artifacts:
+  - type: "table"
+    id: "Table 1"
+    title: "Per-Tier Brand-Agnostic vs Brand-Bound Decomposition"
+  - type: "table"
+    id: "Table 2"
+    title: "Brand Architecture as Separability Profile"
+  - type: "table"
+    id: "Table 3"
+    title: "Per-Tier Salvage Matrix Under Brand Failure"
+  - type: "table"
+    id: "Table 4"
+    title: "Multi-Brand Capacity Diagnostic (MBCD) Instrument Specification"
+  - type: "figure"
+    id: "Figure 1"
+    title: "Tier-Level Brand-Agnostic vs Brand-Bound Decomposition"
+    rendered_via: "mermaid (35% width)"
+
+self_citation_rate: 0.083  # 5 of 60 references
+references_count: 60
+body_word_count: 9287
+abstract_word_count: 197
+title_word_count: 14
+target_venue:
+  primary: "Strategic Management Journal"
+  secondary: "Journal of Marketing"

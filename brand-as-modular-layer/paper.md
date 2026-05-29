@@ -464,7 +464,7 @@ The V parameter measurement equation and the MBCD composite capacity prediction 
 - `code/v_parameter.py` — V computation with worked examples for Virgin (Branded House), Toyota / Lexus (Sub-brand), Marriott (Endorsed), and P&G (House of Brands).
 - `code/mbcd_scorer.py` — MBCD composite scorer with worked firm audits for P&G, Inditex, Marriott, Toyota, Virgin Group, and a Tier-1-bound founder-led case.
 
-Both scripts run on plain CPython 3.10+ without third-party dependencies. Run command: `uv run python v_parameter.py` and `uv run python mbcd_scorer.py`. The composite weights and the λ_V capacity-amplification parameter are illustrative defaults; empirical recalibration on the multi-firm panel described in P1, P3, and P7 confirming criteria is part of the validation roadmap. Public source: <https://github.com/spectralbranding/orgschema-papers/tree/main/brand-as-tier4/code>.
+Both scripts run on plain CPython 3.10+ without third-party dependencies. Run command: `uv run python v_parameter.py` and `uv run python mbcd_scorer.py`. The composite weights and the λ_V capacity-amplification parameter are illustrative defaults; empirical recalibration on the multi-firm panel described in P1, P3, and P7 confirming criteria is part of the validation roadmap. Public source: <https://github.com/spectralbranding/orgschema-papers/tree/main/brand-as-modular-layer/code>.
 
 ---
 

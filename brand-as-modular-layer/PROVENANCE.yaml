@@ -1,9 +1,12 @@
-# PROVENANCE.yaml -- Brand as Tier-4 Projection
-# Fork history and submission records per the Research-as-Repository protocol
+# PROVENANCE.yaml -- Brand as a Modular Layer (2026ah)
+# Fork history and submission records per the Research-as-Repository protocol.
+# Folder renamed from `brand-as-tier4` -> `brand-as-modular-layer` on 2026-05-29
+# to match the v1.1.0 title; concept DOI 10.5281/zenodo.19930157 unchanged.
 
 provenance:
-  paper_title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture"
-  repository: "spectralbranding/orgschema-papers/brand-as-tier4"
+  paper_title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
+  prior_title: "Brand as Tier-4 Projection: A Multi-Brand and Recovery Theory of the Six-Tier Business Architecture (v1.0.0, 2026-04-30)"
+  repository: "spectralbranding/orgschema-papers/brand-as-modular-layer"
 
   versions:
     - version: "0.1.0-skeleton"
