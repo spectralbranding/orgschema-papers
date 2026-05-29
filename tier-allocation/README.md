@@ -10,7 +10,7 @@
 
 **Citation key**: 2026aj
 
-**Status**: Working paper v1.0.0 published on Zenodo 2026-05-07. Target venue: Strategic Management Journal (primary); Academy of Management Review and Organization Science as alternates.
+**Status**: Working paper v1.0.0 published on Zenodo 2026-05-07.
 
 **DOI**: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288) (concept) | [10.5281/zenodo.20072289](https://doi.org/10.5281/zenodo.20072289) (v1)
 

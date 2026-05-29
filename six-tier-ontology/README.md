@@ -10,7 +10,7 @@
 
 **Citation key**: 2026ag
 
-**Status**: Working paper v1.1.0 prepared for Zenodo re-upload 2026-05-29 (clean reference-list pass + 3 added references: Barney 1991, Teece-Pisano-Shuen 1997, Zharnikov 2026m back-cite; substantive Smeulders 2023 citation correction). v1.0.0 originally published 2026-04-29. Target venue: Academy of Management Review.
+**Status**: Working paper v1.1.0 prepared for Zenodo re-upload 2026-05-29 (clean reference-list pass + 3 added references: Barney 1991, Teece-Pisano-Shuen 1997, Zharnikov 2026m back-cite; substantive Smeulders 2023 citation correction). v1.0.0 originally published 2026-04-29.
 
 **DOI**: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813) (concept) | [10.5281/zenodo.19895814](https://doi.org/10.5281/zenodo.19895814) (v1)
 

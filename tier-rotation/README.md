@@ -10,7 +10,7 @@
 
 **Citation key**: 2026ai
 
-**Status**: Working paper v1.0.0 (2026-05-07). Zenodo upload pending; concept DOI + v1 DOI reserved 2026-05-07. Target venue: Academy of Management Review.
+**Status**: Working paper v1.0.0 (2026-05-07). Zenodo upload pending; concept DOI + v1 DOI reserved 2026-05-07.
 
 **DOI**: [10.5281/zenodo.20069605](https://doi.org/10.5281/zenodo.20069605) (concept) | [10.5281/zenodo.20069606](https://doi.org/10.5281/zenodo.20069606) (v1)
 
