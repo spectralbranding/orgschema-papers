@@ -1,8 +1,3 @@
-```{=typst}
-#show table: set block(breakable: true)
-#show figure.where(kind: table): set block(breakable: true)
-```
-
 # Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies
 
 Dmitry Zharnikov
