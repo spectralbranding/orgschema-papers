@@ -3,35 +3,33 @@ message: "If you use this paper, please cite it as below."
 authors:
   - family-names: Zharnikov
     given-names: Dmitry
-    email: dmitry@spectralbranding.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations"
-version: "1.1.0"
-date-released: "2026-05-02"
+version: 1.1.0
+date-released: 2026-06-14
+url: "https://doi.org/10.5281/zenodo.19869871"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.19869871"
-    description: "Zenodo concept DOI (cite-all-versions; v1 DOI = 10.5281/zenodo.19869872)"
+    description: "Zenodo concept DOI (all versions)"
 keywords:
   - organizational metamerism
   - equifinality
-  - state equivalence
   - organizational routines
-  - pace layering
-  - coordination cost
-  - configuration theory
-  - observer relativity
-license: CC-BY-NC-ND-4.0
+  - temporal hierarchy
+  - coordination costs
+  - organizational form
+  - AI and organizations
+  - observer-relativity
+license: MIT
 type: article
 preferred-citation:
   type: article
   authors:
     - family-names: Zharnikov
       given-names: Dmitry
-      email: dmitry@spectralbranding.com
-      affiliation: "Independent Researcher"
-      orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations"
   year: 2026
+  url: "https://doi.org/10.5281/zenodo.19869871"

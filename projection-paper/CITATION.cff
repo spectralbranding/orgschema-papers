@@ -1,45 +1,35 @@
-cff-version: "1.2.0"
+cff-version: 1.2.0
 message: "If you use this paper, please cite it as below."
-type: article
 authors:
   - family-names: Zharnikov
     given-names: Dmitry
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
-version: "2.0.0"
-date-released: "2026-05-09"
-doi: "10.5281/zenodo.19145205"
+version: 2.0.0
+date-released: 2026-06-14
+url: "https://doi.org/10.5281/zenodo.19145205"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
-url: "https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper"
-license: CC-BY-4.0
 identifiers:
   - type: doi
     value: "10.5281/zenodo.19145205"
-    description: "Zenodo canonical concept DOI (umbrella for all versions of this record; primary citation target)."
-  - type: doi
-    value: "10.5281/zenodo.20100523"
-    description: "Zenodo v2.0.0 version-specific DOI (released 2026-05-09)."
-  - type: doi
-    value: "10.5281/zenodo.19145206"
-    description: "Zenodo v1.0.0 version-specific DOI (single-step projection apparatus; distinct conceptual predecessor)."
+    description: "Zenodo concept DOI (all versions)"
 keywords:
   - organizational design
   - projection cascade
+  - cascade equilibrium
   - information loss
+  - rank deficiency
+  - position formalization
   - reorganization failure
   - AI deployment
-  - position structure
-  - design theory
-  - fixed-point theory
+license: MIT
+type: article
 preferred-citation:
   type: article
   authors:
     - family-names: Zharnikov
       given-names: Dmitry
-      affiliation: "Independent Researcher"
-      orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
   year: 2026
-  doi: "10.5281/zenodo.19145205"
-  notes: "Version 2.0.0 published 2026-05-09. Cite via canonical concept DOI 10.5281/zenodo.19145205; v1 preserved as a distinct working paper."
+  url: "https://doi.org/10.5281/zenodo.19145205"

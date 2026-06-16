@@ -3,36 +3,33 @@ message: "If you use this paper, please cite it as below."
 authors:
   - family-names: Zharnikov
     given-names: Dmitry
-    email: dmitry@spectralbranding.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
-version: "1.1.0"
-date-released: "2026-05-02"
-doi: 10.5281/zenodo.19778588
-url: "https://github.com/spectralbranding/orgschema-papers"
+version: 1.1.0
+date-released: 2026-06-14
+url: "https://doi.org/10.5281/zenodo.19778588"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19778588"
+    description: "Zenodo concept DOI (all versions)"
 keywords:
-  - organizational specification
-  - acceptance testing
+  - organizational verification
   - spectral projection
-  - organizational cybernetics
+  - acceptance testing
+  - audit society
   - viable system model
   - test-driven development
-  - verification
-  - audit society
-  - brand function
-license: CC-BY-4.0
+  - organizational learning
+  - information-processing design
+license: MIT
 type: article
 preferred-citation:
   type: article
   authors:
     - family-names: Zharnikov
       given-names: Dmitry
-      email: dmitry@spectralbranding.com
-      affiliation: "Independent Researcher"
-      orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
   year: 2026
-  doi: 10.5281/zenodo.19778588
-  url: "https://github.com/spectralbranding/orgschema-papers"
+  url: "https://doi.org/10.5281/zenodo.19778588"

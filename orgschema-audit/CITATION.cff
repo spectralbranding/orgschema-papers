@@ -3,31 +3,33 @@ message: "If you use this paper, please cite it as below."
 authors:
   - family-names: Zharnikov
     given-names: Dmitry
-    email: dmitry@spectralbranding.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations"
-version: "1.0.0"
-date-released: "2026-04-13"
+version: 1.0.0
+date-released: 2026-06-14
+url: "https://doi.org/10.5281/zenodo.19555201"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.19555201"
-    description: "Zenodo archive (primary)"
+    description: "Zenodo concept DOI (all versions)"
 keywords:
   - organizational specification
+  - test-driven business design
   - operational audit
   - specification maturity
+  - six-level cascade
+  - experience contracts
   - organizational schema theory
-license: CC-BY-NC-ND-4.0
+  - AI-assisted diagnostics
+license: MIT
 type: article
 preferred-citation:
   type: article
   authors:
     - family-names: Zharnikov
       given-names: Dmitry
-      email: dmitry@spectralbranding.com
-      affiliation: "Independent Researcher"
-      orcid: "https://orcid.org/0009-0000-6893-9231"
   title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations"
   year: 2026
+  url: "https://doi.org/10.5281/zenodo.19555201"
