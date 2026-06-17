@@ -539,6 +539,7 @@ external_anchors:
   - {citation_key: ohno-1988-toyota-production-system, role: at_scale_evidence, spine_nodes: [P0b, P3], note: "Kanban pull vs MRP push — the at-scale manufacturing demonstration."}
   - {citation_key: cao-2020-how-to-talk-machine, role: timeliness_evidence, spine_nodes: [P3], note: "Machine-readable disclosure consumed by AI — investor-interface pull mechanism."}
   - {citation_key: zavyalova-2016-reputation-benefit-burden, role: divergence_evidence, spine_nodes: [P1, A1], note: "Same signal -> distinct audience outcomes = spec-level divergence."}
+  - {citation_key: ott-2024-origin-entrepreneurial-theories, role: theory_formation_precedent, spine_nodes: [P4, P5, C1], note: "Theory-based view's thesis->actionable-theory maturation (9 platform ventures, 5y); specification readiness is the codification continuation of that gradient -- uncodified thesis -> queryable substrate. C1's no-spec/pre-PMF firms ARE thesis-stage."}
 
 # ============================================================================
 # Open questions / boundary edges
