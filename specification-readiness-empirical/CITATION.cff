@@ -20,7 +20,9 @@ keywords:
   - friction tax
   - staggered difference-in-differences
   - organizational coupling
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -29,4 +31,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns"
   year: 2026
+  doi: "10.5281/zenodo.20384084"
   url: "https://doi.org/10.5281/zenodo.20384084"

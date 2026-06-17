@@ -23,7 +23,9 @@ keywords:
   - brand-business separability
   - marketing organization
   - cross-brand function
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -32,4 +34,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
   year: 2026
+  doi: "10.5281/zenodo.19930157"
   url: "https://doi.org/10.5281/zenodo.19930157"

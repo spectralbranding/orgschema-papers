@@ -23,7 +23,9 @@ keywords:
   - experience contracts
   - organizational schema theory
   - AI-assisted diagnostics
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -32,4 +34,5 @@ preferred-citation:
       given-names: Dmitry
   title: "The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations"
   year: 2026
+  doi: "10.5281/zenodo.19555201"
   url: "https://doi.org/10.5281/zenodo.19555201"

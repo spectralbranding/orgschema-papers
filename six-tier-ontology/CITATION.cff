@@ -22,7 +22,9 @@ keywords:
   - integration failure
   - form-invariance
   - separability diagnostic
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -31,4 +33,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation"
   year: 2026
+  doi: "10.5281/zenodo.19895813"
   url: "https://doi.org/10.5281/zenodo.19895813"

@@ -22,7 +22,9 @@ keywords:
   - endogenous friction
   - push-pull asymmetry
   - AI-mediated pull
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -31,4 +33,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture"
   year: 2026
+  doi: "10.5281/zenodo.20379981"
   url: "https://doi.org/10.5281/zenodo.20379981"

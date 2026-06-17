@@ -23,7 +23,9 @@ keywords:
   - position formalization
   - reorganization failure
   - AI deployment
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -32,4 +34,5 @@ preferred-citation:
       given-names: Dmitry
   title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
   year: 2026
+  doi: "10.5281/zenodo.19145205"
   url: "https://doi.org/10.5281/zenodo.19145205"

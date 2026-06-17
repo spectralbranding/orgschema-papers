@@ -23,7 +23,9 @@ keywords:
   - organizational form
   - AI and organizations
   - observer-relativity
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -32,4 +34,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations"
   year: 2026
+  doi: "10.5281/zenodo.19869871"
   url: "https://doi.org/10.5281/zenodo.19869871"

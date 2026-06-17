@@ -23,7 +23,9 @@ keywords:
   - test-driven development
   - organizational learning
   - information-processing design
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -32,4 +34,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society"
   year: 2026
+  doi: "10.5281/zenodo.19778588"
   url: "https://doi.org/10.5281/zenodo.19778588"

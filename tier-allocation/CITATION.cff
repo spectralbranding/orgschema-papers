@@ -24,7 +24,9 @@ keywords:
   - artificial intelligence
   - AI strategy
   - substrate accumulation
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -33,4 +35,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and AI Penetration"
   year: 2026
+  doi: "10.5281/zenodo.20072288"
   url: "https://doi.org/10.5281/zenodo.20072288"

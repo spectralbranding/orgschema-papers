@@ -22,7 +22,9 @@ keywords:
   - organizational architecture
   - resource separability
   - tier rotation
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -31,4 +33,5 @@ preferred-citation:
       given-names: Dmitry
   title: "The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry"
   year: 2026
+  doi: "10.5281/zenodo.20069605"
   url: "https://doi.org/10.5281/zenodo.20069605"

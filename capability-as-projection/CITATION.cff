@@ -27,7 +27,9 @@ keywords:
   - process mining
   - snapshot import
   - Pentland-Feldman
-license: MIT
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
@@ -36,4 +38,5 @@ preferred-citation:
       given-names: Dmitry
   title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
   year: 2026
+  doi: "10.5281/zenodo.20367459"
   url: "https://doi.org/10.5281/zenodo.20367459"
