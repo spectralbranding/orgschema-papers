@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.0.0 – April 2026 (revised June 2026)
 
 ---
 
@@ -61,7 +61,7 @@ flowchart LR
   end
 ```
 
-**Table 1:** Information-loss contrast: rank-1 audit vs. full-rank cascade.
+Table 1: Information-loss contrast: rank-1 audit vs. full-rank cascade.
 
 |                      | rank-1 audit (P_audit)        | full-rank cascade (P_cascade)  |
 |----------------------|-------------------------------|--------------------------------|
@@ -124,7 +124,7 @@ The bridge from Tushman and Nadler [-@tushman-1978-information-processing-as] to
 
 Cybernetics, behavioral organization theory, and software engineering each name a distinct organizational object as the locus of acceptance. Each lineage describes the projection identity in its own vocabulary — variety attenuation, aspiration adjustment, test pass — and each has historically stopped short of the algebraic identification offered here. Table 2 summarizes the convergence and the gap.
 
-**Table 2:** Three convergent lineages on the projection identity.
+Table 2: Three convergent lineages on the projection identity.
 
 | Lineage                          | Object that instantiates the projection                  | What the lineage names                                          | What the lineage misses                                              |
 |----------------------------------|----------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
@@ -344,7 +344,7 @@ Information loss is measured as the norm of undetected deviation: ‖d − P(d)�
 
 ### Simulation Results
 
-**Table 3: Undetected Deviation by Projection Architecture and Noise Level.**
+Table 3: Undetected Deviation by Projection Architecture and Noise Level.
 
 | Noise (sigma) | Total Dev. | Rank-1 Audit Missed | Full-Rank Cascade Missed | % Missed (Audit) |
 |---------------|------------|---------------------|--------------------------|------------------|

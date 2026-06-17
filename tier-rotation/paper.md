@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20069605](https://doi.org/10.5281/zenodo.20069605)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -356,7 +356,7 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ## Tables
 
-**Table 1: Four Stages of Tier Rotation.**
+Table 1: Four Stages of Tier Rotation.
 
 | Stage | Tier-1 Share | Tier-4 Share | M&A Value at Exit | Illustrative Case |
 |-------|-------------|-------------|-------------------|-------------------|
@@ -369,7 +369,7 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ---
 
-**Table 2: Comparative Statics Summary.**
+Table 2: Comparative Statics Summary.
 
 | Variable | Direction | Effect Path | Theoretical Anchor |
 |----------|-----------|-------------|--------------------|
@@ -384,7 +384,7 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ---
 
-**Table 3: Knowledge-Externalization Observables.**
+Table 3: Knowledge-Externalization Observables.
 
 | Observable | Direction Along Trajectory | Data Source | Validation Status |
 |------------|----------------------------|-------------|-------------------|
@@ -397,7 +397,7 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ---
 
-**Table 4: Cross-Theory Comparison.**
+Table 4: Cross-Theory Comparison.
 
 | Dimension | Human-Capital Account | Tier-Rotation Account | Empirical Wedge |
 |-----------|-----------------------|------------------------|------------------|
@@ -411,7 +411,7 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 ---
 
-**Table 5: Three Event-Type Distinctions in the Six-Tier Architecture.**
+Table 5: Three Event-Type Distinctions in the Six-Tier Architecture.
 
 | Event type | Tier-1 substrate change | Tier-4 substrate question at decision time | Empirical signature | Decision horizon |
 |---|---|---|---|---|

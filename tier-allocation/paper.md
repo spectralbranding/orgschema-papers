@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -107,7 +107,7 @@ for δ_t > 0 and I(τ) = I constant. The steady-state derivation assumes constan
 
 The tier-specific decay rates are calibrated from empirical estimates in independent literatures. Table 1 presents the full calibrated δ_t vector with sources. Four key observations follow from the table.
 
-**Table 1: Calibrated Tier-Specific Decay Rates (δ_t Vector).**
+Table 1: Calibrated Tier-Specific Decay Rates (δ_t Vector).
 
 | Tier | Asset Type | δ_t (Decay Rate) | Half-Life | Source | Confidence |
 |------|-----------|------------------|-----------|--------|------------|
@@ -227,7 +227,7 @@ The back-of-envelope is explicitly stylized; it is not an econometric estimate. 
 
 The 1.93× result is derived under the Cobb-Douglas maintained specification (σ = 1). Table 2 summarizes the B/A ratio and V_LR levels under CES aggregation at σ ∈ {.5, 1.0, 1.5}, computed from the companion script at r = .15. The qualitative ordering — Profile B strictly dominates Profile A — holds across all three elasticity values. Under gross substitutes (σ = 1.5) the B/A ratio rises to 2.17×, moving closer to the empirical 4–6× range. Under gross complements (σ = .5, strong co-specialization), the B/A ratio attenuates to 1.22× but does not reverse. The maintained Cobb-Douglas (σ = 1) is therefore a conservative middle-ground choice. Under σ < 1, the two-tier optimizer tilts toward more symmetric interior solutions and the comparative static ∂w_6*/∂r can reverse — an empirically interesting boundary case documented in full in Online Supplement S4.
 
-**Table 2: CES Robustness Check — B/A Ratio at r = .15.**
+Table 2: CES Robustness Check — B/A Ratio at r = .15.
 
 | σ | V_LR(A) | V_LR(B) | Ratio B/A |
 |---|---------|---------|---------|
@@ -289,7 +289,7 @@ The marginal return to Tier-4 investment relative to Tier-6 investment — measu
 
 *Derivation.* The Tier-Rotation Curve [@zharnikov-2026ai-tier-rotation-curve] characterizes the temporal trajectory by which founder-bound brand signal migrates into organizational Tier-4 substrate. At early rotation stages (Stage 1: minimal Tier-4 codification), Tier-4 investment compounds onto a small existing base; the return to additional Tier-4 investment is limited by the organizational capacity to hold and deploy it. At later rotation stages (Stages 3–4: substantial Tier-4 codification established), Tier-4 investment compounds onto a developed substrate with established delivery systems, skilled teams, and codified processes that amplify the return to each additional unit. The marginal return to w₄ investment is stage-dependent under the Cobb-Douglas maintained specification: ∂ln(V_LR)/∂ln(w₄) = α₄ scales as w₄ rises, and the multiplicative interaction with existing Tier-4 substrate (S₄*(τ) at rotation stage τ) generates super-additive returns by construction — the rotation-stage moderation is built into the Cobb-Douglas form rather than introduced as a separate extension. The empirical test is a deal-multiple regression with an interaction term: w₄ share × Rotation Stage indicator (Stage 1/2 versus Stage 3/4), where the interaction coefficient is predicted to be positive. The Rotation Stage can be proxied by the trademark-composition measure developed in Zharnikov [-@zharnikov-2026ai-tier-rotation-curve]: the ratio of product-attribute marks to founder-name marks in the USPTO filing history of the target firm.
 
-**Table 3: Comparative Statics Summary Across Propositions P1–P4.**
+Table 3: Comparative Statics Summary Across Propositions P1–P4.
 
 | Proposition | Predicted Direction | Key Variable | Comparison | Empirical Test |
 |------------|-------------------|--------------|------------|----------------|
@@ -306,7 +306,7 @@ The marginal return to Tier-4 investment relative to Tier-6 investment — measu
 
 Four cases span the tier-allocation portfolio space from extreme Tier-6 concentration to extreme Tier-4/Tier-5 concentration. These cases illustrate the theory's internal logic; they do not constitute statistical tests. Table 4 presents the four cases in summary form.
 
-**Table 4: Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.**
+Table 4: Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.
 
 | Case | Tier Profile | Governance | Discount Rate | Predicted V_LR Multiple | P1 Risk | Key Illustrative Outcome |
 |------|-------------|-----------|---------------|--------------------------|---------|--------------------------|
@@ -484,7 +484,7 @@ The diagnostic indicator is a sign flip in the long-run-value effect of AI betwe
 
 Aggregate enterprise-survey evidence is consistent with Proposition 7. Gartner [-@gartner-2026-gartner-says-autonomous-business] surveyed 350 global enterprises with at least $1 billion in revenue, all of which were piloting or deploying autonomous AI capabilities. Eighty percent reported workforce reductions tied to AI initiatives. Critically, the workforce-reduction rate was nearly identical for firms reporting higher ROI versus those experiencing only modest gains or negative outcomes — i.e., the magnitude of workforce reduction had no measurable correlation with ROI realization. Some respondents had cut up to 20% of headcount. The Klarna and BloombergGPT cases are not isolated anomalies; they are predictable consequences of treating tier-6 cost reduction as a substitute for cascade-deeper substrate investment. As Gartner Distinguished VP Analyst Helen Poitevin stated: "Many CEOs turn to layoffs to demonstrate quick AI returns; however, this disposition is misplaced. Workforce reductions may create budget room, but they do not create return."
 
-**Table 6: Three AI Propositions with Mechanisms and Diagnostic Indicators.**
+Table 6: Three AI Propositions with Mechanisms and Diagnostic Indicators.
 
 | Proposition | Shock pattern | Sign condition | Diagnostic indicator | Illustrative anchor |
 |---|---|---|---|---|
@@ -542,7 +542,7 @@ Four practical implications follow directly. Firms approaching exit should audit
 
 The AI extension's contribution is not to displace the existing AI-and-strategy literature but to add a per-tier deployment-depth aggregation that the leading specifications operate orthogonally to. Aggregate-AI-spend specifications [@babina-2024-artificial-intelligence-firm] treat AI investment as a homogeneous firm-level shock. Task-displacement specifications [@acemoglu-2018-race-between-man; @acemoglu-2020-robots-jobs-evidence] decompose AI's labor-market effect at the task level within occupations. Capability-complementarity specifications [@krakowski-2023-artificial-intelligence-changing] operate at the capability level — but capabilities live across architectural tiers, and the same capability deployed at different tiers has different durability consequences. Cognitive-process taxonomies [@doshi-2025-generative-artificial-intelligence] classify generative-AI-augmented strategic decisions into search, representation, and aggregation sub-processes; the taxonomy operates at the decision-evaluation micro-foundation level, while the tier framework operates at the architectural-substrate level. Table 7 makes the contrast explicit.
 
-**Table 7: Tier-Penetration Framework vs. Existing AI-and-Strategy Literatures.**
+Table 7: Tier-Penetration Framework vs. Existing AI-and-Strategy Literatures.
 
 | Prediction or property | Tier-Penetration | Complementary-intangibles | Aggregate-AI-spend | Cognitive-process | Task-displacement |
 |---|---|---|---|---|---|

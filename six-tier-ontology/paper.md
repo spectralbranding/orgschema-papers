@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813)
 
-Working Paper v1.1.0 – June 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -52,7 +52,7 @@ A parallel recent stream — Bauer et al. [-@bauer-2024-acquisition-integration-
 
 The six-tier ontology specifies each tier of an acquisition target by its governor — the agent or force that determines the tier's configuration — its specification surface — the set of observable artifacts that describe the tier's state — and its transferability mode — the mechanism by which the tier does or does not cross an ownership boundary. Table 1 presents the full structure.
 
-**Table 1: The Six-Tier Ontology of an Acquisition Target.**
+Table 1: The Six-Tier Ontology of an Acquisition Target.
 
 | Tier | Name | Governor | Specification Surface | Transferability Mode |
 |------|------|----------|-----------------------|----------------------|
@@ -193,7 +193,7 @@ Each proposition takes the canonical conditional form: *if antecedent A holds in
 
 The six-tier structure does not require a for-profit assumption. Each tier has a structurally equivalent form across for-profit, NGO/charity, and mutual/cooperative organizational types. Table 2 presents the substitution matrix.
 
-**Table 2: Form-Invariant Six-Tier Ontology Across Organizational Types.**
+Table 2: Form-Invariant Six-Tier Ontology Across Organizational Types.
 
 | Tier | For-Profit | NGO / Charity | Mutual / Cooperative |
 |------|------------|---------------|----------------------|
@@ -258,7 +258,7 @@ The constraint hierarchy derives a sequencing principle for M&A integration that
 
 The formal sequence is: (1) resolve Tier 1 (Intent) compatibility before Tier 2 (Business Model) revision; (2) resolve Tier 2 revision before Tier 4 (Product) specification; (3) confirm Tier 4 specification before Tier 5 (Process) integration; (4) confirm Tier 5 architecture before Tier 6 (Organization) role redesign. Tier 3 (Entity) integration is legally required immediately post-close; the framework implies that Tier 3 integration should be designed to minimize disruption to Tiers 4 through 6 while upper-tier specification clarity is being established.
 
-**Table 3: Integration Sequencing Derived from the Constraint Hierarchy.**
+Table 3: Integration Sequencing Derived from the Constraint Hierarchy.
 
 | Phase | Tier Priority | Address Before | Theoretical Basis |
 |-------|---------------|----------------|-------------------|
@@ -296,7 +296,7 @@ Privatization transactions are the most visible cross-form case and the most tra
 
 The Six-Tier Separability Diagnostic (STSD) is best understood as a theoretical implication of the dual-hierarchy framework rather than its primary deliverable. If the ontology is valid — if each tier is governed by a distinct force, exposes a distinct transferability mode, and generates distinct downstream constraints — then pre-close tier profiling should predict post-acquisition trajectories better than aggregate financial or strategic fit measures. The STSD operationalizes this theoretical claim as a structured judgment instrument that produces a six-cell profile — one state per tier, three possible states: Fused, Partial, or Independent. Table 4 presents the full diagnostic. Pablo [-@pablo-1994-determinants-acquisition-integration] establishes that integration-level decisions are made prior to integration execution and depend on task, cultural, and political target characteristics — providing direct AMJ-tradition precedent for the STSD's pre-close-decision framing: the instrument is designed to produce a tier-disaggregated risk profile at the point in the acquisition process where integration-level choices are still open.
 
-**Table 4: The Six-Tier Separability Diagnostic.**
+Table 4: The Six-Tier Separability Diagnostic.
 
 | Tier | Diagnostic Question | Fused | Partial | Independent |
 |------|---------------------|-------|---------|-------------|

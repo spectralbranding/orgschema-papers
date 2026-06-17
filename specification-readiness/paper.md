@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20379981](https://doi.org/10.5281/zenodo.20379981)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.0.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -60,7 +60,7 @@ The information-theoretic framing draws on two lineages developed in organizatio
 
 The modularity lineage supplies formal language for interface coherence. Baldwin and Clark [-@baldwin-2000-design-rules-power] establish that layered modular architectures reduce design costs through interface standardization. Ethiraj and Levinthal [-@ethiraj-2004-modularity-innovation-complex] formalize the conditions under which module boundaries stabilize or fragment under search. Galbraith [-@galbraith-2014-designing-organizations-strategy] establishes interface design as the central problem of organizational architecture. Puranam, Raveendran, and Knudsen [-@puranam-2012-organization-design-epistemic] develop epistemic interdependence as the cross-agent design problem that interface architecture must resolve — the cross-layer logic the present paper formalizes. Adner, Puranam, and Zhu [-@adner-2019-what-is-different] establish that digital strategy's distinctiveness lies precisely in the feasibility of specification-constrained rendering that analog architectures could not achieve.
 
-**Table 1: Comparison of Assumptions Across Four Theoretical Frameworks.**
+Table 1: Comparison of Assumptions Across Four Theoretical Frameworks.
 
 | Theoretical assumption | TCE (Coase, Williamson) | Stakeholder Theory (Freeman, Mitchell et al.) | Dynamic Capabilities (Teece, Helfat) | Multi-Interface Specification Model |
 |---|---|---|---|---|

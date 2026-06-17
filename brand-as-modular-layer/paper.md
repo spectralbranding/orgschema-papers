@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19930157](https://doi.org/10.5281/zenodo.19930157)
 
-Working Paper v1.1.0 – June 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -106,7 +106,7 @@ A reviewer could object that "brand" colloquially means the legal-trademark asse
 
 The central operational claim is that each of the six tiers contains a mix of brand-agnostic and brand-bound subcomponents. The mix determines how separable that tier is across multiple Tier-4 brand instances. Table 1 supplies the per-tier decomposition.
 
-**Table 1: Per-Tier Brand-Agnostic / Brand-Bound Decomposition.**
+Table 1: Per-Tier Brand-Agnostic / Brand-Bound Decomposition.
 
 | Tier | Brand-agnostic subcomponent examples | Brand-bound subcomponent examples | Separability under multi-brand operation |
 |---|---|---|---|
@@ -200,7 +200,7 @@ The prediction inverts a long-standing intuition that diversification at the bus
 
 Each of the four canonical Aaker–Joachimsthaler architectures is a separability profile. Table 2 maps them onto the framework's variables.
 
-**Table 2: Architecture-to-Separability Mapping.**
+Table 2: Architecture-to-Separability Mapping.
 
 | Architecture | Tier-3 visibility in Tier-4 (V) | Tier-5 separability | Tier-6 separability | Risk-return profile | Strategy-construct parallel |
 |---|---|---|---|---|---|
@@ -251,7 +251,7 @@ The framework identifies three structurally distinct recovery pathways under bra
 
 The salvage matrix in Table 3 operationalizes the three pathways.
 
-**Table 3: Per-Tier Salvage Matrix.**
+Table 3: Per-Tier Salvage Matrix.
 
 | Tier | Salvageable under Pathway A | Salvageable under Pathway B | Salvageable under Pathway C(sell) | Salvageable under Pathway C(shutdown) |
 |---|---|---|---|---|
@@ -356,7 +356,7 @@ The tier decomposition connects to four foundational strategy streams. The brand
 
 Two diagnostic instruments emerge from the framework. The *Multi-Brand Capacity Diagnostic* (MBCD) extends the Six-Tier Separability Diagnostic from Zharnikov [-@zharnikov-2026-dual-hierarchies-organizational-transferability-six] to predict multi-brand capacity. Inputs: the firm's per-tier brand-agnostic / brand-bound decomposition, scored on each tier on a five-point scale of separability under multi-brand operation. Output: the maximum number of Tier-4 brand instances the firm can host on its current substrate without performance degradation, with diagnostic decomposition by tier. The MBCD is operationalizable from existing firm data on Tier-3, Tier-5, and Tier-6 separability and is described in Table 4.
 
-**Table 4: Multi-Brand Capacity Diagnostic (MBCD) Instrument Specification.**
+Table 4: Multi-Brand Capacity Diagnostic (MBCD) Instrument Specification.
 
 | Component | Input | Scoring rule | Output |
 |---|---|---|---|
@@ -372,7 +372,7 @@ Two diagnostic instruments emerge from the framework. The *Multi-Brand Capacity 
 
 The *Recovery Salvage Matrix* converts Table 3 into a pre-failure infrastructure-audit instrument. Inputs: the per-tier salvage entries from Table 3 conditional on the firm's specific configuration. Output: under each of the three recovery pathways (A, B, C), which substrate is preserved, what residual value can be re-specified, and which Tier-1 commitments would be violated by Pathway B. Boards weighing recovery strategy after brand failure can run the matrix in advance.
 
-**Table 5: Mapping of Contributions, Propositions, Empirical Regularities, and Diagnostic Instruments.** The next table consolidates the three contributions developed in the Introduction with the propositions, empirical regularities, and diagnostic instruments that carry each.
+Table 5: Mapping of Contributions, Propositions, Empirical Regularities, and Diagnostic Instruments. The next table consolidates the three contributions developed in the Introduction with the propositions, empirical regularities, and diagnostic instruments that carry each.
 
 | Contribution | Carrying propositions | Empirical regularity reinterpreted | Diagnostic instrument |
 |---|---|---|---|
@@ -445,7 +445,7 @@ The V parameter measurement equation in P7 — V = w₁ · v_name + w₂ · v_vi
 
 *Aggregation.* Compute v_name, v_visual, v_endorse as the mean of per-instance 0/1 scores over all Tier-4 instances in the firm's portfolio. Apply equal weights w₁ = w₂ = w₃ = 1/3 unless sector-level recalibration is available. Compute V; assign architecture class as Branded House (V ≥ .85), Sub-brand (.55 ≤ V < .85), Endorsed (.20 ≤ V < .55), House of Brands (V < .20). Inter-rater agreement (Krippendorff's alpha) of .80 or higher across two independent raters is the recommended reliability threshold per P7.
 
-**Table 6: MBCD Per-Tier Scoring Rubric.** The rubric below supplies the per-tier scoring for the Multi-Brand Capacity Diagnostic (MBCD) introduced in P1 and Table 4. Each tier is scored on a 1–5 separability scale; Tier 4 is omitted because it is the brand instance itself.
+Table 6: MBCD Per-Tier Scoring Rubric. The rubric below supplies the per-tier scoring for the Multi-Brand Capacity Diagnostic (MBCD) introduced in P1 and Table 4. Each tier is scored on a 1–5 separability scale; Tier 4 is omitted because it is the brand instance itself.
 
 | Score | Tier 1 (Owner Intent) | Tier 2 (Business Model) | Tier 3 (Business Entity) | Tier 5 (Process) | Tier 6 (Organization) |
 |---|---|---|---|---|---|

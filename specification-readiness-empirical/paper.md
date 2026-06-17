@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.0.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -58,7 +58,7 @@ Three interface domains supply the principal empirical traction. The consumer in
 
 The theory and its empirical operationalization both have well-defined scope. The empirical design developed here is targeted at the population for which the theory makes determinate predictions and is explicit about the populations for which the predictions are silent or reverse. Table 1 specifies six boundary conditions, each with the operational restriction it places on the empirical sample.
 
-**Table 1: Boundary Conditions for the Multi-Interface Specification Model.**
+Table 1: Boundary Conditions for the Multi-Interface Specification Model.
 
 | Boundary condition | Operational restriction | Implication for sample | Falsification status |
 |---|---|---|---|
@@ -169,7 +169,7 @@ The instrumental-variable supplement addresses the principal threat to the conti
 
 Table 2 presents the threats register. Each threat is named, classified by identification arm affected, and matched to a mitigation. The Oster [-@oster-2019-unobservable-selection-coefficient] δ-bound analysis reports the magnitude of omitted variable bias that would be required to overturn the estimated effect, treating the change in estimated coefficient between an unconstrained and a controls-included specification as a signal of the bias-magnitude required to drive the controls-included coefficient to zero. Effects survive Oster bounds at δ = 1 (the convention that unobservables are no more correlated with treatment than the included observables) are considered robust; effects requiring δ > 1 to be overturned are reported as conditional on the unobservables assumption.
 
-**Table 2: Threats Register with Mitigation Strategy.**
+Table 2: Threats Register with Mitigation Strategy.
 
 | Threat | Identification arm affected | Mitigation | Reportable diagnostic |
 |---|---|---|---|
@@ -214,7 +214,7 @@ The regression-identification simulation generates 1,000 simulated datasets per 
 
 Power under H₁ at the pre-registered effect sizes is reported in Table 3.
 
-**Table 3: Pre-Registered Regression-Identification Simulation Power.**
+Table 3: Pre-Registered Regression-Identification Simulation Power.
 
 | Hypothesis | Pre-registered effect | Pre-registered Cohen's d | Simulated power | Mean estimate | Correct-sign fraction |
 |---|---|---|---|---|---|

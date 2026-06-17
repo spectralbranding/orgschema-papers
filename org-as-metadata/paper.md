@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.0.0 – April 2026 (revised June 2026)
 
 ---
 
@@ -111,7 +111,7 @@ One further distinction: Beane and Leonardi [-@beane-2025-pace-layering-as] grou
 
 Puranam, Alexy, and Reitzig [-@puranam-2014-whats-new-about] ask a related question from yet another angle: when do "new" forms of organizing constitute genuine novelty versus functional equivalence to established forms? The metamerism framework operationalizes this question precisely — genuine novelty appears as non-membership in the metamerism set for a specified observer. Configurations that are new in their structural design but produce identical outputs for the observer in question are metamers, not novel forms. The Puranam et al. framework motivates the question; the metamerism framework provides the formal criterion. A systematic review of the organization design literature by Joseph and Sengul [-@joseph-2024-organization-design-current] identifies coordination — alongside configuration, control, and channelization — as one of the four primary research streams in the field; the metamerism framework's focus on the progressive embedding of coordination logic in process specifications represents a direct theoretical extension of this coordination research stream into the AI-era organizational context.
 
-Table 3: Three frames for organizational form heterogeneity.
+Table 2: Three frames for organizational form heterogeneity.
 
 | Dimension | Equifinality [@gresov-1997-equifinality-functional-equivalence] | Pace Layering [@beane-2025-pace-layering-as] | Organizational Metamerism (present paper) |
 |-----------|----------------------------------------|-----------------------------------------|-------------------------------------------|
@@ -235,7 +235,7 @@ The size of the metamerism set is a derived function of these three antecedents:
 
 where c(P) is the coordination cost per coordinating relation in process P and τ(P) is the proportion of P's coordinating work that depends on uncodifiable knowledge. The set grows with codifiability and with falling coordination cost; it shrinks with rising tacit knowledge intensity. The expression is schematic — operationalization of each antecedent is a research program, not a closed-form claim — but it makes the predicted directional dependencies precise enough for empirical testing.
 
-Table 2: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
+Table 3: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
 
 |  | **High coordination cost** | **Low coordination cost** |
 |---|---|---|
@@ -332,7 +332,7 @@ The specification impossibility result in Zharnikov [-@zharnikov-2026-specificat
 
 *Companion Computation Script*
 
-The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 2 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of c(P) and τ(P) per the operationalization guidance in the Propositions section.
+The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 3 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of c(P) and τ(P) per the operationalization guidance in the Propositions section.
 
 ### Practical Implications
 

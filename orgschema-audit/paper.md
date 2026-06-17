@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19555201](https://doi.org/10.5281/zenodo.19555201)
 
-Working Paper v1.0.0 – June 2026 (revised June 2026)
+Working Paper v1.1.0 – April 2026 (revised June 2026)
 
 ---
 
@@ -80,7 +80,7 @@ The OrgSchema Audit occupies a distinct position in the landscape of organizatio
 
 *Capability maturity models.* CMMI [@cmmi-2018-cmmi-model-v20] assesses organizational capability across five maturity levels (Initial through Optimizing). The EFQM Model [@efqm-2020-the-efqm-model] takes a broader view, evaluating direction, execution, and results across seven criteria, and explicitly includes stakeholder perceptions — but treats them as outcome indicators rather than root specifications that constrain every operational layer. Like PEMM, both CMMI and the EFQM Model evaluate how mature an organization's processes are without requiring those processes to trace to customer experience goals. An organization at CMMI Level 5 (Optimizing) or EFQM "outstanding" can have perfectly optimized processes that produce the wrong output. The OrgSchema Audit's contribution relative to maturity models is the customer-experience root: maturity is necessary but not sufficient; specification traceability is the additional requirement.
 
-**Table 1.** Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
+Table 1: Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
 
 | Framework | Root specification | Cascade direction | Validation | Continuity |
 |:----------|:-------------------|:------------------|:-----------|:-----------|
@@ -209,7 +209,7 @@ Coffee supplier (Nordic Roasters GmbH) has documented certifications (direct tra
 
 The Spectra Coffee audit reveals a high-maturity operation with five of six levels at healthy specification status. The findings, prioritized by cascade position:
 
-**Table 2.** OrgSchema Audit Findings for Spectra Coffee, Prioritized by Cascade Position.
+Table 2: OrgSchema Audit Findings for Spectra Coffee, Prioritized by Cascade Position.
 
 | Level | Finding | Severity | Impact if Unfixed |
 |:------|:--------|:---------|:------------------|
