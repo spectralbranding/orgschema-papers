@@ -1,0 +1,50 @@
+# ONTOLOGY.yaml module - 2026am
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026am
+schema_version: 0.1
+
+owns:
+  - term_key: multi-interface-specification-model
+    label: "Multi-Interface Specification Model"
+    canonical_form: "multi-interface specification model"
+    definition: "A three-layer decomposition of organizational output architecture into a codified specification substrate, an interface layer of recipient-class renderings, and a function layer that maintains spec-to-interface alignment."
+    first_section: "The Multi-Interface Specification Model"
+  - term_key: specification-readiness
+    label: "Specification Readiness"
+    canonical_form: "specification readiness"
+    definition: "The degree to which a firm's commitments are codified in versioned, machine-readable, queryable form, treated as the architectural moderator of AI returns and functional friction."
+    first_section: "Abstract / Proposition 5"
+  - term_key: recipient-class
+    label: "Recipient Class"
+    canonical_form: "recipient class"
+    definition: "An architectural primitive comprising a set of agents sharing a common perception geometry, access pattern, and decision context, toward which a distinct interface is rendered."
+    first_section: "The Interface Layer"
+  - term_key: function-as-friction-tax
+    label: "Function-as-Friction-Tax"
+    canonical_form: "function-as-friction-tax"
+    definition: "The proposition that interface-maintaining functional headcount and spend are a structural tax that scales with specification gaps rather than a discretionary governance choice."
+    first_section: "Proposition 2 (Friction-Tax Scaling)"
+  - term_key: substrate-operator
+    label: "Substrate-Operator vs Surface-Operator"
+    canonical_form: "Substrate-Operator"
+    definition: "An operator (human or AI) whose execution is specification-constrained and coherent across interfaces, contrasted with a Surface-Operator whose output is locally fluent but globally inconsistent because it lacks specification grounding."
+    first_section: "Proposition 4 (AI Phase-Shift Boundary)"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+
+refines: []
+

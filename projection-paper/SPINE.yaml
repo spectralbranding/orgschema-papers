@@ -1,0 +1,602 @@
+# SPINE.yaml — The Projection Cascade (2026m)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md
+# ([internal path removed], Working Paper v2.0.0), NOT authored
+# generatively before prose. Per the retrofit-SPINE agent brief (D4,
+# [internal path removed]). Every node is a
+# faithful description of a claim the paper actually makes.
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"):
+# the paper carries a computed numerical illustration (§3.5, Table 2; companion
+# script [internal path removed], seed 2026) plus a
+# computational restriction-comparison (§4.6, --compare), so observations /
+# methods / measurements / findings are first-class to represent the simulation
+# evidence rather than asserting computed numbers in prose. The cascade
+# apparatus itself (Theorem 1, Corollary 1, the position triple) is analytic.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"     # retrofit lock (2026-06-14)
+provenance: retrofit
+paper_key: "2026m"
+title: >-
+  The Projection Cascade: Why Reorganizations Fail When the Specification
+  Cascade Doesn't
+target_venue_primary: "AMR / SMJ (ScholarOne submission queued)"
+status: >-
+  Retrofit spine extracted from completed paper.md (v2.0.0, published to Zenodo
+  2026-05-09, concept DOI 10.5281/zenodo.19145205). Descriptive, not generative.
+
+thesis: |
+  Most strategic reorganizations fail to deliver expected performance gains
+  because they intervene at the org-chart surface (T_6), and interventions there
+  achieve effect-sizes geometrically smaller than interventions at deeper tiers
+  — each deeper tier carries content already compressed in transit to the
+  surface. Organizations are formalized as a six-tier projection cascade linking
+  owner intent (T_1), business model (T_2), governance (T_3), architecture
+  (T_4), routines (T_5), and positions (T_6), where each junction is a
+  rank-reducing linear operator Pi_{i->i+1} with rank deficiency r_i >= 0. A
+  unique cascade-equilibrium exists under tier-by-tier Banach contractions
+  (Theorem 1); total information loss is bounded by the sum of local nullities,
+  with equality only when kernels stack independently (Corollary 1). Five major
+  design theories — Galbraith's star, Williamson's governance choice,
+  Mintzberg's configurations, Puranam's microstructure, and
+  Burton-Obel-Hakonsson's computational optimization — are recovered as nested
+  cascade restrictions, so the field's apparent fragmentation is a partial-view
+  artifact rather than ontological disagreement. A position triple
+  p = (P_p, A_p, R_p) decomposes any T_6 position into perceptual content from
+  T_5, authority from T_3, and role expectation from T_1. The apparatus entails
+  four falsifiable propositions (P1 cascade-distance scaling, P2 strict downward
+  propagation of basis rotation under AI deployment, P3 variance amplification,
+  P4 algebraic decoupling) that no single tradition derives in isolation.
+
+# ============================================================================
+# Boundary conditions — Theorem 1's scope conditions (i)-(iv)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Bounded T_1 (cultural-choice space): B_1 must be bounded — firms operate
+      within a finite cultural-strategic envelope (Hofstede dimensional bounds;
+      Schein inertial bounds). Firms in existential transition (partnership in
+      dissolution, pre-product startup) admit no cascade-equilibrium.
+    observable: "Firm is a going concern with a defined, bounded owner-intent set."
+    excludes: "Firms whose owner intent is unbounded or undefined."
+    body_sections: ["§3.4 Scope conditions (i)"]
+  - id: C2
+    statement: >-
+      Technology / contractual stability at T_2 -> T_3 -> T_4: the governance
+      form does not flip and asset specificity does not vary within B_3 over the
+      cascade horizon (Williamson frequency / asset-specificity conditions hold).
+    observable: "Governance form and asset specificity stable over the analysis horizon."
+    excludes: "Firms mid post-merger integration or mid platform/pipeline transition."
+    body_sections: ["§3.4 Scope conditions (ii)"]
+  - id: C3
+    statement: >-
+      Configurational stability at T_5 -> T_6: the firm operates near (not
+      between) one of Mintzberg's configurational archetypes; the contraction at
+      T_5/T_6 fails locally on the transition manifold between configurations.
+    observable: "Firm clusters near a configurational archetype, not in transition."
+    excludes: "Firms midway between machine-bureaucratic and adhocratic configurations."
+    body_sections: ["§3.4 Scope conditions (iii)"]
+  - id: C4
+    statement: >-
+      Static-cascade frame: T_1 (owner intent) is exogenous to the cascade
+      dynamics over the analysis horizon. Regime transitions in which T_6
+      enactment retroactively reshapes T_1 (post-crisis re-foundation,
+      generational succession, identity reformation) lie outside the apparatus.
+    observable: "T_1 is locked over the reorganization / M&A / AI-deployment planning horizon."
+    excludes: "Multi-decadal enactment regimes where T_6 -> T_1 feedback dominates."
+    body_sections: ["§3.4 Scope conditions (iv)"]
+
+# ============================================================================
+# Observations — the documented empirical regularities the paper anchors to
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      Enterprise generative-AI deployment in software development is aggregate,
+      dateable, and cross-sector: GitHub Copilot reached ~90% of Fortune 100 and
+      4.7M paid subscribers by early 2026; Stack Overflow developer-survey AI-use
+      rose 44% (2023) -> 62% (2024) -> 84% (2025) — with no corresponding
+      reorganization of formal occupational structure (~1.7M BLS software-developer
+      jobs in 2024 under unchanged occupational codes).
+    raw_data_pointer: "Microsoft FY26 Q2 earnings; Stack Overflow surveys 2023-2025; BLS OES 2024"
+    instrument: "public deployment and occupational statistics (WebSearch-verified)"
+    body_sections: ["§1 Phenomenon"]
+  - id: O2
+    statement: >-
+      Controlled field evidence documents content-shift within stable structure:
+      Brynjolfsson, Li & Raymond (2025) find a 15% productivity gain (largest for
+      less-experienced agents, task mix shifting to exception adjudication) with
+      titles and reporting lines unchanged; Peng et al. (2023) find GitHub Copilot
+      users complete a task 55.8% faster, implying reallocation toward review and
+      integration without role reclassification.
+    raw_data_pointer: "Brynjolfsson-Li-Raymond 2025 QJE 140(2); Peng et al. 2023 arXiv:2302.06590"
+    instrument: "published field experiments / RCTs"
+    body_sections: ["§1 Phenomenon"]
+  - id: O3
+    statement: >-
+      Roughly 60% of major reorganizations fail to deliver the performance gains
+      on which they were authorized (Barkema & Schijven 2008 meta-analytic
+      estimate; Kunisch et al. 2017 process reframing) — a longstanding empirical
+      regularity that the org-chart surface is not where reorganizations operate.
+    raw_data_pointer: "Barkema & Schijven 2008 JoM 34(3); Kunisch et al. 2017 AMA 11(2)"
+    instrument: "management-research meta-analysis and review"
+    body_sections: ["§1 Phenomenon", "§2 Reorganization outcomes"]
+
+# ============================================================================
+# Propositions — the core analytic apparatus (cascade, theorem, corollary,
+# unification, position triple) plus diagnosis
+# ============================================================================
+propositions:
+  - id: P0
+    statement: >-
+      The design literature has produced five powerful but incompatible
+      primitive vocabularies (Galbraith information-processing, Williamson
+      transaction-cost, Mintzberg configurational, Puranam microstructural,
+      Burton-Obel-Hakonsson computational); the same question routed to different
+      traditions yields non-comparable answers, and the field lacks a formal
+      apparatus that makes them algebraically commensurable (Joseph & Sengul 2025
+      diagnose the fragmentation but do not supply the unifying object).
+    conditions: ""
+    antecedents: []
+    evidence:
+      - type: citation
+        anchor: "Design-theory fragmentation review; Joseph & Sengul (2025) diagnosis."
+        citation_keys: []
+    body_sections: ["§1 Theoretical gap", "§2 Design-theory fragmentation"]
+  - id: P1
+    statement: >-
+      Organizations are six finite-dimensional real content-tiers T_1..T_6
+      (deepest owner intent to shallowest org-chart position) linked by linear
+      projection operators Pi_{i->i+1}: T_i -> T_{i+1} in the rank-reducing
+      (not idempotent) sense, with rank deficiency r_i := d_i - rank(Pi_{i->i+1})
+      >= 0. The composite cascade Pi := Pi_{5->6} o ... o Pi_{1->2} is
+      rank-non-increasing: rank(Pi) <= min_i rank(Pi_{i->i+1}).
+    conditions: ""
+    antecedents: [P0]
+    evidence:
+      - type: analytic
+        anchor: "Six-tier vector-space construction; rank-non-increasing composite from linearity."
+    body_sections: ["§3.1 Six-Tier Vector-Space Construction"]
+  - id: P2
+    statement: >-
+      Information loss across the cascade is junction-localizable: the cascade
+      kernel decomposes by sub-additivity across junctions, so a manager who
+      observes that two firms with identical T_1 produce systematically different
+      T_6 positions can in principle identify the specific junction at which the
+      difference originates rather than treating the cascade as a single
+      black-box compression.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Kernel sub-additivity under composition; junction-by-junction localization."
+    body_sections: ["§3.1 Six-Tier Vector-Space Construction"]
+  - id: P3
+    statement: >-
+      A rank-preserving change of basis at Pi_{i->i+1} is a rotation of the
+      operator's row space that leaves kernel and rank unchanged while altering
+      which T_i directions are read into which T_{i+1} coordinates. A basis
+      rotation at Pi_{5->6} is the formal mechanism of role-content drift under
+      stable titles: job titles remain fixed while the underlying performative
+      content of the position rotates beneath them — the headline AI-deployment
+      phenomenon.
+    conditions: "C4"
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Basis-rotation construct; rank invariance under row-space rotation."
+      - type: citation
+        anchor: "Pentland-Feldman ostensive/performative duality grounds the rotation; Luo et al. (2024) skill-contingent AI augmentation as the micro-mechanism."
+        citation_keys: []
+    body_sections: ["§3.1 Six-Tier Vector-Space Construction", "§2 Routines / position concept"]
+  - id: P4
+    statement: >-
+      Each junction carries a paired feedback operator A_{i+1->i} (not the
+      inverse of Pi_{i->i+1}) representing the lower tier's response to a
+      descending specification; A_{i+1->i} formalizes what the design literature
+      calls implementation / execution. Persistent implementation gap at a
+      junction is a direct diagnostic that the contraction condition (C_i) of
+      Theorem 1 is locally violated there.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Feedback operator; paired composition admits a local fixed point under contraction."
+      - type: citation
+        anchor: "Hrebiniak (2006) execution-and-coordination tradition located at r_5 (Pi_{5->6}) and part of r_3."
+        citation_keys: []
+    body_sections: ["§3.1 Six-Tier Vector-Space Construction", "§2 Reorganization outcomes"]
+  - id: P5
+    statement: >-
+      Theorem 1 (cascade-equilibrium existence and uniqueness): under a uniform
+      Banach contraction (C_i, constant kappa_i in [0,1)) and joint parameter
+      Lipschitz condition (C_i', constant L_i) at each junction, for every
+      x_1 in B_1 a unique cascade-equilibrium trajectory exists, and the
+      fixed-point map x_1 -> (x_2*,...,x_6*) is Lipschitz on B_1 with constant
+      bounded above by Prod_{j=1..5} L_j / (1 - kappa_j). Uniform contraction is
+      the technical content distinguishing the result from ad-hoc local Banach
+      applications.
+    conditions: "C1, C2, C3, C4"
+    antecedents: [P1, P4]
+    evidence:
+      - type: derivation
+        anchor: "Tier-by-tier parametric Banach contraction; inductive stacking of fixed points (Appendix A)."
+      - type: citation
+        anchor: "Banach 1922; Smart 1974; Granas & Dugundji 2003 parametric fixed-point theorem."
+        citation_keys: []
+    falsifier: "If a junction's F_i is not a uniform contraction on B_{i+1}, the global tuple is not well-defined as a function of x_1."
+    body_sections: ["§3.3 Theorem 1", "Appendix A"]
+  - id: P6
+    statement: >-
+      Corollary 1 (cascade information loss; sub-additivity of nullity):
+      r_total = d_1 - rank(Pi) <= r_1 + r_2 + r_3 + r_4 + r_5, with equality iff
+      kernels stack independently (ker(Pi_{i->i+1}) contained in the cumulative
+      image up to tier i). The two-sided architectural bound is
+      max(0, d_1 - d_6) <= r_total <= Sum_i r_i <= Sum_i d_i. Strict inequality
+      (kernel partial absorption) means upstream junctions partially shield
+      downstream ones.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: derivation
+        anchor: "Standard kernel sub-additivity under composition, applied inductively across five junctions."
+    body_sections: ["§3.3 Corollary 1"]
+  - id: P7
+    statement: >-
+      Five major design theories are recovered as nested cascade restrictions,
+      each obtained by fixing some tiers and modeling specific junctions:
+      Galbraith's star as a multi-junction (Pi_{2->3}, Pi_{3->4}, Pi_{5->6})
+      restriction with T_1 parameterized; Williamson's governance choice as the
+      Pi_{2->3} junction; Mintzberg's configurations as cascade-equilibrium
+      attractor basins at Pi_{5->6}; Puranam's microstructure as the
+      Pi_{4->5}-Pi_{5->6} junction pair; Burton-Obel-Hakonsson computational
+      optimization as constrained search over the cascade's Lipschitz parameters.
+      Fragmentation is a partial-view artifact, not ontological disagreement.
+    conditions: ""
+    antecedents: [P0, P1, P6]
+    evidence:
+      - type: analytic
+        anchor: "Restriction-recovery results (§4, Table 3): each theory = cascade restricted to its active-junction subset."
+    body_sections: ["§4 Cascade Restrictions", "§4 Table 3"]
+  - id: P8
+    statement: >-
+      A position is a triple p = (P_p, A_p, R_p) in T_6, where perceptual content
+      P_p is the image under Pi_{5->6} of a T_5 process-trajectory (what the
+      position does), authority allocation A_p is a coordinate of Pi_{3->6}(x_3)
+      (what the position can decide), and role expectation R_p is a coordinate of
+      the full composite Pi_{1->6}(x_1) (what the position means). Position is a
+      cascade-coordinate object whose three channels inherit from distinct
+      upstream tiers — the first formal decomposition respecting multi-channel
+      inheritance from culture, contract, and routine.
+    conditions: ""
+    antecedents: [P1, P3]
+    evidence:
+      - type: analytic
+        anchor: "Position-triple definition (§4.7); unfolds v1's single-step Pi into three cascade-coordinated channels."
+      - type: citation
+        anchor: "Refines Zharnikov 2026l's positions-as-projection-of-process claim (correct at T_5->T_6, silent on upstream)."
+        citation_keys: [zharnikov-2026l]
+    body_sections: ["§4.7 Position Formal Definition"]
+  - id: P9
+    statement: >-
+      (P1, predictive) Cascade-distance scaling: an intervention of magnitude
+      Delta_i at tier i registers at T_6 with magnitude bounded above by
+      [Prod_{j=i..5} L_j / (1 - kappa_j)] * ||Delta_i||, so intervention efficacy
+      is geometric in cascade depth (6 - i). T_6-only re-titling produces the
+      smallest average effect; deeper-tier interventions produce monotonically
+      larger effects. This is why ~60% of T_6-targeted reorganizations
+      under-deliver.
+    conditions: "C1, C2, C3, C4"
+    antecedents: [P5]
+    evidence:
+      - type: derivation
+        anchor: "Theorem 1 Lipschitz product restricted to the (i,6) coordinate pair; equation (5)."
+      - type: citation
+        anchor: "Testable on reorganization-outcome panels with tier-of-intervention coded (Kunisch et al.; Barkema-Schijven)."
+        citation_keys: []
+    falsifier: "T_6-only interventions average-outperforming deeper-tier interventions falsifies P1."
+    body_sections: ["§5 Proposition 1"]
+  - id: P10
+    statement: >-
+      (P2, predictive) Strict downward propagation of basis rotation under AI
+      deployment: an AI-induced basis rotation at Pi_{i->i+1} (i in {2,3,4,5})
+      that preserves rank manifests at T_6 as a rotation affecting P_p
+      (perceptual content, via Pi_{5->6}) while leaving A_p (authority, via
+      Pi_{3->6}) and R_p (role expectation, via Pi_{1->6}) invariant — provided
+      the deployment does not penetrate the T_3 legal-personhood floor or the
+      T_1 cultural-constitutional floor.
+    conditions: "C4"
+    antecedents: [P3, P8]
+    evidence:
+      - type: derivation
+        anchor: "Pi_{5->6}-only basis rotation does not re-parameterize the Pi_{3->6} and Pi_{1->6} compositions."
+      - type: citation
+        anchor: "Testable on software-engineering 2023-2026 panel (GitHub commits, Stack Overflow, LinkedIn/Glassdoor); Zharnikov 2026ak develops the T_3-penetration boundary."
+        citation_keys: [zharnikov-2026ak]
+    falsifier: "AI-driven authority reallocation moving A_p substantially within scope (iv) falsifies P2."
+    body_sections: ["§5 Proposition 2"]
+  - id: P11
+    statement: >-
+      (P3, predictive) Variance amplification with cascade distance: for an
+      exogenous perturbation eps_i at tier i with variance sigma_i^2, the
+      variance of the induced T_6 perturbation is bounded by
+      [Prod_{j=i..5} L_j / (1 - kappa_j)]^2 * sigma_i^2, so T_6-outcome variance
+      scales geometrically with cascade-distance (6 - i). The coefficient of
+      variation of T_6 outcomes across firms hit by the same upstream shock
+      exceeds that of T_4, which exceeds that of T_2.
+    conditions: "C1, C2, C3, C4"
+    antecedents: [P5, P6]
+    evidence:
+      - type: derivation
+        anchor: "Theorem 1 Lipschitz bound combined with Var(f(X)) <= L_f^2 Var(X); equation (6)."
+      - type: citation
+        anchor: "Bloom et al. (2019) cross-firm management-practice variance as antecedent; Raveendran-Silvestri-Gulati 2020 microfoundations anchor."
+        citation_keys: []
+    falsifier: "Tighter T_6 confidence interval than T_4 for matched upstream shocks falsifies P3."
+    body_sections: ["§5 Proposition 3"]
+  - id: P12
+    statement: >-
+      (P4, predictive) Algebraic decoupling bound at layer junctions: the
+      empirical re-statement of Corollary 1 as a regime classification —
+      Sum_i r_i = r_total (fully decoupled, each junction contributes independent
+      loss) versus Sum_i r_i > r_total (junction interaction, upstream kernels
+      partially absorbed downstream). The strict-inequality regime is a new
+      empirical claim no single-junction framework (Galbraith, Mintzberg,
+      Burton-Obel-Hakonsson, which implicitly assume decoupled junctions)
+      reproduces.
+    conditions: ""
+    antecedents: [P6]
+    evidence:
+      - type: derivation
+        anchor: "Corollary 1 equations (2)-(3) as an empirically observable per-junction variance decomposition."
+      - type: citation
+        anchor: "Ethiraj-Levinthal-Roy (2008) dark-side-of-modularity kernel-absorption consistent with the strict-inequality side."
+        citation_keys: []
+    falsifier: "Per-junction kernel sum equal to cascade kernel across a firm cross-section refutes the strict-inequality regime as modal."
+    body_sections: ["§5 Proposition 4"]
+
+# ============================================================================
+# Methods — the companion numerical verification (§3.5) + restriction comparison (§4.6)
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Explicit six-tier numerical construction with dimensions
+      (d_1..d_6) = (4,4,3,3,2,2): all operator matrices Pi_{i->i+1} and feedback
+      operators A_{i+1->i} are deterministic draws from
+      numpy.random.default_rng(2026); A rescaled so ||Pi o A||_op equals a target
+      kappa_i in {.30,.40,.50,.35,.45}; Pi_{1->2} constructed rank-deficient by
+      one to realize Corollary 1's strict-inequality case. Closed-form Lipschitz
+      analysis kappa_i = ||Pi o A||_op, L_i = ||(I - Pi o A) o Pi||_op; parametric
+      Banach iteration with tolerance 1e-10.
+    type: "monte_carlo_construction"
+    inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); target kappa vector"]
+    outputs: ["per-junction kappa_i, L_i, rank, r_i, iterations, convergence distances; composite rank; sub-additivity gap"]
+    code_anchor: "[internal path removed]"
+    reproducibility:
+      seed: "2026"
+      runtime_environment: "Python 3.12 + numpy via uv"
+      run_command: "uv run --with numpy python [internal path removed]"
+    body_sections: ["§3.5 Numerical Illustration of Theorem 1"]
+  - id: M2
+    statement: >-
+      Restriction-comparison run (--compare flag): each of the five design-theory
+      restrictions is run on the same seed-2026 dimensions with its
+      active-junction pattern, computing each restriction's P3 amplification
+      product and whether it can detect P4 strict inequality through its active
+      junctions.
+    type: "comparative_simulation"
+    inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); five restriction active-junction patterns"]
+    outputs: ["per-restriction P3 Lipschitz product; P4 strict-inequality detectability flag"]
+    code_anchor: "[internal path removed] --compare"
+    reproducibility:
+      seed: "2026"
+      runtime_environment: "Python 3.12 + numpy via uv"
+      run_command: "uv run --with numpy python [internal path removed] --compare"
+    body_sections: ["§4 Cascade Restriction as a Family (computational comparison)"]
+
+# ============================================================================
+# Measurements — the computed values reported in Table 2 / §3.5 / §4.6
+# ============================================================================
+measurements:
+  - id: m1
+    statement: >-
+      Per-junction statistics (Table 2): r = (1,1,0,1,0); kappa =
+      (.300,.400,.500,.350,.450); L = (2.509,6.099,3.932,1.285,2.966); all
+      junctions converge (max residual 2.38e-11, within 1e-10 tolerance).
+    source_observations: []
+    generating_method: M1
+    value: "r=(1,1,0,1,0); kappa=(.300,.400,.500,.350,.450); L=(2.509,6.099,3.932,1.285,2.966); max residual 2.38e-11"
+    units: "rank deficiencies / contraction constants / Lipschitz constants / residual norm"
+    body_sections: ["§3.5 Table 2"]
+  - id: m2
+    statement: >-
+      Corollary 1 sub-additivity verified as a strict inequality on a non-trivial
+      cascade: composite rank(Pi) = 2 so r_total = d_1 - rank(Pi) = 2, while
+      Sum_i r_i = 1+1+0+1+0 = 3; r_total = 2 < 3 with a one-dimensional gap
+      (kernel absorption at the rank-deficient Pi_{1->2}). Cascade Lipschitz
+      product Prod L_j / (1 - kappa_j) = 3056.11 (finite but large).
+    source_observations: []
+    generating_method: M1
+    value: "r_total=2 < Sum_i r_i=3 (gap=1); cascade Lipschitz product = 3056.11"
+    units: "nullity counts / Lipschitz product"
+    body_sections: ["§3.5 Numerical Illustration"]
+  - id: m3
+    statement: >-
+      Restriction comparison: full cascade P3 amplification = 3056.11 and P4
+      strict inequality (gap=1); single-junction restrictions cannot generate
+      cascade-distance amplification (Williamson Pi_{2->3} P3 = 3.40; Mintzberg
+      Pi_{5->6} P3 = 0.91) and detect no P4 strict inequality; multi-junction
+      restrictions accumulate partial amplification two-to-three orders of
+      magnitude below the full cascade (Puranam P3 = 5.68; Galbraith P3 = 19.53)
+      and still cannot detect P4 strict inequality. No restriction reproduces
+      both P3 product and P4 strict inequality.
+    source_observations: []
+    generating_method: M2
+    value: "full P3=3056.11 (P4 gap=1); Williamson=3.40; Mintzberg=0.91; Puranam=5.68; Galbraith=19.53 (none detect P4)"
+    units: "Lipschitz products / P4 detectability"
+    body_sections: ["§4 computational comparison"]
+
+# ============================================================================
+# Findings — what the numerical work demonstrates
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      The contraction conditions (C_i), the parameter-Lipschitz conditions
+      (C_i'), and Corollary 1's sub-additivity bound are simultaneously
+      satisfiable on a non-trivial six-tier cascade, and Corollary 1's
+      strict-inequality (kernel-absorption) regime is realizable — making the
+      partial-shielding regime that §5's P4 weakening rests on a constructed
+      existence proof, not an assumption.
+    type: "existence_demonstration"
+    source_measurements: [m1, m2]
+    generating_method: M1
+    antecedents: [P5, P6]
+    falsifier: "If no parameter choice satisfies (C_i), (C_i'), and the strict bound jointly, F1 fails."
+    body_sections: ["§3.5 Numerical Illustration"]
+  - id: F2
+    statement: >-
+      No single design-theory restriction simultaneously reproduces the full
+      cascade's P3 cascade-distance amplification and P4 strict-inequality
+      regime; each restriction is a strict subset of the cascade's empirical
+      content, so the unification claim (P7) is demonstrated computationally
+      rather than merely asserted.
+    type: "comparative_demonstration"
+    source_measurements: [m3]
+    generating_method: M2
+    antecedents: [P7, P11, P12]
+    falsifier: "If any single restriction reproduces both the P3 product and P4 strict inequality, F2 (and the strong unification claim) weakens."
+    body_sections: ["§4 computational comparison"]
+
+# ============================================================================
+# Limitations — honest scope of the apparatus
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The apparatus is static (scope condition iv): regime transitions in which
+      T_6 enactment retroactively reshapes T_1 (Weick enactment) require a
+      dynamic extension with a longer-horizon Pi_{6->1}-style operator that is
+      outside the present paper and flagged as future work.
+    severity: "scope-bounding"
+    affects: [P5, P9, P11]
+    body_sections: ["§3.4 (iv)", "§7 Boundary conditions", "§7 Future research"]
+  - id: L2
+    statement: >-
+      Whether the strict-inequality (junction-interaction) regime is empirically
+      modal across firms is a question the apparatus poses but does not answer;
+      the §3.5 illustration realizes it on one constructed cascade only.
+    severity: "scope-bounding"
+    affects: [P12]
+    body_sections: ["§7 Boundary conditions"]
+  - id: L3
+    statement: >-
+      The cascade is silent on (a) which tier any specific firm should intervene
+      at, (b) the absolute magnitude of any specific r_i, and (c) the constants
+      kappa_i and L_i in any regime — all empirical primitives to be measured
+      firm-by-firm. The cascade organizes data; it does not substitute for
+      measurement, and contraction-constant estimators do not yet exist.
+    severity: "applicability"
+    affects: [P9, P10, P11, P12]
+    body_sections: ["§7 What the cascade does not predict", "§7 Future research"]
+  - id: L4
+    statement: >-
+      The empirical illustration (Path B) is deferred to a companion empirical
+      paper (PROJECTION_PAPER_PHASE2_EMPIRICAL_FRAMEWORK.md); this paper presents
+      only the theoretical apparatus, so references to a §6 software-engineering
+      illustration are forward pointers, and P1-P4 are framed for follow-on
+      empirical work rather than tested here.
+    severity: "scope-bounding"
+    affects: [P9, P10, P11, P12]
+    body_sections: ["§7 Future research (Path B)"]
+
+# ============================================================================
+# Alternative explanations — the rival the apparatus must clear
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The cascade is merely a tautological re-description of the existing design
+      theories it absorbs — relabeling without empirical content.
+    rules_out_required: [P7]
+    ruled_out_by: [P11, P12, F2]
+    rules_out_status: "rejected"
+    reasoning: >-
+      P3 (variance scaling) and the strict-inequality regime of P4 carry
+      empirical content that no single-junction framework reproduces, and the
+      §4.6 computational comparison shows no restriction reproduces both — so the
+      four propositions are joint consequences of the full cascade, not
+      definitional artifacts of any tradition.
+    body_sections: ["§1 Contribution roadmap", "§5 (joint distinctness)", "§4 computational comparison"]
+  - id: A2
+    statement: >-
+      Reorganization failure is an execution-and-coordination problem (sound
+      design degraded by post-decision implementation), not an architectural one
+      (Hrebiniak 2006).
+    rules_out_required: [P9]
+    ruled_out_by: [P4]
+    rules_out_status: "located_not_displaced"
+    reasoning: >-
+      The cascade does not displace the execution view; it locates it —
+      execution-coordination failure populates r_5 at Pi_{5->6} and part of r_3,
+      while the cascade adds the upstream r_1, r_2, r_4 contributions and the
+      Lipschitz product the execution view treats as exogenous.
+    body_sections: ["§2 Reorganization outcomes (Hrebiniak)"]
+
+# ============================================================================
+# Cross-paper engagement
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026l
+    relationship: refines
+    spine_nodes: [P8]
+    note: >-
+      The Rendering Problem's central claim (positions are projections of
+      process) was correct at the T_5->T_6 junction but silent on the upstream
+      tiers; v2's position triple (§4.7) unfolds that single-step projection into
+      three cascade-coordinated channels (P_p via T_5, A_p via T_3, R_p via T_1).
+  - paper_key: 2026ak
+    relationship: extends
+    spine_nodes: [P10]
+    note: >-
+      AI Tier Penetration develops the substrate-dependent boundary at which an
+      AI deployment penetrates the T_3 legal-personhood floor — the regime
+      transition outside scope condition (iv) that P2's falsifier names.
+
+# ============================================================================
+# External anchor literature — the load-bearing external references
+# ============================================================================
+external_anchors:
+  - {citation_key: banach-1922-operations-ensembles-abstraits, role: method_basis, spine_nodes: [P5], note: "Banach contraction-mapping principle — the existence/uniqueness engine of Theorem 1"}
+  - {citation_key: granas-dugundji-2003-fixed-point-theory, role: method_basis, spine_nodes: [P5], note: "Parametric fixed-point theorem — Lipschitz dependence on the cascade boundary x_1"}
+  - {citation_key: galbraith-1977-organization-design, role: unified_theory, spine_nodes: [P7], note: "Information-processing star recovered as the multi-junction restriction"}
+  - {citation_key: williamson-1985-economic-institutions, role: unified_theory, spine_nodes: [P7], note: "Governance choice recovered as the Pi_{2->3} junction"}
+  - {citation_key: mintzberg-1979-structuring-organizations, role: unified_theory, spine_nodes: [P7, C3], note: "Configurations recovered as cascade-equilibrium attractor basins at Pi_{5->6}"}
+  - {citation_key: puranam-2018-microstructure-organizations, role: unified_theory, spine_nodes: [P7], note: "Microstructure recovered as the Pi_{4->5}-Pi_{5->6} junction pair"}
+  - {citation_key: burton-obel-hakonsson-2020-organizational-design, role: unified_theory, spine_nodes: [P7], note: "Computational optimization recovered as constrained Lipschitz-parameter search"}
+  - {citation_key: joseph-sengul-2025-organization-design, role: gap_diagnosis, spine_nodes: [P0], note: "Diagnoses the fragmentation the cascade resolves"}
+  - {citation_key: pentland-feldman-2005-routines-unit-analysis, role: construct_basis, spine_nodes: [P3], note: "Ostensive/performative duality grounds the basis-rotation construct"}
+  - {citation_key: barkema-schijven-2008-firms-learn-acquisitions, role: empirical_anchor, spine_nodes: [O3, P9], note: "~60% reorganization-failure meta-analytic estimate"}
+  - {citation_key: kunisch-2017-time-strategic-change, role: empirical_anchor, spine_nodes: [O3, P9], note: "Process reframing of strategic change; tier-of-intervention test anchor"}
+  - {citation_key: brynjolfsson-2025-generative-ai-work, role: empirical_anchor, spine_nodes: [O2], note: "Content-shift within stable structure (15% gain, titles unchanged)"}
+  - {citation_key: bloom-2019-management-practices, role: empirical_anchor, spine_nodes: [P11], note: "Cross-firm management-practice variance — antecedent to P3"}
+  - {citation_key: ethiraj-2008-dual-role-modularity, role: empirical_anchor, spine_nodes: [P12], note: "Dark-side-of-modularity kernel absorption — consistent with P4 strict inequality"}
+  - {citation_key: hrebiniak-2006-obstacles-strategy-implementation, role: rival_located, spine_nodes: [A2, P4], note: "Execution-and-coordination view located at r_5 / part of r_3, not displaced"}
+  - {citation_key: wigner-1960-unreasonable-effectiveness, role: meta_anchor, spine_nodes: [], note: "Unreasonable-effectiveness meta-question (§7); not load-bearing for any proposition"}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Dynamic extension: a longer-horizon Pi_{6->1} enactment operator giving a higher-dimensional joint fixed point where forward and backward operators are consistent (relaxes scope condition iv). (L1)"
+  - "Is the strict-inequality (junction-interaction) regime of P4 empirically modal across firms, or the exception? (L2)"
+  - "How are kappa_i and L_i estimated firm-by-firm from observational data (analogue to production-function elasticity estimation)? No estimator yet exists. (L3)"
+  - "Do P1-P4 generalize across industries (legal, healthcare, financial services) and across institutional contexts with different kappa_i / L_i regimes (cross-cultural validation)?"
+  - "At what boundary does AI deployment penetrating T_3 (signing authority / legal personhood) become feasible, ending the static regime? (links 2026ak)"
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

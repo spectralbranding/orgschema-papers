@@ -1,0 +1,691 @@
+# SPINE.yaml — Specification Readiness: Measuring an Architectural Antecedent
+# of Functional Friction and AI Returns (2026an)
+#
+# RETROFIT spine. Extracted descriptively from the completed paper.md per the
+# decision D4). This is NOT a spine-first generative draft; it is a faithful
+# backbone reconstruction of an already-finished paper.
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"):
+# the paper reports author-produced simulation results (a 12.96M-trial Monte
+# Carlo phase-shift confirmation + a 5,000-dataset regression-identification
+# power simulation), so the headline mechanism-test claims are represented as
+# observation → method → measurement → finding chains rather than asserted in
+# prose. The construct/identification claims P1–P9 are the design propositions.
+#
+# Companion relationship: this is the EMPIRICAL companion to the theoretical
+# multi-interface model paper (2026am). The two papers SHARE the same
+# pre-registered Monte Carlo simulation infrastructure and the same fixed seed
+# (np.random.seed(20260525)) and the same code companion DOI; this paper
+# operationalizes 2026am's propositions P1–P5 as testable hypotheses H1–H5.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"     # retrofit backbone first lock (2026-06-14)
+provenance: retrofit
+paper_key: "2026an"
+title: >-
+  Specification Readiness: Measuring an Architectural Antecedent of Functional
+  Friction and AI Returns
+target_venue_primary: "TBD (strategic-management / organizational-design archival empirical)"
+status: >-
+  Retrofit spine extracted 2026-06-14 from completed paper.md (v1.0.0, May 2026).
+  Paper is a published working paper (Zenodo DOI 10.5281/zenodo.20384084);
+  archival execution flagged as the next deliverable (Paper B v2.0).
+
+thesis: |
+  Specification readiness — the degree to which a firm's commitments are
+  codified in versioned, machine-readable, queryable form — is a measurable
+  firm-year strategic construct that is conceptually prior to organization
+  capital, brand capital, and disclosure readability. A continuous Specification
+  Coherence Index (SCI), built from within-firm year-over-year cosine similarity
+  of 10-K narrative embeddings, supplies the first scalable archival
+  operationalization across the Compustat universe of US public firms 2010–2025;
+  a four-event sharp index supplies discrete robustness. The construct is argued
+  to substitute query-based alignment for costly interface-maintenance functions,
+  reducing a structural friction tax (H1), redirecting marketing spend toward
+  brand-capital accumulation (H2), lowering cross-stakeholder valuation
+  dispersion under incoherence (H3), raising returns to AI deployment (H4), and
+  governing the valuation consequence of advertising-spend cessation (H5). A
+  multi-arm identification template pairs continuous within-firm treatment with
+  staggered difference-in-differences (Callaway-Sant'Anna; Goodman-Bacon),
+  regulatory-compliance instruments, and advertising-cessation event studies,
+  disciplined by an Oster (2019) threats register. Pre-registered Monte Carlo
+  mechanism tests (12.96 million trials; α* = .91; Cohen's d = 88.4) confirm the
+  friction-tax phase shift, and a regression-identification simulation confirms
+  power ≥ .80 for all five hypotheses at the pre-registered effect sizes. The
+  paper contributes the measure, the reusable identification template, and formal
+  evidence that specification readiness moderates the AI augmentation paradox; the
+  archival panel estimates implementing the design are in execution as a companion.
+
+# ============================================================================
+# Boundary conditions — the populations for which the predictions are
+# determinate (paper Table 1, six conditions; three exclusionary, three
+# stratifying). The pure-API firm is the sole genuine-falsification venue.
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Coherence parameter: the theory holds when κ < .15 in the coherence
+      condition across at least three observable interfaces; single-interface-
+      dominant firms are out of scope (excluded, not falsified).
+    observable: "Inter-interface divergence below κ across ≥3 measured interfaces."
+    excludes: "Firms with single-interface dominance."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+  - id: C2
+    statement: >-
+      Firm scale: the theory holds when total full-time-equivalent headcount
+      exceeds ~500; below-threshold firms are silent, not falsified (primary
+      sample excludes them; robustness includes them).
+    observable: "FTE headcount > 500."
+    excludes: "Sub-500-employee firms from the primary sample."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+  - id: C3
+    statement: >-
+      Specification codifiability: the theory holds when the firm's core
+      specification is amenable to documentation (Nonaka 1994); artisan and
+      bespoke-service firms are out of scope.
+    observable: "Specification amenable to codification."
+    excludes: "Tacit-specification (artisan / bespoke-service) industries."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+  - id: C4
+    statement: >-
+      Recipient-class non-adversariality: the pull architecture reverses for
+      adversarial recipient classes; activist-investor or hostile-regulator
+      exposure is a stratifying flag where predictions reverse, not falsify.
+    observable: "Principal recipient classes non-adversarial."
+    excludes: "(stratifies, not excludes) material activist/hostile-regulator exposure."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+  - id: C5
+    statement: >-
+      Multi-recipient architecture: the theory requires at least two
+      structurally distinct recipient classes. The pure-API platform firm,
+      whose interfaces collapse to a single rendering, is the ONE population
+      where failure of the predicted SCI→friction association is a genuine
+      falsification rather than out-of-scope silence.
+    observable: "≥2 structurally distinct recipient (interface) classes."
+    excludes: "Pure-platform / API-only firms from the primary sample."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)", "§Discussion — Theoretical contributions"]
+  - id: C6
+    statement: >-
+      AI consumption-layer penetration: the phase-shift predictions apply when
+      consumption-layer AI penetration α ≥ α* ≈ .60; the pre-AI sub-window tests
+      baseline predictions only, and P5/H5 is restricted to 2018–2025.
+    observable: "Consumption-layer AI penetration α ≥ α*."
+    excludes: "Out-of-window (pre-AI) phase-shift predictions are silent."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+
+# ============================================================================
+# Observations — the author-produced simulation outputs the mechanism-test
+# claims rest on (generated by the shared code companion at fixed seed).
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      A pre-registered Monte Carlo simulation of the friction-tax mechanism over
+      a parameter grid (misalignment variance σ ∈ {.1,.2,.3,.5,.7,1.0}; recipient
+      population N ∈ {100,500,1000,5000}; AI-mediation α ∈ {0,.2,.4,.6,.8,1.0};
+      three friction functional forms) executes 10,000 trials per cell across
+      432 cells plus 30,000 phase-shift-sensitivity trials, totalling 12.96
+      million friction-magnitude samples.
+    raw_data_pointer: "specification-readiness/code/friction_tax_montecarlo.py + monte_carlo_summary.csv (orgschema-papers mirror)"
+    instrument: "friction_tax_montecarlo.py (NumPy/SciPy)"
+    timestamp: "2026-05 (seed 20260525)"
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+  - id: O2
+    statement: >-
+      A pre-registered regression-identification simulation generates 1,000
+      simulated panel datasets per hypothesis under each of H0 and H1 (5,000
+      datasets under H1), each N = 1,000 firms × 10 years = 10,000 firm-years,
+      with a panel data-generating process incorporating firm random effects,
+      year shocks, industry×year shocks, the pre-registered treatment effect, and
+      residual noise calibrated to observed Compustat XAD/SALE within-firm variation.
+    raw_data_pointer: "specification-readiness/code/push_pull_regression_sim.py + regression_simulation_summary.csv (orgschema-papers mirror)"
+    instrument: "push_pull_regression_sim.py (statsmodels)"
+    timestamp: "2026-05 (seed 20260525)"
+    body_sections: ["§Mechanism Tests — Regression-identification simulation power"]
+
+# ============================================================================
+# Methods — how the simulations are run and how the empirical design identifies
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      The continuous-SCI primary measure: parse each firm's 10-K Item 1
+      (Business) and Item 7 (MD&A) via SEC EDGAR XBRL, strip non-narrative
+      content, compute contextual transformer embeddings (BERT-base-uncased
+      primary; Loughran-McDonald dictionary cosine secondary), and take cosine
+      similarity between the t and t−1 section embeddings as the within-firm
+      year-over-year SCI ∈ [−1,1] rescaled to [0,1] — a substrate-stability
+      signal isolated from cross-sectional disclosure-strategy confounds.
+    type: "text_as_treatment_construction"
+    inputs: ["SEC EDGAR 10-K Item 1 + Item 7 narratives, firm-year t and t−1"]
+    outputs: ["continuous SCI firm-year panel variable"]
+    code_anchor: "design specified in §Data and Measurement — Specification Coherence Index (SCI)"
+    body_sections: ["§Data and Measurement — Specification Coherence Index (SCI)"]
+  - id: M2
+    statement: >-
+      The primary identification arm: continuous SCI (one-year-lagged) as a
+      within-firm continuous treatment in a panel regression with firm, year, and
+      Fama-French-48-industry×year fixed effects, firm-year controls, and
+      firm-clustered standard errors; complemented by a staggered-DiD robustness
+      arm (Callaway-Sant'Anna ATT(g,t) + Goodman-Bacon decomposition + Sun-Abraham)
+      on the four sharp SCI codification events, regulatory-compliance IV
+      supplements (SOX §404, EEOC mandates; CEO-transition IV for H4), and Oster
+      (2019) δ-bound threats diagnostics.
+    type: "multi_arm_panel_identification"
+    inputs: ["continuous SCI", "four-event sharp SCI", "regulatory-compliance shocks", "advertising-cessation events"]
+    outputs: ["H1–H5 effect estimates with threats register + Oster bounds"]
+    code_anchor: "design specified in §Identification Strategy"
+    body_sections: ["§Identification Strategy"]
+  - id: M3
+    statement: >-
+      The Monte Carlo mechanism test: simulate push friction-tax μ_push and pull
+      friction-tax μ_pull across the parameter grid at fixed seed 20260525,
+      evaluate the qualitative ordering μ_push ≫ μ_pull, the phase-shift threshold
+      α*, and six pre-registered falsification checks (directional monotonicity,
+      dimensionality, pull-floor, functional-form, N-scaling), logging PASS/FAIL
+      to POST_EXPERIMENT_REPORT.md.
+    type: "monte_carlo_mechanism_test"
+    inputs: ["parameter grid (σ, N, α, friction form)"]
+    outputs: ["μ_push, μ_pull, α*, Cohen's d, six falsification verdicts"]
+    code_anchor: "specification-readiness/code/friction_tax_montecarlo.py"
+    reproducibility:
+      seed: "np.random.seed(20260525)"
+      runtime_environment: "Python 3.12 + uv (numpy 2.2.2, scipy 1.14.0, statsmodels 0.14.4)"
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+  - id: M4
+    statement: >-
+      The regression-identification power simulation: under H1, fit each
+      hypothesis's estimator on 1,000 simulated panels at its pre-registered
+      effect size and report rejection-rate power, mean estimate, and correct-sign
+      fraction; under H0, confirm nominal Type I error — using firm-clustered
+      cluster-robust standard errors as the primary estimator following the
+      documented post-hoc remediation.
+    type: "design_power_simulation"
+    inputs: ["1,000 simulated panels per hypothesis under H0 and H1"]
+    outputs: ["power, mean estimate, correct-sign fraction, Type I error rate"]
+    code_anchor: "specification-readiness/code/push_pull_regression_sim.py"
+    reproducibility:
+      seed: "np.random.seed(20260525)"
+      runtime_environment: "Python 3.12 + uv"
+    body_sections: ["§Mechanism Tests — Regression-identification simulation power"]
+
+# ============================================================================
+# Measurements — the headline numbers derived from the simulations
+# ============================================================================
+measurements:
+  - id: m_phase_shift
+    statement: >-
+      At the baseline cell (σ = .3, N = 1,000, α = 0, quadratic norm) μ_push =
+      1.4396 (vs analytic 2σ²d = 1.4400 to 4 sig figs), μ_pull = .0000720,
+      ratio = 19,993, Cohen's d = 88.4; the phase-shift threshold α* = .91
+      (within pre-registered [.85,.95], within .01 of analytic .90) and is stable
+      across σ ∈ {.1,.3,.5,.7}; all six falsification checks PASS.
+    source_observations: [O1]
+    generating_method: M3
+    value: "α* = .91; μ_push/μ_pull = 19,993; Cohen's d = 88.4; 6/6 checks PASS"
+    units: "phase-shift threshold + friction-tax ratio + standardized effect"
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation", "Table 3 context"]
+  - id: m_power
+    statement: >-
+      Simulated power at the pre-registered effect sizes (Table 3): H1 (β = −.08)
+      power 1.00, mean −.080; H2 (β = −.12) power .94, mean −.120; H3
+      (β = +.10) power .98, mean +.100; H4 (β = +.15) power 1.00, mean +.151;
+      H5 (CAR diff = −15 pp) power .99, mean −15.1 pp; correct-sign fraction 1.00
+      for all five. All ≥ .80 under cluster-robust SEs.
+    source_observations: [O2]
+    generating_method: M4
+    value: "power H1=1.00 / H2=.94 / H3=.98 / H4=1.00 / H5=.99; all sign-fraction 1.00"
+    units: "rejection-rate power + mean point estimate"
+    body_sections: ["§Mechanism Tests — Regression-identification simulation power (Table 3)"]
+  - id: m_typeI
+    statement: >-
+      Under the unremediated NumPy-OLS H0 simulation, Type I error inflated to
+      .053–.091 for H2–H5 (H1 nominal at .042); under the remediated
+      firm-clustered cluster-robust estimator, Type I error recovers to [.042,.051]
+      across H1–H5, at a ~15% power cost that still leaves all hypotheses ≥ .80.
+    source_observations: [O2]
+    generating_method: M4
+    value: "Type I (remediated) ∈ [.042, .051]; pre-remediation ∈ [.053, .091]"
+    units: "Type I error rate"
+    body_sections: ["§Mechanism Tests — Post-hoc deviation transparency"]
+
+# ============================================================================
+# Propositions — the construct, the five hypotheses, the contributions
+# ============================================================================
+propositions:
+  - id: P1
+    statement: >-
+      Specification readiness — the degree to which a firm's substrate S is
+      codified, versioned, machine-readable, and queryable at rendering time and
+      consistent across the six ontological tiers — is a measurable firm-year
+      strategic construct that has not previously entered a strategy regression as
+      an independent variable, and is conceptually prior to organization capital,
+      brand capital, and disclosure readability.
+    conditions: "C1, C3"
+    antecedents: []
+    evidence:
+      - type: analytic
+        anchor: >-
+          Construct decomposed from the multi-interface specification model;
+          contrasted against organization capital, brand capital, and disclosure-
+          readability constructs which measure downstream consequences or
+          properties of the rendering, not the upstream substrate.
+        citation_keys: []
+    body_sections: ["§Abstract", "§Theoretical Framework — Specification readiness as an empirical construct"]
+  - id: P2
+    statement: >-
+      The continuous SCI — within-firm year-over-year cosine similarity of 10-K
+      narrative embeddings — is a scalable archival operationalization of
+      substrate stability that is NOT equivalent to disclosure clarity: two firms
+      can produce identically readable filings from radically different
+      substrates, and the within-firm temporal signal is orthogonal to any single
+      filing's complexity level (contra Loughran-McDonald readability; Bushee, Gow,
+      and Taylor linguistic complexity).
+    conditions: "C3"
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Text-as-treatment lineage (Hassan et al. firm-level political risk;
+          Bushee/Gow/Taylor organizational-identity reading; Hannigan et al.
+          embedding synthesis); the measure uses within-firm rather than
+          cross-sectional variation to isolate substrate stability.
+        citation_keys: []
+    falsifier: "If continuous SCI loads on the same downstream outcomes as a disclosure-readability index, the construct is not distinct."
+    body_sections: ["§Theoretical Framework — Specification readiness as an empirical construct", "§Data and Measurement — Brand-capital stock"]
+  - id: P3
+    statement: >-
+      (H1) Within firms, after firm and year fixed-effects absorption, an increase
+      in continuous SCI predicts a decrease in aggregate function-layer spending
+      as a share of revenue (β ≈ −.08; Cohen's d .5; negative). The
+      specification-readiness mechanism names the upstream architectural cause of
+      the SG&A sticky-cost asymmetry (Anderson, Banker, and Janakiraman 2003) that
+      prior cost-stickiness research left unspecified.
+    conditions: "C1, C2, C3, C5"
+    antecedents: [P1, P2]
+    evidence:
+      - type: simulation
+        anchor: "Regression-identification power = 1.00 at β = −.08 (m_power)."
+        citation_keys: []
+    falsifier: >-
+      H1 is falsified if SCI is uncorrelated with functional spend share after
+      firm-and-year FE, a one-year SCI lag, and the SOX/EEOC instrument supplements.
+    body_sections: ["§Hypotheses — H1"]
+  - id: P4
+    statement: >-
+      (H2) Conditional on revenue cohort and industry×year cell, an increase in
+      continuous SCI predicts an increase in brand-capital growth net of
+      depreciation (Belo-Lin-Vitorino perpetual inventory, δ₆ = .50): as
+      codification rises, less marketing budget is consumed by interface-coherence
+      maintenance and more accrues to net brand-capital accumulation (β ≈ −.12 on
+      the inverted functional-headcount-to-brand-capital outcome; Cohen's d .3).
+    conditions: "C1, C2, C3, C5"
+    antecedents: [P3]
+    evidence:
+      - type: simulation
+        anchor: "Regression-identification power = .94 at β = −.12 (m_power)."
+        citation_keys: []
+    falsifier: >-
+      H2 is falsified if functional-headcount growth predicts brand-capital
+      accumulation positively after IV correction using regulatory-compliance shocks.
+    body_sections: ["§Hypotheses — H2"]
+  - id: P5
+    statement: >-
+      (H3) Firms with documented cross-interface contradictions (mean pairwise NLP
+      cosine distance across three interface pairs) exhibit higher cross-stakeholder
+      valuation dispersion than coherent-specification firms, after firm and year
+      FE (β ≈ +.10; Cohen's d .4; positive). Estimated on single-brand-dominant
+      firms to address the brand-portfolio confound.
+    conditions: "C1, C4, C5"
+    antecedents: [P2]
+    evidence:
+      - type: simulation
+        anchor: "Regression-identification power = .98 at β = +.10 (m_power)."
+        citation_keys: []
+    falsifier: >-
+      H3 is falsified if the contradiction index does not predict dispersion after
+      register-calibration distinguishing substantive contradictions from
+      linguistic-register differences.
+    body_sections: ["§Hypotheses — H3"]
+  - id: P6
+    statement: >-
+      (H4) Firms with high continuous SCI in the year before first major AI
+      deployment realize higher AI-ROI (change in interface-maintaining functional
+      headcount in [t+1,t+2] per AI-related dollar) than low-SCI firms (β ≈ +.15;
+      Cohen's d .5; positive). Substrate-operator realization yields flat/declining
+      maintenance headcount alongside rising AI spend; surface-operator deployment
+      raises spend without headcount reduction. This is the firm-level architectural
+      moderator that the automation-augmentation paradox (Raisch and Krakowski 2021)
+      left unspecified.
+    conditions: "C5, C6"
+    antecedents: [P1]
+    evidence:
+      - type: simulation
+        anchor: "Regression-identification power = 1.00 at β = +.15 (m_power)."
+        citation_keys: []
+    falsifier: >-
+      H4 is falsified if pre-deployment SCI does not predict the functional-
+      headcount-to-AI-spend ratio after CEO-transition IV correction, with the
+      reduced-form CEO-transition effect on AI-ROI reported as placebo.
+    body_sections: ["§Hypotheses — H4", "§Discussion — Substrate readiness as moderator of AI returns"]
+  - id: P7
+    statement: >-
+      (H5) High-push-intensity firms (top XAD/SALE quintile) exhibit larger
+      negative cumulative abnormal returns following advertising-spend-cessation
+      events than low-push-intensity firms (CAR differential ≈ −15 pp in [0,+1yr];
+      Cohen's d .7; negative): push-dependent firms collapse faster than
+      pull-capable firms when force is withdrawn.
+    conditions: "C1, C5, C6"
+    antecedents: [P3]
+    evidence:
+      - type: simulation
+        anchor: "Regression-identification power = .99 at CAR diff = −15 pp (m_power)."
+        citation_keys: []
+    falsifier: >-
+      H5 is falsified if high-push firms do not show larger negative CARs after
+      distress-event exclusion and propensity-score reweighting on pre-event
+      fundamentals.
+    body_sections: ["§Hypotheses — H5"]
+  - id: P8
+    statement: >-
+      The paper's three contributions: (1) the SCI — the first scalable archival
+      measure of specification readiness; (2) a reusable multi-arm identification
+      template pairing continuous textual treatment with sharp codification events,
+      extensible to governance, process, and knowledge-management codification;
+      (3) formal mechanism-test evidence that specification readiness moderates the
+      AI augmentation paradox.
+    conditions: ""
+    antecedents: [P1, P2, P3, P4, P5, P6, P7, F1, F2]
+    evidence:
+      - type: analytic
+        anchor: "Synthesis of the construct, the template, and the simulation evidence."
+        citation_keys: []
+    body_sections: ["§Abstract", "§Discussion", "§Conclusion"]
+  - id: P9
+    statement: >-
+      Pre-registered mechanism testing — a Monte Carlo over the formal parameter
+      grid plus a regression-identification power simulation under H0 and H1 with a
+      transparently logged post-hoc estimator deviation — establishes the necessary
+      condition for credible inference (the design CAN detect the pre-registered
+      effects) separately from the empirical question (whether the effects are
+      present), a discipline point-estimate pre-registration alone does not enforce.
+    conditions: ""
+    antecedents: [F1, F2, F3]
+    evidence:
+      - type: self-application
+        anchor: >-
+          The paper applies the template it proposes (Appendix C) to its own
+          design before any archival data are observed.
+        citation_keys: []
+    body_sections: ["§Mechanism Tests — A note on interpretation", "§Appendix C: Simulation Template for Friction-Tax Research"]
+
+# ============================================================================
+# Derivations — analytic anchors the simulation recovers
+# ============================================================================
+derivations:
+  - id: D1
+    statement: >-
+      The analytic push friction-tax expectation 2σ²d at the baseline cell
+      (σ = .3, d → quadratic norm) is 1.4400; the simulation recovers μ_push =
+      1.4396 to four significant figures, and the analytic phase-shift threshold
+      .90 is recovered as α* = .91 (within .01), corroborating the formal model.
+    antecedents: [P9]
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+
+# ============================================================================
+# Findings — what the simulations demonstrate (not archival evidence)
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      The friction-tax mechanism is internally consistent across the pre-specified
+      parameter grid: μ_push ≫ μ_pull holds in every cell, the phase-shift
+      threshold α* = .91 is stable across σ, Cohen's d for the push/pull contrast
+      is 88.4, and all six pre-registered falsification checks pass. This confirms
+      the formalism's internal consistency; it is NOT empirical evidence in real
+      firms.
+    type: "simulation_demonstration"
+    source_measurements: [m_phase_shift]
+    generating_method: M3
+    antecedents: [O1, D1]
+    falsifier: "If μ_push ≫ μ_pull fails in any parameter cell, or α* is unstable across σ, F1 fails."
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+  - id: F2
+    statement: >-
+      The multi-arm identification design has the statistical power to detect the
+      pre-registered effect sizes at the analysis-window sample size: all five
+      hypotheses achieve simulated power ≥ .80 (and mean estimates within ~1% of
+      the pre-registered β) under firm-clustered cluster-robust standard errors.
+    type: "design_power_demonstration"
+    source_measurements: [m_power]
+    generating_method: M4
+    antecedents: [O2]
+    falsifier: "If any hypothesis falls below .80 power at its pre-registered effect under the remediated estimator, F2 weakens."
+    body_sections: ["§Mechanism Tests — Regression-identification simulation power (Table 3)"]
+  - id: F3
+    statement: >-
+      A transparently disclosed post-hoc deviation — Type I inflation (.053–.091)
+      traced to an OLS-vs-panel-DGP interaction in the H0 simulation that omitted
+      firm-clustered SEs — is remediated by adopting cluster-robust SEs as the
+      primary estimator, recovering nominal Type I coverage ([.042,.051]) at a
+      ~15% power cost, demonstrating that simulation-based design testing surfaces
+      implementation errors point-estimate pre-registration does not.
+    type: "deviation_transparency_demonstration"
+    source_measurements: [m_typeI]
+    generating_method: M4
+    antecedents: [O2]
+    falsifier: "If the remediated estimator does not recover nominal Type I coverage, F3 fails."
+    body_sections: ["§Mechanism Tests — Post-hoc deviation transparency"]
+
+# ============================================================================
+# Robustness checks — the design's secondary arms
+# ============================================================================
+robustness_checks:
+  - id: RC1
+    statement: >-
+      The four-event sharp SCI (handbook publication, ISO 9001, design-system
+      release, investor-day overhaul) enters as a staggered-DiD robustness arm
+      (Callaway-Sant'Anna + Goodman-Bacon), expected to align directionally with
+      the continuous-SCI estimate but with larger standard errors due to the
+      smaller treated sample; convergence across the two arms supports causal
+      inference that neither arm alone could establish.
+    type: "alternative_measure_check"
+    sensitivity_of: [P3, P4]
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
+  - id: RC2
+    statement: >-
+      Pre-registered sensitivity battery: brand-capital depreciation δ₆ ∈
+      {.30,.50,.70} (Peters and Taylor 2017); BERT vs Loughran-McDonald embedding
+      parallel; tech-firm subsample exclusion; single-brand-dominant restriction
+      for H3/H4; placebo random-coherence-shift treatment for the DiD arms.
+    type: "specification_sensitivity"
+    sensitivity_of: [P2, P3, P4, P5, P6]
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure"]
+  - id: RC3
+    statement: >-
+      Dimensionality, functional-form, pull-floor, and N-scaling robustness checks
+      in the Monte Carlo confirm μ_push ≫ μ_pull is not artifactual at d = 2/8/16,
+      under L1 and log-quadratic norms, at non-zero σ_query, or under small-sample
+      variance.
+    type: "simulation_robustness"
+    sensitivity_of: [F1]
+    body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+
+# ============================================================================
+# Alternative explanations — rivals the design rules out
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The SCI–friction-tax association is mediated entirely by SEC regulatory
+      pressure (comment-letter exposure) rather than substrate codification.
+    rules_out_required: [P3]
+    ruled_out_by: [RC2]
+    rules_out_status: "addressed-by-design"
+    reasoning: >-
+      SEC comment-letter volume enters only as an exposure control, not a
+      first-stage IV (its exclusion restriction is contestable); the SCI
+      coefficient is predicted robust to controlling for comment-letter exposure.
+    body_sections: ["§Data and Measurement — Specification Coherence Index (SCI)", "§Identification Strategy — Robustness"]
+  - id: A2
+    statement: >-
+      Time-varying unobserved firm quality (a high-quality management team) drives
+      both substrate codification and reduced functional friction through
+      unmodeled channels, generating the observed association without a causal SCI
+      effect.
+    rules_out_required: [P3, P4, P6]
+    ruled_out_by: [RC1]
+    rules_out_status: "bounded-not-eliminated"
+    reasoning: >-
+      Addressed by industry×year FE, Oster (2019) δ-bound analysis (robust if it
+      survives δ = 1), and regulatory-compliance IV; named as the central
+      remaining identification threat.
+    body_sections: ["§Identification Strategy — Continuous 10-K coherence as primary treatment", "§Identification Strategy — Threats register and Oster bounds"]
+  - id: A3
+    statement: >-
+      Firms self-select into codification events because they expect a friction-tax
+      decline, so the staggered-DiD treated and never-treated populations differ on
+      unobservable pre-treatment characteristics.
+    rules_out_required: [P3, P7]
+    ruled_out_by: [RC1, RC2]
+    rules_out_status: "addressed-by-design"
+    reasoning: >-
+      Propensity-score reweighting on pre-event fundamentals plus placebo lead
+      specifications; the continuous-treatment primary arm, where selection is
+      governed by within-firm year-over-year linguistic shifts, complements the
+      sharp arm.
+    body_sections: ["§Identification Strategy — Staggered DiD", "§Appendix A: Full Threats Register"]
+
+# ============================================================================
+# Limitations — honest scope of the design and the simulation evidence
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The mechanism tests are simulations, not archival evidence: they establish
+      that the design CAN detect the pre-registered effects if present, not that
+      the effects are present in real firms. Archival panel confirmation requires
+      the companion empirical study (Paper B v2.0), in execution.
+    severity: "scope-bounding"
+    affects: [F1, F2, P8]
+    body_sections: ["§Mechanism Tests — A note on interpretation", "§Conclusion"]
+  - id: L2
+    statement: >-
+      Partial coverage of Compustat XAD (non-missing for ~25–50% of firm-years,
+      concentrated in consumer-facing sectors) restricts H2 and H5 to the
+      XAD-observed subsample and requires Heckman-style sample-selection correction.
+    severity: "measurement-coverage"
+    affects: [P4, P7]
+    body_sections: ["§Discussion — Boundary conditions and limitations"]
+  - id: L3
+    statement: >-
+      The four-event sharp SCI is cross-sectionally sparse (~20–50 firms with
+      verifiable codification events); the continuous and sharp arms estimate
+      somewhat different parameters (average within-firm coherence shift vs ATT of
+      a sharp codification event), so divergence requires investigation of the
+      differential treatment populations.
+    severity: "scope-bounding"
+    affects: [RC1, P3]
+    body_sections: ["§Discussion — Boundary conditions and limitations"]
+  - id: L4
+    statement: >-
+      Measurement noise in the H3 cross-interface contradiction index (may capture
+      linguistic-register rather than substantive contradictions) and in the H4
+      AI-deployment dating (the 2% job-posting threshold is conventional;
+      internal deployment may precede hiring signals) biases toward the null and
+      cannot be fully eliminated.
+    severity: "measurement-noise"
+    affects: [P5, P6]
+    body_sections: ["§Discussion — Boundary conditions and limitations", "§Appendix A: Full Threats Register"]
+  - id: L5
+    statement: >-
+      External validity is bounded by the US-public-firm setting: the Compustat
+      universe excludes private, foreign-listed, and non-SEC-filing mid-market
+      firms, and the SCI relies on US 10-K infrastructure; cross-country extension
+      requires analogous machine-readable disclosure regimes and independent
+      construct-validation, and is future work.
+    severity: "external-validity"
+    affects: [P1, P2]
+    body_sections: ["§Discussion — Boundary conditions and limitations", "§Future-research agenda"]
+  - id: L6
+    statement: >-
+      The design does not directly measure the latent perception-weight vectors
+      w_i; it identifies the model's predictions only through their downstream
+      consequences. Direct measurement (conjoint-analysis profiles of recipient
+      classes) requires experimental methods outside the archival framework and is
+      flagged as a complementary future contribution.
+    severity: "latent-construct"
+    affects: [P1]
+    body_sections: ["§Discussion — Boundary conditions and limitations"]
+
+# ============================================================================
+# Negative findings — what the simulation surfaced against expectation
+# ============================================================================
+negative_findings:
+  - id: NF1
+    statement: >-
+      Against the pre-registration's expectation of nominal Type I coverage, the
+      H0 simulation under the fast NumPy-OLS implementation surfaced Type I
+      inflation (.053–.091) for H2–H5 — a simulation-implementation artifact
+      (omitted firm-clustered SEs interacting with the firm-random-effects DGP),
+      not a defect in the empirical design — which point-estimate pre-registration
+      alone would not have caught.
+    expected_observation: "Nominal Type I error at α = .05 across all H0 specifications."
+    source_method: M4
+    affects_nodes: [F3, P9]
+    motivates: [P9]
+    body_sections: ["§Mechanism Tests — Post-hoc deviation transparency"]
+
+# ============================================================================
+# Cross-paper engagement
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026am
+    relationship: tests
+    spine_nodes: [P1, P3, P4, P5, P6, P7, O1]
+    note: >-
+      EMPIRICAL COMPANION. This paper operationalizes 2026am's theoretical
+      propositions P1–P5 (the information-theoretic multi-interface specification
+      model) as testable archival hypotheses H1–H5, restating its constructs (the
+      substrate S, the perception-weight vectors w_i, the rendering operator, the
+      coherence condition, the function-as-friction-tax mechanism) and its
+      boundary table. SHARED-SEED relationship: both papers draw on the SAME
+      pre-registered Monte Carlo simulation infrastructure at the SAME fixed seed
+      (np.random.seed(20260525)) and cite the SAME code companion (concept DOI
+      10.5281/zenodo.20379981); the phase-shift mechanism test reported here (O1,
+      F1, m_phase_shift) is the same simulation 2026am rests on. This paper
+      "tests" 2026am in the spine sense (turns its propositions into falsifiable
+      empirical predictions); it does not contradict it.
+
+# ============================================================================
+# External anchor literature
+# ============================================================================
+external_anchors:
+  - {citation_key: anderson-2003-sticky-costs, role: foundational_mechanism, spine_nodes: [P3], note: "SG&A sticky-cost asymmetry — the empirical fact the friction tax explains (cite via paper's Anderson, Banker, and Janakiraman 2003)"}
+  - {citation_key: eisfeldt-2013-organization-capital, role: contrasted_construct, spine_nodes: [P1], note: "Organization capital from SG&A residuals — a downstream consequence, not the substrate"}
+  - {citation_key: belo-2014-brand-capital, role: measurement_anchor, spine_nodes: [P4], note: "Brand-capital perpetual-inventory construction (δ₆ = .50)"}
+  - {citation_key: loughran-2014-readability, role: contrasted_construct, spine_nodes: [P2], note: "Disclosure readability — a property of the rendering, not the substrate"}
+  - {citation_key: bushee-2018-linguistic-complexity, role: contrasted_construct, spine_nodes: [P2], note: "Linguistic complexity — cross-sectional, orthogonal to within-firm year-over-year coherence"}
+  - {citation_key: hassan-2019-firm-level-political-risk, role: method_template, spine_nodes: [P2], note: "Text-as-treatment firm-year exposure variable — the construction template"}
+  - {citation_key: hannigan-2019-topic-modeling, role: method_template, spine_nodes: [P2], note: "Embedding/topic-modeling synthesis justifying contextual embeddings"}
+  - {citation_key: callaway-2021-did-multiple-periods, role: estimator, spine_nodes: [RC1], note: "Callaway-Sant'Anna group-time ATT — the staggered-DiD estimator"}
+  - {citation_key: goodman-bacon-2021-did-timing, role: estimator, spine_nodes: [RC1], note: "Goodman-Bacon decomposition — TWFE-bias diagnostic"}
+  - {citation_key: oster-2019-coefficient-stability, role: diagnostic, spine_nodes: [A2], note: "Oster δ-bound — omitted-variable-bias threats diagnostic"}
+  - {citation_key: babina-2024-ai-firm-growth, role: treatment_source, spine_nodes: [P6], note: "Burning Glass AI-hiring panel — AI-deployment dating + AI-hiring proxy"}
+  - {citation_key: raisch-2021-automation-augmentation, role: motivating_problem, spine_nodes: [P6], note: "Automation-augmentation paradox — the unresolved moderator H4 specifies"}
+  - {citation_key: radner-1993-decentralized-information, role: formal_lineage, spine_nodes: [P3], note: "Decentralized information processing — organizational layers as endogenous costs"}
+  - {citation_key: choudhury-2021-work-from-anywhere, role: design_precedent, spine_nodes: [RC1], note: "Strategy-field Callaway-Sant'Anna staggered-policy precedent"}
+  - {citation_key: nonaka-1994-knowledge-creation, role: scope_anchor, spine_nodes: [C3], note: "Codifiability scope condition (tacit vs codified knowledge)"}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Are the pre-registered effects actually present in real firms? Archival panel confirmation is the companion empirical paper (Paper B v2.0), in execution. (L1)"
+  - "Does convergence or divergence of the continuous-SCI and four-event-sharp-SCI estimates obtain, and what does divergence imply about the differential treatment populations? (L3, RC1)"
+  - "Can the within-firm year-over-year coherence signal be validated as carrying the same construct meaning across non-US disclosure regimes (UK, EU, Japan)? (L5)"
+  - "Does direct conjoint-analysis measurement of the latent perception-weight vectors w_i confirm the construct validity the archival design takes as latent? (L6)"
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

@@ -1,0 +1,32 @@
+# ONTOLOGY.yaml module - 2026an
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026an
+schema_version: 0.1
+
+owns:
+  - term_key: specification-coherence-index
+    label: "Specification Coherence Index"
+    canonical_form: "Specification Coherence Index (SCI)"
+    definition: "A scalable archival measure of specification readiness built from year-over-year cosine similarity of a firm's 10-K narrative embeddings, with a four-event sharp index as robustness."
+    first_section: "Theoretical Framework"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+  - {term_key: specification-readiness}
+  - {term_key: multi-interface-specification-model}
+
+refines: []
+

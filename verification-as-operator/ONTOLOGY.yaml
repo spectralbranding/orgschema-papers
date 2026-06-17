@@ -1,0 +1,52 @@
+# ONTOLOGY.yaml module - 2026ae
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026ae
+schema_version: 0.1
+
+owns:
+  - term_key: verification-as-operator
+    label: "Verification as Operator"
+    canonical_form: "verification as operator"
+    definition: "The formalization of organizational verification as a spectral projection operator P that maps organizational states onto invariant subspaces defined by acceptance criteria."
+    first_section: "Abstract / Introduction"
+  - term_key: spectral-projection-operator
+    label: "Spectral Projection Operator"
+    canonical_form: "spectral projection operator"
+    definition: "An idempotent (P^2=P), self-adjoint (P*=P) linear map onto an invariant subspace whose rank determines how many independent dimensions of organizational performance the verification process can discriminate."
+    first_section: "Formal Model"
+  - term_key: rank-1-audit
+    label: "Rank-1 Audit"
+    canonical_form: "rank-1 audit"
+    definition: "Conventional audit modeled as a degenerate rank-1 projection onto a single compliance axis, discarding by construction all information orthogonal to that axis."
+    first_section: "Formal Propositions"
+  - term_key: full-rank-cascade
+    label: "Full-Rank Cascade"
+    canonical_form: "full-rank cascade"
+    definition: "The OST acceptance-testing cascade modeled as a full-rank projection in which each hierarchical level independently projects onto a distinct performance subspace while preserving the specification's dimensional structure."
+    first_section: "Formal Propositions"
+  - term_key: cascade-consistency-condition
+    label: "Cascade Consistency Condition"
+    canonical_form: "cascade consistency condition"
+    definition: "The requirement that range(P_k) is not contained in kernel(P_{k+1}) for all k, ensuring each cascade level contributes independent information so the cascade remains full-rank."
+    first_section: "Formal Model and Propositions"
+  - term_key: verification-bandwidth
+    label: "Verification Bandwidth"
+    canonical_form: "verification bandwidth"
+    definition: "The maximum number of independent specification conditions an organization can evaluate per verification cycle, which bounds the projection rank it can sustain at steady state."
+    first_section: "Formal Model — Proposition 3"
+
+imports:
+  - {term_key: spectral-dimensions}
+  - {term_key: re-collapse}
+  - {term_key: six-tier-ontology}
+  - {term_key: six-level-tdd-cascade}
+
+refines: []
+

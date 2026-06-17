@@ -1,0 +1,39 @@
+# ONTOLOGY.yaml module - orgschema-audit
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: orgschema-audit
+schema_version: 0.1
+
+owns:
+  - term_key: orgschema-audit
+    label: "OrgSchema Audit"
+    canonical_form: "OrgSchema Audit"
+    definition: "A structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels, asking whether every operational parameter traces backward to a customer-experience justification and every experience goal traces forward to a verifiable implementation."
+    first_section: "Abstract / Introduction"
+  - term_key: cascade-position-prioritization
+    label: "Cascade-Position Prioritization"
+    canonical_form: "cascade-position prioritization"
+    definition: "The remediation principle (Proposition 1) that specification failures at higher cascade levels predict greater operational dysfunction than lower-level failures because higher-level failures invalidate the justification for all dependent levels."
+    first_section: "The Six-Level Specification Cascade — Proposition 1"
+  - term_key: specification-maturity
+    label: "Specification Maturity"
+    canonical_form: "specification maturity"
+    definition: "The degree to which an organization's operations are governed by explicit, testable, traceable specifications at each cascade level, as opposed to undocumented or misaligned ones."
+    first_section: "Abstract / Introduction"
+
+imports:
+  - {term_key: spectral-brand-theory}
+  - {term_key: spectral-dimensions}
+  - {term_key: cohort}
+  - {term_key: brand-conviction}
+  - {term_key: six-level-tdd-cascade}
+  - {term_key: organizational-schema-theory}
+
+refines: []
+

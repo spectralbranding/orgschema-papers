@@ -1,0 +1,500 @@
+# SPINE.yaml — Organizational Metamerism / "Org as Metadata" (2026af)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md
+# decision D4 (SPINE-for-all-active-canonical). This is NOT a generative
+# spine-first artifact — the prose preexists; this file is a faithful backbone
+# extracted after the fact. Reviewers should treat it as a description of the
+# paper's actual argument, not a drafting gate that the paper passed through.
+#
+# Substrate paper_key is the STRING "org-as-metadata" (the canonical_number
+# 2026af is metadata, not the substrate key).
+#
+# Schema v0.2: the paper is primarily theory (four propositions + formal
+# Appendix A), but it ships a companion computation script
+# (metamerism_set_simulation.py) that produces simulated, ordinal set-size
+# predictions (Tables A1-A3). That author-produced simulation is represented
+# here as the M/m/F chain (M1 -> m_setsize -> F1) so the computed numbers are
+# evidence, not bare prose. The theoretical backbone is P1-P9 + formal
+# properties (D1-D4) + alternatives + boundary conditions + limitations.
+#
+# Citation keys below are verified against [internal path removed]
+# (sources table); none are invented.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"
+paper_key: "org-as-metadata"
+provenance: retrofit
+title: >-
+  Organizational Metamerism: Observer-Relative State Equivalence in
+  Organizational Configurations
+target_venue_primary: "Organization Science"
+status: >-
+  Retrofit backbone spine extracted 2026-06-14 from completed paper.md (D4).
+  Working Paper v1.0.0 (April 2026), DOI 10.5281/zenodo.19869871; paper is
+  canonical/active in the corpus. This spine is a descriptive back-extraction,
+  not a drafting gate.
+
+thesis: |
+  Structurally distinct organizations can produce value outputs that a given
+  evaluative observer cannot tell apart while executing the same process. This
+  paper names that condition organizational metamerism — an observer-relative,
+  process-relative STATE equivalence (distinct configurations equivalent NOW),
+  not the PATH equivalence that equifinality describes (different histories
+  reaching the same end state). Metamerism is borrowed from color science,
+  where two distinct spectral distributions match for a particular observer
+  under a particular illuminant, and is lifted one level up from the brand-signal
+  metamerism of the corpus's spectral brand theory to whole organizational
+  configurations. The phenomenon rests on a temporal stability hierarchy — value
+  outputs change more slowly than processes, which change more slowly than
+  configurations — explained by an organization-as-metadata mechanism: form is
+  the revisable configuration layer for processes, not the productive logic
+  itself, so it can be re-specified (a schema migration) without altering what is
+  produced, provided the migration is lossless. The size of the metamerism set
+  M(P,O) is a derived quantity: it expands as coordination logic is absorbed into
+  process specifications (falling coordination cost) and contracts as the tacit
+  knowledge intensity of the process rises. The framework yields four testable
+  propositions with explicit confirmation/falsification criteria, most notably
+  that AI-mediated coordination decouples organizational-restructuring frequency
+  from process-change frequency, bounded by tacit knowledge intensity.
+
+# ============================================================================
+# Boundary conditions — where the framework's claims hold cleanly
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The organization produces measurable value output that can be compared
+      across configurations for a specified observer (clear quality metrics:
+      software reliability, food-safety scores, on-time rates). Multi-dimensional
+      or highly contested outputs strain the comparison.
+    observable: "An evaluation function f_O whose value-output class is well-defined."
+    excludes: "Identity-laden / highly institutionalized settings where form is weighed independently of output unless a legitimacy observer is modeled explicitly."
+  - id: C2
+    statement: >-
+      The observer is specified: metamerism is undefined without naming WHICH
+      evaluative observer, evaluating WHICH process output, under WHICH
+      observation conditions. Aggregating across observer types measures a union
+      or intersection of distinct sets, not one set.
+    observable: "A named observer class with a stated evaluation function."
+    excludes: "Studies that report 'equivalent configurations' without specifying the observer."
+
+# ============================================================================
+# Propositions — the theoretical backbone
+# ============================================================================
+propositions:
+  - id: P1
+    statement: >-
+      (Phenomenon) Organizational metamerism exists and is distinct from
+      equifinality: two structurally distinct configurations, both currently
+      executing the same process, can produce value outputs that a given observer
+      cannot discern — a STATE equivalence (simultaneous, structural) rather than
+      a PATH equivalence (retrospective, historical).
+    antecedents: []
+    evidence:
+      - type: illustrative
+        anchor: "Two software-maintenance organizations (hierarchy vs self-organizing API-first network) deliver client-indistinguishable releases for the same SLAs while remaining non-convergent."
+      - type: citation
+        anchor: "Equifinality establishes path equivalence but not simultaneous state equivalence."
+        citation_keys: [katz-1978-social-psychology-organizations, gresov-1997-equifinality-functional-equivalence]
+    body_sections: ["Opening vignette", "Theoretical Foundations: Equifinality and Its Limits"]
+  - id: P2
+    statement: >-
+      (Definition / observer-relativity) Two configurations A and B are metamers
+      with respect to process P and observer O iff (i) they are structurally
+      distinct configurations both executing P and (ii) O detects no difference
+      between their value outputs. The relation is process-relative AND
+      observer-relative; the metamerism set M(P,O) is the equivalence class of a
+      reference configuration under O's evaluation function. The structure is the
+      tripartite color-science one (two stimuli, observer cone sensitivities,
+      illuminant) lifted to (two configurations, observer evaluation function,
+      process).
+    antecedents: [P1]
+    evidence:
+      - type: citation
+        anchor: "Color-science metamerism + observer metamerism / metamer mismatch under illuminant change as the structural model."
+        citation_keys: [wyszecki-1982-color-science-concepts, foster-2011-color-constancy-vision]
+      - type: corpus
+        anchor: "Brand-signal metamerism (2026e) extended one structural level up from brand signals to organizational configurations."
+    body_sections: ["Organizational Metamerism: Definition and Observer-Relativity", "Appendix A"]
+  - id: P3
+    statement: >-
+      (Temporal stability hierarchy — Proposition 1 in the paper) Value outputs
+      change less frequently than the processes that produce them, which change
+      less frequently than the organizational configurations that execute them.
+      The ordering holds across industries, technological eras, and national
+      contexts, and is a consequence of each layer's differential sensitivity to
+      different kinds of technological change (value anchored in slow-changing
+      needs/institutional logics; process in physical/cognitive technology;
+      configuration in fast-changing coordination technology).
+    antecedents: [P1]
+    evidence:
+      - type: illustrative
+        anchor: "Communication value persists for millennia while process (courier->telegraphy->packet switching) and organizational form (messenger corps->telecoms->ISPs) restructure on decade/year timescales."
+      - type: analytic
+        anchor: "Cross-domain parallel: nested pace layers in geology, evolutionary biology, and Brand's clock-of-the-long-now hierarchy."
+    falsifier: "A systematic finding that organizational form is more stable than process across industries, or a class of organizations (e.g. ideologically driven, frequent value redefinition) in which the ordering inverts."
+    body_sections: ["The Temporal Stability Hierarchy", "Propositions: Proposition 1"]
+  - id: P4
+    statement: >-
+      (Organization-as-metadata mechanism) Organizational form is the
+      configuration layer for a set of processes — it specifies how process steps
+      are instantiated, coordinated, and resourced without containing the
+      productive logic itself, analogous to a database schema or container config
+      relative to the data/application. This grounds the hierarchy: form is the
+      most revision-tolerant layer, so a configuration can be re-specified
+      without changing what the process produces, PROVIDED the revision maps all
+      process responsibilities to the new configuration.
+    antecedents: [P3]
+    evidence:
+      - type: analytic
+        anchor: "Schema/container metaphor: revise tables/environment without changing data/application behavior given correct mapping."
+      - type: corpus
+        anchor: "Consistent with the organizational-specification framework (2026i): form as revisable, versioned, migratable schema."
+      - type: citation
+        anchor: "Ostensive aspect of routines is the metadata for performative enactment."
+        citation_keys: [pentland-2005-organizational-routines-as]
+    body_sections: ["Organization as Metadata: The Explanatory Mechanism"]
+  - id: P5
+    statement: >-
+      (Restructuring as schema migration; Corollary 1) Because form is metadata,
+      organizational change is a schema migration with correctness criteria.
+      Reconfigurations that preserve process integrity produce no detectable
+      change in value output; reconfigurations that drop coordination
+      responsibilities, ambiguate role assignments, or break information flows
+      produce value loss regardless of how elegant the new configuration is. The
+      primary failure mode of restructuring is therefore LOSSY MIGRATION, not
+      resistance, culture clash, or leadership failure.
+    antecedents: [P4]
+    evidence:
+      - type: analytic
+        anchor: "Reframes change management from a sociological question (overcome resistance) to a structural one (ensure lossless migration)."
+    falsifier: "Evidence that process-preserving reconfigurations routinely change value output, or that restructuring failure is dominated by sociological rather than coordination-loss causes even when migration is verified lossless."
+    body_sections: ["The Temporal Stability Hierarchy (Corollary 1)", "Discussion: Practical Implications"]
+  - id: P6
+    statement: >-
+      (Metamerism Set Expansion — Proposition 2) M(P,O) grows as the proportion
+      of P's coordination logic embedded in the process specification increases
+      (codifiability up, coordination cost down) and shrinks as the tacit
+      knowledge intensity of P rises. Codifiability and tacit intensity enter as
+      independent, additive, separable variables. Schematically
+      |M(P,O)| = f(codifiability(P), 1/c(P), 1/tau(P)).
+    antecedents: [P3, P4]
+    evidence:
+      - type: illustrative
+        anchor: "API-first software firms (coordination encoded in interface contracts) show broader sets than legal practices (relational tacit knowledge binds output to specific relationships)."
+      - type: citation
+        anchor: "Knowledge-based view: the irreducible core is the integration of tacit knowledge, unpreserved by configuration substitution; tacit dimension."
+        citation_keys: [grant-1996-toward-knowledgebased-theory, polanyi-1966-the-tacit-dimension]
+    falsifier: "Evidence that value-output quality is systematically tied to specific organizational forms regardless of codification level, or that codification/automation do not predict increased variance in viable forms."
+    body_sections: ["Antecedents of Metamerism: What Determines the Set's Size", "Propositions: Proposition 2"]
+  - id: P7
+    statement: >-
+      (Coordination compression -> organizational volatility — Proposition 3) As
+      AI reduces the marginal cost of coordination, the rate of change of
+      organizational form rises while the rate of change of process stays stable;
+      the ratio of organizational-change frequency to process-change frequency
+      increases with AI coordination adoption. Falling coordination costs make
+      restructuring continuous rather than episodic, extending and partially
+      revising the punctuated-equilibrium model.
+    antecedents: [P3, P6]
+    evidence:
+      - type: illustrative
+        anchor: "AI-early-adopter tech firms since 2022: repeated headcount/reporting-line changes without corresponding core software-delivery process changes; 'headless firm' architectures absorb coordination roles into AI agents."
+      - type: citation
+        anchor: "Coordination compression: AI as prediction-cost reduction; coordination (not automation) as AI's organizational payoff; punctuated equilibrium baseline."
+        citation_keys: [agrawal-2018-prediction-machines-simple, choudary-2026-ais-big-payoff, romanelli-1994-organizational-transformation-as, klein-2026-headless-firm-arxiv]
+    falsifier: "Evidence that AI adoption raises organizational-restructuring and process-change frequency equally, or that restructuring frequency has not risen in AI-adopting firms (AI not acting as a coordination-cost reducer)."
+    body_sections: ["Antecedents of Metamerism (coordination cost regime)", "Propositions: Proposition 3"]
+  - id: P8
+    statement: >-
+      (Tacit Knowledge Constraint — Proposition 4) The expansion of M(P,O) as
+      coordination costs fall is bounded by the tacit knowledge intensity of P.
+      Firms in high-tacit-knowledge industries show smaller reductions in
+      coordination overhead than firms in high-codification industries at
+      equivalent AI-coordination adoption. Tacit intensity is a lower bound on
+      configuration substitutability that coordination-cost reductions cannot
+      eliminate.
+    antecedents: [P6, P7]
+    evidence:
+      - type: illustrative
+        anchor: "Consulting firms keep organizational depth/partnership structures despite high AI adoption; logistics firms at equivalent adoption reduce hierarchical layers."
+      - type: corpus
+        anchor: "Formalized as Property A3 (tacit boundary) in Appendix A."
+    falsifier: "Evidence that AI adoption expands the set at equal rates regardless of tacit intensity, or that AI is codifying previously-tacit coordination fast enough to dissolve the tacit boundary."
+    body_sections: ["Propositions: Proposition 4", "Appendix A: Property A3 / A4"]
+  - id: P9
+    statement: >-
+      (Complementarity, not rivalry) Organizational metamerism complements rather
+      than competes with the three nearest literatures: equifinality (path vs
+      state equivalence; observer-relative; derived rather than catalogued set),
+      organizational routines / ostensive-performative (observer-relativity lifted
+      from routine to organizational level), and pace layering (rate-of-change
+      heterogeneity vs simultaneous state equivalence; metamerism adds the
+      observer-relative set with no pace-layering counterpart). It also reframes
+      institutional decoupling positively as structural flexibility for
+      technically oriented observers.
+    antecedents: [P1, P2, P3]
+    evidence:
+      - type: citation
+        anchor: "The three frames (Table 3) and the routines / pace-layering anchors."
+        citation_keys: [gresov-1997-equifinality-functional-equivalence, fiss-2011-building-better-causal, pentland-2005-organizational-routines-as, beane-2025-pace-layering-as, puranam-2014-whats-new-about]
+    body_sections: ["Equifinality and Its Limits (Table 1)", "Organizational Routines", "Pace Layering (Table 3)", "Discussion: Theoretical Implications"]
+
+# ============================================================================
+# Formal derivations — Appendix A properties of M(P,O)
+# ============================================================================
+derivations:
+  - id: D1
+    statement: >-
+      (Definition A1) M(P,O) = {C in configuration space : f_O(C,P) = f_O(C*,P)}
+      — the equivalence class of a reference configuration C* under observer O's
+      equivalence relation on value output, conditioned on process P. M(P,O) is a
+      DERIVED set, not an empirical enumeration.
+    antecedents: [P2]
+    body_sections: ["Appendix A: Definition A1"]
+  - id: D2
+    statement: >-
+      (Property A1, observer-relativity) For observers with different evaluation
+      functions, M(P,O1) != M(P,O2) in general, because observers differ in
+      dimensional sensitivity. The 'set of equivalent configurations' is undefined
+      without specifying the observer.
+    antecedents: [D1, P2]
+    body_sections: ["Appendix A: Property A1"]
+  - id: D3
+    statement: >-
+      (Property A2, coordination-cost mediation) |M(P,O)| increases monotonically
+      as c(P) decreases. As c(P) -> 0, |M(P,O)| -> |configuration space| (all
+      feasible configurations become equivalent for technically oriented
+      observers); as c(P) -> infinity, |M(P,O)| -> 1.
+    antecedents: [D1, P6, P7]
+    body_sections: ["Appendix A: Property A2"]
+  - id: D4
+    statement: >-
+      (Properties A3-A4, tacit boundary + partial order) |M(P,O)| decreases
+      monotonically as tau(P) increases; at tau=1, |M(P,O)|=1. For equal
+      codifiability and coordination regime, tau(P) < tau(P') implies
+      M(P,O) superset-or-equal M(P',O) — metamerism sets are nested under set
+      inclusion by tacit intensity. This is the formal basis of Proposition 4.
+    antecedents: [D1, P8]
+    body_sections: ["Appendix A: Properties A3, A4"]
+
+# ============================================================================
+# Methods / measurements / findings — the companion simulation
+# (author-produced ordinal predictions; the v0.2 evidence chain)
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Companion computation script (metamerism_set_simulation.py): a
+      self-contained, fixed-seed (42) Python simulation implementing the
+      continuous set-size approximation |M(P,O)| ~ S * kappa(P) /
+      [c(P) * (1 + tau(P))], sweeping coordination cost c(P), tacit intensity
+      tau(P), codifiability kappa(P), and two observer profiles to reproduce the
+      directional predictions of Tables A1-A3 and Table 2.
+    type: "deterministic_simulation"
+    inputs: ["kappa(P), c(P), tau(P) sweep ranges; two observer evaluation profiles"]
+    outputs: ["Tables A1 (set growth as c falls), A2 (tacit boundary), A3 (observer-relativity)"]
+    code_anchor: "orgschema-papers/org-as-metadata/code/metamerism_set_simulation.py"
+    reproducibility:
+      seed: "42"
+      runtime_environment: "uv run --with numpy,matplotlib python metamerism_set_simulation.py"
+    body_sections: ["Discussion: Companion Computation Script", "Appendix A: Illustrative Set-Size Dynamics"]
+measurements:
+  - id: m_setsize
+    statement: >-
+      Simulated ordinal set sizes: monotonic growth as c(P) falls 1.0 -> 0.05 at
+      fixed codifiability/tacit intensity (Table A1); high-tau processes retain
+      substantially narrower sets than low-tau even as c falls by 10x (Table A2);
+      a technically oriented observer O1 has systematically larger sets than an
+      institutional observer O2 for the same process portfolio (Table A3).
+    source_observations: []
+    generating_method: M1
+    value: "ordinal/illustrative (not calibrated estimates)"
+    units: "relative configuration-set size"
+    body_sections: ["Appendix A: Illustrative Set-Size Dynamics"]
+findings:
+  - id: F1
+    statement: >-
+      The simulation confirms the framework's directional predictions
+      (Properties A2-A4) are jointly realizable in a single continuous functional
+      form: set size rises with falling coordination cost, is bounded below by
+      tacit intensity, and is strictly observer-indexed. The numbers are
+      illustrative ordinal predictions, not calibrated estimates — empirical
+      calibration requires domain measurement of c(P) and tau(P).
+    type: "simulation_demonstration"
+    source_measurements: [m_setsize]
+    generating_method: M1
+    antecedents: [D3, D4]
+    falsifier: "If the continuous form cannot jointly satisfy A2-A4, or if the observer profiles produce identical set sizes, the directional package is not internally consistent."
+    body_sections: ["Appendix A", "Discussion: Methodological Implications"]
+
+# ============================================================================
+# Alternative explanations — rivals the framework rules out
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Persistent structural diversity is fully explained by equifinality — it is
+      the historical residue of different paths to equivalent performance, with
+      no need for a state-equivalence concept.
+    rules_out_required: [P1]
+    ruled_out_by: [P1, P2, P9]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Equifinality is path equivalence, established retrospectively by historical
+      analysis, and is observer-independent. It cannot generate the
+      observer-relative, process-relative, simultaneous state-equivalence claim,
+      nor derive when the equivalence set expands/contracts. The frameworks are
+      complementary, not substitutes.
+    body_sections: ["Equifinality and Its Limits", "Discussion: Reframing equifinality"]
+  - id: A2
+    statement: >-
+      Pace layering already covers this: organizational layers change at
+      different rates, so the temporal hierarchy is not novel.
+    rules_out_required: [P3]
+    ruled_out_by: [P3, P9]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Rate-of-change heterogeneity implies SEQUENTIAL equivalence (different
+      configurations adequate at different times). It does not derive SIMULTANEOUS
+      state equivalence (currently-different configurations currently equivalent),
+      and pace layering has no observer-relative metamerism-set counterpart.
+    body_sections: ["Pace Layering and the Distinction from Metamerism (Table 3)"]
+  - id: A3
+    statement: >-
+      Observer-relativity here is just sensemaking — actors imposing different
+      interpretive frames on equivocal experience.
+    rules_out_required: [P2]
+    ruled_out_by: [P2]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Sensemaking concerns meaning construction (interpretation frames on
+      experience); metamerism concerns evaluation-function sensitivity (whether an
+      observer can DETECT value-output differences across configurations). The two
+      are orthogonal: a configuration can be unambiguously meaningful yet metameric
+      with a structurally different one.
+    body_sections: ["Definition and Observer-Relativity (Weick note)"]
+  - id: A4
+    statement: >-
+      Contingency-fit theory (SARFIT) says misfit imposes performance penalties,
+      contradicting the claim that many configurations are equivalent.
+    rules_out_required: [P6]
+    ruled_out_by: [P6]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Contingency-fit documents the narrow-fit, HIGH coordination-cost regime;
+      the metamerism framework describes how the equivalence set EXPANDS as
+      coordination costs fall. The two operate at different points on the
+      coordination-cost dimension and make non-contradictory predictions.
+    body_sections: ["Propositions: Proposition 2 (Donaldson note)"]
+
+# ============================================================================
+# Limitations — honest scope
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The framework applies most cleanly to economic organizations producing
+      measurable outputs; extension to identity-laden / highly institutionalized
+      settings requires explicitly modeling legitimacy observers whose evaluation
+      functions weight form independently of output.
+    severity: "scope-bounding"
+    affects: [P2, P6]
+    body_sections: ["Limitations"]
+  - id: L2
+    statement: >-
+      The paper derives propositions but does not empirically demonstrate them;
+      they are a starting point for empirical research programs, in the
+      Organization Science tradition of testable theoretical contributions, not
+      established empirical facts. The companion simulation produces ordinal,
+      uncalibrated predictions only.
+    severity: "future-work"
+    affects: [P3, P6, P7, P8, F1]
+    body_sections: ["Limitations", "Future Research"]
+  - id: L3
+    statement: >-
+      Whether advancing AI capabilities erode the tacit-knowledge boundary is an
+      empirical question the theory is designed to inform rather than prejudge;
+      if AI progressively codifies previously-tacit coordination, the tacit bound
+      (P8/D4) could weaken as a constraint.
+    severity: "scope-bounding"
+    affects: [P8]
+    body_sections: ["Limitations", "Propositions: Proposition 4 (falsification)"]
+
+# ============================================================================
+# Cross-paper engagement
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026e
+    relationship: extends
+    spine_nodes: [P2]
+    note: >-
+      Spectral brand metamerism formalizes how distinct signal portfolios produce
+      identical evaluations in a given observer cohort; this paper lifts the same
+      metamerism structure one level up, from brand signals to organizational
+      configurations.
+  - paper_key: 2026i
+    relationship: applies
+    spine_nodes: [P4]
+    note: >-
+      OST's treatment of organizational form as a structured, revisable,
+      versioned, migratable specification grounds the organization-as-metadata
+      mechanism.
+  - paper_key: 2026h
+    relationship: applies
+    spine_nodes: [P6]
+    note: >-
+      The specification-impossibility result (high-dimensional spec spaces are
+      geometrically intractable to characterize exhaustively) implies any observed
+      metamerism set is a sample of a larger theoretical set, redirecting empirical
+      work to the derived determinants of set size.
+  - paper_key: 2026ag
+    relationship: extends
+    spine_nodes: [P3]
+    note: >-
+      The six-tier ontology of organizational transferability is the finer
+      decomposition (Owner Intent / Business Model / Entity / Product / Process /
+      Organization) within which the coarse three-layer value-process-configuration
+      hierarchy here is embedded.
+  - paper_key: 2026ah
+    relationship: extends
+    spine_nodes: [P8]
+    note: >-
+      Brand portfolios as multiple Tier-4 instances on shared substrate extend the
+      intra-firm equivalence studied here to the multi-brand case, where the
+      cross-brand metamerism set is bounded by tier-level separability.
+
+# ============================================================================
+# External anchor literature (keys verified against corpus_substrate.sqlite)
+# ============================================================================
+external_anchors:
+  - {citation_key: gresov-1997-equifinality-functional-equivalence, role: contrast, spine_nodes: [P1, P9, A1], note: "Equifinality = path equivalence; the foil the state-equivalence claim sharpens against."}
+  - {citation_key: katz-1978-social-psychology-organizations, role: background, spine_nodes: [P1], note: "Introduces equifinality to organizational theory from general systems theory."}
+  - {citation_key: fiss-2011-building-better-causal, role: contrast, spine_nodes: [P9], note: "First- vs second-order equifinality; metamerism adds observer-relativity + derived mechanism to second-order."}
+  - {citation_key: pentland-2005-organizational-routines-as, role: builds_on, spine_nodes: [P4, P9], note: "Ostensive/performative distinction; ostensive = metadata for performative; observer-relativity lifted to organizational level."}
+  - {citation_key: beane-2025-pace-layering-as, role: contrast, spine_nodes: [P3, P9, A2], note: "Pace layering = rate-of-change heterogeneity; metamerism adds simultaneous state equivalence + the metamerism set."}
+  - {citation_key: wyszecki-1982-color-science-concepts, role: foundational_analogy, spine_nodes: [P2], note: "Color-science metamerism: two spectra match for one observer under one illuminant — the tripartite structural model."}
+  - {citation_key: foster-2011-color-constancy-vision, role: foundational_analogy, spine_nodes: [P2], note: "Observer metamerism + metamer mismatch under illuminant change = model for cross-class observer disagreement."}
+  - {citation_key: grant-1996-toward-knowledgebased-theory, role: supports, spine_nodes: [P6], note: "Knowledge-based view: tacit-knowledge integration is the irreducible core unpreserved by configuration substitution."}
+  - {citation_key: polanyi-1966-the-tacit-dimension, role: supports, spine_nodes: [P6, P8], note: "Tacit knowledge as embodied/relational and uncodifiable — the lower bound on set expansion."}
+  - {citation_key: agrawal-2018-prediction-machines-simple, role: supports, spine_nodes: [P7], note: "AI as prediction-cost reduction, subsuming coordination-under-uncertainty."}
+  - {citation_key: choudary-2026-ais-big-payoff, role: supports, spine_nodes: [P7], note: "Coordination compression (not automation) as AI's organizational payoff."}
+  - {citation_key: klein-2026-headless-firm-arxiv, role: illustrative, spine_nodes: [P7], note: "Headless-firm architectures: AI agents absorb a human management coordination layer (provisional, arXiv)."}
+  - {citation_key: romanelli-1994-organizational-transformation-as, role: contrast, spine_nodes: [P7], note: "Punctuated equilibrium baseline that P7 extends/revises toward continuous restructuring."}
+  - {citation_key: puranam-2014-whats-new-about, role: motivates, spine_nodes: [P9], note: "When are 'new' forms genuinely novel vs functionally equivalent — operationalized as non-membership in M(P,O)."}
+  - {citation_key: spence-1973-job-market-signaling, role: supports, spine_nodes: [P6], note: "Organizational form as a signal of unobservable process quality, narrowing the set for inference-dependent observers."}
+  - {citation_key: meyer-1977-institutionalized-organizations-formal, role: extends, spine_nodes: [P9], note: "Institutional decoupling reframed positively as structural flexibility for technically oriented observers."}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Empirical calibration of c(P) and tau(P) per process/industry — the simulation gives only ordinal predictions (L2, F1)."
+  - "Does advancing AI erode the tacit-knowledge boundary fast enough to dissolve the P8/D4 constraint? (L3)"
+  - "Cross-observer-class disagreement: which observer classes are consequential for a given firm's competitive environment, and how do union vs intersection of M(P,Oi) behave empirically? (C2, D2)"
+  - "Extension to identity-laden/institutional settings via explicit legitimacy-observer evaluation functions (L1)."
+  - "The proximate spin-off 'Organizational Form as Signal' (Spence 1973; Connelly et al. 2011) for the institutional-observer class where form dominates output."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

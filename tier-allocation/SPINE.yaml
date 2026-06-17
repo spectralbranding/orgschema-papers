@@ -1,0 +1,670 @@
+# SPINE.yaml — Tier Allocation (2026aj)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md, NOT
+# Faithful description of the paper's actual argument backbone — no aspirational
+# extension.
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"):
+# the paper is a formal-math contribution with author-computed numbers
+# (calibrated decay-rate table, back-of-envelope V_LR multipliers, CES
+# robustness table, optimal dollar-share comparative statics from two
+# deterministic companion scripts). Methods / measurements / findings are
+# therefore first-class so the computed results are represented as evidence,
+# not asserted in prose. Propositions P1–P7 are the paper's analytic claims;
+# the calibration table and the simulation outputs are the empirical chain.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"
+paper_key: "2026aj"
+provenance: retrofit
+title: >-
+  Where to Invest Within the Firm: Organizational Tiers, Discount Rates,
+  and AI Penetration
+target_venue_primary: "TBD (strategy / management; AMR / SMJ-tier theory)"
+status: >-
+  Working Paper v1.0.0 (May 2026, DOI 10.5281/zenodo.20072288). Retrofit spine
+  extracted 2026-06-14 from the completed paper.md.
+
+thesis: |
+  Investment direction within a firm — not merely investment intensity — is the
+  consequential strategic choice. Two firms with identical revenues, margins, and
+  aggregate investment can generate exit multiples of 2x versus 9x because they
+  routed investment to organizational tiers that differ in substrate durability.
+  The paper formalizes cross-tier allocation as a discounted Cobb-Douglas
+  aggregator over a six-tier hierarchy with tier-specific decay rates delta_t
+  (.50/year at the organizational surface down to .05-.10/year at foundational
+  layers) and Jorgensonian per-tier user costs (delta_t + r). Optimizing subject
+  to the rental-rate budget constraint yields the closed-form rule
+  w_t*(r) = alpha_t / (delta_t + r) and the comparative static d w_6*/dr > 0:
+  higher-discount-rate principals optimally over-allocate to the high-decay
+  surface tier. Four propositions link pre-deal surface-tier intensity, governance
+  horizon, cost-of-capital shocks, and capability-rotation stage to M&A outcomes.
+  Part II perturbs the same primitives with two AI-specific shocks per tier — a
+  cost shock gamma_t and a durability shock Delta_t — yielding the generalized
+  rule w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)] and three
+  further propositions: surface-tier (Tier 6) AI raises short-run earnings yet
+  lowers long-run multiples; a discrete substrate-building threshold exists at
+  Tier 4; and AI's net value effect flips sign with the principal's effective
+  discount rate. The tier — not the division, the capability, or the resource —
+  is the missing architectural unit of allocation.
+
+# ============================================================================
+# Boundary conditions / scope (Limitations section, Assumptions 1-3 + scope)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Decay rates delta_t are exogenous, time-invariant constants common to all
+      firms within a sector (Assumption 1). Holds for mature firms in stable
+      sectors (CPG, industrial, financial services) where delta_t is a structural
+      property of the tier, not the firm.
+    observable: "Cross-section of S&P 1500 firms in mature stable sectors."
+    excludes: "Firms that endogenously invest in substrate durability (delta_t responds to investment)."
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: C2
+    statement: >-
+      The long-run value function is Cobb-Douglas (sigma = 1), additively
+      separable across tiers (Assumption 2). Holds within the firm's own
+      architectural hierarchy; breaks down for firms embedded in tightly
+      co-specialized partner ecosystems (Adner 2017).
+    observable: "Standalone tier contributions computable before aggregation."
+    excludes: "Firms at the center of dense co-specialization networks (ecosystem interdependence)."
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: C3
+    statement: >-
+      The cross-tier allocation problem is separable from the firm's financing
+      decision (Assumption 3, the cross-tier analog of Modigliani-Miller). Holds
+      under frictionless capital markets; fails when financial constraints bind
+      (partition by the Hadlock-Pierce SA index; condition on unconstrained
+      subsample).
+    observable: "Bottom-tercile Hadlock-Pierce SA index (financially unconstrained)."
+    excludes: "Financially constrained firms (constrained subsample = robustness check)."
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: C4
+    statement: >-
+      P1-P4 apply to firms with substantive operations across all six tiers
+      (CPG, industrial, retail, consumer services). Single-product commodity
+      producers face a trivial allocation problem and are excluded; digital-native
+      firms require sector-specific Tier-5/Tier-6 operationalization.
+    observable: "Multi-tier operating firms; non-commodity."
+    excludes: "Single-product commodity producers."
+    provenance: {created_by: author, created_at: "2026-06-14"}
+
+# ============================================================================
+# Assumption atoms — the maintained modeling primitives
+# ============================================================================
+assumptions:
+  - id: AA1
+    statement: >-
+      Each tier t in {2,3,4,5,6} carries a stock S_t accumulating by
+      dS_t/dtau = w_t * I - delta_t * S_t (Equation 1), with delta_t the
+      per-period decay rate (fraction of stock depreciating per year), matching
+      the Belo-Lin-Vitorino (2014) brand-capital depreciation convention verbatim.
+    antecedents: []
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: AA2
+    statement: >-
+      Long-run value aggregates tier stocks via a constant-returns Cobb-Douglas
+      production function V_LR(w; r) = A * I * Prod_t [m_t * w_t / (delta_t + r)]^{alpha_t}
+      (Equation 3), where m_t is the M&A separability factor, alpha_t the per-tier
+      output elasticity (Sum alpha_t = 1), and (delta_t + r) the Jorgensonian
+      per-tier user cost of capital.
+    antecedents: [AA1]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: AA3
+    statement: >-
+      Tier 1 (owner intent) enters the framework not through an allocation share
+      w_1 (it is not in the allocation vector) but through the principal's
+      effective discount rate r; long-horizon governance compresses r and a
+      high-discount agent inflates it.
+    antecedents: [AA2]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+
+# ============================================================================
+# Observations — the empirical / motivating regularities the paper anchors to
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      Two firms identical on every observable a standard valuation model captures
+      (revenues, EBITDA margins, aggregate investment, sector, leverage, tenure)
+      exhibit exit multiples of 2x versus 9x; the high-surface-tier acquirer writes
+      down goodwill within eighteen months, and post-close divergence persists
+      five years.
+    raw_data_pointer: "paper §1 opening Firm A / Firm B stylized comparison"
+    instrument: "stylized motivating case"
+    timestamp: "2026-05"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Opening", "Illustrative Cases"]
+  - id: O2
+    statement: >-
+      Tier-6-light / Tier-4-heavy firms (Hermes ~5-7% advertising-to-revenue,
+      family-controlled; Roper, Costco, Apple-under-Jobs) sustain EV/Revenue or
+      EV/EBITDA multiples 2x-5x above surface-tier-heavy peers (Casper IPO ~.5x
+      revenue) over decade-long horizons.
+    raw_data_pointer: "paper §Illustrative Cases (Table 4); §Tier 4 boundary objects"
+    instrument: "illustrative-case compilation (annual reports, S-1 filings)"
+    timestamp: "2015-2026"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Illustrative Cases", "Part II §Tier 4"]
+  - id: O3
+    statement: >-
+      Gartner (2026) surveyed 350 enterprises (>=$1B revenue) deploying autonomous
+      AI: 80% reported workforce reductions tied to AI, and the reduction rate was
+      nearly identical for high-ROI and negative-outcome firms — workforce
+      reduction had no measurable correlation with ROI realization.
+    raw_data_pointer: "paper §Proposition 7 (Gartner 2026 survey)"
+    instrument: "third-party enterprise survey"
+    timestamp: "2026"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Part II §Proposition 7", "Managerial Implications"]
+
+# ============================================================================
+# Methods — how the calibration table and the computed numbers are produced
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Calibrate the per-tier decay vector delta_t (Table 1) from independent
+      empirical depreciation literatures: delta_6 = .50/year (Belo-Lin-Vitorino
+      2014, Naik 1999); delta_5 = .15-.20 (Eisfeldt-Papanikolaou 2013); delta_4 =
+      .12-.20 (Lev-Sougiannis 1996); delta_2/3 = .05-.10 (extrapolated from
+      Wiggins-Ruefli 2002 persistence, no direct estimate exists).
+    type: "parameter_calibration"
+    inputs: ["published depreciation estimates across five literatures"]
+    outputs: ["Table 1 calibrated delta_t vector with confidence labels"]
+    code_anchor: "paper §The delta_t Calibration Table (Table 1)"
+    reproducibility: {seed: "n/a (literature calibration)", runtime_environment: "n/a"}
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§The delta_t Calibration Table"]
+  - id: M2
+    statement: >-
+      Solve the planner's interior optimum by Lagrangian maximization of
+      ln V_LR(w; r) subject to the Jorgensonian budget constraint
+      Sum_t (delta_t + r) * w_t = 1, yielding the closed-form share rule
+      w_t*(r) = alpha_t / (delta_t + r) (lambda = 1 under constant returns) and
+      its dollar-weighted observable form; compute the comparative static via the
+      deterministic companion script back_of_envelope.py.
+    type: "constrained_optimization_plus_simulation"
+    inputs: ["Table 1 delta_t", "calibrated alpha_t (m_t-proportional)", "m_t separability factors"]
+    outputs: ["w_t*(r); dollar-share_t*(r); B/A V_LR ratios; CES robustness table"]
+    code_anchor: "back_of_envelope.py (orgschema-papers/tier-allocation/code/)"
+    reproducibility:
+      seed: "deterministic (no RNG in Part I)"
+      runtime_environment: "Python 3.10+ + uv; numpy/scipy/matplotlib"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§The ∂w_6*/∂r Comparative Static", "§Companion Computation Scripts"]
+  - id: M3
+    statement: >-
+      Extend the share rule with two AI shocks per tier — cost shock gamma_t in
+      (0,1] scaling the rental price and durability shock Delta_t lowering the
+      effective decay rate (delta_t^eff = delta_t^0 - Delta_t) — re-derive the
+      generalized optimum w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)],
+      and verify comparative statics for P5-P7 via tier_penetration_simulation.py
+      (fixed seed numpy.random.seed(42)).
+    type: "model_extension_plus_simulation"
+    inputs: ["Part I calibrated parameters", "per-tier (gamma_t, Delta_t) shock patterns"]
+    outputs: ["generalized share rule; signs of ∂w_t*/∂gamma_t, ∂w_t*/∂Delta_t; CES robustness"]
+    code_anchor: "tier_penetration_simulation.py (orgschema-papers/tier-allocation/code/)"
+    reproducibility:
+      seed: "numpy.random.seed(42)"
+      runtime_environment: "Python 3.10+ + uv; numpy/scipy"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Part II §Formal Model Extension", "§Companion Computation Scripts"]
+
+# ============================================================================
+# Measurements — the headline computed values
+# ============================================================================
+measurements:
+  - id: m1_share_static
+    statement: >-
+      The planner-optimal Tier-6 dollar-share rises monotonically with the
+      discount rate: dollar-share_6*(r=.10) = .046 < .053 (r=.15) < .058 (r=.20),
+      from the FOC w_t*(r) = alpha_t / (delta_t + r).
+    source_observations: []
+    generating_method: M2
+    value: ".046 (r=.10) / .053 (r=.15) / .058 (r=.20)"
+    units: "optimal Tier-6 dollar-share (fraction of total investment)"
+    provenance: {created_by: "tool:back_of_envelope.py", created_at: "2026-06-14"}
+  - id: m2_ba_ratio
+    statement: >-
+      The Tier-4/5-heavy profile (B) dominates the Tier-6-heavy profile (A):
+      V_LR(B)/V_LR(A) ~= 1.93x at r = .15 under Cobb-Douglas; r-invariant under
+      constant returns to scale. CES robustness: 1.22x (sigma=.5) / 1.93x
+      (sigma=1) / 2.17x (sigma=1.5) — ordinal B > A holds across all sigma.
+    source_observations: [O2]
+    generating_method: M2
+    value: "B/A = 1.93x (CD); 1.22x / 1.93x / 2.17x across sigma in {.5,1,1.5}"
+    units: "long-run-value ratio (normalized)"
+    provenance: {created_by: "tool:back_of_envelope.py", created_at: "2026-06-14"}
+  - id: m3_stock_multiplier
+    statement: >-
+      Steady-state stock per unit investment (Equation 2, S_t* = w_t * I / delta_t):
+      Tier 6 yields 2*I (delta_6 = .50) while the aggregate stock tier yields
+      ~8.40*I (delta_S ~= .119) — each unit invested at the durable stock tier
+      generates more than four times the equilibrium stock of a Tier-6 unit.
+    source_observations: []
+    generating_method: M1
+    value: "S_6* = 2*I vs S_S* ~= 8.40*I (delta_6 = .50 vs delta_S = .119)"
+    units: "equilibrium stock per unit investment"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+
+# ============================================================================
+# Propositions — the seven theoretical claims + the unit-of-analysis claim
+# ============================================================================
+propositions:
+  - id: P0
+    statement: >-
+      Organizational tier is a new unit of analysis for resource allocation —
+      distinct from the division (internal capital markets), the capability
+      (dynamic capabilities), and the resource (RBV). The tier supplies the
+      missing architectural primitive that converts capability DIRECTION into a
+      portfolio variable whose optimization depends on principal discount rates.
+    conditions: ""
+    antecedents: [AA1, AA2]
+    evidence:
+      - type: analytic
+        anchor: "Tiers differ in accumulation dynamics (delta_t), not expected returns, so the comparative statics are not derivable from divisional ICM, single-channel DC, or VRIN-resource models."
+        citation_keys: [stein-1997-internal-capital-markets, teece-2007-explicating-dynamic-capabilities, dierickx-1989-asset-stock-accumulation]
+    body_sections: ["Opening", "Theoretical Foundations", "Conclusion"]
+  - id: P_core
+    statement: >-
+      The frictionless planner's interior optimum is the closed-form share rule
+      w_t*(r) = alpha_t / (delta_t + r), and the comparative static
+      d(dollar-share_6*)/dr > 0 follows directly from the decay-rate differential
+      (sign of delta_6 - delta_S > 0): higher-discount-rate principals optimally
+      hold lower stock-tier shares and higher surface-tier shares.
+    conditions: "C1, C2"
+    antecedents: [AA2, M2, m1_share_static]
+    evidence:
+      - type: derivation
+        anchor: "Lagrangian FOC alpha_t/w_t - lambda*(delta_t+r) = 0; lambda = 1 under Sum alpha_t = 1; numerically demonstrated dollar-share_6* rises 5.3% -> 7.8% as r: .15 -> .50."
+        citation_keys: [jorgenson-1963-capital-theory-investment, belo-2014-brand-capital-firm]
+    falsifier: "If the optimal Tier-6 dollar-share does not rise with r (e.g., under strong gross complementarity sigma << 1), the core comparative static fails."
+    body_sections: ["§Cross-Tier Portfolio: Comparative Statics", "§The ∂w_6*/∂r Comparative Static"]
+  - id: P1
+    statement: >-
+      Goodwill-Impairment Hazard. Pre-deal Tier-6 (w_6) share predicts
+      post-acquisition goodwill-impairment hazard within 36 months of deal close,
+      controlling for deal size, sector, acquirer characteristics, and pre-deal
+      revenue growth. High-w_6 targets have low durable S_4*/S_5* stock; capitalizing
+      their flow-dependent revenue at durable-stock multiples over-prices the deal.
+    conditions: "C1, C4"
+    antecedents: [P_core]
+    evidence:
+      - type: derivation
+        anchor: "Goodwill = payment for PV of V_LR(w); impairment = accounting recognition of the tier-independence-overestimation mismatch. Sharpened by (r_T - r_A) interaction."
+        citation_keys: [glaum-2018-goodwill-impairment-effects]
+    falsifier: "If, in a Cox hazard model of GDWLIP within 36 months, the pre-deal w_6 coefficient (XAD/total investment) is not positive and significant controlling for industry FE, deal size, leverage, acquirer quality, P1 fails."
+    body_sections: ["§Proposition 1"]
+  - id: P2
+    statement: >-
+      Long-Horizon Principal w-Shift. Holding sector and rotation stage fixed,
+      principals with lower effective discount rates (long-tenured founder-CEO
+      control, active family-firm governance as observable proxies) exhibit lower
+      equilibrium w_6 and higher equilibrium w_4 + w_5 shares than shorter-horizon
+      peers in the same industry. A conditional prediction about the discount-rate
+      mechanism, NOT an unconditional family-firm-advertising claim.
+    conditions: "C1, C4"
+    antecedents: [P_core, AA3]
+    evidence:
+      - type: empirical
+        anchor: "Family-controlled firms show lower advertising-to-sales and higher R&D/capex-to-sales than matched non-family peers (Anderson-Reeb 2003; Villalonga-Amit 2006; Bertrand-Schoar 2006)."
+        citation_keys: []
+    falsifier: "If a within-industry matched-firm OLS shows no negative relation between long-horizon-governance proxies and w_6 share, P2 fails."
+    body_sections: ["§Proposition 2"]
+  - id: P3
+    statement: >-
+      Discount-Rate Moderation of Tier-6 Share. Optimal w_6 increases in the firm's
+      cost of capital, with sensitivity largest in sectors with large (delta_6 -
+      delta_S) decay-rate gaps. Scope: holds under Cobb-Douglas (sigma=1) and
+      gross-substitutes (sigma>1); the comparative static can reverse under strong
+      gross complementarity (sigma << 1).
+    conditions: "C1, C2, C4"
+    antecedents: [P_core]
+    evidence:
+      - type: derivation
+        anchor: "Cross-sectional/longitudinal generalization of P2; ZLB (2009-2015) vs post-2022 rate normalization as a DiD quasi-experiment; pharma (wide gap) vs fast-fashion (narrow gap)."
+        citation_keys: []
+    falsifier: "If WACC (or a ZLB DiD) shows no positive relation to w_6 share, or no larger effect in high-gap sectors, P3 fails."
+    body_sections: ["§Proposition 3"]
+  - id: P4
+    statement: >-
+      Rotation-Stage Moderation of Marginal Return to Tier-4 Investment. The
+      exit-multiple premium on w_4 share increases as the firm advances along the
+      Tier-Rotation Curve (Zharnikov 2026ai): at later rotation stages Tier-4
+      investment compounds onto a developed substrate, generating super-additive
+      returns (built into the Cobb-Douglas form). 2026ai supplies only the
+      empirical proxy (trademark-composition ratio), not the derivation.
+    conditions: "C1, C4"
+    antecedents: [P_core, AA2]
+    evidence:
+      - type: derivation
+        anchor: "Stage-dependent marginal return ∂ln(V_LR)/∂ln(w_4) = alpha_4 interacting multiplicatively with existing S_4*(tau) at rotation stage tau."
+        citation_keys: []
+    falsifier: "If the w_4 x Rotation-Stage interaction term in a deal-multiple regression is not positive, P4 fails."
+    body_sections: ["§Proposition 4"]
+  - id: P5
+    statement: >-
+      Tier-6 Over-Allocation Paradox (AI). When AI is concentrated at Tier 6
+      (gamma_6 in (0,1), gamma_t = 1 for t<=5, all Delta_t = 0), the optimal
+      Tier-6 share rises monotonically as gamma_6 falls (∂dollar-share_6*/∂gamma_6
+      < 0). Total V_LR rises but the composition shifts toward the lowest-substrate
+      tier: short-run EBIT rises while the long-run M&A multiple falls, because
+      delta_6 = .50 is the largest decay rate and the multiple prices substrate.
+    conditions: "C1, C2"
+    antecedents: [M3, P_core]
+    evidence:
+      - type: derivation
+        anchor: "Differentiating the generalized share rule; relative-price substitution toward the cheapened surface tier (Online Supplement S1.1). Anchored to Klarna's 700-FTE-equivalent chatbot."
+        citation_keys: [brynjolfsson-2025-generative-ai-at, mizik-2003-trading-off-between]
+    falsifier: "If firms with exclusively Tier-6 AI show no negative 36-month forward M&A-multiple shift conditional on a positive contemporaneous EBIT shift (matched on aggregate AI intensity), P5 fails."
+    body_sections: ["Part II §Proposition 5"]
+  - id: P6
+    statement: >-
+      Substrate-Building Threshold at Tier 4 (AI). When gamma_4 in (0,1) is paired
+      with Delta_4 > 0, the long-run Tier-4 stock S_4* = w_4*I/delta_4^eff responds
+      super-linearly to (gamma_4^{-1} * Delta_4). The first-positive-Delta_4
+      threshold — API-rented capacity crossing to proprietary fine-tune or
+      owned-weights — produces a discrete LEVEL SHIFT in M&A multiples, not a
+      continuous slope shift; a continuous-intangibles measure cannot generate it.
+    conditions: "C1, C2"
+    antecedents: [M3]
+    evidence:
+      - type: derivation
+        anchor: "∂S_4*/∂Delta_4 > 0, level-shift from the Delta_4 = 0 vs Delta_4 > 0 structural cleavage (Online Supplement S1.2). Anchored to BloombergGPT proprietary fine-tune."
+        citation_keys: [wu-2023-bloomberggpt-large-language-model]
+    falsifier: "If firms crossing the disclosure-coded Delta_4 threshold show no level shift in M&A multiples (vs Delta_4 = 0 firms, matched on aggregate AI intensity), P6 fails."
+    body_sections: ["Part II §Proposition 6"]
+  - id: P7
+    statement: >-
+      Horizon-Conditional Sign Flip (AI). Deep-tier AI (Tier 4 / Tier 2) extends
+      the principal's effective horizon (lowers r); surface-tier AI compressed by
+      algorithmic-feedback / quarterly logic raises r. Via the inherited
+      ∂w_6*/∂r > 0, when AI lowers r its value effect is positive in both horizons;
+      when AI raises r the effect is positive short-run (margin) but negative
+      long-run (substrate erosion). Same aggregate AI spend, opposite long-run
+      value effect. Primary scope sigma >= 1.
+    conditions: "C1, C2, AA3"
+    antecedents: [M3, P_core, AA3, O3]
+    evidence:
+      - type: derivation
+        anchor: "Formal-model expression of Raisch-Krakowski automation-augmentation paradox at the firm-valuation level; Gartner (2026) survey consistent (ROI uncorrelated with workforce cuts)."
+        citation_keys: [raisch-2021-artificial-intelligence-management, gartner-2026-gartner-says-autonomous-business]
+    falsifier: "If no sign flip in the long-run AI-value effect is observed between long-horizon and short-horizon principals at matched aggregate AI spend (conditional on sigma >= 1), P7 fails."
+    body_sections: ["Part II §Proposition 7"]
+
+# ============================================================================
+# Derivations — closed-form results downstream of the model
+# ============================================================================
+derivations:
+  - id: D1
+    statement: >-
+      Generalized closed-form share rule under AI shocks:
+      w_t*(r; gamma, Delta) = alpha_t / [gamma_t * (delta_t^eff + r)], with
+      delta_t^eff = delta_t^0 - Delta_t, obtained from Lagrangian maximization of
+      ln V_LR subject to Sum_t gamma_t*(delta_t^eff + r)*w_t = 1 (lambda = 1).
+      Cobb-Douglas log-concavity and constant returns are preserved.
+    antecedents: [AA2, M3]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+  - id: D2
+    statement: >-
+      Three general properties hold across the calibrated range: (i)
+      ∂dollar-share_6*/∂r > 0; (ii) ∂^2 ln V_LR/∂w_t^2 = -alpha_t/w_t^2 < 0
+      (strict log-concavity, unique interior optimum without adjustment-cost
+      augmentation); (iii) the cross-sectional multiplier
+      V_LR(w*_low_r)/V_LR(w*_high_r) increases in (delta_6 - delta_S).
+    antecedents: [P_core, AA2]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+
+# ============================================================================
+# Findings — what the computed evidence demonstrates
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      The tier-allocation mechanism reproduces the ORDINAL structure of observed
+      M&A multiple gaps from first principles (Profile B >> C >> A, B/A = 1.93x)
+      without closing the full empirical gap (4-6x for specialty B2B vs Tier-6 D2C);
+      the 1.93x is a frictionless-planner benchmark, and the residual is the
+      agency-amplified equilibrium (long-horizon principal vs short-tenure agent).
+    type: "mechanism_demonstration"
+    source_measurements: [m2_ba_ratio, m3_stock_multiplier]
+    generating_method: M2
+    antecedents: [P_core]
+    falsifier: "If the calibrated B/A ratio inverts (A >= B) under the maintained specification, F1 fails."
+    citation_role_in_paper: "primary_numerical_evidence_for_P_core"
+    provenance: {created_by: "tool:back_of_envelope.py", created_at: "2026-06-14"}
+    body_sections: ["§Back-of-Envelope Calibration of M&A Multiple Gaps"]
+  - id: F2
+    statement: >-
+      The penetration-depth ordering of long-run firm-value gain from AI is
+      Tier 2 > Tier 4 > Tier-5-with-substrate > Tier-5-API-only ~= Tier 6 ~= Tier 3,
+      following from joint movement of gamma_t < 1 (cost cheapening, available
+      everywhere) and Delta_t > 0 (durability gain, available only where substrate
+      accumulation is feasible). Tier-2 data-flywheel firms can differ 2x-5x in
+      M&A multiples at identical aggregate AI spend.
+    type: "comparative_statics_demonstration"
+    source_measurements: []
+    generating_method: M3
+    antecedents: [D1, P5, P6]
+    falsifier: "If the simulated penetration-depth ordering does not place Tier 2 / Tier 4 above the surface tiers, F2 fails."
+    citation_role_in_paper: "auxiliary_evidence_for_P5_P6_P7"
+    provenance: {created_by: "tool:tier_penetration_simulation.py", created_at: "2026-06-14"}
+    body_sections: ["Part II §Auxiliary AI Implications"]
+
+# ============================================================================
+# Robustness checks
+# ============================================================================
+robustness_checks:
+  - id: RC1
+    statement: >-
+      CES robustness across sigma in {.5, 1.0, 1.5}: the qualitative ordering
+      Profile B > Profile A holds at all three elasticities (B/A = 1.22x / 1.93x /
+      2.17x); gross substitutes (sigma=1.5) moves toward the empirical 4-6x range,
+      gross complements (sigma=.5) attenuates without reversing. The maintained
+      Cobb-Douglas (sigma=1) is a conservative middle ground.
+    type: "functional_form_robustness"
+    sensitivity_of: [P_core, F1]
+    falsifier: "If the B > A ordering reverses at any sigma in the tested range, RC1 fails."
+    provenance: {created_by: "tool:back_of_envelope.py", created_at: "2026-06-14"}
+    body_sections: ["§CES Robustness (Table 2)"]
+  - id: RC2
+    statement: >-
+      Sign-condition robustness: the directional AI predictions depend on sign
+      conditions — sign(delta_6 - delta_S) and sign(Delta_t) — not on point
+      estimates, so they survive recalibration of delta_t and the 2023-2026 AI
+      window. ∂dollar-share_6*/∂gamma_6 < 0 is preserved across sigma in {.5,1,1.5}.
+    type: "sign_condition_robustness"
+    sensitivity_of: [P5, P7]
+    falsifier: "If the sign of ∂dollar-share_6*/∂gamma_6 reverses under the maintained sigma >= 1 regime, RC2 fails."
+    provenance: {created_by: "tool:tier_penetration_simulation.py", created_at: "2026-06-14"}
+    body_sections: ["Part II §Calibration", "§AI-Extension Scope Conditions"]
+  - id: RC3
+    statement: >-
+      Under sufficiently strong gross complementarity (sigma << 1; sigma=.5
+      documented), the two-tier optimizer tilts toward symmetric interior solutions
+      and the comparative static ∂w_6*/∂r can reverse — an empirically interesting
+      boundary case outside the regime relevant for the P1 goodwill-impairment test.
+    type: "boundary_case_disclosure"
+    sensitivity_of: [P_core, P3, P7]
+    falsifier: "n/a (disclosed boundary, not a test)"
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§CES Robustness", "§Proposition 3 (Scope condition)"]
+
+# ============================================================================
+# Alternative explanations — the rival literatures the contribution rules out
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The valuation divergence is explained by existing capital-allocation,
+      marketing-finance, or dynamic-capabilities theory without needing a tier unit.
+    rules_out_required: [P0]
+    ruled_out_by: [P0, P_core, F1]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Internal-capital-markets theory allocates across divisions but not within;
+      marketing finance distinguishes stock from flow without an organizational
+      layer; dynamic capabilities treats accumulation as a single channel without
+      decomposing direction. The tier framework supplies the delta_4 << delta_6
+      differential that makes brand-capital stock and advertising flow structurally
+      non-fungible — the missing mechanism each literature requires but lacks.
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Theoretical Foundations", "Discussion"]
+  - id: A2
+    statement: >-
+      AI's divergent valuation effects are captured by existing AI-and-strategy
+      specifications (aggregate AI spend, task displacement, capability
+      complementarity, cognitive-process taxonomy).
+    rules_out_required: [P5, P6, P7]
+    ruled_out_by: [P5, P6, P7, F2]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Aggregate-spend specifications treat AI as homogeneous; task-displacement
+      measures occupational exposure; capability-complementarity operates at the
+      capability level (but the same capability at different tiers has different
+      durability); cognitive-process taxonomies classify decision micro-foundations.
+      None pinpoints the architectural TIER at which AI output lands — the
+      unit-of-analysis contribution (Table 7).
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Part II §Tier-Penetration vs Existing AI-and-Strategy Literature"]
+
+# ============================================================================
+# Limitations — honest scope of the contribution
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The back-of-envelope calibration reproduces only the ORDINAL multiple-gap
+      structure; the model's 1.93x falls short of the empirical 4-6x gap, closing
+      only once alpha_t is estimated from panel data rather than calibrated from
+      m_t separability priors. The cases illustrate the theory's logic; they are
+      not statistical tests.
+    severity: "scope-bounding"
+    affects: [F1, P_core]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§Back-of-Envelope Calibration", "§Illustrative Cases"]
+  - id: L2
+    statement: >-
+      Tier-2/Tier-3 decay rates have no direct empirical estimates and are
+      extrapolated from competitive-advantage duration evidence (Wiggins-Ruefli
+      2002); establishing calibrated delta_2/delta_3 is a priority for the
+      validation roadmap.
+    severity: "calibration-gap"
+    affects: [M1, C1]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§The delta_t Calibration Table"]
+  - id: L3
+    statement: >-
+      Clean separate identification of gamma_t and Delta_t from public disclosure
+      data may be infeasible; empirical implementation may reduce to JOINT
+      identification. P5 and P6 survive joint identification; P7 survives in SIGN
+      (the founder-horizon channel operates through r, not through gamma/Delta
+      separately) but loses magnitude attribution.
+    severity: "identification"
+    affects: [P5, P6, P7]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Part II §gamma-vs-Delta Separability Fall-Back Inventory"]
+
+# ============================================================================
+# Negative findings — what the existing literatures do NOT provide
+# ============================================================================
+negative_findings:
+  - id: NF1
+    statement: >-
+      No existing capital-allocation, marketing-finance, dynamic-capabilities, or
+      AI-and-strategy specification generates a discrete tier-deployment prediction:
+      the IT-complementarities tradition predicts smoothly increasing returns, not
+      the discontinuous Tier-4 substrate-building threshold; aggregate AI-spend
+      models predict no cross-sectional dispersion at all.
+    expected_observation: "A prior model producing the threshold discontinuity at Tier 4 or the horizon-conditional sign flip."
+    source_method: M3
+    affects_nodes: [P0, P6, P7]
+    motivates: [P0, P6]
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["Part II §Theory Synthesis", "Table 7"]
+
+# ============================================================================
+# Stylized facts the model is built to reproduce
+# ============================================================================
+stylized_facts:
+  - id: SF1
+    statement: >-
+      Specialty B2B / Tier-4-heavy businesses trade at 6-12x revenue against 1-2x
+      for Tier-6-heavy D2C exits (an empirical multiple ratio of roughly 4-6x);
+      goodwill impairments concentrate in acquisitions of high-surface-tier targets.
+    antecedents: []
+    provenance: {created_by: author, created_at: "2026-06-14"}
+    body_sections: ["§Back-of-Envelope Calibration", "§Proposition 1"]
+
+# ============================================================================
+# Cross-paper engagement (corpus precedents)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026ag
+    relationship: extends
+    spine_nodes: [AA1, AA2, C4, P0]
+    note: >-
+      Six-Tier Ontology (Organizational Metamerism / six-tier scaffold) supplies
+      the architectural decomposition by substrate durability and ownership
+      separability that this paper's allocation vector is defined over; the paper
+      extends the dual-hierarchy structure into a portfolio-optimization setting.
+  - paper_key: 2026ah
+    relationship: applies
+    spine_nodes: [M1, P_core, P2]
+    note: >-
+      Brand as Tier 4 establishes brand-capital codification as the Tier-4
+      durable substrate (delta_4 ~= .12-.20); this paper applies that placement
+      as the stock pole of the stock-versus-flow (Tier-4 vs Tier-6) tension.
+  - paper_key: 2026ai
+    relationship: extends
+    spine_nodes: [P4]
+    note: >-
+      Tier-Rotation Curve addresses the TEMPORAL margin (how Tier-1/Tier-4 share
+      evolves across ownership horizons, w exogenous); this paper addresses the
+      SPATIAL margin (endogenizing w in any given period, rotation stage held
+      fixed as a conditioning variable) and uses 2026ai's trademark-composition
+      proxy to operationalize Tier-Rotation Stage in the P4 test.
+  - paper_key: 2026h
+    relationship: applies
+    spine_nodes: [AA3, P7]
+    note: >-
+      R5 Specification Impossibility supplies the Tier-1 residual specification
+      gap (preferences are the substrate from which specifications are derived),
+      grounding the constitutional Tier-1 ceiling and the horizon channel in P7.
+
+# ============================================================================
+# External anchor literature
+# ============================================================================
+external_anchors:
+  - {citation_key: belo-2014-brand-capital-firm, role: calibration_source, spine_nodes: [AA1, AA2, M1, P_core], note: "delta_6 = .50 calibration (verbatim convention) + two-capital Cobb-Douglas template"}
+  - {citation_key: jorgenson-1963-capital-theory-investment, role: foundational_apparatus, spine_nodes: [AA2, P_core], note: "Jorgensonian user cost of capital q_t = delta_t + r"}
+  - {citation_key: dierickx-1989-asset-stock-accumulation, role: extends, spine_nodes: [P0, AA1], note: "asset-stock accumulation extended from single-asset to multi-tier"}
+  - {citation_key: teece-2007-explicating-dynamic-capabilities, role: extends, spine_nodes: [P0], note: "single-channel capability accumulation decomposed into a tier portfolio variable"}
+  - {citation_key: stein-1997-internal-capital-markets, role: extends, spine_nodes: [P0, P1], note: "ICM cross-division allocation extended to within-business cross-tier allocation"}
+  - {citation_key: mizik-2003-trading-off-between, role: empirical_precedent, spine_nodes: [P_core, P5], note: "value-creation vs value-appropriation = the stock/flow trade-off this paper formalizes"}
+  - {citation_key: mizik-2009-valuing-branded-businesses, role: empirical_precedent, spine_nodes: [P_core], note: "brand-capital stock prices a valuation premium independent of advertising flow"}
+  - {citation_key: glaum-2018-goodwill-impairment-effects, role: empirical_anchor, spine_nodes: [P1], note: "impairments concentrate where post-close monitoring of intangible quality is weakest"}
+  - {citation_key: bresnahan-2002-information-technology-workplace, role: contrasts, spine_nodes: [NF1], note: "IT-complementarities tradition predicts smooth returns, not the tier-deployment discontinuity"}
+  - {citation_key: babina-2024-artificial-intelligence-firm, role: contrasts, spine_nodes: [A2, NF1], note: "aggregate firm-level AI spend = homogeneous shock; no cross-tier dispersion"}
+  - {citation_key: raisch-2021-artificial-intelligence-management, role: mechanism_anchor, spine_nodes: [P7], note: "automation-augmentation paradox = the firm-valuation sign flip"}
+  - {citation_key: brynjolfsson-2025-generative-ai-at, role: reconciled_finding, spine_nodes: [P5], note: "15% surface-tier productivity gain reconciled with the long-run-substrate cleavage"}
+  - {citation_key: wu-2023-bloomberggpt-large-language-model, role: illustrative_anchor, spine_nodes: [P6], note: "proprietary fine-tune on proprietary corpus = the Delta_4 > 0 substrate-building case"}
+  - {citation_key: gartner-2026-gartner-says-autonomous-business, role: corroborating_survey, spine_nodes: [P7, O3], note: "ROI uncorrelated with workforce cuts across 350 enterprises — consistent with P7"}
+  - {citation_key: schilke-2018-quo-vadis-dynamic, role: gap_identification, spine_nodes: [P0], note: "identifies cross-capability/architectural-decomposition formalization as the DC tradition's central gap"}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Direct calibration of delta_2 and delta_3 for business-model-architecture and entity-level assets (no empirical depreciation literature exists). (L2)"
+  - "The full principal-agent equilibrium (w_6^A, w_6^P) under adverse selection + moral hazard with tier-specific reporting legibility — reserved for a planned companion paper. (Agency Extension)"
+  - "Endogenous delta_t (firms investing in substrate durability) and the dynamic adjustment path off steady state (current comparative statics are cross-sectional). (Assumption 1)"
+  - "An ecosystem extension where additive separability across tiers breaks down for firms at the center of dense co-specialization networks (Adner 2017). (Assumption 2)"
+  - "Empirical estimation of alpha_t from panel data to close the 1.93x-vs-4-6x calibrated-magnitude gap. (L1)"
+  - "Clean separate identification of gamma_t vs Delta_t in disclosure data (P7 magnitude attribution). (L3)"
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

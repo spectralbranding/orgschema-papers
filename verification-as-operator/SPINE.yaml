@@ -1,0 +1,440 @@
+# SPINE.yaml — Verification as Operator (2026ae)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md per the
+# decision D4). NOT authored generatively before prose.
+#
+# Schema v0.2: the paper is a theory paper but reports computed simulation
+# numbers (Appendix B Monte Carlo, N = 1,000 trials), so the headline
+# 90%-undetected result is represented as an observation -> method ->
+# measurement -> finding chain rather than asserted in prose.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"
+paper_key: "2026ae"
+provenance: retrofit
+title: >-
+  Verification as Operator: Spectral Projection, Rank Deficiencies, and the
+  Persistence of the Audit Society
+
+thesis: |
+  Organizational verification is formally a spectral projection operator P that
+  maps organizational states onto invariant subspaces defined by acceptance
+  criteria, satisfying idempotency (P^2 = P) and self-adjointness (P* = P). A
+  state passes verification iff it already lies in that invariant subspace
+  (P(s) = s). Conventional compliance audit is a degenerate rank-1 projection
+  onto a single compliance axis and therefore discards, by construction, all
+  organizational performance information orthogonal to that axis — the algebraic
+  root of the information loss the audit-society literature documents. The
+  acceptance-testing cascade of Organizational Schema Theory is, by contrast, a
+  full-rank projection in which each hierarchical level independently projects
+  onto a distinct performance subspace, preserving the dimensional structure of
+  the specification. Cybernetics, behavioral organization theory, and software
+  engineering verification each implicitly instantiate the same projection
+  identity without naming it. Three propositions establish the rank inequality
+  between audit and cascade, the cascade-consistency condition required for
+  full-rank operation, and the bandwidth bound on sustainable projection rank; a
+  six-dimensional simulation shows rank-1 audit leaves approximately 90% of
+  organizational deviation undetected. The audit society is thus the equilibrium
+  under a rank-1 bandwidth budget, not a pathology — and verification rank, not
+  audit rigor, is the lever for substantive alignment.
+
+# ============================================================================
+# Boundary conditions — when the operator account holds (paper §Boundary Conditions)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Single-evaluator regime: a single authoritative acceptance predicate P_k
+      per cascade level. Multi-evaluator regimes induce a family {P_e,k} whose
+      effective invariant subspace is the intersection of evaluators' eigenspaces
+      and require separate treatment.
+    excludes: "Multi-evaluator verification with non-identical acceptance predicates per level."
+    body_sections: ["Discussion / Boundary Conditions"]
+  - id: C2
+    statement: >-
+      The organizational state space O is a real inner product space: performance
+      dimensions are real-valued vectors with a well-defined inner product
+      (orthogonality between dimensions). Self-adjointness needs the inner
+      product; idempotency and the acceptance condition do not.
+    excludes: "Ordinal, categorical, or value-incomparable specification dimensions."
+    body_sections: ["Discussion / Boundary Conditions", "Discussion / Limitations"]
+  - id: C3
+    statement: >-
+      Cascade-consistency: range(P_j) is not contained in kernel(P_{j+1}) for all
+      adjacent cascade levels j. This is a design criterion, not a property
+      guaranteed by having multiple cascade levels; cascades that violate it
+      collapse to effective rank 1 regardless of nominal depth.
+    excludes: "Cascades whose lower-level specification is fully subsumed by the level above."
+    body_sections: ["Discussion / Boundary Conditions", "Formal Model / Proposition 2"]
+
+# ============================================================================
+# Observations — the simulation as a produced-data event (Appendix B)
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      A Monte Carlo simulation over 6-dimensional organizational states (one
+      dimension per OST L0-L5 cascade level) with isotropic Gaussian noise at four
+      levels (sigma = .1, .5, 1.0, 2.0), N = 1,000 trials per condition, comparing
+      undetected deviation under a rank-1 audit projection versus a full-rank
+      cascade projection.
+    raw_data_pointer: "simulation_results.json (companion mirror code/ directory)"
+    instrument: "projection_simulation.py (NumPy, fixed seed 42)"
+    body_sections: ["Appendix B"]
+
+# ============================================================================
+# Methods — how the simulation is constructed
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Sample organizational states as unit-normalized 6-D Gaussian vectors; form
+      observed state x_obs = x_true + noise with noise ~ N(0, sigma^2 * I); apply
+      P_audit (rank-1 projection onto the first / compliance axis) and P_cascade
+      (full-rank projection across all six dimensions independently); measure
+      undetected deviation as ||d - P(d)|| where d = x_obs - x_true; average over
+      N = 1,000 trials per noise level.
+    type: "monte_carlo_simulation"
+    inputs: ["6-D Gaussian state vectors", "isotropic noise sigma in {.1,.5,1.0,2.0}"]
+    outputs: ["mean undetected deviation per projection per noise level"]
+    code_anchor: "projection_simulation.py"
+    reproducibility:
+      seed: "np.random.seed(42)"
+      runtime_environment: "Python 3.12 + uv + NumPy; uv run --with numpy python3 projection_simulation.py"
+    body_sections: ["Appendix B / Simulation Design"]
+
+# ============================================================================
+# Measurements — derived numbers from the simulation
+# ============================================================================
+measurements:
+  - id: m_audit_missed
+    statement: >-
+      Mean undetected deviation under rank-1 audit at sigma = 1.0 is 2.12
+      (simulated), against analytic prediction sqrt(5)*sigma = 2.236; the audit
+      misses approximately 90% of total deviation across all noise levels tested
+      (90.8%, 89.5%, 90.4%, 90.2%).
+    source_observations: [O1]
+    generating_method: M1
+    value: "rank-1 missed = 2.12 at sigma=1.0; ~90% missed across sigma in {.1,.5,1.0,2.0}"
+    units: "deviation norm + percentage of total deviation"
+    body_sections: ["Table 1", "Table 3 (Appendix B)"]
+  - id: m_cascade_missed
+    statement: "Mean undetected deviation under the full-rank cascade is .00 at every noise level (0% missed by construction)."
+    source_observations: [O1]
+    generating_method: M1
+    value: "full-rank cascade missed = .00 (0%)"
+    units: "deviation norm + percentage of total deviation"
+    body_sections: ["Table 1", "Table 3 (Appendix B)"]
+
+# ============================================================================
+# Propositions — the argument backbone
+# ============================================================================
+propositions:
+  - id: P1
+    statement: >-
+      Organizational verification is a projection operator P on the organizational
+      state space, idempotent (P^2 = P) and self-adjoint (P* = P); a state s
+      passes verification iff P(s) = s, i.e. iff s lies in the invariant subspace
+      that acceptance criteria define. The rank of P (dimension of its range)
+      determines how much of the state space the verification can discriminate.
+    conditions: "C2"
+    antecedents: []
+    evidence:
+      - type: analytic
+        anchor: "Formal statement of the projection identity; idempotency + self-adjointness define an orthogonal projection."
+    falsifier: "If acceptance cannot be stated as a closed linear constraint admitting an idempotent self-adjoint operator, the identity fails."
+    body_sections: ["Theory Development", "Formal Model / Formal Statement of the Projection Identity", "Appendix A"]
+  - id: P2
+    statement: >-
+      Cybernetics (variety attenuation), behavioral organization theory
+      (aspiration-level adjustment, double-loop revision), and software
+      engineering verification (acceptance testing) each implicitly instantiate
+      the SAME idempotent self-adjoint projection — yet each historically stops
+      short of the algebraic identification and the rank distinction. Conant and
+      Ashby's (1970) regulator theorem is the closest structural predecessor.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Three-lineage convergence table (Table 2): variety attenuator = aspiration projection = acceptance test."
+    body_sections: ["Theory Development / Three Lineages, One Projection Identity"]
+  - id: P3
+    statement: >-
+      Single-loop learning is state correction within a fixed specification
+      eigenspace; double-loop learning is a basis change B that redefines the
+      eigenspace (L0 revision). This gives Argyris and Schoen's typology precise,
+      empirically testable algebraic content: classify any organizational change
+      by whether it alters the specification eigenspace or corrects within it.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Two-operator hierarchy: P_current for single-loop, basis change B for double-loop; sensemaking constructs/revises the eigenspace."
+    falsifier: "If an organizational change cannot be classified as eigenspace-preserving vs eigenspace-redefining, the formalization adds nothing testable."
+    body_sections: ["Theory Development / Argyris and Schoen's Two-Loop Structure", "Discussion / Theoretical Implications"]
+  - id: P4
+    statement: >-
+      (Proposition 1) Conventional audit, formalized as the projection P_audit
+      onto the compliance/non-compliance axis, is a RANK-1 operator: range(P_audit)
+      = span{c}, so rank = 1, and its null space contains every performance
+      dimension not expressible as a linear function of the single compliance
+      criterion. For isotropic states in 6-D, E[||s - P_audit(s)||^2] =
+      (5/6) E[||s||^2] — five-sixths of variation is discarded by construction.
+    conditions: "C2"
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "SVD proof sketch (Kannan and Vempala 2009): projection singular values are 0 or 1; rank = count of 1s; residual = (5/6)||s||^2."
+        citation_keys: []
+    falsifier: "An audit that independently detects failures in two non-collinear specification dimensions would have rank >= 2 and refute the rank-1 characterization."
+    body_sections: ["Formal Model / Proof Sketch for Proposition 1", "Formal Propositions / Proposition 1"]
+  - id: P5
+    statement: >-
+      (Proposition 2) An OST cascade with k >= 2 levels satisfying the
+      cascade-consistency condition (range(P_j) not subset of kernel(P_{j+1}) for
+      all j) defines an invariant subspace T_0 ∩ ... ∩ T_{k-1} of dimension
+      strictly greater than 1; it is therefore a FULL-RANK projection that
+      preserves at least two independent dimensions of organizational performance.
+    conditions: "C3"
+    antecedents: [P1, P4]
+    evidence:
+      - type: analytic
+        anchor: "Induction over k levels under the consistency condition: each adjacent pair contributes an independent surviving dimension."
+    falsifier: "A cascade in which every P_k has rank 1, or range(P_j) subset of kernel(P_{j+1}) for some j, collapses to effective rank 1."
+    body_sections: ["Formal Propositions / Proposition 2"]
+  - id: P6
+    statement: >-
+      (Proposition 3 — bandwidth bound) The dimension of the invariant subspace an
+      organization can maintain at steady state is bounded above by its
+      verification bandwidth budget beta_v, the maximum number of independent
+      specification conditions it can evaluate per cycle. When required cascade
+      rank exceeds beta_v, the organization drifts from the full-rank invariant
+      subspace despite passing individual level tests. Rank-1 audit is the rational
+      equilibrium under a constrained verification-bandwidth budget.
+    conditions: "C2"
+    antecedents: [P5]
+    evidence:
+      - type: analytic
+        anchor: "Tushman and Nadler (1978) information-processing bridge: bandwidth beta caps projection rank; higher rank needs proportional bandwidth."
+    falsifier: "A cascade with rank strictly greater than beta_v sustained at steady state over an extended period would refute the bandwidth bound."
+    body_sections: ["Theory Development / Tushman and Nadler's Bandwidth Bridge", "Formal Propositions / Proposition 3"]
+  - id: P7
+    statement: >-
+      The audit society is the institutional equilibrium under a rank-1 bandwidth
+      budget, not an organizational pathology: rank-1 audit is cheap, politically
+      legible, and produces demanded accountability signals. Institutional
+      rationality and informational adequacy are not co-extensive — adopting
+      rank-1 audit is rational while guaranteeing, by the rank inequality, that
+      multi-dimensional deviations remain structurally undetectable. Decoupling
+      and covariance decay (Strathern; Meyer and Rowan; Bromley and Powell) are
+      the sociological names for the algebraic information loss of rank-1
+      projection.
+    conditions: "C1, C2"
+    antecedents: [P4, P6]
+    evidence:
+      - type: analytic
+        anchor: "Operator reading of Power's (1997) audit-society critique; ISO 9001:2015 Clause 9 and audit-trail logic (Power 2021) as rank-1 instances at scale."
+    body_sections: ["The Audit Society Application"]
+  - id: P8
+    statement: >-
+      The remedy is not more audit but better-structured projection: a full-rank
+      cascade pass establishes the state lies in the intersection of multiple
+      distinct invariant subspaces (a far more restrictive condition), and a
+      cascade failure LOCALIZES the deviation to the failing level, enabling
+      targeted, earlier, cheaper correction — whereas a rank-1 audit failure
+      cannot localize within the specification hierarchy.
+    conditions: "C1, C2, C3"
+    antecedents: [P5, P7]
+    evidence:
+      - type: analytic
+        anchor: "Full-rank alternative; Balanced Scorecard and Simons's diagnostic-vs-interactive controls as partial precursors; early-detection economics (Boehm 1981)."
+    body_sections: ["The Audit Society Application / The Full-Rank Alternative", "Worked Illustration"]
+  - id: P9
+    statement: >-
+      The top-level invariant subspace (OST L0) is the Brand Function eigenspace:
+      the stable, observer-contingent mapping from organizational outputs to
+      observer perception that constitutes perceptual identity. An organizational
+      state in this eigenspace produces coherent multi-dimensional perception
+      across observer cohorts; Brand Function score is the projection of the
+      operational state onto the perception eigenspace (the organizational analog
+      of a Thurstone factor score).
+    conditions: "C2"
+    antecedents: [P1, P5]
+    evidence:
+      - type: analytic
+        anchor: "Eigenspace-as-invariant-identity; Thurstone (1947) factor structure; Chen et al. (2021) spectral methods."
+    body_sections: ["Formal Model / The Eigenspace as Invariant Identity"]
+
+# ============================================================================
+# Findings — what the simulation demonstrates
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      Rank-1 audit leaves approximately 90% of total organizational deviation
+      undetected in a 6-dimensional specification space (mean undetected deviation
+      2.12 at sigma = 1.0), while the full-rank cascade detects all deviation
+      (.00 missed) by construction. The ~90% miss rate is a geometric property of
+      the rank-1 architecture — invariant across noise levels — not an artifact of
+      parameter choice; it confirms the analytic (5/6) residual prediction of
+      Proposition 1.
+    type: "simulation_result"
+    source_measurements: [m_audit_missed, m_cascade_missed]
+    generating_method: M1
+    antecedents: [O1, P4]
+    falsifier: "If the simulated miss rate varied with noise level or fell far from the analytic (5/6) prediction, the geometric-property claim would fail."
+    citation_role_in_paper: "existence_proof_for_P4_and_P8"
+    body_sections: ["Table 1", "Appendix B / Simulation Results", "Worked Illustration / Information Loss"]
+
+# ============================================================================
+# Alternative explanations — rivals the account engages
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Audit failure is a contingent institutional / incentive problem (improve
+      auditor independence, tighten incentives, increase frequency), not a
+      structural one — i.e. Power's sociological account is sufficient and the
+      algebraic layer is redundant.
+    rules_out_required: [P4, P7]
+    ruled_out_by: [P4, F1]
+    rules_out_status: "rejected"
+    reasoning: >-
+      The algebraic account is STRONGER and complementary: audit failure is
+      guaranteed for any state deviating in a dimension orthogonal to the
+      compliance axis, regardless of institutional context. Institutional
+      pressures explain WHY organizations adopt rank-1 audit; the rank inequality
+      explains why its limitations are structural, not contingent. Better
+      incentives or more frequent review cannot recover information a rank-1
+      projection discards.
+    body_sections: ["Discussion / Theoretical Implications"]
+  - id: A2
+    statement: >-
+      The enacted/constructivist view (Weick) — organizational states are enacted
+      through interpretation, not discovered — undermines the realist state-space
+      premise of the operator account.
+    rules_out_required: [P1]
+    ruled_out_by: [P3]
+    rules_out_status: "accommodated"
+    reasoning: >-
+      The operator account is realist about acceptance conditions but compatible
+      with constructivism about state ontology: an enacted state, once fixed,
+      either satisfies the acceptance predicate or not; ongoing sensemaking is
+      precisely the basis change B that builds and revises the eigenspace.
+    body_sections: ["Theory Development / Argyris and Schoen's Two-Loop Structure"]
+
+# ============================================================================
+# Limitations — honest scope (paper §Limitations and Future Research)
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The organizational state space is treated as a real inner product space with
+      a well-defined inner product; real organizational performance dimensions are
+      neither complete nor canonically commensurable. Projections are definable in
+      any normed vector space (Luenberger 1969), but self-adjointness needs the
+      inner product.
+    severity: "scope-bounding"
+    affects: [P1, P9]
+    body_sections: ["Discussion / Limitations and Future Research", "Discussion / Boundary Conditions"]
+  - id: L2
+    statement: >-
+      The paper provides no procedure for estimating the projection matrices P_k
+      empirically; a latent-variable / factor-analytic estimation of effective
+      projection rank from audit-score covariance is left to future work
+      (Pearce-Hall attentional gating, Thurstone factor tradition).
+    severity: "future-work"
+    affects: [P6]
+    body_sections: ["Discussion / Limitations and Future Research"]
+  - id: L3
+    statement: >-
+      The Appendix B simulation uses a simplified state space with isotropic noise
+      and orthonormal specification dimensions; real spaces have correlated
+      dimensions and non-isotropic noise. Future simulation should add realistic
+      inter-level coupling and empirically estimated noise covariance.
+    severity: "scope-bounding"
+    affects: [F1]
+    body_sections: ["Discussion / Limitations and Future Research", "Appendix B"]
+
+# ============================================================================
+# Robustness checks — nesting against the geometric impossibility result
+# ============================================================================
+robustness_checks:
+  - id: RC1
+    statement: >-
+      The bandwidth bound (P6) is complementary to but distinct from the geometric
+      coverage-impossibility of Zharnikov (2026h): the 2026h result proves no
+      finite-bandwidth cascade achieves full coverage on the 8x6 = 48-D
+      specification space (cascade compression reduces effective dimensionality to
+      ~15.75 at gamma = .5); P6 establishes that even within a reduced effective
+      dimensionality the organization cannot sustain full-rank verification unless
+      its capacity matches the cascade rank. The two results are nested — a double
+      compression: cannot specify everything, cannot verify everything specified.
+    type: "nesting_check"
+    sensitivity_of: [P6]
+    body_sections: ["Formal Propositions / Proposition 3"]
+
+# ============================================================================
+# Cross-paper engagement
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026i
+    relationship: applies
+    spine_nodes: [P1, P5, P8, P9]
+    note: >-
+      OST (the companion paper) supplies the acceptance-testing cascade (L0-L5),
+      the Brand Function eigenspace, and the Spectra Coffee reference deployment;
+      this paper formalizes that cascade as a full-rank spectral projection.
+  - paper_key: 2026h
+    relationship: extends
+    spine_nodes: [P6, RC1]
+    note: >-
+      Specification-impossibility (geometric coverage bound on the 48-D space);
+      the bandwidth bound of Proposition 3 is the nested verification-capacity
+      complement to 2026h's geometric specification bound.
+  - paper_key: 2026m
+    relationship: applies
+    spine_nodes: [P6]
+    note: >-
+      The projection cascade (Pi_{5->6} junction); identified as the cascade
+      location where verification bandwidth directly gates effective rank.
+  - paper_key: 2026x
+    relationship: refines
+    spine_nodes: [P9]
+    note: >-
+      Brand Function as observer-contingent behavioral specification; OST's L0 is
+      its organizational analog (the top-level acceptance predicate).
+  - paper_key: org-as-metadata
+    relationship: extends
+    spine_nodes: [C1]
+    note: >-
+      Organizational metamerism / observer-relativity; the multi-evaluator
+      boundary condition connects to metamerism arising when distinct
+      configurations lie in the intersection of multiple evaluators' eigenspaces.
+
+# ============================================================================
+# External anchor literature (real keys to be verified before they enter body;
+# described in-text here to avoid inventing substrate keys)
+# ============================================================================
+external_anchors:
+  - {citation_key: "", role: foundational_critique, spine_nodes: [P4, P7], note: "Power (1997) The Audit Society — the rank-1 critique formalized; Power (2021) audit-trail micro-foundations."}
+  - {citation_key: "", role: method_basis, spine_nodes: [P4], note: "Kannan and Vempala (2009) Spectral Algorithms — SVD basis for the rank-1 proof sketch; Chen et al. (2021) spectral methods."}
+  - {citation_key: "", role: source_lineage, spine_nodes: [P2], note: "Beer (1972, 1984), Espejo and Reyes (2011) — cybernetics / variety attenuation lineage."}
+  - {citation_key: "", role: source_lineage, spine_nodes: [P2, P3], note: "March and Simon (1958), Cyert and March (1963), Argyris and Schoen (1978), March (1991) — behavioral org theory lineage."}
+  - {citation_key: "", role: source_lineage, spine_nodes: [P2, P8], note: "Beck (2002), Boehm (1981), Boehm and Turner (2004) — software-engineering TDD / acceptance-testing lineage."}
+  - {citation_key: "", role: bandwidth_grounding, spine_nodes: [P6], note: "Tushman and Nadler (1978), Simon (1962), Lawrence and Lorsch (1967), Ocasio (1997) — information-processing / bandwidth grounding."}
+  - {citation_key: "", role: institutional_account, spine_nodes: [P7], note: "Meyer and Rowan (1977), DiMaggio and Powell (1983), Bromley and Powell (2012), Strathern (2000), Thornton and Ocasio (2008) — decoupling / isomorphism."}
+  - {citation_key: "", role: structural_parallel, spine_nodes: [P4], note: "Kovalenko (2026) Bounded Compositional Verification — pseudo-coverage as structural parallel to rank-1 audit failure (cross-domain)."}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "How to estimate the projection matrices P_k empirically from audit-score covariance (latent-variable / factor-analytic method)? (L2)"
+  - "Does the verification-bandwidth hypothesis (P6) hold on panel data linking verification architecture to multi-dimensional performance outcomes?"
+  - "How does the account generalize to the multi-evaluator regime where {P_e,k} disagree and the effective invariant subspace is an intersection across evaluators? (C1)"
+  - "Does the operator framing generalize beyond organization theory, given the structural parallel to Kovalenko's pseudo-coverage diagnosis?"
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

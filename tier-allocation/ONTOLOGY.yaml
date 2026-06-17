@@ -1,0 +1,42 @@
+# ONTOLOGY.yaml module - 2026aj
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026aj
+schema_version: 0.1
+
+owns:
+  - term_key: tier-allocation
+    label: "Tier allocation"
+    canonical_form: "tier allocation"
+    definition: "The cross-tier capital-allocation problem of choosing how to direct marginal investment across operating tiers that differ in substrate decay rate, yielding a closed-form allocation rule."
+    first_section: "The Per-Tier Accumulation Model"
+  - term_key: tier-specific-decay-rate
+    label: "Tier-specific decay rate"
+    canonical_form: "tier-specific decay rate"
+    definition: "The per-period fraction of a tier's accumulated substrate stock that depreciates each period, architecturally determined by the tier's persistence mechanism."
+    first_section: "The Per-Tier Accumulation Model"
+  - term_key: tier-independence-overestimation
+    label: "Tier-independence overestimation problem"
+    canonical_form: "tier-independence overestimation problem"
+    definition: "The error of attributing durable-stock value to a target whose revenue-generating assets are constitutively flow-dependent (high Tier-6), producing goodwill premiums that exceed the substrate that actually transfers."
+    first_section: "Six-Tier Architectural Scaffold"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+  - {term_key: tier-rotation}
+  - {term_key: tier-rotation-curve}
+
+refines: []
+

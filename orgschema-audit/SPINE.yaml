@@ -1,0 +1,490 @@
+# SPINE.yaml — The OrgSchema Audit (orgschema-audit)
+#
+# RETROFIT spine: extracted descriptively from the COMPLETED paper.md
+# ([internal path removed]), not authored generatively before prose.
+# Part of the SPINE-for-all-active-canonical project (decision D4,
+# [internal path removed]). Faithful
+# description of the paper's actual argument backbone — no aspirational extension.
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"):
+# the paper carries an author-produced worked example (Spectra Coffee) whose
+# six per-level audit findings are demonstration data summarized in Table 2.
+# That demonstration is represented as observation → method → measurement →
+# finding, so it is evidence rather than asserted prose. The two formal
+# Propositions (cascade-position prioritization; bidirectional traceability
+# completeness) remain analytic design claims and are stated as falsifiable
+# but not-yet-validated.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"
+paper_key: "orgschema-audit"
+provenance: retrofit
+title: >-
+  The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven
+  Organizations
+target_venue_primary: "TBD (OST-family applied/empirical audit paper)"
+status: >-
+  Working Paper v1.0.0 (April 2026). Retrofit spine locked 2026-06-14 from the
+  completed paper.md.
+
+thesis: |
+  A significant share of organizational dysfunction originates not from poor
+  execution but from absent or misaligned specifications. The OrgSchema Audit
+  operationalizes Organizational Schema Theory's six-level specification cascade
+  (experience contracts, signal requirements, process contracts, procedures,
+  input specifications, sourcing requirements) into a replicable, practitioner-
+  executable diagnostic protocol with explicit healthy/failing criteria and
+  fixes at each level. The protocol parallels the Spectral Audit for brand
+  perception but targets organizational operations rather than perceptual
+  allocation. It advances two testable propositions — that specification
+  failures at higher cascade levels predict greater dysfunction than lower-level
+  failures (cascade-position prioritization), and that complete bidirectional
+  traceability yields measurable operational benefits over partial traceability
+  — and demonstrates the full protocol on a worked example (Spectra Coffee).
+  Remediation should be prioritized by cascade position rather than symptom
+  severity. The audit is executable with or without AI, though large language
+  models substantially reduce the cost of initial specification extraction.
+
+# ============================================================================
+# Boundary conditions — when the audit's claims hold
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Customer experience can be decomposed into testable assertions across the
+      eight spectral dimensions; the organization has (or can define) a single
+      experience-contract root.
+    observable: "Per-dimension experience goals stated as pass/fail assertions."
+    excludes: >-
+      Multi-stakeholder organizations (hospitals, universities) requiring
+      distinct experience contracts per constituency, which complicate the
+      single-root-specification assumption.
+    body_sections: ["Discussion — Limitations"]
+  - id: C2
+    statement: >-
+      The organization's processes admit measurable quality gates, testable
+      experience contracts, and structured specification documents (low-context,
+      specification-amenable operating model).
+    observable: "Numerical tolerances and structured specs are feasible to author."
+    excludes: >-
+      High-context cultures, relationship-based business models, or purely B2B
+      operations where these assumptions may not transfer (untested).
+    body_sections: ["Discussion — Limitations"]
+
+# ============================================================================
+# Observations — the worked-example audit as recorded demonstration data
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      Spectra Coffee — a single-location specialty coffee operation in Berlin,
+      six products, three staff roles — was designed from its specifications
+      (orgschema-demo reference implementation) and audited level by level
+      against the protocol.
+    raw_data_pointer: "paper §Worked Example: Spectra Coffee (per-level findings)"
+    instrument: "The OrgSchema Audit six-step protocol"
+    timestamp: "2026-04"
+    body_sections: ["Worked Example: Spectra Coffee"]
+  - id: O2
+    statement: >-
+      Per-level audit findings were recorded: L0 healthy (social dimension
+      under-operationalized), L1 healthy with an economic-transparency signal
+      gap (designed-to-ambient 70/30, 19 signal-map entries), L2 healthy
+      (executor-invariant numeric contracts), L3 mostly healthy (single executor
+      profile only), L4 healthy (one brand-named input: oat milk), L5 partial
+      gap (no backup coffee supplier; supporting inputs under-specified).
+    raw_data_pointer: "paper Table 2 + per-level audit-finding paragraphs"
+    instrument: "The OrgSchema Audit six-step protocol"
+    timestamp: "2026-04"
+    body_sections: ["Worked Example: Spectra Coffee", "Audit Summary and Cascade Prioritization"]
+
+# ============================================================================
+# Methods — how the protocol is executed
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      The six-step audit: proceed one level per step from the top (L0→L5). At
+      each level examine the specifications, classify the result as healthy or
+      failing against explicit criteria, and prescribe a fix with an estimated
+      duration. Top-down ordering operationalizes Proposition 1 — there is no
+      value auditing procedures (L3) if experience contracts (L0) are absent.
+    type: "diagnostic_protocol"
+    inputs: ["organizational documentation", "tacit staff knowledge"]
+    outputs: ["per-level healthy/failing verdict", "specification gap map", "prioritized fixes"]
+    body_sections: ["The Audit Protocol"]
+  - id: M2
+    statement: >-
+      Cascade-position prioritization of findings: order remediation by the
+      level at which each gap originates (closer to L0 = higher priority),
+      rather than by symptom severity or financial exposure.
+    type: "prioritization_rule"
+    inputs: ["per-level audit findings"]
+    outputs: ["remediation ordering"]
+    body_sections: ["Audit Summary and Cascade Prioritization"]
+  - id: M3
+    statement: >-
+      AI-assisted execution (optional): an LLM ingests scattered documentation
+      to draft a six-level specification (characterization testing of an
+      unspecified organization), traverses the cascade to validate bidirectional
+      traceability, and flags lower-level specs lacking upward justification as
+      waste candidates. Human validation of extracted specs is mandatory.
+    type: "tool_assisted_extraction"
+    inputs: ["operations manuals", "training docs", "brand guidelines", "compliance files"]
+    outputs: ["first-draft six-level specification", "trace-validation report", "waste candidates"]
+    body_sections: ["AI as Audit Operator"]
+
+# ============================================================================
+# Measurements — derived summary of the worked example
+# ============================================================================
+measurements:
+  - id: m_maturity
+    statement: >-
+      Five of six cascade levels at healthy specification status; one (L5) at
+      partial gap. Six prioritized findings: two Low and one Medium in the upper
+      cascade (L0 Low, L1 Medium, L2 Low), three in the lower cascade (L3 Low,
+      L4 Medium, L5 Medium).
+    source_observations: [O2]
+    generating_method: M1
+    value: "5 of 6 levels healthy; 6 findings (3 Low, 3 Medium)"
+    units: "per-level audit verdicts"
+    body_sections: ["Audit Summary and Cascade Prioritization", "Table 2"]
+
+# ============================================================================
+# Propositions — the paper's core theoretical claims
+# ============================================================================
+propositions:
+  - id: P1
+    statement: >-
+      Many downstream organizational failures trace to specification
+      incompleteness, not execution failure: an absent or misaligned
+      specification (oral, vague, or untestable) is a distinct and frequently
+      root cause of the gap between what an organization intends and what it does.
+    conditions: ""
+    antecedents: []
+    evidence:
+      - type: analytic
+        anchor: >-
+          Examples of specification-as-root-cause (unwritten extraction window,
+          'ensure quality' without measurable gates, unread compliance PDF).
+    body_sections: ["Introduction (untitled opening)"]
+  - id: P2
+    statement: >-
+      Every organization can be modeled as a six-level specification cascade,
+      decomposed along an abstraction gradient (L0 customer perception → L5
+      physical supply) and an executor-invariance boundary (L0–L2 = what must be
+      achieved, executor-invariant; L3–L5 = how to achieve it, executor-dependent).
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: citation
+        anchor: >-
+          Cascade formalized by Organizational Schema Theory; parallels
+          test/implementation separation, front-stage/back-stage, and the
+          voice-of-customer cascade.
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven, beck-2003-testdriven-development-by, bitner-2008-service-blueprinting-practical, akao-1990-quality-function-deployment]
+    body_sections: ["The Six-Level Specification Cascade"]
+  - id: P3
+    statement: >-
+      The cascade is bidirectionally traceable: design flows top-down (desired
+      perception → sourcing) while operation flows bottom-up (sourcing →
+      perceived experience), so every operational parameter can answer 'Why does
+      this exist?' (trace up) and 'What implements this?' (trace down).
+      Parameters with no upward trace are waste; experience goals with no
+      downward trace are unimplemented aspirations.
+    conditions: "C1"
+    antecedents: [P2]
+    evidence:
+      - type: analytic
+        anchor: "The two-direction trace test applied to each operational parameter."
+    body_sections: ["The Six-Level Specification Cascade"]
+  - id: P4
+    statement: >-
+      The contract–procedure separation holds: process contracts (L2) specify
+      measurable executor-invariant outcomes (the organization's unit tests),
+      while procedures (L3) are the only fully executor-dependent layer
+      (human / hybrid / automated) — different procedures satisfying the same
+      contract are organizational metamers, structurally distinct but
+      functionally equivalent.
+    conditions: ""
+    antecedents: [P2]
+    evidence:
+      - type: citation
+        anchor: >-
+          Procedure structure follows contract structure (an inversion of
+          Conway's law); structurally distinct, functionally equivalent forms.
+        citation_keys: [conway-1968-how-do-committees, skelton-2019-team-topologies-organizing, zharnikov-2026-organizational-schema-theory-test-driven]
+    body_sections: ["The Six-Level Specification Cascade", "Managerial Implications"]
+  - id: P5
+    statement: >-
+      (Proposition 1 — Cascade-Position Prioritization) Specification failures
+      at higher cascade levels (closer to L0) predict greater operational
+      dysfunction than failures at lower levels, because higher-level failures
+      invalidate the justification for all dependent levels; an absent or
+      incoherent L0 experience contract renders all downstream specifications
+      unjustified.
+    conditions: "C1"
+    antecedents: [P2, P3]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Derives from OST Proposition 1 (hierarchical justification); applied
+          to order the Spectra Coffee findings (L1 transparency gap over L5
+          sourcing gap).
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven]
+    falsifier: >-
+      Falsified if field studies show L4 or L5 failures predict operational
+      outcomes more strongly than L0 or L1 failures, after controlling for
+      organization size and sector.
+    body_sections: ["The Six-Level Specification Cascade — Proposition 1", "Audit Summary and Cascade Prioritization"]
+  - id: P6
+    statement: >-
+      (Proposition 2 — Bidirectional Traceability Completeness) Organizations in
+      which every operational parameter traces upward to an experience contract
+      AND every experience contract traces downward to an implementing procedure
+      exhibit lower operational-failure rates, faster expansion, and more
+      successful automation initiatives than organizations with partial or
+      unidirectional traceability.
+    conditions: "C1"
+    antecedents: [P3, P4]
+    evidence:
+      - type: analytic
+        anchor: "Derives from the contract–procedure separation in OST."
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven]
+    falsifier: >-
+      Falsified if organizations with complete bidirectional traceability show
+      no operational-outcome difference vs partial-traceability organizations
+      over a 12-month period.
+    body_sections: ["The Six-Level Specification Cascade — Proposition 2"]
+  - id: P7
+    statement: >-
+      The OrgSchema Audit occupies a distinct position against the five closest
+      diagnostic frameworks (PEMM, service blueprinting, Balanced Scorecard,
+      QFD, capability maturity models): each audits WITHIN its level of analysis
+      and none requires customer experience as the root specification traced
+      ACROSS levels. Maturity is necessary but not sufficient; specification
+      traceability is the additional requirement.
+    conditions: ""
+    antecedents: [P2, P3]
+    evidence:
+      - type: citation
+        anchor: >-
+          Framework-by-framework positioning (Table 1); maturity models converge
+          structurally while leaving customer output outside scope.
+        citation_keys: [hammer-2007-the-process-audit, bitner-2008-service-blueprinting-practical, kaplan-1996-balanced-scorecard-translating, akao-1990-quality-function-deployment, cmmi-2018-cmmi-model-v20, efqm-2020-the-efqm-model, ferraro-2023-maturity-models-trends, escalona-2022-lean-requirements-traceability]
+    body_sections: ["Positioning Against Existing Frameworks", "Table 1"]
+  - id: P8
+    statement: >-
+      A specification-cascade architecture can be operationalized as a
+      replicable diagnostic protocol: six steps, one per level, each defining
+      what to examine, a healthy result, a failing result, and a fix with an
+      estimated duration — making the contract–procedure separation auditable
+      (answering the paper's first research question).
+    conditions: "C2"
+    antecedents: [P2]
+    evidence:
+      - type: analytic
+        anchor: "The six-step protocol with explicit per-level criteria."
+    body_sections: ["The Audit Protocol"]
+  - id: P9
+    statement: >-
+      The specification gap is a root cause: a recurring symptom (e.g.
+      inconsistent espresso) commonly resolves to an upstream specification
+      defect (missing recalibration trigger at L2, under-specified freshness
+      window at L4, supplier deviation at L5) rather than procedure-level
+      execution; treating the symptom at L3 while the gap persists upstream
+      guarantees recurrence.
+    conditions: ""
+    antecedents: [P3, P5]
+    evidence:
+      - type: citation
+        anchor: >-
+          Extends system-level-cause-over-individual-blame quality theory by
+          adding the cascade-position dimension.
+    body_sections: ["Managerial Implications"]
+  - id: P10
+    statement: >-
+      Organization-as-configuration: organizational structure is the most
+      volatile (metadata) layer of a three-layer stack (value most stable,
+      process between); different structures producing the same value output are
+      organizational metamers, so forms can be modified, forked, or replaced
+      when they no longer serve the experience contract.
+    conditions: ""
+    antecedents: [P4]
+    evidence:
+      - type: citation
+        anchor: >-
+          Structure-as-metadata from OST; aligns with reconfigurable
+          organizational-design reviews.
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven]
+    body_sections: ["Managerial Implications"]
+
+# ============================================================================
+# Findings — what the worked example demonstrates
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      The protocol is executable end to end: applied to Spectra Coffee it
+      produced a specification gap map (5 of 6 levels healthy, L5 partial) and
+      surfaced gaps that conventional operational review does not — e.g. a
+      declared-value-versus-emitted-signal mismatch (L1 economic transparency)
+      and a single-product input dependency (L4 oat milk by brand). This is a
+      formative demonstration of the protocol's mechanics, not an independent
+      validation, because the organization was designed from its specifications.
+    type: "worked_example_demonstration"
+    source_measurements: [m_maturity]
+    generating_method: M1
+    antecedents: [O2]
+    falsifier: >-
+      If the protocol cannot be run to a per-level verdict on a real operation,
+      or surfaces nothing beyond conventional review, F1 weakens.
+    body_sections: ["Worked Example: Spectra Coffee", "Audit Summary and Cascade Prioritization"]
+  - id: F2
+    statement: >-
+      Cascade-position prioritization yields a DIFFERENT remediation ordering
+      than severity- or exposure-based approaches: it directs attention to the
+      L1 economic-transparency gap over the L5 sourcing gap even though the L5
+      gap poses more immediate operational risk, because the L1 gap propagates
+      upward to distort the experience cascade while the L5 gap does not
+      (answering the paper's second research question, as a demonstration).
+    type: "worked_example_demonstration"
+    source_measurements: [m_maturity]
+    generating_method: M2
+    antecedents: [O2, P5]
+    falsifier: >-
+      If cascade-position ordering coincides with severity ordering on the
+      worked example, the distinctness claim weakens.
+    body_sections: ["Audit Summary and Cascade Prioritization"]
+
+# ============================================================================
+# Limitations — honest scope of the contribution
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The worked example is formative, not validating: Spectra Coffee was
+      designed from its specifications, so the audit demonstrates protocol
+      mechanics, not the harder characterization-testing case of a legacy
+      organization that has never been specified (where extracting implicit
+      specs is interpretive and may not match self-understanding).
+    severity: "scope-bounding"
+    affects: [F1, F2, P8]
+    body_sections: ["Discussion — Limitations", "Worked Example: Spectra Coffee"]
+  - id: L2
+    statement: >-
+      Propositions 1 and 2 (cascade-position prioritization; bidirectional
+      traceability completeness) are theoretically grounded but empirically
+      unvalidated; field studies comparing cascade-position against severity-
+      based prioritization, and measuring traceability outcomes over 6–12
+      months, are needed.
+    severity: "future-work"
+    affects: [P5, P6]
+    body_sections: ["Discussion — Limitations", "Discussion — Future research"]
+  - id: L3
+    statement: >-
+      The protocol has been developed only at coffee-shop scale in a single
+      domain and cultural context (Berlin). Whether the six-level cascade scales
+      to large multi-division enterprises (which may need inter-divisional /
+      shared-service / governance layers), and whether its assumptions transfer
+      to high-context, relationship-based, or B2B operations, is untested. The
+      sourcing level (L5) is the least developed.
+    severity: "scope-bounding"
+    affects: [P2, P8]
+    body_sections: ["Discussion — Limitations"]
+  - id: L4
+    statement: >-
+      The eight-spectral-dimension decomposition of customer experience inherits
+      the open question of whether eight dimensions are necessary and sufficient
+      for all organizational contexts; LLM-extracted specification accuracy is
+      also an open question requiring mandatory human validation.
+    severity: "inherited-assumption"
+    affects: [C1, M3]
+    evidence:
+      - type: citation
+        anchor: "Inherits the SBT dimensional-model limitation."
+        citation_keys: [zharnikov-2026-why-eight-completeness-necessity-sbt]
+    body_sections: ["Discussion — Limitations", "AI as Audit Operator"]
+
+# ============================================================================
+# Alternative explanations — rival readings the contribution must clear
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The OrgSchema Audit is just another maturity model (PEMM / CMMI / EFQM /
+      Balanced Scorecard / QFD / service blueprint) under a new name.
+    rules_out_required: [P7]
+    ruled_out_by: [P7]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Each rival audits within its level of analysis and none requires customer
+      experience as the root specification traced bidirectionally across levels;
+      the audit adds the vertical traceability dimension and continuous
+      validation those frameworks lack (Table 1).
+    body_sections: ["Positioning Against Existing Frameworks"]
+
+# ============================================================================
+# Cross-paper engagement (real corpus paper_keys)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026i
+    relationship: applies
+    spine_nodes: [P2, P3, P4, P5, P6, P10]
+    note: >-
+      Operationalizes Organizational Schema Theory's six-level specification
+      cascade and contract–procedure separation into an executable audit; OST
+      Proposition 1 grounds the paper's Proposition 1 (P5).
+  - paper_key: 2026a
+    relationship: applies
+    spine_nodes: [P2]
+    note: >-
+      Signal requirements (L1) operate across the eight spectral dimensions of
+      Spectral Brand Theory; experience-contract design uses the eight
+      dimensions as its framework.
+  - paper_key: 2026r
+    relationship: extends
+    spine_nodes: [L4, C1]
+    note: >-
+      Inherits the 'Why Eight?' necessity-and-sufficiency question for the
+      dimensional model as a boundary condition on the single-root assumption.
+
+# ============================================================================
+# External anchor literature (verified substrate citation keys)
+# ============================================================================
+external_anchors:
+  - {citation_key: zharnikov-2026-organizational-schema-theory-test-driven, role: foundational_theory, spine_nodes: [P2, P4, P5, P6, P10], note: "OST — the six-level cascade this audit operationalizes"}
+  - {citation_key: zharnikov-2026-spectral-brand-theory-computational-framework, role: foundational_theory, spine_nodes: [P2], note: "SBT — eight spectral dimensions for L0/L1"}
+  - {citation_key: zharnikov-2026-why-eight-completeness-necessity-sbt, role: scope_qualifier, spine_nodes: [L4, C1], note: "Why Eight? — dimensional necessity/sufficiency limitation"}
+  - {citation_key: beck-2003-testdriven-development-by, role: source_analogy, spine_nodes: [P2], note: "TDD test-before-code = specify-experience-before-process"}
+  - {citation_key: vargo-2004-evolving-new-dominant, role: foundational_theory, spine_nodes: [P2], note: "Service-Dominant Logic — value defined by the beneficiary (L0 root)"}
+  - {citation_key: wiggins-1998-understanding-by-design, role: source_analogy, spine_nodes: [P2], note: "Backward design — reverse-design precedent"}
+  - {citation_key: conway-1968-how-do-committees, role: source_analogy, spine_nodes: [P4], note: "Conway's law inverted — procedure structure follows contract structure"}
+  - {citation_key: skelton-2019-team-topologies-organizing, role: supporting, spine_nodes: [P4], note: "Reorganizable procedure layer under a stable contract"}
+  - {citation_key: hammer-2007-the-process-audit, role: contrasting_framework, spine_nodes: [P7, M2], note: "PEMM — closest structural rival; conventional severity-based prioritization"}
+  - {citation_key: bitner-2008-service-blueprinting-practical, role: contrasting_framework, spine_nodes: [P7], note: "Service blueprinting — descriptive maps vs executable specs"}
+  - {citation_key: kaplan-1996-balanced-scorecard-translating, role: contrasting_framework, spine_nodes: [P7], note: "Balanced Scorecard — top-down metric cascade (inverted here)"}
+  - {citation_key: akao-1990-quality-function-deployment, role: contrasting_framework, spine_nodes: [P7], note: "QFD House of Quality — design-time cascade vs continuous diagnostic"}
+  - {citation_key: cmmi-2018-cmmi-model-v20, role: contrasting_framework, spine_nodes: [P7], note: "CMMI — capability without experiential-outcome linkage"}
+  - {citation_key: efqm-2020-the-efqm-model, role: contrasting_framework, spine_nodes: [P7], note: "EFQM — perceptions as outcomes, not root specifications"}
+  - {citation_key: ferraro-2023-maturity-models-trends, role: positioning, spine_nodes: [P7], note: "Maturity-model convergence leaves customer output outside scope"}
+  - {citation_key: escalona-2022-lean-requirements-traceability, role: precedent, spine_nodes: [P7, M3], note: "Automated trace-link validation feasible in software RE"}
+  - {citation_key: polanyi-1966-the-tacit-dimension, role: scope_qualifier, spine_nodes: [P8, L1], note: "Tacit knowledge — the human premium above the specifiable floor"}
+  - {citation_key: feathers-2004-working-effectively-with, role: source_analogy, spine_nodes: [M3], note: "Characterization testing of legacy code = legacy-org spec extraction"}
+  - {citation_key: treacy-1993-customer-intimacy-other, role: supporting, spine_nodes: [P9], note: "Operational excellence — replicability via traceability mechanism"}
+  - {citation_key: simon-1996-the-sciences-of, role: foundational_theory, spine_nodes: [P1], note: "Organizations as specification/design systems"}
+  - {citation_key: stentoft-2024-supply-chain-resilience, role: scope_qualifier, spine_nodes: [L3], note: "L5 sourcing-layer specification depth, untested at enterprise scale"}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Field validation of Propositions 1 and 2: 10–20 organizations of varying size/sector, measuring audit cost and 6–12-month remediation outcomes (P5, P6, L2)."
+  - "Scale testing: does the six-level model need additional layers (inter-divisional, shared-service, governance) for organizations of 50+ employees? (L3)"
+  - "Integration testing: do operational specification gaps predict perceptual coherence gaps when the OrgSchema Audit and the Spectral Audit run jointly on one organization?"
+  - "Characterization-testing case: applying the audit to a legacy organization never previously specified, where revealed specification may diverge from stated intention (L1)."
+  - "LLM-extracted specification accuracy and transfer of the audit's assumptions to high-context, relationship-based, or B2B operations (L4, L3)."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

@@ -1,0 +1,621 @@
+# SPINE.yaml — Capability as Projection (2026al)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md, NOT
+# authored generatively before prose (SPINE-for-all-active-canonical project,
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"):
+# the paper reports author-produced computed numbers — a 20,000-trial Monte
+# Carlo of the propositions' comparative statics, plus single-coder honestly
+# coded event logs with derived kappa values and pi_lambda projections for
+# three process-traced cases — so observations / methods / measurements /
+# findings are first-class nodes carrying that evidence.
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"     # retrofit backbone first lock (2026-06-14, D4)
+paper_key: "2026al"
+provenance: retrofit
+title: >-
+  Capability as Projection of an Append-Only Organizational Log: An
+  Event-Sourced Substrate Theory of Organizational Capability and Transfer
+  Failure
+target_venue_primary: "TBD (OST-adjacent strategy/organization theory)"
+status: >-
+  Retrofit spine extracted from completed paper.md (Working Paper v1.0.0,
+  May 2026). The paper is finished; this spine describes its actual claims.
+
+thesis: |
+  Organizational capability is not a stored stock of resources or routines but
+  a render-time projection of an append-only log of immutable events — the
+  decisions, failures, policies, hires, and artifacts through which the
+  capability was actually produced. The paper specifies three formal objects (a
+  partially ordered event log L, a projection operator pi that reads the log
+  under a query at a render time, and a compatibility function kappa scoring
+  log-merge events such as acquisitions) and derives four propositions about
+  capability transfer: clean log merges preserve projection continuity;
+  snapshot imports without the underlying log diverge within three years;
+  writedown magnitude in failed M&A is jointly determined by raw log
+  incompatibility AND the acquirer's integration-policy choice; and imitators
+  who observe only the projection cannot replicate capability responses to novel
+  queries. The substrate-projection distinction reframes the long-running
+  tautology critique of dynamic capabilities as a category error and generates
+  falsifiable predictions about transfer failure. The contribution is
+  substrate-layer, not a wholesale recasting of the firm.
+
+# ============================================================================
+# Boundary conditions — when the substrate-projection theory applies (B1-B4)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Order matters: outcomes depend on the sequence of decisions, not merely
+      their cumulative count (rules out commodity spot markets where order is
+      irrelevant to outcome).
+    observable: "Re-ordering the event stream changes the projected capability."
+    excludes: "Spot markets; buying N widgets at price p in any order is identical."
+  - id: C2
+    statement: >-
+      Decisions are non-fungible: hiring Person A then Person B produces a
+      different log than hiring B then A, because the second hire inherits a
+      different organizational context.
+    observable: "Permuted event order yields a distinct downstream log."
+    excludes: "Interchangeable transactions with no path-dependent context."
+  - id: C3
+    statement: >-
+      Decisions are non-reversible at zero cost: once a hire is made, an SOP
+      version published, or a customer relationship begun, the event is on the
+      log even if a later event supersedes it.
+    observable: "Superseding events append rather than erase prior events."
+    excludes: "One-shot transactions where the relationship ends at completion."
+  - id: C4
+    statement: >-
+      An event taxonomy T can be specified ex ante, before cases are coded, to
+      defeat the critique that the log can expand or contract post hoc.
+    observable: "A fixed five-type taxonomy committed before coding begins."
+    excludes: "Pre-digital settings with no documentary substitutes for events."
+
+# ============================================================================
+# Propositions — the theory's analytic backbone
+# ============================================================================
+propositions:
+  - id: P0
+    statement: >-
+      Three transfer-failure phenomena (Toyota Production System imitation
+      failure, executive-star transfer failure, and the Microsoft+Nokia vs
+      Disney+Pixar acquisition contrast) resist clean explanation under
+      resource-based or dynamic-capabilities theory: the resources were
+      preserved but the result was not; the artifacts were copied but the
+      competence did not transfer. The missing object in all three is the same —
+      the operational event log.
+    antecedents: []
+    evidence:
+      - type: motivating_anomaly
+        anchor: >-
+          Three opening cases (Spear and Bowen 1999; Groysberg, Nanda, and
+          Nohria 2004; Microsoft 2015 10-K; Catmull 2008) the dominant theories
+          of the firm leave unexplained.
+    body_sections: ["Introduction (movements opening)"]
+  - id: P_LOG
+    statement: >-
+      An organization's operational history is a partially ordered set of typed
+      immutable events L = (E, <=); each event carries (id, timestamp, actor,
+      type from a fixed five-type taxonomy DECISION/FAILURE/POLICY/PERSONNEL/
+      ARTIFACT, payload, caused_by). Events are never edited, only superseded by
+      later events that both remain on the log.
+    antecedents: [P0]
+    evidence:
+      - type: formal_definition
+        anchor: "Paper §The Event Log L; Methods Appendix A.2 taxonomy."
+    body_sections: ["The Event-Sourced View — The Event Log L", "Appendix A.2"]
+  - id: P_PROJ
+    statement: >-
+      Capability is a projection pi : L x Q x t -> C reading a query-relevant
+      subset L_q of the log at render time t to produce an observable claim.
+      pi obeys prefix monotonicity (capabilities are never erased, only
+      superseded), determinism conditional on the log (same L, q, t -> same
+      claim — the strict-replay property), and locality (pi depends only on the
+      q-relevant subset, ruling out spurious cross-firm halo effects). The
+      weighted prefix sum with exponential decay pi_lambda is one calibratable
+      instance, not the only operator.
+    antecedents: [P_LOG]
+    evidence:
+      - type: formal_definition
+        anchor: "Paper §The Projection Operator pi; properties P1/P2/P3 (locality)."
+    body_sections: ["The Event-Sourced View — The Projection Operator pi"]
+  - id: P_KAPPA
+    statement: >-
+      For two logs (typically the parties to an acquisition) compatibility
+      kappa(L_A, L_B) = 1 - |conflicts|/(|L_A|+|L_B|) in [0,1], where conflicts
+      are event pairs that cannot be co-incorporated into a merged log without
+      contradicting determinism (incompatible policies, artifacts, or
+      identifiers). Conflict-resolution semantics are borrowed from the
+      conflict-free replicated data type literature; three canonical M&A merge
+      policies recur (last-write-wins, acquirer-supreme, subsidiary-preserved).
+    antecedents: [P_LOG]
+    evidence:
+      - type: formal_definition
+        anchor: "Paper §The Compatibility Function kappa (Shapiro et al. 2011 CRDTs)."
+    body_sections: ["The Event-Sourced View — The Compatibility Function kappa"]
+  - id: P_SNAP
+    statement: >-
+      A snapshot S = pi(L, q, t_0) is a projection frozen and detached from its
+      substrate; it can be passed to another party but loses the log behind it,
+      so subsequent projections on the snapshot alone can only re-render existing
+      claims and cannot answer new queries that require log access. A rendering
+      is a live projection refreshable as L grows; a capability in use is a
+      rendering, a capability in a slide deck is a snapshot.
+    antecedents: [P_PROJ]
+    evidence:
+      - type: formal_definition
+        anchor: "Paper §Snapshots and Renderings — the structurally central distinction."
+    body_sections: ["The Event-Sourced View — Snapshots and Renderings"]
+  - id: P_TAUT
+    statement: >-
+      The persistent tautology critique of dynamic capabilities is a category
+      error arising from collapsing substrate and projection: constructs defined
+      only at the projection layer appear tautological when the substrate is
+      unobserved, because two projections of the same log correlate regardless of
+      mechanism. Once the log is named separately, capability is the projection
+      at t and performance is a different projection at a later t, both governed
+      by the common log; predictions about their relationship become
+      identification problems rather than definitional ones.
+    antecedents: [P_PROJ]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Reinterpretation of Arend and Bromiley 2009; Helfat and Peteraf 2009;
+          congenial to Eisenhardt and Martin 2000 (processes = projections of
+          well-defined event subsets).
+    body_sections: ["Theoretical Foundations — Dynamic Capabilities", "Discussion"]
+  - id: P_MICRO
+    statement: >-
+      The microfoundations critique is answered structurally rather than
+      rhetorically: the log is the micro-level (individual decisions, named-actor
+      hires, dated artifacts) and the projection is the collective-level
+      competence that emerges when the log is read under a strategic query, so
+      the relation between substrate and capability is a function rather than a
+      hand-wave. Knowledge-integration and knowledge-transfer theories are
+      projection-layer theories whose presumed substrate the log supplies.
+    antecedents: [P_LOG, P_PROJ]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Felin, Foss, Heimeriks, and Madsen 2012; Grant 1996; Kogut and Zander
+          1992 reframed as projection-layer programs needing a substrate.
+    body_sections: ["Theoretical Foundations — Microfoundations and the Knowledge-Based View"]
+  - id: P1
+    statement: >-
+      (Paper Proposition P1 — Log-compatible merge preserves projection.) If
+      kappa(L_A, L_B) > theta_high, post-merge projection continuity is at least
+      .90 for t <= 5 years following the merge for the same query. Falsified by a
+      clean high-kappa merger that exhibits projection discontinuity within five
+      years on substrate-dependent capability queries.
+    conditions: "C1-C4"
+    antecedents: [P_KAPPA, P_PROJ]
+    falsifier: "Clean high-kappa merger with substrate-query discontinuity within 5 years."
+    body_sections: ["The Event-Sourced View — Four Propositions (P1)"]
+  - id: P2
+    statement: >-
+      (Paper Proposition P2 — Snapshot import diverges.) If the acquirer imports
+      a snapshot S_B without merging L_B (acquirer-supreme resolution discarding
+      the target log), then for t > t_0 + 3 years the projection diverges from
+      the log-merged counterfactual on any substrate-dependent query. Falsified
+      by a clean snapshot-import case where the imported capability stays intact
+      beyond three years on substrate-dependent queries.
+    conditions: "C1-C4"
+    antecedents: [P_SNAP]
+    falsifier: "Snapshot-import capability intact beyond 3 years on substrate queries."
+    body_sections: ["The Event-Sourced View — Four Propositions (P2)"]
+  - id: P3
+    statement: >-
+      (Paper Proposition P3 — Joint dependence on log compatibility and
+      integration policy.) Writedown magnitude in a failed M&A is jointly
+      determined by raw log incompatibility (1 - kappa) AND the acquirer's chosen
+      conflict-resolution policy: acquirer-supreme amplifies low compatibility
+      into large writedowns; negotiated or target-preserving policies attenuate
+      it. kappa alone underdetermines the outcome; the policy choice is the
+      multiplier. Falsified by inverse conflict-density/writedown correlation at
+      fixed policy, or systematic absence of attenuation under negotiated
+      policies on comparable deals.
+    conditions: "C1-C4"
+    antecedents: [P_KAPPA, P_SNAP]
+    falsifier: "Inverse kappa-writedown relation at fixed policy, or no attenuation under negotiated policy."
+    body_sections: ["The Event-Sourced View — Four Propositions (P3)"]
+  - id: P4
+    statement: >-
+      (Paper Proposition P4 — Projection-only imitation bound.) An imitator who
+      observes only the projection pi(L, q, t) of a substrate they do not possess
+      cannot replicate capability responses to novel queries q' outside the
+      imitated projection's distribution; imitation success on the original query
+      is not evidence of transfer, only persistence under new q' is. The
+      sign-inverted pi_lambda signature between canonical and imitator is the
+      central empirical test. Falsified by demonstrably substrate-free imitators
+      matching the canonical's responses to genuinely novel queries over a
+      sustained interval.
+    conditions: "C1-C4"
+    antecedents: [P_PROJ, P_SNAP]
+    falsifier: "Substrate-free imitator matches canonical on genuinely novel queries over a sustained interval."
+    body_sections: ["The Event-Sourced View — Four Propositions (P4)"]
+  - id: P_AUX
+    statement: >-
+      Three auxiliary M&A predictions follow from the mechanism: acquirers with
+      diverse acquisition histories exhibit smaller integration-outcome variance
+      (their log supplies POLICY defaults across more kappa-conflict classes);
+      integration teams with rapid turnover produce more variable outcomes (log
+      replay is harder when carriers depart); and writedown timing is predictable
+      from the joint structure of kappa and integration policy (low-kappa +
+      acquirer-supreme -> early writedowns; moderate-kappa + negotiated -> late
+      or none).
+    conditions: "C1-C4"
+    antecedents: [P1, P2, P3]
+    evidence:
+      - type: analytic
+        anchor: "Pre-registered falsifiable extensions for the companion empirical paper."
+    body_sections: ["Mechanism — Three Auxiliary Predictions"]
+  - id: P_EXPLOG
+    statement: >-
+      Prior acquisition experience improves outcomes because experience IS the
+      log: POLICY events codifying prior integration choices narrow the space of
+      projections an acquirer can credibly choose at integration time, and
+      experience fails to help when the focal deal's kappa-conflict structure is
+      categorically absent from the acquirer's log (Microsoft's software-
+      acquisition log was orthogonal to Nokia's hardware-software co-design
+      conflicts). This operationalizes the relevance-of-experience finding as log
+      overlap on focal conflict classes.
+    conditions: "C1-C4"
+    antecedents: [P_KAPPA, P_LOG]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Reframing Zollo and Singh 2004; Puranam, Powell, and Singh 2006;
+          Puranam and Srikanth 2007; Graebner et al. 2017.
+    body_sections: ["Mechanism — Experience as Log, Integration as Projection"]
+
+# ============================================================================
+# Observations — the honestly coded event logs (author-produced evidence)
+# ============================================================================
+observations:
+  - id: O_DP
+    statement: >-
+      Single-coder honest application of the pre-registered protocol to
+      Disney+Pixar 2006 produced 57 events (50 Pixar 1986-2006 + 7 Disney
+      pre-acquisition; 46 HIGH / 10 MEDIUM confidence) against public sources
+      (Anand and Collis 2010; Catmull 2008/2014; Iger 2019; Disney SEC filings).
+    raw_data_pointer: "github.com/spectralbranding/orgschema-papers/.../case_event_coding/disney_pixar_2006_event_log.csv"
+    instrument: "pre-registered event-coding protocol (Methods Appendix), single-coder pass"
+    timestamp: "2026-05"
+    body_sections: ["Illustrative Cases — Disney + Pixar 2006"]
+  - id: O_MN
+    statement: >-
+      Single-coder honest coding of Microsoft+Nokia 2014 over 1997-2014 produced
+      47 events (29 Nokia + 18 Microsoft pre-acquisition mobile; 35 HIGH / 11
+      MEDIUM) against the Microsoft 2015 10-K, the 8-K layoff filing, Nokia annual
+      reports, Vuori and Huy 2016, and Aspara et al. 2023.
+    raw_data_pointer: "github.com/spectralbranding/orgschema-papers/.../case_event_coding/microsoft_nokia_2014_event_log.csv"
+    instrument: "pre-registered event-coding protocol, single-coder pass"
+    timestamp: "2026-05"
+    body_sections: ["Illustrative Cases — Microsoft + Nokia 2014"]
+  - id: O_TPS
+    statement: >-
+      Single-coder honest coding of the Toyota Production System produced 36
+      events (26 canonical Toyota + 10 stylized composite imitator; 29 HIGH /
+      5 MEDIUM; 44.4% POLICY density) from Liker 2004, Spear and Bowen 1999, and
+      Spear 2009.
+    raw_data_pointer: "github.com/spectralbranding/orgschema-papers/.../case_event_coding/toyota_tps_event_log.csv"
+    instrument: "pre-registered event-coding protocol, single-coder pass"
+    timestamp: "2026-05"
+    body_sections: ["Illustrative Cases — Toyota Production System"]
+
+# ============================================================================
+# Methods — coding protocol + computational instruments
+# ============================================================================
+methods:
+  - id: M_CODE
+    statement: >-
+      The ex-ante pre-registered event-coding protocol: a fixed five-type
+      taxonomy committed before coding, >=10-year minimum log depth, an identifier
+      discipline targeting Cohen's kappa > .80 on event identity, a source
+      hierarchy privileging primary records, confidence ratings, a
+      conflict-resolution policy taxonomy for kappa, and pre-registered
+      robustness checks (granularity variation, placebo cases, blind-coder
+      variation). The reported cases use an honest single-coder pass; the
+      two-blind-coder gold standard is reserved for the companion empirical paper.
+    type: "pre_registered_qualitative_coding_protocol"
+    inputs: ["public documentary + secondary-authoritative sources per case"]
+    outputs: ["typed event logs with confidence ratings"]
+    code_anchor: "github.com/spectralbranding/orgschema-papers/.../METHODS_APPENDIX_event_coding_protocol.md"
+    body_sections: ["Appendix A: Methods Appendix (A.1-A.10)"]
+  - id: M_MC
+    statement: >-
+      A 20,000-trial Monte Carlo (monte_carlo_simulation.py) sweeps a five-cell
+      conflict-density grid (0.0, 0.1, 0.5, 0.7, 0.9) and a four-cell decay grid
+      (lambda = 0.0, 0.1, 0.5, 1.0) under two integration policies
+      (acquirer-supreme, negotiated), 500 trials per cell, random seed 42; a
+      companion projection demo (projection_demo.py) computes pi_lambda and kappa
+      on sample/synthetic logs.
+    type: "monte_carlo_simulation"
+    inputs: ["synthetic logs with stipulated conflict densities"]
+    outputs: ["continuity and writedown comparative statics per cell"]
+    code_anchor: "github.com/spectralbranding/orgschema-papers/capability-as-projection/code/"
+    reproducibility:
+      seed: "42"
+      runtime_environment: "Python 3.12 + uv (public mirror code/)"
+    body_sections: ["Companion Computation Script and Worked Monte Carlo"]
+  - id: M_PILAM
+    statement: >-
+      The worked projection operator pi_lambda (weighted prefix sum with
+      exponential decay, signed per-event weights) applied to the coded Toyota
+      and imitator logs at several decay rates, and the kappa compatibility
+      function applied pairwise to each M&A case's coded logs under the
+      conflict-counting policy taxonomy with honest uncertainty bands.
+    type: "operator_evaluation_on_coded_logs"
+    inputs: ["the three coded case event logs"]
+    outputs: ["per-case kappa values and pi_lambda projections"]
+    code_anchor: "github.com/spectralbranding/orgschema-papers/capability-as-projection/code/projection_demo.py"
+    body_sections: ["Illustrative Cases (all three subsections)"]
+
+# ============================================================================
+# Measurements — derived numbers from the coded logs and the simulation
+# ============================================================================
+measurements:
+  - id: m_kappa_dp
+    statement: "Disney+Pixar compatibility kappa = .84 (honest range .78-.92), placing the case in the high-kappa region predicted by P1; observed decade writedown = zero."
+    source_observations: [O_DP]
+    generating_method: M_PILAM
+    value: "kappa = .84 (.78-.92); writedown = 0"
+    units: "compatibility in [0,1]; USD writedown"
+    body_sections: ["Illustrative Cases — Disney + Pixar 2006"]
+  - id: m_kappa_mn
+    statement: >-
+      Microsoft+Nokia raw compatibility kappa = .79-.85 (range .61-.92) —
+      moderately high, NOT near zero — with a USD 7.6B impairment announced 15
+      months post-close against a USD 7.2B purchase price under acquirer-supreme
+      integration with ~70% (12,500-position) layoff.
+    source_observations: [O_MN]
+    generating_method: M_PILAM
+    value: "kappa = .79-.85 (.61-.92); writedown = USD 7.6B at 15 months"
+    units: "compatibility in [0,1]; USD; months"
+    body_sections: ["Illustrative Cases — Microsoft + Nokia 2014"]
+  - id: m_pilam_tps
+    statement: >-
+      Toyota vs imitator pi_lambda is sign-inverted at every decay rate examined
+      (lambda 0.0: +14.0 vs -4.5; lambda 0.1: +0.52 vs -0.31; lambda 0.5: +0.007
+      vs -0.0001); canonical-vs-imitator kappa-equivalent = .38-.50
+      (POLICY-POLICY + POLICY-FAILURE) or .71 (strict POLICY-POLICY only).
+    source_observations: [O_TPS]
+    generating_method: M_PILAM
+    value: "pi_lambda sign-inverted across all lambda; kappa-equiv .38-.50 / .71"
+    units: "projection value; compatibility in [0,1]"
+    body_sections: ["Illustrative Cases — Toyota Production System"]
+  - id: m_mc
+    statement: >-
+      Monte Carlo reproduces the predicted comparative statics: at density 0 the
+      policy continuity gap = .000; at density .9 acquirer-supreme writedown is
+      ~twice negotiated (.131 vs .058 at lambda .1) and continuity falls to .87
+      vs .94; writedown is strictly monotone increasing in conflict density at
+      every lambda. Four of five pre-registered numerical checks pass; check C2
+      (continuity gap >= .10 at density .9) is an honest near-miss at .073.
+    source_observations: []
+    generating_method: M_MC
+    value: "writedown .131 vs .058; continuity .87 vs .94 at density .9, lambda .1; C2 gap = .073 (near-miss)"
+    units: "writedown magnitude; projection continuity in [0,1]"
+    body_sections: ["Companion Computation Script and Worked Monte Carlo"]
+
+# ============================================================================
+# Findings — what the cases and simulation demonstrate (in direction)
+# ============================================================================
+findings:
+  - id: F_DP
+    statement: >-
+      Disney+Pixar is consistent in direction with P1 and P3: high kappa plus a
+      target-preserving last-write-wins policy preserved the Pixar log as a live
+      rendering; all five HIGH-confidence Pixar POLICY events remained in force
+      through 2011 and the decade writedown was zero; Toy Story 3, Inside Out, and
+      Coco are projections of the post-merge log under new queries.
+    type: "process_traced_case_evidence"
+    source_measurements: [m_kappa_dp]
+    generating_method: M_PILAM
+    antecedents: [P1, P3, O_DP]
+    body_sections: ["Illustrative Cases — Disney + Pixar 2006"]
+  - id: F_MN
+    statement: >-
+      Honest coding sharpened rather than weakened the contribution: the
+      Microsoft+Nokia failure was driven NOT by raw log incompatibility (moderate
+      kappa) but by the acquirer-supreme integration policy that discarded
+      L_Nokia, isolating the integration-policy variable from the log-structure
+      variable. P2 (15-month divergence) and the revised joint-form P3 are both
+      consistent with the case; the Disney/Microsoft contrast is now a contrast
+      in integration policy at comparable log compatibility.
+    type: "process_traced_case_evidence"
+    source_measurements: [m_kappa_mn, m_mc]
+    generating_method: M_PILAM
+    antecedents: [P2, P3, O_MN]
+    body_sections: ["Illustrative Cases — Microsoft + Nokia 2014", "Discussion — Theoretical Contributions"]
+  - id: F_TPS
+    statement: >-
+      The TPS sign-inverted pi_lambda is the empirical fingerprint of P4: the
+      imitator does not merely have a smaller-magnitude projection but a
+      structurally negative one, because documented failures unattended by kaizen
+      response accumulate to negative weight under the canonical query. Imitators
+      copy the snapshot S = pi(L_Toyota, "production capability", t) but not the
+      seventy-year log, so the kanban card has no information content without the
+      log that generated it; this restates Spear and Bowen's DNA argument in
+      substrate-projection terms.
+    type: "process_traced_case_evidence"
+    source_measurements: [m_pilam_tps]
+    generating_method: M_PILAM
+    antecedents: [P4, O_TPS]
+    body_sections: ["Illustrative Cases — Toyota Production System"]
+  - id: F_MC
+    statement: >-
+      The Monte Carlo confirms the propositions' comparative statics in
+      direction and monotonicity: writedown rises monotonically in conflict
+      density and is roughly doubled under acquirer-supreme vs negotiated policy
+      at high density, directly visualizing the substrate-vs-snapshot wedge.
+    type: "simulation_evidence"
+    source_measurements: [m_mc]
+    generating_method: M_MC
+    antecedents: [P1, P2, P3]
+    body_sections: ["Companion Computation Script and Worked Monte Carlo"]
+
+# ============================================================================
+# Robustness checks — pre-registered
+# ============================================================================
+robustness_checks:
+  - id: RC1
+    statement: >-
+      Pre-registered robustness suite: re-code each case at coarsened and refined
+      event granularities and test kappa stability to +/- .05; placebo cases (a
+      routine supplier-contract renewal and a pure equity acquisition with no
+      operational integration) where the propositions should NOT hold, confirming
+      specificity; and a third-blind-coder variation on a random 25% with
+      inter-coder Cohen's kappa > .75 as the compliance threshold.
+    type: "preregistered_robustness"
+    sensitivity_of: [P1, P2, P3, P4]
+    body_sections: ["Appendix A.7 Robustness Checks"]
+  - id: RC2
+    statement: >-
+      Circularity defence stack: ex-ante fixed taxonomy, primary-over-post-hoc
+      source hierarchy, two-coder blind plus adjudicator protocol, placebo cases,
+      transparent confidence ratings, and time-stamped pre-registration together
+      make event-identification subjectivity visible and measurable via
+      inter-coder kappa rather than eliminated.
+    type: "validity_defence"
+    sensitivity_of: [P_LOG, M_CODE]
+    body_sections: ["Appendix A.10 Note on Circularity Defence"]
+
+# ============================================================================
+# Alternative explanations — rivals the theory rules out
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The dynamic-capabilities construct is irreducibly tautological and the
+      transfer failures are simply unmeasurable construct opacity, not a
+      substrate phenomenon.
+    rules_out_required: [P_TAUT]
+    ruled_out_by: [P_PROJ, P1, P2, P3, P4]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Naming the substrate separately dissolves the tautology into an
+      identification problem and yields four falsifiable propositions, so the
+      construct is not irreducibly tautological once substrate and projection are
+      distinguished.
+    body_sections: ["Theoretical Foundations — Dynamic Capabilities", "Discussion"]
+  - id: A2
+    statement: >-
+      The Microsoft+Nokia failure was caused by raw log incompatibility
+      (kappa near zero), not by integration-policy choice.
+    rules_out_required: [P3]
+    ruled_out_by: [m_kappa_mn, F_MN]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Honest coding found moderate kappa (.79-.85), not near zero; the extreme
+      writedown is therefore attributable to the acquirer-supreme policy that
+      discarded the target log, supporting P3's joint-dependence form over the
+      kappa-alone account the paper was originally drafted from.
+    body_sections: ["Illustrative Cases — Microsoft + Nokia 2014", "Discussion"]
+
+# ============================================================================
+# Limitations — honest scope
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The three process-traced cases are anchors coded under an honest
+      single-coder pass, not a representative test under the gold-standard
+      two-blind-coder-plus-adjudicator protocol; a fifty-event coded M&A panel is
+      in preparation as a companion empirical paper.
+    severity: "scope-bounding"
+    affects: [F_DP, F_MN, F_TPS]
+    body_sections: ["Discussion — Limitations (Empirical scope)"]
+  - id: L2
+    statement: >-
+      The pre-registered Monte Carlo check C2 (continuity gap >= .10 at density
+      .9) failed honestly at .073 under the pre-registered POLICY-weighting —
+      reported as written, not tuned away; the mechanism is present in the right
+      direction and monotonicity but below the synthetic threshold by ~.03,
+      identifying a calibration question for the empirical companion rather than a
+      contradiction of the formalism.
+    severity: "calibration"
+    affects: [m_mc, F_MC]
+    body_sections: ["Discussion — Limitations (Monte Carlo calibration near-miss)"]
+  - id: L3
+    statement: >-
+      The illustrative cases skew Anglo-Japanese and product-firm; generalizability
+      to Chinese SOEs, non-Western family SMEs, services firms whose log lives in
+      client-relationship history, and pre-2000 sparse-trace firms is not
+      established. The theory is substrate-agnostic but empirical-test feasibility
+      is documentation-constrained.
+    severity: "generalizability"
+    affects: [P1, P2, P3, P4]
+    body_sections: ["Discussion — Boundary Conditions and Scope (Generalizability)"]
+  - id: L4
+    statement: >-
+      Named failure modes (after Nakajima 2026 §9): schema evolution
+      (process-documentation drift across decades), concurrent writers (matrix/
+      distributed organizations with no global clock making conflict
+      identification and tie-breaking harder), and replay cost (querying decades
+      of log is expensive; the lambda decay parameter is one response but
+      introduces a free parameter that must be calibrated).
+    severity: "scope-bounding"
+    affects: [P_LOG, P_PROJ, P_KAPPA]
+    body_sections: ["Discussion — Limitations (Schema evolution / Concurrent writers / Replay cost)"]
+
+# ============================================================================
+# Cross-paper engagement (real corpus keys)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026l
+    relationship: extends
+    spine_nodes: [P_PROJ, P_SNAP]
+    note: >-
+      The Rendering Problem (brand perception as rendering): brand-as-projection
+      is the special case of capability-as-projection where the queried log
+      produces a brand-conviction claim; this paper generalizes the rendering
+      ontology from brand to organizational capability.
+  - paper_key: org-as-metadata
+    relationship: extends
+    spine_nodes: [P_PROJ]
+    note: >-
+      Organizational Metamerism (observer-relative state equivalence): supplies
+      the cohort-decomposition extension — heterogeneity in the projection across
+      different observers of the same log (named as future research).
+  - paper_key: 2026ag
+    relationship: applies
+    spine_nodes: [P_LOG, P3]
+    note: >-
+      Six-Tier Ontology and acquisition-failure propagation: the append-only log
+      sits beneath all six tiers; this paper supplies the substrate layer whose
+      transfer-failure mechanics the tier ontology organizes.
+
+# ============================================================================
+# External anchor literature
+# ============================================================================
+external_anchors:
+  - {citation_key: penrose-1959-theory-growth-firm, role: foundational, spine_nodes: [P_LOG, P_PROJ], note: "Resources vs services; experience = the log (cite by author-year in prose)"}
+  - {citation_key: barney-1991-firm-resources, role: extends, spine_nodes: [P_LOG], note: "RBV inimitability restated as substrate inaccessibility"}
+  - {citation_key: teece-1997-dynamic-capabilities, role: reframes, spine_nodes: [P_TAUT], note: "Dynamic-capabilities triad as projections of a substrate"}
+  - {citation_key: eisenhardt-2000-dynamic-capabilities, role: congenial, spine_nodes: [P_TAUT], note: "Identifiable processes = projections of event subsets L_q"}
+  - {citation_key: pentland-feldman-2005-routines-unit, role: closest_prior_art, spine_nodes: [P_PROJ, P_SNAP], note: "Ostensive/performative duality maps onto snapshot/rendering"}
+  - {citation_key: pentland-feldman-2008-designing-routines, role: closest_prior_art, spine_nodes: [P_SNAP], note: "Capability cannot be designed directly — only the log can"}
+  - {citation_key: felin-2012-microfoundations, role: motivates, spine_nodes: [P_MICRO], note: "Microfoundations critique answered structurally"}
+  - {citation_key: zollo-singh-2004-deliberate-learning, role: reframes, spine_nodes: [P_EXPLOG], note: "Relevance/deliberateness of acquisition experience as log overlap"}
+  - {citation_key: puranam-srikanth-2007-what-they-know, role: reframes, spine_nodes: [P_EXPLOG, P_AUX], note: "Acquirer prior-experience forcing variable for the RD design"}
+  - {citation_key: shapiro-2011-crdts, role: borrows_mechanism, spine_nodes: [P_KAPPA], note: "Conflict-free replicated data types -> log-merge conflict-resolution semantics"}
+  - {citation_key: nakajima-2026-activegraph, role: existence_proof, spine_nodes: [P_PROJ, L4], note: "ActiveGraph event-sourced runtime — determinism contract analogue; not the object of theory"}
+  - {citation_key: langley-1999-strategies-process-data, role: method_anchor, spine_nodes: [M_CODE], note: "Process-tracing strategies (temporal bracketing, narrative, visual mapping)"}
+  - {citation_key: vandeaalst-2016-process-mining, role: method_anchor, spine_nodes: [P_LOG], note: "Process mining to reconstruct organizational logs at scale (future work)"}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "The fifty-event coded M&A panel (2000-2025) testing P1-P4 at scale via regression discontinuity on acquirer prior M&A count — companion empirical paper (L1)."
+  - "Which forgetting kernel (exponential vs power-law vs hyperbolic vs threshold) and which lambda fit which industry/query — the decay parameter is empirically identifiable but uncalibrated (L4)."
+  - "Resolving the C2 continuity-gap near-miss (.073 vs .10 threshold) under empirical weighting rather than synthetic (L2)."
+  - "Generalization beyond Anglo-Japanese product firms to SOEs, non-Western SMEs, and services firms whose log lives in client-relationship history (L3)."
+  - "A methods companion developing ActiveGraph (Nakajima 2026) as a measurement instrument for organizational logs reconstructed from documentary traces."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

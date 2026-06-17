@@ -1,0 +1,523 @@
+# SPINE.yaml — Six-Tier Ontology of Organizational Transferability (2026ag)
+#
+# DESCRIPTIVELY from the completed paper.md (SIX_TIER_ONTOLOGY_PAPER.md,
+# Working Paper v1.1.0), not authored generatively before prose. Every node
+# below traces to existing prose; no node aspirationally extends the paper.
+#
+# Schema v0.1 ([internal path removed] §"Schema v0.1"):
+# this is a PURE-THEORY conceptual contribution (AMR tradition). It produces
+# no author-collected data, no Monte Carlo / simulation, no computed table
+# values, and no AI-tool experimental outputs. Tables 1-4 are definitional /
+# diagnostic surfaces, and the companion stsd_scorer.py merely re-encodes
+# Table 4 deterministically (no derived statistic). Hence v0.1, not v0.2.
+
+spine_version: "0.1"
+spine_doc_version: "0.1.0"
+paper_key: "2026ag"
+provenance: retrofit
+title: >-
+  Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and
+  Theory of Acquisition Failure Propagation
+target_venue_primary: "AMR-tradition conceptual theory journal"
+status: >-
+  Retrofit spine extracted from completed paper.md (Working Paper v1.1.0).
+  Descriptive, not generative; the paper predates the spine-first protocol.
+
+thesis: >-
+  Mergers and acquisitions destroy value at high rates because the field lacks
+  a shared ontology specifying which organizational layers transfer and how
+  failures propagate across them. This paper develops a six-tier ontology of
+  the acquisition target — Owner Intent, Business Model, Business Entity,
+  Product, Process, Organization — each with a distinct governor, specification
+  surface, and transferability mode. The tiers form two oppositely directed
+  hierarchies: a service hierarchy upward (Organization to Intent) and a
+  constraint hierarchy downward (Intent to Organization). The constraint
+  hierarchy fixes integration sequencing; shocks propagate bidirectionally,
+  yielding seven falsifiable failure-propagation propositions. The framework is
+  form-invariant across for-profit, NGO, and cooperative entities via explicit
+  substitution rules (Tiers 2, 4, 5 provisional), and derives a Six-Tier
+  Separability Diagnostic (STSD) as a theoretical implication. The primary
+  contribution is a generalizable theory of organizational separability under
+  ownership change: separability is never costless because constraint
+  architectures are sticky.
+
+# ============================================================================
+# Propositions — the argument backbone
+#   P-prefix: core theoretical propositions (incl. the paper's seven numbered
+#   failure-propagation propositions P1F..P7F, kept distinct from structural
+#   propositions Pn). C-prefix: boundary conditions. L-prefix: limitations.
+#   A-prefix: alternative frameworks ruled out. SF-prefix: the stylized fact
+#   the theory explains.
+# ============================================================================
+propositions:
+  - id: SF1
+    statement: >-
+      Across two decades of meta-analyses, post-acquisition failure remains the
+      modal outcome and strategic/financial/organizational antecedents explain
+      only a modest fraction of performance variance — a persistent residual the
+      field attributes to "unidentified moderators."
+    antecedents: []
+    body_sections: ["Introduction", "The M&A Failure Literature and Its Missing Layer"]
+    evidence:
+      - type: citation
+        anchor: "King et al. 2004 and 2021 document the residual variance; Paumen et al. 2024 confirm failure as modal."
+        citation_keys: []
+
+  - id: P1
+    statement: >-
+      The residual is an ontological deficit, not merely an empirical one: the
+      M&A literature has accumulated sophisticated single-layer explanations
+      (cultural distance, executive turnover, strategic misfit, business-model
+      misalignment) but lacks a shared vocabulary for how those layers relate,
+      constrain one another, or propagate failure across the entity.
+    antecedents: [SF1]
+    body_sections: ["Introduction", "The M&A Failure Literature and Its Missing Layer"]
+    evidence:
+      - type: citation
+        anchor: "Cartwright & Schoenberg 2006, Haleblian et al. 2009, Graebner et al. 2017, Angwin et al. 2023 each document the missing integrative layer / call for cross-level models."
+        citation_keys: []
+
+  - id: P2
+    statement: >-
+      An acquisition target decomposes into exactly six tiers — Owner Intent,
+      Business Model, Business Entity, Product, Process, Organization — each
+      individuated by a distinct GOVERNOR (force that sets the tier's
+      configuration), a distinct SPECIFICATION SURFACE (observable artifacts),
+      and a distinct TRANSFERABILITY MODE (mechanism by which the tier does or
+      does not cross an ownership boundary).
+    antecedents: [P1]
+    body_sections: ["The Six-Tier Ontology (Table 1)", "Tier 1..Tier 6 subsections"]
+    evidence:
+      - type: analytic
+        anchor: "Table 1 enumerates governor / specification surface / transferability mode per tier; per-tier subsections theoretically ground each."
+
+  - id: P3
+    statement: >-
+      The six tiers are objects of heterogeneous ontological type (a latent
+      psychological state, an abstract projection, a legal artifact, operational
+      realities) unified under a single instrumental axis — transferability
+      mode: the question is not "are they the same kind of thing?" but "what
+      happens to each kind of thing when it crosses a new-owner boundary?" This
+      answers the ontological-mixing objection and distinguishes the framework
+      from prior layered firm ontologies (Zachman, Osterwalder, BIZBOK, DEMO),
+      none of which combine a distinct Owner-Intent tier above the Business
+      Model, a distinct Business-Entity legal tier, per-tier transferability
+      modes, dual hierarchies, and an M&A application.
+    antecedents: [P2]
+    body_sections: ["Layered Ontologies of the Firm", "The Six-Tier Ontology"]
+    evidence:
+      - type: citation
+        anchor: "Zachman 1987, Osterwalder 2004, Business Architecture Guild 2024, Dietz 2006 as partial precedents; Coase 1937 / Williamson 1985 ground Tier 3."
+        citation_keys: []
+
+  - id: P4
+    statement: >-
+      Tier 1 (Owner Intent) attaches to the controlling principal, not to the
+      asset, and only IMPRINTS onto the asset's downstream tiers. Consequently
+      Tier 1 is REPLACED, not transferred, across ownership change: a new
+      principal supplies a new Tier 1 imprint while Tiers 2-6 carry forward
+      (subject to the integration cascade). A single principal controlling
+      multiple assets carries a per-asset Tier 1, drawn from one archetype
+      distribution but expressing differently per asset.
+    antecedents: [P2]
+    body_sections: ["Tier 1 — Owner Intent (Attribution refinement; Figure 1)"]
+    evidence:
+      - type: citation
+        anchor: "Schumpeter 1934, Jensen & Meckling 1976, Selznick 1957, Marquis & Tilcsik 2013 imprinting ground the principal-carried Intent and its imprint."
+        citation_keys: []
+
+  - id: P5
+    statement: >-
+      Tier 3 (Business Entity) is the most jurisdictionally MUTABLE of the six
+      tiers: the legal vehicle can swap (redomiciliation, opco/holdco
+      interposition, SPV insertion, sole-prop-to-LLC conversion) while Tiers 2,
+      4, 5, 6 continue without operational disruption. The persistent identity
+      of a business therefore does not reside in Tier 3; the substantive Tier 3
+      transferability claim is decoupling of obligations from the principal's
+      balance sheet, not identification with a specific legal form.
+    antecedents: [P2]
+    body_sections: ["Tier 3 — Business Entity (Jurisdictional mutability)"]
+    evidence:
+      - type: analytic
+        anchor: "Tier 3 swaps preserving Tiers 2-6 carry low cost; swaps forcing re-licensing propagate via the Tier 3 -> Tier 4/5 channel (P3F)."
+
+  - id: P6
+    statement: >-
+      The six tiers form two overlapping, oppositely directed hierarchies that
+      are the same relationships read from opposite ends. The SERVICE hierarchy
+      runs upward (Organization serves Process; Process serves Product; Product
+      funds Entity; Entity implements Model; Model realizes Intent). The
+      CONSTRAINT hierarchy runs downward (each tier rules out inadmissible
+      configurations for the tier below it).
+    antecedents: [P2]
+    body_sections: ["Service Hierarchy and Constraint Hierarchy (Figure 2)"]
+    evidence:
+      - type: citation
+        anchor: "Penrose 1959 (services), Williamson 1985 (governance-as-constraint), Thompson 1967 (interdependence), Simon 1962 (near-decomposability)."
+        citation_keys: []
+
+  - id: P7
+    statement: >-
+      Because upper tiers constrain lower tiers, specification clarity at upper
+      tiers is logically PRIOR to integration execution at lower tiers, and a
+      shock at any tier propagates in BOTH directions (a Tier 6 fracture reduces
+      the productive capacity Tier 5 requires, transmitting up the service chain
+      to Tier 4 drift even when the Product spec was never altered). Integration
+      is therefore a cross-tier problem, not a within-tier one.
+    antecedents: [P6]
+    body_sections: ["Service Hierarchy and Constraint Hierarchy", "The Integration Sequencing Principle"]
+    evidence:
+      - type: citation
+        anchor: "Bauer et al. 2024 (integration capabilities span domains); cascade-projection apparatus formalized in Zharnikov 2026m."
+        citation_keys: []
+
+  # --- The seven numbered failure-propagation propositions (paper P1-P7) ---
+  - id: P1F
+    statement: >-
+      P1 (Intent-Model Misalignment): when an acquirer's Owner Intent differs
+      structurally from the target's, the target's Business Model requires
+      fundamental revision, generating downstream Tier 4/Tier 5 friction not
+      visible in pre-close due diligence.
+    antecedents: [P6, P7]
+    falsifier: >-
+      For-profit acquisitions of mission-primary targets show no greater rate of
+      Model revision / downstream disruption than financially equivalent
+      for-profit-to-for-profit deals.
+    body_sections: ["Failure-Propagation Propositions (P1)"]
+    evidence:
+      - type: citation
+        anchor: "Bauer & Friesl 2024 (attentional crowding-out); Christensen et al. 2011 (business-model fit)."
+        citation_keys: []
+
+  - id: P2F
+    statement: >-
+      P2 (Business Model-Product Friction): an imposed Model revision drifts the
+      Product specification toward the new Model's optimization criteria, and
+      customers anchored in the prior dimensional configuration churn above
+      pre-acquisition baselines.
+    antecedents: [P1F]
+    falsifier: >-
+      No systematic association between Model revision and product attribute
+      drift across completed acquisitions with matched pre/post-close data.
+    body_sections: ["Failure-Propagation Propositions (P2)"]
+
+  - id: P3F
+    statement: >-
+      P3 (Entity-Operations Disruption): Entity restructuring following close
+      disrupts operational continuity at Tiers 5 and 4 via contract
+      renegotiation, regulatory re-certification, and counterparty uncertainty
+      disproportionate to the restructuring's legal scope.
+    antecedents: [P5, P6]
+    falsifier: >-
+      No significant association between Entity restructuring and
+      operational-continuity disruption.
+    body_sections: ["Failure-Propagation Propositions (P3)"]
+
+  - id: P4F
+    statement: >-
+      P4 (Product-Process Disruption): revising the Product specification
+      misaligns the Process architecture built for the prior Product, generating
+      quality failures or cost overruns until Process is rebuilt around the new
+      spec — compounded by the impossibility of fully specifying Product
+      requirements and the tacit residuals documentation cannot eliminate.
+    antecedents: [P6, P7]
+    falsifier: >-
+      No systematic association between Product revision and quality/cost
+      variance, controlling for baseline Process maturity.
+    body_sections: ["Failure-Propagation Propositions (P4)"]
+    evidence:
+      - type: citation
+        anchor: "Specification impossibility result invoked from Zharnikov 2026h."
+        citation_keys: []
+
+  - id: P5F
+    statement: >-
+      P5 (Process-Organization Fracture): imposing Process integration on the
+      acquired Organization before Tier 4 specification clarity is established
+      produces employee resistance and attrition exceeding rates when Process
+      integration follows Product confirmation.
+    antecedents: [P6, P7]
+    falsifier: >-
+      No systematic difference in attrition between Product-first and
+      Process-first sequencings in matched samples.
+    body_sections: ["Failure-Propagation Propositions (P5)"]
+    evidence:
+      - type: citation
+        anchor: "Klok et al. 2023 (emotional dynamics); Smeulders et al. 2023 (integration controls Tier 5->6)."
+        citation_keys: []
+
+  - id: P6F
+    statement: >-
+      P6 (Organization Fracture to All-Layer Degradation): when key Organization
+      members exit post-acquisition, the tacit knowledge they carried degrades
+      across all six tiers at rates retention bonuses or post-exit documentation
+      cannot recover, because Tier 6 is the sole repository of tacit
+      specification knowledge never externalized to Tier 4/5 surfaces. This is
+      the best-supported pathway (though no single study traces the full chain).
+    antecedents: [P6, P7]
+    falsifier: >-
+      Acquisitions with high pre-close codification show the same all-layer
+      degradation rate following executive turnover as low-codification ones.
+    body_sections: ["Failure-Propagation Propositions (P6)"]
+    evidence:
+      - type: citation
+        anchor: "Stahl & Voigt 2008, Bilgili et al. 2017 jointly support; Du & Tsolmon 2026 (positional knowledge)."
+        citation_keys: []
+
+  - id: P7F
+    statement: >-
+      P7 (Bidirectional Feedback): sustained lower-tier failure crossing a
+      duration-and-severity threshold (Tier 5/6 fracture >= 12 months depressing
+      Tier 3 revenue >= 10% from deal thesis) forces upward revision — documented
+      Tier 2 Model revision within 24 months, and conditionally documented Tier 1
+      Intent revision (write-down/divestiture/strategic-review) within a further
+      12 months. The feedback is asymmetric: below threshold, lower-tier failures
+      are absorbed without upper-tier revision.
+    antecedents: [P6, P7]
+    falsifier: >-
+      No systematic instances of threshold-crossing lower-tier failures
+      precipitating Model/Intent revision under controlled exogenous shocks; or
+      Model/Intent revisions as frequent below threshold as above.
+    body_sections: ["Failure-Propagation Propositions (P7)"]
+
+  # --- Form-invariance, collapse, and the diagnostic ---
+  - id: P8
+    statement: >-
+      The six-tier structure is FORM-INVARIANT: each tier has a structurally
+      equivalent form across for-profit, NGO/charity, and mutual/cooperative
+      types via explicit substitution rules (Table 2). Tier 1 and Tier 3
+      substitutions are anchored in prior work; Tier 2, 4, and 5 substitutions
+      are provisional theoretical deductions pending cross-form validation. The
+      cooperative Tier 1 is a collective mandate, not a scalar individual intent.
+    antecedents: [P2]
+    body_sections: ["Substitution Rules Across Organizational Forms (Table 2)"]
+    evidence:
+      - type: citation
+        anchor: "Hansmann 1996 (Tier 1/3 for-profit/NGO/coop); Battilana & Lee 2014 (hybrid Tier 1/6); Bruton et al. 2015 (state-owned)."
+        citation_keys: []
+
+  - id: P9
+    statement: >-
+      Tier-collapse is a structural pattern parameterized over TIER PAIRS,
+      arising when the governor of one tier is identical to another's. Two
+      canonical instances: Tier 1 ≡ Tier 4 (Domain Craftsman / Family Steward /
+      Mission Founder — Intent is inseparable from Product) and Tier 1 ≡ Tier 3
+      (sole-proprietor — the natural person IS the legal subject). In each, the
+      fused-tier asset is untransferable as a going concern because the fused
+      tier carries the principal's identity, which legal instruments cannot
+      convey.
+    antecedents: [P4, P5]
+    body_sections: ["The Flip Case: Intent Equals Product (Figure 3)"]
+    evidence:
+      - type: citation
+        anchor: "Selznick 1957, Marquis & Tilcsik 2013, Whetten 2006, Pecis et al. 2025, Berrone et al. 2012 (SEW reservation price above rational valuation)."
+        citation_keys: []
+
+  - id: P10
+    statement: >-
+      Capital allocation across tiers carries a flow-versus-stock character that
+      varies systematically by tier position: Tier 6 spend (marketing, PR) is
+      predominantly flow consumption (low transferable value); Tier 2-5 spend
+      (model architecture, governance, product/process codification) is
+      predominantly stock accumulation (high transferable value). Each tier
+      carries a distinct half-life and substrate-accumulation coefficient; the
+      transferability and accumulation classifications ALIGN.
+    antecedents: [P2, P6]
+    body_sections: ["Tier-Allocation of Capital as a Distinct Decision Margin"]
+    evidence:
+      - type: citation
+        anchor: "Dierickx & Cool 1989 (stock-flow); Mizik & Jacobson 2003, 2009 (marketing vs operating asset equity-value)."
+        citation_keys: []
+
+  - id: P11
+    statement: >-
+      The constraint hierarchy derives a formal (not prescriptive) integration
+      SEQUENCING principle: resolve Tier 1 compatibility before Tier 2 revision;
+      Tier 2 revision before Tier 4 specification; confirm Tier 4 before Tier 5
+      integration; confirm Tier 5 before Tier 6 role redesign; Tier 3 integration
+      is legally immediate but should be designed to minimize disruption to Tiers
+      4-6. The modal failure mode in practice INVERTS this sequence (beginning at
+      Tier 6/5 with Tiers 1-4 unresolved).
+    antecedents: [P6, P7]
+    body_sections: ["The Integration Sequencing Principle (Table 3)"]
+    evidence:
+      - type: citation
+        anchor: "Larsson & Finkelstein 1999 (inadequate org integration); Jemison & Sitkin 1986 (activity trap); Van Oorschot et al. 2023 (simultaneous integration/differentiation)."
+        citation_keys: []
+
+  - id: P12
+    statement: >-
+      The Six-Tier Separability Diagnostic (STSD) is a THEORETICAL IMPLICATION,
+      not the primary contribution: a structured judgment instrument that scores
+      each tier Fused / Partial / Independent (Table 4), producing a six-cell
+      pre-close risk profile. Its theoretical claim is that pre-close tier
+      profiling predicts post-acquisition trajectories better than aggregate
+      financial/strategic-fit measures, by disaggregating due-diligence risk by
+      tier rather than producing an aggregate pass/fail verdict.
+    antecedents: [P6, P11]
+    body_sections: ["The Six-Question Diagnostic (Table 4)", "The Separability-as-Screening Principle"]
+    evidence:
+      - type: citation
+        anchor: "Pablo 1994 (pre-close integration-level decision); Bauer & Friesl 2024 (attention allocation)."
+        citation_keys: []
+
+  - id: P13
+    statement: >-
+      Cross-form acquisitions face Tier 1 MISSPECIFICATION risk no standard
+      due-diligence checklist captures, because financial due diligence examines
+      Tier 3 and not Tier 1 compatibility. A cooperative's collectively held,
+      democratically governed Tier 1 cannot be transferred without being replaced
+      by a fundamentally different Intent (a credit union cannot be acquired by a
+      bank without member consent). Privatization is the most tractable natural
+      experiment for testing the form-mismatch principle.
+    antecedents: [P8, P11]
+    body_sections: ["The Form-Mismatch Principle"]
+    evidence:
+      - type: citation
+        anchor: "Battilana & Lee 2014 (mission drift on non-mission acquisition)."
+        citation_keys: []
+
+# ============================================================================
+# Boundary conditions — where the framework's claims hold cleanly
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The framework applies most cleanly to closely-held businesses with a
+      dominant principal whose Intent is a relatively stable scalar stance.
+    excludes: "Dispersed-ownership / publicly-traded / multi-investor-class targets where Intent is a vector."
+    body_sections: ["Limitations (Multi-principal Intent configurations)"]
+  - id: C2
+    statement: >-
+      The current tier definitions, propositions, and diagnostic apply to unit-
+      good businesses; platform and network (multi-sided) businesses require
+      modified governors, specification surfaces, and transferability modes.
+    excludes: "Two-sided markets and ecosystem orchestrators apply WITH modification, not without it."
+    body_sections: ["Network and Platform Boundary Conditions"]
+
+# ============================================================================
+# Alternative frameworks the contribution rules out / distinguishes from
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The contribution is "just another antecedent variable" or a relabeling of
+      an existing layered firm ontology (Zachman, Osterwalder, BIZBOK, DEMO).
+    rules_out_required: [P3]
+    ruled_out_by: [P2, P3]
+    rules_out_status: "rejected"
+    reasoning: >-
+      The primary contribution is an ARCHITECTURE (a constraint-based view with
+      bidirectional propagation), not an antecedent; and no prior layered
+      ontology combines a distinct Owner-Intent tier above the Business Model, a
+      distinct legal Business-Entity tier, per-tier transferability modes, dual
+      service/constraint hierarchies, and an M&A application.
+    body_sections: ["Layered Ontologies of the Firm", "Theoretical Contribution"]
+  - id: A2
+    statement: >-
+      Single-layer explanations (cultural distance, executive turnover,
+      strategic misfit, business-model misalignment) already account for M&A
+      failure.
+    rules_out_required: [P1]
+    ruled_out_by: [P1, P6F]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Each single-layer explanation diagnoses one tier and cannot specify how
+      failure propagates to adjacent tiers; the common single-layer structure is
+      precisely what makes them collectively inadequate.
+    body_sections: ["The M&A Failure Literature and Its Missing Layer"]
+
+# ============================================================================
+# Limitations — honest scope
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end
+      empirical support; P6F is partially documented but not as an end-to-end
+      chain. The propositions are derived from the dual hierarchy and consistent
+      with adjacent single-layer findings, not yet traced in one integrated
+      study.
+    severity: "scope-bounding"
+    affects: [P1F, P2F, P3F, P4F, P5F, P6F, P7F]
+    body_sections: ["Limitations (Cascade claim is theoretical)"]
+  - id: L2
+    statement: >-
+      Form-invariance is provisional: only the Tier 1 and Tier 3 substitutions
+      are externally anchored; the Tier 2, 4, and 5 substitutions are logical
+      deductions requiring cross-form empirical validation.
+    severity: "scope-bounding"
+    affects: [P8]
+    body_sections: ["Limitations (Form-invariance is provisional)"]
+  - id: L3
+    statement: >-
+      The STSD is currently a structured judgment instrument with no inter-rater
+      reliability data and no published predictive-validity evidence; validation
+      (Cohen's kappa >= .70 per tier, then predictive and cross-form studies) is
+      the future-research agenda.
+    severity: "future-work"
+    affects: [P12]
+    body_sections: ["Validation and Future Research Agenda"]
+
+# ============================================================================
+# Cross-paper engagement (real corpus keys)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026a
+    relationship: applies
+    spine_nodes: [P2]
+    note: >-
+      SBT's eight-dimension framework is cited as one example of a precision
+      specification instrument for brand-anchored Tier 4 Products (Table 1 note;
+      Tier 4 subsection).
+  - paper_key: 2026ah
+    relationship: extends
+    spine_nodes: [P2, P9]
+    note: >-
+      Brand-as-Tier-4 (the multi-brand / recovery companion) develops the
+      brand-portfolio implications of identifying brand with Tier 4.
+  - paper_key: 2026h
+    relationship: applies
+    spine_nodes: [P4F]
+    note: >-
+      Specification Impossibility supplies the impossibility-of-full-Product-
+      specification result that compounds the Product-Process disruption (P4).
+  - paper_key: 2026m
+    relationship: applies
+    spine_nodes: [P7]
+    note: >-
+      The Projection Cascade supplies the formal junction-localized rank-
+      deficiency bound + sub-additivity inequality the dual-hierarchy framework
+      proposes at the ontological level (bidirectional propagation).
+
+# ============================================================================
+# External anchor literature (key external precedents; described in text where
+# a verified citation key is not asserted here)
+# ============================================================================
+external_anchors:
+  - {citation_key: "", role: stylized_fact_source, spine_nodes: [SF1], note: "King et al. 2004 & 2021 + Paumen et al. 2024 — residual variance / failure-is-modal."}
+  - {citation_key: "", role: near_decomposability, spine_nodes: [P6], note: "Simon 1962 — architecture of complexity / near-decomposability the dual hierarchy extends."}
+  - {citation_key: "", role: services_of_resources, spine_nodes: [P6], note: "Penrose 1959 — productive services grounding the service hierarchy."}
+  - {citation_key: "", role: governance_as_constraint, spine_nodes: [P3, P6], note: "Coase 1937 + Williamson 1985 — firm boundary / governance-as-downward-constraint, grounding Tier 3 and the constraint hierarchy."}
+  - {citation_key: "", role: imprinting_mechanism, spine_nodes: [P4], note: "Marquis & Tilcsik 2013 — imprinting as the Tier 1 downward-propagation mechanism."}
+  - {citation_key: "", role: socioemotional_wealth, spine_nodes: [P9], note: "Berrone et al. 2012 — SEW reservation price making identity-bound firms unsellable to pure financial buyers."}
+  - {citation_key: "", role: stock_flow_accumulation, spine_nodes: [P10], note: "Dierickx & Cool 1989 + Mizik & Jacobson 2003/2009 — stock-flow asset accumulation and equity-value consequences."}
+  - {citation_key: "", role: prior_layered_ontology, spine_nodes: [P3], note: "Zachman 1987 / Osterwalder 2004 / BIZBOK 2024 / Dietz 2006 — partial precedents distinguished from."}
+  - {citation_key: "", role: form_invariance_anchor, spine_nodes: [P8, P13], note: "Hansmann 1996 + Battilana & Lee 2014 — ownership-form substitutions / hybrid mission drift."}
+  - {citation_key: "", role: integration_pathology, spine_nodes: [P11], note: "Larsson & Finkelstein 1999 + Jemison & Sitkin 1986 — inadequate org integration / the activity trap (the inverted modal sequence)."}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Inter-rater reliability of the STSD (Cohen's kappa >= .70 per tier) is the first unmet validation priority (L3)."
+  - "Predictive validity: does Fused-tier count at close negatively predict 36-month acquisition performance after controlling for deal size, industry, leverage? (untested)"
+  - "Cross-form validation of the provisional Tier 2/4/5 substitution rules (>= 10 deals per form) (L2)."
+  - "Extension to platform / network (multi-sided) businesses: governors, specification surfaces, transferability modes (C2)."
+  - "Multi-principal Intent adaptation for dispersed / publicly-traded ownership where Intent is a vector (C1)."
+  - "An additional Tier 1 substitution for politically constituted authority (privatization / public-sector cross-form), unspecified in this version of Table 2."
+  - "The deal-type tier-bundle algebra (asset deal / carve-out / acqui-hire / roll-up / spin-out / franchise / pivot as typed fork operations) is deferred to a companion working paper."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

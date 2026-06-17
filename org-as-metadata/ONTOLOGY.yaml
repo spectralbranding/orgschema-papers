@@ -1,0 +1,52 @@
+# ONTOLOGY.yaml module - org-as-metadata
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: org-as-metadata
+schema_version: 0.1
+
+owns:
+  - term_key: organizational-metamerism
+    label: "Organizational Metamerism"
+    canonical_form: "organizational metamerism"
+    definition: "An observer-relative condition in which two structurally distinct organizational configurations executing the same process map to identical value outputs for a specific evaluator."
+    first_section: "Organizational Metamerism"
+  - term_key: organization-as-metadata
+    label: "Organization as Metadata"
+    canonical_form: "organization-as-metadata"
+    definition: "The mechanism framing organizational form as revisable metadata that specifies how processes are instantiated and coordinated without containing the productive logic itself, so configuration can change without altering value or process."
+    first_section: "Organization as Metadata: The Explanatory Mechanism"
+  - term_key: temporal-stability-hierarchy
+    label: "Temporal Stability Hierarchy"
+    canonical_form: "temporal stability hierarchy"
+    definition: "The ordering of three organizational layers by characteristic stability: value outputs change less frequently than processes, which change less frequently than the organizational configurations that execute them."
+    first_section: "The Temporal Stability Hierarchy"
+  - term_key: metamerism-set
+    label: "Metamerism Set"
+    canonical_form: "metamerism set"
+    definition: "The collection of configurations that map to identical value outputs for a given observer and process, a derived quantity that expands as coordination costs fall and contracts as tacit knowledge intensity rises."
+    first_section: "Theoretical Foundations"
+  - term_key: value-layer
+    label: "Value Layer"
+    canonical_form: "value layer"
+    definition: "The layer consisting of the outputs a productive activity is intended to deliver, defined from the perspective of the evaluative observer who assesses them."
+    first_section: "The Temporal Stability Hierarchy — Definition 1"
+  - term_key: organizational-layer
+    label: "Organizational Layer"
+    canonical_form: "organizational layer"
+    definition: "The layer consisting of configurations of agents, roles, authority relationships, resource allocations, and coordination procedures assembled to execute processes, the most volatile layer because it is contingent on coordination technology."
+    first_section: "The Temporal Stability Hierarchy — Definition 3"
+
+imports:
+  - {term_key: spectral-dimensions}
+  - {term_key: cohort}
+  - {term_key: observer-spectral-profile}
+  - {term_key: six-tier-ontology}
+
+refines: []
+

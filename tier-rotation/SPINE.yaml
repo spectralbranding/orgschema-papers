@@ -1,0 +1,481 @@
+# SPINE.yaml — The Tier-Rotation Curve (2026ai)
+#
+# RETROFIT spine: extracted descriptively from the completed paper.md per
+# CLAUDE.md rule 0aa + the SPINE-for-all-active-canonical project (decision D4,
+# [internal path removed]). NOT authored
+# generatively before prose — this is a faithful backbone reconstruction of the
+# finished paper, marked provenance: retrofit.
+#
+# Schema v0.1 ([internal path removed] §"Schema v0.1"):
+# this is a PURE DEDUCTIVE THEORY paper. It analyzes no new empirical data, runs
+# no Monte Carlo / simulations, and reports no computed table values — the paper
+# states this explicitly ("Pure Deductive Theory Framework"; the four boundary
+# objects are "theory-sharpening illustrations," not tests, calibration targets,
+# or empirical anchors). The formal apparatus is analytic (closed-form
+# derivations, Appendix A), captured here as derivation (D) nodes alongside the
+# propositions, rather than as the observation→method→measurement→finding chain
+# v0.2 reserves for author-produced data. Hence v0.1 with D-nodes.
+
+spine_version: "0.1"
+spine_doc_version: "0.1.0"        # retrofit backbone lock (2026-06-14)
+paper_key: "2026ai"
+provenance: retrofit
+title: >-
+  The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its
+  M&A-Value Geometry
+
+thesis: >-
+  Deal outcomes for founder-led branded firms diverge sharply even among
+  principals of comparable quality and brand strength, and that divergence is
+  explained by the proportion of brand conviction that has been externalized
+  from the founder's personal judgment (Tier 1) into an organizational
+  substrate the acquirer can own independently (Tier 4). Brand signal
+  accumulates in the Tier-4 substrate along a logistic trajectory governed by
+  sustained knowledge-externalization effort, a cold-start offset, and sector
+  substitutability; acquirer willingness-to-pay is a piecewise function of
+  Tier-4 share with a separability kink, below which founder-flight risk
+  produces discounts and earnouts and above which the brand commands a premium
+  increasing with sector substitutability. The resulting non-monotonic value
+  geometry — value rising everywhere but with a discontinuous slope at the kink
+  — yields within-founder longitudinal predictions unavailable to
+  cross-sectional human-capital or succession-discount theories, grounds the
+  accumulation in Nonaka and Takeuchi's SECI externalization mechanism with four
+  observable proxies, and endogenizes the resource-based view's exogenous
+  resource-mobility assumption for brand assets. The contribution is
+  theoretical: a mechanism-based geometry supplying five falsifiable
+  propositions, not new empirical analysis.
+
+# ============================================================================
+# Boundary conditions — the domain in which the model's claims hold
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The focal brand is founder-centric: Tier 1 is a single principal's
+      identity, not a diffuse set of principal relationships. Diffuse-Tier-1
+      forms (NGOs, cooperatives, state-owned enterprises, family offices)
+      require re-parameterizing s as a threshold in the dispersion of Tier-1
+      claims and are out of the core scope.
+    observable: "A single identifiable founder-principal carrying Tier-1 brand signal."
+    excludes: "Diffuse / collective Tier-1 ownership forms."
+  - id: C2
+    statement: >-
+      The sector has meaningful substitutability (σ > 0). In the σ → 0 commodity
+      limit V(s) ≡ V_0 and the framework is non-predictive; M&A premia there
+      derive from operational assets, not the brand-specification layer.
+    observable: "Buyers place a premium on a separable brand specification (credence- or search-goods structure with σ > 0)."
+    excludes: "Pure-commodity sectors with zero brand-specification substitutability."
+  - id: C3
+    statement: >-
+      A separate corporate vehicle exists (φ > 0): registered trademark,
+      corporate identity, legal entity. The φ → 0 sole-proprietor /
+      unincorporated case recovers an absorbing zero state with no rotation
+      pathway and is a substrate transition, not a rotation transition.
+    observable: "Presence of an incorporated entity / registered marks providing a non-zero Tier-4 cold-start base."
+    excludes: "Unincorporated sole proprietors operating without a separate vehicle (Sub-Stage 0)."
+  - id: C4
+    statement: >-
+      The event modeled is an M&A exit (Tier-1 removed; founder departs with no
+      replacement), not a succession (Tier-1 occupant replaced P_old → P_new).
+      Succession is a geometrically distinct event deferred to future work.
+    observable: "A liquidity / acquisition event in which the originating principal exits the entity."
+    excludes: "Succession events; platform stacked-instance acquisitions; the regulated-Tier-3 compression case."
+
+# ============================================================================
+# Propositions, derivations, and assumption atoms — the argument backbone
+# ============================================================================
+propositions:
+
+  # --- Core constructs ---
+  - id: P1
+    statement: >-
+      Brand assets are Tier-4 projections of Tier-1 owner intent. The value a
+      buyer can acquire is precisely and only the brand signal projected from
+      Tier-1 into a Tier-4 specification layer (documented guidelines, trained
+      team decision rights, algorithmic brand rules, formal trademark
+      portfolios) that persists independent of any individual. The core
+      construct is s, the fraction of brand signal residing at Tier 4 rather
+      than Tier 1 at deal time.
+    conditions: "C1"
+    antecedents: []
+    evidence:
+      - type: corpus
+        anchor: "Six-tier ontology of organizational transferability (Tier 1 = owner intent, Tier 4 = product specification)."
+        citation_keys: ["2026ag", "2026ah"]
+      - type: external
+        anchor: "Brand-architecture separability produces measurable firm-level risk/return differences."
+        citation_keys: ["hsu-2016-brand-architecture-strategy", "keller-1993-conceptualizing-measuring-managing"]
+    body_sections: ["Theoretical Foundations — Brand Assets as Tier-4 Projections"]
+
+  - id: P2
+    statement: >-
+      The perception cloud (the aggregate of observer spectral profiles across
+      cohorts) forms at the Tier-4 specification level; when the product layer
+      is insufficiently differentiated from the founder's personal projection,
+      the perception cloud is implicitly Tier-1-dependent and re-collapses
+      toward Tier-1 quality if the founder is removed. Structural (substantive)
+      rotation versus apparent (symbolic) rotation is diagnosed by whether the
+      four P-OBS observables shift in COORDINATED versus partial fashion.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: external
+        anchor: "Symbolic vs substantive (means-ends) decoupling; cognitive-linguistic diagnosis via coordinated action."
+        citation_keys: ["bromley-2012-from-smoke-mirrors", "crilly-2016-grammar-decoupling"]
+    body_sections: ["Theoretical Foundations — Brand Assets as Tier-4 Projections", "Decoupling: Substantive Versus Symbolic"]
+
+  - id: AA1
+    statement: >-
+      Rotation effort intensity e is not exogenous to the founder: founder
+      identity type (Darwinian / Communitarian / Missionary) sets the psychic
+      cost of externalization, so a complete empirical specification must
+      condition rotation rate on founder-identity type as a covariate.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: external
+        anchor: "Founder self-categorization into identity types predicts venture choices beyond economic optimization."
+        citation_keys: ["fauchart-2011-darwinians-communitarians-missionaries"]
+    body_sections: ["Theoretical Foundations — Knowledge Externalization as the Substrate-Conversion Mechanism"]
+
+  # --- The generative mechanism ---
+  - id: P3
+    statement: >-
+      The generative mechanism converting Tier-1 brand signal into Tier-4 brand
+      signal is knowledge externalization — the Externalization phase of the
+      SECI cycle — by which tacit founder brand decision rules become explicit
+      organizational artifacts (brand guidelines, creative briefs, decision
+      frameworks, team review protocols, algorithmic substitutes), carried by
+      organizational routines as the firm-level vehicle for tacit-knowledge
+      integration.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: external
+        anchor: "SECI externalization cycle; combinative capabilities; routines as tacit-knowledge integration vehicle; Ba."
+        citation_keys: ["nonaka-1995-knowledge-creating-company", "kogut-1992-knowledge-firm-combinative", "grant-1996-toward-knowledge-based-theory", "nonaka-2000-seci-ba-leadership"]
+    body_sections: ["Theoretical Foundations — Knowledge Externalization as the Substrate-Conversion Mechanism"]
+
+  # --- The formal model ---
+  - id: D1
+    statement: >-
+      Tier-4 share accumulates by the smallest-sufficient logistic dynamic
+      ds/dt = α·e·(1 − s)·(s + φ)·g(σ): rotation effort converts remaining
+      Tier-1 signal (the 1 − s growth-room term) amplified by the current Tier-4
+      base plus cold-start offset (s + φ) and moderated by a monotone increasing
+      g(σ). The form is chosen to capture bounded accumulation, non-linear
+      (S-curve) dynamics, and the no-absorbing-zero cold-start property; results
+      hold for any monotone g with g(0) = ε_min > 0 and g(σ) → ∞.
+    conditions: "C2, C3"
+    antecedents: [P3]
+    evidence:
+      - type: external
+        anchor: "Asset-stock accumulation through sustained investment flows (logistic dynamic as a formal instantiation)."
+        citation_keys: ["dierickx-1989-asset-stock-accumulation"]
+    body_sections: ["Formal Model — The Smallest-Sufficient Accumulation Equation"]
+
+  - id: D2
+    statement: >-
+      Separating variables in D1 yields the closed-form trajectory s(t)
+      (Equation 2), continuous and strictly increasing in t for e > 0,
+      approaching 1 − φ/(1+φ) asymptotically (full rotation is an asymptotic
+      limit, never a finite endpoint), with inflection at s* = (1 − φ)/2 and a
+      minimum-rotation-time T_min (Equation 3) that decreases in e and σ and
+      diverges as the target approaches full rotation.
+    conditions: "C2, C3"
+    antecedents: [D1]
+    evidence:
+      - type: analytic
+        anchor: "Partial-fraction separation of variables; closed-form integration (Appendix A.1)."
+    body_sections: ["Formal Model — The Smallest-Sufficient Accumulation Equation", "Appendix A.1"]
+
+  - id: D3
+    statement: >-
+      Acquirer willingness-to-pay is V(s) = V_0·h(s) with h(s) piecewise
+      (Equation 4): below the separability kink κ, h = 1 − β·max(0, κ − s)/κ
+      (discount, liquidation floor 1 − β at s = 0); above κ,
+      h = 1 + γ·g(σ)·(s − κ)/(1 − κ) (premium, amplified by sector
+      substitutability). h is CONTINUOUS in level at κ but has a DISCONTINUOUS
+      first derivative there for any σ > 0 — this slope discontinuity, not a
+      level jump, is the geometric content of the non-monotonic value function.
+    conditions: "C2"
+    antecedents: [P1, D1]
+    evidence:
+      - type: analytic
+        anchor: "Continuity in level and slope-discontinuity proof at κ (Appendix A.2: h(κ⁻)=h(κ⁺)=1; left slope β/κ, right slope γ·g(σ)/(1−κ))."
+      - type: external
+        anchor: "Real-options negative optionality below κ; M&A synergy life-cycle typology localizing deal-time pricing."
+        citation_keys: ["dixit-1994-investment-under-uncertainty", "feldman-2022-synergy-mergers-acquisitions"]
+    body_sections: ["Formal Model — The M&A Value Function", "Appendix A.2"]
+
+  - id: D4
+    statement: >-
+      Comparative statics (Table 2): ∂V/∂s > 0 everywhere but with a
+      discontinuous marginal effect at κ; ∂V/∂σ > 0 for s > κ and ≈ 0 for
+      s < κ (substitutability amplifies the premium but does not reduce the
+      discount); ∂V/∂e = 0 at deal time (effort matters only through its effect
+      on s before close); ∂T_min/∂e < 0 and ∂T_min/∂σ < 0.
+    conditions: "C2, C3"
+    antecedents: [D1, D2, D3]
+    evidence:
+      - type: analytic
+        anchor: "Partial derivatives of Equations 1–4 holding other parameters constant (Table 2)."
+    body_sections: ["Formal Model — Comparative Statics"]
+
+  - id: C_phi
+    statement: >-
+      Boundary limit φ → 0 (Sub-Stage 0): with φ = 0 and s_0 = 0 the
+      accumulation equation has ds/dt = 0 regardless of effort — no
+      organizational substrate exists to codify onto — and V collapses to the
+      liquidation floor. The cold-start transition to Stage 1 requires first
+      establishing a separate legal vehicle (a substrate transition, outside the
+      model's rotation domain).
+    conditions: ""
+    antecedents: [D1, D3]
+    evidence:
+      - type: analytic
+        anchor: "φ → 0 absorbing-zero limit of Equation 1."
+    body_sections: ["Formal Model — Boundary Conditions"]
+
+  - id: C_sigma
+    statement: >-
+      Boundary limit σ → 0 (commodity sector): g(σ) = ε_min and V(s) ≡ V_0;
+      Tier-4 share is irrelevant to acquirer willingness-to-pay and the
+      framework is non-predictive. (Formalizes boundary condition C2.)
+    conditions: ""
+    antecedents: [D3]
+    evidence:
+      - type: analytic
+        anchor: "σ → 0 limit of the M&A value function."
+    body_sections: ["Formal Model — Boundary Conditions"]
+
+  # --- The five falsifiable propositions ---
+  - id: P_P1
+    statement: >-
+      (Paper P1 — Non-Monotonicity of M&A Value) V(s) is non-monotonic: each
+      increment of Tier-4 share below κ compresses the discount at a lower
+      marginal rate than each increment above κ generates premium; the slope is
+      discontinuous at κ. Falsified if the rotation-proxy / deal-price-to-
+      standalone relationship is monotonic with no structural break (a linear or
+      power-law fit matching a piecewise-kink fit).
+    conditions: "C1, C2"
+    antecedents: [D3, D4]
+    evidence:
+      - type: analytic
+        anchor: "Direct corollary of the slope-discontinuity geometry (D3); illustrated by Yeezy/Adidas Stage-1 negative-optionality region."
+    falsifier: "Monotonic rotation-proxy → deal-price relationship with no kink."
+    body_sections: ["Propositions — P1", "Illustrative Boundary Objects — Yeezy/Adidas"]
+
+  - id: P_P2
+    statement: >-
+      (Paper P2 — Within-Founder Longitudinal Divergence; THE EMPIRICAL WEDGE)
+      For a fixed-quality founder, M&A multiple varies with s at deal time: the
+      same founder exiting below κ commands a multiple below V_0 and above κ a
+      multiple above V_0 — variation predicted by tier rotation but NOT by the
+      human-capital quality account. Falsified if, after controlling for
+      founder human-capital metrics, the rotation-proxy score loses
+      significance, or identical founders at different rotation stages command
+      identical multiples.
+    conditions: "C1, C2"
+    antecedents: [D3, P_P1]
+    evidence:
+      - type: analytic
+        anchor: "The within-founder, longitudinal contrast against cross-sectional human-capital / succession-discount accounts (the testable incremental claim)."
+        citation_keys: ["chen-2021-generalist-versus-specialist", "bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "custodio-2017-do-general-managerial"]
+    falsifier: "Rotation-proxy score insignificant after human-capital controls; null within-founder variation."
+    body_sections: ["Propositions — P2", "Discussion — Theoretical Contribution"]
+
+  - id: P_P3
+    statement: >-
+      (Paper P3 — Sector-Substitutability Moderation) The above-κ premium
+      V(s)/V_0 is higher in credence-goods sectors than in search-goods sectors,
+      because rebuilding brand trust from a new specification is costlier where
+      quality is not directly verifiable; moderation is concentrated in the
+      s > κ subsample. Falsified if the substitutability interaction is
+      non-significant after controlling for sector brand intensity, deal size,
+      and year.
+    conditions: "C1, C2"
+    antecedents: [D3, D4]
+    evidence:
+      - type: external
+        anchor: "Credence- vs search-goods structure; resistance to non-human substitutes; brand-belief updating sets substitution cost (σ)."
+        citation_keys: ["darby-1973-free-competition-optimal", "nelson-1970-information-consumer-behavior", "longoni-2019-resistance-medical-ai", "erdem-1996-decision-making-under", "erdem-2008-dynamic-model-brand"]
+    falsifier: "Non-significant substitutability × rotation interaction with controls."
+    body_sections: ["Propositions — P3", "Illustrative Boundary Objects — Casamigos, Tom Ford"]
+
+  - id: P_P4
+    statement: >-
+      (Paper P4 — Post-Deal Goodwill Impairment) Goodwill-impairment frequency
+      is highest for deals closed below κ where founder-flight risk was priced
+      but the founder departed early: such deals overestimate brand-equity
+      transferability, so rotation-proxy score predicts impairment with a
+      negative sign. Falsified if impairment rates do not differ between below-κ
+      and above-κ deals after controlling for deal size, sector, and year.
+    conditions: "C1, C2, C4"
+    antecedents: [D3]
+    evidence:
+      - type: analytic
+        anchor: "Mechanism: below-κ deals systematically overprice transferability (Compustat GDWLIP within 36 months as the empirical signature)."
+    falsifier: "No below-κ vs above-κ impairment difference with controls."
+    body_sections: ["Propositions — P4", "Limitations and Validation Roadmap — Priority 3"]
+
+  - id: P_P5
+    statement: >-
+      (Paper P5 — Knowledge-Externalization Observables) As s rises, four
+      firm-level observables shift in a coordinated, directionally predictable
+      way — declining 10-K founder-language salience, marketing-spend allocation
+      shifting to product-attribute, declining founder-media share, and
+      trademark-portfolio migration to product-attribute marks — loading on a
+      single latent rotation factor that predicts exit multiple. Falsified if
+      the four move in uncorrelated/contradictory directions or are uncorrelated
+      with exit multiple after controlling for the rotation-proxy score.
+    conditions: "C1"
+    antecedents: [P3, P2]
+    evidence:
+      - type: external
+        anchor: "Observables derived from the SECI phases; advertising/trademark measurement precedent (Table 3)."
+        citation_keys: ["belo-2014-brand-capital-firm", "nonaka-1995-knowledge-creating-company"]
+    falsifier: "Uncorrelated/contradictory observable movement; no association with exit multiple."
+    body_sections: ["Propositions — P5", "Theoretical Foundations — Knowledge Externalization"]
+
+  # --- Theoretical positioning claims ---
+  - id: P4
+    statement: >-
+      The model endogenizes the resource-based view's exogenous resource-mobility
+      assumption for brand assets specifically: it supplies the mechanism
+      (knowledge externalization), the threshold (the separability kink κ), and
+      the time path (the logistic curve) for the transition from sticky to
+      separable — addressing the mechanism-specification gap that systematic
+      reviews identify as dynamic-capabilities research's central challenge.
+    conditions: "C1"
+    antecedents: [P3, D1, D3]
+    evidence:
+      - type: external
+        anchor: "RBV mobility-as-exogenous; dynamic capabilities as reconfiguration mechanism; mechanism-specification gap; modularity/architecture/ecosystem framing."
+        citation_keys: ["wernerfelt-1984-resource-based-view", "barney-1991-firm-resources-sustained", "peteraf-1993-cornerstones-competitive-advantage", "teece-1997-dynamic-capabilities-strategic", "eisenhardt-2000-dynamic-capabilities-what", "schilke-2018-quo-vadis-dynamic", "baldwin-2000-design-rules", "adner-2017-ecosystem-as-structure"]
+    body_sections: ["Theoretical Foundations — Resource Separability and the RBV's Mobility Assumption", "Discussion — Theoretical Contribution"]
+
+  - id: P5
+    statement: >-
+      The Tier-Rotation Curve supplies the projection geometry that the
+      two-bodied-brand construct lacks: it formalizes how the body politic
+      (Tier-4) is constructed from the body natural (Tier-1), its transition
+      path, feasibility, duration, and the path of acquirer willingness-to-pay.
+      All four two-bodied-brand risk vectors (mortality, hubris,
+      unpredictability, social embeddedness) are suppressed as s increases.
+    conditions: "C1"
+    antecedents: [P1, D2]
+    evidence:
+      - type: external
+        anchor: "Two-bodied brand (body natural / body politic) and its four risk vectors; political-theology source of the dual-body doctrine."
+        citation_keys: ["fournier-2019-putting-person-back", "kantorowicz-1957-kings-two-bodies"]
+    body_sections: ["Theoretical Foundations — The Two-Bodied Brand and Its Successors"]
+
+  - id: P6
+    statement: >-
+      M&A exit, succession, and tier-allocation are three geometrically distinct
+      decision margins over the same six-tier substrate (Table 5). The present
+      model addresses M&A exit (Tier-1 removed); succession (Tier-1 replaced,
+      Tier-5 transfer bottleneck) and tier-allocation (spatial portfolio of new
+      investment across tiers) are distinct events deferred to future work. The
+      cross-sectional succession-discount findings (≈4pp ROA / ≈14% operating-
+      return decline) are benchmarks against which tier rotation offers
+      longitudinal refinement, not the signature of M&A substrate failure.
+    conditions: "C4"
+    antecedents: [P_P2, D3]
+    evidence:
+      - type: external
+        anchor: "Succession-discount findings; stock-vs-flow value creation/appropriation; mergers cultural integration; family-ownership effects."
+        citation_keys: ["bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "mizik-2003-trading-off-between", "mizik-2009-valuing-branded-businesses", "stahl-2008-do-cultural-differences", "anderson-2003-founding-family-ownership", "villalonga-2006-how-do-family"]
+    body_sections: ["Discussion — Succession as a Distinct Geometric Event", "Discussion — Tier-Allocation of Capital", "Table 5"]
+
+# ============================================================================
+# Cross-paper engagement (corpus precedents)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026ag
+    relationship: extends
+    spine_nodes: [P1, P4, P6]
+    note: >-
+      Builds directly on the six-tier ontology of organizational transferability
+      (Tier 1 = owner intent … Tier 4 = product specification). Tier-rotation is
+      the temporal-dynamics theory of how brand signal migrates Tier-1 → Tier-4
+      that the static ontology presupposes.
+  - paper_key: 2026ah
+    relationship: extends
+    spine_nodes: [P1, P2]
+    note: >-
+      Applies and extends the brand-as-modular-layer result (brand identity binds
+      at Tier 4; acquirable value = the Tier-4-projected signal) by adding the
+      logistic accumulation dynamic, the separability kink, and the M&A value
+      function.
+  - paper_key: 2026a
+    relationship: applies
+    spine_nodes: [P2, P1]
+    note: >-
+      Uses SBT's eight-dimension specification as the worked dimensional basis
+      for the Tier-4 product-specification layer (perception cloud / observer
+      spectral profiles); claims are basis-independent for any complete,
+      observer-projection-compatible instrument.
+  - paper_key: 2026m
+    relationship: applies
+    spine_nodes: [P6]
+    note: >-
+      Invokes the projection-cascade rank-deficiency result (sharp upstream-tier
+      specification narrows downstream Π_{4→5}, Π_{5→6} image space) to read the
+      Tier-6 absorption / role-count compression as rotation, not reduction.
+
+# ============================================================================
+# External anchor literature (by role; keys appear in the paper's reference list)
+# ============================================================================
+external_anchors:
+  - {citation_key: nonaka-1995-knowledge-creating-company, role: mechanism_source, spine_nodes: [P3, P5]}
+  - {citation_key: kogut-1992-knowledge-firm-combinative, role: mechanism_source, spine_nodes: [P3]}
+  - {citation_key: grant-1996-toward-knowledge-based-theory, role: mechanism_source, spine_nodes: [P3]}
+  - {citation_key: nonaka-2000-seci-ba-leadership, role: mechanism_source, spine_nodes: [P3]}
+  - {citation_key: dierickx-1989-asset-stock-accumulation, role: formal_foundation, spine_nodes: [D1]}
+  - {citation_key: dixit-1994-investment-under-uncertainty, role: formal_foundation, spine_nodes: [D3]}
+  - {citation_key: feldman-2022-synergy-mergers-acquisitions, role: positioning, spine_nodes: [D3]}
+  - {citation_key: fournier-2019-putting-person-back, role: closest_prior_art, spine_nodes: [P5]}
+  - {citation_key: kantorowicz-1957-kings-two-bodies, role: source_of_construct, spine_nodes: [P5]}
+  - {citation_key: wernerfelt-1984-resource-based-view, role: endogenized_assumption, spine_nodes: [P4]}
+  - {citation_key: barney-1991-firm-resources-sustained, role: endogenized_assumption, spine_nodes: [P4]}
+  - {citation_key: peteraf-1993-cornerstones-competitive-advantage, role: endogenized_assumption, spine_nodes: [P4]}
+  - {citation_key: teece-1997-dynamic-capabilities-strategic, role: extended_tradition, spine_nodes: [P4]}
+  - {citation_key: eisenhardt-2000-dynamic-capabilities-what, role: extended_tradition, spine_nodes: [P4]}
+  - {citation_key: schilke-2018-quo-vadis-dynamic, role: gap_identified, spine_nodes: [P4]}
+  - {citation_key: hsu-2016-brand-architecture-strategy, role: empirical_support, spine_nodes: [P1]}
+  - {citation_key: keller-1993-conceptualizing-measuring-managing, role: foundational_construct, spine_nodes: [P1]}
+  - {citation_key: bromley-2012-from-smoke-mirrors, role: diagnostic_distinction, spine_nodes: [P2]}
+  - {citation_key: crilly-2016-grammar-decoupling, role: diagnostic_distinction, spine_nodes: [P2]}
+  - {citation_key: fauchart-2011-darwinians-communitarians-missionaries, role: moderator_source, spine_nodes: [AA1]}
+  - {citation_key: chen-2021-generalist-versus-specialist, role: rival_account, spine_nodes: [P_P2]}
+  - {citation_key: bennedsen-2007-inside-family-firm, role: rival_account, spine_nodes: [P_P2, P6]}
+  - {citation_key: perezgonzalez-2006-inherited-control, role: rival_account, spine_nodes: [P_P2, P6]}
+  - {citation_key: custodio-2017-do-general-managerial, role: rival_account, spine_nodes: [P_P2]}
+  - {citation_key: anderson-2003-founding-family-ownership, role: rival_account, spine_nodes: [P6]}
+  - {citation_key: villalonga-2006-how-do-family, role: rival_account, spine_nodes: [P6]}
+  - {citation_key: darby-1973-free-competition-optimal, role: sector_moderator, spine_nodes: [P_P3]}
+  - {citation_key: nelson-1970-information-consumer-behavior, role: sector_moderator, spine_nodes: [P_P3]}
+  - {citation_key: longoni-2019-resistance-medical-ai, role: sector_moderator, spine_nodes: [P_P3]}
+  - {citation_key: erdem-1996-decision-making-under, role: sector_moderator, spine_nodes: [P_P3]}
+  - {citation_key: erdem-2008-dynamic-model-brand, role: sector_moderator, spine_nodes: [P_P3]}
+  - {citation_key: belo-2014-brand-capital-firm, role: measurement_precedent, spine_nodes: [P_P5]}
+  - {citation_key: mawdsley-2016-employee-mobility-organizational, role: dual_framework, spine_nodes: [P3]}
+  - {citation_key: mizik-2003-trading-off-between, role: stock_flow_parallel, spine_nodes: [P6]}
+  - {citation_key: mizik-2009-valuing-branded-businesses, role: stock_flow_parallel, spine_nodes: [P6]}
+  - {citation_key: stahl-2008-do-cultural-differences, role: integration_moderator, spine_nodes: [P6]}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Empirical validation: no proposition is yet tested; the four P_P-observable proxies (s operationalization) are novel and unvalidated (Validation Roadmap Priorities 1–4)."
+  - "Succession extension: a succession-discount function parallel to but distinct from V(s), handling Tier-1 occupant replacement, the Tier-5 transfer bottleneck, and the multi-decade preparation timeline (C4)."
+  - "Tier-allocation extension: a spatial portfolio w = (w_1..w_6) with per-tier half-life and substrate-accumulation coefficients, endogenizing where rotation effort e is deployed."
+  - "Diffuse-Tier-1 forms: re-parameterizing the separability kink as a threshold in the dispersion of Tier-1 claims (NGOs, cooperatives, SOEs, family offices) (C1)."
+  - "Platform / two-sided-market stacked-instance brands and regulated-industry σ-compression cases."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================

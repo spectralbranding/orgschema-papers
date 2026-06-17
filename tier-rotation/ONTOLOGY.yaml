@@ -1,0 +1,50 @@
+# ONTOLOGY.yaml module - 2026ai
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026ai
+schema_version: 0.1
+
+owns:
+  - term_key: tier-rotation
+    label: "Tier rotation"
+    canonical_form: "tier rotation"
+    definition: "The deliberate, multi-decade migration of brand signal from a founder-bound Tier-1 substrate into an institutionally separable Tier-4 product-brand substrate via knowledge externalization."
+    first_section: "Introduction"
+  - term_key: tier-rotation-curve
+    label: "Tier-Rotation Curve"
+    canonical_form: "Tier-Rotation Curve"
+    definition: "A continuous logistic-form model of how a brand's Tier-4 share accumulates over time and a piecewise M&A value function with a discontinuous slope at the separability kink."
+    first_section: "Formal Model: The Tier-Rotation Curve"
+  - term_key: tier-4-share
+    label: "Tier-4 share (s)"
+    canonical_form: "Tier-4 share s"
+    definition: "The proportion s in [0,1] of a brand's total observable signal residing in a substrate an acquirer can hold independently of any individual."
+    first_section: "Formal Model — Setup and Definitions"
+  - term_key: separability-kink
+    label: "Separability kink (kappa)"
+    canonical_form: "separability kink kappa"
+    definition: "The threshold value of Tier-4 share above which a brand asset becomes acquirable as a freestanding asset independent of the originating principal, marking a discontinuity in the marginal M&A value."
+    first_section: "Formal Model — Setup and Definitions"
+  - term_key: rotation-effort-intensity
+    label: "Rotation effort intensity (e)"
+    canonical_form: "rotation effort intensity e"
+    definition: "The firm's per-period investment in the knowledge-externalization loop that converts founder-bound Tier-1 brand signal into Tier-4 organizational substrate."
+    first_section: "Formal Model — Setup and Definitions"
+
+imports:
+  - {term_key: brand-conviction}
+  - {term_key: perception-cloud}
+  - {term_key: observer-spectral-profile}
+  - {term_key: absorbing-state}
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-4-product}
+
+refines: []
+

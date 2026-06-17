@@ -1,0 +1,57 @@
+# ONTOLOGY.yaml module - 2026ah
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026ah
+schema_version: 0.1
+
+owns:
+  - term_key: brand-as-tier-4-projection
+    label: "Brand as Tier-4 projection"
+    canonical_form: "brand as Tier-4 projection"
+    definition: "The claim that a brand IS the Tier-4 customer-facing product specification surface, not its perception, trademark, or marketing communications."
+    first_section: "Brand as Tier-4 Projection"
+  - term_key: tier-3-visibility-in-tier-4
+    label: "Tier-3-visibility-in-Tier-4 parameter (V)"
+    canonical_form: "Tier-3-visibility-in-Tier-4 parameter V"
+    definition: "A continuous parameter V operationalizing the Aaker-Joachimsthaler Brand Relationship Spectrum as the degree to which the Tier-3 business entity is visible in the Tier-4 brand specification."
+    first_section: "The Tier-3-visibility-in-Tier-4 parameter"
+  - term_key: brand-agnostic-brand-bound-decomposition
+    label: "Brand-agnostic / brand-bound tier decomposition"
+    canonical_form: "brand-agnostic / brand-bound decomposition"
+    definition: "A per-tier partition of each of the six tiers into brand-agnostic subcomponents (shared across brands) and brand-bound subcomponents (specific to one Tier-4 instance) that determines a tier's separability under multi-brand operation."
+    first_section: "Tier-Level Brand-Agnostic / Brand-Bound Decomposition"
+  - term_key: multi-brand-capacity-diagnostic
+    label: "Multi-Brand Capacity Diagnostic (MBCD)"
+    canonical_form: "Multi-Brand Capacity Diagnostic"
+    definition: "A diagnostic instrument that extends the Six-Tier Separability Diagnostic to predict how many additional brands a firm can host on its current brand-agnostic substrate without performance degradation."
+    first_section: "Introduction"
+  - term_key: recovery-salvage-matrix
+    label: "Recovery Salvage Matrix"
+    canonical_form: "Recovery Salvage Matrix"
+    definition: "A pre-failure infrastructure-audit instrument that converts the six-tier decomposition into a forecast of which brand-agnostic substrate is preserved when a Tier-4 brand fails."
+    first_section: "Introduction"
+
+imports:
+  - {term_key: spectral-brand-theory}
+  - {term_key: perception-cloud}
+  - {term_key: observer-spectral-profile}
+  - {term_key: brand-conviction}
+  - {term_key: spectral-dimensions}
+  - {term_key: cohort}
+  - {term_key: re-collapse}
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+
+refines: []
+

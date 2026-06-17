@@ -1,0 +1,44 @@
+# ONTOLOGY.yaml module - 2026al
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026al
+schema_version: 0.1
+
+owns:
+  - term_key: capability-as-projection
+    label: "Capability as projection"
+    canonical_form: "capability as projection"
+    definition: "The claim that organizational capability is not a stored stock but a render-time projection computed from a query over the firm's cumulative event log."
+    first_section: "Abstract / Introduction"
+  - term_key: append-only-organizational-log
+    label: "Append-only organizational log"
+    canonical_form: "append-only organizational log"
+    definition: "A partially ordered set of immutable, typed events (decisions, failures, policies, personnel, artifacts) recording everything a firm has actually done, serving as the substrate beneath capability."
+    first_section: "The Event-Sourced View — The Event Log"
+  - term_key: projection-operator
+    label: "Projection operator"
+    canonical_form: "projection operator"
+    definition: "A function that reads a query-relevant subset of the log at a render time and produces an observable capability claim."
+    first_section: "The Event-Sourced View — The Projection Operator"
+  - term_key: log-compatibility-function
+    label: "Log-compatibility function"
+    canonical_form: "compatibility function"
+    definition: "A function scoring how compatible two organizational logs are by counting event pairs that cannot be merged without violating determinism, predicting M&A transfer success."
+    first_section: "The Event-Sourced View — The Compatibility Function"
+  - term_key: snapshot-versus-rendering
+    label: "Snapshot versus rendering"
+    canonical_form: "snapshot versus rendering"
+    definition: "The distinction between a snapshot (a frozen projection extracted from its substrate that can only re-render existing claims) and a rendering (a live, refreshable projection over the current log that can answer new queries)."
+    first_section: "The Event-Sourced View — Snapshots and Renderings"
+
+imports:
+  - {term_key: six-tier-ontology}
+
+refines: []
+

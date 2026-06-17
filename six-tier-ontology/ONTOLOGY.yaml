@@ -1,0 +1,77 @@
+# ONTOLOGY.yaml module — 2026ag (Six-Tier Ontology)
+#
+# Owns the six-tier organizational ontology terms. Canonical source:
+# [internal path removed] §1. Naming convention: Tier 1-6
+# (the six-tier scheme), distinct from L0-L5 (OST config schema) per
+# memory/project_hierarchy_naming_convention.md. The ost-l05-vs-sixtier-note
+# will later add an L0-L5 module and explicit maps-to / refines edges between
+# the two schemes; this module is the Tier-1-6 authority those edges resolve to.
+
+paper_key: 2026ag
+schema_version: 0.1
+
+owns:
+  - term_key: six-tier-ontology
+    label: "six-tier ontology"
+    canonical_form: "six-tier ontology"
+    definition: >-
+      The ontology that decomposes an organization into six nested
+      specification tiers, always in the order Owner Intent -> Business Model
+      -> Business Entity -> Product -> Process -> Organization. Each tier
+      answers a distinct governing question and transfers differently on sale.
+    first_section: "§1"
+
+  - term_key: tier-1-owner-intent
+    label: "Tier 1 (Owner Intent)"
+    canonical_form: "Tier 1 (Owner Intent)"
+    definition: >-
+      Why the organization exists. Governed by founder / board chair / dominant
+      shareholder; implicit or off-table in most professional-CEO companies.
+      Transfers nothing directly, only its imprint on lower tiers.
+    first_section: "§1"
+
+  - term_key: tier-2-business-model
+    label: "Tier 2 (Business Model)"
+    canonical_form: "Tier 2 (Business Model)"
+    definition: >-
+      How value flows into resources. Governed by the CEO (founder-CEOs collapse
+      Tier 1 into Tier 2). Conceptually replicable; not legally owned.
+    first_section: "§1"
+
+  - term_key: tier-3-business-entity
+    label: "Tier 3 (Business Entity)"
+    canonical_form: "Tier 3 (Business Entity)"
+    definition: >-
+      What is legally registered and saleable (IP, trademarks, contracts,
+      corporate-legal personality). Governed by General Counsel / corporate
+      treasury. Transfers by document. Often absent from AI-strategy meetings.
+    first_section: "§1"
+
+  - term_key: tier-4-product
+    label: "Tier 4 (Product)"
+    canonical_form: "Tier 4 (Product)"
+    definition: >-
+      What is delivered to whom; includes the brand surface (per Brand-as-Tier-4).
+      CMO governs the brand sub-spec; CTO the technical sub-spec (canonical
+      collision at Tier 4). Transfers if specified; not if tacit.
+    first_section: "§1"
+
+  - term_key: tier-5-process
+    label: "Tier 5 (Process)"
+    canonical_form: "Tier 5 (Process)"
+    definition: >-
+      How the product is produced. CFO governs the financial sub-spec; COO the
+      operational sub-spec (canonical collision at Tier 5). Transfers if codified.
+    first_section: "§1"
+
+  - term_key: tier-6-organization
+    label: "Tier 6 (Organization)"
+    canonical_form: "Tier 6 (Organization)"
+    definition: >-
+      Who does the producing. Governed by CHRO (sometimes COO). Transfers only
+      partially (retention contracts at best).
+    first_section: "§1"
+
+imports: []
+refines: []
+

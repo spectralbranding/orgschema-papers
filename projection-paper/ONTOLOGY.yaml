@@ -1,0 +1,35 @@
+# ONTOLOGY.yaml module - 2026m
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026m
+schema_version: 0.1
+
+owns:
+  - term_key: projection-cascade
+    label: "Projection Cascade"
+    canonical_form: "projection cascade"
+    definition: "A six-tier sequence of rank-reducing linear projection operators linking owner intent, business model, governance, architecture, routines, and positions, in which each junction carries a rank deficiency that bounds downstream information loss."
+    first_section: "3. The Projection Cascade"
+  - term_key: cascade-equilibrium
+    label: "Cascade Equilibrium"
+    canonical_form: "cascade equilibrium"
+    definition: "The joint condition that each tier's projection is mutually consistent with the feedback of the tier below; it exists and is unique under tier-by-tier Banach contraction conditions."
+    first_section: "3. The Projection Cascade — Theorem 1"
+  - term_key: position-triple
+    label: "Position Triple"
+    canonical_form: "position triple"
+    definition: "The formal decomposition of any position as p = (P_p, A_p, R_p), where perceptual content inherits from routines, authority inherits from governance, and role expectation inherits from cultural commitments."
+    first_section: "4 — Position Formalization"
+
+imports:
+  - {term_key: non-ergodic-perception}
+  - {term_key: six-tier-ontology}
+
+refines: []
+

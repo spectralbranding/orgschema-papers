@@ -1,0 +1,554 @@
+# SPINE.yaml — Specification Readiness and Endogenous Friction (2026am)
+#
+# RETROFIT spine: extracted descriptively from the COMPLETED paper.md, not
+# authored generatively before prose (CLAUDE.md rule 0aa / D4 SPINE-for-all).
+# Every node is a faithful reading of an existing claim in the finished paper;
+# no aspirational extension. Reviewers evaluate spine and prose separately.
+#
+# This is the THEORY paper of a paired theory+empirical set. The five formal
+# propositions (P1-P5) are stated here as theoretical predictions; their
+# falsifiable empirical-hypothesis form (H1-H5) lives in the companion empirical
+# paper 2026an, which SHARES this paper's Monte Carlo seed (np.random.seed(
+# 20260525)) and companion computation repository at concept DOI
+# 10.5281/zenodo.20384084 (see corpus_precedents 2026an + the shared-artifact note).
+#
+# Schema v0.2 ([internal path removed] §"Schema v0.2"): the
+# paper carries a companion computation repository that establishes NUMERICAL
+# COHERENCE of the rendering-operator and friction-tax derivations via Monte
+# Carlo + regression-identification simulation (fixed seed), so the headline
+# analytic result is represented as a method -> measurement -> finding chain,
+# not asserted in prose alone. The simulation is a coherence check on the
+# derivations, NOT empirical confirmation (real-firm confirmation is 2026an).
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"        # retrofit lock (D4 SPINE-for-all, 2026-06-14)
+provenance: retrofit
+paper_key: "2026am"
+title: >-
+  Specification Readiness and Endogenous Friction: An Information-Theoretic
+  Model of Multi-Interface Organizational Architecture
+target_venue_primary: "TBD (strategic organization / theory of the firm tier)"
+status: >-
+  Working Paper v1.0.0 (May 2026), Zenodo concept DOI 10.5281/zenodo.20379981.
+  Retrofit spine extracted post-completion; if the paper enters journal review,
+  edits go to the internal change log, not the spine.
+
+thesis: |
+  Alignment friction between an organization and its heterogeneous audiences is
+  endogenous to specification codification, not an exogenous feature of the
+  environment. Organizational output architecture decomposes into three layers:
+  a codified specification substrate encoding commitments across six ontological
+  tiers; an interface layer in which the substrate is rendered to N (canonically
+  six) recipient classes, each characterized by a distinct perception-weight
+  vector w_i; and a function layer whose headcount and spend constitute a
+  measurable tax on specification gaps. Under push regimes, energy loss scales
+  with the cross-entropy between the firm's guessed and the recipient's actual
+  need profile; under pull regimes, consumption-layer AI lets recipients query
+  the substrate directly, collapsing misalignment toward zero as codification
+  completeness rises. Four contributions follow: push-pull cost asymmetry
+  formalized as a structural analog to Shannon cross-entropy; geometric
+  machinery (perception-weight vectors + a cross-class coherence condition)
+  linking substrate to interface rendering; functional friction derived as a
+  consequence of specification investment rather than governance choice; and
+  specification readiness identified as the critical moderator of AI returns,
+  distinguishing Substrate-Operator from Surface-Operator execution.
+  Specification codification is architecturally prior to governance and
+  capability deployment, generating predictions distinct from transaction-cost
+  economics, stakeholder theory, and AI-augmentation scholarship.
+
+# ============================================================================
+# Boundary conditions / scope conditions — the theory's domain (paper §Scope)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Codified-substrate condition. The pull regime requires a queryable,
+      codified specification substrate; no-specification firms (pre-PMF
+      startups, firms in active restructuring) have no pull-capable substrate
+      and the theory predicts high function-layer intensity as a structural
+      consequence of specification absence.
+    excludes: "Firms with no codified specification at the relevant tier."
+  - id: C2
+    statement: >-
+      Multi-audience condition. The multi-interface architecture requires at
+      least two structurally distinct recipient classes; a firm dependent on a
+      single recipient class has a degenerate architecture in which
+      recipient-class differentiation collapses.
+    excludes: "Monolithic single-recipient-class firms."
+  - id: C3
+    statement: >-
+      AI-mediated-consumption condition. The push->pull phase shift depends on
+      AI operating at the consumption layer; in environments where AI-mediated
+      consumption has not diffused (highly regulated, air-gapped settings),
+      recipients default to push regardless of specification quality.
+    excludes: "Pre-AI / non-AI-mediated consumption environments."
+  - id: C4
+    statement: >-
+      Codifiability condition. Pull infrastructure requires a codifiable
+      substrate; codifiability is graded, not binary. Genuinely tacit core
+      specifications (artisan craft, relational-service delivery, bespoke legal
+      or surgical judgment) cannot build pull infrastructure regardless of AI
+      capability (Nonaka 1994), and push remains the only viable architecture.
+    excludes: "Non-codifiable / tacit-specification domains."
+  - id: C5
+    statement: >-
+      Non-adversarial condition. The pull-efficiency claim is scoped to
+      non-adversarial recipient classes; a fully machine-queryable
+      specification that lowers alignment friction for cooperative recipients
+      also lowers extraction friction for adversarial ones, reversing the claim.
+    excludes: "Recipient classes whose interests directly oppose the firm's."
+
+# ============================================================================
+# Assumption atoms — the modeling primitives the formal results rest on
+# ============================================================================
+assumption_atoms:
+  - id: AA1
+    statement: >-
+      The specification is a vector S in R^d over the firm's identity-relevant
+      attributes across all six ontological tiers; each recipient class r_i has
+      a perception-weight vector w_i in R^d. The rendering operator returns the
+      scalar evaluation R_i(S, w_i) = <S, w_i> + e_i, where e_i is
+      emission-policy noise (lower under pull, higher under push).
+    affects_nodes: [P1, P3, M1]
+  - id: AA2
+    statement: >-
+      The perception-weight vector w_i is the class-EXPECTATION weight vector;
+      within-class dispersion is bounded by recipient-class construction (agents
+      are grouped into a class because they share a perception geometry within a
+      threshold). Relaxing the class-homogeneity assumption is reserved for
+      future work.
+    affects_nodes: [P1]
+  - id: AA3
+    statement: >-
+      The information-theoretic vocabulary (energy, friction, entropy,
+      cross-entropy) is a STRUCTURAL ANALOG licensed by Shannon (1948) in the
+      tradition of Puranam, Raveendran & Knudsen (2012) and Csaszar & Eggers
+      (2013) — not a literal physical claim. Empirical measurement requires
+      resource-expenditure accounting (budget, headcount, attention), not
+      calorimetry.
+    affects_nodes: [P2, P3, D1]
+
+# ============================================================================
+# Propositions — the argument backbone (paper's 5 formal propositions + the
+# architectural / definitional propositions that ground them)
+# ============================================================================
+propositions:
+  - id: P0
+    statement: >-
+      Architectural decomposition. Organizational output architecture
+      decomposes into three layers — a specification substrate (what the firm
+      actually is, across six tiers), an interface layer (N renderings of the
+      substrate to distinct recipient classes), and a function layer
+      (capabilities that maintain spec-to-interface alignment). The strategic
+      variable is how completely to codify the substrate and how to design the
+      emission policy for each recipient class, not governance form.
+    antecedents: []
+    conditions: ""
+    evidence:
+      - type: analytic
+        anchor: "Three-layer decomposition (paper §The Multi-Interface Specification Model)."
+        citation_keys: [zharnikov-2026ag, zharnikov-2026ah]
+    body_sections: ["The Multi-Interface Specification Model"]
+  - id: P0b
+    statement: >-
+      Sequential priority. Specification codification is the sequentially prior
+      variable that endogenizes the friction level which downstream governance
+      structures (TCE), salience allocations (stakeholder theory), and capability
+      deployments (dynamic capabilities) then manage; each prior tradition treats
+      friction as an input and none asks how that level is set.
+    antecedents: [P0]
+    conditions: ""
+    evidence:
+      - type: analytic
+        anchor: "Comparative-assumptions analysis + Table 1 (paper §Theoretical Lacunae)."
+        citation_keys: [coase-1937-nature-firm, williamson-1985-economic-institutions, freeman-1984-strategic-management, teece-1997-dynamic-capabilities]
+    body_sections: ["Theoretical Lacunae", "Discussion: Theoretical Contributions"]
+  - id: P1
+    statement: >-
+      (Proposition 1 — Interface Coherence) Inter-interface coherence, measured
+      as the minimum cosine similarity between normalized renderings across pairs
+      of recipient classes, is non-decreasing in specification consistency across
+      tiers: if S is consistent across tiers then min_{i,j} cos(R_i, R_j) >= theta
+      for some theta > 0; if inconsistent, coherence is unbounded below.
+      Comparative static: d(min cos)/dc >= 0. Interface incoherence is a
+      specification-level contradiction (a property of S), not a communication
+      failure.
+    antecedents: [P0, AA1, AA2]
+    conditions: "C1, C2"
+    evidence:
+      - type: analytic
+        anchor: "Coherence condition ||<S,w_i>/||w_i|| - <S,w_j>/||w_j|||| <= kappa (paper §Rendering Operator and Coherence Condition)."
+        citation_keys: [ethiraj-2004-modularity, zavyalova-2016-reputation-benefit-burden]
+    body_sections: ["The Multi-Interface Specification Model: Formal Propositions"]
+  - id: P2
+    statement: >-
+      (Proposition 2 — Friction-Tax Scaling) The functional friction tax T scales
+      positively with the specification gap g and inversely with codification
+      investment c: T(g, c) = alpha * g(c)/c + beta, with g(c) non-increasing in
+      c. Comparative static: dT/dc < 0 at all interior points. Increasing
+      specification investment reduces the aggregate friction tax across all N
+      interfaces. Lineage: Radner (1993) information-processing-cost framework
+      extended to multi-audience interface rendering.
+    antecedents: [P0, D2]
+    conditions: "C1"
+    evidence:
+      - type: analytic
+        anchor: "Function-as-friction-tax derivation, T = sum_i F_i(G_i) (paper §Proposition on the Friction Tax)."
+        citation_keys: [radner-1993-decentralized-information, anderson-2003-sga-sticky, jensen-meckling-1976-theory-firm]
+    body_sections: ["Formalization of Push-Pull Asymmetry: Proposition on the Friction Tax", "The Multi-Interface Specification Model: Formal Propositions"]
+  - id: P3
+    statement: >-
+      (Proposition 3 — Push-Pull Cost Asymmetry) Under the cross-entropy
+      structural analog, push-regime alignment cost C_push = H(p, q) between the
+      recipient's actual need profile p and the firm's guessed profile q; pull-
+      regime cost C_pull = H(p, S|p) -> 0 as codification completeness -> 1 and
+      recipient query capability -> 1. Comparative static: d(C_push - C_pull)/dc >
+      0 — the cost asymmetry grows strictly with codification investment, and at
+      full codification pull dominates push at every interior point.
+    antecedents: [D1, AA1, AA3]
+    conditions: "C1, C3"
+    evidence:
+      - type: derivation
+        anchor: "Gibbs' inequality H(p,q) >= H(p); chain rule for conditional entropy (paper §Derivation of Push-Pull Cost Asymmetry)."
+        citation_keys: [shannon-1948-mathematical-theory, cover-thomas-2006-elements-information, cao-2020-how-to-talk-machine, kronrod-huber-2019-ad-wearout]
+    body_sections: ["Formalization of Push-Pull Asymmetry"]
+  - id: P4
+    statement: >-
+      (Proposition 4 — AI Phase-Shift Boundary) The fraction of firms operating
+      in a viable pull regime is monotonically increasing in alpha, the
+      consumption-layer AI penetration parameter: at alpha=0 only pre-AI codified
+      domains (financial accounting, manufacturing parts catalogs) are in pull;
+      at alpha >= alpha* (~ .6-.9, domain-dependent) nearly all coupling domains
+      become pull-viable. alpha* is a domain-specific parameter for future
+      empirical estimation; Brynjolfsson, Rock & Syverson (2017) provide an
+      order-of-magnitude anchor.
+    antecedents: [P3]
+    conditions: "C1, C3"
+    evidence:
+      - type: analytic
+        anchor: "Phase-shift boundary + Substrate/Surface-Operator gating of pull realization (paper §Formal Propositions)."
+        citation_keys: [brynjolfsson-2017-ai-productivity-paradox, raisch-krakowski-2021-automation-augmentation]
+    body_sections: ["The Multi-Interface Specification Model: Formal Propositions"]
+  - id: P5
+    statement: >-
+      (Proposition 5 — Specification Readiness Moderates AI ROI) AI return on
+      investment, holding AI spend constant, is monotonically increasing in
+      pre-AI specification codification c: d(ROI_AI)/dc|_spend > 0, while
+      d(ROI_AI)/d(spend)|_c is bounded above by a function of c. Specification
+      readiness sets the AI-substitutable share of operator roles: firms with
+      codified specifications realize higher AI returns because more operator
+      roles can be executed as AI Substrate-Operators rather than Surface-
+      Operator substitutions. Operationalizes the Brynjolfsson et al. (2017)
+      complementarity by naming the required complementary investment.
+    antecedents: [P6, P7]
+    conditions: "C1, C3"
+    evidence:
+      - type: analytic
+        anchor: "Moderation result + complementary-investment specification (paper §Formal Propositions, §Implications for AI ROI)."
+        citation_keys: [brynjolfsson-2017-ai-productivity-paradox, raisch-krakowski-2021-automation-augmentation, felin-holweg-2024-theory-all-you-need]
+    body_sections: ["The Multi-Interface Specification Model: Formal Propositions", "Formalization of Push-Pull Asymmetry: Implications for AI ROI"]
+  - id: P6
+    statement: >-
+      Substrate-Operator vs Surface-Operator distinction. Organizations render
+      output through operators (human OR artificial) that execute R_i. A
+      Substrate-Operator queries the codified specification and renders output
+      constrained by it (auditable provenance; coherent across interfaces by
+      construction; returns a specification gap rather than confabulating when
+      the spec is incomplete). A Surface-Operator renders without specification
+      grounding (locally fluent, globally inconsistent). Only Substrate-Operators
+      satisfy the cross-class coherence condition globally.
+    antecedents: [P1]
+    conditions: "C1"
+    evidence:
+      - type: analytic
+        anchor: "Operator-level (not human-level) substitution; operator usage cross-referenced to projection operator pi in 2026al (paper §The Substrate-Operator Distinction)."
+        citation_keys: [raisch-krakowski-2021-automation-augmentation, meincke-2024-llm-idea-generation, vaccaro-2024-when-combinations-humans-ai]
+    body_sections: ["Formalization of Push-Pull Asymmetry: The Substrate-Operator Distinction"]
+  - id: P7
+    statement: >-
+      Operator-level substitution mechanism. AI does not replace humans qua
+      humans but qua operators in any rendering task where AI can execute the
+      same operator role at lower cost or higher fidelity; the substitution is
+      gated by whether AI can read the specification, render against it, and hold
+      fidelity. Substrate-Operator roles substitute from human to AI faster than
+      Surface-Operator roles because the specification is machine-readable by
+      construction. A Surface-Operator role defended as requiring tacit judgment
+      is a claim that the specification is incomplete — exactly the condition that
+      generates excess friction tax.
+    antecedents: [P6]
+    conditions: "C1, C3"
+    evidence:
+      - type: analytic
+        anchor: "Substitution mechanism + ICT-flattening pre-AI analog (paper §The substitution mechanism)."
+        citation_keys: [bloom-2014-ict-firm-organization, brynjolfsson-2017-ai-productivity-paradox, nonaka-1994-dynamic-theory, raisch-fomina-2025-hybrid-problem-solving]
+    body_sections: ["Formalization of Push-Pull Asymmetry: The Substrate-Operator Distinction"]
+
+# ============================================================================
+# Derivations — the formal moves linking primitives to the propositions
+# ============================================================================
+derivations:
+  - id: D1
+    statement: >-
+      Push-pull cost asymmetry derivation. Let p, q in the d-simplex be the
+      recipient's true and the firm's guessed need profiles. Under push the
+      alignment cost is the cross-entropy H(p,q) = -sum_i p_i log q_i, bounded
+      below by H(p) by Gibbs' inequality (equality iff p=q) and unbounded above.
+      Under pull, cost = H(p, S|p) -> 0 as c -> 1 and query capability -> 1 by
+      the chain rule for conditional entropy. The difference C_push - C_pull =
+      H(p,q) - H(p, S|p) is strictly positive at all interior points and
+      approaches H(p,q) as c -> 1. Establishes P3's comparative static
+      analytically.
+    type: information_theoretic_derivation
+    antecedents: [AA1, AA3]
+    establishes: [P3]
+    body_sections: ["Formalization of Push-Pull Asymmetry: Derivation of Push-Pull Cost Asymmetry"]
+  - id: D2
+    statement: >-
+      Friction-tax derivation. Let G_i = ||S* - S|| projected onto recipient
+      class i's perception geometry be the specification gap at interface i. The
+      force F_i required to maintain coherence under push is increasing in G_i,
+      with F_i(0) = F_min_i > 0 (irreducible monitoring cost under full
+      codification). Aggregate friction tax T = sum_i F_i(G_i); reducing G_i
+      toward zero reduces T toward sum_i F_min_i (the monitoring floor pull
+      cannot eliminate but need not exceed). Establishes P2 (dT/dc < 0).
+    type: cost_function_derivation
+    antecedents: [P0]
+    establishes: [P2]
+    body_sections: ["Formalization of Push-Pull Asymmetry: Proposition on the Friction Tax"]
+
+# ============================================================================
+# Methods / measurements / findings — the companion computation repository.
+# This is a NUMERICAL COHERENCE check on the derivations (Monte Carlo +
+# regression-identification simulation, fixed seed), NOT empirical confirmation.
+# Shared with the empirical companion 2026an (same seed + same repository).
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Companion computation repository: a friction-tax Monte Carlo simulation
+      (friction_tax_montecarlo.py) and a regression-identification power
+      simulation (push_pull_regression_sim.py) establish numerical coherence of
+      the rendering-operator and friction-tax derivations, under a
+      pre-registered methods specification with an anti-HARKing register and a
+      PASS/FAIL post-experiment report. Figure 1 is rendered by render_figure1.py.
+    type: monte_carlo_coherence_check
+    inputs: ["rendering operator R_i(S, w_i)", "friction-tax T(g,c)", "perception-weight vectors w_1..w_6"]
+    outputs: ["monte_carlo_summary.csv", "regression_simulation_summary.csv", "twelve diagnostic plots", "date-stamped logs"]
+    code_anchor: "github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/"
+    reproducibility:
+      seed: "np.random.seed(20260525)  # SHARED with empirical companion 2026an"
+      runtime_environment: "Python 3.12 + numpy; MIT (code) / CC BY 4.0 (docs)"
+    establishes: [F1]
+    body_sections: ["Formalization of Push-Pull Asymmetry: Implications for AI ROI (companion computation footnote)"]
+
+measurements:
+  - id: m_numerical_coherence
+    statement: >-
+      Monte Carlo + regression-identification simulation outputs (summary CSVs,
+      twelve diagnostic plots, verbatim date-stamped logs) demonstrate the
+      rendering-operator and friction-tax derivations are numerically coherent
+      under the fixed seed; results are machine-readable and reproducible from
+      the published run command.
+    source_observations: []
+    generating_method: M1
+    value: "numerical coherence established (see monte_carlo_summary.csv + regression_simulation_summary.csv)"
+    units: "simulation summary statistics + diagnostic plots"
+
+findings:
+  - id: F1
+    statement: >-
+      The rendering-operator and friction-tax derivations are numerically
+      coherent: the friction-tax Monte Carlo reproduces the dT/dc < 0 comparative
+      static (P2) and the regression-identification simulation confirms the
+      identification power for the push-pull asymmetry (P3) under the model's
+      structure. The repository does NOT constitute empirical confirmation;
+      real-firm confirmation requires the archival panel study of the companion
+      empirical paper 2026an.
+    type: numerical_coherence_demonstration
+    source_measurements: [m_numerical_coherence]
+    generating_method: M1
+    antecedents: [D1, D2]
+    falsifier: "If the published simulation does not reproduce the signed comparative statics under the fixed seed, F1 fails."
+    citation_role_in_paper: "numerical_coherence_support_for_P2_P3"
+    body_sections: ["Formalization of Push-Pull Asymmetry: Implications for AI ROI (companion computation footnote)"]
+
+# ============================================================================
+# Alternative explanations / rivals the theory must clear
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Rival: inter-interface contradictions are communication or attention
+      failures (the stakeholder-salience reading) remediable by functional
+      effort.
+    rules_out_required: [P1]
+    ruled_out_by: [P1]
+    rules_out_status: "rejected"
+    reasoning: >-
+      The model recasts incoherence as a specification-LEVEL contradiction (a
+      property of S) propagated across structurally distinct projections;
+      communication interventions cannot resolve a specification-level
+      contradiction. Zavyalova et al. (2016) show the same firm signal yields
+      structurally distinct audience outcomes — inter-interface divergence as a
+      spec property, not a communication artifact.
+    body_sections: ["Discussion: Implications for Stakeholder Theory"]
+  - id: A2
+    statement: >-
+      Rival: the substrate/rendering separation requires ontological
+      separability of artifact and practice, which sociomateriality
+      (Orlikowski & Scott 2008; Leonardi 2013) denies.
+    rules_out_required: [P0, P6]
+    ruled_out_by: [P0]
+    rules_out_status: "rejected"
+    reasoning: >-
+      The substrate/rendering distinction is ANALYTIC, not ontological: at
+      execution time substrate, operator, and recipient class are constitutively
+      entangled (the theory does not deny this). The claim is only that the
+      DESIGN problem of what to codify is logically separable from the PRACTICE
+      problem of how rendering occurs — which is what makes codification c a
+      tractable variable. The two positions coexist.
+    body_sections: ["Theoretical Lacunae: Sociomateriality and the substrate-rendering separation"]
+  - id: A3
+    statement: >-
+      Rival: Open Strategy (Hautz, Seidl & Whittington 2017; Whittington 2019)
+      solves the multi-audience problem through inclusion/transparency/process,
+      so inclusion intensity, not codification, should dominate AI ROI.
+    rules_out_required: [P5]
+    ruled_out_by: [P5]
+    rules_out_status: "discriminated"
+    reasoning: >-
+      Complementary, not competitive: Open Strategy specifies the PROCESS by
+      which a spec gains legitimacy; this theory specifies the ARTIFACT whose
+      codification mediates AI-substitutability. They make discriminating
+      predictions — under this theory, inclusion-high/codification-low firms
+      realize LOWER AI ROI than inclusion-low/codification-high firms; under Open
+      Strategy the reverse. Posed as a falsifiable test (developed in 2026an).
+    body_sections: ["Theoretical Lacunae: Open Strategy", "Discussion: Falsifiability and Future Research"]
+
+# ============================================================================
+# Negative findings — gaps in the prior art that motivate the contribution
+# ============================================================================
+negative_findings:
+  - id: NF1
+    statement: >-
+      No prior tradition predicts the SIGN of the relationship between
+      specification investment and interface-maintaining functional headcount.
+      TCE optimizes governance given friction G_i but generates no prediction
+      about the functional-headcount consequences of reducing G_i; the present
+      theory predicts a NEGATIVE relationship, observationally distinct from TCE.
+    expected_observation: "A prior framework predicting functional-headcount consequences of codification investment."
+    source_method: M1
+    affects_nodes: [P2, P0b]
+    motivates: [P2]
+    body_sections: ["Theoretical Lacunae: Transaction-cost economics", "Discussion: Falsifiability and Future Research"]
+
+# ============================================================================
+# Limitations — honest scope of the theory paper
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      The propositions are THEORETICAL predictions derived from the model's
+      structure, not empirical propositions with identification strategies. Their
+      falsifiable empirical form (H1-H5 with pre-registered identification) and
+      archival-panel testing are developed in the companion empirical paper
+      2026an. The companion computation repository establishes numerical
+      coherence only, NOT real-firm confirmation.
+    severity: "scope-bounding"
+    affects: [P1, P2, P3, P4, P5, F1]
+    body_sections: ["The Multi-Interface Specification Model: Formal Propositions", "Discussion: Falsifiability and Future Research"]
+  - id: L2
+    statement: >-
+      The class-homogeneity assumption (AA2) is maintained: w_i is the class-
+      expectation weight and within-class perception dispersion is bounded by
+      recipient-class construction rather than modeled. Relaxing it (mixed and
+      stochastic recipient perception vectors, optimal specification-investment
+      path under uncertainty) is reserved for future work building on Levinthal
+      & Wu (2024).
+    severity: "future-work"
+    affects: [P1]
+    body_sections: ["The Multi-Interface Specification Model: The Interface Layer", "Discussion: Falsifiability and Future Research"]
+  - id: L3
+    statement: >-
+      alpha* (the AI-penetration phase-shift threshold) is treated as a
+      domain-specific parameter for future empirical estimation; only an
+      order-of-magnitude anchor (Brynjolfsson et al. 2017) is supplied, not a
+      calibrated value.
+    severity: "scope-bounding"
+    affects: [P4]
+    body_sections: ["The Multi-Interface Specification Model: Formal Propositions"]
+
+# ============================================================================
+# Cross-paper engagement (real corpus keys)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026an
+    relationship: tests
+    spine_nodes: [P1, P2, P3, P4, P5, M1]
+    note: >-
+      PAIRED EMPIRICAL COMPANION. 2026an states this paper's five propositions
+      as falsifiable empirical hypotheses H1-H5 with pre-registered
+      identification strategies and Monte Carlo mechanism tests. SHARED ARTIFACT:
+      both papers share the SAME Monte Carlo seed (np.random.seed(20260525)) and
+      the SAME companion computation repository at concept DOI
+      10.5281/zenodo.20384084 (specification-readiness/code/). The theory paper
+      uses the repository for numerical coherence; the empirical paper uses it
+      for identification-power simulation — one repository, two renderings.
+  - paper_key: 2026ag
+    relationship: applies
+    spine_nodes: [P0]
+    note: >-
+      Six-Tier Organizational Ontology supplies the six tiers the specification
+      substrate encodes (Tier 1 owner-intent ... Tier 6 capability/culture);
+      the specification layer IS the full stack of commitments across 2026ag's
+      tiers.
+  - paper_key: 2026ah
+    relationship: extends
+    spine_nodes: [P0]
+    note: >-
+      Brand-as-Modular-Layer establishes brand surface as the Tier-4 product
+      specification's consumer-facing interface; this paper extends laterally
+      from one Tier-4 interface to N structurally distinct interfaces rendered
+      to N recipient classes from the same substrate.
+  - paper_key: 2026al
+    relationship: refines
+    spine_nodes: [P6]
+    note: >-
+      The projection operator pi in 2026al treats human and artificial entities
+      symmetrically as executors of the capability-projection function on an
+      organizational log; the Substrate/Surface-Operator usage here is the same
+      operator-as-executor framing applied to interface rendering.
+
+# ============================================================================
+# External anchor literature (real keys appearing in the paper's references)
+# ============================================================================
+external_anchors:
+  - {citation_key: shannon-1948-mathematical-theory, role: formal_license, spine_nodes: [P3, D1, AA3], note: "Cross-entropy structural analog license."}
+  - {citation_key: cover-thomas-2006-elements-information, role: formal_apparatus, spine_nodes: [D1], note: "Canonical cross-entropy / KL treatment."}
+  - {citation_key: radner-1993-decentralized-information, role: lineage, spine_nodes: [P2, D2], note: "Information-processing-cost lineage for the friction tax."}
+  - {citation_key: coase-1937-nature-firm, role: rival_tradition, spine_nodes: [P0b, NF1], note: "TCE — friction as exogenous to governance choice."}
+  - {citation_key: williamson-1985-economic-institutions, role: rival_tradition, spine_nodes: [P0b], note: "TCE governance-minimization framework."}
+  - {citation_key: freeman-1984-strategic-management, role: rival_tradition, spine_nodes: [P0b], note: "Stakeholder theory — multiplicity without geometry."}
+  - {citation_key: mitchell-1997-stakeholder-salience, role: rival_tradition, spine_nodes: [P0b, P1], note: "Stakeholder salience typology; six interfaces map to six evaluation traditions."}
+  - {citation_key: teece-1997-dynamic-capabilities, role: rival_tradition, spine_nodes: [P0b, P5], note: "Dynamic capabilities — complementary investment unspecified."}
+  - {citation_key: raisch-krakowski-2021-automation-augmentation, role: grounds_distinction, spine_nodes: [P5, P6], note: "Automation-augmentation paradox grounds Substrate/Surface-Operator."}
+  - {citation_key: brynjolfsson-2017-ai-productivity-paradox, role: complementarity_anchor, spine_nodes: [P4, P5, P7], note: "Productivity-paradox complementary-investment threshold; alpha* order-of-magnitude anchor."}
+  - {citation_key: felin-holweg-2024-theory-all-you-need, role: gap_motivation, spine_nodes: [P5], note: "Theory-deficit call this paper answers for AI research."}
+  - {citation_key: ethiraj-2004-modularity, role: closest_prior_machinery, spine_nodes: [P1], note: "Module-boundary stability generalized to interface renderings."}
+  - {citation_key: anderson-2003-sga-sticky, role: empirical_anchor, spine_nodes: [P2], note: "SG&A stickiness as structural consequence of specification gaps."}
+  - {citation_key: ohno-1988-toyota-production-system, role: at_scale_evidence, spine_nodes: [P0b, P3], note: "Kanban pull vs MRP push — the at-scale manufacturing demonstration."}
+  - {citation_key: cao-2020-how-to-talk-machine, role: timeliness_evidence, spine_nodes: [P3], note: "Machine-readable disclosure consumed by AI — investor-interface pull mechanism."}
+  - {citation_key: zavyalova-2016-reputation-benefit-burden, role: divergence_evidence, spine_nodes: [P1, A1], note: "Same signal -> distinct audience outcomes = spec-level divergence."}
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+open:
+  - "Empirical estimation of alpha* (the AI-penetration phase-shift threshold) per coupling domain (L3, P4)."
+  - "Mixed-adversarial portfolios: the tradeoff between pull efficiency and extraction vulnerability when some recipient classes are cooperative and others adversarial (C5)."
+  - "Optimal specification-investment path under stochastic recipient perception vectors, relaxing class-homogeneity (AA2, L2; building on Levinthal & Wu 2024)."
+  - "Empirical confirmation of the five propositions on real-firm archival panel data — owed to the companion empirical paper 2026an, not this theory paper (L1)."
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================
