@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588)
 
-Working Paper v1.0.0 – April 2026 (revised June 2026)
+Working Paper v1.1.0 – April 2026 (revised June 2026)
 
 ---
 
@@ -308,7 +308,7 @@ The choice facing organizations is no longer whether to audit more rigorously bu
 
 ## Acknowledgments
 
-The author thanks James Kovalenko (Manifold Control) for the independent development of the Bounded Compositional Verification framework, whose pseudo-coverage diagnosis closely parallels the rank-1 audit failure mode formalized here. AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+The author thanks James Kovalenko (Manifold Control) for the independent development of the Bounded Compositional Verification framework, whose pseudo-coverage diagnosis closely parallels the rank-1 audit failure mode formalized here. AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ---
 

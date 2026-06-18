@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
 
-Working Paper v1.0.0 – April 2026 (revised June 2026)
+Working Paper v1.1.0 – April 2026 (revised June 2026)
 
 ---
 
@@ -362,7 +362,7 @@ Two theoretical extensions are proximate. Zharnikov [-@zharnikov-2026-dual-hiera
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ---
 

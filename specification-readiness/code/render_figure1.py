@@ -22,7 +22,7 @@ Output:
 
 Run command (from project root):
     uv run --with matplotlib --with numpy \\
-        python research/multi_interface_paper/code/render_figure1.py
+        python [internal path removed]
 
 Style discipline:
     - Greyscale + minimal accent (academic print-safe)

@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
 
-Working Paper v1.0.0 – May 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -280,7 +280,7 @@ Three contributions follow. The first is the SCI construct — a new strategic v
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search, editorial refinement, and implementation of the companion computation repository — specifically the Monte Carlo friction-tax simulation, the regression-identification power simulation, and the panel-DGP / cluster-robust-SE remediation diagnostic — under the author's pre-registered methods specification and fixed-seed reproducibility constraints. All theoretical claims, hypotheses, identification choices, threats-register entries, and interpretations are the author's sole responsibility. The companion code repository carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility. The companion code repository carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
 
 ---
 

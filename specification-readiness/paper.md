@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20379981](https://doi.org/10.5281/zenodo.20379981)
 
-Working Paper v1.0.0 – May 2026 (revised June 2026)
+Working Paper v1.1.0 – May 2026 (revised June 2026)
 
 ---
 
@@ -276,7 +276,7 @@ The theory is bounded by the five scope conditions enumerated above. The ultimat
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.7, Grok 4.20 reasoning, Perplexity sonar-pro) were used for initial literature search, editorial refinement, and implementation of the companion computation repository — specifically the matplotlib-rendered Figure 1 hub-and-spoke diagram, the friction-tax Monte Carlo simulation, and the regression-identification simulation script — under the author's pre-registered methods specification and fixed-seed reproducibility constraints. All theoretical claims, propositions, derivations, scope conditions, and interpretations are the author's sole responsibility. The companion code repository (referenced in the footnote on the formal model section) carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
+AI assistants (Claude Opus 4.8, Grok 4.20 reasoning, Perplexity sonar-pro) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility. The companion code repository (referenced in the footnote on the formal model section) carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
 
 **CRediT Statement**: Dmitry Zharnikov: Conceptualization, Formal Analysis, Writing — Original Draft, Writing — Review and Editing.
 

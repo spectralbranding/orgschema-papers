@@ -13,8 +13,8 @@ rules, alternative-explanations register, and identification threats BEFORE
 any simulation code is executed. Modifying this document after execution to
 make results appear pre-registered is prohibited.
 
-Source document: METHODS_APPENDIX v0.1.0 (2026-05-25). This file excerpts
-Sections A.4, A.5, B.3, B.4, and B.6 verbatim.
+Source document: `[internal path removed]` v0.1.0
+(2026-05-25). This file excerpts Sections A.4, A.5, B.3, B.4, and B.6 verbatim.
 
 ---
 

@@ -2,16 +2,9 @@
 
 Companion code for:
 
-> Zharnikov, D. (2026). *Specification Readiness and Endogenous Friction:
-> An Information-Theoretic Theory of Multi-Interface Organizational
-> Architecture*. Working paper 2026am.
-
-**Scope note**: This repository serves two papers. It is the primary
-numerical-coherence reference for the pure-theory paper 2026am (Specification
-Readiness and Endogenous Friction). The operational empirical hypotheses
-derived from that theory are developed in companion empirical work (in
-preparation), which will reference this repository as its primary
-computational instrument.
+> Zharnikov, D. (2026). *Toward a Thermodynamic Theory of Organizational
+> Coupling: Push, Pull, and the Multi-Interface Architecture of the Firm
+> Under AI Mediation*. Working paper 2026am.
 
 Per the corpus computational-reproducibility standard, every computed numerical value
 cited in the paper must be reproducible from a script in this directory
@@ -46,11 +39,11 @@ with a fixed seed and a documented run command.
 ```
 uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        --with matplotlib==3.10.0 --with pandas==2.2.3 \
-       python friction_tax_montecarlo.py
+       python [internal path removed]
 
 uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        --with matplotlib==3.10.0 --with pandas==2.2.3 \
-       python push_pull_regression_sim.py
+       python [internal path removed]
 ```
 
 Both scripts are fully self-contained: no network calls, no external data,
@@ -137,7 +130,7 @@ The paper body "Companion Computation Script" subsection references this
 directory at:
 
 ```
-https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/
+https://github.com/spectralbranding/sbt-papers/tree/main/specification-readiness/code/
 ```
 
 (URL confirmed at Zenodo v1 upload time; placeholder until then.)

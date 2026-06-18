@@ -19,7 +19,7 @@ Reproduces every computed numerical value in the paper:
   sigma in {.5, 1.0, 1.5}; verification that d(dollar_share_6*)/dr > 0
   holds across all three elasticity-of-substitution values.
 - Figure 1 Contour Plot: iso-V_LR contours over the (w_4, w_6) plane at
-  r = .15, saved to design/diagrams/tier_allocation_contour.png.
+  r = .15, saved to figures/tier_allocation_contour.png.
 
 Maintained model specification --- Option (a) C-r3-2 resolution
 (discounted-Cobb-Douglas with Jorgensonian user-cost-of-capital framing):
@@ -603,7 +603,7 @@ def generate_contour_plot(
 
     Saves a 300-DPI PNG with viridis colormap (print + colorblind safe).
 
-    Output default: <repo>/design/diagrams/tier_allocation_contour.png
+    Output default: <paper_dir>/figures/tier_allocation_contour.png
     """
     import numpy as np
     import matplotlib
@@ -613,12 +613,10 @@ def generate_contour_plot(
     import matplotlib.ticker as ticker
 
     if not output_path:
-        # Resolve relative to this file's location: code/ -> project root
+        # Resolve relative to this file's location: code/ -> paper dir -> figures/
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        repo_root = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
-        output_path = os.path.join(
-            repo_root, "design", "diagrams", "tier_allocation_contour.png"
-        )
+        paper_dir = os.path.abspath(os.path.join(script_dir, ".."))
+        output_path = os.path.join(paper_dir, "figures", "tier_allocation_contour.png")
 
     print()
     print("=" * 72)
@@ -782,7 +780,7 @@ def main() -> None:
     print("Maintained specification: discounted-Cobb-Douglas with Jorgensonian")
     print("user-cost-of-capital framing (Option a C-r3-2 resolution).")
     print("CES robustness check (sigma in {.5, 1.0, 1.5}) in Appendix A4.")
-    print("Figure 1 contour plot saved to design/diagrams/tier_allocation_contour.png.")
+    print("Figure 1 contour plot saved to figures/tier_allocation_contour.png.")
     print("=" * 72)
 
 

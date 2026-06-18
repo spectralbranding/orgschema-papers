@@ -36,7 +36,7 @@ Outputs (under code/plots/ and code/):
 Run command (from the paper directory):
     uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \\
            --with matplotlib==3.10.0 --with pandas==2.2.3 \\
-           python push_pull_regression_sim.py
+           python [internal path removed]
 
 Expected runtime: 15-20 minutes on a 2024 Apple Silicon Mac.
 

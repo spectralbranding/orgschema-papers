@@ -6,7 +6,7 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure"
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-06-14
 url: "https://doi.org/10.5281/zenodo.20367459"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"

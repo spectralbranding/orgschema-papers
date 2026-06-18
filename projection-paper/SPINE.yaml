@@ -8,7 +8,7 @@
 #
 # Schema v0.2 ([internal path removed] §"Schema v0.2"):
 # the paper carries a computed numerical illustration (§3.5, Table 2; companion
-# script [internal path removed], seed 2026) plus a
+# script code/cascade_numerical_example.py, seed 2026) plus a
 # computational restriction-comparison (§4.6, --compare), so observations /
 # methods / measurements / findings are first-class to represent the simulation
 # evidence rather than asserting computed numbers in prose. The cascade
@@ -374,11 +374,11 @@ methods:
     type: "monte_carlo_construction"
     inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); target kappa vector"]
     outputs: ["per-junction kappa_i, L_i, rank, r_i, iterations, convergence distances; composite rank; sub-additivity gap"]
-    code_anchor: "[internal path removed]"
+    code_anchor: "code/cascade_numerical_example.py"
     reproducibility:
       seed: "2026"
       runtime_environment: "Python 3.12 + numpy via uv"
-      run_command: "uv run --with numpy python [internal path removed]"
+      run_command: "uv run --with numpy python code/cascade_numerical_example.py"
     body_sections: ["§3.5 Numerical Illustration of Theorem 1"]
   - id: M2
     statement: >-
@@ -390,11 +390,11 @@ methods:
     type: "comparative_simulation"
     inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); five restriction active-junction patterns"]
     outputs: ["per-restriction P3 Lipschitz product; P4 strict-inequality detectability flag"]
-    code_anchor: "[internal path removed] --compare"
+    code_anchor: "code/cascade_numerical_example.py --compare"
     reproducibility:
       seed: "2026"
       runtime_environment: "Python 3.12 + numpy via uv"
-      run_command: "uv run --with numpy python [internal path removed] --compare"
+      run_command: "uv run --with numpy python code/cascade_numerical_example.py --compare"
     body_sections: ["§4 Cascade Restriction as a Family (computational comparison)"]
 
 # ============================================================================

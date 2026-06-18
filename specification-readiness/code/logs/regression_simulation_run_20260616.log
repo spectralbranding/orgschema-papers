@@ -1,0 +1,92 @@
+2026-06-16 22:42:05,415 push_pull_regression_sim.py -- Thermodynamic Coupling (Zharnikov 2026am)
+2026-06-16 22:42:05,415 ========================================================================
+2026-06-16 22:42:05,415 RANDOM_SEED = 20260525
+2026-06-16 22:42:05,415 N_SIM       = 1,000 simulated datasets per condition
+2026-06-16 22:42:05,415 N_FIRMS     = 1,000  T = 10 years (P1/P2/P4/P5)
+2026-06-16 22:42:05,415 N_EVENTS    = 200  window = 5 years (P3)
+2026-06-16 22:42:05,415 ALPHA_TEST  = 0.05
+2026-06-16 22:42:05,415 
+2026-06-16 22:42:05,415 Pre-registered effect sizes:
+2026-06-16 22:42:05,415   P1: beta=-0.08, d=0.5, R2=0.15
+2026-06-16 22:42:05,415   P2: beta=-0.12, d=0.3, R2=0.1
+2026-06-16 22:42:05,415   P3: beta=-0.15, d=0.7, R2=0.2
+2026-06-16 22:42:05,415   P4: beta=+0.10, d=0.4, R2=0.12
+2026-06-16 22:42:05,415   P5: beta=+0.15, d=0.5, R2=0.18
+2026-06-16 22:42:05,415 
+2026-06-16 22:42:05,415 --- Primary specification ---
+2026-06-16 22:42:05,415   Running P1 (primary) ...
+2026-06-16 22:42:11,038     P1: power=1.00, Type_I=0.042, mean_beta=-0.0803, pct_correct_sign=1.00
+2026-06-16 22:42:11,038     elapsed: 5.6s
+2026-06-16 22:42:11,038   Running P2 (primary) ...
+2026-06-16 22:42:16,654     P2: power=0.94, Type_I=0.053, mean_beta=-0.1204, pct_correct_sign=1.00
+2026-06-16 22:42:16,654     elapsed: 11.2s
+2026-06-16 22:42:16,654   Running P3 (primary) ...
+2026-06-16 22:42:17,222     P3: power=0.99, Type_I=0.080, mean_beta=-0.1500, pct_correct_sign=1.00
+2026-06-16 22:42:17,222     elapsed: 11.8s
+2026-06-16 22:42:17,222   Running P4 (primary) ...
+2026-06-16 22:42:23,159     P4: power=0.98, Type_I=0.062, mean_beta=0.0998, pct_correct_sign=1.00
+2026-06-16 22:42:23,159     elapsed: 17.7s
+2026-06-16 22:42:23,159   Running P5 (primary) ...
+2026-06-16 22:42:28,799     P5: power=1.00, Type_I=0.058, mean_beta=0.1497, pct_correct_sign=1.00
+2026-06-16 22:42:28,799     elapsed: 23.4s
+2026-06-16 22:42:28,799 
+--- Alternative specification (no FE) ---
+2026-06-16 22:42:28,799   Running P1 (no-FE alt) ...
+2026-06-16 22:42:29,638     P1: power=1.00, Type_I=0.052, mean_beta=-0.0803
+2026-06-16 22:42:29,638     elapsed: 24.2s
+2026-06-16 22:42:29,638   Running P2 (no-FE alt) ...
+2026-06-16 22:42:30,487     P2: power=0.93, Type_I=0.039, mean_beta=-0.1210
+2026-06-16 22:42:30,487     elapsed: 25.1s
+2026-06-16 22:42:30,487   Running P3 (no-FE alt) ...
+2026-06-16 22:42:30,676     P3: power=0.99, Type_I=0.091, mean_beta=-0.1510
+2026-06-16 22:42:30,676     elapsed: 25.3s
+2026-06-16 22:42:30,676   Running P4 (no-FE alt) ...
+2026-06-16 22:42:31,810     P4: power=0.99, Type_I=0.060, mean_beta=0.1002
+2026-06-16 22:42:31,810     elapsed: 26.4s
+2026-06-16 22:42:31,810   Running P5 (no-FE alt) ...
+2026-06-16 22:42:32,648     P5: power=1.00, Type_I=0.049, mean_beta=0.1495
+2026-06-16 22:42:32,648     elapsed: 27.2s
+2026-06-16 22:42:32,648 
+--- Power curves ---
+2026-06-16 22:42:32,648   Power curve P1 ...
+2026-06-16 22:42:43,974     P1: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-06-16 22:42:43,974     elapsed: 38.6s
+2026-06-16 22:42:43,974   Power curve P2 ...
+2026-06-16 22:42:55,319     P2: power at pre-reg d = 0.92 (index 3 = 1.0x d)
+2026-06-16 22:42:55,320     elapsed: 49.9s
+2026-06-16 22:42:55,320   Power curve P3 ...
+2026-06-16 22:42:56,457     P3: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-06-16 22:42:56,457     elapsed: 51.0s
+2026-06-16 22:42:56,457   Power curve P4 ...
+2026-06-16 22:43:08,374     P4: power at pre-reg d = 0.99 (index 3 = 1.0x d)
+2026-06-16 22:43:08,374     elapsed: 63.0s
+2026-06-16 22:43:08,374   Power curve P5 ...
+2026-06-16 22:43:19,699     P5: power at pre-reg d = 1.00 (index 3 = 1.0x d)
+2026-06-16 22:43:19,700     elapsed: 74.3s
+2026-06-16 22:43:19,701 
+Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/regression_simulation_summary.csv
+2026-06-16 22:43:19,701 
+--- Decision-rule verdicts (METHODS_APPENDIX B.6) ---
+2026-06-16 22:43:19,701   P1 [primary]: power=1.00 PASS | Type_I=0.042 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P2 [primary]: power=0.94 PASS | Type_I=0.053 FAIL (inflated Type I) | pct_in_range=0.97 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P3 [primary]: power=0.99 PASS | Type_I=0.080 FAIL (inflated Type I) | pct_in_range=0.99 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P4 [primary]: power=0.98 PASS | Type_I=0.062 FAIL (inflated Type I) | pct_in_range=0.98 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P5 [primary]: power=1.00 PASS | Type_I=0.058 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P1 [no_FE]: power=1.00 PASS | Type_I=0.052 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P2 [no_FE]: power=0.93 PASS | Type_I=0.039 PASS | pct_in_range=0.97 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P3 [no_FE]: power=0.99 PASS | Type_I=0.091 FAIL (inflated Type I) | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P4 [no_FE]: power=0.99 PASS | Type_I=0.060 FAIL (inflated Type I) | pct_in_range=0.99 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701   P5 [no_FE]: power=1.00 PASS | Type_I=0.049 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
+2026-06-16 22:43:19,701 
+--- Generating plots ---
+2026-06-16 22:43:19,751   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P1.png
+2026-06-16 22:43:19,792   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P2.png
+2026-06-16 22:43:19,833   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P3.png
+2026-06-16 22:43:19,875   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P4.png
+2026-06-16 22:43:19,914   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P5.png
+2026-06-16 22:43:20,082   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/null_distribution_qq.png
+2026-06-16 22:43:20,150   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/effect_size_sensitivity.png
+2026-06-16 22:43:20,150 
+Total runtime: 74.7s (1.2 min)
+2026-06-16 22:43:20,150 Log written to: /Users/d/projects/sb-themec/research/papers/2026am/code/logs/regression_simulation_run_20260616.log
+2026-06-16 22:43:20,150 OK -- push_pull_regression_sim.py completed.

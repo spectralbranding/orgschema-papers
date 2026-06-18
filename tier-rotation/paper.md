@@ -477,7 +477,7 @@ For any σ > 0, g(σ) > 0 and the condition γ · g(σ)/(1 − κ) > β/κ holds
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.7, Grok 4.1, Gemini 3.1) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ## CRediT contributions
 
