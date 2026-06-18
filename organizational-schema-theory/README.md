@@ -38,7 +38,7 @@ Machine-readable citation: [CITATION.cff](CITATION.cff).
 
 ## 5 | Licence
 
-Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY-NC-ND 4.0 (matches published Zenodo PDF; see [CITATION.cff](CITATION.cff)).
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY 4.0 (see [CITATION.cff](CITATION.cff)).
 
 ---
 
