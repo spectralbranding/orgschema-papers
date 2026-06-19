@@ -14,12 +14,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20384084"
     description: "Zenodo concept DOI (all versions)"
-keywords:
-  - specification readiness
-  - multi-interface architecture
-  - friction tax
-  - staggered difference-in-differences
-  - organizational coupling
 license:
   - CC-BY-4.0
   - MIT

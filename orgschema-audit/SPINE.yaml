@@ -182,7 +182,7 @@ propositions:
           Cascade formalized by Organizational Schema Theory; parallels
           test/implementation separation, front-stage/back-stage, and the
           voice-of-customer cascade.
-        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven, beck-2003-testdriven-development-by, bitner-2008-service-blueprinting-practical, akao-1990-quality-function-deployment]
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven, beck-2002-testdriven-development-by, bitner-2008-service-blueprinting-practical, akao-1990-quality-function-deployment]
     body_sections: ["The Six-Level Specification Cascade"]
   - id: P3
     statement: >-
@@ -456,7 +456,7 @@ external_anchors:
   - {citation_key: zharnikov-2026-organizational-schema-theory-test-driven, role: foundational_theory, spine_nodes: [P2, P4, P5, P6, P10], note: "OST — the six-level cascade this audit operationalizes"}
   - {citation_key: zharnikov-2026-spectral-brand-theory-computational-framework, role: foundational_theory, spine_nodes: [P2], note: "SBT — eight spectral dimensions for L0/L1"}
   - {citation_key: zharnikov-2026-why-eight-completeness-necessity-sbt, role: scope_qualifier, spine_nodes: [L4, C1], note: "Why Eight? — dimensional necessity/sufficiency limitation"}
-  - {citation_key: beck-2003-testdriven-development-by, role: source_analogy, spine_nodes: [P2], note: "TDD test-before-code = specify-experience-before-process"}
+  - {citation_key: beck-2002-testdriven-development-by, role: source_analogy, spine_nodes: [P2], note: "TDD test-before-code = specify-experience-before-process"}
   - {citation_key: vargo-2004-evolving-new-dominant, role: foundational_theory, spine_nodes: [P2], note: "Service-Dominant Logic — value defined by the beneficiary (L0 root)"}
   - {citation_key: wiggins-1998-understanding-by-design, role: source_analogy, spine_nodes: [P2], note: "Backward design — reverse-design precedent"}
   - {citation_key: conway-1968-how-do-committees, role: source_analogy, spine_nodes: [P4], note: "Conway's law inverted — procedure structure follows contract structure"}

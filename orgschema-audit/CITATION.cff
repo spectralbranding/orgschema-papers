@@ -14,15 +14,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.19555201"
     description: "Zenodo concept DOI (all versions)"
-keywords:
-  - organizational specification
-  - test-driven business design
-  - operational audit
-  - specification maturity
-  - six-level cascade
-  - experience contracts
-  - organizational schema theory
-  - AI-assisted diagnostics
 license:
   - CC-BY-4.0
   - MIT
