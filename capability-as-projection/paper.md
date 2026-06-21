@@ -290,7 +290,7 @@ Treating the append-only event log as the substrate beneath the firm rather than
 
 The author thanks the practitioners and commenters who engaged with prior work in the Spectral Brand Theory and Organizational Schema Theory corpora; their named-case additions and objections sharpened the theoretical argument during drafting. André Lindenberg surfaced Nakajima's ActiveGraph runtime as the engineering anchor at a critical point in the drafting cycle.
 
-AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script(s) that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ## CRediT Contributions
 
