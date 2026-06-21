@@ -304,7 +304,7 @@ The Monte Carlo and regression-identification simulation results reported in the
 uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        --with matplotlib==3.10.0 --with pandas==2.2.3 \
        python friction_tax_montecarlo.py --seed 20260525 && \
-       python regression_identification_sim.py --seed 20260525
+       python push_pull_regression_sim.py --seed 20260525
 ```
 
 The Monte Carlo script generates the 12.96 million friction-magnitude trials reported in the Results section; the regression-identification script generates the 5,000 simulated panel datasets (1,000 per hypothesis) and reports the power table. The repository README documents the expected stdout, the runtime (~15 minutes Monte Carlo + ~25 minutes regression simulation on a 16-core machine), and the linkage back to this paper's DOI. The published numerical figures in this paper are derived from the code companion at the fixed seed; any future revision to a published numerical figure requires a parallel revision to the code companion, and the published numbers as released here are the ground truth for v1.0.0.
