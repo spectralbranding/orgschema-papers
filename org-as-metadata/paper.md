@@ -205,7 +205,7 @@ In color science, metamerism names the condition under which two physically dist
 
 The color science metamerism concept has been extended to brand perception as a precise formalization of how distinct signal portfolios can produce identical evaluations in a given observer cohort, with the equivalence holding observer-relative and breaking when the observer's dimensional sensitivities shift [@zharnikov-2026-spectral-metamerism-brand-perception-projection]. The organizational analogue preserves the same tripartite structure:
 
-**Definition 5 (Organizational Metamerism)**. Given an evaluative observer O whose evaluation function f_O is applied consistently across configurations, two organizational configurations A and B are metamers with respect to a given process P if and only if: (i) A and B are structurally distinct configurations both executing P, and (ii) O detects no difference between the value outputs produced by A and those produced by B. The metamerism relation is process-relative and observer-relative: configurations that are metamers for process P and observer O need not be metamers for a different process or a different observer.
+**Definition 5 (Organizational Metamerism)**. Given an evaluative observer O whose evaluation function $f_O$ is applied consistently across configurations, two organizational configurations A and B are metamers with respect to a given process P if and only if: (i) A and B are structurally distinct configurations both executing P, and (ii) O detects no difference between the value outputs produced by A and those produced by B. The metamerism relation is process-relative and observer-relative: configurations that are metamers for process P and observer O need not be metamers for a different process or a different observer.
 
 The **metamerism set** of a process P under observer O, denoted M(P, O), is the collection of all organizational configurations that are pairwise metamers with respect to P and O. A large metamerism set indicates that O is insensitive to the organizational differences that distinguish the members; a small metamerism set indicates that O's evaluation function is sensitive to organizational form in ways that affect perceived output.
 
@@ -231,9 +231,9 @@ Process codifiability and tacit knowledge intensity are conceptually orthogonal:
 
 The size of the metamerism set is a derived function of these three antecedents: process codifiability, the prevailing coordination cost regime, and the tacit knowledge intensity of the underlying process. Schematically:
 
-|M(P, O)| = f(codifiability(P), 1/c(P), 1/τ(P))
+$$|M(P, O)| = f(\mathrm{codifiability}(P), 1/c(P), 1/\tau(P))$$
 
-where c(P) is the coordination cost per coordinating relation in process P and τ(P) is the proportion of P's coordinating work that depends on uncodifiable knowledge. The set grows with codifiability and with falling coordination cost; it shrinks with rising tacit knowledge intensity. The expression is schematic — operationalization of each antecedent is a research program, not a closed-form claim — but it makes the predicted directional dependencies precise enough for empirical testing.
+where $c(P)$ is the coordination cost per coordinating relation in process P and $\tau(P)$ is the proportion of P's coordinating work that depends on uncodifiable knowledge. The set grows with codifiability and with falling coordination cost; it shrinks with rising tacit knowledge intensity. The expression is schematic — operationalization of each antecedent is a research program, not a closed-form claim — but it makes the predicted directional dependencies precise enough for empirical testing.
 
 Table 3: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
 
@@ -254,7 +254,7 @@ This mechanism can be seen in historical sequence. The Toyota Production System 
 
 The mechanism by which coordination costs determine the size of the metamerism set can be stated in terms of the structure of coordination networks.
 
-Coordination in a human organization scales with the number of interdependencies among roles. Galbraith [-@galbraith-1974-organization-design-information] modeled organizational design as an information-processing problem: the organizational structure routes information so that decisions can be made where relevant information resides. Simon's [-@simon-1962-architecture-complexity-proceedings] architecture of complexity establishes the deeper principle: in hierarchically organized systems, the number of interactions that must be managed grows with decomposability, and near-decomposable hierarchies dominate because they suppress cross-subsystem coordination to a manageable level. The number of potential coordination interactions in a fully connected organization of n roles is O(n²), and hierarchies exist to compress this to a manageable tree structure — at the cost of information loss and decision delay at each hierarchical junction. The human hierarchy is, in this framing, a compression algorithm for an otherwise intractable coordination problem.
+Coordination in a human organization scales with the number of interdependencies among roles. Galbraith [-@galbraith-1974-organization-design-information] modeled organizational design as an information-processing problem: the organizational structure routes information so that decisions can be made where relevant information resides. Simon's [-@simon-1962-architecture-complexity-proceedings] architecture of complexity establishes the deeper principle: in hierarchically organized systems, the number of interactions that must be managed grows with decomposability, and near-decomposable hierarchies dominate because they suppress cross-subsystem coordination to a manageable level. The number of potential coordination interactions in a fully connected organization of $n$ roles is $O(n^2)$, and hierarchies exist to compress this to a manageable tree structure — at the cost of information loss and decision delay at each hierarchical junction. The human hierarchy is, in this framing, a compression algorithm for an otherwise intractable coordination problem.
 
 The key observation is that this compression algorithm — the hierarchy — is part of the organizational configuration, not part of the process. Different configurations solve the same coordination problem differently (different hierarchy designs, different committee structures, different escalation rules) and introduce different patterns of information loss. These information-loss differences translate to output differences that make the two configurations non-metamers.
 
@@ -332,7 +332,7 @@ The specification impossibility result in Zharnikov [-@zharnikov-2026-specificat
 
 *Companion Computation Script*
 
-The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 3 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of c(P) and τ(P) per the operationalization guidance in the Propositions section.
+The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 3 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of $c(P)$ and $\tau(P)$ per the operationalization guidance in the Propositions section.
 
 ### Practical Implications
 
@@ -377,15 +377,15 @@ This appendix formalizes the metamerism set M(P, O) with set notation. The inten
 
 ### Configuration Space and Observer Evaluation
 
-Let 𝒞 denote the configuration space — the set of all organizationally feasible configurations for executing a given process P. Each element C ∈ 𝒞 is a tuple specifying the agents, roles, authority relationships, resource allocations, and coordination procedures assembled to execute P.
+Let $\mathcal{C}$ denote the configuration space — the set of all organizationally feasible configurations for executing a given process P. Each element $C \in \mathcal{C}$ is a tuple specifying the agents, roles, authority relationships, resource allocations, and coordination procedures assembled to execute P.
 
-Let O denote an evaluative observer whose evaluation function f_O: 𝒞 → V maps each configuration C to a value-output perception V = f_O(C, P). V may be a scalar (e.g., a quality score), a vector (e.g., a multidimensional assessment), or a categorical judgment (equivalent / non-equivalent). The evaluation is conditioned on P because the same configuration may produce different value outputs for different processes.
+Let O denote an evaluative observer whose evaluation function $f_O: \mathcal{C} \to V$ maps each configuration C to a value-output perception $V = f_O(C, P)$. V may be a scalar (e.g., a quality score), a vector (e.g., a multidimensional assessment), or a categorical judgment (equivalent / non-equivalent). The evaluation is conditioned on P because the same configuration may produce different value outputs for different processes.
 
 **Definition A1 (Metamerism set)**. The metamerism set of process P under observer O is:
 
-M(P, O) = {C ∈ 𝒞 : f_O(C, P) = f_O(C*, P)}
+$$M(P, O) = \{C \in \mathcal{C} : f_O(C, P) = f_O(C^*, P)\}$$
 
-where C* is an arbitrarily chosen reference configuration and the equality is with respect to observer O's equivalence relation on V. Equivalently, M(P, O) is the equivalence class of C* under the relation ~ defined by C ~ C' iff f_O(C, P) = f_O(C', P).
+where $C^*$ is an arbitrarily chosen reference configuration and the equality is with respect to observer O's equivalence relation on V. Equivalently, M(P, O) is the equivalence class of $C^*$ under the relation $\sim$ defined by $C \sim C'$ iff $f_O(C, P) = f_O(C', P)$.
 
 This definition makes explicit that M(P, O) is a derived set, not an empirical enumeration: its members are those configurations that fall within the same output-evaluation class as the reference under O's evaluation function.
 
@@ -393,45 +393,45 @@ This definition makes explicit that M(P, O) is a derived set, not an empirical e
 
 The most consequential property of M(P, O) is that it is observer-indexed.
 
-**Property A1 (Observer-relativity)**. For two observers O₁ and O₂ with different evaluation functions f_{O1} ≠ f_{O2}:
+**Property A1 (Observer-relativity)**. For two observers $O_1$ and $O_2$ with different evaluation functions $f_{O_1} \neq f_{O_2}$:
 
-M(P, O₁) ≠ M(P, O₂) in general
+$$M(P, O_1) \neq M(P, O_2) \text{ in general}$$
 
-The inequality arises because observers differ in dimensional sensitivity: O₁ may be indifferent to coordination-structure differences that O₂ can detect. A technically oriented buyer evaluating software reliability has evaluation function f_{O1} that maps all configurations producing equivalent defect rates to the same value class, regardless of team structure. An institutional regulator evaluating governance compliance has evaluation function f_{O2} sensitive to authority relationships and reporting lines, and will assign different value classes to configurations that O₁ treats as equivalent.
+The inequality arises because observers differ in dimensional sensitivity: $O_1$ may be indifferent to coordination-structure differences that $O_2$ can detect. A technically oriented buyer evaluating software reliability has evaluation function $f_{O_1}$ that maps all configurations producing equivalent defect rates to the same value class, regardless of team structure. An institutional regulator evaluating governance compliance has evaluation function $f_{O_2}$ sensitive to authority relationships and reporting lines, and will assign different value classes to configurations that $O_1$ treats as equivalent.
 
-The practical implication is that the set of "equivalent configurations" is undefined without specifying the observer. Studies of organizational equifinality that aggregate across observer types are measuring the union ⋃_{i} M(P, Oᵢ) or the intersection ⋂_{i} M(P, Oᵢ), depending on operationalization — and these are different quantities with different theoretical meanings.
+The practical implication is that the set of "equivalent configurations" is undefined without specifying the observer. Studies of organizational equifinality that aggregate across observer types are measuring the union $\bigcup_{i} M(P, O_i)$ or the intersection $\bigcap_{i} M(P, O_i)$, depending on operationalization — and these are different quantities with different theoretical meanings.
 
 ### Coordination-Cost Mediation
 
 The main text develops the antecedents of set size schematically as:
 
-|M(P, O)| = f(codifiability(P), 1/c(P), 1/τ(P))
+$$|M(P, O)| = f(\mathrm{codifiability}(P), 1/c(P), 1/\tau(P))$$
 
 A more precise functional form captures the directional predictions formally. Let:
 
-- κ(P) ∈ [0, 1] — codifiability of process P (fraction of steps fully specified)
-- c(P) > 0 — coordination cost per coordination relation in P
-- τ(P) ∈ [0, 1] — tacit knowledge intensity (proportion of coordination work requiring uncodifiable knowledge)
+- $\kappa(P) \in [0, 1]$ — codifiability of process P (fraction of steps fully specified)
+- $c(P) > 0$ — coordination cost per coordination relation in P
+- $\tau(P) \in [0, 1]$ — tacit knowledge intensity (proportion of coordination work requiring uncodifiable knowledge)
 
-**Property A2 (Coordination-cost mediation)**. The set size |M(P, O)| increases monotonically as c(P) decreases, all else equal:
+**Property A2 (Coordination-cost mediation)**. The set size $|M(P, O)|$ increases monotonically as $c(P)$ decreases, all else equal:
 
-∂|M(P, O)| / ∂c(P) < 0
+$$\partial |M(P, O)| / \partial c(P) < 0$$
 
-As c(P) → 0 (perfect coordination embedding), the coordination arrangement becomes irrelevant to value output, and |M(P, O)| → |𝒞| (all feasible configurations become equivalent for technically oriented observers). As c(P) → ∞, coordination quality becomes the dominant source of value-output variance, and |M(P, O)| → 1 (only the single best-coordinated configuration produces equivalent output to itself).
+As $c(P) \to 0$ (perfect coordination embedding), the coordination arrangement becomes irrelevant to value output, and $|M(P, O)| \to |\mathcal{C}|$ (all feasible configurations become equivalent for technically oriented observers). As $c(P) \to \infty$, coordination quality becomes the dominant source of value-output variance, and $|M(P, O)| \to 1$ (only the single best-coordinated configuration produces equivalent output to itself).
 
-**Property A3 (Tacit boundary)**. The set size |M(P, O)| decreases monotonically as τ(P) increases, all else equal:
+**Property A3 (Tacit boundary)**. The set size $|M(P, O)|$ decreases monotonically as $\tau(P)$ increases, all else equal:
 
-∂|M(P, O)| / ∂τ(P) < 0
+$$\partial |M(P, O)| / \partial \tau(P) < 0$$
 
-For τ(P) = 1 (all coordination is uncodifiable), no configuration substitution preserves value output, and |M(P, O)| = 1. This establishes tacit knowledge intensity as a lower bound on configuration substitutability that coordination cost reductions cannot eliminate — the formal basis for Proposition 4.
+For $\tau(P) = 1$ (all coordination is uncodifiable), no configuration substitution preserves value output, and $|M(P, O)| = 1$. This establishes tacit knowledge intensity as a lower bound on configuration substitutability that coordination cost reductions cannot eliminate — the formal basis for Proposition 4.
 
 ### Partial Ordering by Tacit Knowledge Intensity
 
 The metamerism sets for processes varying in tacit intensity form a partial order under set inclusion.
 
-**Property A4 (Tacit partial order)**. For two processes P and P' executing in the same coordination cost regime with κ(P) = κ(P'), if τ(P) < τ(P'), then:
+**Property A4 (Tacit partial order)**. For two processes P and P' executing in the same coordination cost regime with $\kappa(P) = \kappa(P')$, if $\tau(P) < \tau(P')$, then:
 
-M(P, O) ⊇ M(P', O)
+$$M(P, O) \supseteq M(P', O)$$
 
 The less tacit process has a weakly larger metamerism set — the collection of equivalent configurations contains the less-tacit process's set as a subset. This partial ordering is the structural basis for the cross-industry comparisons called for in Proposition 4's operationalization: industries with higher tacit intensity will exhibit nested, smaller sets of equivalent configurations relative to industries with lower tacit intensity at comparable coordination cost.
 
@@ -439,8 +439,8 @@ The less tacit process has a weakly larger metamerism set — the collection of 
 
 The companion computation script (https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/) implements a continuous approximation of the set-size function:
 
-|M(P, O)| ≈ S · κ(P) / [c(P) · (1 + τ(P))]
+$$|M(P, O)| \approx S \cdot \kappa(P) / [c(P) \cdot (1 + \tau(P))]$$
 
-where S is a normalizing scale constant. Table A1 in the script output shows the predicted monotonic growth as c(P) falls from 1.0 to 0.05 at fixed codifiability and tacit intensity. Table A2 shows the tacit boundary: even as c(P) falls by a factor of 10, high-τ(P) processes retain substantially narrower sets than low-τ(P) processes. Table A3 demonstrates observer-relativity: for the same process portfolio, a technically oriented observer (O₁) has systematically larger sets than an institutional observer (O₂) whose evaluation function weights organizational form independently of output quality. The set-size values are illustrative ordinal predictions calibrated to the directional claims of Propositions 2 and 4; empirical calibration requires domain-specific measurement of c(P) and τ(P).
+where S is a normalizing scale constant. Table A1 in the script output shows the predicted monotonic growth as $c(P)$ falls from 1.0 to 0.05 at fixed codifiability and tacit intensity. Table A2 shows the tacit boundary: even as $c(P)$ falls by a factor of 10, high-$\tau(P)$ processes retain substantially narrower sets than low-$\tau(P)$ processes. Table A3 demonstrates observer-relativity: for the same process portfolio, a technically oriented observer ($O_1$) has systematically larger sets than an institutional observer ($O_2$) whose evaluation function weights organizational form independently of output quality. The set-size values are illustrative ordinal predictions calibrated to the directional claims of Propositions 2 and 4; empirical calibration requires domain-specific measurement of $c(P)$ and $\tau(P)$.
 
 *Notes*: This appendix formalizes the schematic function stated in the Antecedents of Metamerism subsection. The formalization is intended to sharpen empirical operationalization, not to claim that the continuous approximation is the unique functional form. Alternative specifications (multiplicative, log-linear, threshold-based) are consistent with the directional properties A2–A4 and may fit specific empirical contexts better. The companion script can be adapted to test alternative functional forms.

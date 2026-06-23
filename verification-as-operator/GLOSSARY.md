@@ -7,7 +7,7 @@ _Terms used by **2026ae** (Verification as Operator: Spectral Projection, Rank D
 *Terms introduced by this paper*
 
 - **Cascade Consistency Condition** (write: `cascade consistency condition`)
-  - The requirement that range(P_k) is not contained in kernel(P_{k+1}) for all k, ensuring each cascade level contributes independent information so the cascade remains full-rank.
+  - The requirement that range($P_k$) is not contained in kernel($P_{k+1}$) for all $k$, ensuring each cascade level contributes independent information so the cascade remains full-rank.
   - first use: Formal Model and Propositions
 - **Full-Rank Cascade** (write: `full-rank cascade`)
   - The OST acceptance-testing cascade modeled as a full-rank projection in which each hierarchical level independently projects onto a distinct performance subspace while preserving the specification's dimensional structure.
@@ -16,7 +16,7 @@ _Terms used by **2026ae** (Verification as Operator: Spectral Projection, Rank D
   - Conventional audit modeled as a degenerate rank-1 projection onto a single compliance axis, discarding by construction all information orthogonal to that axis.
   - first use: Formal Propositions
 - **Spectral Projection Operator** (write: `spectral projection operator`)
-  - An idempotent (P^2=P), self-adjoint (P*=P) linear map onto an invariant subspace whose rank determines how many independent dimensions of organizational performance the verification process can discriminate.
+  - An idempotent ($P^2=P$), self-adjoint ($P^*=P$) linear map onto an invariant subspace whose rank determines how many independent dimensions of organizational performance the verification process can discriminate.
   - first use: Formal Model
 - **Verification as Operator** (write: `verification as operator`)
   - The formalization of organizational verification as a spectral projection operator P that maps organizational states onto invariant subspaces defined by acceptance criteria.

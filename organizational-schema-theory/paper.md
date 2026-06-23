@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043)
 
-Working Paper v1.3.0 – April 2026
+Working Paper v1.3.0 – March 2026
 
 ---
 
@@ -42,7 +42,7 @@ Test-Driven Development, as formalized by Beck, is frequently misunderstood as a
 
 Orgschema extends this methodology from software to business operations. The parallel is structural, not metaphorical:
 
-**Table 1: The TDD-to-Orgschema Parallel**
+Table 1: The TDD-to-Orgschema Parallel
 
 | TDD (Software) | Orgschema (Business) |
 |:---|:---|
@@ -59,7 +59,7 @@ The critical insight is that TDD's value proposition---architectural decisions d
 
 The forward-design approach to business creation starts with available resources. An entrepreneur identifies accessible suppliers, available staff, and affordable equipment, then builds operations from these constraints upward, hoping that the resulting customer experience will be acceptable. Customer perception is emergent---an undesigned consequence of operational decisions made for operational reasons.
 
-**Table 2: Forward Design vs. Reverse Design**
+Table 2: Forward Design vs. Reverse Design
 
 | Property | Forward Design | Reverse Design (Orgschema) |
 |:---|:---|:---|
@@ -93,7 +93,7 @@ Deming's insistence that quality is defined by the customer, not by the producer
 
 Orgschema draws from and extends several established frameworks. The following table clarifies the relationship to each, distinguishing what orgschema inherits from what it contributes:
 
-**Table 3: Framework Lineage and Orgschema's Contribution**
+Table 3: Framework Lineage and Orgschema's Contribution
 
 | Framework | What It Does | Orgschema's Extension |
 |:---|:---|:---|
@@ -286,7 +286,7 @@ This maps directly to the five-level openness taxonomy we have described elsewhe
 
 **CI/CD as satisfaction validation.** The validation pipeline implements six levels of checking, each corresponding to a different class of specification defect:
 
-**Table 5: CI/CD Validation Levels**
+Table 5: CI/CD Validation Levels
 
 | Level | Validation | TDD Analogy | What It Catches |
 |:---|:---|:---|:---|
@@ -301,7 +301,7 @@ This maps directly to the five-level openness taxonomy we have described elsewhe
 
 Existing businesses need not adopt orgschema comprehensively from the start. We propose a six-level maturity model for progressive formalization:
 
-**Table 6: Six-Level Orgschema Maturity Model**
+Table 6: Six-Level Orgschema Maturity Model
 
 | Level | State | What CI/CD Validates | Value |
 |:---|:---|:---|:---|
@@ -322,7 +322,7 @@ Large language models change the feasibility equation. Orgschema specifications 
 
 Table 7 presents a theoretical comparison of orgschema feasibility with and without LLM assistance. These comparisons represent expected impacts based on the structural properties of orgschema specifications (structured YAML, directed graph traversal, template-based generation) and established LLM capabilities.[^25] Empirical validation of these efficiency gains is a priority for future research.
 
-**Table 7: LLM Impact on Orgschema Feasibility (Theoretical Comparison)**
+Table 7: LLM Impact on Orgschema Feasibility (Theoretical Comparison)
 
 | Task | Without LLM | With LLM |
 |:---|:---|:---|
@@ -386,7 +386,7 @@ To validate forkability as test suite portability, we created a location fork fo
 
 To illustrate the cascade's diagnostic capability, we construct a hypothetical executor swap scenario with illustrative perception scores. The specific values are not empirical measurements but serve to demonstrate how the TDD cascade makes otherwise invisible trade-offs quantifiable.
 
-**Table 8: Executor Swap Impact Analysis (Illustrative Scenario)**
+Table 8: Executor Swap Impact Analysis (Illustrative Scenario)
 
 | TDD Level | Human Artisan | Fully Automated | Delta |
 |:---|:---|:---|:---|
@@ -449,7 +449,7 @@ The backward traceability architecture also enables a new form of waste detectio
 
 Orgschema's structure maps to Beer's Viable System Model, providing theoretical grounding in organizational cybernetics.[^18]
 
-**Table 9: Orgschema to Viable System Model Mapping**
+Table 9: Orgschema to Viable System Model Mapping
 
 | VSM System | Function | Orgschema Mapping | Specification Strength |
 |:---|:---|:---|:---|
@@ -494,7 +494,7 @@ Orgschema's TDD cascade then derives everything backward from the transplanted p
 
 This introduces a third fork type beyond those previously discussed:
 
-**Table 10: Three Fork Types**
+Table 10: Three Fork Types
 
 | Fork Type | What Is Copied | What Is Rewritten | Example |
 |:---|:---|:---|:---|
@@ -529,6 +529,12 @@ The Organizational Schema Theory methodology applies Test-Driven Development to 
 The methodology's practical feasibility depends on large language models. The multi-dimensional complexity of maintaining cross-referenced specifications across six hierarchical levels, eight perceptual dimensions, and hundreds of operational parameters was always theoretically sound but practically unmanageable. LLMs change this equation---not by replacing human judgment about what customers should experience, but by making the tedious work of cascade traversal, consistency checking, and impact analysis feasible at scale. Orgschema is a methodology whose time has arrived because of AI.
 
 The broader implication extends beyond any single business. If operational specifications are testable, they are comparable. If they are version-controlled, they accumulate institutional knowledge. If they are forkable, they enable new models of organizational knowledge sharing that go beyond the franchise manual. The question is not whether businesses will be specified as testable artifacts---the convergence of declarative process management, infrastructure-as-code, and AI-native workflows makes this trajectory likely. The question is whether they will be designed forward from available resources or backward from desired customer experience. Orgschema argues for backward.
+
+---
+
+## Acknowledgments
+
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
 ---
 
