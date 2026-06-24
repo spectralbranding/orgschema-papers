@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20072288
-  date: '2026-06-01'
+  date: '2026-05-01'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -30,16 +30,17 @@ meta:
     comparable short-run gains? This paper formalizes the cross-tier allocation problem using a vector
     w spanning operating tiers that differ in asset durability, with tier-specific decay rates δ_t ranging
     from .50/year at the organizational surface (advertising) to .05–.10/year at foundational layers.
-    Long-run value is a discounted Cobb-Douglas aggregator incorporating Jorgensonian user costs (δ_t
-    + r); optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule
-    w_t*(r) = α_t / (δ_t + r) and the comparative static ∂w₆*/∂r > 0. Four allocation propositions link
-    pre-deal surface-tier intensity, governance horizon, cost-of-capital shocks, and capability-rotation
-    stage to M&A outcomes. The framework is then extended with two AI-specific shocks per tier — a cost
-    shock γ_t and a durability shock Δ_t — yielding the generalized rule w_t*(r; γ, Δ) = α_t / [γ_t ·
-    (δ_t^eff + r)] and three further propositions: surface-tier AI raises short-run earnings yet lowers
-    long-run multiples; a discrete substrate-building threshold exists at Tier 4; and AI''s net value
-    effect flips sign with the principal''s effective discount rate. Investment direction — not merely
-    intensity — is the consequential strategic choice.'
+    Long-run value is a discounted Cobb-Douglas aggregator incorporating Jorgensonian user costs $(\delta_t
+    + r)$; optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule
+    $w_t^*(r) = \alpha_t / (\delta_t + r)$ and the comparative static $\partial w_6^*/\partial r > 0$.
+    Four allocation propositions link pre-deal surface-tier intensity, governance horizon, cost-of-capital
+    shocks, and capability-rotation stage to M&A outcomes. The framework is then extended with two AI-specific
+    shocks per tier — a cost shock $\gamma_t$ and a durability shock $\Delta_t$ — yielding the generalized
+    rule $w_t^*(r; \gamma, \Delta) = \alpha_t / [\gamma_t \cdot (\delta_t^{\text{eff}} + r)]$ and three
+    further propositions: surface-tier AI raises short-run earnings yet lowers long-run multiples; a discrete
+    substrate-building threshold exists at Tier 4; and AI''s net value effect flips sign with the principal''s
+    effective discount rate. Investment direction — not merely intensity — is the consequential strategic
+    choice.'
 claims:
 - id: P0
   type: proposition
@@ -212,7 +213,7 @@ dependencies:
     rotation stage held fixed as a conditioning variable) and uses 2026ai's trademark-composition proxy
     to operationalize Tier-Rotation Stage in the P4 test.
   critical: false
-  reference: Zharnikov (2026ai), this corpus.
+  doi: 10.5281/zenodo.20069605
 - relationship: applies
   claim: R5 Specification Impossibility supplies the Tier-1 residual specification gap (preferences are
     the substrate from which specifications are derived), grounding the constitutional Tier-1 ceiling

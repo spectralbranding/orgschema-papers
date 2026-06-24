@@ -590,12 +590,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Dynamic extension: a longer-horizon Pi_{6->1} enactment operator giving a higher-dimensional joint fixed point where forward and backward operators are consistent (relaxes scope condition iv). (L1)"
-  - "Is the strict-inequality (junction-interaction) regime of P4 empirically modal across firms, or the exception? (L2)"
-  - "How are kappa_i and L_i estimated firm-by-firm from observational data (analogue to production-function elasticity estimation)? No estimator yet exists. (L3)"
-  - "Do P1-P4 generalize across industries (legal, healthcare, financial services) and across institutional contexts with different kappa_i / L_i regimes (cross-cultural validation)?"
-  - "At what boundary does AI deployment penetrating T_3 (signing authority / legal personhood) become feasible, ending the static regime? (links 2026ak)"
 
 # ============================================================================
 # Spine changelog — append-only

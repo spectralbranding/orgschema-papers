@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19778588
-  date: '2026-06-01'
+  date: '2026-04-01'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -27,7 +27,7 @@ meta:
   - information-processing design
   abstract: Organizational verification systems consume enormous resources yet frequently fail to produce
     substantive alignment between behavior and objectives. This paper develops an operator-theoretic explanation.
-    Verification is formalized as a spectral projection operator P that maps organizational states onto
+    Verification is formalized as a spectral projection operator $P$ that maps organizational states onto
     invariant subspaces defined by acceptance criteria. Conventional audit operates as a degenerate rank-1
     projection onto a single compliance axis, discarding by construction all information orthogonal to
     that axis. This algebraic property explains the persistent information loss documented in the audit-society

@@ -429,11 +429,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "How to estimate the projection matrices P_k empirically from audit-score covariance (latent-variable / factor-analytic method)? (L2)"
-  - "Does the verification-bandwidth hypothesis (P6) hold on panel data linking verification architecture to multi-dimensional performance outcomes?"
-  - "How does the account generalize to the multi-evaluator regime where {P_e,k} disagree and the effective invariant subspace is an intersection across evaluators? (C1)"
-  - "Does the operator framing generalize beyond organization theory, given the structural parallel to Kovalenko's pseudo-coverage diagnosis?"
 
 # ============================================================================
 # Spine changelog — append-only

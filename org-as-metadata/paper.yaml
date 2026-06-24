@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19869871
-  date: '2026-06-01'
+  date: '2026-04-01'
   venue: Organization Science
   license: CC-BY-4.0
   keywords:
@@ -265,7 +265,7 @@ dependencies:
   reference: polanyi-1966-the-tacit-dimension
 - relationship: extends
   claim: AI as prediction-cost reduction, subsuming coordination-under-uncertainty.
-  doi: 10.1177/0306307019854812
+  reference: agrawal-2018-prediction-machines-simple
 - relationship: extends
   claim: Coordination compression (not automation) as AI's organizational payoff.
   reference: choudary-2026-ais-big-payoff

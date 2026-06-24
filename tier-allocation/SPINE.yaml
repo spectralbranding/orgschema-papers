@@ -657,13 +657,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Direct calibration of delta_2 and delta_3 for business-model-architecture and entity-level assets (no empirical depreciation literature exists). (L2)"
-  - "The full principal-agent equilibrium (w_6^A, w_6^P) under adverse selection + moral hazard with tier-specific reporting legibility — reserved for a planned companion paper. (Agency Extension)"
-  - "Endogenous delta_t (firms investing in substrate durability) and the dynamic adjustment path off steady state (current comparative statics are cross-sectional). (Assumption 1)"
-  - "An ecosystem extension where additive separability across tiers breaks down for firms at the center of dense co-specialization networks (Adner 2017). (Assumption 2)"
-  - "Empirical estimation of alpha_t from panel data to close the 1.93x-vs-4-6x calibrated-magnitude gap. (L1)"
-  - "Clean separate identification of gamma_t vs Delta_t in disclosure data (P7 magnitude attribution). (L3)"
 
 # ============================================================================
 # Spine changelog — append-only

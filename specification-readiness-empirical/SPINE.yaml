@@ -680,11 +680,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Are the pre-registered effects actually present in real firms? Archival panel confirmation is the companion empirical paper (Paper B v2.0), in execution. (L1)"
-  - "Does convergence or divergence of the continuous-SCI and four-event-sharp-SCI estimates obtain, and what does divergence imply about the differential treatment populations? (L3, RC1)"
-  - "Can the within-firm year-over-year coherence signal be validated as carrying the same construct meaning across non-US disclosure regimes (UK, EU, Japan)? (L5)"
-  - "Does direct conjoint-analysis measurement of the latent perception-weight vectors w_i confirm the construct validity the archival design takes as latent? (L6)"
 
 # ============================================================================
 # Spine changelog — append-only

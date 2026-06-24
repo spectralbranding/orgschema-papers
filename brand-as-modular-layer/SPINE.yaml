@@ -420,12 +420,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "How does Tier-1 strength/coherence interact with V to offset predicted high-V fragility (the Apple anomaly, L3)? The propositions do not yet formalize the interaction."
-  - "A full theory of stacked-instance (platform/two-sided) architectures, where Tier-4 co-production between platform and tenant blurs the specification boundary (L2)."
-  - "The empirical composite formulas for MBCD capacity prediction (K_hat) and the V weights are left for empirical specification rather than imposed a priori."
-  - "Cross-form extension of the Owner-Intent construct to NGOs, cooperatives, state-owned enterprises, and family-office holding companies (C1, L2)."
-  - "Mathematical formalization of the Stage-1-to-4 tier-rotation curve and M&A exit-value conditions (companion paper in preparation)."
 
 # ============================================================================
 # Spine changelog — append-only

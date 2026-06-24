@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20379981
-  date: '2026-06-01'
+  date: '2026-05-01'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -189,7 +189,7 @@ dependencies:
     of the capability-projection function on an organizational log; the Substrate/Surface-Operator usage
     here is the same operator-as-executor framing applied to interface rendering.
   critical: false
-  reference: Zharnikov (2026al), this corpus.
+  doi: 10.5281/zenodo.20367459
 - relationship: extends
   claim: Cross-entropy structural analog license.
   reference: shannon-1948-mathematical-theory
@@ -238,6 +238,11 @@ dependencies:
 - relationship: extends
   claim: Same signal -> distinct audience outcomes = spec-level divergence.
   reference: zavyalova-2016-reputation-benefit-burden
+- relationship: extends
+  claim: Theory-based view's thesis->actionable-theory maturation (9 platform ventures, 5y); specification
+    readiness is the codification continuation of that gradient -- uncodified thesis -> queryable substrate.
+    C1's no-spec/pre-PMF firms ARE thesis-stage.
+  doi: 10.1287/stsc.2024.0178
 contradictions: []
 limitations:
 - description: The propositions are THEORETICAL predictions derived from the model's structure, not empirical

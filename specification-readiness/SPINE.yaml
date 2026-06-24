@@ -544,11 +544,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Empirical estimation of alpha* (the AI-penetration phase-shift threshold) per coupling domain (L3, P4)."
-  - "Mixed-adversarial portfolios: the tradeoff between pull efficiency and extraction vulnerability when some recipient classes are cooperative and others adversarial (C5)."
-  - "Optimal specification-investment path under stochastic recipient perception vectors, relaxing class-homogeneity (AA2, L2; building on Levinthal & Wu 2024)."
-  - "Empirical confirmation of the five propositions on real-firm archival panel data — owed to the companion empirical paper 2026an, not this theory paper (L1)."
 
 # ============================================================================
 # Spine changelog — append-only

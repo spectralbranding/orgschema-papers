@@ -509,14 +509,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Inter-rater reliability of the STSD (Cohen's kappa >= .70 per tier) is the first unmet validation priority (L3)."
-  - "Predictive validity: does Fused-tier count at close negatively predict 36-month acquisition performance after controlling for deal size, industry, leverage? (untested)"
-  - "Cross-form validation of the provisional Tier 2/4/5 substitution rules (>= 10 deals per form) (L2)."
-  - "Extension to platform / network (multi-sided) businesses: governors, specification surfaces, transferability modes (C2)."
-  - "Multi-principal Intent adaptation for dispersed / publicly-traded ownership where Intent is a vector (C1)."
-  - "An additional Tier 1 substitution for politically constituted authority (privatization / public-sector cross-form), unspecified in this version of Table 2."
-  - "The deal-type tier-bundle algebra (asset deal / carve-out / acqui-hire / roll-up / spin-out / franchise / pivot as typed fork operations) is deferred to a companion working paper."
 
 # ============================================================================
 # Spine changelog — append-only

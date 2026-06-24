@@ -609,12 +609,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "The fifty-event coded M&A panel (2000-2025) testing P1-P4 at scale via regression discontinuity on acquirer prior M&A count — companion empirical paper (L1)."
-  - "Which forgetting kernel (exponential vs power-law vs hyperbolic vs threshold) and which lambda fit which industry/query — the decay parameter is empirically identifiable but uncalibrated (L4)."
-  - "Resolving the C2 continuity-gap near-miss (.073 vs .10 threshold) under empirical weighting rather than synthetic (L2)."
-  - "Generalization beyond Anglo-Japanese product firms to SOEs, non-Western SMEs, and services firms whose log lives in client-relationship history (L3)."
-  - "A methods companion developing ActiveGraph (Nakajima 2026) as a measurement instrument for organizational logs reconstructed from documentary traces."
 
 # ============================================================================
 # Spine changelog — append-only

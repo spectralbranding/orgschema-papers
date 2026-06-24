@@ -19,7 +19,7 @@ owns:
   - term_key: spectral-projection-operator
     label: "Spectral Projection Operator"
     canonical_form: "spectral projection operator"
-    definition: "An idempotent (P^2=P), self-adjoint (P*=P) linear map onto an invariant subspace whose rank determines how many independent dimensions of organizational performance the verification process can discriminate."
+    definition: "An idempotent ($P^2=P$), self-adjoint ($P^*=P$) linear map onto an invariant subspace whose rank determines how many independent dimensions of organizational performance the verification process can discriminate."
     first_section: "Formal Model"
   - term_key: rank-1-audit
     label: "Rank-1 Audit"
@@ -34,7 +34,7 @@ owns:
   - term_key: cascade-consistency-condition
     label: "Cascade Consistency Condition"
     canonical_form: "cascade consistency condition"
-    definition: "The requirement that range(P_k) is not contained in kernel(P_{k+1}) for all k, ensuring each cascade level contributes independent information so the cascade remains full-rank."
+    definition: "The requirement that range($P_k$) is not contained in kernel($P_{k+1}$) for all $k$, ensuring each cascade level contributes independent information so the cascade remains full-rank."
     first_section: "Formal Model and Propositions"
   - term_key: verification-bandwidth
     label: "Verification Bandwidth"

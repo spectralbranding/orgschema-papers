@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20384084
-  date: '2026-06-01'
+  date: '2026-05-01'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -34,11 +34,11 @@ meta:
     firms 2010–2025, identified by within-firm continuous treatment, staggered difference-in-differences
     [@callaway-2021-differenceindifferences-with-multiple; @goodmanbacon-2021-differenceindifferences-with-variation],
     regulatory-compliance instruments, and advertising-cessation event studies, with Oster [-@oster-2019-unobservable-selection-coefficient]
-    bounds. Pre-registered Monte Carlo mechanism tests (12.96 million trials; α* = .91; Cohen''s d = 88.4)
-    confirm the friction-tax phase shift. Three contributions follow: a first scalable archival measure
-    of specification readiness, a reusable identification template pairing continuous textual treatment
-    with sharp codification events, and formal evidence that specification readiness moderates the AI
-    augmentation paradox.'
+    bounds. Pre-registered Monte Carlo mechanism tests (12.96 million trials; $\alpha^* = .91$; Cohen''s
+    d = 88.4) confirm the friction-tax phase shift. Three contributions follow: a first scalable archival
+    measure of specification readiness, a reusable identification template pairing continuous textual
+    treatment with sharp codification events, and formal evidence that specification readiness moderates
+    the AI augmentation paradox.'
 claims:
 - id: P1
   type: proposition

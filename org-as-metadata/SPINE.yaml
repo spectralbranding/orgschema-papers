@@ -488,12 +488,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Empirical calibration of c(P) and tau(P) per process/industry — the simulation gives only ordinal predictions (L2, F1)."
-  - "Does advancing AI erode the tacit-knowledge boundary fast enough to dissolve the P8/D4 constraint? (L3)"
-  - "Cross-observer-class disagreement: which observer classes are consequential for a given firm's competitive environment, and how do union vs intersection of M(P,Oi) behave empirically? (C2, D2)"
-  - "Extension to identity-laden/institutional settings via explicit legitimacy-observer evaluation functions (L1)."
-  - "The proximate spin-off 'Organizational Form as Signal' (Spence 1973; Connelly et al. 2011) for the institutional-observer class where form dominates output."
 
 # ============================================================================
 # Spine changelog — append-only

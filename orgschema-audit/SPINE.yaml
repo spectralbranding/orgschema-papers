@@ -478,12 +478,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Field validation of Propositions 1 and 2: 10–20 organizations of varying size/sector, measuring audit cost and 6–12-month remediation outcomes (P5, P6, L2)."
-  - "Scale testing: does the six-level model need additional layers (inter-divisional, shared-service, governance) for organizations of 50+ employees? (L3)"
-  - "Integration testing: do operational specification gaps predict perceptual coherence gaps when the OrgSchema Audit and the Spectral Audit run jointly on one organization?"
-  - "Characterization-testing case: applying the audit to a legacy organization never previously specified, where revealed specification may diverge from stated intention (L1)."
-  - "LLM-extracted specification accuracy and transfer of the audit's assumptions to high-context, relationship-based, or B2B operations (L4, L3)."
 
 # ============================================================================
 # Spine changelog — append-only

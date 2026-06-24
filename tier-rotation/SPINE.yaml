@@ -469,12 +469,6 @@ external_anchors:
 # ============================================================================
 # Open questions / boundary edges
 # ============================================================================
-open:
-  - "Empirical validation: no proposition is yet tested; the four P_P-observable proxies (s operationalization) are novel and unvalidated (Validation Roadmap Priorities 1–4)."
-  - "Succession extension: a succession-discount function parallel to but distinct from V(s), handling Tier-1 occupant replacement, the Tier-5 transfer bottleneck, and the multi-decade preparation timeline (C4)."
-  - "Tier-allocation extension: a spatial portfolio w = (w_1..w_6) with per-tier half-life and substrate-accumulation coefficients, endogenizing where rotation effort e is deployed."
-  - "Diffuse-Tier-1 forms: re-parameterizing the separability kink as a threshold in the dispersion of Tier-1 claims (NGOs, cooperatives, SOEs, family offices) (C1)."
-  - "Platform / two-sided-market stacked-instance brands and regulated-industry σ-compression cases."
 
 # ============================================================================
 # Spine changelog — append-only
