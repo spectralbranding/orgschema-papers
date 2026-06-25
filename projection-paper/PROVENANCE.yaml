@@ -15,7 +15,7 @@ provenance:
         projections of process (Π: T_5 → T_6). Theory of function-position
         decoupling under AI deployment. Published at Zenodo. Preserved as
         distinct conceptual predecessor to v2.0.0.
-      outcome: "Published preprint at Zenodo (concept DOI 10.5281/zenodo.19145205). Desk-rejected by OrgSci, AMR, JOD; major rewrite to v2.0.0 initiated."
+      outcome: "Published preprint at Zenodo (concept DOI 10.5281/zenodo.19145205). Major rewrite to v2.0.0 initiated."
 
     - version: "2.0.0"
       date: "2026-05-09"
@@ -51,7 +51,7 @@ provenance:
     reproduces: "All numerical values in §3.5 Table 3 and sub-additivity verification of Corollary 1"
 
   last_review: "2026-05-09"
-  readiness: "published 2026-05-09; submission-ready (AMR/SMJ ScholarOne post-1-2-week-settling window)"
+  readiness: "published 2026-05-09"
 
   submissions: []
 
