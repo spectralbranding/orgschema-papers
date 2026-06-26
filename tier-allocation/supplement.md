@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
 
 Working Paper v1.0.0 -- May 2026
 
----
-
 *The main paper is published at https://doi.org/10.5281/zenodo.20072288 and at https://github.com/spectralbranding/orgschema-papers/tree/main/tier-allocation/. The companion computation script is at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py.*
 
 ---
