@@ -1,4 +1,4 @@
-# Online Supplement to "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and Long-Run Firm Value"
+# Online Supplement to "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and AI Penetration"
 
 **Dmitry Zharnikov**
 
