@@ -12,7 +12,7 @@ Working Paper v1.1.0 – April 2026 (revised June 2026)
 
 This paper introduces the OrgSchema Audit, a structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels: experience contracts, signal requirements, process contracts, procedures, input specifications, and sourcing requirements. The protocol parallels the Spectral Audit developed for brand perception [@zharnikov-2026-spectral-audit-eight-dimensional] but targets organizational operations rather than perceptual allocation. Each audit level defines what to examine, what a healthy specification looks like, what failure modes indicate, and what corrective actions restore specification integrity. A worked example using a specialty coffee operation demonstrates the full protocol. The paper argues that a significant share of organizational dysfunction originates not from poor execution but from absent or misaligned specifications, and that remediation should be prioritized by cascade position rather than symptom severity. The protocol is designed to be executable with or without AI assistance, though large language models substantially reduce the cost of initial specification extraction from existing documentation.
 
-**Keywords**: organizational specification, test-driven business design, operational audit, specification maturity, six-level cascade, experience contracts, organizational schema theory, AI-assisted diagnostics
+**Keywords**: organizational specification, test-driven business design, operational audit, specification maturity, six-level cascade, experience contracts, AI-assisted diagnostics
 
 ---
 

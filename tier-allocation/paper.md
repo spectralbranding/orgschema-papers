@@ -312,7 +312,7 @@ Four cases span the tier-allocation portfolio space from extreme Tier-6 concentr
 
 *Hermès International.* Hermès's advertising-to-revenue ratio (~5–7%) is among the lowest in luxury, while its Tier-4 investment — artisan training, production process codification, trademark portfolio, and brand specification documentation — is among the highest as a share of total investment. Family control (~66% equity) extends the effective discount rate across generations. Enterprise-value-to-revenue has persistently exceeded 15×, more than twice the multiple of sector peers with higher advertising intensity. The case illustrates P2: long-horizon-principal governance produces a low-w₆/high-w₄ portfolio and materially higher long-run value.
 
-# Part II: AI Tier Penetration
+## Part II: AI Tier Penetration
 
 The base allocation model treats the per-tier decay vector δ_t and the firm's discount rate r as the forces shaping optimal investment direction. Artificial intelligence enters as a structured perturbation of exactly these primitives: it cheapens factor cost at the tier of deployment and, under specific conditions, raises the persistence of the substrate that deployment accumulates. This part extends the model with two AI-specific shocks per tier and derives three further propositions. The central question shifts from how much AI a firm adopts to where, across the organizational hierarchy, AI-generated output lands — because identical AI spend can produce opposite valuation consequences depending on the tier of penetration.
 

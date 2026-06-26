@@ -22,7 +22,6 @@ meta:
   - specification maturity
   - six-level cascade
   - experience contracts
-  - organizational schema theory
   - AI-assisted diagnostics
   abstract: 'This paper introduces the OrgSchema Audit, a structured diagnostic protocol that evaluates
     organizational specification maturity across six cascading levels: experience contracts, signal requirements,

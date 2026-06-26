@@ -34,7 +34,7 @@ The paper proceeds by first developing the operator framework and demonstrating 
 
 ```{.mermaid width=60%}
 flowchart LR
-  subgraph rank1["Rank-1 Audit (P_audit)"]
+  subgraph rank1["Rank-1 Audit"]
     direction LR
     A0[L0 customer experience] --> Pa[P_audit rank 1]
     A1[L1 signals] --> Pa
@@ -44,7 +44,7 @@ flowchart LR
     A5[L5 sourcing] --> Pa
     Pa --> Av[Compliant or Non-compliant]
   end
-  subgraph fullrank["Full-Rank Cascade (P_cascade)"]
+  subgraph fullrank["Full-Rank Cascade"]
     direction LR
     B0[L0 customer experience] --> P0[P_0]
     B1[L1 signals] --> P1[P_1]

@@ -387,9 +387,8 @@ The framework is bounded by its focus on founder-centric branded consumer busine
 
 **Figure 1.** The Tier-Rotation Curve — M&A Value Geometry.
 
-```mermaid
+```{.mermaid width=75%}
 quadrantChart
-    title Tier-Rotation Curve and Acquisition Value Geometry
     x-axis Low Tier-4 Share --> High Tier-4 Share
     y-axis Low Acquisition Value Ratio --> High Acquisition Value Ratio
     quadrant-1 Stage 3 to 4 Positive Premium
@@ -403,6 +402,19 @@ quadrantChart
 ```
 
 *Notes*: The horizontal axis represents Tier-4 share $s$ from 0 (pure Tier-1 personal substrate) to 1 (pure Tier-4 institutional substrate). The vertical axis represents the M&A value ratio $V(s)/V_0$ relative to standalone operating value $V_0$. The vertical and horizontal midlines mark the separability kink $\kappa$ (plotted at $s = .50$ for illustration; actual $\kappa$ is sector-specific) and divide the negative-optionality region (Stage 1 lower-left, Stage 2 lower-right: $V(s)/V_0 < 1$) from the positive-premium region (Stage 3 to 4 upper-right: $V(s)/V_0 > 1$). The upper-left quadrant ("No Region") is empty by construction: a brand cannot exhibit high acquisition value with low Tier-4 share. The four illustrative cases are plotted at approximate theoretical stage positions, not at empirically measured $s$ values. The slope of $V(s)$ is discontinuous at $\kappa$: the marginal value of an additional increment of Tier-4 share is substantially higher above $\kappa$ than below it. The quadrant chart is a schematic rendering of the $V(s)$ curve for expository purposes; the formal model specifies $h(s, \kappa, \sigma)$ as a piecewise continuous function with continuous level and discontinuous first derivative at $\kappa$. Sector substitutability $\sigma$ varies the steepness of $h(s)$ above $\kappa$ but not the qualitative non-monotonic geometry; for clarity, a single $\sigma$ level is depicted.
+
+## Acknowledgments
+
+AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+
+## CRediT contributions
+
+Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, visualization: Dmitry Zharnikov.
+
+## References
+
+::: {#refs}
+:::
 
 ## Appendix A: Mathematical Derivations
 
@@ -432,16 +444,3 @@ Therefore $h$ is continuous in level at $s = \kappa$. The left derivative is $\p
 $$\Delta(\partial h/\partial s) = \gamma \cdot g(\sigma)/(1 - \kappa) - \beta/\kappa$$
 
 For any $\sigma > 0$, $g(\sigma) > 0$ and the condition $\gamma \cdot g(\sigma)/(1 - \kappa) > \beta/\kappa$ holds whenever $\gamma \cdot g(\sigma) \cdot \kappa > \beta \cdot (1 - \kappa)$, which is satisfied for any credence-goods sector with $\sigma$ sufficiently large. The discontinuous first derivative — but continuous level — at $\kappa$ is the structural property that generates the non-monotonic geometry: value increases monotonically but at a strictly higher marginal rate above the kink than below it.
-
-## Acknowledgments
-
-AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
-
-## CRediT contributions
-
-Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, visualization: Dmitry Zharnikov.
-
-## References
-
-::: {#refs}
-:::
