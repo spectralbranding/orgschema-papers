@@ -320,7 +320,7 @@ Zharnikov [-@zharnikov-2026-spectral-metamerism-brand-perception-projection] for
 
 The specification impossibility result in Zharnikov [-@zharnikov-2026-specification-impossibility-organizational-design-high] adds a complementary methodological implication: in high-dimensional organizational specification spaces, exhaustive characterization of the metamerism set is geometrically intractable. Researchers should expect the empirically observable metamerism set to be a sample from a larger theoretical set, and should design studies accordingly — focusing on the theoretically predicted determinants of set size rather than on cataloguing equivalences.
 
-*Companion Computation Script*
+### Companion Computation Script
 
 The set-size function and observer-relativity predictions developed formally in Appendix A are implemented in a companion Python script published at https://github.com/spectralbranding/orgschema-papers/tree/main/org-as-metadata/code/. The script (`metamerism_set_simulation.py`) reproduces the directional predictions underlying Table 3 (set size as a function of codifiability and coordination cost) and the observer-relativity predictions of Appendix A. Run command: `uv run --with numpy,matplotlib python metamerism_set_simulation.py`. The script is self-contained, requires no proprietary data, and fixes the random seed at 42. Researchers extending the framework empirically should treat the simulated set sizes as illustrative ordinal predictions, not calibrated estimates; calibration requires empirical measurement of $c(P)$ and $\tau(P)$ per the operationalization guidance in the Propositions section.
 
@@ -349,6 +349,10 @@ Two theoretical extensions are proximate. Zharnikov [-@zharnikov-2026-dual-hiera
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script that reproduces the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+
+## Author Contributions (CRediT)
+
+Dmitry Zharnikov: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Project administration, Software, Validation, Writing — original draft, Writing — review and editing.
 
 ## References
 
