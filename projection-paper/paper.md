@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.19145205](https://doi.org/10.5281/zenodo.19145205)
 
 Working Paper v2.1.0 – March 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Most strategic reorganizations fail to deliver expected performance gains. We argue this reflects a deeper architectural fact: interventions at the org-chart surface ($T_6$) achieve effect-sizes geometrically smaller than interventions at deeper tiers, because each deeper tier carries content already compressed in transit to the surface. We formalize this as a six-tier *projection cascade* linking owner intent ($T_1$), business model ($T_2$), governance ($T_3$), architecture ($T_4$), routines ($T_5$), and positions ($T_6$). Each junction is a linear operator $\Pi_{i\to i+1}$ with rank deficiency $r_i \ge 0$. A unique cascade equilibrium exists under tier-by-tier Banach contractions (Theorem 1); total information loss is bounded by the sum of local nullities, with equality only when kernels stack independently (Corollary 1). Existing design theories — Galbraith's star, Williamson's governance choice, Mintzberg's configurations, Puranam's microstructure, Burton-Obel-Håkonsson's computational optimization — are recovered as nested restrictions. A formal *position triple* $p = (P_p, A_p, R_p)$ decomposes any $T_6$ position into perceptual content from $T_5$, authority from $T_3$, and role expectation from $T_1$. The apparatus yields four falsifiable propositions: P1 cascade-distance scaling of intervention efficacy, P2 strict downward propagation of basis rotation under AI deployment, P3 variance amplification with cumulative rank deficiency, and P4 algebraic decoupling at layer junctions.
@@ -147,7 +145,7 @@ flowchart TB
  T6 -.- PI
 ```
 
-*Figure 1: Six-Tier Projection Cascade.* Each tier $T_i$ is a finite-dimensional real vector space. Each junction $\Pi_{i\to i+1}$ is a linear surjection (in the generic case) onto the tier below. Each $A_{i+1\to i}$ is the lower-tier feedback operator. The composite $\Pi = \Pi_{5\to6} \circ \cdots \circ \Pi_{1\to2}: T_1 \to T_6$ is the cascade. $B_i$ denotes the bounded subset on which Theorem 1's contraction conditions hold.
+**Figure 1.** Six-Tier Projection Cascade. Each tier $T_i$ is a finite-dimensional real vector space. Each junction $\Pi_{i\to i+1}$ is a linear surjection (in the generic case) onto the tier below. Each $A_{i+1\to i}$ is the lower-tier feedback operator. The composite $\Pi = \Pi_{5\to6} \circ \cdots \circ \Pi_{1\to2}: T_1 \to T_6$ is the cascade. $B_i$ denotes the bounded subset on which Theorem 1's contraction conditions hold.
 
 *Notes*: The diagram captures only the static cascade as stipulated by scope condition (iv) of §3.4; longitudinal extensions in which $T_6$ enactment retroactively reshapes $T_1$ are out of scope for §3 and noted as future work.
 
@@ -334,9 +332,6 @@ A position is thus a *cascade-coordinate* object: each component is the image of
 
 The connection to v1 is direct. v1's central claim — that positions are projections of process — was correct at the $T_5 \to T_6$ junction (positions inherit perceptual content $P_p$ from $T_5$) but silent on the upstream tiers from which authority $A_p$ and role $R_p$ descend (Zharnikov [-@zharnikov-2026l-rendering-problem-genetic], §2.2). v2.0.0 unfolds the v1 single-step projection into the six-tier cascade and supplies the upstream channels. The function-position decoupling phenomenon under AI deployment that motivates the paper is then specifically a *basis rotation at $\Pi_{5\to6}$* that affects $P_p$ (the activities the position performs) without affecting $A_p$ or $R_p$ (the title's authority and meaning) — a phenomenon the cascade predicts and the v1 single-step apparatus did not separately resolve.
 
-
----
-
 ## §5. Predictions
 
 This section derives four falsifiable propositions from the cascade apparatus of §3-§4. Each proposition is an empirical implication of the formal structure — Theorem 1's parametric Banach contraction product, Corollary 1's nullity sub-additivity, the basis-rotation invariance of rank, and the scope conditions delimiting the population to which the cascade applies — that would be falsifiable in management-empirical work. Each proposition is paired with: (a) a formal statement, (b) a cascade-mechanism derivation in two to three sentences pointing back to the specific equation that licenses it, (c) a one-paragraph empirical-test sketch identifying data sources, identification strategy, and the form a refutation would take. The four predictions are deliberately distinct from each other in cascade content: P1 concerns the magnitude of cross-tier propagation; P2 concerns its directionality and its decomposition across the position triple; P3 concerns its variance under stochastic perturbation; P4 concerns its junction-by-junction algebraic structure.
@@ -393,8 +388,6 @@ The variance of $T_6$ outcomes therefore scales geometrically with the cascade-d
 *Notes*: Each proposition is derived from a specific equation of §3-§4, not stipulated separately. The cascade therefore carries empirical content beyond what any single-tier-pair frame supplies — equality of cascade-derived bounds is a falsifiable claim, not a definitional artifact. The empirical-test anchors listed above are public-data settings sufficient to operationalize the propositions; they do not require new primary data collection.
 
 The four propositions establish, jointly, that the cascade is not a tautological re-description of existing organizational-design theories but a structure with specific empirical content at each junction and across the cascade as a whole. P1 supplies a magnitude-rank-ordering claim no single-step framework predicts; P2 supplies a strict-directionality claim that distinguishes the cascade from feedback-loop alternatives; P3 supplies a variance-scaling claim that no single-junction analysis reproduces; P4 supplies an algebraic-regime classification that empirically distinguishes the cascade from existing decoupled-junction assumptions in the design-theory literature. Phase 2 of the present paper develops P2 in the empirical software-engineering setting; the remaining propositions are framed for follow-on empirical work, with the companion empirical paper supplying the public-data scaffolding and §7 the boundary-condition discussion.
-
----
 
 ## §7. Discussion
 
@@ -489,8 +482,6 @@ By condition (C_1'), the parametric family $\{F_1^{(x_1)}\}_{x_1 \in B_1}$ is jo
 *Junctions 2 through 5 (induction).* Assume by inductive hypothesis that the fixed-point map $x_1 \mapsto x_i^*(x_1)$ is well-defined and Lipschitz on $B_1$ with constant bounded by $\prod_{j=1}^{i-1} L_j / (1 - \kappa_j)$. The composition with the parametric junction-$i$ operator $F_i$, contractive on $B_{i+1}$ by (C_i) with rate $\kappa_i$ and Lipschitz in its parameter by (C_i') with constant $L_i$, yields by Granas-Dugundji [-@granas-2003-fixed-point-theory] Chapter II a fixed-point map $x_1 \mapsto x_{i+1}^*(x_1)$ that is well-defined on $B_1$ and Lipschitz with constant bounded by $\prod_{j=1}^{i} L_j / (1 - \kappa_j)$. The induction completes at $i = 5$.
 
 *Cascade equilibrium.* The trajectory $(x_1, x_2^*(x_1), x_3^*(x_1), x_4^*(x_1), x_5^*(x_1), x_6^*(x_1))$ is the unique cascade-equilibrium for the boundary input $x_1$, and the map $x_1 \mapsto (x_2^*, \ldots, x_6^*)$ is Lipschitz on $B_1$ with constant bounded by $\prod_{j=1}^{5} L_j / (1 - \kappa_j)$. □
-
----
 
 ## References
 

@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
 
 Working Paper v1.1.0 – May 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Why do two firms with identical revenues, margins, and aggregate investment generate exit multiples of 2× versus 9× — and why do identical AI investments produce divergent M&A multiples despite comparable short-run gains? This paper formalizes the cross-tier allocation problem using a vector w spanning operating tiers that differ in asset durability, with tier-specific decay rates δ_t ranging from .50/year at the organizational surface (advertising) to .05–.10/year at foundational layers. Long-run value is a discounted Cobb-Douglas aggregator incorporating Jorgensonian user costs $(\delta_t + r)$; optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule $w_t^*(r) = \alpha_t / (\delta_t + r)$ and the comparative static $\partial w_6^*/\partial r > 0$. Four allocation propositions link pre-deal surface-tier intensity, governance horizon, cost-of-capital shocks, and capability-rotation stage to M&A outcomes. The framework is then extended with two AI-specific shocks per tier — a cost shock $\gamma_t$ and a durability shock $\Delta_t$ — yielding the generalized rule $w_t^*(r; \gamma, \Delta) = \alpha_t / [\gamma_t \cdot (\delta_t^{\text{eff}} + r)]$ and three further propositions: surface-tier AI raises short-run earnings yet lowers long-run multiples; a discrete substrate-building threshold exists at Tier 4; and AI's net value effect flips sign with the principal's effective discount rate. Investment direction — not merely intensity — is the consequential strategic choice.
@@ -29,8 +27,6 @@ We formalize this cross-tier portfolio choice. Organizational tiers are defined 
 We introduce organizational tier as a new unit of analysis for resource allocation, supplying the missing architectural primitive that converts capability direction into a portfolio variable whose optimization depends on principal discount rates. The framework contributes to strategy by: (1) anchoring multi-asset decay heterogeneity to an architectural ontology — extending Dierickx and Cool [-@dierickx-1989-asset-stock-accumulation] from single-asset to multi-tier settings and grounding the empirical depreciation estimates of Belo, Lin, and Vitorino [-@belo-2014-brand-capital-firm] in organizational theory; (2) deriving four falsifiable propositions that link pre-deal Tier-6 intensity, governance horizon, cost-of-capital shocks, and rotation stage to M&A outcomes and capability persistence; and (3) providing the mechanism that reconciles Mizik and Jacobson's [-@mizik-2003-trading-off-between; -@mizik-2009-valuing-branded-businesses] empirical signature with Teece's [-@teece-2007-explicating-dynamic-capabilities] dynamic-capabilities framework — the $\delta_4 \ll \delta_6$ decay-rate differential makes brand-capital stock and advertising flow structurally non-fungible.
 
 The paper proceeds in two parts. Part I develops the base allocation theory. Theoretical foundations situate the contribution within capital allocation, marketing finance, and dynamic capabilities. The per-tier accumulation model is developed formally. A two-tier minimal illustration establishes the core comparative-static result with a back-of-envelope calibration. Cross-tier comparative statics and four propositions follow, and illustrative cases examine the theory's predictions. Part II extends the model to artificial intelligence, introducing two AI-specific shocks per tier — a cost shock γ_t and a durability shock Δ_t — that decompose AI's consequences into price and persistence channels; three further propositions (Propositions 5–7) follow, with a per-tier deployment phenomenology and an empirical-testing roadmap. The Discussion elaborates implications for each literature stream and for practice, including the AI-and-strategy literature; a validation roadmap is provided in the Appendix; mathematical derivations are collected in the Online Supplement.
-
----
 
 ## Theoretical Foundations
 
@@ -75,8 +71,6 @@ A central mechanism linking tier composition to post-acquisition outcomes is wha
 
 The Tier-Rotation Curve [@zharnikov-2026ai-tier-rotation-curve] addresses the temporal margin of tier composition: how the Tier-1/Tier-4 share evolves across multi-decade ownership horizons as founders externalize tacit brand knowledge into organizational substrates. The present paper addresses the spatial margin: in any given period, where should marginal investment be deployed across the five operating tiers? The two margins are analytically separable — the Tier-Rotation Curve takes w as exogenous; this paper endogenizes w and holds rotation stage fixed as a conditioning variable.
 
----
-
 ## The Per-Tier Accumulation Model
 
 ### Architectural Grounding: Why Tiers Are the Right Unit of Analysis
@@ -107,7 +101,7 @@ for δ_t > 0 and I(τ) = I constant. The steady-state derivation assumes constan
 
 The tier-specific decay rates are calibrated from empirical estimates in independent literatures. Table 1 presents the full calibrated δ_t vector with sources. Four key observations follow from the table.
 
-Table 1: Calibrated Tier-Specific Decay Rates (δ_t Vector).
+**Table 1.** Calibrated Tier-Specific Decay Rates (δ_t Vector).
 
 | Tier | Asset Type | δ_t (Decay Rate) | Half-Life | Source | Confidence |
 |------|-----------|------------------|-----------|--------|------------|
@@ -117,8 +111,6 @@ Table 1: Calibrated Tier-Specific Decay Rates (δ_t Vector).
 | Tiers 2/3 | Business-model architecture / entity position | .05–.10/year | ~7–14 years | Wiggins, Ruefli [-@wiggins-2002-sustained-competitive-advantage] Org Sci (persistence proxy; no direct δ estimate) | MEDIUM -- extrapolation |
 
 *Notes*: δ_t is the per-period decay rate (the fraction of stock that depreciates in one year); (1 − δ_t) is the survival fraction. Half-life computed as ln(.5) / ln(1 − δ_t). This convention matches Belo, Lin, and Vitorino [-@belo-2014-brand-capital-firm] verbatim: "We use a depreciation rate of δ = 50%… The monthly depreciation rate of brand capital is set at δ_n = 4.16% per month, which corresponds to an annual depreciation rate of 50%." Tier-2/3 estimates are extrapolated from competitive-advantage duration evidence [@wiggins-2002-sustained-competitive-advantage]; no direct calibrated depreciation rate exists for business-model architecture or entity-level assets, which constitutes a priority for the validation roadmap (Appendix).
-
----
 
 First, the Tier-6 parameter δ₆ = .50/year is confirmed directly from the Belo, Lin, and Vitorino [-@belo-2014-brand-capital-firm] paper: they set the depreciation rate at 50% annually (monthly δ = .0416), calibrated from a perpetual-inventory model applied to Compustat advertising expenditure (XAD). This is not an approximation; it is the paper's stated calibration value. Naik [-@naik-1999-estimating-halflife-advertisements] provides independent corroboration: pooling meta-estimates of advertising carry-over across product categories, he finds half-lives of advertising goodwill in the 4–6 month range, consistent with an annual decay rate of approximately 50%.
 
@@ -143,8 +135,6 @@ The term (δ_t + r) in the denominator of each factor is the Jorgensonian user c
 The per-tier output elasticities α_t represent the long-run value contribution per unit of effective tier-t stock, calibrated proportional to the M&A separability factors m_t (m_6 = .25; m₄₋₅ = 1.0; m₂₋₃ = .6), normalized to sum to 1. Rounding to two decimal places: α_6 = .12; α_4 = α_5 = .24; α_2 = α_3 = .20 (sum = 1.00). The calibration encodes the structural insight that tiers with higher M&A transferability contribute more elastically to long-run value per unit of effective stock; the observable investment share w_t*, however, depends jointly on α_t and the per-tier rental rate (δ_t + r) — tiers with high rental rates attract smaller observable investment shares even when their output elasticity is held fixed.
 
 The Cobb-Douglas structure has two consequences for the optimization. First, V_LR is strictly log-concave in w, so interior optima exist naturally — without any adjustment-cost augmentation. This eliminates the quadratic adjustment-cost term that the additive formulation required; the organizational-learning costs motivating that term are now captured implicitly by the diminishing marginal returns structure of the Cobb-Douglas. Second, $\partial^2 \ln(V_{LR})/\partial w_t^2 = -\alpha_t/w_t^2 < 0$: the log-concavity is strict, so the planner's optimum is uniquely interior for all r in the calibrated range. The over-allocation-to-Tier-6 result becomes a statement about the deviation of the observed w₆ from the planner's interior optimum, rather than a corner versus interior comparison. Online Supplement S1 provides the complete formal derivation of the interior optimum and the $\partial w_6^*/\partial r$ comparative static.
-
----
 
 ## Two-Tier Minimal Illustration
 
@@ -226,7 +216,7 @@ The back-of-envelope is explicitly stylized; it is not an econometric estimate. 
 
 The 1.93× result is derived under the Cobb-Douglas maintained specification (σ = 1). Table 2 summarizes the B/A ratio and V_LR levels under CES aggregation at σ ∈ {.5, 1.0, 1.5}, computed from the companion script at r = .15. The qualitative ordering — Profile B strictly dominates Profile A — holds across all three elasticity values. Under gross substitutes (σ = 1.5) the B/A ratio rises to 2.17×, moving closer to the empirical 4–6× range. Under gross complements (σ = .5, strong co-specialization), the B/A ratio attenuates to 1.22× but does not reverse. The maintained Cobb-Douglas (σ = 1) is therefore a conservative middle-ground choice. Under σ < 1, the two-tier optimizer tilts toward more symmetric interior solutions and the comparative static $\partial w_6^*/\partial r$ can reverse — an empirically interesting boundary case documented in full in Online Supplement S4.
 
-Table 2: CES Robustness Check — B/A Ratio at r = .15.
+**Table 2.** CES Robustness Check — B/A Ratio at r = .15.
 
 | σ | V_LR(A) | V_LR(B) | Ratio B/A |
 |---|---------|---------|---------|
@@ -241,8 +231,6 @@ Table 2: CES Robustness Check — B/A Ratio at r = .15.
 Figure 1 generalizes the three-profile comparison to the full two-dimensional allocation surface, plotting iso-V_LR contours over the (w_4, w_6) plane at r = .15, with the residual budget (1 − w_4 − w_6) held at the planner-optimal relative shares among tiers {2, 3, 5} (.353, .353, .294). The contour map makes three structural features visible that the discrete-profile comparison cannot. First, the high-V_LR ridge runs through the moderate-w_4 / low-w_6 region: allocations that concentrate Tier-4 investment while holding Tier-6 investment near zero receive the highest long-run value, consistent with Profile B's position near the ridge. Second, the iso-V_LR contours are steep in the high-w_6 / low-w_4 corner — the region where Profile A resides — indicating that additional allocation to Tier 6 imposes rapid welfare losses once the surface tier already absorbs a large budget share. The Cobb-Douglas log-concavity is pronounced in this corner because the Tier-6 factor $(m_6 \cdot w_6 / (\delta_6 + r))^{\alpha_6}$ is bounded by the low separability weight $m_6 = .25$ and the high rental rate $(\delta_6 + r) = .65$, so V_LR is insensitive to w_6 increases in the high-w_6 region while remaining highly sensitive near the planner's interior optimum. Third, the interior optimum $(w_4^*, w_6^*) \approx (.23, .05)$ — derived from the FOC $w_t^*(r) = \alpha_t / (\delta_t + r)$ and renormalized — sits well inside the feasible region and is clearly distinct from both stylized profiles. The .228 Tier-4 share and .053 Tier-6 share of the planner's optimum are substantially different from Profile A (.10, .70) and modestly different from Profile B (.325, .15), confirming that the 1.93× valuation gap between the two profiles reflects welfare losses from sub-optimal allocation in opposite directions from the ridge. The contour is reproducible from the companion computation script (`back_of_envelope.py`, function `generate_contour_plot()`).
 
 ![Figure 1: Long-run value V_LR(w; r) over the (w_4, w_6) plane at r = .15, holding (w_2, w_3, w_5) at their planner-optimal relative shares (.353, .353, .294) of the residual budget. Iso-V_LR contours show the welfare-loss surface near the high-w_6 corner (Profile A) and the value ridge in the moderate-w_4 / low-w_6 region. The interior optimum at (w_4*, w_6*) ≈ (.23, .05) is marked.](figures/tier_allocation_contour.png){width=70%}
-
----
 
 ## Cross-Tier Portfolio: Comparative Statics and Propositions
 
@@ -288,7 +276,7 @@ The marginal return to Tier-4 investment relative to Tier-6 investment — measu
 
 *Derivation.* The Tier-Rotation Curve [@zharnikov-2026ai-tier-rotation-curve] characterizes the temporal trajectory by which founder-bound brand signal migrates into organizational Tier-4 substrate. At early rotation stages (Stage 1: minimal Tier-4 codification), Tier-4 investment compounds onto a small existing base; the return to additional Tier-4 investment is limited by the organizational capacity to hold and deploy it. At later rotation stages (Stages 3–4: substantial Tier-4 codification established), Tier-4 investment compounds onto a developed substrate with established delivery systems, skilled teams, and codified processes that amplify the return to each additional unit. The marginal return to w₄ investment is stage-dependent under the Cobb-Douglas maintained specification: $\partial \ln(V_{LR})/\partial \ln(w_4) = \alpha_4$ scales as w₄ rises, and the multiplicative interaction with existing Tier-4 substrate ($S_4^*(\tau)$ at rotation stage $\tau$) generates super-additive returns by construction — the rotation-stage moderation is built into the Cobb-Douglas form rather than introduced as a separate extension. The empirical test is a deal-multiple regression with an interaction term: w₄ share × Rotation Stage indicator (Stage 1/2 versus Stage 3/4), where the interaction coefficient is predicted to be positive. The Rotation Stage can be proxied by the trademark-composition measure developed in Zharnikov [-@zharnikov-2026ai-tier-rotation-curve]: the ratio of product-attribute marks to founder-name marks in the USPTO filing history of the target firm.
 
-Table 3: Comparative Statics Summary Across Propositions P1–P4.
+**Table 3.** Comparative Statics Summary Across Propositions P1–P4.
 
 | Proposition | Predicted Direction | Key Variable | Comparison | Empirical Test |
 |------------|-------------------|--------------|------------|----------------|
@@ -299,13 +287,11 @@ Table 3: Comparative Statics Summary Across Propositions P1–P4.
 
 *Notes*: All propositions are derived from the comparative statics of $V_{LR}(w; r) = A \cdot I \cdot \prod_t [m_t \cdot w_t / (\delta_t + r)]^{\alpha_t}$ (Equation 3) under the Jorgensonian user-cost-of-capital budget constraint $\sum_t (\delta_t + r) \cdot w_t = 1$. The w₆ share is operationalized as XAD / (XAD + R&D + CAPEX + org-capital SG&A component) in Compustat. Tier-Rotation Stage is proxied by the trademark-composition measure from Zharnikov [-@zharnikov-2026ai-tier-rotation-curve]. DiD = difference-in-differences; ZLB = zero lower bound (2009–2015).
 
----
-
 ## Illustrative Cases
 
 Four cases span the tier-allocation portfolio space from extreme Tier-6 concentration to extreme Tier-4/Tier-5 concentration. These cases illustrate the theory's internal logic; they do not constitute statistical tests. Table 4 presents the four cases in summary form.
 
-Table 4: Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.
+**Table 4.** Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.
 
 | Case | Tier Profile | Governance | Discount Rate | Predicted V_LR Multiple | P1 Risk | Key Illustrative Outcome |
 |------|-------------|-----------|---------------|--------------------------|---------|--------------------------|
@@ -316,8 +302,6 @@ Table 4: Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.
 
 *Notes*: V_LR Multiple is estimated from the back-of-envelope calibration in the "Two-Tier Minimal Illustration" section using r = .15 and stylized w profiles. Casper Sleep advertising-to-revenue ratios estimated from pre-IPO S-1 filings; Hermès advertising intensity from annual reports. The 3G Kraft Heinz goodwill impairment is illustrative of P1 operating post-acquisition (Tier-6 compression accelerating brand-capital decay); the P1 test is pre-deal, not post-acquisition. These cases illustrate the theory's internal logic; they do not constitute statistical tests.
 
----
-
 *Casper Sleep (stylized).* Casper's pre-IPO advertising-to-revenue ratios consistently exceeded 30% — a w₆ share that dwarfed CPG sector medians. Tier-4 substrate was thin relative to advertising investment; Tier-5 logistics were largely outsourced. The February 2021 IPO priced at ~.5× revenues, consistent with Profile A in the back-of-envelope calibration. Subsequent acquisition at a discount to IPO price illustrates P1: the advertising-funded revenue could not sustain deal-price multiples once an acquirer discounted for the flow-dependent character of the revenue base.
 
 *Roper Technologies (stylized).* Roper's model is characterized by high w₄/w₅ allocation — proprietary software specifications, calibration standards, and regulatory certifications that transfer cleanly across ownership changes — and negligible Tier-6 advertising. Enterprise-value-to-revenue multiples have consistently exceeded 8–10× from 2015–2025, consistent with Profile B. The case also illustrates P4: Roper selects acquisition targets at advanced rotation stages where the Tier-4 substrate is fully codified, maximizing the marginal return to further Tier-4 investment over the holding period.
@@ -325,8 +309,6 @@ Table 4: Illustrative Cases — Firm Profiles and Tier-Allocation Predictions.
 *3G Capital-style PE portfolio (stylized).* 3G's zero-based-budgeting approach systematically compressed Tier-6 advertising post-acquisition (Burger King, Heinz, Kraft, AB InBev), generating short-run earnings improvement while degrading Tier-4 brand-capital stocks over 3–7 years. The model predicts that optimal post-acquisition Tier-6 compression is larger for short-hold, high-hurdle-rate principals under P2, and that the Tier-4 decay that follows creates impairment risk for the secondary buyer. The Kraft Heinz $15.4 billion goodwill impairment in 2019 is directionally consistent: the goodwill booked at deal close reflected the target's pre-deal operational profile, which diverged structurally from the post-deal model.
 
 *Hermès International.* Hermès's advertising-to-revenue ratio (~5–7%) is among the lowest in luxury, while its Tier-4 investment — artisan training, production process codification, trademark portfolio, and brand specification documentation — is among the highest as a share of total investment. Family control (~66% equity) extends the effective discount rate across generations. Enterprise-value-to-revenue has persistently exceeded 15×, more than twice the multiple of sector peers with higher advertising intensity. The case illustrates P2: long-horizon-principal governance produces a low-w₆/high-w₄ portfolio and materially higher long-run value.
-
----
 
 # Part II: AI Tier Penetration
 
@@ -346,7 +328,7 @@ The contemporary AI-and-strategy literature supplies the constructs the extensio
 
 This section traces AI deployment across the six tiers, descending from Tier 6 (where deployment density is highest in the post-2023 frontier) to Tier 1 (where hard ceilings apply). For each tier the discussion identifies the concrete deployment forms observed in the 2023-2026 frontier window, the substrate-accumulation mechanism, the per-tier (γ_t, Δ_t) shock pattern the model assigns, and the strategic implication for long-run firm value. The treatment is illustrative rather than statistical: four boundary-object cases (Klarna's customer-service deployment; Spotify's recommendation system; Bloomberg's terminal-corpus large language model; Stripe's Radar fraud-decisioning system) anchor the discussion as theory-consistent illustrations, not empirical tests. Table 5 summarizes the four cases against the per-tier (γ_t, Δ_t) shock pattern and the M&A-multiple implication the framework assigns.
 
-*Table 5: Boundary Objects × Tier of Landing × Shock Pattern × M&A-Multiple Implication.*
+**Table 5.** Boundary Objects × Tier of Landing × Shock Pattern × M&A-Multiple Implication.
 
 | Boundary object | Primary tier of landing | γ_t pattern | Δ_t pattern | M&A-multiple implication |
 |---|---|---|---|---|
@@ -483,7 +465,7 @@ The diagnostic indicator is a sign flip in the long-run-value effect of AI betwe
 
 Aggregate enterprise-survey evidence is consistent with Proposition 7. Gartner [-@gartner-2026-gartner-says-autonomous-business] surveyed 350 global enterprises with at least $1 billion in revenue, all of which were piloting or deploying autonomous AI capabilities. Eighty percent reported workforce reductions tied to AI initiatives. Critically, the workforce-reduction rate was nearly identical for firms reporting higher ROI versus those experiencing only modest gains or negative outcomes — i.e., the magnitude of workforce reduction had no measurable correlation with ROI realization. Some respondents had cut up to 20% of headcount. The Klarna and BloombergGPT cases are not isolated anomalies; they are predictable consequences of treating tier-6 cost reduction as a substitute for cascade-deeper substrate investment. As Gartner Distinguished VP Analyst Helen Poitevin stated: "Many CEOs turn to layoffs to demonstrate quick AI returns; however, this disposition is misplaced. Workforce reductions may create budget room, but they do not create return."
 
-Table 6: Three AI Propositions with Mechanisms and Diagnostic Indicators.
+**Table 6.** Three AI Propositions with Mechanisms and Diagnostic Indicators.
 
 | Proposition | Shock pattern | Sign condition | Diagnostic indicator | Illustrative anchor |
 |---|---|---|---|---|
@@ -506,8 +488,6 @@ The methodological precedent is Hassan, Hollander, van Lent, and Tahoun [-@hassa
 Three first-order challenges apply. First, selection on unobservables: firms ready for Tier-4 deployment in 2022 had superior pre-existing data infrastructure correlated with subsequent outcomes through non-AI channels. Diagnostic mitigations include pre-trends testing, firm fixed effects, and entropy-balancing on size, intangible intensity, and prior R&D spend; where the disclosure that generates the coded sample is itself selective, a Heckman [-@heckman-1979-sample-selection-bias] selection correction is the standard remedy. Second, parallel-trends: GPT-3 → GPT-4 → GPT-5 capability-frontier shocks correlate with broader tech-sector time trends. Mitigations include sector-by-time fixed effects, placebo DiD on capital-light service sectors [@callaway-2021-differenceindifferences-with-multiple; @de-2020-twoway-fixed-effects], and Oster [-@oster-2019-unobservable-selection-coefficient] coefficient-stability bounds. Third, founder-horizon endogeneity: founder-CEO status is itself an outcome of past performance, so horizon proxies are endogenous to the firm-value outcomes Proposition 7 attempts to explain. The Bennedsen, Nielsen, Pérez-González, and Wolfenzon [-@bennedsen-2007-inside-family-firm] gender-of-first-born instrument provides partial relief, though its first-stage strength has weakened in the post-2010 governance environment.
 
 A fourth concern is the separability of γ_t and Δ_t in disclosure data. A 10-K passage describing "a proprietary fine-tune that has reduced our customer-service operating cost while building a defensible asset" may reflect γ_5 reduction, Δ_5 increase, or both, and clean separate identification may be infeasible with public data. The framework explicitly acknowledges this constraint: empirical implementation may reduce to joint identification of (γ_t, Δ_t) at the tier level. Joint identification is sufficient for Propositions 5 and 6 but not for the Δ_t-specific channel of Proposition 7. Full identification threats and proposed mitigations are developed in Online Supplement S4.
-
----
 
 ## Discussion
 
@@ -541,7 +521,7 @@ Four practical implications follow directly. Firms approaching exit should audit
 
 The AI extension's contribution is not to displace the existing AI-and-strategy literature but to add a per-tier deployment-depth aggregation that the leading specifications operate orthogonally to. Aggregate-AI-spend specifications [@babina-2024-artificial-intelligence-firm] treat AI investment as a homogeneous firm-level shock. Task-displacement specifications [@acemoglu-2018-race-between-man; @acemoglu-2020-robots-jobs-evidence] decompose AI's labor-market effect at the task level within occupations. Capability-complementarity specifications [@krakowski-2023-artificial-intelligence-changing] operate at the capability level — but capabilities live across architectural tiers, and the same capability deployed at different tiers has different durability consequences. Cognitive-process taxonomies [@doshi-2025-generative-artificial-intelligence] classify generative-AI-augmented strategic decisions into search, representation, and aggregation sub-processes; the taxonomy operates at the decision-evaluation micro-foundation level, while the tier framework operates at the architectural-substrate level. Table 7 makes the contrast explicit.
 
-Table 7: Tier-Penetration Framework vs. Existing AI-and-Strategy Literatures.
+**Table 7.** Tier-Penetration Framework vs. Existing AI-and-Strategy Literatures.
 
 | Prediction or property | Tier-Penetration | Complementary-intangibles | Aggregate-AI-spend | Cognitive-process | Task-displacement |
 |---|---|---|---|---|---|
@@ -573,8 +553,6 @@ Three additional comparative statics follow from the generalized share rule but 
 
 The framework explicitly acknowledges that clean separate identification of γ_t and Δ_t with public data may be infeasible. The inventory of which propositions survive joint rather than separate identification: Proposition 5 SURVIVES — only γ_6 < 1 is needed. Proposition 6 SURVIVES with weakened sharpness — the discontinuity remains testable but is then a joint shift in the (γ_4, Δ_4) vector at the threshold. Proposition 7 PARTIAL — the sign of the long-run effect remains testable because the founder-horizon channel operates through r rather than through γ or Δ separately, but the magnitude attribution to γ versus Δ does not. Propositions 5 and 6 are joint-identification-robust; Proposition 7 survives in sign under joint identification.
 
----
-
 ## Limitations and Scope Conditions
 
 Three assumptions bound the model's applicability.
@@ -591,15 +569,11 @@ Three assumptions bound the model's applicability.
 
 The AI propositions (P5–P7) inherit the base scope conditions and add four AI-specific axes — sector, firm size, time, and capability frontier — with the founder-horizon discount rate r as the operative conditioning variable. On sector, three configurations fit less cleanly. Pure software and digital-native platforms collapse Tier-5 process and Tier-6 surface into a single platform-engineering function; for such firms AI deployment is often inherently Tier 4 or Tier 2, and the surface-tier paradox does not arise in the predicted form. Pure financial-services firms face a regulatory architecture that tightly couples Tier 3 and Tier 4. Single-product, single-tier firms reduce to the textbook IT-capital result. On firm size, deep-tier AI deployment requires resource commitments small firms typically cannot afford — proprietary fine-tunes on owned data, owned-weights deployment, and data-flywheel architecture sufficient to drive Δ_2 toward δ_2 all impose minimum-viable-asset thresholds, so the full prediction set applies primarily to S&P 1500-scale firms, while for smaller firms the predictions concentrate on Stages 1 and 2. On time and capability frontier, the persistence parameters δ_t are calibrated from 1986–2026 panel data and the AI shock parameters γ_t and Δ_t for the 2023–2026 deployment window; the directional predictions are robust to recalibration because they depend on sign conditions — sign(δ_6 − δ_S) and sign(Δ_t) — rather than on point estimates. Finally, predictions are sharper for low-r principals (founder-CEO control, family-firm governance) because the substrate-accumulating tiers carry larger optimal allocation shares, so deviations produce larger M&A-multiple effects, and weaker for high-r principals whose planner-optimal Tier-6 share is already large.
 
----
-
 Empirical validation priorities — operationalizing the w vector from Compustat/USPTO data, testing P1–P4 with Cox hazard, matched-firm OLS, ZLB difference-in-differences, and deal-multiple regressions, and partitioning by the Hadlock and Pierce [-@hadlock-2010-new-evidence-measuring] SA index — are detailed in the Appendix.
 
 *Companion Computation Scripts*
 
 Every computed numerical value reported in Part I — Profile A/B/C V_LR multipliers in the "Two-Tier Minimal Illustration" section including Table 2 (CES robustness), Figure 1 contour data, and the optimal dollar-weighted investment shares — is reproducible from a deterministic Python script published alongside the paper. Full sensitivity tables (r-sensitivity, alternative α_t calibrations, and CES derivation) are in the Online Supplement and equally reproducible. The script implements Equations 1–3 directly under the discounted-Cobb-Douglas maintained specification $V_{LR}(w; r) = A \cdot I \cdot \prod_t [m_t \cdot w_t / (\delta_t + r)]^{\alpha_t}$ with Jorgensonian user-cost-of-capital budget constraint $\sum_t (\delta_t + r) \cdot w_t = 1$, hard-codes the calibrated parameters from Table 1 (decay rates δ_t, separability factors m_t, output elasticities α_t) and the Profile A/B/C w-vectors, and prints all reported values with no external data dependencies. The function `optimal_dollar_share(r)` computes the planner's optimal dollar-weighted investment shares from the FOC w_t*(r) = α_t/(δ_t + r), demonstrating the comparative static dollar-share_6*(r=.10) = .046 < dollar-share_6*(r=.15) = .053 < dollar-share_6*(r=.20) = .058. The function `reproduce_appendix_a4_ces()` implements the CES aggregator and confirms $\partial w_6^*/\partial r$ > 0 under σ = 1.5 numerically via scipy.optimize. The function `generate_contour_plot()` generates Figure 1 (requires matplotlib and numpy). The script is published at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py and runs as `uv run python back_of_envelope.py` (Python 3.10+; requires numpy, matplotlib, scipy for Figure 1 and Online Supplement S4). Figure 1 PNG and the contour-generation function `generate_contour_plot()` are published at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/figures/tier_allocation_contour.png and https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py respectively. Every numerical value in Part II that is not directly traceable to an external published source is reproducible from a second deterministic script, `tier_penetration_simulation.py` (run command: `uv run python tier_penetration_simulation.py`; fixed seed `numpy.random.seed(42)`; no external data dependencies), which implements the AI-extended optimal-share solver, the CES robustness check across σ ∈ {.5, 1.0, 1.5}, and the comparative-statics verification for Propositions 5-7; it is published at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/tier_penetration_simulation.py with its full function inventory and parameter table in Online Supplement S5.
-
----
 
 ## Conclusion
 
@@ -611,11 +585,7 @@ Part II carries this architecture into the AI era. By embedding per-tier cost an
 
 Future strategy research can treat organizational tier as a new unit of analysis alongside business unit, capability, and resource. The framework predicts which firms survive ownership transitions and why patient capital creates architectural advantage — questions the existing literature has answered descriptively but not yet resolved mechanistically. In the AI era the operative question becomes not how much AI a firm adopts, but where it lands.
 
----
-
 **Online Supplement.** For Part I, mathematical derivations (Lagrangian setup, FOC, sign of $\partial w_6^*/\partial r$), sensitivity analysis to r, alternative α_t calibrations, and the CES robustness check at σ ∈ {.5, 1.0, 1.5} are reported in the Online Supplement available as a separate file in the paper's Zenodo record at https://doi.org/10.5281/zenodo.20072288. For Part II, the Online Supplement additionally contains S1 (Lagrangian setup, first-order conditions, and signs of comparative statics for the AI-extended share rule — formal proofs of Propositions 5-7, including S1.1 and S1.2), S2 (CES robustness for the AI-extended share rule at σ ∈ {.5, 1.0, 1.5}), S3 (sensitivity to alternative α_t calibrations across the m_t-proportional baseline, conservative-uniform, and concentrated-stock scenarios), S4 (the full threats-to-identification discussion with five threats — selection on unobservables, parallel-trends violation, founder-horizon endogeneity, measurement error in the tier-depth disclosure measure, and attrition due to acquisition during the panel — including instrument specifications and dictionary exemplars), and S5 (the companion-script docstring, run command, function inventory, and parameter table for `tier_penetration_simulation.py`). The companion computation scripts (`back_of_envelope.py` and `tier_penetration_simulation.py`) reproduce all values.
-
----
 
 ## Acknowledgments
 
@@ -624,8 +594,6 @@ AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial
 ## CRediT contributions
 
 Zharnikov, Dmitry: Conceptualization; Methodology; Formal analysis; Writing -- original draft; Writing -- review and editing.
-
----
 
 ## References
 

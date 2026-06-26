@@ -21,7 +21,6 @@ paper_key: "2026m"
 title: >-
   The Projection Cascade: Why Reorganizations Fail When the Specification
   Cascade Doesn't
-target_venue_primary: "AMR / SMJ (ScholarOne submission queued)"
 status: >-
   Retrofit spine extracted from completed paper.md (v2.0.0, published to Zenodo
   2026-05-09, concept DOI 10.5281/zenodo.19145205). Descriptive, not generative.
@@ -585,7 +584,7 @@ external_anchors:
   - {citation_key: bloom-2019-management-practices, role: empirical_anchor, spine_nodes: [P11], note: "Cross-firm management-practice variance — antecedent to P3"}
   - {citation_key: ethiraj-2008-dual-role-modularity, role: empirical_anchor, spine_nodes: [P12], note: "Dark-side-of-modularity kernel absorption — consistent with P4 strict inequality"}
   - {citation_key: hrebiniak-2006-obstacles-strategy-implementation, role: rival_located, spine_nodes: [A2, P4], note: "Execution-and-coordination view located at r_5 / part of r_3, not displaced"}
-  - {citation_key: wigner-1960-unreasonable-effectiveness, role: meta_anchor, spine_nodes: [], note: "Unreasonable-effectiveness meta-question (§7); not load-bearing for any proposition"}
+  - {citation_key: wigner-1960-unreasonable-effectiveness, role: meta_anchor, spine_nodes: [], note: "Unreasonable-effectiveness meta-question (§7); not essential for any proposition"}
 
 # ============================================================================
 # Open questions / boundary edges

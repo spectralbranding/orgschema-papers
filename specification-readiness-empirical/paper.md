@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.20384084](https://doi.org/10.5281/zenodo.20384084)
 
 Working Paper v1.1.0 – May 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 This paper introduces *specification readiness* — the degree to which a firm's commitments are codified in versioned, machine-readable, queryable form — as a new strategic construct and supplies a scalable archival operationalization. Drawing on an information-theoretic model of multi-interface architecture [@zharnikov-2026am-specification-readiness-friction], the construct is argued to substitute query-based alignment for costly interface-maintenance functions, reducing a structural friction tax, accelerating brand-capital accumulation, lowering cross-stakeholder valuation dispersion, and raising returns to artificial-intelligence deployment. The primary measure is a continuous Specification Coherence Index built from year-over-year cosine similarity of 10-K narrative embeddings; a four-event sharp index supplies robustness. Five hypotheses (H1–H5) link the construct to these outcomes for US public firms 2010–2025, identified by within-firm continuous treatment, staggered difference-in-differences [@callaway-2021-differenceindifferences-with-multiple; @goodmanbacon-2021-differenceindifferences-with-variation], regulatory-compliance instruments, and advertising-cessation event studies, with Oster [-@oster-2019-unobservable-selection-coefficient] bounds. Pre-registered Monte Carlo mechanism tests (12.96 million trials; $\alpha^* = .91$; Cohen's d = 88.4) confirm the friction-tax phase shift. Three contributions follow: a first scalable archival measure of specification readiness, a reusable identification template pairing continuous textual treatment with sharp codification events, and formal evidence that specification readiness moderates the AI augmentation paradox.
@@ -30,9 +28,7 @@ These contributions speak to three literatures. Organizational-design scholars h
 
 The remainder proceeds as follows. The Theoretical Framework section restates the constructs operationalized from Zharnikov [-@zharnikov-2026am-specification-readiness-friction], develops the empirical reading of specification readiness, and specifies the boundary table. The Hypotheses section states H1–H5 with directional predictions and pre-registered economic magnitudes. The Data and Measurement section specifies sample construction, the continuous-SCI primary measure, the four-event sharp robustness index, and the dependent-variable proxies. The Identification Strategy section develops the continuous-treatment regression design, the staggered-DiD design with Callaway-Sant'Anna and Goodman-Bacon, the instrumental-variable supplement, the threats register with Oster bounds, and the robustness battery. The Mechanism Tests section reports the Monte Carlo phase-shift confirmation and the regression-identification simulation power. The Discussion section develops implications for strategy research, the contribution to friction-tax measurement, and boundary conditions. The Conclusion synthesizes the three contributions and flags the archival empirical execution — in progress as Paper B v2.0 — as the next deliverable.
 
----
-
-## **Theoretical Framework**
+## Theoretical Framework
 
 ***Specification readiness as an empirical construct***
 
@@ -58,7 +54,7 @@ Three interface domains supply the principal empirical traction. The consumer in
 
 The theory and its empirical operationalization both have well-defined scope. The empirical design developed here is targeted at the population for which the theory makes determinate predictions and is explicit about the populations for which the predictions are silent or reverse. Table 1 specifies six boundary conditions, each with the operational restriction it places on the empirical sample.
 
-Table 1: Boundary Conditions for the Multi-Interface Specification Model.
+**Table 1.** Boundary Conditions for the Multi-Interface Specification Model.
 
 | Boundary condition | Operational restriction | Implication for sample | Falsification status |
 |---|---|---|---|
@@ -73,9 +69,7 @@ Table 1: Boundary Conditions for the Multi-Interface Specification Model.
 
 The boundary table makes explicit a feature of the empirical design that deserves emphasis. The pure-API firm is the location where the multi-interface architecture collapses to a degenerate single-interface case; in this population, the theory predicts that specification codification investment will have no detectable effect on functional friction because there is no function layer to convert. If the empirical design finds the predicted negative association between SCI and functional intensity in the boundary-respecting sample but does not find it in the pure-API subsample, this is consistent with the theory rather than against it. If the predicted association fails to appear in the boundary-respecting sample, the theory is falsified at the primary specification. The boundary conditions thus partition the empirical universe into populations where the theory makes determinate predictions, populations where the theory is silent, and a single population where the theory's failure is interpretable as a falsification.
 
----
-
-## **Hypotheses**
+## Hypotheses
 
 The five hypotheses below operationalize propositions P1–P5 from Zharnikov [-@zharnikov-2026am-specification-readiness-friction] as directional empirical predictions. Each hypothesis is stated as a falsifiable claim with a primary proxy, a predicted economic magnitude, and the pre-registered effect size in standardized units. Full operationalization, identification, and threats are developed in the Data and Measurement and Identification Strategy sections.
 
@@ -101,9 +95,7 @@ High-push-intensity firms (top quintile of three-year-average XAD/SALE within Fa
 
 The five hypotheses jointly operationalize the theory's central architectural claim. H1 tests whether codification reduces interface-maintenance intensity. H2 tests whether codification redirects marketing spend from interface-coherence-maintenance to brand-capital accumulation. H3 tests whether incoherence in the substrate propagates to cross-stakeholder valuation. H4 tests whether substrate readiness moderates the return on AI augmentation. H5 tests whether push-dependent firms collapse faster than pull-capable firms when force is withdrawn. The joint failure of all five would falsify the theory at the primary specification; the failure of any one identifies a scope or measurement boundary requiring theoretical refinement.
 
----
-
-## **Data and Measurement**
+## Data and Measurement
 
 ***Sample construction***
 
@@ -137,9 +129,7 @@ H3's dependent variable is the geometric mean of three normalized within-firm-ye
 
 H4's treatment is the year of first major AI deployment, dated using two complementary sources. The primary source is Babina, Fedyk, He, and Hodson [-@babina-2024-artificial-intelligence-firm], whose Burning Glass / Lightcast AI-hiring panel identifies firm-year AI-related job-posting counts and intensity. The secondary source is the Alekseeva, Azar, Giné, and Samila [-@alekseeva-2026-artificial-intelligence-adoption] AI-adoption indicator, which provides cross-firm validation. AI deployment is dated as the first year in which AI-related postings exceed two percent of total postings, conditional on at least ten total postings in that year. AI-related spending is constructed from a combination of (a) AI-related job postings × industry-mean fully-loaded AI-engineer compensation, (b) explicit AI-related expenditures disclosed in 10-K Item 7 MD&A sections (extracted via keyword search and manual validation), and (c) hardware-and-cloud expenditures attributable to AI inferred from CapEx growth in cloud-services line items where firm segment disclosures permit. The AI-ROI proxy is the change in interface-maintaining functional headcount in [t+1, t+2] divided by AI-related spending in the same window — operationally, the inverse of the marginal labor displacement per dollar of AI investment.
 
----
-
-## **Identification Strategy**
+## Identification Strategy
 
 ***Continuous 10-K coherence as primary treatment***
 
@@ -169,7 +159,7 @@ The instrumental-variable supplement addresses the principal threat to the conti
 
 Table 2 presents the threats register. Each threat is named, classified by identification arm affected, and matched to a mitigation. The Oster [-@oster-2019-unobservable-selection-coefficient] $\delta$-bound analysis reports the magnitude of omitted variable bias that would be required to overturn the estimated effect, treating the change in estimated coefficient between an unconstrained and a controls-included specification as a signal of the bias-magnitude required to drive the controls-included coefficient to zero. Effects survive Oster bounds at $\delta = 1$ (the convention that unobservables are no more correlated with treatment than the included observables) are considered robust; effects requiring $\delta > 1$ to be overturned are reported as conditional on the unobservables assumption.
 
-Table 2: Threats Register with Mitigation Strategy.
+**Table 2.** Threats Register with Mitigation Strategy.
 
 | Threat | Identification arm affected | Mitigation | Reportable diagnostic |
 |---|---|---|---|
@@ -194,9 +184,7 @@ The four-event sharp SCI moves to the robustness arm. Each sharp-SCI component i
 
 Five additional robustness checks are pre-registered. First, the brand-capital depreciation rate is varied across $\delta_6 \in \{.30, .50, .70\}$ following Peters and Taylor [-@peters-2017-intangible-capital-investmentq]. Second, alternative NLP embeddings (Loughran-McDonald dictionary cosine versus BERT-base-uncased) are reported in parallel for all coherence measurements. Third, a tech-firm subsample exclusion (NAICS 5112, 5182, 5191, 5415) tests sensitivity to selection on technical sophistication. Fourth, the analysis is restricted to single-brand-dominant firms for H3 and H4 to address the brand-FE confound. Fifth, a placebo treatment using a randomly-assigned coherence shift date is reported for the staggered-DiD specifications to confirm the absence of mechanical event-time clustering effects.
 
----
-
-## **Mechanism Tests**
+## Mechanism Tests
 
 This section reports two formal mechanism tests of the theoretical model: a Monte Carlo simulation that operationalizes the friction-tax phase-shift prediction across a pre-specified parameter grid, and a regression-identification simulation that establishes the design's statistical power at the pre-registered effect sizes under $H_1$ and nominal Type I error coverage under $H_0$. Both tests were generated by the companion code repository at fixed seed 20260525 under the pre-registration anchored in the Methods Appendix. The Monte Carlo confirms that the theoretical mechanism is internally consistent across the relevant parameter range; the regression-identification simulation confirms that the multi-arm identification template developed in the preceding section can detect the predicted effects at the analysis-window sample size. Archival panel estimates implementing the design are in execution as a companion empirical paper.
 
@@ -214,7 +202,7 @@ The regression-identification simulation generates 1,000 simulated datasets per 
 
 Power under $H_1$ at the pre-registered effect sizes is reported in Table 3.
 
-Table 3: Pre-Registered Regression-Identification Simulation Power.
+**Table 3.** Pre-Registered Regression-Identification Simulation Power.
 
 | Hypothesis | Pre-registered effect | Pre-registered Cohen's d | Simulated power | Mean estimate | Correct-sign fraction |
 |---|---|---|---|---|---|
@@ -232,9 +220,7 @@ One post-hoc deviation from the pre-registration is documented. The $H_0$ simula
 
 A note on interpretation. The simulation results reported above confirm that the design has sufficient statistical power to detect the pre-registered effects at the analysis-window sample size, under the panel data-generating process calibrated to observed Compustat within-firm variation. They do not constitute archival evidence about the truth of the hypotheses in real firms. The mechanism tests establish a necessary condition for credible inference — the design can detect the pre-registered effects if they are present — that pre-registration of point estimates alone does not enforce; the companion empirical paper implementing the design will establish whether the effects are present at all. The separation of these two questions — can the design detect the effects, and are the effects there — is a discipline that pre-registered mechanism testing makes routine.
 
----
-
-## **Discussion**
+## Discussion
 
 ***Theoretical contributions***
 
@@ -268,33 +254,23 @@ A final limitation worth flagging is the absence of direct measurement of percep
 
 Real archival panel analyses implementing the design specified here are in execution as a companion empirical paper. That paper will report first-stage F-statistics on the regulatory-compliance instruments, Oster $\delta$-bounds on the continuous-treatment specifications, Callaway-Sant'Anna event-study estimates for the four sharp codification events, and the realized effect sizes for H1–H5 on the Compustat / EDGAR / Glassdoor / Burning Glass panel. Cross-country extension to UK, EU, and Japan disclosure regimes will require institutional translation of the sharp four-event SCI components and independent validation of the within-firm year-over-year coherence signal across regulatory contexts. The experimental complement that would directly measure perception-weight vectors $\mathbf{w}_i$ via conjoint analysis is a parallel research stream rather than a successor.
 
----
-
-## **Conclusion**
+## Conclusion
 
 This paper introduces specification readiness as a measurable, strategically consequential architectural property of the firm. The continuous Specification Coherence Index — within-firm year-over-year cosine similarity of 10-K narrative embeddings — is the first scalable archival measure of substrate codification, observable across the Compustat universe of US public firms and conceptually prior to organization capital, brand capital, and disclosure-readability constructs. The four-event sharp SCI supplies the discrete robustness arm. Five hypotheses link the construct to functional friction, brand-capital accumulation, cross-stakeholder valuation dispersion, AI deployment returns, and the valuation consequence of advertising-spend cessation; each is stated with directional prediction, pre-registered economic magnitude, and falsification rule. The multi-arm identification strategy pairs continuous-treatment within-firm regression with staggered difference-in-differences (Callaway-Sant'Anna; Goodman-Bacon decomposition), regulatory-compliance instruments, and event-study analysis, anchored by an explicit threats register and Oster [-@oster-2019-unobservable-selection-coefficient] bound diagnostics.
 
 Three contributions follow. The first is the SCI construct — a new strategic variable that prior literature has treated as theoretical but not measured. The second is the multi-arm identification template — a reusable toolkit pairing continuous textual treatment with sharp codification events, designed for extension to governance, process, and knowledge-management codification research. The third is the formal mechanism-test evidence — Monte Carlo simulation (12.96 million trials; $\alpha^* = .91$; Cohen's d = 88.4) confirming the friction-tax phase shift, and regression-identification simulation confirming statistical power $\ge .80$ for all five hypotheses at the pre-registered effect sizes — that substrate readiness moderates the augmentation paradox in a manner consistent with the multi-interface model. The architectural prediction at the center of the theory — that returns to specification codification dominate returns to functional capacity under AI-mediated consumption — is now empirically testable, and the test is in execution.
 
----
-
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility. The companion code repository carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
-
----
 
 ## Author Contributions (CRediT)
 
 Dmitry Zharnikov: Conceptualization, Methodology, Formal Analysis, Software (design specification + simulation code review), Validation, Writing — Original Draft, Writing — Review and Editing.
 
----
-
 ## Data and Code Availability
 
 The companion computation repository is available at https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/ under MIT license for code and CC BY 4.0 for documentation. The repository is shared with the companion theoretical paper Zharnikov [-@zharnikov-2026am-specification-readiness-friction] at concept DOI 10.5281/zenodo.20379981 — both papers cite the same code companion since the mechanism tests reported in this paper draw on the same pre-registered simulation infrastructure. The repository contains: (a) [`friction_tax_montecarlo.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/friction_tax_montecarlo.py) — the Monte Carlo friction-tax simulation; (b) [`push_pull_regression_sim.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/push_pull_regression_sim.py) — the regression-identification power simulation; (c) [`PRE_EXPERIMENT_NOTES.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/PRE_EXPERIMENT_NOTES.md) — the pre-registration anchor and anti-HARKing register; (d) [`POST_EXPERIMENT_REPORT.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/POST_EXPERIMENT_REPORT.md) — the PASS/FAIL evaluation and post-hoc deviation log; (e) [`render_figure1.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/render_figure1.py) — matplotlib renderer for the Multi-Interface Specification Model diagram (Figure 1); (f) [`monte_carlo_summary.csv`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/monte_carlo_summary.csv) and [`regression_simulation_summary.csv`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/regression_simulation_summary.csv) — machine-readable result summaries; (g) `plots/` — twelve diagnostic plots; (h) `logs/` — verbatim stdout from both simulation runs (date-stamped); (i) [`README.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/README.md) documenting the run commands, the fixed seed, the dependency manifest, and the linkage back to both papers' DOIs. The pre-registered methods appendix lives alongside the code at [`METHODS_APPENDIX.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/METHODS_APPENDIX.md). The fixed seed is `np.random.seed(20260525)`. Archival data sources (Compustat North America, Glassdoor, LinkedIn Economic Graph, Burning Glass / Lightcast, YouGov BrandIndex, SEC EDGAR, I/B/E/S) require licensed academic access and cannot be redistributed; the design specifies the variable construction pipeline in sufficient detail for replication on independently-licensed data.
-
----
 
 ## Companion Computation Script
 
@@ -308,8 +284,6 @@ uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
 ```
 
 The Monte Carlo script generates the 12.96 million friction-magnitude trials reported in the Results section; the regression-identification script generates the 5,000 simulated panel datasets (1,000 per hypothesis) and reports the power table. The repository README documents the expected stdout, the runtime (~15 minutes Monte Carlo + ~25 minutes regression simulation on a 16-core machine), and the linkage back to this paper's DOI. The published numerical figures in this paper are derived from the code companion at the fixed seed; any future revision to a published numerical figure requires a parallel revision to the code companion, and the published numbers as released here are the ground truth for v1.0.0.
-
----
 
 ## References
 
@@ -344,13 +318,9 @@ The threats register summarized in Table 2 is developed at greater length here. 
 
 *Brand-FE confound in cross-stakeholder dispersion (H3)*. Firms with multiple distinct brands generate within-firm-year dispersion in YouGov BrandIndex consumer-NPS that reflects multi-brand portfolio composition rather than specification-substrate incoherence. Mitigation: H3 primary specification restricted to single-brand-dominant firms (≥ 70 percent of revenue from one brand per Compustat segment disclosures); brand-fixed-effects supplement where YouGov brand-to-firm crosswalk permits. Diagnostic: sample-restriction sensitivity coefficient; single-brand-vs-multi-brand subsample contrast. Residual concern: medium; documented as a limitation requiring brand-level data beyond the firm-level primary specification.
 
----
-
 ## Appendix B: Methods Appendix
 
 The full pre-registered methods appendix — covering the Monte Carlo simulation design, the regression-identification simulation design, the $H_0$ and $H_1$ specifications, the anti-HARKing decision rules, the alternative-explanations register, and the output-artifact list — is published as a companion file at https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/METHODS_APPENDIX.md (shared with the foundational theoretical paper Zharnikov [-@zharnikov-2026am-specification-readiness-friction], since the mechanism tests reported in this paper draw from the same pre-registered simulation infrastructure). The methods appendix is the authoritative pre-registration anchor; this paper's Mechanism Tests section reports the headline numbers and the post-hoc deviation, while the methods appendix preserves the full pre-registration record.
-
----
 
 ## Appendix C: Simulation Template for Friction-Tax Research
 

@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.19555201](https://doi.org/10.5281/zenodo.19555201)
 
 Working Paper v1.1.0 – April 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 This paper introduces the OrgSchema Audit, a structured diagnostic protocol that evaluates organizational specification maturity across six cascading levels: experience contracts, signal requirements, process contracts, procedures, input specifications, and sourcing requirements. The protocol parallels the Spectral Audit developed for brand perception [@zharnikov-2026-spectral-audit-eight-dimensional] but targets organizational operations rather than perceptual allocation. Each audit level defines what to examine, what a healthy specification looks like, what failure modes indicate, and what corrective actions restore specification integrity. A worked example using a specialty coffee operation demonstrates the full protocol. The paper argues that a significant share of organizational dysfunction originates not from poor execution but from absent or misaligned specifications, and that remediation should be prioritized by cascade position rather than symptom severity. The protocol is designed to be executable with or without AI assistance, though large language models substantially reduce the cost of initial specification extraction from existing documentation.
@@ -31,7 +29,6 @@ Organizational Schema Theory [@zharnikov-2026-organizational-schema-theory-test-
 The Spectral Audit [@zharnikov-2026-spectral-audit-eight-dimensional] applied this logic to brand perception, providing a six-step protocol for diagnosing misalignment between how a brand invests resources and what its target cohorts actually value across eight perceptual dimensions. The present paper extends the diagnostic logic to organizational operations. Where the Spectral Audit asks "Are you investing in the dimensions your customers care about?", the OrgSchema Audit asks "Does every operational parameter trace backward to a customer experience justification, and does every customer experience goal trace forward to a verifiable operational implementation?"
 
 This paper makes three contributions. First, it translates the six-level specification cascade of Organizational Schema Theory into a practitioner-executable audit protocol, with explicit criteria for healthy and failing states at each level. Second, it demonstrates the protocol through a worked example that illustrates specification gaps not surfaced by conventional operational review. Third, it advances two propositions — cascade-position prioritization and bidirectional traceability completeness — that distinguish the OrgSchema Audit from existing diagnostic frameworks and are testable through field research.
-
 
 ## The Six-Level Specification Cascade
 
@@ -65,7 +62,6 @@ If every operational parameter exists to serve a customer-defined acceptance tes
 
 *Falsification*: P2 is falsified if organizations with complete bidirectional traceability show no difference in operational outcomes compared to organizations with partial traceability, measured over a 12-month period.
 
-
 ## Positioning Against Existing Frameworks
 
 The OrgSchema Audit occupies a distinct position in the landscape of organizational diagnostics. Ferraro [-@ferraro-2023-maturity-models-trends] observes that maturity models have proliferated across management domains but increasingly converge on similar structural patterns — staged progression, capability assessment, benchmarking — while leaving the question of *what the organization should produce for its customers* outside the model's scope. To clarify its contribution, this section engages with the five frameworks most likely to be seen as competitors.
@@ -80,7 +76,7 @@ The OrgSchema Audit occupies a distinct position in the landscape of organizatio
 
 *Capability maturity models.* CMMI [@cmmi-2018-cmmi-model-v20] assesses organizational capability across five maturity levels (Initial through Optimizing). The EFQM Model [@efqm-2020-the-efqm-model] takes a broader view, evaluating direction, execution, and results across seven criteria, and explicitly includes stakeholder perceptions — but treats them as outcome indicators rather than root specifications that constrain every operational layer. Like PEMM, both CMMI and the EFQM Model evaluate how mature an organization's processes are without requiring those processes to trace to customer experience goals. An organization at CMMI Level 5 (Optimizing) or EFQM "outstanding" can have perfectly optimized processes that produce the wrong output. The OrgSchema Audit's contribution relative to maturity models is the customer-experience root: maturity is necessary but not sufficient; specification traceability is the additional requirement.
 
-Table 1: Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
+**Table 1.** Positioning of the OrgSchema Audit Against Existing Diagnostic Frameworks.
 
 | Framework | Root specification | Cascade direction | Validation | Continuity |
 |:----------|:-------------------|:------------------|:-----------|:-----------|
@@ -93,7 +89,6 @@ Table 1: Positioning of the OrgSchema Audit Against Existing Diagnostic Framewor
 | **OrgSchema Audit** | **Customer experience** | **Bidirectional across levels** | **Automated + manual** | **Continuous** |
 
 *Notes*: PEMM = Process and Enterprise Maturity Model. QFD = Quality Function Deployment. CMMI = Capability Maturity Model Integration. EFQM = European Foundation for Quality Management. The OrgSchema Audit is distinguished by customer experience as root specification and bidirectional traceability across all six cascade levels.
-
 
 ## The Audit Protocol
 
@@ -159,7 +154,6 @@ The OrgSchema Audit proceeds through six steps, one per specification level, sta
 
 **The fix.** Document supplier selection criteria and link each to the Level 0 commitment it satisfies. Identify backup suppliers for all critical inputs. Specify lead times, delivery frequencies, and contingency plans. Calculate the organization's operational resilience: how many days of operation are covered by current inventory if the primary supplier fails? Duration: 1 day with procurement involvement.
 
-
 ## Worked Example: Spectra Coffee
 
 To demonstrate the protocol in practice, consider Spectra Coffee, a specialty coffee operation in Berlin. The operation has a single location, six products, three staff roles (barista, shift lead, manager), and a stated mission of "excellent coffee with full transparency." The following summarizes the audit findings at each level. A caveat is warranted: Spectra Coffee was designed from its specifications (using the orgschema-demo reference implementation), so the audit is a formative demonstration of the protocol's mechanics rather than an independent validation. The more demanding test — applying the audit to a legacy organization that has never been specified — is discussed in Limitations.
@@ -204,12 +198,11 @@ Coffee supplier (Nordic Roasters GmbH) has documented certifications (direct tra
 
 **Audit finding**: Partial gap. Primary coffee supplier is documented with criteria, but no backup supplier is identified. Lead time and contingency planning are not specified. If the primary supplier experiences a disruption, the operation has no documented fallback. Additionally, supplier criteria for non-coffee inputs (milk, oat milk, croissants) lack the same specification depth as the coffee supply chain — a common pattern where the "hero product" receives specification attention while supporting inputs are under-specified.
 
-
 ## Audit Summary and Cascade Prioritization
 
 The Spectra Coffee audit reveals a high-maturity operation with five of six levels at healthy specification status. The findings, prioritized by cascade position:
 
-Table 2: OrgSchema Audit Findings for Spectra Coffee, Prioritized by Cascade Position.
+**Table 2.** OrgSchema Audit Findings for Spectra Coffee, Prioritized by Cascade Position.
 
 | Level | Finding | Severity | Impact if Unfixed |
 |:------|:--------|:---------|:------------------|
@@ -224,7 +217,6 @@ Cascade-position prioritization directs attention to the Level 1 economic transp
 
 This prioritization logic operationalizes Proposition 1. Conventional operational reviews prioritize by symptom severity or financial exposure [@hammer-2007-the-process-audit]. The OrgSchema Audit prioritizes by specification position: we argue that a failure at Level 0 is more consequential than a failure at Level 5, because higher-level failures invalidate the justification for everything below them. Whether this prioritization produces better operational outcomes than severity-based prioritization is an empirical question that field studies should address.
 
-
 ## AI as Audit Operator
 
 The OrgSchema Audit is designed to be executable without AI assistance, but large language models substantially reduce the cost of two bottlenecks: initial specification extraction and cross-reference validation.
@@ -237,7 +229,6 @@ The OrgSchema Audit is designed to be executable without AI assistance, but larg
 
 The cost of a full OrgSchema Audit with LLM assistance has not been formally measured across multiple organizations, but the Spectra Coffee demonstration suggests modest resource requirements. For a single-location operation, specification extraction from existing documentation requires an estimated 2 to 4 hours of LLM-assisted work plus 4 to 8 hours of human validation. The audit itself adds 1 to 2 days. These estimates should be treated as preliminary until validated through field studies.
 
-
 ## Managerial Implications
 
 The OrgSchema Audit reframes operational management from symptom response to specification repair. Three implications deserve emphasis.
@@ -247,7 +238,6 @@ The OrgSchema Audit reframes operational management from symptom response to spe
 *The specification gap as root cause.* When espresso quality is inconsistent, the conventional response is to retrain the barista (Level 3 intervention). The OrgSchema Audit may reveal that the problem is not the barista's execution but the absence of a grinder recalibration trigger in the process contract (Level 2), or an under-specified freshness window in the input specification (Level 4), or a supplier deviation from the sourcing requirement (Level 5). Treating symptoms at the procedure level while the specification gap exists at the contract or input level guarantees recurrence. This diagnostic logic extends Deming's [-@deming-1986-out-of-the] and Shewhart's [-@shewhart-1931-economic-control-quality] emphasis on system-level causes over individual-level blame, adding the cascade-position dimension: not just "the system is at fault" but "which level of the specification system is at fault."
 
 *Organization as configuration, not identity.* The OrgSchema framework treats organizational structure as metadata — the most volatile layer of a three-layer stack where value is the most stable layer and process sits in between [@zharnikov-2026-organizational-schema-theory-test-driven]. This perspective liberates managers from defending organizational forms as identity and instead treats them as configurations that can be modified, forked, or replaced when they no longer serve the experience contract. Different organizational structures producing the same value output are organizational metamers — structurally distinct but functionally equivalent. This aligns with recent reviews of organizational design [@joseph-2024-organization-design-current] that emphasize the contingent, reconfigurable nature of organizational structure.
-
 
 ## Discussion
 
@@ -277,12 +267,9 @@ Finally, the current demonstration is limited to a single domain (specialty coff
 
 *Future research.* Three directions are immediate. First, field validation: applying the OrgSchema Audit to 10 to 20 organizations of varying size and sector, measuring both the time and cost of the audit and the operational outcomes of specification-driven remediation over 6 to 12 months. This would provide the first empirical test of Propositions 1 and 2. Second, scale testing: extending the six-level model to organizations with 50 or more employees to identify where additional specification layers or modified audit procedures are required. Third, integration testing: running the OrgSchema Audit and the Spectral Audit jointly on the same organization to evaluate whether the combined diagnostic produces insights that neither audit alone would reveal — specifically, whether operational specification gaps predict perceptual coherence gaps, and vice versa.
 
-
-
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
-
 
 ## References
 

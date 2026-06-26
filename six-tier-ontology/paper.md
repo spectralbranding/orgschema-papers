@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.19895813](https://doi.org/10.5281/zenodo.19895813)
 
 Working Paper v1.2.0 – May 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Mergers and acquisitions continue to destroy value at high rates because scholars and practitioners lack a shared ontology specifying which organizational layers are transferred and how failures propagate across them. This paper develops a six-tier ontology of the acquisition target — Owner Intent, Business Model, Business Entity, Product, Process, and Organization — each characterized by a distinct governor, specification surface, and transferability mode. The tiers form dual oppositely directed hierarchies: a service hierarchy running upward from Organization to Intent and a constraint hierarchy running downward from Intent to Organization. The constraint hierarchy determines integration sequencing; shocks propagate bidirectionally, generating seven falsifiable propositions about failure cascades. The framework is form-invariant across for-profit, NGO, and cooperative entities via explicit substitution rules, with Tier 2, 4, and 5 substitutions provisional. The ontology connects previously siloed streams — cultural distance, executive turnover, business-model misfit, and integration capabilities — under a single transferability logic, explaining residual variance documented in meta-analyses [@king-2004-metaanalyses-postacquisition-performance; @king-2021-metaanalytic-integration-acquisition]. The primary contribution is a generalizable theory of organizational separability under ownership change, with implications for theory of the firm and dynamic capabilities. A Six-Tier Separability Diagnostic is derived as a theoretical implication; propositions carry confirming and falsifying criteria.
@@ -28,8 +26,6 @@ To our knowledge, this is the first framework in the M&A literature that formali
 
 The paper proceeds as follows. The next section establishes theoretical foundations, positioning the ontology against existing enterprise-architecture frameworks, addressing the ontological-mixing concern, reviewing the M&A failure literature, and situating the paper relative to recent dynamic-capabilities work. The third section presents the full six-tier framework. The fourth section develops the dual hierarchy and derives seven failure-propagation propositions. The fifth section demonstrates form-invariance across organizational types, develops the flip case, and derives integration implications including network and platform boundary conditions. The sixth section presents the STSD and a compact future-research agenda. The seventh section discusses limitations and contribution.
 
----
-
 ## Theoretical Foundations
 
 ### *Layered Ontologies of the Firm*
@@ -46,13 +42,11 @@ The dominant failure explanations are each anchored in a single organizational l
 
 A parallel recent stream — Bauer et al. [-@bauer-2024-acquisition-integration-capabilities] on cross-domain integration capabilities, Bauer and Friesl [-@bauer-2024-synergy-evaluation-mergers] on attentional crowding-out during integration, and Strobl et al. [-@strobl-2025-dynamic-capabilities-acquisitions] on contradictory HR signals — establishes the *phenomenology* of integration difficulty: capabilities must span domains, attention is scarce, signals are contradictory. The dynamic-capabilities tradition that supplies the theoretical lineage for this work originates in Teece, Pisano, and Shuen [-@teece-1997-dynamic-capabilities-strategic], whose specification of sense-seize-reconfigure capabilities as firm-specific, path-dependent, and difficult to imitate is the substantive ancestor of the cross-domain integration claims later refined by Bauer and colleagues. What this stream does not supply is the ontological vocabulary for specifying *which* tier carries which difficulty, which tier is causally prior to which, and how a failure at one tier propagates to the next. The present paper supplies that vocabulary, positioning itself as the ontological complement to capabilities research.
 
----
-
 ## The Six-Tier Ontology
 
 The six-tier ontology specifies each tier of an acquisition target by its governor — the agent or force that determines the tier's configuration — its specification surface — the set of observable artifacts that describe the tier's state — and its transferability mode — the mechanism by which the tier does or does not cross an ownership boundary. Table 1 presents the full structure.
 
-Table 1: The Six-Tier Ontology of an Acquisition Target.
+**Table 1.** The Six-Tier Ontology of an Acquisition Target.
 
 | Tier | Name | Governor | Specification Surface | Transferability Mode |
 |------|------|----------|-----------------------|----------------------|
@@ -73,7 +67,7 @@ Owner Intent is the psychic and strategic commitment of the controlling principa
 
 *Attribution refinement.* The framework as introduced above treats Tier 1 as a property of the target, in parallel with Tiers 2 through 6. Strictly, Tier 1 attaches to the controlling principal — the agent whose psyche, board commitment, or charter custody specifies the purpose — and imprints onto the asset's downstream tiers. The asset itself does not carry an Intent independent of the principal who currently controls it. Two consequences follow. First, Tier 1 is replaced rather than transferred across ownership transactions: under a new principal, the asset receives a new Tier 1 imprint, while Tiers 2 through 6 carry forward (subject to the integration cascade developed in the "Failure-Propagation Propositions" and "Form-Invariance" sections below). The pre-transaction Tier 1 of the prior principal does not transfer with the entity; it exits with the principal. Second, a single principal who controls multiple assets — a founder of a for-profit operating company who also endows a research foundation; a family-office head with positions in two operating businesses — carries multiple Tier 1 specifications, one per controlled asset, rather than a single global Intent attributable to the principal as an agent. The owner-archetype map developed in "The Flip Case" subsection is, accordingly, a covering distribution of admissible Tier 1 configurations per principal: each per-asset Tier 1 is a sample from that distribution, and the same principal may exhibit different archetype expressions across different assets. The propositions and diagnostic are unaffected by this refinement; the operational consequence is that Tier 1 records persist on the controlling-principal substrate and Tiers 2 through 6 persist on the asset substrate, with deal-time overlays capturing per-transaction refinements. Figure 1 presents the resulting attribution.
 
-**Figure 1: Tier-1 Attribution — Principal Carrier and Imprint on the Asset.**
+**Figure 1.** Tier-1 Attribution — Principal Carrier and Imprint on the Asset.
 
 ``` {.mermaid width=100%}
 graph LR
@@ -129,8 +123,6 @@ The Organization is the set of people, roles, cultural norms, tacit knowledge, a
 
 *Vignette:* A regional NGO has fourteen paid staff plus a volunteer base managed by a program coordinator. The board simultaneously occupies Tier 1 (charter custodian) and Tier 6 (organizational actor) — a dual role that is the structural source of nonprofit governance complexity. Tier 6 is Partial: paid-staff successors are partially identified, but volunteer coordination and board succession are underdeveloped.
 
----
-
 ## The Dual Hierarchy and Seven Propositions
 
 ### *Service Hierarchy and Constraint Hierarchy*
@@ -139,7 +131,7 @@ The six tiers form two overlapping hierarchies with opposite directionality. The
 
 Service and constraint are the same relationships described from opposite directions. A shock at any tier propagates in both: a Tier 6 fracture reduces the productive capacity Tier 5 requires, which transmits through the service chain to Tier 4 drift even when the Product specification was never altered (the structural basis for P6). The integration sequencing implication is direct: because upper tiers constrain lower tiers, specification clarity at upper tiers is logically prior to integration execution at lower tiers. A buyer who reorganizes Tier 6 before resolving Tier 1 compatibility is redesigning a team without knowing what the team is supposed to produce for whom. Bauer et al. [-@bauer-2024-acquisition-integration-capabilities] establish empirically that integration capabilities must span multiple domains — consistent with the dual-hierarchy implication that integration is a cross-tier problem. The cascade-projection structure underlying these bidirectional propagations is formalized in Zharnikov [-@zharnikov-2026m-projection-cascade-why], which derives a junction-localized rank-deficiency bound on each tier-to-tier projection together with a sub-additivity inequality on total cascade deficit via uniform contraction arguments — the formal apparatus the dual-hierarchy framework proposes at the ontological level.
 
-**Figure 2: The Dual Hierarchy — Service (Upward) and Constraint (Downward).**
+**Figure 2.** The Dual Hierarchy — Service (Upward) and Constraint (Downward).
 
 ``` {.mermaid width=35%}
 graph TD
@@ -185,15 +177,13 @@ Each proposition takes the canonical conditional form: *if antecedent A holds in
 
 **P7 — Bidirectional Feedback.** Sustained lower-tier failure forces upward revision of upper tiers — specifically, sustained Tier 5 or Tier 6 fractures of duration $\ge$ 12 months and severity sufficient to depress reported Tier 3 revenue $\ge$ 10% from deal-thesis projection will trigger documented Tier 2 Business Model revision within 24 months and, conditional on Model revision being insufficient to restore the deal thesis, documented Tier 1 Intent revision (write-down, divestiture decision, or strategic-review announcement) within an additional 12 months. *Mechanism:* sustained Process failure reduces the Product quality the Model promised; sustained Product degradation erodes Entity revenue; sustained revenue erosion forces Model revision because the prior Model has lost the productive base it was specified against. The feedback loop amplifies because upper-tier revisions generate new lower-tier constraints via the constraint hierarchy, restarting the cascade. The feedback is asymmetric: upward revision is observed only when the lower-tier failure crosses the duration-and-severity threshold; below that threshold, lower-tier failures are absorbed within the original Model without forcing upper-tier revision. Bauer and Friesl [-@bauer-2024-synergy-evaluation-mergers] document the sequential cost-anchor failures consistent with the mechanism. *Confirming:* panel data documenting sequential tier revisions in the 18–48 months post-close where lower-tier severity meets the threshold and exogenous market shocks are controlled. *Falsifying:* no systematic instances of lower-tier failures meeting the threshold precipitating Model or Intent revision across a sample with controlled exogenous shocks; or, observation that Model/Intent revisions occur as frequently below threshold as above, indicating that the upward revisions are not driven by the constraint cascade.
 
----
-
 ## Form-Invariance and Integration Implications
 
 ### *Substitution Rules Across Organizational Forms*
 
 The six-tier structure does not require a for-profit assumption. Each tier has a structurally equivalent form across for-profit, NGO/charity, and mutual/cooperative organizational types. Table 2 presents the substitution matrix.
 
-Table 2: Form-Invariant Six-Tier Ontology Across Organizational Types.
+**Table 2.** Form-Invariant Six-Tier Ontology Across Organizational Types.
 
 | Tier | For-Profit | NGO / Charity | Mutual / Cooperative |
 |------|------------|---------------|----------------------|
@@ -212,7 +202,7 @@ In standard for-profit transactions, Tier 1 and Tier 4 are distinct: the owner's
 
 *Generalization: tier-collapse patterns are parameterized over tier pairs.* The Intent $\equiv$ Product collapse is one canonical instance of a broader structural pattern in which the governor of one tier is identical to the governor of another. A second canonical instance is the sole-proprietor case, in which the registered legal entity (Tier 3) is the natural person who holds Tier 1: the principal is the entity. Sole-proprietor registrations across jurisdictions — including RU индивидуальный предприниматель (ИП), US sole proprietorship with EIN, UK sole trader with UTR, DE Einzelunternehmen, FR entreprise individuelle (EI), IT ditta individuale, PL jednoosobowa działalność gospodarcza (JDG), and CY self-employed registration — share the structural feature that the legal person and the natural person are the same juridical subject, producing the collapse Tier 1 $\equiv$ Tier 3. The categorical consequences parallel the Tier 1 $\equiv$ Tier 4 case at a different tier pair: the sole-proprietor registration cannot be transferred as a going concern because the registered subject is the natural person who holds the Intent and dies with that person; the substrate at Tier 2, Tier 4, Tier 5, and Tier 6 can be wound down and reconstructed under a new Tier 3 vehicle held by a new principal, but the original Tier 3 is structurally untransferable. The same admissibility constraint governs the Tier 1 $\equiv$ Tier 4 case: a Domain Craftsman cannot fork Tier 4 to a new owner without simultaneously transferring the Tier 1 imprint that legal instruments cannot convey — different tier pair, identical collapse mechanism. The collapse pattern is therefore parameterized over tier pairs; Figure 3 presents the two canonical instances and the generalization. The Tier 3 mutability noted earlier and the Tier 1 $\equiv$ Tier 3 collapse case are not in tension: in the standard for-profit case Tier 3 is mutable precisely because it is structurally distinct from Tier 1; in the sole-proprietor collapse Tier 3 inherits the immutability of Tier 1 by identification with it.
 
-**Figure 3: Tier-Collapse Patterns — Tier 1 $\equiv$ Tier 4 (Intent–Product) and Tier 1 $\equiv$ Tier 3 (Intent–Entity).**
+**Figure 3.** Tier-Collapse Patterns — Tier 1 $\equiv$ Tier 4 (Intent–Product) and Tier 1 $\equiv$ Tier 3 (Intent–Entity).
 
 *Panel A: Tier 1 $\equiv$ Tier 4 collapse (Domain Craftsman, Family Steward, Mission Founder).*
 
@@ -258,7 +248,7 @@ The constraint hierarchy derives a sequencing principle for M&A integration that
 
 The formal sequence is: (1) resolve Tier 1 (Intent) compatibility before Tier 2 (Business Model) revision; (2) resolve Tier 2 revision before Tier 4 (Product) specification; (3) confirm Tier 4 specification before Tier 5 (Process) integration; (4) confirm Tier 5 architecture before Tier 6 (Organization) role redesign. Tier 3 (Entity) integration is legally required immediately post-close; the framework implies that Tier 3 integration should be designed to minimize disruption to Tiers 4 through 6 while upper-tier specification clarity is being established.
 
-Table 3: Integration Sequencing Derived from the Constraint Hierarchy.
+**Table 3.** Integration Sequencing Derived from the Constraint Hierarchy.
 
 | Phase | Tier Priority | Address Before | Theoretical Basis |
 |-------|---------------|----------------|-------------------|
@@ -288,15 +278,13 @@ The cooperative presents a distinctive structural challenge: Tier 1 Intent is co
 
 Privatization transactions are the most visible cross-form case and the most tractable natural experiment for empirical testing of the form-mismatch principle: the Tier 1 substitution is explicit, documented in government records, and associated with large-scale post-acquisition operational changes that can be retrospectively coded against the tier-level predictions.
 
----
-
 ## The Separability Diagnostic and Validation Agenda
 
 ### *The Six-Question Diagnostic*
 
 The Six-Tier Separability Diagnostic (STSD) is best understood as a theoretical implication of the dual-hierarchy framework rather than its primary deliverable. If the ontology is valid — if each tier is governed by a distinct force, exposes a distinct transferability mode, and generates distinct downstream constraints — then pre-close tier profiling should predict post-acquisition trajectories better than aggregate financial or strategic fit measures. The STSD operationalizes this theoretical claim as a structured judgment instrument that produces a six-cell profile — one state per tier, three possible states: Fused, Partial, or Independent. Table 4 presents the full diagnostic. Pablo [-@pablo-1994-determinants-acquisition-integration] establishes that integration-level decisions are made prior to integration execution and depend on task, cultural, and political target characteristics — providing direct AMJ-tradition precedent for the STSD's pre-close-decision framing: the instrument is designed to produce a tier-disaggregated risk profile at the point in the acquisition process where integration-level choices are still open.
 
-Table 4: The Six-Tier Separability Diagnostic.
+**Table 4.** The Six-Tier Separability Diagnostic.
 
 | Tier | Diagnostic Question | Fused | Partial | Independent |
 |------|---------------------|-------|---------|-------------|
@@ -320,8 +308,6 @@ First, translate the six diagnostic questions into a semi-structured interview p
 ### *Companion Computation Script*
 
 A reference implementation of the STSD scoring step described above is published at the paper's public mirror under `six-tier-ontology/code/stsd_scorer.py`. The script encodes Table 4 exactly, takes a six-cell ordinal response, and returns the separability profile, Fused-tier count, flip-case flag, and constraint-hierarchy-ordered integration-priority ranking. It is deterministic and depends only on the Python standard library; the two example profiles described in the "How to read the profile" paragraph above can be reproduced via `python stsd_scorer.py --example`. The script computes the scoring step only and is not a substitute for structured-interview administration; it does not encode any of the four validation steps in the agenda above.
-
----
 
 ## Discussion
 
@@ -351,8 +337,6 @@ A companion working paper formalizes the deal-type taxonomy implicit in this pap
 
 Nevertheless, by supplying a shared ontological vocabulary and a propagation logic, this theory reframes the M&A failure problem from an empirical puzzle into a predictable consequence of hierarchical constraint architecture. Ownership transfer necessarily perturbs the acquired firm's constraint hierarchy; the extent to which acquirers can specify and manage that perturbation before the pre-close codification window closes determines whether value is preserved or destroyed. Future work that tests, extends, or challenges this architecture will advance not only M&A scholarship but our understanding of how organizations cohere across ownership changes.
 
----
-
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script that reproduces the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
@@ -360,8 +344,6 @@ AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial
 ## Author Contributions (CRediT)
 
 Dmitry Zharnikov: Conceptualization, Formal analysis, Investigation, Methodology, Project administration, Validation, Writing -- original draft, Writing -- review and editing.
-
----
 
 ## References
 

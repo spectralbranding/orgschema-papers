@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.19778588](https://doi.org/10.5281/zenodo.19778588)
 
 Working Paper v1.1.0 – April 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Organizational verification systems consume enormous resources yet frequently fail to produce substantive alignment between behavior and objectives. This paper develops an operator-theoretic explanation. Verification is formalized as a spectral projection operator $P$ that maps organizational states onto invariant subspaces defined by acceptance criteria. Conventional audit operates as a degenerate rank-1 projection onto a single compliance axis, discarding by construction all information orthogonal to that axis. This algebraic property explains the persistent information loss documented in the audit-society literature. In contrast, the acceptance-testing cascade developed in Organizational Schema Theory constitutes a full-rank spectral projection in which each hierarchical level independently projects onto a distinct performance subspace while preserving the overall dimensional structure of the specification.
@@ -17,6 +15,8 @@ Organizational verification systems consume enormous resources yet frequently fa
 Synthesizing organizational cybernetics, behavioral organization theory, and software engineering verification and test-driven development, the paper demonstrates that these three traditions implicitly rely on the same projection identity. Three propositions establish the rank inequality between audit and cascade systems, the cascade-consistency condition required for full-rank operation, and the bandwidth bound on sustainable projection rank. A formal simulation shows that rank-1 audit leaves approximately 90% of organizational deviation undetected in a six-dimensional specification space. The framework reconnects verification architecture to information-processing design, offers testable mechanisms for organizational learning and decoupling, and provides practical guidance for organizations whose performance requirements are irreducibly multi-dimensional.
 
 **Keywords:** organizational verification, spectral projection, acceptance testing, audit society, viable system model, test-driven development, organizational learning, information-processing design
+
+---
 
 Organizations invest billions annually in audit, certification, compliance monitoring, and performance review. Since the 1980s these verification rituals have expanded dramatically across sectors [@power-1997-audit-society-rituals]. Yet the gap between verification effort and substantive performance alignment remains stubbornly wide. Sociological research has documented how audits produce auditable artifacts rather than quality [@power-1997-audit-society-rituals; @strathern-2000-audit-cultures-anthropological], how organizations decouple formal structures from technical cores [@meyer-1977-institutionalized-organizations-formal; @bromley-2012-smoke-mirrors-walking], and how single-loop learning crowds out the double-loop revision required for genuine adaptation [@argyris-1978-organizational-learning-theory]. The conventional response has been institutional: improve auditor independence, tighten incentives, increase frequency. This paper proposes a more fundamental diagnosis: conventional audit fails because it is a degenerate projection operator, and the failure is algebraic before it is institutional.
 
@@ -30,7 +30,7 @@ Four contributions organize this paper. First, this paper provides, to the autho
 
 The paper proceeds by first developing the operator framework and demonstrating its presence in the three source literatures. It then formalizes three propositions concerning rank, consistency, and bandwidth. Subsequent sections apply the framework to Power's audit-society critique, illustrate its implications with a qualitative example and analytic simulation, and derive theoretical and practical consequences. The paper concludes by identifying boundary conditions and a new research program on verification bandwidth as a predictor of organizational alignment, learning, and decoupling.
 
-**Figure 1:** Architectural contrast between rank-1 audit and full-rank cascade. The rank-1 audit funnels every specification dimension through a single compliance bottleneck and emits a binary verdict; the full-rank cascade routes each cascade level through an independent projection that emits a level-localized pass/fail, preserving the dimensional structure of the specification.
+**Figure 1.** Architectural contrast between rank-1 audit and full-rank cascade. The rank-1 audit funnels every specification dimension through a single compliance bottleneck and emits a binary verdict; the full-rank cascade routes each cascade level through an independent projection that emits a level-localized pass/fail, preserving the dimensional structure of the specification.
 
 ```mermaid
 flowchart LR
@@ -61,7 +61,7 @@ flowchart LR
   end
 ```
 
-Table 1: Information-loss contrast: rank-1 audit vs. full-rank cascade.
+**Table 1.** Information-loss contrast: rank-1 audit vs. full-rank cascade.
 
 |                      | rank-1 audit ($P_{\text{audit}}$)        | full-rank cascade ($P_{\text{cascade}}$)  |
 |----------------------|-------------------------------|--------------------------------|
@@ -73,8 +73,6 @@ Table 1: Information-loss contrast: rank-1 audit vs. full-rank cascade.
 | Mean undetected dev. | 2.12 ($\sigma = 1.0$)            | .00 ($\sigma = 1.0$)              |
 
 *Notes*: Computed in Appendix B simulation ($N = 1{,}000$ trials, 6-dimensional state space). Mean undetected deviation: rank-1 audit 2.12; full-rank cascade .00. The rank-1 audit misses approximately 90% of total organizational deviation across all noise levels tested ($\sigma = .1, .5, 1.0, 2.0$). See Appendix B for full results.
-
----
 
 ## Theory Development
 
@@ -124,7 +122,7 @@ The bridge from Tushman and Nadler [-@tushman-1978-information-processing-as] to
 
 Cybernetics, behavioral organization theory, and software engineering each name a distinct organizational object as the locus of acceptance. Each lineage describes the projection identity in its own vocabulary — variety attenuation, aspiration adjustment, test pass — and each has historically stopped short of the algebraic identification offered here. Table 2 summarizes the convergence and the gap.
 
-Table 2: Three convergent lineages on the projection identity.
+**Table 2.** Three convergent lineages on the projection identity.
 
 | Lineage                          | Object that instantiates the projection                  | What the lineage names                                          | What the lineage misses                                              |
 |----------------------------------|----------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
@@ -133,8 +131,6 @@ Table 2: Three convergent lineages on the projection identity.
 | Software engineering [@beck-2002-testdriven-development-by; @boehm-1981-software-engineering-economics; @boehm-2004-balancing-agility-discipline] | Acceptance test against an invariant test-passing subspace | Red-green-refactor convergence and early-detection economics    | Rank inequality between single-target compliance and multi-level cascade  |
 
 *Notes*: Each lineage is internally consistent and empirically productive within its own domain. The present paper's contribution is the cross-domain identification: the variety attenuator, the aspiration projection, and the acceptance test are the same algebraic object — an idempotent self-adjoint projection whose rank determines the dimensional resolution of the verification process. Conant and Ashby's [-@conant-1970-every-good-regulator] regulator theorem is the closest structural predecessor in adjacent form.
-
----
 
 ## Formal Model and Propositions
 
@@ -186,8 +182,6 @@ The bandwidth bound in Proposition 3 is complementary to, but distinct from, the
 
 The top-level invariant subspace in OST corresponds to the Brand Function eigenspace [@zharnikov-2026-organizational-schema-theory-test-driven]: the stable mapping from organizational outputs to observer perception that constitutes the organization's perceptual identity. Brand Function is developed as the observer-contingent behavioral specification in Zharnikov [-@zharnikov-2026-ai-native-brand-identity-from]; OST's L0 specification is its organizational analog — the acceptance predicate that defines what observer perception profiles count as passing the top-level cascade test. An organizational state that lies in this eigenspace produces coherent multi-dimensional perception across observer cohorts. This condition is the organizational analog of Thurstone's [-@thurstone-1947-multiplefactor-analysis-development] factor structure: just as a factor score is the projection of an observation onto the latent factor subspace, an organization's Brand Function score is the projection of its operational state onto the perception eigenspace. Chen et al.'s [-@chen-2021-spectral-methods-data] statistical treatment of spectral methods makes the broader principle explicit: spectral projection extracts the low-rank invariant component from a noisy observation by identifying the eigenvectors of the covariance structure that account for the systematic signal.
 
----
-
 ## The Audit Society Application
 
 ### Power's [-@power-1997-audit-society-rituals] Diagnosis
@@ -218,8 +212,6 @@ The Balanced Scorecard [@kaplan-1992-balanced-scorecard-measures] represents the
 
 Simons's [-@simons-1995-levers-control-how] control-system typology provides an independent vocabulary for the same distinction. Diagnostic control systems — Simons's term for single-variable feedback controls — are rank-1 projections: they detect deviations from a single target metric and trigger correction. Interactive control systems engage managers in ongoing dialogue about specification assumptions and challenge governing variables — the double-loop operator in Argyris and Schön's [-@argyris-1978-organizational-learning-theory] terms, and the full-rank cascade in the present algebraic framework. The practical design recommendation is therefore that organizations replace diagnostic-only audit with interactive cascades calibrated to the actual dimensionality of their specifications.
 
----
-
 ## Worked Illustration
 
 ### Spectra Coffee as Qualitative Illustration
@@ -237,8 +229,6 @@ A failure at Level 2 — process execution — that does not propagate immediate
 The organizational economics argument [@boehm-1981-software-engineering-economics] applies directly: catching the Level 2 process failure before it propagates to Level 0 customer experience failure is cheaper than correcting customer defection after the fact. The cascade's higher information content — its full rank — is the mechanism by which early detection is possible. The rank-1 audit cannot achieve this because it cannot represent failures that lie in dimensions orthogonal to the compliance axis; by the time such failures propagate to compliance violations, the cost of correction has escalated non-linearly. Boehm and Turner [-@boehm-2004-balancing-agility-discipline] extend this economic argument to the organizational choice between agile (high-frequency, full-rank verification) and plan-driven (low-frequency, lower-rank verification) development processes.
 
 The simulation in Appendix B confirms the quantitative implication. For $\sigma = 1.0$ (moderate operational noise), the rank-1 audit leaves mean undetected deviation of 2.12 — 90.4% of total deviation goes undetected. The full-rank cascade detects all deviation by construction. This 90% miss rate is not an artifact of parameter choice; it follows from the geometry: with isotropic noise in a 6-dimensional space, the rank-1 audit detects exactly 1/6 of total deviation variance, leaving 5/6 structurally invisible. Cascade depth and noise level affect absolute magnitudes but not this ratio.
-
----
 
 ## Discussion
 
@@ -290,8 +280,6 @@ A productive avenue for future empirical research is the verification bandwidth 
 
 Kovalenko's [-@kovalenko-2026-bounded-compositional-verification] Bounded Compositional Verification (BCV) framework — developed independently; see Acknowledgments — classifies system failures along three axes and identifies *pseudo-coverage*: a system appears fully functional while multi-dimensional cascade integrity is violated. The pseudo-coverage diagnosis is structurally parallel to the rank-1 audit failure formalized here: both describe an audit that returns positive verdicts on individual checks while the full-dimensional fidelity condition fails. The structural parallel suggests the operator-theoretic framing may generalize beyond organizational theory, though formal comparison of the two frameworks warrants future dedicated treatment.
 
----
-
 ## Conclusion
 
 Organizational verification is spectral projection. The rank of the projection determines both what an organization can know about itself and what it can correct. Conventional rank-1 audit guarantees that multi-dimensional deviations remain invisible; full-rank acceptance cascades make those deviations both detectable and localizable. This algebraic distinction transforms the audit-society critique from a sociological observation into a predictive theory of organizational design.
@@ -310,8 +298,6 @@ The choice facing organizations is no longer whether to audit more rigorously bu
 
 The author thanks James Kovalenko (Manifold Control) for the independent development of the Bounded Compositional Verification framework, whose pseudo-coverage diagnosis closely parallels the rank-1 audit failure mode formalized here. AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script that reproduces the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
----
-
 ## References
 
 ::: {#refs}
@@ -329,8 +315,6 @@ The rank of $P$ equals $\dim(T)$. A rank-1 projection has range equal to a singl
 
 For any matrix $A$, the singular value decomposition $A = U \Sigma V^T$ identifies the left singular vectors $U$ (which form an orthonormal basis for the column space), the right singular vectors $V$ (orthonormal basis for the row space), and the singular values (diagonal entries of $\Sigma$). For a projection operator $P$, the SVD has the special structure that singular values are either 0 or 1, and $U = V$ ($P$ is symmetric). The rank of $P$ equals the number of singular values equal to 1. Kannan and Vempala [-@kannan-2009-spectral-algorithms] establish that low-rank spectral approximations — truncated SVDs — minimize the Frobenius-norm reconstruction error over all rank-$k$ matrices, which is the formal basis for the claim that a rank-$k$ cascade is the best $k$-dimensional approximation to the full-rank specification.
 
----
-
 ## Appendix B: Simulation — Undetected Deviation Under Rank-1 Audit vs. Full-Rank Cascade
 
 ### Simulation Design
@@ -344,7 +328,7 @@ Information loss is measured as the norm of undetected deviation: $\|d - P(d)\|$
 
 ### Simulation Results
 
-Table 3: Undetected Deviation by Projection Architecture and Noise Level.
+**Table 3.** Undetected Deviation by Projection Architecture and Noise Level.
 
 | Noise ($\sigma$) | Total Dev. | Rank-1 Audit Missed | Full-Rank Cascade Missed | % Missed (Audit) |
 |---------------|------------|---------------------|--------------------------|------------------|

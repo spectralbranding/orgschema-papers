@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.20367459](https://doi.org/10.5281/zenodo.20367459)
 
 Working Paper v1.1.0 – May 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 This paper specifies an event-sourced substrate beneath organizational capability rather than treating capability as a stored stock of resources or routines. Capabilities are computed from the cumulative trace of what a firm has actually done, evaluated at the moment a strategic question is asked. The paper specifies three formal objects: a partially ordered log of immutable events, a projection operator that reads the log under a query and a render time, and a compatibility function that scores log-merge events such as acquisitions. Four propositions follow: clean log merges preserve projection continuity; snapshot imports without the underlying log diverge within three years; writedown magnitude in failed M&A is jointly determined by raw log incompatibility and acquirer integration-policy choice; imitators who observe only the projection cannot replicate capability responses to novel queries. The framework is illustrated by three honestly coded process-traced cases — Disney's 2006 acquisition of Pixar, Microsoft's 2014 acquisition of Nokia's handset assets, and persistent imitation failure of the Toyota Production System — under a single-coder pass of a pre-registered protocol. A worked Monte Carlo simulation reproduces the predicted comparative statics. The substrate-projection distinction reframes the long-running tautology critique of dynamic capabilities as a category error and generates falsifiable predictions about transfer failure.
@@ -31,7 +29,7 @@ The argument develops in six movements. The next section reviews the resource-ba
 <!-- NANOBANA_PROMPT: Iceberg illustration in the spectral palette (deep blue water, white-gray ice). Above waterline: small visible peak labeled "Capability (rendering)" — a polished slide-deck-style icon. Below waterline: enormous body of ice labeled "Append-only event log" filled with small abstract icons representing decisions, hires, code commits, post-mortems, policy revisions, in muted spectral colors. A thin dashed line at the waterline labeled "render time t." Clean, technical, journal-quality. No people. -->
 <!-- ILLUSTRATION: Figure 1. The capability iceberg. What an observer measures as capability at time t is the surface render of a much larger append-only log; transfer of the surface without the log produces inert capability claims. -->
 
-## **Theoretical Foundations**
+## Theoretical Foundations
 
 The argument has four direct antecedents in strategic-management and organization theory. Each is engaged in turn.
 
@@ -71,7 +69,7 @@ Linda Argote and Ella Miron-Spektor [-@argote-2011-organizational-learning-exper
 
 The four traditions plus the microfoundations and knowledge-based programs converge on a distinction they did not name. All assume an implicit object — the accumulated history that produces, constrains, and evolves the visible competence. Naming that object as the log and the visible competence as a projection clarifies what is measured (the projection), what does the work (the log), and where transfer fails (when the projection is moved without its substrate). The older procedural-rationality tradition [@march-1958-organizations; @cyert-1963-behavioral-theory-firm] modeled organizations as procedures operating over a shared substrate; the event-sourced view vindicates it on more rigorous ground.
 
-## **The Event-Sourced View**
+## The Event-Sourced View
 
 This section specifies the formalism. The mathematical machinery is small by design: a theoretical contribution at this level favors mechanism precision over proofs.
 
@@ -158,7 +156,7 @@ Runnable Python scripts reproducing the worked instances of $\pi_\lambda$ and $\
 
 The simulation reproduces the predicted comparative statics. At density = 0, continuity is identical under both policies (gap = .000). At density = .9, acquirer-supreme writedown is approximately twice negotiated writedown (.131 versus .058 at $\lambda = 0.1$) and continuity falls to .87 versus .94. Writedown is strictly monotonically increasing in conflict density at every $\lambda$. Four of five pre-registered numerical checks pass; the fifth (C2: continuity gap $\geq$ .10 at density .9) is an honest near-miss at .073 under the pre-registered weighting. The near-miss is reported as written rather than tuned away: it indicates the mechanism is present in the right direction with the right monotonicity but at smaller magnitude than the synthetic threshold, identifying a calibration question for the empirical companion paper rather than a contradiction of the formalism. Full results, plots, and replication instructions are in the `POST_EXPERIMENT_REPORT.md` companion to the script. The two plot files (`plot_projection_continuity_vs_kappa.png` and `plot_writedown_vs_conflict_density.png`) visualize the substrate-vs-snapshot wedge directly.
 
-## **Mechanism: Log-Merge in Mergers and Acquisitions**
+## Mechanism: Log-Merge in Mergers and Acquisitions
 
 ***Experience as Log, Integration as Projection***
 
@@ -179,7 +177,7 @@ The mechanism generates three predictions beyond the propositions above. First, 
 <!-- NANOBANA_PROMPT: Two side-by-side timeline diagrams in spectral palette. Left panel labeled "Disney + Pixar 2006 (log merge)" shows two horizontal lines (Disney log on top, Pixar log on bottom) approaching a merger point in 2006, then continuing as parallel lines that occasionally cross-link with thin connector lines, both extending to 2026 without breaks. Right panel labeled "Microsoft + Nokia 2014 (snapshot import)" shows Microsoft log continuing as a horizontal line, Nokia log ending abruptly at 2014 with a small snapshot icon (a rectangular slide-deck shape) being absorbed into Microsoft's line; Nokia's line does not continue. A 2016 marker on Microsoft's line shows a downward-pointing red triangle labeled "$7.6B writedown." Journal-quality, technical. -->
 <!-- ILLUSTRATION: Figure 3. Log merge versus snapshot import. Disney+Pixar preserved both logs through an LWW integration policy; Microsoft+Nokia discarded the Nokia log and imported a snapshot of its capabilities. The post-2014 trajectory diverges from what a log-merged counterfactual would have produced. -->
 
-## **Illustrative Cases: Three Process-Traced Anchors**
+## Illustrative Cases: Three Process-Traced Anchors
 
 This section reports three process-traced cases coded under an honest single-coder pass of the pre-registered protocol (Methods Appendix). The cases are selected as boundary objects: one clean log merge (Disney+Pixar), one snapshot-import failure with moderate raw log compatibility (Microsoft+Nokia), and one continuous transfer-failure phenomenon (Toyota Production System imitation). Together they cover the high-$\kappa$, moderate-$\kappa$-with-acquirer-supreme-policy, and substrate-without-rendering regions of the parameter space. The process-tracing approach follows Ann Langley's [-@langley-1999-strategies-theorizing-process] strategies for theorizing from process data: temporal bracketing, narrative reconstruction, and visual mapping of event sequences. Per protocol §A.3, each focal organization has at least ten calendar years of log depth prior to the focal event.
 
@@ -226,7 +224,7 @@ This restates Spear and Bowen's [-@spear-1999-decoding-dna-toyota] DNA argument 
 <!-- NANOBANA_PROMPT: Side-by-side contrast diagram. Left panel labeled "Toyota: log-generating substrate" shows a deep vertical timeline (1953–2026) thickly populated with small icons — wrench, document, line-graph, person — at every level, with the topmost present-day rendering shown as a clean kanban card and andon-cord icon. Right panel labeled "Imitator: snapshot only" shows a thin recent-history timeline (3–5 years) with the same kanban card and andon-cord icons at the top, but the timeline below them is mostly empty with only sparse documentation icons. A dashed arrow labeled "snapshot import" connects the top of Toyota's timeline to the top of the imitator's. Beneath the imitator panel: small caption "no substrate to project from." Spectral palette, journal-quality. -->
 <!-- ILLUSTRATION: Figure 4. Toyota Production System and its imitators. The visible artifacts are identical; the underlying log is not. New queries produce divergent projections because the imitator has no log to project from. -->
 
-## **Architectural Existence Proof: ActiveGraph as Motivating Analogy**
+## Architectural Existence Proof: ActiveGraph as Motivating Analogy
 
 The substrate-projection view stands as a theoretical reformulation independent of any engineering instance. An open-source engineering instance — released two weeks before this paper was drafted — supplies an existence proof that event-sourced substrate is operationally tractable outside metaphor. This section engages it briefly. Yohei Nakajima [-@nakajima-2026-log-is-agent] released *The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems* with an open-source Apache-2.0 implementation. The framework — ActiveGraph — implements an append-only event log as source of truth, deterministic projection into a queryable state, content-addressed replay, and cheap fork-and-diff for counterfactual reasoning. We theorize organizations; ActiveGraph supplies a real-world implementation, not the object of theory.[^scope]
 
@@ -234,7 +232,7 @@ The substrate-projection view stands as a theoretical reformulation independent 
 
 The architectural parallel that bears on the theory is the determinism contract: Nakajima's §3 specifies that behaviors must not read random values, wall-clock time, fresh UUIDs, or mutable global state. The organizational analogue is the determinism contract on capability projections (O2 in §3.2 above): $\pi$ must not read non-substrate state — unwritten know-how, untranscribed conversations, lost memories. Where it does, the projection fails to replay, and capability transfer fails predictably. Microsoft's import of Nokia's mobile-platform capability violated the determinism contract: the projection was reproducible only against the live Nokia log, which Microsoft did not preserve. Nakajima cites no management literature in his reference list; the present paper is not a strategy-side commentary on Nakajima but an independent argument that arrives at a compatible substrate ontology from the strategy-theory side. The convergence supplies external validation for both arguments without making either dependent on the other.
 
-## **Discussion**
+## Discussion
 
 ***Boundary Conditions and Scope***
 
@@ -278,13 +276,11 @@ Two future-research lines are committed to. The first is a fifty-event coded M&A
 
 Three further extensions follow from cohort decomposition implicit in the framework: heterogeneity in projection across different observers of the same log [@zharnikov-2026-organizational-metamerism-when-distinct-configurations]; the brand-as-projection special case [@zharnikov-2026l-rendering-problem-genetic]; and the connection to a six-tier organizational ontology in which the log sits beneath all tiers [@zharnikov-2026-dual-hierarchies-organizational-transferability-six].
 
-## **Conclusion**
+## Conclusion
 
 Capability is not a stock. It is a projection of an append-only log, computed at the moment a strategic question is asked. Resources, routines, dynamic capabilities, and organizational memory are not different things; they are different projections of the same underlying log, each evaluated under a different query. Transfer fails when the projection is moved without the log. Transfer succeeds when the log is preserved — and when the integration policy chooses preservation over discard.
 
 Treating the append-only event log as the substrate beneath the firm rather than as its exhaust buys properties that resource-based and dynamic-capabilities theories have struggled to obtain together: path-dependence with formal substrate, inimitability with operational specification, capability heterogeneity with falsifiable predictions. The reformulation does not abandon the prior tradition; it specifies the substrate the tradition has assumed implicitly.
-
----
 
 ## Acknowledgments
 
@@ -295,8 +291,6 @@ AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial
 ## CRediT Contributions
 
 **Dmitry Zharnikov**: Conceptualization, Formal analysis, Investigation, Methodology, Writing — original draft.
-
----
 
 ## References
 

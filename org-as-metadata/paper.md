@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.19869871](https://doi.org/10.5281/zenodo.19869871)
 
 Working Paper v1.1.0 – April 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Why do structurally distinct organizations produce indistinguishable value outputs for a given evaluative observer? Equifinality explains convergence along different paths to the same performance outcome but cannot account for simultaneous state equivalence among permanently different configurations. This paper introduces organizational metamerism, an observer-relative condition in which two configurations executing the same process map to identical value outputs for a specific evaluator. Drawing on color science, the paper locates metamerism within a temporal stability hierarchy — value outputs change more slowly than processes, which change more slowly than organizational configurations — and explains this ordering through an organization-as-metadata mechanism. As coordination costs fall, coordination logic is progressively absorbed into process specifications, expanding the metamerism set. Tacit knowledge intensity bounds this expansion.
@@ -29,8 +27,6 @@ This paper names this condition *organizational metamerism*, borrowing from colo
 The contribution is threefold. First, the paper sharpens the ontological claim by specifying what is preserved (value output as evaluated by a particular observer) and what varies (organizational configuration). Second, it derives a temporal stability hierarchy — value outputs change less frequently than processes, which change less frequently than configurations — and grounds it in an organization-as-metadata mechanism. Third, it generates testable propositions with clear empirical implications for the AI era, most notably that falling coordination costs will decouple organizational restructuring frequency from process change frequency while tacit knowledge intensity bounds set expansion.
 
 The paper develops the theoretical foundations by engaging in depth with equifinality [@gresov-1997-equifinality-functional-equivalence], organizational routines [@pentland-2005-organizational-routines-as], and pace layering [@beane-2025-pace-layering-as] — the three closest concurrent literatures. Organizational Metamerism defines the concept formally, develops the temporal stability hierarchy, and introduces the metadata mechanism. Propositions states four propositions with explicit evidence criteria. Discussion develops theoretical and methodological implications. Discussion and Limitations addresses boundary conditions and future research directions.
-
----
 
 ## Theoretical Foundations
 
@@ -56,7 +52,7 @@ This precision matters because it makes the metamerism set tractable: to know wh
 
 The present paper's primary proposition about the metamerism set — that it expands as coordination costs fall and contracts as tacit knowledge intensity rises — cannot be derived from the equifinality literature because the equifinality literature treats the set of equivalent configurations as an empirical regularity rather than a derived quantity.
 
-Table 1: Equifinality versus organizational metamerism on key theoretical dimensions.
+**Table 1.** Equifinality versus organizational metamerism on key theoretical dimensions.
 
 | Dimension | Equifinality [@gresov-1997-equifinality-functional-equivalence] | Organizational metamerism |
 |-----------|----------------------------------------|---------------------------|
@@ -111,7 +107,7 @@ One further distinction: Beane and Leonardi [-@beane-2025-pace-layering-as] grou
 
 Puranam, Alexy, and Reitzig [-@puranam-2014-whats-new-about] ask a related question from yet another angle: when do "new" forms of organizing constitute genuine novelty versus functional equivalence to established forms? The metamerism framework operationalizes this question precisely — genuine novelty appears as non-membership in the metamerism set for a specified observer. Configurations that are new in their structural design but produce identical outputs for the observer in question are metamers, not novel forms. The Puranam et al. framework motivates the question; the metamerism framework provides the formal criterion. A systematic review of the organization design literature by Joseph and Sengul [-@joseph-2024-organization-design-current] identifies coordination — alongside configuration, control, and channelization — as one of the four primary research streams in the field; the metamerism framework's focus on the progressive embedding of coordination logic in process specifications represents a direct theoretical extension of this coordination research stream into the AI-era organizational context.
 
-Table 2: Three frames for organizational form heterogeneity.
+**Table 2.** Three frames for organizational form heterogeneity.
 
 | Dimension | Equifinality [@gresov-1997-equifinality-functional-equivalence] | Pace Layering [@beane-2025-pace-layering-as] | Organizational Metamerism (present paper) |
 |-----------|----------------------------------------|-----------------------------------------|-------------------------------------------|
@@ -124,8 +120,6 @@ Table 2: Three frames for organizational form heterogeneity.
 | AI-era implication | None unique | Fast layers (coordination tools) outpace slow layers (relational substrate) | Falling coordination costs expand M(P,O); restructuring frequency decouples from process change frequency |
 
 *Notes*: The three frameworks are complementary. Equifinality addresses how organizations arrive at equivalent performance; pace layering addresses how organizations manage change at different rates; organizational metamerism addresses which configurations are simultaneously substitutable for a given observer. The formal treatment of M(P,O) is in Appendix A.
-
----
 
 ## Organizational Metamerism
 
@@ -157,7 +151,7 @@ The temporal stability hierarchy has a cross-domain structural parallel. Stewart
 
 This corollary is a derived empirical implication of Proposition 1 that requires independent testing; it is taken up in the Discussion section. Its practical significance: the primary failure mode of organizational restructuring is not resistance [@hannan-1984-structural-inertia-organizational], culture clash [@cartwright-1993-role-culture-compatibility], or leadership failure [@beer-2000-cracking-code-change], but lossy migration — the inadvertent omission of coordination responsibilities in the translation from old configuration to new. The corollary transforms the change management question from a sociological one (how do we get people to accept change?) to a structural one (how do we ensure the migration is lossless?).
 
-Figure 1: The temporal stability hierarchy with the metadata overlay.
+**Figure 1.** The temporal stability hierarchy with the metadata overlay.
 
 ``` {.mermaid width=25%}
 flowchart TD
@@ -235,7 +229,7 @@ $$|M(P, O)| = f(\mathrm{codifiability}(P), 1/c(P), 1/\tau(P))$$
 
 where $c(P)$ is the coordination cost per coordinating relation in process P and $\tau(P)$ is the proportion of P's coordinating work that depends on uncodifiable knowledge. The set grows with codifiability and with falling coordination cost; it shrinks with rising tacit knowledge intensity. The expression is schematic — operationalization of each antecedent is a research program, not a closed-form claim — but it makes the predicted directional dependencies precise enough for empirical testing.
 
-Table 3: Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
+**Table 3.** Metamerism Set Size as a Function of Process Codifiability and Coordination Cost Regime.
 
 |  | **High coordination cost** | **Low coordination cost** |
 |---|---|---|
@@ -259,8 +253,6 @@ Coordination in a human organization scales with the number of interdependencies
 The key observation is that this compression algorithm — the hierarchy — is part of the organizational configuration, not part of the process. Different configurations solve the same coordination problem differently (different hierarchy designs, different committee structures, different escalation rules) and introduce different patterns of information loss. These information-loss differences translate to output differences that make the two configurations non-metamers.
 
 As coordination technology changes this picture, it does so by moving the coordination logic from the organizational configuration into the process specification. A pull production system's kanban rules are part of the process specification; a digital platform's API contracts are part of the process specification; an AI agent's coordination logic is part of the process specification. In each case, the coordination problem that previously required a configuration-specific organizational solution now has a process-level solution that is invariant across configurations. The specification impossibility result in Zharnikov [-@zharnikov-2026-specification-impossibility-organizational-design-high] adds a complementary structural observation: in high-dimensional organizational specification spaces, exhaustive characterization of all possible configurations is geometrically intractable. The implication for the metamerism framework is that any empirically observed metamerism set is a sample from a larger theoretical set; the theoretically derived determinants of set size — process codifiability, observer sensitivity, and coordination cost regime — are therefore the appropriate targets for empirical research.
-
----
 
 ## Propositions
 
@@ -302,8 +294,6 @@ This claim does not contradict the contingency-fit record [@donaldson-1996-posit
 
 *Operationalization*: matched-pair comparison of firms with similar coordination embedding but high vs. low tacit knowledge intensity (e.g., AI-coordinated logistics platforms vs. AI-assisted boutique law firms); the prediction is metamerism set size remains narrower for high-tacit firms regardless of coordination embedding.
 
----
-
 ## Discussion
 
 Organizational metamerism reframes a core puzzle in organization theory: persistent structural diversity is not merely the historical residue of equifinal paths but the predictable consequence of observer-relative state equivalence grounded in differential layer stability and falling coordination costs. By distinguishing state from path equivalence, the theory clarifies why structurally dissimilar organizations can remain non-convergent yet produce outputs indistinguishable to technically oriented observers. The metadata mechanism relocates organizational form from the causal driver of performance to a revisable coordination schema whose volatility increases as coordination is absorbed into process specifications. This shift transforms the central question of organizational change from "how do we overcome resistance?" to "how do we ensure lossless schema migration?"
@@ -344,8 +334,6 @@ For practitioners, the organizational metamerism framework produces two practica
 
 Together, these insights offer managers a reoriented design heuristic: treat restructuring as database schema migration, map every coordination responsibility explicitly before and after the transition, and select configurations not only for productive equivalence but for favorable evaluations by consequential observer classes.
 
----
-
 ### Limitations
 
 The framework applies most cleanly to economic organizations producing measurable outputs; extension to identity-laden or highly institutionalized settings requires incorporating legitimacy observers whose evaluation functions weight form independently of output [@selznick-1957-leadership-administration-sociological; @king-2010-finding-organization-organizational; @meyer-1977-institutionalized-organizations-formal]. The theory assumes that value output can be measured and compared across configurations — an assumption satisfied for outputs with clear quality metrics (software reliability, food safety scores, on-time rates) but problematic for multi-dimensional or highly contested outputs. Tacit knowledge intensity remains the primary constraint on metamerism-set expansion; whether advancing AI capabilities erode this boundary is an empirical question the theory is designed to inform rather than prejudge.
@@ -358,13 +346,9 @@ Three empirical strategies follow naturally from the framework. First, a configu
 
 Two theoretical extensions are proximate. Zharnikov [-@zharnikov-2026-dual-hierarchies-organizational-transferability-six] develops the six-tier ontology of organizational transferability within which the metamerism hierarchy is embedded, providing a finer decomposition of the value–process–configuration ordering. Zharnikov [-@zharnikov-2026-brand-as-modular-layer-tiered] develops one downstream application of the metamerism framework: brand portfolios as multiple Tier-4 instances riding on shared Tier-3/5/6 substrate, where the cross-brand metamerism set is bounded by tier-level separability — a natural extension from the intra-firm equivalence studied here to the multi-brand, multi-unit case. A further spin-off direction, tentatively titled "Organizational Form as Signal," would examine how observer-evaluation sensitivity to form rather than output is shaped by signaling credibility conditions [@spence-1973-job-market-signaling; @connelly-2011-signaling-theory-review], extending the framework specifically to the institutional-observer class where structural signals dominate output evaluation.
 
----
-
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script that reproduces the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
-
----
 
 ## References
 

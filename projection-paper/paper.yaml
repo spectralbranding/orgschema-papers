@@ -13,7 +13,7 @@ meta:
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19145205
   date: '2026-03-01'
-  venue: AMR / SMJ (ScholarOne submission queued)
+  venue: AMR / SMJ
   license: CC-BY-4.0
   keywords:
   - organizational design
@@ -306,7 +306,7 @@ dependencies:
   claim: Execution-and-coordination view located at r_5 / part of r_3, not displaced
   reference: hrebiniak-2006-obstacles-strategy-implementation
 - relationship: extends
-  claim: Unreasonable-effectiveness meta-question (§7); not load-bearing for any proposition
+  claim: Unreasonable-effectiveness meta-question (§7); not essential for any proposition
   reference: wigner-1960-unreasonable-effectiveness
 contradictions: []
 results:

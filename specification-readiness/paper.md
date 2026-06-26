@@ -8,8 +8,6 @@ DOI: [10.5281/zenodo.20379981](https://doi.org/10.5281/zenodo.20379981)
 
 Working Paper v1.1.0 – May 2026 (revised June 2026)
 
----
-
 ## Abstract
 
 Organizations incur substantial friction when guessing recipients' need profiles and pushing outputs toward those guesses. This paper develops an information-theoretic theory treating alignment friction as endogenous to specification codification. Architecture decomposes into three layers: a codified specification substrate encoding commitments across six ontological tiers, an interface layer defined by recipient-class perception-weight vectors, and a function layer whose headcount and spend constitute a measurable tax on specification gaps. In push regimes, energy loss scales with cross-entropy between guessed and actual need profiles. In pull regimes, consumption-layer AI lets recipients query the specification directly, collapsing misalignment toward zero as codification completeness rises. Recipient classes are architectural primitives whose distinct perception geometries impose coherence conditions across interfaces. Four contributions follow. First, push-pull cost asymmetry is formalized as a structural analog to Shannon's cross-entropy. Second, geometric machinery links specification to interface rendering. Third, functional friction is a consequence of specification investment rather than governance choice. Fourth, specification readiness is the critical moderator of AI returns, distinguishing Substrate-Operator execution (specification-constrained, coherent across interfaces) from Surface-Operator execution (locally fluent, globally inconsistent). Specification codification is architecturally prior to governance and capability deployment; the theory generates predictions distinct from transaction-cost economics, stakeholder theory, and existing AI-augmentation scholarship.
@@ -32,9 +30,7 @@ Four contributions follow. First, this paper formalizes push-pull asymmetry as a
 
 The paper proceeds as follows. The next section synthesizes structural deficiencies in prior literature and presents a comparative assumptions table. The Multi-Interface Specification Model section introduces the three-layer decomposition, formalizes the rendering operator and coherence condition, and states five formal propositions with comparative statics. The Formalization of Push-Pull Asymmetry section derives the information-theoretic asymmetry and the friction-tax proposition. The Discussion section develops theoretical contributions to the theory of the firm, stakeholder theory, and capability scholarship, enumerates five scope conditions, and addresses falsifiability. The paper concludes with the four interlocking contributions.
 
----
-
-## **Theoretical Lacunae**
+## Theoretical Lacunae
 
 ***Prior Traditions and Their Structural Gaps***
 
@@ -62,7 +58,7 @@ The information-theoretic framing draws on two lineages developed in organizatio
 
 The modularity lineage supplies formal language for interface coherence. Baldwin and Clark [-@baldwin-2000-design-rules-power] establish that layered modular architectures reduce design costs through interface standardization. Ethiraj and Levinthal [-@ethiraj-2004-modularity-innovation-complex] formalize the conditions under which module boundaries stabilize or fragment under search. Galbraith [-@galbraith-2014-designing-organizations-strategy] establishes interface design as the central problem of organizational architecture. Puranam, Raveendran, and Knudsen [-@puranam-2012-organization-design-epistemic] develop epistemic interdependence as the cross-agent design problem that interface architecture must resolve — the cross-layer logic the present paper formalizes. Adner, Puranam, and Zhu [-@adner-2019-what-is-different] establish that digital strategy's distinctiveness lies precisely in the feasibility of specification-constrained rendering that analog architectures could not achieve.
 
-Table 1: Comparison of Assumptions Across Four Theoretical Frameworks.
+**Table 1.** Comparison of Assumptions Across Four Theoretical Frameworks.
 
 | Theoretical assumption | TCE (Coase, Williamson) | Stakeholder Theory (Freeman, Mitchell et al.) | Dynamic Capabilities (Teece, Helfat) | Multi-Interface Specification Model |
 |---|---|---|---|---|
@@ -74,9 +70,7 @@ Table 1: Comparison of Assumptions Across Four Theoretical Frameworks.
 
 *Notes*: Each row identifies a structural assumption made by each tradition. The proposed framework's column shows the move adopted in this paper.
 
----
-
-## **The Multi-Interface Specification Model**
+## The Multi-Interface Specification Model
 
 The central architectural contribution is a three-layer decomposition of organizational output architecture: a specification layer that constitutes what the firm actually is; an interface layer through which that specification is rendered to distinct recipient classes; and a function layer comprising the operational capabilities that maintain alignment between specification and interface.
 
@@ -114,7 +108,7 @@ Interface incoherence is a specification-level contradiction — a property of $
 
 Figure 1 illustrates the model architecture: a single specification vector $\mathbf{S} \in \mathbb{R}^d$ at the center; six perception-weight vectors $\mathbf{w}_1$ through $\mathbf{w}_6$ emanating outward, each with a distinct pattern of dimension weights; six rendering operators $R_1$ through $R_6$ mapping $\mathbf{S} \times \mathbf{w}_i$ to interface-specific scalar evaluations; and six interface labels (Consumer, Investor, Employer-Brand, Regulatory, Supplier-Partner, Peer-and-Media) at the periphery. The key architectural insight is that a single substrate supports six structurally distinct renderings — coherence is a property of $\mathbf{S}$, not of any individual rendering.
 
-**Figure 1:** The Multi-Interface Specification Model — One Substrate, Six Rendering Operators.
+**Figure 1.** The Multi-Interface Specification Model — One Substrate, Six Rendering Operators.
 
 ![](code/plots/figure_1_multi_interface_specification_model.png)
 
@@ -150,9 +144,7 @@ Five formal propositions with comparative statics follow from the three-layer ar
 
 **Proposition 5 (Specification Readiness Moderates AI ROI).** AI return on investment, holding AI spend constant, is monotonically increasing in pre-AI specification codification $c$. Formally, $\partial(\text{ROI}_{\text{AI}})/\partial c|_{\text{spend}} > 0$. *Comparative static*: $\partial(\text{ROI}_{\text{AI}})/\partial(\text{spend})|_{c}$ is bounded above by a function of $c$ — high AI spend without codification produces bounded marginal returns. Specification readiness moderates the substitutability of human Substrate-Operators by AI Substrate-Operators: firms with codified specifications realize higher AI returns because the AI-substitutable share of operator roles is larger. This proposition operationalizes Brynjolfsson, Rock, and Syverson's [-@brynjolfsson-2017-artificial-intelligence-modern] complementarity finding by specifying what the complementary investment must be: codification of the specification substrate that enables AI Substrate-Operator execution rather than Surface-Operator substitution.
 
----
-
-## **Formalization of Push-Pull Asymmetry**
+## Formalization of Push-Pull Asymmetry
 
 ***Information-Theoretic License***
 
@@ -222,9 +214,7 @@ A companion computation repository establishing numerical coherence of the rende
 
 [^code]: The companion computation repository is available at https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness/code/ under MIT license for code and CC BY 4.0 for documentation. The repository is shared with the empirical companion paper Zharnikov [-@zharnikov-2026an-specification-readiness-empirical] at concept DOI 10.5281/zenodo.20384084. The repository contains: [`friction_tax_montecarlo.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/friction_tax_montecarlo.py) (the Monte Carlo friction-tax simulation); [`push_pull_regression_sim.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/push_pull_regression_sim.py) (the regression-identification power simulation); [`PRE_EXPERIMENT_NOTES.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/PRE_EXPERIMENT_NOTES.md) (the pre-registration anchor and anti-HARKing register); [`POST_EXPERIMENT_REPORT.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/POST_EXPERIMENT_REPORT.md) (the PASS/FAIL evaluation and post-hoc deviation log); [`render_figure1.py`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/render_figure1.py) (matplotlib renderer for Figure 1); `monte_carlo_summary.csv` and `regression_simulation_summary.csv` (machine-readable result summaries); `plots/` (twelve diagnostic plots); `logs/` (verbatim stdout from both simulation runs, date-stamped); and [`README.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/code/README.md) documenting run commands, fixed seed, dependency manifest, and DOI linkage. The pre-registered methods appendix lives alongside the code at [`METHODS_APPENDIX.md`](https://github.com/spectralbranding/orgschema-papers/blob/main/specification-readiness/METHODS_APPENDIX.md). Fixed seed: `np.random.seed(20260525)`. The repository does not constitute empirical confirmation; real-firm confirmation requires the archival panel study developed in companion empirical work.
 
----
-
-## **Discussion**
+## Discussion
 
 ***Theoretical Contributions***
 
@@ -264,23 +254,17 @@ The theory generates several falsifiable predictions. First, a negative relation
 
 Operational empirical hypotheses derived from this theory are developed in the companion empirical paper Zharnikov [-@zharnikov-2026an-specification-readiness-empirical], which states the five propositions as falsifiable empirical hypotheses H1–H5 with pre-registered identification strategies and Monte Carlo mechanism tests. Future theoretical work should model mixed-adversarial portfolios, in which some recipient classes are cooperative and others adversarial, to specify the tradeoff between pull efficiency and extraction vulnerability. Future research should also formalize the optimal specification investment path under stochastic recipient perception vectors, building on Levinthal and Wu's [-@levinthal-2024-corporate-strategy-resource] resource-redeployment framework to model how specification investment evolves as firms redeploy capability stocks toward new best uses over time.
 
----
-
-## **Conclusion**
+## Conclusion
 
 These contributions redraw several theoretical boundaries. For the theory of the firm, boundaries should be evaluated not only where market transaction costs exceed internal coordination costs but where specification codification makes pull architecturally feasible. For stakeholder theory, the move from salience to perception geometry shifts the question from "how much attention?" to "how should the firm design its interface portfolio to satisfy cross-class coherence constraints while minimizing aggregate friction?" For capability and AI scholarship, the phase shift is not generic complementarity but a specific requirement that AI penetrate to the specification substrate rather than automate surface rendering.
 
 The theory is bounded by the five scope conditions enumerated above. The ultimate prediction is architectural rather than technological: AI does not render functional layers obsolete, but coherent specification does. Under AI-mediated consumption, the theory predicts that returns to specification codification dominate returns to functional capacity — not as a prescriptive claim but as an observable structural consequence of the push-pull cost asymmetry derived in Proposition 3.
-
----
 
 ## Acknowledgments
 
 AI assistants (Claude Opus 4.8, Grok 4.20 reasoning, Perplexity sonar-pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility. The companion code repository (referenced in the footnote on the formal model section) carries the same author responsibility for design and interpretation; AI was used as implementation assistance under specified parameter constraints, not as a source of independent analytical contribution.
 
 **CRediT Statement**: Dmitry Zharnikov: Conceptualization, Formal Analysis, Writing — Original Draft, Writing — Review and Editing.
-
----
 
 ## References
 
