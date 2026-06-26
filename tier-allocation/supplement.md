@@ -10,8 +10,6 @@ Working Paper v1.0.0 -- May 2026
 
 *The main paper is published at https://doi.org/10.5281/zenodo.20072288 and at https://github.com/spectralbranding/orgschema-papers/tree/main/tier-allocation/. The companion computation script is at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py.*
 
----
-
 This online supplement provides the full mathematical derivations, sensitivity analyses, and robustness checks underlying the formal model presented in the main paper. The companion computation script `back_of_envelope.py` (available at the paper's Zenodo record, DOI 10.5281/zenodo.20072288) reproduces all numerical values reported in both the main paper and this supplement. All values are fully deterministic; no random-number generation is used.
 
 ---
@@ -74,8 +72,6 @@ The optimal Tier-6 dollar-share rises monotonically as r rises. QED.
 
 **Intuition.** As r rises, the per-period rental cost q_t = δ_t + r increases for all tiers, but the proportional increase is larger for low-δ_t (stock) tiers because r is a larger fraction of their smaller denominator. The planner responds by substituting away from the now-relatively-more-expensive stock tiers toward Tier 6, whose high base δ_6 = .50 makes the proportional rental-cost increase smaller. The Jorgensonian rental-rate structure is the formal mechanism that generates the comparative static the paper's propositions rest on.
 
----
-
 ## S2. Sensitivity of V_LR Multiple Gap to r
 
 The ratio V_LR(Profile B; r) / V_LR(Profile A; r) as a function of r, computed under the discounted-Cobb-Douglas maintained specification V_LR(w; r) = A · I · Π_t [m_t · w_t / (δ_t + r)]^{α_t} with α calibration (α_6 = .12; α_4 = α_5 = .24; α_2 = α_3 = .20) and separability factors (m_6 = .25; m₄₋₅ = 1.0; m₂₋₃ = .6):
@@ -88,8 +84,6 @@ The ratio V_LR(Profile B; r) / V_LR(Profile A; r) as a function of r, computed u
 
 *Notes*: Values normalized to A · I = 1. Computed from the back-of-envelope calibration in the "Two-Tier Minimal Illustration" section of the main paper with w profiles (A: w₆ = .70, w₄₋₅ = .20, w₂₋₃ = .10; B: w₆ = .15, w₄₋₅ = .65, w₂₋₃ = .20) and α exponents calibrated proportional to M&A separability factors. Under constant returns to scale (Σ_t α_t = 1), the B/A ratio is exactly r-invariant at 1.93: as r rises, all per-tier productivity factors m_t/(δ_t+r) fall for both profiles, but they cancel in the ratio (I^{Σα_t} = I factors out). The V_LR levels decline substantially with r — from .268/.518 at r = .10 to .188/.363 at r = .20 — reflecting that higher discount rates compress the present value of all perpetuity-form tier stocks. The r-sensitivity surfaces in the optimal dollar-share dollar-share_6*(r) (Section S1), not in the B/A ratio at fixed w-profiles. The B/A multiple gap of 1.93× is stable across the relevant discount-rate range, reproducing the *ordinal* structure of observed M&A multiple differentials but understating the magnitude (empirical gap is closer to 4–6×). All values are reproducible from the companion computation script (`back_of_envelope.py`, function `reproduce_appendix_a2()`).
 
----
-
 ## S3. Alternative α_t Calibrations
 
 The α_t output elasticities (α_6 = .12, α_4 = α_5 = .24, α_2 = α_3 = .20) are calibrated proportional to the M&A separability factors m_t. Sensitivity checks across two alternative specifications, computed under the discounted-Cobb-Douglas maintained specification at r = .15:
@@ -101,8 +95,6 @@ The α_t output elasticities (α_6 = .12, α_4 = α_5 = .24, α_2 = α_3 = .20) 
 | Concentrated-stock (α_6 = .05; α_4 = α_5 = .30; α_2 = α_3 = .175) | .234 | .559 | 2.39 |
 
 *Notes*: Values computed under the maintained specification V_LR(w; r) = A · I · Π_t [m_t · w_t / (δ_t + r)]^{α_t} at r = .15; all values are reproducible from the companion computation script (`back_of_envelope.py`, function `reproduce_appendix_a3()`). The B/A multiple ratio ranges from 1.55× to 2.39× across the alternative α-vector specifications, confirming the qualitative stability of the result. The directional prediction — Profile B commands a substantially higher multiple than Profile A regardless of the α calibration — is robust to reasonable parameter variation. As α_6 falls, the magnitude gap widens: the "Concentrated-stock" specification with α_6 = .05 produces a 2.39× ratio, closer to the empirical 4–6× range. The validation roadmap (Appendix: Validation Roadmap of the main paper, Priority 1) jointly estimates α_t and δ_t from a Compustat panel where the parameters are identified from the data rather than chosen to reproduce target ratios.
-
----
 
 ## S4. CES Robustness Check on Comparative Static
 
