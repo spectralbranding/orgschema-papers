@@ -23,28 +23,23 @@ meta:
   - organizational architecture
   - resource separability
   - tier rotation
-  abstract: 'When founders exit branded firms, deal outcomes diverge sharply even among principals of
-    comparable quality and brand strength. This paper attributes that variation to the proportion of brand
-    conviction (the factual beliefs observers hold about the brand''s performance claims, distinct from
-    evaluative attitude) that has been externalized from the founder''s personal judgment into organizational
-    routines, guidelines, decision rights, and trademarks that an acquirer can own independently. Brand
-    signal is modeled as accumulating in an organizational substrate according to a logistic trajectory
-    whose rate is governed by sustained knowledge-externalization effort, a cold-start offset, and sector
-    substitutability. Acquirer willingness-to-pay is a piecewise function of organizational-brand share
-    featuring a separability threshold (the threshold above which brand assets become acquirable independent
-    of the originating principal): below the threshold, founder-flight risk produces discounts and earnout
-    structures; above it, the brand commands a premium increasing with sector substitutability. The model
-    yields three contributions. First, it derives a non-monotonic value geometry with a discontinuous
-    slope at the separability threshold — generating within-founder longitudinal predictions unavailable
-    to cross-sectional human-capital or succession-discount theories, and constituting a sharp empirical
-    wedge against them. Second, it grounds the accumulation process in Nonaka and Takeuchi''s [-@nonaka-1995-knowledgecreating-company-how]
-    SECI externalization mechanism and identifies four observable proxies — shifts in 10-K language, advertising
-    allocation, media salience, and trademark composition — that allow empirical distinction from quality-based
-    accounts. Third, it endogenizes the RBV''s assumption of differential resource mobility for brand
-    assets, extending the dynamic capabilities tradition [@teece-1997-dynamic-capabilities-strategic;
+  abstract: 'When founders exit branded firms, outcomes diverge even among comparable principals. This
+    paper attributes that variation to the share of brand conviction (factual, not evaluative) externalized
+    from the founder into organizational routines, guidelines, decision rights, and trademarks an acquirer
+    can own independently. Brand signal accumulates in this organizational substrate along a logistic
+    trajectory governed by knowledge-externalization effort, a cold-start offset, and sector substitutability.
+    Acquirer willingness-to-pay is piecewise in this share around a separability threshold: below it,
+    founder-flight risk produces discounts and earnouts; above it, the brand commands a premium increasing
+    with sector substitutability. First, the model derives a non-monotonic value geometry with a slope
+    discontinuity at the threshold, yielding within-founder longitudinal predictions unavailable to cross-sectional
+    human-capital or succession-discount theories — a sharp empirical wedge. Second, it grounds accumulation
+    in Nonaka and Takeuchi''s [-@nonaka-1995-knowledgecreating-company-how] SECI externalization mechanism
+    and derives four observable proxies — 10-K language, advertising allocation, media salience, and trademark
+    composition — distinguishing it from quality-based accounts. Third, it endogenizes the RBV''s differential-mobility
+    assumption for brand assets, extending the dynamic capabilities tradition [@teece-1997-dynamic-capabilities-strategic;
     @eisenhardt-2000-dynamic-capabilities-what] by specifying the mechanism, threshold, and sector moderator
-    that determine when initially sticky brand resources become separable. The theory is illustrated with
-    four boundary objects and yields five falsifiable propositions.'
+    governing when sticky brand resources become separable. Four boundary objects illustrate the theory,
+    yielding five falsifiable propositions.'
 claims:
 - id: P1
   type: proposition

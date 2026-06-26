@@ -25,24 +25,23 @@ meta:
   - test-driven development
   - organizational learning
   - information-processing design
-  abstract: Organizational verification systems consume enormous resources yet frequently fail to produce
-    substantive alignment between behavior and objectives. This paper develops an operator-theoretic explanation.
-    Verification is formalized as a spectral projection operator $P$ that maps organizational states onto
-    invariant subspaces defined by acceptance criteria. Conventional audit operates as a degenerate rank-1
-    projection onto a single compliance axis, discarding by construction all information orthogonal to
-    that axis. This algebraic property explains the persistent information loss documented in the audit-society
-    literature. In contrast, the acceptance-testing cascade developed in Organizational Schema Theory
-    constitutes a full-rank spectral projection in which each hierarchical level independently projects
-    onto a distinct performance subspace while preserving the overall dimensional structure of the specification.
-    Synthesizing organizational cybernetics, behavioral organization theory, and software engineering
-    verification and test-driven development, the paper demonstrates that these three traditions implicitly
-    rely on the same projection identity. Three propositions establish the rank inequality between audit
-    and cascade systems, the cascade-consistency condition required for full-rank operation, and the bandwidth
-    bound on sustainable projection rank. A formal simulation shows that rank-1 audit leaves approximately
-    90% of organizational deviation undetected in a six-dimensional specification space. The framework
-    reconnects verification architecture to information-processing design, offers testable mechanisms
-    for organizational learning and decoupling, and provides practical guidance for organizations whose
-    performance requirements are irreducibly multi-dimensional.
+  abstract: Organizational verification consumes enormous resources yet frequently fails to align behavior
+    with objectives. This paper develops an operator-theoretic explanation. Verification is formalized
+    as a spectral projection operator $P$ mapping organizational states onto invariant subspaces defined
+    by acceptance criteria. Conventional audit is a degenerate rank-1 projection onto a single compliance
+    axis, discarding by construction all information orthogonal to that axis — an algebraic property that
+    explains the persistent information loss documented in the audit-society literature. By contrast,
+    the acceptance-testing cascade of Organizational Schema Theory is a full-rank spectral projection
+    in which each hierarchical level independently projects onto a distinct performance subspace, preserving
+    the specification's dimensional structure. Synthesizing organizational cybernetics, behavioral organization
+    theory, and software engineering verification and test-driven development, the paper shows these three
+    traditions implicitly rely on the same projection identity. Three propositions establish the rank
+    inequality between audit and cascade systems, the cascade-consistency condition required for full-rank
+    operation, and the bandwidth bound on sustainable projection rank. A formal simulation shows rank-1
+    audit leaves approximately 90% of organizational deviation undetected in a six-dimensional specification
+    space. The framework reconnects verification architecture to information-processing design, yields
+    testable mechanisms for organizational learning and decoupling, and guides organizations whose performance
+    requirements are irreducibly multi-dimensional.
 claims:
 - id: P1
   type: proposition

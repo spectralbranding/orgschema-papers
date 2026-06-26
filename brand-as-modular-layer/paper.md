@@ -427,6 +427,8 @@ The V parameter measurement equation in P7 — $V = w_1 \cdot v_{\text{name}} + 
 
 *Aggregation.* Compute v_name, v_visual, v_endorse as the mean of per-instance 0/1 scores over all Tier-4 instances in the firm's portfolio. Apply equal weights $w_1 = w_2 = w_3 = 1/3$ unless sector-level recalibration is available. Compute V; assign architecture class as Branded House ($V \ge .85$), Sub-brand ($.55 \le V < .85$), Endorsed ($.20 \le V < .55$), House of Brands ($V < .20$). Inter-rater agreement (Krippendorff's alpha) of .80 or higher across two independent raters is the recommended reliability threshold per P7.
 
+The companion per-tier separability rubric that operationalizes the $s_2, s_3, s_5, s_6$ scores feeding the MBCD composite is given in Table 6.
+
 **Table 6.** MBCD Per-Tier Scoring Rubric. The rubric below supplies the per-tier scoring for the Multi-Brand Capacity Diagnostic (MBCD) introduced in P1 and Table 4. Each tier is scored on a 1–5 separability scale; Tier 4 is omitted because it is the brand instance itself.
 
 | Score | Tier 1 (Owner Intent) | Tier 2 (Business Model) | Tier 3 (Business Entity) | Tier 5 (Process) | Tier 6 (Organization) |
@@ -454,7 +456,7 @@ AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial
 
 ## CRediT contributions
 
-Conceptualization, methodology, formal analysis, investigation, writing -- original draft, writing -- review and editing, visualization: Dmitry Zharnikov.
+Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, visualization: Dmitry Zharnikov.
 
 ## References
 

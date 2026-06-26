@@ -64,7 +64,7 @@ If every operational parameter exists to serve a customer-defined acceptance tes
 
 ## Positioning Against Existing Frameworks
 
-The OrgSchema Audit occupies a distinct position in the landscape of organizational diagnostics. Ferraro [-@ferraro-2023-maturity-models-trends] observes that maturity models have proliferated across management domains but increasingly converge on similar structural patterns — staged progression, capability assessment, benchmarking — while leaving the question of *what the organization should produce for its customers* outside the model's scope. To clarify its contribution, this section engages with the five frameworks most likely to be seen as competitors.
+The OrgSchema Audit occupies a distinct position in the landscape of organizational diagnostics. Ferraro [-@ferraro-2023-maturity-models-trends] observes that maturity models have proliferated across management domains but increasingly converge on similar structural patterns — staged progression, capability assessment, benchmarking — while leaving the question of *what the organization should produce for its customers* outside the model's scope. To clarify its contribution, this section engages with the five frameworks most likely to be seen as competitors; Table 1 summarizes the comparison.
 
 *The Process and Enterprise Maturity Model.* Hammer's [-@hammer-2007-the-process-audit] PEMM is the closest prior diagnostic in structure — a level-based audit of process maturity with traffic-light assessments. PEMM evaluates five process enablers (design, performers, owner, infrastructure, metrics) across four maturity levels and four enterprise capabilities. The critical structural difference is the absence of customer experience as a root specification. An organization can score green on every PEMM dimension — fully mature processes with skilled performers, clear ownership, adequate infrastructure, and comprehensive metrics — while those processes produce the wrong customer experience, because PEMM does not require processes to trace their existence to customer-defined acceptance tests. A recent review of BPM capability and maturity models [@turetken-2024-business-process-management] confirms that most maturity frameworks evaluate process sophistication without linking maturity levels to customer-defined outcomes, reinforcing this structural gap. The OrgSchema Audit adds the vertical dimension that PEMM lacks: not "Is this process mature?" but "Does this process have a justified reason to exist, traceable to what the customer should experience?"
 
@@ -200,7 +200,7 @@ Coffee supplier (Nordic Roasters GmbH) has documented certifications (direct tra
 
 ## Audit Summary and Cascade Prioritization
 
-The Spectra Coffee audit reveals a high-maturity operation with five of six levels at healthy specification status. The findings, prioritized by cascade position:
+The Spectra Coffee audit reveals a high-maturity operation with five of six levels at healthy specification status. The findings, prioritized by cascade position, are summarized in Table 2:
 
 **Table 2.** OrgSchema Audit Findings for Spectra Coffee, Prioritized by Cascade Position.
 

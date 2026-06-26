@@ -27,20 +27,19 @@ meta:
   - substrate accumulation
   abstract: 'Why do two firms with identical revenues, margins, and aggregate investment generate exit
     multiples of 2× versus 9× — and why do identical AI investments produce divergent M&A multiples despite
-    comparable short-run gains? This paper formalizes the cross-tier allocation problem using a vector
-    w spanning operating tiers that differ in asset durability, with tier-specific decay rates δ_t ranging
-    from .50/year at the organizational surface (advertising) to .05–.10/year at foundational layers.
-    Long-run value is a discounted Cobb-Douglas aggregator incorporating Jorgensonian user costs $(\delta_t
-    + r)$; optimizing subject to the per-tier rental-rate budget constraint yields the closed-form rule
-    $w_t^*(r) = \alpha_t / (\delta_t + r)$ and the comparative static $\partial w_6^*/\partial r > 0$.
-    Four allocation propositions link pre-deal surface-tier intensity, governance horizon, cost-of-capital
-    shocks, and capability-rotation stage to M&A outcomes. The framework is then extended with two AI-specific
-    shocks per tier — a cost shock $\gamma_t$ and a durability shock $\Delta_t$ — yielding the generalized
-    rule $w_t^*(r; \gamma, \Delta) = \alpha_t / [\gamma_t \cdot (\delta_t^{\text{eff}} + r)]$ and three
-    further propositions: surface-tier AI raises short-run earnings yet lowers long-run multiples; a discrete
-    substrate-building threshold exists at Tier 4; and AI''s net value effect flips sign with the principal''s
-    effective discount rate. Investment direction — not merely intensity — is the consequential strategic
-    choice.'
+    comparable short-run gains? This paper formalizes cross-tier allocation using a vector w over operating
+    tiers differing in asset durability, with decay rates δ_t ranging from .50/year at the organizational
+    surface (advertising) to .05–.10/year at foundational layers. Long-run value is a discounted Cobb-Douglas
+    aggregator with Jorgensonian user costs $(\delta_t + r)$; optimizing under the per-tier rental-rate
+    budget yields the closed-form rule $w_t^*(r) = \alpha_t / (\delta_t + r)$ and the comparative static
+    $\partial w_6^*/\partial r > 0$. Four propositions link pre-deal surface-tier intensity, governance
+    horizon, cost-of-capital shocks, and capability-rotation stage to M&A outcomes. The framework then
+    adds two AI-specific shocks per tier — a cost shock $\gamma_t$ and a durability shock $\Delta_t$ —
+    yielding the generalized rule $w_t^*(r; \gamma, \Delta) = \alpha_t / [\gamma_t \cdot (\delta_t^{\text{eff}}
+    + r)]$ and three further propositions: surface-tier AI raises short-run earnings yet lowers long-run
+    multiples; a discrete substrate-building threshold exists at Tier 4; and AI''s net value effect flips
+    sign with the principal''s effective discount rate. Investment direction, not intensity, is the consequential
+    strategic choice.'
 claims:
 - id: P0
   type: proposition
