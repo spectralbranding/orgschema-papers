@@ -32,7 +32,7 @@ The paper proceeds by first developing the operator framework and demonstrating 
 
 **Figure 1.** Architectural contrast between rank-1 audit and full-rank cascade. The rank-1 audit funnels every specification dimension through a single compliance bottleneck and emits a binary verdict; the full-rank cascade routes each cascade level through an independent projection that emits a level-localized pass/fail, preserving the dimensional structure of the specification.
 
-```mermaid
+```{.mermaid width=60%}
 flowchart LR
   subgraph rank1["Rank-1 Audit (P_audit)"]
     direction LR
@@ -293,6 +293,10 @@ The framework advances information-processing theory by showing that verificatio
 The operator account opens three research streams. Future work should examine how verification bandwidth coevolves with organizational attention structures [@ocasio-1997-towards-attentionbased-view], how projection rank affects rates of organizational learning and innovation, and whether full-rank cascades can be sustained at scale without modularization [@simon-1962-architecture-complexity-proceedings] and differentiation [@lawrence-1967-differentiation-integration-complex]. The bandwidth bound in Proposition 3 yields a directly testable hypothesis: organizations with higher verification bandwidth should sustain higher-rank cascades and exhibit better specification alignment, measurable from panel data linking verification architecture to multi-dimensional performance outcomes.
 
 The choice facing organizations is no longer whether to audit more rigorously but whether to verify at the rank their ambitions require. Information discarded by a rank-1 projection cannot be recovered through better incentives or more frequent review. Only a change in the architecture of verification itself can restore substantive alignment between what organizations claim and what they become.
+
+## Data and Code Availability
+
+The companion computation script (`projection_simulation.py`), its full numeric outputs (`simulation_results.json`), and the machine-readable paper specification (`paper.yaml`) are openly available in the public mirror at <https://github.com/spectralbranding/orgschema-papers/tree/main/verification-as-operator>. The simulation reported in Appendix B and Table 1 is fully reproducible from that script (NumPy, fixed random seed 42); the run command appears in the Companion Computation Script subsection of Appendix B. This paper is archived on Zenodo under concept DOI <https://doi.org/10.5281/zenodo.19778588> (version-agnostic; the version-specific DOI is assigned at each deposit).
 
 ## Acknowledgments
 
