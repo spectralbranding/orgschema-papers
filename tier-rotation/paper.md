@@ -74,6 +74,17 @@ A moderator on rotation effort intensity (e) deserves explicit naming. Fauchart 
 
 The logistic accumulation equation in the next section is the mathematical encoding of this mechanism. Four observable intermediate markers of rotation progress derive from the mechanism and are specified in Proposition P5 (Table 3): declining founder-language salience in 10-K filings (Externalization → explicit brand documentation); shifting marketing-spend allocation from founder-attribute to product-attribute advertising (Combination → systematic product-brand investment); declining founder-media share of total brand impressions (Internalization → team-driven brand communication); and trademark-portfolio migration from founder-name marks to product-attribute marks (Combination → formal IP codification).
 
+**Table 3.** Knowledge-Externalization Observables.
+
+| Observable | Direction Along Trajectory | Data Source | Validation Status |
+|------------|----------------------------|-------------|-------------------|
+| 10-K founder-language salience | Declines: founder-name-dominant → product-system-dominant | EDGAR full-text API; NLP on Item 1 + MD&A | Novel (no validated proxy) |
+| Marketing-spend allocation (founder-attribute vs. product-attribute) | Shifts toward product-attribute as s rises | Compustat XAD; hand-coded campaign type via LexisNexis / Factiva | Aggregate proxy in Belo, Lin, and Vitorino [-@belo-2014-brand-capital-firm]; decomposition novel |
+| Founder-media share of brand impressions | Declines: near-100% (Stage 1) → single digits (Stage 4) | Meltwater, Cision; Factiva normalized search frequency | Novel (no validated proxy) |
+| Trademark portfolio composition (founder-name vs. product-attribute) | Shifts toward product-attribute marks | USPTO + EUIPO trademark registries; matched via EDGAR | Trademark data partially validated in Belo et al. [-@belo-2014-brand-capital-firm]; decomposition novel |
+
+*Notes*: The four observables are proposed as operationalizations of the rotation-effort intensity parameter e and the Tier-4 share construct s. None has been validated as a direct proxy for s in a published peer-reviewed study; validation is Priority 1 in the empirical agenda. "Founder-language salience" comprises the frequency of the founder's name, founder-attributed language ("my vision," "my standard"), and founder-identity cues in 10-K Item 1 and Management Discussion sections. "Founder-attribute advertising" features founder persona or founder endorsement; "product-attribute advertising" features product claims, design, or performance. The four observables are expected to move in coordinated fashion, reflecting a common latent rotation factor, and to predict eventual deal structure and multiple; this coordination is the empirical content of P5.
+
 ### Decoupling: Substantive Versus Symbolic
 
 Bromley and Powell [-@bromley-2012-smoke-mirrors-walking] distinguish symbolic from substantive decoupling in the organizational behavior literature. Symbolic decoupling involves the adoption of formal structures, policies, or labels that are not matched by underlying operational change — what Bromley and Powell term "means-ends decoupling." Substantive decoupling involves genuine operational change that is structurally distinct from the nominal structure. Crilly, Hansen, and Zollo [-@crilly-2016-grammar-decoupling-cognitivelinguistic] extend this distinction by showing that decoupling can be parsed cognitive-linguistically: stakeholders distinguish symbolic from substantive claims by attending to whether disclosed practices are accompanied by coordinated patterns of organizational action rather than by isolated formal markers. The tier-rotation literature must make an equivalent distinction, and the cognitive-linguistic refinement of Crilly, Hansen, and Zollo [-@crilly-2016-grammar-decoupling-cognitivelinguistic] gives the empirical strategy in the present paper its diagnostic shape: the four P5 observables must shift in *coordinated* direction to count as structural rotation; an isolated shift in any one observable is consistent with symbolic rotation alone.
@@ -135,7 +146,36 @@ $$h(s) = \left(1 + \gamma \cdot g(\sigma) \cdot (s - \kappa)/(1 - \kappa)\right)
 
 where $\beta > 0$ is the founder-flight discount rate (the proportional discount below $V_0$ at $s = 0$, so that $h(0) = 1 - \beta$, representing the liquidation floor) and $\gamma > 0$ is the separability premium rate (the proportional premium above $V_0$ per unit of Tier-4 share above $\kappa$, amplified by sector substitutability). The function $h$ is continuous in level at $s = \kappa$ but has a discontinuous first derivative there: the marginal value of an additional increment of Tier-4 share is strictly higher above $\kappa$ than below it for any non-zero $\sigma$. This discontinuous slope — not a discontinuous level — is the geometric content of the non-monotonic value function (Figure 1 illustrates the geometry; the formal continuity-and-discontinuity proof is in Appendix A).
 
+**Figure 1.** The Tier-Rotation Curve — M&A Value Geometry.
+
+```{.mermaid width=75%}
+quadrantChart
+    x-axis Low Tier-4 Share --> High Tier-4 Share
+    y-axis Low Acquisition Value Ratio --> High Acquisition Value Ratio
+    quadrant-1 Stage 3 to 4 Positive Premium
+    quadrant-2 No Region
+    quadrant-3 Stage 1 Negative Optionality
+    quadrant-4 Stage 2 Transition Band
+    Yeezy Adidas: [0.12, 0.22]
+    Casamigos Diageo: [0.55, 0.40]
+    Tom Ford EL: [0.70, 0.72]
+    Kongo Gumi: [0.82, 0.88]
+```
+
+*Notes*: The horizontal axis represents Tier-4 share $s$ from 0 (pure Tier-1 personal substrate) to 1 (pure Tier-4 institutional substrate). The vertical axis represents the M&A value ratio $V(s)/V_0$ relative to standalone operating value $V_0$. The vertical and horizontal midlines mark the separability kink $\kappa$ (plotted at $s = .50$ for illustration; actual $\kappa$ is sector-specific) and divide the negative-optionality region (Stage 1 lower-left, Stage 2 lower-right: $V(s)/V_0 < 1$) from the positive-premium region (Stage 3 to 4 upper-right: $V(s)/V_0 > 1$). The upper-left quadrant ("No Region") is empty by construction: a brand cannot exhibit high acquisition value with low Tier-4 share. The four illustrative cases are plotted at approximate theoretical stage positions, not at empirically measured $s$ values. The slope of $V(s)$ is discontinuous at $\kappa$: the marginal value of an additional increment of Tier-4 share is substantially higher above $\kappa$ than below it. The quadrant chart is a schematic rendering of the $V(s)$ curve for expository purposes; the formal model specifies $h(s, \kappa, \sigma)$ as a piecewise continuous function with continuous level and discontinuous first derivative at $\kappa$. Sector substitutability $\sigma$ varies the steepness of $h(s)$ above $\kappa$ but not the qualitative non-monotonic geometry; for clarity, a single $\sigma$ level is depicted.
+
 The four-stage regions visible in Figure 1 correspond to four regions of $h(s)$: Stage 1 ($s$ near 0): $h(s) \approx 1 - \beta$, negative optionality in the real-options sense [@dixit-1994-investment-under-uncertainty] — the acquirer cannot independently exercise the brand-asset option until Tier-4 base exceeds $\kappa$. Stage 2 ($s \in [\varepsilon, \kappa - \varepsilon]$): discount compresses as $s$ rises toward $\kappa$. Stage 3 ($s \in (\kappa, 1 - \varphi)$): premium region, steeper slope than the discount region. Stage 4 ($s$ near $1 - \varphi$): premium approaches $(1 + \gamma \cdot g(\sigma)) \cdot V_0$, limited by the asymptotic constraint that full rotation is never complete.
+
+**Table 1.** Four Stages of Tier Rotation.
+
+| Stage | Tier-1 Share | Tier-4 Share | M&A Value at Exit | Illustrative Case |
+|-------|-------------|-------------|-------------------|-------------------|
+| Stage 1 — Pure personal | ~100% | ~0% | Negative optionality: deal price below standalone asset value; founder-flight risk priced in as discount | Yeezy / Adidas: ~€1.2B 2022 revenue (Adidas AR); near-zero transfer value at termination |
+| Stage 2 — Partial projection | 60–80% | 20–40% | Zero-to-low premium; earnout structures required; founder retention contractually mandated | Casamigos / Diageo: $700M upfront + $300M earnout |
+| Stage 3 — Substantial projection | 20–40% | 60–80% | Scales with product-brand standalone value; founder halo optional but retained | Tom Ford / Estée Lauder: $2.8B EV; creative director retained through 2026 |
+| Stage 4 — Institutional | <20% | >80% | Equals or exceeds product-brand standalone; founding narrative migrated to Tier-6 cultural infrastructure | Kongō Gumi: 1,428-year operation; absorbed into Takamatsu at institutional merger terms |
+
+*Notes*: Tier-1 share and Tier-4 share are theoretical approximations based on the model's continuous s variable, expressed as approximate percentages for readability; the formal model uses the decimal representation $s \in [0,1]$. Boundary values are stylized representations of the stage regions, not empirical measurements. M&A value at exit is expressed relative to $V_0$ (standalone operating value under continued founder operation). Illustrative cases are not statistical tests of the stages; they are selected to represent the four regions of the $V(s)$ curve. The Stage 2-to-3 transition corresponds to the separability kink $\kappa$ in the formal model.
 
 ### Comparative Statics
 
@@ -147,6 +187,19 @@ Table 2 summarizes the comparative statics of the model. The key results:
 - $\partial T_{\min}/\partial e < 0$: higher effort reduces time to reach the kink.
 - $\partial T_{\min}/\partial \sigma < 0$: higher substitutability reduces minimum rotation time (organizational capacity builds faster when the product-brand specification layer attracts investment under competitive substitution pressure).
 - $\partial V/\partial \kappa < 0$ for the acquirer (lower $\kappa$ means the premium region is attained at lower rotation investment): the separability threshold is a structural parameter the firm cannot choose but whose level determines the cost of rotation.
+
+**Table 2.** Comparative Statics Summary.
+
+| Variable | Direction | Effect Path | Theoretical Anchor |
+|----------|-----------|-------------|--------------------|
+| Rotation effort $e$ | $\partial s/\partial e > 0$; $\partial T_{\min}/\partial e < 0$ | Accelerates accumulation toward $\kappa$ | SECI externalization loop |
+| Separability kink $\kappa$ | $\partial V/\partial \kappa < 0$ for acquirer | Raises threshold for positive premium | Sector-specific; not firm-choice |
+| Sector substitutability $\sigma$ | $\partial V/\partial \sigma > 0$ for $s > \kappa$; $\approx 0$ for $s < \kappa$ | Amplifies premium above $\kappa$; no effect below | Credence vs search goods |
+| Time horizon $T$ | $\partial s/\partial T > 0$ for $e > 0$ | Longer sustained effort $\to$ higher $s$ at exit | Logistic accumulation monotone in $T$ |
+| Substrate fragility $\varphi$ | $\partial T_{\min}/\partial \varphi < 0$ | Higher cold-start base $\to$ faster initiation | Corporate-form infrastructure |
+| Founder tenure length | Ambiguous (effort-conditional) | Long tenure + zero effort $\to$ Stage 1 trap | Tenure $\times$ effort, not tenure alone |
+
+*Notes*: Comparative statics derived from Equations 1–4; all partial derivatives hold other parameters constant. "Direction" gives the sign of the marginal effect; "Effect Path" the channel through which the variable affects $V(s)$ or $s(t)$; "Theoretical Anchor" the underlying mechanism. Acquirer-facing comparative statics for $\kappa$ apply to the premium region ($s > \kappa$); below $\kappa$, the kink location primarily affects which side of the kink the deal falls on rather than the level of the discount. Substrate fragility $\varphi$ corresponds to the corporate-form base layer (registered trademarks, brand guidelines, separate legal vehicle) that provides a non-zero starting point for rotation.
 
 ### Boundary Conditions
 
@@ -226,6 +279,18 @@ Kongō Gumi, founded in 578 CE by Korean carpenter Shigemitsu Kongō in what is 
 
 Three contributions are restated more precisely here than in the opening commentary. A cross-theory comparison is presented in Table 4.
 
+**Table 4.** Cross-Theory Comparison.
+
+| Dimension | Human-Capital Account | Tier-Rotation Account | Empirical Wedge |
+|-----------|-----------------------|------------------------|------------------|
+| Explanans | Founder or successor quality / type | Tier-4 share $s$; position vs. $\kappa$ | Longitudinal multiple shift at $\kappa$ |
+| Unit of analysis | Founder or CEO | Brand asset nested in focal firm | Within-founder longitudinal variation |
+| Mechanism | Returns to founder human capital | SECI externalization → Tier-4 codification | Coordinated P5 marker shifts (Table 3) |
+| Pre/post-rotation prediction | No multiple shift for fixed-quality founder | Structural multiple shift after crossing $\kappa$ | Falsifiable divergence (P2) |
+| Scope | Cross-sectional; family-firm succession; CEO typology | Within-founder longitudinal; any founder-to-product transition | Scope extension; not contradiction |
+
+*Notes*: The Human-Capital Account row consolidates Bennedsen, Nielsen, Pérez-González, and Wolfenzon [-@bennedsen-2007-inside-family-firm]; Pérez-González [-@prezgonzlez-2006-inherited-control-firm]; and Chen, Huang, Meyer-Doyle, and Mindruta [-@chen-2021-generalist-versus-specialist]. The empirical wedge in the fourth row is the core testable divergence between the two accounts. Both accounts are consistent with the cross-sectional evidence; the tier-rotation account makes additional predictions in the longitudinal case that the human-capital account does not. A within-founder or matched-pair design that finds a significant positive rotation-proxy effect after human-capital controls constitutes evidence for the tier-rotation account; a null result supports the human-capital account. The comparison is not intended to suggest that these literatures are competing in the strong sense — human capital and rotation stage may both predict M&A multiple in a multivariate design, with the rotation-proxy score adding incremental R-squared after human-capital controls.
+
 First, the paper establishes that M&A value for founder-led brands is non-monotonic in Tier-4 share — specifically, that the slope of the $V(s)$ function is discontinuous at the separability kink $\kappa$. This is a structural result, not an empirical finding: it is derived from the definition of $\kappa$ as the threshold above which the Tier-4 layer is acquirable independently. The implication for the succession-discount literature is methodological: studies that rely on cross-sectional variation in founder successor type [@bennedsen-2007-inside-family-firm; @prezgonzlez-2006-inherited-control-firm] will not detect the within-founder, longitudinal variation that the tier-rotation account predicts. Cross-sectional studies conflate variation in s at deal close with variation in founder quality, producing systematically biased estimates of the "founder discount" wherever founder quality and rotation stage are correlated. Within-founder analyses — comparing multiple exit events by the same founder at different rotation stages, or instrumenting for rotation stage exogenously — are required to test P2 (see Table 4).
 
 Second, the paper connects the SECI externalization mechanism [@nonaka-1995-knowledgecreating-company-how] to the financial economics of intangible-asset transfer in a formalized theoretical framework. The knowledge management literature has not derived M&A implications from the knowledge-externalization cycle; the financial economics literature has not grounded brand-capital measurement [@belo-2014-brand-capital-firm; @belo-2022-decomposing-firm-value] in a micro-mechanism that accounts for the personal-versus-institutional substrate split. The tier-rotation framework bridges these streams. Schilke, Hu, and Helfat [-@schilke-2018-quo-vadis-dynamic] identify mechanism specification as the central unresolved challenge in dynamic-capabilities research; the tier-rotation model addresses this challenge for the specific case of brand-asset separability by grounding the externalization capability in Nonaka and Takeuchi's [-@nonaka-1995-knowledgecreating-company-how] SECI cycle and deriving its threshold and time-path properties.
@@ -265,6 +330,16 @@ The RBV's treatment of resource mobility as exogenous has been subject to ongoin
 The Tier-Rotation Curve is a theory of M&A value: it asks what fraction of brand signal has been projected from Tier-1 into Tier-4 such that the brand can be acquired by an entity that does not contain the originating principal. Succession is a geometrically distinct event: the entity continues; the principal occupant of Tier-1 changes from P_old to P_new. This distinction — Tier-1 occupant replacement versus Tier-1 removal — has consequences that the present model does not formally address.
 
 Three differences are immediate, as summarized in Table 5. First, at M&A exit, Tier-5 process knowledge is partially supplied by the acquirer's own management capacity; at succession, Tier-5 must transfer with the entity because P_new will run the operation. The bottleneck in succession is therefore knowledge transfer between principals, not separability for an external buyer. Second, at M&A, the acquirer prices the substrate-decoupling state at deal time; at succession, the family or board must assess substrate-decoupling on a multi-decade rotation timeline, beginning years or decades before the planned handover. Third, the empirical signature differs. M&A failures under insufficient rotation appear as goodwill impairment on the acquirer's books — the signature targeted by P4. Succession failures appear as within-firm operating-performance decline: the approximately four percentage-point ROA decline documented by Bennedsen, Nielsen, Pérez-González, and Wolfenzon [-@bennedsen-2007-inside-family-firm] and the fourteen-percent operating-return decline documented by Pérez-González [-@prezgonzlez-2006-inherited-control-firm]. These succession-discount findings are used in this paper as cross-sectional benchmarks against which the tier-rotation account offers longitudinal refinement; they are not the empirical signature of M&A substrate failure, which is the paper's primary concern.
+
+**Table 5.** Three Event-Type Distinctions in the Six-Tier Architecture.
+
+| Event type | Tier-1 substrate change | Tier-4 substrate question at decision time | Empirical signature | Decision horizon |
+|---|---|---|---|---|
+| M&A exit (paper's primary focus) | Tier-1 *removed* (founder departs; no replacement) | Has Tier-4 share $s$ crossed separability kink $\kappa$? | $V(s)$ non-monotonicity at deal close; goodwill impairment if $s < \kappa$ | Single event at deal time |
+| Succession | Tier-1 *replaced* (founder exits; new principal $P_{\text{new}}$ occupies Tier-1) | Has Tier-5 process knowledge transferred from $P_{\text{old}}$ to $P_{\text{new}}$? | ~4pp ROA decline [@bennedsen-2007-inside-family-firm]; ~14% operating return decline post-family-CEO succession [@prezgonzlez-2006-inherited-control-firm] | Multi-decade rotation window plus discrete transfer event |
+| Tier-allocation | Tier-1 unchanged | Where in the six-tier portfolio does new investment land? | Two firms with identical aggregate spend but different tier-allocation $\mathbf{w}$ produce structurally different M&A multiples and EBIT-persistence half-lives | Within-period (recurring annual decision) |
+
+*Notes*: M&A exit is the focal event of the formal model developed in this paper. Succession and tier-allocation are distinct decision margins discussed in the *Succession as a Distinct Geometric Event* and *Tier-Allocation of Capital as a Distinct Decision Margin* subsections of the Discussion respectively; their formal extension is deferred to future work. The three event types share the same six-tier substrate ontology but invoke geometrically distinct questions at the decision moment.
 
 Extending the present framework to handle Tier-1 occupant replacement would require a succession discount function parallel to, but geometrically distinct from, $V(s)$: one that accounts for the Tier-5 knowledge-transfer bottleneck, the multi-decade preparation timeline, and the fact that the entity persists through the transition rather than being acquired by a new owner. Such an extension is deferred to future work. The present paper restricts attention to M&A exits to keep the formal apparatus tractable; succession-specific extensions are treated separately in the practitioner-facing companion series on brand-substrate durability across personal, family, product, and cultural brand structures.
 
@@ -325,83 +400,6 @@ Theoretical contributions are threefold. First, the paper develops a geometry li
 Practical implications follow from the theory: founders contemplating exit should treat brand-codification investments as strategic capital allocation decisions with multi-year payoff horizons rather than as marketing expense; acquirers should calibrate deal structure to the target's rotation stage rather than revenue history alone. These implications are secondary to the theoretical contribution and are elaborated in the Discussion.
 
 The framework is bounded by its focus on founder-centric branded consumer businesses in sectors with meaningful substitutability. Extensions to diffuse Tier-1 entities, platforms, and regulated industries represent promising future work. Ultimately, the theory suggests that some of the most valuable resources in the modern economy are not inherently sticky; they are rendered sticky or separable by the organizational choices founders make. Strategic management scholars should therefore move beyond asking whether resources are VRIN toward asking how, and at what cost, organizations convert personal insight into impersonal, transferable capability — and when that conversion determines the price at which the firm exits.
-
-## Tables
-
-**Table 1.** Four Stages of Tier Rotation.
-
-| Stage | Tier-1 Share | Tier-4 Share | M&A Value at Exit | Illustrative Case |
-|-------|-------------|-------------|-------------------|-------------------|
-| Stage 1 — Pure personal | ~100% | ~0% | Negative optionality: deal price below standalone asset value; founder-flight risk priced in as discount | Yeezy / Adidas: ~€1.2B 2022 revenue (Adidas AR); near-zero transfer value at termination |
-| Stage 2 — Partial projection | 60–80% | 20–40% | Zero-to-low premium; earnout structures required; founder retention contractually mandated | Casamigos / Diageo: $700M upfront + $300M earnout |
-| Stage 3 — Substantial projection | 20–40% | 60–80% | Scales with product-brand standalone value; founder halo optional but retained | Tom Ford / Estée Lauder: $2.8B EV; creative director retained through 2026 |
-| Stage 4 — Institutional | <20% | >80% | Equals or exceeds product-brand standalone; founding narrative migrated to Tier-6 cultural infrastructure | Kongō Gumi: 1,428-year operation; absorbed into Takamatsu at institutional merger terms |
-
-*Notes*: Tier-1 share and Tier-4 share are theoretical approximations based on the model's continuous s variable, expressed as approximate percentages for readability; the formal model uses the decimal representation $s \in [0,1]$. Boundary values are stylized representations of the stage regions, not empirical measurements. M&A value at exit is expressed relative to $V_0$ (standalone operating value under continued founder operation). Illustrative cases are not statistical tests of the stages; they are selected to represent the four regions of the $V(s)$ curve. The Stage 2-to-3 transition corresponds to the separability kink $\kappa$ in the formal model.
-
-**Table 2.** Comparative Statics Summary.
-
-| Variable | Direction | Effect Path | Theoretical Anchor |
-|----------|-----------|-------------|--------------------|
-| Rotation effort $e$ | $\partial s/\partial e > 0$; $\partial T_{\min}/\partial e < 0$ | Accelerates accumulation toward $\kappa$ | SECI externalization loop |
-| Separability kink $\kappa$ | $\partial V/\partial \kappa < 0$ for acquirer | Raises threshold for positive premium | Sector-specific; not firm-choice |
-| Sector substitutability $\sigma$ | $\partial V/\partial \sigma > 0$ for $s > \kappa$; $\approx 0$ for $s < \kappa$ | Amplifies premium above $\kappa$; no effect below | Credence vs search goods |
-| Time horizon $T$ | $\partial s/\partial T > 0$ for $e > 0$ | Longer sustained effort $\to$ higher $s$ at exit | Logistic accumulation monotone in $T$ |
-| Substrate fragility $\varphi$ | $\partial T_{\min}/\partial \varphi < 0$ | Higher cold-start base $\to$ faster initiation | Corporate-form infrastructure |
-| Founder tenure length | Ambiguous (effort-conditional) | Long tenure + zero effort $\to$ Stage 1 trap | Tenure $\times$ effort, not tenure alone |
-
-*Notes*: Comparative statics derived from Equations 1–4; all partial derivatives hold other parameters constant. "Direction" gives the sign of the marginal effect; "Effect Path" the channel through which the variable affects $V(s)$ or $s(t)$; "Theoretical Anchor" the underlying mechanism. Acquirer-facing comparative statics for $\kappa$ apply to the premium region ($s > \kappa$); below $\kappa$, the kink location primarily affects which side of the kink the deal falls on rather than the level of the discount. Substrate fragility $\varphi$ corresponds to the corporate-form base layer (registered trademarks, brand guidelines, separate legal vehicle) that provides a non-zero starting point for rotation.
-
-**Table 3.** Knowledge-Externalization Observables.
-
-| Observable | Direction Along Trajectory | Data Source | Validation Status |
-|------------|----------------------------|-------------|-------------------|
-| 10-K founder-language salience | Declines: founder-name-dominant → product-system-dominant | EDGAR full-text API; NLP on Item 1 + MD&A | Novel (no validated proxy) |
-| Marketing-spend allocation (founder-attribute vs. product-attribute) | Shifts toward product-attribute as s rises | Compustat XAD; hand-coded campaign type via LexisNexis / Factiva | Aggregate proxy in Belo, Lin, and Vitorino [-@belo-2014-brand-capital-firm]; decomposition novel |
-| Founder-media share of brand impressions | Declines: near-100% (Stage 1) → single digits (Stage 4) | Meltwater, Cision; Factiva normalized search frequency | Novel (no validated proxy) |
-| Trademark portfolio composition (founder-name vs. product-attribute) | Shifts toward product-attribute marks | USPTO + EUIPO trademark registries; matched via EDGAR | Trademark data partially validated in Belo et al. [-@belo-2014-brand-capital-firm]; decomposition novel |
-
-*Notes*: The four observables are proposed as operationalizations of the rotation-effort intensity parameter e and the Tier-4 share construct s. None has been validated as a direct proxy for s in a published peer-reviewed study; validation is Priority 1 in the empirical agenda. "Founder-language salience" comprises the frequency of the founder's name, founder-attributed language ("my vision," "my standard"), and founder-identity cues in 10-K Item 1 and Management Discussion sections. "Founder-attribute advertising" features founder persona or founder endorsement; "product-attribute advertising" features product claims, design, or performance. The four observables are expected to move in coordinated fashion, reflecting a common latent rotation factor, and to predict eventual deal structure and multiple; this coordination is the empirical content of P5.
-
-**Table 4.** Cross-Theory Comparison.
-
-| Dimension | Human-Capital Account | Tier-Rotation Account | Empirical Wedge |
-|-----------|-----------------------|------------------------|------------------|
-| Explanans | Founder or successor quality / type | Tier-4 share $s$; position vs. $\kappa$ | Longitudinal multiple shift at $\kappa$ |
-| Unit of analysis | Founder or CEO | Brand asset nested in focal firm | Within-founder longitudinal variation |
-| Mechanism | Returns to founder human capital | SECI externalization → Tier-4 codification | Coordinated P5 marker shifts (Table 3) |
-| Pre/post-rotation prediction | No multiple shift for fixed-quality founder | Structural multiple shift after crossing $\kappa$ | Falsifiable divergence (P2) |
-| Scope | Cross-sectional; family-firm succession; CEO typology | Within-founder longitudinal; any founder-to-product transition | Scope extension; not contradiction |
-
-*Notes*: The Human-Capital Account row consolidates Bennedsen, Nielsen, Pérez-González, and Wolfenzon [-@bennedsen-2007-inside-family-firm]; Pérez-González [-@prezgonzlez-2006-inherited-control-firm]; and Chen, Huang, Meyer-Doyle, and Mindruta [-@chen-2021-generalist-versus-specialist]. The empirical wedge in the fourth row is the core testable divergence between the two accounts. Both accounts are consistent with the cross-sectional evidence; the tier-rotation account makes additional predictions in the longitudinal case that the human-capital account does not. A within-founder or matched-pair design that finds a significant positive rotation-proxy effect after human-capital controls constitutes evidence for the tier-rotation account; a null result supports the human-capital account. The comparison is not intended to suggest that these literatures are competing in the strong sense — human capital and rotation stage may both predict M&A multiple in a multivariate design, with the rotation-proxy score adding incremental R-squared after human-capital controls.
-
-**Table 5.** Three Event-Type Distinctions in the Six-Tier Architecture.
-
-| Event type | Tier-1 substrate change | Tier-4 substrate question at decision time | Empirical signature | Decision horizon |
-|---|---|---|---|---|
-| M&A exit (paper's primary focus) | Tier-1 *removed* (founder departs; no replacement) | Has Tier-4 share $s$ crossed separability kink $\kappa$? | $V(s)$ non-monotonicity at deal close; goodwill impairment if $s < \kappa$ | Single event at deal time |
-| Succession | Tier-1 *replaced* (founder exits; new principal $P_{\text{new}}$ occupies Tier-1) | Has Tier-5 process knowledge transferred from $P_{\text{old}}$ to $P_{\text{new}}$? | ~4pp ROA decline [@bennedsen-2007-inside-family-firm]; ~14% operating return decline post-family-CEO succession [@prezgonzlez-2006-inherited-control-firm] | Multi-decade rotation window plus discrete transfer event |
-| Tier-allocation | Tier-1 unchanged | Where in the six-tier portfolio does new investment land? | Two firms with identical aggregate spend but different tier-allocation $\mathbf{w}$ produce structurally different M&A multiples and EBIT-persistence half-lives | Within-period (recurring annual decision) |
-
-*Notes*: M&A exit is the focal event of the formal model developed in this paper. Succession and tier-allocation are distinct decision margins discussed in the *Succession as a Distinct Geometric Event* and *Tier-Allocation of Capital as a Distinct Decision Margin* subsections of the Discussion respectively; their formal extension is deferred to future work. The three event types share the same six-tier substrate ontology but invoke geometrically distinct questions at the decision moment.
-
-**Figure 1.** The Tier-Rotation Curve — M&A Value Geometry.
-
-```{.mermaid width=75%}
-quadrantChart
-    x-axis Low Tier-4 Share --> High Tier-4 Share
-    y-axis Low Acquisition Value Ratio --> High Acquisition Value Ratio
-    quadrant-1 Stage 3 to 4 Positive Premium
-    quadrant-2 No Region
-    quadrant-3 Stage 1 Negative Optionality
-    quadrant-4 Stage 2 Transition Band
-    Yeezy Adidas: [0.12, 0.22]
-    Casamigos Diageo: [0.55, 0.40]
-    Tom Ford EL: [0.70, 0.72]
-    Kongo Gumi: [0.82, 0.88]
-```
-
-*Notes*: The horizontal axis represents Tier-4 share $s$ from 0 (pure Tier-1 personal substrate) to 1 (pure Tier-4 institutional substrate). The vertical axis represents the M&A value ratio $V(s)/V_0$ relative to standalone operating value $V_0$. The vertical and horizontal midlines mark the separability kink $\kappa$ (plotted at $s = .50$ for illustration; actual $\kappa$ is sector-specific) and divide the negative-optionality region (Stage 1 lower-left, Stage 2 lower-right: $V(s)/V_0 < 1$) from the positive-premium region (Stage 3 to 4 upper-right: $V(s)/V_0 > 1$). The upper-left quadrant ("No Region") is empty by construction: a brand cannot exhibit high acquisition value with low Tier-4 share. The four illustrative cases are plotted at approximate theoretical stage positions, not at empirically measured $s$ values. The slope of $V(s)$ is discontinuous at $\kappa$: the marginal value of an additional increment of Tier-4 share is substantially higher above $\kappa$ than below it. The quadrant chart is a schematic rendering of the $V(s)$ curve for expository purposes; the formal model specifies $h(s, \kappa, \sigma)$ as a piecewise continuous function with continuous level and discontinuous first derivative at $\kappa$. Sector substitutability $\sigma$ varies the steepness of $h(s)$ above $\kappa$ but not the qualitative non-monotonic geometry; for clarity, a single $\sigma$ level is depicted.
 
 ## Acknowledgments
 
