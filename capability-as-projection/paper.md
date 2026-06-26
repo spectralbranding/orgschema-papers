@@ -150,7 +150,7 @@ The formalism implies four propositions about capability transfer.
 
 These propositions are pre-registered with the coding protocol (Methods Appendix). They are intended to be falsifiable on observable evidence; the substrate-projection distinction stands or falls on whether their predictions are borne out across the case sample and any subsequent larger-N panel.
 
-***Companion Computation Script and Worked Monte Carlo***
+## Companion Computation Script and Worked Monte Carlo
 
 Runnable Python scripts reproducing the worked instances of $\pi_\lambda$ and $\kappa$, and a 20,000-trial Monte Carlo of the propositions' comparative statics, are published in the public mirror at `https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection/code`. The projection demo (`projection_demo.py`) takes a sample log $L$ in JSON form, computes $\pi_\lambda$ projections for a range of $\lambda$ values, and computes $\kappa$ on two synthetic logs with stipulated conflict densities. The Monte Carlo (`monte_carlo_simulation.py`) sweeps a five-cell density grid (0.0, 0.1, 0.5, 0.7, 0.9) and a four-cell decay grid ($\lambda = 0.0, 0.1, 0.5, 1.0$) under two integration policies (acquirer-supreme, negotiated), with 500 trials per cell and random seed 42.
 
@@ -282,13 +282,17 @@ Capability is not a stock. It is a projection of an append-only log, computed at
 
 Treating the append-only event log as the substrate beneath the firm rather than as its exhaust buys properties that resource-based and dynamic-capabilities theories have struggled to obtain together: path-dependence with formal substrate, inimitability with operational specification, capability heterogeneity with falsifiable predictions. The reformulation does not abandon the prior tradition; it specifies the substrate the tradition has assumed implicitly.
 
+## Data and Code Availability
+
+The companion computation scripts (`projection_demo.py`, `monte_carlo_simulation.py`), the per-case event logs, the post-experiment report (`POST_EXPERIMENT_REPORT.md`), the generated plots, and the machine-readable paper specification (`paper.yaml`) are openly available in the public mirror at <https://github.com/spectralbranding/orgschema-papers/tree/main/capability-as-projection>. The 20,000-trial Monte Carlo and the worked projection instances reported here are fully reproducible from those scripts (Python, fixed random seed 42). This paper is archived on Zenodo under concept DOI <https://doi.org/10.5281/zenodo.20367459> (version-agnostic; the version-specific DOI is assigned at each deposit).
+
 ## Acknowledgments
 
 The author thanks the practitioners and commenters who engaged with prior work in the Spectral Brand Theory and Organizational Schema Theory corpora; their named-case additions and objections sharpened the theoretical argument during drafting. André Lindenberg surfaced Nakajima's ActiveGraph runtime as the engineering anchor at a critical point in the drafting cycle.
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
-## CRediT Contributions
+## Author Contributions (CRediT)
 
 **Dmitry Zharnikov**: Conceptualization, Formal analysis, Investigation, Methodology, Writing — original draft.
 

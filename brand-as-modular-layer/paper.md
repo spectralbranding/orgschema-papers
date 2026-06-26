@@ -454,7 +454,7 @@ Both scripts run on plain CPython 3.10+ without third-party dependencies. Run co
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
-## CRediT contributions
+## Author Contributions (CRediT)
 
 Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, visualization: Dmitry Zharnikov.
 

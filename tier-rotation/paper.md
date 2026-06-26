@@ -407,7 +407,7 @@ quadrantChart
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
-## CRediT contributions
+## Author Contributions (CRediT)
 
 Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, visualization: Dmitry Zharnikov.
 

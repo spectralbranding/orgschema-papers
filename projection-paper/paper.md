@@ -461,13 +461,18 @@ Organizations are six-tier projection cascades. Information loss is junction-loc
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation script that reproduces the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
 
-## CRediT contributions
+## Author Contributions (CRediT)
 
 Zharnikov, Dmitry: Conceptualization; Methodology; Formal analysis; Investigation; Writing — original draft; Writing — review and editing.
 
 ## Data availability
 
 All numerical values reported in the numerical illustration are reproducible from the companion script at cascade_numerical_example.py (also published in the public mirror at https://github.com/spectralbranding/orgschema-papers/blob/main/projection-paper/code/cascade_numerical_example.py) with fixed seed 2026. The comparative-statics experiment runs with the `--compare` flag (run as `uv run --with numpy python cascade_numerical_example.py --compare`). No primary data are reported in the manuscript.
+
+## References
+
+::: {#refs}
+:::
 
 ## Appendix A: Proof of Theorem 1
 
@@ -482,8 +487,3 @@ By condition (C_1'), the parametric family $\{F_1^{(x_1)}\}_{x_1 \in B_1}$ is jo
 *Junctions 2 through 5 (induction).* Assume by inductive hypothesis that the fixed-point map $x_1 \mapsto x_i^*(x_1)$ is well-defined and Lipschitz on $B_1$ with constant bounded by $\prod_{j=1}^{i-1} L_j / (1 - \kappa_j)$. The composition with the parametric junction-$i$ operator $F_i$, contractive on $B_{i+1}$ by (C_i) with rate $\kappa_i$ and Lipschitz in its parameter by (C_i') with constant $L_i$, yields by Granas-Dugundji [-@granas-2003-fixed-point-theory] Chapter II a fixed-point map $x_1 \mapsto x_{i+1}^*(x_1)$ that is well-defined on $B_1$ and Lipschitz with constant bounded by $\prod_{j=1}^{i} L_j / (1 - \kappa_j)$. The induction completes at $i = 5$.
 
 *Cascade equilibrium.* The trajectory $(x_1, x_2^*(x_1), x_3^*(x_1), x_4^*(x_1), x_5^*(x_1), x_6^*(x_1))$ is the unique cascade-equilibrium for the boundary input $x_1$, and the map $x_1 \mapsto (x_2^*, \ldots, x_6^*)$ is Lipschitz on $B_1$ with constant bounded by $\prod_{j=1}^{5} L_j / (1 - \kappa_j)$. □
-
-## References
-
-::: {#refs}
-:::

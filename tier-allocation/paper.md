@@ -595,7 +595,7 @@ Future strategy research can treat organizational tier as a new unit of analysis
 
 AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search, for software development — implementing and running the companion computation scripts that reproduce the paper's reported numerical and simulation results — and for editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility. The companion scripts are `back_of_envelope.py` (contour plot, CES robustness check, and optimal-share solver) and `tier_penetration_simulation.py` (AI-extended optimal-share solver, CES robustness check, and comparative-statics verification for Propositions 5-7); all script outputs were independently verified against the closed-form derivations in Online Supplement S1.
 
-## CRediT contributions
+## Author Contributions (CRediT)
 
 Zharnikov, Dmitry: Conceptualization; Methodology; Formal analysis; Writing — original draft; Writing — review and editing.
 
