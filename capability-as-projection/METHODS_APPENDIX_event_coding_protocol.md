@@ -1,13 +1,13 @@
 ---
 title: "Methods Appendix — Ex-Ante Event Coding Protocol"
+paper_slug: capability_as_projection_paper
 version: v0.1.0
 date: 2026-05-24
-status: Pre-registered protocol for the empirical case-coding pass; published as part of the v1.0.0 Zenodo deposit.
 ---
 
 # Methods Appendix: Ex-Ante Event Coding Protocol
 
-This protocol is pre-committed BEFORE the empirical cases are written up, to address the post-hoc-coding circularity concern at the standard expected of theory papers with case-study empirical anchors. Coders must register adherence to this protocol; deviations must be flagged in the methods section of the final paper, not retrospectively justified.
+This protocol is pre-committed BEFORE the empirical cases are written up, to defeat the post-hoc-coding circularity charge that is the central methodological objection to event-log analysis. Coders must register adherence to this protocol; deviations must be flagged in the methods section of the final paper, not retrospectively justified.
 
 ## 1. Unit of analysis
 
@@ -124,13 +124,13 @@ Failure of the propositions in these placebos confirms specificity. Spurious con
 
 In addition to the primary two-coder + adjudicator protocol, a third blind coder independently codes a randomly-selected 25% of events from each case. Inter-coder Cohen's κ across the three coders > .75 is the protocol-compliance threshold. Lower values are reported transparently with a sensitivity analysis.
 
-## 8. Identification strategy (for SMJ inferential claims)
+## 8. Identification strategy (for inferential claims)
 
-Identification ranking:
+Identification approaches, in priority order:
 
 ### 8.1 Primary identification — regression discontinuity on acquirer prior M&A experience
 
-For the 50-event coded panel (companion empirical paper if SMJ requests larger N), use prior M&A count as a forcing variable with a discontinuity at the median to identify a "learned log-preservation discipline" effect. Inheritance: Puranam, Powell & Singh (2006), SMJ 27(12), 1175-1197.
+For the 50-event coded panel (companion empirical paper for a larger N), use prior M&A count as a forcing variable with a discontinuity at the median to identify a "learned log-preservation discipline" effect. Inheritance: Puranam, Powell & Singh (2006), SMJ 27(12), 1175-1197.
 
 ### 8.2 Secondary — propensity-score matching on observable log proxies
 
@@ -148,15 +148,15 @@ Exogenous CEO death events or unexpected regulatory disclosure shocks that force
 
 ### 8.4 Fallback
 
-If the empirical strategy collapses under reviewer scrutiny, the paper converts to the AMR pure-theory version with the 3 process-traced cases as illustrative anchors only. The formalism alone is sufficiently novel for AMR.
+If the empirical strategy proves infeasible, the paper stands as a pure-theory contribution with the three process-traced cases as illustrative anchors; the formalism alone is sufficiently novel to stand on its own.
 
 ## 9. Pre-registration
 
-This protocol is pre-registered at `github.com/spectralbranding/orgschema-papers/blob/main/capability-as-projection/METHODS_APPENDIX_event_coding_protocol.md` and time-stamped 2026-05-24. Modifications require an explicit changelog entry in this document with date and reason. The pre-registered version of this protocol is the one that ships with the final paper as Methods Appendix and as a separate file in the public-mirror `orgschema-papers/capability-as-projection/` repository.
+This protocol is pre-registered and time-stamped at the initial Zenodo deposit (2026-05-24). Modifications during drafting require an explicit changelog entry in this document with date and reason. The pre-registered version of this protocol is the one that ships with the final paper as the Methods Appendix and as a separate file in the public-mirror `orgschema-papers/capability-as-projection/` repository.
 
 ## 10. Note on circularity defence
 
-An anticipated reviewer objection: *"how would one independently identify and code the 'event log' without circularity to the outcomes being explained?"*
+A natural objection to event-log coding is: *"how would one independently identify and code the 'event log' without circularity to the outcomes being explained?"*
 
 Defence stack:
 
@@ -167,10 +167,4 @@ Defence stack:
 5. **Confidence ratings** transparently disclose where the coding is uncertain (§5.3). Tests use only HIGH/MEDIUM events.
 6. **Pre-registration** (§9). The protocol is time-stamped before the empirical narrative is drafted.
 
-Together these address the circularity concern at the standard expected of theory papers with case-study empirical anchors. The protocol does NOT eliminate all subjectivity in event identification (no protocol can); it makes subjectivity visible and measurable, which is what blind-coder κ > .80 operationalizes.
-
----
-
-## Version
-
-v0.1.0 (2026-05-24): Initial pre-registered version. Updates require an explicit changelog entry in this document.
+Together these address the circularity charge at the standard expected of theory papers with case-study empirical anchors. The protocol does NOT eliminate all subjectivity in event identification (no protocol can); it makes subjectivity visible and measurable, which is what blind-coder κ > .80 operationalizes.

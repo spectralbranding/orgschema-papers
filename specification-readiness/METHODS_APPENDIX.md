@@ -53,7 +53,7 @@ The Shannon (1948) information-entropy structural analog licenses the formalizat
 - **Aggregate friction-tax cost for a population of N recipients**: F(α) = (1/N) Σ_i f(i, α).
 - **Units**: friction cost is reported in squared specification-distance units (unitless). No calibration to dollar values is required for the numerical-coherence check.
 
-**Functional form for friction**: The baseline simulation uses the squared Euclidean distance (quadratic misalignment cost), consistent with the Grok-recommended quadratic misalignment-cost model (PREDRAFT_REVIEW_SUMMARY.md, High-priority 2). Two alternative functional forms are tested as robustness checks:
+**Functional form for friction**: The baseline simulation uses the squared Euclidean distance (quadratic misalignment cost), a standard choice for quadratic misalignment-cost models. Two alternative functional forms are tested as robustness checks:
 
 - *Linear norm*: f_push_alt1(i) = ‖n_i – g_i‖₁ (L1 distance).
 - *Log penalty*: f_push_alt2(i) = –log(1 / (1 + ‖n_i – g_i‖²)) (log-quadratic).
