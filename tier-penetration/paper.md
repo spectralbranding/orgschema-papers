@@ -476,7 +476,7 @@ Milgrom, Paul, and John Roberts. (1995). Complementarities and fit: Strategy, st
 
 Mizik, Natalie, and Robert Jacobson. (2003). Trading off between value creation and value appropriation: The financial implications of shifts in strategic emphasis. *Journal of Marketing*, 67(1), 63-76. DOI: 10.1509/jmkg.67.1.63.18595.
 
-Naik, Prasad A. (1999). Estimating the half-life of advertisements. *Marketing Letters*, 10(3), 351-362. DOI: 10.1023/A:1008146405555.
+Naik, Prasad A. (1999). Estimating the half-life of advertisements. *Marketing Letters*, 10(3), 351-362. DOI: 10.1023/A:1008158119567.
 
 Nonaka, Ikujiro, and Hirotaka Takeuchi. (1995). *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*. New York: Oxford University Press.
 
