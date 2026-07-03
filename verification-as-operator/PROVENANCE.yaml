@@ -28,7 +28,7 @@ provenance:
       summary: "Structural revision. Three corrections applied: (C1) added 3 formal Propositions with explicit Falsification lines (P1 audit rank-1, P2 cascade rank ≥ 2 via intersection, P3 rank bounded by bandwidth budget); (C2) algebraic correction — cascade composition replaced with intersection formulation (orthogonal projections onto non-orthogonal subspaces are not generally idempotent); (C3) R21 (2026ac) mischaracterization corrected — R19 (2026aa) now bandwidth authority. Added 7 organization-science refs (Weick 1979, Simons 1995, Luenberger 1969, March 1991 OS, Ashby 1956, Meyer & Rowan 1977, Ocasio 1997). Three positioning sentences added. Novelty claim refined to 'first explicit algebraic identification.' 37 refs, 16.2% self-cite."
     - version: "0.4"
       date: "2026-04-25"
-      summary: "Major structural revision. New title. New 218-word abstract. New AMR-style introduction (~950 words, operator/idempotency formal sentence, three contributions, roadmap, Figure 1 schematic). Self-citations reduced from 6 to 1 (kept 2026i as sole self-cite; dropped 2026a/SBT, 2026h/R5, 2026x/R16, 2026aa/R19, 2026ad/R22 from manuscript body). Proof sketch added for Proposition 1 (SVD/Pythagoras argument). Spectra Coffee moved to dedicated Worked Illustration section. Python simulation (projection_simulation.py) added and executed; Appendix B reports real numerics (sigma=1.0: rank-1 audit misses 2.12 = 90.4%; cascade misses 0.00). Figure 1 table with real simulation anchors. Total refs: 31. Self-cite ratio: 1/31 = 3.2%."
+      summary: "Major structural revision. New title. New 218-word abstract. New journal-style introduction (~950 words, operator/idempotency formal sentence, three contributions, roadmap, Figure 1 schematic). Self-citations reduced from 6 to 1 (kept 2026i as sole self-cite; dropped 2026a/SBT, 2026h/R5, 2026x/R16, 2026aa/R19, 2026ad/R22 from manuscript body). Proof sketch added for Proposition 1 (SVD/Pythagoras argument). Spectra Coffee moved to dedicated Worked Illustration section. Python simulation (projection_simulation.py) added and executed; Appendix B reports real numerics (sigma=1.0: rank-1 audit misses 2.12 = 90.4%; cascade misses 0.00). Figure 1 table with real simulation anchors. Total refs: 31. Self-cite ratio: 1/31 = 3.2%."
     - version: "1.0.0-final-pass"
       date: "2026-04-26"
       summary: "Pre-Zenodo final pass. Added 3 cross-domain citations spanning DeFi composability and capital-markets verification work. New Discussion subsection 'Cross-Domain Verification: Independent Convergence' (~180 words, pseudo-coverage as structural analog to rank-1 audit failure). Acknowledgments updated with independent-convergence sentence before AI disclosure. Thornton & Ocasio (2008) institutional logics added to Audit Society section and References. Self-adjointness vs oblique projection defense added to Formal Model section. Total refs: 35. Self-cite: 1/35 = 2.9%. DOI: 10.5281/zenodo.19778588. Version: 1.0.0."
@@ -37,10 +37,5 @@ provenance:
     doi: "10.5281/zenodo.19778588"
     uploaded: 2026-04-26
     version: "1.0.0"
-    note: "Uploaded as v1.0.0 working paper (publication date 2026-04-26). AMR submission to follow."
+    note: "Uploaded as v1.0.0 working paper (publication date 2026-04-26)."
 
-  target_venue:
-    name: "Academy of Management Review"
-    publisher: "Academy of Management"
-    style: "AMA"
-    review_type: "double-anonymous"

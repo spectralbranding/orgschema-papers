@@ -21,7 +21,7 @@ provenance:
         Tom Ford/Estée Lauder, Kongō Gumi). Closest prior theoretical
         purchase: Fournier and Eckhardt (2019) two-bodied brand. AMA citation
         format throughout.
-      outcome: "Working paper v1.0.0; Zenodo upload pending. Target venue: AMR primary; SMJ + Org Sci alternates."
+      outcome: "Working paper v1.0.0; Zenodo upload pending."
 
     - version: "1.0.0-pre-zenodo-update-2026-05-07"
       date: "2026-05-07"
@@ -65,7 +65,7 @@ provenance:
         only against structural rotation. Refs 47 → 48; body word count
         ~12,812 → ~13,200; self-cite 6.4% → 6.3%. Concept DOI reserved
         2026-05-07 at 10.5281/zenodo.20069605; v1 DOI 10.5281/zenodo.20069606.
-      outcome: "Working paper v1.0.0 ready for Zenodo upload. Target venue: AMR primary; SMJ + Org Sci alternates."
+      outcome: "Working paper v1.0.0 ready for Zenodo upload."
 
     - version: "1.0.0+post-upload-update"
       date: "2026-05-10"
@@ -82,14 +82,10 @@ provenance:
         (3) Gartner AI rehire prediction: added 3-sentence paragraph
         (rotation-not-reduction reading). Gartner (2026) reference added
         alphabetically before Grant (1996) in References.
-        Self-cite density after edit: 4/58 = 6.9% (was 3/56 = 5.4%; AMR ≤3% cap
-        already exceeded pre-edit).
-        AMR package at export/tier-rotation/amr/ not re-synced (user instruction).
+        Self-cite density after edit: 4/58 = 6.9% (was 3/56 = 5.4%).
       outcome: >
         Staged for next Zenodo re-upload (v1.0.1). No version bump until upload
-        is minted. AMR submission window open May 14-21; AMR package is the pre-edit
-        version and will need re-sync before submission if user chooses to include
-        these edits.
+        is minted.
 
   submissions: []
 

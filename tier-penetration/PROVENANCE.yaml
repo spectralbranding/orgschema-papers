@@ -48,12 +48,11 @@ provenance:
         re-derivation confirmed. Companion computation script
         (tier_penetration_simulation.py) published; S3 reconciled to script outputs
         at v1.0.0 (four values reconciled). Three propositions P1-P3 with
-        falsification criteria. Online Supplement S1-S5. Target venue: Strategic
-        Management Journal (primary); MISQ and AMR as alternates. References ~58;
+        falsification criteria. Online Supplement S1-S5. References ~58;
         self-citation rate approximately 10.3% (6 of 58).
       outcome: >
         Citable working paper. Concept DOI 10.5281/zenodo.20087036; v1 DOI
-        10.5281/zenodo.20087037. Target venue: Strategic Management Journal.
+        10.5281/zenodo.20087037.
 
     - version: "1.0.0+post-upload-update"
       date: "2026-05-10"

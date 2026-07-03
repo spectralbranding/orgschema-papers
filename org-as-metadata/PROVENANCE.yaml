@@ -19,7 +19,7 @@ provenance:
       date: "2026-04-29"
       title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
       description: >
-        Substantial metamerism-led rewrite for Organization Science. Body trimmed
+        Substantial metamerism-led rewrite. Body trimmed
         to ~8,750 words. Lead contribution: organizational metamerism as
         state-equivalence (extending equifinality's path-equivalence). Pentland
         and Feldman (2005) engaged as precedent (~950 words). Gresov and Drazin
@@ -30,13 +30,13 @@ provenance:
         Numbered headers removed per AMA formatting. Definition 5 restructured
         with frame condition + biconditional. Propositions consolidated to
         four with explicit confirming/refuting evidence criteria.
-      outcome: "Working paper ready for Zenodo upload + Organization Science submission via ScholarOne."
+      outcome: "Working paper ready for Zenodo upload."
 
   forks: []
 
   spin_offs_logged:
     - title: "Organizational Form as Signal: Legitimacy, Identity, and Strategic Impression Management"
-      target_venue: "Organization Science (separate submission, after this paper lands) or Academy of Management Review"
+      target_venue: "separate submission, after this paper lands"
       estimated_word_count: "9,000-11,000"
       content: >
         Develops the full signaling argument cut from v0.1's §3.5 and §4.1 —

@@ -22,7 +22,7 @@ provenance:
         Hsu Fournier Srinivasan 2016 JAMS not 2010 JM; Verghese 2017 dropped —
         NOT FOUND; Marques et al. 2020 four-author form; Yorkston Nunes Matta
         2010 JM not JCR).
-      outcome: "Skeleton ready for full drafting. SMJ / JM target locked."
+      outcome: "Skeleton ready for full drafting."
 
     - version: "1.0.0-pre"
       date: "2026-04-30"
@@ -59,15 +59,14 @@ provenance:
         Figure 1." to avoid the keep-figures.lua regex match that was
         wrapping the lead-in line with the bold caption).
       outcome: >
-        Citable working paper. Target venue Strategic Management Journal
-        or Journal of Marketing.
+        Citable working paper.
 
     - version: "1.1.0"
       date: "2026-05-06"
       title: "Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies"
       description: >
-        Major revision to v1.0.0. Title retargeted for Strategic Management
-        Journal. New SMJ-aligned abstract with firm-heterogeneity opening.
+        Major revision to v1.0.0. Title retargeted. New abstract with
+        firm-heterogeneity opening.
         Introduction expanded with three motivating questions and explicit
         strategy-theory bridges (Baldwin & Clark 2000; Teece, Pisano and
         Shuen 1997; Jacobides, Cennamo and Gawer 2018; Barney 1991;
@@ -90,7 +89,7 @@ provenance:
         Tier-rotation valuation dynamics subsection added.
       outcome: >
         Pending Zenodo re-upload as v1.1.0. PDF regeneration required.
-        Word-count optimization for SMJ word limit deferred to user.
+        Word-count optimization deferred to user.
 
     - version: "1.1.0-pre (marketing section addition)"
       date: "2026-05-06"

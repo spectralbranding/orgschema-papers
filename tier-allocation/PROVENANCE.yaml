@@ -46,10 +46,9 @@ provenance:
         d(w_6*)/dr > 0 from the decay-rate differential sign(delta_6 - delta_S) > 0.
         Citation verification caught and corrected metadata errors before upload.
         References 62; body ~12,998 words; self-citation rate 3.2% (2 of 62).
-        Target venue: Strategic Management Journal (primary).
       outcome: >
         Citable working paper. Concept DOI 10.5281/zenodo.20072288; v1 DOI
-        10.5281/zenodo.20072289. Target venue: Strategic Management Journal.
+        10.5281/zenodo.20072289.
 
     - version: "1.0.0+2026-05-10"
       date: "2026-05-10"
