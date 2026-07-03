@@ -133,7 +133,7 @@ for sigma in SIGMA_VALUES:
     print(f"  sigma={sigma}: analytic={analytic:.4f}, simulated={simulated:.4f}")
 
 # Save to JSON
-output_path = "/Users/d/projects/orgschema-papers/verification-as-operator/simulation_results.json"
+output_path = "simulation_results.json"
 with open(output_path, "w") as f:
     json.dump(results, f, indent=2)
 

@@ -64,7 +64,7 @@
 2026-06-16 22:43:19,699     P5: power at pre-reg d = 1.00 (index 3 = 1.0x d)
 2026-06-16 22:43:19,700     elapsed: 74.3s
 2026-06-16 22:43:19,701 
-Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/regression_simulation_summary.csv
+Wrote: specification-readiness/code/regression_simulation_summary.csv
 2026-06-16 22:43:19,701 
 --- Decision-rule verdicts (METHODS_APPENDIX B.6) ---
 2026-06-16 22:43:19,701   P1 [primary]: power=1.00 PASS | Type_I=0.042 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
@@ -79,14 +79,14 @@ Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/regression_simula
 2026-06-16 22:43:19,701   P5 [no_FE]: power=1.00 PASS | Type_I=0.049 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
 2026-06-16 22:43:19,701 
 --- Generating plots ---
-2026-06-16 22:43:19,751   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P1.png
-2026-06-16 22:43:19,792   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P2.png
-2026-06-16 22:43:19,833   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P3.png
-2026-06-16 22:43:19,875   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P4.png
-2026-06-16 22:43:19,914   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/power_curve_P5.png
-2026-06-16 22:43:20,082   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/null_distribution_qq.png
-2026-06-16 22:43:20,150   Wrote: /Users/d/projects/sb-themec/research/papers/2026am/code/plots/effect_size_sensitivity.png
+2026-06-16 22:43:19,751   Wrote: specification-readiness/code/plots/power_curve_P1.png
+2026-06-16 22:43:19,792   Wrote: specification-readiness/code/plots/power_curve_P2.png
+2026-06-16 22:43:19,833   Wrote: specification-readiness/code/plots/power_curve_P3.png
+2026-06-16 22:43:19,875   Wrote: specification-readiness/code/plots/power_curve_P4.png
+2026-06-16 22:43:19,914   Wrote: specification-readiness/code/plots/power_curve_P5.png
+2026-06-16 22:43:20,082   Wrote: specification-readiness/code/plots/null_distribution_qq.png
+2026-06-16 22:43:20,150   Wrote: specification-readiness/code/plots/effect_size_sensitivity.png
 2026-06-16 22:43:20,150 
 Total runtime: 74.7s (1.2 min)
-2026-06-16 22:43:20,150 Log written to: /Users/d/projects/sb-themec/research/papers/2026am/code/logs/regression_simulation_run_20260616.log
+2026-06-16 22:43:20,150 Log written to: specification-readiness/code/logs/regression_simulation_run_20260616.log
 2026-06-16 22:43:20,150 OK -- push_pull_regression_sim.py completed.

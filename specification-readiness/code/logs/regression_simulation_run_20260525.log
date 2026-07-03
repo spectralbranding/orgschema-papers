@@ -64,7 +64,7 @@
 2026-05-25 13:26:11,703     P5: power at pre-reg d = 1.00 (index 3 = 1.0x d)
 2026-05-25 13:26:11,703     elapsed: 84.6s
 2026-05-25 13:26:11,704 
-Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/regression_simulation_summary.csv
+Wrote: specification-readiness/code/regression_simulation_summary.csv
 2026-05-25 13:26:11,704 
 --- Decision-rule verdicts (METHODS_APPENDIX B.6) ---
 2026-05-25 13:26:11,704   P1 [primary]: power=1.00 PASS | Type_I=0.042 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
@@ -79,14 +79,14 @@ Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/r
 2026-05-25 13:26:11,704   P5 [no_FE]: power=1.00 PASS | Type_I=0.049 PASS | pct_in_range=1.00 PASS | pct_correct_sign=1.00
 2026-05-25 13:26:11,704 
 --- Generating plots ---
-2026-05-25 13:26:12,336   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P1.png
-2026-05-25 13:26:12,386   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P2.png
-2026-05-25 13:26:12,437   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P3.png
-2026-05-25 13:26:12,488   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P4.png
-2026-05-25 13:26:12,537   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/power_curve_P5.png
-2026-05-25 13:26:12,764   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/null_distribution_qq.png
-2026-05-25 13:26:12,827   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/effect_size_sensitivity.png
+2026-05-25 13:26:12,336   Wrote: specification-readiness/code/plots/power_curve_P1.png
+2026-05-25 13:26:12,386   Wrote: specification-readiness/code/plots/power_curve_P2.png
+2026-05-25 13:26:12,437   Wrote: specification-readiness/code/plots/power_curve_P3.png
+2026-05-25 13:26:12,488   Wrote: specification-readiness/code/plots/power_curve_P4.png
+2026-05-25 13:26:12,537   Wrote: specification-readiness/code/plots/power_curve_P5.png
+2026-05-25 13:26:12,764   Wrote: specification-readiness/code/plots/null_distribution_qq.png
+2026-05-25 13:26:12,827   Wrote: specification-readiness/code/plots/effect_size_sensitivity.png
 2026-05-25 13:26:12,827 
 Total runtime: 85.8s (1.4 min)
-2026-05-25 13:26:12,827 Log written to: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/logs/regression_simulation_run_20260525.log
+2026-05-25 13:26:12,827 Log written to: specification-readiness/code/logs/regression_simulation_run_20260525.log
 2026-05-25 13:26:12,827 OK -- push_pull_regression_sim.py completed.

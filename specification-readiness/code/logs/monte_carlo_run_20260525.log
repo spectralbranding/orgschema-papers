@@ -33,7 +33,7 @@
 2026-05-25 13:56:16,832 Finished sigma=1.0  (2345.1s)
 2026-05-25 13:56:16,833 
 All 1296 cells completed.
-2026-05-25 13:56:16,843 Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/monte_carlo_summary.csv
+2026-05-25 13:56:16,843 Wrote: specification-readiness/code/monte_carlo_summary.csv
 2026-05-25 13:56:16,843 
 --- Pre-registered baseline check (sigma=.3, N=1000, alpha=0, quadratic) ---
 2026-05-25 13:56:16,843   mu_push          = 1.439872
@@ -63,19 +63,19 @@ All 1296 cells completed.
 2026-05-25 13:56:25,406   d=16: push/pull ratio = 20002.5
 2026-05-25 13:56:25,406 
 --- Generating plots ---
-2026-05-25 13:56:26,645   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/friction_distribution_push_vs_pull.png
-2026-05-25 13:56:26,690   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/phase_shift_alpha.png
-2026-05-25 13:56:26,799   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/sensitivity_misalignment.png
-2026-05-25 13:56:26,840   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/functional_form_comparison.png
+2026-05-25 13:56:26,645   Wrote: specification-readiness/code/plots/friction_distribution_push_vs_pull.png
+2026-05-25 13:56:26,690   Wrote: specification-readiness/code/plots/phase_shift_alpha.png
+2026-05-25 13:56:26,799   Wrote: specification-readiness/code/plots/sensitivity_misalignment.png
+2026-05-25 13:56:26,840   Wrote: specification-readiness/code/plots/functional_form_comparison.png
 2026-05-25 13:56:26,840 
 Total runtime: 2355.1s (39.3 min)
-2026-05-25 13:56:26,840 Log written to: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/logs/monte_carlo_run_20260525.log
+2026-05-25 13:56:26,840 Log written to: specification-readiness/code/logs/monte_carlo_run_20260525.log
 2026-05-25 13:56:26,840 OK -- friction_tax_montecarlo.py completed.
- 13:45:42,787   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/friction_distribution_push_vs_pull.png
-2026-05-25 13:45:42,835   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/phase_shift_alpha.png
-2026-05-25 13:45:42,948   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/sensitivity_misalignment.png
-2026-05-25 13:45:42,991   Wrote: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/plots/functional_form_comparison.png
+ 13:45:42,787   Wrote: specification-readiness/code/plots/friction_distribution_push_vs_pull.png
+2026-05-25 13:45:42,835   Wrote: specification-readiness/code/plots/phase_shift_alpha.png
+2026-05-25 13:45:42,948   Wrote: specification-readiness/code/plots/sensitivity_misalignment.png
+2026-05-25 13:45:42,991   Wrote: specification-readiness/code/plots/functional_form_comparison.png
 2026-05-25 13:45:42,991 
 Total runtime: 2446.4s (40.8 min)
-2026-05-25 13:45:42,991 Log written to: /Users/d/projects/spectral-branding/research/multi_interface_paper/code/logs/monte_carlo_run_20260525.log
+2026-05-25 13:45:42,991 Log written to: specification-readiness/code/logs/monte_carlo_run_20260525.log
 2026-05-25 13:45:42,991 OK -- friction_tax_montecarlo.py completed.
