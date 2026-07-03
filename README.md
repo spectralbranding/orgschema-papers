@@ -32,7 +32,6 @@ Formalizes brand-substrate decoupling as a continuous, logistic-form model gover
 
 - [Read on GitHub](tier-rotation/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.20069605)
-- Target venue: Academy of Management Review (primary); Strategic Management Journal + Organization Science (alternates)
 
 ### Where to Invest Within the Firm (Zharnikov 2026aj)
 
@@ -42,7 +41,6 @@ Formalizes the cross-tier capital allocation problem using a vector w spanning f
 
 - [Read on GitHub](tier-allocation/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.20072288)
-- Target venue: Strategic Management Journal (primary); Academy of Management Review and Organization Science (alternates)
 
 ### Brand as a Modular Layer (Zharnikov 2026ah)
 
@@ -52,7 +50,6 @@ Extends the six-tier business architecture from Zharnikov (2026ag) into the bran
 
 - [Read on GitHub](brand-as-modular-layer/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.19930157)
-- Target venue: Strategic Management Journal or Journal of Marketing
 
 ### A Six-Tier Ontology of Acquisition-Target Transferability (Zharnikov 2026ag)
 
@@ -62,7 +59,6 @@ Develops a six-tier ontology of the acquisition target — Owner Intent, Busines
 
 - [Read on GitHub](six-tier-ontology/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.19895813)
-- Target venue: Academy of Management Review
 
 ### The Organizational Schema Theory (Zharnikov 2026c)
 
@@ -81,7 +77,6 @@ Provides the first explicit algebraic identification of organizational acceptanc
 
 - [Read on GitHub](verification-as-operator/paper.md)
 - [Preprint (DOI)](https://doi.org/10.5281/zenodo.19778588)
-- Target venue: Academy of Management Review
 
 ### The OrgSchema Audit (Zharnikov 2026)
 
