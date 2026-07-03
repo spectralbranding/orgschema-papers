@@ -566,7 +566,7 @@ corpus_precedents:
       transition outside scope condition (iv) that P2's falsifier names.
 
 # ============================================================================
-# External anchor literature — the load-bearing external references
+# External anchor literature — the central external references
 # ============================================================================
 external_anchors:
   - {citation_key: banach-1922-operations-ensembles-abstraits, role: method_basis, spine_nodes: [P5], note: "Banach contraction-mapping principle — the existence/uniqueness engine of Theorem 1"}
