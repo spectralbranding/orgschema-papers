@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043)
 
-Working Paper v2.0.0 — July 2026
+Working Paper v2.0.0 – March 2026 (revised July 2026)
 
 ## Abstract
 
@@ -15,8 +15,6 @@ Organizations possess many mechanisms that touch on quality and control: quality
 **Keywords:** design science research, organizational design, acceptance testing, specification cascade, backward traceability, executor-invariance
 
 ---
-
-## Introduction
 
 Consider a common pattern in business operations. A cafe owner selects a commercial espresso machine, hires baristas with varying levels of training, sources coffee beans from a convenient distributor, and opens for business. Customers arrive and form impressions. Some return; others do not. When the owner eventually wonders why weekend visitors seem dissatisfied, the investigation must work backward through a tangle of undocumented decisions—from customer perception through staff behavior through equipment calibration through ingredient sourcing—with no systematic way to trace which operational parameter affects which outcome.
 
@@ -115,24 +113,24 @@ The artifact is a six-level specification cascade in which each level functions 
 **Figure 1: The Six-Level Specification Cascade.**
 
 ```
-              DESIGN DIRECTION (top-down)
-                       |
-  L0  Experience Contracts      "Acceptance Tests"     (what stakeholders should perceive)
-                       |  satisfies_experience
-  L1  Signal Requirements       "Integration Tests"    (what signals create that perception)
-                       |  satisfies_signal
-  L2  Process Contracts         "Unit Tests"           (what processes must achieve)
-                       |  implements_contract
-  L3  Procedures                "Implementation"       (how an executor achieves contracts)
-                       |  requires_input
-  L4  Input Specifications      "Dependencies"         (materials, equipment, training)
-                       |  sourced_from
-  L5  Sourcing Requirements     "Infrastructure"       (supply chain)
-                       |
-              OPERATE DIRECTION (bottom-up)
+        DESIGN DIRECTION (top-down)
+                 |
+  L0  Experience Contracts   ->  "Acceptance Tests"
+                 |  satisfies_experience
+  L1  Signal Requirements    ->  "Integration Tests"
+                 |  satisfies_signal
+  L2  Process Contracts      ->  "Unit Tests"
+                 |  implements_contract
+  L3  Procedures             ->  "Implementation"
+                 |  requires_input
+  L4  Input Specifications   ->  "Dependencies"
+                 |  sourced_from
+  L5  Sourcing Requirements  ->  "Infrastructure"
+                 |
+        OPERATE DIRECTION (bottom-up)
 ```
 
-*Notes*: Each arrow is a typed traceability link validated on every change. Level 0 contains three contract types: experience contracts (what stakeholders should perceive), constraint contracts (what regulation mandates), and commitment contracts (what the organization has voluntarily committed to). A parameter with no upward path to any Level 0 contract is unjustified.
+*Notes*: Each vertical bar is a typed traceability link (labelled with its edge type) validated on every change. The levels specify, top to bottom: L0 what stakeholders should perceive; L1 the signals that create that perception; L2 what processes must achieve; L3 how an executor achieves the contracts; L4 the materials, equipment, and training required; L5 the supply chain. Level 0 contains three contract types—experience contracts (perception), constraint contracts (what regulation mandates), and commitment contracts (what the organization has voluntarily committed to). A parameter with no upward path to any Level 0 contract is unjustified.
 
 Levels 0–2 are executor-invariant specifications; Levels 3–5 contain executor-dependent implementation. This separation is architecturally significant: when an executor type changes, the contracts (tests) remain stable while only the procedures (implementation) change, exactly as refactoring changes software implementation without changing its tests.
 
@@ -312,7 +310,7 @@ Organizational design does not lack quality mechanisms; it lacks one specific pr
 
 ## Acknowledgments
 
-Generative AI tools (Claude Opus 4.8, Anthropic; Grok 4.20, xAI; Gemini 2.5 Pro, Google) were used as research instruments for literature search, citation verification, and editorial refinement, and a large language model provided a pre-draft critical review of the paper's concept. All theoretical framework construction, the formal model, analytical conclusions, and manuscript text are the author's own work. No generative tool authored the design theory or its evaluation.
+Generative AI tools (Claude Opus 4.8, Anthropic; Grok 4.20 and Grok 4.3, xAI; Gemini 2.5 Pro, Google) were used as research instruments for literature search, citation verification, and editorial refinement, and a large language model provided pre-draft and post-draft critical reviews of the paper's concept and manuscript. All theoretical framework construction, the formal model, analytical conclusions, and manuscript text are the author's own work. No generative tool authored the design theory or its evaluation.
 
 ## Disclosure of Interest
 
