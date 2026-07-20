@@ -1,0 +1,69 @@
+# ONTOLOGY.yaml module - 2026i
+#
+# Per-paper ontology module per [internal path removed]
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: 2026i
+schema_version: 0.1
+
+owns:
+  - term_key: organizational-schema-theory
+    label: "Organizational Schema Theory"
+    canonical_form: "Organizational Schema Theory"
+    definition: "A design methodology that applies test-driven development to business operations, specifying desired customer experience first and deriving every operational layer backward from that specification as a six-level cascade."
+    first_section: "Abstract / Introduction"
+    replaces: ["Organizational Specification Theory"]
+  - term_key: reverse-design
+    label: "Reverse Design"
+    canonical_form: "reverse design"
+    definition: "A design direction in which the desired customer perception is specified first and every subsequent operational layer exists only to satisfy the layer above it (top-down design, bottom-up operation)."
+    first_section: "Reverse Design: From Perception to Sourcing"
+  - term_key: six-level-tdd-cascade
+    label: "Six-Level TDD Cascade"
+    canonical_form: "six-level TDD cascade"
+    definition: "The core OST artifact: a six-level specification cascade (L0 experience contracts through L5 sourcing) where each level functions as the acceptance test for the level below it."
+    first_section: "The Six-Level TDD Cascade"
+  - term_key: experience-contract
+    label: "Experience Contract"
+    canonical_form: "experience contract"
+    definition: "The Level 0 specification stating what customers should perceive, feel, and experience, functioning as the executor-invariant acceptance test for the entire organization."
+    first_section: "The Six-Level TDD Cascade"
+  - term_key: signal-requirement
+    label: "Signal Requirement"
+    canonical_form: "signal requirement"
+    definition: "The Level 1 specification of what signals the organization must emit to create the desired perception, each linked upward to a Level 0 experience contract."
+    first_section: "The Six-Level TDD Cascade"
+  - term_key: process-contract
+    label: "Process Contract"
+    canonical_form: "process contract"
+    definition: "The Level 2 specification of measurable outcomes, quality gates, and tolerances a process must achieve, separate from and executor-invariant of how it is implemented."
+    first_section: "The Six-Level TDD Cascade"
+  - term_key: executor-invariance
+    label: "Executor Invariance"
+    canonical_form: "executor-invariant"
+    definition: "The property that a specification level defines what must be achieved independently of who or what achieves it, drawing the boundary between contract levels (L0-L2) and implementation levels (L3-L5)."
+    first_section: "The Six-Level Specification Cascade"
+  - term_key: bidirectional-traceability
+    label: "Bidirectional Traceability"
+    canonical_form: "bidirectional traceability"
+    definition: "The architectural property by which every operational parameter can trace upward to the experience contract it serves and every experience goal can trace downward to the procedure, inputs, and suppliers that implement it."
+    first_section: "The Six-Level Specification Cascade"
+  - term_key: satisfaction-validation
+    label: "Satisfaction Validation Pipeline"
+    canonical_form: "satisfaction validation pipeline"
+    definition: "A continuous integration/continuous delivery pipeline that automatically and continuously checks that each cascade level satisfies the level above it."
+    first_section: "The Artifact"
+
+imports:
+  - {term_key: spectral-brand-theory}
+  - {term_key: spectral-dimensions}
+  - {term_key: cohort}
+  - {term_key: brand-fact}
+  - {term_key: six-tier-ontology}
+
+refines: []
+

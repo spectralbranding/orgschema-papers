@@ -1,35 +1,36 @@
 cff-version: 1.2.0
-message: "If you use this framework, please cite it as below."
+message: "If you use this paper, please cite it as below."
 authors:
   - family-names: Zharnikov
     given-names: Dmitry
-    email: dmitry@spectralbranding.com
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
-title: "The Organizational Schema Theory: Test-Driven Business Design"
-version: 1.3.0
-date-released: 2026-04-11
-url: "https://github.com/spectralbranding/orgschema-papers"
-repository-code: "https://github.com/spectralbranding/orgschema-framework"
+title: "Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades"
+version: 2.0.0
+date-released: 2026-06-14
+url: "https://doi.org/10.5281/zenodo.18946043"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.18946043"
+    description: "Zenodo concept DOI (all versions)"
 keywords:
-  - test-driven development
-  - business design
-  - configuration management
   - design science research
-  - declarative process management
-  - organizational specification
-license: CC-BY-4.0
+  - organizational design
+  - acceptance testing
+  - specification cascade
+  - backward traceability
+  - executor-invariance
+license:
+  - CC-BY-4.0
+  - MIT
 type: article
 preferred-citation:
   type: article
   authors:
     - family-names: Zharnikov
       given-names: Dmitry
-      email: dmitry@spectralbranding.com
-      affiliation: "Independent Researcher"
-      orcid: "https://orcid.org/0009-0000-6893-9231"
-    affiliation: "Independent Researcher"
-    orcid: "https://orcid.org/0009-0000-6893-9231"
-  title: "The Organizational Schema Theory: Test-Driven Business Design"
+  title: "Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades"
   year: 2026
-  url: "https://github.com/spectralbranding/orgschema-papers"
+  doi: "10.5281/zenodo.18946043"
+  url: "https://doi.org/10.5281/zenodo.18946043"

@@ -1,45 +1,40 @@
 [![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](../LICENSE)
 [![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](../LICENSE-data)
-![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+![Last Updated](https://img.shields.io/badge/updated-2026--07--21-success)
 
-# The Organizational Schema Theory: Test-Driven Business Design
+# Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades
 
-Founding paper of Organizational Schema Theory (OST). DOI: [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043).
+## 1 | Paper
 
-## 1 | Getting Started
+- Manuscript: [paper.md](paper.md)
+- Version: 2.0.0
+- DOI: [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043)
+- **New here?** [AGENTS.md](AGENTS.md) is a file-by-file guide for any reader (human or AI agent) on how to use the paper + every metadata file.
+- Machine-readable bundle: [paper.yaml](paper.yaml) (Paper Spec), [SPINE.yaml](SPINE.yaml), [ONTOLOGY.yaml](ONTOLOGY.yaml), [GLOSSARY.md](GLOSSARY.md)
 
-This slug contains the canonical paper text and structured metadata for the founding OST paper. No execution environment is required to read the paper; clone the parent `orgschema-papers` repository and open `paper.md`.
+## 2 | Citations
 
-## 2 | Project Layout
+`paper.md` is the source artifact; inline citations use the `[@citation_key]` form. The full bibliography lives in the companion `.bib` file; see [CITATIONS.md](CITATIONS.md) for how to resolve and render them.
 
-```
-organizational-schema-theory/
-├── README.md            # this file
-├── paper.md             # canonical paper text
-├── paper.yaml           # structured metadata (Paper Spec v0.1.0)
-├── CITATION.cff         # machine-readable citation
-├── CONTRIBUTORS.yaml    # contributor record
-├── DATA_MANIFEST.yaml   # data artifact manifest
-└── PROVENANCE.yaml      # provenance record
-```
+## 3 | Citation
 
-## 3 | Quick Start
-
-Read `paper.md` directly. There is no computational pipeline at this slug; the paper is a Design Science Research methodology artifact. The reference deployment (Spectra Coffee) is described in-text.
-
-## 4 | Citation
-
-```
-Zharnikov, D. (2026). The Organizational Schema Theory: Test-Driven Business Design.
-Zenodo. https://doi.org/10.5281/zenodo.18946043
+```bibtex
+@article{Zharnikov2026,
+  author  = {Zharnikov, Dmitry},
+  title   = {Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades},
+  year    = {2026},
+  doi     = {10.5281/zenodo.18946043},
+  url     = {https://doi.org/10.5281/zenodo.18946043},
+  version = {2.0.0},
+}
 ```
 
-Machine-readable citation: [CITATION.cff](CITATION.cff).
+Machine-readable: [CITATION.cff](CITATION.cff).
 
-## 5 | Licence
+## 4 | Licence
 
-Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data). Paper text: CC BY 4.0 (see [CITATION.cff](CITATION.cff)).
+Code (if any): MIT — see hub-level [../LICENSE](../LICENSE). Data, figures, tables: CC BY 4.0 — see hub-level [../LICENSE-data](../LICENSE-data).
 
 ---
 
-*Last updated: 2026-05-29*
+*Last updated: 2026-07-21*

@@ -1,4 +1,4 @@
-# The Organizational Schema Theory: Test-Driven Business Design
+# Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades
 
 Dmitry Zharnikov
 
@@ -6,349 +6,211 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043)
 
-Working Paper v1.3.0 – March 2026
-
----
+Working Paper v2.0.0 — July 2026
 
 ## Abstract
 
-This paper introduces the Organizational Schema Theory (orgschema), a design methodology that applies Test-Driven Development (TDD) to business operations. Rather than designing businesses forward from available resources and hoping customer experience emerges acceptably, orgschema specifies desired customer experience first and derives every operational layer backward from that specification. Customer experience goals function as acceptance tests. Signal architecture serves as the integration test suite. Process specifications are the unit tests. Procedures are the implementation. A continuous integration pipeline validates satisfaction at each level. The result is businesses that are testable, forkable, and traceable from every operational parameter back to its customer-experience justification. We present the methodology as a Design Science Research artifact, demonstrate it through a complete specialty coffee operation (Spectra Coffee), and evaluate it through an expert panel representing five stakeholder perspectives. We argue that this methodology occupies genuine white space at the intersection of declarative business process management, organization-as-code, and test-driven development---three literature streams that have not previously been combined. We further argue that large language models are an essential enabler that makes the methodology's multi-dimensional complexity practically manageable for the first time.
+Organizations possess many mechanisms that touch on quality and control: quality-management systems, enterprise-architecture frameworks, balanced scorecards, business-process conformance checking, requirements engineering, and cybernetic control. Each verifies process conformance or lagging outcomes. None makes a machine-checkable, ex-ante acceptance contract at the experience layer with backward traceability a structural invariant of the specification. This paper develops Organizational Schema Theory (OST), a design-science artifact that supplies this property through a six-level specification cascade in which stakeholder-experience contracts function as acceptance tests, signal requirements as integration tests, and process contracts as unit tests, with executor-invariance and continuous validation. The artifact is stated as five design principles, four mechanisms, and five boundary conditions, and formalized as a typed directed acyclic justification graph on which traceability, waste, and cascade-compression are decidable properties; a smallest-sufficient model gives a compression-impossibility sketch. Following the design-science evaluation taxonomy, the artifact is evaluated analytically, through independent industry convergence, and through a public demonstration corpus, with no controlled-outcome claim. The contribution is nascent design theory: acceptance testing operationalized as a tool-checkable invariant of organizational specification.
 
-**Keywords:** test-driven development, business design, configuration management, design science research, declarative process management, organizational specification
+**Keywords:** design science research, organizational design, acceptance testing, specification cascade, backward traceability, executor-invariance
 
 ---
 
 ## Introduction
 
-Consider a common pattern in business operations. A cafe owner selects a commercial espresso machine, hires baristas with varying levels of training, sources coffee beans from a convenient distributor, and opens the doors. Customers arrive and form impressions. Some return; others do not. When the owner eventually wonders why weekend visitors seem dissatisfied, the investigation must work backward through a tangle of undocumented decisions---from customer perception through staff behavior through equipment calibration through ingredient sourcing---with no systematic way to trace which operational parameter affects which customer outcome.
+Consider a common pattern in business operations. A cafe owner selects a commercial espresso machine, hires baristas with varying levels of training, sources coffee beans from a convenient distributor, and opens for business. Customers arrive and form impressions. Some return; others do not. When the owner eventually wonders why weekend visitors seem dissatisfied, the investigation must work backward through a tangle of undocumented decisions—from customer perception through staff behavior through equipment calibration through ingredient sourcing—with no systematic way to trace which operational parameter affects which outcome.
 
-This forward-design approach, starting from available resources and allowing customer experience to emerge as an undesigned consequence, is how most businesses operate. It is the organizational equivalent of writing code without tests: you discover what works only after deployment, and debugging requires archaeology rather than analysis.
+This forward-design pattern—starting from available resources and allowing stakeholder experience to emerge as an undesigned consequence—is how most organizations operate. From a design perspective it is a system whose most consequential outputs are never specified: there is no mechanism to verify, before an operational decision is implemented, that it satisfies a stakeholder-defined quality criterion. Quality documentation records what should happen; whether operations actually deliver stakeholder value is checked only through periodic audits that sample a fraction of non-conformances (van der Aalst 2016).
 
-This paper proposes an alternative. The Organizational Schema Theory applies Test-Driven Development methodology to business design. Customer experience requirements are the acceptance tests. Signal architecture is the integration test suite. Process specifications are the unit tests. Procedures are the implementation. A continuous integration and continuous delivery (CI/CD) pipeline is the test runner. Version control is the audit trail. The methodology produces businesses that are testable, forkable, and traceable from every operational parameter back to its customer-experience justification.
+It is tempting to state the gap in absolute terms—that organizational design, alone among design disciplines, lacks acceptance testing. That framing does not survive contact with the literature. Organizational control, quality management, enterprise architecture, process governance, requirements engineering, and performance measurement all provide mechanisms that verify some relationship between an organization and a standard. The defensible claim is narrower and more precise. Each of these mechanisms verifies either *process conformance*—does execution match the model?—or *lagging outcomes*—did the measured indicator move? None of them makes the following property a structural invariant of the specification itself: every operational parameter carries a tool-verifiable trace to a stakeholder-experience criterion that is expressed as a runnable acceptance test, and that trace is re-validated automatically on every change. This is a *machine-checkable, ex-ante acceptance contract at the experience layer with backward traceability*. It is the property this paper contributes, and Section 3 establishes systematically that no adjacent tradition supplies it jointly.
 
-The intellectual heritage is direct. Beck formalized TDD as a software development methodology where tests are written before code, driving architectural decisions rather than merely verifying them.[^1] Ohno articulated the lean pull system: "start with the customer, work backward."[^2] Deming defined quality as that which is determined by the customer.[^3] Shostack introduced service blueprinting from customer touchpoints.[^4] Orgschema synthesizes these lineages into a single methodology: businesses designed backward from customer experience through testable, version-controlled specifications where each operational layer validates the layer above it.
+We treat acceptance testing—"specify the desired outcome, then verify the artifact against that specification before and during deployment"—not as a software practice imported into management but as a generic design principle of which software test-driven development is one rigorous instance. Test-Driven Development (Beck 2003) is cited because it is the most rigorous formalization of the construct available, not because organizations are software systems.
 
-The contribution is the methodology itself, not any particular instantiation. We present orgschema as a Design Science Research artifact following Hevner and colleagues' framework for information systems research.[^5] The Spectra Coffee demonstration---a complete specialty coffee operation specified across six hierarchical levels---is one instantiation that validates the methodology's applicability. But the reusable design knowledge is the multi-level TDD cascade, the backward traceability architecture, and the satisfaction validation pipeline.
+This paper makes three contributions. First, it develops a design-science artifact—the six-level specification cascade with executor-invariant contract layers and continuous validation—that makes experience-layer acceptance testing a tool-checkable invariant, stated as explicit design principles, mechanisms, and boundary conditions. Second, it isolates what is genuinely new from what is adaptation and synthesis, and formalizes the new element: a typed directed acyclic justification graph on which completeness, acyclicity, specification waste, and executor-invariance are decidable properties, together with a cascade-compression impossibility sketch that no adjacent tradition possesses. Third, it frames the artifact as nascent design theory (Gregor and Hevner 2013) and evaluates it honestly within the design-science evaluation taxonomy (Venable, Pries-Heje, and Baskerville 2016) as analytical, naturalistic-observational, and demonstration evidence—explicitly not as controlled outcome evidence.
 
-We situate orgschema at the intersection of three literature streams that have not previously been combined: declarative business process management, which specifies "what" but lacks customer experience traceability[^6]; organization-as-code, which exists for cloud infrastructure but not for full business ontologies[^7]; and Beck's TDD methodology, which has never been applied to a multi-level business specification cascade.[^1] We argue that orgschema fills a genuine gap: no existing framework provides machine-readable backward traceability from operational parameters to customer experience goals with automated satisfaction validation.
+The paper proceeds as follows. Section 2 positions the artifact against six adjacent literatures and delineates adaptation from innovation. Section 3 presents the design-science method and the artifact's design-theory components. Section 4 develops the artifact: design principles, mechanisms, and the six-level cascade. Section 5 gives the formal model. Section 6 states the empirical hypotheses as a forward research agenda. Section 7 provides an illustrative walkthrough. Section 8 evaluates the artifact. Section 9 discusses implications, boundary conditions, and limitations.
 
-The paper proceeds as follows. We first establish theoretical foundations by connecting TDD methodology, reverse design, Spectral Brand Theory as a perception specification language, and the lean pull system. We then describe our Design Science Research methodology. The core of the paper presents the artifact---the six-level TDD cascade---and demonstrates it through Spectra Coffee. We evaluate the methodology through an expert panel of five independent reviewers. We discuss implications for operations management, franchise models, and organizational openness. We conclude with limitations and directions for future research.
+## Related Work and Positioning
 
-## Theoretical Foundations
+### The property and the comparison axis
 
-### Test-Driven Development as Design Methodology
+The contribution is best stated as a conjunction of four properties. An acceptance contract is *ex-ante* if it is verified before and during deployment rather than after; it is at the *experience layer* if the criterion it encodes is a stakeholder-defined outcome rather than an internal process metric; it is *machine-checkable* if satisfaction is decided automatically rather than by human inspection at an audit; and it is *backward-traceable* if every operational parameter is formally linked to at least one such criterion. Table 1 compares six established traditions against these four properties. The claim is not that any tradition is deficient in isolation—each is mature and effective at what it does—but that none supplies the four jointly, and that the reason in each case is structural rather than an oversight.
 
-Test-Driven Development, as formalized by Beck, is frequently misunderstood as a testing technique. It is a design methodology.[^1] The discipline of writing tests before implementation forces architectural clarity: you must specify what a system should do before deciding how to do it. The test suite becomes the authoritative specification. Refactoring is safe because the tests catch regressions. The "red-green-refactor" cycle---write a failing test, write the minimal code to pass it, improve the code while keeping tests green---produces systems that are specified, verified, and incrementally improved.
+**Table 1: Six Adjacent Traditions Against the Four-Property Axis.**
 
-Orgschema extends this methodology from software to business operations. The parallel is structural, not metaphorical:
+| Tradition | Ex-ante | Experience-layer | Machine-checkable | Backward-traceable |
+|:---|:---:|:---:|:---:|:---:|
+| BPM conformance checking (van der Aalst 2016; Dumas et al. 2018) | ~ | — | ✓ | — |
+| Enterprise architecture (Zachman 1987; The Open Group 2018) | ✓ | — | — | ~ |
+| Balanced scorecard / performance measurement (Kaplan and Norton 1996) | — | ✓ | — | ~ |
+| Requirements engineering / declarative process spec (van der Aa et al. 2019) | ✓ | — | ✓ | ~ |
+| Quality management systems (ISO 9001) | ~ | ~ | — | ~ |
+| Cybernetic control (Beer 1979) | ✓ | ✓ | — | — |
+| **Organizational Schema Theory** | **✓** | **✓** | **✓** | **✓** |
 
-Table 1: The TDD-to-Orgschema Parallel
+*Notes*: ✓ = provided by design; ~ = partial or domain-limited; — = absent. Ratings are structural judgments about each tradition's design intent, not measurements of any deployment; they are argued individually in the text below.
 
-| TDD (Software) | Orgschema (Business) |
-|:---|:---|
-| Write tests first | Specify customer experience goals first |
-| Tests define expected behavior | Experience contracts define desired perception |
-| Write code to pass tests | Design processes to satisfy experience contracts |
-| Run test suite | Run CI/CD validation pipeline |
-| Refactor while tests pass | Optimize operations while customer experience holds |
-| Red-green-refactor | Specify-implement-validate |
+### Conformance checking operates below the experience layer
 
-The critical insight is that TDD's value proposition---architectural decisions driven by desired outcomes rather than available means---applies to any complex system where outcomes matter and traceability aids debugging. A business is such a system.
+Conformance checking has become a mature subfield of business process management. Van der Aalst (2016) established process mining as a systematic approach to discovering, monitoring, and improving processes from event logs; Dumas et al. (2018) codify the BPM lifecycle and conformance techniques. These methods verify whether process execution matches a process model at the process level. They do not ask whether the process model itself satisfies a stakeholder-experience criterion. An organization can achieve perfect conformance while systematically failing to deliver stakeholder value, if its process models were never derived from experience-level acceptance criteria. Recent work extends declarative process specification toward machine-readable constraints, including extraction of declarative models from natural language (van der Aa et al. 2019); this moves the process layer closer to specification but does not install an experience-layer acceptance contract with backward traceability above it. Backward traceability itself has a long lineage in requirements engineering, where the traceability problem—maintaining links between requirements and their downstream realizations—was named by Gotel and Finkelstein (1994); OST's departure from that tradition is to make the trace a continuously re-checked structural invariant rather than a hand-maintained artifact that degrades between reviews. Conformance checking supplies horizontal verification (does execution match the model?); OST supplies the missing vertical verification (does the model satisfy an experience-level acceptance test?).
 
-### Reverse Design: From Perception to Sourcing
+### Enterprise architecture classifies but does not validate against outcomes
 
-The forward-design approach to business creation starts with available resources. An entrepreneur identifies accessible suppliers, available staff, and affordable equipment, then builds operations from these constraints upward, hoping that the resulting customer experience will be acceptable. Customer perception is emergent---an undesigned consequence of operational decisions made for operational reasons.
+TOGAF (The Open Group 2018) and Zachman (1987) provide structured approaches to enterprise architecture. Both are classification systems, not validation systems: they prescribe what to document and how to organize it, but they do not specify what the documentation should achieve or provide a mechanism to verify it automatically against stakeholder-defined outcomes. IS reviewers will reasonably ask how OST differs from Zachman; the difference is that OST's cells are runnable predicates linked by machine-checked traces, whereas the Zachman framework is a taxonomy of representations.
 
-Table 2: Forward Design vs. Reverse Design
+### Balanced scorecards track lagging outcomes, not ex-ante contracts
 
-| Property | Forward Design | Reverse Design (Orgschema) |
-|:---|:---|:---|
-| Starting point | Available resources | Desired customer experience |
-| Design direction | Bottom-up (resources to experience) | Top-down (experience to resources) |
-| Customer experience | Emergent, undesigned | Specified, testable |
-| Traceability | None (archaeological) | Full backward trace to experience |
-| Change validation | Manual inspection | Automated CI/CD pipeline |
-| Debugging | "Why are customers unhappy?" | "Which acceptance tests are failing?" |
-| Knowledge format | Tribal, documented, or procedural | Versioned specification with test suite |
+Kaplan and Norton's (1996) Balanced Scorecard is the closest existing approach to vertical linkage: strategy maps connect financial objectives to customer propositions, internal processes, and learning. But the scorecard is a measurement system, not a specification system. It tracks whether strategic objectives are being achieved—lagging indicators—without specifying the operational parameters that should produce them or validating the causal chain continuously. Where the scorecard asks "are we achieving our objectives?", OST asks "does every operational parameter trace to a stakeholder-defined outcome, and does changing any parameter break that trace?".
 
-Reverse design inverts this sequence. The desired customer perception is specified first, and every subsequent layer exists to satisfy the layer above it. This is not a new idea. Wiggins and McTighe articulated backward design for curriculum development: start with desired learning outcomes, then determine acceptable evidence, then plan learning experiences.[^8] Akao's Quality Function Deployment traces customer requirements to engineering specifications through the "House of Quality" matrix.[^9] Christensen's Jobs to Be Done framework designs from the customer's functional, emotional, and social needs.[^10]
+### Quality management verifies conformance at planned intervals
 
-Orgschema's contribution is making reverse design machine-readable, version-controlled, and automatically validatable. Where QFD produces a paper matrix that cannot be executed, orgschema produces specifications that run through a validation pipeline. Where service blueprinting produces a narrative document, orgschema produces a specification that a machine---or a large language model---can traverse, query, and verify.
+ISO 9001 quality management systems reference customer focus (clause 5.1.2) and require internal audits at planned intervals (clause 9.2). The customer criterion is referenced, not encoded as a runnable acceptance test, and verification is periodic rather than continuous. We return to a direct, explicitly illustrative comparison with ISO 9001 documentation in Section 7; we do not present that comparison as establishing superiority.
 
-### Spectral Brand Theory as Test Specification Language
+### Cybernetic control theorizes the audit channel but does not make it structural
 
-The top two levels of orgschema's TDD cascade---customer experience contracts (Level 0) and signal requirements (Level 1)---require a language for specifying desired perception. Spectral Brand Theory (SBT) provides this language.[^11]
+Beer's (1979) Viable System Model describes an audit channel (S3\*) as sporadic, direct, unannounced monitoring—a safeguard against reporting distortion—and provides no mechanism demonstrating that operational activity is justified by identity-level commitments. OST realizes what Beer theorized as a sporadic channel as a continuous structural invariant, and adds the upward traceability from operations to identity that the VSM leaves implicit. We develop this mapping in Section 9.
 
-SBT models brand perception across eight dimensions: experiential, semiotic, temporal, ideological, narrative, cultural, social, and economic. Perception is observer-dependent: the same business emits signals that different observer cohorts perceive differently based on their individual priors (training, cultural context, expectations). SBT explicitly prohibits averaging across cohorts---a position grounded in its anti-ergodic epistemology.
+### Adaptation, synthesis, and innovation
 
-In orgschema, SBT serves a prescriptive function. The target perception profile---what observers should perceive across each dimension---becomes the acceptance test. Signal requirements then specify what the business must emit to create that perception. This is not brand auditing (measuring what exists) but brand engineering (specifying what should exist and validating that operations produce it).
+Reverse design—specifying desired outcomes first and deriving operations backward—is not novel to OST. Backward design in curriculum (Wiggins and McTighe 1998), Quality Function Deployment (Akao 1990, developed 1966), the lean pull system (Ohno 1988), and quality-as-customer-defined (Deming 1986) all instantiate it. OST *adapts* this design direction. It *synthesizes* several structural ideas that already exist individually: machine-readable process specification (from declarative BPM), version-controlled configuration (from infrastructure-as-code), and hierarchical goal decomposition (from goal-modeling and the scorecard tradition). The *innovation*—the element none of the named traditions possesses—is the operationalization of the experience-layer acceptance contract as a machine-verifiable invariant of the whole specification: a typed justification graph on which completeness, acyclicity, waste, and executor-invariance are decidable and continuously re-checked, carrying a compression bound (Section 5). We state this delineation openly because the contribution is defensible as a graded advance—raising machine-checkable experience-linkage from a small fraction of parameters to near-complete coverage, and validation latency from periodic to continuous—not as a claim of unprecedented novelty.
 
-### The Lean Pull System and Quality as Customer-Defined
+### The DO/WHAT structure and its kernel theories
 
-Ohno's lean pull system---producing only what the downstream process needs, when it needs it---is a proto-reverse-design methodology.[^2] The customer's pull signal propagates backward through the production system. Orgschema formalizes this propagation as a specification cascade: the customer's desired experience propagates backward through signals, process contracts, procedures, inputs, and sourcing.
+The cascade encodes a distinction that predates its formalization: a separation between *what* a system is obligated to deliver and *how* internal coordination produces it. Levels 0 and 1—experience acceptance contracts and signal requirements—constitute the WHAT specification; Levels 3 through 5—procedures, inputs, and sourcing—constitute the DO specification; Level 2 (process contracts) is the interface. Mintzberg (1979) distinguishes standardization of outputs from standardization of work processes as distinct coordination mechanisms, corresponding to the WHAT and DO layers. Iyer, Schwarz, and Zenios (2001) show that product (WHAT) and process (HOW) specifications carry asymmetric verifiability in screening contracts: outcomes can be contracted on because they are observable; procedures often cannot, because the principal lacks inspection rights. Adler and Borys (1996) identify enabling bureaucracy—which formalizes best practices for achieving outcomes—as categorically different from coercive bureaucracy, which enforces procedural compliance irrespective of outcomes; OST's acceptance-test layer is structurally enabling, and its procedure layer becomes coercive only when severed from the WHAT layer above it. Simon's (1962) near-decomposability grounds the level decomposition itself: the cascade is a nearly-decomposable hierarchy in which within-level coupling is dense and between-level coupling passes only through typed traces.
 
-Deming's insistence that quality is defined by the customer, not by the producer, is operationalized in orgschema through Level 0 acceptance tests.[^3] Quality management becomes test suite management. A process that passes all its quality gates but fails to satisfy the signal requirements above it is, by definition, not meeting quality standards---regardless of how well its internal metrics look.
+A perception-measurement instrument can serve as the L0 language where stakeholder experience is the object of specification. Established, public multidimensional instruments already supply this form: SERVQUAL scores perceived service quality across five dimensions—tangibles, reliability, responsiveness, assurance, and empathy—each of which is expressible as a predicate over a stakeholder-experience score (Parasuraman, Zeithaml, and Berry 1985). Spectral Brand Theory (Zharnikov 2026a) is a second candidate, scoring delivered perception across eight dimensions; we use it illustratively in Section 7 and do not make the artifact depend on it. Any instrument that yields machine-checkable predicates over stakeholder experience—SERVQUAL, a scorecard customer measure, or a domain-specific scale—can occupy the same slot, so the L0 language is not tied to any single instrument.
 
-### Positioning Against Prior Art
+## Design-Science Method and Design-Theory Components
 
-Orgschema draws from and extends several established frameworks. The following table clarifies the relationship to each, distinguishing what orgschema inherits from what it contributes:
+We follow the Design Science Research methodology of Hevner et al. (2004), situate the contribution within Gregor and Hevner's (2013) knowledge-contribution framework as an *exaptation*—extending an established solution (acceptance testing) to a new problem domain (organizational specification)—and structure the research through the elaborated DSR process model of Mullarkey and Hevner (2019). We evaluate using the Framework for Evaluation in Design Science (FEDS; Venable, Pries-Heje, and Baskerville 2016).
 
-Table 3: Framework Lineage and Orgschema's Contribution
+Because a recurring critique of nascent-design-theory papers is that the design-theory components are left implicit, we state them explicitly, following the eight-component anatomy of a design theory (Gregor and Jones 2007) and stating each design principle in the aim-mechanism-rationale form of Gregor, Chandra Kruse, and Seidel (2020) rather than as an ad hoc list.
 
-| Framework | What It Does | Orgschema's Extension |
-|:---|:---|:---|
-| TDD (Beck, 2003) | Tests before code in software | Extends TDD from code to multi-level business operations |
-| QFD (Akao, 1966) | Customer requirements to engineering specs | Paper matrix; orgschema is machine-readable and CI/CD-validatable |
-| Service Blueprinting (Shostack, 1984) | Service design from customer touchpoints | Narrative methodology; orgschema adds automated validation |
-| Jobs to Be Done (Christensen, 2003) | Design from functional, emotional, social needs | Conceptual framework; orgschema adds operational specification with traceability |
-| Backward Design (Wiggins/McTighe, 1998) | Curriculum design from learning outcomes | Education domain; orgschema applies to business operations |
-| Lean Pull System (Ohno, 1988) | Start with customer, work backward | Production philosophy; orgschema adds formal specification and validation |
-| Quality Management (Deming, 1986) | Quality defined by customer | Philosophy; orgschema operationalizes as testable, versioned specs |
-| DSR (Hevner et al., 2004) | Artifact-centered research methodology | Orgschema's artifact is the methodology itself, not the YAML |
-| VSM (Beer, 1972/1981) | Organizational cybernetics, recursive systems | Maps to S1--S5; adds machine-readable specification at each level |
-| Declarative BPM (Pesic/van der Aalst, 2006) | Constraint-based process specification | Process level only; orgschema extends to full organizational ontology |
+*Artifact.* The six-level specification cascade with executor-invariant contract layers and a continuous-validation pipeline.
 
-The common thread in these relationships is that orgschema inherits a design principle from each framework and contributes machine-readability, automated validation, backward traceability, or organizational scope that the original framework lacks. No prior framework combines all four properties for business operations.
+*Design principles (DP1–DP5).* Prescriptive design knowledge, stated in Section 4.1.
 
-A reviewer might observe that the combination of QFD (translating customer requirements into design parameters), Six Sigma (measurable process specifications), and ERP (integrated operational data) already provides partial customer-to-operations traceability. However, this combination lacks three properties that orgschema provides: (1) machine-readable specification at all levels---QFD's House of Quality is a matrix tool, not a testable specification; (2) automated satisfaction validation through a CI/CD pipeline---Six Sigma's control phase is periodic, not continuous; and (3) version-controlled, forkable specifications that enable test suite portability---ERP configurations are not designed for cross-organization sharing. The contribution is the combination of backward traceability, automated validation, and specification portability in a single machine-readable framework.
+*Mechanisms.* Four graph operations (Section 4.3) that make the principles machine-checkable.
 
-### Structural Property Matrix
+*Kernel theories.* Mintzberg (1979), Beer (1979), Beck (2003), Iyer, Schwarz, and Zenios (2001), Adler and Borys (1996), and Simon (1962), each with a stated role.
 
-The lineage table above traces *what each framework does and how orgschema extends it*. A complementary question is *which structural design properties does each framework provide*---an orthogonal cut that tests the methodology against twelve criteria chosen to be neutral with respect to popularity, tooling maturity, and training-base size. The table below applies this test to seven adjacent methodologies that span the relevant design space: BDD (executable customer specifications in software), BPMN (process modelling), ISO 9001 (quality management), Infrastructure-as-Code (Terraform/Ansible), Service Blueprinting (customer-experience design), OKR + SLO/SRE (outcome-to-operations linkage), and orgschema.
+*Boundary conditions (C1–C5).* Scope conditions under which the artifact holds and fails, stated in Section 9.2.
 
-Legend: ✓ = present by design, ∼ = partial / domain-limited, --- = absent.
+*Knowledge contribution.* A technological rule—"to achieve testable, traceable, continuously validated organizational operations, specify experience-layer acceptance contracts and derive operations backward under machine-checked traceability"—advanced from concept to formalized artifact and mapped, per Gregor and Hevner (2013), to a nascent design theory.
 
-```{=typst}
-#block(breakable: false)[
-#strong[Table 4: Structural Property Comparison Across Seven Methodologies]
-#v(0.5em)
-#set text(size: 8.5pt)
-#table(
-  columns: (auto, 18em, auto, auto, auto, auto, auto, auto, auto),
-  align: (center, left, center, center, center, center, center, center, center),
-  stroke: 0.4pt,
-  inset: (x: 5pt, y: 4pt),
-  table.header(
-    [*\#*], [*Property*], [*BDD*], [*BPMN*], [*ISO\u{00A0}9001*], [*IaC*], [*Svc\u{00A0}Blueprint*], [*OKR\u{00A0}+\u{00A0}SLO*], [*OST*]
-  ),
-  [1], [Customer-anchored, not process-anchored], [∼], [---], [∼], [---], [✓], [✓], [✓],
-  [2], [Machine-readable customer-requirement spec], [✓], [---], [---], [---], [---], [∼], [✓],
-  [3], [Machine-readable process / execution spec], [∼], [✓], [---], [✓], [---], [---], [✓],
-  [4], [Formal proof that process satisfies requirement], [∼], [---], [---], [∼], [---], [∼], [✓],
-  [5], [Orphan / waste detection (no upward trace)], [---], [---], [---], [∼], [---], [---], [✓],
-  [6], [Version control with git-style readable history], [✓], [∼], [---], [✓], [---], [∼], [✓],
-  [7], [Continuous validation, not periodic audit], [✓], [---], [---], [✓], [---], [∼], [✓],
-  [8], [Works for non-human customers (API, algorithm)], [∼], [∼], [---], [---], [---], [∼], [✓],
-  [9], [Inputs, materials, suppliers in scope], [---], [∼], [✓], [---], [∼], [---], [✓],
-  [10], [Schema / data separation as first-class principle], [---], [---], [---], [∼], [---], [---], [✓],
-  [11], [Forkability: copy tests, reimplement execution], [∼], [---], [---], [∼], [---], [---], [✓],
-  [12], [Perceptual dimensions as upper-level spec language], [---], [---], [---], [---], [∼], [---], [✓],
-)
-]
-```
+## The Artifact: A Specification Cascade
 
-The table is best read with two qualifications stated explicitly. First, the rightmost column is fully filled. The reason is not that orgschema is intrinsically superior to its neighbours: the twelve criteria were chosen to test the structural design of a *cross-stack specification methodology*, which is precisely what orgschema is by definition. If the criteria had been "number of certified organizations worldwide," "production deployments at enterprise scale," "depth of consulting ecosystem," or "training-program graduates per year," the picture would invert. ISO 9001 would receive most checkmarks, BPMN and IaC would hold strong positions, and orgschema would be visibly thin with one reference deployment (Spectra Coffee) and a stack of working papers. The matrix answers a specific question---"which structural properties does each methodology uniquely provide by design"---and conflating that with the question of practical adoption is the easiest way to oversell a young framework.
+### Design principles
 
-Second, almost every individual property already exists in some adjacent methodology. "Machine-readable customer specification" is provided by BDD, in the code domain. "Machine-readable process specification" is provided by BPMN. "Continuous validation" is provided by BDD, IaC, and partially SRE. "Supply chain in scope" is provided by ISO 9001. None of these properties is an orgschema invention. The contribution claimed here is *unification*: orgschema is the first methodology, to our knowledge, that combines all twelve structural properties under one chain of artifacts in one machine-readable format. No adjacent methodology fills more than five or six cells simultaneously. The bet on unification carries a real risk---bundling twelve properties under one roof can produce a methodology that is "average at everything and best at nothing," and specialization has historically won against unification in tooling adoption because narrow tools accumulate more polish per unit of investment over time. The argument for orgschema is not that it should outcompete BDD on developer experience or BPMN on enterprise execution. The argument is that the seams between those tools become operationally costly when AI agents begin consuming organizational specifications directly, and at that point a unified machine-readable coordinate system stops being a luxury.
+- **DP1 (experience-first specification).** Specify stakeholder-experience outcomes as runnable acceptance tests (L0) before any process, resource, or executor is chosen. This operationalizes the service-dominant position that value is co-created in use and defined by the beneficiary (Vargo and Lusch 2004): the acceptance criterion is the stakeholder's experience, not a producer metric.
+- **DP2 (traceability-as-invariant).** Require every operational parameter to carry a tool-verifiable directed trace to at least one L0 acceptance contract; a parameter with no such trace is flagged, by construction, as specification waste.
+- **DP3 (executor-invariance).** Separate executor-invariant contract layers (L0–L2) from executor-dependent procedures (L3–L5). The contract layer carries executor-type metadata—human, automated, or AI agent—and remains stable across changes of who or what executes, so an executor swap changes procedures without changing acceptance criteria.
+- **DP4 (continuous machine-checkable validation).** Re-validate the full justification graph automatically on every change, replacing periodic audit with a per-change structural invariant.
+- **DP5 (forkability).** Represent a bounded responsibility center as a shareable L0–L2 test suite plus local L3–L5 procedures, so a unit can be transferred or replicated by sharing contracts without prescribing implementation. The contract/procedure boundary is a module interface in the sense of Baldwin and Clark (2000): the L0–L2 test suite is the modular specification, the L3–L5 procedures the hidden implementation.
 
-The honest one-sentence formulation: orgschema is the first attempt to build a single version-controlled contract between customer experience, processes, executors, and suppliers, where consistency between levels is checked automatically and continuously rather than documented in prose and audited once a year. The structural property matrix demonstrates the design claim. Industrial validation remains future work.
+### The six-level cascade
 
-## Methodology: Design Science Research
+The artifact is a six-level specification cascade in which each level functions as the acceptance test for the level below it: designed top-down (from stakeholder experience to supply chain), operated bottom-up, and validated at every level by a continuous pipeline.
 
-We follow the Design Science Research methodology as articulated by Hevner and colleagues[^5] and refined through the echeloned DSR (eDSR) approach (Mullarkey & Hevner, 2019),[^12] which decomposes the research project into five validated echelons: problem analysis, requirements specification, design, demonstration, and evaluation. Each echelon provides intermediate validation.
-
-The primary contribution is design knowledge---specifically, a Technological Rule in the form: "To achieve testable, traceable, forkable business operations, apply the reverse-design TDD methodology with multi-level specification cascades and CI/CD satisfaction validation." The Spectra Coffee demonstration is one instantiation of this rule. The artifact is the methodology, not the demo.[^13]
-
-We evaluate the methodology using the Formative Evaluation of Design Science (FEDS) framework.[^14] Our evaluation strategy combines formative expert walk-throughs (five independent reviewers representing distinct stakeholder perspectives) with technical validation (automated schema and cross-reference checking). We address two of the five validity types specified in the Design Science Validity Framework: instrument validity (does the specification language adequately capture business operations?) and purpose validity (does the methodology serve its intended purpose of producing testable, traceable businesses?).[^15]
-
-## The Artifact: Reverse-Design TDD for Business Operations
-
-### The Six-Level TDD Cascade
-
-The core of orgschema is a six-level specification cascade where each level functions as the acceptance test for the level below it. Designed top-down (from customer perception to supply chain), operated bottom-up (from supply chain to customer perception), and validated at every level by a CI/CD pipeline.
-
-**Figure 1: The TDD Cascade Architecture**
+**Figure 1: The Six-Level Specification Cascade.**
 
 ```
-                    DESIGN DIRECTION (top-down)
-                           |
-    +----------------------------------------------+
-    |  L0: Customer Experience Contracts            |
-    |  "Acceptance Tests"                           |
-    |  (What customers should perceive/feel)        |
-    +----------------------------------------------+
-                           |
-                    satisfies_experience
-                           |
-    +----------------------------------------------+
-    |  L1: Signal Requirements                      |
-    |  "Integration Tests"                          |
-    |  (What signals create that perception)        |
-    +----------------------------------------------+
-                           |
-                    satisfies_signal
-                           |
-    +----------------------------------------------+
-    |  L2: Process Contracts                        |
-    |  "Unit Tests"                                 |
-    |  (What processes must achieve)                |
-    +----------------------------------------------+
-                           |
-                    implements_contract
-                           |
-    +----------------------------------------------+
-    |  L3: Procedures                               |
-    |  "Implementation"                             |
-    |  (How executor achieves contracts)            |
-    +----------------------------------------------+
-                           |
-                    requires_input
-                           |
-    +----------------------------------------------+
-    |  L4: Input Specifications                     |
-    |  "Dependencies"                               |
-    |  (Materials, equipment, training)             |
-    +----------------------------------------------+
-                           |
-                    sourced_from
-                           |
-    +----------------------------------------------+
-    |  L5: Sourcing Requirements                    |
-    |  "Infrastructure"                             |
-    |  (Supply chain)                               |
-    +----------------------------------------------+
-                           |
-                    OPERATE DIRECTION (bottom-up)
+              DESIGN DIRECTION (top-down)
+                       |
+  L0  Experience Contracts      "Acceptance Tests"     (what stakeholders should perceive)
+                       |  satisfies_experience
+  L1  Signal Requirements       "Integration Tests"    (what signals create that perception)
+                       |  satisfies_signal
+  L2  Process Contracts         "Unit Tests"           (what processes must achieve)
+                       |  implements_contract
+  L3  Procedures                "Implementation"       (how an executor achieves contracts)
+                       |  requires_input
+  L4  Input Specifications      "Dependencies"         (materials, equipment, training)
+                       |  sourced_from
+  L5  Sourcing Requirements     "Infrastructure"       (supply chain)
+                       |
+              OPERATE DIRECTION (bottom-up)
 ```
 
-Each arrow represents a traceability link that the CI/CD pipeline validates. A broken link---a process contract with no signal justification, or a signal requirement with no customer experience goal---is flagged as a potential defect or waste.
+*Notes*: Each arrow is a typed traceability link validated on every change. Level 0 contains three contract types: experience contracts (what stakeholders should perceive), constraint contracts (what regulation mandates), and commitment contracts (what the organization has voluntarily committed to). A parameter with no upward path to any Level 0 contract is unjustified.
 
-**Level 0: Acceptance Contracts.** Level 0 contains three parallel contract types, each representing a different source of requirements:
+Levels 0–2 are executor-invariant specifications; Levels 3–5 contain executor-dependent implementation. This separation is architecturally significant: when an executor type changes, the contracts (tests) remain stable while only the procedures (implementation) change, exactly as refactoring changes software implementation without changing its tests.
 
-- *Experience contracts* specify what customers should perceive, feel, and experience. These are the primary design driver, specified using SBT's eight perceptual dimensions with proxy indicators and satisfaction targets. Example: "Espresso taste: balanced, sweet, clean finish, no bitterness. Delivery time: 60--180 seconds."
-- *Constraint contracts* specify what regulation, law, or external authority mandates. These are non-negotiable regardless of customer perception. Example: "All 14 EU Annex II allergens declared" (EU Regulation 1169/2011). "HACCP compliance with documented critical control points" (EU Regulation 852/2004).
-- *Commitment contracts* specify what the organization has voluntarily committed to beyond legal requirements. These often (but not always) also produce customer-perceived signals. Example: "All coffee sourced from direct trade relationships" satisfies both a commitment contract (organizational values) and an experience contract (ideological dimension: "ethical sourcing visible").
+### Mechanisms
 
-All three contract types are first-class acceptance tests. In software TDD, tests come from user requirements *and* from security standards, accessibility laws, and company policies---no one calls WCAG accessibility tests "waste" because users did not ask for them. The same principle applies here. A process justified only by regulation is not waste; it is a constraint-satisfying process. The revised waste detection rule: a process with no upward link to *any* Level 0 contract---experience, constraint, or commitment---is unjustified.
+Four mechanisms make the design principles machine-checkable; Section 5 gives their formal basis.
 
-Some processes satisfy multiple contract types simultaneously. HACCP food safety compliance is legally required (constraint) and produces a "trust and confidence" customer signal (experience). Fair trade sourcing satisfies a commitment contract and creates an ideological dimension signal. These dual-justified processes are the norm, not the exception; pure single-source justification is relatively rare in practice.
+- **M1 (trace traversal).** A directed traversal that decides, for each parameter, whether an upward path to an L0 contract exists (DP2).
+- **M2 (schema and cross-reference integrity).** Structural checks that every referenced identifier resolves and every file conforms to its schema.
+- **M3 (contract satisfaction).** Evaluation of each L2 quality gate as a predicate over measured or specified values (DP1, DP4).
+- **M4 (waste detection).** A reverse-reachability pass from the L0 sinks that returns every unjustified parameter (DP2).
 
-Level 0 contracts are executor-invariant, format-invariant, and technology-invariant. A human barista and a robotic system must satisfy the same acceptance tests---whether those tests originate from customer perception, regulation, or organizational values.
+## Formal Model
 
-**Level 1: Signal Requirements (Integration Tests).** What signals the business must emit to create the desired perception and satisfy constraint requirements. Each signal traces upward to at least one Level 0 contract of any type. Specified across all eight SBT dimensions for experience-derived signals, and as compliance indicators for constraint-derived signals. Example: "Craft preparation visible to customer," "Aroma of fresh coffee present at entrance," "Allergen information accessible at point of sale." A signal requirement with no upward link to any Level 0 contract is unjustified---potential waste.
+The design principles are made precise by treating an OST specification as a typed directed graph and stating the invariants as decidable graph properties. The model is deliberately minimal: it is the smallest structure sufficient to state completeness, waste, and cascade-compression. Full proofs of the compression bound live in companion formal papers (Zharnikov 2026h, 2026m); the operator-theoretic counterpart of the model appears in Zharnikov (2026ae).
 
-**Level 2: Process Contracts (Unit Tests).** What each process must achieve to emit the required signals. These are executor-invariant quality gates: measurable outcomes that any implementation must satisfy. Example: "Espresso extraction time: 25--30 seconds. Temperature: 92--94 degrees Celsius. Dose: 17--19 grams. Crema: present, golden-brown, minimum 2 millimeters." A process contract with no upward link to a signal requirement is a process without justification.
+### Intuition
 
-**Level 3: Procedures (Implementation).** How a specific executor type achieves the contract. This is the executor-dependent layer---the "code" that the "tests" (contracts) validate. Different executor profiles (human artisan, hybrid-assisted, fully automated) produce different procedures for the same contract. When you swap executor type, the procedures change but the contracts remain stable---just as refactoring changes implementation without changing tests.
+Before the formal statements, the intuition. Picture the specification as a diagram of arrows in which every operational decision points upward to the stakeholder outcome it exists to serve. *Completeness* is the requirement that no chain of arrows dead-ends before it reaches an experience outcome—every parameter can answer the question "which stakeholder promise am I here for?". *Acyclicity* is the requirement that the chain never loops—nothing is justified by ultimately appealing to itself. A parameter from which no chain of arrows reaches any outcome is, by definition, unjustified: it is doing work no stakeholder asked for.
 
-**Level 4: Input Specifications (Dependencies).** What materials, equipment, and training the procedures require. Ingredient specifications with measurable parameters (bean origin, roast date constraints, grind size tolerances), equipment requirements (conical burr grinder with stepless adjustment), and training certifications.
+A four-vertex example makes this concrete. Let the graph contain one experience contract $e$ at L0 ("coffee served within three minutes"), one process contract $p$ at L2 ("extraction completes in 25–30 s") with an edge $p \to e$, one procedure $d$ at L3 ("tamp with 15 kg force") with an edge $d \to p$, and one further procedure $w$ at L3 ("engrave the barista's initials on the portafilter") with no outgoing edge. Reverse reachability from the L0 sink $e$ marks $\{e, p, d\}$ as justified: each reaches $e$ by following arrows. The remaining set $V \setminus R = \{w\}$ is the specification waste—engraving initials traces to no stakeholder outcome, so the pipeline flags it, not because it is forbidden but because nothing in the specification explains why it is there. Adding an edge from $w$ to some genuine outcome removes it from the waste set; that reversibility is the falsifiable content of the identification. The statements below generalize exactly this picture.
 
-**Level 5: Sourcing Requirements (Infrastructure).** Where inputs come from. Supplier criteria, certifications, delivery frequency, lead times. The supply chain layer---analogous to infrastructure in software, where changing a cloud provider should not change application behavior.
+### The justification graph
 
-### Key Architectural Properties
+Let an OST specification be a directed graph $G = (V, E)$. Each vertex $v \in V$ is a contract carrying a level type $\ell(v) \in \{L0, L1, L2, L3, L4, L5\}$ and, for non-implementation vertices, a machine-checkable predicate $\pi(v)$; contract vertices additionally carry executor-type metadata. Each directed edge $(u, v) \in E$ is a *justifies* edge asserting that lower-level vertex $u$ exists to serve higher-level contract $v$; edges carry verifiability metadata. The graph satisfies two invariants:
 
-**Backward traceability.** Every parameter at every level traces back to a customer experience justification. "Why is the extraction temperature 92--94 degrees?" Because the espresso process contract requires it (Level 2), which satisfies the "craft preparation quality" signal (Level 1), which creates the "balanced, sweet, clean finish" customer experience (Level 0). Any parameter that cannot be traced backward is either unjustified or has a missing link in the specification.
+- **Completeness.** Every non-L0 vertex has a directed path terminating at an L0 vertex. Equivalently, every vertex is *justified*: its existence is warranted by some experience-, constraint-, or commitment-level acceptance contract.
+- **Acyclicity.** $G$ is a directed acyclic graph; no vertex justifies itself transitively.
 
-**Contract-procedure separation as test-implementation separation.** In the Spectra Coffee demonstration, 17 of 23 specification files (74%) define executor-invariant content at Levels 0--2 (experience contracts, signal requirements, process contracts). Only 6 files contain executor-dependent procedures, inputs, or sourcing at Levels 3--5. The contracts (tests) remain stable across executor profiles. Only the procedures (implementation) change. This has profound implications for franchise models, automation decisions, and knowledge sharing: you can share the test suite without sharing the implementation.
+Both invariants are decidable in time linear in $|V| + |E|$: completeness by a reverse reachability pass from the L0 vertices (the sinks of the justification relation), and acyclicity by topological sort. This is the formal content of DP2 and DP4: the pipeline of Section 4.3 recomputes both on every change.
 
-**Forkability as test suite portability.** Sharing a business under orgschema means sharing its test suite. A new operator receives the contracts (what must be achieved) and writes their own procedures (how to achieve it). The depth of the fork determines what changes:
+### Waste as unreachability
 
-- Fork at Level 0: different customer experience goals---an entirely new business concept.
-- Fork at Level 1: same experience goals, different signal strategy---same target perception, different brand expression.
-- Fork at Level 2: same quality gates, different procedures---same concept, different execution.
-- Fork at Level 3: same contracts, different procedures---franchise-style replication with local adaptation.
-- Fork at Level 4: same procedures, different input specifications---same process, different materials or equipment.
-- Fork at Level 5: same input specifications, different suppliers---multi-location scaling.
+Let $R \subseteq V$ be the set of vertices from which a directed path reaches some L0 vertex. **Specification waste** is exactly $V \setminus R$. This gives Ohno's (1988) waste an ex-ante, structural definition at the specification layer—a parameter is wasteful if and only if it is unjustified—distinct from lagging-outcome waste measured after production. Mechanism M4 computes $V \setminus R$ by a single reverse-reachability pass, the organizational analog of dead-code elimination. The identification is falsifiable: a parameter with no upward trace that is nonetheless demonstrably required for an L0 outcome would refute it, indicating a missing edge rather than genuine waste.
 
-**Figure 2: Fork Depth and What Changes**
+### Executor-invariance
+
+Partition $V$ into the contract set $V_C = \{v : \ell(v) \in \{L0, L1, L2\}\}$ and the implementation set $V_I = \{v : \ell(v) \in \{L3, L4, L5\}\}$. An *executor swap* replaces the implementation subgraph induced by $V_I$ while leaving $V_C$ and the predicates $\pi$ on $V_C$ unchanged. DP3 is the requirement that acceptance is a function of $V_C$ alone: a swap changes how contracts are met, never which contracts must be met.
+
+### Cascade-compression is lossy under asymmetric verifiability
+
+A natural efficiency question is whether adjacent levels can be collapsed—compressing the six-level cascade into fewer levels—without loss. The smallest sufficient model to answer it uses three levels ($L0$, $L2$, $L4$), two negotiating modules, a binary executor type $x \in \{\text{human}, \text{AI}\}$, and a single information-asymmetry parameter $\alpha \in [0, 1]$ measuring how much of a lower level is inspectable from the level above (following the asymmetric-verifiability setup of Iyer, Schwarz, and Zenios 2001, where $\alpha = 1$ is full inspectability and $\alpha < 1$ is the generic case).
+
+*Claim (compression sketch).* For $\alpha < 1$, no many-to-one mapping that collapses adjacent levels preserves both completeness (the justification invariant) and executor-invariance (DP3). *Sketch.* Collapsing $L2$ into $L0$ merges each process contract with the experience contract it justifies. The merged predicate must decide acceptance, so it must reference the executor-dependent content that distinguishes one procedure's satisfaction of the contract from another's; but under $\alpha < 1$ that content is not fully inspectable from the experience layer, so the merged predicate is either incomplete (it cannot decide acceptance for some executor) or it imports executor-dependent state into $V_C$, violating DP3. Either way an invariant is lost. The full result—that the effective specifiable dimensionality strictly decreases under compression, with a geometric bound on the loss—is proved for the high-dimensional case in Zharnikov (2026h); the projection apparatus that governs level-to-level compression is developed in Zharnikov (2026m). The operator-theoretic reading, in which a rank-1 audit projection discards all performance dimensions orthogonal to a single compliance axis while a full-rank cascade preserves the dimensional structure, is developed in Zharnikov (2026ae).
+
+The compression result is the formal core of the novelty claim: a checklist can be collapsed and re-expanded at will, but a cascade that maintains completeness and executor-invariance under $\alpha < 1$ cannot be, and that irreducibility is what distinguishes the artifact from documentation (a rival we address in Section 8.4).
+
+### Validation pipeline
+
+Mechanisms M1–M4 compose into a per-change pipeline:
 
 ```
-Fork at L0:  [NEW experience] [NEW signals] [NEW contracts] [NEW procedures] [NEW inputs] [NEW sourcing]
-             = Entirely new business concept
-
-Fork at L1:  [SAME experience] [NEW signals] [NEW contracts] [NEW procedures] [NEW inputs] [NEW sourcing]
-             = Same target perception, different brand expression
-
-Fork at L2:  [SAME experience] [SAME signals] [SAME contracts] [NEW procedures] [NEW inputs] [NEW sourcing]
-             = Same concept, different execution
-
-Fork at L3:  [SAME experience] [SAME signals] [SAME contracts] [NEW procedures] [NEW inputs] [NEW sourcing]
-             = Franchise-style replication with local adaptation
-
-Fork at L4:  [SAME experience] [SAME signals] [SAME contracts] [SAME procedures] [NEW inputs] [NEW sourcing]
-             = Same process, different materials or equipment
-
-Fork at L5:  [SAME experience] [SAME signals] [SAME contracts] [SAME procedures] [SAME inputs] [NEW sourcing]
-             = Multi-location scaling (Friedrichshain demo)
+on every change to G:
+  1. schema check      : every v conforms to its level schema           (M2)
+  2. reference check   : every edge (u,v) resolves to existing vertices  (M2)
+  3. contract check    : for every L2 vertex v, evaluate predicate pi(v) (M3)
+  4. coverage check    : every L1/L2 vertex lies on a path to some L0    (M1)
+  5. waste check       : report V \ R  (unjustified vertices)            (M4)
+  fail the change if any of 1-4 reports an error; surface 5 as a warning
 ```
 
-This maps directly to the five-level openness taxonomy we have described elsewhere, where Toyota's production system serves as the canonical example of Level 3 openness: sharing the methodology (test suite) while retaining implementation parameters (data) as the competitive moat.[^16]
+Steps 1–2 are structural, 3 is semantic, and 4–5 are the traceability invariants; all run in time linear in the specification size, so the pipeline is practical to run on every commit.
 
-**CI/CD as satisfaction validation.** The validation pipeline implements six levels of checking, each corresponding to a different class of specification defect:
+## Propositions as a Forward Research Agenda
 
-Table 5: CI/CD Validation Levels
+The design-science contribution is the artifact and its analytical evaluation. The following propositions are stated as *testable hypotheses for future research*, not as validated outcomes; the paper reports no data bearing on them, and none should be read as a causal or performance claim. Stating them separates the conceptual and formal register of Sections 4–5 from the empirical register here.
 
-| Level | Validation | TDD Analogy | What It Catches |
-|:---|:---|:---|:---|
-| 1 | Schema validation | Syntax checking | Malformed specifications, missing required fields |
-| 2 | Cross-reference integrity | Link checking | Broken references between files, orphaned dependencies |
-| 3 | Contract satisfaction | Unit test pass/fail | Procedures that do not meet quality gates |
-| 4 | Signal coverage | Integration test coverage | Processes that emit no signals, signals with no source |
-| 5 | Experience traceability | Acceptance test coverage | Signals that trace to no customer experience goal |
-| 6 | Waste detection | Dead code analysis | Processes, inputs, or suppliers with no upward justification |
+**H1 (traceability and diagnostic latency).** Operations specified with backward traceability will identify the operational parameter responsible for an experience failure faster than operations without it, because the justification graph makes the causal chain traversable. *Lead falsification test*: across at least three independent deployments below the minimum-specifiability threshold (C1), if more than a quarter of parameters cannot maintain machine-verifiable upward traces without manual override on more than a tenth of changes, then DP2 and DP4 jointly fail.
 
-### The Maturity Model
+**H2 (continuous validation and drift).** Organizations using per-change validation will exhibit less accumulated structural non-conformance between periodic audits than organizations relying on periodic manual validation. This is testable by longitudinal comparison of non-conformances discovered at audit.
 
-Existing businesses need not adopt orgschema comprehensively from the start. We propose a six-level maturity model for progressive formalization:
+**H3 (test-suite transfer and information asymmetry).** Sharing a bounded responsibility center as a test suite (DP5) will transfer operational capability with lower information asymmetry than prescriptive procedure manuals in multi-site and franchise settings, where principal-agent asymmetry is well documented (Rubin 1978; Lafontaine 1992). This requires controlled comparison.
 
-Table 6: Six-Level Orgschema Maturity Model
+## Illustrative Walkthrough
 
-| Level | State | What CI/CD Validates | Value |
-|:---|:---|:---|:---|
-| M0 | Processes exist as tribal knowledge | Nothing | Baseline (most businesses) |
-| M1 | Process categories and required fields defined | Schema completeness | "We know what we need to specify" |
-| M2 | Quality gates and compliance requirements specified | Contract satisfaction | "We know what each process must achieve" |
-| M3 | Execution steps documented for current executor profile | Procedure-contract alignment | "We know how we do things" |
-| M4 | Full backward traceability to customer experience | Experience traceability, waste detection | "We know why we do everything" |
-| M5 | CI/CD runs full satisfaction validation on every change | All levels, regression detection | "Every change is tested against customer experience" |
+To make the cascade concrete we walk through a purpose-built specification for a fictional specialty-coffee operation. This is an *illustration of the artifact's structure*, not evaluation evidence; no claim about outcomes rests on it, and the fictional status is stated so the walkthrough is not mistaken for a case study.
 
-The migration path for existing businesses follows characterization testing---writing tests that capture the current behavior of existing systems before refactoring, a well-established practice in legacy software maintenance.[^17] Phase 1 audits customer experience (mystery shopping, gap analysis). Phase 2 maps current versus desired signals. Phase 3 characterizes processes, starting with customer-facing operations. Phase 4 documents inputs and sourcing. Phase 5 establishes the CI/CD pipeline and runs the first validation cycle.
-
-### Large Language Models as Essential Enabler
-
-Orgschema's multi-level TDD cascade operates across many dimensions simultaneously: customer experience across eight or more perceptual dimensions, signal requirements across dozens of touchpoints, process contracts across all operations, cross-references between hundreds of specification parameters. This multi-dimensional complexity was always theoretically sound but practically unmanageable for human operators with traditional tools.
-
-Large language models change the feasibility equation. Orgschema specifications are structured data (YAML) that LLMs read natively---no parsing, no interpretation, no ambiguity. The TDD cascade is a directed graph that an LLM can traverse: from experience goals through signals through contracts through procedures through inputs to sourcing. An LLM can answer "What allergens does the oat latte contain?" by traversing the specification. It can perform impact analysis: "If we change this supplier, which customer experience goals are affected?" It can detect waste: "Show me all parameters with no customer-experience justification."
-
-Table 7 presents a theoretical comparison of orgschema feasibility with and without LLM assistance. These comparisons represent expected impacts based on the structural properties of orgschema specifications (structured YAML, directed graph traversal, template-based generation) and established LLM capabilities.[^25] Empirical validation of these efficiency gains is a priority for future research.
-
-Table 7: LLM Impact on Orgschema Feasibility (Theoretical Comparison)
-
-| Task | Without LLM | With LLM |
-|:---|:---|:---|
-| Initial specification generation | Weeks of interviews and encoding | Feed existing SOPs to LLM; first-draft YAML in hours |
-| Cross-reference integrity | Manual checking across files | Instantaneous traversal and broken-link detection |
-| Backward traceability audit | Impractical at scale | "Show all parameters with no experience justification" |
-| Waste detection | Requires process consultant | LLM identifies unjustified processes automatically |
-| New product addition | Manual cascade traversal | LLM generates full cascade from experience goal |
-| Executor profile swap | Rewrite all procedures manually | LLM generates new procedures from existing contracts |
-| Change impact analysis | Manual dependency tracing | "If we change this supplier, which experience goals are affected?" |
-
-We argue that orgschema is a methodology whose time has arrived because of LLMs. The theoretical framework was always valid. The practical bottleneck was the complexity of maintaining multi-dimensional cross-referenced specifications manually. LLMs remove that bottleneck. This positions orgschema not as an AI product but as a design methodology that becomes practical in the AI era---a distinction that matters for adoption.
-
-## Demonstration: Spectra Coffee
-
-To validate the methodology, we developed a complete orgschema specification for Spectra Coffee, a specialty coffee operation in Berlin. The demonstration encompasses 25 YAML specification files across all six TDD cascade levels, plus a CI/CD validation pipeline.
-
-### Specification Scope
-
-The Spectra Coffee specification includes:
-
-**Level 0 (Customer Experience Contracts):** 25 acceptance tests across eight SBT dimensions, with proxy indicators and satisfaction targets. The target perception profile scores experiential perception highest (9/10), followed by semiotic and temporal dimensions (7/10), with economic scoring lowest (5/10)---a deliberate design choice reflecting the brand's positioning as a craft-focused, experience-rich operation.
-
-**Level 1 (Signal Requirements):** 18 integration tests mapping required signals to SBT dimensions. Each signal traces to at least one Level 0 customer experience goal. Four observer cohort profiles (morning regular, weekend explorer, delivery app user, food inspector) demonstrate that identical signals produce different perceptions depending on observer priors---validating SBT's anti-ergodic epistemology.
-
-**Level 2 (Process Contracts):** Quality gates for all core processes---espresso extraction, milk preparation, food handling, opening and closing procedures, equipment maintenance, quality control. All measurements in SI units (grams, milliliters, seconds, degrees Celsius) with explicit tolerances. To illustrate the cascade concretely, consider the espresso extraction process contract:
+A Level 2 process contract is a set of measurable quality gates with upward traces:
 
 ```yaml
 espresso_extraction:
@@ -366,225 +228,184 @@ espresso_extraction:
     - "delivery_within_180s"
 ```
 
-Each quality gate is a measurable test. The `satisfies_signal` and `satisfies_experience` fields are the upward traceability links---the reason this contract exists. A change to any quality gate parameter triggers the CI/CD pipeline, which verifies that the change does not break the satisfaction chain above it.
+Each quality gate is a predicate $\pi(v)$; the `satisfies_signal` and `satisfies_experience` fields are the outgoing justifies-edges. A change to any gate triggers the pipeline, which verifies that the change does not break the satisfaction chain above it. Compliance content participates in the same cascade: an allergen matrix and a hazard analysis trace upward through constraint contracts at L0, so regulatory requirements are justified parameters rather than parallel documentation.
 
-**Level 3 (Procedures):** Detailed execution steps for the human artisan executor profile. The specification notes that 74% of files (17 of 23) define executor-invariant content: contracts remain stable across executor types, and only procedures change.
+### Executor swap (illustrative)
 
-**Level 4 (Input Specifications):** Ingredient specifications with measurable parameters (single-origin arabica, roasted within 21 days, ground immediately before use), equipment requirements, and training certifications.
+To show the cascade's diagnostic character, consider an executor swap from human artisan to fully automated preparation, with *illustrative* values that are not measurements.
 
-**Level 5 (Sourcing Requirements):** Supplier criteria, certifications (EU organic, fair trade), delivery schedules, and lead times. All pricing in euros (Berlin market).
+**Table 2: Executor-Swap Impact (Illustrative).**
 
-### Compliance and Safety
-
-The specification includes a 14-allergen declaration matrix compliant with EU Regulation 1169/2011 Annex II and a HACCP hazard analysis covering seven process steps and eleven identified hazards across five critical control points. These compliance specifications participate in the TDD cascade: they trace upward through signal requirements ("safety and compliance visible") to customer experience goals ("trust and confidence in food safety").
-
-### Fork Demonstration
-
-To validate forkability as test suite portability, we created a location fork for a hypothetical second Spectra Coffee in Berlin-Friedrichshain. The fork overrides six parameters at Level 5 (sourcing): different local suppliers, adjusted delivery schedules, modified opening hours for the neighborhood's demographics. Levels 0 through 2---customer experience contracts, signal requirements, and process contracts---remain identical. The test suite is portable; only the implementation details change.
-
-### Executor Swap Scenario
-
-To illustrate the cascade's diagnostic capability, we construct a hypothetical executor swap scenario with illustrative perception scores. The specific values are not empirical measurements but serve to demonstrate how the TDD cascade makes otherwise invisible trade-offs quantifiable.
-
-Table 8: Executor Swap Impact Analysis (Illustrative Scenario)
-
-| TDD Level | Human Artisan | Fully Automated | Delta |
+| Cascade level | Human artisan | Fully automated | Delta |
 |:---|:---|:---|:---|
-| L2: Process contracts (unit tests) | All pass | All pass | No change |
-| L1: Signal requirements (integration tests) | 18/18 satisfied | 15/18 satisfied | -3 signals lost |
-| L0: Experience contracts (acceptance tests) | All pass | 2 fail | "Personal rapport" and "craft as performance" |
-| Perceived profile (SBT 8-dimension average) | 6.6 | 5.6 | -1.0 (15% decline) |
+| L2 process contracts (unit tests) | all pass | all pass | no change |
+| L1 signal requirements (integration tests) | 18/18 satisfied | 15/18 satisfied | −3 signals |
+| L0 experience contracts (acceptance tests) | all pass | 2 fail | "personal rapport", "craft as performance" |
 
-In this illustrative scenario, all Level 2 process contracts pass---the machine produces espresso within specified tolerances. But the cascade reveals that passing unit tests is insufficient: the integration and acceptance tests expose signal and experience degradation invisible to process-level metrics. The specific magnitude of spectral profile change (here modeled as a 15% decline) would require empirical measurement through SBT's observer-dependent methodology; the contribution is the analytical framework that makes such measurement meaningful, not the illustrative values themselves. This demonstrates that executor choice is a brand decision, not merely an operational one---a finding that the TDD cascade makes visible and quantifiable.
+*Notes*: Values are illustrative, not empirical measurements; they demonstrate the diagnostic structure, not a magnitude. All L2 contracts pass—the machine meets tolerances—yet the cascade exposes signal and experience degradation invisible to process-level metrics. Executor choice is thereby shown to be a design decision with experience consequences, made visible by the cascade rather than asserted.
 
-### Validation Pipeline
+### ISO 9001 comparison (illustrative and asymmetric)
 
-A CI/CD pipeline implemented in GitHub Actions validates specifications on every commit. The pipeline currently implements four of six validation levels: schema validation (JSON Schema), cross-reference integrity, signal coverage, and experience traceability. All four levels pass with zero errors and zero warnings. The pipeline serves as the "test runner" in TDD terms---automated verification that operational specifications satisfy their design intentions.
+We translate one espresso-preparation process from ISO 9001 clause-compliant documentation into the cascade and note what each format captures. This comparison is *illustrative and deliberately asymmetric*: it contrasts a fully-specified cascade with a conventional documentation format, and it establishes what the cascade makes explicit, not that the cascade is superior on any outcome. ISO 9001 does not prohibit automated traceability or continuous validation; it does not require them. The structural point is only that OST mandates these as invariants: in the cascade, the `extraction_time_s` gate traces through `craft_preparation_visible` to `taste_balanced_sweet_clean`, so changing the tolerance is visibly an experience change; cross-references are machine-readable identifiers checked on every commit rather than text references checked at the next audit; and the reverse-reachability pass reports unjustified parameters that conventional documentation provides no mechanism to distinguish from justified maintenance.
 
 ## Evaluation
 
-We evaluate the orgschema methodology using the FEDS framework's formative evaluation strategy.[^14] Five independent reviewers, each representing a distinct stakeholder perspective, assessed the Spectra Coffee demonstration against criteria relevant to their domain. Reviewers were selected to represent complementary evaluation perspectives---quality management, process consulting, academic research, pedagogy, and domain practice---ensuring that the methodology was assessed from both theoretical and practical standpoints. All reviewers assessed the Spectra Coffee demonstration independently, without knowledge of the other reviewers' assessments.
+Following FEDS (Venable, Pries-Heje, and Baskerville 2016), we evaluate the artifact through three strands: an analytical argument (primary), independent naturalistic corroboration, and a public demonstration. We make no causal or KPI-superiority claim: we do not claim that OST deployments outperform ISO 9001, TOGAF, or any other practice on any measured outcome. The evaluation establishes that the artifact has the properties it is designed to have and that an independent organization converged on the same design logic—not that it improves performance.
 
-### Expert Panel
+### Analytical evaluation (primary)
 
-**Quality Assurance Inspector.** Evaluated process specifications against ISO 9001 quality management principles and HACCP compliance requirements. Assessed whether process contracts contain sufficient measurable criteria to function as quality gates. Identified defects in allergen cross-referencing and HACCP hazard coverage, both subsequently corrected.
+The systematic comparison of Section 2 (Table 1) is the primary evaluation. Against the four-property axis, OST is the only artifact for which ex-ante, experience-layer, machine-checkable, and backward-traceable hold jointly, and Section 5 shows why the joint property is irreducible under asymmetric verifiability. Restated as a graded claim: the artifact raises machine-checkable experience-linkage from the small fraction of parameters that adjacent traditions link to an experience criterion toward near-complete coverage, and reduces validation latency from the periodic cadence of audit to continuous per-change checking. Both are analytical consequences of the design principles and the formal model, independent of any deployment.
 
-**Process Consultant.** Evaluated the TDD cascade's internal consistency and practical applicability. Assessed whether backward traceability chains are complete and whether the maturity model provides a realistic adoption pathway. Identified gaps in the signal-to-experience mapping, subsequently addressed through the creation of explicit signal requirements (Level 1 integration tests).
+### Naturalistic corroboration: two independent industry cases
 
-**Academic Researcher.** Evaluated the methodology's theoretical grounding, novelty claims, and relationship to existing literature. Confirmed that no existing framework combines multi-level TDD, backward traceability, and CI/CD satisfaction validation. Recommended strengthening the Beer Viable System Model mapping and the LLM enabler argument.
+Two independent, publicly-documented firms exhibit structures that instantiate the artifact's design principles, each arrived at from operating practice rather than from this theory. We frame both as ex-post naturalistic corroboration of the design logic—evidence that the logic is not idiosyncratic to this paper—carrying no causal or performance claim.
 
-**Professor and Graduate Student.** Evaluated the methodology's pedagogical clarity and usefulness as a teaching case. Confirmed that the Spectra Coffee demonstration is sufficiently complete to serve as an MBA case study. Noted that the zero-cost orgschema toolkit compares favorably to commercial business simulation platforms costing 14 to 107 dollars per student.
+The first corroborates continuous validation and the WHAT/DO separation. Block, Inc. (Dorsey and Botha 2026) articulated a "world model" architecture that replaces hierarchical coordination with an AI-maintained organizational specification—a customer-facing specification, a machine-maintained company context, and time-bounded ownership rotations in place of permanent middle management. The architecture is structurally equivalent to the cascade's WHAT/DO separation (DP3) and continuous validation (DP4).
 
-**Coffee Shop Manager.** Evaluated practical relevance from the operator's perspective. Confirmed that process specifications reflect realistic operations. Identified missing parameters in equipment maintenance schedules and opening procedures, subsequently added.
+The second corroborates experience-first specification (DP1) through a firm at a different scale and era, which matters because it shows the design logic is not an artifact of the recent AI moment. Amazon's "working backwards" process requires a team to write an internal press release and a frequently-asked-questions document—describing the customer experience of a product as it would be announced—and to review and approve that artifact before any implementation begins (Bryar and Carr 2021). The press-release-and-FAQ is, structurally, an L0 experience acceptance contract authored before the operational stack: the desired stakeholder experience is specified and gated first, and the build is derived to satisfy it. That an independent firm institutionalized experience-first acceptance as a mandatory gate, decades before the cascade was formalized, is naturalistic evidence for DP1 specifically. The two cases corroborate different design principles from different firms, which is stronger than a single instance.
 
-### Evaluation Results
+The wider industry signal is consistent with both: organizations reporting significant enterprise-wide AI impact are 2.8 times as likely to have fundamentally redesigned their workflows rather than layering AI tools on existing processes (Singla et al. 2025).
 
-The panel identified a total of 14 defects: 3 critical, 5 major, and 6 minor. All critical and major defects were corrected during the formative evaluation cycle.
+### Demonstration: a public specification corpus (proof-of-concept)
 
-**Critical defects** included: incomplete allergen cross-referencing (the oat latte specification listed "oat" as an allergen but did not reference the 14-allergen EU Regulation 1169/2011 Annex II matrix), missing HACCP hazard coverage for two process steps (grinding and milk storage), and a broken traceability chain where one product's `satisfies_signal` annotation referenced a signal identifier that did not exist in the signal requirements file.
+The third strand is the weakest of the three and is offered only as proof-of-concept that the validation pipeline is implementable on real artifacts; it is subordinate to the two independent naturalistic cases above and carries no corroborative weight beyond feasibility. It requires no private data: the author's multi-month research corpus is itself an auditable instance of OST. Its specifications are maintained as dependency graphs; acceptance-test-style bundle gates check, on every change, that each artifact's claims trace to its specification and that cross-references resolve; tooling is executor-invariant in the sense of DP3 (the checks run identically regardless of who edits); and backward traceability is version-controlled. This shows that the per-change pipeline of Section 5 runs on a live specification—not that it improves any outcome. Because the corpus is authored by the same hand that states the theory, its self-referentiality (stated plainly as a limitation in Section 9.3) bars it from bearing evidential weight; the naturalistic cases, not this demonstration, carry the corroborative load.
 
-**Major defects** included: absence of explicit Level 1 signal requirements (the gap between Level 0 experience contracts and Level 2 process contracts was initially unmediated), missing execution profile metadata on the organization specification (preventing executor-swap analysis), insufficient granularity in equipment maintenance schedules, incomplete opening/closing procedures, and inconsistent currency representation across product files.
+### Boundary objects
 
-**Minor defects** included formatting inconsistencies, missing optional metadata fields, and documentation gaps in the signal map.
-
-The correction cycle demonstrates the methodology's self-healing property: because defects are identified through the same cascade traversal that orgschema specifies, the evaluation process *is* the methodology. The QA inspector's allergen finding, for example, was precisely the kind of cross-reference integrity check that orgschema's CI/CD Level 2 validation automates. After correction, the automated pipeline catches the same class of defect on every subsequent commit.
-
-The evaluation validates three claims about the methodology:
-
-First, *instrument validity*: the specification language (YAML with JSON Schema validation) adequately captures business operations at a level of detail sufficient for quality management, compliance, and operational execution. The coffee shop manager confirmed that specifications reflect realistic practice; the quality assurance inspector confirmed they meet compliance documentation standards. Notably, the inspector's assessment applied the same rigor used for ISO 9001 documentation review, finding the orgschema specifications structurally superior to Word-based quality documentation because of automated cross-reference validation.
-
-Second, *purpose validity*: the methodology achieves its stated purpose of producing testable, traceable, forkable business specifications. The CI/CD pipeline validates satisfaction at four of six levels. The fork demonstration (Friedrichshain location variant, 6 parameter overrides at Levels 3--5, identical Levels 0--2) proves test suite portability. The executor swap scenario demonstrates that the TDD cascade makes otherwise invisible trade-offs quantifiable---the process consultant noted that the 15% perceived profile degradation from human-to-automated execution would be invisible without the multi-dimensional measurement framework.
-
-Third, *practical adoptability*: the maturity model provides a realistic incremental path. Even M1 (knowing what you need to specify) represents a significant operational clarity improvement over M0 (tribal knowledge). The professor confirmed that M0-to-M2 migration (from tribal knowledge to contract-level specification) is achievable in a single working day for a simple operation, using LLM-assisted specification generation. The LLM-accelerated migration path makes initial specification generation feasible within hours rather than weeks.
+A design theory earns its keep by explaining phenomena that rival accounts leave anomalous. The artifact explains three. First, persistent strategy-execution gaps in digital transformations despite mature enterprise-architecture and BPM tooling: OST attributes them to missing experience-layer acceptance contracts and the absence of continuous trace validation—precisely the two properties Table 1 shows those tools lack. Second, the differential coordination success of "working-backwards" cultures relative to traditional matrix organizations: OST predicts it from executor-invariance and forkability (DP3, DP5), which let a specification survive reorganization. Third, the outcome-coherent forking of certain open-source organizational forms, which reproduce without a prescriptive manual: OST reads them as sharing a test suite rather than an implementation. Conformance checking, balanced scorecards, and cybernetic control leave all three under-explained.
 
 ## Discussion
 
-### Implications for Operations Management
+### The DO/WHAT bridge and measurement
 
-Orgschema's core proposition for operations managers is "manage by test results." Rather than monitoring operational metrics in isolation, a manager using orgschema can see which customer experience goals (acceptance tests) are satisfied, which signal requirements (integration tests) are met, and which process contracts (unit tests) pass their quality gates. A process that meets all its internal metrics but fails to satisfy the signal requirements above it is not meeting quality standards---the TDD cascade makes this visible.
+The cascade's WHAT layer (L0–L1) specifies delivered experience; a measurement instrument scores it. Where Spectral Brand Theory (Zharnikov 2026a) or an equivalent instrument is used, an L0 acceptance contract specifying, say, "warm, competent, unhurried" is satisfied or failed according to the dimensional profile that observer cohorts actually form, closing a specify-forward / measure-against-ground-truth loop without human inspection of individual results. The empirical anchoring is stronger in AI-mediated channels, where evidence suggests such channels are not neutral conduits but selectively compress some experience dimensions while preserving others (Zharnikov 2026v), reinforcing the priority of specifying the WHAT layer explicitly for any organization operating in AI-augmented markets.
 
-The backward traceability architecture also enables a new form of waste detection. Any process, procedure, input specification, or sourcing requirement that cannot be traced upward to a customer experience justification is, by definition, organizational waste. This extends lean thinking from production waste to specification waste---processes that exist without justification.
+### Nesting within a coarser transferability ontology
 
-### Mapping to Beer's Viable System Model
+The cascade specifies an organization's internal layers at high resolution. A coarser six-tier ontology of the firm—owner intent, business model, business entity, product, process, organization—has been developed to address transferability in mergers and acquisitions (Zharnikov 2026ag). The OST cascade nests inside the lower tiers of that ontology: product corresponds to L0–L1, process to L2 and upper L3, and organization to lower L3 and L4–L5. The two hierarchies are not isomorphic: OST's L0 is the customer-facing apex (read top-down from experience to sourcing), whereas the six-tier ontology's deepest stratum is owner intent (read from the inside out). They share a count, not a reading direction or rung semantics; a formal mapping between the two, via the projection apparatus of Zharnikov (2026m), is left to future work. The empirical case for specifying the WHAT layer is strengthened outside the OST literature: intangible assets now constitute roughly nine-tenths of large-firm market value, most of it internally generated and absent from the balance sheet (Peters and Taylor 2017), so most operating value sits in dimensions financial reporting cannot extract; and across a case survey of acquisitions, organizational integration—not strategic fit—was the dominant factor in synergy realization (Larsson and Finkelstein 1999), which OST reframes as cascade compatibility: when the L0–L1 specifications of acquirer and target are commensurable, integration is mechanical.
 
-Orgschema's structure maps to Beer's Viable System Model, providing theoretical grounding in organizational cybernetics.[^18]
+### Cybernetic grounding
 
-Table 9: Orgschema to Viable System Model Mapping
+The cascade maps onto Beer's (1979) Viable System Model: operations (S1) to Levels 3–5, coordination (S2) to the cross-reference structure, operational management (S3) to Level 2 contracts, intelligence (S4) to Level 1 signals, and identity (S5) to Level 0 contracts. The theoretically significant mapping is the audit channel S3\*, which Beer described as sporadic and direct; OST realizes it as a continuous, automated, comprehensive check on every change, and adds the upward traceability from S1 to S5 that the VSM leaves implicit. We recast this in the language of continuous validation rather than cybernetic pathology, because the operational content—per-change checking of the justification graph—is what the artifact contributes.
 
-| VSM System | Function | Orgschema Mapping | Specification Strength |
-|:---|:---|:---|:---|
-| S1 (Operations) | Primary activities | Product specs, process procedures | Strong (6 products, 4 process files) |
-| S2 (Coordination) | Harmonizing S1 units | Internal communications protocols | Strong (581 lines; addresses PII12 pathology) |
-| S3 (Operational Mgmt) | Resource allocation, control | Quality control, compliance, HACCP | Strong (5 critical control points) |
-| S3* (Audit) | Monitoring, verification | CI/CD validation pipeline | Moderate (4 of 6 levels implemented) |
-| S4 (Intelligence) | Environmental scanning | Signal map, observer profiles | Thin (acknowledged limitation) |
-| S5 (Identity/Policy) | Organizational identity | Organization, brand identity specs | Strong (identity layer specified) |
+### Practical implications
 
-System 2 is notably well-specified---unusual for organizations, where Beer identified thin coordination as a common pathology (disjointed behavior from under-resourced S2).[^19] The 581-line internal communications specification---governing information flows between roles, meeting cadences, escalation protocols, and cross-functional coordination---directly addresses what Perez Rios identifies as one of the 17 most common organizational pathologies. System 3* (the audit channel) maps to orgschema's CI/CD validation pipeline, providing continuous monitoring that Beer's original model envisioned but could not implement with 1980s technology. System 4 is acknowledged as thin, representing the boundary where SBT's environmental scanning and the observer-cohort analysis begin to address strategic intelligence---a limitation shared with most operational specification systems, which focus on internal coordination (S1--S3) rather than environmental adaptation (S4--S5). The VSM mapping validates orgschema's completeness as an organizational specification while highlighting productive directions for future development.
+For information-systems practitioners, the artifact suggests treating organizational specification as version-controlled, machine-checkable code: schema-first specifications, a CI/CD-style validation pipeline, and traceability that AI agents can consume directly. For operations managers, the cascade is a diagnostic instrument—traverse downward from a failing acceptance test to localize the responsible parameter. For multi-site and franchise operations, DP5 suggests sharing a test suite and verifying compliance through automated results rather than prescribing a manual. The industry-convergence evidence indicates that the redesign this implies is where enterprise-wide AI impact concentrates (Singla et al. 2025).
 
-### Rethinking Franchises as Test Suite Licensing
+### Boundary conditions
 
-The contract-procedure separation has implications for franchise models. Traditional franchises share implementation: detailed operational manuals specifying how to do everything. Franchisees who deviate from the manual risk termination. The franchise relationship is based on implementation compliance---following the prescribed procedures exactly.
+- **C1 (minimum-specifiability threshold).** The artifact yields positive returns only where enough operational knowledge is articulable; below the threshold, trace-maintenance cost dominates. An observable signature is trace-maintenance effort exceeding a material fraction of operating effort.
+- **C2 (high-tacit domains).** In fine dining, therapy, or coaching, where how something is done is inseparable from what is achieved, the executor-invariant boundary (DP3) weakens.
+- **C3 (bootstrap).** Specifying L0 before an organization operates requires hypothesizing and refining acceptance tests, analogous to characterization testing of legacy systems (Feathers 2004).
+- **C4 (preference drift).** The cascade rests on L0 tests remaining valid as preferences evolve; a renewal protocol governing L0 revision frequency and triggers is required and not yet formalized.
+- **C5 (political economy).** Making constraints explicit reduces the ambiguity actors exploit as a discretionary resource (Crozier and Friedberg 1977); the artifact transforms rather than removes political dynamics, and can be resisted as any formalization is.
 
-Orgschema suggests an alternative: sharing the test suite (contracts) without prescribing the implementation (procedures). An "orgschema franchise" would specify what each process must achieve (quality gates, signal requirements, experience contracts) while leaving franchisees free to determine how to achieve it. Compliance means passing the tests, not following the manual. This addresses the information asymmetry problems documented in franchise economics[^20] by making performance objectively verifiable without constraining innovation.
+These conditions also dissolve an apparent counterexample—that the most effective teams often operate with little documentation. Below C1's threshold, low-specification operation is rational; the artifact targets settings above it.
 
-Toyota's production system serves as a historical precedent. For decades, Toyota shared its methodology (the "tests"---principles, quality standards, process categories) while retaining its implementation details (specific parameters, supplier relationships, tacit knowledge).[^16] The methodology publication strengthened Toyota's position by creating an ecosystem that spoke its language. Orgschema's openness taxonomy formalizes this pattern.
+### Limitations
 
-### Organizational Openness as Test Suite Sharing
-
-We have proposed a five-level openness taxonomy for orgschema specifications, ranging from fully closed (proprietary specifications) to what we term a "glass factory" (fully transparent operations).[^21] The taxonomy maps directly to what part of the test suite and implementation is shared:
-
-- Level 1 (Closed): nothing shared.
-- Level 2 (Open Schema): the specification structure is public (what parameters exist, what should be measured) but specific values are private.
-- Level 3 (Open Reference): a reference implementation is shared as a starting template.
-- Level 4 (Open Core): the full specification logic is shared; competitive advantage comes from implementation quality and proprietary data.
-- Level 5 (Glass Factory): everything is transparent in real time.
-
-The Spectra Coffee demonstration operates at Level 3 (Open Reference): the full specification is published as a starting template that others can fork and customize, while the competitive advantage of any real business using it would come from execution quality and proprietary parameter values.
-
-Schema publication---making visible what parameters a well-run business should control---is itself valuable. Less experienced operators may not have realized what they need to measure. The schema reveals the dimensions of excellence without revealing the specific calibrations that produce it. This maps to what Chesbrough and Appleyard describe as value creation through open innovation platforms.[^22]
-
-### Cross-Industry Perception Transplant
-
-The separation of perception specification (Level 0) from operational implementation (Levels 1--5) enables a radical form of knowledge transfer: the *perception transplant*. If the perception profile that observers form of a brand---its pattern of perceived brand meaning across SBT's eight dimensions---can be measured quantitatively, that profile becomes a portable Level 0 acceptance test applicable to any industry.
-
-Consider a hypothetical example. Suppose a brand's perception were measured across observer cohorts as: experiential 9, semiotic 9, temporal 8, ideological 8, social 8, economic 8 (premium-as-signal). These illustrative scores represent a hypothetical luxury technology brand's spectral profile to demonstrate the transplant mechanism; they are not empirical measurements of any specific brand. This spectral *shape*---the relative emphasis across dimensions---is what produces willingness to pay twice the price for functionally equivalent products. Now transplant that shape as the Level 0 acceptance test for a specialty coffee operation. The absolute values and the digital-to-analogue ratio shift (a physical coffee shop cannot replicate Apple's 0.85 digital dominance), but the relative emphasis transfers: semiotic and experiential as dominant dimensions, premium pricing as a quality signal rather than a barrier, social belonging through brand identification.
-
-Orgschema's TDD cascade then derives everything backward from the transplanted profile. What signals must a coffee shop emit to achieve Apple-like perception scores? Minimalist interior design (semiotic), precision in every tactile surface (experiential), seasonal innovation cadence (temporal), premium materials throughout (economic-as-signal). What processes emit those signals? What inputs and sourcing? Every investment---custom ceramics, extended barista training, direct-trade sourcing---traces to a specific dimension of the target perception profile.
-
-This introduces a third fork type beyond those previously discussed:
-
-Table 10: Three Fork Types
-
-| Fork Type | What Is Copied | What Is Rewritten | Example |
-|:---|:---|:---|:---|
-| Location fork | L0--L4 (everything except sourcing) | L5 (suppliers, schedules) | Spectra Coffee Friedrichshain |
-| Business fork | L0--L2 (test suite) | L3--L5 (implementation) | Same concept, different execution |
-| Perception transplant | L0 shape only (perception profile) | L1--L5 (everything else) | "Apple's emotional architecture, applied to coffee" |
-
-The perception transplant is the most radical: you copy neither the business nor its test suite implementation, only the *acceptance criteria*---the shape of desired perception. The entire operational stack is designed from scratch to satisfy a borrowed emotional architecture. This has implications for competitive intelligence (a coffee shop's real perception competitor may be Aesop or Muji, not another coffee shop), for investment justification (every expenditure traces to a dimension of the target profile), and for brand strategy (perception engineering from measured first principles rather than intuition).
-
-### The "Just Documentation" Rebuttal
-
-A predictable objection is that orgschema specifications are merely "documentation in YAML." The rebuttal is simple and definitive: documentation cannot run tests. Orgschema specifications are testable artifacts with automated validation pipelines. Every parameter has a traceable justification chain. Every change is verified against customer experience satisfaction through an automated pipeline. A Word document describing espresso preparation cannot be validated against a customer experience contract. An orgschema specification can be---and is, on every commit.
-
-The distinction parallels the difference between a software requirements document and a test suite. Both describe what a system should do. Only the test suite verifies that it does.
-
-## Limitations and Future Research
-
-Several limitations constrain the current work. First, the demonstration covers a single business type (specialty coffee) at a single level of complexity (small, single-location). While the methodology is domain-agnostic, validation across industries---particularly in services with higher regulatory complexity or in manufacturing---would strengthen generalizability.
-
-Second, Level 0 acceptance tests for customer experience are inherently qualitative. Goals such as "warm, competent, unhurried" require proxy metrics (delivery time, greeting acknowledgment time) that capture partial aspects of the desired experience. Whether proxy metrics can adequately represent the full dimensionality of customer perception is an open question that connects to ongoing debates in service quality measurement.[^23]
-
-Third, the current CI/CD pipeline validates structural properties (schema, cross-references, coverage) but cannot yet validate experiential properties (does the espresso actually taste balanced?). Closing this gap requires integration with operational telemetry---sensor data, point-of-sale analytics, customer feedback---which represents a significant engineering challenge.
-
-Fourth, the evaluation relies on formative expert assessment rather than summative field validation. A naturalistic evaluation---deploying orgschema in an operating business and measuring outcomes over time---would provide stronger evidence for the methodology's practical impact.
-
-Future research directions include: automated test generation (can an LLM generate process contracts from signal requirements, or procedures from contracts, making orgschema a generative methodology?); regression testing for business changes (when a supplier changes, which customer experience tests might break?); multi-location test variance (should different locations share identical acceptance tests or adapt them to local cohorts?); digital output provenance (when every process is specified, every physical output can carry a digital trace of its full production history---filtered by audience through the openness taxonomy---enabling customers to query the provenance of their purchase at any depth); and integration with the forthcoming revision of ISO 9001 (currently in Draft International Standard stage as ISO/DIS 9001:2026), which is expected to introduce requirements for digital quality management that align with orgschema's specification-first approach.[^24]
+First, no controlled outcome evidence: the evaluation is analytical, naturalistic-observational, and demonstration, and no causal claim is made. Second, two of the three evaluation strands—the demonstration corpus and the analytically-argued primary evaluation—are authored by the same hand; the independent naturalistic strand partly offsets this, but the evaluation is formative, not summative. Third, the embedded formal model is the smallest sufficient model, and the compression result is a proof sketch whose full proof is deferred to companion papers. Fourth, the empirical hypotheses (H1–H3) are a forward agenda and are not tested here.
 
 ## Conclusion
 
-The Organizational Schema Theory methodology applies Test-Driven Development to business design. Customer experience goals, regulatory constraints, and organizational commitments are acceptance tests. Signal requirements are integration tests. Process contracts are unit tests. Procedures are the implementation. The CI/CD pipeline is the test runner. The result is businesses where every operational parameter traces back to a justification---whether customer-derived, legally mandated, or values-driven---where changes are validated against satisfaction criteria, and where operational knowledge is shareable as a test suite rather than as a procedures manual.
-
-The methodology's practical feasibility depends on large language models. The multi-dimensional complexity of maintaining cross-referenced specifications across six hierarchical levels, eight perceptual dimensions, and hundreds of operational parameters was always theoretically sound but practically unmanageable. LLMs change this equation---not by replacing human judgment about what customers should experience, but by making the tedious work of cascade traversal, consistency checking, and impact analysis feasible at scale. Orgschema is a methodology whose time has arrived because of AI.
-
-The broader implication extends beyond any single business. If operational specifications are testable, they are comparable. If they are version-controlled, they accumulate institutional knowledge. If they are forkable, they enable new models of organizational knowledge sharing that go beyond the franchise manual. The question is not whether businesses will be specified as testable artifacts---the convergence of declarative process management, infrastructure-as-code, and AI-native workflows makes this trajectory likely. The question is whether they will be designed forward from available resources or backward from desired customer experience. Orgschema argues for backward.
-
----
+Organizational design does not lack quality mechanisms; it lacks one specific property—a machine-checkable, ex-ante acceptance contract at the experience layer with backward traceability, maintained as a structural invariant of the specification. Organizational Schema Theory supplies that property through a six-level specification cascade, stated as five design principles and formalized as a typed justification graph on which completeness, waste, executor-invariance, and cascade-compression are decidable. The artifact is evaluated honestly—analytically, through independent industry convergence, and through a public demonstration corpus—with no outcome claim, and what is new in it is separated from what it adapts and synthesizes. The contribution is nascent design theory: acceptance testing operationalized as a tool-checkable invariant of organizational specification, with a research agenda that invites the controlled evaluation this paper deliberately does not claim.
 
 ## Acknowledgments
 
-AI assistants (Claude Opus 4.8, Grok 4.20, Gemini 2.5 Pro) were used for initial literature search and editorial refinement; all theoretical claims, propositions, and interpretations are the author's sole responsibility.
+Generative AI tools (Claude Opus 4.8, Anthropic; Grok 4.20, xAI; Gemini 2.5 Pro, Google) were used as research instruments for literature search, citation verification, and editorial refinement, and a large language model provided a pre-draft critical review of the paper's concept. All theoretical framework construction, the formal model, analytical conclusions, and manuscript text are the author's own work. No generative tool authored the design theory or its evaluation.
 
----
+## Disclosure of Interest
 
-[^1]: Kent Beck, *Test-Driven Development: By Example* (Boston: Addison-Wesley, 2003).
+The author declares no competing interests with respect to the research, authorship, and publication of this article.
 
-[^2]: Taiichi Ohno, *Toyota Production System: Beyond Large-Scale Production* (Portland: Productivity Press, 1988).
+## Funding
 
-[^3]: W. Edwards Deming, *Out of the Crisis* (Cambridge: MIT Press, 1986).
+No funding was received for this research.
 
-[^4]: G. Lynn Shostack, "Designing Services That Deliver," *Harvard Business Review* 62, no. 1 (1984): 133--139.
+## Data and Code Availability
 
-[^5]: Alan R. Hevner, Salvatore T. March, Jinsoo Park, and Sudha Ram, "Design Science in Information Systems Research," *MIS Quarterly* 28, no. 1 (2004): 75--105.
+The demonstration specification corpus and the validation tooling referenced in Section 8.3 are publicly inspectable. The concept DOI for this work is [10.5281/zenodo.18946043](https://doi.org/10.5281/zenodo.18946043).
 
-[^6]: Maja Pesic and Wil M. P. van der Aalst, "A Declarative Approach for Flexible Business Processes Management," in *Business Process Management Workshops*, Lecture Notes in Computer Science (Berlin: Springer, 2006).
+## References
 
-[^7]: Alberto Cespedes, Hajo A. Reijers, and Jan Mendling, "Business Process Architecture and DevOps: A Synergistic Adoption," *Information and Software Technology* 116 (2019).
+Adler PS and Borys B (1996) Two types of bureaucracy: enabling and coercive. *Administrative Science Quarterly* 41(1), 61–89.
 
-[^8]: Grant Wiggins and Jay McTighe, *Understanding by Design* (Alexandria: ASCD, 1998).
+Akao Y (ed) (1990) *Quality Function Deployment: Integrating Customer Requirements into Product Design*. Productivity Press. (Methodology first developed by Akao in 1966.)
 
-[^9]: Yoji Akao, ed., *Quality Function Deployment: Integrating Customer Requirements into Product Design* (Portland: Productivity Press, 1990). The methodology was first developed by Akao in 1966.
+Baldwin CY and Clark KB (2000) *Design Rules: The Power of Modularity*. MIT Press.
 
-[^10]: Clayton M. Christensen, Scott D. Anthony, Gerald Berstell, and Denise Nitterhouse, "Finding the Right Job for Your Product," *MIT Sloan Management Review* 48, no. 3 (2007): 38--47. The JTBD framework originates from Christensen's earlier work on disruptive innovation.
+Beck K (2003) *Test-Driven Development: By Example*. Addison-Wesley.
 
-[^11]: Dmitry Zharnikov, "Spectral Brand Theory: A Computational Framework for Multi-Dimensional Brand Perception," Working paper (2026). Available at https://doi.org/10.5281/zenodo.18945912. SBT models brand perception across eight observer-dependent dimensions. The open-source toolkit is at https://github.com/spectralbranding/sbt-framework. Orgschema uses SBT as the specification language for Levels 0 and 1 of the TDD cascade.
+Beer S (1979) *The Heart of Enterprise*. John Wiley.
 
-[^12]: Matthew T. Mullarkey and Alan R. Hevner, "An Elaborated Action Design Research Process Model," *European Journal of Information Systems* 28, no. 1 (2019): 6--20. The eDSR approach decomposes the research project into five validated echelons, each providing intermediate validation. This addresses the common DSR criticism that single demonstrations are insufficient evidence.
+Bryar C and Carr B (2021) *Working Backwards: Insights, Stories, and Secrets from Inside Amazon*. St. Martin's Press.
 
-[^13]: This distinction---artifact as methodology versus artifact as instantiation---is critical for DSR contributions. The Spectra Coffee demo validates the methodology; it is not the methodology itself.
+Crozier M and Friedberg E (1977) *L'acteur et le système: Les contraintes de l'action collective*. Éditions du Seuil.
 
-[^14]: John Venable, Jan Pries-Heje, and Richard Baskerville, "FEDS: A Framework for Evaluation in Design Science Research," *European Journal of Information Systems* 25, no. 1 (2016): 77--89.
+Deming WE (1986) *Out of the Crisis*. MIT Press.
 
-[^15]: The Design Science Validity Framework specifies five validity types: instrument, technical, design, purpose, and generalization. We address instrument and purpose validity; technical validity is partially addressed through the CI/CD pipeline.
+Dorsey J and Botha R (2026) From hierarchy to intelligence. Block, Inc. https://block.xyz/inside/from-hierarchy-to-intelligence (co-published at https://sequoiacap.com/article/from-hierarchy-to-intelligence/).
 
-[^16]: The Toyota Production System exemplifies Level 3 ("Open Core") in orgschema's openness taxonomy. Toyota published the methodology---14 principles, quality standards, process categories---while retaining implementation parameters---specific takt times, supplier contracts, tacit knowledge. The NUMMI case demonstrated the difficulty of methodology transfer without accompanying cultural and operational context---while GM adopted many Toyota Production System techniques at NUMMI, sustained adoption across GM's broader plant network proved challenging, validating the schema-data distinction as a competitive moat. See Jeffrey K. Liker, *The Toyota Way* (New York: McGraw-Hill, 2004).
+Dumas M, La Rosa M, Mendling J and Reijers HA (2018) *Fundamentals of Business Process Management*, 2nd edn. Springer. https://doi.org/10.1007/978-3-662-56509-4
 
-[^17]: Michael C. Feathers, *Working Effectively with Legacy Code* (Upper Saddle River: Prentice Hall, 2004). Characterization tests capture the current behavior of existing code, enabling safe refactoring. Orgschema applies the same principle to existing business operations.
+Feathers MC (2004) *Working Effectively with Legacy Code*. Prentice Hall.
 
-[^18]: Stafford Beer, *Brain of the Firm*, 2nd ed. (Chichester: John Wiley, 1981); Stafford Beer, *The Heart of Enterprise* (Chichester: John Wiley, 1979).
+Gotel OCZ and Finkelstein CW (1994) An analysis of the requirements traceability problem. In *Proceedings of the First International Conference on Requirements Engineering (ICRE 94)*, 94–101. IEEE. https://doi.org/10.1109/ICRE.1994.292398
 
-[^19]: Jose Perez Rios, *Design and Diagnosis for Sustainable Organizations: The Viable System Method* (Berlin: Springer, 2012). Perez Rios identifies 17 organizational pathologies; "disjointed behavior" (PII12) from thin System 2 coordination is among the most common.
+Gregor S and Jones D (2007) The anatomy of a design theory. *Journal of the Association for Information Systems* 8(5), 312–335. https://doi.org/10.17705/1jais.00129
 
-[^20]: Paul H. Rubin, "The Theory of the Firm and the Structure of the Franchise Contract," *Journal of Law and Economics* 21, no. 1 (1978): 223--233; Francine Lafontaine, "Agency Theory and Franchising: Some Empirical Results," *RAND Journal of Economics* 23, no. 2 (1992): 263--283.
+Gregor S, Chandra Kruse L and Seidel S (2020) Research perspectives: the anatomy of a design principle. *Journal of the Association for Information Systems* 21(6), 1622–1652. https://doi.org/10.17705/1jais.00649
 
-[^21]: The five-level openness taxonomy ranges from Closed (Level 1) to Glass Factory (Level 5). Each level corresponds to increasing transparency of the specification (test suite) and implementation (procedures and data).
+Gregor S and Hevner AR (2013) Positioning and presenting design science research for maximum impact. *MIS Quarterly* 37(2), 337–355. https://doi.org/10.25300/MISQ/2013/37.2.01
 
-[^22]: Henry Chesbrough and Wim Appleyard, "Open Innovation and Strategy," *California Management Review* 50, no. 1 (2007): 57--76.
+Hevner AR, March ST, Park J and Ram S (2004) Design science in information systems research. *MIS Quarterly* 28(1), 75–105.
 
-[^23]: A. Parasuraman, Valarie A. Zeithaml, and Leonard L. Berry, "A Conceptual Model of Service Quality and Its Implications for Future Research," *Journal of Marketing* 49, no. 4 (1985): 41--50.
+Iyer AV, Schwarz LB and Zenios SA (2001) Screening contracts for product and process development: a principal-agent model. Working Paper, Krannert School of Management, Purdue University.
 
-[^24]: ISO 9001:2026 (currently at Draft International Standard stage, published August 2025) introduces requirements for digital quality management systems that align with orgschema's specification-first approach. Orgschema can be positioned as an implementation pathway for the new standard.
+Kaplan RS and Norton DP (1996) *The Balanced Scorecard: Translating Strategy into Action*. Harvard Business School Press.
 
-[^25]: Rishi Bommasani et al., "On the Opportunities and Risks of Foundation Models," arXiv preprint arXiv:2108.07258 (2021). This comprehensive survey documents LLM capabilities in structured data generation, code understanding, and task decomposition that are directly relevant to orgschema specification workflows.
+Lafontaine F (1992) Agency theory and franchising: some empirical results. *RAND Journal of Economics* 23(2), 263–283.
 
+Larsson R and Finkelstein S (1999) Integrating strategic, organizational, and human resource perspectives on mergers and acquisitions: a case survey of synergy realization. *Organization Science* 10(1), 1–26. https://doi.org/10.1287/orsc.10.1.1
+
+Mintzberg H (1979) *The Structuring of Organizations*. Prentice-Hall.
+
+Mullarkey MT and Hevner AR (2019) An elaborated action design research process model. *European Journal of Information Systems* 28(1), 6–20. https://doi.org/10.1080/0960085X.2018.1451811
+
+Ohno T (1988) *Toyota Production System: Beyond Large-Scale Production*. Productivity Press.
+
+Parasuraman A, Zeithaml VA and Berry LL (1985) A conceptual model of service quality and its implications for future research. *Journal of Marketing* 49(4), 41–50. https://doi.org/10.1177/002224298504900403
+
+Peters RH and Taylor LA (2017) Intangible capital and the investment-q relation. *Journal of Financial Economics* 123(2), 251–272. https://doi.org/10.1016/j.jfineco.2016.11.002
+
+Rubin PH (1978) The theory of the firm and the structure of the franchise contract. *Journal of Law and Economics* 21(1), 223–233.
+
+Simon HA (1962) The architecture of complexity. *Proceedings of the American Philosophical Society* 106(6), 467–482.
+
+Singla A, Sukharevsky A, Hall B, Yee L and Chui M (2025) *The State of AI in 2025: Agents, Innovation, and Transformation*. QuantumBlack, AI by McKinsey.
+
+The Open Group (2018) *The TOGAF Standard, Version 9.2*. The Open Group.
+
+van der Aa H, Di Ciccio C and Leopold H (2019) Extracting declarative process models from natural language. In *Advanced Information Systems Engineering (CAiSE 2019)*, Lecture Notes in Computer Science 11483. Springer. https://doi.org/10.1007/978-3-030-21290-2_23
+
+van der Aalst WMP (2016) *Process Mining: Data Science in Action*, 2nd edn. Springer.
+
+Venable J, Pries-Heje J and Baskerville R (2016) FEDS: a framework for evaluation in design science research. *European Journal of Information Systems* 25(1), 77–89. https://doi.org/10.1057/ejis.2014.36
+
+Vargo SL and Lusch RF (2004) Evolving to a new dominant logic for marketing. *Journal of Marketing* 68(1), 1–17.
+
+Wiggins G and McTighe J (1998) *Understanding by Design*. ASCD.
+
+Zachman JA (1987) A framework for information systems architecture. *IBM Systems Journal* 26(3), 276–292.
+
+Zharnikov D (2026a) Spectral Brand Theory: a multi-dimensional framework for brand perception analysis. Working paper. https://doi.org/10.5281/zenodo.18945912
+
+Zharnikov D (2026h) Specification impossibility in organizational design: a high-dimensional geometric analysis. Working paper. https://doi.org/10.5281/zenodo.18945591
+
+Zharnikov D (2026m) The projection cascade: why reorganizations fail when the specification cascade is compressed. Working paper. https://doi.org/10.5281/zenodo.19145205
+
+Zharnikov D (2026v) Dimensional collapse in AI-mediated brand perception: large language models as metameric observers. Working paper. https://doi.org/10.5281/zenodo.19422427
+
+Zharnikov D (2026ae) Verification as operator: spectral projection, rank deficiencies, and the persistence of the audit society. Working paper.
+
+Zharnikov D (2026ag) Dual hierarchies of organizational transferability: a six-tier ontology. Working paper.

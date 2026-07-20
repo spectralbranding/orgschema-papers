@@ -1,0 +1,480 @@
+# SPINE.yaml — Organizational Schema Theory (2026i)
+#
+# FORK spine: 2026i predates the spine-first protocol. This spine is authored
+# to govern the post-desk-reject flagship reconceptualization — every reworked
+# prose claim traces to an entry here; new claims extend the spine first
+# (rule 0aa). It SUPERSEDES the 2026-06-14 retrofit spine (git history), which
+# described the pre-reframe prose (Spectra-as-evaluation, five-perspective panel,
+# "white space", LLM-as-essential-enabler) — all demoted by the reconceptualization.
+# Public-forbidden meta (review-process vocabulary, venue names, internal paths)
+# is kept OUT of every rendered field and confined to authoring_notes / changelog
+# (rule 0aб).
+
+spine_version: "0.2"
+spine_doc_version: "0.2.0"
+paper_key: "2026i"
+provenance: fork
+title: >-
+  Machine-Checkable Acceptance Contracts for Organizational Design:
+  A Design-Science Theory of Specification Cascades
+
+thesis: |
+  Organizations already possess mechanisms that touch on quality and control —
+  quality-management systems, enterprise-architecture frameworks, balanced
+  scorecards and performance measurement, business-process conformance checking,
+  requirements engineering, and cybernetic control. Each tests either process
+  conformance (does execution match the model?) or lag outcomes (did the measured
+  outcome move?). None makes a machine-checkable, ex-ante acceptance contract at
+  the experience layer with backward traceability a structural invariant: a
+  specification in which every operational parameter carries a tool-verifiable
+  trace to a stakeholder-experience criterion expressed as a runnable acceptance
+  test, re-validated automatically on every change. Organizational Schema Theory
+  (OST) is a design-science artifact supplying this property through a six-level
+  specification cascade (L0 experience contracts = acceptance tests; L1 signal
+  requirements = integration tests; L2 process contracts = unit tests; L3-L5
+  procedures, inputs, sourcing = implementation) with executor-invariance and a
+  continuous-validation pipeline. The genuinely novel element is not reverse
+  design — a synthesis of prior traditions, conceded openly — but the
+  operationalization of acceptance testing as a machine-verifiable invariant of
+  an organizational specification, formalized as a typed directed acyclic
+  justification graph on which traceability, executor-invariance, and
+  cascade-compression are checkable properties. The artifact is stated as design
+  principles, mechanisms, and boundary conditions (nascent design theory), and
+  evaluated honestly within the FEDS taxonomy as analytical + naturalistic-
+  observational + demonstration evidence — explicitly not as controlled outcome
+  evidence.
+
+# ============================================================================
+# Design principles — the artifact stated as prescriptive design knowledge
+# ============================================================================
+design_principles:
+  - id: DP1
+    label: experience-first specification
+    statement: >-
+      Specify stakeholder-experience outcomes as runnable acceptance tests (L0)
+      before any process, resource, or executor is chosen; forward design that
+      starts from available resources leaves experience an undesigned consequence.
+    kernel_theories: ["Vargo & Lusch 2004 (value-in-use)", "Beck 2003 (test-first)"]
+    body_sections: ["The Artifact / Design Principles"]
+  - id: DP2
+    label: traceability-as-invariant
+    statement: >-
+      Require every operational parameter to carry a tool-verifiable directed
+      trace to at least one L0 acceptance contract; a parameter with no such trace
+      is flagged, by construction, as specification waste.
+    kernel_theories: ["Ohno 1988 (waste)", "Simon 1962 (near-decomposability)"]
+    body_sections: ["The Artifact / Design Principles", "Formal Model"]
+  - id: DP3
+    label: executor-invariance
+    statement: >-
+      Separate executor-invariant contract layers (L0-L2) from executor-dependent
+      procedures (L3-L5); the contract layer carries executor-type metadata
+      (human, automated, AI agent) and remains stable across changes of who or
+      what executes, so an executor swap changes procedures without changing
+      acceptance criteria.
+    kernel_theories: ["Iyer, Schwarz & Zenios 2001 (asymmetric verifiability)", "Adler & Borys 1996 (enabling vs coercive)"]
+    body_sections: ["The Artifact / Design Principles", "Executor-Swap Illustration"]
+  - id: DP4
+    label: continuous machine-checkable validation
+    statement: >-
+      Re-validate the full justification graph automatically on every change,
+      replacing periodic audit with a structural invariant checked per commit;
+      the class of structural non-conformances (broken traces, orphaned processes,
+      missing links) cannot accumulate between reviews.
+    kernel_theories: ["Beer 1979 (S3* audit channel)", "van der Aalst 2016 (conformance drift)"]
+    body_sections: ["The Artifact / Design Principles", "Formal Model / Validation Pipeline"]
+  - id: DP5
+    label: forkability
+    statement: >-
+      Represent a bounded responsibility center as a shareable L0-L2 test suite
+      plus local L3-L5 procedures, so a unit can be transferred or replicated by
+      sharing contracts without prescribing implementation.
+    kernel_theories: ["Baldwin & Clark 2000 (modularity)", "Rubin 1978 / Lafontaine 1992 (franchising asymmetry)"]
+    body_sections: ["The Artifact / Design Principles", "Forkability"]
+
+# ============================================================================
+# Boundary conditions — where the artifact holds and does not (AE-6)
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      Minimum-specifiability threshold: the artifact yields positive returns only
+      where a sufficient proportion of operational knowledge is articulable. Below
+      the threshold, trace-maintenance cost dominates. Observable signature:
+      trace-maintenance effort exceeding a material fraction of operating effort
+      signals the threshold has been crossed.
+    excludes: "Domains whose operational knowledge is predominantly tacit and resists articulation."
+    linked_principles: [DP2, DP4]
+    body_sections: ["Boundary Conditions"]
+  - id: C2
+    statement: >-
+      High-tacit service domains (fine dining, therapy, coaching): where how
+      something is done is inseparable from what is achieved, the executor-invariant
+      contract/procedure boundary (DP3) weakens and contracts become hard to write
+      independently of procedures.
+    excludes: "Services in which delivery method is constitutive of the outcome."
+    linked_principles: [DP3]
+    body_sections: ["Boundary Conditions"]
+  - id: C3
+    statement: >-
+      Bootstrap regime: specifying L0 acceptance tests before an organization
+      operates requires hypothesizing and iteratively refining them (characterization
+      testing analog); the artifact assumes an available or hypothesizable L0, not
+      that L0 is known a priori.
+    excludes: "Genuinely novel service contexts with no prior experience signal to seed L0."
+    linked_principles: [DP1]
+    body_sections: ["Boundary Conditions", "Bootstrapping L0"]
+  - id: C4
+    statement: >-
+      Specification-preference drift: the cascade's validity rests on L0 acceptance
+      tests remaining valid as stakeholder preferences evolve; without a renewal
+      protocol governing L0 revision frequency and triggers, a formally-passing
+      cascade can drift from current preferences.
+    excludes: "Environments with rapidly non-stationary preferences and no L0 renewal cadence."
+    linked_principles: [DP1, DP4]
+    body_sections: ["Boundary Conditions", "L0 Renewal Protocol"]
+  - id: C5
+    statement: >-
+      Political economy of formalization: making constraints explicit and auditable
+      reduces the ambiguity that actors exploit as a discretionary resource; the
+      artifact transforms rather than removes political dynamics, and adoption can
+      be resisted as any formalization is resisted.
+    excludes: "Settings where discretionary ambiguity is a required feature, not a defect."
+    linked_principles: [DP2, DP4]
+    body_sections: ["Boundary Conditions"]
+
+# ============================================================================
+# Propositions — restated as TESTABLE HYPOTHESES / formal results (AE-4/AE-5).
+# Register-separated: conceptual_formal (P), empirical_hypothesis (H).
+# ============================================================================
+propositions:
+  - id: P1
+    register: conceptual_formal
+    statement: >-
+      An OST specification is a typed directed acyclic justification graph
+      G = (V, E): vertices are contracts typed by level (L0 experience, L1 signal,
+      L2 process, L3-L5 implementation); a directed "justifies" edge links a
+      lower-level vertex to the higher-level contract it serves, carrying
+      verifiability metadata (machine-checkable predicate, executor-type). The
+      graph satisfies two invariants — completeness (every non-L0 vertex has a
+      directed path terminating at an L0 vertex) and acyclicity — both decidable
+      by graph traversal in time linear in |V| + |E|.
+    conditions: ""
+    antecedents: []
+    evidence:
+      - type: analytic
+        anchor: "Graph-model definition; completeness = reachability of an L0 sink from every vertex; acyclicity by topological sort. Both linear-time decidable."
+    falsifier: "If experience-layer acceptance cannot be expressed as a machine-checkable predicate attached to a graph vertex, the graph model does not apply to that domain."
+    body_sections: ["Formal Model / The Justification Graph"]
+  - id: P2
+    register: conceptual_formal
+    statement: >-
+      Specification waste is exactly the set of vertices from which no directed
+      path reaches an L0 acceptance contract; it is identified by a single reverse
+      reachability pass from the L0 sinks. This gives Ohno's waste an ex-ante,
+      structural definition at the specification layer (a parameter is wasteful if
+      unjustified), distinct from lag-outcome waste measured after production.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Waste = V minus (vertices reverse-reachable from L0 sinks); computed by BFS/DFS from sinks."
+    falsifier: "A parameter with no upward trace that is nonetheless demonstrably required for an L0 outcome would refute the unjustified=wasteful identification."
+    body_sections: ["Formal Model / Waste as Unreachability", "Analytical Evaluation"]
+  - id: P3
+    register: conceptual_formal
+    statement: >-
+      Cascade-compression is lossy under asymmetric verifiability. In the smallest
+      sufficient model (levels L0, L2, L4; two negotiating modules; a binary
+      human/AI executor; one information-asymmetry parameter alpha governing how
+      much of a lower level is inspectable from above), no many-to-one mapping that
+      collapses adjacent levels preserves both completeness (P1) and
+      executor-invariance (DP3) whenever alpha is below unity: collapsing L2 into
+      L0 discards the executor-invariant/executor-dependent boundary. The full
+      compression bound is the geometric coverage-impossibility of the companion
+      formal result; here it is a proof sketch reviewers can attack, with the full
+      proof deferred to that companion paper.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Smallest-sufficient-model proof sketch: under alpha < 1, a level-collapsing map cannot retain both completeness (P1) and the executor-invariance boundary (DP3); full geometric bound nested against 2026h."
+      - type: corpus
+        anchor: "2026h specification-impossibility (geometric coverage bound); 2026m projection-cascade apparatus; 2026ae rank inequality (audit rank-1 vs full-rank cascade)."
+    falsifier: "A lossless level-collapsing map preserving completeness and executor-invariance at alpha < 1 would refute the compression bound."
+    body_sections: ["Formal Model / Cascade-Compression Impossibility (Sketch)"]
+  - id: H1
+    register: empirical_hypothesis
+    statement: >-
+      HYPOTHESIS (future research, not tested here): operations specified with
+      backward traceability identify the operational parameter responsible for an
+      experience failure faster than operations without it, because the
+      justification graph makes the causal chain traversable. Lead falsification
+      test: across >=3 independent deployments below the minimum-specifiability
+      threshold, if >25% of parameters cannot maintain machine-verifiable upward
+      traces without manual override on >10% of changes, DP2/DP4 jointly fail.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: none_yet
+        anchor: "Stated as forward research agenda; no outcome data collected. No causal claim asserted."
+    falsifier: "See lead test above; also, no measured reduction in time-to-root-cause under matched conditions."
+    body_sections: ["Future Empirical Agenda"]
+  - id: H2
+    register: empirical_hypothesis
+    statement: >-
+      HYPOTHESIS (future research, not tested here): continuous per-change
+      validation exhibits less accumulated structural non-conformance between
+      periodic audits than periodic manual validation. Testable by longitudinal
+      comparison; no outcome data collected here.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: none_yet
+        anchor: "Forward agenda; no field measurement. No performance-superiority claim."
+    body_sections: ["Future Empirical Agenda"]
+  - id: H3
+    register: empirical_hypothesis
+    statement: >-
+      HYPOTHESIS (future research, not tested here): sharing a bounded responsibility
+      center as a test suite (DP5) transfers operational capability with lower
+      information asymmetry than prescriptive procedure manuals in multi-site /
+      franchise settings. Requires controlled comparison; not tested here.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: none_yet
+        anchor: "Forward agenda; grounded in franchising asymmetry literature (Rubin 1978; Lafontaine 1992)."
+    body_sections: ["Future Empirical Agenda"]
+
+# ============================================================================
+# Findings — the three-strand evaluation (analytical + naturalistic + demo).
+# Explicitly NOT controlled outcome evidence.
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      ANALYTICAL (primary). Against a systematic comparison of six adjacent
+      traditions on four properties (ex-ante vs ex-post; experience-layer vs
+      process-layer; machine-checkable vs manual; backward-traceable vs not), OST
+      is the only artifact for which all four hold jointly. Each named tradition
+      lacks the joint property for a stated structural reason, not by oversight.
+      This establishes the contribution as a graded increase in machine-checkable
+      experience-linkage coverage and a reduction in validation latency from
+      periodic to continuous — not a monolithic "none does X" claim.
+    type: "analytical_argument"
+    antecedents: [P1, P2, P3]
+    citation_role_in_paper: "primary_evaluation"
+    body_sections: ["Systematic Comparison", "Analytical Evaluation"]
+  - id: F2
+    statement: >-
+      NATURALISTIC-OBSERVATIONAL (ex-post corroboration). An independent, large,
+      publicly-documented firm articulated a "world model" architecture that
+      replaces hierarchical coordination with a machine-maintained organizational
+      specification, arrived at from engineering practice rather than from this
+      theory. Its structure — customer-facing specification, machine-maintained
+      context, time-bounded ownership rotations — is structurally equivalent to the
+      cascade's WHAT/DO separation and continuous validation. Framed as ex-post
+      naturalistic corroboration of the design logic, carrying no causal or
+      performance claim.
+    type: "naturalistic_observation"
+    antecedents: [DP1, DP3, DP4]
+    citation_role_in_paper: "convergence_corroboration"
+    body_sections: ["Evaluation / Industry Convergence"]
+  - id: F3
+    statement: >-
+      DEMONSTRATION (fully public, real artifacts). A multi-month research corpus
+      maintained by the author is itself an auditable instance of the artifact:
+      dependency-graph specifications, acceptance-test-style bundle gates,
+      executor-invariant tooling, and version-controlled backward traceability.
+      It functions as a demonstration case with inspectable artifacts, not as an
+      outcome study; its main residual risk (self-referentiality) is stated openly.
+    type: "demonstration_case"
+    antecedents: [DP2, DP4, DP5]
+    citation_role_in_paper: "demonstration"
+    body_sections: ["Evaluation / Corpus Self-Application"]
+  - id: F4
+    statement: >-
+      BOUNDARY OBJECTS. The artifact explains three phenomena that conformance
+      checking, balanced scorecards, and cybernetic control leave anomalous:
+      (i) persistent strategy-execution gaps despite mature EA/BPM tooling
+      (missing L0 experience contracts + no continuous trace validation);
+      (ii) the differential coordination success of "working-backwards" cultures
+      versus matrix organizations (executor-invariance + forkability); (iii) the
+      outcome-coherent forking of certain open-source organizational forms
+      (shareable test suite without prescribed procedure).
+    type: "explanatory_scope"
+    antecedents: [DP1, DP3, DP5, P2]
+    body_sections: ["Boundary Objects", "Discussion"]
+
+# ============================================================================
+# Alternative explanations — rivals the reframe must engage
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Recent requirements-engineering and continuous-compliance work already treats
+      stakeholder-value criteria as first-class machine-checkable objects with
+      traceability, so the contribution is incremental repackaging.
+    rules_out_required: [F1]
+    ruled_out_by: [P1, P3, F1]
+    rules_out_status: "accommodated"
+    reasoning: >-
+      Declarative process specification and real-time conformance operate at the
+      process layer and validate execution-against-model; they do not make an
+      ex-ante experience-layer acceptance contract with backward traceability a
+      structural invariant of the specification, nor do they carry the compression
+      bound. The contribution is stated as graded coverage increase, not novelty
+      ex nihilo.
+    body_sections: ["Positioning / Adaptation, Synthesis, Innovation"]
+  - id: A2
+    statement: >-
+      OST is just documentation / a better checklist — the cascade is a naming
+      exercise over existing traceability systems.
+    rules_out_required: [P1, P3]
+    ruled_out_by: [P1, P2, P3]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Documentation records intended state; the justification graph makes
+      completeness, acyclicity, waste, and executor-invariance decidable properties
+      checked automatically, and carries a compression bound (P3) no checklist
+      possesses. The distinction is formal and tool-checkable, not rhetorical.
+    body_sections: ["Positioning", "Formal Model"]
+  - id: A3
+    statement: >-
+      The most successful teams operate with almost no documentation, so a
+      specification-heavy artifact is unnecessary or harmful.
+    rules_out_required: [C1]
+    ruled_out_by: [C1, F4]
+    rules_out_status: "accommodated"
+    reasoning: >-
+      Explained by the minimum-specifiability threshold and organizational
+      metamerism: below the threshold, low-specification operation is rational; the
+      artifact targets settings above it, and the boundary condition names exactly
+      when it does not apply.
+    body_sections: ["Boundary Conditions", "Boundary Objects"]
+
+# ============================================================================
+# Limitations — honest scope
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      No controlled outcome evidence. The evaluation is analytical + naturalistic-
+      observational + demonstration; no causal or KPI-superiority claim is made
+      over any existing quality-management or enterprise-architecture practice.
+    severity: "scope-bounding"
+    affects: [F1, F2, F3]
+    body_sections: ["Evaluation / Scope", "Limitations"]
+  - id: L2
+    statement: >-
+      Two of the three evaluation strands (demonstration self-application, and the
+      analytical argument authored by the same hand) are self-referential; the
+      independent naturalistic strand partially offsets this but the evaluation is
+      formative, not summative.
+    severity: "scope-bounding"
+    affects: [F1, F3]
+    body_sections: ["Limitations"]
+  - id: L3
+    statement: >-
+      The embedded formal model is the smallest sufficient model (3 levels, 2
+      modules, binary executor, one asymmetry parameter); full proofs of the
+      compression bound live in companion formal papers. The main-text result is a
+      proof sketch, attackable but not self-contained.
+    severity: "scope-bounding"
+    affects: [P3]
+    body_sections: ["Formal Model / Scope"]
+  - id: L4
+    statement: >-
+      The empirical hypotheses (H1-H3) are stated as a forward agenda and are not
+      tested; the paper contributes design knowledge and analytical + observational
+      evaluation, not hypothesis confirmation.
+    severity: "future-work"
+    affects: [H1, H2, H3]
+    body_sections: ["Future Empirical Agenda", "Limitations"]
+
+# ============================================================================
+# Cross-paper engagement
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026h
+    relationship: extends
+    spine_nodes: [P3]
+    note: >-
+      Specification-impossibility (geometric coverage bound): supplies the full
+      proof of the cascade-compression result whose smallest-sufficient sketch
+      appears here as P3.
+  - paper_key: 2026m
+    relationship: applies
+    spine_nodes: [P3]
+    note: >-
+      Projection-cascade apparatus governing level-to-level projection; the
+      compression sketch invokes it and the L0-L5 vs T1-T6 non-isomorphism
+      disambiguation.
+  - paper_key: 2026ae
+    relationship: extends
+    spine_nodes: [P1, P2, DP4]
+    note: >-
+      Verification-as-operator: formalizes the same cascade as a full-rank spectral
+      projection (audit rank-1 vs full-rank cascade); the justification graph here
+      is the combinatorial counterpart of that operator account.
+  - paper_key: 2026ag
+    relationship: refines
+    spine_nodes: [DP3, DP5]
+    note: >-
+      Six-tier transferability ontology: the OST cascade nests inside its lower
+      tiers; a non-isomorphism disambiguation (L0-L5 reading direction vs T1-T6)
+      is carried explicitly.
+  - paper_key: 2026af
+    relationship: applies
+    spine_nodes: [DP3, F4]
+    note: >-
+      Organizational metamerism: observer-relative state-equivalence grounds
+      executor-invariance and the low-documentation boundary object (A3/F4).
+  - paper_key: 2026a
+    relationship: applies
+    spine_nodes: [DP1]
+    note: >-
+      SBT as an ILLUSTRATIVE L0 measurement instrument only (not a dependency):
+      one candidate for scoring experience contracts against delivered perception.
+
+# ============================================================================
+# External anchor literature — VERIFIED keys only (Phase-2 Crossref pass).
+# Fabricated Grok leads discarded; see authoring_notes.
+# ============================================================================
+external_anchors:
+  - {citation_key: "mintzberg-1979-structuring-organizations-synthesis", role: kernel_theory, spine_nodes: [DP1, DP3], note: "Standardization of outputs vs work processes -> WHAT (L0-L1) vs DO (L3-L5) cut."}
+  - {citation_key: "beer-1979-the-heart-of", role: kernel_theory, spine_nodes: [DP4], note: "VSM S3* audit channel realized as a continuous structural invariant."}
+  - {citation_key: "iyer-2001-screening-contracts-product", role: kernel_theory, spine_nodes: [DP3, P3], note: "Asymmetric verifiability of product (WHAT) vs process (HOW); grounds the alpha parameter."}
+  - {citation_key: "adler-1996-two-types-bureaucracy", role: kernel_theory, spine_nodes: [DP3], note: "Enabling vs coercive bureaucracy: acceptance-test layer enabling; procedure layer coercive only when severed from WHAT."}
+  - {citation_key: "simon-1962-architecture-complexity", role: kernel_theory, spine_nodes: [DP2], note: "Near-decomposability grounds the cascade's level decomposition."}
+  - {citation_key: "gregor-hevner-2013-positioning", role: method_basis, spine_nodes: [F1], note: "DSR knowledge-contribution framework; exaptation contribution type. [register key at Task E]"}
+  - {citation_key: "venable-2016-feds", role: method_basis, spine_nodes: [F1, F2, F3], note: "FEDS evaluation taxonomy legitimizing analytical + naturalistic + demonstration. [register key at Task E]"}
+  - {citation_key: "mullarkey-2019-elaborated-adr", role: method_basis, spine_nodes: [F1], note: "eDSR echelons (TWO authors — Mullarkey & Hevner; NOT three). [register key at Task E]"}
+  - {citation_key: "gregor-2007-anatomy-design-theory", role: method_basis, spine_nodes: [F1], note: "Eight-component design-theory anatomy: the taxonomy the Design-Theory Components section is structured around (artifact / principles / mechanisms / kernel theories / boundary conditions). Substrate-verified (Crossref)."}
+  - {citation_key: "gregor-2020-anatomy-design-principle", role: method_basis, spine_nodes: [DP1], note: "Anatomy of a design PRINCIPLE: the standard for how DP1-DP5 are stated (aim/mechanism/rationale form). Grounds the design-principle statements so they are not ad hoc. Crossref-verified."}
+  - {citation_key: "dumas-2018-fundamentals-bpm", role: adjacent_tradition, spine_nodes: [F1, A1], note: "BPM conformance checking (process layer) — comparison target. [register key at Task E]"}
+  - {citation_key: "vanderaalst-2016-process-mining-data", role: adjacent_tradition, spine_nodes: [DP4, F1], note: "Conformance drift between measurement points."}
+  - {citation_key: "zachman-1987-framework-information-systems", role: adjacent_tradition, spine_nodes: [F1], note: "EA as classification, not validation-against-outcome — comparison target."}
+  - {citation_key: "vanderaa-2019-extracting-declarative", role: adjacent_tradition, spine_nodes: [A1, F1], note: "Declarative process spec from NL (process layer) — accommodates A1 rival. [register key at Task E]"}
+  - {citation_key: "gotel-1994-requirements-traceability-problem", role: adjacent_tradition, spine_nodes: [DP2], note: "Foundational requirements-engineering traceability-problem statement: OST's backward-traceability differs by making the trace a continuously re-checked structural INVARIANT, not a hand-maintained artifact. Crossref-verified."}
+  - {citation_key: "beck-2003-test-driven-development", role: kernel_theory, spine_nodes: [DP1], note: "TDD as the most rigorous formalization of the acceptance-test construct (cited as formalization, NOT 'orgs are software')."}
+  - {citation_key: "parasuraman-1985-parasuraman-valarie", role: adjacent_tradition, spine_nodes: [DP1], note: "SERVQUAL five-dimension service-quality perception instrument: an established, public multidimensional instrument that can occupy the L0-language slot, so DP1's experience-measurement is not tied to any single instrument. J. Marketing 49(4):41-50, DOI 10.1177/002224298504900403."}
+  - {citation_key: "reijers-mendling-2011-understandability", role: adjacent_tradition, spine_nodes: [A1], note: "Process-model understandability — replaces the dropped unverifiable Cespedes cite; VERIFIED venue = IEEE TSMC-A 41(3):449-462, NOT Information Systems. [register key at Task E]"}
+  - {citation_key: "peters-2017-intangible-capital-investmentq", role: empirical_anchor, spine_nodes: [F4], note: "Intangibles ~90% of S&P 500 value: most operating value is in dimensions financial reporting cannot extract."}
+  - {citation_key: "larsson-1999-integrating-strategic-organizational", role: empirical_anchor, spine_nodes: [DP5], note: "Organizational integration dominates synergy realization -> cascade-compatibility reframing."}
+  - {citation_key: "dorsey-botha-2026-hierarchy-intelligence", role: convergence_evidence, spine_nodes: [F2], note: "Independent industry 'world model' convergence (web source, no DOI). [register key at Task E]"}
+  - {citation_key: "singla-2025-state-of-ai", role: empirical_anchor, spine_nodes: [F2], note: "2.8x workflow-redesign statistic (industry report, no DOI). [register key at Task E]"}
+
+# ============================================================================
+# Open questions
+# ============================================================================
+
+# ============================================================================
+# Authoring notes — INTERNAL ONLY (dropped on public export; never rendered).
+# Public-forbidden meta (review-process, venue, paths) confined HERE per rule 0aб.
+# ============================================================================
+
+# ============================================================================
+# Spine changelog — append-only
+# ============================================================================
