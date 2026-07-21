@@ -1,11 +1,9 @@
 # SPINE.yaml — Organizational Schema Theory (2026i)
 #
-# FORK spine: 2026i predates the spine-first protocol. This spine is authored
-# to govern the post-desk-reject flagship reconceptualization — every reworked
-# prose claim traces to an entry here; new claims extend the spine first
-# (rule 0aa). It SUPERSEDES the 2026-06-14 retrofit spine (git history), which
-# described the pre-reframe prose (Spectra-as-evaluation, five-perspective panel,
-# "white space", LLM-as-essential-enabler) — all demoted by the reconceptualization.
+# FORK spine: 2026i predates the spine-first protocol. Every prose claim traces
+# to an entry here; new claims extend the spine first (rule 0aa). This fork
+# supersedes the earlier retrofit spine; the full authoring history is in the
+# `changelog` and `authoring_notes` blocks below (both dropped on public export).
 # Public-forbidden meta (review-process vocabulary, venue names, internal paths)
 # is kept OUT of every rendered field and confined to authoring_notes / changelog
 # (rule 0aб).
