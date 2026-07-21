@@ -1,8 +1,8 @@
 # PROVENANCE.yaml -- Organizational Schema Theory
-# Fork history and submission records per the Research-as-Repository protocol
+# Version and publication history per the Research-as-Repository protocol
 
 provenance:
-  paper_title: "The Organizational Schema Theory: Test-Driven Business Design"
+  paper_title: "Machine-Checkable Acceptance Contracts for Organizational Design: A Design-Science Theory of Specification Cascades"
   citation_key: "2026i"
   repository: "spectralbranding/orgschema-papers/organizational-schema-theory"
 
@@ -11,96 +11,40 @@ provenance:
       date: "2026-03-05"
       description: >
         Initial draft. Six-level cascade, contract-procedure separation,
-        Spectra Coffee reference deployment, ten-row prior-art lineage table,
-        Design Science Research framing, FEDS evaluation strategy.
-    - version: "1.1.0"
-      date: "2026-03-12"
-      description: >
-        Zenodo v1.0 upload. Five propositions formalized. Early submission
-        cycle drove iterative refinement of the prior-art positioning and
-        the executor-topology section.
+        reference service deployment, prior-art lineage table, Design Science
+        Research framing, FEDS evaluation strategy.
     - version: "1.2.0"
       date: "2026-04-01"
       description: >
-        Organization-theory framing restructuring. Added 15+ new references
-        (Simon, Galbraith, Thompson, Mintzberg, Freeman, Crozier, Hatchuel,
-        Kaplan & Norton). Restructured for IS / org-theory dual readership
-        with DSR reframing as the primary methodological frame.
+        Organization-theory framing restructuring. Added references (Simon,
+        Galbraith, Thompson, Mintzberg, Crozier) and restructured for IS /
+        org-theory dual readership with DSR as the primary methodological frame.
     - version: "1.3.0"
       date: "2026-04-11"
       description: >
-        Adds the Structural Property Matrix subsection inside
-        "Positioning Against Prior Art." A twelve-property comparison
-        across seven adjacent methodologies (BDD, BPMN, ISO 9001, IaC,
-        Service Blueprint, OKR + SLO, Orgschema) with explicit
-        two-sided framing on structural-properties-vs-practical-adoption.
-        No changes to abstract, propositions, methodology, evaluation,
-        or claims. Reference list unchanged. Aligned with
-        orgschema.com/research and orgschema.com/llms.txt.
+        Added the Structural Property Matrix subsection: a twelve-property
+        comparison across seven adjacent methodologies with explicit two-sided
+        framing on structural properties versus practical adoption. No changes
+        to abstract, propositions, methodology, evaluation, or claims.
+    - version: "2.0.0"
+      date: "2026-07-20"
+      description: >
+        Major reconceptualization. Reframed to a machine-checkable, ex-ante
+        experience-layer acceptance contract with backward traceability, stated
+        as a design-science artifact (five design principles, four mechanisms,
+        five boundary conditions) and formalized as a typed directed acyclic
+        justification graph on which traceability, waste, executor-invariance,
+        and cascade-compression are decidable properties. Three-strand FEDS
+        evaluation (analytical, two independent naturalistic cases, and a public
+        demonstration), with no controlled-outcome claim. New title; references
+        regenerated from the corpus substrate.
 
-  forks:
-    - id: "fork-2026-03-12-zenodo"
-      target: "Zenodo"
+  publications:
+    - target: "Zenodo"
       target_type: preprint_server
-      created: "2026-03-12"
-      source_commit: "main"
-      status: merged
-      outcome: published
-      identifiers:
-        doi: "10.5281/zenodo.18946043"
-        community: ["orgschema"]
-      note: "v1.0 initial preprint upload."
-
-    - id: "fork-2026-04-11-zenodo"
-      target: "Zenodo"
-      target_type: preprint_server
-      created: "2026-04-11"
-      source_commit: "main"
-      status: pending
-      outcome: pending_upload
-      identifiers:
-        doi: "10.5281/zenodo.18946043"
-      note: >
-        v1.3 revision upload pending. Adds Structural Property Matrix
-        subsection. No changes to abstract, propositions, or claims.
-
-    - id: "fork-2026-03-j1"
-      target: "[withheld]"
-      target_type: journal
-      created: "2026-03-05"
-      status: desk_rejected
-
-    - id: "fork-2026-03-j2"
-      target: "[withheld]"
-      target_type: journal
-      status: rejected
-
-    - id: "fork-2026-03-j3"
-      target: "[withheld]"
-      target_type: journal
-      status: rejected
-
-    - id: "fork-2026-03-j4"
-      target: "[withheld]"
-      target_type: journal
-      status: rejected
-      decision_date: "2026-03-23"
-
-    - id: "fork-2026-03-c1"
-      target: "[withheld]"
-      target_type: conference
-      created: "2026-03-08"
-      status: "[withheld]"
-
-    - id: "fork-2026-04-j5"
-      target: "[withheld]"
-      target_type: journal
-      created: "2026-04-01"
-      status: "[withheld]"
-
-  target_venues:
-    primary: "[withheld]"
-    fallback:
-      - "[withheld]"
-      - "[withheld]"
-      - "[withheld]"
+      concept_doi: "10.5281/zenodo.18946043"
+      version_doi: "10.5281/zenodo.21464286"
+      version: "2.0.0"
+      date: "2026-07-20"
+      status: published
+      community: ["orgschema"]
