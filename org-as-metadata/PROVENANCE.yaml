@@ -1,8 +1,9 @@
 # PROVENANCE.yaml -- Organizational Metamerism
-# Fork history and submission records per the Research-as-Repository protocol
+# Version and publication history per the Research-as-Repository protocol
 
 provenance:
   paper_title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
+  citation_key: "2026af"
   repository: "spectralbranding/orgschema-papers/org-as-metadata"
 
   versions:
@@ -10,11 +11,9 @@ provenance:
       date: "2026-03-18"
       title: "Organizations as Coordination Overhead Made Structural: A Temporal Hierarchy Theory"
       description: >
-        Initial draft submitted to Organization Theory (OT-26-0095).
-        ~13,915 words. Four loosely-coupled contributions: temporal hierarchy,
-        metadata metaphor, organizational metamerism, organizational form as signal.
-      outcome: "DESK_REJECTED at Organization Theory (2026-04-28, Markus Höllerer Co-Editor). Generic editorial-screening rejection: 'underdeveloped... a number of limitations that hold you back from developing and claiming a theoretical contribution.'"
-
+        Initial draft. ~13,915 words. Four loosely-coupled contributions:
+        temporal hierarchy, metadata metaphor, organizational metamerism, and
+        organizational form as signal.
     - version: "1.0.0"
       date: "2026-04-29"
       title: "Organizational Metamerism: When Distinct Configurations Produce Equivalent Outputs"
@@ -30,18 +29,11 @@ provenance:
         Numbered headers removed per AMA formatting. Definition 5 restructured
         with frame condition + biconditional. Propositions consolidated to
         four with explicit confirming/refuting evidence criteria.
-      outcome: "Working paper ready for Zenodo upload."
 
-  forks: []
-
-  spin_offs_logged:
-    - title: "Organizational Form as Signal: Legitimacy, Identity, and Strategic Impression Management"
-      target_venue: "separate submission, after this paper lands"
-      estimated_word_count: "9,000-11,000"
-      content: >
-        Develops the full signaling argument cut from v0.1's §3.5 and §4.1 —
-        Spence (1973) signaling, Meyer/Rowan (1977) institutional legitimacy,
-        King/Felin/Whetten (2010) organizational identity — as the primary
-        theoretical contribution, with the organizational metamerism result
-        from this paper serving as the foundation. To be drafted only after
-        this paper is accepted, since it cites the metamerism set concept.
+  publications:
+    - target: "Zenodo"
+      target_type: preprint_server
+      concept_doi: "10.5281/zenodo.19869871"
+      version_doi: "10.5281/zenodo.20820866"
+      status: published
+      community: ["orgschema"]
