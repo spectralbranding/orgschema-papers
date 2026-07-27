@@ -9,7 +9,7 @@
 # (rule 0aб).
 
 spine_version: "0.2"
-spine_doc_version: "0.2.0"
+spine_doc_version: "0.3.0"
 paper_key: "2026i"
 provenance: fork
 title: >-
@@ -89,6 +89,21 @@ design_principles:
       sharing contracts without prescribing implementation.
     kernel_theories: ["Baldwin & Clark 2000 (modularity)", "Rubin 1978 / Lafontaine 1992 (franchising asymmetry)"]
     body_sections: ["The Artifact / Design Principles", "Forkability"]
+  - id: DP6
+    label: reference-class-relative specification
+    statement: >-
+      Set L0 scope (which stakeholder-experience dimensions carry an acceptance
+      contract at all) and L0 threshold values relative to a reference class —
+      the set of specifiers a stakeholder currently checks across competing
+      options — not from an absolute, domain-independent optimum. Within an
+      already-checked dimension, differentiation is value-relative: set the
+      threshold against the reference class's observed distribution, not an
+      independently-derived optimum. Outside it, differentiation is
+      scope-relative: introduce a new L0 vertex the reference class does not yet
+      carry. A scope-expansion vertex is subject to DP2 like any other: an
+      unverifiable new dimension is a claim, not a specification.
+    kernel_theories: ["Kano, Seraku, Takahashi & Tsuji 1984 (attractive/must-be quality)", "Kahneman & Tversky 1979 (reference-dependence)", "Tversky 1972 (elimination by aspects)"]
+    body_sections: ["The Artifact / Design Principles", "Formal Model / Reference-Class Relativity"]
 
 # ============================================================================
 # Boundary conditions — where the artifact holds and does not (AE-6)
@@ -139,6 +154,18 @@ boundary_conditions:
       be resisted as any formalization is resisted.
     excludes: "Settings where discretionary ambiguity is a required feature, not a defect."
     linked_principles: [DP2, DP4]
+    body_sections: ["Boundary Conditions"]
+  - id: C6
+    statement: >-
+      Reference-class identifiability: DP6 and P4's regime classification
+      presuppose an identifiable reference class — a set of comparable
+      specifiers and a stakeholder population that conditions acceptance on
+      some dimension set. In a genuinely first-of-kind category with no
+      comparable specifier and no formed stakeholder query set, the
+      FLOOR/CONTESTED/UNCLAIMED partition is undefined until a reference class
+      forms; the artifact supplies no rule for when that formation happens.
+    excludes: "Genuinely first-of-kind categories with no comparable specifier and no formed stakeholder query set."
+    linked_principles: [DP6]
     body_sections: ["Boundary Conditions"]
 
 # ============================================================================
@@ -201,6 +228,38 @@ propositions:
         anchor: "2026h specification-impossibility (geometric coverage bound); 2026m projection-cascade apparatus; 2026ae rank inequality (audit rank-1 vs full-rank cascade)."
     falsifier: "A lossless level-collapsing map preserving completeness and executor-invariance at alpha < 1 would refute the compression bound."
     body_sections: ["Formal Model / Cascade-Compression Impossibility (Sketch)"]
+  - id: P4
+    register: conceptual_formal
+    statement: >-
+      Fix a reference class R(v, t) for candidate L0 vertex v at time t: the
+      specifiers other than the focal organization who carry an equivalent
+      vertex in their own justification graph, intersected with the
+      stakeholders who condition acceptance on v. Every candidate v falls into
+      exactly one of three regimes with respect to R(v, t): FLOOR (v is carried
+      by approximately all of R at a converged threshold — no differentiation
+      available, entry cost only); CONTESTED (v is carried by some of R at
+      varying thresholds — differentiation is value-relative, the winning
+      threshold set against R's observed distribution rather than derived
+      independently); UNCLAIMED (v is carried by none of R — differentiation is
+      scope-relative, specifying v at all is the competitive move, conditional
+      on v meeting DP2's machine-checkability requirement). A vertex migrates
+      UNCLAIMED -> CONTESTED -> FLOOR as members of R imitate a successful
+      scope-expansion; absent a change in what stakeholders condition
+      acceptance on, migration runs one way.
+    conditions: "C6"
+    antecedents: [P1, P2]
+    evidence:
+      - type: analytic
+        anchor: "Three-regime partition of candidate L0 vertices by reference-class coverage; restates Kano et al. (1984)'s must-be/one-dimensional/attractive typology in the justification-graph vocabulary already used for P1-P2, and is the external-facing dual of P2 (P2 asks whether a vertex reaches an L0 sink from below; P4 asks whether an L0 vertex itself is already claimed by a reference class from outside)."
+      - type: citation
+        anchor: "Kano, Seraku, Takahashi & Tsuji 1984 supplies the three-regime empirical typology (must-be/one-dimensional/attractive). Kahneman & Tversky 1979 grounds CONTESTED threshold-setting as reference-dependent rather than absolute. Tversky 1972 (elimination by aspects) grounds why a stakeholder's active query set — and hence R's checked-dimension set — is bounded rather than exhaustive."
+        citation_keys: [kano-1984-attractive-quality-must, kahneman-1979-prospect-theory-analysis, tversky-1972-elimination-by-aspects]
+    falsifier: >-
+      A vertex that is UNCLAIMED, machine-checkable, and demonstrably
+      stakeholder-relevant, yet produces no differentiation utility for the
+      specifying organization even before any member of R imitates it, would
+      refute the UNCLAIMED-regime differentiation claim.
+    body_sections: ["Formal Model / Reference-Class Relativity"]
   - id: H1
     register: empirical_hypothesis
     statement: >-
@@ -243,6 +302,30 @@ propositions:
     evidence:
       - type: none_yet
         anchor: "Forward agenda; grounded in franchising asymmetry literature (Rubin 1978; Lafontaine 1992)."
+    body_sections: ["Future Empirical Agenda"]
+  - id: H4
+    register: empirical_hypothesis
+    statement: >-
+      HYPOTHESIS (future research, not tested here): the differentiation
+      utility an organization captures from an UNCLAIMED L0 vertex (P4) decays
+      as reference-class adoption moves the vertex toward CONTESTED and then
+      FLOOR. Lead falsification test: track the stakeholder-preference share
+      attributable to vertex v before and after at least two reference-class
+      members adopt an equivalent vertex; share attributable to v should fall
+      as adoption count rises, holding v's own threshold constant.
+    conditions: "C6"
+    antecedents: [P4]
+    evidence:
+      - type: none_yet
+        anchor: >-
+          Forward agenda; no field measurement. Restates Kano's documented
+          erosion of delighters into must-be quality over adoption cycles as a
+          falsifiable share-decay prediction in OST vocabulary.
+    falsifier: >-
+      See lead test above; also, differentiation share attributable to v
+      remaining flat or rising after >=2 reference-class members adopt an
+      equivalent vertex, holding v's threshold constant, would refute the
+      decay claim.
     body_sections: ["Future Empirical Agenda"]
 
 # ============================================================================
@@ -293,16 +376,20 @@ findings:
     body_sections: ["Evaluation / Corpus Self-Application"]
   - id: F4
     statement: >-
-      BOUNDARY OBJECTS. The artifact explains three phenomena that conformance
+      BOUNDARY OBJECTS. The artifact explains four phenomena that conformance
       checking, balanced scorecards, and cybernetic control leave anomalous:
       (i) persistent strategy-execution gaps despite mature EA/BPM tooling
       (missing L0 experience contracts + no continuous trace validation);
       (ii) the differential coordination success of "working-backwards" cultures
       versus matrix organizations (executor-invariance + forkability); (iii) the
       outcome-coherent forking of certain open-source organizational forms
-      (shareable test suite without prescribed procedure).
+      (shareable test suite without prescribed procedure); (iv) why publicly
+      auditable process disclosures shift stakeholder preference where an
+      unverifiable claim of the same content does not — OST reads the
+      difference as whether the disclosed content is a genuine, DP2-compliant
+      L0 vertex or an assertion outside the graph (DP6, P4).
     type: "explanatory_scope"
-    antecedents: [DP1, DP3, DP5, P2]
+    antecedents: [DP1, DP3, DP5, DP6, P2, P4]
     body_sections: ["Boundary Objects", "Discussion"]
 
 # ============================================================================
@@ -384,11 +471,11 @@ limitations:
     body_sections: ["Formal Model / Scope"]
   - id: L4
     statement: >-
-      The empirical hypotheses (H1-H3) are stated as a forward agenda and are not
+      The empirical hypotheses (H1-H4) are stated as a forward agenda and are not
       tested; the paper contributes design knowledge and analytical + observational
       evaluation, not hypothesis confirmation.
     severity: "future-work"
-    affects: [H1, H2, H3]
+    affects: [H1, H2, H3, H4]
     body_sections: ["Future Empirical Agenda", "Limitations"]
 
 # ============================================================================
@@ -463,6 +550,9 @@ external_anchors:
   - {citation_key: "larsson-1999-integrating-strategic-organizational", role: empirical_anchor, spine_nodes: [DP5], note: "Organizational integration dominates synergy realization -> cascade-compatibility reframing."}
   - {citation_key: "dorsey-botha-2026-hierarchy-intelligence", role: convergence_evidence, spine_nodes: [F2], note: "Independent industry 'world model' convergence (web source, no DOI). [register key at Task E]"}
   - {citation_key: "singla-2025-state-of-ai", role: empirical_anchor, spine_nodes: [F2], note: "2.8x workflow-redesign statistic (industry report, no DOI). [register key at Task E]"}
+  - {citation_key: "kano-1984-attractive-quality-must", role: kernel_theory, spine_nodes: [DP6, P4], note: "Attractive/one-dimensional/must-be quality typology; source of the UNCLAIMED/CONTESTED/FLOOR three-regime partition. Verified via J-STAGE (publisher) + DOI resolution; DOI is JaLC-registered, not Crossref-registered, so a Crossref-API lookup alone would 404 -- not a fabrication signal. Pages 147-156 per publisher record (many secondary sources miscite 39-48)."}
+  - {citation_key: "kahneman-1979-prospect-theory-analysis", role: kernel_theory, spine_nodes: [DP6, P4], note: "Reference-dependence: CONTESTED-regime thresholds are set against the reference class's observed distribution, not an independently-derived optimum. Already in substrate (verified)."}
+  - {citation_key: "tversky-1972-elimination-by-aspects", role: kernel_theory, spine_nodes: [DP6, P4], note: "Elimination by aspects grounds why a stakeholder's active query set -- and so R(v,t)'s checked-dimension set -- is bounded rather than exhaustive. Already in substrate (verified). Deliberately NOT reusing Ocasio (1997, attention-based view of the firm, cited in 2026ae) here: Ocasio's mechanism is INTERNAL attention allocation by residual; DP6/P4's mechanism is EXTERNAL reference-class and stakeholder-query-set boundedness -- different mechanisms, kept separately attributed per the corpus's cite-mechanism-vs-interpretation-separately discipline."}
 
 # ============================================================================
 # Open questions

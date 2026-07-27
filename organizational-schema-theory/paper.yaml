@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.18946043
-  date: '2026-07-20'
+  date: '2026-07-27'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -31,13 +31,13 @@ meta:
     Theory (OST), a design-science artifact that supplies this property through a six-level specification
     cascade in which stakeholder-experience contracts function as acceptance tests, signal requirements
     as integration tests, and process contracts as unit tests, with executor-invariance and continuous
-    validation. The artifact is stated as five design principles, four mechanisms, and five boundary conditions,
-    and formalized as a typed directed acyclic justification graph on which traceability, waste, and cascade-compression
-    are decidable properties; a smallest-sufficient model gives a compression-impossibility sketch. Following
-    the design-science evaluation taxonomy, the artifact is evaluated analytically, through independent
-    industry convergence, and through a public demonstration corpus, with no controlled-outcome claim.
-    The contribution is nascent design theory: acceptance testing operationalized as a tool-checkable
-    invariant of organizational specification.'
+    validation. The artifact is stated as six design principles, four mechanisms, and six boundary conditions,
+    and formalized as a typed directed acyclic justification graph on which traceability, waste, cascade-compression,
+    and reference-class relativity are decidable or falsifiable properties; a smallest-sufficient model
+    gives a compression-impossibility sketch. Following the design-science evaluation taxonomy, the artifact
+    is evaluated analytically, through independent industry convergence, and through a public demonstration
+    corpus, with no controlled-outcome claim. The contribution is nascent design theory: acceptance testing
+    operationalized as a tool-checkable invariant of organizational specification.'
 claims:
 - id: P1
   type: proposition
@@ -75,6 +75,25 @@ claims:
   status: not_tested
   depends_on:
   - P1
+- id: P4
+  type: proposition
+  statement: 'Fix a reference class R(v, t) for candidate L0 vertex v at time t: the specifiers other
+    than the focal organization who carry an equivalent vertex in their own justification graph, intersected
+    with the stakeholders who condition acceptance on v. Every candidate v falls into exactly one of three
+    regimes with respect to R(v, t): FLOOR (v is carried by approximately all of R at a converged threshold
+    — no differentiation available, entry cost only); CONTESTED (v is carried by some of R at varying
+    thresholds — differentiation is value-relative, the winning threshold set against R''s observed distribution
+    rather than derived independently); UNCLAIMED (v is carried by none of R — differentiation is scope-relative,
+    specifying v at all is the competitive move, conditional on v meeting DP2''s machine-checkability
+    requirement). A vertex migrates UNCLAIMED -> CONTESTED -> FLOOR as members of R imitate a successful
+    scope-expansion; absent a change in what stakeholders condition acceptance on, migration runs one
+    way.'
+  testable: true
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P1
+  - P2
 - id: H1
   type: proposition
   statement: 'HYPOTHESIS (future research, not tested here): operations specified with backward traceability
@@ -108,6 +127,18 @@ claims:
   status: not_tested
   depends_on:
   - P1
+- id: H4
+  type: proposition
+  statement: 'HYPOTHESIS (future research, not tested here): the differentiation utility an organization
+    captures from an UNCLAIMED L0 vertex (P4) decays as reference-class adoption moves the vertex toward
+    CONTESTED and then FLOOR. Lead falsification test: track the stakeholder-preference share attributable
+    to vertex v before and after at least two reference-class members adopt an equivalent vertex; share
+    attributable to v should fall as adoption count rises, holding v''s own threshold constant.'
+  testable: true
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P4
 methodology:
   type: theoretical
   design: Theoretical derivation.
@@ -128,12 +159,26 @@ acceptance:
   criterion: Holds if cascade-compression is lossy under asymmetric verifiability.
   falsification: A lossless level-collapsing map preserving completeness and executor-invariance at alpha
     < 1 would refute the compression bound.
+- claim_id: P4
+  criterion: 'Holds if fix a reference class R(v, t) for candidate L0 vertex v at time t: the specifiers
+    other than the focal organization who carry an equivalent vertex in their own justification graph,
+    intersected with the stakeholders who condition acceptance on v.'
+  falsification: A vertex that is UNCLAIMED, machine-checkable, and demonstrably stakeholder-relevant,
+    yet produces no differentiation utility for the specifying organization even before any member of
+    R imitates it, would refute the UNCLAIMED-regime differentiation claim.
 - claim_id: H1
   criterion: 'Holds if hYPOTHESIS (future research, not tested here): operations specified with backward
     traceability identify the operational parameter responsible for an experience failure faster than
     operations without it, because the justification graph makes the causal chain traversable.'
   falsification: See lead test above; also, no measured reduction in time-to-root-cause under matched
     conditions.
+- claim_id: H4
+  criterion: 'Holds if hYPOTHESIS (future research, not tested here): the differentiation utility an organization
+    captures from an UNCLAIMED L0 vertex (P4) decays as reference-class adoption moves the vertex toward
+    CONTESTED and then FLOOR.'
+  falsification: See lead test above; also, differentiation share attributable to v remaining flat or
+    rising after >=2 reference-class members adopt an equivalent vertex, holding v's threshold constant,
+    would refute the decay claim.
 dependencies:
 - relationship: extends
   claim: 'Specification-impossibility (geometric coverage bound): supplies the full proof of the cascade-compression
@@ -245,6 +290,24 @@ dependencies:
 - relationship: extends
   claim: 2.8x workflow-redesign statistic (industry report, no DOI). [register key at Task E]
   reference: singla-2025-state-of-ai
+- relationship: extends
+  claim: Attractive/one-dimensional/must-be quality typology; source of the UNCLAIMED/CONTESTED/FLOOR
+    three-regime partition. Verified via J-STAGE (publisher) + DOI resolution; DOI is JaLC-registered,
+    not Crossref-registered, so a Crossref-API lookup alone would 404 -- not a fabrication signal. Pages
+    147-156 per publisher record (many secondary sources miscite 39-48).
+  doi: 10.20684/quality.14.2_147
+- relationship: extends
+  claim: 'Reference-dependence: CONTESTED-regime thresholds are set against the reference class''s observed
+    distribution, not an independently-derived optimum. Already in substrate (verified).'
+  doi: 10.2307/1914185
+- relationship: extends
+  claim: 'Elimination by aspects grounds why a stakeholder''s active query set -- and so R(v,t)''s checked-dimension
+    set -- is bounded rather than exhaustive. Already in substrate (verified). Deliberately NOT reusing
+    Ocasio (1997, attention-based view of the firm, cited in 2026ae) here: Ocasio''s mechanism is INTERNAL
+    attention allocation by residual; DP6/P4''s mechanism is EXTERNAL reference-class and stakeholder-query-set
+    boundedness -- different mechanisms, kept separately attributed per the corpus''s cite-mechanism-vs-interpretation-separately
+    discipline.'
+  doi: 10.1037/h0032955
 contradictions: []
 results:
 - claim_id: P1
@@ -271,6 +334,17 @@ results:
     joint property for a stated structural reason, not by oversight. This establishes the contribution
     as a graded increase in machine-checkable experience-linkage coverage and a reduction in validation
     latency from periodic to continuous — not a monolithic "none does X" claim.
+- claim_id: P4
+  status: supported
+  notes: 'BOUNDARY OBJECTS. The artifact explains four phenomena that conformance checking, balanced scorecards,
+    and cybernetic control leave anomalous: (i) persistent strategy-execution gaps despite mature EA/BPM
+    tooling (missing L0 experience contracts + no continuous trace validation); (ii) the differential
+    coordination success of "working-backwards" cultures versus matrix organizations (executor-invariance
+    + forkability); (iii) the outcome-coherent forking of certain open-source organizational forms (shareable
+    test suite without prescribed procedure); (iv) why publicly auditable process disclosures shift stakeholder
+    preference where an unverifiable claim of the same content does not — OST reads the difference as
+    whether the disclosed content is a genuine, DP2-compliant L0 vertex or an assertion outside the graph
+    (DP6, P4).'
 limitations:
 - description: No controlled outcome evidence. The evaluation is analytical + naturalistic- observational
     + demonstration; no causal or KPI-superiority claim is made over any existing quality-management or
@@ -287,7 +361,7 @@ limitations:
     papers. The main-text result is a proof sketch, attackable but not self-contained.
   severity: moderate
   addressable: true
-- description: The empirical hypotheses (H1-H3) are stated as a forward agenda and are not tested; the
+- description: The empirical hypotheses (H1-H4) are stated as a forward agenda and are not tested; the
     paper contributes design knowledge and analytical + observational evaluation, not hypothesis confirmation.
   severity: moderate
   addressable: true
