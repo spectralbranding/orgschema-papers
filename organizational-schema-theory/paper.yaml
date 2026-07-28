@@ -228,14 +228,13 @@ dependencies:
   claim: Near-decomposability grounds the cascade's level decomposition.
   reference: simon-1962-architecture-complexity
 - relationship: extends
-  claim: DSR knowledge-contribution framework; exaptation contribution type. [register key at Task E]
+  claim: DSR knowledge-contribution framework; exaptation contribution type.
   doi: 10.25300/MISQ/2013/37.2.01
 - relationship: extends
-  claim: FEDS evaluation taxonomy legitimizing analytical + naturalistic + demonstration. [register key
-    at Task E]
+  claim: FEDS evaluation taxonomy legitimizing analytical + naturalistic + demonstration.
   doi: 10.1057/ejis.2014.36
 - relationship: extends
-  claim: eDSR echelons (TWO authors — Mullarkey & Hevner; NOT three). [register key at Task E]
+  claim: eDSR echelons (TWO authors — Mullarkey & Hevner; NOT three).
   doi: 10.1080/0960085X.2018.1451811
 - relationship: extends
   claim: 'Eight-component design-theory anatomy: the taxonomy the Design-Theory Components section is
@@ -247,7 +246,7 @@ dependencies:
     form). Grounds the design-principle statements so they are not ad hoc. Crossref-verified.'
   doi: 10.17705/1jais.00649
 - relationship: extends
-  claim: BPM conformance checking (process layer) — comparison target. [register key at Task E]
+  claim: BPM conformance checking (process layer) — comparison target.
   doi: 10.1007/978-3-662-56509-4
 - relationship: extends
   claim: Conformance drift between measurement points.
@@ -256,8 +255,7 @@ dependencies:
   claim: EA as classification, not validation-against-outcome — comparison target.
   doi: 10.1147/sj.263.0276
 - relationship: extends
-  claim: Declarative process spec from NL (process layer) — accommodates A1 rival. [register key at Task
-    E]
+  claim: Declarative process spec from NL (process layer) — accommodates A1 rival.
   doi: 10.1007/978-3-030-21290-2_23
 - relationship: extends
   claim: 'Foundational requirements-engineering traceability-problem statement: OST''s backward-traceability
@@ -275,7 +273,7 @@ dependencies:
   doi: 10.1177/002224298504900403
 - relationship: extends
   claim: Process-model understandability — replaces the dropped unverifiable Cespedes cite; VERIFIED venue
-    = IEEE TSMC-A 41(3):449-462, NOT Information Systems. [register key at Task E]
+    = IEEE TSMC-A 41(3):449-462, NOT Information Systems.
   doi: 10.1109/TSMCA.2010.2087017
 - relationship: extends
   claim: 'Intangibles ~90% of S&P 500 value: most operating value is in dimensions financial reporting
@@ -285,10 +283,10 @@ dependencies:
   claim: Organizational integration dominates synergy realization -> cascade-compatibility reframing.
   doi: 10.1287/orsc.10.1.1
 - relationship: extends
-  claim: Independent industry 'world model' convergence (web source, no DOI). [register key at Task E]
+  claim: Independent industry 'world model' convergence (web source, no DOI).
   reference: dorsey-botha-2026-hierarchy-intelligence
 - relationship: extends
-  claim: 2.8x workflow-redesign statistic (industry report, no DOI). [register key at Task E]
+  claim: 2.8x workflow-redesign statistic (industry report, no DOI).
   reference: singla-2025-state-of-ai
 - relationship: extends
   claim: Attractive/one-dimensional/must-be quality typology; source of the UNCLAIMED/CONTESTED/FLOOR
