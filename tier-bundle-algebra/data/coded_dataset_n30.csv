@@ -1,0 +1,27 @@
+case_id,case,gap_45,p4_pathway,gap_56,p5_pathway,gap_any,p45_any,gap_mitigated
+A01,Daimler-Benz / Chrysler (1998),1,1,1,1,1,1,no
+A02,Barclays / Lehman Brothers North American operations (2008),0,0,0,0,0,0,NA
+A03,3Com / Palm carve-out and spin-off (2000),1,1,0,0,1,1,yes
+A04,Facebook / FriendFeed acqui-hire (2009),1,0,0,0,1,0,no
+A05,Service Corporation International (SCI) funeral-home roll-up (1962–2001),0,0,0,0,0,0,NA
+A06,AT&T / Lucent Technologies spin-out (1996),0,0,0,0,0,0,NA
+A07,McDonald's franchise system (1955-present),0,0,0,0,0,0,NA
+A12,NYSE / Archipelago (2005-2006),0,0,0,0,0,0,NA
+A13,GM / Toyota NUMMI joint venture (1984–2010),0,0,0,0,0,0,NA
+A14,Novartis / GlaxoSmithKline three-way asset swap (2014–2015),0,0,0,0,0,0,NA
+E01,Concho Resources / ConocoPhillips (2020-2021),0,0,0,0,0,0,NA
+E02,Altera Corporation / Intel Corporation (2015),0,0,0,0,0,0,NA
+E03,CalAtlantic Group / Lennar Corporation (2017-2018),0,0,0,0,0,0,NA
+E04,Chiquita Brands International / Cutrale-Safra (2014-2015),0,0,0,0,0,0,NA
+E05,Andrx Corporation / Watson Pharmaceuticals (2006),0,0,0,0,0,0,NA
+E06,H. J. Heinz Company / Berkshire Hathaway & 3G Capital (2013),0,0,0,0,0,0,NA
+E07,First Data Corporation / KKR (2007),0,0,0,0,0,0,NA
+E08,"CA, Inc. (CA Technologies) / Broadcom Inc. (2018)",0,0,0,0,0,0,NA
+E09,Celgene Corporation / Bristol-Myers Squibb (2019),0,0,0,0,0,0,NA
+E10,Piedmont Natural Gas Company / Duke Energy (2015-2016),0,0,0,0,0,0,NA
+E11,"Omnicare, Inc. / CVS Health (2015)",0,0,0,0,0,0,NA
+E12,"Lorillard, Inc. / Reynolds American Inc. (2014-2015)",0,0,0,0,0,0,NA
+E13,El Paso Corporation / Kinder Morgan (2012),0,0,0,0,0,0,NA
+E14,BEA Systems / Oracle (2008),0,0,0,0,0,0,NA
+E15,Forest City Realty Trust / Brookfield Asset Management (2018),0,0,0,0,0,0,NA
+E16,"Kinder Morgan Energy Partners, L.P. / Kinder Morgan, Inc. (2014)",0,0,0,0,0,0,NA

@@ -1,0 +1,108 @@
+{
+  "case_id": "A13",
+  "case": "GM / Toyota NUMMI joint venture (1984–2010)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-N",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "operationally successful ~25 years; unwound April 1, 2010 amid GM bankruptcy, ~$281M severance to ~4,700 workers",
+      "rationale": "gap_45=0: Section 2 shows the dual-branded product (T4) and the Toyota Production System process (T5) were installed together and, per Section 4 P4, \"TPS process and dual-branded product co-functioned productively for ~25 years.\" gap_56=0: Section 2 shows TPS process (T5) and the rehired UAW workforce (T6) were aligned coherently, transforming culture into one of GM's best factories. p4_pathway=0 and p5_pathway=0: Section 4 explicitly documents \"none\" at both the T4<->T5 and T5<->T6 interfaces, with termination caused by GM's exogenous 2009 bankruptcy/abandonment rather than any tier-transfer defect."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "operated as efficiently as Toyota's Japanese facilities",
+      "rationale": "The dossier documents a joint venture where Toyota's production processes (T5) and GM's former workforce (T6) were successfully integrated without structural gaps at closing (gap_45=0, gap_56=0). Post-deal, there was no product-process disruption (p4_pathway=0) or process-organization fracture (p5_pathway=0); the plant operated efficiently for ~25 years until GM's bankruptcy."
+    },
+    "grok": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "operationally successful ~25 years until GM 2009 bankruptcy exit",
+      "rationale": "Section 2 T1 documents mutual-replace via new shared imprint; T5 documents 1-1 TPS transfer while T6 is subset (rehired workforce). Section 3 states TPS and dual-branded product co-functioned productively for ~25 years with no P4 or P5 fractures documented. Section 4 explicitly codes P4=0, P5=0, t1_archetype=0, t2_model=0 with terminal cause exogenous (GM bankruptcy)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-N\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"operationally successful ~25 years; unwound April 1, 2010 amid GM bankruptcy, ~$281M severance to ~4,700 workers\", \"rationale\": \"gap_45=0: Section 2 shows the dual-branded product (T4) and the Toyota Production System process (T5) were installed together and, per Section 4 P4, \\\"TPS process and dual-branded product co-functioned productively for ~25 years.\\\" gap_56=0: Section 2 shows TPS process (T5) and the rehired UAW workforce (T6) were aligned coherently, transforming culture into one of GM's best factories. p4_pathway=0 and p5_pathway=0: Section 4 explicitly documents \\\"none\\\" at both the T4<->T5 and T5<->T6 interfaces, with termination caused by GM's exogenous 2009 bankruptcy/abandonment rather than any tier-transfer defect.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"operated as efficiently as Toyota's Japanese facilities\",\n\"rationale\": \"The dossier documents a joint venture where Toyota's production processes (T5) and GM's former workforce (T6) were successfully integrated without structural gaps at closing (gap_45=0, gap_56=0). Post-deal, there was no product-process disruption (p4_pathway=0) or process-organization fracture (p5_pathway=0); the plant operated efficiently for ~25 years until GM's bankruptcy.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"operationally successful ~25 years until GM 2009 bankruptcy exit\",\n  \"rationale\": \"Section 2 T1 documents mutual-replace via new shared imprint; T5 documents 1-1 TPS transfer while T6 is subset (rehired workforce). Section 3 states TPS and dual-branded product co-functioned productively for ~25 years with no P4 or P5 fractures documented. Section 4 explicitly codes P4=0, P5=0, t1_archetype=0, t2_model=0 with terminal cause exogenous (GM bankruptcy).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "swap",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

@@ -1,0 +1,108 @@
+{
+  "case_id": "E01",
+  "case": "Concho Resources / ConocoPhillips (2020-2021)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained and absorbed into Lower 48 unit",
+      "rationale": "Section 2 documents a whole-entity statutory merger in which the T4 asset base (~550k Permian acres, ~200k bbl/day) and its T5 operations both moved together into ConocoPhillips' Lower 48 business unit, so product and process transferred coherently (gap_45=0); people/organization transferred alongside operations with partial senior-leadership retention (Tim Leach to board and Lower 48 EVP), so no process-vs-organization structural mismatch (gap_56=0). Section 4 explicitly documents no product-process disruption (P4 \"None documented; the asset base and its operating unit moved together\") and no process-organization fracture (P5 \"None documented... integration risk generically without a manifested fracture\"). T1-archetype and T2-model incompatibility were both coded 0 per section 4's \"None documented\" for aligned strategic intent and complementary E&P business models."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; operations retained",
+      "rationale": "The dossier documents that the asset base (T4) and its operating unit (T5) moved together into the Lower 48 business unit, resulting in no structural gap between product and process (gap_45 = 0). Similarly, the organization's people (T6) transferred into the combined organization alongside operations, avoiding a process-organization gap (gap_56 = 0). Consequently, no product-process disruption (p4_pathway = 0) or process-organization fracture (p5_pathway = 0) manifested at the 3-5 year horizon."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "gap_45=0 and gap_56=0 because T4, T5, and T6 all transferred (T4/T5 as 1-1 whole; T6 partial) in the statutory reverse-triangular merger per section 2 lines on asset base, Lower 48 absorption, and leadership integration. p4_pathway=0 and p5_pathway=0 per section 4 statements that no product-process or process-organization fracture was documented at the 3-5yr horizon and section 3 notes retention without divestiture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; assets retained and absorbed into Lower 48 unit\", \"rationale\": \"Section 2 documents a whole-entity statutory merger in which the T4 asset base (~550k Permian acres, ~200k bbl/day) and its T5 operations both moved together into ConocoPhillips' Lower 48 business unit, so product and process transferred coherently (gap_45=0); people/organization transferred alongside operations with partial senior-leadership retention (Tim Leach to board and Lower 48 EVP), so no process-vs-organization structural mismatch (gap_56=0). Section 4 explicitly documents no product-process disruption (P4 \\\"None documented; the asset base and its operating unit moved together\\\") and no process-organization fracture (P5 \\\"None documented... integration risk generically without a manifested fracture\\\"). T1-archetype and T2-model incompatibility were both coded 0 per section 4's \\\"None documented\\\" for aligned strategic intent and complementary E&P business models.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; operations retained\",\n  \"rationale\": \"The dossier documents that the asset base (T4) and its operating unit (T5) moved together into the Lower 48 business unit, resulting in no structural gap between product and process (gap_45 = 0). Similarly, the organization's people (T6) transferred into the combined organization alongside operations, avoiding a process-organization gap (gap_56 = 0). Consequently, no product-process disruption (p4_pathway = 0) or process-organization fracture (p5_pathway = 0) manifested at the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"gap_45=0 and gap_56=0 because T4, T5, and T6 all transferred (T4/T5 as 1-1 whole; T6 partial) in the statutory reverse-triangular merger per section 2 lines on asset base, Lower 48 absorption, and leadership integration. p4_pathway=0 and p5_pathway=0 per section 4 statements that no product-process or process-organization fracture was documented at the 3-5yr horizon and section 3 notes retention without divestiture.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

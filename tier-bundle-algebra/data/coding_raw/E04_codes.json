@@ -1,0 +1,108 @@
+{
+  "case_id": "E04",
+  "case": "Chiquita Brands International / Cutrale-Safra (2014-2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; company remained private; Charlotte HQ closed (~320 employees affected), later relocated to Switzerland",
+      "rationale": "This was a whole-entity going-private merger: section 2 documents that T4 (Chiquita/Fresh Express branded produce) and T5 (farming, processing, sourcing, distribution, logistics) both transferred and continued together under new ownership, so gap_45=0 (product and its processes moved coherently). T5 operations continued with added Cutrale value-chain access while the T6 change (Charlotte HQ closure, later Switzerland relocation) was concentrated at the organization tier and, per section 4/P5, is not characterized as an operations-organization fracture disrupting production, so gap_56=0 and p5_pathway=0. Section 4/P4 documents no product-process disruption (franchises and operating capabilities retained), so p4_pathway=0. Since no structural gap was coded in B, gap_mitigated=NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "No divestiture identified; the company remained privately held",
+      "rationale": "The dossier indicates that the product and process tiers transferred together as part of a whole-entity acquisition, presenting no structural mismatch at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0). Although the Charlotte headquarters was closed and the organization restructured, the sourced material explicitly notes this is not characterized as an operations-organization fracture disrupting production (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "Section 2 states T4 transferred whole and T5 continued with added Cutrale capabilities (gap_45=0); T5 transferred while T6 saw HQ closure and streamlining but no documented process-organization fracture at closing (gap_56=0). Sections 3-4 explicitly code P4 and P5 as none documented at 3-5yr horizon. Section 5 confirms whole-entity merger with no transitional-services agreement required."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; company remained private; Charlotte HQ closed (~320 employees affected), later relocated to Switzerland\", \"rationale\": \"This was a whole-entity going-private merger: section 2 documents that T4 (Chiquita/Fresh Express branded produce) and T5 (farming, processing, sourcing, distribution, logistics) both transferred and continued together under new ownership, so gap_45=0 (product and its processes moved coherently). T5 operations continued with added Cutrale value-chain access while the T6 change (Charlotte HQ closure, later Switzerland relocation) was concentrated at the organization tier and, per section 4/P5, is not characterized as an operations-organization fracture disrupting production, so gap_56=0 and p5_pathway=0. Section 4/P4 documents no product-process disruption (franchises and operating capabilities retained), so p4_pathway=0. Since no structural gap was coded in B, gap_mitigated=NA.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"No divestiture identified; the company remained privately held\",\n  \"rationale\": \"The dossier indicates that the product and process tiers transferred together as part of a whole-entity acquisition, presenting no structural mismatch at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0). Although the Charlotte headquarters was closed and the organization restructured, the sourced material explicitly notes this is not characterized as an operations-organization fracture disrupting production (p5_pathway=0).\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"Section 2 states T4 transferred whole and T5 continued with added Cutrale capabilities (gap_45=0); T5 transferred while T6 saw HQ closure and streamlining but no documented process-organization fracture at closing (gap_56=0). Sections 3-4 explicitly code P4 and P5 as none documented at 3-5yr horizon. Section 5 confirms whole-entity merger with no transitional-services agreement required.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

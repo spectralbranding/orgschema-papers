@@ -1,0 +1,108 @@
+{
+  "case_id": "A14",
+  "case": "Novartis / GlaxoSmithKline three-way asset swap (2014–2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "subset",
+      "sigma_T4": "swap",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "JV stake exit: sold 36.5% consumer-JV stake to GSK for USD 13.0bn on June 1, 2018 (~39 months post-close)",
+      "rationale": "Section 2 T5 states each acquirer took over the commercial/operational base for its acquired portfolio and Novartis leveraged its Oncology R&D/commercial capabilities, so product (T4) and its processes (T5) moved together — no product-vs-process mismatch at closing (gap_45=0). Section 2 T6 documents that associated people transferred with the business alongside those processes, with retention flagged only as a prospective risk, so no realized process-vs-organization mismatch at closing (gap_56=0). Section 4 states no realized P4 product-process disruption is evidenced (p4_pathway=0) and that key-personnel retention was a forward-looking risk with no documented realized fracture (p5_pathway=0)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "swap",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "sale of its 36.5% stake in the consumer-healthcare JV to GSK for USD 13.0 billion",
+      "rationale": "The dossier documents that the oncology and vaccines products transferred alongside their commercial and operational bases, with no structural gap at closing (gap_45 = 0). Key personnel transferred with the business, aligning operations and organization (gap_56 = 0). Post-deal, each acquirer successfully absorbed the products and processes without documented disruption (p4_pathway = 0), and despite forward-looking retention risks, no process-organization fracture materialized (p5_pathway = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "swap",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "sold 36.5% JV stake for USD 13.0 billion after ~39 months",
+      "rationale": "Section 2 states T4 swapped both directions and T5 'transferred with the products' while T6 'transferred with the business', directly yielding gap_45=0 and gap_56=0. Sections 3-4 explicitly state 'none documented' for P4 and P5 realized failures and note successful 2018 JV exit per pre-agreed terms."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"swap\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"JV stake exit: sold 36.5% consumer-JV stake to GSK for USD 13.0bn on June 1, 2018 (~39 months post-close)\", \"rationale\": \"Section 2 T5 states each acquirer took over the commercial/operational base for its acquired portfolio and Novartis leveraged its Oncology R&D/commercial capabilities, so product (T4) and its processes (T5) moved together \\u2014 no product-vs-process mismatch at closing (gap_45=0). Section 2 T6 documents that associated people transferred with the business alongside those processes, with retention flagged only as a prospective risk, so no realized process-vs-organization mismatch at closing (gap_56=0). Section 4 states no realized P4 product-process disruption is evidenced (p4_pathway=0) and that key-personnel retention was a forward-looking risk with no documented realized fracture (p5_pathway=0).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"swap\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"sale of its 36.5% stake in the consumer-healthcare JV to GSK for USD 13.0 billion\",\n  \"rationale\": \"The dossier documents that the oncology and vaccines products transferred alongside their commercial and operational bases, with no structural gap at closing (gap_45 = 0). Key personnel transferred with the business, aligning operations and organization (gap_56 = 0). Post-deal, each acquirer successfully absorbed the products and processes without documented disruption (p4_pathway = 0), and despite forward-looking retention risks, no process-organization fracture materialized (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"swap\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"sold 36.5% JV stake for USD 13.0 billion after ~39 months\",\n  \"rationale\": \"Section 2 states T4 swapped both directions and T5 'transferred with the products' while T6 'transferred with the business', directly yielding gap_45=0 and gap_56=0. Sections 3-4 explicitly state 'none documented' for P4 and P5 realized failures and note successful 2018 JV exit per pre-agreed terms.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "swap",
+    "sigma_T3": "subset",
+    "sigma_T4": "swap",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

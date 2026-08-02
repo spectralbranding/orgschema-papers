@@ -1,0 +1,108 @@
+{
+  "case_id": "E07",
+  "case": "First Data Corporation / KKR (2007)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; held ~8 years, re-IPO October 2015",
+      "rationale": "Per section 2, this was a whole-company going-concern LBO: product (T4), processes (T5), and organization/people (T6) all transferred together intact, with the only immediate change being capital structure (new senior secured credit agreement), so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) mismatch at closing. Section 4 explicitly documents \"None documented\" for both P4 (product and operating processes moved together intact; merchant attrition was competitive/market-driven) and P5 (operations and people moved together as a going concern), yielding p4_pathway=0 and p5_pathway=0. The controlling-principal archetype shifted from public-company operator to KKR financial sponsor with a balance-sheet-first thesis that became the primary channel of subsequent strain (t1_archetype=1), while section 4 documents no business-model incompatibility (t2_model=0)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; held for about eight years before 2015 IPO",
+      "rationale": "The dossier documents a whole-company going-concern LBO where all operational tiers (T4, T5, T6) transferred intact and together. Consequently, there were no structural gaps at the product-process (gap_45) or process-organization (gap_56) interfaces. Post-deal strain was driven by capital structure and macro timing, with no documented operational disruption at the T4/T5 (p4_pathway) or T5/T6 (p5_pathway) boundaries."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "held ~8 years then 2015 IPO",
+      "rationale": "gap_45=0 and p4_pathway=0 per section 2 T4/T5 (product franchise and operating processes transferred together intact as going concern) and section 4 P4 (none documented; merchant attrition was market-driven). gap_56=0 and p5_pathway=0 per section 2 T5/T6 (people transferred with going concern) and section 4 P5 (none documented). T1 replace and T2 1-1 drawn directly from section 2 lines on public-to-KKR sponsor shift and retained payment-processing model."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"1\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; held ~8 years, re-IPO October 2015\", \"rationale\": \"Per section 2, this was a whole-company going-concern LBO: product (T4), processes (T5), and organization/people (T6) all transferred together intact, with the only immediate change being capital structure (new senior secured credit agreement), so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) mismatch at closing. Section 4 explicitly documents \\\"None documented\\\" for both P4 (product and operating processes moved together intact; merchant attrition was competitive/market-driven) and P5 (operations and people moved together as a going concern), yielding p4_pathway=0 and p5_pathway=0. The controlling-principal archetype shifted from public-company operator to KKR financial sponsor with a balance-sheet-first thesis that became the primary channel of subsequent strain (t1_archetype=1), while section 4 documents no business-model incompatibility (t2_model=0).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; held for about eight years before 2015 IPO\",\n  \"rationale\": \"The dossier documents a whole-company going-concern LBO where all operational tiers (T4, T5, T6) transferred intact and together. Consequently, there were no structural gaps at the product-process (gap_45) or process-organization (gap_56) interfaces. Post-deal strain was driven by capital structure and macro timing, with no documented operational disruption at the T4/T5 (p4_pathway) or T5/T6 (p5_pathway) boundaries.\"\n}",
+    "grok": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"held ~8 years then 2015 IPO\",\n\"rationale\": \"gap_45=0 and p4_pathway=0 per section 2 T4/T5 (product franchise and operating processes transferred together intact as going concern) and section 4 P4 (none documented; merchant attrition was market-driven). gap_56=0 and p5_pathway=0 per section 2 T5/T6 (people transferred with going concern) and section 4 P5 (none documented). T1 replace and T2 1-1 drawn directly from section 2 lines on public-to-KKR sponsor shift and retained payment-processing model.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

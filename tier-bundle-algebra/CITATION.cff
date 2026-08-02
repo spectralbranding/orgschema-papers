@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "Tier-Bundle Algebra in Inter-Organizational Resource Transfer: A Fork-Operation Formalism Over the Six-Tier Acquisition-Target Ontology"
+version: 1.0.0
+date-released: 2026-08-02
+url: "https://doi.org/10.5281/zenodo.21756077"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21756077"
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.21756078"
+    description: "Zenodo version DOI (v1.0.0)"
+keywords:
+  - modularity
+  - mergers and acquisitions
+  - formal organization theory
+  - tier ontology
+  - admissibility
+  - cascade rule
+license:
+  - CC-BY-4.0
+  - MIT
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+  title: "Tier-Bundle Algebra in Inter-Organizational Resource Transfer: A Fork-Operation Formalism Over the Six-Tier Acquisition-Target Ontology"
+  year: 2026
+  doi: "10.5281/zenodo.21756077"
+  url: "https://doi.org/10.5281/zenodo.21756077"

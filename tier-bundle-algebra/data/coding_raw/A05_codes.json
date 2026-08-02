@@ -1,0 +1,108 @@
+{
+  "case_id": "A05",
+  "case": "Service Corporation International (SCI) funeral-home roll-up (1962–2001)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "T1=T4",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "announced sale of 400+ funeral homes + 100+ cemeteries (2001); homes fell to ~2,500, footprint 20→8 countries",
+      "rationale": "gap_45=0 because §2 shows T4 (retained family-name products) and T5 (cluster-pooled operations) moved together coherently — the cluster process operated across the retained-name products for years (§4 P4). gap_56=0 because T5 re-engineering (pooled hearses/embalming/personnel) was structurally aligned with T6 (staff shared across the cluster), not a mismatch. p4_pathway=0 because §4 states no discrete product-process integration failure was documented. p5_pathway=0 because §4 records no specifically documented process-organization fracture ([UNVERIFIED]); by contrast the documented failure was t2_model incompatibility — the acquisition/death-rate value logic inverted (§3, §4)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "T1=T4",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "stock dropped by more than 40 percent; announced plans to sell over 400 funeral homes plus more than 100 cemeteries",
+      "rationale": "The dossier explicitly states that the cluster process operated across the retained-name products for years, indicating no structural mismatch at closing (gap_45=0) and no subsequent product-process disruption (p4_pathway=0). Furthermore, there is no documented evidence of a process-organization structural gap at closing (gap_56=0) or any subsequent fracture between operations and people/culture (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "T1=T4",
+      "gap_45": "1",
+      "gap_56": "1",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "stock fell >40% in 1999; divested >400 homes + >100 cemeteries by 2001 (homes to ~2,500)",
+      "rationale": "Section 2 T4 states names/brands preserved whole while T5 states processes re-engineered to cluster model (gap_45=1); T5 re-engineered while T6 only partial/pooled (gap_56=1). Section 4 explicitly codes P4 and P5 as none documented (both 0) but T2-model incompatibility as PRESENT due to inverted acquisition economics and declining death rate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"T1=T4\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"1\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"announced sale of 400+ funeral homes + 100+ cemeteries (2001); homes fell to ~2,500, footprint 20\\u21928 countries\", \"rationale\": \"gap_45=0 because \\u00a72 shows T4 (retained family-name products) and T5 (cluster-pooled operations) moved together coherently \\u2014 the cluster process operated across the retained-name products for years (\\u00a74 P4). gap_56=0 because T5 re-engineering (pooled hearses/embalming/personnel) was structurally aligned with T6 (staff shared across the cluster), not a mismatch. p4_pathway=0 because \\u00a74 states no discrete product-process integration failure was documented. p5_pathway=0 because \\u00a74 records no specifically documented process-organization fracture ([UNVERIFIED]); by contrast the documented failure was t2_model incompatibility \\u2014 the acquisition/death-rate value logic inverted (\\u00a73, \\u00a74).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"T1=T4\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"stock dropped by more than 40 percent; announced plans to sell over 400 funeral homes plus more than 100 cemeteries\",\n  \"rationale\": \"The dossier explicitly states that the cluster process operated across the retained-name products for years, indicating no structural mismatch at closing (gap_45=0) and no subsequent product-process disruption (p4_pathway=0). Furthermore, there is no documented evidence of a process-organization structural gap at closing (gap_56=0) or any subsequent fracture between operations and people/culture (p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"T1=T4\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"stock fell >40% in 1999; divested >400 homes + >100 cemeteries by 2001 (homes to ~2,500)\",\n  \"rationale\": \"Section 2 T4 states names/brands preserved whole while T5 states processes re-engineered to cluster model (gap_45=1); T5 re-engineered while T6 only partial/pooled (gap_56=1). Section 4 explicitly codes P4 and P5 as none documented (both 0) but T2-model incompatibility as PRESENT due to inverted acquisition economics and declining death rate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "swap",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "T1=T4",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

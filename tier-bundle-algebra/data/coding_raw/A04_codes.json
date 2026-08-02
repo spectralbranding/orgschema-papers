@@ -1,0 +1,108 @@
+{
+  "case_id": "A04",
+  "case": "Facebook / FriendFeed acqui-hire (2009)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "terminate",
+      "sigma_T3": "N-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "no",
+      "performance_metric": "product shut down ~66 months (April 9, 2015) after close; team integration succeeded",
+      "rationale": "gap_45=1: the FriendFeed.com product (T4) crossed into Facebook ownership but was kept \"for the time being\" in maintenance/read-only while the engineering processes (T5) integrated into Facebook's own teams rather than continuing to produce/deliver the FriendFeed product — a structural product-vs-process mismatch at closing (§2 T4, T5). gap_56=0: the operational engineering capability (T5) and the people/organization (T6) transferred together — \"all FriendFeed employees will join Facebook,\" founders in senior roles (§2 T5, T6). p4_pathway=0 and p5_pathway=0: §4 documents no product-process disruption (product decline/shutdown was a deliberate wind-down, not a fracture) and no process-organization fracture (people and engineering roles moved together). Gap in B was not documented as contractually absorbed via any transitional-services agreement (§5), so gap_mitigated=no."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "terminate",
+      "sigma_T3": "1-1",
+      "sigma_T4": "terminate",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "no",
+      "performance_metric": "product shut down ~5.5 years post-close",
+      "rationale": "The deal was an acqui-hire where the engineering team and processes (T5, T6) transferred into Facebook, but the FriendFeed product (T4) was effectively abandoned/wound down, creating a structural gap at closing (gap_45=1). However, this was intentional, so no P4 disruption pathway manifested. T5 and T6 moved together seamlessly (gap_56=0, p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "terminate",
+      "sigma_T3": "terminate",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "no",
+      "performance_metric": "FriendFeed.com shut April 9, 2015 (~5.5 years post-close)",
+      "rationale": "gap_45=1 from T2/T4 lines (standalone model terminated; product kept read-only then wound down) while T5/T6 transferred intact. gap_56=0 from T5/T6 lines (engineering capability and all employees moved together). p4_pathway=0 and p5_pathway=0 per section 4 (explicitly none documented; wind-down was deliberate, not fracture)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"terminate\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"no\", \"performance_metric\": \"product shut down ~66 months (April 9, 2015) after close; team integration succeeded\", \"rationale\": \"gap_45=1: the FriendFeed.com product (T4) crossed into Facebook ownership but was kept \\\"for the time being\\\" in maintenance/read-only while the engineering processes (T5) integrated into Facebook's own teams rather than continuing to produce/deliver the FriendFeed product \\u2014 a structural product-vs-process mismatch at closing (\\u00a72 T4, T5). gap_56=0: the operational engineering capability (T5) and the people/organization (T6) transferred together \\u2014 \\\"all FriendFeed employees will join Facebook,\\\" founders in senior roles (\\u00a72 T5, T6). p4_pathway=0 and p5_pathway=0: \\u00a74 documents no product-process disruption (product decline/shutdown was a deliberate wind-down, not a fracture) and no process-organization fracture (people and engineering roles moved together). Gap in B was not documented as contractually absorbed via any transitional-services agreement (\\u00a75), so gap_mitigated=no.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"terminate\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"terminate\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"no\",\n\"performance_metric\": \"product shut down ~5.5 years post-close\",\n\"rationale\": \"The deal was an acqui-hire where the engineering team and processes (T5, T6) transferred into Facebook, but the FriendFeed product (T4) was effectively abandoned/wound down, creating a structural gap at closing (gap_45=1). However, this was intentional, so no P4 disruption pathway manifested. T5 and T6 moved together seamlessly (gap_56=0, p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"terminate\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"performance_metric\": \"FriendFeed.com shut April 9, 2015 (~5.5 years post-close)\",\n  \"rationale\": \"gap_45=1 from T2/T4 lines (standalone model terminated; product kept read-only then wound down) while T5/T6 transferred intact. gap_56=0 from T5/T6 lines (engineering capability and all employees moved together). p4_pathway=0 and p5_pathway=0 per section 4 (explicitly none documented; wind-down was deliberate, not fracture).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "terminate",
+    "sigma_T3": "N-1",
+    "sigma_T4": "read-only",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

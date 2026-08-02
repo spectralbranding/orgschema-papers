@@ -1,0 +1,739 @@
+# SPINE.yaml — Tier-Bundle Algebra
+#
+# GENERATIVE spine (SPINE_FIRST_DRAFTING_PROTOCOL.md Phase 0.5). Locked BEFORE
+# paper.md prose, per the HARD rule: no drafting begins until this file exists
+# and every prose claim traces to a node here. v0.2.0 supersedes v0.1.0 (see
+# This is a PURE-THEORY conceptual contribution: no author-collected data, no
+# simulation, no computed table values — v0.1 SCHEMA (not to be confused with
+# the paper's own "v0.2" version label) — matching 2026ag's own disposition.
+# EXECUTED 2026-07-29 (triple blinded AI coders; Fleiss' κ = .838; pre-registered
+# Fisher's exact) and returns PRELIMINARY confirmatory support for P6 (see L1 +
+# changelog). The paper itself remains a pure-theory conceptual contribution;
+# the empirical pass is supporting, not the core claim.
+
+spine_version: "0.1"
+spine_doc_version: "0.4.0"
+paper_key: "tier-bundle-algebra"
+provenance: generative
+title: >-
+  Tier-Bundle Algebra in Inter-Organizational Resource Transfer: A
+  Fork-Operation Formalism Over the Six-Tier Acquisition-Target Ontology
+status: >-
+  Draft; publication held pending the user's un-hold decision. Merge and
+  venue provenance are recorded in the changelog (internal record only).
+
+thesis: >-
+  The six-tier ontology of the acquisition target (Zharnikov 2026ag)
+  specifies what an acquisition target IS; it does not specify what
+  compositions over the tier stack are admissible when an ownership boundary
+  is crossed. This paper supplies that compositional grammar: a typed
+  fork-operation algebra in which each named M&A transaction type decomposes
+  into a signature bundle of fork operations across the seller's tier graph,
+  a cascade rule specifying which fork-forces-fork entailments hold along the
+  service hierarchy, and an admissibility predicate — derived from the six-
+  tier ontology's own tier-collapse states — that rejects bundles a target's
+  actual fusion structure cannot support. Unlike the named-deal-type
+  taxonomy's fourteen enumerated categories, the algebra also classifies
+  hybrid and unnamed structures the taxonomy has no name for, converting
+  deal-type classification and admissibility assessment from enumerated
+  judgment into a generative, checkable structure.
+
+# ============================================================================
+# Propositions — the argument backbone
+#   SF-prefix: motivating stylized fact. P1-P4: definitional propositions
+#   (tier graph + 3 critical imported premises; fork operator; tier-bundle +
+#   signature + composition table). P5: cascade rule (κ, π). P6: admissibility
+#   predicate (α) + multi-tier collapse generalizations. P7: the non-self
+#   the old memo's 5 worked examples, all of which recover already-named
+#   types). P8: soundness/completeness (proof-sketch, scoped down; full
+#   argument to Appendix A). C-prefix: boundary conditions. A-prefix: rival
+#   ruled out. L-prefix: limitations.
+# ============================================================================
+propositions:
+  - id: SF1
+    statement: >-
+      The named M&A deal-type taxonomy (asset deal, share sale, carve-out,
+      acqui-hire, roll-up, spin-out, franchise, redomiciliation, merger of
+      equals, reverse merger, joint venture, asset swap, intra-business
+      pivot, sole-proprietor wind-down) is enumerated by the transfer
+      instrument, inductively from observed deal practice, not derived from
+      any generative rule about what a transaction IS. A hybrid or unnamed
+      transaction has no principled place in the table, and whether a
+      proposed deal shape is structurally sound is assessed by practitioner
+      judgment rather than a checkable predicate.
+    antecedents: []
+    body_sections: ["Introduction"]
+    evidence:
+      - type: citation
+        anchor: >-
+          None of transaction-cost economics, the resource-based/knowledge-
+          based view, or modular-systems theory supplies a compositional
+          grammar over the constituent transferable units of a transaction —
+          each examines a different axis (firm/market boundary; which
+          resource flows; design rules for recombination) without deriving
+          the named-type taxonomy as a consequence of more primitive
+          operations.
+        citation_keys: [coase-1937-nature-firm-economica, williamson-1985-economic-institutions-capitalism, penrose-1959-theory-growth-firm, barney-1991-firm-resources-sustained, baldwin-2000-design-rules-power]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION (2026-07-29, review-stage gap closure). The
+          M&A-integration empirical tradition proper — /review-literature's
+          top finding was that this camp was under-covered (Larsson &
+          Finkelstein 1999 alone). State-of-field reviews establishing the
+          M&A-taxonomy-as-atheoretical-enumeration claim from within the
+          field's own literature, not asserted from outside it.
+        citation_keys: [haleblian-2009-taking-stock-what, cartwright-2006-thirty-years-mergers, graebner-2017-process-postmerger-integration]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. The closest EXISTING management-journal attempts
+          at a typological/structural grammar for post-acquisition structure
+          — the genuine rivals to this paper's own taxonomic ambition, per
+          /review-literature's single most defensible missing-citation
+          finding. Engaging these substantively (not just citing) is required
+          to move off the Q6 "thin M&A-empirics engagement" finding.
+        citation_keys: [puranam-2007-what-they-know, puranam-2009-integrating-acquired-capabilities, zaheer-2013-synergy-sources-target, zollo-2004-deliberate-learning-corporate]
+        citation_role: contrast_case
+
+  - id: P1
+    statement: >-
+      Definition 1 (tier graph G): a typed directed graph G = (T, E) with
+      vertex set T = the six tiers of the acquisition-target ontology and
+      edge set E partitioned into a downward constraint hierarchy and an
+      upward service hierarchy (the same relationships viewed from opposite
+      directions). The algebra rests on three structural assumptions, stated
+      explicitly as axioms of this paper and taken as given (not established
+      here): (A) the Tier-1 attribution refinement — Tier 1 attaches to the
+      controlling-principal substrate, not the asset substrate, and is
+      replaced rather than transferred under any ownership-changing
+      transaction; (B) Tier-3 jurisdictional mutability — the legal vehicle
+      can swap while Tiers 2, 4, 5, 6 continue undisrupted; (C) the
+      tier-collapse states (T1≡T4 Domain Craftsman/Family Steward/Mission
+      Founder; T1≡T3 sole-proprietor) at which the fused tier inherits
+      Tier 1's non-conveyability. The three are developed and empirically
+      motivated in the six-tier ontology, cited as their provenance rather
+      than as an authority on which the algebra's results depend; a reader
+      who grants Assumptions A–C can verify every subsequent proposition
+      independently of that work.
+    conditions: >-
+      Adopts the six-tier ontology's tier index and dual hierarchy as object
+      language; the three specializing premises (A, B, C) are stated as
+      explicit assumptions of THIS paper (taken as given), not imported on
+      external authority.
+    antecedents: []
+    evidence:
+      - type: citation
+        anchor: >-
+          Provenance of the tier vocabulary and of Assumptions A, B, C: the
+          six tiers, governors, specification surfaces, transferability modes,
+          and dual hierarchy this definition adopts, and the source where the
+          three assumptions are developed and empirically motivated — cited as
+          where they originate, not as the ground of their truth in this paper.
+        citation_keys: [zharnikov-2026-dual-hierarchies-organizational-transferability-six]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Base typed-DAG-transformation formalism this graph specializes
+          (organizations as discrete typed specification graphs, not
+          continuous spaces).
+        citation_keys: [zharnikov-2026-organizational-schema-theory-test-driven]
+        citation_role: theoretical_predecessor
+    body_sections: ["Preliminaries (Definition 1; Premises A, B, C)"]
+
+  - id: P2
+    statement: >-
+      Definition 2 (tier-fork operation φ_n): a typed transfer of the
+      Tier-n record from a vertex in the seller's tier graph to a vertex in
+      the buyer's tier graph under a direction tag drawn from {transfer
+      (1-to-1), merge (N-to-1), split (1-to-N), read-only (licence-style
+      use-rights without governance transfer), swap (substitution at fixed
+      identity — the only well-typed lateral operation, reserved for Tier
+      3), split-time (fork across a discrete time boundary within one
+      continuing principal, no ownership-boundary crossing)}. φ_n is
+      well-typed only when source and target share the tier index; Tier 1
+      admits no well-typed fork under any direction other than replace,
+      because its transferability mode is imprint-only.
+    conditions: "Depends on P1 (the tier graph and its three imported premises)."
+    antecedents: [P1]
+    evidence:
+      - type: citation
+        anchor: >-
+          Direct mathematical precedent: double-pushout (DPO) graph
+          transformation over hierarchical organizational structure requires
+          node-type preservation across a rewrite — precisely the
+          well-typedness condition imposed here.
+        citation_keys: [wang-2009-dynamic-reorganization-mechanisms]
+        citation_role: methodological_source
+      - type: citation
+        anchor: >-
+          Closest existing precedent for modeling M&A as formal structural
+          integration (Petri nets + predicate calculus over discovered
+          business processes) rather than a purely financial event — richer
+          post-close descriptively, but supplies no a priori typed structure
+          for classifying a transaction before it closes, which this
+          definition supplies.
+        citation_keys: [chanda-2021-artificial-intelligence-data]
+        citation_role: contrast_case
+    body_sections: ["Fork Operations and Tier-Bundles (Definition 2)"]
+
+  - id: P3
+    statement: >-
+      Definition 3 (tier-bundle B and signature σ): a tier-bundle is an
+      ordered set of tier-fork operations executed under one transaction
+      envelope. Its signature σ(B) is the per-tier projection onto direction
+      (or composite Tier-1 token, or ∅) for each of the six tiers; a
+      composition table resolves the composite direction when two operations
+      in B target the same tier index (handling symmetric/multi-party cases:
+      asset swap, symmetric merger, three-way restructuring, franchise-
+      system extension). The signature individuates a named deal type: every
+      one of fourteen named M&A deal types recovers as a signature instance
+      — not an independently enumerated category — modulo cardinality
+      refinement.
+    conditions: "Depends on P1, P2."
+    antecedents: [P1, P2]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Table 1 (going-concern transfers) + Table 2 (special/multi-party
+          structures) construct, for each of fourteen named deal types, a
+          canonical signature directly from that type's own operative
+          definition — asset deal = {T4,T5,T6-partial} transfer; carve-out =
+          subset of same; acqui-hire = {T6} alone; roll-up = {T4,T5} N-to-1
+          merge; spin-out = 1-to-N split; franchise = read-only {T4}; intra-
+          business pivot = T4 split-time; redomiciliation = T3 swap alone;
+          sole-proprietor wind-down = terminate+reconstruct; merger of
+          equals / reverse merger / joint venture / asset swap = the
+          composition-table cases.
+    body_sections: ["Fork Operations and Tier-Bundles (Definitions 3-4); Bundle-Signature Taxonomy (Tables 1-2)"]
+
+  - id: P4
+    statement: >-
+      Firm-as-bundle framing: casting the firm as a bundle of tier-records
+      (rather than a single undifferentiated entity) is thematically
+      adjacent to, and extends in a specific direction, the classic
+      resource-based and knowledge-based views of the firm, and is a special
+      case of general modular-systems theory applied to a fixed six-tier
+      substrate and one class of recombination event (the acquisition
+      transaction). The distinctive contribution relative to those
+      traditions is the cascade-asymmetry claim (P5) and the admissibility
+      predicate (P6), neither of which those traditions themselves derive.
+    conditions: "Depends on P1-P3."
+    antecedents: [P1, P2, P3]
+    evidence:
+      - type: citation
+        anchor: >-
+          Firm as a bundle of productive resources whose value lies in
+          services rendered, not stock held.
+        citation_keys: [penrose-1959-theory-growth-firm]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Resource-based view; firm resources as the unit that sustains
+          competitive advantage.
+        citation_keys: [barney-1991-firm-resources-sustained]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: Knowledge-based extension of the resource-based view.
+        citation_keys: [grant-1996-toward-knowledgebased-theory]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: Dynamic-capabilities lineage for cross-domain integration difficulty.
+        citation_keys: [teece-2010-business-models-business]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Design-rules modular-systems theory — the tier-bundle algebra is a
+          special case of modular composition over a fixed substrate.
+        citation_keys: [baldwin-2000-design-rules-power]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Subsequent modular-systems development (flexibility/knowledge
+          management framing).
+        citation_keys: [sanchez-1996-modularity-flexibility-knowledge]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Mirroring hypothesis — product modular structure mirrors
+          organizational boundaries — the empirical anchor for the cascade
+          rule's confirming direction (a Tier-4 fork induces a Tier-6 fork
+          along the same modular boundary).
+        citation_keys: [colfer-2016-mirroring-hypothesis-theory-evidence]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Architectural-innovation typology — a cascade gap at φ_4→φ_5 is,
+          in this vocabulary, an architectural-level disruption masquerading
+          as a component-level transfer.
+        citation_keys: [henderson-1990-architectural-innovation-reconfiguration-existing]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Transaction-cost economics — the firm-versus-market boundary
+          framework against which the fork operator stands as a
+          compositional refinement (TCE characterizes where the boundary is
+          placed; this paper characterizes what tier-level content crosses
+          it).
+        citation_keys: [coase-1937-nature-firm-economica, williamson-1985-economic-institutions-capitalism]
+        citation_role: contrast_case
+      - type: citation
+        anchor: >-
+          Foundational compositional-category-theory reference; the
+          partial-algebra status of the present structure (no identity, no
+          general inverse) suggests a partial category rather than a
+          category proper — full category-theoretic closure is explicitly
+          reserved for future work, not attempted in the main text.
+        citation_keys: [eilenberg-1945-general-theory-natural-equivalences, fong-2019-invitation-applied-category]
+        citation_role: rival_ruled_out
+      - type: citation
+        anchor: >-
+          Recent (2020s) organizational-boundary-permeability and modular-
+          systems anchors, complementing the classic literature above with
+          current top-journal-vintage precedent.
+        citation_keys: [schilling-2000-toward-general-modular, mcclean-2025-dynamic-boundary-permeability, asencio-2024-boundary-transitions-dynamic, raisch-2025-combining-human-artificial]
+        citation_role: theoretical_predecessor
+    body_sections: ["Theoretical Foundations"]
+
+  - id: P5
+    statement: >-
+      Cascade rule (κ, total function from a fork operation to the set of
+      forks it structurally implies under the service hierarchy) and its
+      conformance predicate π (whether a bundle contains every fork κ
+      implies). κ is upward-implying along the service hierarchy and
+      downward-non-implying: forking a served tier (e.g., Product) entails
+      forking the tier that serves it (Process), because the served tier
+      loses its productive substrate otherwise; the reverse does not hold,
+      because substrate is replaceable from below (the franchise case: a
+      Tier-4 read-only fork does not cascade to a Tier-5 fork). Cascade gaps
+      — forks in κ(B) absent from B — are the operationally consequential
+      omissions: a gap at φ_4→φ_5 is a Product-Process disruption surfaced
+      compositionally; a gap at φ_5→φ_6 is a Process-Organization fracture.
+    conditions: "Single transaction envelope (C1); depends on P1-P3."
+    antecedents: [P1, P2, P3]
+    falsifier: >-
+      A documented roll-up (or other N-to-1 merge) in which a lower-tier
+      fork produces no upward propagation despite a fused separability
+      profile, holding target separability and integration approach
+      comparable to cases that do exhibit it.
+    evidence:
+      - type: citation
+        anchor: >-
+          Empirical precedent for integration failure concentrating at the
+          process/organization boundary in roll-ups — the case-survey
+          finding this cascade rule formalizes as a directional structural
+          implication.
+        citation_keys: [larsson-1999-integrating-strategic-organizational]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: Foundational modularity-theory anchor the cascade rule extends to the transaction-event case.
+        citation_keys: [schilling-2000-toward-general-modular]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: Episodic threshold-based boundary-transition theory, structurally analogous to the cascade's directional threshold trigger.
+        citation_keys: [mcclean-2025-dynamic-boundary-permeability]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: Boundary-permeability-as-designed-property precedent, consistent with admissibility being target-specific rather than universal.
+        citation_keys: [asencio-2024-boundary-transitions-dynamic]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION (2026-07-29, review-stage gap closure). Direct
+          rival/near-neighbor the cascade rule must be argued against, not
+          merely cited alongside: Baldwin & Clark's own visible/hidden
+          information-hiding asymmetry already encodes a directional
+          dependency (visible design rules constrain hidden module
+          parameters, not the reverse). The cascade rule is argued to be a
+          formally distinct claim (operational/transfer co-dependence at an
+          ownership-change event, not design-time independence), not a
+          relabeling — per Gemini DR Q3 finding,
+          `research/tier-bundle-algebra/DR_GEMINI_Q3_BALDWIN_CLARK_INFO_HIDING.md`.
+        citation_keys: [baldwin-2000-design-rules-power]
+        citation_role: rival_ruled_out
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. Direct empirical bridge from Baldwin-Clark-style
+          modularity to M&A specifically: acquired business units are more
+          likely to be structurally recombined (split/merged/transferred)
+          than internally developed ones — closest existing empirical anchor
+          for treating business units as forkable modules under ownership
+          change.
+        citation_keys: [karim-2006-modularity-organizational-structure]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. Precedent for information-hiding (visible
+          standardized interfaces) as a PREREQUISITE for firm-boundary
+          separation specifically (vertical disintegration in mortgage
+          banking) — supports the cascade rule's claim that visibility and
+          transferability are related but distinct axes.
+        citation_keys: [jacobides-2005-industry-change-vertical]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. Direct empirical anchor for the cascade rule's
+          predictive claim, replacing sole reliance on Larsson & Finkelstein
+          (1999): structural recombination following acquisition is
+          path-dependent, extending the "which components co-fork" question
+          this proposition addresses.
+        citation_keys: [karim-2000-path-dependent-path-breaking]
+        citation_role: motivating_problem
+    body_sections: ["Cascade Rule and Service-Hierarchy Asymmetry"]
+
+  - id: P6
+    statement: >-
+      Admissibility predicate α(B, κ): a tier-bundle is inadmissible if it
+      forks a tier that is Fused to another tier (per the six-tier
+      ontology's own tier-collapse states) without also forking the fused
+      partner, because the fused tier inherits Tier 1's non-conveyability by
+      identification. The two canonical collapse states (T1≡T4 Domain
+      Craftsman/Family Steward/Mission Founder; T1≡T3 sole-proprietor)
+      generate two admissibility rules; multi-tier collapse generalizations
+      (T1≡T3≡T4 sole-proprietor craftsman; T1≡T2, T1≡T6 as candidate
+      extensions) extend the same mechanism to compound fusions.
+    conditions: "C1; depends on P1-P3 and the separability diagnostic (2026ag)."
+    antecedents: [P1, P2, P3]
+    falsifier: >-
+      A structurally coherent, sustained transaction in which a Fused pair
+      is split (one tier forked, its partner retained by a different
+      principal) without measurable integration failure at that boundary.
+    evidence:
+      - type: citation
+        anchor: >-
+          The six-tier ontology's own separability diagnostic and
+          tier-collapse states (T1≡T4, T1≡T3) are the direct antecedent this
+          predicate operationalizes for the transaction case.
+        citation_keys: [zharnikov-2026-dual-hierarchies-organizational-transferability-six]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Closest existing formal precedent: explicit structural constraints
+          under which two organizational process graphs can be merged
+          without introducing faults at the seams.
+        citation_keys: [wagner-2013-consolidation-interacting-bpel]
+        citation_role: methodological_source
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION (2026-07-29). The genuine organization-theory
+          anchor for reframing the admissibility predicate as a formal answer
+          to "when does organizational identity become structurally
+          inseparable from a component," per Gemini DR Q4 finding
+          (`DR_GEMINI_Q4_ORG_THEORY_REFRAME.md`) — establishes identity as a
+          recognized boundary of the firm distinct from TCE-efficiency and
+          RBV-competence boundaries.
+        citation_keys: [santos-2005-organizational-boundaries-theories]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. Identity as a coordinating mechanism; separating
+          an asset from its identity destroys the value that mechanism
+          creates — direct theoretical support for why identity-fusion makes
+          a tier structurally non-conveyable, not merely legally
+          inconvenient.
+        citation_keys: [kogut-1996-what-firms-do]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          PHASE-4 ADDITION. Interconnectedness of asset stocks as an
+          isolating mechanism against imitation/transfer — the RBV-native
+          precursor concept the admissibility predicate gives a structural
+          geometry to (which pairs are interconnected, not merely that
+          interconnectedness exists).
+        citation_keys: [dierickx-1989-asset-stock-accumulation]
+        citation_role: theoretical_predecessor
+    body_sections: ["Admissibility from Collapse States"]
+
+  - id: P7
+    statement: >-
+      Worked non-self example (the distinct-contribution demonstration none
+      of the old memo's five illustrative examples — asset deal, franchise,
+      intra-business pivot, acqui-hire, redomiciliation, all recoveries of
+      already-named types — ever supplied): a partial
+      sub-tier fork at Tier 4 that preserves the Tier-1 imprint attached to
+      a different Tier-4 sub-record is a hybrid bundle signature absent from
+      Tables 1-2; the algebra classifies it at a grain the bare six-tier
+      signature does not resolve, and predicts three falsifiable outcomes a
+      flat taxonomy does not generate: (i) carve-outs of Fused Tier-1-Tier-4
+      pairs systematically violate integration expectations; (ii)
+      acqui-hires succeed only when Tier-5/Tier-6 fork independently of
+      Tier-3; (iii) roll-up failure concentrates at the Process-Organization
+      boundary (the same claim as P5's falsifier, cross-referenced not
+      restated).
+    conditions: "C1; depends on P3, P6."
+    antecedents: [P3, P6]
+    falsifier: >-
+      Any of the three predictions failing systematically across matched
+      cases (see P5's falsifier for the roll-up-specific case).
+    evidence:
+      - type: analytic
+        anchor: >-
+          Constructed from the fresh review's own suggested
+          hybrid-example seed ("a partial T3/T4 fork that preserves T1
+          imprint") and three ready-made falsifiable predictions
+          ([internal doc], Second Grok pass).
+    body_sections: ["A Hybrid Bundle the Existing Taxonomy Cannot Name"]
+
+  - id: P8
+    statement: >-
+      Soundness/completeness (proof sketch, scoped to the smallest adequate
+      structure — a typed partial order with a fork morphism and composition
+      operator, NOT full category-theory axioms; category-theoretic closure
+      on closure/identity/inverse is deferred to follow-on work): every
+      named deal type corresponds to exactly one bundle signature under
+      Definitions 3-4, and every admissible bundle signature under P6
+      corresponds to a structurally coherent transaction, even when that
+      signature has no existing name (P7). Full soundness argument in
+      Appendix A; category-theoretic closure (identity, inverse, and the
+      resulting group- or category-theoretic structure) remains explicitly
+      future work.
+    conditions: "C1; depends on P1-P7."
+    antecedents: [P1, P2, P3, P4, P5, P6, P7]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Proof sketch: signature-to-deal-type is a surjection by
+          construction (Tables 1-2); admissibility-to-coherence follows from
+          P6's derivation from the separability diagnostic, validated
+          against the six-tier ontology's own worked example ("Company B" —
+          Fused/Fused/Partial/Fused/Partial/Fused).
+    body_sections: ["Soundness of the Algebra; Appendix A"]
+
+  - id: A1
+    statement: >-
+      A continuous kinematic or manifold treatment of the transaction (a
+      rival to the discrete typed-algebra approach) was tested and rejected
+      on structural grounds: discrete institutional facts have no
+      derivative, and ordinal/ipsative tier instruments do not support
+      Euclidean kinematics.
+    rules_out_required: [P1, P2, P3]
+    ruled_out_by: [P1, P2, P3]
+    rules_out_status: rejected
+    reasoning: >-
+      A 2026-07-28 two-round adversarial deep-research stress test (Grok 4.3
+      + Gemini 3.1 Pro, independently run) tested the continuous-manifold
+      proposal and rejected it twice; in both rounds, unprompted, both
+      models independently proposed category theory / a typed
+      fork-merge-transfer algebra as the correct alternative for the
+      transaction side of the problem specifically — this paper's actual
+      proposal, not the one that was rejected.
+    body_sections: ["Theoretical Foundations (rival ruled out)"]
+
+  - id: C1
+    statement: >-
+      Boundary condition: the algebra applies to single-transaction
+      envelopes only (the intra-business pivot sits at, but does not cross,
+      this boundary — one bounded time-axis fork event, not an open-ended
+      iterative reallocation). It explicitly does not apply to repeated
+      within-firm resource reallocation over time.
+    body_sections: ["Boundary Conditions"]
+
+  - id: L1
+    statement: >-
+      This is a theoretical contribution; the cascade rule and admissibility
+      predicate had no end-to-end empirical support when the theory was
+      developed — the same limitation disposition as 2026ag's own P1-P7. The
+      pre-registered case-coding program (n=30 documented deals; three blinded
+      AI coders with majority-vote-or-flag, Fleiss' κ = .838; Fisher's exact on
+      cascade-conformance-vs-failure-pathway cells) has now been executed and
+      returns PRELIMINARY confirmatory support: across
+      the 26 H6-eligible cases the φ4→φ5 cell rejects independence (Fisher's
+      exact p = .009, Cramér's V = .799) and the aggregate cell likewise
+      (p = .009), meeting the pre-registered confirmation threshold, while the
+      φ5→φ6 cell rests on a single gap case and does not clear its corrected
+      threshold. The support is preliminary and fragile — three gap cases only,
+      wide confidence intervals, a single-case φ5→φ6 cell, a secondary
+      unmanaged-gap stratification that does not reject, and sensitivity to how
+      a cascade gap is operationalized — not settled evidence.
+    affects: [P5, P6, P7, P8]
+    body_sections: ["Discussion — Limitations"]
+
+  - id: L2
+    statement: >-
+      EXPLORATORY re-scoping of the n=26 empirical result to the reading the
+      data actually support (POST-HOC, NOT pre-registered — the registered test
+      in L1 tested sufficiency): a cascade gap is a NECESSARY condition for a
+      cascade-type integration failure, and cascade-conformance is a structural
+      safe harbor against it. In the H6-eligible corpus every failure carried a
+      cascade gap (necessity consistency P(gap | fail) = 1.00, 2/2) and every
+      conformant case avoided failure (safe harbor P(fail | no gap) = 0, 0/23;
+      exact binomial 95% upper bound .148), whereas a gap predicted failure only
+      two times in three (P(fail | gap) = .667) — so the SUFFICIENCY direction is
+      weak, and the significance reported in L1 is driven by specificity (23/23),
+      not sensitivity. Framed as Necessary Condition Analysis (Dul 2016) for the
+      dichotomous case, the CE-FDH ceiling reduces to the empty low-gap/high-
+      failure cell, giving an effect size d = .25 (medium band). Two honesty
+      constraints scope the claim: (a) all three gap cases were anchor deals the
+      algebra was developed against, and the blinded extension contributed zero
+      gap cases and zero failures, so the discriminating phenomenon is a
+      structural tail that a random large-deal frame under-samples; and (b) the
+      necessary-condition claim itself rests on only two failures — mitigated
+      because its evidence is the well-populated 23/23 safe-harbor cell rather
+      than the sparse gap cells. This necessary-condition reading becomes the
+      PRE-REGISTERED confirmatory hypothesis only for a future large-N
+      replication; on this corpus it is a data-motivated lens on the same data,
+      not settled evidence, and it ADDS to rather than replaces the registered
+      sufficiency result in L1.
+    conditions: >-
+      EXPLORATORY / post-hoc on the n=26 H6-eligible corpus; depends on the
+      cascade rule (P5), the admissibility predicate (P6), and the executed
+      case-coding program (L1).
+    antecedents: [P5, P6, L1]
+    falsifier: >-
+      A documented cascade-type integration failure (a Product-Process
+      disruption at φ_4→φ_5 or a Process-Organization fracture at φ_5→φ_6) that
+      occurred with NO cascade gap present — i.e., a failure at that boundary in
+      a cascade-conformant bundle.
+    evidence:
+      - type: citation
+        anchor: >-
+          Necessary Condition Analysis — the venue-legible method purpose-built
+          for an "X is necessary for Y" structure, with its own ceiling-zone
+          effect size, a better statistical fit for this result than
+          Fisher's-exact-for-sufficiency.
+        citation_keys: [dul-2016-necessary-condition-analysis]
+        citation_role: methodological_source
+      - type: analytic
+        anchor: >-
+          The necessary-condition + safe-harbor statistics (empty-cell binomial
+          safe-harbor test, necessity consistency, weak sufficiency, dichotomous
+          NCA ceiling) are computed by the committed analysis pipeline and
+          reproduce P(fail | no gap) = 0/23 (95% upper .148),
+          P(gap | fail) = 2/2, P(fail | gap) = 2/3, and d = .25; the pipeline's
+          fixture self-check asserts these on the study's own 2×2 shape.
+    body_sections: ["Discussion — Limitations"]
+
+# ============================================================================
+# Cross-paper engagement (explicit, per protocol)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026i
+    relationship: extends
+    spine_nodes: [P1, P2]
+  - paper_key: 2026ag
+    relationship: extends
+    spine_nodes: [P1, P6, P8]
+  - paper_key: 2026m
+    relationship: applies
+    spine_nodes: [SF1]
+
+# ============================================================================
+# External anchors — self-citation cap enforced at 3 (2026i, 2026ag, 2026m,
+# via corpus_precedents above); everything below is external, non-self.
+# Merged set: 7 anchors from the fresh restart (recent top-journal-vintage) +
+# 11 anchors from the old v0.2 memo (classic RBV/modular-systems/category-
+# theory/TCE), bringing self-citation share to ~3/21 (~14%), resolving the
+# old memo's flagged 44% share without abandoning either citation base.
+# ============================================================================
+external_anchors:
+  - citation_key: schilling-2000-toward-general-modular
+    role: theoretical_predecessor
+    spine_nodes: [P4, P5]
+  - citation_key: asencio-2024-boundary-transitions-dynamic
+    role: theoretical_predecessor
+    spine_nodes: [P4, P5]
+  - citation_key: mcclean-2025-dynamic-boundary-permeability
+    role: theoretical_predecessor
+    spine_nodes: [P4, P5]
+  - citation_key: raisch-2025-combining-human-artificial
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: chanda-2021-artificial-intelligence-data
+    role: contrast_case
+    spine_nodes: [P2]
+  - citation_key: wang-2009-dynamic-reorganization-mechanisms
+    role: methodological_source
+    spine_nodes: [P2]
+  - citation_key: wagner-2013-consolidation-interacting-bpel
+    role: methodological_source
+    spine_nodes: [P6]
+  - citation_key: grant-1996-toward-knowledgebased-theory
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: penrose-1959-theory-growth-firm
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: larsson-1999-integrating-strategic-organizational
+    role: motivating_problem
+    spine_nodes: [P5]
+  - citation_key: barney-1991-firm-resources-sustained
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: baldwin-2000-design-rules-power
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: sanchez-1996-modularity-flexibility-knowledge
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: colfer-2016-mirroring-hypothesis-theory-evidence
+    role: theoretical_predecessor
+    spine_nodes: [P4, P5]
+  - citation_key: henderson-1990-architectural-innovation-reconfiguration-existing
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: coase-1937-nature-firm-economica
+    role: contrast_case
+    spine_nodes: [SF1, P4]
+  - citation_key: williamson-1985-economic-institutions-capitalism
+    role: contrast_case
+    spine_nodes: [SF1, P4]
+  - citation_key: teece-2010-business-models-business
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: eilenberg-1945-general-theory-natural-equivalences
+    role: rival_ruled_out
+    spine_nodes: [P4, P8]
+  - citation_key: fong-2019-invitation-applied-category
+    role: rival_ruled_out
+    spine_nodes: [P4, P8]
+  - citation_key: haleblian-2009-taking-stock-what
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: cartwright-2006-thirty-years-mergers
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: graebner-2017-process-postmerger-integration
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: puranam-2007-what-they-know
+    role: contrast_case
+    spine_nodes: [SF1]
+  - citation_key: puranam-2009-integrating-acquired-capabilities
+    role: contrast_case
+    spine_nodes: [SF1]
+  - citation_key: zaheer-2013-synergy-sources-target
+    role: contrast_case
+    spine_nodes: [SF1]
+  - citation_key: zollo-2004-deliberate-learning-corporate
+    role: contrast_case
+    spine_nodes: [SF1]
+  - citation_key: karim-2006-modularity-organizational-structure
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: jacobides-2005-industry-change-vertical
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: karim-2000-path-dependent-path-breaking
+    role: motivating_problem
+    spine_nodes: [P5]
+  - citation_key: santos-2005-organizational-boundaries-theories
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  - citation_key: kogut-1996-what-firms-do
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  - citation_key: dierickx-1989-asset-stock-accumulation
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  # --- Stage S1 / Fork E addition (2026-07-29, necessary-condition reframe) ---
+  - citation_key: dul-2016-necessary-condition-analysis
+    role: methodological_source
+    spine_nodes: [L2]
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+
+# ============================================================================
+# Changelog — append-only
+# ============================================================================

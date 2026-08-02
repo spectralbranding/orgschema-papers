@@ -1,0 +1,108 @@
+{
+  "case_id": "E06",
+  "case": "H. J. Heinz Company / Berkshire Hathaway & 3G Capital (2013)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; asset retained, merged into Kraft Heinz ~25 months after close; combined-successor ~$15.4bn impairment at ~5.5yr horizon (mostly Kraft-side brands)",
+      "rationale": "Per section 2, this was a whole-company going-concern take-private in which the product franchise (T4), operating processes/manufacturing/R&D/supply chain (T5), and people/culture (T6) all transferred together intact, so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) structural mismatch existed at closing. Section 4 states there was no product-process disruption at the 2013 tier transfer (product and processes moved together intact) → p4_pathway=0, and no process-organization fracture, with operations and people moving together and new management installed → p5_pathway=0. The 2019 impairment is expressly attributed to the combined Kraft Heinz post-2015-merger successor and mainly Kraft-side brands, not the 2013 Heinz asset, so it does not code as a documented 2013-deal pathway."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "non-cash impairment losses of approximately $15.4 billion",
+      "rationale": "The dossier states that the product franchise, operating processes, and people all transferred together intact as a going concern, meaning no structural gaps existed at closing (gap_45=0, gap_56=0). At the 3-5 year horizon, the reshaped operating/cost processes under 3G Capital led to an erosion of brand value and a $15.4 billion impairment, indicating a product-process disruption (p4_pathway=1). No fracture between operations and the organization was documented (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; retained and merged into Kraft Heinz 2015 (~25 months)",
+      "rationale": "Section 2 states T4 product franchise and T5 operating processes transferred whole with the going concern; section 5 confirms whole-company take-private with all tiers moving together so no structural gap_45 or gap_56. Section 3 and section 4 explicitly state no product-process disruption or process-organization fracture at the 2013 transfer level (impairments occurred later at combined Kraft Heinz successor). Section 4 codes T1-archetype and T2-model as none documented at 2013 closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; asset retained, merged into Kraft Heinz ~25 months after close; combined-successor ~$15.4bn impairment at ~5.5yr horizon (mostly Kraft-side brands)\", \"rationale\": \"Per section 2, this was a whole-company going-concern take-private in which the product franchise (T4), operating processes/manufacturing/R&D/supply chain (T5), and people/culture (T6) all transferred together intact, so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) structural mismatch existed at closing. Section 4 states there was no product-process disruption at the 2013 tier transfer (product and processes moved together intact) \\u2192 p4_pathway=0, and no process-organization fracture, with operations and people moving together and new management installed \\u2192 p5_pathway=0. The 2019 impairment is expressly attributed to the combined Kraft Heinz post-2015-merger successor and mainly Kraft-side brands, not the 2013 Heinz asset, so it does not code as a documented 2013-deal pathway.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"non-cash impairment losses of approximately $15.4 billion\",\n  \"rationale\": \"The dossier states that the product franchise, operating processes, and people all transferred together intact as a going concern, meaning no structural gaps existed at closing (gap_45=0, gap_56=0). At the 3-5 year horizon, the reshaped operating/cost processes under 3G Capital led to an erosion of brand value and a $15.4 billion impairment, indicating a product-process disruption (p4_pathway=1). No fracture between operations and the organization was documented (p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; retained and merged into Kraft Heinz 2015 (~25 months)\",\n  \"rationale\": \"Section 2 states T4 product franchise and T5 operating processes transferred whole with the going concern; section 5 confirms whole-company take-private with all tiers moving together so no structural gap_45 or gap_56. Section 3 and section 4 explicitly state no product-process disruption or process-organization fracture at the 2013 transfer level (impairments occurred later at combined Kraft Heinz successor). Section 4 codes T1-archetype and T2-model as none documented at 2013 closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

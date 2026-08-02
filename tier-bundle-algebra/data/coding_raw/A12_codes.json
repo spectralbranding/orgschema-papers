@@ -1,0 +1,108 @@
+{
+  "case_id": "A12",
+  "case": "NYSE / Archipelago (2005-2006)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture or write-down; combined with Euronext ~13 months after close (Apr 2007)",
+      "rationale": "Per section 2, T4 (ArcaEx electronic platform, renamed NYSE Arca) and its T5 operating/trading technology transferred together with a stated aim of enhancing both markets' technology, so no product-vs-process mismatch at closing (gap_45=0). Section 2 shows T5 operations and T6 membership/ownership conversion proceeding together to close with no documented process-vs-organization misalignment (gap_56=0). Section 4 documents \"None documented\" for both the P4 product-process interface and the P5 process-organization interface at the 3-5yr horizon, so p4_pathway=0 and p5_pathway=0. The demutualization was the explicit and achieved purpose with the two exchange models treated as complementary (t1_archetype=0, t2_model=0)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture or write-down; expanded via Euronext combination ~13 months after close",
+      "rationale": "The dossier documents that the electronic platform (T4) and its trading technology (T5) transferred together, resulting in no structural gap (gap_45=0) and no subsequent product-process disruption (p4_pathway=0). Similarly, membership conversion and operations proceeded together to close without a process-organization mismatch (gap_56=0), and no post-deal fracture occurred at this interface (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture or write-down; expanded to Euronext 13 months later",
+      "rationale": "Section 2 states T4 (NYSE floor + ArcaEx) and T5 (floor auction + electronic trading technology) transferred together into NYSE Group with the explicit aim of enhancing both; section 4 confirms no P4 or P5 disruption documented at 3-5yr horizon. Section 2 also shows T5 and T6 (membership conversion to NYSE Group shares) moved in lockstep at closing with no structural mismatch noted. Section 5 confirms no transitional-services gap existed because this was a full combination into a single new parent."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture or write-down; combined with Euronext ~13 months after close (Apr 2007)\", \"rationale\": \"Per section 2, T4 (ArcaEx electronic platform, renamed NYSE Arca) and its T5 operating/trading technology transferred together with a stated aim of enhancing both markets' technology, so no product-vs-process mismatch at closing (gap_45=0). Section 2 shows T5 operations and T6 membership/ownership conversion proceeding together to close with no documented process-vs-organization misalignment (gap_56=0). Section 4 documents \\\"None documented\\\" for both the P4 product-process interface and the P5 process-organization interface at the 3-5yr horizon, so p4_pathway=0 and p5_pathway=0. The demutualization was the explicit and achieved purpose with the two exchange models treated as complementary (t1_archetype=0, t2_model=0).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture or write-down; expanded via Euronext combination ~13 months after close\",\n  \"rationale\": \"The dossier documents that the electronic platform (T4) and its trading technology (T5) transferred together, resulting in no structural gap (gap_45=0) and no subsequent product-process disruption (p4_pathway=0). Similarly, membership conversion and operations proceeded together to close without a process-organization mismatch (gap_56=0), and no post-deal fracture occurred at this interface (p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture or write-down; expanded to Euronext 13 months later\",\n  \"rationale\": \"Section 2 states T4 (NYSE floor + ArcaEx) and T5 (floor auction + electronic trading technology) transferred together into NYSE Group with the explicit aim of enhancing both; section 4 confirms no P4 or P5 disruption documented at 3-5yr horizon. Section 2 also shows T5 and T6 (membership conversion to NYSE Group shares) moved in lockstep at closing with no structural mismatch noted. Section 5 confirms no transitional-services gap existed because this was a full combination into a single new parent.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,108 @@
+{
+  "case_id": "A06",
+  "case": "AT&T / Lucent Technologies spin-out (1996)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "acquired by Alcatel after ~10 years of independence (Dec 1, 2006); peak market cap ~$258bn",
+      "rationale": "Section 2 documents that T4 product portfolio, T5 Western Electric manufacturing, and T6 workforce (~120k–130k, plus ~3/4 of Bell Labs staff) all transferred whole together into one self-standing entity, so no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0). Section 4 explicitly states P4 product-process disruption was \"none at separation\" and P5 process-organization fracture was \"none documented at the split; workforce and operations moved together,\" yielding p4_pathway=0 and p5_pathway=0. The later decline is attributed to industry-wide market collapse rather than a tier-transfer defect (t2_model=0), and no T1-archetype incoherence was documented."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "acquired by France's Alcatel on December 1, 2006",
+      "rationale": "The dossier explicitly states there was no product-process gap at separation, as product and manufacturing transferred together as a self-contained unit (gap_45=0). Similarly, workforce and operations moved together without documented fracture (gap_56=0). Post-deal, no disruption was documented at the product/process (p4_pathway=0) or process/organization (p5_pathway=0) interfaces; the company's later decline was driven by an industry-wide market collapse rather than structural transfer defects."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "acquired by Alcatel Dec 2006 (~10 years post-spin)",
+      "rationale": "Section 2 states T4 (product portfolio + Bell Labs) and T5 (Western Electric manufacturing) both transferred whole to the new entity, and T6 (120k-130k employees) transferred with them, so no structural gaps at closing. Section 4 explicitly codes P4 and P5 as none documented at separation, with later decline attributed to industry collapse rather than transfer defects. T1 is coded replace per the independent board and merchant-supplier mandate; T2 and T3 are swaps to the liberated model and new listed vehicle."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"acquired by Alcatel after ~10 years of independence (Dec 1, 2006); peak market cap ~$258bn\", \"rationale\": \"Section 2 documents that T4 product portfolio, T5 Western Electric manufacturing, and T6 workforce (~120k\\u2013130k, plus ~3/4 of Bell Labs staff) all transferred whole together into one self-standing entity, so no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0). Section 4 explicitly states P4 product-process disruption was \\\"none at separation\\\" and P5 process-organization fracture was \\\"none documented at the split; workforce and operations moved together,\\\" yielding p4_pathway=0 and p5_pathway=0. The later decline is attributed to industry-wide market collapse rather than a tier-transfer defect (t2_model=0), and no T1-archetype incoherence was documented.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"acquired by France's Alcatel on December 1, 2006\",\n  \"rationale\": \"The dossier explicitly states there was no product-process gap at separation, as product and manufacturing transferred together as a self-contained unit (gap_45=0). Similarly, workforce and operations moved together without documented fracture (gap_56=0). Post-deal, no disruption was documented at the product/process (p4_pathway=0) or process/organization (p5_pathway=0) interfaces; the company's later decline was driven by an industry-wide market collapse rather than structural transfer defects.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"acquired by Alcatel Dec 2006 (~10 years post-spin)\",\n  \"rationale\": \"Section 2 states T4 (product portfolio + Bell Labs) and T5 (Western Electric manufacturing) both transferred whole to the new entity, and T6 (120k-130k employees) transferred with them, so no structural gaps at closing. Section 4 explicitly codes P4 and P5 as none documented at separation, with later decline attributed to industry collapse rather than transfer defects. T1 is coded replace per the independent board and merchant-supplier mandate; T2 and T3 are swaps to the liberated model and new listed vehicle.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "swap",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

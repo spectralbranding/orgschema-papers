@@ -1,0 +1,108 @@
+{
+  "case_id": "E12",
+  "case": "Lorillard, Inc. / Reynolds American Inc. (2014-2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "contemporaneous antitrust divestiture to Imperial Sub ~$7.1bn at close; no later divestiture of retained Newport franchise documented",
+      "rationale": "Section 2 documents that T4 (Newport product franchise) transferred to RAI together with its manufacturing/distribution operations (T5) and workforce (T6), while the divested subset's product, process, and personnel all moved together to Imperial Sub — product and process moved coherently, so gap_45=0, and process moved with its organization, so gap_56=0. Section 4 states no P4 product-process disruption is documented and no P5 process-organization fracture is documented in sourced filings, so both p4_pathway and p5_pathway=0. T1/T2 channels also show no documented incoherence or model incompatibility (both same-core-model U.S. tobacco manufacturers). Since no structural gap was coded in B, gap_mitigated is NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "contemporaneous divestiture of ~$7.1 billion at close; no later divestiture of retained franchise documented",
+      "rationale": "The dossier states that 'the retained product franchise and its operations transferred together, while the divested subset's product and process moved together to Imperial Sub,' resulting in no structural product-process gap (gap_45 = 0). Furthermore, no process-organization mismatch is documented at the tier-transfer level (gap_56 = 0). Accordingly, there is no documented product-process disruption (p4_pathway = 0) or process-organization fracture (p5_pathway = 0) at the 3-5 year horizon."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no later divestiture; retained Newport franchise",
+      "rationale": "Section 2 states T4 Newport franchise and T5 operations transferred together to RAI (net of the Imperial carve-out subset that also moved intact); section 4 explicitly codes P4 and P5 as none documented. Section 5 notes the divestiture was absorbed by asset purchase/transfer/IP license agreements at closing, confirming no unmitigated structural gap at T4-T5 or T5-T6. T1 is coded replace per the explicit exit of Lorillard board control and installation of RAI imprint."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"contemporaneous antitrust divestiture to Imperial Sub ~$7.1bn at close; no later divestiture of retained Newport franchise documented\", \"rationale\": \"Section 2 documents that T4 (Newport product franchise) transferred to RAI together with its manufacturing/distribution operations (T5) and workforce (T6), while the divested subset's product, process, and personnel all moved together to Imperial Sub \\u2014 product and process moved coherently, so gap_45=0, and process moved with its organization, so gap_56=0. Section 4 states no P4 product-process disruption is documented and no P5 process-organization fracture is documented in sourced filings, so both p4_pathway and p5_pathway=0. T1/T2 channels also show no documented incoherence or model incompatibility (both same-core-model U.S. tobacco manufacturers). Since no structural gap was coded in B, gap_mitigated is NA.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"contemporaneous divestiture of ~$7.1 billion at close; no later divestiture of retained franchise documented\",\n\"rationale\": \"The dossier states that 'the retained product franchise and its operations transferred together, while the divested subset's product and process moved together to Imperial Sub,' resulting in no structural product-process gap (gap_45 = 0). Furthermore, no process-organization mismatch is documented at the tier-transfer level (gap_56 = 0). Accordingly, there is no documented product-process disruption (p4_pathway = 0) or process-organization fracture (p5_pathway = 0) at the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no later divestiture; retained Newport franchise\",\n  \"rationale\": \"Section 2 states T4 Newport franchise and T5 operations transferred together to RAI (net of the Imperial carve-out subset that also moved intact); section 4 explicitly codes P4 and P5 as none documented. Section 5 notes the divestiture was absorbed by asset purchase/transfer/IP license agreements at closing, confirming no unmitigated structural gap at T4-T5 or T5-T6. T1 is coded replace per the explicit exit of Lorillard board control and installation of RAI imprint.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

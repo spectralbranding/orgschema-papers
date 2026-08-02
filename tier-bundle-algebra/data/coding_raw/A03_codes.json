@@ -1,0 +1,108 @@
+{
+  "case_id": "A03",
+  "case": "3Com / Palm carve-out and spin-off (2000)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "yes",
+      "performance_metric": "divested via spin-off ~5 months after IPO; standalone Palm stock collapsed to ~$6.50 by June 2001",
+      "rationale": "gap_45=1 because at closing the product line (T4) carried forward whole while the operational processes (T5) depended on 3Com's centralized shared services—distribution, IT, sales, marketing, engineering—that had to be stood up independently (section 2 T5; section 4 P4), a documented product-vs-process mismatch. gap_56=0 because people and their converted equity moved coherently with the business (section 2 T6; section 4 P5 states no organization/process fracture). p4_pathway=1 because section 4 P4 documents the process-side dependency at separation plus the subsequent PalmSource/palmOne split separating software from hardware. p5_pathway=0 because section 4 P5 explicitly finds no organization/process fracture, with employees and equity transferring intact."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "yes",
+      "performance_metric": "trading around $6.50 by June 2001, the worst-performing PDA maker on the NASDAQ",
+      "rationale": "A gap_45 is coded because Palm's product line transferred whole, but its operational processes relied on 3Com's centralized shared services (IT, distribution, sales) which had to be stood up independently post-separation. This manifested as a p4_pathway disruption when the standalone company had to replace these services and later split its software and hardware divisions. No gap_56 or p5_pathway is coded, as the dossier notes 'employees and their equity moved with the business' with 'no direct evidence of an organization/process fracture'."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "yes",
+      "performance_metric": "Palm stock collapsed to ~$6.50 by June 2001; restructured 2003 (PalmSource/palmOne)",
+      "rationale": "gap_45=1 and p4_pathway=1 from T5 description (centralized 3Com services had to be stood up independently) plus P4 evidence line citing shared-service dependency and later PalmSource/palmOne split. gap_56=0 and p5_pathway=0 from T6 line (employees and equity options transferred with the business) and explicit P5 statement of no direct fracture evidence. gap_mitigated=yes from section 5 Master Separation Agreement and transitional shared-services bridge."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"p4_pathway\": \"1\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"yes\", \"performance_metric\": \"divested via spin-off ~5 months after IPO; standalone Palm stock collapsed to ~$6.50 by June 2001\", \"rationale\": \"gap_45=1 because at closing the product line (T4) carried forward whole while the operational processes (T5) depended on 3Com's centralized shared services\\u2014distribution, IT, sales, marketing, engineering\\u2014that had to be stood up independently (section 2 T5; section 4 P4), a documented product-vs-process mismatch. gap_56=0 because people and their converted equity moved coherently with the business (section 2 T6; section 4 P5 states no organization/process fracture). p4_pathway=1 because section 4 P4 documents the process-side dependency at separation plus the subsequent PalmSource/palmOne split separating software from hardware. p5_pathway=0 because section 4 P5 explicitly finds no organization/process fracture, with employees and equity transferring intact.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"performance_metric\": \"trading around $6.50 by June 2001, the worst-performing PDA maker on the NASDAQ\",\n  \"rationale\": \"A gap_45 is coded because Palm's product line transferred whole, but its operational processes relied on 3Com's centralized shared services (IT, distribution, sales) which had to be stood up independently post-separation. This manifested as a p4_pathway disruption when the standalone company had to replace these services and later split its software and hardware divisions. No gap_56 or p5_pathway is coded, as the dossier notes 'employees and their equity moved with the business' with 'no direct evidence of an organization/process fracture'.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"performance_metric\": \"Palm stock collapsed to ~$6.50 by June 2001; restructured 2003 (PalmSource/palmOne)\",\n  \"rationale\": \"gap_45=1 and p4_pathway=1 from T5 description (centralized 3Com services had to be stood up independently) plus P4 evidence line citing shared-service dependency and later PalmSource/palmOne split. gap_56=0 and p5_pathway=0 from T6 line (employees and equity options transferred with the business) and explicit P5 statement of no direct fracture evidence. gap_mitigated=yes from section 5 Master Separation Agreement and transitional shared-services bridge.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

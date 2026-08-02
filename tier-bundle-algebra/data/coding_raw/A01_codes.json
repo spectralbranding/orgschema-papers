@@ -1,0 +1,108 @@
+{
+  "case_id": "A01",
+  "case": "Daimler-Benz / Chrysler (1998)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "read-only",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "no",
+      "performance_metric": "divested 80.1% of Chrysler for $7.4bn after ~108 months",
+      "rationale": "gap_45=1: T4 (Chrysler product lines Chrysler/Dodge/Jeep/Plymouth) transferred whole (§2 T4) but the operational processes (§2 T5) largely stayed separate and were not integrated, a documented product-vs-process mismatch at closing. gap_56=1: processes stayed separate/were resisted while the organization saw a management purge and cultural clash (§2 T5, T6), a process-vs-organization mismatch. p4_pathway=1: §4 P4 documents planned platform-sharing between Chrysler product lines and Daimler manufacturing was resisted and not implemented. p5_pathway=1: §4 P5 documents the Stallkamp ouster and culture clash accompanying the failure to integrate operations."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "no",
+      "performance_metric": "divested 80.1% stake after ~108 months for $7.4 billion",
+      "rationale": "gap_45 is coded 0 because Chrysler's product lines and operational processes both transferred whole and remained together at closing. gap_56 is coded 1 because operations transferred fully while the organization experienced a partial transfer with a US management purge. p4_pathway is coded 1 due to documented resistance to planned platform-sharing between Chrysler products and Daimler manufacturing. p5_pathway is coded 1 because the management purge and culture clash fractured the integration of operations."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "partial",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "no",
+      "performance_metric": "divested 80.1% after ~108 months",
+      "rationale": "gap_45=1 and p4_pathway=1 from T4 (product lines transferred whole) vs T5 (platform-sharing resisted, processes stayed separate) in section 2 and P4 evidence in section 4. gap_56=1 and p5_pathway=1 from T5 (operations not integrated) vs T6 (Stallkamp purge, culture clash) in section 2 and P5 evidence in section 4. T1 replace and t1_archetype=1 from Schrempp takeover admission in section 2; t2_model=1 from volume vs premium separation in section 4."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"null\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"1\", \"t2_model\": \"1\", \"gap_mitigated\": \"no\", \"performance_metric\": \"divested 80.1% of Chrysler for $7.4bn after ~108 months\", \"rationale\": \"gap_45=1: T4 (Chrysler product lines Chrysler/Dodge/Jeep/Plymouth) transferred whole (\\u00a72 T4) but the operational processes (\\u00a72 T5) largely stayed separate and were not integrated, a documented product-vs-process mismatch at closing. gap_56=1: processes stayed separate/were resisted while the organization saw a management purge and cultural clash (\\u00a72 T5, T6), a process-vs-organization mismatch. p4_pathway=1: \\u00a74 P4 documents planned platform-sharing between Chrysler product lines and Daimler manufacturing was resisted and not implemented. p5_pathway=1: \\u00a74 P5 documents the Stallkamp ouster and culture clash accompanying the failure to integrate operations.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"performance_metric\": \"divested 80.1% stake after ~108 months for $7.4 billion\",\n  \"rationale\": \"gap_45 is coded 0 because Chrysler's product lines and operational processes both transferred whole and remained together at closing. gap_56 is coded 1 because operations transferred fully while the organization experienced a partial transfer with a US management purge. p4_pathway is coded 1 due to documented resistance to planned platform-sharing between Chrysler products and Daimler manufacturing. p5_pathway is coded 1 because the management purge and culture clash fractured the integration of operations.\"\n}",
+    "grok": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"partial\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"p4_pathway\": \"1\",\n\"p5_pathway\": \"1\",\n\"t1_archetype\": \"1\",\n\"t2_model\": \"1\",\n\"gap_mitigated\": \"no\",\n\"performance_metric\": \"divested 80.1% after ~108 months\",\n\"rationale\": \"gap_45=1 and p4_pathway=1 from T4 (product lines transferred whole) vs T5 (platform-sharing resisted, processes stayed separate) in section 2 and P4 evidence in section 4. gap_56=1 and p5_pathway=1 from T5 (operations not integrated) vs T6 (Stallkamp purge, culture clash) in section 2 and P5 evidence in section 4. T1 replace and t1_archetype=1 from Schrempp takeover admission in section 2; t2_model=1 from volume vs premium separation in section 4.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "read-only",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "null",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "p4_pathway": "1",
+    "p5_pathway": "1",
+    "t1_archetype": "1",
+    "t2_model": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

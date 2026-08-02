@@ -1,0 +1,91 @@
+{
+  "case_id": "A09",
+  "case": "Medtronic / Covidien merger and corporate inversion (2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "~$600M of targeted $850M synergies achieved by ~Aug 2017 (~30 months post-close); on track to $850M by FY2018",
+      "rationale": "Section 2 shows T4 (Covidien's product portfolio) and T5 (operational processes) both crossing the boundary and being integrated together to capture $850M synergies via combined supply-chain/manufacturing, so no product-vs-process mismatch at closing (gap_45=0). T5 process integration proceeded alongside T6 (combined ~85,000 people) as a full merger with a single leadership team, no documented process-vs-organization structural mismatch (gap_56=0). Section 3-4 document integration on plan (~$600M of ~$850M synergies by Aug 2017) with no product/process disruption (p4=0) and no process/organization fracture (p5=0). Business models were \"complementary rather than substitutive\" with limited overlap, and control consolidated under a single Ishrak-led team, so t1_archetype and t2_model are also 0."
+    },
+    "gemini": null,
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "Integration on plan; ~$600M of $850M synergies by Aug 2017 (~2.5 years)",
+      "rationale": "Section 2 states T4 product portfolio transferred whole and complementary while T5 processes were integrated for synergies under the same new parent; no structural mismatch at closing. Sections 3-4 explicitly document no P4 or P5 disruption at 3-5yr horizon, with synergies delivered on plan and models described as complementary."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"~$600M of targeted $850M synergies achieved by ~Aug 2017 (~30 months post-close); on track to $850M by FY2018\", \"rationale\": \"Section 2 shows T4 (Covidien's product portfolio) and T5 (operational processes) both crossing the boundary and being integrated together to capture $850M synergies via combined supply-chain/manufacturing, so no product-vs-process mismatch at closing (gap_45=0). T5 process integration proceeded alongside T6 (combined ~85,000 people) as a full merger with a single leadership team, no documented process-vs-organization structural mismatch (gap_56=0). Section 3-4 document integration on plan (~$600M of ~$850M synergies by Aug 2017) with no product/process disruption (p4=0) and no process/organization fracture (p5=0). Business models were \\\"complementary rather than substitutive\\\" with limited overlap, and control consolidated under a single Ishrak-led team, so t1_archetype and t2_model are also 0.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"generated ~$600 million of targeted $850 million synergies by Aug 2017\",\n\"rationale\": \"The dossier documents a full merger where Covidien's products, processes, and organization transferred entirely into the new combined entity (Medtronic plc), with no structural gaps at closing (gap_45=0, gap_56=0). Post-deal integration proceeded on plan with no documented disruption at the product/process interface (p4_pathway=0) or process/organization interface (p5_pathway=0).\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"Integration on plan; ~$600M of $850M synergies by Aug 2017 (~2.5 years)\",\n  \"rationale\": \"Section 2 states T4 product portfolio transferred whole and complementary while T5 processes were integrated for synergies under the same new parent; no structural mismatch at closing. Sections 3-4 explicitly document no P4 or P5 disruption at 3-5yr horizon, with synergies delivered on plan and models described as complementary.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

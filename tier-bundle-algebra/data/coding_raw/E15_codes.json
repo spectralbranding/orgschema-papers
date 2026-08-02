@@ -1,0 +1,108 @@
+{
+  "case_id": "E15",
+  "case": "Forest City Realty Trust / Brookfield Asset Management (2018)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; portfolio absorbed into Brookfield's real-estate operating business (take-private)",
+      "rationale": "gap_45=0: section 2 shows the income-producing real-estate portfolio (T4) and its property-operating processes (T5) both transferred together into Brookfield's real-estate operating platform, with no product-vs-process mismatch documented. gap_56=uncertain: T5 processes transferred, but T6 people/culture transfer detail is marked [UNVERIFIED] in section 2, so process-vs-organization alignment cannot be determined. p4_pathway=0: section 4 explicitly states no product-process disruption documented, product and processes moved together. p5_pathway=0: section 4 states no process-organization fracture documented in sourced materials."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "not documented",
+      "rationale": "The dossier confirms that the real-estate portfolio (T4) and its property-operating processes (T5) transferred together into Brookfield's operating platform, resulting in no gap_45 and no documented p4_pathway disruption. However, details regarding the transfer of Forest City's organization and people (T6) are not located in the sourced materials, making gap_56 uncertain. Consequently, there is no documented evidence of a p5_pathway fracture."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "gap_45=0 and p4_pathway=0 from section 2 T4/T5 and section 4 P4 (portfolio and operating processes transferred together into Brookfield platform, no disruption documented). gap_56=uncertain and p5_pathway=0 from section 2 T6 (transfer detail unverified) and section 4 P5 (no fracture documented). Codes drawn strictly from closing structure in section 2 and 3-5yr outcome in sections 3-4."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"uncertain\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"uncertain\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; portfolio absorbed into Brookfield's real-estate operating business (take-private)\", \"rationale\": \"gap_45=0: section 2 shows the income-producing real-estate portfolio (T4) and its property-operating processes (T5) both transferred together into Brookfield's real-estate operating platform, with no product-vs-process mismatch documented. gap_56=uncertain: T5 processes transferred, but T6 people/culture transfer detail is marked [UNVERIFIED] in section 2, so process-vs-organization alignment cannot be determined. p4_pathway=0: section 4 explicitly states no product-process disruption documented, product and processes moved together. p5_pathway=0: section 4 states no process-organization fracture documented in sourced materials.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"uncertain\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The dossier confirms that the real-estate portfolio (T4) and its property-operating processes (T5) transferred together into Brookfield's operating platform, resulting in no gap_45 and no documented p4_pathway disruption. However, details regarding the transfer of Forest City's organization and people (T6) are not located in the sourced materials, making gap_56 uncertain. Consequently, there is no documented evidence of a p5_pathway fracture.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"uncertain\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"gap_45=0 and p4_pathway=0 from section 2 T4/T5 and section 4 P4 (portfolio and operating processes transferred together into Brookfield platform, no disruption documented). gap_56=uncertain and p5_pathway=0 from section 2 T6 (transfer detail unverified) and section 4 P5 (no fracture documented). Codes drawn strictly from closing structure in section 2 and 3-5yr outcome in sections 3-4.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "uncertain",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

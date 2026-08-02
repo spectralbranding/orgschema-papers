@@ -1,0 +1,108 @@
+{
+  "case_id": "E11",
+  "case": "Omnicare, Inc. / CVS Health (2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "~$3.9bn LTC goodwill impairment ~34 months after close; no divestiture",
+      "rationale": "Section 2 documents that T4 product franchises, T5 pharmacy-fulfillment/distribution operations, and T6 workforce all transferred together with the surviving entity as a going concern, so there is no product-vs-process structural mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0). Section 4 explicitly states P4 product-process disruption and P5 process-organization fracture are \"None documented,\" so both are coded 0. The sole documented adverse outcome (Section 3/4) is a ~$3.9bn LTC-reporting-unit goodwill impairment characterized as a value/model-level underperformance, supporting t2_model=1; T1 archetype incoherence is explicitly \"None documented\" (0)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "~$3.9 billion pre-tax goodwill impairment charge",
+      "rationale": "The dossier documents that Omnicare was acquired as a whole entity via a reverse triangular merger, meaning the product (T4), processes (T5), and organization (T6) all transferred together as a going concern without structural gaps (gap_45=0, gap_56=0). Consequently, there is no documented evidence of integration disruption at the product/process (p4_pathway=0) or process/organization (p5_pathway=0) interfaces."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "~$3.9 billion goodwill impairment charge (LTC reporting unit)",
+      "rationale": "gap_45=0 and gap_56=0 per section 2 lines stating T4 product franchises, T5 operations, and T6 workforce all transferred together with the surviving entity as a going concern. p4_pathway=0 and p5_pathway=0 per section 4 lines explicitly stating 'None documented as a discrete tier-transfer event' for both Product-Process and Process-Organization interfaces."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"1\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"~$3.9bn LTC goodwill impairment ~34 months after close; no divestiture\", \"rationale\": \"Section 2 documents that T4 product franchises, T5 pharmacy-fulfillment/distribution operations, and T6 workforce all transferred together with the surviving entity as a going concern, so there is no product-vs-process structural mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0). Section 4 explicitly states P4 product-process disruption and P5 process-organization fracture are \\\"None documented,\\\" so both are coded 0. The sole documented adverse outcome (Section 3/4) is a ~$3.9bn LTC-reporting-unit goodwill impairment characterized as a value/model-level underperformance, supporting t2_model=1; T1 archetype incoherence is explicitly \\\"None documented\\\" (0).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"~$3.9 billion pre-tax goodwill impairment charge\",\n  \"rationale\": \"The dossier documents that Omnicare was acquired as a whole entity via a reverse triangular merger, meaning the product (T4), processes (T5), and organization (T6) all transferred together as a going concern without structural gaps (gap_45=0, gap_56=0). Consequently, there is no documented evidence of integration disruption at the product/process (p4_pathway=0) or process/organization (p5_pathway=0) interfaces.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"~$3.9 billion goodwill impairment charge (LTC reporting unit)\",\n  \"rationale\": \"gap_45=0 and gap_56=0 per section 2 lines stating T4 product franchises, T5 operations, and T6 workforce all transferred together with the surviving entity as a going concern. p4_pathway=0 and p5_pathway=0 per section 4 lines explicitly stating 'None documented as a discrete tier-transfer event' for both Product-Process and Process-Organization interfaces.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

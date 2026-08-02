@@ -1,0 +1,108 @@
+{
+  "case_id": "E02",
+  "case": "Altera Corporation / Intel Corporation (2015)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "divested 51% stake ~9.3 years post-close at ~$8.75bn valuation vs ~$16.7bn paid (roughly half)",
+      "rationale": "Section 2 documents a whole-entity statutory merger in which T4 (FPGA/PLD product families and customers) and T5 (design/development operations, leveraging Intel manufacturing) transferred together, and T6 (people) transferred and were operated as a business unit — so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) structural mismatch at closing. Section 4 states P4 product-process disruption was \"not documented as a discrete tier-transfer fracture\" and P5 process-organization fracture was \"None documented,\" so both pathways are coded 0. The only concretely documented adverse outcome (section 3-4) is the valuation decline realized at divestiture, with no primary source attributing a specific tier-interface fracture."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "divested 51% majority stake after ~9.3 years at ~$8.75bn valuation (vs ~$16.7bn paid)",
+      "rationale": "The transaction was a whole-entity statutory merger where Altera's products, processes, and organization transferred together into Intel, so there were no structural gaps at closing (gap_45=0, gap_56=0). While the business was eventually spun out and sold at a lower valuation, the dossier does not document specific product-process (p4) or process-organization (p5) integration fractures."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "sold 51% stake ~112 months post-close at ~52% of original value",
+      "rationale": "gap_45=0 and gap_56=0 because section 2 states T4, T5 and T6 all transferred whole (FPGA products, design operations and people moved together into Intel PSG). p4_pathway=0 because section 4 explicitly states 'Not documented as a discrete tier-transfer fracture' for T4-T5; p5_pathway=0 because section 4 states 'None documented' for T5-T6."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"divested 51% stake ~9.3 years post-close at ~$8.75bn valuation vs ~$16.7bn paid (roughly half)\", \"rationale\": \"Section 2 documents a whole-entity statutory merger in which T4 (FPGA/PLD product families and customers) and T5 (design/development operations, leveraging Intel manufacturing) transferred together, and T6 (people) transferred and were operated as a business unit \\u2014 so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) structural mismatch at closing. Section 4 states P4 product-process disruption was \\\"not documented as a discrete tier-transfer fracture\\\" and P5 process-organization fracture was \\\"None documented,\\\" so both pathways are coded 0. The only concretely documented adverse outcome (section 3-4) is the valuation decline realized at divestiture, with no primary source attributing a specific tier-interface fracture.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"divested 51% majority stake after ~9.3 years at ~$8.75bn valuation (vs ~$16.7bn paid)\",\n\"rationale\": \"The transaction was a whole-entity statutory merger where Altera's products, processes, and organization transferred together into Intel, so there were no structural gaps at closing (gap_45=0, gap_56=0). While the business was eventually spun out and sold at a lower valuation, the dossier does not document specific product-process (p4) or process-organization (p5) integration fractures.\"\n}",
+    "grok": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"sold 51% stake ~112 months post-close at ~52% of original value\",\n\"rationale\": \"gap_45=0 and gap_56=0 because section 2 states T4, T5 and T6 all transferred whole (FPGA products, design operations and people moved together into Intel PSG). p4_pathway=0 because section 4 explicitly states 'Not documented as a discrete tier-transfer fracture' for T4-T5; p5_pathway=0 because section 4 states 'None documented' for T5-T6.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,49 @@
+# ONTOLOGY.yaml module - tier-bundle-algebra
+#
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py. Bootstrapped 2026-06-13 from per-paper term
+# extraction; definitions paraphrase each paper's own definitional text.
+
+paper_key: tier-bundle-algebra
+schema_version: 0.1
+
+owns:
+  - term_key: tier-bundle-algebra
+    label: "Tier-bundle algebra"
+    canonical_form: "tier-bundle algebra"
+    definition: "A typed-fork-operation formalism over the six-tier acquisition-target ontology in which each named M&A transaction type decomposes into a signature bundle of fork operations across the seller's tier graph."
+    first_section: "Abstract / Introduction"
+  - term_key: tier-fork-operation
+    label: "Tier-fork operation"
+    canonical_form: "tier-fork operation"
+    definition: "A typed transfer of a single Tier-n record from a seller's tier graph to a buyer's tier graph under a direction tag, well-typed only when source and target share the tier index."
+    first_section: "Section 3 — Fork Operations and Tier-Bundles (Definition 2)"
+  - term_key: tier-bundle
+    label: "Tier-bundle"
+    canonical_form: "tier-bundle"
+    definition: "An ordered set of tier-fork operations executed under one transaction envelope, whose signature individuates a named M&A deal type modulo cardinality."
+    first_section: "Section 3 — Fork Operations and Tier-Bundles (Definition 3)"
+  - term_key: cascade-rule
+    label: "Fork cascade rule"
+    canonical_form: "cascade rule"
+    definition: "The rule that a tier fork propagates asymmetrically along the service hierarchy (upward-implying but not downward-implying), so a Tier-4 fork induces a Tier-6 fork along the same modular boundary but not conversely."
+    first_section: "Section 4 — Cascade rule"
+  - term_key: admissibility-predicate
+    label: "Bundle admissibility predicate"
+    canonical_form: "admissibility predicate"
+    definition: "A structural predicate that rejects a tier-bundle incompatible with the seller's tier-collapse state on structural rather than legal grounds."
+    first_section: "Section 5 — Admissibility predicate"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+
+refines: []
+

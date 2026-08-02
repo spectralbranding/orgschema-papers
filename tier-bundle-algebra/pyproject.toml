@@ -1,0 +1,25 @@
+[project]
+name = "tier-bundle-algebra"
+version = "1.0.0"
+description = "A fork-operation formalism over the six-tier acquisition-target ontology, with a pre-registered n=30 empirical anchor."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "Dmitry Zharnikov", email = "dmitry@spectralbranding.com" }]
+keywords = ["modularity", "mergers and acquisitions", "formal organization theory", "tier ontology"]
+dependencies = ["numpy>=2.0", "scipy>=1.13", "pyyaml>=6.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/spectralbranding/orgschema-papers/tree/main/tier-bundle-algebra"
+"Zenodo" = "https://doi.org/10.5281/zenodo.21756077"
+
+[tool.uv]
+dev-dependencies = ["pytest>=8.0", "ruff>=0.5", "mypy>=1.10"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

@@ -1,0 +1,108 @@
+{
+  "case_id": "A10",
+  "case": "elBulli restaurant closure (Ferran Adrià) (2011)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "terminate",
+      "sigma_T3": "swap",
+      "sigma_T4": "read-only",
+      "sigma_T5": "terminate",
+      "sigma_T6": "1-1",
+      "collapse_state": "T1=T4",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "no transaction; going concern closed and repurposed into foundation, still in existence ~12 years later (museum opened 15 June 2023)",
+      "rationale": "gap_45=0: no ownership boundary was crossed; per §2 the product (dining experience, T4) and its operating processes (T5) were deliberately discontinued together, not split across a transfer. gap_56=0: per §2/§4-P5 the operating/creative processes and the organization/people (Adrià, Soler, Albert Adrià) moved together into the foundation under the same leaders, no process-vs-organization mismatch. p4_pathway=0: §4-P4 documents no product-process disruption since there was no transfer, product and process ended in tandem. p5_pathway=0: §4-P5 states none — organization and creative process moved together into the foundation. t1_archetype=1 and t2_model=1 are the operative non-cascade channels documented in §4/§6 (founder-identity closure and structurally loss-making model)."
+    },
+    "gemini": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "terminate",
+      "sigma_T3": "1-1",
+      "sigma_T4": "terminate",
+      "sigma_T5": "terminate",
+      "sigma_T6": "1-1",
+      "collapse_state": "T1=T4",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "organization is still in existence roughly 12 years after the restaurant closed",
+      "rationale": "The dossier states that the restaurant was voluntarily closed rather than sold, meaning the product and its operating processes were deliberately discontinued together without crossing an ownership boundary (gap_45 = 0). Similarly, the organization and its underlying creative process moved together into the foundation under the same leaders, avoiding any process-organization mismatch (gap_56 = 0). Because there was no transfer, there were no post-transfer integration failures at either the product-process interface (p4_pathway = 0) or the process-organization interface (p5_pathway = 0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "terminate",
+      "sigma_T3": "swap",
+      "sigma_T4": "terminate",
+      "sigma_T5": "partial",
+      "sigma_T6": "null",
+      "collapse_state": "T1=T4",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "still in existence ~12 years post-closure (foundation + museum)",
+      "rationale": "T1 coded continue from section 2 line 1 (retained by same principals, 'transforming itself'). gap_45/56 = 0 and p4/p5 = 0 from section 5 (no transfer, no counterparty, no documented fracture). t1_archetype = 1 from section 4 (Adrià's creative-limit rationale) and section 6 (T1=T4 fusion). t2_model = 1 from section 4 (loss-making commercial model)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"terminate\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"terminate\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"T1=T4\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"1\", \"t2_model\": \"1\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no transaction; going concern closed and repurposed into foundation, still in existence ~12 years later (museum opened 15 June 2023)\", \"rationale\": \"gap_45=0: no ownership boundary was crossed; per \\u00a72 the product (dining experience, T4) and its operating processes (T5) were deliberately discontinued together, not split across a transfer. gap_56=0: per \\u00a72/\\u00a74-P5 the operating/creative processes and the organization/people (Adri\\u00e0, Soler, Albert Adri\\u00e0) moved together into the foundation under the same leaders, no process-vs-organization mismatch. p4_pathway=0: \\u00a74-P4 documents no product-process disruption since there was no transfer, product and process ended in tandem. p5_pathway=0: \\u00a74-P5 states none \\u2014 organization and creative process moved together into the foundation. t1_archetype=1 and t2_model=1 are the operative non-cascade channels documented in \\u00a74/\\u00a76 (founder-identity closure and structurally loss-making model).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"reconstruct\",\n  \"sigma_T2\": \"terminate\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"terminate\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"T1=T4\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"organization is still in existence roughly 12 years after the restaurant closed\",\n  \"rationale\": \"The dossier states that the restaurant was voluntarily closed rather than sold, meaning the product and its operating processes were deliberately discontinued together without crossing an ownership boundary (gap_45 = 0). Similarly, the organization and its underlying creative process moved together into the foundation under the same leaders, avoiding any process-organization mismatch (gap_56 = 0). Because there was no transfer, there were no post-transfer integration failures at either the product-process interface (p4_pathway = 0) or the process-organization interface (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"terminate\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"terminate\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"T1=T4\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"still in existence ~12 years post-closure (foundation + museum)\",\n  \"rationale\": \"T1 coded continue from section 2 line 1 (retained by same principals, 'transforming itself'). gap_45/56 = 0 and p4/p5 = 0 from section 5 (no transfer, no counterparty, no documented fracture). t1_archetype = 1 from section 4 (Adrià's creative-limit rationale) and section 6 (T1=T4 fusion). t2_model = 1 from section 4 (loss-making commercial model).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "reconstruct",
+    "sigma_T2": "terminate",
+    "sigma_T3": "swap",
+    "sigma_T4": "terminate",
+    "sigma_T5": "terminate",
+    "sigma_T6": "1-1",
+    "collapse_state": "T1=T4",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "1",
+    "t2_model": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}
