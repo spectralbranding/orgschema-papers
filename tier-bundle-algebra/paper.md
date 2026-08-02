@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 Concept DOI: [10.5281/zenodo.21756077](https://doi.org/10.5281/zenodo.21756077)
 
-Working Paper v1.0.0 – July 2026
+Working Paper v1.0.0 – August 2026
 
 ## Abstract
 
@@ -170,7 +170,7 @@ Stated tersely: $\kappa$ is upward-implying along the service hierarchy and down
 
 Two observations are critical for the taxonomy developed below. First, $\kappa$-violation is possible because real transactions can include forks that violate the cascade — the seller transfers Tier 4 but not Tier 5, producing a structurally incoherent deal expected to exhibit elevated failure rates. This is precisely the modal roll-up practice that [@larsson-1999-integrating-strategic-organizational] identify, in their case-survey methodology, as the dominant predictor of synergy failure: a cascade gap at $\varphi_4 \to \varphi_5$ is a Product-Process disruption surfaced compositionally; a cascade gap at $\varphi_5 \to \varphi_6$ is a Process-Organization fracture. [@zaheer-2013-synergy-sources-target]'s survey evidence on the tension between target autonomy and integration after acquisition is a second, independent anchor for the same directional claim: integration approach, not merely deal type, predicts outcome, consistent with the cascade rule's distinction between conformant and non-conformant bundles rather than a flat deal-type effect. [@zollo-2004-deliberate-learning-corporate]'s finding that a deliberate, codified integration capability — not deal experience alone — predicts post-acquisition performance further supports treating cascade-conformance as a property of how a bundle is executed, not merely of which deal type it instantiates. Second, $\kappa$ is conditional on the seller's collapse state: under $T_1 \equiv T_4$ the $\varphi_4 \to \varphi_5$ cascade cannot be executed legally, since $\varphi_4$ itself is inadmissible without a non-conveyable Tier-1 co-transfer, so the cascade conditional collapses to the admissibility predicate of the next section.
 
-```mermaid
+```{.mermaid width=50%}
 flowchart TB
     T4["T4 Product"]
     T5["T5 Process"]
@@ -206,34 +206,18 @@ The rules above share a unifying structure: under any collapse state $T_1 \equiv
 
 ***Two-Tier Candidate Generalizations.*** Two further collapse pairs are candidate generalizations, engaged here at narrative depth only. $T_1 \equiv T_2$ — a business-model purist whose Model is itself the Intent — would predict $\alpha = \text{false}$ for any bundle containing $\varphi_2$; empirical anchoring is left to future work. $T_1 \equiv T_6$ — a culture-bound founder whose Organization is the Intent — would predict $\alpha = \text{false}$ for any bundle containing $\varphi_6$ at non-trivial direction; empirical anchoring is likewise left to future work. The two collapses with empirical anchoring in the parent ontology, $T_1 \equiv T_4$ and $T_1 \equiv T_3$, are sufficient for the present development.
 
-```mermaid
-flowchart TB
-    subgraph S0["S = none (modal)<br/>alpha(B, none) = true for all bundles satisfying kappa"]
-        N1["T1 separate"]
-        N4["T4"]
-        N3["T3"]
-    end
-    subgraph S14["S = T1 = T4 (Domain Craftsman / Family Steward / Mission Founder)<br/>alpha(B, T1=T4) = false whenever phi_4 is in B"]
-        C14["T1 = T4<br/>fused vertex; identity attaches to Product"]
-        C14a["T3"]
-        C14b["T5"]
-        C14c["T6"]
-    end
-    subgraph S13["S = T1 = T3 (sole-proprietor across jurisdictions)<br/>alpha(B, T1=T3) = false whenever phi_3 is in B, except direction = terminate"]
-        C13["T1 = T3<br/>fused vertex; legal subject is the natural person"]
-        C13a["T4"]
-        C13b["T5"]
-    end
-    subgraph S134["S = T1 = T3 = T4 (sole-proprietor craftsman)<br/>alpha(B, T1=T3=T4) = false whenever phi_3 or phi_4 is in B<br/>only admissible operation: full terminate + reconstruct"]
-        C134["T1 = T3 = T4<br/>triple-fused vertex"]
-        C134a["T5"]
-        C134b["T6"]
-    end
+```{.mermaid width=95%}
+flowchart LR
+    S0["<b>S = none</b><br/>(modal)<br/>---<br/>alpha = true for every<br/>kappa-satisfying bundle"]
+    S14["<b>S = T1 = T4</b><br/>Domain Craftsman<br/>---<br/>alpha = false<br/>if phi_4 in B"]
+    S13["<b>S = T1 = T3</b><br/>sole-proprietor<br/>---<br/>alpha = false if phi_3 in B<br/>(except terminate)"]
+    S134["<b>S = T1 = T3 = T4</b><br/>craftsman<br/>---<br/>alpha = false if phi_3<br/>or phi_4 in B;<br/>only terminate + reconstruct"]
+    S0 --> S14 --> S13 --> S134
 ```
 
 **Figure 3.** Admissibility predicate $\alpha(\mathcal{B}, S)$ across collapse states. Each collapse state fuses Tier 1 with one or more lower tiers via identification, propagating Tier 1's non-conveyability into the fused tier or tiers.
 
-The four panels of Figure 3 are arranged top to bottom by increasing collapse degree; each progressively more fused vertex represents a progressively narrower admissible bundle space. The modal share-sale case sits at $S = \text{none}$; a documented founder-identity closure, engaged further in Worked Examples below, illustrates the $S = T_1 \equiv T_4$ panel directly, with the $T_1 \equiv T_3 \equiv T_4$ triple-collapse retained as a theoretical construct pending a clean single-proprietor anchor. The $T_1 \equiv T_2$ and $T_1 \equiv T_6$ candidates below extend the figure to additional panels if future case work anchors them.
+The four panels of Figure 3 are arranged left to right by increasing collapse degree; each progressively more fused vertex represents a progressively narrower admissible bundle space. The modal share-sale case sits at $S = \text{none}$; a documented founder-identity closure, engaged further in Worked Examples below, illustrates the $S = T_1 \equiv T_4$ panel directly, with the $T_1 \equiv T_3 \equiv T_4$ triple-collapse retained as a theoretical construct pending a clean single-proprietor anchor. The $T_1 \equiv T_2$ and $T_1 \equiv T_6$ candidates below extend the figure to additional panels if future case work anchors them.
 
 ***Multi-Tier Collapses.*** A further generalization covers cases where Tier 1 is fused to two or more tiers simultaneously. The canonical case is $T_1 \equiv T_3 \equiv T_4$ — the sole-proprietor craftsman: the legal subject is the natural person ($T_1 \equiv T_3$), and the Product specification is the principal's identity ($T_1 \equiv T_4$). Empirically this is the small-craftsman business: a registered sole proprietor whose Product reputation is identified with the named principal. Under $T_1 \equiv T_3 \equiv T_4$ the admissibility predicate rejects bundles containing $\varphi_3$ or $\varphi_4$ at any non-trivial direction; the only admissible operation is full termination of Tier 1 followed by reconstruction at all three collapsed tiers under a fresh principal. This case is empirically distinct from each component collapse: the wind-down-and-reconstruct path of $T_1 \equiv T_3$ alone produces a fresh Tier-4 specification with continuity at the customer-acceptance layer, while the wind-down-and-reconstruct path of $T_1 \equiv T_3 \equiv T_4$ produces a structurally fresh business at every tier, because the prior customer base was buying the prior principal's identity, not the function. Additional candidate multi-tier collapses — $T_1 \equiv T_2 \equiv T_4$ (a founder whose value-flow logic is itself the Product) and $T_1 \equiv T_5 \equiv T_6$ (a founder whose Process methodology is identified with a named team) — are admissible under the algebra and are engaged here as exploratory extensions only, reserved for future case-based engagement.
 
