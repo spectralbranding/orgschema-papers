@@ -1,0 +1,108 @@
+{
+  "case_id": "A08",
+  "case": "Netflix DVD-to-streaming pivot and Qwikster reversal (2007-2011)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "terminate",
+      "sigma_T3": "null",
+      "sigma_T4": "terminate",
+      "sigma_T5": "terminate",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "split reversed ~23 days after announcement; ~1 million subscribers lost; >50% share-price decline (July–Oct 2011)",
+      "rationale": "This is an intra-firm pivot with no ownership-boundary crossing (§1, §7); the planned split of product (T4) and processes/websites (T5) was cancelled before launch (\"no Qwikster,\" §2), so neither crossed any boundary — gap_45=0 and gap_56=0 (T6 people stayed within one firm and never separated, §2/§4-P5). The product/process disruption was only a hypothetical of the abandoned plan, and §4-P5 explicitly states \"No ownership-crossing fracture; the reorganization stayed within one firm and was undone before launch,\" so p4_pathway=0 and p5_pathway=0 at the documented outcome. Separately, §4 documents leadership strategic-intent error (Hastings' acknowledgment of poor communication) → t1_archetype=1, and customer rejection of the unbundled two-service value logic → t2_model=1."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": ">50% share-price decline and ~1 million subscriber loss",
+      "rationale": "The dossier explicitly notes no ownership boundary was crossed, meaning no structural gaps at closing occurred (gap_45=0, gap_56=0). However, the attempted internal split caused documented product-process disruption (p4_pathway=1) due to customer confusion over managing two separate websites, leading to the reversal of the plan."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "uncertain",
+      "gap_56": "uncertain",
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "1",
+      "gap_mitigated": "NA",
+      "performance_metric": "split reversed ~23 days after announcement; ~1M subscribers lost, shares lost >50% value",
+      "rationale": "Dossier section 2 shows no ownership boundary crossed and T3 null (no Qwikster entity launched). Section 4 documents P4 product-process disruption via the two-website plan that caused customer confusion and reversal. P5 is absent (no ownership-crossing fracture). T1 and T2 non-cascade channels are both documented as leadership/model errors."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"terminate\", \"sigma_T3\": \"null\", \"sigma_T4\": \"terminate\", \"sigma_T5\": \"terminate\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"1\", \"t2_model\": \"1\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"split reversed ~23 days after announcement; ~1 million subscribers lost; >50% share-price decline (July\\u2013Oct 2011)\", \"rationale\": \"This is an intra-firm pivot with no ownership-boundary crossing (\\u00a71, \\u00a77); the planned split of product (T4) and processes/websites (T5) was cancelled before launch (\\\"no Qwikster,\\\" \\u00a72), so neither crossed any boundary \\u2014 gap_45=0 and gap_56=0 (T6 people stayed within one firm and never separated, \\u00a72/\\u00a74-P5). The product/process disruption was only a hypothetical of the abandoned plan, and \\u00a74-P5 explicitly states \\\"No ownership-crossing fracture; the reorganization stayed within one firm and was undone before launch,\\\" so p4_pathway=0 and p5_pathway=0 at the documented outcome. Separately, \\u00a74 documents leadership strategic-intent error (Hastings' acknowledgment of poor communication) \\u2192 t1_archetype=1, and customer rejection of the unbundled two-service value logic \\u2192 t2_model=1.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \">50% share-price decline and ~1 million subscriber loss\",\n  \"rationale\": \"The dossier explicitly notes no ownership boundary was crossed, meaning no structural gaps at closing occurred (gap_45=0, gap_56=0). However, the attempted internal split caused documented product-process disruption (p4_pathway=1) due to customer confusion over managing two separate websites, leading to the reversal of the plan.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"uncertain\",\n  \"gap_56\": \"uncertain\",\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"1\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"split reversed ~23 days after announcement; ~1M subscribers lost, shares lost >50% value\",\n  \"rationale\": \"Dossier section 2 shows no ownership boundary crossed and T3 null (no Qwikster entity launched). Section 4 documents P4 product-process disruption via the two-website plan that caused customer confusion and reversal. P5 is absent (no ownership-crossing fracture). T1 and T2 non-cascade channels are both documented as leadership/model errors.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "null",
+    "sigma_T3": "null",
+    "sigma_T4": "null",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "1",
+    "t2_model": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

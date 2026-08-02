@@ -1,0 +1,108 @@
+{
+  "case_id": "A02",
+  "case": "Barclays / Lehman Brothers North American operations (2008)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; businesses retained and integrated into Barclays Capital",
+      "rationale": "Section 2 documents that the customer-facing franchises (T4: FI/equities sales, trading, research, IB) transferred together with their supporting operating infrastructure — the 745 Seventh Avenue HQ and two NJ data centres (T5) — and ~10,000 employees (T6) moved into Barclays Capital as a going concern, so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) mismatch is documented at closing. Section 4 explicitly records \"None documented\" for P4 (product-process) and P5 (process-organization), with product franchises, infrastructure and staff transferring together and Barclays intending rapid integration, driving p4_pathway=0 and p5_pathway=0. The principal post-deal controversy (Section 3-4) was legal/valuation (\"$11bn windfall\" litigation), not an operational integration failure."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "No divestiture — the acquired businesses were retained and integrated into Barclays Capital.",
+      "rationale": "The dossier documents that the North American product franchises (T4), supporting operating infrastructure including HQ and data centres (T5), and approximately 10,000 employees (T6) transferred together as a going concern. No structural gaps between product, process, and organization were documented at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0), with the businesses successfully integrated into Barclays Capital."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained and integrated",
+      "rationale": "gap_45 and gap_56 coded 0 because section 2 states T4 product franchises, T5 infrastructure (HQ, data centres) and T6 staff transferred together as a going concern under the Section 363 sale. p4_pathway and p5_pathway coded 0 per section 4 explicit statements that no product-process or process-organization disruption was documented at the 3-5 year horizon and that the businesses were retained and integrated into Barclays Capital."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; businesses retained and integrated into Barclays Capital\", \"rationale\": \"Section 2 documents that the customer-facing franchises (T4: FI/equities sales, trading, research, IB) transferred together with their supporting operating infrastructure \\u2014 the 745 Seventh Avenue HQ and two NJ data centres (T5) \\u2014 and ~10,000 employees (T6) moved into Barclays Capital as a going concern, so no product-vs-process (gap_45=0) or process-vs-organization (gap_56=0) mismatch is documented at closing. Section 4 explicitly records \\\"None documented\\\" for P4 (product-process) and P5 (process-organization), with product franchises, infrastructure and staff transferring together and Barclays intending rapid integration, driving p4_pathway=0 and p5_pathway=0. The principal post-deal controversy (Section 3-4) was legal/valuation (\\\"$11bn windfall\\\" litigation), not an operational integration failure.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"No divestiture — the acquired businesses were retained and integrated into Barclays Capital.\",\n  \"rationale\": \"The dossier documents that the North American product franchises (T4), supporting operating infrastructure including HQ and data centres (T5), and approximately 10,000 employees (T6) transferred together as a going concern. No structural gaps between product, process, and organization were documented at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0), with the businesses successfully integrated into Barclays Capital.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained and integrated\",\n  \"rationale\": \"gap_45 and gap_56 coded 0 because section 2 states T4 product franchises, T5 infrastructure (HQ, data centres) and T6 staff transferred together as a going concern under the Section 363 sale. p4_pathway and p5_pathway coded 0 per section 4 explicit statements that no product-process or process-organization disruption was documented at the 3-5 year horizon and that the businesses were retained and integrated into Barclays Capital.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

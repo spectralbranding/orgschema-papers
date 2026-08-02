@@ -1,0 +1,25 @@
+[project]
+name = "multi-llm-coding-instrument"
+version = "1.0.0"
+description = "A blinded multi-LLM content-coding instrument with registered-before-data discipline and inter-coder reliability validation."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "Dmitry Zharnikov", email = "dmitry@spectralbranding.com" }]
+keywords = ["content analysis", "inter-coder reliability", "large language models", "blinded coding"]
+dependencies = ["numpy>=2.0", "scipy>=1.13", "pyyaml>=6.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/spectralbranding/orgschema-papers/tree/main/multi-llm-coding-instrument"
+"Zenodo" = "https://doi.org/10.5281/zenodo.21756063"
+
+[tool.uv]
+dev-dependencies = ["pytest>=8.0", "ruff>=0.5", "mypy>=1.10"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

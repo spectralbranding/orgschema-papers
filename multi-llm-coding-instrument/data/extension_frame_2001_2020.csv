@@ -1,0 +1,82 @@
+idx,target,acquirer,year,target_cik,defm14a_accession,reported_value,value_evidenced
+1,Gillette,Procter & Gamble,2005,41499,0000950123-05-006842,~$57bn,VERIFIED IN FILING (stock-for-stock; ~3.6bn combined shares)
+2,Golden West Financial,Wachovia,2006,42293,0000950144-06-006899,~$25bn,public record; confirm in proxy
+3,Merrill Lynch,Bank of America,2008,65100,0000950123-08-014246,~$50bn,public record; confirm in proxy
+4,Wachovia,Wells Fargo,2008,36995,0000950123-08-016149,~$15bn,public record; confirm in proxy
+6,Wyeth,Pfizer,2009,5187,0000950123-09-014762,~$68bn,public record; confirm in proxy
+7,Guidant,Boston Scientific,2005,929987,0000950123-05-015289,~$27bn,public record; confirm in proxy
+8,Unocal,Chevron,2005,716039,0000950123-05-008126,~$18bn,public record; confirm in proxy
+9,Conoco,Phillips Petroleum (merger of equals → ConocoPhillips),2002,1066806,0000950123-02-001030,~$35bn,public record; SAME DEAL as #10 (dedup)
+11,Burlington Resources,ConocoPhillips,2006,833320,0001193125-06-039137,~$36bn,public record; confirm in proxy
+12,Burlington Northern Santa Fe,Berkshire Hathaway,2009,934612,0001193125-09-259413,~$44bn,public record; closed 2010
+13,Anheuser-Busch,InBev,2008,310569,0000950123-08-012217,~$52bn,public record; confirm in proxy
+15,BEA Systems,Oracle,2008,1031798,0001193125-08-044381,~$8.5bn,public record; confirm in proxy
+16,Electronic Data Systems,Hewlett-Packard,2008,1007456,0001193125-08-140727,~$13.9bn,public record; confirm in proxy
+17,Equity Office Properties Trust,Blackstone,2006,1038339,0000950137-06-014332,~$39bn (incl. debt),public record; confirm in proxy
+18,First Data,KKR,2007,883980,0001047469-07-005202,~$29bn,public record; confirm in proxy
+19,Harrah's Entertainment,Apollo / TPG,2007,858339,0001193125-07-049646,~$27.8bn (incl. debt),public record; NB CIK 858339 later reused by Caesars (#79)
+20,Hilton Hotels,Blackstone,2007,47580,0001104659-07-059886,~$26bn (incl. debt),public record; confirm in proxy
+22,North Fork Bancorporation,Capital One,2006,352510,0001193125-06-145231,~$14.6bn,public record; confirm in proxy
+23,Sovereign Bancorp,Santander,2008,811830,0000950123-08-018071,~$1.9bn,public record; confirm in proxy
+24,Nextel Partners,Sprint Nextel,2005,1085707,0000950123-05-011395,~$6.5bn,public record; confirm in proxy
+25,Nuveen Investments,Madison Dearborn,2007,885708,0001104659-07-062056,~$5.75bn,public record; confirm in proxy
+26,Station Casinos,Fertitta / Colony,2007,898660,0001104659-07-053009,~$5.4bn equity,public record; confirm in proxy
+27,Commerce Bancorp,TD Bank Financial,2008,715096,0000950123-08-000083,~$8.5bn,public record; confirm in proxy
+28,Andrx,Watson Pharmaceuticals,2006,1123337,0000950144-06-005153,~$1.9bn,public record; confirm in proxy
+29,Altera,Intel,2015,768251,0001193125-15-300376,~$16.7bn,public record; confirm in proxy
+30,Broadcom Corp,Avago Technologies,2015,1054374,0001193125-15-329911,~$37bn,public record; confirm in proxy
+31,Cameron International,Schlumberger,2015,941548,0001193125-15-379364,~$14.8bn,public record; confirm in proxy
+32,Chiquita Brands International,Cutrale / Safra,2014,101063,0001144204-14-047229,~$1.3bn,public record; confirm in proxy
+33,Cleco,Macquarie-led group,2015,1089819,0001193125-15-009682,~$4.9bn (incl. debt),public record; confirm in proxy
+34,Covance,LabCorp,2015,1023131,0001193125-15-013241,~$6.1bn,public record; confirm in proxy
+35,Catamaran,UnitedHealth (OptumRx),2015,1363851,0001193125-15-216437,~$12.8bn,public record; confirm in proxy
+36,Dell,Silver Lake / Michael Dell,2013,826083,0001193125-13-242115,~$24.4bn,"VERIFIED IN FILING ($13.65/sh × 1,781,176,938 sh)"
+38,El Paso Corp,Kinder Morgan,2012,1066107,0001193125-12-032399,~$21bn equity (~$38bn incl. debt),public record; confirm in proxy
+39,Family Dollar Stores,Dollar Tree,2014,34408,0001047469-14-008626,~$8.5bn,public record; confirm in proxy
+40,Forest Laboratories,Actavis,2014,38074,0001193125-14-182901,~$25-28bn,public record; confirm in proxy
+41,Freescale Semiconductor,NXP,2015,1392522,0001193125-15-209246,~$11.8bn,public record; confirm in proxy
+42,H.J. Heinz,Berkshire Hathaway / 3G,2013,46640,0001193125-13-128058,~$28bn (incl. debt),public record; confirm in proxy
+43,Hospira,Pfizer,2015,1274057,0001047469-15-003366,~$17bn,public record; confirm in proxy
+44,Kinder Morgan Energy Partners,Kinder Morgan Inc. (consolidation),2014,888228,0001047469-14-008474,~$70bn consolidation,public record; SAME consolidation as KM Mgmt (dedup)
+45,Kraft Foods Group,Heinz (→ Kraft Heinz),2015,1545158,0001193125-15-210645,~$46bn,public record; confirm in proxy
+46,Lorillard,Reynolds American,2014,1424847,0001193125-14-449963,~$27bn,public record; confirm in proxy
+47,Life Technologies,Thermo Fisher Scientific,2013,1073431,0001193125-13-297289,~$13.6bn,public record; confirm in proxy
+48,NV Energy,Berkshire (MidAmerican),2013,741508,0001193125-13-340806,~$10bn (incl. debt),public record; confirm in proxy
+49,OfficeMax,Office Depot,2013,12978,0001193125-13-252101,~$1.2bn,public record; confirm in proxy
+50,Omnicare,CVS Health,2015,353230,0001047469-15-006208,~$12.7bn (incl. debt),public record; confirm in proxy
+51,Pepco Holdings,Exelon,2014,1135971,0001571049-14-003924,~$6.8bn,public record; confirm in proxy
+52,Piedmont Natural Gas,Duke Energy,2015,78460,0001193125-15-402439,~$4.9bn (incl. debt),public record; confirm in proxy
+53,Precision Castparts,Berkshire Hathaway,2015,79958,0001193125-15-341940,~$37bn,public record; confirm in proxy
+54,Questcor Pharmaceuticals,Mallinckrodt,2014,891288,0001193125-14-266719,~$5.6bn,public record; confirm in proxy
+55,Reynolds American,British American Tobacco,2017,1275283,0001193125-17-203053,~$49bn,public record; confirm in proxy
+56,Riverbed Technology,Thoma Bravo,2015,1357326,0001193125-15-014961,~$3.6bn,public record; confirm in proxy
+57,Safeway,Albertsons / Cerberus,2014,86144,0001193125-14-241680,~$9.2bn,public record; confirm in proxy
+58,TECO Energy,Emera,2015,350563,0001193125-15-350322,~$10.4bn (incl. debt),public record; confirm in proxy
+59,Whole Foods Market,Amazon,2017,865436,0001571049-17-006849,~$13.7bn,public record; confirm in proxy
+60,Warner Chilcott,Actavis,2013,1323854,0001193125-13-313307,~$8.5bn,public record; confirm in proxy
+61,Yahoo,Verizon (operating business),2017,1011006,0001193125-17-133449,~$4.5bn,public record; NB asset/operating-business sale
+62,Twenty-First Century Fox,Walt Disney,2018,1308161,0001193125-18-207641,~$71bn,public record; revised-bid proxy (see #E for earlier -177598)
+63,Aetna,CVS Health,2018,1122304,0001193125-18-038189,~$69bn,public record; confirm in proxy
+64,Express Scripts,Cigna,2018,1532063,0001140361-18-032612,~$67bn,"public record; Cigna filed own proxy (dedup, see O4)"
+65,Andeavor,Marathon Petroleum,2018,50104,0001193125-18-238276,~$23bn,public record; confirm in proxy
+66,Dr Pepper Snapple Group,Keurig (→ Keurig Dr Pepper),2018,1418135,0001047469-18-004118,~$21bn,public record; confirm in proxy
+67,SCANA,Dominion Energy,2018,754737,0001193125-18-193204,~$7.9bn equity (~$14.6bn incl. debt),public record; confirm in proxy
+68,Pinnacle Foods,Conagra Brands,2018,1564822,0001193125-18-275423,~$10.9bn,public record; confirm in proxy
+69,Dynegy,Vistra Energy,2018,1379895,0001193125-18-019177,~$1.7bn equity (all-stock),public record; confirm in proxy
+70,GGP Inc.,Brookfield Property Partners,2018,1496048,0001193125-18-204333,~$15bn,public record; confirm in proxy
+71,Forest City Realty Trust,Brookfield Asset Management,2018,1647509,0001193125-18-298438,~$11.4bn (incl. debt),public record; confirm in proxy
+72,Chicago Bridge & Iron,McDermott International,2018,1027884,0001193125-18-102136,~$6bn combination,public record; confirm in proxy
+73,CalAtlantic Group,Lennar,2018,878560,0001193125-18-003465,~$9.3bn (incl. debt),public record; confirm in proxy
+74,Cavium,Marvell Technology,2018,1175609,0001193125-18-032604,~$6bn,public record; confirm in proxy
+75,Convergys,SYNNEX (Concentrix),2018,1062047,0001140361-18-037148,~$2.4bn,public record; confirm in proxy
+76,"CA, Inc.",Broadcom,2018,356028,0001193125-18-246044,~$18.9bn,public record; confirm in proxy
+77,Celgene,Bristol-Myers Squibb,2019,816284,0001140361-19-003696,~$74bn,"VERIFIED IN FILING (""$102.43 in value for each share"")"
+78,Anadarko Petroleum,Occidental Petroleum,2019,773910,0001140361-19-012802,~$38bn equity (~$55bn incl. debt),public record; confirm in proxy
+79,Allergan plc,AbbVie,2019,1578845,0001193125-19-245800,~$63bn,public record; confirm in proxy
+80,Caesars Entertainment,Eldorado Resorts,2019,858339,0001193125-19-266855,~$17bn (incl. debt),public record; confirm in proxy
+81,Cypress Semiconductor,Infineon Technologies,2019,791915,0001047469-19-004210,~$9bn (incl. debt),public record; confirm in proxy
+82,Buckeye Partners,IFM Investors,2019,805022,0001193125-19-180761,~$10.3bn (incl. debt),public record; confirm in proxy
+83,CIT Group,First Citizens BancShares,2020,1171825,0001140361-20-029429,~$2.2bn,public record; confirm in proxy
+84,Concho Resources,ConocoPhillips,2020,1358071,0001047469-20-005692,~$9.7bn,public record; confirm in proxy
+85,Anixter International,WESCO International,2020,52795,0001140361-20-005466,~$4.5bn (incl. debt),public record; confirm in proxy
+86,AK Steel Holding,Cleveland-Cliffs,2020,918160,0001193125-20-023927,~$1.1bn equity (~$3bn incl. debt),public record; confirm in proxy

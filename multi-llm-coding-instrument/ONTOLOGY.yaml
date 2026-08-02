@@ -1,0 +1,43 @@
+# ONTOLOGY.yaml module — multi-llm-coding-instrument (paper 2026bh)
+#
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses. Linked into the
+# substrate `terms` graph by build_ontology.py; rendered by render_paper_glossary.py.
+# Locked 2026-07-29 alongside SPINE.yaml (Stage S3, option-B reframe).
+
+paper_key: multi-llm-coding-instrument
+schema_version: 0.1
+
+owns:
+  - term_key: blinded-multi-llm-coding-instrument
+    label: "Blinded multi-LLM content-coding instrument"
+    canonical_form: "blinded multi-LLM content-coding instrument"
+    definition: "A content-coding procedure in which several heterogeneous large language models independently code each case from a neutral evidence dossier while blinded to the study's hypotheses and the case's role, combined per cell by majority-vote-or-flag with author adjudication."
+    first_section: "The Instrument"
+    relations:
+      - {type: contrasts, term_key: evidence-dossier, note: "the instrument operates over dossiers; the dossier is its blinded input unit"}
+  - term_key: evidence-dossier
+    label: "Evidence dossier"
+    canonical_form: "evidence dossier"
+    definition: "A neutral, self-contained, source-cited assembly of one case's documentary record, containing no hypothesis or predicted-direction content, that is the sole input a coder sees."
+    first_section: "The Instrument"
+  - term_key: majority-vote-or-flag
+    label: "Majority-vote-or-flag"
+    canonical_form: "majority-vote-or-flag"
+    definition: "A per-cell combination rule for multiple independent coders: at least two agreeing values yield the cell value; otherwise the cell is flagged for author adjudication."
+    first_section: "The Instrument"
+  - term_key: coding-discipline-package
+    label: "Coding discipline package"
+    canonical_form: "discipline package"
+    definition: "The single protocol bundling four disciplines that make LLM-assisted coding trustworthy and auditable: coder blinding, registered-before-data commitment, an anti-fabrication uncertain-over-guess rule, and exact-model-pin call provenance."
+    first_section: "The Discipline Package"
+  - term_key: anti-fabrication-coding-rule
+    label: "Anti-fabrication coding rule"
+    canonical_form: "anti-fabrication rule"
+    definition: "The requirement that a coder unable to determine a cell from the dossier return 'uncertain' rather than guess, with uncertain-dominated cells resolved conservatively in the null-friendly direction under a pre-stated adjudication rule."
+    first_section: "The Discipline Package"
+
+imports: []
+
+refines: []
+

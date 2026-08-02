@@ -1,0 +1,108 @@
+{
+  "case_id": "A07",
+  "case": "McDonald's franchise system (1955-present)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; durable system, ~95% franchised, 45,356 locations in 2025",
+      "rationale": "gap_45=0: Section 2 shows product/brand spec (T4) is retained/standardized by McDonald's while operations (T5) are executed by the franchisee under system standards — a deliberate, coherent alignment via the franchise agreement, not a mismatch. gap_56=0: Section 2 shows operations (T5) and staff/people (T6) both sit with the franchisee at the unit level, keeping process and organization co-located. p4_pathway=0 and p5_pathway=0: Section 4 explicitly documents no product-process disruption and no process-organization fracture, describing the tier separation as stable and deliberate rather than disrupted."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "over 44,000 locations in over 100 countries",
+      "rationale": "The dossier documents no structural gap between product and process (gap_45=0), noting a 'deliberate, stable separation' where McDonald's retains the product/brand specification (T4) while franchisees execute operations (T5) under system standards. Similarly, there is no process-organization gap (gap_56=0) because 'operations (T5) and people (T6) both sit with the franchisee, keeping process and organization co-located at the unit level.' Consequently, no product-process disruption (p4_pathway=0) or process-organization fracture (p5_pathway=0) is documented."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "durable success; ~95% franchised; 45k+ locations",
+      "rationale": "Section 2 T4 states product/brand spec retained by McDonald's and read-only to franchisee; T5 states standards retained but day-to-day execution delegated to franchisee (partial). Section 2 T5/T6 and section 4 P5 state operations and people/staff both sit with franchisee (co-located, no fracture). Section 4 explicitly codes P4 and P5 as none documented; section 5 notes the franchise agreement itself absorbs the retained/delegated split by design."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replicate\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; durable system, ~95% franchised, 45,356 locations in 2025\", \"rationale\": \"gap_45=0: Section 2 shows product/brand spec (T4) is retained/standardized by McDonald's while operations (T5) are executed by the franchisee under system standards \\u2014 a deliberate, coherent alignment via the franchise agreement, not a mismatch. gap_56=0: Section 2 shows operations (T5) and staff/people (T6) both sit with the franchisee at the unit level, keeping process and organization co-located. p4_pathway=0 and p5_pathway=0: Section 4 explicitly documents no product-process disruption and no process-organization fracture, describing the tier separation as stable and deliberate rather than disrupted.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replicate\",\n  \"sigma_T2\": \"read-only\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"over 44,000 locations in over 100 countries\",\n  \"rationale\": \"The dossier documents no structural gap between product and process (gap_45=0), noting a 'deliberate, stable separation' where McDonald's retains the product/brand specification (T4) while franchisees execute operations (T5) under system standards. Similarly, there is no process-organization gap (gap_56=0) because 'operations (T5) and people (T6) both sit with the franchisee, keeping process and organization co-located at the unit level.' Consequently, no product-process disruption (p4_pathway=0) or process-organization fracture (p5_pathway=0) is documented.\"\n}",
+    "grok": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"null\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"read-only\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"durable success; ~95% franchised; 45k+ locations\",\n\"rationale\": \"Section 2 T4 states product/brand spec retained by McDonald's and read-only to franchisee; T5 states standards retained but day-to-day execution delegated to franchisee (partial). Section 2 T5/T6 and section 4 P5 state operations and people/staff both sit with franchisee (co-located, no fracture). Section 4 explicitly codes P4 and P5 as none documented; section 5 notes the franchise agreement itself absorbs the retained/delegated split by design.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replicate",
+    "sigma_T2": "read-only",
+    "sigma_T3": "null",
+    "sigma_T4": "read-only",
+    "sigma_T5": "subset",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,108 @@
+{
+  "case_id": "E08",
+  "case": "CA, Inc. (CA Technologies) / Broadcom Inc. (2018)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "partial",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "Veracode divested for ~$950M at ~0 months; no goodwill impairment identified; CA assets retained as anchor of profitable Infrastructure Software segment",
+      "rationale": "Section 2 documents a whole-company going-concern acquisition in which all tiers (T4 product, T5 process, T6 organization) crossed the boundary together and were re-engineered in tandem under Broadcom's operating model, so no product-vs-process structural mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0) exist at closing (Section 5 explicitly states \"all tiers moved together\"). Section 4/P4 states the commercial-process changes altered customer-acceptance terms but was \"not an internal product-vs-process integration break,\" so p4_pathway=0. Section 4/P5 describes go-to-market rationalization as \"T5-T6-adjacent friction\" documented only at trade-press level and framed as deliberate strategy rather than an integration fracture, and the narrative is acquirer-side financial success, so p5_pathway=0."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "Veracode divested for ~$950 million at close",
+      "rationale": "The transaction was a whole-company going-concern acquisition, meaning products, processes, and organization transferred together without structural gaps at closing (gap_45=0, gap_56=0). Although Broadcom deliberately re-engineered the business model and processes (raising prices and cutting costs), this was a planned strategy that succeeded financially rather than an integration failure, so no P4 or P5 pathways are coded."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "partial",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained; financial success",
+      "rationale": "gap_45 and gap_56 coded 0 per section 5 (whole-company going-concern acquisition; all tiers moved together). p4_pathway coded 0 per section 4 (explicitly 'not an internal product-vs-process integration break'). p5_pathway coded 0 per section 4 (customer friction noted but 'not an integration failure'; primary outcome was acquirer financial success)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"partial\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"Veracode divested for ~$950M at ~0 months; no goodwill impairment identified; CA assets retained as anchor of profitable Infrastructure Software segment\", \"rationale\": \"Section 2 documents a whole-company going-concern acquisition in which all tiers (T4 product, T5 process, T6 organization) crossed the boundary together and were re-engineered in tandem under Broadcom's operating model, so no product-vs-process structural mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0) exist at closing (Section 5 explicitly states \\\"all tiers moved together\\\"). Section 4/P4 states the commercial-process changes altered customer-acceptance terms but was \\\"not an internal product-vs-process integration break,\\\" so p4_pathway=0. Section 4/P5 describes go-to-market rationalization as \\\"T5-T6-adjacent friction\\\" documented only at trade-press level and framed as deliberate strategy rather than an integration fracture, and the narrative is acquirer-side financial success, so p5_pathway=0.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"Veracode divested for ~$950 million at close\",\n  \"rationale\": \"The transaction was a whole-company going-concern acquisition, meaning products, processes, and organization transferred together without structural gaps at closing (gap_45=0, gap_56=0). Although Broadcom deliberately re-engineered the business model and processes (raising prices and cutting costs), this was a planned strategy that succeeded financially rather than an integration failure, so no P4 or P5 pathways are coded.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained; financial success\",\n  \"rationale\": \"gap_45 and gap_56 coded 0 per section 5 (whole-company going-concern acquisition; all tiers moved together). p4_pathway coded 0 per section 4 (explicitly 'not an internal product-vs-process integration break'). p5_pathway coded 0 per section 4 (customer friction noted but 'not an integration failure'; primary outcome was acquirer financial success).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "partial",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

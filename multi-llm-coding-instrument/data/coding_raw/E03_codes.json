@@ -1,0 +1,108 @@
+{
+  "case_id": "E03",
+  "case": "CalAtlantic Group / Lennar Corporation (2017-2018)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained (targeted ~$250m cost savings in 2019)",
+      "rationale": "Section 2 shows T4 (the ~250,000 homesites / ~1,300 communities) and T5 (operations slated for integration to capture cost savings and production efficiencies) transferred together as a whole-entity statutory merger, so no product-vs-process mismatch at closing (gap_45=0); people also transferred with partial senior-leadership retention alongside the operations, so no process-vs-organization mismatch (gap_56=0). Section 4 documents no P4 product-process disruption (inventory and processes integrated together) and no P5 process-organization fracture (marked [UNVERIFIED]/none documented), so both pathways coded 0. Section 4 also records aligned intent and compatible business models, supporting t1_archetype=0 and t2_model=0."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "No divestiture identified; targeted direct cost savings of $75m in 2018 and $250m in 2019",
+      "rationale": "The dossier documents a whole-entity statutory merger where CalAtlantic's product (homesites/communities), processes (operations), and organization (people/leadership) transferred together to Lennar without structural gaps at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "T4 transferred whole (section 2: ~250k homesites/1300 communities) while T5 was slated only for integration (section 2), but no structural mismatch at closing is documented, yielding gap_45=0. T5 and T6 both coded partial with leadership retention noted (section 2), and no process-org fracture documented at 3-5yr horizon (section 4), yielding gap_56=0, p4_pathway=0 and p5_pathway=0. T1 replaced (section 2) with no archetype incoherence or model incompatibility documented (section 4)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; assets retained (targeted ~$250m cost savings in 2019)\", \"rationale\": \"Section 2 shows T4 (the ~250,000 homesites / ~1,300 communities) and T5 (operations slated for integration to capture cost savings and production efficiencies) transferred together as a whole-entity statutory merger, so no product-vs-process mismatch at closing (gap_45=0); people also transferred with partial senior-leadership retention alongside the operations, so no process-vs-organization mismatch (gap_56=0). Section 4 documents no P4 product-process disruption (inventory and processes integrated together) and no P5 process-organization fracture (marked [UNVERIFIED]/none documented), so both pathways coded 0. Section 4 also records aligned intent and compatible business models, supporting t1_archetype=0 and t2_model=0.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"No divestiture identified; targeted direct cost savings of $75m in 2018 and $250m in 2019\",\n  \"rationale\": \"The dossier documents a whole-entity statutory merger where CalAtlantic's product (homesites/communities), processes (operations), and organization (people/leadership) transferred together to Lennar without structural gaps at closing (gap_45=0, gap_56=0). Post-deal, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"T4 transferred whole (section 2: ~250k homesites/1300 communities) while T5 was slated only for integration (section 2), but no structural mismatch at closing is documented, yielding gap_45=0. T5 and T6 both coded partial with leadership retention noted (section 2), and no process-org fracture documented at 3-5yr horizon (section 4), yielding gap_56=0, p4_pathway=0 and p5_pathway=0. T1 replaced (section 2) with no archetype incoherence or model incompatibility documented (section 4).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

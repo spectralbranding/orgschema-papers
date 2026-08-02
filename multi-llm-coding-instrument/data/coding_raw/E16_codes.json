@@ -1,0 +1,108 @@
+{
+  "case_id": "E16",
+  "case": "Kinder Morgan Energy Partners, L.P. / Kinder Morgan, Inc. (2014)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; single C-corp (KMI) formed, ~$140bn pro forma enterprise value",
+      "rationale": "Section 2 documents that the pipeline/transportation product (T4) and its operating processes (T5) were already jointly controlled by KMI and carried forward unchanged, so product and processes moved together (gap_45=0); likewise operations (T5) and the organization/people (T6, already unified under KMI, no separate KMP employees) were coherently aligned at closing (gap_56=0). Section 4 states no P4 product-process disruption and no P5 process-organization fracture manifested, since operations and organization were already unified pre-consolidation (p4_pathway=0, p5_pathway=0). The change was to the legal vehicle (LP->C-corp, T3 swap) and value-flow model (pass-through MLP->C-corp, T2 swap) by design, with controlling intent continuing (KMI controlled KMP before and after)."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "swap",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; ~$140 billion pro forma enterprise value",
+      "rationale": "The dossier documents that KMI already controlled KMP prior to the transaction, meaning the product (T4), processes (T5), and organization (T6) were already unified and carried forward intact, resulting in no structural gaps (gap_45=0, gap_56=0). Consequently, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "swap",
+      "sigma_T3": "swap",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "Section 2 states T4 product, T5 process and T6 organization carried forward unchanged because already jointly controlled by KMI (gap_45=0, gap_56=0). Section 4 explicitly codes P4 and P5 as none because product franchise and operating processes were already unified under KMI prior to the ownership-structure consolidation (p4_pathway=0, p5_pathway=0). Section 2 T1 line confirms no change of controlling principal."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; single C-corp (KMI) formed, ~$140bn pro forma enterprise value\", \"rationale\": \"Section 2 documents that the pipeline/transportation product (T4) and its operating processes (T5) were already jointly controlled by KMI and carried forward unchanged, so product and processes moved together (gap_45=0); likewise operations (T5) and the organization/people (T6, already unified under KMI, no separate KMP employees) were coherently aligned at closing (gap_56=0). Section 4 states no P4 product-process disruption and no P5 process-organization fracture manifested, since operations and organization were already unified pre-consolidation (p4_pathway=0, p5_pathway=0). The change was to the legal vehicle (LP->C-corp, T3 swap) and value-flow model (pass-through MLP->C-corp, T2 swap) by design, with controlling intent continuing (KMI controlled KMP before and after).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; ~$140 billion pro forma enterprise value\",\n  \"rationale\": \"The dossier documents that KMI already controlled KMP prior to the transaction, meaning the product (T4), processes (T5), and organization (T6) were already unified and carried forward intact, resulting in no structural gaps (gap_45=0, gap_56=0). Consequently, there is no documented disruption at the product-process interface (p4_pathway=0) or the process-organization interface (p5_pathway=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"swap\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"Section 2 states T4 product, T5 process and T6 organization carried forward unchanged because already jointly controlled by KMI (gap_45=0, gap_56=0). Section 4 explicitly codes P4 and P5 as none because product franchise and operating processes were already unified under KMI prior to the ownership-structure consolidation (p4_pathway=0, p5_pathway=0). Section 2 T1 line confirms no change of controlling principal.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "swap",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

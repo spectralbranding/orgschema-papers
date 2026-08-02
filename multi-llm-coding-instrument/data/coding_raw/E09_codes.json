@@ -1,0 +1,108 @@
+{
+  "case_id": "E09",
+  "case": "Celgene Corporation / Bristol-Myers Squibb (2019)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; core business retained/integrated; CVR (up to ~$6.3bn nominal) terminated worthless ~13 months post-close",
+      "rationale": "Section 2 documents a whole-entity reverse triangular merger in which the T4 product franchise (REVLIMID, POMALYST, OTEZLA, etc.) and its supporting T5 R&D/manufacturing/commercialization operations transferred together with the surviving subsidiary as a going concern, so product and process moved coherently (gap_45=0); likewise T5 processes and the T6 workforce transferred together with the surviving subsidiary, so no process-vs-organization mismatch at closing (gap_56=0). Section 4 explicitly states no P4 product-process disruption and no P5 process-organization fracture were documented in sourced filings (p4=0, p5=0). The only materialized contingency was financial/milestone (CVR termination on a missed FDA deadline), not an operational integration failure."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "core business retained; contingent value right terminated worthless",
+      "rationale": "The dossier documents a whole-entity acquisition via reverse triangular merger where Celgene survived as a wholly-owned subsidiary. The product franchise, operational processes, and workforce transferred together intact, meaning no structural gaps existed at closing (gap_45=0, gap_56=0). Accordingly, no post-deal disruption at the product/process or process/organization interfaces was documented (p4_pathway=0, p5_pathway=0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "no divestiture; core business retained; CVR terminated worthless",
+      "rationale": "gap_45 and gap_56 both coded 0 because T4 product franchise, T5 operations, and T6 workforce all transferred together with the surviving subsidiary per section 2 lines on T4/T5/T6. p4_pathway and p5_pathway both coded 0 because section 4 explicitly states 'None documented in sourced filings' for both Product-Process and Process-Organization interfaces, with the only 3-5yr outcome being the unrelated CVR milestone lapse."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"no divestiture; core business retained/integrated; CVR (up to ~$6.3bn nominal) terminated worthless ~13 months post-close\", \"rationale\": \"Section 2 documents a whole-entity reverse triangular merger in which the T4 product franchise (REVLIMID, POMALYST, OTEZLA, etc.) and its supporting T5 R&D/manufacturing/commercialization operations transferred together with the surviving subsidiary as a going concern, so product and process moved coherently (gap_45=0); likewise T5 processes and the T6 workforce transferred together with the surviving subsidiary, so no process-vs-organization mismatch at closing (gap_56=0). Section 4 explicitly states no P4 product-process disruption and no P5 process-organization fracture were documented in sourced filings (p4=0, p5=0). The only materialized contingency was financial/milestone (CVR termination on a missed FDA deadline), not an operational integration failure.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"core business retained; contingent value right terminated worthless\",\n  \"rationale\": \"The dossier documents a whole-entity acquisition via reverse triangular merger where Celgene survived as a wholly-owned subsidiary. The product franchise, operational processes, and workforce transferred together intact, meaning no structural gaps existed at closing (gap_45=0, gap_56=0). Accordingly, no post-deal disruption at the product/process or process/organization interfaces was documented (p4_pathway=0, p5_pathway=0).\"\n}",
+    "grok": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"performance_metric\": \"no divestiture; core business retained; CVR terminated worthless\",\n\"rationale\": \"gap_45 and gap_56 both coded 0 because T4 product franchise, T5 operations, and T6 workforce all transferred together with the surviving subsidiary per section 2 lines on T4/T5/T6. p4_pathway and p5_pathway both coded 0 because section 4 explicitly states 'None documented in sourced filings' for both Product-Process and Process-Organization interfaces, with the only 3-5yr outcome being the unrelated CVR milestone lapse.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

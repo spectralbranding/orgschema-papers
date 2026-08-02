@@ -1,0 +1,323 @@
+# SPINE.yaml — Blinded Multi-LLM Content-Coding Instrument
+#
+# GENERATIVE spine (SPINE_FIRST_DRAFTING_PROTOCOL.md Phase 0.5). Locked BEFORE
+# paper.md prose per the HARD rule: no drafting begins until this file exists and
+# every prose claim traces to a node here. This is a METHODOLOGICAL contribution —
+# an instrument specification plus an inter-coder-reliability validation on a real
+# organizational corpus. Drafted under Stage S3 (Fork B) of the tier-bundle-algebra
+# (reframe down: protocol specification + reliability validation on a real corpus;
+# hypothesis-testing generalizability deferred to a future applied paper; the
+# head-to-head contrast study is declared future work, not run here).
+#
+# The worked-demonstration corpus is 30 documented public M&A cases coded with the
+# instrument; the coding artifacts (harness, per-call JSONL logs, adjudication
+# paper's computational artifact per PAQS 37 WHEN the paper publishes. The paper is
+# deliberately CITATION-INDEPENDENT of the (held, unpublished) tier-bundle theory
+# paper it demonstrated on — the demonstration is described as an M&A-integration
+# coding task, not grounded on that paper's claims.
+
+spine_version: "0.1"
+spine_doc_version: "0.1.0"
+paper_key: "multi-llm-coding-instrument"
+provenance: generative
+title: >-
+  A Blinded Multi-LLM Content-Coding Instrument: Protocol Specification and
+  Inter-Coder Reliability Validation on an Organizational Corpus
+status: >-
+  Draft; not yet submitted. Authoring provenance recorded in the changelog
+  (internal record only).
+
+thesis: >-
+  Content coding — converting documentary evidence into structured analyzable
+  variables — is a reliability bottleneck of qualitative and mixed-methods
+  organizational research: labor-intensive, hard to reproduce, and vulnerable to the
+  coder seeing the hypothesis. Large language models can now annotate at or above
+  crowd-worker quality, but naive use reintroduces the failure modes careful coding
+  was built to remove: unauditable calls, hypothesis leakage, fabricated codes, and
+  single-rater dependence. This paper specifies a blinded multi-LLM content-coding
+  instrument that imports the discipline of human intercoder-reliability protocols
+  into LLM-assisted coding — three heterogeneous models code each case independently
+  from a neutral evidence dossier while blinded to the hypotheses and the case's
+  study role; cells combine by majority-vote-or-flag with author adjudication; a
+  model that cannot determine a cell returns uncertain rather than guess; every call
+  is logged with an exact model pin; and the harness and the empty coding schema are
+  committed before any datum exists. On a 30-case organizational (M&A-integration)
+  corpus the instrument reached almost-perfect inter-coder agreement (Fleiss'
+  kappa = .838; 2.7% flagged cells, none on a study-critical variable). The
+  contribution is the instrument and its reliability validation — reproducible,
+  registered-before-data, and fully auditable — offered as a transparent alternative
+  to single- or dual-human coding. Reliability is not by itself downstream
+  hypothesis-testing validity; establishing the latter (a head-to-head contrast
+  against single-LLM and human double-coding) is declared future work.
+
+# ============================================================================
+# Propositions — the argument backbone
+#   SF-prefix: motivating stylized fact. P1: the instrument (architecture).
+#   P2: the discipline package as ONE contribution (registered-before-data +
+#   blinding + anti-fabrication + provenance/logging + adjudication). P3: the
+#   reliability-validation result on the worked demonstration. P4: applicability
+#   / boundary objects + the dossier evidentiary-richness precondition. C1:
+#   boundary conditions. L1: limitations + the honest scope of the claim.
+# ============================================================================
+propositions:
+  - id: SF1
+    statement: >-
+      Content coding is a reliability bottleneck of qualitative and mixed-methods
+      organizational research: it is labor-intensive, hard to reproduce, and
+      vulnerable to hypothesis leakage when the coder can see the study's
+      predictions. Large language models now annotate text at or above crowd-worker
+      quality, but using a single model with an unlogged, hypothesis-aware prompt
+      reintroduces exactly the failure modes intercoder-reliability protocols were
+      designed to remove — unauditable calls, leakage, fabricated codes, and
+      single-rater dependence — and is categorically distinct from using a model to
+      SIMULATE respondents (silicon sampling), which this instrument does not do.
+    antecedents: []
+    body_sections: ["Introduction"]
+    evidence:
+      - type: citation
+        anchor: >-
+          Large language models match or exceed crowd workers on text-annotation
+          tasks, and are increasingly used as coders in computational social
+          science — the capability that makes an LLM coding instrument feasible,
+          with the cautions that make discipline necessary.
+        citation_keys: [gilardi-2023-chatgpt-outperforms-crowd, ziems-2024-can-large-language-models, zhang-2024-sentiment-analysis-era-llms]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: >-
+          The validity of LLMs for automated coding of perceptual/latent
+          constructs is an open, actively-studied question — motivating a
+          reliability-first instrument rather than uncritical adoption.
+        citation_keys: [li-2024-frontiers-determining-validity]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: >-
+          The intercoder-reliability tradition this instrument imports: content
+          analysis methodology and the standard reliability measures for coding
+          data that define what "reliable coding" means.
+        citation_keys: [krippendorff-2004-content-analysis-introduction, hayes-2007-answering-the-call]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Contrast (deliberately drawn): the LLM-as-simulated-respondent /
+          silicon-sampling line. The instrument codes DOCUMENTARY EVIDENCE; it does
+          not simulate human samples or economic agents. This boundary is stated to
+          pre-empt the misclassification of the method as silicon sampling.
+        citation_keys: [argyle-2023-out-one-many, horton-2023-large-language-models]
+        citation_role: rival_ruled_out
+
+  - id: P1
+    statement: >-
+      The instrument (architecture). For each case, an evidence dossier — a neutral,
+      source-cited assembly of the case's documentary record with no hypothesis
+      content — is coded independently by three heterogeneous large language models
+      (a Claude, a Gemini, and a Grok model, each pinned to an exact version). Each
+      model sees ONLY the dossier and a fixed, hypothesis-free coder prompt that
+      operationalizes the target variables in neutral factual language; it never
+      sees the paper, the hypotheses, the predicted direction, or the case's role in
+      the study. Per coding cell the three model outputs combine by
+      MAJORITY-VOTE-OR-FLAG: at least two agreeing values yield the cell; otherwise
+      the cell is FLAGGED for author adjudication. The design is model-heterogeneous
+      by construction so that a single model's idiosyncrasy cannot silently carry a
+      cell.
+    conditions: >-
+      Cells are discrete (categorical/binary); each dossier is self-contained and
+      source-cited; the coder prompt is fixed and hypothesis-free (blinding, per P2).
+    antecedents: [SF1]
+    evidence:
+      - type: citation
+        anchor: >-
+          Precedent that a single LLM can annotate at crowd-worker quality — the
+          per-coder capability the multi-model majority rule builds on and hardens.
+        citation_keys: [gilardi-2023-chatgpt-outperforms-crowd]
+        citation_role: theoretical_predecessor
+      - type: analytic
+        anchor: >-
+          The committed coding harness implements independent per-model calls
+          from the dossier, the fixed coder prompt, and the majority-vote-or-flag
+          combination rule; the coding schema and the empty output schema are the
+          committed record released as the paper's computational artifact.
+    body_sections: ["The Instrument"]
+
+  - id: P2
+    statement: >-
+      The discipline package (a single contribution). Four disciplines together make
+      LLM-assisted coding trustworthy and auditable, and are specified as one
+      protocol: (a) BLINDING — coders see only the evidence dossier, never the
+      hypotheses, predicted direction, or the case's anchor-vs-sample role, removing
+      the hypothesis-leakage channel; (b) REGISTERED-BEFORE-DATA — the harness, the
+      coder prompt, and the empty coding schema are committed before any coded datum
+      exists, so the coding rule cannot be tuned to the result; (c) ANTI-FABRICATION
+      — a model that cannot determine a cell from the dossier must return "uncertain"
+      rather than guess, and uncertain-dominated cells resolve conservatively in the
+      null-friendly direction under a pre-stated adjudication rule; (d) PROVENANCE —
+      every model call is logged as JSONL with its exact model pin, timestamp, and
+      prompt, and the dataset is assembled deterministically, so any coded value is
+      traceable to the call that produced it and the run is reproducible.
+    conditions: "Depends on P1 (the architecture the disciplines govern)."
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: >-
+          Registered-before-data is evidenced by the commit order (harness + empty
+          schema committed before any datum; analysis pipeline committed earlier
+          with a synthetic fixture reproducing a textbook value). Provenance is
+          evidenced by the per-call JSONL logs and the deterministic dataset
+          assembler. Adjudication is evidenced by the per-cell rationale ledger.
+          All three are released as the paper's computational artifact.
+      - type: citation
+        anchor: >-
+          The reliability-and-transparency standard the discipline package
+          operationalizes for the LLM setting: reproducible, auditable coding with a
+          reported reliability measure.
+        citation_keys: [krippendorff-2004-content-analysis-introduction, hayes-2007-answering-the-call]
+        citation_role: methodological_source
+
+  - id: P3
+    statement: >-
+      Reliability validation on the worked demonstration. Applied to a corpus of 30
+      documented public M&A-integration cases (coded from source-cited dossiers), the
+      instrument achieved almost-perfect inter-coder agreement: Fleiss' kappa = .838
+      across the binary coding cells, above the conventional .81 "almost perfect"
+      threshold. The flag rate was 2.7% (11 of 406 cells) — far below the 20% level
+      that would escalate to dual-human coding — and every flagged cell fell on a
+      descriptive token, not on a study-critical variable, which the three coders
+      coded unanimously. Per-cell unanimous-agreement ran from .89 to 1.00. The
+      demonstration is a WORKED EXAMPLE establishing feasibility and reliability on
+      one real corpus, not a claim of universal performance.
+    conditions: >-
+      Binary/categorical cells; kappa computed over fully triple-coded cells;
+      the corpus is a single organizational-document domain (worked example).
+    antecedents: [P1, P2]
+    evidence:
+      - type: citation
+        anchor: >-
+          Fleiss' kappa — the multi-rater nominal-agreement estimator computed over
+          the three-coder cells.
+        citation_keys: [fleiss-1971-measuring-nominal-scale]
+        citation_role: methodological_source
+      - type: citation
+        anchor: >-
+          The interpretation bands under which kappa >= .81 is "almost perfect"
+          agreement.
+        citation_keys: [landis-1977-measurement-observer-agreement]
+        citation_role: methodological_source
+      - type: analytic
+        anchor: >-
+          kappa = .838, flag rate 11/406 = 2.7%, per-cell unanimous rates .89-1.00,
+          and all flags on descriptive tokens (none on a study-critical cell) are
+          the executed result, reproduced by the released reliability computation
+          from the committed per-coder codes.
+    body_sections: ["Reliability Validation"]
+
+  - id: P4
+    statement: >-
+      Applicability and the dossier precondition. The instrument is domain-general
+      across organizational-research coding tasks whose evidence is documentary and
+      whose target variables are discretely codable — for example, classifying
+      inter-organizational structure from deal documents, coding escalation-of-
+      commitment or attention signals from earnings-call transcripts, or classifying
+      technological relatedness from patent records. Its trustworthiness has an
+      explicit precondition: the source dossier must meet a minimum evidentiary-
+      richness threshold for the target cell, below which the correct coder behavior
+      is "uncertain" (per P2c) rather than a determination. Where a dossier cannot
+      support a determination, the instrument surfaces that as a flag rather than
+      fabricating a code — the anti-fabrication rule is what makes the
+      evidentiary-richness boundary operational rather than aspirational.
+    conditions: "Depends on P1, P2; the evidentiary-richness threshold is task-specific and pre-stated."
+    antecedents: [P1, P2]
+    evidence:
+      - type: citation
+        anchor: >-
+          The open question of LLM validity for coding latent/perceptual constructs
+          motivates naming the dossier-richness precondition explicitly rather than
+          assuming uniform coder competence across tasks.
+        citation_keys: [li-2024-frontiers-determining-validity]
+        citation_role: theoretical_predecessor
+      - type: analytic
+        anchor: >-
+          In the demonstration, the one dossier cell whose person-transfer detail
+          was marked unverified produced three "uncertain" returns and was
+          adjudicated conservatively to the null-friendly value — the precondition
+          and the anti-fabrication rule behaving as designed, recorded in the
+          released adjudication ledger.
+    body_sections: ["Scope and Applicability"]
+
+  - id: C1
+    statement: >-
+      Boundary conditions. The instrument applies to discretely-codable variables
+      over documentary evidence; it is not specified for open-ended or free-text
+      extraction, for continuous ratings without a discretization rule, or for
+      evidence that cannot be assembled into a self-contained source-cited dossier.
+      Its coder pins are exact model versions; results are conditional on those
+      versions and are expected to drift as models change (mitigated, not removed, by
+      the multi-model majority and the pinned provenance).
+    body_sections: ["Boundary Conditions"]
+
+  - id: L1
+    statement: >-
+      Limitations and the honest scope of the claim. (1) The validation is a single
+      worked corpus in one organizational-document domain; broad generalizability
+      requires replication on substantively different corpora, declared here as
+      future work. (2) High inter-coder reliability is NOT by itself downstream
+      hypothesis-testing validity: this paper does not run a head-to-head contrast of
+      blinded multi-LLM coding against single-LLM coding or human double-coding on
+      hypothesis-leakage or downstream-inference metrics, and therefore does not
+      claim superiority on those axes — that contrast is the natural next study.
+      (3) One model's free-tier rate-limiting truncated a response, requiring a
+      bounded-output retry (documented; one case coded by two of three coders and
+      excluded from the reliability denominator), a reproducibility hazard of
+      hosted-model dependence. (4) Cost, latency, and model availability are
+      practical constraints; the multi-model design multiplies per-cell cost.
+    affects: [P3, P4]
+    body_sections: ["Discussion — Limitations"]
+
+# ============================================================================
+# Cross-paper engagement — none. This methods paper is deliberately citation-
+# independent of the (held, unpublished) tier-bundle theory paper it demonstrated
+# on; the demonstration is described as an M&A-integration coding task, not grounded
+# on that paper's claims. No corpus self-citation.
+# ============================================================================
+corpus_precedents: []
+
+# ============================================================================
+# External anchors — all Crossref-verified substrate sources. No self-citation.
+# ============================================================================
+external_anchors:
+  - citation_key: gilardi-2023-chatgpt-outperforms-crowd
+    role: theoretical_predecessor
+    spine_nodes: [SF1, P1]
+  - citation_key: ziems-2024-can-large-language-models
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: zhang-2024-sentiment-analysis-era-llms
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: li-2024-frontiers-determining-validity
+    role: theoretical_predecessor
+    spine_nodes: [SF1, P4]
+  - citation_key: krippendorff-2004-content-analysis-introduction
+    role: methodological_source
+    spine_nodes: [SF1, P2]
+  - citation_key: hayes-2007-answering-the-call
+    role: methodological_source
+    spine_nodes: [SF1, P2]
+  - citation_key: fleiss-1971-measuring-nominal-scale
+    role: methodological_source
+    spine_nodes: [P3]
+  - citation_key: landis-1977-measurement-observer-agreement
+    role: methodological_source
+    spine_nodes: [P3]
+  - citation_key: argyle-2023-out-one-many
+    role: rival_ruled_out
+    spine_nodes: [SF1]
+  - citation_key: horton-2023-large-language-models
+    role: rival_ruled_out
+    spine_nodes: [SF1]
+
+# ============================================================================
+# Open questions / boundary edges
+# ============================================================================
+
+# ============================================================================
+# Changelog — append-only
+# ============================================================================

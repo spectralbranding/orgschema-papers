@@ -1,0 +1,108 @@
+{
+  "case_id": "E13",
+  "case": "El Paso Corporation / Kinder Morgan (2012)",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.3"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "divested EP Energy (E&P) for $7.2bn at close (day before effective date)",
+      "rationale": "gap_45=0: Section 2 (T4/T5) and Section 4 (P4) document that the natural-gas pipeline product franchise and its operating infrastructure transferred together into Kinder Morgan's midstream platform, both Houston-headquartered — no product-vs-process mismatch. gap_56=0: Section 2 (T6) states employees and operations of retained natural-gas businesses transferred alongside the processes, with E&P staff following the divested EP Energy; no structural process-vs-organization mismatch documented (headcount details [UNVERIFIED] but no gap shown). p4_pathway=0: Section 4 explicitly states none documented at the product-process interface. p5_pathway=0: Section 4 P5 marked none documented ([UNVERIFIED]), coded 0 as absence of evidence."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "divested EP Energy E&P business for $7.2 billion simultaneously with close",
+      "rationale": "The dossier notes that the pipeline product franchise and its operating infrastructure transferred together into Kinder Morgan's platform, resulting in no product-process gap (gap_45=0). Similarly, employees of the retained natural-gas businesses transferred alongside the operations, yielding no process-organization gap (gap_56=0). No post-deal disruptions at the product-process (p4_pathway=0) or process-organization (p5_pathway=0) interfaces were documented."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "gap_mitigated": "NA",
+      "performance_metric": "EP Energy divested at close for $7.2bn; natural-gas assets integrated",
+      "rationale": "Section 2 states T4 franchise and T5 infrastructure transferred together into KMI platform while upstream was carved out at close; no product-process mismatch. Section 2 and 3 document employees/operations of retained businesses transferred with no process-org fracture noted. Section 4 explicitly codes P4 and P5 as none documented for retained assets; T1 and T2 mismatches resolved by divestiture rather than manifested."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"gap_mitigated\": \"NA\", \"performance_metric\": \"divested EP Energy (E&P) for $7.2bn at close (day before effective date)\", \"rationale\": \"gap_45=0: Section 2 (T4/T5) and Section 4 (P4) document that the natural-gas pipeline product franchise and its operating infrastructure transferred together into Kinder Morgan's midstream platform, both Houston-headquartered \\u2014 no product-vs-process mismatch. gap_56=0: Section 2 (T6) states employees and operations of retained natural-gas businesses transferred alongside the processes, with E&P staff following the divested EP Energy; no structural process-vs-organization mismatch documented (headcount details [UNVERIFIED] but no gap shown). p4_pathway=0: Section 4 explicitly states none documented at the product-process interface. p5_pathway=0: Section 4 P5 marked none documented ([UNVERIFIED]), coded 0 as absence of evidence.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"divested EP Energy E&P business for $7.2 billion simultaneously with close\",\n  \"rationale\": \"The dossier notes that the pipeline product franchise and its operating infrastructure transferred together into Kinder Morgan's platform, resulting in no product-process gap (gap_45=0). Similarly, employees of the retained natural-gas businesses transferred alongside the operations, yielding no process-organization gap (gap_56=0). No post-deal disruptions at the product-process (p4_pathway=0) or process-organization (p5_pathway=0) interfaces were documented.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"performance_metric\": \"EP Energy divested at close for $7.2bn; natural-gas assets integrated\",\n  \"rationale\": \"Section 2 states T4 franchise and T5 infrastructure transferred together into KMI platform while upstream was carved out at close; no product-process mismatch. Section 2 and 3 document employees/operations of retained businesses transferred with no process-org fracture noted. Section 4 explicitly codes P4 and P5 as none documented for retained assets; T1 and T2 mismatches resolved by divestiture rather than manifested.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}
