@@ -1,0 +1,42 @@
+[project]
+name = "cascade-gap-largen"
+version = "1.0.0"
+description = "Large-N confirmatory necessary-condition test of closing-time structural gaps in acquisition-integration failure."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Dmitry Zharnikov", email = "dmitry@spectralbranding.com" },
+]
+keywords = [
+    "mergers and acquisitions",
+    "necessary condition analysis",
+    "case-control design",
+    "inter-rater reliability",
+    "large language model coding",
+]
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "pyyaml>=6.0",
+    "huggingface_hub>=0.24",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/spectralbranding/orgschema-papers/tree/main/cascade-gap-largen"
+"Zenodo" = "https://doi.org/10.5281/zenodo.21755969"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+    "mypy>=1.10",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

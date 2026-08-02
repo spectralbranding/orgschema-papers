@@ -1,0 +1,41 @@
+# DATA_MANIFEST.yaml — Cascade-Gap Large-N Study
+# External data dependencies per the Research-as-Repository / PUBLIC_MIRROR_STANDARD protocol.
+# All paths are relative to the package root (cascade-gap-largen/).
+#
+# The bulky evidence corpus and raw model-call logs are NOT vendored in git;
+# the canonical copy lives on Hugging Face (DOI minted at deposit). reproduce.sh
+# downloads them into the working tree before running the pipeline.
+
+hf_archive:
+  repo: "spectralbranding/tba-cascade-gap-largen"
+  repo_type: "dataset"
+  doi: "10.57967/hf/9805"    # HF dataset DOI
+  url: "https://huggingface.co/datasets/spectralbranding/tba-cascade-gap-largen"
+  contents:
+    - path: "full_draw_dossiers/"
+      description: "700 blinded per-case evidence dossiers (350 structural + 350 outcome), built from public SEC EDGAR filings; the coder-facing evidence base."
+      approx_size: "494 MB"
+    - path: "full_draw_code_out/"
+      description: "700 per-case coded records (one structural + one outcome JSON per case) plus reliability outputs."
+      approx_size: "5.5 MB"
+    - path: "logs_fulldraw/"
+      description: "700 JSONL model-call logs — every rater call with full prompt, parameters, and response (secrets-clean)."
+      approx_size: "25 MB"
+
+# Vendored in git (small analysis inputs), listed for completeness:
+local_data:
+  - path: "data/full_draw_dataset.csv"
+    description: "The 350-case coded dataset: per-construct codes, outcome status, rotation assignment. The primary analysis input."
+  - path: "data/full_draw_selection.csv"
+    description: "The gated case-control sample of record (N=350, all PASS, outcome-blind at draw time)."
+  - path: "data/full_draw_gate_log.csv"
+    description: "Build-time gate decisions per drawn case."
+  - path: "data/full_draw_curated_gap_deals.csv"
+    description: "EDGAR-verified curated gap-prone top-up deals (Amendment 3)."
+
+provenance:
+  paper: "A Large-N Confirmatory Necessary-Condition Test of Closing-Time Structural Gaps in Acquisition Integration Failure"
+  concept_doi: "10.5281/zenodo.21755969"
+  version_doi: "10.5281/zenodo.21755970"
+  seed: 20260729
+  source_of_record: "SEC EDGAR (public filings)"

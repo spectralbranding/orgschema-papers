@@ -1,0 +1,51 @@
+stratum,cik,company,form,filing_date,accession,sic,sic_desc,size_usd,size_metric,deal_value_usd,parent_cik,signal
+distressed,1376812,Patriot Coal CORP  (CIK 0001376812),10-K,2012-08-09,0000950103-12-004067,1220,Silver Ores,3873643000,Assets,,,curated:Patriot Coal Chapter 11
+distressed,1301063,"Alpha Natural Resources, Inc.  (CIK 0001301063)",8-K,2015-11-20,0001301063-15-000070,1221,Bituminous Coal & Lignite Surface Mining,12847484000,Assets,,,curated:Alpha Natural Resources Chapter 11
+distressed,837173,"Walter Energy, Inc.  (CIK 0000837173)",8-K,2015-04-15,0000837173-15-000014,1220,Silver Ores,5883442000,Assets,,,curated:Walter Energy Chapter 11
+distressed,1064728,PEABODY ENERGY CORP  (BTU)  (CIK 0001064728),8-K,2016-08-10,0001193125-16-677563,1221,Bituminous Coal & Lignite Surface Mining,13845100000,Assets,,,curated:Peabody Energy Chapter 11
+distressed,1037676,ARCH COAL INC  (ARCH)  (CIK 0001037676),8-K,2016-10-11,0001104659-16-149399,1221,Bituminous Coal & Lignite Surface Mining,8823184000,Assets,,,curated:Arch Coal Chapter 11
+distressed,38079,SABINE OIL & GAS CORP  (CIK 0000038079),8-K,2015-05-22,0001104659-15-040093,1311,Crude Petroleum & Natural Gas,2582851000,Assets,,,curated:Sabine Oil Gas Chapter 11
+distressed,1548691,Samson Resources Corp  (CIK 0001548691),10-K,2015-03-31,0001193125-15-113983,1311,Crude Petroleum & Natural Gas,7437686000,Assets,,,curated:Samson Resources Chapter 11
+distressed,1326428,"LINN ENERGY, LLC  (CIK 0001326428)",8-K,2016-05-24,0001193125-16-599897,1311,Crude Petroleum & Natural Gas,18926994000,Assets,,,curated:LINN Energy Chapter 11
+distressed,1022646,ULTRA PETROLEUM CORP  (CIK 0001022646),10-K,2016-02-29,0001193125-16-484243,1311,Crude Petroleum & Natural Gas,4266030000,Assets,,,curated:Ultra Petroleum Chapter 11
+distressed,1349436,SANDRIDGE ENERGY INC  (SD)  (CIK 0001349436),8-K,2016-10-07,0001193125-16-733811,1311,Crude Petroleum & Natural Gas,7259225000,Assets,,,curated:SandRidge Energy Chapter 11
+distressed,1357371,Breitburn Energy Partners LP  (CIK 0001357371),8-K,2016-05-26,0001357371-16-000348,1311,Crude Petroleum & Natural Gas,7638334000,Assets,,,curated:Breitburn Energy Chapter 11
+distressed,1282648,HALCON RESOURCES CORP  (BATL)  (CIK 0001282648),8-K,2016-06-20,0001104659-16-128194,1311,Crude Petroleum & Natural Gas,6434475000,Assets,,,curated:Halcon Resources Chapter 11
+distressed,1533924,"Midstates Petroleum Company, Inc.  (AMPY)  (CIK 0001533924)",8-K,2016-09-07,0001104659-16-143491,1311,Crude Petroleum & Natural Gas,2475793000,Assets,,,curated:Midstates Petroleum Chapter 11
+distressed,96289,RADIOSHACK CORP  (CIK 0000096289),8-K,2015-04-02,0001193125-15-117783,5731,"Retail-Radio, Tv & Consumer Electronics Stores",2130700000,Assets,,,curated:RadioShack Chapter 11
+distressed,1310067,SEARS HOLDINGS CORP  (CIK 0001310067),8-K,2018-01-10,0001193125-18-008265,5311,Retail-Department Stores,11337000000,Assets,,,curated:Sears Holdings Chapter 11
+distressed,878079,BON TON STORES INC  (CIK 0000878079),8-K,2018-01-03,0001104659-18-000532,5311,Retail-Department Stores,2789497000,Revenues,,,curated:Bon-Ton Stores Chapter 11
+distressed,1400891,"iHeartMedia, Inc.  (IHRT, IHETW, IHRTB)  (CIK 0001400891)",8-K,2018-07-17,0001193125-18-219041,4832,Radio Broadcasting Stations,14285970000,Assets,,,curated:iHeartMedia Chapter 11
+distressed,1058623,CUMULUS MEDIA INC  (CMLS)  (CIK 0001058623),8-K,2017-05-15,0001058623-17-000028,4832,Radio Broadcasting Stations,3713386000,Assets,,,curated:Cumulus Media Chapter 11
+distressed,1105055,"DYNEGY HOLDINGS, LLC  (CIK 0001105055)",8-K,2012-03-16,0001104659-12-018950,4911,Electric Services,9949000000,Assets,,,curated:Dynegy Chapter 11
+distressed,1023291,Energy Future Holdings Corp /TX/  (CIK 0001023291),10-K,2014-05-01,0001193125-14-176746,4911,Electric Services,44194000000,Assets,,,curated:Energy Future Holdings Chapter 11
+distressed,858339,CAESARS ENTERTAINMENT Corp  (CIK 0000858339),8-K,2015-01-15,0001193125-15-011354,7011,Hotels & Motels,27475000000,Assets,,,curated:Caesars Entertainment Operating Chapter 11
+distressed,6201,AMR CORP  (AAL)  (CIK 0000006201),8-K,2012-01-05,0000006201-12-000001,4512,"Air Transportation, Scheduled",44811000000,Assets,,,curated:AMR Corp Chapter 11
+distressed,75208,OVERSEAS SHIPHOLDING GROUP INC  (CIK 0000075208),10-K,2012-02-29,0001144204-12-011875,4412,Deep Sea Foreign Transportation of  Freight,4384695000,Assets,,,curated:Overseas Shipholding Chapter 11
+distressed,31235,EASTMAN KODAK CO  (KODK)  (CIK 0000031235),8-K,2012-12-28,0000031235-12-000109,3861,Photographic Equipment & Supplies,6929000000,Assets,,,curated:Eastman Kodak Chapter 11
+distressed,1394954,GT Advanced Technologies Inc.  (CIK 0001394954),8-K,2014-12-09,0001445305-14-005438,3674,Semiconductors & Related Devices,1508010000,Assets,,,curated:GT Advanced Technologies Chapter 11
+distressed,1585854,SunEdison Semiconductor Ltd  (CIK 0001585854),8-K,2016-08-18,0001193125-16-684473,3674,Semiconductors & Related Devices,1383700000,Assets,,,curated:SunEdison Chapter 11
+distressed,813781,EXIDE TECHNOLOGIES  (CIK 0000813781),10-K,2013-06-14,0000813781-13-000016,3690,"Miscellaneous Electrical Machinery, Equipment & Supplies",2226586000,Assets,,,curated:Exide Technologies Chapter 11
+roll_up,1665918,US Foods Holding Corp.  (USFD)  (CIK 0001665918),S-1,2016-02-09,0001193125-16-455364,5140,Wholesale-Groceries & Related Products,24175000000,RevenueFromContractWithCustomerExcludingAssessedTax,,,curated:US Foods roll-up
+roll_up,1378992,BERRY PLASTICS GROUP INC  (BERY)  (CIK 0001378992),10-K,2012-12-17,0000919465-12-000024,3089,"Plastics Products, NEC",5419000000,Assets,,,curated:Berry Plastics roll-up
+roll_up,1166003,"XPO Logistics, Inc.  (XPO)  (CIK 0001166003)",8-K,2015-11-02,0001193125-15-361214,4700,Transportation Services,15381000000,Revenues,,,curated:XPO Logistics roll-up
+roll_up,1478242,Quintiles Transnational Holdings Inc.  (IQV)  (CIK 0001478242),S-4,2016-08-11,0001193125-16-678654,8731,Services-Commercial Physical & Biological Research,23235000000,Assets,,,curated:Quintiles IMS roll-up
+roll_up,1318220,"Waste Connections, Inc.  (WCN)  (CIK 0001318220)",8-K,2016-08-12,0001144204-16-118617,4953,Refuse Systems,12627329000,Assets,,,curated:Waste Connections roll-up
+roll_up,1533932,"Vantiv, Inc.  (CIK 0001533932)",8-K,2017-09-11,0001193125-17-281198,7389,"Services-Business Services, NEC",28950000000,Assets,,,curated:Vantiv payments roll-up
+roll_up,895655,JARDEN CORP  (CIK 0000895655),8-K,2015-12-14,0001193125-15-402097,5190,Wholesale-Miscellaneous Nondurable Goods,14293100000,Assets,,,curated:Jarden consumer roll-up
+roll_up,1590714,Platform Specialty Products Corp  (ESI)  (CIK 0001590714),8-K,2015-05-12,0001171843-15-002760,2890,Miscellaneous Chemical Products,10926700000,Assets,,,curated:Platform Specialty Products buy-and-build
+roll_up,1420800,Colfax CORP  (ENOV)  (CIK 0001420800),8-K,2012-02-24,0001193125-12-078080,3842,"Orthopedic, Prosthetic & Surgical Appliances & Supplies",7927833000,Assets,,,curated:Colfax roll-up
+roll_up,882835,ROPER TECHNOLOGIES INC  (ROP)  (CIK 0000882835),8-K,2015-04-27,0000882835-15-000012,3823,"Industrial Instruments For Measurement, Display, and Control",14324927000,Assets,,,curated:Roper serial acquirer
+joint_venture,24545,"MOLSON COORS BREWING CO  (TAP, TAP-A)  (CIK 0000024545)",8-K,2008-05-06,0001199073-08-000347,2082,Malt Beverages,12697600000,Assets,,,curated:MillerCoors JV
+joint_venture,29915,DOW CHEMICAL CO /DE/  (CIK 0000029915),10-K,2011-02-18,0001193125-11-040023,2821,"Plastic Materials, Synth Resins & Nonvulcan Elastomers",70206000000,Assets,,,curated:Sadara JV (Dow/Aramco)
+joint_venture,1163165,CONOCOPHILLIPS  (COP)  (CIK 0001163165),10-K,2011-02-23,0000950123-11-016957,2911,Petroleum Refining,162881000000,Assets,,,curated:Australia Pacific LNG JV
+joint_venture,4281,"ALCOA INC  (HWM, HWM-P)  (CIK 0000004281)",8-K,2009-10-13,0001193125-09-206864,3350,Rolling Drawing & Extruding of  Nonferrous Metals,41466000000,Assets,,,curated:Maaden aluminum JV
+joint_venture,37996,"FORD MOTOR CO  (F, F-PB, F-PC, F-PD)  (CIK 0000037996)",8-K,2012-03-15,0000037996-12-000015,3711,Motor Vehicles & Passenger Car Bodies,210945000000,Assets,,,curated:Ford China JV
+joint_venture,1166691,"COMCAST CORP  (CCZ, CMCSA)  (CIK 0001166691)",10-K,2011-02-25,0001193125-11-047243,4841,Cable & Other Pay Television Services,164971000000,Assets,,,curated:NBCUniversal JV
+joint_venture,101778,MARATHON OIL CORP  (MRO)  (CIK 0000101778),8-K,2011-05-26,0001193125-11-151791,1311,Crude Petroleum & Natural Gas,73621000000,Revenues,,,curated:Marathon LNG JV
+joint_venture,831259,FREEPORT-MCMORAN INC  (FCX)  (CIK 0000831259),8-K,2014-11-14,0001193125-14-413217,1000,Metal Mining,64009000000,Assets,,,curated:Grasberg JV
+joint_venture,18230,CATERPILLAR INC  (CAT)  (CIK 0000018230),10-K,2012-02-21,0001104659-12-011331,3531,Construction Machinery & Equip,90541000000,Assets,,,curated:Caterpillar JV
+joint_venture,93410,CHEVRON CORP  (CVX)  (CIK 0000093410),10-K,2009-02-26,0000891618-09-000054,2911,Petroleum Refining,273005000000,Revenues,,,curated:Gorgon LNG JV
+joint_venture,732712,VERIZON COMMUNICATIONS INC  (VZ)  (CIK 0000732712),8-K,2011-07-22,0001193125-11-194187,4813,Telephone Communications (No Radiotelephone),276675000000,Assets,,,curated:Verizon Wireless JV
+joint_venture,34088,EXXON MOBIL CORP  (XOM)  (CIK 0000034088),8-K,2012-04-26,0000034088-12-000017,2911,Petroleum Refining,467029000000,Revenues,,,curated:ExxonMobil upstream JV
+joint_venture,24741,CORNING INC /NY  (GLW)  (CIK 0000024741),8-K,2012-01-31,0001299933-12-000243,3357,Drawing & Insulating of  Nonferrous Wire,30063000000,Assets,,,curated:Dow Corning JV

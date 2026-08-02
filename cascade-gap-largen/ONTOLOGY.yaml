@@ -1,0 +1,44 @@
+# ONTOLOGY.yaml module - 2026bi (cascade-gap large-N confirmatory study)
+#
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py; rendered per-paper
+# by render_paper_glossary.py.
+#
+# 2026bi is the empirical large-N confirmatory test of the cascade-gap
+# necessary-condition claim. It introduces the OPERATIONAL constructs the study
+# codes and estimates (the measured cascade gap, the cascade-type failure
+# outcome, and the structural safe-harbor result), and imports the tier
+# vocabulary and the fork/cascade/admissibility apparatus from the parent
+# ontology and the companion formal theory.
+
+paper_key: 2026bi
+schema_version: 0.1
+
+owns:
+  - term_key: cascade-gap
+    label: "Cascade gap"
+    canonical_form: "cascade gap"
+    definition: "A closing-time structural mismatch in which a customer-facing product or asset, or an operational process, crosses the ownership boundary without the adjacent tier that produces or governs it transferring or aligning coherently alongside it; operationalized as a product-process or process-organization gap coded from closing-time deal documents."
+    first_section: "Introduction; Method — Measurement"
+  - term_key: cascade-type-failure
+    label: "Cascade-type integration failure"
+    canonical_form: "cascade-type failure"
+    definition: "A realized integration disruption located specifically at the product-process or process-organization interface over the three-to-five-year post-deal horizon, as distinct from acquisition failure attributable to price, market, or financing causes."
+    first_section: "Introduction; Method — Outcome Coding"
+  - term_key: structural-safe-harbor
+    label: "Structural safe harbor"
+    canonical_form: "structural safe harbor"
+    definition: "The empirical relationship in which cascade-conformance at closing — coherent joint transfer of product, process, and organization — is associated with a low, bounded rate of cascade-type failure, supporting a pre-close negative screen that operates on a fact known at signing rather than on a post-hoc integration judgment."
+    first_section: "Results — Confirmatory Test; Discussion — Practical Implications"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+  - {term_key: cascade-rule}
+  - {term_key: admissibility-predicate}
+
+refines: []
+

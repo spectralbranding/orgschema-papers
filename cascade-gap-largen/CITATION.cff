@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this paper, please cite it as below."
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+title: "A Large-N Confirmatory Necessary-Condition Test of Closing-Time Structural Gaps in Acquisition Integration Failure"
+version: 1.0.0
+date-released: 2026-08-02
+url: "https://doi.org/10.5281/zenodo.21755969"
+repository-code: "https://github.com/spectralbranding/orgschema-papers"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21755969"
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.21755970"
+    description: "Zenodo version DOI (v1.0.0)"
+keywords:
+  - mergers and acquisitions
+  - post-merger integration
+  - necessary condition analysis
+  - case-control design
+  - inter-rater reliability
+  - structural gap
+  - safe harbor
+  - large language model coding
+license:
+  - CC-BY-4.0
+  - MIT
+type: article
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zharnikov
+      given-names: Dmitry
+  title: "A Large-N Confirmatory Necessary-Condition Test of Closing-Time Structural Gaps in Acquisition Integration Failure"
+  year: 2026
+  doi: "10.5281/zenodo.21755969"
+  url: "https://doi.org/10.5281/zenodo.21755969"

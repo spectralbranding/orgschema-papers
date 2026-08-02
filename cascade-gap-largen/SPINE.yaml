@@ -1,0 +1,617 @@
+# SPINE.yaml — Cascade-Gap Large-N (2026bi)
+#
+# GENERATIVE spine, authored BEFORE paper.md prose per
+# SPINE_FIRST_DRAFTING_PROTOCOL.md. Every prose claim in paper.md traces to a
+# node here. This is an EMPIRICAL paper (author-collected coded data), so it
+# uses the v0.2 schema (observation -> method -> measurement -> finding ->
+# proposition chain). The confirmatory result is F2 (weak necessity; non-empty
+# safe-harbor cell; AC1 the primary reliability read), and the frame-precision
+# result is F3. The hypothesis under test is P1; its verdict on this sample is
+# PARTIAL / BOUNDED, reported honestly.
+#
+# Rule 0aб: rendered fields (statement / findings text / boundary_conditions /
+# external_anchors.* / corpus_precedents.* / top-level scalars) carry NO
+# provenance lives in per-node provenance.source_log_event and the top-level
+# authoring_notes / changelog blocks (dropped on public export).
+
+spine_version: "0.2"
+spine_doc_version: "0.1.0"
+schema_version: "0.2"
+paper_key: "2026bi"
+provenance_mode: empirical
+title: >-
+  A Large-N Confirmatory Necessary-Condition Test of Closing-Time Structural
+  Gaps in Acquisition Integration Failure
+
+thesis: >-
+  A closing-time cascade gap — a structural product-process or
+  process-organization mismatch created when an asset or operational process
+  crosses the ownership boundary without the adjacent tier that produces or
+  governs it transferring or aligning coherently alongside it — was tested,
+  confirmatorily and at large N, as a necessary condition for a cascade-type
+  integration failure realized over a three-to-five-year horizon. On a
+  case-control sample of 350 completed transactions coded from disjoint
+  evidence by separate raters, the necessary-condition relationship is real but
+  weaker than the exploratory small-sample reading predicted: conditional on no
+  detected gap, the cascade-type failure rate is low (7.3%, exact upper 95%
+  bound 11.2%) but not zero, so the structural safe harbor bounds rather than
+  eliminates the failure mode. The measurement-and-sampling design — coding the
+  gap and the outcome from disjoint documents by rotated raters, and drawing the
+  sample on deal structure rather than on outcome — is a contribution alongside
+  the estimate, and the sampling frame's rate of announced-but-unconsummated
+  bids is itself a reportable methodological finding.
+
+# ============================================================================
+# Stylized fact — the motivating problem (Introduction)
+# ============================================================================
+stylized_facts:
+  - id: SF1
+    statement: >-
+      Post-acquisition integration outcomes are a first-order question in the
+      M&A literature, yet meta-analysis attributes their variance to
+      unidentified moderators and integration failure concentrates at the
+      process-organization boundary; the field lacks a structural, pre-close,
+      checkable predictor of a specific integration-failure mode that operates
+      on a fact known at signing rather than on a post-hoc management judgment.
+    aggregates_findings: []
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: "Field reviews establishing integration outcomes as a central, unresolved M&A question."
+        citation_keys: [haleblian-2009-taking-stock-what, cartwright-2006-thirty-years-mergers, graebner-2017-process-postmerger-integration]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: "Meta-analytic result that post-acquisition performance has unidentified moderators."
+        citation_keys: [king-2004-metaanalyses-postacquisition-performance]
+        citation_role: motivating_problem
+      - type: citation
+        anchor: "Integration failure concentrates at the process-organization boundary."
+        citation_keys: [larsson-1999-integrating-strategic-organizational]
+        citation_role: motivating_problem
+    body_sections: ["Introduction"]
+
+# ============================================================================
+# Observations — the L-layer artifact this paper analyzes
+# ============================================================================
+observations:
+  - id: O1
+    statement: >-
+      A case-control sample of 350 completed transactions (175 gap-prone deals
+      across four structural strata — carve-outs, joint ventures, roll-ups,
+      distressed asset deals — plus 175 matched going-concern controls) was
+      drawn from public primary filings blind to outcome, and each transaction
+      yielded a structural sub-dossier (built only from closing-time deal
+      documents) and a disjoint outcome sub-dossier (built only from the
+      three-to-five-year subsequent record).
+    instrument: "Public primary-filing corpus; seeded outcome-blind structural draw"
+    conditions_at_capture: "Completed >=$1bn US transactions, 2006-2018 closing era"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+      under_conditions: "Seeded reproducible draw; registered before any coded datum"
+    body_sections: ["Method — Sample and Data"]
+
+# ============================================================================
+# Methods — first-class methodology nodes
+# ============================================================================
+methods:
+  - id: M1
+    statement: >-
+      Construct-validity separation: the structural gap and the realized outcome
+      were coded in two disjoint passes, each from its own sub-dossier only, by
+      rotated raters, so that the model coding the gap for a case was not the
+      model coding that case's outcome, removing same-source and same-rater
+      shared-method variance.
+    type: "qualitative_coding"
+    inputs: [O1]
+    outputs: [m1]
+    code_anchor: "full_draw_code.py"
+    reproducibility:
+      seed: "20260729 (per-construct three-of-four rater rotation)"
+      version: "deterministic rotation map + JSONL-logged calls"
+      runtime_environment: "Four frontier reasoning models as blinded raters"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+      under_conditions: "Blinded: raters never saw the hypothesis, predicted direction, or case-vs-control status"
+    evidence:
+      - type: citation
+        anchor: "Per-construct inter-rater reliability computed as Fleiss' kappa across the three-rater slots."
+        citation_keys: [fleiss-1971-measuring-nominal-scale]
+        citation_role: methodological_source
+      - type: citation
+        anchor: "Prevalence-adjusted agreement (Gwet's AC1) is the pre-registered primary reliability read for the rare outcome cell, where kappa is unstable under high agreement with low base rate."
+        citation_keys: [gwet-2008-computing-interrater-reliability]
+        citation_role: methodological_source
+    body_sections: ["Method — Measurement and Reliability"]
+
+  - id: M2
+    statement: >-
+      Case-control sampling on deal structure: the sample was stratified by a
+      closing-time structural property (the deal type) and never by the outcome,
+      over-sampling four gap-prone structural strata against matched
+      going-concern controls of the same industry, size band, and era, so the
+      at-risk structural tail is populated without selecting on the dependent
+      variable.
+    type: "archival_search"
+    inputs: [O1]
+    outputs: [m2]
+    code_anchor: "draw_full_sample.py"
+    reproducibility:
+      seed: "20260729 (seeded blind draw + build-time gate)"
+      version: "gate log retained for every included/replaced case"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+      under_conditions: "Inclusion pre-registered, blind to the outcome"
+    evidence:
+      - type: citation
+        anchor: "Matched case-control design; the matched control set supports the secondary outcome model, not the primary necessary-condition test."
+        citation_keys: [rosenbaum-1983-central-role-propensity]
+        citation_role: methodological_source
+    body_sections: ["Method — Sample and Data"]
+
+  - id: M3
+    statement: >-
+      The primary test is Necessary Condition Analysis for the dichotomous case:
+      the conditional failure rate in the no-gap cell with an exact binomial
+      upper bound (the safe-harbor / empty-cell criterion), necessity
+      consistency, and the ceiling effect size, computed only on cases with a
+      determinable outcome.
+    type: "statistical_analysis"
+    inputs: [m1, m2]
+    outputs: [m3]
+    code_anchor: "analyze_full_draw.py"
+    reproducibility:
+      seed: "deterministic (exact Clopper-Pearson interval; no RNG)"
+      version: "fixture self-check on the study's own 2x2 shape"
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+      under_conditions: "55 outcome-uncertain cases set aside before the 2x2 is formed"
+    evidence:
+      - type: citation
+        anchor: "Necessary Condition Analysis supplies the ceiling-line logic and effect size for an X-is-necessary-for-Y structure."
+        citation_keys: [dul-2016-necessary-condition-analysis]
+        citation_role: methodological_source
+    body_sections: ["Method — Analysis Plan"]
+
+# ============================================================================
+# Measurements — derived data
+# ============================================================================
+measurements:
+  - id: m1
+    statement: >-
+      Per-construct inter-rater reliability across three rater slots: for the
+      structural gap, Gwet's AC1 = .789 (Fleiss' kappa = .514); for the outcome
+      pathway, Gwet's AC1 = .488 (Fleiss' kappa = .069).
+    source_observations: [O1]
+    generating_method: M1
+    value: "struct AC1 .789 / kappa .514; outcome AC1 .488 / kappa .069"
+    units: "agreement coefficients on nominal codes"
+    provenance:
+      created_by: "tool:full_draw_code.py"
+      created_at: "2026-08-02"
+    body_sections: ["Results — Reliability"]
+
+  - id: m2
+    statement: >-
+      The gap-by-outcome contingency on the 295 cases with a determinable
+      outcome: 15 gap-and-failure, 88 gap-and-no-failure, 14 no-gap-and-failure,
+      178 no-gap-and-no-failure.
+    source_observations: [O1]
+    generating_method: M2
+    value: "n11=15, n10=88, n01=14, n00=178 (55 outcome-uncertain set aside)"
+    units: "case counts"
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+    body_sections: ["Results — Confirmatory Test"]
+
+  - id: m3
+    statement: >-
+      Necessary-condition quantities: conditional failure rate given no gap =
+      7.3% (exact Clopper-Pearson upper 95% bound 11.2%); necessity consistency
+      (share of failures carrying a gap) = 51.7%; the no-gap/failure cell is not
+      empty.
+    source_measurements: [m2]
+    generating_method: M3
+    value: "P(fail|no gap)=.073 (upper .112); P(gap|fail)=.517; safe-harbor cell non-empty"
+    units: "conditional probabilities with exact CI"
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+    body_sections: ["Results — Confirmatory Test"]
+
+# ============================================================================
+# Findings — inferential claims aggregating measurements
+# ============================================================================
+findings:
+  - id: F1
+    statement: >-
+      Structural-gap coding is reliable at the level content analysis expects
+      (AC1 = .789); outcome-pathway coding shows a large gap between a very low
+      Fleiss' kappa (.069) and a moderate AC1 (.488), the signature of the
+      prevalence paradox — raw agreement is high because the failure pathway is
+      rare, and kappa is deflated by the near-degenerate marginals — which is
+      exactly why the design pre-registered AC1 as the primary reliability read
+      for the rare cell.
+    source_measurements: [m1]
+    generating_method: M1
+    statistical_strength: "N=350 cases, 3 rater slots per construct"
+    antecedents: [O1, M1, m1]
+    conditions: "C1"
+    falsifier: >-
+      If AC1 and kappa converged on the outcome construct despite a rare
+      positive class, the prevalence-paradox explanation would not hold.
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: "Kappa's instability under high agreement with skewed marginals is the documented motivation for AC1."
+        citation_keys: [gwet-2008-computing-interrater-reliability, fleiss-1971-measuring-nominal-scale]
+        citation_role: methodological_source
+    body_sections: ["Results — Reliability", "Discussion — Measurement"]
+
+  - id: F2
+    statement: >-
+      The necessary-condition relationship holds directionally but is weaker
+      than the exploratory small-sample reading predicted: the failure rate
+      conditional on no detected gap is low (7.3%, exact upper 95% bound 11.2%)
+      yet the safe-harbor cell is not empty (14 cases failed at the
+      product-process or process-organization interface with no coded structural
+      gap), and only about half of the failures carried a gap (necessity
+      consistency 51.7%). The large-N test therefore bounds the safe harbor
+      rather than confirming a perfect one, and corrects the perfect-safe-harbor
+      artifact of the small exploratory sample.
+    source_measurements: [m2, m3]
+    generating_method: M3
+    statistical_strength: "N=295 with determinable outcome; exact Clopper-Pearson interval"
+    antecedents: [O1, M2, M3, m2, m3]
+    conditions: "C1"
+    falsifier: >-
+      A no-gap/failure count of zero (an empty safe-harbor cell) with a tight
+      exact upper bound would have confirmed the strong safe-harbor claim; the
+      14 no-gap failures falsify it.
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: "The ceiling-line / empty-cell logic and effect size come from Necessary Condition Analysis."
+        citation_keys: [dul-2016-necessary-condition-analysis]
+        citation_role: methodological_source
+      - type: citation
+        anchor: "The failure phenomenon concentrated at the process-organization boundary is the pattern the cascade gap formalizes."
+        citation_keys: [larsson-1999-integrating-strategic-organizational]
+        citation_role: motivating_problem
+    body_sections: ["Results — Confirmatory Test", "Discussion"]
+
+  - id: F3
+    statement: >-
+      Full-text search on distressed-deal filings over-includes
+      announced-but-unconsummated bids: about 19% of the distressed stratum
+      (8 of 43) was a terminated, expired, or lost bid where no ownership
+      boundary was ever crossed, and treating an absent post-deal record as
+      UNCERTAIN rather than as no-failure set aside 55 outcome-uncertain cases so
+      that absence of evidence never filled the no-failure cell — a reportable
+      methodological finding about archival deal sampling in its own right.
+    source_observations: [O1]
+    generating_method: M2
+    statistical_strength: "8/43 distressed; 55/350 set aside as outcome-uncertain"
+    antecedents: [O1, M2]
+    conditions: "C1"
+    falsifier: >-
+      If distressed full-text search returned only consummated deals, the
+      over-inclusion finding would not hold.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Results — Frame Precision", "Discussion — Method"]
+
+  - id: F4
+    statement: >-
+      Sufficiency is weak and is reported but not headlined: the failure rate
+      conditional on a detected gap is 14.6%, so a gap makes a cascade-type
+      failure more possible without making it likely, consistent with a
+      necessary-but-not-sufficient structure rather than a predictive one.
+    source_measurements: [m2]
+    generating_method: M3
+    statistical_strength: "N=295; structure-selected sample inflates this direction, hence not headlined"
+    antecedents: [m2, M3, A1]
+    conditions: "C1"
+    falsifier: "A high P(fail|gap) with a matched sample would indicate sufficiency, not mere necessity."
+    provenance:
+      created_by: "tool:analyze_full_draw.py"
+      created_at: "2026-08-02"
+    body_sections: ["Results — Confirmatory Test"]
+
+# ============================================================================
+# Propositions — the claims under test and their implications
+# ============================================================================
+propositions:
+  - id: P1
+    statement: >-
+      Pre-registered confirmatory hypothesis: a closing-time cascade gap is a
+      necessary condition for a cascade-type integration failure, and
+      cascade-conformance is a structural safe harbor against that failure mode.
+      On this sample the hypothesis is partially supported — the necessary-
+      condition direction is real (a low conditional failure rate given no gap)
+      but bounded rather than absolute (a non-empty safe-harbor cell and roughly
+      even-odds necessity consistency), so the strong safe-harbor claim is
+      revised to a bounded one.
+    type: empirical_finding
+    conditions: "C1"
+    antecedents: [F2]
+    assumptions: [AA1, AA2]
+    ruled_out_rivals: [A1]
+    falsifier: >-
+      A cascade-type failure occurring with no cascade gap present would weaken
+      necessity; a materially non-trivial no-gap failure rate weakens the safe
+      harbor. Both are observed at a bounded, non-disqualifying level.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: >-
+          The six-tier failure-propagation ontology supplies the tier structure
+          and the collapse states the cascade gap specializes; cited as the
+          claim's provenance and motivation, with the tested hypothesis stated
+          self-contained.
+        citation_keys: [zharnikov-2026-dual-hierarchies-organizational-transferability-six]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: "Modular-systems theory: a cascade gap is a modularity mismatch at the transaction event; tier decoupling is the design-rules boundary."
+        citation_keys: [baldwin-2000-design-rules-power, schilling-2000-toward-general-modular]
+        citation_role: theoretical_predecessor
+      - type: dataset_anchor
+        anchor: "F2 is the confirmatory evidence for P1."
+    body_sections: ["Introduction", "Results — Confirmatory Test", "Discussion"]
+
+  - id: P2
+    statement: >-
+      Because the safe harbor is bounded rather than absolute, the practical
+      deliverable is a probabilistic pre-close negative screen: the absence of a
+      structural gap at closing marks a deal as low-risk for this specific
+      failure mode (about a 7% residual rate with a tight upper bound), not
+      risk-free, and the screen operates on a fact known at signing — the deal's
+      structural transfer content — rather than on a post-hoc integration
+      judgment.
+    type: management_outcome
+    conditions: "C1"
+    antecedents: [P1, F2]
+    falsifier: >-
+      If the no-gap residual failure rate were high or its upper bound wide, the
+      absence of a gap would carry no decision-relevant information and no screen
+      would be warranted.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: "Post-acquisition performance has unidentified moderators; a structural pre-close signal addresses that opening."
+        citation_keys: [king-2004-metaanalyses-postacquisition-performance]
+        citation_role: motivating_problem
+    body_sections: ["Discussion — Practical Implications"]
+
+# ============================================================================
+# Alternative explanations — rivals addressed by design
+# ============================================================================
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Rival: the low no-gap failure rate is an artifact of selecting on the
+      outcome (selection on the dependent variable), which can manufacture an
+      empty or near-empty safe-harbor cell.
+    rules_out_required: [F2]
+    ruled_out_by: [M2, F2]
+    rules_out_status: "rejected"
+    reasoning: >-
+      The sample is drawn on deal structure, blind to the outcome, so the
+      no-gap cell is populated by structure-based inclusion, not by outcome
+      selection; and only the necessary-condition / safe-harbor direction is
+      headlined, with sufficiency reported but not headlined precisely because a
+      structure-selected sample can inflate the conditional failure rate given a
+      gap.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Method — Identification", "Results — Confirmatory Test"]
+
+# ============================================================================
+# Robustness checks
+# ============================================================================
+robustness_checks:
+  - id: RC1
+    statement: >-
+      A secondary outcome model — logistic regression and a discrete-time
+      survival specification of the failure pathway on the structural gap with
+      industry, size, era, relatedness, and acquirer-experience controls — is
+      held to a robustness role, subordinate to the primary necessary-condition
+      test, because the structure-selected sample supports necessity inference
+      more cleanly than an average-effect estimate.
+    varied_parameter: "outcome model specification and controls"
+    result_stability: "reported as robustness, not headline"
+    affects_nodes: [F2, F4]
+    source_method: M3
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    evidence:
+      - type: citation
+        anchor: "Discrete-time survival treatment for the event-history outcome."
+        citation_keys: [allison-1982-discretetime-methods-analysis]
+        citation_role: methodological_source
+      - type: citation
+        anchor: "Capability-gap / internal-friction mechanism as a control-relevant covariate and the closest prior mechanism to the cascade gap."
+        citation_keys: [capron-2009-selection-capability-how]
+        citation_role: theoretical_predecessor
+    body_sections: ["Results — Robustness"]
+
+# ============================================================================
+# Assumption atoms — assumed-without-test premises
+# ============================================================================
+assumption_atoms:
+  - id: AA1
+    statement: >-
+      When the post-deal record yields no determinable outcome, the case is
+      coded UNCERTAIN and set aside rather than counted as no-failure, so that
+      absence of evidence is never treated as evidence of no failure.
+    type: "coding_rule_trust"
+    relaxable: true
+    relaxation_consequence: >-
+      Counting outcome-uncertain cases as no-failure would inflate the
+      no-gap/no-failure cell and manufacture a stronger safe harbor than the
+      determinable-outcome data support.
+    affects: [F2, F3]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Method — Outcome Coding"]
+
+  - id: AA2
+    statement: >-
+      Frontier language models coding from an evidentiary dossier are treated as
+      a measurement instrument whose reliability is estimated per construct;
+      reliability is necessary but not sufficient for validity, and the
+      instrument's agreement is not evidence that its codes are correct.
+    type: "instrument_trust"
+    relaxable: true
+    relaxation_consequence: >-
+      If the raters share a systematic bias, high agreement would coexist with
+      invalid codes; the separated-pass, rotated-rater design limits but does not
+      eliminate shared-method bias.
+    affects: [F1, F2]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Method — Measurement and Reliability", "Discussion — Limitations"]
+
+# ============================================================================
+# Boundary conditions
+# ============================================================================
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The study applies to single, completed, material transactions
+      (US public-filing corpus, closing 2006-2018, at least $1bn) and to
+      cascade-type failures specifically — realized disruption at the
+      product-process or process-organization interface over a
+      three-to-five-year horizon — not to all M&A failure and not to
+      within-firm reorganization.
+    body_sections: ["Method — Scope", "Discussion — Boundary Conditions"]
+
+# ============================================================================
+# Limitations
+# ============================================================================
+limitations:
+  - id: L1
+    statement: >-
+      This is an observational necessary-condition design; it warrants a
+      necessity-and-safe-harbor reading, not an average causal effect. The
+      independent variable is fixed at closing and the dependent variable
+      realizes over three-to-five years, so reverse causation is minimal, but no
+      randomization identifies a treatment effect.
+    affects: [P1, F2]
+    severity: "medium"
+    mitigation: "The IV/DV time ordering and the structure-based, outcome-blind sampling limit the main endogeneity threats."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Discussion — Limitations"]
+
+  - id: L2
+    statement: >-
+      Residual threats scope the estimate: coder-model bias despite rotation and
+      blinding, deal-type and outcome measurement error, and survivorship in the
+      post-deal record. The weakened necessity means the theory's strong
+      safe-harbor claim is revised to a bounded one, and the discriminating
+      structural tail is partly concentrated in the strata the algebra was
+      developed against, so external validity beyond the sampled strata is not
+      established.
+    affects: [P1, F2, F4]
+    severity: "medium"
+    mitigation: "RC1 controls; the frame-precision handling (AA1) and the honest bounded reading (F2) are the primary mitigations."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-02"
+    body_sections: ["Discussion — Limitations"]
+
+# ============================================================================
+# Cross-paper engagement (by paper_key)
+# ============================================================================
+corpus_precedents:
+  - paper_key: 2026ag
+    relationship: tests
+    spine_nodes: [P1, F2]
+  - paper_key: tier-bundle-algebra
+    relationship: tests
+    spine_nodes: [P1]
+
+# ============================================================================
+# External anchors — self-citation cap enforced at <=3 (only 2026ag renders as
+# a substrate-keyed self-cite; the two draft companions are referenced in prose
+# without a substrate key, per the self-containment discipline)
+# ============================================================================
+external_anchors:
+  - citation_key: dul-2016-necessary-condition-analysis
+    role: methodological_source
+    spine_nodes: [M3, F2]
+  - citation_key: fleiss-1971-measuring-nominal-scale
+    role: methodological_source
+    spine_nodes: [M1, F1]
+  - citation_key: gwet-2008-computing-interrater-reliability
+    role: methodological_source
+    spine_nodes: [M1, F1]
+  - citation_key: rosenbaum-1983-central-role-propensity
+    role: methodological_source
+    spine_nodes: [M2]
+  - citation_key: allison-1982-discretetime-methods-analysis
+    role: methodological_source
+    spine_nodes: [RC1]
+  - citation_key: capron-2009-selection-capability-how
+    role: theoretical_predecessor
+    spine_nodes: [RC1]
+  - citation_key: puranam-2009-integrating-acquired-capabilities
+    role: contrast_case
+    spine_nodes: [P1]
+  - citation_key: puranam-2007-what-they-know
+    role: contrast_case
+    spine_nodes: [P1]
+  - citation_key: haleblian-2009-taking-stock-what
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: king-2004-metaanalyses-postacquisition-performance
+    role: motivating_problem
+    spine_nodes: [P2]
+  - citation_key: larsson-1999-integrating-strategic-organizational
+    role: motivating_problem
+    spine_nodes: [F2]
+  - citation_key: cartwright-2006-thirty-years-mergers
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: graebner-2017-process-postmerger-integration
+    role: motivating_problem
+    spine_nodes: [SF1]
+  - citation_key: baldwin-2000-design-rules-power
+    role: theoretical_predecessor
+    spine_nodes: [P1]
+  - citation_key: schilling-2000-toward-general-modular
+    role: theoretical_predecessor
+    spine_nodes: [P1]
+
+# ============================================================================
+# Open questions
+# ============================================================================
+
+# ============================================================================
+# Authoring notes (internal; dropped on public export) — NOT a rendered field
+# ============================================================================
+
+# ============================================================================
+# Changelog — append-only (internal; dropped on public export)
+# ============================================================================
