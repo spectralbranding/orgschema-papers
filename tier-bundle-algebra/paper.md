@@ -92,9 +92,9 @@ flowchart LR
         B6["T6 Organization"]
         B1 --- B2 --- B3 --- B4 --- B5 --- B6
     end
-    S4 == "phi_4 (d=1-to-1)" ==> B4
-    S5 == "phi_5 (d=1-to-1)" ==> B5
-    S6 -. "phi_6 (d=partial)" .-> B6
+    S4 == "φ₄ (d = 1-to-1)" ==> B4
+    S5 == "φ₅ (d = 1-to-1)" ==> B5
+    S6 -. "φ₆ (d = partial)" .-> B6
 ```
 
 **Figure 1.** Tier-fork operation $\varphi_n$ between two tier graphs, illustrated for an asset-deal-shape bundle. Tier 1 is replaced rather than forked at the buyer (Assumption A); Tiers 2 and 3 remain with the seller; Tiers 4 and 5 fork forward at $1$-to-$1$; Tier 6 forks only partially.
@@ -176,10 +176,10 @@ flowchart TB
     T5["T5 Process"]
     T6["T6 Organization"]
 
-    T4 == "kappa(phi_4) includes phi_5<br/>forking served tier implies forking serving tier" ==> T5
-    T5 == "kappa(phi_5) includes phi_6<br/>same" ==> T6
-    T5 -. "kappa(phi_5) excludes phi_4<br/>no upward cascade - franchise anchors" .-> T4
-    T6 -. "kappa(phi_6) excludes phi_5<br/>no upward cascade - acqui-hire anchors" .-> T5
+    T4 == "κ(φ₄) ∋ φ₅<br/>forking served tier implies forking serving tier" ==> T5
+    T5 == "κ(φ₅) ∋ φ₆<br/>same" ==> T6
+    T5 -. "κ(φ₅) ∌ φ₄<br/>no upward cascade — franchise anchors" .-> T4
+    T6 -. "κ(φ₆) ∌ φ₅<br/>no upward cascade — acqui-hire anchors" .-> T5
 ```
 
 **Figure 2.** Cascade rule $\kappa$ asymmetry across Tiers 4-5-6. Solid downward arrows mark the $\kappa$-implication direction; dashed arrows mark the absent reverse implication.
@@ -208,10 +208,10 @@ The rules above share a unifying structure: under any collapse state $T_1 \equiv
 
 ```{.mermaid width=95%}
 flowchart LR
-    S0["<b>S = none</b><br/>(modal)<br/>---<br/>alpha = true for every<br/>kappa-satisfying bundle"]
-    S14["<b>S = T1 = T4</b><br/>Domain Craftsman<br/>---<br/>alpha = false<br/>if phi_4 in B"]
-    S13["<b>S = T1 = T3</b><br/>sole-proprietor<br/>---<br/>alpha = false if phi_3 in B<br/>(except terminate)"]
-    S134["<b>S = T1 = T3 = T4</b><br/>craftsman<br/>---<br/>alpha = false if phi_3<br/>or phi_4 in B;<br/>only terminate + reconstruct"]
+    S0["<b>S = none</b><br/>(modal)<br/>———<br/>α = true for every<br/>κ-satisfying bundle"]
+    S14["<b>S = T₁ ≡ T₄</b><br/>Domain Craftsman<br/>———<br/>α = false<br/>if φ₄ in ℬ"]
+    S13["<b>S = T₁ ≡ T₃</b><br/>sole-proprietor<br/>———<br/>α = false if φ₃ in ℬ<br/>(except terminate)"]
+    S134["<b>S = T₁ ≡ T₃ ≡ T₄</b><br/>craftsman<br/>———<br/>α = false if φ₃<br/>or φ₄ in ℬ;<br/>only terminate + reconstruct"]
     S0 --> S14 --> S13 --> S134
 ```
 
