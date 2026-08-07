@@ -423,7 +423,7 @@ The V parameter measurement equation in P7 — $V = w_1 \cdot v_{\text{name}} + 
 
 *v_visual decision rule.* Score 1 if the primary packaging, signage, app interface, or storefront carries the corporate-parent's logo, primary color system, or signature typographic mark in a position visible to a typical customer at the point of consumption decision; score 0 otherwise. Co-branded credit cards, ambient industry trade dress, and sub-brand legal-disclosure logos do not count.
 
-*v_endorse decision rule.* Score 1 if customer-facing communication on the Tier-4 instance includes an explicit *by [Parent]*, *from [Parent]*, *a [Parent] company* construction or equivalent in primary marketing assets; score 0 otherwise. Implicit endorsement through [private repo removed] links does not count.
+*v_endorse decision rule.* Score 1 if customer-facing communication on the Tier-4 instance includes an explicit *by [Parent]*, *from [Parent]*, *a [Parent] company* construction or equivalent in primary marketing assets; score 0 otherwise. Implicit endorsement through corporate-website links does not count.
 
 *Aggregation.* Compute v_name, v_visual, v_endorse as the mean of per-instance 0/1 scores over all Tier-4 instances in the firm's portfolio. Apply equal weights $w_1 = w_2 = w_3 = 1/3$ unless sector-level recalibration is available. Compute V; assign architecture class as Branded House ($V \ge .85$), Sub-brand ($.55 \le V < .85$), Endorsed ($.20 \le V < .55$), House of Brands ($V < .20$). Inter-rater agreement (Krippendorff's alpha) of .80 or higher across two independent raters is the recommended reliability threshold per P7.
 

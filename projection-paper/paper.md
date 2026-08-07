@@ -122,15 +122,15 @@ Each junction also admits a basis. A change of basis at $\Pi_{i\to i+1}$ that pr
 
 Each $\Pi_{i\to i+1}$ carries a paired feedback operator $A_{i+1\to i}: T_{i+1} \to T_i$ representing the lower tier's response to a specification descending from the upper tier. $A_{i+1\to i}$ is *not* the inverse of $\Pi_{i\to i+1}$ — it is the operator by which the lower tier's structure adjusts when the projection from above is held fixed. The paired composition $\Pi_{i\to i+1} \circ A_{i+1\to i}: T_{i+1} \to T_{i+1}$ acts on the lower tier and admits a fixed point under standard contraction conditions; this is the local cascade-equilibrium at junction $i$, formalized below. *Strategy translation:* the feedback operator $A_{i+1\to i}$ formalizes what the design literature calls "implementation" or "execution" — the adjustments lower-tier actors make in response to upstream specifications; a firm that continuously revises routines to conform to architectural specs, or positions to conform to process design, is keeping $A_{i+1\to i}$ near the fixed-point manifold, and evidence of persistent implementation gap at a given junction is a direct diagnostic signal that the contraction condition (C_i) of Theorem 1 is locally violated at that tier. Figure 1 summarizes the full cascade: the six tiers $T_i$, the downward junctions $\Pi_{i\to i+1}$, the paired feedback operators $A_{i+1\to i}$, and the bounded subsets $B_i$ on which the contraction conditions hold.
 
-```mermaid
-flowchart TB
- T1["T_1<br/>owner intent<br/>B_1"]
- T2["T_2<br/>business model<br/>B_2"]
- T3["T_3<br/>legal entity<br/>B_3"]
- T4["T_4<br/>product architecture<br/>B_4"]
- T5["T_5<br/>process routines<br/>B_5"]
- T6["T_6<br/>position role<br/>B_6"]
- PI["composite Pi<br/>T_1 to T_6"]
+```{.mermaid width="100%"}
+flowchart LR
+ T1["T1<br/>owner intent<br/>B1"]
+ T2["T2<br/>business model<br/>B2"]
+ T3["T3<br/>legal entity<br/>B3"]
+ T4["T4<br/>product architecture<br/>B4"]
+ T5["T5<br/>process routines<br/>B5"]
+ T6["T6<br/>position role<br/>B6"]
+ PI["composite Pi<br/>T1 to T6"]
  T1 -->|"Pi 1 to 2"| T2
  T2 -->|"Pi 2 to 3"| T3
  T3 -->|"Pi 3 to 4"| T4
@@ -153,7 +153,7 @@ flowchart TB
 
 We now identify the content of each tier by reference to the management-design literature. The construction is internally derivable from this literature; cascade ordering is not imported from an external tradition. Table 1 lists the anchor citations and the substantive content each tier carries; the paragraphs below give one substantive sentence per anchor.
 
-`Table 1: Six-Tier Cascade with Management-Literature Anchors. Each tier is a finite-dimensional real vector space; each anchor citation grounds the tier's content in a peer-reviewed organizational-design reference.`
+**Table 1.** Six-Tier Cascade with Management-Literature Anchors. Each tier is a finite-dimensional real vector space; each anchor citation grounds the tier's content in a peer-reviewed organizational-design reference.
 
 | Tier | Object | Anchor citations |
 |---|---|---|
@@ -252,7 +252,7 @@ To make the apparatus concrete and to verify that the contraction conditions and
 
 For this example the junction operator $F_i^{(x_i)}(y) = \Pi(x_i + A(y) - A(\Pi(x_i)))$ admits the closed-form Lipschitz analysis $\kappa_i = \|\Pi \circ A\|_\text{op}$ (uniform in $x_i$) and $L_i = \|(I - \Pi \circ A) \circ \Pi\|_\text{op}$, both of which are computed directly from the operator matrices. A starting point $x_1 \in B_1$ was drawn from the same generator, normalized to lie at half the bounded-set radius, and the cascade was iterated junction-by-junction with tolerance `1e-10` on successive-iterate distance. Convergence was achieved at every junction; the maximum residual $\|F_i^{(x_i)}(x_{i+1}^{*}) - x_{i+1}^{*}\|$ over the cascade is 2.38e-11, well within tolerance.
 
-`Table 2: Per-Junction Cascade Statistics for the Numerical Illustration. Computed from cascade_numerical_example.py with seed 2026.`
+**Table 2.** Per-Junction Cascade Statistics for the Numerical Illustration. Computed from `cascade_numerical_example.py` with seed 2026.
 
 | $i$ | $d_i$ | $d_{i+1}$ | $\mathrm{rank}(\Pi_{i\to i+1})$ | $r_i$ | $\kappa_i$ | $L_i$ | iterations | $\|x_{i+1}^* - x_{i+1}^{(0)}\|$ |
 |---|---|---|---|---|---|---|---|---|
@@ -298,7 +298,7 @@ Puranam [-@puranam-2018-microstructure-organizations-oxford] operates at the **$
 
 Each of the five theories is a cascade restriction obtained by fixing some tiers and modeling specific junctions. None contradicts the cascade; each is recovered by setting $d_i = 0$ (eliminating the tier) or by treating the corresponding tier as fixed input. The cascade unifies them by supplying the depth ordering and the inter-junction projection apparatus; the existing theories supply the per-junction substantive content. This nesting structure dissolves the appearance that the field has multiple competing design theories operating from incompatible primitives — the primitives are the same six tiers; each theory operates at a different cascade restriction.
 
-`Table 3: Cascade Restrictions Across Design Theories. Each row decomposes a design theory into the cascade junctions it models actively, the tiers it parameterizes as fixed input, and the inter-junction dynamics it folds into a black box.`
+**Table 3.** Cascade Restrictions Across Design Theories. Each row decomposes a design theory into the cascade junctions it models actively, the tiers it parameterizes as fixed input, and the inter-junction dynamics it folds into a black box.
 
 | Theory | Active junctions | Parameterized tiers | Folded junctions | Implicit $r_i$ pattern |
 |---|---|---|---|---|
@@ -376,7 +376,7 @@ The variance of $T_6$ outcomes therefore scales geometrically with the cascade-d
 
 **Empirical test.** P4 requires firm-level data on per-tier perturbation propagation. For each junction $i$, estimate the variance of $T_{i+1}$ content explained by $T_i$ content; the residual variance is the empirical proxy for the per-junction kernel. Sum the per-junction empirical kernels across $i = 1..5$ and compare to the total variance of $T_6$ content unexplained by $T_1$ content (the cascade-kernel proxy). Strict inequality ($\sum$ junction-kernels $>$ cascade kernel) identifies the partial-absorption regime; equality identifies the fully-decoupled regime. The proposition is qualitatively novel in management theory: existing design literatures (Galbraith star, Mintzberg configurations, Burton-Obel-Hakonsson computational design) implicitly assume decoupled junctions, so P4's strict-inequality regime constitutes a new empirical claim about how cascade information flow operates in real firms. The "dark side of modularity" literature in strategic management identifies a kernel-absorption phenomenon at the architectural-modularity boundary that is consistent with the strict-inequality side of P4 [@ethiraj-2008-dual-role-modularity]. Falsification mode: equality empirically dominant across a representative cross-section of firms refutes the strict-inequality regime as the modal case and would push the cascade frame toward Galbraith's implicit decoupled assumption.
 
-`Table 4: Four Cascade-Derived Predictions. Each row links a falsifiable proposition to the cascade-apparatus equation that licenses it, the empirical-test setting, and the form a refutation would take.`
+**Table 4.** Four Cascade-Derived Predictions. Each row links a falsifiable proposition to the cascade-apparatus equation that licenses it, the empirical-test setting, and the form a refutation would take.
 
 | Proposition | Cascade mechanism | Empirical-test anchor | Falsification mode |
 |---|---|---|---|
