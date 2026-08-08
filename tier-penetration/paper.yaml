@@ -149,11 +149,6 @@ references_count: 58
 body_word_count: 13100
 abstract_word_count: 199
 title_word_count: 11
-target_venue:
-  primary: "Strategic Management Journal"
-  secondary: "Management Information Systems Quarterly"
-  tertiary: "Academy of Management Review"
-
 revision_history:
   - date: "2026-05-08"
     description: "Structural revision prior to Zenodo upload: length reduced from approximately 16,000 to 13,100 words; self-citation rate reduced from 13.7% to approximately 10.3%; ontology grounded in Penrose 1959 + Williamson 1985 + Teece 2007 + Dierickx-Cool 1989 + Pentland-Feldman 2005"
