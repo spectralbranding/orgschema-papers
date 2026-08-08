@@ -1,0 +1,85 @@
+{
+  "case_id": "P174",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The assets (T4) and operations (T5) were split into two new entities (LegacyCo and New Permian Corp.) along a geographic line, meaning they moved together (no gap_45). The fate of the management and organization (T6) is explicitly marked as [UNVERIFIED], making gap_56 uncertain."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the Plan allocated the customer-facing crude oil and natural gas production and reserves between LegacyCo and New Permian Corp along a Permian/non-Permian line with no documented structural separation of those assets from the processes that produce them at closing [SRC: 0001357371-18-000003]. gap_56 is 0 because the slice does not document operational processes transferring or being re-engineered without organization/people at closing; post-Effective-Date management continuity is expressly [UNVERIFIED] and no process-vs-organization mismatch is stated, and the confirmed Plan summary describes no transitional-services agreement bridging shared substrate."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Plan allocated the crude-oil and natural-gas production and reserves between LegacyCo and New Permian Corp. along a Permian/non-Permian line, but the slice does not document that the associated operating processes were withheld or structurally misaligned at closing; therefore gap_45 is 0. The slice states that management continuity after the Effective Date is unverified and provides no documented closing-stage mismatch between transferred or re-engineered processes and the organization running them, so gap_56 is 0. The absence of a transition-services or shared-services agreement does not itself establish either structural gap."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"uncertain\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"uncertain\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The assets (T4) and operations (T5) were split into two new entities (LegacyCo and New Permian Corp.) along a geographic line, meaning they moved together (no gap_45). The fate of the management and organization (T6) is explicitly marked as [UNVERIFIED], making gap_56 uncertain.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the Plan allocated the customer-facing crude oil and natural gas production and reserves between LegacyCo and New Permian Corp along a Permian/non-Permian line with no documented structural separation of those assets from the processes that produce them at closing [SRC: 0001357371-18-000003]. gap_56 is 0 because the slice does not document operational processes transferring or being re-engineered without organization/people at closing; post-Effective-Date management continuity is expressly [UNVERIFIED] and no process-vs-organization mismatch is stated, and the confirmed Plan summary describes no transitional-services agreement bridging shared substrate.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The Plan allocated the crude-oil and natural-gas production and reserves between LegacyCo and New Permian Corp. along a Permian/non-Permian line, but the slice does not document that the associated operating processes were withheld or structurally misaligned at closing; therefore gap_45 is 0. The slice states that management continuity after the Effective Date is unverified and provides no documented closing-stage mismatch between transferred or re-engineered processes and the organization running them, so gap_56 is 0. The absence of a transition-services or shared-services agreement does not itself establish either structural gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

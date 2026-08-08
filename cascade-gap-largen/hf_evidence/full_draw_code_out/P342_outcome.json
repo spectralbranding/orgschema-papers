@@ -1,0 +1,58 @@
+{
+  "case_id": "P342",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "exited Healthcare line (2019); exhausted full US$200mm ADC by end-2020; 2020 combined ratio 94.9% (above low-90s target)",
+      "rationale": "p4=1: the slice documents realized product-line/operations incoherence — Intact U.S. (OneBeacon) exited its U.S. Healthcare product line effective July 1, 2019 via loss portfolio transfer/quota share, \"exited lines\" ran underwriting losses of $57mm (2020) and $66mm (2019) driven by adverse prior-year development, and roughly two-thirds of the fully-exhausted US$200mm adverse-development cover related to lines the company had by then exited, evidencing certain acquired product lines that could not be sustained within operations over time. p5=0: no documented fracture at the operations/people-management-culture interface; the slice reports orderly integration, retained strong financial-strength ratings, ~$30mm expense synergies, and unified branding under a named U.S. president, with no evidence of operations breaking against the organization. t1 and t2 coded 0 as the slice documents no controlling-intent archetype incoherence and no irreconcilable business-model conflict."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "combined ratio of 94.9% in 2020",
+      "rationale": "The slice documents the post-deal trajectory of OneBeacon under Intact, noting premium growth, a combined ratio of 94.9%, and the exit of the Healthcare product line. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) causing disruption over time."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Full US$200 million adverse-development cover recorded by year-end 2020'}",
+      "rationale": "{'type': 'string', 'enum': \"The slice documents the Healthcare line's 2019 exit, continuing underwriting losses of CAD $57 million in 2020, and adverse prior-year claims development, but does not attribute these outcomes to failure to align a product with operating processes; therefore p4 is coded 0. It reports profit-improvement actions, targeted business-line exits, expense synergies, and subsequent brand integration, but no realized conflict between operations and management, employees, or culture; therefore p5 is coded 0.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"exited Healthcare line (2019); exhausted full US$200mm ADC by end-2020; 2020 combined ratio 94.9% (above low-90s target)\", \"rationale\": \"p4=1: the slice documents realized product-line/operations incoherence \\u2014 Intact U.S. (OneBeacon) exited its U.S. Healthcare product line effective July 1, 2019 via loss portfolio transfer/quota share, \\\"exited lines\\\" ran underwriting losses of $57mm (2020) and $66mm (2019) driven by adverse prior-year development, and roughly two-thirds of the fully-exhausted US$200mm adverse-development cover related to lines the company had by then exited, evidencing certain acquired product lines that could not be sustained within operations over time. p5=0: no documented fracture at the operations/people-management-culture interface; the slice reports orderly integration, retained strong financial-strength ratings, ~$30mm expense synergies, and unified branding under a named U.S. president, with no evidence of operations breaking against the organization. t1 and t2 coded 0 as the slice documents no controlling-intent archetype incoherence and no irreconcilable business-model conflict.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"combined ratio of 94.9% in 2020\",\n  \"rationale\": \"The slice documents the post-deal trajectory of OneBeacon under Intact, noting premium growth, a combined ratio of 94.9%, and the exit of the Healthcare product line. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) causing disruption over time.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Full US$200 million adverse-development cover recorded by year-end 2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents the Healthcare line's 2019 exit, continuing underwriting losses of CAD $57 million in 2020, and adverse prior-year claims development, but does not attribute these outcomes to failure to align a product with operating processes; therefore p4 is coded 0. It reports profit-improvement actions, targeted business-line exits, expense synergies, and subsequent brand integration, but no realized conflict between operations and management, employees, or culture; therefore p5 is coded 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

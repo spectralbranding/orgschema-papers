@@ -1,0 +1,85 @@
+{
+  "case_id": "P240",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company merger where OKSB's subsidiary, Bank SNB, transferred intact with its assets, deposits, operations, and employees. Because the product, processes, and organization all crossed the ownership boundary together as a continuing subsidiary at closing, there are no structural mismatches between T4/T5 or T5/T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing, Bank SNB's customer-facing banking assets/deposits/products (T4) and its banking operations (T5) crossed together as the wholly owned bank subsidiary into the Simmons family, with only a disclosed later bank-charter consolidation timetable—not a product-without-process split—so gap_45=0. Operational processes remained housed in Bank SNB with rank-and-file retention expected and named-executive transition-period amendments to support integration, so processes did not transfer without the running organization alongside them at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Bank SNB’s assets, deposits, customer-facing banking activities, and banking operations crossed together into the Simmons corporate family, while Bank SNB continued temporarily as a separate subsidiary, so no product-process mismatch was documented at closing. The slice states that most OKSB officers and employees were expected to be retained, while named executives had termination, replacement-employment, or transition-service arrangements supporting integration; thus organizational transfer was partial but coherently aligned with the transferred operations rather than structurally absent."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-company merger where OKSB's subsidiary, Bank SNB, transferred intact with its assets, deposits, operations, and employees. Because the product, processes, and organization all crossed the ownership boundary together as a continuing subsidiary at closing, there are no structural mismatches between T4/T5 or T5/T6.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing, Bank SNB's customer-facing banking assets/deposits/products (T4) and its banking operations (T5) crossed together as the wholly owned bank subsidiary into the Simmons family, with only a disclosed later bank-charter consolidation timetable—not a product-without-process split—so gap_45=0. Operational processes remained housed in Bank SNB with rank-and-file retention expected and named-executive transition-period amendments to support integration, so processes did not transfer without the running organization alongside them at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Bank SNB’s assets, deposits, customer-facing banking activities, and banking operations crossed together into the Simmons corporate family, while Bank SNB continued temporarily as a separate subsidiary, so no product-process mismatch was documented at closing. The slice states that most OKSB officers and employees were expected to be retained, while named executives had termination, replacement-employment, or transition-service arrangements supporting integration; thus organizational transfer was partial but coherently aligned with the transferred operations rather than structurally absent.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

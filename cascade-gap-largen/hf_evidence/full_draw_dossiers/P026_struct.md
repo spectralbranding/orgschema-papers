@@ -1,0 +1,30 @@
+# Structural sub-dossier — Babcock & Wilcox Enterprises, Inc. separation from The Babcock & Wilcox Company (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- On June 8, 2015 the board of The Babcock & Wilcox Company (the "Company") approved the separation of its Power Generation business from its Government and Nuclear Operations business into two publicly traded companies through a spin-off; the Power Generation business ("New B&W") would be called Babcock & Wilcox Enterprises, Inc. and the Company would rename to BWX Technologies, Inc. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1 information statement]
+- The Company distributed 100% of its interest in New B&W as a pro rata distribution to holders of Company common stock — one share of New B&W common stock for every two shares of Company common stock held on the record date of June 18, 2015; the distribution date was expected to be June 30, 2015 and approximately 53.5 million New B&W shares were to be distributed. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- Stockholders paid no consideration and surrendered no shares; the Company retained no ownership interest in New B&W after the spin-off. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+
+## What crossed the boundary at the tier level
+- The customer-facing business separated into New B&W was the Company's Power Generation segment (combined with related captive insurance operations): a technology-based provider of fossil and renewable power generation equipment (a suite of boiler products and environmental systems) plus aftermarket services and industrial environmental systems, organized into three reportable segments — Global Power, Global Services, and Industrial Environmental. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- The operational asset base and people crossed with the business: as of March 31, 2015 the separated business employed approximately 6,000 people worldwide (not including approximately 2,500 joint-venture employees), with engineering, manufacturing, procurement and erection capabilities serving a global installed base of more than 300,000 MW of equivalent steam-generating capacity in more than 800 facilities in over 90 countries. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- The Industrial Environmental segment comprised the operations of MEGTEC Holdings, Inc. and its subsidiaries, which the Company had acquired on June 20, 2014. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- Prior to the spin-off, PGG OpCo was to transfer the assets and liabilities associated with the Company's Nuclear Energy segment back to the Company, so those operations did NOT cross into New B&W. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+
+## Management/organization crossing
+- The incumbent management was carried across: New B&W would be led by E. James Ferland as Chairman and CEO (prior to the spin-off, the Company's President and CEO), with Jenny L. Apker as SVP and CFO (previously the Company's VP, Treasurer and Investor Relations) and other named officers drawn from the Company; New B&W would have its own board of directors. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+
+## Shared corporate substrate NOT transferred intact (bridged contractually)
+- New B&W had historically used the Company's infrastructure for its business functions — accounting and financial reporting; information technology and communications; legal; human resources and employee benefits; procurement and supply chain management; tax administration; and treasury and corporate finance — and would need to establish its own after the spin-off. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- Cash management had historically been administered through a centralized cash-management program administered by the Company, with cash transferred to and from the Company historically assumed to be immediately settled; the business's historical financials were prepared as combined financial statements reflecting operations detached from the Company's integrated corporate operations. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- To bridge the shared substrate, New B&W and the Company would enter into a master separation agreement (identifying the assets to be transferred, liabilities assumed and contracts assigned), transition services agreements (each party to provide the other interim services), a tax sharing agreement, and an employee matters agreement. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+- Under the transition services agreements the Company would continue to provide some of the above corporate functions to New B&W on a transitional basis; at the end of the transition period New B&W would have to perform these functions itself or hire third parties. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]
+
+## Structural summary (closing only)
+- The transaction detached an operating power-generation-equipment business — its product lines, roughly 6,000-person workforce, and incumbent management — from a parent whose centralized corporate functions (accounting, IT, legal, HR, procurement, tax, treasury/cash management) it had historically relied on; those shared functions did not transfer as an intact substrate but were bridged at closing by a master separation agreement plus transition services, tax-sharing, and employee-matters agreements, after which New B&W would stand up its own infrastructure. [SRC: SEC accession 0001193125-15-216714, Form 10-12B EX-99.1]

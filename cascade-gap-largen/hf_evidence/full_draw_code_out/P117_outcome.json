@@ -1,0 +1,58 @@
+{
+  "case_id": "P117",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net loss attributable to Chemtura for 2013 was $(177) million",
+      "rationale": "The slice documents the divestiture of the Antioxidant and Consumer Products businesses, which involved retaining shared production assets bridged by supply agreements and eliminating stranded costs through organizational restructuring. However, there is no documented evidence of product/process incoherence or process/organization fracture stemming from an acquisition integration over the observed window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2013 divestitures (Antioxidants, Consumer Products); $(180)M loss on sale",
+      "rationale": "The slice's 'product/process interface' passage only records that the Antioxidant divestiture moved dedicated plants while shared assets were retained under supply agreements—a sale-execution detail, not documented multi-year failure to align an acquired product with operating processes—so p4_pathway is 0. The 'process/organization interface' passage records elimination of stranded costs after the sales and a Q4 2013 Industrials organizational consolidation for efficiencies, which is post-divestiture cost cleanup rather than a realized fracture of operations against people/management/culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': '$180 million loss on sale of discontinued operations in 2013'}",
+      "rationale": "{'type': 'string', 'value': 'No realized product/process alignment failure is documented; the transfer of dedicated assets, retention of shared assets, and use of supply agreements describe post-divestiture operating arrangements rather than a demonstrated product/process disruption. A process/organization fracture is documented by stranded costs following both divestitures and the fourth-quarter 2013 restructuring that consolidated the Industrials organizational structure to streamline activities and obtain efficiencies.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net loss attributable to Chemtura for 2013 was $(177) million\",\n  \"rationale\": \"The slice documents the divestiture of the Antioxidant and Consumer Products businesses, which involved retaining shared production assets bridged by supply agreements and eliminating stranded costs through organizational restructuring. However, there is no documented evidence of product/process incoherence or process/organization fracture stemming from an acquisition integration over the observed window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2013 divestitures (Antioxidants, Consumer Products); $(180)M loss on sale\",\n  \"rationale\": \"The slice's 'product/process interface' passage only records that the Antioxidant divestiture moved dedicated plants while shared assets were retained under supply agreements—a sale-execution detail, not documented multi-year failure to align an acquired product with operating processes—so p4_pathway is 0. The 'process/organization interface' passage records elimination of stranded costs after the sales and a Q4 2013 Industrials organizational consolidation for efficiencies, which is post-divestiture cost cleanup rather than a realized fracture of operations against people/management/culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"1\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"$180 million loss on sale of discontinued operations in 2013\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"No realized product/process alignment failure is documented; the transfer of dedicated assets, retention of shared assets, and use of supply agreements describe post-divestiture operating arrangements rather than a demonstrated product/process disruption. A process/organization fracture is documented by stranded costs following both divestitures and the fourth-quarter 2013 restructuring that consolidated the Industrials organizational structure to streamline activities and obtain efficiencies.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

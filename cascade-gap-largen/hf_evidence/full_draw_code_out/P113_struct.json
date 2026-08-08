@@ -1,0 +1,85 @@
+{
+  "case_id": "P113",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The customer-facing product (T4) — the Advantage brand name, website, phone numbers, trademarks and copyrights — crossed the boundary, but the transaction was structured as a selected-asset purchase that \"did not transfer an intact producing/delivering organization,\" with delivery instead run through the acquirer's own corporate locations and operating processes; this is a documented product-vs-process structural mismatch at closing (gap_45=1). Because the operational processes were not transferred from Advantage but supplied by the acquirer's existing organization, no separate T5 process re-engineering occurred without its corresponding people/culture, so gap_56=0. The slice further states no transition-services or operating agreement bridged the former operating substrate, so the T4/T5 gap was not contractually absorbed (gap_mitigated=no)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred the Advantage brand (T4) and selected operational assets like leases and concessions (T5), so there is no documented gap_45. However, the operational assets (T5) transferred without any of the workforce or management (T6), creating a structural gap_56. No transition services agreement was documented to mitigate this gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "subset",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The slice states the deal transferred the Advantage brand identity (name, website, phone numbers, trademarks, copyrights) as the customer-facing asset while structuring only an option on selected leases, fixed assets and airport concessions for ~20 locations, and that the brand was thereafter run through the acquirer's own corporate locations and operating processes with no intact Advantage producing organization transferred. That is a documented T4-without-seller-T5 structural mismatch at closing (gap_45=1). gap_56=0 because Advantage operational processes did not transfer as a package that then lacked people; the acquirer used its own processes and organization, and the FY2009 primary describes no workforce/management transfer and no TSA or shared-substrate bridge."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"no\", \"rationale\": \"The customer-facing product (T4) \\u2014 the Advantage brand name, website, phone numbers, trademarks and copyrights \\u2014 crossed the boundary, but the transaction was structured as a selected-asset purchase that \\\"did not transfer an intact producing/delivering organization,\\\" with delivery instead run through the acquirer's own corporate locations and operating processes; this is a documented product-vs-process structural mismatch at closing (gap_45=1). Because the operational processes were not transferred from Advantage but supplied by the acquirer's existing organization, no separate T5 process re-engineering occurred without its corresponding people/culture, so gap_56=0. The slice further states no transition-services or operating agreement bridged the former operating substrate, so the T4/T5 gap was not contractually absorbed (gap_mitigated=no).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction transferred the Advantage brand (T4) and selected operational assets like leases and concessions (T5), so there is no documented gap_45. However, the operational assets (T5) transferred without any of the workforce or management (T6), creating a structural gap_56. No transition services agreement was documented to mitigate this gap.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The slice states the deal transferred the Advantage brand identity (name, website, phone numbers, trademarks, copyrights) as the customer-facing asset while structuring only an option on selected leases, fixed assets and airport concessions for ~20 locations, and that the brand was thereafter run through the acquirer's own corporate locations and operating processes with no intact Advantage producing organization transferred. That is a documented T4-without-seller-T5 structural mismatch at closing (gap_45=1). gap_56=0 because Advantage operational processes did not transfer as a package that then lacked people; the acquirer used its own processes and organization, and the FY2009 primary describes no workforce/management transfer and no TSA or shared-substrate bridge.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "1-1",
+    "sigma_T5": "subset",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

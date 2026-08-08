@@ -1,0 +1,85 @@
+{
+  "case_id": "P337",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states Green's \"customer-facing banking business together with its branch network, operations, and personnel — transferred as a going concern via the holdco/bank merger sequence rather than being separated into distinct product, process, or people components,\" so T4 (product/branches) and T5 (operations) crossed the ownership boundary together — no product-vs-process mismatch (gap_45=0). Likewise the operations and personnel transferred together as a going concern, so T5 and T6 moved coherently alongside each other (gap_56=0); the acquiror's charter continued unchanged (T3 terminate for Green) and Veritex's CEO/board continuity with three Green directors joining reflects partial T6 transfer, but nothing documents processes moving without their people at closing. T1 is coded replace because Veritex's charter documents and CEO controlled the surviving corporation while Green ceased to exist, despite the ~55% Green share split."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Green Bank's customer-facing banking business together with its branch network, operations, and personnel transferred as a going concern via the holdco/bank merger sequence rather than being separated into distinct product, process, or people components, so T4 and T5 crossed together (gap_45=0). The same going-concern formulation and the personnel-transfer language equally place T5 and T6 on the same side of the ownership boundary at closing (gap_56=0); no product-vs-process or process-vs-organization structural mismatch is documented."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Green Bank’s customer-facing banking business transferred together with its branch network and operations as a going concern, so no product-versus-process mismatch existed at closing [SRC: SEC accession 0001047469-18-006708, Form DEFM14A]. It also states that personnel transferred with the business, while documenting partial management continuity through Green directors joining the combined board and employment agreements for three Green executives; therefore, the evidence does not establish a process-versus-organization gap at closing [SRC: SEC accession 0001047469-18-006708, Form DEFM14A; SEC accession 0001501570-19-000005, Form 8-K Item 5.02]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states Green's \\\"customer-facing banking business together with its branch network, operations, and personnel \\u2014 transferred as a going concern via the holdco/bank merger sequence rather than being separated into distinct product, process, or people components,\\\" so T4 (product/branches) and T5 (operations) crossed the ownership boundary together \\u2014 no product-vs-process mismatch (gap_45=0). Likewise the operations and personnel transferred together as a going concern, so T5 and T6 moved coherently alongside each other (gap_56=0); the acquiror's charter continued unchanged (T3 terminate for Green) and Veritex's CEO/board continuity with three Green directors joining reflects partial T6 transfer, but nothing documents processes moving without their people at closing. T1 is coded replace because Veritex's charter documents and CEO controlled the surviving corporation while Green ceased to exist, despite the ~55% Green share split.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Green Bank's customer-facing banking business together with its branch network, operations, and personnel transferred as a going concern via the holdco/bank merger sequence rather than being separated into distinct product, process, or people components, so T4 and T5 crossed together (gap_45=0). The same going-concern formulation and the personnel-transfer language equally place T5 and T6 on the same side of the ownership boundary at closing (gap_56=0); no product-vs-process or process-vs-organization structural mismatch is documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Green Bank’s customer-facing banking business transferred together with its branch network and operations as a going concern, so no product-versus-process mismatch existed at closing [SRC: SEC accession 0001047469-18-006708, Form DEFM14A]. It also states that personnel transferred with the business, while documenting partial management continuity through Green directors joining the combined board and employment agreements for three Green executives; therefore, the evidence does not establish a process-versus-organization gap at closing [SRC: SEC accession 0001047469-18-006708, Form DEFM14A; SEC accession 0001501570-19-000005, Form 8-K Item 5.02].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

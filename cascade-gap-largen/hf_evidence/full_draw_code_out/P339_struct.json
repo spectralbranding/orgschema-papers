@@ -1,0 +1,85 @@
+{
+  "case_id": "P339",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the product/asset layer (contiguous, complementary DJ Basin acreage in Weld County \"conducive to the same extended-reach-lateral development methods BBG employed\") crossed together with its operational processes — BBG's pre-merger executive officers and operating methods continued, and Fifth Creek was merged into BBG as the surviving operating subsidiary, so producing assets and the processes that develop them moved coherently together, not apart. gap_56=0: the operational processes (T5) and the people/organization (T6) transferred aligned — BBG's CEO (Woodall) and pre-merger executive officers continued, and Fifth Creek's incoming employees were contractually bridged to BBG's existing compensation and benefit structure for one year, so processes and the organization running them were structurally aligned at closing. Ownership boundary shows imprint-share at T1 (six continuing BBG directors plus five FCEC-designated investor directors, ~52%/48% split) rather than a single fusion, so collapse_state=none."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction combined BBG and Fifth Creek under a new parent (HighPoint), with both entities' operations and assets transferring intact. There is no evidence of a structural mismatch between the product/assets (T4) and the operational processes (T5), nor between the processes (T5) and the organization/employees (T6) at closing, as the operations and employees of both companies were integrated into the combined entity."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "No product-process gap is documented: the two whole exploration-and-production businesses combined, and their contiguous, complementary DJ Basin operations used the same extended-reach-lateral development methods; Fifth Creek was then merged into BBG as the surviving operating entity (DEFM14A, “Information About Fifth Creek”/“Background of the Mergers”; Form 8-K Item 1.01). No process-organization gap is documented because BBG’s CEO and executive officers continued, while continuing Fifth Creek employees were contractually aligned with BBG’s compensation, benefits, and service-credit structure (DEFM14A, “Summary” and “Employee Matters”; Form 8-K Item 5.02)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the product/asset layer (contiguous, complementary DJ Basin acreage in Weld County \\\"conducive to the same extended-reach-lateral development methods BBG employed\\\") crossed together with its operational processes \\u2014 BBG's pre-merger executive officers and operating methods continued, and Fifth Creek was merged into BBG as the surviving operating subsidiary, so producing assets and the processes that develop them moved coherently together, not apart. gap_56=0: the operational processes (T5) and the people/organization (T6) transferred aligned \\u2014 BBG's CEO (Woodall) and pre-merger executive officers continued, and Fifth Creek's incoming employees were contractually bridged to BBG's existing compensation and benefit structure for one year, so processes and the organization running them were structurally aligned at closing. Ownership boundary shows imprint-share at T1 (six continuing BBG directors plus five FCEC-designated investor directors, ~52%/48% split) rather than a single fusion, so collapse_state=none.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction combined BBG and Fifth Creek under a new parent (HighPoint), with both entities' operations and assets transferring intact. There is no evidence of a structural mismatch between the product/assets (T4) and the operational processes (T5), nor between the processes (T5) and the organization/employees (T6) at closing, as the operations and employees of both companies were integrated into the combined entity.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"No product-process gap is documented: the two whole exploration-and-production businesses combined, and their contiguous, complementary DJ Basin operations used the same extended-reach-lateral development methods; Fifth Creek was then merged into BBG as the surviving operating entity (DEFM14A, “Information About Fifth Creek”/“Background of the Mergers”; Form 8-K Item 1.01). No process-organization gap is documented because BBG’s CEO and executive officers continued, while continuing Fifth Creek employees were contractually aligned with BBG’s compensation, benefits, and service-credit structure (DEFM14A, “Summary” and “Employee Matters”; Form 8-K Item 5.02).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P083",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Equity earnings drag: increasing Sadara losses (affiliate equity earnings $1,034M→$835M→$674M, 2013-2015), incl. $27M Dow-share Epoxy Plant engineering write-off; first polyethylene production achieved Dec 2015",
+      "rationale": "The slice documents only a development-stage venture ramping toward operation, not a realized product/process interface disruption: the complex followed a sequenced multi-year start-up that \"remain[ed] on schedule,\" achieving first polyethylene production in December 2015, so p4=0. No documented friction between operations and people/management/culture appears—reported outcomes are financial (rising equity losses, a $27M engineering write-off, continuing parent funding) and milestone-based, with nothing about organizational or workforce fracture, so p5=0. No evidence of controlling-intent archetype incoherence or business-model incompatibility is present within the window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "increased equity losses and $27m write-off (Dow's share)",
+      "rationale": "The slice documents that Sadara remained a development-stage company with increased equity losses and a $27 million write-off for design engineering work. However, there is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) over time; the venture achieved its first production milestone on schedule."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "increased equity losses incl. $27M epoxy design write-off; still development-stage at ~3-4 yrs",
+      "rationale": "The slice documents Sadara remaining a development-stage equity-method affiliate through FY2015, with a sequenced start-up described as on schedule and first polyethylene production achieved in December 2015; the $27M (Dow share) write-off of epoxy-plant design engineering is a project cost item, not product/process interface incoherence, so p4_pathway=0. No evidence is given of operations-versus-organization, people, management, or culture fracture over the window, so p5_pathway=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Equity earnings drag: increasing Sadara losses (affiliate equity earnings $1,034M\\u2192$835M\\u2192$674M, 2013-2015), incl. $27M Dow-share Epoxy Plant engineering write-off; first polyethylene production achieved Dec 2015\", \"rationale\": \"The slice documents only a development-stage venture ramping toward operation, not a realized product/process interface disruption: the complex followed a sequenced multi-year start-up that \\\"remain[ed] on schedule,\\\" achieving first polyethylene production in December 2015, so p4=0. No documented friction between operations and people/management/culture appears\\u2014reported outcomes are financial (rising equity losses, a $27M engineering write-off, continuing parent funding) and milestone-based, with nothing about organizational or workforce fracture, so p5=0. No evidence of controlling-intent archetype incoherence or business-model incompatibility is present within the window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"increased equity losses and $27m write-off (Dow's share)\",\n  \"rationale\": \"The slice documents that Sadara remained a development-stage company with increased equity losses and a $27 million write-off for design engineering work. However, there is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) over time; the venture achieved its first production milestone on schedule.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"increased equity losses incl. $27M epoxy design write-off; still development-stage at ~3-4 yrs\",\n  \"rationale\": \"The slice documents Sadara remaining a development-stage equity-method affiliate through FY2015, with a sequenced start-up described as on schedule and first polyethylene production achieved in December 2015; the $27M (Dow share) write-off of epoxy-plant design engineering is a project cost item, not product/process interface incoherence, so p4_pathway=0. No evidence is given of operations-versus-organization, people, management, or culture fracture over the window, so p5_pathway=0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

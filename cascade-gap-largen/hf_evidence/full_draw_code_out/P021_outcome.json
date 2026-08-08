@@ -1,0 +1,58 @@
+{
+  "case_id": "P021",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$2.3bn pre-tax Piceance impairment (2015); net loss $(1,727)m in 2015; revenue declined $2,523m (2014) to $693m (2016)",
+      "rationale": "The slice documents a financial/portfolio-repositioning trajectory (large Piceance impairment, net losses, revenue decline, asset sales, RKI acquisition, workforce reduction to ~650) but contains no evidence of realized product/operating-process incoherence, so p4_pathway is 0. Likewise, the slice documents no fracture between operations and the people/management/organization over time, so p5_pathway is 0. No archetype incoherence (e.g., merger-of-equals dominance) or business-model incompatibility is described; the registrant remained an independent NYSE-listed company throughout, so t1 and t2 are 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$(1,727) million net loss in 2015 including ~$2.3 billion pre-tax impairment",
+      "rationale": "The slice documents significant financial losses, a $2.3 billion impairment of Piceance Basin operations, and extensive portfolio repositioning (divestitures and acquisitions). However, it does not document any specific operational disruptions at the product/process interface or fractures at the process/organization interface."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "approximately $2.3 billion pre-tax Piceance Basin impairment in 2015",
+      "rationale": "The FY2016 Form 10-K documents substantial losses, declining revenues, asset sales, and a portfolio repositioning, but does not attribute these outcomes to an inability to align products with operating processes; therefore p4 is coded 0. The reported workforce of approximately 650 employees and the operational divestitures do not document a realized fracture between operations and management, people, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"~$2.3bn pre-tax Piceance impairment (2015); net loss $(1,727)m in 2015; revenue declined $2,523m (2014) to $693m (2016)\", \"rationale\": \"The slice documents a financial/portfolio-repositioning trajectory (large Piceance impairment, net losses, revenue decline, asset sales, RKI acquisition, workforce reduction to ~650) but contains no evidence of realized product/operating-process incoherence, so p4_pathway is 0. Likewise, the slice documents no fracture between operations and the people/management/organization over time, so p5_pathway is 0. No archetype incoherence (e.g., merger-of-equals dominance) or business-model incompatibility is described; the registrant remained an independent NYSE-listed company throughout, so t1 and t2 are 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$(1,727) million net loss in 2015 including ~$2.3 billion pre-tax impairment\",\n  \"rationale\": \"The slice documents significant financial losses, a $2.3 billion impairment of Piceance Basin operations, and extensive portfolio repositioning (divestitures and acquisitions). However, it does not document any specific operational disruptions at the product/process interface or fractures at the process/organization interface.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"approximately $2.3 billion pre-tax Piceance Basin impairment in 2015\",\n  \"rationale\": \"The FY2016 Form 10-K documents substantial losses, declining revenues, asset sales, and a portfolio repositioning, but does not attribute these outcomes to an inability to align products with operating processes; therefore p4 is coded 0. The reported workforce of approximately 650 employees and the operational divestitures do not document a realized fracture between operations and management, people, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P082",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "read-only",
+      "sigma_T3": "1-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the July 2014 MOU restructured only fiscal terms (duties, royalties, prospective divestment) and left operating control, management, and the workforce with FCX/PT-FI as sole historical operator, and the product (copper/gold/silver concentrate) continued to be produced and sold by PT-FI under the existing COW — so no product crossed the boundary without its processes (gap_45=0). The Rio Tinto arrangement is a cash-flow/production-sharing entitlement above thresholds, not an operating role, and no process re-engineering or organizational/people transfer occurred at closing, so there is no T5-vs-T6 structural mismatch (gap_56=0). The legal vehicle (PT-FI under its COW) was retained rather than replaced, and no Tier-1 fusion is documented in the deal structure."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that operating control, management, and workforce remained with FCX/PT-FI as the sole historical operator. The product continued to be produced and sold by PT-FI under the existing COW, meaning no structural mismatch occurred between product, process, and organization."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that at the MOU closing operating control of Grasberg remained with FCX/PT-FI and the MOU 'did not itself transfer operating control, management, or the workforce,' while 'the customer-facing product (copper/gold/silver production and concentrate) continued to be produced and sold by PT-FI under the existing COW' and the legal vehicle was retained. Because neither the product (T4) nor the operational processes (T5) crossed the ownership boundary at closing, and organization/management (T6) likewise did not transfer, there is no product-vs-process or process-vs-organization structural mismatch to code; gap_45 and gap_56 are therefore 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"At closing the July 2014 MOU restructured only fiscal terms (duties, royalties, prospective divestment) and left operating control, management, and the workforce with FCX/PT-FI as sole historical operator, and the product (copper/gold/silver concentrate) continued to be produced and sold by PT-FI under the existing COW \\u2014 so no product crossed the boundary without its processes (gap_45=0). The Rio Tinto arrangement is a cash-flow/production-sharing entitlement above thresholds, not an operating role, and no process re-engineering or organizational/people transfer occurred at closing, so there is no T5-vs-T6 structural mismatch (gap_56=0). The legal vehicle (PT-FI under its COW) was retained rather than replaced, and no Tier-1 fusion is documented in the deal structure.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that operating control, management, and workforce remained with FCX/PT-FI as the sole historical operator. The product continued to be produced and sold by PT-FI under the existing COW, meaning no structural mismatch occurred between product, process, and organization.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that at the MOU closing operating control of Grasberg remained with FCX/PT-FI and the MOU 'did not itself transfer operating control, management, or the workforce,' while 'the customer-facing product (copper/gold/silver production and concentrate) continued to be produced and sold by PT-FI under the existing COW' and the legal vehicle was retained. Because neither the product (T4) nor the operational processes (T5) crossed the ownership boundary at closing, and organization/management (T6) likewise did not transfer, there is no product-vs-process or process-vs-organization structural mismatch to code; gap_45 and gap_56 are therefore 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "read-only",
+    "sigma_T3": "1-1",
+    "sigma_T4": "read-only",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": true,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

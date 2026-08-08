@@ -1,0 +1,58 @@
+{
+  "case_id": "P213",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "retained core business; GBL divested Jan 2019 ($1,956.2M gain $989.8M); HHI sale ($4.3B) signed Sep 2021, DOJ enjoinment petition Sep 2022, not closed in window; net income $189.6M (FY2021) to $71.6M (FY2022)",
+      "rationale": "The slice documents portfolio divestitures (GBL completed, HHI pending) and a DOJ enjoinment petition, but no disruption at the product/process interface — no evidence the acquired products could not be aligned with operating processes over time — so p4=0. Likewise, the slice shows continued operation of the pre-transaction business with segment reorganizations but records no operations-vs-organization fracture (no culture, management, or people integration breakdown), so p5=0. The realized record traces the major portfolio moves to a divestiture process pending before closing rather than to combination-driven integration failure; the sole documented obstacle (DOJ challenge) is regulatory, not an internal integration pathway."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no combination-driven divestiture; GBL sold $1.96bn; HHI $4.3bn sale DOJ-enjoined",
+      "rationale": "The slice documents continued operation of the full pre-transaction Spectrum business composition (HPC/GPC/H&G segments) with no realized product-line or operating-process incoherence at the 3-5 year horizon; the GBL sale and pending HHI disposition both trace to pre-closing processes and are reported only as discontinued operations without interface disruption. No evidence appears of operations fracturing against organization, people, management or culture. Net income and segment reporting remain coherent through FY2022."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income declined from $189.6 million in FY2021 to $71.6 million in FY2022",
+      "rationale": "The annual reports describe continued operation through three vertically integrated, product-focused segments and do not document acquired-product misalignment with operating processes, so p4 is 0. The reported divestitures, planned separation, regulatory challenge, and earnings decline do not document operations breaking against people, management, or culture, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"retained core business; GBL divested Jan 2019 ($1,956.2M gain $989.8M); HHI sale ($4.3B) signed Sep 2021, DOJ enjoinment petition Sep 2022, not closed in window; net income $189.6M (FY2021) to $71.6M (FY2022)\", \"rationale\": \"The slice documents portfolio divestitures (GBL completed, HHI pending) and a DOJ enjoinment petition, but no disruption at the product/process interface \\u2014 no evidence the acquired products could not be aligned with operating processes over time \\u2014 so p4=0. Likewise, the slice shows continued operation of the pre-transaction business with segment reorganizations but records no operations-vs-organization fracture (no culture, management, or people integration breakdown), so p5=0. The realized record traces the major portfolio moves to a divestiture process pending before closing rather than to combination-driven integration failure; the sole documented obstacle (DOJ challenge) is regulatory, not an internal integration pathway.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no combination-driven divestiture; GBL sold $1.96bn; HHI $4.3bn sale DOJ-enjoined\",\n  \"rationale\": \"The slice documents continued operation of the full pre-transaction Spectrum business composition (HPC/GPC/H&G segments) with no realized product-line or operating-process incoherence at the 3-5 year horizon; the GBL sale and pending HHI disposition both trace to pre-closing processes and are reported only as discontinued operations without interface disruption. No evidence appears of operations fracturing against organization, people, management or culture. Net income and segment reporting remain coherent through FY2022.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income declined from $189.6 million in FY2021 to $71.6 million in FY2022\",\n  \"rationale\": \"The annual reports describe continued operation through three vertically integrated, product-focused segments and do not document acquired-product misalignment with operating processes, so p4 is 0. The reported divestitures, planned separation, regulatory challenge, and earnings decline do not document operations breaking against people, management, or culture, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

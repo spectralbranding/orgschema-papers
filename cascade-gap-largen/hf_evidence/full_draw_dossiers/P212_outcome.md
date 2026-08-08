@@ -1,0 +1,32 @@
+# Outcome sub-dossier — Tronox Holdings plc realized record after the Cristal TiO2-business acquisition, ~3-5-year horizon (closed April 10, 2019; window ~2022)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. Tronox Holdings plc (CIK 0001530804) remains a
+> reporting public company after this transaction (it did not deregister), so this
+> sub-dossier draws on its subsequent Form 10-K rather than a no-record determination.
+> It contains no information about how the transaction was structured at closing.
+
+## Public-reporting status and segment disclosure (feasibility-relevant)
+- Tronox Holdings plc continued to file periodic reports after the transaction; the FY2022 Form 10-K (filed 2023-02-22) is used here as the outcome-window filing (~3.7 years after the April 10, 2019 closing). [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022]
+- Tronox states it "operate[s] our business under one operating segment, Tronox, which is also our reportable segment," reviewed on a consolidated basis by its Co-CEOs as chief operating decision makers; the FY2022 10-K does not present a separate segment, subsidiary note, or line-item disclosure isolating the specific business acquired from Cristal. [SRC: SEC accession 0001530804-23-000004, Form 10-K, Note 23 "Segment Information"]
+
+## Realized consolidated financial record (single reportable segment; not separately attributable to the acquired business alone)
+- Consolidated net sales were $3,454 million (2022), $3,572 million (2021), and $2,758 million (2020); TiO2 product-line net sales specifically were $2,693 million (2022) and $2,793 million (2021). [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, MD&A / Results of Operations]
+- Net income attributable to Tronox Holdings plc was $497 million (2022), $286 million (2021), and $969 million (2020). [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, Consolidated Statements of Income]
+- As of December 31, 2022, Tronox reported employing approximately 6,500 people across six continents; this is a consolidated headcount figure, not broken out by legacy Tronox vs. legacy Cristal operations. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, "Human Capital"]
+- No goodwill-impairment event was found disclosed in the FY2022 10-K; the document's references to "impairment" are limited to generic risk-factor and accounting-policy language about testing intangible/long-lived assets, not a specific charge tied to the acquired business. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022]
+
+## Documented post-close litigation tied to the acquisition's closing-condition divestiture
+- In May 2019, Venator Materials plc sued Tronox Limited in Delaware Superior Court, alleging Tronox owed a $75 million "Break Fee" under a July 14, 2018 Exclusivity Agreement requiring best efforts to negotiate sale of Cristal's North American TiO2 operations to Venator if a divestiture were required for FTC approval of the Cristal acquisition; Tronox countersued for $400 million, alleging Venator's failure to use best efforts caused Tronox to sell those North American operations to an alternative buyer for $701 million (i.e., $400 million less than the price Venator had agreed to). [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, Note 18 "Venator Materials plc v. Tronox Limited"]
+- On April 6, 2022, the presiding judge issued a directed verdict in Venator's favor without jury deliberation; Tronox did not appeal, and on April 18, 2022 the parties settled, with Tronox paying $85 million (inclusive of $10 million accrued interest since May 13, 2019) on April 25, 2022, recorded as "Venator settlement" expense in the FY2022 Consolidated Statement of Income. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, Note 18 / MD&A]
+
+## Continuing operational linkage to the carved-out Saudi (KSA) assets
+- The FY2022 10-K discloses an ongoing monthly technical service fee of approximately $8 million associated with the "Jazan slagger," received from "AMIC," recorded within Other (expense) income for FY2022. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, MD&A "Other (expense) income, net"]
+- The same filing states Tronox sells titanium tetrachloride from facilities including Yanbu, KSA -- the location associated at closing with the Cristal-retained KSA entity -- without further detail in the excerpted MD&A on the entity/ownership structure of that facility as of FY2022. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022] [UNVERIFIED: precise post-close ownership/contractual relationship governing the Yanbu facility beyond this MD&A reference]
+
+## Outcome summary (realized record only)
+- Because Tronox Holdings plc remained a public reporting company after the transaction, a real, observable outcome record exists at the consolidated-company level: net sales moved from $2,758 million (2020) to $3,572 million (2021) to $3,454 million (2022), with net income attributable to the company of $969 million, $286 million, and $497 million in those same years, and a workforce of approximately 6,500 as of the end of 2022. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022]
+- Because the company reports under a single operating/reportable segment, no source in the FY2022 10-K separately discloses the acquired Cristal TiO2 business's own trajectory apart from the combined company; scalars above are consolidated-company, not acquired-business-specific. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022]
+- The most specific documented post-close dispute traceable to the transaction is the Venator litigation over the FTC-mandated divestiture of the acquired North American TiO2 operations, which ran from a May 2019 filing to an April 2022 adverse verdict and $85 million settlement -- a multi-year (~3-year) unresolved contingency spanning the outcome window. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022, Note 18]
+- A smaller, continuing operational link to the Cristal-retained KSA assets (the Jazan slagger technical-service fee from AMIC) persisted into the outcome window, though the FY2022 10-K excerpt reviewed here does not describe its ownership structure or origin in further detail. [SRC: SEC accession 0001530804-23-000004, Form 10-K, FY2022]

@@ -1,0 +1,85 @@
+{
+  "case_id": "P149",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The evidence explicitly states that customer-facing product lines crossed the boundary as asset packages, but operating processes were not conveyed intact, creating a structural mismatch (gap_45 = 1). Furthermore, the running workforce crossed only through discretionary acquirer employment offers rather than automatic transfer, separating the people from the processes (gap_56 = 1). These gaps were contractually mitigated at closing via transition services agreements lasting up to 12-24 months."
+    },
+    "grok": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-N",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states customer-facing product lines crossed as court-approved asset packages while 'the operating processes did not move intact with the product' and were instead bridged at closing by TSAs under which Nortel continued to provide transition services for up to 12–24 months. gap_56=0 because those operating processes were not conveyed to the buyers at closing (seller-run TSAs), so there was no structural transfer of T5 without T6; workforce movement was separately limited to discretionary acquirer employment offers and retention pools rather than automatic transfer. The TSAs contractually absorbed the documented product-vs-process mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-N",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The structural summary states that customer-facing product lines crossed the ownership boundary, while operating and support processes were not conveyed intact and instead were bridged by transition-services agreements, establishing gap_45. It also states that the workforce crossed only through discretionary acquirer employment offers and retention pools rather than automatic transfer, while processes depended on seller-provided transition services, establishing gap_56. The documented 12–24 month transition-services agreements contractually allocated that shared operational substrate at closing, so the gaps were mitigated."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"terminate\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The evidence explicitly states that customer-facing product lines crossed the boundary as asset packages, but operating processes were not conveyed intact, creating a structural mismatch (gap_45 = 1). Furthermore, the running workforce crossed only through discretionary acquirer employment offers rather than automatic transfer, separating the people from the processes (gap_56 = 1). These gaps were contractually mitigated at closing via transition services agreements lasting up to 12-24 months.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"terminate\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states customer-facing product lines crossed as court-approved asset packages while 'the operating processes did not move intact with the product' and were instead bridged at closing by TSAs under which Nortel continued to provide transition services for up to 12–24 months. gap_56=0 because those operating processes were not conveyed to the buyers at closing (seller-run TSAs), so there was no structural transfer of T5 without T6; workforce movement was separately limited to discretionary acquirer employment offers and retention pools rather than automatic transfer. The TSAs contractually absorbed the documented product-vs-process mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"terminate\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The structural summary states that customer-facing product lines crossed the ownership boundary, while operating and support processes were not conveyed intact and instead were bridged by transition-services agreements, establishing gap_45. It also states that the workforce crossed only through discretionary acquirer employment offers and retention pools rather than automatic transfer, while processes depended on seller-provided transition services, establishing gap_56. The documented 12–24 month transition-services agreements contractually allocated that shared operational substrate at closing, so the gaps were mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "terminate",
+    "sigma_T2": "1-N",
+    "sigma_T3": "subset",
+    "sigma_T4": "1-N",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

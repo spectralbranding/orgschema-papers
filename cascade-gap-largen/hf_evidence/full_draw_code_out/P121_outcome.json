@@ -1,0 +1,58 @@
+{
+  "case_id": "P121",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "merged into Colony NorthStar Credit Real Estate; deregistered (Form 15-12G) on 2018-02-01; no separate public record",
+      "rationale": "The registrant merged into Colony NorthStar Credit Real Estate on 2018-01-31 and deregistered the next day, so its results were subsumed into the surviving entity's consolidated reporting and no entity-specific realized record exists for the ~2021-2023 window. The slice explicitly states that no product/process- or process/organization-interface disruption specific to this portfolio is documented in any retrievable primary filing, and that line is marked [UNVERIFIED]. With no separate segment disclosure or observable realized outcome scalar, both p4 and p5 cannot be determined and are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that no product/process-interface or process/organization-interface disruption is documented. The registrant ceased separate reporting at closing and its results were subsumed into the surviving entity's consolidated reporting, leaving no separate public record."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no product/process-interface disruption specific to the former NorthStar Real Estate Income II portfolio is documented in any retrievable primary filing, because the registrant ceased separate reporting at closing and results were subsumed into consolidated reporting. Likewise, no process/organization-interface disruption is documented for the same reason. On the ~2021-2023 window the realized outcome is explicitly characterized as uncertain with no separate public record or entity-specific outcome scalar observable."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"merged into Colony NorthStar Credit Real Estate; deregistered (Form 15-12G) on 2018-02-01; no separate public record\", \"rationale\": \"The registrant merged into Colony NorthStar Credit Real Estate on 2018-01-31 and deregistered the next day, so its results were subsumed into the surviving entity's consolidated reporting and no entity-specific realized record exists for the ~2021-2023 window. The slice explicitly states that no product/process- or process/organization-interface disruption specific to this portfolio is documented in any retrievable primary filing, and that line is marked [UNVERIFIED]. With no separate segment disclosure or observable realized outcome scalar, both p4 and p5 cannot be determined and are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that no product/process-interface or process/organization-interface disruption is documented. The registrant ceased separate reporting at closing and its results were subsumed into the surviving entity's consolidated reporting, leaving no separate public record.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no product/process-interface disruption specific to the former NorthStar Real Estate Income II portfolio is documented in any retrievable primary filing, because the registrant ceased separate reporting at closing and results were subsumed into consolidated reporting. Likewise, no process/organization-interface disruption is documented for the same reason. On the ~2021-2023 window the realized outcome is explicitly characterized as uncertain with no separate public record or entity-specific outcome scalar observable.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P227",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "FY2021 net income $2,146M (+~62% YoY); goodwill essentially flat at $20,182M, no divestiture; ~$790M cumulative integration charges",
+      "rationale": "No product/process incoherence is documented: all four legacy segments were retained intact with essentially unimpaired goodwill and management attributed operating-income growth to \"productivity and merger synergies,\" so p4=0. On the process/organization interface, the DPS Integration Program targeting $600M synergies is documented as producing gains and only being delayed (COVID-attributed) with routine severance charges and a modest $19M workforce-reduction liability — no documented fracture between operations and organization, so p5=0. The slice offers no evidence on the controlling-intent archetype's realized character, hence t1=uncertain. No documented reconciliation failure of value-capture logics; synergies were realized, so t2=0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2021 net income $2,146M (+62% YoY); no divestiture, goodwill unimpaired",
+      "rationale": "The slice documents no product/process interface disruption: all four reportable segments (including Coffee Systems and the DPSG-legacy beverage segments) remained intact through FY2021 with essentially flat, unimpaired segment goodwill totaling $20,182 million and rising segment net sales. On the process/organization interface, the DPS Integration Program incurred cumulative pre-tax charges of ~$790 million (mainly professional fees and severance) and ran past its original 2021 target into 2022 due to COVID-19 delays, but management expressly attributed 2021 segment operating-income growth to realized productivity and merger synergies, so no fracture is documented."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['FY2021 net income of $2.146 billion, up approximately 62% year over year']}",
+      "rationale": "{'type': 'string', 'enum': ['No product/process incoherence was documented: all four operating segments remained active, and management reported productivity and merger-synergy benefits across them. The integration program incurred approximately $790 million in cumulative charges and extended into 2022 because of COVID-19 delays, but the slice does not document that operations fractured against management, employees, or culture; severance costs and delayed initiatives alone do not establish a realized p5 pathway.']}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"FY2021 net income $2,146M (+~62% YoY); goodwill essentially flat at $20,182M, no divestiture; ~$790M cumulative integration charges\", \"rationale\": \"No product/process incoherence is documented: all four legacy segments were retained intact with essentially unimpaired goodwill and management attributed operating-income growth to \\\"productivity and merger synergies,\\\" so p4=0. On the process/organization interface, the DPS Integration Program targeting $600M synergies is documented as producing gains and only being delayed (COVID-attributed) with routine severance charges and a modest $19M workforce-reduction liability \\u2014 no documented fracture between operations and organization, so p5=0. The slice offers no evidence on the controlling-intent archetype's realized character, hence t1=uncertain. No documented reconciliation failure of value-capture logics; synergies were realized, so t2=0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2021 net income $2,146M (+62% YoY); no divestiture, goodwill unimpaired\",\n  \"rationale\": \"The slice documents no product/process interface disruption: all four reportable segments (including Coffee Systems and the DPSG-legacy beverage segments) remained intact through FY2021 with essentially flat, unimpaired segment goodwill totaling $20,182 million and rising segment net sales. On the process/organization interface, the DPS Integration Program incurred cumulative pre-tax charges of ~$790 million (mainly professional fees and severance) and ran past its original 2021 target into 2022 due to COVID-19 delays, but management expressly attributed 2021 segment operating-income growth to realized productivity and merger synergies, so no fracture is documented.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"FY2021 net income of $2.146 billion, up approximately 62% year over year\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"No product/process incoherence was documented: all four operating segments remained active, and management reported productivity and merger-synergy benefits across them. The integration program incurred approximately $790 million in cumulative charges and extended into 2022 because of COVID-19 delays, but the slice does not document that operations fractured against management, employees, or culture; severance costs and delayed initiatives alone do not establish a realized p5 pathway.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

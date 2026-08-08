@@ -1,0 +1,85 @@
+{
+  "case_id": "P058",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "swap",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing asset (mineral properties, T4) did NOT change ownership — \"Title to the Assets shall be held by EML and G8 as equal cotenants\" (EX-2.1 §3.4) — yet the producing/exploring PROCESS crossed to the Hecla side, with RGS as operator/Manager who \"shall manage, direct and control Operations\" (§8.1), a documented product-vs-process split at closing. gap_56=1: operatorship (T5) transferred to RGS/Hecla while the filings \"disclose no transfer of employees, management, or an organization from EML/G8 to the Hecla side,\" so process re-assignment occurred without organization/people (T6) transferring alongside. gap_mitigated=yes: a closing-era Hecla conditional limited guaranty capped at $2,500,000 was documented as the \"closing-era mechanism bridging the parties' shared substrate,\" together with the Management Committee governance allocating the shared substrate. T1 coded imprint-share because both principals' intent remain co-present (EML/G8 retain 50/50 title, RGS earns in as operator)."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "partial",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "At closing, title to the mineral properties (T4) remained with EML and G8, while operatorship and management of operations (T5) were transferred to RGS, creating a structural mismatch (gap_45). Furthermore, RGS assumed operations (T5) without any disclosed transfer of EML/G8 personnel or organization (T6), resulting in gap_56. These gaps were contractually mitigated by the joint venture operating agreement and a conditional limited guaranty provided by Hecla."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because the slice states the customer-facing mineral properties (T4) did not change hands at closing—title remained with EML and G8 as equal cotenants under EX-2.1 §3.4/§5.1—while operatorship moved; the defined product-without-process mismatch is therefore absent. gap_56 is 1 because operatorship/process (T5) crossed to RGS as initial operator/Manager with authority to manage, direct and control Operations (EX-2.1 §8.1–§8.2), yet the filings disclose no transfer of employees, management, or organization (T6) from EML/G8. That process-without-organization gap was contractually absorbed at closing by the Exploration, Development and Mine Operating Agreement plus the Hecla conditional limited guaranty allocating the shared substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing asset (mineral properties, T4) did NOT change ownership \\u2014 \\\"Title to the Assets shall be held by EML and G8 as equal cotenants\\\" (EX-2.1 \\u00a73.4) \\u2014 yet the producing/exploring PROCESS crossed to the Hecla side, with RGS as operator/Manager who \\\"shall manage, direct and control Operations\\\" (\\u00a78.1), a documented product-vs-process split at closing. gap_56=1: operatorship (T5) transferred to RGS/Hecla while the filings \\\"disclose no transfer of employees, management, or an organization from EML/G8 to the Hecla side,\\\" so process re-assignment occurred without organization/people (T6) transferring alongside. gap_mitigated=yes: a closing-era Hecla conditional limited guaranty capped at $2,500,000 was documented as the \\\"closing-era mechanism bridging the parties' shared substrate,\\\" together with the Management Committee governance allocating the shared substrate. T1 coded imprint-share because both principals' intent remain co-present (EML/G8 retain 50/50 title, RGS earns in as operator).\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"partial\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"read-only\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"At closing, title to the mineral properties (T4) remained with EML and G8, while operatorship and management of operations (T5) were transferred to RGS, creating a structural mismatch (gap_45). Furthermore, RGS assumed operations (T5) without any disclosed transfer of EML/G8 personnel or organization (T6), resulting in gap_56. These gaps were contractually mitigated by the joint venture operating agreement and a conditional limited guaranty provided by Hecla.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45 is 0 because the slice states the customer-facing mineral properties (T4) did not change hands at closing—title remained with EML and G8 as equal cotenants under EX-2.1 §3.4/§5.1—while operatorship moved; the defined product-without-process mismatch is therefore absent. gap_56 is 1 because operatorship/process (T5) crossed to RGS as initial operator/Manager with authority to manage, direct and control Operations (EX-2.1 §8.1–§8.2), yet the filings disclose no transfer of employees, management, or organization (T6) from EML/G8. That process-without-organization gap was contractually absorbed at closing by the Exploration, Development and Mine Operating Agreement plus the Hecla conditional limited guaranty allocating the shared substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "read-only",
+    "sigma_T3": "null",
+    "sigma_T4": "read-only",
+    "sigma_T5": "swap",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P183",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is a reverse-triangular merger in which Merger Sub merges into PharMerica, leaving PharMerica intact as the surviving legal entity wholly owned by Parent, \"with no carve-out, spin-off, or separation of the customer-facing pharmacy business from its operating entity disclosed.\" Because the customer-facing pharmacy product (T4) and operating processes (T5) remain within a single surviving entity that transfers whole, product and process move together — gap_45=0. Likewise the proxy \"identifies no separation of the customer-facing pharmacy product or operating processes from the surviving legal entity,\" and executives/awards continue under existing schedules, so processes and the organization/people (T6) stay coherently together — gap_56=0. Ownership control shifts from public shareholders to a KKR-affiliated holding company (with minority WBA interest), coding T1 as replace."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a reverse-triangular merger where PharMerica survived intact as a wholly owned subsidiary of a new KKR-affiliated holding company. The proxy statement identifies no separation of the customer-facing pharmacy product (T4) or operating processes (T5) from the surviving legal entity, nor any separation of the organization (T6). Therefore, there are no structural gaps between T4/T5 or T5/T6 at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the deal was a reverse-triangular merger in which PharMerica survived intact as a single legal entity wholly owned by Parent, with 'no carve-out, spin-off, or separation of the customer-facing pharmacy business from its operating entity' and 'no separation of the customer-facing pharmacy product or operating processes from the surviving legal entity.' Because T4 product and T5 processes crossed together inside the unbroken surviving entity, gap_45 is 0; likewise T5 processes and T6 organization remained inside that same intact entity with no documented process-without-people split at closing, so gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is a reverse-triangular merger in which Merger Sub merges into PharMerica, leaving PharMerica intact as the surviving legal entity wholly owned by Parent, \\\"with no carve-out, spin-off, or separation of the customer-facing pharmacy business from its operating entity disclosed.\\\" Because the customer-facing pharmacy product (T4) and operating processes (T5) remain within a single surviving entity that transfers whole, product and process move together \\u2014 gap_45=0. Likewise the proxy \\\"identifies no separation of the customer-facing pharmacy product or operating processes from the surviving legal entity,\\\" and executives/awards continue under existing schedules, so processes and the organization/people (T6) stay coherently together \\u2014 gap_56=0. Ownership control shifts from public shareholders to a KKR-affiliated holding company (with minority WBA interest), coding T1 as replace.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a reverse-triangular merger where PharMerica survived intact as a wholly owned subsidiary of a new KKR-affiliated holding company. The proxy statement identifies no separation of the customer-facing pharmacy product (T4) or operating processes (T5) from the surviving legal entity, nor any separation of the organization (T6). Therefore, there are no structural gaps between T4/T5 or T5/T6 at closing.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the deal was a reverse-triangular merger in which PharMerica survived intact as a single legal entity wholly owned by Parent, with 'no carve-out, spin-off, or separation of the customer-facing pharmacy business from its operating entity' and 'no separation of the customer-facing pharmacy product or operating processes from the surviving legal entity.' Because T4 product and T5 processes crossed together inside the unbroken surviving entity, gap_45 is 0; likewise T5 processes and T6 organization remained inside that same intact entity with no documented process-without-people split at closing, so gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

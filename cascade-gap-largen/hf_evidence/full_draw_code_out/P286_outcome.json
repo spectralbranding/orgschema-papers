@@ -1,0 +1,58 @@
+{
+  "case_id": "P286",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "SEC registration terminated (Form 15 filed Dec 10, 2018); acquired business thereafter reported only within acquirer's combined, undifferentiated portfolio — no standalone realized outcome scalar",
+      "rationale": "The slice documents only public-reporting status: LaSalle terminated its SEC registration at closing and the acquired business was folded into Pebblebrook's combined hotel portfolio with no separate segment or narrative disclosure in the FY2021/FY2022 10-Ks. Because no standalone realized-performance record exists for the acquired business, there is no documented evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5); both are set to uncertain rather than 0 because the absence of disclosure prevents determining whether such disruption occurred. The press-reported post-closing dispositions are explicitly marked [UNVERIFIED] and not attributed to the LaSalle business, so they cannot ground any pathway coding."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that LaSalle Hotel Properties terminated its SEC registration and was integrated into Pebblebrook's combined hotel portfolio without separate segment reporting. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents only that LaSalle terminated SEC registration in December 2018 and that the acquired hotels were thereafter reported solely within Pebblebrook's undifferentiated combined portfolio, with no separate segment or narrative in the FY2021 or FY2022 10-Ks. No realized product/process interface disruption (p4) or process/organization fracture (p5) is described for the acquired business at the 3-5 year horizon; press mentions of portfolio dispositions are explicitly marked [UNVERIFIED] as to the acquired entity. Absence of documented pathway evidence yields 0 for both."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"SEC registration terminated (Form 15 filed Dec 10, 2018); acquired business thereafter reported only within acquirer's combined, undifferentiated portfolio \\u2014 no standalone realized outcome scalar\", \"rationale\": \"The slice documents only public-reporting status: LaSalle terminated its SEC registration at closing and the acquired business was folded into Pebblebrook's combined hotel portfolio with no separate segment or narrative disclosure in the FY2021/FY2022 10-Ks. Because no standalone realized-performance record exists for the acquired business, there is no documented evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5); both are set to uncertain rather than 0 because the absence of disclosure prevents determining whether such disruption occurred. The press-reported post-closing dispositions are explicitly marked [UNVERIFIED] and not attributed to the LaSalle business, so they cannot ground any pathway coding.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents that LaSalle Hotel Properties terminated its SEC registration and was integrated into Pebblebrook's combined hotel portfolio without separate segment reporting. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents only that LaSalle terminated SEC registration in December 2018 and that the acquired hotels were thereafter reported solely within Pebblebrook's undifferentiated combined portfolio, with no separate segment or narrative in the FY2021 or FY2022 10-Ks. No realized product/process interface disruption (p4) or process/organization fracture (p5) is described for the acquired business at the 3-5 year horizon; press mentions of portfolio dispositions are explicitly marked [UNVERIFIED] as to the acquired entity. Absence of documented pathway evidence yields 0 for both.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

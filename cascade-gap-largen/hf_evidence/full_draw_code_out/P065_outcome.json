@@ -1,0 +1,58 @@
+{
+  "case_id": "P065",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested 50% interest in 2014; recognized $74.3m pre-tax gain",
+      "rationale": "The slice documents the sale of the 50% non-operating interest in the Decker Mine to Ambre Energy in 2014, resulting in a $74.3 million pre-tax gain and the release of reclamation and pension liabilities. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) leading up to or causing this divestiture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "50% Decker interest divested Sept 2014; $74.3M gain, later $52.2M port-rights impairment",
+      "rationale": "The slice documents only the Sept 2014 sale of the registrant's 50% non-operating Decker Mine interest to the co-owner, with liability assumption, a $74.3M pre-tax gain, and subsequent revenue/cost declines attributed to the exit; no realized product/process misalignment is described, so p4_pathway=0. Likewise no fracture at the operations-versus-organization/culture interface is recorded over the window, only the clean divestiture and a later $52.2M impairment of port-access rights received as consideration, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': '50% Decker Mine interest fully divested in 2014 for a $74.3 million pre-tax gain'}",
+      "rationale": "{'type': 'string', 'value': 'The realized record documents the full divestiture, subsequent revenue and cost reductions, and a $52.2 million impairment of port-access rights, but it does not attribute these outcomes to an inability to align the product with operating processes; therefore p4 is 0. It likewise reports assumption of reclamation, bonding, and pension liabilities by the buyer but documents no fracture between operations and management, personnel, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"divested 50% interest in 2014; recognized $74.3m pre-tax gain\",\n\"rationale\": \"The slice documents the sale of the 50% non-operating interest in the Decker Mine to Ambre Energy in 2014, resulting in a $74.3 million pre-tax gain and the release of reclamation and pension liabilities. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) leading up to or causing this divestiture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"50% Decker interest divested Sept 2014; $74.3M gain, later $52.2M port-rights impairment\",\n  \"rationale\": \"The slice documents only the Sept 2014 sale of the registrant's 50% non-operating Decker Mine interest to the co-owner, with liability assumption, a $74.3M pre-tax gain, and subsequent revenue/cost declines attributed to the exit; no realized product/process misalignment is described, so p4_pathway=0. Likewise no fracture at the operations-versus-organization/culture interface is recorded over the window, only the clean divestiture and a later $52.2M impairment of port-access rights received as consideration, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"50% Decker Mine interest fully divested in 2014 for a $74.3 million pre-tax gain\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"The realized record documents the full divestiture, subsequent revenue and cost reductions, and a $52.2 million impairment of port-access rights, but it does not attribute these outcomes to an inability to align the product with operating processes; therefore p4 is 0. It likewise reports assumption of reclamation, bonding, and pension liabilities by the buyer but documents no fracture between operations and management, personnel, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

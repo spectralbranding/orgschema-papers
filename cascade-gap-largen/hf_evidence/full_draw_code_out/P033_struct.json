@@ -1,0 +1,85 @@
+{
+  "case_id": "P033",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because the customer-facing product portfolio (HUMIRA, Lupron, etc.) crossed together with its owned manufacturing plants and R&D facilities (North Chicago, Puerto Rico, Ireland, Germany), so product and its producing processes transferred coherently as a bundle into AbbVie. gap_56 is 1 because operational processes transferred but the shared corporate-service substrate that runs them — accounting, IT, finance, cash management, and ex-U.S. back-office — did NOT transfer as an intact operating substrate (\"will need to make significant investments to replicate or outsource...facilities, systems, infrastructure, and personnel\"), a documented process-vs-organization mismatch at closing. That gap was contractually absorbed at closing via the U.S./ex-U.S. transition services agreements, IT agreement, employee matters agreement, and supply/lease agreements, so gap_mitigated is yes. T1 is replace and T3 is swap because a new standalone legal vehicle was formed to hold the business under distinct management (Gonzalez as new Chairman/CEO), separate from Abbott's continuing diversified intent."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The product portfolio and its dedicated manufacturing and R&D processes transferred together into the new entity, meaning there is no product-process mismatch (gap_45 = 0). However, the shared corporate-service substrate (accounting, IT, finance, ex-U.S. back office) did not transfer intact, creating a structural gap between the operational processes and the organizational support (gap_56 = 1). This gap was mitigated at closing via transition services, IT, and lease agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing pharmaceutical portfolio and principal manufacturing/R&D assets transferred, but accounting, IT, finance, cash-management, and certain ex-U.S. back-office infrastructure did not transfer intact, documenting a product-versus-process gap at closing. That gap was contractually absorbed through transition-services, IT, supply, contract-manufacturing, commercial-operations, and lease agreements. Approximately 30,000 employees and the incumbent pharmaceutical management team moved with the business, so the slice documents no closing-time mismatch between the transferred operational processes and the organization running them."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 is 0 because the customer-facing product portfolio (HUMIRA, Lupron, etc.) crossed together with its owned manufacturing plants and R&D facilities (North Chicago, Puerto Rico, Ireland, Germany), so product and its producing processes transferred coherently as a bundle into AbbVie. gap_56 is 1 because operational processes transferred but the shared corporate-service substrate that runs them \\u2014 accounting, IT, finance, cash management, and ex-U.S. back-office \\u2014 did NOT transfer as an intact operating substrate (\\\"will need to make significant investments to replicate or outsource...facilities, systems, infrastructure, and personnel\\\"), a documented process-vs-organization mismatch at closing. That gap was contractually absorbed at closing via the U.S./ex-U.S. transition services agreements, IT agreement, employee matters agreement, and supply/lease agreements, so gap_mitigated is yes. T1 is replace and T3 is swap because a new standalone legal vehicle was formed to hold the business under distinct management (Gonzalez as new Chairman/CEO), separate from Abbott's continuing diversified intent.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The product portfolio and its dedicated manufacturing and R&D processes transferred together into the new entity, meaning there is no product-process mismatch (gap_45 = 0). However, the shared corporate-service substrate (accounting, IT, finance, ex-U.S. back office) did not transfer intact, creating a structural gap between the operational processes and the organizational support (gap_56 = 1). This gap was mitigated at closing via transition services, IT, and lease agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing pharmaceutical portfolio and principal manufacturing/R&D assets transferred, but accounting, IT, finance, cash-management, and certain ex-U.S. back-office infrastructure did not transfer intact, documenting a product-versus-process gap at closing. That gap was contractually absorbed through transition-services, IT, supply, contract-manufacturing, commercial-operations, and lease agreements. Approximately 30,000 employees and the incumbent pharmaceutical management team moved with the business, so the slice documents no closing-time mismatch between the transferred operational processes and the organization running them.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

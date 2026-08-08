@@ -1,0 +1,910 @@
+ 
+ 8-K
+ 1
+ d474419d8k.htm
+ FORM 8-K
+
+ Form 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON, DC 20549 
+ FORM 8-K
+ 
+ CURRENT REPORT PURSUANT
+TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 
+ Date of report (Date of earliest event reported): October 13, 2017 (October 6, 2017) 
+ 
+ CAESARS ENTERTAINMENT CORPORATION 
+ (Exact Name of Registrant as Specified in Charter) 
+
+ Delaware 
+ 
+ 001-10410 
+ 
+ 62-1411755 
+ 
+ (State or Other Jurisdiction 
+ of Incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (IRS Employer 
+ Identification No.) 
+ One Caesars Palace Drive, Las Vegas, Nevada 89109 
+ (Address of Principal Executive Offices)(Zip Code) 
+ (702) 407-6000 
+ (Registrant&#146;s telephone number, including area code) 
+ N/A (Former Name or
+Former Address, if Changed Since Last Report) 
+ Check the appropriate box below
+if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this
+chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). Emerging growth company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or
+revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ INTRODUCTORY NOTE 
+ Merger with Caesars Acquisition Company 
+ As previously reported, Caesars Entertainment Corporation (&#147; CEC &#148; or the &#147; Company &#148;) and Caesars Acquisition
+Company (&#147; CAC &#148;) entered into an Amended and Restated Agreement and Plan of Merger, dated as of July 9, 2016, as amended by the First Amendment to the Amended and Restated Agreement and Plan of Merger, dated as of
+February 20, 2017 (as amended, the &#147; Merger Agreement &#148;). Pursuant to the Merger Agreement, on October 6, 2017 (the &#147; Effective Date, &#148; which also constitutes the Effective Date of the Plan, as defined below)
+CAC merged with and into CEC, with CEC as the surviving company (the &#147; Merger &#148;). Upon consummation of the Merger, each share of Class A common stock, par value $0.001 per share, of CAC (the &#147; CAC Common Stock &#148;)
+issued and outstanding immediately prior to the effective time of the Merger was converted into, and became exchangeable for, 1.625 shares (the &#147; Exchange Ratio &#148;) of common stock, par value $0.01 per share, of CEC (the &#147; CEC
+Common Stock &#148;), resulting in CEC issuing 226,128,877 shares of CEC Common Stock to the holders of CAC Common Stock. The Merger will be accounted for as a transaction among entities under common control, which will result in CAC being
+consolidated into CEC at book value as an equity transaction. Copies of the Amended and Restated Agreement and Plan of Merger and the
+First Amendment to the Amended and Restated Agreement and Plan of Merger are filed as Exhibits 2.1 and 2.2 hereto. CEOC&#146;s Emergence from
+Chapter 11 Bankruptcy As previously reported, on January 15, 2015, CEC&#146;s subsidiary, Caesars Entertainment Operating
+Company, Inc. (&#147; CEOC &#148;), and certain of its subsidiaries (collectively, the &#147; Debtors &#148;) filed a voluntary petition for relief under Chapter 11 of Title 11 of the United States Code (the &#147; Bankruptcy
+Code &#148;) in the United States Bankruptcy Court for the Northern District of Illinois (the &#147; Bankruptcy Court &#148;). On January 17, 2017, the Bankruptcy Court entered an order approving and confirming the Debtors&#146; third
+amended joint plan of reorganization (the &#147; Plan &#148;). A copy of the Plan is filed as Exhibit 2.3 hereto. On October 6,
+2017, the Debtors consummated their reorganization pursuant to the Plan. The Plan provides for, among other things: 
+
+ (1) 
+ A global settlement of all claims the Debtors may have against CEC and its affiliates; 
+
+ (2) 
+ Comprehensive releases for CEC and its affiliates and CAC and its affiliates; and 
+
+ (3) 
+ The reorganization of CEOC as an operating company (&#147; OpCo &#148;) and a property company (&#147; PropCo &#148;). OpCo, which became a limited liability company in connection with the reorganization by
+merging with and into CEOC, LLC (&#147; CEOC LLC &#148;), a wholly-owned subsidiary of CEC, with CEOC LLC as the surviving entity. OpCo operates certain properties and facilities formerly held by CEOC, and PropCo holds certain real property
+assets and related fixtures formerly held by CEOC and leases those assets to OpCo. OpCo, or CEOC LLC, is CEOC&#146;s successor and a wholly-owned operating subsidiary of CEC. PropCo, now known as VICI Properties, Inc. (&#147; VICI
+Properties &#148;), is a separate entity that is not consolidated by CEC and is owned by certain of CEOC&#146;s former creditors. 
+ In order to support distributions under the Plan, the Plan was conditioned upon CEC making significant cash and non-cash contributions to the
+Debtors&#146; reorganization. The key components of the Plan included: 
+
+ &#149; 
+ 
+ Approximately $925 million (less forbearance fees already paid prior to the Effective Date) in cash to fund Plan distributions, other restructuring transactions contemplated by the Plan, and general corporate purposes,
+and an additional $164 million to fund distributions to certain classes of the Debtors&#146; unsecured creditors; 
+
+ &#149; 
+ 
+ An approximate $765 million bank guaranty settlement purchase price for the benefit of CEOC&#146;s first lien bank lenders; 
+ 1 
+
+ &#149; 
+ 
+ The purchase by CEC of 100% of OpCo&#146;s common equity (&#147; New CEOC Common Equity &#148;) for $700 million (with no associated fee), with the cash distributed to creditors in connection with the division
+of CEOC into OpCo and PropCo; 
+
+ &#149; 
+ 
+ The issuance by OpCo of Series A Preferred Equity (&#147; New CEOC Preferred Equity &#148;) to certain creditors of the Debtors, which was exchanged for CEC Common Stock, as described below; 
+
+ &#149; 
+ 
+ The issuance of approximately 562 million shares of CEC Common Stock to certain creditors of the Debtors valued at $12.80 per share immediately prior to the Effective Date, representing 59.1% of outstanding CEC
+Common Stock after giving effect to the Merger and CEC Common Equity Buyback (as described below), in exchange for the New CEOC Preferred Equity and settlement of all claims the Debtors may have against CEC and its affiliates; 
+
+ &#149; 
+ 
+ A call right agreement giving PropCo up to five years to purchase the real property and the related fixtures associated with the Harrah&#146;s Laughlin and Harrah&#146;s Atlantic City properties from Caesars
+Entertainment Resort Properties, LLP (&#147; CERP &#148;) and the Harrah&#146;s New Orleans property from Caesars Growth Properties Holdings, LLC (&#147; CGPH &#148;), both wholly-owned subsidiaries of CEC; 
+
+ &#149; 
+ 
+ A guarantee of CEOC LLC&#146;s monetary obligations under the MLSAs (as described herein); 
+
+ &#149; 
+ 
+ The issuance by CEC of approximately $1.1 billion aggregate principal amount of 5.00% Convertible Senior Notes due 2024 (the &#147; Convertible Notes &#148;); 
+
+ &#149; 
+ 
+ The repurchase of approximately 146 million shares of CEC Common Stock for approximately $1.0 billion in cash from certain creditors of the Debtors at a pre-negotiated price of $6.86 per share (the &#147; CEC
+Common Equity Buyback &#148;); and 
+
+ &#149; 
+ 
+ The extinguishment of all loans and other obligations under the bank guaranty settlement as of the Effective Date, with the current holder thereof receiving CEC Common Stock. 
+ CEOC LLC Acquisition On the
+Effective Date and in accordance with the Plan, CEC completed the acquisition of CEOC LLC for approximately $2.3 billion using a combination of $700 million in cash and stock consideration of approximately $1.6 billion in exchange for all New CEOC
+Common Equity and New CEOC Preferred Equity, respectively. The acquisition was accounted for under Financial Accounting Standards Board Accounting Standards Codification Topic 805, Business Combinations , with CEC considered the acquirer of
+CEOC LLC, which requires, among other things, that the assets acquired and the liabilities assumed be recognized on the balance sheet at their fair values as of the acquisition date. The excess of the purchase price over the net fair value of the
+assets and liabilities will be recorded as goodwill. 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. Lease Agreements, Golf Course Use Agreement
+ On October 6, 2017, (i) CEOC LLC, CEOC and Desert Palace LLC (&#147; Desert Palace &#148;), collectively as tenant,
+leased (or subleased as applicable) the land and improvements constituting the Caesars Palace Las Vegas property from CPLV Property Owner LLC (&#147; Landlord &#148;) pursuant to that certain Lease (CPLV) (the &#147; CPLV Lease &#148;),
+(ii) CEOC LLC and certain affiliates of CEOC LLC, collectively as tenant, leased certain U.S. properties from certain affiliates of the Landlord (such properties initially comprised of 17 gaming facilities operated in eight states, a racetrack
+facility in Kentucky, miscellaneous properties in Las Vegas, Nevada and generally all other U.S. real property owned by CEOC as of October 6, 2017, 
+ 2 
+
+other than certain golf course properties) pursuant to that certain Lease (Non-CPLV) (the &#147; Non-CPLV Lease &#148;), and (iii) Des Plaines Development Limited Partnership, as
+tenant, leased the land and improvements constituting the Harrah&#146;s Joliet casino in Joliet, Illinois from Harrah&#146;s Joliet Landco LLC pursuant to that certain Lease (Joliet) (the &#147; Joliet Lease ,&#148; and together with the CPLV
+Lease and the Non-CPLV Lease, the &#147; Lease Agreements &#148;). As used herein, (i) the term &#147; OpCo Tenant &#148; collectively refers to the tenants under the Lease Agreements, (ii) the term &#147; PropCo
+Landlord &#148; collectively refers to the landlords under the Lease Agreements, and (iii) the term &#147; Facility &#148; refers to each single operating asset/business unit property leased under the Lease Agreements ( e.g. ,
+Caesars Palace Las Vegas under the CPLV Lease and/or each of the various casinos leased under the Non-CPLV Lease and Joliet Lease). 
+ Subject to certain exceptions, the payment of all monetary obligations of the applicable OpCo Tenant under each Lease Agreement will be
+guaranteed by CEC under the terms of the corresponding MLSA, as defined and described in further detail below. Each Lease Agreement has a 15-year initial term and four renewal terms of five years each exercisable by OpCo Tenant at its
+option (subject to there being no events of default by OpCo Tenant under such Lease Agreement). Each Lease Agreement is structured as a
+&#147;triple-net&#148; lease, in that OpCo Tenant is responsible for all operating costs associated with the respective Facilities, including the payment of taxes, insurance and all repairs, and providing indemnities to PropCo Landlord against
+liabilities associated with the operations of each such Facility. OpCo Tenant is required to make capital expenditures satisfying certain
+minimum spending requirements as set forth in the Lease Agreements. Material decisions related to the Facilities, such as renovations or other significant projects, will be made by CEC in collaboration with PropCo Landlord&#146;s board and
+management. Generally, upon PropCo Landlord&#146;s sale of any Facility leased under the Non-CPLV Lease, the applicable OpCo Tenant will
+be required to enter into a new lease with the new property owner of such Facility on terms substantially similar to the Non-CPLV Lease, with prorated rent and capital expenditure obligations (and corresponding reductions under the Non-CPLV Lease).
+However, under the Non-CPLV Lease, PropCo Landlord may sell certain specified parcels of land not associated with (or otherwise not necessary for the operation of) a Facility to third parties without a new lease being entered into (or any reduction
+of rent or capital expenditure obligations under the applicable Lease Agreement from which such land is being sold). Generally, direct
+and indirect changes in control of OpCo Tenant are restricted without the PropCo Landlord&#146;s consent, but transfers of stock on a nationally-recognized exchange are permitted and certain direct and indirect changes in control of CEC are
+permitted without PropCo Landlord&#146;s consent, provided that the quality and experience of the management of the Facilities must remain consistent with that existing prior to such change in control. 
+ A default under the Non-CPLV Lease or the Joliet Lease will not be a default under the CPLV Lease. However, a default under any Lease
+Agreement (including the CPLV Lease) will be a default under each of the Non-CPLV Lease and the Joliet Lease. In the event of certain
+terminations of any Lease Agreement, the applicable OpCo Tenant may be required to cooperate to transfer all personal property located at the applicable Facility(ies) to a designated successor, for fair market value, and/or to stay in possession of
+(and continue to operate) the applicable premises for a period not to exceed two years until a successor tenant is determined. Each Lease
+Agreement provides for fixed rent (subject to escalation) during an initial term, then rent consisting of both base rent and variable percentage rent elements. The CPLV Lease provides for annual fixed rent of $165 million for the first seven
+lease years, subject to escalation beginning in the second lease year equal to the greater of 2% and a consumer price index (the &#147; Escalator &#148;). Beginning in the eighth lease year, the base rent (&#147; CPLV Base Rent &#148;)
+will initially equal 80% of the preceding year&#146;s rent (and thereafter be increased annually by the Escalator for the remainder of the initial lease term), and percentage rent (&#147; CPLV Percentage Rent &#148;) will begin to be due,
+calculated as follows: in year eight, a fixed annual amount equal to 20% of the rent of the seventh lease year adjusted upward or downward by the product of 13% and the amount by which the net revenue generated by
+ 
+ 3 
+
+the Caesars Palace Las Vegas property in the seventh lease year increased or decreased from the net revenue in the year preceding the initial lease year of the initial term. The CPLV Percentage
+Rent will then remain unchanged during the ninth and tenth lease years. The CPLV Percentage Rent will be adjusted in year 11 either upward or downward in proportion to the comparison of net revenue in the tenth lease year versus net revenue in the
+seventh lease year. The CPLV Percentage Rent will then again remain unchanged for the remainder of the initial term. At the commencement of each renewal term, (a) the CPLV Base Rent will initially be adjusted as set forth in the CPLV Lease and
+thereafter be increased annually by the Escalator, and (b) the CPLV Percentage Rent will be adjusted either upward or downward, in proportion to the comparison of net revenue in the prior year versus net revenue in the year preceding the last
+time the CPLV Percentage Rent was adjusted, and then again remain unchanged for the remainder of such renewal term. The calculation of net revenue for purposes of determining the CPLV Percentage Rent will be subject to certain adjustments as set
+forth in the CPLV Lease. The Non-CPLV Lease and the Joliet Lease provide (in the aggregate) for annual fixed rent of approximately
+$473 million for the first seven lease years, subject to escalation beginning in the sixth lease year equal to the Escalator. Beginning in the eighth lease year, the base rent (&#147; Non-CPLV Base Rent &#148;) will begin to be due,
+calculated as follows: the Non-CPLV Base Rent for lease years eight through ten will be equal in year eight to 70% of the total rent for the seventh lease year, then increased annually by the Escalator during years nine and ten. The Non-CPLV Base
+Rent for lease year 11 will be equal to 80% of the total rent for the tenth lease year, then increased annually by the Escalator for the remainder of the initial term. Also beginning in the eighth lease year, percentage rent (&#147; Non-CPLV
+Percentage Rent &#148;) will begin to be due, calculated as follows: in year eight, a fixed annual amount equal to 30% of the rent of the seventh lease year adjusted upward or downward by the product of 19.5% and the amount by which the net
+revenue generated by the Non-CPLV Facilities in the seventh lease year increased or decreased from the net revenue in the year preceding the initial lease year of the initial term. The Non-CPLV Percentage Rent will then remain unchanged during the
+ninth and tenth lease years. In year 11, the Non-CPLV Percentage Rent will be a fixed annual amount equal to 20% of the rent of the tenth lease year adjusted upward or downward by the product of 13% and the amount by which the net revenue generated
+by the Non-CPLV Facilities in the tenth lease year increased or decreased from the net revenue in the seventh lease year. The Non-CPLV Percentage Rent will then again remain unchanged for the remainder of the initial term. At the commencement of
+each renewal term, certain Facilities with an insufficient expected useful life may be removed from the Non-CPLV Lease or Joliet Lease and (a) the Non-CPLV Base Rent will initially be adjusted to equal the fair market value of the Non-CPLV Base
+Rent and thereafter be increased annually by the Escalator, and (b) the Non-CPLV Percentage Rent will be adjusted either upward or downward in proportion to the comparison of net revenue from the prior year versus net revenue from the year
+preceding the last time the Non-CPLV Percentage Rent was adjusted, and then again remain unchanged for the remainder of such renewal term. Notwithstanding the foregoing, if the remaining term of the Non-CPLV Lease, including any renewal periods,
+would exceed 80% of the useful life of any Facility subject to the Non-CPLV Lease, the rent allocable to such Facility shall be the fair market rental value of such Facility, subject to certain exceptions. The calculation of net revenue for purposes
+of determining the Non-CPLV Percentage Rent will be subject to certain adjustments as set forth in the Non-CPLV Lease. Additionally,
+concurrently with the execution of the CPLV Lease on October 6, 2017, Desert Palace was granted a royalty-free, perpetual license to use the &#147;Caesars Palace&#148; and &#147;Caesars Palace Las Vegas&#148; brands and marks by Caesars License
+Company, LLC (&#147; CLC &#148;), which license is exclusive with respect to the use of &#147;Caesars Palace&#148; and &#147;Caesars Palace Las Vegas&#148; in connection with any hotel, casino or other leisure, entertainment or commercial
+property within 30 miles of the Caesars Palace Las Vegas property (the &#147; CPLV Trademark License &#148;). Concurrently with
+execution of the Lease Agreements, (1) certain golf course properties (the &#147; Golf Course Properties &#148;) were transferred to certain affiliates of PropCo Landlord under the Lease Agreements (the &#147; Golf Course
+Owners &#148;), and (2) CEOC LLC and Caesars Enterprise Services, LLC (&#147; CES &#148;) (each, a &#147; User &#148;) and the Golf Course Owners entered into a golf course use agreement (the &#147; Golf Course Use
+Agreement &#148;) pursuant to which the User will pay to the Golf Course Owners (i) an annual payment in the amount of $10 million subject to escalation in the proportion and at the times that rent (including both Non-CPLV Base Rent and
+Non-CPLV Percentage Rent) under the Non-CPLV Lease is escalated, (ii) an annual use fee in the amount of $3 million, subject to escalation beginning in the second lease year equal to the Escalator, and (iii) per-round fees (subject to a
+requirement that the User pay for a specified minimum number of rounds, regardless of whether the User uses them). The Golf Course Use Agreement will be cross defaulted with the Non-CPLV Lease and will generally be coterminous with the Lease
+Agreements. The payment of all monetary obligations of the User under the Golf Course Use Agreement will be guaranteed by CEC. 
+ 4 
+
+ The foregoing summary does not purport to be complete and is qualified in its entirety by
+reference to the CPLV Lease, the Non-CPLV Lease, the Joliet Lease, the CPLV Trademark License and the Golf Course Use Agreement, which are filed as Exhibits 10.1, 10.2, 10.3, 10.4 and 10.5 hereto, respectively, and incorporated herein by reference.
+ Management and Lease Support Agreements 
+ On October 6, 2017, each OpCo Tenant and PropCo Landlord entered into a management and lease support agreement (a &#147; MLSA &#148;)
+with CEC, a management entity that is wholly-owned by CEC (individually or collectively, &#147; CEC Manager &#148;), and certain other parties in respect of each Lease Agreement. Pursuant to each of the MLSAs, inter alia , (1) CEC
+Manager will manage the applicable Facility(ies) leased by the applicable OpCo Tenant, within certain parameters, with expenses for operating such Facility(ies) to be reimbursed by OpCo Tenant, and subject to other management agreement terms and
+provisions set forth in the MLSA, and (2) CEC will provide a guarantee in respect of the applicable OpCo Tenant&#146;s monetary obligations under the applicable Lease Agreement (subject, in the case of the Joliet Lease, to certain limitations)
+and the Golf Course Use Agreement. CEC&#146;s guaranty obligations and CEC Manager&#146;s obligations under each MLSA will terminate (i) if the applicable Lease Agreement is terminated by reason of casualty, condemnation or the natural
+expiration of the term, (ii) upon the replacement of CEC Manager and CEC in connection with certain foreclosures by OpCo Tenant&#146;s lenders or (iii) otherwise with the applicable OpCo Tenant&#146;s, CEC Manager&#146;s, CEC&#146;s and
+PropCo Landlord&#146;s consent. If the applicable Lease Agreement is terminated due to an OpCo Tenant Default (as defined in the MLSAs), CEC&#146;s guaranty under the MLSA will cover any amounts due under the Lease Agreement in connection with the
+termination, including damages for future rent amounts. CEC&#146;s guaranty obligations survive (i) if CEC Manager is terminated for cause (with certain exceptions), (ii) for the duration of any transition period following termination of
+the MLSA, (iii) in certain circumstances following termination of the applicable Lease Agreement without PropCo Landlord&#146;s consent or (iv) if the applicable Lease Agreement is rejected in bankruptcy and OpCo Tenant&#146;s lender
+obtains a replacement lease. Each MLSA provides that, subject to certain customary exceptions, CEC will not sell its assets unless it
+receives consideration equal to at least fair market value and, in the event of sales to affiliates, such sale will be subject to (i) a right of first refusal in favor of PropCo Landlord, (ii) the approval of a majority of CEC&#146;s
+independent directors and (iii) receipt of a fairness opinion from an acceptable accounting, appraisal or investment banking firm. The MLSAs limit the ability of CEC to make non-cash distributions unless such distributions would not reasonably
+be expected to result in CEC&#146;s inability to perform its guaranty obligations. For a period of six years after October 6, 2017, the MLSAs will also restrict the ability of CEC to pay dividends, purchase CEC&#146;s equity interests or engage
+in similar transactions except CEC may engage in (1) such transactions if (A) CEC&#146;s pro forma market capitalization after such transaction is at least $5.5 billion, (B) the aggregate amount of such dividends or other transactions
+does not exceed (x) 25% of the net proceeds, up to a cap of $25 million in any fiscal year, from the disposition of assets by CEC and its subsidiaries, plus (y) $100 million in any fiscal year from other sources, or (C) CEC&#146;s pro
+forma market capitalization after such transaction is at least $4.5 billion and the aggregate amount of such dividends or other transactions does not exceed $125 million in any fiscal year and is funded solely by asset sale proceeds or (2) any
+purchase of CEC&#146;s equity interests so long as the aggregate amount of all such transactions made under this clause (2) does not exceed $199.5 million. 
+ The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the MLSAs for the CPLV Lease, the
+Non-CPLV Lease and the Joliet Lease, which are filed as Exhibits 10.6, 10.7 and 10.8 hereto, respectively, and incorporated herein by reference. 
+ 5 
+
+ Right of First Refusal Agreement 
+ On the Effective Date, CEC and VICI Properties L.P., the operating partnership of VICI Properties (&#147; VICI Partnership &#148;),
+entered into the Right of First Refusal Agreement (the &#147; Right of First Refusal Agreement &#148;), pursuant to which (1) CEC (by and on behalf of itself and all of its majority owned subsidiaries) agreed to, among other things, grant
+to VICI Partnership (by and on behalf of itself and all of its majority owned subsidiaries) a right of first refusal to purchase (and lease to an affiliate of CEC) certain non-Las Vegas domestic real estate that CEC or its affiliates may have the
+opportunity to acquire or develop and (2) VICI Partnership agreed to, among other things, grant to CEC a right of first refusal to lease and manage certain non-Las Vegas domestic real estate that VICI Partnership may have the opportunity to
+acquire or develop. The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Right of
+First Refusal Agreement, which is filed as Exhibit 10.9 hereto and incorporated herein by reference. Tax Matters Agreement 
+ On the Effective Date, CEC and CEOC LLC entered into a tax matters agreement (the &#147; Tax Matters Agreement &#148;) with VICI
+Properties, VICI Partnership and CPLV Property Owner LLC, addressing matters relating to the payment of taxes and entitlement to tax refunds by CEC, CEOC LLC, VICI Partnership and VICI Properties, and allocating certain liabilities, including
+providing for certain covenants and indemnities, relating to the payment of such taxes, receipt of such refunds, and preparation of tax returns relating thereto. Under the Tax Matters Agreement, CEC will indemnify VICI Properties for any taxes
+allocated to CEOC LLC which VICI Properties is required to pay pursuant to its tax returns and VICI Properties will indemnify CEC for any taxes allocated to VICI Properties which CEC or CEOC LLC is required to pay pursuant to a CEC or CEOC tax
+return. VICI Properties will have the right to participate in the contest of any matters relating to any CEC or CEOC LLC tax return that relate to matters for which VICI Properties has indemnification responsibilities, and CEC will have the right to
+participate in the contest of any matters relating to any VICI Properties tax return that relate to matters for which CEC has indemnification responsibilities. 
+ The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Tax Matters Agreement, which is
+filed as Exhibit 10.10 hereto and incorporated herein by reference. Convertible Notes Indenture 
+ On the Effective Date, CEC issued $1,119,060,000 aggregate principal amount of the Convertible Notes to the Debtors, and the Debtors
+distributed the Convertible Notes pursuant to the terms of the Plan to the holders of non-first lien claims. The Convertible Notes were issued pursuant to the Indenture, dated as of October 6, 2017 (the &#147; CEC Indenture &#148;),
+between CEC and Delaware Trust Company, as trustee. The Convertible Notes accrue interest at 5.00% per annum and mature in 2024. The
+Convertible Notes are convertible at the option of holders into a number of shares of CEC Common Stock that is initially equal to 0.138998325 shares of CEC Common Stock per $1.00 of Convertible Notes. Such shares, if issued at the effective time of
+the Merger would have represented approximately 17.9% of the shares of CEC Common Stock outstanding at the effective time on a fully diluted basis. The Convertible Notes are subject to conversion at the option of CEC following the third anniversary
+of the issuance of the Convertible Notes if the last reported sale price of CEC Common Stock equals or exceeds 140% of the conversion price for the Convertible Notes in effect on each of at least 20 trading days during any 30 consecutive trading day
+period. CEC does not have any other redemption rights. If CEC undergoes a Fundamental Change (as defined in the CEC Indenture), holders
+may require CEC to purchase for cash all or part of their Convertible Notes at a purchase price equal to 100% of the principal amount of the Convertible Notes to be purchased, plus accrued and unpaid interest, if any, to, but excluding, the
+Fundamental Change purchase date. In addition, if certain make-whole fundamental changes occur, CEC will, in certain circumstances, increase the conversion rate for any Convertible Notes converted in connection with such make-whole fundamental
+change. The Convertible Notes are senior unsecured obligations of CEC and rank equally and ratably in right of payment with all existing
+and future senior unsecured obligations and senior to all future subordinated indebtedness. The Convertible Notes are not guaranteed. 
+ 6 
+
+ The CEC Indenture contains covenants that limit CEC&#146;s and its restricted subsidiaries&#146;
+ability to, among other things: (1) incur additional debt or issue certain stock; (2) pay dividends on or make other distributions in respect of its capital stock or make other restricted payments, including certain investments;
+(3) put any restriction on the ability of restricted subsidiaries to pay dividends, make loans or sell assets to CEC or its restricted subsidiaries; (4) sell certain assets; (5) create liens on certain assets to secure debt;
+(6) consolidate, merge, sell or otherwise dispose of all or substantially all of its assets; and (7) enter into certain transactions with their affiliates. These covenants are subject to a number of important limitations and exceptions
+outlined in the CEC Indenture. The CEC Indenture also provides for events of default, which, if any of them occurs, would permit or require the principal, premium, if any, interest and any other monetary obligations on all of the then outstanding
+Convertible Notes to be due and payable immediately. The foregoing summary does not purport to be complete and is qualified in its
+entirety by reference to the CEC Indenture, which is filed as Exhibit 4.1 hereto and incorporated herein by reference. CEOC Credit Agreement
+ Overview On
+October 6, 2017, CEOC and CEOC LLC borrowed $1,235 million of term loans (the &#147; Term Loan &#148;) pursuant to a Credit Agreement among CEOC and CEOC LLC as the borrowers thereunder, the lenders party thereto, Credit Suisse AG, Cayman
+Islands Branch, as administrative agent (the &#147; Administrative Agent &#148;), and collateral agent, Credit Suisse Securities (USA) LLC and Deutsche Bank Securities Inc., as Joint Lead Arrangers, and Credit Suisse Securities (USA) LLC,
+Deutsche Bank Securities Inc., Barclays Bank PLC, Citigroup Global Markets Inc., Goldman Sachs Bank USA, JPMorgan Chase Bank, N.A., Morgan Stanley Senior Funding, Inc. and UBS Securities LLC, as Joint Bookrunners (the &#147; Credit
+Agreement &#148;). The Credit Agreement also provides for a $200 million revolving credit facility (the &#147; Revolving Credit Facility &#148;). Immediately follow the emergence of CEOC from bankruptcy (the &#147; Emergence &#148;),
+CEOC merged with and into CEOC LLC, with CEOC LLC as the surviving entity of such merger and remaining as the sole borrower under the Credit Agreement (the &#147; Borrower &#148;). 
+ The Term Loan matures in 2024 and the Revolving Credit Facility matures in 2022 and includes a letter of credit sub-facility. The Term Loan
+requires scheduled quarterly payments in amounts equal to 0.25% of the original aggregate principal amount of the Term Loan, with the balance due at maturity. As of the Effective Date, no borrowings were outstanding under the Revolving Credit
+Facility and approximately $49.6 million were committed to outstanding letters of credit. The Credit Agreement allows the Borrower to
+request one or more incremental term loan facilities and/or increase its commitments under the Revolving Credit Facility in an aggregate amount of up to the sum of (x) the greater of (1) $350 million and 0.85 times EBITDA (as defined in
+the Credit Agreement) plus (y) the amount of certain voluntary prepayments plus (z) such additional amount so long as, (i) in the case of loans under additional credit facilities that rank pari passu with the liens on the collateral
+securing the Credit Agreement, the Borrower&#146;s senior secured leverage ratio on a pro forma basis would not exceed 2.50 to 1.00, (ii) in the case of loans under additional credit facilities that rank junior to the liens on the collateral
+securing the Credit Agreement, the Borrower&#146;s total secured leverage ratio on a pro forma basis would not exceed 2.75 to 1.00 and (iii) in the case of loans under additional credit facilities that are unsecured, the Borrower&#146;s
+interest coverage ratio on a pro forma basis would not be less than 2.00 to 1.00, in each case, subject to certain conditions and receipt of commitments by existing or additional financial institutions or institutional lenders. 
+ All future borrowings under the Credit Agreement are subject to the satisfaction of customary conditions, including the absence of a default
+and the accuracy of representations and warranties, subject to certain exceptions. Interest and Fees 
+ Borrowings under the Credit Agreement bear interest at a rate equal to, at the Borrower&#146;s option, either (a) LIBOR determined by
+reference to the costs of funds for Eurodollar deposits for the interest period relevant to such borrowing, adjusted for certain additional costs, subject to a floor of 0% or (b) a base rate determined by reference to the highest of
+(i) the federal funds rate plus 0.50%, (ii) the prime rate as determined by the Administrative Agent and (iii) the one-month adjusted LIBOR rate plus 1.00%, in each case plus an applicable margin. 
+ 7 
+
+ Such applicable margin shall be (a) with respect to the Term Loan, 2.50% per annum in
+the case of any LIBOR loan or 1.50% per annum in the case of any base rate loan and (b) in the case of the Revolving Credit Facility, 2.00% per annum in the case of any LIBOR loan and 1.00% per annum in the case of any base rate
+loan, subject in the case of the Revolving Credit Facility to two 0.125% step downs based on the Borrower&#146;s senior secured leverage ratio. 
+ In addition, on a quarterly basis, the Borrower is required to pay each lender under the Revolving Credit Facility a commitment fee in respect
+of any commitments under the Revolving Credit Facility in the amount of 0.50% of the principal amount of the commitments of such lender, subject to a stepdowns to 0.375% and 0.25% based upon the Borrower&#146;s senior secured leverage ratio. The
+Borrower is also required to pay customary agency fees as well as letter of credit participation fees computed at a rate per annum equal to the applicable margin for LIBOR borrowings on the dollar equivalent of the daily stated amount of outstanding
+letters of credit, plus such letter of credit issuer&#146;s customary documentary and processing fees and charges and a fronting fee in an amount equal to 0.125% of the daily stated amount of such letter of credit. 
+ Mandatory and Voluntary Prepayments 
+ The Credit Agreement requires the Borrower to prepay outstanding term loans, subject to certain exceptions, with: 
+
+ &#149; 
+ 
+ 50% (which percentage will be reduced to 25% if the senior secured leverage ratio is greater than 1.00 to 1.00 but less than or equal to 1.75 to 1.00, and to 0% if the Borrower&#146;s senior secured leverage ratio is
+less than or equal to 1.00 to 1.00) of the Borrower&#146;s annual excess cash flow (as defined in the Credit Agreement) to the extent such amount exceeds $5.0 million; 
+
+ &#149; 
+ 
+ 100% (which percentage will be reduced to 50% if the senior secured leverage ratio is greater than 1.00 to 1.00 but less than or equal to 1.75 to 1.00, and to 0% if the Borrower&#146;s senior secured leverage ratio is
+less than or equal to 1.00 to 1.00) of the net cash proceeds of certain non-ordinary course asset sales or certain casualty events, in each case subject to certain exceptions and provided that the Borrower may (a) reinvest within 12 months or
+(b) contractually commit to reinvest those proceeds within 12 months and so reinvest such proceeds within 6 months following the end of such 12 month period, to be used in its business, or certain other permitted investments; and
+
+ &#149; 
+ 
+ 100% of the net cash proceeds of any issuance or incurrence of debt, other than proceeds from debt permitted under the Credit Agreement. 
+ Collateral and Guarantors 
+ The borrowings under the Credit Agreement will be guaranteed by the material, domestic wholly-owned subsidiaries of the Borrower (subject to
+exceptions), and will be secured by a pledge (and, with respect to real property, mortgage) of substantially all of the existing and future property and assets of the Borrower and the guarantors (subject to exceptions), including a pledge of the
+capital stock of the domestic subsidiaries held by the Borrower and the guarantors and 65% of the capital stock of the first-tier foreign subsidiaries held by the Borrower and the guarantors, in each case subject to exceptions. 
+ 8 
+
+ Restrictive Covenants and Other Matters 
+ The Revolving Credit Facility includes a maximum first-priority net senior secured leverage ratio financial covenant which is applicable solely
+to the extent that the testing condition (which is defined in the Credit Agreement as 30% utilization of the Revolving Credit Facility (excluding certain letters of credit)) is satisfied and excluding any period in which a covenant suspension period
+(as defined in the Credit Agreement) is occurring. In addition, for purposes of determining compliance with such financial maintenance covenant for any fiscal quarter, the Borrower may exercise an equity cure by issuing certain permitted securities
+for cash or otherwise receiving cash contributions to the capital of the Borrower or any of its direct or indirect parents that will, upon the receipt by the Borrower of such cash, be included in the calculation of EBITDA on a pro forma basis. The
+equity cure right may not be exercised in more than two fiscal quarters during any period of four consecutive fiscal quarters or more than five fiscal quarters during the term of the Revolving Credit Facility. Under the Credit Agreement, the
+Borrower may also be required to meet specified leverage ratios or interest coverage ratios in order to take certain actions, such as incurring certain debt or making certain acquisitions. In addition, the Credit Agreement includes negative
+covenants, subject to certain exceptions, restricting or limiting the Borrower&#146;s ability and the ability of its restricted subsidiaries to, among other things: (i) make non-ordinary course dispositions of assets; (ii) make certain
+mergers and acquisitions; (iii) complete dividends and stock repurchases and optional redemptions (and optional prepayments) of subordinated debt; (iv) incur indebtedness; (v) make certain loans and investments; (vi) create
+liens; (vii) transact with affiliates; (viii) change the business of the Borrower and its restricted subsidiaries; (ix) enter into sale/leaseback transactions; (x) allow limitations on negative pledges and the ability of
+restricted subsidiaries to pay dividends or make distributions; (xi) change the fiscal year and (xii) modify subordinated debt documents. 
+ This foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Credit Agreement, which is
+attached hereto as Exhibit 10.11 and incorporated herein by reference. Second Amended and Restated Omnibus License and Enterprise Services
+Agreement In 2014, CEOC, CGPH and CERP (collectively, the &#147; Members &#148; and each, a &#147; Member &#148;), CLC,
+Caesars World LLC (formerly Caesars World, Inc.) (&#147; Caesars World &#148;) and CES entered into the Omnibus License and Enterprise Services Agreement (as further amended and restated or otherwise modified from time to time, the
+&#147; Omnibus Agreement &#148;), pursuant to which certain intellectual property licenses were granted to the Members and certain of their affiliates in connection with the establishment of CES. CES was funded in 2014 through initial
+contributions by two of the Members, including cash contributions by CERP of $42.5 million and CGPH of $22.5 million. Certain executives and employees of the Members were transitioned to CES and their services were available to the Members and
+certain of their affiliates as part of CES&#146;s services under the Omnibus Agreement. In connection with the Emergence, the Omnibus
+Agreement has been amended and modified and, as a result of such amendments, the Omnibus Agreement: (i) reflects the ownership of system-wide intellectual property by CES and its subsidiary, CLC, and ownership of property-specific intellectual
+property by each of CEOC LLC, CGPH and CERP and their respective subsidiaries; (ii) provides for the licensing of system-wide intellectual property to each of CEOC LLC, CGPH and CERP and their respective subsidiaries in connection with
+properties that they own, operate or manage, for so long as any such property is the subject of a property management agreement with an affiliate of CEC; (iii) provides for the licensing of property-specific intellectual property from each of
+CEOC LLC, CGPH and CERP and their respective subsidiaries to CES for use in connection with system-wide services and the performance of services by CES; (iv) provides for the licensing of certain CERP-specific intellectual property for use in
+connection with CERP properties; (v) provides for the perpetual licensing of the Bally&#146;s and Harrah&#146;s trademarks in connection with Bally&#146;s Las Vegas and Harrah&#146;s New Orleans; (vi) provides for the perpetual licensing
+of certain system-wide intellectual property that is used primarily at CGPH managed properties; and (vii) provides for the licensing of the &#147;Caesars&#148; trademark as part of the corporate name of each of CEOC LLC, CGPH and CERP and their
+respective subsidiaries. The Omnibus Agreement further provides for the provision of centralized services provided by CES. The foregoing
+summary does not purport to be complete and is qualified in its entirety by reference to the Omnibus Agreement, which is filed as Exhibit 10.12 hereto and incorporated herein by reference. 
+ 9 
+
+ Contribution Agreement 
+ On the Effective Date, CEC and Hamlet Holdings LLC (&#147; Hamlet Holdings &#148;), the members of which are comprised of three
+individuals affiliated with affiliates of Apollo Global Management, LLC (&#147; Apollo &#148;) and two individuals affiliated with affiliates of TPG Global, LLC (&#147; TPG &#148; and, together with Apollo, the
+&#147; Sponsors &#148;), entered into a contribution agreement (the &#147; Contribution Agreement &#148;). Pursuant to the Contribution Agreement, Hamlet Holdings agreed to, among other things, contribute, assign, transfer and deliver to
+CEC 87,605,299 shares of CEC Common Stock beneficially owned by Hamlet Holdings, representing all of the shares of CEC Common Stock beneficially owned by Hamlet Holdings before giving effect to the Merger. CEC agreed to cancel and retire such shares
+within five business days of receipt. As described under Item 5.01 below, Hamlet Holdings controlled CEC prior to the Merger. Immediately after the effective time of the Merger, Hamlet Holdings beneficially owned approximately 20.8% of CEC
+Common Stock as a result of its former interest in CAC. In addition, the Contribution Agreement provides for the termination on the Effective Date of the Stockholders&#146; Agreement, as further described under Item 1.02 below. 
+ The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Contribution Agreement, which is
+filed as Exhibit 10.13 hereto and incorporated herein by reference. Registration Rights Agreement 
+ On October 21, 2013, CAC, Caesars Growth Partners, LLC (&#147; Growth Partners &#148;), the Sponsors and their co-investors and the
+other parties thereto entered into a registration rights agreement (the &#147; Registration Rights Agreement &#148;) governing demand and shelf registration rights with respect to CAC Class B common stock and CAC Class A common stock held
+by the parties. As a result of the Merger, the Sponsors&#146; demand and shelf registration rights under the Registration Rights
+Agreement will apply to the CEC Common Stock received in exchange for their CAC Common Stock in the Merger, and CEC will assume CAC&#146;s obligations under the Registration Rights Agreement. In addition, to the extent that CEC Common Stock held by
+the Sponsors and their co-investors is deemed control and/or restricted securities, the Sponsors and their co-investors will also have the right to have all of their CEC Common Stock registered under the Securities Act of 1933, as amended (the
+&#147; Securities Act &#148;), pursuant to their demand and shelf registration rights. The foregoing summary does not purport to be
+complete and is qualified in its entirety by reference to the Registration Rights Agreement, which is filed as Exhibit 10.14 hereto and incorporated herein by reference. 
+
+ Item 1.02 
+ Termination of a Material Definitive Agreement. Termination Agreement 
+ Prior to the closing of the Merger on the Effective Date, CEC, CAC, Hamlet Holdings, TPG Capital Management, L.P., TPG V Hamlet AIV, L.P.,
+Apollo Management VI, L.P. (&#147; Apollo Management &#148;), Apollo Alternative Assets, L.P. (&#147; Apollo Alternative &#148;), and Apollo Hamlet Holdings, LLC, Apollo Hamlet Holdings B, LLC, TPG Hamlet Holdings, LLC, TPG Hamlet Holdings
+B, LLC, Co-Invest Hamlet Holdings, Series LLC, and Co-Invest Hamlet Holdings B, LLC (collectively, the &#147; Sponsor Holders &#148;) and, solely for certain limited purposes, Gary Loveman entered into a Termination Agreement, pursuant to which
+certain agreements terminated. Among the agreements that terminated were the following: Termination of the Services Agreement 
+ Services Agreement, dated as of January 28, 2008, by and among CEC (f/k/a Harrah&#146;s Entertainment, Inc.), Apollo Management, Apollo
+Alternative and TPG Capital, L.P. (the &#147; Services Agreement &#148;), relating to the provision of certain financial and strategic advisory services and consulting services. Under the Services Agreement, CEC paid for expenses incurred
+related to these management services. CEC historically paid a monitoring fee for management services of $7.5 million each quarter, however, the Sponsors granted waivers for the monitoring fees in recent years. Also, under the Services Agreement,
+Apollo Management and TPG Capital, L.P. had the right to act, in return for additional fees based on a percentage of the gross transaction value, as CEC&#146;s financial advisor or investment banker for any merger, acquisition, disposition,
+financing or similar transaction if CEC decided it needed to engage someone to fill such a role. The Services Agreement included customary exculpation and indemnification provisions in favor of Apollo Management and TPG Capital, L.P. and their
+affiliates. 
+ 10 
+
+ Termination of the Stockholders&#146; Agreement 
+ Stockholders&#146; Agreement, dated as of January 28, 2008, by and among the Sponsor Holders, Hamlet Holdings and CEC (f/k/a Harrah&#146;s
+Entertainment, Inc.), and, solely with respect to certain sections therein, Apollo Investment Fund VI, L.P. and TPG V Hamlet AIV, L.P., as amended (the &#147; Stockholders&#146; Agreement ). The Stockholders&#146; Agreement contained agreements
+among the parties with respect to certain governance matters, including the election of the directors of CEC, restrictions on the issuance or transfer of shares (including tag-along and drag-along rights), registration rights with respect to the
+equity securities of CEC in the event of a future registered public offering of equity securities of CEC and certain customary indemnification and contribution provisions. 
+ Termination of the Amended and Restated Management Investors Rights Agreement 
+ Amended and Restated Management Investors Rights Agreement, dated November 22, 2010, by and among CEC (f/k/a Harrah&#146;s Entertainment,
+Inc.), Apollo Hamlet Holdings, LLC, Apollo Hamlet Holdings B, LLC, TPG Hamlet Holdings, LLC, TPG Hamlet Holdings B, LLC, Hamlet Holdings and the stockholders party thereto, as amended (the &#147; MIRA &#148;). The MIRA governed certain aspects
+of CEC&#146;s relationship with its management stockholders. Among other things, the MIRA (1) restricted the ability of management stockholders to transfer shares of CEC Common Stock, with certain exceptions, prior to a qualified public
+offering; (2) allowed the Sponsors to require management stockholders to participate in sale transactions in which the Sponsors sold more than 40% of their shares of CEC Common Stock; (3) allowed management stockholders to participate in
+registered offerings in which the Sponsors sold shares of CEC Common Stock, subject to certain exceptions; (4) allowed management stockholders below the level of senior vice president to require CEC to repurchase shares of CEC Common Stock in
+the event that such management stockholder experienced an economic hardship prior to an initial public offering, subject to annual limits on CEC&#146;s repurchase obligations; (5) allowed management stockholders to require CEC to repurchase
+shares of CEC Common Stock upon termination of employment without cause or for good reason; and (6) allowed CEC to repurchase, subject to applicable laws, all or any portion of CEC Common Stock held by management stockholders upon the
+termination of their employment with CEC or its subsidiaries, in certain circumstances. Termination of the Omnibus Voting Agreement
+ Omnibus Voting Agreement, dated as of October 21, 2013, entered into by and among the Sponsor Holders, Hamlet Holdings, CEC and
+CAC, pursuant to which Hamlet Holdings agreed to vote all of its shares of CAC Common Stock and CEC Common Stock necessary to facilitate CEC&#146;s exercise of its call right to acquire the voting units of membership interest in Growth Partners not
+otherwise owned by CEC in accordance with the organizational documents of CAC and the operating agreement of Growth Partners and whereby the parties agreed to, among other things, restrict their ability to transfer stock of CAC, as well as rights of
+first refusal, tag-along rights and drag-along rights. Termination of the Voting Agreement 
+ Voting Agreement, dated as of July 9, 2016 (the &#147; Voting Agreement &#148;), entered into by and between CEC and Hamlet Holdings
+and, with respect to certain provisions of the Voting Agreement, Apollo Hamlet Holdings, LLC, Apollo Hamlet Holdings B, LLC, TPG Hamlet Holdings, LLC, TPG Hamlet Holdings B, LLC, Co-Invest Hamlet Holdings, Series LLC and Co-Invest Hamlet Holdings B,
+LLC, pursuant to which Hamlet Holdings agreed to, among other things, (1) cause all of the shares of CAC Common Stock which Hamlet Holdings had the sole voting and sole dispositive power with respect to, pursuant to an irrevocable proxy, made
+and granted by certain investors, (the &#147; Subject Shares &#148;) to be counted as present for purposes of calculating a quorum at any meeting of stockholders of CAC, or any adjournment or postponement thereof, (2) vote the Subject
+Shares in favor of (x) the adoption of the plan of merger contained in the Merger Agreement and (y) any other action, proposal, transaction or agreement that would reasonably be expected to facilitate the consummation of the Merger,
+subject to certain conditions, and (3) vote the Subject Shares against (x) any Acquisition Proposal (as defined in the Merger Agreement) or any action that would reasonably be expected to impede, delay, discourage or adversely affect the
+timely consummation of the Merger and (y) any action to change the voting rights of any class of shares of CAC, amend the organizational documents of CAC or amend the capital structure of CAC. In addition, Hamlet Holdings agreed to support, and
+cause its Members (as defined in the Voting Agreement) to support, the Emergence and to not, and to cause its Members to not, transfer, or agree to transfer, any Subject Shares, subject to certain exceptions. 
+ 11 
+
+ Services Termination Agreement 
+ In addition, prior to the closing of the Merger on the Effective Date, CAC, CEOC, Caesars Interactive Entertainment, LLC
+(&#147; CIE &#148;), HIE Holdings, Inc. (&#147; HIE Holdings &#148;), Growth Partners and CES entered into a Termination Agreement (the &#147; Services Termination Agreement &#148;), pursuant to which the following agreements
+terminated, effective upon the consummation of the Plan: Termination of the CIE Shared Services Agreement 
+ Shared Services Agreement, dated as of May 1, 2009 (the &#147; CIE Shared Services Agreement &#148;), entered into by and between
+CIE, CEC and HIE Holdings, pursuant to which CEOC agreed to provide certain services to CIE. The CIE Shared Services Agreement, among other things (1) contemplated that CEOC would provide certain services related to accounting, risk management,
+tax, finance, recordkeeping, financial statement preparation and audit support, legal, treasury functions, regulatory compliance, information systems, office space and corporate and other centralized services; (2) allowed the parties to modify
+the terms and conditions of CEC&#146;s performance of any of the services and to request additional services from time to time; and (3) provided for the payment of a service fee to CEC in exchange for the provision of services in an amount
+equal to the fully allocated cost of such services plus 10%. Termination of the CGP Management Services Agreement 
+ Management Services Agreement, dated as of October 21, 2013 (the &#147; CGP Management Services Agreement &#148;), entered into by
+and between CAC, Growth Partners and CEOC, pursuant to which CEOC and its subsidiaries agreed to provide certain services to CAC, Growth Partners and any other of its subsidiaries. The CGP Management Services Agreement, among other things
+(1) contemplated that CEOC and its subsidiaries would provide certain corporate services, back-office support, and advisory and business management services; (2) allowed the parties to modify the terms and conditions of the performance of
+any of the services and to request additional services from time to time; and (3) provided for the payment of a service fee by CAC and/or Growth Partners in exchange for the provision of services. 
+ The Services Termination Agreement also provides that notwithstanding the termination of the CIE Shared Services Agreement and the CGP
+Management Services Agreement, CIE and Growth Partners will continue receiving from CES services similar to those provided by CES under the CIE Shared Services Agreement and the CGP Management Services Agreement as set forth and in accordance with
+the Omnibus Agreement. 
+
+ Item 2.01 
+ Completion of Acquisition or Disposition of Assets. The information set forth under the
+Introductory Note and Item 5.01, &#147;Changes in Control of Registrant,&#148; is incorporated herein by reference. In addition and
+as a result of the Merger, each CAC Stock Option (as defined in the Merger Agreement) that was outstanding immediately prior to the effective time of the Merger was converted into an option to purchase a number of shares of CEC Common Stock equal to
+the product (rounded down to the nearest whole share) of (i) the number of shares of CAC Common Stock subject to such CAC Stock Option and (ii) the Exchange Ratio, at an exercise price per share (rounded up to the nearest whole cent) equal
+to (x) the exercise price of such CAC Stock Option divided by (y) the Exchange Ratio. Also as a result of the Merger, each CAC Award (as defined in the Merger Agreement) that was outstanding immediately prior to the effective time of the
+Merger was converted into the right to receive shares (or share equivalents, as the case may be) in CEC Common Stock, which, in the case of CAC Awards denominated in shares shall be in an amount equal to the product (rounded down to the nearest
+whole share) of (i) the number of shares of CAC Common Stock subject to such CAC Award and (ii) the Exchange Ratio. 
+ 12 
+
+ The issuance of CEC Common Stock in connection with the Merger, as described above, was
+registered under the Securities Act pursuant to the Company&#146;s registration statement on Form S-4 filed with the Securities and Exchange Commission (the &#147; Commission &#148;) on March 13, 2017, as amended by Amendment No. 1 to
+such registration statement on Form S-4 filed with the Commission on June 5, 2017 and Amendment No. 2 to such registration statement on Form S-4 filed with the Commission on June 20, 2017 (as amended, the &#147; Registration
+Statement &#148;). 
+
+ Item 2.03 
+ Creation of Direct Financial Obligation or an Obligation under an Off-Balance Sheet Agreement of a Registrant. 
+ The information set forth under Item 1.01, &#147;Entry into a Material Definitive Agreement,&#148; with respect to the Lease Agreements,
+the MLSAs, the Golf Course Use Agreement, the CEC Indenture and the CEOC Credit Agreement is incorporated herein by reference. CGPH First Lien
+Credit Agreement On May 8, 2014, CGPH closed on $1.175 billion of term loans (the &#147; CGPH Term Loan &#148;) pursuant
+to a First Lien Credit Agreement among Caesars Growth Properties Parent, LLC (&#147; Parent &#148;), CGPH, the lenders party thereto, Credit Suisse AG, Cayman Islands Branch, as Administrative Agent (the &#147; CGPH Administrative
+Agent &#148;), and Credit Suisse Securities (USA) LLC, Citigroup Global Markets Inc., Deutsche Bank Securities Inc., UBS Securities LLC, J.P Morgan Securities LLC, Morgan Stanley & Co. LLC, Macquarie Capital (USA) Inc. and Nomura
+Securities International, Inc., as Co-Lead Arrangers and Bookrunners (the &#147; CGPH Credit Agreement &#148;). The CGPH Credit Agreement also provides for a $150 million revolving credit agreement (the &#147; CGPH Revolving Credit
+Facility &#148;). On April 27, 2017, CGPH entered into an incremental assumption agreement and amendment (the &#147; CGPH Credit Agreement Amendment &#148;), which amends the CGPH Credit Agreement and provides for, among other things,
+(i) an increase in the CGPH Term Loan by $175 million to approximately $1.3 billion and (ii) a reduction in the interest rate margins applicable to the CGPH Term Loan and the CGPH Revolving Credit Facility. On June 20, 2017, the
+proceeds of the increase in CGPH&#146;s Term Loan were applied to repay the previously disclosed Cromwell Credit Facility, which was used to fund renovations to The Cromwell, a boutique &#147;lifestyle&#148; hotel and casino indirectly owned by
+CGPH. CGPH is an indirect wholly-owned subsidiary of Growth Partners, which was a joint venture between CAC and CEC and, as a result of
+the Merger, is now a wholly-owned subsidiary of CEC. As of the Effective Date, $1.3 billion was outstanding under the CGPH Term Loan, no borrowings were outstanding under the CGPH Revolving Credit Facility and no amounts were committed to
+outstanding letters of credit. The information set forth under Item 8.01, &#147;Other Events&#151;Overview&#148; and &#147;Other
+Events&#151;Credit Agreement&#148; in CEC&#146;s Current Report on Form 8-K dated May 9, 2014 regarding the CGPH Credit Agreement, as amended by the foregoing information, is incorporated herein by reference. 
+ The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the CGPH Credit Agreement and the CGPH
+Credit Agreement Amendment, which are attached hereto as Exhibits 10.15 and 10.16, respectively, and incorporated herein by reference. CGPH
+Second-Priority Senior Secured Notes On April 17, 2014, CGPH and Caesars Growth Properties Finance, Inc. (&#147; CGPF
+Inc. &#148; and, together with CGPH, the &#147; Issuers &#148;) completed the offering of $675 million aggregate principal amount of their 9.375% second-priority senior secured notes due 2022 (the &#147; CGPH Notes &#148;). The CGPH
+Notes, which mature on May 1, 2022, were issued pursuant to an indenture dated as of April 17, 2014 (the &#147; CGPH Indenture &#148;), among the Issuers and U.S. Bank National Association, as trustee. 
+ The Issuers are subsidiaries of Growth Partners, which was a joint venture between CAC and CEC and, as a result of the Merger, is now a
+wholly-owned subsidiary of CEC. 
+ 13 
+
+ The information set forth under Item 1.01, &#147;Entry into a Material Definitive
+Agreement&#151; Indenture and 9.375% Second-Priority Senior Secured Notes due 2022&#148; in CEC&#146;s Current Report on Form 8-K dated April 17, 2014 regarding the CGPH Notes, as amended by the foregoing information, is incorporated herein by
+reference. The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the CGPH Indenture,
+which is attached hereto as Exhibit 4.2 and incorporated herein by reference. 
+
+ Item 3.02 
+ Unregistered Sales of Equity Securities. The information set forth under the
+Introductory Note with respect to the issuance of CEC Common Stock to certain creditors of the Debtors (the &#147; Creditor Shares &#148;) and Item 1.01, &#147;Entry into a Material Definitive Agreement,&#148; with respect to the
+Convertible Notes is incorporated herein by reference. Pursuant to the Plan, Creditor Shares were issued to certain creditors of the
+Debtors as described in the Introductory Note and the Creditor Shares and the Convertible Notes were issued to the holders of non-first lien claims as partial satisfaction of their claims. The Convertible Notes were issued under Section 1145 of
+the Bankruptcy Code, which generally exempts the offer and sale of securities under a plan of reorganization from registration under Section 5 of the Securities Act and state laws if certain requirements are satisfied. As a result, the Creditor
+Shares and the Convertible Notes issued as described above generally may be resold without registration under the Securities Act, unless the seller is an &#147;underwriter&#148; with respect to those securities as defined by Section 1145(b)(1)
+of the Bankruptcy Code. 
+
+ Item 5.01 
+ Changes in Control of Registrant. The information set forth under the Introductory Note
+is incorporated herein by reference. As of June 13, 2017, Hamlet Holdings, the members of which are comprised of individuals
+affiliated with the Sponsors, beneficially owned approximately 58.8% of CEC Common Stock. As part of the Plan, affiliates of the Sponsors contributed shares of CEC Common Stock that they owned prior to the Merger to CEC pursuant to the Contribution
+Agreement and, accordingly, did not have any interests in CEC as of the effective time of the Merger other than beneficial ownership of approximately 20.8% of CEC Common Stock as a result of their former interest in CAC. Consequently, affiliates of
+the Sponsors no longer control CEC. After the effective time of the Merger, former CAC public stockholders owned approximately 11.3% of
+CEC Common Stock, stockholders of CEC immediately prior to the effective time of the Merger owned approximately 8.7% of CEC Common Stock, affiliates of the Sponsors owned approximately 20.8% of CEC Common Stock and former creditors of CEOC owned
+approximately 59.2% of CEC Common Stock. The information set forth under Item 5.02, &#147;Departure of Directors or Certain
+Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers&#151;CEC Directors&#148; is incorporated herein by reference. 
+
+ Item 5.02 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. 
+ CEC Directors Pursuant to the
+terms of the Merger Agreement and the Plan and effective as of the effective time of the Merger, Messrs. Gary W. Loveman, Jeffrey Benjamin, David Bonderman, Fred J. Kleisner, Eric Press, Marc Rowan and Bernard L. Zuroff resigned from the board of
+directors of CEC (the &#147; Board &#148;) and will not continue as directors of CEC. 
+ 14 
+
+ Effective as of the effective time of the Merger and in accordance with the terms of the Plan:
+(i) the Chief Executive Officer of CEC was appointed as a member of the Board; (ii) four members of the Board were appointed by CEC and CAC, of which each of the special committee of the CAC board of directors (the &#147; CAC Special
+Committee &#148;) and the strategic alternatives committee of the Board (the &#147; CEC Strategic Alternatives Committee &#148;) appointed one of such four directors (subject to the consent of the Official Committee of the Second Priority
+Noteholders appointed in connection with the Plan (the &#147; Second Lien Committee &#148;)); (iii) three members of the Board were appointed by the Second Lien Committee; (iv) two members of the Board were appointed by the holders of
+greater than two-thirds of the claims in respect of CEOC&#146;s first lien notes (the &#147; Consenting First Lien Noteholders &#148;); and (v) one member of the Board was mutually appointed by the holders of greater than two-thirds of the
+claims in respect of CEOC&#146;s first lien bank debt and of the subsidiary-guaranteed notes (together, the &#147; Consenting Bank/SGN Creditors &#148;), in consultation with the committee representing the unsecured creditors appointed in
+connection with the Plan. Accordingly, the following persons were appointed to the Board for the director classes and terms listed in the
+chart below: 
+
+ Name 
+ 
+ Designating Party 
+ 
+ Director Class 
+ 
+ Term Expiring at the Annual Meeting of Stockholders in 
+
+ Mark Frissora 
+ 
+ N/A 
+ 
+ I 
+ 
+ 2018 
+ 
+ James Hunt* 
+ 
+ Second Lien Committee 
+ 
+ I 
+ 
+ 2018 
+ 
+ John Dionne 
+ 
+ Consenting First Lien Noteholders 
+ 
+ I 
+ 
+ 2018 
+ 
+ Richard Schifter 
+ 
+ CEC/CAC 
+ 
+ I 
+ 
+ 2018 
+ 
+ Thomas Benninger 
+ 
+ Second Lien Committee 
+ 
+ II 
+ 
+ 2019 
+ 
+ Matthew Ferko 
+ 
+ Consenting Bank/SGN Creditors 
+ 
+ II 
+ 
+ 2019 
+ 
+ Marilyn Spiegel 
+ 
+ Consenting First Lien Noteholders 
+ 
+ II 
+ 
+ 2019 
+ 
+ Christopher Williams 
+ 
+ CEC Strategic Alternatives Committee 
+ 
+ II 
+ 
+ 2019 
+ 
+ John Boushy 
+ 
+ Second Lien Committee 
+ 
+ III 
+ 
+ 2020 
+ 
+ Don Kornstein 
+ 
+ CAC Special Committee 
+ 
+ III 
+ 
+ 2020 
+ 
+ David Sambur 
+ 
+ CEC/CAC 
+ 
+ III 
+ 
+ 2020 
+
+ * 
+ Chairman of the Board To effectuate the foregoing classification of the Board in accordance
+with the terms of the Plan, Messrs. Frissora, Schifter and Williams resigned from the Board for a moment in time as of the effective time of the Merger and were immediately re-appointed to the Board in the appropriate class. 
+ Effective as of the effective time of the Merger, the members of the Audit Committee of the Board constituted John Dionne (chair), Thomas
+Benninger and Matthew Ferko, the members of the Human Resources Committee of the Board constituted David Sambur (chair), Marilyn Spiegel and Christopher Williams, the members of the Nominating and Corporate Governance Committee of the Board
+constituted Richard Schifter (chair), John Boushy and Matthew Ferko, and the members of the newly-formed Strategy and Finance Committee of the Board constituted Don Kornstein (chair), Thomas Benninger and David Sambur. 
+ The director biographies included in the CEC press release attached hereto as Exhibit 99.2 are incorporated herein by reference. 
+ CEC Equity Award Amendments 
+ Pursuant to the Merger Agreement and effective as of the effective time of the Merger, CEC amended each outstanding, unvested and unexercised
+option to purchase CEC Common Stock (each, a &#147; CEC Stock Option &#148;) granted under the Caesars Entertainment Corporation 2012 Performance Incentive Plan (the &#147; CEC 2012 Plan &#148;) to employees and directors to provide that
+it shall become vested and exercisable (at target performance levels, if applicable) upon the optionee&#146;s termination of service without &#147;Cause&#148; (as defined in the CEC 2012 Plan) by CEC 
+ 15 
+
+ or any of its subsidiaries or for Good Reason (as defined in the Merger Agreement), in either case within six
+months following the Effective Date. Further, pursuant to the Merger Agreement and effective as of the effective time of the Merger, CEC amended each outstanding and unvested right of any kind to receive shares or share equivalents of CEC Common
+Stock granted under the CEC 2012 Plan (other than any CEC Stock Option) to employees and directors to provide that it shall become vested and exercisable (at target performance levels, if applicable) upon the awardee&#146;s termination of service
+without Cause by CEC or any of its subsidiaries or for Good Reason, in either case within six months following the Effective Date (collectively, the &#147; Equity Award Amendments &#148;). 
+ For purposes of the Equity Award Amendments, the members of the Board immediately prior to (or who resigned immediately prior to) the
+effective time of the Merger who did not continue as members of the Board following the effective time, plus Christopher Williams, were deemed to have had their service terminated without Cause within six months following the Effective Date. 
+ Amendment to Employment Agreement 
+ On the Effective Date, CES entered into a letter agreement (the &#147; Amendment &#148;) with Timothy R. Donovan, Executive Vice
+President, General Counsel and Chief Regulatory & Compliance Officer of CEC. The Amendment modifies Mr. Donovan&#146;s existing employment agreement (the &#147; Employment Agreement &#148;) in the event of a Qualifying
+Termination, which includes Mr. Donovan&#146;s (i) resignation on or after December 1, 2017 or (ii) termination without Cause (as defined in the Employment Agreement) on or prior to December 31, 2017, provided that a
+voluntary resignation after December 31, 2017 is not a &#147;Qualifying Termination.&#148; The material terms of the Amendment are set forth below. 
+ Upon a Qualifying Termination and in addition to any rights and obligations under the Employment Agreement, Mr. Donovan will be entitled
+to, among other things, (1) a severance payment equal to 1.5 times his base salary; (2) a pro rata bonus for calendar year 2017; (3) the immediate vesting of all of his outstanding awards under long-term incentive plans, subject to
+certain conditions; and (4) a $1 million bonus for his efforts in securing the gaming regulatory approval of the Plan granted to CEOC, subject to certain conditions. Upon a Qualifying Termination, the Amendment also provides that
+Mr. Donovan will be subject to an 18-month non-compete period and will enter into a one-year consulting agreement with CES under which he will receive an annualized fee of $500,000. 
+ The foregoing description of the Amendment does not purport to be complete and is qualified in its entirety by reference to the Amendment,
+which is filed as Exhibit 10.17 hereto and incorporated herein by reference. Assumption of Caesars Acquisition Company 2014 Performance Incentive
+Plan Pursuant to the Merger Agreement, CEC assumed the Caesars Acquisition Company 2014 Performance Incentive Plan (the
+&#147; CAC Plan &#148;) and all CAC Stock Options and CAC Awards under the CAC Plan. The Human Resources Committee has been appointed by the Board to administer the CAC Plan and the award agreements thereunder. 
+ The CAC Plan provides officers, employees, directors, individual consultants and advisors who render or have rendered bona fide service to CAC
+or its subsidiaries the opportunity to receive cash and equity-based incentive awards. Awards under the CAC Plan may be in the form of stock options, stock appreciation rights, stock bonuses, restricted stock, restricted stock units, performance
+stock, stock units, phantom stock, dividend equivalents, cash awards, rights to purchase or acquire shares, or similar securities with a value related to common stock. The CAC Plan establishes certain annual individual limits on the number of shares
+underlying awards. Unvested options terminate immediately upon a termination for any reason and vested options and other awards will
+terminate immediately upon a termination for cause. Otherwise, vested options will expire on the earliest of (1) one year from the date of death; (2) 180 days following termination of the participant&#146;s employment due to disability or
+retirement; (3) 120 days after the date the participant is terminated for a reason other than for cause, death or disability or by the participant for good reason; (4) 60 days following termination of the participant&#146;s employment
+without good reason; or (5) the 10th anniversary of the grant date. Stock options and restricted stock units granted under the CAC Plan vest based on continued service over the period of time specified in the award agreements. 
+ 16 
+
+ The foregoing summary does not purport to be complete and is qualified in its entirety by
+reference to the CAC Plan, which is attached hereto as Exhibit 10.18 and incorporated herein by reference. Assumption of Deferred Compensation
+Liabilities and Amendment and Restatement of Trust and Escrow Agreements Certain current and former employees of CEC and its
+subsidiaries and affiliates have balances under the Harrah&#146;s Entertainment, Inc. Executive Supplemental Savings Plan (&#147; ESSP &#148;), the Harrah&#146;s Entertainment, Inc. Executive Supplemental Savings Plan II (&#147; ESSP
+II &#148;), the Park Place Entertainment Corporation Executive Deferred Compensation Plan (&#147; CEDCP &#148;), the Harrah&#146;s Entertainment, Inc. Deferred Compensation Plan (&#147; DCP &#148;), and the Harrah&#146;s Entertainment,
+Inc. Executive Deferred Compensation Plan (&#147; EDCP &#148;). These plans are deferred compensation plans that allowed certain employees an opportunity to save for retirement and other purposes. Each of the plans is now frozen and is no
+longer accepting contributions. However, participants may still earn returns on existing plan balances based upon their selected investment alternatives, which are reflected in their deferral accounts. 
+ Plan obligations in respect of all of these plans were included in CEC&#146;s financial statements as liabilities prior to the deconsolidation
+of CEOC. CEC recorded $40 million in liabilities as of both June 30, 2017 and December 31, 2016, representing the estimate of its obligations under the ESSP and ESSP II and for certain former directors and employees who had employment
+agreements with Harrah&#146;s Entertainment, Inc. (the predecessor to CEC) and participated in the EDCP. The additional liability in respect of the CEDCP and DCP that CEC did not record was approximately $34 million and $32
+million as of June 30, 2017 and December 31, 2016, respectively, as CEC determined that this portion of the liability was attributable to CEOC pending the effectiveness of the settlement described below. 
+ CEC is a party to a trust agreement (the &#147; Trust Agreement &#148;) and an escrow agreement (the &#147; Escrow
+Agreement &#148;), each structured as so-called &#147;rabbi trust&#148; arrangements, which hold assets that may be used to satisfy obligations under the deferred compensation plans described above. Amounts held pursuant to the Trust Agreement
+and the Escrow Agreement were approximately $67 million and $61 million, respectively, as of June 30, 2017, and $62 million and $57 million, respectively, as
+of December 31, 2016. As of June 30, 2017, the assets held pursuant to the Trust Agreement were reflected on CEC&#146;s balance sheet as long-term restricted assets and the assets held pursuant to the Escrow Agreement were
+not reflected on CEC&#146;s balance sheet. On September 14, 2016, CEC entered into a settlement agreement with CEOC related to the
+liabilities and assets associated with the above deferred compensation plans, which was approved by the Bankruptcy Court on October 17, 2016. As a result of the settlement agreement, on October 6, 2017, CEC assumed all obligations to
+plan participants under or with respect to all five of the deferred compensation plans, CEOC and its debtor subsidiaries have no further obligations to the deferred compensation plan participants and CEOC and its debtor subsidiaries
+released any claim over the assets held under either the Trust Agreement or the Escrow Agreement. Accordingly, CEC will record the additional assets and liabilities in respect of the Escrow Agreement and the CEDCP and DCP, which are $61
+million and $34 million, respectively, as of June 30, 2017. In connection with the settlement, each of the
+Trust Agreement and the Escrow Agreement were amended and restated to give effect to the terms of the settlement as described above. The
+foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Escrow Agreement and the Trust Agreement, each as so amended and restated, which are attached hereto as Exhibits 10.19 and 10.20, respectively,
+and incorporated herein by reference. 
+ 17 
+
+ Item 5.03 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. Amendments to the
+Second Amended and Restated Certificate of Incorporation On October 6, 2017, CEC amended its Second Amended and Restated
+Certificate of Incorporation by filing three Certificates of Amendment (the &#147; Charter Amendments &#148;), with the Delaware Secretary of State. The Charter Amendments provide for, among other things, an increase in the number of authorized
+shares of CEC Common Stock from 1,250,000,000 shares to 2,000,000,000 shares, cumulative voting in the election of individuals to the CEC Board and the declassification of the CEC Board over a number of years. 
+ The foregoing summary does not purport to be complete and is qualified in its entirety by reference to the Second Amended and Restated
+Certificate of Incorporation and the Charter Amendments, which are attached hereto as Exhibits 3.1, 3.2, 3.3 and 3.4 and incorporated herein by reference. 
+ Amendment to the By-Laws 
+ Effective as of October 6, 2017, the Board amended and restated CEC&#146;s existing By-Laws (the &#147; Amended By-Laws &#148;). The
+Amended By-Laws, among other things, (i) modify the by-laws to be consistent with the changes to CEC&#146;s governance effected by the Charter Amendments regarding the declassification of the Board, the adoption of cumulative voting and the
+election and removal of directors in accordance with the Charter Amendments, (ii) provide for a non-executive Chairman of the Board as contemplated by the Plan and (iii) eliminate references that are no longer applicable (e.g., the initial
+public offering and CEC&#146;s pre-Emergence controlled company status). The foregoing summary does not purport to be complete and is
+qualified in its entirety by reference to the Amended Bylaws, which are filed hereto as Exhibit 3.5 and incorporated herein by reference. 
+
+ Item 8.01 
+ Other Events. Press Releases 
+ On October 6, 2017, CEC issued a press release announcing the Merger and the Emergence. A copy of the press release is attached hereto as
+Exhibit 99.1 and is incorporated herein by reference. On October 6, 2017, CEC issued a press release announcing the new Board. A
+copy of the press release is attached hereto as Exhibit 99.2 and is incorporated herein by reference. Call Right Agreements 
+ On the Effective Date, VICI Partnership, CEC, CERP, Growth Partners and their respective applicable subsidiaries (as applicable) entered into
+certain call right agreements (collectively, the &#147; VICI Call Right Agreements &#148;). The VICI Call Right Agreements provide VICI Partnership with an option, exercisable within five years following the Effective Date, to purchase and
+lease back to, as applicable, CERP&#146;s or Growth Partners&#146; (or their respective applicable subsidiaries&#146;) real property interest and all improvements associated with Harrah&#146;s Atlantic City, Harrah&#146;s Laughlin and Harrah&#146;s
+New Orleans (each VICI Call Right Agreement relating to a different property). If VICI Partnership does not exercise its call right within the exercise period, the respective VICI Call Right Agreement will automatically terminate. The purchase price
+will equal ten times the agreed annual rent for such properties under the applicable lease, and the purchase will be on other customary terms and conditions, with the closing of such purchase(s) to occur following regulatory approvals. The rent
+under any such lease will be determined based on an EBITDAR coverage ratio and will be adjusted on terms consistent with the Non-CPLV Lease. If CEC is unable to timely deliver a property following the exercise of the call right due to limitations
+set forth in agreements governing CEC&#146;s subsidiaries&#146; indebtedness, and if CEC is not able to provide replacement property providing equal or greater economic benefits to VICI Partnership, then CEC will be required to pay to VICI
+Partnership an amount in cash equal to the loss in value to VICI Partnership as specified in the applicable VICI Call Right Agreement, subject to certain conditions. 
+ 18 
+
+ If necessary regulatory approvals in connection with the purchase of a property pursuant to a
+VICI Call Right Agreement are not obtained, CEC will be required to use commercially reasonable efforts to sell such property to an alternative purchaser, subject to certain conditions. The proceeds of such sale will go first to CEC to compensate it
+for the funds it would have received had it sold the applicable property to VICI Partnership, with the remainder of funds to be distributed to VICI Partnership. If a sale of a property is not completed due to CEC&#146;s failure to obtain necessary
+regulatory approvals, VICI Partnership may terminate the applicable VICI Call Right Agreement and CEC will pay to VICI Partnership an amount in cash equal to the loss in value to VICI Partnership as specified in such VICI Call Right Agreement. 
+ Additionally, these call rights are subject: (1) in the case of Harrah&#146;s Atlantic City and Harrah&#146;s Laughlin, to the terms of
+the CERP debt documents and (2) in the case of Harrah&#146;s New Orleans, to the terms of the Growth Partners debt documents; provided, that CEC, CERP and Growth Partners, as applicable, are required to use commercially reasonable efforts to
+obtain any waivers or amendments necessary to permit such transactions. If such waivers or amendments are not obtained after use of commercially reasonable efforts to obtain the same, CEC has agreed to pay to VICI Partnership an amount in cash equal
+to the loss in value to VICI Partnership as specified in the applicable VICI Call Right Agreement, subject to certain conditions. Separation
+Agreement On the Effective Date, CEOC entered into a separation agreement (the &#147; Separation Agreement &#148;) with VICI
+Properties, which contains the key provisions of the separation of VICI Properties from CEOC and certain terms governing VICI Properties&#146; relationship with CEOC after the Emergence. The Separation Agreement identifies the assets transferred,
+liabilities assumed and contracts to be performed by each of CEOC and VICI Properties as part of the separation and provides for when and how these transfers, assumptions and assignments occur. The Separation Agreement may not be terminated except
+by an agreement in writing signed by each of CEOC and VICI Properties. The foregoing summary does not purport to be complete and is
+qualified in its entirety by reference to the Separation Agreement, which is filed hereto as Exhibit 99.3 and incorporated herein by reference. 
+
+ Item 9.01 
+ Financial Statements and Exhibits. 
+
+ (a) 
+ Financial Statements of Business Acquired CEC intends to file the financial statements
+of CAC and CEOC (as predecessor of CEOC LLC) as required by Item 9.01(a) as part of an amendment to this Current Report on Form 8-K not later than 71 calendar days after the date this Current Report on Form 8-K is required to be filed. 
+
+ (b) 
+ Pro Forma Financial Information CEC intends to file the pro forma financial statements
+required by Item 9.01(b) as part of an amendment to this Current Report on Form 8-K not later than 71 calendar days after the date this Current Report on Form 8-K is required to be filed. 
+ 19 
+
+ (c) 
+ Exhibits 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 2.1 
+ 
+ Amended and Restated Agreement and Plan of Merger, dated as of July 
+9, 2016, by and between Caesars Acquisition Company and Caesars Entertainment Corporation (Filed as Exhibit 2.1 to CEC&#146;s Form 8-K filed with the Commission on July 11, 2016 and incorporated herein by this reference). 
+
+ 2.2 
+ 
+ First Amendment to Amended and Restated Agreement and Plan of Merger, dated as of February 
+20, 2017, by and between Caesars Entertainment Corporation and Caesars Acquisition Company (Filed as Exhibit 2.1 to CEC&#146;s Form 8-K filed with the Commission on February 21, 2017 and incorporated herein by this reference). 
+
+ 2.3 
+ 
+ Third Amended Joint Plan of Reorganization, filed with the United States Bankruptcy Court for the Northern District of Illinois in Chicago on January 13,
+ 2017, at Docket No. 6318 (Filed as Exhibit 2.6 to CEC&#146;s Form S-4 filed with Commission on March 13, 2017, as amended by Amendment No. 1 to such registration statement on Form S-4 filed with the Commission on June 5, 2017 and Amendment No.
+2 to such registration statement on Form S-4 filed with the Commission on June 20, 2017 and incorporated herein by this reference). 
+
+ 3.1 
+ 
+ Second Amended and Restated Certificate of Incorporation of Caesars Entertainment Corporation, dated February 8, 2012 (Filed as Exhibit 3.7 to
+ CEC&#146;s Form 10-K filed with the Commission on March 15, 2012 and incorporated herein by this reference). 
+
+ 3.2 
+ 
+ Amendment, dated October 6, 2017, to the Second Amended and Restated Certificate of Incorporation of Caesars Entertainment Corporation, dated February
+ 8, 2012 (Filed as Exhibit 4.2 to CEC&#146;s Form S-8 filed with the Commission on October 6, 2017 and incorporated herein by this reference). 
+
+ 3.3 
+ 
+ Amendment, dated October 6, 2017, to the Second Amended and Restated Certificate of Incorporation of Caesars Entertainment Corporation, dated February
+ 8, 2012 (Filed as Exhibit 4.3 to CEC&#146;s Form S-8 filed with the Commission on October 6, 2017 and incorporated herein by this reference). 
+
+ 3.4 
+ 
+ Amendment, dated October 6, 2017, to the Second Amended and Restated Certificate of Incorporation of Caesars Entertainment Corporation, dated February
+ 8, 2012 (Filed as Exhibit 4.4 to CEC&#146;s Form S-8 filed with the Commission on October 6, 2017 and incorporated herein by this reference). 
+
+ 3.5 
+ 
+ Bylaws of Caesars Entertainment Corporation, dated October 6, 2017 (Filed as Exhibit 4.5 to CEC&#146;s Form S-8 filed with the Commission on October
+6, 2017 and incorporated herein by this reference). 
+
+ 4.1 
+ 
+ Indenture, dated as of October 6, 2017, between Caesars Entertainment Corporation and Delaware Trust Company, as trustee, relating to the 5.00% Convertible Senior Notes due 2024. 
+
+ 4.2 
+ 
+ Indenture, dated as of April 
+17, 2014, among Caesars Growth Properties Holdings, LLC, Caesars Growth Properties Finance, Inc. and U.S. Bank National Association, as trustee, relating to the 9.375% Second-Priority Senior Secured Notes due 2022 (Filed as Exhibit 4.1 to CAC&#146;s Form
+ 8-K filed with the Commission on April 17, 2014 and incorporated herein by this reference). 
+
+ 10.1 
+ 
+ Lease (CPLV), dated as of October 6, 2017, by and among CPLV Property Owner LLC, Desert Palace LLC, Caesars Entertainment
+ Operating Company, Inc. and CEOC, LLC, relating to the CPLV Facilities. 
+
+ 10.2 
+ 
+ Lease (Non-CPLV), dated as of October 6, 2017, by and among the entities listed on Schedules A and B thereto and CEOC, LLC, relating to the Non-CPLV Facilities. 
+
+ 10.3 
+ 
+ Lease (Joliet), dated as of October 6, 2017, by and between Harrah&#146;s Joliet Landco LLC and Des Plaines Development Limited Partnership, relating to the Joliet Facilities. 
+
+ 10.4 
+ 
+ Trademark License Agreement, dated as of October 6, 2017, between Caesars License Company, LLC and Desert Palace LLC. 
+
+ 10.5 
+ 
+ Golf Course Use Agreement, dated as of October 6, 2017, by and among Rio Secco LLC, Cascata LLC, Chariot Run LLC, Grand Bear LLC, Caesars Enterprise Services, LLC, CEOC, LLC and, solely for purposes of Section
+ 2.1(c) thereof, Caesars License Company, LLC. 
+
+ 10.6 
+ 
+ Management and Lease Support Agreement, dated as of October 
+6, 2017, by and among Desert Palace LLC, Caesars Entertainment Operating Company, Inc., CEOC, LLC, CPLV Manager, LLC, Caesars Entertainment Corporation, CPLV Property Owner LLC, and solely for certain articles and sections named therein, Caesars License
+ Company, LLC and Caesars Enterprise Services, LLC relating to the CPLV Facilities. 
+
+ 10.7 
+ 
+ Management and Lease Support Agreement, dated as of October 6, 2017, by and among CEOC, LLC, the entities listed therein, Non-CPLV Manager, LLC, Caesars Entertainment Corporation and solely for certain articles
+ and sections named therein, Caesars License Company, LLC and Caesars Enterprise Services, LLC relating to the Non-CPLV Facilities. 
+
+ 10.8 
+ 
+ Management and Lease Support Agreement, dated as of October 6, 2017, by and among Des Plaines Development Limited Partnership, Joliet Manager, LLC, Caesars Entertainment Corporation, Harrah&#146;s Joliet Landco
+ LLC and solely for certain articles and sections named therein, Caesars License Company, LLC and Caesars Enterprise Services, LLC relating to the Joliet Facilities. 
+ 
+ 20 
+
+ 10.9 
+ 
+ Right of First Refusal Agreement, dated as of October 6, 2017, between Caesars Entertainment Corporation and VICI Properties L.P. 
+
+ 10.10 
+ 
+ Tax Matters Agreement, dated as of October 6, 2017, between Caesars Entertainment Corporation, CEOC, LLC, VICI Properties Inc., VICI Properties L.P. and CPLV Property Owner LLC. 
+
+ 10.11 
+ 
+ Credit Agreement, dated as of October 6, 2017, among Caesars Entertainment Operating Company, Inc., CEOC, LLC, the lenders party thereto, Credit Suisse AG, Cayman Islands Branch, as Administrative Agent, Credit
+Suisse Securities (USA) LLC and Deutsche Bank Securities Inc., as Joint Lead Arrangers, Credit Suisse Securities (USA) LLC, Deutsche Bank Securities Inc., Barclays Bank PLC, Citigroup Global Markets Inc., Goldman Sachs Bank USA, JPMorgan Chase Bank,
+N.A., Morgan Stanley Senior Funding, Inc. and UBS Securities LLC, as Joint Bookrunners and Credit Suisse Securities (USA) LLC as Syndication Agent and Documentation Agent. 
+
+ 10.12 
+ 
+ Second Amended and Restated Omnibus License and Enterprise Services Agreement, dated as of October 6, 2017, among Caesars Entertainment Operating Company, Inc., Caesars Growth Properties Holdings, LLC, Caesars
+ Entertainment Resort Properties LLC, Caesars License Company, LLC, Caesars World LLC and Caesars Enterprise Services, LLC. 
+
+ 10.13 
+ 
+ Contribution Agreement, dated as of October 6, 2017, between Caesars Entertainment Corporation and Hamlet Holdings LLC. 
+
+ 10.14 
+ 
+ Registration Rights Agreement, dated as of October 21, 2013, by and among Caesars Acquisition Company, Caesars Growth Partners, LLC, HIE Holdings,
+ Inc., Harrah&#146;s BC, Inc., Apollo Hamlet Holdings, LLC, Apollo Hamlet Holdings B, LLC, TPG Hamlet Holdings, LLC, TPG Hamlet Holdings B, LLC, Co-Invest Hamlet Holdings, Series LLC and Co-Invest Hamlet Holdings B, LLC (Filed as Exhibit 10.4 to
+CAC&#146;s Form 8-K filed on October 24, 2013 and incorporated herein by this reference). 
+
+ 10.15 
+ 
+ First Lien Credit Agreement, dated as of May 
+8, 2014, among Caesars Growth Properties Parent, LLC, Caesars Growth Properties Holdings, LLC, the lenders party thereto, Credit Suisse AG, Cayman Islands Branch, as Administrative Agent, and Credit Suisse Securities (USA) LLC, Citigroup Global Markets
+ Inc., Deutsche Bank Securities Inc., UBS Securities LLC, J.P Morgan Securities LLC, Morgan Stanley & Co. LLC, Macquarie Capital (USA) Inc. and Nomura Securities International, Inc., as Co-Lead Arrangers and Bookrunners (Filed as Exhibit 10.2 to
+CAC&#146;s Form 8-K filed on May 9, 2014 and incorporated herein by this reference). 
+
+ 10.16 
+ 
+ Incremental Assumption Agreement and Amendment No. 1 relating to the First Lien Credit Agreement dated as of May 8, 2014, among Caesars Growth
+ Properties Parent, LLC, Caesars Growth Properties Holdings, LLC, the lenders party thereto and Credit Suisse AG, Cayman Islands Branch, as Administrative Agent, dated as of April 27, 2017 (Filed as Exhibit 10.1 to CAC&#146;s Form 8-K filed on April
+28, 2017 and incorporated herein by this reference). 
+
+ 10.17 
+ 
+ Letter Agreement, dated as of October 6, 2017, between Caesars Enterprise Services, LLC and Timothy R. Donovan. 
+
+ 10.18 
+ 
+ Caesars Acquisition Company 2014 Performance Incentive Plan (Filed as Exhibit 10.1 to CAC&#146;s Form 8-K filed with the Commission on April 16,
+2014 and incorporated herein by this reference). 
+
+ 10.19 
+ 
+ Caesars Entertainment Corporation Amended and Restated Escrow Agreement, dated as of December 12, 2016, between Caesars Entertainment Corporation and Wells Fargo Bank, N.A. 
+
+ 10.20 
+ 
+ Caesars Entertainment Corporation Second Amended and Restated Executive Deferred Compensation Trust Agreement, dated as of December 12, 2016, between Caesars Entertainment Corporation and Wells Fargo Bank,
+ N.A. 
+
+ 99.1 
+ 
+ Press Release. 
+
+ 99.2 
+ 
+ Press Release. 
+
+ 99.3 
+ 
+ Separation Agreement, dated as of October 6, 2017, between Caesars Entertainment Operating Company, Inc. and VICI Properties Inc. 
+ 
+ 21 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the Registrant has duly caused this report to be signed on
+its behalf by the undersigned hereunto duly authorized. 
+
+ CAESARS ENTERTAINMENT CORPORATION 
+
+ Date: October 13, 2017 
+
+ By: 
+ 
+ /s/ S COTT E. W IEGAND 
+
+ Name: 
+ 
+ Scott E. Wiegand 
+
+ Title: 
+ 
+ Senior Vice President, Deputy General Counsel 
+ and Corporate Secretary 
+ 
+ 22 
+

@@ -1,0 +1,85 @@
+{
+  "case_id": "P322",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a pure holding-company reorganization: a new Delaware top-level entity was inserted above the pre-existing registrant and above the unchanged operating subsidiary PNMAC, which \"was not itself merged, dissolved, or restructured.\" The DEFM14A states \"management and businesses will not change,\" so the customer-facing mortgage production/servicing business (T4) and its operating processes (T5) remained co-located in the same unchanged PNMAC vehicle — no product-vs-process mismatch (gap_45=0). Processes (T5) and the people/management (T6, \"directors and executive officers ... expected to be the same,\" with employment agreements assigned and assumed) moved together within the same subsidiary, so no process-vs-organization gap (gap_56=0). T3 is coded swap because the legal domicile/vehicle at the top shifted to a newly formed successor while the operating entity persisted."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The DEFM14A FAQ expressly stated management and businesses would not change as a result of the Reorganization, and PNMAC (the operating subsidiary conducting production and servicing) was not merged, dissolved, or restructured at closing; product and process therefore remained aligned under the same vehicle with no product-vs-process mismatch. Directors, executive officers, employment agreements, and indemnification agreements were carried across by assignment/assumption to the Successor with the same personnel, so processes and organization moved together with no structural T5–T6 gap at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The DEFM14A stated that Existing PennyMac's management and businesses would not change, while PNMAC—the operating subsidiary conducting mortgage production and servicing—was not merged, dissolved, or restructured; therefore the customer-facing business and its operating processes remained coherently together at closing. Directors and executive officers were expected to remain the same, and the Successor expressly assumed existing employment agreements, offer letters, indemnification agreements, and the equity incentive plan, documenting alignment between the continuing processes and the organization that operated them. [SRC: SEC accession 0001047469-18-006280, DEFM14A FAQ 14 and \"Board of Directors and Executive Officers of New PennyMac Following the Reorganization\"] [SRC: SEC accession 0001104659-18-065455, Form 8-K Item 1.01 and Item 5.01]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a pure holding-company reorganization: a new Delaware top-level entity was inserted above the pre-existing registrant and above the unchanged operating subsidiary PNMAC, which \\\"was not itself merged, dissolved, or restructured.\\\" The DEFM14A states \\\"management and businesses will not change,\\\" so the customer-facing mortgage production/servicing business (T4) and its operating processes (T5) remained co-located in the same unchanged PNMAC vehicle \\u2014 no product-vs-process mismatch (gap_45=0). Processes (T5) and the people/management (T6, \\\"directors and executive officers ... expected to be the same,\\\" with employment agreements assigned and assumed) moved together within the same subsidiary, so no process-vs-organization gap (gap_56=0). T3 is coded swap because the legal domicile/vehicle at the top shifted to a newly formed successor while the operating entity persisted.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The DEFM14A FAQ expressly stated management and businesses would not change as a result of the Reorganization, and PNMAC (the operating subsidiary conducting production and servicing) was not merged, dissolved, or restructured at closing; product and process therefore remained aligned under the same vehicle with no product-vs-process mismatch. Directors, executive officers, employment agreements, and indemnification agreements were carried across by assignment/assumption to the Successor with the same personnel, so processes and organization moved together with no structural T5–T6 gap at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The DEFM14A stated that Existing PennyMac's management and businesses would not change, while PNMAC—the operating subsidiary conducting mortgage production and servicing—was not merged, dissolved, or restructured; therefore the customer-facing business and its operating processes remained coherently together at closing. Directors and executive officers were expected to remain the same, and the Successor expressly assumed existing employment agreements, offer letters, indemnification agreements, and the equity incentive plan, documenting alignment between the continuing processes and the organization that operated them. [SRC: SEC accession 0001047469-18-006280, DEFM14A FAQ 14 and \\\"Board of Directors and Executive Officers of New PennyMac Following the Reorganization\\\"] [SRC: SEC accession 0001104659-18-065455, Form 8-K Item 1.01 and Item 5.01]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

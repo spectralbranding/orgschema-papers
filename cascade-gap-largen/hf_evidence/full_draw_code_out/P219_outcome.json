@@ -1,0 +1,58 @@
+{
+  "case_id": "P219",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "North Charleston, SC legacy-KapStone mill permanently ceased production June 2023 (capacity cut ~288k tons); segment-level $0.5bn goodwill impairment to Corrugated Packaging in FY2023; no standalone acquired-business scalar disclosed",
+      "rationale": "The slice documents a facility discontinuation (North Charleston mill reconfigured beginning FY2020 and permanently closed June 2023) with associated impairments, but explicitly states no source attributes this to product/operations incoherence — the disclosed rationale is general portfolio-restructuring to redirect capital, so p4_pathway is not documented (0). Likewise, the slice found no reputable-press or primary source attributing any closure or friction to culture/organizational or management conflict (\"[UNVERIFIED: causal attribution]\"), so no process/organization fracture is documented (p5_pathway = 0). No documented archetype incoherence or business-model incompatibility appears in the realized record; results were simply folded into WestRock's combined Corrugated Packaging segment."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice documents the permanent closure of the legacy-KapStone North Charleston mill in June 2023. However, it explicitly notes that no sources attribute this closure to product/process incoherence (p4) or organizational/cultural friction (p5), but rather to general portfolio restructuring."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Legacy North Charleston mill permanently ceased production in June 2023",
+      "rationale": "The legacy-KapStone North Charleston mill permanently ceased production in June 2023 after an earlier capacity reconfiguration, but the slice does not attribute this outcome to product/process misalignment. It also reports no documented culture, management, workforce-integration, or other organizational friction causing the closure, so no process/organization fracture is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"North Charleston, SC legacy-KapStone mill permanently ceased production June 2023 (capacity cut ~288k tons); segment-level $0.5bn goodwill impairment to Corrugated Packaging in FY2023; no standalone acquired-business scalar disclosed\", \"rationale\": \"The slice documents a facility discontinuation (North Charleston mill reconfigured beginning FY2020 and permanently closed June 2023) with associated impairments, but explicitly states no source attributes this to product/operations incoherence \\u2014 the disclosed rationale is general portfolio-restructuring to redirect capital, so p4_pathway is not documented (0). Likewise, the slice found no reputable-press or primary source attributing any closure or friction to culture/organizational or management conflict (\\\"[UNVERIFIED: causal attribution]\\\"), so no process/organization fracture is documented (p5_pathway = 0). No documented archetype incoherence or business-model incompatibility appears in the realized record; results were simply folded into WestRock's combined Corrugated Packaging segment.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice documents the permanent closure of the legacy-KapStone North Charleston mill in June 2023. However, it explicitly notes that no sources attribute this closure to product/process incoherence (p4) or organizational/cultural friction (p5), but rather to general portfolio restructuring.\"\n}\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Legacy North Charleston mill permanently ceased production in June 2023\",\n  \"rationale\": \"The legacy-KapStone North Charleston mill permanently ceased production in June 2023 after an earlier capacity reconfiguration, but the slice does not attribute this outcome to product/process misalignment. It also reports no documented culture, management, workforce-integration, or other organizational friction causing the closure, so no process/organization fracture is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

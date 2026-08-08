@@ -1,0 +1,85 @@
+{
+  "case_id": "P048",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "read-only",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the product (Columbia/Mountain Hardwear brands, owned by Columbia) crosses into the JV to be distributed, but the operating processes producing/delivering that distribution do not fully transfer — Swire will transfer only \"certain assets\" and the venture does not yet independently run its operations, with support services provided \"on a transitional basis,\" documenting a product-vs-process mismatch at closing. gap_mitigated=yes because that gap is explicitly absorbed via transitional support-services arrangements from Swire Shanghai and Swire Resources. gap_56=0: the ~650-700 people (T6) are structured to move into or serve the JV alongside the transferring import/distribution/retail assets (T5), so process and people are aligned in the closing structure rather than mismatched."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The joint venture receives the right to distribute Columbia brands (T4 read-only) but does not receive all operational processes independently at closing, relying instead on Swire for transitional support services (T5 partial), creating a T4/T5 gap. This gap is mitigated by the transitional services agreement. Approximately 650-700 employees transfer alongside the transferred assets, aligning T6 with T5, so no T5/T6 gap is documented."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The venture received the Columbia and Mountain Hardwear product scope, but only certain related import, distribution, and retail assets, with assistance needed to establish or continue necessary contractual relationships. The slice expressly states that Swire Shanghai and Swire Resources would provide transitional support services bridging operating capabilities the venture did not yet independently run, documenting and contractually mitigating a T4-T5 gap. No T5-T6 gap is documented because approximately 650-700 personnel were expected to become venture employees or provide services to it, alongside the transitional support arrangement."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the product (Columbia/Mountain Hardwear brands, owned by Columbia) crosses into the JV to be distributed, but the operating processes producing/delivering that distribution do not fully transfer \\u2014 Swire will transfer only \\\"certain assets\\\" and the venture does not yet independently run its operations, with support services provided \\\"on a transitional basis,\\\" documenting a product-vs-process mismatch at closing. gap_mitigated=yes because that gap is explicitly absorbed via transitional support-services arrangements from Swire Shanghai and Swire Resources. gap_56=0: the ~650-700 people (T6) are structured to move into or serve the JV alongside the transferring import/distribution/retail assets (T5), so process and people are aligned in the closing structure rather than mismatched.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"read-only\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The joint venture receives the right to distribute Columbia brands (T4 read-only) but does not receive all operational processes independently at closing, relying instead on Swire for transitional support services (T5 partial), creating a T4/T5 gap. This gap is mitigated by the transitional services agreement. Approximately 650-700 employees transfer alongside the transferred assets, aligning T6 with T5, so no T5/T6 gap is documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The venture received the Columbia and Mountain Hardwear product scope, but only certain related import, distribution, and retail assets, with assistance needed to establish or continue necessary contractual relationships. The slice expressly states that Swire Shanghai and Swire Resources would provide transitional support services bridging operating capabilities the venture did not yet independently run, documenting and contractually mitigating a T4-T5 gap. No T5-T6 gap is documented because approximately 650-700 personnel were expected to become venture employees or provide services to it, alongside the transitional support arrangement.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-N",
+    "sigma_T4": "read-only",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

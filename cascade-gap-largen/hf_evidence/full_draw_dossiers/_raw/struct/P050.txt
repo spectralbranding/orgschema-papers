@@ -1,0 +1,578 @@
+ 
+ 8-K
+ 1
+ d734478d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON, DC 20549 
+ FORM 8-K
+ 
+ CURRENT REPORT Pursuant
+to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): May 27, 2014 
+ 
+ SunEdison Semiconductor Limited 
+ (Exact name of registrant as specified in its charter) 
+
+ Singapore 
+ 
+ 001-36460 
+ 
+ N/A 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (IRS Employer 
+ Identification No.) 
+ 11 Lorong 3 Toa Payoh 
+ Singapore 319579 (Address
+of Principal executive offices, including Zip Code) (65) 6681-9300 
+ (Registrant&#146;s telephone number, including area code) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the
+following provisions: &#168; Written communications pursuant to Rule 425 under the Securities Act (17
+CFR 230.425) &#168; Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+ &#168; Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR
+240.14d-2(b)) &#168; Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17
+CFR 240.13e-4(c)) 
+
+ Item 1.01 Entry Into a Material Definitive Agreement. 
+ SunEdison Semiconductor Limited (the &#147;Company&#148;) entered into the following agreements in connection with the completion of the
+Company&#146;s underwritten initial public offering of the Company&#146;s ordinary shares, no par value (the &#147;IPO&#148;). Separation Agreement
+ On May 27, 2014, the Company entered into a separation agreement with SunEdison, Inc. (&#147;SunEdison&#148;). The separation
+agreement governs certain pre-IPO transactions between SunEdison and the Company, as well as aspects of the relationship between SunEdison and the Company following the IPO which are not otherwise governed by the other agreements between the Company
+and SunEdison. The separation agreement provides further assurances and covenants between SunEdison and the Company to ensure that the separation of the Company&#146;s business from SunEdison is executed pursuant to the Company&#146;s intent and
+that commercially reasonable efforts are taken to do all things reasonably necessary to consummate and make effective the pre-IPO and post-IPO transactions. The separation agreement provides for mutually agreed exchange of information,
+confidentiality, dispute resolution methods and limitations of liability. The terms of the separation agreement are substantially similar to the terms set forth in the form of separation agreement filed as Exhibit 10.1 to the Company&#146;s
+Registration Statement on Form S-1 (No. 333-191052), originally filed with the Securities and Exchange Commission on September 9, 2013 and as amended (the &#147;Registration Statement&#148;). The foregoing summary of the separation agreement
+does not purport to be complete and is subject to and qualified in its entirety by reference to the separation agreement, a copy of which is filed as Exhibit 10.1 hereto and is incorporated herein by reference. 
+ CCZ and Diamond Coated Wire License Agreement 
+ On May 27, 2014, the Company entered into a patent and technology license agreement with SunEdison regarding Czocharlski (&#147;CCZ&#148;)
+silicon crystal growth and diamond coated wire intellectual property. The material terms of the agreement are discussed below and such description is substantially similar to the description of the CCZ and Diamond Coated Wire License Agreement set
+forth in the Registration Statement. Under the agreement, SunEdison licenses to the Company and certain of its subsidiaries in the United
+States and Italy its U.S. and foreign patents and patent applications and its technology (including discoveries, conceptions, ideas, improvements, enhancements and inventions and data) relating to CCZ silicon crystal growth and diamond coated wire
+technology, provided that the Company&#146;s use of such licensed intellectual property is limited to the semiconductor industry and the production of semiconductor wafers. The agreement prohibits the Company from using the licensed intellectual
+property for the manufacture of polysilicon, the manufacture of materials used in the solar photovoltaic industry, or for balance of system hardware or software used in solar systems. Additionally, the agreement prohibits SunEdison from licensing
+the applicable intellectual property to any third party for use in the production of semiconductor wafers and similar uses in the semiconductor industry. 
+ The licenses granted under the agreement are non-exclusive, perpetual, non-transferable (except in limited circumstances) royalty-free
+licenses within the territories of the United States and Italy. The Company generally is prohibited from granting sub-licenses of the intellectual property licensed to the Company under the agreement without the prior written consent of SunEdison,
+provided such consent may not to be unreasonably withheld, conditioned or delayed. However, the Company does not need prior written consent to grant sublicenses to certain of its vendors for purposes of the commercialization of the licensed
+intellectual property so long as such vendors have been used or otherwise approved by SunEdison, and, in the case of a sublicense granted in territories other than the United States and Italy, such sublicense is made at least one year after the
+effective date of the agreement. Unless otherwise agreed by SunEdison in its sole discretion, SunEdison exclusively own all improvements and other intellectual property developed by the Company with respect to the intellectual property licensed
+under the agreement. Any such improvements are included within the licensed intellectual property and subject to the license described above. The Company is obligated to share with SunEdison on a monthly basis all of its research and development,
+test results and performance data relating to its use of CCZ and diamond coated wire. 
+ 2 
+
+ The agreement has a term of five years, provided that the parties may mutually agree in writing
+to extend the term. The agreement may be terminated early by the parties&#146; mutual written agreement. Either party may terminate the agreement if the other party commits a material breach of the agreement and fails to remedy such breach within 60
+days after written notice from the non-breaching party. SunEdison may also terminate the agreement within 60 days of a third party obtaining a controlling interest in the Company. Under the agreement, &#147;controlling interest&#148; means the
+possession, direct or indirect, of the power to direct or cause the direction of the management and policies of the Company, whether through the ownership of voting securities, by contract or otherwise. 
+ In the event of a termination other than for cause, the licenses granted to the Company under the agreement continue on a perpetual basis
+solely with respect to the licensed intellectual property in existence as of the time of such termination. However, in the event a third party active in the manufacture of polysilicon, the manufacture of solar products or related activities in the
+solar energy field gains a controlling interest in the Company, then SunEdison may terminate immediately all licenses under the agreement other than the license related to improvements to the licensed intellectual property, which license will be
+perpetual regardless of the manner in which the agreement is terminated or the termination of all other licenses. If, as a result of any
+third party claim of infringement or misappropriation pertaining to any of the licensed intellectual property, the Company is enjoined from using the licensed intellectual property, or if SunEdison reasonably believes that the licensed intellectual
+property is likely to become the subject of a third party claim of infringement or misappropriation, SunEdison, at its option and expense, is permitted to (i) procure the right for the Company to continue to use the licensed intellectual
+property, (ii) replace or modify the licensed intellectual property so that it becomes non-infringing and remains functionally equivalent or (iii) terminate the license with respect to the affected intellectual property. 
+ The agreement includes a non-competition covenant prohibiting the Company from engaging in any business or activity that is competitive with
+the business or activities of SunEdison, which includes the design, materials, processes, products, and procedures related to the generation, storage, transmission, distribution, control or monitoring of electrical power and electrical energy
+obtained from photovoltaic conversion of solar radiation and other renewable energy sources. The Company agrees in the agreement to
+indemnify SunEdison and its affiliates and their respective employees, officers and directors for any liabilities or damages suffered by them arising out of (i) the Company&#146;s use of the licensed intellectual property and (ii) any use,
+sale or other disposition by the Company of products made by utilizing such licensed intellectual property. The terms of the CCZ and Diamond Coated Wire License Agreement are substantially similar to the terms set forth in the form of CCZ and
+Diamond Coated Wire License Agreement filed as Exhibit 10.2 to the Registration Statement. The foregoing summary of the CCZ and Diamond Coated Wire License Agreement does not purport to be complete and is subject to and qualified in its entirety by
+reference to the CCZ and Diamond Coated Wire License Agreement, a copy of which is filed as Exhibit 10.2 hereto and is incorporated herein by reference. 
+ Patent and Technology Cross-License Agreement 
+ On May 27, 2014, the Company entered into a patent and technology cross-license agreement with SunEdison. Under the agreement, the Company
+has agreed to license to SunEdison substantially all of its patents, patent applications, software, trade secrets, know-how and other intellectual property that have application in SunEdison&#146;s solar energy business, and SunEdison licenses to
+the Company substantially all of its patents, patent applications, software, trade secrets, know-how and other intellectual property that have application in the Company&#146;s semiconductor wafer business. The licensed intellectual property
+includes intellectual property within the applicable field of use that each party owns or has a right to grant an exclusive license under during the period from the closing of the IPO until the earlier of (i) the fifth anniversary of the
+closing of the IPO and (ii) a change in control of such party involving a competitor of the other party, provided that the Company&#146;s field of use is limited to the semiconductor industry and the production of semiconductor wafers. The
+intellectual property licensed by SunEdison to the Company under the agreement excludes all intellectual property related to CCZ and diamond coated wire, with such arrangements to be set forth in a separate agreement as described above, and also
+excludes all intellectual property related to FBR and high-pressure FBR. 
+ 3 
+
+ The licenses granted by each party under the agreement are exclusive, worldwide, perpetual,
+non-transferable (except by assignment with the other party&#146;s written consent), royalty-free licenses to use the above-described intellectual property rights within such party&#146;s respective field of use. Each party may grant sub-licenses of
+the intellectual property licensed to it under the agreement only with the other party&#146;s prior written consent, provided such consent may not to be unreasonably withheld, conditioned or delayed. Each party owns all improvements, derivative
+works, enhancements and other modifications developed by such party with respect to the intellectual property licensed to it under the agreement (unless such improvements are developed under the technology joint development agreement described
+below, in which case ownership is governed by the technology joint development agreement), provided that such party is obligated to disclose such improvements to the other party during the term of the agreement and, upon the other party&#146;s
+request, grant to the other party a royalty free, non-exclusive, worldwide, perpetual, non-transferable (except by assignment with the other party&#146;s consent) license to use such improvements in the other party&#146;s field of use. 
+ Each party has the first right, at its own expense, to control an enforcement action relating to intellectual property licensed to it under
+the agreement with a primary application in such party&#146;s field of use. If such party does not initiate and control an enforcement action with respect to infringement, misappropriation or other violation of any intellectual property licensed to
+it under the agreement within 90 days of receipt of a request from the other party to assume control over such action, then the other party has the right to control the enforcement action, provided that if it does not do so within 90 days, this
+right reverts back to the initial party. The agreement continues in effect until the expiration of the last item of licensed intellectual
+property (which expiration, in the case of patents, is the expiration of the statutory term (including all extensions and renewals) of such patents, and in the case of know-how and trade secrets, is the date on which such know-how and trade secrets
+are no longer non-public). The agreement may be terminated early by the parties&#146; mutual written agreement. In addition, either party may terminate the agreement if the other party commits a material breach of the agreement and fails to remedy
+such breach within 60 days after written notice from the non-breaching party. The terms of the Patent and Technology Cross-License Agreement are substantially similar to the terms set forth in the form of Patent and Technology Cross-License
+Agreement filed as Exhibit 10.3 to the Registration Statement. The foregoing summary of the Patent and Technology Cross-License Agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the Patent and
+Technology Cross-License Agreement, a copy of which is filed as Exhibit 10.3 hereto and is incorporated herein by reference. Transition Services
+Agreement On May 27, 2014, the Company entered into a transition services agreement with SunEdison in which the Company and
+SunEdison have agreed to mutually provide each other certain corporate, general and administrative services following the completion of the IPO for the term set forth for such service in each annex to the agreement. The material terms of the
+agreement are discussed below and such description is substantially similar to the description of the transition services agreement set forth in the Registration Statement. 
+ Under the agreement, the Company and SunEdison have agreed to mutually provide each other certain corporate, general and administrative
+services, including services related to information technology and telecommunications, payroll, benefits and human resources administration, taxes, real estate and facilities management, office management, intellectual property management and
+research and development. To the extent either the Company or SunEdison identify any additional services that are needed to transition the respective businesses in connection with the IPO, then the Company and SunEdison agree to cooperate in good
+faith to negotiate the terms of such additional services. The quality of transition services to be provided pursuant to the agreement
+must be substantially similar to those provided internally to each party&#146;s subsidiaries and affiliates, and, where applicable, substantially consistent with the quality and scope of such services provided prior to the effective date of the
+agreement. In addition, each party is required to use commercially reasonable efforts, at the recipient party&#146;s expense, to obtain any third-party consents, licenses, or approvals that are required for the performance of services, and to the
+extent such third-party consents, licenses or approvals are not obtained then either party can immediately terminate the affected service. Additionally, each party may use its reasonable discretion in prioritizing requests for services among its own
+subsidiaries and affiliates and those of the other party, provided that each party communicates any scheduling issues 
+ 4 
+
+to the other party and uses commercially reasonable efforts to accommodate requests for services. Either party may engage subcontractors to provide services covered by the transition services
+agreement, and neither party is required to add or retain staff, equipment, facilities or other resources in order to provide any transition services unless otherwise agreed. 
+ Each party warrants that it shall use reasonable care in providing transition services to the other party and that such services will be
+provided in accordance with applicable laws, rules and regulations. The provider of any service has no liability with respect to furnishing such service except to the extent resulting from the provider&#146;s gross negligence or willful misconduct.
+In no event is either party liable for any indirect, incidental, special, punitive, exemplary or consequential damages, lost profits, loss of goodwill or lost opportunities relating to the transition services agreement, and in no event will the
+provider&#146;s liability with respect to its furnishing of services exceed the aggregate amount of fees paid to the provider (excluding any direct charges) under the transition services agreement. 
+ Each party agrees to use commercially reasonable efforts to transition each service being provided under the agreement to its own internal
+organization or to obtain alternate third-party sources to provide such services within 24 months after the completion of the IPO. The agreement expires on the 24 month anniversary of the IPO, unless otherwise agreed by the parties, or upon the
+expiration of all services provided under the agreement. Either party may terminate the agreement prior to the expiration date upon 45 days&#146; prior written notice to the other party or immediately upon the other party&#146;s insolvency. In
+addition, either party may terminate the agreement if the other party commits a material breach of the agreement and fails to remedy such breach within 30 days after written notice from the non-breaching party. 
+ In the event a third party obtains a controlling interest in the Company, or in the event the Company or any of its affiliates are merged or
+consolidated with a third party, SunEdison has the right to terminate the agreement upon 10 days&#146; written notice provided within 30 days of such change of control event. Notwithstanding the above, in the event a third party that is active in
+the same field as SunEdison&#146;s solar energy business gains a controlling interest in the Company or any of its affiliates, SunEdison has the right to terminate the agreement and all services thereunder upon 30 days&#146; written notice. Under
+the agreement, &#147;controlling interest&#148; means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of the Company, whether through the ownership of voting securities, by contract or
+otherwise. Under the transition services agreement, the provider of a service generally charges the recipient party an agreed upon
+monthly service fee during the term of such service as set forth in the agreement, as well any direct charges for external costs associated with such service, including third party legal, accounting and advisor fees, costs associated with any
+telecommunications contracts or information service licenses and insurance costs. In addition, any fees based on full time employee calculations are adjusted semi-annually upon the agreement of the parties. Except as provided in the agreement, the
+fee for each service shall be subject to an automatic five percent increase on January 1 of each year following the effective date of the agreement. The Company estimates that the aggregate annual fees the Company will pay to SunEdison
+initially will be approximately $1,000,000 per year, and the aggregate annual fees the Company will receive initially from SunEdison will be approximately $3,500,000 per year. 
+ The payments that the Company makes to SunEdison pursuant to the transition services agreement are not necessarily indicative of, and it is
+not practical for the Company to estimate, the level of expenses the Company might incur in procuring these services from alternative sources. 
+ Under the transition services agreement, each party is obligated to maintain the confidentiality of confidential information of the other
+party for a period of 10 years following the termination of the transition services agreement. The terms of the transition services agreement are substantially similar to the terms set forth in the form of transition services agreement filed as
+Exhibit 10.4 to the Registration Statement. The foregoing summary of the transition services agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the transition services agreement, a copy of which
+is filed as Exhibit 10.4 hereto and is incorporated herein by reference. 
+ 5 
+
+ Tax Matters Agreement 
+ The Company has entered into a tax matters agreement with SunEdison that governs the parties&#146; respective rights, responsibilities and
+obligations with respect to tax liabilities and benefits, tax attributes, the preparation and filing of tax returns, the control of audits and other tax proceedings and other matters regarding taxes. In general, under the agreement: 
+
+ &#149; 
+ 
+ The Company is responsible for, and entitled to any refund in respect of: (i) any foreign taxes (including any related interest, penalties, or audit adjustments) imposed on the Company and its subsidiaries for all
+periods, whether before or following the completion of the IPO (including, with respect to such foreign taxes for a period before the completion of the IPO, any audit adjustments made following the completion of the IPO), and (ii) any U.S.
+federal, state, and local taxes (including any related interest, penalties, or audit adjustments) imposed on the Company and its subsidiaries for all periods following the completion of the IPO. SunEdison is responsible for, and is entitled to any
+refund in respect of any U.S. federal, state, and local taxes (including any related interest, penalties, or audit adjustments) imposed on the Company and its subsidiaries for all periods preceding the completion of the IPO (including any audit
+adjustments with respect to such taxes as are made following the completion of the IPO). The Company also is responsible for any liability owed to any governmental entity as a result of the Company&#146;s failure, following the completion of the
+IPO, to satisfy any terms and conditions imposed on the Company under any tax incentive arrangement entered into by and among the Company, SunEdison and such government entity. 
+
+ &#149; 
+ 
+ SunEdison also is responsible for, and is entitled to any refund in respect of: (i) any U.S. federal, state, and local taxes (including any related interest, penalties, or audit adjustments) for all periods
+preceding the completion of the IPO (including any audit adjustments with respect to such taxes as are made following the completion of the IPO); (ii) any U.S. federal, state, and local taxes (including any related interest and penalties or
+audit adjustments) imposed on SunEdison and its subsidiaries (excluding the Company and its subsidiaries) for all periods following the completion of the IPO; and (iii) any foreign taxes (including any related interest, penalties, or audit
+adjustments) imposed on SunEdison and its subsidiaries (excluding the Company and its subsidiaries), whether for a period before or following the completion of the IPO (including, with respect to such foreign taxes for a period before the completion
+of the IPO, any audit adjustments made following the completion of the IPO). SunEdison also is responsible for any liability owed to any governmental entity as a result of its failure, following the completion of the IPO, to satisfy any terms and
+conditions imposed on it under any tax incentive arrangement entered into by and among the Company, SunEdison and such government entity. 
+
+ &#149; 
+ 
+ SunEdison, in good faith consultation with the Company, is responsible for determining the allocation of tax attributes, including net operating losses and unused foreign tax credits, between SunEdison and its
+subsidiaries, on the one hand, and the Company and its subsidiaries on the other. 
+
+ &#149; 
+ 
+ The Company is responsible for preparing and filing any tax returns that include only the Company and its subsidiaries. 
+
+ &#149; 
+ 
+ SunEdison is responsible for preparing and filing any tax returns that include only SunEdison and its subsidiaries (excluding the Company and its subsidiaries), as well as any tax returns that include SunEdison or one
+or more of its subsidiaries together with the Company or one or more of its subsidiaries. 
+
+ &#149; 
+ 
+ The Company agrees not to file any adjustment or refund requests with respect to any return that includes SunEdison or one or more of its subsidiaries together with the Company or one or more of its subsidiaries, and
+further agrees not to carry back any losses to any such returns without SunEdison&#146;s consent. 
+ 6 
+
+ &#149; 
+ 
+ The Company has the exclusive authority to control tax contests that relate to the tax returns it files, provided that SunEdison has the right to participate in that portion of any tax contest that could have a material
+adverse effect on SunEdison and its subsidiaries (excluding the Company and its subsidiaries). 
+
+ &#149; 
+ 
+ SunEdison has the exclusive authority to control tax contests that relate to the tax returns it files, provided that the Company has the right to participate in that portion of any tax contest that could have a material
+adverse effect on the Company and its subsidiaries. Neither party&#146;s obligations under the agreement are limited in
+amount or subject to any cap. The agreement also assigns responsibilities for administrative matters, such as the filing of returns, payment of taxes due, retention of records and conduct of audits, examinations or similar proceedings. In addition,
+the agreement provides for cooperation and information sharing with respect to tax matters. The terms of the tax matters agreement are substantially similar to the terms set forth in the form of tax matters agreement filed as Exhibit 10.5 to the
+Registration Statement. The foregoing summary of the tax matters agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the tax matters agreement, a copy of which is filed as Exhibit 10.5 hereto and
+is incorporated herein by reference. Registration Rights Agreement with SunEdison 
+ On May 27, 2014 the Company entered into a registration rights agreement with SunEdison, pursuant to which the Company has agreed that,
+upon the request of SunEdison, the Company will use its reasonable best efforts to effect the registration under applicable federal and state securities laws of the Company&#146;s ordinary shares held by SunEdison following the IPO. The registration
+rights agreement includes the following material terms and such description is substantially similar to the description of the registration rights agreement set forth in the Registration Statement. As used herein, &#147;SunEdison&#148; includes any
+of its affiliates (other than the Company) who may hold the Company&#146;s ordinary shares. Demand Registration 
+ SunEdison is able to request up to ten demand registrations under the Securities Act of all or any portion of the Company&#146;s shares covered
+by the agreement and the Company is obligated, subject to limited exceptions, to register such shares as requested by SunEdison. SunEdison is able to request that the Company complete up to two demand registrations and four underwritten
+offerings with a shelf registration in a twelve month period, subject to a $20 million minimum offering size unless such offering represents all remaining unregistered shares covered by the agreement. SunEdison is able to designate the terms of
+each offering effected pursuant to a demand registration, which may take any form, including a shelf registration or an underwritten offering. 
+ Piggy-back Registration If the Company
+at any time intends to file on its behalf or on behalf of any of its other security holders a registration statement in connection with a public offering of any of its securities on a form and in a manner that would permit the registration for offer
+and sale of the Company&#146;s ordinary shares held by SunEdison, SunEdison has the right to include in that offering the ordinary shares that it holds, subject to certain limitations. 
+ Registration Expenses The Company is
+generally responsible for all registration expenses in connection with the performance of its obligations under the registration rights provisions in the registration rights agreement including the fees and disbursements of a single counsel for
+SunEdison. SunEdison is responsible for its own internal fees and expenses, any applicable underwriting discounts or commissions and any stock transfer taxes. 
+ 7 
+
+ Indemnification 
+ Generally, the agreement contains indemnification and contribution provisions by the Company for the benefit of SunEdison and, in limited
+situations, by SunEdison for the benefit of the Company with respect to the information provided by SunEdison included in any registration statement, prospectus or related document. 
+ Transfer If SunEdison transfers shares
+covered by the agreement, it may transfer the benefits of the registration rights agreement to transferees who acquire at least 5% of the number of the Company&#146;s ordinary shares beneficially owned by SunEdison immediately following the
+completion of the IPO, provided that each transferee agrees to be bound by the terms of the registration rights agreement. Term 
+ The registration rights remains in effect with respect to any shares covered by the agreement until: 
+
+ &#149; 
+ 
+ such shares have been sold pursuant to an effective registration statement under the Securities Act; 
+
+ &#149; 
+ 
+ such shares have been sold to the public pursuant to Rule 144 under the Securities Act; 
+
+ &#149; 
+ 
+ such shares may be sold to the public pursuant to Rule 144 under the Securities Act without being subject to the volume restrictions in such rule; or 
+
+ &#149; 
+ 
+ such shares have been sold in a transaction in which the transferee is not entitled to the benefits of the registration rights agreement. 
+ The terms of the registration rights agreement with SunEdison are substantially similar to the terms set forth in the form of registration
+rights agreement filed as Exhibit 10.6 to the Registration Statement. The foregoing summary of the registration rights agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the registration rights
+agreement, a copy of which is filed as Exhibit 10.6 hereto and is incorporated herein by reference. Technology Joint Development and Rights
+Agreement On May 27, 2014 the Company entered into a technology joint development and rights agreement with SunEdison, which
+provides a framework for joint development and other collaborative activities between the Company and SunEdison. The material terms of the agreement are discussed below such description is substantially similar to the description of the technology
+joint development and rights agreement set forth in the Registration Statement. Under the agreement, the parties may agree to conduct one
+or more joint development programs, the specific terms and conditions of which are set forth in a separate statement of work for each joint development program. Each statement of work designates which party is the sole owner of the intellectual
+property and technology developed under the program, provided that SunEdison is the sole owner of any such intellectual property or technology that SunEdison reasonably determines is necessary or useful to the development, application or use of CCZ
+or diamond coated wire in any field. The other party&#146;s rights in such intellectual property and other technology developed in connection with any joint development program are governed by the patent and technology cross-license agreement or the
+CCZ and diamond coated wire patent and technology license agreement, as applicable. The agreement provides that in the event any employee
+of one party is seconded to the other party, the intellectual property and other technology developed outside of a joint development program by such employee in the course of his or her duties as a seconded employee is exclusively owned by the party
+for whom the seconded employee is performing duties at the time such intellectual property or technology is created or developed. Any such intellectual property or technology is governed by the patent and technology cross-license agreement or the
+CCZ and DCW patent and technology license agreement, as applicable. 
+ 8 
+
+ Employees of each party may also share workspace, laboratory space and other co-located
+facilities in the normal course of business. If such proximity of employees results in the creation of intellectual property or other technology jointly developed outside of a joint development program by at least one employee, agent or contractor
+of each party, the agreement provides that the ownership of such intellectual property or technology is governed by principles of U.S. patent law and is subject to applicable license agreements between the Company and SunEdison. 
+ The agreement has an initial term of five years, provided that the parties may mutually agree in writing to extend the term for any period
+prior to the expiration of the initial term. The agreement may be terminated early by the parties&#146; mutual written agreement. Either party may terminate the agreement if the other party commits a material breach of the agreement and fails to
+remedy such breach within 60 days after written notice from the non-breaching party. In the event a third party obtains a controlling
+interest in the Company, or in the event the Company or any of its affiliates is merged or consolidated with a third party, SunEdison has the right to terminate the agreement upon 10 days&#146; written notice provided within 30 days of such change
+of control event. Notwithstanding the above, in the event a third party that is active in the same field as SunEdison&#146;s solar energy business gains a controlling interest in the Company or any of its affiliates, SunEdison has the right to
+terminate the agreement upon 30 days&#146; written notice. Under the agreement, &#147;controlling interest&#148; means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of us, whether
+through the ownership of voting securities, by contract or otherwise. The terms of the technology joint development and rights agreement are substantially similar to the terms set forth in the form of technology joint development and rights
+agreement filed as Exhibit 10.9 to the Registration Statement. The foregoing summary of the technology joint development and rights agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the
+technology joint development and rights agreement, a copy of which is filed as Exhibit 10.7 hereto and is incorporated herein by reference. 
+ Employment Agreement On
+May 28, 2014 the Company entered into a formalized agreement with Dr. Shaker Sadasivam, a director of the Company and its President and Chief Executive Officer, which covers the terms of his employment and severance benefits as follows:
+
+ &#149; 
+ 
+ Term;Termination. The employment agreement provides that Dr. Sadasivam has a four-year employment term, commencing following the completion of the IPO. The employment term automatically renews for
+additional one year terms unless either party provides the other party with a notice of termination at least 60 days prior to the end of the term or renewal term. The employment term can also be terminated due to death or disability (as defined in
+the employment agreement) or by the Company or Dr. Sadasivam for any reason. 
+
+ &#149; 
+ 
+ Salary and Bonus. The employment agreement provides for an annual base salary of $600,000, which will be reviewed annually by the Company&#146;s board of directors and may be adjusted upwards in its sole
+discretion. Dr. Sadasivam is eligible to receive an annual bonus targeted at 100% of Dr. Sadasivam&#146;s annual base salary with the potential for awards up to 200% of Dr. Sadasivam&#146;s annual base salary, payable pursuant to the
+terms of the annual incentive plan approved by the Company&#146;s board of directors. Pursuant to the terms of his employment agreement, Dr. Sadasivam also received a grant of stock options and RSUs in connection with the IPO.
+
+ &#149; 
+ 
+ Severance Payments. If Dr. Sadasivam&#146;s employment is terminated (i) by the Company without &#147;Cause&#148; (as defined in the employment agreement) or (ii) by Dr. Sadasivam
+for &#147;Good Reason&#148; (as defined in the employment agreement), subject to his execution of a general release and separation agreement, Dr. Sadasivam is entitled to severance payments in an amount equal to two times his annual base
+salary, payable in equal installments over a period of twenty-four months, the pro rata portion of his annual bonus earned through the termination date based on the Company&#146;s actual performance for the year in which termination occurs and, if
+such termination occurs within two years after the effective date of the employment agreement, the immediate vesting of any unvested stock option or RSUs granted in connection with the IPO. 
+ 9 
+
+ &#149; 
+ 
+ Confidentiality Covenant. The employment agreement prohibits Dr. Sadasivam from disclosing the Company&#146;s confidential information during his employment and at any time thereafter.
+ The terms of the employment agreement are substantially similar to the terms set forth in the form of employment agreement
+filed as Exhibit 10.14 to the Registration Statement. The foregoing summary of the employment agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the employment agreement, a copy of which is
+filed as Exhibit 10.8 hereto and is incorporated herein by reference. Registration Rights Agreements with Samsung Fine Chemicals Co., Ltd. and
+Samsung Electronics Co., Ltd. On May 29, 2014, the Company entered into a registration rights agreement with each of Samsung
+Fine Chemicals Co., Ltd. and Samsung Electronics Co., Ltd. (collectively, the &#147;Samsung Purchasers&#148;) in connection with the purchase by each of the Samsung Purchasers of the Company&#146;s ordinary shares in separate private placements at a
+price per share equal to the IPO price, pursuant to which the Company agrees to use its reasonable best efforts, in certain events, to effect the registration under applicable federal and state securities laws of the Company&#146;s ordinary shares
+purchased by the Samsung Purchasers under their respective share purchase agreements. Each registration rights agreement includes the following material terms and such description is substantially similar to the description of the registration
+rights agreements with the Samsung Purchasers set forth in the Registration Statement. Demand Registration 
+ Until the termination of the registration rights in accordance with the terms of the respective agreement, each of the Samsung Purchasers is
+able to make five demands that the Company register under the Securities Act all or any portion of its shares covered by their respective agreement and the Company is obligated, subject to limited exceptions, to register such shares as requested by
+such Samsung Purchaser, provided that the Company is not be obligated to effect more than two demand registrations under such agreement in any 12 month period, further subject to a $20 million minimum offering size unless such offering
+represents all remaining unregistered shares covered by the agreement. A demand registration may take any form, including an underwritten offering and a shelf registration, and there shall be no limitations on the number of underwritten offerings
+pursuant to a shelf registration, provided that the Company is not obligated to effect more than two underwritten offerings under each of the agreements in any 12 month period, further subject to a $20 million minimum offering size. 
+ Piggy-back Registration If the Company
+at any time intends to file on its behalf or on behalf of any of its other security holders a registration statement in connection with a public offering of any of its securities on a form and in a manner set forth in each of the agreements with the
+Samsung Purchasers, each Samsung Purchaser has the right to include in that offering the Company&#146;s ordinary shares that it holds, subject to certain limitations. 
+ Registration Expenses The Company is
+generally responsible for all registration expenses in connection with the performance of its obligations under the registration rights provisions in the registration rights agreements, including the fees and disbursements of no more than a single
+counsel for each of the Samsung Purchasers. The Samsung Purchasers are responsible for their own internal fees and expenses, any applicable underwriting discounts or commissions and any stock transfer taxes. 
+ 10 
+
+ Indemnification 
+ Generally, the agreements contain indemnification and contribution provisions by the Company for the benefit of each of the Samsung Purchasers
+and, in limited situations, by each of the Samsung Purchasers for the benefit of the Company with respect to the information provided by such Samsung Purchaser included in any registration statement, prospectus or related document. 
+ Transfer The Samsung Purchasers are able
+to transfer the benefits of their respective registration rights agreement to transferees of the Company&#146;s ordinary shares who are their respective subsidiaries or affiliates, provided that each transferee agrees to be bound by the terms of the
+registration rights agreement. Term 
+ The registration rights remain in effect with respect to any shares covered by the agreement until: 
+
+ &#149; 
+ 
+ such shares have been sold pursuant to an effective registration statement under the Securities Act; 
+
+ &#149; 
+ 
+ such shares have been sold to the public pursuant to Rule 144 under the Securities Act; 
+
+ &#149; 
+ 
+ such shares may be sold to the public pursuant to Rule 144 under the Securities Act without being subject to the volume restrictions in such rule and all or a material part of the registration rights provided to
+SunEdison are no longer exercisable, have expired or have otherwise been terminated; or 
+
+ &#149; 
+ 
+ such shares have been sold in a transaction in which the transferee is not entitled to the benefits of the registration rights agreement. 
+ The terms of the registration rights agreements with the Samsung Purchasers are substantially similar to the terms set forth in the forms of
+registration rights agreement filed as Exhibits 10.15 and 10.16 to the Registration Statement. The foregoing summary of the registration rights agreements with the Samsung Purchasers does not purport to be complete and is subject to and qualified in
+its entirety by reference to the registration rights agreements, copies of which are filed as Exhibits 10.9 and 10.10 hereto and are incorporated herein by reference. 
+ SMP Joint Venture 
+ On May 27, 2014, SunEdison contributed to the Company the 2,877,700 shares in SMP Ltd (&#147;SMP&#148;) it acquired from Samsung Fine
+Chemicals Co., Ltd, and upon the contribution, SMP is owned approximately 35% by the Company, approximately 50% by a subsidiary of SunEdison and approximately 15% by Samsung Fine Chemicals Co., Ltd. In connection with the contribution, the Company
+entered into a joinder and amendment agreement whereby the Company became a party to and undertook its pro rata share of the obligations of the SMP joint venture agreement. Pursuant to the joint venture agreement, the joint venture parties formed
+SMP to construct, own and operate a facility in South Korea to produce high purity polysilicon, including electronic grade polysilicon, which is expected to have an initial, annual production capacity of approximately 10,000 metric tons. The SMP
+facility is currently under construction and is expected to be completed in the second half of 2014. Once operational, SMP is required to sell to the joint venture partners their pro rata share (based on their respective ownership interests) of
+SMP&#146;s polysilicon production at prices negotiated and mutually agreed upon between SMP and the joint venture partners based on a standard cost plus a markup established by an independent professional transfer consultant engaged by SMP. Until
+February 15, 2019, the Company and its joint venture partners have agreed not to transfer interests in SMP to any party other than respective affiliates. After February 15, 2019, if any joint venture partner desires to transfer its
+interest in SMP to any party other than one of its affiliates, each other joint venture partner has a right of first refusal to purchase such interest. 
+ The terms of the Joinder and Amendment Agreement to the SMP Joint Venture Agreement are substantially similar to the terms set forth in the
+form of Joinder and Amendment Agreement to the SMP Joint Venture Agreement filed as Exhibit 10.22 to the Registration Statement. The foregoing summary of the Joinder and Amendment Agreement to the SMP Joint Venture Agreement does not purport to be
+complete and is subject to and qualified in its entirety by reference to the Joinder and Amendment Agreement to the SMP Joint Venture Agreement, a copy of which is filed as Exhibit 10.11 hereto and is incorporated herein by reference. 
+ 11 
+
+ Senior Secured Credit Facility 
+ On May 27, 2014, the Company and its direct subsidiary, SunEdison Semiconductor B.V. (the &#147;Borrower&#148;), entered into a credit
+agreement with Goldman Sachs Bank USA, as administrative agent, sole lead arranger and sole syndication agent and, together with Macquarie Capital (USA) Inc., as joint bookrunners, Citibank, N.A., as letter of credit issuer, and the lenders party
+thereto (the &#147;Credit Facility&#148;). The Credit Facility provides for (i) a senior secured term loan facility in an aggregate principal amount up to $210,000,000 (the &#147;Term Facility&#148;) and (ii) a senior secured revolving
+credit facility in an aggregate principal amount up to $50,000,000 (the &#147;Revolving Facility&#148;). Under the Revolving Facility, the Borrower may obtain (i) letters of credit and bankers&#146; acceptances in an aggregate stated amount up
+to $15,000,000 and (ii) swing line loans in an aggregate principal amount up to $15,000,000. The Term Facility has a five year term, ending May 27, 2019, and the Revolving Facility has a three-year term, ending May 27, 2017. 
+ The borrowings under the Term Facility will be used (i) to repay amounts outstanding under intercompany loans owed by the Company and its
+direct and indirect subsidiaries to SunEdison International, Inc., its controlling shareholder, and SunEdison , the parent company of SunEdison International, Inc., (ii) to repay amounts outstanding under certain loan agreements entered into by
+the Company&#146;s indirect subsidiary, MEMC Japan Ltd., owed to the Development Bank of Japan Inc., (iii) to fund an intercompany loan to the Company&#146;s indirect subsidiary, MEMC Electronic Materials S.p.A., and (iv) for other general
+corporate purposes. The Revolving Facility will be used (i) for the issuance of letters of credit and bankers&#146; acceptances and (ii) for other general corporate purposes. The full amount of the Term Facility was drawn on May 27,
+2014 and remains outstanding. At the closing of the Credit Facility, no amounts were drawn under the Revolving Facility. The
+Borrower&#146;s obligations under the Credit Facility are guaranteed by the Company and certain of its direct and indirect subsidiaries. The Borrower&#146;s obligations and the guaranty obligations of the Company and its subsidiaries are secured by
+first-priority liens on and security interests in certain present and future assets of the Company, the Borrower and the subsidiary guarantors, including pledges of the capital stock of certain of the Company&#146;s subsidiaries. 
+ Borrowings under the Credit Facility will bear interest (i) at a base rate plus 4.50% per annum or (ii) at a reserve-adjusted
+eurocurrency rate plus 5.50% per annum. Interest will be paid quarterly in arrears, and at the maturity date of each facility, for loans bearing interest with reference to the base rate. Interest will be paid on the last day of selected
+interest periods (which will be one, three and six months), and at the maturity date of each facility, for loans bearing interest with reference to the reserve-adjusted eurocurrency rate (and at the end of every three months, in the case of any
+interest period longer than three months). A fee equal to 5.50% per annum will be payable by the Borrower, quarterly in arrears, in respect of the daily amount available to be drawn under outstanding letters of credit and bankers&#146;
+acceptances. The foregoing rates may be increased by 0.25% on July 11, 2014 if the Borrower has not appointed a security agent to administer certain collateral located in Taiwan and owned by the Company&#146;s Taiwanese subsidiary. 
+ The Credit Facility contains representations, covenants and events of default typical for credit arrangements of comparable size, including
+maintaining a consolidated leverage ratio of not greater than (i) 3.5 to 1.0 for the fiscal quarters ending September 30, 2014 and December 31, 2014, (ii) 3.0 to 1.0 for the fiscal quarters ending March 31, 2015 and
+June 30, 2015, and (iii) 2.5 to 1.0 for the fiscal quarters ending on and after September 30, 2015. The Credit Facility also contains a customary material adverse effects clause and a cross-default clause. The cross-default clause is
+applicable to defaults on other indebtedness in excess of $30 million. Affiliates of Goldman Sachs Bank USA, Deutsche Bank AG New
+York Branch and Citibank, N.A., as well as Macquarie Capital (USA) Inc., acted as underwriters in connection with the IPO, which was completed on May 28, 2014. In addition, certain of the lenders party to the Credit Facility, and their
+respective affiliates, have performed, and may in the future perform, various commercial banking, investment banking and other financial advisory services for the Company and its affiliates for which they have received, and will receive, customary
+fees and expenses. The foregoing summary of the Credit Facility does not purport to be complete and is subject to and qualified in its entirety by reference to the Credit Facility, a copy of which is filed as Exhibit 10.12 hereto and is incorporated
+herein by reference. 
+ 12 
+
+ Indemnification Agreements 
+ On May 28, 2014, the Company entered into indemnification agreements with its directors and officers in connection with the closing of the
+IPO. The following summary of the form of indemnification agreement does not purport to be complete and is subject to and qualified in its entirety by reference to the form of indemnification agreement, a copy of which is filed as Exhibit 10.13
+hereto and incorporated by reference herein. The indemnification agreements provide that the Company will indemnify the directors and
+officers to the fullest extent permitted under Singapore law against liabilities that may arise by reason of their service to the Company, and to advance expenses incurred as a result of any proceeding against them as to which they could be
+indemnified. These indemnification rights are not exclusive of any other right which an indemnified person may have or hereafter acquire under any statute, provision of our articles of association, agreement, vote of shareholders or disinterested
+directors or otherwise if he or she is subsequently found to have been negligent or otherwise have breached his or her trust or fiduciary duties or to be in default thereof, or where the Singapore courts have declined to grant relief. 
+ IPO Grants On May 28, 2014,
+the Company granted to Dr. Sadasivam a non-qualified option under the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan to purchase 384,615 ordinary shares at a price of $13.00 per share, which is equal to the IPO price to the
+public. The option will vest in increments of 25% over four years commencing on May 28, 2015. In addition, Dr. Sadasivam received a grant of 96,154 restricted stock units (&#147;RSUs&#148;). The RSUs will vest if our EBITDA for any of the
+fiscal years ending December 31, 2015, 2016, 2017 or 2018 is $200 million or greater. On May 28, 2014, the Company granted
+to Jeffrey Hall a non-qualified option under the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan to purchase 230,769 ordinary shares at a price of $13.00 per share, which is equal to the IPO price to the public. The option will vest in
+increments of 25% over four years commencing on December 2, 2014. In addition, Mr. Hall received a grant of 57,692 RSUs. The RSUs will vest if our EBITDA for any of the fiscal years ending December 31, 2015, 2016, 2017 or 2018 is
+$200 million or greater. Copies of the form of restricted stock unit agreement and form of stock option agreement are filed as
+Exhibits 10.14 and 10.15, respectively, hereto and incorporated by reference herein. Item 2.03 Creation of a Direct Financial Obligation or an
+Obligation under an Off-Balance Sheet Arrangement of a Registrant. The information set forth in Item 1.01 under the caption
+&#147;Senior Secured Credit Facility&#148; is incorporated herein by reference into this Item 2.03. 
+ 13 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ Exhibit Number 
+ 
+ Description 
+
+ 10.1 
+ 
+ Separation Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.2 
+ 
+ CCZ and Diamond Coated Wire Licensing Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.3* 
+ 
+ Patent and Technology Cross-License Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.4 
+ 
+ Transition Services Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.5 
+ 
+ Tax Matters Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.6 
+ 
+ Registration Rights Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.7 
+ 
+ Technology Joint Development and Rights Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.8 
+ 
+ Employment Agreement, dated as of May 28, 2014, by and between SunEdison Semiconductor Limited and Shaker Sadasivam 
+
+ 10.9 
+ 
+ Registration Rights Agreement, dated as of May 29, 2014, by and between SunEdison Semiconductor Limited and Samsung Fine Chemicals Co., Ltd. 
+
+ 10.10 
+ 
+ Registration Rights Agreement, dated as of May 29, 2014, by and between SunEdison Semiconductor Limited and Samsung Electronics Co., Ltd. 
+
+ 10.11 
+ 
+ Joinder and Amendment Agreement to the Joint Venture Agreement, dated as of May 27, 2014, by and among Samsung Fine Chemicals Co., Ltd., SunEdison Products Singapore Pte. Ltd. and SunEdison Semiconductor B.V. 
+
+ 10.12 
+ 
+ Credit Agreement, dated as of May 27, 2014, by and among SunEdison Semiconductor B.V., SunEdison Semiconductor Limited, Goldman Sachs Bank USA, Macquarie Capital (USA) Inc., Citibank, N.A. and Deutsche Bank AG New York
+Branch. 
+
+ 10.13 
+ 
+ Form of indemnification agreement by and between SunEdison Semiconductor Limited and its directors and officers, previously filed as Exhibit 10.7 with SunEdison Semiconductor Limited&#146;s Amendment No. 5 to Form S-1 filed on
+April 15, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ 10.14 
+ 
+ Form of Restricted Stock Unit Agreement pursuant to the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan, previously filed as Exhibit 10.13 with SunEdison Semiconductor Limited&#146;s Amendment No. 4 to Form S-1 filed
+on March 21, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ 10.15 
+ 
+ Form of Stock Option Agreement pursuant to the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan, previously filed as Exhibit 10.22 with SunEdison Semiconductor Limited&#146;s Amendment No. 4 to Form S-1 filed on
+March 21, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ * 
+ Certain portions have been omitted pursuant to a confidential treatment request. Omitted information has been provided separately to the SEC. 
+ 14 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by
+the undersigned hereunto duly authorized. 
+
+ SUNEDISON SEMICONDUCTOR LIMITED 
+
+ By: 
+ 
+ /s/ Shaker Sadasivam 
+ 
+ Name: 
+ 
+ Shaker Sadasivam 
+ 
+ Title: 
+ 
+ President and Chief Executive Officer 
+ Date: June 2, 2014 
+
+ Exhibit Index 
+
+ Exhibit Number 
+ 
+ Description 
+
+ 10.1 
+ 
+ Separation Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.2 
+ 
+ CCZ and Diamond Coated Wire Licensing Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.3* 
+ 
+ Patent and Technology Cross-License Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.4 
+ 
+ Transition Services Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.5 
+ 
+ Tax Matters Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.6 
+ 
+ Registration Rights Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.7 
+ 
+ Technology Joint Development and Rights Agreement, dated as of May 27, 2014, by and between SunEdison Semiconductor Limited and SunEdison, Inc. 
+
+ 10.8 
+ 
+ Employment Agreement, dated as of May 28, 2014, by and between SunEdison Semiconductor Limited and Shaker Sadasivam 
+
+ 10.9 
+ 
+ Registration Rights Agreement, dated as of May 29, 2014, by and between SunEdison Semiconductor Limited and Samsung Fine Chemicals Co., Ltd. 
+
+ 10.10 
+ 
+ Registration Rights Agreement, dated as of May 29, 2014, by and between SunEdison Semiconductor Limited and Samsung Electronics Co., Ltd. 
+
+ 10.11 
+ 
+ Joinder and Amendment Agreement to the Joint Venture Agreement, dated as of May 27, 2014, by and among Samsung Fine Chemicals Co., Ltd., SunEdison Products Singapore Pte. Ltd. and SunEdison Semiconductor B.V. 
+
+ 10.12 
+ 
+ Credit Agreement, dated as of May 27, 2014, by and among SunEdison Semiconductor B.V., SunEdison Semiconductor Limited, Goldman Sachs Bank USA, Macquarie Capital (USA) Inc., Citibank, N.A. and Deutsche Bank AG New York
+Branch. 
+
+ 10.13 
+ 
+ Form of indemnification agreement by and between SunEdison Semiconductor Limited and its directors and officers, previously filed as Exhibit 10.7 with SunEdison Semiconductor Limited&#146;s Amendment No. 5 to Form S-1 filed on
+April 15, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ 10.14 
+ 
+ Form of Restricted Stock Unit Agreement pursuant to the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan, previously filed as Exhibit 10.13 with SunEdison Semiconductor Limited&#146;s Amendment No. 4 to Form S-1 filed
+on March 21, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ 10.15 
+ 
+ Form of Stock Option Agreement pursuant to the SunEdison Semiconductor Limited 2014 Long-Term Incentive Plan, previously filed as Exhibit 10.22 with SunEdison Semiconductor Limited&#146;s Amendment No. 4 to Form S-1 filed on
+March 21, 2014 (Reg. No. 333-191052) and incorporated herein by reference. 
+
+ * 
+ Certain portions have been omitted pursuant to a confidential treatment request. Omitted information has been provided separately to the SEC. 
+

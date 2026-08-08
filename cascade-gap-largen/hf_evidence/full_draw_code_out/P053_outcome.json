@@ -1,0 +1,58 @@
+{
+  "case_id": "P053",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 filing (May 2018); §363 sale of substantially all assets to PennEnergy Resources for $600.5mm; deregistered Nov 2018",
+      "rationale": "The slice documents a realized whole-entity insolvency trajectory: FY2017 net loss of ~$64.2mm, $21.4mm impairment, going-concern doubt, Chapter 11 on May 18, 2018, and a §363 sale of substantially all assets to a third-party operator with equity holders facing \"little or no recovery.\" However, these facts describe financial distress and disposition without attributing the failure to any specific product/process interface disruption (p4) or any operations-versus-organization/culture fracture (p5). The slice provides no evidence identifying either interface as a driver, so both pathways are coded uncertain rather than 0, given the deep documented distress but absence of interface-specific detail."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11; §363 sale of substantially all assets for $600.5M; deregistered",
+      "rationale": "The slice documents FY2017 going-concern doubt, a $64.2M net loss, Chapter 11 filing in May 2018, and a September 2018 §363 sale of substantially all assets to PennEnergy Resources for $600.5M, followed by deregistration. No realized-outcome evidence is given of product/process interface disruption (p4) or of operations fracturing against organization/people/culture (p5); the record is whole-entity insolvency and disposition without those interface-specific pathways."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$600.5 million sale of substantially all assets in Chapter 11'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record documents a $64.2 million net loss, going-concern doubt, Chapter 11 filing, and the September 2018 sale of substantially all assets for $600.5 million. It does not specifically document acquired-product/operating-process incoherence, so p4 is 0, nor does it document operations breaking against people, management, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 filing (May 2018); \\u00a7363 sale of substantially all assets to PennEnergy Resources for $600.5mm; deregistered Nov 2018\", \"rationale\": \"The slice documents a realized whole-entity insolvency trajectory: FY2017 net loss of ~$64.2mm, $21.4mm impairment, going-concern doubt, Chapter 11 on May 18, 2018, and a \\u00a7363 sale of substantially all assets to a third-party operator with equity holders facing \\\"little or no recovery.\\\" However, these facts describe financial distress and disposition without attributing the failure to any specific product/process interface disruption (p4) or any operations-versus-organization/culture fracture (p5). The slice provides no evidence identifying either interface as a driver, so both pathways are coded uncertain rather than 0, given the deep documented distress but absence of interface-specific detail.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11; §363 sale of substantially all assets for $600.5M; deregistered\",\n  \"rationale\": \"The slice documents FY2017 going-concern doubt, a $64.2M net loss, Chapter 11 filing in May 2018, and a September 2018 §363 sale of substantially all assets to PennEnergy Resources for $600.5M, followed by deregistration. No realized-outcome evidence is given of product/process interface disruption (p4) or of operations fracturing against organization/people/culture (p5); the record is whole-entity insolvency and disposition without those interface-specific pathways.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$600.5 million sale of substantially all assets in Chapter 11\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents a $64.2 million net loss, going-concern doubt, Chapter 11 filing, and the September 2018 sale of substantially all assets for $600.5 million. It does not specifically document acquired-product/operating-process incoherence, so p4 is 0, nor does it document operations breaking against people, management, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

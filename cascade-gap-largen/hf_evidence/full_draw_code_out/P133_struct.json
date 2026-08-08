@@ -1,0 +1,85 @@
+{
+  "case_id": "P133",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45: A customer-facing retail asset base (inventory, equipment, permits, assigned supplier/landlord agreements, goodwill for 1,743 stores) crossed the boundary, but the operational substrate needed to run wireless retail was not carried by the estate's own processes — the buyer's obligation was conditioned on entering definitive agreements with Sprint for a co-branded \"store-within-a-store\" format (EX-99.1), showing the product crossed without an intact aligned operating process. gap_56: Employees did not transfer automatically; all employees other than \"Transferred Employees\" and all benefit plans were excluded (EX-10.2 §2.2(h)), and the buyer could offer employment only in its sole discretion (§7.7), so processes/assets moved without the people/organization transferring coherently. gap_mitigated: The Sprint Term Sheet co-branded operating arrangement (EX-99.1) was a documented closing-condition operating agreement allocating the shared operational substrate, so the gap was contractually absorbed at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the §363 Acquired Assets package moved store-level customer-facing assets together with their operating substrate: inventory, store equipment, assigned supplier/landlord agreements, permits, petty cash, and associated goodwill for the 1,743 Acquired Stores crossed as one bundle (EX-10.2 §2.1; closing 8-K Item 2.01). gap_56=1 because that same operating package transferred while people/organization did not: all employees other than discretionary “Transferred Employees,” and all employee benefit plans, were Excluded Assets, and the buyer only “may offer employment… in its sole discretion” on its own terms (§2.2(h), §7.7)—a structural process-without-org mismatch at closing, with no TSA or equivalent allocating shared workforce substrate documented."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The 1,743-store customer-facing asset base transferred together with store equipment, permits, inventory, and assigned supplier and landlord agreements, so no product-process mismatch is documented at closing (Form 8-K EX-10.2 §§2.1-2.2; Form 8-K Item 2.01). In contrast, employees did not transfer automatically, employment offers were solely at the buyer's discretion, and benefit plans and all non-transferred employees remained excluded, creating a closing-time process-organization gap (Form 8-K EX-10.2 §§2.2(h), 7.7). The Sprint store-within-a-store arrangement allocated co-branded retail space and offerings but is not documented as absorbing the employee or organizational discontinuity (Form 8-K EX-99.1)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45: A customer-facing retail asset base (inventory, equipment, permits, assigned supplier/landlord agreements, goodwill for 1,743 stores) crossed the boundary, but the operational substrate needed to run wireless retail was not carried by the estate's own processes \\u2014 the buyer's obligation was conditioned on entering definitive agreements with Sprint for a co-branded \\\"store-within-a-store\\\" format (EX-99.1), showing the product crossed without an intact aligned operating process. gap_56: Employees did not transfer automatically; all employees other than \\\"Transferred Employees\\\" and all benefit plans were excluded (EX-10.2 \\u00a72.2(h)), and the buyer could offer employment only in its sole discretion (\\u00a77.7), so processes/assets moved without the people/organization transferring coherently. gap_mitigated: The Sprint Term Sheet co-branded operating arrangement (EX-99.1) was a documented closing-condition operating agreement allocating the shared operational substrate, so the gap was contractually absorbed at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the §363 Acquired Assets package moved store-level customer-facing assets together with their operating substrate: inventory, store equipment, assigned supplier/landlord agreements, permits, petty cash, and associated goodwill for the 1,743 Acquired Stores crossed as one bundle (EX-10.2 §2.1; closing 8-K Item 2.01). gap_56=1 because that same operating package transferred while people/organization did not: all employees other than discretionary “Transferred Employees,” and all employee benefit plans, were Excluded Assets, and the buyer only “may offer employment… in its sole discretion” on its own terms (§2.2(h), §7.7)—a structural process-without-org mismatch at closing, with no TSA or equivalent allocating shared workforce substrate documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The 1,743-store customer-facing asset base transferred together with store equipment, permits, inventory, and assigned supplier and landlord agreements, so no product-process mismatch is documented at closing (Form 8-K EX-10.2 §§2.1-2.2; Form 8-K Item 2.01). In contrast, employees did not transfer automatically, employment offers were solely at the buyer's discretion, and benefit plans and all non-transferred employees remained excluded, creating a closing-time process-organization gap (Form 8-K EX-10.2 §§2.2(h), 7.7). The Sprint store-within-a-store arrangement allocated co-branded retail space and offerings but is not documented as absorbing the employee or organizational discontinuity (Form 8-K EX-99.1).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

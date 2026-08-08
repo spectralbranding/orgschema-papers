@@ -1,0 +1,85 @@
+{
+  "case_id": "P221",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction transferred the Target Assets (T4) into the acquirer's legal vehicle, but the operational processes (T5) did not transfer; instead, they were accessed via a Services Agreement with EVOC, creating a gap_45. Furthermore, the management team (T6) was newly constituted (Chazen/Stavros) and did not include the EVOC employees running the day-to-day operations, creating a gap_56. Both gaps were mitigated at closing by the Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the Target Assets (Karnes, Giddings, Ironwood interest) crossed into Pace LLC/Magnolia as the owned production base while day-to-day operating processes did not transfer and instead remained with EVOC under the concurrent Services Agreement; the proxy states TPGE 'will not be involved in the day-to-day operations of the Target Assets.' gap_56=0 because those processes and the ~100 dedicated EVOC field/technical employees stayed together at the seller affiliate under the same Services Agreement rather than processes moving without their operators; none of the EVOC personnel became company executive officers, and the new Chazen/Stavros management team was externally constituted. The Services Agreement (fixed fee, ~5-year term, transition-services tail) contractually absorbed the product-process separation at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Target Assets crossed into Pace LLC, while day-to-day field, administrative, and back-office processes remained with EVOC and were supplied under a fixed-term Services Agreement, documenting a product-versus-process gap at closing. That gap was contractually absorbed because the Services Agreement required EVOC to provide services identical to those historically used to operate the assets. No separate process-versus-organization gap is documented: EVOC supplied both the operating processes and approximately 100 dedicated operating, technical, and field-level employees under the same agreement and under the Company's management direction."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"replace\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction transferred the Target Assets (T4) into the acquirer's legal vehicle, but the operational processes (T5) did not transfer; instead, they were accessed via a Services Agreement with EVOC, creating a gap_45. Furthermore, the management team (T6) was newly constituted (Chazen/Stavros) and did not include the EVOC employees running the day-to-day operations, creating a gap_56. Both gaps were mitigated at closing by the Services Agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the Target Assets (Karnes, Giddings, Ironwood interest) crossed into Pace LLC/Magnolia as the owned production base while day-to-day operating processes did not transfer and instead remained with EVOC under the concurrent Services Agreement; the proxy states TPGE 'will not be involved in the day-to-day operations of the Target Assets.' gap_56=0 because those processes and the ~100 dedicated EVOC field/technical employees stayed together at the seller affiliate under the same Services Agreement rather than processes moving without their operators; none of the EVOC personnel became company executive officers, and the new Chazen/Stavros management team was externally constituted. The Services Agreement (fixed fee, ~5-year term, transition-services tail) contractually absorbed the product-process separation at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Target Assets crossed into Pace LLC, while day-to-day field, administrative, and back-office processes remained with EVOC and were supplied under a fixed-term Services Agreement, documenting a product-versus-process gap at closing. That gap was contractually absorbed because the Services Agreement required EVOC to provide services identical to those historically used to operate the assets. No separate process-versus-organization gap is documented: EVOC supplied both the operating processes and approximately 100 dedicated operating, technical, and field-level employees under the same agreement and under the Company's management direction.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

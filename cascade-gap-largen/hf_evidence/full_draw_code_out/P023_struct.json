@@ -1,0 +1,85 @@
+{
+  "case_id": "P023",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction carved out a subset of properties (T4) into a new entity (T3), but the operational processes (T5) to manage the malls did not transfer, creating a structural gap between the product and its processes (gap_45 = 1). This gap was mitigated at closing via property management and transition services agreements with the parent company."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice expressly states the 98 mall/strip properties (T4) transferred to SpinCo while property-management and strip-center support processes (T5) remained at SPG and were only supplied under property-management agreements (2.5% fee, two-year term) and a transition services agreement. gap_56=0 because those operating processes did not leave the SPG organization that already ran them; the strip-center team that did move to SpinCo moved as people (T6), so there was no processes-without-organization mismatch at closing. Both gaps’ substrate was contractually absorbed at closing via the PMAs, TSA, separation, tax-matters and employee-matters agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The transferred portfolio comprised 98 properties, but SPG retained the mall-management processes and supplied them under two-year property-management agreements; SPG also provided strip-center support and corporate services transitionally, documenting a T4-T5 gap at closing. That gap was contractually absorbed through the property-management and transition-services agreements. No separate T5-T6 gap is documented because the retained SPG processes continued to be performed by SPG personnel, while the strip-center team became SpinCo employees and SpinCo assembled its own executive team."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction carved out a subset of properties (T4) into a new entity (T3), but the operational processes (T5) to manage the malls did not transfer, creating a structural gap between the product and its processes (gap_45 = 1). This gap was mitigated at closing via property management and transition services agreements with the parent company.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice expressly states the 98 mall/strip properties (T4) transferred to SpinCo while property-management and strip-center support processes (T5) remained at SPG and were only supplied under property-management agreements (2.5% fee, two-year term) and a transition services agreement. gap_56=0 because those operating processes did not leave the SPG organization that already ran them; the strip-center team that did move to SpinCo moved as people (T6), so there was no processes-without-organization mismatch at closing. Both gaps’ substrate was contractually absorbed at closing via the PMAs, TSA, separation, tax-matters and employee-matters agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The transferred portfolio comprised 98 properties, but SPG retained the mall-management processes and supplied them under two-year property-management agreements; SPG also provided strip-center support and corporate services transitionally, documenting a T4-T5 gap at closing. That gap was contractually absorbed through the property-management and transition-services agreements. No separate T5-T6 gap is documented because the retained SPG processes continued to be performed by SPG personnel, while the strip-center team became SpinCo employees and SpinCo assembled its own executive team.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-N",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

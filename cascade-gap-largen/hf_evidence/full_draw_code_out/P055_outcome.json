@@ -1,0 +1,58 @@
+{
+  "case_id": "P055",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Composites-segment EBIT rose 15% from $175M (2010) to $201M (2011); business retained and integration completed in 2010",
+      "rationale": "p4=0: no product/process incoherence is documented; integration of the acquired business was reported complete in 2010 and the one plant sale (Capivari, Brazil, $9M) is described as ordinary rationalization of overlap, with segment EBIT rising, not disruption. p5=0: no process/organization fracture is documented; instead a former Saint-Gobain executive assumed senior line responsibility (Group President, Composite Solutions since December 2010), indicating orderly organizational absorption. The residual ~€123M tax contingency is a pre-closing indemnified claim, not a realized post-deal operating disruption. Overall the realized record shows retention, completed integration, and rising segment EBIT."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "retained & integrated; Composites EBIT +15% ($175M→$201M)",
+      "rationale": "p4 is coded 0 because the only product/process item documented is the May 2011 Capivari plant sale for $9M, explicitly framed as post-integration rationalization of the 2007 Acquisition, not as product-line/operations incoherence; integration work was reported completed in 2010 and the reinforcements business remained inside Composites with rising segment EBIT. p5 is coded 0 because the slice documents continuity at the people interface (a former Saint-Gobain reinforcements executive became Group President, Composite Solutions in December 2010) and records no operations-vs-organization fracture."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Composites EBIT increased 15%, from $175M in 2010 to $201M in 2011'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice reports that integration was completed in 2010 and that the business was retained; the sale of the Capivari facility for $9 million is documented as integration-related rationalization, not as product/process incoherence or disruption. At the process/organization interface, a former Saint-Gobain executive became Group President of Composite Solutions, with no documented management, workforce, or cultural fracture.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Composites-segment EBIT rose 15% from $175M (2010) to $201M (2011); business retained and integration completed in 2010\", \"rationale\": \"p4=0: no product/process incoherence is documented; integration of the acquired business was reported complete in 2010 and the one plant sale (Capivari, Brazil, $9M) is described as ordinary rationalization of overlap, with segment EBIT rising, not disruption. p5=0: no process/organization fracture is documented; instead a former Saint-Gobain executive assumed senior line responsibility (Group President, Composite Solutions since December 2010), indicating orderly organizational absorption. The residual ~\\u20ac123M tax contingency is a pre-closing indemnified claim, not a realized post-deal operating disruption. Overall the realized record shows retention, completed integration, and rising segment EBIT.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"retained & integrated; Composites EBIT +15% ($175M→$201M)\",\n  \"rationale\": \"p4 is coded 0 because the only product/process item documented is the May 2011 Capivari plant sale for $9M, explicitly framed as post-integration rationalization of the 2007 Acquisition, not as product-line/operations incoherence; integration work was reported completed in 2010 and the reinforcements business remained inside Composites with rising segment EBIT. p5 is coded 0 because the slice documents continuity at the people interface (a former Saint-Gobain reinforcements executive became Group President, Composite Solutions in December 2010) and records no operations-vs-organization fracture.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Composites EBIT increased 15%, from $175M in 2010 to $201M in 2011\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice reports that integration was completed in 2010 and that the business was retained; the sale of the Capivari facility for $9 million is documented as integration-related rationalization, not as product/process incoherence or disruption. At the process/organization interface, a former Saint-Gobain executive became Group President of Composite Solutions, with no documented management, workforce, or cultural fracture.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

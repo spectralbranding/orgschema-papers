@@ -1,0 +1,85 @@
+{
+  "case_id": "P096",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The drawn accession is a charter/bylaw correction (8-K Item 5.03) that merely restates a defined term, not a transaction crossing an ownership boundary. Therefore, no assets, processes, or people transferred, resulting in no structural gaps at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice shows the customer-facing portfolio (296 industrial buildings / ~57.2M sq ft, including 2013 acquisitions) crossed into consolidated company ownership while property-level operating processes remained outside with Dividend Capital Property Management LLC and day-to-day operating/acquisition activities remained with the external Advisor, producing a documented T4-vs-T5 structural mismatch at closing (gap_45=1). T5 and T6 did not separate: the company had 'no employees,' and both the processes and the key personnel who run them sat together with the Advisor and related-party Property Manager, so gap_56=0; the Advisory Agreement and property-management fee arrangements contractually allocated that shared external substrate (gap_mitigated=yes)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "null",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing assets crossed the ownership boundary through serial acquisitions of 75 buildings and the partner’s Fund I equity interest, becoming part of the consolidated industrial portfolio, while property management, leasing, and day-to-day operations remained with the external Advisor and related-party Property Manager rather than transferring with those assets [SRC: SEC accession 0001193125-14-058795, 10-K FY2013]. This product-versus-process separation establishes gap_45, but it was contractually absorbed through the Advisory Agreement and property-management arrangements. Gap_56 is zero because the external operational processes remained aligned with the external personnel who performed them; the company had no employees and relied on the Advisor’s key personnel to conduct those activities [SRC: SEC accession 0001193125-14-058795, 10-K FY2013]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"null\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"null\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The drawn accession is a charter/bylaw correction (8-K Item 5.03) that merely restates a defined term, not a transaction crossing an ownership boundary. Therefore, no assets, processes, or people transferred, resulting in no structural gaps at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice shows the customer-facing portfolio (296 industrial buildings / ~57.2M sq ft, including 2013 acquisitions) crossed into consolidated company ownership while property-level operating processes remained outside with Dividend Capital Property Management LLC and day-to-day operating/acquisition activities remained with the external Advisor, producing a documented T4-vs-T5 structural mismatch at closing (gap_45=1). T5 and T6 did not separate: the company had 'no employees,' and both the processes and the key personnel who run them sat together with the Advisor and related-party Property Manager, so gap_56=0; the Advisory Agreement and property-management fee arrangements contractually allocated that shared external substrate (gap_mitigated=yes).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing assets crossed the ownership boundary through serial acquisitions of 75 buildings and the partner’s Fund I equity interest, becoming part of the consolidated industrial portfolio, while property management, leasing, and day-to-day operations remained with the external Advisor and related-party Property Manager rather than transferring with those assets [SRC: SEC accession 0001193125-14-058795, 10-K FY2013]. This product-versus-process separation establishes gap_45, but it was contractually absorbed through the Advisory Agreement and property-management arrangements. Gap_56 is zero because the external operational processes remained aligned with the external personnel who performed them; the company had no employees and relied on the Advisor’s key personnel to conduct those activities [SRC: SEC accession 0001193125-14-058795, 10-K FY2013].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "null",
+    "sigma_T3": "null",
+    "sigma_T4": "N-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

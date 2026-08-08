@@ -1,0 +1,58 @@
+{
+  "case_id": "P108",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "1",
+      "performance_metric": "net loss attributable to company of $(9.6)M FY2012 / $(32.6)M FY2011; CDO AUM placed into contractual run-off",
+      "rationale": "p4=1: the slice documents realized product/process incoherence — the CDO management-contract product line could not be aligned with the going-forward platform and was placed into declared contractual run-off (\"We do not expect to issue new CDOs so we expect CDO AUM to continue to decline\"), while the \"Deerfield Capital Management\" trade name was written off ($1.8M impairment) and discontinued for new products, with growth migrating away to the CLO business. p5=uncertain: the slice reports restructuring charges ($5.9M FY2012, $3.7M FY2011) but provides no specific documentation of an operations-vs-organization/people/culture fracture, so a process/organization pathway cannot be determined. t2=1: the value-capture logics diverged over time — the CDO (drawn-transaction) model was wound down/run-off while the fee-based loan-based CLO model grew, showing incompatibility of the two business models within the window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net loss attributable to CIFC Corp. was $(9.6) million for FY2012 and $(32.6) million for FY2011",
+      "rationale": "The slice details the write-off of the Deerfield trade name and the run-off of the CDO business, but does not document any specific disruption at the product/process interface (p4_pathway = 0). Furthermore, there is no evidence of organizational or cultural fracture during the integration (p5_pathway = 0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net losses attributable to CIFC Corp. of $32.6 million in FY2011 and $9.6 million in FY2012",
+      "rationale": "The CDO business declined because its scheduled reinvestment periods ended and was placed into contractual run-off, while loan-based CLO AUM grew; this does not document a product/process alignment failure. The trade-name write-off and restructuring charges document refocusing and rebranding, but the slice reports no realized fracture between operations and personnel, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"1\", \"performance_metric\": \"net loss attributable to company of $(9.6)M FY2012 / $(32.6)M FY2011; CDO AUM placed into contractual run-off\", \"rationale\": \"p4=1: the slice documents realized product/process incoherence \\u2014 the CDO management-contract product line could not be aligned with the going-forward platform and was placed into declared contractual run-off (\\\"We do not expect to issue new CDOs so we expect CDO AUM to continue to decline\\\"), while the \\\"Deerfield Capital Management\\\" trade name was written off ($1.8M impairment) and discontinued for new products, with growth migrating away to the CLO business. p5=uncertain: the slice reports restructuring charges ($5.9M FY2012, $3.7M FY2011) but provides no specific documentation of an operations-vs-organization/people/culture fracture, so a process/organization pathway cannot be determined. t2=1: the value-capture logics diverged over time \\u2014 the CDO (drawn-transaction) model was wound down/run-off while the fee-based loan-based CLO model grew, showing incompatibility of the two business models within the window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net loss attributable to CIFC Corp. was $(9.6) million for FY2012 and $(32.6) million for FY2011\",\n  \"rationale\": \"The slice details the write-off of the Deerfield trade name and the run-off of the CDO business, but does not document any specific disruption at the product/process interface (p4_pathway = 0). Furthermore, there is no evidence of organizational or cultural fracture during the integration (p5_pathway = 0).\"",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net losses attributable to CIFC Corp. of $32.6 million in FY2011 and $9.6 million in FY2012\",\n  \"rationale\": \"The CDO business declined because its scheduled reinvestment periods ended and was placed into contractual run-off, while loan-based CLO AUM grew; this does not document a product/process alignment failure. The trade-name write-off and restructuring charges document refocusing and rebranding, but the slice reports no realized fracture between operations and personnel, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

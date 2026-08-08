@@ -1,0 +1,58 @@
+{
+  "case_id": "P116",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$97.4M net income to common (FY2016); material weakness forced restatement of 2015 and interim 2015-2016 financials",
+      "rationale": "p5 is coded 1 because the slice documents realized process/organization fracture: a 2015 headquarters relocation from Scottsdale to Dallas costing $7.1M in restructuring/employee-separation charges, plus $2.2M of accelerated compensation tied to the departure of certain executive officers — operations reorganization breaking against people/management. p4 is uncertain because the internal-control material weakness over goodwill accounting is an accounting/process control failure, but the slice does not document a product-line/operations incoherence at the product/process interface. t1 and t2 are uncertain because the slice, by design, contains no information about the controlling-intent archetype or the two business models' value-capture logics."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income attributable to common stockholders was $97,446 thousand for fiscal year 2016",
+      "rationale": "The evidence slice does not document any disruption at the product/process interface, so p4_pathway is coded as 0. While the slice notes organizational disruption via a headquarters relocation, employee separation costs, and executive departures, it does not document that the integration of operations broke against the organization over time, leading to a p5_pathway code of 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$97.4 million net income attributable to common stockholders in 2016'}",
+      "rationale": "{'type': 'string', 'enum': 'No realized product-line or operating-process incoherence is documented; by year-end 2016 the registrant operated 2,615 properties with approximately 98.2% occupancy. The headquarters relocation, $7.1 million of restructuring charges, employee separations, and executive departures document organizational disruption, but the slice does not show that operating processes fractured against people, management, or culture. The accounting-control weakness caused financial-statement restatements but was remediated by December 31, 2016 and is not documented as a process/organization integration failure.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$97.4M net income to common (FY2016); material weakness forced restatement of 2015 and interim 2015-2016 financials\", \"rationale\": \"p5 is coded 1 because the slice documents realized process/organization fracture: a 2015 headquarters relocation from Scottsdale to Dallas costing $7.1M in restructuring/employee-separation charges, plus $2.2M of accelerated compensation tied to the departure of certain executive officers \\u2014 operations reorganization breaking against people/management. p4 is uncertain because the internal-control material weakness over goodwill accounting is an accounting/process control failure, but the slice does not document a product-line/operations incoherence at the product/process interface. t1 and t2 are uncertain because the slice, by design, contains no information about the controlling-intent archetype or the two business models' value-capture logics.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income attributable to common stockholders was $97,446 thousand for fiscal year 2016\",\n  \"rationale\": \"The evidence slice does not document any disruption at the product/process interface, so p4_pathway is coded as 0. While the slice notes organizational disruption via a headquarters relocation, employee separation costs, and executive departures, it does not document that the integration of operations broke against the organization over time, leading to a p5_pathway code of 0.\"\n}\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$97.4 million net income attributable to common stockholders in 2016\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No realized product-line or operating-process incoherence is documented; by year-end 2016 the registrant operated 2,615 properties with approximately 98.2% occupancy. The headquarters relocation, $7.1 million of restructuring charges, employee separations, and executive departures document organizational disruption, but the slice does not show that operating processes fractured against people, management, or culture. The accounting-control weakness caused financial-statement restatements but was remediated by December 31, 2016 and is not documented as a process/organization integration failure.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "1",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": true,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

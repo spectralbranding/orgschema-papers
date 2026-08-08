@@ -1,0 +1,85 @@
+{
+  "case_id": "P324",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company merger: the entire CH2M legal vehicle survived as a wholly-owned Jacobs subsidiary, so the customer-facing services (T4) crossed the boundary together with the operations and people that produce them (no carve-out, \"the entire corporate entity — not a carved-out business unit — was the transaction's subject\"), giving gap_45 = 0. The people/organization (T6) moved coherently alongside the operational substrate: non-union Continuing Employees carried forward under contractual pay/benefit-continuity terms and union employees remained under their CBAs, so process and organization transferred together — gap_56 = 0. Replacement of CH2M's board and named executives (T1 replace) is an intent-tier change, not a T5-vs-T6 structural mismatch. No transition-services or shared-substrate agreement is described because none was needed in a whole-company merger, hence gap_mitigated = NA."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company reverse triangular merger in which CH2M survived intact as a wholly-owned Jacobs subsidiary, so the customer-facing services (T4) and the operations that deliver them (T5) crossed together with no carved-out product-vs-process split at closing (gap_45=0). Rank-and-file Continuing Employees and CBA-covered employees were carried forward under contractual pay/benefit continuity while only the board and named officers were replaced, so processes did not transfer without the operating organization (gap_56=0); the DEFM14A expressly describes no TSA or shared-substrate bridge because none was structurally required."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The whole-company merger transferred CH2M’s customer-facing engineering and related services together with the surviving legal entity and its operations, rather than carving the products away from their operating substrate, so gap_45 is 0 [SRC: SEC accession 0001193125-17-338957, DEFM14A cover letter, “Summary,” and “Jacobs’ Reasons for the Merger”]. Rank-and-file employees were carried forward under contractual compensation and benefit-continuity provisions, while CH2M’s board and named executive officers were replaced by new directors and officers; this supports a partial organizational transfer but does not document processes crossing without an organization aligned to run them, so gap_56 is 0 [SRC: SEC accession 0001193125-17-338957, DEFM14A “The Merger Agreement — Employee Benefits”; SEC accession 0001104659-17-073715, Form 8-K Item 5.02]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company merger: the entire CH2M legal vehicle survived as a wholly-owned Jacobs subsidiary, so the customer-facing services (T4) crossed the boundary together with the operations and people that produce them (no carve-out, \\\"the entire corporate entity \\u2014 not a carved-out business unit \\u2014 was the transaction's subject\\\"), giving gap_45 = 0. The people/organization (T6) moved coherently alongside the operational substrate: non-union Continuing Employees carried forward under contractual pay/benefit-continuity terms and union employees remained under their CBAs, so process and organization transferred together \\u2014 gap_56 = 0. Replacement of CH2M's board and named executives (T1 replace) is an intent-tier change, not a T5-vs-T6 structural mismatch. No transition-services or shared-substrate agreement is described because none was needed in a whole-company merger, hence gap_mitigated = NA.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company reverse triangular merger in which CH2M survived intact as a wholly-owned Jacobs subsidiary, so the customer-facing services (T4) and the operations that deliver them (T5) crossed together with no carved-out product-vs-process split at closing (gap_45=0). Rank-and-file Continuing Employees and CBA-covered employees were carried forward under contractual pay/benefit continuity while only the board and named officers were replaced, so processes did not transfer without the operating organization (gap_56=0); the DEFM14A expressly describes no TSA or shared-substrate bridge because none was structurally required.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The whole-company merger transferred CH2M’s customer-facing engineering and related services together with the surviving legal entity and its operations, rather than carving the products away from their operating substrate, so gap_45 is 0 [SRC: SEC accession 0001193125-17-338957, DEFM14A cover letter, “Summary,” and “Jacobs’ Reasons for the Merger”]. Rank-and-file employees were carried forward under contractual compensation and benefit-continuity provisions, while CH2M’s board and named executive officers were replaced by new directors and officers; this supports a partial organizational transfer but does not document processes crossing without an organization aligned to run them, so gap_56 is 0 [SRC: SEC accession 0001193125-17-338957, DEFM14A “The Merger Agreement — Employee Benefits”; SEC accession 0001104659-17-073715, Form 8-K Item 5.02].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

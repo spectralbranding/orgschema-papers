@@ -1,0 +1,58 @@
+{
+  "case_id": "P313",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered ~11 days after closing; no separate legacy-business disclosure through FY2021",
+      "rationale": "The slice documents only that Rowan deregistered within ~2 weeks of closing and that the surviving registrant reports on a consolidated basis (Floaters/Jackups) with no segment or operating disclosure specific to the legacy Rowan business, the only references being consolidation of retirement/savings plans. There is thus no realized-outcome evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5). Because the slice provides no separately disclosed post-deal trajectory for the acquired business, both pathways are uncertain per the no-record rule rather than codeable as 0 with affirmative evidence of no disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice indicates that Rowan deregistered shortly after the transaction and the surviving combined registrant reports on a consolidated basis without separate segment disclosure for the legacy Rowan business. Consequently, there is no documented evidence of product/process (p4) or process/organization (p5) disruptions."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': \"Rowan ceased separate public reporting shortly after closing, while the surviving registrant's fiscal 2021 Form 10-K reported consolidated rig-type categories without separate financial or operating disclosure for legacy Rowan. Consequently, the slice provides no distinct 3–5-year evidence showing whether product/process or process/organization disruption occurred, so both pathways are uncertain.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered ~11 days after closing; no separate legacy-business disclosure through FY2021\", \"rationale\": \"The slice documents only that Rowan deregistered within ~2 weeks of closing and that the surviving registrant reports on a consolidated basis (Floaters/Jackups) with no segment or operating disclosure specific to the legacy Rowan business, the only references being consolidation of retirement/savings plans. There is thus no realized-outcome evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5). Because the slice provides no separately disclosed post-deal trajectory for the acquired business, both pathways are uncertain per the no-record rule rather than codeable as 0 with affirmative evidence of no disruption.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice indicates that Rowan deregistered shortly after the transaction and the surviving combined registrant reports on a consolidated basis without separate segment disclosure for the legacy Rowan business. Consequently, there is no documented evidence of product/process (p4) or process/organization (p5) disruptions.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Rowan ceased separate public reporting shortly after closing, while the surviving registrant's fiscal 2021 Form 10-K reported consolidated rig-type categories without separate financial or operating disclosure for legacy Rowan. Consequently, the slice provides no distinct 3–5-year evidence showing whether product/process or process/organization disruption occurred, so both pathways are uncertain.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

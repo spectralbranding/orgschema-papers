@@ -1,0 +1,58 @@
+{
+  "case_id": "P132",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net sales grew to $7,095 million and net income to $340 million in fiscal 2017",
+      "rationale": "The evidence slice notes that the company deliberately kept the Avintiv acquisition as a separate segment 'in order to maintain management continuity and limit business integration risk,' avoiding process/organization fracture. There is no documented evidence of product/process disruption, with only minor plant shutdown impairments and standard integration costs reported."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net sales $4.9–7.1bn, NI $86–340M FY15–17; no GW impairment",
+      "rationale": "The slice documents no product/process interface disruption: only minor $2–3M PP&E impairment charges tied to plant shutdowns in FY2015–16, with zero goodwill or indefinite-lived intangible impairments and rising operating income ($408M to $732M). On process/organization, the Company deliberately kept Avintiv as a segment-level carve-out ‘to maintain management continuity and limit business integration risk,’ incurred routine $10M business-integration/restructuring costs, and had not yet folded AEP into its internal-control framework by FY2017 year-end—none of which is framed as a realized fracture of operations against organization. Growth was driven by further retained acquisitions (Avintiv, AEP) and a rename to Berry Global, with no documented archetype or business-model incoherence."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income increased from $86 million in fiscal 2015 to $340 million in fiscal 2017",
+      "rationale": "No realized product/process incoherence is documented; the filings instead report rising operating income and no goodwill or indefinite-lived intangible impairment in fiscal 2015 or 2016. For the process/organization interface, Berry preserved Avintiv management to limit integration risk and incurred $10 million of integration costs, while AEP/Adchem controls had not yet been evaluated by fiscal 2017; these facts document cautious or incomplete integration, but not an organizational fracture or breakdown."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net sales grew to $7,095 million and net income to $340 million in fiscal 2017\",\n  \"rationale\": \"The evidence slice notes that the company deliberately kept the Avintiv acquisition as a separate segment 'in order to maintain management continuity and limit business integration risk,' avoiding process/organization fracture. There is no documented evidence of product/process disruption, with only minor plant shutdown impairments and standard integration costs reported.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net sales $4.9–7.1bn, NI $86–340M FY15–17; no GW impairment\",\n  \"rationale\": \"The slice documents no product/process interface disruption: only minor $2–3M PP&E impairment charges tied to plant shutdowns in FY2015–16, with zero goodwill or indefinite-lived intangible impairments and rising operating income ($408M to $732M). On process/organization, the Company deliberately kept Avintiv as a segment-level carve-out ‘to maintain management continuity and limit business integration risk,’ incurred routine $10M business-integration/restructuring costs, and had not yet folded AEP into its internal-control framework by FY2017 year-end—none of which is framed as a realized fracture of operations against organization. Growth was driven by further retained acquisitions (Avintiv, AEP) and a rename to Berry Global, with no documented archetype or business-model incoherence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income increased from $86 million in fiscal 2015 to $340 million in fiscal 2017\",\n  \"rationale\": \"No realized product/process incoherence is documented; the filings instead report rising operating income and no goodwill or indefinite-lived intangible impairment in fiscal 2015 or 2016. For the process/organization interface, Berry preserved Avintiv management to limit integration risk and incurred $10 million of integration costs, while AEP/Adchem controls had not yet been evaluated by fiscal 2017; these facts document cautious or incomplete integration, but not an organizational fracture or breakdown.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

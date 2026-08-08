@@ -1,0 +1,85 @@
+{
+  "case_id": "P099",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The registrant merged into Colony NorthStar Credit (surviving as CLNC), with three predecessor equity bases combining into one entity (CLNS ~37%, NS I ~32%, NS II ~31%) — a multi-party fusion (T1 mutual-replace, T2/T4 N-1, T3 terminate as the registrant ceased to exist). On gap_45: the customer-facing portfolio (T4, ~$1.77B CRE debt/equity/securities) crossed into the surviving entity via the Combination, but the registrant had no in-house operational processes to leave behind — \"all management, acquisition, asset-management and administrative processes ... resident in an external advisor,\" so product and its (externally-held) process substrate moved together into the combined entity or were licensed/accessed, not orphaned; no documented product-vs-process split at closing, hence 0. On gap_56: the registrant had \"no employees\" (T6 null) — processes were performed by the external advisor's people, and the advisor units were unwound within the Combination; there is no closing structure showing processes re-engineered while their people were left behind, hence 0. The Excluded Asset carve-out was itself paired with a Management Services Agreement placing the advisor over the liquidating trust, reinforcing process/people alignment at closing."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The registrant was an externally managed REIT with no employees (T5 and T6 null). It merged into Colony NorthStar Credit Real Estate, Inc. along with other entities, collapsing its portfolio (T4) and business model (T2) into the surviving entity (N-1). Since the registrant had no internal operations or employees to transfer, there is no structural mismatch (gap_45 or gap_56) at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The registrant merged into Colony NorthStar Credit, but one portfolio asset was expressly carved out and transferred to a liquidating trust rather than crossing into the survivor [8-K Items 2.01 and 8.01]. The registrant had no employees, while its management, acquisition, asset-management, and administrative processes resided in an external advisor; at closing, the registrant’s advisory relationships and advisor-held partnership units were unwound, with no replacement operating or transitional-services agreement documented for the assets entering the survivor [10-K FY2016; 8-K Item 2.01]. Because the processes and their personnel remained together in the external advisor rather than processes transferring without their operators, gap_56 is coded 0; the Management Services Agreement concerned only the excluded asset held by the liquidating trust and therefore did not mitigate the gap for the transferred portfolio [8-K Item 8.01]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The registrant merged into Colony NorthStar Credit (surviving as CLNC), with three predecessor equity bases combining into one entity (CLNS ~37%, NS I ~32%, NS II ~31%) \\u2014 a multi-party fusion (T1 mutual-replace, T2/T4 N-1, T3 terminate as the registrant ceased to exist). On gap_45: the customer-facing portfolio (T4, ~$1.77B CRE debt/equity/securities) crossed into the surviving entity via the Combination, but the registrant had no in-house operational processes to leave behind \\u2014 \\\"all management, acquisition, asset-management and administrative processes ... resident in an external advisor,\\\" so product and its (externally-held) process substrate moved together into the combined entity or were licensed/accessed, not orphaned; no documented product-vs-process split at closing, hence 0. On gap_56: the registrant had \\\"no employees\\\" (T6 null) \\u2014 processes were performed by the external advisor's people, and the advisor units were unwound within the Combination; there is no closing structure showing processes re-engineered while their people were left behind, hence 0. The Excluded Asset carve-out was itself paired with a Management Services Agreement placing the advisor over the liquidating trust, reinforcing process/people alignment at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The registrant was an externally managed REIT with no employees (T5 and T6 null). It merged into Colony NorthStar Credit Real Estate, Inc. along with other entities, collapsing its portfolio (T4) and business model (T2) into the surviving entity (N-1). Since the registrant had no internal operations or employees to transfer, there is no structural mismatch (gap_45 or gap_56) at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The registrant merged into Colony NorthStar Credit, but one portfolio asset was expressly carved out and transferred to a liquidating trust rather than crossing into the survivor [8-K Items 2.01 and 8.01]. The registrant had no employees, while its management, acquisition, asset-management, and administrative processes resided in an external advisor; at closing, the registrant’s advisory relationships and advisor-held partnership units were unwound, with no replacement operating or transitional-services agreement documented for the assets entering the survivor [10-K FY2016; 8-K Item 2.01]. Because the processes and their personnel remained together in the external advisor rather than processes transferring without their operators, gap_56 is coded 0; the Management Services Agreement concerned only the excluded asset held by the liquidating trust and therefore did not mitigate the gap for the transferred portfolio [8-K Item 8.01].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "N-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

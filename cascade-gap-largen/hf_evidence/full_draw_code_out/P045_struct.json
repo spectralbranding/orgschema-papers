@@ -1,0 +1,85 @@
+{
+  "case_id": "P045",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal contributed an entire wholly-owned Parker subsidiary into the JV, so product and process moved together: the fuel-nozzle product (T4) was contributed \"together with its product\" in the existing Clyde, New York producing facility (T5), giving gap_45=0. The ~300-person workforce of \"skilled assemblers, technicians, engineers\" was contributed alongside the facility \"Continuing its long history in the Clyde community,\" so processes and the organization/people running them (T6) moved together, giving gap_56=0. T1 is imprint-share and T3 is swap because a 50-50 JV in a new LLC vehicle places two non-related parents' intents jointly into a newly formed legal entity."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the producing operation was contributed together with its product: the JV is located in the existing Parker Gas Turbine Fuel Systems Division facility in Clyde, New York, and was created to produce the fuel-nozzle product line. gap_56 is 0 because the people who run the operation were contributed alongside the facility and product: the JV employs approximately 300 skilled assemblers, technicians, engineers, and other professionals continuing at Clyde. No product-vs-process or process-vs-organization structural mismatch is documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The fuel-nozzle product transferred together with the existing producing operation at Parker's Clyde facility, so no product-process mismatch is documented at closing. Approximately 300 assemblers, technicians, engineers, and other professionals were contributed alongside the facility and product, so no process-organization mismatch is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal contributed an entire wholly-owned Parker subsidiary into the JV, so product and process moved together: the fuel-nozzle product (T4) was contributed \\\"together with its product\\\" in the existing Clyde, New York producing facility (T5), giving gap_45=0. The ~300-person workforce of \\\"skilled assemblers, technicians, engineers\\\" was contributed alongside the facility \\\"Continuing its long history in the Clyde community,\\\" so processes and the organization/people running them (T6) moved together, giving gap_56=0. T1 is imprint-share and T3 is swap because a 50-50 JV in a new LLC vehicle places two non-related parents' intents jointly into a newly formed legal entity.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states the producing operation was contributed together with its product: the JV is located in the existing Parker Gas Turbine Fuel Systems Division facility in Clyde, New York, and was created to produce the fuel-nozzle product line. gap_56 is 0 because the people who run the operation were contributed alongside the facility and product: the JV employs approximately 300 skilled assemblers, technicians, engineers, and other professionals continuing at Clyde. No product-vs-process or process-vs-organization structural mismatch is documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The fuel-nozzle product transferred together with the existing producing operation at Parker's Clyde facility, so no product-process mismatch is documented at closing. Approximately 300 assemblers, technicians, engineers, and other professionals were contributed alongside the facility and product, so no process-organization mismatch is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

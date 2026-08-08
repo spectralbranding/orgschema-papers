@@ -1,0 +1,85 @@
+{
+  "case_id": "P084",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the downstream product bloc (refined fuels sold under Marathon/Speedway brands, ~5,100 branded outlets, ~1,350 Speedway stores) separated together with the processes that produce and deliver it (six refineries >1.1M bbl/day, ~9,600 miles of pipeline, LOOP interest, organized as three segments under MPC) — product and its operational processes crossed the ownership boundary as one coherent bloc. gap_56=0: those operational processes carried with them, as a bloc, the senior executive who ran the downstream business (Heminger) and a cohort of directors who had overseen it, so people/management aligned with the transferred processes at closing; the only shared corporate-function substrate (accounting, tax, treasury, IT, legal, HR) was contractually bridged for a fixed one-year period by the Transition Services Agreement rather than left mismatched. T1 coded 1-N as one integrated-oil controlling intent split into a distinct standalone downstream principal; T3 swap reflects the newly incorporated Delaware MPC legal vehicle. Note the correction: because both gap fields are 0, gap_mitigated is coded NA per the instructions."
+    },
+    "gemini": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a spin-off separating the downstream business (MPC) from the upstream business (Marathon Oil). The customer-facing products (refined fuels, retail outlets) and the operational processes (refineries, pipelines) were separated together into MPC, so there is no gap_45. The people and management (executives and directors) associated with the downstream business also transferred to MPC, so there is no gap_56."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the separated business’s customer-facing products (refined fuels to Marathon-branded outlets and Speedway stores) and its operational processes (six refineries, ~9,600 miles of pipelines, LOOP interest) both moved intact under the new MPC vehicle as one bloc, so no product-vs-process mismatch at closing (gap_45=0). The same bloc carried the senior executive (Heminger) and the cohort of directors who resigned MRO boards to join MPC, with the Employee Matters Agreement governing employee transfers, so processes and organization aligned at closing (gap_56=0); the TSA covered only temporary shared corporate-function services, not a structural gap in core T5/T6."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"1-N\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the downstream product bloc (refined fuels sold under Marathon/Speedway brands, ~5,100 branded outlets, ~1,350 Speedway stores) separated together with the processes that produce and deliver it (six refineries >1.1M bbl/day, ~9,600 miles of pipeline, LOOP interest, organized as three segments under MPC) \\u2014 product and its operational processes crossed the ownership boundary as one coherent bloc. gap_56=0: those operational processes carried with them, as a bloc, the senior executive who ran the downstream business (Heminger) and a cohort of directors who had overseen it, so people/management aligned with the transferred processes at closing; the only shared corporate-function substrate (accounting, tax, treasury, IT, legal, HR) was contractually bridged for a fixed one-year period by the Transition Services Agreement rather than left mismatched. T1 coded 1-N as one integrated-oil controlling intent split into a distinct standalone downstream principal; T3 swap reflects the newly incorporated Delaware MPC legal vehicle. Note the correction: because both gap fields are 0, gap_mitigated is coded NA per the instructions.\"}",
+    "gemini": "{\n\"sigma_T1\": \"1-N\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"1-N\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a spin-off separating the downstream business (MPC) from the upstream business (Marathon Oil). The customer-facing products (refined fuels, retail outlets) and the operational processes (refineries, pipelines) were separated together into MPC, so there is no gap_45. The people and management (executives and directors) associated with the downstream business also transferred to MPC, so there is no gap_56.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the separated business’s customer-facing products (refined fuels to Marathon-branded outlets and Speedway stores) and its operational processes (six refineries, ~9,600 miles of pipelines, LOOP interest) both moved intact under the new MPC vehicle as one bloc, so no product-vs-process mismatch at closing (gap_45=0). The same bloc carried the senior executive (Heminger) and the cohort of directors who resigned MRO boards to join MPC, with the Employee Matters Agreement governing employee transfers, so processes and organization aligned at closing (gap_56=0); the TSA covered only temporary shared corporate-function services, not a structural gap in core T5/T6.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "uncertain",
+    "sigma_T2": "subset",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": true,
+    "sigma_T5": true,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 5
+}

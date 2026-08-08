@@ -1,0 +1,58 @@
+{
+  "case_id": "P261",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "HGTV had approximately 82 million U.S. subscribers and 176 million internationally",
+      "rationale": "The slice documents that Scripps' flagship brands (HGTV, Food Network) were successfully maintained and folded into Discovery's U.S. and International Networks segments, with no reported disruption at the product/process interface (p4_pathway = 0). Furthermore, Scripps Networks Interactive persisted as a distinct legal subsidiary and debt co-obligor through 2021 without any documented fracture between operations and organizational culture (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; brands and legal entity retained through FY2021",
+      "rationale": "The slice documents that HGTV and Food Network remained listed as Discovery's prominent brands with specific U.S. and international subscriber counts as of December 31, 2021, and were folded into Discovery's two-segment U.S./International Networks reporting structure with no reported product-line or operations incoherence, so p4_pathway is 0. Scripps Networks Interactive, Inc. persisted as a distinct wholly owned legal subsidiary and debt co-obligor through 2021 with combined guarantor-group financials reported and no documented operations-vs-organization fracture, culture clash, or integration break, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "HGTV and Food Network each retained approximately 82 million U.S. subscribers in 2021",
+      "rationale": "No realized product/process disruption is documented; Discovery continued to identify HGTV and Food Network as prominent brands and reported substantial domestic and international distribution for both in FY2021. No realized process/organization fracture is documented; the acquired networks were incorporated into Discovery’s management-aligned U.S. Networks and International Networks segments, while Scripps remained a wholly owned subsidiary and debt co-obligor."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"HGTV had approximately 82 million U.S. subscribers and 176 million internationally\",\n  \"rationale\": \"The slice documents that Scripps' flagship brands (HGTV, Food Network) were successfully maintained and folded into Discovery's U.S. and International Networks segments, with no reported disruption at the product/process interface (p4_pathway = 0). Furthermore, Scripps Networks Interactive persisted as a distinct legal subsidiary and debt co-obligor through 2021 without any documented fracture between operations and organizational culture (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; brands and legal entity retained through FY2021\",\n  \"rationale\": \"The slice documents that HGTV and Food Network remained listed as Discovery's prominent brands with specific U.S. and international subscriber counts as of December 31, 2021, and were folded into Discovery's two-segment U.S./International Networks reporting structure with no reported product-line or operations incoherence, so p4_pathway is 0. Scripps Networks Interactive, Inc. persisted as a distinct wholly owned legal subsidiary and debt co-obligor through 2021 with combined guarantor-group financials reported and no documented operations-vs-organization fracture, culture clash, or integration break, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"HGTV and Food Network each retained approximately 82 million U.S. subscribers in 2021\",\n  \"rationale\": \"No realized product/process disruption is documented; Discovery continued to identify HGTV and Food Network as prominent brands and reported substantial domestic and international distribution for both in FY2021. No realized process/organization fracture is documented; the acquired networks were incorporated into Discovery’s management-aligned U.S. Networks and International Networks segments, while Scripps remained a wholly owned subsidiary and debt co-obligor.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

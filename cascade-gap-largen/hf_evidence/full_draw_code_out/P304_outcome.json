@@ -1,0 +1,58 @@
+{
+  "case_id": "P304",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$644.9M noncash impairment charges in FY2020; net income fell from $1.279B (2019) to $612.8M (2020)",
+      "rationale": "The slice documents impairment charges and a net-income decline explicitly attributed to a 2020 commodity demand-and-supply disruption associated with the COVID-19 pandemic and a share-price/market-cap decline — an external market shock, not a product/process integration failure (p4=0). It records organizational continuity (Terry K. Spencer continuing as President and CEO; the Partnership continuing as a wholly owned consolidated subsidiary) with no documented operations-vs-people/culture fracture (p5=0). No documented incoherence in controlling intent or business-model incompatibility appears; the combined business remained investment-grade rated and raised its dividend."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$644.9 million in noncash impairment charges",
+      "rationale": "The evidence slice attributes financial impacts to external market disruptions (COVID-19) rather than internal integration issues, providing no evidence of product/process incoherence (p4_pathway = 0). Additionally, the slice notes organizational continuity with the CEO remaining in place, and lacks any documentation of process/organization fracture (p5_pathway = 0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$644.9 million in noncash impairment charges in FY2020",
+      "rationale": "No realized product/process-interface disruption is documented; the impairments and earnings decline are attributed to the 2020 pandemic-related demand-and-supply disruption, not product-line or operational incoherence. No process/organization fracture is documented, and Terry K. Spencer remained President and CEO throughout the outcome window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"$644.9M noncash impairment charges in FY2020; net income fell from $1.279B (2019) to $612.8M (2020)\", \"rationale\": \"The slice documents impairment charges and a net-income decline explicitly attributed to a 2020 commodity demand-and-supply disruption associated with the COVID-19 pandemic and a share-price/market-cap decline \\u2014 an external market shock, not a product/process integration failure (p4=0). It records organizational continuity (Terry K. Spencer continuing as President and CEO; the Partnership continuing as a wholly owned consolidated subsidiary) with no documented operations-vs-people/culture fracture (p5=0). No documented incoherence in controlling intent or business-model incompatibility appears; the combined business remained investment-grade rated and raised its dividend.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$644.9 million in noncash impairment charges\",\n  \"rationale\": \"The evidence slice attributes financial impacts to external market disruptions (COVID-19) rather than internal integration issues, providing no evidence of product/process incoherence (p4_pathway = 0). Additionally, the slice notes organizational continuity with the CEO remaining in place, and lacks any documentation of process/organization fracture (p5_pathway = 0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$644.9 million in noncash impairment charges in FY2020\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; the impairments and earnings decline are attributed to the 2020 pandemic-related demand-and-supply disruption, not product-line or operational incoherence. No process/organization fracture is documented, and Terry K. Spencer remained President and CEO throughout the outcome window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

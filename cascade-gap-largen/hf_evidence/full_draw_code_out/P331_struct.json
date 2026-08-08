@@ -1,0 +1,85 @@
+{
+  "case_id": "P331",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition where SCANA became a wholly owned subsidiary of Dominion Energy. The product/asset (T4), processes (T5), and organization/people (T6) all transferred together, with explicit contractual commitments to maintain the headquarters and employee compensation/benefits. There is no evidence of a structural mismatch between the product and its processes, or between the processes and the organization."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary and closing 8-K state a whole-company reverse triangular merger in which SCANA (including SCE&G) survived as a wholly owned Dominion subsidiary, with legal vehicle, regulated utility product/asset, and people/management substrate all moving together. Merger Agreement Sections 5.06/5.16 contractually locked employee compensation, benefits, headquarters location, and continuity through 2019, so T4 product and T5 processes crossed aligned with T6 organization; no product-vs-process or process-vs-organization structural mismatch is documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the whole company, including SCE&G's regulated utility products/assets and operations, transferred together rather than through a carve-out, so no product-process mismatch is documented at closing [SEC accession 0001193125-18-193204, DEFM14A, \"The Merger Agreement\" and structural summary]. It also documents contractual employee, benefits, union-term, headquarters, and management-continuity provisions accompanying those operations, so no process-organization mismatch is documented [SEC accession 0001193125-18-193204, DEFM14A Annex A, \"Employee Matters\" and \"Additional Matters\"]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition where SCANA became a wholly owned subsidiary of Dominion Energy. The product/asset (T4), processes (T5), and organization/people (T6) all transferred together, with explicit contractual commitments to maintain the headquarters and employee compensation/benefits. There is no evidence of a structural mismatch between the product and its processes, or between the processes and the organization.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary and closing 8-K state a whole-company reverse triangular merger in which SCANA (including SCE&G) survived as a wholly owned Dominion subsidiary, with legal vehicle, regulated utility product/asset, and people/management substrate all moving together. Merger Agreement Sections 5.06/5.16 contractually locked employee compensation, benefits, headquarters location, and continuity through 2019, so T4 product and T5 processes crossed aligned with T6 organization; no product-vs-process or process-vs-organization structural mismatch is documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the whole company, including SCE&G's regulated utility products/assets and operations, transferred together rather than through a carve-out, so no product-process mismatch is documented at closing [SEC accession 0001193125-18-193204, DEFM14A, \\\"The Merger Agreement\\\" and structural summary]. It also documents contractual employee, benefits, union-term, headquarters, and management-continuity provisions accompanying those operations, so no process-organization mismatch is documented [SEC accession 0001193125-18-193204, DEFM14A Annex A, \\\"Employee Matters\\\" and \\\"Additional Matters\\\"].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P220",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no divestiture/impairment; Evergy Kansas Central FY2021 net income $488.5M (up from $224.1M in FY2020)",
+      "rationale": "The slice documents workforce continuity (4,930 employees, stable union agreements) and no reported operational-vs-organizational fracture, so p5 is coded 0 (none documented). No documented product/process (product-line vs operations) incoherence appears in the realized record, so p4 is 0. The presence of an activist-shareholder (Elliott) cooperation agreement listed as a material contract signals governance friction, which raises but does not resolve whether the merger's controlling-intent archetype operated coherently; the slice gives no direct evidence characterizing the archetype's realized nature, so t1 is uncertain. No goodwill impairment, divestiture, or business-model incompatibility is reported, and net income grew, so t2 is 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no merger-related goodwill impairment or divestiture is reported",
+      "rationale": "The provided slice documents continued operations, net income growth, and explicitly notes that no merger-related goodwill impairment or divestiture was reported. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) realized after the deal."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Evergy Kansas Central net income rose from $224.1 million in 2020 to $488.5 million in 2021",
+      "rationale": "The FY2021 filing documents continuing combined public reporting and increased net income but identifies no realized product-line or operating-process incoherence, so p4 is coded 0. It also reports 4,930 employees and ongoing union agreements without documenting operational integration breaking against management, workforce, or culture; the listed activist-shareholder cooperation agreement alone does not establish such a fracture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture/impairment; Evergy Kansas Central FY2021 net income $488.5M (up from $224.1M in FY2020)\", \"rationale\": \"The slice documents workforce continuity (4,930 employees, stable union agreements) and no reported operational-vs-organizational fracture, so p5 is coded 0 (none documented). No documented product/process (product-line vs operations) incoherence appears in the realized record, so p4 is 0. The presence of an activist-shareholder (Elliott) cooperation agreement listed as a material contract signals governance friction, which raises but does not resolve whether the merger's controlling-intent archetype operated coherently; the slice gives no direct evidence characterizing the archetype's realized nature, so t1 is uncertain. No goodwill impairment, divestiture, or business-model incompatibility is reported, and net income grew, so t2 is 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no merger-related goodwill impairment or divestiture is reported\",\n  \"rationale\": \"The provided slice documents continued operations, net income growth, and explicitly notes that no merger-related goodwill impairment or divestiture was reported. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) realized after the deal.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Evergy Kansas Central net income rose from $224.1 million in 2020 to $488.5 million in 2021\",\n  \"rationale\": \"The FY2021 filing documents continuing combined public reporting and increased net income but identifies no realized product-line or operating-process incoherence, so p4 is coded 0. It also reports 4,930 employees and ongoing union agreements without documenting operational integration breaking against management, workforce, or culture; the listed activist-shareholder cooperation agreement alone does not establish such a fracture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

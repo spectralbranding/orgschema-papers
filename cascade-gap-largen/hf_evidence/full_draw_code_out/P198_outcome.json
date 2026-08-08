@@ -1,0 +1,58 @@
+{
+  "case_id": "P198",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The company was taken private and deregistered in 2017, resulting in a lack of public reporting for the 3-5 year outcome window. Consequently, there is no documented evidence regarding product/process or process/organization pathways."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that because Parkway was taken private and deregistered in 2017, no public audited outcome record exists for the ~2020-2022 window for the acquired Houston office business, and no source isolates that portfolio's trajectory. No reputable-press or primary source reports any product/process misalignment or operations-vs-organization fracture for the acquired assets; absence of documented disruption is therefore coded 0 for both p4_pathway and p5_pathway. The only post-close fact concerns a separated management entity pursuing other acquisitions, which does not document pathway disruption at the acquired business."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'Parkway terminated its registration and periodic-reporting obligations in October 2017, and no public audited outcome record covers the acquired Houston office business during 2020-2022. The only traceable post-close fact concerns a separated management entity, while no source isolates the acquired portfolio’s trajectory; therefore product/process and process/organization disruption cannot be determined.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The company was taken private and deregistered in 2017, resulting in a lack of public reporting for the 3-5 year outcome window. Consequently, there is no documented evidence regarding product/process or process/organization pathways.\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that because Parkway was taken private and deregistered in 2017, no public audited outcome record exists for the ~2020-2022 window for the acquired Houston office business, and no source isolates that portfolio's trajectory. No reputable-press or primary source reports any product/process misalignment or operations-vs-organization fracture for the acquired assets; absence of documented disruption is therefore coded 0 for both p4_pathway and p5_pathway. The only post-close fact concerns a separated management entity pursuing other acquisitions, which does not document pathway disruption at the acquired business.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Parkway terminated its registration and periodic-reporting obligations in October 2017, and no public audited outcome record covers the acquired Houston office business during 2020-2022. The only traceable post-close fact concerns a separated management entity, while no source isolates the acquired portfolio’s trajectory; therefore product/process and process/organization disruption cannot be determined.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

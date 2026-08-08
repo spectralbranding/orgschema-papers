@@ -1,0 +1,85 @@
+{
+  "case_id": "P242",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because Microsemi's business as a whole — product/asset portfolio and its operations — crossed intact into the surviving corporation \"with no carve-out or partial-asset separation,\" so the customer-facing product and its producing processes moved together. gap_56 is 1 because at the effective time Microchip-side officers (Sanghi/Moorthy/Bjornholt) replaced Microsemi's pre-merger leadership at the surviving-corporation board and executive level, while Microsemi's own named officers were covered by retention/severance rather than continuing to run the transferred operations — a structural process-vs-people mismatch at closing. This T5/T6 gap was contractually addressed via pre-negotiated retention agreements, double-trigger severance, and cash/equity retention arrangements documented for key employees at closing, so gap_mitigated is yes. No transition-services agreement was identified, and T1 is coded replace given the documented change in control and installation of new controlling leadership."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company reverse triangular merger where Microsemi's business, products, and operations transferred intact (T4 and T5 moved together, so gap_45 is 0). While the executive leadership was replaced by Microchip's officers, there is no documented structural mismatch or gap between the operational processes and the organization/people running them at closing (gap_56 is 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Microsemi’s whole business and product portfolio crossed intact into the surviving corporation with no carve-out or partial-asset separation, supporting no product-to-process gap at closing [SEC accession 0001144204-18-021362]. However, Microchip-side directors and executive officers replaced Microsemi’s pre-merger leadership at the effective time, while Microsemi personnel were addressed through retention and severance arrangements rather than continuity in the installed officer roles, documenting a process-to-organization mismatch [SEC accession 0001193125-18-176068; SEC accession 0001144204-18-021362]. No transition-services, shared-services, supply, or operating agreement allocating that mismatch was identified at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 is 0 because Microsemi's business as a whole \\u2014 product/asset portfolio and its operations \\u2014 crossed intact into the surviving corporation \\\"with no carve-out or partial-asset separation,\\\" so the customer-facing product and its producing processes moved together. gap_56 is 1 because at the effective time Microchip-side officers (Sanghi/Moorthy/Bjornholt) replaced Microsemi's pre-merger leadership at the surviving-corporation board and executive level, while Microsemi's own named officers were covered by retention/severance rather than continuing to run the transferred operations \\u2014 a structural process-vs-people mismatch at closing. This T5/T6 gap was contractually addressed via pre-negotiated retention agreements, double-trigger severance, and cash/equity retention arrangements documented for key employees at closing, so gap_mitigated is yes. No transition-services agreement was identified, and T1 is coded replace given the documented change in control and installation of new controlling leadership.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company reverse triangular merger where Microsemi's business, products, and operations transferred intact (T4 and T5 moved together, so gap_45 is 0). While the executive leadership was replaced by Microchip's officers, there is no documented structural mismatch or gap between the operational processes and the organization/people running them at closing (gap_56 is 0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"Microsemi’s whole business and product portfolio crossed intact into the surviving corporation with no carve-out or partial-asset separation, supporting no product-to-process gap at closing [SEC accession 0001144204-18-021362]. However, Microchip-side directors and executive officers replaced Microsemi’s pre-merger leadership at the effective time, while Microsemi personnel were addressed through retention and severance arrangements rather than continuity in the installed officer roles, documenting a process-to-organization mismatch [SEC accession 0001193125-18-176068; SEC accession 0001144204-18-021362]. No transition-services, shared-services, supply, or operating agreement allocating that mismatch was identified at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": true
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P323",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "explored (not completed) sale valuing company at >$15bn in Dec 2021, ~3x the 2018 take-private value; no audited outcome record",
+      "rationale": "The company deregistered its stock in September 2018 (Form 15-12B) and no successor entity filed periodic financial reports, so there is no audited outcome record for the 2021-2023 window. The only in-window public fact is a December 2021 press report of an explored, unconsummated sale at >$15bn; nothing in the slice documents any disruption at the product/process interface (p4) or any operations-vs-organization fracture (p5). With no realized-outcome evidence bearing on either pathway, both are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice indicates that Cotiviti was taken private and deregistered, with no periodic financial reports filed during the 3-5 year outcome window. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) in the limited available press reports."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'explored sale valuation of more than $15 billion in 2021'}",
+      "rationale": "{'type': 'string', 'enum': 'The only documented in-window business development was exploration of a sale or IPO at a reported valuation above $15 billion; it did not describe product-line or operating-process incoherence, so p4 is 0. No in-window evidence documents operations breaking against management, employees, or culture, so p5 is 0. Public audited financial and operating records for 2021-2023 were unavailable.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"explored (not completed) sale valuing company at >$15bn in Dec 2021, ~3x the 2018 take-private value; no audited outcome record\", \"rationale\": \"The company deregistered its stock in September 2018 (Form 15-12B) and no successor entity filed periodic financial reports, so there is no audited outcome record for the 2021-2023 window. The only in-window public fact is a December 2021 press report of an explored, unconsummated sale at >$15bn; nothing in the slice documents any disruption at the product/process interface (p4) or any operations-vs-organization fracture (p5). With no realized-outcome evidence bearing on either pathway, both are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice indicates that Cotiviti was taken private and deregistered, with no periodic financial reports filed during the 3-5 year outcome window. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) in the limited available press reports.\"\n}\n",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"explored sale valuation of more than $15 billion in 2021\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The only documented in-window business development was exploration of a sale or IPO at a reported valuation above $15 billion; it did not describe product-line or operating-process incoherence, so p4 is 0. No in-window evidence documents operations breaking against management, employees, or culture, so p5 is 0. Public audited financial and operating records for 2021-2023 were unavailable.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

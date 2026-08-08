@@ -1,0 +1,58 @@
+{
+  "case_id": "P098",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2021 net income $56.9M ($26.0M to common) but consecutive Q3/Q4 2021 net losses to common of $43.9M and $27.3M; total assets grew to $13.77B",
+      "rationale": "No product/process-interface disruption is documented; the volatility described (2020's $174.0M COVID-driven decline in net income from fair-value losses on CRT investments, and the Q3/Q4 2021 net losses to common) is attributed to credit-market and pandemic macro conditions, not to any inability to align an acquired product with operating processes — so p4=0. On the process/organization interface, the slice documents continuity rather than fracture: the registrant remained externally managed by PCM and serviced by PLS (both PFSI affiliates) throughout the window with one employee at year-end 2021, and no operational-vs-organizational breakdown is reported — so p5=0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2021 net income $56.9M; assets grew to $13.77B",
+      "rationale": "The slice records no product/process-interface disruption; income swings are attributed to COVID-19 fair-value effects on CRT investments and correspondent/interest-rate strategy results, not to any inability to align an acquired product with operating processes. At the process/organization interface the slice documents continuity, not fracture: the registrant remained externally managed by PCM and serviced by PLS through FY2021, with dependence on those affiliates restated and no integration break against organization or culture reported."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2021 net income of $56.9 million",
+      "rationale": "No realized product/process alignment disruption is documented; the reported earnings volatility is attributed to COVID-19-related credit-market disruption and fair-value losses on CRT investments. No realized process/organization fracture is documented: external management by PCM and servicing by PLS continued through FY2021, notwithstanding disclosed dependence risks and the registrant having one employee."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"FY2021 net income $56.9M ($26.0M to common) but consecutive Q3/Q4 2021 net losses to common of $43.9M and $27.3M; total assets grew to $13.77B\", \"rationale\": \"No product/process-interface disruption is documented; the volatility described (2020's $174.0M COVID-driven decline in net income from fair-value losses on CRT investments, and the Q3/Q4 2021 net losses to common) is attributed to credit-market and pandemic macro conditions, not to any inability to align an acquired product with operating processes \\u2014 so p4=0. On the process/organization interface, the slice documents continuity rather than fracture: the registrant remained externally managed by PCM and serviced by PLS (both PFSI affiliates) throughout the window with one employee at year-end 2021, and no operational-vs-organizational breakdown is reported \\u2014 so p5=0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2021 net income $56.9M; assets grew to $13.77B\",\n  \"rationale\": \"The slice records no product/process-interface disruption; income swings are attributed to COVID-19 fair-value effects on CRT investments and correspondent/interest-rate strategy results, not to any inability to align an acquired product with operating processes. At the process/organization interface the slice documents continuity, not fracture: the registrant remained externally managed by PCM and serviced by PLS through FY2021, with dependence on those affiliates restated and no integration break against organization or culture reported.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2021 net income of $56.9 million\",\n  \"rationale\": \"No realized product/process alignment disruption is documented; the reported earnings volatility is attributed to COVID-19-related credit-market disruption and fair-value losses on CRT investments. No realized process/organization fracture is documented: external management by PCM and servicing by PLS continued through FY2021, notwithstanding disclosed dependence risks and the registrant having one employee.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

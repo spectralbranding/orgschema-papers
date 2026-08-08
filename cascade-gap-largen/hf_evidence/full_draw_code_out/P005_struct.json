@@ -1,0 +1,85 @@
+{
+  "case_id": "P005",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing publishing product (titles, USA TODAY, Newsquest, digital/mobile) crossed the boundary to SpinCo, but the operational processes producing/delivering it — IT, accounts payable, payroll, financial/administrative functions — were \"currently integrated with the Parent's other businesses\" and did NOT transfer as an intact standalone function, instead being bridged by a transition services agreement (up to 24 months). This product-vs-process mismatch is documented as contractually absorbed at closing via the TSA (gap_mitigated=yes). gap_56=0: the named SpinCo management team led by Robert J. Dickey and the publishing employees transfer alongside via the employee matters agreement, so the people/organization move coherently with the operation; this is a T1 spin-off (imprint-share, both entities named Gannett) rather than a T1 fusion, so collapse_state=none."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states the customer-facing publishing products (dailies, non-dailies, Newsquest, USA TODAY and affiliated digital/mobile) and their operating entities transfer to SpinCo while the historically shared corporate service substrate (IT, payroll, accounts payable, legal, financial/administrative functions) is expressly not transferred intact and remains with Parent. gap_56=0 because the same closing structure moves SpinCo’s named publishing management team (led by Dickey as CEO) with the publishing entities and allocates employees under an employee matters agreement, so the transferred operations are accompanied by aligned people/management rather than stripped of organization. The product–process substrate mismatch is contractually absorbed at closing by the transition services agreement (interim IT, payroll, AP, legal and admin services up to 24 months) plus tax-matters and employee-matters agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The publishing titles, digital platforms, and related assets crossed the ownership boundary, while the historically shared operational substrate—including IT, payroll, accounts payable, legal, and financial/administrative functions—was not transferred as an intact standalone function, documenting a product-process gap at closing [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1]. Although SpinCo received a named publishing management team and allocated employees, specified shared processes continued to be provided by Parent on an interim basis rather than moving with the organization that historically ran them, documenting a process-organization gap [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1]. Both gaps were contractually bridged at closing through the transition services and employee matters agreements [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing publishing product (titles, USA TODAY, Newsquest, digital/mobile) crossed the boundary to SpinCo, but the operational processes producing/delivering it \\u2014 IT, accounts payable, payroll, financial/administrative functions \\u2014 were \\\"currently integrated with the Parent's other businesses\\\" and did NOT transfer as an intact standalone function, instead being bridged by a transition services agreement (up to 24 months). This product-vs-process mismatch is documented as contractually absorbed at closing via the TSA (gap_mitigated=yes). gap_56=0: the named SpinCo management team led by Robert J. Dickey and the publishing employees transfer alongside via the employee matters agreement, so the people/organization move coherently with the operation; this is a T1 spin-off (imprint-share, both entities named Gannett) rather than a T1 fusion, so collapse_state=none.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states the customer-facing publishing products (dailies, non-dailies, Newsquest, USA TODAY and affiliated digital/mobile) and their operating entities transfer to SpinCo while the historically shared corporate service substrate (IT, payroll, accounts payable, legal, financial/administrative functions) is expressly not transferred intact and remains with Parent. gap_56=0 because the same closing structure moves SpinCo’s named publishing management team (led by Dickey as CEO) with the publishing entities and allocates employees under an employee matters agreement, so the transferred operations are accompanied by aligned people/management rather than stripped of organization. The product–process substrate mismatch is contractually absorbed at closing by the transition services agreement (interim IT, payroll, AP, legal and admin services up to 24 months) plus tax-matters and employee-matters agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The publishing titles, digital platforms, and related assets crossed the ownership boundary, while the historically shared operational substrate—including IT, payroll, accounts payable, legal, and financial/administrative functions—was not transferred as an intact standalone function, documenting a product-process gap at closing [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1]. Although SpinCo received a named publishing management team and allocated employees, specified shared processes continued to be provided by Parent on an interim basis rather than moving with the organization that historically ran them, documenting a process-organization gap [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1]. Both gaps were contractually bridged at closing through the transition services and employee matters agreements [SRC: SEC accession 0001047469-15-002032, Form 10-12B EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P072",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "uncertain",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product (Elara's remaining timeshare inventory, related real estate and receivables) was consolidated into BRE Ace LLC, but \"the operation that produces and delivers that product (marketing, inventory sales and property management) did not move into the ownership entity; it remained with HGV under pre-existing fee-for-service agreements\" — a documented product-vs-process ownership mismatch at closing. gap_mitigated=yes: the slice states this shared operating substrate was bridged \"by contract at closing\" via the existing fee-for-service agreements. gap_56=uncertain: the slice documents that operational processes (T5) stayed with HGV rather than transferring, but provides no closing-structure detail on whether the people/organization running those processes were aligned or misaligned relative to any process movement, so a T5-vs-T6 mismatch cannot be documented."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing product (T4, the Elara timeshare inventory and real estate) was transferred into the new joint venture entity controlled by Blackstone. However, the operational processes (T5, marketing, sales, and property management) did not transfer into the new entity; they remained with HGV, creating a structural gap between T4 and T5. This gap was mitigated at closing via pre-existing fee-for-service agreements."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The structural summary states that ownership of the Elara inventory, related real estate, and receivables was consolidated into the Blackstone-controlled LLC, while marketing, inventory sales, and property management did not move into that ownership entity. Those processes remained with HGV under the existing fee-for-service agreements, creating a documented product/process gap at closing that was contractually bridged. Because the operating processes and the HGV organization running them remained together under those agreements, no process/organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product (Elara's remaining timeshare inventory, related real estate and receivables) was consolidated into BRE Ace LLC, but \\\"the operation that produces and delivers that product (marketing, inventory sales and property management) did not move into the ownership entity; it remained with HGV under pre-existing fee-for-service agreements\\\" \\u2014 a documented product-vs-process ownership mismatch at closing. gap_mitigated=yes: the slice states this shared operating substrate was bridged \\\"by contract at closing\\\" via the existing fee-for-service agreements. gap_56=uncertain: the slice documents that operational processes (T5) stayed with HGV rather than transferring, but provides no closing-structure detail on whether the people/organization running those processes were aligned or misaligned relative to any process movement, so a T5-vs-T6 mismatch cannot be documented.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"read-only\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The customer-facing product (T4, the Elara timeshare inventory and real estate) was transferred into the new joint venture entity controlled by Blackstone. However, the operational processes (T5, marketing, sales, and property management) did not transfer into the new entity; they remained with HGV, creating a structural gap between T4 and T5. This gap was mitigated at closing via pre-existing fee-for-service agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The structural summary states that ownership of the Elara inventory, related real estate, and receivables was consolidated into the Blackstone-controlled LLC, while marketing, inventory sales, and property management did not move into that ownership entity. Those processes remained with HGV under the existing fee-for-service agreements, creating a documented product/process gap at closing that was contractually bridged. Because the operating processes and the HGV organization running them remained together under those agreements, no process/organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "read-only",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

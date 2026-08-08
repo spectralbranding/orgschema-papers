@@ -1,0 +1,394 @@
+ 
+
+ 0000895126 
+ false 
+
+ 0000895126 
+
+ 2020-06-27 
+ 2020-06-28 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section 13 or 15(d) of the Securities
+Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported):
+ June 28, 2020 
+
+ CHESAPEAKE ENERGY
+CORPORATION 
+
+ (Exact
+name of Registrant as specified in its Charter) 
+
+ Oklahoma 
+ 
+ 1-13726 
+ 
+ 73-1395733 
+ 
+ (State or other jurisdiction of 
+ 
+ (Commission File No.) 
+ 
+ (IRS Employer Identification No.) 
+ 
+ incorporation) 
+
+ 6100 North Western Avenue , Oklahoma City, OK 
+ 
+ 73118 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+
+ ( 405 ) 848-8000 
+
+ (Registrant';s
+telephone number, including area code) 
+
+ Check the appropriate box below
+if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following
+provisions (see General Instruction A.2. below): 
+
+ &#168; Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#168; Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#168; Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#168; Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+ Trading Symbol(s) 
+ Name of each exchange on which registered 
+ 
+ Common stock, par value $0.01 per share 
+ CHK 
+ New York Stock Exchange 
+
+ Indicate by check mark whether the registrant is
+an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167; 230.405 of this chapter) or Rule 12b-2
+of the Securities Exchange Act of 1934 (&#167; 240.12b-2 of this chapter). 
+
+ Emerging growth company &#168; 
+
+ If an emerging growth company, indicate by check mark
+if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards
+provided pursuant to Section 13(a) of the Exchange Act. &#168; 
+
+ Item 1.01 Entry into a Material Definitive Agreement. 
+
+ On June 28, 2020, Chesapeake Energy Corporation
+(";Chesapeake";) and certain of its subsidiaries (together with Chesapeake, the ";Company";) entered into
+a restructuring support agreement (the ";RSA";) with certain holders (collectively, the ";Consenting
+Stakeholders";) of (i) obligations under that certain Amended and Restated Credit Agreement, dated as of September 12,
+2018, by and among Chesapeake, as borrower, the Debtor guarantors party thereto, MUFG Union Bank, N.A., as administrative
+agent, and the other lender, issuer, and agent parties thereto (the ";Revolving Credit Facility";); (ii)
+obligations under that certain Term Loan Agreement, dated as of December 19, 2019, by and among Chesapeake, as borrower, the
+Debtor guarantors party thereto, GLAS USA LLC., as administrative agent, and the lender parties thereto (the ";FLLO Term
+Loan";); and (iii) obligations under the 11.500% Senior Secured Second Lien Notes due 2025 (the ";Second Lien
+Notes";) issued pursuant to that certain indenture, dated as of December 19, 2019, by and among Chesapeake, as
+issuer, certain guarantors party thereto, and Deutsche Bank Trust Company Americas, as trustee and collateral trustee (the
+ ";Second Lien Notes Indenture";) to support a restructuring (the ";Restructuring";) on the terms set
+forth in the RSA and the term sheet annexed to the RSA (the ";Restructuring Term Sheet";). Certain Consenting
+Stakeholders also hold Unsecured Notes (as defined in the Restructuring Term Sheet) and the corresponding claims are also
+subject to the terms and obligations under the RSA. The RSA contemplates that the Company will implement the Restructuring
+through the Chapter 11 Cases (as defined below) pursuant to a consensual plan of reorganization (the ";Plan";) and
+the various related transactions set forth in or contemplated by the RSA and the Restructuring Term Sheet. 
+
+ Pursuant to the terms of the RSA and the Restructuring
+Term Sheet, below is a summary of the treatment that the stakeholders of the Company would receive under the Plan: 
+
+ &#183; 
+ Holders of Other Secured Claims. Each holder of other secured claims would receive, at the Company';s option and in consultation with a requisite number of holders of claims who are backstopping a rights offering pursuant to the Plan: (a) payment in full in cash; (b) the collateral securing its secured claim; (c) reinstatement of its secured claim; or (d) such other treatment rendering its secured claim unimpaired in accordance with section 1124 of the Bankruptcy Code. 
+
+ &#183; 
+ Holders of Other Priority Claims. Each holder of other priority claims would receive treatment in a manner consistent with section 1129(a)(9) of the Bankruptcy Code. 
+
+ &#183; 
+ Holders of Revolving Credit Facility Claims. On the effective date of the Plan (the ";Plan Effective Date";) , each holder of obligations under the Revolving Credit Facility would receive, at such holder';s option, its pro rata share of either Tranche A RBL Exit Facility Loans or Tranche B RBL Exit Facility Loans, each on a dollar for dollar basis 
+
+ &#183; 
+ Holders of FLLO Term Loan Facility Claims. On the Plan Effective Date, each holder of obligations under the FLLO Term Loan Facility would receive its pro rata share of (i) 76% of the reorganized Company';s new common equity interests (the ";New Common Stock";), subject to the terms set forth in the Restructuring Term Sheet and (ii) the right to participate in a rights offering on the terms set forth in the Restructuring Term Sheet. 
+
+ &#183; 
+ Holders of Second Lien Notes Claims. On the Plan Effective Date, each holder of the Second Lien Notes would receive its pro rata share of (i) 12% of the New Common Stock, subject to the terms set forth in the Restructuring Term Sheet, (ii) the right to participate in a rights offering on the terms set forth in the Restructuring Term Sheet, and (iii) warrants to purchase 10% of New Common Stock on certain terms set forth in the Restructuring Term Sheet, warrants to purchase another 10% of New Common Stock on certain other terms set forth in the Restructuring Term Sheet, and 50% of warrants to purchase another 10% of New Common Stock on certain other terms set forth in the Restructuring Term Sheet (the ";New Class C Warrants";). 
+
+ &#183; 
+ Holders of Unsecured Notes Claims. On the Plan Effective Date, each holder of the Unsecured Notes would receive its pro rata share of (i) 12% of the New Common Stock, subject to the terms set forth in the Restructuring Term Sheet (the ";Unsecured Claims Recovery";), and (ii) 50% of the New Class C Warrants. 
+
+ &#183; 
+ Holders of General Unsecured Claims. On the Plan Effective Date, each holder of allowed general unsecured claims would receive its pro rata share of the Unsecured Claims Recovery. 
+
+ &#183; 
+ Equity Holders. Each holder of an equity interest in Chesapeake would have such interest cancelled, released, and extinguished without any distribution. 
+
+ The RSA contains certain covenants on the part of each of
+the Company and the Consenting Stakeholders, including limitations on the parties'; ability to pursue alternative
+transactions (subject to customary provisions regarding the ability of the Company';s board of directors to satisfy its
+fiduciary duties), commitments by the Consenting Stakeholders to vote in favor of the Plan and commitments of the Company and
+the Consenting Stakeholders to negotiate in good faith to finalize the documents and agreements contemplated by and required
+to implement the Plan. The RSA also provides for certain conditions to the obligations of the parties and for termination
+upon the occurrence of certain events, including without limitation, the failure to achieve certain milestones and certain
+breaches by the parties under the RSA. 
+
+ Although the Company intends to pursue the Restructuring in
+accordance with the terms set forth in the RSA, there can be no assurance that the Company will be successful in completing a Restructuring
+or any other similar transaction on the terms set forth in the RSA, on different terms, or at all. 
+
+ The foregoing description of the RSA, including the Restructuring
+Term Sheet attached thereto, does not purport to be complete and is qualified by reference to the full text of the RSA, a copy
+of which is filed herewith as Exhibit 10.1 and is incorporated herein by reference. 
+
+ Item 1.03 Bankruptcy or Receivership. 
+
+ Chapter 11 Filing 
+
+ On June 28, 2020, the Company filed voluntary petitions for
+reorganization under Chapter 11 of the Bankruptcy Code (the ";Chapter 11 Cases";) in the United States Bankruptcy Court
+for the Southern District of Texas (the ";Bankruptcy Court";). The Company has filed a motion with the Bankruptcy Court
+seeking joint administration of the Chapter 11 Cases under the caption In re Chesapeake Energy Corporation . 
+
+ The Company will continue to operate its business as ";debtors-in-possession";
+under the jurisdiction of the Bankruptcy Court and in accordance with the applicable provisions of the Bankruptcy Code and the
+orders of the Bankruptcy Court. 
+
+ DIP Credit Facility 
+
+ On June 28, 2020, prior to the commencement of the Chapter 11
+Cases, the Company entered into a commitment letter (the ";Commitment Letter";) with certain of the lenders under the
+Revolving Credit Facility and/or their affiliates (collectively, the ";Commitment Parties";), pursuant to which, and
+subject to the satisfaction of certain customary conditions, including the approval of the Bankruptcy Court, the Commitment Parties
+have agreed to provide the Company and certain of its subsidiaries with a senior secured superpriority debtor-in-possession revolving
+credit facility in an aggregate principal amount of up to $925 million (the ";DIP Credit Facility";), which, upon satisfaction
+of certain conditions, including the effectiveness of the Plan, will become a longer term senior secured exit revolving facility
+(the ";Exit Revolving Facility";) and senior secured term loan (the ";Exit Term Loan"; and, together with the
+Exit Revolving Facility, the ";Exit Credit Facilities";). The terms and conditions of the DIP Credit Facility are set
+forth in the DIP Credit Agreement (the ";DIP Credit Agreement";) attached to the Commitment Letter. The proceeds of all
+or a portion of the DIP Credit Facility may be used for, among other things, postpetition working capital, permitted capital investments,
+general corporate purposes, letters of credit, administrative costs, premiums, expenses and fees for the transactions contemplated
+by the Chapter 11 Cases, payment of court approved adequate protection obligations, and other such purposes consistent with the
+DIP Credit Facility. The terms and conditions of the Exit Credit
+Facilities are reflected in an exit facilities term sheet attached as an exhibit to the Restructuring Term Sheet (the ";Exit
+Facilities Term Sheet";). Upon of the satisfaction of certain conditions set forth in the Exit Facilities Term Sheet, including
+compliance with (i) a minimum liquidity of $500 million and (ii) a 2.25:1.00 leverage ratio test, the DIP Credit Facility commitments
+will be converted into Exit Credit Facilities of up to $2.5 billion, consisting of a reserve-based revolving credit facility of up to $1.75 billion and a first lien last-out term loan facility
+of up to $750 million. 
+
+ The foregoing description of the DIP Credit Facility, the DIP
+Credit Agreement and the Exit Credit Facilities does not purport to be complete and is qualified in its entirety by reference to
+the final, executed Commitment Letter, a copy of which is filed herewith as Exhibit 10.2 and is incorporated herein by reference,
+which includes as attachments the DIP Credit Agreement and Exit Facilities Term Sheet, as may be approved by the Bankruptcy Court. 
+
+ Item 2.04 Triggering Events that Accelerate or Increase a
+Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement. 
+
+ The filing of the Chapter 11 Cases described above in Item 1.03
+constitutes an event of default that accelerated the Company';s obligations under the following debt instruments (the ";Debt
+Instruments";): 
+
+ &#183; 
+ $2,003 million, including letters of credit, outstanding under the Revolving Credit Facility. 
+
+ &#183; 
+ $1,500 million outstanding under the FLLO Term Loan. 
+
+ &#183; 
+ $2,330 million in outstanding aggregate principal amount of the Second Lien Notes issued pursuant to the Second Lien Notes Indenture. 
+
+ &#183; 
+ $176 million in outstanding aggregate principal amount of the 6.625% Senior Notes due 2020 issued pursuant to the 6.625% Senior Notes due 2020 Indenture. 
+
+ &#183; 
+ $74 million in outstanding aggregate principal amount of the 6.875% Senior Notes due 2020 issued pursuant to the 6.875% Senior Notes due 2020 Indenture. 
+
+ &#183; 
+ $166 million in outstanding aggregate principal amount of the 6.125% Senior Notes due 2021 issued pursuant to the 6.125% Senior Notes due 2021 Indenture. 
+
+ &#183; 
+ $127 million in outstanding aggregate principal amount of the 5.375% Senior Notes due 2021 issued pursuant to the 5.375% Senior Notes due 2021 Indenture. 
+
+ &#183; 
+ $272 million in outstanding aggregate principal amount of the 4.875% Senior Notes due 2022 issued pursuant to the 4.875% Senior Notes due 2022 Indenture. 
+
+ &#183; 
+ $168 million in outstanding aggregate principal amount of the 5.750% Senior Notes due 2023 issued pursuant to the 5.750% Senior Notes due 2023. 
+
+ &#183; 
+ $623 million in outstanding aggregate principal amount of the 7.000% Senior Notes due 2024 issued pursuant to the 7.000% Senior Notes due 2024 Indenture. 
+
+ &#183; 
+ $246 million in outstanding aggregate principal amount of the 8.000% Senior Notes due 2025 issued pursuant to the 8.000% Senior Notes due 2025 Indenture. 
+
+ &#183; 
+ $46 million in outstanding aggregate principal amount of the 8.000% Senior Notes due 2026 issued pursuant to the 8.000% Senior Notes due 2026 Indenture. 
+
+ &#183; 
+ $119 million in outstanding aggregate principal amount of the 7.500% Senior Notes due 2026 issued pursuant to the 7.500% Senior Notes due 2026 Indenture. 
+
+ &#183; 
+ $253 million in outstanding aggregate principal amount of the 8.000% Senior Notes due 2027 issued pursuant to the 8.000% Senior Notes due 2027 Indenture. 
+
+ &#183; 
+ $1,064 million in outstanding aggregate principal amount of the Convertible Notes issued pursuant to the Convertible Notes Indenture. 
+
+ &#183; 
+ $2 million in outstanding aggregate principal amount of the WildHorse Notes pursuant to the WildHorse Notes Indenture. 
+
+ The Debt Instruments provide that, as a result of the Chapter
+11 Cases, the principal and interest due thereunder shall be immediately due and payable. Any efforts to enforce such payment obligations
+under the Debt Instruments are automatically stayed as a result of the Chapter 11 Cases, and the creditors'; rights of
+enforcement in respect of the Debt Instruments are subject to the applicable provisions of the Bankruptcy Code. 
+
+ Item 7.01 Regulation FD Disclosure. 
+
+ Press Release 
+
+ In connection with the filing of the Chapter 11 Cases, Chesapeake
+issued a press release on June 28, 2020, a copy of which is attached to this Form 8-K as Exhibit 99.1. 
+
+ Cleansing Material 
+
+ Prior to the filing of the Chapter 11 Cases, the Company entered
+into confidentiality agreements (collectively, the ";NDAs";) with certain of the Consenting Stakeholders. Pursuant to
+the NDAs, the Company agreed to publicly disclose certain information, including material non-public information disclosed
+to such Consenting Stakeholders (the ";Cleansing Material";) upon the occurrence of certain events set forth in the NDAs. A
+copy of the Cleansing Material is attached to this Form 8-K as Exhibit 99.2. 
+
+ The information included in this Form 8-K under Item 7.01 and
+Exhibits 99.1 and 99.2 are being furnished and shall not be deemed ";filed"; for purposes of Section 18 of the Securities
+Exchange Act of 1934, as amended (the ";Exchange Act";), or otherwise subject to liabilities of that Section, unless
+the registrant specifically states that the information is to be considered ";filed"; under the Exchange Act or incorporates
+it by reference into a filing under the Exchange Act or the Securities Act of 1933, as amended (the ";Securities Act";). 
+
+ Additional Information on the Chapter 11 Cases. 
+
+ Court filings and information about the Chapter 11 Cases can
+be found at a website maintained by the Company';s noticing and claims agent, Epiq Corporate Restructuring, LLC, at https://dm.epiq11.com/chesapeake,
+or by calling (855) 907-2082 (toll-free). 
+
+ Item 8.01 Other Events. 
+
+ Cautionary Note Regarding Chesapeake';s Common Stock 
+
+ Chesapeake cautions that trading in
+Chesapeake';s securities during the pendency of the Chapter 11 Cases is highly speculative and poses substantial risks. Trading
+prices for Chesapeake';s securities may bear little or no relationship to the actual recovery, if any, by holders of Chesapeake';s
+securities in the Chapter 11 Cases. Chesapeake expects that its equity holders could experience a significant or complete loss
+on their investment, depending on the outcome of the Chapter 11 Cases. 
+
+ Forward Looking Statements 
+
+ This Current Report on Form 8-K includes ";forward-looking
+statements"; within the meaning of Section 27A of the Securities Act and Section 21E of the Exchange Act. Forward looking
+statements are statements other than statements of historical fact. They are generally identified by the words the words ";believe,";
+ ";expect,"; ";anticipate,"; ";estimate,"; ";intend,"; ";plan,"; ";may,";
+ ";should,"; ";could,"; ";will,"; ";would,"; and ";will be,"; and variations of
+such words and similar expressions, although not all forward-looking statements contain these identifying words. They include statements
+regarding our current expectations or forecasts of future events, including matters relating to the continuing effects of the COVID-19
+pandemic and the impact thereof on our business, financial condition and results of operations; actions by, or disputes among or
+between, members of OPEC+; market factors, market prices; our ability to meet debt service requirements; our expectations regarding
+the borrowing base under our revolving credit facility; our evaluation of strategic alternatives, cost-cutting measures, reductions
+in capital expenditures, refinancing transactions, capital exchange transactions, asset divestitures, operational efficiencies,
+future impairments, cost savings due to operational and capital efficiencies related to the WildHorse Merger; the operation or
+effects of the Section 382 Rights Plan and the use of NOLs to offset future taxable income. Such forward-looking statements are
+subject to risks and uncertainties that could cause actual results to differ materially from those expressed in, or implied by,
+such statements. Although we believe the expectations and forecasts reflected in the forward-looking statements are reasonable,
+we can give no assurance they will prove to have been correct. They can be affected by inaccurate or changed assumptions or by
+known or unknown risks and uncertainties. These risks and uncertainties include, but are not limited to: the impact of the COVID-19
+pandemic and its effect on our business, financial condition, employees, contractors, vendors and the global demand for oil and
+natural gas and U.S. and world financial markets; the Company';s ability to obtain Bankruptcy Court approval with respect
+to motions or other requests made to the Bankruptcy Court; the ability of the Company to negotiate, develop, confirm, and consummate
+the Plan; the effects of the Chapter 11 Cases on the Company';s liquidity or results of operations or business prospects;
+the effects of the Chapter 11 Cases on the Company';s business and the interests of various constituents; the length of time
+that the Company will operate under Chapter 11 protection; risks associated with third-party motions in the Chapter 11 Cases; the
+Company';s ability to comply with the covenants under our revolving credit facility and other indebtedness and the related
+impact on our ability to continue as a going concern; the volatility of oil, natural gas and NGL prices, which are affected by
+general economic and business conditions, as well as increased demand for (and availability of) alternative fuels and electric
+vehicles; uncertainties inherent in estimating quantities of oil, natural gas and NGL reserves and projecting future rates of production
+and the amount and timing of development expenditures; the Company';s ability to replace reserves and sustain production;
+drilling and operating risks and resulting liabilities; the Company';s ability to generate profits or achieve targeted results
+in drilling and well operations; the limitations the Company';s level of indebtedness may have on our financial flexibility;
+the Company';s inability to access the capital markets on favorable terms; the availability of cash flows from operations
+and other funds to finance reserve replacement costs or satisfy the Company';s debt obligations; adverse developments or losses
+from pending or future litigation and regulatory proceedings, including royalty claims; legislative and regulatory initiatives
+addressing environmental concerns, including initiatives addressing the impact of global climate change or further regulating hydraulic
+fracturing, methane emissions, flaring or water disposal; terrorist activities and/or cyber-attacks adversely impacting the Company';s
+operations; effects of acquisitions and dispositions, including the Company';s acquisition of WildHorse and its ability to
+realize related synergies and cost savings; effects of purchase price adjustments and indemnity obligations; and other important
+risks, assumptions and other important factors that could cause actual results to differ materially from those expressed in the
+forward-looking statements and which are described under ";Risk Factors"; in Item 1A of Chesapeake';s Annual Report
+on Form 10-K for the fiscal year ended December 31, 2019 and any updates to those factors set forth in Chesapeake';s subsequent
+quarterly reports on Form 10-Q or current reports on Form 8-K. Chesapeake undertakes no obligation to release publicly any revisions
+to any forward looking statements, to report events or to report the occurrence of unanticipated events. 
+
+ Item 9.01 Exhibits. 
+
+ (d) 
+
+ Exhibit No. 
+ 
+ Document Description 
+ 
+ 10.1* 
+ 
+ Restructuring Support Agreement, dated June 28, 2020. 
+ 
+ 10.2* 
+ 
+ Commitment Letter, dated June 28, 2020. 
+ 
+ 99.1 
+ 
+ Chesapeake Energy Corporation press release, dated June 28, 2020. 
+ 
+ 99.2 
+ 
+ Consenting Stakeholder Cleansing Materials. 
+ 
+ 104 
+ 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document and contained in Exhibit 101). 
+
+ * Certain schedules and similar attachments have been omitted. The Company agrees to furnish a supplemental copy of any omitted
+schedule or attachment to the SEC upon request. 
+
+ SIGNATURE 
+
+ Pursuant to the requirements
+of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned
+hereunto duly authorized. 
+
+ CHESAPEAKE ENERGY CORPORATION 
+
+ By: 
+ /s/ James R. Webb 
+
+ James R. Webb 
+
+ Executive Vice President &#8211; General Counsel and Corporate Secretary 
+
+ Date: 
+ June 29, 2020 
+

@@ -1,0 +1,85 @@
+{
+  "case_id": "P036",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The oilfield services product and its direct operations transferred together, so there is no product-process gap (gap_45 = 0). However, the operational processes transferred without the shared corporate support infrastructure (accounting, IT, HR, legal) that historically supported them, creating a structural gap (gap_56 = 1) that was mitigated at closing by a Transition Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the customer-facing oilfield-services lines that crossed (drilling, hydraulic fracturing, rentals, rig relocation, water transport/disposal) moved together with the operating assets, fleets, and the ~5,100 employees who ran them, so T4 and core T5 were aligned and gap_45 is 0. Senior management (Winchester, Baetz) and the workforce continued with the separated entity under an Employee Matters Agreement, so T5 and T6 likewise moved together and gap_56 is 0; the only substrate that did not transfer intact was CHK corporate support (accounting, IT, legal, HR, treasury), which was contractually bridged by a Transition Services Agreement rather than constituting a product-vs-process or process-vs-organization ownership mismatch."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing oilfield-services business crossed the boundary, but CHK's shared accounting, IT, legal, tax, HR, risk-management, treasury, and facilities-support substrate did not transfer intact and had to be established independently, documenting a product/process gap at closing. That gap was contractually absorbed on an interim basis through the Transition Services Agreement under which CHK continued providing certain administrative support services. The approximately 5,100 employees and incumbent senior management continued with the transferred operations, so no process-versus-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The oilfield services product and its direct operations transferred together, so there is no product-process gap (gap_45 = 0). However, the operational processes transferred without the shared corporate support infrastructure (accounting, IT, HR, legal) that historically supported them, creating a structural gap (gap_56 = 1) that was mitigated at closing by a Transition Services Agreement.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the customer-facing oilfield-services lines that crossed (drilling, hydraulic fracturing, rentals, rig relocation, water transport/disposal) moved together with the operating assets, fleets, and the ~5,100 employees who ran them, so T4 and core T5 were aligned and gap_45 is 0. Senior management (Winchester, Baetz) and the workforce continued with the separated entity under an Employee Matters Agreement, so T5 and T6 likewise moved together and gap_56 is 0; the only substrate that did not transfer intact was CHK corporate support (accounting, IT, legal, HR, treasury), which was contractually bridged by a Transition Services Agreement rather than constituting a product-vs-process or process-vs-organization ownership mismatch.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing oilfield-services business crossed the boundary, but CHK's shared accounting, IT, legal, tax, HR, risk-management, treasury, and facilities-support substrate did not transfer intact and had to be established independently, documenting a product/process gap at closing. That gap was contractually absorbed on an interim basis through the Transition Services Agreement under which CHK continued providing certain administrative support services. The approximately 5,100 employees and incumbent senior management continued with the transferred operations, so no process-versus-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

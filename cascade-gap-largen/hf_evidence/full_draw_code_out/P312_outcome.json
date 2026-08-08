@@ -1,0 +1,58 @@
+{
+  "case_id": "P312",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "revenue essentially flat to modestly increasing ($970M to $981M)",
+      "rationale": "The slice documents that the operating business continued as a distinct segment with stable revenue and OIBDA. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "assets retained; GCI segment revenue flat ~$970-981M 2021-23",
+      "rationale": "The slice documents continued operation of the Alaska communications business as Liberty Broadband's separately reported GCI Holdings segment through 2021-2023, with essentially flat-to-rising revenue ($970M to $981M) and Adjusted OIBDA ($354M to $361M) and stable segment assets (~$3.3-3.4B); no product/process misalignment or operating incoherence is described. Regulatory settlement accruals tied to a pre-existing Rural Health Care Program matter are noted but are not framed as product-process or process-organization integration failures. Absence of any documented disruption at those interfaces yields p4_pathway=0 and p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "GCI Holdings revenue increased from $970M in 2021 to $981M in 2023; Adjusted OIBDA increased from $354M to $361M",
+      "rationale": "The operating business continued as a separately reported GCI Holdings segment, with revenue essentially flat to modestly increasing and Adjusted OIBDA modestly increasing from 2021 through 2023; no product/process incoherence is documented. Although regulatory settlement expenses were disclosed, the slice documents no fracture between operations and people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"revenue essentially flat to modestly increasing ($970M to $981M)\",\n  \"rationale\": \"The slice documents that the operating business continued as a distinct segment with stable revenue and OIBDA. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"assets retained; GCI segment revenue flat ~$970-981M 2021-23\",\n  \"rationale\": \"The slice documents continued operation of the Alaska communications business as Liberty Broadband's separately reported GCI Holdings segment through 2021-2023, with essentially flat-to-rising revenue ($970M to $981M) and Adjusted OIBDA ($354M to $361M) and stable segment assets (~$3.3-3.4B); no product/process misalignment or operating incoherence is described. Regulatory settlement accruals tied to a pre-existing Rural Health Care Program matter are noted but are not framed as product-process or process-organization integration failures. Absence of any documented disruption at those interfaces yields p4_pathway=0 and p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"GCI Holdings revenue increased from $970M in 2021 to $981M in 2023; Adjusted OIBDA increased from $354M to $361M\",\n  \"rationale\": \"The operating business continued as a separately reported GCI Holdings segment, with revenue essentially flat to modestly increasing and Adjusted OIBDA modestly increasing from 2021 through 2023; no product/process incoherence is documented. Although regulatory settlement expenses were disclosed, the slice documents no fracture between operations and people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

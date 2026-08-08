@@ -1,0 +1,85 @@
+{
+  "case_id": "P091",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The company assembled the customer-facing portfolio (T4: 546 retail, 76 hotel, industrial, office and multi-family properties; the $841.8M Winston Hotels whole-company merger) onto its own balance sheet, but the operating processes that produce/deliver these assets did not cross with them: \"Property-level operating processes were not run by the company's own organization,\" and it relied on affiliated property managers, a business manager, and IREA for acquisition identification — a product-vs-process mismatch at closing driving gap_45=1. Because T5 processes and T6 people/management sat together with the same sponsor affiliates (executive officers were employees of Inland Group affiliates; day-to-day operations under the business management agreement), the processes and the organization that run them stayed coherently aligned with each other, so gap_56=0. The gap_45 mismatch was contractually absorbed via the property-management, business-management, and property-acquisition agreements allocating the shared operating substrate (property management fees of $14,328K paid; IREA acquisition flow allocation), so gap_mitigated=yes."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The company acquired numerous real estate assets (T4) but did not acquire the operational processes (T5) or the people (T6) to run them, creating a structural gap between T4 and T5. This gap was mitigated at closing through property management and business management agreements with affiliates of the sponsor."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The registrant assembled ownership interests in a large portfolio, including 100% of Winston's common and preferred stock, while property management, business operations, and acquisition identification remained with sponsor affiliates rather than transferring into the registrant. This documents a product-versus-process boundary mismatch at closing, but property-management, business-management, and property-acquisition agreements contractually bridged that shared operating substrate. The people running those external processes likewise remained with the affiliated managers, so the slice does not document a separate mismatch between transferred processes and their operating organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"read-only\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"The company assembled the customer-facing portfolio (T4: 546 retail, 76 hotel, industrial, office and multi-family properties; the $841.8M Winston Hotels whole-company merger) onto its own balance sheet, but the operating processes that produce/deliver these assets did not cross with them: \\\"Property-level operating processes were not run by the company's own organization,\\\" and it relied on affiliated property managers, a business manager, and IREA for acquisition identification \\u2014 a product-vs-process mismatch at closing driving gap_45=1. Because T5 processes and T6 people/management sat together with the same sponsor affiliates (executive officers were employees of Inland Group affiliates; day-to-day operations under the business management agreement), the processes and the organization that run them stayed coherently aligned with each other, so gap_56=0. The gap_45 mismatch was contractually absorbed via the property-management, business-management, and property-acquisition agreements allocating the shared operating substrate (property management fees of $14,328K paid; IREA acquisition flow allocation), so gap_mitigated=yes.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The company acquired numerous real estate assets (T4) but did not acquire the operational processes (T5) or the people (T6) to run them, creating a structural gap between T4 and T5. This gap was mitigated at closing through property management and business management agreements with affiliates of the sponsor.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The registrant assembled ownership interests in a large portfolio, including 100% of Winston's common and preferred stock, while property management, business operations, and acquisition identification remained with sponsor affiliates rather than transferring into the registrant. This documents a product-versus-process boundary mismatch at closing, but property-management, business-management, and property-acquisition agreements contractually bridged that shared operating substrate. The people running those external processes likewise remained with the affiliated managers, so the slice does not document a separate mismatch between transferred processes and their operating organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "N-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

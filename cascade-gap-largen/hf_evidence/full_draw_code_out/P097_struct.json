@@ -1,0 +1,85 @@
+{
+  "case_id": "P097",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The multi-family assets (T4) were brought across primarily by buying out JV partners and consolidating the properties, and the operating processes that run them (T5) sat with the already-acquired Roseland platform, with a Form of Shared Services Agreement between Mack-Cali Realty, L.P. and Roseland Residential, L.P. explicitly allocating shared services alongside the assets — so product and its processes moved/aligned together (gap_45=0). Likewise, the Roseland operating platform's founding principals (Tycher, Klatt, Goldberg) were parties to the 2012 platform-purchase agreement and remain named key personnel running the operations, so the people/organization (T6) transferred and stayed aligned with the processes (T5), yielding gap_56=0. The multi-family business is housed in a distinct RRT/RRLP vehicle (T3 swap into a separate domiciled sub-structure) bridged to the parent by the Shared Services Agreement, indicating coherent alignment of substrate at the closing-era structure."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The drawn accession is an earnings/operations furnishing (8-K Item 2.02) reporting quarterly leasing results, not a structural transaction crossing an ownership boundary. Therefore, no structural gaps (gap_45 or gap_56) were created at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The acquired multi-family properties were consolidated into a portfolio whose operations were conducted through the Company's Roseland subsidiary, while the Company performed substantially all leasing, management, acquisition, and development in-house [SRC: SEC accession 0001104659-17-012551, 10-K FY2016]. Accordingly, the customer-facing rental assets were structurally paired with an identified operating platform rather than transferred without processes. Roseland's named key personnel and residential-development and leasing expertise remained within that operating structure, and a Shared Services Agreement allocated services between Mack-Cali Realty, L.P. and Roseland Residential, L.P.; therefore no process-versus-organization gap is documented at closing [SRC: SEC accession 0001104659-17-012551, 10-K FY2016]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The multi-family assets (T4) were brought across primarily by buying out JV partners and consolidating the properties, and the operating processes that run them (T5) sat with the already-acquired Roseland platform, with a Form of Shared Services Agreement between Mack-Cali Realty, L.P. and Roseland Residential, L.P. explicitly allocating shared services alongside the assets \\u2014 so product and its processes moved/aligned together (gap_45=0). Likewise, the Roseland operating platform's founding principals (Tycher, Klatt, Goldberg) were parties to the 2012 platform-purchase agreement and remain named key personnel running the operations, so the people/organization (T6) transferred and stayed aligned with the processes (T5), yielding gap_56=0. The multi-family business is housed in a distinct RRT/RRLP vehicle (T3 swap into a separate domiciled sub-structure) bridged to the parent by the Shared Services Agreement, indicating coherent alignment of substrate at the closing-era structure.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The drawn accession is an earnings/operations furnishing (8-K Item 2.02) reporting quarterly leasing results, not a structural transaction crossing an ownership boundary. Therefore, no structural gaps (gap_45 or gap_56) were created at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The acquired multi-family properties were consolidated into a portfolio whose operations were conducted through the Company's Roseland subsidiary, while the Company performed substantially all leasing, management, acquisition, and development in-house [SRC: SEC accession 0001104659-17-012551, 10-K FY2016]. Accordingly, the customer-facing rental assets were structurally paired with an identified operating platform rather than transferred without processes. Roseland's named key personnel and residential-development and leasing expertise remained within that operating structure, and a Shared Services Agreement allocated services between Mack-Cali Realty, L.P. and Roseland Residential, L.P.; therefore no process-versus-organization gap is documented at closing [SRC: SEC accession 0001104659-17-012551, 10-K FY2016].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": true,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

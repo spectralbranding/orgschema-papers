@@ -1,0 +1,58 @@
+{
+  "case_id": "P151",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "continued store contraction under private ownership: 46 Sears + 29 Kmart closures announced in 2021 (Coresight); no public audited outcome record",
+      "rationale": "The slice documents only that the acquired going concern passed to a private buyer (Transformco) and that Sears Holdings ceased periodic reporting (last 10-K FY2017; Form 15 filed April 2019), so there is no audited outcome record for the 2022-2024 window. The single traceable realized signal — 46 announced Sears and 29 Kmart closures in 2021 — reflects continued footprint contraction but does not specify disruption at the product/process interface (p4) or a process/organization fracture (p5). With no evidence isolating either interface, both are coded uncertain rather than 0, consistent with the slice's own UNCERTAIN outcome coding."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "continued contraction of the acquired store base",
+      "rationale": "The slice explicitly states that because the going-concern business passed to a private affiliate and ceased public reporting, there is no public audited outcome record for the ~2022-2024 window, making the outcome uncertain. There is no documented evidence of product/process or process/organization fracture, only press reports of continued store closures."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "continued store-base contraction (46 Sears + 29 Kmart closures in 2021); no audited public outcome",
+      "rationale": "The slice documents only continued retail-footprint contraction under private ownership (Coresight tallies of 46 Sears and 29 Kmart closures in 2021) and the absence of any public audited financials after the Form 15. No realized-outcome evidence is given of product/process interface misalignment (p4) or of operations fracturing against organization/culture (p5); absence of such documentation is therefore coded 0 for both pathways."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"continued store contraction under private ownership: 46 Sears + 29 Kmart closures announced in 2021 (Coresight); no public audited outcome record\", \"rationale\": \"The slice documents only that the acquired going concern passed to a private buyer (Transformco) and that Sears Holdings ceased periodic reporting (last 10-K FY2017; Form 15 filed April 2019), so there is no audited outcome record for the 2022-2024 window. The single traceable realized signal \\u2014 46 announced Sears and 29 Kmart closures in 2021 \\u2014 reflects continued footprint contraction but does not specify disruption at the product/process interface (p4) or a process/organization fracture (p5). With no evidence isolating either interface, both are coded uncertain rather than 0, consistent with the slice's own UNCERTAIN outcome coding.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"continued contraction of the acquired store base\",\n  \"rationale\": \"The slice explicitly states that because the going-concern business passed to a private affiliate and ceased public reporting, there is no public audited outcome record for the ~2022-2024 window, making the outcome uncertain. There is no documented evidence of product/process or process/organization fracture, only press reports of continued store closures.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"continued store-base contraction (46 Sears + 29 Kmart closures in 2021); no audited public outcome\",\n  \"rationale\": \"The slice documents only continued retail-footprint contraction under private ownership (Coresight tallies of 46 Sears and 29 Kmart closures in 2021) and the absence of any public audited financials after the Form 15. No realized-outcome evidence is given of product/process interface misalignment (p4) or of operations fracturing against organization/culture (p5); absence of such documentation is therefore coded 0 for both pathways.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

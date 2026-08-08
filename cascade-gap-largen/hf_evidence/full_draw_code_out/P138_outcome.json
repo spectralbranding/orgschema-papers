@@ -1,0 +1,58 @@
+{
+  "case_id": "P138",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not consummated",
+      "rationale": "The slice explicitly states that the proposed acquisition 'was not consummated' and no assets crossed the ownership boundary. Therefore, there was no post-deal integration, and no pathways of disruption could occur."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquisition not consummated; no assets transferred",
+      "rationale": "The slice documents that the proposed acquisition was never consummated (Form 10-Q for quarter ended June 30, 2016), so no assets crossed and no acquired business existed. Consequently there is no realized product/process-interface trajectory and no process/organization-interface trajectory over the outcome window; both pathways are coded 0 as none documented."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Proposed $200 million acquisition was not consummated",
+      "rationale": "The June 30, 2016 Form 10-Q documents that the contemplated acquisition was not consummated and that no Alpha Natural Resources assets crossed to the company. Because no acquired business existed, there was no realized product/process-interface trajectory or process/organization-interface trajectory and thus no documented disruption in either pathway."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not consummated\",\n  \"rationale\": \"The slice explicitly states that the proposed acquisition 'was not consummated' and no assets crossed the ownership boundary. Therefore, there was no post-deal integration, and no pathways of disruption could occur.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquisition not consummated; no assets transferred\",\n  \"rationale\": \"The slice documents that the proposed acquisition was never consummated (Form 10-Q for quarter ended June 30, 2016), so no assets crossed and no acquired business existed. Consequently there is no realized product/process-interface trajectory and no process/organization-interface trajectory over the outcome window; both pathways are coded 0 as none documented.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Proposed $200 million acquisition was not consummated\",\n  \"rationale\": \"The June 30, 2016 Form 10-Q documents that the contemplated acquisition was not consummated and that no Alpha Natural Resources assets crossed to the company. Because no acquired business existed, there was no realized product/process-interface trajectory or process/organization-interface trajectory and thus no documented disruption in either pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

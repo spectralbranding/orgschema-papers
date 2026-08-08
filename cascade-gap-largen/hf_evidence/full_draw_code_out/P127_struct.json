@@ -1,0 +1,85 @@
+{
+  "case_id": "P127",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "This is not a discrete merger/acquisition but an externally managed non-traded REIT: the registrant owns the customer-facing product (the pooled net-leased data center/healthcare portfolio, 51 properties held through wholly-owned single-purpose subsidiaries) but \"has no paid employees\" and \"rel[ies] on our Advisor to provide substantially all of our services\" — so the operational processes (property/asset management) never cross the ownership boundary into the registrant, driving gap_45=1. Likewise T6 organization/people are entirely absent from the registrant (no employees; management supplied by the Sponsor/Advisor/Property Manager complex), so the processes run without an internal organization aligned alongside them, driving gap_56=1. Both gaps are contractually absorbed via the Advisory Agreement and Property Management arrangement allocating the external substrate, so gap_mitigated=yes."
+    },
+    "gemini": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "uncertain",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "uncertain",
+      "gap_45": "uncertain",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The provided slice describes a continuously offered, non-traded REIT with ongoing property acquisitions rather than a discrete M&A transaction crossing an ownership boundary. Therefore, no structural transfer or gaps can be determined from the closing-era evidence."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing assets were accumulated into a diversified pool through ongoing property acquisitions, while property and asset management were supplied alongside that pool by the external Advisor and Property Manager under an Advisory Agreement; therefore, no product-versus-process structural mismatch is documented. [SRC: SEC accession 0001567925-17-000028, Form 10-K FY2016] The registrant had no paid employees and relied on the Advisor for substantially all services, with a Sponsor subsidiary serving as Property Manager, so the externally accessed processes and the organization operating them were structurally aligned rather than separated at closing. [SRC: SEC accession 0001567925-17-000028, Form 10-K FY2016]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"This is not a discrete merger/acquisition but an externally managed non-traded REIT: the registrant owns the customer-facing product (the pooled net-leased data center/healthcare portfolio, 51 properties held through wholly-owned single-purpose subsidiaries) but \\\"has no paid employees\\\" and \\\"rel[ies] on our Advisor to provide substantially all of our services\\\" \\u2014 so the operational processes (property/asset management) never cross the ownership boundary into the registrant, driving gap_45=1. Likewise T6 organization/people are entirely absent from the registrant (no employees; management supplied by the Sponsor/Advisor/Property Manager complex), so the processes run without an internal organization aligned alongside them, driving gap_56=1. Both gaps are contractually absorbed via the Advisory Agreement and Property Management arrangement allocating the external substrate, so gap_mitigated=yes.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"uncertain\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"uncertain\",\n  \"gap_45\": \"uncertain\",\n  \"gap_56\": \"uncertain\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The provided slice describes a continuously offered, non-traded REIT with ongoing property acquisitions rather than a discrete M&A transaction crossing an ownership boundary. Therefore, no structural transfer or gaps can be determined from the closing-era evidence.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing assets were accumulated into a diversified pool through ongoing property acquisitions, while property and asset management were supplied alongside that pool by the external Advisor and Property Manager under an Advisory Agreement; therefore, no product-versus-process structural mismatch is documented. [SRC: SEC accession 0001567925-17-000028, Form 10-K FY2016] The registrant had no paid employees and relied on the Advisor for substantially all services, with a Sponsor subsidiary serving as Property Manager, so the externally accessed processes and the organization operating them were structurally aligned rather than separated at closing. [SRC: SEC accession 0001567925-17-000028, Form 10-K FY2016]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "uncertain",
+    "sigma_T3": "uncertain",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": true,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": true,
+    "gap_56": true,
+    "gap_mitigated": false
+  },
+  "n_flags": 4
+}

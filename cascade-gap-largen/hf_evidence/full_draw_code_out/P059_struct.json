@@ -1,0 +1,85 @@
+{
+  "case_id": "P059",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a buyout of the remaining 50% equity interest in an existing joint venture. The operating substrate (warehouses, workforce, management) remained within the same operating entity, meaning T4, T5, and T6 transferred together as a whole (1-1) with no structural mismatch or gap documented at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The July 2012 buyout is structured solely as a Stock Purchase Agreement acquiring the partner's remaining 50% equity in the existing venture entity; the slice states that warehouses (T4), workforce/operations (T5), and divisional management (T6) 'remained within that same operating entity rather than being reconstituted' and that filings 'disclose no transfer of employees, management, or organization to or from a third party.' Product and processes therefore did not cross the ownership boundary apart from each other, nor did processes cross apart from organization, so gap_45 and gap_56 are both 0."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The buyout transferred the former partner's remaining 50% equity interest in the existing Costco Mexico venture, while the warehouses and operating substrate remained within that same entity; thus no product-versus-process mismatch is documented at closing. The approximately 9,000-person workforce and divisional management likewise remained with the operation, and the filings disclose no transfer of employees, management, or organization to or from a third party as part of the buyout, so no process-versus-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a buyout of the remaining 50% equity interest in an existing joint venture. The operating substrate (warehouses, workforce, management) remained within the same operating entity, meaning T4, T5, and T6 transferred together as a whole (1-1) with no structural mismatch or gap documented at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The July 2012 buyout is structured solely as a Stock Purchase Agreement acquiring the partner's remaining 50% equity in the existing venture entity; the slice states that warehouses (T4), workforce/operations (T5), and divisional management (T6) 'remained within that same operating entity rather than being reconstituted' and that filings 'disclose no transfer of employees, management, or organization to or from a third party.' Product and processes therefore did not cross the ownership boundary apart from each other, nor did processes cross apart from organization, so gap_45 and gap_56 are both 0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The buyout transferred the former partner's remaining 50% equity interest in the existing Costco Mexico venture, while the warehouses and operating substrate remained within that same entity; thus no product-versus-process mismatch is documented at closing. The approximately 9,000-person workforce and divisional management likewise remained with the operation, and the filings disclose no transfer of employees, management, or organization to or from a third party as part of the buyout, so no process-versus-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

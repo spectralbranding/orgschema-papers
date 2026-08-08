@@ -1,0 +1,58 @@
+{
+  "case_id": "P192",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no public audited outcome record (deregistered Aug 2018); rapid CEO turnover (~3 months in 2023) and $235M equity injection in 2025",
+      "rationale": "The slice documents no product/process interface disruption — instead it shows the business continuing to operate at global scale in 2023 (4,500+ employees, 14B+ annual gateway transactions, 2,500+ integrations), so p4 is coded 0. For p5, the slice records \"leadership instability\" with a CEO transition after roughly three months in 2023, which touches the organization/management dimension, but the evidence is too thin to establish a documented fracture at the process/organization interface (operations breaking against people/culture), so p5 is coded uncertain. No merger-archetype incoherence (t1) or business-model incompatibility (t2) is documented in the realized record."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "continued global-scale ops; $235M equity injection by 2025",
+      "rationale": "The slice documents continued operation at global scale under private ownership (4,500+ employees; 14B+ gateway transactions; 2,500+ integrations in 2023) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. Rapid CEO turnover in 2023 and a later equity injection are noted, but nothing documents operations fracturing against people/management/culture over time, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '14B+ annual gateway transactions in 2023'}",
+      "rationale": "{'type': 'string', 'enum': 'The 2023 release documents continued operations at global scale, including 4,500+ employees, more than 14 billion annual gateway transactions, and 2,500+ integrations; it does not document product-line or operating-process incoherence, so p4 is 0. Although the company had a CEO transition after approximately three months in 2023, the slice does not connect that turnover to a realized breakdown between operations and people, management, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no public audited outcome record (deregistered Aug 2018); rapid CEO turnover (~3 months in 2023) and $235M equity injection in 2025\", \"rationale\": \"The slice documents no product/process interface disruption \\u2014 instead it shows the business continuing to operate at global scale in 2023 (4,500+ employees, 14B+ annual gateway transactions, 2,500+ integrations), so p4 is coded 0. For p5, the slice records \\\"leadership instability\\\" with a CEO transition after roughly three months in 2023, which touches the organization/management dimension, but the evidence is too thin to establish a documented fracture at the process/organization interface (operations breaking against people/culture), so p5 is coded uncertain. No merger-archetype incoherence (t1) or business-model incompatibility (t2) is documented in the realized record.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"continued global-scale ops; $235M equity injection by 2025\",\n  \"rationale\": \"The slice documents continued operation at global scale under private ownership (4,500+ employees; 14B+ gateway transactions; 2,500+ integrations in 2023) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. Rapid CEO turnover in 2023 and a later equity injection are noted, but nothing documents operations fracturing against people/management/culture over time, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"14B+ annual gateway transactions in 2023\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The 2023 release documents continued operations at global scale, including 4,500+ employees, more than 14 billion annual gateway transactions, and 2,500+ integrations; it does not document product-line or operating-process incoherence, so p4 is 0. Although the company had a CEO transition after approximately three months in 2023, the slice does not connect that turnover to a realized breakdown between operations and people, management, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

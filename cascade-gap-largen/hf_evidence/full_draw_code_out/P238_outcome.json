@@ -1,0 +1,58 @@
+{
+  "case_id": "P238",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired bank fully merged into surviving bank subsidiary in 2018; no in-window scalar disclosed",
+      "rationale": "The acquirer's FY2021 and FY2022 Form 10-Ks disclose only that Xenith Bank was consolidated into the surviving bank subsidiary in 2018 with no distinct operating identity retained, and name Xenith solely as a completed past acquisition; no documented disruption at the product/process interface is present, so p4 = 0. Likewise, no documented fracture between operations and organization/people/culture appears in the realized record, so p5 = 0. No goodwill impairment, divestiture, or other adverse outcome scalar specific to Xenith was located; absence of documented pathway evidence is coded 0 rather than uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice indicates that Xenith Bank was fully merged into the surviving bank subsidiary in 2018 and its post-close trajectory is not reported separately. There is no documented evidence in the acquirer's subsequent filings of any product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the acquirer's FY2021 and FY2022 10-Ks disclose only that Xenith Bank was fully merged into the surviving bank subsidiary in 2018 and name it solely as a past acquisition, with no segment, reporting-unit, or scalar isolating its post-close trajectory. No goodwill impairment, write-down, divestiture, product/process incoherence, or operations-vs-organization fracture attributed to Xenith is documented in the ~2021-2023 window. Absence of any realized-disruption evidence at the product/process or process/organization interfaces therefore codes p4_pathway and p5_pathway as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"acquired bank fully merged into surviving bank subsidiary in 2018; no in-window scalar disclosed\", \"rationale\": \"The acquirer's FY2021 and FY2022 Form 10-Ks disclose only that Xenith Bank was consolidated into the surviving bank subsidiary in 2018 with no distinct operating identity retained, and name Xenith solely as a completed past acquisition; no documented disruption at the product/process interface is present, so p4 = 0. Likewise, no documented fracture between operations and organization/people/culture appears in the realized record, so p5 = 0. No goodwill impairment, divestiture, or other adverse outcome scalar specific to Xenith was located; absence of documented pathway evidence is coded 0 rather than uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice indicates that Xenith Bank was fully merged into the surviving bank subsidiary in 2018 and its post-close trajectory is not reported separately. There is no documented evidence in the acquirer's subsequent filings of any product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the acquirer's FY2021 and FY2022 10-Ks disclose only that Xenith Bank was fully merged into the surviving bank subsidiary in 2018 and name it solely as a past acquisition, with no segment, reporting-unit, or scalar isolating its post-close trajectory. No goodwill impairment, write-down, divestiture, product/process incoherence, or operations-vs-organization fracture attributed to Xenith is documented in the ~2021-2023 window. Absence of any realized-disruption evidence at the product/process or process/organization interfaces therefore codes p4_pathway and p5_pathway as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

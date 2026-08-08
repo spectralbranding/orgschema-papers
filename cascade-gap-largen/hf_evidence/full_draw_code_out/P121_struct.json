@@ -1,0 +1,85 @@
+{
+  "case_id": "P121",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "uncertain",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The registrant's real estate portfolio (T4) crossed into the surviving corporation by statutory merger/cancellation-and-conversion, and multiple entities collapsed into one surviving listed corporation (N-1). However, the slice explicitly states the filing \"does not describe the management or servicing arrangement of the surviving combined entity, nor whether the personnel or advisory processes running the registrant's portfolio continued,\" so whether the operational processes (T5) transferred or aligned alongside the product cannot be determined — hence gap_45 and the T5 label are uncertain. For T6, the external-advisory operating-partnership units were redeemed/cancelled and terminated at closing, but because the successor process arrangement (T5) is undocumented, the T5-vs-T6 relationship (gap_56) likewise cannot be structurally established. No transitional-services or shared-services agreement is described, and no controlling-natural-person fusion is described."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "At closing the registrant's real estate portfolio (T4) crossed by statutory merger into the surviving corporation, while the external-advisory operating-partnership interests that had run the portfolio were redeemed or cancelled and terminated, and the filing describes no transitional-services or operating agreement bridging that substrate (gap_45=1; gap_mitigated=no). The same filing expressly does not describe the surviving entity's management or servicing arrangement nor whether personnel or advisory processes continued, so no documented T5-without-T6 mismatch at closing can be coded (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the registrant's real estate portfolio was absorbed by statutory merger into the surviving corporation, but it expressly does not describe the surviving entity's management or servicing arrangement or whether the portfolio's advisory processes continued. Thus, no product-versus-process mismatch is documented at closing, so gap_45 is 0. Because neither the transfer of operating processes nor their misalignment with personnel, management, or culture is documented, gap_56 is also 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"uncertain\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"uncertain\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"NA\", \"rationale\": \"The registrant's real estate portfolio (T4) crossed into the surviving corporation by statutory merger/cancellation-and-conversion, and multiple entities collapsed into one surviving listed corporation (N-1). However, the slice explicitly states the filing \\\"does not describe the management or servicing arrangement of the surviving combined entity, nor whether the personnel or advisory processes running the registrant's portfolio continued,\\\" so whether the operational processes (T5) transferred or aligned alongside the product cannot be determined \\u2014 hence gap_45 and the T5 label are uncertain. For T6, the external-advisory operating-partnership units were redeemed/cancelled and terminated at closing, but because the successor process arrangement (T5) is undocumented, the T5-vs-T6 relationship (gap_56) likewise cannot be structurally established. No transitional-services or shared-services agreement is described, and no controlling-natural-person fusion is described.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"At closing the registrant's real estate portfolio (T4) crossed by statutory merger into the surviving corporation, while the external-advisory operating-partnership interests that had run the portfolio were redeemed or cancelled and terminated, and the filing describes no transitional-services or operating agreement bridging that substrate (gap_45=1; gap_mitigated=no). The same filing expressly does not describe the surviving entity's management or servicing arrangement nor whether personnel or advisory processes continued, so no documented T5-without-T6 mismatch at closing can be coded (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the registrant's real estate portfolio was absorbed by statutory merger into the surviving corporation, but it expressly does not describe the surviving entity's management or servicing arrangement or whether the portfolio's advisory processes continued. Thus, no product-versus-process mismatch is documented at closing, so gap_45 is 0. Because neither the transfer of operating processes nor their misalignment with personnel, management, or culture is documented, gap_56 is also 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "uncertain",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": true,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

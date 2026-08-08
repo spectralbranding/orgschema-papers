@@ -1,0 +1,85 @@
+{
+  "case_id": "P244",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the customer-facing product (regulated electric utility service) \"continued to be delivered through the parties' existing operating subsidiaries (Westar Energy and KCP&L/GMO), which continued to exist as subsidiaries,\" so product and its producing processes moved together intact under the new parent. gap_56=0: the deal ties the operating tier and people tier together—utility operating headquarters retained in both Topeka and Kansas City, a five-year minimum-employment commitment, no involuntary severances, and assumption of existing employment/severance plans—so processes and the organization/people aligned coherently at closing. This is a combination of two complete going-concern companies under a new holding parent (Monarch Energy, renamed Evergy), not a carve-out; T3 coded swap for the new legal domicile/holding vehicle, T2 N-1 as two utility businesses come under one parent, and T1 mutual-replace given the negotiated \"merger of equals\" allocation of board seats, committee chairs, and leadership."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a merger of equals combining two complete utility companies under a new holding company. The operating subsidiaries, processes, and workforces were retained and brought together under the new parent without structural mismatches between product, process, and people tiers."
+    },
+    "grok": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the customer-facing product (regulated electric utility service) continued to be delivered through the parties' existing operating subsidiaries (Westar Energy and KCP&L/GMO), which remained intact as subsidiaries of the new parent with utility operating headquarters retained in both Topeka and Kansas City, so product and processes crossed together rather than product moving without process. gap_56=0 because the same closing terms expressly tie the operating tier to the people tier via the commitment to maintain minimum Topeka employment for five years, avoid involuntary severances from the transaction, and have Monarch/Evergy assume all existing employment, severance, and change-in-control arrangements of both legacy companies and their subsidiaries; no carved-out substrate or TSA is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the customer-facing product (regulated electric utility service) \\\"continued to be delivered through the parties' existing operating subsidiaries (Westar Energy and KCP&L/GMO), which continued to exist as subsidiaries,\\\" so product and its producing processes moved together intact under the new parent. gap_56=0: the deal ties the operating tier and people tier together\\u2014utility operating headquarters retained in both Topeka and Kansas City, a five-year minimum-employment commitment, no involuntary severances, and assumption of existing employment/severance plans\\u2014so processes and the organization/people aligned coherently at closing. This is a combination of two complete going-concern companies under a new holding parent (Monarch Energy, renamed Evergy), not a carve-out; T3 coded swap for the new legal domicile/holding vehicle, T2 N-1 as two utility businesses come under one parent, and T1 mutual-replace given the negotiated \\\"merger of equals\\\" allocation of board seats, committee chairs, and leadership.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a merger of equals combining two complete utility companies under a new holding company. The operating subsidiaries, processes, and workforces were retained and brought together under the new parent without structural mismatches between product, process, and people tiers.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the customer-facing product (regulated electric utility service) continued to be delivered through the parties' existing operating subsidiaries (Westar Energy and KCP&L/GMO), which remained intact as subsidiaries of the new parent with utility operating headquarters retained in both Topeka and Kansas City, so product and processes crossed together rather than product moving without process. gap_56=0 because the same closing terms expressly tie the operating tier to the people tier via the commitment to maintain minimum Topeka employment for five years, avoid involuntary severances from the transaction, and have Monarch/Evergy assume all existing employment, severance, and change-in-control arrangements of both legacy companies and their subsidiaries; no carved-out substrate or TSA is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

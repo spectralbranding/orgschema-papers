@@ -1,0 +1,85 @@
+{
+  "case_id": "P161",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a Chapter 11 balance-sheet reorganization in which the coal-mining product, operating processes (mines), and workforce all remained with the same corporate registrant (Peabody Energy Corporation, same CIK 1064728), so product and its producing processes moved together — no product-vs-process mismatch at closing (gap_45=0). Likewise the operating processes and the workforce were retained by the same registrant with no re-engineering separating people from operations (gap_56=0); only the board was reconstituted and prior equity extinguished, coded T6 partial and T1 replace because old controlling equity intent exited and new creditor/investor owners were installed while operations continued intact."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a Chapter 11 reorganization where the old equity was extinguished and new equity was issued to creditors, replacing the controlling intent (T1). The business model, legal entity, products, processes, and organization (T2-T6) were retained 1-1 by the same corporate registrant. There is no evidence of a structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the coal-mining product and operating processes, including the mines, remained together with the same corporate registrant at emergence, so no product-process mismatch at closing is documented (SEC accession 0001193125-17-108650). It also states that the coal-mining assets and workforce were retained together, while only the capital structure, equity ownership, and board composition changed, so no process-organization transfer gap is documented at closing (SEC accession 0001193125-17-108650, Items 3.02 and 5.02)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a Chapter 11 balance-sheet reorganization in which the coal-mining product, operating processes (mines), and workforce all remained with the same corporate registrant (Peabody Energy Corporation, same CIK 1064728), so product and its producing processes moved together \\u2014 no product-vs-process mismatch at closing (gap_45=0). Likewise the operating processes and the workforce were retained by the same registrant with no re-engineering separating people from operations (gap_56=0); only the board was reconstituted and prior equity extinguished, coded T6 partial and T1 replace because old controlling equity intent exited and new creditor/investor owners were installed while operations continued intact.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a Chapter 11 reorganization where the old equity was extinguished and new equity was issued to creditors, replacing the controlling intent (T1). The business model, legal entity, products, processes, and organization (T2-T6) were retained 1-1 by the same corporate registrant. There is no evidence of a structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the coal-mining product and operating processes, including the mines, remained together with the same corporate registrant at emergence, so no product-process mismatch at closing is documented (SEC accession 0001193125-17-108650). It also states that the coal-mining assets and workforce were retained together, while only the capital structure, equity ownership, and board composition changed, so no process-organization transfer gap is documented at closing (SEC accession 0001193125-17-108650, Items 3.02 and 5.02).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P079",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Retained (no divestiture); equity-method carrying value $191.7M at Dec 28, 2014 (up from $112.6M); Fab 3B expansion postponed",
+      "rationale": "p4=1: the slice documents realized disruption at the product/process interface — the planned second manufacturing facility (Fab 3B) was postponed from 2012, equity injections were suspended, and Fab 3B \"fails to meet certain conditions required to continue to benefit from the tax ruling,\" forcing government discussions and loan-covenant waivers. p5=1: the slice documents process/organization fracture through the Company's disclosed \"problems managing the joint venture with AUO, whom we do not control and whose business objectives may be different from ours and may be inconsistent with our best interests,\" reflecting realized governance/organizational tension over shared control. t1 and t2 coded 0: no documented archetype incoherence or irreconcilable value-capture logics — the 50/50 cost-plus venture operated as described and was retained through the window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "carrying value of $191.7 million as of December 28, 2014",
+      "rationale": "The slice indicates the venture continued to operate Fab 3A and manufacture solar cells, with no documented product/process disruption (p4=0), though a planned expansion (Fab 3B) was postponed. While the company cited standard risk factors about managing a joint venture with a partner whose objectives might differ, there is no documented realized fracture at the process/organization interface (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; AUOSP carrying value $191.7M at ~4–4.5 yrs",
+      "rationale": "p4 is 0 because the slice documents only a curtailment of planned expansion (Fab 3B postponed from 2012, with related loan-covenant waivers and an unresolved tax-ruling condition), while Fab 3A continued to manufacture solar cells and sell them on a cost-plus basis to both owners—no realized product/process incoherence is stated. p5 is 0 because the only process/organization material is a standing risk disclosure that the Company does not control AUO and that objectives may diverge, together with continued equity-method accounting under the shared-power arrangement; no realized fracture of operations against organization is documented. The venture remained in place and was retained through the window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Retained (no divestiture); equity-method carrying value $191.7M at Dec 28, 2014 (up from $112.6M); Fab 3B expansion postponed\", \"rationale\": \"p4=1: the slice documents realized disruption at the product/process interface \\u2014 the planned second manufacturing facility (Fab 3B) was postponed from 2012, equity injections were suspended, and Fab 3B \\\"fails to meet certain conditions required to continue to benefit from the tax ruling,\\\" forcing government discussions and loan-covenant waivers. p5=1: the slice documents process/organization fracture through the Company's disclosed \\\"problems managing the joint venture with AUO, whom we do not control and whose business objectives may be different from ours and may be inconsistent with our best interests,\\\" reflecting realized governance/organizational tension over shared control. t1 and t2 coded 0: no documented archetype incoherence or irreconcilable value-capture logics \\u2014 the 50/50 cost-plus venture operated as described and was retained through the window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"carrying value of $191.7 million as of December 28, 2014\",\n  \"rationale\": \"The slice indicates the venture continued to operate Fab 3A and manufacture solar cells, with no documented product/process disruption (p4=0), though a planned expansion (Fab 3B) was postponed. While the company cited standard risk factors about managing a joint venture with a partner whose objectives might differ, there is no documented realized fracture at the process/organization interface (p5=0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; AUOSP carrying value $191.7M at ~4–4.5 yrs\",\n  \"rationale\": \"p4 is 0 because the slice documents only a curtailment of planned expansion (Fab 3B postponed from 2012, with related loan-covenant waivers and an unresolved tax-ruling condition), while Fab 3A continued to manufacture solar cells and sell them on a cost-plus basis to both owners—no realized product/process incoherence is stated. p5 is 0 because the only process/organization material is a standing risk disclosure that the Company does not control AUO and that objectives may diverge, together with continued equity-method accounting under the shared-power arrangement; no realized fracture of operations against organization is documented. The venture remained in place and was retained through the window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

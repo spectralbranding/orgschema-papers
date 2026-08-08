@@ -1,0 +1,85 @@
+{
+  "case_id": "P225",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the transaction was a whole-company share acquisition of 100% of outstanding common shares with \"no disclosed carve-out or transition-services bridge,\" and both On-Site and cloud product lines \"crossed to the acquirer as a single, intact operating entity\" — so T4 (product) and T5 (processes) moved together, yielding gap_45 = 0. The named executive officers \"immediately continued to be employed by the Company or an affiliate under an amended and restated employment agreement providing for substantially the same terms,\" so the operating processes and the people/management running them crossed intact together, yielding gap_56 = 0. Discontinuity was confined to the outer governance/board and holding-company/financing tiers (complete board turnover, new multi-tier Cayman/UK/Delaware holding stack — T3 swap; sponsor intent replacing prior public-shareholder control — T1 replace), not the operating substrate; no gap, so gap_mitigated = NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition where 100% of Mitel's shares were acquired by Searchlight. The customer-facing products (T4), operational processes (T5), and organization/management (T6) all transferred intact as a single operating entity, with no carve-outs or structural mismatches documented at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the whole company and its product lines (On-Site and cloud) crossed as a single intact operating entity via 100% share acquisition with no carve-out, so T4 and T5 moved together (gap_45=0). It further states the acquired entity's operating substrate crossed intact and named executive officers continued under amended employment agreements on substantially the same terms, with discontinuity confined to board/governance replacement and no TSA needed, so T5 and T6 aligned at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the transaction was a whole-company share acquisition of 100% of outstanding common shares with \\\"no disclosed carve-out or transition-services bridge,\\\" and both On-Site and cloud product lines \\\"crossed to the acquirer as a single, intact operating entity\\\" \\u2014 so T4 (product) and T5 (processes) moved together, yielding gap_45 = 0. The named executive officers \\\"immediately continued to be employed by the Company or an affiliate under an amended and restated employment agreement providing for substantially the same terms,\\\" so the operating processes and the people/management running them crossed intact together, yielding gap_56 = 0. Discontinuity was confined to the outer governance/board and holding-company/financing tiers (complete board turnover, new multi-tier Cayman/UK/Delaware holding stack \\u2014 T3 swap; sponsor intent replacing prior public-shareholder control \\u2014 T1 replace), not the operating substrate; no gap, so gap_mitigated = NA.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition where 100% of Mitel's shares were acquired by Searchlight. The customer-facing products (T4), operational processes (T5), and organization/management (T6) all transferred intact as a single operating entity, with no carve-outs or structural mismatches documented at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the whole company and its product lines (On-Site and cloud) crossed as a single intact operating entity via 100% share acquisition with no carve-out, so T4 and T5 moved together (gap_45=0). It further states the acquired entity's operating substrate crossed intact and named executive officers continued under amended employment agreements on substantially the same terms, with discontinuity confined to board/governance replacement and no TSA needed, so T5 and T6 aligned at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

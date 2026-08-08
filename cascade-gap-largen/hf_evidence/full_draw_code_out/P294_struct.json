@@ -1,0 +1,85 @@
+{
+  "case_id": "P294",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a SPAC reverse merger in which Verra Mobility's pre-existing operating business — customer-facing product lines (toll/violations management, title/registration, automated safety), its operating processes, and its management/people — all crossed intact together; the product \"crossed intact as Verra Mobility's pre-existing operating business\" rather than being newly assembled, so no T4-vs-T5 mismatch exists (gap_45=0). The proxy expressly states \"management of Verra Mobility will continue to manage the company\" and that ongoing senior management would be \"entirely comprised of Verra Mobility employees,\" so the T5 process tier moved together with the T6 people/management tier (gap_56=0). The SPAC contributed only its public listing, cash trust, and legal shell (target-accounting-acquirer, renamed to target), coding T3 as a swap of legal vehicle while T1 controlling intent (Platinum, retaining ~34-47% voting power and board control) continued."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the customer-facing product/service lines crossed intact as Verra Mobility's pre-existing operating business under the SPAC shell, with no product-vs-process separation at closing, so gap_45=0. It further states that all Verra Mobility executive officers would remain, that ongoing senior management would be entirely Verra Mobility employees, and that 'the operating-personnel/management tier was retained together with the product/process tier rather than separated from it,' so gap_56=0."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the customer-facing service lines crossed intact as Verra Mobility’s pre-existing operating business and characterizes the transaction as a whole-business combination, so no product-versus-process mismatch is documented at closing. It also states that Verra Mobility’s management would continue to manage the company, that all executive officers were anticipated to remain, and that the management, employees, product, and process tiers were retained together; therefore, no process-versus-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a SPAC reverse merger in which Verra Mobility's pre-existing operating business \\u2014 customer-facing product lines (toll/violations management, title/registration, automated safety), its operating processes, and its management/people \\u2014 all crossed intact together; the product \\\"crossed intact as Verra Mobility's pre-existing operating business\\\" rather than being newly assembled, so no T4-vs-T5 mismatch exists (gap_45=0). The proxy expressly states \\\"management of Verra Mobility will continue to manage the company\\\" and that ongoing senior management would be \\\"entirely comprised of Verra Mobility employees,\\\" so the T5 process tier moved together with the T6 people/management tier (gap_56=0). The SPAC contributed only its public listing, cash trust, and legal shell (target-accounting-acquirer, renamed to target), coding T3 as a swap of legal vehicle while T1 controlling intent (Platinum, retaining ~34-47% voting power and board control) continued.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the customer-facing product/service lines crossed intact as Verra Mobility's pre-existing operating business under the SPAC shell, with no product-vs-process separation at closing, so gap_45=0. It further states that all Verra Mobility executive officers would remain, that ongoing senior management would be entirely Verra Mobility employees, and that 'the operating-personnel/management tier was retained together with the product/process tier rather than separated from it,' so gap_56=0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the customer-facing service lines crossed intact as Verra Mobility’s pre-existing operating business and characterizes the transaction as a whole-business combination, so no product-versus-process mismatch is documented at closing. It also states that Verra Mobility’s management would continue to manage the company, that all executive officers were anticipated to remain, and that the management, employees, product, and process tiers were retained together; therefore, no process-versus-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

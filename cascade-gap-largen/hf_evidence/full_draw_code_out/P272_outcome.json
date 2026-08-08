@@ -1,0 +1,58 @@
+{
+  "case_id": "P272",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Orderly liquidation completed ~3yr8mo after July 2018 vote; ~$15.14/Unit aggregate distributions since inception; net assets in liquidation declined $549.7M (2020) to $330.6M (2021); final property sold March 2022 for $150.0M",
+      "rationale": "This is a plan-of-liquidation/wind-down record, not an operating integration. No product/process incoherence is documented — the portfolio (45 properties) was sold down in an orderly fashion (40 sold by year-end 2020, remainder through March 2022) with the only delay attributed to the Coronavirus pandemic, not any product/operations misalignment, so p4_pathway = 0. No process/organization fracture is documented — the same external Advisor/Hines management \"continued operating and disposing of the portfolio throughout,\" trustees were drawn from the predecessor board, and the entity had no employees, indicating management/organization continuity rather than fracture, so p5_pathway = 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "aggregate distributions since inception were reported at approximately $15.14 per share/Unit",
+      "rationale": "The provided slice details a planned liquidation and dissolution process, not an operational integration of two companies. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5), as the entity had no employees and continued to be managed by the same external advisor throughout the disposition period."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "all 45 properties sold by Mar 2022; ~$15.14/unit aggregate distributions",
+      "rationale": "The slice documents an orderly multi-year disposition of all 45 properties (40 sold by end-2020, four in 2021, final Minneapolis Retail Center in March 2022) with no realized product/process incoherence; delay is attributed only to pandemic disruption, not alignment failure. Process/organization continuity is explicit: the same external Hines Advisor managed operations throughout under successive advisory agreements, trustees were drawn from the predecessor board plus the CIO, and the same CIK continued reporting through final distribution and Trust termination approach—no fracture between operations and organization is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Orderly liquidation completed ~3yr8mo after July 2018 vote; ~$15.14/Unit aggregate distributions since inception; net assets in liquidation declined $549.7M (2020) to $330.6M (2021); final property sold March 2022 for $150.0M\", \"rationale\": \"This is a plan-of-liquidation/wind-down record, not an operating integration. No product/process incoherence is documented \\u2014 the portfolio (45 properties) was sold down in an orderly fashion (40 sold by year-end 2020, remainder through March 2022) with the only delay attributed to the Coronavirus pandemic, not any product/operations misalignment, so p4_pathway = 0. No process/organization fracture is documented \\u2014 the same external Advisor/Hines management \\\"continued operating and disposing of the portfolio throughout,\\\" trustees were drawn from the predecessor board, and the entity had no employees, indicating management/organization continuity rather than fracture, so p5_pathway = 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"aggregate distributions since inception were reported at approximately $15.14 per share/Unit\",\n  \"rationale\": \"The provided slice details a planned liquidation and dissolution process, not an operational integration of two companies. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5), as the entity had no employees and continued to be managed by the same external advisor throughout the disposition period.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"all 45 properties sold by Mar 2022; ~$15.14/unit aggregate distributions\",\n  \"rationale\": \"The slice documents an orderly multi-year disposition of all 45 properties (40 sold by end-2020, four in 2021, final Minneapolis Retail Center in March 2022) with no realized product/process incoherence; delay is attributed only to pandemic disruption, not alignment failure. Process/organization continuity is explicit: the same external Hines Advisor managed operations throughout under successive advisory agreements, trustees were drawn from the predecessor board plus the CIO, and the same CIK continued reporting through final distribution and Trust termination approach—no fracture between operations and organization is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P152",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "terminate",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: the customer-facing product (Trulance/plecanatide, IP, contracts, receivables, goodwill) crossed the ownership boundary, but the slice states the acquirer ran it through \"our existing Salix commercial, supply, and distribution processes rather than Synergy's operating processes crossing intact\" — a documented product-vs-process mismatch at closing. gap_56=1: the Sellers' operational processes were replaced by the acquirer's Salix processes while only \"a number of the sales and commercial employees\" received selective employment offers, so the running organization did not transfer coherently alongside. gap_mitigated=no: the slice expressly states no transition-services, shared-services, or supply agreement between the parties is described in any source; the product relied solely on the acquirer's pre-existing channels. T1=continue as the acquirer's own \"strategic bolt-on\" controlling intent persists; T2/T3=null as this was a Section 363 asset purchase, not a transfer of business model or legal vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was structured as an asset purchase where the Trulance product rights (T4) crossed the boundary, but the seller's operational processes (T5) did not, as the acquirer folded the product into its own existing Salix infrastructure. Furthermore, only a selected subset of the seller's sales employees (T6) received employment offers, creating structural mismatches between product, process, and organization without any documented transition services agreement."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The worldwide product rights and related assets crossed the ownership boundary, while the product was placed into Bausch Health's pre-existing Salix commercial, supply, and distribution processes; this documents coherent process alignment rather than a product-process gap. Those processes were supported by the acquirer's existing organization, supplemented by selective employment offers to Synergy sales and commercial employees, so no process-organization structural mismatch is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"null\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"terminate\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: the customer-facing product (Trulance/plecanatide, IP, contracts, receivables, goodwill) crossed the ownership boundary, but the slice states the acquirer ran it through \\\"our existing Salix commercial, supply, and distribution processes rather than Synergy's operating processes crossing intact\\\" \\u2014 a documented product-vs-process mismatch at closing. gap_56=1: the Sellers' operational processes were replaced by the acquirer's Salix processes while only \\\"a number of the sales and commercial employees\\\" received selective employment offers, so the running organization did not transfer coherently alongside. gap_mitigated=no: the slice expressly states no transition-services, shared-services, or supply agreement between the parties is described in any source; the product relied solely on the acquirer's pre-existing channels. T1=continue as the acquirer's own \\\"strategic bolt-on\\\" controlling intent persists; T2/T3=null as this was a Section 363 asset purchase, not a transfer of business model or legal vehicle.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction was structured as an asset purchase where the Trulance product rights (T4) crossed the boundary, but the seller's operational processes (T5) did not, as the acquirer folded the product into its own existing Salix infrastructure. Furthermore, only a selected subset of the seller's sales employees (T6) received employment offers, creating structural mismatches between product, process, and organization without any documented transition services agreement.\"\n}\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The worldwide product rights and related assets crossed the ownership boundary, while the product was placed into Bausch Health's pre-existing Salix commercial, supply, and distribution processes; this documents coherent process alignment rather than a product-process gap. Those processes were supported by the acquirer's existing organization, supplemented by selective employment offers to Synergy sales and commercial employees, so no process-organization structural mismatch is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "terminate",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

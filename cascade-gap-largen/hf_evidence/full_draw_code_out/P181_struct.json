@@ -1,0 +1,85 @@
+{
+  "case_id": "P181",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is structured as a whole-company acquisition: the entire Allied World legal entity — \"its insurance and reinsurance business, subsidiaries, and management\" — transfers to Fairfax control by exchange offer plus Swiss squeeze-out merger, so product (T4) and its producing/delivering operations (T5) cross the boundary together (gap_45=0). The filing states Allied World \"will operate within the Fairfax Group on a decentralized basis\" with \"executive and senior management teams... intended to continue in their current roles,\" so processes (T5) move alongside their people/organization (T6), yielding gap_56=0. Because no gap is coded and the proxy explicitly notes no transitional-services or shared-services agreement separating tiers, gap_mitigated is NA. T1 is coded continue because both boards state intent for Allied World to continue operating with its existing management; T3 is swap because Allied World merges with and into Fairfax (Switzerland) as the surviving legal vehicle."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the exchange offer plus Swiss squeeze-out merger transfers the entire Allied World legal entity—assets, liabilities, subsidiaries, insurance/reinsurance business, and management—under Fairfax control by operation of law, with no separation of product from process tiers and no transitional-services bridge. Plans expressly keep Allied World operating on a decentralized basis with executive and senior management continuing in their current roles, so T4, T5, and T6 cross together; thus gap_45=0 and gap_56=0."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The filing describes a whole-company acquisition transferring Allied World's entire insurance and reinsurance business, assets, liabilities, and subsidiaries, rather than separating its product and operating-process tiers; therefore gap_45 is 0. It also states that Allied World would continue operating on a decentralized basis with its existing executive and senior management teams in their current roles, so the processes and the organization running them moved coherently together and gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is structured as a whole-company acquisition: the entire Allied World legal entity \\u2014 \\\"its insurance and reinsurance business, subsidiaries, and management\\\" \\u2014 transfers to Fairfax control by exchange offer plus Swiss squeeze-out merger, so product (T4) and its producing/delivering operations (T5) cross the boundary together (gap_45=0). The filing states Allied World \\\"will operate within the Fairfax Group on a decentralized basis\\\" with \\\"executive and senior management teams... intended to continue in their current roles,\\\" so processes (T5) move alongside their people/organization (T6), yielding gap_56=0. Because no gap is coded and the proxy explicitly notes no transitional-services or shared-services agreement separating tiers, gap_mitigated is NA. T1 is coded continue because both boards state intent for Allied World to continue operating with its existing management; T3 is swap because Allied World merges with and into Fairfax (Switzerland) as the surviving legal vehicle.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the exchange offer plus Swiss squeeze-out merger transfers the entire Allied World legal entity—assets, liabilities, subsidiaries, insurance/reinsurance business, and management—under Fairfax control by operation of law, with no separation of product from process tiers and no transitional-services bridge. Plans expressly keep Allied World operating on a decentralized basis with executive and senior management continuing in their current roles, so T4, T5, and T6 cross together; thus gap_45=0 and gap_56=0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The filing describes a whole-company acquisition transferring Allied World's entire insurance and reinsurance business, assets, liabilities, and subsidiaries, rather than separating its product and operating-process tiers; therefore gap_45 is 0. It also states that Allied World would continue operating on a decentralized basis with its existing executive and senior management teams in their current roles, so the processes and the organization running them moved coherently together and gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

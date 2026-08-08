@@ -1,0 +1,58 @@
+{
+  "case_id": "P097",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "~$51.4M net loss FY2020 (swing from ~$111.9M net income FY2019); $36.6M hotel impairment",
+      "rationale": "The slice documents a realized financial swing to a ~$51.4M net loss, a $36.6M COVID-driven hotel impairment, a $15.7M held-for-sale loss allowance, a portfolio wind-down (16 office properties held for sale, footprint reduced to 52 properties/~256 employees), and a corporate name change to Veris Residential. However, none of these lines describe any transaction or its post-deal integration; there is no evidence tying disruption to a product/process interface (p4) or to a process/organization interface (p5). Because the slice contains no information about an underlying deal or integration dynamics, both pathway determinations cannot be made and are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of $(51,387) thousand for FY2020",
+      "rationale": "The slice documents financial losses, impairments on hotel assets due to COVID-19, and properties held for sale. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) resulting from a corporate transaction."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$51.4M net loss FY2020 (from +$112M in 2019); $36.6M hotel impairment",
+      "rationale": "The slice documents 2020 financial losses, COVID-driven hotel impairments, held-for-sale write-downs on office assets, a reduced 52-property footprint, and a 2021 name change to Veris Residential, but contains no evidence of product/process interface disruption (p4) such as acquired-product versus operating-process incoherence over time. Likewise nothing documents a process/organization fracture (p5) involving operations breaking against people, management, or culture; employee count and ownership percentages are stated without integration-failure narrative."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"~$51.4M net loss FY2020 (swing from ~$111.9M net income FY2019); $36.6M hotel impairment\", \"rationale\": \"The slice documents a realized financial swing to a ~$51.4M net loss, a $36.6M COVID-driven hotel impairment, a $15.7M held-for-sale loss allowance, a portfolio wind-down (16 office properties held for sale, footprint reduced to 52 properties/~256 employees), and a corporate name change to Veris Residential. However, none of these lines describe any transaction or its post-deal integration; there is no evidence tying disruption to a product/process interface (p4) or to a process/organization interface (p5). Because the slice contains no information about an underlying deal or integration dynamics, both pathway determinations cannot be made and are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss of $(51,387) thousand for FY2020\",\n  \"rationale\": \"The slice documents financial losses, impairments on hotel assets due to COVID-19, and properties held for sale. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) resulting from a corporate transaction.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$51.4M net loss FY2020 (from +$112M in 2019); $36.6M hotel impairment\",\n  \"rationale\": \"The slice documents 2020 financial losses, COVID-driven hotel impairments, held-for-sale write-downs on office assets, a reduced 52-property footprint, and a 2021 name change to Veris Residential, but contains no evidence of product/process interface disruption (p4) such as acquired-product versus operating-process incoherence over time. Likewise nothing documents a process/organization fracture (p5) involving operations breaking against people, management, or culture; employee count and ownership percentages are stated without integration-failure narrative.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

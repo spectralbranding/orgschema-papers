@@ -1,0 +1,58 @@
+{
+  "case_id": "P224",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$644.9M noncash impairment (2020); net income recovered to $1,499.7M in 2021, above 2019; no divestiture",
+      "rationale": "The slice documents no product/process interface disruption: the acquired midstream business continued to be reported as ONEOK's core consolidated operations across three segments, with no product-line/operations incoherence noted (p4=0). It documents no process/organization fracture: several officers and directors from the 2017 merger remained in place, and the CEO transition from Spencer to Norton is reported as ordinary succession with no cited integration conflict between operations and organization (p5=0). The 2020 net-income decline and $644.9M impairment are attributed to the commodity-price and market-capitalization environment, not to integration failure, and net income recovered above pre-decline levels by 2021."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; $644.9M impairment then recovery",
+      "rationale": "The slice documents 2020 noncash impairment charges of $644.9M attributed to commodity-price and market-capitalization declines, not to any inability to align acquired products with operating processes; the midstream segments continued as ONEOK's core consolidated operations with no product/process incoherence noted, so p4_pathway=0. Officers and directors from the merger period largely remained in place through FY2020–FY2021 filings, with only a routine CEO succession and no documented operations-versus-organization or cultural fracture, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$644.9 million noncash impairment in 2020, followed by net-income recovery to $1.50 billion in 2021",
+      "rationale": "No product/process-interface disruption is documented; the acquired midstream business remained within ONEOK’s core consolidated operating segments, with no divestiture, bankruptcy, or dissolution found. No process/organization fracture is documented: several officers and directors continued in their roles through FY2021, and the CEO change is not linked to integration problems. The 2020 impairment was attributed to commodity-price and market-capitalization declines rather than product/process or process/organization incoherence."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"$644.9M noncash impairment (2020); net income recovered to $1,499.7M in 2021, above 2019; no divestiture\", \"rationale\": \"The slice documents no product/process interface disruption: the acquired midstream business continued to be reported as ONEOK's core consolidated operations across three segments, with no product-line/operations incoherence noted (p4=0). It documents no process/organization fracture: several officers and directors from the 2017 merger remained in place, and the CEO transition from Spencer to Norton is reported as ordinary succession with no cited integration conflict between operations and organization (p5=0). The 2020 net-income decline and $644.9M impairment are attributed to the commodity-price and market-capitalization environment, not to integration failure, and net income recovered above pre-decline levels by 2021.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; $644.9M impairment then recovery\",\n  \"rationale\": \"The slice documents 2020 noncash impairment charges of $644.9M attributed to commodity-price and market-capitalization declines, not to any inability to align acquired products with operating processes; the midstream segments continued as ONEOK's core consolidated operations with no product/process incoherence noted, so p4_pathway=0. Officers and directors from the merger period largely remained in place through FY2020–FY2021 filings, with only a routine CEO succession and no documented operations-versus-organization or cultural fracture, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$644.9 million noncash impairment in 2020, followed by net-income recovery to $1.50 billion in 2021\",\n  \"rationale\": \"No product/process-interface disruption is documented; the acquired midstream business remained within ONEOK’s core consolidated operating segments, with no divestiture, bankruptcy, or dissolution found. No process/organization fracture is documented: several officers and directors continued in their roles through FY2021, and the CEO change is not linked to integration problems. The 2020 impairment was attributed to commodity-price and market-capitalization declines rather than product/process or process/organization incoherence.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

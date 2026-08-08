@@ -1,0 +1,58 @@
+{
+  "case_id": "P155",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "buyer (Bennu) filed Chapter 7 and ceased operations ~Dec 2016 (secondary press); no SEC operating record",
+      "rationale": "The buyer was a non-reporting private entity, so no SEC periodic report documents the operating trajectory of the transferred assets, and the slice explicitly codes the realized operating outcome UNCERTAIN on the primary record. Nothing in the slice documents disruption at the product/process interface (p4) nor a fracture at the process/organization interface (p5); the only realized-outcome evidence is a secondary press report of a Chapter 7 filing and shutdown, which does not attribute the failure to any specific integration pathway. Absent primary documentation of these specific interface disruptions and given the explicit uncertainty flag, both pathways are coded uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "buyer Chapter 7 Dec 2016; operations ceased",
+      "rationale": "The slice states that no SEC operating record exists for the transferred assets in the ~2016-2018 window and codes the realized operating outcome UNCERTAIN on the primary record; reputable press only notes Bennu’s Chapter 7 filing and shutdown, without any documented product/process misalignment. No evidence is given of operations-vs-organization fracture over time, so both p4_pathway and p5_pathway are coded 0 (none documented)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 7 bankruptcy and cessation of operations in December 2016",
+      "rationale": "Reputable trade press documents that Bennu filed Chapter 7 bankruptcy and ceased operations in December 2016, but it does not attribute that outcome to product/process misalignment. The slice also documents no realized fracture between operations and people, management, or culture; moreover, no public SEC periodic reports describe the assets’ operating trajectory during 2016-2018."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"buyer (Bennu) filed Chapter 7 and ceased operations ~Dec 2016 (secondary press); no SEC operating record\", \"rationale\": \"The buyer was a non-reporting private entity, so no SEC periodic report documents the operating trajectory of the transferred assets, and the slice explicitly codes the realized operating outcome UNCERTAIN on the primary record. Nothing in the slice documents disruption at the product/process interface (p4) nor a fracture at the process/organization interface (p5); the only realized-outcome evidence is a secondary press report of a Chapter 7 filing and shutdown, which does not attribute the failure to any specific integration pathway. Absent primary documentation of these specific interface disruptions and given the explicit uncertainty flag, both pathways are coded uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"buyer Chapter 7 Dec 2016; operations ceased\",\n  \"rationale\": \"The slice states that no SEC operating record exists for the transferred assets in the ~2016-2018 window and codes the realized operating outcome UNCERTAIN on the primary record; reputable press only notes Bennu’s Chapter 7 filing and shutdown, without any documented product/process misalignment. No evidence is given of operations-vs-organization fracture over time, so both p4_pathway and p5_pathway are coded 0 (none documented).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 7 bankruptcy and cessation of operations in December 2016\",\n  \"rationale\": \"Reputable trade press documents that Bennu filed Chapter 7 bankruptcy and ceased operations in December 2016, but it does not attribute that outcome to product/process misalignment. The slice also documents no realized fracture between operations and people, management, or culture; moreover, no public SEC periodic reports describe the assets’ operating trajectory during 2016-2018.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P125",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Portfolio contracted 63→35 properties; merged into affiliated REIT (STAR) March 2020 at 0.5934 shares/share, then deregistered",
+      "rationale": "The slice documents an orderly realized trajectory — portfolio contraction via gain-generating dispositions (Willow Crossing $24.1M gain, Heights at 2121 $14.4M gain), a swing from a 2016 net loss to growing 2017-2018 net income, and a stock-for-stock merger into an affiliated, commonly sponsored REIT completed March 2020. No line describes disruption at the product/process interface (no operational incoherence with the multifamily assets over time), so p4 = 0. No line describes fracture between operations and people/management/culture (integration into STAR is documented as completed without any reported organizational conflict), so p5 = 0. Post-merger trajectory is explicitly coded uncertain by the no-record principle, but that does not evidence either pathway."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income increased further to $89,083,552 for the year ended December 31, 2018",
+      "rationale": "The provided slice documents the contraction of the REIT's portfolio through profitable property sales and its eventual merger into an affiliated REIT. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) during the 3-5 year post-deal window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "portfolio 63→35 properties; merged into affiliate Mar 2020",
+      "rationale": "The slice documents orderly portfolio contraction from 63 to 35 properties via individual dispositions at gains, with net income rising in 2017–2018 primarily from those sale gains and expense reductions tracking the smaller portfolio; no product/process interface disruption is recorded. No process/organization fracture (operations vs people/management/culture) is documented either—the realized path ends in a stockholder-approved stock-for-stock merger into an affiliated REIT and deregistration, without evidence of integration breaking against the organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Portfolio contracted 63\\u219235 properties; merged into affiliated REIT (STAR) March 2020 at 0.5934 shares/share, then deregistered\", \"rationale\": \"The slice documents an orderly realized trajectory \\u2014 portfolio contraction via gain-generating dispositions (Willow Crossing $24.1M gain, Heights at 2121 $14.4M gain), a swing from a 2016 net loss to growing 2017-2018 net income, and a stock-for-stock merger into an affiliated, commonly sponsored REIT completed March 2020. No line describes disruption at the product/process interface (no operational incoherence with the multifamily assets over time), so p4 = 0. No line describes fracture between operations and people/management/culture (integration into STAR is documented as completed without any reported organizational conflict), so p5 = 0. Post-merger trajectory is explicitly coded uncertain by the no-record principle, but that does not evidence either pathway.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income increased further to $89,083,552 for the year ended December 31, 2018\",\n  \"rationale\": \"The provided slice documents the contraction of the REIT's portfolio through profitable property sales and its eventual merger into an affiliated REIT. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) during the 3-5 year post-deal window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"portfolio 63→35 properties; merged into affiliate Mar 2020\",\n  \"rationale\": \"The slice documents orderly portfolio contraction from 63 to 35 properties via individual dispositions at gains, with net income rising in 2017–2018 primarily from those sale gains and expense reductions tracking the smaller portfolio; no product/process interface disruption is recorded. No process/organization fracture (operations vs people/management/culture) is documented either—the realized path ends in a stockholder-approved stock-for-stock merger into an affiliated REIT and deregistration, without evidence of integration breaking against the organization.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P172",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2016 net loss $(1,240)M driven by $849M aggregate asset impairment across three generation facilities",
+      "rationale": "The slice documents only a financial trajectory (net losses in 2013-2014 and 2016, small profits in 2015 and 2017) and asset impairment charges at named generation facilities (Wood River, Brayton Point, Stuart, Newton, Baldwin), plus a subsequent 2017 merger agreement. No line describes disruption at the product/process interface (product-operations incoherence), so p4 = 0; likewise no line describes any operations-versus-organization/culture/management fracture, so p5 = 0. The impairments are documented as facility-level asset write-downs without any narrative of integration failure across these interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$849M asset impairments FY2016; Vistra merger agreed 2017",
+      "rationale": "The slice documents only financial results and facility-level asset impairments (Wood River, Brayton Point, Stuart, Newton, Baldwin) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. No evidence is given of operations-versus-organization, management, or cultural fracture over the window, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$1.24 billion net loss in FY2016, including $849 million of asset impairments'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record documents volatile earnings and $849 million of impairments across the Stuart, Newton, and Baldwin generation facilities in FY2016 (SEC accession 0001379895-17-000004), but it does not attribute these outcomes to product/process incoherence; therefore p4_pathway is 0. It likewise reports no realized conflict between operations and people, management, or culture, so p5_pathway is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"FY2016 net loss $(1,240)M driven by $849M aggregate asset impairment across three generation facilities\", \"rationale\": \"The slice documents only a financial trajectory (net losses in 2013-2014 and 2016, small profits in 2015 and 2017) and asset impairment charges at named generation facilities (Wood River, Brayton Point, Stuart, Newton, Baldwin), plus a subsequent 2017 merger agreement. No line describes disruption at the product/process interface (product-operations incoherence), so p4 = 0; likewise no line describes any operations-versus-organization/culture/management fracture, so p5 = 0. The impairments are documented as facility-level asset write-downs without any narrative of integration failure across these interfaces.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$849M asset impairments FY2016; Vistra merger agreed 2017\",\n  \"rationale\": \"The slice documents only financial results and facility-level asset impairments (Wood River, Brayton Point, Stuart, Newton, Baldwin) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. No evidence is given of operations-versus-organization, management, or cultural fracture over the window, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$1.24 billion net loss in FY2016, including $849 million of asset impairments\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents volatile earnings and $849 million of impairments across the Stuart, Newton, and Baldwin generation facilities in FY2016 (SEC accession 0001379895-17-000004), but it does not attribute these outcomes to product/process incoherence; therefore p4_pathway is 0. It likewise reports no realized conflict between operations and people, management, or culture, so p5_pathway is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

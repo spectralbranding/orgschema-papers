@@ -1,0 +1,58 @@
+{
+  "case_id": "P205",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired NOLs retained and declining ($152.6M YE2020 → $129.4M YE2021 → $106.1M YE2022); no divestiture; assets retained",
+      "rationale": "The slice documents only that the acquired Sun business was folded into OceanFirst's single consolidated financials, with Sun-specific traces limited to declining tax-attribute footnotes (net operating losses, a static AMT credit) and retained Sun-originated trust-preferred vehicles remaining on the balance sheet. No product/process incoherence is documented (p4=0), and the slice expressly states no branch-count or operating-performance trajectory specific to the former Sun business is established, so no operations-vs-organization fracture is documented (p5=0). Whether branches were closed, retained, or renamed is marked [UNVERIFIED], and nothing indicates archetype incoherence or business-model incompatibility."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice contains no evidence of post-deal disruption or fracture. The acquired business was fully consolidated into OceanFirst Financial Corp. without separate segment reporting, leaving no documented evidence of product/process incoherence (p4) or process/organization fracture (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; Sun NOLs utilized ($152.6M→$106.1M) and trusts retained",
+      "rationale": "The slice documents only tax-attribute runoff (Sun-attributed NOLs declining from $152.6M at YE2020 to $106.1M at YE2022 under Section 382 limits) and continued carrying of Sun-originated trust-preferred vehicles on OceanFirst’s books; no product/process misalignment or product-line/operations incoherence is recorded. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is disclosed—OceanFirst reports the acquired business only inside a single consolidated entity with no Sun-specific operating or integration-failure narrative in the 2021–2023 window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"acquired NOLs retained and declining ($152.6M YE2020 \\u2192 $129.4M YE2021 \\u2192 $106.1M YE2022); no divestiture; assets retained\", \"rationale\": \"The slice documents only that the acquired Sun business was folded into OceanFirst's single consolidated financials, with Sun-specific traces limited to declining tax-attribute footnotes (net operating losses, a static AMT credit) and retained Sun-originated trust-preferred vehicles remaining on the balance sheet. No product/process incoherence is documented (p4=0), and the slice expressly states no branch-count or operating-performance trajectory specific to the former Sun business is established, so no operations-vs-organization fracture is documented (p5=0). Whether branches were closed, retained, or renamed is marked [UNVERIFIED], and nothing indicates archetype incoherence or business-model incompatibility.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice contains no evidence of post-deal disruption or fracture. The acquired business was fully consolidated into OceanFirst Financial Corp. without separate segment reporting, leaving no documented evidence of product/process incoherence (p4) or process/organization fracture (p5).\"\n}\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; Sun NOLs utilized ($152.6M→$106.1M) and trusts retained\",\n  \"rationale\": \"The slice documents only tax-attribute runoff (Sun-attributed NOLs declining from $152.6M at YE2020 to $106.1M at YE2022 under Section 382 limits) and continued carrying of Sun-originated trust-preferred vehicles on OceanFirst’s books; no product/process misalignment or product-line/operations incoherence is recorded. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is disclosed—OceanFirst reports the acquired business only inside a single consolidated entity with no Sun-specific operating or integration-failure narrative in the 2021–2023 window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

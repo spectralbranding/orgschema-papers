@@ -1,0 +1,85 @@
+{
+  "case_id": "P176",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that 'the customer-facing product lines, the operations that produce and deliver them, and the people/management that run them were transferred together as a going concern rather than separated.' This confirms that products (T4), processes (T5), and organization (T6) moved together without structural gaps."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that because the vehicle was a whole-company merger with Bard surviving intact as a subsidiary, 'the customer-facing product lines, the operations that produce and deliver them, and the people/management that run them were transferred together as a going concern rather than separated.' The post-closing task is described as 'the integration of Bard's operations, products and employees into BD,' confirming T4, T5, and T6 crossed together with no product-vs-process or process-vs-organization structural mismatch at closing. No transitional-services bridge was needed or described, consistent with an intact going-concern transfer."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the whole company transferred as a going concern, with Bard's customer-facing product lines and the operations producing and delivering them transferred together, so no T4-T5 structural gap is documented. It also states that those operations and the people and management running them transferred together, with Bard surviving intact as a wholly owned BD subsidiary, so no T5-T6 structural gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that 'the customer-facing product lines, the operations that produce and deliver them, and the people/management that run them were transferred together as a going concern rather than separated.' This confirms that products (T4), processes (T5), and organization (T6) moved together without structural gaps.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that because the vehicle was a whole-company merger with Bard surviving intact as a subsidiary, 'the customer-facing product lines, the operations that produce and deliver them, and the people/management that run them were transferred together as a going concern rather than separated.' The post-closing task is described as 'the integration of Bard's operations, products and employees into BD,' confirming T4, T5, and T6 crossed together with no product-vs-process or process-vs-organization structural mismatch at closing. No transitional-services bridge was needed or described, consistent with an intact going-concern transfer.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the whole company transferred as a going concern, with Bard's customer-facing product lines and the operations producing and delivering them transferred together, so no T4-T5 structural gap is documented. It also states that those operations and the people and management running them transferred together, with Bard surviving intact as a wholly owned BD subsidiary, so no T5-T6 structural gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,207 @@
+ 
+ 8-K
+ 1
+ a17-22917_18k.htm
+ 8-K
+
+ UNITED STATES SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ 
+ FORM 8-K 
+ 
+ CURRENT REPORT PURSUANT 
+ TO SECTION 13 OR 15(D) OF THE 
+ SECURITIES EXCHANGE ACT OF 1934 
+ 
+ Date of Report (Date of earliest event reported): October 6, 2017 
+
+ DIGITALGLOBE, INC. 
+
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 001-34299 
+
+ 31-1420852 
+
+ (State or other jurisdiction of incorporation) 
+
+ (Commission File Number) 
+
+ (IRS Employer Identification No.) 
+
+ 1300 West 120 th Avenue Westminster, Colorado 
+
+ 80234 
+
+ (Address of principal executive offices) 
+
+ (Zip Code) 
+
+ Registrant&#146;s telephone number, including area code (303) 684-4000 
+
+ Not Applicable 
+
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below): 
+ 
+ o Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+ 
+ o Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+ 
+ o Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+ 
+ o Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+ 
+ Emerging growth company o 
+ 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o 
+
+ Item 1.02. Termination of a Material Definitive Agreement. 
+ 
+ In connection with the consummation of the Merger (as defined below), on October 5, 2017, all outstanding obligations under the Credit and Guaranty Agreement of DigitalGlobe, Inc., a Delaware corporation (the &#147; Company &#148; or &#147; DigitalGlobe &#148;), dated as of December 22, 2016 (the &#147; Credit Agreement &#148;) among the Company, the guarantors party thereto, the lenders party thereto, and Barclays Bank PLC, as administrative agent and as collateral agent, were repaid and the Credit Agreement was terminated. The Credit Agreement provided the Company with a $1.275 billion senior secured term loan facility maturing in January 2024 and a $200 million senior secured revolving credit facility maturing in January 2022. As of October 4, 2017 the aggregate outstanding indebtedness under the Credit Agreement was approximately US$1.3 billion, plus accrued interest. 
+ 
+ The foregoing summary of the Credit Agreement does not purport to be complete and is subject to, and qualified in its entirety by, the full text of the Credit Agreement, a copy of which is attached as Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K filed with the Securities and Exchange Commission (the &#147; SEC &#148;) on December 23, 2016, and incorporated herein by reference. 
+ 
+ Item 2.01. Completion of Acquisition or Disposition of Assets. 
+ 
+ As previously disclosed in the Current Report on Form 8-K filed with the SEC by the Company on February 24, 2017, the Company, Maxar Technologies Ltd. (formerly known as MacDonald, Dettwiler and Associates Ltd.), a corporation organized under the laws of British Columbia (&#147; Maxar &#148;), Maxar Technologies Holdings Inc. (formerly known as SSL MDA Holdings, Inc.), a Delaware corporation and wholly owned subsidiary of Maxar (&#147; Holdings &#148;) and Merlin Merger Sub, Inc., a Delaware corporation and wholly owned subsidiary of Holdings (&#147; Merger Sub &#148;), entered into an Agreement and Plan of Merger, dated February 24, 2017 (the &#147; Merger Agreement &#148;). On October 5, 2017, pursuant to the terms and conditions of the Merger Agreement, Merger Sub was merged with and into the Company (the &#147; Merger &#148;), with the Company surviving the Merger as an indirect wholly owned subsidiary of Maxar. 
+ 
+ Pursuant to the Merger Agreement, at the effective time of the Merger (the &#147; Effective Time &#148;), each share of common stock, par value $0.001 per share, of the Company (&#147; Company Common Stock &#148;) (other than shares of Company Common Stock held directly or indirectly by Maxar, the Company or any of their respective subsidiaries or shares of Company Common Stock owned by stockholders who properly exercised their appraisal rights under the General Corporation Law of the State of Delaware (the &#147; DGCL &#148;)) outstanding immediately prior to the Effective Time was automatically converted into the right to receive an amount equal to (a) U.S. $17.50 in cash (the &#147; Cash Consideration &#148;) and (b) 0.3132 of a validly issued, fully paid and non-assessable common share of Maxar (&#147; Parent Common Shares &#148;) (the &#147; Stock Consideration &#148; and, together with the Cash Consideration, the &#147; Merger Consideration &#148;) without interest and subject to any required withholding for taxes. All of the former holders of shares of Series A Convertible Preferred Stock, par value $0.001 per share, of the Company (the &#147; Company Convertible Preferred Stock &#148;) have taken steps to exercise their appraisal rights under Section 262 of the DGCL. If such holders had not taken steps to exercise their appraisal rights under Section 262 of the DGCL, each share of Company Convertible Preferred Stock would have been converted into the right to receive the Merger Consideration that the holder thereof would have been entitled to receive had such holder, immediately prior to the Effective Time, converted such share of Company Convertible Preferred Stock into Company Common Stock pursuant to the Certificate of Designations, Preferences and Rights of Company Convertible Preferred Stock of the Company. 
+ 
+ Pursuant to the Merger Agreement, as of the Effective Time, the outstanding equity awards of the Company were treated as follows: 
+ 
+ (a) Each option to purchase shares of Company Common Stock (each a &#147; Company Option &#148;) that was outstanding and unexercised immediately prior to the Effective Time, whether vested or unvested, was cancelled in exchange for the right to receive a combination of cash and a number of Parent Common Shares (the &#147; Option Consideration &#148;). The cash component of the Option Consideration for a Company Option had a value equal to the positive difference, if any, between the product of the Cash Consideration and the number of shares of Company Common Stock subject to such Company Option immediately prior to the Effective Time less the Total Cash Exercise Price (defined below). The &#147;Total Cash Exercise Price&#148; was the product of (i) the aggregate exercise price 
+ 
+ 2 
+
+ of the shares of Company Common Stock subject to the Company Option immediately prior to the Effective Time and (ii) a fraction, the numerator of which was the Cash Consideration and the denominator of which is the sum of (A) the Cash Consideration and (B) the Parent Share Consideration Value (as defined below) . The &#147;Parent Share Consideration Value&#148; was the product of the Stock Consideration and the Parent Closing Stock Value (defined below). The &#147;Parent Closing Stock Value&#148; was the average of the closing sale prices of the Parent Common Shares on the TSX for the period of five trading days immediately preceding the date on which the Effective Time occurred, converted from Canadian dollars to U.S. dollars using the Bank of Canada&#146;s daily average Canada/U.S. exchange rate for each such trading day. 
+ 
+ The share component of the Option Consideration for a Company Option was equal to (a) the positive difference, if any, between (i) the product of the Parent Share Consideration Value and the number of shares of Company Common Stock subject to the Company Option immediately prior to the Effective Time less (ii) the aggregate exercise price of the shares of Company Common Stock subject to the Company Option immediately prior to the Effective Time reduced by the Total Cash Exercise Price, divided by (b) the Parent Closing Stock Value. 
+ 
+ (b) Each restricted stock unit denominated in shares of Company Common Stock (each a &#147; Company RSU &#148;) subject to unsatisfied performance conditions for a performance period that included the date on which the closing of the Merger occurred (each a &#147; Company Performance-Based RSU &#148;) that was outstanding immediately before the Effective Time, whether vested or unvested, and each Company RSU that was not a Company Performance-Based RSU and that was, immediately prior to the Effective Time and after giving effect to any accelerated vesting in connection with the transactions contemplated by the Merger Agreement, vested (each a &#147; Company Vested Time-Based RSU &#148;), was cancelled in exchange for the right to receive (subject to applicable tax withholding or other amounts required by applicable law to be withheld) the Merger Consideration for each share of Company Common Stock subject to such Company RSU. The number of shares of Company Common Stock subject to Company Performance-Based RSUs that, at the Effective Time, remained subject to unsatisfied performance conditions for a performance period that included the date on which the Effective Time occurred, was determined as though such performance conditions were satisfied at the applicable &#147;target&#148; level (except as to any such performance condition based on a relative total stockholder return measure) and, as to any applicable unsatisfied performance condition based on a relative total stockholder return measure for a performance period that included the date on which the closing of the Merger occurred, as though the applicable performance period ended with the trading day immediately preceding the date on which the Effective Time occurred and using an average of the closing prices for a share of Company Common Stock for the period of five trading days immediately preceding the date on which the Effective Time occurred as the value of the Company Common Stock at the end of such performance period for purposes of such performance determination; and 
+ 
+ (c) Each Company RSU that is not a Company Performance-Based RSU and that was not, immediately prior to the Effective Time and after giving effect to any accelerated vesting in connection with the transactions contemplated by the Merger Agreement, vested (each a &#147; Company Unvested Time-Based RSU &#148;) that was outstanding immediately before the Effective Time was automatically and without any required action on the part of any holder or beneficiary thereof, assumed by Maxar (each, a &#147; Converted RSU &#148;). Each Converted RSU represents the right to receive (subject to applicable tax withholding or other amounts required by applicable law to be withheld) (a) an amount in cash equal to the product of (i) the Cash Consideration multiplied by (ii) the total number of shares of Company Common Stock subject to such Company RSU (the &#147; Converted RSU Cash Consideration &#148;), and (b) a number of Parent Common Shares equal to the product of (i) the Stock Consideration multiplied by (ii) the total number of shares of Company Common Stock subject to such Company RSU. Each Converted RSU continues to have and be subject to substantially the same terms and conditions as were applicable to such Company RSU immediately before the Effective Time (including vesting conditions and dividend equivalent rights), except that each Converted RSU was deemed fully vested upon the Effective Time as to the Converted RSU Cash Consideration. 
+ 
+ The foregoing description of the Merger is qualified in its entirety by reference to the terms of the Merger Agreement, a copy of which was filed as Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed with the SEC on February 24, 2017, and is incorporated herein by reference. 
+ 
+ The aggregate consideration paid to former shareholders and equityholders of the Company by Maxar in the Merger, including for outstanding Company Options and Company RSUs, was approximately $1,155,484,340 in cash plus 
+ 
+ 3 
+
+ approximately 19,644,240 Parent Common Shares. In addition, the Converted RSUs represent the contingent right to receive approximately 592,038 Parent Common Shares (the converted RSUs also represented a right to receive approximately $33,154,313 in cash which was paid on the closing date of the Merger and is included in the aggregate cash consideration number above.). All of the former holders of shares of Company Convertible Preferred Stock and holders of 352,225 shares of Company Common Stock have taken steps to exercise appraisal rights under Section 262 of the DGCL. If any such holder abandons or fails to perfect their appraisal rights under the DGCL, such holder will be entitled to receive the Merger Consideration that it would have otherwise been entitled to receive pursuant to the Merger Agreement. If all such holders abandon or fail to perfect their appraisal rights, the aggregate Merger Consideration that would be payable to such former holders is approximately $59,696,962 in cash and 1,068,405 Parent Common Shares. 
+ 
+ Item 3.01. Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+ 
+ On October 5, 2017, in connection with the consummation of the Merger, the Company notified The New York Stock Exchange (the &#147; NYSE &#148;) of its intent to remove the shares of Company Common Stock from listing on the NYSE and requested that the NYSE suspend trading of the Company Common Stock and file a delisting application with the SEC to delist and deregister the shares of Company Common Stock. On October 5, 2017, the NYSE filed with the SEC a Notification of Removal from Listing and/or Registration under Section 12(b) of the Securities Exchange Act of 1934, as amended (the &#147; Exchange Act &#148;), on Form 25 to delist and deregister the shares of Company Common Stock. Trading of the Company Common Stock was suspended prior to the start of trading on October 5, 2017. 
+ 
+ The Company intends to file with the SEC a certification on Form 15 under the Exchange Act to terminate the registration of the shares of Company Common Stock under the Exchange Act and suspend the Company&#146;s reporting obligations under Sections 13 and 15(d) of the Exchange Act. 
+ 
+ Item 3.03. Material Modification to Rights of Security Holders. 
+ 
+ At the Effective Time, each share of Company Common Stock outstanding (other than shares of Company Common Stock held directly or indirectly by Maxar, the Company, or any of their respective subsidiaries or shares of Company Common Stock owned by stockholders who properly exercised their appraisal rights under the DGCL) was converted into the right to receive the Merger Consideration. At the Effective Time, each share of Company Convertible Preferred Stock outstanding (other than shares of Company Convertible Preferred Stock held directly or indirectly by Maxar, the Company or any of their respective subsidiaries or shares of Company Convertible Preferred Stock owned by stockholders who properly exercised their appraisal rights under the DGCL) was converted into the right to receive the Merger Consideration that the holder thereof would have been entitled to receive had such holder, immediately prior to the Effective Time, converted such share of Company Convertible Preferred Stock into Company Common Stock. 
+ 
+ The information disclosed under Item 2.01 of this Current Report on Form 8-K is incorporated by reference in this Item 3.03. 
+ 
+ Item 5.01. Changes in Control of Registrant. 
+ 
+ As a result of the consummation of the Merger, on October 5, 2017, a change in control of the Company occurred. As of the Effective Time, the Company became an indirect wholly owned subsidiary of Maxar. 
+ 
+ The information disclosed under Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 5.01. 
+ 
+ Item 5.02. Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. 
+ 
+ In accordance with the terms of the Merger Agreement, at the Effective Time, all of the members of the Company&#146;s board of directors were removed. In connection with the consummation of the Merger, Messrs. Dan Jablonsky and William McCombe and Ms. Michelle Kley were appointed as directors of the Company, effective as of the Effective Time. 
+ 
+ In accordance with the terms of the Merger Agreement, at the Effective Time, each of the officers of the Company were removed. In connection with the consummation of the Merger, Messrs. Jablonsky, McCombe and 
+ 
+ 4 
+
+ Walter S. Scott and Ms. Kley were appointed as executive officers of the Company effective as of the Effective Time. The executive officers&#146; newly held positions consist of Mr. Jablonsky as President, Mr. McCombe as Chief Financial Officer and Mr. Scott as Executive Vice President, Technical Officer and General Manager, U.S. Government and Ms. Michelle Kley as Secretary. 
+ 
+ Information regarding Mr. Jablonsky and Mr. Scott can be found under the section &#147;Executive Leadership Team&#148; in the proxy statement filed by the Company with the SEC on May 1, 2017, which information is incorporated by reference. Information regarding Mr. McCombe can be found under the sections &#147;Additional Information About MDA&#151;Management of MDA&#148; in the Prospectus filed by Maxar with the SEC on June 22, 2017, which information is incorporated by reference. 
+ 
+ At the Effective Time, Ms. Kley, age 46, was newly appointed as Secretary of the Company. Ms. Kley also serves as senior vice president, general counsel and corporate secretary of Maxar and Holdings, which owns 100% of the outstanding interests of the Company. Ms. Kley joined Space Systems/Loral, LLC (&#147;SSL&#148;), a wholly owned indirect subsidiary of Holdings and an affiliate of the Company, in 2012 as associate general counsel and was promoted to vice president of legal at SSL in 2015. She was promoted to senior vice president, chief legal and compliance officer and secretary of Holdings in 2016. Ms. Kley is responsible for all legal, contracts, export control and compliance functions across the corporation, including staff at our various business locations worldwide. Ms. Kley is a graduate of Sonoma State University with a Bachelor of Arts degree, with Honors, in psychology. She earned her J.D. degree at the University of California Berkeley Law School (Boalt Hall). Following law school she worked as a corporate associate for Wilson Sonsini Goodrich & Rosati P.C. and Morrison & Foerster LLP. Ms. Kley is admitted to practice law in the State of California and the District of Columbia. 
+ 
+ Item 5.03. Amendment to Articles of Incorporation or Bylaws; Change in Fiscal Year. 
+ 
+ At the Effective Time, the Company&#146;s certificate of incorporation, as in effect immediately prior to the Effective Time, was amended and restated in its entirety (the &#147; Amended and Restated Certificate of Incorporation &#148;). In addition, at the Effective Time, the Company&#146;s bylaws, as in effect immediately prior to the Effective Time, were amended and restated in their entirety (the &#147; Amended and Restated Bylaws &#148;). 
+ 
+ Copies of the Amended and Restated Certificate of Incorporation and the Amended and Restated Bylaws are filed as Exhibits 3.1 and 3.2, respectively, and are incorporated herein by reference. 
+ 
+ Item 9.01. Financial Statements and Exhibits. 
+ 
+ (d) Exhibits. 
+ 
+ EXHIBIT INDEX 
+
+ Exhibit Number 
+
+ Description 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated February 24, 2017 among the Company, Maxar, Merlin Holdco and Merger Sub (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed February 24, 2017)* 
+
+ 3.1 
+
+ Amended and Restated Certificate of Incorporation 
+
+ 3.2 
+
+ Amended and Restated Bylaws 
+
+ * Certain schedules have been omitted and DigitalGlobe, Inc. agrees to furnish supplementally to the SEC a copy of any omitted schedules upon request. 
+ 
+ 5 
+
+ EXHIBIT INDEX 
+
+ Exhibit Number 
+
+ Description 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated February 24, 2017 among the Company, Maxar, Merlin Holdco and Merger Sub (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed February 24, 2017)* 
+
+ 3.1 
+
+ Amended and Restated Certificate of Incorporation 
+
+ 3.2 
+
+ Amended and Restated Bylaws 
+
+ * Certain schedules have been omitted and DigitalGlobe, Inc. agrees to furnish supplementally to the SEC a copy of any omitted schedules upon request. 
+ 
+ 6 
+
+ SIGNATURES 
+ 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ DIGITALGLOBE, INC. 
+
+ (Registrant) 
+
+ Date: October 6, 2017 
+ 
+ By: 
+ 
+ /s/ Michelle Kley 
+
+ Name: 
+ 
+ Michelle Kley 
+
+ Title: 
+ 
+ Secretary 
+ 
+ 7 
+

@@ -1,0 +1,58 @@
+{
+  "case_id": "P197",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents standard integration and restructuring costs (severance and related charges) to leverage economies of scale, but does not document any specific disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). There is no evidence of incoherence in the controlling-intent archetype or incompatibility of business models."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$95M Alere-attributed integration severance 2019-2021; no divestiture documented",
+      "rationale": "p4_pathway is 0 because the slice documents no product/process incoherence: Alere is named only in integration/restructuring notes, while related Rapid Diagnostics platforms (ID NOW, BinaxNOW, Panbio) show large COVID-testing revenue growth and remain inside the aggregated Diagnostic Products segment with no alignment failure cited. p5_pathway is 0 because the only organization-facing record is planned integration restructuring (accrued liability falling from $41M at YE2018 to $9M at YE2021 as ~$95M of employee-related severance was recognized 2019-2021) expressly 'to leverage economies of scale and reduce costs,' not a realized operations-vs-organization fracture."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Approximately $95 million of severance and related integration charges recognized from 2019-2021",
+      "rationale": "No realized product/process incoherence is documented; the product-related disclosures report rapid-diagnostics sales growth but do not attribute that performance to Alere by name. Abbott documented restructuring intended to leverage economies of scale and reduce costs, including severance and related charges through 2021, but did not describe these actions as an operations-versus-organization integration fracture."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The slice documents standard integration and restructuring costs (severance and related charges) to leverage economies of scale, but does not document any specific disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). There is no evidence of incoherence in the controlling-intent archetype or incompatibility of business models.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$95M Alere-attributed integration severance 2019-2021; no divestiture documented\",\n  \"rationale\": \"p4_pathway is 0 because the slice documents no product/process incoherence: Alere is named only in integration/restructuring notes, while related Rapid Diagnostics platforms (ID NOW, BinaxNOW, Panbio) show large COVID-testing revenue growth and remain inside the aggregated Diagnostic Products segment with no alignment failure cited. p5_pathway is 0 because the only organization-facing record is planned integration restructuring (accrued liability falling from $41M at YE2018 to $9M at YE2021 as ~$95M of employee-related severance was recognized 2019-2021) expressly 'to leverage economies of scale and reduce costs,' not a realized operations-vs-organization fracture.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Approximately $95 million of severance and related integration charges recognized from 2019-2021\",\n  \"rationale\": \"No realized product/process incoherence is documented; the product-related disclosures report rapid-diagnostics sales growth but do not attribute that performance to Alere by name. Abbott documented restructuring intended to leverage economies of scale and reduce costs, including severance and related charges through 2021, but did not describe these actions as an operations-versus-organization integration fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

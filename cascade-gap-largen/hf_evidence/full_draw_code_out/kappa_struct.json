@@ -1,0 +1,26 @@
+{
+  "fleiss": {
+    "kappa": null,
+    "n_items": 4,
+    "n_raters": 3,
+    "P_bar": 1.0,
+    "P_e": 1.0,
+    "category_proportions": {
+      "0": 1.0,
+      "1": 0.0,
+      "uncertain": 0.0
+    }
+  },
+  "gwet_ac1": {
+    "ac1": 1.0,
+    "n_items": 4,
+    "n_raters": 3,
+    "P_bar": 1.0,
+    "P_e_gwet": 0.0,
+    "category_proportions": {
+      "0": 1.0,
+      "1": 0.0,
+      "uncertain": 0.0
+    }
+  }
+}

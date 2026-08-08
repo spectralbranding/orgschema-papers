@@ -1,0 +1,58 @@
+{
+  "case_id": "P161",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net loss of $(1,870.3) million and asset impairment charges of $1,487.4 million",
+      "rationale": "The slice documents operational disruptions such as a mine fire at North Goonyella and mine closures, as well as financial distress leading to surety bond restructuring. However, there is no documented evidence of integration failure at the product/process interface (p4) or process/organization interface (p5) resulting from an acquisition."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss $(1,870.3)M; $1,487.4M impairments FY2020",
+      "rationale": "The slice records North Goonyella suspension after a 2018 fire, Kayenta closure in 2019, and Millennium cessation in 2020, but these are mine-level operating events, not documented product/process-interface incoherence (acquired product failing to align with operating processes), so p4_pathway=0. No evidence is given of operations fracturing against people/management/culture over time; the capital-structure/surety actions and headcount figure do not document a process/organization pathway, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$(1,870.3) million net loss attributable to common stockholders in FY2020'}",
+      "rationale": "{'type': 'string', 'enum': 'The North Goonyella fire and suspension, Kayenta closure following termination of its coal supply agreement, and Millennium production cessation document operating disruptions, but not product-line/operating-process incoherence, so p4 is 0. The surety- and lender-support transactions and dividend restrictions document financial and capital-structure actions, while no realized conflict between operations and people, management, or culture is reported; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net loss of $(1,870.3) million and asset impairment charges of $1,487.4 million\",\n  \"rationale\": \"The slice documents operational disruptions such as a mine fire at North Goonyella and mine closures, as well as financial distress leading to surety bond restructuring. However, there is no documented evidence of integration failure at the product/process interface (p4) or process/organization interface (p5) resulting from an acquisition.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss $(1,870.3)M; $1,487.4M impairments FY2020\",\n  \"rationale\": \"The slice records North Goonyella suspension after a 2018 fire, Kayenta closure in 2019, and Millennium cessation in 2020, but these are mine-level operating events, not documented product/process-interface incoherence (acquired product failing to align with operating processes), so p4_pathway=0. No evidence is given of operations fracturing against people/management/culture over time; the capital-structure/surety actions and headcount figure do not document a process/organization pathway, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$(1,870.3) million net loss attributable to common stockholders in FY2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The North Goonyella fire and suspension, Kayenta closure following termination of its coal supply agreement, and Millennium production cessation document operating disruptions, but not product-line/operating-process incoherence, so p4 is 0. The surety- and lender-support transactions and dividend restrictions document financial and capital-structure actions, while no realized conflict between operations and people, management, or culture is reported; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

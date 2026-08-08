@@ -1,0 +1,85 @@
+{
+  "case_id": "P198",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the acquired product tier — the Houston Class A office portfolio (T4) — crossed into the CPPIB vehicle via the whole-company cash merger, but on the same day the operating subsidiaries housing property/enterprise management (T5, the processes that produce/deliver the service and operate the assets) were carved out and sold to PPI rather than retained inside the acquired company (Management Separation), a documented product-vs-process split at closing. gap_56=1: the management/process subsidiaries transferred to a separate, management-team-owned entity (PPI), and the executive officers (T6: Heistand, Francis, Bates) took membership interests in PPI, so the people/organization running operations did not align inside the acquired entity. gap_mitigated=yes: both gaps were contractually bridged at closing by the 14-month Enterprise Management Agreement under which PPI provides property, enterprise, and transition services to Parkway and its properties. T3=terminate reflects the board-approved plan of complete liquidation/dissolution and NYSE/Form 25/Form 15 delisting at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because at closing the Houston office portfolio and third-party services product tier crossed into the CPPIB acquisition vehicle via the Company/Partnership Mergers while, on the same day, the management business and operations were contractually separated and sold to PPI rather than retained inside the acquired entity (Structural summary; Separation and Purchase Agreement, 8-K). gap_56=0 because that carved-out process tier moved together with the management organization into management-owned PPI (Heistand/Francis/Bates membership interests), so processes were not transferred or re-engineered without their people; the 14-month Enterprise Management Agreement then bridged both back as one external package, which also mitigates the product-process gap."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "partial",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Houston office portfolio and third-party services business entered the CPPIB acquisition structure, while the subsidiaries holding Parkway’s management business and operations were separately sold to PPI at closing, documenting a product/process ownership mismatch. That gap was contractually absorbed through the 14-month Enterprise Management Agreement under which PPI provided property, enterprise, transition, and related services to Parkway. No process/organization gap is documented because the separated management operations moved to PPI, an entity owned in part by Parkway’s CEO, CFO, and CIO, while the agreement aligned that management organization with the acquired properties."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the acquired product tier \\u2014 the Houston Class A office portfolio (T4) \\u2014 crossed into the CPPIB vehicle via the whole-company cash merger, but on the same day the operating subsidiaries housing property/enterprise management (T5, the processes that produce/deliver the service and operate the assets) were carved out and sold to PPI rather than retained inside the acquired company (Management Separation), a documented product-vs-process split at closing. gap_56=1: the management/process subsidiaries transferred to a separate, management-team-owned entity (PPI), and the executive officers (T6: Heistand, Francis, Bates) took membership interests in PPI, so the people/organization running operations did not align inside the acquired entity. gap_mitigated=yes: both gaps were contractually bridged at closing by the 14-month Enterprise Management Agreement under which PPI provides property, enterprise, and transition services to Parkway and its properties. T3=terminate reflects the board-approved plan of complete liquidation/dissolution and NYSE/Form 25/Form 15 delisting at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because at closing the Houston office portfolio and third-party services product tier crossed into the CPPIB acquisition vehicle via the Company/Partnership Mergers while, on the same day, the management business and operations were contractually separated and sold to PPI rather than retained inside the acquired entity (Structural summary; Separation and Purchase Agreement, 8-K). gap_56=0 because that carved-out process tier moved together with the management organization into management-owned PPI (Heistand/Francis/Bates membership interests), so processes were not transferred or re-engineered without their people; the 14-month Enterprise Management Agreement then bridged both back as one external package, which also mitigates the product-process gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Houston office portfolio and third-party services business entered the CPPIB acquisition structure, while the subsidiaries holding Parkway’s management business and operations were separately sold to PPI at closing, documenting a product/process ownership mismatch. That gap was contractually absorbed through the 14-month Enterprise Management Agreement under which PPI provided property, enterprise, transition, and related services to Parkway. No process/organization gap is documented because the separated management operations moved to PPI, an entity owned in part by Parkway’s CEO, CFO, and CIO, while the agreement aligned that management organization with the acquired properties.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

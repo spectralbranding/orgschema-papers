@@ -1,0 +1,85 @@
+{
+  "case_id": "P292",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the acquired product lines (masterbatch, engineered plastics, engineered composites) and the legal vehicle with its 54 manufacturing facilities and ~5,200 employees crossed intact as a wholly owned subsidiary, so product and its producing/delivering operations moved together with no documented product-vs-process mismatch at closing. gap_56=1: the operating processes crossed inside the surviving subsidiary, but the top organization/management layer was replaced at the effective time — the entire pre-merger board plus CEO/COO/CFO resigned and were replaced by the acquirer's designated officers/directors, a structural T5-without-coherent-T6 mismatch. gap_mitigated=yes: the deal contractually absorbed the people substrate via a one-year \"Continuation Period\" guaranteeing continuing employees no-less-favorable compensation, benefits, severance, and service credit, allocating the shared employee substrate at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence states that A. Schulman's product lines and 54 manufacturing facilities crossed intact to the acquirer, indicating no structural mismatch between product and process (gap_45 = 0). Similarly, the rank-and-file employees ('continuing Company employee') transferred alongside these operations, meaning the organization aligned with the processes at closing (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary and closing 8-K establish that the legal vehicle together with its product lines (masterbatch, engineered plastics, engineered composites) and the underlying manufacturing footprint crossed intact as a wholly owned subsidiary, so T4 and T5 moved together and gap_45=0. Rank-and-file continuing employees remained with the surviving entity under a one-year compensation/benefits continuation covenant while only the pre-merger board and named CEO/COO/CFO were replaced at the effective time; that is ordinary control substitution, not a documented processes-without-organization mismatch at closing, so gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the acquired product lines (masterbatch, engineered plastics, engineered composites) and the legal vehicle with its 54 manufacturing facilities and ~5,200 employees crossed intact as a wholly owned subsidiary, so product and its producing/delivering operations moved together with no documented product-vs-process mismatch at closing. gap_56=1: the operating processes crossed inside the surviving subsidiary, but the top organization/management layer was replaced at the effective time \\u2014 the entire pre-merger board plus CEO/COO/CFO resigned and were replaced by the acquirer's designated officers/directors, a structural T5-without-coherent-T6 mismatch. gap_mitigated=yes: the deal contractually absorbed the people substrate via a one-year \\\"Continuation Period\\\" guaranteeing continuing employees no-less-favorable compensation, benefits, severance, and service credit, allocating the shared employee substrate at closing.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The evidence states that A. Schulman's product lines and 54 manufacturing facilities crossed intact to the acquirer, indicating no structural mismatch between product and process (gap_45 = 0). Similarly, the rank-and-file employees ('continuing Company employee') transferred alongside these operations, meaning the organization aligned with the processes at closing (gap_56 = 0).\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary and closing 8-K establish that the legal vehicle together with its product lines (masterbatch, engineered plastics, engineered composites) and the underlying manufacturing footprint crossed intact as a wholly owned subsidiary, so T4 and T5 moved together and gap_45=0. Rank-and-file continuing employees remained with the surviving entity under a one-year compensation/benefits continuation covenant while only the pre-merger board and named CEO/COO/CFO were replaced at the effective time; that is ordinary control substitution, not a documented processes-without-organization mismatch at closing, so gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

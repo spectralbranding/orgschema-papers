@@ -1,0 +1,85 @@
+{
+  "case_id": "P112",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states this was a whole-company reverse-triangular take-private in which \"the customer-facing product (IME services), the operational processes that deliver it (the medical panel and service operations), and the operating legal entity transferred together as a single going concern,\" with no carve-out or divestiture at closing — so product and process moved together (gap_45=0). Senior management (Perlman, Price, Campbell, Fernandez de Castro) continued in their current positions via a rollover-and-subscription agreement, so the people running the processes crossed the boundary alongside them (gap_56=0). T1 is coded imprint-share because Leonard Green affiliates control a majority of Parent's equity/board while rollover founders retained ~3.3–3.7% and continuing roles, leaving both principals' intent co-present at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states this was a whole-company reverse-triangular take-private in which 'the customer-facing product (IME services), the operational processes that deliver it (the medical panel and service operations), and the operating legal entity transferred together as a single going concern' with 'no business unit carved out,' so product and processes crossed together (gap_45=0). It further records that senior management 'all crossed the ownership boundary together within the surviving legal entity, with management retained via equity rollover and continuing positions rather than replaced or separated,' and that 'product, processes and people remained within one legal entity' with no TSA or carve-out bridging a separated substrate, so processes and organization aligned at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that this was a whole-company acquisition in which the IME services and the medical-panel and service operations transferred together as a single going concern, with no unit carved out or divested at closing; therefore, no T4–T5 gap is documented. It also states that product, processes, and people remained within the surviving legal entity and that senior management continued through rollover and continuing-position arrangements, so no T5–T6 gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states this was a whole-company reverse-triangular take-private in which \\\"the customer-facing product (IME services), the operational processes that deliver it (the medical panel and service operations), and the operating legal entity transferred together as a single going concern,\\\" with no carve-out or divestiture at closing \\u2014 so product and process moved together (gap_45=0). Senior management (Perlman, Price, Campbell, Fernandez de Castro) continued in their current positions via a rollover-and-subscription agreement, so the people running the processes crossed the boundary alongside them (gap_56=0). T1 is coded imprint-share because Leonard Green affiliates control a majority of Parent's equity/board while rollover founders retained ~3.3\\u20133.7% and continuing roles, leaving both principals' intent co-present at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states this was a whole-company reverse-triangular take-private in which 'the customer-facing product (IME services), the operational processes that deliver it (the medical panel and service operations), and the operating legal entity transferred together as a single going concern' with 'no business unit carved out,' so product and processes crossed together (gap_45=0). It further records that senior management 'all crossed the ownership boundary together within the surviving legal entity, with management retained via equity rollover and continuing positions rather than replaced or separated,' and that 'product, processes and people remained within one legal entity' with no TSA or carve-out bridging a separated substrate, so processes and organization aligned at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that this was a whole-company acquisition in which the IME services and the medical-panel and service operations transferred together as a single going concern, with no unit carved out or divested at closing; therefore, no T4–T5 gap is documented. It also states that product, processes, and people remained within the surviving legal entity and that senior management continued through rollover and continuing-position arrangements, so no T5–T6 gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

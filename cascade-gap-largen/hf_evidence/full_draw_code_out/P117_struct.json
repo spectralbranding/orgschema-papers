@@ -1,0 +1,85 @@
+{
+  "case_id": "P117",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The 2005 reverse-triangular merger folded Great Lakes' product lines into the renamed combined specialty-chemical portfolio under the same parent, and integration generated ongoing \"merger costs ... associated with the merger of the Company and Great Lakes,\" indicating products and their operational integration moved together rather than a product-vs-process split (gap_45=0). Concurrent with closing, the parent, Great Lakes, and certain subsidiaries entered a new credit agreement and supplemental indentures consolidating financing/operations, while five Great Lakes directors joined the enlarged 11-member board — showing operations and governing organization/people transferred and aligned together (gap_56=0), coded partial at T6 only because one prior director retired and only five of the surviving board came from Great Lakes."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The 2005 combination was a merger of equals (mutual-replace at T1, with 5 Great Lakes directors joining the board). The transaction was a reverse-triangular merger where Great Lakes became a wholly-owned subsidiary, bringing its products, operations, and organization into the combined entity. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The 2005 reverse-triangular merger caused Great Lakes to survive as a wholly-owned subsidiary of the renamed parent while folding Great Lakes product lines into the combined specialty-chemical portfolio, so customer-facing products and the operating entity that housed their processes crossed together at closing (gap_45=0). Concurrently the parent and Great Lakes entered a new credit agreement and supplemental indentures consolidating financing obligations, and five former Great Lakes directors were seated on the expanded parent board, with no structural indication that processes moved without organizational alignment (gap_56=0). Reported post-closing merger-integration costs lie outside the closing-structure window and do not establish a tier-transfer gap at consummation."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The 2005 reverse-triangular merger folded Great Lakes' product lines into the renamed combined specialty-chemical portfolio under the same parent, and integration generated ongoing \\\"merger costs ... associated with the merger of the Company and Great Lakes,\\\" indicating products and their operational integration moved together rather than a product-vs-process split (gap_45=0). Concurrent with closing, the parent, Great Lakes, and certain subsidiaries entered a new credit agreement and supplemental indentures consolidating financing/operations, while five Great Lakes directors joined the enlarged 11-member board \\u2014 showing operations and governing organization/people transferred and aligned together (gap_56=0), coded partial at T6 only because one prior director retired and only five of the surviving board came from Great Lakes.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The 2005 combination was a merger of equals (mutual-replace at T1, with 5 Great Lakes directors joining the board). The transaction was a reverse-triangular merger where Great Lakes became a wholly-owned subsidiary, bringing its products, operations, and organization into the combined entity. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The 2005 reverse-triangular merger caused Great Lakes to survive as a wholly-owned subsidiary of the renamed parent while folding Great Lakes product lines into the combined specialty-chemical portfolio, so customer-facing products and the operating entity that housed their processes crossed together at closing (gap_45=0). Concurrently the parent and Great Lakes entered a new credit agreement and supplemental indentures consolidating financing obligations, and five former Great Lakes directors were seated on the expanded parent board, with no structural indication that processes moved without organizational alignment (gap_56=0). Reported post-closing merger-integration costs lie outside the closing-structure window and do not establish a tier-transfer gap at consummation.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

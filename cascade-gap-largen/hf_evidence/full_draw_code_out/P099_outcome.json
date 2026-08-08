@@ -1,0 +1,58 @@
+{
+  "case_id": "P099",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that the outcome is uncertain because there is no separate public 3-5-year record for the business, which was absorbed and deregistered. No evidence of product/process or process/organization disruption is available."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the registrant deregistered in February 2018 and filed no Form 10-K (or equivalent) covering any fiscal year in the fixed ~2021-2023 outcome window, so no realized product/process or process/organization trajectory is available. The outcome assessment explicitly records that the assembled portfolio’s post-deal path cannot be sourced within the window and is not inferred from consolidated results of the surviving entity. Absence of any documented disruption at the product/process interface or the process/organization interface therefore codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'No annual report under CIK 1455650 covers the fixed 2021-2023 outcome window, and no separately disclosed trajectory for the former portfolio was retrieved. Consequently, the slice cannot establish whether product/process disruption or process/organization fracture occurred during that period, so both pathways are uncertain.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that the outcome is uncertain because there is no separate public 3-5-year record for the business, which was absorbed and deregistered. No evidence of product/process or process/organization disruption is available.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the registrant deregistered in February 2018 and filed no Form 10-K (or equivalent) covering any fiscal year in the fixed ~2021-2023 outcome window, so no realized product/process or process/organization trajectory is available. The outcome assessment explicitly records that the assembled portfolio’s post-deal path cannot be sourced within the window and is not inferred from consolidated results of the surviving entity. Absence of any documented disruption at the product/process interface or the process/organization interface therefore codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No annual report under CIK 1455650 covers the fixed 2021-2023 outcome window, and no separately disclosed trajectory for the former portfolio was retrieved. Consequently, the slice cannot establish whether product/process disruption or process/organization fracture occurred during that period, so both pathways are uncertain.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

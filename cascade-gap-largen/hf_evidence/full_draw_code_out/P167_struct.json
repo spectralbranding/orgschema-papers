@@ -1,0 +1,85 @@
+{
+  "case_id": "P167",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence states that the debtors' broadcast businesses and properties continued to be managed and operated uninterrupted throughout the chapter 11 cases, indicating no structural mismatch between the customer-facing product and operational processes (gap_45 = 0). Furthermore, the pre-petition CEO continued in place and operations continued without interruption, showing alignment between processes and the organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states that customer-facing radio-station/advertising operations were not sold or transferred to a third party and continued uninterrupted as debtor-in-possession through the Effective Date, so T4 and T5 remained together under the reorganized successor. gap_56 is 0 because the same closing structure kept broadcast processes operating without interruption while the pre-petition CEO continued in office and no filing describes stripping processes from the operating organization; closing instruments were financial/governance only, with no TSA needed or identified."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The pre-petition parent transferred its remaining assets into the new-parent structure, while the broadcast businesses and customer-facing radio-station and advertising operations continued to be managed and operated without a documented sale, transfer, or interruption; therefore, no product-process mismatch at closing is documented. The operations continued under debtor-in-possession status and the pre-petition CEO remained in place, although six of seven directors were replaced, so the evidence does not document processes transferring without an aligned operating organization."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The evidence states that the debtors' broadcast businesses and properties continued to be managed and operated uninterrupted throughout the chapter 11 cases, indicating no structural mismatch between the customer-facing product and operational processes (gap_45 = 0). Furthermore, the pre-petition CEO continued in place and operations continued without interruption, showing alignment between processes and the organization (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states that customer-facing radio-station/advertising operations were not sold or transferred to a third party and continued uninterrupted as debtor-in-possession through the Effective Date, so T4 and T5 remained together under the reorganized successor. gap_56 is 0 because the same closing structure kept broadcast processes operating without interruption while the pre-petition CEO continued in office and no filing describes stripping processes from the operating organization; closing instruments were financial/governance only, with no TSA needed or identified.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The pre-petition parent transferred its remaining assets into the new-parent structure, while the broadcast businesses and customer-facing radio-station and advertising operations continued to be managed and operated without a documented sale, transfer, or interruption; therefore, no product-process mismatch at closing is documented. The operations continued under debtor-in-possession status and the pre-petition CEO remained in place, although six of seven directors were replaced, so the evidence does not document processes transferring without an aligned operating organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

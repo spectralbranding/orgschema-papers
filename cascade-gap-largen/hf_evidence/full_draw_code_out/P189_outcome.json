@@ -1,0 +1,58 @@
+{
+  "case_id": "P189",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "performance_metric": "net earnings fell to $12,357K in FY2022, down 90.8% YoY (from $134,940K in 2021 and $208,115K in 2020)",
+      "rationale": "On p4, the slice documents realized friction at the product/process interface: the acquired Acima virtual lease-to-own product carried a \"different lease-merchandise depreciation policy\" that drove consolidated gross margin down from 59.4% to 48.8%, and FY2022 \"other charges\" included $80.8M amortization of acquired software/intangibles and $6.8M asset impairments — but whether this constitutes an unresolvable product/operations incoherence versus ordinary accounting differences is ambiguous, so uncertain. On p5, no documented fracture between operations and people/management/culture is present — the entity continued reporting, integration ICFR-scoping aside, with no described operational-vs-organizational breakdown, so 0. The two distinct value-capture logics (traditional store-based rent-to-own vs. virtual lease-to-own with divergent margin economics), combined with the acquired business's unresolved CFPB investigation and sharply eroding earnings, support documented business-model incompatibility (t2=1); the archetype was an acquisition rather than a mischaracterized merger-of-equals, so t1=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net earnings fell 90.8% to $12,357 thousand in 2022",
+      "rationale": "The provided slice documents a sharp decline in net earnings and an ongoing CFPB investigation, but does not document specific disruptions at the product/process interface (p4) or the process/organization interface (p5). Therefore, both pathways are coded as 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 net earnings fell 90.8% year over year to $12.357 million",
+      "rationale": "The slice documents sharply declining earnings, asset impairments, acquired-asset amortization, and a revenue shift toward Acima, but it does not document that Acima’s product failed to align with operating processes; therefore p4 is 0. Acima was excluded from the 2021 internal-control assessment, but the slice reports no realized breakdown between operations and management, employees, or culture over time; therefore p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"1\", \"performance_metric\": \"net earnings fell to $12,357K in FY2022, down 90.8% YoY (from $134,940K in 2021 and $208,115K in 2020)\", \"rationale\": \"On p4, the slice documents realized friction at the product/process interface: the acquired Acima virtual lease-to-own product carried a \\\"different lease-merchandise depreciation policy\\\" that drove consolidated gross margin down from 59.4% to 48.8%, and FY2022 \\\"other charges\\\" included $80.8M amortization of acquired software/intangibles and $6.8M asset impairments \\u2014 but whether this constitutes an unresolvable product/operations incoherence versus ordinary accounting differences is ambiguous, so uncertain. On p5, no documented fracture between operations and people/management/culture is present \\u2014 the entity continued reporting, integration ICFR-scoping aside, with no described operational-vs-organizational breakdown, so 0. The two distinct value-capture logics (traditional store-based rent-to-own vs. virtual lease-to-own with divergent margin economics), combined with the acquired business's unresolved CFPB investigation and sharply eroding earnings, support documented business-model incompatibility (t2=1); the archetype was an acquisition rather than a mischaracterized merger-of-equals, so t1=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net earnings fell 90.8% to $12,357 thousand in 2022\",\n  \"rationale\": \"The provided slice documents a sharp decline in net earnings and an ongoing CFPB investigation, but does not document specific disruptions at the product/process interface (p4) or the process/organization interface (p5). Therefore, both pathways are coded as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 net earnings fell 90.8% year over year to $12.357 million\",\n  \"rationale\": \"The slice documents sharply declining earnings, asset impairments, acquired-asset amortization, and a revenue shift toward Acima, but it does not document that Acima’s product failed to align with operating processes; therefore p4 is 0. Acima was excluded from the 2021 internal-control assessment, but the slice reports no realized breakdown between operations and management, employees, or culture over time; therefore p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

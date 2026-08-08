@@ -1,0 +1,58 @@
+{
+  "case_id": "P071",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "project cost ~$8bn (up from delays); in-service slipped to 1H 2022; $1.2bn equity investment tested for impairment but held at carrying value at 12/31/2019",
+      "rationale": "p4_pathway=1: the slice documents realized disruption at the product/process (project/operations) interface — permitting and construction of the pipeline itself broke down over time, with total cost rising to ~$8bn attributed to \"delays resulting from legal challenges,\" schedule slipping to 1H 2022, a FERC Notice to Proceed for full construction held up, and adverse court rulings triggering an impairment evaluation. p5_pathway=0: no documented fracture at the process/organization (operations vs people/management/culture) interface appears in the slice; the disruptions are regulatory/legal/permitting, not internal organizational integration failures. t1_archetype=uncertain because the slice discloses only the post-deal trajectory and reassignment of the stake, with no evidence about the controlling-intent archetype playing out. t2_model=0 as no incompatibility of business models is documented."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "reassigned after closing; $1.2 billion carrying value not impaired",
+      "rationale": "The slice documents external regulatory and legal challenges causing project delays and cost increases, but there is no evidence of internal product/process incoherence (p4=0). Similarly, there is no mention of organizational or cultural fracture during integration (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': 'Approximately $8 billion project cost by FY2019'}",
+      "rationale": "{'type': 'string', 'value': 'The documented disruption consisted of permitting and legal challenges that delayed construction and raised projected cost to approximately $8 billion; the slice does not document failure to align the acquired product with operating processes, so p4 is 0. It also provides no realized evidence that operations fractured against personnel, management, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"project cost ~$8bn (up from delays); in-service slipped to 1H 2022; $1.2bn equity investment tested for impairment but held at carrying value at 12/31/2019\", \"rationale\": \"p4_pathway=1: the slice documents realized disruption at the product/process (project/operations) interface \\u2014 permitting and construction of the pipeline itself broke down over time, with total cost rising to ~$8bn attributed to \\\"delays resulting from legal challenges,\\\" schedule slipping to 1H 2022, a FERC Notice to Proceed for full construction held up, and adverse court rulings triggering an impairment evaluation. p5_pathway=0: no documented fracture at the process/organization (operations vs people/management/culture) interface appears in the slice; the disruptions are regulatory/legal/permitting, not internal organizational integration failures. t1_archetype=uncertain because the slice discloses only the post-deal trajectory and reassignment of the stake, with no evidence about the controlling-intent archetype playing out. t2_model=0 as no incompatibility of business models is documented.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"reassigned after closing; $1.2 billion carrying value not impaired\",\n  \"rationale\": \"The slice documents external regulatory and legal challenges causing project delays and cost increases, but there is no evidence of internal product/process incoherence (p4=0). Similarly, there is no mention of organizational or cultural fracture during integration (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"Approximately $8 billion project cost by FY2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"The documented disruption consisted of permitting and legal challenges that delayed construction and raised projected cost to approximately $8 billion; the slice does not document failure to align the acquired product with operating processes, so p4 is 0. It also provides no realized evidence that operations fractured against personnel, management, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

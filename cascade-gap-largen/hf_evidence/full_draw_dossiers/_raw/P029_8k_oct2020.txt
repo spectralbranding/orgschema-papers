@@ -1,0 +1,83 @@
+ 
+
+ 8-K 
+
+ false 0001707092 0001707092 2020-10-01 2020-10-01 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 Date of Report (Date of earliest event reported): October 1, 2020 DELPHI TECHNOLOGIES PLC (Exact name of registrant as specified in its charter) 
+
+ Jersey 
+ 
+ 001-38110 
+ 
+ 98-1367514 
+ 
+ (State or other jurisdiction of incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer Identification No.) One Angel Court 10th Floor London , EC2R 7HJ United Kingdom (Address of principal executive offices) 011-44-020-305 - 74300 (Registrant';s telephone number, including area code) Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions ( see General Instruction A.2. below): 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of class 
+ 
+ Ticker symbol(s) 
+ 
+ Name of each exchange on which registered 
+ 
+ Ordinary Shares. $0.01 par value per share 
+ 
+ DLPH 
+ 
+ New York Stock Exchange Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). Emerging growth company &#9744; . If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744;. 
+
+ Introduction On October 1, 2020, BorgWarner Inc., a Delaware corporation (";BorgWarner";), completed the previously announced acquisition of Delphi Technologies PLC, a public limited company organized under the Laws of the Bailiwick of Jersey (";Delphi Technologies";), by means of a court-sanctioned scheme of arrangement (the ";Transaction";) pursuant to the Transaction Agreement, dated as of January 28, 2020, as amended (the ";Transaction Agreement";), by and between the parties. Upon the consummation of the Transaction, Delphi Technologies became a wholly-owned subsidiary of BorgWarner. 
+
+ Item 1.02. 
+ Termination of a Material Definitive Agreement. At the effective time of the Transaction (the ";Effective Time";), the Credit Agreement, dated as of September 7, 2017, as amended, by and among Delphi Technologies, Delphi Powertrain Corporation and JPMorgan Chase Bank, N.A., as Administrative Agent, and the other lenders and agents party thereto, was terminated, all obligations and guarantees thereunder repaid and discharged (other than contingent obligations for which no claim has been made) and all liens granted in connection therewith released. 
+
+ Item 2.01. 
+ Completion of Acquisition or Disposition of Assets. The information set forth in the Introduction above is incorporated herein by reference. At the Effective Time, each of the issued and outstanding ordinary shares of Delphi Technologies (each, a ";Delphi Technologies Share";) (other than Delphi Technologies Shares held by BorgWarner or any of its affiliates) was exchanged for 0.4307 of a share (the ";Exchange Ratio";) of common stock of BorgWarner, par value $0.01 per share (a ";BorgWarner Share";), and cash in lieu of any fractional BorgWarner Share. Subject to certain exceptions, each award of restricted stock units (other than performance-based restricted stock units) of Delphi Technologies (an ";Existing RSU Award";) was, as of immediately prior to the Effective Time, cancelled and automatically converted into an award of restricted stock units of BorgWarner (";BorgWarner RSUs";) covering a number of BorgWarner Shares determined by multiplying the number of Delphi Technologies Shares subject to such Existing RSU Award immediately prior to the closing of the Transaction by the Exchange Ratio (and rounding up or down to the nearest whole number). The converted BorgWarner RSUs have the same terms and conditions as the Existing RSU Award and will generally become fully vested upon certain qualifying terminations of employment of the holder thereof prior to the second anniversary of the Effective Time. Existing RSU Awards that were not converted into BorgWarner RSUs were, as of immediately prior to the Effective Time, cancelled and automatically converted into the right to receive, for each restricted stock unit, an amount of cash equal to $16.6074 (the ";Cash Value";). The amount of the Cash Value was equal to the product of (A) the volume-weighted average price of BorgWarner Shares on the New York Stock Exchange for the period of ten consecutive trading days ending on the second full trading day prior to the Effective Time and (B) the Exchange Ratio. Subject to certain exceptions, each award of performance-based restricted stock units of Delphi Technologies (an ";Existing PSU Award";) was, as of immediately prior to the Effective Time, cancelled and automatically converted into an award of BorgWarner 
+ 2 
+
+RSUs covering a number of BorgWarner Shares determined by multiplying: (i) the number of Delphi Technologies Shares subject to such Existing PSU Award immediately prior to the closing of the Transaction (with performance deemed to have been achieved for this purpose at the target number of Delphi Technologies Shares subject to such Existing PSU Award); by (ii) the Exchange Ratio (and rounding up or down to the nearest whole number) (such restricted stock unit of BorgWarner, a ";Converted PSU Award";). Each Converted PSU Award is subject to the same time-based vesting conditions that applied to the Existing PSU Award immediately prior to the closing of the Transaction and is not subject to any performance-based vesting conditions. In all other respects, the Converted PSU Award is subject to substantially the same terms and conditions applicable to the Existing PSU Award and will generally become fully vested upon certain qualifying terminations of employment of the holder thereof prior to the second anniversary of the Effective Time. Each Existing PSU Award that was not converted into a Converted PSU Award was, as of immediately prior to the Effective Time, cancelled and automatically converted into the right to receive, for each restricted stock unit subject to such Existing PSU Award (which, for this purpose, was a number equal to the target number of Delphi Technologies Shares subject to the Existing PSU Award), an amount of cash equal to the Cash Value. Each award of options to acquire Delphi Technologies Shares that was outstanding and unexercised immediately prior to the Effective Time was, as of the Effective Time, cancelled and automatically converted into the right to receive an amount of cash equal to the product of: (i) the excess, if any, of the Cash Value over the exercise price per Delphi Share of such option, multiplied by (ii) the total number of Delphi Technologies Shares subject to such option. Each award of restricted stock units that was granted to a non-employee member of the Board of Directors of Delphi Technologies (the ";Delphi Board";) was, in accordance with the terms applicable to such restricted stock units under the applicable plan and award agreement pursuant to which the units were granted: (i) vested as of the Effective Time; and (ii) cancelled and converted into the right to receive, for each restricted stock unit subject to such award, an amount of cash equal to the Cash Value. As of the Effective Time, BorgWarner assumed all of the Delphi Technologies stock plans, including with respect to any shares (as adjusted pursuant to the Exchange Ratio) that remain (or may again become) available for future issuance thereunder, subject to any limitations under applicable law or any applicable securities exchange listing requirements. The foregoing summaries of the Transaction and the Transaction Agreement do not purport to be complete and are subject to, and qualified in their entirety by reference to, the full text of the Transaction Agreement, which was previously attached as Exhibit 2.1 to the Current Report on Form 8-K filed by Delphi Technologies on January 29, 2020, and which was amended on May 6, 2020, as reported on the Company';s Current Report on Form 8-K filed on May 6, 2020. The Transaction Agreement is incorporated herein by reference. 
+
+ Item 3.01. 
+ Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. Prior to the Effective Time, Delphi Technologies Shares were listed and traded on the NYSE under the trading symbol ";DLPH."; On October 1, 2020, Delphi Technologies notified the NYSE that the Transaction had become effective and requested that trading of Delphi Technologies Shares on the NYSE be suspended prior to the opening of trading on October 2, 2020. In addition, Delphi Technologies requested that the NYSE file with the Securities and Exchange Commission (the ";SEC";) a notification of removal from listing on Form 25 to delist the Delphi Technologies Shares from the NYSE and deregister the Delphi Technologies Shares under Section 12(b) of the Securities Exchange Act of 1934, as amended (the ";Exchange Act";). The NYSE is expected to file the Form 25 on October 2, 2020. As a result, Delphi Technologies Shares will no longer be listed on the NYSE. Delphi Technologies intends to file with the SEC certifications on Form 15 requesting the termination of the registration of all Delphi Technologies'; securities registered under Section 12(g) of the Exchange Act and the suspension of Delphi Technologies'; reporting obligations under Sections 13 and 15(d) of the Exchange Act. The information set forth in Item 2.01 is incorporated herein by reference. 
+
+ Item 3.03. 
+ Material Modification to Rights of Security Holders. At the Effective Time, each outstanding Delphi Technologies Share (other than Delphi Technologies Shares held by BorgWarner or any of its affiliates) was converted into the right to receive 0.4307 of a BorgWarner Share and cash in lieu of any fractional BorgWarner Share. The information set forth in Items 2.01, 3.01 and 5.01 is incorporated herein by reference. 
+ 3 
+
+ Item 5.01. 
+ Changes in Control of Registrant. At the Effective Time, a change in control of Delphi Technologies occurred, and Delphi Technologies became a wholly-owned subsidiary of BorgWarner. The information set forth in Items 2.01 and 3.01 is incorporated herein by reference. 
+
+ Item 5.02. 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. Pursuant to the Transaction Agreement, Robin J. Adams, Joseph S. Cantie, Nelda J. Connors, Gary L. Cowger, Richard F. Dauch, David S. Haffner, Helmut Leube, Timothy M. Manganello, Hari N. Nair and MaryAnn Wright resigned from the Delphi Board and from all committees of the Delphi Board on which they served, effective as of the Effective Time. Also at the Effective Time, Richard F. Dauch, Vivid Sehgal, James D. Harrington and Kevin Quinlan were no longer executive officers of Delphi Technologies. The information set forth in Item 2.01 is incorporated herein by reference. 
+ 4 
+
+ SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Date: October 2, 2020 
+
+ DELPHI TECHNOLOGIES PLC 
+
+ By: 
+ 
+ /s/ Tonit M. Calaway 
+
+ Tonit M. Calaway 
+
+ President and Secretary 
+ 
+ 5 
+

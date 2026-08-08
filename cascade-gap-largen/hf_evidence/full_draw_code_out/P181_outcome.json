@@ -1,0 +1,58 @@
+{
+  "case_id": "P181",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net premiums earned grew to $2,722.6M in 2020",
+      "rationale": "The slice reports that Allied World continued to operate as a named reportable segment with net premiums earned growing to $2,722.6 million in 2020 and stable goodwill of ~$940 million, indicating no realized product/process disruption (p4=0). Furthermore, there is no documented evidence of process/organization fracture or cultural clashes, as the parent company continued to invest capital to support underwriting plans and the business operated stably (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained/grew to ~$17.0bn; goodwill stable ~$940M",
+      "rationale": "The FY2020 parent segment disclosure shows Allied World still operating as a global P&C and specialty insurer/reinsurer with net premiums earned rising to $2,722.6M and segment assets to $16,975.5M, with allocated goodwill essentially stable at ~$940M and no product-line or operating-process incoherence reported, so p4_pathway=0. No fracture at the process/organization interface is documented either (management continuity is explicitly unverified; redomestication to Bermuda and capital contribution to support underwriting are recorded without cultural or operational-integration failure), so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net premiums earned grew to $2,722.6M in 2020\",\n  \"rationale\": \"The slice reports that Allied World continued to operate as a named reportable segment with net premiums earned growing to $2,722.6 million in 2020 and stable goodwill of ~$940 million, indicating no realized product/process disruption (p4=0). Furthermore, there is no documented evidence of process/organization fracture or cultural clashes, as the parent company continued to invest capital to support underwriting plans and the business operated stably (p5=0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained/grew to ~$17.0bn; goodwill stable ~$940M\",\n  \"rationale\": \"The FY2020 parent segment disclosure shows Allied World still operating as a global P&C and specialty insurer/reinsurer with net premiums earned rising to $2,722.6M and segment assets to $16,975.5M, with allocated goodwill essentially stable at ~$940M and no product-line or operating-process incoherence reported, so p4_pathway=0. No fracture at the process/organization interface is documented either (management continuity is explicitly unverified; redomestication to Bermuda and capital contribution to support underwriting are recorded without cultural or operational-integration failure), so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P350",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence states that 100% of the outstanding shares of the two operating banks transferred to FirstBank, meaning the customer-facing products (T4) and operational processes (T5) moved together across the ownership boundary. Key executives and employees also transferred alongside the operations (T6) under employment agreements, with no documented structural mismatch at closing, even though systems were scheduled for post-closing conversion."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states that 100% of the shares of the two operating banks (customer-facing deposit- and lending-services businesses) transferred and the product and legal vehicle moved together into FirstBank’s charter, while a dedicated “Transition; Informational Systems Conversion” provision simultaneously scheduled re-platforming of the Clayton operating/IT substrate onto FirstBank’s systems rather than retention of a separate stack. gap_56=0 because that same conversion structure was paired at closing with customary employment letters and restrictive-covenant agreements for four named Clayton Banks executives plus a three-year post-closing employment commitment by Mr. Clayton expressly to support integration, so the people tier was contractually aligned with the process re-platforming."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The legal-vehicle/product evidence states that 100% of both banks transferred and were merged into FirstBank, while the dedicated systems-conversion provision aligned their operating systems with FirstBank's platform; therefore, no product-process mismatch is documented at closing (SEC accession 0001193125-17-225253, DEFM14A, \"The Stock Purchase Agreement\" and Annex A §5.14). The people/management evidence documents fixed-term FirstBank roles for four Clayton Banks executives and a three-year integration-support role for Mr. Clayton, so no process-organization mismatch is documented at closing, although the disposition of the broader workforce is not established (SEC accession 0001193125-17-225253, DEFM14A, \"Employment Arrangements\")."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"swap\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The evidence states that 100% of the outstanding shares of the two operating banks transferred to FirstBank, meaning the customer-facing products (T4) and operational processes (T5) moved together across the ownership boundary. Key executives and employees also transferred alongside the operations (T6) under employment agreements, with no documented structural mismatch at closing, even though systems were scheduled for post-closing conversion.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states that 100% of the shares of the two operating banks (customer-facing deposit- and lending-services businesses) transferred and the product and legal vehicle moved together into FirstBank’s charter, while a dedicated “Transition; Informational Systems Conversion” provision simultaneously scheduled re-platforming of the Clayton operating/IT substrate onto FirstBank’s systems rather than retention of a separate stack. gap_56=0 because that same conversion structure was paired at closing with customary employment letters and restrictive-covenant agreements for four named Clayton Banks executives plus a three-year post-closing employment commitment by Mr. Clayton expressly to support integration, so the people tier was contractually aligned with the process re-platforming.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The legal-vehicle/product evidence states that 100% of both banks transferred and were merged into FirstBank, while the dedicated systems-conversion provision aligned their operating systems with FirstBank's platform; therefore, no product-process mismatch is documented at closing (SEC accession 0001193125-17-225253, DEFM14A, \\\"The Stock Purchase Agreement\\\" and Annex A §5.14). The people/management evidence documents fixed-term FirstBank roles for four Clayton Banks executives and a three-year integration-support role for Mr. Clayton, so no process-organization mismatch is documented at closing, although the disposition of the broader workforce is not established (SEC accession 0001193125-17-225253, DEFM14A, \\\"Employment Arrangements\\\").\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "swap",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

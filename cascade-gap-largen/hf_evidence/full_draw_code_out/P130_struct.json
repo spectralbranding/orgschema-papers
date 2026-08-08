@@ -1,0 +1,85 @@
+{
+  "case_id": "P130",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: the customer-facing asset (Jarden's brand portfolio, \"over 120 trusted, quality brands\" across three segments) crossed whole as a wholly-owned subsidiary \"holding Jarden's legacy business,\" so product and its operating entity/processes moved together with no carve-out at signing. gap_56=1: at closing the operational leadership was re-engineered under acquirer control — Newell COO Bill Burke was named to head Jarden's operations — while the people/organization layer did not transfer coherently: Jarden's CEO/GC/CFO ceased as officers (two terminated \"Without Cause\" under Change in Control), and the bridging operations officer Sansone had his Jarden agreement terminated and became \"an employee of Newell.\" gap_mitigated=no: the reviewed closing-era filings \"do not describe a transition-services agreement, shared-services agreement, or supply arrangement,\" with only debt-refinancing and individual separation agreements identified."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the customer-facing brand portfolio (over 120 brands, no carve-outs) crossed via the whole-company share conversion together with Jarden’s operating entity as a wholly-owned Newell subsidiary, with existing business plans to be delivered under named operating leadership—no product-without-process mismatch at closing. gap_56 is 0 because the same closing structure expressly paired Newell COO Bill Burke to lead legacy Jarden operations with retained Jarden EVP Operations Richard Sansone, who crossed into Newell employment at the effective time, so process and a bridging operations cadre were aligned together; no TSA or other gap-absorbing instrument is described, but none is required absent a coded gap."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the entire portfolio of more than 120 brands crossed without any carve-out and that the successor subsidiary held Jarden's legacy business, documenting that the customer-facing products and associated operations moved together. It also states that Newell COO Bill Burke would lead the legacy operations while working with Jarden operations EVP Richard Sansone, who became a Newell employee at closing; despite departures among Jarden's senior executives, this documented operating bridge coherently aligned the transferred processes with personnel and management at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: the customer-facing asset (Jarden's brand portfolio, \\\"over 120 trusted, quality brands\\\" across three segments) crossed whole as a wholly-owned subsidiary \\\"holding Jarden's legacy business,\\\" so product and its operating entity/processes moved together with no carve-out at signing. gap_56=1: at closing the operational leadership was re-engineered under acquirer control \\u2014 Newell COO Bill Burke was named to head Jarden's operations \\u2014 while the people/organization layer did not transfer coherently: Jarden's CEO/GC/CFO ceased as officers (two terminated \\\"Without Cause\\\" under Change in Control), and the bridging operations officer Sansone had his Jarden agreement terminated and became \\\"an employee of Newell.\\\" gap_mitigated=no: the reviewed closing-era filings \\\"do not describe a transition-services agreement, shared-services agreement, or supply arrangement,\\\" with only debt-refinancing and individual separation agreements identified.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states the customer-facing brand portfolio (over 120 brands, no carve-outs) crossed via the whole-company share conversion together with Jarden’s operating entity as a wholly-owned Newell subsidiary, with existing business plans to be delivered under named operating leadership—no product-without-process mismatch at closing. gap_56 is 0 because the same closing structure expressly paired Newell COO Bill Burke to lead legacy Jarden operations with retained Jarden EVP Operations Richard Sansone, who crossed into Newell employment at the effective time, so process and a bridging operations cadre were aligned together; no TSA or other gap-absorbing instrument is described, but none is required absent a coded gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the entire portfolio of more than 120 brands crossed without any carve-out and that the successor subsidiary held Jarden's legacy business, documenting that the customer-facing products and associated operations moved together. It also states that Newell COO Bill Burke would lead the legacy operations while working with Jarden operations EVP Richard Sansone, who became a Newell employee at closing; despite departures among Jarden's senior executives, this documented operating bridge coherently aligned the transferred processes with personnel and management at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

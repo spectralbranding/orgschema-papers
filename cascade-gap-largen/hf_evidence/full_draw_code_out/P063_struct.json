@@ -1,0 +1,85 @@
+{
+  "case_id": "P063",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the institutions were acquired \"as going concerns, each retaining its accreditations, trademarks, campuses and local operations,\" and that for BPP \"the customer-facing product, its delivering operations and its organization transferred together as an intact institution,\" so product (T4) and its producing processes (T5) crossed together — gap_45 = 0. Likewise the delivering operations and organization/people transferred as one intact institution run as its own reportable segment, so processes (T5) and organization (T6) moved coherently together — gap_56 = 0. T1 is coded imprint-share because two principals (Apollo Group controlling, Carlyle minority financial partner) jointly formed the vehicle with both intents co-present. Since no gap is coded, gap_mitigated = NA, consistent with the filing noting no transitional-services or shared-substrate agreement (the institutions are self-standing segments)."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that acquired institutions (e.g. BPP) transferred with 'the customer-facing product, its delivering operations and its organization transferred together as an intact institution,' and each retained accreditations, trademarks, campuses and local operations as self-standing consolidated segments. Thus T4 product and T5 processes crossed together (gap_45=0) and T5 processes crossed with T6 organization (gap_56=0). No transitional-services or shared-substrate bridging agreement is described; gaps are absent, so mitigation is NA."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the acquired accredited institutions transferred as going concerns with their customer-facing programs, campuses, local operations, trademarks, and accreditations, so the products and delivering processes moved together at closing. It also expressly describes BPP's customer-facing product, delivering operations, and organization as transferring together as an intact institution, and presents the acquired institutions as self-standing operating segments rather than businesses dependent on a retained-parent substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the institutions were acquired \\\"as going concerns, each retaining its accreditations, trademarks, campuses and local operations,\\\" and that for BPP \\\"the customer-facing product, its delivering operations and its organization transferred together as an intact institution,\\\" so product (T4) and its producing processes (T5) crossed together \\u2014 gap_45 = 0. Likewise the delivering operations and organization/people transferred as one intact institution run as its own reportable segment, so processes (T5) and organization (T6) moved coherently together \\u2014 gap_56 = 0. T1 is coded imprint-share because two principals (Apollo Group controlling, Carlyle minority financial partner) jointly formed the vehicle with both intents co-present. Since no gap is coded, gap_mitigated = NA, consistent with the filing noting no transitional-services or shared-substrate agreement (the institutions are self-standing segments).\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that acquired institutions (e.g. BPP) transferred with 'the customer-facing product, its delivering operations and its organization transferred together as an intact institution,' and each retained accreditations, trademarks, campuses and local operations as self-standing consolidated segments. Thus T4 product and T5 processes crossed together (gap_45=0) and T5 processes crossed with T6 organization (gap_56=0). No transitional-services or shared-substrate bridging agreement is described; gaps are absent, so mitigation is NA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the acquired accredited institutions transferred as going concerns with their customer-facing programs, campuses, local operations, trademarks, and accreditations, so the products and delivering processes moved together at closing. It also expressly describes BPP's customer-facing product, delivering operations, and organization as transferring together as an intact institution, and presents the acquired institutions as self-standing operating segments rather than businesses dependent on a retained-parent substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

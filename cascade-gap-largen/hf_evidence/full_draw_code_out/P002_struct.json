@@ -1,0 +1,85 @@
+{
+  "case_id": "P002",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The beverage brands (T4) and their manufacturing, bottling, and distribution processes (T5) transferred together as an integrated operation, resulting in no gap_45. However, the shared corporate service substrate (IT, HR, finance, treasury) did not transfer as an intact operating whole alongside the business, creating a gap_56 that was mitigated at closing by a transition services agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that manufacturing and the bottling/distribution route-to-market 'crossed together with the brands as an integrated operation,' so the customer-facing product (T4) and its operational processes (T5) moved together at closing (gap_45=0). The same closing structure transferred the business’s approximately 20,000 full-time employees with that integrated operation and established CSAB with its own management team and board, so T5 processes and T6 organization were aligned at closing (gap_56=0). Shared corporate support functions that did not transfer intact were bridged by a transition services agreement but are outside the core product-process-organization package coded above."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The beverage brands crossed into CSAB together with manufacturing, bottling, distribution, and route-to-market processes as an integrated operation, so no product-process gap existed at closing. However, the shared IT, finance, treasury, insurance, procurement, and administrative substrate did not transfer as an intact whole, requiring CSAB to enhance or establish its own support systems; this process-organization mismatch was contractually bridged by the transition services agreement for generally one month to one year."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The beverage brands (T4) and their manufacturing, bottling, and distribution processes (T5) transferred together as an integrated operation, resulting in no gap_45. However, the shared corporate service substrate (IT, HR, finance, treasury) did not transfer as an intact operating whole alongside the business, creating a gap_56 that was mitigated at closing by a transition services agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that manufacturing and the bottling/distribution route-to-market 'crossed together with the brands as an integrated operation,' so the customer-facing product (T4) and its operational processes (T5) moved together at closing (gap_45=0). The same closing structure transferred the business’s approximately 20,000 full-time employees with that integrated operation and established CSAB with its own management team and board, so T5 processes and T6 organization were aligned at closing (gap_56=0). Shared corporate support functions that did not transfer intact were bridged by a transition services agreement but are outside the core product-process-organization package coded above.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The beverage brands crossed into CSAB together with manufacturing, bottling, distribution, and route-to-market processes as an integrated operation, so no product-process gap existed at closing. However, the shared IT, finance, treasury, insurance, procurement, and administrative substrate did not transfer as an intact whole, requiring CSAB to enhance or establish its own support systems; this process-organization mismatch was contractually bridged by the transition services agreement for generally one month to one year.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

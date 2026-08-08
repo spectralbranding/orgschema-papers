@@ -1,0 +1,85 @@
+{
+  "case_id": "P328",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "CUB merged whole into PacWest via direct statutory merger with a parallel bank-level merger, so the acquired legal vehicle terminated (T3) and PacWest's controlling intent was installed (T1 replace). The branch/delivery network (T4) and its operations (T5) were disclosed as being closed/consolidated on both sides — i.e., product and process were reorganized together into the combined network, so no product-vs-process mismatch (gap_45=0). Likewise, CUB's board and officers ceased at closing while operations were consolidated under PacWest's continuing directors/officers, with three CUB executives bridged via fixed-term consulting agreements — process and organization moved together into the acquirer's structure rather than one transferring without the other (gap_56=0), hence gap_mitigated NA."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0 because the slice ties product and process together under the parallel bank-level statutory merger of California United Bank into Pacific Western Bank, with only a disclosed plan to close/consolidate branches on both sides rather than any product-without-process split at closing (DEFM14A cover letter; branch-network risk factor). gap_56=1 because operational absorption of CU Bank into Pacific Western Bank occurred while CUB directors and executive officers expressly ceased at closing and PacWest’s pre-closing directors/officers continued, so target management/organization did not transfer alongside the processes; the only bridge was fixed-term post-closing consulting agreements with three CUB executives (DEFM14A Board/Officers and Consulting Agreements; 8-K Item 5.02), which contractually mitigate that gap."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The disclosed closing structure combined CU Bank with Pacific Western Bank and contemplated reorganizing both sides of the branch/delivery network through reciprocal closures and consolidations, rather than transferring customer-facing branches without an accompanying operational structure [SRC: SEC accession 0001047469-17-004755, DEFM14A]. Although CUB's directors and executive officers ceased serving, PacWest's incumbent directors and officers continued at the surviving corporation and three CUB executives entered closing-conditioned consulting agreements; the slice documents management replacement and limited continuity, but not a process-versus-organization mismatch at closing [SRC: SEC accession 0001104659-17-063201, Form 8-K Item 5.02; SEC accession 0001047469-17-004755, DEFM14A]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"CUB merged whole into PacWest via direct statutory merger with a parallel bank-level merger, so the acquired legal vehicle terminated (T3) and PacWest's controlling intent was installed (T1 replace). The branch/delivery network (T4) and its operations (T5) were disclosed as being closed/consolidated on both sides \\u2014 i.e., product and process were reorganized together into the combined network, so no product-vs-process mismatch (gap_45=0). Likewise, CUB's board and officers ceased at closing while operations were consolidated under PacWest's continuing directors/officers, with three CUB executives bridged via fixed-term consulting agreements \\u2014 process and organization moved together into the acquirer's structure rather than one transferring without the other (gap_56=0), hence gap_mitigated NA.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=0 because the slice ties product and process together under the parallel bank-level statutory merger of California United Bank into Pacific Western Bank, with only a disclosed plan to close/consolidate branches on both sides rather than any product-without-process split at closing (DEFM14A cover letter; branch-network risk factor). gap_56=1 because operational absorption of CU Bank into Pacific Western Bank occurred while CUB directors and executive officers expressly ceased at closing and PacWest’s pre-closing directors/officers continued, so target management/organization did not transfer alongside the processes; the only bridge was fixed-term post-closing consulting agreements with three CUB executives (DEFM14A Board/Officers and Consulting Agreements; 8-K Item 5.02), which contractually mitigate that gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The disclosed closing structure combined CU Bank with Pacific Western Bank and contemplated reorganizing both sides of the branch/delivery network through reciprocal closures and consolidations, rather than transferring customer-facing branches without an accompanying operational structure [SRC: SEC accession 0001047469-17-004755, DEFM14A]. Although CUB's directors and executive officers ceased serving, PacWest's incumbent directors and officers continued at the surviving corporation and three CUB executives entered closing-conditioned consulting agreements; the slice documents management replacement and limited continuity, but not a process-versus-organization mismatch at closing [SRC: SEC accession 0001104659-17-063201, Form 8-K Item 5.02; SEC accession 0001047469-17-004755, DEFM14A].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P039",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of $102.4 million for 2019",
+      "rationale": "The slice documents a $52.6 million impairment of idle compressor units and margin compression due to project expenses, but does not describe these as a failure to integrate an acquired product line with operating processes (p4). There is also mention of historical accounting errors, but no documented fracture between operations and organizational culture/management (p5)."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "assets retained; $102.4M net loss and $74.4M impairments (2019)",
+      "rationale": "p4 is coded 1 because the slice documents a $52.6M 2019 impairment on idle contract-operations compressor units retired after management determined they were not of a type, configuration, condition, make or model cost-efficient to maintain and operate, plus product-sales margin compression from higher expenses on a specific North America project and a product-mix shift—i.e., realized product/process incoherence. p5 is coded 0 because the only process-related disclosure is residual restatement-related charges from percentage-of-completion accounting errors first identified in 2016; the slice does not document operations fracturing against people, management, or culture over time."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$102.4 million net loss in 2019'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record documents product/process disruption: idle compressor units were found to be of types, configurations, conditions, makes, or models that were not cost-efficient to maintain and operate, resulting in their retirement and a $52.6 million impairment. Product-sales margins were also pressured by higher expenses on a specific North America project and a shift in product mix. No realized fracture between operations and people, management, or culture is documented; the disclosed percentage-of-completion accounting errors concern accounting processes and do not establish such an organizational integration breakdown.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"net loss of $102.4 million for 2019\",\n\"rationale\": \"The slice documents a $52.6 million impairment of idle compressor units and margin compression due to project expenses, but does not describe these as a failure to integrate an acquired product line with operating processes (p4). There is also mention of historical accounting errors, but no documented fracture between operations and organizational culture/management (p5).\"\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"assets retained; $102.4M net loss and $74.4M impairments (2019)\",\n  \"rationale\": \"p4 is coded 1 because the slice documents a $52.6M 2019 impairment on idle contract-operations compressor units retired after management determined they were not of a type, configuration, condition, make or model cost-efficient to maintain and operate, plus product-sales margin compression from higher expenses on a specific North America project and a product-mix shift—i.e., realized product/process incoherence. p5 is coded 0 because the only process-related disclosure is residual restatement-related charges from percentage-of-completion accounting errors first identified in 2016; the slice does not document operations fracturing against people, management, or culture over time.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$102.4 million net loss in 2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents product/process disruption: idle compressor units were found to be of types, configurations, conditions, makes, or models that were not cost-efficient to maintain and operate, resulting in their retirement and a $52.6 million impairment. Product-sales margins were also pressured by higher expenses on a specific North America project and a shift in product mix. No realized fracture between operations and people, management, or culture is documented; the disclosed percentage-of-completion accounting errors concern accounting processes and do not establish such an organizational integration breakdown.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

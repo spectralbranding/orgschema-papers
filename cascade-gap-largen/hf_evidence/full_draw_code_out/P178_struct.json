@@ -1,0 +1,85 @@
+{
+  "case_id": "P178",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a cross-border reincorporation where the legal vehicle (T3) was swapped from a Dutch N.V. to a UK plc. All operations, products, and employees (T4, T5, T6) continued unchanged under the new parent, meaning there were no structural mismatches or gaps between product, process, and organization."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states Sensata-UK and its subsidiaries 'will continue to conduct our business in substantially the same manner as is currently being conducted by Sensata-Netherlands and its subsidiaries,' with all assets and liabilities transferring by universal succession and subsidiaries remaining under the new parent; product (T4) and processes (T5) therefore moved together with no structural mismatch at closing. It further states employees, management, headquarters, and assumed equity/benefit plans continue unchanged under the new parent with no separated operating substrate or TSA, so processes (T5) and organization (T6) likewise remained aligned with no gap_56."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The filing states that all assets and liabilities transferred by universal succession and that the business would continue in substantially the same manner, so the customer-facing business and its operating processes moved together without a documented T4–T5 mismatch. It also states that subsidiaries, operations, employees, and management continued unchanged under the new parent and that employee benefit and equity plans were assumed by operation of law, so no T5–T6 structural gap existed at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a cross-border reincorporation where the legal vehicle (T3) was swapped from a Dutch N.V. to a UK plc. All operations, products, and employees (T4, T5, T6) continued unchanged under the new parent, meaning there were no structural mismatches or gaps between product, process, and organization.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states Sensata-UK and its subsidiaries 'will continue to conduct our business in substantially the same manner as is currently being conducted by Sensata-Netherlands and its subsidiaries,' with all assets and liabilities transferring by universal succession and subsidiaries remaining under the new parent; product (T4) and processes (T5) therefore moved together with no structural mismatch at closing. It further states employees, management, headquarters, and assumed equity/benefit plans continue unchanged under the new parent with no separated operating substrate or TSA, so processes (T5) and organization (T6) likewise remained aligned with no gap_56.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The filing states that all assets and liabilities transferred by universal succession and that the business would continue in substantially the same manner, so the customer-facing business and its operating processes moved together without a documented T4–T5 mismatch. It also states that subsidiaries, operations, employees, and management continued unchanged under the new parent and that employee benefit and equity plans were assumed by operation of law, so no T5–T6 structural gap existed at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

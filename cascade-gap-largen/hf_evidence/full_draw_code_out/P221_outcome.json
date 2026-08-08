@@ -1,0 +1,58 @@
+{
+  "case_id": "P221",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "~$2.0bn property impairment / ~$1.869bn net loss in FY2020, recovering to ~$1,050.2m net income by FY2022; Ironwood 35% interest sold Oct 2020 for ~$27.1m",
+      "rationale": "No product/process incoherence is documented; the acquired oil-and-gas asset base was operated continuously and the FY2020 loss is explicitly attributed to a commodity-price decline driving impairments, not to product/operations misalignment (p4=0). On the process/organization interface, the transition from the EVOC contract-operator arrangement to in-house operations was an orderly, Company-initiated termination (Aug 2020 notice, wound down June 30, 2021) accompanied by headcount growth and lower G&A costs — an executed operational transition rather than a documented fracture between operations and organization (p5=0). No business-model incompatibility is documented (t2=0), and the slice provides no evidence about the controlling-intent archetype's coherence, so t1 is uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of approximately $1,050.249 million for fiscal year 2022",
+      "rationale": "The slice explicitly documents a shift at the process/organization interface, noting the termination of the Services Agreement with the contract operator (EVOC) and a transition to increased internal employee headcount. There is no documented evidence of disruption at the product/process interface, nor is there evidence of archetype incoherence or business model incompatibility."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$2bn property impairments (2020) then recovery to ~$1.05bn NI (2022); partial Ironwood divestiture",
+      "rationale": "p4 is 0 because the slice documents no product/process interface disruption; the ~$2.0 billion proved/unproved property impairments in FY2020 are explicitly attributed to a sharp commodity-price decline, not to inability to align acquired assets with operating processes. p5 is 0 because the August 2020 notice terminating the EVOC Services Agreement (wound down by June 30, 2021) and concurrent Non-Competition end are presented as an orderly cost-reducing internalization with rising own headcount (213 by YE2022), not as a fracture of operations against organization/culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"~$2.0bn property impairment / ~$1.869bn net loss in FY2020, recovering to ~$1,050.2m net income by FY2022; Ironwood 35% interest sold Oct 2020 for ~$27.1m\", \"rationale\": \"No product/process incoherence is documented; the acquired oil-and-gas asset base was operated continuously and the FY2020 loss is explicitly attributed to a commodity-price decline driving impairments, not to product/operations misalignment (p4=0). On the process/organization interface, the transition from the EVOC contract-operator arrangement to in-house operations was an orderly, Company-initiated termination (Aug 2020 notice, wound down June 30, 2021) accompanied by headcount growth and lower G&A costs \\u2014 an executed operational transition rather than a documented fracture between operations and organization (p5=0). No business-model incompatibility is documented (t2=0), and the slice provides no evidence about the controlling-intent archetype's coherence, so t1 is uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of approximately $1,050.249 million for fiscal year 2022\",\n  \"rationale\": \"The slice explicitly documents a shift at the process/organization interface, noting the termination of the Services Agreement with the contract operator (EVOC) and a transition to increased internal employee headcount. There is no documented evidence of disruption at the product/process interface, nor is there evidence of archetype incoherence or business model incompatibility.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$2bn property impairments (2020) then recovery to ~$1.05bn NI (2022); partial Ironwood divestiture\",\n  \"rationale\": \"p4 is 0 because the slice documents no product/process interface disruption; the ~$2.0 billion proved/unproved property impairments in FY2020 are explicitly attributed to a sharp commodity-price decline, not to inability to align acquired assets with operating processes. p5 is 0 because the August 2020 notice terminating the EVOC Services Agreement (wound down by June 30, 2021) and concurrent Non-Competition end are presented as an orderly cost-reducing internalization with rising own headcount (213 by YE2022), not as a fracture of operations against organization/culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P003",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the customer-facing product operation (Alaris, Pyxis, ChloraPrep, etc.) crossed the boundary together with its own manufacturing, quality-assurance, distribution, packaging and sterilization facilities (32 operating facilities), so product and its production/delivery processes moved together rather than apart. gap_56=0: the ~16,700-employee workforce and the full management team (Schlotterbeck as Chairman/CEO, with no executives remaining Cardinal employees) transferred coherently alongside the operational processes. The only substrate not transferred whole was the shared centralized corporate functions (finance/IT/HR/treasury), which is a Parent-substrate carve-out (coded T5 partial) bridged by a reciprocal transition services agreement, not a T4-vs-T5 or T5-vs-T6 mismatch in the transferred product operation."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the spin-off detached an intact customer-facing product operation (Alaris, Pyxis, respiratory, infection-prevention, V. Mueller brands) together with its manufacturing/quality/distribution facilities, so T4 and T5 crossed together and gap_45=0. It likewise records that the ~16,700-employee workforce and the management team (Schlotterbeck as Chairman/CEO; executives ceasing to be Cardinal officers) moved with the business, so T5 and T6 aligned at closing and gap_56=0. Shared corporate substrate (finance/IT/HR/treasury) was not transferred whole and was bridged by a reciprocal TSA, but that is outside the product-vs-process and process-vs-organization mismatch definitions."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the medical-technology brands crossed the boundary together with their manufacturing, quality, and distribution facilities, so no product-versus-process mismatch is documented at closing. It also states that the workforce and management team moved with those operations; although centralized finance, IT, HR, treasury, and cash-management functions did not transfer whole, reciprocal transition services aligned that shared substrate at closing rather than leaving the transferred processes without an operating organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the customer-facing product operation (Alaris, Pyxis, ChloraPrep, etc.) crossed the boundary together with its own manufacturing, quality-assurance, distribution, packaging and sterilization facilities (32 operating facilities), so product and its production/delivery processes moved together rather than apart. gap_56=0: the ~16,700-employee workforce and the full management team (Schlotterbeck as Chairman/CEO, with no executives remaining Cardinal employees) transferred coherently alongside the operational processes. The only substrate not transferred whole was the shared centralized corporate functions (finance/IT/HR/treasury), which is a Parent-substrate carve-out (coded T5 partial) bridged by a reciprocal transition services agreement, not a T4-vs-T5 or T5-vs-T6 mismatch in the transferred product operation.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the spin-off detached an intact customer-facing product operation (Alaris, Pyxis, respiratory, infection-prevention, V. Mueller brands) together with its manufacturing/quality/distribution facilities, so T4 and T5 crossed together and gap_45=0. It likewise records that the ~16,700-employee workforce and the management team (Schlotterbeck as Chairman/CEO; executives ceasing to be Cardinal officers) moved with the business, so T5 and T6 aligned at closing and gap_56=0. Shared corporate substrate (finance/IT/HR/treasury) was not transferred whole and was bridged by a reciprocal TSA, but that is outside the product-vs-process and process-vs-organization mismatch definitions.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the medical-technology brands crossed the boundary together with their manufacturing, quality, and distribution facilities, so no product-versus-process mismatch is documented at closing. It also states that the workforce and management team moved with those operations; although centralized finance, IT, HR, treasury, and cash-management functions did not transfer whole, reciprocal transition services aligned that shared substrate at closing rather than leaving the transferred processes without an operating organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P156",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Sempra completed $9.45bn acquisition of EFH (incl. ~80% indirect Oncor interest) on March 9, 2018",
+      "rationale": "The registrant suspended Exchange Act reporting via Form 15-12B on January 12, 2017 and filed no further annual reports, so there is no public audited standalone outcome record for the 2017-2019 window and no documented product/process disruption to code (p4 uncertain). The slice similarly provides no realized-outcome evidence of any process/organization fracture between operations and people/management/culture (p5 uncertain). The only documented realized event is the March 9, 2018 completion of Sempra Energy's acquisition of EFH and its indirect Oncor interest, which speaks to transaction resolution but not to any of the four failure channels."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "reorganization completed via Sempra $9.45bn acquisition (Mar 2018); no standalone public financials",
+      "rationale": "The slice documents only reporting suspension via Form 15-12B in January 2017 and completion of the reorganization through Sempra's March 2018 acquisition; it contains no evidence of product/process misalignment or operations-organization fracture over the 2017-2019 window. Absence of any realized-disruption narrative for those interfaces requires p4_pathway=0 and p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$9.45 billion acquisition completed in March 2018'}",
+      "rationale": "{'type': 'string', 'enum': \"The slice documents completion of Sempra Energy's $9.45 billion acquisition in March 2018 but reports no realized product/process disruption, so p4 is coded 0. It likewise documents no realized breakdown between operations and people, management, or culture, so p5 is coded 0; EFH suspended Exchange Act reporting in January 2017, leaving no audited standalone trajectory for 2017-2019.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Sempra completed $9.45bn acquisition of EFH (incl. ~80% indirect Oncor interest) on March 9, 2018\", \"rationale\": \"The registrant suspended Exchange Act reporting via Form 15-12B on January 12, 2017 and filed no further annual reports, so there is no public audited standalone outcome record for the 2017-2019 window and no documented product/process disruption to code (p4 uncertain). The slice similarly provides no realized-outcome evidence of any process/organization fracture between operations and people/management/culture (p5 uncertain). The only documented realized event is the March 9, 2018 completion of Sempra Energy's acquisition of EFH and its indirect Oncor interest, which speaks to transaction resolution but not to any of the four failure channels.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"reorganization completed via Sempra $9.45bn acquisition (Mar 2018); no standalone public financials\",\n  \"rationale\": \"The slice documents only reporting suspension via Form 15-12B in January 2017 and completion of the reorganization through Sempra's March 2018 acquisition; it contains no evidence of product/process misalignment or operations-organization fracture over the 2017-2019 window. Absence of any realized-disruption narrative for those interfaces requires p4_pathway=0 and p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$9.45 billion acquisition completed in March 2018\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents completion of Sempra Energy's $9.45 billion acquisition in March 2018 but reports no realized product/process disruption, so p4 is coded 0. It likewise documents no realized breakdown between operations and people, management, or culture, so p5 is coded 0; EFH suspended Exchange Act reporting in January 2017, leaving no audited standalone trajectory for 2017-2019.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

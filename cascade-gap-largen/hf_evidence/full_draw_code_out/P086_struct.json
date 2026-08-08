@@ -1,0 +1,85 @@
+{
+  "case_id": "P086",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Both parties' operating businesses (NBCUniversal's networks, studios, theme parks; Comcast's content networks and internet businesses) were contributed whole into the new JV holding company as going concerns with their producing operations intact, so product (T4) and its production/delivery processes (T5) crossed together — no product-vs-process mismatch (gap_45=0). However, the closing-year risk factors explicitly single out \"combining corporate cultures, maintaining employee morale and retaining key employees\" and reliance on \"on-air and creative talent\" as the open integration question, indicating operations were combined while the organization/people/culture layer (T6) was structurally unresolved at closing (gap_56=1); T1 is imprint-share given the 51/49 control split with GE retaining a scheduled redemption interest rather than exiting. The slice documents no transitional-services or operating agreement absorbing the personnel/culture gap, so gap_mitigated=no."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction structurally combined GE's NBC Universal businesses and Comcast's Content Business into a single new joint venture entity, NBCUniversal Holdings. There is no documented structural mismatch at closing between the transferred products and their underlying processes (gap_45=0), nor between the processes and the organization/people (gap_56=0), as the businesses were contributed intact, despite standard risk factors noting the challenges of integrating operations and cultures."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "GE contributed NBC Universal's operating businesses and Comcast contributed its content businesses and related assets, so customer-facing products and their associated operations crossed into NBCUniversal Holdings together; no product-versus-process structural mismatch is documented at closing. The closing-year 10-K expressly identified the still-open need to integrate operations and technologies while combining corporate cultures, maintaining morale, and retaining key employees, documenting a process-versus-organization alignment gap at closing. Although an operating agreement governed ownership and future redemption or purchase rights, the slice documents no transitional-services or operating arrangement that contractually absorbed this gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"Both parties' operating businesses (NBCUniversal's networks, studios, theme parks; Comcast's content networks and internet businesses) were contributed whole into the new JV holding company as going concerns with their producing operations intact, so product (T4) and its production/delivery processes (T5) crossed together \\u2014 no product-vs-process mismatch (gap_45=0). However, the closing-year risk factors explicitly single out \\\"combining corporate cultures, maintaining employee morale and retaining key employees\\\" and reliance on \\\"on-air and creative talent\\\" as the open integration question, indicating operations were combined while the organization/people/culture layer (T6) was structurally unresolved at closing (gap_56=1); T1 is imprint-share given the 51/49 control split with GE retaining a scheduled redemption interest rather than exiting. The slice documents no transitional-services or operating agreement absorbing the personnel/culture gap, so gap_mitigated=no.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction structurally combined GE's NBC Universal businesses and Comcast's Content Business into a single new joint venture entity, NBCUniversal Holdings. There is no documented structural mismatch at closing between the transferred products and their underlying processes (gap_45=0), nor between the processes and the organization/people (gap_56=0), as the businesses were contributed intact, despite standard risk factors noting the challenges of integrating operations and cultures.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"GE contributed NBC Universal's operating businesses and Comcast contributed its content businesses and related assets, so customer-facing products and their associated operations crossed into NBCUniversal Holdings together; no product-versus-process structural mismatch is documented at closing. The closing-year 10-K expressly identified the still-open need to integrate operations and technologies while combining corporate cultures, maintaining morale, and retaining key employees, documenting a process-versus-organization alignment gap at closing. Although an operating agreement governed ownership and future redemption or purchase rights, the slice documents no transitional-services or operating arrangement that contractually absorbed this gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

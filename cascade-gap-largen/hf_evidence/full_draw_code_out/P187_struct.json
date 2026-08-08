@@ -1,0 +1,85 @@
+{
+  "case_id": "P187",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that Calpine's entire operating business, including its generation fleet (T4), wholesale/retail power operations (T5), and headquarters organization (T6), crossed to the Parent as a single unit. Because these components were not separated, there are no structural gaps between product and process (gap_45) or process and organization (gap_56)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the entire operating asset base—generation fleet, wholesale/retail power-marketing operations, and associated fuel procurement—crossed to Parent as a whole with Calpine surviving intact, so T4 product and T5 processes moved together (gap_45=0). It likewise records that the headquarters organization crossed as a single unit with the operating business in the reverse triangular merger, and consummation was not contingent on any new Parent employment arrangements, so T5 and T6 aligned at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Calpine’s entire generation fleet and wholesale/retail power-marketing operations crossed together with the associated fuel-procurement operations, so no product-versus-process mismatch was structured at closing [SRC: SEC accession 0001193125-17-341396, DEFM14A]. It also states that the entire operating business and headquarters organization crossed as a single unit rather than being separated into product, process, and people components; therefore, no process-versus-organization gap is documented, notwithstanding the absence as of the proxy date of separate continuing-employment agreements with Parent [SRC: SEC accession 0001193125-17-341396, DEFM14A]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that Calpine's entire operating business, including its generation fleet (T4), wholesale/retail power operations (T5), and headquarters organization (T6), crossed to the Parent as a single unit. Because these components were not separated, there are no structural gaps between product and process (gap_45) or process and organization (gap_56).\"\n}\n}.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the entire operating asset base—generation fleet, wholesale/retail power-marketing operations, and associated fuel procurement—crossed to Parent as a whole with Calpine surviving intact, so T4 product and T5 processes moved together (gap_45=0). It likewise records that the headquarters organization crossed as a single unit with the operating business in the reverse triangular merger, and consummation was not contingent on any new Parent employment arrangements, so T5 and T6 aligned at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Calpine’s entire generation fleet and wholesale/retail power-marketing operations crossed together with the associated fuel-procurement operations, so no product-versus-process mismatch was structured at closing [SRC: SEC accession 0001193125-17-341396, DEFM14A]. It also states that the entire operating business and headquarters organization crossed as a single unit rather than being separated into product, process, and people components; therefore, no process-versus-organization gap is documented, notwithstanding the absence as of the proxy date of separate continuing-employment agreements with Parent [SRC: SEC accession 0001193125-17-341396, DEFM14A].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

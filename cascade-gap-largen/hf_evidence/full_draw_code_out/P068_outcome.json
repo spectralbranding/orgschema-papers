@@ -1,0 +1,58 @@
+{
+  "case_id": "P068",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; retained/consolidated on 80/20 basis; NCI swung from +$197K (2014) to $(73)K (2016)",
+      "rationale": "The slice documents that Sotheby's Beijing was retained and consolidated on its original 80/20 basis through the FY2016 window with \"no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing\" disclosed, and no separate operating narrative reporting product/operations incoherence — so p4 is 0. Likewise, no fracture between operations and organization/management/culture is documented; the venture agreement \"remained in force\" and only the small non-controlling-interest line (a swing from a small profit share in 2014 to small loss shares in 2015-2016) traces its performance, so p5 is 0. The only realized scalar is this modest NCI swing with no documented interface disruption of any kind."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; retained 80/20; small NCI losses 2015-16",
+      "rationale": "The FY2016 10-K discloses no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing, and the venture remained consolidated on its original 80/20 basis with the JV contracts still listed as material agreements. No separate operating narrative or any product/process misalignment is reported, so p4_pathway is 0. Likewise, nothing documents fracture at the process/organization interface (operations vs people/management/culture), so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "20% noncontrolling-interest result: $197K income in 2014, $(246)K loss in 2015, and $(73)K loss in 2016",
+      "rationale": "No product/process-interface disruption was documented; the FY2016 report disclosed no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing. No process/organization fracture was documented either: the venture remained consolidated and retained on an 80/20 basis, and its agreements remained in force through the approximately four-year outcome window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; retained/consolidated on 80/20 basis; NCI swung from +$197K (2014) to $(73)K (2016)\", \"rationale\": \"The slice documents that Sotheby's Beijing was retained and consolidated on its original 80/20 basis through the FY2016 window with \\\"no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing\\\" disclosed, and no separate operating narrative reporting product/operations incoherence \\u2014 so p4 is 0. Likewise, no fracture between operations and organization/management/culture is documented; the venture agreement \\\"remained in force\\\" and only the small non-controlling-interest line (a swing from a small profit share in 2014 to small loss shares in 2015-2016) traces its performance, so p5 is 0. The only realized scalar is this modest NCI swing with no documented interface disruption of any kind.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; retained 80/20; small NCI losses 2015-16\",\n  \"rationale\": \"The FY2016 10-K discloses no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing, and the venture remained consolidated on its original 80/20 basis with the JV contracts still listed as material agreements. No separate operating narrative or any product/process misalignment is reported, so p4_pathway is 0. Likewise, nothing documents fracture at the process/organization interface (operations vs people/management/culture), so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"20% noncontrolling-interest result: $197K income in 2014, $(246)K loss in 2015, and $(73)K loss in 2016\",\n  \"rationale\": \"No product/process-interface disruption was documented; the FY2016 report disclosed no impairment, write-down, or disruption specifically attributed to Sotheby's Beijing. No process/organization fracture was documented either: the venture remained consolidated and retained on an 80/20 basis, and its agreements remained in force through the approximately four-year outcome window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

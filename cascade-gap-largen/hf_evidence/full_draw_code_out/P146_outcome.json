@@ -1,0 +1,58 @@
+{
+  "case_id": "P146",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of $316.3 million and $124.4 million goodwill impairment",
+      "rationale": "The slice documents significant financial losses and impairments (net loss of $316.3 million, $124.4 million goodwill impairment, $83.5 million asset impairment) in FY2019. However, it does not provide evidence of specific operational disruptions at the product/process interface or the process/organization interface. Therefore, both pathways are coded as 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$124.4M full goodwill write-down; $316.3M net loss FY2019",
+      "rationale": "The slice documents Contura's FY2019 net loss of $316.3M, a full $124.4M goodwill impairment, and an $83.5M asset impairment, with continued operation in three coal segments (CAPP-Met, CAPP-Thermal, NAPP) and a 2018 combination with reorganized Alpha entities, but contains no evidence that the acquired product could not be aligned with operating processes over time. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is documented; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$316.3 million FY2019 net loss",
+      "rationale": "The realized record documents a FY2019 net loss, goodwill and asset impairments, but does not attribute them to failure to align the acquired products with operating processes; therefore p4 is coded 0. It likewise documents no operational integration breakdown involving people, management, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss of $316.3 million and $124.4 million goodwill impairment\",\n  \"rationale\": \"The slice documents significant financial losses and impairments (net loss of $316.3 million, $124.4 million goodwill impairment, $83.5 million asset impairment) in FY2019. However, it does not provide evidence of specific operational disruptions at the product/process interface or the process/organization interface. Therefore, both pathways are coded as 0.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$124.4M full goodwill write-down; $316.3M net loss FY2019\",\n  \"rationale\": \"The slice documents Contura's FY2019 net loss of $316.3M, a full $124.4M goodwill impairment, and an $83.5M asset impairment, with continued operation in three coal segments (CAPP-Met, CAPP-Thermal, NAPP) and a 2018 combination with reorganized Alpha entities, but contains no evidence that the acquired product could not be aligned with operating processes over time. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is documented; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$316.3 million FY2019 net loss\",\n  \"rationale\": \"The realized record documents a FY2019 net loss, goodwill and asset impairments, but does not attribute them to failure to align the acquired products with operating processes; therefore p4 is coded 0. It likewise documents no operational integration breakdown involving people, management, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,351 @@
+case_id,deal,stratum,role,matched_to,gate_status,gap_45,gap_56,gap_any,gap_mitigated,p4_pathway,p5_pathway,p45_any,outcome_uncertain,struct_coders,outcome_coders,struct_flags,outcome_flags,notes
+P001,Fortive Corp  (FTV)  (CIK 0001659166),carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T1,,
+P002,CSAB Inc.  (KDP)  (CIK 0001418135),carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T5|sigma_T6,,
+P003,CareFusion Corp  (CIK 0001457543),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P004,AOL Inc.  (CIK 0001468516),carve_out,gap_prone,,PASS,1,0,1,yes,1,0,1,0,claude|grok|openai,claude|gemini|grok,sigma_T6,,
+P005,"Gannett SpinCo, Inc.  (CIK 0001635718)",carve_out,gap_prone,,PASS,1,0,1,yes,0,1,1,0,claude|grok|openai,claude|gemini|grok,,,
+P006,"Brighthouse Financial, Inc.  (BHF, BHFAL, BHFAM, BHFAN, BHFAO, BHFAP)  (CIK 0001685040)",carve_out,gap_prone,,PASS,1,0,1,yes,1,0,1,0,gemini|grok|openai,claude|grok|openai,,p4_pathway,p5_pathway=uncertain->0
+P007,"Corteva, Inc.  (CTVA)  (CIK 0001755672)",carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T6,,
+P008,"HSN, Inc.  (CIK 0001434729)",carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T1,,
+P009,CONSOL Mining Corp  (CEIX)  (CIK 0001710366),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P010,"Cable One, Inc.  (CABO)  (CIK 0001632127)",carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P011,Baxalta Inc  (CIK 0001620546),carve_out,gap_prone,,PASS,1,1,1,yes,0,0,0,1,claude|gemini|openai,claude|gemini|grok,sigma_T1,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P012,"Hertz Rental Car Holding Company, Inc.  (HTZ, HTZWW)  (CIK 0001657853)",carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,p4_pathway=uncertain->0
+P013,"Rouse Properties, Inc.  (CIK 0001528558)",carve_out,gap_prone,,PASS,1,1,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T1,,
+P014,"frontdoor, inc.  (FTDR)  (CIK 0001727263)",carve_out,gap_prone,,PASS,0,0,0,NA,1,0,1,0,claude|grok|openai,claude|gemini|openai,sigma_T1,,
+P015,Hewlett Packard Enterprise Co  (HPE)  (CIK 0001645590),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P016,Alcoa Upstream Corp  (AA)  (CIK 0001675149),carve_out,gap_prone,,PASS,1,0,1,yes,1,1,1,0,claude|grok|openai,claude|gemini|grok,,,
+P017,Babcock & Wilcox Co  (BWXT)  (CIK 0001486957),carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,gemini|grok|openai,sigma_T1,,
+P018,Urban Edge Properties  (UE)  (CIK 0001611547),carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,gemini|grok|openai,sigma_T3,,
+P019,Adient Ltd  (ADNT)  (CIK 0001670541),carve_out,gap_prone,,PASS,1,0,1,yes,1,0,1,0,claude|gemini|openai,gemini|grok|openai,sigma_T1|sigma_T3,,
+P020,"Versum Materials, LLC  (CIK 0001660690)",carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P021,"WPX ENERGY, INC.  (CIK 0001518832)",carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T1|sigma_T6,,
+P022,Dow Holdings Inc.  (DOW)  (CIK 0001751788),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P023,SPG SpinCo Subsidiary Inc.  (CIK 0001594686),carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P024,WABCO Holdings Inc.  (CIK 0001390844),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T1,,
+P025,TimkenSteel Corp  (MTUS)  (CIK 0001598428),carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3,,
+P026,"Babcock & Wilcox Enterprises, Inc.  (BW, BWNB, BWSN, BW-PA)  (CIK 0001630805)",carve_out,gap_prone,,PASS,0,0,0,yes,1,1,1,0,gemini|grok|openai,claude|grok|openai,sigma_T3,p5_pathway,
+P027,EchoStar Holding CORP  (SATS)  (CIK 0001415404),carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,gemini|grok|openai,claude|grok|openai,sigma_T2,,
+P028,"Keysight Technologies, Inc.  (KEYS)  (CIK 0001601046)",carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|openai,claude|grok|openai,sigma_T1|sigma_T6,,
+P029,Delphi Jersey Holdings plc  (CIK 0001707092),carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T1,,
+P030,Patriot Coal CORP  (CIK 0001376812),carve_out,gap_prone,,PASS,0,0,0,NA,0,1,1,0,claude|gemini|grok,claude|gemini|openai,sigma_T3,,
+P031,PARAGON OFFSHORE LTD.  (CIK 0001594590),carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T1,,
+P032,"Lamb Weston Holdings, Inc.  (LW)  (CIK 0001679273)",carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T3,,
+P033,AbbVie Inc.  (ABBV)  (CIK 0001551152),carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T6,,
+P034,"California Resources Corp  (CRC, CRCQW)  (CIK 0001609253)",carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P035,"PNK Entertainment, Inc.  (CIK 0001656239)",carve_out,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P036,CHESAPEAKE OILFIELD OPERATING LLC  (CIK 0001532930),carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P037,Chemours Co  (CC)  (CIK 0001627223),carve_out,gap_prone,,PASS,0,1,1,yes,1,1,1,0,claude|gemini|openai,claude|grok|openai,sigma_T3,p4_pathway,
+P038,"Motorola Mobility Holdings, Inc  (CIK 0001495569)",carve_out,gap_prone,,PASS,1,0,1,yes,0,1,1,0,gemini|grok|openai,claude|grok|openai,sigma_T3|sigma_T6,p5_pathway,p4_pathway=uncertain->0
+P039,Exterran Corp  (CIK 0001635881),carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T1,p4_pathway,
+P040,Time Inc.  (CIK 0001591517),carve_out,gap_prone,,PASS,0,1,1,yes,0,1,1,0,claude|gemini|grok,claude|gemini|openai,,,
+P041,"ONE Gas, Inc.  (OGS)  (CIK 0001587732)",carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P042,Varex Imaging Corp  (VREX)  (CIK 0001681622),carve_out,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T1|sigma_T3,,
+P043,Phillips 66  (PSX)  (CIK 0001534701),carve_out,gap_prone,,PASS,0,0,0,yes,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T5,,
+P044,Rayonier Holding Co  (RYAM)  (CIK 0001597672),carve_out,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P045,PARKER HANNIFIN CORP  (PH)  (CIK 0000076334),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P046,SWIFT ENERGY CO  (CIK 0000351817),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T2,,
+P047,"Inland American Real Estate Trust, Inc.  (IVT)  (CIK 0001307748)",joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P048,COLUMBIA SPORTSWEAR CO  (COLM)  (CIK 0001050797),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T3,,
+P049,GOODYEAR TIRE & RUBBER CO /OH/  (GT)  (CIK 0000042582),joint_venture,gap_prone,,PASS,0,1,1,no,0,1,1,0,claude|grok|openai,gemini|grok|openai,sigma_T2|sigma_T3,,
+P050,SunEdison Semiconductor Ltd  (CIK 0001585854),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|grok,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P051,POLARIS INDUSTRIES INC/MN  (PII)  (CIK 0000931015),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P052,"MOLSON COORS BREWING CO  (TAP, TAP-A)  (CIK 0000024545)",joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P053,REX ENERGY CORP  (CIK 0001397516),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P054,MICRON TECHNOLOGY INC  (MU)  (CIK 0000723125),joint_venture,gap_prone,,PASS,1,0,1,yes,1,0,1,0,claude|gemini|openai,claude|gemini|grok,sigma_T3|sigma_T6,,
+P055,Owens Corning  (OC)  (CIK 0001370946),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P056,CENTRAL EUROPEAN DISTRIBUTION CORP  (CIK 0001046880),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P057,ALTABA INC.  (CIK 0001011006),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P058,"HECLA MINING CO/DE/  (HL, HL-PB)  (CIK 0000719413)",joint_venture,gap_prone,,PASS,1,1,1,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T2|sigma_T5,,
+P059,COSTCO WHOLESALE CORP /NEW  (COST)  (CIK 0000909832),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P060,RADIOSHACK CORP  (CIK 0000096289),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|grok,claude|grok|openai,sigma_T3,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P061,WEIGHT WATCHERS INTERNATIONAL INC  (WW)  (CIK 0000105319),joint_venture,gap_prone,,PASS,0,1,1,no,0,0,0,1,claude|gemini|grok,claude|gemini|openai,sigma_T5|sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P062,Pattern Energy Group Inc.  (CIK 0001561660),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|openai,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P063,APOLLO GROUP INC  (CIK 0000929887),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P064,SAUER DANFOSS INC  (CIK 0000865754),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,gemini|grok|openai,claude|grok|openai,sigma_T2|sigma_T4,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P065,CLOUD PEAK ENERGY INC.  (CIK 0001441849),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P066,"Parkway, Inc.  (CIK 0001677761)",joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|openai,claude|gemini|grok,sigma_T3,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P067,MEMC ELECTRONIC MATERIALS INC  (CIK 0000945436),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T3|sigma_T6,,
+P068,SOTHEBYS  (CIK 0000823094),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T3,,
+P069,"ENTERPRISE PRODUCTS PARTNERS L P  (EPD, EPDU)  (CIK 0001061219)",joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P070,"EQUITY ONE, INC.  (CIK 0001042810)",joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P071,PIEDMONT NATURAL GAS CO INC  (CIK 0000078460),joint_venture,gap_prone,,PASS,0,0,0,NA,1,0,1,0,claude|grok|openai,claude|gemini|openai,,p4_pathway,
+P072,Hilton Grand Vacations Inc.  (HGV)  (CIK 0001674168),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T2,,
+P073,"TIDEWATER INC  (TDW, TDDWW, TDGMW, TDW-WT)  (CIK 0000098222)",joint_venture,gap_prone,,PASS,1,0,1,yes,1,1,1,0,claude|grok|openai,claude|gemini|openai,sigma_T2|sigma_T3,,
+P074,"MPG Office Trust, Inc.  (CIK 0001204560)",joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,claude|gemini|grok,sigma_T5,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P075,SKECHERS USA INC  (SKX)  (CIK 0001065837),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T3,,
+P076,CYPRESS SEMICONDUCTOR CORP /DE/  (CIK 0000791915),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3,,
+P077,CROSSTEX ENERGY LP  (CIK 0001179060),joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T2|sigma_T4,,
+P078,"PHILLIPS EDISON GROCERY CENTER REIT II, INC.  (CIK 0001581405)",joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P079,SUNPOWER CORP  (SPWRQ)  (CIK 0000867773),joint_venture,gap_prone,,PASS,0,1,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T2,,
+P080,CHEVRON CORP  (CVX)  (CIK 0000093410),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3|sigma_T6,,
+P081,"FORD MOTOR CO  (F, F-PB, F-PC, F-PD)  (CIK 0000037996)",joint_venture,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P082,FREEPORT-MCMORAN INC  (FCX)  (CIK 0000831259),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T2|sigma_T4,,
+P083,DOW CHEMICAL CO /DE/  (CIK 0000029915),joint_venture,gap_prone,,PASS,0,0,0,yes,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P084,MARATHON OIL CORP  (MRO)  (CIK 0000101778),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T2|sigma_T3|sigma_T4|sigma_T5|sigma_T6,,
+P085,VERIZON COMMUNICATIONS INC  (VZ)  (CIK 0000732712),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,sigma_T3,,
+P086,"COMCAST CORP  (CCZ, CMCSA)  (CIK 0001166691)",joint_venture,gap_prone,,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P087,CORNING INC /NY  (GLW)  (CIK 0000024741),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|gemini|openai,sigma_T2|sigma_T3|sigma_T4,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P088,CONOCOPHILLIPS  (COP)  (CIK 0001163165),joint_venture,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,sigma_T3|sigma_T5,,
+P089,"HEALTHCARE TRUST OF AMERICA, INC.  (HR)  (CIK 0001360604)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P090,"SUNEDISON, INC.  (CIK 0000945436)",roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,1,claude|gemini|grok,claude|gemini|openai,sigma_T2|sigma_T3|sigma_T4,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P091,"Inland American Real Estate Trust, Inc.  (IVT)  (CIK 0001307748)",roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,claude|grok|openai,sigma_T3,,
+P092,SCHWEITZER MAUDUIT INTERNATIONAL INC  (MATV)  (CIK 0001000623),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P093,WELLS REAL ESTATE INVESTMENT TRUST II INC  (CIK 0001252849),roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P094,"Blackstone Real Estate Income Trust, Inc.  (BSTT)  (CIK 0001662972)",roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T3,,
+P095,"Compass Diversified Holdings  (CODI, CODI-PA, CODI-PB, CODI-PC)  (CIK 0001345126)",roll_up,gap_prone,,PASS,0,0,0,NA,1,0,1,0,claude|grok|openai,gemini|grok|openai,,,
+P096,Industrial Income Trust Inc.  (CIK 0001464720),roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,1,gemini|grok|openai,claude|gemini|grok,sigma_T3,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P097,MACK CALI REALTY CORP  (VRE)  (CIK 0000924901),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T4|sigma_T5,,
+P098,"PennyMac Mortgage Investment Trust  (PMT, PMTU, PMT-PA, PMT-PB, PMT-PC)  (CIK 0001464423)",roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P099,"NorthStar Real Estate Income Trust, Inc.  (CIK 0001455650)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P100,"Nexeo Solutions Holdings, LLC  (CIK 0001540047)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P101,Dividend Capital Diversified Property Fund Inc.  (CIK 0001327978),roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T2|sigma_T4,,
+P102,"COLE CREDIT PROPERTY TRUST IV, INC.  (CMRF)  (CIK 0001498547)",roll_up,gap_prone,,PASS,1,1,1,yes,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P103,AOL Inc.  (CIK 0001468516),roll_up,gap_prone,,PASS,1,0,1,yes,1,0,1,0,claude|gemini|openai,claude|grok|openai,,,
+P104,"CNO Financial Group, Inc.  (CNO, CNO-PA)  (CIK 0001224608)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P105,IRON MOUNTAIN INC  (IRM)  (CIK 0001020569),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P106,"Nexeo Solutions, Inc.  (CIK 0001604416)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P107,INLAND REAL ESTATE CORP  (CIK 0000923284),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P108,Deerfield Capital Corp.  (CIK 0001313918),roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T2,,
+P109,"KRATOS DEFENSE & SECURITY SOLUTIONS, INC.  (KTOS)  (CIK 0001069258)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P110,Verso Corp  (CIK 0001421182),roll_up,gap_prone,,PASS,1,0,1,yes,1,0,1,0,claude|grok|openai,claude|gemini|openai,,p4_pathway,p5_pathway=uncertain->0
+P111,"COLE CORPORATE INCOME TRUST, INC.  (CIK 0001490626)",roll_up,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P112,"ExamWorks Group, Inc.  (CIK 0001498021)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P113,HERTZ CORP  (CIK 0000047129),roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P114,Sprague Resources LP  (CIK 0001525287),roll_up,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|grok,claude|grok|openai,gap_mitigated,,
+P115,HERTZ GLOBAL HOLDINGS INC  (HRI)  (CIK 0001364479),roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T5,,
+P116,Cole Credit Property Trust II Inc  (CIK 0001308606),roll_up,gap_prone,,PASS,1,0,1,yes,0,1,1,0,claude|gemini|grok,claude|gemini|openai,,p5_pathway,p4_pathway=uncertain->0
+P117,Chemtura CORP  (CIK 0001091862),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P118,PANTRY INC  (CIK 0000915862),roll_up,gap_prone,,PASS,0,1,1,NA,0,0,0,1,claude|gemini|grok,claude|gemini|openai,gap_56,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P119,EXPEDITORS INTERNATIONAL OF WASHINGTON INC  (EXPD)  (CIK 0000746515),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P120,"Cole Credit Property Trust III, Inc.  (CIK 0001425923)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P121,"NorthStar Real Estate Income II, Inc.  (CIK 0001564657)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,gap_45,,gap_45=uncertain->0
+P122,Corporate Property Associates 17 - Global INC  (CIK 0001390213),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P123,"Griffin-American Healthcare REIT II, Inc.  (CIK 0001455271)",roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P124,INLAND WESTERN RETAIL REAL ESTATE TRUST INC  (CIK 0001222840),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P125,"Steadfast Income REIT, Inc.  (CIK 0001468010)",roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T2,,
+P126,"Jones Lang LaSalle Income Property Trust, Inc.  (CIK 0001314152)",roll_up,gap_prone,,PASS,1,0,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3,,
+P127,"Carter Validus Mission Critical REIT II, Inc.  (SILA)  (CIK 0001567925)",roll_up,gap_prone,,PASS,1,1,1,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T4|sigma_T6|gap_45|gap_56,,
+P128,US Foods Holding Corp.  (USFD)  (CIK 0001665918),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P129,Platform Specialty Products Corp  (ESI)  (CIK 0001590714),roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P130,JARDEN CORP  (CIK 0000895655),roll_up,gap_prone,,PASS,0,0,0,NA,0,1,1,0,claude|grok|openai,gemini|grok|openai,,p4_pathway|t2_model,
+P131,"Vantiv, Inc.  (CIK 0001533932)",roll_up,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P132,BERRY PLASTICS GROUP INC  (BERY)  (CIK 0001378992),roll_up,gap_prone,,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P133,RADIOSHACK CORP  (CIK 0000096289),distressed,gap_prone,,PASS,0,1,1,no,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P134,"Smart & Final Stores, Inc.  (CIK 0001563407)",distressed,gap_prone,,PASS,1,1,1,no,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P135,RR Donnelley & Sons Co  (CIK 0000029669),distressed,gap_prone,,PASS,1,0,1,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T2|sigma_T3|gap_45,,gap_56=uncertain->0
+P136,"Walter Energy, Inc.  (CIK 0000837173)",distressed,gap_prone,,PASS,0,1,1,no,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P137,DISH Network CORP  (CIK 0001001082),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P138,Rice Energy Inc.  (CIK 0001588238),distressed,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P139,Samson Resources Corp  (CIK 0001548691),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P140,QUICKSILVER RESOURCES INC  (CIK 0001060990),distressed,gap_prone,,PASS,0,1,1,no,0,0,0,1,claude|gemini|grok,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P141,James River Coal CO  (CIK 0001297720),distressed,gap_prone,,PASS,0,1,1,yes,0,0,0,1,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P142,"Quad/Graphics, Inc.  (QUAD)  (CIK 0001481792)",distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P143,NII HOLDINGS INC  (CIK 0001037016),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P144,NVR INC  (NVR)  (CIK 0000906163),distressed,gap_prone,,PASS,1,0,1,no,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P145,Huntsman CORP  (HUN)  (CIK 0001307954),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P146,"Alpha Natural Resources, Inc.  (CIK 0001301063)",distressed,gap_prone,,PASS,0,1,1,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T3,,
+P147,Nationstar Mortgage Holdings Inc.  (CIK 0001520566),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,gap_56=uncertain->0
+P148,"Contura Energy, Inc.  (AMR)  (CIK 0001704715)",distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P149,NORTEL NETWORKS CORP  (CIK 0000072911),distressed,gap_prone,,PASS,1,1,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P150,PENN NATIONAL GAMING INC  (PENN)  (CIK 0000921738),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P151,SEARS HOLDINGS CORP  (CIK 0001310067),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P152,Bausch Health Companies Inc.  (BHC)  (CIK 0000885590),distressed,gap_prone,,PASS,1,1,1,no,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T5,,
+P153,Green Plains Inc.  (GPRE)  (CIK 0001309402),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P154,"Molycorp, Inc.  (CIK 0001489137)",distressed,gap_prone,,PASS,1,1,1,no,0,0,0,1,claude|gemini|openai,claude|grok|openai,sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P155,ATP OIL & GAS CORP  (CIK 0001123647),distressed,gap_prone,,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,claude|grok|openai,sigma_T6,,
+P156,Energy Future Holdings Corp /TX/  (CIK 0001023291),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P157,Patriot Coal CORP  (CIK 0001376812),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P158,CAESARS ENTERTAINMENT Corp  (CIK 0000858339),distressed,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,claude|grok|openai,sigma_T4|sigma_T5|sigma_T6,,
+P159,SunEdison Semiconductor Ltd  (CIK 0001585854),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P160,"LINN ENERGY, LLC  (CIK 0001326428)",distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P161,PEABODY ENERGY CORP  (BTU)  (CIK 0001064728),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P162,BON TON STORES INC  (CIK 0000878079),distressed,gap_prone,,PASS,1,0,1,no,0,0,0,1,claude|gemini|grok,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P163,EASTMAN KODAK CO  (KODK)  (CIK 0000031235),distressed,gap_prone,,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P164,SABINE OIL & GAS CORP  (CIK 0000038079),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P165,"iHeartMedia, Inc.  (IHRT, IHETW, IHRTB)  (CIK 0001400891)",distressed,gap_prone,,PASS,0,0,0,yes,0,0,0,0,claude|grok|openai,claude|gemini|grok,,p4_pathway,p4_pathway=uncertain->0
+P166,GT Advanced Technologies Inc.  (CIK 0001394954),distressed,gap_prone,,PASS,1,0,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T2|sigma_T3|sigma_T5|gap_mitigated,,
+P167,CUMULUS MEDIA INC  (CMLS)  (CIK 0001058623),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P168,ARCH COAL INC  (ARCH)  (CIK 0001037676),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P169,AMR CORP  (AAL)  (CIK 0000006201),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P170,EXIDE TECHNOLOGIES  (CIK 0000813781),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P171,SANDRIDGE ENERGY INC  (SD)  (CIK 0001349436),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P172,"DYNEGY HOLDINGS, LLC  (CIK 0001105055)",distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T6,,
+P173,"Midstates Petroleum Company, Inc.  (AMPY)  (CIK 0001533924)",distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P174,Breitburn Energy Partners LP  (CIK 0001357371),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T2,,
+P175,OVERSEAS SHIPHOLDING GROUP INC  (CIK 0000075208),distressed,gap_prone,,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P176,BARD C R INC /NJ/  (CIK 0000009892),control,control,P001,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P177,PINNACLE FOODS INC.  (CIK 0001564822),control,control,P002,PASS,0,0,0,NA,0,1,1,0,gemini|grok|openai,claude|grok|openai,,,
+P178,Sensata Technologies Holding N.V.  (ST)  (CIK 0001477294),control,control,P003,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P179,WEST CORP  (CIK 0001024657),control,control,P004,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P180,"ClubCorp Holdings, Inc.  (CIK 0001577095)",control,control,P005,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P181,"Allied World Assurance Co Holdings, AG  (CIK 0001163348)",control,control,P006,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,sigma_T3,,
+P182,ENBRIDGE ENERGY PARTNERS LP  (CIK 0000880285),control,control,P007,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,sigma_T6,,
+P183,PharMerica CORP  (CIK 0001388195),control,control,P008,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P184,"Alliance Holdings GP, L.P.  (CIK 0001344980)",control,control,P009,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T6,,
+P185,"Pandora Media, Inc.  (CIK 0001230276)",control,control,P010,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0
+P186,PRAXAIR INC  (CIK 0000884905),control,control,P011,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P187,CALPINE CORP  (CIK 0000916457),control,control,P012,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P188,"DUPONT FABROS TECHNOLOGY, INC.  (CIK 0001407739)",control,control,P013,PASS,0,1,1,no,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P189,RENT A CENTER INC DE  (UPBD)  (CIK 0000933036),control,control,P014,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P190,BAKER HUGHES INC  (CIK 0000808362),control,control,P015,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P191,GENERAL CABLE CORP /DE/  (CIK 0000886035),control,control,P016,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P192,"VERIFONE SYSTEMS, INC.  (CIK 0001312073)",control,control,P017,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,p5_pathway=uncertain->0
+P193,"ILG, Inc.  (CIK 0001434620)",control,control,P018,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P194,ROCKWELL COLLINS INC  (CIK 0001137411),control,control,P019,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P195,AKORN INC  (CIK 0000003116),control,control,P020,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P196,"Ensco plc  (VAL, VAL-WT)  (CIK 0000314808)",control,control,P021,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P197,ALERE INC.  (CIK 0001145460),control,control,P022,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P198,"Parkway, Inc.  (CIK 0001677761)",control,control,P023,PASS,1,0,1,yes,0,0,0,1,claude|grok|openai,gemini|grok|openai,sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P199,KLX Inc.  (CIK 0001617898),control,control,P024,PASS,0,0,0,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T5,,
+P200,Caesars Acquisition Co  (CIK 0001575879),control,control,P025,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,sigma_T1,,
+P201,NCI BUILDING SYSTEMS INC  (CIK 0000883902),control,control,P026,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P202,ENTERCOM COMMUNICATIONS CORP  (AUDAQ)  (CIK 0001067837),control,control,P027,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P203,ESTERLINE TECHNOLOGIES CORP  (CIK 0000033619),control,control,P028,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P204,"ORBITAL ATK, INC.  (CIK 0000866121)",control,control,P029,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P205,SUN BANCORP INC /NJ/  (CIK 0001017793),control,control,P030,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P206,ATWOOD OCEANICS INC  (CIK 0000008411),control,control,P031,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P207,"SNYDER'S-LANCE, INC.  (CIK 0000057528)",control,control,P032,PASS,0,1,1,no,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P208,Patheon N.V.  (CIK 0001643848),control,control,P033,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P209,Rice Energy Inc.  (CIK 0001588238),control,control,P034,PASS,0,1,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T3,,
+P210,"Pinnacle Entertainment, Inc.  (CIK 0001656239)",control,control,P035,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P211,WildHorse Resource Development Corp  (CIK 0001681714),control,control,P036,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P212,Tronox Ltd  (TROX)  (CIK 0001530804),control,control,P037,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P213,"Spectrum Brands Holdings, Inc.  (CIK 0001487730)",control,control,P038,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,sigma_T3,,
+P214,"Quinpario Acquisition Corp. 2  (XELA, XELAP)  (CIK 0001620179)",control,control,P039,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T6,,
+P215,"Fidelity National Financial, Inc.  (FNF)  (CIK 0001331875)",control,control,P040,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P216,"TERRAFORM GLOBAL, INC.  (CIK 0001620702)",control,control,P041,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P217,INTEGRATED DEVICE TECHNOLOGY INC  (CIK 0000703361),control,control,P042,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P218,ANDEAVOR  (CIK 0000050104),control,control,P043,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P219,KAPSTONE PAPER & PACKAGING CORP  (CIK 0001325281),control,control,P044,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P220,WESTAR ENERGY INC /KS  (CIK 0000054507),control,control,P045,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P221,TPG Pace Energy Holdings Corp.  (MGY)  (CIK 0001698990),control,control,P046,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3,,
+P222,"CYS Investments, Inc.  (CIK 0001396446)",control,control,P047,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,sigma_T5|sigma_T6,,p4_pathway=uncertain->0
+P223,KNIGHT TRANSPORTATION INC  (CIK 0000929452),control,control,P048,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T3,,
+P224,ONEOK Partners LP  (CIK 0000909281),control,control,P049,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P225,MITEL NETWORKS CORP  (CIK 0001170534),control,control,P050,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P226,WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP  (WAB)  (CIK 0000943452),control,control,P051,PASS,1,0,1,yes,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T3,,
+P227,"Dr Pepper Snapple Group, Inc.  (KDP)  (CIK 0001418135)",control,control,P052,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P228,LEGACY RESERVES LP  (CIK 0001358831),control,control,P053,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P229,ARRIS International plc  (CIK 0001645494),control,control,P054,PASS,0,0,0,NA,1,0,1,0,gemini|grok|openai,claude|gemini|openai,,p4_pathway,p5_pathway=uncertain->0
+P230,USG CORP  (CIK 0000757011),control,control,P055,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P231,SUPERVALU INC  (CIK 0000095521),control,control,P056,PASS,0,1,1,yes,0,1,1,0,claude|grok|openai,claude|gemini|grok,gap_mitigated,,
+P232,GGP Inc.  (CIK 0001496048),control,control,P057,PASS,1,1,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,sigma_T6,,
+P233,FAIRMOUNT SANTROL HOLDINGS INC.  (CIK 0001010858),control,control,P058,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T1|sigma_T4,,
+P234,BANCORPSOUTH INC  (CIK 0000701853),control,control,P059,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P235,ALBANY MOLECULAR RESEARCH INC  (CIK 0001065087),control,control,P060,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P236,Paragon Commercial CORP  (CIK 0001414374),control,control,P061,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|grok|openai,sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P237,"Tallgrass Energy Partners, LP  (CIK 0001569134)",control,control,P062,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P238,"Xenith Bankshares, Inc.  (CIK 0001143155)",control,control,P063,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T6,,
+P239,Altra Industrial Motion Corp.  (CIK 0001374535),control,control,P064,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P240,SOUTHWEST BANCORP INC  (CIK 0000914374),control,control,P065,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P241,"Care Capital Properties, Inc.  (CIK 0001639947)",control,control,P066,PASS,1,0,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|openai,sigma_T1,,
+P242,MICROSEMI CORP  (CIK 0000310568),control,control,P067,PASS,0,1,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,gap_mitigated,,
+P243,CONVERGYS CORP  (CIK 0001062047),control,control,P068,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T3|sigma_T6,,
+P244,GREAT PLAINS ENERGY INC  (CIK 0001143068),control,control,P069,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P245,"Alexander & Baldwin, Inc.  (ALEX)  (CIK 0001545654)",control,control,P070,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P246,AVISTA CORP  (AVA)  (CIK 0000104918),control,control,P071,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P247,La Quinta Holdings Inc.  (CIK 0001594617),control,control,P072,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P248,"Gener8 Maritime, Inc.  (CIK 0001443799)",control,control,P073,PASS,1,1,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P249,FIRST POTOMAC REALTY TRUST  (CIK 0001254595),control,control,P074,PASS,1,1,1,no,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P250,BUFFALO WILD WINGS INC  (CIK 0001062449),control,control,P075,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P251,"CAVIUM, INC.  (CIK 0001175609)",control,control,P076,PASS,0,0,0,NA,1,0,1,0,gemini|grok|openai,claude|gemini|openai,,p4_pathway,p5_pathway=uncertain->0
+P252,8point3 Energy Partners LP  (CIK 0001635581),control,control,P077,PASS,1,0,1,yes,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P253,FelCor Lodging Trust Inc  (CIK 0000923603),control,control,P078,PASS,0,1,1,no,0,0,0,1,claude|gemini|grok,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P254,Park Sterling Corp  (CIK 0001507277),control,control,P079,PASS,1,1,1,no,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P255,"Alon USA Energy, Inc.  (CIK 0001325955)",control,control,P080,PASS,0,1,1,no,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P256,TENNECO INC  (CIK 0001024725),control,control,P081,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,t1_archetype,
+P257,SOUTH STATE Corp  (SSB)  (CIK 0000764038),control,control,P082,PASS,1,1,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P258,IMPAX LABORATORIES INC  (CIK 0001003642),control,control,P083,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,p5_pathway=uncertain->0
+P259,"RSP Permian, Inc.  (CIK 0001588216)",control,control,P084,PASS,0,1,1,no,0,0,0,1,claude|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P260,"TWENTY-FIRST CENTURY FOX, INC.  (CIK 0001308161)",control,control,P085,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,sigma_T3,,
+P261,"Scripps Networks Interactive, Inc.  (CIK 0001430602)",control,control,P086,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P262,Accenture plc  (ACN)  (CIK 0001467373),control,control,P087,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P263,"Delek US Holdings, Inc.  (CIK 0001351541)",control,control,P088,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|grok|openai,sigma_T5|sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P264,"Monogram Residential Trust, Inc.  (CIK 0001384710)",control,control,P089,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P265,"BEAR STATE FINANCIAL, INC.  (CIK 0001006424)",control,control,P090,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P266,Starwood Waypoint Homes  (CIK 0001579471),control,control,P091,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P267,"NorthStar Real Estate Income II, Inc.  (CIK 0001564657)",control,control,P092,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P268,SELECT INCOME REIT  (CIK 0001537667),control,control,P093,PASS,1,0,1,yes,0,0,0,1,claude|gemini|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P269,"PHILLIPS EDISON GROCERY CENTER REIT I, INC.  (PECO)  (CIK 0001476204)",control,control,P094,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P270,"BLACKHAWK NETWORK HOLDINGS, INC  (CIK 0001411488)",control,control,P095,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P271,"Kennedy-Wilson Holdings, Inc.  (KW)  (CIK 0001408100)",control,control,P096,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P272,"Hines Global REIT, Inc.  (CIK 0001453818)",control,control,P097,PASS,1,0,1,no,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P273,Gramercy Property Trust  (CIK 0001297587),control,control,P098,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P274,"PHILLIPS EDISON GROCERY CENTER REIT II, INC.  (CIK 0001581405)",control,control,P099,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P275,"NorthStar Real Estate Income Trust, Inc.  (CIK 0001455650)",control,control,P100,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|gemini|openai,sigma_T1,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P276,"QUALITY CARE PROPERTIES, INC.  (CIK 0001677203)",control,control,P101,PASS,0,1,1,no,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P277,Corporate Property Associates 17 - Global INC  (CIK 0001390213),control,control,P102,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,sigma_T5,,
+P278,DST SYSTEMS INC  (CIK 0000714603),control,control,P103,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P279,CF Corp  (CIK 0001668428),control,control,P104,PASS,1,0,1,yes,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P280,"Forest City Realty Trust, Inc.  (CIK 0001647509)",control,control,P105,PASS,0,1,1,no,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P281,MAINSOURCE FINANCIAL GROUP  (CIK 0000720002),control,control,P106,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P282,DCT Industrial Trust Inc.  (CIK 0001170991),control,control,P107,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P283,"NewStar Financial, Inc.  (CIK 0001373561)",control,control,P108,PASS,1,0,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P284,PANERA BREAD CO  (CIK 0000724606),control,control,P109,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P285,EASTERN VIRGINIA BANKSHARES INC  (CIK 0001047170),control,control,P110,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,sigma_T3,,
+P286,LaSalle Hotel Properties  (CIK 0001053532),control,control,P111,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T3|sigma_T6,,
+P287,"KINDRED HEALTHCARE, INC  (CIK 0001060009)",control,control,P112,PASS,1,1,1,yes,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P288,"Liberty Interactive Corp  (QRTEA, QRTEB, QRTEP)  (CIK 0001355096)",control,control,P113,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P289,"HSN, Inc.  (CIK 0001434729)",control,control,P114,PASS,0,0,0,NA,0,1,1,0,claude|grok|openai,gemini|grok|openai,,,
+P290,"CA, INC.  (CIK 0000356028)",control,control,P115,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P291,"KCG Holdings, Inc.  (CIK 0001569391)",control,control,P116,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|grok|openai,,,
+P292,SCHULMAN A INC  (CIK 0000087565),control,control,P117,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P293,"HCBF Holding Company, Inc.  (CIK 0001498415)",control,control,P118,PASS,1,1,1,yes,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P294,"Gores Holdings II, Inc.  (VRRM)  (CIK 0001682745)",control,control,P119,PASS,0,0,0,NA,0,1,1,0,claude|grok|openai,claude|gemini|grok,,,
+P295,"Education Realty Trust, Inc.  (CIK 0001302343)",control,control,P120,PASS,0,1,1,no,0,0,0,1,claude|gemini|grok,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P296,Legacy Reserves Inc.  (CIK 0001735828),control,control,P121,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P297,"Blue Hills Bancorp, Inc.  (CIK 0001601545)",control,control,P122,PASS,1,0,1,yes,0,0,0,0,claude|gemini|grok,claude|gemini|openai,sigma_T5,,
+P298,"WashingtonFirst Bankshares, Inc.  (CIK 0001476264)",control,control,P123,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T6,,
+P299,"TerraForm Power, Inc.  (CIK 0001599947)",control,control,P124,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P300,"Bankrate, Inc.  (CIK 0001518222)",control,control,P125,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,claude|gemini|grok,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P301,"INVESTMENT TECHNOLOGY GROUP, INC.  (CIK 0000920424)",control,control,P126,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P302,"AV Homes, Inc.  (CIK 0000039677)",control,control,P127,PASS,0,1,1,no,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P303,REYNOLDS AMERICAN INC  (CIK 0001275283),control,control,P128,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P304,ONEOK INC /NEW/  (OKE)  (CIK 0001039684),control,control,P129,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P305,XL GROUP LTD  (CIK 0000875159),control,control,P130,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,claude|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P306,"Vantiv, Inc.  (CIK 0001533932)",control,control,P131,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P307,TRIBUNE MEDIA CO  (CIK 0000726513),control,control,P132,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,sigma_T2,,
+P308,"CapStar Financial Holdings, Inc.  (CIK 0001676479)",control,control,P133,PASS,0,0,0,NA,0,0,0,1,gemini|grok|openai,claude|gemini|openai,sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P309,WHOLE FOODS MARKET INC  (CIK 0000865436),control,control,P134,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P310,STAPLES INC  (CIK 0000791519),control,control,P135,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P311,CABELAS INC  (CIK 0001267130),control,control,P136,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T2,,
+P312,"GCI LIBERTY, INC.  (CIK 0000808461)",control,control,P137,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P313,ROWAN COMPANIES PLC  (CIK 0000085408),control,control,P138,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P314,ENERGEN CORP  (CIK 0000277595),control,control,P139,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T6,,
+P315,EARTHSTONE ENERGY INC  (CIK 0000010254),control,control,P140,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P316,BIGLARI HOLDINGS INC.  (CIK 0000093859),control,control,P141,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|grok|openai,,,
+P317,VWR Corp  (CIK 0001412232),control,control,P142,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P318,"DIGITALGLOBE, INC.  (CIK 0001208208)",control,control,P143,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P319,"CalAtlantic Group, Inc.  (CIK 0000878560)",control,control,P144,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,sigma_T3,,
+P320,"INC Research Holdings, Inc.  (CIK 0001610950)",control,control,P145,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,
+P321,VALIDUS HOLDINGS LTD  (CIK 0001348259),control,control,P146,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P322,"PENNYMAC FINANCIAL SERVICES, INC.  (CIK 0001568669)",control,control,P147,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P323,"Cotiviti Holdings, Inc.  (CIK 0001657197)",control,control,P148,PASS,0,0,0,NA,0,0,0,1,claude|grok|openai,claude|gemini|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P324,CH2M HILL COMPANIES LTD  (CIK 0000777491),control,control,P149,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P325,Civeo Corp  (CVEO)  (CIK 0001590584),control,control,P150,PASS,0,1,1,no,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P326,"EnLink Midstream Partners, LP  (CIK 0001179060)",control,control,P151,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|openai,,,
+P327,Nationstar Mortgage Holdings Inc.  (CIK 0001520566),control,control,P152,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P328,CU Bancorp  (CIK 0001543643),control,control,P153,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P329,ADVISORY BOARD CO  (CIK 0001157377),control,control,P154,PASS,0,0,0,NA,0,0,0,1,claude|gemini|openai,gemini|grok|openai,,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P330,Silver Run Acquisition Corp II  (CIK 0001690769),control,control,P155,PASS,1,1,1,yes,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P331,SCANA CORP  (CIK 0000754737),control,control,P156,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|openai,,,
+P332,PAREXEL INTERNATIONAL CORP  (CIK 0000799729),control,control,P157,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P333,"FCB FINANCIAL HOLDINGS, INC.  (CIK 0001476651)",control,control,P158,PASS,0,0,0,yes,0,0,0,0,claude|grok|openai,claude|gemini|grok,gap_mitigated,,
+P334,FNB BANCORP/CA/  (CIK 0001163199),control,control,P159,PASS,0,0,0,NA,0,0,0,1,claude|gemini|grok,claude|grok|openai,sigma_T6,,p4_pathway=uncertain->0;p5_pathway=uncertain->0
+P335,"Energy XXI Gulf Coast, Inc.  (CIK 0001404973)",control,control,P160,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,,,
+P336,"LENNAR CORP /NEW/  (LEN, LEN-B)  (CIK 0000920760)",control,control,P161,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,gemini|grok|openai,,,
+P337,"Green Bancorp, Inc.  (CIK 0001606363)",control,control,P162,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,claude|gemini|grok,,,
+P338,Capital Bank Financial Corp.  (CIK 0001479750),control,control,P163,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P339,BILL BARRETT CORP  (CIK 0001172139),control,control,P164,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,gemini|grok|openai,,,
+P340,CIGNA CORP  (CIK 0000701221),control,control,P165,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,sigma_T3,,
+P341,"National Energy Services Reunited Corp.  (NESR, NESRW)  (CIK 0001698514)",control,control,P166,PASS,0,0,0,NA,0,1,1,0,gemini|grok|openai,claude|grok|openai,,,
+P342,"OneBeacon Insurance Group, Ltd.  (CIK 0001369817)",control,control,P167,PASS,0,0,0,NA,1,0,1,0,claude|gemini|grok,claude|gemini|openai,,p4_pathway,
+P343,Beneficial Bancorp Inc.  (CIK 0001615418),control,control,P168,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|gemini|grok,sigma_T6,,
+P344,Envision Healthcare Corp  (CIK 0001678531),control,control,P169,PASS,0,0,0,NA,0,0,0,0,claude|gemini|grok,claude|gemini|openai,,,p4_pathway=uncertain->0
+P345,Fortress Investment Group LLC  (CIK 0001380393),control,control,P170,PASS,0,0,0,NA,0,1,1,0,claude|grok|openai,claude|gemini|openai,,,
+P346,CHICAGO BRIDGE & IRON CO N V  (CIK 0001027884),control,control,P171,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T3|sigma_T5,,
+P347,VECTREN CORP  (CIK 0001096385),control,control,P172,PASS,0,0,0,NA,0,0,0,0,claude|grok|openai,gemini|grok|openai,,,
+P348,"State National Companies, Inc.  (CIK 0001610793)",control,control,P173,PASS,0,0,0,NA,0,0,0,0,claude|gemini|openai,claude|grok|openai,,,
+P349,NAVIGATORS GROUP INC  (CIK 0000793547),control,control,P174,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,,,
+P350,FB Financial Corp  (FBK)  (CIK 0001649749),control,control,P175,PASS,0,0,0,NA,0,0,0,0,gemini|grok|openai,claude|gemini|grok,sigma_T6,,

@@ -1,0 +1,58 @@
+{
+  "case_id": "P275",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "~$23.5m impairment on carved-out loan; ~$0.07/unit final distribution before trust termination (Oct 2020)",
+      "rationale": "The slice explicitly states no post-close business record specific to the acquired NorthStar I investment portfolio exists, because its corporate existence ended at the 2018 closing and results were reported only on a fully consolidated basis across three predecessor businesses, with \"no segment, division, or business-unit breakout\" for the former NorthStar I business. With no disaggregated integration record, there is no documented evidence of disruption at the product/process interface (p4) or a fracture at the process/organization interface (p5) — but the absence is due to non-reporting rather than affirmative evidence of \"none,\" so both are coded uncertain. The only quantified realized record concerns a single loan carved out of the merger and held in a liquidating trust for legacy stockholders (~$23.5m impairment, ~$0.07/unit final distribution), which is a distinct economic unit and speaks to collateral/COVID-driven asset performance, not to integration pathways."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$23.5 million impairment on excluded asset",
+      "rationale": "The slice notes that the surviving company reports only fully consolidated results and contains no segment breakout for the former NorthStar I business. Consequently, there is no documented evidence of product/process disruption or process/organization fracture occurring after the merger."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': 'not documented'}",
+      "rationale": "{'type': 'string', 'value': 'The surviving company reported only fully consolidated results and provided no segment or business-unit breakout for the former NorthStar I portfolio. Accordingly, the slice documents neither product/process incoherence nor a fracture between operations and people, management, or culture; the quantified impairment concerns a separate asset excluded from the merger.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"~$23.5m impairment on carved-out loan; ~$0.07/unit final distribution before trust termination (Oct 2020)\", \"rationale\": \"The slice explicitly states no post-close business record specific to the acquired NorthStar I investment portfolio exists, because its corporate existence ended at the 2018 closing and results were reported only on a fully consolidated basis across three predecessor businesses, with \\\"no segment, division, or business-unit breakout\\\" for the former NorthStar I business. With no disaggregated integration record, there is no documented evidence of disruption at the product/process interface (p4) or a fracture at the process/organization interface (p5) \\u2014 but the absence is due to non-reporting rather than affirmative evidence of \\\"none,\\\" so both are coded uncertain. The only quantified realized record concerns a single loan carved out of the merger and held in a liquidating trust for legacy stockholders (~$23.5m impairment, ~$0.07/unit final distribution), which is a distinct economic unit and speaks to collateral/COVID-driven asset performance, not to integration pathways.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"~$23.5 million impairment on excluded asset\",\n\"rationale\": \"The slice notes that the surviving company reports only fully consolidated results and contains no segment breakout for the former NorthStar I business. Consequently, there is no documented evidence of product/process disruption or process/organization fracture occurring after the merger.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"The surviving company reported only fully consolidated results and provided no segment or business-unit breakout for the former NorthStar I portfolio. Accordingly, the slice documents neither product/process incoherence nor a fracture between operations and people, management, or culture; the quantified impairment concerns a separate asset excluded from the merger.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

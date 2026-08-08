@@ -1,0 +1,58 @@
+{
+  "case_id": "P244",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "$2,336.6M merger goodwill tested May 1, 2021, not impaired; no divestiture, assets retained",
+      "rationale": "For p4: no product/process incoherence is documented — the combined utility operated as a single consolidated reporting unit with both legacy operating utilities continuing to exist under new subsidiary names, and net income and adjusted earnings both rose 2020→2021, so no realized product/operations disruption is documented (0). For p5: the slice shows a recurring \"executive transition\" cost line (inducement bonuses and severance: $10.5M in 2021, $7.6M in 2020), which is documented friction at the management/organization tier, but the filing does not attribute these costs to the merger integration and no detail on roles was located, so whether this reflects a realized process/organization fracture cannot be determined (uncertain). t1 and t2 have no supporting realized evidence in the slice, and goodwill was found not impaired."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "goodwill from the merger ($2,336.6 million) found not impaired",
+      "rationale": "The slice documents no product/process disruption, so p4_pathway is 0. While there were executive transition costs, the filing explicitly does not attribute them to the merger integration, meaning there is no documented process/organization fracture tied to the deal, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$2,336.6 million of merger goodwill tested in 2021 with no impairment",
+      "rationale": "No realized product/process disruption is documented; Evergy continued operating as a consolidated utility holding company, and the legacy utilities remained operating subsidiaries under new names. Executive-transition costs of $10.5 million in 2021 and $7.6 million in 2020 were documented, but the filing did not attribute them to merger integration or describe an operations-versus-organization fracture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"$2,336.6M merger goodwill tested May 1, 2021, not impaired; no divestiture, assets retained\", \"rationale\": \"For p4: no product/process incoherence is documented \\u2014 the combined utility operated as a single consolidated reporting unit with both legacy operating utilities continuing to exist under new subsidiary names, and net income and adjusted earnings both rose 2020\\u21922021, so no realized product/operations disruption is documented (0). For p5: the slice shows a recurring \\\"executive transition\\\" cost line (inducement bonuses and severance: $10.5M in 2021, $7.6M in 2020), which is documented friction at the management/organization tier, but the filing does not attribute these costs to the merger integration and no detail on roles was located, so whether this reflects a realized process/organization fracture cannot be determined (uncertain). t1 and t2 have no supporting realized evidence in the slice, and goodwill was found not impaired.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"goodwill from the merger ($2,336.6 million) found not impaired\",\n  \"rationale\": \"The slice documents no product/process disruption, so p4_pathway is 0. While there were executive transition costs, the filing explicitly does not attribute them to the merger integration, meaning there is no documented process/organization fracture tied to the deal, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$2,336.6 million of merger goodwill tested in 2021 with no impairment\",\n  \"rationale\": \"No realized product/process disruption is documented; Evergy continued operating as a consolidated utility holding company, and the legacy utilities remained operating subsidiaries under new names. Executive-transition costs of $10.5 million in 2021 and $7.6 million in 2020 were documented, but the filing did not attribute them to merger integration or describe an operations-versus-organization fracture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

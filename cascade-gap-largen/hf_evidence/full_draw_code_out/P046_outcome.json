@@ -1,0 +1,58 @@
+{
+  "case_id": "P046",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$1.7bn FY2015 net loss ($1.6bn non-cash property write-down); NYSE delisting Dec 18, 2015; Chapter 11 filed Dec 31, 2015",
+      "rationale": "The slice documents a realized financial collapse — a $1.6 billion ceiling-test write-down, going-concern doubt, NYSE delisting, and a Chapter 11 filing — driven by falling commodity prices, not by any documented product/process or process/organization integration friction. Nothing in the record ties the distress to acquired-product-versus-operations incoherence (p4) or to operations fracturing against people/management/culture (p5); the asset sale to Texegy and transfer of operatorship is a bankruptcy-driven disposition, not documented integration failure. Because the slice provides no evidence bearing on either interface pathway, both are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.7 billion net loss for FY2015",
+      "rationale": "The provided slice documents Swift Energy Company's financial distress, bankruptcy filing, and asset sales, but does not contain evidence of post-deal integration disruptions at the product/process or process/organization interfaces. Therefore, p4_pathway and p5_pathway are coded as 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.6 billion non-cash write-down of oil and gas properties in FY2015",
+      "rationale": "The slice documents severe financial distress, including a $1.6 billion property write-down, Chapter 11 filing, and sale of a 75% interest in specified Louisiana acreage, but does not document an acquired product failing to align with operating processes; therefore p4 is 0. It also does not attribute the distress or transfer of operatorship to conflict between operations and people, management, or culture, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$1.7bn FY2015 net loss ($1.6bn non-cash property write-down); NYSE delisting Dec 18, 2015; Chapter 11 filed Dec 31, 2015\", \"rationale\": \"The slice documents a realized financial collapse \\u2014 a $1.6 billion ceiling-test write-down, going-concern doubt, NYSE delisting, and a Chapter 11 filing \\u2014 driven by falling commodity prices, not by any documented product/process or process/organization integration friction. Nothing in the record ties the distress to acquired-product-versus-operations incoherence (p4) or to operations fracturing against people/management/culture (p5); the asset sale to Texegy and transfer of operatorship is a bankruptcy-driven disposition, not documented integration failure. Because the slice provides no evidence bearing on either interface pathway, both are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.7 billion net loss for FY2015\",\n  \"rationale\": \"The provided slice documents Swift Energy Company's financial distress, bankruptcy filing, and asset sales, but does not contain evidence of post-deal integration disruptions at the product/process or process/organization interfaces. Therefore, p4_pathway and p5_pathway are coded as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.6 billion non-cash write-down of oil and gas properties in FY2015\",\n  \"rationale\": \"The slice documents severe financial distress, including a $1.6 billion property write-down, Chapter 11 filing, and sale of a 75% interest in specified Louisiana acreage, but does not document an acquired product failing to align with operating processes; therefore p4 is 0. It also does not attribute the distress or transfer of operatorship to conflict between operations and people, management, or culture, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

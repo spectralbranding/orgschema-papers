@@ -1,0 +1,58 @@
+{
+  "case_id": "P264",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (whole-company cash-out merger; deregistered via Form 15-12B Sept 2017; no public 3-5yr outcome record)",
+      "rationale": "The slice documents that Monogram was acquired whole, cash-out, and deregistered from SEC reporting in September 2017, with the surviving entity held by private, non-reporting acquirers, so no public periodic reports exist for the acquired business [SEC accession 0001193125-17-299284, Form 15-12B]. No segment- or portfolio-level financial or operating record for the former Monogram business was located in filings or reputable press within the 2020-2022 window. With no realized-outcome evidence available, disruption at the product/process interface (p4) and the process/organization interface (p5) cannot be determined and are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that the acquired company was deregistered and became a subsidiary of privately held acquirers, resulting in no public, audited 3-5-year outcome record. Consequently, there is no documented evidence to evaluate any post-deal disruption pathways."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that Monogram was deregistered via Form 15-12B in September 2017 with no subsequent periodic reports or public audited record for the acquired business, and that no segment-level or portfolio-level financial/operating trajectory appears in SEC filings or reputable press within the 3-5-year window. Because no realized-outcome evidence exists at all, documented disruption (or its absence) at the product/process or process/organization interfaces cannot be determined."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (whole-company cash-out merger; deregistered via Form 15-12B Sept 2017; no public 3-5yr outcome record)\", \"rationale\": \"The slice documents that Monogram was acquired whole, cash-out, and deregistered from SEC reporting in September 2017, with the surviving entity held by private, non-reporting acquirers, so no public periodic reports exist for the acquired business [SEC accession 0001193125-17-299284, Form 15-12B]. No segment- or portfolio-level financial or operating record for the former Monogram business was located in filings or reputable press within the 2020-2022 window. With no realized-outcome evidence available, disruption at the product/process interface (p4) and the process/organization interface (p5) cannot be determined and are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that the acquired company was deregistered and became a subsidiary of privately held acquirers, resulting in no public, audited 3-5-year outcome record. Consequently, there is no documented evidence to evaluate any post-deal disruption pathways.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that Monogram was deregistered via Form 15-12B in September 2017 with no subsequent periodic reports or public audited record for the acquired business, and that no segment-level or portfolio-level financial/operating trajectory appears in SEC filings or reputable press within the 3-5-year window. Because no realized-outcome evidence exists at all, documented disruption (or its absence) at the product/process or process/organization interfaces cannot be determined.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

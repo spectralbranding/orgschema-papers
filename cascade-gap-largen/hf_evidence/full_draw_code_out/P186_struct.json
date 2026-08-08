@@ -1,0 +1,85 @@
+{
+  "case_id": "P186",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is structured as a stock-for-stock combination of two going-concern businesses that each became subsidiaries of the new Irish parent Linde plc, so both operating companies' products and their producing processes moved together as intact enterprises rather than product being severed from process (gap_45=0). Likewise, operations were \"appropriately divided between Munich and Danbury\" with equal-representation governance, a Management Committee drawn from both firms, and a three-year German employment-protection commitment, so processes moved alongside the people/organization that run them (gap_56=0). T1 is coded mutual-replace given the negotiated 50:50 ownership and equal board/management design (merger of equals); T3 is swap given the new Irish holding-company domicile with UK tax residence."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a merger of equals where both Praxair and Linde AG brought their entire going-concern businesses under a new holding company, Linde plc. There is no evidence of products transferring without their underlying processes, nor processes transferring without their operating personnel, as both companies' operations and organizations were combined intact."
+    },
+    "openai": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction combined two going-concern industrial-gas businesses under a newly formed common parent, with both operating companies becoming subsidiaries; nothing in the slice documents customer-facing products crossing without their associated operations, so gap_45 is 0. The operations were allocated between Munich and Danbury, while governance included equal legacy representation on the board and Management Committee and the agreement protected German employment for three years; this closing structure documents organizational alignment alongside operations rather than a process-versus-organization mismatch, so gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is structured as a stock-for-stock combination of two going-concern businesses that each became subsidiaries of the new Irish parent Linde plc, so both operating companies' products and their producing processes moved together as intact enterprises rather than product being severed from process (gap_45=0). Likewise, operations were \\\"appropriately divided between Munich and Danbury\\\" with equal-representation governance, a Management Committee drawn from both firms, and a three-year German employment-protection commitment, so processes moved alongside the people/organization that run them (gap_56=0). T1 is coded mutual-replace given the negotiated 50:50 ownership and equal board/management design (merger of equals); T3 is swap given the new Irish holding-company domicile with UK tax residence.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a merger of equals where both Praxair and Linde AG brought their entire going-concern businesses under a new holding company, Linde plc. There is no evidence of products transferring without their underlying processes, nor processes transferring without their operating personnel, as both companies' operations and organizations were combined intact.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction combined two going-concern industrial-gas businesses under a newly formed common parent, with both operating companies becoming subsidiaries; nothing in the slice documents customer-facing products crossing without their associated operations, so gap_45 is 0. The operations were allocated between Munich and Danbury, while governance included equal legacy representation on the board and Management Committee and the agreement protected German employment for three years; this closing structure documents organizational alignment alongside operations rather than a process-versus-organization mismatch, so gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

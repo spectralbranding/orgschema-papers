@@ -1,0 +1,58 @@
+{
+  "case_id": "P164",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.6 billion non-cash impairment charge for oil and gas properties",
+      "rationale": "The provided slice documents a rapid descent into Chapter 11 bankruptcy, a $1.6 billion impairment, and the cancellation of all existing equity. It does not contain any documented evidence of specific product/process integration issues (p4_pathway) or process/organization cultural or management fractures (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.6bn impairment; all equity cancelled in Ch.11 (~19 mo)",
+      "rationale": "The slice documents rapid financial distress—May 2015 forbearance over a going-concern qualification and missed interest payment, July 2015 Chapter 11, a $1.6 billion FY2015 oil-and-gas property impairment, and July 2016 plan confirmation cancelling all existing equity—but contains no evidence of product/process interface incoherence (p4). Likewise nothing is documented on operations-versus-organization/culture fracture (p5); the realized record is confined to credit default, impairment, and equity cancellation followed by deregistration."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.6 billion oil-and-gas property impairment in FY2015",
+      "rationale": "The slice documents lender forbearance, Chapter 11, and a $1.6 billion property impairment, but does not attribute these outcomes to failure to align an acquired product with operating processes [SRC: SEC accession 0001104659-15-040093; SEC accession 0001104659-15-051260; SEC accession 0001558370-16-004332]. It likewise provides no realized evidence that operational integration fractured against people, management, or culture, so no process/organization pathway is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.6 billion non-cash impairment charge for oil and gas properties\",\n  \"rationale\": \"The provided slice documents a rapid descent into Chapter 11 bankruptcy, a $1.6 billion impairment, and the cancellation of all existing equity. It does not contain any documented evidence of specific product/process integration issues (p4_pathway) or process/organization cultural or management fractures (p5_pathway).\"\n}\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.6bn impairment; all equity cancelled in Ch.11 (~19 mo)\",\n  \"rationale\": \"The slice documents rapid financial distress—May 2015 forbearance over a going-concern qualification and missed interest payment, July 2015 Chapter 11, a $1.6 billion FY2015 oil-and-gas property impairment, and July 2016 plan confirmation cancelling all existing equity—but contains no evidence of product/process interface incoherence (p4). Likewise nothing is documented on operations-versus-organization/culture fracture (p5); the realized record is confined to credit default, impairment, and equity cancellation followed by deregistration.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.6 billion oil-and-gas property impairment in FY2015\",\n  \"rationale\": \"The slice documents lender forbearance, Chapter 11, and a $1.6 billion property impairment, but does not attribute these outcomes to failure to align an acquired product with operating processes [SRC: SEC accession 0001104659-15-040093; SEC accession 0001104659-15-051260; SEC accession 0001558370-16-004332]. It likewise provides no realized evidence that operational integration fractured against people, management, or culture, so no process/organization pathway is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

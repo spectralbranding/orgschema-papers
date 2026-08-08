@@ -1,0 +1,179 @@
+ 
+ 8-K
+ 1
+ pmt-8k_20170427.htm
+ PMT FORM 8-K (04-27-17)
+
+pmt-8k_20170427.htm
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ 
+ FORM 8-K 
+ 
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ 
+ Date of Report (Date of earliest event reported): April 27, 2017 
+ 
+ PennyMac Mortgage Investment Trust 
+ (Exact name of registrant as specified in its charter) 
+
+ Maryland 
+ 
+ 001-34416 
+ 
+ 27-0186273 
+
+ (State or other jurisdiction 
+ 
+ (Commission 
+ 
+ (IRS Employer 
+
+ of incorporation) 
+ 
+ File Number) 
+ 
+ Identification No.) 
+
+ 3043 Townsgate Road, Westlake Village, California 
+ 
+ 91361 
+
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+
+ (818) 224&#8209;7442 
+ (Registrant';s telephone number, including area code) 
+ 
+ Not Applicable 
+ (Former name or former address, if changed since last report) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+ Emerging growth company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01 Entry into a Material Definitive Agreement. 
+ 
+ Second Amended and Restated Master Repurchase Agreement (Roll-Up Facility) 
+ 
+ On April 28, 2017, PennyMac Mortgage Investment Trust (the ";Company";), through four of its wholly-owned subsidiaries, PennyMac Operating Partnership, L.P. (";POP";), PennyMac Corp. (";PMC";), PennyMac Holdings, LLC (";PMH";), and PMC REO Financing Trust, LLC (";REO Subsidiary";), entered into a Second Amended and Restated Master Repurchase Agreement with Credit Suisse First Boston Mortgage Capital LLC, as administrative agent to the buyers (";CSFB";), Credit Suisse AG, Cayman Islands Branch, as a buyer (";CS Cayman"; or ";CS Buyer";), and Alpine Securitization LTD, as a buyer (";Alpine"; or ";CS Buyer,"; and, together with CS Cayman, the ";CS Buyers";)(the ";Roll-Up Facility";). 
+ 
+ The Roll-Up Facility is committed to April 27, 2018 and, together with the Re-warehouse Facility (as defined below), provides for a maximum combined purchase price of $1.5 billion, of which the maximum combined committed purchase price is $650 million, all of which is committed and available for purchases under the Roll-Up Facility to the extent not reduced by purchased amounts outstanding under the Re-warehouse Facility and two other master repurchase agreements entered into by the Company in the ordinary course of its business to finance asset-backed securities with CS Cayman and one of its affiliates. The obligations of POP, PMC and PMH under the Roll-Up Facility are fully guaranteed by the Company, and the obligations of PMC and PMH are fully guaranteed by POP. 
+ 
+ Pursuant to the terms of the Roll-Up Facility, the Company, through POP, PMC and/or PMH, as applicable, may sell, and later repurchase, (i) newly originated mortgage loans that PMC purchases from correspondent lenders pending sale and/or securitization, and (ii) distressed mortgage loans and equity interests in REO Subsidiary owning real estate acquired upon settlement of mortgage loans (the ";REO Properties";). The mortgage loans are serviced and the REO Properties are managed by PennyMac Loan Services, LLC (";PLS";), a controlled subsidiary of PennyMac Financial Services, Inc. (NYSE: PFSI). 
+ 
+ The principal amount paid by CS Buyer is based on a percentage of the market value of each mortgage loan or the REO Properties underlying the REO Subsidiary interest (each, a ";Facility Asset";), as applicable. Upon the Company';s repurchase, or the sale, securitization or liquidation of a Facility Asset, the Company is required to repay CS Buyer the principal amount related to such Facility Asset plus accrued interest (at a rate reflective of the current market and based on either CS Buyer';s cost of funds or LIBOR plus a margin) to the date of such repurchase, sale, securitization or liquidation. The Company is also required to pay CS Buyers a commitment fee for the Roll-Up Facility, as well as certain other administrative costs and expenses in connection with CSFB';s structuring, management and ongoing administration of the Roll-Up Facility. 
+ 
+ The Roll-Up Facility requires that PMC, PMH and POP maintain various financial and other covenants, which include maintaining (i) a minimum adjusted tangible net worth of $150 million for PMC, $250 million for PMH and $700 million for POP; (ii) as of the end of each calendar month and in each case on a consolidated basis, a minimum of $25 million in the aggregate in unrestricted cash and cash equivalents between PMC and PMH, a minimum of $10 million in the aggregate in unrestricted cash and cash equivalents for each of PMC and PMH, and a minimum of $40 million in the aggregate in unrestricted cash and cash equivalents for POP; and (iii) a ratio of total indebtedness to adjusted tangible net worth for PMC, PMH and POP of not more than 10:1, 10:1, and 5:1, respectively. 
+ 
+ The Roll-Up Facility also requires the Company to maintain various financial and other covenants, which include maintaining (i) a minimum adjusted tangible net worth of $860 million; (ii) a minimum of $40 million in unrestricted cash and cash equivalents in the aggregate at the Company, as of the end of each calendar month and on a consolidated basis; (iii) a ratio of total indebtedness to adjusted tangible net worth of not more than 5:1; and (iv) profitability for at least one (1) of the previous two (2) consecutive fiscal quarters, as of the end of each fiscal quarter. 
+ 
+ The Roll-Up Facility contains margin call provisions that provide CS Buyers with certain rights where there has been a decline in the market value of the Facility Assets. Under these circumstances, CS Buyers may require PMC, PMH or POP to transfer cash or additional Facility Assets with an aggregate market value in an amount sufficient to eliminate any margin deficit resulting from such a decline. 
+
+ In addition, the R oll-Up Facility contains events of default (subject to certain materiality thresholds and grace periods), including payment defaults, breaches of covenants and/or certain representations and warranties, cross-defaults, servicer termination events, guaranto r defaults, bankruptcy or insolvency proceedings and other events of default customary for this type of transaction. The remedies for such events of default are also customary for this type of transaction and include the acceleration of the principal amou nt outstanding under the Roll-Up Facility and the liquidation by CS Buyers of the Facility Assets then subject to the Roll-Up Facility. 
+ 
+ The foregoing descriptions of the Roll-Up Facility and the related guaranty do not purport to be complete and are qualified in their entirety by reference to the full text of the Second Amended and Restated Master Repurchase Agreement (Roll-Up Facility) and the Second Amended and Restated Guaranty, which have been filed with this Current Report on Form 8-K as Exhibit 10.1 and Exhibit 10.2, respectively. 
+ 
+ Second Amended and Restated Master Repurchase Agreement (Re-warehouse Facility) 
+ 
+ On April 28, 2017, the Company, through POP, also entered into a Second Amended and Restated Master Repurchase Agreement with CSFB, as administrative agent, and CS Buyers, pursuant to which POP may sell to CS Buyers, and later repurchase, newly originated mortgage loans for which POP provides financing to third-party mortgage loan originators (the ";Re-warehouse Facility";). 
+ 
+ The Re-warehouse Facility is committed to April 27, 2018 and, together with the Roll-Up Facility, provides for a maximum combined purchase price of $1.5 billion, of which the maximum combined committed purchase price is $650 million. The committed amount under the Re-warehouse Facility is equal to the lesser of (a) $300 million and (b) the maximum combined committed purchase price less all purchased amounts outstanding under the Roll-Up Facility. The obligations of POP under the Re-warehouse Facility are fully guaranteed by the Company, and the mortgage loans are serviced by PLS. 
+ 
+ The principal amount paid by CS Buyer for each eligible mortgage loan is based on a percentage of the lesser of the market value or the unpaid principal balance of such mortgage loan. Upon POP';s repurchase of a mortgage loan, it is required to repay CS Buyer the principal amount related to such mortgage loan plus accrued interest (at a rate reflective of the current market and based on CS Buyer';s cost of funds plus a margin) to the date of such repurchase. POP is also required to pay CSFB certain administrative costs and expenses in connection with CSFB';s structuring, management and ongoing administration of the Re-warehouse Facility. 
+ 
+ The Re-warehouse Facility contains margin call provisions that provide CS Buyers with certain rights in the event of a decline in the market value of the purchased mortgage loans. Under these circumstances, CS Buyers may require POP to transfer cash or additional eligible mortgage loans with an aggregate market value in an amount sufficient to eliminate any margin deficit resulting from such a decline. 
+ 
+ In addition, the Re-warehouse Facility requires POP and the Company to maintain various financial and other covenants, and it provides for events of default and remedies, in each case consistent with those provided in the Roll-Up Facility and as described above in greater detail under the heading Second Amended and Restated Master Repurchase Agreement (Roll-Up Facility) . 
+ 
+ The foregoing descriptions of the Re-warehouse Facility and the related guaranty do not purport to be complete and are qualified in their entirety by reference to the full text of the Second Amended and Restated Master Repurchase Agreement (Re-warehouse Facility) and the Amended and Restated Guaranty, which have been filed with this Current Report on Form 8-K as Exhibits 10.3 and 10.4, respectively. 
+ 
+ Item 2.03 Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant. 
+ 
+ The information set forth under Item 1.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers . 
+ 
+ On April 27, 2017, Clay A. Halvorsen provided the Company with a notice of resignation, effective immediately, from his position on the Company';s Board of Trustees (the ";Board";) and the Board committees on which he serves. Mr. Halvorsen resigned from the Board due to other professional and personal commitments and not as a result of any dispute or disagreement with the Company. Mr. Halvorsen has served on the Board since 2009. 
+ 
+ Item 9.01 Financial Statements and Exhibits. 
+ 
+ (d) Exhibits. 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 10.1 
+ 
+ Second Amended and Restated Master Repurchase Agreement, dated as of April 28, 2017, by and among Credit Suisse First Boston Mortgage Capital LLC, Credit Suisse AG, Cayman Islands Branch, Alpine Securitization LTD, PennyMac Holdings, LLC, PennyMac Corp., PennyMac Operating Partnership, L.P., PMC REO Financing Trust and PennyMac Mortgage Investment Trust 
+
+ 10.2 
+ 
+ Second Amended and Restated Guaranty, dated as of April 28, 2017, by PennyMac Mortgage Investment Trust, PennyMac Operating Partnership, L.P. and Credit Suisse First Boston Mortgage Capital, LLC 
+
+ 10.3 
+ 
+ Second Amended and Restated Master Repurchase Agreement, dated as of April 28, 2017, by and among Credit Suisse First Boston Mortgage Capital LLC, Credit Suisse AG, Cayman Islands Branch and Alpine Securitization LTD PennyMac Operating Partnership, L.P. and PennyMac Mortgage Investment Trust 
+
+ 10.4 
+ 
+ Amended and Restated Guaranty, dated as of April 28, 2017, by PennyMac Mortgage Investment Trust and Credit Suisse First Boston Mortgage Capital, LLC 
+
+ SIGNATURE 
+ 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ PENNYMAC MORTGAGE INVESTMENT TRUST 
+
+ Dated: May 3, 2017 
+ 
+ /s/ Andrew S. Chang 
+
+ Andrew S. Chang 
+ Senior Managing Director and Chief Financial Officer 
+
+ EXHIBIT INDEX 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 10.1 
+ 
+ Second Amended and Restated Master Repurchase Agreement, dated as of April 28, 2017, by and among Credit Suisse First Boston Mortgage Capital LLC, Credit Suisse AG, Cayman Islands Branch, Alpine Securitization LTD, PennyMac Holdings, LLC, PennyMac Corp., PennyMac Operating Partnership, L.P., PMC REO Financing Trust and PennyMac Mortgage Investment Trust 
+
+ 10.2 
+ 
+ Second Amended and Restated Guaranty, dated as of April 28, 2017, by PennyMac Mortgage Investment Trust, PennyMac Operating Partnership, L.P. and Credit Suisse First Boston Mortgage Capital, LLC 
+
+ 10.3 
+ 
+ Second Amended and Restated Master Repurchase Agreement, dated as of April 28, 2017, by and among Credit Suisse First Boston Mortgage Capital LLC, Credit Suisse AG, Cayman Islands Branch and Alpine Securitization LTD PennyMac Operating Partnership, L.P. and PennyMac Mortgage Investment Trust 
+
+ 10.4 
+ 
+ Amended and Restated Guaranty, dated as of April 28, 2017, by PennyMac Mortgage Investment Trust and Credit Suisse First Boston Mortgage Capital, LLC 
+

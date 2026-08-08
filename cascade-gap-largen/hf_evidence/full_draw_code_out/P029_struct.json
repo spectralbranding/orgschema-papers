@@ -1,0 +1,85 @@
+{
+  "case_id": "P029",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 = 0 because the product portfolio (fuel injection, actuators, sensors, control modules, plus Aftermarket line) crossed the boundary together with its producing/delivering operations — 20 major manufacturing facilities, 12 technical centers, and ~5,000 scientists/engineers operating in 24 countries on a regional service model — so product and its processes moved coherently at closing. gap_56 = 0 because the operational processes transferred alongside the organization/people (~5,000 personnel) and dedicated standalone management (Liam Butterworth as separate CEO of DPS), so T5 and T6 aligned at closing. T5 is coded partial (not gap-producing) because certain IT, supply-chain management functions, and up-to-48-month component supply remained with the Parent and were bridged by the Transition Services and contract manufacturing agreements — a shared-substrate friction, not a product/process or process/people detachment."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction is a spin-off where the Powertrain Systems segment (T4 products) transfers to a new independent company. However, certain components will continue to be produced by the Parent and supplied to DPS, and shared corporate substrate (IT, supply chain) did not transfer intact, creating a gap_45 (product transferred but some producing operations/processes remained with Parent). This gap is mitigated by contract manufacturing services agreements and a Transition Services Agreement. The dedicated management and 5,000 employees transferred with the operations that did move, so there is no gap_56."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The product portfolio crossed with major manufacturing facilities, technical centers, and technical personnel, but certain components remained produced by the Parent and shared IT and supply-chain services did not transfer intact, documenting a product-process gap at closing [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1]. That gap was contractually absorbed through transition-services and contract-manufacturing agreements, including component supply for up to 48 months [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1]. No process-organization gap is documented because the separated business included its associated employees and dedicated standalone management alongside its operations [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 = 0 because the product portfolio (fuel injection, actuators, sensors, control modules, plus Aftermarket line) crossed the boundary together with its producing/delivering operations \\u2014 20 major manufacturing facilities, 12 technical centers, and ~5,000 scientists/engineers operating in 24 countries on a regional service model \\u2014 so product and its processes moved coherently at closing. gap_56 = 0 because the operational processes transferred alongside the organization/people (~5,000 personnel) and dedicated standalone management (Liam Butterworth as separate CEO of DPS), so T5 and T6 aligned at closing. T5 is coded partial (not gap-producing) because certain IT, supply-chain management functions, and up-to-48-month component supply remained with the Parent and were bridged by the Transition Services and contract manufacturing agreements \\u2014 a shared-substrate friction, not a product/process or process/people detachment.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction is a spin-off where the Powertrain Systems segment (T4 products) transfers to a new independent company. However, certain components will continue to be produced by the Parent and supplied to DPS, and shared corporate substrate (IT, supply chain) did not transfer intact, creating a gap_45 (product transferred but some producing operations/processes remained with Parent). This gap is mitigated by contract manufacturing services agreements and a Transition Services Agreement. The dedicated management and 5,000 employees transferred with the operations that did move, so there is no gap_56.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The product portfolio crossed with major manufacturing facilities, technical centers, and technical personnel, but certain components remained produced by the Parent and shared IT and supply-chain services did not transfer intact, documenting a product-process gap at closing [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1]. That gap was contractually absorbed through transition-services and contract-manufacturing agreements, including component supply for up to 48 months [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1]. No process-organization gap is documented because the separated business included its associated employees and dedicated standalone management alongside its operations [SRC: SEC accession 0001193125-17-279255, Form 10-12B EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

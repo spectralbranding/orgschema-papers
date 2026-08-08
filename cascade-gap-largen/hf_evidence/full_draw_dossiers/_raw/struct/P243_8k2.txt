@@ -1,0 +1,172 @@
+ 
+ 8-K
+ 1
+ s002461x3_8k.htm
+ FORM 8-K
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ PURSUANT TO SECTION 13 OR 15(d) 
+
+ OF THE SECURITIES EXCHANGE ACT OF 1934 
+
+ Date of Report (Date of earliest event reported): October 5, 2018 
+
+ CONVERGYS CORPORATION 
+
+ (Concentrix CVG Corporation, as successor by merger to Convergys Corporation) 
+
+ (Exact name of registrant as specified in its charter) 
+
+ Ohio 
+
+ (State or other jurisdiction of incorporation) 
+
+ 1-14379 
+
+ (Commission File Number) 
+
+ 31-1598292 
+
+ (IRS Employer Identification No.) 
+
+ 201 East Fourth Street 
+
+ Cincinnati, Ohio 
+
+ (Address of principal executive offices) 
+
+ 45202 
+
+ (Zip Code) 
+
+ Registrant';s telephone number, including area code: (513) 723-7000 
+
+ &#9744; 
+
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#9744; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. 
+
+ &#9744; 
+
+ EXPLANATORY NOTE 
+
+ This Current Report on Form 8-K is being filed in connection with the consummation, on October 5, 2018 (the "; Closing Date ";), of the Mergers (as defined below) contemplated by that certain Agreement and Plan of Merger, dated as of June 28, 2018, as amended by Amendment No. 1 to the Agreement and Plan of Merger, dated as of August 22, 2018 (as amended, modified or supplemented from time to time), by and among Convergys Corporation (the "; Company "; or "; Convergys ";), SYNNEX Corporation, a Delaware corporation ("; SYNNEX ";), Delta Merger Sub I, Inc., a Delaware corporation and wholly owned subsidiary of SYNNEX ("; Merger Sub ";), and Concentrix CVG Corporation, a Delaware corporation and a wholly owned subsidiary of SYNNEX ("; Concentrix CVG ";), pursuant to which Merger Sub I was merged with and into Convergys, with Convergys continuing as the surviving corporation and a wholly owned subsidiary of SYNNEX (the "; Initial Merger ";) and, immediately thereafter, Convergys was merged with and into Concentrix CVG, and Concentrix CVG continued as the surviving company and a wholly owned subsidiary of SYNNEX (together with the Initial Merger, the "; Mergers ";). 
+
+ Item 1.01 
+
+ Entry into a Material Definitive Agreement . 
+
+ Credit Facilities 
+
+ On the Closing Date, in connection with the Mergers, Concentrix CVG (as the surviving party following the Mergers with the Company) and certain of the Company';s U.S. domestic subsidiaries (the "; New Loan Parties ";) joined as guarantors under (i) that certain Credit Agreement, dated as of November 27, 2013, by and among SYNNEX, the guarantors identified therein, the lenders identified therein and Bank of America, N.A., as administrative agent (as amended, the "; BofA Credit Agreement ";) and (ii) that certain Credit Agreement, dated as of August 9, 2018, by and among SYNNEX, the guarantors identified therein, the lenders identified therein, and JPMorgan Chase Bank, N.A., as administrative agent (the "; JPM Credit Agreement ";). 
+
+ The BofA Credit Agreement includes a $600 million commitment for a revolving credit facility and a term loan in the original principal amount of $1.2 billion. SYNNEX may request incremental commitments to increase the principal amount of the revolving line of credit or term loan by $500 million, plus an additional amount which is dependent upon SYNNEX'; pro forma first lien leverage ratio, as calculated under the BofA Credit Agreement. The BofA Credit Agreement matures in September 2022. The outstanding principal amount of the term loan is repayable in quarterly installments of $15 million, with the unpaid balance due in full on the September 2022 maturity date. Interest on borrowings under the BofA Credit Agreement can be based on LIBOR or a base rate at SYNNEX'; option, plus a margin. The margin for LIBOR loans ranges from 1.25% to 2.00% and the margin for base rate loans ranges from 0.25% to 1.00%, provided that LIBOR shall not be less than zero. The base rate is a variable rate which is the highest of (a) the Federal Funds Rate, plus a margin of 0.5%, (b) the rate of interest announced, from time to time, by the agent, Bank of America, N.A., as its ";prime rate,"; and (c) the Eurodollar Rate, plus 1.0%. The unused revolving credit facility commitment fee ranges from 0.175% to 0.30% per annum. The margins above the applicable interest rates and the revolving commitment fee for revolving loans are based on SYNNEX'; consolidated leverage ratio, as calculated under the BofA Credit Agreement. SYNNEX'; obligations under the BofA Credit Agreement are secured by substantially all of its, the New Loan Parties';, and certain of its other United States domestic subsidiaries'; assets on a pari passu basis with the interests of the lenders under the JPM Credit Agreement pursuant to an intercreditor agreement, and are guaranteed by the New Loan Parties and certain of its other United States domestic subsidiaries. 
+
+ -2- 
+
+ The JPM Credit Agreement provides for the extension of one or more term loans in an aggregate principal amount not to exceed $1.8 billion, of which $1.45 billion was advanced on the Closing Date. The JPM Credit Agreement matures in October 2023. Subject to customary conditions, SYNNEX may borrow up to five additional term loans for over the next 90 days, in an aggregate amount not to exceed $350 million. The proceeds of any loan made after the Closing Date must be used initially to repurchase or settle the outstanding Convergys convertible debentures tendered in connection with the Mergers until all such convertible debentures have been repurchased or settled, with the remaining balance available for working capital and other corporate purposes. The outstanding principal amount of the term loans made under the JPM Credit Agreement will be payable in quarterly installments in an amount equal to 1.25% commencing on the last day of the second full fiscal quarter after the Closing Date, with the unpaid balance due in full on the maturity date. Interest on borrowings under JPM Credit Agreement can be based on LIBOR or a base rate at SYNNEX'; option, plus a margin. The margin for LIBOR loans ranges from 1.25% to 1.75% and the margin for base rate loan ranges from 0.25% to 0.75%, provided that LIBOR shall not be less than zero. The base rate is a variable rate which is the highest of (a) 0.5% plus the greater of (x) the Federal Funds Rate in effect on such day and (y) the overnight bank funding rate in effect on such day, (b) the Eurodollar Rate plus 1.0% per annum, and (c) the rate of interest last quoted by The Wall Street Journal as the ";Prime Rate"; in the U.S. A term loan commitment fee began accruing on September 26, 2018 and ranges from 0.15% to 0.25% per annum. The margins above the applicable interest rates and the term loan commitment fee are based on SYNNEX'; consolidated leverage ratio, as calculated under the JPM Credit Agreement. SYNNEX'; obligations under the JPM Credit Agreement are secured by substantially all of SYNNEX';, the New Loan Parties'; and certain of its other domestic subsidiaries'; assets on a pari passu basis with the interests of the lenders under the existing U.S. Credit Agreement pursuant to an intercreditor agreement, and are guaranteed by the New Loan Parties and certain of its other United States domestic subsidiaries. 
+
+ 5.75% Junior Subordinated Convertible Debentures Due 2029 Supplemental Indenture 
+
+ On the Closing Date, in connection with the Mergers, Concentrix CVG entered into the First Supplemental Indenture (the "; Supplemental Indenture ";), dated as of October 5, 2018, by and between Concentrix CVG, as successor to the Company, and U.S. Bank National Association, as trustee (the "; Trustee ";), which amends and supplements the Indenture, dated as of October 13, 2009, between the Company, as issuer, and the Trustee (as amended and supplemented, the "; Indenture ";), pursuant to which the Company issued its 5.75% Junior Subordinated Convertible Debentures due 2029 (the "; Debentures ";). Among other things, the Supplemental Indenture effects certain amendments to the Indenture relating to the Mergers, including (1) changing the right to convert each $1,000 principal amount of Debentures into a right to convert such principal amount into cash and shares of common stock, par value $0.001 per share, of SYNNEX based on the consideration to be issued in the Initial Merger, and (2) Concentrix CVG';s assumption of the Company';s obligations under the Indenture. 
+
+ Item 1.02 
+
+ Termination of a Material Definitive Agreement . 
+
+ The information provided in the Explanatory Note of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ Termination of the Receivables Purchase Agreement 
+
+ On the Closing Date, in connection with the Mergers, the Company terminated its credit facility evidenced by the Receivables Purchase Agreement, dated as of June 30, 2009, (as amended, supplemented or otherwise modified from time to time, the "; Receivables Purchase Agreement ";), by and among Convergys Funding Inc., Convergys, as initial servicer, Gotham Funding Corporation, MUFG Bank, Ltd. f/k/a The Bank of Tokyo-Mitsubishi UFJ, Ltd. ("; MUFG ";), New York Branch, Wells Fargo Bank, N.A., MUFG in its capacity as agent, and Wells Fargo Bank, N.A., in its capacity as administrative agent. Upon the termination of the Receivables Purchase Agreement, all of the guarantees of the obligations under the Receivables Purchase Agreement were terminated and all security interests granted under the Receivables Purchase Agreement were released. 
+
+ -3- 
+
+ Termination of the Revolving Credit Facility 
+
+ On the Closing Date, in connection with the Mergers, the Company also terminated all commitments under the Company';s Credit Agreement, dated as of January 11, 2017 (as amended, supplemented or otherwise modified from time to time, the "; Credit Agreement ";), among the Company, the several banks and other financial institutions from time to time party thereto, and Citibank, N.A., as Administrative Agent. Upon the termination of the Credit Agreement, all of the guarantees of the obligations under the Credit Agreement were terminated. 
+
+ Item 2.03 
+
+ Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant . 
+
+ The information provided under the heading ";Credit Facilities"; in Item 1.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ * * * 
+
+ Forward-Looking Statements 
+
+ DISCLOSURE NOTICE: This report contains ";forward-looking statements"; within the meaning of Section 27A of the Securities Act of 1933 and Section 21E of the Securities Exchange Act of 1934 related to SYNNEX, Convergys and the acquisition of Convergys by SYNNEX. All statements other than statements of historical fact are forward-looking statements for purposes of federal and state securities laws. These forward-looking statements involve uncertainties that could significantly affect the financial or operating results of Convergys, SYNNEX or the combined company. These forward-looking statements may be identified by terms such as anticipate, believe, foresee, expect, intend, plan, may, will, could and should and the negative of these terms or other similar expressions. Forward-looking statements in this report include, among other things, statements about the potential benefits of the acquisition, including future financial and operating results, plans, objectives, expectations and intentions. In addition, all statements that address operating performance, events or developments that we expect or anticipate will occur in the future -- including statements relating to creating value for stockholders, benefits of the transactions to customers, vendors, employees, stockholders and other constituents of the combined company, integrating our companies, and cost savings -- are forward-looking statements. These forward-looking statements involve substantial risks and uncertainties that could cause actual results to differ materially from those expressed or implied by such statements. Risks and uncertainties include, among other things, risks related to the ability to realize the anticipated benefits of the acquisition, including the possibility that the expected benefits from the acquisition will not be realized or will not be realized within the expected time period; the risk that the businesses will not be integrated successfully; disruption from the transaction making it more difficult to maintain business, contractual and operational relationships; the unfavorable outcome of any legal proceedings that have been or may be instituted against SYNNEX, Convergys or the combined company; failure to protect proprietary or personally identifiable data against unauthorized access or unintended release; the ability to retain key personnel; negative effects of the consummation of the acquisition on the market price of the capital stock of SYNNEX, and on SYNNEX'; and Convergys';s operating results; significant transaction costs, fees, expenses and charges; unknown liabilities; the risk of litigation related to the acquisition; other business effects, including the effects of industry, market, economic, political or regulatory conditions; future exchange and interest rates; changes in tax and other laws, regulations, rates and policies; future business combinations or disposals; and competitive developments. 
+
+ -4- 
+
+ A further description of risks and uncertainties relating to SYNNEX and Convergys can be found in their respective most recent Annual Reports on Form 10-K, Quarterly Reports on Form 10-Q and Current Reports on Form 8-K, all of which are filed with the SEC and available at www.sec.gov. 
+
+ Neither SYNNEX nor Convergys assumes any obligation to update the forward-looking statements contained in this report as the result of new information or future events or developments. 
+
+ Item 9.01 
+
+ Financial Statements and Exhibits . 
+
+ (d) Exhibits 
+
+ Exhibit No. 
+
+ Description of Exhibit 
+
+ 4.1 
+
+ First Supplemental Indenture, dated as of October 5, 2018, between Concentrix CVG Corporation and U.S. Bank, National Association, as trustee. 
+
+ -5- 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. 
+
+ Date: October 5, 2018 
+
+ CONCENTRIX CVG CORPORATION 
+
+ (as successor in interest to CONVERGYS CORPORATION) 
+
+ By: 
+
+ /s/ Simon Y. Leung 
+
+ Name: 
+
+ Simon Y. Leung 
+
+ Title: 
+
+ Senior Vice President, Legal 
+
+ -6- 
+

@@ -1,0 +1,85 @@
+{
+  "case_id": "P347",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company, all-cash reverse triangular merger in which the entire corporate entity — target plus all utility subsidiaries (Indiana Gas, SIGECO, VEDO via VUHI) — became a wholly owned subsidiary of CenterPoint, so the customer-facing utility products (T4) and the operational processes/utilities that produce and deliver them (T5) crossed the ownership boundary together as an intact going concern, not as a carved-out asset separated from its operations — hence gap_45=0. The Employee Matters provisions bound the acquirer to two years of same/better responsibilities, comparable pay/benefits, honored union contracts, and multi-year Evansville headquarters/operational-support commitments, so the people/organization (T6) transferred coherently alongside the processes (T5) — hence gap_56=0. Controlling intent was coded replace because the target's entire board and management ceased serving and CenterPoint's designee Prochazka became sole director at the effective time."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company reverse triangular merger in which Vectren survived as a wholly owned CenterPoint subsidiary and its utilities, nonutility businesses, and intermediate holding company VUHI all crossed intact (8-K Item 2.01; DEFM14A Proposed Merger), so customer-facing utility products/services (T4) and the operational processes that deliver them (T5) moved together with no structural product-vs-process carve-out at closing. Employee Matters commitments bound CenterPoint for two years to same-or-better roles, pay, benefits, location continuity, and honor of union contracts for Company employees, and headquarters/key operational activities were contractually retained in Evansville, so processes (T5) and the organization that runs them (T6) likewise transferred coherently together; no transitional-services gap was required or documented."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire Vectren entity and its subsidiaries, including its utility businesses, crossed the ownership boundary, while CenterPoint committed to retain key operational activities and utility-support functions in Evansville; therefore, no product-versus-process mismatch is documented at closing. Operational processes moved with the workforce under two-year responsibility, location, compensation, benefit, severance, and union-contract protections, although Vectren and VUHI's directors ceased serving and were replaced by the acquirer's designee; this does not document a process-versus-organization gap at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company, all-cash reverse triangular merger in which the entire corporate entity \\u2014 target plus all utility subsidiaries (Indiana Gas, SIGECO, VEDO via VUHI) \\u2014 became a wholly owned subsidiary of CenterPoint, so the customer-facing utility products (T4) and the operational processes/utilities that produce and deliver them (T5) crossed the ownership boundary together as an intact going concern, not as a carved-out asset separated from its operations \\u2014 hence gap_45=0. The Employee Matters provisions bound the acquirer to two years of same/better responsibilities, comparable pay/benefits, honored union contracts, and multi-year Evansville headquarters/operational-support commitments, so the people/organization (T6) transferred coherently alongside the processes (T5) \\u2014 hence gap_56=0. Controlling intent was coded replace because the target's entire board and management ceased serving and CenterPoint's designee Prochazka became sole director at the effective time.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company reverse triangular merger in which Vectren survived as a wholly owned CenterPoint subsidiary and its utilities, nonutility businesses, and intermediate holding company VUHI all crossed intact (8-K Item 2.01; DEFM14A Proposed Merger), so customer-facing utility products/services (T4) and the operational processes that deliver them (T5) moved together with no structural product-vs-process carve-out at closing. Employee Matters commitments bound CenterPoint for two years to same-or-better roles, pay, benefits, location continuity, and honor of union contracts for Company employees, and headquarters/key operational activities were contractually retained in Evansville, so processes (T5) and the organization that runs them (T6) likewise transferred coherently together; no transitional-services gap was required or documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The entire Vectren entity and its subsidiaries, including its utility businesses, crossed the ownership boundary, while CenterPoint committed to retain key operational activities and utility-support functions in Evansville; therefore, no product-versus-process mismatch is documented at closing. Operational processes moved with the workforce under two-year responsibility, location, compensation, benefit, severance, and union-contract protections, although Vectren and VUHI's directors ceased serving and were replaced by the acquirer's designee; this does not document a process-versus-organization gap at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

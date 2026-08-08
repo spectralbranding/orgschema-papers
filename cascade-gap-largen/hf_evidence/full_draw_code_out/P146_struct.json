@@ -1,0 +1,85 @@
+{
+  "case_id": "P146",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 = 0: the acquired core (mine complexes, mineral rights, fixed and mobile equipment, logistics assets, working capital, and assigned leases/contracts under APA Item 2.01) moved together with the operations that produce and deliver the coal — product and its operating processes crossed the boundary as a self-sustaining bundle, not a product severed from its process. gap_56 = 1: the operating assets/processes transferred to Contura, but employees did NOT transfer automatically (§9.02(a): only Buyer-elected \"Offered Employees\" who accepted became \"Transferred Employees\"; unselected employees and severance stayed seller-side), and no employee benefit/ERISA plans were assumed (§9.01(f)/§9.02(b)), so the people/culture layer did not align coherently alongside the transferred processes at closing. gap_mitigated = yes: the documents included a Transition Services Agreement dated as of the Closing Date between Buyer, Alpha and ReorgCo (definition; §2.09/§7.11), a closing-time arrangement allocating the shared substrate. Coded strictly from closing structure; new lender-formed entity Contura installs new controlling intent (T1 replace) via a §363 sale into a swapped legal vehicle (T3 swap)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction transferred specific self-sustaining mine complexes (T4/T5) together, so there is no gap_45. However, employees did not transfer automatically; the buyer had to select 'Offered Employees' and all benefit plans were left behind, creating a structural friction/gap at T6 (gap_56 = 1). This gap was mitigated by a Transition Services Agreement signed at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0 because the Stalking Horse APA transferred the designated mine-complex product assets together with the fixed/mobile equipment, logistics assets, mineral rights and assigned contracts that produce and deliver them, so T4 and T5 crossed as one Reserve Price Assets package. gap_56=1 because the same closing structure expressly provided that employees did not transfer automatically (Buyer only offered selected Business Employees; Sellers terminated them at closing; non-accepted employees and all severance stayed with NonCoreCo/ReorgCo) and that Buyer assumed no Seller employee benefit plans, which were transferred to ReorgCo before closing—leaving T5 assets/processes separated from T6 people/plans at the ownership boundary. That people/process mismatch was contractually absorbed at closing by the Transition Services Agreement delivered as a closing deliverable among Buyer, Alpha and ReorgCo."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 = 0: the acquired core (mine complexes, mineral rights, fixed and mobile equipment, logistics assets, working capital, and assigned leases/contracts under APA Item 2.01) moved together with the operations that produce and deliver the coal \\u2014 product and its operating processes crossed the boundary as a self-sustaining bundle, not a product severed from its process. gap_56 = 1: the operating assets/processes transferred to Contura, but employees did NOT transfer automatically (\\u00a79.02(a): only Buyer-elected \\\"Offered Employees\\\" who accepted became \\\"Transferred Employees\\\"; unselected employees and severance stayed seller-side), and no employee benefit/ERISA plans were assumed (\\u00a79.01(f)/\\u00a79.02(b)), so the people/culture layer did not align coherently alongside the transferred processes at closing. gap_mitigated = yes: the documents included a Transition Services Agreement dated as of the Closing Date between Buyer, Alpha and ReorgCo (definition; \\u00a72.09/\\u00a77.11), a closing-time arrangement allocating the shared substrate. Coded strictly from closing structure; new lender-formed entity Contura installs new controlling intent (T1 replace) via a \\u00a7363 sale into a swapped legal vehicle (T3 swap).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction transferred specific self-sustaining mine complexes (T4/T5) together, so there is no gap_45. However, employees did not transfer automatically; the buyer had to select 'Offered Employees' and all benefit plans were left behind, creating a structural friction/gap at T6 (gap_56 = 1). This gap was mitigated by a Transition Services Agreement signed at closing.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=0 because the Stalking Horse APA transferred the designated mine-complex product assets together with the fixed/mobile equipment, logistics assets, mineral rights and assigned contracts that produce and deliver them, so T4 and T5 crossed as one Reserve Price Assets package. gap_56=1 because the same closing structure expressly provided that employees did not transfer automatically (Buyer only offered selected Business Employees; Sellers terminated them at closing; non-accepted employees and all severance stayed with NonCoreCo/ReorgCo) and that Buyer assumed no Seller employee benefit plans, which were transferred to ReorgCo before closing—leaving T5 assets/processes separated from T6 people/plans at the ownership boundary. That people/process mismatch was contractually absorbed at closing by the Transition Services Agreement delivered as a closing deliverable among Buyer, Alpha and ReorgCo.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P220",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a merger of equals under a new holding company, with the legacy operating utilities preserved as distinct, ring-fenced subsidiaries (T4 and T5 remained 1-1). There is no documented structural mismatch between the product and process tiers, nor between the process and organization tiers at closing, as the utilities were kept separate and employees were retained."
+    },
+    "grok": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the customer-facing product (regulated retail electric utility service) remained inside the legacy operating utilities, which continued as distinct ring-fenced subsidiaries of the new HoldCo; separate-books-and-records and no-cross-liability conditions kept each utility’s delivery processes with its own product, so product and process crossed together (gap_45=0). Process standardization was disclosed only as a multi-year post-closing objective, not a closing transfer, while employee-level continuity was secured by no-involuntary-severance, CBA-honoring, and two-year compensation-parity commitments, so processes were neither re-engineered nor moved without their people at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Westar’s regulated retail utility service remained in the surviving Westar operating subsidiary and that each utility’s books, records, and risk exposures were ring-fenced, so the customer-facing product was not separated from its operating processes at closing. It also states that employees were protected from merger-related involuntary severance, collective bargaining agreements were honored, and new management was installed at closing; therefore, no closing-structure mismatch between processes and the organization running them is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a merger of equals under a new holding company, with the legacy operating utilities preserved as distinct, ring-fenced subsidiaries (T4 and T5 remained 1-1). There is no documented structural mismatch between the product and process tiers, nor between the process and organization tiers at closing, as the utilities were kept separate and employees were retained.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the customer-facing product (regulated retail electric utility service) remained inside the legacy operating utilities, which continued as distinct ring-fenced subsidiaries of the new HoldCo; separate-books-and-records and no-cross-liability conditions kept each utility’s delivery processes with its own product, so product and process crossed together (gap_45=0). Process standardization was disclosed only as a multi-year post-closing objective, not a closing transfer, while employee-level continuity was secured by no-involuntary-severance, CBA-honoring, and two-year compensation-parity commitments, so processes were neither re-engineered nor moved without their people at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Westar’s regulated retail utility service remained in the surviving Westar operating subsidiary and that each utility’s books, records, and risk exposures were ring-fenced, so the customer-facing product was not separated from its operating processes at closing. It also states that employees were protected from merger-related involuntary severance, collective bargaining agreements were honored, and new management was installed at closing; therefore, no closing-structure mismatch between processes and the organization running them is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

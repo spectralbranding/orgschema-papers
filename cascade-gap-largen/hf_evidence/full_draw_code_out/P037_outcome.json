@@ -1,0 +1,58 @@
+{
+  "case_id": "P037",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2019 swing to $52M net loss on 17% sales decline; assets retained, no goodwill/asset impairment",
+      "rationale": "p4=1: the slice documents realized disruption at the product/process interface — Fluoroproducts Adjusted EBITDA fell 26% attributed to start-up costs for the new Opteon refrigerants facility and \"unplanned outages at certain facilities,\" plus a $150M Fayetteville environmental-remediation charge in COGS, indicating operational/process friction against the product line over the window. p5=1: the slice documents fracture at the process/organization interface with the former parent — ongoing indemnification litigation, the company's own suit against DuPont, third-party allegations the separation was \"fraudulent,\" and shared-services/lease agreements with DuPont that \"may adversely impact our ability to make … strategic decisions regarding our manufacturing operations.\" t1 and t2 are uncertain because the slice provides no realized evidence about controlling-intent archetype or reconciliation of two value-capture business models."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2019 net loss $52M on 17% sales drop; assets retained (no impairment)",
+      "rationale": "p4 is coded 0 because the slice’s operational items (Fayetteville $150M remediation charge; Opteon start-up costs and unplanned facility outages; Titanium Technologies volume decline) are cost/volume events, not documented product-line/operating-process incoherence. p5 is coded 1 from the documented fracture with the former parent: Chemours’s indemnification lawsuit against DuPont, third-party suits alleging a fraudulent separation, and shared-services/lease arrangements that the company stated may adversely constrain manufacturing strategic decisions."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$52 million FY2019 net loss on a 17% decline in net sales'}",
+      "rationale": "{'type': 'string', 'enum': 'Start-up costs and unplanned facility outages were documented, but the slice does not establish that a product could not be aligned with operating processes over time, so p4 is coded 0. For p5, Chemours filed an indemnification lawsuit against DuPont, remained entangled in PFAS-related litigation and indemnities, and reported that shared-services and lease agreements with DuPont could restrict strategic manufacturing decisions, documenting a realized fracture between operations and the continuing organizational relationship.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2019 swing to $52M net loss on 17% sales decline; assets retained, no goodwill/asset impairment\", \"rationale\": \"p4=1: the slice documents realized disruption at the product/process interface \\u2014 Fluoroproducts Adjusted EBITDA fell 26% attributed to start-up costs for the new Opteon refrigerants facility and \\\"unplanned outages at certain facilities,\\\" plus a $150M Fayetteville environmental-remediation charge in COGS, indicating operational/process friction against the product line over the window. p5=1: the slice documents fracture at the process/organization interface with the former parent \\u2014 ongoing indemnification litigation, the company's own suit against DuPont, third-party allegations the separation was \\\"fraudulent,\\\" and shared-services/lease agreements with DuPont that \\\"may adversely impact our ability to make \\u2026 strategic decisions regarding our manufacturing operations.\\\" t1 and t2 are uncertain because the slice provides no realized evidence about controlling-intent archetype or reconciliation of two value-capture business models.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2019 net loss $52M on 17% sales drop; assets retained (no impairment)\",\n  \"rationale\": \"p4 is coded 0 because the slice’s operational items (Fayetteville $150M remediation charge; Opteon start-up costs and unplanned facility outages; Titanium Technologies volume decline) are cost/volume events, not documented product-line/operating-process incoherence. p5 is coded 1 from the documented fracture with the former parent: Chemours’s indemnification lawsuit against DuPont, third-party suits alleging a fraudulent separation, and shared-services/lease arrangements that the company stated may adversely constrain manufacturing strategic decisions.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$52 million FY2019 net loss on a 17% decline in net sales\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Start-up costs and unplanned facility outages were documented, but the slice does not establish that a product could not be aligned with operating processes over time, so p4 is coded 0. For p5, Chemours filed an indemnification lawsuit against DuPont, remained entangled in PFAS-related litigation and indemnities, and reported that shared-services and lease agreements with DuPont could restrict strategic manufacturing decisions, documenting a realized fracture between operations and the continuing organizational relationship.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "1",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

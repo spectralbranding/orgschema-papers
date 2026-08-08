@@ -1,0 +1,85 @@
+{
+  "case_id": "P122",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "CPA:17 had no employees and was externally managed by W. P. Carey prior to the merger. Therefore, the properties (T4) transferred to the entity that already housed the processes (T5) and organization (T6), resulting in no structural gaps."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing net-lease portfolio (411 properties / 116 tenants) crossed into W. P. Carey while the operating processes that ran it were already supplied pre-closing by W. P. Carey advisory subsidiaries; the slice states CPA:17 had no employees and no operations of its own, so product joined an already-aligned process owner rather than crossing without processes. gap_56=0 because neither a distinct T5 process bundle nor a T6 organization belonging to CPA:17 transferred at closing—the Advisory Agreements were simply terminated upon effectiveness and no standalone management substrate moved or was re-engineered apart from people/culture."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The property portfolio crossed into W. P. Carey, but its operating and management processes were already supplied by W. P. Carey subsidiaries before closing, so the product and process tiers were coherently aligned rather than structurally separated (SEC accession 0001390213-18-000007; SEC accession 0001104659-18-040564). CPA:17 had no employees, and the pre-existing advisory agreements were terminated at closing rather than a target-side process or organization being transferred or re-engineered without its operators (SEC accession 0001390213-18-000007; SEC accession 0001104659-18-065167)."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"CPA:17 had no employees and was externally managed by W. P. Carey prior to the merger. Therefore, the properties (T4) transferred to the entity that already housed the processes (T5) and organization (T6), resulting in no structural gaps.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing net-lease portfolio (411 properties / 116 tenants) crossed into W. P. Carey while the operating processes that ran it were already supplied pre-closing by W. P. Carey advisory subsidiaries; the slice states CPA:17 had no employees and no operations of its own, so product joined an already-aligned process owner rather than crossing without processes. gap_56=0 because neither a distinct T5 process bundle nor a T6 organization belonging to CPA:17 transferred at closing—the Advisory Agreements were simply terminated upon effectiveness and no standalone management substrate moved or was re-engineered apart from people/culture.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The property portfolio crossed into W. P. Carey, but its operating and management processes were already supplied by W. P. Carey subsidiaries before closing, so the product and process tiers were coherently aligned rather than structurally separated (SEC accession 0001390213-18-000007; SEC accession 0001104659-18-040564). CPA:17 had no employees, and the pre-existing advisory agreements were terminated at closing rather than a target-side process or organization being transferred or re-engineered without its operators (SEC accession 0001390213-18-000007; SEC accession 0001104659-18-065167).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

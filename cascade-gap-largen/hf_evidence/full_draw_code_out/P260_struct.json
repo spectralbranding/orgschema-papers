@@ -1,0 +1,85 @@
+{
+  "case_id": "P260",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The RemainCo (studios, cable/international TV, Hulu 30%, Sky 39%) crossed into Disney as a whole-entity merger (21CF surviving as a Disney subsidiary), while the news/sports/broadcast product lines were spun into New Fox; the product/asset split at closing was accompanied by a Transition Services Agreement supplying technology and operational services at cost for up to two years plus Commercial and Separation Agreements dividing shared contracts, so the customer-facing assets did not cross without aligned operational processes (gap_45=0). Equity awards, an Employee Matters Agreement and Retention RSU/cash programs split employees by post-closing employer with continued-service vesting, aligning people/organization with the processes that moved (gap_56=0). Because no structural product-vs-process or process-vs-organization gap is documented at closing, gap_mitigated is NA. T1 is coded replace because at the 21CF effective time pre-existing directors ceased and Disney merger-sub officers (Mayer, McCarthy, Braverman) became the acquired entity's directors/officers, installing new controlling intent over the acquired vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction involved a spin-off of certain assets (New Fox) and the acquisition of the remaining assets (RemainCo) by Disney. The evidence does not document a structural mismatch between the product (T4) and process (T5) layers, nor between the process (T5) and organization (T6) layers for the assets acquired by Disney. The assets, processes, and employees associated with RemainCo transferred together, while those associated with New Fox were spun off together."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because at closing the Twentieth Century Fox film/TV studio products and related cable/international assets crossed into Disney/RemainCo while New Fox retained the Fox studio lot (leased back) and “Fox” trademarks (licensed back on time-limited terms), and a Transition Services Agreement supplied shared technology/functions—explicit product-vs-process separation in the closing structure. gap_56=0 because employees and equity awards were partitioned by post-closing employer under the Employee Matters Agreement so organization moved with each side’s operations; the 21CF board/officer replacement by Disney designees is control substitution, not a processes-without-people mismatch. The Separation Agreement, TSA, commercial agreements, studio lease and IP licenses contractually absorbed the shared substrate at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The RemainCo (studios, cable/international TV, Hulu 30%, Sky 39%) crossed into Disney as a whole-entity merger (21CF surviving as a Disney subsidiary), while the news/sports/broadcast product lines were spun into New Fox; the product/asset split at closing was accompanied by a Transition Services Agreement supplying technology and operational services at cost for up to two years plus Commercial and Separation Agreements dividing shared contracts, so the customer-facing assets did not cross without aligned operational processes (gap_45=0). Equity awards, an Employee Matters Agreement and Retention RSU/cash programs split employees by post-closing employer with continued-service vesting, aligning people/organization with the processes that moved (gap_56=0). Because no structural product-vs-process or process-vs-organization gap is documented at closing, gap_mitigated is NA. T1 is coded replace because at the 21CF effective time pre-existing directors ceased and Disney merger-sub officers (Mayer, McCarthy, Braverman) became the acquired entity's directors/officers, installing new controlling intent over the acquired vehicle.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction involved a spin-off of certain assets (New Fox) and the acquisition of the remaining assets (RemainCo) by Disney. The evidence does not document a structural mismatch between the product (T4) and process (T5) layers, nor between the process (T5) and organization (T6) layers for the assets acquired by Disney. The assets, processes, and employees associated with RemainCo transferred together, while those associated with New Fox were spun off together.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because at closing the Twentieth Century Fox film/TV studio products and related cable/international assets crossed into Disney/RemainCo while New Fox retained the Fox studio lot (leased back) and “Fox” trademarks (licensed back on time-limited terms), and a Transition Services Agreement supplied shared technology/functions—explicit product-vs-process separation in the closing structure. gap_56=0 because employees and equity awards were partitioned by post-closing employer under the Employee Matters Agreement so organization moved with each side’s operations; the 21CF board/officer replacement by Disney designees is control substitution, not a processes-without-people mismatch. The Separation Agreement, TSA, commercial agreements, studio lease and IP licenses contractually absorbed the shared substrate at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P017",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "announced spin-off of Power Generation business",
+      "rationale": "The slice documents declining revenues, operating losses, and a planned spin-off of the Power Generation business. However, there is no documented evidence of specific product/process incoherence (p4) or process/organization fracture (p5) resulting from a prior transaction."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2014 op. loss $2.6M (vs $536M income); Power Gen spin-off announced",
+      "rationale": "The slice documents revenue decline, an operating-income swing to a small loss, mPower spending retrenchment, ongoing Global Competitiveness Initiative charges, and a Nov 2014 announcement to spin off Power Generation, but contains no evidence that an acquired product failed to align with operating processes over time (p4=0). Likewise it records no realized fracture between operations and people/management/culture from integration; workforce-turnover language is only a forward-looking spin-off risk, not a documented process/organization breakdown (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$539.0 million decline to a $2.6 million operating loss in 2014",
+      "rationale": "The slice documents declining segment revenues, restructuring, and retrenchment of the mPower program, but does not attribute these outcomes to an acquired product failing to align with operating processes; therefore p4 is 0. It also reports ongoing competitiveness initiatives and identifies workforce turnover and disruption only as risks of the planned spin-off, not as realized operations-versus-organization fractures, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"announced spin-off of Power Generation business\",\n  \"rationale\": \"The slice documents declining revenues, operating losses, and a planned spin-off of the Power Generation business. However, there is no documented evidence of specific product/process incoherence (p4) or process/organization fracture (p5) resulting from a prior transaction.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2014 op. loss $2.6M (vs $536M income); Power Gen spin-off announced\",\n  \"rationale\": \"The slice documents revenue decline, an operating-income swing to a small loss, mPower spending retrenchment, ongoing Global Competitiveness Initiative charges, and a Nov 2014 announcement to spin off Power Generation, but contains no evidence that an acquired product failed to align with operating processes over time (p4=0). Likewise it records no realized fracture between operations and people/management/culture from integration; workforce-turnover language is only a forward-looking spin-off risk, not a documented process/organization breakdown (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$539.0 million decline to a $2.6 million operating loss in 2014\",\n  \"rationale\": \"The slice documents declining segment revenues, restructuring, and retrenchment of the mPower program, but does not attribute these outcomes to an acquired product failing to align with operating processes; therefore p4 is 0. It also reports ongoing competitiveness initiatives and identifies workforce turnover and disruption only as risks of the planned spin-off, not as realized operations-versus-organization fractures, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

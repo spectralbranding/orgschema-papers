@@ -1,0 +1,85 @@
+{
+  "case_id": "P126",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The REIT acquired multiple properties and their existing tenant rosters (T4) without acquiring the sellers' operational processes (T5) or employees (T6). Instead, day-to-day property management was assigned to third-party service providers, creating structural gaps at closing with no documented transition-services agreements to mitigate them."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because each acquired property crossed with its pre-existing tenant roster (product/T4) while on-site management and leasing were not retained from any seller and were instead newly assigned to third-party providers under the registrant’s standing selection practice (T5 did not transfer alongside). gap_56=0 because no operational processes of an acquired business transferred or were re-engineered from a seller substrate at closing, and no acquired employees or management teams transferred either; the slice also states no transition-services or shared-services agreement bridged any acquisition."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The acquired properties and their existing tenant rosters crossed the ownership boundary, while on-site management and leasing were assigned at closing to third-party providers under the registrant’s standing provider-selection practice; this documents an operating handoff aligned with the transferred product rather than an unaddressed T4–T5 gap. Although no seller employees or management teams transferred, the disclosed model paired those operating processes with hired third-party property-management organizations, so no T5–T6 structural gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"swap\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The REIT acquired multiple properties and their existing tenant rosters (T4) without acquiring the sellers' operational processes (T5) or employees (T6). Instead, day-to-day property management was assigned to third-party service providers, creating structural gaps at closing with no documented transition-services agreements to mitigate them.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=1 because each acquired property crossed with its pre-existing tenant roster (product/T4) while on-site management and leasing were not retained from any seller and were instead newly assigned to third-party providers under the registrant’s standing selection practice (T5 did not transfer alongside). gap_56=0 because no operational processes of an acquired business transferred or were re-engineered from a seller substrate at closing, and no acquired employees or management teams transferred either; the slice also states no transition-services or shared-services agreement bridged any acquisition.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The acquired properties and their existing tenant rosters crossed the ownership boundary, while on-site management and leasing were assigned at closing to third-party providers under the registrant’s standing provider-selection practice; this documents an operating handoff aligned with the transferred product rather than an unaddressed T4–T5 gap. Although no seller employees or management teams transferred, the disclosed model paired those operating processes with hired third-party property-management organizations, so no T5–T6 structural gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "swap",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P202",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "partial",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing station/broadcasting asset (T4) crossed into an Entercom subsidiary, but its operational/back-office processes (T5) did not transfer — they were \"generally being performed under CBS's centralized systems,\" and integration was \"dependent on ongoing transition services from CBS,\" a documented product-vs-process mismatch at closing. gap_56=1: the operational processes remained on CBS's centralized systems (accessed, not owned) while the running organization/management was Entercom's pre-merger team continuing (David Field as CEO), so processes and the people/culture running them were not coherently transferred together at closing. Both gaps were contractually absorbed via the Transition Services Agreement and Joint Digital Services Agreement allocating the shared substrate (terminable on 60 days' notice), so gap_mitigated=yes. T1 coded continue because Entercom's pre-merger governance, board-control process and management were retained despite CBS holders receiving ~72% of shares."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states the customer-facing asset that crossed was CBS Radio's station portfolio and broadcasting business, while operational/back-office functions supporting that business were 'generally being performed under CBS's centralized systems' and integration was 'dependent on ongoing transition services from CBS'—a documented product-vs-process mismatch at closing. gap_56=0 because those non-transferred processes remained with CBS under the Transition Services Agreement and Joint Digital Services Agreement rather than moving without their operating organization; combined-company management was Entercom-led with employees 'of both Entercom and CBS Radio,' so no process-without-org structural gap is documented at closing. gap_mitigated=yes via the expressly agreed TSA/JDSA ancillary agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing CBS Radio station portfolio crossed into Entercom, subject to specified station divestitures and a divestiture trust, while supporting back-office functions remained dependent on CBS's centralized systems and ongoing transition services; this documents a product-process gap at closing. The Transition Services Agreement and Joint Digital Services Agreement contractually allocated that retained CBS substrate for defined post-closing periods, mitigating the gap. No separate process-organization gap is documented: the combined management team included officers and employees of both companies under Entercom leadership, while the processes remaining with CBS were coherently supported through the service agreements."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"partial\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing station/broadcasting asset (T4) crossed into an Entercom subsidiary, but its operational/back-office processes (T5) did not transfer \\u2014 they were \\\"generally being performed under CBS's centralized systems,\\\" and integration was \\\"dependent on ongoing transition services from CBS,\\\" a documented product-vs-process mismatch at closing. gap_56=1: the operational processes remained on CBS's centralized systems (accessed, not owned) while the running organization/management was Entercom's pre-merger team continuing (David Field as CEO), so processes and the people/culture running them were not coherently transferred together at closing. Both gaps were contractually absorbed via the Transition Services Agreement and Joint Digital Services Agreement allocating the shared substrate (terminable on 60 days' notice), so gap_mitigated=yes. T1 coded continue because Entercom's pre-merger governance, board-control process and management were retained despite CBS holders receiving ~72% of shares.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states the customer-facing asset that crossed was CBS Radio's station portfolio and broadcasting business, while operational/back-office functions supporting that business were 'generally being performed under CBS's centralized systems' and integration was 'dependent on ongoing transition services from CBS'—a documented product-vs-process mismatch at closing. gap_56=0 because those non-transferred processes remained with CBS under the Transition Services Agreement and Joint Digital Services Agreement rather than moving without their operating organization; combined-company management was Entercom-led with employees 'of both Entercom and CBS Radio,' so no process-without-org structural gap is documented at closing. gap_mitigated=yes via the expressly agreed TSA/JDSA ancillary agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing CBS Radio station portfolio crossed into Entercom, subject to specified station divestitures and a divestiture trust, while supporting back-office functions remained dependent on CBS's centralized systems and ongoing transition services; this documents a product-process gap at closing. The Transition Services Agreement and Joint Digital Services Agreement contractually allocated that retained CBS substrate for defined post-closing periods, mitigating the gap. No separate process-organization gap is documented: the combined management team included officers and employees of both companies under Entercom leadership, while the processes remaining with CBS were coherently supported through the service agreements.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

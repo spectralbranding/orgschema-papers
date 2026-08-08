@@ -1,0 +1,85 @@
+{
+  "case_id": "P327",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: Nationstar's Mr. Cooper mortgage-servicing/origination product, brand and customer base transferred \"intact into the surviving subsidiary\" together with Nationstar's own operating processes and management, since the combined company would \"be managed by current members of Nationstar's management team\" — product and its processes moved together within the same surviving entity, so no product-vs-process mismatch. gap_56=0: T5 processes and T6 people moved together — Nationstar's operating processes stayed intact in the surviving subsidiary and its own CEO (Jay Bray) was reappointed; WMIH's separate four-employee run-off operation is described as \"continuing in parallel rather than being integrated,\" meaning no process was transferred away from its operating organization. The slice discloses no transition-services agreement, but because no structural gap is coded, mitigation is NA. T1 coded imprint-share as the post-closing board mixes three incumbent WMIH directors with three Nationstar directors plus Nationstar's CEO; T3 coded swap because the public reporting vehicle became WMIH's pre-existing Delaware shell while Nationstar's charter was amended and continued as a subsidiary."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that Nationstar's customer-facing product and brand (Mr. Cooper) transferred intact into the surviving subsidiary. Its operating processes and management/organization also transferred intact, with its CEO continuing to lead the business, indicating no structural mismatch between T4, T5, and T6 at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Nationstar's mortgage-servicing and origination business, Mr. Cooper brand, and customer base transferred intact, while Nationstar's operating processes remained with that business; WMIH's separate reinsurance run-off continued in parallel, so no product-process mismatch at closing is documented. Nationstar's current management team was designated to manage the combined company, and its CEO was reappointed, although its pre-merger directors resigned and governance was reconstituted; thus the processes retained aligned management despite partial organizational change. The absence of a transition-services agreement does not itself create a gap because the slice describes no shared or severed operating substrate requiring one."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: Nationstar's Mr. Cooper mortgage-servicing/origination product, brand and customer base transferred \\\"intact into the surviving subsidiary\\\" together with Nationstar's own operating processes and management, since the combined company would \\\"be managed by current members of Nationstar's management team\\\" \\u2014 product and its processes moved together within the same surviving entity, so no product-vs-process mismatch. gap_56=0: T5 processes and T6 people moved together \\u2014 Nationstar's operating processes stayed intact in the surviving subsidiary and its own CEO (Jay Bray) was reappointed; WMIH's separate four-employee run-off operation is described as \\\"continuing in parallel rather than being integrated,\\\" meaning no process was transferred away from its operating organization. The slice discloses no transition-services agreement, but because no structural gap is coded, mitigation is NA. T1 coded imprint-share as the post-closing board mixes three incumbent WMIH directors with three Nationstar directors plus Nationstar's CEO; T3 coded swap because the public reporting vehicle became WMIH's pre-existing Delaware shell while Nationstar's charter was amended and continued as a subsidiary.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice documents that Nationstar's customer-facing product and brand (Mr. Cooper) transferred intact into the surviving subsidiary. Its operating processes and management/organization also transferred intact, with its CEO continuing to lead the business, indicating no structural mismatch between T4, T5, and T6 at closing.\"",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Nationstar's mortgage-servicing and origination business, Mr. Cooper brand, and customer base transferred intact, while Nationstar's operating processes remained with that business; WMIH's separate reinsurance run-off continued in parallel, so no product-process mismatch at closing is documented. Nationstar's current management team was designated to manage the combined company, and its CEO was reappointed, although its pre-merger directors resigned and governance was reconstituted; thus the processes retained aligned management despite partial organizational change. The absence of a transition-services agreement does not itself create a gap because the slice describes no shared or severed operating substrate requiring one.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

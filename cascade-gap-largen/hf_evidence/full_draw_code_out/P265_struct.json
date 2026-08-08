@@ -1,0 +1,85 @@
+{
+  "case_id": "P265",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: at closing the customer-facing product (deposit/lending business through the branch network) and its underlying operating systems were structured to continue unchanged together — \"customers ... will not notice any immediate changes\" and system conversion was deferred, so product and process moved coherently at closing rather than being split (T4 subset only because two Mena branches were divested pre-close). gap_56=1: the operating processes/branches were absorbed directly into Arvest while the organization/people layer did not transfer coherently — every executive officer and board member ceased to hold office at closing, 401(k)/benefit plans were required to terminate, and only \"certain members of senior management may continue,\" so the running-organization did not align with the transferred processes. gap_mitigated=no: the slice expressly states no transition-services, shared-services, or supply agreement bridging a shared operating substrate was identified; workforce continuity was handled only via individual change-in-control/retention and non-solicit covenants."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The customer-facing brand and underlying operating systems were explicitly structured to continue unchanged at closing, with conversion deferred, meaning no gap between product and process (gap_45 = 0). However, the top governance layer and executive officers were terminated at closing without a company-wide transition-services bridge, creating a structural mismatch between the continuing systems and the disrupted organizational layer (gap_56 = 1)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice states that Bear State Bank's deposit/lending business and branches were acquired while its customer-facing product and underlying operating systems were structured to continue unchanged at legal closing, so product and process moved together despite deferred conversion. By contrast, all Bear State executive officers and board members ceased office, broader personnel continuity was not guaranteed, and designated benefit plans could be terminated even though the operating systems continued, documenting a process-organization mismatch at closing. No transition-services, shared-services, or supply agreement bridging that mismatch was identified."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: at closing the customer-facing product (deposit/lending business through the branch network) and its underlying operating systems were structured to continue unchanged together \\u2014 \\\"customers ... will not notice any immediate changes\\\" and system conversion was deferred, so product and process moved coherently at closing rather than being split (T4 subset only because two Mena branches were divested pre-close). gap_56=1: the operating processes/branches were absorbed directly into Arvest while the organization/people layer did not transfer coherently \\u2014 every executive officer and board member ceased to hold office at closing, 401(k)/benefit plans were required to terminate, and only \\\"certain members of senior management may continue,\\\" so the running-organization did not align with the transferred processes. gap_mitigated=no: the slice expressly states no transition-services, shared-services, or supply agreement bridging a shared operating substrate was identified; workforce continuity was handled only via individual change-in-control/retention and non-solicit covenants.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The customer-facing brand and underlying operating systems were explicitly structured to continue unchanged at closing, with conversion deferred, meaning no gap between product and process (gap_45 = 0). However, the top governance layer and executive officers were terminated at closing without a company-wide transition-services bridge, creating a structural mismatch between the continuing systems and the disrupted organizational layer (gap_56 = 1).\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The slice states that Bear State Bank's deposit/lending business and branches were acquired while its customer-facing product and underlying operating systems were structured to continue unchanged at legal closing, so product and process moved together despite deferred conversion. By contrast, all Bear State executive officers and board members ceased office, broader personnel continuity was not guaranteed, and designated benefit plans could be terminated even though the operating systems continued, documenting a process-organization mismatch at closing. No transition-services, shared-services, or supply agreement bridging that mismatch was identified.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

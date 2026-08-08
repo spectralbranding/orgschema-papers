@@ -1,0 +1,85 @@
+{
+  "case_id": "P012",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "This is a spin-off splitting one parent into two independent public companies, so intent and each tier are coded as 1-N (T1 as owner-intent split; note \"1-N\" is the applicable division label mapped from the T2-T6 set for the intent field). gap_45=1: the equipment-rental customer-facing operation (T4) was allocated to HERC Holdings, but certain shared corporate functions and IT systems that produce/deliver operations (T5) remained with New Hertz and did not transfer whole — a documented product-vs-process mismatch, with HERC \"reliant upon New Hertz for continued service with several information technology systems.\" gap_mitigated=yes: this shared substrate was contractually bridged at closing via a transition services agreement (plus separation, tax, employee, IP and real estate lease agreements). gap_56=0: the equipment-rental business established its own organization/people at closing (~4,600 employees, labor contracts covering ~410 employees) coherently alongside its operations per the employee matters agreement, so no T5-without-T6 mismatch is documented."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing, customer-facing car-rental and equipment-rental products were allocated to New Hertz and HERC Holdings respectively, yet several information-technology systems and important corporate functions that support the equipment-rental product remained with New Hertz and were only bridged by a transition services agreement, documenting a T4-vs-T5 structural mismatch (gap_45=1) contractually absorbed by that TSA (gap_mitigated=yes). Branch-level equipment operations and their ~4,600 employees/labor contracts were allocated together to HERC under the employee-matters agreement, so no process-without-organization gap is documented at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing car-rental and equipment-rental operations were allocated to separate companies, but certain important corporate functions and information-technology systems remained with New Hertz rather than transferring whole with the equipment-rental product, establishing a closing-time T4–T5 mismatch. That mismatch was contractually bridged through the transition services agreement. The equipment-rental company was expected to employ approximately 4,600 employees and operate its branches and service facilities, while the retained functions continued to be provided by New Hertz, so no separate process-without-organization mismatch is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"1-N\", \"sigma_T2\": \"1-N\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"1-N\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-N\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"This is a spin-off splitting one parent into two independent public companies, so intent and each tier are coded as 1-N (T1 as owner-intent split; note \\\"1-N\\\" is the applicable division label mapped from the T2-T6 set for the intent field). gap_45=1: the equipment-rental customer-facing operation (T4) was allocated to HERC Holdings, but certain shared corporate functions and IT systems that produce/deliver operations (T5) remained with New Hertz and did not transfer whole \\u2014 a documented product-vs-process mismatch, with HERC \\\"reliant upon New Hertz for continued service with several information technology systems.\\\" gap_mitigated=yes: this shared substrate was contractually bridged at closing via a transition services agreement (plus separation, tax, employee, IP and real estate lease agreements). gap_56=0: the equipment-rental business established its own organization/people at closing (~4,600 employees, labor contracts covering ~410 employees) coherently alongside its operations per the employee matters agreement, so no T5-without-T6 mismatch is documented.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing, customer-facing car-rental and equipment-rental products were allocated to New Hertz and HERC Holdings respectively, yet several information-technology systems and important corporate functions that support the equipment-rental product remained with New Hertz and were only bridged by a transition services agreement, documenting a T4-vs-T5 structural mismatch (gap_45=1) contractually absorbed by that TSA (gap_mitigated=yes). Branch-level equipment operations and their ~4,600 employees/labor contracts were allocated together to HERC under the employee-matters agreement, so no process-without-organization gap is documented at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing car-rental and equipment-rental operations were allocated to separate companies, but certain important corporate functions and information-technology systems remained with New Hertz rather than transferring whole with the equipment-rental product, establishing a closing-time T4–T5 mismatch. That mismatch was contractually bridged through the transition services agreement. The equipment-rental company was expected to employ approximately 4,600 employees and operate its branches and service facilities, while the retained functions continued to be provided by New Hertz, so no separate process-without-organization mismatch is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "uncertain",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-N",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

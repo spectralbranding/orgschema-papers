@@ -1,0 +1,58 @@
+{
+  "case_id": "P336",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment recorded",
+      "rationale": "The provided slice documents Lennar's consolidated financial growth and notes that no goodwill impairment was recorded in FY2021 or FY2022. There is no documented evidence of product/process misalignment (p4_pathway) or process/organization fracture (p5_pathway) occurring after the deal."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; revenues to $33.7bn FY2022",
+      "rationale": "The FY2021 and FY2022 10-Ks document rising consolidated revenues ($27.1bn to $33.7bn) and net earnings with no goodwill impairment on a reporting-unit basis, and organize homebuilding only by geography rather than acquired-company origin, with no product-line or operations incoherence attributed to the CalAtlantic business. One former CalAtlantic NEO continued in progressively senior Lennar roles through the window, and the filings contain no documented operations-vs-organization fracture, controlling-intent incoherence, or business-model incompatibility."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 revenue reached $33.67 billion and net earnings reached $4.61 billion, with no goodwill impairment in FY2021 or FY2022",
+      "rationale": "No realized product/process disruption is documented: operations were reported through geographic segments without any CalAtlantic-specific product line or operating failure, while consolidated revenue and earnings increased through FY2022. No process/organization fracture is documented: a former CalAtlantic executive continued into progressively senior Lennar roles through the outcome window, and the filings report no operational or organizational integration breakdown."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment recorded\",\n  \"rationale\": \"The provided slice documents Lennar's consolidated financial growth and notes that no goodwill impairment was recorded in FY2021 or FY2022. There is no documented evidence of product/process misalignment (p4_pathway) or process/organization fracture (p5_pathway) occurring after the deal.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment; revenues to $33.7bn FY2022\",\n  \"rationale\": \"The FY2021 and FY2022 10-Ks document rising consolidated revenues ($27.1bn to $33.7bn) and net earnings with no goodwill impairment on a reporting-unit basis, and organize homebuilding only by geography rather than acquired-company origin, with no product-line or operations incoherence attributed to the CalAtlantic business. One former CalAtlantic NEO continued in progressively senior Lennar roles through the window, and the filings contain no documented operations-vs-organization fracture, controlling-intent incoherence, or business-model incompatibility.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 revenue reached $33.67 billion and net earnings reached $4.61 billion, with no goodwill impairment in FY2021 or FY2022\",\n  \"rationale\": \"No realized product/process disruption is documented: operations were reported through geographic segments without any CalAtlantic-specific product line or operating failure, while consolidated revenue and earnings increased through FY2022. No process/organization fracture is documented: a former CalAtlantic executive continued into progressively senior Lennar roles through the outcome window, and the filings report no operational or organizational integration breakdown.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

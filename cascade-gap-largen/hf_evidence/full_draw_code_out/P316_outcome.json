@@ -1,0 +1,58 @@
+{
+  "case_id": "P316",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net earnings swung to +$35,478K in FY2021 from -$37,989K prior year; no divestiture or dissolution documented",
+      "rationale": "The FY2021 record shows continuity of all pre-transaction operating businesses (restaurant, insurance, oil and gas, brand licensing) under the successor parent with a return to net earnings, and no product/process misalignment is described—the only operating change is a franchise-partner conversion program and closure of 42 of 199 company-operated restaurants attributed to pandemic dining-room closures, not to product/process incoherence (p4=0). No process/organization fracture (operations vs. people/management/culture) is documented; leadership continued under Sardar Biglari and no integration breakdown is referenced (p5=0). No shared-substrate or transitional-services disruption is noted, and no incompatibility of business models or archetype incoherence is described in the reviewed filing."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained; FY2021 net earnings $35.5M",
+      "rationale": "The FY2021 10-K record shows continuity of the pre-transaction operating businesses (restaurant, insurance, oil and gas, brand licensing) under the successor parent, with no documented product/process alignment failure or inability to run acquired products through operating processes; restaurant unit closures are attributed to pandemic dining-room effects, not deal-related product-process incoherence. No fracture at the process/organization interface is documented: leadership continuity (Biglari as Chairman/CEO), ongoing franchise-partner conversion, and absence of any disclosed integration-versus-organization disruption or residual transitional-services problems support p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$35.478 million net earnings in fiscal 2021",
+      "rationale": "No product/process-interface disruption is documented; the surviving operating businesses continued, and no divestiture, dissolution, or wind-down was reported. No process/organization fracture is documented either: leadership continued under the successor public parent, and the filing identified no shared-services arrangement causing disruption. The 42 restaurant closures were associated with an ongoing refranchising program, while elevated 2020 impairments were attributed primarily to pandemic-related dining-room closures and uncertainty, not to either integration pathway."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net earnings swung to +$35,478K in FY2021 from -$37,989K prior year; no divestiture or dissolution documented\", \"rationale\": \"The FY2021 record shows continuity of all pre-transaction operating businesses (restaurant, insurance, oil and gas, brand licensing) under the successor parent with a return to net earnings, and no product/process misalignment is described\\u2014the only operating change is a franchise-partner conversion program and closure of 42 of 199 company-operated restaurants attributed to pandemic dining-room closures, not to product/process incoherence (p4=0). No process/organization fracture (operations vs. people/management/culture) is documented; leadership continued under Sardar Biglari and no integration breakdown is referenced (p5=0). No shared-substrate or transitional-services disruption is noted, and no incompatibility of business models or archetype incoherence is described in the reviewed filing.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained; FY2021 net earnings $35.5M\",\n  \"rationale\": \"The FY2021 10-K record shows continuity of the pre-transaction operating businesses (restaurant, insurance, oil and gas, brand licensing) under the successor parent, with no documented product/process alignment failure or inability to run acquired products through operating processes; restaurant unit closures are attributed to pandemic dining-room effects, not deal-related product-process incoherence. No fracture at the process/organization interface is documented: leadership continuity (Biglari as Chairman/CEO), ongoing franchise-partner conversion, and absence of any disclosed integration-versus-organization disruption or residual transitional-services problems support p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$35.478 million net earnings in fiscal 2021\",\n  \"rationale\": \"No product/process-interface disruption is documented; the surviving operating businesses continued, and no divestiture, dissolution, or wind-down was reported. No process/organization fracture is documented either: leadership continued under the successor public parent, and the filing identified no shared-services arrangement causing disruption. The 42 restaurant closures were associated with an ongoing refranchising program, while elevated 2020 impairments were attributed primarily to pandemic-related dining-room closures and uncertainty, not to either integration pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

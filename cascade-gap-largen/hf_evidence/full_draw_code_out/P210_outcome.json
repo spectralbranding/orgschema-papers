@@ -1,0 +1,58 @@
+{
+  "case_id": "P210",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "The acquirer's FY2022 Form 10-K shows that all 12 acquired gaming properties continued to operate roughly four years after closing, integrated into the acquirer's regional reporting segments. There is no documented evidence of product/process disruption or process/organization fracture, nor any divestitures or impairments related to the acquired properties."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; all 12 properties retained ~4 yrs",
+      "rationale": "The FY2022 10-K lists all 12 former-Pinnacle properties as still operating and folded into Penn's Northeast/South/West/Midwest segments, with no documented divestiture, closure, or Pinnacle-attributable impairment. Nothing in the slice records product/process misalignment or operations-vs-organization fracture over the 3-5-year horizon; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"The acquirer's FY2022 Form 10-K shows that all 12 acquired gaming properties continued to operate roughly four years after closing, integrated into the acquirer's regional reporting segments. There is no documented evidence of product/process disruption or process/organization fracture, nor any divestitures or impairments related to the acquired properties.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; all 12 properties retained ~4 yrs\",\n  \"rationale\": \"The FY2022 10-K lists all 12 former-Pinnacle properties as still operating and folded into Penn's Northeast/South/West/Midwest segments, with no documented divestiture, closure, or Pinnacle-attributable impairment. Nothing in the slice records product/process misalignment or operations-vs-organization fracture over the 3-5-year horizon; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

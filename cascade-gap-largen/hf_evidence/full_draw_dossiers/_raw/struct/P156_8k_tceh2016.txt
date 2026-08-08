@@ -1,0 +1,726 @@
+ 
+ 8-K
+ 1
+ d176523d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ Form 8-K
+ 
+ Current Report Pursuant
+to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (date of earliest event reported) &#150; October 3, 2016 
+ 
+ Energy Future Holdings Corp. 
+ (Exact name of registrant as specified in its charter) 
+
+ Texas 
+ 
+ 1-12833 
+ 
+ 46-2488810 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (I.R.S. Employer 
+ Identification No.) 
+ 
+ Energy Future Intermediate Holding Company LLC 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 1-34544 
+ 
+ 26-1191638 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (I.R.S. Employer 
+ Identification No.) 
+ 
+ Energy Future Competitive Holdings Company LLC 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 1-34543 
+ 
+ 75-1837355 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (I.R.S. Employer 
+ Identification No.) 
+ 
+ Energy Plaza, 1601 Bryan Street, Dallas, Texas 75201 
+ (Address of principal executive offices, including zip code) 
+ 214-812-4600 
+ (Registrants&#146; telephone number, including Area Code) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrants under any of the
+following provisions (see General Instruction A.2. below): 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Background Information 
+ On April 29, 2014, Energy Future Holdings Corp. (&#147; EFH Corp. &#148;) and the substantial majority of its direct and indirect
+subsidiaries, including Energy Future Intermediate Holding Company LLC (&#147; EFIH &#148;), Energy Future Competitive Holdings Company LLC (&#147; EFCH &#148;) and Texas Competitive Electric Holdings Company LLC (&#147; TCEH &#148;),
+but excluding Oncor Electric Delivery Holdings Company LLC and its direct and indirect subsidiaries, filed voluntary petitions for relief (the &#147; Bankruptcy Filing &#148;) under Chapter 11 of the United States Bankruptcy Code (the
+&#147; Bankruptcy Code &#148;) in the United States Bankruptcy Court for the District of Delaware (the &#147; Bankruptcy Court &#148;). The cases pending in the Bankruptcy Court concerning the Bankruptcy Filing are referred to in this
+Current Report on Form 8-K as the &#147; Chapter 11 Cases .&#148; During the pendency of the Chapter 11 Cases, EFH Corp. and its direct and indirect subsidiaries included in the Bankruptcy Filing (collectively, the
+&#147; Debtors &#148;) have operated their businesses as debtors-in-possession under the jurisdiction of the Bankruptcy Court and in accordance with the applicable provisions of the Bankruptcy Code. 
+ On August 29, 2016, the Bankruptcy Court entered an order (the &#147; Confirmation Order &#148;) confirming the Debtors&#146; Third
+Amended Joint Plan of Reorganization Pursuant to Chapter 11 of the Bankruptcy Code (the &#147; Plan &#148;) solely as it pertains to EFCH, TCEH and the subsidiaries of TCEH that are Debtors (the &#147; TCEH Debtors &#148;) and the EFH
+Shared Services Debtors (as defined in the Plan) (the TCEH Debtors together with the EFH Shared Services Debtors, the &#147; T-Side Debtors &#148;). 
+ The Plan provides that the confirmation and effective date of the plan of reorganization with respect to the T-Side Debtors is to occur
+separate from, and independent of, the confirmation and effective date of the plan of reorganization with respect to EFH Corp., EFIH and their subsidiaries that are Debtors, excluding the T-Side Debtors (the &#147; EFH Debtors &#148;). The EFH
+Debtors will emerge from the Chapter 11 Cases if, and when, a plan of reorganization with respect to the EFH Debtors receives the requisite approval from holders of claims against, or interests in, the EFH Debtors, the Bankruptcy Court enters an
+order confirming such plan of reorganization, and the conditions to the effectiveness of such plan of reorganization, as stated therein, are satisfied. 
+ On October 3, 2016 (the &#147; Effective Date &#148;), the Plan with respect to the T-Side Debtors became effective and the T-Side
+Debtors consummated their reorganization under the Bankruptcy Code and emerged from the Chapter 11 Cases. Capitalized terms used but not
+defined in this Current Report on Form 8-K have the meanings set forth in the Plan. The Plan, all documents included in the Plan Supplement, and the Confirmation Order are available free of charge at www.efhcaseinfo.com. Information on or connected
+to this website does not constitute part of this Current Report on Form 8-K. On the Effective Date and pursuant to the Plan, the T-Side
+Debtors executed the following transactions as part of a tax-free spin-off from EFH Corp: 
+
+ &#149; 
+ 
+ pursuant to the Plan and the Separation Agreement (the &#147; Separation Agreement &#148;), (a) TCEH contributed all of its interests in its subsidiaries, (b) each of TCEH, EFH Corp. and EFCH contributed certain
+assets and liabilities related to the TCEH Debtors&#146; operations, and (c) EFH Corp. transferred sponsorship of certain employee benefit plans (including related assets), programs and policies, to TEX Energy LLC, a recently formed limited
+liability company (&#147; TEX Energy LLC &#148;), and assigned certain employment agreements to OpCo (as defined below), which agreements were terminated (such transactions collectively, the &#147; Contribution &#148;), in exchange for
+which TCEH received 100% of the TEX Energy LLC membership interests; 
+
+ &#149; 
+ 
+ immediately following the completion of the Contribution, TEX Energy LLC contributed certain of the TCEH Assets to TEX Intermediate Company LLC (&#147; IntermediateCo &#148;), a wholly owned direct subsidiary of
+TEX Energy LLC, which in turn contributed certain of the TCEH Assets to TEX Operations Company, LLC (&#147; OpCo &#148;), a wholly owned direct subsidiary of IntermediateCo, which in turn contributed certain of the TCEH Assets to TEX Asset
+Company LLC (&#147; AssetCo &#148;), a wholly owned direct subsidiary of OpCo (the &#147; AssetCo Contribution &#148;); 
+ 2 
+
+ &#149; 
+ 
+ immediately following the AssetCo Contribution, TEX Preferred LLC (&#147; PrefCo &#148;), a wholly owned direct subsidiary of AssetCo, converted from a Delaware limited liability company into a Delaware corporation
+(the &#147; PrefCo Conversion &#148;); 
+
+ &#149; 
+ 
+ immediately following the PrefCo Conversion, AssetCo contributed certain of the TCEH Assets to PrefCo (the &#147; PrefCo Contribution &#148;) in exchange for all of PrefCo&#146;s authorized (i) preferred stock,
+consisting of 70,000 shares, par value $0.01 per share (the &#147; PrefCo Preferred Stock &#148;), and (ii) common stock, consisting of 10,000,000 shares, par value $0.01 per share, and immediately thereafter, and pursuant to the Preferred
+Stock Purchase Agreement, dated as of September 26, 2016 (the &#147; PrefCo Preferred Stock Purchase Agreement &#148;), by and among AssetCo and the investors listed therein (the &#147; Purchasers &#148;), AssetCo sold all of the PrefCo
+Preferred Stock to the Purchasers in exchange for cash and distributed the cash proceeds from such sale to TCEH to fund recoveries under the Plan (the &#147; PrefCo Preferred Stock Sale &#148;); 
+
+ &#149; 
+ 
+ immediately following the PrefCo Preferred Stock Sale, TEX Energy LLC converted (the &#147; Conversion &#148;) from a Delaware limited liability company into a Delaware corporation and changed its name to TCEH
+Corp. (as converted, &#147; TCEH Corp. &#148;); and 
+
+ &#149; 
+ 
+ immediately following the Conversion, TCEH (i) distributed (A) (1) 427,500,000 shares of TCEH Corp. Common Stock (as defined below), and (2) approximately $370,000,000 of cash, which includes the net cash proceeds from
+the PrefCo Preferred Stock Sale, in each case to the former first lien creditors of TCEH in exchange for the cancellation of their allowed claims against TCEH, and (B) the right to receive recoveries under the unsecured claim of TCEH against
+EFH Corp. allowed in the amount of $700 million (the &#147; TCEH Settlement Claim &#148;), provided, that following the Effective Date, TCEH Corp. will nominally hold the right to receive recoveries under the TCEH Settlement Claim but the
+former first lien creditors of TCEH (and their assigns) will hold all legal and equitable entitlement to receive recoveries under the TCEH Settlement Claim, and (ii) deposited the TRA Rights (as defined below) into an escrow account for subsequent
+distribution to eligible first lien creditors of TCEH (the foregoing transactions collectively, the &#147; Distribution ,&#148; and collectively with the Contribution, the Conversion and the PrefCo Preferred Stock Sale, the
+&#147; Spin-Off &#148;). 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. Separation Agreement 
+ On the Effective Date and prior to the Contribution, Conversion and Distribution, EFH Corp., TEX Energy LLC and OpCo entered into the
+Separation Agreement. Pursuant to the Plan and the Separation Agreement, among other things, the Contribution occurred in exchange for which TCEH received 100% of the TEX Energy LLC membership interests. 
+ The foregoing description of the Separation Agreement does not purport to be complete and is qualified in its entirety by reference to the
+full text of the Separation Agreement, which is attached as Exhibit 10.1 to this Current Report on Form 8-K and incorporated herein by reference. Tax
+Matters Agreement On the Effective Date and prior to the Conversion, TEX Energy LLC, EFH Corp., EFIH, EFIH Finance Inc., and EFH
+Merger Co. LLC entered into a Tax Matters Agreement (the &#147; Tax Matters Agreement &#148;) whereby the parties agreed to take certain actions and refrain from taking certain actions to preserve the intended tax treatment of the
+Spin-Off. Pursuant to the Tax Matters Agreement, among other things: 
+
+ &#149; 
+ 
+ responsibility for taxes for periods prior to the Spin-Off is allocated between EFH Corp. and TCEH Corp. For periods prior to the Spin-Off, (i) TCEH Corp. is generally required to reimburse EFH Corp. with
+respect to any taxes paid by EFH Corp. that are attributable to TCEH Corp. and (ii) EFH Corp. is generally required to reimburse TCEH Corp. with respect to any taxes paid by TCEH Corp. that are attributable to EFH Corp.; 
+ 3 
+
+ &#149; 
+ 
+ TCEH Corp. is required to indemnify EFH Corp. against taxes, under certain circumstances, if the Internal Revenue Service or another taxing authority successfully challenges the amount of gain relating to the PrefCo
+Preferred Stock Sale; 
+
+ &#149; 
+ 
+ subject to certain exceptions, TCEH Corp. is prohibited from taking actions that could reasonably be expected to undermine the intended tax treatment of the Spin-Off or to jeopardize the conclusions of the private
+letter ruling obtained from the Internal Revenue Service or opinions of counsel received by TCEH or EFH Corp., in each case in connection with the Spin-Off. These restrictions apply for two years after the Spin-Off. 
+ The foregoing description of the Tax Matters Agreement does not purport to be complete and is qualified in its entirety by reference to the
+full text of the Tax Matters Agreement, which is attached as Exhibit 10.2 to this Current Report on Form 8-K and incorporated herein by reference. 
+ Split Participant Agreement On the
+Effective Date pursuant to the Plan and following the effectiveness of the Separation Agreement, OpCo and Oncor Electric Delivery Company LLC (&#147; Oncor &#148;) entered into an Amended and Restated Split Participant Agreement (the
+&#147; Split Participant Agreement &#148;). Pursuant to the Split Participant Agreement, among other things, Oncor agrees to provide certain post-retirement welfare and life insurance benefits, and OpCo agrees to provide certain pension
+benefits (as identified on Schedules I, II and III, as applicable, to the Split Participant Agreement) to certain current and future retirees of EFH Corp., OpCo and Oncor (or one of their direct or indirect subsidiaries) whose employment included
+service that has been allocated to both (i) Oncor (or one of its predecessor regulated electric transmission and distribution utility businesses) and (ii) EFH Corp. (or one of its direct or indirect subsidiaries that is not a regulated electric
+transmission and distribution utility). The foregoing description of the Split Participant Agreement does not purport to be complete and
+is qualified in its entirety by reference to the full text of the Split Participant Agreement, which is attached as Exhibit 10.3 to this Current Report on Form 8-K and incorporated herein by reference. 
+ Transition Services Agreement On the
+Effective Date and pursuant to the Plan, EFH Corp. and OpCo entered into a Transition Services Agreement (the &#147; Transition Services Agreement &#148;). Pursuant to the Transition Services Agreement, among other things: 
+
+ &#149; 
+ 
+ OpCo will provide certain services to the EFH Debtors, including business services administration, accounting, corporate secretary, tax, human resources, information technology, internal audit and SOX compliance,
+physical facilities and corporate security, treasury and legal services (collectively, &#147; Transition Services &#148;); and 
+
+ &#149; 
+ 
+ EFH Corp. will pay to OpCo all reasonable and documented fees, costs and expenses (including employee-related overhead and general and administrative expenses) incurred by OpCo related directly to the Transition
+Services. OpCo will provide the Transition Services until the earlier of (i) December 31, 2017 or (ii) the closing date of
+the sale, merger or other similar transaction by which the EFH Debtors effectuate their reorganization and emergence from the Chapter 11 Cases. 
+ The foregoing description of the Transition Services Agreement does not purport to be complete and is qualified in its entirety by reference
+to the full text of the Transition Services Agreement, which is attached as Exhibit 10.4 to this Current Report on Form 8-K and incorporated herein by reference. 
+ 4 
+
+ Item 1.02 Termination of A Material Definitive Agreement. 
+ In accordance with the Plan, on the Effective Date the agreements and instruments governing the TCEH First Lien Secured Claims, the TCEH
+Unsecured Debt Claims, and the General Unsecured Claims Against EFCH were terminated and the respective obligations thereunder were cancelled. 
+
+ Item 3.02 
+ Unregistered Sales of Equity Securities. On the Effective Date (or as soon as
+practicable thereafter) and pursuant to the Plan, TCEH Corp. issued 427,500,000 shares of common stock of TCEH Corp., par value $0.01 per share (&#147; TCEH Corp. Common Stock &#148;), to TCEH, which distributed the TCEH Corp. Common Stock to
+holders of allowed TCEH First Lien Secured Claims (the &#147; TCEH Corp. Shares &#148;) in proportion to such claims. The TCEH Corp.
+Shares were issued pursuant to Section 1145 of the Bankruptcy Code, which generally exempts the offer and sale of securities under a plan of reorganization like the Plan from registration under Section 5 of the Securities Exchange Act of 1934 (the
+&#147; Exchange Act &#148;) and state laws if certain requirements are satisfied. As a result, the TCEH Corp. Shares generally may be resold without registration under the Securities Act, unless the seller is an &#147;underwriter&#148; with
+respect to those securities as defined by Section 1145(b)(1) of the Bankruptcy Code. Item 5.02 Departure of Directors or Certain Officers; Election of
+Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. Departure and Appointment of Certain EFH Corp. Officers
+ As of the Effective Date, all of the existing officers of EFH Corp. were removed as officers and the following officers were appointed
+to the office indicated following such officer&#146;s name: Paul M. Keglevic (Chief Executive Officer, President, Chief Restructuring Officer and Chief Accounting Officer), Anthony Horton (Executive Vice President, Chief Financial Officer and
+Treasurer) and Andrew M. Wright (Executive Vice President, General Counsel and Secretary). Paul M. Keglevic, 62, has served as
+Chief Executive Officer, President, Chief Restructuring Officer and Chief Accounting Officer of EFH Corp. since the Effective Date. Prior to the Effective Date, Mr. Keglevic served as Executive Vice President, Chief Financial Officer and
+Co-Chief Restructuring Officer of EFH Corp. since October 2013, having previously served as Executive Vice President and Chief Financial Officer of EFH Corp. from July 2008 to October 2013. Mr. Keglevic has also served as a member of the boards of
+EFIH since July 2008 and EFIH Finance Inc. since September 2009. Before joining EFH Corp., he was an audit partner at PricewaterhouseCoopers. Mr. Keglevic was PricewaterhouseCoopers&#146; Utility Sector Leader from 2002 to 2008 and Clients and
+Sector Assurance Leader from 2007 to 2008. Mr. Keglevic serves on the board of directors of Stellus Capital Investment Corporation. 
+ Anthony R. Horton , 55, has served as the Executive Vice President, Chief Financial Officer and Treasurer of EFH Corp. since the
+Effective Date. Prior to the Effective Date, Mr. Horton served as Senior Vice President and Treasurer of EFH Corp. since 2004. Prior to his role as Treasurer, Mr. Horton was employed by EFH Corp. and its predecessors in various capacities
+since 1985. Andrew M. Wright , 49, has served as the Executive Vice President, General Counsel and Secretary of EFH Corp. since the
+Effective Date. Prior to the Effective Date, Mr. Wright served as Vice President and Deputy General Counsel of EFH Corp. since April 2012. From December 2007 to April 2012, Mr. Wright was Vice President and Associate General Counsel of EFH
+Corp. From July 2004 to December 2007, Mr. Wright was Senior Counsel in the EFH Corp. legal department. Prior to joining EFH Corp., he was an attorney at Vinson & Elkins LLP, where he engaged in a corporate practice. 
+ 5 
+
+ Consulting Arrangements of EFH Corp. Officers 
+ On October 4, 2016, EFH Corp. entered into consulting agreements with each of Donald L. Evans, chairman of the board of EFH Corp., Mr. Horton,
+Mr. Keglevic and Mr. Wright (collectively, the &#147; EFH Officers &#148;). Under each of the consulting agreements, each of the EFH Officers has been appointed to his respective offices with EFH Corp. and agrees to provide services to EFH
+Corp. and its subsidiaries in their respective roles. Each consulting agreement provides for a monthly payment in the amount of $100,000 for Mr. Evans, $300,000 for Mr. Keglevic and $125,000 for each of Mr. Horton and Mr. Wright. Each
+consulting agreement terminates on the effective date of the Plan as it relates to the EFH Debtors. The foregoing descriptions of the
+consulting agreements of Messrs. Evans, Horton, Keglevic and Wright do not purport to be complete and are qualified in their entirety by reference to the full text of such agreements, which are attached as Exhibits 10.5, 10.6, 10.7 and 10.8,
+respectively, to this Current Report on Form 8-K and incorporated herein by reference. 
+
+ Item 7.01 
+ Regulation FD Disclosure. Consummation of the Plan 
+ On October 4, 2016, TCEH Corp. announced that EFH Corp. had effectuated the Plan solely as it pertains to the T-Side Debtors. A copy of
+the press release announcing the effectiveness of the Plan and the T-Side Debtors&#146; emergence from the Chapter 11 Cases is attached hereto as Exhibit 99.1. The information contained in the press release furnished as an exhibit hereto shall not
+be deemed &#147;filed&#148; for purposes of Section 18 of the Exchange Act, is not subject to the liabilities of that section and is not deemed incorporated by reference in any filing under the Securities Act, except as shall be expressly set forth
+by specific reference in such a filing. In addition, the press release contains statements intended as &#147;forward-looking statements&#148; which are subject to the cautionary statements about forward-looking statements set forth in such press
+release. 
+
+ Item 8.01 
+ Other Information. The information set forth under the heading &#147;Background
+Information&#148; is incorporated by reference into this Item 8.01 of this Current Report on Form 8-K. Tax Receivable Agreement 
+ On the Effective Date immediately following the PrefCo Preferred Stock Sale and prior to the Conversion and Distribution, TEX Energy LLC and
+American Stock Transfer & Trust Company, LLC, as Transfer Agent, entered into a tax receivable agreement (the &#147; Tax Receivable Agreement &#148;). Pursuant to the Tax Receivable Agreement, among other things, TCEH Corp. has agreed to
+pay to holders of beneficial interests in the rights to receive payments under (and otherwise share in the benefits of) the Tax Receivable Agreement (the &#147; TRA Rights &#148;) 85% of the amount of cash savings, if any, in U.S. federal,
+state and local income tax that TCEH Corp. realizes in periods following the Effective Date as a result of (i) certain transactions consummated pursuant to the Plan (including any step-up in tax basis in TCEH Corp.&#146;s assets resulting from the
+PrefCo Preferred Stock Sale), (ii) the tax basis of all assets acquired by Luminant Holding Company LLC, a former wholly owned direct subsidiary of TCEH (&#147; Luminant Holding &#148;), in connection with the Purchase and Sale Agreement, dated
+as of November 25, 2015, by and between La Frontera Ventures, LLC and Luminant Holding and (iii) tax benefits related to imputed interest deemed to be paid by TCEH Corp. as a result of payments under the Tax Receivable Agreement, plus interest
+accruing from the due date of the applicable tax return. The foregoing description of the Tax Receivable Agreement does not purport to be
+complete and is qualified in its entirety by reference to the full text of the Tax Receivable Agreement, which is attached as Exhibit 99.2 to this Current Report on Form 8-K and incorporated herein by reference. 
+ Registration Rights Agreement On the
+Effective Date and pursuant to the Plan, following the Conversion, TCEH Corp. entered into a Registration Rights Agreement (the &#147; Registration Rights Agreement &#148;) with the initial holders listed therein
+(the &#147; Holders &#148;) providing for registration of the resale of the Holders&#146; TCEH Corp. Common Stock and TRA Rights. Pursuant to the Registration Rights Agreement, among other things: 
+
+ &#149; 
+ 
+ immediately following the earlier of (x) a Form 10 or other registration statement under the Exchange Act registering the TCEH Corp. Common Stock having been declared effective by the Commission or (y) April 30, 2017,
+TCEH Corp. will be required to file with the Securities and Exchange Commission (the &#147; SEC &#148;) a shelf registration statement (the &#147; Shelf Registration Statement &#148;) for the resale of Registrable Shares (as defined in the
+Registration Rights Agreement) under Rule 415 of the Securities Act of 1933, as amended (the &#147; Securities Act &#148;), and use its reasonable best efforts to cause the Shelf Registration Statement to be declared effective by the SEC as
+promptly as reasonably practicable thereafter and in no event later than 120 days after the initial filing of the Shelf Registration Statement; 
+ 6 
+
+ &#149; 
+ 
+ concurrently with the registration under the Securities Act, TCEH Corp. will be required to seek (i) registration of the TCEH Corp. Common Stock under the Exchange Act (to the extent not already obtained) and (ii)
+approval to list the TCEH Corp. Common Stock on the New York Stock Exchange or The NASDAQ Stock Market; 
+
+ &#149; 
+ 
+ if TCEH Corp. proposes to file certain types of registration statements under the Securities Act with respect to an offering of securities, it will be required to use its reasonable best efforts to offer the other
+parties to the Registration Rights Agreement the opportunity to register all or part of their shares on the terms and conditions set forth in the Registration Rights Agreement; 
+
+ &#149; 
+ 
+ the Holders received the right, subject to certain conditions and exceptions, to request that TCEH Corp. file registration statements (subject to certain limitations on the number of registration statements and the
+minimum aggregate offering price of shares covered thereby) with the SEC for an underwritten offering of all or part of their respective shares of TCEH Corp. Common Stock or TRA Rights (a &#147; Demand Registration &#148;), and TCEH Corp. is
+required to cause such Demand Registration to be filed with the SEC within (i) 45 days for a registration statement on Form S-1 or (ii) 30 days for a registration statement on Form S-3 and thereafter, in either case, use its reasonable best efforts
+to cause such registration statement to become effective as promptly as reasonably practicable and no later than 120 days after the initial filing of such registration statement; and 
+
+ &#149; 
+ 
+ all expenses of registration under the Registration Rights Agreement, including the legal fees of one counsel retained by or on behalf of selling Holders, will be paid by TCEH Corp. 
+ The registration rights granted in the Registration Rights Agreement are subject to customary restrictions such as minimums, blackout periods
+and, if a registration is underwritten, any limitations on the number of shares and TRA Rights to be included in the underwritten offering imposed by the managing underwriter. The Registration Rights Agreement also contains customary indemnification
+and contribution provisions, and certain representations and warranties made by TCEH Corp. to the Holders. The foregoing description of
+the Registration Rights Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the Registration Rights Agreement, which is attached as Exhibit 99.3 to this Current Report on Form 8-K and incorporated herein by reference. Stockholders Agreements 
+ On the Effective Date and pursuant to the Plan, TCEH Corp. entered into separate stockholder&#146;s agreements with affiliates of each of
+Apollo Management Holdings L.P., Brookfield Asset Management Private Institutional Capital Adviser (Canada), L.P. and Oaktree Capital Management, L.P. (the &#147; Stockholders&#146; Agreements &#148;). Pursuant to the Stockholders&#146;
+Agreements, among other things: 
+
+ &#149; 
+ 
+ subject to the proper exercise of fiduciary duties of the board of TCEH Corp. (the &#147; TCEH Corp.
+Board &#148;), the applicable stockholder will, until the occurrence of a Termination Event (as defined 
+ 7 
+
+below), be entitled to designate one person for nomination for election to the TCEH Corp. Board at (i) any meeting of TCEH Corp. stockholders at which directors of a designated class are elected
+or (ii) if the TCEH Corp. Certificate of Incorporation no longer provides for the division of directors into three classes, any meeting of TCEH Corp. stockholders at which directors are to be elected; 
+
+ &#149; 
+ 
+ prior to the occurrence of a Termination Event, if a vacancy occurs because of the death, disability, disqualification, resignation or removal of the director nominee of an applicable stockholder, subject to the proper
+exercise of the fiduciary duties of the TCEH Corp. Board, the applicable stockholder will be entitled to designate such person&#146;s successor; and 
+
+ &#149; 
+ 
+ the rights of each stockholder under its applicable agreement will terminate automatically upon such stockholder ceasing to beneficially own, in the aggregate, at least 22,500,000 shares of TCEH Corp. Common Stock that
+were owned by such stockholder on the date of the applicable Stockholder&#146;s Agreement (a &#147; Termination Event &#148;). 
+ The foregoing description of the Stockholders&#146; Agreements does not purport to be complete and is qualified in its entirety by reference
+to the full text of the form of Stockholder&#146;s Agreement, which is attached as Exhibit 99.4 to this Current Report on Form 8-K and incorporated herein by reference. 
+ Credit Agreement/Collateral Trust Agreement 
+ Reference is made to the Current Report on Form 8-K filed by EFH Corp. and EFCH on August 5, 2016 (&#147; Prior Form 8-K &#148;) regarding
+the DIP Roll Facilities (as defined below). The DIP Roll Facilities consisted of a senior secured, super-priority credit agreement, dated as of August 4, 2016, by and among EFCH, TCEH, the subsidiaries of TCEH party thereto, the lenders party
+thereto from time to time, and Deutsche Bank AG, New York Branch, as administrative and collateral agent. The DIP Roll Facilities provide for up to $4.25 billion in financing consisting of (i) a $750 million senior secured, super-priority revolving
+credit facility (the &#147; DIP Revolving Credit Facility &#148;), (ii) a $650 million senior secured, super-priority funded term loan letter of credit facility (the &#147; DIP Term Loan C Facility &#148;) and (iii) a $2.85 billion senior
+secured, super-priority term loan (the &#147; DIP Term Loan B Facility &#148; and, together with the DIP Term Loan C Facility and the DIP Revolving Credit Facility, collectively, the &#147; DIP Roll Facilities &#148;). 
+ On October 3, 2016, the Conversion Date (as defined in the DIP Roll Facilities) occurred, and the DIP Roll Facilities converted into senior
+secured exit credit facilities (the &#147; OpCo Credit Facilities &#148;). On the Conversion Date, OpCo assumed all of the rights and obligations of TCEH under the DIP Roll Facilities and the OpCo Credit Facilities and IntermediateCo
+assumed all of the rights and obligations of EFCH under the DIP Roll Facilities and the OpCo Credit Facilities. The OpCo Credit Facilities consist of a senior secured credit agreement, dated as of October 3, 2016, by and among OpCo, as
+Borrower, IntermediateCo, OpCo&#146;s subsidiary guarantors named therein, the lenders party thereto from time to time, and Deutsche Bank AG, New York Branch, as administrative and collateral agent. On the Conversion Date, the OpCo Credit
+Facilities consisted of (i) a $750 million senior secured revolving credit facility (the &#147; OpCo Revolving Credit Facility &#148;), (ii) a $650 million senior secured funded term loan letter of credit facility (the &#147; OpCo Term Loan C
+Facility &#148;) and (iii) a $2.85 billion senior secured term loan (the &#147; OpCo Term Loan B Facility &#148;). As of the Conversion Date, there were no borrowings outstanding under the Revolving Credit Facility and approximately
+$563 million of letters of credit issued and outstanding under the OpCo Term Loan C Facility. The principal amounts outstanding under the
+OpCo Credit Facilities bear interest based on applicable LIBOR rates (subject to a LIBOR floor of 1% for loans made under the OpCo Term Loan C Facility and the OpCo Term Loan B Facility) or base rates plus applicable margins as set forth in the OpCo
+Credit Facilities. The OpCo Credit Facilities also provide for certain additional fees payable to the agents and lenders, as well as availability fees payable with respect to any unused portions of the available OpCo Credit Facilities. The OpCo
+Credit Facilities will mature on the applicable dates set forth therein. The obligations under the OpCo Credit Facilities are secured by
+a lien covering substantially all of OpCo&#146;s and its restricted subsidiaries assets, rights and properties (subject to certain exceptions set forth in the OpCo Credit 
+ 8 
+
+Facilities) pursuant to a collateral trust agreement (the &#147; Collateral Trust Agreement &#148;), dated as of October 3, 2016, by and among Delaware Trust Company, OpCo, the RCT (as
+defined below), and Deutsche Bank, as collateral agent under the OpCo Credit Facilities. Under the Collateral Trust Agreement, the Railroad Commission of Texas (the &#147; RCT &#148;), which among other things, oversees lignite mining
+activity in Texas, is entitled to receive distributions from the proceeds of collateral prior to the lenders under the OpCo Credit Facilities for amounts related to mining reclamation requirements that OpCo&#146;s Luminant Mining subsidiary has with
+the RCT if Luminant Mining otherwise fails to meet its reclamation obligations, in an amount not to exceed $975,000,000. The OpCo Credit
+Facilities also permit certain hedging agreements to be secured on a pari-passu basis with the OpCo Credit Facilities in the event those hedging agreements meet certain criteria. 
+ The OpCo Credit Facilities provide for affirmative and negative covenants applicable to OpCo and its restricted subsidiaries, including
+affirmative covenants requiring OpCo to provide financial information, budgets and other information to the agents under the OpCo Credit Facilities, and negative covenants restricting OpCo&#146;s and its restricted subsidiaries&#146; ability to
+incur additional indebtedness, grant liens, dispose of assets, make investments, pay dividends or take certain other actions, in each case except as permitted in the OpCo Credit Facilities. OpCo&#146;s ability to borrow under the OpCo Credit
+Facilities is subject to the satisfaction of certain customary conditions precedent. The OpCo Credit Facilities provide for certain
+customary events of default, including events of default resulting from non-payment of principal, interest or other amounts when due, material breaches of representations and warranties, material breaches of covenants in the OpCo Credit Facilities
+or ancillary loan documents, cross-defaults under other agreements or instruments and the entry of material judgments against OpCo or its restricted subsidiaries. The OpCo Credit Facilities also include, solely with respect to the OpCo Revolving
+Credit Facility and which is only applicable when the amount of loans under such facility exceed a specified threshold (as described in the OpCo Credit Facilities), an event of default that may arise from OpCo&#146;s failure to meet a financial
+leverage test. Upon the existence of an event of default, the OpCo Credit Facilities provide that all principal, interest and other amounts due thereunder will become immediately due and payable, either automatically or at the election of specified
+lenders. A copy of the OpCo Credit Facilities and the Collateral Trust Agreement are filed as Exhibit 99.5 and 99.6 to this Current
+Report on Form 8-K and is incorporated herein by reference. The above description of the OpCo Credit Facilities and the Collateral Trust Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the
+OpCo Credit Facilities and the Collateral Trust Agreement, respectively. Election of TCEH Corp. Directors 
+ As of the Effective Date and upon the Conversion, the following directors were appointed to the TCEH Corp. Board: (i) Gavin R. Baiera, (ii)
+Jennifer Box, (iii) Jeff Hunter, (iv) Michael Liebelson, (v) Cyrus Madon, (vi) Curtis A. Morgan and (vii) Geoff Strong. Committee Memberships 
+ The TCEH Corp. Board designated the following directors as members of the Audit Committee of the Board: Jeff Hunter and Jennifer Box, with
+Jeff Hunter serving as Chair. Appointment of Certain TCEH Corp. Officers 
+ As of the Effective Date and following the Conversion, each of the following officers of TCEH Corp. was appointed to the office set forth
+following such officer&#146;s name: Curtis A. Morgan (President and Chief Executive Officer), James A. Burke (Executive Vice President and Chief Operating Officer), Stephanie Zapata Moore (Executive Vice President and General Counsel), and Terry L.
+Nutt (Senior Vice President and Controller). Curtis A. Morgan , 56, has served as the President and Chief Executive Officer of TCEH
+Corp. since the Effective Date. Prior to joining TCEH Corp., he served as the Chief Executive Officer and President of EquiPower 
+ 9 
+
+Resources Corp. since May 2010. Prior to joining EquiPower Resources Corp., he served as an Operating Partner of Energy Capital Partners from May 2009 to May 2010. Prior to joining Energy Capital
+Partners, he served as President and Chief Executive Officer of FirstLight Power Enterprises from November 2006 to April 2009. Mr. Morgan has also held various leadership roles at NRG Energy, Mirant Corporation and Reliant Energy. Mr. Morgan is a
+director of Summit Midstream GP, LLC, the general partner of Summit Midstream Partners, LP. James A. Burke , 48, has served as the
+Executive Vice President and Chief Operating Officer of TCEH Corp. since the Effective Date. Prior to joining TCEH Corp. he served as Executive Vice President of EFH Corp. since February 2013 and President and Chief Executive of TXU Energy, a
+subsidiary of TCEH Corp., since August 2005. Previously, Mr. Burke was Senior Vice President Consumer Markets of TXU Energy. Stephanie
+Zapata Moore , 43, has served as the Executive Vice President and General Counsel of TCEH Corp. since the Effective Date. Prior to joining TCEH Corp., she served as Vice President and General Counsel of Luminant, a subsidiary of TCEH Corp.,
+since April 2012. Previously, Ms. Moore was Senior Counsel of Luminant from March 2007 to April 2012 and Counsel of a predecessor to Luminant from November 2005 to March 2007. Prior to joining Luminant, she was an attorney at Gardere Wynne
+Sewell where she engaged in a corporate practice. Terry L. Nutt , 40, has served as the Senior Vice President and Controller of
+TCEH Corp. since the Effective Date. Prior to joining TCEH Corp. he served as Senior Vice President and Controller of EFH Corp. since September 2014. He had also recently served as the Senior Vice President of Finance for Luminant, a
+subsidiary of TCEH Corp., since March 2016. Previously, Mr. Nutt served as Senior Vice President of Enterprise Risk Management for EFH Corp. from April 2011 to September 2014 and Controller of Luminant Energy, a subsidiary of TCEH Corp., from
+January 2008 to April 2011. Prior to joining EFH Corp., he held various finance leadership roles at Dynegy Inc. Employment Agreements of Certain
+TCEH Corp. Officers Effective as of October 4, 2016, TCEH Corp. entered into employment agreements with Curtis A. Morgan, James A.
+Burke and Stephanie Zapata Moore. Mr. Morgan&#146;s Employment Arrangements. Mr. Morgan&#146;s
+employment agreement with TCEH Corp. (the &#147; Morgan Agreement &#148;) has an initial term that ends on October 4, 2019, and thereafter, the Morgan Agreement provides for automatic one-year extensions, unless either TCEH Corp. or Mr. Morgan
+gives 60 days&#146; prior written notice electing not to extend the Morgan Agreement. Pursuant to the Morgan Agreement, Mr. Morgan will receive a base salary of no less than $950,000 per year, which may be increased (but not decreased) at the sole
+discretion of the TCEH Corp. Board. Mr. Morgan also will have the opportunity to earn an annual cash bonus (the &#147; Annual Bonus &#148;) based upon the achievement of performance metrics approved by the TCEH Corp. Board and subject to
+the TCEH Corp. Board&#146;s full discretion. Mr. Morgan&#146;s target Annual Bonus opportunity is 100% of his base salary (the &#147; Target Bonus &#148;), and his maximum Annual Bonus opportunity is 200% of the Target Bonus. For calendar
+year 2016 only, the TCEH Corp. Board will consider alternatives to the typical Annual Bonus opportunity (such as paying a full-year payout based on stub year performance or an agreed upon Annual Bonus to be paid in the normal bonus cycle). 
+ The Morgan Agreement also provides Mr. Morgan with equity compensation. Mr. Morgan&#146;s initial equity award will consist of restricted
+stock units and stock options and will have an aggregate grant date fair market value of $5,000,000. Following October 4, 2017, the Morgan Agreement provides for annual equity awards, with the amount and form of each such equity award to be
+determined by the TCEH Corp. Board. All of the equity awards will be subject to the terms of the 2016 Incentive Plan (as defined and discussed below). In addition to providing Mr. Morgan with equity compensation, the Morgan Agreement requires Mr.
+Morgan to make a cash equity investment in TCEH Corp. common stock equal to $1,250,000, with the timing to be determined in good faith by the TCEH Corp. Board and Mr. Morgan. 
+ The Morgan Agreement also entitles Mr. Morgan to participate in the benefit plans and programs, and receive such perquisites, in each case, as
+are provided by TCEH Corp. from time to time to its senior executives generally, subject to the terms of such plans and programs and commensurate with Mr. Morgan&#146;s position. Additionally, Mr. Morgan is entitled to receive up to $15,000 per
+year towards his tax and financial planning. 
+ 10 
+
+ Upon any termination of employment with TCEH Corp., Mr. Morgan will be entitled to: (i) his
+accrued but unpaid base salary and any accrued but unused vacation as of the termination date, (ii) any unreimbursed business expenses incurred through the termination date, and (iii) any payments and benefits to which he may be entitled under any
+benefit plans, programs, or arrangements (collectively, the &#147; Accrued Obligations &#148;). If Mr. Morgan&#146;s employment with
+TCEH Corp. is terminated by TCEH Corp. without Cause (as defined in the Morgan Agreement) (and other than due to his death or disability), by Mr. Morgan for Good Reason (as defined in the Morgan Agreement) or due to TCEH Corp.&#146;s non-renewal of
+the employment term, then in addition to the Accrued Obligations and subject to Mr. Morgan&#146;s execution and non-revocation of a general release of claims within the 60 days following his employment termination date, Mr. Morgan will be entitled
+to: (i) an aggregate amount equal to two times (2x) the sum of (A) his base salary plus (B) (x) the Target Bonus, if such termination occurs prior to October 4, 2018, or (y) the prior year&#146;s Annual Bonus, if such termination occurs on or after
+October 4, 2018, with such amount payable in 24 equal installments following the termination in accordance with TCEH Corp.&#146;s normal payroll practices; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to
+the product of (A) the amount of the Annual Bonus that would have been payable to him had his employment not so terminated, based on actual performance measured through the fiscal year of termination, and (B) a fraction, the numerator of which is
+the number of days elapsed in TCEH Corp.&#146;s fiscal year in which the termination occurs through such termination and the denominator of which is the number of days in such fiscal year (the &#147; Pro-Rated Bonus &#148;); (iii) any accrued
+but unpaid Annual Bonus in respect of the fiscal year prior to the fiscal year of termination (the &#147; Unpaid Annual Bonus &#148;); (iv) up to 24 months of continued health insurance benefits under the terms of the applicable TCEH Corp.
+benefit plans, subject to his payment of the employee-portion of the benefit premiums and terminable upon his eligibility for comparable coverage under another employer&#146;s benefit plans (with TCEH Corp. having the alternative to pay the
+employer-portion of the COBRA continuation coverage premiums instead of providing coverage under its plans under certain circumstances) (the &#147; Health Benefits &#148;); and (v) accelerated vesting of the portion of Mr. Morgan&#146;s
+outstanding equity awards that would have vested in the twelve months following termination had he remained employed (with fully vested options to remain exercisable for 90 days following termination (or until the option&#146;s regular expiration
+date, if shorter)). If Mr. Morgan&#146;s employment is terminated within the 18-month period following a change of control of TCEH Corp.,
+then in addition to the Accrued Obligations and subject to his execution and non-revocation of a general release of claims within the 60 days following his employment termination date, Mr. Morgan will be entitled to: (i) an aggregate amount equal to
+2.99 times the sum of (A) his base salary plus (B) the Target Bonus, with such amount payable in a lump sum; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to the product of (A) the Target Bonus and (B) a fraction,
+the numerator of which is the number of days elapsed in TCEH Corp.&#146;s fiscal year in which the termination occurs through such termination and the denominator of which is the number of days in such fiscal year; (iii) any Unpaid Annual Bonus;
+(iv) the Health Benefits; and (v) accelerated vesting of all of Mr. Morgan&#146;s equity awards that were outstanding as of the change of control. 
+ If Mr. Morgan&#146;s employment with TCEH Corp. is terminated due to his death or disability, then in addition to the Accrued Obligations, Mr.
+Morgan will be entitled to: (i) the Pro-Rated Bonus; (ii) any Unpaid Annual Bonus; and (iii) accelerated vesting of the portion of Mr. Morgan&#146;s outstanding equity awards that would have vested in the twelve months following termination had he
+remained employed (with fully vested options to remain exercisable for one year following termination (or until the option&#146;s regular expiration date, if shorter)). 
+ The Morgan Agreement subjects Mr. Morgan to perpetual confidentiality, assignment of inventions and non-disparagement provisions, as well as
+non-competition and non-solicitation provisions that apply during his employment and for the 24-month period thereafter. On the Effective
+Date, the TCEH Corp. Board approved the grant of stock options and restricted stock units (&#147; RSUs &#148;) under the 2016 Incentive Plan (as defined and discussed below) to Mr. Morgan, which grant will have an aggregate grant date fair
+value of $5,000,000. The grant will consist, on a grant date fair value basis, of 50% stock options and 50% RSUs. The grant date fair value of the stock options and the RSUs will be determined based on the closing price of a share of TCEH
+Corp. Common Stock on the OTCQX U.S. market on the grant date. The exercise price for the stock options will be determined by the TCEH Corp. Board in a manner that complies with Section 409A of the Internal Revenue Code. 
+ 11 
+
+ Mr. Burke&#146;s Employment Arrangements. Mr. Burke&#146;s
+employment agreement with TCEH Corp. (the &#147; Burke Agreement &#148;) has an initial term that ends on October 4, 2019, and thereafter, the Burke Agreement provides for automatic one-year extensions, unless either TCEH Corp. or Mr. Burke
+gives 60 days&#146; prior written notice electing not to extend the Burke Agreement. Pursuant to the Burke Agreement, Mr. Burke will receive a base salary of no less than $750,000 per year, which may be increased (but not decreased) at the sole
+discretion of the TCEH Corp. Board. Mr. Burke also will have the opportunity to earn an Annual Bonus based upon the achievement of performance metrics approved by the TCEH Corp. Board and subject to the TCEH Corp. Board&#146;s full discretion.
+Mr. Burke&#146;s target Annual Bonus opportunity is 90% of his base salary (the &#147; Burke Target Bonus &#148;), and his maximum Annual Bonus opportunity is 200% of the Burke Target Bonus. For calendar year 2016 only, the TCEH Corp.
+Board will consider alternatives to the typical Annual Bonus opportunity (such as paying a full-year payout based on stub year performance or an agreed upon Annual Bonus to be paid in the normal bonus cycle). 
+ The Burke Agreement also provides Mr. Burke with equity compensation. Mr. Burke&#146;s initial equity award will consist of restricted
+stock units and stock options and will have an aggregate grant date fair market value of $4,000,000. Following October 4, 2017, the Burke Agreement provides for annual equity awards, with the amount and form of each such equity award to be
+determined by the TCEH Corp. Board. All of the equity awards will be subject to the terms of the 2016 Incentive Plan. The Burke Agreement
+also entitles Mr. Burke to participate in the benefit plans and programs, and receive such perquisites, in each case, as are provided by TCEH Corp. from time to time to its senior executives generally, subject to the terms of such plans and programs
+and commensurate with Mr. Burke&#146;s position. Additionally, Mr. Burke is entitled to receive up to $15,000 per year towards his tax and financial planning. 
+ Upon any termination of employment with TCEH Corp., Mr. Burke will be entitled to the Accrued Obligations. 
+ If Mr. Burke&#146;s employment with TCEH Corp. is terminated by TCEH Corp. without Cause (as defined in the Burke Agreement) (and other than
+due to his death or disability), by Mr. Burke for Good Reason (as defined in the Burke Agreement) or due to TCEH Corp.&#146;s non-renewal of the employment term, then in addition to the Accrued Obligations and subject to Mr. Burke&#146;s execution
+and non-revocation of a general release of claims within the 60 days following his employment termination date, Mr. Burke will be entitled to: (i) an aggregate amount equal to two times (2x) the sum of (A) his base salary plus (B) (x) the Burke
+Target Bonus, if such termination occurs prior to October 4, 2018, or (y) the prior year&#146;s Annual Bonus, if such termination occurs on or after October 4, 2018, with such amount payable in 24 equal installments following the termination in
+accordance with TCEH Corp.&#146;s normal payroll practices; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to the product of (A) the amount of the Annual Bonus that would have been payable to him had his employment
+not so terminated, based on actual performance measured through the fiscal year of termination, and (B) the Pro-Rated Bonus; (iii) any Unpaid Annual Bonus; (iv) up to 24 months of continued the Health Benefits; and (v) accelerated vesting of the
+portion of Mr. Burke&#146;s outstanding equity awards that would have vested in the twelve months following termination had he remained employed (with fully vested options to remain exercisable for 90 days following termination (or until the
+option&#146;s regular expiration date, if shorter)). If Mr. Burke&#146;s employment is terminated within the 18-month period following a
+change of control of TCEH Corp., then in addition to the Accrued Obligations and subject to his execution and non-revocation of a general release of claims within the 60 days following his employment termination date, Mr. Burke will be entitled to:
+(i) an aggregate amount equal to 2.99 times the sum of (A) his base salary plus (B) the Burke Target Bonus, with such amount payable in a lump sum; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to the product of
+(A) the Burke Target Bonus and (B) a fraction, the numerator of which is the number of days elapsed in TCEH Corp.&#146;s fiscal year in which the termination occurs through such termination and the denominator of which is the number of days in such
+fiscal year; (iii) any Unpaid Annual Bonus; (iv) the Health Benefits; and (v) accelerated vesting of all of Mr. Burke&#146;s equity awards that were outstanding as of the change of control. 
+ 12 
+
+ If Mr. Burke&#146;s employment with TCEH Corp. is terminated due to his death or disability, then
+in addition to the Accrued Obligations, Mr. Burke will be entitled to: (i) the Pro-Rated Bonus; (ii) any Unpaid Annual Bonus; and (iii) accelerated vesting of the portion of Mr. Burke&#146;s outstanding equity awards that would have vested in the
+twelve months following termination had he remained employed (with fully vested options to remain exercisable for one year following termination (or until the option&#146;s regular expiration date, if shorter)). 
+ The Burke Agreement subjects Mr. Burke to perpetual confidentiality, assignment of inventions and non-disparagement provisions, as well as
+non-competition and non-solicitation provisions that apply during his employment and for the 24-month period thereafter. On the Effective
+Date, the TCEH Corp. Board approved the grant of stock options and RSUs under the 2016 Incentive Plan (as defined and discussed below) to Mr. Burke, which grant will have an aggregate grant date fair value of $4,000,000. The grant will consist,
+on a grant date fair value basis, of 50% stock options and 50% RSUs. The grant date fair value of the stock options and the RSUs will be determined based on the closing price of a share of TCEH Corp. Common Stock on the OTCQX U.S. market on the
+grant date. The exercise price for the stock options will be determined by Mr. Morgan in a manner that complies with Section 409A of the Internal Revenue Code. 
+ Ms. Moore&#146;s Employment Arrangements. Ms. Moore&#146;s employment agreement with TCEH Corp. (the
+&#147; Moore Agreement &#148;) has an initial term that ends on October 4, 2019, and thereafter, the Moore Agreement provides for automatic one-year extensions, unless either TCEH Corp. or Ms. Moore gives 60 days&#146; prior written notice
+electing not to extend the Moore Agreement. Pursuant to the Moore Agreement, Ms. Moore will receive a base salary of no less than $415,000 per year, which may be increased (but not decreased) at the sole discretion of the TCEH Corp.
+Board. Ms. Moore also will have the opportunity to earn an Annual Bonus based upon the achievement of performance metrics approved by the TCEH Corp. Board and subject to the TCEH Corp. Board&#146;s full discretion. Ms. Moore&#146;s target
+Annual Bonus opportunity is 70% of her base salary (the &#147; Moore Target Bonus &#148;), and her maximum Annual Bonus opportunity is 200% of the Moore Target Bonus. For calendar year 2016 only, the TCEH Corp. Board will consider
+alternatives to the typical Annual Bonus opportunity (such as paying a full-year payout based on stub year performance or an agreed upon Annual Bonus to be paid in the normal bonus cycle). 
+ The Moore Agreement also provides Ms. Moore with equity compensation. Ms. Moore&#146;s initial equity award will consist of restricted
+stock units and stock options and will have an aggregate grant date fair market value of $1,200,000. Following October 4, 2017, the Moore Agreement provides for annual equity awards, with the amount and form of each such equity award to be
+determined by the TCEH Corp. Board. All of the equity awards will be subject to the terms of the 2016 Incentive Plan (as defined and discussed below). 
+ The Moore Agreement also entitles Ms. Moore to participate in the benefit plans and programs, and receive such perquisites, in each case, as
+are provided by TCEH Corp. from time to time to its senior executives generally, subject to the terms of such plans and programs and commensurate with Ms. Moore&#146;s position. Additionally, Ms. Moore is entitled to receive up to $15,000 per
+year towards her tax and financial planning. Upon any termination of employment with TCEH Corp., Ms. Moore will be entitled to the Accrued
+Obligations. If Ms. Moore&#146;s employment with TCEH Corp. is terminated by TCEH Corp. without Cause (as defined in the Moore Agreement)
+(and other than due to her death or disability), by Ms. Moore for Good Reason (as defined in the Moore Agreement) or due to TCEH Corp.&#146;s non-renewal of the employment term, then in addition to the Accrued Obligations and subject to Ms.
+Moore&#146;s execution and non-revocation of a general release of claims within the 60 days following her employment termination date, Ms. Moore will be entitled to: (i) an aggregate amount equal to two times (2x) the sum of (A) her base salary plus
+(B) (x) the Moore Target Bonus, if such termination occurs prior to October 4, 2018, or (y) the prior year&#146;s Annual Bonus, if such termination occurs on or after October 4, 2018, with such amount payable in 24 equal installments following the
+termination in accordance with TCEH Corp.&#146;s normal payroll practices; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to the product of (A) the amount of the Annual Bonus that would have been payable
+to her had her employment not so terminated, based on actual performance measured through the fiscal year of termination, and (B) the Pro-Rated 
+ 13 
+
+Bonus; (iii) any Unpaid Annual Bonus; (iv) up to 24 months of the Health Benefits; and (v) accelerated vesting of the portion of Ms. Moore&#146;s outstanding equity awards that would have vested
+in the twelve months following termination had she remained employed (with fully vested options to remain exercisable for 90 days following termination (or until the option&#146;s regular expiration date, if shorter)). 
+ If Ms. Moore&#146;s employment is terminated within the 18-month period following a change of control of TCEH Corp., then in addition to the
+Accrued Obligations and subject to her execution and non-revocation of a general release of claims within the 60 days following her employment termination date, Ms. Moore will be entitled to: (i) an aggregate amount equal to 2.99 times the sum of
+(A) her base salary plus (B) the Moore Target Bonus, with such amount payable in a lump sum; (ii) a pro-rated Annual Bonus in respect of the fiscal year of termination equal to the product of (A) the Moore Target Bonus and (B) a fraction, the
+numerator of which is the number of days elapsed in TCEH Corp.&#146;s fiscal year in which the termination occurs through such termination and the denominator of which is the number of days in such fiscal year; (iii) any Unpaid Annual Bonus; (iv)
+the Health Benefits; and (v) accelerated vesting of all of Ms. Moore&#146;s equity awards that were outstanding as of the change of control. 
+ If Ms. Moore&#146;s employment with TCEH Corp. is terminated due to her death or disability, then in addition to the Accrued Obligations, Ms.
+Moore will be entitled to: (i) the Pro-Rated Bonus; (ii) any Unpaid Annual Bonus; and (iii) accelerated vesting of the portion of Ms. Moore&#146;s outstanding equity awards that would have vested in the twelve months following termination had she
+remained employed (with fully vested options to remain exercisable for one year following termination (or until the option&#146;s regular expiration date, if shorter)). 
+ The Moore Agreement subjects Ms. Moore to perpetual confidentiality, assignment of inventions and non-disparagement provisions, as well as
+non-competition and non-solicitation provisions that apply during her employment and for the 24-month period thereafter. On the Effective
+Date, the TCEH Corp. Board approved the grant of stock options and RSUs under the 2016 Incentive Plan (as defined and discussed below) to Ms. Moore, which grant will have an aggregate grant date fair value of $1,200,000. The grant will consist,
+on a grant date fair value basis, of 50% stock options and 50% RSUs. The grant date fair value of the stock options and the RSUs will be determined based on the closing price of a share of TCEH Corp. Common Stock on the OTCQX U.S. market on the
+grant date. The exercise price for the stock options will be determined by Mr. Morgan in a manner that complies with Section 409A of the Internal Revenue Code. 
+ The foregoing descriptions of the employment agreements of Messrs. Morgan and Burke and Ms. Moore do not purport to be complete and are
+qualified in their entirety by reference to the full text of such agreements, which are attached as Exhibits 99.7, 99.8 and 99.9, respectively, to this Current Report on Form 8-K and incorporated herein by reference. 
+ 2016 Incentive Plan TCEH Corp. Board
+adopted the TCEH Corp. 2016 Omnibus Incentive Plan (the &#147; 2016 Incentive Plan &#148;), effective as of the Effective Date, under which an aggregate of 22,500,000 shares of TCEH Corp. Common Stock are reserved for issuance as equity-based
+awards to employees, directors and certain other persons (the &#147; Award Shares &#148;). The following summary of the material
+terms of the 2016 Incentive Plan does not purport to be complete and is qualified in its entirety by reference to the full text of the 2016 Incentive Plan, which is attached as Exhibit 99.10 to this Current Report on Form 8-K and incorporated herein
+by reference. The TCEH Corp. Board or any committee duly authorized by the Board (the &#147;Committee&#148;) will administer the 2016
+Incentive Plan. The Committee has broad authority under the 2016 Incentive Plan to, among other things: (i) select participants; (ii) determine the types of awards that participants are to receive and the number of shares that are to be subject
+to such awards; and (iii) establish the terms and conditions of awards, including the price (if any) to be paid for the shares or the award. 
+ 14 
+
+ Persons eligible to receive awards under the 2016 Incentive Plan include non-employee directors
+of TCEH Corp., employees of TCEH Corp. or any of its affiliates, and certain consultants and advisors to TCEH Corp. or any of its affiliates. The types of awards that may be granted under the 2016 Incentive Plan include stock options, restricted
+stock units, restricted stock, performance awards and other forms of awards granted or denominated in shares of TCEH Corp. Common Stock, as well as certain cash-based awards. 
+ As noted above, the maximum number of shares of TCEH Corp. Common Stock that may be issued or transferred pursuant to awards under the 2016
+Incentive Plan is 22,500,000. If any stock option or other stock-based award granted under the 2016 Incentive Plan expires, terminates or is canceled for any reason without having been exercised in full, the number of shares of TCEH Corp.
+Common Stock underlying any unexercised award shall again be available for the purpose of awards under the 2016 Incentive Plan. If any shares of restricted stock, performance awards or other stock-based awards denominated in shares of TCEH
+Corp. Common Stock awarded under the 2016 Incentive Plan are forfeited for any reason, the number of forfeited shares shall again be available for purposes of awards under the 2016 Incentive Plan. Any award under the 2016 Incentive Plan settled
+in cash shall not be counted against the maximum share limitation. As is customary in incentive plans of this nature, each share limit
+and the number and kind of shares available under the 2016 Incentive Plan and any outstanding awards, as well as the exercise or purchase prices of awards, and performance targets under certain types of performance-based awards, are subject to
+adjustment in the event of certain reorganizations, mergers, combinations, recapitalizations, stock splits, stock dividends or other similar events that change the number or kind of shares outstanding, and extraordinary dividends or distributions of
+property to the TCEH Corp.&#146;s stockholders. TCEH Corp. Governing Documents 
+ On the Effective Date and in connection with the Conversion, a Certificate of Conversion to a Corporation for TEX Energy LLC and a Certificate
+of Incorporation for TCEH Corp. were filed with the Delaware Secretary of State. Also on the Effective Date and immediately following the Conversion, the TCEH Corp. Board adopted the TCEH Corp. Bylaws. 
+ TCEH Corp.&#146;s Certificate of Incorporation and Bylaws provide for the following: 
+ Authorized Capital Stock . TCEH Corp.&#146;s Certificate of Incorporation authorizes the issuance of a total of 1,900,000,000 shares of
+capital stock, consisting of: 
+
+ &#149; 
+ 
+ 1,800,000,000 shares of TCEH Corp. Common Stock, par value $0.01 per share; and 
+
+ &#149; 
+ 
+ 100,000,000 shares of TCEH Corp. preferred stock, par value $0.01 per share. Voting
+Rights . All shares of TCEH Corp. Common Stock have identical rights and privileges. The holders of shares of TCEH Corp. Common Stock are entitled to vote on all matters submitted to a vote of TCEH Corp. stockholders, including the election of
+directors. On all matters to be voted on by holders of shares of TCEH Corp. Common Stock, the holders are entitled to one vote for each share of common stock held of record, and have no cumulative voting rights. 
+ Dividend Rights . Holders of TCEH Corp. Common Stock are entitled to receive ratably dividends or other distributions when and if
+declared by the TCEH Corp. Board. The ability of the TCEH Corp. Board to declare dividends, however, is subject to the rights of any holders of outstanding shares of TCEH Corp. preferred stock and the availability of sufficient funds under the
+General Corporation Law of the State of Delaware (the &#147; DGCL &#148;) to pay dividends. Liquidation Preference . In the
+event of a liquidation, dissolution or winding up of TCEH Corp., after the payment in full of all amounts owed to its creditors and holders of any outstanding shares of its preferred stock, its remaining assets will be distributed ratably to the
+holders of shares of its common stock. The rights, preferences and privileges of holders of shares of TCEH Corp. Common Stock are subject to, and may be adversely affected by, the rights of the holders of shares of any series of preferred stock
+which TCEH Corp. may designate and issue in the future without stockholder approval. 
+ 15 
+
+ No Other Rights . Holders of TCEH Corp. Common Stock do not have pre-emptive, subscription,
+redemption or conversion rights. Provisions with Respect to Nomination and Election of Directors . TCEH Corp.&#146;s Certificate of
+Incorporation provides for three classes of directors, each of which is to be elected on a staggered basis for a term of three years. TCEH Corp.&#146;s Bylaws provide that the TCEH Corp. Board consists of such number of directors as is determined
+from time to time by the vote of a majority of the total number of directors then authorized. No Written Consent of Stockholders .
+Any action to be taken by TCEH Corp.&#146;s stockholders must be effected at a duly called annual or special meeting and may not be effected by written consent. 
+ Special Meetings of Stockholders . Special meetings of the TCEH Corp. stockholders may be called only by the TCEH Corp. Board pursuant
+to a resolution approved by a majority of the board or by the chairman of the board or the secretary upon written request of one or more stockholders of record holding at least a majority of the voting power of the then-outstanding shares of its
+common stock, entitled to vote on the matter or matters to be brought before the special meeting and complying with the notice procedures set forth in the TCEH Corp. Bylaws, except as required by the DGCL. 
+ Advance Notice Requirement . Stockholders must provide timely notice within the deadlines described in the TCEH Corp. Bylaws when
+seeking to: 
+
+ &#149; 
+ 
+ bring business before an annual meeting of stockholders; 
+
+ &#149; 
+ 
+ bring business before a special meeting of stockholders (if contemplated and permitted by the notice of a special meeting); or 
+
+ &#149; 
+ 
+ nominate candidates for election at an annual meeting of stockholders. The TCEH Corp.
+Certificate of Incorporation and Bylaws also specify requirements as to the form and content of the stockholder&#146;s notice. 
+ Issuance of Blank Check Preferred Stock. The TCEH Corp. Board is authorized to issue, without further action by the stockholders, up to
+100,000,000 shares of preferred stock with rights and preferences designated from time to time by the TCEH Corp. Board. Amendment of
+Bylaws and Certificate of Incorporation . The approval of a 66 2/3% super-majority of the voting power of the then-outstanding shares of capital stock entitled to vote is required to amend certain provisions of the TCEH Corp. Bylaws, or to amend
+certain of the provisions of the Certificate of Incorporation, including provisions relating to indemnification and exculpation of directors and officers and provisions relating to amendment of the Bylaws and Certificate of Incorporation. 
+ The foregoing description of the TCEH Corp. Certificate of Incorporation and Bylaws does not purport to be complete and is qualified in its
+entirety by reference to the full text of these documents, which are attached as Exhibit 99.11 and 99.12, respectively, to this Current Report on Form 8-K and incorporated herein by reference. 
+ U.S. Real Property Holding Company Status 
+ We believe that neither TCEH Corp. nor PrefCo is currently a U.S. real property holding company (as defined in Section 897(c)(2) of the
+Internal Revenue Code of 1986, as amended (the &#147; Code &#148;)) during the applicable period specified in Section 897(c)(1)(A)(ii) of the Code. Generally, a corporation is a USRPHC only if the fair market value of its U.S. real
+property interests equals or exceeds 50% of the sum of the fair market value of its worldwide real property interests plus its other assets used or held for use in a trade or business. There can be no assurance regarding the USRPHC status of TCEH
+Corp. or PrefCo for the current year or future years, however, because USRPHC status is based on the composition of the applicable entity&#146;s assets from time to time and on certain rules whose application is uncertain. 
+ 16 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 10.1 
+ 
+ Separation Agreement 
+
+ 10.2 
+ 
+ Tax Matters Agreement 
+
+ 10.3 
+ 
+ Split Participant Agreement 
+
+ 10.4 
+ 
+ Transition Services Agreement 
+
+ 10.5 
+ 
+ Consulting Agreement dated as of October 4, 2016 by and between TCEH Corp. and Donald L. Evans 
+
+ 10.6 
+ 
+ Consulting Agreement dated as of October 4, 2016 by and between TCEH Corp. and Anthony R. Horton 
+
+ 10.7 
+ 
+ Consulting Agreement dated as of October 4, 2016 by and between TCEH Corp. and Paul M. Keglevic 
+
+ 10.8 
+ 
+ Consulting Agreement dated as of October 4, 2016 by and between TCEH Corp. and Andrew M. Wright 
+
+ 99.1 
+ 
+ Press Release 
+
+ 99.2 
+ 
+ Tax Receivable Agreement 
+
+ 99.3 
+ 
+ Registration Rights Agreement 
+
+ 99.4 
+ 
+ Form of Stockholder&#146;s Agreement 
+
+ 99.5 
+ 
+ OpCo Credit Facilities 
+
+ 99.6 
+ 
+ Collateral Trust Agreement 
+
+ 99.7 
+ 
+ Employment Agreement dated as of October 4, 2016 by and between TCEH Corp. and Curtis A. Morgan 
+
+ 99.8 
+ 
+ Employment Agreement dated as of October 4, 2016 by and between TCEH Corp. and James A. Burke 
+
+ 99.9 
+ 
+ Employment Agreement dated as of October 4, 2016 by and between TCEH Corp. and Stephanie Zapata Moore 
+
+ 99.10 
+ 
+ 2016 Incentive Plan 
+
+ 99.11 
+ 
+ Certificate of Incorporation of TCEH Corp. 
+
+ 99.12 
+ 
+ Bylaws of TCEH Corp. 
+ Cautionary Note Regarding Forward-Looking Statements 
+ This Current Report on Form 8-K includes forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, which are
+subject to risks and uncertainties. All statements, other than statements of historical facts, are forward-looking statements. Readers are cautioned not to place undue reliance on forward-looking 
+ 17 
+
+statements. Although we believe that in making any such forward-looking statement our expectations are based on reasonable assumptions, any such forward-looking statement involves uncertainties
+and is qualified in its entirety by reference to the discussion of risk factors under &#147;Risk Factors&#148; and the discussion under &#147;Management&#146;s Discussion and Analysis of Financial Condition and Results of Operations&#148; in the
+Annual Reports on Form 10-K and Quarterly Reports on Form 10-Q filed by each of EFH Corp., EFIH and EFCH and the following important factors, among others, that could cause actual results to differ materially from those projected in such
+forward-looking statements: 
+
+ &#149; 
+ 
+ EFH Corp.&#146;s ability to obtain the Bankruptcy Court&#146;s confirmation of a plan of reorganization with respect to the EFH Debtors, and if confirmed, whether the conditions (including required regulatory approvals)
+to consummate the transactions contemplated by such plan of reorganization will be satisfied or waived; 
+
+ &#149; 
+ 
+ the effectiveness of the overall restructuring activities pursuant to the Chapter 11 Cases and any additional strategies we employ to address our liquidity and capital resources; 
+
+ &#149; 
+ 
+ TCEH Corp.&#146;s cash flows and ability to meet its obligations, including under the Tax Receivable Agreement, which are largely dependent upon the earnings of its subsidiaries and the payment of such earnings to TCEH
+Corp. in the form of dividends, distributions, loans or otherwise, and repayment of loans or advances from TCEH Corp.; 
+
+ &#149; 
+ 
+ the actions and decisions of creditors, regulators and other third parties that have an interest in the Chapter 11 Cases with respect to the EFH Debtors; and 
+
+ &#149; 
+ 
+ restrictions on the EFH Debtors due to the terms of debtor-in-possession financing facilities, exit financing and restrictions imposed by the Bankruptcy Court. 
+ Any forward-looking statement speaks only at the date on which it is made, and except as may be required by law, we undertake no obligation to update any
+forward-looking statement to reflect events or circumstances after the date on which it is made or to reflect the occurrence of unanticipated events. New factors emerge from time to time, and it is not possible for us to predict all of them; nor can
+we assess the impact of each such factor or the extent to which any factor, or combination of factors, may cause results to differ materially from those contained in any forward-looking statement. As such, you should not unduly rely on such
+forward-looking statements. 
+ 18 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, each registrant has duly caused this report to be signed on its behalf by
+the undersigned thereunto duly authorized. 
+
+ ENERGY FUTURE HOLDINGS CORP. 
+
+ /s/ Anthony R. Horton 
+ 
+ Name: 
+ 
+ Anthony R. Horton 
+ 
+ Title: 
+ 
+ Executive Vice President & Chief Financial Officer 
+
+ ENERGY FUTURE INTERMEDIATE HOLDING COMPANY LLC 
+
+ /s/ Anthony R. Horton 
+ 
+ Name: 
+ 
+ Anthony R. Horton 
+ 
+ Title: 
+ 
+ Executive Vice President & Chief Financial Officer 
+
+ ENERGY FUTURE COMPETITIVE HOLDINGS COMPANY LLC 
+
+ /s/ Anthony R. Horton 
+ 
+ Name: 
+ 
+ Anthony R. Horton 
+ 
+ Title: 
+ 
+ Executive Vice President & Chief Financial Officer 
+ Dated: October 4, 2016 
+

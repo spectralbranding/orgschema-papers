@@ -1,0 +1,85 @@
+{
+  "case_id": "P135",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "uncertain",
+      "gap_mitigated": "no",
+      "rationale": "The deal is structured as a Section 363(b)/CCAA distressed purchase of \"all or substantially all of the assets and properties\" — the customer-facing printing operations (T4) cross free and clear of claims — while the proposal \"set out no committed terms for transfer of the workforce, management, or operating organization at the proposal stage,\" producing a documented product-vs-process/organization mismatch at the proposal-closing structure (gap_45=1). Because no operating-process transfer terms were committed and no transitional-services/operating agreement allocating the shared substrate is documented, the gap is not mitigated. Whether the operational processes themselves would transfer without the organization (gap_56) cannot be determined, as neither T5 nor T6 transfer terms were set at the proposal stage, so both are uncertain. This is a non-binding proposal with only board approval required and no definitive documentation, so entity/model tiers reflect an asset carve-out from an insolvent seller rather than a whole-entity acquisition."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "uncertain",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as an asset purchase of all or substantially all assets of Quebecor World by R.R. Donnelley subsidiaries. The proposal explicitly states that committed transfer terms for the workforce/operating organization (T6) and specific operational processes (T5) were not set at the proposal stage, making their transfer status uncertain. Consequently, gap_45 and gap_56 cannot be determined."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice records only non-binding proposals for a Section 363/CCAA sale of all or substantially all Quebecor World assets and properties (including printing operations) free and clear into wholly-owned RRD subsidiaries; no definitive agreement or closing is documented. Customer-facing printing assets and the facilities/properties that support them were proposed to move together under the same asset perimeter, so no product-vs-process mismatch at closing is shown (gap_45=0). Committed terms for workforce, management, or operating-organization transfer were expressly not set at the proposal stage, and absent a closing at which processes could move without that organization, gap_56 cannot be documented and is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"uncertain\", \"sigma_T6\": \"uncertain\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"no\", \"rationale\": \"The deal is structured as a Section 363(b)/CCAA distressed purchase of \\\"all or substantially all of the assets and properties\\\" \\u2014 the customer-facing printing operations (T4) cross free and clear of claims \\u2014 while the proposal \\\"set out no committed terms for transfer of the workforce, management, or operating organization at the proposal stage,\\\" producing a documented product-vs-process/organization mismatch at the proposal-closing structure (gap_45=1). Because no operating-process transfer terms were committed and no transitional-services/operating agreement allocating the shared substrate is documented, the gap is not mitigated. Whether the operational processes themselves would transfer without the organization (gap_56) cannot be determined, as neither T5 nor T6 transfer terms were set at the proposal stage, so both are uncertain. This is a non-binding proposal with only board approval required and no definitive documentation, so entity/model tiers reflect an asset carve-out from an insolvent seller rather than a whole-entity acquisition.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"uncertain\",\n\"sigma_T6\": \"uncertain\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"uncertain\",\n\"gap_56\": \"uncertain\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as an asset purchase of all or substantially all assets of Quebecor World by R.R. Donnelley subsidiaries. The proposal explicitly states that committed transfer terms for the workforce/operating organization (T6) and specific operational processes (T5) were not set at the proposal stage, making their transfer status uncertain. Consequently, gap_45 and gap_56 cannot be determined.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice records only non-binding proposals for a Section 363/CCAA sale of all or substantially all Quebecor World assets and properties (including printing operations) free and clear into wholly-owned RRD subsidiaries; no definitive agreement or closing is documented. Customer-facing printing assets and the facilities/properties that support them were proposed to move together under the same asset perimeter, so no product-vs-process mismatch at closing is shown (gap_45=0). Committed terms for workforce, management, or operating-organization transfer were expressly not set at the proposal stage, and absent a closing at which processes could move without that organization, gap_56 cannot be documented and is coded 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "uncertain",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": true,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 3
+}

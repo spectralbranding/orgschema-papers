@@ -1,0 +1,58 @@
+{
+  "case_id": "P240",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; Bank SNB absorbed into Simmons Bank via May 2018 systems conversion/charter merger; no goodwill impairment (enterprise-wide) 2019-2021",
+      "rationale": "The slice documents that Bank SNB's systems conversion and bank-charter merger into Simmons Bank were completed in May 2018 and that the acquired business continued to operate absorbed within Simmons, with no documented product/process incoherence (p4) and no documented operations-versus-organization fracture (p5). Enterprise-wide goodwill impairment \"was neither indicated nor recorded in 2021, 2020 or 2019,\" and no divestiture, impairment, or disruption specific to the former OKSB/Bank SNB business is reported. Absence of any documented disruption at either interface within the window supports coding both pathways 0; no archetype or business-model incompatibility is documented either."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice indicates that the acquirer operates banking as a single reportable segment and provides 'no OKSB- or Bank SNB-specific line item, reporting unit, or segment financial disclosure.' Because there is no business-specific reporting or mention of integration difficulties, there is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'Simmons reported that the systems conversion was completed in May 2018 and provided no subsequent business-specific update indicating product-line or operating-process incoherence, so no p4 disruption is documented. [SRC: SEC accession 0001628280-22-003933, Form 10-K FY2021] The slice also reports no acquired-business-specific employee, management, or operational-fracture evidence in the 2020-2022 window, so no p5 disruption is documented. [SRC: SEC accession 0001628280-22-003933, Form 10-K FY2021]'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; Bank SNB absorbed into Simmons Bank via May 2018 systems conversion/charter merger; no goodwill impairment (enterprise-wide) 2019-2021\", \"rationale\": \"The slice documents that Bank SNB's systems conversion and bank-charter merger into Simmons Bank were completed in May 2018 and that the acquired business continued to operate absorbed within Simmons, with no documented product/process incoherence (p4) and no documented operations-versus-organization fracture (p5). Enterprise-wide goodwill impairment \\\"was neither indicated nor recorded in 2021, 2020 or 2019,\\\" and no divestiture, impairment, or disruption specific to the former OKSB/Bank SNB business is reported. Absence of any documented disruption at either interface within the window supports coding both pathways 0; no archetype or business-model incompatibility is documented either.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice indicates that the acquirer operates banking as a single reportable segment and provides 'no OKSB- or Bank SNB-specific line item, reporting unit, or segment financial disclosure.' Because there is no business-specific reporting or mention of integration difficulties, there is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Simmons reported that the systems conversion was completed in May 2018 and provided no subsequent business-specific update indicating product-line or operating-process incoherence, so no p4 disruption is documented. [SRC: SEC accession 0001628280-22-003933, Form 10-K FY2021] The slice also reports no acquired-business-specific employee, management, or operational-fracture evidence in the 2020-2022 window, so no p5 disruption is documented. [SRC: SEC accession 0001628280-22-003933, Form 10-K FY2021]\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

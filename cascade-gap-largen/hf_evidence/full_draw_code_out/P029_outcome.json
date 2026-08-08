@@ -1,0 +1,58 @@
+{
+  "case_id": "P029",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by BorgWarner on October 1, 2020",
+      "rationale": "The slice notes a reorganization to 'better align our product portfolios and process technology expertise' but does not document a realized fracture or disruption between products and processes over time (p4=0). There is no documented evidence of cultural, management, or organizational fracture against operations (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by BorgWarner Oct 2020 after FY2019 net income drop to $17M",
+      "rationale": "The slice records a FY2019 demand shift toward lower-margin GDi systems, fixed-asset and IT impairments, and a segment reorganization stated to better align product portfolios and process technology expertise, but does not document realized product/process incoherence or inability to align an acquired product with operating processes over time, so p4_pathway is 0. No evidence is given of operations breaking against people, management, or culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': 'Net income fell from $380 million in 2018 to $33 million in 2019'}",
+      "rationale": "{'type': 'string', 'value': 'The FY2019 reorganization was described as intended to better align product portfolios and process-technology expertise, but the slice does not document that a product/process interface failed over time; therefore p4 is 0. Although operating segments were reorganized and asset impairments were recorded, no realized conflict involving operations versus people, management, or culture is documented, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by BorgWarner on October 1, 2020\",\n  \"rationale\": \"The slice notes a reorganization to 'better align our product portfolios and process technology expertise' but does not document a realized fracture or disruption between products and processes over time (p4=0). There is no documented evidence of cultural, management, or organizational fracture against operations (p5=0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by BorgWarner Oct 2020 after FY2019 net income drop to $17M\",\n  \"rationale\": \"The slice records a FY2019 demand shift toward lower-margin GDi systems, fixed-asset and IT impairments, and a segment reorganization stated to better align product portfolios and process technology expertise, but does not document realized product/process incoherence or inability to align an acquired product with operating processes over time, so p4_pathway is 0. No evidence is given of operations breaking against people, management, or culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"Net income fell from $380 million in 2018 to $33 million in 2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"The FY2019 reorganization was described as intended to better align product portfolios and process-technology expertise, but the slice does not document that a product/process interface failed over time; therefore p4 is 0. Although operating segments were reorganized and asset impairments were recorded, no realized conflict involving operations versus people, management, or culture is documented, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

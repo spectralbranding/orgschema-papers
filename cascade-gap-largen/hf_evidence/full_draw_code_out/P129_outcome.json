@@ -1,0 +1,58 @@
+{
+  "case_id": "P129",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Full divestiture of Arysta/agrochemical cluster to UPL for $4.28bn ~48 months after closing; $160m (2017) + $450m (2018) impairments",
+      "rationale": "The slice documents a realized full divestiture of the acquired agrochemical business within ~4 years, with segment goodwill and sale-related impairments ($160m in 2017 attributed to a \"delayed agricultural market recovery\"; $450m in 2018), but the impairment drivers are attributed to market conditions and FX-translation reclassification, not to any documented product/process operational-alignment failure — so p4 cannot be affirmatively coded and is uncertain. For p5, the only organizational evidence is post-divestiture reorganization to consolidate corporate functions into the surviving Performance/Electronics segments with headcount reductions; this is routine restructuring after exit, not a documented fracture between operations and people/culture, so p5 is coded 0. The slice contains no realized evidence about the controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested 100% of Arysta for $4.28 billion",
+      "rationale": "The slice documents the complete divestiture of the Arysta business for $4.28 billion and associated impairments. However, it does not provide evidence of specific product/process integration failures (p4) or process/organization fractures (p5) driving this outcome, only noting it as a 'significant strategic shift'."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "100% of Arysta sold for $4.28 billion within roughly four years",
+      "rationale": "The slice documents the complete Arysta divestiture, preceding impairments, and its characterization as a significant strategic shift, but it does not attribute these outcomes to product-line incompatibility with operating processes; therefore p4 is 0. It also documents post-sale consolidation of corporate functions and headcount reductions, but not a realized breakdown between operations and management, people, or culture during integration; therefore p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Full divestiture of Arysta/agrochemical cluster to UPL for $4.28bn ~48 months after closing; $160m (2017) + $450m (2018) impairments\", \"rationale\": \"The slice documents a realized full divestiture of the acquired agrochemical business within ~4 years, with segment goodwill and sale-related impairments ($160m in 2017 attributed to a \\\"delayed agricultural market recovery\\\"; $450m in 2018), but the impairment drivers are attributed to market conditions and FX-translation reclassification, not to any documented product/process operational-alignment failure \\u2014 so p4 cannot be affirmatively coded and is uncertain. For p5, the only organizational evidence is post-divestiture reorganization to consolidate corporate functions into the surviving Performance/Electronics segments with headcount reductions; this is routine restructuring after exit, not a documented fracture between operations and people/culture, so p5 is coded 0. The slice contains no realized evidence about the controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested 100% of Arysta for $4.28 billion\",\n  \"rationale\": \"The slice documents the complete divestiture of the Arysta business for $4.28 billion and associated impairments. However, it does not provide evidence of specific product/process integration failures (p4) or process/organization fractures (p5) driving this outcome, only noting it as a 'significant strategic shift'.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"100% of Arysta sold for $4.28 billion within roughly four years\",\n  \"rationale\": \"The slice documents the complete Arysta divestiture, preceding impairments, and its characterization as a significant strategic shift, but it does not attribute these outcomes to product-line incompatibility with operating processes; therefore p4 is 0. It also documents post-sale consolidation of corporate functions and headcount reductions, but not a realized breakdown between operations and management, people, or culture during integration; therefore p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

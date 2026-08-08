@@ -1,0 +1,58 @@
+{
+  "case_id": "P135",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no consummation; proposal expired June 10, 2009; no acquired business in FY2013 10-K",
+      "rationale": "The transaction was never consummated: R.R. Donnelley announced on June 10, 2009 that \"its proposal to acquire substantially all of the assets... of Quebecor World has expired,\" and the in-window FY2013 10-K contains no Quebecor World business line, goodwill, impairment, or divestiture. Because no ownership boundary was crossed and no assets were integrated over the window, there is no documented product/process disruption (p4=0) and no documented process/organization fracture (p5=0). Absence of any realized post-close integration disruption drives both codes to 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "transaction never consummated; no assets acquired",
+      "rationale": "The slice documents that R.R. Donnelley's proposal expired on June 10, 2009 after Quebecor World rejection, with no assets crossing and no acquired-business line, goodwill, or divestiture appearing in R.R. Donnelley's FY2013 10-K. Because no ownership boundary was crossed and no post-close operations existed, no product/process interface disruption (p4) or process/organization fracture (p5) is documented over the outcome window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Transaction not consummated; no assets acquired",
+      "rationale": "The proposal expired on June 10, 2009, and no Quebecor World assets crossed to R.R. Donnelley, so no acquired product or operations existed in which a product/process disruption could be realized. R.R. Donnelley's FY2013 Form 10-K showed no acquired-business line, goodwill, impairment, or divestiture attributable to Quebecor World, and the slice documents no process/organization integration fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no consummation; proposal expired June 10, 2009; no acquired business in FY2013 10-K\", \"rationale\": \"The transaction was never consummated: R.R. Donnelley announced on June 10, 2009 that \\\"its proposal to acquire substantially all of the assets... of Quebecor World has expired,\\\" and the in-window FY2013 10-K contains no Quebecor World business line, goodwill, impairment, or divestiture. Because no ownership boundary was crossed and no assets were integrated over the window, there is no documented product/process disruption (p4=0) and no documented process/organization fracture (p5=0). Absence of any realized post-close integration disruption drives both codes to 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"transaction never consummated; no assets acquired\",\n  \"rationale\": \"The slice documents that R.R. Donnelley's proposal expired on June 10, 2009 after Quebecor World rejection, with no assets crossing and no acquired-business line, goodwill, or divestiture appearing in R.R. Donnelley's FY2013 10-K. Because no ownership boundary was crossed and no post-close operations existed, no product/process interface disruption (p4) or process/organization fracture (p5) is documented over the outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Transaction not consummated; no assets acquired\",\n  \"rationale\": \"The proposal expired on June 10, 2009, and no Quebecor World assets crossed to R.R. Donnelley, so no acquired product or operations existed in which a product/process disruption could be realized. R.R. Donnelley's FY2013 Form 10-K showed no acquired-business line, goodwill, impairment, or divestiture attributable to Quebecor World, and the slice documents no process/organization integration fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

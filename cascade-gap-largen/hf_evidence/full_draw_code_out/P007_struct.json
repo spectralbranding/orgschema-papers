@@ -1,0 +1,85 @@
+{
+  "case_id": "P007",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because the slice states the agriculture product platforms (seed and crop protection) and their producing operations (R&D pipeline, routes to market) were \"conveyed together into the new company\" via the Internal Reorganization and Business Realignment, so product and process crossed the boundary together. gap_56 is 1 because the shared corporate/organizational substrate — cash management/treasury, ~$175–225M of leveraged functional and corporate expenses provided at the DowDuPont level, tax, IP, services — \"was not transferred intact\" and had to be re-established standalone, indicating processes/functions transferred without the running organizational substrate. That gap is coded mitigated=yes because the deal documents transition services and a suite of separation, tax, employee, IP cross-license, trademark, services and supply agreements allocating and bridging the shared substrate at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The agriculture product lines (T4) and their producing operations (T5) were conveyed together into Corteva via an internal reorganization, so there is no gap_45. However, the shared corporate substrate (cash management, treasury, corporate services) did not transfer intact, meaning the operational processes (T5) were separated from the parent's overarching corporate organization (T6), creating a gap_56. This gap was mitigated at closing through transition services, IP cross-licenses, and other related agreements."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the agriculture product platforms and their producing operations (R&D pipeline, routes to market) “were conveyed together into the new company” via Internal Reorganization and Business Realignment at closing. gap_56=0 because that same whole-business conveyance, together with the employee matters agreement allocating people/obligations among the three companies, shows processes and organization aligned at closing; the non-transfer of shared corporate treasury/services substrate is a corporate-overhead item bridged by transition-services and related agreements, not a T5-without-T6 structural mismatch of the operating business."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 is 0 because the slice states the agriculture product platforms (seed and crop protection) and their producing operations (R&D pipeline, routes to market) were \\\"conveyed together into the new company\\\" via the Internal Reorganization and Business Realignment, so product and process crossed the boundary together. gap_56 is 1 because the shared corporate/organizational substrate \\u2014 cash management/treasury, ~$175\\u2013225M of leveraged functional and corporate expenses provided at the DowDuPont level, tax, IP, services \\u2014 \\\"was not transferred intact\\\" and had to be re-established standalone, indicating processes/functions transferred without the running organizational substrate. That gap is coded mitigated=yes because the deal documents transition services and a suite of separation, tax, employee, IP cross-license, trademark, services and supply agreements allocating and bridging the shared substrate at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The agriculture product lines (T4) and their producing operations (T5) were conveyed together into Corteva via an internal reorganization, so there is no gap_45. However, the shared corporate substrate (cash management, treasury, corporate services) did not transfer intact, meaning the operational processes (T5) were separated from the parent's overarching corporate organization (T6), creating a gap_56. This gap was mitigated at closing through transition services, IP cross-licenses, and other related agreements.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the agriculture product platforms and their producing operations (R&D pipeline, routes to market) “were conveyed together into the new company” via Internal Reorganization and Business Realignment at closing. gap_56=0 because that same whole-business conveyance, together with the employee matters agreement allocating people/obligations among the three companies, shows processes and organization aligned at closing; the non-transfer of shared corporate treasury/services substrate is a corporate-overhead item bridged by transition-services and related agreements, not a T5-without-T6 structural mismatch of the operating business.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

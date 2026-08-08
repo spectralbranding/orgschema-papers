@@ -1,0 +1,85 @@
+{
+  "case_id": "P151",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "uncertain",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the businesses were sold \"as a going concern,\" with the producing/delivering operations (Sears Home Services, Auto Centers, PartsDirect, home delivery/installation, e-commerce websites) transferring alongside the stores and brands rather than the product being detached from its operations. gap_56 is 0 because the Purchase Agreement provided that Buyer would offer ongoing employment to approximately 45,000 employees with salary continuation and comparable benefits, so the organization/people moved coherently with the processes at closing. T4 is coded subset because only ~425 go-forward stores plus specified brands/businesses crossed the boundary (not the entire footprint), and T3 is swap given the Chapter 11 Section 363 sale into a new legal vehicle (Transform Holdco LLC). T1 is replace since the same controlling principal (Lampert/ESL) acquired the assets but stepped down from the Sears Board at closing, shifting controlling intent from the debtor to the new buyer entity."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice expressly states that operating processes moved WITH the product: the businesses were sold 'as a going concern,' including home delivery, retail installation, service/repair operations (Sears Home Services, Auto Centers, PartsDirect) and e-commerce websites, so producing/delivering operations transferred alongside stores and brands (gap_45=0). It likewise states people/organization moved WITH the processes: the Purchase Agreement required Buyer to offer ongoing employment to approximately 45,000 employees with salary continuation, substantially comparable benefits, and severance reinstatement (gap_56=0). No product-vs-process or process-vs-organization structural mismatch is documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The businesses were sold as a going concern, with home-delivery, installation, service, repair, and e-commerce operations transferring alongside the stores, brands, and other customer-facing assets, so no T4-T5 mismatch is documented at closing. [SRC: SEC accession 0001193125-19-016016, 8-K \"Assets and Consideration\"] Buyer also agreed to offer ongoing employment to approximately 45,000 employees with salary continuation and substantially comparable benefits, aligning the people organization with the transferred operations and supporting gap_56 = 0. [SRC: SEC accession 0001193125-19-016016, 8-K \"Assets and Consideration\"]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"uncertain\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is 0 because the slice states the businesses were sold \\\"as a going concern,\\\" with the producing/delivering operations (Sears Home Services, Auto Centers, PartsDirect, home delivery/installation, e-commerce websites) transferring alongside the stores and brands rather than the product being detached from its operations. gap_56 is 0 because the Purchase Agreement provided that Buyer would offer ongoing employment to approximately 45,000 employees with salary continuation and comparable benefits, so the organization/people moved coherently with the processes at closing. T4 is coded subset because only ~425 go-forward stores plus specified brands/businesses crossed the boundary (not the entire footprint), and T3 is swap given the Chapter 11 Section 363 sale into a new legal vehicle (Transform Holdco LLC). T1 is replace since the same controlling principal (Lampert/ESL) acquired the assets but stepped down from the Sears Board at closing, shifting controlling intent from the debtor to the new buyer entity.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice expressly states that operating processes moved WITH the product: the businesses were sold 'as a going concern,' including home delivery, retail installation, service/repair operations (Sears Home Services, Auto Centers, PartsDirect) and e-commerce websites, so producing/delivering operations transferred alongside stores and brands (gap_45=0). It likewise states people/organization moved WITH the processes: the Purchase Agreement required Buyer to offer ongoing employment to approximately 45,000 employees with salary continuation, substantially comparable benefits, and severance reinstatement (gap_56=0). No product-vs-process or process-vs-organization structural mismatch is documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The businesses were sold as a going concern, with home-delivery, installation, service, repair, and e-commerce operations transferring alongside the stores, brands, and other customer-facing assets, so no T4-T5 mismatch is documented at closing. [SRC: SEC accession 0001193125-19-016016, 8-K \\\"Assets and Consideration\\\"] Buyer also agreed to offer ongoing employment to approximately 45,000 employees with salary continuation and substantially comparable benefits, aligning the people organization with the transferred operations and supporting gap_56 = 0. [SRC: SEC accession 0001193125-19-016016, 8-K \\\"Assets and Consideration\\\"]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,36 @@
+# Structural sub-dossier — Hewlett Packard Enterprise Company separation from Hewlett-Packard Company (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- In October 2014 Hewlett-Packard Company ("HP Co.") announced plans to separate into two independent companies; the first, Hewlett Packard Enterprise Company ("Hewlett Packard Enterprise"), and the second, HP Inc., which would own and operate the printing and personal systems businesses. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1 information statement]
+- The separation was structured to occur by means of a pro rata distribution to HP Co. stockholders of 100% of the outstanding shares of Hewlett Packard Enterprise; in connection with the separation HP Co. would be renamed HP Inc., leaving stockholders with ownership interests in both companies. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Each HP Co. stockholder would receive a stated distribution ratio of Hewlett Packard Enterprise shares for every one HP Co. share held on the record date; stockholders were not required to pay consideration or surrender or exchange their HP Co. shares to participate, and the distribution was intended to be generally tax-free for U.S. federal income tax purposes. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Hewlett Packard Enterprise, then a wholly owned subsidiary of HP Co., was formed to hold HP Co.'s Enterprise Group, Enterprise Services, Software and Financial Services businesses. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+
+## What crossed the ownership boundary at the tier level
+- Customer-facing product/asset: the registrant organized its business into five segments — Enterprise Group (technology infrastructure), Software (IT-operations automation and analytics), Enterprise Services (consulting and support), Hewlett Packard Financial Services (IT consumption financing) and Corporate Investments (Hewlett Packard Enterprise Labs and business incubation projects). [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- People / organization: the registrant stated it had approximately 252,000 employees as of July 31, 2015; the operating businesses, their delivery organizations and their workforce were held within the entity being distributed. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Management continuity: Margaret C. Whitman, the then-Chairman and Chief Executive Officer of HP Co., was expected to serve as Chief Executive Officer and a board member of Hewlett Packard Enterprise and as nonexecutive Chairman of the board of HP Inc. upon completion of the separation. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Capital structure allocated at separation: the registrant stated it would have total debt of approximately $16 billion immediately following the separation. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+
+## Shared substrate divided between the two companies (closing-time)
+- Because the two companies were being separated out of a single previously integrated company, functions historically shared across HP Co. were divided rather than transferred whole; the transaction agreements provided for the allocation between Hewlett Packard Enterprise and HP Inc. of HP Co.'s assets, employees, liabilities and obligations attributable to periods before, at and after the separation. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+
+## Contractual arrangements bridging the shared substrate at closing
+- Separation and distribution agreement: entered into with HP Co. to effect the separation and provide a framework for the post-separation relationship with HP Inc. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Transition services agreement: HP Inc. and Hewlett Packard Enterprise (and their subsidiaries) would provide various services to each other on an interim, transitional basis — including finance, human resources, information technology, marketing, real estate, sales support, supply chain and tax services — generally for a period of up to 24 months, with charges for the majority of services determined on a cost-plus basis. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- IT service agreement: one of the registrant's subsidiaries would provide HP Inc. with certain application development and maintenance and IT infrastructure services following the separation. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Commercial agreement: would establish a bilateral relationship between HP Inc. and the registrant for the purchase and sale of products and services (internal use, incorporation and bundling in OEM products, resale, use in managed services) and joint pursuits and development activities. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- Additional agreements at separation included a tax matters agreement, an employee matters agreement and a real estate matters agreement. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+- The registrant noted that its interim arrangements with HP Inc. "may not fully capture the benefits that we enjoyed as a result of being integrated with HP Co." [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+
+## Closing-time restructuring plan disclosed as a subsequent event
+- On September 14, 2015, the Parent's Board of Directors approved a restructuring plan in connection with the separation, to be implemented through fiscal 2018; the Company disclosed that it expected up to approximately 30,000 employees to exit by the end of 2018, with estimated aggregate pre-tax charges between fiscal 2016 and fiscal 2018 of approximately $2.7 billion (approximately $2.2 billion for workforce reductions and approximately $500 million primarily for real estate consolidation). [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]
+
+## Structural summary (closing only)
+- The transaction split a single previously integrated company into two independent public companies by distributing 100% of the newly formed registrant's shares pro rata to HP Co. stockholders; the registrant received the Enterprise Group, Enterprise Services, Software and Financial Services businesses (five reported segments), approximately 252,000 employees, and continuity of the incumbent chief executive, while the functions historically shared across the integrated company (finance, HR, IT, marketing, real estate, sales support, supply chain, tax) were allocated between the two companies and bridged at closing by a separation and distribution agreement, a transition services agreement (up to 24 months, cost-plus), an IT service agreement, a commercial agreement, and tax, employee and real estate matters agreements. [SRC: SEC accession 0001193125-15-320565, Form 10-12B EX-99.1]

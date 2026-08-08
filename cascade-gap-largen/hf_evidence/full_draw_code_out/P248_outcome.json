@@ -1,0 +1,58 @@
+{
+  "case_id": "P248",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired vessels transferred into Euronav ownership 2018; majority of acquired vessel-owning subsidiaries liquidated 2019-2020; four Gener8-associated entities remained 100%-owned through YE2022 (no divestiture/write-down documented)",
+      "rationale": "The realized record shows structural continuity: \"All of the vessels have been transferred to Euronav NV in 2018,\" the acquired vessel-owning subsidiaries were liquidated in 2019-2020 as an orderly consolidation, and four Gener8-associated entities remained 100%-owned Group entities through YE2022 — no documented product/operations incoherence realized over time (p4=0). No documented operations-vs-organization fracture appears; the only continuing dispute (RMK Maritime advisory-fee claim) is a third-party fee matter tied to the 2016-2017 merger advisory, not an internal operations/culture breakdown (p5=0). No segment-specific financial scalar, divestiture, write-down, or bankruptcy attributable to the former Gener8 fleet is disclosed."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice does not document any product/process disruption (p4) or process/organization fracture (p5) over the 3-5 year horizon. The acquired vessels were successfully transferred to Euronav, and the remaining corporate entities were continuously held as 100%-owned subsidiaries through 2022 without reported integration breakdowns."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; vessels retained, majority subs liquidated 2019-20",
+      "rationale": "The slice documents that acquired vessels were transferred into Euronav ownership in 2018 and a majority of vessel-owning subsidiaries were liquidated in 2019-2020 as routine cleanup, with four Gener8-associated entities remaining 100%-owned through year-end 2022; no product/process misalignment or product-line incoherence is described. No fracture at the process/organization interface (operations vs people/management/culture) is documented—only a third-party advisory-fee lawsuit tied to the merger and a continuing office sublease—so both p4_pathway and p5_pathway are coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"acquired vessels transferred into Euronav ownership 2018; majority of acquired vessel-owning subsidiaries liquidated 2019-2020; four Gener8-associated entities remained 100%-owned through YE2022 (no divestiture/write-down documented)\", \"rationale\": \"The realized record shows structural continuity: \\\"All of the vessels have been transferred to Euronav NV in 2018,\\\" the acquired vessel-owning subsidiaries were liquidated in 2019-2020 as an orderly consolidation, and four Gener8-associated entities remained 100%-owned Group entities through YE2022 \\u2014 no documented product/operations incoherence realized over time (p4=0). No documented operations-vs-organization fracture appears; the only continuing dispute (RMK Maritime advisory-fee claim) is a third-party fee matter tied to the 2016-2017 merger advisory, not an internal operations/culture breakdown (p5=0). No segment-specific financial scalar, divestiture, write-down, or bankruptcy attributable to the former Gener8 fleet is disclosed.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice does not document any product/process disruption (p4) or process/organization fracture (p5) over the 3-5 year horizon. The acquired vessels were successfully transferred to Euronav, and the remaining corporate entities were continuously held as 100%-owned subsidiaries through 2022 without reported integration breakdowns.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; vessels retained, majority subs liquidated 2019-20\",\n  \"rationale\": \"The slice documents that acquired vessels were transferred into Euronav ownership in 2018 and a majority of vessel-owning subsidiaries were liquidated in 2019-2020 as routine cleanup, with four Gener8-associated entities remaining 100%-owned through year-end 2022; no product/process misalignment or product-line incoherence is described. No fracture at the process/organization interface (operations vs people/management/culture) is documented—only a third-party advisory-fee lawsuit tied to the merger and a continuing office sublease—so both p4_pathway and p5_pathway are coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

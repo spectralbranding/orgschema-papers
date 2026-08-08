@@ -1,0 +1,85 @@
+{
+  "case_id": "P027",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction is a spin-off of EchoStar Holding Corporation from EchoStar Communications Corporation. The product/assets (T4) transferred included the set-top box business and satellite services, which moved with their direct operational processes (T5), so gap_45 is 0. However, the corporate functions and several key executives (CFO, GC, Controller) remained employed by the parent company (ECC) and were provided back to EHC via a Management Services Agreement and Transition Services Agreement, creating a structural mismatch between the operations (T5) and the management/organization (T6) at closing, making gap_56 = 1. This gap was mitigated by the aforementioned agreements."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0 because the customer-facing products that crossed (set-top box design/distribution and fixed-satellite services built on contributed satellites, broadcast centers, fiber, and Sling Media) moved together with their core operating assets and approximately 1,500 employees; the non-transferring items were shared corporate overhead functions, not the production/delivery processes for those products. gap_56=1 because those operational and corporate processes were left dependent on organization that did not transfer coherently: per the Management Services Agreement, EHC’s CFO, General Counsel, and Controller remained employed by ECC while serving EHC, and historically shared corporate functions (treasury, tax, accounting, legal, HR, IT) stayed at ECC, bridged only by the two-year Transition Services Agreement and related cost-plus intercompany agreements documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that the customer-facing set-top-box and satellite-services assets moved to EHC, while historically shared treasury, tax, accounting, legal, HR, IT, and other corporate processes did not transfer as an intact operating substrate, documenting a T4–T5 gap at closing. It also states that several officers serving EHC remained employed by ECC and that ECC continued supplying corporate functions, documenting a T5–T6 mismatch. These gaps were contractually absorbed through the two-year transition services agreement, management services agreement, and related commercial and operating agreements."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The transaction is a spin-off of EchoStar Holding Corporation from EchoStar Communications Corporation. The product/assets (T4) transferred included the set-top box business and satellite services, which moved with their direct operational processes (T5), so gap_45 is 0. However, the corporate functions and several key executives (CFO, GC, Controller) remained employed by the parent company (ECC) and were provided back to EHC via a Management Services Agreement and Transition Services Agreement, creating a structural mismatch between the operations (T5) and the management/organization (T6) at closing, making gap_56 = 1. This gap was mitigated by the aforementioned agreements.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=0 because the customer-facing products that crossed (set-top box design/distribution and fixed-satellite services built on contributed satellites, broadcast centers, fiber, and Sling Media) moved together with their core operating assets and approximately 1,500 employees; the non-transferring items were shared corporate overhead functions, not the production/delivery processes for those products. gap_56=1 because those operational and corporate processes were left dependent on organization that did not transfer coherently: per the Management Services Agreement, EHC’s CFO, General Counsel, and Controller remained employed by ECC while serving EHC, and historically shared corporate functions (treasury, tax, accounting, legal, HR, IT) stayed at ECC, bridged only by the two-year Transition Services Agreement and related cost-plus intercompany agreements documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that the customer-facing set-top-box and satellite-services assets moved to EHC, while historically shared treasury, tax, accounting, legal, HR, IT, and other corporate processes did not transfer as an intact operating substrate, documenting a T4–T5 gap at closing. It also states that several officers serving EHC remained employed by ECC and that ECC continued supplying corporate functions, documenting a T5–T6 mismatch. These gaps were contractually absorbed through the two-year transition services agreement, management services agreement, and related commercial and operating agreements.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

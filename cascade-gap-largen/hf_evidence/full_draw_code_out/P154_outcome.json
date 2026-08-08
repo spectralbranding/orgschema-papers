@@ -1,0 +1,58 @@
+{
+  "case_id": "P154",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "dissolved/deregistered via Form 15 on 2016-08-31; equity cancelled; no public 3-5yr operating record",
+      "rationale": "The analyzed entity was dissolved and deregistered on its August 31, 2016 emergence, with equity cancelled and the duty to file reports terminated by Form 15, and no periodic report was filed thereafter. As a result there is no audited financial statement, divestiture, or realized operating scalar attributable to the entity for the ~2019–2021 window, so no documented product/process disruption (p4) or process/organization fracture (p5) can be observed. Any successor operating results are explicitly noted as unverified and not attributable to the analyzed entity, so all pathway fields are coded uncertain (no public record)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "dissolved/deregistered Aug 2016; no 3-5yr public operating record",
+      "rationale": "The slice establishes that Molycorp, Inc. was dissolved on the plan effective date, equity was cancelled, and Form 15 terminated reporting, with no periodic reports thereafter (Form 15; Form 8-K Item 1.03). Consequently no realized 3-5-year operating trajectory exists for the analyzed entity, and no product/process interface disruption (p4) or process/organization fracture (p5) is documented. Absence of any such realized-outcome evidence is therefore coded 0 for both pathways."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "Molycorp, Inc. was dissolved and deregistered on August 31, 2016 and did not continue as a reporting operating company. Because no periodic reports or audited public operating record exist for the 2019–2021 outcome window, neither product/process disruption nor process/organization fracture can be determined."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"dissolved/deregistered via Form 15 on 2016-08-31; equity cancelled; no public 3-5yr operating record\", \"rationale\": \"The analyzed entity was dissolved and deregistered on its August 31, 2016 emergence, with equity cancelled and the duty to file reports terminated by Form 15, and no periodic report was filed thereafter. As a result there is no audited financial statement, divestiture, or realized operating scalar attributable to the entity for the ~2019\\u20132021 window, so no documented product/process disruption (p4) or process/organization fracture (p5) can be observed. Any successor operating results are explicitly noted as unverified and not attributable to the analyzed entity, so all pathway fields are coded uncertain (no public record).\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"dissolved/deregistered Aug 2016; no 3-5yr public operating record\",\n  \"rationale\": \"The slice establishes that Molycorp, Inc. was dissolved on the plan effective date, equity was cancelled, and Form 15 terminated reporting, with no periodic reports thereafter (Form 15; Form 8-K Item 1.03). Consequently no realized 3-5-year operating trajectory exists for the analyzed entity, and no product/process interface disruption (p4) or process/organization fracture (p5) is documented. Absence of any such realized-outcome evidence is therefore coded 0 for both pathways.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"Molycorp, Inc. was dissolved and deregistered on August 31, 2016 and did not continue as a reporting operating company. Because no periodic reports or audited public operating record exist for the 2019–2021 outcome window, neither product/process disruption nor process/organization fracture can be determined.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P314",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal transferred Energen whole as a surviving wholly owned subsidiary operating the same Permian Basin E&P business model as Diamondback, so the customer-facing oil-and-gas assets (T4) and the operational processes that produce them (T5) crossed the ownership boundary together within the same going-concern entity — no product-vs-process mismatch is documented (gap_45=0). The employee-matters covenant contractually preserved \"continuing employees,\" compensation, benefits, and prior-service recognition alongside the transferred operations, so processes (T5) did not move without the people/organization (T6) running them (gap_56=0), even though the controlling board/officer tier was replaced by Diamondback's slate. T1 is replace (Energen's board/officers resigned; Travis Stice became sole director and Diamondback personnel filled officer roles), and T6 is partial because rank-and-file continuity was bridged while the entire management/leadership tier was displaced."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a full acquisition where Energen became a wholly owned subsidiary of Diamondback. The product (oil and gas reserves/production) and operational processes transferred together (gap_45 = 0). The organization and employees also transferred with the operations, supported by employee-matters covenants for continuing employees (gap_56 = 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Energen survived the merger as Diamondback’s wholly owned subsidiary, so its customer-facing oil-and-gas assets and associated operations crossed the ownership boundary together; no product carve-out, process exclusion, or licensing-only structure is documented (SEC accession 0001193125-18-306638). Although Energen’s directors and officers departed, Diamondback personnel filled the surviving entity’s management roles at closing, while continuing employees and benefit obligations were contractually carried forward, documenting organizational alignment alongside the transferred operations rather than a process-organization gap (SEC accessions 0001193125-18-339277 and 0001193125-18-306638)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal transferred Energen whole as a surviving wholly owned subsidiary operating the same Permian Basin E&P business model as Diamondback, so the customer-facing oil-and-gas assets (T4) and the operational processes that produce them (T5) crossed the ownership boundary together within the same going-concern entity \\u2014 no product-vs-process mismatch is documented (gap_45=0). The employee-matters covenant contractually preserved \\\"continuing employees,\\\" compensation, benefits, and prior-service recognition alongside the transferred operations, so processes (T5) did not move without the people/organization (T6) running them (gap_56=0), even though the controlling board/officer tier was replaced by Diamondback's slate. T1 is replace (Energen's board/officers resigned; Travis Stice became sole director and Diamondback personnel filled officer roles), and T6 is partial because rank-and-file continuity was bridged while the entire management/leadership tier was displaced.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a full acquisition where Energen became a wholly owned subsidiary of Diamondback. The product (oil and gas reserves/production) and operational processes transferred together (gap_45 = 0). The organization and employees also transferred with the operations, supported by employee-matters covenants for continuing employees (gap_56 = 0).\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Energen survived the merger as Diamondback’s wholly owned subsidiary, so its customer-facing oil-and-gas assets and associated operations crossed the ownership boundary together; no product carve-out, process exclusion, or licensing-only structure is documented (SEC accession 0001193125-18-306638). Although Energen’s directors and officers departed, Diamondback personnel filled the surviving entity’s management roles at closing, while continuing employees and benefit obligations were contractually carried forward, documenting organizational alignment alongside the transferred operations rather than a process-organization gap (SEC accessions 0001193125-18-339277 and 0001193125-18-306638).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,37 @@
+# Structural sub-dossier — Rowan Companies plc combination with Ensco plc (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- Ensco plc and Rowan Companies plc entered into a Transaction Agreement dated October 7, 2018 providing for Ensco to acquire the entire issued and to-be-issued Class A ordinary share capital of Rowan by way of a court-sanctioned scheme of arrangement under Part 26 of the UK Companies Act 2006. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- Under the terms disclosed in the joint proxy statement dated December 11, 2018, eligible Rowan shareholders were to receive 2.215 new Ensco Class A ordinary shares for each Rowan Class A ordinary share held, with Ensco and Rowan shareholders anticipated to hold approximately 61% and 39% of the combined company, respectively; the proxy statement also disclosed that in connection with closing, Ensco would be renamed Ensco Rowan plc and would trade on the NYSE under a new symbol. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- The transaction closed on April 11, 2019; at the effective time each outstanding Rowan ordinary share was converted into the right to receive 2.750 Ensco Class A ordinary shares (an amended ratio from the 2.215 figure disclosed in the December 2018 proxy statement), plus cash in lieu of fractional shares. [SRC: SEC accession 0001144204-19-019311, Form 8-K]
+- Both companies were public limited companies organized under the laws of England and Wales (Ensco registered number 07023598; Rowan registered number 07805263), each listed on the New York Stock Exchange (Ensco: "ESV"; Rowan: "RDC"). [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+
+## What crossed the ownership boundary at closing
+- Ensco described itself as a global offshore contract drilling company operating a fleet of 56 rigs (three under construction) across strategic markets globally, with approximately 5,400 personnel as of December 31, 2017 (pro forma for its earlier acquisition of Atwood Oceanics, Inc.). [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- Rowan described itself as a global provider of offshore contract drilling services focused on high-specification and harsh-environment jack-up rigs and ultra-deepwater drillships, organized in three segments — Deepwater (four ultra-deepwater drillships), Jack-ups (21 self-elevating jack-up rigs), and Saudi Aramco Rowan Offshore Drilling Company ("ARO", Rowan's 50/50 joint venture with Saudi Aramco Development Company, which itself owned seven jack-up rigs) — with approximately 2,800 personnel as of December 31, 2017. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- The stated rationale for the transaction was to create a global offshore drilling company by combining the two companies' fleet composition, geographic scope, and customer bases; the customer-facing asset each company brought to the combination was contract drilling capacity delivered through its owned/operated rig fleet. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+
+## Controlling intent / governance at closing
+- Rowan's President and CEO, Dr. Thomas Burke, was designated to become President and CEO of the combined company for a two-year term following the effective time; Ensco's President and CEO, Dr. Carl Trowell, was designated Executive Chairman for an 18-month term; Ensco's Senior Vice President and CFO (Jon Baksht), Executive Vice President and COO (Patrick Carey Lowe), and Senior Vice President, General Counsel and Secretary (Michael T. McGuinty) were designated to continue in those roles for the combined company. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- The combined company's board was set at 11 members, comprising six directors designated by Ensco and five directors designated by Rowan. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- At the effective time, all of Rowan's existing directors except Dr. Burke resigned from Rowan's own board (Rowan continuing on as an indirect wholly-owned subsidiary of the combined company), and all Rowan corporate officers other than Burke and two others (Darin Gibbins, Dennis Baldwin) ceased serving in their Rowan officer capacities; the filing stated these departures were not related to any disagreement over Rowan's operations, policies, or practices. [SRC: SEC accession 0001144204-19-019311, Form 8-K]
+
+## Minority joint-venture interest bridging the transaction (ARO)
+- Rowan's 50% joint-venture partner in ARO, a subsidiary of Saudi Aramco Development Company, held contractual rights triggered by a change of control of Rowan, including an option to purchase Rowan's interest in the joint venture; on October 4, 2018, that subsidiary delivered a letter waiving the purchase option and consenting to completion of the transaction, three days before the Transaction Agreement was signed. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+
+## Employee-level equity and severance arrangements
+- Ensco automatically assumed the change-in-control agreements that Rowan had in place with its executive officers; completion of the transaction constituted a change of control under those agreements. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A]
+- Outstanding Rowan equity awards (restricted share units, performance units, share options, share appreciation rights, and non-employee director units) were converted into equivalent Ensco awards, or accelerated and cashed out, at the effective time under formulas keyed to the exchange ratio. [SRC: SEC accession 0001144204-19-019311, Form 8-K]
+
+## Public-listing mechanics at closing
+- Rowan requested that the NYSE suspend trading of Rowan ordinary shares, remove them from listing, and file a Form 25 notification to remove Rowan's shares from listing and deregister them under Exchange Act Section 12(b); Rowan ordinary shares ceased trading before the market opened on the closing date. [SRC: SEC accession 0001144204-19-019311, Form 8-K]
+- The issuance of Ensco ordinary shares to Rowan shareholders was made under an exemption from Securities Act registration provided by Section 3(a)(10). [SRC: SEC accession 0001144204-19-019311, Form 8-K]
+
+## Structural summary (closing only)
+- The transaction combined two similarly sized, publicly listed UK offshore-drilling companies through a share-for-share scheme of arrangement rather than a cash sale, with the surviving public company retaining Ensco's corporate shell (renamed at closing) while adopting co-leadership drawn from both predecessor companies (a Rowan-designated CEO, an Ensco-designated Executive Chairman, and Ensco-designated CFO/COO/General Counsel) and a board split six-to-five between the two legacy companies; a pre-existing 50/50 joint venture with a third-party partner (a Saudi Aramco Development Company subsidiary) was preserved through a negotiated waiver of that partner's change-of-control purchase option rather than being unwound. [SRC: SEC accession 0001047469-18-007567, Form DEFM14A; SEC accession 0001144204-19-019311, Form 8-K]

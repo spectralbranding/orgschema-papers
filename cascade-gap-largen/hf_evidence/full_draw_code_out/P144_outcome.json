@@ -1,0 +1,58 @@
+{
+  "case_id": "P144",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "transaction not consummated",
+      "rationale": "The slice explicitly states that the Asset Purchase Agreement was not consummated because the seller withdrew its motion for bankruptcy court approval. Since the transaction never closed, there was no post-deal integration, meaning no product/process (p4) or process/organization (p5) disruptions could occur."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "transaction never consummated; no assets transferred",
+      "rationale": "The slice documents that the Asset Purchase Agreement was not consummated after the Seller withdrew its Bankruptcy Court approval motion, so no ownership boundary was crossed and no product or process assets transferred to NVR. NVR's FY2013 10-K contains no reference to Orleans and shows only NVR's own continuing homebuilding operations, providing no documented product/process interface disruption or process/organization fracture over the outcome window."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Transaction not consummated; no acquired-business outcome'}",
+      "rationale": "{'type': 'string', 'enum': \"The transaction was not consummated after the seller withdrew its court-approval motion, so no acquired business existed in which a product/process disruption or process/organization fracture could develop. NVR's FY2013 annual report contained no Orleans-related business line, goodwill, impairment, or divestiture, and therefore documents neither a p4 nor a p5 pathway.\"}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"transaction not consummated\",\n  \"rationale\": \"The slice explicitly states that the Asset Purchase Agreement was not consummated because the seller withdrew its motion for bankruptcy court approval. Since the transaction never closed, there was no post-deal integration, meaning no product/process (p4) or process/organization (p5) disruptions could occur.\"\n}\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"transaction never consummated; no assets transferred\",\n  \"rationale\": \"The slice documents that the Asset Purchase Agreement was not consummated after the Seller withdrew its Bankruptcy Court approval motion, so no ownership boundary was crossed and no product or process assets transferred to NVR. NVR's FY2013 10-K contains no reference to Orleans and shows only NVR's own continuing homebuilding operations, providing no documented product/process interface disruption or process/organization fracture over the outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Transaction not consummated; no acquired-business outcome\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The transaction was not consummated after the seller withdrew its court-approval motion, so no acquired business existed in which a product/process disruption or process/organization fracture could develop. NVR's FY2013 annual report contained no Orleans-related business line, goodwill, impairment, or divestiture, and therefore documents neither a p4 nor a p5 pathway.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

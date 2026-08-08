@@ -1,0 +1,85 @@
+{
+  "case_id": "P259",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 = 0: RSP's customer-facing asset (Midland and Delaware Basin acreage) crossed the boundary and was \"combined into Concho's operations\" as an operating-area integration, so the product moved together with its operational/production processes rather than being severed from them. gap_56 = 1: at the effective time all RSP pre-merger directors ceased, Concho's own leadership (Leach as sole director/CEO) took control, only RSP's CEO gained a single board seat, and RSP's named executives were subject to double-trigger severance (with $56M in severance recorded), so processes/assets transferred without the RSP organization/people carrying forward coherently. gap_mitigated = no: the only bridging of the shared Dallas-office substrate was a \"negotiated, time-limited commitment,\" expressly not documented as a separate disclosed transitional-services agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice states RSP's Midland/Delaware acreage (T4 product/asset base) was combined at closing directly into Concho's four operating areas, so product and operating processes moved together under Concho ops with no product-vs-process structural mismatch documented. gap_56=1 because the same closing structure placed Concho officers (Leach CEO, Harper, Wright, Schroer) in control of the surviving RSP subsidiary and records that RSP's board ceased, named executive employment was not assured (double-trigger severance; $56M severance recorded in the closing year), and only Gray took a single Concho board seat—i.e., processes were absorbed without the pre-merger RSP organization transferring intact. The Dallas-HQ bridge was only a negotiated time-limited commitment, not a disclosed transitional-services agreement, so the gap was not contractually mitigated via TSA."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "RSP's Midland and Delaware Basin acreage was combined into Concho's operating areas at closing, so the customer-facing asset base and the operations associated with it crossed the boundary together, supporting gap_45=0. In contrast, RSP's pre-merger organization did not carry forward intact: its directors ceased serving at RSP, Concho executives assumed subsidiary management, and severance was recorded for certain RSP employees, supporting gap_56=1. The Dallas-office commitment was time-limited, and the slice expressly states that no separate disclosed transitional-services agreement formally allocated the shared substrate, so the documented gap was not contractually mitigated in the specified manner."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 = 0: RSP's customer-facing asset (Midland and Delaware Basin acreage) crossed the boundary and was \\\"combined into Concho's operations\\\" as an operating-area integration, so the product moved together with its operational/production processes rather than being severed from them. gap_56 = 1: at the effective time all RSP pre-merger directors ceased, Concho's own leadership (Leach as sole director/CEO) took control, only RSP's CEO gained a single board seat, and RSP's named executives were subject to double-trigger severance (with $56M in severance recorded), so processes/assets transferred without the RSP organization/people carrying forward coherently. gap_mitigated = no: the only bridging of the shared Dallas-office substrate was a \\\"negotiated, time-limited commitment,\\\" expressly not documented as a separate disclosed transitional-services agreement.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice states RSP's Midland/Delaware acreage (T4 product/asset base) was combined at closing directly into Concho's four operating areas, so product and operating processes moved together under Concho ops with no product-vs-process structural mismatch documented. gap_56=1 because the same closing structure placed Concho officers (Leach CEO, Harper, Wright, Schroer) in control of the surviving RSP subsidiary and records that RSP's board ceased, named executive employment was not assured (double-trigger severance; $56M severance recorded in the closing year), and only Gray took a single Concho board seat—i.e., processes were absorbed without the pre-merger RSP organization transferring intact. The Dallas-HQ bridge was only a negotiated time-limited commitment, not a disclosed transitional-services agreement, so the gap was not contractually mitigated via TSA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"RSP's Midland and Delaware Basin acreage was combined into Concho's operating areas at closing, so the customer-facing asset base and the operations associated with it crossed the boundary together, supporting gap_45=0. In contrast, RSP's pre-merger organization did not carry forward intact: its directors ceased serving at RSP, Concho executives assumed subsidiary management, and severance was recorded for certain RSP employees, supporting gap_56=1. The Dallas-office commitment was time-limited, and the slice expressly states that no separate disclosed transitional-services agreement formally allocated the shared substrate, so the documented gap was not contractually mitigated in the specified manner.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

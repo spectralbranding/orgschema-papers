@@ -1,0 +1,85 @@
+{
+  "case_id": "P171",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The reserve base (T4) remained with the Company and its subsidiaries at closing (New First Lien Exit Facility secured by mortgages on ≥95% PV-9 of proved reserves; \"no sale or divestiture of the oil-and-gas asset base is described\"), and the same operating subsidiaries (SandRidge E&P, Operating Company, Midstream, etc.) continued in place as Guarantors, so product and its producing processes moved together — gap_45=0. The incumbent executive-officer team continued unchanged through the Effective Date alongside those continuing operating processes, so process and organization stayed aligned — gap_56=0. This was a debt-to-equity recapitalization of a single continuing legal entity (T3 charter amended, not new entity), with only controlling equity/intent replaced (pre-Effective equity cancelled; new equity to creditors; majority of board replaced), hence T1=replace."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a Chapter 11 reorganization where the pre-petition equity was cancelled and new equity was issued to creditors, replacing the controlling intent (T1). The business model, legal entity, products (reserves), operations (subsidiaries), and organization (incumbent management) all continued 1-1. There were no structural gaps between T4 and T5, or T5 and T6, as the entire company emerged intact."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The reserve base remained with the continuing company and its subsidiaries, while the same operating subsidiaries continued as guarantors under the new exit facility; no sale, divestiture, or separation of a customer-facing business line was described, so no product-process gap existed at closing. The incumbent executive-officer team continued unchanged through the Effective Date alongside those continuing operating subsidiaries, so the evidence documents no process-organization mismatch at closing. [SRC: SEC accession 0001193125-16-733811, Form 8-K Items 1.01 and 5.02]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The reserve base (T4) remained with the Company and its subsidiaries at closing (New First Lien Exit Facility secured by mortgages on \\u226595% PV-9 of proved reserves; \\\"no sale or divestiture of the oil-and-gas asset base is described\\\"), and the same operating subsidiaries (SandRidge E&P, Operating Company, Midstream, etc.) continued in place as Guarantors, so product and its producing processes moved together \\u2014 gap_45=0. The incumbent executive-officer team continued unchanged through the Effective Date alongside those continuing operating processes, so process and organization stayed aligned \\u2014 gap_56=0. This was a debt-to-equity recapitalization of a single continuing legal entity (T3 charter amended, not new entity), with only controlling equity/intent replaced (pre-Effective equity cancelled; new equity to creditors; majority of board replaced), hence T1=replace.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a Chapter 11 reorganization where the pre-petition equity was cancelled and new equity was issued to creditors, replacing the controlling intent (T1). The business model, legal entity, products (reserves), operations (subsidiaries), and organization (incumbent management) all continued 1-1. There were no structural gaps between T4 and T5, or T5 and T6, as the entire company emerged intact.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The reserve base remained with the continuing company and its subsidiaries, while the same operating subsidiaries continued as guarantors under the new exit facility; no sale, divestiture, or separation of a customer-facing business line was described, so no product-process gap existed at closing. The incumbent executive-officer team continued unchanged through the Effective Date alongside those continuing operating subsidiaries, so the evidence documents no process-organization mismatch at closing. [SRC: SEC accession 0001193125-16-733811, Form 8-K Items 1.01 and 5.02]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

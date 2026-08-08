@@ -1,0 +1,58 @@
+{
+  "case_id": "P335",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "uncertain",
+      "performance_metric": "chapter 11 bankruptcy ~55 months post-close; ~$500m liabilities; production ~half of 2019 levels; proposed asset liquidation",
+      "rationale": "The documented liquidity strain and bankruptcy are attributed by the court's findings to external shocks — the 2020 OPEC price war, COVID-19 shut-ins, five named storms/hurricanes (2020-2021), a foreign-vessel platform collision, and onerous volumetric production payment agreements — not to any documented product/process or process/organization integration failure between acquirer and acquired operations. No slice line describes the acquired product line being misaligned with operating processes over time (p4 left uncertain given the general \"acquiring aging wells with debt\" pattern but no explicit product/process disruption), and none describes operations fracturing against people/management/culture (p5 = 0). No merger-archetype incoherence is documented (t1 = 0). Whether the two business models' value-capture logics could be reconciled is not addressed in the slice, so t2 is uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "voluntary chapter 11 bankruptcy petitions",
+      "rationale": "The evidence slice attributes the combined company's bankruptcy to external shocks, including a 2020 OPEC price war, COVID-19 shut-ins, storms, and a vessel collision. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface during the post-deal integration."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "ch.11 May 2023; ~$500M liabilities; production ~half 2019",
+      "rationale": "The slice traces the 2023 bankruptcy liquidity strain to external 2019-2021 events (OPEC price war, COVID shut-ins, five named storms/hurricanes, and a vessel-platform collision leaving an asset offline), with production at filing roughly half of 2019 levels; none of these findings document product/process interface misalignment of the acquired assets with operating processes over time (p4=0). Equally, the court record and press cite no fracture at the process/organization interface—no operations-vs-culture/management integration breakdown—only adverse events, onerous VPPs, trade debt, and a proposed orderly liquidation (p5=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"uncertain\", \"performance_metric\": \"chapter 11 bankruptcy ~55 months post-close; ~$500m liabilities; production ~half of 2019 levels; proposed asset liquidation\", \"rationale\": \"The documented liquidity strain and bankruptcy are attributed by the court's findings to external shocks \\u2014 the 2020 OPEC price war, COVID-19 shut-ins, five named storms/hurricanes (2020-2021), a foreign-vessel platform collision, and onerous volumetric production payment agreements \\u2014 not to any documented product/process or process/organization integration failure between acquirer and acquired operations. No slice line describes the acquired product line being misaligned with operating processes over time (p4 left uncertain given the general \\\"acquiring aging wells with debt\\\" pattern but no explicit product/process disruption), and none describes operations fracturing against people/management/culture (p5 = 0). No merger-archetype incoherence is documented (t1 = 0). Whether the two business models' value-capture logics could be reconciled is not addressed in the slice, so t2 is uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"voluntary chapter 11 bankruptcy petitions\",\n  \"rationale\": \"The evidence slice attributes the combined company's bankruptcy to external shocks, including a 2020 OPEC price war, COVID-19 shut-ins, storms, and a vessel collision. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface during the post-deal integration.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"ch.11 May 2023; ~$500M liabilities; production ~half 2019\",\n  \"rationale\": \"The slice traces the 2023 bankruptcy liquidity strain to external 2019-2021 events (OPEC price war, COVID shut-ins, five named storms/hurricanes, and a vessel-platform collision leaving an asset offline), with production at filing roughly half of 2019 levels; none of these findings document product/process interface misalignment of the acquired assets with operating processes over time (p4=0). Equally, the court record and press cite no fracture at the process/organization interface—no operations-vs-culture/management integration breakdown—only adverse events, onerous VPPs, trade debt, and a proposed orderly liquidation (p5=0).\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

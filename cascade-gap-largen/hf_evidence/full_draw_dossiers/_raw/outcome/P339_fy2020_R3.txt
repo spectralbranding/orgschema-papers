@@ -1,0 +1,903 @@
+ 
+ XML
+ 25
+ R3.htm
+ IDEA: XBRL DOCUMENT
+
+ v3.20.4 
+ 
+ CONSOLIDATED STATEMENTS OF OPERATIONS - USD ($) $ in Thousands 
+ 12 Months Ended 
+
+ Dec. 31, 2020 
+ Dec. 31, 2019 
+ Dec. 31, 2018 
+
+ Operating Revenues: 
+
+ Total operating revenues 
+ $ 250,347 
+ 
+ $ 452,659 
+ 
+ $ 453,017 
+
+ Operating Expenses: 
+
+ Production tax expense 
+ (630) 
+ 
+ 23,541 
+ 
+ 36,762 
+
+ Exploration expense 
+ 192 
+ 
+ 143 
+ 
+ 70 
+
+ Impairment and abandonment expense 
+ 1,285,085 
+ 
+ 9,642 
+ 
+ 719 
+
+ Loss on sale of properties 
+ 4,777 
+ 
+ 2,901 
+ 
+ 1,046 
+
+ Depreciation, depletion and amortization 
+ 148,995 
+ 
+ 321,276 
+ 
+ 228,480 
+
+ Unused commitments 
+ 18,807 
+ 
+ 17,706 
+ 
+ 18,187 
+
+ General and administrative expense 
+ 43,167 
+ 
+ 44,759 
+ 
+ 45,130 
+
+ Merger transaction expense 
+ 25,891 
+ 
+ 4,492 
+ 
+ 7,991 
+
+ Other operating expenses (income), net 
+ (544) 
+ 
+ 402 
+ 
+ 1,273 
+
+ Total operating expenses 
+ 1,576,755 
+ 
+ 473,343 
+ 
+ 372,152 
+
+ Operating Income (Loss) 
+ (1,326,408) 
+ 
+ (20,684) 
+ 
+ 80,865 
+
+ Other Income and Expense: 
+
+ Interest and other income 
+ 449 
+ 
+ 791 
+ 
+ 1,793 
+
+ Interest expense 
+ (58,809) 
+ 
+ (58,100) 
+ 
+ (52,703) 
+
+ Commodity derivative gain (loss) 
+ 124,925 
+ 
+ (98,953) 
+ 
+ 93,349 
+
+ Loss on extinguishment of debt 
+ 0 
+ 
+ 0 
+ 
+ (257) 
+
+ Total other income (expense) 
+ 66,565 
+ 
+ (156,262) 
+ 
+ 42,182 
+
+ Income (Loss) before Income Taxes 
+ (1,259,843) 
+ 
+ (176,946) 
+ 
+ 123,047 
+
+ (Provision for) Benefit from Income Taxes 
+ 95,862 
+ 
+ 42,116 
+ 
+ (1,827) 
+
+ Net Income (Loss) 
+ $ (1,163,981) 
+ 
+ $ (134,830) 
+ 
+ $ 121,220 
+
+ Net Income (Loss) Per Common Share, Basic (in dollars per share) 
+ $ (274.65) 
+ 
+ $ (32.04) 
+ 
+ $ 32.19 
+
+ Net Income (Loss) Per Common Share, Diluted (in dollars per share) 
+ $ (274.65) 
+ 
+ $ (32.04) 
+ 
+ $ 32.03 
+
+ Weighted Average Common Shares Outstanding, Basic (in shares) 
+ 4,238,180 
+ 
+ 4,207,833 
+ 
+ 3,765,981 
+
+ Weighted Average Common Shares Outstanding, Diluted (in shares) 
+ 4,238,180 
+ 
+ 4,207,833 
+ 
+ 3,784,821 
+
+ Oil, gas and NGL production 
+
+ Operating Revenues: 
+
+ Production and other revenues 
+ $ 249,192 
+ 
+ $ 452,274 
+ 
+ $ 452,917 
+
+ Other operating revenues, net 
+
+ Operating Revenues: 
+
+ Production and other revenues 
+ 1,155 
+ 
+ 385 
+ 
+ 100 
+
+ Lease operating expense 
+
+ Operating Expenses: 
+
+ Cost of goods and services 
+ 32,548 
+ 
+ 37,796 
+ 
+ 27,850 
+
+ Gathering, transportation and processing expense 
+
+ Operating Expenses: 
+
+ Cost of goods and services 
+ $ 18,467 
+ 
+ $ 10,685 
+ 
+ $ 4,644 
+
+ X 
+ 
+ - Definition Costs incurred to effect a business combination which have been expensed during the period. Such costs could include business integration costs, systems integration and conversion costs, and severance and other employee-related costs. 
+ + References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_BusinessCombinationIntegrationRelatedCosts 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The aggregate costs related to goods produced and sold and services rendered by an entity during the reporting period. This excludes costs incurred during the reporting period related to financial services rendered and other revenue generating activities. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03.2(a),(d)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_CostOfGoodsAndServicesSold 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Total costs of sales and operating expenses for the period. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_CostsAndExpenses 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_CostsAndExpensesAbstract 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:stringItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The aggregate expense recognized in the current period that allocates the cost of tangible assets, intangible assets, or depleting assets to periods that benefit from use of the assets. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 22 -Subparagraph (e) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8736-108599 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 230 -SubTopic 10 -Section 45 -Paragraph 28 -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=118932676&loc=d3e3602-108585 
+ + Details 
+ 
+ Name: 
+ us-gaap_DepreciationDepletionAndAmortization 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The amount of net income (loss) for the period per each share of common stock or unit outstanding during the reporting period. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 944 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-04(19)) -URI http://asc.fasb.org/extlink&oid=116637232&loc=SL114874131-224263 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 7 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1337-109256 Reference 3: http://www.xbrl.org/2003/role/exampleRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 55 -Paragraph 52 -URI http://asc.fasb.org/extlink&oid=117327953&loc=d3e4984-109258 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03(21)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 250 -SubTopic 10 -Section 50 -Paragraph 11 -URI http://asc.fasb.org/extlink&oid=109234566&loc=d3e22694-107794 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 50 -Paragraph 1 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=6371337&loc=d3e3550-109257 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 2 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1252-109256 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 942 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-04(23)) -URI http://asc.fasb.org/extlink&oid=116637391&loc=SL114874048-224260 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 60B -Subparagraph (d) -URI http://asc.fasb.org/extlink&oid=117326831&loc=SL5780133-109256 
+ + Details 
+ 
+ Name: 
+ us-gaap_EarningsPerShareBasic 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ num:perShareItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The amount of net income (loss) for the period available to each share of common stock or common unit outstanding during the reporting period and to each share or unit that would have been outstanding assuming the issuance of common shares or units for all dilutive potential common shares or units outstanding during the reporting period. 
+ + References Reference 1: http://www.xbrl.org/2003/role/exampleRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 55 -Paragraph 52 -URI http://asc.fasb.org/extlink&oid=117327953&loc=d3e4984-109258 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 2 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1252-109256 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 50 -Paragraph 1 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=6371337&loc=d3e3550-109257 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 942 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-04(23)) -URI http://asc.fasb.org/extlink&oid=116637391&loc=SL114874048-224260 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 250 -SubTopic 10 -Section 50 -Paragraph 11 -URI http://asc.fasb.org/extlink&oid=109234566&loc=d3e22694-107794 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 7 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1337-109256 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03(21)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 60B -Subparagraph (d) -URI http://asc.fasb.org/extlink&oid=117326831&loc=SL5780133-109256 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 944 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-04(19)) -URI http://asc.fasb.org/extlink&oid=116637232&loc=SL114874131-224263 
+ + Details 
+ 
+ Name: 
+ us-gaap_EarningsPerShareDiluted 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ num:perShareItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The adjustment to expense previously capitalized costs of drilling exploratory wells when proved reserves are not found or when the entity obtains information that raises substantial doubt about the economic or operational viability of the project. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 932 -SubTopic 360 -Section 40 -Paragraph 2 -URI http://asc.fasb.org/extlink&oid=6475089&loc=d3e66610-109467 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 932 -SubTopic 360 -Section 40 -Paragraph 3 -URI http://asc.fasb.org/extlink&oid=6475089&loc=d3e66625-109467 Reference 3: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 230 -SubTopic 10 -Section 45 -Paragraph 28 -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=118932676&loc=d3e3602-108585 Reference 4: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 932 -SubTopic 360 -Section 40 -Paragraph 1 -URI http://asc.fasb.org/extlink&oid=6475089&loc=d3e66584-109467 Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 932 -SubTopic 360 -Section 35 -Paragraph 11 -URI http://asc.fasb.org/extlink&oid=66906256&loc=d3e66150-109466 
+ + Details 
+ 
+ Name: 
+ us-gaap_ExplorationAbandonmentAndImpairmentExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Exploration expenses (including prospecting) related to oil and gas producing entities and would be included in operating expenses of that entity. Costs incurred in identifying areas that may warrant examination and in examining specific areas that are considered to have prospects of containing oil and gas reserves, including costs of drilling exploratory wells and exploratory-type stratigraphic test wells. Exploration costs may be incurred both before acquiring the related property (sometimes referred to in part as prospecting costs) and after acquiring the property. Principal types of exploration costs, which include depreciation and applicable operating costs of support equipment and facilities and other costs of exploration activities, are: (i) Costs of topographical, geographical and geophysical studies, rights of access to properties to conduct those studies, and salaries and other expenses of geologists, geophysical crews, and others conducting those studies. Collectively, these are sometimes referred to as geological and geophysical or "G&G" costs. (ii) Costs of carrying and retaining undeveloped properties, such as delay rentals, ad valorem taxes on properties, legal costs for title defense, and the maintenance of land and lease records. (iii) Dry hole contributions and bottom hole contributions. (iv) Costs of drilling and equipping exploratory wells. (v) Costs of drilling exploratory-type stratigraphic test wells. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 932 -SubTopic 235 -Section 50 -Paragraph 23 -Subparagraph (c) -URI http://asc.fasb.org/extlink&oid=68064819&loc=d3e62136-109447 
+ + Details 
+ 
+ Name: 
+ us-gaap_ExplorationExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Gain (loss) incurred in hedging activities. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 815 -SubTopic 10 -Section 50 -Paragraph 4A -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=109980867&loc=SL5618551-113959 
+ + Details 
+ 
+ Name: 
+ us-gaap_GainLossOnOilAndGasHedgingActivity 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of gain (loss) on sale or disposal of proven and unproven oil and gas properties. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 230 -SubTopic 10 -Section 45 -Paragraph 28 -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=118932676&loc=d3e3602-108585 
+ + Details 
+ 
+ Name: 
+ us-gaap_GainLossOnSaleOfOilAndGasProperty 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Difference between the fair value of payments made and the carrying amount of debt which is extinguished prior to maturity. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 470 -SubTopic 50 -Section 40 -Paragraph 4 -URI http://asc.fasb.org/extlink&oid=117329964&loc=d3e12355-112629 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 470 -SubTopic 50 -Section 40 -Paragraph 2 -URI http://asc.fasb.org/extlink&oid=117329964&loc=d3e12317-112629 Reference 3: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 230 -SubTopic 10 -Section 45 -Paragraph 28 -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=118932676&loc=d3e3602-108585 
+ + Details 
+ 
+ Name: 
+ us-gaap_GainsLossesOnExtinguishmentOfDebt 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The aggregate total of expenses of managing and administering the affairs of an entity, including affiliates of the reporting entity, which are not directly or indirectly associated with the manufacture, sale or creation of a product or product line. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03.4) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_GeneralAndAdministrativeExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of income (loss) from continuing operations before deduction of income tax expense (benefit) and income (loss) attributable to noncontrolling interest, and addition of income (loss) from equity method investments. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 235 -SubTopic 10 -Section S99 -Paragraph 1 -Subparagraph (SX 210.4-08.(h)(1)(i)) -URI http://asc.fasb.org/extlink&oid=26873400&loc=d3e23780-122690 
+ + Details 
+ 
+ Name: 
+ us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of current income tax expense (benefit) and deferred income tax expense (benefit) pertaining to continuing operations. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 22 -Subparagraph (h) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8736-108599 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 235 -SubTopic 10 -Section S99 -Paragraph 1 -Subparagraph (SX 210.4-08(h)) -URI http://asc.fasb.org/extlink&oid=26873400&loc=d3e23780-122690 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 740 -SubTopic 20 -Section 45 -Paragraph 2 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=109238882&loc=d3e38679-109324 
+ + Details 
+ 
+ Name: 
+ us-gaap_IncomeTaxExpenseBenefit 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The amount of interest income and other income recognized during the period. Included in this element is interest derived from investments in debt securities, cash and cash equivalents, and other investments which reflect the time value of money or transactions in which the payments are for the use or forbearance of money and other income from ancillary business-related activities (that is, excluding major activities considered part of the normal operations of the business). 
+ + References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_InterestAndOtherIncome 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of the cost of borrowed funds accounted for as interest expense. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 835 -SubTopic 20 -Section 50 -Paragraph 1 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=6450988&loc=d3e26243-108391 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 835 -SubTopic 30 -Section 45 -Paragraph 3 -URI http://asc.fasb.org/extlink&oid=114775744&loc=d3e28555-108399 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 22 -Subparagraph (d) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8736-108599 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (210.5-03(11)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 942 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-04.9) -URI http://asc.fasb.org/extlink&oid=116637391&loc=SL114874048-224260 
+ + Details 
+ 
+ Name: 
+ us-gaap_InterestExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The portion of profit or loss for the period, net of income taxes, which is attributable to the parent. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section 45 -Paragraph 1A -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=118930883&loc=SL7669619-108580 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 942 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-04(22)) -URI http://asc.fasb.org/extlink&oid=116637391&loc=SL114874048-224260 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section 45 -Paragraph 1B -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=118930883&loc=SL7669625-108580 Reference 4: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 944 -SubTopic 220 -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-04(18)) -URI http://asc.fasb.org/extlink&oid=116637232&loc=SL114874131-224263 Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03(20)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 Reference 6: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 230 -SubTopic 10 -Section 45 -Paragraph 28 -URI http://asc.fasb.org/extlink&oid=118932676&loc=d3e3602-108585 Reference 7: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 50 -Paragraph 1 -URI http://asc.fasb.org/extlink&oid=6371337&loc=d3e3550-109257 
+ + Details 
+ 
+ Name: 
+ us-gaap_NetIncomeLoss 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The aggregate amount of income or expense from ancillary business-related activities (that is to say, excluding major activities considered part of the normal operations of the business). 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03.7) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_NonoperatingIncomeExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_NonoperatingIncomeExpenseAbstract 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:stringItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The net result for the period of deducting operating expenses from operating revenues. 
+ + References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_OperatingIncomeLoss 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of general expenses not normally included in Other Operating Costs and Expenses. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03.6) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_OtherGeneralExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The net amount of other operating income and expenses, the components of which are not separately disclosed on the income statement, from items that are associated with the entity's normal revenue producing operations. 
+ + References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_OtherOperatingIncomeExpenseNet 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition A tax assessed on oil and gas production. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03(2)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_ProductionTaxExpense 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ debit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount, excluding tax collected from customer, of revenue from satisfaction of performance obligation by transferring promised good or service to customer. Tax collected from customer is tax assessed by governmental authority that is both imposed on and concurrent with specific revenue-producing transaction, including, but not limited to, sales, use, value added and excise. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 606 -SubTopic 10 -Section 50 -Paragraph 4 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=118956577&loc=SL49130543-203045 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 606 -SubTopic 10 -Section 50 -Paragraph 5 -URI http://asc.fasb.org/extlink&oid=118956577&loc=SL49130545-203045 
+ + Details 
+ 
+ Name: 
+ us-gaap_RevenueFromContractWithCustomerExcludingAssessedTax 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Amount of revenue recognized from goods sold, services rendered, insurance premiums, or other activities that constitute an earning process. Includes, but is not limited to, investment and interest income before deduction of interest expense when recognized as a component of revenue, and sales and trading gain (loss). 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 22 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8736-108599 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 32 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8933-108599 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 280 -SubTopic 10 -Section 50 -Paragraph 22 -Subparagraph (b) -URI http://asc.fasb.org/extlink&oid=115929826&loc=d3e8736-108599 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Publisher FASB -Name Accounting Standards Codification -Topic 220 -SubTopic 10 -Section S99 -Paragraph 2 -Subparagraph (SX 210.5-03(1)) -URI http://asc.fasb.org/extlink&oid=116634182&loc=SL114868664-224227 
+ + Details 
+ 
+ Name: 
+ us-gaap_Revenues 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:monetaryItemType 
+
+ Balance Type: 
+ credit 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - References No definition available. 
+ + Details 
+ 
+ Name: 
+ us-gaap_RevenuesAbstract 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:stringItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition The average number of shares or units issued and outstanding that are used in calculating diluted EPS or earnings per unit (EPU), determined based on the timing of issuance of shares or units in the period. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 50 -Paragraph 1 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=6371337&loc=d3e3550-109257 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 16 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1505-109256 
+ + Details 
+ 
+ Name: 
+ us-gaap_WeightedAverageNumberOfDilutedSharesOutstanding 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:sharesItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Definition Number of [basic] shares or units, after adjustment for contingently issuable shares or units and other shares or units not deemed outstanding, determined by relating the portion of time within a reporting period that common shares or units have been outstanding to the total time in that period. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 45 -Paragraph 10 -URI http://asc.fasb.org/extlink&oid=117326831&loc=d3e1448-109256 Reference 2: http://fasb.org/us-gaap/role/ref/legacyRef -Publisher FASB -Name Accounting Standards Codification -Topic 260 -SubTopic 10 -Section 50 -Paragraph 1 -Subparagraph (a) -URI http://asc.fasb.org/extlink&oid=6371337&loc=d3e3550-109257 
+ + Details 
+ 
+ Name: 
+ us-gaap_WeightedAverageNumberOfSharesOutstandingBasic 
+
+ Namespace Prefix: 
+ us-gaap_ 
+
+ Data Type: 
+ xbrli:sharesItemType 
+
+ Balance Type: 
+ na 
+
+ Period Type: 
+ duration 
+
+ X 
+ 
+ - Details 
+ 
+ Name: 
+ srt_ProductOrServiceAxis=us-gaap_OilAndGasMember 
+
+ Namespace Prefix: 
+
+ Data Type: 
+ na 
+
+ Balance Type: 
+
+ Period Type: 
+
+ X 
+ 
+ - Details 
+ 
+ Name: 
+ srt_ProductOrServiceAxis=us-gaap_ProductAndServiceOtherMember 
+
+ Namespace Prefix: 
+
+ Data Type: 
+ na 
+
+ Balance Type: 
+
+ Period Type: 
+
+ X 
+ 
+ - Details 
+ 
+ Name: 
+ srt_ProductOrServiceAxis=us-gaap_OilAndGasServiceMember 
+
+ Namespace Prefix: 
+
+ Data Type: 
+ na 
+
+ Balance Type: 
+
+ Period Type: 
+
+ X 
+ 
+ - Details 
+ 
+ Name: 
+ srt_ProductOrServiceAxis=us-gaap_NaturalGasGatheringTransportationMarketingAndProcessingMember 
+
+ Namespace Prefix: 
+
+ Data Type: 
+ na 
+
+ Balance Type: 
+
+ Period Type: 
+

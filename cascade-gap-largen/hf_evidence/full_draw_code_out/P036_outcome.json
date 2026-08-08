@@ -1,0 +1,58 @@
+{
+  "case_id": "P036",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 (filed June 7, 2016; emerged Aug 1, 2016) eliminating $1.1bn face amount of notes; net losses of $63.6M + $155.7M in 2016 and $221.4M in 2015; acquired by Patterson-UTI April 20, 2017",
+      "rationale": "The slice documents a realized financial collapse — consecutive net losses ($221.4M in 2015, $155.7M and $63.6M across the two 2016 periods) culminating in a pre-packaged Chapter 11 within ~3 years of separation and eventual acquisition by Patterson-UTI. However, the evidence is financial/leverage-driven (a $1.1bn note burden restructured via debt-for-equity) and heavy customer-concentration on the former parent (declining from ~81% to ~51% of revenue), not any documented product/process operating-incoherence, so p4 is uncertain and no process/organization (operations vs. people/culture) fracture is described, so p5 is coded 0. The slice contains no evidence bearing on the controlling-intent archetype or on business-model incompatibility, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "filed a pre-packaged Chapter 11 and eliminated $1.1 billion in debt",
+      "rationale": "The provided evidence slice documents the company's Chapter 11 bankruptcy, debt reduction, and subsequent acquisition by Patterson-UTI. It does not contain any documented evidence of disruption at the product/process interface (p4_pathway = 0) or fracture at the process/organization interface (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 then acquired by Patterson-UTI ~3 years post-separation",
+      "rationale": "The slice documents bankruptcy, debt-for-equity reorganization, sustained net losses, customer-concentration trends, and a subsequent change-of-control acquisition, but contains no evidence of product/process interface disruption (p4) such as inability to align a product line with operating processes. Likewise it records no process/organization fracture (p5) involving operations breaking against people, management, or culture over time; those pathways are simply undocumented and therefore coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 (filed June 7, 2016; emerged Aug 1, 2016) eliminating $1.1bn face amount of notes; net losses of $63.6M + $155.7M in 2016 and $221.4M in 2015; acquired by Patterson-UTI April 20, 2017\", \"rationale\": \"The slice documents a realized financial collapse \\u2014 consecutive net losses ($221.4M in 2015, $155.7M and $63.6M across the two 2016 periods) culminating in a pre-packaged Chapter 11 within ~3 years of separation and eventual acquisition by Patterson-UTI. However, the evidence is financial/leverage-driven (a $1.1bn note burden restructured via debt-for-equity) and heavy customer-concentration on the former parent (declining from ~81% to ~51% of revenue), not any documented product/process operating-incoherence, so p4 is uncertain and no process/organization (operations vs. people/culture) fracture is described, so p5 is coded 0. The slice contains no evidence bearing on the controlling-intent archetype or on business-model incompatibility, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"filed a pre-packaged Chapter 11 and eliminated $1.1 billion in debt\",\n  \"rationale\": \"The provided evidence slice documents the company's Chapter 11 bankruptcy, debt reduction, and subsequent acquisition by Patterson-UTI. It does not contain any documented evidence of disruption at the product/process interface (p4_pathway = 0) or fracture at the process/organization interface (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 then acquired by Patterson-UTI ~3 years post-separation\",\n  \"rationale\": \"The slice documents bankruptcy, debt-for-equity reorganization, sustained net losses, customer-concentration trends, and a subsequent change-of-control acquisition, but contains no evidence of product/process interface disruption (p4) such as inability to align a product line with operating processes. Likewise it records no process/organization fracture (p5) involving operations breaking against people, management, or culture over time; those pathways are simply undocumented and therefore coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

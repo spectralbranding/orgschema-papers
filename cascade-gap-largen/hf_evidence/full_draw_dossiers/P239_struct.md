@@ -1,0 +1,42 @@
+# Structural sub-dossier — Altra Industrial Motion Corp. combination with Fortive's Automation & Specialty businesses (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- On March 7, 2018, Altra Industrial Motion Corp. ("Altra") and Fortive Corporation ("Fortive") agreed to a set of transactions to transfer Fortive's Automation & Specialty ("A&S") Business — the Automation & Specialty platform conducted under the Portescap, Kollmorgen, Thomson and Jacobs Vehicle Systems operating companies, but excluding Fortive's Hengstler and Dynapar businesses — to Altra. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- The transactions comprised: (i) a Separation and Distribution of a portion of the A&S Business into a newly formed entity, Stevens Holding Company, Inc. ("Newco"), a wholly-owned subsidiary of Fortive; (ii) direct cash sales ("Direct Sales") to Altra of the remaining (largely non-U.S.) portion of the A&S Business; and (iii) a Merger in which McHale Acquisition Corp. ("Merger Sub"), a wholly-owned subsidiary of Altra, merged with and into Newco, with Newco surviving as a wholly-owned subsidiary of Altra. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- Fortive, Newco, Altra and Merger Sub entered into a Merger Agreement dated March 7, 2018, and Fortive, Newco and Altra entered into a separate Separation Agreement, together with a set of Ancillary Agreements. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- The parties and their advisors characterized the structure as a Reverse Morris Trust transaction, involving the spin-off/split-off distribution of the A&S Business to Fortive shareholders followed immediately by a merger into an Altra subsidiary, structured for tax efficiency to Fortive. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- On the closing date, Fortive distributed 100% of Newco's common stock to Fortive stockholders (via exchange offer and/or pro rata distribution), each share of which converted into Altra common stock in the Merger; Newco shares were held in book-entry form for the relevant Fortive stockholders and were not tradable before the Merger's consummation. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- The Merger and related transactions were consummated on October 1, 2018 (the "Closing Date"). [SRC: SEC accession 0001193125-18-289671, Form 8-K]
+
+## Consideration and post-closing ownership
+- Aggregate consideration payable to Fortive/Fortive stockholders with respect to the A&S Business was estimated (as of August 1, 2018) at approximately $2.9 billion: (i) approximately $1.5 billion in value of Altra common stock (35 million shares) issuable to Fortive stockholders participating in the Exchange Offer; (ii) $1.0 billion in cash payable to Fortive subsidiaries for the Direct Sales; and (iii) $400 million payable to Fortive as a Cash Dividend and Newco Securities. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- Immediately after consummation of the Merger, approximately 54% of outstanding Altra common stock was expected to be held by pre-Merger holders of Newco common stock (and Newco employees), and approximately 46% by pre-Merger Altra stockholders. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- All shares of Altra common stock, including those issued in the Merger, continued to be listed on Nasdaq under Altra's existing trading symbol "AIMC"; Altra remained the surviving, continuously listed public registrant. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+
+## Product/asset tier that crossed
+- The A&S Business was described as a leading provider of a wide range of electromechanical and electronic motion control products and mechanical components (standard/custom motors, drives and controls; linear motion systems, ball screws, linear bearings, clutches/brakes) as well as supplemental braking systems for commercial vehicles, marketed under brands including JAKE BRAKE, KOLLMORGEN, PORTESCAP and THOMSON. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- After the Merger and Direct Sales, Altra was to own and operate the A&S Business through Newco and the Direct Sales purchaser entities, in addition to continuing Altra's pre-existing business. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+
+## People/organization tier that crossed
+- Under the Employee Matters Agreement, employees of the Fortive Group / Newco Group meeting specified criteria were designated as "Newco Employees" and transferred with the business to become Altra employees (subject to limited employer-designated exclusions and a return-from-leave provision). [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- It was expected that Altra's existing management team would remain intact for the combined business but "may be expanded to include new management team members from the A&S Business," and that Altra's executive officers immediately prior to closing would remain executive officers immediately following closing. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- Altra stated a belief that A&S Business employees' experience with the Fortive Business System tools would enhance Altra's ability to pursue its strategic objectives. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- As of the Closing Date, Altra's board of directors (previously eight members) increased by one seat to accommodate a Fortive-designated director, Patrick K. Murphy (Fortive's Senior Vice President), subject to a re-nomination commitment at the expiration of his initial term. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A; SRC: SEC accession 0001193125-18-289671, Form 8-K]
+
+## Contractual bridging of shared substrate at closing
+- Prior to the Transactions, Fortive and the A&S Business shared certain corporate functions (treasury, cash management, tax compliance, benefits, corporate development, internal audit, purchasing and information systems). [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- To manage an orderly transition, Fortive, Newco and Altra entered into a Transition Services Agreement (dated October 1, 2018), under which Fortive and Altra agreed to provide each other with certain limited transition services beginning on the Distribution date, generally ending by a mutually agreed date (or a shorter/longer period for specified services). [SRC: SEC accession 0001193125-18-239500, Form DEFM14A; SRC: SEC accession 0001193125-18-289671, Form 8-K]
+- The parties also entered into a Tax Matters Agreement and an Intellectual Property Cross-License Agreement, each dated October 1, 2018, alongside the Employee Matters Agreement dated March 7, 2018. [SRC: SEC accession 0001193125-18-289671, Form 8-K]
+
+## Financing of the combination
+- Approximately $1.7 billion of indebtedness was expected to be incurred or refinanced in connection with the Transactions (Altra Term Loan B Facility, Notes, Newco Securities, and a Bridge Facility if needed), with Newco's debt obligations expected to be guaranteed by Altra and its domestic subsidiaries, and vice versa. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A]
+- On the Closing Date, Altra entered into a new Credit Agreement, and a private placement of notes by Newco (Stevens Holding Company, Inc.) closed the same day. [SRC: SEC accession 0001193125-18-289671, Form 8-K]
+
+## Structural summary (closing only)
+- The transaction combined a whole-business transfer (product lines, employees, and an expanded management team) of Fortive's A&S platform into Altra via a Reverse Morris Trust merger-and-direct-sale structure, with the previously shared corporate service substrate (treasury, tax, benefits, IT, purchasing) bridged at closing through a Transition Services Agreement, a Tax Matters Agreement, an Employee Matters Agreement, and an IP Cross-License Agreement rather than transferred whole; Altra remained the continuously listed public entity, with its board expanded by one Fortive-designated seat. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A; SRC: SEC accession 0001193125-18-289671, Form 8-K]

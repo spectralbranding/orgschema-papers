@@ -1,0 +1,58 @@
+{
+  "case_id": "P148",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "FY2022 net income ~$1.45bn on ~$4.10bn revenue (up from ~$288.8m in FY2021); divested western thermal PRB operations to Blackjewel",
+      "rationale": "The slice states \"No filing-sourced disclosure of a discrete post-combination integration failure at the product/operations or operations/organization interface was identified in the FY2022 10-K,\" which supports coding both p4 and p5 as 0 (none documented). The only documented structural change was a strategic divestiture of the western thermal (PRB) operations and a refocus on met coal, and the entity operated as a continuing, profitable NYSE registrant with no bankruptcy or going-concern qualification. There is no realized-outcome evidence of product/process incoherence (p4) or process/organization fracture (p5). The archetype channel (t1) is coded uncertain because the slice provides no evidence about the controlling intent as it played out."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 net income ~$1.45bn; PRB thermal ops divested",
+      "rationale": "The slice explicitly states that no filing-sourced disclosure of a discrete post-combination integration failure at the product/operations interface was identified in the FY2022 10-K, so p4_pathway is 0. It likewise states no disclosure of failure at the operations/organization interface; the only documented structural change is the strategic divestiture of western thermal PRB operations and a met-coal refocus, with the entity continuing as a profitable NYSE registrant, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 net income of approximately $1.45 billion",
+      "rationale": "The FY2022 10-K disclosed no discrete post-combination integration failure at either the product/operations or operations/organization interface. The company remained a continuing, profitable NYSE registrant, and the documented divestiture of its western thermal operations was presented as part of a strategic refocus toward metallurgical coal rather than as an interface disruption."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"FY2022 net income ~$1.45bn on ~$4.10bn revenue (up from ~$288.8m in FY2021); divested western thermal PRB operations to Blackjewel\", \"rationale\": \"The slice states \\\"No filing-sourced disclosure of a discrete post-combination integration failure at the product/operations or operations/organization interface was identified in the FY2022 10-K,\\\" which supports coding both p4 and p5 as 0 (none documented). The only documented structural change was a strategic divestiture of the western thermal (PRB) operations and a refocus on met coal, and the entity operated as a continuing, profitable NYSE registrant with no bankruptcy or going-concern qualification. There is no realized-outcome evidence of product/process incoherence (p4) or process/organization fracture (p5). The archetype channel (t1) is coded uncertain because the slice provides no evidence about the controlling intent as it played out.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 net income ~$1.45bn; PRB thermal ops divested\",\n  \"rationale\": \"The slice explicitly states that no filing-sourced disclosure of a discrete post-combination integration failure at the product/operations interface was identified in the FY2022 10-K, so p4_pathway is 0. It likewise states no disclosure of failure at the operations/organization interface; the only documented structural change is the strategic divestiture of western thermal PRB operations and a met-coal refocus, with the entity continuing as a profitable NYSE registrant, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 net income of approximately $1.45 billion\",\n  \"rationale\": \"The FY2022 10-K disclosed no discrete post-combination integration failure at either the product/operations or operations/organization interface. The company remained a continuing, profitable NYSE registrant, and the documented divestiture of its western thermal operations was presented as part of a strategic refocus toward metallurgical coal rather than as an interface disruption.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

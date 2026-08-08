@@ -1,0 +1,85 @@
+{
+  "case_id": "P120",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "T1=T3",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is an internalization: the deal merges the external advisor's parent (Cole Holdings, a going investment-management operation managing $12B for 160,000 investors) into a wholly owned merger sub, bringing the day-to-day management processes (T5) inside the registrant along with the operating organization/people (T6), whose alignment is explicitly bridged by employment agreements with key personnel including Cole. Because process and organization transfer together and are contractually bridged, gap_56 = 0. The registrant's product layer (T4) is its real-estate portfolio, which was already owned and is not what the merger transferred; the acquired advisory business's management capability moves whole with its operations, so there is no documented product-vs-process mismatch at closing (gap_45 = 0). T1=T3 collapse is documented because Cole Holdings, the legal subject acquired, is wholly owned by Christopher H. Cole, who is simultaneously the registrant's chairman/CEO/president, fusing the controlling principal with the legal vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "T1=T3",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is an internalization where the REIT acquires its external advisor, Cole Holdings. The management operations (T5) and the 350 employees (T6) transfer together into the REIT, aligning with the real estate portfolio (T4). No structural gaps between product, process, and organization are documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "T1=T2",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Holdings was described as a full-scale real estate investment-management firm, and the agreement merged Holdings into the registrant’s wholly owned Merger Sub while the registrant planned to operate the acquired advisory business through taxable REIT subsidiaries; thus, no closing-time product/process mismatch is documented. Although the registrant previously had no employees, it entered employment agreements with key personnel for post-merger services, and the slice does not document operational processes transferring without coherent personnel or management alignment; therefore gap_56 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"T1=T3\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is an internalization: the deal merges the external advisor's parent (Cole Holdings, a going investment-management operation managing $12B for 160,000 investors) into a wholly owned merger sub, bringing the day-to-day management processes (T5) inside the registrant along with the operating organization/people (T6), whose alignment is explicitly bridged by employment agreements with key personnel including Cole. Because process and organization transfer together and are contractually bridged, gap_56 = 0. The registrant's product layer (T4) is its real-estate portfolio, which was already owned and is not what the merger transferred; the acquired advisory business's management capability moves whole with its operations, so there is no documented product-vs-process mismatch at closing (gap_45 = 0). T1=T3 collapse is documented because Cole Holdings, the legal subject acquired, is wholly owned by Christopher H. Cole, who is simultaneously the registrant's chairman/CEO/president, fusing the controlling principal with the legal vehicle.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"T1=T3\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction is an internalization where the REIT acquires its external advisor, Cole Holdings. The management operations (T5) and the 350 employees (T6) transfer together into the REIT, aligning with the real estate portfolio (T4). No structural gaps between product, process, and organization are documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"T1=T2\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Holdings was described as a full-scale real estate investment-management firm, and the agreement merged Holdings into the registrant’s wholly owned Merger Sub while the registrant planned to operate the acquired advisory business through taxable REIT subsidiaries; thus, no closing-time product/process mismatch is documented. Although the registrant previously had no employees, it entered employment agreements with key personnel for post-merger services, and the slice does not document operational processes transferring without coherent personnel or management alignment; therefore gap_56 is coded 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "T1=T3",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

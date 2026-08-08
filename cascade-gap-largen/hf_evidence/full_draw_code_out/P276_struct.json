@@ -1,0 +1,85 @@
+{
+  "case_id": "P276",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing real-estate/leasing product and the operations that produce it moved together—the \"real estate/leasing business and its financing obligations continued forward through the surviving entity,\" so product and process transferred coherently with no documented product-vs-process mismatch. gap_56=1: the operational business continued while \"essentially the entire pre-closing officer and director group departed at the effective time\" (all officers and directors ceased their roles, only one new officer appointed), a structural T5-vs-T6 mismatch at closing. gap_mitigated=yes: the Employee Matters covenant required maintaining compensation/benefits/severance substantially comparable for one year with full service credit, and D&O indemnification/tail coverage was preserved—contractually absorbing the departure of the organization/management layer at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice states the post-acute/skilled nursing and memory-care real estate leasing business (T4 product layer) continued forward as a component of the surviving Welltower subsidiary together with that business’s financing obligations, with no product-vs-process structural mismatch at closing. gap_56=1 because the same structural summary and Item 5.02 evidence show the real estate/leasing business and processes continued through the surviving entity while essentially the entire pre-closing officer and director group ceased at the effective time (only one new officer appointed), so T5 moved without T6 aligning intact; the Employee Matters covenant bridged compensation/benefits for one year but is not a transitional-services or operating agreement allocating shared operational substrate, so gap_mitigated=no."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice states that QCP merged whole into Potomac and that its real-estate leasing business and financing obligations continued through the surviving entity, documenting that the customer-facing assets and their operating substrate moved together; therefore gap_45 is 0. It also states that all QCP officers and directors ceased their roles at the effective time, only one new officer was appointed, and the pre-closing organization did not move forward intact, documenting a process-versus-organization mismatch at closing; therefore gap_56 is 1. The employee-benefit and severance covenant provided temporary protections but was not a transitional-services or operating agreement allocating a shared operational substrate, so the gap is not coded as mitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing real-estate/leasing product and the operations that produce it moved together\\u2014the \\\"real estate/leasing business and its financing obligations continued forward through the surviving entity,\\\" so product and process transferred coherently with no documented product-vs-process mismatch. gap_56=1: the operational business continued while \\\"essentially the entire pre-closing officer and director group departed at the effective time\\\" (all officers and directors ceased their roles, only one new officer appointed), a structural T5-vs-T6 mismatch at closing. gap_mitigated=yes: the Employee Matters covenant required maintaining compensation/benefits/severance substantially comparable for one year with full service credit, and D&O indemnification/tail coverage was preserved\\u2014contractually absorbing the departure of the organization/management layer at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice states the post-acute/skilled nursing and memory-care real estate leasing business (T4 product layer) continued forward as a component of the surviving Welltower subsidiary together with that business’s financing obligations, with no product-vs-process structural mismatch at closing. gap_56=1 because the same structural summary and Item 5.02 evidence show the real estate/leasing business and processes continued through the surviving entity while essentially the entire pre-closing officer and director group ceased at the effective time (only one new officer appointed), so T5 moved without T6 aligning intact; the Employee Matters covenant bridged compensation/benefits for one year but is not a transitional-services or operating agreement allocating shared operational substrate, so gap_mitigated=no.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The slice states that QCP merged whole into Potomac and that its real-estate leasing business and financing obligations continued through the surviving entity, documenting that the customer-facing assets and their operating substrate moved together; therefore gap_45 is 0. It also states that all QCP officers and directors ceased their roles at the effective time, only one new officer was appointed, and the pre-closing organization did not move forward intact, documenting a process-versus-organization mismatch at closing; therefore gap_56 is 1. The employee-benefit and severance covenant provided temporary protections but was not a transitional-services or operating agreement allocating a shared operational substrate, so the gap is not coded as mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

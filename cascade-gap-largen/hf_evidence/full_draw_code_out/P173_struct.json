@@ -1,0 +1,85 @@
+{
+  "case_id": "P173",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a Chapter 11 balance-sheet reorganization in which the same Delaware corporation continued (re-chartered) with all estate property vesting in the Reorganized Debtors and the operating business (upstream oil and gas production) unchanged, so the customer-facing product/asset (T4) and the operational processes (T5) both carried forward together within the same entity — no product-vs-process mismatch (gap_45=0). The full pre-existing senior management team (Brace, Haight, Elkins) continued in the same roles under new employment agreements and existing benefit/employment agreements were assumed, so processes (T5) and the organization/people (T6) stayed coherently aligned (gap_56=0). T1 is coded replace because pre-petition equity/interests were cancelled and extinguished and ownership was substantially reallocated to former secured creditors (97.5% Second Lien), installing a new controlling principal while the vehicle, model, product, process, and staff transferred whole."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a Chapter 11 reorganization where the pre-petition equity was cancelled and new equity was issued to creditors, replacing the controlling intent (T1). The legal vehicle, business model, products, operations, and organization (including the full pre-existing senior management team) all transferred 1-1 to the reorganized entity. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or between processes and organization (gap_56 = 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The operating business remained unchanged, and all estate property vested in the Reorganized Debtors with authority to continue operating, so the product/assets and the processes supporting them moved together without a documented T4–T5 mismatch [SRC: SEC accession 0001104659-16-143491, 8-K EX-99.1; SEC accession 0001104659-16-152625, 8-K Items 3.02, 5.02]. The full pre-existing senior management team continued in the same roles under new employment agreements, while employee-related agreements were assumed, so no process-versus-organization gap was documented at closing despite replacement of a board majority [SRC: SEC accession 0001104659-16-152625, 8-K Item 5.02; SEC accession 0001104659-16-143491, 8-K EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a Chapter 11 balance-sheet reorganization in which the same Delaware corporation continued (re-chartered) with all estate property vesting in the Reorganized Debtors and the operating business (upstream oil and gas production) unchanged, so the customer-facing product/asset (T4) and the operational processes (T5) both carried forward together within the same entity \\u2014 no product-vs-process mismatch (gap_45=0). The full pre-existing senior management team (Brace, Haight, Elkins) continued in the same roles under new employment agreements and existing benefit/employment agreements were assumed, so processes (T5) and the organization/people (T6) stayed coherently aligned (gap_56=0). T1 is coded replace because pre-petition equity/interests were cancelled and extinguished and ownership was substantially reallocated to former secured creditors (97.5% Second Lien), installing a new controlling principal while the vehicle, model, product, process, and staff transferred whole.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a Chapter 11 reorganization where the pre-petition equity was cancelled and new equity was issued to creditors, replacing the controlling intent (T1). The legal vehicle, business model, products, operations, and organization (including the full pre-existing senior management team) all transferred 1-1 to the reorganized entity. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or between processes and organization (gap_56 = 0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The operating business remained unchanged, and all estate property vested in the Reorganized Debtors with authority to continue operating, so the product/assets and the processes supporting them moved together without a documented T4–T5 mismatch [SRC: SEC accession 0001104659-16-143491, 8-K EX-99.1; SEC accession 0001104659-16-152625, 8-K Items 3.02, 5.02]. The full pre-existing senior management team continued in the same roles under new employment agreements, while employee-related agreements were assumed, so no process-versus-organization gap was documented at closing despite replacement of a board majority [SRC: SEC accession 0001104659-16-152625, 8-K Item 5.02; SEC accession 0001104659-16-143491, 8-K EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

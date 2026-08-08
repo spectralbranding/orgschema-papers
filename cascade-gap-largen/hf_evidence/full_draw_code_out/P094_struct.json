@@ -1,0 +1,85 @@
+{
+  "case_id": "P094",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing real-estate assets crossed the ownership boundary (92 wholly-owned properties, 27 transactions, $3.6B assembled into the REIT), but the operating processes that manage/finance/dispose of them did NOT transfer into the registrant — \"We have no employees. Our operations are conducted by the Adviser,\" and acquisition/management/financing functions are performed by the external Blackstone Adviser rather than the registrant, so T4 assets are owned while T5 processes are only accessed via contract, a structural product-vs-process mismatch at closing. gap_56=0: T5 and T6 sit together on the same side — the same external Adviser supplies both the operating processes AND the people (executive team and 426 Blackstone real-estate professionals), so processes and the organization running them are coherently aligned (both held read-only via the Advisory Agreement, neither internalized). gap_mitigated=yes: the shared operating substrate is contractually absorbed through the Advisory Agreement, the affiliate line of credit, and the Special Limited Partner performance-participation arrangement, allocating processes/people to the registrant's assets at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice documents that BREIT closed 27 transactions assembling $3.6B of real-estate properties into its ownership (T4 customer-facing assets crossed into BREIT/BREIT OP) while stating 'We have no employees. Our operations are conducted by the Adviser' and that acquisition, management, financing and disposition authority is delegated under the Advisory Agreement to the external Blackstone Adviser (T5 did not transfer with the assets). That is a closing-era product-vs-process structural mismatch (gap_45=1). T5 processes and T6 people both remain with the same external Adviser and its Blackstone real-estate professionals rather than one moving without the other (gap_56=0); the Advisory Agreement contractually allocates that shared operating substrate (gap_mitigated=yes)."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "N-1",
+      "sigma_T3": "null",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing real-estate assets crossed into BREIT through 27 acquisitions, including wholly owned properties and joint-venture interests, while the company had no employees and its acquisition, management, financing, and disposition processes remained with the external Adviser. This creates a closing-structure product/process gap, but the Advisory Agreement contractually allocated those operating functions to the Adviser. No process/organization gap is documented because the Adviser supplied both the processes and the Blackstone personnel and executive management team that operated them."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"read-only\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing real-estate assets crossed the ownership boundary (92 wholly-owned properties, 27 transactions, $3.6B assembled into the REIT), but the operating processes that manage/finance/dispose of them did NOT transfer into the registrant \\u2014 \\\"We have no employees. Our operations are conducted by the Adviser,\\\" and acquisition/management/financing functions are performed by the external Blackstone Adviser rather than the registrant, so T4 assets are owned while T5 processes are only accessed via contract, a structural product-vs-process mismatch at closing. gap_56=0: T5 and T6 sit together on the same side \\u2014 the same external Adviser supplies both the operating processes AND the people (executive team and 426 Blackstone real-estate professionals), so processes and the organization running them are coherently aligned (both held read-only via the Advisory Agreement, neither internalized). gap_mitigated=yes: the shared operating substrate is contractually absorbed through the Advisory Agreement, the affiliate line of credit, and the Special Limited Partner performance-participation arrangement, allocating processes/people to the registrant's assets at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice documents that BREIT closed 27 transactions assembling $3.6B of real-estate properties into its ownership (T4 customer-facing assets crossed into BREIT/BREIT OP) while stating 'We have no employees. Our operations are conducted by the Adviser' and that acquisition, management, financing and disposition authority is delegated under the Advisory Agreement to the external Blackstone Adviser (T5 did not transfer with the assets). That is a closing-era product-vs-process structural mismatch (gap_45=1). T5 processes and T6 people both remain with the same external Adviser and its Blackstone real-estate professionals rather than one moving without the other (gap_56=0); the Advisory Agreement contractually allocates that shared operating substrate (gap_mitigated=yes).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing real-estate assets crossed into BREIT through 27 acquisitions, including wholly owned properties and joint-venture interests, while the company had no employees and its acquisition, management, financing, and disposition processes remained with the external Adviser. This creates a closing-structure product/process gap, but the Advisory Agreement contractually allocated those operating functions to the Adviser. No process/organization gap is documented because the Adviser supplied both the processes and the Blackstone personnel and executive management team that operated them.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

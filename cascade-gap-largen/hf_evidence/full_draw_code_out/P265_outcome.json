@@ -1,0 +1,58 @@
+{
+  "case_id": "P265",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that no public 3-5-year financial or operating record specific to the acquired business was located, as the acquired company deregistered and the acquirer does not file SEC periodic reports. Consequently, there is no documented evidence of product/process or process/organization disruption."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no public 3-5-year record located",
+      "rationale": "The slice documents that Bear State deregistered from SEC reporting shortly after closing and that neither it nor acquirer Arvest filed any subsequent periodic reports disclosing financials, operations, or performance specific to the acquired business. No realized disruption at the product/process interface or process/organization interface is described in any sourced material; absence of such evidence codes both pathways as 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record states that no post-close SEC periodic filing disclosed financial statements, operating data, branch counts, or employee counts specific to the acquired Bear State business. It also states that no segment-level disclosure of the acquired business’s post-close performance was located and that no public 3–5-year financial or operating record specific to that business was available. Accordingly, neither product/process disruption nor process/organization fracture is documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that no public 3-5-year financial or operating record specific to the acquired business was located, as the acquired company deregistered and the acquirer does not file SEC periodic reports. Consequently, there is no documented evidence of product/process or process/organization disruption.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no public 3-5-year record located\",\n  \"rationale\": \"The slice documents that Bear State deregistered from SEC reporting shortly after closing and that neither it nor acquirer Arvest filed any subsequent periodic reports disclosing financials, operations, or performance specific to the acquired business. No realized disruption at the product/process interface or process/organization interface is described in any sourced material; absence of such evidence codes both pathways as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record states that no post-close SEC periodic filing disclosed financial statements, operating data, branch counts, or employee counts specific to the acquired Bear State business. It also states that no segment-level disclosure of the acquired business’s post-close performance was located and that no public 3–5-year financial or operating record specific to that business was available. Accordingly, neither product/process disruption nor process/organization fracture is documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

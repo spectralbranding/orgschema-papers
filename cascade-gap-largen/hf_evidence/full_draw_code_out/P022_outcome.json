@@ -1,0 +1,58 @@
+{
+  "case_id": "P022",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income available to common fell from $6,311M (2021) to $589M (2023); ~2,000-employee reduction under 2023 Restructuring Program",
+      "rationale": "The slice documents a financial decline (net income $6,311M in 2021 to $589M in 2023) and a Board-approved 2023 Restructuring Program with ~2,000 job cuts framed as a response to \"the continued economic impact from the global recessionary environment,\" not to any product/operations misalignment or operations/people fracture arising from the deal. No line describes an acquired product failing to align with operating processes (p4=0) or operations breaking against the organization/culture (p5=0). The restructuring is attributed to macroeconomic conditions and cost improvement, and the registrant continued as an independent SEC-reporting company throughout the window with no documented archetype incoherence or business-model incompatibility."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income available for Dow Inc. common stockholders was $589 million in 2023",
+      "rationale": "The slice documents a 2023 Restructuring Program involving a 2,000-employee workforce reduction and asset write-downs, but explicitly attributes this to the 'global recessionary environment' rather than integration difficulties. There is no documented evidence of product/process incoherence or process/organization fracture resulting from the transaction."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Net income declined from $6.311bn in 2021 to $589m in 2023'}",
+      "rationale": "{'type': 'string', 'enum': 'No realized product/process alignment disruption is documented; Dow continued operating manufacturing sites in 31 countries and reported approximately $45 billion of 2023 sales. The 2023 restructuring, including approximately 2,000 workforce reductions and $535 million of pretax charges, was attributed to the global recessionary environment and cost improvement initiatives, not to a documented fracture between operations and people, management, or culture.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Net income available to common fell from $6,311M (2021) to $589M (2023); ~2,000-employee reduction under 2023 Restructuring Program\", \"rationale\": \"The slice documents a financial decline (net income $6,311M in 2021 to $589M in 2023) and a Board-approved 2023 Restructuring Program with ~2,000 job cuts framed as a response to \\\"the continued economic impact from the global recessionary environment,\\\" not to any product/operations misalignment or operations/people fracture arising from the deal. No line describes an acquired product failing to align with operating processes (p4=0) or operations breaking against the organization/culture (p5=0). The restructuring is attributed to macroeconomic conditions and cost improvement, and the registrant continued as an independent SEC-reporting company throughout the window with no documented archetype incoherence or business-model incompatibility.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income available for Dow Inc. common stockholders was $589 million in 2023\",\n  \"rationale\": \"The slice documents a 2023 Restructuring Program involving a 2,000-employee workforce reduction and asset write-downs, but explicitly attributes this to the 'global recessionary environment' rather than integration difficulties. There is no documented evidence of product/process incoherence or process/organization fracture resulting from the transaction.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Net income declined from $6.311bn in 2021 to $589m in 2023\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No realized product/process alignment disruption is documented; Dow continued operating manufacturing sites in 31 countries and reported approximately $45 billion of 2023 sales. The 2023 restructuring, including approximately 2,000 workforce reductions and $535 million of pretax charges, was attributed to the global recessionary environment and cost improvement initiatives, not to a documented fracture between operations and people, management, or culture.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

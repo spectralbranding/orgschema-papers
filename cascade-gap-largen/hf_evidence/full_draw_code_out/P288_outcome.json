@@ -1,0 +1,58 @@
+{
+  "case_id": "P288",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$1,167m Zulily intangible-asset impairment (2019); net swing from +$964m (2018) to -$405m (2019) to +$1,262m (2020)",
+      "rationale": "The slice documents a single realized product-level disruption: a $1,167 million Zulily intangible-asset impairment in Q3 2019 that drove the year's net loss, which could indicate acquired-product/operations incoherence but the slice gives no interface-level detail, so p4 is uncertain. No process/organization fracture is documented — the registrant continued filing periodic reports, retained QVC/HSN/Zulily/Cornerstone, and revenue held in a narrow $13.5-14.2bn band with no reported operational-vs-people integration breakdown — so p5 is 0. The slice explicitly states the 2018 split-off \"did not have a major effect\" on results and contains no evidence bearing on the controlling-intent archetype or reconciliation of business models, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net earnings of $1,262 million for 2020",
+      "rationale": "The slice documents a $1,167 million impairment related to Zulily intangible assets in 2019, but does not provide evidence of specific product/process or process/organization integration failures. Therefore, p4_pathway and p5_pathway are coded as 0 due to lack of documented evidence."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.167 billion Zulily intangible-asset impairment in 2019",
+      "rationale": "No realized product/process-interface disruption is documented; revenue remained within approximately $13.5-$14.2 billion from 2018 through 2020, and the company stated that the 2018 transaction did not have a major effect on historical or expected future operations. No realized process/organization fracture is documented; the only organizationally adjacent item was the elimination of certain corporate costs following the split-off, while the cited remote-workforce discussion was a forward-looking COVID-19 risk rather than a realized integration breakdown."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$1,167m Zulily intangible-asset impairment (2019); net swing from +$964m (2018) to -$405m (2019) to +$1,262m (2020)\", \"rationale\": \"The slice documents a single realized product-level disruption: a $1,167 million Zulily intangible-asset impairment in Q3 2019 that drove the year's net loss, which could indicate acquired-product/operations incoherence but the slice gives no interface-level detail, so p4 is uncertain. No process/organization fracture is documented \\u2014 the registrant continued filing periodic reports, retained QVC/HSN/Zulily/Cornerstone, and revenue held in a narrow $13.5-14.2bn band with no reported operational-vs-people integration breakdown \\u2014 so p5 is 0. The slice explicitly states the 2018 split-off \\\"did not have a major effect\\\" on results and contains no evidence bearing on the controlling-intent archetype or reconciliation of business models, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net earnings of $1,262 million for 2020\",\n  \"rationale\": \"The slice documents a $1,167 million impairment related to Zulily intangible assets in 2019, but does not provide evidence of specific product/process or process/organization integration failures. Therefore, p4_pathway and p5_pathway are coded as 0 due to lack of documented evidence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.167 billion Zulily intangible-asset impairment in 2019\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; revenue remained within approximately $13.5-$14.2 billion from 2018 through 2020, and the company stated that the 2018 transaction did not have a major effect on historical or expected future operations. No realized process/organization fracture is documented; the only organizationally adjacent item was the elimination of certain corporate costs following the split-off, while the cited remote-workforce discussion was a forward-looking COVID-19 risk rather than a realized integration breakdown.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

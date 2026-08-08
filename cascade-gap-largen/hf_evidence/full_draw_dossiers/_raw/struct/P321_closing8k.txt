@@ -1,0 +1,193 @@
+ 
+ 8-K
+ 1
+ form8k.htm
+ FORM 8-K
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section 13 or 15(d) of the 
+
+ Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported): July 18, 2018 
+
+ VALIDUS HOLDINGS, LTD. 
+
+ (Exact name of Registrant as specified in its charter) 
+
+ Bermuda 
+
+ 001-33606 
+
+ 98-0501001 
+
+ (State or other jurisdiction 
+
+ of incorporation) 
+
+ (Commission 
+
+ File Number) 
+
+ (IRS Employer 
+
+ Identification No.) 
+
+ 29 Richmond Road, Pembroke, Bermuda HM 08 
+
+ (Address of principal executive offices) 
+
+ Registrant';s telephone number, including area code: (441) 278-9000 
+
+ Not Applicable 
+
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions: 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#9744; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01 Entry into a Material Definitive Agreement. 
+
+ On July 18, 2018, in connection with the consummation of the Merger (as defined below), Validus Holdings, Ltd., a Bermuda exempted company (the "; Company ";), Validus Reinsurance, Ltd. ("; Validus Re ";), American International Group, Inc. ("; AIG ";), JPMorgan Chase Bank, N.A., as administrative agent, The Bank of New York Mellon, as collateral agent, and the lenders party thereto entered into amendment no. 1 (the "; Amendment ";) to the Five-Year Secured Letter of Credit Facility Agreement, dated as of December 9, 2015 (the "; Existing Credit Agreement "; and as amended, the "; Amended Credit Agreement ";), among the Company, Validus Re, Lloyds Securities Inc., as syndication agent, JPMorgan Chase Bank, N.A., as administrative agent, Barclays Bank PLC, HSBC Bank USA, National Association, and SunTrust Bank, as co-documentation agents and the lenders party thereto, to, among other things, add AIG as a guarantor under the Amended Credit Agreement. 
+
+ In addition, all liens over collateral under the Existing Credit Agreement are released and the Amended Credit Agreement becomes an unsecured letter of credit facility agreement. The covenants, representations and warranties, and certain events of default, which applied under the Existing Credit Agreement, cease to apply. 
+
+ A copy of the Amendment is attached and incorporated herein by reference as Exhibit 1.1. The foregoing description of the Amended Credit Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the Amendment. 
+
+ Item 1.02 Termination of a Material Definitive Agreement. 
+
+ On July 18, 2018, in connection with the consummation of the Merger, all obligations were repaid under (a) the Credit Agreement, dated as of August 7, 2017, among the Company, Validus Re and Barclays Bank PLC, as lender (the "; Barclays Credit Agreement ";), (b) the Unsecured Revolving Credit Agreement, dated as of August 7, 2017, among the Company, Validus Re and HSBC Bank USA, National Association, as lender (the "; HSBC Credit Agreement ";) and (c) the Five-Year Unsecured Revolving Credit and Letter of Credit Facility Agreement, dated as of December 9, 2015, among, amongst others, the Company, Validus Re, the lenders party thereto and JPMorgan Chase Bank, N.A., as administrative agent (the "; JPM Credit Agreement "; and together with the Barclays Credit Agreement and the HSBC Credit Agreement, the "; Terminated Credit Agreements ";). The Terminated Credit Agreements were terminated on the same date in connection with such transactions. The material terms of each of the Terminated Credit Agreements are described under Note 19 of the Consolidated Financial Statements in the Company';s Annual Report on Form 10-K for the year ended December 31, 2017. 
+
+ Item 2.01 Completion of Acquisition or Disposition of Assets. 
+
+ On July 18, 2018, the Company completed its previously announced merger with Venus Holdings Limited ("; Merger Sub ";), a wholly-owned subsidiary of AIG. Pursuant to the Agreement and Plan of Merger, dated as of January 21, 2018, by and among the Company, Merger Sub and AIG (the "; Merger Agreement ";), and the statutory merger agreement required in accordance with Section 105 of the Bermuda Companies Act 1981, as amended (the "; Companies Act ";) by and among the Company, Merger Sub and AIG, dated as of July 18, 2018, Merger Sub merged with and into the Company in accordance with the Companies Act (the "; Merger ";), with the Company continuing as the surviving corporation and as a wholly-owned subsidiary of AIG. 
+
+ Pursuant to the Merger Agreement, at the effective time of the Merger (the "; Effective Time ";), each issued and outstanding common share, par value $0.175 per common share, of the Company (the "; Common Shares ";), other than shares that were owned by the Company as treasury shares, owned by a subsidiary of the Company, owned by AIG or any of its subsidiaries or that were subject to any Company Award (as defined in the Merger Agreement), were converted into the right to receive $68.00 in cash (the "; Merger Consideration ";), without interest and subject to any applicable tax withholdings, funded with cash on hand from AIG. 
+
+ Following the Effective Time, each issued and outstanding series A preference share, par value $0.175 per share, of the Company remains issued and outstanding as a ";Series A Preference Share"; of the Company (the "; Series A Preference Shares ";) and each issued and outstanding series B preference share, par value $0.175 per share, of the Company remains issued and outstanding as a ";Series B Preference Share"; of the Company (the "; Series B Preference Shares ";), in each case as described further in the Merger Agreement. 
+
+ At the Effective Time, a pro rata portion of each outstanding restricted share, performance share, restricted stock unit and performance stock unit of the Company, subject to certain exceptions, vested based on the portion of the applicable 
+
+ vesting period elapsed through the Effective Time (with the number of performance shares and performance stock units vesting determined based on the target performance level), and was canceled and entitled to receive the Merger Consideration. Subject to certain exceptions, the remaining unvested portion of each such outstanding restricted share, performance share, restricted stock unit and performance stock unit were, at the Effective Time, canceled, assumed by AIG and converted into an award of AIG restricted stock or restricted stock units (with the number of performance shares and performance stock units determined based on the target level). Such assumed and converted awards remain subject to the service-vesting requirements and other terms as in effect immediately prior to the Effective Time (other than performance shares and performance stock units, which are subject solely to service-vesting requirements and will no longer be subject to any further performance-based vesting requirements). 
+
+ A copy of the Merger Agreement is filed as Exhibit 2.1 to the Company';s Current Report on Form 8-K filed on January 22, 2018 and is attached and incorporated herein by reference as Exhibit 2.1. The foregoing description of the Merger Agreement and the Merger does not purport to be complete and is qualified in its entirety by reference to the full text of the Merger Agreement. 
+
+ Item 3.01 Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+
+ The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ On July 18, 2018, in connection with the consummation of the Merger, the Company notified the New York Stock Exchange ("; NYSE ";) of the completion of the Merger and requested that trading in the Common Shares be withdrawn from listing on the NYSE. The NYSE filed a notification of removal from listing on Form 25 with the Securities and Exchange Commission ("; SEC ";) with respect to the Common Shares to report the delisting of the Common Shares from the NYSE and to suspend trading of the Common Shares on the NYSE prior to the opening of trading on July 18, 2018. 
+
+ The Company intends to file with the SEC a certificate of notice of termination on Form 15 with respect to its Common Shares, requesting that the Common Shares be deregistered under the Securities Exchange Act of 1934, as amended (the "; Exchange Act ";), and that the reporting obligations of the Company with respect to the Common Shares under Sections 13 and 15(d) of the Exchange Act be suspended. 
+
+ The Series A Preference Shares and the Series B Preference Shares will continue to be listed on the NYSE and registered under the Exchange Act. 
+
+ Item 3.03 Material Modification to Rights of Security Holders. 
+
+ The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ In connection with the completion of the Merger and at the Effective Time, holders of Common Shares immediately prior to such time ceased to have any rights as shareholders in the Company (other than their right to receive the Merger Consideration) and accordingly, no longer have any interest in the Company';s future earnings or growth. 
+
+ Item 5.01 Changes in Control of Registrant. 
+
+ The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ As a result of the Merger, a change in control of the Company occurred, and the Company is now a wholly-owned subsidiary of AIG. 
+
+ Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers 
+
+ The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ In accordance with the terms of the Merger Agreement, at the Effective Time, each of the twelve directors of the Company prior to consummation of the Merger (Edward J. Noonan, Mahmoud Abdallah, Michael E. A. Carpenter, Matthew J. Grayson, Jeffrey Greenberg, Karin Hirtler-Garvey, John J. Hendrickson, Jean-Marie Nessi, Mandakini Puri, Gail Ross, Dr. 
+
+ Therese M. Vaughan and Christopher Watson) ceased to be directors of the Company. In accordance with the terms of the Merger Agreement, the directors of Merger Sub in office immediately prior to consummation of the Merger (Charles Fry, Elias Habayeb and David Friston) are the directors of the Company and will be the directors of the Company until the earlier of their death, resignation or removal or until their respective successors are duly elected and qualified, as the case may be. 
+
+ There are no arrangements or understandings between any of Mr. Fry, Mr. Habayeb, or Mr. Friston and any other persons pursuant to which Mr. Fry, Mr. Habayeb, or Mr. Friston, as applicable, was selected as a director of the Company. None of Mr. Fry, Mr. Habayeb, or Mr. Friston has any direct or indirect material interest in any transaction required to be disclosed pursuant to Item 404(a) of Regulation S-K. 
+
+ The employment of each of Mr. Noonan, Chief Executive Officer, Jeffrey D. Sangster, Executive Vice President and Chief Financial Officer, and Robert Kuzloski, Executive Vice President and General Counsel, will terminate and each will cease to be an officer of the Company within 31 days after the Merger. 
+
+ Item 5.03 Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. 
+
+ The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ Pursuant to the terms of the Merger Agreement, at the Effective Time, the memorandum of association and bye-laws of Merger Sub immediately prior to the Effective Time became the memorandum of association and bye-laws, respectively, of the Company and will remain the memorandum of association (the "; Altered Memorandum of Association ";) and bye-laws (the "; Amended and Restated Bye-laws ";), respectively, of the Company, until changed or amended as provided therein or pursuant to applicable law. 
+
+ The Altered Memorandum of Association differs in certain respects from the memorandum of association of the Company immediately prior to the Effective Time. These differences include: (i) the Altered Memorandum of Association contains no restrictions on the objects for which the Company is formed and incorporated, whereas the memorandum of association of the Company immediately prior to the Effective Time sets out a prescribed list of objects for which the Company is formed and incorporated; (ii) with respect to the Company';s Common Shares, the authorized share capital of the Company set out in the Altered Memorandum of Association is US$802,800.00 divided into 80,000,000 Common Shares of par value US$0.01 per Common Share, whereas the authorized share capital of the Company set out in the memorandum of association of the Company immediately prior to the Effective Time was US$100,000,000.00 divided into 571,428,571 Common Shares of par value US$0.175 per Common Share; and (iii) the Altered Memorandum of Association expressly provides that the powers of the Company include the powers of a natural person and the power to acquire its own shares to be held as treasury shares in accordance with the provisions of Section 42B of the Companies Act, whereas the memorandum of association of the Company immediately prior to the Effective Time does not provide for these powers. Other than the provisions listed in the preceding sentence, the Altered Memorandum of Association and the memorandum of association of the Company immediately prior to the Effective Time are substantially the same. 
+
+ The Amended and Restated Bye-laws are in a form appropriate to reflect the Company';s status following the Merger as a wholly-owned subsidiary of AIG. As such, the Amended and Restated Bye-laws differ in certain respects from the bye-laws of the Company immediately prior to the Effective Time, which reflected the Company';s position prior to the Merger as a publicly listed holding company. In particular, the Amended and Restated Bye-laws do not contain the following provisions that were contained in the bye-laws of the Company immediately prior to the Effective Time (references to bye-law numbers being to such bye-laws): (i) the share rights set out in bye-law 4; (ii) the tag along rights set out in bye-law 12A and additional conditions to tag along sales set out in bye-law 12B; (iii) the requirement for all holders of shares of the relevant class to consent in writing to any variation of rights attaching to such shares set out in bye-law 15; (iv) the number of directors provisions set out in bye-law 35; (v) the term of office of directors provisions set out in bye-law 36; (vi) the removal of director provisions set out in bye-law 37; (vii) the dissent of directors provisions set out in bye-law 57A; (viii) the financial year end provisions set out in bye-law 61; (ix) the distribution of financial statements and directors'; report provisions set out in bye-law 67; (x) the requirement for a special resolution (as defined therein) to voluntarily wind up the company set out in bye-law 68; (xi) the requirement for a resolution of holders of a majority in voting power of the aggregate voting power of the Common Stock (as defined therein) to alter the bye-laws or memorandum of association of the Company set out in, respectively, bye-laws 69 and 70; (xii) the requirement for an ordinary resolution (as defined therein) to discontinue the Company out of Bermuda set out in bye-law 71; and (xiii) certain definitions set out in bye-law 1 used in respect of the 
+
+ provisions listed in (i) to (xii) of the foregoing. Other than the provisions listed in the preceding sentence, the Amended and Restated Bye-laws and the bye-laws of the Company immediately prior to the Effective Time are substantially the same. 
+
+ Copies of the Altered Memorandum of Association and the Amended and Restated Bye-laws are attached and incorporated herein by reference as Exhibits 3.1 and 3.2, respectively. The foregoing descriptions of the Altered Memorandum of Association and the Amended and Restated Bye-laws do not purport to be complete and are qualified in their entirety by reference to the full texts of the Altered Memorandum of Association and the Amended and Restated Bye-laws. 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ Exhibit 
+ No. 
+
+ Description 
+
+ 1.1 
+
+ Amendment No.1, dated as of July 18, 2018, among Validus Holdings, Ltd., Validus Reinsurance, Ltd., JPMorgan Chase Bank, N.A., as administrative agent, The Bank of New York Mellon, as collateral agent, the lenders party thereto and American International Group, Inc. 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated as of January 21, 2018, by and among Validus Holdings, Ltd., American International Group, Inc. and Venus Holdings Limited (incorporated by reference to Exhibit 2.1 to the Current Report on Form 8-K of Validus Holdings, Ltd. filed on January 22, 2018) 
+
+ 3.1 
+
+ Altered Memorandum of Association of Validus Holdings, Ltd. 
+
+ 3.2 
+
+ Amended and Restated Bye-laws of Validus Holdings, Ltd. 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Dated: July 18, 2018 
+
+ VALIDUS HOLDINGS, LTD. 
+
+ (Registrant) 
+
+ By: 
+
+ /s/Robert F. Kuzloski 
+
+ Name: Robert F. Kuzloski 
+
+ Title: Executive Vice President and General Counsel 
+

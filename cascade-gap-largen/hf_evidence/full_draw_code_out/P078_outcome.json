@@ -1,0 +1,58 @@
+{
+  "case_id": "P078",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "merged into PECO in 2018 and ceased reporting",
+      "rationale": "The slice documents that the registrant merged into PECO in 2018 and deregistered, terminating its advisory and management agreements. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface during the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "merged into PECO at 2.04x; deregistered; no in-window separate record",
+      "rationale": "The slice documents no product/process interface disruption over the outcome window; the registrant simply ceased separate reporting after the Nov 2018 merger into PECO. At the process/organization interface the only realized item is the contemporaneous termination of the advisory, property-management, and services agreements effective immediately prior to that merger, with fees waived—no fracture or operations-vs-organization breakdown over time is described. Because no separate public 3–5-year record exists in-window, absence of pathway evidence is coded 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'The registrant filed no separate annual reports during 2019-2021 after its November 2018 merger and deregistration, so no in-window evidence establishes whether product/process disruption occurred [SRC: SEC accession 0001581405-18-000044]. Although advisory, property-management, and services agreements were terminated immediately before the 2018 merger, the slice does not document that these terminations represented a realized process/organization fracture over the 3-5-year horizon [SRC: SEC accession 0001581405-18-000041, Form 8-K Item 1.02]. Accordingly, both pathways are uncertain rather than affirmatively present or absent.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"merged into PECO in 2018 and ceased reporting\",\n  \"rationale\": \"The slice documents that the registrant merged into PECO in 2018 and deregistered, terminating its advisory and management agreements. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface during the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"merged into PECO at 2.04x; deregistered; no in-window separate record\",\n  \"rationale\": \"The slice documents no product/process interface disruption over the outcome window; the registrant simply ceased separate reporting after the Nov 2018 merger into PECO. At the process/organization interface the only realized item is the contemporaneous termination of the advisory, property-management, and services agreements effective immediately prior to that merger, with fees waived—no fracture or operations-vs-organization breakdown over time is described. Because no separate public 3–5-year record exists in-window, absence of pathway evidence is coded 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The registrant filed no separate annual reports during 2019-2021 after its November 2018 merger and deregistration, so no in-window evidence establishes whether product/process disruption occurred [SRC: SEC accession 0001581405-18-000044]. Although advisory, property-management, and services agreements were terminated immediately before the 2018 merger, the slice does not document that these terminations represented a realized process/organization fracture over the 3-5-year horizon [SRC: SEC accession 0001581405-18-000041, Form 8-K Item 1.02]. Accordingly, both pathways are uncertain rather than affirmatively present or absent.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

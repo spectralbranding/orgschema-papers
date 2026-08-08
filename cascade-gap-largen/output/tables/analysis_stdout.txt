@@ -1,0 +1,7 @@
+=== Full-draw confirmatory necessary-condition analysis (N=350 coded) ===
+2x2 (gap_any x p45_any), outcome-uncertain set aside (55):
+  n11=15  n10=88  n01=14  n00=178
+  safe harbor P(fail|no gap) = 0.073  (exact upper 95% CI 0.112)
+  necessity consistency P(gap|fail) = 0.517
+  [reported, NOT headlined] sufficiency P(fail|gap) = 0.146
+  NCA safe-harbor cell empty: False

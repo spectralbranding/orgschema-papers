@@ -1,0 +1,310 @@
+ 
+
+ 0001725526 
+ false 
+ --12-31 
+
+ 0001725526 
+
+ 2021-04-01 
+ 2021-04-01 
+
+ 0001725526 
+ 
+ dei:FormerAddressMember 
+
+ 2021-04-01 
+ 2021-04-01 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section 13 or 15(d) of
+the Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported):
+ April 1, 2021 
+
+ HighPoint Resources Corporation 
+
+ (Exact name of registrant as specified in its
+charter) 
+
+ Delaware 
+ 001-38435 
+ 82-3620361 
+ 
+ (State or other jurisdiction of 
+incorporation or organization) 
+ (Commission File Number) 
+ (IRS Employer Identification Number) 
+
+ 410 17th Street, Suite 1400 
+
+ Denver , Colorado 80202 
+
+ (Address of principal executive offices, including zip code) 
+
+ ( 720 ) 440-6100 
+
+ (Registrant';s telephone number, including area code) 
+
+ 555 17th Street , Suite 3700 
+
+ Denver , Colorado 80202 
+
+ (Former
+name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K
+filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#168; Written communications pursuant to Rule 425 under the Securities
+Act (17 CFR 230.425) 
+
+ &#168; Soliciting material pursuant to Rule 14a-12 under the Exchange
+Act (17 CFR 240.14a-12) 
+
+ &#168; Pre-commencement communications pursuant to Rule 14d-2(b) under
+the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#168; Pre-commencement communications pursuant to Rule 13e-4(c) under
+the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+ 
+ Trading symbol 
+ 
+ Name of each exchange on which registered 
+ 
+ Common Stock, $0.001 par value 
+ 
+ HPR 
+ 
+ New York Stock Exchange (1) 
+
+ (1) The common stock, par value $0.001 per
+share, of HighPoint Resources Corporation will be suspended from trading prior to the opening of the market on April 5, 2021 and
+will no longer be listed on the New York Stock Exchange. 
+
+ Indicate by check mark whether the registrant
+is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2
+of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#168; 
+
+ If an emerging growth company, indicate by check
+mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting
+standards provided pursuant to Section 13(a) of the Exchange Act. &#168; 
+
+ Introductory Note 
+
+ On April 1, 2021, Bonanza
+Creek Energy, Inc., a Delaware corporation (";Bonanza Creek";) completed its previously announced acquisition of HighPoint
+Resources Corporation, a Delaware corporation (";HighPoint";), pursuant to the terms of HighPoint';s prepackaged plan of
+reorganization under Chapter 11 of the United States Bankruptcy Code (the ";Prepackaged Plan";), which was confirmed by the
+U.S. Bankruptcy Court for the District of Delaware on March 18, 2021 pursuant to a confirmation order (the ";Confirmation Order";)
+and went effective on April 1, 2021. 
+
+ The Prepackaged Plan implements
+the merger (the ";Merger";) and restructuring transactions (together with the Merger, the ";Transaction";) in accordance
+with the Agreement and Plan of Merger, dated as of November 9, 2020 (the ";Merger Agreement";), by and among Bonanza Creek,
+HighPoint and Boron Merger Sub, Inc., a wholly-owned subsidiary of Bonanza Creek (";Merger Sub";). Pursuant to the Prepackaged
+Plan and the Merger Agreement, at the effective time of the Merger (the ";Effective Time";) and the effective date under the
+Prepackaged Plan (the ";Effective Date";), Merger Sub merged with and into HighPoint, with HighPoint continuing as the surviving
+corporation (the ";Surviving Corporation";) and wholly-owned subsidiary of Bonanza Creek. At the Effective Time, each eligible
+share of common stock, par value $0.001 per share, of HighPoint (";HighPoint Common Stock";) issued and outstanding immediately
+prior to the Effective Time was automatically converted into the right to receive 0.11464 shares of Bonanza Creek Common Stock, with cash
+paid in lieu of the issuance of any fractional shares. 
+
+ Concurrently with the Merger
+and pursuant to the Prepackaged Plan, and in exchange for the $625 million in aggregate principal amount outstanding of 7.0% Senior Notes
+due 2022 of HighPoint Operating Corporation (";HighPoint OpCo";) and 8.75% Senior Notes due 2025 of HighPoint OpCo (collectively,
+the ";HighPoint Senior Notes";), Bonanza Creek issued to all holders of HighPoint Senior Notes an aggregate of (i) 9,314,214
+shares of common stock, par value $0.01 per share, of Bonanza Creek (";Bonanza Creek Common Stock";) and (ii) $100 million
+aggregate principal amount of 7.5% Senior Notes due 2026 of Bonanza Creek (";Bonanza Creek Senior Notes";) pursuant to an indenture
+(the ";Indenture";), dated April 1, 2021, by and among Bonanza Creek, U.S. Bank National Association, as trustee (the ";Trustee";),
+and the subsidiary guarantors party thereto. 
+
+ The events described in this
+Current Report on Form 8-K took place in connection with the completion of the Transaction. 
+
+ Item 1.02 Termination of a Material Definitive Agreement. 
+
+ HighPoint Credit Facility 
+
+ In connection with the consummation of the Merger
+and the occurrence of the Effective Date, on April 1, 2021, HighPoint terminated all outstanding lender commitments, including commitments
+of the lenders to issue letters of credit, under that certain Fourth Amended and Restated Credit Facility (as amended from time to time,
+the ";HighPoint Credit Agreement";), by and among HighPoint, as parent guarantor, HighPoint OpCo, as borrower, the lenders party
+thereto and JPMorgan Chase Bank, N.A., as administrative agent. In connection with the termination of the HighPoint Credit Agreement,
+on April 1, 2021, all outstanding obligations for principal, interest and fees under the HighPoint Credit Agreement were paid off
+in full (other than certain letters of credit which are being assumed by Bonanza Creek), and all liens securing such obligations and any
+letter of credit or hedging obligations permitted by the HighPoint Credit Agreement to be secured by such liens and guarantees of such
+obligations were released. 
+
+ 1 
+
+ Cancellation of the HighPoint Senior Notes 
+
+ Upon the Effective Date, the HighPoint Senior Notes
+were cancelled pursuant to the Confirmation Order and thereafter represented only the right to receive an aggregate of (i) 9,314,214
+shares of Bonanza Creek Common Stock and (ii) $100 million aggregate principal amount of Bonanza Creek Senior Notes. 
+
+ The information set forth in the Introductory Note
+of this Current Report on Form 8-K is incorporated by reference into this Item 1.02. 
+
+ Item 1.03 Bankruptcy or Receivership. 
+
+ The information set forth in the Introductory Note
+and Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 1.03. 
+
+ Item 2.01 Completion of Acquisition or Disposition of Assets. 
+
+ As discussed in the Introductory
+Note of this Current Report on Form 8-K, on April 1, 2021, Bonanza Creek completed its previously announced acquisition of the
+HighPoint as part of HighPoint';s reorganization under Chapter 11 of the United States Bankruptcy Code. At the Effective Time, each
+eligible share of HighPoint Common Stock issued and outstanding immediately prior to the Effective Time was automatically converted into
+the right to receive 0.11464 shares of Bonanza Creek Common Stock, with cash paid in lieu of fractional shares. 
+
+ Pursuant to the terms of
+the Prepackaged Plan, upon the Effective Date, concurrently with the Merger and in exchange for the $625 million in aggregate
+principal amount outstanding of HighPoint Senior Notes, Bonanza Creek issued to holders of HighPoint Senior Notes an aggregate
+of (i) 9,314,214 shares of Bonanza Creek Common Stock and (ii) Bonanza Creek Senior Notes in an aggregate principal amount
+equal to $100 million, to be allocated pro rata among holders. 
+
+ The issuance of Bonanza Creek
+Common Stock in connection with the Transaction was registered under the Securities Act of 1933, as amended (the ";Securities Act";),
+pursuant to Bonanza Creek';s registration statements on Form S-4, as amended (Registration Statement Nos. 333-251401 and 333-251402),
+which were declared effective by the U.S. Securities and Exchange Commission (the ";Commission";) on February 9, 2021.
+The related joint proxy statement/prospectus and exchange offer prospectus contain additional information about the Merger. 
+
+ The foregoing description
+of the Merger, the Merger Agreement, the Prepackaged Plan, and the transactions contemplated thereby, is a summary only, does not purport
+to be complete, and is subject to and qualified in its entirety by reference to the full text of the Merger Agreement and the Confirmation
+Order, copies of which are attached hereto or incorporated by reference as Exhibits 2.1 and 4.1, respectively, to this Current Report
+on Form 8-K and are incorporated by reference into this Item 2.01. The information set forth in the Introductory Note of this Current
+Report on Form 8-K is incorporated by reference into this Item 2.01. 
+
+ Item 3.01 Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+
+ On April 1, 2021, in
+connection with the completion of the Merger, HighPoint notified the New York Stock Exchange (the ";NYSE";) that the completion
+of the Merger has occurred and requested that the trading of shares of HighPoint Common Stock on the NYSE be suspended and that the listing
+of such shares on the NYSE be withdrawn. In addition, HighPoint requested that the NYSE file with the Commission a notification on Form 25
+to report the delisting of shares of HighPoint Common Stock from the NYSE and to deregister shares of HighPoint Common Stock under Section 12(b) of
+the Securities Exchange Act of 1934, as amended (the ";Exchange Act";). The HighPoint Common Stock will be suspended from trading
+prior to the opening of the market on April 5, 2021. In addition, the Surviving Corporation intends to file with the Commission a
+Form 15 requesting that the reporting obligations of the Company under Sections 13(a) and 15(d) of the Exchange Act be
+suspended. 
+
+ 2 
+
+ Item 3.03 Material Modification to Rights of Security Holders. 
+
+ The information set forth
+in the Introductory Note, Item 1.02, Item 2.01, Item 3.01 and Item 5.03 of this Current Report on Form 8-K is incorporated
+by reference into this Item 3.03. 
+
+ Item 5.01 Changes in Control of Registrant. 
+
+ As a result of the completion
+of the Merger, at the Effective Time, HighPoint became a wholly owned subsidiary of Bonanza Creek. 
+
+ The information set forth
+in the Introductory Note, Item 2.01, Item 3.03, Item 5.02 and Item 5.03 of this Current Report on Form 8-K is incorporated
+by reference into this Item 5.01. 
+
+ Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of
+Certain Officers. 
+
+ In accordance with the terms
+of the Merger Agreement and the Prepackaged Plan, each director of HighPoint prior to the Effective Time ceased his or her respective
+service as a director of HighPoint. 
+
+ Also as of the Effective
+Time and pursuant to the Prepackaged Plan, each of R. Scot Woodall, President and Chief Executive Officer; William M. Crawford,
+Chief Financial Officer; and Kenneth A. Wonstolen, Senior Vice President, General Counsel and Corporate Secretary, were deemed to
+have resigned as an officer of HighPoint. These resignations were not a result of any disagreements between HighPoint and the
+officers on any matter relating to HighPoint';s operations, policies or practices. The Surviving Corporation will be ultimately
+managed by the directors and officers of Bonanza Creek, as its wholly owned subsidiary. 
+
+ Item 5.03 Amendments to Certificate of Incorporation or Bylaws; Change in Fiscal Year. 
+
+ In connection with the completion
+of the Merger, HighPoint';s amended and restated certificate of incorporation in effect immediately prior to the Effective Time was
+amended and restated in its entirety as of the Effective Time. In connection with the completion of the Merger, the bylaws of Merger Sub
+as in effect immediately prior to the Effective Time became the bylaws of the Surviving Corporation. 
+
+ The certificate of incorporation
+and bylaws of HighPoint in effect at the Effective Time are attached as Exhibits 3.1 and 3.2 to this Current Report on Form 8-K.
+The foregoing descriptions of the certificate of incorporation and bylaws are subject to and qualified in their entirety by reference
+to Exhibits 3.1 and 3.2 of this Current Report on Form 8-K, which are incorporated by reference into this Item 5.03. 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ (d) Exhibits 
+
+ Exhibit 
+ Number 
+
+ Description 
+ 
+ 2.1&#8224; 
+ 
+ Agreement
+ and Plan of Merger, dated as of November 9, 2020, by and among Bonanza Creek Energy, Inc., HighPoint Resources Corporation
+ and Boron Merger Sub, Inc. (incorporated by reference to Exhibit 2.1 to HighPoint Resources Corporation';s Current
+ Report on Form 8-K filed on November 9, 2020). 
+
+ 3.1* 
+ 
+ Second Amended and Restated Certificate of Incorporation of HighPoint Resources Corporation, dated April 1, 2021. 
+
+ 3.2* 
+ 
+ Second Amended and Restated Bylaws of HighPoint Resources Corporation, dated April 1, 2021. 
+
+ 4.1 
+ Confirmation Order, filed March 18, 2021 (incorporated by reference to Exhibit 99.1 to HighPoint Resources Corporation';s Current Report on Form 8-K filed on March 24, 2021). 
+
+ 104 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document). 
+
+ * Filed herewith. 
+
+ &#8224; Schedules and similar attachments have been omitted pursuant to Item 601(b)(2) of Regulation S-K. HighPoint Resources Corporation
+agrees to furnish a supplemental copy of any omitted schedule or attachment to the Commission upon request. 
+
+ 3 
+
+ SIGNATURE 
+
+ Pursuant to the requirements of the Securities
+Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Date:&#9; April 1,
+2021 HIGHPOINT RESOURCES CORPORATION 
+
+ By: /s/ Cyrus D. Marter IV 
+ Cyrus D. Marter IV 
+ 
+ President and Secretary 
+

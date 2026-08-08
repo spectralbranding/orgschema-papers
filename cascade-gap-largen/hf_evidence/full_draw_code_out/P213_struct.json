@@ -1,0 +1,85 @@
+{
+  "case_id": "P213",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a holding company collapse where HRG acquired the remaining minority interest in Spectrum. The operating business (T4, T5) and organization (T6) of Spectrum transferred intact (1-1) into the surviving structure, with no structural mismatch documented at closing. The controlling stockholder (HRG's control block) was eliminated, resulting in a termination of the prior controlling intent."
+    },
+    "grok": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the First Merger left Spectrum as surviving wholly owned subsidiary with its customer products and operating processes intact inside that same entity; the separate GBA divestiture was expressly outside the Merger terms and had not closed. Spectrum’s pre-merger officers became the officers of the renamed parent and six of seven post-close directors were then-current Spectrum directors, so T5 and T6 moved together with no contractual TSA needed to bridge a mismatch. Consequently neither a product-vs-process nor a process-vs-organization structural gap existed at closing."
+    },
+    "openai": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the pre-merger operating company survived as a wholly owned subsidiary and that the separate batteries/appliances divestiture proceeded alongside, rather than as part of, the merger; nothing documents products crossing without their associated operations, so gap_45 is 0. The slice also states that Spectrum's pre-merger board and executive officers were carried forward as the renamed parent's governance and management, documenting coherent alignment of operations and organization at closing; therefore gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"terminate\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a holding company collapse where HRG acquired the remaining minority interest in Spectrum. The operating business (T4, T5) and organization (T6) of Spectrum transferred intact (1-1) into the surviving structure, with no structural mismatch documented at closing. The controlling stockholder (HRG's control block) was eliminated, resulting in a termination of the prior controlling intent.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"terminate\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the First Merger left Spectrum as surviving wholly owned subsidiary with its customer products and operating processes intact inside that same entity; the separate GBA divestiture was expressly outside the Merger terms and had not closed. Spectrum’s pre-merger officers became the officers of the renamed parent and six of seven post-close directors were then-current Spectrum directors, so T5 and T6 moved together with no contractual TSA needed to bridge a mismatch. Consequently neither a product-vs-process nor a process-vs-organization structural gap existed at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"terminate\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the pre-merger operating company survived as a wholly owned subsidiary and that the separate batteries/appliances divestiture proceeded alongside, rather than as part of, the merger; nothing documents products crossing without their associated operations, so gap_45 is 0. The slice also states that Spectrum's pre-merger board and executive officers were carried forward as the renamed parent's governance and management, documenting coherent alignment of operations and organization at closing; therefore gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "terminate",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

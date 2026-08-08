@@ -1,0 +1,85 @@
+{
+  "case_id": "P254",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice indicates that the product/asset tier (branches) and the operational processes (systems) transferred together, so there is no gap_45. However, there is a gap_56 because the operational systems transferred but the organization/people tier crossed only selectively (all Park Sterling directors and executive officers ceased serving, with only a small subset re-engaged). There is no mention of a transitional-services agreement mitigating this gap at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because the whole-company/bank merger at closing transferred Park Sterling’s branch-banking franchise (T4) into South State Bank while systems conversion—the operational/process alignment—was expressly scheduled to complete only after legal closing, not at it (DEFM14A conversion-payment and integration-risk disclosures; structural summary). gap_56=1 because that post-close process/systems re-engineering was structured alongside a selective people transfer: all Park Sterling directors and executive officers ceased at the effective time, with only a named subset re-engaged under new consulting/employment agreements and two board appointments, while South State’s pre-closing officers continued (8-K; DEFM14A). No transitional-services or operating agreement allocating a shared substrate is documented—only individual executive arrangements—so gap_mitigated=no."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Park Sterling’s whole branch-banking franchise and bank subsidiary crossed into South State at closing, but systems conversion was expressly scheduled for completion after legal closing, documenting a product-versus-process mismatch at that time. [SRC: SEC accession 0001047469-17-005768, Form DEFM14A] The organization tier also transferred only selectively: all Park Sterling directors and executive officers ceased serving, while only a small subset received new consulting, employment, or board roles, alongside disclosed workforce-integration risk. [SRC: SEC accession 0001104659-17-071280, Form 8-K] [SRC: SEC accession 0001047469-17-005768, Form DEFM14A] No transitional-services or operating agreement allocating the shared operational substrate at closing is documented in the slice."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The slice indicates that the product/asset tier (branches) and the operational processes (systems) transferred together, so there is no gap_45. However, there is a gap_56 because the operational systems transferred but the organization/people tier crossed only selectively (all Park Sterling directors and executive officers ceased serving, with only a small subset re-engaged). There is no mention of a transitional-services agreement mitigating this gap at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=1 because the whole-company/bank merger at closing transferred Park Sterling’s branch-banking franchise (T4) into South State Bank while systems conversion—the operational/process alignment—was expressly scheduled to complete only after legal closing, not at it (DEFM14A conversion-payment and integration-risk disclosures; structural summary). gap_56=1 because that post-close process/systems re-engineering was structured alongside a selective people transfer: all Park Sterling directors and executive officers ceased at the effective time, with only a named subset re-engaged under new consulting/employment agreements and two board appointments, while South State’s pre-closing officers continued (8-K; DEFM14A). No transitional-services or operating agreement allocating a shared substrate is documented—only individual executive arrangements—so gap_mitigated=no.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"Park Sterling’s whole branch-banking franchise and bank subsidiary crossed into South State at closing, but systems conversion was expressly scheduled for completion after legal closing, documenting a product-versus-process mismatch at that time. [SRC: SEC accession 0001047469-17-005768, Form DEFM14A] The organization tier also transferred only selectively: all Park Sterling directors and executive officers ceased serving, while only a small subset received new consulting, employment, or board roles, alongside disclosed workforce-integration risk. [SRC: SEC accession 0001104659-17-071280, Form 8-K] [SRC: SEC accession 0001047469-17-005768, Form DEFM14A] No transitional-services or operating agreement allocating the shared operational substrate at closing is documented in the slice.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

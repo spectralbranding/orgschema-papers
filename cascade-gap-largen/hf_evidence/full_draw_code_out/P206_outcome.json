@@ -1,0 +1,58 @@
+{
+  "case_id": "P206",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The slice only details the deregistration of Atwood, the status of four specific drilling units (two operating, two converted to options), and the acquirer's Chapter 11 bankruptcy, without attributing any specific integration failures or financial scalars to the Atwood acquisition itself."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2 of 4 named assets under contract; 2 newbuilds left undelivered as options",
+      "rationale": "The slice documents only asset-level status by FY2021 (VALARIS DS-12 and 115 under contract; DS-13 and DS-14 still undelivered with firm commitments converted to options after the acquirer's Chapter 11), with no realized product/process interface disruption or product-line/operations incoherence attributed to the former Atwood units. No evidence is given of process/organization fracture (operations vs people/management/culture); the acquirer's bankruptcy is explicitly not attributed to the former Atwood business, and Atwood is not reported as a separate segment."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '2 of 4 traceable units operating; 2 undelivered after more than three years'}",
+      "rationale": "{'type': 'string', 'enum': 'By fiscal 2021, two traceable units were under contract, while DS-13 and DS-14 remained under construction and their delivery commitments had become options following Chapter 11. The slice does not document that these outcomes resulted from failure to align the units with operating processes, so p4 is 0. It also documents no breakdown between operations and management, personnel, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The provided slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The slice only details the deregistration of Atwood, the status of four specific drilling units (two operating, two converted to options), and the acquirer's Chapter 11 bankruptcy, without attributing any specific integration failures or financial scalars to the Atwood acquisition itself.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2 of 4 named assets under contract; 2 newbuilds left undelivered as options\",\n  \"rationale\": \"The slice documents only asset-level status by FY2021 (VALARIS DS-12 and 115 under contract; DS-13 and DS-14 still undelivered with firm commitments converted to options after the acquirer's Chapter 11), with no realized product/process interface disruption or product-line/operations incoherence attributed to the former Atwood units. No evidence is given of process/organization fracture (operations vs people/management/culture); the acquirer's bankruptcy is explicitly not attributed to the former Atwood business, and Atwood is not reported as a separate segment.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"2 of 4 traceable units operating; 2 undelivered after more than three years\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"By fiscal 2021, two traceable units were under contract, while DS-13 and DS-14 remained under construction and their delivery commitments had become options following Chapter 11. The slice does not document that these outcomes resulted from failure to align the units with operating processes, so p4 is 0. It also documents no breakdown between operations and management, personnel, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

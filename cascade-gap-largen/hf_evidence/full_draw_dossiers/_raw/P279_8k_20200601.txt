@@ -1,0 +1,128 @@
+ 
+
+ Form 8-K 
+
+ false 0001668428 --12-31 0001668428 2020-06-01 2020-06-01 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 Date of Report (Date of earliest event reported): June 1, 2020 FGL HOLDINGS (Exact name of Registrant as specified in its charter) 
+
+ Cayman Islands 
+ 
+ 001-37779 
+ 
+ 98-1354810 
+ 
+ (State or other jurisdiction of incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer Identification No.) 4th Floor Boundary Hall , Cricket Square Grand Cayman , Cayman Islands KY 1-1102 (Address of principal executive offices) Registrant';s telephone number, including area code: 1 (345) 947-5614 Not Applicable (Former name or former address, if changed since last report) Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions: 
+
+ &#9744; &#32; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; &#32; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; &#32; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; &#32; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+ 
+ Trading Symbol(s) 
+ 
+ Name of each exchange on which registered 
+ 
+ Ordinary shares, par value $.0001 per share 
+ 
+ FG 
+ 
+ New York Stock Exchange 
+ 
+ Warrants to purchase ordinary shares 
+ 
+ FG WS 
+ 
+ New York Stock Exchange Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). Emerging growth company &#9744; If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. Supplemental Indenture On June 1, 2020, upon consummation of the Mergers (defined below), Fidelity National Financial, Inc., a Delaware corporation ("; FNF ";), entered into a Supplemental Indenture with Fidelity &#038; Guaranty Life Holdings, Inc. ("; FG Life "; or the "; Issuer ";), a subsidiary of the Company (as defined below), and Wells Fargo Bank, National Association, as trustee (the "; Supplemental Indenture ";), to the Indenture (as supplemented by the Supplemental Indenture, the "; Indenture ";), dated as of April 20, 2018, among FG Life, the subsidiary guarantors party thereto and Wells Fargo Bank, National Association, as trustee, related to FG Life';s 5.50% Senior Notes due 2025 (the "; Notes ";). Pursuant to the terms of the Supplemental Indenture, FNF became a guarantor of FG Life';s obligations under the Notes and agreed to fully and unconditionally guarantee the Notes, on a joint and several basis with the guarantors named in the Indenture. The foregoing summary of the Supplemental Indenture does not purport to be complete and is subject to, and qualified in its entirety by, the full text of the Supplemental Indenture, which is filed as Exhibit 4.1 hereto and incorporated by reference herein. 
+
+ Item 2.01 
+ Completion of Acquisition or Disposition of Assets. On June 1, 2020, FNF completed its previously announced acquisition of FGL Holdings (the "; Company ";) pursuant to the Agreement and Plan of Merger, dated as of February 7, 2020, by and among FNF, the Company, F I Corp., a Cayman Islands exempted company ("; Merger Sub I ";) and F II Corp., a Cayman Islands exempted company ("; Merger Sub II "; and, together with Merger Sub I, "; Merger Subs ";), as amended by the First Amendment to the Agreement and Plan of Merger, dated as of April 24, 2020, by and among FNF, the Company and the Merger Subs (the Agreement and Plan of Merger, as amended, the "; Merger Agreement ";). Pursuant to the terms of the Merger Agreement, Merger Sub I merged with and into the Company (the "; First Merger ";), with the Company surviving the First Merger (the "; Surviving Company ";) and becoming a wholly owned subsidiary of FNF as a result of the First Merger in accordance with the Companies Law (2020 Revision) of the Cayman Islands (the "; CICL ";), and immediately following the First Merger, the Surviving Company merged with and into Merger Sub II (the "; Second Merger "; and, together with the First Merger, the "; Mergers ";), with Merger Sub II surviving the Second Merger and remaining a wholly owned subsidiary of FNF as a result of the Second Merger in accordance with the CICL. Each ordinary share, par value $0.0001 per share of the Company (the "; Ordinary Shares ";) (other than (i) shares owned by the Company and any of its subsidiaries or FNF and any of its subsidiaries and (ii) shares in respect of which dissenters'; rights have been properly exercised and perfected under Cayman Islands law) was canceled and converted automatically into the right to receive (i) $12.50 in cash (the "; Cash Consideration ";) or (ii) 0.2558 shares of common stock of FNF ("; FNF Common Stock ";). The Mergers were effective on June 1, 2020. In connection with the Mergers, FNF issued approximately 27 million shares of FNF Common Stock and paid approximately $1.8 billion in cash to former holders of Ordinary Shares and preferred shares. Additionally, all options to purchase Ordinary Shares ("; FGL Share Option ";) and phantom units denominated in Ordinary Shares ("; FGL Phantom Unit ";), in each case, outstanding immediately prior to the effective time of the First Merger (the "; First Effective Time ";), were canceled and converted into options to purchase FNF Common Stock and phantom units denominated in FNF Common Stock at the First Effective Time (collectively, the "; Rollover Awards ";), as applicable. The Rollover Awards are generally subject to the same terms and conditions as the applicable canceled FGL Share Option or FGL Phantom Unit immediately prior to the First Effective Time, except that (i) all performance-vesting criteria are deemed satisfied at the First Effective Time at the levels described in the Merger Agreement and such Rollover Awards are subject only to time-based vesting conditions after the First Effective Time, and (ii) immediately prior to the First Effective Time, additional time-vesting credits were provided to holders in respect of FGL Share Options and FGL Phantom Units granted prior to January 1, 2020, as described in the Merger Agreement. Additionally, each warrant to purchase Ordinary Shares was converted into the right to purchase and receive upon exercise $8.18 in cash and 0.0883 shares of our common stock (the "; Warrants ";). In accordance with the Warrant Agreement, dated as of May 19, 2016, between Continental Stock Transfer &#038; Trust Company and CF Corporation (the "; Warrant Agreement ";) pursuant to which the Warrants were issued, if the registered holder of the Warrant properly exercises the 
+ - 2 - 
+
+ Warrant within thirty days following the closing of the Mergers, the exercise price will be reduced to $7.68, which represents a reduction in the warrant exercise price of $11.50 by an amount equal to the difference of (i) $11.50 (the warrant exercise price in effect prior to such reduction) minus (ii) (A) $9.40, the volume weighted average price of the Ordinary Shares as reported during the 10 trading-day period ending on the trading day prior to the closing of the Mergers minus (B) $1.72, the Black-Scholes Warrant Value of the Warrant. The purpose of such exercise price reduction is to provide additional value to holders of the Warrants when an extraordinary transaction occurs during the exercise period of the Warrants pursuant to which the holders of the Warrants otherwise do not receive the full potential value of the Warrants. The description of the Mergers and the Merger Agreement contained in this Item 2.01 does not purport to be complete and is qualified in its entirety by reference to the Merger Agreement, which was filed as Annex A to the definitive proxy statement filed by the Company with the U.S. Securities and Exchange Commission ("; SEC ";) on April 27, 2020 (the "; Proxy Statement ";), as amended by the First Amendment to the Merger Agreement, which was filed as Annex B to the Proxy Statement, each of which is incorporated by reference herein. 
+
+ Item 3.01 
+ Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. On June 1, 2020, in connection with the consummation of the Mergers, the Company notified the New York Stock Exchange ("; NYSE ";) of the completion of the Mergers and requested that trading in the Ordinary Shares and Warrants be withdrawn from listing on the NYSE. The NYSE will file a notification of removal from listing on Form 25 with the SEC with respect to the Ordinary Shares and Warrants to report the delisting of the Ordinary Shares and Warrants from the NYSE and to suspend trading of the Ordinary Shares and Warrants on the NYSE prior to the opening of trading on June 2, 2020. The Company intends to file with the SEC a certificate of notice of termination on Form 15 with respect to its Ordinary Shares and Warrants, requesting that the Ordinary Shares and Warrants be deregistered under the Securities Exchange Act of 1934, as amended (the "; Exchange Act ";), and that the reporting obligations of the Company with respect to the Ordinary Shares and Warrants under Sections 13 and 15(d) of the Exchange Act be suspended. 
+
+ Item 3.03 
+ Material Modification to Rights of Security Holders. The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. In connection with the completion of the Mergers and at the First Effective Time, holders of Ordinary Shares immediately prior to such time ceased to have any rights as shareholders in the Company (other than their right to receive the Cash Consideration or the FNF Common Stock) and accordingly, no longer have any interest in the Company';s future earnings or growth. 
+
+ Item 5.01 
+ Changes in Control of Registrant. The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. As a result of the Mergers, a change in control of the Company occurred, and the Company is now a wholly-owned subsidiary of FNF. 
+
+ Item 5.02 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. In accordance with the terms of the Merger Agreement, at the First Effective Time, seven of the nine directors of the Company prior to consummation of the Mergers (William P. Foley II, Keith W. Abell, Chinh E. Chu, James A. Quella, Patrick S. Baird, Menes O. Chee and Timothy M. Walsh) resigned from the Board of Directors of the Company and ceased to be directors of the Company. In accordance with the terms of the Merger Agreement and the plans of merger filed by FNF and the Company with the Registrar of Companies of the Cayman Islands, Richard N. Massey, Raymond R. Quirk, Michael J. Nolan and Christopher O. Blunt became the directors of the Company after the consummation of the Mergers and will be the directors of the Company until the earlier of their death, resignation or removal or until their respective successors are duly elected and qualified, as the case may be. 
+ - 3 - 
+
+ There are no arrangements or understandings between any of Mr. Massey, Mr. Quirk, Mr. Nolan or Mr. Blunt and any other persons pursuant to which Mr. Massey, Mr. Quirk, Mr. Nolan or Mr. Blunt, as applicable, was selected as a director of the Company. None of Mr. Massey, Mr. Quirk, Mr. Nolan or Mr. Blunt has any direct or indirect material interest in any transaction required to be disclosed pursuant to Item 404(a) of Regulation S-K. 
+
+ Item 5.03 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. The information set forth under Item 2.01 of this Current Report on Form 8-K is incorporated herein by reference. Pursuant to the terms of the Merger Agreement, upon the consummation of the Mergers, the amended and restated memorandum and articles of association of Merger Sub II immediately prior to the consummation of the Mergers became the memorandum and articles of association of the Company (the "; Amended and Restated Memorandum and Articles of Association ";) and will remain the memorandum and articles of association of the Company until changed or amended as provided therein or pursuant to applicable law. The Amended and Restated Memorandum and Articles of Association are in a form appropriate to reflect the Company';s status following the Mergers as a wholly-owned subsidiary of FNF. As such, the Amended and Restated Memorandum and Articles of Association differ in certain respects from the amended and restated memorandum and articles of association of the Company immediately prior to the consummation of the Mergers, which reflected the Company';s status prior to the Mergers as a publicly listed holding company. These differences include the alteration of the Company';s authorised share capital, with the authorised share capital of the Company set out in the Amended and Restated Memorandum and Articles of Association as US$50,000.00 divided into 500,000,000 Ordinary Shares of par value US$0.0001 per Ordinary Share, whereas the authorised share capital of the Company set out in the amended and restated memorandum and articles of association of the Company immediately prior to the consummation of the Mergers was US$90,000.00 divided into 800,000,000 Ordinary Shares of a par value US$0.0001 each and 100,000,000 preferred shares of a par value US$0.0001 each. A copy of the Amended and Restated Memorandum and Articles of Association is attached and incorporated herein by reference as Exhibit 3.1. The foregoing description of the Amended and Restated Memorandum and Articles of Association does not purport to be complete and is qualified in its entirety by reference to the full text of the Amended and Restated Memorandum and Articles of Association. 
+
+ Item 8.01. 
+ Other Events. On June 1, 2020, the Company and FNF issued a joint press release in connection with the closing of the Mergers. A copy of the press release is furnished as Exhibit 99.1 hereto. 
+ - 4 - 
+
+ Item 9.01 
+ Financial Statements and Exhibits. 
+
+ Exhibit No. 
+
+ Description 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated as of February 7, 2020, by and among FGL Holdings, Fidelity National Financial, Inc., F I Corp. and F II Corp. (incorporated by reference to Annex A to the Proxy Statement of FGL Holdings filed on April 27, 2020). 
+
+ 2.2 
+
+ First Amendment to the Agreement and Plan of Merger, dated as of April 24, 2020, by and among FGL Holdings, Fidelity National Financial, Inc., F I Corp. and F II Corp. (incorporated by reference to Annex B to the Proxy Statement of FGL Holdings filed on April 27, 2020). 
+
+ 3.1 
+
+ Amended and Restated Memorandum and Articles of Association of FGL Holdings. 
+
+ 4.1 
+
+ Second Supplemental Indenture, dated as of June 1, 2020, among Fidelity National Financial, Inc., Fidelity &#038; Guaranty Life Holdings, Inc. and Wells Fargo Bank, National Association. 
+
+ 99.1 
+
+ Joint Press Release of Fidelity National Financial, Inc. and FGL Holdings, dated June 1, 2020. 
+
+ 104 
+
+ Cover Page Interactive Data File (the cover page XBRL tags are embedded within the Inline XBRL document) 
+ - 5 - 
+
+ SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Dated: June 1, 2020 
+
+ FGL HOLDINGS 
+
+ By: 
+ 
+ /s/ Eric. L. Marhoun 
+ 
+ Name: 
+ 
+ Eric L. Marhoun 
+ 
+ Title: 
+ 
+ General Counsel and Secretary 
+ - 6 - 
+

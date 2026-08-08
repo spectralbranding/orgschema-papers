@@ -1,0 +1,58 @@
+{
+  "case_id": "P268",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered at closing (Form 15-12B, 2018-12-31); surviving company FY2022 net loss $6,109k and $21,820k impairment, not isolable to acquired business",
+      "rationale": "The slice documents only reporting status and combined-enterprise consolidated results (FY2022 net loss of $6,109k, $21,820k impairment), and explicitly states the surviving company reports a single undifferentiated real-estate segment with no breakout attributable to the business obtained from Select Income REIT. There are no lines describing product/process incoherence or process/organization fracture in the post-deal trajectory. Because no outcome can be isolated to the acquired business and no integration-disruption evidence is present, p4 and p5 cannot be determined and are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The acquired entity deregistered and the surviving company reports as a single segment with no breakout of the acquired business. Consequently, there is no documented evidence regarding product/process or process/organization disruption specific to the acquired business."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that Select Income REIT deregistered at closing and the survivor reports only one undifferentiated real-estate segment with no breakout of the acquired business, so no product/process interface disruption is documented (p4=0). Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is described anywhere in the post-deal record; absence of such evidence codes p5=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered at closing (Form 15-12B, 2018-12-31); surviving company FY2022 net loss $6,109k and $21,820k impairment, not isolable to acquired business\", \"rationale\": \"The slice documents only reporting status and combined-enterprise consolidated results (FY2022 net loss of $6,109k, $21,820k impairment), and explicitly states the surviving company reports a single undifferentiated real-estate segment with no breakout attributable to the business obtained from Select Income REIT. There are no lines describing product/process incoherence or process/organization fracture in the post-deal trajectory. Because no outcome can be isolated to the acquired business and no integration-disruption evidence is present, p4 and p5 cannot be determined and are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The acquired entity deregistered and the surviving company reports as a single segment with no breakout of the acquired business. Consequently, there is no documented evidence regarding product/process or process/organization disruption specific to the acquired business.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that Select Income REIT deregistered at closing and the survivor reports only one undifferentiated real-estate segment with no breakout of the acquired business, so no product/process interface disruption is documented (p4=0). Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is described anywhere in the post-deal record; absence of such evidence codes p5=0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

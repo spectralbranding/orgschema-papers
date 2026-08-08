@@ -1,0 +1,58 @@
+{
+  "case_id": "P344",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 filed May 15, 2023 (~$7.7bn debt); ~$5.6bn debt equitized/cancelled; KKR's ~$5bn+ 2018 equity wiped out",
+      "rationale": "The slice documents a financial/leverage-driven Chapter 11 with contributing factors cited as ~$7.7bn debt, declining patient volumes, the federal No Surprises Act, and disputes with health insurers — external market and regulatory pressures rather than a documented product/process operating-alignment breakdown, so p4 cannot be affirmatively coded (uncertain). No evidence in the slice describes an operations-versus-people/management/culture fracture; the leadership changes noted (interim CEO, new board head) occur at emergence as part of restructuring, not as a documented process/organization integration failure, so p5 is coded 0. The restructuring split off the Amsurg ambulatory-surgery unit into separate ownership, but this is a reorganization step, not documented product/process or process/org disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy filing in May 2023",
+      "rationale": "The slice documents a Chapter 11 bankruptcy filing driven by debt obligations, declining patient volumes, the No Surprises Act, and disputes with insurers. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) causing the disruption."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 filed May 15, 2023 (~$7.7bn debt); ~$5.6bn debt equitized/cancelled; KKR's ~$5bn+ 2018 equity wiped out\", \"rationale\": \"The slice documents a financial/leverage-driven Chapter 11 with contributing factors cited as ~$7.7bn debt, declining patient volumes, the federal No Surprises Act, and disputes with health insurers \\u2014 external market and regulatory pressures rather than a documented product/process operating-alignment breakdown, so p4 cannot be affirmatively coded (uncertain). No evidence in the slice describes an operations-versus-people/management/culture fracture; the leadership changes noted (interim CEO, new board head) occur at emergence as part of restructuring, not as a documented process/organization integration failure, so p5 is coded 0. The restructuring split off the Amsurg ambulatory-surgery unit into separate ownership, but this is a reorganization step, not documented product/process or process/org disruption.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"Chapter 11 bankruptcy filing in May 2023\",\n\"rationale\": \"The slice documents a Chapter 11 bankruptcy filing driven by debt obligations, declining patient volumes, the No Surprises Act, and disputes with insurers. There is no documented evidence of product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) causing the disruption.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

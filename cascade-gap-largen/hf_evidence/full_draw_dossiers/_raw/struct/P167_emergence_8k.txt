@@ -1,0 +1,460 @@
+ 
+ 8-K
+ 1
+ d595577d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT REPORT
+ Pursuant to Section 13 or 15(d) 
+ of the Securities Exchange Act of 1934 
+ Date of report (Date of earliest event reported): June 4, 2018 
+ 
+ CUMULUS MEDIA INC. 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 001-38108 
+ 
+ 82-5134717 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (IRS employer 
+ Identification No.) 
+
+ 3280 Peachtree Road, N.W., Suite 2200, Atlanta, GA 
+ 
+ 30305 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+ Registrant&#146;s telephone number, including area code (404)
+ 949-0700 n/a 
+ (Former name or former address, if changed since last report) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of
+the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR
+ 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR
+ 240.13e-4(c)) Indicate by check mark whether the registrant is an emerging growth company as
+defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter).
+ Emerging growth company &#9744; If an emerging
+growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange
+Act. &#9744; 
+
+ Explanatory Note 
+ As previously disclosed, on November 29, 2017, CM Wind Down Topco Inc. (f/k/a Cumulus Media Inc.), a Delaware corporation (&#147;Old
+Cumulus&#148;), and certain of its direct and indirect subsidiaries (collectively with Old Cumulus, the &#147;Debtors&#148;), filed voluntary petitions for relief under Chapter 11 of Title 11 of the U.S. Code (the &#147;Bankruptcy Code&#148;) in the
+United States Bankruptcy Court for the Southern District of New York (the &#147;Bankruptcy Court&#148;). The Debtors&#146; Chapter 11 cases (the &#147;Chapter 11 Cases&#148;) were jointly administered under the caption In re: Cumulus Media Inc.,
+et al. , Case No. 17-13381. On May 10, 2018, the Bankruptcy Court entered the
+ Findings of Fact, Conclusions of Law and Order Confirming the Debtors&#146; First Amended Joint Chapter 11 Plan of Reorganization [Docket No. 769] (the &#147;Confirmation Order&#148;), which confirmed the First Amended Joint Plan of
+Reorganization of Cumulus Media Inc. and its Debtor Affiliates Pursuant to Chapter 11 of the Bankruptcy Code [Docket No. 446] (the &#147;Plan&#148;), as modified by the Confirmation Order. 
+ On June 4, 2018 (the &#147;Effective Date&#148;), Old Cumulus satisfied the conditions to effectiveness of the Plan set forth in the
+Confirmation Order and in the Plan, the Plan became effective in accordance with its terms and Old Cumulus and the other Debtors emerged from Chapter 11. All capitalized terms used herein but not otherwise defined in this Current Report on Form 8-K have the meanings set forth in the Plan. The foregoing description of the Confirmation Order and
+the Plan does not purport to be complete and is qualified in its entirety by reference to the full text of each of the Confirmation Order and the Plan, copies of which are attached as Exhibit 99.1 and Exhibit 2.1, respectively, to this Current
+Report on Form 8-K and are incorporated by reference herein. In connection with the satisfaction
+of the conditions to effectiveness as set forth in the Confirmation Order and in the Plan, Old Cumulus completed a series of internal reorganization transactions pursuant to which it transferred all of its remaining assets to an indirectly wholly
+owned subsidiary of reorganized Cumulus Media Inc. (f/k/a CM Emergence Newco Inc.), a Delaware corporation (&#147;Cumulus&#148; or the &#147;Company&#148;), prior to winding down its business. 
+ On June 4, 2018, the Company issued a press release announcing the effectiveness of the Plan. A copy of the press release is included as
+Exhibit 99.2 to this Current Report on Form 8-K and is incorporated by reference herein. This
+Current Report on Form 8-K is being filed by the Company as the initial report of the Company to the Securities and Exchange Commission (the &#147;Commission&#148;) and as notice that the Company is the
+successor issuer to Old Cumulus under Rule 12g-3 under the Securities Exchange Act of 1934 (the &#147;Exchange Act&#148;). As a result, the shares of the Company&#146;s Class A common stock, par value
+$0.0000001 per share (&#147;Class A common stock&#148;), are deemed to be registered under Section 12(g) of the Exchange Act. The Company is thereby deemed subject to the informational requirements of the Exchange Act, and the rules and
+regulations promulgated thereunder, and in accordance therewith will file reports and other information with the Commission. The first periodic report to be filed by the Company with the Commission will be its Quarterly Report on Form 10-Q for the period ending June 30, 2018. 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement Credit Agreement 
+ On the Effective Date, Cumulus Media New Holdings Inc., a Delaware corporation (&#147;Holdings&#148;) and an indirectly wholly-owned subsidiary
+of the Company, and certain of the Company&#146;s other subsidiaries, entered into a Credit Agreement (the &#147;Credit Agreement&#148;) with Wilmington Trust, National Association, as administrative agent (the &#147;Agent&#148;), and holders of
+claims with respect to Old Cumulus&#146; previous term loan credit facility under the Canceled Credit Agreement (as defined below), as term loan lenders. Pursuant to the Credit Agreement, the lenders party thereto are deemed to have provided
+Holdings and its subsidiaries that are party thereto as co-borrowers with a $1.3 billion senior secured term loan credit facility (the loan thereunder, the &#147;Term Loan&#148;). 
+
+ Amounts outstanding under the Credit Agreement bear interest at a per annum rate equal to
+(i) the Alternative Base Rate (as defined below) plus an applicable margin of 3.50%, subject to an Alternative Base Rate floor of 2.00%, or (ii) the London Inter-bank Offered Rate (&#147;LIBOR&#148;) plus an applicable margin of 4.50%,
+subject to a LIBOR floor of 1.00%. The Alternative Base Rate is defined, for any day, as the per annum rate equal to the highest of (i) the Federal Funds Rate, as published by the Federal Reserve Bank of New York, plus 1/2 of 1.0%, (ii) the
+rate identified as the &#147;Prime Rate&#148; and normally published in the Money Rates section of the Wall Street Journal , and (iii) one-month LIBOR plus 1.0%. 
+ Amounts outstanding under the Term Loan amortize in equal quarterly installments of 0.25% of the original principal amount of the Term Loan
+with the balance payable on the maturity date. The maturity date of the Credit Agreement is May 15, 2022. The Credit Agreement
+contains representations, covenants and events of default that are customary for financing transactions of this nature. Events of default in the Credit Agreement include, among others: (a) the failure to pay when due the obligations owing
+thereunder; (b) the failure to perform (and not timely remedy, if applicable) certain covenants; (c) certain defaults and accelerations under other indebtedness; (d) the occurrence of bankruptcy or insolvency events; (e) certain
+judgments against Holdings or any of its subsidiaries; (f) the loss, revocation or suspension of, or any material impairment in the ability to use, any one or more of, any material Federal Communications Commission (the &#147;FCC&#148;)
+licenses; (g) any representation or warranty made, or report, certificate or financial statement delivered, to the lenders subsequently proven to have been incorrect in any material respect; and (h) the occurrence of a Change in Control
+(as defined in Credit Agreement). Upon the occurrence of an event of default, the Agent may, with the consent of, or upon the request of, the required lenders, accelerate the Term Loan and exercise any of its rights as a secured party under the
+Credit Agreement and the ancillary loan documents: provided, that in the case of certain bankruptcy or insolvency events with respect to a borrower, the Term Loan will automatically accelerate. 
+ The Credit Agreement does not contain any financial maintenance covenants. The Credit Agreement provides that Holdings will be permitted to
+enter into either a revolving credit facility or receivables facility providing commitments of up to $50.0 million, subject to certain conditions. 
+ The borrowers may elect, at their option, to prepay amounts outstanding under the Credit Agreement without premium or penalty (except that any
+prepayment during the period of six months following the closing of the Credit Agreement would require a premium equal to 1.00% of the prepaid principal amount). The borrowers may be required to make mandatory prepayments of the Term Loan upon the
+occurrence of specified events as set forth in the Credit Agreement, including upon the sale of certain assets and from Excess Cash Flow (as defined in the Credit Agreement). 
+ Amounts outstanding under the Credit Agreement are guaranteed by Cumulus Media Intermediate Inc. (&#147;Intermediate Holdings&#148;), which is
+a subsidiary of the Company, and the present and future wholly-owned subsidiaries of Holdings that are not borrowers thereunder, subject to certain exceptions as set forth in the Credit Agreement (the &#147;Guarantors&#148;) and secured by a
+security interest in substantially all of the assets of Holdings, the subsidiaries of Holdings party to the Credit Agreement as borrowers, and the Guarantors. 
+ Some of the lenders and the Agent under the Credit Agreement, or their affiliates, have had in the past, and may have, in the future, various
+relationships with the Company involving the provision of financial or other advisory services, including cash management, investment banking and brokerage services. These lenders and the Agent, or their respective affiliates, have received, and may
+in the future receive, customary fees for those services. The foregoing description of the Credit Agreement does not purport to be
+complete and is qualified in its entirety by the full text of the Form of Credit Agreement, a copy of which is included as Exhibit 10.1 to this Current Report on Form 8-K and is incorporated by reference
+herein. 
+ -3- 
+
+ Warrant Agreement 
+ On the Effective Date, the Company entered into a warrant agreement (the &#147;Warrant Agreement&#148;) with Computershare Inc., a Delaware
+corporation, and its wholly-owned subsidiary, Computershare Trust Company, N.A., a federally chartered trust company, as warrant agent. In accordance with the Plan and pursuant to the Warrant Agreement, on the Effective Date, the Company
+(i) issued 3,016,853 Series 1 warrants (the &#147;Series 1 warrants&#148;) to purchase shares of Class A common stock or the Company&#146;s Class B common stock, par value $0.0000001 per share (&#147;Class B common stock&#148;
+and, together with the Class A common stock, the &#147;common stock&#148;) on a one-for-one basis at an exercise price of $0.0000001 per share, to claimants that
+returned ownership certifications required by the Plan (&#147;Plan Certifications&#148;) by the Certification Deadline and (ii) issued or will issue 712,736 Series 2 warrants (the &#147;Series 2 warrants&#148; and, together with the Series 1
+warrants, the &#147;Warrants&#148;) to purchase shares of Class A common stock or Class B common stock on a one-for-one basis at an exercise price of
+$0.0000001 per share, to claimants that failed to return Plan Certifications by the Certification Deadline. The Series 2 Warrants may only be exercised for the type and amount of equity that the holder would have been entitled to receive on the
+Effective Date had it timely submitted its Plan Certification. The Warrants have a twenty year term and will expire on June 4, 2038. 
+ The number of shares of common stock for which a Warrant is exercisable is subject to adjustment from time to time upon the occurrence of
+specified events, including: (1) the subdivision or combination of the common stock into a greater or lesser number of shares (2) upon a reclassification or recapitalization of the Company in which holders of common stock are entitled to
+receive cash, stock or securities in exchange for common stock and (3) a Change of Control (as defined in the Warrant Agreement). 
+ The Company will apply for a declaratory ruling from the FCC to increase the level of foreign ownership of the Company that is permitted under
+applicable FCC rules. Pursuant to the Warrant Agreement, upon receipt of the declaratory ruling from the FCC, the Company is required to exchange common stock for outstanding Warrants to the extent permitted by the declaratory ruling, subject to
+proration among the holders of Warrants as set forth therein. If the declaratory ruling will not allow the Company to exchange for common stock all of the outstanding Warrants, then, in addition to proration among holders, all remaining Series 2
+warrants will be mandatorily exchanged for Series 1 warrants. The foregoing description of the Warrant Agreement does not purport to be
+complete and is qualified in its entirety by reference to the full text of the Warrant Agreement, which includes the form of certificate representing the Warrants, a copy of which is included as Exhibit 10.2 to this Current Report on Form 8-K and is incorporated by reference herein. 
+
+ Item 1.02 
+ Termination of a Material Definitive Agreement Cancellation of Certain Prepetition
+Obligations In connection with the effectiveness of and pursuant to the terms of the Plan, on the Effective Date, the obligations of
+Old Cumulus and its subsidiaries under the following agreements were satisfied and discharged: 
+
+ &#149; 
+ 
+ Amended and Restated Credit Agreement, dated as of December 23, 2013, by and among Cumulus Media Inc., Cumulus Media Holdings Inc., as Borrower, certain lenders, JPMorgan Chase Bank, N.A., as administrative agent,
+Royal Bank of Canada and Macquarie Capital (USA) Inc., as co-syndication agents, and Credit Suisse AG, Cayman Islands Branch, Fifth Third Bank, Goldman Sachs Bank USA and ING Capital LLC, as co-documentation agents (the &#147;Canceled Credit Agreement&#148;); 
+
+ &#149; 
+ 
+ Indenture, dated as of May 13, 2011, among Cumulus Media Inc., the Guarantors named therein and U.S. Bank National Association, as Trustee, as supplemented; and 
+
+ &#149; 
+ 
+ Rights Agreement, dated as of June 5, 2017, between Cumulus Media Inc. and Computershare Trust Company, N.A., as Rights Agent (the &#147;Rights Agreement&#148;). 
+ -4- 
+
+ Cancellation of Prior Equity Securities 
+ In accordance with the Plan, each share of Old Cumulus&#146; Class A common stock, par value $0.01 per share (the &#147;old Class A
+common stock&#148;), Class B common stock, par value $0.01 per share (the &#147;old Class B common stock&#148;), and Class C common stock, par value $0.01 per share (together with the old Class A common stock and the old
+Class B common stock, the &#147;old common stock&#148;) outstanding prior to the Effective Date, including all options, warrants or other rights, including rights issued under the Rights Agreement, to purchase such old common stock, were
+extinguished, canceled and discharged, and each such share, option or warrant has no further force or effect. Furthermore, all of Old Cumulus&#146; equity award agreements under prior incentive plans, and the awards granted pursuant thereto, were
+extinguished, canceled and discharged and have no further force or effect. 
+
+ Item 2.03 
+ Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant 
+ The information contained in Item 1.01 above under the sub-heading &#147;Credit Agreement&#148; is
+incorporated by reference into this Item 2.03. 
+
+ Item 3.02 
+ Unregistered Sales of Equity Securities On the Effective Date, in connection with the
+Company&#146;s emergence from Chapter 11 and in reliance on the exemption from registration requirements of the Securities Act of 1933, as amended (the &#147;Securities Act&#148;) provided by Section 1145 of the Bankruptcy Code, the Company
+issued or will issue a total of 11,052,211 shares of Class A common stock, 5,218,209 shares of Class B common stock, 3,016,853 Series 1 warrants and 712,736 Series 2 warrants to holders of Allowed Credit Agreement Claims, Allowed Senior
+Notes Claims and Allowed General Unsecured Claims, collectively. Any shares of Class A common stock or Class B common stock
+issued pursuant to the exercise of Series 1 warrants or Series 2 warrants will similarly be issued pursuant to the exemption from registration provided by Section 1145 of the Bankruptcy Code. 
+ The information contained in Item 1.01 of this Current Report on Form 8-K under the sub-heading &#147;Warrant Agreement&#148; is incorporated by reference into this Item 3.02. 
+
+ Item 3.03 
+ Material Modification to Rights of Security Holders The information contained in the
+Explanatory Note, Item 1.02 above and Item 5.03 below is incorporated by reference into this Item 3.03. 
+
+ Item 5.01 
+ Changes in Control of Registrant The information set forth in the Explanatory Note and
+Item 5.02 under the subheading &#147;Board of Directors&#148; is incorporated by reference into this Item 5.01. 
+
+ Item 5.02 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers 
+ Board of Directors In
+accordance with the Plan, on the Effective Date, Jeffrey Marcus, Jan Baker, Jill Bright, John W. Dickey, Ralph B. Everett and Ross Oliver ceased to be members of Old Cumulus&#146; board of directors. Also in accordance with the Plan, on the
+Effective Date, the Company&#146;s board of directors (the &#147;Board&#148;) is comprised of seven members, consisting of Mary G. Berner, the Company&#146;s President and Chief Executive Officer, and the following six independent directors selected
+by the Term Lender Group: 
+ -5- 
+
+ David M. Baum , age 53, has served as the President of Baum Media Group, LLC, an investment
+and consulting firm, since February 2005. From March 2013 to July 2017, Mr. Baum also served as the President of Revolution Golf, a digital media company, where he maintained responsibility for its overall strategy and operations. Prior to
+founding Baum Media Group, Mr. Baum served for over 18 years in various roles at Goldman, Sachs & Co., an investment bank, retiring in 2003 as a partner and Managing Director of the Mergers and Acquisitions department. Mr. Baum
+serves on the board of directors of the Marcus Corporation. Matthew C. Blank , age 67, has served as an advisor to Showtime
+Networks Inc., a premium television network, since 2017. Before taking his most recent role, he served as Chairman of Showtime from 2016 to 2017 and Chief Executive Officer of Showtime from 1995 to 2015. Prior to his service at Showtime,
+Mr. Blank served for over 12 years in various roles at Home Box Office, Inc., a premium television network, leaving HBO as its Senior Vice President of Consumer Marketing. Mr. Blank served on the board of directors of Geeknet, Inc. from
+2010 to 2015. Mr. Blank serves as a director of Creative Coalition and PENCIL Public Education Needs Civic Involvement in Learning and is a board member of The Cable Center. He is a Trustee of the Harlem Children&#146;s Zone and the American
+Museum of the Moving Image. Thomas H. Castro , age 63, has served as the President and Chief Executive Officer of El Dorado
+Capital, LLC, a private equity investment firm, since December 2008. He is also the founder of IMB Development Corporation, a private equity investment firm, and has served as its Managing Director since January 2012. Previously, he was the co-founder and Chief Executive Officer of Border Media Partners, LLC, a radio broadcasting company that primarily targets Hispanic listeners in Texas, from 2002 to 2007 and its Vice Chairman through 2008. Prior to
+that, Mr. Castro owned and operated other radio stations and founded a company that exported oil field equipment to Mexico. Mr. Castro served on the board of directors of Time Warner Cable, Inc. from 2006 to 2016. 
+ Joan Hogan Gillman , age 55, served as Executive Vice President of Time Warner Cable, Inc., a media, telecom and cable company, and
+Chief Operating Officer of its Time Warner Cable Media division, for which she maintained financial responsibility, from September 2006 to June 2016. Prior to her service at Time Warner Cable, Ms. Hogan Gillman served in senior executive roles
+at OpenTV Corporation, a television and advertising software company, British Interactive Broadcasting Holdings Limited, a provider of interactive services for U.K. digital television, and Physicians&#146; Online Inc., an online billing solution for
+physicians. Ms. Hogan Gillman currently serves on the board of directors of Airgain, Inc., Centrica PLC and InterDigital, Inc. Ms. Hogan Gillman also serves the Chairman of the board of directors of the Jesuit Volunteer Group and is a
+committee member of Transit Wireless. Andrew W. Hobson , age 56, has served as a Partner and the Chief Financial Officer of
+Innovatus Capital Partners, LLC, a private investment firm, since January 2016. From 1994 to 2015, Mr. Hobson served in various roles at Univision Communications Inc., a media company, including Senior Executive Vice President and Chief
+Financial Officer from October 2007 through February 2015, during which time he was responsible for all financial aspects of the company. Prior to his employment at Univision, Mr. Hobson served as a Principal at Chartwell Partners LLC from 1990
+to 1994. Brian G. Kushner , age 59, has served as Senior Managing Director in the Corporate Finance practice of FTI Consulting,
+Inc., a global business management consulting firm, since 2009. Prior to joining FTI Consulting, Dr. Kushner served as the President and Chief Executive Officer of Sage Telecom, a telecommunications company and, before Sage, as President and
+Chief Executive Officer of Pacific Crossing Limited, a trans-Pacific telecommunications company. Early in his career, Dr. Kushner co-founded CXO, L.L.C., a bankruptcy debtor advisory and interim
+management firm, which was ultimately sold to FTI Consulting. He currently serves on the board of directors of Dex Media, Inc., Mudrick Capital Acquisition Corporation and Zodiac Interactive. He has previously served on the board of directors of
+Luxfer Holdings PLC, Pacific Crossing Limited, Damovo Group, Everyware Global, Inc. (now The Oneida Group), DLN Holdings, LLC and Caribbean Asset Holdings LLC. 
+ All directors serve on the Board for a term ending at the annual meeting following the meeting at which the director was elected. The current
+class of directors will be subject to reelection at the Company&#146;s next annual meeting. The Board&#146;s audit committee currently
+consists of Brian G. Kushner (chair), Thomas H. Castro and Andrew W. Hobson. The Board&#146;s compensation committee currently consists of David M. Baum (chair), Matthew C. Blank and Joan Hogan Gillman. The Board&#146;s nominating committee consists
+of Joan Hogan Gillman (chair), Matthew C. Blank and David M. Baum. 
+ -6- 
+
+ There are no transactions in which any member of the Board has an interest that requires
+disclosure under Item 404(a) of Regulation S-K under the Securities Act. Indemnification
+Agreements In accordance with the Plan, the Board has approved a form of indemnification agreement (the &#147;Indemnification
+Agreement&#148;) to be entered into by members of the Board and the Company&#146;s executive officers. The Indemnification Agreement provides for the mandatory advancement and reimbursement of reasonable expenses (subject to limited exceptions)
+incurred by indemnitees in various legal proceedings in which they may be involved by reason of their service as directors or officers, as applicable, as permitted by Delaware law, the Charter and the Bylaws (each as defined below). Each of the
+Company&#146;s executive officers and directors has entered or will enter into an Indemnification Agreement. In addition, pursuant to the terms of the Plan, the indemnification obligations of Old Cumulus remain in full force and effect. 
+ The foregoing description of the Indemnification Agreement does not purport to be complete and is qualified in its entirety by reference to
+the full text of the Form of Indemnification Agreement, a copy of which is included as Exhibit 10.3 to this Current Report on Form 8-K and incorporated by reference herein. 
+ Long-Term Incentive Compensation Plan 
+ In accordance with the Plan and the approval of the Board, the Cumulus Media Inc. Long-Term Incentive Plan (the &#147;Incentive Plan&#148;)
+became effective as of the Effective Date. The Incentive Plan is intended to, among other things, help attract, motivate and retain key employees and directors and to reward them for making major contributions to the success of the Company. The
+Incentive Plan permits awards to be made to consultants or to employees, directors, or consultants of an affiliate of the Company. Unless
+otherwise determined by the Board, the Board&#146;s compensation committee will administer the Incentive Plan. The Incentive Plan generally provides for the following types of awards: 
+
+ &#149; 
+ 
+ stock options (including incentive options and nonstatutory options); 
+
+ &#149; 
+ 
+ restricted stock; 
+
+ &#149; 
+ 
+ stock appreciation rights; 
+
+ &#149; 
+ 
+ dividend equivalents; 
+
+ &#149; 
+ 
+ other stock based awards; 
+
+ &#149; 
+ 
+ performance awards; and 
+
+ &#149; 
+ 
+ cash awards. The aggregate number of shares of Class A common stock reserved for
+issuance pursuant to the Incentive Plan is 2,222,223, representing 10% of the outstanding common stock and warrants of the Company as of the Effective Date, on a fully diluted basis. Awards can be made under the Incentive Plan for a period of ten
+years from June 4, 2018, subject to the right of the stockholders and the Board to terminate the Incentive Plan at any time. The
+foregoing description of the Incentive Plan does not purport to be complete and is qualified in its entirety by reference to the full text of the Incentive Plan, a copy of which is included as Exhibit 10.4 to this Current Report on Form 8-K and incorporated by reference herein. Grant of Equity Awards 
+ On the Effective Date and pursuant to the Plan, the Company granted 565,277 restricted stock units (&#147;RSUs&#148;) and 565,277 stock options
+(&#147;Options&#148;) under the Incentive Plan and the terms of the relevant restricted stock unit agreements (the &#147;Restricted Stock Unit Agreements&#148;) and stock option agreements (the &#147;Option Agreements&#148;), as applicable, to
+certain employees, including its executive officers (collectively, &#147;Management&#148;), representing an aggregate of 1,130,554 shares of Class A common stock (collectively, the &#147;Management Emergence Awards&#148;).
+ 
+ -7- 
+
+Fifty percent (50%) of the RSUs granted to Management vest ratably on each of December 31, 2018, 2019 and 2020, subject to certain performance-based criteria. Of the remaining fifty percent
+(50%) of the RSUs and one hundred percent (100%) of the Options granted to Management, 30% will vest on each of the first two anniversaries of the Effective Date, and 20% will vest on each of the third and fourth anniversaries of the Effective Date.
+The vesting of each of the Management Emergence Awards is also subject to, among other things, each such employee&#146;s continued employment with the Company. 
+ If an employee&#146;s employment is terminated by the Company or its subsidiaries without Cause, by the employee for Good Reason (each, as
+defined in the award agreement) or due to a termination of employment with the Company or its subsidiaries by reason of death or Disability (as defined in the award agreement), such employee will become vested in an additional tranche of the
+unvested Management Emergence Awards as if the employee&#146;s employment continued for one (1) additional year following the qualifying termination date; provided , that with respect to the Chief Executive Officer and Chief Financial
+Officer, (i) an amount equal to 50% of the unvested components of the Management Emergence Awards will accelerate and vest (75% if such termination occurs on or before the first (1 st )
+anniversary of the Effective Date) and (ii) vested Options will remain outstanding until the expiration date of such Option. If an employee&#146;s employment is terminated by the Company or its subsidiaries without Cause or by the employee for
+Good Reason, in either instance at any time within the three month period immediately preceding, or the twelve month period immediately following, a Change in Control (as defined in the award agreement), such employee will become vested in all
+unvested Management Emergence Awards. In addition, on the Effective Date and pursuant to the Plan, the Company granted each non-employee director 5,402 (10,804 for Mr. Hobson) RSUs and 2,701 (5,402 for Mr. Hobson) Options under the Incentive Plan and the terms of the relevant Restricted Stock Unit Agreements and Option Agreements, as
+applicable, representing an aggregate of 56,721 shares of Class A common stock (the &#147;Director Emergence Awards&#148;). The RSUs and Options granted to each non-employee director vest in four equal
+installments on the last day of each calendar quarter, commencing with the calendar quarter in which the grant occurs. The vesting of each of the Director Emergence Awards is also subject to, among other things, each such non-employee
+director&#146;s continued role as a director with the Company. Upon a Change in Control, all unvested Director Emergence Awards will fully vest. 
+ The foregoing description of the Restricted Stock Unit Agreements and Option Agreements does not purport to be complete and is qualified in
+its entirety by reference to the full text of the Form of Restricted Stock Unit Agreements and the full text of the Form of Option Agreements, copies of which are included as Exhibits 10.5, 10. 6 and 10.7, and 10.8, 10.9 and 10.10, respectively, to
+this Current Report on Form 8-K and incorporated by reference herein. 
+
+ Item 5.03 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year Pursuant to
+the Plan, the Company amended and restated its certificate of incorporation (the &#147;Charter&#148;) and bylaws (the &#147;Bylaws&#148;), each of which became effective on the Effective Date. The Charter authorizes the Company to issue up to
+100,000,000 shares of Class A common stock and 100,000,000 shares of Class B common stock. The Charter also authorizes the Company to issue up to 100,000,000 shares of preferred stock, par value $0.0000001 per share (&#147;preferred
+stock&#148;), of none which were issued pursuant to the Plan. Description of Capital Stock 
+ Authorized Capital The
+Company has the authority to issue a total of 100,000,000 shares of Class A common stock, 100,000,000 shares of Class B common stock and 100,000,000 shares of preferred stock. 
+ Voting Rights Subject to
+any voting rights granted to preferred stock that may be outstanding from time to time, each share of the Company&#146;s Class A common stock shall be entitled to one vote per share on each matter submitted to a vote of the Company&#146;s
+stockholders. Except as provided below and as otherwise required by the Charter, Bylaws or by applicable law, the holders of Class A common stock shall vote together as one class on all matters submitted to a vote of stockholders generally (or
+if any holders of shares of preferred stock are entitled to vote together with the holders of common stock, as a single class with such holders of shares of preferred stock). 
+ -8- 
+
+ Holders of Class B common stock are generally not entitled to vote such shares on matters
+submitted to a vote of the Company&#146;s stockholders. Notwithstanding the foregoing, holders of Class B common stock are entitled to one vote per share of Class B common stock, voting as a separate class, on any proposed amendment or
+modification of any specific rights or obligations that affect holders of Class B common stock and that do not similarly affect the rights or obligations of the holders of Class A common stock. In addition, holders of Class B common
+stock are entitled to one vote per share of Class B common stock, voting together with the holders of Class A common stock, on each of the following matters, if and only if any such matter is submitted to a vote of the stockholders
+(provided that the Company may take action on any of the following without a vote of the stockholders to the extent permitted by law): 
+
+ a) 
+ the retention or dismissal of outside auditors by the Company; 
+
+ b) 
+ any dividends or distributions to the stockholders of the Company; 
+
+ c) 
+ any material sale of assets, recapitalization, merger, business combination, consolidation, exchange of stock or other similar reorganization involving the Company or any of its subsidiaries; 
+
+ d) 
+ the adoption of any new or amended Charter; 
+
+ e) 
+ other than in connection with any management equity or similar plan adopted by the Board, any authorization or issuance of equity interests, or any security or instrument convertible into or exchangeable for equity
+interests, in the Company or any of its subsidiaries; and 
+
+ f) 
+ the liquidation of the Company or any of its subsidiaries. The Charter and Bylaws do not
+provide for cumulative voting. The holders of a plurality of the shares of common stock entitled to vote and present in person or represented by proxy at any meeting at which a quorum is present called for the purpose of electing directors will be
+entitled to elect the directors of the Company. The holders of a majority of the shares of common stock issued and outstanding and entitled to vote, and present in person or represented by proxy, will constitute a quorum for the transaction of
+business at all meetings of the stockholders. All directors will be elected annually commencing at the Company&#146;s next annual meeting
+of stockholders. Dividend Rights 
+ Subject to the preferences applicable to any preferred stock outstanding at any time, if any, the holders of shares of common stock shall be
+entitled to receive such dividends and other distributions in cash, property or shares of stock as may be declared thereon by the Board from time to time out of the assets or funds legally available; except that in the case of dividends or other
+distributions payable on the Class A common stock or Class B common stock in shares of such stock, including distributions pursuant to stock splits or dividends, only Class A common stock will be distributed with respect to
+Class A common stock and only Class B common stock will be distributed with respect to Class B common stock. In no event will any of the Class A common stock or Class B common stock be split, divided or combined unless each
+other class is proportionately split, divided or combined. Preferred Stock 
+ As of the date hereof, no shares of preferred stock are outstanding. The Charter provides that the Board may, by resolution, establish one or
+more classes or series of preferred stock having the number of shares and relative voting rights, designations and other rights, preferences, and limitations as may be fixed by them without further stockholder approval. The holders of any such
+preferred stock may be entitled to preferences over holders of common stock with respect to dividends, or upon a liquidation, dissolution, or the Company&#146;s winding up, in such amounts as are established by the resolutions of the Board approving
+the issuance of such shares. The issuance of preferred stock may have the effect of delaying, deferring or preventing a change in control
+of the Company without further action by the holders and may adversely affect voting and other rights of holders of common stock. In addition, the issuance of preferred stock, while providing desirable flexibility in connection with
+ 
+ -9- 
+
+possible acquisitions and other corporate purposes, could make it more difficult for a third party to acquire a majority of the outstanding shares of common stock. The Charter provides that the
+Board may not issue any preferred stock for the purpose of implementing any shareholder rights plan unless within one hundred and twenty (120) days thereof such shareholder rights plan shall have been ratified by the affirmative vote of at
+least a majority of the total voting power of the outstanding shares of common stock entitled to vote on such matters (voting as a class). 
+ Conversion of Class B Common Stock 
+ The Class B common stock is convertible at any time, or from time to time, at the option of the holders (provided that the prior consent
+of any governmental authority required to make such conversion lawful shall have been obtained and a determination by the Company has been made that the applicable holder does not have an attributable interest in another entity that would cause the
+Company to violate applicable law) into Class A common stock on a share-for-share basis. 
+ No Preemptive Rights No
+holder of common stock has any preemptive right to subscribe for any shares of the Company&#146;s capital stock issuable in the future. 
+ Liquidation Rights If
+the Company is liquidated (either partially or completely), dissolved or wound up, whether voluntarily or involuntarily, the holders of common stock shall be entitled to share ratably in the Company&#146;s net assets remaining after payment of all
+liquidation preferences, if any, applicable to any outstanding preferred stock. Action by Written Consent 
+ The Charter provides that all actions of the stockholders must be taken at an annual or special meeting and may not be taken by written consent
+without a meeting. Delaware Anti-Takeover Law 
+ The Company is not subject to Section 203 of the General Corporation Law of the State of Delaware. 
+ Transfer Agent and Registrar 
+ The transfer agent for the Company&#146;s common stock is Computershare Trust Company, N.A. 
+ Listing of Common Stock 
+ The Class A common stock is quoted on the OTC Pink Tier under the symbol &#147;CMIA&#148;. The Company has applied to list its
+Class A common stock on the NASDAQ Stock Market LLC under the symbol &#147;CMLS.&#148; No assurances can be provided that the Company&#146;s application will be approved, or the timing thereof. 
+ This description is qualified in its entirety by the full text of the Charter and Bylaws, copies of which are included as Exhibits 3.1 and
+3.2, respectively, to this Current Report on Form 8-K and incorporated by reference herein. 
+ -10- 
+
+ Item 9.01 
+ Financial Statements and Exhibits (d) Exhibits. 
+
+ Exhibit 
+ Number 
+ 
+ Description 
+
+ 2.1 
+ 
+ First Amended Joint Plan of Reorganization of Cumulus Media Inc. and its Debtor Affiliates Pursuant to Chapter 11 of the Bankruptcy Code 
+
+ 3.1 
+ 
+ Amended and Restated Certificate of Incorporation of Cumulus Media Inc. 
+
+ 3.2 
+ 
+ Amended and Restated Bylaws of Cumulus Media Inc. 
+
+ 4.1 
+ 
+ Form of Global Warrant Certificate (incorporated by reference to Exhibit A-2 to Exhibit 10.2 hereto) 
+
+ 10.1 
+ 
+ Form of Credit Agreement dated as of June 
+4, 2018, among Holdings, as borrower, the subsidiaries of Holdings party thereto as borrowers, Intermediate Holdings as guarantor, Wilmington Trust, National Association, as Administrative Agent, and the other lenders party thereto 
+
+ 10.2 
+ 
+ Warrant Agreement, dated as of June 4, 2018, among the Company, Computershare Inc. and Computershare Trust Company, N.A. 
+
+ 10.3 
+ 
+ Form of Indemnification Agreement 
+
+ 10.4 
+ 
+ Cumulus Media Inc. Long-Term Incentive Plan 
+
+ 10.5 
+ 
+ Form of Restricted Stock Unit Agreement (Non-Senior Executive) 
+
+ 10.6 
+ 
+ Form of Restricted Stock Unit Agreement (Senior Executive) 
+
+ 10.7 
+ 
+ Form of Restricted Stock Unit Agreement (Director) 
+
+ 10.8 
+ 
+ Form of Stock Option Agreement (Non-Senior Executive) 
+
+ 10.9 
+ 
+ Form of Stock Option Agreement (Senior Executive) 
+
+ 10.10 
+ 
+ Form of Stock Option Agreement (Director) 
+
+ 99.1 
+ 
+ Findings of Fact, Conclusions of Law, and Order Confirming the Debtors&#146; First Amended Joint Chapter 11 Plan of Reorganization 
+
+ 99.2 
+ 
+ Press release dated June 4, 2018 
+ 
+ -11- 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by
+the undersigned hereunto duly authorized. 
+
+ CUMULUS MEDIA INC. 
+
+ June 4, 2018 
+
+ By: 
+ 
+ /s/ Richard S. Denning 
+
+ Name: Richard S. Denning 
+
+ Title: Senior Vice President, General Counsel and Secretary 
+ 
+ -12- 
+

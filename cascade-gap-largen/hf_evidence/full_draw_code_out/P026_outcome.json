@@ -1,0 +1,58 @@
+{
+  "case_id": "P026",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "~$725.3M net loss attributable (2018), ~$122.0M (2019); going-concern doubt requiring May 2020 refinancing",
+      "rationale": "p4_pathway=1: the Vølund & Other Renewable segment posted ~$238M in prior-period losses on European renewable/waste-to-energy engineering-and-supply contracts the company \"could not execute profitably,\" prompting it to change its bidding/execution approach and curtail such contracts — a documented product-line/operations incoherence realized over time. p5_pathway=1: operations broke against the organization/capital structure, with disclosed substantial-doubt-going-concern status tied to a May 2020 refinancing, an outside backstop (B. Riley), a Rights Offering, and a one-for-ten reverse split during the window. t1_archetype and t2_model are uncertain because the slice documents no controlling-intent archetype or two-business-model comparison. Consecutive large net losses (~$725.3M then ~$122.0M attributable) anchor the realized record."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$725M (2018) + ~$122M (2019) net losses; going-concern; multiple divestitures",
+      "rationale": "p4_pathway=1 because the slice documents severe product/operations incoherence in the Vølund & Other Renewable segment: roughly $238M prior-period adjusted gross loss on European renewable/waste-to-energy engineering-and-supply contracts, followed by a deliberate curtailment of bidding and a refocus away from those contracts that could not be executed profitably. p5_pathway=0 because, although the slice records going-concern doubt, a B. Riley-backstopped refinancing, a rights offering and reverse split, none of that evidence describes a fracture between operations and people/management/culture; it is capital-structure distress only, with no documented organizational/cultural integration break."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '~$725.3 million net loss attributable to stockholders in 2018'}",
+      "rationale": "{'type': 'string', 'enum': 'The Vølund & Other Renewable segment incurred an implied prior-period adjusted gross loss of roughly $238 million on European renewable and waste-to-energy contracts, after which the company changed how it bid and executed such contracts and curtailed additional bidding involving European resources. This documents realized product/operations incoherence, supporting p4=1. Although the company faced going-concern doubt, refinancing, a rights offering, and a reverse stock split, the slice does not document operations breaking against people, management, or culture, so p5=0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"~$725.3M net loss attributable (2018), ~$122.0M (2019); going-concern doubt requiring May 2020 refinancing\", \"rationale\": \"p4_pathway=1: the V\\u00f8lund & Other Renewable segment posted ~$238M in prior-period losses on European renewable/waste-to-energy engineering-and-supply contracts the company \\\"could not execute profitably,\\\" prompting it to change its bidding/execution approach and curtail such contracts \\u2014 a documented product-line/operations incoherence realized over time. p5_pathway=1: operations broke against the organization/capital structure, with disclosed substantial-doubt-going-concern status tied to a May 2020 refinancing, an outside backstop (B. Riley), a Rights Offering, and a one-for-ten reverse split during the window. t1_archetype and t2_model are uncertain because the slice documents no controlling-intent archetype or two-business-model comparison. Consecutive large net losses (~$725.3M then ~$122.0M attributable) anchor the realized record.\"}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$725M (2018) + ~$122M (2019) net losses; going-concern; multiple divestitures\",\n  \"rationale\": \"p4_pathway=1 because the slice documents severe product/operations incoherence in the Vølund & Other Renewable segment: roughly $238M prior-period adjusted gross loss on European renewable/waste-to-energy engineering-and-supply contracts, followed by a deliberate curtailment of bidding and a refocus away from those contracts that could not be executed profitably. p5_pathway=0 because, although the slice records going-concern doubt, a B. Riley-backstopped refinancing, a rights offering and reverse split, none of that evidence describes a fracture between operations and people/management/culture; it is capital-structure distress only, with no documented organizational/cultural integration break.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"~$725.3 million net loss attributable to stockholders in 2018\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The Vølund & Other Renewable segment incurred an implied prior-period adjusted gross loss of roughly $238 million on European renewable and waste-to-energy contracts, after which the company changed how it bid and executed such contracts and curtailed additional bidding involving European resources. This documents realized product/operations incoherence, supporting p4=1. Although the company faced going-concern doubt, refinancing, a rights offering, and a reverse stock split, the slice does not document operations breaking against people, management, or culture, so p5=0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "1",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": true,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

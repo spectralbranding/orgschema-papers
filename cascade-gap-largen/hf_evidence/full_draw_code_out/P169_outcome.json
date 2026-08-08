@@ -1,0 +1,58 @@
+{
+  "case_id": "P169",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "merger integration costs declined $826M (2015) to $273M (2017); FY2017 net income $1,919M",
+      "rationale": "p4=1: the filing documents that operational-systems integration was still incomplete four years post-close (\"several additional important system integration projects\" remained) and explicitly flagged that such integrations \"taken longer, been more disruptive and cost more than originally forecast,\" evidencing realized product/process-interface disruption, with material merger-integration IT costs still charged in 2017. p5=1: the filing documents an unresolved labor/organization interface, with a named maintenance/fleet workgroup still under separate legacy collective bargaining agreements not amendable until Q3 2018, more than four years after closing, and joint-contract negotiations proceeding outside the ordinary process. t2 coded 0 as no incompatibility of value-capture logics is documented; t1 uncertain as the slice contains no evidence about the controlling-intent archetype as it played out."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sustained profitability and revenue in the low-$40-billion range each year",
+      "rationale": "The slice documents ongoing integration costs and incomplete systems integration, but does not report realized disruption or failure at the product/process interface (p4 = 0). Similarly, while some labor groups remained under legacy contracts, the slice explicitly notes that no work stoppages or self-help occurred, indicating no realized fracture at the process/organization interface (p5 = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sustained profitability FY2015-17; no GW impairment; integration costs $826M→$273M",
+      "rationale": "p4 is 0 because the FY2017 10-K reports that key systems (customer reservations; pilot/fleet scheduling) had been successfully integrated, with remaining projects still incomplete and only a forward-looking risk citing disruptiveness in prior industry mergers—not a realized product/process incoherence on this deal. p5 is 0 because, although one labor workgroup remained on separate legacy CBAs pending a 2018 amendability date, joint CBAs had been reached with other groups and the filing documents no work stoppage or organizational fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"merger integration costs declined $826M (2015) to $273M (2017); FY2017 net income $1,919M\", \"rationale\": \"p4=1: the filing documents that operational-systems integration was still incomplete four years post-close (\\\"several additional important system integration projects\\\" remained) and explicitly flagged that such integrations \\\"taken longer, been more disruptive and cost more than originally forecast,\\\" evidencing realized product/process-interface disruption, with material merger-integration IT costs still charged in 2017. p5=1: the filing documents an unresolved labor/organization interface, with a named maintenance/fleet workgroup still under separate legacy collective bargaining agreements not amendable until Q3 2018, more than four years after closing, and joint-contract negotiations proceeding outside the ordinary process. t2 coded 0 as no incompatibility of value-capture logics is documented; t1 uncertain as the slice contains no evidence about the controlling-intent archetype as it played out.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sustained profitability and revenue in the low-$40-billion range each year\",\n  \"rationale\": \"The slice documents ongoing integration costs and incomplete systems integration, but does not report realized disruption or failure at the product/process interface (p4 = 0). Similarly, while some labor groups remained under legacy contracts, the slice explicitly notes that no work stoppages or self-help occurred, indicating no realized fracture at the process/organization interface (p5 = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sustained profitability FY2015-17; no GW impairment; integration costs $826M→$273M\",\n  \"rationale\": \"p4 is 0 because the FY2017 10-K reports that key systems (customer reservations; pilot/fleet scheduling) had been successfully integrated, with remaining projects still incomplete and only a forward-looking risk citing disruptiveness in prior industry mergers—not a realized product/process incoherence on this deal. p5 is 0 because, although one labor workgroup remained on separate legacy CBAs pending a 2018 amendability date, joint CBAs had been reached with other groups and the filing documents no work stoppage or organizational fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

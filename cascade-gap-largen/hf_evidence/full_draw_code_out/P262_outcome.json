@@ -1,0 +1,58 @@
+{
+  "case_id": "P262",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (no distinguishable business-specific outcome record; merged entity ceased reporting, surviving entity's filings do not name or segment the transaction)",
+      "rationale": "The slice documents no realized product/process disruption: the merged entity was a holding-company tier whose results were already consolidated and whose registration ended at closing, and the surviving entity's FY2021 Form 10-K \"contains no reference\" to the merger and provides \"no segment, business-unit, or subsidiary-level disclosure\" distinguishing the former entity's outcomes, so p4 cannot be determined. Likewise there is no documented process/organization fracture — the slice explicitly states \"there is no post-closing public disclosure ... that separately documents a realized trajectory,\" so p5 cannot be determined. Both are coded uncertain because the outcome is \"not separately observable from public records\" rather than affirmatively shown to be absent."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no distinguishable business-specific outcome record",
+      "rationale": "The evidence slice explicitly states that there is no post-closing public disclosure that separately documents a realized trajectory for the acquired business. Therefore, no product/process (p4) or process/organization (p5) disruptions are documented."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the merged entity ceased reporting at closing and that the surviving entity's later 10-Ks (including FY2021 within the 3-5-year window) contain no reference to Accenture Holdings, the internal merger, or any segment distinguishing the formerly separate entity. It explicitly concludes the outcome is not separately observable from public records and is coded uncertain / no distinguishable business-specific record, so neither product/process nor process/organization disruption can be determined from the slice."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (no distinguishable business-specific outcome record; merged entity ceased reporting, surviving entity's filings do not name or segment the transaction)\", \"rationale\": \"The slice documents no realized product/process disruption: the merged entity was a holding-company tier whose results were already consolidated and whose registration ended at closing, and the surviving entity's FY2021 Form 10-K \\\"contains no reference\\\" to the merger and provides \\\"no segment, business-unit, or subsidiary-level disclosure\\\" distinguishing the former entity's outcomes, so p4 cannot be determined. Likewise there is no documented process/organization fracture \\u2014 the slice explicitly states \\\"there is no post-closing public disclosure ... that separately documents a realized trajectory,\\\" so p5 cannot be determined. Both are coded uncertain because the outcome is \\\"not separately observable from public records\\\" rather than affirmatively shown to be absent.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no distinguishable business-specific outcome record\",\n  \"rationale\": \"The evidence slice explicitly states that there is no post-closing public disclosure that separately documents a realized trajectory for the acquired business. Therefore, no product/process (p4) or process/organization (p5) disruptions are documented.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the merged entity ceased reporting at closing and that the surviving entity's later 10-Ks (including FY2021 within the 3-5-year window) contain no reference to Accenture Holdings, the internal merger, or any segment distinguishing the formerly separate entity. It explicitly concludes the outcome is not separately observable from public records and is coded uncertain / no distinguishable business-specific record, so neither product/process nor process/organization disruption can be determined from the slice.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

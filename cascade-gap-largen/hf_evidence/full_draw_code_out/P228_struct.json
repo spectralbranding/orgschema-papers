@@ -1,0 +1,85 @@
+{
+  "case_id": "P228",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is an MLP-to-corporation reorganization: the legal vehicle was swapped (Delaware LP replaced by Delaware corporation, T3=swap) while \"the business of New Legacy will be the business of the Partnership\" and the underlying oil and gas producing properties \"were not separated, divided, or reassigned,\" so the customer-facing asset (T4) and its operations (T5) moved together intact — gap_45=0. Management/organization was expected to \"stay in place\" with Horne chairing the New Legacy Board and six years of D&O indemnification, so processes and the people/culture running them transferred coherently alongside each other — gap_56=0. Controlling intent continues (same business, same management), with the GP's separately held negative-control interest merely folded in via the $3.0M GP Purchase; no Tier-1 fusion is documented."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states on a pro forma basis 'the business of New Legacy will be the business of the Partnership,' New Legacy's only closing assets were ownership of the Partnership and GP, and 'the underlying oil and natural gas producing properties were not separated, divided, or reassigned,' so the customer-facing asset base and the operations that produce it moved together unchanged. gap_56=0 because the same closing structure represents business operations continuing inside the reorganized entity alongside the stated expectation that 'the existing management team will stay in place after the Corporate Reorganization' (Horne designated to chair the New Legacy Board), with no product/process-versus-organization structural mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the underlying oil and natural gas properties were not separated, divided, or reassigned and that New Legacy's business would be the Partnership's business, so the customer-facing assets and operating processes remained together at closing (SEC accession 0001193125-18-238546). It also states that business operations continued unchanged and the existing management team was expected to stay in place, documenting no closing-structure mismatch between processes and the organization operating them (SEC accessions 0001193125-18-238546 and 0001193125-18-278769)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is an MLP-to-corporation reorganization: the legal vehicle was swapped (Delaware LP replaced by Delaware corporation, T3=swap) while \\\"the business of New Legacy will be the business of the Partnership\\\" and the underlying oil and gas producing properties \\\"were not separated, divided, or reassigned,\\\" so the customer-facing asset (T4) and its operations (T5) moved together intact \\u2014 gap_45=0. Management/organization was expected to \\\"stay in place\\\" with Horne chairing the New Legacy Board and six years of D&O indemnification, so processes and the people/culture running them transferred coherently alongside each other \\u2014 gap_56=0. Controlling intent continues (same business, same management), with the GP's separately held negative-control interest merely folded in via the $3.0M GP Purchase; no Tier-1 fusion is documented.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states on a pro forma basis 'the business of New Legacy will be the business of the Partnership,' New Legacy's only closing assets were ownership of the Partnership and GP, and 'the underlying oil and natural gas producing properties were not separated, divided, or reassigned,' so the customer-facing asset base and the operations that produce it moved together unchanged. gap_56=0 because the same closing structure represents business operations continuing inside the reorganized entity alongside the stated expectation that 'the existing management team will stay in place after the Corporate Reorganization' (Horne designated to chair the New Legacy Board), with no product/process-versus-organization structural mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the underlying oil and natural gas properties were not separated, divided, or reassigned and that New Legacy's business would be the Partnership's business, so the customer-facing assets and operating processes remained together at closing (SEC accession 0001193125-18-238546). It also states that business operations continued unchanged and the existing management team was expected to stay in place, documenting no closing-structure mismatch between processes and the organization operating them (SEC accessions 0001193125-18-238546 and 0001193125-18-278769).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

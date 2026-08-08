@@ -1,0 +1,58 @@
+{
+  "case_id": "P274",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice indicates that the surviving entity reports as a single segment and does not break out the performance of the acquired assets. There is no documented evidence of disruption at the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the registrant terminated SEC reporting on the closing day and filed no subsequent periodic reports, while the surviving filer discloses only a single reportable segment with no breakout for the former PE REIT II assets or operations. No public 3-5-year record specific to post-closing trajectory was located, so no product/process or process/organization disruption is documented. Absence of such evidence codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice indicates that the surviving entity reports as a single segment and does not break out the performance of the acquired assets. There is no documented evidence of disruption at the product/process or process/organization interfaces.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the registrant terminated SEC reporting on the closing day and filed no subsequent periodic reports, while the surviving filer discloses only a single reportable segment with no breakout for the former PE REIT II assets or operations. No public 3-5-year record specific to post-closing trajectory was located, so no product/process or process/organization disruption is documented. Absence of such evidence codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P346",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a complete acquisition of CB&I by McDermott, combining their operations and products without documented structural mismatches at closing. The technology business and the rest of the corporate entity were both acquired (via cash and stock respectively), transferring products, processes, and employees together into the combined entity."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice shows CB&I’s technology-business products crossed via cash equity acquisition of the owning subsidiaries and the remaining customer-facing businesses crossed via the whole-entity merger/share-sale sequence, so product and the operating entities that housed the related processes moved together at closing. gap_56=0 because those same subsidiary-equity and whole-entity transfers brought the workforce with them under an express contractual employee pay/benefits continuity commitment through year-end 2018; leadership and board reconstitution (CB&I directors/NEOs largely exiting; McDermott CEO/CFO and majority board continuing) is a control overlay, not a documented structural detachment of processes from the organization that runs them at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The technology-business subsidiaries were acquired before the merger, while CB&I’s entire remaining entity was subsequently folded into McDermott as a wholly owned subsidiary; the slice documents no product-versus-process separation at closing. CB&I employees received contractual compensation, benefit, and service-credit continuity, while McDermott’s CEO and CFO continued and CB&I’s directors and most named executives exited, but no operational-process-versus-organization mismatch is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a complete acquisition of CB&I by McDermott, combining their operations and products without documented structural mismatches at closing. The technology business and the rest of the corporate entity were both acquired (via cash and stock respectively), transferring products, processes, and employees together into the combined entity.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice shows CB&I’s technology-business products crossed via cash equity acquisition of the owning subsidiaries and the remaining customer-facing businesses crossed via the whole-entity merger/share-sale sequence, so product and the operating entities that housed the related processes moved together at closing. gap_56=0 because those same subsidiary-equity and whole-entity transfers brought the workforce with them under an express contractual employee pay/benefits continuity commitment through year-end 2018; leadership and board reconstitution (CB&I directors/NEOs largely exiting; McDermott CEO/CFO and majority board continuing) is a control overlay, not a documented structural detachment of processes from the organization that runs them at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The technology-business subsidiaries were acquired before the merger, while CB&I’s entire remaining entity was subsequently folded into McDermott as a wholly owned subsidiary; the slice documents no product-versus-process separation at closing. CB&I employees received contractual compensation, benefit, and service-credit continuity, while McDermott’s CEO and CFO continued and CB&I’s directors and most named executives exited, but no operational-process-versus-organization mismatch is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

@@ -1,0 +1,7 @@
+ok  CP(0,60) = 0.0487 (~0.0487)
+ok  CP(0,100) = 0.0295 (~0.0295)
+ok  CP monotone in k: [0.0295, 0.0466, 0.0616, 0.0757, 0.0892, 0.1023]
+ok  cp_upper_vec matches scalar on [(0, 100), (1, 100), (3, 150), (10, 200)]
+ok  cp_lower_vec: k=0 -> 0.0  k=5/200 -> 0.0099
+ok  sim @ N=300 (leak .005): P(upper_ok)=1.000 P(gaps_ok)=0.998 median_upper=0.0211 median_gaps=77
+FIXTURE PASS

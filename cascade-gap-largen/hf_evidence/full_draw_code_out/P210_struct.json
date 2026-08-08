@@ -1,0 +1,85 @@
+{
+  "case_id": "P210",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "On gap_45: Pinnacle survived as a wholly owned subsidiary of Penn as a going concern (12 of 16 operating gaming/hospitality businesses crossed intact under the existing asset-light triple-net GLPI lease model), so the customer-facing operations and their operating processes moved together within the same surviving legal vehicle rather than being severed — the four Boyd-carved businesses left as whole operating units, not as products stripped from their processes. On gap_56: operations transferred inside the surviving Pinnacle entity while the merger agreement provided a one-year compensation/benefits-parity bridge with full service credit for continuing employees, so the people running the processes were structurally aligned alongside them at closing; board/named-officer turnover reflects T1/control replacement, not a process-vs-workforce mismatch. Because no structural product-vs-process or process-vs-organization gap is documented at closing, gap_mitigated is NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that 12 of Pinnacle's 16 businesses transferred to Penn, while 4 were carved out and sold to Boyd. The products (T4), operations (T5), and employees (T6) for the retained 12 businesses transferred together, with Penn providing a one-year compensation/benefits bridge for continuing employees. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and people (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Twelve of Pinnacle's 16 gaming businesses and their associated operations crossed into Penn, while four businesses and their gaming operations were contemporaneously carved out and sold to Boyd, so the transferred product and process tiers remained structurally matched [SRC: SEC accession 0001193125-18-298904, Form 8-K]. Although Pinnacle's board was fully replaced and six executives resigned, continuing employees remained covered by contractual compensation, benefits, and service-credit protections, documenting an organizational bridge alongside the transferred operations rather than a process-organization gap [SRC: SEC accession 0001193125-18-298904, Form 8-K] [SRC: SEC accession 0001047469-18-001164, Form DEFM14A]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"On gap_45: Pinnacle survived as a wholly owned subsidiary of Penn as a going concern (12 of 16 operating gaming/hospitality businesses crossed intact under the existing asset-light triple-net GLPI lease model), so the customer-facing operations and their operating processes moved together within the same surviving legal vehicle rather than being severed \\u2014 the four Boyd-carved businesses left as whole operating units, not as products stripped from their processes. On gap_56: operations transferred inside the surviving Pinnacle entity while the merger agreement provided a one-year compensation/benefits-parity bridge with full service credit for continuing employees, so the people running the processes were structurally aligned alongside them at closing; board/named-officer turnover reflects T1/control replacement, not a process-vs-workforce mismatch. Because no structural product-vs-process or process-vs-organization gap is documented at closing, gap_mitigated is NA.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice documents that 12 of Pinnacle's 16 businesses transferred to Penn, while 4 were carved out and sold to Boyd. The products (T4), operations (T5), and employees (T6) for the retained 12 businesses transferred together, with Penn providing a one-year compensation/benefits bridge for continuing employees. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and people (gap_56 = 0) at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Twelve of Pinnacle's 16 gaming businesses and their associated operations crossed into Penn, while four businesses and their gaming operations were contemporaneously carved out and sold to Boyd, so the transferred product and process tiers remained structurally matched [SRC: SEC accession 0001193125-18-298904, Form 8-K]. Although Pinnacle's board was fully replaced and six executives resigned, continuing employees remained covered by contractual compensation, benefits, and service-credit protections, documenting an organizational bridge alongside the transferred operations rather than a process-organization gap [SRC: SEC accession 0001193125-18-298904, Form 8-K] [SRC: SEC accession 0001047469-18-001164, Form DEFM14A].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

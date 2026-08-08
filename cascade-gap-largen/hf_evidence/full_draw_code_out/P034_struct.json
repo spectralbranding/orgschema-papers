@@ -1,0 +1,85 @@
+{
+  "case_id": "P034",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing assets (California oil and gas operations) and the operational processes (drilling and production activity) transferred together, resulting in no gap_45. However, centrally located corporate functions (IT, HR, finance, etc.) did not transfer intact, creating a structural mismatch between the operations and the organizational support (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the customer-facing California E&P asset separated together with the operational processes that produce and deliver it (CRC’s own drilling and production activity, ~26 rigs). gap_56 is 0 because the same closing structure states the people and management that run those operations crossed as well (Occidental-sourced CRC leadership team and ~1,600 California employees). Shared central corporate functions that did not move intact were bridged by a Transition Services Agreement, but that is not a product-vs-process or process-vs-organization mismatch in what transferred."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The California exploration-and-production asset crossed together with CRC's drilling and production activity, including approximately 26 drilling rigs, so no product-to-process gap is documented at closing [SRC: SEC accession 0001047469-14-007128, Form 10-12B EX-99.1]. The CRC leadership team and approximately 1,600 California employees also accompanied the operations, so no process-to-organization gap is documented, although centrally provided corporate functions did not transfer intact [SRC: SEC accession 0001047469-14-007128, Form 10-12B EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing assets (California oil and gas operations) and the operational processes (drilling and production activity) transferred together, resulting in no gap_45. However, centrally located corporate functions (IT, HR, finance, etc.) did not transfer intact, creating a structural mismatch between the operations and the organizational support (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states the customer-facing California E&P asset separated together with the operational processes that produce and deliver it (CRC’s own drilling and production activity, ~26 rigs). gap_56 is 0 because the same closing structure states the people and management that run those operations crossed as well (Occidental-sourced CRC leadership team and ~1,600 California employees). Shared central corporate functions that did not move intact were bridged by a Transition Services Agreement, but that is not a product-vs-process or process-vs-organization mismatch in what transferred.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The California exploration-and-production asset crossed together with CRC's drilling and production activity, including approximately 26 drilling rigs, so no product-to-process gap is documented at closing [SRC: SEC accession 0001047469-14-007128, Form 10-12B EX-99.1]. The CRC leadership team and approximately 1,600 California employees also accompanied the operations, so no process-to-organization gap is documented, although centrally provided corporate functions did not transfer intact [SRC: SEC accession 0001047469-14-007128, Form 10-12B EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P325",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$93.6 million pre-tax goodwill-impairment loss in the Canada segment",
+      "rationale": "The provided slice details financial performance, including a $93.6 million goodwill impairment in 2020 and subsequent revenue growth, but lacks any documented evidence of product/process misalignment (p4) or process/organization fracture (p5). Therefore, both pathways are coded as 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; Canada assets retained; ~$93.6M goodwill write-down (2020)",
+      "rationale": "The slice documents continued operation of the acquired Noralta lodges inside Civeo's Canada segment, with segment revenues rising from $269.6M (2020) to $321.4M (2021) and $396.0M (2022) and no divestiture or wind-down; no product/process misalignment is described. Impairments cited are goodwill ($93.6M in 2020 only) and long-lived assets, with no documented fracture at the operations-versus-organization/culture interface over the outcome window. Absence of any realized-pathway narrative yields p4_pathway=0 and p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Canada-segment revenue grew to $396.0 million in 2022'}",
+      "rationale": "{'type': 'string', 'enum': 'No product/process disruption is documented: the acquired lodges remained operational within the Canada segment, whose revenue increased from $269.6 million in 2020 to $321.4 million in 2021 and $396.0 million in 2022. No process/organization fracture involving management, employees, or culture is reported; instead, Civeo remained an independent public company and continued operating the acquired business throughout the outcome window.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$93.6 million pre-tax goodwill-impairment loss in the Canada segment\",\n  \"rationale\": \"The provided slice details financial performance, including a $93.6 million goodwill impairment in 2020 and subsequent revenue growth, but lacks any documented evidence of product/process misalignment (p4) or process/organization fracture (p5). Therefore, both pathways are coded as 0.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; Canada assets retained; ~$93.6M goodwill write-down (2020)\",\n  \"rationale\": \"The slice documents continued operation of the acquired Noralta lodges inside Civeo's Canada segment, with segment revenues rising from $269.6M (2020) to $321.4M (2021) and $396.0M (2022) and no divestiture or wind-down; no product/process misalignment is described. Impairments cited are goodwill ($93.6M in 2020 only) and long-lived assets, with no documented fracture at the operations-versus-organization/culture interface over the outcome window. Absence of any realized-pathway narrative yields p4_pathway=0 and p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Canada-segment revenue grew to $396.0 million in 2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No product/process disruption is documented: the acquired lodges remained operational within the Canada segment, whose revenue increased from $269.6 million in 2020 to $321.4 million in 2021 and $396.0 million in 2022. No process/organization fracture involving management, employees, or culture is reported; instead, Civeo remained an independent public company and continued operating the acquired business throughout the outcome window.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

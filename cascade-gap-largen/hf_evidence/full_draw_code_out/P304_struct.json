@@ -1,0 +1,85 @@
+{
+  "case_id": "P304",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a roll-up of the remaining publicly held units of ONEOK Partners, L.P. by its parent ONEOK, Inc., which already controlled the Partnership through its general partner. The Partnership survived intact as a wholly owned subsidiary, and its operations, assets, and management (which already overlapped with ONEOK) continued unchanged. Therefore, there were no structural gaps between product (T4) and process (T5), or between process (T5) and organization (T6)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the Partnership survived the merger as the same Delaware LP with its certificate and partnership agreement unchanged, and that ONEOK already consolidated the Partnership pre-closing; midstream product/assets and the processes that produce them therefore remained together inside the Surviving Entity, so gap_45=0. Pre-existing wholly owned GP control and overlapping executives (same CEO and CAO at both entities) were carried forward unchanged at closing, so processes and organization stayed aligned with no structural mismatch (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Partnership survived without dissolution as the same Delaware limited partnership, retaining its organizational documents and its midstream assets and activities; the slice documents no separation of those customer-facing assets from their operating processes at closing. ONEOK already controlled the general partner, shared directors and executives with the Partnership, and carried that personnel structure forward unchanged, so no closing-structure mismatch between processes and the organization running them is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a roll-up of the remaining publicly held units of ONEOK Partners, L.P. by its parent ONEOK, Inc., which already controlled the Partnership through its general partner. The Partnership survived intact as a wholly owned subsidiary, and its operations, assets, and management (which already overlapped with ONEOK) continued unchanged. Therefore, there were no structural gaps between product (T4) and process (T5), or between process (T5) and organization (T6).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the Partnership survived the merger as the same Delaware LP with its certificate and partnership agreement unchanged, and that ONEOK already consolidated the Partnership pre-closing; midstream product/assets and the processes that produce them therefore remained together inside the Surviving Entity, so gap_45=0. Pre-existing wholly owned GP control and overlapping executives (same CEO and CAO at both entities) were carried forward unchanged at closing, so processes and organization stayed aligned with no structural mismatch (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The Partnership survived without dissolution as the same Delaware limited partnership, retaining its organizational documents and its midstream assets and activities; the slice documents no separation of those customer-facing assets from their operating processes at closing. ONEOK already controlled the general partner, shared directors and executives with the Partnership, and carried that personnel structure forward unchanged, so no closing-structure mismatch between processes and the organization running them is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

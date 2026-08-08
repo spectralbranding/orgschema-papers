@@ -1,0 +1,85 @@
+{
+  "case_id": "P136",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: the customer-facing coal-mining asset base — real property, permits and mining assets (T4) — was sold together with the operating assets that produce/deliver it, described as \"substantially all of the Company's Alabama operating assets,\" so product and its producing operations crossed the boundary together (EX-2.1 Acquired Assets/Mining definitions; EX-99.1). gap_56=1: the operating assets transferred but the workforce/organization did not move coherently alongside — employees did not transfer automatically, the Buyer chose in \"sole discretion\" whom to offer employment (§8.5(a)), collective bargaining agreements were rejected and retiree benefits terminated (UMWA Order), a structural people/process mismatch at closing. gap_mitigated=no: no transitional-services or operating agreement absorbing the shared workforce substrate is documented; severance and untransferred benefit plans remained seller obligations rather than a bridged allocation (§8.5(a)(c))."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was a Section 363 asset sale where the buyer acquired substantially all of the Alabama coal-mining operating assets (T4 and T5 moved together, so gap_45 is 0). However, the workforce (T6) did not transfer automatically; the buyer rejected existing collective bargaining agreements and only hired employees at its sole discretion under new terms, creating a structural friction/mismatch between the transferred operations and the workforce (gap_56 = 1). There is no mention of a transitional services agreement mitigating this gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the Subject Assets transferred as a single package of Alabama coal-mining operating assets, real property, permits and mining assets under the APA/Sale Order, so the customer-facing product layer and the operational process assets crossed together with no documented product-vs-process split at closing. gap_56=1 because those operating assets crossed while employees did not transfer automatically: per EX-2.1 §8.5(a) the Buyer alone set terms and chose whom to offer employment, CBAs were rejected under the UMWA Order, and only accepting starters became Buyer Employees, leaving processes without coherent organization transfer. No transitional-services or operating agreement allocating the workforce substrate is documented, so the gap is unmitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: the customer-facing coal-mining asset base \\u2014 real property, permits and mining assets (T4) \\u2014 was sold together with the operating assets that produce/deliver it, described as \\\"substantially all of the Company's Alabama operating assets,\\\" so product and its producing operations crossed the boundary together (EX-2.1 Acquired Assets/Mining definitions; EX-99.1). gap_56=1: the operating assets transferred but the workforce/organization did not move coherently alongside \\u2014 employees did not transfer automatically, the Buyer chose in \\\"sole discretion\\\" whom to offer employment (\\u00a78.5(a)), collective bargaining agreements were rejected and retiree benefits terminated (UMWA Order), a structural people/process mismatch at closing. gap_mitigated=no: no transitional-services or operating agreement absorbing the shared workforce substrate is documented; severance and untransferred benefit plans remained seller obligations rather than a bridged allocation (\\u00a78.5(a)(c)).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction was a Section 363 asset sale where the buyer acquired substantially all of the Alabama coal-mining operating assets (T4 and T5 moved together, so gap_45 is 0). However, the workforce (T6) did not transfer automatically; the buyer rejected existing collective bargaining agreements and only hired employees at its sole discretion under new terms, creating a structural friction/mismatch between the transferred operations and the workforce (gap_56 = 1). There is no mention of a transitional services agreement mitigating this gap.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the Subject Assets transferred as a single package of Alabama coal-mining operating assets, real property, permits and mining assets under the APA/Sale Order, so the customer-facing product layer and the operational process assets crossed together with no documented product-vs-process split at closing. gap_56=1 because those operating assets crossed while employees did not transfer automatically: per EX-2.1 §8.5(a) the Buyer alone set terms and chose whom to offer employment, CBAs were rejected under the UMWA Order, and only accepting starters became Buyer Employees, leaving processes without coherent organization transfer. No transitional-services or operating agreement allocating the workforce substrate is documented, so the gap is unmitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

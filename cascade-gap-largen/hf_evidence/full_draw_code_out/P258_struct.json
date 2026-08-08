@@ -1,0 +1,85 @@
+{
+  "case_id": "P258",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the proxy describes both product lines (Impax generics/specialty plus Amneal's portfolio) and the underlying manufacturing/R&D processes crossing together into the Combined Company's \"strengthened global supply chain ... with R&D and manufacturing sites,\" so product and its producing processes moved as a bundle rather than product-without-process. gap_56=1: the operations were to be combined/re-engineered (\"combined footprint and product transfer opportunities,\" up to $200M savings) while the risk factors repeatedly note the two businesses \"operated as independent public companies\" and \"currently operate as independent businesses\" with anticipated \"inconsistencies in standards, control, procedures and policies,\" and management continuity was only partial (Amneal CEO, Impax Executive Chairman/CFO, contingent Executive Event) — indicating processes being fused ahead of fully aligned organization/people. gap_mitigated=yes: a dedicated Integration Committee (Chirag Patel, Chintu Patel, Bisaro) was created for a minimum two years post-closing to manage the operational combination, contractually absorbing the T5/T6 substrate at closing. Amneal Members held ~75% (later ~60%) control, indicating T1 replace with new controlling intent installed."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the BCA folded both Impax and Amneal product portfolios and both companies' manufacturing/R&D/supply-chain footprints into the single Up-C New Amneal/Amneal structure (proxy: combined global supply chain and product-mix diversification; Impax segments plus Amneal complex-generics portfolio), so T4 and T5 crossed together with no product-vs-process structural mismatch. Likewise T5 and T6 both entered the combined vehicle: mixed C-suite (Amneal CEO Stewart, Impax Executive Chairman Bisaro, Impax CFO Reasons), dual-designated board, and a contractual two-year Integration Committee of the Patels and Bisaro, so processes did not transfer without organization/people alignment at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product portfolios and their operating substrate crossed the boundary together: the proxy described the Combined Company as manufacturing and distributing its products through a strengthened global supply chain spanning both businesses’ R&D and manufacturing sites, so no product-process gap is documented at closing. Although the businesses remained operationally independent before closing and required integration, management and governance from both sides transferred into New Amneal, including Amneal’s CEO, Impax’s Executive Chairman and CFO, a mixed board, and a dedicated two-year Integration Committee. Accordingly, the disclosed integration work does not establish a closing-stage process-organization gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the proxy describes both product lines (Impax generics/specialty plus Amneal's portfolio) and the underlying manufacturing/R&D processes crossing together into the Combined Company's \\\"strengthened global supply chain ... with R&D and manufacturing sites,\\\" so product and its producing processes moved as a bundle rather than product-without-process. gap_56=1: the operations were to be combined/re-engineered (\\\"combined footprint and product transfer opportunities,\\\" up to $200M savings) while the risk factors repeatedly note the two businesses \\\"operated as independent public companies\\\" and \\\"currently operate as independent businesses\\\" with anticipated \\\"inconsistencies in standards, control, procedures and policies,\\\" and management continuity was only partial (Amneal CEO, Impax Executive Chairman/CFO, contingent Executive Event) \\u2014 indicating processes being fused ahead of fully aligned organization/people. gap_mitigated=yes: a dedicated Integration Committee (Chirag Patel, Chintu Patel, Bisaro) was created for a minimum two years post-closing to manage the operational combination, contractually absorbing the T5/T6 substrate at closing. Amneal Members held ~75% (later ~60%) control, indicating T1 replace with new controlling intent installed.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the BCA folded both Impax and Amneal product portfolios and both companies' manufacturing/R&D/supply-chain footprints into the single Up-C New Amneal/Amneal structure (proxy: combined global supply chain and product-mix diversification; Impax segments plus Amneal complex-generics portfolio), so T4 and T5 crossed together with no product-vs-process structural mismatch. Likewise T5 and T6 both entered the combined vehicle: mixed C-suite (Amneal CEO Stewart, Impax Executive Chairman Bisaro, Impax CFO Reasons), dual-designated board, and a contractual two-year Integration Committee of the Patels and Bisaro, so processes did not transfer without organization/people alignment at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The product portfolios and their operating substrate crossed the boundary together: the proxy described the Combined Company as manufacturing and distributing its products through a strengthened global supply chain spanning both businesses’ R&D and manufacturing sites, so no product-process gap is documented at closing. Although the businesses remained operationally independent before closing and required integration, management and governance from both sides transferred into New Amneal, including Amneal’s CEO, Impax’s Executive Chairman and CFO, a mixed board, and a dedicated two-year Integration Committee. Accordingly, the disclosed integration work does not establish a closing-stage process-organization gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P208",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice indicates Patheon continued as an industry-leading brand for contract development and manufacturing through 2020-2021, with no documented product/process disruption (p4=0). Furthermore, a former Patheon executive became EVP and COO of Thermo Fisher, showing management continuity rather than process/organization fracture (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "brand continued; no isolated financial scalar",
+      "rationale": "The slice documents that Thermo Fisher’s FY2020 and FY2021 10-Ks continued to list and market Patheon as its contract-development-and-manufacturing brand with no mention of product-line or operating-process incoherence, so p4_pathway is 0. The same filings show former Patheon COO Michel Lagarde advancing to Thermo Fisher EVP/COO by FY2021, with no documented operations-vs-organization fracture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Patheon brand and business continued through FY2021; no isolated financial scalar",
+      "rationale": "FY2020 and FY2021 filings continued to describe Patheon as Thermo Fisher’s contract development and manufacturing brand, with no documented product/process disruption. The filings also show a former Patheon executive advancing to Thermo Fisher’s Executive Vice President and Chief Operating Officer, with no documented operations-versus-organization fracture."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice indicates Patheon continued as an industry-leading brand for contract development and manufacturing through 2020-2021, with no documented product/process disruption (p4=0). Furthermore, a former Patheon executive became EVP and COO of Thermo Fisher, showing management continuity rather than process/organization fracture (p5=0).\"\n}\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"brand continued; no isolated financial scalar\",\n  \"rationale\": \"The slice documents that Thermo Fisher’s FY2020 and FY2021 10-Ks continued to list and market Patheon as its contract-development-and-manufacturing brand with no mention of product-line or operating-process incoherence, so p4_pathway is 0. The same filings show former Patheon COO Michel Lagarde advancing to Thermo Fisher EVP/COO by FY2021, with no documented operations-vs-organization fracture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Patheon brand and business continued through FY2021; no isolated financial scalar\",\n  \"rationale\": \"FY2020 and FY2021 filings continued to describe Patheon as Thermo Fisher’s contract development and manufacturing brand, with no documented product/process disruption. The filings also show a former Patheon executive advancing to Thermo Fisher’s Executive Vice President and Chief Operating Officer, with no documented operations-versus-organization fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

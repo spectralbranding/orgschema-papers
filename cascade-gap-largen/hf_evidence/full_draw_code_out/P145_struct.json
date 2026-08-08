@@ -1,0 +1,85 @@
+{
+  "case_id": "P145",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal transfers substantially all assets of the TiO2/electrolytics business — the Products together with the operations that develop, process, manufacture, distribute and sell them (recitals), plus mining/JV operations — so the customer-facing product moved coherently with its producing/delivering processes, yielding gap_45=0. On T5-vs-T6, Buyers agreed to offer employment to substantially all Covered Employees at substantially the same terms effective at Closing (Section 6(g)), so the people/organization running the transferred operations moved alongside the processes, yielding gap_56=0 (partial only because pension/post-retirement plans and Retained Employees were carved out, not a structural product/process or process/people mismatch). T1 is coded replace because a distressed 363/365 sale out of Tronox's Chapter 11 estate installs Huntsman's controlling intent over the divested business."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is structured as an asset and equity purchase of Tronox's titanium dioxide and electrolytics businesses out of bankruptcy. The product/assets (T4), operational processes/facilities (T5), and substantially all covered employees (T6) are transferring together as a subset of the seller's overall estate. There is no documented structural mismatch between T4 and T5, nor between T5 and T6 at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice structures a single 363/365 package transferring substantially all assets of the titanium dioxide and electrolytics Business (products plus the developing/researching/processing/manufacturing/distributing operations that produce them) together, not product without process [SRC: EX-10.1 recitals; Item 1.01]. gap_56=0 because the same closing package commits Buyers to offer employment at Closing to substantially all Covered Employees alongside assumption of ongoing operating liabilities, so process and workforce are aligned in the deal structure rather than severed [SRC: EX-10.1 Section 6(g); Section 2(e)]. No contractual TSA/operating-agreement bridge is needed or documented for a product-process or process-org mismatch at closing; the LPC tolling language is only an antitrust divestiture contingency."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal transfers substantially all assets of the TiO2/electrolytics business \\u2014 the Products together with the operations that develop, process, manufacture, distribute and sell them (recitals), plus mining/JV operations \\u2014 so the customer-facing product moved coherently with its producing/delivering processes, yielding gap_45=0. On T5-vs-T6, Buyers agreed to offer employment to substantially all Covered Employees at substantially the same terms effective at Closing (Section 6(g)), so the people/organization running the transferred operations moved alongside the processes, yielding gap_56=0 (partial only because pension/post-retirement plans and Retained Employees were carved out, not a structural product/process or process/people mismatch). T1 is coded replace because a distressed 363/365 sale out of Tronox's Chapter 11 estate installs Huntsman's controlling intent over the divested business.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is structured as an asset and equity purchase of Tronox's titanium dioxide and electrolytics businesses out of bankruptcy. The product/assets (T4), operational processes/facilities (T5), and substantially all covered employees (T6) are transferring together as a subset of the seller's overall estate. There is no documented structural mismatch between T4 and T5, nor between T5 and T6 at closing.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice structures a single 363/365 package transferring substantially all assets of the titanium dioxide and electrolytics Business (products plus the developing/researching/processing/manufacturing/distributing operations that produce them) together, not product without process [SRC: EX-10.1 recitals; Item 1.01]. gap_56=0 because the same closing package commits Buyers to offer employment at Closing to substantially all Covered Employees alongside assumption of ongoing operating liabilities, so process and workforce are aligned in the deal structure rather than severed [SRC: EX-10.1 Section 6(g); Section 2(e)]. No contractual TSA/operating-agreement bridge is needed or documented for a product-process or process-org mismatch at closing; the LPC tolling language is only an antitrust divestiture contingency.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

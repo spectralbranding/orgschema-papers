@@ -1,0 +1,320 @@
+ 
+ 8-K
+ 1
+ form8k.htm
+ 8-K
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8&#8209;K 
+
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the 
+ Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported) December 20, 2018 
+
+ Cigna Holding Company 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 1&#8209;08323 
+
+ 06&#8209;1059331 
+
+ (State or other jurisdiction of incorporation) 
+
+ (Commission File Number) 
+
+ (IRS Employer Identification No.) 
+
+ 900 Cottage Grove Road 
+ Bloomfield, Connecticut 06002 
+ (Address of principal executive offices) (Zip Code) 
+
+ Registrant';s telephone number, including area code: 
+
+ (860) 226&#8209;6000 
+
+ Cigna Corporation 
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the
+ following provisions: 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (17 CFR &#167;230.405) or Rule
+ 12b-2 of the Securities Exchange Act of 1934 (17 CFR &#167;240.12b-2). 
+ Emerging growth company &#9744; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or
+ revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Introductory Note. 
+
+ This Current Report on Form 8-K is being filed in connection with the completion, on December 20, 2018 (the ";Closing Date";), of the previously announced
+ Merger (as defined below) contemplated by the Agreement and Plan of Merger, dated as of March 8, 2018, as amended by Amendment No. 1, dated as of June 27, 2018 (the ";Merger Agreement";), by and among Cigna Corporation (now known as Cigna Holding
+ Company), a Delaware corporation (";Cigna";), Express Scripts Holding Company, a Delaware corporation (";Express Scripts";), Halfmoon Parent, Inc. (now known as Cigna Corporation), a Delaware corporation and a direct wholly owned subsidiary of Cigna
+ prior to the Merger (";New Cigna";), Halfmoon I, Inc., a Delaware corporation and a direct wholly owned subsidiary of New Cigna prior to the Merger (";Merger Sub 1";), and Halfmoon II, Inc., a Delaware corporation and a direct wholly owned subsidiary
+ of New Cigna prior to the Merger (";Merger Sub 2"; and, together with Merger Sub 1, the ";Merger Subs";). 
+
+ At the effective time of the Merger on December 20, 2018 (the ";Effective Time";), in accordance with the Merger Agreement, (a) Merger Sub 1 merged with and
+ into Cigna (the ";Cigna Merger";), with Cigna surviving the Cigna Merger as a direct wholly owned subsidiary of New Cigna, and (b) Merger Sub 2 merged with and into Express Scripts (the ";Express Scripts Merger"; and, together with the Cigna Merger,
+ the ";Merger";), with Express Scripts surviving the Express Scripts Merger as a direct wholly owned subsidiary of New Cigna. As a result of the Merger, Cigna and Express Scripts became direct wholly owned subsidiaries of New Cigna. As a result of
+ the transactions contemplated by the Merger Agreement, New Cigna became a publicly traded corporation, and former Cigna stockholders and former Express Scripts stockholders received common stock of New Cigna. Cigna common stock will cease trading
+ on the New York Stock Exchange (the ";NYSE";) and Express Scripts common stock will cease trading on the Nasdaq Global Select Market, in each case prior to the open of trading on December 21, 2018, and New Cigna common stock will commence trading on
+ the NYSE on December 21, 2018 under the symbol ";CI";. 
+
+ At the Effective Time, each issued and outstanding share of Cigna common stock, par value $0.25 per share (other than shares of Cigna common stock held (a) by
+ Cigna as treasury shares or (b) by New Cigna or Merger Sub 1), was converted automatically into one share of New Cigna common stock, par value $0.01 per share. Also at the Effective Time, Cigna';s name was changed from ";Cigna Corporation"; to ";Cigna
+ Holding Company"; and New Cigna';s name was changed from ";Halfmoon Parent, Inc."; to ";Cigna Corporation."; 
+
+ At the Effective Time, each issued and outstanding share of Express Scripts common stock, par value $0.01 per share (other than shares of Express Scripts
+ common stock (a) held by Express Scripts as treasury shares, (b) owned by Cigna or by direct or indirect wholly owned subsidiaries of Express Scripts or Cigna (including New Cigna and the Merger Subs) or (c) with respect to which appraisal rights
+ were properly exercised and not withdrawn), was converted automatically into (i) 0.2434 of a share of New Cigna common stock (the ";Stock Consideration";) and (ii) the right to receive $48.75 in cash, without interest, subject to applicable
+ withholding taxes (the ";Cash Consideration"; and, together with the Stock Consideration and any cash in lieu of fractional shares of New Cigna common stock, the ";Merger Consideration";). No fractional shares of New Cigna common stock were issued in
+ the Merger, and former Express Scripts stockholders are entitled to receive cash in lieu of any fractional shares of New Cigna common stock. 
+
+ Cigna stock options, restricted shares, RSUs, strategic performance shares and deferred stock units that were outstanding immediately prior to the Effective
+ Time were converted into equivalent New Cigna awards. 
+
+ - 2 - 
+
+ At the Effective Time, Express Scripts stock options, restricted stock units (";RSUs";) (other than those granted to non-employee directors) and deferred stock
+ units that were outstanding immediately prior to the Effective Time were converted into equivalent New Cigna awards. Express Scripts performance share units that were outstanding immediately prior to the Effective Time vested at 125% for the
+ performance period commencing in 2016, 245.31% for the performance period commencing in 2017 and 250% for the performance period commencing in 2018 and were cancelled at the Effective Time in exchange for the right to receive the Merger
+ Consideration for the vested portion of the award. 
+
+ Express Scripts RSUs granted to non-employee directors were cancelled in exchange for a cash payment in an amount equal to the Merger Consideration. 
+
+ The issuance of New Cigna common stock in connection with the Merger was registered under the Securities Act of 1933, as amended, pursuant to New Cigna';s
+ registration statement on Form S-4 (File No. 333-224960) (as amended, the ";Registration Statement";), filed with the U.S. Securities and Exchange Commission (the ";SEC";), and declared effective on July 16, 2018. The definitive proxy
+ statement/prospectus, dated July 16, 2018, of each of Cigna and Express Scripts that forms part of the Registration Statement contains additional information about the Merger and the other transactions contemplated in connection therewith. 
+
+ The foregoing description of the Merger Agreement and the transactions contemplated thereby is not complete and is subject to and qualified in its entirety by
+ reference to the Merger Agreement, which is incorporated herein by reference to Exhibit 2.1 to Cigna';s Current Report on Form 8-K filed with the SEC on March 13, 2018 and to Exhibit 2.1 to Cigna';s Current Report on Form 8-K filed with the SEC on
+ July 2, 2018. 
+
+ The representations, warranties and covenants of the parties contained in the Merger Agreement (a) have been made only for purposes of the Merger Agreement,
+ (b) have been qualified by (i) the matters specifically disclosed in certain of Cigna';s and Express Scripts'; filings with the SEC and (ii) confidential disclosures made in the disclosure schedules delivered in connection with the Merger Agreement,
+ (c) are subject to materiality qualifications contained in the Merger Agreement which may differ from what may be viewed as material by investors, (d) were made only as of the date of the Merger Agreement or such other date as is specified in the
+ Merger Agreement and (e) have been included in the Merger Agreement for the purpose of allocating risk between the contracting parties rather than establishing matters of fact. Accordingly, the Merger Agreement is incorporated herein by reference
+ only to provide investors with information regarding the terms of the Merger Agreement, and not to provide investors with any other factual information regarding Cigna, Express Scripts or their respective affiliates or businesses, including New
+ Cigna. Investors should not rely on the representations, warranties or covenants or any descriptions thereof as characterizations of the actual state of facts or condition of Cigna, Express Scripts or any of their respective affiliates, including
+ New Cigna. Moreover, information concerning the subject matter of the representations, warranties or covenants may have changed after the date of the Merger Agreement, which subsequent information may or may not be fully reflected in Cigna';s,
+ Express Scripts'; or New Cigna';s public disclosures. 
+
+ The Cash Consideration was financed using (i) cash on hand of Cigna and Express Scripts, (ii) net proceeds from $1.5 billion of short-term commercial paper of
+ Cigna, (iii) term loan borrowings by New Cigna on the Closing Date of $3.0 billion under the New Cigna Term Loan Credit Agreement (as defined below), previously described in the Current Report on Form 8-K filed by Cigna with the SEC on April 12,
+ 2018, and (iv) net proceeds of the issuance by New Cigna of the outstanding senior notes under the New Cigna Indenture (as defined below), previously described in the Current Report on Form 8-K filed by New Cigna with the SEC on September 21, 2018. 
+
+ - 3 - 
+
+ Item 2.01 
+ 
+ Completion of Acquisition or Disposition of Assets. 
+
+ The information set forth in the Introductory Note, Item 3.01 and Item 5.01 of this Current Report on Form 8-K is incorporated by reference into this Item
+ 2.01. 
+
+ Item 2.03 
+ 
+ Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant. 
+
+ The information set forth in the last paragraph of the Introductory Note of this Current Report on Form 8-K is incorporated by reference into this Item 2.03. 
+
+ Item 3.01 
+ 
+ Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+
+ On the Closing Date, in connection with the consummation of the Merger, Cigna notified the NYSE that the Merger had been consummated and requested that the
+ trading of its shares on the NYSE be suspended and that the listing of its shares on the NYSE be withdrawn. In addition, Cigna requested that the NYSE file with the SEC a notification on Form 25 to report the delisting of its shares from the NYSE
+ and to deregister its shares under Section 12(b) of the Securities Exchange Act of 1934, as amended. 
+
+ Item 3.03 
+ 
+ Material Modification to Rights of Security Holders. 
+
+ The information set forth in the Introductory Note, Item 2.01, Item 5.01 and Item 5.03 of this Current Report on Form 8-K is incorporated by reference into
+ this Item 3.03. 
+
+ Item 5.01 
+ 
+ Changes in Control of Registrant. 
+
+ As a result of the consummation of the Cigna Merger, a change of control of Cigna occurred, and Cigna became a wholly owned subsidiary of New Cigna. 
+
+ The information set forth in the Introductory Note, Item 3.03 and Item 5.02 of this Current Report on Form 8-K is incorporated by reference into this Item
+ 5.01. 
+
+ Item 5.02 
+ 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. 
+
+ In accordance with the Merger Agreement, at the Effective Time, all of the directors of Cigna were replaced by Eric P. Palmer, Mary T. Agoglia Hoeltzel and
+ Timothy D. Buckley. 
+
+ Item 5.03 
+ 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. 
+
+ In connection with the completion of the Cigna Merger and pursuant to the Merger Agreement, at the Effective Time, Cigna';s certificate of incorporation and
+ bylaws were amended and restated in their entirety. Copies of Cigna';s Amended and Restated Certificate of Incorporation and Amended and Restated By-Laws are filed as Exhibits 3.1 and 3.2, respectively, to this Current Report on Form 8-K and are
+ incorporated by reference herein. 
+
+ - 4 - 
+
+ Item 8.01 
+ 
+ Other Events. 
+
+ Press Release 
+
+ On December 20, 2018, New Cigna issued a press release announcing the completion of the Merger. The press release is attached hereto as Exhibit 99.1 to this
+ Current Report on Form 8-K and is incorporated herein by reference. 
+
+ Guarantees of New Cigna Obligations 
+
+ On December 20, 2018, in connection with the Merger, Express Scripts, Cigna, New Cigna and U.S. Bank National Association, as trustee (";U.S. Bank";), entered
+ into that certain second supplemental indenture (the ";New Cigna Second Supplemental Indenture";) to the base indenture dated as of September 17, 2018, by and among New Cigna and U.S. Bank (as supplemented, the ";New Cigna Indenture";). The New Cigna
+ Second Supplemental Indenture provides for the guarantee by Express Scripts and Cigna of the outstanding senior notes issued by New Cigna under the New Cigna Indenture. A copy of the New Cigna Second Supplemental Indenture is filed with this Form
+ 8-K as Exhibit 4.1 and is incorporated herein by reference. 
+
+ On December 20, 2018, in connection with the Merger, Express Scripts and Cigna entered into that certain guarantor supplement (the ";New Cigna Revolver
+ Guarantor Supplement";) to the Revolving Credit and Letter of Credit Agreement dated as of April 6, 2018, by and among Cigna, New Cigna, JPMorgan Chase Bank, N.A., as administrative agent, and the other parties thereto (the ";New Cigna Revolving
+ Credit Agreement";). The New Cigna Revolver Guarantor Supplement provides for the guarantee by Express Scripts and Cigna of the obligations of New Cigna as borrower under the New Cigna Revolving Credit Agreement. A copy of the New Cigna Revolver
+ Guarantor Supplement is filed with this Form 8-K as Exhibit 4.2 and is incorporated herein by reference. 
+
+ On December 20, 2018, in connection with the Merger, Express Scripts and Cigna entered into that certain guarantor supplement (the ";New Cigna Term Loan
+ Guarantor Supplement";) to the Term Loan Credit Agreement dated as of April 6, 2018, by and among Cigna, New Cigna, Morgan Stanley Senior Funding, Inc., as administrative agent, and the other parties thereto (the ";New Cigna Term Loan Credit
+ Agreement";). The New Cigna Term Loan Guarantor Supplement provides for the guarantee by Express Scripts and Cigna of the obligations of New Cigna as borrower under the New Cigna Term Loan Credit Agreement. A copy of the New Cigna Term Loan
+ Guarantor Supplement is filed with this Form 8-K as Exhibit 4.3 and is incorporated herein by reference. 
+
+ New Cigna Guarantees of Cigna Obligations 
+
+ On December 20, 2018, in connection with the Merger, Cigna, New Cigna and U.S. Bank National Association, as trustee (";U.S. Bank";), entered into that certain
+ supplemental indenture no. 11 (the ";Cigna 2006 Eleventh Supplemental Indenture";) to the base indenture dated as of August 16, 2006, by and among Cigna Corporation and U.S. Bank (as supplemented, the ";Cigna 2006 Indenture";). The Cigna 2006 Eleventh
+ Supplemental Indenture provides for the guarantee by New Cigna of the outstanding notes issued by Cigna under the Cigna 2006 Indenture. A copy of the Cigna 2006 Eleventh Supplemental Indenture is filed with this Form 8-K as Exhibit 4.4 and is
+ incorporated herein by reference. 
+
+ On December 20, 2018, in connection with the Merger, Cigna, New Cigna and HSBC Bank USA, National Association (as successor to Marine Midland Bank, N.A.), as
+ trustee (";HSBC";), entered into that certain supplemental indenture no.1 (the ";Cigna 1994 Supplemental Indenture";) to the base indenture dated as of January 1, 1994, by and among Cigna and HSBC (as supplemented, the ";Cigna 1994 Indenture";). The
+ Cigna 1994 Supplemental Indenture provides for the guarantee by New Cigna of the outstanding notes issued by Cigna under the Cigna 1994 Indenture. A copy of the Cigna 1994 Supplemental Indenture is filed with this Form 8-K as Exhibit 4.5 and is
+ incorporated herein by reference. 
+
+ - 5 - 
+
+ On December 20, 2018, in connection with the Merger, Cigna, New Cigna and Deutsche Bank Trust Company Americas, a New York banking corporation (as successor
+ to Bankers Trust Company), as trustee (";Deutsche Bank";), entered into that certain supplemental indenture no. 1 (the ";Cigna 1988 Supplemental Indenture";) to the base indenture dated as of June 30, 1988, by and among Cigna and Deutsche Bank (as
+ supplemented, the ";Cigna 1988 Indenture";). The Cigna 1988 Supplemental Indenture provides for the guarantee by New Cigna of the outstanding notes and debentures issued by Cigna under the Cigna 1988 Indenture. A copy of the Cigna 1988 Supplemental
+ Indenture is filed with this Form 8-K as Exhibit 4.6 and is incorporated herein by reference. 
+
+ Item 9.01 
+
+ Financial Statements and Exhibits. 
+
+ Exhibit No. 
+
+ Description of Exhibit 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated as of March 8, 2018, by and among Cigna Corporation (now known as Cigna Holding Company), Express Scripts Holding Company, Halfmoon
+ Parent, Inc. (now known as Cigna Corporation), Halfmoon I, Inc. and Halfmoon II, Inc. (incorporated by reference to Exhibit 2.1 to Cigna Corporation';s (now known as Cigna Holding Company) Current Report on Form 8-K filed with the SEC on
+ March 13, 2018). 
+
+ 2.2 
+ 
+ Amendment No. 1 to Agreement and Plan of Merger, dated as of June 27, 2018, by and among Cigna Corporation (now known as Cigna Holding Company), Express Scripts Holding
+ Company, Halfmoon Parent, Inc. (now known as Cigna Corporation), Halfmoon I, Inc. and Halfmoon II, Inc. (incorporated by reference to Exhibit 2.1 to Cigna Corporation';s (now known as Cigna Holding Company) Current Report on Form 8-K
+ filed with the SEC on July 2, 2018). 
+
+ 3.1 
+ 
+ Amended and Restated Certificate of Incorporation of Cigna Holding Company (formerly known as Cigna Corporation). 
+
+ 3.2 
+ 
+ Amended and Restated By-Laws of Cigna Holding Company (formerly known as Cigna Corporation). 
+
+ 4.1 
+ 
+ Second Supplemental Indenture dated as of December 20, 2018, by and among Express Scripts Holding Company, Cigna Holding Company (formerly known as Cigna Corporation) and
+ U.S. Bank National Association, as Trustee, to that certain base indenture dated as of September 17, 2018, by and among Halfmoon Parent, Inc. (now known as Cigna Corporation) and U.S. Bank National Association (as supplemented by that
+ certain first supplemental indenture thereto dated as of September 17, 2018). 
+
+ 4.2 
+ 
+ Additional Guarantor Supplement dated as of December 20, 2018, by Express Scripts Holding Company and Cigna Holding Company (formerly known as Cigna Corporation) to that
+ certain Revolving Credit and Letter of Credit Agreement dated as of April 6, 2018, by and among Cigna Corporation (now known as Cigna Holding Company), Halfmoon Parent, Inc. (now known as Cigna Corporation), JPMorgan Chase Bank, N.A.,
+ as administrative agent, and the other parties thereto. 
+
+ 4.3 
+ 
+ Additional Guarantor Supplement dated as of December 20, 2018, by Express Scripts Holding Company and Cigna Holding Company (formerly known as Cigna Corporation) to that
+ certain Term Loan Credit Agreement dated as of April 6, 2018, by and among Cigna Corporation (now known as Cigna Holding Company), Halfmoon Parent, Inc. (now known as Cigna Corporation), Morgan Stanley Senior Funding, Inc., as
+ administrative agent, and the other parties thereto. 
+
+ - 6 - 
+
+ 4.4 
+ 
+ Supplemental Indenture No. 11 dated as of December 20, 2018, by and among Cigna Corporation (formerly known as Halfmoon Parent, Inc.), Cigna Holding Company (formerly known
+ as Cigna Corporation) and U.S. Bank National Association, as Trustee, to that certain base indenture dated as of August 16, 2006, by and among Cigna Corporation (now known as Cigna Holding Company) and U.S. Bank National Association, as
+ Trustee. 
+
+ 4.5 
+ 
+ Supplemental Indenture No. 1 dated as of December 20, 2018, by and among Cigna Corporation (formerly known as Halfmoon Parent, Inc.), Cigna Holding Company (formerly known
+ as Cigna Corporation) and HSBC Bank USA, National Association (as successor to Marine Midland Bank, N.A.), as Trustee, to that certain base indenture dated as of January 1, 1994, by and among Cigna Corporation (now known as Cigna
+ Holding Company) and HSBC. 
+
+ 4.6 
+ 
+ Supplemental Indenture No. 1 dated as of December 20, 2018, by and among Cigna Corporation (formerly known as Halfmoon Parent, Inc.), Cigna Holding Company (formerly known
+ as Cigna Corporation) and Deutsche Bank Trust Company Americas, a New York banking corporation (as successor to Bankers Trust Company), as Trustee, to that certain base indenture dated as of June 30, 1988, by and among Cigna Corporation
+ (now known as Cigna Holding Company) and Deutsche Bank. 
+
+ 99.1 
+ 
+ Press Release, dated December 20, 2018. 
+
+ - 7 - 
+
+ SIGNATURE 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned
+ hereunto duly authorized. 
+
+ Cigna Holding Company 
+
+ Date: December 20, 2018 
+
+ By: 
+
+ /s/ Nicole S. Jones 
+
+ Nicole S. Jones 
+
+ Executive Vice President and General Counsel 
+
+ - 8 - 
+

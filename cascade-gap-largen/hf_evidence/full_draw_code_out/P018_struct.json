@@ -1,0 +1,85 @@
+{
+  "case_id": "P018",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing portfolio (79 strip centers, three malls, a warehouse park — T4) crossed the boundary into UE, but corporate support processes that produce/deliver operations (treasury, HR, IT, tax, financial reporting, SEC compliance, insurance — T5) \"remained at Vornado\" and were not transferred whole, creating a product-vs-process structural mismatch at closing that UE stated it was \"dependent on Vornado to provide.\" gap_56=0: the portfolio-management team, incumbent Retail employees (~100), and portfolio-management department heads moved together with the operations they run, so the operational team/organization aligned coherently (no process-vs-people mismatch). gap_mitigated=yes: the T4/T5 mismatch was contractually absorbed at closing via a two-year Transition Services Agreement (~$3.4M/yr) plus the Separation and Distribution Agreement allocating the shared substrate."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing portfolio (79 strip centers, three malls, warehouse park) crossed together with the incumbent portfolio-management team and VRLP Retail employees who ran those properties; corporate support left behind (treasury, HR, IT, tax, reporting, insurance) is back-office substrate, not the property-level operating processes that produce the product. gap_56=0 because the operational processes that did transfer (Retail employees ~100 and the strip/mall management team under Minutoli/Olson) moved with their people and management at closing; the corporate support processes that remained at Vornado never transferred and were instead bridged by the two-year Transition Services Agreement, so there was no process-without-organization mismatch on transferred T5."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The shopping-center portfolio crossed to UE, but corporate support processes—including treasury, HR, IT, tax, financial reporting, SEC compliance, and insurance—remained at Vornado, documenting a product-versus-process gap at closing. That gap was contractually absorbed through the approximately two-year Transition Services Agreement under which Vornado would provide those interim services. The Retail employees and incumbent portfolio-management team transferred to UE, while the retained support processes continued to be provided by Vornado under the agreement, so no process-versus-organization mismatch is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing portfolio (79 strip centers, three malls, a warehouse park \\u2014 T4) crossed the boundary into UE, but corporate support processes that produce/deliver operations (treasury, HR, IT, tax, financial reporting, SEC compliance, insurance \\u2014 T5) \\\"remained at Vornado\\\" and were not transferred whole, creating a product-vs-process structural mismatch at closing that UE stated it was \\\"dependent on Vornado to provide.\\\" gap_56=0: the portfolio-management team, incumbent Retail employees (~100), and portfolio-management department heads moved together with the operations they run, so the operational team/organization aligned coherently (no process-vs-people mismatch). gap_mitigated=yes: the T4/T5 mismatch was contractually absorbed at closing via a two-year Transition Services Agreement (~$3.4M/yr) plus the Separation and Distribution Agreement allocating the shared substrate.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing portfolio (79 strip centers, three malls, warehouse park) crossed together with the incumbent portfolio-management team and VRLP Retail employees who ran those properties; corporate support left behind (treasury, HR, IT, tax, reporting, insurance) is back-office substrate, not the property-level operating processes that produce the product. gap_56=0 because the operational processes that did transfer (Retail employees ~100 and the strip/mall management team under Minutoli/Olson) moved with their people and management at closing; the corporate support processes that remained at Vornado never transferred and were instead bridged by the two-year Transition Services Agreement, so there was no process-without-organization mismatch on transferred T5.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The shopping-center portfolio crossed to UE, but corporate support processes—including treasury, HR, IT, tax, financial reporting, SEC compliance, and insurance—remained at Vornado, documenting a product-versus-process gap at closing. That gap was contractually absorbed through the approximately two-year Transition Services Agreement under which Vornado would provide those interim services. The Retail employees and incumbent portfolio-management team transferred to UE, while the retained support processes continued to be provided by Vornado under the agreement, so no process-versus-organization mismatch is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

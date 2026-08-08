@@ -39,11 +39,11 @@ with a fixed seed and a documented run command.
 ```
 uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        --with matplotlib==3.10.0 --with pandas==2.2.3 \
-       python [internal path removed]
+       python code/friction_tax_montecarlo.py
 
 uv run --with numpy==2.2.2 --with scipy==1.14.0 --with statsmodels==0.14.4 \
        --with matplotlib==3.10.0 --with pandas==2.2.3 \
-       python [internal path removed]
+       python code/push_pull_regression_sim.py
 ```
 
 Both scripts are fully self-contained: no network calls, no external data,

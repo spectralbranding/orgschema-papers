@@ -1,0 +1,85 @@
+{
+  "case_id": "P271",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that 'there will be no change to management or systems as a result of the Merger' and notes that KWH already managed KWE's real estate portfolio externally prior to the transaction. Because the assets, processes, and management were already aligned and continued unchanged at closing, there is no structural mismatch between the product and its processes (gap_45 = 0) or the processes and the organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states KWE's real estate portfolio became part of KWH's consolidated portfolio at closing 'continuing under the same investment-decision authority that had already managed it externally,' so product and processes crossed together. gap_56 is 0 because the proxy states 'there will be no change to management or systems as a result of the Merger' and that pre-existing KWH leadership, board representation, and Investment Manager authority continued unchanged, with no structural people-vs-process mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "KWE's real estate portfolio became part of KWH's consolidated portfolio at closing while continuing under the same investment-decision authority that had already managed it externally, so no product-process mismatch is documented. The proxy also states that there would be no change to management or systems and describes continuity of the existing leadership team, so no process-organization mismatch is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that 'there will be no change to management or systems as a result of the Merger' and notes that KWH already managed KWE's real estate portfolio externally prior to the transaction. Because the assets, processes, and management were already aligned and continued unchanged at closing, there is no structural mismatch between the product and its processes (gap_45 = 0) or the processes and the organization (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states KWE's real estate portfolio became part of KWH's consolidated portfolio at closing 'continuing under the same investment-decision authority that had already managed it externally,' so product and processes crossed together. gap_56 is 0 because the proxy states 'there will be no change to management or systems as a result of the Merger' and that pre-existing KWH leadership, board representation, and Investment Manager authority continued unchanged, with no structural people-vs-process mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"KWE's real estate portfolio became part of KWH's consolidated portfolio at closing while continuing under the same investment-decision authority that had already managed it externally, so no product-process mismatch is documented. The proxy also states that there would be no change to management or systems and describes continuity of the existing leadership team, so no process-organization mismatch is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

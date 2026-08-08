@@ -1,0 +1,58 @@
+{
+  "case_id": "P186",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net Income attributable to Linde plc was $6,199 million for FY2023",
+      "rationale": "The provided slice documents the post-deal trajectory of Linde plc, showing rising net income and stable sales. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The slice notes some severance in the Engineering segment and Russia-related deconsolidation charges, but no systemic integration failures or business model incompatibilities are reported."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income rose $2.5bn (FY2020) to $6.2bn (FY2023)",
+      "rationale": "The slice documents continued SEC reporting, rising net income through FY2023, and only routine declining merger-related charges (severance in Engineering, GIST sale, equity-method impairment) with no product-line/operations incoherence at the product/process interface, so p4_pathway=0. Process/organization integration is likewise not shown as fracturing: leadership transitioned orderly (Angel Chairman; Lamba CEO from Linde AG/BOC career path) and FY2023 other charges fell to $40M with merger-related language dropped, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net Income attributable to Linde plc was $6,199 million for FY2023\",\n  \"rationale\": \"The provided slice documents the post-deal trajectory of Linde plc, showing rising net income and stable sales. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The slice notes some severance in the Engineering segment and Russia-related deconsolidation charges, but no systemic integration failures or business model incompatibilities are reported.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income rose $2.5bn (FY2020) to $6.2bn (FY2023)\",\n  \"rationale\": \"The slice documents continued SEC reporting, rising net income through FY2023, and only routine declining merger-related charges (severance in Engineering, GIST sale, equity-method impairment) with no product-line/operations incoherence at the product/process interface, so p4_pathway=0. Process/organization integration is likewise not shown as fracturing: leadership transitioned orderly (Angel Chairman; Lamba CEO from Linde AG/BOC career path) and FY2023 other charges fell to $40M with merger-related language dropped, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

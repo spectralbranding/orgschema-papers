@@ -1,0 +1,85 @@
+{
+  "case_id": "P163",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Personalized Imaging and Document Imaging product businesses (T4) were sold to KPP, but the seller continued to operate the businesses (T5) in deferred-closing jurisdictions, creating a structural mismatch at closing (gap_45 = 1). This gap was mitigated by a transitional operating arrangement with true-up payments. There is no evidence that the operational processes transferred without the people/management (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "partial",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice documents that the Personalized Imaging and Document Imaging customer-facing product lines crossed to KPP under the Amended and Restated Stock and Asset Purchase Agreement while at the same closing 'the Company would continue to operate the Business in those deferred-closing jurisdictions' with economic true-ups, a product-vs-process mismatch at closing. gap_56=0 because that transitional arrangement kept operations with the seller's existing organization, and on the reorganized-Kodak side the CEO, CFO, and CAO expressly continued with the operating entity; no process-without-organization structural mismatch is documented. The gap_45 mismatch was contractually absorbed by the deferred-closing and true-up operating arrangement described in the same 8-K."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "partial",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Personalized Imaging and Document Imaging product businesses crossed to KPP, while Kodak continued operating them in deferred-closing jurisdictions until the applicable local transfers, documenting a product-process mismatch at the initial closing (Form 8-K Item 1.01, accession 0000031235-13-000065). That mismatch was contractually bridged through operating covenants and economic true-up payments; no separate process-versus-organization mismatch is documented because the seller retained operation of the deferred businesses rather than transferring their processes without the people running them."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The Personalized Imaging and Document Imaging product businesses (T4) were sold to KPP, but the seller continued to operate the businesses (T5) in deferred-closing jurisdictions, creating a structural mismatch at closing (gap_45 = 1). This gap was mitigated by a transitional operating arrangement with true-up payments. There is no evidence that the operational processes transferred without the people/management (gap_56 = 0).\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"partial\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice documents that the Personalized Imaging and Document Imaging customer-facing product lines crossed to KPP under the Amended and Restated Stock and Asset Purchase Agreement while at the same closing 'the Company would continue to operate the Business in those deferred-closing jurisdictions' with economic true-ups, a product-vs-process mismatch at closing. gap_56=0 because that transitional arrangement kept operations with the seller's existing organization, and on the reorganized-Kodak side the CEO, CFO, and CAO expressly continued with the operating entity; no process-without-organization structural mismatch is documented. The gap_45 mismatch was contractually absorbed by the deferred-closing and true-up operating arrangement described in the same 8-K.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"partial\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Personalized Imaging and Document Imaging product businesses crossed to KPP, while Kodak continued operating them in deferred-closing jurisdictions until the applicable local transfers, documenting a product-process mismatch at the initial closing (Form 8-K Item 1.01, accession 0000031235-13-000065). That mismatch was contractually bridged through operating covenants and economic true-up payments; no separate process-versus-organization mismatch is documented because the seller retained operation of the deferred businesses rather than transferring their processes without the people running them.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

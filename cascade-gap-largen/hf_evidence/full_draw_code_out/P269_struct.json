@@ -1,0 +1,85 @@
+{
+  "case_id": "P269",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "swap",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "uncertain",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the acquired product (real estate portfolio plus third-party asset-management contracts) was structured to \"cross together with its producing processes and staff via a newly formed taxable REIT subsidiary\" — the Property Manager entity, certain employees, and the investment-management agreements were all transferred to the Manager, so product (T4) and its producing processes (T5) moved coherently together (gap_45=0). Likewise, the operational staff/employees and management team moved alongside the processes into the Manager, with PECO I acquiring employees it had not previously had, so T5 and the organization/people (T6) transferred together (gap_56=0). The retention risk for key employees and the residual PELP legacy layer are noted but the deal structured product, process, and people to move as one bundle at closing; because no closing-structure gap is documented, gap_mitigated is NA (the Services Agreement bridges the retained residual, not a transfer gap in the acquired bundle). T1 owner intent continues (Edison and management keep roles and hold equity on both sides), converting external advisory into self-management, hence T2 swap and T3 whole transfer of the Contributed Companies as subsidiaries."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the operational staff and management contracts that produced and delivered the asset-management product were structured to move together with the product itself into a newly formed taxable REIT subsidiary. Therefore, there is no structural mismatch between the product (T4) and processes (T5), nor between the processes (T5) and the organization/people (T6) at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the contributed real estate, management contracts, Property Manager entity, operational staff, and certain employees were structured to move together into PECO I OP through the newly formed Manager, so no product-versus-process gap is documented at closing. It also states that the employees and management contracts producing the asset-management services transferred alongside those operations; employee-retention risk did not itself establish a closing mismatch between processes and organization. Retained PELP assets and legacy funds remained under PELP's operation and were supported by a Services Agreement, rather than being customer-facing assets transferred without their operating substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"uncertain\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the acquired product (real estate portfolio plus third-party asset-management contracts) was structured to \\\"cross together with its producing processes and staff via a newly formed taxable REIT subsidiary\\\" \\u2014 the Property Manager entity, certain employees, and the investment-management agreements were all transferred to the Manager, so product (T4) and its producing processes (T5) moved coherently together (gap_45=0). Likewise, the operational staff/employees and management team moved alongside the processes into the Manager, with PECO I acquiring employees it had not previously had, so T5 and the organization/people (T6) transferred together (gap_56=0). The retention risk for key employees and the residual PELP legacy layer are noted but the deal structured product, process, and people to move as one bundle at closing; because no closing-structure gap is documented, gap_mitigated is NA (the Services Agreement bridges the retained residual, not a transfer gap in the acquired bundle). T1 owner intent continues (Edison and management keep roles and hold equity on both sides), converting external advisory into self-management, hence T2 swap and T3 whole transfer of the Contributed Companies as subsidiaries.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that the operational staff and management contracts that produced and delivered the asset-management product were structured to move together with the product itself into a newly formed taxable REIT subsidiary. Therefore, there is no structural mismatch between the product (T4) and processes (T5), nor between the processes (T5) and the organization/people (T6) at closing.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the contributed real estate, management contracts, Property Manager entity, operational staff, and certain employees were structured to move together into PECO I OP through the newly formed Manager, so no product-versus-process gap is documented at closing. It also states that the employees and management contracts producing the asset-management services transferred alongside those operations; employee-retention risk did not itself establish a closing mismatch between processes and organization. Retained PELP assets and legacy funds remained under PELP's operation and were supported by a Services Agreement, rather than being customer-facing assets transferred without their operating substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

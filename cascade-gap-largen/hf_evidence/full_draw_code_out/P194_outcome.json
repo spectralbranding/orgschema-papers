@@ -1,0 +1,58 @@
+{
+  "case_id": "P194",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "$3.2bn goodwill impairment (Q2 2020); segment FY2020 net sales -26%, operating profit -67% vs FY2019, then recovery to $20,597m sales / 11.4% margin by FY2022",
+      "rationale": "The slice attributes the FY2020 sales/profit decline and $3.2bn goodwill impairment principally to the COVID-19 pandemic's effect on commercial-aerospace flight hours, OEM deliveries, and aftermarket demand, plus restructuring tied to the separate Raytheon Merger — not to any misalignment of the acquired product line with operating processes, so no product/process disruption is documented (p4=0). No integration fracture between operations and the acquired organization's people/management/culture is documented; the disruptions cited are exogenous demand shocks and merger-related restructuring, so p5=0. The segment recovered through FY2022 (net sales $20,597m, operating margin 11.4%), and no evidence of business-model incompatibility (t2=0); the slice discloses nothing about the controlling-intent archetype's realized coherence (t1=uncertain)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$3.2bn Collins Aerospace goodwill impairment (Q2 2020)",
+      "rationale": "The slice attributes the Collins Aerospace segment's FY2020 net-sales (−26%) and operating-profit (−67%) collapse, plus the $3.2bn goodwill impairment, to COVID-19 commercial-aerospace demand shocks and to restructuring tied to the concurrent Raytheon Merger, not to any realized inability to align acquired products with operating processes. No evidence is given of operations-versus-organization/culture fracture over the 3–5-year horizon; the segment is described as continuing and recovering through FY2022 on air-traffic rebound. Absence of documented product/process or process/organization disruption therefore codes both pathways 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$3.2 billion goodwill impairment in Q2 2020",
+      "rationale": "No realized product/process-interface disruption is documented; the FY2020 sales and profit declines were attributed principally to pandemic-driven reductions in commercial aerospace demand, followed by recovery through FY2022. No process/organization fracture is documented; although restructuring at Collins Aerospace contributed to 2020 results, the filing ties those actions to the subsequent Raytheon Merger and does not describe operations breaking against people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"$3.2bn goodwill impairment (Q2 2020); segment FY2020 net sales -26%, operating profit -67% vs FY2019, then recovery to $20,597m sales / 11.4% margin by FY2022\", \"rationale\": \"The slice attributes the FY2020 sales/profit decline and $3.2bn goodwill impairment principally to the COVID-19 pandemic's effect on commercial-aerospace flight hours, OEM deliveries, and aftermarket demand, plus restructuring tied to the separate Raytheon Merger \\u2014 not to any misalignment of the acquired product line with operating processes, so no product/process disruption is documented (p4=0). No integration fracture between operations and the acquired organization's people/management/culture is documented; the disruptions cited are exogenous demand shocks and merger-related restructuring, so p5=0. The segment recovered through FY2022 (net sales $20,597m, operating margin 11.4%), and no evidence of business-model incompatibility (t2=0); the slice discloses nothing about the controlling-intent archetype's realized coherence (t1=uncertain).\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$3.2bn Collins Aerospace goodwill impairment (Q2 2020)\",\n  \"rationale\": \"The slice attributes the Collins Aerospace segment's FY2020 net-sales (−26%) and operating-profit (−67%) collapse, plus the $3.2bn goodwill impairment, to COVID-19 commercial-aerospace demand shocks and to restructuring tied to the concurrent Raytheon Merger, not to any realized inability to align acquired products with operating processes. No evidence is given of operations-versus-organization/culture fracture over the 3–5-year horizon; the segment is described as continuing and recovering through FY2022 on air-traffic rebound. Absence of documented product/process or process/organization disruption therefore codes both pathways 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$3.2 billion goodwill impairment in Q2 2020\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; the FY2020 sales and profit declines were attributed principally to pandemic-driven reductions in commercial aerospace demand, followed by recovery through FY2022. No process/organization fracture is documented; although restructuring at Collins Aerospace contributed to 2020 results, the filing ties those actions to the subsequent Raytheon Merger and does not describe operations breaking against people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

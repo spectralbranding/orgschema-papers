@@ -1,0 +1,58 @@
+{
+  "case_id": "P086",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "bought out remaining 49% for ~$16.7bn ~26 months after closing; NBCU OIBDA +15.2% to $4.7bn in 2013; no goodwill impairment",
+      "rationale": "The slice documents a positive realized trajectory with no product/process disruption: NBCUniversal operating income before D&A grew 15.2% to $4.7 billion in 2013 and consolidated revenue and net income grew each year 2011-2013, with no reported goodwill impairment—so p4_pathway is 0. Nothing in the slice describes any operations-versus-people/management/culture fracture; instead Comcast accelerated to full ownership by buying out GE's 49% interest ahead of schedule in March 2013, indicating no documented process/organization breakdown—so p5_pathway is 0. The only governance item (relinquishing Hulu voting rights and board seat) was a regulatory condition, not an internal integration fracture, and no archetype incoherence or business-model incompatibility is documented."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "GE 49% bought out for ~$16.7bn; no goodwill impairment; rev/NI grew",
+      "rationale": "The slice documents rising consolidated revenue and net income each year 2011–2013, a 15.2% rise in NBCUniversal operating income before D&A to $4.7bn in 2013, and no impairment of the $10.9bn NBCU-related goodwill, with no mention of product-line or operating-process misalignment; accordingly p4_pathway is 0. Governance/organizational facts are limited to the regulatory Hulu board-seat relinquishment and a post-redemption tax-rate change, with no documented fracture between operations and people/management/culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"bought out remaining 49% for ~$16.7bn ~26 months after closing; NBCU OIBDA +15.2% to $4.7bn in 2013; no goodwill impairment\", \"rationale\": \"The slice documents a positive realized trajectory with no product/process disruption: NBCUniversal operating income before D&A grew 15.2% to $4.7 billion in 2013 and consolidated revenue and net income grew each year 2011-2013, with no reported goodwill impairment\\u2014so p4_pathway is 0. Nothing in the slice describes any operations-versus-people/management/culture fracture; instead Comcast accelerated to full ownership by buying out GE's 49% interest ahead of schedule in March 2013, indicating no documented process/organization breakdown\\u2014so p5_pathway is 0. The only governance item (relinquishing Hulu voting rights and board seat) was a regulatory condition, not an internal integration fracture, and no archetype incoherence or business-model incompatibility is documented.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"GE 49% bought out for ~$16.7bn; no goodwill impairment; rev/NI grew\",\n  \"rationale\": \"The slice documents rising consolidated revenue and net income each year 2011–2013, a 15.2% rise in NBCUniversal operating income before D&A to $4.7bn in 2013, and no impairment of the $10.9bn NBCU-related goodwill, with no mention of product-line or operating-process misalignment; accordingly p4_pathway is 0. Governance/organizational facts are limited to the regulatory Hulu board-seat relinquishment and a post-redemption tax-rate change, with no documented fracture between operations and people/management/culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,77 @@
+Tier-Bundle Algebra n=30 confirmatory analysis (Proposition 6)
+======================================================================
+scipy 1.18.0
+H6-eligible cases coded: 26
+
+  H6a phi4->phi5 (alpha = 0.025):
+                 fail=YES  fail=NO
+    gap=YES           2        1
+    gap=NO            0       23
+    Fisher's exact p = 0.0092   Cramer's V = 0.799
+    P(fail | gap) = 0.667  95% Clopper-Pearson CI [0.094, 0.992]
+    reject independence at alpha: True
+
+  H6b phi5->phi6 (alpha = 0.025):
+                 fail=YES  fail=NO
+    gap=YES           1        0
+    gap=NO            0       25
+    Fisher's exact p = 0.0385   Cramer's V = 1.000
+    P(fail | gap) = 1.000  95% Clopper-Pearson CI [0.025, 1.000]
+    reject independence at alpha: False
+
+  H6c aggregate (alpha = 0.05):
+                 fail=YES  fail=NO
+    gap=YES           2        1
+    gap=NO            0       23
+    Fisher's exact p = 0.0092   Cramer's V = 0.799
+    P(fail | gap) = 0.667  95% Clopper-Pearson CI [0.094, 0.992]
+    reject independence at alpha: True
+
+Pre-registered verdict:
+  P6 SUPPORTED (>=1 of H6a/H6b at alpha=.025 with V>=.30): True
+  P6 FALSIFIED at n=30 (all three p >= .10):              False
+
+Secondary stratification (Amendment 3): unmanaged-gap subset
+----------------------------------------------------------------------
+  Managed-gap cases recoded to non-gap for this view: 1 (gap_mitigated == 'yes')
+  H6a phi4->phi5 (unmanaged) (alpha = 0.025):
+                 fail=YES  fail=NO
+    gap=YES           1        1
+    gap=NO            1       23
+    Fisher's exact p = 0.1508   Cramer's V = 0.458
+    P(fail | gap) = 0.500  95% Clopper-Pearson CI [0.013, 0.987]
+    reject independence at alpha: False
+
+  H6c aggregate (unmanaged) (alpha = 0.05):
+                 fail=YES  fail=NO
+    gap=YES           1        1
+    gap=NO            1       23
+    Fisher's exact p = 0.1508   Cramer's V = 0.458
+    P(fail | gap) = 0.500  95% Clopper-Pearson CI [0.013, 0.987]
+    reject independence at alpha: False
+
+
+Necessary-condition + safe-harbor re-analysis (EXPLORATORY; Fork E)
+======================================================================
+  POST-HOC / EXPLORATORY on n=26 (NOT pre-registered; the registered test
+  above tested sufficiency). Method framing: Necessary Condition Analysis
+  (Dul 2016, Organizational Research Methods 19(1):10-52).
+
+  gap_any necessary for p45_any (n = 26):
+                 fail=YES  fail=NO
+    gap=YES           2        1
+    gap=NO            0       23
+    SAFE HARBOR   P(fail | no gap) = 0.000  (0/23)  95% CI [0.000, 0.148]
+    NECESSITY     P(gap | fail)   = 1.000  (2/2)  [consistency of the necessary condition]
+    SUFFICIENCY   P(fail | gap)   = 0.667  (2/3)  [the WEAK direction — stated explicitly]
+    NCA ceiling   d = 0.250  [dichotomous CE-FDH; .25 = Dul's 'medium' band when the no-gap/failure cell is empty]
+
+  gap_45 necessary for p4_pathway (n = 26):
+                 fail=YES  fail=NO
+    gap=YES           2        1
+    gap=NO            0       23
+    SAFE HARBOR   P(fail | no gap) = 0.000  (0/23)  95% CI [0.000, 0.148]
+    NECESSITY     P(gap | fail)   = 1.000  (2/2)  [consistency of the necessary condition]
+    SUFFICIENCY   P(fail | gap)   = 0.667  (2/3)  [the WEAK direction — stated explicitly]
+    NCA ceiling   d = 0.250  [dichotomous CE-FDH; .25 = Dul's 'medium' band when the no-gap/failure cell is empty]
+

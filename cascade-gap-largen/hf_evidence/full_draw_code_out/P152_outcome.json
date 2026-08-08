@@ -1,0 +1,58 @@
+{
+  "case_id": "P152",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No divestiture; acquired product retained in Salix segment (revenue +1% to $2,090M, profit -$4M to $1,489M in FY2022)",
+      "rationale": "The slice documents that the acquired product (Trulance) was retained inside the acquirer's Salix operating segment and was cited as a positive contributor to product-sales movement, with no documented product/process incoherence — the product aligned with segment operations rather than breaking against them (p4=0). No documented operations-versus-organization/people/culture fracture appears anywhere in the realized record; the only frictions noted are generic-entry litigation and small revenue share, which are market/competitive facts, not process/organization fractures (p5=0). No evidence of controlling-intent archetype incoherence or business-model incompatibility is documented in the window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "retained (not divested) inside the acquirer's Salix segment",
+      "rationale": "The slice indicates the acquired product (Trulance) was retained and contributed positively to sales within the Salix segment. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) over the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; Trulance retained in Salix",
+      "rationale": "The FY2022 10-K record shows Trulance retained inside the Salix segment with higher gross product sales cited as a positive contributor to segment sales movement, and no impairment or product-line/operations incoherence is documented, so p4_pathway is 0. No fracture at the process/organization interface (operations vs people/management/culture) is documented over the window, so p5_pathway is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"No divestiture; acquired product retained in Salix segment (revenue +1% to $2,090M, profit -$4M to $1,489M in FY2022)\", \"rationale\": \"The slice documents that the acquired product (Trulance) was retained inside the acquirer's Salix operating segment and was cited as a positive contributor to product-sales movement, with no documented product/process incoherence \\u2014 the product aligned with segment operations rather than breaking against them (p4=0). No documented operations-versus-organization/people/culture fracture appears anywhere in the realized record; the only frictions noted are generic-entry litigation and small revenue share, which are market/competitive facts, not process/organization fractures (p5=0). No evidence of controlling-intent archetype incoherence or business-model incompatibility is documented in the window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"retained (not divested) inside the acquirer's Salix segment\",\n  \"rationale\": \"The slice indicates the acquired product (Trulance) was retained and contributed positively to sales within the Salix segment. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) over the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; Trulance retained in Salix\",\n  \"rationale\": \"The FY2022 10-K record shows Trulance retained inside the Salix segment with higher gross product sales cited as a positive contributor to segment sales movement, and no impairment or product-line/operations incoherence is documented, so p4_pathway is 0. No fracture at the process/organization interface (operations vs people/management/culture) is documented over the window, so p5_pathway is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

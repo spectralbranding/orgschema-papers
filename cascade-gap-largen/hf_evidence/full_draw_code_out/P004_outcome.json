@@ -1,0 +1,58 @@
+{
+  "case_id": "P004",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2012 $946.5M patent-sale gain; net income $(782.5)M→$13.1M→$1,048.4M→$92.4M (2010-13); Patch fully impaired ($17.5M) and divested into Hale Global JV by early 2014",
+      "rationale": "p4=1: the slice documents realized product/operations incoherence over time — the Patch hyperlocal-content product \"could not be sustained within the operation,\" triggering a $17.5M full goodwill impairment and 2013 restructuring \"to align our organizational structure with our strategy, including the restructuring of our Patch operations,\" culminating in Patch's divestiture into a Hale Global-controlled JV; the subscription-access product also eroded steadily (3.3M→2.5M subscribers). p5=uncertain: the slice references organizational-structure realignment but does not document a specific fracture at the operations-vs-people/management/culture interface. t1 and t2=uncertain: this is a post-separation single-company outcome slice with no documented evidence about a controlling-intent archetype or reconciliation of two business models."
+    },
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income (loss) of $(782.5)M (2010) to $92.4M (2013) with full write-off and divestiture of Patch",
+      "rationale": "The slice documents product/process disruption (p4) as the Patch hyperlocal-content product could not be sustained within the operation, leading to a $17.5 million goodwill impairment and its contribution to a joint venture. There is no documented evidence of a fracture specifically at the process/organization interface (p5)."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "NI $(782.5)M (2010)→$92.4M (2013); $1.41bn goodwill impairment; Patch fully impaired and JV-divested",
+      "rationale": "p4=1 because the slice documents product/operations incoherence: the Patch hyperlocal-content product 'could not be sustained within the operation,' triggering a $17.5M full goodwill impairment, 2013 restructuring 'of our Patch operations,' and contribution of Patch into a Hale Global-controlled JV with AOL retaining only a minority stake; subscription-access product erosion (subscribers 3.3M→2.5M; revenues $803.2M→$650.1M) is also recorded. p5=0 because the slice records no fracture at the process/organization interface (no operations-vs-people/management/culture breakdown); the noted restructuring is framed only as aligning structure with strategy around Patch, not as organizational integration failure."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2012 $946.5M patent-sale gain; net income $(782.5)M\\u2192$13.1M\\u2192$1,048.4M\\u2192$92.4M (2010-13); Patch fully impaired ($17.5M) and divested into Hale Global JV by early 2014\", \"rationale\": \"p4=1: the slice documents realized product/operations incoherence over time \\u2014 the Patch hyperlocal-content product \\\"could not be sustained within the operation,\\\" triggering a $17.5M full goodwill impairment and 2013 restructuring \\\"to align our organizational structure with our strategy, including the restructuring of our Patch operations,\\\" culminating in Patch's divestiture into a Hale Global-controlled JV; the subscription-access product also eroded steadily (3.3M\\u21922.5M subscribers). p5=uncertain: the slice references organizational-structure realignment but does not document a specific fracture at the operations-vs-people/management/culture interface. t1 and t2=uncertain: this is a post-separation single-company outcome slice with no documented evidence about a controlling-intent archetype or reconciliation of two business models.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income (loss) of $(782.5)M (2010) to $92.4M (2013) with full write-off and divestiture of Patch\",\n  \"rationale\": \"The slice documents product/process disruption (p4) as the Patch hyperlocal-content product could not be sustained within the operation, leading to a $17.5 million goodwill impairment and its contribution to a joint venture. There is no documented evidence of a fracture specifically at the process/organization interface (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"NI $(782.5)M (2010)→$92.4M (2013); $1.41bn goodwill impairment; Patch fully impaired and JV-divested\",\n  \"rationale\": \"p4=1 because the slice documents product/operations incoherence: the Patch hyperlocal-content product 'could not be sustained within the operation,' triggering a $17.5M full goodwill impairment, 2013 restructuring 'of our Patch operations,' and contribution of Patch into a Hale Global-controlled JV with AOL retaining only a minority stake; subscription-access product erosion (subscribers 3.3M→2.5M; revenues $803.2M→$650.1M) is also recorded. p5=0 because the slice records no fracture at the process/organization interface (no operations-vs-people/management/culture breakdown); the noted restructuring is framed only as aligning structure with strategy around Patch, not as organizational integration failure.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

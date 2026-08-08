@@ -1,0 +1,58 @@
+{
+  "case_id": "P005",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "net income fell $52.7M (2016) to $15.0M (2018); revenue down 7% to $2.9B; lost independence, became subsidiary Nov 2019",
+      "rationale": "p4=1: the slice documents realized product/operations incoherence over the window — print advertising remained challenged against the range of digital products/platforms and large digital inventory while total revenue declined year over year and the company struggled to shift its mix toward digital products (digital only 36% of revenue). p5=1: the slice documents sustained operations/organization fracture via repeated restructuring costs ($67.9M in 2018, $44.3M in 2017, $45.8M in 2016) explicitly aimed to \"right size our employee base, consolidate facilities, and improve operations,\" plus recurring asset-impairment charges. t1 and t2 are uncertain because the slice contains no documented evidence about a controlling-intent archetype or reconciliation of two business models over time."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income fell from $52.7 million (2016) to $15.0 million (2018); acquired in Nov 2019",
+      "rationale": "The slice documents a shift toward digital products and declining print revenues, but does not describe a specific product/process integration failure (p4_pathway = 0). However, it explicitly documents sustained restructuring costs ($67.9M in 2018, $44.3M in 2017, $45.8M in 2016) to 'right size our employee base, consolidate facilities, and improve operations,' indicating disruption at the operations/organization interface (p5_pathway = 1)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "lost independence Nov 2019; NI $52.7M→$15.0M, rev -7%",
+      "rationale": "p4 is 0 because the slice’s “product/operations” material only records industry market pressure (print advertising softness amid digital inventory/choices and a revenue-mix shift toward digital), not realized product-line/operating-process incoherence. p5 is 0 because the documented restructuring costs ($67.9M in 2018) and asset impairments to “right size our employee base, consolidate facilities, and improve operations” are cost-cutting/right-sizing actions, not a realized fracture of operations against people/management/culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"net income fell $52.7M (2016) to $15.0M (2018); revenue down 7% to $2.9B; lost independence, became subsidiary Nov 2019\", \"rationale\": \"p4=1: the slice documents realized product/operations incoherence over the window \\u2014 print advertising remained challenged against the range of digital products/platforms and large digital inventory while total revenue declined year over year and the company struggled to shift its mix toward digital products (digital only 36% of revenue). p5=1: the slice documents sustained operations/organization fracture via repeated restructuring costs ($67.9M in 2018, $44.3M in 2017, $45.8M in 2016) explicitly aimed to \\\"right size our employee base, consolidate facilities, and improve operations,\\\" plus recurring asset-impairment charges. t1 and t2 are uncertain because the slice contains no documented evidence about a controlling-intent archetype or reconciliation of two business models over time.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"1\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"net income fell from $52.7 million (2016) to $15.0 million (2018); acquired in Nov 2019\",\n\"rationale\": \"The slice documents a shift toward digital products and declining print revenues, but does not describe a specific product/process integration failure (p4_pathway = 0). However, it explicitly documents sustained restructuring costs ($67.9M in 2018, $44.3M in 2017, $45.8M in 2016) to 'right size our employee base, consolidate facilities, and improve operations,' indicating disruption at the operations/organization interface (p5_pathway = 1).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"lost independence Nov 2019; NI $52.7M→$15.0M, rev -7%\",\n  \"rationale\": \"p4 is 0 because the slice’s “product/operations” material only records industry market pressure (print advertising softness amid digital inventory/choices and a revenue-mix shift toward digital), not realized product-line/operating-process incoherence. p5 is 0 because the documented restructuring costs ($67.9M in 2018) and asset impairments to “right size our employee base, consolidate facilities, and improve operations” are cost-cutting/right-sizing actions, not a realized fracture of operations against people/management/culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "1",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

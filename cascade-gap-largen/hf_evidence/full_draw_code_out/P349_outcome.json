@@ -1,0 +1,58 @@
+{
+  "case_id": "P349",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$300M adverse-development reinsurance treaty fully exhausted by YE2022; partial international (Belgian) divestiture Dec 2021 (~$20M); S&P upgrade to A+ Aug 2022",
+      "rationale": "The realized record shows the acquired insurers continued underwriting under the \"Navigators\" brand within the acquirer's global specialty unit, with documented cross-selling of the acquired product lines to the acquirer's commercial customers — no documented product/operations incoherence (p4=0). Likewise, no documented operations-vs-people/management/culture fracture appears; ratings were upgraded (S&P to A+ in Aug 2022) and operations persisted, indicating no realized process/organization rupture (p5=0). The only adverse signal is cumulative pre-acquisition (2018-and-prior) reserve development that exhausted the $300M ADC treaty limit, plus a partial divestiture of Belgian international operations — neither of which documents an interface disruption of the coded pathway types."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that the acquired business was integrated into the acquirer's global specialty business unit and successfully cross-sold products. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The slice does not provide a standalone performance metric for the acquired business."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Navigators ADC $300M limit exhausted YE2022; partial EU ops divested ~$20M",
+      "rationale": "The slice documents continued marketing under the Navigators brand within the acquirer's global specialty unit, successful cross-selling of acquired product lines, and an S&P upgrade of the acquired subsidiaries to A+, with no realized product/process interface incoherence described; p4 is therefore 0. No evidence is given of operations-versus-organization/culture fracture over time, so p5 is 0. Adverse reserve development exhausting the pre-acquisition ADC treaty and a small Dec-2021 sale of Belgian holdings are disclosed but are not framed as product/process or process/organization pathway disruptions."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"$300M adverse-development reinsurance treaty fully exhausted by YE2022; partial international (Belgian) divestiture Dec 2021 (~$20M); S&P upgrade to A+ Aug 2022\", \"rationale\": \"The realized record shows the acquired insurers continued underwriting under the \\\"Navigators\\\" brand within the acquirer's global specialty unit, with documented cross-selling of the acquired product lines to the acquirer's commercial customers \\u2014 no documented product/operations incoherence (p4=0). Likewise, no documented operations-vs-people/management/culture fracture appears; ratings were upgraded (S&P to A+ in Aug 2022) and operations persisted, indicating no realized process/organization rupture (p5=0). The only adverse signal is cumulative pre-acquisition (2018-and-prior) reserve development that exhausted the $300M ADC treaty limit, plus a partial divestiture of Belgian international operations \\u2014 neither of which documents an interface disruption of the coded pathway types.\"}",
+    "gemini": "[\n  {\n    \"p4_pathway\": \"0\",\n    \"p5_pathway\": \"0\",\n    \"t1_archetype\": \"0\",\n    \"t2_model\": \"0\",\n    \"performance_metric\": \"not documented\",\n    \"rationale\": \"The slice documents that the acquired business was integrated into the acquirer's global specialty business unit and successfully cross-sold products. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The slice does not provide a standalone performance metric for the acquired business.\"\n  }\n]",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Navigators ADC $300M limit exhausted YE2022; partial EU ops divested ~$20M\",\n  \"rationale\": \"The slice documents continued marketing under the Navigators brand within the acquirer's global specialty unit, successful cross-selling of acquired product lines, and an S&P upgrade of the acquired subsidiaries to A+, with no realized product/process interface incoherence described; p4 is therefore 0. No evidence is given of operations-versus-organization/culture fracture over time, so p5 is 0. Adverse reserve development exhausting the pre-acquisition ADC treaty and a small Dec-2021 sale of Belgian holdings are disclosed but are not framed as product/process or process/organization pathway disruptions.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

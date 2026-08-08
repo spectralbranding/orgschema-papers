@@ -1,0 +1,85 @@
+{
+  "case_id": "P085",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the customer-facing product (T4) and the operating/management substrate (T5 and T6) that produces and delivers it are both folded into Verizon's own segment structure. Therefore, there is no structural mismatch between the product, operations, and organization."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the customer-facing product (voice, data, and equipment under the Verizon Wireless brand) and the operating/management substrate that produces and delivers it are both folded into Verizon's own segment structure rather than run at arm's length, so T4 and T5 are aligned together at closing (gap_45=0). The same passage treats the operating and management substrate as a single folded unit inside the segment, so T5 and T6 likewise move together with no documented structural mismatch at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the customer-facing voice, data, and equipment offering and the operating/management substrate producing and delivering it were both folded into Verizon's segment structure, so no product-process mismatch at closing is documented [SRC: SEC accession 0001193125-12-077846, Form 10-K (FY2011), Item 7]. It also describes the operating and management substrate as aligned within that same segment structure rather than separated in an arm's-length affiliate, so no process-organization mismatch at closing is documented [SRC: SEC accession 0001193125-12-077846, Form 10-K (FY2011), Item 7]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that the customer-facing product (T4) and the operating/management substrate (T5 and T6) that produces and delivers it are both folded into Verizon's own segment structure. Therefore, there is no structural mismatch between the product, operations, and organization.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the customer-facing product (voice, data, and equipment under the Verizon Wireless brand) and the operating/management substrate that produces and delivers it are both folded into Verizon's own segment structure rather than run at arm's length, so T4 and T5 are aligned together at closing (gap_45=0). The same passage treats the operating and management substrate as a single folded unit inside the segment, so T5 and T6 likewise move together with no documented structural mismatch at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the customer-facing voice, data, and equipment offering and the operating/management substrate producing and delivering it were both folded into Verizon's segment structure, so no product-process mismatch at closing is documented [SRC: SEC accession 0001193125-12-077846, Form 10-K (FY2011), Item 7]. It also describes the operating and management substrate as aligned within that same segment structure rather than separated in an arm's-length affiliate, so no process-organization mismatch at closing is documented [SRC: SEC accession 0001193125-12-077846, Form 10-K (FY2011), Item 7].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

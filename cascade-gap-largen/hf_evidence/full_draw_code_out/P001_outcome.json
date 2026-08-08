@@ -1,0 +1,58 @@
+{
+  "case_id": "P001",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "distributed 80.1% of Vontier on 2020-10-09; continuing-ops net earnings $1,452.2M in 2020 (incl. $1,119.2M unrealized gain)",
+      "rationale": "The slice documents a going concern with rising continuing-operations sales ($3,800.4M in 2018 to $4,634.4M in 2020) and no goodwill impairment for continuing operations across 2018–2020, providing no evidence of product/process interface disruption (p4=0). It likewise records no operations-versus-organization fracture; the only structural event was a further pro rata spin-off of Vontier and the sole impairment ($85.3M, Telematics) fell within the divested/discontinued business, so no realized process/organization break is documented (p5=0). No evidence of controlling-intent archetype incoherence or business-model incompatibility appears in the realized record."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net earnings from continuing operations of $1,452.2 million in 2020",
+      "rationale": "The slice documents an $85.3 million goodwill impairment in the Telematics reporting unit (within discontinued operations), but does not attribute this to product/process integration issues (p4_pathway). There is no documented evidence of process/organization fracture or cultural clashes over time (p5_pathway)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2020 continuing-operations net earnings of $1,452.2 million, including a $1,119.2 million unrealized gain",
+      "rationale": "No realized product/process-interface disruption is documented; continuing-operations sales rose from $3,800.4 million in 2018 to $4,634.4 million in 2020, and no continuing-operations goodwill impairment was recorded during 2018–2020. No operations-versus-organization integration fracture is documented; the reported 80.1% Vontier distribution and $85.3 million Telematics impairment establish divestiture and impairment outcomes but are not attributed to people, management, or culture problems."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"distributed 80.1% of Vontier on 2020-10-09; continuing-ops net earnings $1,452.2M in 2020 (incl. $1,119.2M unrealized gain)\", \"rationale\": \"The slice documents a going concern with rising continuing-operations sales ($3,800.4M in 2018 to $4,634.4M in 2020) and no goodwill impairment for continuing operations across 2018\\u20132020, providing no evidence of product/process interface disruption (p4=0). It likewise records no operations-versus-organization fracture; the only structural event was a further pro rata spin-off of Vontier and the sole impairment ($85.3M, Telematics) fell within the divested/discontinued business, so no realized process/organization break is documented (p5=0). No evidence of controlling-intent archetype incoherence or business-model incompatibility appears in the realized record.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net earnings from continuing operations of $1,452.2 million in 2020\",\n  \"rationale\": \"The slice documents an $85.3 million goodwill impairment in the Telematics reporting unit (within discontinued operations), but does not attribute this to product/process integration issues (p4_pathway). There is no documented evidence of process/organization fracture or cultural clashes over time (p5_pathway).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2020 continuing-operations net earnings of $1,452.2 million, including a $1,119.2 million unrealized gain\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; continuing-operations sales rose from $3,800.4 million in 2018 to $4,634.4 million in 2020, and no continuing-operations goodwill impairment was recorded during 2018–2020. No operations-versus-organization integration fracture is documented; the reported 80.1% Vontier distribution and $85.3 million Telematics impairment establish divestiture and impairment outcomes but are not attributed to people, management, or culture problems.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

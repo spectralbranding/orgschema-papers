@@ -1,0 +1,58 @@
+{
+  "case_id": "P277",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "operating properties declined 48 (FY2018) to 20 (FY2021); one hotel sold Jan 2020; $8.4M loss on change in control",
+      "rationale": "The acquired real estate was folded into W. P. Carey's existing Real Estate segment with no documented product/process misalignment; the operating-property count decline and reduced hotel occupancy are attributed by the filing to the COVID-19 pandemic \"rather than to the transaction itself,\" so no realized product/process incoherence is documented (p4=0). No evidence of any operations-versus-people/culture/management fracture appears in the slice — the entity deregistered within days and integration proceeded without disclosed organizational conflict (p5=0). The slice discloses no controlling-intent archetype details, warranting \"uncertain\" for t1, and shows no documented business-model incompatibility, warranting t2=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "operating-property count declined from 48 to 20",
+      "rationale": "The evidence slice does not document any disruption at the product/process interface or fracture at the process/organization interface. The acquired properties were smoothly consolidated into the acquirer's Real Estate segment, with the only noted operational changes being a reduction in operating properties and pandemic-related occupancy declines, neither of which indicate integration friction."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Operating-property count declined from 48 in 2018 to 20 in 2021'}",
+      "rationale": "{'type': 'string', 'enum': \"The acquired properties were consolidated into W. P. Carey's Real Estate segment, and the traceable operating-property count declined from 48 at year-end 2018 to 20 at year-end 2021. However, the slice documents no realized product/process-interface disruption, so p4 is 0. It likewise reports no operational breakdown attributable to people, management, or culture; the remaining hotel's reduced occupancy was expressly attributed to the COVID-19 pandemic, so p5 is 0.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"operating properties declined 48 (FY2018) to 20 (FY2021); one hotel sold Jan 2020; $8.4M loss on change in control\", \"rationale\": \"The acquired real estate was folded into W. P. Carey's existing Real Estate segment with no documented product/process misalignment; the operating-property count decline and reduced hotel occupancy are attributed by the filing to the COVID-19 pandemic \\\"rather than to the transaction itself,\\\" so no realized product/process incoherence is documented (p4=0). No evidence of any operations-versus-people/culture/management fracture appears in the slice \\u2014 the entity deregistered within days and integration proceeded without disclosed organizational conflict (p5=0). The slice discloses no controlling-intent archetype details, warranting \\\"uncertain\\\" for t1, and shows no documented business-model incompatibility, warranting t2=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"operating-property count declined from 48 to 20\",\n  \"rationale\": \"The evidence slice does not document any disruption at the product/process interface or fracture at the process/organization interface. The acquired properties were smoothly consolidated into the acquirer's Real Estate segment, with the only noted operational changes being a reduction in operating properties and pandemic-related occupancy declines, neither of which indicate integration friction.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Operating-property count declined from 48 in 2018 to 20 in 2021\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The acquired properties were consolidated into W. P. Carey's Real Estate segment, and the traceable operating-property count declined from 48 at year-end 2018 to 20 at year-end 2021. However, the slice documents no realized product/process-interface disruption, so p4 is 0. It likewise reports no operational breakdown attributable to people, management, or culture; the remaining hotel's reduced occupancy was expressly attributed to the COVID-19 pandemic, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

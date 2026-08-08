@@ -1,0 +1,58 @@
+{
+  "case_id": "P217",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice indicates that IDT was deregistered shortly after the merger and its acquirer, Renesas Electronics, does not file SEC reports. No primary sources were found detailing the post-deal trajectory, product/process alignment, or process/organization integration within the 3-5 year window, making all pathways uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no primary filing or reputable press source was located reporting any divestiture, impairment, write-down, or operating trajectory for the legacy IDT business in the ~2022-2024 window, and that deregistration plus the parent's non-SEC status left no public audited outcome record. Accordingly there is no documented product/process-interface disruption (p4) and no documented process/organization-interface fracture (p5); absence of such evidence codes both pathways 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': \"No IDT periodic report covering the 2022-2024 outcome window was located after its April 2019 deregistration, and no source was found in which Renesas separately disclosed the legacy IDT business's operating trajectory. Consequently, the record cannot determine whether product/process disruption (p4) or process/organization fracture (p5) occurred.\"}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"uncertain\",\n\"p5_pathway\": \"uncertain\",\n\"t1_archetype\": \"uncertain\",\n\"t2_model\": \"uncertain\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The slice indicates that IDT was deregistered shortly after the merger and its acquirer, Renesas Electronics, does not file SEC reports. No primary sources were found detailing the post-deal trajectory, product/process alignment, or process/organization integration within the 3-5 year window, making all pathways uncertain.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no primary filing or reputable press source was located reporting any divestiture, impairment, write-down, or operating trajectory for the legacy IDT business in the ~2022-2024 window, and that deregistration plus the parent's non-SEC status left no public audited outcome record. Accordingly there is no documented product/process-interface disruption (p4) and no documented process/organization-interface fracture (p5); absence of such evidence codes both pathways 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No IDT periodic report covering the 2022-2024 outcome window was located after its April 2019 deregistration, and no source was found in which Renesas separately disclosed the legacy IDT business's operating trajectory. Consequently, the record cannot determine whether product/process disruption (p4) or process/organization fracture (p5) occurred.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

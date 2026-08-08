@@ -1,0 +1,58 @@
+{
+  "case_id": "P223",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment on ~$2.92bn goodwill; FY2020 revenue $4.67bn, net income $410.0mm, operating ratio 87.9%; no divestiture",
+      "rationale": "On the product/process interface (p4), the slice documents an orderly operational consolidation: Knight's and Swift's separately-reported trucking, logistics, and intermodal operations were combined into three unified reportable segments in Q1 2019, with no documented incoherence between acquired product lines and operating processes — hence 0. On the process/organization interface (p5), the slice shows continuity of the leadership installed at closing (Jackson CEO, Kevin Knight Executive Chairman, Miller CFO) as of Feb 2021 and no documented fracture between operations and people/management/culture — hence 0. Improving net income ($309mm to $410mm), improving operating ratio (91.2% to 87.9%), and no goodwill impairment or divestiture within the window indicate no realized disruption on these interfaces. The controlling-intent archetype (t1) is coded uncertain because the accounting-acquirer/legal-acquirer split (Knight designated Accounting Acquirer, Swift the legal acquirer) is noted but the slice does not document how the announced controlling intent played out as one-sided dominance or coherent equality."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $410.0 million for fiscal year 2020",
+      "rationale": "The slice documents that the company successfully consolidated Knight's and Swift's trucking, logistics, and intermodal businesses into unified segments in Q1 2019 without reported disruption. There is no evidence of product/process incoherence (p4) or process/organization fracture (p5), and the company reported positive net income with no goodwill impairments."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2020 net income of $410.0 million",
+      "rationale": "No realized product/process disruption is documented; by Q1 2019, the trucking, logistics, and intermodal businesses had been consolidated into unified reportable segments. The segment reorganization documents operational realignment, but the slice reports no breakdown involving employees, management, or culture and therefore does not establish a process/organization fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no goodwill impairment on ~$2.92bn goodwill; FY2020 revenue $4.67bn, net income $410.0mm, operating ratio 87.9%; no divestiture\", \"rationale\": \"On the product/process interface (p4), the slice documents an orderly operational consolidation: Knight's and Swift's separately-reported trucking, logistics, and intermodal operations were combined into three unified reportable segments in Q1 2019, with no documented incoherence between acquired product lines and operating processes \\u2014 hence 0. On the process/organization interface (p5), the slice shows continuity of the leadership installed at closing (Jackson CEO, Kevin Knight Executive Chairman, Miller CFO) as of Feb 2021 and no documented fracture between operations and people/management/culture \\u2014 hence 0. Improving net income ($309mm to $410mm), improving operating ratio (91.2% to 87.9%), and no goodwill impairment or divestiture within the window indicate no realized disruption on these interfaces. The controlling-intent archetype (t1) is coded uncertain because the accounting-acquirer/legal-acquirer split (Knight designated Accounting Acquirer, Swift the legal acquirer) is noted but the slice does not document how the announced controlling intent played out as one-sided dominance or coherent equality.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of $410.0 million for fiscal year 2020\",\n  \"rationale\": \"The slice documents that the company successfully consolidated Knight's and Swift's trucking, logistics, and intermodal businesses into unified segments in Q1 2019 without reported disruption. There is no evidence of product/process incoherence (p4) or process/organization fracture (p5), and the company reported positive net income with no goodwill impairments.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2020 net income of $410.0 million\",\n  \"rationale\": \"No realized product/process disruption is documented; by Q1 2019, the trucking, logistics, and intermodal businesses had been consolidated into unified reportable segments. The segment reorganization documents operational realignment, but the slice reports no breakdown involving employees, management, or culture and therefore does not establish a process/organization fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

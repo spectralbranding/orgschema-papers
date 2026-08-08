@@ -1,0 +1,85 @@
+{
+  "case_id": "P302",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The customer-facing product (residential communities) and operational processes transferred together, so gap_45 is 0. However, all officers and directors departed at closing, and the integration plan was undeveloped, creating a structural mismatch between the transferred operations (T5) and the departing management/organization (T6), so gap_56 is 1. There was no transition-services agreement disclosed to mitigate this gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 is 0 because the slice’s structural summary states the customer-facing product (active-adult and primary residential communities) continued together with the surviving AV Homes legal vehicle in a whole-company reverse triangular merger, with no product-vs-process structural mismatch documented at closing. gap_56 is 1 because at the Effective Time all AV Homes officers and directors ceased (Form 8-K Item 5.02) while operations transferred with the surviving entity and the integration plan remained undeveloped at signing, bridged only by optional NEO consulting and a retention-program allowance; the filing discloses no transition-services agreement absorbing that org/process mismatch."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "AV Homes was acquired whole, including its customer-facing residential communities and the operations that produced and delivered them, so no product-process gap is documented at closing. However, all pre-closing officers and directors ceased serving at the effective time while operational integration was still being developed, creating a documented process-organization mismatch; only optional executive consulting and employee-retention provisions were disclosed, not a transition-services or shared-services agreement. [SRC: SEC accession 0001193125-18-258270, DEFM14A] [SRC: SEC accession 0001193125-18-291002, Form 8-K]"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The customer-facing product (residential communities) and operational processes transferred together, so gap_45 is 0. However, all officers and directors departed at closing, and the integration plan was undeveloped, creating a structural mismatch between the transferred operations (T5) and the departing management/organization (T6), so gap_56 is 1. There was no transition-services agreement disclosed to mitigate this gap.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45 is 0 because the slice’s structural summary states the customer-facing product (active-adult and primary residential communities) continued together with the surviving AV Homes legal vehicle in a whole-company reverse triangular merger, with no product-vs-process structural mismatch documented at closing. gap_56 is 1 because at the Effective Time all AV Homes officers and directors ceased (Form 8-K Item 5.02) while operations transferred with the surviving entity and the integration plan remained undeveloped at signing, bridged only by optional NEO consulting and a retention-program allowance; the filing discloses no transition-services agreement absorbing that org/process mismatch.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"AV Homes was acquired whole, including its customer-facing residential communities and the operations that produced and delivered them, so no product-process gap is documented at closing. However, all pre-closing officers and directors ceased serving at the effective time while operational integration was still being developed, creating a documented process-organization mismatch; only optional executive consulting and employee-retention provisions were disclosed, not a transition-services or shared-services agreement. [SRC: SEC accession 0001193125-18-258270, DEFM14A] [SRC: SEC accession 0001193125-18-291002, Form 8-K]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

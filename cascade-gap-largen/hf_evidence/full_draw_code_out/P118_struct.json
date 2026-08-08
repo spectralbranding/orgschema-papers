@@ -1,0 +1,85 @@
+{
+  "case_id": "P118",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: the slice describes acquired stores/products crossing into the platform together with their operating substrate — stores are centrally run from Cary/Sanford HQ, fuel product supplied under multi-year external agreements bridged to the platform, and operations standardized (fuel-pricing optimization \"rolled out to entire store footprint\"); no documented product-without-process mismatch at the boundary. gap_56=1: the slice states operating processes and the store base \"pre-dated a substantially refreshed senior team,\" with a \"strong leadership team\" built \"March 2012 - Present\" and multiple key executives (SVP Ops, CMO, CFO) with tenures under one year — a structural mismatch where processes/store base transferred/persisted while the management running them was newly and incompletely installed. gap_mitigated=no: no transitional-services or operating agreement absorbing that management-substrate gap is documented in this closing-era slice."
+    },
+    "gemini": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "uncertain",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "uncertain",
+      "gap_45": "uncertain",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The provided slice describes the corporate structure and operations of The Pantry, Inc. as of an investor presentation in October 2013, but it does not describe a specific corporate transaction crossing an ownership boundary at closing. Because there is no transaction structure to code, all structural transfer fields and gaps are marked uncertain."
+    },
+    "grok": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "uncertain",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice is explicitly an investor-conference 8-K/10-K description of The Pantry’s standing platform, not a transaction-terms document, and states no ownership-boundary crossing at a closing. No customer-facing product (T4) is shown transferring apart from the processes that produce or deliver it (T5), so gap_45 is 0. No operational processes (T5) are shown transferring or being re-engineered apart from the organization/people running them (T6) at a closing, so gap_56 is 0; mitigation is therefore NA."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: the slice describes acquired stores/products crossing into the platform together with their operating substrate \\u2014 stores are centrally run from Cary/Sanford HQ, fuel product supplied under multi-year external agreements bridged to the platform, and operations standardized (fuel-pricing optimization \\\"rolled out to entire store footprint\\\"); no documented product-without-process mismatch at the boundary. gap_56=1: the slice states operating processes and the store base \\\"pre-dated a substantially refreshed senior team,\\\" with a \\\"strong leadership team\\\" built \\\"March 2012 - Present\\\" and multiple key executives (SVP Ops, CMO, CFO) with tenures under one year \\u2014 a structural mismatch where processes/store base transferred/persisted while the management running them was newly and incompletely installed. gap_mitigated=no: no transitional-services or operating agreement absorbing that management-substrate gap is documented in this closing-era slice.\"}",
+    "gemini": "{\n\"sigma_T1\": \"uncertain\",\n\"sigma_T2\": \"uncertain\",\n\"sigma_T3\": \"uncertain\",\n\"sigma_T4\": \"uncertain\",\n\"sigma_T5\": \"uncertain\",\n\"sigma_T6\": \"uncertain\",\n\"collapse_state\": \"uncertain\",\n\"gap_45\": \"uncertain\",\n\"gap_56\": \"uncertain\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The provided slice describes the corporate structure and operations of The Pantry, Inc. as of an investor presentation in October 2013, but it does not describe a specific corporate transaction crossing an ownership boundary at closing. Because there is no transaction structure to code, all structural transfer fields and gaps are marked uncertain.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"uncertain\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice is explicitly an investor-conference 8-K/10-K description of The Pantry’s standing platform, not a transaction-terms document, and states no ownership-boundary crossing at a closing. No customer-facing product (T4) is shown transferring apart from the processes that produce or deliver it (T5), so gap_45 is 0. No operational processes (T5) are shown transferring or being re-engineered apart from the organization/people running them (T6) at a closing, so gap_56 is 0; mitigation is therefore NA.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "uncertain",
+    "sigma_T2": "uncertain",
+    "sigma_T3": "uncertain",
+    "sigma_T4": "uncertain",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": true,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

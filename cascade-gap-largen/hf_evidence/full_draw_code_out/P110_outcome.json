@@ -1,0 +1,58 @@
+{
+  "case_id": "P110",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "divested ~22% of revenue (Androscoggin+Stevens Point) closed Feb 2020; net income $96M (2019)/$171M (2018)",
+      "rationale": "p4=1: the slice documents realized product-line/operations contraction over time — permanent closure of the Luke Mill (June 2019, ~$20M restructuring charges), sale of the Wickliffe Mill (2018), and divestiture of the Androscoggin and Stevens Point Mills (~22% of revenue), leaving a \"reduced and less diversified\" paper business, evidencing incoherence between the acquired product lines and sustained operations. p5=uncertain: the only process/organization item is a pension-plan consolidation merging the acquired benefit substrate into a combined Verso plan (effective 12/31/2018), which is documented as an administrative integration without any documented fracture, so realized process/organization disruption cannot be determined. The slice contains no documented evidence bearing on the controlling-intent archetype (t1) or on incompatibility of the two value-capture models (t2)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $96 million for 2019 and net income of $171 million for 2018",
+      "rationale": "The slice documents several mill closures and divestitures (Luke Mill, Wickliffe Mill, Androscoggin, and Stevens Point), but does not attribute these to an inability to align acquired products with operating processes, so no product/process disruption is documented (p4=0). Regarding the process/organization interface, the slice notes the successful merger of the NewPage and Verso pension plans into a combined plan by December 2018, indicating organizational integration rather than fracture (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Net income of $96 million in 2019, versus $171 million in 2018'}",
+      "rationale": "{'type': 'string', 'enum': 'Product/process disruption is documented through the June 2019 permanent closure of the Luke Mill, the 2018 sale of the Wickliffe Mill, and the sale of two additional mills representing approximately 22% of trailing revenue, leaving the business reduced and less diversified. No process/organization fracture is documented: the only cited organizational development was the December 2018 consolidation of pension plans into a combined Verso plan, which evidences integration rather than breakdown.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"divested ~22% of revenue (Androscoggin+Stevens Point) closed Feb 2020; net income $96M (2019)/$171M (2018)\", \"rationale\": \"p4=1: the slice documents realized product-line/operations contraction over time \\u2014 permanent closure of the Luke Mill (June 2019, ~$20M restructuring charges), sale of the Wickliffe Mill (2018), and divestiture of the Androscoggin and Stevens Point Mills (~22% of revenue), leaving a \\\"reduced and less diversified\\\" paper business, evidencing incoherence between the acquired product lines and sustained operations. p5=uncertain: the only process/organization item is a pension-plan consolidation merging the acquired benefit substrate into a combined Verso plan (effective 12/31/2018), which is documented as an administrative integration without any documented fracture, so realized process/organization disruption cannot be determined. The slice contains no documented evidence bearing on the controlling-intent archetype (t1) or on incompatibility of the two value-capture models (t2).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of $96 million for 2019 and net income of $171 million for 2018\",\n  \"rationale\": \"The slice documents several mill closures and divestitures (Luke Mill, Wickliffe Mill, Androscoggin, and Stevens Point), but does not attribute these to an inability to align acquired products with operating processes, so no product/process disruption is documented (p4=0). Regarding the process/organization interface, the slice notes the successful merger of the NewPage and Verso pension plans into a combined plan by December 2018, indicating organizational integration rather than fracture (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Net income of $96 million in 2019, versus $171 million in 2018\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Product/process disruption is documented through the June 2019 permanent closure of the Luke Mill, the 2018 sale of the Wickliffe Mill, and the sale of two additional mills representing approximately 22% of trailing revenue, leaving the business reduced and less diversified. No process/organization fracture is documented: the only cited organizational development was the December 2018 consolidation of pension plans into a combined Verso plan, which evidences integration rather than breakdown.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

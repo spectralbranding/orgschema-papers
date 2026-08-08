@@ -1,0 +1,85 @@
+{
+  "case_id": "P222",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "CYS was combined whole as a going-concern, same-asset-class Agency-RMBS REIT into Two Harbors; the product/asset tier (T4, the investment portfolio) crossed together with the operational management substrate, which for both entities is the same externally-managed structure via PRCM Advisers that was continued and merely fee-adjusted (T5 read-only, not left behind), so no product-vs-process mismatch exists at closing (gap_45=0). On T6, the same continued external manager runs the operations, and the governance replacement (CYS board/officers ceasing, Merger Sub's directors/officers installed, two CYS independents added to parent board) occurs alongside the continued PRCM management relationship, so the processes are not stranded from the people running them (gap_56=0). T1 is replace: CYS's controlling intent/board/officers exited and Two Harbors' governance was installed, with CYS surviving as a wholly owned subsidiary (~70/30 ownership)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred CYS's assets and business model (T4/T5) intact into Two Harbors. However, CYS's entire management team and board were terminated at closing (T6), creating a structural gap between the transferred operations and the people who ran them (gap_56 = 1). There is no mention of a transitional services agreement to mitigate this gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing CYS was combined whole as a going-concern same-asset-class REIT into Two Harbors by reverse triangular merger, with the surviving CYS entity and its portfolio becoming an indirect wholly owned subsidiary while the combined company continued Two Harbors’ pre-merger invest/finance/manage model; concurrently PRCM Advisers’ existing external-management agreement was fee-amended to cover the additional equity under management, so the customer-facing assets and the operational management processes were structurally aligned at the boundary (gap_45=0). CYS’s full board and four named officers ceased at the effective time and were replaced by Merger Sub directors/officers, with only two former CYS directors added to the parent board and retention/severance arrangements noted, but the processes that run the portfolio remained those of the continuing external manager PRCM rather than being transferred without an operating organization (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"CYS was combined whole as a going-concern, same-asset-class Agency-RMBS REIT into Two Harbors; the product/asset tier (T4, the investment portfolio) crossed together with the operational management substrate, which for both entities is the same externally-managed structure via PRCM Advisers that was continued and merely fee-adjusted (T5 read-only, not left behind), so no product-vs-process mismatch exists at closing (gap_45=0). On T6, the same continued external manager runs the operations, and the governance replacement (CYS board/officers ceasing, Merger Sub's directors/officers installed, two CYS independents added to parent board) occurs alongside the continued PRCM management relationship, so the processes are not stranded from the people running them (gap_56=0). T1 is replace: CYS's controlling intent/board/officers exited and Two Harbors' governance was installed, with CYS surviving as a wholly owned subsidiary (~70/30 ownership).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction transferred CYS's assets and business model (T4/T5) intact into Two Harbors. However, CYS's entire management team and board were terminated at closing (T6), creating a structural gap between the transferred operations and the people who ran them (gap_56 = 1). There is no mention of a transitional services agreement to mitigate this gap.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing CYS was combined whole as a going-concern same-asset-class REIT into Two Harbors by reverse triangular merger, with the surviving CYS entity and its portfolio becoming an indirect wholly owned subsidiary while the combined company continued Two Harbors’ pre-merger invest/finance/manage model; concurrently PRCM Advisers’ existing external-management agreement was fee-amended to cover the additional equity under management, so the customer-facing assets and the operational management processes were structurally aligned at the boundary (gap_45=0). CYS’s full board and four named officers ceased at the effective time and were replaced by Merger Sub directors/officers, with only two former CYS directors added to the parent board and retention/severance arrangements noted, but the processes that run the portfolio remained those of the continuing external manager PRCM rather than being transferred without an operating organization (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

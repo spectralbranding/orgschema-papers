@@ -1,0 +1,85 @@
+{
+  "case_id": "P188",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 = 0: DFT's customer-facing wholesale-data-center portfolio (T4) crossed the ownership boundary via whole-company merger together with the operating entity and its operations, so product and its producing/delivering processes moved together rather than being structurally split. gap_56 = 1: at closing the operational substrate was to be consolidated (\"elimination of duplicative corporate functions,\" managing combined businesses \"out of several different locations and integrating personnel\"), while the people/organization tier did not coherently transfer — DLR management/CEO and 10 of 12 board seats retained control, DFT contributed only two designees plus a non-executive severance program with \"no assurance\" of employee retention. gap_mitigated = no: the slice states no transition-services, shared-services, or supply agreement bridging a shared operating substrate was located."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures an all-stock whole-company merger in which DFT's customer-facing wholesale data-center portfolio and corporate/OP legal vehicles cross into the Combined Company together with the operations that design and run those centers, so T4 and T5 move as one bundle and gap_45 is 0. Employment relationships likewise cross with the surviving DFT entities, and although the deal installs DLR management/board control, a non-executive severance program, double-trigger NEO exits, and disclosed culture/integration friction (T6=partial), the closing structure does not detach processes from organization, so gap_56 is 0; no TSA or shared-substrate bridge is documented, which is immaterial absent a coded gap."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was a whole-company merger in which DFT's wholesale-data-center portfolio and surviving legal entities crossed into the Combined Company, with no disclosed carveout separating the customer-facing assets from the processes used to operate them; therefore gap_45 is 0. Gap_56 is 1 because DFT's operating business transferred while DLR's pre-merger executives and 10-of-12 board majority retained control, and DFT employees were covered by severance provisions rather than a stated retention mandate. The cited closing structure documents no contractual transitional-services or operating arrangement absorbing that people/process mismatch."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 = 0: DFT's customer-facing wholesale-data-center portfolio (T4) crossed the ownership boundary via whole-company merger together with the operating entity and its operations, so product and its producing/delivering processes moved together rather than being structurally split. gap_56 = 1: at closing the operational substrate was to be consolidated (\\\"elimination of duplicative corporate functions,\\\" managing combined businesses \\\"out of several different locations and integrating personnel\\\"), while the people/organization tier did not coherently transfer \\u2014 DLR management/CEO and 10 of 12 board seats retained control, DFT contributed only two designees plus a non-executive severance program with \\\"no assurance\\\" of employee retention. gap_mitigated = no: the slice states no transition-services, shared-services, or supply agreement bridging a shared operating substrate was located.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures an all-stock whole-company merger in which DFT's customer-facing wholesale data-center portfolio and corporate/OP legal vehicles cross into the Combined Company together with the operations that design and run those centers, so T4 and T5 move as one bundle and gap_45 is 0. Employment relationships likewise cross with the surviving DFT entities, and although the deal installs DLR management/board control, a non-executive severance program, double-trigger NEO exits, and disclosed culture/integration friction (T6=partial), the closing structure does not detach processes from organization, so gap_56 is 0; no TSA or shared-substrate bridge is documented, which is immaterial absent a coded gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction was a whole-company merger in which DFT's wholesale-data-center portfolio and surviving legal entities crossed into the Combined Company, with no disclosed carveout separating the customer-facing assets from the processes used to operate them; therefore gap_45 is 0. Gap_56 is 1 because DFT's operating business transferred while DLR's pre-merger executives and 10-of-12 board majority retained control, and DFT employees were covered by severance provisions rather than a stated retention mandate. The cited closing structure documents no contractual transitional-services or operating arrangement absorbing that people/process mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P076",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "JV survived as going concern; still launching new SLC NAND lines in 2021–2022; no financial scalar available (deregistered April 2020)",
+      "rationale": "The realized record shows the joint venture (SkyHigh Memory Limited) continued as an operating NAND supplier through the outcome window, expanding its ML-3 SLC NAND product family on 1xnm technology in October 2021 with sampling in early 2022 — no documented product/process incoherence, so p4_pathway = 0. The JV remained under its two parents' ownership as a going concern with no documented operations-vs-organization fracture, so p5_pathway = 0. Financial outcome scalars (net income, impairment, divestiture) are explicitly uncertain/unverified, but no disruption at either interface is documented, which under conservative coding is 0 (not-documented) rather than uncertain for the pathways."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "uncertain on any financial outcome scalar",
+      "rationale": "The slice indicates the joint venture continued to operate as a going concern and launched new products in 2021-2022. There is no documented evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; JV retained and still launching products 2021-22",
+      "rationale": "The slice documents that SkyHigh Memory continued as a going-concern NAND supplier in the 2021–2023 window and announced expansion of its SLC NAND product line on 1xnm process technology in October 2021, with sampling planned for early 2022; no product/process misalignment is recorded. Ownership is described as remaining with the two parents (Cypress interest passed to Infineon) with no reported operations-versus-organization fracture, integration breakdown, or cultural/management disruption over the horizon."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"JV survived as going concern; still launching new SLC NAND lines in 2021\\u20132022; no financial scalar available (deregistered April 2020)\", \"rationale\": \"The realized record shows the joint venture (SkyHigh Memory Limited) continued as an operating NAND supplier through the outcome window, expanding its ML-3 SLC NAND product family on 1xnm technology in October 2021 with sampling in early 2022 \\u2014 no documented product/process incoherence, so p4_pathway = 0. The JV remained under its two parents' ownership as a going concern with no documented operations-vs-organization fracture, so p5_pathway = 0. Financial outcome scalars (net income, impairment, divestiture) are explicitly uncertain/unverified, but no disruption at either interface is documented, which under conservative coding is 0 (not-documented) rather than uncertain for the pathways.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"uncertain on any financial outcome scalar\",\n\"rationale\": \"The slice indicates the joint venture continued to operate as a going concern and launched new products in 2021-2022. There is no documented evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; JV retained and still launching products 2021-22\",\n  \"rationale\": \"The slice documents that SkyHigh Memory continued as a going-concern NAND supplier in the 2021–2023 window and announced expansion of its SLC NAND product line on 1xnm process technology in October 2021, with sampling planned for early 2022; no product/process misalignment is recorded. Ownership is described as remaining with the two parents (Cypress interest passed to Infineon) with no reported operations-versus-organization fracture, integration breakdown, or cultural/management disruption over the horizon.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

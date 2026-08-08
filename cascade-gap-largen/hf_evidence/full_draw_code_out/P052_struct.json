@@ -1,0 +1,85 @@
+{
+  "case_id": "P052",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the customer-facing product crossed together with its producing processes: §2.08(b)(vii) contributes the Contributed IP, brands and goodwill while §2.08(b)(i),(iii),(iv),(v),(vi) simultaneously convey inventory, machinery/equipment, real properties, packaging subsidiaries and assumed contracts into the same Company. gap_56 is 0 because the operational processes crossed alongside the people: §2.08(b)(ix),(x),(xi) and §2.09 transfer liabilities for all Transferring CBC/Miller Employees, their benefit-plan and pension/retiree-medical obligations, into the Company together with the machinery and contracts they run. Both parents folded product, process and people into one Delaware LLC as a §721 tax-free contribution, with a Services Agreement, IP License, Brand Cooperation and Water Supply Lease bridging any shared substrate at closing."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The agreement explicitly states that the customer-facing product crossed with its producing processes, including brands, breweries, machinery, and inventory. Furthermore, the people crossed alongside the processes, with transferring employees and their associated liabilities moving into the joint venture, resulting in no structural gaps at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product assets—brands, goodwill, inventory, and contributed IP—crossed together with breweries, machinery, real property, contracts, and packaging subsidiaries that supported their production and delivery (§2.08(b)), so no product-process structural gap is documented at closing. Transferring employees crossed alongside those processes, including associated employment, benefit-plan, pension, and retiree-medical obligations (§2.08(b)(ix)-(xi); §2.09), so no process-organization gap is documented. The closing Services Agreement and related IP, brand-management, and water-supply agreements further allocated shared operational substrates, but they do not establish a gap where the core products, processes, and people transferred together."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is 0 because the customer-facing product crossed together with its producing processes: \\u00a72.08(b)(vii) contributes the Contributed IP, brands and goodwill while \\u00a72.08(b)(i),(iii),(iv),(v),(vi) simultaneously convey inventory, machinery/equipment, real properties, packaging subsidiaries and assumed contracts into the same Company. gap_56 is 0 because the operational processes crossed alongside the people: \\u00a72.08(b)(ix),(x),(xi) and \\u00a72.09 transfer liabilities for all Transferring CBC/Miller Employees, their benefit-plan and pension/retiree-medical obligations, into the Company together with the machinery and contracts they run. Both parents folded product, process and people into one Delaware LLC as a \\u00a7721 tax-free contribution, with a Services Agreement, IP License, Brand Cooperation and Water Supply Lease bridging any shared substrate at closing.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The agreement explicitly states that the customer-facing product crossed with its producing processes, including brands, breweries, machinery, and inventory. Furthermore, the people crossed alongside the processes, with transferring employees and their associated liabilities moving into the joint venture, resulting in no structural gaps at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The product assets—brands, goodwill, inventory, and contributed IP—crossed together with breweries, machinery, real property, contracts, and packaging subsidiaries that supported their production and delivery (§2.08(b)), so no product-process structural gap is documented at closing. Transferring employees crossed alongside those processes, including associated employment, benefit-plan, pension, and retiree-medical obligations (§2.08(b)(ix)-(xi); §2.09), so no process-organization gap is documented. The closing Services Agreement and related IP, brand-management, and water-supply agreements further allocated shared operational substrates, but they do not establish a gap where the core products, processes, and people transferred together.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

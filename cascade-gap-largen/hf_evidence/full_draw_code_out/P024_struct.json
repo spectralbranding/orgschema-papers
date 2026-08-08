@@ -1,0 +1,85 @@
+{
+  "case_id": "P024",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the product line \"separated together with the operations and people that produce it,\" carrying its integrated global sourcing/manufacturing strategy and its own ~800-person engineering organization, so T4 (braking/EBS/transmission products) and T5 (manufacturing/engineering processes) crossed the ownership boundary together — no product-vs-process mismatch (gap_45=0). Likewise the manufacturing workforce and engineering organization moved with the processes, and a founders'-grant equity award to ~200 employees was made at the distribution date, indicating T6 people/culture aligned alongside T5 (gap_56=0). What did NOT cross whole was only the parent's shared corporate/administrative substrate, bridged by a Transition Services Agreement — this concerns corporate overhead, not the T4/T5 or T5/T6 substrate, so no gap requiring mitigation is coded. T3 coded swap because a newly formed WABCO holding company became the legal vehicle via spin-off; T1 replace because the controlling parent intent (American Standard) exited and independent public-company ownership was installed."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence explicitly states that the product line separated together with the operations and people that produce it, including its manufacturing workforce and engineering organization. Thus, there is no structural mismatch between the product (T4), processes (T5), and organization (T6) at closing."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the commercial-vehicle control-systems product line separated together with the manufacturing operations, global sourcing, engineering organization, and people that produced it, so no product-process gap is documented at closing. It also describes a whole operating business moving with its operational workforce and engineering organization, so no process-organization gap is documented. Although shared parent corporate and administrative functions did not transfer intact, they were allocated through a Transition Services Agreement and related closing agreements rather than creating a documented mismatch between the transferred products, production processes, and operating organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the product line \\\"separated together with the operations and people that produce it,\\\" carrying its integrated global sourcing/manufacturing strategy and its own ~800-person engineering organization, so T4 (braking/EBS/transmission products) and T5 (manufacturing/engineering processes) crossed the ownership boundary together \\u2014 no product-vs-process mismatch (gap_45=0). Likewise the manufacturing workforce and engineering organization moved with the processes, and a founders'-grant equity award to ~200 employees was made at the distribution date, indicating T6 people/culture aligned alongside T5 (gap_56=0). What did NOT cross whole was only the parent's shared corporate/administrative substrate, bridged by a Transition Services Agreement \\u2014 this concerns corporate overhead, not the T4/T5 or T5/T6 substrate, so no gap requiring mitigation is coded. T3 coded swap because a newly formed WABCO holding company became the legal vehicle via spin-off; T1 replace because the controlling parent intent (American Standard) exited and independent public-company ownership was installed.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The evidence explicitly states that the product line separated together with the operations and people that produce it, including its manufacturing workforce and engineering organization. Thus, there is no structural mismatch between the product (T4), processes (T5), and organization (T6) at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the commercial-vehicle control-systems product line separated together with the manufacturing operations, global sourcing, engineering organization, and people that produced it, so no product-process gap is documented at closing. It also describes a whole operating business moving with its operational workforce and engineering organization, so no process-organization gap is documented. Although shared parent corporate and administrative functions did not transfer intact, they were allocated through a Transition Services Agreement and related closing agreements rather than creating a documented mismatch between the transferred products, production processes, and operating organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

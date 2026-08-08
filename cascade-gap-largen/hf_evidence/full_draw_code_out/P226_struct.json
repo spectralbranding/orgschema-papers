@@ -1,0 +1,85 @@
+{
+  "case_id": "P226",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction combined GE Transportation and Wabtec into a single entity. There is no evidence of a structural mismatch between the product (T4) and process (T5) tiers, nor between the process (T5) and organization (T6) tiers, as the entire GE Transportation business (assets, operations, and employees) was transferred to Wabtec."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the Direct Sale plus SpinCo merger moved GE Transportation’s locomotive, aftermarket and digital products into Wabtec’s Freight Segment (T4 1-1), yet the Transition Services Agreement left IT, supply chain, financial and HR processes being supplied by GE for an initial 18–24 months, a documented product-versus-process mismatch (gap_45=1) contractually absorbed by that TSA (gap_mitigated=yes). The Employee Matters Agreement simultaneously transferred GE Transportation personnel as Continuing Employees and placed GE Transportation’s CEO over the Freight Segment, so organization aligned with the transferred operations at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "GE Transportation’s business and customer-facing offerings crossed through SpinCo and the Direct Sale, while operational substrate—including information technology, supply-chain, financial, human-resources, and facility services—remained temporarily dependent on GE under the closing Transition Services Agreement (SEC accession 0001140361-18-040543). That documented product-process separation was contractually absorbed through transitional services planned for 18 to 24 months. No process-organization gap is documented because GE Transportation employees continued or commenced employment with SpinCo or the Direct Sale Purchaser, and GE Transportation’s CEO was designated to lead Wabtec’s Freight Segment at closing (SEC accession 0001140361-18-040543)."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction combined GE Transportation and Wabtec into a single entity. There is no evidence of a structural mismatch between the product (T4) and process (T5) tiers, nor between the process (T5) and organization (T6) tiers, as the entire GE Transportation business (assets, operations, and employees) was transferred to Wabtec.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the Direct Sale plus SpinCo merger moved GE Transportation’s locomotive, aftermarket and digital products into Wabtec’s Freight Segment (T4 1-1), yet the Transition Services Agreement left IT, supply chain, financial and HR processes being supplied by GE for an initial 18–24 months, a documented product-versus-process mismatch (gap_45=1) contractually absorbed by that TSA (gap_mitigated=yes). The Employee Matters Agreement simultaneously transferred GE Transportation personnel as Continuing Employees and placed GE Transportation’s CEO over the Freight Segment, so organization aligned with the transferred operations at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"GE Transportation’s business and customer-facing offerings crossed through SpinCo and the Direct Sale, while operational substrate—including information technology, supply-chain, financial, human-resources, and facility services—remained temporarily dependent on GE under the closing Transition Services Agreement (SEC accession 0001140361-18-040543). That documented product-process separation was contractually absorbed through transitional services planned for 18 to 24 months. No process-organization gap is documented because GE Transportation employees continued or commenced employment with SpinCo or the Direct Sale Purchaser, and GE Transportation’s CEO was designated to lead Wabtec’s Freight Segment at closing (SEC accession 0001140361-18-040543).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

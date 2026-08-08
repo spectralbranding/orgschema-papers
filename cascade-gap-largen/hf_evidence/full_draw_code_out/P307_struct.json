@@ -1,0 +1,85 @@
+{
+  "case_id": "P307",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: this is a whole-company stock-and-cash merger where Tribune (stations, WGN America, studio, real estate) crossed into the combined company together with its producing operations; the only carve-out is a defined subset of stations divested for FCC/HSR clearance, so product and its processes moved together rather than being structurally split. gap_56=0: the agreement structured Tribune's existing officers to become the surviving corporation's initial officers \"continuing operational management\" alongside the operations they run, so processes and the people/organization running them transferred coherently even though board-level control passed to Sinclair's Merger Sub designees. T1=replace and T3=1-1 because voting control passed to Sinclair via merger of Merger Sub into Tribune with Tribune surviving as a subsidiary."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that a defined subset of Tribune's stations (T4) and their operations (T5) were carved out for mandatory divestiture, meaning product and process moved together without a structural mismatch. Furthermore, Tribune's existing officers (T6) were structured to continue running the surviving corporation's operations (T5) immediately after closing, showing alignment between operations and management."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice structures Tribune’s retained stations/WGN/etc. product assets to cross with continuing operational management: Tribune officers immediately prior to the effective time become the surviving corporation’s initial officers, so product and process move together; mandatory station divestitures carve out both asset and associated process to third parties in parallel. gap_56 is 0 because the same closing structure keeps Tribune’s pre-transaction officers running operations at the effective time, aligning T5 processes with the T6 people who operate them even as the board is replaced by Merger Sub designees."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: this is a whole-company stock-and-cash merger where Tribune (stations, WGN America, studio, real estate) crossed into the combined company together with its producing operations; the only carve-out is a defined subset of stations divested for FCC/HSR clearance, so product and its processes moved together rather than being structurally split. gap_56=0: the agreement structured Tribune's existing officers to become the surviving corporation's initial officers \\\"continuing operational management\\\" alongside the operations they run, so processes and the people/organization running them transferred coherently even though board-level control passed to Sinclair's Merger Sub designees. T1=replace and T3=1-1 because voting control passed to Sinclair via merger of Merger Sub into Tribune with Tribune surviving as a subsidiary.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice documents that a defined subset of Tribune's stations (T4) and their operations (T5) were carved out for mandatory divestiture, meaning product and process moved together without a structural mismatch. Furthermore, Tribune's existing officers (T6) were structured to continue running the surviving corporation's operations (T5) immediately after closing, showing alignment between operations and management.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice structures Tribune’s retained stations/WGN/etc. product assets to cross with continuing operational management: Tribune officers immediately prior to the effective time become the surviving corporation’s initial officers, so product and process move together; mandatory station divestitures carve out both asset and associated process to third parties in parallel. gap_56 is 0 because the same closing structure keeps Tribune’s pre-transaction officers running operations at the effective time, aligning T5 processes with the T6 people who operate them even as the board is replaced by Merger Sub designees.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P043",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "net income fell to $1,555M in 2016 from $4,227M in 2015 (~63% drop in continuing-operations earnings); assets retained, no divestiture",
+      "rationale": "p4=0: the slice documents that the 2016 earnings decline was attributed to lower realized refining and olefins/polyolefins margins (external margin compression), explicitly \"rather than an inability to operate the assets,\" and no goodwill impairment or write-down of the registrant's own operations was recorded — no product/process incoherence realized. p5=0: the process/organization interface shows constructive reconfiguration over time (moved from three to four operating segments, formed its own Phillips 66 Partners LP MLP, remained operationally intact with 13 refineries and ~14,800 employees) with no documented fracture between operations and organization. t1 and t2 are uncertain because the slice contains no information about the controlling-intent archetype or the reconciliation of two business models, and by design excludes deal-structure detail."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income attributable to Phillips 66 for 2016 was $1,555 million",
+      "rationale": "The slice explicitly notes that the 2016 earnings decline was due to margin compression 'rather than an inability to operate the assets', indicating no product/process disruption (p4=0). Furthermore, the company remained operationally intact with no documented failure to align operations with the organization over time (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2016 net income of $1.555 billion; continuing-operations earnings decreased 63%",
+      "rationale": "The 2016 earnings decline was attributed chiefly to lower refining and olefins/polyolefins margins, not an inability to align products with operating processes; the company remained operationally intact with 13 refineries. Although operations were reorganized into four segments and Phillips 66 Partners LP was formed, the slice documents no fracture between operations and people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"net income fell to $1,555M in 2016 from $4,227M in 2015 (~63% drop in continuing-operations earnings); assets retained, no divestiture\", \"rationale\": \"p4=0: the slice documents that the 2016 earnings decline was attributed to lower realized refining and olefins/polyolefins margins (external margin compression), explicitly \\\"rather than an inability to operate the assets,\\\" and no goodwill impairment or write-down of the registrant's own operations was recorded \\u2014 no product/process incoherence realized. p5=0: the process/organization interface shows constructive reconfiguration over time (moved from three to four operating segments, formed its own Phillips 66 Partners LP MLP, remained operationally intact with 13 refineries and ~14,800 employees) with no documented fracture between operations and organization. t1 and t2 are uncertain because the slice contains no information about the controlling-intent archetype or the reconciliation of two business models, and by design excludes deal-structure detail.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income attributable to Phillips 66 for 2016 was $1,555 million\",\n  \"rationale\": \"The slice explicitly notes that the 2016 earnings decline was due to margin compression 'rather than an inability to operate the assets', indicating no product/process disruption (p4=0). Furthermore, the company remained operationally intact with no documented failure to align operations with the organization over time (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2016 net income of $1.555 billion; continuing-operations earnings decreased 63%\",\n  \"rationale\": \"The 2016 earnings decline was attributed chiefly to lower refining and olefins/polyolefins margins, not an inability to align products with operating processes; the company remained operationally intact with 13 refineries. Although operations were reorganized into four segments and Phillips 66 Partners LP was formed, the slice documents no fracture between operations and people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

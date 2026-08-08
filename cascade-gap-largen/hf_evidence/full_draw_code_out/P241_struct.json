@@ -1,0 +1,85 @@
+{
+  "case_id": "P241",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The evidence slice states that CCP's customer-facing asset/product tier (T4) crossed into Sabra, but the process/management tier (T5) and organization (T6) did not cross intact, as all CCP executive officers resigned at closing. This creates a structural mismatch between the transferred assets (T4) and the terminated processes/management (T5), resulting in gap_45=1. Since both T5 and T6 were terminated, there is no mismatch between them, so gap_56=0. No transition-services agreement was identified, so the gap was not mitigated."
+    },
+    "grok": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because the slice states CCP’s full 337-property/~37,000-bed customer-facing portfolio crossed into Sabra at the August 17, 2017 closing while ‘the process/management tier did not cross intact’ (all four CCP named executive officers resigned at the effective time under change-in-control provisions and Sabra’s pre-existing senior leadership was to continue running the combined company). gap_56=0 because CCP’s operational processes likewise did not transfer or get re-engineered as a distinct package; they ended with the departing CCP executives, so there was no process-without-organization transfer mismatch—only three non-executive board seats continued. No transaction-specific TSA or shared-services agreement is described that would have contractually absorbed the T4–T5 gap."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The structural summary states that CCP's 337-property customer-facing portfolio crossed into Sabra, while CCP's process/management tier did not cross intact: all CCP executive officers resigned, and Sabra's existing senior leadership remained in control. This documents a product-versus-process mismatch at closing, supporting gap_45=1; however, the slice does not separately document transferred or re-engineered CCP operational processes lacking an aligned organization, so gap_56=0. No transaction-specific transition-services, shared-services, or external-management agreement was identified, so the documented gap was not contractually mitigated."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"terminate\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The evidence slice states that CCP's customer-facing asset/product tier (T4) crossed into Sabra, but the process/management tier (T5) and organization (T6) did not cross intact, as all CCP executive officers resigned at closing. This creates a structural mismatch between the transferred assets (T4) and the terminated processes/management (T5), resulting in gap_45=1. Since both T5 and T6 were terminated, there is no mismatch between them, so gap_56=0. No transition-services agreement was identified, so the gap was not mitigated.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=1 because the slice states CCP’s full 337-property/~37,000-bed customer-facing portfolio crossed into Sabra at the August 17, 2017 closing while ‘the process/management tier did not cross intact’ (all four CCP named executive officers resigned at the effective time under change-in-control provisions and Sabra’s pre-existing senior leadership was to continue running the combined company). gap_56=0 because CCP’s operational processes likewise did not transfer or get re-engineered as a distinct package; they ended with the departing CCP executives, so there was no process-without-organization transfer mismatch—only three non-executive board seats continued. No transaction-specific TSA or shared-services agreement is described that would have contractually absorbed the T4–T5 gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The structural summary states that CCP's 337-property customer-facing portfolio crossed into Sabra, while CCP's process/management tier did not cross intact: all CCP executive officers resigned, and Sabra's existing senior leadership remained in control. This documents a product-versus-process mismatch at closing, supporting gap_45=1; however, the slice does not separately document transferred or re-engineered CCP operational processes lacking an aligned organization, so gap_56=0. No transaction-specific transition-services, shared-services, or external-management agreement was identified, so the documented gap was not contractually mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "terminate",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

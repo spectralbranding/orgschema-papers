@@ -1,0 +1,85 @@
+{
+  "case_id": "P215",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The portfolio companies (e.g., ABRH, Ceridian) were contributed to Splitco as whole operating units, meaning their customer-facing products (T4) and operational processes (T5) transferred together, resulting in no gap_45. Similarly, the organization and personnel running these portfolio companies transferred alongside their operations, resulting in no gap_56."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing FNF contributed all FNFV-attributed businesses, assets and liabilities (including ABRH, Ceridian, T-System and the other named portfolio holdings) as a package to Cannae, so the customer-facing products of those businesses crossed together with the operating processes that produce them (gap_45=0). Organization was not severed from those processes: William P. Foley II and four Splitco executive officers were disclosed as retaining roles at FNF after closing, and a corporate services agreement provided back-office continuity, so processes and people/management remained aligned at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "FNF contributed all businesses, assets, and liabilities attributed to the FNFV Group to Cannae while retaining its core title-insurance and related businesses, so the transferred customer-facing businesses and their associated operational assets moved together; no closing-time product/process mismatch is documented. Cannae was established to control, operate, or hold the transferred businesses, and organizational overlap was coherently supported at closing through shared officers and a corporate-services agreement covering back-office and investor-relations services, so no process/organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The portfolio companies (e.g., ABRH, Ceridian) were contributed to Splitco as whole operating units, meaning their customer-facing products (T4) and operational processes (T5) transferred together, resulting in no gap_45. Similarly, the organization and personnel running these portfolio companies transferred alongside their operations, resulting in no gap_56.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing FNF contributed all FNFV-attributed businesses, assets and liabilities (including ABRH, Ceridian, T-System and the other named portfolio holdings) as a package to Cannae, so the customer-facing products of those businesses crossed together with the operating processes that produce them (gap_45=0). Organization was not severed from those processes: William P. Foley II and four Splitco executive officers were disclosed as retaining roles at FNF after closing, and a corporate services agreement provided back-office continuity, so processes and people/management remained aligned at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"FNF contributed all businesses, assets, and liabilities attributed to the FNFV Group to Cannae while retaining its core title-insurance and related businesses, so the transferred customer-facing businesses and their associated operational assets moved together; no closing-time product/process mismatch is documented. Cannae was established to control, operate, or hold the transferred businesses, and organizational overlap was coherently supported at closing through shared officers and a corporate-services agreement covering back-office and investor-relations services, so no process/organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-N",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

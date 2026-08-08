@@ -1,0 +1,85 @@
+{
+  "case_id": "P030",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing product and the operating assets that produce it crossed together: Patriot held eight company-operated mines, joint-venture and contractor mines, eight preparation facilities, loading facilities and rail/river access alongside the ~1.2 billion tons of reserves and coal sales — product (T4) and process (T5) moved as a unit. gap_56=0 because the ~2,500-employee workforce (~61% UMWA under a 2007–2011 contract) and a senior management team drawn from Peabody transferred coherently with those operations. This is a spin-off/carve-out (Section 355 pro rata distribution into a new NYSE-listed vehicle), so T3 is coded swap (new legal domicile for the same business); the shared substrate (admin services, equipment sublease, software license, throughput/coal-supply, retiree-healthcare/pension obligations) was allocated and bridged by ancillary agreements rather than a mismatch in the operating bundle itself."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the customer-facing product and the operating assets that produce it crossed together, indicating no gap between T4 and T5. Furthermore, the people and organization that run the operations crossed with the business, including 2,500 employees and the senior management team, indicating no gap between T5 and T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the customer-facing product and the operating assets that produce it crossed together (mines, preparation/loading facilities, reserves, and transportation access all held by Patriot at separation). gap_56=0 because the people and organization that run the operations likewise crossed with the business (~2,500 employees including UMWA-represented workforce and a senior management team drawn from Peabody). Shared-substrate items (admin services, equipment sublease, software license, throughput) were bridged by closing agreements but do not create a product-vs-process or process-vs-organization structural mismatch at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0 because the customer-facing product and the operating assets that produce it crossed together: Patriot held eight company-operated mines, joint-venture and contractor mines, eight preparation facilities, loading facilities and rail/river access alongside the ~1.2 billion tons of reserves and coal sales \\u2014 product (T4) and process (T5) moved as a unit. gap_56=0 because the ~2,500-employee workforce (~61% UMWA under a 2007\\u20132011 contract) and a senior management team drawn from Peabody transferred coherently with those operations. This is a spin-off/carve-out (Section 355 pro rata distribution into a new NYSE-listed vehicle), so T3 is coded swap (new legal domicile for the same business); the shared substrate (admin services, equipment sublease, software license, throughput/coal-supply, retiree-healthcare/pension obligations) was allocated and bridged by ancillary agreements rather than a mismatch in the operating bundle itself.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that the customer-facing product and the operating assets that produce it crossed together, indicating no gap between T4 and T5. Furthermore, the people and organization that run the operations crossed with the business, including 2,500 employees and the senior management team, indicating no gap between T5 and T6.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the customer-facing product and the operating assets that produce it crossed together (mines, preparation/loading facilities, reserves, and transportation access all held by Patriot at separation). gap_56=0 because the people and organization that run the operations likewise crossed with the business (~2,500 employees including UMWA-represented workforce and a senior management team drawn from Peabody). Shared-substrate items (admin services, equipment sublease, software license, throughput) were bridged by closing agreements but do not create a product-vs-process or process-vs-organization structural mismatch at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P021",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The E&P assets (T4) and their direct operational processes (T5) were transferred together, resulting in no gap_45. However, WPX lacked the administrative personnel and processes (T6) to operate independently at closing, relying on Williams for functions like IT, HR, and accounting, which constitutes a gap_56. This structural mismatch was mitigated at closing by a transition services agreement."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the E&P customer-facing asset base (proved reserves, basin production, Apco interest) was contributed to WPX together with the dedicated operating workforce (1,073 FTEs transferring effective 1 Jan 2012) and the business assets/liabilities, so the product and its producing processes crossed together (gap_45=0). Processes that did transfer were accompanied by the people and management who ran them (employee transfer plus employee-matters agreement); the administrative functions retained at Williams were never transferred ownership of process or org but were only interim-accessed under the transition services agreement, yielding no process-without-org mismatch at closing (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The E&P asset base and associated liabilities transferred to WPX, but WPX remained dependent on Williams for numerous administrative processes, so the customer-facing business crossed without the full process substrate, creating a gap_45. That mismatch was contractually absorbed through a transition services agreement commencing on the distribution date. For gap_56, the dedicated workforce was scheduled to transfer to WPX effective January 1, 2012, while the retained shared processes continued to be performed by Williams under the transition arrangement; the slice therefore does not document processes transferring without an aligned organization."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The E&P assets (T4) and their direct operational processes (T5) were transferred together, resulting in no gap_45. However, WPX lacked the administrative personnel and processes (T6) to operate independently at closing, relying on Williams for functions like IT, HR, and accounting, which constitutes a gap_56. This structural mismatch was mitigated at closing by a transition services agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the E&P customer-facing asset base (proved reserves, basin production, Apco interest) was contributed to WPX together with the dedicated operating workforce (1,073 FTEs transferring effective 1 Jan 2012) and the business assets/liabilities, so the product and its producing processes crossed together (gap_45=0). Processes that did transfer were accompanied by the people and management who ran them (employee transfer plus employee-matters agreement); the administrative functions retained at Williams were never transferred ownership of process or org but were only interim-accessed under the transition services agreement, yielding no process-without-org mismatch at closing (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The E&P asset base and associated liabilities transferred to WPX, but WPX remained dependent on Williams for numerous administrative processes, so the customer-facing business crossed without the full process substrate, creating a gap_45. That mismatch was contractually absorbed through a transition services agreement commencing on the distribution date. For gap_56, the dedicated workforce was scheduled to transfer to WPX effective January 1, 2012, while the retained shared processes continued to be performed by Williams under the transition arrangement; the slice therefore does not document processes transferring without an aligned organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replicate",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

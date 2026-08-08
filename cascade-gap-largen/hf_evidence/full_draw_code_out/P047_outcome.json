@@ -1,0 +1,58 @@
+{
+  "case_id": "P047",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "uncertain (no separate public disclosure within the window)",
+      "rationale": "The slice documents severe financial distress and a settlement terminating capital obligations shortly after inception (2009), but by the 3-5 year window (2012-2014) the venture is no longer separately disclosed. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) during the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no longer separately disclosed by FY2012; $225.1M impairments in 2009",
+      "rationale": "The slice documents early 2009 impairments, carrying-value reduction, and a December 2009 settlement ending capital-contribution obligations, then states the venture is referenced only historically by FY2010 and is absent from FY2012 unconsolidated-venture disclosures. No realized-outcome evidence in the slice describes product/process interface misalignment or process/organization (operations vs people/culture) fracture over the 2012-2014 window; absence of such documentation codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "venture-specific outcome not separately disclosed in fiscal 2012-2014",
+      "rationale": "The fiscal-2012 annual report did not separately disclose Concord Debt Holdings LLC or Lex-Win Concord LLC, and the slice explicitly states that the venture-specific realized record for 2012-2014 is uncertain. Accordingly, the fixed-window evidence cannot determine whether product/process disruption or process/organization fracture occurred."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"uncertain (no separate public disclosure within the window)\",\n\"rationale\": \"The slice documents severe financial distress and a settlement terminating capital obligations shortly after inception (2009), but by the 3-5 year window (2012-2014) the venture is no longer separately disclosed. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) during the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no longer separately disclosed by FY2012; $225.1M impairments in 2009\",\n  \"rationale\": \"The slice documents early 2009 impairments, carrying-value reduction, and a December 2009 settlement ending capital-contribution obligations, then states the venture is referenced only historically by FY2010 and is absent from FY2012 unconsolidated-venture disclosures. No realized-outcome evidence in the slice describes product/process interface misalignment or process/organization (operations vs people/culture) fracture over the 2012-2014 window; absence of such documentation codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"venture-specific outcome not separately disclosed in fiscal 2012-2014\",\n  \"rationale\": \"The fiscal-2012 annual report did not separately disclose Concord Debt Holdings LLC or Lex-Win Concord LLC, and the slice explicitly states that the venture-specific realized record for 2012-2014 is uncertain. Accordingly, the fixed-window evidence cannot determine whether product/process disruption or process/organization fracture occurred.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

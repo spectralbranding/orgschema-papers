@@ -1,0 +1,85 @@
+{
+  "case_id": "P334",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the product/customer layer (all acquired branches) and the operational processes moved together as an intact whole — the entire bank subsidiary (First National Bank) merged into Tri Counties Bank with intent to \"continue to operate all of the branches acquired,\" so product and its producing processes crossed the boundary together rather than being severed. gap_56=0: the people/organization tier transferred coherently alongside operations at closing via named-officer employment agreements (Black, Clifford, Brugioni) effective at closing, two FNBB directors appointed to the boards, and multi-year indemnification/D&O insurance. Although the \"plan to integrate...operations is still being developed,\" that reflects an as-yet-undeveloped integration plan, not a documented structural severance of processes from people at closing; the whole entity moved intact, so no gap is documented."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company merger where FNBB and its bank subsidiary merged into TriCo and its bank subsidiary (N-1 at T3). TriCo intended to continue operating all acquired branches (T4 and T5 moving together, gap_45 = 0). Key FNBB officers signed employment agreements to continue post-merger, and the branches were acquired intact, meaning the organization/people transferred alongside the operations (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states that after the bank merger Tri Counties Bank 'intends to continue to operate all of the branches acquired from First National Bank,' so the customer-facing branch/product layer and the operating processes that run those branches cross together via the statutory bank merger; no product-without-process mismatch is documented at closing. gap_56=0 because the same closing structure pairs the operational transfer with explicit people-tier continuity: named FNBB officers (Black, Clifford, Brugioni) entered employment agreements with TriCo/Tri Counties Bank effective as of closing, and two FNBB directors were to be appointed to both boards, so processes did not transfer without organizational alignment provisions at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the product/customer layer (all acquired branches) and the operational processes moved together as an intact whole \\u2014 the entire bank subsidiary (First National Bank) merged into Tri Counties Bank with intent to \\\"continue to operate all of the branches acquired,\\\" so product and its producing processes crossed the boundary together rather than being severed. gap_56=0: the people/organization tier transferred coherently alongside operations at closing via named-officer employment agreements (Black, Clifford, Brugioni) effective at closing, two FNBB directors appointed to the boards, and multi-year indemnification/D&O insurance. Although the \\\"plan to integrate...operations is still being developed,\\\" that reflects an as-yet-undeveloped integration plan, not a documented structural severance of processes from people at closing; the whole entity moved intact, so no gap is documented.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company merger where FNBB and its bank subsidiary merged into TriCo and its bank subsidiary (N-1 at T3). TriCo intended to continue operating all acquired branches (T4 and T5 moving together, gap_45 = 0). Key FNBB officers signed employment agreements to continue post-merger, and the branches were acquired intact, meaning the organization/people transferred alongside the operations (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states that after the bank merger Tri Counties Bank 'intends to continue to operate all of the branches acquired from First National Bank,' so the customer-facing branch/product layer and the operating processes that run those branches cross together via the statutory bank merger; no product-without-process mismatch is documented at closing. gap_56=0 because the same closing structure pairs the operational transfer with explicit people-tier continuity: named FNBB officers (Black, Clifford, Brugioni) entered employment agreements with TriCo/Tri Counties Bank effective as of closing, and two FNBB directors were to be appointed to both boards, so processes did not transfer without organizational alignment provisions at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

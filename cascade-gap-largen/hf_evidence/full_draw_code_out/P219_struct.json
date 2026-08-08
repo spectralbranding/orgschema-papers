@@ -1,0 +1,85 @@
+{
+  "case_id": "P219",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "KapStone was acquired whole, combining \"both its containerboard/corrugated product tier and its Victory Packaging distribution tier\" — its four mills, 23 plants and ~60 distribution centers and their producing/delivering operations moved together into Holdco, so no product-vs-process mismatch (gap_45=0). However, the operations were slated for \"integration of KapStone's operations into WestRock's corrugated packaging system\" while the surviving governance tier (Holdco's directors and officers) carried over from WestRock only \"not of KapStone,\" and KapStone named executives held change-in-control severance rather than assured continuity; the parties' own disclosure flagged unresolved \"differences in the business cultures of the two companies and retaining key personnel,\" indicating processes re-engineered without coherent alignment of the people/organization that run them (gap_56=1). The merger agreement disclosed only a duty to \"reasonably cooperate\" to facilitate integration \"with no separate transitional-services or shared-services agreement disclosed,\" so the gap was not contractually absorbed (gap_mitigated=no)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction transferred KapStone's entire business, including its products (T4), operations/mills (T5), and employees (T6) as a whole into the new Holdco. There is no documented structural mismatch at closing where products transferred without their underlying processes, or processes transferred without their operating personnel."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the deal transferred KapStone whole—including its customer-facing Paper/Packaging and Distribution product tiers together with the four containerboard mills, 23 corrugated plants, and ~60 distribution centers that produce and deliver them—so product and processes crossed the ownership boundary together (gap_45=0). The same whole-company merger carried KapStone’s operating organization (~6,400 employees and mill-level collective-bargaining arrangements) into Holdco as the surviving KapStone subsidiary alongside those processes, with no structural separation of T5 from T6 documented at closing (gap_56=0). Holdco’s directors and officers were drawn solely from WestRock and KapStone NEOs held change-in-control severance rather than continuity rights, which supports coding T6 as partial/friction but does not create a process-without-organization transfer mismatch; no TSA was disclosed, and none is required absent a coded gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"KapStone was acquired whole, combining \\\"both its containerboard/corrugated product tier and its Victory Packaging distribution tier\\\" \\u2014 its four mills, 23 plants and ~60 distribution centers and their producing/delivering operations moved together into Holdco, so no product-vs-process mismatch (gap_45=0). However, the operations were slated for \\\"integration of KapStone's operations into WestRock's corrugated packaging system\\\" while the surviving governance tier (Holdco's directors and officers) carried over from WestRock only \\\"not of KapStone,\\\" and KapStone named executives held change-in-control severance rather than assured continuity; the parties' own disclosure flagged unresolved \\\"differences in the business cultures of the two companies and retaining key personnel,\\\" indicating processes re-engineered without coherent alignment of the people/organization that run them (gap_56=1). The merger agreement disclosed only a duty to \\\"reasonably cooperate\\\" to facilitate integration \\\"with no separate transitional-services or shared-services agreement disclosed,\\\" so the gap was not contractually absorbed (gap_mitigated=no).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction transferred KapStone's entire business, including its products (T4), operations/mills (T5), and employees (T6) as a whole into the new Holdco. There is no documented structural mismatch at closing where products transferred without their underlying processes, or processes transferred without their operating personnel.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the deal transferred KapStone whole—including its customer-facing Paper/Packaging and Distribution product tiers together with the four containerboard mills, 23 corrugated plants, and ~60 distribution centers that produce and deliver them—so product and processes crossed the ownership boundary together (gap_45=0). The same whole-company merger carried KapStone’s operating organization (~6,400 employees and mill-level collective-bargaining arrangements) into Holdco as the surviving KapStone subsidiary alongside those processes, with no structural separation of T5 from T6 documented at closing (gap_56=0). Holdco’s directors and officers were drawn solely from WestRock and KapStone NEOs held change-in-control severance rather than continuity rights, which supports coding T6 as partial/friction but does not create a process-without-organization transfer mismatch; no TSA was disclosed, and none is required absent a coded gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

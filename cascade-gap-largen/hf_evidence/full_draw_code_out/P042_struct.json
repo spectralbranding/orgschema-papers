@@ -1,0 +1,85 @@
+{
+  "case_id": "P042",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing Imaging Components product (X-ray tubes, detectors, software) crossed together with its named producing/delivering processes — owned manufacturing at Salt Lake City and Liverpool plus leased Calamba space — so product and its dedicated production processes moved together at closing. gap_56=1: the shared corporate service substrate (IT, accounts payable, payroll, legal, financial functions, cash management) that ran operations \"did not transfer intact\" and had historically been performed by Varian as part of its broader organization, creating a T5-vs-T6 structural mismatch at closing. gap_mitigated=yes: that shared substrate was expressly bridged at closing by a transition services agreement (60 days to 24 months, cost-recovery) plus the employee, IP, trademark and supply ancillary agreements. This is a spin-off (T1 replace: new independent controlling intent installed; T3 swap: new standalone legal vehicle/domicile), with allocated employees and existing leadership (Sanyal) transferring one-to-one (T6 1-1)."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The product line (T4) and its dedicated manufacturing facilities (T5) transferred together, so there is no gap_45. However, the broader corporate processes (IT, payroll, legal, financial) did not transfer intact with the organization (T6), creating a gap_56. This gap was mitigated at closing by a transition services agreement."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the Imaging Components product line crossed together with its producing/delivering processes at named manufacturing sites (Salt Lake City, Liverpool, Calamba, and the Las Vegas portion), so T4 and core T5 moved together and gap_45=0. Allocated employees (~1,400), benefit-plan assets, and existing Imaging Components leadership (Sanyal) transferred under the employee matters agreement alongside those operations, with separate Varex management/board installed at closing, so T5 and T6 aligned and gap_56=0. Shared corporate-service substrate that did not transfer intact was bridged by a TSA and ancillaries rather than constituting a documented product-vs-process or process-vs-org mismatch in what crossed."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing Imaging Components product (X-ray tubes, detectors, software) crossed together with its named producing/delivering processes \\u2014 owned manufacturing at Salt Lake City and Liverpool plus leased Calamba space \\u2014 so product and its dedicated production processes moved together at closing. gap_56=1: the shared corporate service substrate (IT, accounts payable, payroll, legal, financial functions, cash management) that ran operations \\\"did not transfer intact\\\" and had historically been performed by Varian as part of its broader organization, creating a T5-vs-T6 structural mismatch at closing. gap_mitigated=yes: that shared substrate was expressly bridged at closing by a transition services agreement (60 days to 24 months, cost-recovery) plus the employee, IP, trademark and supply ancillary agreements. This is a spin-off (T1 replace: new independent controlling intent installed; T3 swap: new standalone legal vehicle/domicile), with allocated employees and existing leadership (Sanyal) transferring one-to-one (T6 1-1).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The product line (T4) and its dedicated manufacturing facilities (T5) transferred together, so there is no gap_45. However, the broader corporate processes (IT, payroll, legal, financial) did not transfer intact with the organization (T6), creating a gap_56. This gap was mitigated at closing by a transition services agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the Imaging Components product line crossed together with its producing/delivering processes at named manufacturing sites (Salt Lake City, Liverpool, Calamba, and the Las Vegas portion), so T4 and core T5 moved together and gap_45=0. Allocated employees (~1,400), benefit-plan assets, and existing Imaging Components leadership (Sanyal) transferred under the employee matters agreement alongside those operations, with separate Varex management/board installed at closing, so T5 and T6 aligned and gap_56=0. Shared corporate-service substrate that did not transfer intact was bridged by a TSA and ancillaries rather than constituting a documented product-vs-process or process-vs-org mismatch in what crossed.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

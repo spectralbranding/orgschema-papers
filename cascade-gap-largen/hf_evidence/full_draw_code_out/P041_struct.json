@@ -1,0 +1,85 @@
+{
+  "case_id": "P041",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing natural gas distribution business (T4) and its three operating divisions crossed intact, but shared corporate-service processes (IT, accounting/internal-controls, treasury/risk, tax, environmental, telecommunications) did NOT transfer as an intact operating substrate — ONE Gas was \"developing a plan\" to replace such services — creating a documented product-vs-process mismatch at closing. gap_mitigated=yes: this substrate gap was contractually absorbed at closing via a Transition Services Agreement (plus Separation/Distribution, Tax Matters, Employee Matters, and Management agreements) providing costs-only bridging services. gap_56=0: the operating divisions crossed intact alongside their ~3,100 employees and experienced management team, so processes moved together with the people/organization that run them."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing business (T4) and its operating divisions (T5) transferred intact, so there is no gap_45. However, certain corporate functions (IT, treasury, tax, etc.) did not transfer as an intact operating substrate, creating a gap_56 where the organization (T6) transferred but some operational processes (T5) were left behind. This gap was mitigated at closing by a Transition Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing regulated distribution business (T4) and its three operating divisions crossed intact and continued as divisions of ONE Gas, so product and core delivery processes moved together at closing. gap_56=0 because management and approximately 3,100 employees historically associated with that business also crossed into ONE Gas under the Employee Matters Agreement, aligning organization with the transferred operations. Shared corporate-service substrate (IT, treasury/risk, tax, environmental, telecom) that did not transfer whole was bridged by a Transition Services Agreement, but that bridging does not constitute a T4-vs-T5 or T5-vs-T6 structural mismatch for the core business tiers."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing natural gas distribution business (T4) and its three operating divisions crossed intact, but shared corporate-service processes (IT, accounting/internal-controls, treasury/risk, tax, environmental, telecommunications) did NOT transfer as an intact operating substrate \\u2014 ONE Gas was \\\"developing a plan\\\" to replace such services \\u2014 creating a documented product-vs-process mismatch at closing. gap_mitigated=yes: this substrate gap was contractually absorbed at closing via a Transition Services Agreement (plus Separation/Distribution, Tax Matters, Employee Matters, and Management agreements) providing costs-only bridging services. gap_56=0: the operating divisions crossed intact alongside their ~3,100 employees and experienced management team, so processes moved together with the people/organization that run them.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The customer-facing business (T4) and its operating divisions (T5) transferred intact, so there is no gap_45. However, certain corporate functions (IT, treasury, tax, etc.) did not transfer as an intact operating substrate, creating a gap_56 where the organization (T6) transferred but some operational processes (T5) were left behind. This gap was mitigated at closing by a Transition Services Agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing regulated distribution business (T4) and its three operating divisions crossed intact and continued as divisions of ONE Gas, so product and core delivery processes moved together at closing. gap_56=0 because management and approximately 3,100 employees historically associated with that business also crossed into ONE Gas under the Employee Matters Agreement, aligning organization with the transferred operations. Shared corporate-service substrate (IT, treasury/risk, tax, environmental, telecom) that did not transfer whole was bridged by a Transition Services Agreement, but that bridging does not constitute a T4-vs-T5 or T5-vs-T6 structural mismatch for the core business tiers.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

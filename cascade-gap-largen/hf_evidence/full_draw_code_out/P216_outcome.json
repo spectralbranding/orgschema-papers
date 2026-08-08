@@ -1,0 +1,58 @@
+{
+  "case_id": "P216",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Sold 72 MW (Thailand + South Africa) at ~$16M combined loss on disposition ($8M net); Malaysia 19 MW sale agreed but unclosed; India/China/Brazil retained",
+      "rationale": "The slice documents an orderly post-close trajectory: routine divestitures of non-core solar assets in Thailand and South Africa (held-for-sale since 2018) at modest losses, a pending Malaysia sale, and continued operation of India, China, and Brazil assets. No lines describe disruption at the product/process interface — the acquired renewable assets continued to operate and be reported normally — so p4_pathway is 0. No lines describe operations fracturing against people/management/culture (no integration failures, workforce conflict beyond routine collective-agreement disclosures, or organizational breakdown), so p5_pathway is 0. The declining use of the \"TerraForm Global\" naming label in FY2021 is a labeling/reporting change, not documented archetype incoherence or business-model incompatibility."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sold 72 MW of non-core solar assets in South Africa and Thailand at a combined $16 million loss on disposition",
+      "rationale": "The evidence slice documents the sale of 72 MW of non-core solar assets in Thailand and South Africa, which had been held for sale since 2018. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) driving these divestitures or affecting the retained assets in Brazil, India, and China."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "72 MW sold at a combined $16 million loss on disposition",
+      "rationale": "The realized record documents sales of 72 MW of non-core South Africa and Thailand solar assets and a pending sale of the 19 MW Malaysia portfolio, but it does not attribute these actions to product/process incoherence. India, China, and Brazil operations continued to be reported, and no documented operational breakdown involving employees, management, or culture establishes a process/organization fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Sold 72 MW (Thailand + South Africa) at ~$16M combined loss on disposition ($8M net); Malaysia 19 MW sale agreed but unclosed; India/China/Brazil retained\", \"rationale\": \"The slice documents an orderly post-close trajectory: routine divestitures of non-core solar assets in Thailand and South Africa (held-for-sale since 2018) at modest losses, a pending Malaysia sale, and continued operation of India, China, and Brazil assets. No lines describe disruption at the product/process interface \\u2014 the acquired renewable assets continued to operate and be reported normally \\u2014 so p4_pathway is 0. No lines describe operations fracturing against people/management/culture (no integration failures, workforce conflict beyond routine collective-agreement disclosures, or organizational breakdown), so p5_pathway is 0. The declining use of the \\\"TerraForm Global\\\" naming label in FY2021 is a labeling/reporting change, not documented archetype incoherence or business-model incompatibility.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sold 72 MW of non-core solar assets in South Africa and Thailand at a combined $16 million loss on disposition\",\n  \"rationale\": \"The evidence slice documents the sale of 72 MW of non-core solar assets in Thailand and South Africa, which had been held for sale since 2018. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) driving these divestitures or affecting the retained assets in Brazil, India, and China.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"72 MW sold at a combined $16 million loss on disposition\",\n  \"rationale\": \"The realized record documents sales of 72 MW of non-core South Africa and Thailand solar assets and a pending sale of the 19 MW Malaysia portfolio, but it does not attribute these actions to product/process incoherence. India, China, and Brazil operations continued to be reported, and no documented operational breakdown involving employees, management, or culture establishes a process/organization fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

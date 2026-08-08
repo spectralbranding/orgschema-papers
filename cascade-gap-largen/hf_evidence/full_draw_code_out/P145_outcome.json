@@ -1,0 +1,58 @@
+{
+  "case_id": "P145",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "transaction not consummated",
+      "rationale": "The slice explicitly states that 'The proposed acquisition was not consummated' because Tronox terminated the agreement on December 23, 2009. Since the deal never closed, there was no post-deal integration, meaning no product/process or process/organization disruption could possibly occur."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not consummated; $12M break-up fee; no assets transferred",
+      "rationale": "The slice documents that the proposed acquisition was never consummated: Tronox terminated the agreement on December 23, 2009, and no titanium dioxide or other Tronox assets crossed to Huntsman. Huntsman’s FY2010 and FY2013 10-Ks reference Tronox only as a competitor, with no acquired business in consolidated operations. Because no ownership boundary was crossed and no post-close integration occurred, there is no documented product/process interface disruption (p4) or process/organization fracture (p5) over the outcome window."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Acquisition not consummated; $12 million deposit refunded'}",
+      "rationale": "{'type': 'string', 'enum': 'The proposed acquisition was terminated on December 23, 2009 and never consummated, so no acquired product or operating process existed within Huntsman over the outcome window; therefore, no product/process disruption is documented. Huntsman’s FY2010 and FY2013 reports show no Tronox business in consolidated operations and identify Tronox only as a competitor, so no process/organization integration fracture is documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"transaction not consummated\",\n  \"rationale\": \"The slice explicitly states that 'The proposed acquisition was not consummated' because Tronox terminated the agreement on December 23, 2009. Since the deal never closed, there was no post-deal integration, meaning no product/process or process/organization disruption could possibly occur.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not consummated; $12M break-up fee; no assets transferred\",\n  \"rationale\": \"The slice documents that the proposed acquisition was never consummated: Tronox terminated the agreement on December 23, 2009, and no titanium dioxide or other Tronox assets crossed to Huntsman. Huntsman’s FY2010 and FY2013 10-Ks reference Tronox only as a competitor, with no acquired business in consolidated operations. Because no ownership boundary was crossed and no post-close integration occurred, there is no documented product/process interface disruption (p4) or process/organization fracture (p5) over the outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Acquisition not consummated; $12 million deposit refunded\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The proposed acquisition was terminated on December 23, 2009 and never consummated, so no acquired product or operating process existed within Huntsman over the outcome window; therefore, no product/process disruption is documented. Huntsman’s FY2010 and FY2013 reports show no Tronox business in consolidated operations and identify Tronox only as a competitor, so no process/organization integration fracture is documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

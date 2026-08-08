@@ -1,0 +1,85 @@
+{
+  "case_id": "P255",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 = 0: Alon's product/asset tier (Big Spring and Krotz Springs refineries, associated wholesale marketing, ~300 convenience stores) crossed into HoldCo whole via the reverse-triangular merger with Alon surviving as a wholly owned subsidiary, so the productive/operating refinery assets and their operations moved together — there is no documented product-vs-process split at closing. gap_56 = 1: the operating assets/processes transferred, but \"all of Alon's then-serving officers were removed\" and its entire board was replaced except two prior Delek appointees, so the people/management tier (T6) did not transfer or align coherently alongside the processes. gap_mitigated = no: the slice states \"No transition-services, shared-services, or supply-bridging agreement between Alon and any retained management entity was identified,\" so the T5/T6 gap was not contractually absorbed at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred Alon's refineries and retail stores (T4) along with their operational processes (T5) intact, so there is no gap_45. However, at closing, all of Alon's then-serving officers and directors (except two Delek appointees) were removed and replaced, triggering change-in-control severance, with no transition-services agreement identified. This creates a gap_56, as the operational processes transferred without the executive management team that ran them."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice shows Alon’s customer-facing assets (Krotz Springs and Big Spring refineries, wholesale marketing, California assets, and ~300 convenience stores) crossing into the HoldCo structure together with the refining/marketing business as a whole, with no documented product-vs-process separation at closing. gap_56=1 because at the effective time all Alon officers were removed, its board ceased (except pre-existing Delek appointees), change-in-control severance was triggered, and the joint proxy expressly identifies no transition-services, shared-services, or supply-bridging agreement allocating operating substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 = 0: Alon's product/asset tier (Big Spring and Krotz Springs refineries, associated wholesale marketing, ~300 convenience stores) crossed into HoldCo whole via the reverse-triangular merger with Alon surviving as a wholly owned subsidiary, so the productive/operating refinery assets and their operations moved together \\u2014 there is no documented product-vs-process split at closing. gap_56 = 1: the operating assets/processes transferred, but \\\"all of Alon's then-serving officers were removed\\\" and its entire board was replaced except two prior Delek appointees, so the people/management tier (T6) did not transfer or align coherently alongside the processes. gap_mitigated = no: the slice states \\\"No transition-services, shared-services, or supply-bridging agreement between Alon and any retained management entity was identified,\\\" so the T5/T6 gap was not contractually absorbed at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction transferred Alon's refineries and retail stores (T4) along with their operational processes (T5) intact, so there is no gap_45. However, at closing, all of Alon's then-serving officers and directors (except two Delek appointees) were removed and replaced, triggering change-in-control severance, with no transition-services agreement identified. This creates a gap_56, as the operational processes transferred without the executive management team that ran them.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice shows Alon’s customer-facing assets (Krotz Springs and Big Spring refineries, wholesale marketing, California assets, and ~300 convenience stores) crossing into the HoldCo structure together with the refining/marketing business as a whole, with no documented product-vs-process separation at closing. gap_56=1 because at the effective time all Alon officers were removed, its board ceased (except pre-existing Delek appointees), change-in-control severance was triggered, and the joint proxy expressly identifies no transition-services, shared-services, or supply-bridging agreement allocating operating substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

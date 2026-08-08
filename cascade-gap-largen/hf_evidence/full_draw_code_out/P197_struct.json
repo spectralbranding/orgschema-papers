@@ -1,0 +1,85 @@
+{
+  "case_id": "P197",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company cash-out merger with the Company surviving as a wholly owned subsidiary of Abbott, so the core diagnostics product line (T4) transferred together with its operational processes (T5) inside the same surviving corporation — no product-vs-process mismatch at closing (gap_45=0). The only carve-outs (Triage MeterPro and BNP Test) were sold to Quidel, but for those the process substrate was explicitly bridged by mutual transition-services and manufacturing/supply agreements, so even the carved products moved with aligned process. T5 processes and the T6 organization/people remained co-located in the same surviving entity, with employee compensation/benefits contractually fixed through year-end 2017 (T6 partial due to no retention guarantee), so processes did not transfer without their people (gap_56=0). T4 coded subset because two named product lines were carved out of the customer-facing bundle."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition where Alere became a wholly owned subsidiary of Abbott. While certain product lines (Triage and BNP) were carved out for antitrust reasons, the slice notes that the process substrate for those carved-out products was bridged by transition-services and manufacturing/supply agreements, meaning the products and their processes were aligned. There is no documented structural mismatch between T4 and T5, nor between T5 and T6 at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the whole-company cash merger left Alere as surviving Abbott subsidiary, so the retained customer-facing diagnostics products (T4) and the operational processes that produce them (T5) crossed together inside the same legal vehicle; the only products that did not cross to Abbott were the Triage MeterPro and BNP lines carved out to Quidel under separate purchase agreements, which is a perimeter reduction rather than a product-without-process mismatch on the Abbott boundary (gap_45=0). Employees of the Company remained employees of the surviving corporation at the effective time, with compensation and benefits contractually continued through year-end 2017 and no structural separation of processes from the organization that runs them, so gap_56=0; gap_mitigated is therefore NA."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company cash-out merger with the Company surviving as a wholly owned subsidiary of Abbott, so the core diagnostics product line (T4) transferred together with its operational processes (T5) inside the same surviving corporation \\u2014 no product-vs-process mismatch at closing (gap_45=0). The only carve-outs (Triage MeterPro and BNP Test) were sold to Quidel, but for those the process substrate was explicitly bridged by mutual transition-services and manufacturing/supply agreements, so even the carved products moved with aligned process. T5 processes and the T6 organization/people remained co-located in the same surviving entity, with employee compensation/benefits contractually fixed through year-end 2017 (T6 partial due to no retention guarantee), so processes did not transfer without their people (gap_56=0). T4 coded subset because two named product lines were carved out of the customer-facing bundle.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition where Alere became a wholly owned subsidiary of Abbott. While certain product lines (Triage and BNP) were carved out for antitrust reasons, the slice notes that the process substrate for those carved-out products was bridged by transition-services and manufacturing/supply agreements, meaning the products and their processes were aligned. There is no documented structural mismatch between T4 and T5, nor between T5 and T6 at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the whole-company cash merger left Alere as surviving Abbott subsidiary, so the retained customer-facing diagnostics products (T4) and the operational processes that produce them (T5) crossed together inside the same legal vehicle; the only products that did not cross to Abbott were the Triage MeterPro and BNP lines carved out to Quidel under separate purchase agreements, which is a perimeter reduction rather than a product-without-process mismatch on the Abbott boundary (gap_45=0). Employees of the Company remained employees of the surviving corporation at the effective time, with compensation and benefits contractually continued through year-end 2017 and no structural separation of processes from the organization that runs them, so gap_56=0; gap_mitigated is therefore NA.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

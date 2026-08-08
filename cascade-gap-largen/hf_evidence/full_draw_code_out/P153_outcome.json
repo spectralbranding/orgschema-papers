@@ -1,0 +1,58 @@
+{
+  "case_id": "P153",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "3 acquired plants retained/not impaired; FY2020 net loss $49.6M w/ $24.1M goodwill impairment",
+      "rationale": "The slice documents that the three September 2016-acquired plants (Madison, Mount Vernon, York) were retained and operating within the window, with Mount Vernon targeted for new Ultra-High Protein technology investment — no product/process misalignment or operations-vs-organization fracture is documented (p4=0, p5=0). Consolidated net losses and the $24.1M goodwill impairment are explicitly not attributed to the three acquired plants, and no operational integration disruption at those plants is described. The slice contains no evidence about the controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "three acquired plants retained and operating",
+      "rationale": "The evidence slice documents that the three acquired plants were retained and operating as of FY2020, with one designated for new technology investment. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface regarding these specific assets."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2020 net loss attributable to Green Plains: $49.6 million",
+      "rationale": "The three acquired plants remained in the owned ethanol-plant portfolio through FY2020, and Mount Vernon was selected for further technology investment; no acquired plant was specifically impaired or divested. The slice documents consolidated losses but no realized product/process disruption or operations-versus-organization fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"3 acquired plants retained/not impaired; FY2020 net loss $49.6M w/ $24.1M goodwill impairment\", \"rationale\": \"The slice documents that the three September 2016-acquired plants (Madison, Mount Vernon, York) were retained and operating within the window, with Mount Vernon targeted for new Ultra-High Protein technology investment \\u2014 no product/process misalignment or operations-vs-organization fracture is documented (p4=0, p5=0). Consolidated net losses and the $24.1M goodwill impairment are explicitly not attributed to the three acquired plants, and no operational integration disruption at those plants is described. The slice contains no evidence about the controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"three acquired plants retained and operating\",\n  \"rationale\": \"The evidence slice documents that the three acquired plants were retained and operating as of FY2020, with one designated for new technology investment. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface regarding these specific assets.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2020 net loss attributable to Green Plains: $49.6 million\",\n  \"rationale\": \"The three acquired plants remained in the owned ethanol-plant portfolio through FY2020, and Mount Vernon was selected for further technology investment; no acquired plant was specifically impaired or divested. The slice documents consolidated losses but no realized product/process disruption or operations-versus-organization fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

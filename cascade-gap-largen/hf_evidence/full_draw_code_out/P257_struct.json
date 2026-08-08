@@ -1,0 +1,85 @@
+{
+  "case_id": "P257",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product/branch network and legal obligations crossed with the merged entity at the November 30, 2017 legal closing, but the operational \"systems conversion\" of the two banks was explicitly treated as \"a distinct, later-completing milestone from the legal closing,\" so product crossed without aligned processes at closing. gap_56=1: the management/process tier \"crossed only partially and on different terms\" — Park Sterling's CEO moved from an employment to a consulting role and material executive compensation was deferred and contingent on the later systems conversion, so people/culture did not align coherently with the process tier at closing. gap_mitigated=yes: the mismatch was contractually absorbed via closing-contingent Consulting/Employment (Replacement) Agreements allocating the integration substrate, tying specific payments ($3,000,000, $100,000) to completion of the later systems conversion."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states the customer-facing product/branch network crossed at the November 30, 2017 legal closing while treating operational/systems integration as a distinct later milestone: several closing-contingent agreements expressly deferred material payments to a post-closing 'systems conversion,' and the structural summary records that the process tier 'crossed only partially.' gap_56=0 because processes did not transfer ahead of organization; the same partial people-side arrangements (Cherry consulting agreement; Ladnier and other Replacement Employment Agreements) were the documented bridge for the deferred systems work, so T5 and T6 were aligned as partial-together rather than T5 moving without T6. gap_mitigated=yes via those closing-contingent consulting/employment agreements allocating the systems-conversion substrate."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Park Sterling's customer-facing banking services and branch network passed into South State at closing, while operational integration remained subject to a separately timed post-closing systems conversion, documenting a T4–T5 mismatch. The management and organization tier also crossed only partially: two directors and select executives continued under new arrangements, while Park Sterling's CEO shifted from employment to consulting, so the incompletely aligned process and organization tiers establish a T5–T6 gap. The slice documents incentive payments tied to conversion but no transitional-services or operating agreement contractually allocating the shared operational substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product/branch network and legal obligations crossed with the merged entity at the November 30, 2017 legal closing, but the operational \\\"systems conversion\\\" of the two banks was explicitly treated as \\\"a distinct, later-completing milestone from the legal closing,\\\" so product crossed without aligned processes at closing. gap_56=1: the management/process tier \\\"crossed only partially and on different terms\\\" \\u2014 Park Sterling's CEO moved from an employment to a consulting role and material executive compensation was deferred and contingent on the later systems conversion, so people/culture did not align coherently with the process tier at closing. gap_mitigated=yes: the mismatch was contractually absorbed via closing-contingent Consulting/Employment (Replacement) Agreements allocating the integration substrate, tying specific payments ($3,000,000, $100,000) to completion of the later systems conversion.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states the customer-facing product/branch network crossed at the November 30, 2017 legal closing while treating operational/systems integration as a distinct later milestone: several closing-contingent agreements expressly deferred material payments to a post-closing 'systems conversion,' and the structural summary records that the process tier 'crossed only partially.' gap_56=0 because processes did not transfer ahead of organization; the same partial people-side arrangements (Cherry consulting agreement; Ladnier and other Replacement Employment Agreements) were the documented bridge for the deferred systems work, so T5 and T6 were aligned as partial-together rather than T5 moving without T6. gap_mitigated=yes via those closing-contingent consulting/employment agreements allocating the systems-conversion substrate.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"Park Sterling's customer-facing banking services and branch network passed into South State at closing, while operational integration remained subject to a separately timed post-closing systems conversion, documenting a T4–T5 mismatch. The management and organization tier also crossed only partially: two directors and select executives continued under new arrangements, while Park Sterling's CEO shifted from employment to consulting, so the incompletely aligned process and organization tiers establish a T5–T6 gap. The slice documents incentive payments tied to conversion but no transitional-services or operating agreement contractually allocating the shared operational substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

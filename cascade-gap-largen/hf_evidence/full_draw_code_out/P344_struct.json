@@ -1,0 +1,85 @@
+{
+  "case_id": "P344",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a whole-company, all-cash going-private reverse triangular merger: Merger Sub merged into Envision with the entire corporate entity and its subsidiaries surviving intact as an indirect subsidiary of a KKR-affiliated Parent, so the legal vehicle, business model, product, processes, and people all crossed the boundary together as one going concern (gap_45=0). The customer-facing physician-services product and its operational \"Affiliated Medical Group\" management-services structure were expressly preserved \"as an ongoing feature of the surviving company rather than something altered by the merger,\" so product and its producing processes moved together (gap_45=0). Section 5.6 built in contractual one-year workforce and compensation continuity (\"no less favorable,\" \"substantially comparable\"), so the processes and the organization/people that run them transferred together (gap_56=0). T1 coded replace because a financial sponsor (KKR, via newly formed shell entities) installed new controlling ownership over the going-private company, replacing the prior public-shareholder controlling intent."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company going-private acquisition by KKR. The entire corporate entity, its physician-services operating model (T4/T5), and its workforce (T6) were transferred intact, with contractual continuity for employees and preservation of the 'Affiliated Medical Group' structure, resulting in no structural gaps at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents a whole-company reverse triangular merger in which Merger Sub merged into Envision and Envision survived as an indirect wholly owned subsidiary of KKR-controlled Parent, with the entire corporate entity and subsidiaries as the transaction subject rather than a carved-out unit. Customer-facing physician-services product and the Affiliated Medical Group management-services operating structure were expressly preserved intact in the surviving company, so T4 and T5 crossed together with no product-vs-process mismatch at closing. Contractual one-year continuing-employee compensation and benefits continuity was built into the merger agreement (Section 5.6), so T5 and T6 likewise transferred/aligned together with no process-vs-organization structural gap at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a whole-company, all-cash going-private reverse triangular merger: Merger Sub merged into Envision with the entire corporate entity and its subsidiaries surviving intact as an indirect subsidiary of a KKR-affiliated Parent, so the legal vehicle, business model, product, processes, and people all crossed the boundary together as one going concern (gap_45=0). The customer-facing physician-services product and its operational \\\"Affiliated Medical Group\\\" management-services structure were expressly preserved \\\"as an ongoing feature of the surviving company rather than something altered by the merger,\\\" so product and its producing processes moved together (gap_45=0). Section 5.6 built in contractual one-year workforce and compensation continuity (\\\"no less favorable,\\\" \\\"substantially comparable\\\"), so the processes and the organization/people that run them transferred together (gap_56=0). T1 coded replace because a financial sponsor (KKR, via newly formed shell entities) installed new controlling ownership over the going-private company, replacing the prior public-shareholder controlling intent.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-company going-private acquisition by KKR. The entire corporate entity, its physician-services operating model (T4/T5), and its workforce (T6) were transferred intact, with contractual continuity for employees and preservation of the 'Affiliated Medical Group' structure, resulting in no structural gaps at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice documents a whole-company reverse triangular merger in which Merger Sub merged into Envision and Envision survived as an indirect wholly owned subsidiary of KKR-controlled Parent, with the entire corporate entity and subsidiaries as the transaction subject rather than a carved-out unit. Customer-facing physician-services product and the Affiliated Medical Group management-services operating structure were expressly preserved intact in the surviving company, so T4 and T5 crossed together with no product-vs-process mismatch at closing. Contractual one-year continuing-employee compensation and benefits continuity was built into the merger agreement (Section 5.6), so T5 and T6 likewise transferred/aligned together with no process-vs-organization structural gap at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

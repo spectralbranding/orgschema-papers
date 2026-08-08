@@ -1,0 +1,58 @@
+{
+  "case_id": "P165",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$302.1M FCC-license impairment in Q4 2022; attributable net loss increased to $264.7M (revenue $3,912.3M, +9.9%)",
+      "rationale": "On p4, the slice documents a $302.1M non-cash impairment on the FCC broadcast-license operating asset following a reevaluation of reporting-unit fair values, plus a documented transition away from single-platform radio toward digital/podcasting; however, this reads as asset-value decline and strategic repositioning rather than a documented incoherence between an acquired product and operating processes, so the product/process interface is coded uncertain. On p5, the slice shows continued restructuring/severance expense ($75.8M) and real-estate footprint streamlining with right-of-use-asset write-downs, but these are ongoing cost-reduction actions with no documented fracture between operations and the people/management/culture organization, so p5 is 0. The retained audio business remained a going concern at scale (revenue +9.9%, Adjusted EBITDA $950.3M) with no documented archetype incoherence or business-model incompatibility, so t1 and t2 are uncertain given absence of narrative on intent or reconciled value-capture logics."
+    },
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of $264.7 million in 2022",
+      "rationale": "The slice documents a $302.1 million non-cash impairment charge on FCC licenses in Q4 2022, indicating disruption at the product/asset interface (p4_pathway = 1). It also notes continued restructuring expenses, primarily severance, of $75.8 million in 2022, reflecting process/organization friction (p5_pathway = 1)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$302.1M FCC-license impairment; FY2022 net loss $264.7M",
+      "rationale": "The slice records a Q4 2022 $302.1M non-cash impairment on FCC broadcast licenses and an intentional multi-platform revenue-mix shift (Digital Audio +$187.3M vs Multiplatform +$108.2M), but frames these as fair-value reevaluation and strategic transition, not as an acquired product failing to align with operating processes; therefore p4=0. Continued restructuring/severance ($75.8M in 2022) and real-estate right-of-use write-downs are documented only as operating-expense-savings initiatives, not as integration of operations fracturing against organization/culture, so p5=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$302.1M FCC-license impairment in Q4 2022; attributable net loss increased to $264.7M (revenue $3,912.3M, +9.9%)\", \"rationale\": \"On p4, the slice documents a $302.1M non-cash impairment on the FCC broadcast-license operating asset following a reevaluation of reporting-unit fair values, plus a documented transition away from single-platform radio toward digital/podcasting; however, this reads as asset-value decline and strategic repositioning rather than a documented incoherence between an acquired product and operating processes, so the product/process interface is coded uncertain. On p5, the slice shows continued restructuring/severance expense ($75.8M) and real-estate footprint streamlining with right-of-use-asset write-downs, but these are ongoing cost-reduction actions with no documented fracture between operations and the people/management/culture organization, so p5 is 0. The retained audio business remained a going concern at scale (revenue +9.9%, Adjusted EBITDA $950.3M) with no documented archetype incoherence or business-model incompatibility, so t1 and t2 are uncertain given absence of narrative on intent or reconciled value-capture logics.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss of $264.7 million in 2022\",\n  \"rationale\": \"The slice documents a $302.1 million non-cash impairment charge on FCC licenses in Q4 2022, indicating disruption at the product/asset interface (p4_pathway = 1). It also notes continued restructuring expenses, primarily severance, of $75.8 million in 2022, reflecting process/organization friction (p5_pathway = 1).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$302.1M FCC-license impairment; FY2022 net loss $264.7M\",\n  \"rationale\": \"The slice records a Q4 2022 $302.1M non-cash impairment on FCC broadcast licenses and an intentional multi-platform revenue-mix shift (Digital Audio +$187.3M vs Multiplatform +$108.2M), but frames these as fair-value reevaluation and strategic transition, not as an acquired product failing to align with operating processes; therefore p4=0. Continued restructuring/severance ($75.8M in 2022) and real-estate right-of-use write-downs are documented only as operating-expense-savings initiatives, not as integration of operations fracturing against organization/culture, so p5=0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

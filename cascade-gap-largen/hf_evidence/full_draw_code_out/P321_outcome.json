@@ -1,0 +1,58 @@
+{
+  "case_id": "P321",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no standalone post-deal performance disclosed; acquired units (Validus Re, Talbot, Western World) continued operating under own names within AIG General Insurance segment as of FY2021; Validus notes/bonds payable declined from $348M (2020) to $293M (2021)",
+      "rationale": "The slice documents that the acquired operating companies \"continued to operate under their pre-acquisition names as constituent units of AIG's General Insurance segment\" through FY2021, with Validus Re still named as an active reinsurance underwriting entity in AIG's catastrophe risk program and ratings tables — no documented disruption at the product/process interface (p4=0). No documented operations-versus-people/culture fracture appears anywhere in the slice; the entities simply continued operating within AIG's structure (p5=0). No merger-of-equals or business-model reconciliation issue is documented (t1=0, t2=0). Note that while the overall outcome trajectory is coded \"uncertain\" in the slice due to absence of standalone reporting, the specific pathway fields default to 0 per the conservative convention that undocumented disruption is not-documented rather than uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that Validus Re, Talbot, and Western World continued to operate under their pre-acquisition names as constituent units of AIG's General Insurance segment through the FY2021 10-K, with only debt-schedule, ratings, and catastrophe-program mentions and no standalone performance breakout. No realized disruption at the product/process interface or fracture at the process/organization interface is described anywhere in the reviewed filings; absence of such evidence codes both pathways to 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Validus notes and bonds payable declined from $348 million to $293 million in 2021",
+      "rationale": "AIG’s FY2021 Form 10-K identifies Validus Re, Talbot, and Western World as continuing operating companies within General Insurance and describes Validus Re as an active reinsurance underwriting entity. The slice documents no realized product/process incoherence and no breakdown between operations and people, management, or culture; the absence of standalone performance figures does not itself establish either pathway."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no standalone post-deal performance disclosed; acquired units (Validus Re, Talbot, Western World) continued operating under own names within AIG General Insurance segment as of FY2021; Validus notes/bonds payable declined from $348M (2020) to $293M (2021)\", \"rationale\": \"The slice documents that the acquired operating companies \\\"continued to operate under their pre-acquisition names as constituent units of AIG's General Insurance segment\\\" through FY2021, with Validus Re still named as an active reinsurance underwriting entity in AIG's catastrophe risk program and ratings tables \\u2014 no documented disruption at the product/process interface (p4=0). No documented operations-versus-people/culture fracture appears anywhere in the slice; the entities simply continued operating within AIG's structure (p5=0). No merger-of-equals or business-model reconciliation issue is documented (t1=0, t2=0). Note that while the overall outcome trajectory is coded \\\"uncertain\\\" in the slice due to absence of standalone reporting, the specific pathway fields default to 0 per the conservative convention that undocumented disruption is not-documented rather than uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents that Validus Re, Talbot, and Western World continued to operate under their pre-acquisition names as constituent units of AIG's General Insurance segment through the FY2021 10-K, with only debt-schedule, ratings, and catastrophe-program mentions and no standalone performance breakout. No realized disruption at the product/process interface or fracture at the process/organization interface is described anywhere in the reviewed filings; absence of such evidence codes both pathways to 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Validus notes and bonds payable declined from $348 million to $293 million in 2021\",\n  \"rationale\": \"AIG’s FY2021 Form 10-K identifies Validus Re, Talbot, and Western World as continuing operating companies within General Insurance and describes Validus Re as an active reinsurance underwriting entity. The slice documents no realized product/process incoherence and no breakdown between operations and people, management, or culture; the absence of standalone performance figures does not itself establish either pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

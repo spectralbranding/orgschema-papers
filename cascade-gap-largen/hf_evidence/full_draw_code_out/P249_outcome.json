@@ -1,0 +1,58 @@
+{
+  "case_id": "P249",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (merged out and deregistered Oct 2017; no separate post-deal outcome scalar isolated for the former First Potomac portfolio in acquirer FY2020/FY2021 10-Ks)",
+      "rationale": "The acquired entity was merged out of existence and deregistered (Form 15-12B, Oct 2017), leaving no post-closing 10-K for the ~2020-2022 window. The acquirer's FY2020 and FY2021 Forms 10-K contain zero occurrences of \"Potomac,\" and no primary source or reputable press isolates any disposition, impairment, or operational fracture specifically attributable to the former First Potomac portfolio. With no realized-outcome evidence of product/process incoherence or process/organization fracture separately documented for this business, both p4 and p5 are uncertain per the no-record convention; no inference is drawn from the acquirer's consolidated results."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that First Potomac was deregistered in 2017 and that the acquirer's FY2020 and FY2021 10-Ks contain zero references to Potomac, with no sourced disposition, impairment, or operating trajectory isolated to the acquired portfolio in the ~2020-2022 window. Absent any documented realized disruption at the product/process or process/organization interfaces, p4_pathway and p5_pathway are coded 0 (none documented). The no-record check likewise supplies no basis for t1 or t2 incidence."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (merged out and deregistered Oct 2017; no separate post-deal outcome scalar isolated for the former First Potomac portfolio in acquirer FY2020/FY2021 10-Ks)\", \"rationale\": \"The acquired entity was merged out of existence and deregistered (Form 15-12B, Oct 2017), leaving no post-closing 10-K for the ~2020-2022 window. The acquirer's FY2020 and FY2021 Forms 10-K contain zero occurrences of \\\"Potomac,\\\" and no primary source or reputable press isolates any disposition, impairment, or operational fracture specifically attributable to the former First Potomac portfolio. With no realized-outcome evidence of product/process incoherence or process/organization fracture separately documented for this business, both p4 and p5 are uncertain per the no-record convention; no inference is drawn from the acquirer's consolidated results.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents that First Potomac was deregistered in 2017 and that the acquirer's FY2020 and FY2021 10-Ks contain zero references to Potomac, with no sourced disposition, impairment, or operating trajectory isolated to the acquired portfolio in the ~2020-2022 window. Absent any documented realized disruption at the product/process or process/organization interfaces, p4_pathway and p5_pathway are coded 0 (none documented). The no-record check likewise supplies no basis for t1 or t2 incidence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

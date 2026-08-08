@@ -1,0 +1,176 @@
+ 
+ 8-K
+ 1
+ d586988d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT
+REPORT PURSUANT TO SECTION 13 OR 15(d) 
+ OF THE SECURITIES EXCHANGE ACT OF 1934 
+ Date of Report (Date of earliest event reported): November 30, 2018 
+ 
+ MITEL NETWORKS CORPORATION 
+ (Exact Name of Registrant as Specified in its Charter) 
+
+ Canada 
+ 
+ 001-34699 
+ 
+ 98-0621254 
+ 
+ (State or Other Jurisdiction 
+ of Incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (I.R.S. Employer 
+ Identification No.) 
+ 350 Legget Drive 
+ Ottawa, Ontario K2K 2W7 
+ (Address of Principal Executive Offices) (Zip Code) 
+ (613) 592-2122 
+ (Registrant&#146;s telephone number, including area code) 
+ Not Applicable (Former
+Name or Former Address, if Changed Since Last Report) 
+ Check the appropriate box below
+if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17
+CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this
+chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+ Emerging growth company &#9744; If an emerging
+growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange
+Act. &#9744; 
+
+ Introduction 
+ As previously disclosed, on April 23, 2018, Mitel Networks Corporation (&#147; Mitel &#148;), entered into an Arrangement
+Agreement (the &#147; Arrangement Agreement &#148;) to be acquired (the &#147; Acquisition &#148;) by MLN AcquisitionCo ULC, a British Columbia unlimited liability company (the &#147; Purchaser &#148;), formed by funds advised by
+Searchlight Capital Partners, L.P. On November 30, 2018 (the &#147; Closing Date &#148;), under the terms of the Arrangement Agreement, Purchaser acquired all of the outstanding common shares of Mitel pursuant to a Plan of Arrangement
+under the Canada Business Corporations Act. Upon the consummation of the Acquisition, certain of Mitel&#146;s subsidiaries became direct or indirect wholly owned subsidiaries of MLN US HoldCo LLC, a Delaware limited liability company (the
+&#147; Borrower &#148;). Further, as a result of the Acquisition and related transactions, Mitel is expected to become a direct, wholly owned subsidiary of MLN UK HoldCo Limited, a private limited company incorporated under the laws of England
+and Wales (&#147; Intermediate Holdings &#148;) and the direct parent of the Borrower. 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. 
+ First Lien Senior Facility General 
+ On the Closing Date, in connection with the Acquisition, the Borrower entered into a First Lien Credit Agreement (the &#147; First Lien
+Credit Agreement &#148;), dated as of the Closing Date, by and among MLN TopCo Ltd., an exempted company incorporated under the laws of the Cayman Islands (&#147; Holdings &#148;), Intermediate Holdings, MLN US TopCo Inc., a Delaware
+corporation (&#147; U.S. Holdings &#148;), the Borrower, the lenders and issuing banks party thereto and Credit Suisse AG, Cayman Islands Branch (&#147; Credit Suisse &#148;), as administrative agent, which provides for senior secured
+financing of up to $1,220.0 million, consisting of: 
+
+ &#149; 
+ 
+ a first lien term loan facility (the &#147; First Lien Term Loan Facility &#148;), in an aggregate principal
+amount of $1,120.0 million with a maturity of seven years; and 
+
+ &#149; 
+ 
+ a first lien revolving credit facility (the &#147; Revolving Credit Facility &#148; and, together with the
+First Lien Term Loan Facility, the &#147; First Lien Senior Facilities &#148;), in an aggregate principal amount of up to $100.0 million with a maturity of five years, including a letter of credit
+ sub-facility. Proceeds of the First Lien Term Loan Facility and, if applicable,
+borrowings under the Revolving Credit Facility drawn on the Closing Date were used to fund the transactions contemplated by the Arrangement Agreement, including the consummation of the Acquisition and the repayment in full of the Existing Credit
+Facility (as defined below), and to pay related fees and expenses. Proceeds of borrowings under the Revolving Credit Facility drawn after the Closing Date and letters of credit will be used for working capital and general corporate purposes.
+ Interest Rates and Fees Borrowings
+under the First Lien Senior Facilities will bear interest at a rate equal to, at the option of Holdings, either (a) an adjusted LIBO rate determined by reference to the costs of funds for Eurodollar or Canadian deposits for the interest period
+relevant to such borrowing, adjusted for certain additional costs, subject to a 0.00% floor, or (b) a base rate, in each case plus an applicable margin. The applicable margin for borrowings under the Revolving Credit Facility is subject to
+step-downs if Intermediate Holdings satisfies certain net first lien leverage ratios. In addition to paying interest on the outstanding
+principal under the First Lien Senior Facilities, the Borrower is required to pay a commitment fee to the lenders under the Revolving Credit Facility in respect of the unutilized commitments thereunder. The commitment fee under the Revolving Credit
+Facility may be subject to step-downs if Intermediate Holdings satisfies a certain net first lien leverage ratios. The Borrower is also required to pay customary agency fees as well as letter of credit participation fees, plus such letter of credit
+issuer&#146;s customary documentary and processing fees and charges and a customary fronting fee on the daily stated amount of each letter of credit. 
+
+ Amortization and Prepayments 
+ The First Lien Senior Facilities require scheduled quarterly amortization payments on the term loan in an annual amount equal to 1.0% of the
+original principal amount of the term loan, with the balance to be paid at maturity. In addition, the First Lien Senior Facilities
+require the Borrower to prepay outstanding term loan borrowings, subject to certain exceptions, with annual excess cash flow, the net cash proceeds of non-ordinary course asset sales and the net cash proceeds
+of any issuance or incurrence of debt. The Borrower may voluntarily repay outstanding loans under the First Lien Senior Facilities at any
+time, without prepayment premium or penalty, except in connection with a repricing event in respect of the term loans as described in the First Lien Credit Agreement, subject to customary &#147;breakage&#148; costs with respect to LIBOR loans. 
+ Collateral and Guarantors All
+obligations under the First Lien Senior Facilities are unconditionally guaranteed by Holdings, Intermediate Holdings and U.S. Holdings on a limited-recourse basis and each existing and future direct and indirect wholly owned domestic subsidiary of
+the Borrower and Canadian subsidiary of Intermediate Holdings, subject to certain exceptions. The obligations are secured by a pledge of
+(1) the Borrower&#146;s capital stock directly held by U.S. Holdings, (2) the capital stock of U.S. Holdings and of any Canadian subsidiary directly held by Intermediate Holdings, (3) Intermediate Holdings&#146; capital stock directly
+held by Holdings and (4) substantially all of the assets of the Borrower and each domestic and Canadian subsidiary guarantor, in each case subject to certain exceptions. 
+ Restrictive Covenants and Other Matters 
+ The Revolving Credit Facility requires that Intermediate Holdings, commencing as of the last day of the first full fiscal quarter after the
+Closing Date and subject to a testing threshold, comply on a quarterly basis with a maximum net first lien leverage ratio. The First Lien
+Senior Facilities contain certain customary affirmative and negative covenants. The First Lien Senior Facilities contain certain
+customary events of default, including relating to a change of control. If an event of default occurs, the lenders under the First Lien Senior Facilities will be entitled to take various actions, including the acceleration of amounts due under the
+First Lien Senior Facilities and all actions permitted to be taken by a secured creditor in respect of the collateral securing the First Lien Senior Facilities. 
+ Second Lien Term Facility General 
+ On the Closing Date, in connection with the Acquisition, the Borrower entered into a Second Lien Credit Agreement (the &#147; Second Lien
+Credit Agreement &#148;), dated as of the Closing Date, by and among Holdings, Intermediate Holdings, U.S. Holdings, the Borrower, the lenders and Credit Suisse, as administrative agent, which provides for senior secured financing consisting of a
+second lien term loan facility (the &#147; Second Lien Term Facility &#148;), in an aggregate principal amount of $260.0 million with a maturity of seven years. 
+ Proceeds of the Second Lien Term Loan Facility were used to fund the transactions contemplated by the Arrangement Agreement, including the
+consummation of the Acquisition and the repayment in full of the Existing Credit Facility (as defined below), and to pay related fees and expenses. 
+ Interest Rates and Fees Borrowings under
+the Second Lien Term Facility will bear interest at a rate equal to, at the option of Holdings, either (a) an adjusted LIBO rate determined by reference to the costs of funds for Eurodollar or Canadian deposits for the interest period relevant
+to such borrowing, adjusted for certain additional costs, subject to a 0.00% floor, or (b) a base rate, in each case plus an applicable margin. 
+
+ In addition to paying interest on the outstanding principal under the Second Lien Term
+Facilities, the Borrower is required to pay customary agency fees. Amortization and Prepayments 
+ The Second Lien Term Facility requires the original principal amount of the term loan to be paid at maturity. The Second Lien Term Facility is
+not subject to scheduled amortization payments. In addition, the Second Lien Term Facility requires the Borrower to prepay outstanding
+term loan borrowings, subject to certain exceptions, with annual excess cash flow, the net cash proceeds of non-ordinary course asset sales and the net cash proceeds of any issuance or incurrence of debt,
+provided that, except with respect to the portion (if any) of the proceeds of any event giving rise to any mandatory prepayment under the First Lien Credit Agreement that have been declined by the applicable lenders, no prepayments are required
+under the Second Lien Term Facility until all amounts outstanding under the First Lien Senior Facilities have been paid in full and all commitments thereunder have been terminated. 
+ The Borrower may voluntarily repay outstanding loans under the Second Lien Term Facility at any time, without prepayment premium or penalty,
+except as described in the Second Lien Credit Agreement, subject to customary &#147;breakage&#148; costs with respect to LIBOR loans. Collateral and
+Guarantors All obligations under the Second Lien Term Facility are unconditionally guaranteed by the guarantors under the First Lien
+Senior Facilities and are secured by the collateral that secures the First Lien Senior Facilities. Such security interests consist of a second-priority lien with respect to the collateral. 
+ Restrictive Covenants and Other Matters 
+ The Second Lien Term Facility contains certain customary affirmative and negative covenants. 
+ The Second Lien Term Facility contains certain customary events of default, including relating to a change of control. If an event of default
+occurs, the lenders under the Second Lien Term Facility will be entitled to take various actions, including the acceleration of amounts due under the Second Lien Term Facility and all actions permitted to be taken by a secured creditor in respect of
+the collateral securing the Second Lien Term Facility. Certain Relationships 
+ The lenders under the First Lien Senior Facilities and the Second Lien Term Facility and their respective affiliates have in the past engaged,
+and may in the future engage, in transactions with and perform services, including commercial banking, financial advisory and investment banking services, for Mitel and its affiliates in the ordinary course of business for which they have received
+or will receive customary fees and expenses. 
+
+ Item 1.02 
+ Termination of a Material Definitive Agreement. 
+ Credit Agreement On the Closing
+Date, Mitel terminated its Credit Agreement (the &#147; Existing Credit Facility &#148;) dated as of March 9, 2017, as amended by that certain First Amendment dated as of September 25, 2017, by and among Mitel, Mitel US Holdings,
+Inc., a Delaware corporation (&#147; MUSHI &#148;), the lenders party thereto from time to time and Citizens Bank, N.A. (&#147; Citizens &#148;), as administrative agent. In connection with the termination, Mitel repaid all of the
+outstanding obligations in respect of principal, interest and fees under the Existing Credit Facility, and Citizens terminated, released and discharged (or, in some foreign jurisdictions, agreed to terminate, release and discharge) all liens on and
+other security interests in the assets of Mitel, MUSHI and their respective subsidiaries granted to it in connection with the Existing Credit Facility. 
+
+ Item 2.03 
+ Creation of a Direct Financial Obligation or an Obligation under an
+ Off-Balance Sheet Arrangement of a Registrant. The information set forth in
+Item 1.01 of this Current Report on Form 8-K is incorporated by reference into this Item 2.03. 
+
+ SIGNATURE 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned
+hereunto duly authorized. Date: November 30, 2018 
+
+ MITEL NETWORKS CORPORATION 
+
+ By: 
+ 
+ /s/ Greg Hiscock 
+ 
+ Name: 
+ 
+ Greg Hiscock 
+ 
+ Title: 
+ 
+ General Counsel & Corporate Secretary 
+

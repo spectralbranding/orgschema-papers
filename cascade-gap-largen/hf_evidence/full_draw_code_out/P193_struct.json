@@ -1,0 +1,85 @@
+{
+  "case_id": "P193",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal transferred ILG's customer-facing product/brand portfolio and its exchange/rental network (Interval International, TPI, Aqua-Aston, VRI) into MVW as wholly-owned subsidiaries through the four-step merger, and because ILG's operating businesses (development, management, resort operations) were acquired as ongoing subsidiaries rather than stripped of their operations, product (T4) and the processes producing/delivering it (T5) crossed the boundary together — no documented product-vs-process mismatch, so gap_45=0. Similarly the operating businesses moved with their people via a one-year compensation/benefits-continuity covenant and service-credit recognition, so processes and organization/people transferred coherently alongside each other, giving gap_56=0; ILG's directors/officers ceased serving but the continuing workforce was contractually retained, coded T6=partial. Because no gap was coded, gap_mitigated=NA (the absence of a broader transition-services agreement is noted but no structural gap was documented at closing)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states ILG's vacation-ownership portfolio, brand licenses, and exchange/rental network (T4) crossed into MVW via the same four-step whole-company merger sequence that carried the operating business, with no product-without-process carve-out at closing. gap_56=0 because continuing ILG employees were brought under MVW with a one-year compensation/benefits-continuity covenant and service-credit recognition, so processes and workforce moved together; the reviewed proxy/8-K sections identify no retained-substrate TSA and record only that ILG directors/officers ceased while two ILG directors joined MVW's board."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing resort portfolio, brand licenses, and exchange/rental network moved through the same merger structure as ILG's operating businesses, including development, marketing, sales, financing, management, exchange, and rental activities; therefore, no product-process separation is documented at closing [What crossed the ownership boundary, customer-facing product/asset; Transaction and parties at closing, ILG segments; SEC 0001193125-18-223956]. Continuing ILG employees received compensation-and-benefits continuity protections and service-credit recognition, while two ILG directors joined MVW's board; although ILG's officers and remaining directors ceased serving, the slice does not document operational processes transferring without an organization aligned to run them [People/organization; Employee benefits continuity; Closing completion, Items 5.01-5.02; SEC 0001193125-18-223956 and 0001193125-18-266809]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal transferred ILG's customer-facing product/brand portfolio and its exchange/rental network (Interval International, TPI, Aqua-Aston, VRI) into MVW as wholly-owned subsidiaries through the four-step merger, and because ILG's operating businesses (development, management, resort operations) were acquired as ongoing subsidiaries rather than stripped of their operations, product (T4) and the processes producing/delivering it (T5) crossed the boundary together \\u2014 no documented product-vs-process mismatch, so gap_45=0. Similarly the operating businesses moved with their people via a one-year compensation/benefits-continuity covenant and service-credit recognition, so processes and organization/people transferred coherently alongside each other, giving gap_56=0; ILG's directors/officers ceased serving but the continuing workforce was contractually retained, coded T6=partial. Because no gap was coded, gap_mitigated=NA (the absence of a broader transition-services agreement is noted but no structural gap was documented at closing).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states ILG's vacation-ownership portfolio, brand licenses, and exchange/rental network (T4) crossed into MVW via the same four-step whole-company merger sequence that carried the operating business, with no product-without-process carve-out at closing. gap_56=0 because continuing ILG employees were brought under MVW with a one-year compensation/benefits-continuity covenant and service-credit recognition, so processes and workforce moved together; the reviewed proxy/8-K sections identify no retained-substrate TSA and record only that ILG directors/officers ceased while two ILG directors joined MVW's board.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing resort portfolio, brand licenses, and exchange/rental network moved through the same merger structure as ILG's operating businesses, including development, marketing, sales, financing, management, exchange, and rental activities; therefore, no product-process separation is documented at closing [What crossed the ownership boundary, customer-facing product/asset; Transaction and parties at closing, ILG segments; SEC 0001193125-18-223956]. Continuing ILG employees received compensation-and-benefits continuity protections and service-credit recognition, while two ILG directors joined MVW's board; although ILG's officers and remaining directors ceased serving, the slice does not document operational processes transferring without an organization aligned to run them [People/organization; Employee benefits continuity; Closing completion, Items 5.01-5.02; SEC 0001193125-18-223956 and 0001193125-18-266809].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

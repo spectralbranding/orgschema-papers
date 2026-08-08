@@ -1,0 +1,85 @@
+{
+  "case_id": "P287",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the two customer-facing product lines (Kindred at Home vs. hospital/rehabilitation) were split across two differently controlled successor parents, and the merger agreement's Transition Plan required separating or replacing \"shared systems\" and allocating assets/liabilities and \"Shared Services Employees\" — documenting that the products crossed the boundary atop an operational substrate (T5) that was shared and had to be split/re-engineered rather than moving coherently intact with each product. gap_56=1: the same shared operating processes had to be divided while identified Shared Services Employees (T6) were allocated between entities with severance for eliminated roles, and the two most senior operating executives (Breier to HospitalCo Parent, Causby to Parent) were routed to different post-separation entities — a documented process-vs-people split at closing. gap_mitigated=yes: the deal contractually absorbed these mismatches via a Transition Services Agreement addressing transitional services, separation/replacement of shared systems, and allocation of Shared Services Employees."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the Homecare product line and the hospital/rehabilitation product line crossed into two differently controlled parents (Parent vs HospitalCo Parent) while the merger agreement required a Transition Services Agreement for separation or replacement of shared systems and a timeline to separate the Homecare Business from the Retained Business, documenting that customer-facing products moved without fully aligned dedicated processes (gap_45=1). The same closing instruments distinguished Homecare Employees from Hospital-retained employees, allocated Shared Services Employees (with severance if eliminated in the Separation Transactions), and routed CEO Breier and Homecare President Causby to opposite successor entities, so processes were re-cut without coherent full org transfer alongside (gap_56=1); both mismatches were contractually absorbed at closing by the TSA and Shared Services Employee allocation provisions."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The two customer-facing product lines were routed at closing into differently controlled successor structures, while shared systems still required transitional services and subsequent separation or replacement, documenting a product-process mismatch at closing. That gap was contractually absorbed through the Transition Services Agreement, which addressed shared systems, timelines, and allocations of assets and liabilities. The agreement also allocated Homecare, Hospital, and Shared Services Employees, while the two senior operating executives were routed to the respective successor entities, so no process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-N\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-N\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-N\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the two customer-facing product lines (Kindred at Home vs. hospital/rehabilitation) were split across two differently controlled successor parents, and the merger agreement's Transition Plan required separating or replacing \\\"shared systems\\\" and allocating assets/liabilities and \\\"Shared Services Employees\\\" \\u2014 documenting that the products crossed the boundary atop an operational substrate (T5) that was shared and had to be split/re-engineered rather than moving coherently intact with each product. gap_56=1: the same shared operating processes had to be divided while identified Shared Services Employees (T6) were allocated between entities with severance for eliminated roles, and the two most senior operating executives (Breier to HospitalCo Parent, Causby to Parent) were routed to different post-separation entities \\u2014 a documented process-vs-people split at closing. gap_mitigated=yes: the deal contractually absorbed these mismatches via a Transition Services Agreement addressing transitional services, separation/replacement of shared systems, and allocation of Shared Services Employees.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the Homecare product line and the hospital/rehabilitation product line crossed into two differently controlled parents (Parent vs HospitalCo Parent) while the merger agreement required a Transition Services Agreement for separation or replacement of shared systems and a timeline to separate the Homecare Business from the Retained Business, documenting that customer-facing products moved without fully aligned dedicated processes (gap_45=1). The same closing instruments distinguished Homecare Employees from Hospital-retained employees, allocated Shared Services Employees (with severance if eliminated in the Separation Transactions), and routed CEO Breier and Homecare President Causby to opposite successor entities, so processes were re-cut without coherent full org transfer alongside (gap_56=1); both mismatches were contractually absorbed at closing by the TSA and Shared Services Employee allocation provisions.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The two customer-facing product lines were routed at closing into differently controlled successor structures, while shared systems still required transitional services and subsequent separation or replacement, documenting a product-process mismatch at closing. That gap was contractually absorbed through the Transition Services Agreement, which addressed shared systems, timelines, and allocations of assets and liabilities. The agreement also allocated Homecare, Hospital, and Shared Services Employees, while the two senior operating executives were routed to the respective successor entities, so no process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-N",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

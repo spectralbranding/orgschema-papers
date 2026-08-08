@@ -1,0 +1,85 @@
+{
+  "case_id": "P273",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The real estate portfolio and asset-management business (T4/T5) crossed intact into the surviving entities. The workforce and executive management (T6) were retained with assumed employment agreements and a one-year compensation floor. There is no documented structural mismatch between product, process, and organization at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the industrial real estate portfolio and third-party asset-management business crossed intact into the surviving Blackstone-affiliated entities, and GPT Operating Partnership LP (which held the entities conducting those asset-management operations) continued as the surviving partnership, so T4 product and T5 processes moved together (gap_45=0). Named-executive employment agreements were assumed without amendment and a one-year compensation floor plus retention program covered the broader workforce, so T6 organization was contractually aligned with the transferred operations at closing (gap_56=0); no separate TSA was described because continuity rested on those employment provisions."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the entire industrial real-estate portfolio and third-party asset-management business crossed intact into the surviving entities as a single unit, so no closing-stage product-versus-process mismatch is documented. It also states that Parent assumed the named executives’ employment agreements and provided the broader workforce with a one-year compensation-and-benefits floor, supporting coherent alignment of operations with the people running them at closing. The contemplated marketing of individual properties did not establish that any product or process was separated at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The real estate portfolio and asset-management business (T4/T5) crossed intact into the surviving entities. The workforce and executive management (T6) were retained with assumed employment agreements and a one-year compensation floor. There is no documented structural mismatch between product, process, and organization at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the industrial real estate portfolio and third-party asset-management business crossed intact into the surviving Blackstone-affiliated entities, and GPT Operating Partnership LP (which held the entities conducting those asset-management operations) continued as the surviving partnership, so T4 product and T5 processes moved together (gap_45=0). Named-executive employment agreements were assumed without amendment and a one-year compensation floor plus retention program covered the broader workforce, so T6 organization was contractually aligned with the transferred operations at closing (gap_56=0); no separate TSA was described because continuity rested on those employment provisions.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the entire industrial real-estate portfolio and third-party asset-management business crossed intact into the surviving entities as a single unit, so no closing-stage product-versus-process mismatch is documented. It also states that Parent assumed the named executives’ employment agreements and provided the broader workforce with a one-year compensation-and-benefits floor, supporting coherent alignment of operations with the people running them at closing. The contemplated marketing of individual properties did not establish that any product or process was separated at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

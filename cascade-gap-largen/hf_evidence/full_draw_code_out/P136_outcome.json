@@ -1,0 +1,58 @@
+{
+  "case_id": "P136",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no further material business operations",
+      "rationale": "The slice documents that the company had 'no further material business operations' and was winding down its remaining assets immediately after the sale. Consequently, there is no evidence of product/process (p4) or process/organization (p5) integration disruption, as the entity ceased operations and SEC reporting."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "terminal wind-down; no material operations; ceased SEC reporting",
+      "rationale": "The slice documents only the registrant's immediate post-close terminal state (no further material business operations; wind-down of remaining assets; full board/officer resignations save one; cessation of all SEC reporting after the April 1, 2016 8-K), with explicitly no public periodic record for the ~2019-2021 window. No realized disruption at the product/process interface or process/organization interface is described over time, so both pathways code 0 (none documented)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No further material business operations immediately after closing",
+      "rationale": "The registrant reported immediately after closing that it had no further material business operations and was evaluating a wind-down of its remaining assets. Although all but one director and officer resigned, the slice does not document an operating-integration breakdown between processes and the organization, nor any product/process incoherence over time. No periodic public record exists for 2019-2021 that documents either pathway."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no further material business operations\",\n  \"rationale\": \"The slice documents that the company had 'no further material business operations' and was winding down its remaining assets immediately after the sale. Consequently, there is no evidence of product/process (p4) or process/organization (p5) integration disruption, as the entity ceased operations and SEC reporting.\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"terminal wind-down; no material operations; ceased SEC reporting\",\n  \"rationale\": \"The slice documents only the registrant's immediate post-close terminal state (no further material business operations; wind-down of remaining assets; full board/officer resignations save one; cessation of all SEC reporting after the April 1, 2016 8-K), with explicitly no public periodic record for the ~2019-2021 window. No realized disruption at the product/process interface or process/organization interface is described over time, so both pathways code 0 (none documented).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"No further material business operations immediately after closing\",\n  \"rationale\": \"The registrant reported immediately after closing that it had no further material business operations and was evaluating a wind-down of its remaining assets. Although all but one director and officer resigned, the slice does not document an operating-integration breakdown between processes and the organization, nor any product/process incoherence over time. No periodic public record exists for 2019-2021 that documents either pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

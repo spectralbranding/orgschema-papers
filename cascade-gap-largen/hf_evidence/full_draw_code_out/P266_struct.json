@@ -1,0 +1,85 @@
+{
+  "case_id": "P266",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the customer-facing rental-home portfolios (T4) and the underlying \"operations, network, systems, technologies, policies and procedures\" (T5) of both companies were structured to be combined together post-closing, so product and process moved coherently as a bundle — no product-vs-process mismatch at closing (gap_45=0). Likewise, the executive team, board, and personnel (T6) were structured to be integrated alongside those operating platforms, with a mixed executive slate designated at closing, so process and organization were aligned rather than mismatched (gap_56=0). T1 is imprint-share because the CEO carried from SFR (target) while the name/ticker/HQ, board majority, and executive majority carried from INVH (acquirer), fusing both principals' intent; T3 is terminate because SFR merged into an INVH subsidiary and was deregistered/delisted."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the customer-facing product (the rental-home portfolios) and the underlying operating platforms/processes of the two companies were structured to be combined post-closing rather than kept separate, so T4 and T5 moved together (gap_45=0). T6 was likewise aligned at closing via a mixed executive team drawn from both predecessors (SFR CEO; INVH CFO, CIO, CLO and others) plus a designated Chief Integration Officer, so processes were not transferred without organization (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The filing states that the two rental-home portfolios and their underlying operating platforms, systems, policies, and procedures were structured to be combined, so the customer-facing product did not cross without its associated processes. It also specifies a mixed executive team drawn from both predecessors, including an SFR chief executive and continuing INVH officers, alongside a designated chief integration officer; therefore, no closing-structure mismatch between the transferred processes and the organization running their integration is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the customer-facing rental-home portfolios (T4) and the underlying \\\"operations, network, systems, technologies, policies and procedures\\\" (T5) of both companies were structured to be combined together post-closing, so product and process moved coherently as a bundle \\u2014 no product-vs-process mismatch at closing (gap_45=0). Likewise, the executive team, board, and personnel (T6) were structured to be integrated alongside those operating platforms, with a mixed executive slate designated at closing, so process and organization were aligned rather than mismatched (gap_56=0). T1 is imprint-share because the CEO carried from SFR (target) while the name/ticker/HQ, board majority, and executive majority carried from INVH (acquirer), fusing both principals' intent; T3 is terminate because SFR merged into an INVH subsidiary and was deregistered/delisted.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the customer-facing product (the rental-home portfolios) and the underlying operating platforms/processes of the two companies were structured to be combined post-closing rather than kept separate, so T4 and T5 moved together (gap_45=0). T6 was likewise aligned at closing via a mixed executive team drawn from both predecessors (SFR CEO; INVH CFO, CIO, CLO and others) plus a designated Chief Integration Officer, so processes were not transferred without organization (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The filing states that the two rental-home portfolios and their underlying operating platforms, systems, policies, and procedures were structured to be combined, so the customer-facing product did not cross without its associated processes. It also specifies a mixed executive team drawn from both predecessors, including an SFR chief executive and continuing INVH officers, alongside a designated chief integration officer; therefore, no closing-structure mismatch between the transferred processes and the organization running their integration is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

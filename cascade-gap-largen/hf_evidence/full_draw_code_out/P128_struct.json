@@ -1,0 +1,85 @@
+{
+  "case_id": "P128",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The anchoring 2007 transaction was a sponsor-led acquisition in which CD&R/KKR acquired the pre-existing US Foodservice business whole from Royal Ahold, installing new controlling intent (T1=replace) while the operating vehicle, distribution product, network, and workforce transferred as a going concern. On gap_45, the customer-facing foodservice-distribution product (400,000+ SKUs to 250,000+ locations) is described as a single integrated product/operating network moving together with its 61 facilities, ~6,000 trucks and shared-services center, so product and its producing/delivering processes crossed the boundary jointly (0). On gap_56, the S-1 states the operating model was standardized and centralized after acquisition while management continuity was maintained (internal CEO promotion of Satriano; Lederer succession), indicating processes and the organization running them aligned coherently rather than diverging at closing (0)."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction described is an IPO/registration event where the existing sponsors (CD&R and KKR) maintain control and the entire operating company (US Foods) transfers as a whole. There is no evidence of structural mismatches between the product, processes, or organization at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The S-1 frames a single integrated customer-facing distribution product/operating network (400k+ SKUs, 61 facilities, shared-services center) assembled from the 2007 platform acquisition plus twelve further distributors, with concurrent standardization and centralization of business processes and a common technology infrastructure across those assembled businesses, so T4 and T5 crossed together with no product-vs-process mismatch at closing (gap_45=0). Operating organization is documented as continuous via internal CEO promotion (Satriano from CMO) and Sponsor influence confined to a stockholders agreement and separate consulting agreements rather than direct operating management, so T5 and T6 were aligned at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The anchoring 2007 transaction was a sponsor-led acquisition in which CD&R/KKR acquired the pre-existing US Foodservice business whole from Royal Ahold, installing new controlling intent (T1=replace) while the operating vehicle, distribution product, network, and workforce transferred as a going concern. On gap_45, the customer-facing foodservice-distribution product (400,000+ SKUs to 250,000+ locations) is described as a single integrated product/operating network moving together with its 61 facilities, ~6,000 trucks and shared-services center, so product and its producing/delivering processes crossed the boundary jointly (0). On gap_56, the S-1 states the operating model was standardized and centralized after acquisition while management continuity was maintained (internal CEO promotion of Satriano; Lederer succession), indicating processes and the organization running them aligned coherently rather than diverging at closing (0).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction described is an IPO/registration event where the existing sponsors (CD&R and KKR) maintain control and the entire operating company (US Foods) transfers as a whole. There is no evidence of structural mismatches between the product, processes, or organization at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The S-1 frames a single integrated customer-facing distribution product/operating network (400k+ SKUs, 61 facilities, shared-services center) assembled from the 2007 platform acquisition plus twelve further distributors, with concurrent standardization and centralization of business processes and a common technology infrastructure across those assembled businesses, so T4 and T5 crossed together with no product-vs-process mismatch at closing (gap_45=0). Operating organization is documented as continuous via internal CEO promotion (Satriano from CMO) and Sponsor influence confined to a stockholders agreement and separate consulting agreements rather than direct operating management, so T5 and T6 were aligned at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

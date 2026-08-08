@@ -1,0 +1,58 @@
+{
+  "case_id": "P193",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "Exchange & Third-Party Mgmt segment (all ex-ILG) Adj. EBITDA $144M (FY2021)/$148M (FY2022); no goodwill impairment recorded in FY2021 or FY2022",
+      "rationale": "The acquired-ILG business continued to be reported as an intact segment through FY2021-2022, with no documented product/operations incoherence — the Exchange & Third-Party Management segment (composed entirely of ILG brands) held roughly flat Adjusted EBITDA ($144M to $148M) with no divestiture or wind-down identified, supporting p4_pathway=0. No documented operations-versus-organization fracture appears — MVW absorbed and continued to track the acquired brands and receivables portfolio, recorded no goodwill impairment in either year, and no cultural/management integration breakdown is described, supporting p5_pathway=0. The slice contains no information on the deal's controlling-intent archetype as it played out, so t1_archetype is uncertain; the value-capture logics show no documented incompatibility (both segments continued operating), so t2_model=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment recorded in FY2021 or FY2022",
+      "rationale": "The provided slice details the financial performance of the acquired ILG businesses, specifically noting segment Adjusted EBITDA and the absence of goodwill impairment in FY2021 and FY2022. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': 'ILG-only segment Adjusted EBITDA of $148 million in FY2022'}",
+      "rationale": "{'type': 'string', 'value': 'No realized product/process-interface disruption is documented; the segment composed entirely of acquired ILG businesses generated $320 million of revenue and $144 million of Adjusted EBITDA in 2021, followed by $291 million and $148 million, respectively, in 2022. No realized process/organization fracture is documented, and MVW reported no goodwill impairment in either 2021 or 2022.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"Exchange & Third-Party Mgmt segment (all ex-ILG) Adj. EBITDA $144M (FY2021)/$148M (FY2022); no goodwill impairment recorded in FY2021 or FY2022\", \"rationale\": \"The acquired-ILG business continued to be reported as an intact segment through FY2021-2022, with no documented product/operations incoherence \\u2014 the Exchange & Third-Party Management segment (composed entirely of ILG brands) held roughly flat Adjusted EBITDA ($144M to $148M) with no divestiture or wind-down identified, supporting p4_pathway=0. No documented operations-versus-organization fracture appears \\u2014 MVW absorbed and continued to track the acquired brands and receivables portfolio, recorded no goodwill impairment in either year, and no cultural/management integration breakdown is described, supporting p5_pathway=0. The slice contains no information on the deal's controlling-intent archetype as it played out, so t1_archetype is uncertain; the value-capture logics show no documented incompatibility (both segments continued operating), so t2_model=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment recorded in FY2021 or FY2022\",\n  \"rationale\": \"The provided slice details the financial performance of the acquired ILG businesses, specifically noting segment Adjusted EBITDA and the absence of goodwill impairment in FY2021 and FY2022. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"ILG-only segment Adjusted EBITDA of $148 million in FY2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"No realized product/process-interface disruption is documented; the segment composed entirely of acquired ILG businesses generated $320 million of revenue and $144 million of Adjusted EBITDA in 2021, followed by $291 million and $148 million, respectively, in 2022. No realized process/organization fracture is documented, and MVW reported no goodwill impairment in either 2021 or 2022.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

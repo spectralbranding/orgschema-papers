@@ -1,0 +1,352 @@
+ 
+
+ 0000003116 
+ false 
+
+ 0000003116 
+
+ 2020-05-19 
+ 2020-05-20 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ UNITED STATES 
+
+ SECURITIES AND
+EXCHANGE COMMISSION 
+
+ Washington, D.C.
+20549 
+
+ Form 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section
+13 or 15(d) of the Securities Exchange Act of 1934 
+
+ Date of Report
+(Date of earliest event Reported): May 21, 2020 ( May 20, 2020 ) 
+
+ Akorn, Inc. 
+
+ (Exact Name of Registrant
+as Specified in Charter) 
+
+ Louisiana 
+ 001-32360 
+ 72-0717400 
+ 
+ (State or Other Jurisdiction of Incorporation) 
+ (Commission File Number) 
+ (I.R.S. Employer Identification Number) 
+
+ 1925 W. FIELD COURT , SUITE 300 , LAKE FOREST , Illinois 60045 
+
+ (Address of Principal
+Executive Offices) (Zip Code) 
+
+ ( 847 ) 279-6100 
+
+ (Registrant';s
+telephone number, including area code) 
+
+ (Former name or former
+address, if changed since last report) 
+
+ Check the appropriate box below if the
+Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#168; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#168; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section
+12(b) of the Act: 
+
+ Title of each class 
+ Trading Symbol(s) 
+ Name of each exchange on which registered 
+ 
+ Common Stock, No Par Value 
+ AKRX 
+ The Nasdaq Global Select Market 
+
+ Indicate by check mark whether the registrant is an emerging
+growth company as defined in Rule 405 of the Securities Act of 1933 (17 CFR &#167;230.405) or Rule 12b-2 of the Securities
+Exchange Act of 1934 (17 CFR &#167;240.12b-2). 
+
+ Emerging growth
+company &#168; 
+
+ If an emerging growth company, indicate by check mark if the
+registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards
+provided pursuant to Section 13(a) of the Exchange Act. &#168; 
+
+ Item 1.01 Entry into a Material Definitive Agreement. 
+
+ The information regarding the Restructuring
+Support Agreement (as defined below) set forth in Item 1.03 of this Current Report
+on Form 8-K (";Current Report";) is incorporated into this Item 1.01 by reference. 
+
+ Item 1.03 Bankruptcy or Receivership. 
+
+ Chapter 11 Petitions 
+
+ On May 20, 2020 (the ";Petition Date";),
+Akorn, Inc. (the ";Company";) and its U.S. direct and indirect subsidiaries (together with the Company, the ";Company
+Parties";) filed voluntary cases under chapter 11 (the ";Chapter 11 Cases";)
+of title 11 of the United States Code (the ";Bankruptcy Code";) in the United States Bankruptcy Court for the
+District of Delaware (the ";Court";). The Company Parties have filed a motion to have the Chapter 11 Cases jointly administered
+under the caption In re Akorn, Inc. , et al . Each Company Party will continue to operate its business as a ";debtor
+in possession"; under the jurisdiction of the Court and in accordance with the applicable provisions of the Bankruptcy Code
+and the orders of the Court. 
+
+ On the Petition Date, the Company Parties
+filed a number of motions with the Court generally designed to facilitate the Company Parties'; transition into Chapter 11.
+Certain of these motions seek authority from the Court for the Company Parties to make payments upon, or otherwise honor, certain
+obligations that arose prior to the Petition Date, including obligations related to employee wages, salaries and benefits, taxes,
+and certain vendors and other providers of goods and services essential to the Company Parties'; businesses. The Company Parties
+expect that the Court will approve the relief sought in these motions on an interim basis. 
+
+ The Company Parties are seeking to sell
+some or all of their assets pursuant to Section 363 of the Bankruptcy Code (the ";Sale";). To facilitate their continued
+marketing and sale process, the Company Parties have filed a motion with the Court to approve the Bidding Procedures (as defined
+below), including milestones by which parties in interest will be required to submit indications of interest and bids for all or
+a portion of the Company Parties'; assets. 
+
+ Restructuring Support Agreement 
+
+ In contemplation of the Chapter 11 Cases,
+on May 20, 2020, the Company Parties entered into a Restructuring Support Agreement ( together
+with all exhibits and schedules thereto, the ";Restructuring Support Agreement";) with certain lenders (the
+ ";Consenting Term Lenders";) holding more than 75% in principal amount of the outstanding term loans under the Term Loan
+Credit Agreement, dated as of April 17, 2014 (as amended, restated, supplemented or otherwise modified, the ";Term Loan Credit
+Agreement";), by and among the Company and certain of its subsidiaries, the lenders thereunder (the ";Lenders";)
+and Wilmington Savings Fund Society, FSB, in its capacity as successor administrative agent (the ";Term Loan Agent";). 
+
+ The Restructuring Support Agreement provides
+that the Consenting Term Lenders will support certain transactions (the ";Transactions";) in pursuit of the Sale and
+confirmation of a Chapter 11 Plan contemplated by the plan term sheet attached to and incorporated into the Restructuring
+Support Agreement (the ";Plan";) on the terms set forth in the Restructuring Support Agreement. 
+
+ The Restructuring Support Agreement contemplates,
+among other things: 
+
+ &#183; that the Sale will be conducted pursuant to the bidding procedures attached to and incorporated into the Restructuring
+ Support Agreement (as amended, modified, waived or supplemented, the ";Bidding Procedures";); 
+
+ &#183; that the Sale will be conducted as follows: 
+
+ o in the event that the Buyer (as defined below) is the Successful Bidder (as defined in the Bidding Procedures), on the terms
+set forth in the Stalking Horse APA (as defined below), pursuant to which the full amount of indebtedness under the Term Loan Credit
+Agreement shall be credit bid, or 
+
+ o in the event that a Qualified Bidder (as defined in the Bidding Procedures) other than the Stalking Horse Bidder is the Successful
+Bidder, on the terms of the purchase agreement for the Successful Bidder as approved by the Court; and 
+
+ &#183; commitments by the Consenting Term Lenders to provide the debtor in possession financing pursuant to the terms and conditions
+set forth in the DIP Credit Agreement (described below). 
+
+ In accordance with the Restructuring Support
+Agreement, the Consenting Term Lenders agreed, among other things, to: (i) vote in favor of the Plan , including supporting
+all of the debtor and third-party releases, injunctions, discharge and exculpation provisions provided in the Plan; (ii) use commercially
+reasonable effort to support the Transactions and take all reasonable actions necessary to implement and consummate the Transactions
+in accordance with the terms, conditions, and applicable deadlines set forth in the Restructuring Support Agreement, the Plan and
+the Bidding Procedures, as applicable; (iii) direct the Term Loan Agent (or any designated subagent) to credit bid up to the
+full amount of indebtedness under the Term Loan Credit Agreement and otherwise facilitate the Transactions contemplated by the
+Restructuring Support Agreement and the Stalking Horse APA; and (iv) negotiate in good faith the applicable Definitive Documents
+(as defined in the Restructuring Support Agreement) and use their commercially reasonable efforts to agree to the form and substance
+of such Definitive Documents consistent with the terms of the Restructuring Support Agreement. 
+
+ In accordance with the Restructuring
+Support Agreement, the Company Parties agreed, among other things, to: (i) use commercially reasonable efforts to (a)
+pursue the Transactions on the terms and in accordance with the milestones set forth in the Restructuring Support Agreement,
+and (b) cooperate with the Consenting Term Lenders to obtain necessary Court approval of the Definitive Documents to
+consummate the Transactions; (ii) not take any action, and not encourage any other person or entity to, take any action,
+directly or indirectly, that would reasonably be expected to, breach or be inconsistent with this Agreement, or take any
+other action, directly or indirectly, that would reasonably be expected to interfere with the acceptance or implementation of
+the Transactions, this Agreement, the Sale, or the Plan; (iii) use commercially reasonable efforts to obtain any
+and all required regulatory and/or third-party approvals for the Transactions; (iv) negotiate in good faith and use
+commercially reasonable efforts to execute and deliver the Definitive Documents and any other required agreements to
+effectuate and consummate the Transactions as contemplated by this Agreement; and (v) use commercially reasonable efforts to
+seek additional support for the Transactions from their other material stakeholders to the extent reasonably prudent. 
+
+ The
+Restructuring Support Agreement may be terminated upon the occurrence of certain events, including the failure to meet specified
+milestones related to the filing, approval, confirmation and effectiveness of the Plan, entry of orders relating to the DIP Facility
+and the closing of the Sale. 
+
+ The foregoing description is only a summary
+of the Restructuring Support Agreement, and is qualified in its entirety by reference to the full text of the Restructuring Support
+Agreement, which is filed as Exhibit 10.1 hereto and incorporated by reference herein. 
+
+ Stalking Horse APA 
+
+ The Company and certain of its direct
+and indirect subsidiaries (collectively, the ";Sellers";) have agreed on the form of an asset purchase agreement
+with certain of the Company';s existing lenders (collectively, the ";Buyer";) substantially in the form
+attached to and incorporated into the Restructuring Support Agreement (the ";Stalking Horse APA";), pursuant to
+which the Buyer will agree to purchase, subject to the terms and conditions contained therein, substantially all of the
+assets of the Sellers. Each of the Sellers is a debtor in the Chapter 11 Cases. 
+
+ The Sale pursuant to the Stalking Horse APA will be subject to approval of the Court and an auction to solicit higher or otherwise
+better bids. The Sellers will seek Court approval to declare the Buyer as the ";stalking horse"; bidder within thirty
+days of the Petition Date. If the Company Parties receive any bids that are higher or otherwise better, the Company Parties expect
+to conduct an auction no later than eighty-two days after the Petition Date. As the stalking horse bidder, the Buyer';s offer
+to purchase substantially all of the assets of the Sellers, to be forth in the Stalking Horse APA, will serve as the minimum or
+floor bid on which the Company Parties, their creditors, suppliers, vendors, and other bidders may rely. Other interested bidders
+would be permitted to participate in the auction they submit qualifying offers that are higher or otherwise better than the stalking
+horse bid. 
+
+ Under the terms of the Stalking Horse APA,
+the Buyer will agree, absent any higher or otherwise better bid, to acquire substantially all of the assets of the Sellers for
+aggregate consideration comprising (i) the assumption of certain liabilities, (ii) the credit bid of 100% of the Lenders';
+pre-petition claims under the Term Loan Credit Agreement, which amount shall be satisfied by discharging all of the Lenders';
+pre-petition claims pursuant to section 363(k) of the Bankruptcy Code, and (iii) an amount in cash equal to the amount set forth
+in the Wind-Down Budget included as an exhibit to the Stalking Horse APA. 
+
+ The foregoing description of the Stalking
+Horse APA does not purport to be complete and is qualified in its entirety by reference to the final, executed Stalking Horse APA,
+as approved by the Court. 
+
+ Debtor-In-Possession Financing 
+
+ The
+Company Parties have agreed on the form of a debtor-in-possession credit agreement with the Consenting Term Lenders to be
+party thereto and Wilmington Savings Fund Society, FSB, as the administrative agent, setting forth the terms and conditions
+of a $30 million debtor in possession financing facility (the ";DIP Facility";), substantially in the form
+attached to and incorporated into the Restructuring Support Agreement (the ";DIP Credit Agreement";). Upon approval
+by the Court and the satisfaction of the conditions set forth in the DIP Credit Agreement, the DIP Facility will provide the
+Company Parties with valuable liquidity, which, along with cash on hand, and cash generated from ongoing operations, will be
+used to support the business and the marketing and Sale process. 
+
+ The
+foregoing description of the DIP Facility and the DIP Credit Agreement does not purport to be complete and is qualified in its
+entirety by reference to the final, executed DIP Credit Agreement, as approved by the Court. 
+
+ Item 2.03. Creation of a Direct Financial Obligation or an Obligation
+under an Off-Balance Sheet &#9;&#9;Arrangement of a Registrant. 
+
+ The information set forth in Item 1.03 is
+incorporated by reference into this Item 2.03. 
+
+ Item 2.04 Triggering Events That Accelerate or Increase a Direct
+Financial Obligation or an &#9;&#9;Obligation under an Off-Balance Sheet Arrangement. 
+
+ The filing of the Chapter 11 Cases
+constituted an event of default that accelerated our obligations under the Term Loan Credit Agreement. The Term Loan Credit
+Agreement provides that as a result of the Chapter 11 Cases, the principal and interest due thereunder shall be immediately
+due and payable. 
+
+ Pursuant to Section 362 of the Bankruptcy
+Code, the filing of the Bankruptcy Petitions automatically stayed most actions against the Company Parties, including actions to
+collect indebtedness incurred prior to the Petition Date or to exercise control over the Company Parties'; property. Subject
+to certain exceptions under the Bankruptcy Code, the filing of the Company Parties'; Chapter 11 Cases also automatically stayed
+the continuation of most legal proceedings or the filing of other actions against or on behalf of the Company Parties or their
+property to recover on, collect or secure a claim arising prior to the Petition Date or to exercise control over property of the
+Company Parties'; bankruptcy estates, unless and until the Court modifies or lifts the automatic stay as to any such claim.
+Notwithstanding the general application of the automatic stay described above, governmental authorities may determine to continue
+actions brought under their police and regulatory powers. 
+
+ Item 7.01 Regulation FD Disclosure. 
+
+ The
+Company cautions that trading in its securities during the pendency of the Chapter 11 Cases is highly speculative and poses substantial
+risks. Trading prices for these securities may bear little or no relationship to the actual recovery, if any, by the holders in
+the Chapter 11 Cases. The Company expects that its stockholders could experience a significant or complete loss on their investment,
+depending on the outcome of the Chapter 11 Cases. 
+
+ Press Release 
+
+ On May 20, 2020, the Company issued a press
+release announcing the filing of the Chapter 11 Cases. A copy of the press release is attached hereto as Exhibit 99.1. 
+
+ Additional
+information about the Chapter 11 cases can be found at the Company';s dedicated microsite, www.akorn-forward.com. Claims
+information can be found at www.kccllc.net/akorn. 
+
+ The information contained in this Item 7.01
+including Exhibit 99.1 attached hereto, shall not be deemed to be ";filed"; for purposes of Section 18 of the Securities
+Exchange Act of 1934, as amended (the ";Exchange Act";), or otherwise subject to the liabilities of that section, nor
+shall it be deemed to be incorporated by reference in any filing under the Securities Act of 1933, as amended (the ";Securities
+Act";), or the Exchange Act, except as shall be expressly set forth by specific reference in such a filing. 
+
+ Cautionary Note
+Regarding Forward-Looking Statements 
+
+ This Current Report includes statements that may constitute
+ ";forward-looking statements,"; including statements regarding the Chapter 11 Cases, the DIP Facility, the Company';s
+ability to complete the Sale and its ability to continue operating in the ordinary course while the Chapter 11 Cases are pending.
+You can identify forward-looking statements by terminology such as ";may,"; ";should,"; ";will,";
+ ";expect,"; ";continue,"; ";believe,"; ";seek,"; ";anticipate,"; ";estimate,";
+ ";intend,"; ";could,"; ";would,"; ";potential,"; or the negative of such terms or other
+similar expressions. These statements are made pursuant to the safe harbor provisions of Section 27A of the Securities Act and
+Section 21E of the Exchange Act. These statements are subject to significant risks, uncertainties, and assumptions that are difficult
+to predict and could cause actual results to differ materially and adversely from those expressed or implied in the forward-looking
+statements, including risks and uncertainties related to: (i) the consummation of the Sale; (ii) potential adverse effects of the
+Chapter 11 Cases on the Company';s liquidity and results of operations; (iii) the Company';s ability to obtain timely
+approval by the Court with respect to the motions filed in the Chapter 11 Cases; (iv) objections to the Stalking Horse
+APA, Bidding Procedures, DIP Facility, or other pleadings filed that could protract the Chapter 11 Cases; (v) employee attrition
+and the Company';s ability to retain senior management and other key personnel due to the distractions and uncertainties;
+(vi) the Company';s ability to comply with the restrictions imposed by the terms and conditions of the DIP Facility and other
+financing arrangements; (vii) the Company';s ability to maintain relationships with suppliers, customers, employees and other
+third parties and regulatory authorities as a result of the Chapter 11 Cases; (viii) the effects of the Chapter 11 Cases on the
+Company and on the interests of various constituents, including holders of the Company';s common stock; (ix) the
+Court';s rulings in the Chapter 11 Cases, including the approvals of the terms and conditions of the Sale and the DIP Facility,
+and the outcome of the Chapter 11 Cases generally; (x) the length of time that the Company will operate under Chapter 11 protection
+and the continued availability of operating capital during the pendency of the Chapter 11 Cases; (xi) risks associated with third
+party motions in the Chapter 11 Cases, which may interfere with the Company';s ability to consummate the Sale or an alternative
+transaction; (xii) increased administrative and legal costs related to the Chapter 11 process; potential delays in the Chapter
+11 process due to the effects of the COVID-19 virus; (xiii) other litigation and inherent risks involved in a bankruptcy process;
+and (xiv) such other risks and uncertainties outlined in the risk factors detailed in Part I, Item 1A, ";Risk Factors,";
+of the Company';s Annual Report on Form 10-K for the fiscal year ended December 31, 2019 (as filed with the Securities and
+Exchange Commission (";SEC";) on February 26, 2020), Part II, Item 1A, ";Risk Factors,"; of the Company';s
+Quarterly Report on Form 10-Q for the fiscal quarter ended March 31, 2020 (as filed with the SEC on May 11, 2020) and other risk
+factors identified from time to time in the Company';s filings with the SEC. Readers should carefully review these risk factors,
+and should not place undue reliance on the Company';s forward-looking statements. These forward-looking statements are based
+on information, plans and estimates at the date of this report. The Company undertakes no obligation to update any forward-looking
+statements to reflect changes in underlying assumptions or factors, new information, future events or other changes. 
+
+ Item 9.01 Financial Statements and Exhibits 
+
+ (d) Exhibits 
+
+ Exhibit No. 
+ Description 
+ 
+ 10.1 
+ Restructuring Support Agreement, dated May 20, 2020, by and between the Company Parties and Consenting Term Lenders 
+
+ 99.1 
+ Furnished Press Release of Akorn, Inc., dated May 20, 2020, Announcing Bankruptcy Filing 
+
+ SIGNATURE 
+
+ Pursuant to the requirements of the Securities Exchange Act
+of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Akorn, Inc. 
+
+ Date: May 21, 2020 
+ By: 
+ /s/ Duane A. Portwood 
+
+ Duane A. Portwood 
+
+ Chief Financial Officer 
+

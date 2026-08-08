@@ -1,0 +1,85 @@
+{
+  "case_id": "P175",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a Chapter 11 reorganization in which the same corporate entity emerged: the plan \"retain[ed] the pre-petition three-segment operating structure (Crude Oil, Products, U.S. Flag) and the Marshall Islands subsidiary vehicle (OIN)\" — so the customer-facing fleet/product (T4) and the operational ship-management processes (T5) remained together within the same surviving parent, yielding no product-vs-process mismatch (gap_45=0). The processes stayed with the same operating structure and the roughly 3,600-employee workforce/segment operations were not severed from the operations that run them, so gap_56=0; the only management discontinuity was the board replacement and departure of the independent-contractor CRO (T6 coded partial), which is a governance change, not a structural stripping of operations from people. No Tier-1 fusion is documented; ownership crossed only at the capital-structure level (old equity cancelled, new securities issued) while the operating enterprise continued whole."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a Chapter 11 reorganization where the parent company and its subsidiaries emerged intact. The pre-petition operating structure, vessels (T4), and operations (T5) were retained, and there is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the surviving parent retained the pre-petition three-segment operating structure and the OIN vehicle holding the International Flag operating entities, while the exit facilities remained collateralized by the corresponding U.S. Flag and International Flag asset pools; this documents no product-versus-process separation at closing, so gap_45 is 0. Although all former directors ceased service, nine new directors immediately began service, while the operating structure remained in place; the slice documents governance replacement but no closing-stage separation of operations from the organization running them, so gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a Chapter 11 reorganization in which the same corporate entity emerged: the plan \\\"retain[ed] the pre-petition three-segment operating structure (Crude Oil, Products, U.S. Flag) and the Marshall Islands subsidiary vehicle (OIN)\\\" \\u2014 so the customer-facing fleet/product (T4) and the operational ship-management processes (T5) remained together within the same surviving parent, yielding no product-vs-process mismatch (gap_45=0). The processes stayed with the same operating structure and the roughly 3,600-employee workforce/segment operations were not severed from the operations that run them, so gap_56=0; the only management discontinuity was the board replacement and departure of the independent-contractor CRO (T6 coded partial), which is a governance change, not a structural stripping of operations from people. No Tier-1 fusion is documented; ownership crossed only at the capital-structure level (old equity cancelled, new securities issued) while the operating enterprise continued whole.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a Chapter 11 reorganization where the parent company and its subsidiaries emerged intact. The pre-petition operating structure, vessels (T4), and operations (T5) were retained, and there is no evidence of a structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing.\"\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the surviving parent retained the pre-petition three-segment operating structure and the OIN vehicle holding the International Flag operating entities, while the exit facilities remained collateralized by the corresponding U.S. Flag and International Flag asset pools; this documents no product-versus-process separation at closing, so gap_45 is 0. Although all former directors ceased service, nine new directors immediately began service, while the operating structure remained in place; the slice documents governance replacement but no closing-stage separation of operations from the organization running them, so gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

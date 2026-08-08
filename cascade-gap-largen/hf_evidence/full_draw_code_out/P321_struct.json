@@ -1,0 +1,85 @@
+{
+  "case_id": "P321",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company, all-cash statutory merger with Validus surviving as a wholly-owned AIG subsidiary and its four operating businesses (Validus Re, Talbot, Western World, AlphaCat) transferring intact as the acquired corporate vehicle; the customer-facing insurance/reinsurance products (T4) and the operations that produce them (T5) crossed the ownership boundary together within the same corporate entity, so no product-vs-process mismatch exists at closing (gap_45=0). T5 was not separated from its running organization/people—the workforce crossed under contractual continuation terms and no carve-out or transitional-services agreement was needed or disclosed—so gap_56=0; the departure of the twelve incumbent directors and the CEO/CFO/GC (T1 replace, T6 partial) is a governance/leadership change within the transferred whole, not a process-without-people structural gap. No transitional-services or shared-services bridge was disclosed because the direct whole-company merger required none."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company merger where the entire corporate entity, including its four operating businesses, transferred intact (T2-T5 = 1-1). The workforce transferred with the entity (T6 = 1-1), though top leadership and the board were replaced (T1 = replace). Because the entire company and its operations transferred together, there were no structural gaps between product and process (gap_45 = 0) or process and organization (gap_56 = 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that this was a whole-company merger in which Validus and its four operating insurance, reinsurance, and asset-management businesses transferred intact, rather than a carve-out, so the customer-facing businesses and their operating processes crossed together (gap_45=0). The workforce also crossed under contractual continuation terms, including continued compensation, benefits, and employment arrangements; although AIG-designated directors replaced the incumbent board and several top executives departed at or shortly after closing, the slice does not document that the transferred processes lacked the personnel or organizational alignment needed to run them at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company, all-cash statutory merger with Validus surviving as a wholly-owned AIG subsidiary and its four operating businesses (Validus Re, Talbot, Western World, AlphaCat) transferring intact as the acquired corporate vehicle; the customer-facing insurance/reinsurance products (T4) and the operations that produce them (T5) crossed the ownership boundary together within the same corporate entity, so no product-vs-process mismatch exists at closing (gap_45=0). T5 was not separated from its running organization/people\\u2014the workforce crossed under contractual continuation terms and no carve-out or transitional-services agreement was needed or disclosed\\u2014so gap_56=0; the departure of the twelve incumbent directors and the CEO/CFO/GC (T1 replace, T6 partial) is a governance/leadership change within the transferred whole, not a process-without-people structural gap. No transitional-services or shared-services bridge was disclosed because the direct whole-company merger required none.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company merger where the entire corporate entity, including its four operating businesses, transferred intact (T2-T5 = 1-1). The workforce transferred with the entity (T6 = 1-1), though top leadership and the board were replaced (T1 = replace). Because the entire company and its operations transferred together, there were no structural gaps between product and process (gap_45 = 0) or process and organization (gap_56 = 0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that this was a whole-company merger in which Validus and its four operating insurance, reinsurance, and asset-management businesses transferred intact, rather than a carve-out, so the customer-facing businesses and their operating processes crossed together (gap_45=0). The workforce also crossed under contractual continuation terms, including continued compensation, benefits, and employment arrangements; although AIG-designated directors replaced the incumbent board and several top executives departed at or shortly after closing, the slice does not document that the transferred processes lacked the personnel or organizational alignment needed to run them at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

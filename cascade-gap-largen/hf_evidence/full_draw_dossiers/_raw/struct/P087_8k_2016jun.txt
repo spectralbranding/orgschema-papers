@@ -1,0 +1,978 @@
+ 
+ EX-99.1
+ 2
+ exhibit991.htm
+ PRO FORMA FINANCIAL INFORMATION
+
+ exhibit991.htm 
+
+ Exhibit 99.1 
+
+ Unaudited Pro Forma Consolidated Financial Information 
+
+ The terms ";Corning,"; ";Company,"; ";we,"; ";us,"; or ";our"; mean Corning Incorporated and subsidiary companies. 
+
+ On May 31, 2016, Corning Incorporated (";Corning"; or the ";Company";) completed the previously announced transaction with The Dow Chemical Company (";TDCC";), Dow Corning Corporation (";DCC";) and HS Upstate Inc. (";NewCo";), pursuant to which, Corning exchanged with DCC its 50% stock interest in DCC for 100% of the stock of NewCo, a newly formed entity which holds approximately 40% ownership interest in Hemlock Semiconductor Operations LLC (formerly, Hemlock Semiconductor Corporation) and 50% ownership interest in Hemlock Semiconductor LLC (collectively, ";Hemlock Semiconductor";), and approximately $4.8 billion in cash (the ";Transaction";). Because Corning';s ownership percentage of Hemlock Semiconductor did not change upon the completion of this exchange, the investment in Hemlock Semiconductor is included in the pro forma consolidated financial statements at its carrying basis. The Transaction was completed pursuant to the Transaction Agreement, dated as of December 10, 2015 (the ";Transaction Agreement";), entered into by TDCC, Corning, DCC and NewCo. The Transaction Agreement was previously described in the Company';s Current Report on Form 8-K filed on December 11, 2015. As contemplated by the Transaction Agreement TDCC is now the holder of 100% of the ownership interests in DCC and Corning is the sole owner of NewCo. 
+
+ The unaudited pro forma financial information is based on, and should be read in conjunction with, the following: 
+
+ &#183; 
+
+ The historical audited financial statements of Corning as of and for the year ended December 31, 2015, included in Corning';s annual report on Form 10-K filed on February 12, 2016; and 
+
+ &#183; 
+
+ The historical unaudited financial statements of Corning as of and for the three months ended March 31, 2016, included in Corning';s quarterly report on Form 10-Q filed on April 29, 2016. 
+
+ The unaudited pro forma consolidated balance sheet was derived from Corning';s unaudited financial statements as of March 31, 2016, and gives effect to the Transaction as if it had occurred on March 31, 2016. The unaudited pro forma consolidated statement of loss for the three months ended March 31, 2016 and unaudited pro forma consolidated statement of income for the year ended December 31, 2015 were derived from the unaudited financial statements of Corning for the three months ended March 31, 2016, and the audited financial statements of Corning for the year ended December 31, 2015 and give effect to the Transaction as if it had occurred on January 1, 2015. 
+
+ The unaudited pro forma consolidated financial information is provided for informational purposes only and does not purport to represent what the actual results of operations or the financial position of the company would have been had the Transaction occurred on the dates assumed, nor are they necessarily indicative of future results of operations or financial position. The unaudited pro forma consolidated financial information was prepared pursuant to the rules and regulations of the Securities and Exchange Commission. 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 1 
+
+ Unaudited Pro Forma Consolidated Balance Sheet 
+
+ As of March 31, 2016 
+
+ (In millions, except share and per share data) 
+
+ The accompanying notes are an integral part of these unaudited pro forma consolidated financial statements. 
+
+ The pro forma adjustments are explained in Note 2. 
+
+ Corning 
+
+ Historical 
+
+ Financial 
+
+ Results 
+
+ Transaction 
+
+ Adjustments 
+
+ Notes 
+
+ Unaudited 
+
+ Pro Forma 
+
+ Combined 
+
+ Assets 
+
+ Current assets: 
+
+ Cash and cash equivalents 
+
+ $ 
+
+ 3,540 
+
+ $ 
+
+ 4,800 
+
+ 2a 
+
+ $ 
+
+ 8,340 
+
+ Trade accounts receivable, net of doubtful accounts and allowances 
+
+ 1,388 
+
+ 1,388 
+
+ Inventories, net of inventory reserves 
+
+ 1,453 
+
+ 1,453 
+
+ Other current assets 
+
+ 797 
+
+ 797 
+
+ Total current assets 
+
+ 7,178 
+
+ 4,800 
+
+ 11,978 
+
+ Investments 
+
+ 2,072 
+
+ (1,463) 
+
+ 2b 
+
+ 609 
+
+ Property, plant and equipment, net of accumulated depreciation 
+
+ 12,823 
+
+ 12,823 
+
+ Goodwill, net 
+
+ 1,399 
+
+ 1,399 
+
+ Other intangible assets, net 
+
+ 703 
+
+ 703 
+
+ Deferred income taxes 
+
+ 2,428 
+
+ 2,428 
+
+ Other assets 
+
+ 1,342 
+
+ 1,342 
+
+ Total Assets 
+
+ $ 
+
+ 27,945 
+
+ $ 
+
+ 3,337 
+
+ $ 
+
+ 31,282 
+
+ Liabilities and Equity 
+
+ Current liabilities: 
+
+ Current portion of long-term debt and short-term borrowings 
+
+ $ 
+
+ 527 
+
+ $ 
+
+ 527 
+
+ Accounts payable 
+
+ 836 
+
+ 836 
+
+ Other accrued liabilities 
+
+ 1,201 
+
+ 1,201 
+
+ Total current liabilities 
+
+ 2,564 
+
+ 2,564 
+
+ Long-term debt 
+
+ 3,910 
+
+ 3,910 
+
+ Postretirement benefits other than pensions 
+
+ 717 
+
+ 717 
+
+ Other liabilities 
+
+ 2,767 
+
+ 2,767 
+
+ Total liabilities 
+
+ 9,958 
+
+ 9,958 
+
+ Shareholders'; equity: 
+
+ Convertible preferred stock, Series A &#8211; Par value $100 per share; Shares authorized 3,100; Shares issued: 2,300 
+
+ 2,300 
+
+ 2,300 
+
+ Common stock &#8211; Par value $0.50 per share; Shares authorized 3.8 billion; Shares issued: 1,682 million 
+
+ 841 
+
+ 841 
+
+ Additional paid-in capital &#8211; common stock 
+
+ 13,638 
+
+ 13,638 
+
+ Retained earnings 
+
+ 13,290 
+
+ $ 
+
+ 3,132 
+
+ 2c 
+
+ 16,422 
+
+ Treasury stock, at cost 
+
+ (10,747) 
+
+ (10,747) 
+
+ Accumulated other comprehensive loss 
+
+ (1,404) 
+
+ 205 
+
+ 2d 
+
+ (1,199) 
+
+ Total shareholders'; equity 
+
+ 17,918 
+
+ 3,337 
+
+ 21,255 
+
+ Noncontrolling interests 
+
+ 69 
+
+ 69 
+
+ Total equity 
+
+ 17,987 
+
+ 3,337 
+
+ 21,324 
+
+ Total Liabilities and Equity 
+
+ $ 
+
+ 27,945 
+
+ $ 
+
+ 3,337 
+
+ $ 
+
+ 31,282 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 2 
+
+ Unaudited Pro Forma Combined Consolidated Statement of Loss 
+
+ Three Months Ended March 31, 2016 
+
+ (In millions, except per share data) 
+
+ The accompanying notes are an integral part of these unaudited pro forma combined consolidated financial statements. 
+
+ The pro forma adjustments are explained in Notes 3 and 4. 
+
+ Corning 
+
+ Historical 
+
+ Financial 
+
+ Results 
+
+ Transaction 
+
+ Adjustments 
+
+ Notes 
+
+ Unaudited 
+
+ Pro Forma 
+
+ Combined 
+
+ Net sales 
+
+ $ 
+
+ 2,047 
+
+ $ 
+
+ 2,047 
+
+ Cost of sales 
+
+ 1,283 
+
+ 1,283 
+
+ Gross margin 
+
+ 764 
+
+ 764 
+
+ Operating expenses: 
+
+ Selling, general and administrative expenses 
+
+ 303 
+
+ 303 
+
+ Research, development and engineering expenses 
+
+ 190 
+
+ 190 
+
+ Amortization of purchased intangibles 
+
+ 14 
+
+ 14 
+
+ Restructuring, impairment and other charges 
+
+ 80 
+
+ 80 
+
+ Operating income 
+
+ 177 
+
+ 177 
+
+ Equity in earnings of affiliated companies 
+
+ 59 
+
+ $ 
+
+ (38) 
+
+ 3a 
+
+ 21 
+
+ Interest income 
+
+ 6 
+
+ 6 
+
+ Interest expense 
+
+ (41) 
+
+ (41) 
+
+ Foreign currency hedge loss, net 
+
+ (894) 
+
+ (894) 
+
+ Other income, net 
+
+ 21 
+
+ 21 
+
+ Loss from continuing operations before income taxes 
+
+ (672) 
+
+ (38) 
+
+ (710) 
+
+ Benefit for income taxes 
+
+ 304 
+
+ (2) 
+
+ 3b 
+
+ 302 
+
+ Net loss attributable to Corning Incorporated 
+
+ $ 
+
+ (368) 
+
+ $ 
+
+ (40) 
+
+ $ 
+
+ (408) 
+
+ Loss per common share attributable to common stockholders: 
+
+ Basic 
+
+ $ 
+
+ (0.36) 
+
+ 4 
+
+ $ 
+
+ (0.39) 
+
+ Diluted 
+
+ $ 
+
+ (0.36) 
+
+ 4 
+
+ $ 
+
+ (0.39) 
+
+ Weighted average shares outstanding: 
+
+ Basic 
+
+ 1,103 
+
+ 4 
+
+ 1,103 
+
+ Diluted 
+
+ 1,103 
+
+ 4 
+
+ 1,103 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 3 
+
+ Unaudited Pro Forma Combined Consolidated Statement of Income 
+
+ Year Ended December 31, 2015 
+
+ (In millions, except per share data) 
+
+ The accompanying notes are an integral part of these unaudited pro forma combined consolidated financial statements. 
+
+ The pro forma adjustments are explained in Notes 3 and 4. 
+
+ Corning 
+
+ Historical 
+
+ Financial 
+
+ Results 
+
+ Transaction 
+
+ Adjustments 
+
+ Notes 
+
+ Unaudited 
+
+ Pro Forma 
+
+ Combined 
+
+ Net sales 
+
+ $ 
+
+ 9,111 
+
+ $ 
+
+ 9,111 
+
+ Cost of sales 
+
+ 5,458 
+
+ 5,458 
+
+ Gross margin 
+
+ 3,653 
+
+ 3,653 
+
+ Operating expenses: 
+
+ Selling, general and administrative expenses 
+
+ 1,523 
+
+ 1,523 
+
+ Research, development and engineering expenses 
+
+ 769 
+
+ 769 
+
+ Amortization of purchased intangibles 
+
+ 54 
+
+ 54 
+
+ Asbestos litigation credit 
+
+ (15) 
+
+ (15) 
+
+ Operating income 
+
+ 1,322 
+
+ 1,322 
+
+ Equity in earnings of affiliated companies 
+
+ 299 
+
+ $ 
+
+ (50) 
+
+ 3a 
+
+ 249 
+
+ Interest income 
+
+ 21 
+
+ 21 
+
+ Interest expense 
+
+ (140) 
+
+ (140) 
+
+ Foreign currency hedge gain, net 
+
+ 85 
+
+ 85 
+
+ Other expense, net 
+
+ (101) 
+
+ (101) 
+
+ Income from continuing operations before income taxes 
+
+ 1,486 
+
+ (50) 
+
+ 1,436 
+
+ Provision for income taxes 
+
+ (147) 
+
+ (61) 
+
+ 3b 
+
+ (208) 
+
+ Net income attributable to Corning Incorporated 
+
+ $ 
+
+ 1,339 
+
+ $ 
+
+ (111) 
+
+ $ 
+
+ 1,228 
+
+ Earnings per common share attributable to common stockholders: 
+
+ Basic 
+
+ $ 
+
+ 1.02 
+
+ 4 
+
+ $ 
+
+ 0.93 
+
+ Diluted 
+
+ $ 
+
+ 1.00 
+
+ 4 
+
+ $ 
+
+ 0.91 
+
+ Weighted average shares outstanding: 
+
+ Basic 
+
+ 1,219 
+
+ 4 
+
+ 1,219 
+
+ Diluted 
+
+ 1,343 
+
+ 4 
+
+ 1,343 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 4 
+
+ Notes to Unaudited Pro Forma Combined Consolidated Financial Statements 
+
+ 1. 
+
+ Basis of Presentation 
+
+ The historical financial statements have been adjusted to give pro forma effect to events that are (i) directly attributable to the Transaction, (ii) factually supportable, and (iii) with respect to the unaudited pro forma consolidated statements of income (loss), expected to have a continuing impact on the combined results. 
+
+ The unaudited pro forma consolidated financial information is presented to show the exchange of Corning';s investment in DCC for 100% of the stock of NewCo, which holds approximately 40% ownership interest in Hemlock Semiconductor Operations LLC (formerly, Hemlock Semiconductor Corporation) and 50% ownership interest in Hemlock Semiconductor LLC (collectively, ";Hemlock Semiconductor";), and approximately $4.8 billion in cash. Because Corning';s ownership percentage of Hemlock Semiconductor did not change upon the completion of this exchange, the investment in Hemlock Semiconductor is included in the pro forma consolidated financial statements at its carrying basis. 
+
+ This unaudited pro forma combined consolidated financial information is not intended to reflect the results which would have actually resulted had the Transaction been effected on the dates indicated. Further, the pro forma results of operations are not necessarily indicative of the results of operations that may be obtained in the future. 
+
+ Transaction Agreement 
+
+ On May 31, 2016, Corning completed the Transaction pursuant to the Transaction Agreement. Under the terms of the Transaction Agreement, Corning exchanged with DCC its 50% stock interest in DCC for 100% of the stock of NewCo, a newly formed entity, which holds an approximately 40% ownership interest in Hemlock Semiconductor Operations LLC (formerly, Hemlock Semiconductor Corporation) and 50% ownership interest in Hemlock Semiconductor LLC (collectively, ";Hemlock Semiconductor";) and approximately $4.8 billion in cash. 
+
+ Consummation of the Transaction was subject to customary closing conditions, including, among others, the (1) receipt of certain required regulatory approvals, (2) receipt and continued validity of certain third party consents, (3) receipt by Corning of tax opinions from its counsel and accountants, (4) consummation of certain reorganization transactions contemplated by the Transaction Agreement, (5) consummation by DCC of the financing contemplated by the Transaction Agreement, and (6) accuracy of the representations and warranties given by the parties. 
+
+ The parties have made customary representations and warranties and agreed to various customary covenants in the Transaction Agreement, including, among others, covenants to conduct the business of DCC and its subsidiaries in the ordinary course between the execution of the Transaction Agreement and the consummation of the Transaction and not to engage in certain actions during such period. The Transaction Agreement also provides for certain indemnification obligations customary for transactions of this nature. 
+
+ Tax Matters Agreement 
+
+ TDCC, Corning, DCC and NewCo entered into a Tax Matters Agreement, dated December 10, 2015 (the ";Tax Matters Agreement";), that provides for the allocation between the parties of liabilities for taxes arising prior to, as a result of, and subsequent to the Transaction, and to provide for other matters relating to taxes. 
+
+ The Tax Matters Agreement provides, in general, that DCC will indemnify Corning for losses, including those relating to failure of the Transaction to qualify for its intended tax treatment, attributable to (i) the breach of certain representations made by TDCC in connection with the Transaction and (ii) the breach of certain covenants made by TDCC and DCC in connection with the Transaction. Similarly, NewCo will indemnify TDCC for losses, including those relating to failure of the Transaction to qualify for its intended tax treatment, attributable to (i) the breach of certain representations made by Corning in connection with the Transaction and (ii) the breach of certain covenants made by Corning and NewCo in connection with the Transaction. 
+
+ DCC, on the one hand, and NewCo, on the other, will each generally be responsible for fifty percent of pre-closing taxes of DCC or NewCo to the extent not described in the preceding paragraph. 
+
+ No such matters have arisen prior to or as a result of the Transaction, nor does the pro forma financial information contain adjustments for these matters. 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 5 
+
+ 2. 
+
+ Unaudited Pro Forma Adjustments &#8211; Balance Sheet 
+
+ The unaudited pro forma consolidated balance sheet has been prepared assuming the Transaction closed on March 31, 2016 with the following pro forma adjustments: 
+
+ 2a) 
+
+ Cash and Cash Equivalents &#8211; Represents NewCo';s cash balance. In the transaction, Corning exchanges its 50% ownership in DCC for 100% of the stock of NewCo. 
+
+ 2b) 
+
+ Investments &#8211; R epresents the reduction of Corning';s equity investment balance in DCC, offset by the carryover basis of Corning';s ownership interest in Hemlock Semiconductor. The adjustments made to investments are as follows (in millions): 
+
+ Elimination of investment in DCC 
+
+ $ 
+
+ (1,565) 
+
+ Carryover basis of Hemlock Semiconductor 
+
+ 102 
+
+ $ 
+
+ (1,463) 
+
+ 2c) 
+
+ Retained Earnings &#8211; The adjustment made to retained earnings includes the net gain of $3.1 billion as a result of Corning';s exchange of its 50% ownership interest in DCC for 100% of the stock of NewCo. 
+
+ 2d) 
+
+ Accumulated other comprehensive loss &#8211; The adjustment of $205 million made to accumulated other comprehensive loss represents the removal of the historical DCC balances at March 31, 2016. This balance is comprised of foreign translation adjustments, unamortized actuarial gains, net unrealized gains on investments and net unrealized gains on designated hedges. 
+
+ 3. 
+
+ Unaudited Pro Forma Adjustments &#8211; Statements of (Loss) Income 
+
+ The unaudited pro forma consolidated statements of (loss) income were prepared assuming the Transaction closed on January 1, 2015 for the three months ended March 31, 2016 and for the year ended December 31, 2015, and include the following pro forma adjustments: 
+
+ 3a) 
+
+ Equity in Earnings of Affiliated Companies &#8211; Represents the elimination of equity earnings recorded by Corning related to DCC and the addition of equity earnings related to NewCo';s ownership interest in Hemlock Semiconductor, as follows: 
+
+ Three 
+
+ months ended 
+
+ March 31, 
+
+ 2016 
+
+ Twelve 
+
+ months ended 
+
+ December 31, 
+
+ 2015 
+
+ Elimination of equity in earnings of DCC 
+
+ $ 
+
+ (56) 
+
+ $ 
+
+ (281) 
+
+ Equity in earnings of Hemlock Semiconductor 
+
+ 18 
+
+ 231 
+
+ $ 
+
+ (38) 
+
+ $ 
+
+ (50) 
+
+ 3b) 
+
+ Provision for Income Taxes &#8211; Represents the income tax effect of the respective pro forma adjustments, as follows: 
+
+ Three 
+
+ months ended 
+
+ March 31, 
+
+ 2016 
+
+ Twelve 
+
+ months ended 
+
+ December 31, 
+
+ 2015 
+
+ Elimination of tax impact of equity in earnings of DCC (tax rate of 7%) 
+
+ $ 
+
+ 4 
+
+ $ 
+
+ 20 
+
+ Tax impact of equity in earnings of Hemlock Semiconductor (tax rate of 35.01%) 
+
+ (6) 
+
+ (81) 
+
+ $ 
+
+ (2) 
+
+ $ 
+
+ (61) 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 6 
+
+ 4. 
+
+ (Loss) Earnings Per Common Share &#8211; (Loss) earnings per common share is adjusted to reflect the Transaction as follows (in millions, except per share amounts): 
+
+ Three 
+
+ months ended 
+
+ March 31, 
+
+ 2016 
+
+ Twelve 
+
+ months ended 
+
+ December 31, 
+
+ 2015 
+
+ Pro forma net (loss) income attributable to Corning Incorporated 
+
+ $ 
+
+ (408) 
+
+ $ 
+
+ 1,228 
+
+ Less: Series A convertible preferred stock dividend 
+
+ (24) 
+
+ (98) 
+
+ Pro forma net (loss) income available to common stockholders - basic 
+
+ (432) 
+
+ 1,130 
+
+ Add: Series A convertible preferred stock dividend 
+
+ 98 
+
+ Pro forma net (loss) income available to common stockholders - diluted 
+
+ $ 
+
+ (432) 
+
+ $ 
+
+ 1,228 
+
+ Weighted-average common shares outstanding &#8211; basic 
+
+ 1,103 
+
+ 1,219 
+
+ Effect of dilutive securities: 
+
+ Stock options and other dilutive securities 
+
+ 9 
+
+ Series A convertible preferred stock 
+
+ 115 
+
+ Weighted-average common shares outstanding &#8211; diluted 
+
+ 1,103 
+
+ 1,343 
+
+ Pro forma basic (loss) earnings per common share 
+
+ $ 
+
+ (0.39) 
+
+ $ 
+
+ 0.93 
+
+ Pro forma diluted (loss) earnings per common share 
+
+ $ 
+
+ (0.39) 
+
+ $ 
+
+ 0.91 
+
+ &#169; 2016 Corning Incorporated. All Rights Reserved. 
+
+ 7 
+

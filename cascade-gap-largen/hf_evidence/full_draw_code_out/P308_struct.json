@@ -1,0 +1,85 @@
+{
+  "case_id": "P308",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a standard bank merger where Athens and its bank subsidiary merge into CapStar and its bank subsidiary (T3 N-1). The products (T4), processes (T5), and organization (T6) of Athens are absorbed into CapStar, with no documented structural mismatch at closing where products transferred without processes or processes without people."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the closing structure is a parallel holding-company and bank-level merger in which Athens Federal’s customer-facing branch/consumer-business products and CapStar’s commercial/private-banking products both move into the single surviving CapStar Bank charter together with the banks’ operations; no product-without-process mismatch is documented at closing (Athens’s data-processing was already third-party outsourced pre-closing). gap_56 is 0 because the same bank-level merger that collapses operations also contractually bridges Athens management/governance via two Athens board seats on CapStar/CapStar Bank and new executive employment agreements effective at closing, so process and organization are structurally aligned rather than severed."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Athens’s consumer and business banking products and branch-delivery franchise were combined with CapStar’s commercial, private-banking, and correspondent-banking franchise in the surviving bank; although Athens outsourced significant data processing, the slice documents no closing-time product-versus-process mismatch. The management and governance substrate was bridged through two Athens director appointments and new CapStar employment agreements for certain Athens executives, so no incoherent process-versus-organization gap is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a standard bank merger where Athens and its bank subsidiary merge into CapStar and its bank subsidiary (T3 N-1). The products (T4), processes (T5), and organization (T6) of Athens are absorbed into CapStar, with no documented structural mismatch at closing where products transferred without processes or processes without people.\"\n\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the closing structure is a parallel holding-company and bank-level merger in which Athens Federal’s customer-facing branch/consumer-business products and CapStar’s commercial/private-banking products both move into the single surviving CapStar Bank charter together with the banks’ operations; no product-without-process mismatch is documented at closing (Athens’s data-processing was already third-party outsourced pre-closing). gap_56 is 0 because the same bank-level merger that collapses operations also contractually bridges Athens management/governance via two Athens board seats on CapStar/CapStar Bank and new executive employment agreements effective at closing, so process and organization are structurally aligned rather than severed.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Athens’s consumer and business banking products and branch-delivery franchise were combined with CapStar’s commercial, private-banking, and correspondent-banking franchise in the surviving bank; although Athens outsourced significant data processing, the slice documents no closing-time product-versus-process mismatch. The management and governance substrate was bridged through two Athens director appointments and new CapStar employment agreements for certain Athens executives, so no incoherent process-versus-organization gap is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

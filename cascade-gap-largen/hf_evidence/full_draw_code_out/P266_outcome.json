@@ -1,0 +1,58 @@
+{
+  "case_id": "P266",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (no separately attributable post-combination outcome record)",
+      "rationale": "The slice documents that Starwood Waypoint Homes deregistered via Form 15-12B on 2017-11-27 and filed no periodic reports thereafter, while the surviving company (Invitation Homes) reports \"one reportable segment\" with no separate breakout of the acquired business. Because no publicly observable, separately attributable 3-5-year trajectory exists, there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5) to code. Both pathways are therefore coded uncertain per the stated rule that inability to determine yields \"uncertain\" and that outcomes must not be inferred from the acquirer's consolidated results."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice explicitly states that there is no publicly observable, separately attributable 3-5-year outcome record for the Starwood Waypoint Homes business. The target deregistered, and the acquirer consolidated all operations into a single segment without breaking out the acquired business. Therefore, no evidence exists to evaluate any post-deal disruption pathways."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that Starwood Waypoint Homes' SEC registration terminated via Form 15-12B shortly after closing and that the surviving company's filings consolidate all operations into a single reportable segment with no breakout of the acquired business. Consequently no publicly observable 3-5-year outcome record exists for product/process or process/organization interfaces, so both pathways are coded uncertain per the slice's own assessment rule. No realized-outcome evidence of any disruption or incoherence is supplied."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (no separately attributable post-combination outcome record)\", \"rationale\": \"The slice documents that Starwood Waypoint Homes deregistered via Form 15-12B on 2017-11-27 and filed no periodic reports thereafter, while the surviving company (Invitation Homes) reports \\\"one reportable segment\\\" with no separate breakout of the acquired business. Because no publicly observable, separately attributable 3-5-year trajectory exists, there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5) to code. Both pathways are therefore coded uncertain per the stated rule that inability to determine yields \\\"uncertain\\\" and that outcomes must not be inferred from the acquirer's consolidated results.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice explicitly states that there is no publicly observable, separately attributable 3-5-year outcome record for the Starwood Waypoint Homes business. The target deregistered, and the acquirer consolidated all operations into a single segment without breaking out the acquired business. Therefore, no evidence exists to evaluate any post-deal disruption pathways.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that Starwood Waypoint Homes' SEC registration terminated via Form 15-12B shortly after closing and that the surviving company's filings consolidate all operations into a single reportable segment with no breakout of the acquired business. Consequently no publicly observable 3-5-year outcome record exists for product/process or process/organization interfaces, so both pathways are coded uncertain per the slice's own assessment rule. No realized-outcome evidence of any disruption or incoherence is supplied.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

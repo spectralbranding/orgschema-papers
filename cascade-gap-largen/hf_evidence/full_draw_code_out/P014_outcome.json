@@ -1,0 +1,58 @@
+{
+  "case_id": "P014",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$14M full impairment of Streem goodwill+intangibles; net income down 45% to $71M",
+      "rationale": "p4_pathway is 1 because the slice documents realized product/process incoherence over time: the acquired Streem technology platform, being integrated into the core home-services business, showed impairment indicators in Q3 2022 and took a full $14M write-off of goodwill and intangibles, with the outcome summary stating the acquired platform \"could not be aligned to support its carrying value.\" p5_pathway is 0 because, while a CEO change and elevated restructuring charges ($20M) occurred, nothing in the slice documents a fracture specifically at the operations/organization interface (no operations-vs-people/culture integration failure is described). The virtual-first workforce, retention improvement to 75.7%, and non-unionized headcount are reported without any documented organizational rupture."
+    },
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$14 million impairment writing off the goodwill and intangibles of its Streem technology reporting unit",
+      "rationale": "The slice documents a $14 million impairment charge writing off the goodwill and intangibles of the Streem technology reporting unit, indicating the acquired platform could not be aligned to support its carrying value, which constitutes product/process disruption (p4=1). There is no documented evidence of process/organization fracture, despite a leadership change and restructuring charges (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$14 million full impairment of Streem goodwill and intangibles",
+      "rationale": "The FY2022 filing documents that Streem was being integrated into the core home-services business, but its carrying amount exceeded fair value, resulting in a $14 million charge that wrote off its remaining goodwill and intangibles. This supports a realized product/process-interface disruption. Although restructuring charges increased and the CEO changed in 2022, the slice does not document operations breaking against people, management, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$14M full impairment of Streem goodwill+intangibles; net income down 45% to $71M\", \"rationale\": \"p4_pathway is 1 because the slice documents realized product/process incoherence over time: the acquired Streem technology platform, being integrated into the core home-services business, showed impairment indicators in Q3 2022 and took a full $14M write-off of goodwill and intangibles, with the outcome summary stating the acquired platform \\\"could not be aligned to support its carrying value.\\\" p5_pathway is 0 because, while a CEO change and elevated restructuring charges ($20M) occurred, nothing in the slice documents a fracture specifically at the operations/organization interface (no operations-vs-people/culture integration failure is described). The virtual-first workforce, retention improvement to 75.7%, and non-unionized headcount are reported without any documented organizational rupture.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$14 million impairment writing off the goodwill and intangibles of its Streem technology reporting unit\",\n  \"rationale\": \"The slice documents a $14 million impairment charge writing off the goodwill and intangibles of the Streem technology reporting unit, indicating the acquired platform could not be aligned to support its carrying value, which constitutes product/process disruption (p4=1). There is no documented evidence of process/organization fracture, despite a leadership change and restructuring charges (p5=0).\"",
+    "openai": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$14 million full impairment of Streem goodwill and intangibles\",\n  \"rationale\": \"The FY2022 filing documents that Streem was being integrated into the core home-services business, but its carrying amount exceeded fair value, resulting in a $14 million charge that wrote off its remaining goodwill and intangibles. This supports a realized product/process-interface disruption. Although restructuring charges increased and the CEO changed in 2022, the slice does not document operations breaking against people, management, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

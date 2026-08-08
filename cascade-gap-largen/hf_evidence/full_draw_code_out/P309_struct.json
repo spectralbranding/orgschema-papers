@@ -1,0 +1,85 @@
+{
+  "case_id": "P309",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states the transaction is a whole-company, all-cash reverse merger in which the Company survives intact as a wholly owned subsidiary under its pre-existing name, with its customer-facing retail business, operating segment, and workforce \"crossing together as a going concern rather than being carved into separate product/process/people components.\" Because the product (T4), operating processes (T5), and organization/people (T6) all transferred together within the surviving entity, there is no documented product-vs-process mismatch (gap_45=0) and no process-vs-people mismatch (gap_56=0). T1 is coded imprint-share because the acquirer took control while the Company's CEO was publicly stated to remain and the surviving corporation continues under its own name; no transitional-services or shared-services agreement was identified, but none was needed since no gap exists (gap_mitigated=NA)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states the deal is a whole-company reverse merger in which 'the customer-facing retail business, operating segment, and workforce ... crossing together as a going concern rather than being carved into separate product/process/people components,' so T4 and T5 moved together (gap_45=0) and T5 and T6 moved together (gap_56=0). CEO continuity and executive-retention/non-compete arrangements are noted as the principal bridges, with no TSA identified; no product-vs-process or process-vs-organization structural mismatch is documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that Whole Foods transferred as a whole-company going concern, with its customer-facing retail business and operating segment crossing together rather than being separated into product and process components, supporting gap_45 = 0 [SRC: SEC accession 0001571049-17-006849, Form DEFM14A]. It also states that the workforce crossed with the business and operations, reinforced by CEO-continuity and executive-retention provisions, so no process-versus-organization mismatch is documented at closing and gap_56 = 0 [SRC: SEC accession 0001571049-17-006849, Form DEFM14A]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The structural summary states the transaction is a whole-company, all-cash reverse merger in which the Company survives intact as a wholly owned subsidiary under its pre-existing name, with its customer-facing retail business, operating segment, and workforce \\\"crossing together as a going concern rather than being carved into separate product/process/people components.\\\" Because the product (T4), operating processes (T5), and organization/people (T6) all transferred together within the surviving entity, there is no documented product-vs-process mismatch (gap_45=0) and no process-vs-people mismatch (gap_56=0). T1 is coded imprint-share because the acquirer took control while the Company's CEO was publicly stated to remain and the surviving corporation continues under its own name; no transitional-services or shared-services agreement was identified, but none was needed since no gap exists (gap_mitigated=NA).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states the deal is a whole-company reverse merger in which 'the customer-facing retail business, operating segment, and workforce ... crossing together as a going concern rather than being carved into separate product/process/people components,' so T4 and T5 moved together (gap_45=0) and T5 and T6 moved together (gap_56=0). CEO continuity and executive-retention/non-compete arrangements are noted as the principal bridges, with no TSA identified; no product-vs-process or process-vs-organization structural mismatch is documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that Whole Foods transferred as a whole-company going concern, with its customer-facing retail business and operating segment crossing together rather than being separated into product and process components, supporting gap_45 = 0 [SRC: SEC accession 0001571049-17-006849, Form DEFM14A]. It also states that the workforce crossed with the business and operations, reinforced by CEO-continuity and executive-retention provisions, so no process-versus-organization mismatch is documented at closing and gap_56 = 0 [SRC: SEC accession 0001571049-17-006849, Form DEFM14A].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

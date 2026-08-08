@@ -1,0 +1,85 @@
+{
+  "case_id": "P200",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "CAC's sole material asset (39% CGP interest, the product/asset layer) already depended on Total Rewards and property-management services supplied by CEC and CES, and CEC was the majority partner and surviving entity, so at closing the T4 asset and the T5 operating processes that produced/delivered it were already co-located within CEC's affiliated structure rather than being split apart—no product-vs-process mismatch (gap_45=0). Likewise, CES employed the personnel running those enterprise services within the same affiliated group being consolidated into the surviving CEC, so the processes and the people/organization running them remained together at closing (gap_56=0). Controlling intent continued because a majority of both CAC and CEC voting stock was beneficially owned by the same Hamlet Holdings LLC (Apollo/TPG affiliates), so no principal was replaced; CAC's separate corporate existence ceased (T3 terminate) via the all-stock merger into surviving CEC."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "CAC merged into CEC, with CAC ceasing to exist (T3 terminate). The assets (T4) and operations (T5) were already deeply intertwined via CGP and CES, and transferred whole (1-1) into the surviving entity. There is no documented structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing, as the merger simply consolidated the existing joint venture structure."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing CAC was a pure holding shell whose sole material asset was the 39% CGP interest already contractually dependent on CEC/CES Total Rewards and property-management processes; the all-stock merger into CEC therefore moved product ownership and those already-shared operating processes together, with no documented product-vs-process mismatch (gap_45=0). CES already employed the personnel providing those cross-affiliate services and the merger simply ended CAC’s separate existence while reconstituting the surviving board under the concurrent CEOC plan, so processes and the operating organization were not separated at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"CAC's sole material asset (39% CGP interest, the product/asset layer) already depended on Total Rewards and property-management services supplied by CEC and CES, and CEC was the majority partner and surviving entity, so at closing the T4 asset and the T5 operating processes that produced/delivered it were already co-located within CEC's affiliated structure rather than being split apart\\u2014no product-vs-process mismatch (gap_45=0). Likewise, CES employed the personnel running those enterprise services within the same affiliated group being consolidated into the surviving CEC, so the processes and the people/organization running them remained together at closing (gap_56=0). Controlling intent continued because a majority of both CAC and CEC voting stock was beneficially owned by the same Hamlet Holdings LLC (Apollo/TPG affiliates), so no principal was replaced; CAC's separate corporate existence ceased (T3 terminate) via the all-stock merger into surviving CEC.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"CAC merged into CEC, with CAC ceasing to exist (T3 terminate). The assets (T4) and operations (T5) were already deeply intertwined via CGP and CES, and transferred whole (1-1) into the surviving entity. There is no documented structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing, as the merger simply consolidated the existing joint venture structure.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing CAC was a pure holding shell whose sole material asset was the 39% CGP interest already contractually dependent on CEC/CES Total Rewards and property-management processes; the all-stock merger into CEC therefore moved product ownership and those already-shared operating processes together, with no documented product-vs-process mismatch (gap_45=0). CES already employed the personnel providing those cross-affiliate services and the merger simply ended CAC’s separate existence while reconstituting the surviving board under the concurrent CEOC plan, so processes and the operating organization were not separated at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

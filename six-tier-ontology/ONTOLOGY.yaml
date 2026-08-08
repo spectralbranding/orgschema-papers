@@ -72,6 +72,19 @@ owns:
       partially (retention contracts at best).
     first_section: "§1"
 
+  - term_key: facet
+    label: "facet"
+    canonical_form: "facet"
+    definition: >-
+      An intrinsic constituent of a tier - what the tier is made of (its culture,
+      data, rules, quality standard, or spec surfaces), as distinct from the tier
+      itself (a stratum) and from an angle (how a tier is read). Additive OST/SBT
+      construct reconciled from the manda five-term method vocabulary 2026-08-01;
+      it does NOT replace "layer", which keeps its canonical corpus senses
+      (including the colloquial synonym for Tier). Its specification depth, where
+      applicable, is the native L0-L5 cascade. RU canonical form: Gran (Грань).
+    first_section: "§1"
+
 imports: []
 refines: []
 

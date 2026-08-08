@@ -1,0 +1,58 @@
+{
+  "case_id": "P042",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of $(57.9) million on revenues of $738.3 million in FY2020",
+      "rationale": "The slice documents a net loss and restructuring charges in FY2020 driven by pandemic-related demand declines and the discontinuation of low-margin products. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) resulting from the transaction, and the company reported no goodwill impairment."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2020 net loss $(57.9)M; no goodwill impairment; assets retained",
+      "rationale": "The slice documents FY2020 inventory write-downs, restructuring, and discontinuation of low-margin/low-demand products as demand- and portfolio-driven (including COVID-related procedure declines), not as product/process interface incoherence over time; annual goodwill tests found no impairment for either reporting unit. No facts are given of operations fracturing against people, management, or culture, so both p4_pathway and p5_pathway are coded 0 (none documented)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$57.9 million net loss on $738.3 million revenue in FY2020'}",
+      "rationale": "{'type': 'string', 'enum': 'The FY2020 inventory write-down, restructuring, and discontinuation of certain products were attributed to reduced demand and low margins, not to a documented failure to align products with operating processes; annual goodwill testing also found no impairment in FY2018-FY2020. The slice documents no realized fracture between operations and people, management, or culture, while the company remained operating with approximately 2,000 employees across North America, Europe, and Asia.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"net loss of $(57.9) million on revenues of $738.3 million in FY2020\",\n\"rationale\": \"The slice documents a net loss and restructuring charges in FY2020 driven by pandemic-related demand declines and the discontinuation of low-margin products. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) resulting from the transaction, and the company reported no goodwill impairment.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2020 net loss $(57.9)M; no goodwill impairment; assets retained\",\n  \"rationale\": \"The slice documents FY2020 inventory write-downs, restructuring, and discontinuation of low-margin/low-demand products as demand- and portfolio-driven (including COVID-related procedure declines), not as product/process interface incoherence over time; annual goodwill tests found no impairment for either reporting unit. No facts are given of operations fracturing against people, management, or culture, so both p4_pathway and p5_pathway are coded 0 (none documented).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$57.9 million net loss on $738.3 million revenue in FY2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The FY2020 inventory write-down, restructuring, and discontinuation of certain products were attributed to reduced demand and low margins, not to a documented failure to align products with operating processes; annual goodwill testing also found no impairment in FY2018-FY2020. The slice documents no realized fracture between operations and people, management, or culture, while the company remained operating with approximately 2,000 employees across North America, Europe, and Asia.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

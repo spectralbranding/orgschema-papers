@@ -1,0 +1,58 @@
+{
+  "case_id": "P253",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "portfolio contracted 103→98 hotels (FY2020→FY2021); $144.8m impairment in FY2021; none attributed to acquired FelCor hotels",
+      "rationale": "The slice contains only consolidated combined-company figures (portfolio contraction 103→98 hotels and $144.8m FY2021 impairment) and explicitly states no filing separately discloses the post-close trajectory of the specific FelCor-acquired hotels, nor identifies any disposition or impairment as originating from that group. With no realized-outcome evidence at the product/process interface, the p4_pathway cannot be determined. Likewise, no documented evidence bears on operations-vs-organization fracture, so p5_pathway is uncertain. All fields are coded uncertain because the absence of a business-specific disclosure precludes a sourced determination of the acquired business's trajectory."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice explicitly states that RLJ's filings do not separately disclose the post-close trajectory of the specific hotels acquired from FelCor. Consequently, there is no documented evidence of any realized disruption at the product/process or process/organization interfaces."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$144.8 million consolidated impairment losses in FY2021'}",
+      "rationale": "{'type': 'string', 'enum': 'RLJ reported that its consolidated portfolio contracted from 103 hotels at year-end 2020 to 98 at year-end 2021 and recorded $144.8 million of impairment losses in FY2021. However, the filing did not attribute any disposition, impairment, brand conversion, or operating result to the hotels acquired from FelCor as an identifiable group, so neither product/process disruption nor process/organization fracture can be determined.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"portfolio contracted 103\\u219298 hotels (FY2020\\u2192FY2021); $144.8m impairment in FY2021; none attributed to acquired FelCor hotels\", \"rationale\": \"The slice contains only consolidated combined-company figures (portfolio contraction 103\\u219298 hotels and $144.8m FY2021 impairment) and explicitly states no filing separately discloses the post-close trajectory of the specific FelCor-acquired hotels, nor identifies any disposition or impairment as originating from that group. With no realized-outcome evidence at the product/process interface, the p4_pathway cannot be determined. Likewise, no documented evidence bears on operations-vs-organization fracture, so p5_pathway is uncertain. All fields are coded uncertain because the absence of a business-specific disclosure precludes a sourced determination of the acquired business's trajectory.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice explicitly states that RLJ's filings do not separately disclose the post-close trajectory of the specific hotels acquired from FelCor. Consequently, there is no documented evidence of any realized disruption at the product/process or process/organization interfaces.\"",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$144.8 million consolidated impairment losses in FY2021\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"RLJ reported that its consolidated portfolio contracted from 103 hotels at year-end 2020 to 98 at year-end 2021 and recorded $144.8 million of impairment losses in FY2021. However, the filing did not attribute any disposition, impairment, brand conversion, or operating result to the hotels acquired from FelCor as an identifiable group, so neither product/process disruption nor process/organization fracture can be determined.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

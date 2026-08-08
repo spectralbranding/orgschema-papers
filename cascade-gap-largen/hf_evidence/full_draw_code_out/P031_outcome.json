@@ -1,0 +1,58 @@
+{
+  "case_id": "P031",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2016 net loss $338M on $636M revenue; $130M impairment; Feb 2016 Chapter 11; ~$2.4bn debt eliminated, existing shareholders no recovery; deregistered 2017",
+      "rationale": "The slice documents realized product/process (asset/operations) incoherence over time: a portion of the drilling fleet was cold stacked and the filing warned the cold-stacked rigs \"will require significant capital investment prior to re-entering service,\" indicating acquired operating assets could not be productively aligned with operations in the outcome window — supporting p4=1. No evidence speaks to a fracture between operations and the people/management/culture of the organization; the distress is financial/asset-related, so p5 is coded uncertain. The slice provides no documentation of controlling-intent archetype incoherence or business-model incompatibility (t1, t2 uncertain), only distress metrics, going-concern doubt, and Chapter 11 with residual indemnity entanglement to the former parent."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy filing and deregistration; existing shareholders received no recovery",
+      "rationale": "The provided slice documents severe financial distress, a Chapter 11 bankruptcy filing, and cold-stacked rigs requiring capital investment. However, it does not document any specific integration failures at the product/process interface (p4) or the process/organization interface (p5)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$2.4 billion of debt eliminated; existing shareholders received no recovery",
+      "rationale": "The FY2016 10-K documents cold-stacked rigs requiring significant capital investment before returning to service, but it does not document an acquired-product/operating-process alignment failure. It also documents Chapter 11, large losses, impairment, and going-concern doubt, but provides no realized evidence that operations fractured against people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2016 net loss $338M on $636M revenue; $130M impairment; Feb 2016 Chapter 11; ~$2.4bn debt eliminated, existing shareholders no recovery; deregistered 2017\", \"rationale\": \"The slice documents realized product/process (asset/operations) incoherence over time: a portion of the drilling fleet was cold stacked and the filing warned the cold-stacked rigs \\\"will require significant capital investment prior to re-entering service,\\\" indicating acquired operating assets could not be productively aligned with operations in the outcome window \\u2014 supporting p4=1. No evidence speaks to a fracture between operations and the people/management/culture of the organization; the distress is financial/asset-related, so p5 is coded uncertain. The slice provides no documentation of controlling-intent archetype incoherence or business-model incompatibility (t1, t2 uncertain), only distress metrics, going-concern doubt, and Chapter 11 with residual indemnity entanglement to the former parent.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 bankruptcy filing and deregistration; existing shareholders received no recovery\",\n  \"rationale\": \"The provided slice documents severe financial distress, a Chapter 11 bankruptcy filing, and cold-stacked rigs requiring capital investment. However, it does not document any specific integration failures at the product/process interface (p4) or the process/organization interface (p5).\"\n}\n}.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$2.4 billion of debt eliminated; existing shareholders received no recovery\",\n  \"rationale\": \"The FY2016 10-K documents cold-stacked rigs requiring significant capital investment before returning to service, but it does not document an acquired-product/operating-process alignment failure. It also documents Chapter 11, large losses, impairment, and going-concern doubt, but provides no realized evidence that operations fractured against people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

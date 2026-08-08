@@ -1,0 +1,58 @@
+{
+  "case_id": "P115",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested within about three and a half years at an approximately $31.4 million pre-tax loss",
+      "rationale": "The divestiture of the Advantage brand was explicitly compelled by regulatory conditions (FTC requirements) related to a separate transaction (the acquisition of Dollar Thrifty), rather than internal operational friction. There is no documented evidence in the slice indicating that product/process incoherence (p4) or process/organization fracture (p5) occurred or drove the outcome."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested ~3.5 yrs post-close at ~$31.4M pre-tax loss; buyer Ch.11 within ~1 yr",
+      "rationale": "p4_pathway is 0 because the slice documents the Advantage disposition solely as an FTC-compelled divestiture tied to the separate Dollar Thrifty deal, with no realized product/process incoherence inside the combined firm. p5_pathway is 0 because the FY2012/FY2013 10-K record likewise contains no fracture at the operations-versus-organization interface; post-sale buyer financing dependence and Simply Wheelz’s Nov 2013 Chapter 11 are external to any internal process/organization breakdown."
+    },
+    "openai": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Divested after ~3.5 years at a $31.4 million pre-tax loss",
+      "rationale": "Product/process disruption is documented by Advantage’s continuing operational dependence after divestiture: the registrant provided up to $45 million in financing and subleased approximately 20,000 vehicles to sustain operations. The subleases were terminated in November 2013, Simply Wheelz entered Chapter 11, and the registrant recognized further losses. No realized breakdown involving management, employees, or culture is documented, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested within about three and a half years at an approximately $31.4 million pre-tax loss\",\n  \"rationale\": \"The divestiture of the Advantage brand was explicitly compelled by regulatory conditions (FTC requirements) related to a separate transaction (the acquisition of Dollar Thrifty), rather than internal operational friction. There is no documented evidence in the slice indicating that product/process incoherence (p4) or process/organization fracture (p5) occurred or drove the outcome.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested ~3.5 yrs post-close at ~$31.4M pre-tax loss; buyer Ch.11 within ~1 yr\",\n  \"rationale\": \"p4_pathway is 0 because the slice documents the Advantage disposition solely as an FTC-compelled divestiture tied to the separate Dollar Thrifty deal, with no realized product/process incoherence inside the combined firm. p5_pathway is 0 because the FY2012/FY2013 10-K record likewise contains no fracture at the operations-versus-organization interface; post-sale buyer financing dependence and Simply Wheelz’s Nov 2013 Chapter 11 are external to any internal process/organization breakdown.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Divested after ~3.5 years at a $31.4 million pre-tax loss\",\n  \"rationale\": \"Product/process disruption is documented by Advantage’s continuing operational dependence after divestiture: the registrant provided up to $45 million in financing and subleased approximately 20,000 vehicles to sustain operations. The subleases were terminated in November 2013, Simply Wheelz entered Chapter 11, and the registrant recognized further losses. No realized breakdown involving management, employees, or culture is documented, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

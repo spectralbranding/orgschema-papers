@@ -1,0 +1,58 @@
+{
+  "case_id": "P122",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered under Section 12(g) on Nov 1, 2018; no separate public outcome record for 2021–2023",
+      "rationale": "The registrant filed a Form 15 terminating registration on November 1, 2018 and filed no periodic reports thereafter, and its assets were absorbed into a separate registrant (W. P. Carey), so no separately audited outcome record exists for the 2021–2023 window. The slice explicitly states any realized outcome scalar for the acquired portfolio is not traceable to a separate primary filing and marks such items [UNVERIFIED]. With no documented post-deal trajectory for the product/process interface or the process/organization interface, neither p4 nor p5 can be determined and both are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice explicitly states that the registrant deregistered and filed no further periodic reports, resulting in no separate public audited outcome record for the 2021-2023 window. Consequently, there is no documented evidence available to assess any realized disruptions at the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the registrant filed Form 15 on November 1, 2018, ending separate public-reporting obligations, and filed no Form 10-K or other periodic reports after the 2018 merger. It further states that no separately audited public financial statements for the former CPA:17 business exist for the 2021–2023 window and that any realized outcome scalar is not traceable to a separate primary filing. With no separate realized record of post-deal operations, neither product/process interface disruption (p4) nor process/organization fracture (p5) can be assessed from documented evidence."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered under Section 12(g) on Nov 1, 2018; no separate public outcome record for 2021\\u20132023\", \"rationale\": \"The registrant filed a Form 15 terminating registration on November 1, 2018 and filed no periodic reports thereafter, and its assets were absorbed into a separate registrant (W. P. Carey), so no separately audited outcome record exists for the 2021\\u20132023 window. The slice explicitly states any realized outcome scalar for the acquired portfolio is not traceable to a separate primary filing and marks such items [UNVERIFIED]. With no documented post-deal trajectory for the product/process interface or the process/organization interface, neither p4 nor p5 can be determined and both are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice explicitly states that the registrant deregistered and filed no further periodic reports, resulting in no separate public audited outcome record for the 2021-2023 window. Consequently, there is no documented evidence available to assess any realized disruptions at the product/process or process/organization interfaces.\"",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the registrant filed Form 15 on November 1, 2018, ending separate public-reporting obligations, and filed no Form 10-K or other periodic reports after the 2018 merger. It further states that no separately audited public financial statements for the former CPA:17 business exist for the 2021–2023 window and that any realized outcome scalar is not traceable to a separate primary filing. With no separate realized record of post-deal operations, neither product/process interface disruption (p4) nor process/organization fracture (p5) can be assessed from documented evidence.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

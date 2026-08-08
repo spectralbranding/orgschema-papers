@@ -1,0 +1,58 @@
+{
+  "case_id": "P006",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$(1,105)M net loss to common shareholders in FY2020 (second consecutive annual loss)",
+      "rationale": "p4_pathway=1: the slice documents a realized product/process disruption in the legacy product book — the Run-off segment of products \"no longer actively sold and separately managed\" recorded sharply deteriorating adjusted earnings of $(1,299)M in 2020 vs $(454)M in 2019 and $(43)M in 2018, and product guarantee liabilities of $2.9B were a documented source of profitability volatility, indicating legacy products could not be aligned with ongoing operations over time. p5_pathway=uncertain: the slice notes exit of MetLife transition services and continuing reliance on third-party providers for policy administration/investment management, but documents no realized fracture at the operations-vs-people/management/culture interface. No evidence in the slice bears on controlling-intent archetype (t1) or business-model reconciliation (t2), so both are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2020 net loss $1,105M (second consecutive annual loss)",
+      "rationale": "The slice documents sharp deterioration in Run-off segment adjusted earnings to $(1,299)M in 2020 and guarantee-liability volatility, but these are financial results of legacy products no longer sold, not a realized product/process-interface alignment failure; p4 is therefore 0. Exit of MetLife transition-services agreements is recorded as a favorable expense impact and third-party administration dependence is disclosed as an ongoing constraint, without evidence that operations fractured against organization/people/culture; p5 is therefore 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$1.105 billion net loss available to common shareholders in FY2020'}",
+      "rationale": "{'type': 'string', 'enum': \"The run-off segment's adjusted loss deteriorated from $43 million in 2018 to $1.299 billion in 2020, but the slice does not document that this resulted from an inability to align products with operating processes, so p4 is 0. The exit of transition services agreements produced favorable expense impacts, while continued third-party-provider dependence was disclosed as a risk; no actual provider failure or realized breakdown between operations and management, people, or culture is documented, so p5 is 0.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$(1,105)M net loss to common shareholders in FY2020 (second consecutive annual loss)\", \"rationale\": \"p4_pathway=1: the slice documents a realized product/process disruption in the legacy product book \\u2014 the Run-off segment of products \\\"no longer actively sold and separately managed\\\" recorded sharply deteriorating adjusted earnings of $(1,299)M in 2020 vs $(454)M in 2019 and $(43)M in 2018, and product guarantee liabilities of $2.9B were a documented source of profitability volatility, indicating legacy products could not be aligned with ongoing operations over time. p5_pathway=uncertain: the slice notes exit of MetLife transition services and continuing reliance on third-party providers for policy administration/investment management, but documents no realized fracture at the operations-vs-people/management/culture interface. No evidence in the slice bears on controlling-intent archetype (t1) or business-model reconciliation (t2), so both are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2020 net loss $1,105M (second consecutive annual loss)\",\n  \"rationale\": \"The slice documents sharp deterioration in Run-off segment adjusted earnings to $(1,299)M in 2020 and guarantee-liability volatility, but these are financial results of legacy products no longer sold, not a realized product/process-interface alignment failure; p4 is therefore 0. Exit of MetLife transition-services agreements is recorded as a favorable expense impact and third-party administration dependence is disclosed as an ongoing constraint, without evidence that operations fractured against organization/people/culture; p5 is therefore 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$1.105 billion net loss available to common shareholders in FY2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The run-off segment's adjusted loss deteriorated from $43 million in 2018 to $1.299 billion in 2020, but the slice does not document that this resulted from an inability to align products with operating processes, so p4 is 0. The exit of transition services agreements produced favorable expense impacts, while continued third-party-provider dependence was disclosed as a risk; no actual provider failure or realized breakdown between operations and management, people, or culture is documented, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P141",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing productive asset base (mining real property, mobile/fixed equipment at loadouts, preparation plants and active mining areas, coal inventory, Assumed Contracts and Transferred Permits) crossed the ownership boundary together with the operational assets that produce and deliver coal (§2.01), so product and process moved coherently together rather than apart. gap_56=1: the operational asset base transferred but the people/organization did NOT transfer automatically — only buyer-selected \"Offered Employees\" who accepted became \"Transferred Employees,\" the Sellers retained all severance liabilities, and top management (CEO plus four directors) departed at closing (§9.02(a); Item 5.02), leaving a documented process-vs-organization mismatch. gap_mitigated=yes: a Transition Services Agreement dated as of the Closing Date was executed and delivered by both Sellers and Buyer among the closing deliverables, contractually bridging the shared substrate at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction was an asset sale under Section 363 where specific mining complexes (T4/T5) were transferred, but employees (T6) did not transfer automatically; the buyer had to make offers to a subset of employees, creating a structural friction/gap between the operational assets and the workforce. This gap was mitigated at closing by a Transition Services Agreement."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The Purchased Assets included selected mining real property, equipment, coal inventory, assumed contracts, and transferred permits, so the customer-facing productive assets and the operational substrate for the selected complexes crossed together; accordingly, gap_45 is 0 (§2.01 and the closing summary). Employees did not transfer automatically, only buyer-selected employees who accepted offers became Transferred Employees, and the CEO and four directors departed at closing, creating a documented process-versus-organization mismatch; accordingly, gap_56 is 1 (§9.02(a) and Form 8-K Item 5.02). A Transition Services Agreement was executed at closing to bridge shared functions, so the documented gap was contractually mitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing productive asset base (mining real property, mobile/fixed equipment at loadouts, preparation plants and active mining areas, coal inventory, Assumed Contracts and Transferred Permits) crossed the ownership boundary together with the operational assets that produce and deliver coal (\\u00a72.01), so product and process moved coherently together rather than apart. gap_56=1: the operational asset base transferred but the people/organization did NOT transfer automatically \\u2014 only buyer-selected \\\"Offered Employees\\\" who accepted became \\\"Transferred Employees,\\\" the Sellers retained all severance liabilities, and top management (CEO plus four directors) departed at closing (\\u00a79.02(a); Item 5.02), leaving a documented process-vs-organization mismatch. gap_mitigated=yes: a Transition Services Agreement dated as of the Closing Date was executed and delivered by both Sellers and Buyer among the closing deliverables, contractually bridging the shared substrate at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction was an asset sale under Section 363 where specific mining complexes (T4/T5) were transferred, but employees (T6) did not transfer automatically; the buyer had to make offers to a subset of employees, creating a structural friction/gap between the operational assets and the workforce. This gap was mitigated at closing by a Transition Services Agreement.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Purchased Assets included selected mining real property, equipment, coal inventory, assumed contracts, and transferred permits, so the customer-facing productive assets and the operational substrate for the selected complexes crossed together; accordingly, gap_45 is 0 (§2.01 and the closing summary). Employees did not transfer automatically, only buyer-selected employees who accepted offers became Transferred Employees, and the CEO and four directors departed at closing, creating a documented process-versus-organization mismatch; accordingly, gap_56 is 1 (§9.02(a) and Form 8-K Item 5.02). A Transition Services Agreement was executed at closing to bridge shared functions, so the documented gap was contractually mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

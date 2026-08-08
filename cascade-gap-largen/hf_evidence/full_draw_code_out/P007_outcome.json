@@ -1,0 +1,58 @@
+{
+  "case_id": "P007",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income attributable to the company of $1,147 million in fiscal 2022",
+      "rationale": "The slice documents restructuring programs to optimize operational and organizational structures and a shift to a global business unit model, but does not document any realized disruption or fracture at the product/process or process/organization interfaces. Therefore, p4 and p5 are coded as 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 net income $1,147M; third consecutive profitable year",
+      "rationale": "The slice documents rising seed and crop-protection net sales and positive net income through FY2022, with no realized product-line/operations incoherence, so p4_pathway is 0. Restructuring and the shift to a global business unit model are framed as productivity optimization with a 'strong employee base,' not as operations fracturing against organization/culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1,147 million net income in FY2022, the third consecutive year of positive net income",
+      "rationale": "No realized product/process-interface disruption is documented; both seed and crop-protection sales increased in 2022 (Form 10-K FY2022, SEC accession 0001755672-23-000005). The successive productivity and restructuring programs optimized operational and organizational structures and accompanied a shift to a global business-unit model, but the slice does not document operations breaking against people, management, or culture; the company also described its approximately 21,000 employees as a key element of its success (same source)."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income attributable to the company of $1,147 million in fiscal 2022\",\n  \"rationale\": \"The slice documents restructuring programs to optimize operational and organizational structures and a shift to a global business unit model, but does not document any realized disruption or fracture at the product/process or process/organization interfaces. Therefore, p4 and p5 are coded as 0.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 net income $1,147M; third consecutive profitable year\",\n  \"rationale\": \"The slice documents rising seed and crop-protection net sales and positive net income through FY2022, with no realized product-line/operations incoherence, so p4_pathway is 0. Restructuring and the shift to a global business unit model are framed as productivity optimization with a 'strong employee base,' not as operations fracturing against organization/culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1,147 million net income in FY2022, the third consecutive year of positive net income\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; both seed and crop-protection sales increased in 2022 (Form 10-K FY2022, SEC accession 0001755672-23-000005). The successive productivity and restructuring programs optimized operational and organizational structures and accompanied a shift to a global business-unit model, but the slice does not document operations breaking against people, management, or culture; the company also described its approximately 21,000 employees as a key element of its success (same source).\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

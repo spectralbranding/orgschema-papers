@@ -1,0 +1,85 @@
+{
+  "case_id": "P191",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-entity cash merger in which \"legal vehicle, subsidiaries, and customer-facing wire/cable product business all crossed together,\" so the customer-facing product (T4) and the operations/subsidiaries producing it (T5) transferred coherently as a single going concern — no product-vs-process mismatch, hence gap_45=0. The same whole-entity transfer carried operations together with continuing employees (base pay/benefits preserved through the first anniversary) and retained two prior administrative officers, so processes and organization moved together despite the board/NEO replacement — hence gap_56=0. T6 is coded partial because the entire board and named-executive slate ceased serving while the broader workforce continued, and T1 is replace since Prysmian installed new controlling intent (new CEO Battaini) over the surviving subsidiary."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-entity merger where the legal vehicle, subsidiaries, and customer-facing wire/cable product business all crossed together at closing. Because the entire operating entity transferred intact, there is no documented structural mismatch between products and processes (gap_45 = 0) or processes and the organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary and 8-K Items 5.01/5.02 state that the surviving General Cable entity, subsidiaries, and customer-facing wire/cable product business all crossed together into Prysmian ownership at the June 6, 2018 effective time, so T4 product and T5 processes moved as one bundle with no product-vs-process mismatch at closing (gap_45=0). Continuing-employee base pay, benefits, bonus, and severance commitments in the DEFM14A kept the operating workforce aligned with those processes at closing, while only the board and named-executive slate were replaced; that leadership swap does not constitute processes transferring without the organization substrate (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-entity cash merger in which \\\"legal vehicle, subsidiaries, and customer-facing wire/cable product business all crossed together,\\\" so the customer-facing product (T4) and the operations/subsidiaries producing it (T5) transferred coherently as a single going concern \\u2014 no product-vs-process mismatch, hence gap_45=0. The same whole-entity transfer carried operations together with continuing employees (base pay/benefits preserved through the first anniversary) and retained two prior administrative officers, so processes and organization moved together despite the board/NEO replacement \\u2014 hence gap_56=0. T6 is coded partial because the entire board and named-executive slate ceased serving while the broader workforce continued, and T1 is replace since Prysmian installed new controlling intent (new CEO Battaini) over the surviving subsidiary.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-entity merger where the legal vehicle, subsidiaries, and customer-facing wire/cable product business all crossed together at closing. Because the entire operating entity transferred intact, there is no documented structural mismatch between products and processes (gap_45 = 0) or processes and the organization (gap_56 = 0).\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary and 8-K Items 5.01/5.02 state that the surviving General Cable entity, subsidiaries, and customer-facing wire/cable product business all crossed together into Prysmian ownership at the June 6, 2018 effective time, so T4 product and T5 processes moved as one bundle with no product-vs-process mismatch at closing (gap_45=0). Continuing-employee base pay, benefits, bonus, and severance commitments in the DEFM14A kept the operating workforce aligned with those processes at closing, while only the board and named-executive slate were replaced; that leadership swap does not constitute processes transferring without the organization substrate (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

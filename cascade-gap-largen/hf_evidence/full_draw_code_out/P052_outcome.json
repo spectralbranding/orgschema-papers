@@ -1,0 +1,58 @@
+{
+  "case_id": "P052",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income attributable to MillerCoors: $1,190.9 million in FY2012",
+      "rationale": "The provided slice documents a stable, jointly controlled venture with a 5+5 board and rising net income. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture between operations and the organization/management (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; MillerCoors NI $1,190.9M FY2012",
+      "rationale": "The slice documents continued integrated production (brew, package, ship, contract brewing, RMMC cans) with only modest volume erosion offset by price/mix, and no product-line/operations incoherence, so p4_pathway=0. Joint 5+5 board control and equity-method dependence on MillerCoors management are described as the ongoing arrangement that delivered rising net income and full distributions, with no realized fracture between operations and organization/culture, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "MillerCoors net income of $1,190.9 million in FY2012, up 18.6%",
+      "rationale": "No realized product/process disruption is documented: MillerCoors remained an integrated producer, continuing brewing, packaging, shipping, contract production, and can sourcing, despite modest volume erosion. No process/organization fracture is documented; MillerCoors management continued day-to-day operations, and the venture generated $1,190.9 million of net income in FY2012 while distributing substantially all recognized income to the registrant."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income attributable to MillerCoors: $1,190.9 million in FY2012\",\n  \"rationale\": \"The provided slice documents a stable, jointly controlled venture with a 5+5 board and rising net income. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture between operations and the organization/management (p5_pathway).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; MillerCoors NI $1,190.9M FY2012\",\n  \"rationale\": \"The slice documents continued integrated production (brew, package, ship, contract brewing, RMMC cans) with only modest volume erosion offset by price/mix, and no product-line/operations incoherence, so p4_pathway=0. Joint 5+5 board control and equity-method dependence on MillerCoors management are described as the ongoing arrangement that delivered rising net income and full distributions, with no realized fracture between operations and organization/culture, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"MillerCoors net income of $1,190.9 million in FY2012, up 18.6%\",\n  \"rationale\": \"No realized product/process disruption is documented: MillerCoors remained an integrated producer, continuing brewing, packaging, shipping, contract production, and can sourcing, despite modest volume erosion. No process/organization fracture is documented; MillerCoors management continued day-to-day operations, and the venture generated $1,190.9 million of net income in FY2012 while distributing substantially all recognized income to the registrant.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

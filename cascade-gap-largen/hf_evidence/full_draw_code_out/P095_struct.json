@@ -1,0 +1,85 @@
+{
+  "case_id": "P095",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Both deals are whole-stock purchases (all issued and outstanding capital stock) that bring the customer-facing product operations under controlling ownership together with their operating processes; the 10-K states acquired businesses \"operate on a stand-alone basis, primarily relying on existing management teams,\" so T4 product, T5 processes, and T6 people/management all cross the boundary coherently as intact going concerns (gap_45=0, gap_56=0). CODI acquires controlling interests but retains existing management and stand-alone operations under CGM oversight, indicating the acquired business's own controlling intent persists (T1 continue) rather than being replaced. No Tier-1 fusion is documented in the deal structure."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Both deals were whole-stock purchases of all issued and outstanding capital stock (Foam into a new Acquisition Sub; Rimports into existing Sterno), so the customer-facing product businesses crossed with their legal entities intact (8-K Item 8.01 accessions 0001345126-18-000009 and -000011). The contemporaneous 10-K states CODI operates acquired businesses on a stand-alone basis, primarily relying on existing management teams for day-to-day operations, meaning T4 product, T5 processes, and T6 organization moved together under controlling ownership with no documented product-vs-process or process-vs-organization structural mismatch at closing. Therefore gap_45 and gap_56 are both 0 and gap_mitigated is NA."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Foam Fabricators and Rimports transactions were whole-stock purchases under which each acquired company became a wholly owned subsidiary, bringing its customer-facing business and operations under CODI's controlling ownership. The closing-era summary states that the product operations, stand-alone operating processes, and existing management teams moved together, consistent with CODI's policy of retaining management and operating acquired businesses on a decentralized, stand-alone basis; therefore, no product-process or process-organization structural gap is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"Both deals are whole-stock purchases (all issued and outstanding capital stock) that bring the customer-facing product operations under controlling ownership together with their operating processes; the 10-K states acquired businesses \\\"operate on a stand-alone basis, primarily relying on existing management teams,\\\" so T4 product, T5 processes, and T6 people/management all cross the boundary coherently as intact going concerns (gap_45=0, gap_56=0). CODI acquires controlling interests but retains existing management and stand-alone operations under CGM oversight, indicating the acquired business's own controlling intent persists (T1 continue) rather than being replaced. No Tier-1 fusion is documented in the deal structure.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Both deals were whole-stock purchases of all issued and outstanding capital stock (Foam into a new Acquisition Sub; Rimports into existing Sterno), so the customer-facing product businesses crossed with their legal entities intact (8-K Item 8.01 accessions 0001345126-18-000009 and -000011). The contemporaneous 10-K states CODI operates acquired businesses on a stand-alone basis, primarily relying on existing management teams for day-to-day operations, meaning T4 product, T5 processes, and T6 organization moved together under controlling ownership with no documented product-vs-process or process-vs-organization structural mismatch at closing. Therefore gap_45 and gap_56 are both 0 and gap_mitigated is NA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The Foam Fabricators and Rimports transactions were whole-stock purchases under which each acquired company became a wholly owned subsidiary, bringing its customer-facing business and operations under CODI's controlling ownership. The closing-era summary states that the product operations, stand-alone operating processes, and existing management teams moved together, consistent with CODI's policy of retaining management and operating acquired businesses on a decentralized, stand-alone basis; therefore, no product-process or process-organization structural gap is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

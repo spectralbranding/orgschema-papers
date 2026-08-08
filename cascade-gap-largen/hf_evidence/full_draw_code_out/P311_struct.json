@@ -1,0 +1,85 @@
+{
+  "case_id": "P311",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction involved the acquisition of Cabela's retail business by Bass Pro Group, while the financial services business (WFB/Cabela's CLUB) was carved out and sold to Synovus and Capital One. Because the credit card product and its associated operations were both carved out together, there is no documented structural mismatch between T4 and T5 (gap_45 = 0). Similarly, there is no evidence of a mismatch between the transferred operations and the organization/people (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice shows the retail/direct customer-facing business crossing to Parent with the surviving Cabela's entity, while the integrated Cabela's CLUB credit-card product was severed entirely and routed with its related operating assets/liabilities to Capital One (and deposits to Synovus) under separate bank asset purchase agreements—i.e., no product crossed this ownership boundary without its processes. gap_56 is 0 because retail operations remained in the surviving corporation whose existing employment, severance, retention and termination plans Parent was obligated to cause to be assumed, honored and continued at closing, so processes and organization were structurally aligned rather than split."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The financial-services carve-out lines state that Capital One acquired the Cabela's CLUB credit-card accounts and related operating assets and liabilities, while Synovus acquired the deposit-related assets and liabilities; thus the customer-facing and operational components were contractually allocated rather than a product being transferred without its delivery processes. The legal-vehicle and employee-arrangement lines state that Cabela's survived as Parent's subsidiary and that existing employment and benefit arrangements would be assumed and honored; although actual personnel allocation is not fully specified, the slice documents no closing-stage process-versus-organization mismatch."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction involved the acquisition of Cabela's retail business by Bass Pro Group, while the financial services business (WFB/Cabela's CLUB) was carved out and sold to Synovus and Capital One. Because the credit card product and its associated operations were both carved out together, there is no documented structural mismatch between T4 and T5 (gap_45 = 0). Similarly, there is no evidence of a mismatch between the transferred operations and the organization/people (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice shows the retail/direct customer-facing business crossing to Parent with the surviving Cabela's entity, while the integrated Cabela's CLUB credit-card product was severed entirely and routed with its related operating assets/liabilities to Capital One (and deposits to Synovus) under separate bank asset purchase agreements—i.e., no product crossed this ownership boundary without its processes. gap_56 is 0 because retail operations remained in the surviving corporation whose existing employment, severance, retention and termination plans Parent was obligated to cause to be assumed, honored and continued at closing, so processes and organization were structurally aligned rather than split.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The financial-services carve-out lines state that Capital One acquired the Cabela's CLUB credit-card accounts and related operating assets and liabilities, while Synovus acquired the deposit-related assets and liabilities; thus the customer-facing and operational components were contractually allocated rather than a product being transferred without its delivery processes. The legal-vehicle and employee-arrangement lines state that Cabela's survived as Parent's subsidiary and that existing employment and benefit arrangements would be assumed and honored; although actual personnel allocation is not fully specified, the slice documents no closing-stage process-versus-organization mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

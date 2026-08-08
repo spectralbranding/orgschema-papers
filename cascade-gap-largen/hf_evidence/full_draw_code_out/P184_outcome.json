@@ -1,0 +1,58 @@
+{
+  "case_id": "P184",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "record $2.41bn revenue and record $577.2M net income in 2022 (up 224%); $132.0M goodwill impairment (Hamilton mine) in Q1 2020; distribution cut to $0.00 in Q2-Q4 2020 then resumed",
+      "rationale": "The slice documents a COVID-driven 2020 downturn (distribution suspended, $132.0M Hamilton goodwill impairment, $23.5M long-lived asset impairment tied to \"weakened coal market conditions\") followed by full recovery to record 2022 revenue and net income, with no goodwill impairments in 2021 or 2022. The impairments and revenue decline are attributed to external market/pandemic and energy-demand factors, not to any product/process misalignment (no p4 evidence) or operations-versus-organization fracture; management continuity is documented (Craft III leading throughout, former AHGP directors retained), indicating no realized process/organization break (no p5 evidence). No documented archetype incoherence or business-model incompatibility appears in the realized record."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "record 2022 revenue $2.41bn / net income $577.2M",
+      "rationale": "The slice documents 2020 goodwill and asset impairments and distribution suspensions as driven by COVID-19 and weakened coal/energy markets, not by inability to align an acquired product with operating processes, so p4_pathway is 0. Governance continuity is expressly reported (Craft CEO since inception; former AHGP directors on the board) with no operations-vs-organization fracture described, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Record 2022 net income of $577.2 million, up 224.0% from 2021",
+      "rationale": "No realized product/process-interface disruption is documented; the 2020 impairments are attributed to adverse industry and market developments, including COVID-19, rather than product-line or operational incoherence. No process/organization fracture is documented, and management continuity is evidenced by Joseph W. Craft III remaining President and CEO throughout the window. The business subsequently achieved record revenue and net income in 2022, with no goodwill impairments in 2021 or 2022."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"record $2.41bn revenue and record $577.2M net income in 2022 (up 224%); $132.0M goodwill impairment (Hamilton mine) in Q1 2020; distribution cut to $0.00 in Q2-Q4 2020 then resumed\", \"rationale\": \"The slice documents a COVID-driven 2020 downturn (distribution suspended, $132.0M Hamilton goodwill impairment, $23.5M long-lived asset impairment tied to \\\"weakened coal market conditions\\\") followed by full recovery to record 2022 revenue and net income, with no goodwill impairments in 2021 or 2022. The impairments and revenue decline are attributed to external market/pandemic and energy-demand factors, not to any product/process misalignment (no p4 evidence) or operations-versus-organization fracture; management continuity is documented (Craft III leading throughout, former AHGP directors retained), indicating no realized process/organization break (no p5 evidence). No documented archetype incoherence or business-model incompatibility appears in the realized record.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"record 2022 revenue $2.41bn / net income $577.2M\",\n  \"rationale\": \"The slice documents 2020 goodwill and asset impairments and distribution suspensions as driven by COVID-19 and weakened coal/energy markets, not by inability to align an acquired product with operating processes, so p4_pathway is 0. Governance continuity is expressly reported (Craft CEO since inception; former AHGP directors on the board) with no operations-vs-organization fracture described, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Record 2022 net income of $577.2 million, up 224.0% from 2021\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; the 2020 impairments are attributed to adverse industry and market developments, including COVID-19, rather than product-line or operational incoherence. No process/organization fracture is documented, and management continuity is evidenced by Joseph W. Craft III remaining President and CEO throughout the window. The business subsequently achieved record revenue and net income in 2022, with no goodwill impairments in 2021 or 2022.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

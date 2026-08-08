@@ -1,0 +1,58 @@
+{
+  "case_id": "P126",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Total assets grew ~$1.32bn to ~$2.53bn; net income rose to $100.0M by FY2019; portfolio 77 properties in 20 states",
+      "rationale": "The slice documents a stable, growing trajectory over the ~4-year window: revenues rose ($93.2M to $174.3M), total assets grew from ~$1.32bn to ~$2.53bn, and net income rose to $100.0M by FY2019, with no documented product/operations incoherence, supporting p4_pathway=0. On the process/organization interface, the registrant retained its external-advisory relationship with LaSalle Investment Management and the same signing CEO (C. Allan Swaringen), with no documented operations-vs-organization fracture, supporting p5_pathway=0. Structural changes noted (UPREIT operating-partnership adoption, \"externally managed\" to \"externally advised\" wording) are documented as continuity, not disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Total assets grew from approximately $1.32 billion to approximately $2.53 billion",
+      "rationale": "The provided slice documents steady growth in revenues, assets, and net income over the 4-year period, with no mention of operational disruptions or product/process misalignment. There is also no evidence of organizational fracture or management clashes, as the same CEO remained and the external advisory relationship continued."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "assets ~$1.32bn to ~$2.53bn; 77 properties retained/grown",
+      "rationale": "The FY2019 10-K documents continued portfolio growth to 77 properties, rising revenues and assets, and net-income recovery with no reported product/process misalignment, so p4_pathway is 0. The same filing shows retention of the external advisor (LaSalle) and the same CEO alongside an UPREIT holding-structure change, with no documented operations-versus-organization fracture, so p5_pathway is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Total assets grew ~$1.32bn to ~$2.53bn; net income rose to $100.0M by FY2019; portfolio 77 properties in 20 states\", \"rationale\": \"The slice documents a stable, growing trajectory over the ~4-year window: revenues rose ($93.2M to $174.3M), total assets grew from ~$1.32bn to ~$2.53bn, and net income rose to $100.0M by FY2019, with no documented product/operations incoherence, supporting p4_pathway=0. On the process/organization interface, the registrant retained its external-advisory relationship with LaSalle Investment Management and the same signing CEO (C. Allan Swaringen), with no documented operations-vs-organization fracture, supporting p5_pathway=0. Structural changes noted (UPREIT operating-partnership adoption, \\\"externally managed\\\" to \\\"externally advised\\\" wording) are documented as continuity, not disruption.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Total assets grew from approximately $1.32 billion to approximately $2.53 billion\",\n  \"rationale\": \"The provided slice documents steady growth in revenues, assets, and net income over the 4-year period, with no mention of operational disruptions or product/process misalignment. There is also no evidence of organizational fracture or management clashes, as the same CEO remained and the external advisory relationship continued.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"assets ~$1.32bn to ~$2.53bn; 77 properties retained/grown\",\n  \"rationale\": \"The FY2019 10-K documents continued portfolio growth to 77 properties, rising revenues and assets, and net-income recovery with no reported product/process misalignment, so p4_pathway is 0. The same filing shows retention of the external advisor (LaSalle) and the same CEO alongside an UPREIT holding-structure change, with no documented operations-versus-organization fracture, so p5_pathway is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

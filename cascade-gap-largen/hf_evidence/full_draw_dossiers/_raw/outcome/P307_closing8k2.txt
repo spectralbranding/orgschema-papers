@@ -1,0 +1,114 @@
+ 
+
+ 8-K 
+
+ TRIBUNE MEDIA CO false 0000726513 0000726513 2019-09-19 2019-09-19 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 Date of Report (Date of earliest event reported): September 19, 2019 TRIBUNE MEDIA COMPANY (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 001-08572 
+ 
+ 36-1880355 
+ 
+ (State or other Jurisdiction of Incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (I.R.S. Employer Identification Number) 
+
+ 515 North State Street , Chicago , Illinois 
+ 
+ 60654 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) Registrant';s telephone number, including area code: (312) 222-3394 Not Applicable (Former name or former address, if changed since last report.) Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions ( see General Instruction A.2. below): 
+
+ &#9744; &#32; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; &#32; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; &#32; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; &#32; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+ 
+ Trading Symbol(s) 
+ 
+ Name of each exchange on which registered 
+ 
+ Class A Common Stock, $0.001 par value per share 
+ 
+ TRCO 
+ 
+ The New York Stock Exchange Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167; 240.12b-2 of this chapter). Emerging growth company &#9744; If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Introduction On September 19, 2019, Tribune Media Company, a Delaware corporation ("; Tribune ";), completed its previously announced merger with Nexstar Media Group, Inc., a Delaware corporation ("; Nexstar ";), pursuant to the Agreement and Plan of Merger (the "; Merger Agreement ";), dated November 30, 2018, by and among Tribune, Nexstar and Titan Merger Sub, Inc., a Delaware corporation and a wholly owned subsidiary of Nexstar ("; Merger Sub ";), providing for the acquisition by Nexstar of all of the outstanding shares of Tribune Class A common stock, par value $0.001 per share (the "; Tribune Class A Stock ";) and Tribune Class B common stock, par value $0.001 per share (the "; Tribune Class B Stock ";, and together with the Tribune Class A Stock, the "; Tribune Stock ";), by means of a merger of Merger Sub with and into Tribune (the "; Merger ";), with Tribune surviving the Merger as a wholly owned subsidiary of Nexstar. At the effective time of the Merger (the "; Effective Time ";), each share of Tribune Stock outstanding as of the Effective Time was converted into the right to receive $46.687397 in cash, without interest and less any required withholding taxes (such amount, as adjusted as provided below, the "; Merger Consideration ";). At the Effective time, each option to purchase shares of Tribune Stock outstanding as of immediately prior to the Effective Time (a "; Tribune Stock Option ";) was cancelled and converted into the right to receive a cash payment equal to the excess, if any, of the value of the Merger Consideration over the exercise price per share of such Tribune Stock Option, without any interest and subject to all applicable withholding. Any Tribune Stock Option that had an exercise price per share that was greater than or equal to the Merger Consideration was cancelled for no consideration or payment. At the Effective Time, each award of Tribune restricted stock units outstanding as of immediately prior to the Effective Time ("; Tribune RSUs ";) immediately vested and was cancelled and converted into the right to receive a cash payment equal to the product of the total number of shares of Tribune Stock underlying such Tribune RSUs multiplied by the Merger Consideration, without any interest and subject to all applicable withholding (the "; RSU Consideration ";), except that each award of Tribune RSUs granted to an employee on or after December 1, 2018 (other than Tribune RSUs required to be granted pursuant to employment agreements or offer letters) ("; Annual Tribune RSUs ";) that had vested as of the Effective Time was cancelled and converted into the right to receive the RSU Consideration and any Annual Tribune RSUs that remained unvested as of the Effective Time was cancelled for no consideration or payment. At the Effective Time, each award of Tribune performance stock units outstanding as of immediately prior to the Effective Time ("; Tribune PSUs ";) immediately vested (with performance conditions for each open performance period as of the closing date deemed achieved at the applicable ";target"; level performance for such Tribune PSUs) and was cancelled and converted into the right to receive a cash payment equal to the product of the total number of shares of Tribune Stock underlying such Tribune PSUs multiplied by the Merger Consideration, without any interest and subject to all applicable withholding. Each outstanding award of Tribune deferred stock units outstanding as of immediately prior to the Effective Time ("; Tribune DSUs ";) was cancelled and converted into the right to receive a cash payment equal to the product of the total number of shares of Tribune Stock underlying such Tribune DSUs multiplied by the Merger Consideration, without interest and subject to all applicable withholding. The foregoing description of the Merger and the Merger Agreement does not purport to be complete and is subject to, and qualified in its entirety by, the full text of the Merger Agreement, which is filed as Exhibit 2.1 to Tribune';s Current Report on Form 8-K filed with the SEC on December 4, 2018 and is incorporated by reference herein. Concurrently with the closing of the Merger, Tribune (i) repaid all obligations under the Credit Agreement, dated as of December 27, 2013, among Tribune, JPMorgan Chase Bank, N.A., as administrative agent, collateral agent, swing line lender and l/c issuer, and the other lenders party thereto (as amended, supplemented, waived or otherwise modified from time to time, the "; Existing Credit Agreement ";), and (ii) redeemed all of Tribune';s outstanding 5.875% Senior Notes due 2022 issued pursuant to the Indenture, dated as of June 24, 2015, among Tribune, the subsidiary guarantors from time to time party thereto and The Bank of New York Mellon Trust Company, N.A., as trustee (as amended and supplemented, the "; Existing Indenture ";). The Existing Credit Agreement and the Existing Indenture were each terminated in connection with such transactions. The material terms of the Existing Credit Agreement and the Existing Indenture are described under ";Management';s Discussion and Analysis of Financial Condition and Results of Operations--Liquidity and Capital Resources"; in Tribune';s Annual Report on Form 10-K for the year ended December 31, 2018. 
+
+ Item 1.01. 
+ Entry into a Material Definitive Agreement. On September 19, 2019, Tribune and certain of its subsidiaries entered into supplemental indentures to (i) the Indenture (the ";6.125% Indenture";), dated as of January 29, 2015, among Nexstar Broadcasting, Inc. (";NBI";), as issuer, the guarantors party thereto from time to time, and Wells Fargo Bank, National Association, as trustee, relating to NBI';s $275,000,000 of 6.125% Senior Notes due 2022 (";6.125% Notes";), (ii) the Indenture (the ";5.625% Indenture";), dated as of July 27, 2016, among NBI (as successor to Nexstar Escrow Corporation), as issuer, the guarantors party thereto from time to time, and Wells Fargo Bank, National Association, as trustee, relating to NBI';s $900,000,000 of 5.625% Senior Notes due 2024 (";5.625% Notes";), (iii) the Indenture (the ";5.875% Indenture";), dated as of November 5, 2014, among NBI (as successor to LIN Television Corporation), as issuer, the guarantors party thereto from time to time, and The Bank of New York Mellon, as trustee, relating to NBI';s $400,000,000 of 5.875% Senior Notes due 2022 (";5.875% Notes";) and (iv) the Indenture (the ";2027 Indenture";), dated July 3, 2019, between Nexstar Escrow, Inc. (the ";Escrow Issuer";), as issuer and Citibank, N.A., as trustee, relating to the Escrow Issuer';s $1,120,000,000 of 5.625% Senior Notes due 2027 (";2027 Notes"; and, collectively with the 6.125% Notes, the 5.625% Notes and the 5.875% Notes, the ";Notes";), pursuant to which they will guarantee the Notes. Reference is made to (i) the 6.125% Indenture and the 6.125% Notes filed as Exhibit 4.1 to Nexstar';s Current Report on Form 8-K, filed with the SEC on January 30, 2015, (ii) the 5.625% Indenture and the 5.625% Notes filed as Exhibit 4.1 to Nexstar';s Current Report on Form 8-K, filed with the SEC on July 29, 2016, (iii) the 5.875% Indenture and the 5.875% Notes filed as Exhibit 4.1 to Media General, Inc.';s Current Report on Form 8-K, filed with the SEC on November 5, 2014 and (iv) the 2027 Indenture and the 2027 Notes filed as Exhibit 4.1 to Nexstar';s Current Report on Form 8-K, filed with the SEC on July 3, 2019. 
+
+ Item 1.02 
+ Termination of a Material Definitive Agreement. The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. 
+
+ Item 2.01 
+ Completion of Acquisition or Disposition of Assets. The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. Item 2.03 Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant. The information set forth in the Item 1.01 above is incorporated by reference into this Item 2.03. 
+
+ Item 3.01 
+ Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. On September 19, 2019, in connection with the consummation of the Merger, Tribune notified the New York Stock Exchange ("; NYSE ";) of the completion of the Merger and requested that trading in the Tribune Class A Stock be withdrawn from listing on the NYSE. The NYSE filed a notification of removal from listing on Form 25 with the Securities and Exchange Commission ("; SEC ";) with respect to the Tribune Class A Stock to report the delisting of the Tribune Class A Common Stock from the NYSE and to suspend trading of the Tribune Class A Stock on the NYSE prior to the opening of trading on September 19, 2019. Tribune intends to file with the SEC a certificate of notice of termination on Form 15 with respect to the Tribune Class A Stock, requesting that the Tribune Class A Stock be deregistered under the Securities Exchange Act of 1934, as amended (the "; Exchange Act ";), and that the reporting obligations of Tribune with respect to the Tribune Class A Stock under Sections 13 and 15(d) of the Exchange Act be suspended. 
+
+ Item 3.03 
+ Material Modification to Rights of Security Holders. The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. In connection with the Merger, at the Effective Time, holders of the Tribune Stock immediately prior to such time ceased to have any rights as stockholders of Tribune (other than their right to receive the Merger Consideration pursuant to the terms of the Merger Agreement). 
+
+ Item 5.01 
+ Changes in Control of Registrant. The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. In accordance with the terms of the Merger Agreement, at the Effective Time, each of the five directors of Tribune prior to consummation of the Merger (Craig A. Jacobson, Peter M. Kern, Ross Levinsohn, Peter E. Murphy and Laura R. Walker) ceased to be directors of Tribune. In accordance with the terms of the Merger Agreement, the directors of Merger Sub in office immediately prior to consummation of the Merger (Perry Sook, Thomas Carter and Elizabeth Ryder) are the directors of Tribune and will be the directors of Tribune until their successors have been duly elected or appointed and qualified, or until their earlier death, resignation, incapacity or removal. Additionally, at the Effective Time, each of Peter M. Kern, Chandler Bigelow, Lawrence Wert and Gavin Harvey resigned from and ceased to hold his respective position as an officer of Tribune. The officers of Tribune following the Effective Time will be Perry Sook, Thomas Carter and Elizabeth Ryder. 
+
+ Item 5.03 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. The information set forth in the section above titled ";Introduction"; of this Current Report on Form 8-K is incorporated herein by reference. At the Effective Time, the certificate of incorporation of Tribune, as in effect immediately prior to the Merger, was amended and restated in its entirety to be in the form of the certificate of incorporation set forth as Exhibit A to the Merger Agreement (the "; Amended and Restated Certificate of Incorporation ";). In addition, at the Effective Time, Tribune';s bylaws, as in effect immediately prior to the Merger, were amended and restated in their entirety (the "; Amended and Restated Bylaws ";). Copies of the Amended and Restated Certificate of Incorporation of Tribune and the Amended and Restated Bylaws of Tribune are attached as Exhibits 3.1 and 3.2, respectively, to this Current Report on Form 8-K and incorporated herein by reference. 
+
+ Item 9.01 
+ Financial Statements and Exhibits. 
+
+ Exhibit No. 
+
+ Description 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated as of November 30, 2018, by and among Tribune Media Company, Nexstar Media Group, Inc. and Titan Merger Sub, Inc. (incorporated by reference to Exhibit 2.1 to the Current Report on Form 8-K of Tribune Media Company filed on December 4, 2018) 
+
+ 3.1 
+
+ Amended and Restated Certificate of Incorporation of Tribune Media Company 
+
+ 3.2 
+
+ Amended and Restated Bylaws of Tribune Media Company 
+
+ 104 
+
+ Cover Page Interactive Data File - the cover page iXBRL tags are embedded within the Inline XBRL document. 
+
+ SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Date: September 20, 2019 
+
+ Tribune Media Company 
+
+ By: 
+ 
+ /s/ Thomas E. Carter 
+
+ Name: 
+ 
+ Thomas E. Carter 
+
+ Title: 
+ 
+ Treasurer 
+

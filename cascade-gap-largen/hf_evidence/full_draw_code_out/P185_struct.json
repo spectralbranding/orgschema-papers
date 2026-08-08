@@ -1,0 +1,85 @@
+{
+  "case_id": "P185",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 = 0: the deal was a full merger of Pandora into a wholly-owned Sirius XM subsidiary (not a carve-out), so the customer-facing streaming product (T4) crossed together with Pandora's operating entity and processes as a whole; the slice states the parties operated independently and no substrate was severed, so product and its processes moved together. gap_56 = 1: at closing Pandora's CEO and CFO departed with only brief two/three-month paid consulting transitions rather than continuing employment, and the parties' own disclosures flagged integrating differing personnel, histories, and cultures as a difficulty — indicating operations transferred without the top management/organization aligning coherently alongside. gap_mitigated = no: the slice expressly states no transition-services, shared-services, or comparable bridging contract for shared operational substrate was identified at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a full acquisition where Pandora became a wholly-owned subsidiary of Sirius XM. The product (T4) and its underlying operational processes (T5) transferred together in their entirety, resulting in no gap_45. Similarly, while the CEO and CFO departed at closing, the broader organization and personnel (T6) transferred alongside the operations (T5), meaning there is no documented structural gap_56 at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Pandora’s customer-facing streaming service transferred through a full-company merger rather than a carve-out, and the slice states that this structure did not require a separate operational bridge; thus no product-process mismatch is documented at closing. By contrast, Pandora’s CEO and CFO stepped down at closing and continued only under brief consulting arrangements, while the proxy identified the integration of personnel and differing cultures as a structural challenge, documenting incomplete alignment between the transferred operations and organization. No transition-services, shared-services, or comparable bridging agreement was identified to absorb that gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 = 0: the deal was a full merger of Pandora into a wholly-owned Sirius XM subsidiary (not a carve-out), so the customer-facing streaming product (T4) crossed together with Pandora's operating entity and processes as a whole; the slice states the parties operated independently and no substrate was severed, so product and its processes moved together. gap_56 = 1: at closing Pandora's CEO and CFO departed with only brief two/three-month paid consulting transitions rather than continuing employment, and the parties' own disclosures flagged integrating differing personnel, histories, and cultures as a difficulty \\u2014 indicating operations transferred without the top management/organization aligning coherently alongside. gap_mitigated = no: the slice expressly states no transition-services, shared-services, or comparable bridging contract for shared operational substrate was identified at closing.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a full acquisition where Pandora became a wholly-owned subsidiary of Sirius XM. The product (T4) and its underlying operational processes (T5) transferred together in their entirety, resulting in no gap_45. Similarly, while the CEO and CFO departed at closing, the broader organization and personnel (T6) transferred alongside the operations (T5), meaning there is no documented structural gap_56 at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"Pandora’s customer-facing streaming service transferred through a full-company merger rather than a carve-out, and the slice states that this structure did not require a separate operational bridge; thus no product-process mismatch is documented at closing. By contrast, Pandora’s CEO and CFO stepped down at closing and continued only under brief consulting arrangements, while the proxy identified the integration of personnel and differing cultures as a structural challenge, documenting incomplete alignment between the transferred operations and organization. No transition-services, shared-services, or comparable bridging agreement was identified to absorb that gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

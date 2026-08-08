@@ -1,0 +1,58 @@
+{
+  "case_id": "P085",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income attributable to Verizon fell from $11,497M (2013) to $9,625M (2014); acquired 100% of Verizon Wireless for ~$130bn",
+      "rationale": "The slice explicitly states Verizon Wireless \"continued to be operated and reported as the same consolidated segment both before and after the February 2014 ownership change; no reorganization of the customer-facing product, its operating network, or its management is documented,\" driving a p4_pathway of 0. Likewise, the outcome summary states \"no disruption at the product/process or process/organization interfaces is documented, as the segment's operations and management continued unchanged,\" driving a p5_pathway of 0. The documented realized effects are purely financial/tax/financing (higher effective tax rate, higher interest expense, lower net income), not interface disruptions."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "100% ownership retained; net income $9.6bn in 2014 vs $11.5bn in 2013",
+      "rationale": "The slice states that Verizon Wireless continued as the same consolidated reportable segment with no reorganization of the customer-facing product, operating network, or management after the February 2014 ownership change, and that the transaction was accounted for as an equity transaction while Verizon retained controlling financial interest throughout. The outcome summary explicitly records that no disruption at the product/process or process/organization interfaces is documented, as the segment's operations and management continued unchanged in the company's reporting. Therefore both p4_pathway and p5_pathway are coded 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "100% ownership acquired for approximately $130 billion",
+      "rationale": "Verizon Wireless continued as the same consolidated reportable segment before and after the February 2014 ownership change, with no documented reorganization of its customer-facing product or operating network; therefore, no product/process disruption is documented. The slice likewise reports no accompanying management reorganization and explicitly states that operations and management continued unchanged, so no process/organization fracture is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net income attributable to Verizon fell from $11,497M (2013) to $9,625M (2014); acquired 100% of Verizon Wireless for ~$130bn\", \"rationale\": \"The slice explicitly states Verizon Wireless \\\"continued to be operated and reported as the same consolidated segment both before and after the February 2014 ownership change; no reorganization of the customer-facing product, its operating network, or its management is documented,\\\" driving a p4_pathway of 0. Likewise, the outcome summary states \\\"no disruption at the product/process or process/organization interfaces is documented, as the segment's operations and management continued unchanged,\\\" driving a p5_pathway of 0. The documented realized effects are purely financial/tax/financing (higher effective tax rate, higher interest expense, lower net income), not interface disruptions.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"100% ownership retained; net income $9.6bn in 2014 vs $11.5bn in 2013\",\n  \"rationale\": \"The slice states that Verizon Wireless continued as the same consolidated reportable segment with no reorganization of the customer-facing product, operating network, or management after the February 2014 ownership change, and that the transaction was accounted for as an equity transaction while Verizon retained controlling financial interest throughout. The outcome summary explicitly records that no disruption at the product/process or process/organization interfaces is documented, as the segment's operations and management continued unchanged in the company's reporting. Therefore both p4_pathway and p5_pathway are coded 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"100% ownership acquired for approximately $130 billion\",\n  \"rationale\": \"Verizon Wireless continued as the same consolidated reportable segment before and after the February 2014 ownership change, with no documented reorganization of its customer-facing product or operating network; therefore, no product/process disruption is documented. The slice likewise reports no accompanying management reorganization and explicitly states that operations and management continued unchanged, so no process/organization fracture is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

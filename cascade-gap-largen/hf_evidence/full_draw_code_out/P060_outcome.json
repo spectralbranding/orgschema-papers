@@ -1,0 +1,58 @@
+{
+  "case_id": "P060",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2013 net loss $400.2M; Chapter 11 filed Feb 5, 2015; delisted/deregistered 2015; no public record for ~2016–2018 window",
+      "rationale": "The slice documents no in-window (~2016–2018) public record: the registrant's last 10-K was FY2013, it delisted (Form 25-NSE, March 2015) and deregistered (Form 15-12B, October 2015) before the outcome window opened, so no audited outcome record exists. The pre-window trajectory (FY2013 net loss of $400.2M, a program to close up to 1,100 stores, and a Feb 5, 2015 Chapter 11 filing) describes overall financial distress but contains no evidence isolating a product/process interface disruption (p4) or a process/organization fracture (p5). Because the specific interfaces cannot be determined from the documented distress and no in-window record is observable, both p4 and p5 are coded uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that after 2015 delisting and Exchange Act deregistration no audited public financials exist for the fixed ~2016–2018 window, so the in-window realized record is not publicly observable. No primary-source line documents product/process-interface disruption (p4) or process/organization-interface fracture (p5) at the 3–5 year horizon; absence of such documented evidence codes both pathways 0. Pre-window losses, store-closure charges, and the 2015 Chapter 11 filing are outside the outcome window and do not supply p4/p5 interface evidence."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no audited public financial statements exist for the fixed 2016–2018 window following the registrant's 2015 delisting and deregistration. It also states that no retrieved public record documents the Asian retail entity's subsequent trajectory, so neither product/process disruption nor process/organization fracture can be determined."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2013 net loss $400.2M; Chapter 11 filed Feb 5, 2015; delisted/deregistered 2015; no public record for ~2016\\u20132018 window\", \"rationale\": \"The slice documents no in-window (~2016\\u20132018) public record: the registrant's last 10-K was FY2013, it delisted (Form 25-NSE, March 2015) and deregistered (Form 15-12B, October 2015) before the outcome window opened, so no audited outcome record exists. The pre-window trajectory (FY2013 net loss of $400.2M, a program to close up to 1,100 stores, and a Feb 5, 2015 Chapter 11 filing) describes overall financial distress but contains no evidence isolating a product/process interface disruption (p4) or a process/organization fracture (p5). Because the specific interfaces cannot be determined from the documented distress and no in-window record is observable, both p4 and p5 are coded uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that after 2015 delisting and Exchange Act deregistration no audited public financials exist for the fixed ~2016–2018 window, so the in-window realized record is not publicly observable. No primary-source line documents product/process-interface disruption (p4) or process/organization-interface fracture (p5) at the 3–5 year horizon; absence of such documented evidence codes both pathways 0. Pre-window losses, store-closure charges, and the 2015 Chapter 11 filing are outside the outcome window and do not supply p4/p5 interface evidence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no audited public financial statements exist for the fixed 2016–2018 window following the registrant's 2015 delisting and deregistration. It also states that no retrieved public record documents the Asian retail entity's subsequent trajectory, so neither product/process disruption nor process/organization fracture can be determined.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P328",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "absorbed into single consolidated segment; no separately observable outcome for acquired business",
+      "rationale": "The acquired business was fully absorbed into PacWest, which reported as one consolidated segment throughout FY2020-FY2021 and never names \"CU Bancorp\" or \"California United Bank\" in its filings, so no distinct product/process trajectory is separately observable to assess p4. Likewise, the slice documents no operations-vs-organization fracture — only that the acquired entity ceased separate reporting and its results are undifferentiated within the acquirer's consolidated figures — leaving p5 indeterminable. Because the outcome for the acquired business is explicitly stated to be not publicly observable within the window, disruption at these interfaces can neither be confirmed nor ruled out."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not publicly observable",
+      "rationale": "The slice explicitly states that PacWest reported as a single consolidated segment and there is no public 3-5-year outcome record specific to the acquired business. Therefore, no disruptions or fractures at the product/process or process/organization interfaces are documented."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that PacWest's FY2020 and FY2021 10-Ks contain no name reference, segment, or disclosed trajectory for the CU Bancorp / California United Bank business and that the acquired business's outcome is not publicly observable within the window. No realized product/process interface disruption (p4) or process/organization fracture (p5) is documented; absence of such evidence codes both pathways to 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"absorbed into single consolidated segment; no separately observable outcome for acquired business\", \"rationale\": \"The acquired business was fully absorbed into PacWest, which reported as one consolidated segment throughout FY2020-FY2021 and never names \\\"CU Bancorp\\\" or \\\"California United Bank\\\" in its filings, so no distinct product/process trajectory is separately observable to assess p4. Likewise, the slice documents no operations-vs-organization fracture \\u2014 only that the acquired entity ceased separate reporting and its results are undifferentiated within the acquirer's consolidated figures \\u2014 leaving p5 indeterminable. Because the outcome for the acquired business is explicitly stated to be not publicly observable within the window, disruption at these interfaces can neither be confirmed nor ruled out.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not publicly observable\",\n  \"rationale\": \"The slice explicitly states that PacWest reported as a single consolidated segment and there is no public 3-5-year outcome record specific to the acquired business. Therefore, no disruptions or fractures at the product/process or process/organization interfaces are documented.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that PacWest's FY2020 and FY2021 10-Ks contain no name reference, segment, or disclosed trajectory for the CU Bancorp / California United Bank business and that the acquired business's outcome is not publicly observable within the window. No realized product/process interface disruption (p4) or process/organization fracture (p5) is documented; absence of such evidence codes both pathways to 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

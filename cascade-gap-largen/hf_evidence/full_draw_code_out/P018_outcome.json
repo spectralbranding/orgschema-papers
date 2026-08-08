@@ -1,0 +1,58 @@
+{
+  "case_id": "P018",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income attributable to common shareholders of $109.5 million (2019)",
+      "rationale": "The slice documents Urban Edge Properties operating successfully as an independent public company five years post-separation, with steady profitability and ongoing portfolio management. There is no evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; independent going concern; FY2019 NI attr. common $109.5M",
+      "rationale": "The slice documents UE as an ongoing independent operator of 74 shopping centers, four malls and a warehouse park (~15.2M sf) with ~1,100 leases and reported FY2019 profitability, with no realized product/process misalignment or inability to run the portfolio. Management and organization show continuity (founding Chairman/CEO Olson still signing the FY2019 10-K; 117 employees; headquarters retained) and only routine dispositions/redevelopment, with no documented operations-vs-organization fracture over the window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$116.2 million net income in FY2019",
+      "rationale": "No realized product/process disruption is documented; approximately five years after separation, UE continued operating 74 shopping centers, four malls, and a warehouse park totaling about 15.2 million square feet. No process/organization fracture is documented; UE had 117 employees, continuity of its Chairman/CEO, and remained profitable, with FY2019 net income of $116.2 million."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"net income attributable to common shareholders of $109.5 million (2019)\",\n\"rationale\": \"The slice documents Urban Edge Properties operating successfully as an independent public company five years post-separation, with steady profitability and ongoing portfolio management. There is no evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; independent going concern; FY2019 NI attr. common $109.5M\",\n  \"rationale\": \"The slice documents UE as an ongoing independent operator of 74 shopping centers, four malls and a warehouse park (~15.2M sf) with ~1,100 leases and reported FY2019 profitability, with no realized product/process misalignment or inability to run the portfolio. Management and organization show continuity (founding Chairman/CEO Olson still signing the FY2019 10-K; 117 employees; headquarters retained) and only routine dispositions/redevelopment, with no documented operations-vs-organization fracture over the window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$116.2 million net income in FY2019\",\n  \"rationale\": \"No realized product/process disruption is documented; approximately five years after separation, UE continued operating 74 shopping centers, four malls, and a warehouse park totaling about 15.2 million square feet. No process/organization fracture is documented; UE had 117 employees, continuity of its Chairman/CEO, and remained profitable, with FY2019 net income of $116.2 million.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

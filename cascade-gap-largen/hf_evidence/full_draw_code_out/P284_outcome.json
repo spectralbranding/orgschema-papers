@@ -1,0 +1,58 @@
+{
+  "case_id": "P284",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered ~13 days after closing (Form 15-12G, 2017-07-31); no entity-level public outcome record for 2020-2022 window; announced SPAC public-listing (Panera Brands via USHG) not consummated",
+      "rationale": "The entity was acquired whole and deregistered within two weeks of closing, so no audited public financial or operating record exists for Panera Bread itself in the ~2020-2022 window; the slice explicitly states the \"realized outcome for the matched entity is not publicly observable within the fixed window.\" No documented product/process incoherence or operations-vs-organization fracture appears in the realized record, but this reflects absence of any observable outcome data rather than affirmative evidence of no disruption, so p4 and p5 are coded uncertain. The only entity-adjacent developments (2021 brand consolidation under JAB and an announced-but-unconsummated SPAC listing) do not document any product/process or process/organization disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice contains no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The entity was deregistered shortly after closing, and the only post-deal developments noted are a brand consolidation and an unconsummated SPAC merger, with no operational or integration failures reported."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that because Panera was acquired whole and deregistered, there is no public audited outcome record for the entity in the ~2020-2022 window and the realized outcome is not publicly observable. No evidence is provided of product/process interface disruption (p4) or of operations-versus-organization fracture (p5); the only adjacent record is an uncompleted SPAC combination for a related Panera Brands vehicle, which does not document either pathway."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered ~13 days after closing (Form 15-12G, 2017-07-31); no entity-level public outcome record for 2020-2022 window; announced SPAC public-listing (Panera Brands via USHG) not consummated\", \"rationale\": \"The entity was acquired whole and deregistered within two weeks of closing, so no audited public financial or operating record exists for Panera Bread itself in the ~2020-2022 window; the slice explicitly states the \\\"realized outcome for the matched entity is not publicly observable within the fixed window.\\\" No documented product/process incoherence or operations-vs-organization fracture appears in the realized record, but this reflects absence of any observable outcome data rather than affirmative evidence of no disruption, so p4 and p5 are coded uncertain. The only entity-adjacent developments (2021 brand consolidation under JAB and an announced-but-unconsummated SPAC listing) do not document any product/process or process/organization disruption.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The provided slice contains no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The entity was deregistered shortly after closing, and the only post-deal developments noted are a brand consolidation and an unconsummated SPAC merger, with no operational or integration failures reported.\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that because Panera was acquired whole and deregistered, there is no public audited outcome record for the entity in the ~2020-2022 window and the realized outcome is not publicly observable. No evidence is provided of product/process interface disruption (p4) or of operations-versus-organization fracture (p5); the only adjacent record is an uncompleted SPAC combination for a related Panera Brands vehicle, which does not document either pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

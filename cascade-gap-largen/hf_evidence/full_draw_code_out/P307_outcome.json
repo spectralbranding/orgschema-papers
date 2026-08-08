@@ -1,0 +1,58 @@
+{
+  "case_id": "P307",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "deal terminated in 2018; acquired by Nexstar in 2019",
+      "rationale": "The slice documents that the 2017 agreement with Sinclair was terminated by Tribune in August 2018. Because the transaction did not close, there was no post-deal integration, and thus no product/process or process/organization integration fractures could occur or be documented."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Sinclair deal terminated Aug 2018; Nexstar acquisition closed Sept 2019; deregistered",
+      "rationale": "The slice documents that the 2017 Sinclair agreement never closed (Tribune terminated it on 9 Aug 2018), so no combined-entity product/process interface existed to disrupt; p4 is therefore 0. No evidence is given of operations-vs-organization fracture over any post-close horizon for either the aborted Sinclair deal or the later Nexstar close (Tribune’s board/officers were replaced and the firm deregistered within days, with no further Tribune-specific integration record); p5 is therefore 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'transaction terminated in August 2018 without closing'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice states that Tribune terminated the Sinclair agreement on August 9, 2018, and subsequently continued operating as a standalone public company through fiscal 2018. Because that transaction never closed, the realized record documents no post-combination product/process disruption (p4) or process/organization fracture (p5).'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"deal terminated in 2018; acquired by Nexstar in 2019\",\n  \"rationale\": \"The slice documents that the 2017 agreement with Sinclair was terminated by Tribune in August 2018. Because the transaction did not close, there was no post-deal integration, and thus no product/process or process/organization integration fractures could occur or be documented.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Sinclair deal terminated Aug 2018; Nexstar acquisition closed Sept 2019; deregistered\",\n  \"rationale\": \"The slice documents that the 2017 Sinclair agreement never closed (Tribune terminated it on 9 Aug 2018), so no combined-entity product/process interface existed to disrupt; p4 is therefore 0. No evidence is given of operations-vs-organization fracture over any post-close horizon for either the aborted Sinclair deal or the later Nexstar close (Tribune’s board/officers were replaced and the firm deregistered within days, with no further Tribune-specific integration record); p5 is therefore 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"transaction terminated in August 2018 without closing\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice states that Tribune terminated the Sinclair agreement on August 9, 2018, and subsequently continued operating as a standalone public company through fiscal 2018. Because that transaction never closed, the realized record documents no post-combination product/process disruption (p4) or process/organization fracture (p5).\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

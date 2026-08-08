@@ -1,0 +1,58 @@
+{
+  "case_id": "P199",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The acquired entity deregistered at closing (Form 15-12B) and Boeing's FY2021 10-K does not separately name or disclose results for the KLX/Boeing Distribution Services business, so no realized-outcome scalar for the fixed window is traceable. The only integration reference (2019–2020, predating the window) is a Boeing statement about \"streamlining\" combined processes and operations under unified branding, which is a plan statement, not a documented product/process or process/organization disruption. Both p4 and p5 are therefore uncertain because the slice explicitly states that no divestiture, impairment, or restructuring specific to the business could be determined and no performance data was located."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that the acquired business was not separately disclosed in Boeing's filings during the 2021-2023 window, and no performance scalar or specific outcome data could be located. Consequently, there is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that Boeing's FY2021 10-K contains no separate naming or disclosure of KLX/Aerospace Solutions/Boeing Distribution Services results, and states that no realized-record financial or operational scalar specific to the business in the ~2021–2023 window is publicly traceable. No product/process interface disruption (p4) or process/organization fracture (p5) is documented; press notes on branding/integration predate the window and describe streamlining rather than realized incoherence. Absence of documented pathway evidence codes as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented\", \"rationale\": \"The acquired entity deregistered at closing (Form 15-12B) and Boeing's FY2021 10-K does not separately name or disclose results for the KLX/Boeing Distribution Services business, so no realized-outcome scalar for the fixed window is traceable. The only integration reference (2019\\u20132020, predating the window) is a Boeing statement about \\\"streamlining\\\" combined processes and operations under unified branding, which is a plan statement, not a documented product/process or process/organization disruption. Both p4 and p5 are therefore uncertain because the slice explicitly states that no divestiture, impairment, or restructuring specific to the business could be determined and no performance data was located.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that the acquired business was not separately disclosed in Boeing's filings during the 2021-2023 window, and no performance scalar or specific outcome data could be located. Consequently, there is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents that Boeing's FY2021 10-K contains no separate naming or disclosure of KLX/Aerospace Solutions/Boeing Distribution Services results, and states that no realized-record financial or operational scalar specific to the business in the ~2021–2023 window is publicly traceable. No product/process interface disruption (p4) or process/organization fracture (p5) is documented; press notes on branding/integration predate the window and describe streamlining rather than realized incoherence. Absence of documented pathway evidence codes as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

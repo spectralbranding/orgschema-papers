@@ -1,0 +1,58 @@
+{
+  "case_id": "P088",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$1,502m noncash equity-investment impairment in Q4 2015 (book value reduced to $10,185m); Train 1 first LNG achieved, no divestiture",
+      "rationale": "The slice documents a functioning operating division of labor with no realized friction: \"Origin operates APLNG's upstream production and pipeline system, and we [ConocoPhillips] operate the downstream LNG facility,\" and Train 1 \"achieved first LNG in the fourth quarter of 2015 and the first cargo sailed in January 2016\" — so no product/process incoherence is documented (p4=0). No disruption at the operations/organization interface is described; the three-party governance (\"shares with Origin Energy and Sinopec the power to direct the key activities\") and operator split functioned to first cargo, so p5=0. The only adverse realized scalar is the $1,502m impairment, explicitly attributed to \"a sharp deterioration in the crude oil and natural gas price outlook,\" an external commodity-price driver, not archetype incoherence (t1=0) or business-model incompatibility (t2=0)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1,502 million impairment of equity investment",
+      "rationale": "The slice reports that the venture successfully reached its first major commercial milestone (Train 1 first LNG) under a clear operating split (Origin upstream, ConocoPhillips downstream). There is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1,502M noncash impairment of APLNG equity investment (FY2015)",
+      "rationale": "The slice documents no product/process interface disruption: under the reported Origin-upstream / ConocoPhillips-downstream split, Train 1 achieved first LNG in Q4 2015 and first cargo sailed in January 2016, with fully subscribed trains and long-term sales contracts in place. No process/organization fracture is documented either; ConocoPhillips continued equity-method accounting as a non-primary beneficiary sharing power with Origin and Sinopec, and the sole adverse scalar is a $1,502 million price-outlook impairment, not an operations-vs-organization failure. Absence of realized pathway evidence codes both p4 and p5 as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"~$1,502m noncash equity-investment impairment in Q4 2015 (book value reduced to $10,185m); Train 1 first LNG achieved, no divestiture\", \"rationale\": \"The slice documents a functioning operating division of labor with no realized friction: \\\"Origin operates APLNG's upstream production and pipeline system, and we [ConocoPhillips] operate the downstream LNG facility,\\\" and Train 1 \\\"achieved first LNG in the fourth quarter of 2015 and the first cargo sailed in January 2016\\\" \\u2014 so no product/process incoherence is documented (p4=0). No disruption at the operations/organization interface is described; the three-party governance (\\\"shares with Origin Energy and Sinopec the power to direct the key activities\\\") and operator split functioned to first cargo, so p5=0. The only adverse realized scalar is the $1,502m impairment, explicitly attributed to \\\"a sharp deterioration in the crude oil and natural gas price outlook,\\\" an external commodity-price driver, not archetype incoherence (t1=0) or business-model incompatibility (t2=0).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1,502 million impairment of equity investment\",\n  \"rationale\": \"The slice reports that the venture successfully reached its first major commercial milestone (Train 1 first LNG) under a clear operating split (Origin upstream, ConocoPhillips downstream). There is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1,502M noncash impairment of APLNG equity investment (FY2015)\",\n  \"rationale\": \"The slice documents no product/process interface disruption: under the reported Origin-upstream / ConocoPhillips-downstream split, Train 1 achieved first LNG in Q4 2015 and first cargo sailed in January 2016, with fully subscribed trains and long-term sales contracts in place. No process/organization fracture is documented either; ConocoPhillips continued equity-method accounting as a non-primary beneficiary sharing power with Origin and Sinopec, and the sole adverse scalar is a $1,502 million price-outlook impairment, not an operations-vs-organization failure. Absence of realized pathway evidence codes both p4 and p5 as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

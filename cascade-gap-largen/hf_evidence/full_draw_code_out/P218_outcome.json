@@ -1,0 +1,58 @@
+{
+  "case_id": "P218",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Gallup refinery indefinitely idled with ~$253M asset-specific impairments (2020); Martinez refinery converted to renewable diesel via 50/50 Neste JV (closed Sep 21, 2022)",
+      "rationale": "p4_pathway=1: the slice documents realized product/process incoherence at the asset level — acquired Andeavor-heritage refineries could not be sustained as petroleum-refining operations over time, with the Gallup, NM refinery \"indefinitely idled\" plus asset-specific impairment charges ($142M PP&E, $67M terminal, $44M salvage revision) and the Martinez, CA refinery repositioned/converted from petroleum refining to renewable-diesel manufacturing via a 50/50 JV closing Sep 21, 2022. p5_pathway=0: although ~2,050 employees were affected by workforce-reduction and refinery-exit actions, the slice frames these as consequences of the asset repositioning/idling (driven by COVID-19 and commodity-price declines) and documents no fracture specifically at the operations-versus-people/management/culture interface. t1 and t2 are uncertain because the acquirer consolidated Andeavor into existing segments and disclosed no Andeavor-specific archetype or business-model outcome; no source isolates the acquired business's aggregate trajectory."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.20-1.24 billion impairment expense related to MPLX goodwill associated with the ANDX businesses",
+      "rationale": "The slice documents strategic repositioning of specific assets, such as converting the Martinez refinery to renewable fuels and idling the Gallup refinery, along with associated impairments and restructuring costs. However, there is no documented evidence of disruption specifically at the product/process interface (p4) or fracture between operations and the organization/culture (p5) over time."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Martinez converted through a 50/50 renewable-fuels JV targeting ~730 million gallons/year",
+      "rationale": "The FY2022 filing documents the Martinez refinery’s strategic conversion from petroleum refining to renewable-fuels production, but does not describe a failure to align an acquired product with operating processes. The 2020 record documents refinery idling, $195 million of exit costs, and workforce reductions, but does not identify a fracture between operations and management, employees, or culture. Accordingly, neither a product/process disruption nor a process/organization integration failure is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Gallup refinery indefinitely idled with ~$253M asset-specific impairments (2020); Martinez refinery converted to renewable diesel via 50/50 Neste JV (closed Sep 21, 2022)\", \"rationale\": \"p4_pathway=1: the slice documents realized product/process incoherence at the asset level \\u2014 acquired Andeavor-heritage refineries could not be sustained as petroleum-refining operations over time, with the Gallup, NM refinery \\\"indefinitely idled\\\" plus asset-specific impairment charges ($142M PP&E, $67M terminal, $44M salvage revision) and the Martinez, CA refinery repositioned/converted from petroleum refining to renewable-diesel manufacturing via a 50/50 JV closing Sep 21, 2022. p5_pathway=0: although ~2,050 employees were affected by workforce-reduction and refinery-exit actions, the slice frames these as consequences of the asset repositioning/idling (driven by COVID-19 and commodity-price declines) and documents no fracture specifically at the operations-versus-people/management/culture interface. t1 and t2 are uncertain because the acquirer consolidated Andeavor into existing segments and disclosed no Andeavor-specific archetype or business-model outcome; no source isolates the acquired business's aggregate trajectory.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.20-1.24 billion impairment expense related to MPLX goodwill associated with the ANDX businesses\",\n  \"rationale\": \"The slice documents strategic repositioning of specific assets, such as converting the Martinez refinery to renewable fuels and idling the Gallup refinery, along with associated impairments and restructuring costs. However, there is no documented evidence of disruption specifically at the product/process interface (p4) or fracture between operations and the organization/culture (p5) over time.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Martinez converted through a 50/50 renewable-fuels JV targeting ~730 million gallons/year\",\n  \"rationale\": \"The FY2022 filing documents the Martinez refinery’s strategic conversion from petroleum refining to renewable-fuels production, but does not describe a failure to align an acquired product with operating processes. The 2020 record documents refinery idling, $195 million of exit costs, and workforce reductions, but does not identify a fracture between operations and management, employees, or culture. Accordingly, neither a product/process disruption nor a process/organization integration failure is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

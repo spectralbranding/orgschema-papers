@@ -1,0 +1,85 @@
+{
+  "case_id": "P079",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "partial",
+      "sigma_T4": "partial",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The slice explicitly notes that the party contributing the solar-cell technology and process know-how (SPTL) is not the party that nominates the operating chief executive of the manufacturing entity (AUO), creating a structural mismatch between the operational processes and the management running them (gap_56). This gap is mitigated at closing by licensing and joint-development agreements, a shared board, and deadlock-resolution mechanisms."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "partial",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because at closing the JVC both manufactures the customer-facing product (solar cells sold cost-plus to SPSW and AUO) and receives the producing processes alongside it: SPTL and AUO each license background IP into the JVC and the venture is to deploy SunPower cell technology/process know-how together with AUO manufacturing expertise to install and operate Fab 3. gap_56 is 1 because the same closing instruments assign process/technology contribution to SPTL while giving AUO the right to nominate the JVC CEO (SPTL nominates only the CFO), a documented process-vs-operating-organization mismatch; that gap is contractually absorbed at closing by the royalty-free cross-licenses, joint-development agreements, seven-year supply agreements, and 50/50 board governance."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The solar cells and their producing processes were colocated in the JVC: it would manufacture and sell the cells using SunPower technology and process know-how together with AUO manufacturing expertise, governed by royalty-free licenses and joint-development arrangements [SRC: SEC accession 0001193125-10-129898, Form 8-K Item 1.01]. Although the technology contributor and CEO nominator differed, the operating organization was coherently allocated at closing through a shared board, AUO's CEO nomination right, and SPTL's CFO nomination right, so no process-versus-organization gap is documented [SRC: SEC accession 0001193125-10-129898, Form 8-K Item 1.01]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"partial\",\n\"sigma_T3\": \"partial\",\n\"sigma_T4\": \"partial\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The slice explicitly notes that the party contributing the solar-cell technology and process know-how (SPTL) is not the party that nominates the operating chief executive of the manufacturing entity (AUO), creating a structural mismatch between the operational processes and the management running them (gap_56). This gap is mitigated at closing by licensing and joint-development agreements, a shared board, and deadlock-resolution mechanisms.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"partial\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45 is 0 because at closing the JVC both manufactures the customer-facing product (solar cells sold cost-plus to SPSW and AUO) and receives the producing processes alongside it: SPTL and AUO each license background IP into the JVC and the venture is to deploy SunPower cell technology/process know-how together with AUO manufacturing expertise to install and operate Fab 3. gap_56 is 1 because the same closing instruments assign process/technology contribution to SPTL while giving AUO the right to nominate the JVC CEO (SPTL nominates only the CFO), a documented process-vs-operating-organization mismatch; that gap is contractually absorbed at closing by the royalty-free cross-licenses, joint-development agreements, seven-year supply agreements, and 50/50 board governance.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The solar cells and their producing processes were colocated in the JVC: it would manufacture and sell the cells using SunPower technology and process know-how together with AUO manufacturing expertise, governed by royalty-free licenses and joint-development arrangements [SRC: SEC accession 0001193125-10-129898, Form 8-K Item 1.01]. Although the technology contributor and CEO nominator differed, the operating organization was coherently allocated at closing through a shared board, AUO's CEO nomination right, and SPTL's CFO nomination right, so no process-versus-organization gap is documented [SRC: SEC accession 0001193125-10-129898, Form 8-K Item 1.01].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "partial",
+    "sigma_T3": "partial",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P281",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the slice shows the customer-facing banking franchise (deposits, loans, trust, branch network) was \"absorbed into First Financial Bank's operations,\" i.e., the product moved together with its delivering operational processes into the surviving bank, with no documented product-vs-process split at closing. gap_56=0: the operating processes and the people/management crossed alongside each other — six MainSource directors, the MainSource CEO becoming combined-company CEO, and three named executives continued as officers, and the board cited \"similar cultures... and similar management philosophies with respect to credit and operations,\" indicating organizational alignment moved with the processes. T1 is coded imprint-share because both boards and both CEOs are co-present (Davis as Executive Chairman, Brown as President/CEO) rather than one intent fully replacing the other. T3 terminates because both the MainSource holding company and its bank charter did not survive the merger."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that MainSource's customer-facing banking franchise (T4) was absorbed directly into First Financial's operations (T5) with no structural mismatch. Furthermore, the operational processes (T5) transferred alongside the organization and management (T6), as evidenced by MainSource's CEO becoming the combined company's CEO and other executives continuing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the MainSource community-banking franchise (deposits, loans, trust services, branch network) was absorbed into First Financial Bank concurrently with MainSource Bank merging into First Financial Bank as surviving charter, so product and operating vehicle moved together with no product-vs-process mismatch at closing. gap_56 is 0 because the same closing structure transferred a substantial controlling-management cohort alongside operations: six MainSource directors onto the expanded board, Archie Brown as combined-company CEO, three named MainSource executives continuing as First Financial officers, plus contractual Greensburg job-retention and community-contribution commitments."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the slice shows the customer-facing banking franchise (deposits, loans, trust, branch network) was \\\"absorbed into First Financial Bank's operations,\\\" i.e., the product moved together with its delivering operational processes into the surviving bank, with no documented product-vs-process split at closing. gap_56=0: the operating processes and the people/management crossed alongside each other \\u2014 six MainSource directors, the MainSource CEO becoming combined-company CEO, and three named executives continued as officers, and the board cited \\\"similar cultures... and similar management philosophies with respect to credit and operations,\\\" indicating organizational alignment moved with the processes. T1 is coded imprint-share because both boards and both CEOs are co-present (Davis as Executive Chairman, Brown as President/CEO) rather than one intent fully replacing the other. T3 terminates because both the MainSource holding company and its bank charter did not survive the merger.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice documents that MainSource's customer-facing banking franchise (T4) was absorbed directly into First Financial's operations (T5) with no structural mismatch. Furthermore, the operational processes (T5) transferred alongside the organization and management (T6), as evidenced by MainSource's CEO becoming the combined company's CEO and other executives continuing.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states the MainSource community-banking franchise (deposits, loans, trust services, branch network) was absorbed into First Financial Bank concurrently with MainSource Bank merging into First Financial Bank as surviving charter, so product and operating vehicle moved together with no product-vs-process mismatch at closing. gap_56 is 0 because the same closing structure transferred a substantial controlling-management cohort alongside operations: six MainSource directors onto the expanded board, Archie Brown as combined-company CEO, three named MainSource executives continuing as First Financial officers, plus contractual Greensburg job-retention and community-contribution commitments.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

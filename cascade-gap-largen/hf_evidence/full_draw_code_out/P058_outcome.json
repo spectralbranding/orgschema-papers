@@ -1,0 +1,58 @@
+{
+  "case_id": "P058",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "bought remaining 30% interest for $33.8 million",
+      "rationale": "The provided slice documents that the project remained in the exploration and pre-development stage with no proven reserves, and the registrant acquired the remaining 30% interest. There is no documented evidence of product/process disruption (p4_pathway) or organizational/cultural fracture (p5_pathway) during the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired remaining 30% for $33.8M; retained in pre-development, no reserves",
+      "rationale": "The slice documents that as of December 31, 2012 the Creede (Equity and Bulldog) properties remained in exploration/pre-development with costs expensed for lack of proven and probable reserves and no production realized; this is continued pre-development status, not a documented product/process alignment failure, so p4_pathway=0. No evidence is given of operations-versus-organization, management, or cultural fracture over the window, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No production or proven and probable reserves by FY2012",
+      "rationale": "The properties remained in exploration/pre-development as of December 31, 2012, with no proven and probable reserves, but the slice does not document that this resulted from product/process misalignment or operational incoherence. It also reports no realized management, workforce, cultural, or organizational fracture affecting operations; therefore, neither the p4 nor p5 pathway is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"bought remaining 30% interest for $33.8 million\",\n  \"rationale\": \"The provided slice documents that the project remained in the exploration and pre-development stage with no proven reserves, and the registrant acquired the remaining 30% interest. There is no documented evidence of product/process disruption (p4_pathway) or organizational/cultural fracture (p5_pathway) during the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired remaining 30% for $33.8M; retained in pre-development, no reserves\",\n  \"rationale\": \"The slice documents that as of December 31, 2012 the Creede (Equity and Bulldog) properties remained in exploration/pre-development with costs expensed for lack of proven and probable reserves and no production realized; this is continued pre-development status, not a documented product/process alignment failure, so p4_pathway=0. No evidence is given of operations-versus-organization, management, or cultural fracture over the window, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"No production or proven and probable reserves by FY2012\",\n  \"rationale\": \"The properties remained in exploration/pre-development as of December 31, 2012, with no proven and probable reserves, but the slice does not document that this resulted from product/process misalignment or operational incoherence. It also reports no realized management, workforce, cultural, or organizational fracture affecting operations; therefore, neither the p4 nor p5 pathway is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

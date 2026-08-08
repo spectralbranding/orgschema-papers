@@ -1,0 +1,58 @@
+{
+  "case_id": "P056",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "~$930.1M (FY2011) + $327.8M (FY2012) goodwill impairments; net loss $1.33bn FY2011; Chapter 11 (Apr 2013), pre-existing common stock cancelled, delisted from NASDAQ, 100% control to Roust Trading",
+      "rationale": "The slice documents realized product/asset-value deterioration at the product/operations interface: the FY2012 trademark and customer-relationships impairments are explicitly attributed to \"the related underperformance of certain brands in Russia, primarily Kaufman, Zhuravli and Parliament ... due to the continued lower performance as compared to our expectations,\" alongside multi-year goodwill impairments on the Poland/Russia core business — supporting p4=1. For the process/organization interface, the slice records financial and control outcomes (net losses, Chapter 11, delisting, control passing to Roust Trading) but documents no realized operations-versus-people/management/culture fracture, so p5 is coded uncertain rather than affirmed or denied. The archetype (t1) and business-model reconciliation (t2) channels are not addressed by any in-window evidence in the slice."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "entered a prepackaged Chapter 11 under which the pre-existing common stock was cancelled",
+      "rationale": "The provided evidence details severe financial distress, including massive goodwill impairments and a Chapter 11 bankruptcy filing. However, it does not document specific operational integration failures between products and processes (p4) or between operations and organizational culture (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 (2013); equity cancelled; 100% control to Roust; ~$1.26bn GW impairments",
+      "rationale": "The slice documents large goodwill and trademark impairments (e.g., FY2011 GW impairment $930.1M; FY2012 $327.8M; trademark charges tied to underperformance of Kaufman/Zhuravli/Parliament brands versus expectations) and a 2013 prepackaged Chapter 11 that cancelled pre-existing common stock and transferred 100% control to Roust, but it does not document disruption specifically at the product/process interface (p4) nor fracture at the process/organization interface (p5). Brand underperformance and balance-sheet write-downs are recorded without evidence that acquired products could not be aligned with operating processes, or that operations broke against people/management/culture over time. Accordingly both pathway codes are 0 (none documented)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"~$930.1M (FY2011) + $327.8M (FY2012) goodwill impairments; net loss $1.33bn FY2011; Chapter 11 (Apr 2013), pre-existing common stock cancelled, delisted from NASDAQ, 100% control to Roust Trading\", \"rationale\": \"The slice documents realized product/asset-value deterioration at the product/operations interface: the FY2012 trademark and customer-relationships impairments are explicitly attributed to \\\"the related underperformance of certain brands in Russia, primarily Kaufman, Zhuravli and Parliament ... due to the continued lower performance as compared to our expectations,\\\" alongside multi-year goodwill impairments on the Poland/Russia core business \\u2014 supporting p4=1. For the process/organization interface, the slice records financial and control outcomes (net losses, Chapter 11, delisting, control passing to Roust Trading) but documents no realized operations-versus-people/management/culture fracture, so p5 is coded uncertain rather than affirmed or denied. The archetype (t1) and business-model reconciliation (t2) channels are not addressed by any in-window evidence in the slice.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"entered a prepackaged Chapter 11 under which the pre-existing common stock was cancelled\",\n  \"rationale\": \"The provided evidence details severe financial distress, including massive goodwill impairments and a Chapter 11 bankruptcy filing. However, it does not document specific operational integration failures between products and processes (p4) or between operations and organizational culture (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 (2013); equity cancelled; 100% control to Roust; ~$1.26bn GW impairments\",\n  \"rationale\": \"The slice documents large goodwill and trademark impairments (e.g., FY2011 GW impairment $930.1M; FY2012 $327.8M; trademark charges tied to underperformance of Kaufman/Zhuravli/Parliament brands versus expectations) and a 2013 prepackaged Chapter 11 that cancelled pre-existing common stock and transferred 100% control to Roust, but it does not document disruption specifically at the product/process interface (p4) nor fracture at the process/organization interface (p5). Brand underperformance and balance-sheet write-downs are recorded without evidence that acquired products could not be aligned with operating processes, or that operations broke against people/management/culture over time. Accordingly both pathway codes are 0 (none documented).\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

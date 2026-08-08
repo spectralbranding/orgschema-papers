@@ -1,0 +1,85 @@
+{
+  "case_id": "P238",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a full statutory merger of Xenith into Union, followed immediately by the merger of their respective bank subsidiaries. The entire product suite (T4), operational processes (T5), and organization (T6) transferred together into the surviving entities without structural carve-outs or mismatches at closing. Therefore, gap_45 and gap_56 are 0."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the deal was a whole-company parent merger immediately followed by full Xenith Bank-into-Union Bank & Trust consolidation, so customer-facing banking products, branches, deposits and loans crossed together with the operating bank processes rather than as a product-only transfer; no product-vs-process split is described. gap_56=0 because the same full subsidiary-bank merger moved operations into the surviving bank with a stated plan to retain and integrate appropriate Xenith Bank personnel (while reducing overlap), and no structural separation of processes from the operating organization at closing is documented; absence of any TSA is consistent with full consolidation rather than a bridged substrate gap."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes a whole-company parent merger followed promptly by full consolidation of Xenith Bank into Union Bank & Trust, with no phased carve-out or retained operational substrate, so Xenith's customer-facing banking assets and their operating processes crossed together (DEFM14A; closing Form 8-K). It also states that the parties coordinated operational integration and intended to retain and integrate appropriate Xenith Bank personnel while reducing overlap; although Xenith's named executives were terminated, the closing structure does not document processes transferring without a coherently aligned operating organization (DEFM14A; closing Form 8-K)."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a full statutory merger of Xenith into Union, followed immediately by the merger of their respective bank subsidiaries. The entire product suite (T4), operational processes (T5), and organization (T6) transferred together into the surviving entities without structural carve-outs or mismatches at closing. Therefore, gap_45 and gap_56 are 0.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the deal was a whole-company parent merger immediately followed by full Xenith Bank-into-Union Bank & Trust consolidation, so customer-facing banking products, branches, deposits and loans crossed together with the operating bank processes rather than as a product-only transfer; no product-vs-process split is described. gap_56=0 because the same full subsidiary-bank merger moved operations into the surviving bank with a stated plan to retain and integrate appropriate Xenith Bank personnel (while reducing overlap), and no structural separation of processes from the operating organization at closing is documented; absence of any TSA is consistent with full consolidation rather than a bridged substrate gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice describes a whole-company parent merger followed promptly by full consolidation of Xenith Bank into Union Bank & Trust, with no phased carve-out or retained operational substrate, so Xenith's customer-facing banking assets and their operating processes crossed together (DEFM14A; closing Form 8-K). It also states that the parties coordinated operational integration and intended to retain and integrate appropriate Xenith Bank personnel while reducing overlap; although Xenith's named executives were terminated, the closing structure does not document processes transferring without a coherently aligned operating organization (DEFM14A; closing Form 8-K).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

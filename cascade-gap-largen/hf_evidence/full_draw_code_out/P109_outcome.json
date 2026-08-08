@@ -1,0 +1,58 @@
+{
+  "case_id": "P109",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested in its entirety on August 21, 2015 for $260.0 million, producing an $80.8 million gain",
+      "rationale": "The provided slice indicates that the acquired business was divested as a whole subsidiary in 2015 for a gain of $80.8 million. There is no documented evidence of product/process incoherence or process/organization fracture leading up to this divestiture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested entire Herley Entities for $260M (+$80.8M gain) after ~4.5 years",
+      "rationale": "The slice documents only that the Herley Entities were sold in full on August 21, 2015 as discontinued operations, with product, processes, and people leaving together as a whole subsidiary; it supplies no evidence that the acquired product failed to align with operating processes over time, so p4_pathway is 0. Likewise, while acquisition-related expenses, a company-wide 2012 goodwill impairment, and post-sale cost-reduction restructuring are noted, none are framed as a realized fracture at the process/organization interface, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Entire acquired business divested after ~4.5 years for $260.0 million, with an $80.8 million gain'}",
+      "rationale": "{'type': 'string', 'enum': 'The acquired business was sold in its entirety in August 2015, with its product operation, producing processes, and people leaving together as a whole subsidiary; the slice does not document product/process incoherence, so p4 is 0. Although cost-reduction restructuring occurred in connection with the sale, no realized breakdown between operations and people, management, or culture is documented, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested in its entirety on August 21, 2015 for $260.0 million, producing an $80.8 million gain\",\n  \"rationale\": \"The provided slice indicates that the acquired business was divested as a whole subsidiary in 2015 for a gain of $80.8 million. There is no documented evidence of product/process incoherence or process/organization fracture leading up to this divestiture.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested entire Herley Entities for $260M (+$80.8M gain) after ~4.5 years\",\n  \"rationale\": \"The slice documents only that the Herley Entities were sold in full on August 21, 2015 as discontinued operations, with product, processes, and people leaving together as a whole subsidiary; it supplies no evidence that the acquired product failed to align with operating processes over time, so p4_pathway is 0. Likewise, while acquisition-related expenses, a company-wide 2012 goodwill impairment, and post-sale cost-reduction restructuring are noted, none are framed as a realized fracture at the process/organization interface, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Entire acquired business divested after ~4.5 years for $260.0 million, with an $80.8 million gain\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The acquired business was sold in its entirety in August 2015, with its product operation, producing processes, and people leaving together as a whole subsidiary; the slice does not document product/process incoherence, so p4 is 0. Although cost-reduction restructuring occurred in connection with the sale, no realized breakdown between operations and people, management, or culture is documented, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

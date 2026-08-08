@@ -1,0 +1,58 @@
+{
+  "case_id": "P049",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "EMEA segment operating income fell from $627 million (2011) to $252 million (2012)",
+      "rationale": "The slice documents friction at the process/organization interface (p5) through the announced closure of the Amiens, France facility, which faced uncertain timing due to required consultations with the European Central Works Council and employee representatives. There is no documented evidence of product/process disruption (p4) or inability to align acquired products with operating processes."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "JVs intact; EMEA OI fell ~60% ($627M→$252M)",
+      "rationale": "p4_pathway=0 because the slice documents no product/process-interface disruption: the ventures continued operating (GDTE/GDTNA intact; Dunlop brand and EMEA tire businesses still run through them) with no product-line/operations incoherence reported. p5_pathway=1 because the slice expressly records friction at the operations/organization interface over time: announced closure of the Amiens, France (EMEA/GDTE) facility remained subject to consultation with the European Central Works Council and employee representatives, the consultation had only just begun, and timing could not be estimated, alongside company-wide rationalization charges and labor claims."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "EMEA operating income fell about 60%, from $627 million in 2011 to $252 million in 2012",
+      "rationale": "No realized product/process alignment failure was documented, so p4 is coded 0. For p5, Goodyear announced closure of its high-cost Amiens manufacturing facility, but implementation remained subject to consultation with the European Central Works Council and employee representatives, with timing still indeterminate; this documents operational restructuring encountering an organizational and labor interface."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"EMEA segment operating income fell from $627 million (2011) to $252 million (2012)\",\n  \"rationale\": \"The slice documents friction at the process/organization interface (p5) through the announced closure of the Amiens, France facility, which faced uncertain timing due to required consultations with the European Central Works Council and employee representatives. There is no documented evidence of product/process disruption (p4) or inability to align acquired products with operating processes.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"JVs intact; EMEA OI fell ~60% ($627M→$252M)\",\n  \"rationale\": \"p4_pathway=0 because the slice documents no product/process-interface disruption: the ventures continued operating (GDTE/GDTNA intact; Dunlop brand and EMEA tire businesses still run through them) with no product-line/operations incoherence reported. p5_pathway=1 because the slice expressly records friction at the operations/organization interface over time: announced closure of the Amiens, France (EMEA/GDTE) facility remained subject to consultation with the European Central Works Council and employee representatives, the consultation had only just begun, and timing could not be estimated, alongside company-wide rationalization charges and labor claims.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"EMEA operating income fell about 60%, from $627 million in 2011 to $252 million in 2012\",\n  \"rationale\": \"No realized product/process alignment failure was documented, so p4 is coded 0. For p5, Goodyear announced closure of its high-cost Amiens manufacturing facility, but implementation remained subject to consultation with the European Central Works Council and employee representatives, with timing still indeterminate; this documents operational restructuring encountering an organizational and labor interface.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "1",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

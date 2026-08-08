@@ -1,0 +1,58 @@
+{
+  "case_id": "P229",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$1,119.6M ANS goodwill impairment (Q4 2022); Home segment divested to Vantiva, closed Jan 9, 2024 (~57 months post-close)",
+      "rationale": "p4=1: the slice documents realized product/operations incoherence over time — the ANS reporting unit took a $1,119.6M goodwill impairment attributed to \"technology shifts affecting hardware sales, trends affecting bandwidth growth and other operational challenges,\" former-ARRIS product lines were realigned from ANS into the Home segment, which was then divested to Vantiva (closed Jan 9, 2024), and Home Networks goodwill was fully written down amid \"continued decline in customer demand for video products,\" indicating the acquired product lines could not be sustained within the operating structure. p5=uncertain: no source was found describing employment status, retention, or turnover of former ARRIS executives, and the slice documents no operations-vs-people/management/culture fracture. t1 and t2 are uncertain: the slice deliberately excludes deal-structure/intent information and documents no controlling-intent archetype incoherence or irreconcilable business-model conflict."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divestiture of the Home segment closing January 9, 2024",
+      "rationale": "The provided slice documents a $1,119.6 million goodwill impairment and the divestiture of the Home segment, but does not detail specific product/process misalignment (p4). Furthermore, the slice explicitly notes that no information was found regarding executive retention or cultural/management fracture, leaving the process/organization pathway (p5) undocumented."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$1,119.6 million ANS goodwill impairment recorded in Q4 2022'}",
+      "rationale": "{'type': 'string', 'enum': 'CommScope reported that ARRIS-related integration costs continued through 2022 and that expected growth prospects were not fully achieved, but the filings do not specifically document an acquired-product/operating-process failure; therefore p4 is 0. The slice likewise provides no realized evidence of operations fracturing against personnel, management, or culture, and explicitly notes that executive retention or turnover information was not found; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$1,119.6M ANS goodwill impairment (Q4 2022); Home segment divested to Vantiva, closed Jan 9, 2024 (~57 months post-close)\", \"rationale\": \"p4=1: the slice documents realized product/operations incoherence over time \\u2014 the ANS reporting unit took a $1,119.6M goodwill impairment attributed to \\\"technology shifts affecting hardware sales, trends affecting bandwidth growth and other operational challenges,\\\" former-ARRIS product lines were realigned from ANS into the Home segment, which was then divested to Vantiva (closed Jan 9, 2024), and Home Networks goodwill was fully written down amid \\\"continued decline in customer demand for video products,\\\" indicating the acquired product lines could not be sustained within the operating structure. p5=uncertain: no source was found describing employment status, retention, or turnover of former ARRIS executives, and the slice documents no operations-vs-people/management/culture fracture. t1 and t2 are uncertain: the slice deliberately excludes deal-structure/intent information and documents no controlling-intent archetype incoherence or irreconcilable business-model conflict.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divestiture of the Home segment closing January 9, 2024\",\n  \"rationale\": \"The provided slice documents a $1,119.6 million goodwill impairment and the divestiture of the Home segment, but does not detail specific product/process misalignment (p4). Furthermore, the slice explicitly notes that no information was found regarding executive retention or cultural/management fracture, leaving the process/organization pathway (p5) undocumented.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$1,119.6 million ANS goodwill impairment recorded in Q4 2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"CommScope reported that ARRIS-related integration costs continued through 2022 and that expected growth prospects were not fully achieved, but the filings do not specifically document an acquired-product/operating-process failure; therefore p4 is 0. The slice likewise provides no realized evidence of operations fracturing against personnel, management, or culture, and explicitly notes that executive retention or turnover information was not found; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

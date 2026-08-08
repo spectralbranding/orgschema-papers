@@ -1,0 +1,58 @@
+{
+  "case_id": "P343",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "no goodwill impairment recorded (FY2021, FY2022); no separate Beneficial trajectory disclosed",
+      "rationale": "The slice documents no product/process-interface disruption: WSFS reported consolidated results across \"WSFS Bank\" and \"Wealth Management\" segments with no goodwill impairment in FY2021 or FY2022, and no filing isolates any product-line/operations incoherence for the acquired franchise (p4=0, not-documented). Likewise, no process/organization fracture (operations vs. people/management/culture) is recorded anywhere in the reviewed filings; the only remaining Beneficial references are administrative/legacy plan and exhibit items, not an integration-disruption narrative (p5=0, not-documented). The slice explicitly states no public source separately discloses the acquired business's post-close trajectory, so archetype coherence and business-model reconcilability cannot be determined (uncertain)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The evidence slice explicitly states that no reputable press or SEC-filed disclosure isolates the realized performance, integration outcome, or disruption record of the former Beneficial Bank franchise within WSFS for the 2021-2023 window. Consequently, there is no documented evidence of disruption at the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no reputable-press or SEC-filed disclosure isolating the realized performance, integration outcome, or disruption record of the former Beneficial Bank franchise within WSFS for the 2021-2023 window was located, and any such narrative is [UNVERIFIED]. WSFS’s FY2021 and FY2022 10-Ks report only consolidated “WSFS Bank” and “Wealth Management” segments with no goodwill impairment and no separate operating or financial trajectory for the acquired franchise. Consequently there is no documented product/process-interface disruption (p4) and no documented process/organization-interface fracture (p5); absence of evidence is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"no goodwill impairment recorded (FY2021, FY2022); no separate Beneficial trajectory disclosed\", \"rationale\": \"The slice documents no product/process-interface disruption: WSFS reported consolidated results across \\\"WSFS Bank\\\" and \\\"Wealth Management\\\" segments with no goodwill impairment in FY2021 or FY2022, and no filing isolates any product-line/operations incoherence for the acquired franchise (p4=0, not-documented). Likewise, no process/organization fracture (operations vs. people/management/culture) is recorded anywhere in the reviewed filings; the only remaining Beneficial references are administrative/legacy plan and exhibit items, not an integration-disruption narrative (p5=0, not-documented). The slice explicitly states no public source separately discloses the acquired business's post-close trajectory, so archetype coherence and business-model reconcilability cannot be determined (uncertain).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The evidence slice explicitly states that no reputable press or SEC-filed disclosure isolates the realized performance, integration outcome, or disruption record of the former Beneficial Bank franchise within WSFS for the 2021-2023 window. Consequently, there is no documented evidence of disruption at the product/process or process/organization interfaces.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no reputable-press or SEC-filed disclosure isolating the realized performance, integration outcome, or disruption record of the former Beneficial Bank franchise within WSFS for the 2021-2023 window was located, and any such narrative is [UNVERIFIED]. WSFS’s FY2021 and FY2022 10-Ks report only consolidated “WSFS Bank” and “Wealth Management” segments with no goodwill impairment and no separate operating or financial trajectory for the acquired franchise. Consequently there is no documented product/process-interface disruption (p4) and no documented process/organization-interface fracture (p5); absence of evidence is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P111",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "merged into Select Income REIT and deregistered Jan 2015 at $10.50 cash / 0.36 SIR share; no in-window standalone record",
+      "rationale": "The slice documents only that the registrant merged into SIR and deregistered in January 2015, with no standalone public record covering the fixed ~2016-2018 outcome window. The only integration-related lines are forward-looking risk factors (\"costs or difficulties related to the integration...will be greater than expected\"; \"disruption of management's attention...may be greater than expected\"), which the slice explicitly labels \"stated risk factors, not documented realized results.\" Because no realized post-deal disruption at the product/process (p4) or process/organization (p5) interface is documented, both are coded uncertain rather than 0, consistent with the slice's explicit UNCERTAIN (no public standalone record) coding."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "merged into SIR and deregistered Jan 2015; no 2016-2018 standalone record",
+      "rationale": "The slice states that integration-related statements (costs/difficulties of integrating operations, operating-cost and management-attention disruption) are disclosed only as forward-looking risk factors, not as documented realized results. Within the fixed ~2016-2018 window there is no standalone public record after the January 2015 merger into SIR and Form 15 deregistration, so no realized product/process or process/organization disruption is documented; absence of such evidence codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "absorbed into SIR and deregistered in January 2015; 2016-2018 standalone outcome not documented",
+      "rationale": "No realized product/process disruption is documented because the former registrant’s standalone portfolio trajectory was not separately disclosed during 2016-2018. Likewise, no realized process/organization fracture is documented; the cited integration difficulties and management disruption were expressly forward-looking risk factors rather than realized outcomes."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"merged into Select Income REIT and deregistered Jan 2015 at $10.50 cash / 0.36 SIR share; no in-window standalone record\", \"rationale\": \"The slice documents only that the registrant merged into SIR and deregistered in January 2015, with no standalone public record covering the fixed ~2016-2018 outcome window. The only integration-related lines are forward-looking risk factors (\\\"costs or difficulties related to the integration...will be greater than expected\\\"; \\\"disruption of management's attention...may be greater than expected\\\"), which the slice explicitly labels \\\"stated risk factors, not documented realized results.\\\" Because no realized post-deal disruption at the product/process (p4) or process/organization (p5) interface is documented, both are coded uncertain rather than 0, consistent with the slice's explicit UNCERTAIN (no public standalone record) coding.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"merged into SIR and deregistered Jan 2015; no 2016-2018 standalone record\",\n  \"rationale\": \"The slice states that integration-related statements (costs/difficulties of integrating operations, operating-cost and management-attention disruption) are disclosed only as forward-looking risk factors, not as documented realized results. Within the fixed ~2016-2018 window there is no standalone public record after the January 2015 merger into SIR and Form 15 deregistration, so no realized product/process or process/organization disruption is documented; absence of such evidence codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"absorbed into SIR and deregistered in January 2015; 2016-2018 standalone outcome not documented\",\n  \"rationale\": \"No realized product/process disruption is documented because the former registrant’s standalone portfolio trajectory was not separately disclosed during 2016-2018. Likewise, no realized process/organization fracture is documented; the cited integration difficulties and management disruption were expressly forward-looking risk factors rather than realized outcomes.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

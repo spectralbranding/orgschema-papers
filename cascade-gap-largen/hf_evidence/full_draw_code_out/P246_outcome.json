@@ -1,0 +1,58 @@
+{
+  "case_id": "P246",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Deal terminated (not consummated); $103M termination fee received; Avista remained independent NYSE-listed with FY2020 net income $129.5M",
+      "rationale": "The proposed Hydro One acquisition of Avista was never consummated — it was blocked by WUTC regulatory denial and terminated by mutual agreement in January 2019, with Avista continuing as an independent NYSE-listed registrant through the outcome window. Because no combined entity ever came into being, there could be no realized post-deal disruption at the product/process interface (p4=0) or the process/organization interface (p5=0); no integration occurred over time to fracture. Likewise there is no documented archetype incoherence (t1) or business-model incompatibility (t2) playing out post-close, since integration never took place."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "deal not consummated; $103M termination fee; remained independent",
+      "rationale": "The slice documents that the proposed transaction was never consummated: it was terminated by mutual agreement in January 2019 after regulatory denial, with Hydro One paying Avista a $103 million termination fee. Avista continued as an independent NYSE-listed registrant through the outcome window with no residual merger costs in 2020. Because no combined entity or integration occurred, there is no documented product/process interface disruption (p4) or process/organization fracture (p5)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$103 million termination fee paid after regulatory denial",
+      "rationale": "The proposed acquisition was denied by regulators and terminated in January 2019, so no combined post-deal operations arose in which a product/process disruption could be documented. Avista subsequently continued as an independent, NYSE-listed registrant, and the slice documents no realized process/organization integration fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Deal terminated (not consummated); $103M termination fee received; Avista remained independent NYSE-listed with FY2020 net income $129.5M\", \"rationale\": \"The proposed Hydro One acquisition of Avista was never consummated \\u2014 it was blocked by WUTC regulatory denial and terminated by mutual agreement in January 2019, with Avista continuing as an independent NYSE-listed registrant through the outcome window. Because no combined entity ever came into being, there could be no realized post-deal disruption at the product/process interface (p4=0) or the process/organization interface (p5=0); no integration occurred over time to fracture. Likewise there is no documented archetype incoherence (t1) or business-model incompatibility (t2) playing out post-close, since integration never took place.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"deal not consummated; $103M termination fee; remained independent\",\n  \"rationale\": \"The slice documents that the proposed transaction was never consummated: it was terminated by mutual agreement in January 2019 after regulatory denial, with Hydro One paying Avista a $103 million termination fee. Avista continued as an independent NYSE-listed registrant through the outcome window with no residual merger costs in 2020. Because no combined entity or integration occurred, there is no documented product/process interface disruption (p4) or process/organization fracture (p5).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$103 million termination fee paid after regulatory denial\",\n  \"rationale\": \"The proposed acquisition was denied by regulators and terminated in January 2019, so no combined post-deal operations arose in which a product/process disruption could be documented. Avista subsequently continued as an independent, NYSE-listed registrant, and the slice documents no realized process/organization integration fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

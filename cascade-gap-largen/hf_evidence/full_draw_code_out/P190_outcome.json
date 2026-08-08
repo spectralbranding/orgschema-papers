@@ -1,0 +1,58 @@
+{
+  "case_id": "P190",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$14.8 billion goodwill impairment and full GE divestiture",
+      "rationale": "The slice documents a massive $14.8 billion goodwill impairment in 2020 (attributed to COVID-19 and oil price collapse) and GE's complete divestiture of its ownership stake by 2022. However, the evidence does not explicitly document that these outcomes were driven by product/process incoherence (p4) or process/organization fracture (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$14.8bn goodwill impairment (2020); GE fully exited by 2022",
+      "rationale": "The slice attributes the 2020 $14.8bn goodwill impairment and revenue decline to COVID-19 and the oil-price collapse, with no documented product-line/operations incoherence or inability to align acquired products with operating processes, so p4_pathway is 0. Separation-related costs ($134M/$60M/$23M) and GE’s full ownership exit by end-2022 are recorded, but the slice does not document operations integration fracturing against people/management/culture over time, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$14.8 billion goodwill impairment in 2020'}",
+      "rationale": "{'type': 'string', 'enum': 'No realized product/process-interface disruption is documented; the 2020 revenue decline and impairment were attributed to COVID-19, collapsing oil prices, and a market-capitalization decline. No process/organization fracture is documented: separation-related costs persisted but declined from $134 million in 2020 to $23 million in 2022, without evidence that operations broke against management, people, or culture.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$14.8 billion goodwill impairment and full GE divestiture\",\n  \"rationale\": \"The slice documents a massive $14.8 billion goodwill impairment in 2020 (attributed to COVID-19 and oil price collapse) and GE's complete divestiture of its ownership stake by 2022. However, the evidence does not explicitly document that these outcomes were driven by product/process incoherence (p4) or process/organization fracture (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$14.8bn goodwill impairment (2020); GE fully exited by 2022\",\n  \"rationale\": \"The slice attributes the 2020 $14.8bn goodwill impairment and revenue decline to COVID-19 and the oil-price collapse, with no documented product-line/operations incoherence or inability to align acquired products with operating processes, so p4_pathway is 0. Separation-related costs ($134M/$60M/$23M) and GE’s full ownership exit by end-2022 are recorded, but the slice does not document operations integration fracturing against people/management/culture over time, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$14.8 billion goodwill impairment in 2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No realized product/process-interface disruption is documented; the 2020 revenue decline and impairment were attributed to COVID-19, collapsing oil prices, and a market-capitalization decline. No process/organization fracture is documented: separation-related costs persisted but declined from $134 million in 2020 to $23 million in 2022, without evidence that operations broke against management, people, or culture.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

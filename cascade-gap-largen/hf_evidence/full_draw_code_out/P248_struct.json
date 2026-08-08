@@ -1,0 +1,85 @@
+{
+  "case_id": "P248",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred Gener8's fleet (T4) but sold 6 VLCCs to a third party, making it a subset transfer. The operational processes (T5) were managed by Navig8 pools, which Euronav intended to withdraw from, but the exact status at closing is uncertain. However, the entire Gener8 management team and board (T6) resigned or were terminated at closing, with only transitional roles for a few, creating a clear gap_56 where operations/assets transferred without the people who ran them. There is no mention of a transitional services agreement mitigating this gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because Gener8’s on-the-water fleet crossed into Euronav ownership at closing while commercial employment remained under pre-existing Navig8-affiliated pool contracts that Euronav only flagged it ‘might seek to withdraw’ or terminate after closing, and intended to re-employ vessels on the spot market/TI Pool ‘as soon as commercially practicable’—a documented product-vs-process mismatch at closing (DEFM14A). gap_56=1 because fleet operations continued under the surviving entity while Gener8’s entire board and nearly all senior officers (CEO, CFO, COO, commercial director) relinquished at the Effective Time, with only transitional retention of the technical director as COO through Oct 2018 and controller through Aug 2018 plus a one-year Georgiopoulos consulting agreement—i.e., processes without the incumbent organization, contractually mitigated by those transitional/separation arrangements (8-K Items 5.02)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "Gener8’s fleet crossed into Euronav’s ownership, except for six VLCCs sold in the same transaction, while substantially all vessels remained commercially managed through independent Navig8-affiliated pools that Euronav indicated it might later unwind; thus the transferred product assets were not accompanied by wholly transferred or already aligned commercial processes at closing. Gener8’s board and nearly all senior officers relinquished their positions at the Effective Time, while only limited personnel continued transitionally, including the technical-operations executive through October 2018, creating a documented process-to-organization mismatch at closing. The cited arrangements were transitional employment, separation, or consulting arrangements rather than a transitional-services or operating agreement allocating the shared operational substrate."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"uncertain\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction transferred Gener8's fleet (T4) but sold 6 VLCCs to a third party, making it a subset transfer. The operational processes (T5) were managed by Navig8 pools, which Euronav intended to withdraw from, but the exact status at closing is uncertain. However, the entire Gener8 management team and board (T6) resigned or were terminated at closing, with only transitional roles for a few, creating a clear gap_56 where operations/assets transferred without the people who ran them. There is no mention of a transitional services agreement mitigating this gap.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because Gener8’s on-the-water fleet crossed into Euronav ownership at closing while commercial employment remained under pre-existing Navig8-affiliated pool contracts that Euronav only flagged it ‘might seek to withdraw’ or terminate after closing, and intended to re-employ vessels on the spot market/TI Pool ‘as soon as commercially practicable’—a documented product-vs-process mismatch at closing (DEFM14A). gap_56=1 because fleet operations continued under the surviving entity while Gener8’s entire board and nearly all senior officers (CEO, CFO, COO, commercial director) relinquished at the Effective Time, with only transitional retention of the technical director as COO through Oct 2018 and controller through Aug 2018 plus a one-year Georgiopoulos consulting agreement—i.e., processes without the incumbent organization, contractually mitigated by those transitional/separation arrangements (8-K Items 5.02).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"Gener8’s fleet crossed into Euronav’s ownership, except for six VLCCs sold in the same transaction, while substantially all vessels remained commercially managed through independent Navig8-affiliated pools that Euronav indicated it might later unwind; thus the transferred product assets were not accompanied by wholly transferred or already aligned commercial processes at closing. Gener8’s board and nearly all senior officers relinquished their positions at the Effective Time, while only limited personnel continued transitionally, including the technical-operations executive through October 2018, creating a documented process-to-organization mismatch at closing. The cited arrangements were transitional employment, separation, or consulting arrangements rather than a transitional-services or operating agreement allocating the shared operational substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

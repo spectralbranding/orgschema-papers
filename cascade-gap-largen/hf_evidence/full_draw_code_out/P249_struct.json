@@ -1,0 +1,85 @@
+{
+  "case_id": "P249",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The customer-facing asset base (T4) transferred whole, but the self-managed operating organization (T6) was terminated, with all employees fired at closing. The operational processes (T5) were bridged only partially via discretionary offers from GOV's external manager, creating a structural mismatch between the transferred assets and the terminated organization/processes."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The structural summary and closing 8-K/DEFM14A state the customer-facing DC-region portfolio (T4) moved whole into the GOV acquisition vehicle while the Company's self-managed operating organization was terminated rather than retained, with operating processes only optionally bridged via discretionary RMR LLC employment offers to some former employees (gap_45=1). All board members, named executive officers, and other employees were terminated at consummation, so any continuing processes lacked coherent transfer of the T6 organization that had run them (gap_56=1). No transitional-services or operating agreement absorbing the shared substrate is documented—only severance, COBRA, and discretionary offer provisions."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The structural summary states that the customer-facing office and business-park portfolio moved whole into GOV's acquisition vehicle, while the Company's self-managed operating organization was terminated and operations were instead bridged through discretionary RMR LLC employment offers to only some former employees. This documents a product-versus-process mismatch at closing and a re-engineering of operations without the existing organization transferring intact. The slice identifies no transitional-services or operating agreement contractually allocating the shared operational substrate."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The customer-facing asset base (T4) transferred whole, but the self-managed operating organization (T6) was terminated, with all employees fired at closing. The operational processes (T5) were bridged only partially via discretionary offers from GOV's external manager, creating a structural mismatch between the transferred assets and the terminated organization/processes.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The structural summary and closing 8-K/DEFM14A state the customer-facing DC-region portfolio (T4) moved whole into the GOV acquisition vehicle while the Company's self-managed operating organization was terminated rather than retained, with operating processes only optionally bridged via discretionary RMR LLC employment offers to some former employees (gap_45=1). All board members, named executive officers, and other employees were terminated at consummation, so any continuing processes lacked coherent transfer of the T6 organization that had run them (gap_56=1). No transitional-services or operating agreement absorbing the shared substrate is documented—only severance, COBRA, and discretionary offer provisions.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The structural summary states that the customer-facing office and business-park portfolio moved whole into GOV's acquisition vehicle, while the Company's self-managed operating organization was terminated and operations were instead bridged through discretionary RMR LLC employment offers to only some former employees. This documents a product-versus-process mismatch at closing and a re-engineering of operations without the existing organization transferring intact. The slice identifies no transitional-services or operating agreement contractually allocating the shared operational substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

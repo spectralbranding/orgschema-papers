@@ -1,0 +1,58 @@
+{
+  "case_id": "P178",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenue grew $3.05B (FY2020) to $4.03B (FY2022); FY2022 net income $310.7M (down from $363.6M FY2021)",
+      "rationale": "The slice documents uninterrupted public reporting after the 2018 closing with continued net-revenue growth and no reference to integration issues; nothing describes product/operations incoherence, so p4_pathway is 0. Likewise, there is no documented fracture between operations and people/management/culture — workforce and leadership are reported normally with no integration or cultural friction cited — so p5_pathway is 0. The filing explicitly contains no discussion of the 2018 transaction as an ongoing matter and attributes no developments to it, and any causal claim tying outcomes to the deal is marked [UNVERIFIED]."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenue grew to $4.03B in FY2022",
+      "rationale": "The provided slice explicitly states that the FY2022 Form 10-K contains no discussion of integration issues or residual effects tied to the 2018 transaction. Consequently, there is no documented evidence of disruption at either the product/process or process/organization interfaces."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenue grew from $3.05B in FY2020 to $4.03B in FY2022",
+      "rationale": "The FY2022 Form 10-K reports ordinary ongoing operations and contains no discussion of integration issues or other residual effects tied to the 2018 transaction. The documented revenue, income, restructuring, divestiture, and workforce developments are not attributed to product/process incoherence or to a fracture between operations and people, management, or culture; therefore, no p4 or p5 pathway is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net revenue grew $3.05B (FY2020) to $4.03B (FY2022); FY2022 net income $310.7M (down from $363.6M FY2021)\", \"rationale\": \"The slice documents uninterrupted public reporting after the 2018 closing with continued net-revenue growth and no reference to integration issues; nothing describes product/operations incoherence, so p4_pathway is 0. Likewise, there is no documented fracture between operations and people/management/culture \\u2014 workforce and leadership are reported normally with no integration or cultural friction cited \\u2014 so p5_pathway is 0. The filing explicitly contains no discussion of the 2018 transaction as an ongoing matter and attributes no developments to it, and any causal claim tying outcomes to the deal is marked [UNVERIFIED].\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net revenue grew to $4.03B in FY2022\",\n  \"rationale\": \"The provided slice explicitly states that the FY2022 Form 10-K contains no discussion of integration issues or residual effects tied to the 2018 transaction. Consequently, there is no documented evidence of disruption at either the product/process or process/organization interfaces.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net revenue grew from $3.05B in FY2020 to $4.03B in FY2022\",\n  \"rationale\": \"The FY2022 Form 10-K reports ordinary ongoing operations and contains no discussion of integration issues or other residual effects tied to the 2018 transaction. The documented revenue, income, restructuring, divestiture, and workforce developments are not attributed to product/process incoherence or to a fracture between operations and people, management, or culture; therefore, no p4 or p5 pathway is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

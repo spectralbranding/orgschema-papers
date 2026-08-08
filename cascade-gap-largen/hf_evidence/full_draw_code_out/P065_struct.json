@@ -1,0 +1,85 @@
+{
+  "case_id": "P065",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the registrant holds a 50% interest in the customer-facing product (sub-bituminous thermal coal) and the mine, but \"we do not control, and our employees do not participate in, the day-to-day operations of the Decker mine\" and it owns equipment \"excluding the Decker mine\" — the product-facing interest crossed while the producing/operating processes stayed with the co-owner, a documented product-vs-process mismatch. gap_56=0: neither the operating processes (T5) nor the workforce/people (T6) crossed to the registrant — \"we do not employ any of the Decker mine employees\" — so processes and people remained together on the co-owner's side rather than splitting. The gap_45 mismatch is contractually absorbed at closing via the standing management-committee governance mechanism and the several-liability 50/50 reclamation-bonding arrangement under the Joint Venture Agreement, hence gap_mitigated=yes."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The registrant holds a 50% non-operating interest in the Decker coal mine (T4 product/asset), but the operating processes (T5) and workforce (T6) remain entirely with the co-owner, creating a structural gap between the product/asset ownership and the operational processes (gap_45 = 1). Because the co-owner retains both the processes and the people running them, there is no gap between T5 and T6 (gap_56 = 0). This gap is mitigated by the joint venture agreement's management committee, which governs the non-operating owner's participation."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that Cloud Peak held a 50% non-operating interest in the mine and its thermal-coal product, while the other owner retained day-to-day operations, marketing responsibility, and the producing equipment; this documents a product-versus-process structural gap at closing. It also states that Cloud Peak employees did not participate in operations and that Cloud Peak employed none of the Decker workforce, but because the operating processes and workforce remained together with the operating co-owner, no process-versus-organization gap is documented. The management committee and joint-venture agreement contractually bridged the shared substrate, including governance and allocation of reclamation obligations."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the registrant holds a 50% interest in the customer-facing product (sub-bituminous thermal coal) and the mine, but \\\"we do not control, and our employees do not participate in, the day-to-day operations of the Decker mine\\\" and it owns equipment \\\"excluding the Decker mine\\\" \\u2014 the product-facing interest crossed while the producing/operating processes stayed with the co-owner, a documented product-vs-process mismatch. gap_56=0: neither the operating processes (T5) nor the workforce/people (T6) crossed to the registrant \\u2014 \\\"we do not employ any of the Decker mine employees\\\" \\u2014 so processes and people remained together on the co-owner's side rather than splitting. The gap_45 mismatch is contractually absorbed at closing via the standing management-committee governance mechanism and the several-liability 50/50 reclamation-bonding arrangement under the Joint Venture Agreement, hence gap_mitigated=yes.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"read-only\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The registrant holds a 50% non-operating interest in the Decker coal mine (T4 product/asset), but the operating processes (T5) and workforce (T6) remain entirely with the co-owner, creating a structural gap between the product/asset ownership and the operational processes (gap_45 = 1). Because the co-owner retains both the processes and the people running them, there is no gap between T5 and T6 (gap_56 = 0). This gap is mitigated by the joint venture agreement's management committee, which governs the non-operating owner's participation.\"",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that Cloud Peak held a 50% non-operating interest in the mine and its thermal-coal product, while the other owner retained day-to-day operations, marketing responsibility, and the producing equipment; this documents a product-versus-process structural gap at closing. It also states that Cloud Peak employees did not participate in operations and that Cloud Peak employed none of the Decker workforce, but because the operating processes and workforce remained together with the operating co-owner, no process-versus-organization gap is documented. The management committee and joint-venture agreement contractually bridged the shared substrate, including governance and allocation of reclamation obligations.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

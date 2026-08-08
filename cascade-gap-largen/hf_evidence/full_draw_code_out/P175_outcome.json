@@ -1,0 +1,58 @@
+{
+  "case_id": "P175",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Nov 2016 spin-off of International Seaways (~$895.65m net assets distributed); $332.56m held-for-sale impairment on distributed group; continuing-ops revenue declined $462.42m (2016) to $366.16m (2018)",
+      "rationale": "The slice documents a corporate separation (spin-off of INSW) and declining revenues plus repeated vessel-specific impairments on the retained articulated tug-barge fleet ($97.78m, $6.62m, $5.88m), but these are asset-level DCF write-downs, not evidence of an acquired product failing to align with operating processes, so p4 cannot be affirmatively determined (uncertain). There is no documented friction between operations and people/management/culture — the record covers financial and vessel-impairment trajectory only — so p5 is coded 0 (not documented). No documented controlling-intent archetype incoherence (t1=0) or irreconcilable business-model incompatibility (t2=0) appears in the realized record."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$332,562 thousand held-for-sale impairment charge on the distributed disposal group",
+      "rationale": "The provided slice documents the spin-off of the International Flag business and the subsequent financial performance and vessel impairments of the retained U.S. Flag business. There is no documented evidence of product/process integration failure (p4) or operations/culture fracture (p5) during the post-emergence period."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "INSW spin-off Nov 2016 with $333M held-for-sale charge; U.S. Flag retained",
+      "rationale": "The slice documents a 2016 spin-off of the International Flag business, vessel impairments on articulated tug-barges, and declining continuing-operations revenues through 2018, but contains no evidence that an acquired product failed to align with operating processes over time (p4=0). It likewise documents no fracture between operations and people/management/culture or integration breaking against the organization (p5=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Nov 2016 spin-off of International Seaways (~$895.65m net assets distributed); $332.56m held-for-sale impairment on distributed group; continuing-ops revenue declined $462.42m (2016) to $366.16m (2018)\", \"rationale\": \"The slice documents a corporate separation (spin-off of INSW) and declining revenues plus repeated vessel-specific impairments on the retained articulated tug-barge fleet ($97.78m, $6.62m, $5.88m), but these are asset-level DCF write-downs, not evidence of an acquired product failing to align with operating processes, so p4 cannot be affirmatively determined (uncertain). There is no documented friction between operations and people/management/culture \\u2014 the record covers financial and vessel-impairment trajectory only \\u2014 so p5 is coded 0 (not documented). No documented controlling-intent archetype incoherence (t1=0) or irreconcilable business-model incompatibility (t2=0) appears in the realized record.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$332,562 thousand held-for-sale impairment charge on the distributed disposal group\",\n  \"rationale\": \"The provided slice documents the spin-off of the International Flag business and the subsequent financial performance and vessel impairments of the retained U.S. Flag business. There is no documented evidence of product/process integration failure (p4) or operations/culture fracture (p5) during the post-emergence period.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"INSW spin-off Nov 2016 with $333M held-for-sale charge; U.S. Flag retained\",\n  \"rationale\": \"The slice documents a 2016 spin-off of the International Flag business, vessel impairments on articulated tug-barges, and declining continuing-operations revenues through 2018, but contains no evidence that an acquired product failed to align with operating processes over time (p4=0). It likewise documents no fracture between operations and people/management/culture or integration breaking against the organization (p5=0).\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

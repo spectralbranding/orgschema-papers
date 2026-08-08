@@ -1,0 +1,85 @@
+{
+  "case_id": "P049",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "This is a joint-venture pooling: both parties' tire businesses were contributed into jointly owned holding companies (each 75% Goodyear / 25% SRI), so intent is co-present (imprint-share) and the legal vehicle is newly created Netherlands/holding companies (swap); the customer-facing product operations transferred only in part, with Poland, Slovenia, Turkey, Morocco, South Africa, aircraft tires and Luxembourg technical/manufacturing assets expressly excluded (T4 subset). gap_45=1 because the slice states the acquired product operations crossed while \"processes and people acquired had not yet been integrated,\" with plans for consolidating manufacturing, distribution, information systems and R&D \"not completed\" at closing — a documented product-vs-process misalignment. gap_56=1 because the same lines show operations were to be re-engineered (\"downsizing or consolidation\") without aligned staffing at closing, with \"appropriate staffing levels\" still under analysis and $80–120M severance planned, indicating people/organization not coherently aligned. gap_mitigated=no because the slice documents no transitional-services or operating agreement absorbing the shared substrate at closing — only future integration plans and SRI exit rights."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states that customer-facing tire manufacturing, sales and distribution businesses of both parties were contributed together into the jointly owned holding companies, so product and the processes that produce/deliver it crossed the ownership boundary together (with only expressly excluded geographies/lines staying out). gap_56=0 because the same formation disclosure records that the processes and people of the acquired businesses both crossed into the JVs at closing; although integration plans and staffing alignment were explicitly not yet completed, that is incomplete post-close integration rather than a structural transfer of processes without the organization."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The tire manufacturing, sales, and distribution businesses crossed into the joint ventures together, while specified Goodyear operations remained excluded, so the slice documents no product-versus-process separation at closing. However, the filing states that integration of facilities, information systems, support functions, and staffing had not been completed, with consolidation, downsizing, and severance still contemplated, documenting a process-versus-organization alignment gap at formation. The slice does not document a transitional-services or operating agreement that contractually absorbed that specific gap at closing. [SRC: SEC accession 0000950152-99-009016, Form 10-Q (Q3 1999)]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"This is a joint-venture pooling: both parties' tire businesses were contributed into jointly owned holding companies (each 75% Goodyear / 25% SRI), so intent is co-present (imprint-share) and the legal vehicle is newly created Netherlands/holding companies (swap); the customer-facing product operations transferred only in part, with Poland, Slovenia, Turkey, Morocco, South Africa, aircraft tires and Luxembourg technical/manufacturing assets expressly excluded (T4 subset). gap_45=1 because the slice states the acquired product operations crossed while \\\"processes and people acquired had not yet been integrated,\\\" with plans for consolidating manufacturing, distribution, information systems and R&D \\\"not completed\\\" at closing \\u2014 a documented product-vs-process misalignment. gap_56=1 because the same lines show operations were to be re-engineered (\\\"downsizing or consolidation\\\") without aligned staffing at closing, with \\\"appropriate staffing levels\\\" still under analysis and $80\\u2013120M severance planned, indicating people/organization not coherently aligned. gap_mitigated=no because the slice documents no transitional-services or operating agreement absorbing the shared substrate at closing \\u2014 only future integration plans and SRI exit rights.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states that customer-facing tire manufacturing, sales and distribution businesses of both parties were contributed together into the jointly owned holding companies, so product and the processes that produce/deliver it crossed the ownership boundary together (with only expressly excluded geographies/lines staying out). gap_56=0 because the same formation disclosure records that the processes and people of the acquired businesses both crossed into the JVs at closing; although integration plans and staffing alignment were explicitly not yet completed, that is incomplete post-close integration rather than a structural transfer of processes without the organization.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The tire manufacturing, sales, and distribution businesses crossed into the joint ventures together, while specified Goodyear operations remained excluded, so the slice documents no product-versus-process separation at closing. However, the filing states that integration of facilities, information systems, support functions, and staffing had not been completed, with consolidation, downsizing, and severance still contemplated, documenting a process-versus-organization alignment gap at formation. The slice does not document a transitional-services or operating agreement that contractually absorbed that specific gap at closing. [SRC: SEC accession 0000950152-99-009016, Form 10-Q (Q3 1999)]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

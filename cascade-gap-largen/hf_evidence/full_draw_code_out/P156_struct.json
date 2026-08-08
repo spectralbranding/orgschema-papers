@@ -1,0 +1,85 @@
+{
+  "case_id": "P156",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes a plan-based tax-free spin-off in which the competitive operating assets (T4, generation plus retail under TCEH/Luminant/TXU Energy) crossed to the new creditor-owned TCEH Corp. together with their operating-business management — \"Operating-business management moved WITH the competitive assets\" (Morgan, Burke, Zapata Moore, Nutt), so product and its operating processes/people moved coherently together, driving gap_45=0 and gap_56=0. The only substrate not moving whole was the SHARED corporate-service layer (accounting, IT, HR, tax, etc.), but that was expressly bridged by a Transition Services Agreement, Tax Matters Agreement and Split Participant Agreement at closing, i.e., a documented allocation of the shared substrate rather than an unmitigated product-vs-process or process-vs-people mismatch. Because the underlying operating product, process and its running people crossed together, no structural T4/T5 or T5/T6 gap is documented at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The competitive electricity business (T4) and its operating assets (T5) were spun off together, so there is no gap_45. However, the shared corporate-service substrate (T5/T6) did not transfer whole and was bridged via a Transition Services Agreement, creating a structural gap_56 at closing that was mitigated by the TSA."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The closing summary states that the competitive electricity assets and operating-business management crossed together to the new creditor-owned company, so no product-versus-process gap is documented. Operating leaders from Luminant and TXU Energy moved with the competitive assets, while shared corporate services and straddling employee benefits were coherently allocated at closing through the Transition Services Agreement and Split Participant Agreement; therefore no process-versus-organization gap is coded."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice describes a plan-based tax-free spin-off in which the competitive operating assets (T4, generation plus retail under TCEH/Luminant/TXU Energy) crossed to the new creditor-owned TCEH Corp. together with their operating-business management \\u2014 \\\"Operating-business management moved WITH the competitive assets\\\" (Morgan, Burke, Zapata Moore, Nutt), so product and its operating processes/people moved coherently together, driving gap_45=0 and gap_56=0. The only substrate not moving whole was the SHARED corporate-service layer (accounting, IT, HR, tax, etc.), but that was expressly bridged by a Transition Services Agreement, Tax Matters Agreement and Split Participant Agreement at closing, i.e., a documented allocation of the shared substrate rather than an unmitigated product-vs-process or process-vs-people mismatch. Because the underlying operating product, process and its running people crossed together, no structural T4/T5 or T5/T6 gap is documented at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The competitive electricity business (T4) and its operating assets (T5) were spun off together, so there is no gap_45. However, the shared corporate-service substrate (T5/T6) did not transfer whole and was bridged via a Transition Services Agreement, creating a structural gap_56 at closing that was mitigated by the TSA.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The closing summary states that the competitive electricity assets and operating-business management crossed together to the new creditor-owned company, so no product-versus-process gap is documented. Operating leaders from Luminant and TXU Energy moved with the competitive assets, while shared corporate services and straddling employee benefits were coherently allocated at closing through the Transition Services Agreement and Split Participant Agreement; therefore no process-versus-organization gap is coded.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,290 @@
+ 
+ 8-K
+ 1
+ tv517781_8k.htm
+ FORM 8-K
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ WASHINGTON, D. C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ PURSUANT TO SECTION
+13 OR 15(d) OF THE 
+
+ SECURITIES EXCHANGE
+ACT OF 1934 
+
+ Date of report (Date of earliest event
+reported): April 4, 2019 
+
+ ARRIS INTERNATIONAL PLC 
+
+ (Exact Name of Registrant as Specified
+in Its Charter) 
+
+ England and Wales 
+ 
+ 001-37672 
+ 
+ 98-1241619 
+ 
+ (State of Incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (I.R.S. Employer Identification No.) 
+
+ 3871 Lakefield Drive 
+ Suwanee, Georgia 
+
+ 30024 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+
+ Registrant's telephone number, including
+area code: (678) 473-2000 
+
+ Check the appropriate box below if the Form 8-K filing is intended
+to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Indicate by check mark whether the registrant is an emerging
+growth company as defined in Rule 405 of the Securities Act or Rule 12b-2 of the Exchange Act. 
+
+ Emerging growth company 
+
+ If an emerging growth company, indicate by check mark if the
+registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards
+provided pursuant to Section 13(a) of the Exchange Act. 
+
+ Item 1.02. Termination of a Material Definitive Agreement. 
+
+ The information set forth in Item 2.01 of this Current Report
+on Form 8-K is incorporated by reference in this Item 1.02. 
+
+ Termination of Warrants 
+
+ As previously disclosed, on November 8, 2018, CommScope Holding
+Company, Inc. (" CommScope ") and ARRIS International plc, a public limited company organized under the laws of
+England and Wales (" ARRIS ") entered into that certain bid conduct agreement (as amended by the First Amendment
+thereto, the " Bid Conduct Agreement "). 
+
+ Pursuant to the Bid Conduct Agreement, ARRIS agreed to use its
+commercially reasonable efforts to ensure that the outstanding warrants to purchase ordinary shares, 0.01 nominal value
+per share (the " Ordinary Shares ") held by Charter Communications Operating, LLC (" Charter ")
+and Comcast Cable Communications Management, LLC (" Comcast ") would be converted, as of the effective time (the
+" Effective Time ") of the Scheme (as hereinafter defined), into the right to receive an amount in cash equal
+to $31.75 per Ordinary Share (the " Per Share Consideration ") minus the exercise price per Ordinary Share under
+such warrant multiplied by the number of Ordinary Shares exercisable for such exercise price thereunder (the " Warrant
+Consideration "). 
+
+ In order to fulfill ARRIS's covenant under the Bid Conduct
+Agreement, ARRIS agreed with each of Charter and Comcast to terminate the respective warrants at the Effective Time. 
+
+ Each outstanding warrant to purchase Ordinary Shares that was
+outstanding and unexercised immediately prior to the Effective Time at the Effective Time ceased to represent the right to acquire
+Ordinary Shares and was automatically converted into the right to receive the Warrant Consideration. 
+
+ Repayment and Termination of 2015 Amended and Restated
+Credit Agreement 
+
+ In connection with the completion of the Transaction (as described
+further under Item 2.01), that certain Amended and Restated Credit Agreement, dated as of June 18, 2015 (as further amended, modified,
+extended, restated, replaced, or supplemented prior to the date hereof, the " Credit Agreement "), by and among
+Ruckus Wireless, Inc. (" Ruckus "), ARRIS, ARRIS Enterprises LLC, ARRIS Technology Inc., certain subsidiaries
+of ARRIS party thereto (together with Ruckus and ARRIS, the " Borrowers "), the lenders from time to time party
+thereto and Bank of America, N.A., as administrative agent for the lenders, was terminated, and all existing third-party debt for
+borrowed money of the Borrowers (and all of the commitments, liens and guaranties with respect thereto) under the Credit Agreement
+were repaid, redeemed, defeased, discharged, refinanced and terminated, effective as of the Effective Time. There were no material
+early termination penalties incurred by the Borrowers in connection with the termination of the Credit Agreement. 
+
+ Item 2.01.&#9;Completion of Acquisition or Disposition of
+Assets. 
+
+ On April 4, 2019, the hearing (the " Hearing ")
+of the High Court of Justice in England and Wales (the " Court ") was held for the purposes of sanctioning the
+scheme of arrangement under Part 26 of the Companies Act 2006 (the " Scheme ") regarding the acquisition by CommScope
+of all of the Ordinary Shares of ARRIS (the " Acquisition " or the " Transaction ") (other than
+shares owned by (i) CommScope or any other direct or indirect wholly owned subsidiary of CommScope or (ii) ARRIS or any direct
+or indirect wholly owned subsidiary of ARRIS) for the Per Share Consideration for each Ordinary Share. The Hearing
+took place following the satisfaction or waiver of the other conditions to the Acquisition under the Bid Conduct Agreement (other
+than those that were by their terms only capable of satisfaction at closing). At the Hearing, the Court sanctioned the Scheme
+and issued a court order confirming the same (the " Court Order "). Shortly following the Hearing, the Court
+Order was registered with the Registrar of Companies in the UK such that the Scheme became effective in accordance with its terms,
+completing the Acquisition, and ARRIS became an indirect, wholly owned subsidiary of CommScope. 
+
+ Except as summarized below and subject to certain exceptions,
+the Bid Conduct Agreement provided that at the Effective Time, 50% of each unvested restricted stock unit or similar award of
+ARRIS (each, an " RSU ") with time-based vesting was to become vested and cancelled and converted into the right
+to receive an amount in cash equal to the Per Share Consideration multiplied by the number of Ordinary Shares so accelerated thereunder,
+and the remaining 50% of such RSU was to be converted into CommScope restricted stock units (or, in the case of cash awards of
+ARRIS, comparable cash awards of CommScope); provided , that , CommScope could elect to increase the portion of such
+RSUs that were accelerated and cashed-out at the closing, which it elected to do. Specifically, CommScope elected to increase
+the portion of such time-based vesting RSUs that became vested and cancelled and converted into the right to receive an amount
+in cash (as described above) as follows: (i) for all time-based vesting RSUs other than those granted to David Potts and Robert
+Stanzione, the amount of each such RSU that was so accelerated and cashed-out was increased from 50% to 55% and (ii) all time-based
+vesting RSUs granted to David Potts and Robert Stanzione were accelerated and cashed-out. In addition, CommScope elected to treat
+the vested phantom RSUs granted to employees of ARRIS in China similar to other vested RSUs and, accordingly, cash them out in
+connection with the closing. Pursuant to the terms of the Bid Conduct Agreement, the portion of such time-based vesting RSUs that
+were not accelerated and cashed-out (the " Assumed RSUs ") were converted into a number of CommScope restricted
+stock units (or, in the case of cash awards of ARRIS, comparable cash awards of CommScope) equal to the number of RSUs being so
+converted multiplied by an exchange ratio, the numerator of which is the Per Share Consideration and the denominator of which
+is the volume-weighted average price per share of CommScope's Common Stock for the 20 trading days prior to the Effective
+Time of $22.0581 (the " Exchange Ratio "), but otherwise remained subject to the original terms and vesting schedule
+associated with such Assumed RSU. 
+
+ In addition, all non-employee director RSUs and all remaining
+RSUs (including all RSUs with performance-based vesting conditions and all RSUs that vested prior to the Effective Time, but which
+had not at such time otherwise been settled) became fully vested and cancelled and were converted into the right to receive an
+amount in cash equal to the Per Share Consideration multiplied by the number of Ordinary Shares subject to such RSUs, with performance
+for the "performance-based" RSUs deemed to be satisfied at target levels for all such RSUs other than those granted
+in 2018, for which performance was deemed satisfied at a level which resulted in 150% of the Ordinary Shares under such RSUs vesting. 
+In addition, with respect to each outstanding warrant to purchase Ordinary Shares, at the Effective Time, such warrants converted
+into the right to receive an amount in cash equal to the Warrant Consideration. 
+
+ CommScope paid approximately $7.21 billion in
+cash consideration in connection with the Transaction (inclusive of approximately $2.05 billion to repay third party
+indebtedness of ARRIS outstanding at the closing), net of estimated cash acquired and excluding transaction-related costs.
+The aggregate number of shares of Common Stock of CommScope issuable upon the vesting of the Assumed RSUs (inclusive of the
+portion thereof constituting cash awards of ARRIS and to be settled in cash) is equal to approximately 3.72 million. CommScope assumed existing capacity under the
+ARRIS International plc 2016 Stock Incentive Plan to settle up to 2,100,000 of the shares of Common Stock of CommScope
+necessary to satisfy the Assumed RSUs, with the balance to be issued from existing capacity under CommScope's Amended
+and Restated 2013 Long-Term Incentive Plan and reserved for issuance thereunder. CommScope intends to file a Form S-8
+Registration Statement covering the shares of Common Stock of CommScope underlying the Assumed RSUs with respect to the
+portion to be satisfied from the assumption of the ARRIS International plc 2016 Stock Incentive Plan. 
+
+ The cash consideration for the Transaction was funded with a
+combination of (i) cash on hand, (ii) cash acquired from ARRIS, (iii) proceeds from the private placement transaction with
+Carlyle Partners VII S1 Holdings, L.P. and (iv) proceeds from various debt financing transactions. 
+
+ The foregoing description does not purport to be complete and
+is subject to, and qualified in its entirety by, the full text of the Bid Conduct Agreement, which was filed as Exhibit 2.1 to
+ARRIS's Current Report on Form 8-K filed with the SEC on November 8, 2018, and the full text of the First Amendment thereto,
+which was filed as Exhibit 2.1 to ARRIS's Current Report on Form 8-K filed with the SEC on January 3, 2019, both of which
+are incorporated herein by reference. 
+
+ The representations, warranties and covenants of CommScope contained
+in the Bid Conduct Agreement were made solely for the benefit of ARRIS, and the representations, warranties and covenants of ARRIS
+were made solely for the benefit of CommScope. In addition, such representations, warranties and covenants (a) were made only for
+purposes of the Bid Conduct Agreement, (b) are subject to materiality qualifications contained in the Bid Conduct Agreement which
+may differ from what may be viewed as material by investors, (c) were made only as of the date of the Bid Conduct Agreement or
+such other date as is specified in the Bid Conduct Agreement, (d) were included in the Bid Conduct Agreement for the purpose of
+allocating risk between the contracting parties rather than establishing matters as fact and (e) with respect to ARRIS, were qualified
+by (i) matters specifically disclosed in any reports filed by ARRIS with the SEC prior to the date of the Bid Conduct Agreement
+and (ii) confidential disclosures made to CommScope in the disclosure letter delivered in connection with the Bid Conduct Agreement.
+The Bid Conduct Agreement was filed to provide investors with information regarding its terms and is not intended to provide any
+factual information about ARRIS, CommScope or any of their respective subsidiaries or affiliates. Investors should not rely on
+the representations, warranties and covenants or any descriptions thereof as characterizations of the actual state of facts or
+condition of ARRIS, CommScope or any of their respective subsidiaries or affiliates. Moreover, information concerning the subject
+matter of the representations and warranties may change, or may have changed, after the date of the Bid Conduct Agreement, which
+subsequent information may or may not be fully reflected in ARRIS's or CommScope's public disclosures. The Bid Conduct
+Agreement should not be read alone, but should instead be read in conjunction with the other information regarding ARRIS and CommScope
+that is or will be contained in, or incorporated by reference into, the other documents that each party files with the SEC. 
+
+ Item 3.01 Notice of Delisting or Failure to Satisfy a Continued
+Listing Rule or Standard; Transfer of Listing. 
+
+ The information set forth in Item 2.01 of this Current Report
+on Form 8-K is incorporated by reference in this Item 3.01. 
+
+ On April 3, 2019, in connection with the consummation of
+the Transaction, ARRIS requested that trading of the Ordinary Shares, which traded under the symbol "ARRS," be
+halted beginning on April 4, 2019, and that the Ordinary Shares cease to be traded on The NASDAQ Global Select Market
+(" NASDAQ ") before the opening of trading on April 5, 2019 and be delisted from NASDAQ on April 4, 2019.
+Accordingly, on April 4, 2019, NASDAQ will file with the SEC a Form 25 Notification of Removal from Listing and/or
+Registration under Section 12(b) (the " Form 25 ") of the Securities Exchange Act of 1934, as amended (the
+" Exchange Act "), to delist and deregister the Ordinary Shares. The delisting of the Ordinary Shares from
+NASDAQ will be effective 10 days after the filing of the Form 25. ARRIS intends to file with the SEC a certification on Form
+15 under the Exchange Act relating to the Ordinary Shares, which will suspend the Company's reporting obligations under
+Sections 13 and 15(d) of the Exchange Act and deregister its common stock under Section 12(g) of the Exchange Act. 
+
+ Item 3.03. Material Modification to Rights of Security Holders. 
+
+ The information set forth in Items 2.01, 3.01 and 5.01 of this
+Current Report on Form 8-K is incorporated by reference in this Item 3.03. 
+
+ As a result of the Transaction and at the Effective Time, each
+issued and outstanding Ordinary Share (other than shares owned by (i) CommScope or any other direct or indirect wholly owned subsidiary
+of CommScope or (ii) ARRIS or any direct or indirect wholly owned subsidiary of ARRIS), was automatically transferred to CommScope
+(or its nominee) in exchange for the right to receive the Per Share Consideration, without interest. At the Effective Time, each
+holder of Ordinary Shares issued and outstanding immediately before the Effective Time ceased to have any rights as a shareholder
+of ARRIS, other than the right of the holders of Ordinary Shares to receive the Per Share Consideration. 
+
+ Item 5.01 Changes in Control of Registrant. 
+
+ The information set forth in Items 2.01 and 5.02 of this Current
+Report on Form 8-K is incorporated by reference in this Item 5.01. 
+
+ Pursuant to the Scheme, at the Effective Time, ARRIS became
+an indirect, wholly-owned subsidiary of CommScope and, accordingly, a change in control of ARRIS occurred. 
+
+ Item 5.02. Departure of Directors or Certain Officers; Election
+of Directors; Appointment of Certain Officers. 
+
+ The information set forth in Items 2.01 and 5.01 of this Current
+Report on Form 8-K is incorporated by reference in this Item 5.02. 
+
+ At the Effective Time and in accordance with the Bid Conduct
+Agreement, all of the officers and directors of ARRIS ceased to serve as the officers and directors of ARRIS. Also at the Effective
+Time, Michael D. Coppin and Neil Shankland became the directors of ARRIS: 
+
+ Mr. Coppin, age 54, has been an employee of CommScope Holding
+Company, Inc. since 2006 and holds the position of Vice President & Senior Attorney, Corporate & Securities Law. From 1997
+until 2006, Mr. Coppin was an associate attorney at the law firm of Mayer Brown LLP. Mr. Coppin is not expected to serve on any
+committees. 
+
+ Mr. Shankland, age 56, has been an employee of CommScope Technologies
+UK since 1993 and holds the position of Vice President, Finance EMEA. Mr. Shankland is not expected to serve on any committees. 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ (d) Exhibits. 
+
+ Exhibit 
+ Number: 
+
+ Description 
+
+ 2.1 
+ 
+ Bid Conduct Agreement, dated November 8, 2018, by and between CommScope Holding Company, Inc. and ARRIS (incorporated by reference to Exhibit 2.1 of ARRIS's Form 8-K, filed on November 8, 2018)* 
+ 
+ 2.2 
+ 
+ First Amendment to Bid Conduct Agreement, dated January 2, 2019, by and between CommScope Holding Company, Inc. and ARRIS (incorporated by reference to Exhibit 2.1 of ARRIS's Form 8-K, filed on January 3, 2019). 
+
+ *This filing excludes schedules and exhibits pursuant to Item
+601(b)(2) of Regulation S-K, which the registrant agrees to furnish supplementally to the SEC upon request by the SEC. 
+
+ SIGNATURE 
+
+ Pursuant to the requirements of the Securities
+Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ ARRIS INTERNATIONAL PLC 
+
+ By: 
+ /s/ Michael
+Coppin 
+
+ Michael Coppin 
+
+ Secretary 
+
+ Date: April 4, 2019 
+

@@ -1,0 +1,85 @@
+{
+  "case_id": "P300",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a whole-company acquisition: Merger Sub merges into Bankrate with the \"pre-existing operating company, not merely selected assets\" surviving as an indirect wholly owned subsidiary, so the customer-facing content/audience-aggregation product moves together with the entity's operating processes (gap_45=0 — no product-vs-process split). The existing management is carried forward (subject to change-in-control severance) alongside those processes as the acquired entity itself continues operating, so no process-vs-organization mismatch (gap_56=0). Because Red Ventures enters \"as the new controlling parent\" and is characterized as \"rather than being merged into Bankrate's operations,\" T1 is coded replace; the whole-company continuity means no divided substrate required a transition-services agreement (gap_mitigated=NA)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures a whole-company reverse-subsidiary merger in which Bankrate survives intact as the operating entity and becomes an indirect wholly owned subsidiary of Red Ventures, carrying its customer-facing content/audience-aggregation product together with the legal vehicle (T3–T4). Structural summary and interim-arrangement sections state that the product, surviving entity, and existing management move forward together under ordinary-course and access covenants, with no dedicated TSA and no documented product-vs-process or process-vs-organization split at closing; therefore gap_45 and gap_56 are both 0."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The merger transferred Bankrate as a whole operating company, including its customer-facing content and audience-aggregation product, while Bankrate continued as the surviving corporation and subsidiary; thus the product and its operating processes moved together, supporting gap_45 = 0. The structural summary states that the product, surviving legal entity, and existing management were carried forward together, subject to change-in-control severance arrangements, supporting gap_56 = 0. No divided substrate or dedicated transition-services arrangement was described. [SRC: SEC accession 0001193125-17-258576, DEFM14A]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a whole-company acquisition: Merger Sub merges into Bankrate with the \\\"pre-existing operating company, not merely selected assets\\\" surviving as an indirect wholly owned subsidiary, so the customer-facing content/audience-aggregation product moves together with the entity's operating processes (gap_45=0 \\u2014 no product-vs-process split). The existing management is carried forward (subject to change-in-control severance) alongside those processes as the acquired entity itself continues operating, so no process-vs-organization mismatch (gap_56=0). Because Red Ventures enters \\\"as the new controlling parent\\\" and is characterized as \\\"rather than being merged into Bankrate's operations,\\\" T1 is coded replace; the whole-company continuity means no divided substrate required a transition-services agreement (gap_mitigated=NA).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures a whole-company reverse-subsidiary merger in which Bankrate survives intact as the operating entity and becomes an indirect wholly owned subsidiary of Red Ventures, carrying its customer-facing content/audience-aggregation product together with the legal vehicle (T3–T4). Structural summary and interim-arrangement sections state that the product, surviving entity, and existing management move forward together under ordinary-course and access covenants, with no dedicated TSA and no documented product-vs-process or process-vs-organization split at closing; therefore gap_45 and gap_56 are both 0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The merger transferred Bankrate as a whole operating company, including its customer-facing content and audience-aggregation product, while Bankrate continued as the surviving corporation and subsidiary; thus the product and its operating processes moved together, supporting gap_45 = 0. The structural summary states that the product, surviving legal entity, and existing management were carried forward together, subject to change-in-control severance arrangements, supporting gap_56 = 0. No divided substrate or dedicated transition-services arrangement was described. [SRC: SEC accession 0001193125-17-258576, DEFM14A]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

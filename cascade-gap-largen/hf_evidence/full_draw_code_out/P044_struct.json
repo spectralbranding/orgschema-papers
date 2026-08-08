@@ -1,0 +1,85 @@
+{
+  "case_id": "P044",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the slice states the producing operations moved with the product — the two mills (Jesup, Fernandina Beach) and the proprietary kraft/sulfite processes, bleaching sequences, cold caustic \"SpinCo Recipe,\" patents and know-how crossed the ownership boundary together with the cellulose-specialties product lines, so T4 and T5 transferred coherently. gap_56=0: the management team (Boynton) and the SpinCo-allocated hourly/union employees moved with the processes, and the employee matters agreement allocated the workforce, so T5 and T6 aligned at closing. The unbridged mismatch was in shared corporate service functions (IT, payroll, AP, insurance, administration), which sit outside the T4/T5/T6 product-process-people substrate and were bridged by a transition services agreement, not a documented T4/T5 or T5/T6 gap."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that 'The producing operations moved with the product' and 'The production processes crossed with the assets', indicating no structural mismatch between the product and its underlying processes (gap_45 = 0). Furthermore, it notes that 'The management/people ran with the business' and 'Employees allocated to the separated business... moved with it', showing that the organizational layer transferred coherently alongside the operational processes (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the cellulose-specialties product lines crossed together with the two producing mills and the kraft/sulfite, bleaching, and cold-caustic processes plus related patents/know-how ('producing operations moved with the product'; 'production processes crossed with the assets'). gap_56=0 because the same closing structure moved SpinCo management (Boynton et al.) and SpinCo-allocated employees, including union-covered hourly staff with prior-service credit, alongside those operations ('management/people ran with the business'). Shared corporate IT/payroll/admin remained on Rayonier and were bridged by a TSA, but that is outside the core T4–T6 production substrate and does not create a product-vs-process or process-vs-org mismatch at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the slice states the producing operations moved with the product \\u2014 the two mills (Jesup, Fernandina Beach) and the proprietary kraft/sulfite processes, bleaching sequences, cold caustic \\\"SpinCo Recipe,\\\" patents and know-how crossed the ownership boundary together with the cellulose-specialties product lines, so T4 and T5 transferred coherently. gap_56=0: the management team (Boynton) and the SpinCo-allocated hourly/union employees moved with the processes, and the employee matters agreement allocated the workforce, so T5 and T6 aligned at closing. The unbridged mismatch was in shared corporate service functions (IT, payroll, AP, insurance, administration), which sit outside the T4/T5/T6 product-process-people substrate and were bridged by a transition services agreement, not a documented T4/T5 or T5/T6 gap.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that 'The producing operations moved with the product' and 'The production processes crossed with the assets', indicating no structural mismatch between the product and its underlying processes (gap_45 = 0). Furthermore, it notes that 'The management/people ran with the business' and 'Employees allocated to the separated business... moved with it', showing that the organizational layer transferred coherently alongside the operational processes (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the cellulose-specialties product lines crossed together with the two producing mills and the kraft/sulfite, bleaching, and cold-caustic processes plus related patents/know-how ('producing operations moved with the product'; 'production processes crossed with the assets'). gap_56=0 because the same closing structure moved SpinCo management (Boynton et al.) and SpinCo-allocated employees, including union-covered hourly staff with prior-service credit, alongside those operations ('management/people ran with the business'). Shared corporate IT/payroll/admin remained on Rayonier and were bridged by a TSA, but that is outside the core T4–T6 production substrate and does not create a product-vs-process or process-vs-org mismatch at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

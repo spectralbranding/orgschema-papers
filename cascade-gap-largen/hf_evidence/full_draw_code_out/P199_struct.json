@@ -1,0 +1,85 @@
+{
+  "case_id": "P199",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction involved a spin-off of the Energy Services Group prior to the merger, meaning only a subset of the business model, products, processes, and organization transferred to Boeing. A structural gap at T5/T6 (gap_56) is documented because shared corporate services (treasury, HR, IT, etc.) and certain employees were split or provided via a transition services agreement and employee matters agreement, indicating the operational processes and the people running them were structurally misaligned at closing but mitigated by these agreements. No gap_45 is documented as the Aerospace products and their specific production processes transferred together."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At merger closing the post-spin KLX entity (holding only Aerospace Solutions) survived intact as a wholly owned Boeing subsidiary, so the customer-facing aerospace product layer and the operating processes that produce and deliver it crossed inside the same legal vehicle with no product-vs-process carve-out (gap_45=0). Board and seven officers were replaced at the effective time, but the slice does not show processes moving without the workforce that runs them; Aerospace Solutions people remained with the surviving entity under Boeing, and the Energy spin-off’s employee-matters/TSA arrangements allocated and bridged that separated tier rather than stripping process from org on the Boeing side (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Energy Services business crossed into KLX Energy Services, but KLX continued supplying treasury, payroll, accounting, HR, legal, IT, and other administrative processes for up to six months under the transition services agreement, documenting a product/business-versus-process gap at closing that was contractually mitigated [SRC: SEC accession 0001047469-18-005152, DEFM14A, \"Transition Services Agreement\"]. The employee matters agreement allocated Energy Services employees to the spun company and required the temporarily shared-service employees remaining at KLX to transfer by or before merger completion, so the slice does not document a process-versus-organization gap at closing [SRC: SEC accession 0001047469-18-005152, DEFM14A, \"Employee Matters Agreement\"]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction involved a spin-off of the Energy Services Group prior to the merger, meaning only a subset of the business model, products, processes, and organization transferred to Boeing. A structural gap at T5/T6 (gap_56) is documented because shared corporate services (treasury, HR, IT, etc.) and certain employees were split or provided via a transition services agreement and employee matters agreement, indicating the operational processes and the people running them were structurally misaligned at closing but mitigated by these agreements. No gap_45 is documented as the Aerospace products and their specific production processes transferred together.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At merger closing the post-spin KLX entity (holding only Aerospace Solutions) survived intact as a wholly owned Boeing subsidiary, so the customer-facing aerospace product layer and the operating processes that produce and deliver it crossed inside the same legal vehicle with no product-vs-process carve-out (gap_45=0). Board and seven officers were replaced at the effective time, but the slice does not show processes moving without the workforce that runs them; Aerospace Solutions people remained with the surviving entity under Boeing, and the Energy spin-off’s employee-matters/TSA arrangements allocated and bridged that separated tier rather than stripping process from org on the Boeing side (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Energy Services business crossed into KLX Energy Services, but KLX continued supplying treasury, payroll, accounting, HR, legal, IT, and other administrative processes for up to six months under the transition services agreement, documenting a product/business-versus-process gap at closing that was contractually mitigated [SRC: SEC accession 0001047469-18-005152, DEFM14A, \\\"Transition Services Agreement\\\"]. The employee matters agreement allocated Energy Services employees to the spun company and required the temporarily shared-service employees remaining at KLX to transfer by or before merger completion, so the slice does not document a process-versus-organization gap at closing [SRC: SEC accession 0001047469-18-005152, DEFM14A, \\\"Employee Matters Agreement\\\"].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P142",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$808.3 million pre-tax non-cash goodwill impairment in 2015",
+      "rationale": "The slice explicitly states that the acquired business was folded into consolidated results and its distinct trajectory is not separately disclosed. Although Quad/Graphics experienced significant company-wide restructuring, plant closures, and goodwill impairment, there is no documented evidence attributing these to specific product/process or process/organization integration fractures with the acquired business."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$808.3M pretax goodwill impairment (2015)",
+      "rationale": "The slice states the acquired business is not separately identified in the FY2016 10-K and that restructuring, plant closures, impairments, and headcount reductions are reported only on a company-wide consolidated basis with no attribution to the acquired unit, so no product/process interface disruption is documented (p4=0). Workforce reductions and facility consolidations are framed as responses to industry overcapacity rather than as a realized fracture of operations against organization/culture from the deal, yielding no documented p5 pathway (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$808.3 million pre-tax goodwill impairment in 2015'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record documents company-wide restructuring, plant closures, equipment impairments, and workforce reductions, but it does not identify product-line/operations incoherence, so p4 is 0. Although 2016 charges included $12.9 million of employee-termination costs and the company reported approximately 11,100 cumulative headcount reductions since 2010, the filing does not document operations breaking against management, people, or culture and does not attribute these actions to the acquired business; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$808.3 million pre-tax non-cash goodwill impairment in 2015\",\n  \"rationale\": \"The slice explicitly states that the acquired business was folded into consolidated results and its distinct trajectory is not separately disclosed. Although Quad/Graphics experienced significant company-wide restructuring, plant closures, and goodwill impairment, there is no documented evidence attributing these to specific product/process or process/organization integration fractures with the acquired business.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$808.3M pretax goodwill impairment (2015)\",\n  \"rationale\": \"The slice states the acquired business is not separately identified in the FY2016 10-K and that restructuring, plant closures, impairments, and headcount reductions are reported only on a company-wide consolidated basis with no attribution to the acquired unit, so no product/process interface disruption is documented (p4=0). Workforce reductions and facility consolidations are framed as responses to industry overcapacity rather than as a realized fracture of operations against organization/culture from the deal, yielding no documented p5 pathway (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$808.3 million pre-tax goodwill impairment in 2015\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents company-wide restructuring, plant closures, equipment impairments, and workforce reductions, but it does not identify product-line/operations incoherence, so p4 is 0. Although 2016 charges included $12.9 million of employee-termination costs and the company reported approximately 11,100 cumulative headcount reductions since 2010, the filing does not document operations breaking against management, people, or culture and does not attribute these actions to the acquired business; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

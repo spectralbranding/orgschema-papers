@@ -1,0 +1,85 @@
+{
+  "case_id": "P011",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the biopharmaceutical product portfolio (ADVATE, FEIBA, GAMMAGARD LIQUID) crossed into Baxalta, but products had \"historically been transferred at cost between Baxter and the businesses comprising Baxalta,\" and a reciprocal five-to-ten-year manufacturing and supply agreement was needed because manufacturing/delivery processes did not all move coherently alongside the products at closing — a documented product-vs-process mismatch. gap_56=1: Baxalta \"has not historically operated as a standalone business\" and relied on Baxter for shared corporate substrate (\"executive oversight, treasury, finance, legal, human resources\"), with carve-out financials, so operational/administrative processes were not accompanied by an intact standalone organization at closing. gap_mitigated=yes: both gaps were contractually bridged at closing via the separation and distribution agreement, transition services agreement, long term services agreement, and manufacturing and supply agreement allocating the shared substrate. T1 coded 1-N because the board's stated intent was to split management focus into two distinct businesses."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "A product-process gap (gap_45) is evidenced by the reciprocal manufacturing and supply agreement where Baxter and Baxalta will manufacture products for each other, indicating that not all manufacturing processes transferred with their respective products. A process-organization gap (gap_56) is shown by Baxalta's historical reliance on Baxter for corporate overhead services like HR, finance, and legal, meaning the standalone organization lacked the full administrative substrate to run its operations. Both gaps were mitigated at closing via transition services, long-term services, and manufacturing agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The biopharmaceutical product portfolio crossed into Baxalta, but cross-entity manufacturing did not transfer as an intact whole: the manufacturing and supply agreement required each party to manufacture, label, and package products for the other, documenting a product-process gap at closing. Baxalta had not historically operated standalone, and Baxter continued to provide executive oversight, treasury, finance, legal, human-resources, and other corporate services, documenting a process-organization gap. The transition-services, long-term-services, and reciprocal manufacturing-and-supply agreements contractually bridged those shared substrates at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"1-N\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the biopharmaceutical product portfolio (ADVATE, FEIBA, GAMMAGARD LIQUID) crossed into Baxalta, but products had \\\"historically been transferred at cost between Baxter and the businesses comprising Baxalta,\\\" and a reciprocal five-to-ten-year manufacturing and supply agreement was needed because manufacturing/delivery processes did not all move coherently alongside the products at closing \\u2014 a documented product-vs-process mismatch. gap_56=1: Baxalta \\\"has not historically operated as a standalone business\\\" and relied on Baxter for shared corporate substrate (\\\"executive oversight, treasury, finance, legal, human resources\\\"), with carve-out financials, so operational/administrative processes were not accompanied by an intact standalone organization at closing. gap_mitigated=yes: both gaps were contractually bridged at closing via the separation and distribution agreement, transition services agreement, long term services agreement, and manufacturing and supply agreement allocating the shared substrate. T1 coded 1-N because the board's stated intent was to split management focus into two distinct businesses.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replicate\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"A product-process gap (gap_45) is evidenced by the reciprocal manufacturing and supply agreement where Baxter and Baxalta will manufacture products for each other, indicating that not all manufacturing processes transferred with their respective products. A process-organization gap (gap_56) is shown by Baxalta's historical reliance on Baxter for corporate overhead services like HR, finance, and legal, meaning the standalone organization lacked the full administrative substrate to run its operations. Both gaps were mitigated at closing via transition services, long-term services, and manufacturing agreements.\"",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The biopharmaceutical product portfolio crossed into Baxalta, but cross-entity manufacturing did not transfer as an intact whole: the manufacturing and supply agreement required each party to manufacture, label, and package products for the other, documenting a product-process gap at closing. Baxalta had not historically operated standalone, and Baxter continued to provide executive oversight, treasury, finance, legal, human-resources, and other corporate services, documenting a process-organization gap. The transition-services, long-term-services, and reciprocal manufacturing-and-supply agreements contractually bridged those shared substrates at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "uncertain",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P233",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: Fairmount Santrol's \"entire pre-merger operating business\" — its sand product solutions together with its associated logistics network of distribution terminals and railcars — crossed intact via the whole-company merger, so the customer-facing product and its producing/delivering processes moved together rather than being split. The carved-out Unimin HPQ Electronics line was excluded together with its personnel and assets (product AND process removed as a unit), not a product-vs-process mismatch. gap_56=0: The processes that transferred did so with the running organization broadly intact — service-credit continuity and immediate benefit eligibility for continuing employees, honoring of collective-bargaining agreements, and CEO continuity — so T5 was not transferred without the people who run it; the board and most FMSA officers ceasing roles reflects governance/top-management partiality (coded T6 partial), not a documented process-vs-workforce structural gap at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Fairmount Santrol's entire operating business, including its products (T4) and associated logistics and processes (T5), crossed intact into the combined company, resulting in no gap_45. While most of Fairmount's executive officers and board were terminated at closing, the operational employees and CEO transferred, and there is no documented structural mismatch between the transferred processes and the organization running them, resulting in no gap_56."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Fairmount Santrol’s entire operating business, including its product solutions and associated logistics network, crossed into the combined company, while Unimin’s HPQ products, supporting assets, intellectual property, and associated personnel were carved out together (SEC accession 0001193125-18-134923). Thus, no product was documented as crossing without its operating processes, and the excluded processes were accompanied by the relevant personnel; moreover, continuing employees received service-credit and benefit-plan continuity and the combined company had designated board and executive leadership at closing (SEC accessions 0001193125-18-134923 and 0001193125-18-185726)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: Fairmount Santrol's \\\"entire pre-merger operating business\\\" \\u2014 its sand product solutions together with its associated logistics network of distribution terminals and railcars \\u2014 crossed intact via the whole-company merger, so the customer-facing product and its producing/delivering processes moved together rather than being split. The carved-out Unimin HPQ Electronics line was excluded together with its personnel and assets (product AND process removed as a unit), not a product-vs-process mismatch. gap_56=0: The processes that transferred did so with the running organization broadly intact \\u2014 service-credit continuity and immediate benefit eligibility for continuing employees, honoring of collective-bargaining agreements, and CEO continuity \\u2014 so T5 was not transferred without the people who run it; the board and most FMSA officers ceasing roles reflects governance/top-management partiality (coded T6 partial), not a documented process-vs-workforce structural gap at closing.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Fairmount Santrol's entire operating business, including its products (T4) and associated logistics and processes (T5), crossed intact into the combined company, resulting in no gap_45. While most of Fairmount's executive officers and board were terminated at closing, the operational employees and CEO transferred, and there is no documented structural mismatch between the transferred processes and the organization running them, resulting in no gap_56.\"\n}\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Fairmount Santrol’s entire operating business, including its product solutions and associated logistics network, crossed into the combined company, while Unimin’s HPQ products, supporting assets, intellectual property, and associated personnel were carved out together (SEC accession 0001193125-18-134923). Thus, no product was documented as crossing without its operating processes, and the excluded processes were accompanied by the relevant personnel; moreover, continuing employees received service-credit and benefit-plan continuity and the combined company had designated board and executive leadership at closing (SEC accessions 0001193125-18-134923 and 0001193125-18-185726).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "N-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": true,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

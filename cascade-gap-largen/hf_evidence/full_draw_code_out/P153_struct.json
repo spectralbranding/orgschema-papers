@@ -1,0 +1,85 @@
+{
+  "case_id": "P153",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is coded 0 because the deal transferred \"operating facilities rather than bare equipment\" — the sellers' \"business related to\" each plant, i.e. operating ethanol plants with production capacity, so the customer-facing productive assets (T4) moved together with their producing operations (T5) as whole operating plants into buyer subsidiaries [SEC 0001193125-16-620265, Item 1.01; 0001193125-16-719192, Item 2.01]. gap_56 is coded uncertain because whether plant workforce, plant management, or operating personnel transferred with the facilities is expressly \"not stated in the reviewed closing-era filings\" [UNVERIFIED], leaving the T5/T6 relationship undocumentable at closing; the drop-down secondment/omnibus agreements bridge only the storage-asset substrate, not the plants themselves. Because the primary product/process moved as intact operating plants (no gap_45) and the T5/T6 alignment for the plants cannot be documented (gap_56 uncertain, not affirmatively established), gap_mitigated is NA."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the customer-facing productive assets crossed as 'three operating ethanol plants' and the sellers' 'business related to' each plant—i.e., operating facilities rather than bare equipment—so product capacity and the processes embodied in those operating facilities moved together at the Section 363 closing. gap_56=0 because, while operating facilities transferred into the new Green Plains plant LLCs, the slice expressly marks whether any seller plant workforce, management, or operating personnel transferred as [UNVERIFIED]/no closing-era filing documents a process-without-organization mismatch, so no structural gap_56 can be coded."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the three operating ethanol plants and the sellers' businesses related to them transferred as operating facilities rather than bare equipment, so no product-versus-process gap is documented. Although the storage assets were simultaneously routed to related partnership subsidiaries, their management, maintenance, operational, and administrative substrate was aligned at closing through secondment, omnibus-service, and throughput agreements. The filings do not state whether seller personnel transferred, but they document no closing-time process-versus-organization mismatch; therefore gap_56 is coded 0 under the conservative gap standard."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"uncertain\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is coded 0 because the deal transferred \\\"operating facilities rather than bare equipment\\\" \\u2014 the sellers' \\\"business related to\\\" each plant, i.e. operating ethanol plants with production capacity, so the customer-facing productive assets (T4) moved together with their producing operations (T5) as whole operating plants into buyer subsidiaries [SEC 0001193125-16-620265, Item 1.01; 0001193125-16-719192, Item 2.01]. gap_56 is coded uncertain because whether plant workforce, plant management, or operating personnel transferred with the facilities is expressly \\\"not stated in the reviewed closing-era filings\\\" [UNVERIFIED], leaving the T5/T6 relationship undocumentable at closing; the drop-down secondment/omnibus agreements bridge only the storage-asset substrate, not the plants themselves. Because the primary product/process moved as intact operating plants (no gap_45) and the T5/T6 alignment for the plants cannot be documented (gap_56 uncertain, not affirmatively established), gap_mitigated is NA.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the customer-facing productive assets crossed as 'three operating ethanol plants' and the sellers' 'business related to' each plant—i.e., operating facilities rather than bare equipment—so product capacity and the processes embodied in those operating facilities moved together at the Section 363 closing. gap_56=0 because, while operating facilities transferred into the new Green Plains plant LLCs, the slice expressly marks whether any seller plant workforce, management, or operating personnel transferred as [UNVERIFIED]/no closing-era filing documents a process-without-organization mismatch, so no structural gap_56 can be coded.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the three operating ethanol plants and the sellers' businesses related to them transferred as operating facilities rather than bare equipment, so no product-versus-process gap is documented. Although the storage assets were simultaneously routed to related partnership subsidiaries, their management, maintenance, operational, and administrative substrate was aligned at closing through secondment, omnibus-service, and throughput agreements. The filings do not state whether seller personnel transferred, but they document no closing-time process-versus-organization mismatch; therefore gap_56 is coded 0 under the conservative gap standard.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

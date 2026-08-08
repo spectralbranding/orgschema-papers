@@ -1,0 +1,58 @@
+{
+  "case_id": "P242",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "The evidence slice notes the planned closure of a Santa Clara facility and incomplete legal-entity/functional-currency integration as of FY2021, but does not document any realized disruption or incoherence specifically at the product/process interface (p4). Similarly, there is no documented fracture between operations and people/management/culture (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained (goodwill held at $6.67bn)",
+      "rationale": "p4 is coded 0 because the slice documents only planned continued operation of acquired older-technology fabs with modest investment and a single Santa Clara closure still pending as of FY2023, with no realized product-line/operations incoherence. p5 is coded 0 because, although legal-entity/functional-currency integration remained incomplete as of FY2021 and synergy-related costs continued into FY2023, the slice does not document operations fracturing against people/management/culture; no divestiture or organizational breakdown is identified."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['net intangible assets declined from $4.79bn in FY2021 to $3.37bn in FY2023']}",
+      "rationale": "{'type': 'string', 'enum': ['The slice documents continued operation of most acquired fabrication facilities with modest investment and a planned Santa Clara closure, but it does not document an acquired-product/operating-process mismatch; therefore p4 is 0. It also reports that a legal-structure and functional-currency integration step remained incomplete nearly three years after closing, but provides no documented fracture between operations and personnel, management, or culture; therefore p5 is 0.']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"The evidence slice notes the planned closure of a Santa Clara facility and incomplete legal-entity/functional-currency integration as of FY2021, but does not document any realized disruption or incoherence specifically at the product/process interface (p4). Similarly, there is no documented fracture between operations and people/management/culture (p5).\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained (goodwill held at $6.67bn)\",\n  \"rationale\": \"p4 is coded 0 because the slice documents only planned continued operation of acquired older-technology fabs with modest investment and a single Santa Clara closure still pending as of FY2023, with no realized product-line/operations incoherence. p5 is coded 0 because, although legal-entity/functional-currency integration remained incomplete as of FY2021 and synergy-related costs continued into FY2023, the slice does not document operations fracturing against people/management/culture; no divestiture or organizational breakdown is identified.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"net intangible assets declined from $4.79bn in FY2021 to $3.37bn in FY2023\"\n    ]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"The slice documents continued operation of most acquired fabrication facilities with modest investment and a planned Santa Clara closure, but it does not document an acquired-product/operating-process mismatch; therefore p4 is 0. It also reports that a legal-structure and functional-currency integration step remained incomplete nearly three years after closing, but provides no documented fracture between operations and personnel, management, or culture; therefore p5 is 0.\"\n    ]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

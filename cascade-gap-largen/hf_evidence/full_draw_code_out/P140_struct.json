@@ -1,0 +1,85 @@
+{
+  "case_id": "P140",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "This is a §363 bankruptcy asset sale: the customer-facing productive assets (T4 Oil and Gas Assets — leases, mineral interests, related assets) crossed free and clear \"subset,\" while \"contracts other than assigned contracts, excluded leases, retained cash/records, and liabilities other than defined assumed liabilities stayed with the estate,\" so operational contracts/processes (T5) transferred only in part and with friction, evidencing a product-vs-process mismatch (gap_45=1). On T5→T6, the deal structure shows employees \"did not transfer automatically,\" WARN notices were sent to all U.S. staff, and the Buyer had only a discretionary \"right, but not the obligation, to offer employment,\" so people/organization did not coherently move with the operations (gap_56=1). No transitional-services or shared-substrate operating agreement absorbing these gaps is documented in the slice; the Sellers merely agreed to keep non-hired staff 60 days post-WARN, so gap_mitigated=no. The controlling intent is coded terminate because existing common stock was expected cancelled with no recovery and the corporate seller's officers were removed/placed on hourly arrangements at closing, with no successor intent installed at the entity level (T2/T3 null — a bare asset sale, not a going-concern entity/model transfer)."
+    },
+    "gemini": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was a Section 363 asset sale of substantially all U.S. oil and gas assets (T4/T5) out of bankruptcy. The buyer acquired the physical and lease assets (T4/T5) but did not automatically take the employees (T6); the buyer had only a discretionary right to offer employment, and the seller issued WARN notices to all U.S. staff. This creates a structural gap (gap_56=1) because the operational assets transferred without the automatic transfer of the organization that runs them, and there is no mention of a transition services agreement mitigating this gap at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the APA conveyed the Oil and Gas Assets (leases, mineral interests and related assets) together with Assigned Contracts and Assumed Liabilities as one purchase package under EX-2.1 §2.1, with no documented structural split between the producing assets and the operational contracts/means that exploit them. gap_56=1 because that same asset-and-assigned-contract package crossed while people did not: EX-2.1 §8.6(a) required WARN notices to all U.S. employees and gave Buyer only the right, not the obligation, to offer employment on its own terms, so organization/culture was not aligned to transfer with operations at closing. No transitional-services or operating agreement allocating shared operating substrate is described in the slice, so gap_mitigated=no."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"terminate\", \"sigma_T2\": \"null\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"This is a \\u00a7363 bankruptcy asset sale: the customer-facing productive assets (T4 Oil and Gas Assets \\u2014 leases, mineral interests, related assets) crossed free and clear \\\"subset,\\\" while \\\"contracts other than assigned contracts, excluded leases, retained cash/records, and liabilities other than defined assumed liabilities stayed with the estate,\\\" so operational contracts/processes (T5) transferred only in part and with friction, evidencing a product-vs-process mismatch (gap_45=1). On T5\\u2192T6, the deal structure shows employees \\\"did not transfer automatically,\\\" WARN notices were sent to all U.S. staff, and the Buyer had only a discretionary \\\"right, but not the obligation, to offer employment,\\\" so people/organization did not coherently move with the operations (gap_56=1). No transitional-services or shared-substrate operating agreement absorbing these gaps is documented in the slice; the Sellers merely agreed to keep non-hired staff 60 days post-WARN, so gap_mitigated=no. The controlling intent is coded terminate because existing common stock was expected cancelled with no recovery and the corporate seller's officers were removed/placed on hourly arrangements at closing, with no successor intent installed at the entity level (T2/T3 null \\u2014 a bare asset sale, not a going-concern entity/model transfer).\"}",
+    "gemini": "{\n\"sigma_T1\": \"terminate\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction was a Section 363 asset sale of substantially all U.S. oil and gas assets (T4/T5) out of bankruptcy. The buyer acquired the physical and lease assets (T4/T5) but did not automatically take the employees (T6); the buyer had only a discretionary right to offer employment, and the seller issued WARN notices to all U.S. staff. This creates a structural gap (gap_56=1) because the operational assets transferred without the automatic transfer of the organization that runs them, and there is no mention of a transition services agreement mitigating this gap at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the APA conveyed the Oil and Gas Assets (leases, mineral interests and related assets) together with Assigned Contracts and Assumed Liabilities as one purchase package under EX-2.1 §2.1, with no documented structural split between the producing assets and the operational contracts/means that exploit them. gap_56=1 because that same asset-and-assigned-contract package crossed while people did not: EX-2.1 §8.6(a) required WARN notices to all U.S. employees and gave Buyer only the right, not the obligation, to offer employment on its own terms, so organization/culture was not aligned to transfer with operations at closing. No transitional-services or operating agreement allocating shared operating substrate is described in the slice, so gap_mitigated=no.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "terminate",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

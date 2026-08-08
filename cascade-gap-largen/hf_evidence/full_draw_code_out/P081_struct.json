@@ -1,0 +1,85 @@
+{
+  "case_id": "P081",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "uncertain",
+      "gap_mitigated": "yes",
+      "rationale": "The joint venture was split into two separate entities (CAF and CMA), separating the Nanjing production processes (T5) from CAF's ownership structure, creating a gap_45. This gap was mitigated by a contract manufacturing agreement where CMA agreed to continue assembling vehicles for CAF until 2014. No information is provided regarding the transfer of employees or management (T6), making gap_56 uncertain."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states that CFMA’s Nanjing operations/production processes moved to the newly separated CMA entity while CAF retained Ford (and Volvo) customer-facing vehicle products and Chongqing facilities, creating a documented product-vs-process separation at closing; CMA’s contract-manufacturing obligation to assemble vehicles for CAF until 2014 is the contractual bridge across that mismatch. gap_56=0 because the filings expressly do not disclose any transfer or non-transfer of employees, management, or organization in the split, so no T5-vs-T6 structural mismatch can be documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Nanjing operations and associated production processes transferred to the separate Mazda/Changan venture, while CAF continued offering Ford vehicles; CMA therefore agreed to assemble vehicles for CAF as a contract manufacturer through 2014, documenting a product-process separation at closing and a contractual mitigation. The filings disclose no employee, management, or personnel transfer, but they also do not document that transferred or re-engineered processes lacked coherent organizational support, so no closing-structure T5-T6 gap is established."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"uncertain\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"uncertain\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The joint venture was split into two separate entities (CAF and CMA), separating the Nanjing production processes (T5) from CAF's ownership structure, creating a gap_45. This gap was mitigated by a contract manufacturing agreement where CMA agreed to continue assembling vehicles for CAF until 2014. No information is provided regarding the transfer of employees or management (T6), making gap_56 uncertain.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states that CFMA’s Nanjing operations/production processes moved to the newly separated CMA entity while CAF retained Ford (and Volvo) customer-facing vehicle products and Chongqing facilities, creating a documented product-vs-process separation at closing; CMA’s contract-manufacturing obligation to assemble vehicles for CAF until 2014 is the contractual bridge across that mismatch. gap_56=0 because the filings expressly do not disclose any transfer or non-transfer of employees, management, or organization in the split, so no T5-vs-T6 structural mismatch can be documented at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Nanjing operations and associated production processes transferred to the separate Mazda/Changan venture, while CAF continued offering Ford vehicles; CMA therefore agreed to assemble vehicles for CAF as a contract manufacturer through 2014, documenting a product-process separation at closing and a contractual mitigation. The filings disclose no employee, management, or personnel transfer, but they also do not document that transferred or re-engineered processes lacked coherent organizational support, so no closing-structure T5-T6 gap is established.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-N",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

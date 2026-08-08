@@ -1,0 +1,58 @@
+{
+  "case_id": "P329",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice explicitly states that both businesses left the public reporting system and no public 3-5-year outcome record exists for either as separately identifiable entities. UnitedHealth Group consolidates the health care business without separate disclosure, and the education business buyer is not an SEC registrant. Therefore, there is no documented evidence of any realized disruption pathways."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no public 3-5-year outcome record exists for either the health-care or education business as separately identifiable entities after the November 2017 transactions, with ABCO deregistered and acquirers providing no breakout financial or operating narrative. Consequently no realized disruption at the product/process interface (p4) or process/organization interface (p5) is documented; absence of such evidence codes to 0 for both pathways."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "No public 3–5-year operating record exists for either business as a separately identifiable entity. UnitedHealth Group disclosed no acquired-business-specific financial results or operating narrative, while the education-business buyer entities made no SEC filings; therefore, product/process and process/organization disruption cannot be determined."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice explicitly states that both businesses left the public reporting system and no public 3-5-year outcome record exists for either as separately identifiable entities. UnitedHealth Group consolidates the health care business without separate disclosure, and the education business buyer is not an SEC registrant. Therefore, there is no documented evidence of any realized disruption pathways.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no public 3-5-year outcome record exists for either the health-care or education business as separately identifiable entities after the November 2017 transactions, with ABCO deregistered and acquirers providing no breakout financial or operating narrative. Consequently no realized disruption at the product/process interface (p4) or process/organization interface (p5) is documented; absence of such evidence codes to 0 for both pathways.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"No public 3–5-year operating record exists for either business as a separately identifiable entity. UnitedHealth Group disclosed no acquired-business-specific financial results or operating narrative, while the education-business buyer entities made no SEC filings; therefore, product/process and process/organization disruption cannot be determined.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

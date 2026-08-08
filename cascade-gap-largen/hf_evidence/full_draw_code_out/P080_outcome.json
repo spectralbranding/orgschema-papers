@@ -1,0 +1,58 @@
+{
+  "case_id": "P080",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cost estimate rose $52B to $54B; start-up slipped from late-2014/Q1-2015 to mid-2015; no divestiture or impairment; 47.3% operated interest retained",
+      "rationale": "The slice documents only a modest cost-estimate increase ($52B to $54B) and a schedule slip (to mid-2015), with 55% then ~75% of activities completed and 20 of 21 Train 1 modules installed — no documented disruption at the product/process interface, so p4_pathway = 0. Neither filing states any cause (labor, contractor, engineering) and no operations-versus-organization fracture is reported; ownership, operatorship, and offtake commitments remained unchanged, so p5_pathway = 0. No archetype incoherence or business-model incompatibility is documented, and no divestiture, impairment, or write-down specific to Gorgon is reported."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cost estimate rose from $52 billion to $54 billion",
+      "rationale": "The slice documents a cost increase from $52 billion to $54 billion and a schedule slip to mid-2015. However, it explicitly states that no cause is given for these changes, and there is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cost +$2B to $54B; start-up slipped to mid-2015; no divestiture",
+      "rationale": "The slice documents only a $2B rise in the Gorgon first-phase cost estimate ($52B to $54B) and a start-up slip from late 2014/Q1 2015 to mid-2015 across the FY2012–FY2013 10-Ks, with ownership, operatorship, and offtake commitments unchanged and no impairment or divestiture. No realized product/process interface incoherence (p4) is stated; the filings give no cause for the cost/schedule change and do not describe any inability to align product with operating processes. No process/organization fracture (p5) is documented; nothing in the window filings addresses operations-versus-people/management/culture breakdown over time."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"cost estimate rose $52B to $54B; start-up slipped from late-2014/Q1-2015 to mid-2015; no divestiture or impairment; 47.3% operated interest retained\", \"rationale\": \"The slice documents only a modest cost-estimate increase ($52B to $54B) and a schedule slip (to mid-2015), with 55% then ~75% of activities completed and 20 of 21 Train 1 modules installed \\u2014 no documented disruption at the product/process interface, so p4_pathway = 0. Neither filing states any cause (labor, contractor, engineering) and no operations-versus-organization fracture is reported; ownership, operatorship, and offtake commitments remained unchanged, so p5_pathway = 0. No archetype incoherence or business-model incompatibility is documented, and no divestiture, impairment, or write-down specific to Gorgon is reported.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"cost estimate rose from $52 billion to $54 billion\",\n  \"rationale\": \"The slice documents a cost increase from $52 billion to $54 billion and a schedule slip to mid-2015. However, it explicitly states that no cause is given for these changes, and there is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"cost +$2B to $54B; start-up slipped to mid-2015; no divestiture\",\n  \"rationale\": \"The slice documents only a $2B rise in the Gorgon first-phase cost estimate ($52B to $54B) and a start-up slip from late 2014/Q1 2015 to mid-2015 across the FY2012–FY2013 10-Ks, with ownership, operatorship, and offtake commitments unchanged and no impairment or divestiture. No realized product/process interface incoherence (p4) is stated; the filings give no cause for the cost/schedule change and do not describe any inability to align product with operating processes. No process/organization fracture (p5) is documented; nothing in the window filings addresses operations-versus-people/management/culture breakdown over time.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P056",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "partial",
+      "sigma_T4": "partial",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a partial acquisition (75% economic interest, 50% minus one vote) of Peulla, with the founder retaining management control of the operating business (Whitehall Group). Because the entire operating entity was subject to this shared ownership structure, the product (T4), processes (T5), and organization (T6) remained aligned together within the target. Therefore, no structural gaps between product, process, and people occurred at closing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "subset",
+      "sigma_T4": "partial",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states the interest acquired was an equity stake in Cyprus parent Peulla representing 75% economics and 50%-minus-one-vote, expressly 'not the operating assets or personnel directly,' while describing Whitehall as the customer-facing premium spirits/wines importer—so T4 economic interest crossed incompletely via HoldCo shares. It separately documents that operations/people did NOT cross: 'Mark Kaoufman… will continue to lead Whitehall' and 'will exercise management control over the Whitehall Group,' leaving T5/T6 with the founder; thus product interest crossed without processes (gap_45=1), while processes and organization both remained untransferred so there is no T5-without-T6 mismatch (gap_56=0). The Shareholders' Agreement at closing contractually allocates that management control to Kaoufman subject to the 3+3 board, absorbing the shared-substrate gap."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The acquired customer-facing interest was a 75% economic stake in Peulla, parent of the Whitehall premium spirits and wine importer, while the slice expressly states that operating assets and personnel did not transfer directly and that founder-CEO Mark Kaoufman retained management control. Because both the operational processes and the organization running them remained together under the founder, no T5–T6 mismatch is documented at closing. The T4–T5 separation was contractually absorbed through the Shareholders' Agreement, which allocated board supervision, reserved matters, and continuing founder-controlled management."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"partial\",\n  \"sigma_T4\": \"partial\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a partial acquisition (75% economic interest, 50% minus one vote) of Peulla, with the founder retaining management control of the operating business (Whitehall Group). Because the entire operating entity was subject to this shared ownership structure, the product (T4), processes (T5), and organization (T6) remained aligned together within the target. Therefore, no structural gaps between product, process, and people occurred at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"partial\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states the interest acquired was an equity stake in Cyprus parent Peulla representing 75% economics and 50%-minus-one-vote, expressly 'not the operating assets or personnel directly,' while describing Whitehall as the customer-facing premium spirits/wines importer—so T4 economic interest crossed incompletely via HoldCo shares. It separately documents that operations/people did NOT cross: 'Mark Kaoufman… will continue to lead Whitehall' and 'will exercise management control over the Whitehall Group,' leaving T5/T6 with the founder; thus product interest crossed without processes (gap_45=1), while processes and organization both remained untransferred so there is no T5-without-T6 mismatch (gap_56=0). The Shareholders' Agreement at closing contractually allocates that management control to Kaoufman subject to the 3+3 board, absorbing the shared-substrate gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The acquired customer-facing interest was a 75% economic stake in Peulla, parent of the Whitehall premium spirits and wine importer, while the slice expressly states that operating assets and personnel did not transfer directly and that founder-CEO Mark Kaoufman retained management control. Because both the operational processes and the organization running them remained together under the founder, no T5–T6 mismatch is documented at closing. The T4–T5 separation was contractually absorbed through the Shareholders' Agreement, which allocated board supervision, reserved matters, and continuing founder-controlled management.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "partial",
+    "sigma_T3": "subset",
+    "sigma_T4": "partial",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

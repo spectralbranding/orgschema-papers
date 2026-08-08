@@ -1,0 +1,58 @@
+{
+  "case_id": "P141",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "SEC registration revoked April 24, 2019; no audited public financial record for window",
+      "rationale": "The slice documents only that the registrant, a Chapter 11 debtor that sold substantially all operating assets, ceased periodic public reporting after a February 2016 monthly operating report and had its Exchange Act registration revoked on April 24, 2019. No audited financial record exists for the window, and the slice contains no documented evidence describing any product/process interface disruption (p4) or any process/organization fracture between operations and people/management/culture (p5). Because there is no realized-outcome evidence bearing on either interface, both pathways are coded uncertain rather than 0, and the archetype/business-model channels likewise lack any documented record."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "SEC registration revoked Apr 2019; no public financial record",
+      "rationale": "The slice documents only cessation of periodic reporting after a Feb 2016 8-K and SEC revocation of the registrant's securities registration on April 24, 2019, with no audited financials in the outcome window. No evidence is given of product/process interface disruption (p4) or process/organization fracture (p5); absence of such documented realized disruption is therefore coded 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'securities registration revoked April 24, 2019'}",
+      "rationale": "{'type': 'string', 'enum': \"The realized record documents cessation of periodic reporting and SEC revocation of the registrant's securities registration on April 24, 2019. It provides no documented evidence of post-deal product/process incoherence, so p4 is coded 0, and no documented evidence that operations fractured against people, management, or culture, so p5 is coded 0.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"SEC registration revoked April 24, 2019; no audited public financial record for window\", \"rationale\": \"The slice documents only that the registrant, a Chapter 11 debtor that sold substantially all operating assets, ceased periodic public reporting after a February 2016 monthly operating report and had its Exchange Act registration revoked on April 24, 2019. No audited financial record exists for the window, and the slice contains no documented evidence describing any product/process interface disruption (p4) or any process/organization fracture between operations and people/management/culture (p5). Because there is no realized-outcome evidence bearing on either interface, both pathways are coded uncertain rather than 0, and the archetype/business-model channels likewise lack any documented record.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"SEC registration revoked Apr 2019; no public financial record\",\n  \"rationale\": \"The slice documents only cessation of periodic reporting after a Feb 2016 8-K and SEC revocation of the registrant's securities registration on April 24, 2019, with no audited financials in the outcome window. No evidence is given of product/process interface disruption (p4) or process/organization fracture (p5); absence of such documented realized disruption is therefore coded 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"securities registration revoked April 24, 2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents cessation of periodic reporting and SEC revocation of the registrant's securities registration on April 24, 2019. It provides no documented evidence of post-deal product/process incoherence, so p4 is coded 0, and no documented evidence that operations fractured against people, management, or culture, so p5 is coded 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

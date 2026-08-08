@@ -1,0 +1,85 @@
+{
+  "case_id": "P325",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: Civeo acquired all outstanding Noralta shares, so the lodging product/assets (T4, 5,600+ owned rooms, turnkey camp/catering) and the operational lodge/facilities-management processes (T5) moved together as a whole share purchase into a wholly-owned subsidiary — no product-vs-process split at closing. gap_56=1: the deal structurally transferred the operating vehicle and processes but built in no assured employment-continuity mechanism; the risk factors flag that \"key\" Noralta employees \"might decide not to remain with Civeo after the Acquisition,\" with only Non-Competition Agreements binding named sellers rather than personnel retention. gap_mitigated=no: only Non-Competition Agreements were negotiated, and no transitional-services/operating agreement absorbing the personnel-organization substrate is documented at closing. T1=continue because Civeo remained the continuing registrant with its own controlling intent absorbing Noralta."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred Noralta's lodges (T4) and operating model (T5) together, resulting in no gap_45. However, a gap_56 is documented because the deal included 'no assured employment-continuity mechanism' for Noralta's operating personnel and management (T6) to transfer alongside the operations, with risk factors explicitly noting they might not remain."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the deal is a whole-company share purchase under which Noralta (lodges/rooms as customer-facing product and its operating model) becomes a wholly-owned Civeo subsidiary, so T4 and T5 cross together with no product-vs-process mismatch documented at closing. gap_56=1 because the same closing structure transfers the lodging operations while expressly providing no assured employment-continuity mechanism for Noralta management/operating personnel beyond Non-Competition Agreements with named sellers, and the proxy risk factors state key employees might not remain—i.e., T5 moves without coherent T6 lock-in. No transitional-services or operating agreement allocating shared people/process substrate is documented, so the gap is unmitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: Civeo acquired all outstanding Noralta shares, so the lodging product/assets (T4, 5,600+ owned rooms, turnkey camp/catering) and the operational lodge/facilities-management processes (T5) moved together as a whole share purchase into a wholly-owned subsidiary \\u2014 no product-vs-process split at closing. gap_56=1: the deal structurally transferred the operating vehicle and processes but built in no assured employment-continuity mechanism; the risk factors flag that \\\"key\\\" Noralta employees \\\"might decide not to remain with Civeo after the Acquisition,\\\" with only Non-Competition Agreements binding named sellers rather than personnel retention. gap_mitigated=no: only Non-Competition Agreements were negotiated, and no transitional-services/operating agreement absorbing the personnel-organization substrate is documented at closing. T1=continue because Civeo remained the continuing registrant with its own controlling intent absorbing Noralta.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction transferred Noralta's lodges (T4) and operating model (T5) together, resulting in no gap_45. However, a gap_56 is documented because the deal included 'no assured employment-continuity mechanism' for Noralta's operating personnel and management (T6) to transfer alongside the operations, with risk factors explicitly noting they might not remain.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the deal is a whole-company share purchase under which Noralta (lodges/rooms as customer-facing product and its operating model) becomes a wholly-owned Civeo subsidiary, so T4 and T5 cross together with no product-vs-process mismatch documented at closing. gap_56=1 because the same closing structure transfers the lodging operations while expressly providing no assured employment-continuity mechanism for Noralta management/operating personnel beyond Non-Competition Agreements with named sellers, and the proxy risk factors state key employees might not remain—i.e., T5 moves without coherent T6 lock-in. No transitional-services or operating agreement allocating shared people/process substrate is documented, so the gap is unmitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

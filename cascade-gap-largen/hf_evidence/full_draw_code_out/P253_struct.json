@@ -1,0 +1,85 @@
+{
+  "case_id": "P253",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 is 0 because FelCor's hotels (T4) operated under third-party brand franchise and hotel-management arrangements, so the operational delivery processes were externally held and traveled with the assets unchanged (read-only) rather than being separated from the product at closing — product and its process substrate moved together. gap_56 is 1 because the operational structure transferred to RLJ while FelCor's entire board and all named executive officers (T6) were removed effective at the REIT Merger Effective Time, and the slice states no transition-services, shared-services, or management-services agreement bridging FelCor's corporate functions was identified, so processes moved without the people/organization that ran them and the gap was not contractually absorbed. T1 is replace and T3 swap because RLJ's controlling intent/trustees continued while FelCor's legal vehicle was succeeded by Rangers Sub I as surviving entity."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The product (hotels) and operational processes (third-party management agreements) transferred together, resulting in no gap_45. However, the corporate organization and executive management (T6) were entirely terminated at closing while the operational assets transferred, creating a gap_56. This gap was not mitigated, as no transition services agreement was put in place."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "FelCor’s 39-hotel portfolio (T4) crossed into RLJ’s ownership at closing and the hotels continued under the same third-party franchise and eligible-independent-contractor management arrangements typical of the lodging-REIT structure (T5), so product and process moved together (gap_45=0). FelCor’s board and all named executives were removed at the REIT Merger Effective Time and replaced by continuing RLJ trustees/officers with no transitional-services agreement identified, but because day-to-day hotel operations were already performed by third-party contractors rather than FelCor’s corporate organization, the slice documents no process-vs-organization structural mismatch at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 is 0 because FelCor's hotels (T4) operated under third-party brand franchise and hotel-management arrangements, so the operational delivery processes were externally held and traveled with the assets unchanged (read-only) rather than being separated from the product at closing \\u2014 product and its process substrate moved together. gap_56 is 1 because the operational structure transferred to RLJ while FelCor's entire board and all named executive officers (T6) were removed effective at the REIT Merger Effective Time, and the slice states no transition-services, shared-services, or management-services agreement bridging FelCor's corporate functions was identified, so processes moved without the people/organization that ran them and the gap was not contractually absorbed. T1 is replace and T3 swap because RLJ's controlling intent/trustees continued while FelCor's legal vehicle was succeeded by Rangers Sub I as surviving entity.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The product (hotels) and operational processes (third-party management agreements) transferred together, resulting in no gap_45. However, the corporate organization and executive management (T6) were entirely terminated at closing while the operational assets transferred, creating a gap_56. This gap was not mitigated, as no transition services agreement was put in place.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"FelCor’s 39-hotel portfolio (T4) crossed into RLJ’s ownership at closing and the hotels continued under the same third-party franchise and eligible-independent-contractor management arrangements typical of the lodging-REIT structure (T5), so product and process moved together (gap_45=0). FelCor’s board and all named executives were removed at the REIT Merger Effective Time and replaced by continuing RLJ trustees/officers with no transitional-services agreement identified, but because day-to-day hotel operations were already performed by third-party contractors rather than FelCor’s corporate organization, the slice documents no process-vs-organization structural mismatch at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

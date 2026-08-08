@@ -1,0 +1,85 @@
+{
+  "case_id": "P330",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: Kingfisher's customer-facing midstream product (pipelines, cryogenic processing plant, gathering/processing/marketing) crossed the ownership boundary, but Kingfisher \"has no employees\" and its operating/delivery processes were performed by third-party operator ARM under an Operator Agreement that was \"terminate[d] effective upon the Closing\" — so the delivering process did not transfer whole with the asset. gap_56=1: the operational processes were not run by an internalized workforce; the Operator Agreement terminated and continuity was bridged not by a people/organization transfer but externally. gap_mitigated=yes: at Closing Kingfisher entered a six-month operating \"Transition Services Agreement\" with ARM under which ARM \"will provide certain operational services,\" contractually absorbing the process/people substrate at closing. (Alta Mesa's executive team and pre-existing employment agreements did continue, but the Kingfisher leg drives the structural product-vs-process and process-vs-organization mismatch.)"
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction transferred Kingfisher's midstream assets and operational processes (T5) without an accompanying internalized workforce (T6), as Kingfisher had no employees and its pre-existing Operator Agreement was terminated at closing. This structural gap between process and organization was explicitly mitigated at closing via a six-month Transition Services Agreement with the former operator."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "Alta Mesa’s and Kingfisher’s customer-facing businesses and assets moved into SRII Opco, but Kingfisher’s Operator Agreement with ARM was terminated at Closing, so its operational substrate did not transfer with the assets; instead, ARM provided specified services under a six-month Transition Services Agreement. Kingfisher had no employees, and the ARM personnel who operated and managed it were not internalized, documenting a process-to-organization mismatch at Closing. The Transition Services Agreement contractually bridged both mismatches for the stated six-month period."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: Kingfisher's customer-facing midstream product (pipelines, cryogenic processing plant, gathering/processing/marketing) crossed the ownership boundary, but Kingfisher \\\"has no employees\\\" and its operating/delivery processes were performed by third-party operator ARM under an Operator Agreement that was \\\"terminate[d] effective upon the Closing\\\" \\u2014 so the delivering process did not transfer whole with the asset. gap_56=1: the operational processes were not run by an internalized workforce; the Operator Agreement terminated and continuity was bridged not by a people/organization transfer but externally. gap_mitigated=yes: at Closing Kingfisher entered a six-month operating \\\"Transition Services Agreement\\\" with ARM under which ARM \\\"will provide certain operational services,\\\" contractually absorbing the process/people substrate at closing. (Alta Mesa's executive team and pre-existing employment agreements did continue, but the Kingfisher leg drives the structural product-vs-process and process-vs-organization mismatch.)\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction transferred Kingfisher's midstream assets and operational processes (T5) without an accompanying internalized workforce (T6), as Kingfisher had no employees and its pre-existing Operator Agreement was terminated at closing. This structural gap between process and organization was explicitly mitigated at closing via a six-month Transition Services Agreement with the former operator.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"Alta Mesa’s and Kingfisher’s customer-facing businesses and assets moved into SRII Opco, but Kingfisher’s Operator Agreement with ARM was terminated at Closing, so its operational substrate did not transfer with the assets; instead, ARM provided specified services under a six-month Transition Services Agreement. Kingfisher had no employees, and the ARM personnel who operated and managed it were not internalized, documenting a process-to-organization mismatch at Closing. The Transition Services Agreement contractually bridged both mismatches for the stated six-month period.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

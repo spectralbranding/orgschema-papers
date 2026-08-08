@@ -1,0 +1,58 @@
+{
+  "case_id": "P269",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "completed $547.4M IPO (Nasdaq: PECO, Jul 2021); FY2021 revenue +7.0% to $532.8M; net income $17.2M (from prior net loss)",
+      "rationale": "The slice documents a favorable realized trajectory: the registrant remained continuously reporting, completed an underwritten IPO, grew revenue 7.0%, and swung from a FY2019 net loss to consecutive years of net income, with total debt declining. No documented disruption at the product/process interface (p4=0) — the third-party asset-management revenue line grew 5.2% — and no documented fracture at the process/organization interface (p5=0); the G&A increase is attributed to new public-company insurance costs and prior-year COVID-related compensation, not operational-organizational conflict. The larger earn-out liability reflects improved market conditions and the IPO, not model incompatibility (t2=0), and nothing in the slice speaks to controlling-intent archetype incoherence (t1=0)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Total revenues were $532.8 million for fiscal year 2021, up 7.0% from $498.0 million in fiscal year 2020",
+      "rationale": "The provided evidence slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The company successfully completed an IPO, grew revenues, and achieved net income, with no mention of integration failures or operational incoherence."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "IPO July 2021 ($547.4M gross); assets retained, revenue +7%",
+      "rationale": "The FY2021 10-K record shows continuity of the operating business through the 3-5 year window: total revenues rose 7.0% to $532.8M, net income turned positive, and total assets remained ~$4.67B with no product-line or process incoherence disclosed. Fees and management income from the third-party asset-management line also rose modestly, and G&A increases are attributed to IPO-related D&O insurance and compensation normalization rather than any operations-vs-organization fracture. No realized disruption at the product/process or process/organization interfaces is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"completed $547.4M IPO (Nasdaq: PECO, Jul 2021); FY2021 revenue +7.0% to $532.8M; net income $17.2M (from prior net loss)\", \"rationale\": \"The slice documents a favorable realized trajectory: the registrant remained continuously reporting, completed an underwritten IPO, grew revenue 7.0%, and swung from a FY2019 net loss to consecutive years of net income, with total debt declining. No documented disruption at the product/process interface (p4=0) \\u2014 the third-party asset-management revenue line grew 5.2% \\u2014 and no documented fracture at the process/organization interface (p5=0); the G&A increase is attributed to new public-company insurance costs and prior-year COVID-related compensation, not operational-organizational conflict. The larger earn-out liability reflects improved market conditions and the IPO, not model incompatibility (t2=0), and nothing in the slice speaks to controlling-intent archetype incoherence (t1=0).\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"Total revenues were $532.8 million for fiscal year 2021, up 7.0% from $498.0 million in fiscal year 2020\",\n\"rationale\": \"The provided evidence slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The company successfully completed an IPO, grew revenues, and achieved net income, with no mention of integration failures or operational incoherence.\"\n}\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"IPO July 2021 ($547.4M gross); assets retained, revenue +7%\",\n  \"rationale\": \"The FY2021 10-K record shows continuity of the operating business through the 3-5 year window: total revenues rose 7.0% to $532.8M, net income turned positive, and total assets remained ~$4.67B with no product-line or process incoherence disclosed. Fees and management income from the third-party asset-management line also rose modestly, and G&A increases are attributed to IPO-related D&O insurance and compensation normalization rather than any operations-vs-organization fracture. No realized disruption at the product/process or process/organization interfaces is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

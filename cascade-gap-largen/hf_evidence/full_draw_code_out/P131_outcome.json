@@ -1,0 +1,58 @@
+{
+  "case_id": "P131",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "Merchant Solutions segment revenue grew to $3,767M (2020); FY2018 net income $19.6M vs $182.7M prior year; no goodwill impairment of the acquired unit",
+      "rationale": "For p4, the slice documents integration/transition costs and a sharp FY2018 net-income drop, but no product/process interface disruption — the acquired business grew as a \"Merchant Solutions\" segment (revenue rising through 2020) with the combined entity processing 40+ billion transactions, so no product-line/operations incoherence is documented (0). For p5, while directors and executives turned over at the July 2019 FIS acquisition, this reflects the subsequent FIS deal rather than a documented fracture between operations and organization within the Vantiv/Worldpay combination itself; no operations-vs-people/culture breakdown is described (0). The slice explicitly states this dossier contains no information about the original transaction's structure and provides no archetype-framing (e.g., \"merger of equals\"), so t1 is uncertain; no incompatible value-capture logics are documented, and the acquired business was not goodwill-impaired, so t2 is 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by FIS after ~18 months; Merchant Solutions no GW impairment through 2020",
+      "rationale": "The slice documents FY2018 integration/transition costs and continued scale (40B+ transactions; assets nearly tripled) but no realized product/process incoherence—the acquired business later grew as FIS’s Merchant Solutions segment through 2020 and was not goodwill-impaired. Management/board turnover is tied only to the July 2019 FIS merger itself (directors and officers ceased serving upon that closing), not to any documented fracture of operations against organization from the Vantiv/Worldpay combination over time; thus both p4 and p5 are coded 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$3.767 billion Merchant Solutions revenue in 2020'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice documents continued processing scale, rising Merchant Solutions revenue through 2020, and no impairment of that reporting unit in 2020; it does not document product-line or operating-process incoherence, so p4 is 0. Integration costs, personnel-related transition costs, and management turnover are reported, but the turnover occurred upon the subsequent FIS acquisition and the slice does not identify a realized fracture between operations and the organization, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"Merchant Solutions segment revenue grew to $3,767M (2020); FY2018 net income $19.6M vs $182.7M prior year; no goodwill impairment of the acquired unit\", \"rationale\": \"For p4, the slice documents integration/transition costs and a sharp FY2018 net-income drop, but no product/process interface disruption \\u2014 the acquired business grew as a \\\"Merchant Solutions\\\" segment (revenue rising through 2020) with the combined entity processing 40+ billion transactions, so no product-line/operations incoherence is documented (0). For p5, while directors and executives turned over at the July 2019 FIS acquisition, this reflects the subsequent FIS deal rather than a documented fracture between operations and organization within the Vantiv/Worldpay combination itself; no operations-vs-people/culture breakdown is described (0). The slice explicitly states this dossier contains no information about the original transaction's structure and provides no archetype-framing (e.g., \\\"merger of equals\\\"), so t1 is uncertain; no incompatible value-capture logics are documented, and the acquired business was not goodwill-impaired, so t2 is 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by FIS after ~18 months; Merchant Solutions no GW impairment through 2020\",\n  \"rationale\": \"The slice documents FY2018 integration/transition costs and continued scale (40B+ transactions; assets nearly tripled) but no realized product/process incoherence—the acquired business later grew as FIS’s Merchant Solutions segment through 2020 and was not goodwill-impaired. Management/board turnover is tied only to the July 2019 FIS merger itself (directors and officers ceased serving upon that closing), not to any documented fracture of operations against organization from the Vantiv/Worldpay combination over time; thus both p4 and p5 are coded 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$3.767 billion Merchant Solutions revenue in 2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents continued processing scale, rising Merchant Solutions revenue through 2020, and no impairment of that reporting unit in 2020; it does not document product-line or operating-process incoherence, so p4 is 0. Integration costs, personnel-related transition costs, and management turnover are reported, but the turnover occurred upon the subsequent FIS acquisition and the slice does not identify a realized fracture between operations and the organization, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

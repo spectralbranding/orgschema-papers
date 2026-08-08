@@ -1,0 +1,58 @@
+{
+  "case_id": "P113",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "divested Advantage (Simply Wheelz) on 2012-12-12 (~44 months post-deal) at ~$31.4mm pre-tax loss for ~$16.0mm + ~$3.6mm current assets",
+      "rationale": "The slice documents that the Advantage business was divested ~3.7 years after acquisition as a regulatory (FTC) condition of the separate Dollar Thrifty acquisition, not because the acquired product could not be aligned with Hertz's operating processes; no product/operations incoherence is documented, so p4=0. On process/organization, the slice shows the buyer could not take the business as a standalone going concern (Hertz provided $17.0mm financial support, a $45.0mm senior note, vehicle subleasing, and retained \"significant continuing involvement\"), which evidences operational non-standalone-ness at exit, but the slice does not document a fracture between Hertz's operations and its own people/management/culture during the hold period, leaving p5 undeterminable (uncertain). The slice contains no information about the controlling-intent archetype or the two firms' business-model reconciliation, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested after ~3.7 years at a realized pre-tax loss of ~$31.4 million",
+      "rationale": "The slice documents that the Advantage business was divested to satisfy an FTC consent agreement related to the registrant's acquisition of Dollar Thrifty. There is no evidence that the divestiture was driven by product/process incoherence (p4) or process/organization fracture (p5)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Divested after ~3.7 years at a ~$31.4 million pre-tax loss",
+      "rationale": "The slice attributes the 2012 divestiture to an FTC consent agreement connected with a larger acquisition, not to documented product/process incoherence, so p4 is 0. Although Hertz provided financing, vehicle subleases, and other support after the sale, the slice documents no realized breakdown between operations and people, management, or culture, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"divested Advantage (Simply Wheelz) on 2012-12-12 (~44 months post-deal) at ~$31.4mm pre-tax loss for ~$16.0mm + ~$3.6mm current assets\", \"rationale\": \"The slice documents that the Advantage business was divested ~3.7 years after acquisition as a regulatory (FTC) condition of the separate Dollar Thrifty acquisition, not because the acquired product could not be aligned with Hertz's operating processes; no product/operations incoherence is documented, so p4=0. On process/organization, the slice shows the buyer could not take the business as a standalone going concern (Hertz provided $17.0mm financial support, a $45.0mm senior note, vehicle subleasing, and retained \\\"significant continuing involvement\\\"), which evidences operational non-standalone-ness at exit, but the slice does not document a fracture between Hertz's operations and its own people/management/culture during the hold period, leaving p5 undeterminable (uncertain). The slice contains no information about the controlling-intent archetype or the two firms' business-model reconciliation, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested after ~3.7 years at a realized pre-tax loss of ~$31.4 million\",\n  \"rationale\": \"The slice documents that the Advantage business was divested to satisfy an FTC consent agreement related to the registrant's acquisition of Dollar Thrifty. There is no evidence that the divestiture was driven by product/process incoherence (p4) or process/organization fracture (p5).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Divested after ~3.7 years at a ~$31.4 million pre-tax loss\",\n  \"rationale\": \"The slice attributes the 2012 divestiture to an FTC consent agreement connected with a larger acquisition, not to documented product/process incoherence, so p4 is 0. Although Hertz provided financing, vehicle subleases, and other support after the sale, the slice documents no realized breakdown between operations and people, management, or culture, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

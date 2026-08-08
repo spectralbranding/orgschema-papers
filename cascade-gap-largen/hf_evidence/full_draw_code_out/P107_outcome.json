@@ -1,0 +1,58 @@
+{
+  "case_id": "P107",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired and taken private for $10.60 per share in cash",
+      "rationale": "The slice documents that the consolidated property (Orchard Crossing) was retained at 99% occupancy through the end of 2015, indicating no product/process disruption (p4). There is no documented evidence of process/organization fracture (p5) before the company was taken private in 2016."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "taken private at $10.60/share (Mar 2016); key asset retained",
+      "rationale": "The FY2015 10-K documents that Orchard Crossing remained in the consolidated portfolio at ~99% occupancy and was retained, not divested, with only minor impairment charges ($222k) company-wide, giving no evidence of product/process interface disruption (p4=0). No realized fracture between operations and organization/people/culture is documented in the public record through take-private; the company reported positive net income and continued as a going concern until DRA acquired it (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['Orchard Crossing retained at approximately 99% occupancy through FY2015']}",
+      "rationale": "{'type': 'string', 'enum': ['No product/process disruption is documented: Orchard Crossing remained in the consolidated portfolio at approximately 99% occupancy as of December 31, 2015. No process/organization fracture is documented; the company remained a going concern with positive FY2015 net income and only approximately $222 thousand of impairment charges.']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired and taken private for $10.60 per share in cash\",\n  \"rationale\": \"The slice documents that the consolidated property (Orchard Crossing) was retained at 99% occupancy through the end of 2015, indicating no product/process disruption (p4). There is no documented evidence of process/organization fracture (p5) before the company was taken private in 2016.\"\n}\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"taken private at $10.60/share (Mar 2016); key asset retained\",\n  \"rationale\": \"The FY2015 10-K documents that Orchard Crossing remained in the consolidated portfolio at ~99% occupancy and was retained, not divested, with only minor impairment charges ($222k) company-wide, giving no evidence of product/process interface disruption (p4=0). No realized fracture between operations and organization/people/culture is documented in the public record through take-private; the company reported positive net income and continued as a going concern until DRA acquired it (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"Orchard Crossing retained at approximately 99% occupancy through FY2015\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"No product/process disruption is documented: Orchard Crossing remained in the consolidated portfolio at approximately 99% occupancy as of December 31, 2015. No process/organization fracture is documented; the company remained a going concern with positive FY2015 net income and only approximately $222 thousand of impairment charges.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P143",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was structured as a sale of all outstanding stock of the parent holding company of Comunicaciones Nextel de México, so the operating subsidiary transferred \"as a going concern rather than as a set of carved-out assets,\" carrying product, processes and organization together within one legal vehicle (T4/T5/T6 all move 1-1 via the equity sale). The pre-closing covenant required Nextel Mexico to conduct business in the ordinary course and \"maintain and preserve intact its business organization\" and business/regulatory relationships — i.e., \"the customer-facing product, the operating processes and the operating organization were to be held together and preserved within the transferred entity through closing,\" so no product-vs-process (gap_45) or process-vs-organization (gap_56) structural mismatch exists at closing. Because nothing was carved out, both gaps are 0 and mitigation is NA; T1 is coded replace as NII's controlling intent exited and AT&T's was installed."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a sale of all outstanding stock of the parent of the operating company, Nextel Mexico, transferring it as a going concern. The seller covenanted to preserve intact the business organization, relationships, and operations through closing, ensuring the product (T4), processes (T5), and organization (T6) transferred together without structural gaps."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was structured as a §363 stock sale of all outstanding shares of the parent of operating subsidiary Nextel Mexico, transferring that entity as a going concern rather than carved-out assets. A pre-closing covenant required Nextel Mexico to conduct business in the ordinary course and use commercially reasonable efforts to maintain and preserve intact its business organization and relationships, so the customer-facing wireless product (T4), operating processes (T5), and organization (T6) were held together inside the transferred entity through closing. No product-vs-process or process-vs-organization structural mismatch at closing is documented; therefore gap_45=0 and gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was structured as a sale of all outstanding stock of the parent holding company of Comunicaciones Nextel de M\\u00e9xico, so the operating subsidiary transferred \\\"as a going concern rather than as a set of carved-out assets,\\\" carrying product, processes and organization together within one legal vehicle (T4/T5/T6 all move 1-1 via the equity sale). The pre-closing covenant required Nextel Mexico to conduct business in the ordinary course and \\\"maintain and preserve intact its business organization\\\" and business/regulatory relationships \\u2014 i.e., \\\"the customer-facing product, the operating processes and the operating organization were to be held together and preserved within the transferred entity through closing,\\\" so no product-vs-process (gap_45) or process-vs-organization (gap_56) structural mismatch exists at closing. Because nothing was carved out, both gaps are 0 and mitigation is NA; T1 is coded replace as NII's controlling intent exited and AT&T's was installed.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a sale of all outstanding stock of the parent of the operating company, Nextel Mexico, transferring it as a going concern. The seller covenanted to preserve intact the business organization, relationships, and operations through closing, ensuring the product (T4), processes (T5), and organization (T6) transferred together without structural gaps.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was structured as a §363 stock sale of all outstanding shares of the parent of operating subsidiary Nextel Mexico, transferring that entity as a going concern rather than carved-out assets. A pre-closing covenant required Nextel Mexico to conduct business in the ordinary course and use commercially reasonable efforts to maintain and preserve intact its business organization and relationships, so the customer-facing wireless product (T4), operating processes (T5), and organization (T6) were held together inside the transferred entity through closing. No product-vs-process or process-vs-organization structural mismatch at closing is documented; therefore gap_45=0 and gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

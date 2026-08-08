@@ -1,0 +1,85 @@
+{
+  "case_id": "P345",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Company survived intact as a wholly owned subsidiary and the operating partnership (FOG units, the vehicles through which the business is conducted) was acquired 100%, so the customer-facing investment-management product and its operating processes crossed the boundary together — no product-vs-process mismatch (gap_45=0). The Founders Agreement, amended employment agreements, \"Founder Matters\" reservation of day-to-day operating authority to each Principal \"in a manner consistent with the practice of the Acquired Companies prior to the Founders Closing,\" and the Principal Compensation Plan contractually carried forward the people/management running operations rather than transferring processes without their organization (gap_56=0). Because SoftBank's control was installed while the Principals' operating intent, board seats, and segment authority persisted, T1 is coded imprint-share."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing SoftBank (via Parent/Merger Sub) took 100% ownership while the investment-management franchise, surviving LLC entity, and customer-facing AUM/products continued intact under the same firm, with no product-vs-process split documented (gap_45=0). Concurrently the Founders Agreement and amended employment agreements contractually reserved day-to-day segment operations, hiring, and new-product authority to the same Principals and carried forward their employment/compensation terms, so processes and the organization that runs them transferred/aligned together (gap_56=0); no TSA was needed to bridge a mismatch."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The merger transferred the entire investment manager, with Fortress surviving as Parent's wholly owned subsidiary, while the concurrent Founders Closing transferred 100% of the remaining operating-partnership units. The product and operating processes therefore crossed the boundary together, and the Founders Agreement expressly preserved the Principals' day-to-day authority over segment operations and new-product creation consistent with pre-closing practice. The Principals also remained directors and entered five-year employment agreements effective at closing, documenting coherent transfer and alignment of the people and management responsible for those processes."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The Company survived intact as a wholly owned subsidiary and the operating partnership (FOG units, the vehicles through which the business is conducted) was acquired 100%, so the customer-facing investment-management product and its operating processes crossed the boundary together \\u2014 no product-vs-process mismatch (gap_45=0). The Founders Agreement, amended employment agreements, \\\"Founder Matters\\\" reservation of day-to-day operating authority to each Principal \\\"in a manner consistent with the practice of the Acquired Companies prior to the Founders Closing,\\\" and the Principal Compensation Plan contractually carried forward the people/management running operations rather than transferring processes without their organization (gap_56=0). Because SoftBank's control was installed while the Principals' operating intent, board seats, and segment authority persisted, T1 is coded imprint-share.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing SoftBank (via Parent/Merger Sub) took 100% ownership while the investment-management franchise, surviving LLC entity, and customer-facing AUM/products continued intact under the same firm, with no product-vs-process split documented (gap_45=0). Concurrently the Founders Agreement and amended employment agreements contractually reserved day-to-day segment operations, hiring, and new-product authority to the same Principals and carried forward their employment/compensation terms, so processes and the organization that runs them transferred/aligned together (gap_56=0); no TSA was needed to bridge a mismatch.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The merger transferred the entire investment manager, with Fortress surviving as Parent's wholly owned subsidiary, while the concurrent Founders Closing transferred 100% of the remaining operating-partnership units. The product and operating processes therefore crossed the boundary together, and the Founders Agreement expressly preserved the Principals' day-to-day authority over segment operations and new-product creation consistent with pre-closing practice. The Principals also remained directors and entered five-year employment agreements effective at closing, documenting coherent transfer and alignment of the people and management responsible for those processes.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

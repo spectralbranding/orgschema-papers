@@ -1,0 +1,85 @@
+{
+  "case_id": "P201",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company stock-for-stock merger of Ply Gem into surviving registrant NCI, so each party's products (T4) and the operational processes producing them (T5) crossed the ownership boundary together within a single surviving legal entity — no carve-out or product-vs-process split was structured, so gap_45=0. Likewise, because the \"full corporate substrate of each party combined at closing under the single surviving legal entity,\" processes and the people/organization running them transferred together; the retained \"NCI Division\" under its own division CEO preserved rather than severed the operating org from its people, so gap_56=0. Because no gap was coded, gap_mitigated=NA (consistent with no TSA/shared-services bridging arrangement being identified, which was unnecessary in a whole-company merger). T1 coded mutual-replace given the ~53%/47% split, 12-director board (7 NCI / 5 CD&R), and a newly installed group Chairman/CEO fusing the two controlling intents."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 and gap_56=0 because the slice describes a whole-company stock-for-stock merger in which Ply Gem merged into surviving NCI and 'the full corporate substrate of each party combined at closing under the single surviving legal entity,' so customer products (T4) and the operational processes that produce them (T5) crossed together, and processes (T5) crossed with their divisional organizations/people (T6). The retained 'NCI Division' under its own division CEO at closing shows both operating structures and their management were preserved side-by-side inside the survivor rather than a product-without-process or process-without-people mismatch; no TSA was identified because none was needed for a non-carve-out combination."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that this was a whole-company merger in which the full corporate substrate of each party combined at closing, so the product portfolios crossed with their associated operational processes rather than separately [SRC: SEC accession 0001144204-18-054087, DEFM14A]. Although management and operations were not immediately unified, the former NCI operating structure and its CEO were retained together as an NCI Division under the new group CEO, documenting aligned transfer of processes and organization rather than a process-without-people gap [SRC: SEC accession 0001144204-18-061046, Form 8-K dated 2018-11-20]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company stock-for-stock merger of Ply Gem into surviving registrant NCI, so each party's products (T4) and the operational processes producing them (T5) crossed the ownership boundary together within a single surviving legal entity \\u2014 no carve-out or product-vs-process split was structured, so gap_45=0. Likewise, because the \\\"full corporate substrate of each party combined at closing under the single surviving legal entity,\\\" processes and the people/organization running them transferred together; the retained \\\"NCI Division\\\" under its own division CEO preserved rather than severed the operating org from its people, so gap_56=0. Because no gap was coded, gap_mitigated=NA (consistent with no TSA/shared-services bridging arrangement being identified, which was unnecessary in a whole-company merger). T1 coded mutual-replace given the ~53%/47% split, 12-director board (7 NCI / 5 CD&R), and a newly installed group Chairman/CEO fusing the two controlling intents.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 and gap_56=0 because the slice describes a whole-company stock-for-stock merger in which Ply Gem merged into surviving NCI and 'the full corporate substrate of each party combined at closing under the single surviving legal entity,' so customer products (T4) and the operational processes that produce them (T5) crossed together, and processes (T5) crossed with their divisional organizations/people (T6). The retained 'NCI Division' under its own division CEO at closing shows both operating structures and their management were preserved side-by-side inside the survivor rather than a product-without-process or process-without-people mismatch; no TSA was identified because none was needed for a non-carve-out combination.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that this was a whole-company merger in which the full corporate substrate of each party combined at closing, so the product portfolios crossed with their associated operational processes rather than separately [SRC: SEC accession 0001144204-18-054087, DEFM14A]. Although management and operations were not immediately unified, the former NCI operating structure and its CEO were retained together as an NCI Division under the new group CEO, documenting aligned transfer of processes and organization rather than a process-without-people gap [SRC: SEC accession 0001144204-18-061046, Form 8-K dated 2018-11-20].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

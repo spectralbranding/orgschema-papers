@@ -1,0 +1,85 @@
+{
+  "case_id": "P348",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was structured as a whole-company reverse-triangular stock-for-cash merger, with State National surviving intact as a wholly-owned Markel subsidiary retaining all properties, licenses, A.M. Best rating, and underwriting subsidiaries; the slice explicitly states the product/licenses, processes, and workforce \"crossed together rather than being separated by product, process, or people,\" so gap_45 is 0. Management/employee continuity was bridged at closing via compensation-and-benefit continuation through Dec 31, 2018, executive severance and noncompetition terms, and continued D&O indemnification, so T5 processes and T6 people transferred coherently together, yielding gap_56 = 0. T1 is coded replace because a controlling public-registrant principal exited (NASDAQ delisting and Exchange Act deregistration) and Markel installed itself as new controlling owner, with no documented T1 fusion."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that as a whole-company stock acquisition, the transaction carried the Company's full operating entity into Parent's ownership as a surviving, intact subsidiary, 'rather than separating a product line from the processes or people that run it.' Therefore, there are no structural gaps between the product, process, and organization tiers."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The whole-company acquisition carried State National’s products, insurance licenses, underwriting subsidiaries, and operating entity into Markel’s ownership together, expressly rather than separating product lines from the processes that supported them; therefore gap_45 is 0. The slice also states that the workforce crossed with the operating business and documents closing continuity through compensation-and-benefit commitments, executive terms, and officer/director protections, so no process-versus-organization mismatch is documented and gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was structured as a whole-company reverse-triangular stock-for-cash merger, with State National surviving intact as a wholly-owned Markel subsidiary retaining all properties, licenses, A.M. Best rating, and underwriting subsidiaries; the slice explicitly states the product/licenses, processes, and workforce \\\"crossed together rather than being separated by product, process, or people,\\\" so gap_45 is 0. Management/employee continuity was bridged at closing via compensation-and-benefit continuation through Dec 31, 2018, executive severance and noncompetition terms, and continued D&O indemnification, so T5 processes and T6 people transferred coherently together, yielding gap_56 = 0. T1 is coded replace because a controlling public-registrant principal exited (NASDAQ delisting and Exchange Act deregistration) and Markel installed itself as new controlling owner, with no documented T1 fusion.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that as a whole-company stock acquisition, the transaction carried the Company's full operating entity into Parent's ownership as a surviving, intact subsidiary, 'rather than separating a product line from the processes or people that run it.' Therefore, there are no structural gaps between the product, process, and organization tiers.\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The whole-company acquisition carried State National’s products, insurance licenses, underwriting subsidiaries, and operating entity into Markel’s ownership together, expressly rather than separating product lines from the processes that supported them; therefore gap_45 is 0. The slice also states that the workforce crossed with the operating business and documents closing continuity through compensation-and-benefit commitments, executive terms, and officer/director protections, so no process-versus-organization mismatch is documented and gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

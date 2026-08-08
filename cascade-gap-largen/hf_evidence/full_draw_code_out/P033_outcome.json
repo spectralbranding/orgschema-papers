@@ -1,0 +1,58 @@
+{
+  "case_id": "P033",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenues grew from $18.8bn (2013) to $28.2bn (2017); standalone reporting company retained",
+      "rationale": "On the product/operations interface, the slice documents no realized incoherence: AbbVie grew net revenues each year and successfully absorbed a bolt-on (Pharmacyclics, ~$20.8bn) into its operating base, with the only product risk being HUMIRA concentration and patent expiry—not a product-vs-process misalignment (p4=0). On the operations/organization interface, headcount stayed near closing levels (~29,000 vs ~30,000 expected) and separation costs were recognized as an ordinary standalone build-out ($265m in 2015 SG&A) with no documented fracture between operations and people/management/culture (p5=0). The record describes an independent separation that operated as intended with no archetype incoherence (t1=0) and a single, coherent pharmaceutical value-capture model (t2=0)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenues rose from $18.8bn (2013) to $28.2bn (2017)",
+      "rationale": "The slice documents AbbVie's successful operation as a standalone entity with growing revenues and stable headcount. There is no evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0) over the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net revenues $18.8bn (2013) to $28.2bn (2017); no divestiture",
+      "rationale": "The slice documents continued concentration in HUMIRA (~65% of 2017 revenue) and a bolt-on acquisition (Pharmacyclics) with rising revenues, and does not document any product/process alignment failure, so p4_pathway=0. Headcount stayed comparable (~29k vs ~30k expected) with only ordinary post-separation SG&A costs noted and no operations-vs-organization fracture, so p5_pathway=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net revenues grew from $18.8bn (2013) to $28.2bn (2017); standalone reporting company retained\", \"rationale\": \"On the product/operations interface, the slice documents no realized incoherence: AbbVie grew net revenues each year and successfully absorbed a bolt-on (Pharmacyclics, ~$20.8bn) into its operating base, with the only product risk being HUMIRA concentration and patent expiry\\u2014not a product-vs-process misalignment (p4=0). On the operations/organization interface, headcount stayed near closing levels (~29,000 vs ~30,000 expected) and separation costs were recognized as an ordinary standalone build-out ($265m in 2015 SG&A) with no documented fracture between operations and people/management/culture (p5=0). The record describes an independent separation that operated as intended with no archetype incoherence (t1=0) and a single, coherent pharmaceutical value-capture model (t2=0).\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"net revenues rose from $18.8bn (2013) to $28.2bn (2017)\",\n\"rationale\": \"The slice documents AbbVie's successful operation as a standalone entity with growing revenues and stable headcount. There is no evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0) over the 3-5 year horizon.\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net revenues $18.8bn (2013) to $28.2bn (2017); no divestiture\",\n  \"rationale\": \"The slice documents continued concentration in HUMIRA (~65% of 2017 revenue) and a bolt-on acquisition (Pharmacyclics) with rising revenues, and does not document any product/process alignment failure, so p4_pathway=0. Headcount stayed comparable (~29k vs ~30k expected) with only ordinary post-separation SG&A costs noted and no operations-vs-organization fracture, so p5_pathway=0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P211",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: the customer-facing producing assets (wells, oil/gas/NGL properties) and the $700M senior notes and credit facility were assumed intact by BVL as successor, i.e., the product and its associated obligations/operations moved together into one surviving Chesapeake LLC — no documented product-vs-process split at closing. gap_56=1: the operating processes transferred into BVL but the people/management running them did not — all ten WildHorse directors and every WildHorse officer left office at the effective time, and the top three executive posts were filled by incumbent Chesapeake officers rather than continuing WildHorse executives. gap_mitigated=no: the slice documents only a non-binding possibility of retaining two WildHorse executives (\"no assurance\") and a parent-level board-designation right, but no transitional-services or operating agreement absorbing the substrate at closing. T1 replace reflects the controlling intent shifting entirely to Chesapeake's management installed at the surviving entity."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice documents that WildHorse's oil and gas producing assets and wells (T4 and T5) were assumed intact by Chesapeake's subsidiary, indicating no structural gap between product and process (gap_45 = 0). However, every WildHorse director and officer resigned at closing and was replaced by incumbent Chesapeake executives, creating a clear structural mismatch between the transferred operations and the terminated management team (gap_56 = 1). No transitional services agreement was documented to mitigate this gap."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The closing summary states that the whole-company merger transferred WildHorse’s oil-and-gas producing assets and wells intact, supporting that the customer-facing assets and associated operating processes moved together rather than creating a T4–T5 split. By contrast, every WildHorse director and officer left office at closing, while incumbent Chesapeake executives were installed to manage the surviving company, documenting a T5–T6 structural mismatch. No transitional-services or operating agreement allocating that organizational gap is documented in the slice."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: the customer-facing producing assets (wells, oil/gas/NGL properties) and the $700M senior notes and credit facility were assumed intact by BVL as successor, i.e., the product and its associated obligations/operations moved together into one surviving Chesapeake LLC \\u2014 no documented product-vs-process split at closing. gap_56=1: the operating processes transferred into BVL but the people/management running them did not \\u2014 all ten WildHorse directors and every WildHorse officer left office at the effective time, and the top three executive posts were filled by incumbent Chesapeake officers rather than continuing WildHorse executives. gap_mitigated=no: the slice documents only a non-binding possibility of retaining two WildHorse executives (\\\"no assurance\\\") and a parent-level board-designation right, but no transitional-services or operating agreement absorbing the substrate at closing. T1 replace reflects the controlling intent shifting entirely to Chesapeake's management installed at the surviving entity.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The slice documents that WildHorse's oil and gas producing assets and wells (T4 and T5) were assumed intact by Chesapeake's subsidiary, indicating no structural gap between product and process (gap_45 = 0). However, every WildHorse director and officer resigned at closing and was replaced by incumbent Chesapeake executives, creating a clear structural mismatch between the transferred operations and the terminated management team (gap_56 = 1). No transitional services agreement was documented to mitigate this gap.\"\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The closing summary states that the whole-company merger transferred WildHorse’s oil-and-gas producing assets and wells intact, supporting that the customer-facing assets and associated operating processes moved together rather than creating a T4–T5 split. By contrast, every WildHorse director and officer left office at closing, while incumbent Chesapeake executives were installed to manage the surviving company, documenting a T5–T6 structural mismatch. No transitional-services or operating agreement allocating that organizational gap is documented in the slice.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

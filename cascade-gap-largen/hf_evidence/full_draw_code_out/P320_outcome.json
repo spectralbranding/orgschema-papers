@@ -1,0 +1,58 @@
+{
+  "case_id": "P320",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; revenue -5.6% in 2020 then rose to ~$5.21bn in 2021; net income rose to $234.8m",
+      "rationale": "The slice documents no disruption at the product/process interface: goodwill principally tied to the 2017 combination passed its impairment test with no impairment, revenue recovered to a record ~$5.21bn in 2021, and net income rose across the window, so p4=0. For process/organization, the only integration cost signal is a declining \"transaction and integration-related expenses\" line ($30m in 2020, down from $61m and $65m) later folded into SG&A—no documented operational-versus-organizational fracture—so p5=0. The unverified note about the former inVentiv CEO's departure from an Executive Chairman role hints at possible archetype (merger-of-equals) asymmetry, but it is explicitly [UNVERIFIED] and not primary-sourced, so t1 is uncertain; the two models operated as one profitable reporting entity with rising results, so t2=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment recorded",
+      "rationale": "The provided evidence slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The company continued to operate, grow net income, and reported no goodwill impairment related to the acquisition."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2021 revenue of $5.213 billion and net income of $234.8 million, with no goodwill impairment",
+      "rationale": "No realized product/process incoherence is documented; revenue recovered to $5.213 billion in 2021, and no impairment was recorded in the 2020 goodwill test. No realized process/organization fracture is documented; although transaction and integration-related expenses persisted through 2020, the slice reports no operational integration breakdown attributable to management, people, or culture. The pronounced 2020 operational disruptions were expressly attributed to COVID-19 rather than post-deal integration."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no goodwill impairment; revenue -5.6% in 2020 then rose to ~$5.21bn in 2021; net income rose to $234.8m\", \"rationale\": \"The slice documents no disruption at the product/process interface: goodwill principally tied to the 2017 combination passed its impairment test with no impairment, revenue recovered to a record ~$5.21bn in 2021, and net income rose across the window, so p4=0. For process/organization, the only integration cost signal is a declining \\\"transaction and integration-related expenses\\\" line ($30m in 2020, down from $61m and $65m) later folded into SG&A\\u2014no documented operational-versus-organizational fracture\\u2014so p5=0. The unverified note about the former inVentiv CEO's departure from an Executive Chairman role hints at possible archetype (merger-of-equals) asymmetry, but it is explicitly [UNVERIFIED] and not primary-sourced, so t1 is uncertain; the two models operated as one profitable reporting entity with rising results, so t2=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment recorded\",\n  \"rationale\": \"The provided evidence slice does not document any disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway). The company continued to operate, grow net income, and reported no goodwill impairment related to the acquisition.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2021 revenue of $5.213 billion and net income of $234.8 million, with no goodwill impairment\",\n  \"rationale\": \"No realized product/process incoherence is documented; revenue recovered to $5.213 billion in 2021, and no impairment was recorded in the 2020 goodwill test. No realized process/organization fracture is documented; although transaction and integration-related expenses persisted through 2020, the slice reports no operational integration breakdown attributable to management, people, or culture. The pronounced 2020 operational disruptions were expressly attributed to COVID-19 rather than post-deal integration.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

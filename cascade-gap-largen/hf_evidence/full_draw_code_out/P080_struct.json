@@ -1,0 +1,85 @@
+{
+  "case_id": "P080",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Gorgon Project was structured as an unincorporated joint venture where Chevron held a 47.3% operated interest. The product (LNG) and operational processes (LNG trains, gas plant) were aligned within the joint venture structure, with Chevron acting as operator, showing no structural gaps between T4, T5, and T6."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At FID closing the customer-facing LNG product was locked under long-term sales agreements inside the same unincorporated JV whose operational scope (LNG trains, carbon sequestration, domestic gas plant and related infrastructure) was to be executed by Chevron as operator, so product and processes were established together with no product-vs-process structural mismatch (gap_45=0). The operator designation placed project execution with Chevron’s organization on behalf of the JV, aligning processes with the people/management layer at closing and yielding no process-vs-organization gap (gap_56=0); the filings describe no transitional-services or shared-substrate bridge, consistent with a new-build JV rather than a carve-out."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The FY2009 Form 10-K describes the customers’ equity interests as stakes in the producing project, whose customer-facing LNG output and operational scope—including LNG trains, sequestration facilities, and a domestic gas plant—were bundled together under Chevron’s operatorship; thus no product-versus-process mismatch is documented at closing. [SRC: SEC accession 0000950123-10-016846, Form 10-K] Chevron remained the designated operator managing project execution for the joint venture, so the processes were coherently paired with an operating organization rather than transferred without one. [SRC: SEC accession 0000950123-10-016846, Form 10-K]"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The Gorgon Project was structured as an unincorporated joint venture where Chevron held a 47.3% operated interest. The product (LNG) and operational processes (LNG trains, gas plant) were aligned within the joint venture structure, with Chevron acting as operator, showing no structural gaps between T4, T5, and T6.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At FID closing the customer-facing LNG product was locked under long-term sales agreements inside the same unincorporated JV whose operational scope (LNG trains, carbon sequestration, domestic gas plant and related infrastructure) was to be executed by Chevron as operator, so product and processes were established together with no product-vs-process structural mismatch (gap_45=0). The operator designation placed project execution with Chevron’s organization on behalf of the JV, aligning processes with the people/management layer at closing and yielding no process-vs-organization gap (gap_56=0); the filings describe no transitional-services or shared-substrate bridge, consistent with a new-build JV rather than a carve-out.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The FY2009 Form 10-K describes the customers’ equity interests as stakes in the producing project, whose customer-facing LNG output and operational scope—including LNG trains, sequestration facilities, and a domestic gas plant—were bundled together under Chevron’s operatorship; thus no product-versus-process mismatch is documented at closing. [SRC: SEC accession 0000950123-10-016846, Form 10-K] Chevron remained the designated operator managing project execution for the joint venture, so the processes were coherently paired with an operating organization rather than transferred without one. [SRC: SEC accession 0000950123-10-016846, Form 10-K]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

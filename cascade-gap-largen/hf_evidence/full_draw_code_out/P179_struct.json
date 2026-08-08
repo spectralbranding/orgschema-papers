@@ -1,0 +1,85 @@
+{
+  "case_id": "P179",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a whole-company going-private acquisition: Sub merged into West, West survived intact as a wholly owned subsidiary, and \"the whole going-concern business (all four reportable segments) transferred to Parent's ownership as a single unit\" with no divestiture, carve-out, or spin-off. Product (T4) and the operating processes (T5) moved together as an undivided going concern, so gap_45 = 0. The surviving corporation assumed, honored, and continued West's existing employment, severance, retention, and executive change-in-control arrangements, so processes and the people/organization (T6) transferred coherently together, giving gap_56 = 0. T1 = replace because merger consideration was all-cash with no pre-merger stockholder (including founders) retaining any interest, installing Apollo funds as the new controlling principal."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition where the entire entity, including all segments, products, processes, and people, transferred intact to the new owner. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or between processes and people (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product/business-model line states that the whole going concern, including all four reportable segments, transferred as a single unit without a divestiture, carve-out, or spin-off, while the structural summary states that the target survived intact; therefore, no product-versus-process mismatch at closing is documented [SRC: SEC accession 0001193125-17-215084, DEFM14A]. The processes/people lines state that existing employment, severance, retention, termination, and executive arrangements continued, with pre-merger service credited, so the operating substrate was accompanied by the organization that ran it and no T5–T6 gap is documented [SRC: SEC accession 0001193125-17-215084, DEFM14A]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a whole-company going-private acquisition: Sub merged into West, West survived intact as a wholly owned subsidiary, and \\\"the whole going-concern business (all four reportable segments) transferred to Parent's ownership as a single unit\\\" with no divestiture, carve-out, or spin-off. Product (T4) and the operating processes (T5) moved together as an undivided going concern, so gap_45 = 0. The surviving corporation assumed, honored, and continued West's existing employment, severance, retention, and executive change-in-control arrangements, so processes and the people/organization (T6) transferred coherently together, giving gap_56 = 0. T1 = replace because merger consideration was all-cash with no pre-merger stockholder (including founders) retaining any interest, installing Apollo funds as the new controlling principal.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition where the entire entity, including all segments, products, processes, and people, transferred intact to the new owner. There is no evidence of a structural mismatch between products and processes (gap_45 = 0) or between processes and people (gap_56 = 0) at closing.\"\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The product/business-model line states that the whole going concern, including all four reportable segments, transferred as a single unit without a divestiture, carve-out, or spin-off, while the structural summary states that the target survived intact; therefore, no product-versus-process mismatch at closing is documented [SRC: SEC accession 0001193125-17-215084, DEFM14A]. The processes/people lines state that existing employment, severance, retention, termination, and executive arrangements continued, with pre-merger service credited, so the operating substrate was accompanied by the organization that ran it and no T5–T6 gap is documented [SRC: SEC accession 0001193125-17-215084, DEFM14A].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

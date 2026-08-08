@@ -1,0 +1,36 @@
+# Structural sub-dossier — Parkway, Inc. Greenway Properties joint venture (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- Parkway, Inc. (a Maryland-incorporated Houston office REIT), acting through its subsidiaries including Parkway Operating Partnership LP (the "Operating Partnership"), entered into a joint venture with respect to its Greenway Plaza and Phoenix Tower properties (together, the "Greenway Properties"); the arrangement is the Amended and Restated Limited Partnership Agreement of GWP JV Limited Partnership (the "Joint Venture"), dated April 17, 2017. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- The two incoming investors are an affiliate of Canada Pension Plan Investment Board ("CPPIB") and an entity controlled by TH Real Estate Global Asset Management and Silverpeak Real Estate Partners ("TIAA/SP"). [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- On April 20, 2017 the Company completed the sale of an aggregate 49% interest in the Greenway Properties; post-closing, Parkway owns a 51% indirect interest (1% held by a subsidiary acting as general partner, 50% by a subsidiary acting as limited partner), and CPPIB and TIAA/SP each own a 24.5% indirect interest as limited partners. [SRC: SEC accession 0001193125-17-130778, Form 8-K Items 1.01 and 2.01]
+- The Greenway Properties constitute an approximately 5.0 million square foot campus of 11 office properties in the Greenway submarket of Houston, Texas. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 2.01]
+
+## Legal vehicle formed at closing
+- The Joint Venture is GWP JV Limited Partnership, governed by the Amended and Restated Limited Partnership Agreement dated April 17, 2017 (filed as Exhibit 10.1). [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01 and Exhibit Index]
+- The Joint Venture formed GWP JV Holdings, LLC (the "Subsidiary REIT") to hold the Greenway Properties, which would elect REIT tax status commencing with the taxable year ending December 31, 2017; the Subsidiary REIT is governed by a five-director board, with Parkway entitled to name three directors and each investor entitled to name one. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+
+## What crossed the boundary and what was retained
+- The customer-facing asset — a 49% ownership interest in the Greenway Properties — crossed to the investors; Parkway retained a 51% controlling interest. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 2.01]
+- A subsidiary of the Operating Partnership serves as general partner and is "responsible for the day-to-day business and affairs of the Joint Venture," subject to investor "major decision" approval rights (including liquidation or merger of the JV, selling JV assets, amending the agreement, entering into material contracts including debt documents, and certain expenditures). [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- The investors may remove the Operating Partnership's subsidiary as general partner following certain defaults, including failure to fund a portion of capital calls of $20 million or more in the aggregate. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- At closing, Parkway, through one of its subsidiaries, entered into property management, leasing and services agreements with subsidiaries of the Joint Venture, under which the Parkway subsidiary will act as property manager, leasing agent and construction manager of the Joint Venture's properties in exchange for specified property management, leasing and construction management fees. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 2.01]
+- Consideration: in exchange for their limited partnership interests, CPPIB and TIAA/SP each paid the Operating Partnership approximately $105.8 million in cash, derived from 24.5% of the agreed gross asset value of the Greenway Properties of $1.045 billion, as adjusted under the Contribution Agreement. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 2.01]
+
+## Contractual arrangements bridging the shared substrate (closing-time)
+- The contribution mechanics were governed by the Omnibus Contribution and Partial Interest Assignment Agreement (the "Contribution Agreement"), dated February 17, 2017, as amended by an Omnibus Direction Agreement dated April 17, 2017 (filed as Exhibit 2.1). [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- Certain liabilities were specifically retained by the Operating Partnership under the Contribution Agreement, and any capital call relating to those retained liabilities must be funded 100% by the Operating Partnership. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- The agreement grants the partners a right of first offer (ROFO) on interest and asset sales and grants the investors co-investment rights in the greater Houston metropolitan area (up to 49% in the aggregate in certain cases) through the third anniversary, subject to a $500 million aggregate investment cap per investor. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+
+## Financing at closing
+- In connection with the Joint Venture, subsidiaries of the Joint Venture (the "Borrowers") entered into a loan agreement with Goldman Sachs Mortgage Company for a loan of $465,000,000, fully funded at the initial closing on April 17, 2017, with a five-year term maturing May 6, 2022, bearing interest at 3.753% per annum, secured by a first priority mortgage against the Greenway Properties (other than Phoenix Tower), and non-recourse subject to customary carveouts with the Operating Partnership as nonrecourse guarantor. [SRC: SEC accession 0001193125-17-130778, Form 8-K Item 1.01]
+- Loan proceeds were used to repay all amounts outstanding under the Company's October 6, 2016 Credit Agreement (a three-year $100 million revolving facility and a three-year, fully funded $350 million term loan) and to fund a credit to the Joint Venture; the Credit Agreement and its Guaranty were terminated with no early termination penalties. [SRC: SEC accession 0001193125-17-130778, Form 8-K Items 1.01 and 1.02]
+
+## Structural summary (closing only)
+- A 49% ownership interest in an operating office asset (the Greenway Properties) was sold into a newly formed limited partnership / subsidiary-REIT structure while the seller retained a 51% controlling interest and continued to run the properties' day-to-day operations as general partner and under property-management, leasing and construction-management agreements — i.e., a fractional interest in the customer-facing asset crossed the boundary while the operating processes and the management organization that run them remained with the seller, bridged contractually by the services agreements and the Contribution/Direction Agreements. [SRC: SEC accession 0001193125-17-130778, Form 8-K Items 1.01 and 2.01]

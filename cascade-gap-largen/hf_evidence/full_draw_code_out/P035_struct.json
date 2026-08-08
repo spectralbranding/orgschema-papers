@@ -1,0 +1,85 @@
+{
+  "case_id": "P035",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the customer-facing operating business (fifteen gaming facilities, T4) crossed into OpCo while the underlying real property they occupy moved the opposite direction to PropCo/GLPI — \"the operations crossed into OpCo while the real estate they occupy moved the opposite direction\" — a documented product/asset-vs-substrate mismatch at closing, mitigated via the triple-net Master Lease ($377M initial rent) re-attaching the real estate to OpCo. gap_56=0 because the operating processes and the organization/people that run them stayed together with OpCo: \"Pinnacle's Chairman... and Chief Executive Officer will serve as OpCo's Chairman... and CEO,\" independent directors serve as OpCo directors, and \"our employees and executive officers will remain the same,\" so process and people moved coherently alongside each other. T1 coded continue because the same controlling management/intent persists in OpCo (which even reassumes the \"Pinnacle Entertainment\" name); T3 coded swap given the newly formed OpCo legal vehicle plus PropCo merging into GLPI as the retained real-estate domicile."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction separated the real estate from the operating business, creating a structural gap between the customer-facing product (T4) and the physical facilities required to operate them (T5). This gap_45 was mitigated at closing by a triple-net Master Lease. The management and employees (T6) transferred with the operating business, so there is no gap_56."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing operating business and gaming operations both crossed into OpCo, while the separated real estate was contractually reattached through the Master Lease; therefore, no product-versus-process structural gap is documented at closing. Management, employees, and executive leadership were structured to remain with the operating business, so no process-versus-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1 because the customer-facing operating business (fifteen gaming facilities, T4) crossed into OpCo while the underlying real property they occupy moved the opposite direction to PropCo/GLPI \\u2014 \\\"the operations crossed into OpCo while the real estate they occupy moved the opposite direction\\\" \\u2014 a documented product/asset-vs-substrate mismatch at closing, mitigated via the triple-net Master Lease ($377M initial rent) re-attaching the real estate to OpCo. gap_56=0 because the operating processes and the organization/people that run them stayed together with OpCo: \\\"Pinnacle's Chairman... and Chief Executive Officer will serve as OpCo's Chairman... and CEO,\\\" independent directors serve as OpCo directors, and \\\"our employees and executive officers will remain the same,\\\" so process and people moved coherently alongside each other. T1 coded continue because the same controlling management/intent persists in OpCo (which even reassumes the \\\"Pinnacle Entertainment\\\" name); T3 coded swap given the newly formed OpCo legal vehicle plus PropCo merging into GLPI as the retained real-estate domicile.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction separated the real estate from the operating business, creating a structural gap between the customer-facing product (T4) and the physical facilities required to operate them (T5). This gap_45 was mitigated at closing by a triple-net Master Lease. The management and employees (T6) transferred with the operating business, so there is no gap_56.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing operating business and gaming operations both crossed into OpCo, while the separated real estate was contractually reattached through the Master Lease; therefore, no product-versus-process structural gap is documented at closing. Management, employees, and executive leadership were structured to remain with the operating business, so no process-versus-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

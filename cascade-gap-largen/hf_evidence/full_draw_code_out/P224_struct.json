@@ -1,0 +1,85 @@
+{
+  "case_id": "P224",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: ONEOK already controlled ONEOK Partners (41.2% interest plus 2% GP) and the deal converted that partial control into full ownership, so the NGL/natural-gas gathering-processing-transport asset base (T4) and the operating processes that produce it (T5) were already co-located under ONEOK's control and moved together rather than crossing separately. gap_56=0: the filing states operating personnel and named executives (Hulse, Lake, Reiners, Miers, Christensen, Burdick) and several directors already served both entities and \"will retain their position with ONEOK following the merger,\" so processes (T5) and the organization/people that run them (T6) transferred coherently together; the summary notes no transitional-services agreement was needed because the management/process substrate had not been organizationally separate. T3 coded terminate because ONEOK Partners' units were delisted/deregistered as the LP was folded in as a wholly owned subsidiary, with ONEOK stock surviving."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a roll-up of a master limited partnership (ONEOK Partners) by its existing general partner and controlling entity (ONEOK). Because ONEOK already controlled the partnership and provided its management and operating personnel, the product (T4), processes (T5), and organization (T6) were already aligned and transferred/continued together without structural mismatch. No gaps were created at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing midstream product/asset layer (gathering, processing, storage, transportation, and NGL systems owned by ONEOK Partners) remained inside the surviving ONEOK Partners entity together with the operations that produce it; nothing in the closing structure separated product from process. gap_56=0 because the same named executive officers already held identical titles at ONEOK and ONEOK Partners GP and were expressly retained in those roles, directors already overlapped, and operating personnel were already supplied through ONEOK affiliates, so the structural summary states no transitional-services agreement was needed or documented—the process and organization substrates were not organizationally separate at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: ONEOK already controlled ONEOK Partners (41.2% interest plus 2% GP) and the deal converted that partial control into full ownership, so the NGL/natural-gas gathering-processing-transport asset base (T4) and the operating processes that produce it (T5) were already co-located under ONEOK's control and moved together rather than crossing separately. gap_56=0: the filing states operating personnel and named executives (Hulse, Lake, Reiners, Miers, Christensen, Burdick) and several directors already served both entities and \\\"will retain their position with ONEOK following the merger,\\\" so processes (T5) and the organization/people that run them (T6) transferred coherently together; the summary notes no transitional-services agreement was needed because the management/process substrate had not been organizationally separate. T3 coded terminate because ONEOK Partners' units were delisted/deregistered as the LP was folded in as a wholly owned subsidiary, with ONEOK stock surviving.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a roll-up of a master limited partnership (ONEOK Partners) by its existing general partner and controlling entity (ONEOK). Because ONEOK already controlled the partnership and provided its management and operating personnel, the product (T4), processes (T5), and organization (T6) were already aligned and transferred/continued together without structural mismatch. No gaps were created at closing.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing midstream product/asset layer (gathering, processing, storage, transportation, and NGL systems owned by ONEOK Partners) remained inside the surviving ONEOK Partners entity together with the operations that produce it; nothing in the closing structure separated product from process. gap_56=0 because the same named executive officers already held identical titles at ONEOK and ONEOK Partners GP and were expressly retained in those roles, directors already overlapped, and operating personnel were already supplied through ONEOK affiliates, so the structural summary states no transitional-services agreement was needed or documented—the process and organization substrates were not organizationally separate at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

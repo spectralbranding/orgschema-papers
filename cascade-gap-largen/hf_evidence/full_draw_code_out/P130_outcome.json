@@ -1,0 +1,58 @@
+{
+  "case_id": "P130",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss of approximately $6.9 billion, driven substantially by $3.9 billion of goodwill impairment and $4.4 billion of trade-name impairment",
+      "rationale": "There is no documented evidence of disruption specifically at the product/process interface (p4_pathway = 0). However, there is documented process/organization disruption (p5_pathway = 1), as management disclosed a material weakness in internal controls over financial reporting specifically related to 'the accounting for the impact of divestitures,' indicating that operational integration and divestiture processes broke down at the organizational level."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "1",
+      "performance_metric": "~$8.3bn goodwill/trade-name impairments; majority of Jarden brands divested ~3y",
+      "rationale": "p4 is coded 1 because FY2018 filings document $1.7B/$2.4B/$0.2B trade-name impairments concentrated in segments whose names were 'acquired in the Jarden acquisition,' plus 2018–early-2019 divestitures of multiple legacy-Jarden product businesses (Rawlings, Waddington, Goody, Jostens, Pure Fishing, Rexair) under the Accelerated Transformation Plan as non-core—realized product-line/operations incoherence. p5 is coded 1 from the same 10-K’s disclosed material weakness in internal control specifically over ‘the accounting for the impact of divestitures,’ the disbanding after ~9 months of the interim ‘Jarden Group’ operating unit, and management-structure realignment/CFO turnover during the outcome window."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '~$6.9 billion net loss in FY2018'}",
+      "rationale": "{'type': 'string', 'enum': 'The reported impairments and divestitures do not specifically document that acquired products could not be aligned with operating processes, so p4 is coded 0. For p5, Newell documented ineffective financial-reporting controls caused by a material weakness in divestiture accounting, including errors requiring prior-quarter adjustments, while its transformation program also realigned the management structure; this constitutes realized disruption between operational processes and the organization.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss of approximately $6.9 billion, driven substantially by $3.9 billion of goodwill impairment and $4.4 billion of trade-name impairment\",\n  \"rationale\": \"There is no documented evidence of disruption specifically at the product/process interface (p4_pathway = 0). However, there is documented process/organization disruption (p5_pathway = 1), as management disclosed a material weakness in internal controls over financial reporting specifically related to 'the accounting for the impact of divestitures,' indicating that operational integration and divestiture processes broke down at the organizational level.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"1\",\n  \"performance_metric\": \"~$8.3bn goodwill/trade-name impairments; majority of Jarden brands divested ~3y\",\n  \"rationale\": \"p4 is coded 1 because FY2018 filings document $1.7B/$2.4B/$0.2B trade-name impairments concentrated in segments whose names were 'acquired in the Jarden acquisition,' plus 2018–early-2019 divestitures of multiple legacy-Jarden product businesses (Rawlings, Waddington, Goody, Jostens, Pure Fishing, Rexair) under the Accelerated Transformation Plan as non-core—realized product-line/operations incoherence. p5 is coded 1 from the same 10-K’s disclosed material weakness in internal control specifically over ‘the accounting for the impact of divestitures,’ the disbanding after ~9 months of the interim ‘Jarden Group’ operating unit, and management-structure realignment/CFO turnover during the outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"~$6.9 billion net loss in FY2018\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The reported impairments and divestitures do not specifically document that acquired products could not be aligned with operating processes, so p4 is coded 0. For p5, Newell documented ineffective financial-reporting controls caused by a material weakness in divestiture accounting, including errors requiring prior-quarter adjustments, while its transformation program also realigned the management structure; this constitutes realized disruption between operational processes and the organization.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "1",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": true,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": true
+  },
+  "n_flags": 2
+}

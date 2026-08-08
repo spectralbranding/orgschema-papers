@@ -1,0 +1,85 @@
+{
+  "case_id": "P017",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing businesses (Power Generation Systems and Government Operations, T4) crossed the boundary as a newly independent registrant, but the shared operational/service substrate that supports them — accounting/financial reporting, IT and communications, legal, HR, tax administration, treasury and corporate finance (T5) — was explicitly \"NOT transferred whole\" and had to be re-established, a documented product-vs-process mismatch at closing. gap_mitigated=yes: this gap was contractually absorbed at closing via a master separation agreement and a transition services agreement under which McDermott would continue providing the shared services on a transitional basis for up to one year. gap_56=0: the operating management team (Bethards as CEO, Taff as CFO) and the ~13,000 employees who run the operations were drawn from and transferred with the businesses being distributed, so process and organization moved together rather than being separated."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the Power Generation Systems and Government Operations segments (customer-facing products/assets and the design, engineering, manufacture, construction, maintenance, and government nuclear operations that produce/deliver them) were distributed together as B&W, with no documented product-vs-process structural mismatch (gap_45=0). The ~13,000 B&W employees and operating management drawn from those businesses (e.g., Bethards as CEO) transferred with the segments under the master separation and employee matters agreements, so T5 and T6 aligned at closing (gap_56=0); the TSA bridged only corporate shared G&A infrastructure (accounting, IT, legal, HR admin, tax, treasury), not a T4–T5 or T5–T6 gap."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Power Generation Systems and Government Operations businesses and their customer-facing offerings crossed the boundary, while McDermott's accounting, IT, legal, HR, tax, treasury, and finance infrastructure did not transfer whole, documenting a product-versus-process gap at closing. The transition services agreement contractually bridged some of that shared substrate for up to one year. The operating workforce and management team accompanied the distributed businesses, while the omitted shared-service processes and their supporting organization remained together outside the boundary, so no separate process-versus-organization mismatch is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing businesses (Power Generation Systems and Government Operations, T4) crossed the boundary as a newly independent registrant, but the shared operational/service substrate that supports them \\u2014 accounting/financial reporting, IT and communications, legal, HR, tax administration, treasury and corporate finance (T5) \\u2014 was explicitly \\\"NOT transferred whole\\\" and had to be re-established, a documented product-vs-process mismatch at closing. gap_mitigated=yes: this gap was contractually absorbed at closing via a master separation agreement and a transition services agreement under which McDermott would continue providing the shared services on a transitional basis for up to one year. gap_56=0: the operating management team (Bethards as CEO, Taff as CFO) and the ~13,000 employees who run the operations were drawn from and transferred with the businesses being distributed, so process and organization moved together rather than being separated.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the Power Generation Systems and Government Operations segments (customer-facing products/assets and the design, engineering, manufacture, construction, maintenance, and government nuclear operations that produce/deliver them) were distributed together as B&W, with no documented product-vs-process structural mismatch (gap_45=0). The ~13,000 B&W employees and operating management drawn from those businesses (e.g., Bethards as CEO) transferred with the segments under the master separation and employee matters agreements, so T5 and T6 aligned at closing (gap_56=0); the TSA bridged only corporate shared G&A infrastructure (accounting, IT, legal, HR admin, tax, treasury), not a T4–T5 or T5–T6 gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Power Generation Systems and Government Operations businesses and their customer-facing offerings crossed the boundary, while McDermott's accounting, IT, legal, HR, tax, treasury, and finance infrastructure did not transfer whole, documenting a product-versus-process gap at closing. The transition services agreement contractually bridged some of that shared substrate for up to one year. The operating workforce and management team accompanied the distributed businesses, while the omitted shared-service processes and their supporting organization remained together outside the boundary, so no separate process-versus-organization mismatch is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "reconstruct",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

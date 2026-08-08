@@ -1,0 +1,58 @@
+{
+  "case_id": "P212",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net sales $2,758m (2020) → $3,572m (2021) → $3,454m (2022); net income $969m/$286m/$497m; $85m Venator settlement (Apr 2022); no goodwill impairment disclosed",
+      "rationale": "The FY2022 10-K reports a healthy, growing consolidated business (net sales rising to $3.4-3.6bn, positive net income each year, ~6,500 employees) with no goodwill-impairment charge and no documented incoherence between the acquired TiO2 product lines and Tronox's operating processes, so p4 is coded 0. Likewise, no fracture between operations and the organization/management/culture is documented—the company operates under a single consolidated segment reviewed by its Co-CEOs with no reported integration breakdown—so p5 is coded 0. The only documented post-close dispute is the Venator litigation over an FTC-mandated divestiture, which concerns a break-fee/best-efforts contract with a third party, not a realized product/process or process/organization integration failure. No merger-of-equals archetype incoherence or business-model incompatibility is documented, so t1 and t2 are 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; $85M Venator settlement (~3yr)",
+      "rationale": "The FY2022 10-K reports continued single-segment TiO2 operations with consolidated net sales of $3,454M and net income of $497M and no goodwill-impairment charge tied to the acquired business, with no disclosed product-line/operations incoherence. Headcount is given only as a consolidated ~6,500 figure and no fracture between operations and organization/culture is documented; the sole multi-year post-close dispute is the Venator break-fee litigation over an FTC-mandated North American divestiture, settled for $85M in April 2022, which is not a product/process or process/organization integration failure."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': '$85 million Venator settlement in April 2022'}",
+      "rationale": "{'type': 'string', 'value': 'The FY2022 10-K reports one consolidated operating segment and does not document acquired-product misalignment with operating processes, so no p4 disruption is documented [SEC accession 0001530804-23-000004, Note 23]. It also reports approximately 6,500 employees without describing management, workforce, cultural, or organizational fracture against operations, so no p5 disruption is documented [SEC accession 0001530804-23-000004, Human Capital]. The multi-year Venator litigation and $85 million settlement concerned divestiture-related contractual claims rather than either interface pathway [SEC accession 0001530804-23-000004, Note 18].'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Net sales $2,758m (2020) \\u2192 $3,572m (2021) \\u2192 $3,454m (2022); net income $969m/$286m/$497m; $85m Venator settlement (Apr 2022); no goodwill impairment disclosed\", \"rationale\": \"The FY2022 10-K reports a healthy, growing consolidated business (net sales rising to $3.4-3.6bn, positive net income each year, ~6,500 employees) with no goodwill-impairment charge and no documented incoherence between the acquired TiO2 product lines and Tronox's operating processes, so p4 is coded 0. Likewise, no fracture between operations and the organization/management/culture is documented\\u2014the company operates under a single consolidated segment reviewed by its Co-CEOs with no reported integration breakdown\\u2014so p5 is coded 0. The only documented post-close dispute is the Venator litigation over an FTC-mandated divestiture, which concerns a break-fee/best-efforts contract with a third party, not a realized product/process or process/organization integration failure. No merger-of-equals archetype incoherence or business-model incompatibility is documented, so t1 and t2 are 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment; $85M Venator settlement (~3yr)\",\n  \"rationale\": \"The FY2022 10-K reports continued single-segment TiO2 operations with consolidated net sales of $3,454M and net income of $497M and no goodwill-impairment charge tied to the acquired business, with no disclosed product-line/operations incoherence. Headcount is given only as a consolidated ~6,500 figure and no fracture between operations and organization/culture is documented; the sole multi-year post-close dispute is the Venator break-fee litigation over an FTC-mandated North American divestiture, settled for $85M in April 2022, which is not a product/process or process/organization integration failure.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"$85 million Venator settlement in April 2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"The FY2022 10-K reports one consolidated operating segment and does not document acquired-product misalignment with operating processes, so no p4 disruption is documented [SEC accession 0001530804-23-000004, Note 23]. It also reports approximately 6,500 employees without describing management, workforce, cultural, or organizational fracture against operations, so no p5 disruption is documented [SEC accession 0001530804-23-000004, Human Capital]. The multi-year Venator litigation and $85 million settlement concerned divestiture-related contractual claims rather than either interface pathway [SEC accession 0001530804-23-000004, Note 18].\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P087",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "exited 50% JV interest after ~48 months for ~$4.8bn cash plus retained ~40% Hemlock stake; $2.7bn gain recognized in 2016",
+      "rationale": "The slice documents that the 50/50 venture was unwound within the outcome window (Corning exited May 31, 2016), with declining equity earnings ($252M in 2014, $281M in 2015, $82M partial 2016) and the CEO characterizing the silicones business as \"outside the technologies and manufacturing platforms core to our strategic framework.\" However, this reflects a strategic-fit exit and financial trajectory only; the slice provides no documented evidence of disruption at the product/process interface (p4) nor of any operations-versus-people/culture fracture (p5). Because the record neither affirms nor rules out these specific interface pathways—it simply does not address integration mechanics—both are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested 50% interest for $4.8bn cash and Hemlock stake",
+      "rationale": "The slice documents that Corning exited its 50% interest in Dow Corning in 2016, receiving $4.8 billion in cash and a stake in Hemlock Semiconductor. The CEO stated the silicones business was 'outside the technologies and manufacturing platforms core to our strategic framework.' There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) causing the exit, only a strategic realignment."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'exited entire 50% interest for $4.818 billion cash in May 2016'}",
+      "rationale": "{'type': 'string', 'enum': 'Corning stated in December 2015 that the silicones business lay outside the technologies and manufacturing platforms core to its strategic framework, and it subsequently exited the venture in May 2016; this documents realized product/process-platform incoherence. The slice documents no fracture involving operations versus employees, management, or culture, so no process/organization pathway is documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"exited 50% JV interest after ~48 months for ~$4.8bn cash plus retained ~40% Hemlock stake; $2.7bn gain recognized in 2016\", \"rationale\": \"The slice documents that the 50/50 venture was unwound within the outcome window (Corning exited May 31, 2016), with declining equity earnings ($252M in 2014, $281M in 2015, $82M partial 2016) and the CEO characterizing the silicones business as \\\"outside the technologies and manufacturing platforms core to our strategic framework.\\\" However, this reflects a strategic-fit exit and financial trajectory only; the slice provides no documented evidence of disruption at the product/process interface (p4) nor of any operations-versus-people/culture fracture (p5). Because the record neither affirms nor rules out these specific interface pathways\\u2014it simply does not address integration mechanics\\u2014both are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested 50% interest for $4.8bn cash and Hemlock stake\",\n  \"rationale\": \"The slice documents that Corning exited its 50% interest in Dow Corning in 2016, receiving $4.8 billion in cash and a stake in Hemlock Semiconductor. The CEO stated the silicones business was 'outside the technologies and manufacturing platforms core to our strategic framework.' There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) causing the exit, only a strategic realignment.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"exited entire 50% interest for $4.818 billion cash in May 2016\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Corning stated in December 2015 that the silicones business lay outside the technologies and manufacturing platforms core to its strategic framework, and it subsequently exited the venture in May 2016; this documents realized product/process-platform incoherence. The slice documents no fracture involving operations versus employees, management, or culture, so no process/organization pathway is documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

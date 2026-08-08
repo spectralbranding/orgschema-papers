@@ -1,0 +1,85 @@
+{
+  "case_id": "P162",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "terminate",
+      "sigma_T3": "terminate",
+      "sigma_T4": "subset",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: at closing the customer-facing merchandise inventory and owned FF&E passed to a liquidation agent for going-out-of-business disposition, and IP/real property/leases passed as designation rights, while the operating processes that produced/delivered the department-store business were NOT transferred to a continuing operator — a documented product-vs-process mismatch, and there is no transitional-services or operating agreement absorbing that gap (the deal is an Agency Agreement for liquidation, not a going concern). gap_56=0: the slice states expressly that no management, workforce, organization, business model or controlling intent was conveyed to a successor operator and no processes were re-engineered or transferred to a continuing operator, so processes and organization both terminated together rather than mismatching. Collapse none per the closing documents (\"Documented fusion of a controlling principal with a tier: none identified\")."
+    },
+    "gemini": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "terminate",
+      "sigma_T3": "terminate",
+      "sigma_T4": "subset",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was a liquidation where merchandise and fixtures (T4 subset) were transferred to a liquidation agent for going-out-of-business sales, while the operating business, processes (T5), and organization (T6) were not transferred to a continuing operator (gap_45 = 1). Since neither T5 nor T6 transferred as continuing operations, there is no gap_56."
+    },
+    "grok": {
+      "sigma_T1": "terminate",
+      "sigma_T2": "terminate",
+      "sigma_T3": "null",
+      "sigma_T4": "terminate",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that closing was an Agency Agreement for going-out-of-business sales of merchandise/FF&E plus designation rights over other assets, and expressly that 'the operating business was NOT transferred to a continuing operator as a going concern' and 'no controlling intent, business model, management, workforce or organization was conveyed.' Ongoing T4 product and T5 processes therefore neither moved as a continuing concern (gap_45=0); T5 processes and T6 organization likewise both were not conveyed (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"terminate\", \"sigma_T2\": \"terminate\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"terminate\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: at closing the customer-facing merchandise inventory and owned FF&E passed to a liquidation agent for going-out-of-business disposition, and IP/real property/leases passed as designation rights, while the operating processes that produced/delivered the department-store business were NOT transferred to a continuing operator \\u2014 a documented product-vs-process mismatch, and there is no transitional-services or operating agreement absorbing that gap (the deal is an Agency Agreement for liquidation, not a going concern). gap_56=0: the slice states expressly that no management, workforce, organization, business model or controlling intent was conveyed to a successor operator and no processes were re-engineered or transferred to a continuing operator, so processes and organization both terminated together rather than mismatching. Collapse none per the closing documents (\\\"Documented fusion of a controlling principal with a tier: none identified\\\").\"}",
+    "gemini": "{\n\"sigma_T1\": \"terminate\",\n\"sigma_T2\": \"terminate\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"terminate\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction was a liquidation where merchandise and fixtures (T4 subset) were transferred to a liquidation agent for going-out-of-business sales, while the operating business, processes (T5), and organization (T6) were not transferred to a continuing operator (gap_45 = 1). Since neither T5 nor T6 transferred as continuing operations, there is no gap_56.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"terminate\",\n  \"sigma_T2\": \"terminate\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"terminate\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that closing was an Agency Agreement for going-out-of-business sales of merchandise/FF&E plus designation rights over other assets, and expressly that 'the operating business was NOT transferred to a continuing operator as a going concern' and 'no controlling intent, business model, management, workforce or organization was conveyed.' Ongoing T4 product and T5 processes therefore neither moved as a continuing concern (gap_45=0); T5 processes and T6 organization likewise both were not conveyed (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "terminate",
+    "sigma_T2": "terminate",
+    "sigma_T3": "terminate",
+    "sigma_T4": "subset",
+    "sigma_T5": "terminate",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

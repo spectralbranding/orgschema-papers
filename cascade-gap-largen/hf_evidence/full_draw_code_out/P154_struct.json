@@ -1,0 +1,85 @@
+{
+  "case_id": "P154",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: the slice states the Mountain Pass credit-bid sale transferred the subsurface mineral rights and water-treatment process IP (SorbX/PhosFIX trademarks and process patents) to Secure Natural Resources LLC, but \"the mineral-rights and process-IP thus crossed the ownership boundary to the buyer without the producing/processing plant and its associated operating entity moving alongside them\" — a product/asset transferred without the operational plant that produces it. gap_56=1: T5/T6 mismatch is documented because the physical mine facility and its holding entities and \"their personnel\" remained with the severed Molycorp Minerals Debtors under a Chapter 11 trustee, separating processes/people from the assets sold. gap_mitigated=no: the slice records severance/withdrawal and a Chapter 7-conversion motion with no transitional-services or operating agreement allocating the shared mine substrate to the buyer at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction split the enterprise into multiple pieces (1-N across T2-T6). The downstream businesses reorganized under a new parent, while the Mountain Pass mineral rights and water-treatment IP (T4 assets) were sold to a separate buyer without the physical mining/processing facility (T5) moving alongside them, creating a gap_45. The physical facility and its holding entity were left behind under a Chapter 11 trustee, separating the mine-holding entities and their personnel (T6) from the reorganized downstream group and the sold assets, creating a gap_56. There is no mention of a transitional services agreement mitigating these gaps."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The Mountain Pass sale transferred mineral rights, water-treatment IP, trademarks, process patents, contracts, and goodwill, while the physical mining and processing facility and its operating entity remained behind in severed cases; this documents a product/asset-versus-process mismatch at closing [SRC: SEC accession 0001104659-16-120339, Form 8-K Item 1.03]. The same structure separated the transferred process IP from the mine-holding entities and their personnel, while the downstream operations and management moved together as a going concern, documenting a process-versus-organization gap only in the Mountain Pass portion [SRC: SEC accession 0001104659-16-120339, Form 8-K Item 1.03] [SRC: SEC accession 0001489137-16-000120, Form 8-K Item 1.03]. No transitional-services or operating agreement allocating that separated substrate is documented in the slice."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: the slice states the Mountain Pass credit-bid sale transferred the subsurface mineral rights and water-treatment process IP (SorbX/PhosFIX trademarks and process patents) to Secure Natural Resources LLC, but \\\"the mineral-rights and process-IP thus crossed the ownership boundary to the buyer without the producing/processing plant and its associated operating entity moving alongside them\\\" \\u2014 a product/asset transferred without the operational plant that produces it. gap_56=1: T5/T6 mismatch is documented because the physical mine facility and its holding entities and \\\"their personnel\\\" remained with the severed Molycorp Minerals Debtors under a Chapter 11 trustee, separating processes/people from the assets sold. gap_mitigated=no: the slice records severance/withdrawal and a Chapter 7-conversion motion with no transitional-services or operating agreement allocating the shared mine substrate to the buyer at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"1-N\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction split the enterprise into multiple pieces (1-N across T2-T6). The downstream businesses reorganized under a new parent, while the Mountain Pass mineral rights and water-treatment IP (T4 assets) were sold to a separate buyer without the physical mining/processing facility (T5) moving alongside them, creating a gap_45. The physical facility and its holding entity were left behind under a Chapter 11 trustee, separating the mine-holding entities and their personnel (T6) from the reorganized downstream group and the sold assets, creating a gap_56. There is no mention of a transitional services agreement mitigating these gaps.\"\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The Mountain Pass sale transferred mineral rights, water-treatment IP, trademarks, process patents, contracts, and goodwill, while the physical mining and processing facility and its operating entity remained behind in severed cases; this documents a product/asset-versus-process mismatch at closing [SRC: SEC accession 0001104659-16-120339, Form 8-K Item 1.03]. The same structure separated the transferred process IP from the mine-holding entities and their personnel, while the downstream operations and management moved together as a going concern, documenting a process-versus-organization gap only in the Mountain Pass portion [SRC: SEC accession 0001104659-16-120339, Form 8-K Item 1.03] [SRC: SEC accession 0001489137-16-000120, Form 8-K Item 1.03]. No transitional-services or operating agreement allocating that separated substrate is documented in the slice.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

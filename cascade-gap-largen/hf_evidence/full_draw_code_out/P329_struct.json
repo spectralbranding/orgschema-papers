@@ -1,0 +1,85 @@
+{
+  "case_id": "P329",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The single company ABCO was structurally split along the health-care/education line into two distinct ownership structures (education sold via stock-and-asset purchase to Vista/Avatar entities; the remaining ABCO entity with the health care business merged into Optum), so every tier is coded 1-N. On gap_45: the deal allocated employees, products, and operations coherently along the business line, and a cross-license agreement bridged shared IP between the two resulting structures, so product and its producing processes moved together within each business — no documented product-vs-process mismatch (0). On gap_56: employees/independent contractors transferred alongside their respective businesses (health care employees' awards to UNH, education employees to Education Buyer), with an employee matters agreement and transition services agreement allocating people and functions to the processes at closing — processes and the organization running them moved together (0). Because both gaps are 0, gap_mitigated is NA (though a TSA, employee matters agreement, and cross-license were in fact in place)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Advisory Board Company (ABCO) was split into two businesses (health care and education) sold to two different buyers (Optum and Vista Equity). The products, processes, and people were explicitly allocated along this health-care/education line, meaning T4, T5, and T6 were split (1-N) but aligned within their respective business units. There is no documented structural mismatch between product and process (gap_45=0) or process and people (gap_56=0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The closing summary states that ABCO’s two operating businesses were separated between two buyers, with the education business transferred by a stock-and-asset sale and the remaining entity retaining the health care business and becoming an Optum subsidiary. Employees and equity awards were allocated between the buyers along the education/health-care line, indicating that the organizations moved coherently with the divided businesses and operations rather than being structurally omitted. The transition services, employee matters, and cross-license agreements bridged shared functions and intellectual property at closing; therefore, no unabsorbed product-process or process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-N\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"1-N\", \"sigma_T5\": \"1-N\", \"sigma_T6\": \"1-N\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The single company ABCO was structurally split along the health-care/education line into two distinct ownership structures (education sold via stock-and-asset purchase to Vista/Avatar entities; the remaining ABCO entity with the health care business merged into Optum), so every tier is coded 1-N. On gap_45: the deal allocated employees, products, and operations coherently along the business line, and a cross-license agreement bridged shared IP between the two resulting structures, so product and its producing processes moved together within each business \\u2014 no documented product-vs-process mismatch (0). On gap_56: employees/independent contractors transferred alongside their respective businesses (health care employees' awards to UNH, education employees to Education Buyer), with an employee matters agreement and transition services agreement allocating people and functions to the processes at closing \\u2014 processes and the organization running them moved together (0). Because both gaps are 0, gap_mitigated is NA (though a TSA, employee matters agreement, and cross-license were in fact in place).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"1-N\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The Advisory Board Company (ABCO) was split into two businesses (health care and education) sold to two different buyers (Optum and Vista Equity). The products, processes, and people were explicitly allocated along this health-care/education line, meaning T4, T5, and T6 were split (1-N) but aligned within their respective business units. There is no documented structural mismatch between product and process (gap_45=0) or process and people (gap_56=0) at closing.\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The closing summary states that ABCO’s two operating businesses were separated between two buyers, with the education business transferred by a stock-and-asset sale and the remaining entity retaining the health care business and becoming an Optum subsidiary. Employees and equity awards were allocated between the buyers along the education/health-care line, indicating that the organizations moved coherently with the divided businesses and operations rather than being structurally omitted. The transition services, employee matters, and cross-license agreements bridged shared functions and intellectual property at closing; therefore, no unabsorbed product-process or process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-N",
+    "sigma_T6": "1-N",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

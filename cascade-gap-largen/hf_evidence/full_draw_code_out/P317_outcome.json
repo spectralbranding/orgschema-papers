@@ -1,0 +1,58 @@
+{
+  "case_id": "P317",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "over $220M annualized cost synergies; 3-year integration program concluded; VWR integration expenses declined $36.2M (2018) to $9.9M (2020) to immaterial (2021)",
+      "rationale": "No product/process interface disruption is documented: VWR remained \"the primary ordering platform for our customers\" and its trade name continued to be amortized as an in-use finite-lived intangible, indicating operational alignment rather than incoherence (p4=0). No process/organization fracture is documented: the integration program concluded on its originally envisioned three-year schedule with over $220M in synergies, integration expenses fell steadily and became immaterial by 2021, VWR-origin pension plans were merged/continued, and at least one former VWR senior executive was retained in a combined-company role (p5=0). The slice contains no evidence of archetype incoherence or of irreconcilable business-model value-capture logics over the outcome window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "over $220 million of annualized cost synergies",
+      "rationale": "The slice documents successful integration without product/process disruption, noting that VWR became the 'primary ordering platform for our customers.' There is also no evidence of process/organization fracture, as Avantor reported generating 'over $220 million of annualized cost synergies' from a concluded three-year program and retained at least one former VWR senior executive."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "over $220 million of annualized cost synergies; three-year program concluded",
+      "rationale": "No realized product/process disruption is documented; by FY2020, VWR remained Avantor's primary customer ordering platform, and the three-year integration program had generated over $220 million in annualized cost synergies. No process/organization fracture is documented: integration expenses declined from $36.2 million in 2018 to $9.9 million in 2020 and became immaterial in 2021, while a former VWR senior executive continued in an Avantor executive role and VWR-origin pension plans were merged or continued."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"over $220M annualized cost synergies; 3-year integration program concluded; VWR integration expenses declined $36.2M (2018) to $9.9M (2020) to immaterial (2021)\", \"rationale\": \"No product/process interface disruption is documented: VWR remained \\\"the primary ordering platform for our customers\\\" and its trade name continued to be amortized as an in-use finite-lived intangible, indicating operational alignment rather than incoherence (p4=0). No process/organization fracture is documented: the integration program concluded on its originally envisioned three-year schedule with over $220M in synergies, integration expenses fell steadily and became immaterial by 2021, VWR-origin pension plans were merged/continued, and at least one former VWR senior executive was retained in a combined-company role (p5=0). The slice contains no evidence of archetype incoherence or of irreconcilable business-model value-capture logics over the outcome window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"over $220 million of annualized cost synergies\",\n  \"rationale\": \"The slice documents successful integration without product/process disruption, noting that VWR became the 'primary ordering platform for our customers.' There is also no evidence of process/organization fracture, as Avantor reported generating 'over $220 million of annualized cost synergies' from a concluded three-year program and retained at least one former VWR senior executive.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"over $220 million of annualized cost synergies; three-year program concluded\",\n  \"rationale\": \"No realized product/process disruption is documented; by FY2020, VWR remained Avantor's primary customer ordering platform, and the three-year integration program had generated over $220 million in annualized cost synergies. No process/organization fracture is documented: integration expenses declined from $36.2 million in 2018 to $9.9 million in 2020 and became immaterial in 2021, while a former VWR senior executive continued in an Avantor executive role and VWR-origin pension plans were merged or continued.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

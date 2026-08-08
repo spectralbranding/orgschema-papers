@@ -1,0 +1,58 @@
+{
+  "case_id": "P157",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (no public audited outcome record for analyzed entity in ~2018–2020 window; deregistered Dec 2013, assets sold to private buyers in 2015 chapter 11)",
+      "rationale": "The slice states that Patriot Coal Corporation deregistered via Form 15 in December 2013 and filed no periodic reports thereafter, and that substantially all its assets were sold to private buyers (Blackhawk Mining LLC and ERP/VCLF) in the 2015 chapter 11, so no audited public outcome record exists for the analyzed entity in the fixed window. With no primary-source record of the combined entity's post-deal trajectory, there is no documented product/process disruption (p4) or process/organization fracture (p5) attributable to the analyzed entity. The only later difficulties noted (mines abandoned by the VCLF/ERP side) are explicitly attributed to a separate acquirer and not coded as the analyzed entity's outcome, so both pathways are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "uncertain (no public record)",
+      "rationale": "The slice explicitly states that Patriot Coal Corporation deregistered in 2013 and its assets were sold to private buyers in 2015, leaving no public audited outcome record for the 2018-2020 window. Therefore, no evidence exists to evaluate p4_pathway or p5_pathway."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that Patriot Coal deregistered in 2013 and that its assets were sold to private buyers in the 2015 chapter 11, leaving no public audited financial statements or realized-outcome record for the entity in the ~2018–2020 window. No evidence of product/process interface disruption (p4) or process/organization fracture (p5) is documented for the analyzed entity. Per the coding rule, absence of documented pathway evidence is therefore 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (no public audited outcome record for analyzed entity in ~2018\\u20132020 window; deregistered Dec 2013, assets sold to private buyers in 2015 chapter 11)\", \"rationale\": \"The slice states that Patriot Coal Corporation deregistered via Form 15 in December 2013 and filed no periodic reports thereafter, and that substantially all its assets were sold to private buyers (Blackhawk Mining LLC and ERP/VCLF) in the 2015 chapter 11, so no audited public outcome record exists for the analyzed entity in the fixed window. With no primary-source record of the combined entity's post-deal trajectory, there is no documented product/process disruption (p4) or process/organization fracture (p5) attributable to the analyzed entity. The only later difficulties noted (mines abandoned by the VCLF/ERP side) are explicitly attributed to a separate acquirer and not coded as the analyzed entity's outcome, so both pathways are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"uncertain (no public record)\",\n  \"rationale\": \"The slice explicitly states that Patriot Coal Corporation deregistered in 2013 and its assets were sold to private buyers in 2015, leaving no public audited outcome record for the 2018-2020 window. Therefore, no evidence exists to evaluate p4_pathway or p5_pathway.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that Patriot Coal deregistered in 2013 and that its assets were sold to private buyers in the 2015 chapter 11, leaving no public audited financial statements or realized-outcome record for the entity in the ~2018–2020 window. No evidence of product/process interface disruption (p4) or process/organization fracture (p5) is documented for the analyzed entity. Per the coding rule, absence of documented pathway evidence is therefore 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

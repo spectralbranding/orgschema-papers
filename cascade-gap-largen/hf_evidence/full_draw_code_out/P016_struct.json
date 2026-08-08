@@ -1,0 +1,85 @@
+{
+  "case_id": "P016",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the customer-facing can body sheet (T4) crossed to the registrant while its producing process (T5) remained with Arconic, which \"would continue producing the wide can body sheet at Tennessee and provide it to Alcoa Corporation\" — a product-without-its-producing-process mismatch at closing; this gap was contractually absorbed via the toll processing and services agreement plus the transition services agreement, so gap_mitigated=yes. gap_56=0 because the core vertically integrated processes (bauxite→alumina→aluminum→cast/rolled) and their organization/management moved together, with the incumbent Global Primary Products CEO (Harvey) and COO (Sigurdsson) and ~16,000 employees transferring coherently alongside those processes. T1 coded continue as the registrant traces the same Aluminum Company of America upstream imprint/lineage; the deal is a spin-off (1-N legal split, subset of businesses)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice expressly documents that at closing the North American packaging can-body-sheet customer product crossed to Alcoa Corporation while its producing process remained at Arconic’s Tennessee facility and was supplied only under the toll processing and services agreement (“customer-facing product supplied without its producing process residing inside the registrant at closing”). gap_56=0 because the same slice states the core vertically integrated processes (bauxite→alumina→aluminum→cast/rolled+Energy) moved together with the incumbent Global Primary Products management line (CEO Harvey and COO Sigurdsson) and ~16,000 employees into the registrant; the shared substrate was contractually bridged at closing by the toll processing agreement and the transition services agreement."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing, North American can body sheet remained physically produced by Arconic at Tennessee and was supplied to Alcoa Corporation, so the customer-facing product crossed without its producing process residing in the registrant [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1]. That gap was contractually absorbed through the toll processing and services agreement, which provided for continued production and UBC processing [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1]. No process/organization gap is documented because the core vertically integrated processes moved together with approximately 16,000 employees and the incumbent Global Primary Products CEO and COO management line [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1 because the customer-facing can body sheet (T4) crossed to the registrant while its producing process (T5) remained with Arconic, which \\\"would continue producing the wide can body sheet at Tennessee and provide it to Alcoa Corporation\\\" \\u2014 a product-without-its-producing-process mismatch at closing; this gap was contractually absorbed via the toll processing and services agreement plus the transition services agreement, so gap_mitigated=yes. gap_56=0 because the core vertically integrated processes (bauxite\\u2192alumina\\u2192aluminum\\u2192cast/rolled) and their organization/management moved together, with the incumbent Global Primary Products CEO (Harvey) and COO (Sigurdsson) and ~16,000 employees transferring coherently alongside those processes. T1 coded continue as the registrant traces the same Aluminum Company of America upstream imprint/lineage; the deal is a spin-off (1-N legal split, subset of businesses).\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice expressly documents that at closing the North American packaging can-body-sheet customer product crossed to Alcoa Corporation while its producing process remained at Arconic’s Tennessee facility and was supplied only under the toll processing and services agreement (“customer-facing product supplied without its producing process residing inside the registrant at closing”). gap_56=0 because the same slice states the core vertically integrated processes (bauxite→alumina→aluminum→cast/rolled+Energy) moved together with the incumbent Global Primary Products management line (CEO Harvey and COO Sigurdsson) and ~16,000 employees into the registrant; the shared substrate was contractually bridged at closing by the toll processing agreement and the transition services agreement.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing, North American can body sheet remained physically produced by Arconic at Tennessee and was supplied to Alcoa Corporation, so the customer-facing product crossed without its producing process residing in the registrant [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1]. That gap was contractually absorbed through the toll processing and services agreement, which provided for continued production and UBC processing [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1]. No process/organization gap is documented because the core vertically integrated processes moved together with approximately 16,000 employees and the incumbent Global Primary Products CEO and COO management line [SRC: SEC accession 0001193125-16-708643, Form 10-12B EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-N",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

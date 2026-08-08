@@ -1,0 +1,58 @@
+{
+  "case_id": "P196",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income attributable to the company rising from $176.5 million (FY2022) to $865.4 million (FY2023, a 390% increase)",
+      "rationale": "The provided slice details the company's Chapter 11 restructuring, debt elimination, and subsequent return to profitability. It contains no documented evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11 emergence Apr 2021; eliminated $7.1bn debt; FY2023 NI $865.4M",
+      "rationale": "The slice documents Chapter 11 filing, delisting, debt elimination, emergence, and a return to profitability with a stable ~52-53 rig fleet plus the continuing ARO JV, but contains no realized-outcome evidence that an acquired product line could not be aligned with operating processes over time (p4=0). It likewise documents no fracture between operations and people/management/culture as an integration failure pathway (p5=0); the distress and restructuring are recorded without attributing them to those specific interfaces."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$7.1 billion of debt eliminated through the 2021 Chapter 11 restructuring",
+      "rationale": "The slice documents Chapter 11, delisting, and a financial restructuring that eliminated $7.1 billion of debt, but it does not attribute these outcomes to an acquired-product/operating-process misalignment; the broadly stable rig fleet and continuing ARO interest likewise do not document a p4 disruption. It also provides no realized evidence that operations broke against management, employees, or culture, so no p5 process/organization fracture is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income attributable to the company rising from $176.5 million (FY2022) to $865.4 million (FY2023, a 390% increase)\",\n  \"rationale\": \"The provided slice details the company's Chapter 11 restructuring, debt elimination, and subsequent return to profitability. It contains no documented evidence of disruption at the product/process interface (p4) or fracture at the process/organization interface (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11 emergence Apr 2021; eliminated $7.1bn debt; FY2023 NI $865.4M\",\n  \"rationale\": \"The slice documents Chapter 11 filing, delisting, debt elimination, emergence, and a return to profitability with a stable ~52-53 rig fleet plus the continuing ARO JV, but contains no realized-outcome evidence that an acquired product line could not be aligned with operating processes over time (p4=0). It likewise documents no fracture between operations and people/management/culture as an integration failure pathway (p5=0); the distress and restructuring are recorded without attributing them to those specific interfaces.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$7.1 billion of debt eliminated through the 2021 Chapter 11 restructuring\",\n  \"rationale\": \"The slice documents Chapter 11, delisting, and a financial restructuring that eliminated $7.1 billion of debt, but it does not attribute these outcomes to an acquired-product/operating-process misalignment; the broadly stable rig fleet and continuing ARO interest likewise do not document a p4 disruption. It also provides no realized evidence that operations broke against management, employees, or culture, so no p5 process/organization fracture is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

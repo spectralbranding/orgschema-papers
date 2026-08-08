@@ -1,0 +1,85 @@
+{
+  "case_id": "P313",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing asset (T4) was contract drilling capacity delivered through owned/operated rig fleets, and the whole company — fleet, operations, and ~2,800 personnel — crossed the boundary together as Rowan became an indirect wholly-owned subsidiary, so no product-vs-process split is documented (gap_45=0). The deal transferred processes (T5) alongside the organization/people (T6): personnel and executive/management roles were carried over with a Rowan-designated CEO, Ensco-designated Chairman/CFO/COO/GC, and equity awards converted, showing processes and people moved together (gap_56=0). This is a share-for-share scheme combining two similarly sized firms with co-leadership drawn from both predecessors, coding T1 as imprint-share; Ensco's corporate shell survived (T3=1-1) while the two operating fleets, models, processes, and workforces combined into one (N-1)."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a combination where Rowan's entire business, including its rig fleet (T4), operations (T5), and personnel (T6), transferred to Ensco as a wholly-owned subsidiary. There is no evidence in the closing structure of any mismatch or separation between the product, process, and organization."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the customer-facing product of both parties (contract drilling capacity delivered through each owned/operated rig fleet, including the preserved ARO interest) and the operational processes that produce it were structured to combine into one combined offshore drilling company, with no product-vs-process mismatch documented. Organization and leadership were likewise aligned at closing via a mixed board (six Ensco-designated, five Rowan-designated), a Rowan-designated CEO and Ensco-designated Executive Chairman/CFO/COO/GC, conversion of Rowan equity awards, and assumption of Rowan change-in-control agreements, so no process-vs-organization structural gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The customer-facing asset (T4) was contract drilling capacity delivered through owned/operated rig fleets, and the whole company \\u2014 fleet, operations, and ~2,800 personnel \\u2014 crossed the boundary together as Rowan became an indirect wholly-owned subsidiary, so no product-vs-process split is documented (gap_45=0). The deal transferred processes (T5) alongside the organization/people (T6): personnel and executive/management roles were carried over with a Rowan-designated CEO, Ensco-designated Chairman/CFO/COO/GC, and equity awards converted, showing processes and people moved together (gap_56=0). This is a share-for-share scheme combining two similarly sized firms with co-leadership drawn from both predecessors, coding T1 as imprint-share; Ensco's corporate shell survived (T3=1-1) while the two operating fleets, models, processes, and workforces combined into one (N-1).\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a combination where Rowan's entire business, including its rig fleet (T4), operations (T5), and personnel (T6), transferred to Ensco as a wholly-owned subsidiary. There is no evidence in the closing structure of any mismatch or separation between the product, process, and organization.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the customer-facing product of both parties (contract drilling capacity delivered through each owned/operated rig fleet, including the preserved ARO interest) and the operational processes that produce it were structured to combine into one combined offshore drilling company, with no product-vs-process mismatch documented. Organization and leadership were likewise aligned at closing via a mixed board (six Ensco-designated, five Rowan-designated), a Rowan-designated CEO and Ensco-designated Executive Chairman/CFO/COO/GC, conversion of Rowan equity awards, and assumption of Rowan change-in-control agreements, so no process-vs-organization structural gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P112",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "The slice documents that the business continued as a going concern under private ownership and was retained intact, with no divestiture, dissolution, or bankruptcy documented. Management continuity persisted across the horizon, and the business description remained the same line of work. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; retained intact; CVC majority stake ~2021",
+      "rationale": "The slice documents no product/process disruption: the business description remained the same line of independent medical examinations and related services across the horizon, with the firm retained intact as a going concern. No process/organization fracture is documented either; senior leadership (co-founders and co-CEOs) retained equity and continued to lead through the 2021 CVC majority-interest agreement. Absence of any realized disruption evidence yields 0 for both p4_pathway and p5_pathway."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No divestiture; business retained intact as a going concern through 2021",
+      "rationale": "No product/process disruption is documented: the business retained the same line of services and remained intact as an operating going concern through 2021. No process/organization fracture is documented: the co-founders and co-CEOs retained equity and continued to lead the company at the 2021 transaction."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"no divestiture; assets retained\",\n\"rationale\": \"The slice documents that the business continued as a going concern under private ownership and was retained intact, with no divestiture, dissolution, or bankruptcy documented. Management continuity persisted across the horizon, and the business description remained the same line of work. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; retained intact; CVC majority stake ~2021\",\n  \"rationale\": \"The slice documents no product/process disruption: the business description remained the same line of independent medical examinations and related services across the horizon, with the firm retained intact as a going concern. No process/organization fracture is documented either; senior leadership (co-founders and co-CEOs) retained equity and continued to lead through the 2021 CVC majority-interest agreement. Absence of any realized disruption evidence yields 0 for both p4_pathway and p5_pathway.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"No divestiture; business retained intact as a going concern through 2021\",\n  \"rationale\": \"No product/process disruption is documented: the business retained the same line of services and remained intact as an operating going concern through 2021. No process/organization fracture is documented: the co-founders and co-CEOs retained equity and continued to lead the company at the 2021 transaction.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

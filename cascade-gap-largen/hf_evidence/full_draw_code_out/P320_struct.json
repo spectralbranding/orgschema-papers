@@ -1,0 +1,85 @@
+{
+  "case_id": "P320",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: the deal added inVentiv's commercial-services product line to INC Research's business, but the proxy's own risk factors flag that \"because INC Research has not historically had a commercial business segment,\" the operational capacity to run that commercial line was not coherently present at closing — a documented product-vs-process mismatch. This was not contractually absorbed via any transitional-services/operating-substrate agreement (no such mechanism appears; integration was left as an unresolved execution question), so gap_mitigated=no. gap_56=0: the deal moved processes and the people/organization together — Section 5.11 built in employee-benefit continuity and service-crediting, management roles (CEO/Executive Chairman split) and the 10-member board were contractually fixed, so operations and the organization running them transferred coherently alongside each other."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a complete merger of inVentiv into INC Research, with inVentiv's commercial services (T4), operations (T5), and employees (T6) transferring entirely to the surviving entity. The merger agreement explicitly provided for employee continuity and benefits, ensuring no structural mismatch between the transferred processes and the organization running them at closing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing inVentiv merged wholly into INC Research as surviving corporation, so customer-facing CRO and commercialization service lines (T4) and the operating businesses that produced them (T5) crossed together under a single legal vehicle; the proxy’s commercial-integration risk factor is an execution caution, not a product-without-process structural carve-out. Organization/people (T6) likewise moved with the businesses: the merger agreement fixed a mixed 10-member board, CEO/Executive-Chairman split, headquarters, and Section 5.11 employee-benefit continuity for continuing employees, so no T5-without-T6 mismatch was structured at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: the deal added inVentiv's commercial-services product line to INC Research's business, but the proxy's own risk factors flag that \\\"because INC Research has not historically had a commercial business segment,\\\" the operational capacity to run that commercial line was not coherently present at closing \\u2014 a documented product-vs-process mismatch. This was not contractually absorbed via any transitional-services/operating-substrate agreement (no such mechanism appears; integration was left as an unresolved execution question), so gap_mitigated=no. gap_56=0: the deal moved processes and the people/organization together \\u2014 Section 5.11 built in employee-benefit continuity and service-crediting, management roles (CEO/Executive Chairman split) and the 10-member board were contractually fixed, so operations and the organization running them transferred coherently alongside each other.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a complete merger of inVentiv into INC Research, with inVentiv's commercial services (T4), operations (T5), and employees (T6) transferring entirely to the surviving entity. The merger agreement explicitly provided for employee continuity and benefits, ensuring no structural mismatch between the transferred processes and the organization running them at closing.\"\n\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing inVentiv merged wholly into INC Research as surviving corporation, so customer-facing CRO and commercialization service lines (T4) and the operating businesses that produced them (T5) crossed together under a single legal vehicle; the proxy’s commercial-integration risk factor is an execution caution, not a product-without-process structural carve-out. Organization/people (T6) likewise moved with the businesses: the merger agreement fixed a mixed 10-member board, CEO/Executive-Chairman split, headquarters, and Section 5.11 employee-benefit continuity for continuing employees, so no T5-without-T6 mismatch was structured at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

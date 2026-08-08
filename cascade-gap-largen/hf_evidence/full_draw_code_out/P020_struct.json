@@ -1,0 +1,85 @@
+{
+  "case_id": "P020",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product substrate crossed the boundary while a portion of its producing/delivering substrate did not move coherently with it — \"certain Delivery Systems equipment that had been within the Versum entity and that formed part of Air Products' supply agreements with certain customers was to be transferred to Air Products,\" and Versum \"would need to provide internally or obtain from third parties services it had received from Air Products\" (IT, finance, HR, etc.), a documented product-vs-process mismatch at closing. This gap is contractually absorbed (gap_mitigated=yes) via the Separation Agreement, bidirectional Transition Services Agreements (12–24 months, cost/cost-plus), IP cross-license, standards/name-use licenses, and commercial supply/toll agreements. gap_56=0: the processes moved together with their people/organization — the Materials segment's ~980 employees with its 11 production and 6 R&D sites, DS&S's ~650 employees with three production facilities, ~1,900 total employees, and incumbent leadership (CEO Novo) all transferred alongside the operational sites, so T5 and T6 moved coherently together."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction is a spin-off of Air Products' Electronic Materials business into Versum. The product (T4) and its direct production facilities (T5) transferred together, so gap_45 is 0. However, Versum lacked the corporate administrative and IT processes (T5) previously provided by the parent, creating a gap_56 mismatch where the operational processes were incomplete without the parent's organization. This gap was mitigated by Transition Services Agreements."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice expressly frames shared-substrate division at closing as product crossing without its full producing substrate: core Materials/DS&S products and sites moved to Versum while IT networks/systems, admin processes, certain Delivery Systems equipment re-allocated back to Air Products, and toll-manufacturing/supply dependencies remained with or were supplied by Air Products, bridged only by TSAs and commercial agreements. gap_56=0 because the approximately 1,900 employees, segment operating headcount, production/R&D sites, and incumbent senior leadership (CEO Novo; majority of top leaders from the businesses) transferred with those operations under the Separation and Employee Matters Agreements, so people/organization aligned with the processes that did move."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product substrate crossed the boundary while a portion of its producing/delivering substrate did not move coherently with it \\u2014 \\\"certain Delivery Systems equipment that had been within the Versum entity and that formed part of Air Products' supply agreements with certain customers was to be transferred to Air Products,\\\" and Versum \\\"would need to provide internally or obtain from third parties services it had received from Air Products\\\" (IT, finance, HR, etc.), a documented product-vs-process mismatch at closing. This gap is contractually absorbed (gap_mitigated=yes) via the Separation Agreement, bidirectional Transition Services Agreements (12\\u201324 months, cost/cost-plus), IP cross-license, standards/name-use licenses, and commercial supply/toll agreements. gap_56=0: the processes moved together with their people/organization \\u2014 the Materials segment's ~980 employees with its 11 production and 6 R&D sites, DS&S's ~650 employees with three production facilities, ~1,900 total employees, and incumbent leadership (CEO Novo) all transferred alongside the operational sites, so T5 and T6 moved coherently together.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction is a spin-off of Air Products' Electronic Materials business into Versum. The product (T4) and its direct production facilities (T5) transferred together, so gap_45 is 0. However, Versum lacked the corporate administrative and IT processes (T5) previously provided by the parent, creating a gap_56 mismatch where the operational processes were incomplete without the parent's organization. This gap was mitigated by Transition Services Agreements.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice expressly frames shared-substrate division at closing as product crossing without its full producing substrate: core Materials/DS&S products and sites moved to Versum while IT networks/systems, admin processes, certain Delivery Systems equipment re-allocated back to Air Products, and toll-manufacturing/supply dependencies remained with or were supplied by Air Products, bridged only by TSAs and commercial agreements. gap_56=0 because the approximately 1,900 employees, segment operating headcount, production/R&D sites, and incumbent senior leadership (CEO Novo; majority of top leaders from the businesses) transferred with those operations under the Separation and Employee Matters Agreements, so people/organization aligned with the processes that did move.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

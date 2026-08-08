@@ -1,0 +1,58 @@
+{
+  "case_id": "P191",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture/impairment located; legal-entity merger and rebranding to \"Prysmian Group US\" effective Jan 1, 2022",
+      "rationale": "The only located within-window record is a December 2021 press release describing completed legal-entity merger of General Cable Industries and Prysmian Cables and Systems USA and rebranding to \"Prysmian Group US,\" \"concluding the integration process begun with the 2018 acquisition\" — evidence of integration proceeding, not fracture. No disruption at the product/process interface is documented (p4=0), and no operations-vs-organization fracture is documented; the record instead cites completed integration and 5,800+ retained employees with planned capital investment (p5=0). No divestiture, bankruptcy, dissolution, or impairment specific to the acquired business was located in the ~2021-2023 window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The only realized-outcome record in the ~2021-2023 window is Prysmian’s December 2021 press release announcing the legal-entity merger and rebranding of former General Cable U.S. operations to “Prysmian Group US,” described as concluding the integration begun in 2018, with facility/headcount figures and planned capex and a CEO quote that the combined firm is “stronger than ever.” No product/process misalignment or operations-versus-organization fracture is documented in that disclosure or elsewhere in the slice. Absence of any reported disruption at those interfaces yields p4_pathway = 0 and p5_pathway = 0; no public financial scalar for the acquired business exists in the window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "integration concluded after approximately 3 years",
+      "rationale": "The December 2021 announcement documented completion of legal-entity and branding integration effective January 1, 2022, and described a combined operation with 27 manufacturing facilities, 8 distribution centers, 6 R&D centers, and over 5,800 employees. It reported a complete combined product portfolio and planned plant investments, with no documented product/process disruption or fracture between operations and the organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture/impairment located; legal-entity merger and rebranding to \\\"Prysmian Group US\\\" effective Jan 1, 2022\", \"rationale\": \"The only located within-window record is a December 2021 press release describing completed legal-entity merger of General Cable Industries and Prysmian Cables and Systems USA and rebranding to \\\"Prysmian Group US,\\\" \\\"concluding the integration process begun with the 2018 acquisition\\\" \\u2014 evidence of integration proceeding, not fracture. No disruption at the product/process interface is documented (p4=0), and no operations-vs-organization fracture is documented; the record instead cites completed integration and 5,800+ retained employees with planned capital investment (p5=0). No divestiture, bankruptcy, dissolution, or impairment specific to the acquired business was located in the ~2021-2023 window.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The only realized-outcome record in the ~2021-2023 window is Prysmian’s December 2021 press release announcing the legal-entity merger and rebranding of former General Cable U.S. operations to “Prysmian Group US,” described as concluding the integration begun in 2018, with facility/headcount figures and planned capex and a CEO quote that the combined firm is “stronger than ever.” No product/process misalignment or operations-versus-organization fracture is documented in that disclosure or elsewhere in the slice. Absence of any reported disruption at those interfaces yields p4_pathway = 0 and p5_pathway = 0; no public financial scalar for the acquired business exists in the window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"integration concluded after approximately 3 years\",\n  \"rationale\": \"The December 2021 announcement documented completion of legal-entity and branding integration effective January 1, 2022, and described a combined operation with 27 manufacturing facilities, 8 distribution centers, 6 R&D centers, and over 5,800 employees. It reported a complete combined product portfolio and planned plant investments, with no documented product/process disruption or fracture between operations and the organization.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

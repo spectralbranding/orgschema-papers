@@ -1,0 +1,85 @@
+{
+  "case_id": "P246",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is a whole-company all-cash reverse triangular merger in which Avista's entire business — regulated utility operations, the Alaska subsidiary, and non-utility ventures — crosses into Hydro One's ownership together \"with no carve-out or spin-off of any tier,\" so the customer-facing utility assets (T4) and their operating processes (T5) move as one intact surviving corporation (gap_45=0). Officer and management continuity, a fixed board drawing on incumbent Avista directors, a three-year employee-terms-parity commitment, and headquarters/community/safety ring-fencing show T5 processes and T6 people/organization transferring aligned coherently (gap_56=0). Because product, process, and people were bridged within the merged entity rather than separated, no structural gap exists at closing and gap_mitigated is NA. T1 is coded replace because Avista's controlling intent exits and it becomes an indirect wholly owned subsidiary of Hydro One under a reconstituted board and delisting."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a whole-company cash acquisition where all of Avista's operating segments and subsidiaries would become part of the surviving corporation. The product/asset, process, and people/management tiers were bridged together without separation, meaning no structural gaps (gap_45=0, gap_56=0) were created at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures a whole-company reverse triangular merger in which all Avista operating segments and subsidiaries cross with no carve-out, so the customer-facing utility product (T4) and the generating/transmitting/distributing processes (T5) move together; gap_45 is therefore 0. Officers of Avista immediately before closing become officers of the surviving corporation, with board seats reserved for sitting Avista directors, a three-year employee-terms-parity commitment, and headquarters/service-quality ring-fencing, so T5 and T6 are bridged rather than separated at closing; gap_56 is 0 and gap_mitigated is NA."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is a whole-company all-cash reverse triangular merger in which Avista's entire business \\u2014 regulated utility operations, the Alaska subsidiary, and non-utility ventures \\u2014 crosses into Hydro One's ownership together \\\"with no carve-out or spin-off of any tier,\\\" so the customer-facing utility assets (T4) and their operating processes (T5) move as one intact surviving corporation (gap_45=0). Officer and management continuity, a fixed board drawing on incumbent Avista directors, a three-year employee-terms-parity commitment, and headquarters/community/safety ring-fencing show T5 processes and T6 people/organization transferring aligned coherently (gap_56=0). Because product, process, and people were bridged within the merged entity rather than separated, no structural gap exists at closing and gap_mitigated is NA. T1 is coded replace because Avista's controlling intent exits and it becomes an indirect wholly owned subsidiary of Hydro One under a reconstituted board and delisting.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a whole-company cash acquisition where all of Avista's operating segments and subsidiaries would become part of the surviving corporation. The product/asset, process, and people/management tiers were bridged together without separation, meaning no structural gaps (gap_45=0, gap_56=0) were created at closing.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures a whole-company reverse triangular merger in which all Avista operating segments and subsidiaries cross with no carve-out, so the customer-facing utility product (T4) and the generating/transmitting/distributing processes (T5) move together; gap_45 is therefore 0. Officers of Avista immediately before closing become officers of the surviving corporation, with board seats reserved for sitting Avista directors, a three-year employee-terms-parity commitment, and headquarters/service-quality ring-fencing, so T5 and T6 are bridged rather than separated at closing; gap_56 is 0 and gap_mitigated is NA.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

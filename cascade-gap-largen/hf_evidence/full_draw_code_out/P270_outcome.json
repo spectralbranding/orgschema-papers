@@ -1,0 +1,58 @@
+{
+  "case_id": "P270",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; company retained under same private owners with pre-merger CEO continuing (in-window)",
+      "rationale": "The only in-window realized fact is a January 2022 press item confirming Talbott Roche continued as president/CEO and the company continued operating in payments technology, with no documented product/process misalignment (p4=0) and no documented operations-vs-organization/culture fracture (p5=0). No public record within the window documents divestiture, bankruptcy, dissolution, or leadership disruption. Because the company was deregistered in June 2018, no audited outcome figures exist, but the traceable evidence shows continuity rather than disruption on either interface."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "privately held, no divestiture documented",
+      "rationale": "The slice notes that the company was taken private and deregistered, with no public audited outcome record available for the 3-5 year window. The only in-window evidence is a 2022 press item confirming the CEO remained in place. There is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; continued private operation under same CEO",
+      "rationale": "The slice’s only in-window realized fact is a January 2022 press item confirming the pre-merger CEO still led Blackhawk and that it continued operating in payments technology, with no product/process misalignment described. No public record in the ~2021–2023 window documents operational-versus-organization fracture, divestiture, bankruptcy, or dissolution; later 2025 context (outside window) still shows the same owners holding the firm. Absence of any documented pathway disruption therefore codes p4_pathway and p5_pathway as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; company retained under same private owners with pre-merger CEO continuing (in-window)\", \"rationale\": \"The only in-window realized fact is a January 2022 press item confirming Talbott Roche continued as president/CEO and the company continued operating in payments technology, with no documented product/process misalignment (p4=0) and no documented operations-vs-organization/culture fracture (p5=0). No public record within the window documents divestiture, bankruptcy, dissolution, or leadership disruption. Because the company was deregistered in June 2018, no audited outcome figures exist, but the traceable evidence shows continuity rather than disruption on either interface.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"privately held, no divestiture documented\",\n  \"rationale\": \"The slice notes that the company was taken private and deregistered, with no public audited outcome record available for the 3-5 year window. The only in-window evidence is a 2022 press item confirming the CEO remained in place. There is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; continued private operation under same CEO\",\n  \"rationale\": \"The slice’s only in-window realized fact is a January 2022 press item confirming the pre-merger CEO still led Blackhawk and that it continued operating in payments technology, with no product/process misalignment described. No public record in the ~2021–2023 window documents operational-versus-organization fracture, divestiture, bankruptcy, or dissolution; later 2025 context (outside window) still shows the same owners holding the firm. Absence of any documented pathway disruption therefore codes p4_pathway and p5_pathway as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

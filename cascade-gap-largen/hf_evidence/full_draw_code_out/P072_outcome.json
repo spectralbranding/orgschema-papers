@@ -1,0 +1,58 @@
+{
+  "case_id": "P072",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "retained 25 percent equity-method interest; generated $105 million of commissions and other fees in 2021",
+      "rationale": "The slice documents that the 25 percent equity-method interest was retained and remained productive, with the registrant continuing to earn commissions and fees under fee-for-service agreements. There is no documented impairment, restructuring, or divestiture, indicating an absence of product/process or process/organization disruption."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; 25% interest retained; $105M related-party fees (2021)",
+      "rationale": "The slice documents continued productive alignment at the operating interface: the registrant kept earning commissions under fee-for-service agreements to sell timeshare interests at Elara, generating $105 million in 2021 with outstanding related receivables and no impairment or restructuring disclosed. Equity-method carrying value rose to $59 million, a ~$2 million cash distribution was received, and equity in earnings remained positive, with zero documented fracture between operations and organization or product-process incoherence through the FY2021 window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "25% interest retained; $105 million in 2021 fees",
+      "rationale": "No product/process disruption is documented: the registrant continued marketing, selling, and managing the resort under fee-for-service agreements that generated $105 million in 2021. No process/organization fracture is documented; the relationship remained ongoing, with no disclosed impairment, restructuring, dissolution, buy-out, or divestiture through FY2021."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"retained 25 percent equity-method interest; generated $105 million of commissions and other fees in 2021\",\n  \"rationale\": \"The slice documents that the 25 percent equity-method interest was retained and remained productive, with the registrant continuing to earn commissions and fees under fee-for-service agreements. There is no documented impairment, restructuring, or divestiture, indicating an absence of product/process or process/organization disruption.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; 25% interest retained; $105M related-party fees (2021)\",\n  \"rationale\": \"The slice documents continued productive alignment at the operating interface: the registrant kept earning commissions under fee-for-service agreements to sell timeshare interests at Elara, generating $105 million in 2021 with outstanding related receivables and no impairment or restructuring disclosed. Equity-method carrying value rose to $59 million, a ~$2 million cash distribution was received, and equity in earnings remained positive, with zero documented fracture between operations and organization or product-process incoherence through the FY2021 window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"25% interest retained; $105 million in 2021 fees\",\n  \"rationale\": \"No product/process disruption is documented: the registrant continued marketing, selling, and managing the resort under fee-for-service agreements that generated $105 million in 2021. No process/organization fracture is documented; the relationship remained ongoing, with no disclosed impairment, restructuring, dissolution, buy-out, or divestiture through FY2021.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

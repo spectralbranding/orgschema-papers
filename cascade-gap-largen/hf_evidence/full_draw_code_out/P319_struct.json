@@ -1,0 +1,85 @@
+{
+  "case_id": "P319",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the customer-facing product (homebuilding plus mortgage/title/escrow) and its operating substrate transferred together as a whole-company merger — Merger Sub \"succeeded to all the Company's assets, liabilities and operations\" with \"no disclosed carve-out or transitional-services agreement dividing the operating substrate,\" so product and process moved as one. gap_56=1 because the filing frames expected benefits as depending on applying \"Lennar's homebuilding techniques\" and cost-saving methods to CalAtlantic's operations (T5 re-engineering) while CalAtlantic's senior management was understood to have \"no role\" in the combined company and executive severance was quantified on a termination-at-closing assumption, with only one director joining Lennar's board — processes transfer/re-engineer without the running management/organization aligning alongside. gap_mitigated=no because rank-and-file benefit continuity was guaranteed but no transitional-services or operating agreement was disclosed to absorb the T5/T6 management mismatch."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing, CalAtlantic merged wholly into Lennar’s Merger Sub, which succeeded to all assets, liabilities and operations with no carve-out of product lines or geographies and no TSA dividing the operating substrate, so the customer-facing homebuilding/mortgage/title/escrow product (T4) and the operational processes (T5) crossed together (gap_45=0). Rank-and-file employees continued with contractually guaranteed compensation/benefits continuity through a fixed post-close date as part of the same whole-entity transfer, so processes did not move without the organization that runs them (gap_56=0), even though senior management was structured to exit and only one CalAtlantic director joined Lennar’s board."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Form 8-K states that the surviving subsidiary succeeded to all of CalAtlantic's assets, liabilities, and operations, while the product lines and geographies transferred without a carve-out; thus, the customer-facing products and their operating processes crossed together, supporting gap_45=0. Although CalAtlantic's senior management was not expected to continue, continuing employees received contractual compensation, benefit, and service-credit protections, and the structure contemplated Lennar applying its techniques to the transferred operations under Lennar's control; the slice does not document an unaligned process-organization substrate at closing, supporting gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0 because the customer-facing product (homebuilding plus mortgage/title/escrow) and its operating substrate transferred together as a whole-company merger \\u2014 Merger Sub \\\"succeeded to all the Company's assets, liabilities and operations\\\" with \\\"no disclosed carve-out or transitional-services agreement dividing the operating substrate,\\\" so product and process moved as one. gap_56=1 because the filing frames expected benefits as depending on applying \\\"Lennar's homebuilding techniques\\\" and cost-saving methods to CalAtlantic's operations (T5 re-engineering) while CalAtlantic's senior management was understood to have \\\"no role\\\" in the combined company and executive severance was quantified on a termination-at-closing assumption, with only one director joining Lennar's board \\u2014 processes transfer/re-engineer without the running management/organization aligning alongside. gap_mitigated=no because rank-and-file benefit continuity was guaranteed but no transitional-services or operating agreement was disclosed to absorb the T5/T6 management mismatch.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing, CalAtlantic merged wholly into Lennar’s Merger Sub, which succeeded to all assets, liabilities and operations with no carve-out of product lines or geographies and no TSA dividing the operating substrate, so the customer-facing homebuilding/mortgage/title/escrow product (T4) and the operational processes (T5) crossed together (gap_45=0). Rank-and-file employees continued with contractually guaranteed compensation/benefits continuity through a fixed post-close date as part of the same whole-entity transfer, so processes did not move without the organization that runs them (gap_56=0), even though senior management was structured to exit and only one CalAtlantic director joined Lennar’s board.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The Form 8-K states that the surviving subsidiary succeeded to all of CalAtlantic's assets, liabilities, and operations, while the product lines and geographies transferred without a carve-out; thus, the customer-facing products and their operating processes crossed together, supporting gap_45=0. Although CalAtlantic's senior management was not expected to continue, continuing employees received contractual compensation, benefit, and service-credit protections, and the structure contemplated Lennar applying its techniques to the transferred operations under Lennar's control; the slice does not document an unaligned process-organization substrate at closing, supporting gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

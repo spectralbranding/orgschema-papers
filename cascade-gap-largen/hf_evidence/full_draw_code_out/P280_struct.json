@@ -1,0 +1,85 @@
+{
+  "case_id": "P280",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: the slice states the customer-facing portfolio, legal vehicle, and existing third-party property-management/joint-venture operating arrangements \"crossed the boundary together as a single surviving corporation\" with \"no separation of the product/asset base from the operating entity,\" so T4 and T5 moved together. gap_56=1: at the Effective Time the entire incumbent board and the four most senior named executives departed and were replaced by Merger Sub's designees, with the proxy documenting \"no stated commitment by Parent to retain Forest City's existing senior management, employees, or organization\" — the processes crossed intact while the people/management layer that ran them did not. gap_mitigated=no: the slice documents only double-trigger severance/departures and no transitional-services or operating agreement retaining or allocating the incumbent organizational substrate."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was a whole-company merger where the real estate portfolio (T4) and its operating platform/processes (T5) crossed the boundary together intact, resulting in no gap_45. However, at closing, the entire incumbent board and top executives departed, and the acquirer intended to integrate the assets into its own platform, creating a structural mismatch (gap_56) between the transferred operations and the terminated organizational leadership, with no transitional services agreement documented to mitigate it."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The whole-company merger transferred Forest City's real estate portfolio, operating platform, surviving legal entity, and existing joint-venture and property-management arrangements together, so no product-process gap is documented at closing [SRC: SEC accession 0001193125-18-298438, DEFM14A]. However, all twelve incumbent directors were replaced and the CEO and three other named executives ceased employment, while the acquired platform was framed for integration with Brookfield's existing platform; thus, the processes crossed without the incumbent management layer that had operated them [SRC: SEC accession 0001193125-18-345012, Form 8-K dated December 7, 2018; Exhibit 99.1]. No transitional-services or operating agreement contractually absorbing that people-process mismatch is documented in the slice."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: the slice states the customer-facing portfolio, legal vehicle, and existing third-party property-management/joint-venture operating arrangements \\\"crossed the boundary together as a single surviving corporation\\\" with \\\"no separation of the product/asset base from the operating entity,\\\" so T4 and T5 moved together. gap_56=1: at the Effective Time the entire incumbent board and the four most senior named executives departed and were replaced by Merger Sub's designees, with the proxy documenting \\\"no stated commitment by Parent to retain Forest City's existing senior management, employees, or organization\\\" \\u2014 the processes crossed intact while the people/management layer that ran them did not. gap_mitigated=no: the slice documents only double-trigger severance/departures and no transitional-services or operating agreement retaining or allocating the incumbent organizational substrate.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction was a whole-company merger where the real estate portfolio (T4) and its operating platform/processes (T5) crossed the boundary together intact, resulting in no gap_45. However, at closing, the entire incumbent board and top executives departed, and the acquirer intended to integrate the assets into its own platform, creating a structural mismatch (gap_56) between the transferred operations and the terminated organizational leadership, with no transitional services agreement documented to mitigate it.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The whole-company merger transferred Forest City's real estate portfolio, operating platform, surviving legal entity, and existing joint-venture and property-management arrangements together, so no product-process gap is documented at closing [SRC: SEC accession 0001193125-18-298438, DEFM14A]. However, all twelve incumbent directors were replaced and the CEO and three other named executives ceased employment, while the acquired platform was framed for integration with Brookfield's existing platform; thus, the processes crossed without the incumbent management layer that had operated them [SRC: SEC accession 0001193125-18-345012, Form 8-K dated December 7, 2018; Exhibit 99.1]. No transitional-services or operating agreement contractually absorbing that people-process mismatch is documented in the slice.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

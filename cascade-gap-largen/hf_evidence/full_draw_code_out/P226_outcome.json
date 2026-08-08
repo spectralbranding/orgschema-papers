@@ -1,0 +1,58 @@
+{
+  "case_id": "P226",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained; Freight Segment net sales grew $5,239M (2021) to $6,012M (2022); no goodwill impairment (total goodwill ~$8,508M at 12/31/2022)",
+      "rationale": "On the product/process interface (p4), the slice documents the former GE Transportation business integrated into and reported within Wabtec's Freight Segment with growing net sales ($5,239M in 2021 to $6,012M in 2022) and no impairment of associated goodwill through the FY2022 test — no product-line/operations incoherence is documented. On the process/organization interface (p5), the \"Integration 2.0\" initiative (footprint consolidation, headcount reduction, distribution restructuring) with ~$46M of charges in 2022 is a planned, on-track synergy program, not a documented fracture between operations and the organization; the former GE Transportation CEO becoming Wabtec's CEO in July 2019 indicates leadership continuity rather than organizational breakdown. No documented merger-of-equals-turned-dominance archetype incoherence (t1) and no documented business-model incompatibility (t2) appear in the slice."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Freight Segment net sales were $6,012 million in 2022",
+      "rationale": "The provided slice does not document any disruption or incoherence at the product/process interface, resulting in a 0 for p4_pathway. For p5_pathway, while Wabtec announced an 'Integration 2.0' restructuring initiative in 2022 involving headcount reductions and site consolidations to achieve synergies, there is no evidence that this represented a fracture or failure of operations breaking against the organization."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['Freight Segment net sales rose from $5.239 billion in 2021 to $6.012 billion in 2022']}",
+      "rationale": "{'type': 'string', 'enum': [\"No realized inability to align GE Transportation's products with Wabtec's operating processes is documented; instead, Freight Segment sales increased and goodwill testing found no impairment. A process/organization disruption is documented through Integration 2.0, which involved operating-footprint consolidation, headcount reductions, manufacturing and distribution-channel restructuring, and approximately $46 million of charges incurred in 2022, primarily for employee-related costs from site consolidations and distribution restructuring.\"]}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; assets retained; Freight Segment net sales grew $5,239M (2021) to $6,012M (2022); no goodwill impairment (total goodwill ~$8,508M at 12/31/2022)\", \"rationale\": \"On the product/process interface (p4), the slice documents the former GE Transportation business integrated into and reported within Wabtec's Freight Segment with growing net sales ($5,239M in 2021 to $6,012M in 2022) and no impairment of associated goodwill through the FY2022 test \\u2014 no product-line/operations incoherence is documented. On the process/organization interface (p5), the \\\"Integration 2.0\\\" initiative (footprint consolidation, headcount reduction, distribution restructuring) with ~$46M of charges in 2022 is a planned, on-track synergy program, not a documented fracture between operations and the organization; the former GE Transportation CEO becoming Wabtec's CEO in July 2019 indicates leadership continuity rather than organizational breakdown. No documented merger-of-equals-turned-dominance archetype incoherence (t1) and no documented business-model incompatibility (t2) appear in the slice.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Freight Segment net sales were $6,012 million in 2022\",\n  \"rationale\": \"The provided slice does not document any disruption or incoherence at the product/process interface, resulting in a 0 for p4_pathway. For p5_pathway, while Wabtec announced an 'Integration 2.0' restructuring initiative in 2022 involving headcount reductions and site consolidations to achieve synergies, there is no evidence that this represented a fracture or failure of operations breaking against the organization.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"1\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"Freight Segment net sales rose from $5.239 billion in 2021 to $6.012 billion in 2022\"\n    ]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"No realized inability to align GE Transportation's products with Wabtec's operating processes is documented; instead, Freight Segment sales increased and goodwill testing found no impairment. A process/organization disruption is documented through Integration 2.0, which involved operating-footprint consolidation, headcount reductions, manufacturing and distribution-channel restructuring, and approximately $46 million of charges incurred in 2022, primarily for employee-related costs from site consolidations and distribution restructuring.\"\n    ]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

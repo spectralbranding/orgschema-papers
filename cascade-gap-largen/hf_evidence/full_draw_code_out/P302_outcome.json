@@ -1,0 +1,58 @@
+{
+  "case_id": "P302",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "fully integrated; no distinct-entity record — AV Homes named once (tax footnote) in acquirer's FY2021-2022 10-Ks, no separate segment or scalar",
+      "rationale": "The slice documents only that AV Homes ceased separate reporting and was absorbed into Taylor Morrison's geography-based segment structure, with the acquired business referenced solely in a Section 382 tax footnote and never isolated by any operating or financial metric. Because no realized-outcome evidence describes disruption at the product/process interface (p4) or fracture at the process/organization interface (p5), and the slice explicitly states no 3-5-year trajectory for the acquired business exists in the filings reviewed, neither pathway can be affirmatively coded 1; however, the complete absence of any post-deal integration detail also precludes coding a clean 0 with confidence, so both are uncertain. Likewise, nothing in the slice speaks to the controlling-intent archetype or business-model reconciliation, leaving t1 and t2 uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided evidence slice indicates that AV Homes was fully absorbed into Taylor Morrison's geographic segments, with no standalone reporting or metrics disclosed in the 3-5 year outcome window. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice shows that across the ~2021-2023 window Taylor Morrison reported only by geography and consolidated totals, with AV Homes named solely in a tax footnote and never isolated by any operating or financial figure; no product/process misalignment is documented. Likewise, no fracture at the process/organization interface is recorded—only that AV Homes ceased separate reporting after FY2017 and its operations became part of the acquirer without any disclosed integration disruption."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"fully integrated; no distinct-entity record \\u2014 AV Homes named once (tax footnote) in acquirer's FY2021-2022 10-Ks, no separate segment or scalar\", \"rationale\": \"The slice documents only that AV Homes ceased separate reporting and was absorbed into Taylor Morrison's geography-based segment structure, with the acquired business referenced solely in a Section 382 tax footnote and never isolated by any operating or financial metric. Because no realized-outcome evidence describes disruption at the product/process interface (p4) or fracture at the process/organization interface (p5), and the slice explicitly states no 3-5-year trajectory for the acquired business exists in the filings reviewed, neither pathway can be affirmatively coded 1; however, the complete absence of any post-deal integration detail also precludes coding a clean 0 with confidence, so both are uncertain. Likewise, nothing in the slice speaks to the controlling-intent archetype or business-model reconciliation, leaving t1 and t2 uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided evidence slice indicates that AV Homes was fully absorbed into Taylor Morrison's geographic segments, with no standalone reporting or metrics disclosed in the 3-5 year outcome window. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice shows that across the ~2021-2023 window Taylor Morrison reported only by geography and consolidated totals, with AV Homes named solely in a tax footnote and never isolated by any operating or financial figure; no product/process misalignment is documented. Likewise, no fracture at the process/organization interface is recorded—only that AV Homes ceased separate reporting after FY2017 and its operations became part of the acquirer without any disclosed integration disruption.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

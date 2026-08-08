@@ -1,0 +1,58 @@
+{
+  "case_id": "P285",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered via Form 15-12G within weeks of June 2017 closing; fully consolidated into surviving registrant (single-segment, no separate EVB disclosure)",
+      "rationale": "The slice documents that EVB was absorbed via whole-company merger and the surviving registrant (Southern National Bancorp / Primis) reports on a consolidated, single-segment basis with \"no separate disclosure of the formerly acquired business's financial or operating trajectory,\" and the only surviving \"EVB\" reference is a financing trust vehicle. No documented product/process incoherence is present, so p4_pathway = 0. No documented operations-versus-organization fracture (culture/management/personnel integration breakdown) is present — indeed no distinct post-2017 trajectory for branches, customers, or personnel was located — so p5_pathway = 0. The slice contains no evidence bearing on the controlling-intent archetype or on business-model reconcilability, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "deregistered and consolidated with no separate segment disclosure",
+      "rationale": "The evidence slice indicates that Eastern Virginia Bankshares was absorbed and deregistered, with the surviving entity reporting on a consolidated basis. There is no documented evidence of disruption at the product/process interface or the process/organization interface."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The surviving registrant's fiscal-2020 Form 10-K reported consolidated operations without a separate segment, line of business, or financial disclosure for the former EVB operations. The slice also states that no traceable public 3–5-year outcome record specific to the acquired business exists; therefore, no realized product/process disruption or process/organization fracture is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered via Form 15-12G within weeks of June 2017 closing; fully consolidated into surviving registrant (single-segment, no separate EVB disclosure)\", \"rationale\": \"The slice documents that EVB was absorbed via whole-company merger and the surviving registrant (Southern National Bancorp / Primis) reports on a consolidated, single-segment basis with \\\"no separate disclosure of the formerly acquired business's financial or operating trajectory,\\\" and the only surviving \\\"EVB\\\" reference is a financing trust vehicle. No documented product/process incoherence is present, so p4_pathway = 0. No documented operations-versus-organization fracture (culture/management/personnel integration breakdown) is present \\u2014 indeed no distinct post-2017 trajectory for branches, customers, or personnel was located \\u2014 so p5_pathway = 0. The slice contains no evidence bearing on the controlling-intent archetype or on business-model reconcilability, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"deregistered and consolidated with no separate segment disclosure\",\n  \"rationale\": \"The evidence slice indicates that Eastern Virginia Bankshares was absorbed and deregistered, with the surviving entity reporting on a consolidated basis. There is no documented evidence of disruption at the product/process interface or the process/organization interface.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The surviving registrant's fiscal-2020 Form 10-K reported consolidated operations without a separate segment, line of business, or financial disclosure for the former EVB operations. The slice also states that no traceable public 3–5-year outcome record specific to the acquired business exists; therefore, no realized product/process disruption or process/organization fracture is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

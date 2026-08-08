@@ -1,0 +1,85 @@
+{
+  "case_id": "P332",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a whole-company, all-cash going-private reverse triangular merger: the entire corporate entity survived intact as a wholly-owned subsidiary of Parent (\"the entire corporate entity, not a carved-out business unit, was the transaction's subject\"), so product (T4), operational processes (T5), and organization/people (T6) all crossed the ownership boundary together as an intact going concern — no product-vs-process carve-out (gap_45=0). The people/organization tier moved coherently with operations, reinforced by 18-month compensation/benefit continuity and six-year D&O indemnification carried across closing, so no process-vs-organization mismatch (gap_56=0). Owner intent is coded replace because a financial sponsor (Pamplona) installed new controlling ownership via newly formed Parent/Merger Sub and public equity ownership was fully cashed out at $88.10/share."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is a whole-company reverse triangular merger in which Merger Sub merged into PAREXEL and PAREXEL survived as a wholly-owned subsidiary of Parent, so the entire corporate entity—not a carved-out unit—was the subject; product/services and the operational processes that produce them therefore crossed together with no structural product-vs-process mismatch at closing (gap_45=0). Organization/people likewise transferred with the surviving entity, reinforced by contractual 18-month employee compensation/benefit continuity and severance-guideline assumption plus six-year D&O indemnification, so processes and organization were aligned at closing (gap_56=0); no transitional-services gap-mitigation instrument was required or documented."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire corporate entity, rather than a carved-out business unit, transferred to Parent, with PAREXEL surviving as its wholly owned subsidiary; the slice describes PAREXEL's clinical-research, consulting, communications, and technology offerings together with its global operating footprint, so no product-versus-process separation is documented at closing. The whole-company transfer also carried the existing organization across the boundary, reinforced by contractual 18-month compensation, benefits, and severance continuity for continuing employees; therefore, no process-versus-organization mismatch is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a whole-company, all-cash going-private reverse triangular merger: the entire corporate entity survived intact as a wholly-owned subsidiary of Parent (\\\"the entire corporate entity, not a carved-out business unit, was the transaction's subject\\\"), so product (T4), operational processes (T5), and organization/people (T6) all crossed the ownership boundary together as an intact going concern \\u2014 no product-vs-process carve-out (gap_45=0). The people/organization tier moved coherently with operations, reinforced by 18-month compensation/benefit continuity and six-year D&O indemnification carried across closing, so no process-vs-organization mismatch (gap_56=0). Owner intent is coded replace because a financial sponsor (Pamplona) installed new controlling ownership via newly formed Parent/Merger Sub and public equity ownership was fully cashed out at $88.10/share.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal is a whole-company reverse triangular merger in which Merger Sub merged into PAREXEL and PAREXEL survived as a wholly-owned subsidiary of Parent, so the entire corporate entity—not a carved-out unit—was the subject; product/services and the operational processes that produce them therefore crossed together with no structural product-vs-process mismatch at closing (gap_45=0). Organization/people likewise transferred with the surviving entity, reinforced by contractual 18-month employee compensation/benefit continuity and severance-guideline assumption plus six-year D&O indemnification, so processes and organization were aligned at closing (gap_56=0); no transitional-services gap-mitigation instrument was required or documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The entire corporate entity, rather than a carved-out business unit, transferred to Parent, with PAREXEL surviving as its wholly owned subsidiary; the slice describes PAREXEL's clinical-research, consulting, communications, and technology offerings together with its global operating footprint, so no product-versus-process separation is documented at closing. The whole-company transfer also carried the existing organization across the boundary, reinforced by contractual 18-month compensation, benefits, and severance continuity for continuing employees; therefore, no process-versus-organization mismatch is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

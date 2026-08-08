@@ -1,0 +1,86 @@
+ 
+ 8-K
+ 1
+ d430526d8k.htm
+ FORM 8-K
+
+ Form 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 
+ FORM 8-K
+ 
+ CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of
+1934 Date of report (Date of earliest event reported): October 19, 2012 
+ 
+ Nationstar Mortgage Holdings Inc. (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 001-35449 
+ 
+ 45-2156869 
+ 
+ (State or other jurisdiction of 
+ incorporation or organization) 
+ 
+ (Commission File Number) 
+ 
+ (I.R.S. Employer Identification No.) 
+ 350 Highland Drive Lewisville, Texas 75067 (469) 549-2000 
+ (Address, including zip code, and telephone number, including area code, of principal executive offices) 
+ Check the appropriate box below if the Form 8-K is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions: 
+
+ &#168; 
+ Written communications pursuant to Rule 425 under the Securities Act 
+
+ &#168; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. On October 19, 2012, a bankruptcy-remote special purpose subsidiary of Nationstar Mortgage LLC (the &#147;Company&#148;) amended and restated a $600,000,000 committed revolving advance financing
+facility with Barclays Bank PLC (the &#147;Barclays Agency Advance Facility&#148;) secured by receivables representing the right to be reimbursed by the Federal Home Loan Mortgage Corporation or Federal National Mortgage Association, in each case
+subject to the consent of the related agency (the &#147;Agency Receivables&#148;), for (i) advances made or acquired by the Company of delinquent principal and interest and tax and insurance escrow payments when the borrower on the underlying
+mortgage loan has not made such payments and (ii) advances made or acquired by the Company of fees, costs and expenses to enforce remedies with respect to defaulted mortgage loans and to foreclose on, manage and liquidate the related properties
+securing such mortgage loans, with a twelve-month revolving period and a stated maturity date on the date that is twelve months following the initial funding. Interest on the variable funding notes issued under the Barclays Agency Advance Facility will bear interest at a cost of funds rate (in the case of amounts funded through the issuance of commercial paper)
+or LIBOR (in the case of amounts funded other than through the issuance of commercial paper) plus certain specified margins. In addition, the Company will pay certain fees pursuant to the Barclays Agency Advance Facility as specified therein.
+ The Barclays Agency Advance Facility is non-recourse to the Company and is structured as an issuance of asset-backed notes
+under which the Company sells, assigns and transfers its right, title and interest in and to the applicable Agency Receivables to a newly-formed, bankruptcy-remote, special purpose limited liability company formed for the purpose of entering into
+the transactions contemplated by the Barclays Agency Advance Facility; such limited liability company sells, assigns and transfers its right, title and interest in and to such Agency Receivables to a bankruptcy-remote Delaware statutory trust (the
+&#147;Advance Facility Issuer&#148;) and such Advance Facility Issuer enters into an indenture (the &#147;Advance Facility Indenture&#148;) with an indenture trustee pursuant to which it issues variable funding notes to one or more financial
+institutions or an asset-backed commercial paper conduit administered by such financial institutions secured by a pledge of its right, title and interest in and to such Agency Receivables. 
+ The funding availability under the Barclays Agency Advance Facility will be determined from time to time based on a borrowing base
+computation pursuant to which the outstanding unreimbursed balance of each Agency Receivable will be multiplied by discount factors applicable to such type. These discount factors are subject to reduction based on the characteristics of the related
+Agency Receivables or the mortgage loans to which they relate and various Agency Receivable performance metrics. The borrowing base for the Barclays Agency Advance Facility is also derived, in part, based on certain concentration limits applicable
+to the relevant Agency Receivables. The Advance Facility Indenture contains customary representations and warranties, as well
+as affirmative and negative covenants. Affirmative covenants include, among others, financial and other reporting requirements, provision of notices of material events, maintenance of existence, maintenance of books and records, compliance with
+laws, compliance with covenants under the designated servicing agreements and maintaining certain servicing standards with respect to the Agency Receivables and the related mortgage loans. Negative covenants include, among others, limitations on
+amendments to the designated servicing agreements, limitations on netting or offsets with respect to the collections under the designated servicing agreements and limitations on amendments to the seller&#146;s procedures and methodology for
+reimbursing the Agency Receivables or determining that Agency Receivables have become non-recoverable. The Barclays Agency
+Advance Facility includes early amortization events, the effect of which are to terminate the revolving period thereunder, in respect of financial tests concerning (i) the Company&#146;s ratio of Total Indebtedness to Tangible Net Worth (each
+as defined in the Advance Facility Indenture); (ii) the Company&#146;s minimum Tangible Net Worth (as defined in the Advance Facility Indenture) and (iii) the Company&#146;s minimum Liquidity (as defined in the Advance Facility Indenture).
+The Advance Facility Indenture contains customary events of default, including, among others, non-payment of principal, interest or other amounts when due (subject to a grace period for payment of interest and certain other amounts), inaccuracy of
+representations and warranties, violation of covenants and cross defaults with respect to certain other indebtedness, bankruptcy, insolvency or inability to pay debts, certain undischarged judgments, the Advance Facility Issuer becoming subject to
+registration as an &#147;investment company&#148; within the meaning of the Investment Company Act of 1940, as amended, and the occurrence of a borrowing base deficiency. Upon the occurrence and during the continuance of an event of default under
+the Advance Facility Indenture the requisite percentage of the related noteholders may declare the notes and all other obligations of the Advance Facility Issuer thereunder immediately due and payable and may terminate the commitments. A bankruptcy
+event of default causes such obligations automatically to become immediately due and payable and the commitments automatically to terminate. 
+
+ SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Nationstar Mortgage Holdings Inc. 
+
+ Date: October 25, 2012 
+
+ By: 
+ 
+ /s/ David Hisey 
+
+ David Hisey Executive Vice
+President and Chief Financial Officer 
+

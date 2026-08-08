@@ -1,0 +1,58 @@
+{
+  "case_id": "P338",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "systems integration completed in 2018; no goodwill impairment (Oct 2020 test); no separate performance line retained",
+      "rationale": "The slice documents that \"we completed systems integration for the Capital Bank transaction in 2018\" and that balance-sheet/operating impact was folded smoothly into consolidated results, with no documented product/process incoherence realized over time (p4=0). No process/organization fracture is documented: the former CEO R. Eugene Taylor continued board service and the 2020 segment reorganization is explicitly attributed to First Horizon's broader restructuring \"rather than to the Capital Bank Financial transaction specifically\" (p5=0). No documented archetype incoherence or business-model incompatibility appears; the goodwill test \"did not indicate impairment in any of FHN's reporting units,\" and no adverse integration events are recorded. Absence of documented disruption is coded 0 per convention."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; systems integration completed 2018; no separate scalar",
+      "rationale": "The FY2020 10-K states systems integration for the Capital Bank transaction was completed in 2018 as a discrete dated event, with no documented product/process misalignment or operations incoherence thereafter, supporting p4_pathway=0. No fracture at the process/organization interface is documented: the former Capital Bank CEO continued on First Horizon's board into the outcome window under a retired designation, the 2020 segment reorganization is attributed to broader First Horizon restructuring rather than the acquired business, and the October 2020 goodwill test found no impairment in any reporting unit, supporting p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No goodwill impairment in any reporting unit as of October 1, 2020",
+      "rationale": "First Horizon reported that systems integration for the Capital Bank transaction was completed in 2018, with no documented product/process disruption. The FY2020 filing also documents no Capital Bank-specific operational or organizational fracture; the 2020 management restructuring was attributed to a broader First Horizon reorganization rather than the acquired business."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"systems integration completed in 2018; no goodwill impairment (Oct 2020 test); no separate performance line retained\", \"rationale\": \"The slice documents that \\\"we completed systems integration for the Capital Bank transaction in 2018\\\" and that balance-sheet/operating impact was folded smoothly into consolidated results, with no documented product/process incoherence realized over time (p4=0). No process/organization fracture is documented: the former CEO R. Eugene Taylor continued board service and the 2020 segment reorganization is explicitly attributed to First Horizon's broader restructuring \\\"rather than to the Capital Bank Financial transaction specifically\\\" (p5=0). No documented archetype incoherence or business-model incompatibility appears; the goodwill test \\\"did not indicate impairment in any of FHN's reporting units,\\\" and no adverse integration events are recorded. Absence of documented disruption is coded 0 per convention.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment; systems integration completed 2018; no separate scalar\",\n  \"rationale\": \"The FY2020 10-K states systems integration for the Capital Bank transaction was completed in 2018 as a discrete dated event, with no documented product/process misalignment or operations incoherence thereafter, supporting p4_pathway=0. No fracture at the process/organization interface is documented: the former Capital Bank CEO continued on First Horizon's board into the outcome window under a retired designation, the 2020 segment reorganization is attributed to broader First Horizon restructuring rather than the acquired business, and the October 2020 goodwill test found no impairment in any reporting unit, supporting p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"No goodwill impairment in any reporting unit as of October 1, 2020\",\n  \"rationale\": \"First Horizon reported that systems integration for the Capital Bank transaction was completed in 2018, with no documented product/process disruption. The FY2020 filing also documents no Capital Bank-specific operational or organizational fracture; the 2020 management restructuring was attributed to a broader First Horizon reorganization rather than the acquired business.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

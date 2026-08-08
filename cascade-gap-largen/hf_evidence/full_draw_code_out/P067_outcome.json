@@ -1,0 +1,58 @@
+{
+  "case_id": "P067",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1,180.4 million FY2014 net loss",
+      "rationale": "The evidence indicates that the SMP facility was in the initial stages of production and had not yet reached full commercial capabilities, but it does not document any specific product/process incoherence or disruption (p4_pathway = 0). Furthermore, there is no documented evidence of process/organization fracture, management clashes, or cultural incompatibility over the outcome window (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy (Apr 2016); $1.18bn FY2014 net loss",
+      "rationale": "The slice records that the SMP Ulsan plant reached completion but only early-stage production without full commercial capability and without SSL offtake, plus later registrant-level events (Pasadena/Kuching materials restructuring and April 2016 Chapter 11). None of these lines document product/process interface incoherence (p4) or operations-vs-organization/culture fracture (p5) at the JV; those pathways are simply not evidenced, so both code 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$1,180.4 million FY2014 net loss attributable to SunEdison stockholders'}",
+      "rationale": "{'type': 'string', 'enum': 'The Ulsan facility was completed but remained in initial production, had not reached full commercial capability, and had not begun supplying the affiliated buyer; these facts do not specifically document product/process-interface incoherence, so p4 is coded 0. The later closure and asset sale concerned SunEdison’s separate Pasadena and Kuching operations, while the slice documents no breakdown between SMP’s operations and its people, management, or culture; therefore p5 is coded 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1,180.4 million FY2014 net loss\",\n  \"rationale\": \"The evidence indicates that the SMP facility was in the initial stages of production and had not yet reached full commercial capabilities, but it does not document any specific product/process incoherence or disruption (p4_pathway = 0). Furthermore, there is no documented evidence of process/organization fracture, management clashes, or cultural incompatibility over the outcome window (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 bankruptcy (Apr 2016); $1.18bn FY2014 net loss\",\n  \"rationale\": \"The slice records that the SMP Ulsan plant reached completion but only early-stage production without full commercial capability and without SSL offtake, plus later registrant-level events (Pasadena/Kuching materials restructuring and April 2016 Chapter 11). None of these lines document product/process interface incoherence (p4) or operations-vs-organization/culture fracture (p5) at the JV; those pathways are simply not evidenced, so both code 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$1,180.4 million FY2014 net loss attributable to SunEdison stockholders\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The Ulsan facility was completed but remained in initial production, had not reached full commercial capability, and had not begun supplying the affiliated buyer; these facts do not specifically document product/process-interface incoherence, so p4 is coded 0. The later closure and asset sale concerned SunEdison’s separate Pasadena and Kuching operations, while the slice documents no breakdown between SMP’s operations and its people, management, or culture; therefore p5 is coded 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

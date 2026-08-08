@@ -1,0 +1,85 @@
+{
+  "case_id": "P092",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a reverse-triangular merger acquiring the entire DelStar corporate group as a going concern, so the customer-facing product lines (DELSTAR, NALTEX, DELNET, etc.), the manufacturing processes, and the workforce/management \"transferred together inside one going-concern vehicle,\" yielding no product-vs-process mismatch (gap_45=0). Because \"the merger transferred the DelStar legal entities as a whole, the workforce and management running those operations moved with the vehicle,\" the processes and the people running them moved coherently together (gap_56=0). The acquirer's controlling intent persists (continue) with the business placed as a new Filtration segment; no Tier-1 fusion is documented. No transition-services agreement was needed since no gap exists (gap_mitigated=NA)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that DelStar was acquired as an operating going concern via a reverse-triangular merger. The customer-facing products, manufacturing processes, and the workforce and management running them all transferred together inside one going-concern vehicle, resulting in no structural gaps between T4/T5 or T5/T6."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that DelStar’s customer-facing product lines and manufacturing processes transferred together inside one going-concern vehicle, so no product-process gap is documented at closing. It also states that the workforce and management running those operations transferred with the processes, so no process-organization gap is documented. [SRC: SEC accession 0001000623-13-000124, Form 8-K Item 2.01] [SRC: SEC accession 0001000623-14-000035, Form 10-K FY2013]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a reverse-triangular merger acquiring the entire DelStar corporate group as a going concern, so the customer-facing product lines (DELSTAR, NALTEX, DELNET, etc.), the manufacturing processes, and the workforce/management \\\"transferred together inside one going-concern vehicle,\\\" yielding no product-vs-process mismatch (gap_45=0). Because \\\"the merger transferred the DelStar legal entities as a whole, the workforce and management running those operations moved with the vehicle,\\\" the processes and the people running them moved coherently together (gap_56=0). The acquirer's controlling intent persists (continue) with the business placed as a new Filtration segment; no Tier-1 fusion is documented. No transition-services agreement was needed since no gap exists (gap_mitigated=NA).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that DelStar was acquired as an operating going concern via a reverse-triangular merger. The customer-facing products, manufacturing processes, and the workforce and management running them all transferred together inside one going-concern vehicle, resulting in no structural gaps between T4/T5 or T5/T6.\"\n}\n}\n",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that DelStar’s customer-facing product lines and manufacturing processes transferred together inside one going-concern vehicle, so no product-process gap is documented at closing. It also states that the workforce and management running those operations transferred with the processes, so no process-organization gap is documented. [SRC: SEC accession 0001000623-13-000124, Form 8-K Item 2.01] [SRC: SEC accession 0001000623-14-000035, Form 10-K FY2013]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

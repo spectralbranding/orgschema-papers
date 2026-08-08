@@ -1,0 +1,85 @@
+{
+  "case_id": "P074",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the assets that crossed the ownership boundary (Wells Fargo Center, San Diego Tech Center, plus development rights and land parcel) were sold whole into dedicated buying vehicles (BCSP Denver/SDTC Property LLC); the Company remained the in-house owner/operator only for the retained properties, so no product transferred stripped of its process — sold assets and their operations exited together. gap_56=0: no operational processes were re-engineered or moved to a counterparty at closing; the Company \"remained the operator\" with in-house property management, marketing, leasing and financing, and \"no transfer of the Company's management organization to a counterparty is described,\" so T5 and T6 did not separate. Note T2 was corrected to a valid label (\"continue\") reflecting the persisting operating relationship; the substrate that stayed was governed by a three-year marketing lockout and joint-marketing obligation rather than any transferred-but-orphaned process."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction involved the transfer of an 80% joint venture interest from Charter Hall Office REIT to Beacon, along with the sale of specific properties (T4) out of the structure. The Company retained its 20% interest and continued as the operator (T5/T6) for the remaining properties. There is no documented structural mismatch at closing where products transferred without their corresponding processes or where processes transferred without their corresponding organization."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The existing joint venture sold two properties and related development rights to Beacon affiliates, while three properties remained in the newly documented joint venture (SEC accession 0001204560-12-000018, Exhibit 99.1). The slice states that MPG remained the in-house operator and that no operating processes or management organization were reassigned to the counterparty, documenting a product-versus-process gap at closing but no process-versus-organization separation (SEC accession 0001204560-12-000018, Exhibit 99.1 and signature block; 0001204560-11-000089, Item 1.01). The lockout and joint-marketing provisions did not constitute a transitional-services or operating arrangement allocating the operational processes associated with the sold assets."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"continue\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the assets that crossed the ownership boundary (Wells Fargo Center, San Diego Tech Center, plus development rights and land parcel) were sold whole into dedicated buying vehicles (BCSP Denver/SDTC Property LLC); the Company remained the in-house owner/operator only for the retained properties, so no product transferred stripped of its process \\u2014 sold assets and their operations exited together. gap_56=0: no operational processes were re-engineered or moved to a counterparty at closing; the Company \\\"remained the operator\\\" with in-house property management, marketing, leasing and financing, and \\\"no transfer of the Company's management organization to a counterparty is described,\\\" so T5 and T6 did not separate. Note T2 was corrected to a valid label (\\\"continue\\\") reflecting the persisting operating relationship; the substrate that stayed was governed by a three-year marketing lockout and joint-marketing obligation rather than any transferred-but-orphaned process.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction involved the transfer of an 80% joint venture interest from Charter Hall Office REIT to Beacon, along with the sale of specific properties (T4) out of the structure. The Company retained its 20% interest and continued as the operator (T5/T6) for the remaining properties. There is no documented structural mismatch at closing where products transferred without their corresponding processes or where processes transferred without their corresponding organization.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The existing joint venture sold two properties and related development rights to Beacon affiliates, while three properties remained in the newly documented joint venture (SEC accession 0001204560-12-000018, Exhibit 99.1). The slice states that MPG remained the in-house operator and that no operating processes or management organization were reassigned to the counterparty, documenting a product-versus-process gap at closing but no process-versus-organization separation (SEC accession 0001204560-12-000018, Exhibit 99.1 and signature block; 0001204560-11-000089, Item 1.01). The lockout and joint-marketing provisions did not constitute a transitional-services or operating arrangement allocating the operational processes associated with the sold assets.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "uncertain",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

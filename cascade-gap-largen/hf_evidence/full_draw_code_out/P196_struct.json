@@ -1,0 +1,85 @@
+{
+  "case_id": "P196",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal acquired Rowan's entire ordinary share capital and thereby its whole consolidated business (product lines, operating processes, workforce, and the ARO JV) into the Ensco group, with the filing explicitly stating no carve-out of product, process, or workforce — so the customer-facing fleet/product moved together with its operating processes (gap_45=0). Likewise the operations transferred together with the organization and people: both companies combined whole with negotiated board representation (six Ensco/five Rowan designees) and a blended executive team (Burke as CEO, Trowell as Executive Chairman), so processes and the people/culture running them moved coherently together (gap_56=0). T1 is imprint-share given co-present leadership from both principals and roughly 61%/39% ownership split, and collapse_state is none as no Tier-1 fusion with a natural person or other tier is documented."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a combination of two entire publicly traded companies (Ensco and Rowan) via a scheme of arrangement. The slice explicitly states that Rowan's whole business, including products, processes, and workforce, was carried into the combined entity without any carve-outs, meaning there were no structural gaps between T4/T5 or T5/T6 at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction acquired Rowan’s entire ordinary share capital and carried its consolidated businesses, including ARO, into the Ensco group; the filing expressly describes no carve-out of Rowan’s product lines, operating processes, or workforce. Thus, the customer-facing drilling businesses and their operating processes moved together, supporting gap_45=0. The workforce and leadership were also included, with an 11-member board split between six Ensco and five Rowan designees and senior management roles assigned to executives from both companies, supporting gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal acquired Rowan's entire ordinary share capital and thereby its whole consolidated business (product lines, operating processes, workforce, and the ARO JV) into the Ensco group, with the filing explicitly stating no carve-out of product, process, or workforce \\u2014 so the customer-facing fleet/product moved together with its operating processes (gap_45=0). Likewise the operations transferred together with the organization and people: both companies combined whole with negotiated board representation (six Ensco/five Rowan designees) and a blended executive team (Burke as CEO, Trowell as Executive Chairman), so processes and the people/culture running them moved coherently together (gap_56=0). T1 is imprint-share given co-present leadership from both principals and roughly 61%/39% ownership split, and collapse_state is none as no Tier-1 fusion with a natural person or other tier is documented.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a combination of two entire publicly traded companies (Ensco and Rowan) via a scheme of arrangement. The slice explicitly states that Rowan's whole business, including products, processes, and workforce, was carried into the combined entity without any carve-outs, meaning there were no structural gaps between T4/T5 or T5/T6 at closing.\"\n\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction acquired Rowan’s entire ordinary share capital and carried its consolidated businesses, including ARO, into the Ensco group; the filing expressly describes no carve-out of Rowan’s product lines, operating processes, or workforce. Thus, the customer-facing drilling businesses and their operating processes moved together, supporting gap_45=0. The workforce and leadership were also included, with an 11-member board split between six Ensco and five Rowan designees and senior management roles assigned to executives from both companies, supporting gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

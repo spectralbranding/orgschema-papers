@@ -1,0 +1,58 @@
+{
+  "case_id": "P041",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income rising each year from $109.8 million (2014) to $172.2 million (2018)",
+      "rationale": "The slice documents a successful, continuous operation with net income rising monotonically from 2014 to 2018. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway), as the company maintained its three divisions and reported no goodwill impairment or divestitures."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income rose $109.8M (2014) to $172.2M (2018); no divestiture",
+      "rationale": "The FY2018 10-K record shows the separated entity continued as one regulated natural-gas distribution segment across three divisions with ~2.2M customers and monotonically rising net income, with no product/process misalignment or operational incoherence documented. No process/organization fracture is reported; headcount (~3,500), collective-bargaining status, and division structure remained intact, and no goodwill impairment or core-business divestiture occurred in the window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income rose from $109.8 million in 2014 to $172.2 million in 2018",
+      "rationale": "No realized product/process disruption is documented: ONE Gas continued operating its three natural-gas distribution divisions, serving approximately 2.2 million customers, with no core-business divestiture reported. No realized process/organization fracture is documented: the company retained roughly 3,500 employees and maintained continuous operations while net income rose each year from 2014 through 2018."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income rising each year from $109.8 million (2014) to $172.2 million (2018)\",\n  \"rationale\": \"The slice documents a successful, continuous operation with net income rising monotonically from 2014 to 2018. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway), as the company maintained its three divisions and reported no goodwill impairment or divestitures.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income rose $109.8M (2014) to $172.2M (2018); no divestiture\",\n  \"rationale\": \"The FY2018 10-K record shows the separated entity continued as one regulated natural-gas distribution segment across three divisions with ~2.2M customers and monotonically rising net income, with no product/process misalignment or operational incoherence documented. No process/organization fracture is reported; headcount (~3,500), collective-bargaining status, and division structure remained intact, and no goodwill impairment or core-business divestiture occurred in the window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income rose from $109.8 million in 2014 to $172.2 million in 2018\",\n  \"rationale\": \"No realized product/process disruption is documented: ONE Gas continued operating its three natural-gas distribution divisions, serving approximately 2.2 million customers, with no core-business divestiture reported. No realized process/organization fracture is documented: the company retained roughly 3,500 employees and maintained continuous operations while net income rose each year from 2014 through 2018.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

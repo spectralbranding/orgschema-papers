@@ -1,0 +1,58 @@
+{
+  "case_id": "P209",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "$108.689M acquisition intangibles fully amortized/written down to $0 by YE2020 (incl. $15.4M impairment Q3 2019); Rice principals reached EQT CEO/board by mid-2019",
+      "rationale": "No slice line documents disruption at the product/process (product-line/operations) interface; the Rice-origin upstream subsidiary (Rice Drilling B LLC) continued operating under actively-amended gathering agreements through the window, indicating operational continuity, so p4=0. On the process/organization interface, the record is mixed and indeterminate: several senior Rice executives (CIO, VP HR, technical accounting director) departed within ~3 months to 2 years of closing, yet two Rice principals (Toby Rice as CEO, Daniel Rice IV as director) ascended to EQT's top leadership through early 2022 — the slice does not resolve whether the departures reflect a realized operations-vs-organization fracture or ordinary post-close turnover, so p5=uncertain. No documented evidence bears on controlling-intent archetype coherence (t1=uncertain), and no business-model incompatibility is documented (t2=0)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$267.9 million goodwill impairment",
+      "rationale": "The slice indicates that a Rice-origin operating subsidiary remained an active contracting party through the window, with no documented disruption at the product/process interface. While several former Rice executives departed shortly after closing, two former Rice principals reached EQT's top leadership (including CEO), and there is no documented fracture between integration of operations and the organization."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Rice-related non-compete intangibles fully amortized to $0 by year-end 2020, including a $15.4 million impairment in 2019",
+      "rationale": "No product/process disruption is documented; Rice Drilling B LLC remained an operating party to gathering arrangements that were repeatedly amended through 2021/2022. No process/organization fracture is documented: although several former Rice executives departed, Toby Z. Rice served as EQT CEO and Daniel J. Rice IV remained an EQT director through early 2022."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"$108.689M acquisition intangibles fully amortized/written down to $0 by YE2020 (incl. $15.4M impairment Q3 2019); Rice principals reached EQT CEO/board by mid-2019\", \"rationale\": \"No slice line documents disruption at the product/process (product-line/operations) interface; the Rice-origin upstream subsidiary (Rice Drilling B LLC) continued operating under actively-amended gathering agreements through the window, indicating operational continuity, so p4=0. On the process/organization interface, the record is mixed and indeterminate: several senior Rice executives (CIO, VP HR, technical accounting director) departed within ~3 months to 2 years of closing, yet two Rice principals (Toby Rice as CEO, Daniel Rice IV as director) ascended to EQT's top leadership through early 2022 \\u2014 the slice does not resolve whether the departures reflect a realized operations-vs-organization fracture or ordinary post-close turnover, so p5=uncertain. No documented evidence bears on controlling-intent archetype coherence (t1=uncertain), and no business-model incompatibility is documented (t2=0).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$267.9 million goodwill impairment\",\n  \"rationale\": \"The slice indicates that a Rice-origin operating subsidiary remained an active contracting party through the window, with no documented disruption at the product/process interface. While several former Rice executives departed shortly after closing, two former Rice principals reached EQT's top leadership (including CEO), and there is no documented fracture between integration of operations and the organization.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Rice-related non-compete intangibles fully amortized to $0 by year-end 2020, including a $15.4 million impairment in 2019\",\n  \"rationale\": \"No product/process disruption is documented; Rice Drilling B LLC remained an operating party to gathering arrangements that were repeatedly amended through 2021/2022. No process/organization fracture is documented: although several former Rice executives departed, Toby Z. Rice served as EQT CEO and Daniel J. Rice IV remained an EQT director through early 2022.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

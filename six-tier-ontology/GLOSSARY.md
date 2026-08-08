@@ -6,6 +6,9 @@ _Terms used by **2026ag** (Dual Hierarchies of Organizational Transferability: A
 
 *Terms introduced by this paper*
 
+- **facet**
+  - An intrinsic constituent of a tier - what the tier is made of (its culture, data, rules, quality standard, or spec surfaces), as distinct from the tier itself (a stratum) and from an angle (how a tier is read). Additive OST/SBT construct reconciled from the manda five-term method vocabulary 2026-08-01; it does NOT replace "layer", which keeps its canonical corpus senses (including the colloquial synonym for Tier). Its specification depth, where applicable, is the native L0-L5 cascade. RU canonical form: Gran (Грань).
+  - first use: §1
 - **six-tier ontology**
   - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
   - first use: §1

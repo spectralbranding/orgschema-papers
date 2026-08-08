@@ -1,0 +1,58 @@
+{
+  "case_id": "P201",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "combined full-year 2022 net income of $420.3 million",
+      "rationale": "The provided evidence slice does not document any disruption at the product/process interface (p4_pathway = 0) or the process/organization interface (p5_pathway = 0). The slice focuses exclusively on financial results, divestitures, and a subsequent change-of-control transaction without detailing operational or cultural integration issues."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2020 $503.2M goodwill impairment; 2022 CD&R take-private at $24.65/share",
+      "rationale": "The slice documents a FY2020 $503.2M goodwill impairment and 2021 divestitures of IMP and DBCI with an $831.3M gain, but does not attribute these events to product/process misalignment or inability to align acquired products with operating processes over time, so p4_pathway is 0. No evidence is given of operations fracturing against people, management, or culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$503.2 million goodwill impairment in FY2020",
+      "rationale": "The realized record documents a FY2020 goodwill impairment, 2021 divestitures and acquisitions, and subsequent positive net income, but it does not attribute these outcomes to failure to align acquired products with operating processes. It likewise documents no operational integration breakdown involving people, management, or culture; therefore, no product/process or process/organization pathway is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"combined full-year 2022 net income of $420.3 million\",\n  \"rationale\": \"The provided evidence slice does not document any disruption at the product/process interface (p4_pathway = 0) or the process/organization interface (p5_pathway = 0). The slice focuses exclusively on financial results, divestitures, and a subsequent change-of-control transaction without detailing operational or cultural integration issues.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2020 $503.2M goodwill impairment; 2022 CD&R take-private at $24.65/share\",\n  \"rationale\": \"The slice documents a FY2020 $503.2M goodwill impairment and 2021 divestitures of IMP and DBCI with an $831.3M gain, but does not attribute these events to product/process misalignment or inability to align acquired products with operating processes over time, so p4_pathway is 0. No evidence is given of operations fracturing against people, management, or culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$503.2 million goodwill impairment in FY2020\",\n  \"rationale\": \"The realized record documents a FY2020 goodwill impairment, 2021 divestitures and acquisitions, and subsequent positive net income, but it does not attribute these outcomes to failure to align acquired products with operating processes. It likewise documents no operational integration breakdown involving people, management, or culture; therefore, no product/process or process/organization pathway is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P147",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the customer-facing servicing rights/MSRs were structured to cross \"together with\" the ResCap mortgage origination and servicing platforms that produce and deliver the servicing (\"the customer-facing servicing rights were to cross together with the producing/delivering platform\"), so product (T4) and process (T5) moved coherently as an asset purchase. gap_56 is uncertain because the slice documents acquisition of the origination/servicing platforms (T5) but does not describe whether the people/management/culture (T6) operating them transferred or aligned at closing — no employee-transfer or organizational-integration terms are furnished. This is an asset purchase out of a Chapter 11 estate (T3 legal vehicle not acquired, hence null; ResCap remains the debtor), transferring only a subset of business/product while legacy run-off assets and VIEs were excluded."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "uncertain",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly notes that 'the customer-facing servicing rights/asset were to cross together with the operating platform that produces and delivers the servicing,' indicating no structural mismatch between the product (T4) and processes (T5). However, the slice does not explicitly document whether the people and organization (T6) transferred alongside the platforms, making gap_56 uncertain."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice expressly states that under the ResCap Purchase Agreement Nationstar would acquire the MSRs/subservicing rights (T4 customer-facing product) together with the ResCap mortgage origination and servicing platforms (T5), i.e. 'the customer-facing servicing rights/asset were to cross together with the operating platform that produces and delivers the servicing,' so gap_45=0. No closing-structure term documents processes transferring without people/management/culture, nor any people transfer at all, so a gap_56 mismatch cannot be established at closing and is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"uncertain\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is 0 because the slice states the customer-facing servicing rights/MSRs were structured to cross \\\"together with\\\" the ResCap mortgage origination and servicing platforms that produce and deliver the servicing (\\\"the customer-facing servicing rights were to cross together with the producing/delivering platform\\\"), so product (T4) and process (T5) moved coherently as an asset purchase. gap_56 is uncertain because the slice documents acquisition of the origination/servicing platforms (T5) but does not describe whether the people/management/culture (T6) operating them transferred or aligned at closing \\u2014 no employee-transfer or organizational-integration terms are furnished. This is an asset purchase out of a Chapter 11 estate (T3 legal vehicle not acquired, hence null; ResCap remains the debtor), transferring only a subset of business/product while legacy run-off assets and VIEs were excluded.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"uncertain\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly notes that 'the customer-facing servicing rights/asset were to cross together with the operating platform that produces and delivers the servicing,' indicating no structural mismatch between the product (T4) and processes (T5). However, the slice does not explicitly document whether the people and organization (T6) transferred alongside the platforms, making gap_56 uncertain.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice expressly states that under the ResCap Purchase Agreement Nationstar would acquire the MSRs/subservicing rights (T4 customer-facing product) together with the ResCap mortgage origination and servicing platforms (T5), i.e. 'the customer-facing servicing rights/asset were to cross together with the operating platform that produces and delivers the servicing,' so gap_45=0. No closing-structure term documents processes transferring without people/management/culture, nor any people transfer at all, so a gap_56 mismatch cannot be established at closing and is coded 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "uncertain",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

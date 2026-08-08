@@ -1,0 +1,85 @@
+{
+  "case_id": "P076",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing NAND flash product line and customers were transitioned to the joint venture (T4), but the producing processes (T5) did not move intact; instead, front-end wafer supply was provided by SKH and back-end services by Cypress. This structural gap between product and process was mitigated at closing through a NAND supply agreement, a back-end manufacturing agreement, and transition services."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice expressly documents a closing-time product-vs-process split: the NAND customer-facing product line and customers were placed into the JV while producing/delivering processes were divided rather than moved intact, with front-end wafer supply from SKH under a NAND supply agreement and back-end services from Cypress under a back-end manufacturing agreement. gap_56=0 because those processes remained with the parent organizations that continued to run them under the supply and manufacturing agreements, and the only people movement documented at closing was the aligned transfer of up to fifteen Cypress employees into the JV; the residual shared substrate was contractually bridged at closing by the NAND supply agreement, back-end manufacturing agreement, and limited transition/design services."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that the NAND product line and current NAND customers were placed into the joint venture, while the producing and delivering processes were divided rather than transferred intact: SKH retained front-end wafer supply and Cypress provided back-end manufacturing under separate agreements. It also documents that these parent-operated processes were paired with only up to fifteen Cypress employees transferring to the joint venture, establishing a process-versus-organization mismatch at closing. Both gaps were contractually absorbed through the NAND supply agreement, back-end manufacturing agreement, and Cypress-provided transition and design services."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing NAND flash product line and customers were transitioned to the joint venture (T4), but the producing processes (T5) did not move intact; instead, front-end wafer supply was provided by SKH and back-end services by Cypress. This structural gap between product and process was mitigated at closing through a NAND supply agreement, a back-end manufacturing agreement, and transition services.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice expressly documents a closing-time product-vs-process split: the NAND customer-facing product line and customers were placed into the JV while producing/delivering processes were divided rather than moved intact, with front-end wafer supply from SKH under a NAND supply agreement and back-end services from Cypress under a back-end manufacturing agreement. gap_56=0 because those processes remained with the parent organizations that continued to run them under the supply and manufacturing agreements, and the only people movement documented at closing was the aligned transfer of up to fifteen Cypress employees into the JV; the residual shared substrate was contractually bridged at closing by the NAND supply agreement, back-end manufacturing agreement, and limited transition/design services.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that the NAND product line and current NAND customers were placed into the joint venture, while the producing and delivering processes were divided rather than transferred intact: SKH retained front-end wafer supply and Cypress provided back-end manufacturing under separate agreements. It also documents that these parent-operated processes were paired with only up to fifteen Cypress employees transferring to the joint venture, establishing a process-versus-organization mismatch at closing. Both gaps were contractually absorbed through the NAND supply agreement, back-end manufacturing agreement, and Cypress-provided transition and design services.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

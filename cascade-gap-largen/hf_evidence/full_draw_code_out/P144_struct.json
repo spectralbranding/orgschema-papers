@@ -1,0 +1,85 @@
+{
+  "case_id": "P144",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "uncertain",
+      "gap_mitigated": "no",
+      "rationale": "The deal was structured as a §363 distressed-asset acquisition: NVR agreed to purchase \"substantially all of the land under development, homebuilding work in process and other related assets\" (T4 asset base, a subset) plus assumption of specified liabilities, while the Form 8-K \"does not describe a transfer of the Seller's workforce, management, or operating organization as part of the reported terms.\" That documented asset-without-operations structure drives gap_45=1 — the customer-facing inventory crossed the boundary but the producing/delivering processes (T5) are not described as transferring or aligning, and no transitional-services/operating agreement absorbing them is documented. Because T5 itself is not described as transferring or being re-engineered, and T6 is likewise absent from the reported terms, gap_56 cannot be documented at closing and is coded uncertain. The APA (Exhibit 10.1) terms beyond the Item 1.01 narrative are [UNVERIFIED], so process/organization tiers are null."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The transaction is structured as a Section 363 asset purchase of 'land under development, homebuilding work in process and other related assets' (T4 subset). The filing explicitly notes it 'does not describe a transfer of the Seller's workforce, management, or operating organization' (T5 and T6 null). This creates a gap_45 as the physical assets transfer without the operational processes or people that produced them, with no mitigation documented."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The Form 8-K Item 1.01 structures a §363 purchase of 'substantially all of the land under development, homebuilding work in process and other related assets' (T4 crosses) while expressly not describing any transfer of workforce, management, operating organization, or processes (T5 and T6 do not cross), creating a documented product-vs-process mismatch at closing (gap_45=1). Because operational processes themselves are not transferred or re-engineered under the reported terms, gap_56=0 (neither T5 nor T6 moved). No transitional-services or operating agreement allocating shared process substrate is described in the closing-era narrative, so the gap is not documented as contractually mitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"null\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"no\", \"rationale\": \"The deal was structured as a \\u00a7363 distressed-asset acquisition: NVR agreed to purchase \\\"substantially all of the land under development, homebuilding work in process and other related assets\\\" (T4 asset base, a subset) plus assumption of specified liabilities, while the Form 8-K \\\"does not describe a transfer of the Seller's workforce, management, or operating organization as part of the reported terms.\\\" That documented asset-without-operations structure drives gap_45=1 \\u2014 the customer-facing inventory crossed the boundary but the producing/delivering processes (T5) are not described as transferring or aligning, and no transitional-services/operating agreement absorbing them is documented. Because T5 itself is not described as transferring or being re-engineered, and T6 is likewise absent from the reported terms, gap_56 cannot be documented at closing and is coded uncertain. The APA (Exhibit 10.1) terms beyond the Item 1.01 narrative are [UNVERIFIED], so process/organization tiers are null.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction is structured as a Section 363 asset purchase of 'land under development, homebuilding work in process and other related assets' (T4 subset). The filing explicitly notes it 'does not describe a transfer of the Seller's workforce, management, or operating organization' (T5 and T6 null). This creates a gap_45 as the physical assets transfer without the operational processes or people that produced them, with no mitigation documented.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The Form 8-K Item 1.01 structures a §363 purchase of 'substantially all of the land under development, homebuilding work in process and other related assets' (T4 crosses) while expressly not describing any transfer of workforce, management, operating organization, or processes (T5 and T6 do not cross), creating a documented product-vs-process mismatch at closing (gap_45=1). Because operational processes themselves are not transferred or re-engineered under the reported terms, gap_56=0 (neither T5 nor T6 moved). No transitional-services or operating agreement allocating shared process substrate is described in the closing-era narrative, so the gap is not documented as contractually mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "null",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

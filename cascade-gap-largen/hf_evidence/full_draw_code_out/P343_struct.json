@@ -1,0 +1,85 @@
+{
+  "case_id": "P343",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company stock-and-cash merger of Beneficial into WSFS with a simultaneous bank-level merger, so the customer-facing banking franchise (branches, loans, deposits) and its operational substrate transferred together into the surviving WSFS Bank rather than product moving without process — no gap_45. The employee base (\"covered employees\") transferred alongside the operations, with compensation, benefits, severance, and a retention pool contractually bridged for a defined one-year period, so processes did not transfer without the organization/people running them — gap_56 is 0. Because no structural gap was coded, gap_mitigated is NA. T1 is coded replace: Beneficial merged into WSFS as surviving corporation, its charter/bylaws ceased by operation of law, and its directors/officers ceased serving, while WSFS's intent and organizational documents governed."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing deposit-taking and lending franchise (T4) transferred directly into the surviving WSFS Bank alongside the underlying operations (T5). The employee base (T6) also transferred with the operations, supported by contractual bridges for compensation, benefits, and severance, resulting in no structural gaps at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Beneficial’s customer-facing deposit-taking and lending franchise, including branches, loans, and deposits, entered the surviving WSFS Bank, while the simultaneous bank merger and planned integration of operations placed the associated operating substrate within that same surviving bank; therefore no product-process gap is documented at closing. It also states that Beneficial’s employee base transferred, with retention, compensation, benefits, severance, and outplacement arrangements contractually addressed, so the transferred and integrating operations were accompanied by the organization that ran them and no process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company stock-and-cash merger of Beneficial into WSFS with a simultaneous bank-level merger, so the customer-facing banking franchise (branches, loans, deposits) and its operational substrate transferred together into the surviving WSFS Bank rather than product moving without process \\u2014 no gap_45. The employee base (\\\"covered employees\\\") transferred alongside the operations, with compensation, benefits, severance, and a retention pool contractually bridged for a defined one-year period, so processes did not transfer without the organization/people running them \\u2014 gap_56 is 0. Because no structural gap was coded, gap_mitigated is NA. T1 is coded replace: Beneficial merged into WSFS as surviving corporation, its charter/bylaws ceased by operation of law, and its directors/officers ceased serving, while WSFS's intent and organizational documents governed.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The customer-facing deposit-taking and lending franchise (T4) transferred directly into the surviving WSFS Bank alongside the underlying operations (T5). The employee base (T6) also transferred with the operations, supported by contractual bridges for compensation, benefits, and severance, resulting in no structural gaps at closing.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Beneficial’s customer-facing deposit-taking and lending franchise, including branches, loans, and deposits, entered the surviving WSFS Bank, while the simultaneous bank merger and planned integration of operations placed the associated operating substrate within that same surviving bank; therefore no product-process gap is documented at closing. It also states that Beneficial’s employee base transferred, with retention, compensation, benefits, severance, and outplacement arrangements contractually addressed, so the transferred and integrating operations were accompanied by the organization that ran them and no process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

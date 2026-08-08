@@ -1,0 +1,58 @@
+{
+  "case_id": "P200",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "consolidated net loss attributable to Caesars of $(1,757)M FY2020 and $(1,019)M FY2021; goodwill $11,076M with no impairment indicated Oct 2021",
+      "rationale": "The slice documents only aggregate financial outcomes (net losses of $1.2B for Former Caesars' stub 2020 period, consolidated net losses in FY2020-2021, and modest impairment charges) plus the surviving entity's absorption into Eldorado and deregistration. It contains no line describing disruption at the product/process interface (no product-operations incoherence), so p4 cannot be affirmed but the slice's silence on operations-level integration prevents a confident 0 versus uncertain determination; likewise no line documents a process/organization fracture (operations vs people/culture). Because the record is purely financial and explicitly excludes integration-mechanism detail, both interface pathways are coded uncertain rather than 0. The October 2021 goodwill test showed no impairment, further indicating no documented specific-interface breakdown."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by Eldorado Resorts for $10,875 million",
+      "rationale": "The provided slice details the financial performance and subsequent acquisition of Caesars Entertainment Corporation by Eldorado Resorts. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "absorbed for $10.875 billion in July 2020 and deregistered as a separate SEC filer",
+      "rationale": "The slice documents that CEC was absorbed into Eldorado Resorts in July 2020, followed by substantial net losses and impairment charges, but it does not attribute these outcomes to an inability to align products with operating processes; therefore p4 is coded 0. It likewise provides no documented evidence that operational integration fractured against people, management, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"consolidated net loss attributable to Caesars of $(1,757)M FY2020 and $(1,019)M FY2021; goodwill $11,076M with no impairment indicated Oct 2021\", \"rationale\": \"The slice documents only aggregate financial outcomes (net losses of $1.2B for Former Caesars' stub 2020 period, consolidated net losses in FY2020-2021, and modest impairment charges) plus the surviving entity's absorption into Eldorado and deregistration. It contains no line describing disruption at the product/process interface (no product-operations incoherence), so p4 cannot be affirmed but the slice's silence on operations-level integration prevents a confident 0 versus uncertain determination; likewise no line documents a process/organization fracture (operations vs people/culture). Because the record is purely financial and explicitly excludes integration-mechanism detail, both interface pathways are coded uncertain rather than 0. The October 2021 goodwill test showed no impairment, further indicating no documented specific-interface breakdown.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"acquired by Eldorado Resorts for $10,875 million\",\n\"rationale\": \"The provided slice details the financial performance and subsequent acquisition of Caesars Entertainment Corporation by Eldorado Resorts. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the realized outcome.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"absorbed for $10.875 billion in July 2020 and deregistered as a separate SEC filer\",\n  \"rationale\": \"The slice documents that CEC was absorbed into Eldorado Resorts in July 2020, followed by substantial net losses and impairment charges, but it does not attribute these outcomes to an inability to align products with operating processes; therefore p4 is coded 0. It likewise provides no documented evidence that operational integration fractured against people, management, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

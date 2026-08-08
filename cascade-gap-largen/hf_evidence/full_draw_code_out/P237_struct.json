@@ -1,0 +1,85 @@
+{
+  "case_id": "P237",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was an internal simplification/roll-up of an already commonly-controlled MLP (TEP) into its GP-side entity (TEGP), where TEP \"continued without dissolution\" as the surviving operating partnership wholly owned by TE/TGE — so the customer-facing midstream pipeline assets (T4) and the operations that run them (T5) stayed inside the same continuing legal vehicle, moving together, yielding no gap_45. Senior management and officers continued (\"directors and executive officers of TEGP GP prior to the Merger will continue,\" officers \"expected to continue\"), with the only personnel change being resignation of TEP GP's now-redundant director slate expressly \"not the result of any disagreement\" on operations; thus processes and the people running them stayed aligned, yielding no gap_56. Controlling intent, management, and the operating legal vehicle continued largely unchanged in a unit-for-share exchange, with no Tier-1 fusion documented."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing TEP continued without dissolution as the operating partnership wholly owned by TE/TGE, retaining its midstream pipeline/gathering/processing assets (T4) and the operations that produce them (T5) together inside the same surviving legal vehicle, so no product-vs-process mismatch arose. Senior officers of TEGP GP and TEP GP were disclosed to continue in those roles post-merger, and the only personnel change was resignation of the TEP GP director slate (not officers) once TEP became wholly owned; thus processes and organization remained aligned with no structural gap_56 at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "TEP continued without dissolution as the operating partnership, retaining the midstream assets and operations while becoming wholly owned by TE/TGE; therefore, the customer-facing assets and their operating processes moved together, supporting gap_45 = 0. The directors and executive officers of TEGP GP continued after closing, overlapping TEP GP officers were expected to continue, and TEP GP retained its management rights; although TEP GP's director slate resigned, the disclosed management continuity and aligned governance support gap_56 = 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was an internal simplification/roll-up of an already commonly-controlled MLP (TEP) into its GP-side entity (TEGP), where TEP \\\"continued without dissolution\\\" as the surviving operating partnership wholly owned by TE/TGE \\u2014 so the customer-facing midstream pipeline assets (T4) and the operations that run them (T5) stayed inside the same continuing legal vehicle, moving together, yielding no gap_45. Senior management and officers continued (\\\"directors and executive officers of TEGP GP prior to the Merger will continue,\\\" officers \\\"expected to continue\\\"), with the only personnel change being resignation of TEP GP's now-redundant director slate expressly \\\"not the result of any disagreement\\\" on operations; thus processes and the people running them stayed aligned, yielding no gap_56. Controlling intent, management, and the operating legal vehicle continued largely unchanged in a unit-for-share exchange, with no Tier-1 fusion documented.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing TEP continued without dissolution as the operating partnership wholly owned by TE/TGE, retaining its midstream pipeline/gathering/processing assets (T4) and the operations that produce them (T5) together inside the same surviving legal vehicle, so no product-vs-process mismatch arose. Senior officers of TEGP GP and TEP GP were disclosed to continue in those roles post-merger, and the only personnel change was resignation of the TEP GP director slate (not officers) once TEP became wholly owned; thus processes and organization remained aligned with no structural gap_56 at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"TEP continued without dissolution as the operating partnership, retaining the midstream assets and operations while becoming wholly owned by TE/TGE; therefore, the customer-facing assets and their operating processes moved together, supporting gap_45 = 0. The directors and executive officers of TEGP GP continued after closing, overlapping TEP GP officers were expected to continue, and TEP GP retained its management rights; although TEP GP's director slate resigned, the disclosed management continuity and aligned governance support gap_56 = 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

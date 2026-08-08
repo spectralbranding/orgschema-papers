@@ -1,0 +1,58 @@
+{
+  "case_id": "P300",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (deregistered via Form 15-12B within days of Nov 2017 closing; no periodic filings in ~2020-2022 window)",
+      "rationale": "The slice documents that the target's equity was delisted from the NYSE and deregistered (Form 15-12B) and its public debt repaid/indenture discharged within days of the November 2017 closing, leaving no SEC periodic filings under CIK 0001518222 across the fixed ~2020-2022 window. Consequently there is no primary-sourced record of the acquired business's realized trajectory, and the slice explicitly states any disruption at the product/process or process/organization interface \"is therefore not observable from primary filings.\" The only workforce-change commentary is flagged [UNVERIFIED] and not used as an outcome fact. Because no realized disruption can be affirmed or ruled out from the evidence, both p4 and p5 are coded uncertain rather than 0."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The target was delisted and deregistered immediately after closing, and the acquiring parent is a private company that does not file with the SEC. Because no public reporting exists for the 3-5 year window, any post-deal disruption at the product/process or process/organization interfaces is unobservable and therefore uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no subsequent SEC periodic filing exists carrying any audited financial or operating record of the acquired business into the ~2020-2022 window, and that its independent trajectory (including any disruption at the product/process or process/organization interface) is therefore not observable from primary filings. Workforce-change commentary is explicitly marked [UNVERIFIED] and not used. Absence of any documented realized disruption yields 0 for both p4_pathway and p5_pathway."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (deregistered via Form 15-12B within days of Nov 2017 closing; no periodic filings in ~2020-2022 window)\", \"rationale\": \"The slice documents that the target's equity was delisted from the NYSE and deregistered (Form 15-12B) and its public debt repaid/indenture discharged within days of the November 2017 closing, leaving no SEC periodic filings under CIK 0001518222 across the fixed ~2020-2022 window. Consequently there is no primary-sourced record of the acquired business's realized trajectory, and the slice explicitly states any disruption at the product/process or process/organization interface \\\"is therefore not observable from primary filings.\\\" The only workforce-change commentary is flagged [UNVERIFIED] and not used as an outcome fact. Because no realized disruption can be affirmed or ruled out from the evidence, both p4 and p5 are coded uncertain rather than 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The target was delisted and deregistered immediately after closing, and the acquiring parent is a private company that does not file with the SEC. Because no public reporting exists for the 3-5 year window, any post-deal disruption at the product/process or process/organization interfaces is unobservable and therefore uncertain.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no subsequent SEC periodic filing exists carrying any audited financial or operating record of the acquired business into the ~2020-2022 window, and that its independent trajectory (including any disruption at the product/process or process/organization interface) is therefore not observable from primary filings. Workforce-change commentary is explicitly marked [UNVERIFIED] and not used. Absence of any documented realized disruption yields 0 for both p4_pathway and p5_pathway.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

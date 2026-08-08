@@ -1,0 +1,85 @@
+{
+  "case_id": "P132",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 is coded 0 because each acquisition was a purchase of 100% of the target's stock (Rexam SBC, Stopaq) or a full business placed intact within a division, so the customer-facing products crossed the boundary together with their producing operations rather than as a product-without-process mismatch. gap_56 is coded 1 because the deal structure shows processes being re-engineered and consolidated at closing (\"integrating the production into the most efficient operating facility,\" shutdown of three facilities with \"the majority of the operations transferred to other facilities\") while the running organization did not align coherently — the filing's own structural disclosures flag \"problems associated with maintaining relationships with employees,\" \"loss of key employees,\" \"difficulties in integrating shared services,\" and severance/retention costs. gap_mitigated is \"no\" because the filing explicitly \"does not describe any transitional-services agreement, shared-services agreement, or ongoing supply arrangement\" bridging the shared substrate with the sellers. T1 is \"continue\" as the same Apollo/Graham sponsor-controlled holding company persisted as the acquirer's controlling intent across the roll-up."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice describes a roll-up strategy where Berry Plastics acquires 100% of target companies (like Rexam SBC and Stopaq) and integrates their products (T4) and processes (T5) into its existing divisions. There is no documented gap_45 at closing, as the products and their production processes are acquired together. However, there is a documented gap_56, as the company explicitly states that expected synergies are realized by 'eliminating duplicative costs and rationalizing facilities and integrating the production into the most efficient operating facility,' meaning processes (T5) are re-engineered and moved without the corresponding organization/people (T6) transferring intact alongside them. No transitional services agreements are mentioned to mitigate this."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The acquired product businesses crossed the ownership boundary, while production was subsequently consolidated into fewer facilities and systems and activities were moved among multiple facilities; the structural summary characterizes process integration as a recurring, not-yet-resolved task at closing, supporting gap_45. The filing likewise identifies assimilation of acquired employees, retention of key personnel, and integration of shared services as unresolved alongside process and facility re-engineering, supporting gap_56. No transitional-services, shared-services, or ongoing supply agreement with either seller was described."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 is coded 0 because each acquisition was a purchase of 100% of the target's stock (Rexam SBC, Stopaq) or a full business placed intact within a division, so the customer-facing products crossed the boundary together with their producing operations rather than as a product-without-process mismatch. gap_56 is coded 1 because the deal structure shows processes being re-engineered and consolidated at closing (\\\"integrating the production into the most efficient operating facility,\\\" shutdown of three facilities with \\\"the majority of the operations transferred to other facilities\\\") while the running organization did not align coherently \\u2014 the filing's own structural disclosures flag \\\"problems associated with maintaining relationships with employees,\\\" \\\"loss of key employees,\\\" \\\"difficulties in integrating shared services,\\\" and severance/retention costs. gap_mitigated is \\\"no\\\" because the filing explicitly \\\"does not describe any transitional-services agreement, shared-services agreement, or ongoing supply arrangement\\\" bridging the shared substrate with the sellers. T1 is \\\"continue\\\" as the same Apollo/Graham sponsor-controlled holding company persisted as the acquirer's controlling intent across the roll-up.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The slice describes a roll-up strategy where Berry Plastics acquires 100% of target companies (like Rexam SBC and Stopaq) and integrates their products (T4) and processes (T5) into its existing divisions. There is no documented gap_45 at closing, as the products and their production processes are acquired together. However, there is a documented gap_56, as the company explicitly states that expected synergies are realized by 'eliminating duplicative costs and rationalizing facilities and integrating the production into the most efficient operating facility,' meaning processes (T5) are re-engineered and moved without the corresponding organization/people (T6) transferring intact alongside them. No transitional services agreements are mentioned to mitigate this.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"uncertain\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The acquired product businesses crossed the ownership boundary, while production was subsequently consolidated into fewer facilities and systems and activities were moved among multiple facilities; the structural summary characterizes process integration as a recurring, not-yet-resolved task at closing, supporting gap_45. The filing likewise identifies assimilation of acquired employees, retention of key personnel, and integration of shared services as unresolved alongside process and facility re-engineering, supporting gap_56. No transitional-services, shared-services, or ongoing supply agreement with either seller was described.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

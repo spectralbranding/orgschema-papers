@@ -1,0 +1,85 @@
+{
+  "case_id": "P208",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal transferred substantially all of Patheon's business, assets and liabilities (the three CDMO service segments — the customer-facing product) via the Dutch-law Asset Sale, and the operational processes that produce/deliver those services moved together as part of that same wholesale asset transfer, so no product-vs-process mismatch at closing (gap_45=0). At T6, although the entire board and officer tier were replaced same-day, the broader non-officer workforce (operations-running people) were bridged forward via one-year compensation/benefits-parity, severance, service-credit and honored-labor-agreement commitments in the Purchase Agreement, so the processes and the people who run them were structurally aligned at closing (gap_56=0). Because neither gap was coded, gap_mitigated is NA. T3 coded swap because control moved into a Purchaser vehicle with Patheon N.V. slated for dissolution/liquidation and delisting."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the Asset Sale transferred substantially all of Patheon’s business, assets and liabilities—including its three CDMO service segments (the customer-facing product layer) together with the operations that produce them—in one step to Purchaser; no product-without-process split is documented at closing. gap_56 is 0 because the same Asset Sale moved the operating business forward while the Purchase Agreement contractually continued the non-officer workforce (same base salary/bonus, benefits parity, severance, service credit, labor agreements) alongside those processes; only the board/officer tier was replaced, which does not constitute a structural process-without-organization mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The approved Asset Sale transferred substantially all of Patheon's business, assets, and liabilities to Purchaser, including the underlying three-segment contract-development-and-manufacturing business, so the customer-facing services and their operational substrate moved together (SEC accession 0001567619-17-001306). Although all former officers ceased serving and most directors resigned, replacement directors were installed, two directors remained, and the broader continuing workforce was aligned through compensation, benefits, service-credit, severance, and labor-agreement commitments; therefore no closing-structure process-versus-organization gap is documented (SEC accessions 0001104659-17-055475 and 0001567619-17-001306)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal transferred substantially all of Patheon's business, assets and liabilities (the three CDMO service segments \\u2014 the customer-facing product) via the Dutch-law Asset Sale, and the operational processes that produce/deliver those services moved together as part of that same wholesale asset transfer, so no product-vs-process mismatch at closing (gap_45=0). At T6, although the entire board and officer tier were replaced same-day, the broader non-officer workforce (operations-running people) were bridged forward via one-year compensation/benefits-parity, severance, service-credit and honored-labor-agreement commitments in the Purchase Agreement, so the processes and the people who run them were structurally aligned at closing (gap_56=0). Because neither gap was coded, gap_mitigated is NA. T3 coded swap because control moved into a Purchaser vehicle with Patheon N.V. slated for dissolution/liquidation and delisting.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the Asset Sale transferred substantially all of Patheon’s business, assets and liabilities—including its three CDMO service segments (the customer-facing product layer) together with the operations that produce them—in one step to Purchaser; no product-without-process split is documented at closing. gap_56 is 0 because the same Asset Sale moved the operating business forward while the Purchase Agreement contractually continued the non-officer workforce (same base salary/bonus, benefits parity, severance, service credit, labor agreements) alongside those processes; only the board/officer tier was replaced, which does not constitute a structural process-without-organization mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The approved Asset Sale transferred substantially all of Patheon's business, assets, and liabilities to Purchaser, including the underlying three-segment contract-development-and-manufacturing business, so the customer-facing services and their operational substrate moved together (SEC accession 0001567619-17-001306). Although all former officers ceased serving and most directors resigned, replacement directors were installed, two directors remained, and the broader continuing workforce was aligned through compensation, benefits, service-credit, severance, and labor-agreement commitments; therefore no closing-structure process-versus-organization gap is documented (SEC accessions 0001104659-17-055475 and 0001567619-17-001306).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

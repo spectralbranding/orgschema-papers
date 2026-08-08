@@ -1,0 +1,28 @@
+{
+  "coder_health": {
+    "claude": {
+      "ok": 0,
+      "fail": 0,
+      "consecutive": 0,
+      "down": false
+    },
+    "gemini": {
+      "ok": 1,
+      "fail": 0,
+      "consecutive": 0,
+      "down": false
+    },
+    "grok": {
+      "ok": 0,
+      "fail": 0,
+      "consecutive": 0,
+      "down": false
+    },
+    "openai": {
+      "ok": 1,
+      "fail": 0,
+      "consecutive": 0,
+      "down": false
+    }
+  }
+}

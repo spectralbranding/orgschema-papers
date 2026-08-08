@@ -1,0 +1,85 @@
+{
+  "case_id": "P087",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes a 50/50 non-consolidated equity joint venture: Dow Corning remained separately incorporated with Corning holding an equity-method interest, so nothing operational crossed the ownership boundary (T3/T5/T6 null; T2/T4 accessed only via arm's-length purchase and equity earnings — read-only). For gap_45, the customer-facing silicone products AND the processes that produce/deliver them \"remained inside Dow Corning's own operating entity\" together — neither crossed to Corning — so there is no product-vs-process mismatch (0). For gap_56, no processes were transferred or re-engineered into Corning and no people/organization moved (governance was merely three Corning directors on the board \"without operational consolidation\"), so processes and organization stayed coherently together inside the venture (0); both principals' intent is co-present (imprint-share), no Tier-1 fusion is documented."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that 'the customer-facing product and the processes producing it stayed inside the venture's own entity' and that there was no operational consolidation. This indicates that products (T4), processes (T5), and the organization (T6) remained structurally aligned within Dow Corning without any documented gaps."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "null",
+      "sigma_T3": "partial",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that 'the customer-facing product (silicone products) and the processes that produce and deliver it remained inside Dow Corning's own operating entity' and that Corning 'did not operate Dow Corning's manufacturing directly,' recording only arm's-length purchases and equity-method dividends; therefore neither T4 nor T5 crossed into Corning, so gap_45 is 0. Because processes stayed inside the venture with its own people and were not transferred or re-engineered across the boundary at all, gap_56 is likewise 0; the only bridge noted is a contingent credit-facility backstop, not an operating or TSA alignment of shared substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice describes a 50/50 non-consolidated equity joint venture: Dow Corning remained separately incorporated with Corning holding an equity-method interest, so nothing operational crossed the ownership boundary (T3/T5/T6 null; T2/T4 accessed only via arm's-length purchase and equity earnings \\u2014 read-only). For gap_45, the customer-facing silicone products AND the processes that produce/deliver them \\\"remained inside Dow Corning's own operating entity\\\" together \\u2014 neither crossed to Corning \\u2014 so there is no product-vs-process mismatch (0). For gap_56, no processes were transferred or re-engineered into Corning and no people/organization moved (governance was merely three Corning directors on the board \\\"without operational consolidation\\\"), so processes and organization stayed coherently together inside the venture (0); both principals' intent is co-present (imprint-share), no Tier-1 fusion is documented.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that 'the customer-facing product and the processes producing it stayed inside the venture's own entity' and that there was no operational consolidation. This indicates that products (T4), processes (T5), and the organization (T6) remained structurally aligned within Dow Corning without any documented gaps.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"partial\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that 'the customer-facing product (silicone products) and the processes that produce and deliver it remained inside Dow Corning's own operating entity' and that Corning 'did not operate Dow Corning's manufacturing directly,' recording only arm's-length purchases and equity-method dividends; therefore neither T4 nor T5 crossed into Corning, so gap_45 is 0. Because processes stayed inside the venture with its own people and were not transferred or re-engineered across the boundary at all, gap_56 is likewise 0; the only bridge noted is a contingent credit-facility backstop, not an operating or TSA alignment of shared substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "read-only",
+    "sigma_T3": "null",
+    "sigma_T4": "read-only",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": true,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 3
+}

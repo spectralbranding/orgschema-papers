@@ -1,0 +1,33 @@
+# Structural sub-dossier — Cable One, Inc. separation from Graham Holdings Company (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- The transaction was structured as a spin-off: Graham Holdings Company ("Graham") would distribute all of the shares of its wholly owned subsidiary Cable One, Inc. ("Cable ONE") on a pro rata basis to holders of Graham Class A and Class B Common Stock; immediately after the distribution Cable ONE would be an independent, publicly traded company. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Graham stockholders were not required to vote on or take any action to approve the spin-off, were not required to pay consideration for the Cable ONE shares, and were not required to surrender or exchange their Graham shares; Graham then owned all outstanding Cable ONE common stock. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- The distribution was expected to be tax-free to Graham holders for U.S. Federal income tax purposes except for cash received in lieu of fractional shares; the separation was registered on Form 10. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+
+## What crossed the ownership boundary at the tier level
+- Customer-facing product: Cable ONE provided internet ("data"), cable television ("video") and telephony ("phone" or "voice") services to residential and business customers in 38 cable systems covering over 400 cities and towns across 19 Midwestern, Western and Southern states; it was the tenth-largest cable system operator in the United States based on customers and revenues in 2014, making services available to approximately 1,470,000 homes as of December 31, 2014. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Operational processes: the operating business — including its broadband plant (fiber-to-the-node with unused capacity, delivering a full suite of data, video and voice products) — was held within the subsidiary being distributed as a going concern. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- People / organization: as of December 31, 2014 the business had approximately 2,022 full-time employees, none represented by a union; the employees and management running the operating business were part of the subsidiary distributed. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Management continuity: Thomas O. Might, who had been Chief Executive Officer of Cable ONE since 1994 (and President from 1994 to 2014), was named a Director and Chief Executive Officer of the standalone company. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- The product, the processes that deliver it, and the people and management who run them therefore crossed the boundary together within the single distributed subsidiary. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+
+## Shared substrate that did NOT transfer whole
+- Prior to the spin-off the business had various arrangements with Graham whereby Graham provided it with finance, human resources, legal, information technology, general insurance, risk management and other corporate functions; the company also operated its cash management, accounts payable and other functions as part of Graham prior to the Distribution. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- These arrangements with Graham, other than those contemplated by the Transition Services Agreement, would generally be terminated in connection with the spin-off; the company characterized them as not material. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+
+## Contractual arrangements bridging the shared substrate at closing
+- Separation and Distribution Agreement: identified the transfers to be consummated, provided for exchange and retention of information and mutual assistance with financial reporting and audit obligations for an agreed period, mutual releases of claims, and reciprocal indemnification against certain liabilities arising from the spin-off and the parties' respective businesses. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Transition Services Agreement: Graham would provide the company, and the company would provide Graham, with specified services for a limited time to help ensure an orderly transition following the Distribution, with the agreement specifying the calculation of the company's costs for these services (costs negotiated between the parties, not necessarily reflective of third-party prices). [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Tax Matters Agreement: governed the parties' rights and obligations for tax matters after the spin-off and imposed restrictions (on share issuances/repurchases, business combinations, asset sales and similar transactions) for a two-year period after the Distribution to preserve the tax-free nature of the Distribution. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Employee Matters Agreement: would address employment, compensation and benefits matters, including the allocation and treatment of assets and liabilities relating to employees and the compensation and benefit plans in which the company's employees participated. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+- Two members of the company's Board (Thomas S. Gayner and Katharine Weymouth) also served on the Graham Board at separation. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]
+
+## Structural summary (closing only)
+- The transaction distributed an entire operating cable subsidiary — its data/video/voice product, its broadband plant and delivery processes, and its approximately 2,022 employees and incumbent long-tenured management — as a going concern from Graham Holdings to Graham's shareholders, while the parent's shared corporate service substrate (finance, HR, legal, IT, insurance, risk management, cash management) did NOT transfer as an intact operating whole and was instead bridged at closing by a Separation and Distribution Agreement, a Transition Services Agreement, a Tax Matters Agreement and an Employee Matters Agreement. [SRC: SEC accession 0001193125-15-136053, Form 10-12B EX-99.1]

@@ -1,0 +1,58 @@
+{
+  "case_id": "P070",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "NCI resolved via ~11.4M-share redemption (Jan 2016), leaving 100% ownership of CapCo; net income ~$75.5M FY2015; no impairment/divestiture",
+      "rationale": "On the product/process interface (p4), the acquired California shopping-center portfolio remained consolidated and under Equity One's management, with the flagship Serramonte asset in active redevelopment ($103.0M remaining) and no documented incoherence between the properties and operations. On the process/organization interface (p5), the noncontrolling interest was orderly unwound in January 2016 through a stock-for-shares redemption \"rather than through a loss event,\" and the counterparty-designated director's resignation followed from termination of a Board nomination right—an orderly governance transition, not a documented operations-vs-organization fracture. No goodwill/asset impairment, write-down, or divestiture is reported; Equity One reported positive net income (~$75.5M FY2015). Absence of documented disruption on either interface warrants a 0 on both pathways."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "100% ownership of CapCo acquired via stock redemption; no impairment",
+      "rationale": "The slice documents that the properties remained consolidated and under Equity One's management, with the flagship Serramonte asset undergoing active redevelopment, indicating no product/process disruption (p4=0). The counterparty's minority stake was fully unwound in January 2016 via a stock redemption, prompting the designated director's resignation, but there is no evidence of process/organization fracture or integration failure (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "approximately $75.5 million net income in 2015",
+      "rationale": "No product/process disruption is documented: the California portfolio remained consolidated and managed by Equity One, while Serramonte was undergoing active redevelopment with $103.0 million remaining to complete. No process/organization fracture is documented; LIH’s interest was fully redeemed for approximately 11.4 million Equity One shares, and the associated board resignation occurred in connection with termination of LIH’s nomination right rather than a reported operational or organizational breakdown."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"NCI resolved via ~11.4M-share redemption (Jan 2016), leaving 100% ownership of CapCo; net income ~$75.5M FY2015; no impairment/divestiture\", \"rationale\": \"On the product/process interface (p4), the acquired California shopping-center portfolio remained consolidated and under Equity One's management, with the flagship Serramonte asset in active redevelopment ($103.0M remaining) and no documented incoherence between the properties and operations. On the process/organization interface (p5), the noncontrolling interest was orderly unwound in January 2016 through a stock-for-shares redemption \\\"rather than through a loss event,\\\" and the counterparty-designated director's resignation followed from termination of a Board nomination right\\u2014an orderly governance transition, not a documented operations-vs-organization fracture. No goodwill/asset impairment, write-down, or divestiture is reported; Equity One reported positive net income (~$75.5M FY2015). Absence of documented disruption on either interface warrants a 0 on both pathways.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"100% ownership of CapCo acquired via stock redemption; no impairment\",\n  \"rationale\": \"The slice documents that the properties remained consolidated and under Equity One's management, with the flagship Serramonte asset undergoing active redevelopment, indicating no product/process disruption (p4=0). The counterparty's minority stake was fully unwound in January 2016 via a stock redemption, prompting the designated director's resignation, but there is no evidence of process/organization fracture or integration failure (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"approximately $75.5 million net income in 2015\",\n  \"rationale\": \"No product/process disruption is documented: the California portfolio remained consolidated and managed by Equity One, while Serramonte was undergoing active redevelopment with $103.0 million remaining to complete. No process/organization fracture is documented; LIH’s interest was fully redeemed for approximately 11.4 million Equity One shares, and the associated board resignation occurred in connection with termination of LIH’s nomination right rather than a reported operational or organizational breakdown.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

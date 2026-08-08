@@ -1,0 +1,58 @@
+{
+  "case_id": "P183",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2020 Pharmacy Solutions segment revenue was $3,635.9 million",
+      "rationale": "The provided evidence slice contains no documentation of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0). To the contrary, the record shows that PharMerica's former CFO was retained as president of the PharMerica business line, the board approved bonuses for successful integration, and no goodwill or intangible impairments were recorded through 2020."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill/intangible impairment through 2020; assets retained in combined entity",
+      "rationale": "The slice documents no product/process interface disruption: the former PharMerica institutional-pharmacy business was organized into a Pharmacy Solutions segment that generated $3,635.9 million revenue and $275.5 million segment EBITDA in 2020, with no goodwill or intangible impairment recorded in 2018–2020. No process/organization fracture is documented either; the former PharMerica CFO remained President of PharMerica/EVP of BrightSpring, and the board approved December 2020 bonuses tied to successful completion of the BrightSpring–PharMerica integration. Absence of any realized disruption evidence at these interfaces yields p4=0 and p5=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$3.6359 billion Pharmacy Solutions revenue in 2020'}",
+      "rationale": "{'type': 'string', 'enum': 'No product/process disruption is documented: the former PharMerica operations remained within Pharmacy Solutions, which generated $3,635.9 million of revenue and $275.5 million of segment EBITDA in 2020, while no goodwill or intangible impairment was recorded. No process/organization fracture is documented: PharMerica’s former CFO continued as president of the business line, and December 2020 bonuses were tied to successful completion of the BrightSpring/PharMerica integration rather than to a reported integration breakdown.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2020 Pharmacy Solutions segment revenue was $3,635.9 million\",\n  \"rationale\": \"The provided evidence slice contains no documentation of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0). To the contrary, the record shows that PharMerica's former CFO was retained as president of the PharMerica business line, the board approved bonuses for successful integration, and no goodwill or intangible impairments were recorded through 2020.\"\n}\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill/intangible impairment through 2020; assets retained in combined entity\",\n  \"rationale\": \"The slice documents no product/process interface disruption: the former PharMerica institutional-pharmacy business was organized into a Pharmacy Solutions segment that generated $3,635.9 million revenue and $275.5 million segment EBITDA in 2020, with no goodwill or intangible impairment recorded in 2018–2020. No process/organization fracture is documented either; the former PharMerica CFO remained President of PharMerica/EVP of BrightSpring, and the board approved December 2020 bonuses tied to successful completion of the BrightSpring–PharMerica integration. Absence of any realized disruption evidence at these interfaces yields p4=0 and p5=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$3.6359 billion Pharmacy Solutions revenue in 2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No product/process disruption is documented: the former PharMerica operations remained within Pharmacy Solutions, which generated $3,635.9 million of revenue and $275.5 million of segment EBITDA in 2020, while no goodwill or intangible impairment was recorded. No process/organization fracture is documented: PharMerica’s former CFO continued as president of the business line, and December 2020 bonuses were tied to successful completion of the BrightSpring/PharMerica integration rather than to a reported integration breakdown.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P298",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no standalone business-performance trajectory disclosed",
+      "rationale": "The slice indicates that the acquired bank was combined into the acquirer's bank at the legal-entity level and is not reported as a separate business segment. There is no documented evidence of disruption at the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the acquired entity was not carried forward as a separately reported business and that the acquirer's filings present no business-performance trajectory attributable to it, only residual acquisition-accounting and tax/capital line items. No realized disruption at the product/process interface is documented, so p4_pathway is 0. No realized fracture at the process/organization interface (operations vs people/management/culture) is documented, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$10.3 million assumed debt fully redeemed in Q1 2020",
+      "rationale": "The 2020 Form 10-K disclosed only residual acquisition-accounting and tax/capital items and no acquired-business trajectory for revenue, deposits, net income, or customers [SRC: SEC accession 0000824410-21-000017]. No realized product/process disruption or process/organization fracture was documented in the reviewed outcome record, so p4 and p5 are coded 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no standalone business-performance trajectory disclosed\",\n  \"rationale\": \"The slice indicates that the acquired bank was combined into the acquirer's bank at the legal-entity level and is not reported as a separate business segment. There is no documented evidence of disruption at the product/process or process/organization interfaces.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the acquired entity was not carried forward as a separately reported business and that the acquirer's filings present no business-performance trajectory attributable to it, only residual acquisition-accounting and tax/capital line items. No realized disruption at the product/process interface is documented, so p4_pathway is 0. No realized fracture at the process/organization interface (operations vs people/management/culture) is documented, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$10.3 million assumed debt fully redeemed in Q1 2020\",\n  \"rationale\": \"The 2020 Form 10-K disclosed only residual acquisition-accounting and tax/capital items and no acquired-business trajectory for revenue, deposits, net income, or customers [SRC: SEC accession 0000824410-21-000017]. No realized product/process disruption or process/organization fracture was documented in the reviewed outcome record, so p4 and p5 are coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P114",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "uncertain",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "These are asset purchases (not whole-company) in which discrete terminal and brokerage ASSET packages (T4) crossed the boundary into wholly owned subsidiaries, while the associated operating processes were flagged as a risk that the parties \"may be unable to ... successfully integrate [the seller]'s operations\" — a documented product-vs-process mismatch at closing (gap_45=1). The same reports flag \"the ability ... to retain certain key employees\" and the Carbo deal treats employee matters via an assumed \"Buyer Employee Obligations\" component rather than an intact people/culture transfer, showing processes/assets moving without the organization coherently transferring (gap_56=1). The gaps are contractually bridged at closing by the assumed Buyer Employee Obligations and the transitional Carbo Realty license agreement over the Inip Drive property \"until such time as an agreement granting ... an easement ... is properly recorded\" (gap_mitigated=yes). The acquiring LP's controlling intent continues (T1=continue); collapse_state is uncertain because although a named natural person (Paul Hochhauser) is a counterparty, the units were issued to corporate seller Carbo Industries, not establishing a person-as-legal-subject fusion for the acquirer."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a series of asset purchases (terminals and brokerage books) rather than whole-company acquisitions, meaning the legal entities did not transfer. While integration and employee retention were noted as risks, there is no documented structural mismatch at closing where assets transferred entirely without their associated processes or people."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "null",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The slice states the registrant purchased discrete terminal and brokerage ASSET packages into its subsidiaries, with those operating assets crossing the boundary, so customer-facing product and the operating substrate moved together as asset deals (gap_45=0). Contemporaneous 8-Ks expressly flag that parties 'may be unable to ... successfully integrate [the seller]'s operations' and retain 'certain key employees,' and that 'the purchased assets and the people/processes that run them were not treated as an automatically intact unit,' documenting processes/ops in scope without coherent org/people transfer at closing (gap_56=1). The only bridging instrument described is a Carbo transitional real-property license pending easement, plus assumed Buyer Employee Obligations—not a TSA allocating shared process-org substrate—so the gap is not contractually mitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"uncertain\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"These are asset purchases (not whole-company) in which discrete terminal and brokerage ASSET packages (T4) crossed the boundary into wholly owned subsidiaries, while the associated operating processes were flagged as a risk that the parties \\\"may be unable to ... successfully integrate [the seller]'s operations\\\" \\u2014 a documented product-vs-process mismatch at closing (gap_45=1). The same reports flag \\\"the ability ... to retain certain key employees\\\" and the Carbo deal treats employee matters via an assumed \\\"Buyer Employee Obligations\\\" component rather than an intact people/culture transfer, showing processes/assets moving without the organization coherently transferring (gap_56=1). The gaps are contractually bridged at closing by the assumed Buyer Employee Obligations and the transitional Carbo Realty license agreement over the Inip Drive property \\\"until such time as an agreement granting ... an easement ... is properly recorded\\\" (gap_mitigated=yes). The acquiring LP's controlling intent continues (T1=continue); collapse_state is uncertain because although a named natural person (Paul Hochhauser) is a counterparty, the units were issued to corporate seller Carbo Industries, not establishing a person-as-legal-subject fusion for the acquirer.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a series of asset purchases (terminals and brokerage books) rather than whole-company acquisitions, meaning the legal entities did not transfer. While integration and employee retention were noted as risks, there is no documented structural mismatch at closing where assets transferred entirely without their associated processes or people.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The slice states the registrant purchased discrete terminal and brokerage ASSET packages into its subsidiaries, with those operating assets crossing the boundary, so customer-facing product and the operating substrate moved together as asset deals (gap_45=0). Contemporaneous 8-Ks expressly flag that parties 'may be unable to ... successfully integrate [the seller]'s operations' and retain 'certain key employees,' and that 'the purchased assets and the people/processes that run them were not treated as an automatically intact unit,' documenting processes/ops in scope without coherent org/people transfer at closing (gap_56=1). The only bridging instrument described is a Carbo transitional real-property license pending easement, plus assumed Buyer Employee Obligations—not a TSA allocating shared process-org substrate—so the gap is not contractually mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": true
+  },
+  "n_flags": 1
+}

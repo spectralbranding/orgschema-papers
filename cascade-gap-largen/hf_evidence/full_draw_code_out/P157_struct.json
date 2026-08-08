@@ -1,0 +1,85 @@
+{
+  "case_id": "P157",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that the assets (T4) and their producing processes (T5) were split among two buyers (Blackhawk and ERP/VCLF) but transferred together as going concerns ('mining operations and customer shipments will continue in the ordinary course'). Similarly, the processes (T5) moved with the people (T6), as a 'substantial majority of Patriot employees at our mining operations' were expected to be offered employment with the respective buyers. Thus, there are no structural gaps at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice expressly states product and producing processes crossed together as going concerns: \"Patriot's mining operations and customer shipments will continue in the ordinary course during the sale process\" and \"operations transferred as going concerns rather than the assets crossing without their operating processes.\" gap_56=0 because the same closing materials state processes moved with the people who run them: \"a substantial majority of Patriot employees at our mining operations were expected to be offered employment with Blackhawk or VCLF\" and VCLF expected to maintain the then-current employment level; no product-process or process-organization structural mismatch is documented at closing, so gap_mitigated=NA."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that operating mines were transferred to Blackhawk while reclamation-heavy assets and legacy obligations were transferred to ERP/VCLF, and specifically says the mining operations continued in the ordinary course as going concerns; thus, the products and producing processes moved together rather than creating a T4–T5 gap. It also states that a substantial majority of employees at the mining operations were expected to receive employment offers from the buyers and that VCLF expected to maintain the existing 683-employee level, documenting coherent workforce alignment with the transferred processes despite an incomplete workforce transfer. Accordingly, gap_45 and gap_56 are both coded 0, and no transitional-services mitigation is applicable."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"1-N\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice documents that the assets (T4) and their producing processes (T5) were split among two buyers (Blackhawk and ERP/VCLF) but transferred together as going concerns ('mining operations and customer shipments will continue in the ordinary course'). Similarly, the processes (T5) moved with the people (T6), as a 'substantial majority of Patriot employees at our mining operations' were expected to be offered employment with the respective buyers. Thus, there are no structural gaps at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice expressly states product and producing processes crossed together as going concerns: \\\"Patriot's mining operations and customer shipments will continue in the ordinary course during the sale process\\\" and \\\"operations transferred as going concerns rather than the assets crossing without their operating processes.\\\" gap_56=0 because the same closing materials state processes moved with the people who run them: \\\"a substantial majority of Patriot employees at our mining operations were expected to be offered employment with Blackhawk or VCLF\\\" and VCLF expected to maintain the then-current employment level; no product-process or process-organization structural mismatch is documented at closing, so gap_mitigated=NA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that operating mines were transferred to Blackhawk while reclamation-heavy assets and legacy obligations were transferred to ERP/VCLF, and specifically says the mining operations continued in the ordinary course as going concerns; thus, the products and producing processes moved together rather than creating a T4–T5 gap. It also states that a substantial majority of employees at the mining operations were expected to receive employment offers from the buyers and that VCLF expected to maintain the existing 683-employee level, documenting coherent workforce alignment with the transferred processes despite an incomplete workforce transfer. Accordingly, gap_45 and gap_56 are both coded 0, and no transitional-services mitigation is applicable.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-N",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

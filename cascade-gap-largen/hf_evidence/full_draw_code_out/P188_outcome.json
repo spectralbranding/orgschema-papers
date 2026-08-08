@@ -1,0 +1,58 @@
+{
+  "case_id": "P188",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice provides no evidence of disruption at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway). The acquired entity was integrated into a single operating segment, and there is no documented fracture or incoherence reported in the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents only that DFT terminated separate SEC reporting shortly after closing and that Digital Realty's FY2020 10-K reports a single operating/reporting segment with no isolated DFT portfolio metrics or any integration narrative. No evidence of product/process misalignment or operations-versus-organization fracture appears in the traceable post-deal record, so both pathways code to absence-of-evidence (0). The same filings supply no realized-outcome scalar isolating the acquired business."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The acquired entity terminated separate SEC reporting shortly after closing, and by FY2020 Digital Realty reported only one operating and reporting segment without isolating the former DFT portfolio’s performance [SRC: SEC accession 0001193125-17-297819, Form 15-12B] [SRC: SEC accession 0001558370-21-002191, Form 10-K FY2020]. Consequently, the slice provides no traceable 3–5-year evidence sufficient to determine whether disruption occurred at either the product/process or process/organization interface."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The slice provides no evidence of disruption at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway). The acquired entity was integrated into a single operating segment, and there is no documented fracture or incoherence reported in the 3-5 year horizon.\"\n}\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents only that DFT terminated separate SEC reporting shortly after closing and that Digital Realty's FY2020 10-K reports a single operating/reporting segment with no isolated DFT portfolio metrics or any integration narrative. No evidence of product/process misalignment or operations-versus-organization fracture appears in the traceable post-deal record, so both pathways code to absence-of-evidence (0). The same filings supply no realized-outcome scalar isolating the acquired business.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The acquired entity terminated separate SEC reporting shortly after closing, and by FY2020 Digital Realty reported only one operating and reporting segment without isolating the former DFT portfolio’s performance [SRC: SEC accession 0001193125-17-297819, Form 15-12B] [SRC: SEC accession 0001558370-21-002191, Form 10-K FY2020]. Consequently, the slice provides no traceable 3–5-year evidence sufficient to determine whether disruption occurred at either the product/process or process/organization interface.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

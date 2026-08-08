@@ -1,0 +1,85 @@
+{
+  "case_id": "P349",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition structured as a reverse triangular merger, transferring the entire corporate entity, its products, operations, and employees together. There is no evidence of a structural mismatch between the product (T4) and operational processes (T5), nor between the processes (T5) and the organization/people (T6) at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company reverse triangular merger in which Merger Sub merged into Navigators and the Company survived as a wholly owned subsidiary of Hartford, so the specialty-insurance product layer and the operating subsidiaries that underwrite and deliver it crossed together with no product-vs-process carve-out at closing (gap_45=0). Workforce and benefit-plan continuity for at least one year was negotiated into the closing structure alongside the entity transfer, even though CEO/CFO and certain directors ceased at the effective time; processes and organization therefore moved as part of the same surviving entity rather than in structural mismatch (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire Company survived as Parent's wholly owned subsidiary, so its customized insurance products and the operating processes housed in the whole-company business crossed the ownership boundary together; no product-versus-process separation was documented at closing. Employee benefit plans were negotiated to remain in place for at least one year, while designated directors replaced existing directors and the CEO and CFO ceased serving in those roles; this supports a partial organizational transfer but does not document a closing-time process-versus-organization mismatch."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition structured as a reverse triangular merger, transferring the entire corporate entity, its products, operations, and employees together. There is no evidence of a structural mismatch between the product (T4) and operational processes (T5), nor between the processes (T5) and the organization/people (T6) at closing.\"\n\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company reverse triangular merger in which Merger Sub merged into Navigators and the Company survived as a wholly owned subsidiary of Hartford, so the specialty-insurance product layer and the operating subsidiaries that underwrite and deliver it crossed together with no product-vs-process carve-out at closing (gap_45=0). Workforce and benefit-plan continuity for at least one year was negotiated into the closing structure alongside the entity transfer, even though CEO/CFO and certain directors ceased at the effective time; processes and organization therefore moved as part of the same surviving entity rather than in structural mismatch (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The entire Company survived as Parent's wholly owned subsidiary, so its customized insurance products and the operating processes housed in the whole-company business crossed the ownership boundary together; no product-versus-process separation was documented at closing. Employee benefit plans were negotiated to remain in place for at least one year, while designated directors replaced existing directors and the CEO and CFO ceased serving in those roles; this supports a partial organizational transfer but does not document a closing-time process-versus-organization mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

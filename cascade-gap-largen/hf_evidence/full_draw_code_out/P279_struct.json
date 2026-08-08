@@ -1,0 +1,85 @@
+{
+  "case_id": "P279",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 = 1: FGL's customer-facing product lines (fixed indexed annuities, MYGA, IUL) crossed into the surviving structure while the operational asset-management process for FGL's general account was NOT transferred intact — instead a newly formed Blackstone subsidiary was appointed investment manager under a new Investment Management Agreement, \"rather than an intact pre-existing function transferring unchanged,\" creating a product-vs-process structural mismatch at closing; this substrate was contractually absorbed via that Investment Management Agreement, hence gap_mitigated = yes. gap_56 = 0: the re-engineered/continuing operations moved together with the people/organization — FGL \"continue[d] to be led by certain members of its current management team,\" key managers (Littlefield, Marhoun, Vigneau) joined as executive officers, and the twelve-month employee-matters provisions preserved compensation, benefits and severance, so process and organization aligned coherently. T1 coded replace because the CF Corp. sponsor/controlling layer (Chu, Foley as Co-Executive Chairmen) was installed atop the shell-to-operating conversion, replacing HRG's controlling intent."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing, FGL's annuity and life product lines crossed with FGL surviving as the operating subsidiary, and the Merger Agreement required ordinary-course conduct and preservation of the business organization, so customer-facing products and the processes that produce them moved together (gap_45=0). Continuing FGL operating management (Littlefield, Marhoun, Vigneau and certain other current managers) and twelve-month employee compensation/benefits protections were locked in alongside those operations, while the new Blackstone Investment Management Agreement expressly aligned the re-engineered general-account investment process with a designated manager rather than leaving processes without an organization (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing annuity and life-insurance product lines crossed with surviving FGL, but a core supporting process—general-account investment management—did not transfer unchanged and was instead assigned under a new Investment Management Agreement to a newly formed Blackstone subsidiary, documenting a T4–T5 mismatch at closing. That re-engineered process was operated by a separate Blackstone organization rather than the transferring FGL organization, documenting a T5–T6 boundary mismatch. The Investment Management Agreement contractually bridged both mismatches, while the employee-matters provisions separately preserved continuity for FGL personnel."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 = 1: FGL's customer-facing product lines (fixed indexed annuities, MYGA, IUL) crossed into the surviving structure while the operational asset-management process for FGL's general account was NOT transferred intact \\u2014 instead a newly formed Blackstone subsidiary was appointed investment manager under a new Investment Management Agreement, \\\"rather than an intact pre-existing function transferring unchanged,\\\" creating a product-vs-process structural mismatch at closing; this substrate was contractually absorbed via that Investment Management Agreement, hence gap_mitigated = yes. gap_56 = 0: the re-engineered/continuing operations moved together with the people/organization \\u2014 FGL \\\"continue[d] to be led by certain members of its current management team,\\\" key managers (Littlefield, Marhoun, Vigneau) joined as executive officers, and the twelve-month employee-matters provisions preserved compensation, benefits and severance, so process and organization aligned coherently. T1 coded replace because the CF Corp. sponsor/controlling layer (Chu, Foley as Co-Executive Chairmen) was installed atop the shell-to-operating conversion, replacing HRG's controlling intent.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing, FGL's annuity and life product lines crossed with FGL surviving as the operating subsidiary, and the Merger Agreement required ordinary-course conduct and preservation of the business organization, so customer-facing products and the processes that produce them moved together (gap_45=0). Continuing FGL operating management (Littlefield, Marhoun, Vigneau and certain other current managers) and twelve-month employee compensation/benefits protections were locked in alongside those operations, while the new Blackstone Investment Management Agreement expressly aligned the re-engineered general-account investment process with a designated manager rather than leaving processes without an organization (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing annuity and life-insurance product lines crossed with surviving FGL, but a core supporting process—general-account investment management—did not transfer unchanged and was instead assigned under a new Investment Management Agreement to a newly formed Blackstone subsidiary, documenting a T4–T5 mismatch at closing. That re-engineered process was operated by a separate Blackstone organization rather than the transferring FGL organization, documenting a T5–T6 boundary mismatch. The Investment Management Agreement contractually bridged both mismatches, while the employee-matters provisions separately preserved continuity for FGL personnel.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

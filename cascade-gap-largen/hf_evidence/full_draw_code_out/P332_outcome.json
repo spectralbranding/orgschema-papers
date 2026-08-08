@@ -1,0 +1,58 @@
+{
+  "case_id": "P332",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Resold ~48 months after go-private for ~$8.5bn vs ~$5.0-5.5bn paid (2017), described as \"a healthy return\"",
+      "rationale": "The realized record documents a continuing operating business at broadly similar scale (18,000+ colleagues, trials in 95+ countries) and a profitable resale to EQT/Goldman Sachs in 2021, with no documented product/operations incoherence — so p4_pathway is 0. Likewise, no documented operations-vs-organization fracture appears: the only personnel event is a pre-window CEO succession (founder von Rickenbach stepping down in March 2018), with Macdonald continuing to lead through the 2021 close, and no evidence of integration breaking against people/management/culture — so p5_pathway is 0. No archetype incoherence or business-model incompatibility is documented in the slice."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sold for approximately $8.5 billion",
+      "rationale": "The slice documents that PAREXEL operated successfully under private ownership, adapting to the pandemic and maintaining over 18,000 employees. There is no documented evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0), as the company was ultimately sold for approximately $8.5 billion in 2021, representing a healthy return for the initial acquirer."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sold for ~$8.5bn after ~4 years (healthy return)",
+      "rationale": "The slice documents no product/process interface disruption: within the 2020-2022 window PAREXEL continued at broadly similar scale (18,000+ colleagues; trials in 95+ countries) and was resold intact for ~$8.5bn. No process/organization fracture is documented either; the only leadership change noted is a pre-window founder-CEO succession (2018), after which the company operated under continuing CEO Jamie Macdonald through the completed 2021 change-of-control with the existing executive team retained. Absence of any realized disruption evidence codes both pathways 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Resold ~48 months after go-private for ~$8.5bn vs ~$5.0-5.5bn paid (2017), described as \\\"a healthy return\\\"\", \"rationale\": \"The realized record documents a continuing operating business at broadly similar scale (18,000+ colleagues, trials in 95+ countries) and a profitable resale to EQT/Goldman Sachs in 2021, with no documented product/operations incoherence \\u2014 so p4_pathway is 0. Likewise, no documented operations-vs-organization fracture appears: the only personnel event is a pre-window CEO succession (founder von Rickenbach stepping down in March 2018), with Macdonald continuing to lead through the 2021 close, and no evidence of integration breaking against people/management/culture \\u2014 so p5_pathway is 0. No archetype incoherence or business-model incompatibility is documented in the slice.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sold for approximately $8.5 billion\",\n  \"rationale\": \"The slice documents that PAREXEL operated successfully under private ownership, adapting to the pandemic and maintaining over 18,000 employees. There is no documented evidence of product/process disruption (p4_pathway = 0) or process/organization fracture (p5_pathway = 0), as the company was ultimately sold for approximately $8.5 billion in 2021, representing a healthy return for the initial acquirer.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sold for ~$8.5bn after ~4 years (healthy return)\",\n  \"rationale\": \"The slice documents no product/process interface disruption: within the 2020-2022 window PAREXEL continued at broadly similar scale (18,000+ colleagues; trials in 95+ countries) and was resold intact for ~$8.5bn. No process/organization fracture is documented either; the only leadership change noted is a pre-window founder-CEO succession (2018), after which the company operated under continuing CEO Jamie Macdonald through the completed 2021 change-of-control with the existing executive team retained. Absence of any realized disruption evidence codes both pathways 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

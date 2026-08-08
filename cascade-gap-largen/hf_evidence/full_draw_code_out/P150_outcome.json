@@ -1,0 +1,58 @@
+{
+  "case_id": "P150",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "no acquisition; registrant outbid at auction, no ownership boundary crossed",
+      "rationale": "The slice documents that the registrant's stalking-horse bid was outbid and it never acquired or operated the Fontainebleau asset, so no operating business, workforce, or process substrate was ever transferred. With no realized integration trajectory, there is no documented product/process interface record (p4) nor process/organization interface record (p5) to observe. Both are coded uncertain because the absence stems from the deal never closing, not from documented evidence of no disruption during an integration."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "never consummated; no asset acquired",
+      "rationale": "The slice states that a competing bidder outbid the registrant and no ownership boundary was crossed, so the acquisition never closed and no operating business or processes were transferred. Consequently there is no realized post-close integration trajectory and no documented product/process or process/organization interface record at the 3-5 year horizon; the outcome is explicitly coded uncertain/not-applicable. The fiscal-2013 10-K likewise contains no reference to Fontainebleau among the registrant's assets, confirming the absence of any observable integration outcome."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Acquisition not consummated; no realized integration outcome",
+      "rationale": "The February 4, 2010 Form 8-K exhibit documents that a competing bidder outbid the registrant and that the Fontainebleau asset was never acquired. Consequently, no acquired business entered a post-close product/process or process/organization integration trajectory, and the fiscal-2013 Form 10-K confirms that Fontainebleau was not among the registrant's owned or operated assets."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"no acquisition; registrant outbid at auction, no ownership boundary crossed\", \"rationale\": \"The slice documents that the registrant's stalking-horse bid was outbid and it never acquired or operated the Fontainebleau asset, so no operating business, workforce, or process substrate was ever transferred. With no realized integration trajectory, there is no documented product/process interface record (p4) nor process/organization interface record (p5) to observe. Both are coded uncertain because the absence stems from the deal never closing, not from documented evidence of no disruption during an integration.\"}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"never consummated; no asset acquired\",\n  \"rationale\": \"The slice states that a competing bidder outbid the registrant and no ownership boundary was crossed, so the acquisition never closed and no operating business or processes were transferred. Consequently there is no realized post-close integration trajectory and no documented product/process or process/organization interface record at the 3-5 year horizon; the outcome is explicitly coded uncertain/not-applicable. The fiscal-2013 10-K likewise contains no reference to Fontainebleau among the registrant's assets, confirming the absence of any observable integration outcome.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"Acquisition not consummated; no realized integration outcome\",\n  \"rationale\": \"The February 4, 2010 Form 8-K exhibit documents that a competing bidder outbid the registrant and that the Fontainebleau asset was never acquired. Consequently, no acquired business entered a post-close product/process or process/organization integration trajectory, and the fiscal-2013 Form 10-K confirms that Fontainebleau was not among the registrant's owned or operated assets.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

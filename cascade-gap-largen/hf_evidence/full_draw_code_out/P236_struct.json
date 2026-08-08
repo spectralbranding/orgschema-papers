@@ -1,0 +1,85 @@
+{
+  "case_id": "P236",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Whole-bank stock merger: Paragon Bank merged into TowneBank as the surviving institution, so the customer-facing product (three NC banking offices, continued \"as Paragon Bank, a division of TowneBank\") crossed the boundary together with its operating processes folded into TowneBank's operations — product and process moved together, so gap_45=0. On T5/T6, the deal structured a pre-signing package of new TowneBank employment agreements for Paragon's CEO and leadership team plus board-seat and NC-regional advisory-board arrangements carrying named personnel into the combined organization alongside the operations, so processes and the people running them transferred coherently (gap_56=0); the risk-factor language about \"reducing overlapping bank personnel\" is a flagged integration risk, not a documented structural mismatch at closing. Paragon's holding-company and NC bank charters were extinguished (T3 terminate) with TowneBank's controlling intent installed (T1 replace)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-bank merger where Paragon's branches (T4) and operations (T5) transferred together to TowneBank. There is no documented structural mismatch between the product and process tiers (gap_45 = 0). Similarly, Paragon's leadership and personnel were integrated into TowneBank to run the acquired operations, with no documented structural gap between processes and the organization running them at closing (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice describes a whole-bank two-step merger in which Paragon Bank’s customer offices and the ‘Paragon Bank, a division of TowneBank’ product layer closed together with the bank-into-TowneBank operational merger, so T4 and T5 crossed together. gap_56=0 because the same closing structure expressly installed new TowneBank employment agreements for Paragon’s CEO, COO and named officers plus NC regional/advisory board seats at closing, aligning T6 personnel with the transferred operations rather than leaving processes without an organization substrate; personnel-reduction language appears only as a forward integration risk factor, not as a closing structural mismatch."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"Whole-bank stock merger: Paragon Bank merged into TowneBank as the surviving institution, so the customer-facing product (three NC banking offices, continued \\\"as Paragon Bank, a division of TowneBank\\\") crossed the boundary together with its operating processes folded into TowneBank's operations \\u2014 product and process moved together, so gap_45=0. On T5/T6, the deal structured a pre-signing package of new TowneBank employment agreements for Paragon's CEO and leadership team plus board-seat and NC-regional advisory-board arrangements carrying named personnel into the combined organization alongside the operations, so processes and the people running them transferred coherently (gap_56=0); the risk-factor language about \\\"reducing overlapping bank personnel\\\" is a flagged integration risk, not a documented structural mismatch at closing. Paragon's holding-company and NC bank charters were extinguished (T3 terminate) with TowneBank's controlling intent installed (T1 replace).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-bank merger where Paragon's branches (T4) and operations (T5) transferred together to TowneBank. There is no documented structural mismatch between the product and process tiers (gap_45 = 0). Similarly, Paragon's leadership and personnel were integrated into TowneBank to run the acquired operations, with no documented structural gap between processes and the organization running them at closing (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice describes a whole-bank two-step merger in which Paragon Bank’s customer offices and the ‘Paragon Bank, a division of TowneBank’ product layer closed together with the bank-into-TowneBank operational merger, so T4 and T5 crossed together. gap_56=0 because the same closing structure expressly installed new TowneBank employment agreements for Paragon’s CEO, COO and named officers plus NC regional/advisory board seats at closing, aligning T6 personnel with the transferred operations rather than leaving processes without an organization substrate; personnel-reduction language appears only as a forward integration risk factor, not as a closing structural mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

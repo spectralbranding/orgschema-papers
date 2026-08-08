@@ -1,0 +1,85 @@
+{
+  "case_id": "P223",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a combination where Knight became a wholly owned subsidiary of Swift (renamed Knight-Swift). The businesses were to be operated separately under a single combined company, meaning products (T4) and processes (T5) transferred intact and aligned. The organization (T6) also transferred intact, with Knight's management taking over the combined company, showing no structural mismatch between T5 and T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The joint proxy states the parties 'agreed to a combination transaction after which their respective businesses would be operated separately under a single combined company,' so each firm's customer-facing business and the processes that deliver it crossed together and remained paired at closing (gap_45=0). At the effective time the combined-company senior leadership was drawn from Knight, both predecessor workforces' benefit plans and service credit were contractually honored, and indemnification for both sides' pre-merger directors and officers was assumed, so processes and organization were aligned at closing with no structural people/process mismatch (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The joint proxy stated that Knight’s and Swift’s respective businesses would be operated separately under one combined company, and Knight survived as a wholly owned operating subsidiary, documenting no closing-time separation of customer-facing offerings from their operating processes. The transaction also carried Knight’s senior leadership into the combined company and contractually preserved benefit-plan service credit for continuing employees of both predecessors, so no process-versus-organization mismatch is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a combination where Knight became a wholly owned subsidiary of Swift (renamed Knight-Swift). The businesses were to be operated separately under a single combined company, meaning products (T4) and processes (T5) transferred intact and aligned. The organization (T6) also transferred intact, with Knight's management taking over the combined company, showing no structural mismatch between T5 and T6.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The joint proxy states the parties 'agreed to a combination transaction after which their respective businesses would be operated separately under a single combined company,' so each firm's customer-facing business and the processes that deliver it crossed together and remained paired at closing (gap_45=0). At the effective time the combined-company senior leadership was drawn from Knight, both predecessor workforces' benefit plans and service credit were contractually honored, and indemnification for both sides' pre-merger directors and officers was assumed, so processes and organization were aligned at closing with no structural people/process mismatch (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The joint proxy stated that Knight’s and Swift’s respective businesses would be operated separately under one combined company, and Knight survived as a wholly owned operating subsidiary, documenting no closing-time separation of customer-facing offerings from their operating processes. The transaction also carried Knight’s senior leadership into the combined company and contractually preserved benefit-plan service credit for continuing employees of both predecessors, so no process-versus-organization mismatch is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

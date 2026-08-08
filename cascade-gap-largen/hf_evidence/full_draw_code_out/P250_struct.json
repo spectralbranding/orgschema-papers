@@ -1,0 +1,85 @@
+{
+  "case_id": "P250",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was structured as a whole-company cash merger in which Merger Sub merged into the company, with the company surviving intact as a wholly owned subsidiary — legal vehicle, name, and self-described owner-operator-franchisor business model/product continued 1-1, and the entire operating substrate crossed the ownership boundary together rather than as a carve-out. Because the customer-facing restaurant/franchise product (T4) and its operating processes (T5) moved together as one intact company, gap_45 is 0; likewise the processes (T5) and the people/operations (T6) transferred together within the same surviving entity, so gap_56 is 0. The proxy explicitly notes no transition-services or shared-substrate bridging agreement was needed because the whole company, not a carved-out tier, crossed the boundary. T6 is coded partial and T1 replace because the entire pre-merger board was replaced by Merger Sub's directors at closing and the CEO was mid-succession-search and excluded from retention arrangements, indicating a new controlling intent installed while most executives/employees were retained."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company cash merger where Buffalo Wild Wings survived as a wholly owned subsidiary of Arby's. The entire company, including its products (T4), operations (T5), and organization (T6), transferred together without any documented structural mismatch or carve-out gaps at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures the deal as an outright whole-company cash merger in which Merger Sub merged into Buffalo Wild Wings, the company surviving intact as Arby's wholly owned subsidiary, with its franchisor business model/product and operating company crossing together; no product-vs-process carve-out or mismatch at closing is documented, so gap_45=0. Employment agreements and benefit plans were to be honored and pre-closing executive retention bonuses were put in place (CEO already in succession), and the structural summary states the whole company rather than a carved-out tier crossed with no TSA/shared-substrate bridge identified or needed, so processes and organization moved together and gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was structured as a whole-company cash merger in which Merger Sub merged into the company, with the company surviving intact as a wholly owned subsidiary \\u2014 legal vehicle, name, and self-described owner-operator-franchisor business model/product continued 1-1, and the entire operating substrate crossed the ownership boundary together rather than as a carve-out. Because the customer-facing restaurant/franchise product (T4) and its operating processes (T5) moved together as one intact company, gap_45 is 0; likewise the processes (T5) and the people/operations (T6) transferred together within the same surviving entity, so gap_56 is 0. The proxy explicitly notes no transition-services or shared-substrate bridging agreement was needed because the whole company, not a carved-out tier, crossed the boundary. T6 is coded partial and T1 replace because the entire pre-merger board was replaced by Merger Sub's directors at closing and the CEO was mid-succession-search and excluded from retention arrangements, indicating a new controlling intent installed while most executives/employees were retained.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company cash merger where Buffalo Wild Wings survived as a wholly owned subsidiary of Arby's. The entire company, including its products (T4), operations (T5), and organization (T6), transferred together without any documented structural mismatch or carve-out gaps at closing.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures the deal as an outright whole-company cash merger in which Merger Sub merged into Buffalo Wild Wings, the company surviving intact as Arby's wholly owned subsidiary, with its franchisor business model/product and operating company crossing together; no product-vs-process carve-out or mismatch at closing is documented, so gap_45=0. Employment agreements and benefit plans were to be honored and pre-closing executive retention bonuses were put in place (CEO already in succession), and the structural summary states the whole company rather than a carved-out tier crossed with no TSA/shared-substrate bridge identified or needed, so processes and organization moved together and gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

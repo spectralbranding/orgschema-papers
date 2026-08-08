@@ -1,0 +1,85 @@
+{
+  "case_id": "P015",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a pro rata spin-off in which the newly formed registrant received its five operating segments (T4 product) together with the delivery organizations and ~252,000 employees (T6) and management continuity under Whitman, so product, processes and people moved together within the same distributed entity rather than being separated from one another — no product-vs-process mismatch (gap_45=0) and no process-vs-people mismatch (gap_56=0). The only friction is at the level of historically shared corporate functions (finance, HR, IT, supply chain), which were divided rather than transferred whole (T5 partial) but were coherently bridged at closing by a transition services agreement (up to 24 months, cost-plus), an IT service agreement, and employee/real estate matters agreements. Because the operating businesses and their workforce were held within the distributed entity as an integrated bundle, no structural transfer gap between adjacent tiers is documented at closing."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction split HP Co. into two independent companies (HP Inc. and Hewlett Packard Enterprise), dividing the business model, legal entities, products, processes, and organization (1-N). The products and their direct delivery organizations were transferred together (gap_45 = 0). However, historically shared operational processes (finance, HR, IT, supply chain) were divided and required a Transition Services Agreement to bridge the gap between the separated processes and the organizations running them (gap_56 = 1, gap_mitigated = yes)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-N",
+      "sigma_T6": "1-N",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the five enterprise customer-facing segments and their delivery organizations were placed together inside the distributed HPE entity, so T4 product and T5 process crossed the ownership boundary in alignment (gap_45=0). The slice expressly states that the operating businesses, delivery organizations, and approximately 252,000 employees were held within the entity being distributed and were allocated under an employee matters agreement, so T5 processes and T6 organization likewise moved together (gap_56=0). Division of historically shared corporate functions with TSA/IT/commercial bridging is substrate allocation between the two resulting companies, not a product-without-process or process-without-organization mismatch at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a pro rata spin-off in which the newly formed registrant received its five operating segments (T4 product) together with the delivery organizations and ~252,000 employees (T6) and management continuity under Whitman, so product, processes and people moved together within the same distributed entity rather than being separated from one another \\u2014 no product-vs-process mismatch (gap_45=0) and no process-vs-people mismatch (gap_56=0). The only friction is at the level of historically shared corporate functions (finance, HR, IT, supply chain), which were divided rather than transferred whole (T5 partial) but were coherently bridged at closing by a transition services agreement (up to 24 months, cost-plus), an IT service agreement, and employee/real estate matters agreements. Because the operating businesses and their workforce were held within the distributed entity as an integrated bundle, no structural transfer gap between adjacent tiers is documented at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-N\",\n\"sigma_T6\": \"1-N\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction split HP Co. into two independent companies (HP Inc. and Hewlett Packard Enterprise), dividing the business model, legal entities, products, processes, and organization (1-N). The products and their direct delivery organizations were transferred together (gap_45 = 0). However, historically shared operational processes (finance, HR, IT, supply chain) were divided and required a Transition Services Agreement to bridge the gap between the separated processes and the organizations running them (gap_56 = 1, gap_mitigated = yes).\"",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-N\",\n  \"sigma_T6\": \"1-N\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the five enterprise customer-facing segments and their delivery organizations were placed together inside the distributed HPE entity, so T4 product and T5 process crossed the ownership boundary in alignment (gap_45=0). The slice expressly states that the operating businesses, delivery organizations, and approximately 252,000 employees were held within the entity being distributed and were allocated under an employee matters agreement, so T5 processes and T6 organization likewise moved together (gap_56=0). Division of historically shared corporate functions with TSA/IT/commercial bridging is substrate allocation between the two resulting companies, not a product-without-process or process-without-organization mismatch at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-N",
+    "sigma_T6": "1-N",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P071",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "null",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 is 0 because at closing the customer-facing Pipeline (T4) did not yet exist — it was a to-be-constructed asset, so no delivered product crossed the boundary to be mismatched against processes (\"at closing the Pipeline did not yet exist; it was a to-be-constructed asset\"). gap_56 is 1 because the operational processes (construction, operation, maintenance) were structurally separated from Piedmont's own organization — \"the operational processes... were not brought into Piedmont's own organization: ACP contracted with a subsidiary of Dominion Resources... to perform the construction, operation and maintenance,\" so processes and the org running them did not align with Piedmont's participation. That gap was contractually absorbed at closing via the LLC/operating arrangement assigning the operating substrate to Dominion's affiliate by contract, so gap_mitigated is yes."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the Pipeline (T4) did not yet exist and was only a to-be-constructed asset, so no customer-facing product crossed the ownership boundary; Piedmont acquired solely a 10% capital membership interest in the newly formed ACP vehicle [SRC: 8-K Item 1.01]. Operational processes (construction, operation, maintenance) were contractually assigned to a Dominion subsidiary rather than transferred into Piedmont ACP, and no Piedmont-side organization/people moved with them, so neither T5 nor T6 crossed to Piedmont and no product-without-process or process-without-organization mismatch at the boundary is documented [SRC: 8-K Item 1.01]."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "null",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing Pipeline did not exist at closing; Piedmont acquired a 10% capital-contribution stake in the vehicle that would build and own it, rather than a delivered operating asset. Construction, operation, and maintenance were coherently assigned by contract to a Dominion affiliate, so no product crossed without an allocated process substrate and no process was transferred or re-engineered without an aligned operating organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"null\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 is 0 because at closing the customer-facing Pipeline (T4) did not yet exist \\u2014 it was a to-be-constructed asset, so no delivered product crossed the boundary to be mismatched against processes (\\\"at closing the Pipeline did not yet exist; it was a to-be-constructed asset\\\"). gap_56 is 1 because the operational processes (construction, operation, maintenance) were structurally separated from Piedmont's own organization \\u2014 \\\"the operational processes... were not brought into Piedmont's own organization: ACP contracted with a subsidiary of Dominion Resources... to perform the construction, operation and maintenance,\\\" so processes and the org running them did not align with Piedmont's participation. That gap was contractually absorbed at closing via the LLC/operating arrangement assigning the operating substrate to Dominion's affiliate by contract, so gap_mitigated is yes.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the Pipeline (T4) did not yet exist and was only a to-be-constructed asset, so no customer-facing product crossed the ownership boundary; Piedmont acquired solely a 10% capital membership interest in the newly formed ACP vehicle [SRC: 8-K Item 1.01]. Operational processes (construction, operation, maintenance) were contractually assigned to a Dominion subsidiary rather than transferred into Piedmont ACP, and no Piedmont-side organization/people moved with them, so neither T5 nor T6 crossed to Piedmont and no product-without-process or process-without-organization mismatch at the boundary is documented [SRC: 8-K Item 1.01].\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing Pipeline did not exist at closing; Piedmont acquired a 10% capital-contribution stake in the vehicle that would build and own it, rather than a delivered operating asset. Construction, operation, and maintenance were coherently assigned by contract to a Dominion affiliate, so no product crossed without an allocated process substrate and no process was transferred or re-engineered without an aligned operating organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "null",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

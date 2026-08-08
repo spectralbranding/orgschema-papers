@@ -1,0 +1,85 @@
+{
+  "case_id": "P263",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a double-dummy merger where both Delek and Alon became wholly owned subsidiaries of a new holding company. Alon's products (T4), operations (T5), and employees (T6) transferred together into the new structure without any documented structural mismatch or carve-out at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing both parties’ operating businesses were placed intact under one new HoldCo via simultaneous mergers in which each operating company survived as a wholly owned subsidiary, so customer-facing product/asset layers and the operational processes that produce them crossed together with no product-vs-process structural mismatch (gap_45=0). The same merger structure moved the people/organization tier with the entities, and the Employee Matters covenant expressly continued unions, CBAs, benefit plans and assumed unvested Alon equity awards, so processes were not transferred without organizational alignment (gap_56=0); no transitional-services agreement was needed or disclosed."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that both parties' operating businesses were placed under HoldCo, while the risk-factor disclosure contemplated integration of Alon's operations, technologies, and systems rather than separating products from their operating processes; therefore gap_45 is 0. For gap_56, the Employee Matters covenant preserved labor representation, benefit plans, collective bargaining agreements, and specified pension protections alongside the transferred operations. Although substantial operational and organizational integration remained, the slice documents no closing-time separation of processes from the people or organization running them, so gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a double-dummy merger where both Delek and Alon became wholly owned subsidiaries of a new holding company. Alon's products (T4), operations (T5), and employees (T6) transferred together into the new structure without any documented structural mismatch or carve-out at closing.\"",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing both parties’ operating businesses were placed intact under one new HoldCo via simultaneous mergers in which each operating company survived as a wholly owned subsidiary, so customer-facing product/asset layers and the operational processes that produce them crossed together with no product-vs-process structural mismatch (gap_45=0). The same merger structure moved the people/organization tier with the entities, and the Employee Matters covenant expressly continued unions, CBAs, benefit plans and assumed unvested Alon equity awards, so processes were not transferred without organizational alignment (gap_56=0); no transitional-services agreement was needed or disclosed.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that both parties' operating businesses were placed under HoldCo, while the risk-factor disclosure contemplated integration of Alon's operations, technologies, and systems rather than separating products from their operating processes; therefore gap_45 is 0. For gap_56, the Employee Matters covenant preserved labor representation, benefit plans, collective bargaining agreements, and specified pension protections alongside the transferred operations. Although substantial operational and organizational integration remained, the slice documents no closing-time separation of processes from the people or organization running them, so gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

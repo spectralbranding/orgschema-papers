@@ -1,0 +1,58 @@
+{
+  "case_id": "P276",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice indicates that QCP was deregistered and its entity-level outcome is not publicly observable in the acquirer's filings. There is no documented evidence of product/process incoherence or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that QCP was deregistered via Form 15-12B in August 2018 and that Welltower 10-Ks report no distinct former-QCP segment, so no entity-level 3-5-year operating record exists from which product/process or process/organization disruption could be read. The only realized operational change described—the Dec 2022/Jan 2023 ProMedica-to-Integra transition of 147 skilled-nursing facilities—is disclosed at the operator-relationship level, and the slice explicitly marks any asset-level link to the pre-merger QCP portfolio as [UNVERIFIED]; therefore neither p4 nor p5 disruption is documented."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['147 skilled nursing facilities transitioned from ProMedica to Integra and roughly 15 regional operators']}",
+      "rationale": "{'type': 'string', 'enum': ['Welltower documented that 147 skilled nursing facilities transitioned from ProMedica to Integra and regional sub-operators in December 2022/January 2023, while 58 other properties remained with ProMedica. However, the slice states that the correspondence between those facilities and the former QCP portfolio is unverified, and Welltower did not report a distinct former-QCP segment; therefore neither product/process incoherence nor process/organization fracture can be determined for the acquired business.']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice indicates that QCP was deregistered and its entity-level outcome is not publicly observable in the acquirer's filings. There is no documented evidence of product/process incoherence or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that QCP was deregistered via Form 15-12B in August 2018 and that Welltower 10-Ks report no distinct former-QCP segment, so no entity-level 3-5-year operating record exists from which product/process or process/organization disruption could be read. The only realized operational change described—the Dec 2022/Jan 2023 ProMedica-to-Integra transition of 147 skilled-nursing facilities—is disclosed at the operator-relationship level, and the slice explicitly marks any asset-level link to the pre-merger QCP portfolio as [UNVERIFIED]; therefore neither p4 nor p5 disruption is documented.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"uncertain\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"uncertain\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"147 skilled nursing facilities transitioned from ProMedica to Integra and roughly 15 regional operators\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"Welltower documented that 147 skilled nursing facilities transitioned from ProMedica to Integra and regional sub-operators in December 2022/January 2023, while 58 other properties remained with ProMedica. However, the slice states that the correspondence between those facilities and the former QCP portfolio is unverified, and Welltower did not report a distinct former-QCP segment; therefore neither product/process incoherence nor process/organization fracture can be determined for the acquired business.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

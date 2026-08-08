@@ -1,0 +1,58 @@
+{
+  "case_id": "P180",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture/bankruptcy/dissolution; rebranded to \"Invited\" in 2022 operating ~161 clubs / 430,000+ members; no public audited outcome record (deregistered Sept 2017)",
+      "rationale": "The slice documents no product/process disruption: the 2022 rebrand announcement reports a portfolio of comparable scale to the pre-merger business (~200+ clubs, 430,000+ members) continuing to operate, with no reported product-line or operations incoherence, so p4=0. Likewise, no process/organization fracture is documented—the only organizational note is a different named CEO in 2022 with no stated circumstances, and no reported integration failure, culture conflict, bankruptcy, or dissolution, so p5=0. Because the company deregistered in September 2017, no audited financial trajectory exists, but the absence of documented disruption evidence is coded 0 per the conservative rule rather than uncertain for these interface pathways."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture/bankruptcy; portfolio retained at comparable scale (~161 clubs)",
+      "rationale": "The slice documents only a 2022 company rebrand announcement describing continued operation of a portfolio of comparable scale (161 owned/operated clubs, 430,000+ members) with no disclosed divestiture, bankruptcy, or dissolution, and no mention of product/process misalignment; therefore p4_pathway is 0. A different named CEO appears in 2022 versus closing-era materials, but the press release states neither the circumstances nor any operations-versus-organization fracture, so p5_pathway is 0 for lack of documented disruption."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '430,000+ members and 161 owned and operated clubs in 2022'}",
+      "rationale": "{'type': 'string', 'enum': 'The April 2022 announcement documents a continuing operating portfolio of 161 owned and operated clubs, 205 golf courses, and more than 430,000 members, without reporting product-line or operational incoherence; therefore p4 is 0. Although a different CEO was named in 2022 than in 2017, the slice gives no circumstances for that transition and documents no operations-versus-organization integration fracture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture/bankruptcy/dissolution; rebranded to \\\"Invited\\\" in 2022 operating ~161 clubs / 430,000+ members; no public audited outcome record (deregistered Sept 2017)\", \"rationale\": \"The slice documents no product/process disruption: the 2022 rebrand announcement reports a portfolio of comparable scale to the pre-merger business (~200+ clubs, 430,000+ members) continuing to operate, with no reported product-line or operations incoherence, so p4=0. Likewise, no process/organization fracture is documented\\u2014the only organizational note is a different named CEO in 2022 with no stated circumstances, and no reported integration failure, culture conflict, bankruptcy, or dissolution, so p5=0. Because the company deregistered in September 2017, no audited financial trajectory exists, but the absence of documented disruption evidence is coded 0 per the conservative rule rather than uncertain for these interface pathways.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture/bankruptcy; portfolio retained at comparable scale (~161 clubs)\",\n  \"rationale\": \"The slice documents only a 2022 company rebrand announcement describing continued operation of a portfolio of comparable scale (161 owned/operated clubs, 430,000+ members) with no disclosed divestiture, bankruptcy, or dissolution, and no mention of product/process misalignment; therefore p4_pathway is 0. A different named CEO appears in 2022 versus closing-era materials, but the press release states neither the circumstances nor any operations-versus-organization fracture, so p5_pathway is 0 for lack of documented disruption.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"430,000+ members and 161 owned and operated clubs in 2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The April 2022 announcement documents a continuing operating portfolio of 161 owned and operated clubs, 205 golf courses, and more than 430,000 members, without reporting product-line or operational incoherence; therefore p4 is 0. Although a different CEO was named in 2022 than in 2017, the slice gives no circumstances for that transition and documents no operations-versus-organization integration fracture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

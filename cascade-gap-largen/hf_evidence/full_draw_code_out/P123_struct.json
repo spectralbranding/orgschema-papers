@@ -1,0 +1,85 @@
+{
+  "case_id": "P123",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The target was an externally managed REIT with no employees. The real estate portfolio (T4) and its operations (T5) transferred to the acquirer, but the external advisory organization (T6) was terminated and paid a termination fee rather than transferring. This creates a structural gap between T5 and T6 (gap_56=1). There is no evidence of a transition services agreement mitigating this gap at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "At closing the whole healthcare real-estate portfolio (289 buildings; five segments) crossed via whole-company merger into NorthStar while the registrant’s external advisory/management relationship was terminated and paid a Merger Termination Amount rather than assumed or transferred alongside the assets, documenting a product-without-process mismatch (gap_45=1). The target had no employees and its advisor-affiliated organization likewise ended at the same termination rather than processes moving without people, so no process-without-organization transfer is shown (gap_56=0); filings describe that termination payment expressly in lieu of any transitional-services or continuing-management agreement (gap_mitigated=no)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The whole-company merger transferred the healthcare real-estate portfolio, including 289 buildings across five segments, while the target's external advisory relationship was terminated rather than assumed; the reviewed filings establish no successor management arrangement, documenting a product-versus-process gap at closing. The target had no employees, and its advisory operating arrangement and associated external organization were terminated together, so the slice does not document processes transferring or being re-engineered separately from the organization that ran them. No transition-services or continuing-management agreement contractually bridged the documented gap."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The target was an externally managed REIT with no employees. The real estate portfolio (T4) and its operations (T5) transferred to the acquirer, but the external advisory organization (T6) was terminated and paid a termination fee rather than transferring. This creates a structural gap between T5 and T6 (gap_56=1). There is no evidence of a transition services agreement mitigating this gap at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"At closing the whole healthcare real-estate portfolio (289 buildings; five segments) crossed via whole-company merger into NorthStar while the registrant’s external advisory/management relationship was terminated and paid a Merger Termination Amount rather than assumed or transferred alongside the assets, documenting a product-without-process mismatch (gap_45=1). The target had no employees and its advisor-affiliated organization likewise ended at the same termination rather than processes moving without people, so no process-without-organization transfer is shown (gap_56=0); filings describe that termination payment expressly in lieu of any transitional-services or continuing-management agreement (gap_mitigated=no).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The whole-company merger transferred the healthcare real-estate portfolio, including 289 buildings across five segments, while the target's external advisory relationship was terminated rather than assumed; the reviewed filings establish no successor management arrangement, documenting a product-versus-process gap at closing. The target had no employees, and its advisory operating arrangement and associated external organization were terminated together, so the slice does not document processes transferring or being re-engineered separately from the organization that ran them. No transition-services or continuing-management agreement contractually bridged the documented gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "terminate",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

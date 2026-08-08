@@ -1,0 +1,58 @@
+{
+  "case_id": "P127",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income attributable to common stockholders was $402,660,000 for the year ended December 31, 2021",
+      "rationale": "The slice documents a strategic shift to divest the data center segment and focus on healthcare properties, but does not document any operational disruption or incoherence at the product/process interface (p4_pathway = 0). Additionally, while the company internalized its management, there is no evidence of fracture between operations and the organization or culture (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested all 29 data centers for $1.32bn (~$396M gain)",
+      "rationale": "The slice documents a 2021 board-driven sale of the entire data center segment as a 'strategic shift' completed at a ~$396M gain, with no evidence that data-center assets could not be aligned with operating processes over time, so p4_pathway is 0. Internalization in 2020 moved Former Advisor personnel onto the registrant's payroll (63 employees by year-end 2021) with only a ~$671k goodwill write-off and no documented operations-vs-organization fracture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sold all 29 data center properties for $1.32bn, realizing a $395.8m gain",
+      "rationale": "The FY2021 Form 10-K documents the complete sale of the data center segment as a strategic shift, but does not attribute the divestiture to failure to align that segment with operating processes [SRC: SEC accession 0001567925-22-000015]. It also documents the successful internalization of management functions and transfer of former Advisor personnel to direct employment, with no stated operations-versus-organization fracture [SRC: SEC accession 0001567925-22-000015]."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income attributable to common stockholders was $402,660,000 for the year ended December 31, 2021\",\n  \"rationale\": \"The slice documents a strategic shift to divest the data center segment and focus on healthcare properties, but does not document any operational disruption or incoherence at the product/process interface (p4_pathway = 0). Additionally, while the company internalized its management, there is no evidence of fracture between operations and the organization or culture (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested all 29 data centers for $1.32bn (~$396M gain)\",\n  \"rationale\": \"The slice documents a 2021 board-driven sale of the entire data center segment as a 'strategic shift' completed at a ~$396M gain, with no evidence that data-center assets could not be aligned with operating processes over time, so p4_pathway is 0. Internalization in 2020 moved Former Advisor personnel onto the registrant's payroll (63 employees by year-end 2021) with only a ~$671k goodwill write-off and no documented operations-vs-organization fracture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sold all 29 data center properties for $1.32bn, realizing a $395.8m gain\",\n  \"rationale\": \"The FY2021 Form 10-K documents the complete sale of the data center segment as a strategic shift, but does not attribute the divestiture to failure to align that segment with operating processes [SRC: SEC accession 0001567925-22-000015]. It also documents the successful internalization of management functions and transfer of former Advisor personnel to direct employment, with no stated operations-versus-organization fracture [SRC: SEC accession 0001567925-22-000015].\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

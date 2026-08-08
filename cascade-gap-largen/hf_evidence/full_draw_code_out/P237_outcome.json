@@ -1,0 +1,58 @@
+{
+  "case_id": "P237",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The company was taken private in April 2020 and deregistered, leaving no public financial record for the 2021-2023 window. There is no documented evidence of product/process disruption or process/organization fracture during the outcome horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained (2022 CO2-pipeline investment)",
+      "rationale": "The slice documents no product/process interface disruption in the ~2021-2023 window: the sole in-window operating fact is a May 2022 press release on converting the Trailblazer pipeline for CO2 sequestration with ADM, indicating continued investment rather than product-line/operations incoherence. No process/organization fracture is documented either—no in-window bankruptcy, impairment, divestiture, or integration breakdown is sourced; only the pre-window April 2020 going-private and the absence of subsequent public 10-Ks are noted. Absence of documented pathway evidence is therefore coded 0 for both p4 and p5."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The company was taken private in April 2020 and deregistered, leaving no public financial record for the 2021-2023 window. There is no documented evidence of product/process disruption or process/organization fracture during the outcome horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained (2022 CO2-pipeline investment)\",\n  \"rationale\": \"The slice documents no product/process interface disruption in the ~2021-2023 window: the sole in-window operating fact is a May 2022 press release on converting the Trailblazer pipeline for CO2 sequestration with ADM, indicating continued investment rather than product-line/operations incoherence. No process/organization fracture is documented either—no in-window bankruptcy, impairment, divestiture, or integration breakdown is sourced; only the pre-window April 2020 going-private and the absence of subsequent public 10-Ks are noted. Absence of documented pathway evidence is therefore coded 0 for both p4 and p5.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

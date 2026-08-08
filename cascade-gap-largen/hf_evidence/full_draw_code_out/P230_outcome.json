@@ -1,0 +1,58 @@
+{
+  "case_id": "P230",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (deregistered May 2019; no public 10-K/20-F for ~2022-2024 window)",
+      "rationale": "The slice documents no realized product/process disruption in the acquired U.S. gypsum business over the window; the only in-window fact is a brand-name change (USG Boral to Knauf) in a related Asia-Pacific JV that continued the same product range from the same facilities, which is not disruption evidence — but the absence of any public audited outcome record for the core business means p4 cannot be affirmatively determined. Likewise no process/organization fracture (operations vs people/culture) is documented for the acquired U.S. entity within the window, and the deregistration precludes a sourced determination, so p5 is uncertain. The Southard, Oklahoma closure is explicitly outside the fixed window (announced 2026) and is not coded as in-window evidence."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice records no in-window disruption at the product/process interface for the acquired U.S. gypsum business; the sole documented item is a 2022 brand-name change in the related Asia-Pacific JV that expressly continued the same product range from the same facilities. No source documents fracture at the process/organization interface (operations vs people/management/culture) within ~2022-2024; the Oklahoma plant-closure item is explicitly outside the window and is not used. Absence of any sourced realized disruption yields p4_pathway=0 and p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (deregistered May 2019; no public 10-K/20-F for ~2022-2024 window)\", \"rationale\": \"The slice documents no realized product/process disruption in the acquired U.S. gypsum business over the window; the only in-window fact is a brand-name change (USG Boral to Knauf) in a related Asia-Pacific JV that continued the same product range from the same facilities, which is not disruption evidence \\u2014 but the absence of any public audited outcome record for the core business means p4 cannot be affirmatively determined. Likewise no process/organization fracture (operations vs people/culture) is documented for the acquired U.S. entity within the window, and the deregistration precludes a sourced determination, so p5 is uncertain. The Southard, Oklahoma closure is explicitly outside the fixed window (announced 2026) and is not coded as in-window evidence.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice records no in-window disruption at the product/process interface for the acquired U.S. gypsum business; the sole documented item is a 2022 brand-name change in the related Asia-Pacific JV that expressly continued the same product range from the same facilities. No source documents fracture at the process/organization interface (operations vs people/management/culture) within ~2022-2024; the Oklahoma plant-closure item is explicitly outside the window and is not used. Absence of any sourced realized disruption yields p4_pathway=0 and p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

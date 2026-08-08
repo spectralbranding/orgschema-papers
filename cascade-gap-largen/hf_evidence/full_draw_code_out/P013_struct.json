@@ -1,0 +1,85 @@
+{
+  "case_id": "P013",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45: The customer-facing asset (T4 — the 30-mall, 21M sq ft Rouse Portfolio) crossed the boundary, but the operational processes that produce/deliver it (T5 — property management, leasing, IT, accounting, tax, treasury) were performed by GGP as part of its broader organization and did NOT transfer as an intact operating whole; the company stated it had \"no experience operating as an independent company and performing various corporate functions.\" gap_56: The ~275 employees and a partial management team transferred (T6), but the operational service processes (T5) they would run were not delivered intact and had to be re-created or accessed via GGP, evidencing a process-vs-organization mismatch at closing. Both gaps were contractually bridged at closing by the Separation Agreement, a Transition Services Agreement with GGP (accounting, IT, leasing, tax, etc. on hourly fee), and a Brookfield services/financing arrangement (officer lease, office space, $200M backstop, $100M facility), so gap_mitigated = yes."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction was a spin-off of 30 regional malls (T4 subset) and 275 employees (T6 subset). However, the corporate functions and operational processes (T5) were historically shared with GGP and did not transfer as an intact whole, creating a gap between the transferred operations and the organization needed to run them (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement with GGP and a services agreement with Brookfield."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The 30-mall Rouse Portfolio crossed the ownership boundary, while the shared corporate and operating substrate—including property management, HR, IT, legal, accounting, leasing, and tax—did not transfer as an intact whole, documenting a product-process gap at closing. Rouse assumed responsibility for those functions despite having no prior experience operating independently, while approximately 275 employees and some former GGP managers transferred but interim executive and operational support remained necessary, documenting a process-organization gap. The Separation Agreement, GGP Transition Services Agreement, and Brookfield services agreement contractually bridged these gaps at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45: The customer-facing asset (T4 \\u2014 the 30-mall, 21M sq ft Rouse Portfolio) crossed the boundary, but the operational processes that produce/deliver it (T5 \\u2014 property management, leasing, IT, accounting, tax, treasury) were performed by GGP as part of its broader organization and did NOT transfer as an intact operating whole; the company stated it had \\\"no experience operating as an independent company and performing various corporate functions.\\\" gap_56: The ~275 employees and a partial management team transferred (T6), but the operational service processes (T5) they would run were not delivered intact and had to be re-created or accessed via GGP, evidencing a process-vs-organization mismatch at closing. Both gaps were contractually bridged at closing by the Separation Agreement, a Transition Services Agreement with GGP (accounting, IT, leasing, tax, etc. on hourly fee), and a Brookfield services/financing arrangement (officer lease, office space, $200M backstop, $100M facility), so gap_mitigated = yes.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replicate\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The transaction was a spin-off of 30 regional malls (T4 subset) and 275 employees (T6 subset). However, the corporate functions and operational processes (T5) were historically shared with GGP and did not transfer as an intact whole, creating a gap between the transferred operations and the organization needed to run them (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement with GGP and a services agreement with Brookfield.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The 30-mall Rouse Portfolio crossed the ownership boundary, while the shared corporate and operating substrate—including property management, HR, IT, legal, accounting, leasing, and tax—did not transfer as an intact whole, documenting a product-process gap at closing. Rouse assumed responsibility for those functions despite having no prior experience operating independently, while approximately 275 employees and some former GGP managers transferred but interim executive and operational support remained necessary, documenting a process-organization gap. The Separation Agreement, GGP Transition Services Agreement, and Brookfield services agreement contractually bridged these gaps at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "reconstruct",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

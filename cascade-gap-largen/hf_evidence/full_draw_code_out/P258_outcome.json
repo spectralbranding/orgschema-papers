@@ -1,0 +1,58 @@
+{
+  "case_id": "P258",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; both legacy segments grew, no goodwill impairment (FY2021)",
+      "rationale": "On the product/process interface (p4=0), the realized record documents continuity and alignment: both the Specialty segment (tracing to former Impax CNS products) and the Generics segment (tracing to Amneal/Impax generics) posted net-sales growth and positive operating income in FY2021, and the annual goodwill test found no impairment for any reporting unit — no documented product-line/operations incoherence. On the process/organization interface (p5=uncertain), the slice shows a leadership change (Co-CEOs Chirag and Chintu Patel and Chairman Meister by FY2021, with no mention of the individuals holding CEO/Executive Chairman roles at closing), but it provides no evidence of whether this reflected an operations-vs-people integration fracture or a benign governance evolution, so it cannot be determined. The slice describes only the surviving filer's consolidated trajectory and explicitly does not isolate legacy units or deal structure."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "consolidated net revenue rose to $2.1 billion in FY2021 with no goodwill impairment",
+      "rationale": "The evidence slice shows no documented disruption at the product/process or process/organization interfaces. Both the Generics and Specialty segments continued to grow and post positive operating income by FY2021, and the company recorded no goodwill impairment, indicating stable integration without realized operational fracture."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$603.6 million net loss in FY2019, followed by $68.6 million and $20.2 million net income in FY2020 and FY2021'}",
+      "rationale": "{'type': 'string', 'enum': 'No product/process disruption is documented: both the Specialty and Generics segments continued operating, increased sales, and generated positive operating income in FY2021, while no divestiture of the originally combined businesses was disclosed. No process/organization fracture is documented; although leadership differed by FY2021, the slice reports continued product-line operations and revenue growth rather than an operational breakdown attributed to management, people, or culture.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; both legacy segments grew, no goodwill impairment (FY2021)\", \"rationale\": \"On the product/process interface (p4=0), the realized record documents continuity and alignment: both the Specialty segment (tracing to former Impax CNS products) and the Generics segment (tracing to Amneal/Impax generics) posted net-sales growth and positive operating income in FY2021, and the annual goodwill test found no impairment for any reporting unit \\u2014 no documented product-line/operations incoherence. On the process/organization interface (p5=uncertain), the slice shows a leadership change (Co-CEOs Chirag and Chintu Patel and Chairman Meister by FY2021, with no mention of the individuals holding CEO/Executive Chairman roles at closing), but it provides no evidence of whether this reflected an operations-vs-people integration fracture or a benign governance evolution, so it cannot be determined. The slice describes only the surviving filer's consolidated trajectory and explicitly does not isolate legacy units or deal structure.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"consolidated net revenue rose to $2.1 billion in FY2021 with no goodwill impairment\",\n  \"rationale\": \"The evidence slice shows no documented disruption at the product/process or process/organization interfaces. Both the Generics and Specialty segments continued to grow and post positive operating income by FY2021, and the company recorded no goodwill impairment, indicating stable integration without realized operational fracture.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$603.6 million net loss in FY2019, followed by $68.6 million and $20.2 million net income in FY2020 and FY2021\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No product/process disruption is documented: both the Specialty and Generics segments continued operating, increased sales, and generated positive operating income in FY2021, while no divestiture of the originally combined businesses was disclosed. No process/organization fracture is documented; although leadership differed by FY2021, the slice reports continued product-line operations and revenue growth rather than an operational breakdown attributed to management, people, or culture.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

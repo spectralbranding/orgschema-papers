@@ -1,0 +1,85 @@
+{
+  "case_id": "P207",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the slice documents a whole-company merger with no carve-out and no antitrust-mandated divestiture — the entire snack-food business (brands, manufacturing, distribution, marketing) crossed together as a going concern, so the customer-facing product and its producing/delivering processes moved as one; there is no product-vs-process mismatch at closing. gap_56=1: the operational base transferred whole (T5 1-1) but the entire board and eight named executive officers including the CEO ceased at the effective time, a same-day senior-management turnover that severed the leadership/organization tier from the processes it ran. gap_mitigated=yes: the merger agreement contractually bridged the workforce below senior management via comparable pay/benefits through July 31, 2019, prior-service recognition, and change-in-control severance, documenting absorption of that gap at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice states a whole-company cash reverse triangular merger with no carve-out or antitrust divestiture, so the snack brands/products (T4) and the manufacturing/distribution/marketing operations that produce them (T5) crossed together as one surviving entity. gap_56=1 because the same closing 8-K documents that the entire board and eight named officers including the CEO ceased at the effective time, so processes moved with the surviving company without the pre-merger senior management/org that ran them aligning alongside; the only continuity covenant was aggregate pay/benefits for continuing employees through July 31, 2019, not a TSA or operating agreement retaining or allocating that management substrate."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The whole business, including its snack brands and its manufacturing, distribution, marketing, and sales operations, crossed to Campbell without a carve-out or required divestiture, so no product-process gap is documented at closing. However, all directors and eight named executive officers, including the CEO, departed at the effective time while the operating business and continuing workforce transferred, documenting a process-organization mismatch at closing. The compensation, benefits, service-recognition, and severance commitments supported employees but were not identified as a transitional-services or operating agreement allocating shared operations."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the slice documents a whole-company merger with no carve-out and no antitrust-mandated divestiture \\u2014 the entire snack-food business (brands, manufacturing, distribution, marketing) crossed together as a going concern, so the customer-facing product and its producing/delivering processes moved as one; there is no product-vs-process mismatch at closing. gap_56=1: the operational base transferred whole (T5 1-1) but the entire board and eight named executive officers including the CEO ceased at the effective time, a same-day senior-management turnover that severed the leadership/organization tier from the processes it ran. gap_mitigated=yes: the merger agreement contractually bridged the workforce below senior management via comparable pay/benefits through July 31, 2019, prior-service recognition, and change-in-control severance, documenting absorption of that gap at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice states a whole-company cash reverse triangular merger with no carve-out or antitrust divestiture, so the snack brands/products (T4) and the manufacturing/distribution/marketing operations that produce them (T5) crossed together as one surviving entity. gap_56=1 because the same closing 8-K documents that the entire board and eight named officers including the CEO ceased at the effective time, so processes moved with the surviving company without the pre-merger senior management/org that ran them aligning alongside; the only continuity covenant was aggregate pay/benefits for continuing employees through July 31, 2019, not a TSA or operating agreement retaining or allocating that management substrate.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The whole business, including its snack brands and its manufacturing, distribution, marketing, and sales operations, crossed to Campbell without a carve-out or required divestiture, so no product-process gap is documented at closing. However, all directors and eight named executive officers, including the CEO, departed at the effective time while the operating business and continuing workforce transferred, documenting a process-organization mismatch at closing. The compensation, benefits, service-recognition, and severance commitments supported employees but were not identified as a transitional-services or operating agreement allocating shared operations.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

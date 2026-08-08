@@ -1,0 +1,58 @@
+{
+  "case_id": "P032",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "net income declined to $317.8M (FY2021) from $478.6M (FY2019); no divestiture, remained standalone registrant",
+      "rationale": "The documented disruptions in the slice trace to external pandemic-driven demand softness in restaurant/foodservice channels, not to an inability to align an acquired product with operating processes over time, so no product/process interface fracture is documented (p4=0). Manufacturing facilities remained open and operational as essential, subject only to pandemic-related absenteeism and line cleaning stoppages, with no documented fracture between operations and the organization/management/culture, so no process/organization pathway is evidenced (p5=0). The slice contains no information about a controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income down to $317.8M in FY2021 (from $478.6M FY2019); no divestiture",
+      "rationale": "The slice attributes fiscal-2021 volume and sales softness solely to pandemic-driven demand declines in restaurant/foodservice channels, not to any inability to align product with operating processes over time, so p4_pathway is 0. Manufacturing facilities remained open as essential operations subject only to pandemic absenteeism and cleaning stoppages, with no documented fracture between operations and organization/people/culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['Net income declined from $478.6 million in fiscal 2019 to $317.8 million in fiscal 2021']}",
+      "rationale": "{'type': 'string', 'enum': ['The documented volume decline was attributed to pandemic-related restrictions and weakened restaurant and foodservice demand, followed by a fourth-quarter recovery, not to product-line/operations incoherence; therefore p4 is 0. Manufacturing facilities remained open and operational, with pandemic-related absenteeism and cleaning-related line shutdowns, but the slice documents no breakdown of operational integration against management, people, or culture; therefore p5 is 0.']}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"net income declined to $317.8M (FY2021) from $478.6M (FY2019); no divestiture, remained standalone registrant\", \"rationale\": \"The documented disruptions in the slice trace to external pandemic-driven demand softness in restaurant/foodservice channels, not to an inability to align an acquired product with operating processes over time, so no product/process interface fracture is documented (p4=0). Manufacturing facilities remained open and operational as essential, subject only to pandemic-related absenteeism and line cleaning stoppages, with no documented fracture between operations and the organization/management/culture, so no process/organization pathway is evidenced (p5=0). The slice contains no information about a controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income down to $317.8M in FY2021 (from $478.6M FY2019); no divestiture\",\n  \"rationale\": \"The slice attributes fiscal-2021 volume and sales softness solely to pandemic-driven demand declines in restaurant/foodservice channels, not to any inability to align product with operating processes over time, so p4_pathway is 0. Manufacturing facilities remained open as essential operations subject only to pandemic absenteeism and cleaning stoppages, with no documented fracture between operations and organization/people/culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"Net income declined from $478.6 million in fiscal 2019 to $317.8 million in fiscal 2021\"\n    ]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"The documented volume decline was attributed to pandemic-related restrictions and weakened restaurant and foodservice demand, followed by a fourth-quarter recovery, not to product-line/operations incoherence; therefore p4 is 0. Manufacturing facilities remained open and operational, with pandemic-related absenteeism and cleaning-related line shutdowns, but the slice documents no breakdown of operational integration against management, people, or culture; therefore p5 is 0.\"\n    ]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

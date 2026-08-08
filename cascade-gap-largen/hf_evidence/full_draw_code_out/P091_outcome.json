@@ -1,0 +1,58 @@
+{
+  "case_id": "P091",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "successive net losses (net loss of $316.3M in 2011); 2011 asset-impairment provisions of $105.8M continuing + $57.8M discontinued and $113.6M unconsolidated-entity impairment; 26 properties sold for $242.3M",
+      "rationale": "The slice documents realized financial deterioration (four consecutive fiscal-year net losses, multiple large impairment provisions, and portfolio-realignment dispositions of 26 properties for $242.3M), but none of this evidence describes disruption at a product/process interface (product-line vs. operations incoherence), so p4 is coded 0. Likewise, there is no documented fracture between operations and people/management/culture — operations were run continuously by the external business manager for a $40M fee with no reported organizational break — so p5 is coded 0. The slice gives no evidence about the controlling-intent archetype (t1) or reconciliation of two business models (t2), so those are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "successive net losses (~$176M–$316M in 2010–11); large impairments",
+      "rationale": "The slice documents successive net losses, asset and unconsolidated-entity impairments, and 2011 dispositions of 26 properties as portfolio realignment, but contains no evidence that an acquired product failed to align with operating processes over time, so p4_pathway=0. Operations are described as continuing under the external business manager for a $40M fee, with no documented fracture between operations and people/management/culture, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$316.3 million net loss in 2011",
+      "rationale": "The documented losses, impairments, and sale of 26 properties for $242.3 million reflect poor financial performance and portfolio realignment, but no realized product/process-interface disruption is identified [SRC: SEC accession 0001193125-12-104200, 10-K FY2011]. Operations continued under the external business manager during the window, and the slice documents no fracture between operations and people, management, or culture [SRC: SEC accession 0001193125-12-104200, 10-K FY2011]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"successive net losses (net loss of $316.3M in 2011); 2011 asset-impairment provisions of $105.8M continuing + $57.8M discontinued and $113.6M unconsolidated-entity impairment; 26 properties sold for $242.3M\", \"rationale\": \"The slice documents realized financial deterioration (four consecutive fiscal-year net losses, multiple large impairment provisions, and portfolio-realignment dispositions of 26 properties for $242.3M), but none of this evidence describes disruption at a product/process interface (product-line vs. operations incoherence), so p4 is coded 0. Likewise, there is no documented fracture between operations and people/management/culture \\u2014 operations were run continuously by the external business manager for a $40M fee with no reported organizational break \\u2014 so p5 is coded 0. The slice gives no evidence about the controlling-intent archetype (t1) or reconciliation of two business models (t2), so those are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"successive net losses (~$176M–$316M in 2010–11); large impairments\",\n  \"rationale\": \"The slice documents successive net losses, asset and unconsolidated-entity impairments, and 2011 dispositions of 26 properties as portfolio realignment, but contains no evidence that an acquired product failed to align with operating processes over time, so p4_pathway=0. Operations are described as continuing under the external business manager for a $40M fee, with no documented fracture between operations and people/management/culture, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$316.3 million net loss in 2011\",\n  \"rationale\": \"The documented losses, impairments, and sale of 26 properties for $242.3 million reflect poor financial performance and portfolio realignment, but no realized product/process-interface disruption is identified [SRC: SEC accession 0001193125-12-104200, 10-K FY2011]. Operations continued under the external business manager during the window, and the slice documents no fracture between operations and people, management, or culture [SRC: SEC accession 0001193125-12-104200, 10-K FY2011].\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

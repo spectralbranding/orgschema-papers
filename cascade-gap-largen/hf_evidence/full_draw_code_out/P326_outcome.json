@@ -1,0 +1,58 @@
+{
+  "case_id": "P326",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income attributable to ENLC swung from $(1,119.3)M (2019) to +$361.3M (2022); revenues rose to $9,542.1M (2022); no impairment in 2022",
+      "rationale": "The slice documents only financial and headcount trajectory: revenues rose from $3,893.8M (2020) to $9,542.1M (2022) and net income turned positive by 2021-2022, with impairment charges shrinking to $0.8M (2021) and none in 2022, plus modest headcount growth (1,073 to 1,132). No line describes any product/process misalignment or operational incoherence realized over time (p4=0), and no line describes any operations-vs-people/management/culture fracture (p5=0); governance turnover beyond initial board changes is explicitly unverified. No documented archetype incoherence or business-model incompatibility appears, so t1 and t2 are 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "positive net income of $361.3 million (2022)",
+      "rationale": "The evidence slice shows the combined company operating successfully over the 3-5 year horizon, with revenues growing to $9.5 billion and net income turning positive by 2021-2022. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the provided text."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'value': '$361.3 million net income in 2022, after losses in 2019-2020'}",
+      "rationale": "{'type': 'string', 'value': 'No product/process disruption is documented; operations continued to be consolidated in the surviving public filer, while revenue rose from $3,893.8 million in 2020 to $9,542.1 million in 2022 and no impairment charge was reported in 2022. No process/organization fracture is documented; full-time employment increased modestly from 1,073 in 2021 to 1,132 in 2022, with both operational and administrative personnel continuing to be reported.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Net income attributable to ENLC swung from $(1,119.3)M (2019) to +$361.3M (2022); revenues rose to $9,542.1M (2022); no impairment in 2022\", \"rationale\": \"The slice documents only financial and headcount trajectory: revenues rose from $3,893.8M (2020) to $9,542.1M (2022) and net income turned positive by 2021-2022, with impairment charges shrinking to $0.8M (2021) and none in 2022, plus modest headcount growth (1,073 to 1,132). No line describes any product/process misalignment or operational incoherence realized over time (p4=0), and no line describes any operations-vs-people/management/culture fracture (p5=0); governance turnover beyond initial board changes is explicitly unverified. No documented archetype incoherence or business-model incompatibility appears, so t1 and t2 are 0.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"positive net income of $361.3 million (2022)\",\n\"rationale\": \"The evidence slice shows the combined company operating successfully over the 3-5 year horizon, with revenues growing to $9.5 billion and net income turning positive by 2021-2022. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the provided text.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"value\": \"$361.3 million net income in 2022, after losses in 2019-2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"value\": \"No product/process disruption is documented; operations continued to be consolidated in the surviving public filer, while revenue rose from $3,893.8 million in 2020 to $9,542.1 million in 2022 and no impairment charge was reported in 2022. No process/organization fracture is documented; full-time employment increased modestly from 1,073 in 2021 to 1,132 in 2022, with both operational and administrative personnel continuing to be reported.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

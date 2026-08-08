@@ -1,0 +1,85 @@
+{
+  "case_id": "P068",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing branded auction/selling product crossed the boundary only as a trademark license to the JV (\"carried in by a trademark license rather than by a transfer of Sotheby's existing China/Hong Kong operations, which remained outside the venture\"), so the product entered without the existing operational apparatus that produces/delivers it; however this was contractually absorbed because Sotheby's holds day-to-day management of the JV and GeHua contributed the local platform/regulatory authorizations, allocating the operating substrate (gap_mitigated=yes). gap_56=0: the processes that transferred (day-to-day management) moved together with the managing organization — \"Sotheby's is responsible for the day-to-day management of the joint venture\" and appoints four of five board seats — so process and the people/management running them aligned coherently at closing. T1 is imprint-share given 80/20 equity with both principals present; T3 is swap into a new foreign-invested Chinese JV vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing product (Sotheby's brand) is licensed (read-only) rather than transferred, while operations are a mix of Sotheby's management and GeHua's physical platform, creating a structural gap between the product and the underlying operations. This gap is mitigated by the trademark license and management structure. No structural mismatch between T5 and T6 is documented."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing product crossed only as a Sotheby's trademark license into the JV while Sotheby's was simultaneously assigned day-to-day management of the venture, so product and operating control were structurally aligned at closing rather than mismatched. gap_56=0 because the slice documents Sotheby's management responsibility for JV operations but does not document any process transfer or re-engineering detached from organization/people; no people/culture transfer is described at all, so no process-vs-organization structural mismatch is evidenced at closing. Existing Sotheby's China/Hong Kong operations were expressly left outside the venture and were not a transferred substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing branded auction/selling product crossed the boundary only as a trademark license to the JV (\\\"carried in by a trademark license rather than by a transfer of Sotheby's existing China/Hong Kong operations, which remained outside the venture\\\"), so the product entered without the existing operational apparatus that produces/delivers it; however this was contractually absorbed because Sotheby's holds day-to-day management of the JV and GeHua contributed the local platform/regulatory authorizations, allocating the operating substrate (gap_mitigated=yes). gap_56=0: the processes that transferred (day-to-day management) moved together with the managing organization \\u2014 \\\"Sotheby's is responsible for the day-to-day management of the joint venture\\\" and appoints four of five board seats \\u2014 so process and the people/management running them aligned coherently at closing. T1 is imprint-share given 80/20 equity with both principals present; T3 is swap into a new foreign-invested Chinese JV vehicle.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"read-only\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"uncertain\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The customer-facing product (Sotheby's brand) is licensed (read-only) rather than transferred, while operations are a mix of Sotheby's management and GeHua's physical platform, creating a structural gap between the product and the underlying operations. This gap is mitigated by the trademark license and management structure. No structural mismatch between T5 and T6 is documented.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing product crossed only as a Sotheby's trademark license into the JV while Sotheby's was simultaneously assigned day-to-day management of the venture, so product and operating control were structurally aligned at closing rather than mismatched. gap_56=0 because the slice documents Sotheby's management responsibility for JV operations but does not document any process transfer or re-engineering detached from organization/people; no people/culture transfer is described at all, so no process-vs-organization structural mismatch is evidenced at closing. Existing Sotheby's China/Hong Kong operations were expressly left outside the venture and were not a transferred substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "read-only",
+    "sigma_T5": "1-1",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

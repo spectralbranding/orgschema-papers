@@ -1,0 +1,85 @@
+{
+  "case_id": "P234",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is an intra-group reorganization: the holding company merged into its own wholly owned operating bank subsidiary, and the slice states \"the business of the Bank will remain unchanged,\" offices/premises continued to be occupied, and articles/bylaws were \"substantially similar.\" The customer-facing banking product and the operational processes that deliver it both remained with the same surviving Bank, so no product-vs-process mismatch exists (gap_45=0). Board, officers, committees, benefit plans, and change-in-control agreements all continued intact alongside the operations, so processes and the people/organization running them stayed aligned (gap_56=0); T3 is coded swap because only the top corporate shell and primary regulator (FRB/SEC to FDIC/MDBCF) changed."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a corporate reorganization merging a holding company into its wholly owned bank subsidiary. The business, operations, and products (T4 and T5) remained unchanged, and the board, officers, and employees (T6) continued intact, meaning there were no structural mismatches or gaps between products, processes, and people."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that at closing 'the business of the Bank will remain unchanged,' offices/premises continued occupied by the Bank, and board, officers, committees, benefit plans, and incentive awards all continued intact through the holding-company-into-subsidiary merger, so T4 product and T5 process moved together with no structural mismatch (gap_45=0). Equally, T5 operations and T6 organization (same directors/officers/committees/plans) aligned coherently with no separation of process from people, and no TSA was needed or described because nothing was carved out (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is an intra-group reorganization: the holding company merged into its own wholly owned operating bank subsidiary, and the slice states \\\"the business of the Bank will remain unchanged,\\\" offices/premises continued to be occupied, and articles/bylaws were \\\"substantially similar.\\\" The customer-facing banking product and the operational processes that deliver it both remained with the same surviving Bank, so no product-vs-process mismatch exists (gap_45=0). Board, officers, committees, benefit plans, and change-in-control agreements all continued intact alongside the operations, so processes and the people/organization running them stayed aligned (gap_56=0); T3 is coded swap because only the top corporate shell and primary regulator (FRB/SEC to FDIC/MDBCF) changed.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a corporate reorganization merging a holding company into its wholly owned bank subsidiary. The business, operations, and products (T4 and T5) remained unchanged, and the board, officers, and employees (T6) continued intact, meaning there were no structural mismatches or gaps between products, processes, and people.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that at closing 'the business of the Bank will remain unchanged,' offices/premises continued occupied by the Bank, and board, officers, committees, benefit plans, and incentive awards all continued intact through the holding-company-into-subsidiary merger, so T4 product and T5 process moved together with no structural mismatch (gap_45=0). Equally, T5 operations and T6 organization (same directors/officers/committees/plans) aligned coherently with no separation of process from people, and no TSA was needed or described because nothing was carved out (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

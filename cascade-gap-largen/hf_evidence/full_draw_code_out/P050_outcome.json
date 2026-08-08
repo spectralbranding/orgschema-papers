@@ -1,0 +1,58 @@
+{
+  "case_id": "P050",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by GlobalWafers at US$12.00/share cash; deregistered Dec 2016; no public record for ~2017-2019 window",
+      "rationale": "The registrant was acquired by GlobalWafers via scheme of arrangement and deregistered in December 2016, before the fixed ~2017-2019 outcome window opened, and no separate public periodic reporting exists for that horizon (last 10-K was FY2015; Form 25 and Form 15-12B filed December 2016). The slice therefore documents no realized product/process disruption over time (p4) and no realized process/organization fracture over time (p5), only a terminal change of control. While the board resigned and the CEO was terminated at closing, these are change-of-control events, not documented post-deal integration fractures within the outcome window; with no audited trajectory for ~2017-2019, both pathways are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice explicitly states that the registrant was acquired and deregistered in December 2016, before the 2017-2019 outcome window. Because the acquirer is not a U.S. SEC registrant and no separate segment disclosure was located, there is no public record of the post-acquisition trajectory. Therefore, all pathways and metrics are coded as uncertain or not documented."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"acquired by GlobalWafers at US$12.00/share cash; deregistered Dec 2016; no public record for ~2017-2019 window\", \"rationale\": \"The registrant was acquired by GlobalWafers via scheme of arrangement and deregistered in December 2016, before the fixed ~2017-2019 outcome window opened, and no separate public periodic reporting exists for that horizon (last 10-K was FY2015; Form 25 and Form 15-12B filed December 2016). The slice therefore documents no realized product/process disruption over time (p4) and no realized process/organization fracture over time (p5), only a terminal change of control. While the board resigned and the CEO was terminated at closing, these are change-of-control events, not documented post-deal integration fractures within the outcome window; with no audited trajectory for ~2017-2019, both pathways are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice explicitly states that the registrant was acquired and deregistered in December 2016, before the 2017-2019 outcome window. Because the acquirer is not a U.S. SEC registrant and no separate segment disclosure was located, there is no public record of the post-acquisition trajectory. Therefore, all pathways and metrics are coded as uncertain or not documented.\"\n}\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

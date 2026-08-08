@@ -1,0 +1,85 @@
+{
+  "case_id": "P227",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a reverse triangular merger combining the beverage product portfolios of both companies into a single continuing registrant (DPSG surviving nominally as Keurig Dr Pepper), with legal vehicle continuing (T3 1-1, name/domicile intact) and Maple's holders taking ~87% control with a Keurig/JAB-drawn CEO, CFO, and chair (T1 replace). The slice describes both companies' product portfolios and operations combining into the single continuing registrant with no documented structural separation of any customer-facing product from its producing/delivering processes, so gap_45=0. Likewise the operations combined into the same continuing registrant alongside the transferred organization and people (albeit with DPSG's top executives exiting — T6 partial), with no documented structural mismatch of process transferring apart from the organization that runs it at closing, so gap_56=0. No Tier-1 fusion (founder-as-product or natural-person-as-legal-subject) is documented, so collapse_state=none."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction combined DPSG's beverage business with Keurig, bringing their product portfolios (T4), operations (T5), and organizations (T6) together into a single continuing registrant. There is no documented structural mismatch at closing between products and processes, or processes and people."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice states that at closing the product portfolios of both companies combined into the single continuing registrant alongside the combined beverage/Keurig businesses, with no documented product-vs-process structural mismatch. gap_56=1 because the same closing structure placed both businesses’ operations inside the continuing registrant while Maple made no arrangements with DPSG’s management team for continued employment, DPSG’s named executive officers resigned at the effective time, and the incoming CEO/CFO and board majority were drawn from Keurig/JAB, so processes were not accompanied by coherent transfer of the organization that had run the DPSG side. No transitional-services or operating agreement allocating shared substrate is documented in the slice."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a reverse triangular merger combining the beverage product portfolios of both companies into a single continuing registrant (DPSG surviving nominally as Keurig Dr Pepper), with legal vehicle continuing (T3 1-1, name/domicile intact) and Maple's holders taking ~87% control with a Keurig/JAB-drawn CEO, CFO, and chair (T1 replace). The slice describes both companies' product portfolios and operations combining into the single continuing registrant with no documented structural separation of any customer-facing product from its producing/delivering processes, so gap_45=0. Likewise the operations combined into the same continuing registrant alongside the transferred organization and people (albeit with DPSG's top executives exiting \\u2014 T6 partial), with no documented structural mismatch of process transferring apart from the organization that runs it at closing, so gap_56=0. No Tier-1 fusion (founder-as-product or natural-person-as-legal-subject) is documented, so collapse_state=none.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction combined DPSG's beverage business with Keurig, bringing their product portfolios (T4), operations (T5), and organizations (T6) together into a single continuing registrant. There is no documented structural mismatch at closing between products and processes, or processes and people.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice states that at closing the product portfolios of both companies combined into the single continuing registrant alongside the combined beverage/Keurig businesses, with no documented product-vs-process structural mismatch. gap_56=1 because the same closing structure placed both businesses’ operations inside the continuing registrant while Maple made no arrangements with DPSG’s management team for continued employment, DPSG’s named executive officers resigned at the effective time, and the incoming CEO/CFO and board majority were drawn from Keurig/JAB, so processes were not accompanied by coherent transfer of the organization that had run the DPSG side. No transitional-services or operating agreement allocating shared substrate is documented in the slice.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

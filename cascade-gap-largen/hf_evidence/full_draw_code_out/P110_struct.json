@@ -1,0 +1,85 @@
+{
+  "case_id": "P110",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the slice states the acquired coated-paper product operations crossed the boundary while \"the operating and back-office processes serving NewPage were bridged by this contractual arrangement... rather than merged into the acquirer's operations at closing,\" a documented product-vs-process mismatch; the mismatch was contractually absorbed by the closing-date Shared Services Agreement (three-year term, cost true-ups, Steering Committee), so gap_mitigated=yes. gap_56=0: the operational processes were not re-engineered apart from their people — NewPage was retained intact as a distinct wholly owned subsidiary with its processes and organization staying together, and board/management changes described are governance-level, not a process-without-people split. T4 coded subset because two producing mills (Biron and Rumford) were carved out to Catalyst under the DOJ settlement as a closing condition. T1=replace as Apollo's controlling ~68% stake dropped to ~44% and it \"no longer owned a majority.\""
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice expressly states that at closing 'the acquired coated-paper product operations therefore crossed the boundary while the operating and back-office processes serving NewPage were bridged by this contractual arrangement... rather than merged into the acquirer's operations,' with two mills also carved out to a third party under the DOJ settlement. gap_56=0 because NewPage was retained intact as a distinct wholly owned subsidiary (so its organization crossed with the legal entity) and the only people movement documented is addition of one former NewPage director to Verso's board plus a joint Steering Committee under the SSA; no process-without-org structural mismatch is documented. The Shared Services Agreement (three-year term, cost-basis services, synergy allocation) contractually absorbs the product-process gap at closing, so gap_mitigated=yes."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that NewPage’s coated-paper product operations crossed the ownership boundary, while operating and back-office processes were bridged rather than merged at closing under the three-year Shared Services Agreement; this documents a T4–T5 structural gap. That agreement allocated services and costs through an equally represented Steering Committee, while NewPage remained an intact subsidiary and gained representation on Verso’s board, so no process-versus-organization gap is documented at closing. [SRC: SEC accession 0001193125-15-004117, Form 8-K Items 1.01/5.02]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the slice states the acquired coated-paper product operations crossed the boundary while \\\"the operating and back-office processes serving NewPage were bridged by this contractual arrangement... rather than merged into the acquirer's operations at closing,\\\" a documented product-vs-process mismatch; the mismatch was contractually absorbed by the closing-date Shared Services Agreement (three-year term, cost true-ups, Steering Committee), so gap_mitigated=yes. gap_56=0: the operational processes were not re-engineered apart from their people \\u2014 NewPage was retained intact as a distinct wholly owned subsidiary with its processes and organization staying together, and board/management changes described are governance-level, not a process-without-people split. T4 coded subset because two producing mills (Biron and Rumford) were carved out to Catalyst under the DOJ settlement as a closing condition. T1=replace as Apollo's controlling ~68% stake dropped to ~44% and it \\\"no longer owned a majority.\\\"\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice expressly states that at closing 'the acquired coated-paper product operations therefore crossed the boundary while the operating and back-office processes serving NewPage were bridged by this contractual arrangement... rather than merged into the acquirer's operations,' with two mills also carved out to a third party under the DOJ settlement. gap_56=0 because NewPage was retained intact as a distinct wholly owned subsidiary (so its organization crossed with the legal entity) and the only people movement documented is addition of one former NewPage director to Verso's board plus a joint Steering Committee under the SSA; no process-without-org structural mismatch is documented. The Shared Services Agreement (three-year term, cost-basis services, synergy allocation) contractually absorbs the product-process gap at closing, so gap_mitigated=yes.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that NewPage’s coated-paper product operations crossed the ownership boundary, while operating and back-office processes were bridged rather than merged at closing under the three-year Shared Services Agreement; this documents a T4–T5 structural gap. That agreement allocated services and costs through an equally represented Steering Committee, while NewPage remained an intact subsidiary and gained representation on Verso’s board, so no process-versus-organization gap is documented at closing. [SRC: SEC accession 0001193125-15-004117, Form 8-K Items 1.01/5.02]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

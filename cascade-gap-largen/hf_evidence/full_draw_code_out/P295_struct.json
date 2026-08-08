@@ -1,0 +1,85 @@
+{
+  "case_id": "P295",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: the customer-facing portfolio (T4) was structurally split at closing — a 20-community, $1.2B sub-portfolio crossed to a separate Blackstone/Greystar 95%/5% JV via a distinct asset purchase agreement while the balance crossed via the mergers into the Greystar Parent structure, so the product assets were severed from a unified operating structure at closing. gap_56=1: the self-managed/self-advised operating processes (T5) crossed into the surviving Greystar-affiliated vehicle, but the organization/people running them (T6) — all seven directors and all five named executive officers — ceased their positions at the merger effective time with employment agreements terminated, and continued informal employment was only \"expected,\" \"not contractually assured.\" gap_mitigated=no: the slice documents no transitional-services or operating agreement absorbing the substrate; NEO continuation was explicitly not contractually assured. collapse_state=none: no Tier-1 founder/legal-person/product fusion is documented; the REIT was self-managed and self-advised (not identity-bound to a natural person) and was replaced by a new controlling Greystar principal."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product (T4) was split into two portfolios (one to Greystar, one to a Blackstone JV), but there is no documented structural mismatch at closing indicating that the operational processes (T5) failed to align with the transferred assets (gap_45 = 0). The executive team was terminated at closing, but there is no documented structural gap indicating that the operational processes transferred without the necessary organization/people to run them (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0 because the slice shows the customer-facing collegiate-housing communities transferring at closing via the mergers and the simultaneous Blackstone JV asset purchase, with no documented structural separation of those products from the operating processes that run them. gap_56=1 because all seven directors and all five NEOs ceased their positions and had their employment agreements terminated at the REIT Merger effective time while the operating business crossed into the Greystar-led and JV structures, and the slice records only an unenforceable expectation of continued NEO employment with no transitional-services or operating agreement allocating process substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: the customer-facing portfolio (T4) was structurally split at closing \\u2014 a 20-community, $1.2B sub-portfolio crossed to a separate Blackstone/Greystar 95%/5% JV via a distinct asset purchase agreement while the balance crossed via the mergers into the Greystar Parent structure, so the product assets were severed from a unified operating structure at closing. gap_56=1: the self-managed/self-advised operating processes (T5) crossed into the surviving Greystar-affiliated vehicle, but the organization/people running them (T6) \\u2014 all seven directors and all five named executive officers \\u2014 ceased their positions at the merger effective time with employment agreements terminated, and continued informal employment was only \\\"expected,\\\" \\\"not contractually assured.\\\" gap_mitigated=no: the slice documents no transitional-services or operating agreement absorbing the substrate; NEO continuation was explicitly not contractually assured. collapse_state=none: no Tier-1 founder/legal-person/product fusion is documented; the REIT was self-managed and self-advised (not identity-bound to a natural person) and was replaced by a new controlling Greystar principal.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-N\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The product (T4) was split into two portfolios (one to Greystar, one to a Blackstone JV), but there is no documented structural mismatch at closing indicating that the operational processes (T5) failed to align with the transferred assets (gap_45 = 0). The executive team was terminated at closing, but there is no documented structural gap indicating that the operational processes transferred without the necessary organization/people to run them (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=0 because the slice shows the customer-facing collegiate-housing communities transferring at closing via the mergers and the simultaneous Blackstone JV asset purchase, with no documented structural separation of those products from the operating processes that run them. gap_56=1 because all seven directors and all five NEOs ceased their positions and had their employment agreements terminated at the REIT Merger effective time while the operating business crossed into the Greystar-led and JV structures, and the slice records only an unenforceable expectation of continued NEO employment with no transitional-services or operating agreement allocating process substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-1",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

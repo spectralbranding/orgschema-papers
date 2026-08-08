@@ -1,0 +1,58 @@
+{
+  "case_id": "P011",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by Shire ~12 months after separation; deregistered via Form 15-12B; no separate 3-5yr outcome record",
+      "rationale": "The slice documents that Baxalta operated as an independent registrant for only ~one year (single FY2015 10-K) before being acquired by Shire and deregistering its common stock in June 2016, so the fixed 3-5-year outcome window contains no audited public financial statements or located separate disclosure of the acquired business's trajectory. There is therefore no realized-outcome evidence of disruption at the product/process interface (p4) or the process/organization interface (p5); the slice explicitly states the outcome is coded uncertain per the no-record rule rather than fabricated. Because the outcome record is truncated and no post-window trajectory was established, all pathway/channel fields are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by Shire plc after ~1 year",
+      "rationale": "The slice explicitly states that Baxalta was acquired by Shire plc in 2016 and deregistered, leaving no separate public 3-5-year outcome record. Consequently, there is no documented evidence to evaluate any realized disruptions for p4_pathway or p5_pathway over the target horizon."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by Shire ~1 year post-separation; no 3-5yr independent record",
+      "rationale": "The slice establishes that Baxalta filed only one Form 10-K (FY2015) before the June 2016 Shire merger and Form 15-12B deregistration, so the ~3-5-year window contains no audited public financials or separate acquirer disclosure of the Baxalta business trajectory. Because that fixed outcome window has no separate public record, neither product/process-interface disruption (p4) nor process/organization-interface fracture (p5) can be determined from documented realized-outcome evidence and both are coded uncertain per the slice’s no-record rule."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"acquired by Shire ~12 months after separation; deregistered via Form 15-12B; no separate 3-5yr outcome record\", \"rationale\": \"The slice documents that Baxalta operated as an independent registrant for only ~one year (single FY2015 10-K) before being acquired by Shire and deregistering its common stock in June 2016, so the fixed 3-5-year outcome window contains no audited public financial statements or located separate disclosure of the acquired business's trajectory. There is therefore no realized-outcome evidence of disruption at the product/process interface (p4) or the process/organization interface (p5); the slice explicitly states the outcome is coded uncertain per the no-record rule rather than fabricated. Because the outcome record is truncated and no post-window trajectory was established, all pathway/channel fields are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"acquired by Shire plc after ~1 year\",\n  \"rationale\": \"The slice explicitly states that Baxalta was acquired by Shire plc in 2016 and deregistered, leaving no separate public 3-5-year outcome record. Consequently, there is no documented evidence to evaluate any realized disruptions for p4_pathway or p5_pathway over the target horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"acquired by Shire ~1 year post-separation; no 3-5yr independent record\",\n  \"rationale\": \"The slice establishes that Baxalta filed only one Form 10-K (FY2015) before the June 2016 Shire merger and Form 15-12B deregistration, so the ~3-5-year window contains no audited public financials or separate acquirer disclosure of the Baxalta business trajectory. Because that fixed outcome window has no separate public record, neither product/process-interface disruption (p4) nor process/organization-interface fracture (p5) can be determined from documented realized-outcome evidence and both are coded uncertain per the slice’s no-record rule.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

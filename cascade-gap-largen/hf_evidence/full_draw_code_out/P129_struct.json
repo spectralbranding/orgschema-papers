@@ -1,0 +1,85 @@
+{
+  "case_id": "P129",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Arysta acquisition was a whole-business share purchase of Arysta LifeScience Limited and its subsidiaries. The product portfolio (T4), operational processes (T5), and management/people (T6) transferred together and were integrated into a single AgroSolutions segment alongside prior acquisitions, with no documented structural mismatch or transition services agreement at closing."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the Arysta closing was a whole-company share purchase of a going corporate group whose crop-protection/biosolutions product portfolio crossed together with the businesses that produce it, and Agriphar/CAS/Arysta were structurally folded into one AgroSolutions segment expected to operate under one brand (10-K FY2014; 8-K 0001171843-15-000857 Item 2.01). gap_56=0 because at the same closing Wayne Hewett (Arysta CEO) was appointed Platform President to lead AgroSolutions and the CAS/Agriphar/Arysta integration, and CAS’s management team including its president likewise joined the segment, so process consolidation was paired with incoming organization (8-K Item 5.02; 10-K FY2014). No TSA/shared-services exhibit was filed, but no structural tier mismatch required mitigation."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Arysta transferred as a going, wholly owned corporate group with its crop-protection and biosolutions portfolio, while the acquired agrochemical businesses were placed in one AgroSolutions segment expected to operate uniformly under the Arysta LifeScience brand; this documents product and operating-process alignment at closing, so gap_45 is 0. It also states that Arysta CEO Wayne Hewett joined Platform at closing to lead the agrochemical businesses and integration, while CAS management joined the same segment, documenting organizational and management alignment with the consolidated processes; therefore gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The Arysta acquisition was a whole-business share purchase of Arysta LifeScience Limited and its subsidiaries. The product portfolio (T4), operational processes (T5), and management/people (T6) transferred together and were integrated into a single AgroSolutions segment alongside prior acquisitions, with no documented structural mismatch or transition services agreement at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the Arysta closing was a whole-company share purchase of a going corporate group whose crop-protection/biosolutions product portfolio crossed together with the businesses that produce it, and Agriphar/CAS/Arysta were structurally folded into one AgroSolutions segment expected to operate under one brand (10-K FY2014; 8-K 0001171843-15-000857 Item 2.01). gap_56=0 because at the same closing Wayne Hewett (Arysta CEO) was appointed Platform President to lead AgroSolutions and the CAS/Agriphar/Arysta integration, and CAS’s management team including its president likewise joined the segment, so process consolidation was paired with incoming organization (8-K Item 5.02; 10-K FY2014). No TSA/shared-services exhibit was filed, but no structural tier mismatch required mitigation.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Arysta transferred as a going, wholly owned corporate group with its crop-protection and biosolutions portfolio, while the acquired agrochemical businesses were placed in one AgroSolutions segment expected to operate uniformly under the Arysta LifeScience brand; this documents product and operating-process alignment at closing, so gap_45 is 0. It also states that Arysta CEO Wayne Hewett joined Platform at closing to lead the agrochemical businesses and integration, while CAS management joined the same segment, documenting organizational and management alignment with the consolidated processes; therefore gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

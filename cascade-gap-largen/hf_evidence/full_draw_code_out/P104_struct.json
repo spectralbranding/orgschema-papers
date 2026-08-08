@@ -1,0 +1,85 @@
+{
+  "case_id": "P104",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that whole going-concern insurance companies were acquired and continued operating as subsidiaries, so customer-facing products crossed together with the processes and people that produced and delivered them (gap_45 = 0). At the closing-era snapshot, back-office processes were centralized into a single Carmel back office while the career-agent, direct, and independent distribution field forces continued to operate as separate segments — i.e., the process re-engineering did not strip away or misalign the people/organization running the channels (gap_56 = 0). The roll-up collapses many acquired insurers into one holding company (N-1 across tiers), with the predecessor Conseco intent effectively replaced by the reconstituted CNO vehicle; no natural-person Tier-1 fusion is documented."
+    },
+    "gemini": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes a roll-up of 19 insurance companies where whole going-concern companies were acquired, meaning products (T4) crossed with their processes (T5) and people (T6). There is no documented structural mismatch at closing where products were separated from processes or processes from people."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states that in the insurance roll-up whole going-concern insurance companies were acquired and continued operating as subsidiaries, so customer-facing products crossed together with the processes that produced and delivered them. gap_56=0 because the same going-concern acquisitions brought people with the operations, and the later back-office consolidation expressly moved 250 jobs to Carmel to staff the single back office while the three distribution-channel field forces continued to operate their respective segments; no product-without-process or process-without-people structural mismatch at closing is documented. No transitional-services agreement is disclosed."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states that whole going-concern insurance companies were acquired and continued operating as subsidiaries, so customer-facing products crossed together with the processes and people that produced and delivered them (gap_45 = 0). At the closing-era snapshot, back-office processes were centralized into a single Carmel back office while the career-agent, direct, and independent distribution field forces continued to operate as separate segments \\u2014 i.e., the process re-engineering did not strip away or misalign the people/organization running the channels (gap_56 = 0). The roll-up collapses many acquired insurers into one holding company (N-1 across tiers), with the predecessor Conseco intent effectively replaced by the reconstituted CNO vehicle; no natural-person Tier-1 fusion is documented.\"}",
+    "gemini": "{\n\"sigma_T1\": \"uncertain\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice describes a roll-up of 19 insurance companies where whole going-concern companies were acquired, meaning products (T4) crossed with their processes (T5) and people (T6). There is no documented structural mismatch at closing where products were separated from processes or processes from people.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states that in the insurance roll-up whole going-concern insurance companies were acquired and continued operating as subsidiaries, so customer-facing products crossed together with the processes that produced and delivered them. gap_56=0 because the same going-concern acquisitions brought people with the operations, and the later back-office consolidation expressly moved 250 jobs to Carmel to staff the single back office while the three distribution-channel field forces continued to operate their respective segments; no product-without-process or process-without-people structural mismatch at closing is documented. No transitional-services agreement is disclosed.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

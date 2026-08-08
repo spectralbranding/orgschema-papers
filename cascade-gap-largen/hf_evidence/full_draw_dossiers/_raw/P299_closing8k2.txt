@@ -1,0 +1,154 @@
+ 
+ 8-K
+ 1
+ s001920x2_8k.htm
+ FORM 8-K
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ WASHINGTON, DC 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ PURSUANT TO SECTION 13 OR 15(d) 
+
+ OF THE SECURITIES EXCHANGE ACT OF 1934 
+
+ Date of Report (Date of earliest event reported): October 17, 2017 (October 17, 2017) 
+
+ TERRAFORM POWER, INC. 
+
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 001-36542 
+
+ 46-4780940 
+
+ (State or other jurisdiction of incorporation) 
+
+ (Commission File Number) 
+
+ (IRS Employer Identification No.) 
+
+ 7550 Wisconsin Avenue, 9th Floor, Bethesda, Maryland 20814 
+
+ (Address of principal executive offices, including zip code) 
+
+ (240) 762-7700 
+
+ (Registrant';s telephone number, including area code) 
+
+ Not applicable 
+
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#9744; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01 
+ 
+ Entry into a Material Definitive Agreement 
+
+ New Revolving Credit Facility 
+
+ On October 17, 2017, TerraForm Power Operating, LLC (";TERP Operating";), an indirect subsidiary of TerraForm Power, Inc., entered into a new senior secured revolving credit facility (";New Revolver";) with HSBC Bank USA, National Association, as Administrative Agent and as Collateral Agent, HSBC Bank Canada, Bank of Montreal, Bank of Nova Scotia, Natixis Securities Americas LLC, RBC Capital Markets and Sumitomo Mitsui Banking Corporation, as Joint Lead Arrangers and Joint Bookrunners, and the lenders party thereto. The New Revolver will be used to refinance the Existing Revolver (as defined below) entered into by TERP Operating in January 2015 and for other general corporate purposes and working capital requirements of TERP Operating. 
+
+ The New Revolver consists of a revolving credit facility in an initial amount of $450.0 million (available for revolving loans and letters of credit). The New Revolver matures on the four-year anniversary of the closing date of such facility. Each of TERP Operating';s existing and subsequently acquired or organized domestic restricted subsidiaries (excluding non-recourse subsidiaries) and TerraForm Power, LLC (";Terra LLC";) are or will become guarantors under the New Revolver. 
+
+ The following summary of the material terms of the New Revolver in this Item 1.01 does not purport to be complete and is qualified in its entirety by reference to the full text of the actual agreement filed as Exhibit 10.1 to this Form 8-K and is incorporated herein by reference. 
+
+ Interest Rate 
+
+ All outstanding amounts under the New Revolver bear interest initially at a rate per annum equal to, at TERP Operating';s option, either (i) a base rate plus a margin of 2.00% or (ii) a reserve adjusted Eurodollar rate plus a margin of 3.00%. After the fiscal quarter ended December 31, 2017 and delivery of a customary compliance certificate, the applicable margin will be determined by reference to a leverage-based grid. 
+
+ Prepayments 
+
+ The New Revolver provides for voluntary prepayments, in whole or in part, subject to notice periods. There are no prepayment penalties or premiums other than customary breakage costs. 
+
+ Representations and Warranties 
+
+ The New Revolver contains customary representations and warranties by Terra LLC, TERP Operating and certain of TERP Operating';s subsidiaries, including, without limitation, representations and warranties related to: organization; requisite power and authority; qualification; equity interests and ownership; due authorization; no conflict; governmental consents; binding obligation; historical financial statements; no material adverse effect; no restricted junior payments; adverse proceedings; payment of taxes; properties; environmental matters; no defaults; governmental regulation; federal reserve regulations; the Securities Exchange Act of 1934, as amended; employee benefit plans; solvency; compliance with statutes; disclosure; anti-terrorism laws; anti-money laundering; embargoed persons; and energy regulatory matters. 
+
+ Covenants 
+
+ The New Revolver contains customary affirmative covenants, subject to exceptions, by Terra LLC, TERP Operating and certain of TERP Operating';s subsidiaries, including, without limitation, covenants related to: financial statements and other reports (including notices of default); existence; payment of taxes and claims; maintenance of properties; insurance; books and records; inspections; lenders meetings; compliance with laws; environmental; subsidiaries; additional material real estate assets; further assurances; ratings and energy regulatory status. The New Revolver also contains customary negative covenants, subject to exceptions, applicable to Terra LLC, TERP Operating and certain of TERP Operating';s subsidiaries, including, without limitation, covenants related to: indebtedness; liens; no further negative pledges; restricted junior payments; restrictions on subsidiary distributions; investments; fundamental changes; disposition of assets; acquisitions; subordinated debt; transactions with shareholders and affiliates; conduct of business; amendments or waivers of organizational documents; and fiscal year. 
+
+ The New Revolver contains a maximum leverage ratio that will be tested quarterly. 
+
+ Collateral 
+
+ The New Revolver, each guarantee and any interest rate, currency hedging or hedging of Renewable Energy Credits obligations of TERP Operating or any guarantor owed to the administrative agent, any arranger or any lender under the New Revolver is secured by first priority security interests in (i) all of TERP Operating';s, each guarantor';s and certain unencumbered non-recourse subsidiaries'; assets, (ii) 100% of the capital stock of each of TERP Operating and its domestic restricted subsidiaries and 65% of the capital stock of TERP Operating';s foreign restricted subsidiaries and (iii) all intercompany debt. Notwithstanding the foregoing, collateral under the New Revolver excludes the capital stock of non-recourse subsidiaries. 
+
+ Item 1.02 
+ 
+ Termination of a Material Definitive Agreement 
+
+ Concurrently with its entry into the New Revolver, TERP Operating terminated its existing $520.0 million revolving credit facility (the ";Existing Revolver";) with Barclays Bank PLC, as Administrative Agent, Joint Lead Arranger and Joint Bookrunner, Citigroup Global Markets Inc., Goldman Sachs Bank USA, Macquarie Capital (USA) Inc., Merrill Lynch, Pierce, Fenner & Smith Incorporated and Morgan Stanley Senior Funding, Inc., as Joint Lead Arrangers, Joint Bookrunners and Co-Syndication Agents, and KeyBank National Association and Royal Bank of Canada, as Co-Documentation Agents, and certain lenders. The Existing Revolver was guaranteed by Terra LLC and certain of TERP Operating';s domestic subsidiaries. Borrowings under the Existing Revolver were secured by first priority security interests in (i) all of TERP Operating';s, each guarantor';s and certain unencumbered non-recourse subsidiaries'; assets, (ii) 100% of the capital stock of each of TERP Operating and its domestic restricted subsidiaries and 65% of the capital stock of TERP Operating';s foreign restricted subsidiaries (but were not secured by the capital stock of non-recourse subsidiaries) and (iii) all intercompany debt. Outstanding amounts under the Existing Revolver bore interest at a rate per annum equal to, at TERP Operating';s option, either (i) a base rate plus a margin of 1.50% or (ii) a reserve adjusted Eurodollar rate plus a margin of 2.50% for any fiscal quarter ended prior to June 30, 2015. After the fiscal quarter ended June 30, 2015, the applicable margin was determined by reference to a leverage-based grid. The maturity date of the Existing Revolver was January 28, 2020. There were no prepayment penalties in connection with the termination of the Existing Revolver. 
+
+ Item 2.03 
+ 
+ Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant 
+
+ The information contained in Item 1.01 of this Current Report on Form 8-K is incorporated by reference into this Item 2.03. 
+
+ Item 9.01 
+ 
+ Financial Statement and Exhibits 
+
+ (d) Exhibits 
+
+ Exhibit No. 
+
+ Description 
+
+ 10.1 
+
+ Credit and Guaranty Agreement, dated as of October 17, 2017, among TerraForm Power Operating, LLC, as borrower, TerraForm Power, LLC, as a guarantor, certain subsidiaries of TerraForm Power Operating, LLC, as guarantors, the lenders party thereto from time to time, and HSBC Bank USA, National Association, as administrative agent and collateral agent. 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ TERRAFORM POWER, INC. 
+
+ By: 
+ 
+ /s/ Andrea Rocheleau 
+
+ Name: 
+
+ Andrea Rocheleau 
+
+ Title: 
+
+ General Counsel 
+
+ Date: October 17, 2017 
+

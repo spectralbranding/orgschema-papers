@@ -1,0 +1,58 @@
+{
+  "case_id": "P106",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by Univar Feb 28, 2019; delisted Mar 1, 2019; deregistered Mar 12, 2019 (no standalone record in window)",
+      "rationale": "The slice documents that Nexeo was acquired, delisted, and deregistered within the first months of the fixed ~2019-2021 window, leaving no standalone public periodic report across the 3-5-year horizon. The slice explicitly states the business's independent trajectory and \"disruption at any operational interface\" is not observable from its own public filings and is not inferred from acquirer consolidated results. With no realized-outcome evidence traceable to product/process or process/organization interfaces, both pathways are coded uncertain rather than 0."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "ceased independent public existence (acquired/delisted/deregistered 2019); no standalone record",
+      "rationale": "The slice explicitly states that because the entity was acquired, delisted and deregistered, no standalone public periodic report exists across the 3-5-year horizon and that disruption at any operational interface is therefore not observable from the business's own public primary filings. It further notes that no post-window standalone audited financial record exists to trace the realized product/process or process/organization trajectory, rendering both pathways undeterminable."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Delisted March 1, 2019 and deregistered March 12, 2019'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice states that no standalone public periodic report exists across the 3–5-year outcome horizon and that the business’s independent trajectory, including disruption at any operational interface, is not observable. It further states that no standalone audited record exists to trace either the realized product/process or process/organization trajectory; therefore both p4 and p5 are uncertain.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"acquired by Univar Feb 28, 2019; delisted Mar 1, 2019; deregistered Mar 12, 2019 (no standalone record in window)\", \"rationale\": \"The slice documents that Nexeo was acquired, delisted, and deregistered within the first months of the fixed ~2019-2021 window, leaving no standalone public periodic report across the 3-5-year horizon. The slice explicitly states the business's independent trajectory and \\\"disruption at any operational interface\\\" is not observable from its own public filings and is not inferred from acquirer consolidated results. With no realized-outcome evidence traceable to product/process or process/organization interfaces, both pathways are coded uncertain rather than 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"ceased independent public existence (acquired/delisted/deregistered 2019); no standalone record\",\n  \"rationale\": \"The slice explicitly states that because the entity was acquired, delisted and deregistered, no standalone public periodic report exists across the 3-5-year horizon and that disruption at any operational interface is therefore not observable from the business's own public primary filings. It further notes that no post-window standalone audited financial record exists to trace the realized product/process or process/organization trajectory, rendering both pathways undeterminable.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Delisted March 1, 2019 and deregistered March 12, 2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice states that no standalone public periodic report exists across the 3–5-year outcome horizon and that the business’s independent trajectory, including disruption at any operational interface, is not observable. It further states that no standalone audited record exists to trace either the realized product/process or process/organization trajectory; therefore both p4 and p5 are uncertain.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

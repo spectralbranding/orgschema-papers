@@ -1,0 +1,85 @@
+{
+  "case_id": "P170",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing (Effective Date April 30, 2015) the registrant \"emerged from Chapter 11 as a privately held Company, substantially in its current form — operating across all Industrial Energy and Transportation business segments globally,\" so the customer-facing product lines (branded batteries) and the manufacturing/recycling processes continued together under the same registrant — no product-vs-process mismatch (gap_45=0). The same slice records that at least part of senior management (CEO Robert M. Caruso) continued into the reorganized entity alongside the continuing operations, so processes and the organization/people running them stayed aligned (gap_56=0). T1 is coded replace because pre-petition common equity was cancelled and new ownership/equity passed to former secured creditors (UNC), installing a new controlling principal while the operating tiers transferred 1-1 to the same vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the company emerged from Chapter 11 'substantially in its current form' retaining its operating business, product lines, and manufacturing processes under the same registrant. There is no evidence of a structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At the Effective Date, the same registrant emerged substantially in its current form and continued operating all Industrial Energy and Transportation segments globally, so the customer-facing product lines and their manufacturing and recycling processes remained together. The release also documents continuity of the incumbent CEO on an interim basis, and the slice identifies no closing-stage mismatch between the continuing processes and the organization operating them; however, it does not establish the disposition of the broader workforce."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"At closing (Effective Date April 30, 2015) the registrant \\\"emerged from Chapter 11 as a privately held Company, substantially in its current form \\u2014 operating across all Industrial Energy and Transportation business segments globally,\\\" so the customer-facing product lines (branded batteries) and the manufacturing/recycling processes continued together under the same registrant \\u2014 no product-vs-process mismatch (gap_45=0). The same slice records that at least part of senior management (CEO Robert M. Caruso) continued into the reorganized entity alongside the continuing operations, so processes and the organization/people running them stayed aligned (gap_56=0). T1 is coded replace because pre-petition common equity was cancelled and new ownership/equity passed to former secured creditors (UNC), installing a new controlling principal while the operating tiers transferred 1-1 to the same vehicle.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the company emerged from Chapter 11 'substantially in its current form' retaining its operating business, product lines, and manufacturing processes under the same registrant. There is no evidence of a structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At the Effective Date, the same registrant emerged substantially in its current form and continued operating all Industrial Energy and Transportation segments globally, so the customer-facing product lines and their manufacturing and recycling processes remained together. The release also documents continuity of the incumbent CEO on an interim basis, and the slice identifies no closing-stage mismatch between the continuing processes and the organization operating them; however, it does not establish the disposition of the broader workforce.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

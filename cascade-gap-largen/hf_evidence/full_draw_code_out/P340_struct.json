@@ -1,0 +1,85 @@
+{
+  "case_id": "P340",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is a double reverse-triangular merger in which both predecessors became wholly owned operating subsidiaries of a newly formed top holding company (New Cigna, renamed Cigna), so each company's product/customer-facing business (T4) crossed together with its operational functions (T5): Cigna's operational functions stayed in Bloomfield and Express Scripts' \"principal executive offices and related corporate and operational functions\" remained in St. Louis under the Express Scripts division, showing product and processes moving together rather than a T4-vs-T5 split (gap_45=0). Likewise the operational processes remained coherently attached to their organization/people — Express Scripts' operations, its former CEO (now division President reporting to Cigna's CEO), and its St. Louis workforce stayed in place — so T5 was not re-engineered apart from the people/culture that run it (gap_56=0). T1 is coded replace because Cigna installed New Cigna's officers as its own and held nine of fourteen board seats plus 64% ownership, subordinating the Express Scripts CEO, indicating a dominant controlling intent rather than a fused merger-of-equals; T3 is swap given the new top holding-company domicile taking the Cigna name and NYSE listing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction transferred Express Scripts' products, operational processes, and organization intact as a division under New Cigna, with its headquarters and related corporate/operational functions remaining in St. Louis. There is no documented structural mismatch between products and processes (gap_45 = 0) or processes and people (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The Legal vehicle and Product/operational location lines state that both predecessor companies survived as wholly owned operating subsidiaries and that Express Scripts' business and related operational functions remained together in St. Louis, documenting no product-process separation at closing. The Controlling intent / management line states that Cigna's officers became New Cigna's officers and Express Scripts' CEO remained president of its division reporting to New Cigna's CEO; although the broader employee transfer is not fully specified, no process-organization mismatch at closing is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is a double reverse-triangular merger in which both predecessors became wholly owned operating subsidiaries of a newly formed top holding company (New Cigna, renamed Cigna), so each company's product/customer-facing business (T4) crossed together with its operational functions (T5): Cigna's operational functions stayed in Bloomfield and Express Scripts' \\\"principal executive offices and related corporate and operational functions\\\" remained in St. Louis under the Express Scripts division, showing product and processes moving together rather than a T4-vs-T5 split (gap_45=0). Likewise the operational processes remained coherently attached to their organization/people \\u2014 Express Scripts' operations, its former CEO (now division President reporting to Cigna's CEO), and its St. Louis workforce stayed in place \\u2014 so T5 was not re-engineered apart from the people/culture that run it (gap_56=0). T1 is coded replace because Cigna installed New Cigna's officers as its own and held nine of fourteen board seats plus 64% ownership, subordinating the Express Scripts CEO, indicating a dominant controlling intent rather than a fused merger-of-equals; T3 is swap given the new top holding-company domicile taking the Cigna name and NYSE listing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction transferred Express Scripts' products, operational processes, and organization intact as a division under New Cigna, with its headquarters and related corporate/operational functions remaining in St. Louis. There is no documented structural mismatch between products and processes (gap_45 = 0) or processes and people (gap_56 = 0) at closing.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The Legal vehicle and Product/operational location lines state that both predecessor companies survived as wholly owned operating subsidiaries and that Express Scripts' business and related operational functions remained together in St. Louis, documenting no product-process separation at closing. The Controlling intent / management line states that Cigna's officers became New Cigna's officers and Express Scripts' CEO remained president of its division reporting to New Cigna's CEO; although the broader employee transfer is not fully specified, no process-organization mismatch at closing is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

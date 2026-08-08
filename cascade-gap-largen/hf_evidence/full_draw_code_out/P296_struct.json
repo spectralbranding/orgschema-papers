@@ -1,0 +1,85 @@
+{
+  "case_id": "P296",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a corporate reorganization converting a master limited partnership into a Delaware corporation (T3 swap). The business model, product, processes, and organization (management and employees) all transferred intact (1-1) with continuity of ownership (T1 continue). There is no evidence of structural gaps between product and process (gap_45=0) or process and organization (gap_56=0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the reorganization was 'a change in corporate form of the same operating partnership rather than a transfer of assets to a different operator,' with no sourced fact that the customer-facing product (oil/NGL/gas) or its producing processes were separated or realigned independently of the legal-vehicle conversion; thus gap_45=0. Existing management was expected to 'stay in place' and unvested equity awards converted rather than being severed, so processes and organization remained aligned at closing and gap_56=0."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The filing frames the reorganization as a change in corporate form of the same operating partnership and reports no separation or independent realignment of the oil-and-gas products and the processes that produce and deliver them, supporting gap_45=0. The existing management team was expected to remain in place, while employees’ and executives’ unvested awards converted automatically rather than being severed, supporting gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a corporate reorganization converting a master limited partnership into a Delaware corporation (T3 swap). The business model, product, processes, and organization (management and employees) all transferred intact (1-1) with continuity of ownership (T1 continue). There is no evidence of structural gaps between product and process (gap_45=0) or process and organization (gap_56=0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the reorganization was 'a change in corporate form of the same operating partnership rather than a transfer of assets to a different operator,' with no sourced fact that the customer-facing product (oil/NGL/gas) or its producing processes were separated or realigned independently of the legal-vehicle conversion; thus gap_45=0. Existing management was expected to 'stay in place' and unvested equity awards converted rather than being severed, so processes and organization remained aligned at closing and gap_56=0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The filing frames the reorganization as a change in corporate form of the same operating partnership and reports no separation or independent realignment of the oil-and-gas products and the processes that produce and deliver them, supporting gap_45=0. The existing management team was expected to remain in place, while employees’ and executives’ unvested awards converted automatically rather than being severed, supporting gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

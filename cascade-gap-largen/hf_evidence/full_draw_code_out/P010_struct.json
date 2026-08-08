@@ -1,0 +1,85 @@
+{
+  "case_id": "P010",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the product (T4), the operational processes that deliver it (T5), and the people and management who run them (T6) crossed the boundary together within the single distributed subsidiary. Therefore, there are no structural gaps between T4 and T5, or between T5 and T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that customer-facing data/video/voice product, broadband-plant delivery processes, and the ~2,022 employees plus incumbent CEO crossed together inside the single distributed subsidiary as a going concern, so neither a T4-without-T5 nor a T5-without-T6 structural mismatch existed at closing. Shared parent corporate services (finance, HR, legal, IT) that terminated were bridged by a Transition Services Agreement, but those services are outside the operating T5/T6 substrate of the cable business itself; gap_45 and gap_56 are therefore 0 and gap_mitigated is NA."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Cable ONE's data, video, and voice products crossed the boundary together with its broadband plant and delivery processes within the distributed going concern, so no product-process gap existed at closing. It also states that approximately 2,022 employees and the incumbent management running the operating business transferred with those processes, so no process-organization gap existed. Although Graham's shared corporate-service substrate did not transfer intact and was temporarily bridged by a Transition Services Agreement, the cited structural summary expressly identifies the core product, delivery processes, people, and management as moving together."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that the product (T4), the operational processes that deliver it (T5), and the people and management who run them (T6) crossed the boundary together within the single distributed subsidiary. Therefore, there are no structural gaps between T4 and T5, or between T5 and T6.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that customer-facing data/video/voice product, broadband-plant delivery processes, and the ~2,022 employees plus incumbent CEO crossed together inside the single distributed subsidiary as a going concern, so neither a T4-without-T5 nor a T5-without-T6 structural mismatch existed at closing. Shared parent corporate services (finance, HR, legal, IT) that terminated were bridged by a Transition Services Agreement, but those services are outside the operating T5/T6 substrate of the cable business itself; gap_45 and gap_56 are therefore 0 and gap_mitigated is NA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Cable ONE's data, video, and voice products crossed the boundary together with its broadband plant and delivery processes within the distributed going concern, so no product-process gap existed at closing. It also states that approximately 2,022 employees and the incumbent management running the operating business transferred with those processes, so no process-organization gap existed. Although Graham's shared corporate-service substrate did not transfer intact and was temporarily bridged by a Transition Services Agreement, the cited structural summary expressly identifies the core product, delivery processes, people, and management as moving together.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

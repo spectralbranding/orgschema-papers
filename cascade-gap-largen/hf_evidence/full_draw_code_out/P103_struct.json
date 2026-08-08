@@ -1,0 +1,85 @@
+{
+  "case_id": "P103",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "This is a spin-off: AOL Inc. was newly incorporated as a Delaware corporation (T3 swap) and Time Warner's controlling intent exited with AOL installed as an independent standalone principal (T1 replace). gap_45 = 0 because the customer-facing products (the assembled web-services/ad platform, Patch, StudioNow, Truveo, etc.) and their operating processes moved together into the same standalone entity; the slice states AOL \"operate[s] as a single integrated business.\" gap_56 = 1 because at closing the operational substrate (data centers, IT applications/databases, hosting per the \"single integrated business\" that \"share[s] infrastructure\") did not fully transfer as self-standing — it remained dependent on the former parent — while people/organization were separated, creating a process-vs-organization mismatch; this gap was contractually absorbed via the Transition Services Agreement, IT Applications and Database Agreement, Master Services Agreement for ATDN/Hosting, and Employee Matters Agreement (gap_mitigated = yes)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing products and advertising platforms (T4) transferred to the newly independent AOL Inc., but the underlying operational infrastructure (T5) such as IT applications, databases, and hosting services did not fully transfer as self-standing capabilities at closing. This structural mismatch (gap_45) was explicitly mitigated by a Transition Services Agreement, an IT Applications and Database Agreement, and a Master Services Agreement for ATDN and Hosting Services with the former parent, Time Warner."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "AOL’s customer-facing web-services, content, advertising, and subscription offerings crossed into the standalone company, but data centers, network operations, IT applications/databases, and hosting remained shared or externally bridged rather than fully self-standing at separation. That product-process gap was contractually absorbed through the Transition Services Agreement, IT Applications and Database Agreement, Master Services Agreement for ATDN and Hosting Services, and related separation agreements. No closing-structure evidence documents operational processes transferring or being re-engineered without the AOL organization and employees that ran them; employee matters were also expressly allocated through an Employee Matters Agreement."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"This is a spin-off: AOL Inc. was newly incorporated as a Delaware corporation (T3 swap) and Time Warner's controlling intent exited with AOL installed as an independent standalone principal (T1 replace). gap_45 = 0 because the customer-facing products (the assembled web-services/ad platform, Patch, StudioNow, Truveo, etc.) and their operating processes moved together into the same standalone entity; the slice states AOL \\\"operate[s] as a single integrated business.\\\" gap_56 = 1 because at closing the operational substrate (data centers, IT applications/databases, hosting per the \\\"single integrated business\\\" that \\\"share[s] infrastructure\\\") did not fully transfer as self-standing \\u2014 it remained dependent on the former parent \\u2014 while people/organization were separated, creating a process-vs-organization mismatch; this gap was contractually absorbed via the Transition Services Agreement, IT Applications and Database Agreement, Master Services Agreement for ATDN/Hosting, and Employee Matters Agreement (gap_mitigated = yes).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"swap\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The customer-facing products and advertising platforms (T4) transferred to the newly independent AOL Inc., but the underlying operational infrastructure (T5) such as IT applications, databases, and hosting services did not fully transfer as self-standing capabilities at closing. This structural mismatch (gap_45) was explicitly mitigated by a Transition Services Agreement, an IT Applications and Database Agreement, and a Master Services Agreement for ATDN and Hosting Services with the former parent, Time Warner.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"AOL’s customer-facing web-services, content, advertising, and subscription offerings crossed into the standalone company, but data centers, network operations, IT applications/databases, and hosting remained shared or externally bridged rather than fully self-standing at separation. That product-process gap was contractually absorbed through the Transition Services Agreement, IT Applications and Database Agreement, Master Services Agreement for ATDN and Hosting Services, and related separation agreements. No closing-structure evidence documents operational processes transferring or being re-engineered without the AOL organization and employees that ran them; employee matters were also expressly allocated through an Employee Matters Agreement.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

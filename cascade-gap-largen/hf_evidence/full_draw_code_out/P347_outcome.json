@@ -1,0 +1,58 @@
+{
+  "case_id": "P347",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$185 million non-cash goodwill charge specific to the acquired electric utility",
+      "rationale": "The slice documents the divestiture of the pipeline-construction subsidiary and a $185 million goodwill charge on the electric utility, but does not attribute these to product/process incoherence (p4). It also notes $102 million in severance costs immediately after closing, but provides no evidence of ongoing process/organization fracture over time (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "IS divested ~$850M/~14mo; $185M Indiana Electric GW charge; utilities retained through FY2022",
+      "rationale": "No product/process-interface disruption is documented: the $185M Indiana Electric goodwill charge is attributed to pandemic-related market-cap decline, not product-line/operations incoherence, and Indiana Gas/SIGECO/VEDO continued as reported operating regulated-utility segments through the FY2022 10-K. No process/organization fracture is documented either; 2019 integration costs ($83M) and merger-related severance ($102M) are recorded as one-time closing-period items, with the acquired utilities remaining in the Electric and Natural Gas segments and no cultural or operations-vs-organization break described over the horizon."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$185 million non-cash goodwill charge for Indiana Electric in 2020'}",
+      "rationale": "{'type': 'string', 'enum': 'No realized product/process incoherence is documented; the acquired regulated utilities continued operating through FY2022, while the infrastructure-services business was divested approximately fourteen months after closing without a stated product/process integration failure. The disclosed $83 million of integration costs and $102 million of severance document costs and workforce reductions, but the slice does not state that operations fractured against management, employees, or culture over time.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$185 million non-cash goodwill charge specific to the acquired electric utility\",\n  \"rationale\": \"The slice documents the divestiture of the pipeline-construction subsidiary and a $185 million goodwill charge on the electric utility, but does not attribute these to product/process incoherence (p4). It also notes $102 million in severance costs immediately after closing, but provides no evidence of ongoing process/organization fracture over time (p5).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"IS divested ~$850M/~14mo; $185M Indiana Electric GW charge; utilities retained through FY2022\",\n  \"rationale\": \"No product/process-interface disruption is documented: the $185M Indiana Electric goodwill charge is attributed to pandemic-related market-cap decline, not product-line/operations incoherence, and Indiana Gas/SIGECO/VEDO continued as reported operating regulated-utility segments through the FY2022 10-K. No process/organization fracture is documented either; 2019 integration costs ($83M) and merger-related severance ($102M) are recorded as one-time closing-period items, with the acquired utilities remaining in the Electric and Natural Gas segments and no cultural or operations-vs-organization break described over the horizon.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$185 million non-cash goodwill charge for Indiana Electric in 2020\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No realized product/process incoherence is documented; the acquired regulated utilities continued operating through FY2022, while the infrastructure-services business was divested approximately fourteen months after closing without a stated product/process integration failure. The disclosed $83 million of integration costs and $102 million of severance document costs and workforce reductions, but the slice does not state that operations fractured against management, employees, or culture over time.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

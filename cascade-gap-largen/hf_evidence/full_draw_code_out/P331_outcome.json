@@ -1,0 +1,58 @@
+{
+  "case_id": "P331",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income rose $229M (2021) to $503M (2022) as $249M pretax rate-case-settlement charge dropped away; no divestiture",
+      "rationale": "The slice documents a stabilizing/improving regulated-utility trajectory: net income rose from $229M (2021) to $503M (2022) and impairment/other charges fell from $320M to $6M as one-time rate-case-settlement charges dropped away, with revenue growth from $3,146M to $3,783M. No documented product/process misalignment appears (no evidence the acquired operations could not be aligned with operating processes over time), so p4_pathway=0. No documented operations-versus-people/culture fracture appears — the ~2,300 employees and ~710 union-covered workers are reported without any integration conflict — so p5_pathway=0. Regulatory implementation (customer refunds, base-rate settlement) proceeded per the SCANA Merger Approval Order without documented disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income rose from $229 million (2021) to $503 million (2022)",
+      "rationale": "The provided evidence slice documents the financial and regulatory trajectory of the acquired utility subsidiary, noting net income and revenue growth between 2021 and 2022. There is no documented evidence of disruption at the product/process interface (p4) or fracture between operations and the organization/culture (p5)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income rose from $229 million in 2021 to $503 million in 2022",
+      "rationale": "The slice documents revenue and net-income growth, declining impairment and other charges, and implementation of regulatory settlements, but no realized product/process disruption. It also reports approximately 2,300 employees and ongoing utility operations without documenting any operational fracture involving management, employees, or culture; the announced 2022 business review concerned possible future impacts rather than a realized disruption."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net income rose $229M (2021) to $503M (2022) as $249M pretax rate-case-settlement charge dropped away; no divestiture\", \"rationale\": \"The slice documents a stabilizing/improving regulated-utility trajectory: net income rose from $229M (2021) to $503M (2022) and impairment/other charges fell from $320M to $6M as one-time rate-case-settlement charges dropped away, with revenue growth from $3,146M to $3,783M. No documented product/process misalignment appears (no evidence the acquired operations could not be aligned with operating processes over time), so p4_pathway=0. No documented operations-versus-people/culture fracture appears \\u2014 the ~2,300 employees and ~710 union-covered workers are reported without any integration conflict \\u2014 so p5_pathway=0. Regulatory implementation (customer refunds, base-rate settlement) proceeded per the SCANA Merger Approval Order without documented disruption.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income rose from $229 million (2021) to $503 million (2022)\",\n  \"rationale\": \"The provided evidence slice documents the financial and regulatory trajectory of the acquired utility subsidiary, noting net income and revenue growth between 2021 and 2022. There is no documented evidence of disruption at the product/process interface (p4) or fracture between operations and the organization/culture (p5).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income rose from $229 million in 2021 to $503 million in 2022\",\n  \"rationale\": \"The slice documents revenue and net-income growth, declining impairment and other charges, and implementation of regulatory settlements, but no realized product/process disruption. It also reports approximately 2,300 employees and ongoing utility operations without documenting any operational fracture involving management, employees, or culture; the announced 2022 business review concerned possible future impacts rather than a realized disruption.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

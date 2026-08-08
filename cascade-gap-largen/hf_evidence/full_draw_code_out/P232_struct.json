@@ -1,0 +1,85 @@
+{
+  "case_id": "P232",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "swap",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing retail real estate portfolio and legal corporate shell crossed into BPY intact (T4 1-1), but the self-managed operating/process substrate \"did not carry over intact — it was replaced at closing by a Master Services Agreement under which BPR 'has no employees',\" a documented product-vs-process mismatch. gap_56=1: the process tier was re-engineered from self-managed to externally managed via the BAM Master Services Agreement while the people/organization tier did not align coherently — \"all of the former officers of GGP ceased to act as officers,\" the CEO and most directors resigned, and BPR \"relies on the Service Providers to conduct its operations.\" Both gaps were contractually absorbed at closing via the August 27, 2018 Master Services Agreement, a 12-month management-fee waiver, and the August 28, 2018 joint governance agreement, so gap_mitigated=yes."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction transferred the real estate portfolio (T4) and legal entity (T3) intact, but the self-managed operating processes (T5) were swapped for an external management structure via a Master Services Agreement, creating a gap_45. Furthermore, all former officers of GGP ceased to act as officers and the entity was left with 'no employees' (T6 terminated), creating a gap_56. These gaps were mitigated at closing by the Master Services Agreement with BAM affiliates."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The whole-company merger moved GGP's retail real-estate portfolio into the BPY structure, while a closing-date Master Services Agreement assigned management and administration to BAM-affiliated service providers; therefore, the product crossed with a contractually aligned replacement operating process rather than without one. BPR had no employees and relied on those service providers, while former GGP officers ceased serving and an incoming BPY-linked board and shared management structure were installed under a joint governance agreement, so the re-engineered processes were structurally aligned with a replacement organization at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"swap\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing retail real estate portfolio and legal corporate shell crossed into BPY intact (T4 1-1), but the self-managed operating/process substrate \\\"did not carry over intact \\u2014 it was replaced at closing by a Master Services Agreement under which BPR 'has no employees',\\\" a documented product-vs-process mismatch. gap_56=1: the process tier was re-engineered from self-managed to externally managed via the BAM Master Services Agreement while the people/organization tier did not align coherently \\u2014 \\\"all of the former officers of GGP ceased to act as officers,\\\" the CEO and most directors resigned, and BPR \\\"relies on the Service Providers to conduct its operations.\\\" Both gaps were contractually absorbed at closing via the August 27, 2018 Master Services Agreement, a 12-month management-fee waiver, and the August 28, 2018 joint governance agreement, so gap_mitigated=yes.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"swap\",\n\"sigma_T6\": \"terminate\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction transferred the real estate portfolio (T4) and legal entity (T3) intact, but the self-managed operating processes (T5) were swapped for an external management structure via a Master Services Agreement, creating a gap_45. Furthermore, all former officers of GGP ceased to act as officers and the entity was left with 'no employees' (T6 terminated), creating a gap_56. These gaps were mitigated at closing by the Master Services Agreement with BAM affiliates.\"\n}\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The whole-company merger moved GGP's retail real-estate portfolio into the BPY structure, while a closing-date Master Services Agreement assigned management and administration to BAM-affiliated service providers; therefore, the product crossed with a contractually aligned replacement operating process rather than without one. BPR had no employees and relied on those service providers, while former GGP officers ceased serving and an incoming BPY-linked board and shared management structure were installed under a joint governance agreement, so the re-engineered processes were structurally aligned with a replacement organization at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "swap",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

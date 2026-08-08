@@ -1,0 +1,58 @@
+{
+  "case_id": "P179",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "announced divestiture of Safety business for $2.4 billion",
+      "rationale": "The slice documents a lack of public financial reporting, a series of rebrands, and an announced segment divestiture. There is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "announced $2.4bn Safety segment divestiture ~5 yrs post-close",
+      "rationale": "The slice documents only rebrands (West to Intrado in 2019; holding company to West Technology Group in 2022) and an announced sale of the Safety/911 segment for $2.4bn while retaining Digital Workflows; it contains no evidence that an acquired product failed to align with operating processes over time, so p4_pathway=0. Likewise there is no sourced record of operations fracturing against people, management, or culture, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['$2.4 billion agreed sale of the Safety business']}",
+      "rationale": "{'type': 'string', 'enum': ['The slice documents a 2019 rebrand and segment reorganization, followed by a 2022 agreement to sell the Safety business for $2.4 billion while retaining Digital Workflows. It does not document that the divestiture or reorganizations resulted from an acquired product failing to align with operating processes, so p4 is 0. It likewise reports no realized breakdown between operations and personnel, management, or culture, so p5 is 0.']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"announced divestiture of Safety business for $2.4 billion\",\n  \"rationale\": \"The slice documents a lack of public financial reporting, a series of rebrands, and an announced segment divestiture. There is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"announced $2.4bn Safety segment divestiture ~5 yrs post-close\",\n  \"rationale\": \"The slice documents only rebrands (West to Intrado in 2019; holding company to West Technology Group in 2022) and an announced sale of the Safety/911 segment for $2.4bn while retaining Digital Workflows; it contains no evidence that an acquired product failed to align with operating processes over time, so p4_pathway=0. Likewise there is no sourced record of operations fracturing against people, management, or culture, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"$2.4 billion agreed sale of the Safety business\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"The slice documents a 2019 rebrand and segment reorganization, followed by a 2022 agreement to sell the Safety business for $2.4 billion while retaining Digital Workflows. It does not document that the divestiture or reorganizations resulted from an acquired product failing to align with operating processes, so p4 is 0. It likewise reports no realized breakdown between operations and personnel, management, or culture, so p5 is 0.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

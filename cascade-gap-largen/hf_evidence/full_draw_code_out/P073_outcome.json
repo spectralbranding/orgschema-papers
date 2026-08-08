@@ -1,0 +1,58 @@
+{
+  "case_id": "P073",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "~$339m due from Sonatide (~$97m invoiced-unpaid) and investment carrying value fell ~$67m→~$37m; net 23 vessels redeployed out of Angola",
+      "rationale": "p4=1: the slice documents a realized breakdown at the delivery/cash-conversion interface of the vessel-services operation — the kwanza forex-law payment process \"deprived the company of significant cash and liquidity,\" leaving ~$339m due from Sonatide with ~$97m invoiced-but-unpaid and ~$119m of kwanza deposits trapped pending conversion, driving the investment carrying value from ~$67m to ~$37m. p5=1: the slice documents fracture at the operations/organization interface — a 2014 presidential decree threatening 100% Angolan ownership \"may result in the need to work with Sonangol to further restructure our Sonatide joint venture and our operations,\" and the mitigating redeployment of a net 23 vessels out of Angola entailed costs to redeploy shore-based employees. t1 and t2 are uncertain because the slice reports the realized operational and financial trajectory but does not document controlling-intent archetype incoherence or an irreconcilable value-capture logic between the parties."
+    },
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "investment carrying value falling from ~$67 million to ~$37 million",
+      "rationale": "The slice documents a disruption at the delivery/cash-conversion interface (p4), noting that the kwanza payment process 'deprived the company of significant cash and liquidity' and resulted in ~$119 million trapped in kwanza deposits. It also documents a disruption at the operations/organization interface (p5), as a presidential decree threatening 100% local ownership requirements forced the company to explore restructuring and redeploy 23 vessels out of Angola, entailing costs to redeploy shore-based employees."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$339 million due from Sonatide at March 31, 2016'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice documents cash-conversion disruption caused by Angola’s forex law, including payment delays, added operating costs, and approximately $339 million due from Sonatide, but it does not document product-line/operations incoherence; therefore p4 is 0. It also reports the redeployment of 23 vessels and potential costs to redeploy shore-based employees in response to regulatory and market conditions, but does not document operations breaking against management, people, or culture; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"~$339m due from Sonatide (~$97m invoiced-unpaid) and investment carrying value fell ~$67m\\u2192~$37m; net 23 vessels redeployed out of Angola\", \"rationale\": \"p4=1: the slice documents a realized breakdown at the delivery/cash-conversion interface of the vessel-services operation \\u2014 the kwanza forex-law payment process \\\"deprived the company of significant cash and liquidity,\\\" leaving ~$339m due from Sonatide with ~$97m invoiced-but-unpaid and ~$119m of kwanza deposits trapped pending conversion, driving the investment carrying value from ~$67m to ~$37m. p5=1: the slice documents fracture at the operations/organization interface \\u2014 a 2014 presidential decree threatening 100% Angolan ownership \\\"may result in the need to work with Sonangol to further restructure our Sonatide joint venture and our operations,\\\" and the mitigating redeployment of a net 23 vessels out of Angola entailed costs to redeploy shore-based employees. t1 and t2 are uncertain because the slice reports the realized operational and financial trajectory but does not document controlling-intent archetype incoherence or an irreconcilable value-capture logic between the parties.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"investment carrying value falling from ~$67 million to ~$37 million\",\n  \"rationale\": \"The slice documents a disruption at the delivery/cash-conversion interface (p4), noting that the kwanza payment process 'deprived the company of significant cash and liquidity' and resulted in ~$119 million trapped in kwanza deposits. It also documents a disruption at the operations/organization interface (p5), as a presidential decree threatening 100% local ownership requirements forced the company to explore restructuring and redeploy 23 vessels out of Angola, entailing costs to redeploy shore-based employees.\"\n}\n",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$339 million due from Sonatide at March 31, 2016\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents cash-conversion disruption caused by Angola’s forex law, including payment delays, added operating costs, and approximately $339 million due from Sonatide, but it does not document product-line/operations incoherence; therefore p4 is 0. It also reports the redeployment of 23 vessels and potential costs to redeploy shore-based employees in response to regulatory and market conditions, but does not document operations breaking against management, people, or culture; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "1",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P277",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing asset (T4 = 411 net-leased properties plus 37 self-storage and one hotel) crossed the boundary, and the operational processes that produce/deliver it (T5) were already run by the acquirer under the pre-existing CPA:17 Advisory Agreements, so product and process were aligned at closing — no product-vs-process mismatch (gap_45=0). The slice states \"CPA:17 – Global has no employees\" and was managed day-to-day by W. P. Carey's affiliates, so there was no separate people/culture tier (T6) to strand relative to the processes; the processes were already co-located with the acquirer, so gap_56=0. Because no structural gap is coded, gap_mitigated is NA; note T5 label is mapped to \"continue\" which is not a valid T2-T6 enum, so it is coded here as read-only reflecting the pre-existing advisor arrangement."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The target, CPA:17, was an externally managed REIT with no employees, already managed by the acquirer W. P. Carey. Therefore, the product (T4, the real estate portfolio) transferred, but there were no separate operational processes (T5) or organization (T6) to transfer, as W. P. Carey already provided them. Thus, there is no structural mismatch or gap at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the customer-facing assets (411 net-leased properties plus self-storage/hotel interests) crossed while day-to-day asset and operations management was already performed by W. P. Carey under the pre-existing CPA:17 Advisory Agreements, and both boards expressly cited that pre-existing management as eliminating integration mismatch at closing. gap_56=0 because CPA:17 had no employees and no independent organization tier; the operational processes were already run by W. P. Carey personnel, so process and organization were already aligned on the acquirer side when the portfolio crossed, with the advisory relationship merely settled via defined Advisor Closing Amounts rather than any new TSA."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"continue\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The customer-facing asset (T4 = 411 net-leased properties plus 37 self-storage and one hotel) crossed the boundary, and the operational processes that produce/deliver it (T5) were already run by the acquirer under the pre-existing CPA:17 Advisory Agreements, so product and process were aligned at closing \\u2014 no product-vs-process mismatch (gap_45=0). The slice states \\\"CPA:17 \\u2013 Global has no employees\\\" and was managed day-to-day by W. P. Carey's affiliates, so there was no separate people/culture tier (T6) to strand relative to the processes; the processes were already co-located with the acquirer, so gap_56=0. Because no structural gap is coded, gap_mitigated is NA; note T5 label is mapped to \\\"continue\\\" which is not a valid T2-T6 enum, so it is coded here as read-only reflecting the pre-existing advisor arrangement.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"terminate\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The target, CPA:17, was an externally managed REIT with no employees, already managed by the acquirer W. P. Carey. Therefore, the product (T4, the real estate portfolio) transferred, but there were no separate operational processes (T5) or organization (T6) to transfer, as W. P. Carey already provided them. Thus, there is no structural mismatch or gap at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"terminate\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the customer-facing assets (411 net-leased properties plus self-storage/hotel interests) crossed while day-to-day asset and operations management was already performed by W. P. Carey under the pre-existing CPA:17 Advisory Agreements, and both boards expressly cited that pre-existing management as eliminating integration mismatch at closing. gap_56=0 because CPA:17 had no employees and no independent organization tier; the operational processes were already run by W. P. Carey personnel, so process and organization were already aligned on the acquirer side when the portfolio crossed, with the advisory relationship merely settled via defined Advisor Closing Amounts rather than any new TSA.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

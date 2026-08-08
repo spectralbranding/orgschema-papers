@@ -1,0 +1,58 @@
+{
+  "case_id": "P038",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "divested mobile-devices business to Lenovo ~$2.91bn at close (~30 months after $12.9bn acquisition); patents retained",
+      "rationale": "The slice documents a realized fracture at the process/organization interface: upon absorption the entire pre-existing board resigned and senior management (CEO Jha replaced by Woodside, new CFO Wittman) was replaced by acquirer-installed leadership, i.e. the operating organization broke against the acquirer's people/management over the post-deal period (p5_pathway=1). No evidence describes disruption specifically at the product/process interface — there is no standalone audited outcome record and the divestiture facts do not document product-line/operations incoherence — so p4_pathway is uncertain. The slice provides no documented evidence on the controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "mobile-devices business divested to Lenovo for ~$2.91bn in 2014",
+      "rationale": "The slice documents Google’s whole-entity acquisition (~$12.9bn, May 2012), board/management replacement at absorption, deregistration, and the 2014 sale of the mobile-devices business to Lenovo (~$2.91bn) with patents retained, but it does not document product-line/operations incoherence over time, so p4_pathway is 0. Management and board replacement is recorded only as an at-closing absorption step, not as a realized process/organization fracture over the 3–5-year horizon, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['Mobile-devices business divested for approximately $2.91 billion in October 2014']}",
+      "rationale": "{'type': 'string', 'enum': ['The documented within-window outcome is the 2014 divestiture of the mobile-devices business to Lenovo, but the slice does not attribute that disposition to product/process incoherence, so p4 is 0. The board and senior-management replacement occurred immediately at absorption, while no subsequent operations-versus-organization breakdown is documented over the outcome window; therefore p5 is 0.']}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"divested mobile-devices business to Lenovo ~$2.91bn at close (~30 months after $12.9bn acquisition); patents retained\", \"rationale\": \"The slice documents a realized fracture at the process/organization interface: upon absorption the entire pre-existing board resigned and senior management (CEO Jha replaced by Woodside, new CFO Wittman) was replaced by acquirer-installed leadership, i.e. the operating organization broke against the acquirer's people/management over the post-deal period (p5_pathway=1). No evidence describes disruption specifically at the product/process interface \\u2014 there is no standalone audited outcome record and the divestiture facts do not document product-line/operations incoherence \\u2014 so p4_pathway is uncertain. The slice provides no documented evidence on the controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"mobile-devices business divested to Lenovo for ~$2.91bn in 2014\",\n  \"rationale\": \"The slice documents Google’s whole-entity acquisition (~$12.9bn, May 2012), board/management replacement at absorption, deregistration, and the 2014 sale of the mobile-devices business to Lenovo (~$2.91bn) with patents retained, but it does not document product-line/operations incoherence over time, so p4_pathway is 0. Management and board replacement is recorded only as an at-closing absorption step, not as a realized process/organization fracture over the 3–5-year horizon, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"Mobile-devices business divested for approximately $2.91 billion in October 2014\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"The documented within-window outcome is the 2014 divestiture of the mobile-devices business to Lenovo, but the slice does not attribute that disposition to product/process incoherence, so p4 is 0. The board and senior-management replacement occurred immediately at absorption, while no subsequent operations-versus-organization breakdown is documented over the outcome window; therefore p5 is 0.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "1",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": true,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

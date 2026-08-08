@@ -1,0 +1,408 @@
+ 
+ 8-K
+ 1
+ form8k.htm
+ 8-K
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported): June 10, 2019 
+
+ Legacy Reserves Inc. 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 001-38668 
+
+ 82-4919553 
+
+ (State or other jurisdiction of incorporation) 
+
+ (Commission File Number) 
+
+ (I.R.S. Employer Identification No.) 
+
+ 303 W. Wall Street, Suite 1800 
+ Midland, Texas 
+ (Address of principal executive offices) 
+
+ 79701 
+ (Zip Code) 
+
+ Registrant';s telephone number, including area code: (432) 689-5200 
+
+ NOT APPLICABLE 
+ (Former name or former address, if changed since last report.) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities Registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+
+ Ticker symbol(s) 
+
+ Name of each exchange on which registered 
+
+ Common stock, par value $0.01 
+
+ LGCY 
+
+ NASDAQ Stock Market LLC 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934
+ (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#9744; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange
+ Act. &#9744;
+
+ Item 1.01 
+ 
+ Entry into a Material Agreement 
+
+ Restructuring Support Agreements 
+
+ On June 10, 2019, Legacy Reserves Inc. (";Legacy";) and certain of its subsidiaries (together with legacy, the ";Company";) entered into a restructuring support and lock-up agreement (the ";Restructuring Support
+ Agreement";) with (i) certain lenders (the ";Supporting Term Lenders";) under the Term Loan Credit Agreement dated as of October, 25, 2016 among Legacy Reserves LP, as borrower, the guarantors party thereto, Cortland Capital Market Services LLC, as
+ administrative agent, and the lenders party thereto (as amended, the ";Prepetition Term Loan Credit Agreement";) and (ii) certain lenders (the ";Supporting RBL Lenders"; and, together with the Supporting Term Lenders, the ";Supporting Lenders";). Under
+ the Third Amended and Restated Credit Agreement dated as of April 1, 2014 among Legacy Reserves LP, as borrower, the guarentors party thereto, Wells Fargo Bank, National Association, as administrative agent, and the lenders party thereto (as
+ amended, the ";Prepetition RBL Credit Agreement";). 
+
+ Subsequent to entering into the Restructuring Support Agreement, on June 13, 2019, the Company entered into the First Amended and Restated Restructuring Support and Lock-Up Agreement (together with all exhibits and
+ schedules thereto, including the term sheet attached as Exhibit A thereto, the ";Amended Restructuring Support Agreement";) with (i) the Supporting Term Lenders, (ii) the Supporting RBL Lenders and (iii) certain (a) holders of 6.625% Senior Notes due
+ 2021 (the ";2021 Note Holders";) issued under the indenture dated as of May 28, 2013, by and among Legacy Reserves LP, Legacy Reserves Finance Corporation, the guarantors party thereto and Wilmington Trust, National Association (as successor to Wells
+ Fargo Bank, National Association), as indenture trustee (as supplemented, the ";2021 Notes Indenture";), (b) holders of 8% Senior Notes due 2020 (the ";2020 Note Holders";) issued under the indenture dated as of December 4, 2012, by and among Legacy
+ Reserves LP, Legacy Reserves Finance Corporation, the guarantors party thereto and Wilmington Trust, National Association (as successor to Wells Fargo Bank, National Association), as indenture trustee (as supplemented, the ";2020 Notes Indenture";)
+ and (c) holders of 8% Convertible Senior Notes due 2023 (together with the 2021 Note Holders and the 2020 Note Holders, the ";Supporting Noteholders,"; and the Supporting Lenders and the Supporting Noteholders, collectively, the ";Supporting
+ Creditors";) issued under the indenture dated as of September 20, 2018, by and among Legacy Reserves LP, Legacy Reserves Finance Corporation, the guarantors party thereto and Wilmington Trust, National Association, as indenture trustee and
+ conversion agent (as supplemented, the ";2023 Notes Indenture";). 
+
+ The Amended Restructuring Support Agreement contemplates that the Company will: (i) file voluntary cases (the ";Chapter 11 Cases";) under chapter 11 of the United States Bankruptcy Code in the United States Bankruptcy
+ Court for the Southern District of Texas (the ";Bankruptcy Court";), to effect a restructuring transaction through a pre-negotiated chapter 11 plan of reorganization (the ";Plan";) to be filed with the Bankruptcy Court; (ii) enter into a proposed
+ senior secured superpriority debtor-in-possession credit agreement (the ";DIP Credit Agreement";); (iii) consummate certain equity investments through a rights offering and committed equity backstops; and (iv) enter into a new senior-secured
+ revolving asset-based lending credit facility in a maximum amount of $500.0 million (the ";Exit Facility";) funded by certain of the lenders under the Prepetition RBL Credit Agreement. 
+
+ The Amended Restructuring Support Agreement contains certain covenants on the part of each of the Company and the Supporting Creditors, including that the Supporting Creditors vote in favor of the Plan and otherwise
+ use good faith efforts to negotiate, execute and implement the restructuring transactions contemplated by the Amended Restructuring Support Agreement and the Plan. Additionally, the Amended Restructuring Support Agreement provides for certain
+ conditions to the obligations of the parties and for termination upon the occurrence of certain events, including without limitation, the failure to achieve certain milestones and certain breaches and/or other actions by the parties under the
+ Amended Restructuring Support Agreement. 
+
+ Proposed Plan of Reorganization 
+
+ The Amended Restructuring Support Agreement further contemplates that a Plan supported by the Supporting Creditors (the ";Supporting Creditors Plan";) will be filed with the Bankruptcy Court, provided, however, if the
+ Supporting Noteholders terminate the Amended Restructuring Support Agreement in accordance with the terms of the Amended Restructuring Support Agreement (a ";Noteholder Termination";), a Plan, supported by only the Supporting Lenders (the ";Supporting
+ Lenders Plan";) will be filed with the Bankruptcy Court. 
+
+ The Supporting Creditors Plan will provide for the following, among other things: 
+
+ &#8226; 
+ 
+ all holders of claims arising under the DIP Facility (as defined below) will receive, in full satisfaction of their respective claims (i) on account of claims under the New Money Facility (as defined below), payment in full in cash,
+ (ii) on account of claims under the Refinancing Facility (as defined below), distribution of cash and commitments under the Exit Facility and/or (iii) if the Exit Facility is not consummated, payment in full in cash; 
+
+ &#8226; 
+ 
+ all holders of claims arising under the Prepetition RBL Credit Agreement will receive, in full satisfaction of their respective claims, (i) distribution of their pro rata share of commitments under the Exit Facility in exchange for
+ the claims arising under the Prepetition RBL Credit Agreement or (ii) if the Exit Facility is not consummated, payment in full in cash; 
+
+ &#8226; 
+ 
+ all holders of claims arising under the Prepetition Term Loan Credit Agreement will receive their pro rata share of 51.40% of the new common stock (the ";New Common Stock";) to be issued by Legacy, as reorganized pursuant to and under
+ the Plan (";Reorganized Legacy";) approximately; 
+
+ &#8226; 
+ 
+ holders of claims arising under the 2020 Notes Indenture, the 2021 Notes Indenture and the 2023 Notes Indenture (the ";Noteholders";) will receive their respective pro rata share of (i) 2.50% of the New Common Stock, subject to
+ dilution, (ii) subscription rights to participate in a $66.5 million rights offering (the ";Supporting Creditor Plan Rights Offering";), which can be exercised to the extent that such Noteholders are ";accredited investors"; as defined
+ under Regulation D promulgated under the Securities Act of 1933, as amended (";Securities Act";), and (iii) a share premium of 1.50% of the New Common Stock, subject to dilution, available to accredited investors that participate in the
+ Supporting Creditor Plan Rights Offering and non-accredited investors; 
+
+ &#8226; 
+ 
+ all existing equity interests in Legacy will receive no recovery under the Plan and will be extinguished; 
+
+ &#8226; 
+ 
+ a $189.8 million committed equity investment by the Supporting Term Lenders, as described below under the caption ";Backstop Commitment Agreements - Sponsor Backstop Commitment Agreement;"; 
+
+ &#8226; 
+ 
+ at the option of the Supporting Term Lenders, an offering of up to $125 million of New Common Stock to third parties, the Supporting Term Lenders or the Noteholders; and 
+
+ &#8226; 
+ 
+ the establishment of a customary management incentive plan at Reorganized Legacy under which 10% of the New Common Stock will be reserved for grants made from time to time to employees of Reorganized Legacy. 
+
+ The Supporting Lenders Plan will provide for the following, among other things: 
+
+ &#8226; 
+ 
+ all holders of claims arising under the DIP Facility will receive, in full satisfaction of their respective claims (i) on account of claims under the New Money Facility, payment in full in cash, (ii) on account of claims under the
+ Refinancing Facility, distribution of cash and commitments under the Exit Facility and/or (iii) if the Exit Facility is not consummated, payment in full in cash; 
+
+ &#8226; 
+ 
+ all holders of claims arising under the Prepetition RBL Credit Agreement will receive, in full satisfaction of their respective claims, (i) distribution of their pro rata share of commitments under the Exit Facility in exchange for
+ the claims arising under the Prepetition RBL Credit Agreement or (ii) if the Exit Facility is not consummated, payment in full in cash; 
+
+ &#8226; 
+ 
+ all holders of claims arising under the Prepetition Term Loan Credit Agreement will receive their pro rata share of 98.00% of the New Common Stock, subject to dilution; 
+
+ &#8226; 
+ 
+ the Noteholders will receive their respective pro rata share of (i) 2.00% of the New Common Stock, subject to dilution, and (ii) subscription rights to participate in a $100.0 million rights offering (the ";Supporting Lenders Plan
+ Rights Offering"; and, together with the Supporting Creditors Plan Rights Offering, the ";Rights Offering";) to the extent that such Noteholders are ";accredited investors"; as defined under Regulation D promulgated under the Securities Act; 
+
+ &#8226; 
+ 
+ all existing equity interests in Legacy will receive no recovery under the Plan and will be extinguished; 
+
+ &#8226; 
+ 
+ a $200.0 million committed equity investment by the Supporting Term Lenders, as described below under the caption ";Backstop Commitment Agreements - Lender Backstop Commitment Agreement;"; and 
+
+ &#8226; 
+ 
+ the establishment of a customary management incentive plan at Reorganized Legacy under which 10% of the New Common Stock will be reserved for grants made from time to time to management employees of Reorganized Legacy. 
+
+ The terms of the Plan are subject to approval by the Bankruptcy Court and Legacy';s board of directors, among other conditions. Accordingly, no assurance can be given that the transactions described herein will be
+ consummated. The foregoing description of the Amended Restructuring Support Agreement does not purport to be complete and is qualified in its entirety by reference to the Amended Restructuring Support Agreement filed as Exhibit 10.1 to this Current
+ Report on Form 8-K and incorporated herein by reference. 
+
+ Debtor-in-Possession Financing 
+
+ The Amended Restructuring Support Agreement contemplates that the Company will file a motion with the Bankruptcy Court (the ";DIP Motion";) seeking, among other things, interim and final approval of
+ debtor-in-possession financing on the terms and conditions set forth in the DIP Credit Agreement to be entered into among the among Legacy Reserves LP, as borrower, the guarantors from time to time party thereto, the lenders from time to time party
+ thereto and Wells Fargo Bank, National Association, as administrative agent and collateral agent. If approved by the Bankruptcy Court, the DIP Credit Agreement will provide for the following, among other things: 
+
+ &#8226; 
+ 
+ a senior secured priming superpriority debtor-in-possession revolving loan credit facility in an aggregate principal amount of up to $350.0 million (the ";DIP Facility";), consisting of (i) a new money revolving loan facility in an
+ aggregate amount of up to $100.0 million (the ";New Money Facility";), $35.0 million of which would be available on an interim basis and which will include a sub-facility of up to $1.0 million for the issuance of letters of credit, and
+ (ii) a refinancing term loan in the amount of $250.0 million (the ";Refinancing Facility";); 
+
+ &#8226; 
+ 
+ borrowings under the (i) New Money Facility will bear interest, at the option of the Company, at a rate per annum equal to the alternate base rate (the ";ABR";) plus 4.25% or LIBOR plus 5.25% and (ii) the Refinancing Facility will bear
+ interest at a rate per annum equal to the ABR plus 3.50%; 
+
+ &#8226; 
+ 
+ the Company will be required to pay an unused commitment fee equal to 1.00% per annum to the lenders under the New Money Facility in respect of the unused commitments thereunder; 
+
+ &#8226; 
+ 
+ the maturity of the DIP Facility to be the earliest to occur of (i) eight months after the petition date, (ii) 35 days after the entry of the interim order of the Bankruptcy Court approving the DIP Facility on an interim basis, if
+ the Bankruptcy Court has not entered the final order on or prior to such date, (iii) upon the Bankruptcy Court';s approval of a plan of reorganization and the Company';s exit from Chapter 11, (iv) upon the sale of substantially all of the
+ equity or assets of the Company and (v) the termination of the DIP Facility during the continuation of an event of default under the DIP Credit Agreement or otherwise pursuant to the terms of the DIP Credit Agreement or by order of the
+ Bankruptcy Court; 
+
+ &#8226; 
+ 
+ proceeds of the DIP Credit Agreement may be used for (i) transaction costs, fees and expenses, (ii) working capital and general corporate purposes in accordance with a budget approved by the lenders, (iii) bankruptcy-related costs
+ and expenses (including restructuring fees and adequate protection payments) and (iv) in the case of the Refinancing Facility, to refinance amounts existing under the Company';s existing credit agreements; 
+
+ &#8226; 
+ 
+ the obligations under the DIP Credit Agreement will be secured by a first priority lien on substantially all of the assets of the Company, subject to limited exceptions provided for in the DIP Motion; 
+
+ &#8226; 
+ 
+ the DIP Credit Agreement will provide for certain customary covenants applicable to the Company, including covenants requiring delivery of a rolling 13-week operating budget and cash flow forecast, together with a variance report
+ setting forth material variances from the budget; and 
+
+ &#8226; 
+ 
+ the DIP Credit Agreement will provide for certain customary events of default, including the failure to achieve certain milestones set forth in the DIP Credit Agreement. 
+
+ The DIP Credit Agreement is subject to approval by the Bankruptcy Court, which has not been obtained at this time. The Company anticipates closing the DIP Credit Agreement promptly following approval by the
+ Bankruptcy Court of the DIP Motion. 
+
+ Backstop Commitment Agreements 
+
+ Lender Backstop Commitment Agreement 
+
+ On June 10, 2019, the Company entered into a backstop commitment agreement (the ";Lender Backstop Commitment Agreement";) with the Supporting Term Lenders (together with any third parties later designated by the
+ Supporting Term Lenders and approved by the Company pursuant to the terms of the Lender Backstop Commitment Agreement, the ";Lender Backstop Parties";). In accordance with the Plan and certain rights offering procedures to be filed as part of the
+ Plan, the Company will grant eligible Noteholders the right to purchase shares of New Common Stock pursuant to the Supporting Lenders Plan Rights Offering upon the closing of the transactions contemplated by the Lender Backstop Commitment Agreement
+ for an aggregate purchase price of up to $100.0 million. Under the Lender Backstop Commitment Agreement, the Lender Backstop Parties have agreed to purchase $200.0 million of shares of New Common Stock at the Per Share Price (as defined in the
+ Lender Backstop Commitment Agreement) subject to reduction on a dollar for dollar basis for any amounts raised in the Supporting Lenders Plan Rights Offering up to $100.0 million at the election of a majority in interest of the Lender Backstop
+ Parties (the ";Lender Backstop Commitment";). In the event that the Company raises additional third party equity financing other than as contemplated by the Supporting Lenders Plan Rights Offering, a majority in interest of the Lender Backstop
+ Parties may elect to decrease the size of their Lender Backstop Commitment on a dollar for dollar basis by an amount equal to such third party equity financing. 
+
+ Pursuant to the Lender Backstop Commitment Agreement, the Company will (i) pay a fee to the Lender Backstop Parties in an amount equal to 6% of the Lender Backstop Commitment (irrespective of any decreases in the
+ Lender Backstop Commitment permitted thereunder), payable in New Common Stock on the Effective Date or in cash, in certain circumstances and (ii) reimburse certain expenses of the Lender Backstop Parties in accordance with the terms of the Lender
+ Backstop Commitment Agreement. 
+
+ The Lender Backstop Commitment Agreement was amended on June 13, 2019 to provide that the Lender Backstop Commitment Agreement shall not be effective until such time as a Noteholder Termination occurs. 
+
+ Sponsor Backstop Commitment Agreement 
+
+ On June 13, 2019, the Company entered into a backstop commitment agreement (the ";Sponsor Backstop Commitment Agreement";) with the Supporting Term Lenders (together with any third parties later designated by the
+ Supporting Term Lenders and approved by the Company pursuant to the terms of the Sponsor Backstop Commitment Agreement, the ";Sponsor Backstop Parties";). Under the Sponsor Backstop Commitment Agreement, the Sponsor Backstop Parties have agreed to
+ purchase $189.8 million of shares of New Common Stock at the Per Share Price (as defined in the Sponsor Backstop Commitment Agreement) (the ";Sponsor Backstop Commitment";). 
+
+ Pursuant to the Sponsor Backstop Commitment Agreement, the Company will (i) pay a fee to the Sponsor Backstop Parties in an amount equal to 6% of the Sponsor Backstop Commitment, payable in New Common Stock on the
+ Effective Date or in cash, in certain circumstances and (ii) reimburse certain expenses of the Sponsor Backstop Parties in accordance with the terms of the Sponsor Backstop Commitment Agreement. 
+
+ The Sponsor Backstop Commitment Agreement may be terminated by a majority in interest of the Sponsor Backstop Parties in the event that a Noteholder Termination occurs. 
+
+ Noteholder Backstop Commitment Agreement 
+
+ On June 13, 2019, the Company entered into a backstop commitment agreement (the ";Noteholder Backstop Commitment Agreement"; and, together with the Sponsor Backstop Commitment Agreement and the Lender Backstop
+ Commitment Agreement, the ";Backstop Commitment Agreements";) with certain Supporting Creditors (together with any third parties later designated by such Supporting Creditors and approved by the Company pursuant to the terms of the Noteholder
+ Backstop Commitment Agreement, the ";Noteholder Backstop Parties"; and, together with the Lender Backstop Parties and the Sponsor Backstop Parties, the ";Backstop Parties";). Under the Noteholder Backstop Commitment Agreement, the Noteholder Backstop
+ Parties have agreed to fully exercise all subscription rights for New Common Stock issued to each Noteholder Backstop Party in the Supporting Creditors Plan Rights Offering and duly purchase such New Common Stock issuable to it pursuant to such
+ exercise. Further, certain of the Noteholder Backstop Parties have agreed to purchase unsubscribed shares in the Supporting Creditor Plan Rights Offering at the Per Share Price (as defined in the Noteholder Backstop Commitment Agreement),
+ backstopping the entire $66.5 million Supporting Creditors Plan Rights offering (the ";Noteholder Backstop Commitment"; and, together with the Lender Backstop Commitment and Sponsor Backstop Commitment, the ";Backstop Commitment";). 
+
+ Pursuant to the Noteholder Backstop Commitment Agreement, the Company will (i) pay a fee to the Noteholder Backstop Parties in an amount equal to 6% of the Noteholder Backstop Commitment, payable in New Common Stock
+ on the Effective Date or in cash, in certain circumstances and (ii) reimburse certain expenses of the Noteholder Backstop Parties in accordance with the terms of the Noteholder Backstop Commitment Agreement. 
+
+ General 
+
+ The rights to purchase any shares of New Common Stock pursuant to the Supporting Lender Plan Rights Offering or Supporting Creditors Plan Rights Offering, as applicable, and all shares issued to the Backstop Parties
+ in respect of their respective Backstop Commitment will be issued in reliance upon an exemption from registration under the Securities Act provided by Section 4(a)(2) thereof and Regulation D thereunder. As a condition to the closing of the
+ transaction contemplated by the Backstop Commitment Agreements, the Company will enter into a registration rights agreement with the Backstop Parties desiring to be a party thereto requiring the Company to register the Backstop Parties'; securities
+ under the Securities Act in certain circumstances. 
+
+ The Backstop Parties commitments contemplated by the Backstop Commitment Agreements are conditioned upon the satisfaction of all conditions to the effectiveness of the Supporting Lender Plan or Supporting Creditor
+ Plan, as applicable, and other applicable conditions and termination rights set forth in the Backstop Commitment Agreements. The issuances of the New Common Stock pursuant to the Supporting Lender Plan Rights Offering or Supporting Creditors Plan
+ Rights Offering, as applicable, and the Backstop Commitment Agreements are conditioned upon, among other things, confirmation of the Supporting Lender Plan or Supporting Creditor Plan, as applicable, by the Bankruptcy Court, and the Supporting
+ Lender Plan';s or Supporting Creditor Plan';s, as applicable, effectiveness upon the Company';s emergence from its Chapter 11 Cases. 
+
+ The foregoing description of the Lender Backstop Commitment Agreement, the amendment to the Lender Backstop Commitment Agreement, the Sponsor Backstop Commitment Agreement and the Noteholder Backstop Commitment
+ Agreement do not purport to be complete and are qualified in their entirety by reference to the Lender Backstop Commitment Agreement, the amendment to the Lender Backstop Commitment Agreement, the Sponsor Backstop Commitment Agreement and the
+ Noteholder Backstop Commitment Agreement filed as Exhibit 10.2, 10.3, 10.4 and 10.5, respectively, to this Current Report on Form 8-K and incorporated herein by reference. 
+
+ Item 7.01 
+ 
+ Other Events 
+
+ In connection with the entry into the Amended Restructuring Support Agreement, Legacy issued a press release on June 14, 2019, a copy of which is attached as Exhibit 99.1 to this Form 8-K. 
+
+ Legacy entered into separate non-disclosure agreements (the ";Non-Disclosure Agreements";) with certain of the Noteholders (the ";Restricted Parties";) to facilitate discussions regarding a refinancing or restructuring
+ of the Company';s existing indebtedness or a sale of assets by the Company (a ";potential transaction";). Pursuant to the Non-Disclosure Agreements, the Restricted Parties have been provided with confidential information regarding the Company and its
+ business (the ";Cleansing Material";). Legacy is obligated to disclose the Cleansing Material in this Current Report on Form 8-K pursuant to the terms of the applicable Non-Disclosure Agreements. A copy of the Cleansing Material is attached hereto as
+ Exhibit 99.2. 
+
+ Subsequent to the execution of the Non-Disclosure Agreements, the Company engaged in negotiations with respect to a potential transaction with the Restricted Parties. Certain of the Restricted Parties have entered
+ into the Amended Restructuring Support Agreement and have reached an agreement with the Company on the principal terms of the potential transaction, as described above in Item 1.01. 
+
+ In accordance with General Instruction B.2 of Form 8-K, the information under this heading shall not be deemed ";filed"; for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the ";Exchange
+ Act";), or otherwise subject to the liabilities of that section, nor shall it be deemed incorporated by reference in any filing under the Securities Act, except as shall be expressly set forth in such a filing. 
+
+ Item 8.01 
+ 
+ Other Events 
+
+ The Company cautions that trading in the Company';s securities during the pendency of the anticipated Chapter 11 Cases is highly speculative and poses substantial risks. Trading prices for the Company';s securities may
+ bear little or no relationship to the actual recovery, if any, by holders of the Company';s securities in the anticipated Chapter 11 Cases. 
+
+ Forward-Looking Statements 
+
+ This Current Report on Form 8-K may include ";forward-looking statements"; within the meaning of Section 27A of the Securities Act and Section 21E of the Exchange Act. All statements, other than statements of
+ historical facts, included in this press release that address activities, events or developments that Legacy expects, believes or anticipates will or may occur in the future, are forward-looking statements. Words such as ";anticipates,"; ";expects,";
+ ";intends,"; ";plans,"; ";targets,"; ";projects,"; ";believes,"; ";seeks,"; ";schedules,"; ";estimated,"; and similar expressions are intended to identify such forward-looking statements. These forward-looking statements rely on a number of assumptions concerning
+ future events and are subject to a number of uncertainties, factors and risks, many of which are outside the control of Legacy, which could cause results to differ materially from those expected by management of Legacy. Such risks and uncertainties
+ include, but are not limited to, the Company';s ability to obtain Bankruptcy Court approval with respect to motions or other requests made to the Bankruptcy Court; the ability of the Company to negotiate, develop, confirm and consummate a plan of
+ reorganization; the ability of the Company to consummate the rights offering and obtain the funding under the Backstop Commitment Agreements; the effects of the Chapter 11 Cases on the Company';s liquidity or results of operations or business
+ prospects; the effects of the bankruptcy filing on the Company';s business and the interests of various constituents; the length of time that the Company will operate under Chapter 11 protection; risks associated with third-party motions in the
+ Chapter 11 Cases; realized oil and natural gas prices; production volumes, lease operating expenses, general and administrative costs and finding and development costs; future operating results; and the factors set forth under the heading ";Risk
+ Factors"; in Legacy';s filings with the U.S. Securities and Exchange Commission, including its Annual Report on Form 10-K, Quarterly Reports on Form 10-Q and Current Reports on Form 8-K. The reader should not place undue reliance on these
+ forward-looking statements, which speak only as of the date of this Current Report on Form 8-K. Unless legally required, Legacy undertakes no obligation to update publicly any forward-looking statements, whether as a result of new information,
+ future events or otherwise. 
+
+ No Solicitation or Offer 
+
+ Any new securities to be issued pursuant to the restructuring transactions described herein may not be registered under the Securities Act, or any state securities laws but may be issued pursuant to an exemption from
+ such registration requirements. Such new securities may not be offered or sold in the United States absent registration or an applicable exemption from the registration requirements of the Securities Act and any applicable state securities laws.
+ This Current Report on Form 8-K does not constitute an offer to sell or buy, nor the solicitation of an offer to sell or buy, any securities referred to herein. 
+
+ Item 9.01 
+ 
+ Financial Statements and Exhibits 
+
+ (d) 
+ 
+ Exhibits 
+
+ Exhibit No. 
+
+ Description 
+
+ 10.1 
+
+ First Amended and Restated Restructuring Support Agreement dated as of June 13, 2019 
+
+ 10.2 
+
+ Backstop Commitment Agreement dated as of June 10, 2019 
+
+ 10.3 
+
+ Amendment to Backstop Commitment Agreement dated as of June 13, 2019 
+
+ 10.4 
+
+ Sponsor Backstop Commitment Agreement dated as of June 13, 2019 
+
+ 10.5 
+
+ Noteholder Backstop Commitment Agreement dated as of June 13, 2019 
+
+ 99.1 
+
+ Press Release dated June 14, 2019 
+
+ 99.2 
+
+ Cleansing Material 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized. 
+
+ Legacy Reserves Inc. 
+
+ Dated: June 14, 2019 
+
+ By: 
+
+ /s/ James Daniel Westcott 
+
+ Name: 
+
+ James Daniel Westcott 
+
+ Title: 
+
+ Chief Executive Officer 
+

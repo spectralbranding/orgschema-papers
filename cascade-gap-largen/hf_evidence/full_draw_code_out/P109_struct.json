@@ -1,0 +1,85 @@
+{
+  "case_id": "P109",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is structured as acquisition of the entire outstanding stock of Herley as a whole operating company, with Herley surviving as a wholly-owned subsidiary; the slice states the \"operating business — its producing/delivering processes as an ongoing enterprise — transfers intact within that subsidiary rather than as a carved-out product line,\" so the product (T4) and its processes (T5) move together, yielding gap_45=0. Key Herley operational management is \"expected to continue their employment with Kratos,\" so processes (T5) and the people/organization running them (T6) transfer together, yielding gap_56=0. Because the whole entity transfers, no transitional-services or shared-substrate arrangement is described (gap_mitigated=NA). Owner intent shifts to the acquiring principal (replace) with Herley absorbed under Kratos."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the entire issued capital of Herley is acquired with Herley surviving as a wholly-owned subsidiary, so that 'the operating business — its producing/delivering processes as an ongoing enterprise — transfers intact within that subsidiary rather than as a carved-out product line,' and the customer-facing microwave products move with that same intact enterprise; thus product (T4) and processes (T5) cross together (gap_45=0). Key Herley operational management is 'expected to continue their employment with Kratos,' and the structural summary records product line, producing operations, and key operational management transferring together as the wholly-owned subsidiary, so processes (T5) and organization (T6) are aligned at closing (gap_56=0); no TSA or shared-substrate bridge is described because none was required."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that Herley's entire capital was acquired and that its customer-facing product line and producing/delivering processes transferred intact within the surviving operating subsidiary, so no product-process gap is documented at closing. It also states that key Herley operational management was expected to continue with Kratos and summarizes the operations and key management as transferring together, so no process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal is structured as acquisition of the entire outstanding stock of Herley as a whole operating company, with Herley surviving as a wholly-owned subsidiary; the slice states the \\\"operating business \\u2014 its producing/delivering processes as an ongoing enterprise \\u2014 transfers intact within that subsidiary rather than as a carved-out product line,\\\" so the product (T4) and its processes (T5) move together, yielding gap_45=0. Key Herley operational management is \\\"expected to continue their employment with Kratos,\\\" so processes (T5) and the people/organization running them (T6) transfer together, yielding gap_56=0. Because the whole entity transfers, no transitional-services or shared-substrate arrangement is described (gap_mitigated=NA). Owner intent shifts to the acquiring principal (replace) with Herley absorbed under Kratos.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the entire issued capital of Herley is acquired with Herley surviving as a wholly-owned subsidiary, so that 'the operating business — its producing/delivering processes as an ongoing enterprise — transfers intact within that subsidiary rather than as a carved-out product line,' and the customer-facing microwave products move with that same intact enterprise; thus product (T4) and processes (T5) cross together (gap_45=0). Key Herley operational management is 'expected to continue their employment with Kratos,' and the structural summary records product line, producing operations, and key operational management transferring together as the wholly-owned subsidiary, so processes (T5) and organization (T6) are aligned at closing (gap_56=0); no TSA or shared-substrate bridge is described because none was required.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that Herley's entire capital was acquired and that its customer-facing product line and producing/delivering processes transferred intact within the surviving operating subsidiary, so no product-process gap is documented at closing. It also states that key Herley operational management was expected to continue with Kratos and summarizes the operations and key management as transferring together, so no process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

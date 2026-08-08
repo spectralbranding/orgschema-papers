@@ -1,0 +1,239 @@
+ 
+
+ false 12-31 0001374535 0001374535 2023-03-27 2023-03-27 
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ WASHINGTON, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section 13 or 15(d) 
+
+ of the Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported): March 27, 2023 
+
+ ALTRA INDUSTRIAL MOTION CORP. 
+
+ (exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 001-33209 
+
+ 61-1478870 
+
+ (State or other jurisdiction 
+ of incorporation) 
+
+ (Commission File Number) 
+
+ (IRS Employer 
+ Identification No.) 
+
+ 300 Granite Street ,
+ Suite 201 , 
+ Braintree , MA 
+
+ 02184 
+
+ (Address of principal executive offices) 
+
+ (Zip Code) 
+
+ Registrant';s telephone number, including area code: ( 781 ) 917-0600 
+
+ Not Applicable 
+
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the
+ following provisions: 
+
+ &#x2610; 
+
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#x2610; 
+
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#x2610; 
+
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#x2610; 
+
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+
+ Trading Symbol(s) 
+
+ Name of each exchange on which 
+ registered 
+
+ Common Stock (par value $0.001) 
+
+ AIMC 
+
+ Nasdaq Global Select Market 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;&#8201;230.405 of this
+ chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;&#8201;240.12b-2 of this chapter). 
+
+ Emerging growth company &#x2610; 
+
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new
+ or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Introductory Note 
+
+ On March 27, 2023, Altra Industrial Motion Corp. (";Altra"; or the ";Company";) and Regal Rexnord Corporation (";Parent";) completed the previously announced
+ transactions contemplated by the Agreement and Plan of Merger, dated as of October 26, 2022 (the ";Merger Agreement";), among the Company, Parent and Aspen Sub, Inc., a wholly owned subsidiary of Parent (";Merger Sub";). Pursuant to the Merger
+ Agreement, Merger Sub merged with and into the Company (the ";Merger";), with the Company surviving the Merger as a wholly owned subsidiary of Parent. The Merger became effective upon the filing of the certificate of merger with the Secretary of
+ State of the State of Delaware on March 27, 2023 (the ";Effective Time";). 
+
+ Item 1.01. Entry Into a Material Definitive Agreement. 
+
+ On March 27, 2023, immediately following the Effective Time, Parent, the guarantors
+ currently party to the Indenture (as defined below) (the ";Existing Guarantors";), the Company, the other guarantors listed on Schedule I to the First Supplemental Indenture (as defined below) (the ";Additional Guarantors";) and U.S. Bank Trust
+ Company, National Association, as trustee (the ";Trustee";), entered into a Supplemental Indenture (the ";First Supplemental Indenture";) to the Indenture, dated as of January 24, 2023, by and among Parent, the Existing Guarantors and the Trustee (as
+ amended or supplemented to the date hereof, the ";Indenture";) . Pursuant to the First Supplemental Indenture, the Company and the Additional Guarantors became
+ guarantors of Parent';s obligations under the senior notes issued under the Indenture. 
+
+ The foregoing description of the First Supplemental Indenture does not purport to be
+ complete and is qualified in its entirety by reference to the First Supplemental Indenture, which is attached as Exhibit 4.1 to this Current Report on Form 8-K
+ and is incorporated by reference herein. 
+
+ Item 1.02. Termination of a Material Definitive Agreement. 
+
+ In connection with the closing of the Merger, the Company delivered to Parent a payoff letter (the ";Payoff Letter";) executed and delivered by the Existing Agent (as
+ defined below) under the Company';s Credit Agreement, dated as of November 17, 2021, among the Company, certain subsidiaries of the Company from time to time party thereto, the lenders party thereto and Bank of Montreal, as Administrative Agent,
+ Sustainability Structuring Agent and Collateral Agent thereunder (in such capacities, the ";Existing Agent";) (as amended, restated, amended and restated, supplemented or otherwise modified from time to time prior to the date hereof, the ";Credit
+ Agreement";), which, among other things, (a) indicated the total amount necessary for the Company to repay and discharge in full all amounts outstanding pursuant to the terms of the Credit Agreement (other than for customary obligations that
+ expressly survived by their terms) (such amount, the ";Payoff Amount";), (b) provided for the release, upon payment of the Payoff Amount at the closing of the Merger (and replacement, cash collateralization or backstop of existing letters of credit),
+ of all liens of the Existing Agent securing obligations under the Credit Agreement over the properties and assets of the Company and each of its subsidiaries (other than any cash that is used to cash collateralize existing letters of credit, as
+ applicable) that constitute collateral under the Credit Agreement and (c) provided for the termination or other satisfaction, upon payment of the Payoff Amount at the closing of the Merger (and replacement, cash collateralization or backstop of
+ existing letters of credit), of all obligations under the Credit Agreement (other than for customary obligations that expressly survived by their terms). Concurrently with the Effective Time, the Company repaid and discharged such indebtedness in
+ accordance with the Payoff Letter. 
+
+ Item 2.01. Completion of Acquisition or Disposition of Assets. 
+
+ At the Effective Time, each of the Company';s issued and outstanding shares of common stock, par value $0.001 per share (the ";Company Common Stock";),
+ other than the Company Common Stock owned by (i) the Company, any wholly owned subsidiary of the Company, Parent, Merger Sub or any other wholly owned subsidiary of Parent, (ii) stockholders of the Company who have validly exercised (and not
+ withdrawn) their statutory rights of appraisal under the Delaware General Corporation Law (the "; DGCL";) and (iii) Company Restricted
+ Shares (as defined in the Merger Agreement), was converted into the right to receive $62.00 (the ";Merger Consideration";) in cash, without interest and subject to any required withholding of taxes. 
+
+ Pursuant to the Merger Agreement, at the Effective Time, (1) each vested Company stock option outstanding immediately prior to the Effective Time was
+ canceled and converted into a cash payment equal to the intrinsic value of such option based on the Merger Consideration, (2) each unvested Company stock option outstanding, immediately prior to the Effective Time, was converted into an award of
+ stock options with respect to Parent common stock with an intrinsic value equivalent to the intrinsic value of the Company stock option based on the Merger Consideration, (3) each unvested Company restricted stock unit outstanding, as of the
+ Effective Time, that was subject solely to time-based vesting conditions was converted into an award of restricted stock units with respect to Parent common stock with an equivalent value based on the Merger Consideration on substantially similar
+ terms and conditions, (4) each unvested award of Company restricted shares was converted into an award of restricted cash of equivalent value based on the Merger Consideration on substantially similar terms and conditions, (5) each unvested
+ Company restricted stock unit outstanding, as of the Effective Time, that was subject to performance-based vesting conditions was converted into an award of time-based restricted stock with an equivalent value based on the Merger Consideration on
+ substantially similar terms and conditions (with performance goals being deemed satisfied at specified levels) and (6) each vested Company restricted stock unit outstanding, as of the Effective Time, was converted into the right to receive a cash
+ payment based on the Merger Consideration. 
+
+ The description of the Merger and the Merger Agreement contained in this Item 2.01 does not purport to be complete and is subject to and qualified in its entirety by
+ reference to the Merger Agreement, which was filed as Exhibit 2.1 to the Current Report on Form 8-K filed by the Company with the Securities and Exchange Commission (the ";SEC";) on October 27, 2022, and is incorporated by reference herein. 
+
+ The information contained in the Introductory Note of this Current Report on Form 8-K is incorporated by reference into this Item 2.01. 
+
+ Item 3.01. Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+
+ The information contained in the Introductory Note and Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 3.01. 
+
+ On March 23, 2023, the Company (a) notified the Nasdaq Global Select Market (";Nasdaq";) of the anticipated closing of the Merger and that the Company Common Stock
+ immediately prior to the Effective Time would be automatically converted into the right to receive the Merger Consideration and (b) requested that Nasdaq halt trading of the Company Common Stock on Nasdaq prior to the open of trading on March 27,
+ 2023. On March 27, 2023, the Company requested that Nasdaq (i) withdraw the Company Common Stock from listing on Nasdaq and (ii) file with the SEC a Notification of Removal from Listing and/or Registration under Section 12(b) of the Securities
+ Exchange Act of 1934, as amended (the ";Exchange Act";), on Form 25 to report that the Company Common Stock is no longer listed on Nasdaq and to apply for the deregistration of the Company Common Stock under Section 12(b) of the Exchange Act. As a
+ result, the Company Common Stock, which previously traded under the symbol ";AIMC,"; will no longer be listed on Nasdaq. 
+
+ In addition, the Company intends to file a certification on Form 15 with the SEC to deregister the Company Common Stock under Section 12(g) of the Exchange Act and to
+ suspend the Company';s reporting obligations under Sections 13 and 15(d) of the Exchange Act. 
+
+ Item 3.03 Material Modification to Rights of Security Holders. 
+
+ The information contained in the Introductory Note, Items 2.01, 3.01 and 5.03 of this Current Report on Form 8-K is incorporated by reference into this Item 3.03. 
+
+ Upon the Effective Time, each holder of the Company Common Stock immediately prior to the Effective Time ceased to have any rights as a stockholder of the Company (other
+ than the right of holders of Company Common Stock to receive the Merger Consideration). 
+
+ Item 5.01. Change in Control of Registrant. 
+
+ The information contained in the Introductory Note, Items 2.01, 3.01 and 5.02 of this Current Report on Form 8-K is incorporated by reference into this Item 5.01. 
+
+ As a result of the consummation of the Merger, a change in control of the Company occurred, and the Company became a wholly owned subsidiary of Parent. 
+
+ Item 5.02. Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain
+ Officers. 
+
+ The information contained in the Introductory Note, Items 2.01 and 5.01 of this Current Report on Form 8-K is incorporated by reference into this Item 5.02. 
+
+ In connection with the consummation of the Merger, Carl R. Christenson, Lyle G. Ganske, J. Scott Hall, Nicole Parent Haughey, Margot L. Hoffman, Thomas W. Swidarski, La
+ Vonda Williams and James H. Woodward, Jr., being all of the directors of the Company immediately prior to the Effective Time, resigned and ceased to be directors of the Company as of the Effective Time. As of the Effective Time, Louis V. Pinkham,
+ Robert J. Rehard, Jerry R. Morton and Thomas E. Valentyn became the directors of the Company. 
+
+ Item 5.03. Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. 
+
+ Pursuant to the Merger Agreement, effective as of the Effective Time, the certificate of incorporation and the bylaws of the Company were amended and restated in their
+ entirety to be in the form of the certificate of incorporation and bylaws of Merger Sub in effect as of immediately prior to the Effective Time, subject to certain changes as set forth in the Merger Agreement. Copies of the amended and restated
+ certificate of incorporation and amended and restated bylaws are filed as Exhibits 3.1 and 3.2, respectively, to this Current Report on Form 8-K and are incorporated herein by reference. 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ (d) Exhibits. 
+
+ Exhibit 
+ Number 
+
+ Description 
+
+ 2.1 
+
+ Agreement and Plan of Merger, dated as of October 26, 2022, by and among Regal Rexnord Corporation, Aspen Sub, Inc. and Altra Industrial
+ Motion Corp. (incorporated by reference to Exhibit 2.1 to the Current Report on Form 8-K filed by the Company with the SEC on October 27, 2022) 
+
+ 3.1 
+
+ Third Amended and Restated Certificate of
+ Incorporation of Altra Industrial Motion Corp. 
+
+ 3.2 
+
+ Third Amended and Restated Bylaws of Altra
+ Industrial Motion Corp. 
+
+ 4.1 
+
+ Supplemental Indenture to the Indenture, dated
+ as of January 24, 2023, by and among Regal Rexnord Corporation, the Existing Guarantors (as defined herein) and U.S. Bank Trust Company, National Association, as trustee 
+
+ 104 
+
+ Cover Page Interactive Data File (embedded within the Inline XBRL document) 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the
+ undersigned hereunto duly authorized. 
+
+ ALTRA INDUSTRIAL MOTION CORP. 
+
+ Date: March 27, 2023 
+
+ By: 
+
+ /s/ Thomas E. Valentyn 
+
+ Name: Thomas E. Valentyn 
+
+ Title: Secretary 
+

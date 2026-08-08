@@ -1,0 +1,58 @@
+{
+  "case_id": "P324",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$99.3M pre-tax restructuring/transaction costs; folded into acquirer segments by FY2020; ~$475M legacy-JV settlement (2022) with $91.3M additional pre-tax charge",
+      "rationale": "The realized record shows a routine, largely successful integration: CH2M contributed ~$3.8B revenue and $185.9M pretax income in the partial first year, its operations were folded into the acquirer's realigned CMS/PPS segments by FY2019-2020, and the retiree medical plan was wound down — none of which documents product/process incoherence (p4=0) or an operations-vs-organization fracture over time (p5=0). The only substantive adverse items are a since-remediated deferred-tax internal-control material weakness and a pre-acquisition Australian JV subcontract dispute (originating 2012, terminated Jan 2017) that settled in April 2022; both are financial/legacy-contingency matters, not documented realized disruptions at the product/process or process/organization interface. No evidence of controlling-intent archetype incoherence (t1=0) or irreconcilable business-model conflict (t2=0) appears in the slice."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cash payment of approximately $475 million for legacy CH2M matter",
+      "rationale": "The provided slice documents the integration of CH2M into the acquirer's reporting segments by fiscal 2019 without noting any product/process disruption (p4=0). Furthermore, there is no evidence of process/organization fracture, as the only major post-deal issues reported were a remediated material weakness in tax controls and a pre-acquisition legal settlement (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "approximately $475 million cash settlement paid in April 2022",
+      "rationale": "No realized product/process-interface disruption is documented; by fiscal 2019 CH2M's businesses had been folded into the CMS and PPS segments, and the fiscal 2020 filing contained no narrative CH2M trajectory. The acquisition-related deferred-tax control weakness was reported as remediated in fiscal 2019, so the slice documents no continuing process/organization fracture at the 3–5-year horizon. The principal CH2M-specific outcome in that window was settlement of a pre-acquisition legal contingency, not an integration-interface failure."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"~$99.3M pre-tax restructuring/transaction costs; folded into acquirer segments by FY2020; ~$475M legacy-JV settlement (2022) with $91.3M additional pre-tax charge\", \"rationale\": \"The realized record shows a routine, largely successful integration: CH2M contributed ~$3.8B revenue and $185.9M pretax income in the partial first year, its operations were folded into the acquirer's realigned CMS/PPS segments by FY2019-2020, and the retiree medical plan was wound down \\u2014 none of which documents product/process incoherence (p4=0) or an operations-vs-organization fracture over time (p5=0). The only substantive adverse items are a since-remediated deferred-tax internal-control material weakness and a pre-acquisition Australian JV subcontract dispute (originating 2012, terminated Jan 2017) that settled in April 2022; both are financial/legacy-contingency matters, not documented realized disruptions at the product/process or process/organization interface. No evidence of controlling-intent archetype incoherence (t1=0) or irreconcilable business-model conflict (t2=0) appears in the slice.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"cash payment of approximately $475 million for legacy CH2M matter\",\n  \"rationale\": \"The provided slice documents the integration of CH2M into the acquirer's reporting segments by fiscal 2019 without noting any product/process disruption (p4=0). Furthermore, there is no evidence of process/organization fracture, as the only major post-deal issues reported were a remediated material weakness in tax controls and a pre-acquisition legal settlement (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"approximately $475 million cash settlement paid in April 2022\",\n  \"rationale\": \"No realized product/process-interface disruption is documented; by fiscal 2019 CH2M's businesses had been folded into the CMS and PPS segments, and the fiscal 2020 filing contained no narrative CH2M trajectory. The acquisition-related deferred-tax control weakness was reported as remediated in fiscal 2019, so the slice documents no continuing process/organization fracture at the 3–5-year horizon. The principal CH2M-specific outcome in that window was settlement of a pre-acquisition legal contingency, not an integration-interface failure.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

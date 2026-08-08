@@ -1,0 +1,85 @@
+{
+  "case_id": "P177",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a full going-concern acquisition of Pinnacle Foods by Conagra via a reverse triangular merger. All products, operational processes, and organizational elements transferred together at closing, meaning there were no structural gaps between T4, T5, and T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the deal was a reverse triangular merger transferring 'the entire Pinnacle operating business — its four reportable segments, branded product portfolio, and underlying corporate legal entities' as a full going-concern into Conagra as a wholly owned subsidiary, so T4 product and T5 processes crossed together (gap_45=0). The same whole-business transfer included the operating organization with the subsidiary; although surviving-corporation officers/directors were set to Merger Sub's slate and retention was flagged as a post-closing risk, no structural separation of T5 processes from T6 people at closing is documented (gap_56=0). No transitional-services agreement is described because none was needed for a partial substrate split."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the entire going-concern business, including all four segments and the branded product portfolio, transferred to Conagra, with no retained-parent substrate or carve-out; therefore, no product-versus-process structural gap is documented at closing. Although numerous processes and systems still required integration, and employee retention and roles remained uncertain, the whole operating business crossed the boundary together rather than processes being separated from the organization that ran them, so no gap_56 is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was structured as a full going-concern acquisition of Pinnacle Foods by Conagra via a reverse triangular merger. All products, operational processes, and organizational elements transferred together at closing, meaning there were no structural gaps between T4, T5, and T6.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the deal was a reverse triangular merger transferring 'the entire Pinnacle operating business — its four reportable segments, branded product portfolio, and underlying corporate legal entities' as a full going-concern into Conagra as a wholly owned subsidiary, so T4 product and T5 processes crossed together (gap_45=0). The same whole-business transfer included the operating organization with the subsidiary; although surviving-corporation officers/directors were set to Merger Sub's slate and retention was flagged as a post-closing risk, no structural separation of T5 processes from T6 people at closing is documented (gap_56=0). No transitional-services agreement is described because none was needed for a partial substrate split.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the entire going-concern business, including all four segments and the branded product portfolio, transferred to Conagra, with no retained-parent substrate or carve-out; therefore, no product-versus-process structural gap is documented at closing. Although numerous processes and systems still required integration, and employee retention and roles remained uncertain, the whole operating business crossed the boundary together rather than processes being separated from the organization that ran them, so no gap_56 is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

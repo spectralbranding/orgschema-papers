@@ -1,0 +1,58 @@
+{
+  "case_id": "P340",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; revenue grew to $180.5bn (2022, +4%), net income $6,668m (+24%)",
+      "rationale": "The slice documents that the Evernorth segment built around the former Express Scripts pharmacy and benefits-management businesses remained a core reportable segment operating under its legacy brand names through FY2021 and FY2022, with no goodwill impairment in the reported roll-forward — indicating no realized product/process incoherence (p4=0). No fracture at the operations/organization interface (culture, management, or people conflict) is documented; the successor continued operating and reporting normally with rising revenue and net income (p5=0). The slice explicitly excludes deal-structure information and does not describe the controlling-intent archetype, so t1 is uncertain; documented segment continuity and financial performance show no reconciliation failure of the two value-capture logics (t2=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Evernorth retained as core segment; no goodwill impairment; rev +4% to $180.5bn in 2022",
+      "rationale": "The slice documents that the Evernorth segment built around the former Express Scripts pharmacy and PBM businesses remained one of two principal reportable segments through FY2021–FY2022 and continued to market under legacy Express Scripts brand names, with no product/process alignment failure described. The FY2020–FY2021 goodwill roll-forward lists no impairment charge, consolidated revenue rose from $174.1bn (2021) to $180.5bn (2022), and no operations-versus-organization or cultural fracture is documented; only unrelated portfolio divestitures (e.g., international insurance to Chubb) appear."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2022 revenue of $180.5 billion, up 4%, and net income of $6.7 billion, up 24%",
+      "rationale": "No realized product/process disruption is documented: Evernorth, encompassing the former Express Scripts businesses, remained a principal reportable segment and continued operating its legacy brands through FY2021-FY2022. No realized process/organization fracture involving operations, management, people, or culture is reported; instead, consolidated revenue rose 4% and net income rose 24% in FY2022."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no goodwill impairment; revenue grew to $180.5bn (2022, +4%), net income $6,668m (+24%)\", \"rationale\": \"The slice documents that the Evernorth segment built around the former Express Scripts pharmacy and benefits-management businesses remained a core reportable segment operating under its legacy brand names through FY2021 and FY2022, with no goodwill impairment in the reported roll-forward \\u2014 indicating no realized product/process incoherence (p4=0). No fracture at the operations/organization interface (culture, management, or people conflict) is documented; the successor continued operating and reporting normally with rising revenue and net income (p5=0). The slice explicitly excludes deal-structure information and does not describe the controlling-intent archetype, so t1 is uncertain; documented segment continuity and financial performance show no reconciliation failure of the two value-capture logics (t2=0).\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Evernorth retained as core segment; no goodwill impairment; rev +4% to $180.5bn in 2022\",\n  \"rationale\": \"The slice documents that the Evernorth segment built around the former Express Scripts pharmacy and PBM businesses remained one of two principal reportable segments through FY2021–FY2022 and continued to market under legacy Express Scripts brand names, with no product/process alignment failure described. The FY2020–FY2021 goodwill roll-forward lists no impairment charge, consolidated revenue rose from $174.1bn (2021) to $180.5bn (2022), and no operations-versus-organization or cultural fracture is documented; only unrelated portfolio divestitures (e.g., international insurance to Chubb) appear.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2022 revenue of $180.5 billion, up 4%, and net income of $6.7 billion, up 24%\",\n  \"rationale\": \"No realized product/process disruption is documented: Evernorth, encompassing the former Express Scripts businesses, remained a principal reportable segment and continued operating its legacy brands through FY2021-FY2022. No realized process/organization fracture involving operations, management, people, or culture is reported; instead, consolidated revenue rose 4% and net income rose 24% in FY2022.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

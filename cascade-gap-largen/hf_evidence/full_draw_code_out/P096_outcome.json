@@ -1,0 +1,58 @@
+{
+  "case_id": "P096",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "cash acquisition at $10.30/share (~$4.55bn) then deregistered; no in-window trajectory",
+      "rationale": "The registrant was acquired for cash (~$4.55bn) by GLP-funded Western Logistics entities on Nov 4, 2015 and deregistered its common stock (Form 15-12G), so no independent audited public 3-5-year (~2017-2019) trajectory exists for the acquired operating business. The only later same-CIK filings belong to a distinct residual successor (DC Industrial Liquidating Trust holding 11 residual properties), not the ~296-building operating portfolio the acquirer absorbed. With no documented post-deal operating trajectory, there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5), so both are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The company was acquired for cash and deregistered in 2015, with no independent public trajectory available for the acquired business in the 2017-2019 window. Consequently, there is no documented evidence regarding post-deal product/process alignment or process/organization integration."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cash-acquired ~$4.55bn at $10.30/sh; deregistered; no public 3-5yr operating record",
+      "rationale": "The slice documents that after the Nov 2015 cash merger the registrant deregistered and no audited public annual report of the acquired operating portfolio exists for the ~2017-2019 window, with later same-CIK filings belonging only to a distinct residual liquidating trust holding 11 properties. Consequently no realized product/process interface disruption (p4) and no realized process/organization fracture (p5) are documented at the 3-5 year horizon; absence of such evidence codes to 0 for both pathways."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"cash acquisition at $10.30/share (~$4.55bn) then deregistered; no in-window trajectory\", \"rationale\": \"The registrant was acquired for cash (~$4.55bn) by GLP-funded Western Logistics entities on Nov 4, 2015 and deregistered its common stock (Form 15-12G), so no independent audited public 3-5-year (~2017-2019) trajectory exists for the acquired operating business. The only later same-CIK filings belong to a distinct residual successor (DC Industrial Liquidating Trust holding 11 residual properties), not the ~296-building operating portfolio the acquirer absorbed. With no documented post-deal operating trajectory, there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5), so both are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The company was acquired for cash and deregistered in 2015, with no independent public trajectory available for the acquired business in the 2017-2019 window. Consequently, there is no documented evidence regarding post-deal product/process alignment or process/organization integration.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"cash-acquired ~$4.55bn at $10.30/sh; deregistered; no public 3-5yr operating record\",\n  \"rationale\": \"The slice documents that after the Nov 2015 cash merger the registrant deregistered and no audited public annual report of the acquired operating portfolio exists for the ~2017-2019 window, with later same-CIK filings belonging only to a distinct residual liquidating trust holding 11 properties. Consequently no realized product/process interface disruption (p4) and no realized process/organization fracture (p5) are documented at the 3-5 year horizon; absence of such evidence codes to 0 for both pathways.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

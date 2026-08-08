@@ -1,0 +1,58 @@
+{
+  "case_id": "P296",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 filed ~9 months post-close; ~114.8M shares cancelled; $447.9M reorganization expense; deregistered via Form 15-12B",
+      "rationale": "The slice documents a severe realized failure — Chapter 11 filing within ~9 months of the 2018 reorganization, cancellation of pre-petition equity, $447.9M reorganization expense, and deregistration — but it characterizes the distress only in financial/legal terms (debt, reorganization accounting, cancellation-of-debt income) and provides no evidence about a product/process interface breakdown, so p4 is uncertain. Likewise, aside from termination of equity awards and executives entering amended employment agreements on emergence, the slice contains no documented evidence of an operations-vs-organization (people/management/culture) fracture as the cause or nature of the failure, so p5 is uncertain. No details on controlling-intent archetype or business-model reconciliation are present, leaving t1 and t2 uncertain as well."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11 filed ~9 mo post-reorg; ~114.8M shares cancelled on emergence Dec 2019; SEC deregistration 2020",
+      "rationale": "The slice documents Chapter 11 filing in June 2019, emergence in December 2019 with pre-petition equity cancelled, ~$447.9M reorganization expense, and subsequent SEC deregistration, but contains no evidence of product/process interface disruption (p4) such as acquired-product vs operating-process misalignment. It likewise documents no process/organization fracture (p5) such as operations breaking against people, management, or culture over time; executive employment-agreement restatements are noted only as emergence mechanics, not as realized organizational incoherence. Absence of any such pathway evidence in the pre-deregistration record yields 0 for both."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 filed ~9 months post-close; ~114.8M shares cancelled; $447.9M reorganization expense; deregistered via Form 15-12B\", \"rationale\": \"The slice documents a severe realized failure \\u2014 Chapter 11 filing within ~9 months of the 2018 reorganization, cancellation of pre-petition equity, $447.9M reorganization expense, and deregistration \\u2014 but it characterizes the distress only in financial/legal terms (debt, reorganization accounting, cancellation-of-debt income) and provides no evidence about a product/process interface breakdown, so p4 is uncertain. Likewise, aside from termination of equity awards and executives entering amended employment agreements on emergence, the slice contains no documented evidence of an operations-vs-organization (people/management/culture) fracture as the cause or nature of the failure, so p5 is uncertain. No details on controlling-intent archetype or business-model reconciliation are present, leaving t1 and t2 uncertain as well.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11 filed ~9 mo post-reorg; ~114.8M shares cancelled on emergence Dec 2019; SEC deregistration 2020\",\n  \"rationale\": \"The slice documents Chapter 11 filing in June 2019, emergence in December 2019 with pre-petition equity cancelled, ~$447.9M reorganization expense, and subsequent SEC deregistration, but contains no evidence of product/process interface disruption (p4) such as acquired-product vs operating-process misalignment. It likewise documents no process/organization fracture (p5) such as operations breaking against people, management, or culture over time; executive employment-agreement restatements are noted only as emergence mechanics, not as realized organizational incoherence. Absence of any such pathway evidence in the pre-deregistration record yields 0 for both.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P022",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a spin-off (Section 355 pro rata distribution) carving the materials science business into an independent Dow: the product portfolio (six global business units / three operating segments), the operational substrate (114 manufacturing sites in 32 countries, proprietary and vertically-integrated processes), and the workforce (~39,000 employees) all moved together into the same distributed entity, so no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0) is documented at closing. T1 is coded continue given continuity of incumbent CEO Jim Fitterling; T3 is swap because the business was re-domiciled into a new legal vehicle (Dow NewCo / Dow Holdings Inc.). Where shared functions were split among the three separating companies, they were contractually allocated via the separation, tax matters, employee matters, IP cross-license, trademark, and services/manufacturing/supply/real estate agreements, reinforcing that product, process, and people transferred coherently together rather than as a mismatch."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the distributed Dow NewCo held both the customer-facing portfolio (six global business units in three operating segments) and the operational substrate that produces it (114 manufacturing sites in 32 countries with proprietary technologies and vertical integration), so T4 and T5 crossed together and gap_45 is 0. The same closing package included the approximately 39,000 pro forma employees and an employee-matters agreement allocating people and obligations, so T5 and T6 also moved together and gap_56 is 0; residual shared-substrate items were bridged by services/manufacturing/supply agreements but do not constitute a product-vs-process or process-vs-organization structural mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing portfolio of six business units transferred together with Dow’s operational substrate, including 114 manufacturing sites, proprietary technologies, and its vertical-integration model, so no product-process mismatch is documented at closing. The operations also transferred with an approximately 39,000-person organization and incumbent CEO Jim Fitterling, so no process-organization mismatch is documented. The separation, employee, services, manufacturing, supply, and real-estate agreements allocated shared assets and functions, but the slice does not identify a structural gap requiring mitigation."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"subset\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a spin-off (Section 355 pro rata distribution) carving the materials science business into an independent Dow: the product portfolio (six global business units / three operating segments), the operational substrate (114 manufacturing sites in 32 countries, proprietary and vertically-integrated processes), and the workforce (~39,000 employees) all moved together into the same distributed entity, so no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0) is documented at closing. T1 is coded continue given continuity of incumbent CEO Jim Fitterling; T3 is swap because the business was re-domiciled into a new legal vehicle (Dow NewCo / Dow Holdings Inc.). Where shared functions were split among the three separating companies, they were contractually allocated via the separation, tax matters, employee matters, IP cross-license, trademark, and services/manufacturing/supply/real estate agreements, reinforcing that product, process, and people transferred coherently together rather than as a mismatch.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the distributed Dow NewCo held both the customer-facing portfolio (six global business units in three operating segments) and the operational substrate that produces it (114 manufacturing sites in 32 countries with proprietary technologies and vertical integration), so T4 and T5 crossed together and gap_45 is 0. The same closing package included the approximately 39,000 pro forma employees and an employee-matters agreement allocating people and obligations, so T5 and T6 also moved together and gap_56 is 0; residual shared-substrate items were bridged by services/manufacturing/supply agreements but do not constitute a product-vs-process or process-vs-organization structural mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing portfolio of six business units transferred together with Dow’s operational substrate, including 114 manufacturing sites, proprietary technologies, and its vertical-integration model, so no product-process mismatch is documented at closing. The operations also transferred with an approximately 39,000-person organization and incumbent CEO Jim Fitterling, so no process-organization mismatch is documented. The separation, employee, services, manufacturing, supply, and real-estate agreements allocated shared assets and functions, but the slice does not identify a structural gap requiring mitigation.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

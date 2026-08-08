@@ -1,0 +1,58 @@
+{
+  "case_id": "P137",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "bid withdrawn effective 2014-01-10; never consummated, no assets crossed",
+      "rationale": "The transaction was never consummated — \"the LBAC Bid was withdrawn\" effective January 10, 2014, and \"No assets of the LightSquared LP Entities crossed to DISH.\" Because no acquired business ever entered DISH's operations, there is no realized post-close product/process disruption (p4=0) and no realized process/organization fracture (p5=0); the FY2016 10-K shows no acquired LightSquared business line, no goodwill, and no impairment. Related litigation resolved with all claims against DISH rejected, and no post-close integration trajectory exists to document any pathway."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "bid withdrawn; transaction not consummated",
+      "rationale": "The slice explicitly states that the transaction was never consummated, as the bid was withdrawn effective January 10, 2014. Because no assets crossed to DISH and no integration occurred, there is no documented disruption at the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "bid withdrawn; never consummated (no assets transferred)",
+      "rationale": "The slice documents that the PSA terminated effective January 10, 2014 and the LBAC bid was withdrawn, with no LightSquared LP assets crossing to DISH and no acquired business line, goodwill, or impairment in the FY2016 10-K. Because no ownership boundary was crossed and no post-close integration occurred, there is no documented product/process interface disruption (p4) and no documented process/organization fracture (p5) over the outcome window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"bid withdrawn effective 2014-01-10; never consummated, no assets crossed\", \"rationale\": \"The transaction was never consummated \\u2014 \\\"the LBAC Bid was withdrawn\\\" effective January 10, 2014, and \\\"No assets of the LightSquared LP Entities crossed to DISH.\\\" Because no acquired business ever entered DISH's operations, there is no realized post-close product/process disruption (p4=0) and no realized process/organization fracture (p5=0); the FY2016 10-K shows no acquired LightSquared business line, no goodwill, and no impairment. Related litigation resolved with all claims against DISH rejected, and no post-close integration trajectory exists to document any pathway.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"bid withdrawn; transaction not consummated\",\n  \"rationale\": \"The slice explicitly states that the transaction was never consummated, as the bid was withdrawn effective January 10, 2014. Because no assets crossed to DISH and no integration occurred, there is no documented disruption at the product/process or process/organization interfaces.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"bid withdrawn; never consummated (no assets transferred)\",\n  \"rationale\": \"The slice documents that the PSA terminated effective January 10, 2014 and the LBAC bid was withdrawn, with no LightSquared LP assets crossing to DISH and no acquired business line, goodwill, or impairment in the FY2016 10-K. Because no ownership boundary was crossed and no post-close integration occurred, there is no documented product/process interface disruption (p4) and no documented process/organization fracture (p5) over the outcome window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

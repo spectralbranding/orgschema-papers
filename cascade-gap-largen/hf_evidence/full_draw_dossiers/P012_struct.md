@@ -1,0 +1,29 @@
+# Structural sub-dossier — separation of Hertz Global Holdings into a car-rental company and an equipment-rental company (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- The transaction was structured as a spin-off separating Hertz Global Holdings, Inc. ("Hertz Holdings") into two independent public companies: the global car rental business, which following the spin-off would be operated by Hertz Rental Car Holding Company, Inc. ("New Hertz") through its operating subsidiaries, including The Hertz Corporation ("Hertz"); and the global equipment rental business, which would be operated by HERC Holdings (Hertz Holdings renamed "Herc Holdings Inc.") through its operating subsidiaries, including Hertz Equipment Rental Corporation (to be renamed Herc Rentals Inc., "HERC"). [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- New Hertz (Hertz Rental Car Holding Company, Inc.) is the registrant; the separation was registered on a Form 10 relating to the securities of New Hertz. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- Hertz Holdings would distribute to its stockholders on a pro rata basis all the shares of New Hertz common stock, at a distribution ratio of one New Hertz share for every five Hertz Holdings shares held on the record date; shares would be distributed in book-entry form with no fractional shares issued. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- After the distribution New Hertz and HERC Holdings would be separate, independent public companies, and New Hertz would not own any HERC Holdings common stock. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+
+## Legal form versus accounting treatment
+- New Hertz would be the legal spinnee in the transaction; for accounting purposes, due to the relative significance of New Hertz to Hertz Holdings, New Hertz would be considered the spinnor (divesting entity) and the "accounting successor" to Hertz Holdings, reflecting the financial information of Hertz Holdings as if New Hertz spun off HERC Holdings. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+
+## What was allocated to each side at the tier level
+- Customer-facing product / brands: the global car rental operation (operated through The Hertz Corporation) was allocated to New Hertz; the global equipment rental operation (operated through Hertz Equipment Rental Corporation / Herc Rentals) was allocated to HERC Holdings. The corporate brand portfolio referenced in the information statement includes Hertz, Dollar, Thrifty, HERC, Donlen and Firefly. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- The EX-99.1 information statement, presented for Herc Holdings Inc., describes the equipment rental business being established as a separate company: it expected to employ approximately 4,600 employees following the spin-off (approximately 4,400 in North American operations and 200 in other operations), operating from branch locations with a customer reception area, an equipment service area and storage facilities, most branches having stand-alone maintenance and fueling facilities and showrooms. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- Labor contracts covering approximately 240 employees in the United States and 170 employees in Canada were in effect as of December 31, 2015 for the equipment rental business. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+
+## Shared substrate that did NOT transfer whole (closing-time bridging)
+- At separation the two companies would enter into a set of agreements to govern their relationship following the spin-off: a separation and distribution agreement, a tax matters agreement, an employee matters agreement, a transition services agreement, an intellectual property agreement, and certain real estate lease agreements. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- The transition services agreement would govern certain commercial and other relationships after the separation, including New Hertz's (or its affiliate's) provision of certain important corporate functions to the equipment rental company on a transitional basis. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+- The equipment rental company stated it would be reliant upon New Hertz for continued service with several information technology systems, and that any disruption or poor performance of those systems could have material adverse effects on its results of operations. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]
+
+## Structural summary (closing only)
+- The transaction split a single parent (Hertz Holdings) into a car rental company (New Hertz, the registrant, the legal spinnee and accounting successor) and an equipment rental company (HERC Holdings, the renamed parent), distributed pro rata to stockholders at a 1-for-5 ratio; the customer-facing operations were allocated to the two sides while certain shared corporate functions and information technology systems remained with New Hertz and were bridged to the equipment rental company at closing by a transition services agreement, alongside a separation and distribution agreement, tax matters agreement, employee matters agreement, intellectual property agreement and real estate lease agreements, rather than transferred whole. [SRC: SEC accession 0001657853-16-000015, Form 10-12B EX-99.1]

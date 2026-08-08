@@ -1,0 +1,58 @@
+{
+  "case_id": "P233",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$1.4bn impairment (FY2019) + $1.3bn net loss; Chapter 11 with existing equity cancelled, no shareholder recovery (~24 months post-close)",
+      "rationale": "The realized record documents severe financial deterioration ($1.3bn FY2019 net loss, $1.4bn impairment) concentrated in the Energy/proppant segment attributed to a \"dynamic shift in Energy markets,\" capacity idling, and a mid-2020 Chapter 11 filing ending in cancelled equity — but the slice ties these outcomes to external market conditions and combined-segment reporting, not to any documented incoherence between the acquired product line and the operating processes, so p4 is uncertain. No slice line describes any fracture at the process/organization interface (operations vs. people/management/culture), so p5 is coded 0 (not documented). The slice explicitly reports financials only on a combined-company basis and locates no evidence separately addressing controlling-intent archetype or business-model reconciliation, leaving t1 and t2 uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 reorganization with stock cancelled",
+      "rationale": "The provided evidence details severe financial distress, including $1.4 billion in impairment charges and a Chapter 11 bankruptcy filing, driven by a 'dynamic shift in Energy markets.' However, there is no documented evidence of integration disruptions specifically at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11; equity cancelled ~2 yrs post-close",
+      "rationale": "The slice attributes the $1.4bn 2019 impairments and capacity idling solely to a 'dynamic shift in Energy markets' in the proppant segment, with no documented product/process misalignment (p4=0). No evidence is given of operations-versus-organization, culture, or management fracture over time (p5=0); the realized path is market-driven losses culminating in Chapter 11 and equity cancellation by end-2020."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$1.4bn impairment (FY2019) + $1.3bn net loss; Chapter 11 with existing equity cancelled, no shareholder recovery (~24 months post-close)\", \"rationale\": \"The realized record documents severe financial deterioration ($1.3bn FY2019 net loss, $1.4bn impairment) concentrated in the Energy/proppant segment attributed to a \\\"dynamic shift in Energy markets,\\\" capacity idling, and a mid-2020 Chapter 11 filing ending in cancelled equity \\u2014 but the slice ties these outcomes to external market conditions and combined-segment reporting, not to any documented incoherence between the acquired product line and the operating processes, so p4 is uncertain. No slice line describes any fracture at the process/organization interface (operations vs. people/management/culture), so p5 is coded 0 (not documented). The slice explicitly reports financials only on a combined-company basis and locates no evidence separately addressing controlling-intent archetype or business-model reconciliation, leaving t1 and t2 uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 reorganization with stock cancelled\",\n  \"rationale\": \"The provided evidence details severe financial distress, including $1.4 billion in impairment charges and a Chapter 11 bankruptcy filing, driven by a 'dynamic shift in Energy markets.' However, there is no documented evidence of integration disruptions specifically at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway).\"\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11; equity cancelled ~2 yrs post-close\",\n  \"rationale\": \"The slice attributes the $1.4bn 2019 impairments and capacity idling solely to a 'dynamic shift in Energy markets' in the proppant segment, with no documented product/process misalignment (p4=0). No evidence is given of operations-versus-organization, culture, or management fracture over time (p5=0); the realized path is market-driven losses culminating in Chapter 11 and equity cancellation by end-2020.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

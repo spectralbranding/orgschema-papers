@@ -1,0 +1,213 @@
+ 
+ 8-K
+ 1
+ d414492d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT
+REPORT Pursuant to Section 13 or 15(d) 
+ of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): January 16, 2018 (January 16, 2018) 
+ 
+ Worldpay, Inc. (Exact
+name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 001-35462 
+ 
+ 26-4532998 
+ 
+ (State of incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer Identification No.) 
+ 8500 Governor&#146;s Hill Drive 
+ Symmes Township, Ohio 45249 
+ (Address of principal executive offices, including zip code) 
+ (513) 900-5250 
+ (Registrant&#146;s telephone number, including area code) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of
+the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR
+ 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR
+ 240.13e-4(c)) Indicate by check mark whether the registrant is an emerging growth company as
+defined in Rule 405 of the Securities Act of 1933 (17 CFR &#167;230.405) or Rule 12b-2 of the Securities Exchange Act of 1934 (17 CFR &#167;240.12b-2). 
+ Emerging growth company &#9744; If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended
+transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange
+Act. &#9744; 
+
+ Introductory Note 
+ On January 16, 2018, Worldpay, Inc., formerly Vantiv, Inc. (the &#147; Company &#148;), completed its previously announced acquisition (the
+&#147; Acquisition &#148;) of all of the outstanding shares of Worldpay Group Limited, formerly Worldpay Group plc, a public limited company registered in England and Wales (&#147; Legacy Worldpay &#148;). 
+
+ Item 1.01 
+ Entry into a Material Definitive Agreement. On January 16, 2018, in connection with completion of
+the Acquisition, Vantiv, LLC and Vantiv Issuer Corp., subsidiaries of the Company (together, the &#147; Issuers &#148;), and certain subsidiaries of Vantiv, LLC (together, the &#147; Guarantors &#148;) entered into a First Supplemental
+Indenture (the &#147; First Supplemental Indenture &#148;) with respect to the Indenture, dated as of December 21, 2017, by and among the Issuers and BNYM Corporate Trustee Services Limited, as trustee (the &#147; Indenture &#148;).
+The First Supplemental Indenture provides that each of the Guarantors agree to guarantee the Issuers&#146; obligations under the $500 million aggregate principal amount of 4.375% senior unsecured notes due 2025 and the 470 million
+aggregate principal amount of 3.875% senior unsecured notes due 2025 issued pursuant to the Indenture. The foregoing description of the First
+Supplemental Indenture does not purport to be complete and is qualified in its entirety by reference to the First Supplemental Indenture, which is attached as Exhibit 4.1 to this Current Report on Form 8-K and
+incorporated herein by reference. 
+
+ Item 2.01 
+ Completion of Acquisition or Disposition of Assets. As described above in the Introductory Note, on
+January 16, 2018, the Company completed the Acquisition. The Acquisition was effected by means of a court-sanctioned scheme of arrangement between Legacy Worldpay and shareholders of Legacy Worldpay under Part 26 of the UK Companies Act 2006,
+as amended. On August 9, 2017, the Company and Vantiv UK Limited, an indirect subsidiary of the Company, released an announcement pursuant to Rule
+2.7 of the United Kingdom City Code on Takeovers and Mergers disclosing the terms on which the Company intended to make a recommended offer to acquire the entire issued and to be issued ordinary shares of Legacy Worldpay in a cash and stock
+transaction. Under the terms of the recommended offer, Legacy Worldpay shareholders were entitled to receive, for each Legacy Worldpay ordinary share held by such shareholders, 55 pence in cash and 0.0672 new shares of the Company&#146;s class A
+common stock (&#147; Company Class A Shares &#148;). In addition, the Legacy Worldpay shareholders received an interim dividend of 0.8 pence per Legacy Worldpay ordinary share on October 23, 2017, and will receive a
+special dividend of 4.2 pence per Legacy Worldpay ordinary share on January 29, 2018. Legacy Worldpay&#146;s shares were delisted from the London Stock Exchange on January 16, 2018, and Legacy Worldpay shareholders will receive as
+aggregate consideration in the Acquisition, in accordance with the foregoing exchange ratio and including the aforementioned dividends, approximately 134.4 million Company Class A Shares and approximately $1.7 billion in cash. 
+ On January 16, 2018, the Company&#146;s class A common stock began trading on the New York Stock Exchange under the new symbol &#147;WP&#148; and on the
+London Stock Exchange via a secondary standard listing under the symbol &#147;WPY.&#148; The foregoing description of the Acquisition does not purport to
+be complete and is qualified in its entirety by reference to the Rule 2.7 Announcement for the Acquisition, which is attached as Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed on
+August 9, 2017, and the Amended and Restated Co-operation Agreement, entered into in connection with the Acquisition among the Company, Vantiv UK Limited and Legacy Worldpay on August 10, 2017 (the
+&#147; Co-operation Agreement &#148;), which is attached as Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed on August 11, 2017. 
+
+ Item 3.02 
+ Unregistered Sales of Equity Securities. As described in in Item 2.01 of this Current Report on Form 8-K, the Company issued approximately 134.4 million Company Class A Shares as part of the consideration in the Acquisition. The shares were issued in reliance on the exemption from registration afforded by
+Section 3(a)(10) of the Securities Act of 1933, as amended. Immediately following the effective time of the Acquisition, the Company contributed the shares of Legacy Worldpay to Vantiv Holding, LLC (&#147; Holding &#148;) in exchange for
+the issuance by Holding of approximately 134.4 million Class A Units in Holding to the Company. As a result of such issuance by Holding, the Company owns approximately 95.1% of the equity interests in Holding, with Fifth Third Bank owning
+the remaining equity interests. 
+
+ Item 5.02 
+ Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. 
+ On January 16, 2018, in connection with the Acquisition and effective as of the effective time of the Acquisition, Mr. David Karnstedt and
+Mr. Mark Sunday resigned from the Company&#146;s board of directors (the &#147; Board &#148;). There were no disagreements between the Company and Messrs. Karnstedt or Sunday that led to their decision to resign. Effective immediately
+following the effective time of the Acquisition, Sir Michael Rake, Mr. Philip Jansen, Mr. Rohinton Kalifa, Ms. Karen Richardson and Ms. Deanna Oppenheimer, all five of whom are former members of the board of directors of Legacy
+Worldpay, were appointed to the Board, which has been expanded to include thirteen members. Ms. Deanna Oppenheimer and Ms. Karen Richardson were appointed as Class III Directors and their terms on the Board expire at the 2018 annual
+meeting of the Company&#146;s stockholders, Mr. Rohinton Kalifa was appointed as a Class I Director and his term on the Board expires at the 2019 annual meeting of the Company&#146;s stockholders and Sir Michael Rake and Mr. Philip
+Jansen were appointed as Class II Directors and their terms on the Board expire at the 2020 annual meeting of the Company&#146;s stockholders. The committee assignments for each newly appointed independent member of the Board will be determined
+at a later date, and Sir Michael Rake will be appointed as the lead independent director of the Board at the next regular meeting of the Board. 
+
+ Item 5.03 
+ Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year On January 16, 2018, the
+Company changed its name from &#147;Vantiv, Inc.&#148; to &#147;Worldpay, Inc.&#148; by amending its Second Amended and Restated Certificate of Incorporation. No other amendments were made to the Company&#146;s Second Amended and Restated
+Certificate of Incorporation. The Certificate of Amendment to the Second Amended and Restated Certificate of Incorporation of the Company is attached as Exhibit 3.1 to this Current Report on Form 8-K and
+incorporated herein by reference. Pursuant to the Co-operation Agreement, on January 16, 2018, the Company
+amended and restated its bylaws (the &#147; Amended and Restated Bylaws &#148;). The Amended and Restated Bylaws contain certain provisions relating to the governance of the Company following completion of the Acquisition, which are summarized
+below. 
+
+ Co-Chief Executive Officers 
+ As of January 16, 2018, Messrs. Charles Drucker and Philip Jansen were appointed Co-Chief Executive Officers of
+the Company, until the death, resignation or termination or removal from office of either Co-Chief Executive Officer. From January 16, 2018 to January 16, 2020, any termination or removal from office
+of either Co-Chief Executive Officer by the Board, other than for cause, while the other Co-Chief Executive Officer is still holding such post, shall require the
+approval of at least 75% of the entire Board. Executive Chairman 
+ As of January 16, 2018, Charles Drucker was appointed the Executive Chairperson of the Board. 
+ The foregoing description of the Amended and Restated Bylaws does not purport to be complete and is qualified in its entirety by reference to the Amended and
+Restated Bylaws, which are attached as Exhibit 3.2 to this Current Report on Form 8-K and incorporated herein by reference. 
+
+ Item 8.01 
+ Other Events. Press Release Announcing Completion of Acquisition 
+ On January 16, 2018, following the effectiveness of the Acquisition, the Company issued a press release announcing completion of the Acquisition. A copy
+of the press release is attached as Exhibit 99.1 to this Current Report on Form 8-K and incorporated herein by reference. 
+
+ Item 9.01 
+ Financial Statements and Exhibits. (a) Financial Statements of Business
+Acquired . The Company has previously filed the financial statements required under Item 9.01(a) in connection with the Acquisition in its Definitive
+Proxy Statement filed on Schedule 14A with the Securities and Exchange Commission on November 27, 2017, which is incorporated herein by reference (the &#147; Definitive Proxy Statement &#148;). 
+ (b) Pro Form Financial Information 
+ The Company has previously filed the unaudited pro forma financial information required under Item 9.01(b) in connection with the Definitive Proxy Statement.
+ (d) Exhibits 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 2.1 
+ 
+ Rule 2.7 Announcement, dated August 9, 2017 (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed on August 9, 2017) 
+
+ 2.2 
+ 
+ Amended and Restated Co-operation Agreement, dated August 10, 2017, by and among Legacy Worldpay, the Company and Vantiv UK Limited (incorporated by reference to Exhibit 2.1 to the
+Company&#146;s Current Report on Form 8-K filed on August 11, 2017) 
+
+ 3.1 
+ 
+ Certificate of Amendment to the Second Amended and Restated Certificate of Incorporation of the Company 
+
+ 3.2 
+ 
+ Amended and Restated Bylaws of the Company 
+
+ 4.1 
+ 
+ First Supplemental Indenture, dated January 16, 2018, by and among Vantiv, LLC, Vantiv Issuer Corp., certain subsidiaries of Vantiv, LLC party thereto and BNYM Corporate Trustee Services Limited, as trustee. 
+
+ 99.1 
+ 
+ Press Release, dated January 16, 2018 
+
+ EXHIBIT INDEX 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 2.1 
+ 
+ Rule 2.7 Announcement, dated August 9, 2017 (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed on August 9, 2017) 
+
+ 2.2 
+ 
+ Amended and Restated Co-operation Agreement, dated August 
+10, 2017, by and among Legacy Worldpay, the Company and Vantiv UK Limited (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed on August 11, 2017)
+
+ 3.1 
+ 
+ Certificate of Amendment to the Second Amended and Restated Certificate of Incorporation of the Company 
+
+ 3.2 
+ 
+ Amended and Restated Bylaws of the Company 
+
+ 4.1 
+ 
+ First Supplemental Indenture, dated January 
+16, 2018, by and among Vantiv, LLC, Vantiv Issuer Corp., certain subsidiaries of Vantiv, LLC party thereto and BNYM Corporate Trustee Services Limited, as trustee. 
+
+ 99.1 
+ 
+ Press Release, dated January 16, 2018 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by
+the undersigned hereunto duly authorized. 
+
+ VANTIV, INC. 
+
+ Dated: January 16, 2018 
+
+ By: 
+ 
+ /s/ NELSON F. GREENE 
+
+ Name: 
+ 
+ Nelson F. Greene 
+
+ Title: 
+ 
+ Chief Legal and Corporate Services Officer and Secretary 
+

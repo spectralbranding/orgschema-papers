@@ -1,0 +1,85 @@
+{
+  "case_id": "P169",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The closing filings describe a full legal combination where US Airways Group became a wholly-owned operating subsidiary of the renamed parent, preserving its operations intact. There is no documented structural mismatch between the customer-facing products and operational processes (gap_45 = 0), nor between the processes and the organizational leadership, which transferred and took over executive management of the combined company (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Closing filings describe a full legal combination in which US Airways Group survived as a wholly-owned operating subsidiary of the renamed AMR parent, with no product carved out from its producing processes and no transition-services or shared-substrate bridge; product and process therefore crossed together (gap_45=0). At the Effective Date the executive slate of the parent and operating subsidiaries was reconstituted predominantly from pre-merger US Airways officers (with the US Airways operating subsidiary preserved under a continuing CEO/COO), so processes and the management organization that runs them were aligned at closing rather than separated (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The closing filings describe a full legal combination rather than a carve-out, with US Airways Group surviving intact as a wholly owned subsidiary and no separated product or operational substrate, so no product-process gap is documented at closing. The US Airways operating subsidiary and its leadership transferred into the combined structure, while the board and executive slate were constituted at closing; accordingly, no process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The closing filings describe a full legal combination where US Airways Group became a wholly-owned operating subsidiary of the renamed parent, preserving its operations intact. There is no documented structural mismatch between the customer-facing products and operational processes (gap_45 = 0), nor between the processes and the organizational leadership, which transferred and took over executive management of the combined company (gap_56 = 0).\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Closing filings describe a full legal combination in which US Airways Group survived as a wholly-owned operating subsidiary of the renamed AMR parent, with no product carved out from its producing processes and no transition-services or shared-substrate bridge; product and process therefore crossed together (gap_45=0). At the Effective Date the executive slate of the parent and operating subsidiaries was reconstituted predominantly from pre-merger US Airways officers (with the US Airways operating subsidiary preserved under a continuing CEO/COO), so processes and the management organization that runs them were aligned at closing rather than separated (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The closing filings describe a full legal combination rather than a carve-out, with US Airways Group surviving intact as a wholly owned subsidiary and no separated product or operational substrate, so no product-process gap is documented at closing. The US Airways operating subsidiary and its leadership transferred into the combined structure, while the board and executive slate were constituted at closing; accordingly, no process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

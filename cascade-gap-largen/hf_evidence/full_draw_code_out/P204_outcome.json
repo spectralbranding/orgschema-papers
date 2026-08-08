@@ -1,0 +1,58 @@
+{
+  "case_id": "P204",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; acquired business folded from a standalone \"Innovation Systems\" segment (through FY2019) into three multi-legacy segments effective Jan 1, 2020, structure persisting through FY2022; $6,259M acquisition goodwill retained",
+      "rationale": "The slice documents an integration that persisted (the acquired business was absorbed into Aeronautics/Defense/Space Systems segments and retained through FY2022) with no documented product/process incoherence realized over time, so p4_pathway is 0. For p5_pathway, the record shows the opposite of an operations-vs-organization fracture: pre-merger Orbital ATK executives (COO, Space Systems Group head) show biographical continuity into post-reorganization Space Systems leadership, and no disruption at the process/organization interface is documented, so p5_pathway is 0. Segment-level goodwill impairment balances ($417M Aeronautics, $153M Space) are explicitly stated to include legacy businesses beyond Orbital ATK and cannot be isolated to the acquired entity, so they do not evidence a specific pathway. The slice gives no evidence bearing on the controlling-intent archetype's realized coherence, hence t1_archetype is uncertain; no business-model incompatibility is documented, so t2_model is 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained; Innovation Systems folded into multi-legacy segments (2020)",
+      "rationale": "The slice documents no realized product/process interface disruption: legacy Innovation Systems results were simply reallocated across Aeronautics, Defense, and Space Systems segments effective 1 Jan 2020, with purchase goodwill explicitly tied to expected integration synergies and no product-line incoherence reported (FY2020/FY2022 10-Ks). Likewise no process/organization fracture is documented; pre-merger Orbital ATK executives continued into Former Innovation Systems and then Space Systems leadership roles, and the only lingering item is an active FTC-order disclosure, not an operations-vs-organization break."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "legacy business embedded across 3 segments through FY2022",
+      "rationale": "The slice documents that legacy Innovation Systems was reorganized across three segments beginning in 2020, but it does not report product-line or operating-process incoherence; therefore no p4 disruption is documented. It also reports continuity of former Orbital ATK executives into post-reorganization leadership roles and provides no evidence that operational integration fractured against management, workforce, or culture, so no p5 disruption is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; acquired business folded from a standalone \\\"Innovation Systems\\\" segment (through FY2019) into three multi-legacy segments effective Jan 1, 2020, structure persisting through FY2022; $6,259M acquisition goodwill retained\", \"rationale\": \"The slice documents an integration that persisted (the acquired business was absorbed into Aeronautics/Defense/Space Systems segments and retained through FY2022) with no documented product/process incoherence realized over time, so p4_pathway is 0. For p5_pathway, the record shows the opposite of an operations-vs-organization fracture: pre-merger Orbital ATK executives (COO, Space Systems Group head) show biographical continuity into post-reorganization Space Systems leadership, and no disruption at the process/organization interface is documented, so p5_pathway is 0. Segment-level goodwill impairment balances ($417M Aeronautics, $153M Space) are explicitly stated to include legacy businesses beyond Orbital ATK and cannot be isolated to the acquired entity, so they do not evidence a specific pathway. The slice gives no evidence bearing on the controlling-intent archetype's realized coherence, hence t1_archetype is uncertain; no business-model incompatibility is documented, so t2_model is 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained; Innovation Systems folded into multi-legacy segments (2020)\",\n  \"rationale\": \"The slice documents no realized product/process interface disruption: legacy Innovation Systems results were simply reallocated across Aeronautics, Defense, and Space Systems segments effective 1 Jan 2020, with purchase goodwill explicitly tied to expected integration synergies and no product-line incoherence reported (FY2020/FY2022 10-Ks). Likewise no process/organization fracture is documented; pre-merger Orbital ATK executives continued into Former Innovation Systems and then Space Systems leadership roles, and the only lingering item is an active FTC-order disclosure, not an operations-vs-organization break.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"legacy business embedded across 3 segments through FY2022\",\n  \"rationale\": \"The slice documents that legacy Innovation Systems was reorganized across three segments beginning in 2020, but it does not report product-line or operating-process incoherence; therefore no p4 disruption is documented. It also reports continuity of former Orbital ATK executives into post-reorganization leadership roles and provides no evidence that operational integration fractured against management, workforce, or culture, so no p5 disruption is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

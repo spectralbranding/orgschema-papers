@@ -1,0 +1,85 @@
+{
+  "case_id": "P078",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the six grocery-anchored properties (T4 customer-facing asset) crossed into the new venture via the Contribution Agreement, but the operating processes that run them did NOT transfer as an in-house capability — the Master Property Management, Leasing and Construction Management Agreement kept day-to-day management, operation and maintenance with the same external Phillips Edison & Company Ltd. manager (T5 read-only, not owned), a documented product-vs-process mismatch at closing. gap_mitigated=yes: that mismatch was contractually absorbed at closing via the separate Master Management Agreement plus the First/Second Amendments reallocating advisory/asset-management fees to the Joint Venture, bridging the shared operating substrate. gap_56=0: because no operational process was transferred or re-engineered into the venture (it remained with the same external manager), there is no T5-without-T6 structural mismatch documented at closing — no people/organization tier moved that could be stranded."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the REIT Member contributed its ownership interests in six grocery-anchored shopping centers (the Initial Properties, ~$94.3M) into the newly formed Joint Venture, so the customer-facing product assets crossed the ownership boundary (T4). Simultaneously the Joint Venture entered a separate Master Property Management, Leasing and Construction Management Agreement under which Phillips Edison & Company Ltd.—explicitly ‘not the new venture as an in-house operating capability’—retained day-to-day management, operation and maintenance of those same properties, documenting a product-vs-process structural mismatch at closing (gap_45=1). Operational processes and the people/organization that run them both remained with Phillips Edison affiliates (Property Manager plus PECO Member as JV manager), so T5 and T6 stayed aligned and gap_56=0; the Master Property Management agreement (together with the advisory-fee reallocation amendments) contractually allocated that shared substrate at closing (gap_mitigated=yes)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The REIT Member contributed six shopping-center properties to the Joint Venture, while day-to-day management, operation, and maintenance remained with Phillips Edison & Company Ltd. under a separate Master Property Management, Leasing and Construction Management Agreement. This documents a product-versus-process ownership mismatch at closing that was contractually absorbed through the management agreement and related fee-allocation amendments. No gap_56 is documented because the retained operating processes and the organization running them remained together with the same Phillips Edison manager under that agreement."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the six grocery-anchored properties (T4 customer-facing asset) crossed into the new venture via the Contribution Agreement, but the operating processes that run them did NOT transfer as an in-house capability \\u2014 the Master Property Management, Leasing and Construction Management Agreement kept day-to-day management, operation and maintenance with the same external Phillips Edison & Company Ltd. manager (T5 read-only, not owned), a documented product-vs-process mismatch at closing. gap_mitigated=yes: that mismatch was contractually absorbed at closing via the separate Master Management Agreement plus the First/Second Amendments reallocating advisory/asset-management fees to the Joint Venture, bridging the shared operating substrate. gap_56=0: because no operational process was transferred or re-engineered into the venture (it remained with the same external manager), there is no T5-without-T6 structural mismatch documented at closing \\u2014 no people/organization tier moved that could be stranded.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the REIT Member contributed its ownership interests in six grocery-anchored shopping centers (the Initial Properties, ~$94.3M) into the newly formed Joint Venture, so the customer-facing product assets crossed the ownership boundary (T4). Simultaneously the Joint Venture entered a separate Master Property Management, Leasing and Construction Management Agreement under which Phillips Edison & Company Ltd.—explicitly ‘not the new venture as an in-house operating capability’—retained day-to-day management, operation and maintenance of those same properties, documenting a product-vs-process structural mismatch at closing (gap_45=1). Operational processes and the people/organization that run them both remained with Phillips Edison affiliates (Property Manager plus PECO Member as JV manager), so T5 and T6 stayed aligned and gap_56=0; the Master Property Management agreement (together with the advisory-fee reallocation amendments) contractually allocated that shared substrate at closing (gap_mitigated=yes).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The REIT Member contributed six shopping-center properties to the Joint Venture, while day-to-day management, operation, and maintenance remained with Phillips Edison & Company Ltd. under a separate Master Property Management, Leasing and Construction Management Agreement. This documents a product-versus-process ownership mismatch at closing that was contractually absorbed through the management agreement and related fee-allocation amendments. No gap_56 is documented because the retained operating processes and the organization running them remained together with the same Phillips Edison manager under that agreement.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P283",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The transaction bifurcated NewStar at closing: the customer-facing loan portfolio (T4) was sold to a GSO-sponsored entity, while the asset-management platform and capabilities (T5) were acquired by First Eagle, creating a clear structural mismatch between the product and its originating processes (gap_45 = 1). The operating workforce and processes moved together to First Eagle without a documented mismatch (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because at closing the customer-facing loan and credit investment portfolio was carved out and sold to GSO Diamond Portfolio Holdco LLC while the asset-management platform, investment-management capability, and operating processes remained with the NewStar entity that passed to First Eagle, a documented product-vs-process ownership split (Structural summary; Product/asset carve-out; Form 8-K Item 2.01). gap_56=0 because the same closing structure transferred the platform/operations together with Continuing Employees under merger-agreement employee-matters provisions assuring salary, benefits, and service continuity, so T5 and T6 were aligned into First Eagle rather than separated; no TSA is documented as absorbing the T4/T5 gap with GSO (Employee Matters; Structural summary)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-N",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The product/asset layer was structurally separated: NewStar's loan and credit-investment portfolio was sold to GSO immediately before the merger, while the asset-management platform and investment-management capability entered First Eagle's ownership, documenting a product-versus-process gap at closing. The operating capability transferred alongside the surviving company and its Continuing Employees, whose employment continuity and benefits were addressed in the merger agreement, so no process-versus-organization gap is documented. The slice expressly states that workforce continuity was not handled through a separate transitional-services arrangement, so the documented gap was not contractually mitigated through such an agreement."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The transaction bifurcated NewStar at closing: the customer-facing loan portfolio (T4) was sold to a GSO-sponsored entity, while the asset-management platform and capabilities (T5) were acquired by First Eagle, creating a clear structural mismatch between the product and its originating processes (gap_45 = 1). The operating workforce and processes moved together to First Eagle without a documented mismatch (gap_56 = 0).\"\n}\n}.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=1 because at closing the customer-facing loan and credit investment portfolio was carved out and sold to GSO Diamond Portfolio Holdco LLC while the asset-management platform, investment-management capability, and operating processes remained with the NewStar entity that passed to First Eagle, a documented product-vs-process ownership split (Structural summary; Product/asset carve-out; Form 8-K Item 2.01). gap_56=0 because the same closing structure transferred the platform/operations together with Continuing Employees under merger-agreement employee-matters provisions assuring salary, benefits, and service continuity, so T5 and T6 were aligned into First Eagle rather than separated; no TSA is documented as absorbing the T4/T5 gap with GSO (Employee Matters; Structural summary).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The product/asset layer was structurally separated: NewStar's loan and credit-investment portfolio was sold to GSO immediately before the merger, while the asset-management platform and investment-management capability entered First Eagle's ownership, documenting a product-versus-process gap at closing. The operating capability transferred alongside the surviving company and its Continuing Employees, whose employment continuity and benefits were addressed in the merger agreement, so no process-versus-organization gap is documented. The slice expressly states that workforce continuity was not handled through a separate transitional-services arrangement, so the documented gap was not contractually mitigated through such an agreement.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-N",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

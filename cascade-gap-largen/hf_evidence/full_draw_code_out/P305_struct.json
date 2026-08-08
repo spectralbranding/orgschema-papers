@@ -1,0 +1,85 @@
+{
+  "case_id": "P305",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a statutory Bermuda merger in which Merger Sub merged into XL, XL surviving as a wholly owned subsidiary of AXA, so XL's undertakings, property, and liabilities remained vested in the same surviving company (T4 product and T5 processes moved together as XL's subsidiaries \"crossed intact\"), yielding gap_45=0. The people/organization substrate (management, with Mr. Hendrick contemplated to run the combined unit, and equity awards cashed out) traveled with the surviving going concern that retained \"significant autonomy,\" so processes and organization stayed coherently aligned, yielding gap_56=0. Control of 100% of equity passed to AXA (T1 replace), with no documented Tier-1 fusion."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company statutory merger where 100% of XL Group's equity was acquired by AXA. The insurance products (T4), underwriting operations (T5), and organization (T6) crossed intact as XL's subsidiaries continued under the surviving company, with no documented structural gaps at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that XL’s insurance and reinsurance underwriting operations and operating subsidiaries crossed intact under the surviving company, so no product-versus-process mismatch is documented at closing. It also states that XL would retain significant autonomy and that XL management members were contemplated for roles in the combined business unit, although no specific retention terms were established; this does not document a process-versus-organization structural gap at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was a statutory Bermuda merger in which Merger Sub merged into XL, XL surviving as a wholly owned subsidiary of AXA, so XL's undertakings, property, and liabilities remained vested in the same surviving company (T4 product and T5 processes moved together as XL's subsidiaries \\\"crossed intact\\\"), yielding gap_45=0. The people/organization substrate (management, with Mr. Hendrick contemplated to run the combined unit, and equity awards cashed out) traveled with the surviving going concern that retained \\\"significant autonomy,\\\" so processes and organization stayed coherently aligned, yielding gap_56=0. Control of 100% of equity passed to AXA (T1 replace), with no documented Tier-1 fusion.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-company statutory merger where 100% of XL Group's equity was acquired by AXA. The insurance products (T4), underwriting operations (T5), and organization (T6) crossed intact as XL's subsidiaries continued under the surviving company, with no documented structural gaps at closing.\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that XL’s insurance and reinsurance underwriting operations and operating subsidiaries crossed intact under the surviving company, so no product-versus-process mismatch is documented at closing. It also states that XL would retain significant autonomy and that XL management members were contemplated for roles in the combined business unit, although no specific retention terms were established; this does not document a process-versus-organization structural gap at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

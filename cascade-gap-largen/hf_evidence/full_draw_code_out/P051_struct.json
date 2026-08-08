@@ -1,0 +1,85 @@
+{
+  "case_id": "P051",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing financing operation (T4) sits in the standalone Polaris Acceptance partnership, but §1.6 and §6.18 show the producing/delivering PROCESSES and System Technology (invoice purchasing, credit underwriting, floorcheck) were NOT contributed into the partnership — they remain owned by the parents and are only supplied back under Services Agreements, a documented product-vs-process mismatch at closing. gap_56=1: those same processes are run by the parents' organizations/people rather than transferred into the venture (§1.6 Services Agreements — CDF to PA, Polaris to PA), so T5 operates without T6 crossing the boundary. gap_mitigated=yes: the shared substrate is explicitly allocated at closing via the Services Agreements, Credit and Security Agreement, and Manufacturer's Repurchase Agreement (§1.6), contractually absorbing the gaps. T1 coded imprint-share as a re-executed 50/50 GECDF/Polaris venture with both principals' intent co-present (§1.1)."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing financing operation (T4) is housed in a standalone partnership, but the producing/delivering processes (T5) and technology were not contributed, remaining with the parents and supplied back under service contracts, creating a gap_45. Because the processes (T5) and the people/organization (T6) both remained with the parents and were supplied via services agreements, there is no structural mismatch between T5 and T6 (gap_56 = 0). The gap_45 is mitigated by the 'Services Agreement — CDF to PA' and 'Services Agreement — Polaris to PA'."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the customer-facing financing business/product sits in Polaris Acceptance while 'the producing/delivering PROCESSES were not contributed into the partnership but retained by the parents and supplied back under service contracts' and System Technology 'shall remain the property of such Party' with the partnership having no interest (§1.6, §6.18). gap_56=0 because those retained processes stay with the parent organizations that continue to run them and supply them to PA under the Services Agreements, so processes and the people/org substrate were not separated from each other at closing; the Definitive Agreements (Services Agreements, Credit and Security Agreement, etc.) contractually allocate that shared substrate, so the gap is mitigated."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"read-only\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing financing operation (T4) sits in the standalone Polaris Acceptance partnership, but \\u00a71.6 and \\u00a76.18 show the producing/delivering PROCESSES and System Technology (invoice purchasing, credit underwriting, floorcheck) were NOT contributed into the partnership \\u2014 they remain owned by the parents and are only supplied back under Services Agreements, a documented product-vs-process mismatch at closing. gap_56=1: those same processes are run by the parents' organizations/people rather than transferred into the venture (\\u00a71.6 Services Agreements \\u2014 CDF to PA, Polaris to PA), so T5 operates without T6 crossing the boundary. gap_mitigated=yes: the shared substrate is explicitly allocated at closing via the Services Agreements, Credit and Security Agreement, and Manufacturer's Repurchase Agreement (\\u00a71.6), contractually absorbing the gaps. T1 coded imprint-share as a re-executed 50/50 GECDF/Polaris venture with both principals' intent co-present (\\u00a71.1).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing financing operation (T4) is housed in a standalone partnership, but the producing/delivering processes (T5) and technology were not contributed, remaining with the parents and supplied back under service contracts, creating a gap_45. Because the processes (T5) and the people/organization (T6) both remained with the parents and were supplied via services agreements, there is no structural mismatch between T5 and T6 (gap_56 = 0). The gap_45 is mitigated by the 'Services Agreement — CDF to PA' and 'Services Agreement — Polaris to PA'.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the customer-facing financing business/product sits in Polaris Acceptance while 'the producing/delivering PROCESSES were not contributed into the partnership but retained by the parents and supplied back under service contracts' and System Technology 'shall remain the property of such Party' with the partnership having no interest (§1.6, §6.18). gap_56=0 because those retained processes stay with the parent organizations that continue to run them and supply them to PA under the Services Agreements, so processes and the people/org substrate were not separated from each other at closing; the Definitive Agreements (Services Agreements, Credit and Security Agreement, etc.) contractually allocate that shared substrate, so the gap is mitigated.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P031",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing fleet (34 jackups, eight floaters) crossed together with its dedicated operating crews and rig-based operations on a dayrate basis, so the product and the processes that deliver it moved together at closing. gap_56=1: the operating processes/crews transferred but the shared corporate substrate — IT, legal, accounting, tax, treasury/corporate finance historically supplied by Noble — \"did not transfer as an intact substrate,\" with Paragon disclosing it \"will no longer have access to Noble's infrastructure\" and needing to build its own. gap_mitigated=yes: this substrate mismatch was contractually absorbed at closing via a master separation agreement, employee matters agreement, tax sharing agreement, and two transition services agreements allocating the shared functions. Note: for sigma_T1 I coded the spin-off's split of a focused controlling intent into two pure-play companies."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the standard-specification fleet (T4) plus its dedicated operating crews crossed together to Paragon at closing, so the customer-facing product and the core operational processes/people that deliver it moved in alignment (gap_45=0; gap_56=0). Shared corporate support functions (IT, legal, accounting, tax, treasury) historically supplied by Noble did not transfer as an intact substrate and were bridged by transition services agreements, but that is incomplete transfer of support substrate (coded partial on T5/T6) rather than a documented product-without-process or process-without-organization mismatch in the assets and crews that did cross."
+    },
+    "openai": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The standard-specification drilling fleet crossed the boundary, but the historically shared IT, legal, accounting, tax, treasury, and corporate-finance functions did not transfer intact; the disclosure stated that failure of Noble's transition services could prevent Paragon from operating effectively, documenting a product-versus-process gap at closing. The fleet's approximately 2,700 dedicated employees and 1,400 contractors crossed with the operating business, so no process-versus-organization mismatch is documented. The gap was contractually absorbed through the master separation arrangements and transition services agreements providing interim corporate and operational support."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"1-N\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing fleet (34 jackups, eight floaters) crossed together with its dedicated operating crews and rig-based operations on a dayrate basis, so the product and the processes that deliver it moved together at closing. gap_56=1: the operating processes/crews transferred but the shared corporate substrate \\u2014 IT, legal, accounting, tax, treasury/corporate finance historically supplied by Noble \\u2014 \\\"did not transfer as an intact substrate,\\\" with Paragon disclosing it \\\"will no longer have access to Noble's infrastructure\\\" and needing to build its own. gap_mitigated=yes: this substrate mismatch was contractually absorbed at closing via a master separation agreement, employee matters agreement, tax sharing agreement, and two transition services agreements allocating the shared functions. Note: for sigma_T1 I coded the spin-off's split of a focused controlling intent into two pure-play companies.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the standard-specification fleet (T4) plus its dedicated operating crews crossed together to Paragon at closing, so the customer-facing product and the core operational processes/people that deliver it moved in alignment (gap_45=0; gap_56=0). Shared corporate support functions (IT, legal, accounting, tax, treasury) historically supplied by Noble did not transfer as an intact substrate and were bridged by transition services agreements, but that is incomplete transfer of support substrate (coded partial on T5/T6) rather than a documented product-without-process or process-without-organization mismatch in the assets and crews that did cross.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"reconstruct\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The standard-specification drilling fleet crossed the boundary, but the historically shared IT, legal, accounting, tax, treasury, and corporate-finance functions did not transfer intact; the disclosure stated that failure of Noble's transition services could prevent Paragon from operating effectively, documenting a product-versus-process gap at closing. The fleet's approximately 2,700 dedicated employees and 1,400 contractors crossed with the operating business, so no process-versus-organization mismatch is documented. The gap was contractually absorbed through the master separation arrangements and transition services agreements providing interim corporate and operational support.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "uncertain",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P095",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Consolidated net income was $51,438 thousand for the year ended December 31, 2022",
+      "rationale": "The slice documents product/process friction (p4_pathway = 1) by noting reserves 'recorded in 2021 due to product rationalization as Sterno Home integrated with Rimports, and increases in distribution costs, wages and raw materials.' There is no documented evidence of process/organization fracture or cultural clashes (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "both 2018 units retained through FY2022; Sterno product-rationalization reserves",
+      "rationale": "p4_pathway is coded 1 because the slice documents product/operational friction after the 2018 Sterno add-on: reserves were 'recorded in 2021 due to product rationalization as Sterno Home integrated with Rimports, and increases in distribution costs, wages and raw materials.' p5_pathway is coded 0 because the same record contains no evidence of fracture at the process/organization interface (no documented operations-vs-people/management/culture breakdown); the 2018 platform unit (Altor) was retained, expanded, and unimpaired, and Sterno likewise remained a continuing segment."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'FY2022 consolidated net income of $51.438 million'}",
+      "rationale": "{'type': 'string', 'enum': 'The FY2022 10-K documents product/operational friction as Sterno Home integrated Rimports, including 2021 reserves from product rationalization and increased distribution costs, wages, and raw-material costs; this supports p4=1. No realized breakdown between operations and people, management, or culture is documented, so p5=0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Consolidated net income was $51,438 thousand for the year ended December 31, 2022\",\n  \"rationale\": \"The slice documents product/process friction (p4_pathway = 1) by noting reserves 'recorded in 2021 due to product rationalization as Sterno Home integrated with Rimports, and increases in distribution costs, wages and raw materials.' There is no documented evidence of process/organization fracture or cultural clashes (p5_pathway = 0).\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"both 2018 units retained through FY2022; Sterno product-rationalization reserves\",\n  \"rationale\": \"p4_pathway is coded 1 because the slice documents product/operational friction after the 2018 Sterno add-on: reserves were 'recorded in 2021 due to product rationalization as Sterno Home integrated with Rimports, and increases in distribution costs, wages and raw materials.' p5_pathway is coded 0 because the same record contains no evidence of fracture at the process/organization interface (no documented operations-vs-people/management/culture breakdown); the 2018 platform unit (Altor) was retained, expanded, and unimpaired, and Sterno likewise remained a continuing segment.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"FY2022 consolidated net income of $51.438 million\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The FY2022 10-K documents product/operational friction as Sterno Home integrated Rimports, including 2021 reserves from product rationalization and increased distribution costs, wages, and raw-material costs; this supports p4=1. No realized breakdown between operations and people, management, or culture is documented, so p5=0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

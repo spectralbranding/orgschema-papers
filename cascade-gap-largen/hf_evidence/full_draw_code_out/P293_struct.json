@@ -1,0 +1,85 @@
+{
+  "case_id": "P293",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing banking product and its licensed bank charter crossed via whole-entity statutory merger at the January 1, 2018 effective time, but Section 5.13 shows the data-processing/informational systems that deliver that product had NOT converted at closing — conversion was deferred to \"as soon as practicable following the Effective Time,\" a documented product-vs-process mismatch at closing, contractually absorbed by the Section 5.13 conversion covenant. gap_56=1: the processing substrate and operations were not carried across with the organization/people intact — the founder-CEO was reduced to a single board seat, the COO moved to a regionalized (non-corporate) role, other HCBF officers/directors ceased serving, and a severance schedule contractually priced in anticipated workforce attrition at closing, evidencing process/organization misalignment absorbed via the covered-employee benefits/severance provisions. T1 coded replace because CenterState's own executives and board (plus one HCBF director) governed the surviving company."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing banking product and legal vehicle crossed at closing via a direct statutory merger (T4), but the underlying operational data-processing systems (T5) had not converted, creating a documented gap_45. This gap was contractually mitigated by Section 5.13 of the merger agreement, which explicitly deferred systems conversion to a post-closing period. No specific structural mismatch between the deferred processes and the transferring organization (T6) was documented at closing, resulting in a 0 for gap_56."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing banking product and licensed bank vehicle crossed at closing through Harbor Community Bank’s merger into CenterState Bank, but the data-processing and electronic systems used to deliver that product were scheduled for conversion only after the effective time, documenting a T4–T5 mismatch at closing [SRC: SEC accession 0001193125-17-327431, DEFM14A, Merger Agreement Section 5.13]. The operational substrate therefore entered a deferred integration process while HCBF’s leadership and organization did not transfer intact: most directors and executive officers ceased serving, the COO moved to a regional role, and employee severance was contractually anticipated [SRC: SEC accession 0001193125-17-327431, DEFM14A]; [SRC: SEC accession 0001144204-18-000005, Form 8-K (HCBF), Item 5.02]. Section 5.13 contractually bridged the processing mismatch by requiring post-closing systems-integration planning and conversion [SRC: SEC accession 0001193125-17-327431, DEFM14A, Merger Agreement Sections 5.13-5.14]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing banking product and its licensed bank charter crossed via whole-entity statutory merger at the January 1, 2018 effective time, but Section 5.13 shows the data-processing/informational systems that deliver that product had NOT converted at closing \\u2014 conversion was deferred to \\\"as soon as practicable following the Effective Time,\\\" a documented product-vs-process mismatch at closing, contractually absorbed by the Section 5.13 conversion covenant. gap_56=1: the processing substrate and operations were not carried across with the organization/people intact \\u2014 the founder-CEO was reduced to a single board seat, the COO moved to a regionalized (non-corporate) role, other HCBF officers/directors ceased serving, and a severance schedule contractually priced in anticipated workforce attrition at closing, evidencing process/organization misalignment absorbed via the covered-employee benefits/severance provisions. T1 coded replace because CenterState's own executives and board (plus one HCBF director) governed the surviving company.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing banking product and legal vehicle crossed at closing via a direct statutory merger (T4), but the underlying operational data-processing systems (T5) had not converted, creating a documented gap_45. This gap was contractually mitigated by Section 5.13 of the merger agreement, which explicitly deferred systems conversion to a post-closing period. No specific structural mismatch between the deferred processes and the transferring organization (T6) was documented at closing, resulting in a 0 for gap_56.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing banking product and licensed bank vehicle crossed at closing through Harbor Community Bank’s merger into CenterState Bank, but the data-processing and electronic systems used to deliver that product were scheduled for conversion only after the effective time, documenting a T4–T5 mismatch at closing [SRC: SEC accession 0001193125-17-327431, DEFM14A, Merger Agreement Section 5.13]. The operational substrate therefore entered a deferred integration process while HCBF’s leadership and organization did not transfer intact: most directors and executive officers ceased serving, the COO moved to a regional role, and employee severance was contractually anticipated [SRC: SEC accession 0001193125-17-327431, DEFM14A]; [SRC: SEC accession 0001144204-18-000005, Form 8-K (HCBF), Item 5.02]. Section 5.13 contractually bridged the processing mismatch by requiring post-closing systems-integration planning and conversion [SRC: SEC accession 0001193125-17-327431, DEFM14A, Merger Agreement Sections 5.13-5.14].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

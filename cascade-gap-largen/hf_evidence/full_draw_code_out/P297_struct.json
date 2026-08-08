@@ -1,0 +1,85 @@
+{
+  "case_id": "P297",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing loan/deposit base and banking relationships were \"folded into Independent/Rockland Trust's existing operation\" at closing, while Section 5.15 shows the data-processing/systems substrate did NOT transfer intact but was to be converted post-closing to Buyer's systems, with non-renewal of BHB's software licenses and outside consultants retained — a product-vs-process mismatch. gap_56=1: the operational conversion (T5) was to be re-engineered onto Independent's systems while the people substrate did not move coherently — the ESOP was terminated, change-in-control/severance and non-competition terms governed only limited senior-officer retention, and only three former BHB directors carried over. gap_mitigated=yes: both the process gap (Section 5.15 conversion planning) and access/customer-contact gap (Section 5.16) were expressly bridged by dedicated merger-agreement provisions and transitional arrangements documented at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice documents a gap_45 because the customer-facing product/asset (T4) was folded into Independent's operation, but the operational/processing substrate (T5) did not transfer intact; instead, Section 5.15 mandated a conversion of BHB's data processing systems to those used by the Buyer. This gap was mitigated by specific transition and conversion planning provisions in the merger agreement (Sections 5.15 and 5.16). There is no documented gap_56 as the systems were being converted to the buyer's systems rather than transferring without the people."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states the customer-facing loan/deposit base and banking relationships were folded into Independent/Rockland at closing, while Section 5.15 expressly provides that data-processing and informational systems of BHB would NOT transfer intact and instead would be converted post-effective-time to Buyer systems, with Section 5.16 further gating customer access pending that conversion. gap_56=0 because the same conversion provisions re-engineer processes onto the Buyer’s existing substrate (already aligned with Buyer organization), and the deal documents board-seat continuity plus employee/consultant retention for conversion rather than a structural process-without-people mismatch at closing; Sections 5.15/5.16 are the contractual bridge mitigating the documented gap_45."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing loan/deposit base and banking relationships were \\\"folded into Independent/Rockland Trust's existing operation\\\" at closing, while Section 5.15 shows the data-processing/systems substrate did NOT transfer intact but was to be converted post-closing to Buyer's systems, with non-renewal of BHB's software licenses and outside consultants retained \\u2014 a product-vs-process mismatch. gap_56=1: the operational conversion (T5) was to be re-engineered onto Independent's systems while the people substrate did not move coherently \\u2014 the ESOP was terminated, change-in-control/severance and non-competition terms governed only limited senior-officer retention, and only three former BHB directors carried over. gap_mitigated=yes: both the process gap (Section 5.15 conversion planning) and access/customer-contact gap (Section 5.16) were expressly bridged by dedicated merger-agreement provisions and transitional arrangements documented at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"terminate\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The slice documents a gap_45 because the customer-facing product/asset (T4) was folded into Independent's operation, but the operational/processing substrate (T5) did not transfer intact; instead, Section 5.15 mandated a conversion of BHB's data processing systems to those used by the Buyer. This gap was mitigated by specific transition and conversion planning provisions in the merger agreement (Sections 5.15 and 5.16). There is no documented gap_56 as the systems were being converted to the buyer's systems rather than transferring without the people.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states the customer-facing loan/deposit base and banking relationships were folded into Independent/Rockland at closing, while Section 5.15 expressly provides that data-processing and informational systems of BHB would NOT transfer intact and instead would be converted post-effective-time to Buyer systems, with Section 5.16 further gating customer access pending that conversion. gap_56=0 because the same conversion provisions re-engineer processes onto the Buyer’s existing substrate (already aligned with Buyer organization), and the deal documents board-seat continuity plus employee/consultant retention for conversion rather than a structural process-without-people mismatch at closing; Sections 5.15/5.16 are the contractual bridge mitigating the documented gap_45.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

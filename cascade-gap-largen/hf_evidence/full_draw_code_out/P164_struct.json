@@ -1,0 +1,85 @@
+{
+  "case_id": "P164",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the contributed Sabine operating oil-and-gas organization (Sabine Holdings and its subsidiaries) crossed the boundary as a whole operating business combining with Forest's own oil and gas business, so the customer-facing operating assets moved together with their producing/delivering operations rather than as a product stripped of its processes. gap_56=0: the incoming Sabine management (Sambrooks, Levesque, et al.) and control functions (Deloitte, the Sabine-era auditor) were installed at the same December 16, 2014 closing that transferred the operating organization, so the operations and the people/management running them moved coherently together. sigma_T3 is coded continue because Forest remained the continuing public legal vehicle (renamed), and sigma_T6 swap reflects the wholesale removal of Forest officers/directors and installation of the Sabine team. Note: sigma_T3 label limited to enum options — coded 1-1 not available for T1; T3 continuity captured in rationale."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the contributed Sabine oil-and-gas operating organization became a wholly owned subsidiary of the continuing Forest registrant and combined with Forest's own oil and natural gas business, so customer-facing assets (T4) and operating processes (T5) crossed together at closing with no documented product-vs-process mismatch (gap_45=0). Concurrently at closing all Forest executive officers were removed and Sabine-appointed executives (CEO, COO, SVPs) plus a reconstituted board and Sabine's auditor were installed, so the people/management layer (T6) was aligned with the combined operations rather than left decoupled (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The contributed Sabine operating business, including Sabine Holdings and its subsidiaries, became a wholly owned subsidiary and combined with Forest's oil and natural gas business, so the customer-facing assets crossed together with the associated operating business rather than apart from it. [SRC: SEC accession 0001193125-14-375551, DEFM14A cover letter] The operating organization transferred alongside incoming executive management, while Forest's prior executive officers were removed at closing, documenting organizational alignment rather than a process-versus-people gap. [SRC: SEC accession 0001193125-14-450831, Form 8-K Item 5.02]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"continue\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"swap\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the contributed Sabine operating oil-and-gas organization (Sabine Holdings and its subsidiaries) crossed the boundary as a whole operating business combining with Forest's own oil and gas business, so the customer-facing operating assets moved together with their producing/delivering operations rather than as a product stripped of its processes. gap_56=0: the incoming Sabine management (Sambrooks, Levesque, et al.) and control functions (Deloitte, the Sabine-era auditor) were installed at the same December 16, 2014 closing that transferred the operating organization, so the operations and the people/management running them moved coherently together. sigma_T3 is coded continue because Forest remained the continuing public legal vehicle (renamed), and sigma_T6 swap reflects the wholesale removal of Forest officers/directors and installation of the Sabine team. Note: sigma_T3 label limited to enum options \\u2014 coded 1-1 not available for T1; T3 continuity captured in rationale.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the contributed Sabine oil-and-gas operating organization became a wholly owned subsidiary of the continuing Forest registrant and combined with Forest's own oil and natural gas business, so customer-facing assets (T4) and operating processes (T5) crossed together at closing with no documented product-vs-process mismatch (gap_45=0). Concurrently at closing all Forest executive officers were removed and Sabine-appointed executives (CEO, COO, SVPs) plus a reconstituted board and Sabine's auditor were installed, so the people/management layer (T6) was aligned with the combined operations rather than left decoupled (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The contributed Sabine operating business, including Sabine Holdings and its subsidiaries, became a wholly owned subsidiary and combined with Forest's oil and natural gas business, so the customer-facing assets crossed together with the associated operating business rather than apart from it. [SRC: SEC accession 0001193125-14-375551, DEFM14A cover letter] The operating organization transferred alongside incoming executive management, while Forest's prior executive officers were removed at closing, documenting organizational alignment rather than a process-versus-people gap. [SRC: SEC accession 0001193125-14-450831, Form 8-K Item 5.02]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "swap",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

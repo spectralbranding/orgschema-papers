@@ -1,0 +1,85 @@
+{
+  "case_id": "P090",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: at closing the customer-facing asset (operating wind/solar generation projects, T4) was routed into the separately listed TerraForm Power holding vehicle, while the development platform, pipeline, and the operational/construction processes that produce projects (T5) were retained at the parent SunEdison — a documented product-vs-process split (\"TerraForm LLC purchased 521 MW of operating power assets... and SunEdison acquired the development platform/backlog\"). gap_56=1: processes/people (T5/T6) were \"bridged, not simply transferred,\" with key employees' employment continued via a ~$510M earnout tied to Project Completion and an Intercompany/Support Agreement, indicating operational and personnel substrate did not cross the ownership boundary coherently with the transferred operating assets. gap_mitigated=yes: both mismatches were documented as contractually absorbed at closing through the earnout mechanism and the Intercompany Agreement / call-right Support Agreement allocating costs, indemnities, and capex/O&M among affiliates."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes SunEdison acquiring First Wind and other assets, routing operating projects to TerraForm Power and development assets to SunEdison. There is no documented structural mismatch between product (T4) and process (T5) or process (T5) and organization (T6) at closing; rather, key employees and processes were bound via earnouts and intercompany agreements to continue development."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice documents that customer-facing operating projects crossed into TerraForm while 'Processes and people bridged, not simply transferred,' with O&M/capex allocated under an Intercompany Agreement rather than moving wholly with the assets — a closing-era product-vs-process mismatch (gap_45=1). The same First Wind covenants bound 'continuing the employment of certain identified key employees' to the development/earnout processes, so T5 and T6 were bridged together (gap_56=0). That mismatch was contractually absorbed at closing by the Intercompany Agreement, call-rights/support arrangements, and earnout/employment terms (gap_mitigated=yes)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: at closing the customer-facing asset (operating wind/solar generation projects, T4) was routed into the separately listed TerraForm Power holding vehicle, while the development platform, pipeline, and the operational/construction processes that produce projects (T5) were retained at the parent SunEdison \\u2014 a documented product-vs-process split (\\\"TerraForm LLC purchased 521 MW of operating power assets... and SunEdison acquired the development platform/backlog\\\"). gap_56=1: processes/people (T5/T6) were \\\"bridged, not simply transferred,\\\" with key employees' employment continued via a ~$510M earnout tied to Project Completion and an Intercompany/Support Agreement, indicating operational and personnel substrate did not cross the ownership boundary coherently with the transferred operating assets. gap_mitigated=yes: both mismatches were documented as contractually absorbed at closing through the earnout mechanism and the Intercompany Agreement / call-right Support Agreement allocating costs, indemnities, and capex/O&M among affiliates.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice describes SunEdison acquiring First Wind and other assets, routing operating projects to TerraForm Power and development assets to SunEdison. There is no documented structural mismatch between product (T4) and process (T5) or process (T5) and organization (T6) at closing; rather, key employees and processes were bound via earnouts and intercompany agreements to continue development.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice documents that customer-facing operating projects crossed into TerraForm while 'Processes and people bridged, not simply transferred,' with O&M/capex allocated under an Intercompany Agreement rather than moving wholly with the assets — a closing-era product-vs-process mismatch (gap_45=1). The same First Wind covenants bound 'continuing the employment of certain identified key employees' to the development/earnout processes, so T5 and T6 were bridged together (gap_56=0). That mismatch was contractually absorbed at closing by the Intercompany Agreement, call-rights/support arrangements, and earnout/employment terms (gap_mitigated=yes).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": true,
+    "sigma_T3": true,
+    "sigma_T4": true,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 3
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P231",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: this was a whole-company cash merger in which both SUPERVALU segments (Wholesale and Retail) crossed into UNFI ownership together as a surviving wholly owned subsidiary, after UNFI's earlier wholesale-only carve-out was rejected — the customer-facing distribution/retail product tier and its operating processes moved together, with no documented product-vs-process split at closing. gap_56=1: the operations transferred whole while the people/management tier was structured narrowly and asymmetrically — the entire pre-close board and CEO/CFO were replaced and bound by broadened non-competes, and other named executives' post-close roles were left an open, non-binding discussion, leaving a structural mismatch between the transferred processes and the leadership/organization running them. gap_mitigated=yes: UNFI contractually bridged the non-executive \"continuing employees'\" pay, benefits, and prior-service credit for at least one year post-closing, an operating-agreement-style allocation of the shared workforce substrate at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the executed deal was a whole-company reverse-triangular merger in which both Wholesale and Retail segments (customer-facing product/asset layer) crossed into UNFI ownership together with the operations that produce and deliver them; the earlier wholesale-only carve-out that would have separated product from retail-tied processes was rejected and does not describe closing. gap_56=0 because those same operating processes crossed inside the surviving SUPERVALU legal entity along with its continuing non-executive workforce, which UNFI contractually bridged on pay, benefits, and service credit for one year; replacement of the board/CEO/CFO at the Effective Time is a control change, not a documented transfer of processes without the organization that runs them."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The executed merger was a whole-company transaction in which both Wholesale and Retail crossed into UNFI ownership, so the customer-facing businesses and their associated operations moved together; this supports gap_45=0. At the Effective Time, the entire incumbent board and the CEO/CFO ceased serving and UNFI installed new directors and principal officers, while only the non-executive continuing workforce received a fixed one-year contractual employment-benefits bridge; this documents an asymmetric process-versus-organization transfer and supports gap_56=1. The slice identifies no transitional-services or operating agreement allocating a shared operational substrate, so the documented gap was not contractually absorbed in the specified manner."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: this was a whole-company cash merger in which both SUPERVALU segments (Wholesale and Retail) crossed into UNFI ownership together as a surviving wholly owned subsidiary, after UNFI's earlier wholesale-only carve-out was rejected \\u2014 the customer-facing distribution/retail product tier and its operating processes moved together, with no documented product-vs-process split at closing. gap_56=1: the operations transferred whole while the people/management tier was structured narrowly and asymmetrically \\u2014 the entire pre-close board and CEO/CFO were replaced and bound by broadened non-competes, and other named executives' post-close roles were left an open, non-binding discussion, leaving a structural mismatch between the transferred processes and the leadership/organization running them. gap_mitigated=yes: UNFI contractually bridged the non-executive \\\"continuing employees'\\\" pay, benefits, and prior-service credit for at least one year post-closing, an operating-agreement-style allocation of the shared workforce substrate at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the executed deal was a whole-company reverse-triangular merger in which both Wholesale and Retail segments (customer-facing product/asset layer) crossed into UNFI ownership together with the operations that produce and deliver them; the earlier wholesale-only carve-out that would have separated product from retail-tied processes was rejected and does not describe closing. gap_56=0 because those same operating processes crossed inside the surviving SUPERVALU legal entity along with its continuing non-executive workforce, which UNFI contractually bridged on pay, benefits, and service credit for one year; replacement of the board/CEO/CFO at the Effective Time is a control change, not a documented transfer of processes without the organization that runs them.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The executed merger was a whole-company transaction in which both Wholesale and Retail crossed into UNFI ownership, so the customer-facing businesses and their associated operations moved together; this supports gap_45=0. At the Effective Time, the entire incumbent board and the CEO/CFO ceased serving and UNFI installed new directors and principal officers, while only the non-executive continuing workforce received a fixed one-year contractual employment-benefits bridge; this documents an asymmetric process-versus-organization transfer and supports gap_56=1. The slice identifies no transitional-services or operating agreement allocating a shared operational substrate, so the documented gap was not contractually absorbed in the specified manner.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": true
+  },
+  "n_flags": 1
+}

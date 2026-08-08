@@ -1,0 +1,58 @@
+{
+  "case_id": "P002",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $606M for FY2011 (up from $528M in 2010); no goodwill/intangible impairment required as of 2011-12-31",
+      "rationale": "The FY2011 10-K documents rising net sales ($5,531M→$5,636M→$5,903M, 2009-2011) and sustained net income ($555M/$528M/$606M), with the company retaining its integrated brand-ownership-plus-manufacturing-and-distribution model across three reportable segments and reporting no impairment of goodwill or indefinite-lived intangibles. No product/process incoherence is documented (Beverage Concentrates and Packaged Beverages segments both grew), driving p4_pathway=0. No operations-vs-organization fracture is documented (approx. 19,000 employees, alignment of brand ownership with manufacturing/distribution operations described as functioning), and the slice explicitly states \"no documented fracture at the product/process or process/organization interface,\" driving p5_pathway=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $606 million for the year ended December 31, 2011",
+      "rationale": "The evidence slice explicitly states that there is 'No documented fracture at the product/process or process/organization interface' recorded in the FY2011 annual report. The company maintained its integrated brand-ownership and manufacturing model successfully, achieving sustained profitability and requiring no goodwill impairment over the 3-4 year outcome window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net income of $606 million in 2011, up from $528 million in 2010",
+      "rationale": "No product/process fracture was documented; the company retained its integrated brand-ownership, manufacturing, and distribution model, while Beverage Concentrates and Packaged Beverages both increased net sales in 2011. No process/organization fracture was documented, and the company continued operating with approximately 19,000 employees, including approximately 5,000 manufacturing employees, while sustaining profitability."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net income of $606M for FY2011 (up from $528M in 2010); no goodwill/intangible impairment required as of 2011-12-31\", \"rationale\": \"The FY2011 10-K documents rising net sales ($5,531M\\u2192$5,636M\\u2192$5,903M, 2009-2011) and sustained net income ($555M/$528M/$606M), with the company retaining its integrated brand-ownership-plus-manufacturing-and-distribution model across three reportable segments and reporting no impairment of goodwill or indefinite-lived intangibles. No product/process incoherence is documented (Beverage Concentrates and Packaged Beverages segments both grew), driving p4_pathway=0. No operations-vs-organization fracture is documented (approx. 19,000 employees, alignment of brand ownership with manufacturing/distribution operations described as functioning), and the slice explicitly states \\\"no documented fracture at the product/process or process/organization interface,\\\" driving p5_pathway=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of $606 million for the year ended December 31, 2011\",\n  \"rationale\": \"The evidence slice explicitly states that there is 'No documented fracture at the product/process or process/organization interface' recorded in the FY2011 annual report. The company maintained its integrated brand-ownership and manufacturing model successfully, achieving sustained profitability and requiring no goodwill impairment over the 3-4 year outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net income of $606 million in 2011, up from $528 million in 2010\",\n  \"rationale\": \"No product/process fracture was documented; the company retained its integrated brand-ownership, manufacturing, and distribution model, while Beverage Concentrates and Packaged Beverages both increased net sales in 2011. No process/organization fracture was documented, and the company continued operating with approximately 19,000 employees, including approximately 5,000 manufacturing employees, while sustaining profitability.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

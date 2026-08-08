@@ -1,0 +1,58 @@
+{
+  "case_id": "P256",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "$383M non-cash goodwill/intangible impairment in 2020; planned 18-month spin-off did not occur by April 1, 2020 deadline; going-private merger at $20.00/share Nov 17, 2022",
+      "rationale": "The slice documents a failed post-closing separation (the planned spin-off did not occur by its April 1, 2020 deadline), continued separate segment reporting of the acquired Motorparts and Powertrain businesses, and a $383M impairment plus a 2020 net loss of $1,460M — but attributes the segment declines and impairments explicitly to the COVID-19 pandemic's effect on projected financials, not to any documented product/process misalignment (no basis to code p4). Likewise, nothing in the realized record describes a fracture between operations and the organization/people/culture over time (no basis to code p5). Absent affirmative outcome evidence for either specific interface, both are coded uncertain rather than assumed 0, since the slice's disruptions (spin-off failure, impairments) are attributed to external/macro causes rather than characterized against these interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$383M goodwill/intangible impairment (2020); taken private Nov 2022",
+      "rationale": "The slice shows Motorparts and Powertrain continuing as separately disclosed segments three years post-close under original brand identities, with 2020–2021 EBITDA recovery and no documented product-line/operations incoherence, so p4_pathway=0. The $383M 2020 goodwill/intangible charges are expressly attributed to COVID-19 effects on projections (plus earlier segment impairments), and no operations-vs-organization, culture, or management integration fracture is documented, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "1",
+      "t2_model": "0",
+      "performance_metric": "$1.46 billion company-wide net loss in 2020",
+      "rationale": "The filings document continued separate reporting of Motorparts and Powertrain, EBITDA declines in 2020 followed by partial recoveries in 2021, and impairment charges attributed to COVID-19 projections, but no realized failure to align acquired products with operating processes; therefore p4 is 0. The disclosed failure to complete the planned separation and persistence of a separately named financing entity do not document operations breaking against people, management, or culture, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$383M non-cash goodwill/intangible impairment in 2020; planned 18-month spin-off did not occur by April 1, 2020 deadline; going-private merger at $20.00/share Nov 17, 2022\", \"rationale\": \"The slice documents a failed post-closing separation (the planned spin-off did not occur by its April 1, 2020 deadline), continued separate segment reporting of the acquired Motorparts and Powertrain businesses, and a $383M impairment plus a 2020 net loss of $1,460M \\u2014 but attributes the segment declines and impairments explicitly to the COVID-19 pandemic's effect on projected financials, not to any documented product/process misalignment (no basis to code p4). Likewise, nothing in the realized record describes a fracture between operations and the organization/people/culture over time (no basis to code p5). Absent affirmative outcome evidence for either specific interface, both are coded uncertain rather than assumed 0, since the slice's disruptions (spin-off failure, impairments) are attributed to external/macro causes rather than characterized against these interfaces.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$383M goodwill/intangible impairment (2020); taken private Nov 2022\",\n  \"rationale\": \"The slice shows Motorparts and Powertrain continuing as separately disclosed segments three years post-close under original brand identities, with 2020–2021 EBITDA recovery and no documented product-line/operations incoherence, so p4_pathway=0. The $383M 2020 goodwill/intangible charges are expressly attributed to COVID-19 effects on projections (plus earlier segment impairments), and no operations-vs-organization, culture, or management integration fracture is documented, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"1\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.46 billion company-wide net loss in 2020\",\n  \"rationale\": \"The filings document continued separate reporting of Motorparts and Powertrain, EBITDA declines in 2020 followed by partial recoveries in 2021, and impairment charges attributed to COVID-19 projections, but no realized failure to align acquired products with operating processes; therefore p4 is 0. The disclosed failure to complete the planned separation and persistence of a separately named financing entity do not document operations breaking against people, management, or culture, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": true,
+    "t2_model": false
+  },
+  "n_flags": 1
+}

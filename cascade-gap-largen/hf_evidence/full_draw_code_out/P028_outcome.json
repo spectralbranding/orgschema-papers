@@ -1,0 +1,58 @@
+{
+  "case_id": "P028",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "uncertain",
+      "performance_metric": "$709M Ixia goodwill impairment (FY2018); net revenue grew $3,189M→$4,303M; business retained/expanded, no divestiture",
+      "rationale": "On the product/process interface (p4), the slice documents a $709M goodwill impairment on the Ixia Solutions Group in FY2018 and a first-quarter-FY2020 organizational change folding Ixia into the Communications Solutions Group, which may signal realized product/operations misalignment but is not explicitly characterized as such, so p4 is uncertain. For the process/organization interface (p5), no cultural, management, or people-vs-operations fracture is documented; the reorganization is described neutrally and revenue grew, so p5 is coded 0. The controlling-intent archetype shows no documented incoherence (Keysight remained an independent listed acquirer that retained and expanded its business), giving t1=0. Business-model incompatibility (t2) is not clearly documented; the impairment could reflect it but the slice does not characterize value-capture logics as irreconcilable, so t2 is uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; business retained and expanded (rev $3.2B→$4.3B FY17-19)",
+      "rationale": "The slice documents that the separated electronic measurement business was retained and expanded rather than divested, with net revenue rising from $3,189 million (FY2017) to $4,303 million (FY2019) and net income from $102 million to $621 million; no product/process alignment failure is recorded. No process/organization fracture (operations vs. people/management/culture) is documented over the window; the FY2019 10-K treats the separation as a completed historical event and reports continued independent public-company operation. The later Ixia goodwill impairment concerns a subsequent 2017 acquisition, not the 2014 separation outcome."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net revenue grew from $3.189 billion in FY2017 to $4.303 billion in FY2019",
+      "rationale": "The realized record documents revenue and net-income growth, retention and expansion of the electronic measurement business, and rising Ixia Solutions Group revenue. Although Ixia incurred a $709 million goodwill impairment in FY2018 and was later reorganized into the Communications Solutions Group, the slice does not specifically document product/process incoherence or a breakdown between operations and people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"uncertain\", \"performance_metric\": \"$709M Ixia goodwill impairment (FY2018); net revenue grew $3,189M\\u2192$4,303M; business retained/expanded, no divestiture\", \"rationale\": \"On the product/process interface (p4), the slice documents a $709M goodwill impairment on the Ixia Solutions Group in FY2018 and a first-quarter-FY2020 organizational change folding Ixia into the Communications Solutions Group, which may signal realized product/operations misalignment but is not explicitly characterized as such, so p4 is uncertain. For the process/organization interface (p5), no cultural, management, or people-vs-operations fracture is documented; the reorganization is described neutrally and revenue grew, so p5 is coded 0. The controlling-intent archetype shows no documented incoherence (Keysight remained an independent listed acquirer that retained and expanded its business), giving t1=0. Business-model incompatibility (t2) is not clearly documented; the impairment could reflect it but the slice does not characterize value-capture logics as irreconcilable, so t2 is uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; business retained and expanded (rev $3.2B→$4.3B FY17-19)\",\n  \"rationale\": \"The slice documents that the separated electronic measurement business was retained and expanded rather than divested, with net revenue rising from $3,189 million (FY2017) to $4,303 million (FY2019) and net income from $102 million to $621 million; no product/process alignment failure is recorded. No process/organization fracture (operations vs. people/management/culture) is documented over the window; the FY2019 10-K treats the separation as a completed historical event and reports continued independent public-company operation. The later Ixia goodwill impairment concerns a subsequent 2017 acquisition, not the 2014 separation outcome.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net revenue grew from $3.189 billion in FY2017 to $4.303 billion in FY2019\",\n  \"rationale\": \"The realized record documents revenue and net-income growth, retention and expansion of the electronic measurement business, and rising Ixia Solutions Group revenue. Although Ixia incurred a $709 million goodwill impairment in FY2018 and was later reorganized into the Communications Solutions Group, the slice does not specifically document product/process incoherence or a breakdown between operations and people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

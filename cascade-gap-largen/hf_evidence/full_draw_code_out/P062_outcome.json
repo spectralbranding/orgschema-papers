@@ -1,0 +1,58 @@
+{
+  "case_id": "P062",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered in April 2020; no public in-window record",
+      "rationale": "The company was taken private and deregistered in early 2020, meaning there is no public record for the 3-5 year post-deal window. Thus, any realized disruption at the product/process or process/organization interfaces cannot be observed, making p4_pathway and p5_pathway uncertain."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that the Company was delisted in March 2020 and deregistered in April 2020, with no Form 10-K filed thereafter, so no public audited annual record exists for the fixed ~2020–2022 outcome window and the in-window realized record is not publicly observable. Consequently the slice supplies no evidence on which to determine whether product/process interface disruption (p4) or process/organization fracture (p5) was realized over that horizon; both are therefore coded uncertain. Pre-window FY2019 scalars and sponsor notes cannot substitute for the missing in-window trajectory."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'The company was delisted in March 2020 and deregistered in April 2020, with no subsequent public annual report covering the fixed 2020–2022 outcome window. The FY2019 sponsor wind-down predates that window and does not document realized product/process incoherence or a process/organization fracture during the required horizon, so both pathways are uncertain.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"deregistered in April 2020; no public in-window record\",\n  \"rationale\": \"The company was taken private and deregistered in early 2020, meaning there is no public record for the 3-5 year post-deal window. Thus, any realized disruption at the product/process or process/organization interfaces cannot be observed, making p4_pathway and p5_pathway uncertain.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that the Company was delisted in March 2020 and deregistered in April 2020, with no Form 10-K filed thereafter, so no public audited annual record exists for the fixed ~2020–2022 outcome window and the in-window realized record is not publicly observable. Consequently the slice supplies no evidence on which to determine whether product/process interface disruption (p4) or process/organization fracture (p5) was realized over that horizon; both are therefore coded uncertain. Pre-window FY2019 scalars and sponsor notes cannot substitute for the missing in-window trajectory.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The company was delisted in March 2020 and deregistered in April 2020, with no subsequent public annual report covering the fixed 2020–2022 outcome window. The FY2019 sponsor wind-down predates that window and does not document realized product/process incoherence or a process/organization fracture during the required horizon, so both pathways are uncertain.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

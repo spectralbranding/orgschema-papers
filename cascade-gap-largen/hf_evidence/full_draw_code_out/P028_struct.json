@@ -1,0 +1,85 @@
+{
+  "case_id": "P028",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing product (electronic measurement instruments, systems, software/services) crossed together with its producing/delivering processes — R&D and manufacturing sites (including Penang) and sales channels moved with the product per the \"producing/delivering processes moved with the product\" line. gap_56=1: while the ~8,500 workforce and ~1,200 corporate employees crossed, the shared administrative process substrate (IT, accounts payable, payroll, financial/administrative functions) did NOT cross intact — Keysight was \"creating its own, or engaging third parties to provide, systems and services to replace many of the systems,\" meaning operational processes had to be re-engineered without the intact Agilent organization/systems running them. gap_mitigated=yes: this substrate mismatch was contractually absorbed at closing via the services agreement (effective upon distribution) plus separation, tax, employee, IP, trademark and real estate matters agreements allocating the shared substrate."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The electronic measurement products and their primary R&D and manufacturing processes transferred together, resulting in no gap_45. However, certain shared corporate functions (IT, HR, accounting) did not cross intact with the operational processes, creating a structural gap_56 that was mitigated at closing by a services agreement."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that the electronic-measurement products crossed with their R&D and manufacturing sites and sales channels, but Agilent's shared IT, payroll, financial, and administrative processes did not transfer intact and instead were to be replaced, creating a documented product-process gap at closing. That gap was contractually absorbed through the effective-at-distribution services agreement under which Agilent and Keysight supplied those services to each other. The approximately 8,500-person business workforce and approximately 1,200 corporate/shared-services employees transferred with the operations, so no separate process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing product (electronic measurement instruments, systems, software/services) crossed together with its producing/delivering processes \\u2014 R&D and manufacturing sites (including Penang) and sales channels moved with the product per the \\\"producing/delivering processes moved with the product\\\" line. gap_56=1: while the ~8,500 workforce and ~1,200 corporate employees crossed, the shared administrative process substrate (IT, accounts payable, payroll, financial/administrative functions) did NOT cross intact \\u2014 Keysight was \\\"creating its own, or engaging third parties to provide, systems and services to replace many of the systems,\\\" meaning operational processes had to be re-engineered without the intact Agilent organization/systems running them. gap_mitigated=yes: this substrate mismatch was contractually absorbed at closing via the services agreement (effective upon distribution) plus separation, tax, employee, IP, trademark and real estate matters agreements allocating the shared substrate.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The electronic measurement products and their primary R&D and manufacturing processes transferred together, resulting in no gap_45. However, certain shared corporate functions (IT, HR, accounting) did not cross intact with the operational processes, creating a structural gap_56 that was mitigated at closing by a services agreement.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that the electronic-measurement products crossed with their R&D and manufacturing sites and sales channels, but Agilent's shared IT, payroll, financial, and administrative processes did not transfer intact and instead were to be replaced, creating a documented product-process gap at closing. That gap was contractually absorbed through the effective-at-distribution services agreement under which Agilent and Keysight supplied those services to each other. The approximately 8,500-person business workforce and approximately 1,200 corporate/shared-services employees transferred with the operations, so no separate process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

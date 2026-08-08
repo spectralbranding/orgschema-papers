@@ -1,0 +1,58 @@
+{
+  "case_id": "P315",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "total revenues +304% YoY (FY2022 $1,695.2M vs $419.6M); net income attributable rose to $452.5M",
+      "rationale": "The slice documents that the entity continued as an independent SEC-reporting public company (ESTE, NYSE) through FY2022 with revenues up 304% and net income attributable rising from a 2020 loss to $452.5M, attributed to three 2022 property acquisitions and higher commodity prices. No product/process incoherence is documented (operations and acquired assets integrated to produce record results), so p4_pathway=0; no operations-vs-organization fracture is documented (stable 219-employee workforce, no integration breakdown), so p5_pathway=0. The slice explicitly concerns only realized post-deal trajectory and states it contains no information about any transaction's structure, and documents no controlling-intent archetype incoherence or business-model incompatibility."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "total revenues rising 304% year-over-year in 2022",
+      "rationale": "The evidence slice documents Earthstone Energy's continued independent operation and significant growth, with no mention of product/process disruption (p4_pathway). Furthermore, there is no evidence of process/organization fracture (p5_pathway), as the company successfully integrated multiple acquisitions and expanded its workforce to 219 employees without reported operational or cultural breakdowns."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "continued independent; FY2022 revenue +304% YoY to ~$1.70bn; NI attributable $452M",
+      "rationale": "The slice documents Earthstone continuing as an independent NYSE-listed reporter through FY2022 with sharply higher revenues and net income attributed to 2022 property acquisitions (Chisholm, Bighorn, Titus) and commodity prices, with no mention of product/process misalignment or operating-process incoherence over the window, so p4_pathway is 0. Likewise there is no documented fracture between operations and people/management/culture—only routine headcount and acreage/well counts—so p5_pathway is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"total revenues +304% YoY (FY2022 $1,695.2M vs $419.6M); net income attributable rose to $452.5M\", \"rationale\": \"The slice documents that the entity continued as an independent SEC-reporting public company (ESTE, NYSE) through FY2022 with revenues up 304% and net income attributable rising from a 2020 loss to $452.5M, attributed to three 2022 property acquisitions and higher commodity prices. No product/process incoherence is documented (operations and acquired assets integrated to produce record results), so p4_pathway=0; no operations-vs-organization fracture is documented (stable 219-employee workforce, no integration breakdown), so p5_pathway=0. The slice explicitly concerns only realized post-deal trajectory and states it contains no information about any transaction's structure, and documents no controlling-intent archetype incoherence or business-model incompatibility.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"total revenues rising 304% year-over-year in 2022\",\n  \"rationale\": \"The evidence slice documents Earthstone Energy's continued independent operation and significant growth, with no mention of product/process disruption (p4_pathway). Furthermore, there is no evidence of process/organization fracture (p5_pathway), as the company successfully integrated multiple acquisitions and expanded its workforce to 219 employees without reported operational or cultural breakdowns.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"continued independent; FY2022 revenue +304% YoY to ~$1.70bn; NI attributable $452M\",\n  \"rationale\": \"The slice documents Earthstone continuing as an independent NYSE-listed reporter through FY2022 with sharply higher revenues and net income attributed to 2022 property acquisitions (Chisholm, Bighorn, Titus) and commodity prices, with no mention of product/process misalignment or operating-process incoherence over the window, so p4_pathway is 0. Likewise there is no documented fracture between operations and people/management/culture—only routine headcount and acreage/well counts—so p5_pathway is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

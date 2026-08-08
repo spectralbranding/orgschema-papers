@@ -1,0 +1,85 @@
+{
+  "case_id": "P137",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "uncertain",
+      "gap_mitigated": "no",
+      "rationale": "This is structured as a distressed-asset purchase of \"substantially all of the assets of the LightSquared LP Entities\" (T4 subset) via a Chapter 11 plan, with no definitive APA negotiated or executed with the target and expressly \"no committed terms for transfer of the workforce, management, or operating organization.\" Because the customer-facing spectrum/assets were proposed to cross the boundary while no operational-process transfer terms were set (gap_45=1), and no transitional-services or operating agreement allocating that substrate is documented (gap_mitigated=no). Whether the operating processes (T5) transfer at all is not determinable from the slice, so gap_56 is uncertain; the acquirer is a pre-existing wholly-owned DISH subsidiary formed to bid, so no new legal vehicle swap is coded (T3 null)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures a proposed Chapter 11 plan asset sale of substantially all LightSquared LP Entities assets to L-Band, so T4 is coded as transferring as a whole package; it simultaneously states the Proposed APA had not been negotiated or executed and sets out no committed terms for workforce, management, or operating organization (T6 null). No closing-structure evidence documents that customer-facing assets would cross without their producing processes, nor that processes would transfer without the organization, so gap_45 and gap_56 are 0."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The contemplated plan provided for L-Band to purchase substantially all assets of the LightSquared LP Entities, supporting transfer of the customer-facing asset layer. However, the Proposed APA had neither been negotiated with nor executed by the target, and the filing supplied no committed workforce, management, operating-organization, or process-transfer terms. Because the slice does not document at closing that processes were excluded from the assets or structurally separated from personnel, neither a T4–T5 nor a T5–T6 mismatch is established."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"uncertain\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"uncertain\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"uncertain\", \"gap_mitigated\": \"no\", \"rationale\": \"This is structured as a distressed-asset purchase of \\\"substantially all of the assets of the LightSquared LP Entities\\\" (T4 subset) via a Chapter 11 plan, with no definitive APA negotiated or executed with the target and expressly \\\"no committed terms for transfer of the workforce, management, or operating organization.\\\" Because the customer-facing spectrum/assets were proposed to cross the boundary while no operational-process transfer terms were set (gap_45=1), and no transitional-services or operating agreement allocating that substrate is documented (gap_mitigated=no). Whether the operating processes (T5) transfer at all is not determinable from the slice, so gap_56 is uncertain; the acquirer is a pre-existing wholly-owned DISH subsidiary formed to bid, so no new legal vehicle swap is coded (T3 null).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures a proposed Chapter 11 plan asset sale of substantially all LightSquared LP Entities assets to L-Band, so T4 is coded as transferring as a whole package; it simultaneously states the Proposed APA had not been negotiated or executed and sets out no committed terms for workforce, management, or operating organization (T6 null). No closing-structure evidence documents that customer-facing assets would cross without their producing processes, nor that processes would transfer without the organization, so gap_45 and gap_56 are 0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The contemplated plan provided for L-Band to purchase substantially all assets of the LightSquared LP Entities, supporting transfer of the customer-facing asset layer. However, the Proposed APA had neither been negotiated with nor executed by the target, and the filing supplied no committed workforce, management, operating-organization, or process-transfer terms. Because the slice does not document at closing that processes were excluded from the assets or structurally separated from personnel, neither a T4–T5 nor a T5–T6 mismatch is established.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "uncertain",
+    "sigma_T3": "null",
+    "sigma_T4": "1-1",
+    "sigma_T5": "uncertain",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

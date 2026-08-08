@@ -1,0 +1,58 @@
+{
+  "case_id": "P019",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net loss attributable to Adient of $491 million (fiscal 2019), following a $1,685 million net loss (fiscal 2018)",
+      "rationale": "The slice documents massive impairment charges ($1,086 million in FY2018 and $66 million in FY2019) specifically related to the 'seat structure and mechanism operations' that produce the seating product, indicating a realized disruption at the product/process interface (p4=1). There is no specific evidence of a fracture between operations and the organization/culture (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2019 net loss $491M after FY2018 net loss $1,685M (~$1,086M seat-structure charges)",
+      "rationale": "p4=1 because the slice documents realized disruption at the product/operations interface: fiscal 2018 recorded ~$1,086M non-cash pre-tax charges (including $299M goodwill impairment) 'associated with the seat structure and mechanism operations'—explicitly 'the operations that produce and deliver the seating product'—with further FY2019 long-lived asset impairments and restructuring on the same seat-structure-and-mechanism locus. p5=0 because the slice contains no documented fracture at the process/organization interface (no evidence of operations breaking against people, management, or culture); charges are confined to product-line asset/JV impairments and restructuring, not organizational incoherence."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['$491 million net loss in FY2019, following a $1.685 billion net loss in FY2018']}",
+      "rationale": "{'type': 'string', 'enum': ['The slice documents product/operations disruption through $1.086 billion of FY2018 non-cash pre-tax charges and a further $66 million FY2019 long-lived-asset impairment associated with the seat structure and mechanism operations that produce and deliver the seating product. This supports p4=1. No realized breakdown involving people, management, or culture is documented, so p5=0.']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net loss attributable to Adient of $491 million (fiscal 2019), following a $1,685 million net loss (fiscal 2018)\",\n  \"rationale\": \"The slice documents massive impairment charges ($1,086 million in FY2018 and $66 million in FY2019) specifically related to the 'seat structure and mechanism operations' that produce the seating product, indicating a realized disruption at the product/process interface (p4=1). There is no specific evidence of a fracture between operations and the organization/culture (p5=0).\"\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2019 net loss $491M after FY2018 net loss $1,685M (~$1,086M seat-structure charges)\",\n  \"rationale\": \"p4=1 because the slice documents realized disruption at the product/operations interface: fiscal 2018 recorded ~$1,086M non-cash pre-tax charges (including $299M goodwill impairment) 'associated with the seat structure and mechanism operations'—explicitly 'the operations that produce and deliver the seating product'—with further FY2019 long-lived asset impairments and restructuring on the same seat-structure-and-mechanism locus. p5=0 because the slice contains no documented fracture at the process/organization interface (no evidence of operations breaking against people, management, or culture); charges are confined to product-line asset/JV impairments and restructuring, not organizational incoherence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"1\"]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\"0\"]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\"$491 million net loss in FY2019, following a $1.685 billion net loss in FY2018\"]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\"The slice documents product/operations disruption through $1.086 billion of FY2018 non-cash pre-tax charges and a further $66 million FY2019 long-lived-asset impairment associated with the seat structure and mechanism operations that produce and deliver the seating product. This supports p4=1. No realized breakdown involving people, management, or culture is documented, so p5=0.\"]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

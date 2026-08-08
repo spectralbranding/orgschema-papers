@@ -1,0 +1,58 @@
+{
+  "case_id": "P314",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "absorbed and deregistered; no business-unit-level outcome disclosed (Form 15-12B filed; assets fully consolidated)",
+      "rationale": "The slice documents that Energen was absorbed whole into Diamondback and deregistered, filing no further periodic reports, and the acquirer's FY2021 10-K contains no segment- or business-unit-level disclosure of the acquired operations (the sole \"Energen\" reference is a financing-history note on assumed senior notes). No divestiture, impairment, or discontinued-operations disclosure specific to the acquired assets was located. Because no realized product/process or process/organization disruption is observable at the business-unit level, both p4 and p5 are coded uncertain rather than 0 or 1."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "fully consolidated without separate divestiture or impairment",
+      "rationale": "The evidence slice indicates that the acquired assets were fully consolidated into Diamondback's single reporting entity without business-unit-level public disclosure. There is no documented evidence of product/process disruption or process/organization fracture, nor any separate divestiture or impairment reported."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets fully consolidated",
+      "rationale": "The slice documents no business-unit-level 3-5-year trajectory for the acquired Energen operations: Energen filed no further periodic reports after deregistration, and Diamondback’s FY2021 10-K contains no separate discussion of Energen as an ongoing unit, nor any product/process misalignment. Likewise, no process/organization fracture, impairment, or discontinued-operations disclosure specific to the acquired assets is located; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"absorbed and deregistered; no business-unit-level outcome disclosed (Form 15-12B filed; assets fully consolidated)\", \"rationale\": \"The slice documents that Energen was absorbed whole into Diamondback and deregistered, filing no further periodic reports, and the acquirer's FY2021 10-K contains no segment- or business-unit-level disclosure of the acquired operations (the sole \\\"Energen\\\" reference is a financing-history note on assumed senior notes). No divestiture, impairment, or discontinued-operations disclosure specific to the acquired assets was located. Because no realized product/process or process/organization disruption is observable at the business-unit level, both p4 and p5 are coded uncertain rather than 0 or 1.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"fully consolidated without separate divestiture or impairment\",\n  \"rationale\": \"The evidence slice indicates that the acquired assets were fully consolidated into Diamondback's single reporting entity without business-unit-level public disclosure. There is no documented evidence of product/process disruption or process/organization fracture, nor any separate divestiture or impairment reported.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets fully consolidated\",\n  \"rationale\": \"The slice documents no business-unit-level 3-5-year trajectory for the acquired Energen operations: Energen filed no further periodic reports after deregistration, and Diamondback’s FY2021 10-K contains no separate discussion of Energen as an ongoing unit, nor any product/process misalignment. Likewise, no process/organization fracture, impairment, or discontinued-operations disclosure specific to the acquired assets is located; absence of such realized-disruption evidence codes p4_pathway and p5_pathway as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

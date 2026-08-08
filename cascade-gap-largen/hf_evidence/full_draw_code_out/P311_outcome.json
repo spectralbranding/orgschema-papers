@@ -1,0 +1,58 @@
+{
+  "case_id": "P311",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "no public audited outcome record (deregistered 2017-10-10); Sidney/Oshkosh NE facilities closed 2019 affecting 162 jobs; home-campus headcount down from ~2,000 to ~800",
+      "rationale": "p5 is coded 1 because the slice documents realized operations-vs-organization fracture at the target's home base over time: a 77-year-old Sidney, NE distribution center and Oshkosh, NE return center were closed in 2019 (162 positions), campus headcount fell from ~2,000 to ~800 with most remaining roles slated to transfer to the acquirer's Missouri HQ or be phased out, and the CEO funded a severance program for displaced employees. p4 is coded 0 because store-network and distribution consolidations described are organizational/operational headcount actions, with no documented product-line-versus-operating-process incoherence (product assortment was framed as improved). t1 and t2 are not addressable from this outcome-only slice, which contains no evidence about controlling-intent archetype or clashing value-capture logics (t1 uncertain, t2 no documented evidence)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice documents facility and headcount contraction, such as closing a Sidney distribution center and consolidating retail locations, but does not document any disruption at the product/process interface (p4). Similarly, there is no documented fracture at the process/organization interface (p5), only standard post-merger consolidation. Absence of documented evidence for these specific pathways results in a 0 code."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Sidney headcount ~2000→~800; DC/store closures (no public financials)",
+      "rationale": "The slice documents 2019 closure of the Sidney NE distribution center and Oshkosh NE return center (162 positions) after an operations review finding lowest volume, plus 2020 consolidation of two Cabela's stores into nearby Bass Pro locations with staff offered transfers; these are framed as rationalization, not product/process incoherence, so p4_pathway=0. Headcount at the former Cabela's campus fell from ~2000 peak to ~800 with roles transferred to Missouri or phased out and a CEO-funded severance pledge, but no fracture of operations against organization/culture is documented, so p5_pathway=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"no public audited outcome record (deregistered 2017-10-10); Sidney/Oshkosh NE facilities closed 2019 affecting 162 jobs; home-campus headcount down from ~2,000 to ~800\", \"rationale\": \"p5 is coded 1 because the slice documents realized operations-vs-organization fracture at the target's home base over time: a 77-year-old Sidney, NE distribution center and Oshkosh, NE return center were closed in 2019 (162 positions), campus headcount fell from ~2,000 to ~800 with most remaining roles slated to transfer to the acquirer's Missouri HQ or be phased out, and the CEO funded a severance program for displaced employees. p4 is coded 0 because store-network and distribution consolidations described are organizational/operational headcount actions, with no documented product-line-versus-operating-process incoherence (product assortment was framed as improved). t1 and t2 are not addressable from this outcome-only slice, which contains no evidence about controlling-intent archetype or clashing value-capture logics (t1 uncertain, t2 no documented evidence).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice documents facility and headcount contraction, such as closing a Sidney distribution center and consolidating retail locations, but does not document any disruption at the product/process interface (p4). Similarly, there is no documented fracture at the process/organization interface (p5), only standard post-merger consolidation. Absence of documented evidence for these specific pathways results in a 0 code.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Sidney headcount ~2000→~800; DC/store closures (no public financials)\",\n  \"rationale\": \"The slice documents 2019 closure of the Sidney NE distribution center and Oshkosh NE return center (162 positions) after an operations review finding lowest volume, plus 2020 consolidation of two Cabela's stores into nearby Bass Pro locations with staff offered transfers; these are framed as rationalization, not product/process incoherence, so p4_pathway=0. Headcount at the former Cabela's campus fell from ~2000 peak to ~800 with roles transferred to Missouri or phased out and a CEO-funded severance pledge, but no fracture of operations against organization/culture is documented, so p5_pathway=0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

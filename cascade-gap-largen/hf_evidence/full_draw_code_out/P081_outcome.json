@@ -1,0 +1,58 @@
+{
+  "case_id": "P081",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Grew from 1 retained plant to 5 assembly plants; JV net income margin 14.6% in 2016 (-1 pp); China JV pre-tax contribution ~$1.4bn (-$75m YoY)",
+      "rationale": "The realized record documents expansion (one retained Chongqing facility to five assembly plants plus engine and transmission plants) and stable investment carrying value ($1,307m to $1,315m), with no documented product/operations incoherence — the margin decline is attributed to external \"negative industry pricing in China\" and vehicle mix, not to any product/process misalignment, so p4_pathway = 0. No dispute, renegotiation, divestiture, or dissolution involving CAF, Changan, or Ford's China operations is disclosed, and nothing documents operations fracturing against people/management/culture, so p5_pathway = 0. The two items in question (CMA/CAF bridge and any unresolved dispute) are flagged [UNVERIFIED] rather than documented as realized disruptions."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "expanded to 5 assembly plants; $1.4bn pre-tax contribution 2016",
+      "rationale": "The slice documents physical and financial growth of CAF (one retained plant to five assembly plants plus engine and transmission plants; carrying value $1,307M to $1,315M) with continued large pre-tax profit contributions ($1.5bn in 2015, $1.4bn in 2016), and attributes the modest 2016 margin decline solely to negative industry pricing—not to product/process misalignment. No dispute, renegotiation, divestiture, or dissolution involving CAF operations or organization is disclosed, so neither a p4 product/process pathway nor a p5 process/organization pathway is documented as realized."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$1.4 billion pre-tax profit contribution in 2016, down $75 million year over year",
+      "rationale": "No realized product/process disruption is documented; by year-end 2016, CAF operated five assembly plants, an engine plant, and a transmission plant, while Ford's investment carrying value increased from $1,307 million to $1,315 million. No realized operations-versus-organization fracture is documented, and the filing attributes the 2016 profit and margin declines to industry pricing, vehicle mix, exchange effects, and cost performance rather than integration with people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Grew from 1 retained plant to 5 assembly plants; JV net income margin 14.6% in 2016 (-1 pp); China JV pre-tax contribution ~$1.4bn (-$75m YoY)\", \"rationale\": \"The realized record documents expansion (one retained Chongqing facility to five assembly plants plus engine and transmission plants) and stable investment carrying value ($1,307m to $1,315m), with no documented product/operations incoherence \\u2014 the margin decline is attributed to external \\\"negative industry pricing in China\\\" and vehicle mix, not to any product/process misalignment, so p4_pathway = 0. No dispute, renegotiation, divestiture, or dissolution involving CAF, Changan, or Ford's China operations is disclosed, and nothing documents operations fracturing against people/management/culture, so p5_pathway = 0. The two items in question (CMA/CAF bridge and any unresolved dispute) are flagged [UNVERIFIED] rather than documented as realized disruptions.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"expanded to 5 assembly plants; $1.4bn pre-tax contribution 2016\",\n  \"rationale\": \"The slice documents physical and financial growth of CAF (one retained plant to five assembly plants plus engine and transmission plants; carrying value $1,307M to $1,315M) with continued large pre-tax profit contributions ($1.5bn in 2015, $1.4bn in 2016), and attributes the modest 2016 margin decline solely to negative industry pricing—not to product/process misalignment. No dispute, renegotiation, divestiture, or dissolution involving CAF operations or organization is disclosed, so neither a p4 product/process pathway nor a p5 process/organization pathway is documented as realized.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$1.4 billion pre-tax profit contribution in 2016, down $75 million year over year\",\n  \"rationale\": \"No realized product/process disruption is documented; by year-end 2016, CAF operated five assembly plants, an engine plant, and a transmission plant, while Ford's investment carrying value increased from $1,307 million to $1,315 million. No realized operations-versus-organization fracture is documented, and the filing attributes the 2016 profit and margin declines to industry pricing, vehicle mix, exchange effects, and cost performance rather than integration with people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

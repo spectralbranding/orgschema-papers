@@ -1,0 +1,85 @@
+{
+  "case_id": "P055",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal structure involves both Owens Corning and Saint-Gobain contributing their worldwide glass reinforcements businesses (including plants, equipment, customers, IP, and employees) into a single joint venture. Because the products, operational processes, and the people running them were all contributed together into the new entity, there is no structural mismatch between T4 and T5, nor between T5 and T6."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing both parties contributed their worldwide glass-reinforcements businesses including customers and intellectual property together with plant, property, equipment, working capital and contractual arrangements into the same JV vehicle, so the customer-facing layer and the operating processes crossed the ownership boundary together (gap_45=0). The Master Contribution Agreement likewise provides that Company Employees and the related Transferred DB/DC pension plans are assumed by the JV on completion, aligning organization with the contributed processes (gap_56=0); residual Master Transition Services, supply and IP-license agreements bridge parent shared substrate but do not evidence a product-vs-process or process-vs-organization structural mismatch at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The “What crossed the ownership boundary at closing” lines state that both worldwide glass-reinforcements businesses contributed their customers and intellectual property together with plant, equipment, working capital, and contractual arrangements, so the customer-facing products and their operating processes moved together (Form 8-K Item 1.01). The same section states that Company Employees and their transferred pension plans were assumed by the joint venture and its subsidiaries, documenting that the organization moved alongside the operations (EX-10.1 Master Contribution Agreement)."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The deal structure involves both Owens Corning and Saint-Gobain contributing their worldwide glass reinforcements businesses (including plants, equipment, customers, IP, and employees) into a single joint venture. Because the products, operational processes, and the people running them were all contributed together into the new entity, there is no structural mismatch between T4 and T5, nor between T5 and T6.\"\n\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing both parties contributed their worldwide glass-reinforcements businesses including customers and intellectual property together with plant, property, equipment, working capital and contractual arrangements into the same JV vehicle, so the customer-facing layer and the operating processes crossed the ownership boundary together (gap_45=0). The Master Contribution Agreement likewise provides that Company Employees and the related Transferred DB/DC pension plans are assumed by the JV on completion, aligning organization with the contributed processes (gap_56=0); residual Master Transition Services, supply and IP-license agreements bridge parent shared substrate but do not evidence a product-vs-process or process-vs-organization structural mismatch at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The “What crossed the ownership boundary at closing” lines state that both worldwide glass-reinforcements businesses contributed their customers and intellectual property together with plant, equipment, working capital, and contractual arrangements, so the customer-facing products and their operating processes moved together (Form 8-K Item 1.01). The same section states that Company Employees and their transferred pension plans were assumed by the joint venture and its subsidiaries, documenting that the organization moved alongside the operations (EX-10.1 Master Contribution Agreement).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

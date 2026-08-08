@@ -1,0 +1,58 @@
+{
+  "case_id": "P163",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2016 net earnings $15M attributable (1% of revenue), returning to profit after $(80)M in 2015 and $(123)M in 2014; revenues declined $2,046M (2014) to $1,543M (2016); no goodwill impairment",
+      "rationale": "The slice documents the divested PI/DI product businesses missing their first post-sale adjusted-EBITDA target (triggering a $4M purchase-price repayment in 2016), which signals possible post-deal product/operations underperformance but does not attribute it to an inability to align the product with operating processes — hence p4 is uncertain rather than 1. No line describes any operations-versus-people/management/culture fracture over the window (the record instead shows continued public reporting, a return to positive net earnings, staged completion of divestitures, and no goodwill impairment), so p5 is coded 0 for none documented. The slice contains no information on controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2016 net earnings attributable to Eastman Kodak Company were $15 million",
+      "rationale": "The slice documents the post-deal trajectory of Eastman Kodak, noting a return to positive net earnings by FY2016 and the completion of deferred closings for the PI/DI businesses. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2016 net earnings $15M after prior losses; PI/DI transfer done with $4M repayment",
+      "rationale": "The slice documents only the staged completion of the PI/DI divestiture by September 2015 and a $4M earnout repayment after the buyer-side business missed its 2015 adjusted-EBITDA target; it does not record any realized inability to align an acquired product line with operating processes, so p4_pathway is 0. No evidence is given of operations fracturing against people, management, or culture over the window, so p5_pathway is likewise 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2016 net earnings $15M attributable (1% of revenue), returning to profit after $(80)M in 2015 and $(123)M in 2014; revenues declined $2,046M (2014) to $1,543M (2016); no goodwill impairment\", \"rationale\": \"The slice documents the divested PI/DI product businesses missing their first post-sale adjusted-EBITDA target (triggering a $4M purchase-price repayment in 2016), which signals possible post-deal product/operations underperformance but does not attribute it to an inability to align the product with operating processes \\u2014 hence p4 is uncertain rather than 1. No line describes any operations-versus-people/management/culture fracture over the window (the record instead shows continued public reporting, a return to positive net earnings, staged completion of divestitures, and no goodwill impairment), so p5 is coded 0 for none documented. The slice contains no information on controlling-intent archetype or business-model reconciliation, so t1 and t2 are uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2016 net earnings attributable to Eastman Kodak Company were $15 million\",\n  \"rationale\": \"The slice documents the post-deal trajectory of Eastman Kodak, noting a return to positive net earnings by FY2016 and the completion of deferred closings for the PI/DI businesses. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2016 net earnings $15M after prior losses; PI/DI transfer done with $4M repayment\",\n  \"rationale\": \"The slice documents only the staged completion of the PI/DI divestiture by September 2015 and a $4M earnout repayment after the buyer-side business missed its 2015 adjusted-EBITDA target; it does not record any realized inability to align an acquired product line with operating processes, so p4_pathway is 0. No evidence is given of operations fracturing against people, management, or culture over the window, so p5_pathway is likewise 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,29 @@
+# Outcome sub-dossier — Parkway, Inc. realized record, fixed ~2020–2022 outcome window
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. Because the registrant was taken private and
+> deregistered under the Exchange Act, there is no post-deregistration public annual
+> report; the realized record in the fixed 3–5-year window is therefore traced only to
+> the point at which public reporting ceased. This sub-dossier contains no information
+> about how the underlying transaction was structured at closing.
+
+## Fixed outcome window and public-reporting status
+- The outcome window is fixed as the registrant's ~2020–2022 record (three to five years after the ~2017 closing year). [SRC: window fixed at construction]
+- The registrant filed no annual report on Form 10-K after its report for the fiscal year ended December 31, 2016 (filed March 15, 2017); no later Form 10-K or Form 20-F appears in the EDGAR record. [SRC: SEC accession 0001677761-17-000018, Form 10-K]
+- On October 12, 2017 the registrant completed the merger contemplated by an Agreement and Plan of Merger dated June 29, 2017 with Real Estate Houston US Trust ("Parent"), a Delaware statutory trust and subsidiary of Canada Pension Plan Investment Board ("CPPIB"); Merger Sub merged with and into the Company, which survived as an indirect subsidiary of CPPIB. [SRC: SEC accession 0001193125-17-311883, Form 8-K Introductory Note and Item 2.01]
+- Each common share outstanding was converted into the right to receive $19.05 in cash, in addition to a separate $4.00 per share special cash dividend paid October 10, 2017; the total payment with respect to the mergers was approximately $1.2 billion, and CPPIB indirectly owns approximately 99% of the voting common equity of the surviving company. [SRC: SEC accession 0001193125-17-311883, Form 8-K Items 2.01 and 5.01]
+- In connection with the merger the Company requested that the NYSE suspend and remove its common shares from trading (October 12, 2017) and file a Form 25, and it then filed a Form 15-12B on October 23, 2017 to terminate registration and suspend its reporting obligations under the Exchange Act; the Company stated it would thereafter no longer be required to prepare and file public reports. [SRC: SEC accession 0001193125-17-311883, Form 8-K Item 3.01; SEC accession 0001193125-17-316665, Form 15-12B]
+
+## Documented reorganization at the process/organization interface (as of the go-private)
+- Concurrently with the merger, the Company and its Operating Partnership separated their management business and operations from the remainder of their business and sold the subsidiaries that held that management business and operations to Parkway Property Investments, LLC ("PPI"), a vehicle in which James Heistand (Chief Executive Officer), Scott Francis (Chief Financial Officer) and Jason Bates (Chief Investment Officer) own membership interests (the "Management Separation"). [SRC: SEC accession 0001193125-17-311883, Form 8-K Item 1.01]
+- PPI entered into an Enterprise Management Agreement (initial term 14 months) under which it agreed to provide property management, enterprise management, transition and other services to the Company, its subsidiaries and their properties in exchange for fees and expense reimbursement. [SRC: SEC accession 0001193125-17-311883, Form 8-K Item 1.01]
+- All seven serving directors resigned in connection with the merger, and CPPIB appointed three CPPIB-affiliated directors (Hilary Spann, Lora Gotcheva and Jay Fischer); Heistand, Francis and Bates terminated their employment with the Company (moving to PPI) and the Chief Operating Officer resigned. [SRC: SEC accession 0001193125-17-311883, Form 8-K Item 5.02]
+- Following the mergers, the sole stockholder approved a Plan of complete liquidation and dissolution of the Company, effective October 13, 2017, providing for sale or in-kind distribution of substantially all of the Company's assets and a Final Distribution no later than the second anniversary of stockholder approval. [SRC: SEC accession 0001193125-17-311883, Form 8-K Items 1.01 and 5.07]
+
+## No public record within the fixed window
+- Because the registrant deregistered under the Exchange Act in October 2017, it filed no public periodic reports covering the fixed ~2020–2022 outcome window; no audited public financial statements and no publicly observable 3–5-year outcome scalar (net income/loss, impairment, divestiture, or the like) exist for the transaction within that window. [SRC: SEC accession 0001193125-17-311883, Form 8-K Item 3.01; SEC accession 0001193125-17-316665, Form 15-12B]
+- Any post-2017 operating or financial trajectory of the underlying business under private ownership is not traceable to a retrieved public primary source and is not asserted here. [UNVERIFIED]
+
+## Outcome summary (realized record only)
+- The registrant was acquired and taken private by CPPIB and deregistered under the Exchange Act in October 2017, roughly six months after the underlying transaction's closing; the last documented public events are the go-private merger ($19.05 per share cash plus a $4.00 special dividend; approximately $1.2 billion total; CPPIB approximately 99% ownership), a separation and sale of the management/operating business to a management-owned vehicle (PPI) under a 14-month enterprise management agreement, wholesale board and executive turnover, and a Plan of liquidation and dissolution — after which the company ceased public reporting. Consequently the fixed ~2020–2022 outcome is **uncertain (no public record)**. [SRC: SEC accession 0001193125-17-311883, Form 8-K Items 1.01, 2.01, 3.01, 5.01, 5.02 and 5.07; SEC accession 0001193125-17-316665, Form 15-12B]

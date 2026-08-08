@@ -1,0 +1,458 @@
+ 
+
+ 0000883902 
+ false 
+ --12-31 
+
+ 0000883902 
+
+ 2022-07-25 
+ 2022-07-25 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ UNITED STATES 
+SECURITIES AND EXCHANGE COMMISSION 
+
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+
+ Date of Report (Date of earliest event reported): July 25, 2022 
+
+ Cornerstone Building Brands, Inc. 
+
+ (Exact name of registrant as specified
+in its charter) 
+
+ Delaware 
+ 1-14315 
+ 76-0127701 
+ 
+ (State or other jurisdiction of 
+incorporation) 
+ (Commission File Number) 
+ (I.R.S. Employer Identification Number) 
+
+ 5020 Weston Parkway, Suite 400, Cary NC 
+ 
+ 27513 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+
+ Registrant';s telephone
+number, including area code: ( 866 ) 419-0042 
+
+ Check the appropriate box below if the Form
+8-K filing is intended to simultaneously satisfy the filing obligation of the Registrant under any of the following provisions: 
+
+ &#168; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#168; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#168; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section
+12(b) of the Act: 
+
+ Title of Each Class 
+ 
+ Trading Symbol 
+ 
+ Name of Each Exchange on Which Registered 
+ 
+ Common Stock $0.01 par value per share 
+ 
+ CNR 
+ 
+ New York Stock Exchange 
+
+ Indicate by check mark whether the registrant
+is an emerging growth company as defined in as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter)
+or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth company &#168; 
+
+ If an emerging growth company, indicate
+by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial
+accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#168; 
+
+ Introductory Note 
+
+ On July 25, 2022, Cornerstone
+Building Brands, Inc. (the "; Company ";), Camelot Return Intermediate Holdings, LLC ("; Parent ";) and
+Camelot Return Merger Sub, Inc. ("; Merger Sub ";) completed the transactions contemplated by that certain Agreement and
+Plan of Merger, dated as of March 5, 2022 (the "; Merger Agreement ";), by and among the Company, Parent and Merger Sub.
+Parent and Merger Sub are subsidiaries of investment funds managed by Clayton, Dubilier & Rice, LLC ("; CD&R ";).
+Pursuant to the Merger Agreement, Merger Sub merged with and into the Company (the "; Merger ";), with the Company surviving
+the Merger as a subsidiary of Parent (the "; Surviving Corporation ";). Prior to the completion of the Merger, CD&R
+and its affiliates collectively owned approximately 49% of the issued and outstanding shares of Company common stock, par value $0.01
+per share ("; Company common stock ";). As a result of the Merger, investment funds managed by CD&R became the indirect
+owners of all of the issued and outstanding shares of Company common stock that CD&R did not already own. 
+
+ Item 1.01. Entry into a Material Definitive Agreement. 
+
+ The Merger was funded in part
+with proceeds from (i) a $300 million senior secured first lien term loan facility (the "; New Term Loan Facility ";);
+(ii) $710 million aggregate principal amount of 8.750% senior secured notes due 2028 (the "; 2028 Notes ";) initially issued
+by Merger Sub; and (iii) $464.4 million aggregate principal amount of 2.99% senior payment-in-kind notes due 2029 (the "; HoldCo
+PIK Notes ";) issued by Camelot Return Parent, LLC ("; HoldCo Issuer ";). 
+
+ Term Loan Credit Agreement 
+
+ On
+July 25, 2022, Merger Sub, as initial borrower thereunder, entered into a Term Loan Credit Agreement (the "; Term Loan Credit
+Agreement ";) by and among Merger Sub, as initial borrower thereunder, the Company, as successor borrower thereunder, the lenders
+party thereto (the "; Term Loan Lenders ";) and Deutsche Bank AG New York Branch, as administrative agent and collateral
+agent, pursuant to which the Term Loan Lenders extended an initial term loan facility to the borrower under the Term Loan Credit Agreement
+in an aggregate principal amount of $300 million (the "; Term Loans ";). Upon the consummation of the Merger, the
+Company succeeded Merger Sub as Borrower under the Term Loan Credit Agreement and the subsidiaries of the Company that guarantee its existing
+secured credit facilities provided an unconditional guarantee of the obligations of the Company under the Term Loan Credit Agreement. 
+
+ The
+Term Loan Credit Agreement will mature on August 1, 2028 and will bear interest at a floating rate per annum of, at the Company';s
+option, SOFR plus 5.625% or a base rate plus 4.625%. The term SOFR rate is subject to an interest rate floor of 0.50% and the base rate
+is subject to an interest rate floor of 0.00%. Borrowings under the Term Loan Credit Agreement will amortize in equal quarterly installments
+in an amount equal to 1.00% per annum of the principal amount; provided that if the Term Loans outstanding as of July 25, 2022 will not
+be discharged as of July 23, 2027, the last business day of each fiscal quarter ending on or after July 25, 2027 and prior to April 15,
+2028 shall not be an amortization payment date. 
+
+ At
+any time prior to August 1, 2024, the Company may, at its option, prepay the Term Loans, in whole or in part, at a price equal
+to 100% of the principal amount, plus a ";make-whole"; premium described below, plus accrued and unpaid interest, if any, on
+the Term Loans prepaid to, but not including, the date of prepayment. Additionally, at any time and from time to time prior to August
+1, 2024, the Company may, at its option, prepay up to 40% of the original aggregate principal amount of the Term Loans with the net proceeds
+of certain equity offerings at a redemption price equal to 108.750% of the principal amount of the Term Loans, together with accrued and
+unpaid interest, if any, on the Term Loans prepaid to, but not including, the date of prepayment; provided, however, that Term Loans in
+a principal amount equal to at least 50% of the aggregate principal amount of such Term Loans originally incurred must remain outstanding
+after such prepayment unless all such Term Loans are prepaid substantially concurrently. At any time and from time to time on and after
+August 1, 2024, the Company may, at its option, prepay the Term Loans, in whole or in part, at the prepayment prices (expressed as a percentage
+of the principal amount) set forth below, plus accrued and unpaid interest, if any, on the Term Loans prepaid, to, but not including,
+the relevant prepayment date, if prepaid during the twelve-month period commencing on August 1 of the years indicated below: 
+
+ Year 
+ Price 
+ 
+ 2024 
+ 106.563 % 
+ 
+ 2025 
+ 103.281 % 
+ 
+ 2026 and thereafter 
+ 100.000 % 
+
+ If
+the Company experiences a ";Change of Control"; (as defined in the Term Loan Credit Agreement) or sells certain of its assets,
+the Company will be required to prepay the Term Loans at 101% of the principal amount of such Term Loans being prepaid, subject
+to certain conditions. 
+
+ The
+Company will be required to prepay the loans under the Term Loan Credit Agreement, subject to certain exceptions, in an amount equal to
+100% of the net cash proceeds of (i) certain asset sales and (ii) certain debt offerings, subject to reductions to 50% and 0% if specified
+secured leverage ratio targets are met, subject to specified reinvestment rights. 
+
+ The
+Term Loan Credit Agreement contains certain covenants, which among other things, limit the ability of the Company and its restricted subsidiaries
+to (i) incur additional indebtedness; (ii) pay dividends or make other restricted payments; (iii) make loans and investments; (iv) incur
+liens; (v) sell assets; (vi) enter into affiliate transactions; (vii) enter into certain sale and leaseback transactions; (viii) enter
+into agreements restricting the Company';s subsidiaries'; ability to pay dividends; and (ix) merge, consolidate or amalgamate
+or sell all or substantially all of their property. These covenants are subject to a number of exceptions and qualifications that are
+described in the Term Loan Credit Agreement. The Term Loan Credit Agreement provides for customary events of default which include (subject
+in certain cases to customary grace and cure periods), among others, nonpayment of principal or interest, failure to comply with other
+covenants or agreements in the Term Loan Credit Agreement, failure to pay certain other indebtedness, failure to pay certain final judgments,
+failure of certain guarantees to be enforceable and certain events of bankruptcy or insolvency. These events of default are subject to
+a number of qualifications, limitations and exceptions that are described in the Term Loan Credit Agreement. 
+
+ 2028 Notes 
+
+ On July 25, 2022, in connection
+with the issuance and sale by Merger Sub to Deutsche Bank Securities Inc., UBS Securities LLC , and
+the other initial purchasers of the 2028 Notes (the "; Initial Purchasers ";), Merger Sub entered into an Indenture
+(the "; Base Indenture ";), by and among Merger Sub and Wilmington Trust, National Association, as trustee (in such capacity,
+the "; Trustee ";) and as collateral agent (in such capacity, the "; Collateral Agent ";), supplemented
+by (i) a first supplemental indenture dated as of July 25, 2022 (the "; First Supplemental Indenture ";), among Merger
+Sub, the Trustee and the Collateral Agent, providing for the issuance of the 2028 Notes and (ii) immediately following consummation of
+the Merger, a second supplemental indenture (the "; Second Supplemental Indenture "; and together with the Base Indenture
+and First Supplemental Indenture, the "; Indenture ";), dated as of July 25, 2022, by and among the Company, the guarantors
+party thereto, the Trustee and the Collateral Agent, pursuant to which (i) the Company assumed all obligations of Merger Sub under the
+Notes and the Indenture and (ii) the guarantors jointly and severally guaranteed the obligations of the Company under the Base Indenture
+and the Notes on a senior secured basis. 
+
+ The 2028 Notes bear interest
+at a rate of 8.750% per year, payable in cash in arrears on January 15 and July 15 of each year and on August 1, 2028; provided, that
+if the Term Loans outstanding as of July 25, 2022 will not be discharged as of July 15, 2027, in lieu of the interest payment date that
+would otherwise be on January 15, 2028, interest will instead be payable in cash on April 15, 2028. The first interest payment date will
+be January 15, 2023. The 2028 Notes will mature on August 1, 2028. 
+
+ At
+any time prior to August 1, 2024, the Company may, at its option, redeem the 2028 Notes, in whole or in part, at a price equal to 100%
+of the principal amount, plus a ";make-whole"; premium described below, plus accrued and unpaid interest, if any, on the 2028
+Notes redeemed to, but not including, the date of redemption (subject to the right of holders of record on the relevant record date to
+receive interest due on the relevant interest payment date falling prior to or on the redemption date). Additionally, at any time and
+from time to time prior to August 1, 2024, the Company may, at its option, redeem up to 40% of the original aggregate principal amount
+of the 2028 Notes with the net proceeds of certain equity offerings at a redemption price equal to 108.750% of the principal amount of
+the 2028 Notes, together with accrued and unpaid interest, if any, on the Notes redeemed to, but not including, the date of redemption
+(subject to the right of holders of record on the relevant record date to receive interest due on the relevant interest payment date falling
+prior to or on the redemption date); provided, however, that if the 2028 Notes are being redeemed pursuant to this sentence, an aggregate
+principal amount of 2028 Notes equal to at least 50% of the original aggregate principal amount of 2028 Notes must remain outstanding
+after such redemption (unless all 2028 Notes are redeemed substantially concurrently). At any time and from time to time on and after
+August 1, 2024, the Company may, at its option, redeem the 2028 Notes, in whole or in part, at the redemption prices (expressed as a percentage
+of the principal amount) set forth below, plus accrued and unpaid interest, if any, on the 2028 Notes redeemed, to, but not including,
+the relevant redemption date (subject to the right of holders of record on the relevant record date to receive interest due on the relevant
+interest payment date falling prior to or on the redemption date), if redeemed during the twelve-month period commencing on August 1 of
+the years indicated below: 
+
+ Year 
+ Price 
+ 
+ 2024 
+ 106.563 % 
+ 
+ 2025 
+ 103.281 % 
+ 
+ 2026 and thereafter 
+ 100.000 % 
+
+ If the Company experiences
+a ";Change of Control"; (as defined in the Indenture) or sells certain of its assets, the Company will be required to repurchase
+the 2028 Notes at 101% of the principal amount of such 2028 Notes being repurchased, subject to certain conditions. 
+
+ The Company will be required
+to offer to purchase the 2028 Notes, subject to certain exceptions, in an amount equal to 100% of the net cash proceeds of certain asset
+sales, subject to reductions to 50% and 0% if specified secured leverage ratio targets are met, subject to specified reinvestment rights. 
+
+ The
+Indenture contains certain covenants, which among other things, limit the ability of the Company and its restricted subsidiaries to (i) incur
+additional indebtedness; (ii) pay dividends or make other restricted payments; (iii) make loans and investments; (iv) incur
+liens; (v) sell assets; (vi) enter into affiliate transactions; (vii) enter into certain sale and leaseback transactions;
+(viii) enter into agreements restricting the Company';s subsidiaries'; ability to pay dividends; and (ix) merge, consolidate
+or amalgamate or sell all or substantially all of their property. These covenants are subject to a number of exceptions and qualifications
+that are described in the Indenture. The Indenture provides for customary events of default which include (subject in certain cases to
+customary grace and cure periods), among others, nonpayment of principal or interest, failure to comply with other covenants or agreements
+in the 2028 Notes or the Indenture, failure to pay certain other indebtedness, failure to pay certain final judgments, failure of certain
+guarantees to be enforceable and certain events of bankruptcy or insolvency. These events of default are subject to a number of qualifications,
+limitations and exceptions that are described in the Indenture. 
+
+ The
+offer and sale of the 2028 Notes and the related guarantees were made in the United States only to persons (i) reasonably believed to
+be qualified institutional buyers pursuant to an exemption from registration provided by Rule 144A promulgated under the Securities Act
+of 1933, as amended (the "; Securities Act ";) and (ii) outside the United States to non-U.S. persons in compliance
+with Regulation S under the Securities Act. The 2028 Notes and the related guarantees have not been registered under the Securities Act
+or the securities laws of any other jurisdiction and may not be offered or sold in the United States absent registration or an applicable
+exemption from such registration requirements. 
+
+ HoldCo PIK Notes 
+
+ On July 25, 2022, HoldCo Issuer
+entered into a purchase agreement by and between HoldCo Issuer and affiliates of CD&R, in connection with the issuance and sale by
+HoldCo Issuer of the HoldCo PIK Notes. As a result of the Merger, HoldCo Issuer owns, directly or indirectly, 100% of the equity interests
+of the Company through Parent. The HoldCo PIK Notes are unsecured senior obligations of HoldCo Issuer and will rank pari passu 
+with all present and future senior unsecured indebtedness of HoldCo Issuer and senior to all present and future subordinated indebtedness
+of HoldCo Issuer. 
+
+ HoldCo Issuer will pay interest
+semi-annually in arrears on January 15 and July 15 of each year and on July 25, 2029, commencing January 15, 2023, at the rate of 2.99%
+per annum, until the principal amount is paid or made available for payment. HoldCo Issuer will pay interest on the HoldCo PIK Notes by
+increasing the principal amount of the outstanding HoldCo PIK Notes or by issuing additional notes or by a combination of the two. The
+HoldCo PIK Notes will mature on July 25, 2029. HoldCo Issuer has agreed with the Initial Purchasers that no prepayments will be permitted
+until the 24 month anniversary of the HoldCo PIK Notes issuance date. 
+
+ Item
+2.01. Completion of Acquisition or Disposition of Assets. 
+
+ The information set forth in the Introductory Note
+and in Items 3.03, 5.01, 5.02, 5.03 and 8.01 of this Current Report on Form 8-K is incorporated by reference in this Item 2.01. 
+
+ At
+the effective time of the Merger (the "; Effective Time ";), in accordance with the terms and conditions set forth in the
+Merger Agreement, each share of Company common stock outstanding immediately prior to the Effective Time of the Merger (other than
+(i) shares of Company common stock that were cancelled or converted into shares of common stock of the Surviving Corporation in accordance
+with the Merger Agreement and (ii) shares of Company common stock held by stockholders of the Company (other than CD&R, certain investment
+funds managed by CD&R and other affiliates of CD&R that held shares of Company common stock) who did not vote in favor of the
+Merger Agreement or the Merger and who have perfected and not withdrawn a demand for appraisal rights pursuant to Section 262 of the General
+Corporation Law of the State of Delaware), was converted into the right to receive cash in an amount equal to $24.65 in cash per share,
+without interest and subject to any required withholding taxes (the "; Merger Consideration ";). 
+
+ At the Effective
+Time, each outstanding and vested stock option was cancelled and converted into the right to receive an amount in cash equal to the product
+of (x) the excess, if any, of the Merger Consideration over the exercise price per share of such stock option and (y) the number of shares
+of Company common stock subject to such stock option. Each outstanding and unvested stock option was cancelled and converted into a contingent
+contractual right to receive a payment in cash from the Surviving Corporation equal to the product of (x) the excess, if any, of the Merger
+Consideration over the exercise price per share of such stock option and (y) the number of shares of Company common stock subject to such
+stock option, and such resulting cash-based awards are subject to the same terms and conditions as are applicable to the corresponding
+stock option (including time-based vesting conditions but excluding provisions related to exercise). 
+
+ At the Effective
+Time, each outstanding restricted stock unit award corresponding to shares of Company common stock (a "; Company RSU Award ";)
+was cancelled and converted into the contractual right to receive a cash payment from the Surviving Corporation equal to the product of
+(x) the number of shares of Company common stock subject to such Company RSU Award and (y) the Merger Consideration, and such resulting
+cash-based awards are subject to the same terms and conditions as are applicable to the corresponding Company RSU Award (including time-based
+vesting conditions). 
+
+ At the Effective
+Time, each outstanding performance-based share unit award (a "; Company PSU Award ";) (i) granted during the 2020 calendar
+year (each, a "; 2020 Company PSU Award ";) or (ii) granted during the 2021 calendar year to the Company';s Chief
+Executive Officer or the Chief Executive Officer';s direct reports (each, a "; 2021 Company Executive PSU Award ";),
+was cancelled and converted into a contingent contractual right to receive a cash payment from the Surviving Corporation equal to the
+product of (x) the number of performance share units earned under the terms of the applicable award agreement, but with the applicable
+total shareholder return metric determined using a per share price equal to the Merger Consideration and the EBITDA-based metric determined
+based on actual performance as of the end of the performance period applicable to such Company PSU Award and (y) the Merger Consideration,
+with the resulting cash-based awards subject to the same terms and conditions as are applicable to the corresponding 2020 Company PSU
+Award or 2021 Company Executive PSU Award (including time-based vesting conditions and EBITDA-based vesting conditions, but excluding
+any vesting conditions based on total shareholder return). 
+
+ In addition,
+at the Effective Time, each outstanding Company PSU Award granted during the 2021 calendar year that was not a 2021 Company Executive
+PSU Award was cancelled and converted into a contingent contractual right to receive a cash payment from the Surviving Corporation equal
+to the product of (x) the number of performance-based share units earned under the terms of the applicable award agreement, but with the
+applicable total shareholder return determined using a per share price equal to the Merger Consideration and the EBITDA-based metric in
+the applicable award agreement deemed achieved at target performance and determined without proration for any portion of the performance
+period that has not yet been completed, and (y) the Merger Consideration. 
+
+ A copy of the Merger Agreement
+is attached hereto as Exhibit 2.1 and is incorporated herein by reference. The foregoing description of the Merger Agreement is only a
+summary, does not purport to be complete and is qualified in its entirety by reference to the full text of the Merger Agreement. 
+
+ Item 2.03. Creation of a Direct Financial Obligation or an
+Obligation under an Off-Balance Sheet Arrangement of a Registrant. 
+
+ The information set forth in Item 1.01 of this
+Current Report on Form 8-K is incorporated by reference in this Item 2.03. 
+
+ Item 3.01. Notice of Delisting or Failure to Satisfy a Continued
+Listing Rule or Standard; Transfer of Listing. 
+
+ The information set forth in the Introductory Note
+and in Item 2.01 of this Current Report on Form 8-K is incorporated by reference in this Item 3.01. 
+
+ On July 25, 2022, the Company notified the New
+York Stock Exchange (the "; NYSE ";) that the Merger had been completed, and requested that the NYSE suspend trading of
+Company common stock on the NYSE prior to the opening of trading on July 25, 2022. The Company also requested that the NYSE file with
+the U.S. Securities and Exchange Commission (the "; SEC ";) a notification of removal from listing and registration on
+Form 25 to effect the delisting of all shares of Company common stock from the NYSE and the deregistration of such shares under Section
+12(b) of the Securities Exchange Act of 1934, as amended (the "; Exchange Act ";). As a result, shares of Company common
+stock will no longer be listed on the NYSE. 
+
+ In addition, the Company intends to file a certification
+on Form 15 with the SEC requesting the termination of registration of all shares of Company common stock under Section 12(g) of the Exchange
+Act and the suspension of the Company';s reporting obligations under Section 13 of the Exchange Act with respect to all shares of
+Company common stock. 
+
+ Item
+3.03. Material Modification to Rights of Security Holders. 
+
+ The information set forth in the Introductory Note
+and in Items 2.01, 3.01, 5.01 and 5.03 of this Current Report on Form 8-K is incorporated by reference in this Item 3.03. 
+
+ Item
+5.01. Changes in Control of the Registrant. 
+
+ The information set forth in the Introductory Note
+and in Items 1.01, 2.01, 2.03, 3.03 and 5.02 of this Current Report on Form 8-K is incorporated by reference in this Item 5.01. 
+
+ As a result of the completion of the Merger, a
+change in control of the Company occurred, and the Company became a subsidiary of Parent. The aggregate Merger Consideration paid to Company
+stockholders not affiliated with CD&R was approximately $1,572 million, which Parent funded through proceeds from the New Term Loan
+Facility, the 2028 Notes and the HoldCo PIK Notes, along with cash from the Company';s balance sheet. 
+
+ Item
+5.02. Departure of Directors or Certain Officers&#894; Election of Directors&#894; Appointment of Certain Officers&#894; Compensatory
+Arrangements of Certain Officers. 
+
+ The information set forth in the Introductory Note
+and in Item 2.01 of this Current Report on Form 8-K is incorporated by reference in this Item 5.02. 
+
+ Directors 
+
+ Pursuant to the terms of the Merger Agreement,
+immediately prior to, but conditioned on the occurrence of, the Effective Time, Kathleen J. Affeldt, George L. Ball, Gary L. Forbes, John
+J. Holland, William E. Jackson, Wilbert W. James, Jr., Daniel Janki, John Krenicki, Jr., Rose Lee, Timothy O';Brien, Judith Reinsdorf,
+Nathan K. Sleeper and Jonathan L. Zrebiec each resigned from their positions as members of the board of directors of the Company and from
+any and all committees of the board of directors on which they served. In addition, pursuant to the terms of the Merger Agreement, from
+and after the Effective Time, Tyler Young and Jonathan L. Zrebiec, who were directors of Merger Sub immediately before the Effective Time,
+became directors of the Company. Immediately following the Effective Time, Rose Lee, Jeffrey S. Lee and Alena S. Brenner were appointed
+to the board of directors of the Surviving Corporation and Tyler Young and Jonathan L. Zrebiec resigned from the board of directors of
+the Surviving Corporation. 
+
+ Officers 
+
+ The officers of the Company immediately prior to
+the Effective Time continued as officers of the Company. 
+
+ Item
+5.03. Amendments to Articles of Incorporation of Bylaws; Change in Fiscal Year. 
+
+ The information contained in the Introductory Note
+and in Item 2.01 of this Current Report on Form 8-K is incorporated by reference in this Item 5.03. 
+
+ Pursuant to the terms of the Merger Agreement,
+at the Effective Time, the Company';s Amended and Restated Certificate of Incorporation, as in effect immediately prior to the Effective
+Time, was amended and restated in its entirety (the "; Charter ";). A copy of the Charter is attached hereto as Exhibit
+3.1 and is incorporated herein by reference. Pursuant to the terms of the Merger Agreement, at the Effective Time, the Company';s
+Amended and Restated Bylaws, as in effect immediately prior to the Effective Time, were amended and restated in their entirety to be in
+the form of the bylaws of Merger Sub as in effect immediately prior to the Effective Time of the Merger, except that references to Merger
+Sub';s name were replaced with references to the Company';s name (the ";Bylaws";). A copy of the Bylaws is attached
+hereto as Exhibit 3.2 and is incorporated herein by reference. 
+
+ Item
+8.01. Other Events. 
+
+ On July 25, 2022, the Company issued a press release
+announcing the closing of the Merger. A copy of the press release is attached hereto as Exhibit 99.1 and is incorporated herein by reference. 
+
+ Item
+9.01. Financial Statements and Exhibits. 
+
+ (d) Exhibits 
+
+ Exhibit No. 
+ Description of Exhibit 
+ 
+ 2.1 
+ Agreement and Plan of Merger, dated as of March 5, 2022, by and among Camelot Return Intermediate Holdings, LLC, Camelot Return Merger Sub, Inc., and Cornerstone Building Brands, Inc. (filed as Exhibit 2.1 to the Company';s Current Report on Form 8-K, filed on March 7, 2022 and incorporated herein by reference). 
+ 
+ 3.1 
+ Amended and Restated Certificate of Incorporation of Cornerstone Building Brands, Inc. 
+ 
+ 3.2 
+ Amended and Restated Bylaws of Cornerstone Building Brands, Inc. 
+ 
+ 99.1 
+ Press Release, dated as of July 25, 2022. 
+ 
+ 104 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document) 
+
+ SIGNATURE 
+
+ Pursuant to the requirements of the Securities
+Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized. 
+
+ CORNERSTONE BUILDING BRANDS, INC. 
+
+ By: /s/ Alena S. Brenner 
+ Name: Alena S. Brenner 
+ 
+ Title: Executive Vice President, General Counsel and Corporate Secretary 
+
+ Date: July 25, 2022 
+

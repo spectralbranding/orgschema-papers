@@ -1,0 +1,85 @@
+{
+  "case_id": "P054",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 = 1: Micron took contractual rights to Inotera's DRAM output (T4, purchased ~50/50 under the JV and Supply Agreements) without acquiring the producing operation — \"the producing operation, workforce, and management remained inside Inotera and did not move to Micron\" — so the customer-facing product crossed via off-take/supply rights while the processes that make it stayed with Inotera; this product-vs-process mismatch was contractually absorbed via the Supply, Facilitation, Guaranty, and transition-services agreements (gap_mitigated = yes). gap_56 = 0: neither the operating processes nor the organization/workforce transferred to Micron — both remained coherently together inside standalone Inotera (\"Inotera runs its own manufacturing,\" employees not transferred), so there is no T5-without-T6 mismatch at closing."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "read-only",
+      "sigma_T4": "read-only",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a joint venture where Micron acquired a minority stake in Inotera and shared control with NTC. The product (T4), processes (T5), and organization (T6) all remained within Inotera, with Micron and NTC taking output via supply agreements. Because the operational layers remained together inside the JV entity, there is no structural mismatch (gap_45=0, gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing output rights crossed contractually, with Micron entitled to purchase roughly 50% of Inotera’s DRAM output, while the slice states that the manufacturing operation remained inside Inotera and did not move to Micron; this documents a product-versus-process split at closing. That split was contractually absorbed through the Supply Agreement, Facilitation Agreement, back-end services agreement, and transition services agreement. No gap_56 is documented because Inotera’s operating organization remained with its manufacturing processes, while shared governance, officer-nomination rights, technology transfer, and joint development arrangements aligned those processes with the continuing organization."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 = 1: Micron took contractual rights to Inotera's DRAM output (T4, purchased ~50/50 under the JV and Supply Agreements) without acquiring the producing operation \\u2014 \\\"the producing operation, workforce, and management remained inside Inotera and did not move to Micron\\\" \\u2014 so the customer-facing product crossed via off-take/supply rights while the processes that make it stayed with Inotera; this product-vs-process mismatch was contractually absorbed via the Supply, Facilitation, Guaranty, and transition-services agreements (gap_mitigated = yes). gap_56 = 0: neither the operating processes nor the organization/workforce transferred to Micron \\u2014 both remained coherently together inside standalone Inotera (\\\"Inotera runs its own manufacturing,\\\" employees not transferred), so there is no T5-without-T6 mismatch at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"read-only\",\n\"sigma_T3\": \"read-only\",\n\"sigma_T4\": \"read-only\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"read-only\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a joint venture where Micron acquired a minority stake in Inotera and shared control with NTC. The product (T4), processes (T5), and organization (T6) all remained within Inotera, with Micron and NTC taking output via supply agreements. Because the operational layers remained together inside the JV entity, there is no structural mismatch (gap_45=0, gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing output rights crossed contractually, with Micron entitled to purchase roughly 50% of Inotera’s DRAM output, while the slice states that the manufacturing operation remained inside Inotera and did not move to Micron; this documents a product-versus-process split at closing. That split was contractually absorbed through the Supply Agreement, Facilitation Agreement, back-end services agreement, and transition services agreement. No gap_56 is documented because Inotera’s operating organization remained with its manufacturing processes, while shared governance, officer-nomination rights, technology transfer, and joint development arrangements aligned those processes with the continuing organization.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "read-only",
+    "sigma_T3": "null",
+    "sigma_T4": "read-only",
+    "sigma_T5": "read-only",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

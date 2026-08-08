@@ -1,0 +1,58 @@
+{
+  "case_id": "P207",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No impairment; Snyder's-Lance trademarks carried at $620M/$350M/$318M/$292M with fair value \"significantly exceeded\" carrying value (FY2022); $295M dedicated cost synergies in effect",
+      "rationale": "p4=0: The slice documents ongoing product/operations integration (SAP implementation, manufacturing-network consolidation including the Toronto facility transition, warehouse/distribution optimization) proceeding as planned toward synergy targets, with no documented product-line/operations incoherence or disruption — brands were absorbed into the Snacks segment and their trademarks were fully supported by fair value with no impairment. p5=0: There is no documented operations-vs-organization/culture fracture; integration disclosures describe continued execution of a cost-transformation program and legal-entity reorganization without any reported organizational breakdown, attrition, or management/culture conflict. The absence of divestiture, impairment, or any documented disruption supports coding both pathways as not-documented (0)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill or trademark impairment charge",
+      "rationale": "The slice documents ongoing integration efforts, such as SAP implementation and manufacturing network consolidation, but describes them as part of a successful cost-transformation program targeting $295 million in synergies, rather than realized product/process disruptions (p4_pathway = 0). Furthermore, there is no documented evidence of cultural clashes, management walkouts, or organizational fracture hindering the integration of operations (p5_pathway = 0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': \"$0 Snyder's-Lance-related goodwill or trademark impairment in FY2021-FY2022\"}",
+      "rationale": "{'type': 'string', 'enum': 'The FY2022 filing documents continued SAP implementation, manufacturing-network changes, and warehouse and distribution optimization, but does not report that acquired products could not be aligned with those processes; therefore p4 is 0. Continued legal-entity reorganization and integration activity is documented, but no breakdown between operations and management, employees, or culture is reported; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"No impairment; Snyder's-Lance trademarks carried at $620M/$350M/$318M/$292M with fair value \\\"significantly exceeded\\\" carrying value (FY2022); $295M dedicated cost synergies in effect\", \"rationale\": \"p4=0: The slice documents ongoing product/operations integration (SAP implementation, manufacturing-network consolidation including the Toronto facility transition, warehouse/distribution optimization) proceeding as planned toward synergy targets, with no documented product-line/operations incoherence or disruption \\u2014 brands were absorbed into the Snacks segment and their trademarks were fully supported by fair value with no impairment. p5=0: There is no documented operations-vs-organization/culture fracture; integration disclosures describe continued execution of a cost-transformation program and legal-entity reorganization without any reported organizational breakdown, attrition, or management/culture conflict. The absence of divestiture, impairment, or any documented disruption supports coding both pathways as not-documented (0).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill or trademark impairment charge\",\n  \"rationale\": \"The slice documents ongoing integration efforts, such as SAP implementation and manufacturing network consolidation, but describes them as part of a successful cost-transformation program targeting $295 million in synergies, rather than realized product/process disruptions (p4_pathway = 0). Furthermore, there is no documented evidence of cultural clashes, management walkouts, or organizational fracture hindering the integration of operations (p5_pathway = 0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$0 Snyder's-Lance-related goodwill or trademark impairment in FY2021-FY2022\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The FY2022 filing documents continued SAP implementation, manufacturing-network changes, and warehouse and distribution optimization, but does not report that acquired products could not be aligned with those processes; therefore p4 is 0. Continued legal-entity reorganization and integration activity is documented, but no breakdown between operations and management, employees, or culture is reported; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

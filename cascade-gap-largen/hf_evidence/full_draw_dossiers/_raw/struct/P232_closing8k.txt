@@ -1,0 +1,413 @@
+ 
+ 8-K
+ 1
+ d614210d8k.htm
+ 8-K
+
+ 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ Current
+Report Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (Date of Earliest Event Reported) August 24, 2018 
+ 
+ Brookfield Property REIT Inc. 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 1-34948 
+ 
+ 27-2963337 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (I.R.S. Employer 
+ Identification Number) 
+ 250 Vesey Street, 15th Floor, New York, NY 10281 
+ (Address of principal executive offices) (Zip Code) 
+ (212) 417-7000 
+ (Registrant&#146;s telephone number, including area code) 
+ GGP Inc. (Former name or
+former address, if changed since last report) 
+ Check the appropriate box below
+if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act
+(17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this
+chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+ Emerging growth company &#9744; If an emerging
+growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.
+ &#9744; 
+
+ Introductory Note. 
+ This Current Report on Form 8-K is being filed in connection with the consummation of the transactions
+(the &#147; Transactions &#148;) contemplated by that certain Agreement and Plan of Merger, dated as of March 26, 2018 (as amended by the Amendment to Agreement and Plan of Merger, dated June 25, 2018, the &#147; Merger
+Agreement &#148;) among Brookfield Property Partners L.P., a Bermuda exempted limited partnership (&#147; BPY &#148;), Goldfinch Merger Sub Corp., a Delaware corporation and an indirect, wholly owned subsidiary of BPY (&#147; Acquisition
+Sub &#148;), and GGP Inc. (&#147; GGP &#148;), including the merger of Acquisition Sub with and into GGP (the &#147; Merger &#148;), with GGP surviving the Merger as the renamed Brookfield Property REIT Inc. (&#147; BPR &#148;) and
+an indirect subsidiary of BPY, which became effective at 8:20 a.m. Eastern Time on August 28, 2018 (the &#147; Merger Effective Time &#148;). 
+ Prior to the Merger, the parties to the Merger Agreement (and certain of their affiliates, as applicable) have consummated certain of the
+other Transactions, including, among others: 
+
+ &#149; 
+ 
+ the filing of a Certificate of Designations, Preferences and Rights of Series B Preferred Stock of GGP (the
+&#147; Series B Designations &#148;) with the Secretary of State of the State of Delaware on July 27, 2018 authorizing a new series of preferred stock (the &#147; Series B Preferred Stock &#148;) of GGP and the
+subsequent exchange of shares of GGP common stock, par value $0.01 per share (&#147; GGP Common Stock &#148;) held by certain affiliates of BPY that entered into a voting agreement with GGP to, among other things, vote in favor of the adoption
+of the Merger Agreement (the &#147; Voting Parties &#148;) for shares of Series B Preferred Stock (the &#147; Class B Exchange &#148;) on the terms and subject to the conditions set forth in the Amended and Restated
+Class B Stock Exchange Agreement, dated as of June 25, 2018, among GGP and the Voting Parties (the &#147; Class B Exchange Agreement &#148;); 
+
+ &#149; 
+ 
+ the declaration of a special dividend (the &#147; Pre-Closing 
+Dividend &#148;) payable to the holders of record of GGP Common Stock as of the end of trading on the New York Stock Exchange (the &#147; NYSE &#148;) on July 27, 2018 following the Class B Exchange other than the Voting
+Parties (the &#147; Unaffiliated GGP Common Stockholders &#148;) (not including holders of GGP Common Stock that are subject to vesting or forfeiture conditions but including deemed holders of GGP Common Stock in respect of any GGP In-the-Money Options (as defined below)), consisting of either cash or equity, and if equity then either in the form of class A stock, par value $0.01 per share, of BPR
+(&#147; Class A Stock &#148;) or limited partnership units of BPY (&#147; BPY Units &#148;), at the election of holders and subject to proration pursuant to the terms set forth in the Merger Agreement, and which became
+payable on August 27, 2018; 
+
+ &#149; 
+ 
+ the filing of a Certificate of Correction to GGP&#146;s certificate of incorporation originally dated
+May 17, 2017 (the &#147; Certificate of Correction &#148;) with the Secretary of State of the State of Delaware on August 24, 2018 pursuant to Section 103(f) of the Delaware General Corporate Law, as amended, with
+retroactive effectiveness to May 17, 2017; 
+
+ &#149; 
+ 
+ the amendment and restatement of GGP&#146;s certificate of incorporation (the &#147; Charter
+Amendments &#148;) to, among other things, authorize the issuance of Class A Stock, class B-1 stock, par value $0.01 per share
+(&#147; Class B-1 Stock &#148;) and class C Stock, par value $0.01 per share (&#147; Class C Stock &#148;) and to provide the terms governing the Series B
+Preferred Stock and Class B-1 Stock (collectively, &#147; Class B Stock &#148;), the amendment and restatement of GGP&#146;s bylaws (the &#147; Bylaws Amendments &#148;) and
+the amendment and restatement of the agreement of limited partnership of GGP Operating Partnership, LP (&#147; GGPOP &#148;), a subsidiary of GGP that was renamed BPR OP, LP (&#147; BPROP &#148;) (the &#147; Amended BPR OP Partnership
+Agreement &#148;), in each case, effective as of August 27, 2018, at approximately 8:00 a.m. Eastern time (the &#147; Charter Amendments Effective Time &#148;), which, among other things, resulted in shares of Series B Preferred
+Stock remaining outstanding but without the Series B Designations being in effect and with the Series B Preferred Stock, referred to thereafter as Class B Stock, having the rights, powers, preferences and other terms given to
+Class B Stock in the Charter Amendments; and 
+
+ &#149; 
+ 
+ certain requested transactions with certain of GGP&#146;s subsidiaries, including a series of recapitalization
+and financing transactions and joint venture asset sales (the &#147; Requested Transactions &#148;), a description of which can be found in the section entitled &#147;The Merger Agreement&#151;Covenants and Agreements&#151;The Pre-Closing Transactions&#148; in GGP&#146;s Registration Statement on Form S-4 (File No. 333-224593), as amended (the
+&#147; Registration Statement &#148;), initially filed with the U.S. Securities and Exchange Commission (the &#147; Commission &#148;) on May 2, 2018 and declared effective by the Commission on June 26, 2018, and
+incorporated herein by reference. Pursuant to the Merger Agreement, at the Merger Effective Time: (a) each issued
+and outstanding share of GGP Common Stock (other than (i) shares of GGP Common Stock owned by BPY, Acquisition Sub or GGP, if any, in each case immediately prior to the Merger Effective Time (&#147; Cancelled Shares &#148;), which were
+cancelled and extinguished without any conversion thereof or consideration paid therefor, (ii) shares of GGP Common Stock that were owned immediately prior to the Merger Effective Time by stockholders who had perfected and not withdrawn a
+demand for appraisal rights pursuant to Delaware law with respect to such shares (collectively, the &#147; Dissenting Shares &#148;), and (iii) shares of GGP restricted stock (&#147; GGP Restricted Stock &#148;), which were canceled
+or converted as described in the Merger Agreement), were cancelled and extinguished and automatically converted into the right to receive cash from BPY in an amount, without interest, equal to $0.312 per share (the &#147; Per Share Merger
+Consideration &#148;); and (b) each issued and outstanding share of 6.375% series A cumulative perpetual preferred stock, par value $0.01 per share of GGP (&#147; Pre-Existing 
+Series A Preferred Stock &#148;), was converted into one share of 6.375% series A cumulative redeemable preferred stock of BPR (&#147; Series A Preferred Stock &#148;). 
+ Also pursuant to the Merger Agreement, following the Merger Effective Time, BPY issued BPY Units in exchange for shares of Class A Stock
+distributed as the Pre-Closing Dividend held by Unaffiliated GGP Common Stockholders who made an election or who were deemed to have made an election to receive BPY Units (the &#147; BPY Unit
+Exchange &#148;). Each share of Class A Stock that BPY received automatically converted into Class B-1 Stock at a ratio equal to the per share fair market value of the Class A Stock divided
+by the per share liquidation amount of Class B Stock. The foregoing description of the Certificate of Correction, the Charter
+Amendments, the Bylaws Amendments, the Amended BPR OP Partnership Agreement, the Class B Exchange Agreement, the Requested Transactions, the Merger Agreement and the Merger does not purport to be complete and is subject to, and qualified in its
+entirety by, the full text of the Certificate of Correction, the Third Amended and Restated Certificate of Incorporation of GGP (the &#147; Amended Charter &#148;), the Fifth Amended and Restated Bylaws of BPR (the &#147; Amended
+Bylaws &#148;), the Amended BPR OP Partnership Agreement, the Class B Exchange Agreement, the Merger Agreement in its original form, and the Merger Agreement Amendment, each filed as Exhibit 3.1, Exhibit 3.2, Exhibit 3.4,
+Exhibit 10.1, Exhibit 10.2, Exhibit 2.1 and Exhibit 2.2, respectively, to this Current Report on Form 8-K, which are incorporated herein by reference. 
+ The issuance of the Class A Stock and Series A Preferred Stock was registered under the Securities Act of 1933, as amended (the
+&#147; Securities Act &#148;), pursuant to GGP&#146;s Registration Statement. This Current Report is being filed for the purpose of establishing BPR as the successor issuer of GGP pursuant to Rule 12g-3 
+under the Securities Exchange Act of 1934, as amended (the &#147; Exchange Act &#148;). Pursuant to Rule 12g-3(a) under the Exchange Act, the shares of Class A Stock and Series A Preferred Stock are
+deemed registered under Section 12(b) of the Exchange Act. Item 1.01 Entry into a Material Definitive Agreement. 
+ Amended BPR OP Partnership Agreement 
+ In connection with the consummation of the Transactions, on August 27, 2018, GGP Real Estate Holding II, Inc., the general partner of
+GGPOP, amended and restated GGPOP&#146;s limited partnership agreement to, among other things, authorize the issuance of GGPOP series K preferred units and amend and restate the terms of GGPOP series L preferred units, which will entitle
+the holders thereof to distributions identical to those paid on Class A Stock and Class B Stock, respectively. The Amended BPR OP Partnership Agreement will effect a number of changes to the governance of GGPOP that reflect the
+recapitalization and anticipated consummation of the Transactions. 
+
+ A summary of the Amended BPR OP Partnership Agreement can be found in the section entitled
+&#147;The Merger Agreement&#151;Structure and Timing of the Transactions&#151;The Partnership Agreement Amendment and Restatement&#148; in GGP&#146;s Registration Statement, and is filed as part of Exhibit 99.1 to this Current Report on Form 8-K and incorporated herein by reference. The summary of the Amended BPR OP Partnership Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the
+Amended BPR OP Partnership Agreement, filed as Exhibit 10.1 to this Current Report on Form 8-K, which is incorporated herein by reference. 
+ Master Services Agreement In
+connection with the consummation of the Transactions, BPR and GGPOP (the &#147; Service Recipients &#148;) entered into a Master Services Agreement, dated August 27, 2018 (the &#147; Master Services Agreement &#148;), among
+Brookfield Asset Management Inc., a corporation existing under the laws of the Province of Ontario (&#147; BAM &#148;), BPR, GGPOP, Brookfield Global Property Advisor Limited, a company incorporated under the laws of England, Brookfield
+Property Group LLC, a Delaware limited liability company and Brookfield Asset Management Private Institutional Capital Adviser US, LLC, a Delaware limited liability company. Pursuant to the terms of the Master Services Agreement, certain affiliates
+of BAM (collectively, the &#147; Service Providers &#148;), will provide or arrange for other service providers to provide management and administration services to the Service Recipients. 
+ Pursuant to the Master Services Agreement, the Service Recipients will pay a base management fee to the Service Providers equal to 1.25%
+annually of the total capitalization of the Service Recipients. The base management fee will be calculated and paid quarterly. Pursuant to a letter agreement, dated as of March 26, 2018 (the &#147; Management Fee Letter
+Agreement &#148;), among BAM, BPY and GGP, for the first twelve months following August 27, 2018, BAM has agreed to waive management fees payable by BPR and the incremental management fees BPY would otherwise be required to pay in
+respect of the BPY Units issued in exchange for GGP Common Stock. An affiliate of BAM will also be entitled to receive incentive
+distributions based on an amount by which quarterly distributions on the Class A Stock and GGPOP series K preferred units exceed specified target levels. 
+ Summaries of the Master Services Agreement and the Management Fee Letter Agreement can be found in the sections entitled &#147;Special
+Factors&#151;Governance of BPR Following the Transactions&#151;Master Services Agreement&#148; and &#147;Other Transaction Agreements&#151;The Management Fee Letter Agreement,&#148; respectively, in the Registration Statement, and are filed as part
+of Exhibit 99.1 to this Current Report on Form 8-K and incorporated herein by reference. The summaries of the Master Services Agreement and Management Fee Letter Agreement do not purport to be complete
+and are qualified in their entirety by reference to the full text of the Master Services Agreement and the Management Fee Letter Agreement, each filed as Exhibit 10.3 and 10.4, respectively, to this Current Report on Form 8-K, which are incorporated herein by reference. Joint Governance Agreement 
+ BPR, BPY, Brookfield Property Partners Limited, a Bermuda exempted company and the general partner of BPY (the &#147; BPY General
+Partner &#148;), and BP US REIT LLC, a Delaware limited liability company (formerly known as Brookfield Properties, Inc., a Delaware corporation) (&#147; BPUS &#148;), entered into a joint governance agreement, dated August 28, 2018
+(the &#147; Joint Governance Agreement &#148;), intended to facilitate the governance of BPR and BPY. Among other things, the Joint Governance Agreement grants BPUS the right to designate candidates to be nominated for election to each
+directorship subject to election at any meeting of BPR stockholders held for the election of directors. A summary of the Joint Governance
+Agreement can be found in the section entitled &#147;Special Factors&#151;Governance of BPR Following the Transactions&#151;Joint Governance Agreement&#148; in the Registration Statement, and is filed as part of Exhibit 99.1 to this Current
+Report on Form 8-K and incorporated by reference herein. The summary of the Joint Governance Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the
+Joint Governance Agreement, filed as Exhibit 10.5 to this Current Report on Form 8-K, which is incorporated herein by reference. 
+
+ New Senior Secured Credit Facilities 
+ On August 24, 2018, Brookfield Retail Holdings VII Sub 3 LLC, and on August 27, 2018 (the &#147; Charter Closing Date &#148;),
+BPR, GGP Nimbus, LLC, GGP Limited Partnership LLC, BPR OP, LP, GGSI SellCo, LLC, GGPLP Real Estate 2010 Loan Pledgor Holding, LLC, GGPLPLLC 2010 Loan Pledgor Holding, LLC, GGPLP 2010 Loan Pledgor Holding, LLC, and GGPLP L.L.C. (each, a
+&#147;Borrower&#148;, and collectively, the &#147; Borrowers &#148;), entered into a Credit Agreement, dated as of August 24, 2018 (the &#147; Credit Agreement &#148;) with a syndicate of lenders, Morgan Stanley Senior Funding, Inc.,
+as term B loan agent, and Wells Fargo Bank, National Association, as administrative agent (the &#147; Administrative Agent &#148;), in connection with the Transactions, a copy of which is filed as Exhibit 4.1 to this Current Report on Form 8-K and is incorporated herein by reference. The Credit Agreement provides for a term A-1 loan facility (the &#147; Term A-1 
+Facility &#148;) in an aggregate principal amount of $900,000,000, a term A-2 loan facility (the &#147; Term A-2 Facility &#148;) in an aggregate principal
+amount of $2,000,000,000, a term B loan facility (the &#147; Term B Facility &#148;) in an aggregate principal amount of $2,000,000,000 and a revolving credit facility (the &#147; Revolving Facility &#148;, and, together with the Term A-1 Facility and the Term A-2 Facility, the &#147; Credit Facilities &#148;) with an initial aggregate commitment of $1,500,000,000. The Term A-1 Facility, the Term A-2 Facility and the Term B Facility were fully funded on the Charter Closing Date. Revolving loans in an aggregate principal amount of $217,000,000
+were drawn under the Revolving Facility on the Charter Closing Date. The obligations of each Borrower under the Credit Facilities are
+guaranteed by each other Borrower and by GGP Real Estate Holding I, Inc., GGP Real Estate Holding II, Inc., General Growth Services, Inc. and GGPLP Real Estate LLC (collectively, the &#147; Guarantors &#148; and, together with the Borrowers,
+the &#147; Loan Parties &#148;). The obligations of the Loan Parties under the Credit Facilities are secured on a first priority
+basis on substantially all assets of the Loan Parties, subject to customary exceptions and limitations, including but not limited to a prohibition on any pledges of equity that are not expressly permitted by certain contracts, including loan
+agreements, of subsidiaries of the Loan Parties. The Term A-1 Facility is scheduled to mature
+three years after the Charter Closing Date, with an option for BPR to extend such maturity for one additional year subject to customary conditions. The Term A-2 Facility is scheduled to mature five years after
+the Charter Closing Date. The loans under the Term A-1 Facility and the Term A-2 Facility have no scheduled amortization payments during the first three years following
+the Charter Closing Date, and thereafter will amortize quarterly at 5.0% per annum of the original principal amount thereunder. The Term
+B Facility is scheduled to mature seven years after the Charter Closing Date. The loans under the Term B Facility will amortize quarterly at 1.0% per annum of the original principal amount thereunder. 
+ The Revolving Facility is scheduled to mature four years after the Charter Closing Date, with an option for BPR to extend such maturity for
+one additional year subject to customary conditions. The loans and commitments under the Revolving Facility have no scheduled amortization payments or commitment reductions. 
+ The proceeds of the Credit Facilities were used on the Charter Closing Date to fund a portion of the Transactions, to refinance BPR&#146;s
+existing corporate revolving credit facility and to pay transaction costs in connection with the Transactions. After the Charter Closing Date, proceeds of the Revolving Facility are permitted to be used to finance the working capital needs and other
+general corporate purposes of the Loan Parties, their respective subsidiaries and their respective joint ventures, and for any other purpose not prohibited by the Credit Agreement. 
+ Borrowings under the Term A-1 Facility, the Term A-2 Facility
+and the Revolving Facility will bear interest at a per annum rate equal to a &#147;Eurodollar rate&#148; plus a margin ranging from 2.0% to 2.5%, determined by reference to a pricing grid based upon BPR&#146;s total net indebtedness to value ratio.
+
+ Borrowings under the Term B Facility will bear interest at a per annum rate equal to a
+&#147;Eurodollar rate&#148; plus a margin equal to 2.5%. The Credit Agreement contains customary representations and warranties,
+affirmative covenants and negative covenants for similar secured REIT financings. The obligations of the Borrowers under the Credit Agreement may be accelerated upon customary events of default, including
+ non-payment of principal or interest, breaches of covenants, cross-defaults to other material debt and specified bankruptcy events. 
+ Item 1.02 Termination of a Material Definitive Agreement. 
+ In connection with the consummation of the Transactions, on August 28, 2018, the Standstill Agreement, dated as of November 9, 2010,
+by and among GGP, Brookfield Retail Holdings LLC, Brookfield Retail Holdings II LLC, Brookfield Retail Holdings III LLC, Brookfield Retail Holdings IV-A LLC, Brookfield Retail Holdings IV-B LLC, Brookfield Retail Holdings IV-C LLC, Brookfield Retail Holdings IV-D LLC, Brookfield Retail Holdings V LP and any Brookfield
+Consortium Members who are party thereto (the &#147; Standstill Agreement &#148;) was terminated in accordance with its terms. The
+Standstill Agreement is more fully described in GGP&#146;s Current Report on Form 8-K filed with the Commission on November 12, 2010, which description is incorporated herein by reference. The
+description of the Standstill Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the Standstill Agreement, filed as Exhibit 10.6, to this Current Report on Form 8-K, which is incorporated herein by reference. In connection with the consummation of the
+Transactions, on August 27, 2018, the Fourth Amended and Restated Credit Agreement dated as of October 30, 2015, by and among others, GGP, GGP Limited Partnership LLC, GGP Nimbus, LLC, GGPLP Real Estate 2010 Loan Pledgor Holding, LLC,
+GGPLPLLC 2010 Loan Pledgor Holding, LLC, GGPLP2010 Loan Pledgor Holding, LLC, GGPLP L.L.C. and BPROP, each as borrowers, the lenders party thereto and Wells Fargo Bank, National Association, as administrative agent, and the commitments to extend
+credit thereunder were terminated and all obligations outstanding thereunder were repaid in full, in each case pursuant to a payoff letter dated August 27, 2018. 
+ Item 2.01 Completion of Acquisition or Disposition of Assets. 
+ The disclosure set forth in the section above entitled &#147;Introductory Note&#148; is incorporated herein by reference. 
+ Item 3.01 Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+ In connection with the consummation of the Merger, shares of GGP Common Stock and the Pre-Existing 
+Series A Preferred Stock were suspended from trading on the NYSE effective as of the opening of trading on August 28, 2018. At BPR&#146;s request, on August 28, 2018, the NYSE filed with the U.S. Securities and Exchange
+Commission (the &#147; SEC &#148;) a Form 25 on BPR&#146;s behalf to commence the process of withdrawing shares of GGP Common Stock and the Pre-Existing Series A Preferred Stock from listing on the
+NYSE and terminating the registration of such shares under Section 12(b) of the Exchange Act. BPR intends to file a Form 15 with the SEC to terminate the registration of the shares of GGP Common Stock and the
+ Pre-Existing Series A Preferred Stock under the Exchange Act and suspend its reporting obligations with respect to such shares under Section 15(d) of the Exchange Act. 
+ On August 24, 2018, BPR was notified that its Class A Stock and Series A Preferred Stock have been approved for listing on The
+NASDAQ Global Select Market (the &#147; NASDAQ &#148;). Pursuant to Rule 12g-3(a) under the Exchange Act, the shares of Class A Stock and Series A Preferred Stock, as successor issuer, are deemed
+registered under Section 12(b) of the Exchange Act. Effective on August 28, 2018, the Class A Stock and Series A Preferred Stock have begun trading on the NASDAQ under the ticker symbols &#147;BPR&#148; and &#147;BPRAP,&#148;
+respectively. 
+
+ The disclosure set forth in the section above entitled &#147;Introductory Note&#148; is
+incorporated herein by reference. Item 3.03 Material Modification to Rights of Security Holders. 
+ Pursuant to the Merger Agreement: 
+
+ &#149; 
+ 
+ At the Charter Amendment Effective Time, each option to purchase shares of GGP Common Stock that was granted
+prior to January 1, 2018 and had an exercise price that was less than the aggregate value of the Pre-Closing Dividend and Per Share Merger Consideration (&#147; GGP In-the-Money Option &#148;) that was outstanding immediately prior to the Charter Amendments Effective Time, whether vested or unvested, was cancelled and terminated and was deemed to be entitled to
+receive a number of shares of GGP Common Stock calculated in accordance with the Merger Agreement that were deemed to have elected to receive cash for purposes of the Pre-Closing Dividend, and were entitled to
+receive the Pre-Closing Dividend and the Per Share Merger Consideration, in each case less applicable withholding taxes. 
+
+ &#149; 
+ 
+ Immediately prior to the Merger Effective Time, each option to purchase shares of GGP Common Stock that was
+granted in 2018 and/or had an exercise price that was equal to or greater than the aggregate value of the Pre-Closing Dividend and Per Share Merger Consideration (&#147; GGP Out-of-the-Money Option &#148;), whether vested or unvested, was converted into an option in respect of BPY Units that generally has the same terms and conditions as
+applied to the underlying GGP Out-of-the-Money Option except that it fully vests and becomes exercisable upon a termination of
+the holder&#146;s employment without &#147;cause&#148; (as defined in the applicable award agreement) or for &#147;good reason&#148; (as defined in the Merger Agreement) (an &#147; Involuntary Termination &#148;) during the two-year period following the Merger Effective Time. 
+
+ &#149; 
+ 
+ At the Merger Effective Time, each share of GGP Restricted Stock granted prior to January 1, 2018 was
+cancelled and converted (with any performance conditions deemed met at target) into the right to receive cash, less applicable withholding taxes, and a number of shares of restricted Class A Stock, which cash and restricted share award will
+have an aggregate value determined based on the Pre-Closing Dividend and the Per Share Merger Consideration. 
+
+ &#149; 
+ 
+ At the Merger Effective Time, each share of GGP Restricted Stock granted during 2018 was cancelled and converted
+(with any performance conditions deemed met at target) into the right to receive a number of shares of converted restricted Class A Stock (&#147; Converted Restricted Stock &#148;), which Converted Restricted Stock will have an aggregate
+value determined based on the Pre-Closing Dividend and the Per Share Merger Consideration. The award of Converted Restricted Stock generally has the same terms and conditions as applied to the original award
+of GGP Restricted Stock, except that (i) shares of Converted Restricted Stock in respect of shares of GGP Restricted Stock subject to performance conditions are subject only to time-based vesting and (ii) each share of Converted Restricted
+Stock will fully vest upon an Involuntary Termination during the two-year period following the Merger Effective Time. 
+ The disclosure set forth in the section above entitled &#147;Introductory Note&#148; is incorporated herein by reference. 
+ Item 5.01 Change in Control of Registrant. 
+ At the Merger Effective Time, a change of control of BPR occurred and BPR became an indirect subsidiary of BPY. BPY and its affiliates now own,
+directly or indirectly, 87% of the voting securities of BPR. Based on closing prices on the NASDAQ on August 28, 2018, the aggregate implied value of the consideration paid by BPY in connection with the Transactions was approximately
+$14.4 billion, including approximately $5.2 billion in BPY Units and Class A Stock and approximately $9.3 billion in cash. 
+
+ The source of the funds for the consideration paid by BPY in the Merger to GGP&#146;s
+stockholders was from: (a) cash proceeds from the sales of certain joint venture interests and assets in the aggregate of approximately $4.1 billion by five separate investor groups in connection with the Requested Transactions, and
+(b) debt financing provided by a syndicate of lenders arranged by a group of joint lead arrangers including Wells Fargo Securities, LLC, Morgan Stanley Senior Funding, Inc., Deutsche Bank Securities Inc., Royal Bank of Canada, Barclays Bank
+PLC, Merrill Lynch, Pierce, Fenner & Smith Incorporated, HSBC Securities (USA) Inc., Sumitomo Mitsui Banking Corporation, TD Securities (USA) LLC and Citigroup Global Markets, Inc., including a $1.5 billion senior secured revolving
+credit facility, a $900 million senior secured term A-1 loan facility, a $2.0 billion senior secured term A-2 loan facility and a $2.0 billion senior
+secured term B loan facility, and in addition, approximately $360 million in property-level financing secured by three assets. The
+disclosure set forth in the section above entitled &#147;Introductory Note&#148; and Item 1.01 is incorporated herein by reference. 
+ Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements to Certain
+Officers. Effective as of the date hereof, but for the avoidance of doubt, after the Merger Effective Time, all of the former officers
+of GGP ceased to act as officers of BPR. In addition, effective as of the Merger Effective Time, Sandeep Mathrani, Richard B. Clark, Mary Lou Fiala, J. Bruce Flatt, Janice R. Fukakusa, John K. Haley, Daniel B. Hurwitz, Brian W. Kingston and
+Christina M. Lofgren resigned from their roles as directors of GGP. None of these resignations were as a result of any disagreement with GGP, its management or its board of directors. 
+ Following the Merger Effective Time, BPR has no employees and relies on the Service Providers to conduct its operations. Brian W. Kingston and
+Bryan K. Davis in their roles at BPR&#146;s Service Providers are expected to perform similar functions for BPR as would typically be performed by a principal executive officer and principal financial officer, respectively. 
+ Mr. Kingston, age 45, is Chief Executive Officer of Brookfield Property Group LLC (&#147; BPG &#148;). He is also a Senior Managing
+Partner of BAM, which he joined in 2001. From 2008 to 2013 Mr. Kingston led BAM&#146;s Australian business activities, holding the positions of Chief Executive Officer of Brookfield Office Properties Australia, Chief Executive Officer of Prime
+Infrastructure and Chief Financial Officer of Multiplex. Mr. Kingston served as a director on the GGP board from August 2013 until his resignation effective as of the Merger Effective Time. 
+ Mr. Davis, age 45, is Chief Financial Officer of BPG. Prior to that, he was Chief Financial Officer of BAM&#146;s global office property
+company for eight years and spent five years in senior finance roles. Mr. Davis also held various senior finance positions including Chief Financial Officer of Trilon Financial Corporation, BAM&#146;s financial services subsidiary. Prior to
+joining BAM in 1999, Mr. Davis was involved in providing restructuring and advisory services at Deloitte & Touche LLP. 
+ Prior to the Merger Effective Time, the directors of the BPY General Partner were approved to be directors of BPR, effective as of the Merger
+Effective Time. Accordingly, Jeffrey M. Blidner, Dr. Soon Young Chang, Richard B. Clark, Omar Carneiro da Cunha, Stephen DeNardo, Louis Joseph Maroun and Lars Rodert became the directors of BPR. A description of the incoming directors&#146;
+backgrounds is set forth below. Jeffrey M. Blidner is a director on the BPY General Partner board. Mr. Blidner is a Vice
+Chairman of BAM and is responsible for its private client business, including strategic planning and fundraising. Mr. Blidner is also Chief Executive Officer of BAM&#146;s Private Funds Group, Chairman and a director of Brookfield Renewable
+Partners L.P. and a director of BAM, Brookfield Infrastructure Partners L.P. and Canary Wharf. Prior to joining Brookfield in 2000, Mr. Blidner was a senior partner at a Canadian law firm. 
+
+ Dr. Soon Young Chang is a director on the BPY General Partner
+board. Dr. Chang is a member of the board of directors of Dubai World. Dr. Chang serves as Senior Advisor to the Investment Corporation of Dubai, providing strategic counsel and lending his global perspective to the investment arm of the
+Dubai Government. Dr. Chang is the founder and chairman of Midas International Asset Management Company, an international asset management fund which manages over $5 billion. He is also a founding partner of Sentinel Advisor, a New
+York-based arbitrage fund. Dr. Chang has served as an advisor to a variety of financial institutions, including Korea National Pension Corporation, Hyundai International Merchant Bank and Templeton-Ssangyong Investment Trust Company.
+Dr. Chang received his Master&#146;s and Doctoral degrees from the George Washington University in the United States and has authored many books and articles on the subject of financial engineering. 
+ Richard B. Clark served as a director on the GGP board from November 2010 until his resignation effective as of the Merger Effective
+Time. Mr. Clark serves as a Senior Managing Partner of BAM and Chairman of the BPY board and BPG, the real estate investment arm of BAM. Mr. Clark has been employed by BAM and its predecessors since 1984 in various senior roles, including
+Chief Executive Officer of BPG, BPY and Brookfield Office Properties Inc. Mr. Clark holds a business degree from the Indiana University of Pennsylvania. 
+ Omar Carneiro da Cunha is a director on the BPY General Partner board. Mr. Cunha is a Senior Partner with Dealmaker Ltd., a
+consultancy and M&A advisory firm, with a focus in telecommunications, information technology, oil & gas and retail, and has also been a Senior Partner of BOND Consultoria Empresarial e Participacoes since 1994. He was the Chairman of
+&#147;Bob&#146;s&#148;, a Brazilian fast food company, from 1995 to 2008, a director of the Energisa Group since 1996, and a director of Grupo Libra since 2010. In 2005, Mr. Cunha was the Deputy Chairman and Chief Executive Officer of VARIG
+Brazilian Airline. From 1995 to 1998, Mr. Cunha was the President of AT&T Brasil and a member of the Management Committee of AT&T International. Prior to that, Mr. Cunha worked for 27 years in Brazil and abroad for the Royal
+Dutch/Shell Group, and was President of Shell Brasil, Billiton Metals and Shell Quimica from 1991 to 1994. Mr. Cunha is currently a member of the board of Cultura Inglesa S/A and of the American Chamber of Commerce for Brazil. 
+ Stephen DeNardo is a director on the BPY General Partner board. Mr. DeNardo is currently managing director and president and CEO
+of RiverOak Investment Corp., LLC and has held this position since 1999. Mr. DeNardo has held a license as a Certified Public Accountant since 1978 and has a B.S. in Accounting from Fairleigh Dickinson University. 
+ Louis Joseph Maroun is a director on the BPY General Partner board. Mr. Maroun is the Founder and Chairman of Sigma Real Estate
+Advisors and Sigma Capital Corporation, which specializes in international real estate advisory services. Prior to this role, Mr. Maroun was the Executive Chairman of ING Real Estate Canada, and held executive positions in a number of real
+estate companies where he was responsible for overseeing operations, real estate transactions, asset and property management, as well as many other related functions. Mr. Maroun also is on the board of directors of Brookfield Renewable Energy
+Partners L.P., and Summit Industrial Income REIT. Mr. Maroun graduated from the University of New Brunswick in 1972 with a Bachelor&#146;s degree, followed by a series of post graduate studies and in January of 2007, after a long and successful
+career in investment real estate, Mr. Maroun was elected to the position of Fellow of the Royal Institute of Chartered Surveyors. 
+ Lars Rodert is a director on the BPY General Partner board. Mr. Rodert is the founder and CEO of &Ouml;stV st Capital
+Management (&#147; OVCM &#148;). Prior to OVCM, Mr. Rodert spent 11 years as a Global Investment Manager for IKEA Treasury. Mr. Rodert is a director of PCCW Limited, an information and communications technology company.
+Mr. Rodert holds a Master of Science Degree in Business and Economics from Stockholm University. The audit committee of BPR is now
+comprised of Messrs. DeNardo, Rodert and Maroun, and the governance and nominating committee of BPR is now comprised of Messrs. Carneiro da Cunha, Rodert and Maroun. BPR is a &#147;controlled company&#148; within the meaning of the NASDAQ corporate
+governance requirements and has elected to not have a compensation committee. Item 5.03 Amendment to Articles of Incorporation or Bylaws; Change
+in Fiscal Year. The disclosure set forth in the section above entitled &#147;Introductory Note&#148; is incorporated herein by
+reference. 
+
+ On August 28, 2018 after the Merger Effective Time, BPR filed an amendment to the
+Amended Charter (the &#147; Post-Close Charter Amendment &#148;) to reduce the vote per share of each share of Class B Stock and Class C Stock to one vote per share. The Post-Close Charter Amendment became effective upon filing, and a
+copy of such amendment is filed as Exhibit 3.3 to this Current Report on Form 8-K and is incorporated herein by reference. 
+ Item 7.01 Regulation FD Disclosure. 
+ On August 28, 2018, BPR&#146;s board of directors declared a Class A Stock dividend of $0.315 per share payable on September 28,
+2018, to stockholders of record on August 31, 2018. BPR&#146;s board of directors has authorized the repurchase of up to the greater
+of 5% of the shares of Class A Stock that are issued and outstanding or 10% of the Class A Stock public float over the next 12 months as market conditions and BPR&#146;s liquidity warrant. Repurchases may be made through open market
+purchases, privately negotiated transactions, structured or derivative transactions, including accelerated stock repurchase transactions, or other methods of acquiring shares and pursuant to Rule 10b5-1 of the
+Securities Act, from time to time as permitted by applicable securities laws and other legal requirements. The information set forth in
+this Item 7.01 shall not be deemed &#147;filed&#148; for purposes of Section 18 of the Exchange Act, nor shall it be deemed incorporated by reference in any filing by BPR under the Securities Act of 1933, as amended, or the Exchange Act, except
+as shall be expressly set forth by specific reference in such filing. Item 9.01 Financial Statements and Exhibits. 
+ (a) Financial Statements of Businesses Acquired. The financial statements required pursuant to this Item 9.01(a) in relation to the Merger will
+be filed by amendment to this Current Report on Form 8-K no later than 71 calendar days after the date by which this Current Report is required to be filed. 
+ (b) Pro Forma Financial Information. The pro forma financial information required pursuant to this Item 9.01(b) in relation to the Merger will
+be filed by amendment to this Current Report on Form 8-K no later than 71 calendar days after the date by which this Current Report is required to be filed. 
+ (d) Exhibits 
+
+ Exhibit Number 
+ 
+ Description 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated as of March 
+26, 2018, by and among Brookfield Property Partners L.P., Goldfinch Merger Sub Corp. and GGP Inc. (incorporated by reference to Exhibit 2.1 to GGP Inc.&#146;s Current Report on Form 
+8-K, filed on March 27, 2018). 
+
+ 2.2 
+ 
+ Amendment to Agreement and Plan of Merger, dated as of June 
+25, 2018, by and among Brookfield Property Partners L.P., Goldfinch Merger Sub Corp. and GGP Inc. (incorporated by reference to Exhibit 2.2 to Amendment No. 2 to GGP 
+Inc.&#146;s Registration Statement on Form S-4 (No. 333-224593), filed on June 25, 2018). 
+
+ 3.1 
+ 
+ Certificate of Correction of the Second Amended and Restated Certificate of Incorporation of GGP Inc. 
+
+ 3.2 
+ 
+ Third Amended and Restated Certificate of Incorporation of GGP Inc. (incorporated by reference to Exhibit 3.1 to GGP Inc.&#146;s Registration
+ Statement on Form 8-A12B, filed on August 27, 2018). 
+
+ Exhibit Number 
+ 
+ Description 
+
+ 3.3 
+ 
+ Certificate of Amendment of Third Amended and Restated Certificate of Incorporation of Brookfield Property REIT Inc. 
+
+ 3.4 
+ 
+ Fifth Amended and Restated Bylaws of Brookfield Property REIT Inc. (incorporated by reference to Exhibit 3.2 to GGP Inc.&#146;s Registration Statement
+ on Form 8-A12B, filed on August 27, 2018). 
+
+ 4.1 
+ 
+ Credit Agreement, dated as of August 
+24, 2018, by and among Brookfield Retail Holdings VII Sub 3 LLC, Brookfield Property REIT Inc., GGP Nimbus, LLC, GGP Limited Partnership LLC, BPR OP, LP, GGSI Sellco, LLC, GGPLP Real Estate 2010 Loan Pledgor Holding, LLC, GGPLPLLC 2010 Loan Pledgor Holding,
+ LLC, GGPLP 2010 Loan Pledgor Holding, LLC, and GGPLP L.L.C., each of the foregoing as the Borrowers, the Lenders party thereto, the Issuing Banks party thereto, the Swingline Lender party thereto, Morgan Stanley Senior Funding, Inc., in its
+capacity as co-administrative agent for the Term Lenders under the Term B Facility and Wells Fargo Bank, National Association, in its capacities as administrative agent and collateral agent for the Lenders.
+
+ 10.1 
+ 
+ Fifth Amended and Restated Agreement of Limited Partnership of BPR OP, LP. 
+
+ 10.2 
+ 
+ Amended and Restated Class B Stock Exchange Agreement, dated as of June 25, 
+2018, by and among GGP Inc. and the parties listed on Exhibit A thereto (incorporated by reference to Exhibit 10.2 to Amendment No. 2 to GGP Inc.&#146;s Registration Statement on Form S-4 (No. 333-224593), filed on June 25, 2018). 
+
+ 10.3 
+ 
+ Master Services Agreement, dated as of August 
+27, 2018, by and among Brookfield Asset Management Inc., Brookfield Property REIT Inc., GGP Operating Partnership, LP, Brookfield Global Property Advisor Limited, Brookfield Property Group LLC and Brookfield Asset Management Private Institutional Capital
+ Adviser US, LLC. 
+
+ 10.4 
+ 
+ Letter Agreement, dated as of March 26, 
+2018, by and between Brookfield Asset Management Inc., Brookfield Property Partners L.P. and GGP Inc. (incorporated by reference to Exhibit 
+10.4 to GGP Inc.&#146;s Current Report on Form 8-K, filed on March 27, 2018). 
+
+ 10.5 
+ 
+ Joint Governance Agreement, dated as of August 
+28, 2018, by and among Brookfield Property REIT Inc., Brookfield Property Partners L.P., Brookfield Property Partners Limited and Brookfield Properties, Inc. 
+
+ 10.6 
+ 
+ Standstill Agreement, dated as of November 9, 
+2010, by and between GGP Inc. (formerly General Growth Properties, Inc.), Brookfield Retail Holdings LLC, Brookfield Retail Holdings II LLC, Brookfield Retail Holdings III LLC, Brookfield Retail Holdings IV-A LLC,
+ Brookfield Retail Holdings IV-B LLC, Brookfield Retail Holdings IV-C LLC, Brookfield Retail Holdings IV-D LLC and Brookfield
+Retail Holdings V LP (incorporated by reference to Exhibit 10.4 to GGP Inc.&#146;s Current Report on Form 8-K, filed on November 12, 2010). 
+
+ 99.1 
+ 
+ Extracts of Amendment No. 2 to GGP Inc.&#146;s Registration Statement on Form S-4 (No. 
+333-224593), filed on June 25, 2018 (all references to the amended GGPOP partnership agreement therein are deemed to refer to the Amended BPR OP Partnership Agreement herein). 
+
+ SIGNATURE 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by
+the undersigned thereunto duly authorized. 
+
+ Brookfield Property REIT Inc. 
+ 
+ Date: August 28, 2018 
+
+ By: 
+ 
+ /s/ Michelle Campbell 
+
+ Name: Michelle Campbell 
+
+ Title: Secretary 
+

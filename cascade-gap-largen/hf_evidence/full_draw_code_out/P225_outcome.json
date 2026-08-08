@@ -1,0 +1,58 @@
+{
+  "case_id": "P225",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "divested CloudLink/IP to RingCentral for $650M (Nov 2021); Oct 2022 uptier credit amendment ($156M new superpriority debt) drawing lender litigation",
+      "rationale": "The slice documents only financial/corporate events within the window — a $650M technology/IP divestiture to RingCentral and a 2022 lender-consented uptier debt amendment that subordinated non-consenting lenders and drew litigation — but no evidence of product/process misalignment (p4) or operations-vs-organization/culture fracture (p5). Because the entity deregistered in December 2018, no audited financial or operational-integration record exists for the ~2021-2023 window, so neither interface pathway can be affirmatively determined. Per the conservative convention, the documented lender dispute is a financing/creditor matter, not documented product/process or process/organization disruption, and the absence of visibility into integration dynamics makes both pathways uncertain rather than 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested CloudLink IP/patents to RingCentral for $650M (~3 yrs)",
+      "rationale": "The slice documents only a 2021 IP/technology asset sale to RingCentral and a 2022 lender uptier/credit-agreement amendment with ensuing litigation; it contains no realized-outcome evidence that acquired products failed to align with operating processes over time, so p4_pathway is 0. Likewise, no sourced material describes operations fracturing against people, management, or culture, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$650 million sale of IP rights and patents to RingCentral in 2021'}",
+      "rationale": "{'type': 'string', 'enum': 'The documented in-window outcomes were a $650 million IP-rights transaction with RingCentral and a 2022 credit-agreement amendment involving new superpriority debt and lender litigation. Neither event documents an acquired-product/operating-process alignment failure (p4) or a fracture between operations and people, management, or culture (p5), so both pathways are coded 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"divested CloudLink/IP to RingCentral for $650M (Nov 2021); Oct 2022 uptier credit amendment ($156M new superpriority debt) drawing lender litigation\", \"rationale\": \"The slice documents only financial/corporate events within the window \\u2014 a $650M technology/IP divestiture to RingCentral and a 2022 lender-consented uptier debt amendment that subordinated non-consenting lenders and drew litigation \\u2014 but no evidence of product/process misalignment (p4) or operations-vs-organization/culture fracture (p5). Because the entity deregistered in December 2018, no audited financial or operational-integration record exists for the ~2021-2023 window, so neither interface pathway can be affirmatively determined. Per the conservative convention, the documented lender dispute is a financing/creditor matter, not documented product/process or process/organization disruption, and the absence of visibility into integration dynamics makes both pathways uncertain rather than 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested CloudLink IP/patents to RingCentral for $650M (~3 yrs)\",\n  \"rationale\": \"The slice documents only a 2021 IP/technology asset sale to RingCentral and a 2022 lender uptier/credit-agreement amendment with ensuing litigation; it contains no realized-outcome evidence that acquired products failed to align with operating processes over time, so p4_pathway is 0. Likewise, no sourced material describes operations fracturing against people, management, or culture, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$650 million sale of IP rights and patents to RingCentral in 2021\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The documented in-window outcomes were a $650 million IP-rights transaction with RingCentral and a 2022 credit-agreement amendment involving new superpriority debt and lender litigation. Neither event documents an acquired-product/operating-process alignment failure (p4) or a fracture between operations and people, management, or culture (p5), so both pathways are coded 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P318",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "Earth Intelligence segment revenue essentially flat (~$1,059m→$1,085m→$1,081m, FY2018-2020); no new goodwill impairment; acquired imagery business retained as one of two remaining segments while acquirer's own MDA business divested for $729m in 2020",
+      "rationale": "For p4 (product/process interface), the slice documents no product-line/operations incoherence for the acquired imagery business over time: Earth Intelligence revenue and Adjusted EBITDA were essentially flat 2018-2020 and its goodwill was judged to exceed carrying value with no new impairment in 2019-2020, so no realized product/process disruption is documented. For p5 (process/organization interface), the filing notes 2018-2019 restructuring/headcount reductions and declining transaction/integration expenses, but nothing specifically documenting operations fracturing against people/management/culture in the acquired business; the divestiture in 2020 was of the acquirer's own original MDA space-robotics unit, not the acquired DigitalGlobe imagery business, which was retained. Absent documented evidence of either interface disruption, both are coded 0. The 2018 consolidated loss, $159m combined goodwill write-down, and WorldView-4 satellite-capability loss are disclosed as pre-window comparative context and are not attributed to a product/process or process/organization integration fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired business retained as Earth Intelligence; revenue flat ~$1.06-1.08bn FY18-20",
+      "rationale": "The slice reports Earth Intelligence (former DigitalGlobe) revenue and Adjusted EBITDA essentially flat across FY2018-2020, with management concluding at the Oct 2020 goodwill test that fair value more likely than not exceeded carrying value and no new Earth Intelligence impairment in 2019-2020; nothing documents product/process-interface incoherence, so p4_pathway=0. Restructuring and headcount-reduction plans plus declining integration expenses are noted company-wide, but no fracture of operations against people/management/culture specific to the acquired business is documented, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Earth Intelligence revenue was $1.081 billion in 2020 versus $1.059 billion in 2018'}",
+      "rationale": "{'type': 'string', 'enum': 'No product/process-interface disruption is documented: Earth Intelligence remained a reportable segment, with essentially flat revenue and Adjusted EBITDA during 2018-2020 and no new goodwill impairment in 2019-2020. The disclosed restructuring, headcount reductions, and declining integration expenses do not specifically document that operations fractured against people, management, or culture; therefore no p5 pathway is documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"Earth Intelligence segment revenue essentially flat (~$1,059m\\u2192$1,085m\\u2192$1,081m, FY2018-2020); no new goodwill impairment; acquired imagery business retained as one of two remaining segments while acquirer's own MDA business divested for $729m in 2020\", \"rationale\": \"For p4 (product/process interface), the slice documents no product-line/operations incoherence for the acquired imagery business over time: Earth Intelligence revenue and Adjusted EBITDA were essentially flat 2018-2020 and its goodwill was judged to exceed carrying value with no new impairment in 2019-2020, so no realized product/process disruption is documented. For p5 (process/organization interface), the filing notes 2018-2019 restructuring/headcount reductions and declining transaction/integration expenses, but nothing specifically documenting operations fracturing against people/management/culture in the acquired business; the divestiture in 2020 was of the acquirer's own original MDA space-robotics unit, not the acquired DigitalGlobe imagery business, which was retained. Absent documented evidence of either interface disruption, both are coded 0. The 2018 consolidated loss, $159m combined goodwill write-down, and WorldView-4 satellite-capability loss are disclosed as pre-window comparative context and are not attributed to a product/process or process/organization integration fracture.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired business retained as Earth Intelligence; revenue flat ~$1.06-1.08bn FY18-20\",\n  \"rationale\": \"The slice reports Earth Intelligence (former DigitalGlobe) revenue and Adjusted EBITDA essentially flat across FY2018-2020, with management concluding at the Oct 2020 goodwill test that fair value more likely than not exceeded carrying value and no new Earth Intelligence impairment in 2019-2020; nothing documents product/process-interface incoherence, so p4_pathway=0. Restructuring and headcount-reduction plans plus declining integration expenses are noted company-wide, but no fracture of operations against people/management/culture specific to the acquired business is documented, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Earth Intelligence revenue was $1.081 billion in 2020 versus $1.059 billion in 2018\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No product/process-interface disruption is documented: Earth Intelligence remained a reportable segment, with essentially flat revenue and Adjusted EBITDA during 2018-2020 and no new goodwill impairment in 2019-2020. The disclosed restructuring, headcount reductions, and declining integration expenses do not specifically document that operations fractured against people, management, or culture; therefore no p5 pathway is documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

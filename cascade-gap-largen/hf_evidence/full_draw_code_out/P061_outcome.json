@@ -1,0 +1,58 @@
+{
+  "case_id": "P061",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "China business closed in FY2014; $2.4M net tax benefit on intercompany loan write-off; (2.1)-pt \"Loss on closure of China\" ETR effect",
+      "rationale": "The slice documents that the acquired China business was wound down and closed in fiscal 2014, with a net tax benefit tied to an intercompany loan write-off and no further China operating presence in FY2015-2016. However, the slice records only the fact and financial effect of the closure and does not attribute the wind-down to any product/operations incoherence (p4) or to any operations-vs-organization/culture fracture (p5); no causal disruption at either interface is described. With the realized outcome established but the failure mechanism undocumented, both pathway interfaces are coded uncertain rather than assumed."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "closed in fiscal 2014",
+      "rationale": "The slice documents the closure of the China business in fiscal 2014, resulting in a $2.4 million net tax benefit. However, it does not provide specific details on whether this closure was driven by product/process incoherence (p4) or process/organization fracture (p5). Therefore, both pathways are coded as 0 due to lack of documented evidence."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'China business closed in fiscal 2014'}",
+      "rationale": "{'type': 'string', 'enum': 'The China business was closed in fiscal 2014, generating a $2.4 million net tax benefit associated with an intercompany loan write-off, and no ongoing China operation was disclosed in fiscal 2015 or 2016. However, the slice does not attribute the closure to product/process incoherence, so p4 is 0. The company reported broader organization-restructuring charges, but no evidence specifically links them or the China closure to a breakdown at the process/organization interface, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"China business closed in FY2014; $2.4M net tax benefit on intercompany loan write-off; (2.1)-pt \\\"Loss on closure of China\\\" ETR effect\", \"rationale\": \"The slice documents that the acquired China business was wound down and closed in fiscal 2014, with a net tax benefit tied to an intercompany loan write-off and no further China operating presence in FY2015-2016. However, the slice records only the fact and financial effect of the closure and does not attribute the wind-down to any product/operations incoherence (p4) or to any operations-vs-organization/culture fracture (p5); no causal disruption at either interface is described. With the realized outcome established but the failure mechanism undocumented, both pathway interfaces are coded uncertain rather than assumed.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"closed in fiscal 2014\",\n  \"rationale\": \"The slice documents the closure of the China business in fiscal 2014, resulting in a $2.4 million net tax benefit. However, it does not provide specific details on whether this closure was driven by product/process incoherence (p4) or process/organization fracture (p5). Therefore, both pathways are coded as 0 due to lack of documented evidence.\"\n}\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"China business closed in fiscal 2014\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The China business was closed in fiscal 2014, generating a $2.4 million net tax benefit associated with an intercompany loan write-off, and no ongoing China operation was disclosed in fiscal 2015 or 2016. However, the slice does not attribute the closure to product/process incoherence, so p4 is 0. The company reported broader organization-restructuring charges, but no evidence specifically links them or the China closure to a breakdown at the process/organization interface, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

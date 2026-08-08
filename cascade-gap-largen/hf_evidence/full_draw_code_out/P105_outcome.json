@@ -1,0 +1,58 @@
+{
+  "case_id": "P105",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; acquired IO Data Centers assets retained; no data-center goodwill impairment (FY2022)",
+      "rationale": "The slice documents that the acquired IO Data Centers facilities remained on the books with no divestiture, no impairment, and the Global Data Center Business described as continuing to grow (21 operating centers, 747 MW portfolio), indicating no realized product/process incoherence (p4=0). It also explicitly states the retrieved filing documents \"no impairment, divestiture, or operational fracture\" of the acquired operations within the window, and reports growing revenues and net income with ~26,000 employees, showing no documented process/organization fracture (p5=0). No goodwill impairment was recorded against the Global Data Center reporting unit, with fair values exceeding carrying values by >20%."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; assets retained",
+      "rationale": "The slice states the retrieved filing documents no impairment, divestiture, or operational fracture of the acquired data-center operations within the outcome window, and the data center business is described as continuing to grow. Property acquired in the IO Data Centers transaction remained on the books with no divestiture disclosed, and no goodwill impairment was recorded against the Global Data Center reporting unit. No evidence is given of product/process incoherence or of operations-versus-organization fracture over the ~4-year horizon."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Global Data Center Business revenue of $426.1 million in FY2022",
+      "rationale": "The filing documents no impairment, divestiture, or operational fracture of the acquired data-center operations within the outcome window and describes the business as continuing to grow, so no product/process disruption is documented. It also reports 21 operating data centers across 19 markets and retention of the acquired facilities, with no documented operations-versus-organization or people/management/culture fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no divestiture; acquired IO Data Centers assets retained; no data-center goodwill impairment (FY2022)\", \"rationale\": \"The slice documents that the acquired IO Data Centers facilities remained on the books with no divestiture, no impairment, and the Global Data Center Business described as continuing to grow (21 operating centers, 747 MW portfolio), indicating no realized product/process incoherence (p4=0). It also explicitly states the retrieved filing documents \\\"no impairment, divestiture, or operational fracture\\\" of the acquired operations within the window, and reports growing revenues and net income with ~26,000 employees, showing no documented process/organization fracture (p5=0). No goodwill impairment was recorded against the Global Data Center reporting unit, with fair values exceeding carrying values by >20%.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; assets retained\",\n  \"rationale\": \"The slice states the retrieved filing documents no impairment, divestiture, or operational fracture of the acquired data-center operations within the outcome window, and the data center business is described as continuing to grow. Property acquired in the IO Data Centers transaction remained on the books with no divestiture disclosed, and no goodwill impairment was recorded against the Global Data Center reporting unit. No evidence is given of product/process incoherence or of operations-versus-organization fracture over the ~4-year horizon.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Global Data Center Business revenue of $426.1 million in FY2022\",\n  \"rationale\": \"The filing documents no impairment, divestiture, or operational fracture of the acquired data-center operations within the outcome window and describes the business as continuing to grow, so no product/process disruption is documented. It also reports 21 operating data centers across 19 markets and retention of the acquired facilities, with no documented operations-versus-organization or people/management/culture fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

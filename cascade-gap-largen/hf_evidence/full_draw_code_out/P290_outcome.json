@@ -1,0 +1,58 @@
+{
+  "case_id": "P290",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "divested Veracode for $950 million; remainder integrated into Infrastructure Software segment",
+      "rationale": "The slice notes that Broadcom 'integrated a substantial portion of CA into our ongoing operations' and folded it into the Infrastructure Software segment. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface over the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Veracode divested ~2 mo post-close for $950M; remaining CA integrated, no FY2021 breakout",
+      "rationale": "The slice documents no realized product/process incoherence over the 3-5 year horizon: Broadcom integrated a substantial portion of CA into ongoing operations in FY2019 and folded remaining CA into the Infrastructure Software segment without any disclosed product-line/operations failure. The only separation noted is the near-immediate Dec 2018 sale of Veracode as strategically non-aligned, which is a held-for-sale divestiture rather than documented post-deal product/process disruption over time. No evidence is given of process/organization fracture (operations vs people/culture); integration is presented as having proceeded to the point that CA’s net-income effect became impracticable to isolate, with no cultural or managerial break documented."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$950 million Veracode divestiture shortly after closing",
+      "rationale": "Broadcom reported that a substantial portion of CA had been integrated into its ongoing operations during fiscal 2019 and that the remaining operations were absorbed into its Infrastructure Software segment, with no documented product/process disruption. Veracode was sold as not aligned with Broadcom’s strategic objectives, but the slice does not attribute that sale to an inability to align the product with operating processes. No realized conflict between operations and CA’s people, management, or culture is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"divested Veracode for $950 million; remainder integrated into Infrastructure Software segment\",\n  \"rationale\": \"The slice notes that Broadcom 'integrated a substantial portion of CA into our ongoing operations' and folded it into the Infrastructure Software segment. There is no documented evidence of disruption at the product/process interface or fracture at the process/organization interface over the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Veracode divested ~2 mo post-close for $950M; remaining CA integrated, no FY2021 breakout\",\n  \"rationale\": \"The slice documents no realized product/process incoherence over the 3-5 year horizon: Broadcom integrated a substantial portion of CA into ongoing operations in FY2019 and folded remaining CA into the Infrastructure Software segment without any disclosed product-line/operations failure. The only separation noted is the near-immediate Dec 2018 sale of Veracode as strategically non-aligned, which is a held-for-sale divestiture rather than documented post-deal product/process disruption over time. No evidence is given of process/organization fracture (operations vs people/culture); integration is presented as having proceeded to the point that CA’s net-income effect became impracticable to isolate, with no cultural or managerial break documented.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$950 million Veracode divestiture shortly after closing\",\n  \"rationale\": \"Broadcom reported that a substantial portion of CA had been integrated into its ongoing operations during fiscal 2019 and that the remaining operations were absorbed into its Infrastructure Software segment, with no documented product/process disruption. Veracode was sold as not aligned with Broadcom’s strategic objectives, but the slice does not attribute that sale to an inability to align the product with operating processes. No realized conflict between operations and CA’s people, management, or culture is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

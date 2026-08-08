@@ -1,0 +1,85 @@
+{
+  "case_id": "P323",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was an all-cash going-private acquisition in which Cotiviti was acquired whole as a wholly owned subsidiary of Verscend, both operating in the same payment-accuracy/healthcare-analytics category; the entire legal vehicle, its product/customer-acceptance layer, and operating processes crossed the boundary intact together, so there is no documented product-vs-process mismatch (gap_45=0). The target's senior operating personnel were bridged into the new ownership via pre-existing retention and change-in-control arrangements, so processes and the people/organization that run them moved together with no documented T5/T6 split (gap_56=0). Governance was fully replaced (board resigned, Merger Sub directors installed, charter/bylaws restated), supporting T1=replace, but this concerns the controlling-intent tier, not a process-vs-people transfer gap."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At the Effective Time Cotiviti survived as a wholly owned subsidiary with its payment-accuracy/analytics business intact under new Verscend ownership, so the customer-facing product layer and the operating processes that produce it crossed together inside the same legal vehicle (no product-vs-process mismatch). The closing structure expressly used pre-existing employment, CIC severance, and retention arrangements as the mechanism bridging continuity of Cotiviti senior operating personnel into the new ownership, so processes and organization were aligned to transfer together rather than decoupled; board replacement and equity-plan termination addressed control/incentive architecture, not a T5-without-T6 gap."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Cotiviti became a wholly owned subsidiary of Verscend at the Effective Time, transferring the operating company and its payment-accuracy and healthcare-analytics offerings together; the slice documents no separation of customer-facing products from their supporting processes, so gap_45 is 0. Although Cotiviti's full board was replaced, the structural summary identifies pre-existing retention and change-in-control arrangements as the closing-time mechanism bridging continuity of senior operating personnel, with no documented process-versus-organization mismatch at closing; therefore gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was an all-cash going-private acquisition in which Cotiviti was acquired whole as a wholly owned subsidiary of Verscend, both operating in the same payment-accuracy/healthcare-analytics category; the entire legal vehicle, its product/customer-acceptance layer, and operating processes crossed the boundary intact together, so there is no documented product-vs-process mismatch (gap_45=0). The target's senior operating personnel were bridged into the new ownership via pre-existing retention and change-in-control arrangements, so processes and the people/organization that run them moved together with no documented T5/T6 split (gap_56=0). Governance was fully replaced (board resigned, Merger Sub directors installed, charter/bylaws restated), supporting T1=replace, but this concerns the controlling-intent tier, not a process-vs-people transfer gap.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At the Effective Time Cotiviti survived as a wholly owned subsidiary with its payment-accuracy/analytics business intact under new Verscend ownership, so the customer-facing product layer and the operating processes that produce it crossed together inside the same legal vehicle (no product-vs-process mismatch). The closing structure expressly used pre-existing employment, CIC severance, and retention arrangements as the mechanism bridging continuity of Cotiviti senior operating personnel into the new ownership, so processes and organization were aligned to transfer together rather than decoupled; board replacement and equity-plan termination addressed control/incentive architecture, not a T5-without-T6 gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Cotiviti became a wholly owned subsidiary of Verscend at the Effective Time, transferring the operating company and its payment-accuracy and healthcare-analytics offerings together; the slice documents no separation of customer-facing products from their supporting processes, so gap_45 is 0. Although Cotiviti's full board was replaced, the structural summary identifies pre-existing retention and change-in-control arrangements as the closing-time mechanism bridging continuity of senior operating personnel, with no documented process-versus-organization mismatch at closing; therefore gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

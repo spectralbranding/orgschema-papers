@@ -1,0 +1,85 @@
+{
+  "case_id": "P009",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the coal product (PAMC mines, CNX Marine Terminal) transferred together with the producing/delivering operational processes (\"the mining and delivery operations that produce and ship the coal ... moved with the product as an operating unit\"), so no product-vs-process mismatch exists at closing (gap_45=0). It also states the management team crossed together — CoalCo executives became the standalone management led by James Brock — so processes and the people/culture running them moved together (gap_56=0). The only substrate not transferred whole (cash management, tax, treasury, IT) was corporate shared-services, bridged by the TSA, and does not constitute a T4/T5 or T5/T6 structural gap. This is a spin-off of a wholly owned subsidiary distributed pro rata to stockholders, installing a new standalone controlling intent (replace) with a new listed legal vehicle renamed CONSOL Energy Inc. (swap)."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the coal-production operations (T4) and the mining and delivery operations (T5) moved together as an operating unit. Additionally, the management team and employees (T6) crossed together with the processes, indicating no structural gaps between T4, T5, and T6 at closing."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the PAMC mines and marine terminal crossed together with the mining and delivery operations that produce and ship the coal, so no product-process mismatch existed at closing. It also states that the standalone management team crossed with the operating unit, while non-transferred shared corporate functions were bridged through the TSA and related agreements; therefore, no documented process-organization mismatch existed at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the coal product (PAMC mines, CNX Marine Terminal) transferred together with the producing/delivering operational processes (\\\"the mining and delivery operations that produce and ship the coal ... moved with the product as an operating unit\\\"), so no product-vs-process mismatch exists at closing (gap_45=0). It also states the management team crossed together \\u2014 CoalCo executives became the standalone management led by James Brock \\u2014 so processes and the people/culture running them moved together (gap_56=0). The only substrate not transferred whole (cash management, tax, treasury, IT) was corporate shared-services, bridged by the TSA, and does not constitute a T4/T5 or T5/T6 structural gap. This is a spin-off of a wholly owned subsidiary distributed pro rata to stockholders, installing a new standalone controlling intent (replace) with a new listed legal vehicle renamed CONSOL Energy Inc. (swap).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that the coal-production operations (T4) and the mining and delivery operations (T5) moved together as an operating unit. Additionally, the management team and employees (T6) crossed together with the processes, indicating no structural gaps between T4, T5, and T6 at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the PAMC mines and marine terminal crossed together with the mining and delivery operations that produce and ship the coal, so no product-process mismatch existed at closing. It also states that the standalone management team crossed with the operating unit, while non-transferred shared corporate functions were bridged through the TSA and related agreements; therefore, no documented process-organization mismatch existed at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

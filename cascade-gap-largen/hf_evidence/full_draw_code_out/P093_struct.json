@@ -1,0 +1,85 @@
+{
+  "case_id": "P093",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing asset (T4) — ~20.1M sq ft across 65 properties, 62 wholly owned, expanded by six 2008 acquisitions totaling $813.7M — crossed into the registrant's ownership boundary, but the operational processes that produce/deliver it (T5: asset management, property management, leasing, acquisition/disposition) were NOT owned or performed by the company: \"The employees of Wells Capital and its affiliate, Wells Management ... perform substantially all of the services related to our asset management, accounting, investor relations, and other administrative activities,\" so the owned product and its operating processes are structurally split at the boundary. gap_56=0: the processes (T5) and the people/organization that run them (T6) did NOT separate — both remained co-located with the same external advisor (Wells Capital/Wells Management employees perform the services), so there is no T5-vs-T6 mismatch. gap_mitigated=yes: the product/process split (gap_45) is contractually absorbed via the renewed advisory agreement (0.75% annualized asset management fee, one-year term, 60-day termination) and related affiliate arrangements allocating personnel/costs among sponsored programs."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The REIT acquired multiple commercial properties (T4) but did not acquire the operational processes (T5) or employees (T6) to manage them. Instead, operations and personnel remained with the external advisor (Wells Capital) and were accessed via an advisory agreement, creating structural gaps between the assets and their management/personnel that were mitigated by this contract."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The 10-K establishes that the customer-facing portfolio (63 office properties plus related assets, ~20.1M sq ft, including six 2008 acquisitions) was owned by the registrant/OP while 'employees of Wells Capital and its affiliate, Wells Management… perform substantially all of the services related to our asset management, accounting, investor relations, and other administrative activities,' so product crossed without the producing processes (gap_45=1). Those processes and the people who run them both remained with the same external advisor/affiliates rather than processes moving without organization, so gap_56=0; the renewed advisory agreement (8-K 2008-07-02) and related affiliate fee/reimbursement arrangements contractually allocated that shared operating substrate at closing (gap_mitigated=yes)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"read-only\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing asset (T4) \\u2014 ~20.1M sq ft across 65 properties, 62 wholly owned, expanded by six 2008 acquisitions totaling $813.7M \\u2014 crossed into the registrant's ownership boundary, but the operational processes that produce/deliver it (T5: asset management, property management, leasing, acquisition/disposition) were NOT owned or performed by the company: \\\"The employees of Wells Capital and its affiliate, Wells Management ... perform substantially all of the services related to our asset management, accounting, investor relations, and other administrative activities,\\\" so the owned product and its operating processes are structurally split at the boundary. gap_56=0: the processes (T5) and the people/organization that run them (T6) did NOT separate \\u2014 both remained co-located with the same external advisor (Wells Capital/Wells Management employees perform the services), so there is no T5-vs-T6 mismatch. gap_mitigated=yes: the product/process split (gap_45) is contractually absorbed via the renewed advisory agreement (0.75% annualized asset management fee, one-year term, 60-day termination) and related affiliate arrangements allocating personnel/costs among sponsored programs.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The REIT acquired multiple commercial properties (T4) but did not acquire the operational processes (T5) or employees (T6) to manage them. Instead, operations and personnel remained with the external advisor (Wells Capital) and were accessed via an advisory agreement, creating structural gaps between the assets and their management/personnel that were mitigated by this contract.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The 10-K establishes that the customer-facing portfolio (63 office properties plus related assets, ~20.1M sq ft, including six 2008 acquisitions) was owned by the registrant/OP while 'employees of Wells Capital and its affiliate, Wells Management… perform substantially all of the services related to our asset management, accounting, investor relations, and other administrative activities,' so product crossed without the producing processes (gap_45=1). Those processes and the people who run them both remained with the same external advisor/affiliates rather than processes moving without organization, so gap_56=0; the renewed advisory agreement (8-K 2008-07-02) and related affiliate fee/reimbursement arrangements contractually allocated that shared operating substrate at closing (gap_mitigated=yes).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

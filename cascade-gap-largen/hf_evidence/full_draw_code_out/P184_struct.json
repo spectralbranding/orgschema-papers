@@ -1,0 +1,85 @@
+{
+  "case_id": "P184",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a simplification consolidating a holding-company ownership layer (AHGP, whose only assets were equity interests in ARLP, holding \"no independent operating product or processes of its own\") into ARLP; the customer-facing coal mining/marketing product and its operational processes were already held and run at ARLP's operating subsidiaries (AROP, Alliance Coal) and were \"not altered\" at closing, so no T4-vs-T5 mismatch crossed the boundary (gap_45=0, both remained together and in place). MGP remained GP with \"no change in the management and operation of ARLP's business,\" and the same executive (Craft) and overlapping directors/officers already ran both entities, so process and organization stayed aligned (gap_56=0). No operating product or process crossed the ownership boundary (T4/T5 null); only the holding-company entity layer collapsed into ARLP (T3 N-1)."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "N-1",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a simplification of a master limited partnership structure, collapsing a holding company (AHGP) into the operating partnership (ARLP). The operating product (T4) and processes (T5) were already held and run at the ARLP subsidiary level and did not move or change, so there is no structural mismatch (gap_45 = 0). Similarly, the management and organization (T6) were already shared and continued unchanged, so there is no gap between processes and organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "N-1",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states AHGP held no independent operating product or processes—only equity interests in ARLP—and that the customer-facing product and operational processes (coal mining and marketing) were already held and run at ARLP’s operating subsidiaries (AROP, Alliance Coal) without alteration at closing; therefore neither T4 nor T5 crossed the ownership boundary, so gap_45 = 0. It likewise documents “no change in the management and operation of ARLP’s business,” with MGP remaining GP and overlapping officers/directors already in place, so T5 and T6 did not separately transfer or misalign at closing and gap_56 = 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"null\", \"sigma_T5\": \"null\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a simplification consolidating a holding-company ownership layer (AHGP, whose only assets were equity interests in ARLP, holding \\\"no independent operating product or processes of its own\\\") into ARLP; the customer-facing coal mining/marketing product and its operational processes were already held and run at ARLP's operating subsidiaries (AROP, Alliance Coal) and were \\\"not altered\\\" at closing, so no T4-vs-T5 mismatch crossed the boundary (gap_45=0, both remained together and in place). MGP remained GP with \\\"no change in the management and operation of ARLP's business,\\\" and the same executive (Craft) and overlapping directors/officers already ran both entities, so process and organization stayed aligned (gap_56=0). No operating product or process crossed the ownership boundary (T4/T5 null); only the holding-company entity layer collapsed into ARLP (T3 N-1).\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"null\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"null\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a simplification of a master limited partnership structure, collapsing a holding company (AHGP) into the operating partnership (ARLP). The operating product (T4) and processes (T5) were already held and run at the ARLP subsidiary level and did not move or change, so there is no structural mismatch (gap_45 = 0). Similarly, the management and organization (T6) were already shared and continued unchanged, so there is no gap between processes and organization (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states AHGP held no independent operating product or processes—only equity interests in ARLP—and that the customer-facing product and operational processes (coal mining and marketing) were already held and run at ARLP’s operating subsidiaries (AROP, Alliance Coal) without alteration at closing; therefore neither T4 nor T5 crossed the ownership boundary, so gap_45 = 0. It likewise documents “no change in the management and operation of ARLP’s business,” with MGP remaining GP and overlapping officers/directors already in place, so T5 and T6 did not separately transfer or misalign at closing and gap_56 = 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "null",
+    "sigma_T3": "N-1",
+    "sigma_T4": "null",
+    "sigma_T5": "null",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

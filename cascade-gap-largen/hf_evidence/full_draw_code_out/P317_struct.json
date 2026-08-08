@@ -1,0 +1,85 @@
+{
+  "case_id": "P317",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "This was a whole-company reverse triangular merger in which VWR's laboratory- and production-products distribution business (T4) and its operating distribution processes (T5) crossed the ownership boundary together as a going concern, with VWR surviving as a wholly-owned subsidiary — product and process moved as one, so gap_45 = 0. However, at the T5/T6 boundary the deal transferred the operational business while management participation was \"expressly not a condition,\" only the CFO had a disclosed continued-employment arrangement, no equity rollover was required, and certain directors resigned effective the Closing Date — a documented process-vs-people/management mismatch, so gap_56 = 1. That gap was contractually cushioned via merger-agreement provisions requiring continuing employees be provided no-less-favorable compensation and benefits in the aggregate for a specified post-closing period, so gap_mitigated = yes; T1 coded replace because the New Mountain/Avantor principal was installed and prior management/controlling intent exited."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company reverse triangular merger in which VWR survived intact as Avantor’s wholly-owned subsidiary, so VWR’s customer-facing distribution products/services (T4) and the operating business that produced them (T5) crossed together with no product-vs-process split documented at closing. T6 moved only partially—directors resigned at closing, management participation/equity rollover was expressly not a condition, and only the CFO had a disclosed continuing role—yet continuing employees remained with the surviving corporation under a contractual benefits bridge, so processes did not transfer without an aligned people substrate; no TSA/operating-agreement gap fill was required or documented."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice describes a whole-company acquisition in which VWR’s product-and-service distribution business became wholly owned by Avantor while VWR continued as the surviving legal corporation, so no product-versus-process separation at closing is documented. The surviving corporation retained continuing employees under contractually bridged compensation and benefit terms, and VWR’s CFO was expected to serve as CFO of the combined company; although directors changed and broader management participation was not required, the slice documents no closing-stage separation of operations from the organization running them."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"This was a whole-company reverse triangular merger in which VWR's laboratory- and production-products distribution business (T4) and its operating distribution processes (T5) crossed the ownership boundary together as a going concern, with VWR surviving as a wholly-owned subsidiary \\u2014 product and process moved as one, so gap_45 = 0. However, at the T5/T6 boundary the deal transferred the operational business while management participation was \\\"expressly not a condition,\\\" only the CFO had a disclosed continued-employment arrangement, no equity rollover was required, and certain directors resigned effective the Closing Date \\u2014 a documented process-vs-people/management mismatch, so gap_56 = 1. That gap was contractually cushioned via merger-agreement provisions requiring continuing employees be provided no-less-favorable compensation and benefits in the aggregate for a specified post-closing period, so gap_mitigated = yes; T1 coded replace because the New Mountain/Avantor principal was installed and prior management/controlling intent exited.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company reverse triangular merger in which VWR survived intact as Avantor’s wholly-owned subsidiary, so VWR’s customer-facing distribution products/services (T4) and the operating business that produced them (T5) crossed together with no product-vs-process split documented at closing. T6 moved only partially—directors resigned at closing, management participation/equity rollover was expressly not a condition, and only the CFO had a disclosed continuing role—yet continuing employees remained with the surviving corporation under a contractual benefits bridge, so processes did not transfer without an aligned people substrate; no TSA/operating-agreement gap fill was required or documented.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice describes a whole-company acquisition in which VWR’s product-and-service distribution business became wholly owned by Avantor while VWR continued as the surviving legal corporation, so no product-versus-process separation at closing is documented. The surviving corporation retained continuing employees under contractually bridged compensation and benefit terms, and VWR’s CFO was expected to serve as CFO of the combined company; although directors changed and broader management participation was not required, the slice documents no closing-stage separation of operations from the organization running them.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P235",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company cash merger in which AMRI survived intact as a wholly-owned subsidiary of a Carlyle/GTCR acquisition vehicle; the entire integrated contract-research/manufacturing business (product/asset tier, T4) transferred together with its operating footprint and processes (T5) in a single going-concern entity, so no product-vs-process mismatch exists at closing (gap_45=0). AMRI's pre-existing officer group was expressly retained in place immediately after closing, with 12-month compensation/benefit continuity commitments and honored severance—so the people/organization running operations (T6) transferred coherently alongside the processes (gap_56=0). T1 is replace because the controlling principal shifted from public shareholders to the new sponsor-owned Parent (board resigned and was replaced by Merger Sub designees), and T3 is swap because AMRI's charter/bylaws were amended and restated into Merger Sub's form and its Delaware vehicle became a private subsidiary delisted from Nasdaq."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice structures a whole-company forward cash merger in which AMRI survived as Parent’s wholly-owned subsidiary, with its CRO/CMO customer services (T4) and the integrated discovery/development/manufacturing operations that produce them (T5) crossing together under the same surviving entity; no product-vs-process split is documented at closing. Officers of AMRI immediately prior to the effective time continued as officers of the surviving company, and Parent contractually committed to retain continuing employees’ pay, benefits, and severance for 12 months, so T5 processes and T6 organization/people aligned together at closing with no structural gap_56."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company merger encompassing AMRI’s integrated contract-research and manufacturing business, with AMRI surviving as Parent’s wholly owned subsidiary; no product or operating-process carveout is documented, so gap_45 is 0. AMRI’s officers continued immediately after closing, and Parent committed to maintain compensation and substantially comparable benefits for continuing employees, indicating that the operating organization remained aligned with the transferred processes despite replacement of the board; therefore gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company cash merger in which AMRI survived intact as a wholly-owned subsidiary of a Carlyle/GTCR acquisition vehicle; the entire integrated contract-research/manufacturing business (product/asset tier, T4) transferred together with its operating footprint and processes (T5) in a single going-concern entity, so no product-vs-process mismatch exists at closing (gap_45=0). AMRI's pre-existing officer group was expressly retained in place immediately after closing, with 12-month compensation/benefit continuity commitments and honored severance\\u2014so the people/organization running operations (T6) transferred coherently alongside the processes (gap_56=0). T1 is replace because the controlling principal shifted from public shareholders to the new sponsor-owned Parent (board resigned and was replaced by Merger Sub designees), and T3 is swap because AMRI's charter/bylaws were amended and restated into Merger Sub's form and its Delaware vehicle became a private subsidiary delisted from Nasdaq.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice structures a whole-company forward cash merger in which AMRI survived as Parent’s wholly-owned subsidiary, with its CRO/CMO customer services (T4) and the integrated discovery/development/manufacturing operations that produce them (T5) crossing together under the same surviving entity; no product-vs-process split is documented at closing. Officers of AMRI immediately prior to the effective time continued as officers of the surviving company, and Parent contractually committed to retain continuing employees’ pay, benefits, and severance for 12 months, so T5 processes and T6 organization/people aligned together at closing with no structural gap_56.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-company merger encompassing AMRI’s integrated contract-research and manufacturing business, with AMRI surviving as Parent’s wholly owned subsidiary; no product or operating-process carveout is documented, so gap_45 is 0. AMRI’s officers continued immediately after closing, and Parent committed to maintain compensation and substantially comparable benefits for continuing employees, indicating that the operating organization remained aligned with the transferred processes despite replacement of the board; therefore gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

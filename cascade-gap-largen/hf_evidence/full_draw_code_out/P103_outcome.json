@@ -1,0 +1,58 @@
+{
+  "case_id": "P103",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "1",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "$17.5M full goodwill impairment of Patch (Q3 2013); majority interest divested Jan 2014, brand shuttered",
+      "rationale": "p4_pathway=1: the slice documents a realized product/process breakdown — a prominently invested closing-era local-content property (Patch) \"could not be sustained on the platform,\" was fully goodwill-impaired ($17.5M, Q3 2013), had its majority interest divested (January 2014), and was among brands shuttered/disposed in 2014 with associated long-lived-asset impairments. p5_pathway=uncertain: the slice references lower headcount related to Patch but documents no specific fracture at the operations/organization (people/management/culture) interface, so this cannot be determined. t2_model=0: no documented incompatibility of value-capture logics; revenues grew and the ad-tech model consolidated under \"AOL Platforms.\" t1_archetype=uncertain: the slice contains no closing-era intent framing to assess against the realized record."
+    },
+    "grok": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Patch majority divested after $17.5M goodwill impairment; AOL sold to Verizon at $50/share",
+      "rationale": "p4_pathway=1 is driven by the documented product-process failure of Patch: Q3 2013 step-two goodwill evaluation fully impaired Patch goodwill ($17.5M), majority interest was disposed January 2014 (40% retained), and Patch was among brands shuttered/disposed in 2014 with associated long-lived-asset impairments and headcount reductions. p5_pathway=0 because the slice records no fracture at the process/organization interface (operations vs people/management/culture); headcount declines are noted only as a cost consequence of the Patch shutdown, not as an organizational integration break."
+    },
+    "openai": {
+      "p4_pathway": "1",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$17.5M full Patch goodwill impairment, followed by majority-interest disposition",
+      "rationale": "The FY2014 10-K documents that Patch's goodwill was fully impaired by a $17.5 million charge in Q3 2013, followed by disposition of a majority interest in January 2014 and its inclusion among brands shuttered or disposed of during 2014. This realized sequence supports product/process-interface disruption (p4). The slice documents no fracture between operations and people, management, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"1\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"$17.5M full goodwill impairment of Patch (Q3 2013); majority interest divested Jan 2014, brand shuttered\", \"rationale\": \"p4_pathway=1: the slice documents a realized product/process breakdown \\u2014 a prominently invested closing-era local-content property (Patch) \\\"could not be sustained on the platform,\\\" was fully goodwill-impaired ($17.5M, Q3 2013), had its majority interest divested (January 2014), and was among brands shuttered/disposed in 2014 with associated long-lived-asset impairments. p5_pathway=uncertain: the slice references lower headcount related to Patch but documents no specific fracture at the operations/organization (people/management/culture) interface, so this cannot be determined. t2_model=0: no documented incompatibility of value-capture logics; revenues grew and the ad-tech model consolidated under \\\"AOL Platforms.\\\" t1_archetype=uncertain: the slice contains no closing-era intent framing to assess against the realized record.\"}",
+    "grok": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Patch majority divested after $17.5M goodwill impairment; AOL sold to Verizon at $50/share\",\n  \"rationale\": \"p4_pathway=1 is driven by the documented product-process failure of Patch: Q3 2013 step-two goodwill evaluation fully impaired Patch goodwill ($17.5M), majority interest was disposed January 2014 (40% retained), and Patch was among brands shuttered/disposed in 2014 with associated long-lived-asset impairments and headcount reductions. p5_pathway=0 because the slice records no fracture at the process/organization interface (operations vs people/management/culture); headcount declines are noted only as a cost consequence of the Patch shutdown, not as an organizational integration break.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"1\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$17.5M full Patch goodwill impairment, followed by majority-interest disposition\",\n  \"rationale\": \"The FY2014 10-K documents that Patch's goodwill was fully impaired by a $17.5 million charge in Q3 2013, followed by disposition of a majority interest in January 2014 and its inclusion among brands shuttered or disposed of during 2014. This realized sequence supports product/process-interface disruption (p4). The slice documents no fracture between operations and people, management, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "1",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

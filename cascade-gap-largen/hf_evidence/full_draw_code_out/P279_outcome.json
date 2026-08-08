@@ -1,0 +1,58 @@
+{
+  "case_id": "P279",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "employee base increased approximately 40% during 2021",
+      "rationale": "The slice documents that FGL Holdings operated independently and grew its assets and equity through 2019, before being acquired by FNF in 2020. Following the acquisition, the F&G segment continued to grow, with its employee base increasing approximately 40% in 2021. There is no documented evidence of product/process disruption or process/organization fracture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by FNF June 2020 (~$1.8bn cash + 27M shares); F&G segment retained and grew",
+      "rationale": "The slice documents no product/process interface disruption: FGL Holdings continued filing 10-Ks through FY2019 with rising assets ($30.9bn to $36.7bn) and equity, and after the June 2020 FNF acquisition its insurance operations were retained as a separately disclosed F&G segment issuing the same annuity/life portfolio. No process/organization fracture is documented either; FNF reported F&G segment revenues of $1,233M and net earnings of $136M for the partial year 2020 and an approximately 40% employee-base increase in 2021 as the business continued to grow. Absence of any realized pathway disruption evidence yields p4=0 and p5=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$507 million net income in 2019 versus $13 million in 2018",
+      "rationale": "No product/process disruption is documented; the business continued operating, reported $507 million of net income in 2019, and subsequently remained a separately disclosed F&G segment under FNF. No process/organization fracture is documented; FNF reported that the segment continued operating and that its employee base grew approximately 40% during 2021."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"employee base increased approximately 40% during 2021\",\n  \"rationale\": \"The slice documents that FGL Holdings operated independently and grew its assets and equity through 2019, before being acquired by FNF in 2020. Following the acquisition, the F&G segment continued to grow, with its employee base increasing approximately 40% in 2021. There is no documented evidence of product/process disruption or process/organization fracture.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by FNF June 2020 (~$1.8bn cash + 27M shares); F&G segment retained and grew\",\n  \"rationale\": \"The slice documents no product/process interface disruption: FGL Holdings continued filing 10-Ks through FY2019 with rising assets ($30.9bn to $36.7bn) and equity, and after the June 2020 FNF acquisition its insurance operations were retained as a separately disclosed F&G segment issuing the same annuity/life portfolio. No process/organization fracture is documented either; FNF reported F&G segment revenues of $1,233M and net earnings of $136M for the partial year 2020 and an approximately 40% employee-base increase in 2021 as the business continued to grow. Absence of any realized pathway disruption evidence yields p4=0 and p5=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$507 million net income in 2019 versus $13 million in 2018\",\n  \"rationale\": \"No product/process disruption is documented; the business continued operating, reported $507 million of net income in 2019, and subsequently remained a separately disclosed F&G segment under FNF. No process/organization fracture is documented; FNF reported that the segment continued operating and that its employee base grew approximately 40% during 2021.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

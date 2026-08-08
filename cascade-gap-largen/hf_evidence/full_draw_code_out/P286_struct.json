@@ -1,0 +1,85 @@
+{
+  "case_id": "P286",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 = 0: the customer-facing product is hotel real estate operated under a TRS-lessee/independent third-party manager structure \"common to both\" that \"predates and is unchanged in form by the merger,\" so the owned asset (T4) and its operating processes (T5) moved together within the same structural form rather than being split apart at closing. gap_56 = 0: both companies already outsource day-to-day operations to third-party managers, and this is described as a whole-company merger of a going concern (not a carve-out) with no separation of processes from the people running them; while risk factors note cultural/relationship complexity and LaSalle senior officers depart under change-in-control triggers, the acquirer's own full management team and board continue running the surviving entity, so processes are not stranded from an organizational substrate at closing. T1 = replace because the surviving board and executives are drawn entirely from Pebblebrook and LaSalle trustees were explicitly excluded, installing the acquirer's controlling intent; the founder overlap (Bortz founded LaSalle) is biographical, not a documented Tier-1 structural fusion in the deal."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a whole-company merger of two REITs with identical operating structures (owning hotels and leasing them to TRS lessees who hire third-party managers). The assets (T4) and the processes/contracts (T5) transferred together, and the third-party management structure (T6) remained intact, so there are no structural gaps at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product/process structural note states that LaSalle's hotel real estate and its TRS-lessee and independent-manager operating structure were part of the going concern and that this separation remained unchanged in form at the merger, so no closing product-process mismatch is documented. Although Pebblebrook's board and executives exclusively governed the combined company and LaSalle senior officers were subject to change-in-control severance, the hotel operations continued to be run through the existing third-party-management structure; the filing identifies relationship and integration risks but not a closing process-organization gap. The slice also characterizes the transaction as a whole-company merger rather than a carve-out requiring transitional or shared services."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 = 0: the customer-facing product is hotel real estate operated under a TRS-lessee/independent third-party manager structure \\\"common to both\\\" that \\\"predates and is unchanged in form by the merger,\\\" so the owned asset (T4) and its operating processes (T5) moved together within the same structural form rather than being split apart at closing. gap_56 = 0: both companies already outsource day-to-day operations to third-party managers, and this is described as a whole-company merger of a going concern (not a carve-out) with no separation of processes from the people running them; while risk factors note cultural/relationship complexity and LaSalle senior officers depart under change-in-control triggers, the acquirer's own full management team and board continue running the surviving entity, so processes are not stranded from an organizational substrate at closing. T1 = replace because the surviving board and executives are drawn entirely from Pebblebrook and LaSalle trustees were explicitly excluded, installing the acquirer's controlling intent; the founder overlap (Bortz founded LaSalle) is biographical, not a documented Tier-1 structural fusion in the deal.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a whole-company merger of two REITs with identical operating structures (owning hotels and leasing them to TRS lessees who hire third-party managers). The assets (T4) and the processes/contracts (T5) transferred together, and the third-party management structure (T6) remained intact, so there are no structural gaps at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The product/process structural note states that LaSalle's hotel real estate and its TRS-lessee and independent-manager operating structure were part of the going concern and that this separation remained unchanged in form at the merger, so no closing product-process mismatch is documented. Although Pebblebrook's board and executives exclusively governed the combined company and LaSalle senior officers were subject to change-in-control severance, the hotel operations continued to be run through the existing third-party-management structure; the filing identifies relationship and integration risks but not a closing process-organization gap. The slice also characterizes the transaction as a whole-company merger rather than a carve-out requiring transitional or shared services.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

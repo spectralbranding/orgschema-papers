@@ -1,0 +1,85 @@
+{
+  "case_id": "P318",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company reverse triangular merger with DigitalGlobe surviving as an indirect wholly owned subsidiary, so its customer-facing product line (Earth imagery/geospatial analytics) and the operating processes that produce it — including the NGA satellite-imagery Enhanced View contract carried forward \"as an operating asset of the surviving subsidiary\" — crossed the boundary together, yielding no product-vs-process mismatch (gap_45=0). Likewise the operational processes moved with the people: \"Continuing Employees\" were retained with protected compensation/benefits and credited service, and the surviving entity kept its operations intact, so process and organization aligned coherently at closing (gap_56=0). The board/officer slate was replaced with a mixed roster drawn from both DigitalGlobe and MDA leadership, supporting imprint-share at T1; the FOCI Security Control Agreement and reverse termination fee are risk carve-outs, not substitutes for a transferred substrate."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company acquisition where DigitalGlobe survived as a wholly owned subsidiary. The customer-facing products (T4), operational processes including the NGA contract (T5), and employees (T6) all transferred together into the surviving entity without structural mismatches at closing."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing Earth-imagery and geospatial-analytics product line remained with DigitalGlobe, while its satellite-imagery operations and NGA contract were carried forward as operating assets of the surviving subsidiary, so no product-process mismatch at closing is documented. DigitalGlobe employees continued under contractual compensation, benefits, service-credit, and employment protections, while the replacement officer roster included leaders from both DigitalGlobe and MDA/Holdings, so no process-organization mismatch at closing is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company reverse triangular merger with DigitalGlobe surviving as an indirect wholly owned subsidiary, so its customer-facing product line (Earth imagery/geospatial analytics) and the operating processes that produce it \\u2014 including the NGA satellite-imagery Enhanced View contract carried forward \\\"as an operating asset of the surviving subsidiary\\\" \\u2014 crossed the boundary together, yielding no product-vs-process mismatch (gap_45=0). Likewise the operational processes moved with the people: \\\"Continuing Employees\\\" were retained with protected compensation/benefits and credited service, and the surviving entity kept its operations intact, so process and organization aligned coherently at closing (gap_56=0). The board/officer slate was replaced with a mixed roster drawn from both DigitalGlobe and MDA leadership, supporting imprint-share at T1; the FOCI Security Control Agreement and reverse termination fee are risk carve-outs, not substitutes for a transferred substrate.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company acquisition where DigitalGlobe survived as a wholly owned subsidiary. The customer-facing products (T4), operational processes including the NGA contract (T5), and employees (T6) all transferred together into the surviving entity without structural mismatches at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing Earth-imagery and geospatial-analytics product line remained with DigitalGlobe, while its satellite-imagery operations and NGA contract were carried forward as operating assets of the surviving subsidiary, so no product-process mismatch at closing is documented. DigitalGlobe employees continued under contractual compensation, benefits, service-credit, and employment protections, while the replacement officer roster included leaders from both DigitalGlobe and MDA/Holdings, so no process-organization mismatch at closing is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P239",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the A&S product lines (Kollmorgen, Portescap, Thomson, Jake Brake) crossed together with the operating companies and the Newco Employees who produce/deliver them under the Employee Matters Agreement, so product and its processes moved together rather than product crossing without processes. gap_56=0: the operational processes and the people/organization moved coherently in tandem — Newco Employees transferred to become Altra employees and management was expanded to include A&S members — so T5 and T6 aligned at closing. The only process that did not transfer whole was the previously shared corporate service substrate (treasury, tax, IT, purchasing), which was structurally bridged at closing via a Transition Services Agreement, Tax Matters Agreement, and IP Cross-License, so T5 is coded partial rather than a documented gap. T1 is imprint-share given ~54% Newco-holder / ~46% Altra ownership with Altra continuing as listed registrant plus one Fortive-designated board seat."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice frames a whole-business transfer of the A&S platform into Altra: after Merger and Direct Sales Altra was to own and operate the A&S product lines (T4) through Newco and the Direct Sales entities, and Newco Employees were transferred under the Employee Matters Agreement to become Altra employees (T6), so customer-facing products and the people running them crossed together. Core A&S operating processes moved with those operating companies; the separately described shared Fortive corporate functions (treasury, tax, benefits, IT, purchasing) were bridged by a TSA as transitional back-office substrate rather than a documented product-vs-process or process-vs-organization structural mismatch at closing, so gap_45=0 and gap_56=0."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The designated A&S product lines crossed to Altra, while shared treasury, tax, benefits, purchasing, and information-systems processes were not transferred whole, documenting a product-process structural gap at closing. That gap was contractually absorbed through the October 1, 2018 Transition Services Agreement and related ancillary agreements. Gap 56 is coded 0 because designated Newco employees transferred with the business, Altra's management remained in place with potential A&S additions, and the board added a Fortive-designated director. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A; SRC: SEC accession 0001193125-18-289671, Form 8-K]"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the A&S product lines (Kollmorgen, Portescap, Thomson, Jake Brake) crossed together with the operating companies and the Newco Employees who produce/deliver them under the Employee Matters Agreement, so product and its processes moved together rather than product crossing without processes. gap_56=0: the operational processes and the people/organization moved coherently in tandem \\u2014 Newco Employees transferred to become Altra employees and management was expanded to include A&S members \\u2014 so T5 and T6 aligned at closing. The only process that did not transfer whole was the previously shared corporate service substrate (treasury, tax, IT, purchasing), which was structurally bridged at closing via a Transition Services Agreement, Tax Matters Agreement, and IP Cross-License, so T5 is coded partial rather than a documented gap. T1 is imprint-share given ~54% Newco-holder / ~46% Altra ownership with Altra continuing as listed registrant plus one Fortive-designated board seat.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice frames a whole-business transfer of the A&S platform into Altra: after Merger and Direct Sales Altra was to own and operate the A&S product lines (T4) through Newco and the Direct Sales entities, and Newco Employees were transferred under the Employee Matters Agreement to become Altra employees (T6), so customer-facing products and the people running them crossed together. Core A&S operating processes moved with those operating companies; the separately described shared Fortive corporate functions (treasury, tax, benefits, IT, purchasing) were bridged by a TSA as transitional back-office substrate rather than a documented product-vs-process or process-vs-organization structural mismatch at closing, so gap_45=0 and gap_56=0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The designated A&S product lines crossed to Altra, while shared treasury, tax, benefits, purchasing, and information-systems processes were not transferred whole, documenting a product-process structural gap at closing. That gap was contractually absorbed through the October 1, 2018 Transition Services Agreement and related ancillary agreements. Gap 56 is coded 0 because designated Newco employees transferred with the business, Altra's management remained in place with potential A&S additions, and the board added a Fortive-designated director. [SRC: SEC accession 0001193125-18-239500, Form DEFM14A; SRC: SEC accession 0001193125-18-289671, Form 8-K]\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

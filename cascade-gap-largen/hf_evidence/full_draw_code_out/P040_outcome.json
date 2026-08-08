@@ -1,0 +1,58 @@
+{
+  "case_id": "P040",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "revenues declined $3,281M (2014) to $3,076M (2016); $952M goodwill impairment / $(881)M net loss in 2015; acquired by Meredith and deregistered Jan/Feb 2018",
+      "rationale": "p5_pathway=1: the slice documents realized process/organization fracture over time — successive restructuring/realignment programs the company itself described as \"disruptive to our business,\" organizational streamlining, and a workforce decline from ~7,900 at separation to ~7,450 by end-2016. p4_pathway=uncertain: the slice records product-side revenue decline (advertising/circulation trends) and impairments but does not specifically document a product/process operations-incoherence interface failure, so it cannot be determined. t1 and t2 coded 0 as this is a standalone separation with no documented controlling-intent archetype incoherence or two-business-model incompatibility in the realized record."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by Meredith Corporation (closed January 31, 2018)",
+      "rationale": "The slice does not document product/process incoherence (p4_pathway = 0). However, it explicitly notes that restructuring and cost management initiatives in several functions 'were disruptive to our business' as the company attempted to realign its organizational structure to achieve operational efficiencies and work across brands, indicating process/organization fracture (p5_pathway = 1)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$952 million goodwill impairment in 2015",
+      "rationale": "No realized failure to align a product line with operating processes is documented, so p4 is coded 0. For p5, Time Inc. reported that restructuring and cost-management initiatives across several functions were disruptive to its business, while organizational realignment was intended to improve cross-brand integration and operational efficiency. The workforce also declined from approximately 7,900 to 7,450 during the reporting window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"1\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"revenues declined $3,281M (2014) to $3,076M (2016); $952M goodwill impairment / $(881)M net loss in 2015; acquired by Meredith and deregistered Jan/Feb 2018\", \"rationale\": \"p5_pathway=1: the slice documents realized process/organization fracture over time \\u2014 successive restructuring/realignment programs the company itself described as \\\"disruptive to our business,\\\" organizational streamlining, and a workforce decline from ~7,900 at separation to ~7,450 by end-2016. p4_pathway=uncertain: the slice records product-side revenue decline (advertising/circulation trends) and impairments but does not specifically document a product/process operations-incoherence interface failure, so it cannot be determined. t1 and t2 coded 0 as this is a standalone separation with no documented controlling-intent archetype incoherence or two-business-model incompatibility in the realized record.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by Meredith Corporation (closed January 31, 2018)\",\n  \"rationale\": \"The slice does not document product/process incoherence (p4_pathway = 0). However, it explicitly notes that restructuring and cost management initiatives in several functions 'were disruptive to our business' as the company attempted to realign its organizational structure to achieve operational efficiencies and work across brands, indicating process/organization fracture (p5_pathway = 1).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$952 million goodwill impairment in 2015\",\n  \"rationale\": \"No realized failure to align a product line with operating processes is documented, so p4 is coded 0. For p5, Time Inc. reported that restructuring and cost-management initiatives across several functions were disruptive to its business, while organizational realignment was intended to improve cross-brand integration and operational efficiency. The workforce also declined from approximately 7,900 to 7,450 during the reporting window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "1",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

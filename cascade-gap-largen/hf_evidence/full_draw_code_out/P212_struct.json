@@ -1,0 +1,85 @@
+{
+  "case_id": "P212",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a stock acquisition of Cristal's global TiO2 operating entities (Cristal BV/CAP), so the customer-facing product (TiO2 pigment) crossed the boundary together with the manufacturing plants, mining, and operational facilities that produce it (\"eight manufacturing plants in seven countries\" and ~4,100 employees moving as part of the acquired stock) — product and its processes moved together, so gap_45 = 0. Likewise the operational processes transferred with their operating organization/people via the stock acquisition (the same entities' employees came along, integration committees and continuing-employee provisions were agreed), so processes did not move without the organization that runs them, giving gap_56 = 0. T1 codes \"continue\" because Tronox's controlling intent persists (pre-transaction shareholders ~76%, \"current executive officers expected to remain unchanged\"); the KSA carve-out and FTC/EU-mandated INEOS/Venator divestitures make the product tier a subset rather than a full transfer, but these are excisions, not a product-vs-process mismatch within what was retained."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction involved the acquisition of Cristal's TiO2 business, but certain KSA-specific assets and operations were carved out prior to closing, and North American operations and a specific product line were divested to third parties as a condition of closing. There is no evidence of a structural mismatch between products and processes (gap_45) or processes and people (gap_56) at closing; the carved-out and divested portions appear to have included their respective operations and personnel."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was structured as a stock acquisition of the reorganized Cristal BV/CAP TiO2 operating entities, so customer-facing TiO2 product assets (T4) and the manufacturing/operating processes that produce them (T5) crossed together inside the same legal vehicles; the FTC/EU-mandated NA TiO2 and 8120-grade divestitures likewise packaged product with its operations for pass-through to INEOS/Venator, yielding no product-vs-process structural mismatch at closing. Processes and the ~4,100-person organization likewise moved with the acquired stock; Tronox executive continuity, Cristal board designees, integration committees, and flexible Cristal benefit-plan treatment are documented governance/alignment mechanics rather than a process-without-organization gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was a stock acquisition of Cristal's global TiO2 operating entities (Cristal BV/CAP), so the customer-facing product (TiO2 pigment) crossed the boundary together with the manufacturing plants, mining, and operational facilities that produce it (\\\"eight manufacturing plants in seven countries\\\" and ~4,100 employees moving as part of the acquired stock) \\u2014 product and its processes moved together, so gap_45 = 0. Likewise the operational processes transferred with their operating organization/people via the stock acquisition (the same entities' employees came along, integration committees and continuing-employee provisions were agreed), so processes did not move without the organization that runs them, giving gap_56 = 0. T1 codes \\\"continue\\\" because Tronox's controlling intent persists (pre-transaction shareholders ~76%, \\\"current executive officers expected to remain unchanged\\\"); the KSA carve-out and FTC/EU-mandated INEOS/Venator divestitures make the product tier a subset rather than a full transfer, but these are excisions, not a product-vs-process mismatch within what was retained.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction involved the acquisition of Cristal's TiO2 business, but certain KSA-specific assets and operations were carved out prior to closing, and North American operations and a specific product line were divested to third parties as a condition of closing. There is no evidence of a structural mismatch between products and processes (gap_45) or processes and people (gap_56) at closing; the carved-out and divested portions appear to have included their respective operations and personnel.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was structured as a stock acquisition of the reorganized Cristal BV/CAP TiO2 operating entities, so customer-facing TiO2 product assets (T4) and the manufacturing/operating processes that produce them (T5) crossed together inside the same legal vehicles; the FTC/EU-mandated NA TiO2 and 8120-grade divestitures likewise packaged product with its operations for pass-through to INEOS/Venator, yielding no product-vs-process structural mismatch at closing. Processes and the ~4,100-person organization likewise moved with the acquired stock; Tronox executive continuity, Cristal board designees, integration committees, and flexible Cristal benefit-plan treatment are documented governance/alignment mechanics rather than a process-without-organization gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "subset",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

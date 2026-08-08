@@ -1,0 +1,85 @@
+{
+  "case_id": "P107",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the customer-facing asset (Orchard Crossing retail center) plus its mortgage crossed the ownership boundary onto the consolidated balance sheet, while the producing/delivering processes (property management, leasing) and the people running them were already in-house and continued unchanged — the Company was already the managing partner and operator. Because T5/T6 did not newly transfer but were pre-existing and coherently aligned with the asset already in operation, there is no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0); the transaction merely re-characterized ownership accounting rather than moving an operating organization. The slice explicitly notes no transition-services or merger agreement governs this consolidation because management was already performed in-house, and no gap exists to mitigate (gap_mitigated=NA)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing asset (Orchard Crossing) crossed the ownership boundary onto the consolidated balance sheet (T4). However, the operational processes (T5) and personnel (T6) did not transfer because the Company was already the managing partner operating the property. Since the processes and people were already coherently aligned in-house, there is no structural gap."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the customer-facing asset (Orchard Crossing) moved onto the consolidated balance sheet at fair value, while 'Processes and people that operate the asset did NOT newly transfer at consolidation' because the Company was already managing partner for day-to-day property management, leasing, and related fees; T4 therefore crossed with T5 already in-house and aligned, not without it (gap_45=0). No processes newly transferred or re-engineered apart from organization/people, who likewise 'were already in-house and continued unchanged' and 'did not separately transfer' (gap_56=0); the deal 're-characterized ownership accounting rather than moving an operating organization,' with no TSA."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"null\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the customer-facing asset (Orchard Crossing retail center) plus its mortgage crossed the ownership boundary onto the consolidated balance sheet, while the producing/delivering processes (property management, leasing) and the people running them were already in-house and continued unchanged \\u2014 the Company was already the managing partner and operator. Because T5/T6 did not newly transfer but were pre-existing and coherently aligned with the asset already in operation, there is no product-vs-process mismatch (gap_45=0) and no process-vs-organization mismatch (gap_56=0); the transaction merely re-characterized ownership accounting rather than moving an operating organization. The slice explicitly notes no transition-services or merger agreement governs this consolidation because management was already performed in-house, and no gap exists to mitigate (gap_mitigated=NA).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing asset (Orchard Crossing) crossed the ownership boundary onto the consolidated balance sheet (T4). However, the operational processes (T5) and personnel (T6) did not transfer because the Company was already the managing partner operating the property. Since the processes and people were already coherently aligned in-house, there is no structural gap.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the customer-facing asset (Orchard Crossing) moved onto the consolidated balance sheet at fair value, while 'Processes and people that operate the asset did NOT newly transfer at consolidation' because the Company was already managing partner for day-to-day property management, leasing, and related fees; T4 therefore crossed with T5 already in-house and aligned, not without it (gap_45=0). No processes newly transferred or re-engineered apart from organization/people, who likewise 'were already in-house and continued unchanged' and 'did not separately transfer' (gap_56=0); the deal 're-characterized ownership accounting rather than moving an operating organization,' with no TSA.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

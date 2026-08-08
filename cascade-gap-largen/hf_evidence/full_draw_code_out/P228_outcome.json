@@ -1,0 +1,58 @@
+{
+  "case_id": "P228",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy and equity extinguished without recovery",
+      "rationale": "The provided evidence details a Chapter 11 bankruptcy filing in June 2019 and the subsequent extinguishment of existing equity without recovery. However, it does not document specific operational integration failures at the product/process interface (p4) or the process/organization interface (p5)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11 ~9 mo; equity extinguished; ~$800M assets marketed ~3.3 yrs",
+      "rationale": "The slice documents Chapter 11 filing, extinguishment of the 2018 equity with no recovery, deregistration, later marketing of ~$800M of Permian/Haynesville assets, and a 2023 rebrand under an entirely new executive team, but contains no realized-outcome evidence that an acquired product line could not be aligned with operating processes over time (p4). It likewise does not document fracture at the process/organization interface—operations breaking against people, management, or culture—only ownership change, a new board at emergence, and subsequent leadership replacement without stated operational-integration failure (p5)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Chapter 11 within ~9 months; existing equity extinguished with no recovery'}",
+      "rationale": "{'type': 'string', 'enum': 'Legacy filed for Chapter 11 roughly nine months after closing and recorded a $173.9 million pre-emergence net loss, including $447.9 million of reorganization expense. The plan extinguished existing equity without recovery, replaced the board, and the company later operated under a new executive team, but the slice does not document product/process incoherence or an operations-versus-organization integration fracture specifically.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 bankruptcy and equity extinguished without recovery\",\n  \"rationale\": \"The provided evidence details a Chapter 11 bankruptcy filing in June 2019 and the subsequent extinguishment of existing equity without recovery. However, it does not document specific operational integration failures at the product/process interface (p4) or the process/organization interface (p5).\"\n}.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11 ~9 mo; equity extinguished; ~$800M assets marketed ~3.3 yrs\",\n  \"rationale\": \"The slice documents Chapter 11 filing, extinguishment of the 2018 equity with no recovery, deregistration, later marketing of ~$800M of Permian/Haynesville assets, and a 2023 rebrand under an entirely new executive team, but contains no realized-outcome evidence that an acquired product line could not be aligned with operating processes over time (p4). It likewise does not document fracture at the process/organization interface—operations breaking against people, management, or culture—only ownership change, a new board at emergence, and subsequent leadership replacement without stated operational-integration failure (p5).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Chapter 11 within ~9 months; existing equity extinguished with no recovery\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"Legacy filed for Chapter 11 roughly nine months after closing and recorded a $173.9 million pre-emergence net loss, including $447.9 million of reorganization expense. The plan extinguished existing equity without recovery, replaced the board, and the company later operated under a new executive team, but the slice does not document product/process incoherence or an operations-versus-organization integration fracture specifically.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

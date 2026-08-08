@@ -1,0 +1,58 @@
+{
+  "case_id": "P089",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income $217.6M FY2018 (up from $65.6M FY2017); in-house platform reached 93% of portfolio (~21.6M sq ft)",
+      "rationale": "The slice documents successful realized integration of acquired assets onto the operating platform: the in-house asset management/leasing platform grew to operate ~21.6 million sq ft (93% of portfolio), up from 70% at the 2012 listing, with no documented product/process incoherence (p4=0). Operations were moved onto the in-house platform with no documented fracture between operations and the organization/management/culture (p5=0). Impairments ($8.9M in 2018, $13.9M in 2017) were modest asset-level MOB charges, not evidence of interface disruption, and revenue and net income grew over the window."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $217.6 million for FY2018",
+      "rationale": "The slice documents successful integration of acquired assets onto the in-house platform, which reached 93% of the portfolio. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2018 net income of $217.6 million, up from $65.6 million in FY2017",
+      "rationale": "No product/process disruption is documented; instead, acquired assets were moved onto the in-house operating platform, which managed 93% of the portfolio, or approximately 21.6 million square feet. No process/organization fracture is documented, and the realized record shows revenue, net income, and NOI growth alongside expanded in-house management."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net income $217.6M FY2018 (up from $65.6M FY2017); in-house platform reached 93% of portfolio (~21.6M sq ft)\", \"rationale\": \"The slice documents successful realized integration of acquired assets onto the operating platform: the in-house asset management/leasing platform grew to operate ~21.6 million sq ft (93% of portfolio), up from 70% at the 2012 listing, with no documented product/process incoherence (p4=0). Operations were moved onto the in-house platform with no documented fracture between operations and the organization/management/culture (p5=0). Impairments ($8.9M in 2018, $13.9M in 2017) were modest asset-level MOB charges, not evidence of interface disruption, and revenue and net income grew over the window.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of $217.6 million for FY2018\",\n  \"rationale\": \"The slice documents successful integration of acquired assets onto the in-house platform, which reached 93% of the portfolio. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5).\"",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2018 net income of $217.6 million, up from $65.6 million in FY2017\",\n  \"rationale\": \"No product/process disruption is documented; instead, acquired assets were moved onto the in-house operating platform, which managed 93% of the portfolio, or approximately 21.6 million square feet. No process/organization fracture is documented, and the realized record shows revenue, net income, and NOI growth alongside expanded in-house management.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

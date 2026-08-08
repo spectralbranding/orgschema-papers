@@ -1,0 +1,85 @@
+{
+  "case_id": "P203",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a reverse triangular merger in which the whole ESL entity, including its three operating segments, was acquired intact and became a wholly owned TransDigm subsidiary with no segment carve-outs at closing (DEFM14A p.31, structural summary pp.1,30-31); thus the customer-facing products (T4) and the operational processes/segments that produce them (T5) crossed the ownership boundary together as one intact entity, so gap_45 = 0. Likewise the operating processes moved intact alongside the workforce, with the merger agreement binding TransDigm to preserve continuing-employee compensation, benefits, and service credit for one year and requiring ESL to preserve its business organizations pending closing (DEFM14A pp.71,77-78), so processes and the people running them stayed aligned, giving gap_56 = 0 despite full board/officer turnover. Because no structural transfer gap is documented, gap_mitigated = NA; the absence of any TSA/shared-services agreement is noted but not needed since the whole entity transferred intact."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence explicitly states that ESL as a whole corporate entity, including its subsidiaries and operating segments, was acquired intact without any carve-outs at closing. Therefore, the products (T4) and the operational processes (T5) transferred together, resulting in no gap_45. Similarly, the organization and employees (T6) transferred alongside the operations, resulting in no gap_56."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The reverse triangular merger transferred ESL as a whole corporate entity — stock, subsidiaries, and all three technical-capability segments — intact to TransDigm with no segment carve-outs, so customer-facing products (T4) and the operational processes that produce them (T5) crossed together (DEFM14A pp. 1, 30-31). At closing the workforce remained as continuing ESL employees under contractual compensation/benefits/service-credit protections, while only the board and named officers were replaced by TransDigm designees; thus T5 processes and the T6 organization that runs them were not structurally separated (8-K 2019-03-14 Item 5.02; DEFM14A pp. 77-78). No transition-services or shared-services agreement is described among the transaction documents, but none was required for alignment because the full operating entity moved as one."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was a reverse triangular merger in which the whole ESL entity, including its three operating segments, was acquired intact and became a wholly owned TransDigm subsidiary with no segment carve-outs at closing (DEFM14A p.31, structural summary pp.1,30-31); thus the customer-facing products (T4) and the operational processes/segments that produce them (T5) crossed the ownership boundary together as one intact entity, so gap_45 = 0. Likewise the operating processes moved intact alongside the workforce, with the merger agreement binding TransDigm to preserve continuing-employee compensation, benefits, and service credit for one year and requiring ESL to preserve its business organizations pending closing (DEFM14A pp.71,77-78), so processes and the people running them stayed aligned, giving gap_56 = 0 despite full board/officer turnover. Because no structural transfer gap is documented, gap_mitigated = NA; the absence of any TSA/shared-services agreement is noted but not needed since the whole entity transferred intact.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The evidence explicitly states that ESL as a whole corporate entity, including its subsidiaries and operating segments, was acquired intact without any carve-outs at closing. Therefore, the products (T4) and the operational processes (T5) transferred together, resulting in no gap_45. Similarly, the organization and employees (T6) transferred alongside the operations, resulting in no gap_56.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The reverse triangular merger transferred ESL as a whole corporate entity — stock, subsidiaries, and all three technical-capability segments — intact to TransDigm with no segment carve-outs, so customer-facing products (T4) and the operational processes that produce them (T5) crossed together (DEFM14A pp. 1, 30-31). At closing the workforce remained as continuing ESL employees under contractual compensation/benefits/service-credit protections, while only the board and named officers were replaced by TransDigm designees; thus T5 processes and the T6 organization that runs them were not structurally separated (8-K 2019-03-14 Item 5.02; DEFM14A pp. 77-78). No transition-services or shared-services agreement is described among the transaction documents, but none was required for alignment because the full operating entity moved as one.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

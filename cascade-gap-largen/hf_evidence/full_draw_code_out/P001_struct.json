@@ -1,0 +1,85 @@
+{
+  "case_id": "P001",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product operation (Test & Measurement / Industrial Technologies / Petroleum lines) crossed the ownership boundary into the newly formed Delaware corporation, but the core operating-process substrate, the Danaher Business System, was \"retained by Danaher and LICENSED to Fortive rather than transferred\" via a \"non-exclusive, worldwide, non-transferable, perpetual license,\" and shared back-office systems were \"in the process of creating its own\" — a product-vs-process ownership mismatch at closing, contractually absorbed via the DBS license and transition services agreement (effective upon distribution, services \"at cost,\" terminating at second anniversary), hence gap_mitigated=yes. gap_56=0: the process substrate (whatever moved) traveled coherently with its people — the management team \"Led by James A. Lico\" and ~22,000 employees moved with the business under an employee matters agreement governing \"the assignment and transfer of employees,\" so no process-without-organization mismatch is documented."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the customer-facing Fortive product lines and Fortive Assets transferred into the spinco at closing, while the core operating-process substrate (DBS) was expressly retained by Danaher and conveyed only by non-exclusive perpetual license (renamed FBS), not by ownership transfer; shared back-office processes likewise remained on Danaher systems pending replacement. gap_56=0 because the management team and approximately 22,000 employees were assigned and transferred with the business under the employee matters agreement at closing, so organization moved alongside the (licensed/TSA-bridged) processes. The structural process gap was contractually absorbed at closing by the DBS license agreement and the transition services agreement."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Fortive product businesses and related assets crossed the ownership boundary, while the DBS operating-process substrate remained with Danaher and was provided through a non-exclusive license; shared back-office processes also were not standalone at closing. This product-process mismatch was contractually absorbed through the DBS license and the transition services agreement covering IT, facilities, accounting, financial, and administrative services. No T5-T6 gap is documented because the management team and approximately 22,000 employees moved with the business, with employee assignments and benefits addressed by the employee matters agreement."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replicate\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product operation (Test & Measurement / Industrial Technologies / Petroleum lines) crossed the ownership boundary into the newly formed Delaware corporation, but the core operating-process substrate, the Danaher Business System, was \\\"retained by Danaher and LICENSED to Fortive rather than transferred\\\" via a \\\"non-exclusive, worldwide, non-transferable, perpetual license,\\\" and shared back-office systems were \\\"in the process of creating its own\\\" \\u2014 a product-vs-process ownership mismatch at closing, contractually absorbed via the DBS license and transition services agreement (effective upon distribution, services \\\"at cost,\\\" terminating at second anniversary), hence gap_mitigated=yes. gap_56=0: the process substrate (whatever moved) traveled coherently with its people \\u2014 the management team \\\"Led by James A. Lico\\\" and ~22,000 employees moved with the business under an employee matters agreement governing \\\"the assignment and transfer of employees,\\\" so no process-without-organization mismatch is documented.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the customer-facing Fortive product lines and Fortive Assets transferred into the spinco at closing, while the core operating-process substrate (DBS) was expressly retained by Danaher and conveyed only by non-exclusive perpetual license (renamed FBS), not by ownership transfer; shared back-office processes likewise remained on Danaher systems pending replacement. gap_56=0 because the management team and approximately 22,000 employees were assigned and transferred with the business under the employee matters agreement at closing, so organization moved alongside the (licensed/TSA-bridged) processes. The structural process gap was contractually absorbed at closing by the DBS license agreement and the transition services agreement.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Fortive product businesses and related assets crossed the ownership boundary, while the DBS operating-process substrate remained with Danaher and was provided through a non-exclusive license; shared back-office processes also were not standalone at closing. This product-process mismatch was contractually absorbed through the DBS license and the transition services agreement covering IT, facilities, accounting, financial, and administrative services. No T5-T6 gap is documented because the management team and approximately 22,000 employees moved with the business, with employee assignments and benefits addressed by the employee matters agreement.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replicate",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

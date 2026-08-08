@@ -1,0 +1,85 @@
+{
+  "case_id": "P312",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice represents the product (GCI-brand operating business, brand and customer base) as unchanged and the operating processes as continuing \"consistent with Legacy GCI's past practice\" through the ownership-boundary changes, so product and its producing/delivering processes moved together — gap_45 = 0. Likewise, the current directors and officers and named principals (Malone as Chairman, Maffei as President/CEO) were to remain with the surviving corporation, so the operational processes stayed aligned with the people/management running them — gap_56 = 0. The legal vehicle merely swapped domicile (Alaska to Delaware) with the surviving corporation succeeding to all assets/liabilities and \"no changes ... expected to the financial presentation,\" while a new controlling shareholder base was installed via contribution-then-split-off (T1 replace). Because no structural gap was coded, gap_mitigated is NA."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states the GCI brand and customer base (T4) remained unchanged through the contribution/split-off/reincorporation while operational processes (T5) were likewise 'continuing unaltered' and 'consistent with Legacy GCI's past practice,' so product and process moved together. gap_56 is 0 because the same closing structure kept T5 unaltered alongside T6: 'the current directors and officers of GCI Liberty... will remain the directors and officers of the surviving corporation,' with Malone and Maffei continuing in their roles; no product-vs-process or process-vs-organization structural mismatch is documented at closing, and no TSA was used to bridge one."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The GCI-branded communications business, customer base, and products remained inside the transferred entity, while its operational processes continued consistent with Legacy GCI's past practice; therefore, no product-process mismatch was documented at closing. The current directors and officers remained in place, including the continuing Chairman and President/CEO, while operations continued unaltered, so no process-organization mismatch was documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice represents the product (GCI-brand operating business, brand and customer base) as unchanged and the operating processes as continuing \\\"consistent with Legacy GCI's past practice\\\" through the ownership-boundary changes, so product and its producing/delivering processes moved together \\u2014 gap_45 = 0. Likewise, the current directors and officers and named principals (Malone as Chairman, Maffei as President/CEO) were to remain with the surviving corporation, so the operational processes stayed aligned with the people/management running them \\u2014 gap_56 = 0. The legal vehicle merely swapped domicile (Alaska to Delaware) with the surviving corporation succeeding to all assets/liabilities and \\\"no changes ... expected to the financial presentation,\\\" while a new controlling shareholder base was installed via contribution-then-split-off (T1 replace). Because no structural gap was coded, gap_mitigated is NA.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states the GCI brand and customer base (T4) remained unchanged through the contribution/split-off/reincorporation while operational processes (T5) were likewise 'continuing unaltered' and 'consistent with Legacy GCI's past practice,' so product and process moved together. gap_56 is 0 because the same closing structure kept T5 unaltered alongside T6: 'the current directors and officers of GCI Liberty... will remain the directors and officers of the surviving corporation,' with Malone and Maffei continuing in their roles; no product-vs-process or process-vs-organization structural mismatch is documented at closing, and no TSA was used to bridge one.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The GCI-branded communications business, customer base, and products remained inside the transferred entity, while its operational processes continued consistent with Legacy GCI's past practice; therefore, no product-process mismatch was documented at closing. The current directors and officers remained in place, including the continuing Chairman and President/CEO, while operations continued unaltered, so no process-organization mismatch was documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P165",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the Plan splits the previously shared two-business group into two independent companies (radio/audio retained by Reorganized iHeart; outdoor-advertising as New CCOH), with the radio business first transferred to a newly formed subsidiary and CCOH merged into a surviving renamed vehicle — a 1-to-N split at T2/T3/T4. gap_45=0 because the customer-facing operating assets of each business move together with their respective businesses; there is no documented product-vs-process mismatch at closing. gap_56=0 because the historically shared corporate-services, cash-management, and IP substrate (T5) is not orphaned but is explicitly terminated and re-bridged by a new transition services agreement, a $200M revolver, and tax-indemnity/release provisions, so process is re-engineered coherently alongside the separated organizations rather than transferring without its people/management."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the Plan separates radio and outdoor into two independent companies, with the radio business transferred to a new iHeartCommunications subsidiary and outdoor concentrated in New CCOH, so customer-facing products move with their respective operating businesses rather than without them (gap_45=0). The same closing structure expressly terminates the shared corporate-services, cash-sweep, and IP/royalty substrate and replaces it with a new transition services agreement (plus a bridge revolver), documenting that shared operational processes were re-engineered without the underlying organization transferring intact and that this mismatch was contractually absorbed by the TSA (gap_56=1, mitigated=yes)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "1-N",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The Plan split the customer-facing radio/audio and outdoor-advertising businesses into two independent companies, while the previously shared corporate-services, cash-management, and IP substrate was terminated rather than transferred intact. This product-process mismatch was contractually absorbed at closing through a new transition services agreement that superseded the prior Corporate Services Agreement, so gap_45 is documented and mitigated. The slice does not document a corresponding mismatch between the reconfigured processes and the people, management, or culture operating them; therefore no closing-structure gap_56 is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-N\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"1-N\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"At closing the Plan splits the previously shared two-business group into two independent companies (radio/audio retained by Reorganized iHeart; outdoor-advertising as New CCOH), with the radio business first transferred to a newly formed subsidiary and CCOH merged into a surviving renamed vehicle \\u2014 a 1-to-N split at T2/T3/T4. gap_45=0 because the customer-facing operating assets of each business move together with their respective businesses; there is no documented product-vs-process mismatch at closing. gap_56=0 because the historically shared corporate-services, cash-management, and IP substrate (T5) is not orphaned but is explicitly terminated and re-bridged by a new transition services agreement, a $200M revolver, and tax-indemnity/release provisions, so process is re-engineered coherently alongside the separated organizations rather than transferring without its people/management.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the Plan separates radio and outdoor into two independent companies, with the radio business transferred to a new iHeartCommunications subsidiary and outdoor concentrated in New CCOH, so customer-facing products move with their respective operating businesses rather than without them (gap_45=0). The same closing structure expressly terminates the shared corporate-services, cash-sweep, and IP/royalty substrate and replaces it with a new transition services agreement (plus a bridge revolver), documenting that shared operational processes were re-engineered without the underlying organization transferring intact and that this mismatch was contractually absorbed by the TSA (gap_56=1, mitigated=yes).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-N\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"1-N\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The Plan split the customer-facing radio/audio and outdoor-advertising businesses into two independent companies, while the previously shared corporate-services, cash-management, and IP substrate was terminated rather than transferred intact. This product-process mismatch was contractually absorbed at closing through a new transition services agreement that superseded the prior Corporate Services Agreement, so gap_45 is documented and mitigated. The slice does not document a corresponding mismatch between the reconfigured processes and the people, management, or culture operating them; therefore no closing-structure gap_56 is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-N",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-N",
+    "sigma_T5": "partial",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

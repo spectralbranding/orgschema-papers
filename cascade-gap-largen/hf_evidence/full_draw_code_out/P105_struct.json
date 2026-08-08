@@ -1,0 +1,85 @@
+{
+  "case_id": "P105",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was an equity purchase of all outstanding interests of IODC and its U.S. subsidiaries \"as a going concern,\" so the customer-facing facilities (728,000 sq ft, four data centers, the Cyxtera anchor lease) and the operating company/facilities operations \"transferred together\" — product and process moved coherently, so gap_45=0. The acquirer's statement welcoming \"our expanded team of experienced and highly skilled professionals\" indicates the operating workforce (T6) moved with the operations (T5), so gap_56=0. No transitional-services or shared-services agreement was disclosed, but since no gap was coded, mitigation is NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the transaction was an equity purchase of the operating entity, meaning the data center facilities (T4) and their operations (T5) transferred together as a going concern. Furthermore, the acquirer welcomed the 'expanded team of experienced and highly skilled professionals,' indicating the workforce (T6) moved alongside the operations, resulting in no structural gaps at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing data-center facilities and customer relationships transferred together with IODC’s operating entity and the facilities’ operations as a going concern, so no product-process mismatch is documented at closing [SRC: SEC accession 0001104659-18-001664, Form 8-K Item 2.01; Form 8-K EX-99.1]. The acquired workforce was described as an expanded team of experienced professionals welcomed into Iron Mountain, indicating that the people running the transferred operations moved with them; therefore, no process-organization gap is documented [SRC: SEC accession 0001104659-18-001664, Form 8-K EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was an equity purchase of all outstanding interests of IODC and its U.S. subsidiaries \\\"as a going concern,\\\" so the customer-facing facilities (728,000 sq ft, four data centers, the Cyxtera anchor lease) and the operating company/facilities operations \\\"transferred together\\\" \\u2014 product and process moved coherently, so gap_45=0. The acquirer's statement welcoming \\\"our expanded team of experienced and highly skilled professionals\\\" indicates the operating workforce (T6) moved with the operations (T5), so gap_56=0. No transitional-services or shared-services agreement was disclosed, but since no gap was coded, mitigation is NA.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice explicitly states that the transaction was an equity purchase of the operating entity, meaning the data center facilities (T4) and their operations (T5) transferred together as a going concern. Furthermore, the acquirer welcomed the 'expanded team of experienced and highly skilled professionals,' indicating the workforce (T6) moved alongside the operations, resulting in no structural gaps at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing data-center facilities and customer relationships transferred together with IODC’s operating entity and the facilities’ operations as a going concern, so no product-process mismatch is documented at closing [SRC: SEC accession 0001104659-18-001664, Form 8-K Item 2.01; Form 8-K EX-99.1]. The acquired workforce was described as an expanded team of experienced professionals welcomed into Iron Mountain, indicating that the people running the transferred operations moved with them; therefore, no process-organization gap is documented [SRC: SEC accession 0001104659-18-001664, Form 8-K EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

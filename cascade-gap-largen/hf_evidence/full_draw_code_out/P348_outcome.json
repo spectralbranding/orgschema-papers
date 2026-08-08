@@ -1,0 +1,58 @@
+{
+  "case_id": "P348",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "operational continuity; no quantified trajectory disclosed (division not in a reportable segment)",
+      "rationale": "The slice documents that Markel's FY2020 and FY2022 10-Ks describe a continuing \"State National division\" writing the same collateral-protection and program-services (fronting) lines through the same named underwriting subsidiaries, indicating the acquired product lines remained aligned with operations over the window — no product/process incoherence is documented (p4=0). No disruption at the operations-versus-people/management/culture interface is documented; the business is described as separately managed and operationally continuous, with no fracture reported (p5=0). No quantified financial trajectory is disclosed and the outcome is coded uncertain only on scalars, but no realized disruption on any pathway is documented."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no quantified trajectory; division retained with operational continuity",
+      "rationale": "Markel’s FY2020 and FY2022 Form 10-K filings describe a continuing State National division writing the same collateral-protection and program-services lines through the same named underwriting subsidiaries, with no documented product/process misalignment. The slice likewise records no operations-versus-organization fracture; the only realized record is qualitative continuity after deregistration, so both p4_pathway and p5_pathway are coded 0 (none documented)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "State National division remained operational through FY2022; no standalone quantified financial metric",
+      "rationale": "Markel’s FY2020 and FY2022 filings continued to describe the State National division performing the same collateral-protection and program-services businesses through the same named underwriting subsidiaries, with no documented product/process disruption. The filings also document continued separate management of program services but report no operational-versus-organization fracture, management breakdown, or cultural integration failure."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"operational continuity; no quantified trajectory disclosed (division not in a reportable segment)\", \"rationale\": \"The slice documents that Markel's FY2020 and FY2022 10-Ks describe a continuing \\\"State National division\\\" writing the same collateral-protection and program-services (fronting) lines through the same named underwriting subsidiaries, indicating the acquired product lines remained aligned with operations over the window \\u2014 no product/process incoherence is documented (p4=0). No disruption at the operations-versus-people/management/culture interface is documented; the business is described as separately managed and operationally continuous, with no fracture reported (p5=0). No quantified financial trajectory is disclosed and the outcome is coded uncertain only on scalars, but no realized disruption on any pathway is documented.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no quantified trajectory; division retained with operational continuity\",\n  \"rationale\": \"Markel’s FY2020 and FY2022 Form 10-K filings describe a continuing State National division writing the same collateral-protection and program-services lines through the same named underwriting subsidiaries, with no documented product/process misalignment. The slice likewise records no operations-versus-organization fracture; the only realized record is qualitative continuity after deregistration, so both p4_pathway and p5_pathway are coded 0 (none documented).\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"State National division remained operational through FY2022; no standalone quantified financial metric\",\n  \"rationale\": \"Markel’s FY2020 and FY2022 filings continued to describe the State National division performing the same collateral-protection and program-services businesses through the same named underwriting subsidiaries, with no documented product/process disruption. The filings also document continued separate management of program services but report no operational-versus-organization fracture, management breakdown, or cultural integration failure.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

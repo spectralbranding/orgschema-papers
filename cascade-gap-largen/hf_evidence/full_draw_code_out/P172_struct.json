@@ -1,0 +1,85 @@
+{
+  "case_id": "P172",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a Chapter 11 reorganization structured as a merger of the debtor subsidiary DH with and into its parent Dynegy Inc. (surviving entity), with DH ceasing separate registration (T3 N-1: two legal vehicles collapsed into one surviving entity). The generation product/assets (Roseton/Danskammer, the reacquired Coal Holdco, ~3,100 MW) and their operating processes moved together within the same corporate group, and coal-supply contracts continued flowing to Dynegy Midwest Generation as an intercompany arrangement spanning the structure — product and process were aligned coherently at closing, so gap_45=0. The operating processes and the running organization stayed within the combined Dynegy group with a creditor-selected board installed to run the surviving entity from the effective date, showing no structural process-vs-people mismatch, so gap_56=0. T1 is coded replace because old equity (DH interests and Dynegy Inc. common stock) was cancelled and creditors received the substantial majority of the reorganized company's new equity, installing new controlling ownership."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a Chapter 11 reorganization where DH merged into its parent Dynegy Inc. (T3 N-1), with creditors taking 99% of the new equity and installing a new board (T1 replace). The business operations, products, and organization transferred intact to the surviving entity without any documented structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The confirmed Plan merged DH into Dynegy Inc. as Surviving Entity, with Coal Holdco reacquired and remaining generation plus the intercompany coal-supply onward-sale arrangement continuing under that single vehicle, so the customer-facing generation layer and its operating processes were not structurally separated at closing (gap_45=0). A creditor-agreed new board was installed at the Effective Date together with the 99%/1% equity allocation to claimholders, and the slice does not document processes being re-engineered or transferred without organizational/governance alignment alongside them (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"swap\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a Chapter 11 reorganization structured as a merger of the debtor subsidiary DH with and into its parent Dynegy Inc. (surviving entity), with DH ceasing separate registration (T3 N-1: two legal vehicles collapsed into one surviving entity). The generation product/assets (Roseton/Danskammer, the reacquired Coal Holdco, ~3,100 MW) and their operating processes moved together within the same corporate group, and coal-supply contracts continued flowing to Dynegy Midwest Generation as an intercompany arrangement spanning the structure \\u2014 product and process were aligned coherently at closing, so gap_45=0. The operating processes and the running organization stayed within the combined Dynegy group with a creditor-selected board installed to run the surviving entity from the effective date, showing no structural process-vs-people mismatch, so gap_56=0. T1 is coded replace because old equity (DH interests and Dynegy Inc. common stock) was cancelled and creditors received the substantial majority of the reorganized company's new equity, installing new controlling ownership.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a Chapter 11 reorganization where DH merged into its parent Dynegy Inc. (T3 N-1), with creditors taking 99% of the new equity and installing a new board (T1 replace). The business operations, products, and organization transferred intact to the surviving entity without any documented structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0).\"\n}\n}.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The confirmed Plan merged DH into Dynegy Inc. as Surviving Entity, with Coal Holdco reacquired and remaining generation plus the intercompany coal-supply onward-sale arrangement continuing under that single vehicle, so the customer-facing generation layer and its operating processes were not structurally separated at closing (gap_45=0). A creditor-agreed new board was installed at the Effective Date together with the 99%/1% equity allocation to claimholders, and the slice does not document processes being re-engineered or transferred without organizational/governance alignment alongside them (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "swap",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

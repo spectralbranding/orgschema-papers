@@ -1,0 +1,85 @@
+{
+  "case_id": "P061",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "On gap_45: the customer-facing weight-management operation (T4) did not move out of its vehicles — only the 49% equity crossed, and the Hong Kong entity and PRC WFOE that produce/deliver the service \"remained in place\" (§2.1, §Recitals A), so product and its operating processes stayed together within the same continuing WFOE; no product-vs-process mismatch at closing. On gap_56: the operational/governance layer was re-set at closing — the founding JV agreement and the DAPM services agreement terminated (§3.3(b),(c),(d)) — while the counterparty's directors, supervisors, and management delivered resignation letters and were replaced (§3.2(a)(iii)-(v)); processes were re-engineered/severed while the counterparty's people were exited rather than transferred, and the filing records \"no transitional-services, operating, or shared-services agreement carrying Danone-provided support forward past Closing,\" so the gap is not contractually mitigated."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction transferred the remaining equity of the joint venture to Weight Watchers, but Danone's appointed directors and management personnel resigned at closing (T6 subset). Additionally, the pre-existing services agreement from Danone was terminated without a replacement transition services agreement, creating a structural gap between the continuing operations and the departing management/support."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice establishes that the customer-facing China weight-management operation remained inside the same HK entity and PRC WFOE whose 49% equity crossed to WW, with no structural separation of product from the entity’s own delivery processes at closing (gap_45=0). Danone-appointed directors/supervisors/management resigned at Closing in tandem with termination of the DAPM–WFOE services agreement and the JV agreement, so the counterparty process exit and people exit were aligned rather than a processes-without-organization mismatch (gap_56=0); the filing records no TSA bridging any shared substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"terminate\", \"sigma_T6\": \"terminate\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"On gap_45: the customer-facing weight-management operation (T4) did not move out of its vehicles \\u2014 only the 49% equity crossed, and the Hong Kong entity and PRC WFOE that produce/deliver the service \\\"remained in place\\\" (\\u00a72.1, \\u00a7Recitals A), so product and its operating processes stayed together within the same continuing WFOE; no product-vs-process mismatch at closing. On gap_56: the operational/governance layer was re-set at closing \\u2014 the founding JV agreement and the DAPM services agreement terminated (\\u00a73.3(b),(c),(d)) \\u2014 while the counterparty's directors, supervisors, and management delivered resignation letters and were replaced (\\u00a73.2(a)(iii)-(v)); processes were re-engineered/severed while the counterparty's people were exited rather than transferred, and the filing records \\\"no transitional-services, operating, or shared-services agreement carrying Danone-provided support forward past Closing,\\\" so the gap is not contractually mitigated.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction transferred the remaining equity of the joint venture to Weight Watchers, but Danone's appointed directors and management personnel resigned at closing (T6 subset). Additionally, the pre-existing services agreement from Danone was terminated without a replacement transition services agreement, creating a structural gap between the continuing operations and the departing management/support.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice establishes that the customer-facing China weight-management operation remained inside the same HK entity and PRC WFOE whose 49% equity crossed to WW, with no structural separation of product from the entity’s own delivery processes at closing (gap_45=0). Danone-appointed directors/supervisors/management resigned at Closing in tandem with termination of the DAPM–WFOE services agreement and the JV agreement, so the counterparty process exit and people exit were aligned rather than a processes-without-organization mismatch (gap_56=0); the filing records no TSA bridging any shared substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "terminate",
+    "sigma_T6": "terminate",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

@@ -1,0 +1,223 @@
+ 
+
+cvia-8k_20200629.htm
+
+ false 
+ 0001722287 
+
+ 0001722287 
+
+ 2020-06-29 
+ 2020-06-29 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON, D.C. 20549 
+ 
+ FORM 8-K 
+ 
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): June 30, 2020 ( June 29, 2020 ) 
+ 
+ COVIA HOLDINGS CORPORATION 
+ (Exact name of Registrant as Specified in Its Charter) 
+
+ Delaware 
+ 
+ 001-38510 
+ 
+ 13-2656671 
+
+ (State or Other Jurisdiction 
+ of Incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer 
+ Identification No.) 
+
+ 3 Summit Park Drive , Suite 700 , 
+ Independence , Ohio 
+
+ 44131 
+
+ (Address of Principal Executive Offices) 
+
+ (Zip Code) 
+
+ Registrant';s Telephone Number, Including Area Code: ( 800 ) 255-7263 
+ Not Applicable 
+ (Former Name or Former Address, if Changed Since Last Report) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+
+ Trading 
+ Symbol(s) 
+
+ Name of each exchange on which registered 
+
+ Common Stock 
+
+ CVIA 
+
+ New York Stock Exchange 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;&#8201;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;&#8201;240.12b-2 of this chapter). 
+ Emerging growth company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01. 
+ 
+ Entry into a Material Definitive Agreement. 
+ Restructuring Support Agreement 
+ On June 29, 2020, Covia Holdings Corporation (the ";Company";) and certain of its direct and indirect subsidiaries (collectively, the ";Company Parties";) entered into a Restructuring Support Agreement (the ";Restructuring Support Agreement";) with certain creditors (the ";Consenting Stakeholders";) under its Credit and Guaranty Agreement, dated as of June 1, 2018 (as amended, restated, amended and restated, supplemented or otherwise modified from time to time, the ";Term Loan Agreement";), by and among the Company, as borrower, certain subsidiaries of the Company, as guarantors, Barclays Bank plc, as administrative agent, and the lenders party thereto from time to time (the ";Term Loan Lenders";). The Restructuring Support Agreement contemplates agreed-upon terms for a prearranged plan of reorganization (the ";Plan";). 
+ The Consenting Stakeholders as of the Agreement Effective Date (as defined in the Restructuring Support Agreement) represent at least a majority of the aggregate principal amount of the lenders under the Term Loan Agreement. Any holder of term loans under the Term Loan Agreement may become a Consenting Stakeholder by executing a joinder to the Restructuring Support Agreement after the Agreement Effective Date. 
+ Under the Restructuring Support Agreement, the Consenting Stakeholders have agreed, subject to certain terms and conditions, to support a financial restructuring (the ";Restructuring";) of the existing debt of, existing equity interests in, and certain other obligations of the Company Parties, pursuant to the Plan to be filed in cases commenced under chapter 11 (the ";Chapter 11 Cases";) of title 11 of the United States Code (the ";Bankruptcy Code";). 
+ The Plan will be implemented in accordance with the restructuring term sheet attached to, and incorporated into, the Restructuring Support Agreement (the ";Term Sheet";) (such transactions described in, and in accordance with the Restructuring Support Agreement and the Term Sheet, the ";Restructuring Transactions";) which, among other things, contemplates: 
+
+ &#8226; 
+ 
+ the Restructuring Transactions will be implemented through prearranged Chapter 11 Cases by the Company Parties to pursue confirmation of the Plan, on which votes will be solicited from (i) the Term Loan Lenders and holders of claims under certain interest rate swap agreements to which the Company is a party (such claims, ";Swap Agreement Claims";) and (ii) certain holders of general unsecured claims&#59; 
+
+ &#8226; 
+ 
+ the Receivables Facility (as defined below) will be terminated and replaced with a letter of credit facility (the ";L/C Facility";) pursuant to an interim order authorizing, among other things, (i) the Company';s funding of a new letter of credit collateral account held at Covia Financing LLC, a special purpose entity and wholly owned subsidiary of the Company (";Covia Financing";), (ii) entry into the Payoff and Reassignment Agreement (the ";Payoff Agreement";), among the Company, Covia Financing, the sub-originators party thereto (the ";Sub-Originators";), PNC Bank, National Association (";PNC";) , and PNC Capital Markets LLC (";PNC Capital";), (iii) the Company';s and the Sub-Originators'; entry into, and performance of, their respective obligations under the Payoff Agreement and, as applicable, the Reimbursement Agreement for Cash-Collateralized Standby Letters of Credit, among PNC, Covia Financing, and the Company (the ";Reimbursement Agreement"; and, together with the Payoff Agreement, the ";Letter of Credit Agreements";), and (iv) execution of the transactions contemplated by the Letter of Credit Agreements&#59; 
+
+ &#8226; 
+ 
+ on the effective date of the Plan, the reorganized Company Parties will enter into a $825 million senior secured term loan (the ";New Term Loan";) with an interest rate of LIBOR + 400 bps (100 bps floor), payable in cash unless the Company elects a PIK and cash option, a minimum liquidity covenant of $50 million to be tested quarterly, and on other terms reasonably acceptable to the Company and the Consenting Stakeholders as set forth in a supplement to the Plan&#59; 
+
+ &#8226; 
+ 
+ on the effective date of the Plan, the reorganized Company Parties may enter into at least a $100 million senior secured revolving credit facility (the ";Exit Facility";) on terms reasonably acceptable to the Company and the Consenting Stakeholders, with the terms of the Exit Facility being set forth in a supplement to the Plan and sufficient to replace the Company Parties'; existing letters of credit and fund their ongoing liquidity&#59; 
+
+ &#8226; 
+ 
+ the Term Loan Lenders and holders of Swap Agreement Claims will receive, in exchange for their claims under the Term Loan Agreement (the ";Term Loan Claims";) and Swap Agreement Claims, respectively, their pro rata share of (i) all excess cash on the Company';s balance sheet pro forma for all remaining professional fees expected to be paid through the date upon which the Company emerges from bankruptcy (the ";Emergence Date";) as of the date of the last available month-end balance sheet as of ten business days prior to the Emergence Date as of the effective date of the Plan, subject to minimum liquidity and cash requirements and working capital adjustments, net of any proceeds associated with receipt of the CARES Act Tax Refund&#59; 
+ 2 
+
+ (ii) $825 million in take-back debt pursuant to the New Term Loan&#59; and (iii) 100% of the equity in the reorganized Company, subject to adjustment for treatment of general unsecured claims and dilution from a new management incentive plan of the reorganized Company (the ";MIP";) &#59; 
+
+ &#8226; 
+ 
+ the holders of claims under an industrial revenue bond issued by the Company and certain other secured debt of the Company (such claims, the ";Other Secured Claims";) will have such claims reinstated&#59; 
+
+ &#8226; 
+ 
+ the holders of general unsecured claims will receive their pro rata share of a to be determined portion of the equity in the reorganized Company, subject to dilution from the MIP&#59; and 
+
+ &#8226; 
+ 
+ on the effective date of the Plan, (i) the Term Loan Claims, Swap Agreement Claims, general unsecured claims, and existing equity interests of the Company will be cancelled, released, and extinguished and will be of no further force and effect, (ii) the L/C Facility may be reinstated (or refinanced with the Exit Facility), and (iii) the Other Secured Claims will be reinstated. 
+ In accordance with the Restructuring Support Agreement, the Consenting Stakeholders agreed, among other things, to: (i) support the Restructuring Transactions and vote and exercise any powers or rights available to it (including in any board, shareholders';, or creditors'; meeting or in any process requiring voting or approval to which they are legally entitled to participate), in each case, in favor of any matter requiring approval to the extent necessary to implement the Restructuring Transactions&#59; (ii) use commercially reasonable efforts to cooperate with and assist the Company Parties in obtaining additional support for the Restructuring Transactions from the Company Parties'; other stakeholders&#59; (iii) vote and consent to accept the Plan&#59; (iv) negotiate in good faith and use commercially reasonable efforts to execute and implement the Definitive Documents (as defined in the Restructuring Support Agreement) and any other required agreements to effectuate and consummate the Restructuring Transactions as contemplated by this Restructuring Support Agreement to which it is required to be a party&#59; (v) not to object to, delay, impede, or take any other action to interfere with acceptance, implementation, or consummation of the Restructuring Transactions&#59; and (vi) except as permitted in the Restructuring Support Agreement, not transfer any ownership (including any beneficial ownership as defined in Rule 13d-3 under the Securities Exchange Act of 1934, as amended) held by each Consenting Stakeholder. 
+ In accordance with the Restructuring Support Agreement, the Company Parties agreed, among other things, to: (i) support and take all steps necessary and desirable to consummate the Restructuring Transactions in accordance with the Restructuring Support Agreement&#59; (ii) not take any action, that is inconsistent in any material respect, or that would reasonably be expected to prevent, interfere with, delay, frustrate or impede approval, implementation and consummation of the Restructuring Transactions&#59; (iii) to the extent any legal or structural impediment arises that would prevent, hinder, or delay the consummation of the Restructuring Transactions contemplated in the Restructuring Support Agreement or the Plan, support and take all steps reasonably necessary and desirable to address any such impediment&#59; (iv) use commercially reasonable efforts to obtain any and all required governmental, regulatory and/or third-party approvals for the Restructuring Transactions&#59; (v) negotiate in good faith and execute and deliver the Definitive Documents and any other required agreements to effectuate and consummate the Restructuring Transactions as contemplated by this Restructuring Support Agreement&#59; and (vi) use commercially reasonable efforts to seek additional support for the Restructuring Transactions from their other material stakeholders to the extent reasonably prudent. 
+ The Restructuring Support Agreement may be terminated upon the occurrence of certain events set forth therein, including, among other things, the failure to meet specified milestones specified in the Restructuring Term Sheet. 
+ The foregoing description is not complete and is qualified in its entirety by reference to the full text of the Restructuring Support Agreement, a copy of which is filed herewith as Exhibit 10.1 and is incorporated herein by reference. 
+
+ Item 1.03 
+ 
+ Bankruptcy or Receivership. 
+ To implement the Plan, on June 29, 2020 (the ";Petition Date";), the Company Parties filed the Chapter 11 Cases under the Bankruptcy Code in the U.S. Bankruptcy Court for the Southern District of Texas (the ";Bankruptcy Court";). The Chapter 11 Cases are being jointly administered under the caption In re: Covia Holdings Corporation, et al. The Company';s international subsidiaries, including those operating in Canada, Mexico and Denmark were not included in the Chapter 11 filing and are operating in the ordinary course. 
+ The Company Parties continue to operate their businesses and manage their properties as ";debtors-in-possession"; under the jurisdiction of the Bankruptcy Court and in accordance with the applicable provisions of the Bankruptcy Code and orders of the Bankruptcy Court. To ensure the Company Parties'; ability to continue operating in the ordinary course of business and minimize the effect of the Restructuring on the Company Parties'; customers and employees, the Company Parties filed with the Bankruptcy Court motions seeking 
+ 3 
+
+ a variety of ";first-day"; relief, including authority to pay employee wages and benefits, and pay vendors and suppliers for goods and services provided both before and after the filing date. 
+
+ Item 2.04 
+ 
+ Triggering Events that Accelerate or Increase a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement. 
+ The commencement of the Chapter 11 Cases constitutes an event of default under, and resulted in the acceleration of, certain of the Company Parties'; obligations, including under the following debt instruments (the ";Debt Instruments";): 
+
+ &#8226; 
+ 
+ $1.56 billion in aggregate principal amount under the Term Loan Agreement&#59; 
+
+ &#8226; 
+ 
+ $37.0 million in principal amount, including reimbursement obligations in respect of letters of credit, plus accrued and unpaid interest (at the non-default rate), fees, and other expenses arising and payable under that certain Receivables Financing Agreement, dated as of March 31, 2020 (as amended, modified, or otherwise supplemented from time to time), by and among the Company, as initial servicer, Covia Financing LLC, as borrower, PNC Bank, National Association, as administrative agent, the lenders party thereto from time to time and PNC Capital, as structuring agent (the ";Receivables Facility";)&#59; 
+
+ &#8226; 
+ 
+ Approximately $35.8 million in obligations under five separate interest rate swap transactions that were entered into pursuant to either (i) that certain 2002 ISDA Master Agreement, dated as of May 30, 2018, by and between BNP Paribas and the Company, as successor in interest to Unimin Corporation, or (ii) that certain 1992 ISDA Master Agreement, dated as of June 28, 2018, by and between Barclays Bank PLC and the Company&#59; and 
+
+ &#8226; 
+ 
+ Approximately $10.0 million in aggregate principal amount of an industrial revenue bond. 
+ The Debt Instruments provide that as a result of the Chapter 11 Cases, the principal and interest due thereunder shall be immediately due and payable. The Debtors believe that any efforts to enforce the financial obligations under the Debt Instruments are stayed as a result of the filing of the Chapter 11 Cases in the Bankruptcy Court. 
+
+ Item 8.01 
+ 
+ Other Items. 
+ Additional Information on the Chapter 11 Cases 
+ Court filings and information about the Chapter 11 Cases can be found at a website maintained by the Company';s claims agent Prime Clerk LLC at http://cases.primeclerk.com/Covia , by calling 1-877-606-3610 (toll-free), or by sending an email to CoviaInfo&#64;PrimeClerk.com . The documents and other information available via website or elsewhere are not part of this Current Report and shall not be deemed incorporated herein. 
+ Cautionary Note Regarding the Company';s Common Stock 
+ The Company cautions that trading in the Company';s common stock during the pendency of the Chapter 11 Cases is highly speculative and poses substantial risks. Trading prices for the Company';s common stock may bear little or no relationship to the actual recovery, if any, by holders of the Company';s common stock in the Chapter 11 Cases. The Company expects that holders of the Company';s common stock could experience a significant or complete loss on their investment, depending on the outcome of the Chapter 11 Cases. 
+ Cautionary Statement Concerning Forward-Looking Statements 
+ This current report contains ";forward-looking statements"; related to future events. Forward-looking statements contain words such as ";expect,"; ";anticipate,"; ";could,"; ";should,"; ";intend,"; ";plan,"; ";believe,"; ";seek,"; ";see,"; ";may,"; ";will,"; ";would,"; or ";target."; Forward-looking statements are based on management';s current expectations, beliefs, assumptions and estimates and may include, for example, statements regarding the Chapter 11 Cases, the Company';s ability to complete the Restructuring and its ability to continue operating in the ordinary course while the Chapter 11 Cases are pending. These statements are subject to significant risks, uncertainties, and assumptions that are difficult to predict and could cause actual results to differ materially and adversely from those expressed or implied in the forward-looking statements, including risks and uncertainties regarding the Company';s ability to successfully complete a restructuring under Chapter 11, including: consummation of the Restructuring&#59; potential adverse effects of the Chapter 11 Cases on the Company';s liquidity and results of operations&#59; the Company';s ability to obtain timely approval by the Bankruptcy Court with respect to the motions filed in the Chapter 11 Cases&#59; objections to the Company';s recapitalization process or other pleadings filed that could 
+ 4 
+
+ protract the Chapter 11 Cases&#59; employee attrition and the Company';s ability to retain senior management and other key personnel due to the distractions and uncertainties, posed in part by the Chapter 11 Cases&#59; the Company';s ability to comply with financing arrangements&#59; the Company';s ability to maintain relationships with suppliers, customers, employees and other third parties and regulatory authorities as a result of the Chapter 11 Cases&#59; the effects of the Chapter 11 Cases on the Company and on the interests of various constituents, including holders of the Company';s common stock&#59; the Bankruptcy Court';s rulings in the Chapter 11 Cases, including the approvals of the terms and conditions of the Restructuring and the outcome of the Chapter 11 Cases generally&#59; the length of time that the Company will operate under Chapter 11 protection and the continued availability of operating capital during the pendency of the Chapter 11 Cases&#59; risks associated with third party motions in the Chapter 11 Cases, which may interfere with the Company';s ability to consummate the Restructuring or an alternative restructuring&#59; increased administrative and legal costs related to the Chapter 11 process&#59; potential delays in the Chapter 11 process due to the effects of the COVID-19 virus&#59; and other litigation and inherent risks involved in a bankruptcy process. 
+ Forward-looking statements are also subject to the risk factors and cautionary language described from time to time in the reports the Company files with the U.S. Securities and Exchange Commission, including those in the Company';s most recent Annual Report on Form 10-K and any updates thereto in the Company';s Quarterly Reports on Form 10-Q and Current Reports on Form 8-K. These risks and uncertainties may cause actual future results to be materially different than those expressed in such forward-looking statements. The Company has no obligation to update or revise these forward-looking statements and does not undertake to do so. 
+
+ Item 9.01 
+ 
+ Financial Statements and Exhibits. 
+ (d) Exhibits. 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 10.1 
+ 
+ Restructuring Support Agreement, dated as of June 29, 2020, by and among the Company Parties and the Consenting Stakeholders. 
+
+ 104 
+ 
+ Cover Page Interactive Data File - the cover page XBRL tags are embedded within the Inline XBRL document. 
+
+ 5 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Date: June 30, 2020 
+ 
+ COVIA HOLDINGS CORPORATION 
+
+ By: 
+ 
+ /s/ Andrew D. Eich 
+
+ Name: 
+ 
+ Andrew D. Eich 
+
+ Title: 
+ 
+ Executive Vice President, 
+ Chief Financial Officer and Treasurer 
+
+ 6 
+

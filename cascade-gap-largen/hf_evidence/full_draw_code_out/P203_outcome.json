@@ -1,0 +1,58 @@
+{
+  "case_id": "P203",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "five specific operating businesses divested for proceeds ranging from ~$8m to ~$920m",
+      "rationale": "The provided evidence slice documents the divestiture of five former Esterline operating units and the termination of a pension plan, but does not report any realized disruption at the product/process interface (p4_pathway = 0). Furthermore, there is no documented evidence of fracture between operations and the organization or culture over time (p5_pathway = 0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "five ex-Esterline units divested 2019-2021 (~$1.19bn proceeds)",
+      "rationale": "The slice documents five dated, priced divestitures of former Esterline operating units framed only as units 'not in line with our long-term acquisition strategy,' with no evidence that acquired products failed to align with operating processes over time; p4 is therefore 0. No realized fracture at the process/organization interface (culture, management, or operations-vs-people breakdown) is recorded—only an administrative Esterline Retirement Plan termination and related settlement charge/refund—so p5 is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'five operating units divested for approximately $8 million to $920 million each'}",
+      "rationale": "{'type': 'string', 'enum': 'The FY2022 and FY2023 filings document five ex-Esterline operating-unit divestitures, but do not describe a realized failure to align acquired products with operating processes; therefore p4 is 0. The filings also document termination and settlement of the Esterline Retirement Plan, including a $22 million charge and $9 million refund, but do not attribute these actions to a fracture between operations and people, management, or culture; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"five specific operating businesses divested for proceeds ranging from ~$8m to ~$920m\",\n  \"rationale\": \"The provided evidence slice documents the divestiture of five former Esterline operating units and the termination of a pension plan, but does not report any realized disruption at the product/process interface (p4_pathway = 0). Furthermore, there is no documented evidence of fracture between operations and the organization or culture over time (p5_pathway = 0).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"five ex-Esterline units divested 2019-2021 (~$1.19bn proceeds)\",\n  \"rationale\": \"The slice documents five dated, priced divestitures of former Esterline operating units framed only as units 'not in line with our long-term acquisition strategy,' with no evidence that acquired products failed to align with operating processes over time; p4 is therefore 0. No realized fracture at the process/organization interface (culture, management, or operations-vs-people breakdown) is recorded—only an administrative Esterline Retirement Plan termination and related settlement charge/refund—so p5 is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"five operating units divested for approximately $8 million to $920 million each\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The FY2022 and FY2023 filings document five ex-Esterline operating-unit divestitures, but do not describe a realized failure to align acquired products with operating processes; therefore p4 is 0. The filings also document termination and settlement of the Esterline Retirement Plan, including a $22 million charge and $9 million refund, but do not attribute these actions to a fracture between operations and people, management, or culture; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

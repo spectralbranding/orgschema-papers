@@ -1,0 +1,58 @@
+{
+  "case_id": "P118",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired whole for $36.75/share cash; deregistered (Form 15, Mar 26, 2015); no audited record in ~2016-2018 window",
+      "rationale": "The slice documents a routine whole-entity absorption with no evidence of realized disruption over time. For p5, the board and named executives were replaced and finance/accounting folded into the acquirer's \"Shared Services North America,\" but these are standard change-of-control consequences at the effective time, not a documented fracture or breakdown of operations against the organization over the outcome horizon. For p4, no product/process incoherence is documented whatsoever. Because the entity deregistered before the fixed ~2016-2018 window opened, no operating or financial trajectory is primary-verifiable ([UNVERIFIED]), so no pathway disruption is documented; absence of evidence is coded 0."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The entity was acquired whole and deregistered in 2015, ending its public reporting before the 2016-2018 outcome window. The acquirer disclosed no separate segment record for this business, meaning any post-deal disruption pathways or performance metrics cannot be verified and are coded as uncertain."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "No audited public financial statements or separate operating record exists for the fixed 2016–2018 outcome window because the entity deregistered in March 2015. The cited replacement of management and movement of finance/accounting into shared services occurred at closing, not as a documented product/process or process/organization disruption over time; therefore both pathways remain uncertain."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"acquired whole for $36.75/share cash; deregistered (Form 15, Mar 26, 2015); no audited record in ~2016-2018 window\", \"rationale\": \"The slice documents a routine whole-entity absorption with no evidence of realized disruption over time. For p5, the board and named executives were replaced and finance/accounting folded into the acquirer's \\\"Shared Services North America,\\\" but these are standard change-of-control consequences at the effective time, not a documented fracture or breakdown of operations against the organization over the outcome horizon. For p4, no product/process incoherence is documented whatsoever. Because the entity deregistered before the fixed ~2016-2018 window opened, no operating or financial trajectory is primary-verifiable ([UNVERIFIED]), so no pathway disruption is documented; absence of evidence is coded 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The entity was acquired whole and deregistered in 2015, ending its public reporting before the 2016-2018 outcome window. The acquirer disclosed no separate segment record for this business, meaning any post-deal disruption pathways or performance metrics cannot be verified and are coded as uncertain.\"\n\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"No audited public financial statements or separate operating record exists for the fixed 2016–2018 outcome window because the entity deregistered in March 2015. The cited replacement of management and movement of finance/accounting into shared services occurred at closing, not as a documented product/process or process/organization disruption over time; therefore both pathways remain uncertain.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

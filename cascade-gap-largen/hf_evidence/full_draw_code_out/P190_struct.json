@@ -1,0 +1,85 @@
+{
+  "case_id": "P190",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the combination merged complementary product/technology portfolios (\"fullstream\" upstream/midstream/downstream) but the underlying operational substrate did not transfer or integrate coherently at closing — the slice states the shared substrate was \"bridged through a defined package of ancillary agreements executed effective at Closing rather than fully integrated at that moment,\" and GE-side capability (GE Store, Predix, GE Digital) was accessed via cross-license/services agreements rather than owned. gap_56=1: processes were bridged via Transition/Intercompany Services, supply, and IP/trademark agreements rather than merged, while the organization/people crossed under a mixed governance structure (6 GE/5 BHI board, GE Chairman, GE O&G CEO/CFO installed) with GE holding only ~62.5% and BHI ~37.5% economics — a documented process-vs-organization mismatch. gap_mitigated=yes: both gaps were contractually absorbed at closing via the Transition Services Agreement (later substituted by an Intercompany Services Agreement), Tax Matters, supply, IP Cross-License, Trademark License, GE Digital, and Non-Competition agreements per §7.18."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction combined GE O&G and Baker Hughes into a single operating entity (Newco LLC) with a combined 'fullstream' portfolio. Both companies contributed their entire respective product lines, operational processes, and organizations to the new combined entity, meaning no structural mismatch occurred between products and processes (gap_45) or processes and people (gap_56) at closing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing both GE O&G and Baker Hughes customer-facing portfolios were contributed into Newco LLC as a combined fullstream product set, and the operating subsidiaries/assets that produce them likewise moved into the same Newco LLC vehicle, so T4 and T5 crossed together (gap_45=0). Leadership and board seats were drawn from both sides (GE O&G CEO/CFO installed; BH Chairman retained as Vice Chairman; 6/5 board split) under the new holding company, so T5 and T6 were co-aligned in the closing structure rather than severed (gap_56=0). The ancillary TSA/Intercompany Services, supply, IP and Digital agreements bridged residual GE-parent substrate but did not document a product-without-process or process-without-organization mismatch of the contributed oilfield businesses themselves."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the combination merged complementary product/technology portfolios (\\\"fullstream\\\" upstream/midstream/downstream) but the underlying operational substrate did not transfer or integrate coherently at closing \\u2014 the slice states the shared substrate was \\\"bridged through a defined package of ancillary agreements executed effective at Closing rather than fully integrated at that moment,\\\" and GE-side capability (GE Store, Predix, GE Digital) was accessed via cross-license/services agreements rather than owned. gap_56=1: processes were bridged via Transition/Intercompany Services, supply, and IP/trademark agreements rather than merged, while the organization/people crossed under a mixed governance structure (6 GE/5 BHI board, GE Chairman, GE O&G CEO/CFO installed) with GE holding only ~62.5% and BHI ~37.5% economics \\u2014 a documented process-vs-organization mismatch. gap_mitigated=yes: both gaps were contractually absorbed at closing via the Transition Services Agreement (later substituted by an Intercompany Services Agreement), Tax Matters, supply, IP Cross-License, Trademark License, GE Digital, and Non-Competition agreements per \\u00a77.18.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction combined GE O&G and Baker Hughes into a single operating entity (Newco LLC) with a combined 'fullstream' portfolio. Both companies contributed their entire respective product lines, operational processes, and organizations to the new combined entity, meaning no structural mismatch occurred between products and processes (gap_45) or processes and people (gap_56) at closing.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing both GE O&G and Baker Hughes customer-facing portfolios were contributed into Newco LLC as a combined fullstream product set, and the operating subsidiaries/assets that produce them likewise moved into the same Newco LLC vehicle, so T4 and T5 crossed together (gap_45=0). Leadership and board seats were drawn from both sides (GE O&G CEO/CFO installed; BH Chairman retained as Vice Chairman; 6/5 board split) under the new holding company, so T5 and T6 were co-aligned in the closing structure rather than severed (gap_56=0). The ancillary TSA/Intercompany Services, supply, IP and Digital agreements bridged residual GE-parent substrate but did not document a product-without-process or process-without-organization mismatch of the contributed oilfield businesses themselves.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

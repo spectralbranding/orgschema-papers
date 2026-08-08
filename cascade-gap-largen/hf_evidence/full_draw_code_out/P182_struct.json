@@ -1,0 +1,85 @@
+{
+  "case_id": "P182",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a buy-in of an already-controlled LP: Enbridge already held the general-partner interest, a delegation-of-control agreement, and ~34.2% of economics, so T1 controlling intent continues rather than being replaced. gap_45=0 because the customer-facing asset base (Lakehead System and related assets) remained with surviving entity EEP with no carve-out, and the operating substrate (the GP Delegate's delegation of control) is described as already in place and continuing — product and its processes stayed together. gap_56=0 because T5 (operations/management delegation) was not re-engineered but carried forward, so no process-vs-organization mismatch was created at closing; T6 is coded partial only because several independent GP/GP-Delegate directors resigned at the effective time while operations otherwise continued."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the customer-facing asset base (Lakehead System and related midstream assets) remained with surviving EEP with no carve-out, and the pre-existing GP-Delegate operating/management substrate is expressly described as continuing without post-closing operational restructuring, so product and processes moved together (gap_45=0). EEP had no employees and already relied on that same continuing delegation; director resignations at the GP/EEQ boards do not document processes transferring without the organization that runs them (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that EEP's full customer-facing transportation, storage, and related asset base remained with surviving EEP without a carve-out, while the pre-existing operating and management delegation continued without a described operational restructuring; therefore no product-process gap is documented at closing. It also states that EEP had no employees and already relied on the GP Delegate to manage its business, so the continuing processes remained coherently aligned with the existing management substrate despite the specified board resignations; therefore no process-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a buy-in of an already-controlled LP: Enbridge already held the general-partner interest, a delegation-of-control agreement, and ~34.2% of economics, so T1 controlling intent continues rather than being replaced. gap_45=0 because the customer-facing asset base (Lakehead System and related assets) remained with surviving entity EEP with no carve-out, and the operating substrate (the GP Delegate's delegation of control) is described as already in place and continuing \\u2014 product and its processes stayed together. gap_56=0 because T5 (operations/management delegation) was not re-engineered but carried forward, so no process-vs-organization mismatch was created at closing; T6 is coded partial only because several independent GP/GP-Delegate directors resigned at the effective time while operations otherwise continued.\"}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states the customer-facing asset base (Lakehead System and related midstream assets) remained with surviving EEP with no carve-out, and the pre-existing GP-Delegate operating/management substrate is expressly described as continuing without post-closing operational restructuring, so product and processes moved together (gap_45=0). EEP had no employees and already relied on that same continuing delegation; director resignations at the GP/EEQ boards do not document processes transferring without the organization that runs them (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that EEP's full customer-facing transportation, storage, and related asset base remained with surviving EEP without a carve-out, while the pre-existing operating and management delegation continued without a described operational restructuring; therefore no product-process gap is documented at closing. It also states that EEP had no employees and already relied on the GP Delegate to manage its business, so the continuing processes remained coherently aligned with the existing management substrate despite the specified board resignations; therefore no process-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

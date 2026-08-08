@@ -1,0 +1,58 @@
+{
+  "case_id": "P147",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "deal not consummated; $15.6M break-up/contract termination fee received (2012)",
+      "rationale": "The transaction never closed: Nationstar \"were not the highest bidder in the auction\" and did not acquire the servicing rights, platforms or assets, instead receiving a break-up fee. Because no ownership boundary was crossed and no acquired business existed, there is no post-close trajectory at the product/process interface (p4=0) or the process/organization interface (p5=0). The in-window FY2015 10-K contains no reference to the sought assets, confirming no realized acquired-business disruption — a documented non-consummation rather than a data gap."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "non-consummation; $15.6M break-up fee",
+      "rationale": "The slice documents that Nationstar was not the highest bidder and the transaction did not consummate, so no ownership boundary was crossed and no servicing assets or platforms were acquired. Because there was no acquired business, the slice explicitly states there is no post-close trajectory at the product/process or process/organization interfaces, and the 2015 10-K contains no reference to any such acquired operations. Absence of any realized disruption at those interfaces therefore codes p4_pathway and p5_pathway as 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$15.6 million contract termination fee received",
+      "rationale": "Nationstar was not the highest bidder, did not win the bankruptcy auction, and the proposed acquisition never consummated. Consequently, there was no acquired-business trajectory in which product/process disruption or process/organization fracture could arise; the fiscal-year-2015 annual report also showed no acquired servicing business, platform, impairment, or divestiture attributable to the proposal."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"deal not consummated; $15.6M break-up/contract termination fee received (2012)\", \"rationale\": \"The transaction never closed: Nationstar \\\"were not the highest bidder in the auction\\\" and did not acquire the servicing rights, platforms or assets, instead receiving a break-up fee. Because no ownership boundary was crossed and no acquired business existed, there is no post-close trajectory at the product/process interface (p4=0) or the process/organization interface (p5=0). The in-window FY2015 10-K contains no reference to the sought assets, confirming no realized acquired-business disruption \\u2014 a documented non-consummation rather than a data gap.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"non-consummation; $15.6M break-up fee\",\n  \"rationale\": \"The slice documents that Nationstar was not the highest bidder and the transaction did not consummate, so no ownership boundary was crossed and no servicing assets or platforms were acquired. Because there was no acquired business, the slice explicitly states there is no post-close trajectory at the product/process or process/organization interfaces, and the 2015 10-K contains no reference to any such acquired operations. Absence of any realized disruption at those interfaces therefore codes p4_pathway and p5_pathway as 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$15.6 million contract termination fee received\",\n  \"rationale\": \"Nationstar was not the highest bidder, did not win the bankruptcy auction, and the proposed acquisition never consummated. Consequently, there was no acquired-business trajectory in which product/process disruption or process/organization fracture could arise; the fiscal-year-2015 annual report also showed no acquired servicing business, platform, impairment, or divestiture attributable to the proposal.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

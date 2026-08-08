@@ -1,0 +1,58 @@
+{
+  "case_id": "P008",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income $130.7M (FY2012), up from $98.5M (FY2010); no asset impairments in window",
+      "rationale": "The slice documents a positive realized trajectory: consecutive years of rising net sales and net income (FY2010–2012), zero asset impairments across 2009–2012, and both operating segments retained and growing (HSN +2%/+5%; Cornerstone +18%/+10%). No documented disruption at the product/process interface (only small brand-level portfolio adjustments within Cornerstone, e.g. Chasing Fireflies acquired, Smith+Noble and The Territory Ahead divested for $6.6M) supports p4=0. No documented friction between operations and organization/people (approximately 6,700 employees, no union representation, no reported integration conflict) supports p5=0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income of $130,675 thousand (FY2012) on net sales of $3,266,739 thousand",
+      "rationale": "The provided slice documents consecutive years of rising net sales and net income from 2010 to 2012, with zero asset impairments during this window. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5), as both operating segments were retained and grew."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "net income $130.7M FY2012 (up from $98.5M FY2010); both segments retained",
+      "rationale": "The slice documents consecutive years of rising net sales and net income across FY2010–2012, zero asset impairments in the window, and both operating segments (HSN and Cornerstone) retained and growing, with only small brand-level Cornerstone portfolio adjustments. No realized product/process incoherence (p4) or operations-versus-organization fracture (p5) is documented; capital expenditures continued into HSN technology and warehouse improvements without reported disruption."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"net income $130.7M (FY2012), up from $98.5M (FY2010); no asset impairments in window\", \"rationale\": \"The slice documents a positive realized trajectory: consecutive years of rising net sales and net income (FY2010\\u20132012), zero asset impairments across 2009\\u20132012, and both operating segments retained and growing (HSN +2%/+5%; Cornerstone +18%/+10%). No documented disruption at the product/process interface (only small brand-level portfolio adjustments within Cornerstone, e.g. Chasing Fireflies acquired, Smith+Noble and The Territory Ahead divested for $6.6M) supports p4=0. No documented friction between operations and organization/people (approximately 6,700 employees, no union representation, no reported integration conflict) supports p5=0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income of $130,675 thousand (FY2012) on net sales of $3,266,739 thousand\",\n  \"rationale\": \"The provided slice documents consecutive years of rising net sales and net income from 2010 to 2012, with zero asset impairments during this window. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5), as both operating segments were retained and grew.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"net income $130.7M FY2012 (up from $98.5M FY2010); both segments retained\",\n  \"rationale\": \"The slice documents consecutive years of rising net sales and net income across FY2010–2012, zero asset impairments in the window, and both operating segments (HSN and Cornerstone) retained and growing, with only small brand-level Cornerstone portfolio adjustments. No realized product/process incoherence (p4) or operations-versus-organization fracture (p5) is documented; capital expenditures continued into HSN technology and warehouse improvements without reported disruption.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

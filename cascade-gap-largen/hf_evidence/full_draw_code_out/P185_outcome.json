@@ -1,0 +1,58 @@
+{
+  "case_id": "P185",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "uncertain",
+      "performance_metric": "segment gross profit down ~14% (2021-2023) with flat revenue; MAUs ~47.6M→46.0M; no in-window goodwill impairment",
+      "rationale": "The slice documents financial and user trajectory only: revenue flat-to-rising, gross profit down ~14%, and a \"substantial and consistent loss of monthly active users\" attributed to \"an increase in ad-supported listener churn and a decline in the number of new users.\" That user erosion is a market/demand deterioration in the ad-supported product, not documented disruption at the product/operating-process interface, so p4 is uncertain rather than affirmatively coded. No evidence in the slice describes any operations-versus-people/management/culture fracture, so p5 is coded 0 (not documented). The slice contains no information on the controlling-intent archetype (t1=0) and no documented value-capture/business-model incompatibility, only a churn-driven revenue-mix strain that cannot be affirmatively coded (t2=uncertain)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "revenue flat ~$2.1bn; gross profit -14%; MAUs -3%; no GW impairment 2021-23",
+      "rationale": "The slice documents only segment financials and user metrics (flat revenue, declining gross profit and MAUs, no 2021-23 goodwill impairment) with no realized product/process misalignment or inability to align the Pandora product to operating processes, so p4_pathway is 0. No evidence is given of operations-vs-organization/culture fracture or integration breaking against people/management over time, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'gross profit declined approximately 14% from 2021 to 2023'}",
+      "rationale": "{'type': 'string', 'enum': \"The segment's gross profit declined from $743 million in 2021 to $638 million in 2023, while revenue remained roughly flat, and Pandora's users, subscribers, and listener hours also declined. However, the slice does not document that these outcomes resulted from an inability to align Pandora's product with operating processes, so p4 is 0. It likewise documents no breakdown between operations and people, management, or culture, so p5 is 0.\"}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"uncertain\", \"performance_metric\": \"segment gross profit down ~14% (2021-2023) with flat revenue; MAUs ~47.6M\\u219246.0M; no in-window goodwill impairment\", \"rationale\": \"The slice documents financial and user trajectory only: revenue flat-to-rising, gross profit down ~14%, and a \\\"substantial and consistent loss of monthly active users\\\" attributed to \\\"an increase in ad-supported listener churn and a decline in the number of new users.\\\" That user erosion is a market/demand deterioration in the ad-supported product, not documented disruption at the product/operating-process interface, so p4 is uncertain rather than affirmatively coded. No evidence in the slice describes any operations-versus-people/management/culture fracture, so p5 is coded 0 (not documented). The slice contains no information on the controlling-intent archetype (t1=0) and no documented value-capture/business-model incompatibility, only a churn-driven revenue-mix strain that cannot be affirmatively coded (t2=uncertain).\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"revenue flat ~$2.1bn; gross profit -14%; MAUs -3%; no GW impairment 2021-23\",\n  \"rationale\": \"The slice documents only segment financials and user metrics (flat revenue, declining gross profit and MAUs, no 2021-23 goodwill impairment) with no realized product/process misalignment or inability to align the Pandora product to operating processes, so p4_pathway is 0. No evidence is given of operations-vs-organization/culture fracture or integration breaking against people/management over time, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"gross profit declined approximately 14% from 2021 to 2023\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The segment's gross profit declined from $743 million in 2021 to $638 million in 2023, while revenue remained roughly flat, and Pandora's users, subscribers, and listener hours also declined. However, the slice does not document that these outcomes resulted from an inability to align Pandora's product with operating processes, so p4 is 0. It likewise documents no breakdown between operations and people, management, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

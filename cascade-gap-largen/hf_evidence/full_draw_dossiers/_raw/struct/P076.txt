@@ -1,0 +1,114 @@
+ 
+ 8-K
+ 1
+ a18-37209_18k.htm
+ 8-K REGARDING SK HYNIX JOINT VENTURE AGREEMENT
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) 
+ of The Securities Exchange Act of 1934 
+ 
+ Date of Report (Date of Earliest Event Reported): October 23, 2018 
+
+ CYPRESS SEMICONDUCTOR CORPORATION 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+
+ 1&#150;10079 
+
+ 94-2885898 
+
+ (State or other jurisdiction of incorporation) 
+
+ (Commission File Number) 
+
+ (I.R.S. Employer Identification No.) 
+
+ 198 Champion Court 
+ San Jose, California 95134 
+ (Address of principal executive offices and zip code) 
+ 
+ (408) 943-2600 
+ (Registrant&#146;s telephone number, including area code) 
+
+ (Former name or former address, if changed since last report) 
+
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+ 
+ o Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+ 
+ o Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+ 
+ o Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+ 
+ o Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+ 
+ Emerging growth company o 
+ 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o 
+
+ Item 1.01 Entry Into a Material Definitive Agreement. 
+ 
+ On October 23, 2018, Cypress Semiconductor Corporation (the &#147; Company &#148;) entered into a joint venture agreement (the &#147; Joint Venture Agreement &#148;) with SK hynix system ic Inc., a company organized under the laws of the Republic of Korea (&#147; SKHYSI &#148;) and wholly-owned subsidiary of SK hynix Inc. (&#147; SKH &#148;). The principal purpose of the joint venture will be the development, manufacture, sale and distribution of NAND products and other related products and services using Large Scale NAND Wafers supplied by SKH. The Joint Venture Agreement will have an initial term of five years, unless earlier terminated or extended. 
+ 
+ Launch of the joint venture is subject to certain conditions, including receipt of antitrust and other regulatory approvals (including review and clearance from the Committee on Foreign Investment in the United States), entry into a NAND supply agreement between the joint venture and SKH, and a back-end manufacturing agreement between the joint venture and the Company. Upon launch of the joint venture, the NAND Supply Agreement, dated as of October 1, 2016, between SKH and the Company will be terminated. 
+ 
+ SKHYSI has agreed to contribute $3.6 million in cash for a 60% ownership in the joint venture, and the Company has agreed to contribute $2.4 million and certain tools and machinery (with an aggregate book value of less than $55,000) for a 40% ownership in the joint venture. The Company has also agreed to provide limited transition services and design services to the joint venture and will use commercially reasonable efforts to transition the Company&#146;s current NAND customers to the joint venture. It is expected that up to fifteen current employees of the Company will transfer to the joint venture. 
+ 
+ The Company will be entitled to a quarterly special dividend relating to the profit of the joint venture for the period beginning on the launch of the joint venture and ending on December 31, 2020, for all sales made by the joint venture using up to 15,000 wafers per quarter. In addition, the Company will be entitled to 50% of the profit relating to wafer inventory (from such 15,000 wafers per quarter) through January 31, 2021. 
+ 
+ The Company will have the right to nominate a minority of the board of directors and will have limited special approval rights over operations of the joint venture. The Company expects to account for this joint venture under the equity method. 
+ 
+ SKHYSI will have the right to acquire a 10% interest in the joint venture from the Company in the event that the volume of wafers supplied by SKH to the joint venture exceeds 15,000 wafers per month (excluding any wafers that relate to the Company&#146;s special dividend) for three consecutive months. SKHYSI will also have the right to acquire all of the Company&#146;s interests in the joint venture upon a change of control of the Company to a competitor of SKHYSI or SKH. Additionally, the Company will have the right to cause SKHYSI to purchase all of the Company&#146;s interests in the joint venture, and SKHYSI will have the right to cause the Company to sell all of its interests in the joint venture to SKHYSI, in each case, if the parties cannot agree to an extension of the joint venture past the initial term. The purchase price in each of the above circumstances will be an amount equal to the book value of the joint venture&#146;s shareholder equity multiplied by the percentage interest being acquired. 
+ 
+ Each of SKHYSI and the Company has agreed that, subject to certain exceptions, neither party nor any of its controlled affiliates shall, directly or indirectly, sell NAND or MCP products consisting of NAND and DRAM in competition with the joint venture for the term of the Joint Venture Agreement. 
+ 
+ In addition to the above terms, the Joint Venture Agreement contains customary terms, conditions, representations, warranties and covenants of the parties for like transactions. The foregoing description is qualified in its entirety by reference to the Joint Venture Agreement that will be filed subsequently as an exhibit to our Annual Report on Form 10-K. 
+ 
+ 2 
+
+ Item 7.01 Regulation FD Disclosure. 
+ 
+ On October 25, 2018, the Company released an investor presentation containing additional detail on the Joint Venture Agreement and the joint venture. A copy of that investor presentation is furnished as Exhibit 99.1 to this Current Report on Form 8-K. 
+ 
+ Item 9.01 Financial Statements and Exhibits. 
+ 
+ (d) Exhibits. 
+
+ Exhibit No. 
+
+ Description 
+
+ 99.1 
+
+ Investor Presentation, dated October 25, 2018. 
+ 
+ 3 
+
+ SIGNATURES 
+ 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Date: October 25, 2018 
+ 
+ CYPRESS SEMICONDUCTOR CORPORATION 
+
+ By: 
+ 
+ /s/ Thad Trent 
+
+ Thad Trent 
+
+ Chief Financial Officer and Executive Vice President, Finance & Administration 
+ 
+ 4 
+

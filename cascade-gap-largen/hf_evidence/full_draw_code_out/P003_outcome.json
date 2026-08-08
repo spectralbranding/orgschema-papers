@@ -1,0 +1,58 @@
+{
+  "case_id": "P003",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "income from continuing operations $389M in FY2013 (net income $385M) on revenue $3.55bn; no goodwill impairment",
+      "rationale": "On the product/process interface (p4), the slice documents an ongoing amended FDA consent decree for the Alaris infusion-pump business, but this is a continuing regulatory/quality remediation predating and independent of any post-spin product-to-operations misalignment, and the company implemented its corrective plan and progressed to the audit-inspection phase; no realized product-line/operations incoherence is documented (0). On the process/organization interface (p5), the slice shows the standalone company successfully stood up its own corporate functions (one-time spin costs of ~$80M FY2011, $3M FY2012, none FY2013, deemed complete) and realigned segments to reduce complexity — orderly operations/organization integration with no documented fracture (0). Overall the realized record is profitable, modestly growing, with no goodwill impairment, supporting 0 codes across pathways."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "income from continuing operations of $389 million in fiscal 2013",
+      "rationale": "The evidence documents portfolio reshaping through divestitures and ongoing remediation under a pre-existing FDA consent decree, but does not show product/process integration failure (p4=0). The company successfully stood up its standalone operations and realigned segments without documented organizational fracture or failure (p5=0)."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'FY2013 income from continuing operations of $389 million on $3.55 billion revenue'}",
+      "rationale": "{'type': 'string', 'enum': 'The company continued operating its infusion-pump business under an amended FDA consent decree, implementing corrective actions and undergoing independent inspections of facilities and recall procedures, which documents realized product/quality-process friction. For p5, the company incurred costs to establish standalone corporate functions, but by fiscal 2013 it reported that all substantive stand-up expenditures were complete; no breakdown between operations and management, people, or culture was documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"income from continuing operations $389M in FY2013 (net income $385M) on revenue $3.55bn; no goodwill impairment\", \"rationale\": \"On the product/process interface (p4), the slice documents an ongoing amended FDA consent decree for the Alaris infusion-pump business, but this is a continuing regulatory/quality remediation predating and independent of any post-spin product-to-operations misalignment, and the company implemented its corrective plan and progressed to the audit-inspection phase; no realized product-line/operations incoherence is documented (0). On the process/organization interface (p5), the slice shows the standalone company successfully stood up its own corporate functions (one-time spin costs of ~$80M FY2011, $3M FY2012, none FY2013, deemed complete) and realigned segments to reduce complexity \\u2014 orderly operations/organization integration with no documented fracture (0). Overall the realized record is profitable, modestly growing, with no goodwill impairment, supporting 0 codes across pathways.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"income from continuing operations of $389 million in fiscal 2013\",\n  \"rationale\": \"The evidence documents portfolio reshaping through divestitures and ongoing remediation under a pre-existing FDA consent decree, but does not show product/process integration failure (p4=0). The company successfully stood up its standalone operations and realigned segments without documented organizational fracture or failure (p5=0).\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"1\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"FY2013 income from continuing operations of $389 million on $3.55 billion revenue\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The company continued operating its infusion-pump business under an amended FDA consent decree, implementing corrective actions and undergoing independent inspections of facilities and recall procedures, which documents realized product/quality-process friction. For p5, the company incurred costs to establish standalone corporate functions, but by fiscal 2013 it reported that all substantive stand-up expenditures were complete; no breakdown between operations and management, people, or culture was documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

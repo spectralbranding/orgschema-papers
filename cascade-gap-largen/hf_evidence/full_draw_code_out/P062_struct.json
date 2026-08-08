@@ -1,0 +1,85 @@
+{
+  "case_id": "P062",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "read-only",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 = 1: minority economic interests in the operating wind-farm project companies (the customer-facing generation asset, T4) crossed to PSP/Vertuous at closing via the three PSAs, but the operating and administrative processes (T5) were NOT transferred to the co-investor — they were retained by the Company and provided back under the Sponsor Services Agreement dated June 16, 2017, a documented product-vs-process split at closing that was contractually absorbed (gap_mitigated = yes). gap_56 = 0: because T5 processes did not move to the co-investor and personnel remained governed within the existing Pattern organization under the A&R Multilateral Management Services Agreement, there is no closing-structure mismatch of processes transferring without their people. This is coded as a minority co-investment where controlling intent stays with the Company (T1 continue), so no Tier-1 fusion is documented."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice documents that PSP Investments acquired minority economic interests in specific wind-farm project companies (T4), but the operating and administrative processes (T5) were retained by the Company, resulting in a gap_45. This gap was mitigated by a Sponsor Services Agreement. Management and personnel (T6) also remained with the Company, aligning with the retained processes, so gap_56 is 0."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "PSP acquired minority economic interests in three specific wind-farm project companies, while Pattern retained majority ownership and continued operating and administering the projects. Thus, customer-facing generation assets crossed the ownership boundary without the associated processes transferring to PSP, creating a documented T4–T5 gap. The Sponsor Services Agreement and the A&R Multilateral Management Services Agreement contractually bridged that gap through administration, management services, and employee arrangements, while the existing Pattern organization continued to run the processes; accordingly, no T5–T6 gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 = 1: minority economic interests in the operating wind-farm project companies (the customer-facing generation asset, T4) crossed to PSP/Vertuous at closing via the three PSAs, but the operating and administrative processes (T5) were NOT transferred to the co-investor \\u2014 they were retained by the Company and provided back under the Sponsor Services Agreement dated June 16, 2017, a documented product-vs-process split at closing that was contractually absorbed (gap_mitigated = yes). gap_56 = 0: because T5 processes did not move to the co-investor and personnel remained governed within the existing Pattern organization under the A&R Multilateral Management Services Agreement, there is no closing-structure mismatch of processes transferring without their people. This is coded as a minority co-investment where controlling intent stays with the Company (T1 continue), so no Tier-1 fusion is documented.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice documents that PSP Investments acquired minority economic interests in specific wind-farm project companies (T4), but the operating and administrative processes (T5) were retained by the Company, resulting in a gap_45. This gap was mitigated by a Sponsor Services Agreement. Management and personnel (T6) also remained with the Company, aligning with the retained processes, so gap_56 is 0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"PSP acquired minority economic interests in three specific wind-farm project companies, while Pattern retained majority ownership and continued operating and administering the projects. Thus, customer-facing generation assets crossed the ownership boundary without the associated processes transferring to PSP, creating a documented T4–T5 gap. The Sponsor Services Agreement and the A&R Multilateral Management Services Agreement contractually bridged that gap through administration, management services, and employee arrangements, while the existing Pattern organization continued to run the processes; accordingly, no T5–T6 gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

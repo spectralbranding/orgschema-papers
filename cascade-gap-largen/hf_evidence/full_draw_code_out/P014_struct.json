@@ -1,0 +1,85 @@
+{
+  "case_id": "P014",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0: the customer-facing home-service-plan brands (T4) moved together with their customer-care centers and contractor-network delivery processes (T5) into Frontdoor — \"separated a recurring home-service-plan product operation ... its customer-care and contractor-network delivery processes ... into a standalone public company,\" so product and its delivery processes crossed together. gap_56=1: the operational/corporate-service processes (treasury/cash management, HR, IT, legal, accounting systems) did NOT transfer whole — ServiceMaster \"performing substantially all corporate functions\" and Frontdoor \"would need to replicate facilities, systems, infrastructure and personnel to which it would no longer have access,\" a documented process-vs-organization mismatch at closing. gap_mitigated=yes: this shared substrate was contractually bridged at closing via a separation and distribution agreement, transition services agreement, tax matters agreement, and employee matters agreement. T1 coded reconstruct as the business was re-formed into a newly incorporated standalone public entity; T3 swap for the new legal domicile (frontdoor, inc. on Nasdaq); T6 partial because ~2,700 employees and a newly assembled management moved but shared corporate personnel/functions did not transfer intact."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice’s structural summary states that the home-service-plan product operation together with its customer-care and contractor-network delivery processes crossed into standalone Frontdoor at closing, so T4 and T5 moved together (gap_45=0). The same summary and people tier lines record that the approximately 2,700 employees and newly assembled management also transferred into Frontdoor alongside those processes, so T5 and T6 moved together (gap_56=0). Shared corporate substrate that remained at ServiceMaster was bridged by a TSA and related agreements but does not constitute a product-vs-process or process-vs-organization mismatch under the gap definitions."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the home-service-plan products and brands crossed the boundary together with their customer-care and contractor-network delivery processes, so no product/process gap is documented at closing [SRC: SEC accession 0001047469-18-005362, Form 10-12B EX-99.1]. Although the parent’s shared corporate-service substrate did not transfer intact, Frontdoor received approximately 2,700 employees and an assembled management team alongside the core operations, so no process/organization gap is documented; the missing support functions were also bridged through transition-services and related agreements [SRC: SEC accession 0001047469-18-005362, Form 10-12B EX-99.1]."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=0: the customer-facing home-service-plan brands (T4) moved together with their customer-care centers and contractor-network delivery processes (T5) into Frontdoor \\u2014 \\\"separated a recurring home-service-plan product operation ... its customer-care and contractor-network delivery processes ... into a standalone public company,\\\" so product and its delivery processes crossed together. gap_56=1: the operational/corporate-service processes (treasury/cash management, HR, IT, legal, accounting systems) did NOT transfer whole \\u2014 ServiceMaster \\\"performing substantially all corporate functions\\\" and Frontdoor \\\"would need to replicate facilities, systems, infrastructure and personnel to which it would no longer have access,\\\" a documented process-vs-organization mismatch at closing. gap_mitigated=yes: this shared substrate was contractually bridged at closing via a separation and distribution agreement, transition services agreement, tax matters agreement, and employee matters agreement. T1 coded reconstruct as the business was re-formed into a newly incorporated standalone public entity; T3 swap for the new legal domicile (frontdoor, inc. on Nasdaq); T6 partial because ~2,700 employees and a newly assembled management moved but shared corporate personnel/functions did not transfer intact.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice’s structural summary states that the home-service-plan product operation together with its customer-care and contractor-network delivery processes crossed into standalone Frontdoor at closing, so T4 and T5 moved together (gap_45=0). The same summary and people tier lines record that the approximately 2,700 employees and newly assembled management also transferred into Frontdoor alongside those processes, so T5 and T6 moved together (gap_56=0). Shared corporate substrate that remained at ServiceMaster was bridged by a TSA and related agreements but does not constitute a product-vs-process or process-vs-organization mismatch under the gap definitions.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the home-service-plan products and brands crossed the boundary together with their customer-care and contractor-network delivery processes, so no product/process gap is documented at closing [SRC: SEC accession 0001047469-18-005362, Form 10-12B EX-99.1]. Although the parent’s shared corporate-service substrate did not transfer intact, Frontdoor received approximately 2,700 employees and an assembled management team alongside the core operations, so no process/organization gap is documented; the missing support functions were also bridged through transition-services and related agreements [SRC: SEC accession 0001047469-18-005362, Form 10-12B EX-99.1].\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "reconstruct",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

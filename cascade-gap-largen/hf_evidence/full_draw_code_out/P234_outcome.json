@@ -1,0 +1,58 @@
+{
+  "case_id": "P234",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no SEC-filed 10-K (reporting moved to FDIC); surviving entity absorbed Cadence Bancorporation on 2021-10-29 and renamed \"Cadence Bank\" (ticker CADE)",
+      "rationale": "The slice documents no disruption at the product/process interface: no evidence of product-line/operations incoherence realized over time, so p4_pathway = 0. It likewise documents no process/organization fracture; the described 2021 merger proceeded with an orderly leadership arrangement (Rollins as Chairman/CEO, Murphy as Executive Vice Chairman) and a split main-office/corporate-HQ structure, with no reported operational-vs-organizational breakdown, so p5_pathway = 0. Notably, the surviving entity's post-deal financial trajectory is largely unretrievable because periodic reporting moved from the SEC to the FDIC and no 10-K was located, but the retrievable record shows no documented disruption on either interface."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The provided slice focuses on the surviving entity's shift in regulatory reporting to the FDIC and its subsequent 2021 merger with Cadence Bancorporation. There is no documented evidence in the slice regarding product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) over the outcome window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Further merger completed October 29, 2021; surviving entity renamed Cadence Bank",
+      "rationale": "The realized record documents a subsequent 2021 business combination and corporate identity change, but no product-line or operating-process incoherence over time. It also documents post-merger leadership, board, and headquarters arrangements, but no realized breakdown between operations and management, people, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no SEC-filed 10-K (reporting moved to FDIC); surviving entity absorbed Cadence Bancorporation on 2021-10-29 and renamed \\\"Cadence Bank\\\" (ticker CADE)\", \"rationale\": \"The slice documents no disruption at the product/process interface: no evidence of product-line/operations incoherence realized over time, so p4_pathway = 0. It likewise documents no process/organization fracture; the described 2021 merger proceeded with an orderly leadership arrangement (Rollins as Chairman/CEO, Murphy as Executive Vice Chairman) and a split main-office/corporate-HQ structure, with no reported operational-vs-organizational breakdown, so p5_pathway = 0. Notably, the surviving entity's post-deal financial trajectory is largely unretrievable because periodic reporting moved from the SEC to the FDIC and no 10-K was located, but the retrievable record shows no documented disruption on either interface.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The provided slice focuses on the surviving entity's shift in regulatory reporting to the FDIC and its subsequent 2021 merger with Cadence Bancorporation. There is no documented evidence in the slice regarding product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) over the outcome window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Further merger completed October 29, 2021; surviving entity renamed Cadence Bank\",\n  \"rationale\": \"The realized record documents a subsequent 2021 business combination and corporate identity change, but no product-line or operating-process incoherence over time. It also documents post-merger leadership, board, and headquarters arrangements, but no realized breakdown between operations and management, people, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

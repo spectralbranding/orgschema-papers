@@ -1,0 +1,58 @@
+{
+  "case_id": "P010",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2019 revenue $1.168bn (+8.9% YoY), net income $178.6M; no divestiture, two acquisitions completed, remained independent registrant",
+      "rationale": "The slice documents integration/realignment activity (rebranding to Sparklight, system-conversion and acquisition-related SG&A costs) but frames it as investment producing growth rather than realized incoherence; revenues grew 8.9% and net income rose, with the entity describing itself as a \"fully integrated provider\" — no documented product-line/operations incoherence supports p4=0. Disclosures that rebranding \"may result in\" diversion of management attention or loss of brand recognition are forward-looking cautionary language, not a realized process/organization fracture, so p5=0. No documented archetype incoherence or business-model incompatibility appears in the realized record, so t1 and t2 are 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "2019 revenues of $1.168 billion and net income of $178.6 million",
+      "rationale": "The slice documents rebranding to Sparklight, streamlining of plans, and system conversion costs, but does not report any realized disruption or failure at the product/process interface (p4). Similarly, there is no documented fracture between operations and the organization or culture (p5). The text mentions potential risks of the rebranding, but no realized incoherence."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '2019 revenue of $1.168 billion, up 8.9% year over year'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice documents product and process realignment through rebranding, streamlined internet plans, system conversions, and associated costs, but does not document that products could not be aligned with operations; therefore p4 is 0. It states only that rebranding may divert management attention and records acquisition-related and rebranding costs, without documenting an actual operations-versus-organization fracture; therefore p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"2019 revenue $1.168bn (+8.9% YoY), net income $178.6M; no divestiture, two acquisitions completed, remained independent registrant\", \"rationale\": \"The slice documents integration/realignment activity (rebranding to Sparklight, system-conversion and acquisition-related SG&A costs) but frames it as investment producing growth rather than realized incoherence; revenues grew 8.9% and net income rose, with the entity describing itself as a \\\"fully integrated provider\\\" \\u2014 no documented product-line/operations incoherence supports p4=0. Disclosures that rebranding \\\"may result in\\\" diversion of management attention or loss of brand recognition are forward-looking cautionary language, not a realized process/organization fracture, so p5=0. No documented archetype incoherence or business-model incompatibility appears in the realized record, so t1 and t2 are 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"2019 revenues of $1.168 billion and net income of $178.6 million\",\n  \"rationale\": \"The slice documents rebranding to Sparklight, streamlining of plans, and system conversion costs, but does not report any realized disruption or failure at the product/process interface (p4). Similarly, there is no documented fracture between operations and the organization or culture (p5). The text mentions potential risks of the rebranding, but no realized incoherence.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"2019 revenue of $1.168 billion, up 8.9% year over year\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents product and process realignment through rebranding, streamlined internet plans, system conversions, and associated costs, but does not document that products could not be aligned with operations; therefore p4 is 0. It states only that rebranding may divert management attention and records acquisition-related and rebranding costs, without documenting an actual operations-versus-organization fracture; therefore p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

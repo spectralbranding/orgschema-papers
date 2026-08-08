@@ -1,0 +1,85 @@
+{
+  "case_id": "P088",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "uncertain",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the customer-facing LNG export product (T4) had NOT crossed the ownership boundary at closing — \"no LNG trains, processing facilities, or export pipeline had been built,\" only domestic gas sales were occurring, and the producing/delivering infrastructure (T5) likewise \"had not yet been built out\"; since neither the product nor its processes moved, there is no product-vs-process mismatch. gap_56 is 0 because the operational processes (T5) were not transferred or re-engineered — the venture was pre-final-investment-decision and no operator/management division of labor was disclosed — so there is no T5-without-T6 mismatch to document. What crossed was a 50% equity-method interest plus milestone-conditioned payment obligations into a jointly controlled venture, a co-present dual-principal (imprint-share) structure with no personnel, entity vehicle detail, or completed product/process disclosed."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "partial",
+      "sigma_T4": "subset",
+      "sigma_T5": "uncertain",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that what crossed at closing was only a 50 percent equity-method interest in a jointly controlled venture holding CBM licenses and LNG development rights, while 'the customer-facing LNG export product itself' and its 'trains, processing facilities, or export pipeline had [not] been built' and only domestic gas sales were occurring; thus T4 LNG product and T5 delivery processes neither moved together nor created a product-without-process mismatch (gap_45=0). The same filing 'discloses no dedicated APLNG personnel counts, management team, or employee transfer' and no operator/management division of labor, so no process-without-organization structural mismatch at closing is documented (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that domestic gas was being sold, while both the customer-facing LNG export product and its LNG trains, processing facilities, and export pipeline had not yet been built; thus the existing product and process layers moved together, while the future LNG product and processes moved neither, supporting gap_45=0 (SEC accession 0000950123-11-016957). It also states that no operator or management division of labor, dedicated personnel, management team, or employee transfer was disclosed, so no process-versus-organization mismatch at closing is documented and gap_56=0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"partial\", \"sigma_T3\": \"uncertain\", \"sigma_T4\": \"null\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is 0 because the customer-facing LNG export product (T4) had NOT crossed the ownership boundary at closing \\u2014 \\\"no LNG trains, processing facilities, or export pipeline had been built,\\\" only domestic gas sales were occurring, and the producing/delivering infrastructure (T5) likewise \\\"had not yet been built out\\\"; since neither the product nor its processes moved, there is no product-vs-process mismatch. gap_56 is 0 because the operational processes (T5) were not transferred or re-engineered \\u2014 the venture was pre-final-investment-decision and no operator/management division of labor was disclosed \\u2014 so there is no T5-without-T6 mismatch to document. What crossed was a 50% equity-method interest plus milestone-conditioned payment obligations into a jointly controlled venture, a co-present dual-principal (imprint-share) structure with no personnel, entity vehicle detail, or completed product/process disclosed.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"partial\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"uncertain\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that what crossed at closing was only a 50 percent equity-method interest in a jointly controlled venture holding CBM licenses and LNG development rights, while 'the customer-facing LNG export product itself' and its 'trains, processing facilities, or export pipeline had [not] been built' and only domestic gas sales were occurring; thus T4 LNG product and T5 delivery processes neither moved together nor created a product-without-process mismatch (gap_45=0). The same filing 'discloses no dedicated APLNG personnel counts, management team, or employee transfer' and no operator/management division of labor, so no process-without-organization structural mismatch at closing is documented (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"subset\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that domestic gas was being sold, while both the customer-facing LNG export product and its LNG trains, processing facilities, and export pipeline had not yet been built; thus the existing product and process layers moved together, while the future LNG product and processes moved neither, supporting gap_45=0 (SEC accession 0000950123-11-016957). It also states that no operator or management division of labor, dedicated personnel, management team, or employee transfer was disclosed, so no process-versus-organization mismatch at closing is documented and gap_56=0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "uncertain",
+    "sigma_T4": "subset",
+    "sigma_T5": "null",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

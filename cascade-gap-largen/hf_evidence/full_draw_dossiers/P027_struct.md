@@ -1,0 +1,40 @@
+# Structural sub-dossier — EchoStar Holding Corporation separation from EchoStar Communications Corporation (closing structure)
+
+> EVIDENTIARY STANDARD: every factual line ends with a `[SRC: <SEC accession / URL>]`
+> tag pointing to a public primary source. A fact that cannot be so sourced is written
+> `[UNVERIFIED]` and is never guessed. This sub-dossier describes ONLY how the
+> transaction was structured at closing — what crossed the ownership boundary and what
+> did not. It contains no post-transaction outcome information.
+
+## Transaction and parties at closing
+- The board of EchoStar Communications Corporation ("ECC") approved the spin-off of EchoStar Holding Corporation ("EHC"), a then wholly-owned subsidiary, into a separate publicly-traded company; ECC distributed EHC shares to ECC shareholders as a pro rata dividend. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1 information statement]
+- The separation was effected on registration Form 10 (filed as Form 10-12B); no shareholder vote or proxy was required. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- EHC was to hold the "technology and certain infrastructure assets" of ECC; ECC retained its consumer pay-TV business, DISH Network, and intended to rename itself "DISH Network Corporation" immediately following the spin-off. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Distribution ratio: 0.20 of an EHC share per ECC share; record date December 27, 2007; distribution date on or about January 1, 2008; trading expected to begin January 2, 2008. The spin-off was structured to be tax-free to ECC shareholders. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+
+## Controlling principal and management (people tier)
+- Charles W. Ergen served as Chairman and Chief Executive Officer of both companies; immediately after the distribution he beneficially owned approximately 50.0% of EHC's equity and approximately 80.0% of its voting power, equivalent to his interests in ECC. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- EHC's board was to include persons who were also directors of ECC, including Mr. Ergen as Chairman of both. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Under a Management Services Agreement, three officers — Bernard L. Han (EHC Executive VP and CFO), R. Stanton Dodge (EHC Executive VP and General Counsel) and Paul W. Orban (EHC Senior VP and Controller) — were to remain EMPLOYED BY ECC while serving as EHC's executive officers; Carl E. Vogel was to remain an ECC employee and advise EHC. EHC would reimburse ECC for an allocable portion of these officers' personnel costs. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Mark W. Jackson served as President of EchoStar Technologies (the set-top box operation). [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+
+## What crossed the boundary (product / assets tier)
+- EHC's two primary businesses at separation: (1) a digital set-top box business that designs, develops and distributes set-top boxes for direct-to-home satellite providers — it shipped over nine million set-top boxes in 2006, most sold to ECC and also to Bell ExpressVu and other international customers; and (2) a fixed satellite services business. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- The fixed satellite services business was to be built from assets contributed by ECC: nine owned or leased in-orbit satellites and related FCC licenses, seven full-service digital broadcast centers, and leased fiber-optic capacity with points of presence in approximately 150 cities. EHC's primary customer would initially be ECC. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Assets contributed to EHC also included satellites, uplink and satellite-transmission assets, real estate, the recently ECC-acquired Sling Media, Inc., and approximately $1.0 billion of cash. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Upon completion of the spin-off EHC was to have approximately 1,500 employees. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+
+## What did NOT cross intact — shared corporate substrate bridged by agreement (processes tier)
+- Corporate functions historically provided to the business by ECC — treasury, tax, accounting and reporting, risk management, legal, internal audit, human resources, investor relations and information technology — did not transfer as an intact operating substrate; the combined financials had carried expense allocations for these functions. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Pursuant to a transition services agreement, ECC would continue to provide certain of these services to EHC for a period of two years from the spin-off at cost plus an agreed margin; EHC would otherwise perform these functions using its own resources or procure them from third parties. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- The terms of the intercompany agreements were established while EHC was a wholly-owned subsidiary of ECC and were "not the result of arm's length negotiations." [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+
+## Contractual arrangements governing the separated shared substrate (closing-time)
+- Separation Agreement: governed the contribution of the set-top box business and other distributed assets to EHC (transferred on an "as is, where is" basis), the distribution of EHC shares, and the allocation of assets, liabilities and litigation between the two companies. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Management Services Agreement: ECC to make certain of its officers (primarily legal and accounting) available to EHC for an initial one-year term, auto-renewing. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Intellectual Property Matters Agreement: ECC to irrevocably assign to EHC patents, trademarks and other IP necessary to operate the set-top box business, and to license further IP; EHC granted ECC a transitional license to use the "EchoStar" name; EHC agreed not to use the "DISH Network" mark. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Commercial and operating agreements bridging the two businesses: Receiver Agreement (ECC to purchase set-top boxes/accessories from EHC at cost plus margin for a two-year term), Remanufactured Receiver Agreement, Product Support Agreement, Broadcast Agreement (EHC to provide teleport/transmission/channel services to ECC), Satellite Capacity Agreements (ECC to lease capacity on EHC satellites on a transitional basis to migrate DISH Network subscribers), Satellite Procurement Agreement, Installation Services Agreement, Packout Services Agreement, and Real Estate Lease Agreements (EHC-owned properties leased back to ECC). [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+- Employee Matters Agreement and Tax Sharing Agreement allocated employee-benefit and tax obligations between ECC and EHC; transferring employees' ECC 401(k) plan assets were to move to a new EHC plan. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]
+
+## Structural summary (closing only)
+- The transaction separated a technology and infrastructure operation (a set-top box design/distribution business plus a satellite-services business built on contributed satellites, broadcast centers and fiber) from ECC, whose consumer pay-TV business (DISH Network) was retained. The customer-facing product moved to EHC while EHC's largest customer, its shared corporate service functions, and several of its named senior officers (CFO, General Counsel, Controller) remained with or employed by ECC, bridged by a two-year transition services agreement, a management services agreement, and a web of commercial supply, satellite-capacity and IP agreements priced at cost-plus and set non-arm's-length. [SRC: SEC accession 0001035704-07-000816, Form 10-12B EX-99.1]

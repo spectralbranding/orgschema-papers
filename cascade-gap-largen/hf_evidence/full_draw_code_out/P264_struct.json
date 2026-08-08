@@ -1,0 +1,85 @@
+{
+  "case_id": "P264",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 = 0: the customer-facing asset (48-community, 13,438-unit portfolio) and the operating REIT — described as \"a fully integrated self-managed\" entity — crossed whole via statutory merger into the wholly owned surviving subsidiary, so the operations producing/delivering the product moved together with the product, not apart from it. gap_56 = 0: the operational processes stayed inside the surviving entity while a defined \"continuing employee\" population was contractually bridged into the acquirer's benefit and compensation arrangements (assumption of severance/retention/incentive agreements, 2017 bonuses at target, waiver of waiting periods); the departing directors/named officers were replaced by Acquisition Sub's own officers, indicating T5 and its running organization were aligned coherently at closing rather than split. T1 = replace because all seven directors and named officers resigned and were replaced by the Greystar-led Parent's designees; T3 = swap given the Maryland corporation merged into a Delaware LLC survivor with Monogram's separate corporate existence ceasing and NYSE delisting/deregistration."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire multifamily portfolio and operating REIT transferred whole to the acquirer, meaning the product and its operational processes moved together without a structural mismatch (gap_45 = 0). Although the board and named executive officers resigned at closing, a subset of the operating workforce continued as employees under the acquirer, aligning the transferred processes with the remaining organization (gap_56 = 0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that the entire operating REIT and its 48-community, 13,438-unit portfolio crossed whole into the surviving subsidiary, so the customer-facing assets and their operating processes moved together at closing. Although Monogram’s directors and named officers departed, Acquisition Sub’s directors and officers assumed those roles, while a defined continuing-employee population was bridged into the acquirer’s compensation and benefit arrangements; therefore, no process-versus-organization gap is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 = 0: the customer-facing asset (48-community, 13,438-unit portfolio) and the operating REIT \\u2014 described as \\\"a fully integrated self-managed\\\" entity \\u2014 crossed whole via statutory merger into the wholly owned surviving subsidiary, so the operations producing/delivering the product moved together with the product, not apart from it. gap_56 = 0: the operational processes stayed inside the surviving entity while a defined \\\"continuing employee\\\" population was contractually bridged into the acquirer's benefit and compensation arrangements (assumption of severance/retention/incentive agreements, 2017 bonuses at target, waiver of waiting periods); the departing directors/named officers were replaced by Acquisition Sub's own officers, indicating T5 and its running organization were aligned coherently at closing rather than split. T1 = replace because all seven directors and named officers resigned and were replaced by the Greystar-led Parent's designees; T3 = swap given the Maryland corporation merged into a Delaware LLC survivor with Monogram's separate corporate existence ceasing and NYSE delisting/deregistration.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The entire multifamily portfolio and operating REIT transferred whole to the acquirer, meaning the product and its operational processes moved together without a structural mismatch (gap_45 = 0). Although the board and named executive officers resigned at closing, a subset of the operating workforce continued as employees under the acquirer, aligning the transferred processes with the remaining organization (gap_56 = 0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that the entire operating REIT and its 48-community, 13,438-unit portfolio crossed whole into the surviving subsidiary, so the customer-facing assets and their operating processes moved together at closing. Although Monogram’s directors and named officers departed, Acquisition Sub’s directors and officers assumed those roles, while a defined continuing-employee population was bridged into the acquirer’s compensation and benefit arrangements; therefore, no process-versus-organization gap is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P159",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states the entire operating company transferred intact as a going concern — \"the customer-facing product was not carved out from its producing processes at closing\" and \"no transitional-services or shared-services agreement splitting the operating substrate is described,\" so gap_45 is 0 (product and its manufacturing processes moved together). The operating subsidiaries and their processes transferred as a whole with the workforce (~4,400 employees) also moving with the going concern; although the board was replaced and the CEO terminated, the operating organization/people that run the processes transferred alongside them, so gap_56 is 0. New ownership installed a new controlling intent (T1 replace) via a whole-company Scheme of Arrangement acquisition."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire operating company, including its silicon-wafer product line (T4) and manufacturing operations (T5), transferred intact as a going concern under single new ownership, with no carve-outs or structural mismatches documented at closing. The organization and employees (T6) also transferred with the operating subsidiaries, despite the replacement of the board and CEO, meaning no structural gap between operations and the organization running them."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that on the Effective Date the Acquiror acquired all outstanding shares and 'the whole company (its silicon-wafer product line and the manufacturing operations that produce it) transferred intact under single new ownership,' so the customer-facing product was not carved out from its producing processes at closing (gap_45=0). No transitional-services or shared-services agreement splitting the operating substrate is described. The entire operating company and subsidiaries transferred as a going concern with its workforce, so T5 processes and T6 organization crossed together despite board replacement and CEO termination at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states the entire operating company transferred intact as a going concern \\u2014 \\\"the customer-facing product was not carved out from its producing processes at closing\\\" and \\\"no transitional-services or shared-services agreement splitting the operating substrate is described,\\\" so gap_45 is 0 (product and its manufacturing processes moved together). The operating subsidiaries and their processes transferred as a whole with the workforce (~4,400 employees) also moving with the going concern; although the board was replaced and the CEO terminated, the operating organization/people that run the processes transferred alongside them, so gap_56 is 0. New ownership installed a new controlling intent (T1 replace) via a whole-company Scheme of Arrangement acquisition.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The entire operating company, including its silicon-wafer product line (T4) and manufacturing operations (T5), transferred intact as a going concern under single new ownership, with no carve-outs or structural mismatches documented at closing. The organization and employees (T6) also transferred with the operating subsidiaries, despite the replacement of the board and CEO, meaning no structural gap between operations and the organization running them.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that on the Effective Date the Acquiror acquired all outstanding shares and 'the whole company (its silicon-wafer product line and the manufacturing operations that produce it) transferred intact under single new ownership,' so the customer-facing product was not carved out from its producing processes at closing (gap_45=0). No transitional-services or shared-services agreement splitting the operating substrate is described. The entire operating company and subsidiaries transferred as a going concern with its workforce, so T5 processes and T6 organization crossed together despite board replacement and CEO termination at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

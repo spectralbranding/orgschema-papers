@@ -1,0 +1,58 @@
+{
+  "case_id": "P057",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "complete liquidation/dissolution; liquidating distributions $4,327.5M (2020) and $4,514.6M (2021); net assets $3,470,092K at 12/31/2021",
+      "rationale": "The realized record documents an orderly court-supervised complete liquidation and dissolution: the registrant \"sold, distributed or otherwise disposed of substantially all of its remaining non-cash assets,\" monetized its former Alibaba and Yahoo Japan minority stakes, and returned capital via successive liquidating distributions. No product/process integration disruption is documented (there was no operating product line to align, and the slice shows only orderly monetization and wind-down), so p4_pathway = 0. Likewise no process/organization fracture (operations vs people/culture breaking down) is documented; the entity acted as an investment vehicle executing an approved dissolution plan, so p5_pathway = 0. The slice contains no information about the controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "complete liquidation/dissolution; ~$8.8bn liquidating distributions 2020-21",
+      "rationale": "The slice documents only a court-supervised complete liquidation and wind-down of Altaba as a closed-end investment company, with monetization of remaining Alibaba/Yahoo Japan holdings into short-term fixed-income securities and successive liquidating distributions to shareholders; no product/process interface disruption is described. Likewise, no process/organization fracture (operations vs. people/management/culture) is documented—activities are limited to winding up affairs and retaining IRS claim reserves under a Delaware Section 280 proceeding."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$4.515 billion in liquidating distributions during 2021",
+      "rationale": "The registrant disposed of substantially all remaining non-cash assets and limited its activities to winding up its affairs, but the slice documents no realized product/process alignment disruption. It also reports dissolution, asset monetization, reserves for claims, and liquidating distributions without documenting any breakdown between operations and people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"complete liquidation/dissolution; liquidating distributions $4,327.5M (2020) and $4,514.6M (2021); net assets $3,470,092K at 12/31/2021\", \"rationale\": \"The realized record documents an orderly court-supervised complete liquidation and dissolution: the registrant \\\"sold, distributed or otherwise disposed of substantially all of its remaining non-cash assets,\\\" monetized its former Alibaba and Yahoo Japan minority stakes, and returned capital via successive liquidating distributions. No product/process integration disruption is documented (there was no operating product line to align, and the slice shows only orderly monetization and wind-down), so p4_pathway = 0. Likewise no process/organization fracture (operations vs people/culture breaking down) is documented; the entity acted as an investment vehicle executing an approved dissolution plan, so p5_pathway = 0. The slice contains no information about the controlling-intent archetype or the reconciliation of two business models, so t1 and t2 are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"complete liquidation/dissolution; ~$8.8bn liquidating distributions 2020-21\",\n  \"rationale\": \"The slice documents only a court-supervised complete liquidation and wind-down of Altaba as a closed-end investment company, with monetization of remaining Alibaba/Yahoo Japan holdings into short-term fixed-income securities and successive liquidating distributions to shareholders; no product/process interface disruption is described. Likewise, no process/organization fracture (operations vs. people/management/culture) is documented—activities are limited to winding up affairs and retaining IRS claim reserves under a Delaware Section 280 proceeding.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$4.515 billion in liquidating distributions during 2021\",\n  \"rationale\": \"The registrant disposed of substantially all remaining non-cash assets and limited its activities to winding up its affairs, but the slice documents no realized product/process alignment disruption. It also reports dissolution, asset monetization, reserves for claims, and liquidating distributions without documenting any breakdown between operations and people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P139",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is a debt-for-equity chapter 11 recapitalization in which control passes from the KKR/ITOCHU sponsor group to the second-lien Backstop Parties (T1 replace, majority of the seven-person reorganized board), while the underlying oil-and-gas business, legal vehicle, and assets remain in place. gap_45=0 because the slice documents that the operating oil-and-gas assets (T4) and the operations producing them stayed together: \"expected its oil and gas operations to continue in the ordinary course\" with trade creditors and vendors paid in full — product and process are not split. gap_56=0 because the operational substrate and the people running it moved together: existing management and indemnification for current directors/officers/employees were to \"remain in place,\" and the CEO was retained on the reorganized board, so process and organization stay coherently aligned at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The RSA/term sheet structured a chapter 11 debt-for-equity reorganization in which oil-and-gas operations were to continue in the ordinary course and the operating assets remained with the reorganized Company, so the customer-facing asset layer (T4) and the processes that produce it (T5) did not separate at closing (gap_45=0). The same closing structure left trade creditors paid in ordinary course and existing management/indemnification substantially in place alongside those continuing operations, so T5 and T6 were not structurally decoupled (gap_56=0); board control shifted to lender/Backstop designees but that is ownership/governance replacement, not a process-without-people gap."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The continuity-of-operations line states that oil-and-gas operations were expected to continue in the ordinary course, while the structural summary says the operating assets remained substantially in place; therefore, no product-versus-process mismatch is documented at closing. The governance line retained the CEO and existing indemnification for directors, officers, and employees while installing a newly allocated seven-person board, so organizational continuity was partial but coherently aligned with the continuing operations rather than structurally separated from them."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is a debt-for-equity chapter 11 recapitalization in which control passes from the KKR/ITOCHU sponsor group to the second-lien Backstop Parties (T1 replace, majority of the seven-person reorganized board), while the underlying oil-and-gas business, legal vehicle, and assets remain in place. gap_45=0 because the slice documents that the operating oil-and-gas assets (T4) and the operations producing them stayed together: \\\"expected its oil and gas operations to continue in the ordinary course\\\" with trade creditors and vendors paid in full \\u2014 product and process are not split. gap_56=0 because the operational substrate and the people running it moved together: existing management and indemnification for current directors/officers/employees were to \\\"remain in place,\\\" and the CEO was retained on the reorganized board, so process and organization stay coherently aligned at closing.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The RSA/term sheet structured a chapter 11 debt-for-equity reorganization in which oil-and-gas operations were to continue in the ordinary course and the operating assets remained with the reorganized Company, so the customer-facing asset layer (T4) and the processes that produce it (T5) did not separate at closing (gap_45=0). The same closing structure left trade creditors paid in ordinary course and existing management/indemnification substantially in place alongside those continuing operations, so T5 and T6 were not structurally decoupled (gap_56=0); board control shifted to lender/Backstop designees but that is ownership/governance replacement, not a process-without-people gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The continuity-of-operations line states that oil-and-gas operations were expected to continue in the ordinary course, while the structural summary says the operating assets remained substantially in place; therefore, no product-versus-process mismatch is documented at closing. The governance line retained the CEO and existing indemnification for directors, officers, and employees while installing a newly allocated seven-person board, so organizational continuity was partial but coherently aligned with the continuing operations rather than structurally separated from them.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

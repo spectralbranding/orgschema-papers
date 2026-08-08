@@ -1,0 +1,470 @@
+ 
+ 8-K
+ 1
+ d432465d8k.htm
+ FORM 8-K
+
+ Form 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON, D.C. 20549 
+ FORM 8-K 
+ 
+ CURRENT REPORT PURSUANT
+TO SECTION 13 OR 15(D) OF THE SECURITIES EXCHANGE ACT OF 1934 
+ Date of Report (Date of earliest event reported): August 1, 2017 
+ 
+ INC RESEARCH HOLDINGS, INC. 
+ (Exact name of registrant as specified in its charter) 
+ Delaware
+ (State or other jurisdiction of incorporation) 
+
+ 001-36730 
+ 
+ 27-3403111 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer Identification No.) 
+
+ 3201 Beechleaf Court, Suite 600 
+ Raleigh, North Carolina 
+ 
+ 27604-1547 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+ Registrant&#146;s telephone number, including area code (919) 876-9300 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the
+following provisions ( see General Instruction A.2. below): 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230-425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405
+of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). Emerging growth company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or
+revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Item 1.01 Entry into a Material Definitive Agreement. 
+ On August 1, 2017, INC Research Holdings, Inc. (&#147;INC Research&#148;) entered into the Credit Agreement (the &#147;Credit Agreement&#148;) among INC
+Research, the lenders party thereto, Credit Suisse AG (&#147;Credit Suisse&#148;), as Administrative Agent, and each of the other parties party thereto. 
+ The Credit Agreement provides for (a) a $1,000 million term loan A facility that matures on August 1, 2022, (b) a $1,600 million term loan B
+facility that matures on August 1, 2024 and (c) a five-year $500 million revolving credit facility, with a letter of credit sublimit of $150 million. Borrowings bear interest at a rate per annum equal to the adjusted eurocurrency rate plus
+an applicable rate or an alternate base rate plus an applicable rate, subject to a pricing grid based on the first lien leverage ratio or secured leverage ratio, as applicable. The adjusted eurocurrency rate is equal to LIBOR, subject to adjustment
+for reserve requirements. The alternate base rate is equal to the highest of (i) the federal funds rate plus 0.50%; (ii) the eurocurrency rate for an interest period of one month plus 1.00%, (iii) the rate of interest per annum
+publicly announced from time to time by Credit Suisse as its prime rate; and (iv) 0.00%. The Credit Agreement provides that the borrowers under the Credit Agreement make scheduled quarterly payments on the term loan A facility equal to 0.625%
+of the original principal amount of the term loan A facility in year 1, 1.25% in year 2, 1.875% in year 3 and 2.5% thereafter. The Credit Agreement also provides that the borrowers under the Credit Agreement make scheduled quarterly payments on the
+term loan B facility equal to 0.25% of the original principal amount of the term loan B facility. All obligations under the Credit Agreement are
+unconditionally guaranteed by INC Research and all of its direct and indirect domestic subsidiaries, other than certain excluded subsidiaries (the &#147;Guarantors&#148;). All obligations under the Credit Agreement, and the guarantees thereof, are
+secured, subject to certain exceptions, by substantially all of the assets of INC Research and each of the Guarantors, including: 
+
+ &#149; 
+ 
+ a first-priority (subject to permitted liens) pledge of all of the capital stock of each subsidiary of INC Research or any Guarantor (which pledge, in the case of the capital stock of certain foreign subsidiaries or
+disregarded domestic subsidiaries, is limited to 65% of such capital stock); and 
+
+ &#149; 
+ 
+ a first-priority (subject to permitted liens) security interest in, substantially all of INC Research and the Guarantors&#146; equipment, intellectual property, pledged debt, general intangibles, books, records,
+receivables, inventory, deposit accounts and supporting obligations related to the foregoing. With respect to the term loan A facility and
+the revolving credit facility, the Credit Agreement requires INC Research to maintain a maximum first lien leverage ratio of not more than 5.0 to 1.0 as of the last day of each fiscal quarter ending on or before December 31, 2018 (starting with
+the first full fiscal quarter ending after the closing date), and 4.5 to 1.0 from and after March 31, 2019. In addition, the Credit Agreement contains certain customary affirmative and negative covenants, including as of the last day of each
+fiscal quarter ending on or after, among other things (and subject to certain exceptions), restrictions on the incurrence of debt and liens, payments of dividends and 
+ 2 
+
+repurchases of stock, investments, transactions with affiliates, and certain fundamental changes. Amounts due under the Credit Agreement may be accelerated upon an &#147;event of default,&#148;
+as defined in the Credit Agreement, such as failure to pay amounts owed thereunder when due, breach of a covenant, material inaccuracy of a representation or occurrence of bankruptcy or insolvency, subject in some cases to cure periods. 
+ The description of the Credit Agreement contained herein is qualified in its entirety by reference to the Credit Agreement, a copy of which is attached hereto
+as Exhibit 10.1 and incorporated herein by reference. Item 1.02 Termination of a Material Definitive Agreement. 
+ On August 1, 2017, concurrently with entering into the Credit Agreement, INC Research terminated the Credit Agreement, dated as of May 14, 2015 (the
+&#147;Existing Credit Agreement&#148;), as amended by the First Amendment to Credit Agreement and Increase Revolving Joinder (the &#147;Existing Credit Agreement Amendment&#148;) on August 31, 2016, among INC Research, LLC, INC Research, the
+lenders party thereto, Wells Fargo Bank, National Association, as Administrative Agent and Collateral Agent, and each of the other parties party thereto. As of the date of termination, INC Research repaid all outstanding loans and obligations under
+the Existing Credit Agreement in full. The foregoing description of the Existing Credit Agreement is qualified in its entirety by reference to the full
+text of the Existing Credit Agreement, a copy of which was attached as Exhibit 10.1 to INC Research&#146;s Current Report on Form 8-K filed with the Securities and Exchange Commission (the &#147;Commission&#148;) on May 14, 2015, as amended by
+the Existing Credit Agreement Amendment, a copy of which was attached as Exhibit 10.1 to INC Research&#146;s Current Report on Form 8-K filed with the Commission on August 31, 2016, each of which is incorporated herein by reference. 
+ Item 2.01 Completion of Acquisition or Disposition of Assets. 
+ On August 1, 2017, INC Research completed its previously announced merger (the &#147;Merger&#148;) with Double Eagle Parent, Inc. (&#147;inVentiv&#148;).
+Pursuant to the terms of the merger agreement, dated as of May 10, 2017, by and between INC Research and inVentiv (the &#147;Merger Agreement&#148;), at the closing, inVentiv was merged with and into INC Research, and the separate corporate
+existence of inVentiv ceased, with INC Research continuing as the surviving corporation (the &#147;Surviving Corporation&#148;) in the Merger. The
+aggregate merger consideration (the &#147;Aggregate Merger Consideration&#148;) paid in respect of all outstanding shares of inVentiv&#146;s common stock, par value $0.0001 per share (each an &#147;inVentiv Share&#148;), outstanding options to
+purchase inVentiv shares and outstanding inVentiv restricted stock units was equal to 49,989,839 fully diluted shares of INC Research&#146;s Common Stock, par value $0.01 per share (each, a share of &#147;INC Research Common Stock&#148;). Each
+inVentiv restricted stock unit was cancelled and only entitles the holder to receive shares of INC Research Common Stock, and each vested inVentiv stock option was converted into fully vested options to acquire INC Research Common Stock with an
+equivalent intrinsic value, each after giving effect to any vesting or forfeiture of equity awards in connection with the transactions and based on the product of the per share 
+ 3 
+
+consideration and the average closing price of INC Research Common Stock on the NASDAQ for the ten days prior to August 1, 2017 (the &#147;Company Share Value&#148;). The per share
+consideration is calculated by dividing the Aggregate Merger Consideration by the Fully Diluted Company Shares. &#147;Fully Diluted Company Shares&#148; means the sum of, as of immediately prior to the effective time of the Merger, the number of
+(1) shares of outstanding inVentiv common stock, (2) outstanding inVentiv restricted stock units (after giving effect to any vesting or forfeiture in connection with the transactions) and (3) the aggregate of all &#147;inVentiv Option
+Share Equivalents&#148;. &#147;inVentiv Option Share Equivalents&#148; means, for each individual option to purchase inVentiv common stock outstanding as of the effective time of the Merger (after giving effect to any vesting or forfeiture in
+connection with the transactions), the product of (x) the number of shares of inVentiv common stock covered by such option and (y) the ratio of (A) the positive spread value of each such option (if any) to (B) the value of a
+share of inVentiv common stock (each based on the Company Share Value). Each inVentiv stock option and restricted stock unit that was not vested as of the effective time of the Merger was forfeited and cancelled for no consideration. 
+ Upon completion of the Merger, former INC Research stockholders will hold approximately 53% of the Surviving Corporation on a fully diluted basis and former
+inVentiv stockholders will hold approximately 47% of the Surviving Corporation on a fully diluted basis, based on the shares outstanding for both INC Research and InVentiv as of May 31, 2017. 
+ The foregoing description of the Merger and the Merger Agreement is not complete and is qualified in its entirety by reference to the full text of the Merger
+Agreement, a copy of which was attached as Exhibit 2.1 to INC Research&#146;s Current Report on Form 8-K filed with the Commission on May 10, 2017, which is incorporated herein by reference. 
+ Item 2.03 Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant. 
+ The information in Item 1.01 above is incorporated into this Item 2.03 by reference. 
+ Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain
+Officers. Board of Directors As
+previously reported in INC Research&#146;s Current Report on Form 8-K filed with the Commission on May 10, 2017, pursuant to the terms of that certain Stockholders&#146; Agreement (the &#147;THL Stockholders&#146; Agreement&#148;), dated as of
+May 10, 2017, by and between INC Research and certain investment funds affiliated with Thomas H. Lee Partners, L.P. (the &#147;THL Sponsor&#148;) and that certain Stockholders&#146; Agreement (the &#147;Advent Stockholders&#146; Agreement&#148;
+and together with the THL Stockholders&#146; Agreement, the &#147;Stockholders&#146; Agreements&#148;), dated as of May 10, 2017, by and between INC Research and certain investment funds affiliated with Advent International Corporation (the
+&#147;Advent Sponsor&#148;), the resignation of certain directors of INC Research and the appointment of certain director designees of the THL Sponsor and the Advent Sponsor to serve as members of the board of directors of the Surviving Corporation
+(the &#147;Board&#148;) became effective as of the effective time of the Merger. As a result, the composition of the Board is as follows: 
+ 4 
+
+ Class I (expiring 2018) 
+ 
+ Class II (expiring 2019) 
+ 
+ Class III (expiring 2020) 
+
+ Alistair Macdonald 
+ 
+ William E. Klitgaard 
+ 
+ Kenneth F. Meyers 
+ 
+ Linda S. Harty 
+ 
+ Michael Bell 
+ 
+ Matthew E. Monaghan 
+ 
+ Tom Allen 
+ 
+ John Maldonado 
+ 
+ Joshua Nelson 
+
+ Todd Abbrecht 
+
+ Effective immediately upon completion of the Merger, Michael Bell became Executive Chairman of the Board. 
+ Furthermore, effective immediately upon completion of the Merger, the Board appointed the following directors to serve on the following committees of the
+Board: Audit Committee : Linda S. Harty, William E. Klitgaard and Matthew E. Monaghan, with William E. Klitgaard serving as Chair. 
+ Nominating and Corporate Governance Committee : Tom Allen, Todd Abbrecht, Kenneth F. Meyers and Matthew E. Monaghan, with Tom Allen serving as Chair.
+ Compensation Committee : Linda S. Harty, John Maldonado, Kenneth F. Meyers, and Joshua Nelson, with Kenneth F. Meyers serving as Chair. 
+ None of the directors are party to any transaction requiring disclosure under Item 404(a) of Regulation S-K. 
+ Each non-employee member of the Board will receive compensation for their services as a director, including cash fees and annual equity awards (other than Tom
+Allen and John Maldonado, as described below), consistent with INC Research&#146;s historical director compensation practices. Namely, non-employee directors of the Surviving Corporation will receive cash fees of $60,000 per year (in addition to
+fees received by committee chairs and members) and annual equity awards with an aggregate value per director of $150,000, prorated, as applicable, for service for the 2017 fiscal year. Tom Allen and John Maldonado have waived any and all rights to
+receive equity-compensation awards from the Surviving Corporation as a result of their service on the Board. Alistair Macdonald and Michael Bell, who are employed by the Surviving Corporation, will not receive any compensation for serving on the
+Board, however, like the non-employee directors, will be reimbursed for reasonable expenses incurred in connection with serving on the Board, including documented travel expenses to attend meetings. 
+ Executive Officers Upon
+completion of the Merger, the following appointments to the Surviving Corporation&#146;s senior leadership team became effective, and these individuals are the only executive officers of INC Research: 
+ 5 
+
+ Name 
+ 
+ Age 
+ 
+ Title 
+
+ Alistair Macdonald 
+ 
+ 47 
+ 
+ Chief Executive Officer 
+ 
+ Michael Bell 
+ 
+ 62 
+ 
+ Executive Chairman and President, Commercial Division 
+ 
+ Christopher Gaenzle 
+ 
+ 50 
+ 
+ Chief Administrative Officer and General Counsel 
+ 
+ Gregory Rush 
+ 
+ 50 
+ 
+ Executive Vice President and Chief Financial Officer 
+ In addition, upon completion of the Merger, Michael Gibertini, PhD will transition from Chief Operating Officer to a new role
+with the Surviving Corporation as President, Clinical Development, Therapeutic Business Units, and will cease to be an executive officer at that time. 
+ Appointment of Michael Bell In connection with
+the Merger Agreement, on May 10, 2017, INC Research entered into a letter agreement with Mr. Bell (the &#147;Letter Agreement&#148;). Pursuant to the terms of the Letter Agreement, Mr. Bell will act as Chairman of the Board until the
+earlier of the Surviving Corporation&#146;s 2019 annual shareholder meeting or May 10, 2019 (the &#147;Transition Date&#148;) and will serve as an executive officer running the Surviving Corporation&#146;s commercial division until a successor
+division head is chosen. The Letter Agreement provides that Mr. Bell may be removed by the Board upon a majority vote and that Mr. Bell will resign from the Board if his employment terminates. Mr. Bell holds options to purchase shares of
+INC Research Common Stock as a result of the conversion of his outstanding inVentiv options upon the effective time of the Merger. Any restrictions on the sale of shares of INC Research Common Stock that may be issued upon exercise of these options
+will lapse upon certain terminations of employment or the Transition Date. Mr. Bell will continue to have the same $850,000 salary and $850,000
+target annual bonus opportunity as provided under his current employment agreement with inVentiv Health, Inc. and will be entitled to receive 2018 and 2019 long-term incentive awards in amounts not less than 80% and 33%, respectively, of that
+received by the Surviving Corporation&#146;s Chief Executive Officer. Mr. Bell will be entitled to receive $2,550,000 (plus 6% interest accruing from the closing date) in cash severance upon a termination by the Surviving Corporation without
+cause or his resignation for good reason, in either case, prior to the Transition Date or upon any termination of employment after the Transition Date. In addition, Mr. Bell will be entitled to receive twelve months of health and welfare
+benefit continuation and three months of career transition services in connection with such termination of employment. The foregoing summary of the
+Letter Agreement does not purport to be complete and is subject to, and qualified in its entirety by, reference to the full text of the Letter Agreement, a copy of which was attached as Exhibit 10.5 to INC Research&#146;s Current Report on Form 8-K
+filed with the Commission on May 10, 2017, which is incorporated herein by reference. Mr. Bell, age 62, served as Chairman and Chief Executive
+Officer of inVentiv Group Holdings, Inc. from September 2014 until the completion of the Merger. Mr. Bell served as Chief Operating Officer of inVentiv Group Holdings, Inc. from May 2014 until his appointment as
+ 
+ 6 
+
+Chairman and Chief Executive Officer. From 1998 until he joined inVentiv Group Holdings, Inc., Mr. Bell was a Managing Partner and Founder of Monitor Clipper Partners, a private equity firm
+where he invested in companies in the professional services, procurement outsourcing and biopharmaceutical services industries. Mr. Bell also served as Senior Executive Vice President of John Hancock Financial Services, Inc., reporting to the
+Chairman and Chief Executive Officer, from 2001 until the business was sold to Manulife Financial Corporation in 2004. In 1983 Mr. Bell was a founder of Monitor Group, a management consulting firm engaged across the healthcare delivery system,
+and was a member of the firm&#146;s leadership team until 1998 when he joined Monitor Clipper Partners, LLC. There are no family relationships between Mr. Bell and any director or executive officer of INC Research (or person nominated or chosen
+to become a director or executive officer of INC Research), and Mr. Bell has no direct or indirect material interest in any transaction required to be disclosed pursuant to Item 404(a) of Regulation S-K. 
+ Item 5.03 Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. 
+ Upon the consummation of the Merger on August 1, 2017, and in accordance with the Merger Agreement, the Surviving Corporation&#146;s Certificate of
+Incorporation and Bylaws were each amended and restated in their entirety as previously described in INC Research&#146;s proxy statement, dated June 30, 2017, and filed with the Commission on June 30, 2017. 
+ The description of the Surviving Corporation&#146;s Certificate of Incorporation and the Amended and Restated Bylaws contained herein does not purport to be
+complete and is qualified in its entirety by reference to the Certificate of Incorporation and Amended and Restated Bylaws of the Surviving Corporation, which are attached to this Current Report on Form 8-K as Exhibits 3.1 and 3.2, respectively, and
+are incorporated herein by reference. Certificate of Incorporation of the Surviving Corporation 
+ The Certificate of Incorporation of the Surviving Corporation is substantially similar to INC Research&#146;s Certificate of Incorporation as in effect prior
+to the Merger, except that, among other things, the Certificate of Incorporation of the Surviving Corporation: 
+
+ &#149; 
+ 
+ set the total number of directors constituting the entire Board at ten, subject to the terms of the Stockholders&#146; Agreements; 
+
+ &#149; 
+ 
+ replaced references to the Second Amended and Restated Stockholders Agreement, effective as of November 6, 2014, and the parties thereto, with the Stockholders&#146; Agreements; 
+
+ &#149; 
+ 
+ removed references to former controlling stockholders of INC Research that no longer beneficially own at least 10% the outstanding shares of INC Research Common Stock, which reduction in beneficial ownership made
+certain provisions of INC Research&#146;s previously existing certificate of incorporation no longer applicable; and 
+
+ &#149; 
+ 
+ incorporated provisions of each of the Stockholders&#146; Agreements whereby, except in the case where a director designated by the THL Sponsor or the Advent Sponsor first becomes aware of a business opportunity in his
+or her capacity as a director of the Surviving Corporation, the Surviving Corporation: 
+ 7 
+
+ &#149; 
+ 
+ acknowledges and affirms that each of the THL Sponsor and Advent Sponsor and each of the THL Sponsor&#146;s and Advent Sponsor&#146;s their respective affiliates, employees, directors, partners and members, including
+any director designated by the THL Sponsor or the Advent Sponsor (collectively, the &#147;Investor Group&#148;), (a) participates in other investments that engage in various aspects of business similar to those engaged in by the Surviving
+Corporation and its subsidiaries that may, are or will be competitive with the Surviving Corporation&#146;s or any of its subsidiaries&#146; business or could be suitable for the Surviving Corporation&#146;s or any of its subsidiaries&#146;
+interests, (b) may maintain seats on the board of directors or similar governing bodies of other investments, (c) may develop or become aware of business opportunities for other investments and (d) may or will have conflicts of
+interests; 
+
+ &#149; 
+ 
+ renounces and disclaims any interest or expectancy in any business opportunity or other opportunities that may arise in connection in the circumstances described in (a) &#150; (d) above (the &#147;Renounced
+Business Opportunities&#148;); 
+
+ &#149; 
+ 
+ acknowledges and affirms that no member of the Investor Group may have any obligation to communicate or offer any Renounced Business Opportunities to the Surviving Corporation or any of its subsidiaries, and any member
+of the Investor Group may pursue a Renounced Business Opportunity; and 
+
+ &#149; 
+ 
+ acknowledges and affirms that any of the Renounced Business Opportunities will not be considered a violation of any policies or codes of the Surviving Corporation. 
+ Bylaws of the Surviving Corporation The Bylaws of
+the Surviving Corporation are substantially similar to INC Research&#146;s Bylaws as in effect prior to the Merger, except that, among other things, the Bylaws of the Surviving Corporation: 
+
+ &#149; 
+ 
+ replaced references to the Second Amended and Restated Stockholders Agreement, effective as of November 6, 2014, and the parties thereto, with the Stockholders&#146; Agreements; 
+
+ &#149; 
+ 
+ removed references to former controlling stockholders of INC Research, who no longer beneficially own at least 10% the outstanding shares of INC Research Common Stock, which changes in beneficial ownership made certain
+provisions of INC Research&#146;s previous bylaws no longer applicable; 
+
+ &#149; 
+ 
+ provide that (a) in an uncontested election, directors will be elected by the affirmative vote of a majority of the votes cast of the shares present in person or represented by proxy at a meeting at which a quorum
+is present and (b) in a contested election, directors will be elected by a plurality of the votes of the shares present in person or represented by proxy at a meeting; 
+ 8 
+
+ &#149; 
+ 
+ provide that the certain sections of the Bylaws of the Surviving Corporation are subject to the terms of each of the Stockholders&#146; Agreements, including sections relating to the Chairperson of the Board, removal of
+directors, vacancies and newly created directorships, committees of the Board, quorum and manner of acting, and vacancies on committees of the Board; and 
+
+ &#149; 
+ 
+ provide that in the event of any conflict between the Bylaws of the Surviving Corporation and either of the Stockholders&#146; Agreements, the provisions of such Stockholders&#146; Agreements will be controlling.
+ The description of the Certificate of Incorporation and the Amended and Restated Bylaws of the Surviving Corporation contained herein does
+not purport to be complete and is qualified in its entirety by reference to the Certificate of Incorporation and Amended and Restated Bylaws of the Surviving Corporation, which are attached to this Current Report on Form 8-K as Exhibits 3.1 and 3.2,
+respectively, and are incorporated herein by reference. Item 8.01 Other Events 
+ On August 1, 2017, INC Research and inVentiv issued a joint press release announcing the consummation of the transactions contemplated by the Merger
+Agreement. The press release is filed as Exhibit 99.1 to this Current Report on Form 8-K. Risks Related to the Merger 
+ There are a number of significant risks related to the Merger and the Surviving Corporation, including the risk factors enumerated below. 
+ The Merger may not be accretive and may cause dilution to the Surviving Corporation&#146;s earnings per share, which may negatively affect the market
+price of common stock of the Surviving Corporation. The Surviving Corporation currently anticipates that the Merger will be accretive to its
+adjusted earnings per share beginning in first full year subsequent to the completion of the Merger. However, this expectation is based on preliminary estimates, which may change materially. The Surviving Corporation could also fail to realize any
+or all of the benefits anticipated in the Merger or experience material delays or inefficiencies in realizing such benefits, which could cause dilution to the Surviving Corporation&#146;s adjusted diluted earnings per share or decrease or delay the
+expected accretive effect of the Merger and cause a decrease in the market value of the Surviving Corporation&#146;s common stock. This could negatively impact the Surviving Corporation&#146;s earnings per share or decrease or delay the expected
+accretive effect of the Merger and cause a decrease in the market price of common stock of the Surviving Corporation. The Surviving Corporation may
+be unable to run a successful contract commercial organization. 
+ 9 
+
+ The Surviving Corporation anticipates that significant value will be realized in connection with INC
+Research&#146;s acquisition of inVentiv&#146;s commercial business segment. However, because INC Research has not historically had a commercial business segment in the past, it is possible that the Surviving Corporation will fail to achieve the
+anticipated benefits of the combination. The Surviving Corporation may not be as successful in cross-selling its clinical and commercial services as projected prior to the consummation of the Merger. 
+ In addition, the commercial business segment will introduce risks to the Surviving Corporation that INC Research has not been subject to historically. Those
+risks include: 
+
+ &#149; 
+ 
+ commercial segment contracts tend to have shorter durations and it can be difficult to predict whether these contracts will be renewed; 
+
+ &#149; 
+ 
+ biopharmaceutical companies can encounter difficulties raising capital to fund their R&D and commercialization projects; 
+
+ &#149; 
+ 
+ governmental reform or private market initiatives intended to reduce the cost of biopharmaceutical products, or governmental, medical association or biopharmaceutical industry initiatives designed to regulate the manner
+in which biopharmaceutical companies promote their products, each of which can limit the value of inVentiv commercialization services; 
+
+ &#149; 
+ 
+ further consolidation in the biopharmaceutical industry, which could negatively affect certain of the combined company&#146;s commercial service offerings by reducing overall outsourced expenditures if the combined
+company is unsuccessful in winning business from the consolidated entity, or could result in the delay or cancellation of existing projects, cause reductions in overall outsourcing expenditures, or lead to increased pricing pressures; and
+
+ &#149; 
+ 
+ companies electing to perform clinical development and commercialization services the combined company will provide internally based on industry or company specific factors, such as the rate of new product development,
+the number of professionals employed internally in relation to demand or the need to promote new and existing products or develop new products. 
+ The Surviving Corporation may fail to realize the anticipated benefits of the Merger. 
+ The success of the Merger will depend on, among other things, the Surviving Corporation&#146;s ability to combine INC Research&#146;s business with the
+business of inVentiv and to achieve operating synergies. If the Surviving Corporation is not able to successfully achieve this objective, the anticipated benefits of the Merger may not be realized fully, or at all, or may take longer to realize than
+expected. The difficulties of combining the operations of the companies include, among others: 
+
+ &#149; 
+ 
+ difficulties in achieving anticipated cost savings, synergies, business opportunities and growth prospects from the combination; 
+ 10 
+
+ &#149; 
+ 
+ difficulties in reconciling and integrating the different methods of recognizing revenue of the businesses of inVentiv and INC Research; 
+
+ &#149; 
+ 
+ challenges in attracting and retaining key personnel; 
+
+ &#149; 
+ 
+ difficulties in managing the expanded operations of a significantly larger and more complex company; and 
+
+ &#149; 
+ 
+ potential unknown liabilities and unforeseen increased expenses or delays associated with the Merger. For
+example, both INC Research and inVentiv have incurred and expect to continue to incur substantial expenses in connection with consummation of the Merger and combining the businesses, operations, networks, systems, technologies, policies and
+procedures of the two companies. Many of the expenses that have been and will be incurred, by their nature, are difficult to estimate accurately at the present time and as result may exceed the savings that the Surviving Corporation expects to
+achieve from the elimination of duplicative expenses and the realization of economies of scale and cost savings related to the combination of the businesses following the consummation of the Merger. 
+ Prior to the consummation of the Merger, INC Research and inVentiv have operated independently. It is possible that the integration process or other factors
+could result in the disruption of the Surviving Corporation&#146;s ongoing business or inconsistencies in standards, controls, procedures and policies. These transition matters could have an adverse effect on the Surviving Corporation for an
+undetermined amount of time after the consummation of the Merger. In addition, events outside of the Surviving Corporation&#146;s control, including changes in regulations and laws, as well as economic trends, could adversely affect its ability to
+realize the expected benefits from the Merger. The Surviving Corporation&#146;s future results will suffer if it does not effectively manage its
+expanded operations following the completion of the Merger. As a result of the completion of the Merger, the size of the Surviving
+Corporation&#146;s business will increase significantly beyond the size of either INC Research&#146;s or inVentiv&#146;s businesses prior to the Merger. The Surviving Corporation&#146;s future success depends, in part, upon its ability to manage
+this expanded business, which will pose substantial challenges for management, including challenges related to the management and monitoring of new operations and associated increased costs and complexity. For example, the Surviving Corporation may
+not be able to maintain a level of cash flows from operating activities sufficient to permit it to pay the principal, premium, if any, and interest on its indebtedness when due. If the combined company&#146;s cash flows and capital resources are
+insufficient to fund its debt service obligations, it may be forced to reduce or delay investments and capital expenditures, or to sell assets, seek additional capital or restructure or refinance its indebtedness. In addition, the Surviving
+Corporation anticipates that it will have significantly greater leverage as compared to INC Research as of the execution date of the Merger Agreement. This increased leverage could reduce the Surviving Corporation&#146;s flexibility in responding to
+current and changing industry and 
+ 11 
+
+financial market conditions. If the Surviving Corporation is unsuccessful in managing its operations or if it does not realize the expected operating efficiencies, cost savings and other benefits
+currently anticipated from the Merger, its operations and financial condition could be adversely affected and the Surviving Corporation may not be able to take advantage of business development opportunities. 
+ The Surviving Corporation&#146;s operating results and share price may be volatile, which could cause the value of its stockholders&#146; investments to
+decline. The Surviving Corporation&#146;s quarterly and annual operating results following the Merger may fluctuate in the future, and such
+fluctuations may be significant. Such fluctuations may be due to the accretion, or anticipated accretion, of the Merger, the progress and success of the integration process or the perception of such progress or success, additions or departures of
+key personnel or sponsors of clinical trials and other customers, distributors, partners, suppliers, licensors, and licensees, the introduction of new products or services by the Surviving Corporation or its competitors, issuance of new or changed
+securities analysts&#146; reports or recommendations, sales, or anticipated sales, of large blocks of stock of the combined company, regulatory or political developments and other factors. In addition, securities markets worldwide have experienced,
+and are likely to continue to experience, significant price and volume fluctuations. This market volatility, as well as general economic, market or political conditions, could subject the market price of the Surviving Corporation&#146;s shares to
+wide price fluctuations regardless of its operating performance. Item 9.01 Financial Statements and Exhibits 
+ (a) Financial Statements of Businesses Acquired. The
+consolidated balance sheets of inVentiv as of December 31, 2016 (Successor) and 2015 (Predecessor), the consolidated statements of operations, comprehensive loss, stockholders&#146; equity (deficit) and cash flows of inVentiv for the periods
+January 1, 2016 through November 8, 2016 (Predecessor) and November 9, 2016 through December 31, 2016 (Successor) and for the years ended December 31, 2015 and 2014 (Predecessor) and the independent auditors&#146; report and
+the notes to consolidated financial statements related thereto, are attached hereto as Exhibit 99.2 and incorporated herein by reference. The condensed
+consolidated balance sheets and statements of stockholders&#146; equity of inVentiv as of March 31, 2017 and December 31, 2016, the condensed consolidated statements of operations, comprehensive loss and cash flows of inVentiv for the
+three months ended March 31, 2017 (Successor) and the three months ended March 31, 2016 (Predecessor) and the notes to condensed consolidated financial statements related thereto, are attached hereto as Exhibit 99.3 and are incorporated
+herein by reference. (b) Pro Forma Financial Information . 
+ The unaudited pro forma condensed combined balance sheet as of March 31, 2017, the unaudited pro forma condensed combined statements of operations for the
+three months ended March 31, 2017 and the year ended December 31, 2016 and the notes to unaudited pro forma condensed 
+ 12 
+
+combined financial statements related thereto, are incorporated herein by reference to page 175-194 of INC Research&#146;s definitive proxy statement on Schedule 14A, filed with the Commission on
+June 30, 2017. (d) Exhibits. The exhibits to
+this Current Report on Form 8-K are listed in the Exhibit Index, which appears at the end of this report and is incorporated by reference herein. 
+ 13 
+
+ SIGNATURE 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by
+the undersigned hereunto duly authorized. 
+
+ INC RESEARCH HOLDINGS, INC. 
+
+ By 
+ 
+ /s/ Christopher L. Gaenzle 
+ 
+ Name: 
+ 
+ Christopher L. Gaenzle 
+ 
+ Title: 
+ 
+ Chief Administrative Officer and General Counsel 
+ Date: August 1, 2017 
+
+ EXHIBIT INDEX 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated as of May 10, 2017, between INC Research Holdings, Inc. and Double Eagle Parent, Inc. (incorporated by reference to Exhibit 2.1 of INC Research&#146;s Current Report on Form 8-K, filed on May 10,
+2017). 
+
+ 3.1 
+ 
+ Certificate of Incorporation of INC Research Holdings, Inc. 
+
+ 3.2 
+ 
+ Amended and Restated Bylaws of INC Research Holdings, Inc. 
+
+ 10.1 
+ 
+ Credit Agreement, dated as of August 1, 2017, among INC Research Holdings, Inc., the lenders party thereto, Credit Suisse AG, as Administrative Agent, and each of the other parties party thereto. 
+
+ 10.2 
+ 
+ Letter Agreement, dated May 10, 2017, by and among INC Research Holdings, Inc., inVentiv Health, Inc. and Michael A. Bell (incorporated by reference to Exhibit 10.5 of INC Research&#146;s Current Report on Form 8-K, filed on May 10,
+2017). 
+
+ 23.1 
+ 
+ Consent of Deloitte & Touche LLP. 
+
+ 99.1 
+ 
+ Press Release, dated August 1, 2017. 
+
+ 99.2 
+ 
+ The consolidated balance sheets of inVentiv as of December 31, 2016 (Successor) and 2015 (Predecessor), the consolidated statements of operations, comprehensive loss, stockholders&#146; equity (deficit) and cash flows of inVentiv
+for the periods January 1, 2016 through November 8, 2016 (Predecessor) and November 9, 2016 through December 31, 2016 (Successor) and for the years ended December 31, 2015 and 2014 (Predecessor) and the independent auditors&#146; report and the
+notes to consolidated financial statements related thereto. 
+
+ 99.3 
+ 
+ The condensed consolidated balance sheets and statements of stockholders&#146; equity of inVentiv as of March 31, 2017 and December 31, 2016, the condensed consolidated statements of operations, comprehensive loss and cash flows of
+inVentiv for the three months ended March 31, 2017 (Successor) and the three months ended March 31, 2016 (Predecessor) and the notes to condensed consolidated financial statements related thereto. 
+

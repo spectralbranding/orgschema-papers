@@ -1,0 +1,58 @@
+{
+  "case_id": "P339",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "filed voluntary petitions under Chapter 11 of the Bankruptcy Code",
+      "rationale": "The evidence slice documents severe financial distress, including a $1.28 billion impairment charge and a subsequent Chapter 11 bankruptcy filing, but does not report specific operational integration failures. There is no documented evidence of disruption at the product/process interface or fracture between operations and organizational culture."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11 then merged into Bonanza Creek; equity ~1.6% (~3 yrs)",
+      "rationale": "The slice documents HighPoint's post-2018 trajectory solely through financial results (2019–2020 net losses, a $1,285 million impairment/abandonment charge), a going-concern qualification, reverse split, and a prepackaged Chapter 11 culminating in the April 2021 Bonanza Creek merger, with no mention of product/process misalignment or product-line/operations incoherence; therefore p4_pathway is 0. Likewise, no realized fracture at the process/organization interface (operations vs. people/management/culture) is described, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 and acquisition after ~3 years; former equityholders received ~1.6% of acquirer",
+      "rationale": "The slice documents severe financial deterioration, including a $1.164 billion FY2020 net loss, a $1.285 billion impairment/abandonment charge, and a subsequent Chapter 11 filing, but does not attribute these outcomes to product-line/operations incoherence. It likewise provides no documented evidence that operational integration fractured against management, employees, or culture over time; the stated going-concern issue was tied to credit-facility covenant risk and insufficient liquidity."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"filed voluntary petitions under Chapter 11 of the Bankruptcy Code\",\n  \"rationale\": \"The evidence slice documents severe financial distress, including a $1.28 billion impairment charge and a subsequent Chapter 11 bankruptcy filing, but does not report specific operational integration failures. There is no documented evidence of disruption at the product/process interface or fracture between operations and organizational culture.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11 then merged into Bonanza Creek; equity ~1.6% (~3 yrs)\",\n  \"rationale\": \"The slice documents HighPoint's post-2018 trajectory solely through financial results (2019–2020 net losses, a $1,285 million impairment/abandonment charge), a going-concern qualification, reverse split, and a prepackaged Chapter 11 culminating in the April 2021 Bonanza Creek merger, with no mention of product/process misalignment or product-line/operations incoherence; therefore p4_pathway is 0. Likewise, no realized fracture at the process/organization interface (operations vs. people/management/culture) is described, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 and acquisition after ~3 years; former equityholders received ~1.6% of acquirer\",\n  \"rationale\": \"The slice documents severe financial deterioration, including a $1.164 billion FY2020 net loss, a $1.285 billion impairment/abandonment charge, and a subsequent Chapter 11 filing, but does not attribute these outcomes to product-line/operations incoherence. It likewise provides no documented evidence that operational integration fractured against management, employees, or culture over time; the stated going-concern issue was tied to credit-facility covenant risk and insufficient liquidity.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

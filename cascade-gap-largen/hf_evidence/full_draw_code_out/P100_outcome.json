@@ -1,0 +1,58 @@
+{
+  "case_id": "P100",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2018 revenue $4,034.2m, net income $29.4m; then acquired by Univar 2/28/2019 and deregistered 3/12/2019 (no standalone 2019–2021 record)",
+      "rationale": "The slice documents a positive realized trajectory through the last standalone annual record — revenue grew 10.9% to $4,034.2m, net income more than doubled to $29.4m, and the platform kept adding distribution businesses (Ultra Chem, April 2017) — with no reported disruption at the product/process interface, so p4 is coded 0. Likewise there is no documented operations-vs-organization/culture fracture; the record simply terminates when Univar completed its acquisition on 2/28/2019 and the entity was delisted and deregistered, so p5 is coded 0. Because the business was absorbed into Univar at the start of the window and no separate 2019–2021 public record exists, the controlling-intent archetype and business-model reconciliation cannot be assessed and are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "acquired by Univar and deregistered in early 2019",
+      "rationale": "The standalone public record terminates at the start of the 3-5 year window because Nexeo was acquired by Univar and deregistered in early 2019. Consequently, there is no separate public record to observe product/process (p4) or process/organization (p5) integration outcomes over the 3-5 year horizon, making these pathways uncertain."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Acquired by Univar and deregistered in March 2019",
+      "rationale": "The last standalone annual record documented revenue growth to $4,034.2 million, net income growth to $29.4 million, and continued platform additions, with no reported product/process disruption. The entity was then acquired by Univar on February 28, 2019 and deregistered in March 2019, ending separate reporting; the slice documents no realized operations-versus-organization fracture before that termination."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2018 revenue $4,034.2m, net income $29.4m; then acquired by Univar 2/28/2019 and deregistered 3/12/2019 (no standalone 2019\\u20132021 record)\", \"rationale\": \"The slice documents a positive realized trajectory through the last standalone annual record \\u2014 revenue grew 10.9% to $4,034.2m, net income more than doubled to $29.4m, and the platform kept adding distribution businesses (Ultra Chem, April 2017) \\u2014 with no reported disruption at the product/process interface, so p4 is coded 0. Likewise there is no documented operations-vs-organization/culture fracture; the record simply terminates when Univar completed its acquisition on 2/28/2019 and the entity was delisted and deregistered, so p5 is coded 0. Because the business was absorbed into Univar at the start of the window and no separate 2019\\u20132021 public record exists, the controlling-intent archetype and business-model reconciliation cannot be assessed and are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"acquired by Univar and deregistered in early 2019\",\n  \"rationale\": \"The standalone public record terminates at the start of the 3-5 year window because Nexeo was acquired by Univar and deregistered in early 2019. Consequently, there is no separate public record to observe product/process (p4) or process/organization (p5) integration outcomes over the 3-5 year horizon, making these pathways uncertain.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Acquired by Univar and deregistered in March 2019\",\n  \"rationale\": \"The last standalone annual record documented revenue growth to $4,034.2 million, net income growth to $29.4 million, and continued platform additions, with no reported product/process disruption. The entity was then acquired by Univar on February 28, 2019 and deregistered in March 2019, ending separate reporting; the slice documents no realized operations-versus-organization fracture before that termination.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

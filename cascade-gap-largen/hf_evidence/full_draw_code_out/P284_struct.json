@@ -1,0 +1,85 @@
+{
+  "case_id": "P284",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was a whole-company reverse triangular merger in which the Company survived intact as a wholly owned subsidiary; the slice states the customer-facing product, the fresh-dough supplying process, and franchise relationships \"all remained within the single surviving corporation at closing\" with \"no separated tier or transitional-services carve-out,\" so product (T4) and its producing/delivering processes (T5) moved together — gap_45 = 0. Likewise the operations passed intact alongside the people, with Parent contractually providing one year of substantially comparable benefits to continuing employees, so T5 and organization/people (T6) transferred coherently — gap_56 = 0. Because no gap is coded, gap_mitigated = NA. T1 is replace: board/governance control passed to the acquirer at closing (JAB) while the prior controlling principal exited."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company cash acquisition where the Company's existing business segments, franchise network, and fresh-dough supply operations passed intact into the surviving corporation with no separated tier or transitional-services carve-out. Therefore, there is no structural mismatch between the product (T4) and process (T5), nor between the process (T5) and organization (T6)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The business-as-structured line states that the customer-facing product, fresh-dough supplying process, and franchise relationships remained together in the single surviving corporation, with no segment carved out or separated; therefore gap_45 is 0. The structural summary states that the whole company, including its fresh-dough operations, passed intact and that employee continuity was contractually addressed through one year of substantially comparable compensation and benefits, so no closing-time process-versus-organization mismatch is documented and gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was a whole-company reverse triangular merger in which the Company survived intact as a wholly owned subsidiary; the slice states the customer-facing product, the fresh-dough supplying process, and franchise relationships \\\"all remained within the single surviving corporation at closing\\\" with \\\"no separated tier or transitional-services carve-out,\\\" so product (T4) and its producing/delivering processes (T5) moved together \\u2014 gap_45 = 0. Likewise the operations passed intact alongside the people, with Parent contractually providing one year of substantially comparable benefits to continuing employees, so T5 and organization/people (T6) transferred coherently \\u2014 gap_56 = 0. Because no gap is coded, gap_mitigated = NA. T1 is replace: board/governance control passed to the acquirer at closing (JAB) while the prior controlling principal exited.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company cash acquisition where the Company's existing business segments, franchise network, and fresh-dough supply operations passed intact into the surviving corporation with no separated tier or transitional-services carve-out. Therefore, there is no structural mismatch between the product (T4) and process (T5), nor between the process (T5) and organization (T6).\"",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The business-as-structured line states that the customer-facing product, fresh-dough supplying process, and franchise relationships remained together in the single surviving corporation, with no segment carved out or separated; therefore gap_45 is 0. The structural summary states that the whole company, including its fresh-dough operations, passed intact and that employee continuity was contractually addressed through one year of substantially comparable compensation and benefits, so no closing-time process-versus-organization mismatch is documented and gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

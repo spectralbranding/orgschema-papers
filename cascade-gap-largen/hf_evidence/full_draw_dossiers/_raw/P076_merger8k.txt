@@ -1,0 +1,342 @@
+ 
+
+ 0000791915 
+ false 
+ --12-29 
+
+ 0000791915 
+
+ 2020-04-15 
+ 2020-04-16 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ iso4217:USD 
+
+ xbrli:shares 
+
+ UNITED STATES 
+
+ SECURITIES AND EXCHANGE COMMISSION 
+
+ WASHINGTON, D.C. 20549 
+
+ FORM 8-K 
+
+ CURRENT REPORT 
+
+ Pursuant to Section 13 or 15(d) 
+
+ of the Securities Exchange Act of 1934 
+
+ Date of Report (Date of the earliest event
+reported): April 16, 2020 
+
+ Cypress Semiconductor Corporation 
+
+ (Exact name of registrant as specified in
+its charter) 
+
+ Delaware 
+ 
+ 1-10079 
+ 
+ 94-2885898 
+ 
+ (State of Incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (I.R.S. Employer Identification 
+ Number) 
+
+ 198 Champion Court 
+
+ San Jose , California 95134 
+
+ (Address of principal executive offices
+and zip code) 
+
+ ( 408 ) 943-2600 
+
+ (Registrant';s telephone number, including
+area code) 
+
+ Not Applicable 
+
+ (Former Name or Former Address, if changed
+since last report) 
+
+ Check the appropriate box below if the Form 8-K filing
+is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#168; Written communications pursuant to Rule 425 under
+the Securities Act (17 CFR 230.425) 
+
+ &#168; Soliciting material pursuant to Rule 14a-12 under the
+Exchange Act (17 CFR 240.14a-12) 
+
+ &#168; Pre-commencement communications pursuant to Rule 14d-2(b) under
+the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#168; Pre-commencement communications pursuant to Rule 13e-4(c) under
+the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of
+the Act: 
+
+ Title of each class: 
+ 
+ Trading symbol: 
+ 
+ Name of each exchange on which registered: 
+ 
+ Common Stock, $0.01 par value 
+ 
+ CY 
+ 
+ The Nasdaq Global Select Market 
+
+ Indicate by check mark whether the registrant is an emerging
+growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of
+the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter). 
+
+ Emerging growth
+company &#168; 
+
+ If an emerging
+growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with
+any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#168; 
+
+ Introductory Note 
+
+ As previously disclosed in the Current Report
+on Form 8-K filed by Cypress Semiconductor Corporation, a Delaware corporation ("; Cypress ";), with the Securities
+and Exchange Commission (the "; SEC ";) on June 3, 2019, Cypress is party to an Agreement and Plan of Merger, dated
+as of June 3, 2019 (the "; Merger Agreement ";), by and among Cypress, Infineon Technologies AG, a stock corporation
+( Aktiengesellschaft ) organized under the laws of the Federal Republic of Germany ("; Infineon ";), and IFX
+Merger Sub Inc., a Delaware corporation and a wholly-owned subsidiary of Infineon ("; Merger Sub ";). 
+
+ On April 16, 2020 (the "; Closing
+Date ";), pursuant to the Merger Agreement, Merger Sub merged with and into Cypress, with Cypress continuing as the surviving
+entity (the "; Surviving Corporation ";) and a wholly owned subsidiary of Infineon (such merger, the "; Merger ";). 
+
+ Item 1.02 Termination of a Material Definitive Agreement. 
+
+ Credit Agreement . In connection with
+the closing of the Merger, on April 16, 2020, all outstanding obligations (other than certain obligations in respect of hedge and
+treasury services and contingent and indemnity obligations) under that certain Amended and Restated Credit and Guaranty Agreement,
+dated as of March 12, 2015 (as amended by the Agency Resignation Agreement and Amendment No. 9 to Amended and Restated Credit and
+Guaranty Agreement, dated as of July 31, 2019, and as further amended, restated, supplemented or otherwise modified from time to
+time, the "; Credit Agreement ";), among Cypress, the subsidiaries of Cypress party thereto as guarantors, the lenders
+party thereto, MUFG Bank, Ltd., as successor administrative agent to Morgan Stanley Senior Funding, Inc. ("; MSSF ";),
+as issuing bank and as swing line lender, MUFG Union Bank, N.A., as successor collateral agent to MSSF and the other parties thereto,
+were repaid, satisfied and discharged in full, and the Credit Agreement and all commitments thereunder were terminated. 
+
+ Employee Stock Purchase Plan . As
+of immediately prior to the effective time of the Merger (the "; Effective Time ";), the Cypress Semiconductor Corporation
+Employee Stock Purchase Plan, as amended and restated as of January 1, 2019, was terminated. 
+
+ Item 2.01 Completion of Acquisition or Disposition of Assets. 
+
+ The information set forth in the Introductory
+Note and Item 5.01 of this Current Report on Form 8-K is incorporated by reference into this Item 2.01. 
+
+ On the Closing Date, Infineon
+completed the acquisition of Cypress through the Merger. As of the Effective Time, each share of common stock, par value
+$0.01, of Cypress (the "; Common Stock ";) issued and outstanding
+immediately prior to the Effective Time (each such share, a "; Share ";)
+(other than (i) Shares owned by Infineon, Merger Sub or any other direct or indirect wholly owned subsidiary of Infineon
+immediately prior to the Effective Time, and, in each case, not held on behalf of third parties, (ii) Shares owned by
+Cypress, including Shares held in treasury by Cypress, and in each case not held on behalf of third parties,
+(iii) Shares owned by any direct or indirect wholly owned subsidiary of Cypress and (iv) Shares owned by any stockholder
+of the Company who has perfected and not withdrawn a demand for appraisal rights pursuant to Section 262 of the General
+Corporation Law of the State of Delaware (the Shares referred to in the foregoing clauses (i), (ii), (iii) and (iv),
+collectively, the "; Cancelled Shares ";)) was converted into the
+right to receive $23.85 per Share in cash, without interest (the "; Per Share
+Merger Consideration ";). The aggregate Per Share Merger Consideration paid by Infineon in the Merger to
+Cypress';s stockholders was approximately $8.946 billion. 
+
+ Pursuant to the Merger Agreement, 
+
+ (i) at the Effective Time, each outstanding
+option to purchase shares of Common Stock, whether vested or unvested, was cancelled and converted into the right to receive (without
+interest) a cash payment equal to the product of (a) the number of shares of Common Stock subject to such option immediately prior
+to the Effective Time multiplied by (b) the excess, if any, of the Per Share Merger Consideration over the applicable per share
+exercise price of such option immediately prior to the Effective Time and 
+
+ (ii) immediately prior to the Effective
+Time, (a) each outstanding restricted stock unit that was either (1) held by non-employee directors, (2) vested in accordance with
+its applicable terms and for which shares of Common Stock have not yet been issued or (3) subject to accelerated vesting solely
+as a result of the completion of the Merger in accordance with its applicable terms or the terms of the Merger Agreement, and (b)
+with respect to each vesting tranche of restricted stock unit awards that are outstanding as of the date of the Merger Agreement
+and that were not covered by the immediately preceding clause (a), fifty percent (50%) of the total number of such restricted stock
+units subject to such vesting tranche was, in each such case of (a) and (b), cancelled and converted into the right to receive
+(without interest) a cash payment equal to the product of (x) the number of shares of Common Stock subject to such restricted stock
+units immediately prior to the Effective Time multiplied by (y) the Per Share Merger Consideration, on the terms set forth in the
+Merger Agreement, and (c) any other outstanding restricted stock unit was cancelled and converted into the right to receive (without
+interest) a cash payment equal to the product of (x) the number of shares of Common Stock subject to such restricted stock unit
+immediately prior to the Effective Time multiplied by (y) the Per Share Merger Consideration, on the terms set forth in the Merger
+Agreement, which will vest and be payable on the applicable vesting date on which such corresponding unvested restricted stock
+unit would have otherwise vested in accordance with its terms, subject to the holder';s continued employment through such
+vesting date (and subject to accelerated vesting in certain circumstances as provided in the Merger Agreement), and (d) each outstanding
+performance-based restricted stock unit award';s performance goals were deemed as having been attained at levels in accordance
+with the terms set forth in the Merger Agreement and, pursuant to the terms of the Merger Agreement, cancelled and converted into
+the right to receive (without interest) a cash payment equal to the product of (x) the maximum number of shares of Common Stock
+subject to such performance-based restricted stock unit award multiplied by (y) the Per Share Merger Consideration, on the terms
+set forth in the Merger Agreement, which will vest and be payable on the applicable vesting date on which such corresponding unvested
+performance-based restricted stock unit would have otherwise vested in accordance with its terms, subject to the holder';s
+continued employment through such vesting date (and subject to accelerated vesting in certain circumstances as provided in the
+Merger Agreement). 
+
+ The description of the Merger set forth
+above does not purport to be complete and is qualified in its entirety by reference to the Merger Agreement, which was filed by
+Cypress as Exhibit 2.1 to the Current Report on Form 8-K filed on June 3, 2019 by Cypress, and is incorporated by
+reference into this Item 2.01. 
+
+ Item 2.04 Triggering Events That Accelerate or Increase a
+Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement. 
+
+ The information set forth in the Introductory
+Note and Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 2.04. 
+
+ The consummation of the Merger, on April
+16, 2020, constitutes a Fundamental Change (as defined in the applicable Indenture) and Make-Whole Fundamental Change (as defined
+in the applicable Indenture) pursuant to the indentures governing (i) Spansion LLC';s 2.00% Exchangeable Senior Notes due
+2020, (ii) Cypress';s 4.50% Convertible Senior Notes due 2022 and (iii) Cypress';s 2.00% Convertible Senior Notes due
+2023 (each, an "; Indenture ";). As a result, holders of the notes under the applicable Indenture will be entitled
+to either (a) convert or exchange such holder';s notes based on the applicable exchange rate for such notes in effect on the
+applicable exchange date or conversion date or (b) require the Surviving Corporation to repurchase that holder';s notes of
+the applicable series for cash on a date specified by the Surviving Corporation in accordance with the applicable Indenture at
+a purchase price of 100% of the principal amount thereof plus accrued interest to, but excluding the Fundamental Change Repurchase
+Date (as defined in the applicable Indenture). Alternatively, holders of the outstanding exchangeable or convertible notes may
+continue to hold such notes without exchanging, converting or exercising their repurchase right, which notes will continue to bear
+interest in accordance with the applicable Indenture. Such notes will only be exchangeable or convertible following the Fundamental
+Change Repurchase Date under the specific conditions provided in the applicable Indenture and into an amount of cash for each $1,000
+principal amount of such notes equal to $23.85 multiplied by the then-applicable exchange or conversion rate. 
+
+ Item 3.01 Notice of Delisting or Failure to Satisfy a Continued
+Listing Rule or Standard; Transfer of Listing. 
+
+ The information set forth in the Introductory
+Note and Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 3.01. 
+
+ In connection with the closing of the Merger,
+Cypress notified The NASDAQ Global Select Market ("; NASDAQ ";) on the Closing Date that the certificate of merger
+relating to the Merger had been filed with the State of Delaware and that, as of the Effective Time, each outstanding Share (other
+than the Cancelled Shares) was cancelled, extinguished and converted into the right to receive $23.85 per Share in cash, without
+interest. Cypress requested that NASDAQ (i) suspend trading of Cypress';s Common Stock on NASDAQ, (ii) withdraw Cypress';s
+Common Stock from listing on NASDAQ and (iii) file with the SEC a notification of removal from listing and registration on Form
+25 to effect the delisting of Cypress';s Common Stock from NASDAQ and the deregistration of the Common Stock under Section
+12(b) of the Securities Exchange Act of 1934, as amended (the "; Exchange Act ";). 
+
+ Cypress intends to file with the SEC a certification
+and notice on Form 15 under the Exchange Act requesting the termination of registration of the Common Stock under Section 12(g)
+of the Exchange Act and the suspension of Cypress';s reporting obligations under Sections 13 and 15(d) of the Exchange Act
+as promptly as practicable. 
+
+ Item 3.03 Material Modification to Rights of Security Holders. 
+
+ The information set forth in the Introductory
+Note, Item 2.01, Item 3.01, Item 5.01, Item 5.02 and Item 5.03 of this Current Report on Form 8-K is incorporated by reference
+into this Item 3.03. 
+
+ At the Effective Time, as a result of the
+Merger, each holder of the Shares ceased to have any rights as a stockholder of Cypress (other than the right to receive the Per
+Share Merger Consideration). 
+
+ Item 5.01 Changes in Control of Registrant. 
+
+ The information set forth in the Introductory
+Note, Item 2.01 and Item 5.02 of this Current Report on Form 8-K is incorporated by reference into this Item 5.01. 
+
+ As a result of the consummation of the Merger,
+a change in control of Cypress occurred and Cypress is now a wholly owned subsidiary of Infineon. 
+
+ Item 5.02 Departure of Directors or Certain Officers; Election
+of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. 
+
+ The information set forth in the Introductory
+Note and under Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 5.02. 
+
+ As of the Effective Time, each of Cypress';s
+directors immediately prior to the Effective Time (W. Steve Albrecht, Hassane El-Khoury, Oh Chul Kwon, Catherine P. Lego, Camillo
+Martino, Jeffrey J. Owens, Jeannine P. Sargent and Michael S. Wishart) resigned and ceased serving on the Board of Directors of
+Cypress (the "; Board ";) and any committees of the Board on which they served. Pursuant to the Merger Agreement,
+as of the Effective Time, Roland Markgraf, Robert LeFort and Jack Artman, the directors of Merger Sub immediately prior to the
+Effective Time, became the directors of the Surviving Corporation. 
+
+ As of the Effective Time, certain of Cypress';s
+officers immediately prior to the Effective Time (Hassane El-Khoury, Thad Trent, Sam Geha, Sudhir Gopalswamy and Pamela Tondreau)
+resigned and ceased serving in their respective roles as officers of Cypress. Effective as of the Effective Time, Cypress appointed
+Robert LeFort as President and Chief Executive Officer and Jack Artman as Chief Financial Officer of the Surviving Corporation. 
+
+ At the Effective Time, Mr. LeFort, age 58,
+became the Chief Executive Officer of the Company. Since January 2015, Mr. LeFort has served as the President of Infineon Technologies
+Americas Corp. 
+
+ At the Effective Time, Mr. Artman, age 47,
+became the Chief Financial Officer of the Company. Since October 2019, Mr. Artman has served as the Chief Financial Officer of
+Infineon Technologies Americas Corp. From January 2018 until October 2018, Mr. Artman served as Vice President, M&#38;A and Strategy
+of Hensoldt Holding Germany GmbH. From March 2015 until December 2017, Mr. Artman served as Executive Vice President, M&#38;A and
+Digital Transformation of ProSiebenSat1 Media SE. From January 2004 until March 2015, Mr. Artman served as Senior Director, M&#38;A
+and Strategic Investments of Infineon Technologies AG. 
+
+ Item 5.03 Amendments to Articles of Incorporation or Bylaws;
+Change in Fiscal Year. 
+
+ The information set forth in the Introductory
+Note and Item 2.01 of this Current Report on Form 8-K is incorporated by reference into this Item 5.03. 
+
+ As of the Effective Time, the certificate
+of incorporation of Cypress, as in effect immediately prior to the Effective Time, was amended and restated in the form of the
+certificate of incorporation set forth as Exhibit A to the Merger Agreement. In addition, as of the Effective Time, the bylaws
+of Merger Sub in effect immediately prior to the Effective Time became the bylaws of Cypress, until thereafter amended or restated.
+The foregoing descriptions of the Cypress certificate of incorporation and the Cypress bylaws do not purport to be complete and
+are qualified in their entirety by reference to the full text of the Cypress certificate of incorporation and the Cypress bylaws,
+which are attached as Exhibit 3.1 and Exhibit 3.2, respectively, to this Current Report on Form 8-K and are incorporated by reference
+into this Item 5.03. 
+
+ Item 9.01 Financial Statements and Exhibits. 
+
+ (d) Exhibits. 
+
+ Exhibit 
+ 
+ Description 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated June 3, 2019, by and between Cypress Semiconductor Corporation, Infineon Technologies AG and IFX Merger Sub Inc. (incorporated herein by reference to Exhibit 2.1 to the Current Report on Form 8-K filed by Cypress on June 3, 2019). 
+ 
+ 3.1 
+ 
+ Amended and Restated Certificate of Incorporation of Cypress. 
+ 
+ 3.2 
+ 
+ Amended and Restated Bylaws of Cypress. 
+ 
+ 104 
+ 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document). 
+
+ SIGNATURES 
+
+ Pursuant to the requirements of the Securities Exchange Act
+of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ Cypress Semiconductor Corporation 
+
+ Date: April 16, 2020 
+ By: 
+ /s/ Lawrence Michlovich 
+
+ Name: 
+ Lawrence Michlovich 
+
+ Title: 
+ Secretary 
+

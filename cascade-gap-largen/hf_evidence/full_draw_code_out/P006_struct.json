@@ -1,0 +1,85 @@
+{
+  "case_id": "P006",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing product (T4) transferred to the new standalone company, but the operational processes (T5) such as asset management and IT systems did not transfer intact, creating a gap_45. Similarly, the retail management team (T6) transferred, but the processes they manage were left behind or outsourced, creating a gap_56. Both gaps were mitigated at closing via Transition Services Agreements and Investment Management Agreements."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice's structural summary states the customer-facing in-force product book 'is separated into a new standalone company, while the processes that produce and service it — asset management (retained by MetLife affiliate MLIA), information-technology systems (MetLife's, during the transition), and certain policy administration (outsourced to a third-party administrator) — do not transfer as an intact operating substrate but are bridged by transitional and services agreements.' gap_56=0 because the retail management team 'will continue to manage our business as a separate company' and many associates transfer as former MetLife employees, so organization aligns with the separated business at closing; the MPCG captive salesforce was sold to MassMutual rather than left as an unaligned process substrate. gap_mitigated=yes via the documented Master Separation Agreement, Transition Services Agreement, Investment Management Agreements, and Third-Party Administrative Services Agreement."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The structural summary states that the in-force life-insurance and annuity book crossed into Brighthouse while asset management remained with a MetLife affiliate, IT processing continued on MetLife systems, and certain policy administration was outsourced, documenting a product-process gap at closing. That gap was contractually absorbed through Transition Services, Investment Management, Investment Finance Services, and Third-Party Administrative Services agreements. The retail management team and many associates moved with the business, while the captive distribution process and its associated salesforce both remained outside Brighthouse, so the slice does not document a separate process-organization mismatch."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing product (T4) transferred to the new standalone company, but the operational processes (T5) such as asset management and IT systems did not transfer intact, creating a gap_45. Similarly, the retail management team (T6) transferred, but the processes they manage were left behind or outsourced, creating a gap_56. Both gaps were mitigated at closing via Transition Services Agreements and Investment Management Agreements.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice's structural summary states the customer-facing in-force product book 'is separated into a new standalone company, while the processes that produce and service it — asset management (retained by MetLife affiliate MLIA), information-technology systems (MetLife's, during the transition), and certain policy administration (outsourced to a third-party administrator) — do not transfer as an intact operating substrate but are bridged by transitional and services agreements.' gap_56=0 because the retail management team 'will continue to manage our business as a separate company' and many associates transfer as former MetLife employees, so organization aligns with the separated business at closing; the MPCG captive salesforce was sold to MassMutual rather than left as an unaligned process substrate. gap_mitigated=yes via the documented Master Separation Agreement, Transition Services Agreement, Investment Management Agreements, and Third-Party Administrative Services Agreement.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"subset\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The structural summary states that the in-force life-insurance and annuity book crossed into Brighthouse while asset management remained with a MetLife affiliate, IT processing continued on MetLife systems, and certain policy administration was outsourced, documenting a product-process gap at closing. That gap was contractually absorbed through Transition Services, Investment Management, Investment Finance Services, and Third-Party Administrative Services agreements. The retail management team and many associates moved with the business, while the captive distribution process and its associated salesforce both remained outside Brighthouse, so the slice does not document a separate process-organization mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "subset",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

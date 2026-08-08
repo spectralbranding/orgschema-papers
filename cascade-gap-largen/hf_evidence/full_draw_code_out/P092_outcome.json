@@ -1,0 +1,58 @@
+{
+  "case_id": "P092",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "AMS segment retained, no divestiture/goodwill impairment; AMS net sales grew $280.6M (2016) to $433.2M (2017), 2017 operating profit $48.5M",
+      "rationale": "The slice documents a coherent product/process outcome: the acquired resin-based business was folded into an expanding AMS segment, Conwed's netting assets were aligned to existing netting production (\"footprint rationalization\") and the acquired companies were \"integrated into a more holistically aligned operating segment,\" so no realized product/process incoherence is documented (p4=0). At the process/organization interface the registrant reports re-branding and a transition toward a \"more unified\" AMS sales organization along with routine severance/restructuring, but no documented fracture or breakdown of operations against people/culture, so p5=0. No archetype incoherence (t1) or irreconcilable business-model conflict (t2) is documented; the acquired business was retained with no impairment or divestiture in the window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; no goodwill impairment; assets retained",
+      "rationale": "The slice documents no product/process incoherence: annual goodwill tests in 2016 and 2017 showed no impairment, the acquired resin-based businesses were retained within AMS, and Conwed was described as presenting synergy opportunities via footprint rationalization with existing netting assets and as integrated into a more holistically aligned operating segment. At the process/organization interface, the slice records only planned integration steps—re-branding acquired companies, transitioning AMS sales toward a more unified organization, plus routine equipment impairment and severance from downsizing—without any documented fracture of operations against people/management/culture. Absence of realized disruption evidence codes both pathways 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'No divestiture or goodwill impairment disclosed through FY2017'}",
+      "rationale": "{'type': 'string', 'enum': 'No realized product/process incoherence is documented; the acquired resin-based business was retained and integrated into the expanding AMS segment. Although the company re-branded acquired companies, unified AMS sales operations, and recorded equipment impairment and severance associated with restructuring, the slice does not document that operations broke against people, management, or culture. These activities therefore do not establish a realized process/organization fracture.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"AMS segment retained, no divestiture/goodwill impairment; AMS net sales grew $280.6M (2016) to $433.2M (2017), 2017 operating profit $48.5M\", \"rationale\": \"The slice documents a coherent product/process outcome: the acquired resin-based business was folded into an expanding AMS segment, Conwed's netting assets were aligned to existing netting production (\\\"footprint rationalization\\\") and the acquired companies were \\\"integrated into a more holistically aligned operating segment,\\\" so no realized product/process incoherence is documented (p4=0). At the process/organization interface the registrant reports re-branding and a transition toward a \\\"more unified\\\" AMS sales organization along with routine severance/restructuring, but no documented fracture or breakdown of operations against people/culture, so p5=0. No archetype incoherence (t1) or irreconcilable business-model conflict (t2) is documented; the acquired business was retained with no impairment or divestiture in the window.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; no goodwill impairment; assets retained\",\n  \"rationale\": \"The slice documents no product/process incoherence: annual goodwill tests in 2016 and 2017 showed no impairment, the acquired resin-based businesses were retained within AMS, and Conwed was described as presenting synergy opportunities via footprint rationalization with existing netting assets and as integrated into a more holistically aligned operating segment. At the process/organization interface, the slice records only planned integration steps—re-branding acquired companies, transitioning AMS sales toward a more unified organization, plus routine equipment impairment and severance from downsizing—without any documented fracture of operations against people/management/culture. Absence of realized disruption evidence codes both pathways 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"No divestiture or goodwill impairment disclosed through FY2017\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No realized product/process incoherence is documented; the acquired resin-based business was retained and integrated into the expanding AMS segment. Although the company re-branded acquired companies, unified AMS sales operations, and recorded equipment impairment and severance associated with restructuring, the slice does not document that operations broke against people, management, or culture. These activities therefore do not establish a realized process/organization fracture.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

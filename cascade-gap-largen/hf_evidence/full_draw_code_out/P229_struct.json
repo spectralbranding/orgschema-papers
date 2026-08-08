@@ -1,0 +1,85 @@
+{
+  "case_id": "P229",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company cash acquisition where ARRIS became a wholly-owned subsidiary of CommScope. The entire legal entity, products, operations, and workforce transferred together, with no documented structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company cash scheme of arrangement under which ARRIS became an indirect wholly-owned CommScope subsidiary at the April 4, 2019 Effective Time, so the CPE/Network & Cloud/Enterprise Networks customer-facing product tier crossed together with the operating entity that housed its processes; no product-vs-process mismatch is documented at closing (gap_45=0). Rank-and-file workforce continuity with a one-year compensation/benefits floor was contracted while only the officer/director layer was replaced by CommScope personnel—standard change-of-control governance, not a structural process-without-organization gap (gap_56=0). No TSA or shared-substrate bridge was located, consistent with entire-entity transfer rather than a carve-out."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The acquisition covered all issued and to-be-issued ARRIS shares, and at the Effective Time ARRIS became an indirect wholly owned CommScope subsidiary; the closing summary states that ARRIS's product/customer-facing business was carried into the combined company, with no documented separation from its operating processes. The rank-and-file workforce was carried into the combined company with a one-year compensation and benefits continuity floor, while all ARRIS officers and directors were replaced by CommScope personnel, so no closing-structure process-versus-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company cash acquisition where ARRIS became a wholly-owned subsidiary of CommScope. The entire legal entity, products, operations, and workforce transferred together, with no documented structural mismatch between products and processes (gap_45 = 0) or processes and organization (gap_56 = 0) at closing.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company cash scheme of arrangement under which ARRIS became an indirect wholly-owned CommScope subsidiary at the April 4, 2019 Effective Time, so the CPE/Network & Cloud/Enterprise Networks customer-facing product tier crossed together with the operating entity that housed its processes; no product-vs-process mismatch is documented at closing (gap_45=0). Rank-and-file workforce continuity with a one-year compensation/benefits floor was contracted while only the officer/director layer was replaced by CommScope personnel—standard change-of-control governance, not a structural process-without-organization gap (gap_56=0). No TSA or shared-substrate bridge was located, consistent with entire-entity transfer rather than a carve-out.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The acquisition covered all issued and to-be-issued ARRIS shares, and at the Effective Time ARRIS became an indirect wholly owned CommScope subsidiary; the closing summary states that ARRIS's product/customer-facing business was carried into the combined company, with no documented separation from its operating processes. The rank-and-file workforce was carried into the combined company with a one-year compensation and benefits continuity floor, while all ARRIS officers and directors were replaced by CommScope personnel, so no closing-structure process-versus-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P050",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "subset",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing semiconductor-wafer product separated into the standalone IPO company, but the core producing IP/process — CCZ crystal growth and diamond-coated-wire technology — did NOT cross ownership; it was \"LICENSED to the Company, not transferred\" under a \"non-exclusive, perpetual, non-transferable ... royalty-free\" field-of-use license, with SunEdison retaining ownership of improvements. This is a documented product-vs-process structural mismatch at closing, and it was contractually absorbed via the 24-month transition services agreement and technology joint-development/rights agreement bridging the shared substrate (gap_mitigated=yes). gap_56=0: the operations were bridged together with the people — Dr. Sadasivam and existing leadership continued via a four-year employment agreement, and the TSA/secondment/shared-lab arrangements aligned processes and organization coherently at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The semiconductor-wafer product (T4) was separated into a standalone company, but the core producing IP (CCZ and diamond-coated-wire technology) did not transfer ownership; it was licensed back (T5 read-only), creating a structural gap between the product and its underlying production technology (gap_45 = 1). This gap was mitigated at closing by a transition services agreement, a patent cross-license, and a technology joint development agreement. There is no documented gap between the operational processes and the organization/people (gap_56 = 0), as existing leadership continued with the separated business."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states the semiconductor-wafer product/business separated into the standalone IPO company while core producing CCZ and diamond-coated-wire technology 'was LICENSED to the Company, not transferred' and remained owned by SunEdison under field-of-use limits, a documented product-vs-process ownership mismatch at closing (gap_45=1). Existing leadership continued with the separated company via the four-year CEO employment agreement and equity grants at IPO, so organization aligned with the transferred business (gap_56=0). That process gap was contractually absorbed at closing by the 24-month transition services agreement plus the patent/technology cross-license and joint-development agreements bridging the shared IP and corporate substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"read-only\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing semiconductor-wafer product separated into the standalone IPO company, but the core producing IP/process \\u2014 CCZ crystal growth and diamond-coated-wire technology \\u2014 did NOT cross ownership; it was \\\"LICENSED to the Company, not transferred\\\" under a \\\"non-exclusive, perpetual, non-transferable ... royalty-free\\\" field-of-use license, with SunEdison retaining ownership of improvements. This is a documented product-vs-process structural mismatch at closing, and it was contractually absorbed via the 24-month transition services agreement and technology joint-development/rights agreement bridging the shared substrate (gap_mitigated=yes). gap_56=0: the operations were bridged together with the people \\u2014 Dr. Sadasivam and existing leadership continued via a four-year employment agreement, and the TSA/secondment/shared-lab arrangements aligned processes and organization coherently at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The semiconductor-wafer product (T4) was separated into a standalone company, but the core producing IP (CCZ and diamond-coated-wire technology) did not transfer ownership; it was licensed back (T5 read-only), creating a structural gap between the product and its underlying production technology (gap_45 = 1). This gap was mitigated at closing by a transition services agreement, a patent cross-license, and a technology joint development agreement. There is no documented gap between the operational processes and the organization/people (gap_56 = 0), as existing leadership continued with the separated business.\"",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states the semiconductor-wafer product/business separated into the standalone IPO company while core producing CCZ and diamond-coated-wire technology 'was LICENSED to the Company, not transferred' and remained owned by SunEdison under field-of-use limits, a documented product-vs-process ownership mismatch at closing (gap_45=1). Existing leadership continued with the separated company via the four-year CEO employment agreement and equity grants at IPO, so organization aligned with the transferred business (gap_56=0). That process gap was contractually absorbed at closing by the 24-month transition services agreement plus the patent/technology cross-license and joint-development agreements bridging the shared IP and corporate substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

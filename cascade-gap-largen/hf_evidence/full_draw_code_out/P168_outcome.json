@@ -1,0 +1,58 @@
+{
+  "case_id": "P168",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "positive net income each year ($238.5M/$312.6M/$233.8M, FY2017-2019); one operation divested (Lone Mountain, 2017)",
+      "rationale": "The realized record documents positive net income in all three post-emergence years, revenues stable near $2.3-2.5B, resumed capital returns, and no second insolvency proceeding — no documented product/operations incoherence, so p4=0. Management continuity is documented (same CEO John Eaves since 2012 and same President/COO Paul Lang since 2015, no leadership change through FY2019) with no documented operations-vs-organization fracture, so p5=0. The slice is a Chapter 11 emergence outcome, not an announced merger archetype or a two-business-model combination, and provides no evidence bearing on t1 or t2, so both are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "positive net income each year ($238.5M to $312.6M) and resumed capital returns",
+      "rationale": "The slice documents positive net income, steady revenues, and capital returns (dividends and share repurchases) over the 3-year post-emergence window. There is no evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway); management remained continuous and the company operated profitably."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "positive net income in each of 2017-2019 ($238.5M, $312.6M, $233.8M)",
+      "rationale": "No realized product/process disruption is documented; the company maintained annual revenues near $2.3-$2.5 billion and reported positive net income in each year from 2017 through 2019. No process/organization fracture is documented; the same CEO and President/COO remained in their roles throughout the window, with no documented second insolvency proceeding."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"positive net income each year ($238.5M/$312.6M/$233.8M, FY2017-2019); one operation divested (Lone Mountain, 2017)\", \"rationale\": \"The realized record documents positive net income in all three post-emergence years, revenues stable near $2.3-2.5B, resumed capital returns, and no second insolvency proceeding \\u2014 no documented product/operations incoherence, so p4=0. Management continuity is documented (same CEO John Eaves since 2012 and same President/COO Paul Lang since 2015, no leadership change through FY2019) with no documented operations-vs-organization fracture, so p5=0. The slice is a Chapter 11 emergence outcome, not an announced merger archetype or a two-business-model combination, and provides no evidence bearing on t1 or t2, so both are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"positive net income each year ($238.5M to $312.6M) and resumed capital returns\",\n  \"rationale\": \"The slice documents positive net income, steady revenues, and capital returns (dividends and share repurchases) over the 3-year post-emergence window. There is no evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway); management remained continuous and the company operated profitably.\"",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"positive net income in each of 2017-2019 ($238.5M, $312.6M, $233.8M)\",\n  \"rationale\": \"No realized product/process disruption is documented; the company maintained annual revenues near $2.3-$2.5 billion and reported positive net income in each year from 2017 through 2019. No process/organization fracture is documented; the same CEO and President/COO remained in their roles throughout the window, with no documented second insolvency proceeding.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

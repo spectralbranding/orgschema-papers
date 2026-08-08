@@ -1,0 +1,58 @@
+{
+  "case_id": "P149",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "all businesses divested; revenue collapsed to ~US$27M (2011); workforce fell to ~190; going-concern doubt, wind-down/liquidation",
+      "rationale": "The slice documents that operating processes did not transfer intact with the sold products: a Nortel Business Services group provided transitional services (finance, supply chain, IT, R&D, HR, real estate) to purchasers for up to 24 months per closing, and R&D investment ceased entirely — evidence of a realized operations-vs-organization fracture as the operating organization wound down against the divested operations (p5=1). This slice codes the seller's realized wind-down (revenue to US$27M, workforce to ~190, going-concern doubt) rather than the combined acquirer entities, so whether acquired products could be aligned with buyer operating processes over time is not observable here (p4=uncertain). The controlling-intent archetype and cross-model value-capture reconciliation at any acquirer are likewise not documented in this seller-side wind-down record (t1, t2=uncertain)."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Revenues collapsed to US$27 million in 2011",
+      "rationale": "The slice documents the complete liquidation and wind-down of Nortel, with all operating businesses and patents sold to various buyers. There is no evidence of post-deal integration friction such as product/process incoherence (p4) or process/organization fracture (p5), as the entity merely provided temporary transition services before ceasing operations."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "all businesses/patents divested; revenue to US$27M; workforce ~190",
+      "rationale": "The slice documents a complete wind-down after asset sales, with Nortel stating it had completed divestitures of all businesses and patents, no longer invested in R&D, and focused solely on remaining-asset sales and creditor proceedings (FY2011 10-K). Although operating processes did not transfer intact and transitional services were provided, the registrant reported those TSA obligations were substantially completed by end-2011, with no documented product/process incoherence or process/organization fracture realized over the outcome window. Absence of any realized disruption evidence on p4 or p5 yields 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"all businesses divested; revenue collapsed to ~US$27M (2011); workforce fell to ~190; going-concern doubt, wind-down/liquidation\", \"rationale\": \"The slice documents that operating processes did not transfer intact with the sold products: a Nortel Business Services group provided transitional services (finance, supply chain, IT, R&D, HR, real estate) to purchasers for up to 24 months per closing, and R&D investment ceased entirely \\u2014 evidence of a realized operations-vs-organization fracture as the operating organization wound down against the divested operations (p5=1). This slice codes the seller's realized wind-down (revenue to US$27M, workforce to ~190, going-concern doubt) rather than the combined acquirer entities, so whether acquired products could be aligned with buyer operating processes over time is not observable here (p4=uncertain). The controlling-intent archetype and cross-model value-capture reconciliation at any acquirer are likewise not documented in this seller-side wind-down record (t1, t2=uncertain).\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Revenues collapsed to US$27 million in 2011\",\n  \"rationale\": \"The slice documents the complete liquidation and wind-down of Nortel, with all operating businesses and patents sold to various buyers. There is no evidence of post-deal integration friction such as product/process incoherence (p4) or process/organization fracture (p5), as the entity merely provided temporary transition services before ceasing operations.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"all businesses/patents divested; revenue to US$27M; workforce ~190\",\n  \"rationale\": \"The slice documents a complete wind-down after asset sales, with Nortel stating it had completed divestitures of all businesses and patents, no longer invested in R&D, and focused solely on remaining-asset sales and creditor proceedings (FY2011 10-K). Although operating processes did not transfer intact and transitional services were provided, the registrant reported those TSA obligations were substantially completed by end-2011, with no documented product/process incoherence or process/organization fracture realized over the outcome window. Absence of any realized disruption evidence on p4 or p5 yields 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

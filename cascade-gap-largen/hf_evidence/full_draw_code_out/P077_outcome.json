@@ -1,0 +1,58 @@
+{
+  "case_id": "P077",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired counterparty's 50% ownership interest for approximately $40.0 million",
+      "rationale": "The evidence slice documents the registrant's buyout of the remaining 50% interest in the co-owned Deadwood facility and a large entity-level net loss driven by impairments. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) during the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$1.55bn goodwill/intangible impairments; $(1.38)bn net loss FY2015",
+      "rationale": "The slice documents no product/process interface disruption: the Deadwood co-owned processing asset was simply bought out to full ownership in Nov 2015 and continued operating with reported throughput and acreage dedication, with no alignment failure described. Likewise no process/organization fracture is documented; the FY2015 $(1,377.8)M net loss and $1,328.2M goodwill plus $223.1M intangible impairments are attributed solely to commodity-price and unit-price declines, not to operations-vs-organization integration breakdown."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '$(1,377.8) million FY2015 net loss'}",
+      "rationale": "{'type': 'string', 'enum': 'No product/process disruption is documented: after the November 2015 buyout, the wholly owned Deadwood facility remained operational, with 58 MMcf/d capacity, average throughput of 61,500 MMBtu/d, and $3.5 million of revenue for the post-buyout period. No process/organization fracture involving personnel, management, or culture is reported; the documented entity-level loss and impairments were attributed primarily to commodity-price and common-unit-price declines rather than integration problems.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired counterparty's 50% ownership interest for approximately $40.0 million\",\n  \"rationale\": \"The evidence slice documents the registrant's buyout of the remaining 50% interest in the co-owned Deadwood facility and a large entity-level net loss driven by impairments. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) during the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$1.55bn goodwill/intangible impairments; $(1.38)bn net loss FY2015\",\n  \"rationale\": \"The slice documents no product/process interface disruption: the Deadwood co-owned processing asset was simply bought out to full ownership in Nov 2015 and continued operating with reported throughput and acreage dedication, with no alignment failure described. Likewise no process/organization fracture is documented; the FY2015 $(1,377.8)M net loss and $1,328.2M goodwill plus $223.1M intangible impairments are attributed solely to commodity-price and unit-price declines, not to operations-vs-organization integration breakdown.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"$(1,377.8) million FY2015 net loss\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"No product/process disruption is documented: after the November 2015 buyout, the wholly owned Deadwood facility remained operational, with 58 MMcf/d capacity, average throughput of 61,500 MMBtu/d, and $3.5 million of revenue for the post-buyout period. No process/organization fracture involving personnel, management, or culture is reported; the documented entity-level loss and impairments were attributed primarily to commodity-price and common-unit-price declines rather than integration problems.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

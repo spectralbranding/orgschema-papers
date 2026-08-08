@@ -1,0 +1,58 @@
+{
+  "case_id": "P133",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "second Chapter 11 filing in 2017; brand sold in 2020",
+      "rationale": "The slice documents that the acquired business filed for Chapter 11 bankruptcy again in 2017, attributing the failure to an unsuccessful partnership with Sprint that left inadequate capital. There is no documented evidence of disruption specifically at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ch.11 re-filing ~2 yrs post-deal; brand sold Nov 2020 w/ minority retained",
+      "rationale": "The slice documents a March 2017 second Chapter 11 filing attributed to an unsuccessful Sprint co-branding partnership that left inadequate capital, plus ~200 store closures and a 2020 brand sale, but does not document any product/process interface misalignment (p4) or operations-vs-organization/culture fracture (p5). Those specific pathway interfaces are simply not evidenced in the realized-record sources, so both code 0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Second Chapter 11 after ~2 years; approximately 200 stores slated to close",
+      "rationale": "The slice documents that the Sprint partnership failed, contributed to inadequate capital, and affected co-branded operations, but it does not specifically document an inability to align the acquired product with operating processes; therefore p4 is coded 0. It also provides no realized evidence of operations breaking against people, management, or culture, so p5 is coded 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"second Chapter 11 filing in 2017; brand sold in 2020\",\n\"rationale\": \"The slice documents that the acquired business filed for Chapter 11 bankruptcy again in 2017, attributing the failure to an unsuccessful partnership with Sprint that left inadequate capital. There is no documented evidence of disruption specifically at the product/process interface (p4_pathway) or the process/organization interface (p5_pathway).\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ch.11 re-filing ~2 yrs post-deal; brand sold Nov 2020 w/ minority retained\",\n  \"rationale\": \"The slice documents a March 2017 second Chapter 11 filing attributed to an unsuccessful Sprint co-branding partnership that left inadequate capital, plus ~200 store closures and a 2020 brand sale, but does not document any product/process interface misalignment (p4) or operations-vs-organization/culture fracture (p5). Those specific pathway interfaces are simply not evidenced in the realized-record sources, so both code 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Second Chapter 11 after ~2 years; approximately 200 stores slated to close\",\n  \"rationale\": \"The slice documents that the Sprint partnership failed, contributed to inadequate capital, and affected co-branded operations, but it does not specifically document an inability to align the acquired product with operating processes; therefore p4 is coded 0. It also provides no realized evidence of operations breaking against people, management, or culture, so p5 is coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

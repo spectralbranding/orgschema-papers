@@ -1,0 +1,58 @@
+{
+  "case_id": "P350",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; total assets grew $11.21bn (YE2020) to $12.60bn (YE2021); net income U-shape $63.6M (2020) to $190.3M (2021)",
+      "rationale": "The slice documents a continuing independent public company that grew total assets and reported no goodwill impairment in either year, with a U-shaped profitability dip in 2020 driven by a ~13-fold increase in the credit-loss provision (from $7,053K to $94,606K) attributable to macroeconomic conditions, then a 2021 recovery via a $38,995K provision release. No product/process misalignment or operations-vs-organization fracture is described; the 2020 dip is explicitly credit/macro-driven rather than integration-driven. No product/process incoherence (p4) or process/organization fracture (p5) is documented, so both are coded 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment recorded",
+      "rationale": "The provided evidence slice shows FB Financial Corporation continued to operate and grow its assets and net income by 2021, with no goodwill impairment recorded. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) in the post-deal trajectory."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no goodwill impairment; continued independent; assets to $12.60bn",
+      "rationale": "The slice documents FB Financial continuing as an independent Exchange Act reporter through FY2020–FY2021, with asset growth from $11.21bn to $12.60bn and explicit statements that annual goodwill impairment evaluations indicated no impairment for reporting segments in either year. No realized product/process misalignment or product-line/operations incoherence is described. No fracture at the process/organization interface (operations vs people/management/culture) is documented; the only material earnings disruption cited is a 2020 credit-loss provision spike that reversed in 2021, attributed to macroeconomic forecasts rather than integration or organizational failure."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"no goodwill impairment; total assets grew $11.21bn (YE2020) to $12.60bn (YE2021); net income U-shape $63.6M (2020) to $190.3M (2021)\", \"rationale\": \"The slice documents a continuing independent public company that grew total assets and reported no goodwill impairment in either year, with a U-shaped profitability dip in 2020 driven by a ~13-fold increase in the credit-loss provision (from $7,053K to $94,606K) attributable to macroeconomic conditions, then a 2021 recovery via a $38,995K provision release. No product/process misalignment or operations-vs-organization fracture is described; the 2020 dip is explicitly credit/macro-driven rather than integration-driven. No product/process incoherence (p4) or process/organization fracture (p5) is documented, so both are coded 0.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment recorded\",\n  \"rationale\": \"The provided evidence slice shows FB Financial Corporation continued to operate and grow its assets and net income by 2021, with no goodwill impairment recorded. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) in the post-deal trajectory.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no goodwill impairment; continued independent; assets to $12.60bn\",\n  \"rationale\": \"The slice documents FB Financial continuing as an independent Exchange Act reporter through FY2020–FY2021, with asset growth from $11.21bn to $12.60bn and explicit statements that annual goodwill impairment evaluations indicated no impairment for reporting segments in either year. No realized product/process misalignment or product-line/operations incoherence is described. No fracture at the process/organization interface (operations vs people/management/culture) is documented; the only material earnings disruption cited is a 2020 credit-loss provision spike that reversed in 2021, attributed to macroeconomic forecasts rather than integration or organizational failure.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

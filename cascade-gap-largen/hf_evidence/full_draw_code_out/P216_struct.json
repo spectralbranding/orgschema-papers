@@ -1,0 +1,85 @@
+{
+  "case_id": "P216",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product (the 919.2 MW multi-country power plants) crossed the ownership boundary in a whole-company cash-out merger, but the operational processes that ran them (management services and O&M agreements) belonged to SunEdison, not the Company; the structural summary explicitly notes the product \"had historically been operated by personnel and service agreements belonging to a different corporate parent\" and the asset-management (GAM) transfer was \"separately tracked, not-yet-complete\" at closing. gap_56=1: the operating personnel and the asset-management function (T5/T6) were being insourced from SunEdison via a still-executing GAM transfer workstream, so the people/organization running the processes had not coherently transferred with the entity. gap_mitigated=yes: the dependency was documented as bridged at closing by a time-limited Transition Services Agreement (IT, HR, tax, treasury, finance, controllership) plus the negotiated \"agreed-upon services\" GAM transfer workstream. T1=replace because SunEdison's controlling intent (98.2% pre-merger voting power, Class B cancelled) exited and a new Brookfield-affiliate principal was installed, with all ten directors replaced by Merger Sub's three."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The deal transferred the power plants (T4) while the operational processes (T5) and personnel (T6) historically belonged to SunEdison, creating a structural mismatch (gap_45 = 1). This gap was mitigated at closing by a Transition Services Agreement and an ongoing transfer of the asset-management function from SunEdison to the Company. There is no documented gap between T5 and T6 (gap_56 = 0) as both were historically provided by SunEdison and were being transitioned together."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the structural summary and process/people tier state that the customer-facing product (the long-term contracted solar/wind plants, 919.2 MW) crossed in the whole-company merger while operations remained a pre-existing SunEdison dependency via MSAs/O&M agreements, with GAM asset-management transfer still not-yet-complete at the proxy and only bridged by a time-limited TSA—i.e., a documented product-vs-process mismatch at closing. gap_56=0 because the same evidence couples the externalized processes with SunEdison personnel under those service agreements and does not document processes transferring or being re-engineered without people/org alignment as a separate closing mismatch; continuing-employee protections further tie residual company-side T6 to the deal. gap_mitigated=yes via the documented TSA and settlement 'agreed-upon services' workstream for GAM transfer."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product (the 919.2 MW multi-country power plants) crossed the ownership boundary in a whole-company cash-out merger, but the operational processes that ran them (management services and O&M agreements) belonged to SunEdison, not the Company; the structural summary explicitly notes the product \\\"had historically been operated by personnel and service agreements belonging to a different corporate parent\\\" and the asset-management (GAM) transfer was \\\"separately tracked, not-yet-complete\\\" at closing. gap_56=1: the operating personnel and the asset-management function (T5/T6) were being insourced from SunEdison via a still-executing GAM transfer workstream, so the people/organization running the processes had not coherently transferred with the entity. gap_mitigated=yes: the dependency was documented as bridged at closing by a time-limited Transition Services Agreement (IT, HR, tax, treasury, finance, controllership) plus the negotiated \\\"agreed-upon services\\\" GAM transfer workstream. T1=replace because SunEdison's controlling intent (98.2% pre-merger voting power, Class B cancelled) exited and a new Brookfield-affiliate principal was installed, with all ten directors replaced by Merger Sub's three.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The deal transferred the power plants (T4) while the operational processes (T5) and personnel (T6) historically belonged to SunEdison, creating a structural mismatch (gap_45 = 1). This gap was mitigated at closing by a Transition Services Agreement and an ongoing transfer of the asset-management function from SunEdison to the Company. There is no documented gap between T5 and T6 (gap_56 = 0) as both were historically provided by SunEdison and were being transitioned together.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the structural summary and process/people tier state that the customer-facing product (the long-term contracted solar/wind plants, 919.2 MW) crossed in the whole-company merger while operations remained a pre-existing SunEdison dependency via MSAs/O&M agreements, with GAM asset-management transfer still not-yet-complete at the proxy and only bridged by a time-limited TSA—i.e., a documented product-vs-process mismatch at closing. gap_56=0 because the same evidence couples the externalized processes with SunEdison personnel under those service agreements and does not document processes transferring or being re-engineered without people/org alignment as a separate closing mismatch; continuing-employee protections further tie residual company-side T6 to the deal. gap_mitigated=yes via the documented TSA and settlement 'agreed-upon services' workstream for GAM transfer.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

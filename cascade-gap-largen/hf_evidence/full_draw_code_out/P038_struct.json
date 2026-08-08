@@ -1,0 +1,85 @@
+{
+  "case_id": "P038",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing products (Mobile Devices and Home segments) transferred, but the shared corporate operational substrate they historically relied on (IT systems, financial support, legal) did not transfer whole, creating a structural mismatch at T5 (gap_45 = 1). This gap was mitigated at closing via Transition Services Agreements. The employees and management running the separated business transferred alongside it, aligning the organization with the transferred operations (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the spin-off distributed a going product operation (Mobile Devices and Home portfolio) together with the business that produced it; product and its segment operations crossed as one package into the new HoldCo. gap_56=0 because the same closing structure moved the management and ~21,000 employees that ran those businesses with them (Jha continuity; Employee Matters Agreement), so processes that transferred were aligned with their organization; shared corporate substrate that did not cross was not a transferred process stripped of its people but was instead left behind and bridged by TSAs and related separation agreements."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing Mobile Devices and Home portfolio transferred as a going product operation, but historically shared cash management, IT, audit, financial-transaction, legal, and administrative processes did not cross intact, establishing gap_45. Transition Services Agreements contractually bridged those functions for generally up to 12 months, so the documented gap was mitigated at closing. For gap_56, approximately 21,000 employees, including a portion of historically shared corporate employees, and the pre-separation management running the business moved with it; the slice therefore documents coherent organizational alignment with the transferred operations rather than a process-without-people mismatch."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing products (Mobile Devices and Home segments) transferred, but the shared corporate operational substrate they historically relied on (IT systems, financial support, legal) did not transfer whole, creating a structural mismatch at T5 (gap_45 = 1). This gap was mitigated at closing via Transition Services Agreements. The employees and management running the separated business transferred alongside it, aligning the organization with the transferred operations (gap_56 = 0).\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the spin-off distributed a going product operation (Mobile Devices and Home portfolio) together with the business that produced it; product and its segment operations crossed as one package into the new HoldCo. gap_56=0 because the same closing structure moved the management and ~21,000 employees that ran those businesses with them (Jha continuity; Employee Matters Agreement), so processes that transferred were aligned with their organization; shared corporate substrate that did not cross was not a transferred process stripped of its people but was instead left behind and bridged by TSAs and related separation agreements.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing Mobile Devices and Home portfolio transferred as a going product operation, but historically shared cash management, IT, audit, financial-transaction, legal, and administrative processes did not cross intact, establishing gap_45. Transition Services Agreements contractually bridged those functions for generally up to 12 months, so the documented gap was mitigated at closing. For gap_56, approximately 21,000 employees, including a portion of historically shared corporate employees, and the pre-separation management running the business moved with it; the slice therefore documents coherent organizational alignment with the transferred operations rather than a process-without-people mismatch.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-N",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

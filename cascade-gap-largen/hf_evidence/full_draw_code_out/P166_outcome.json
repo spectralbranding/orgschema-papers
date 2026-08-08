@@ -1,0 +1,58 @@
+{
+  "case_id": "P166",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "137,662,024 shares of common stock were cancelled and holders received no distribution",
+      "rationale": "The slice notes that the company suspended its SEC reporting in March 2016 following its Chapter 11 reorganization. Consequently, there are no primary-sourced facts documenting post-emergence disruption at the product/operations interface or the operations/management interface during the 2017-2019 window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "pre-existing equity fully extinguished (137M shares cancelled; no distribution)",
+      "rationale": "The slice states that no primary-sourced facts documenting post-emergence disruption at the product/operations interface or at the operations/management interface within the fixed ~2017-2019 window are available from the public SEC record. Absence of documented evidence for p4 and p5 is therefore coded 0. No realized-outcome evidence is given for controlling-intent archetype incoherence or business-model incompatibility either."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': '137,662,024 pre-existing common shares extinguished with no distribution'}",
+      "rationale": "{'type': 'string', 'enum': 'The company suspended its Exchange Act reporting obligations in March 2016, leaving no annual, quarterly, or other periodic SEC reports for 2017-2019 (SEC accession 0001628280-16-012832). The slice documents no realized product/operations disruption or operations/management fracture during that window, so p4_pathway and p5_pathway are coded 0 as not documented.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"137,662,024 shares of common stock were cancelled and holders received no distribution\",\n  \"rationale\": \"The slice notes that the company suspended its SEC reporting in March 2016 following its Chapter 11 reorganization. Consequently, there are no primary-sourced facts documenting post-emergence disruption at the product/operations interface or the operations/management interface during the 2017-2019 window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"pre-existing equity fully extinguished (137M shares cancelled; no distribution)\",\n  \"rationale\": \"The slice states that no primary-sourced facts documenting post-emergence disruption at the product/operations interface or at the operations/management interface within the fixed ~2017-2019 window are available from the public SEC record. Absence of documented evidence for p4 and p5 is therefore coded 0. No realized-outcome evidence is given for controlling-intent archetype incoherence or business-model incompatibility either.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"137,662,024 pre-existing common shares extinguished with no distribution\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The company suspended its Exchange Act reporting obligations in March 2016, leaving no annual, quarterly, or other periodic SEC reports for 2017-2019 (SEC accession 0001628280-16-012832). The slice documents no realized product/operations disruption or operations/management fracture during that window, so p4_pathway and p5_pathway are coded 0 as not documented.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

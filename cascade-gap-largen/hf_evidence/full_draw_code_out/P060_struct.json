@@ -1,0 +1,85 @@
+{
+  "case_id": "P060",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "null",
+      "sigma_T4": "read-only",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing RadioShack brand/product crossed the ownership boundary only by contract (exclusive trademark License Agreement plus a TV-manufacturing license and a Master Sourcing preferred-supplier agreement), while \"RadioShack's own U.S. store-operating processes and personnel were not transferred into it\" — a documented product-vs-process mismatch at closing, though bridged contractually by the license/sourcing/capital-contribution agreements (gap_mitigated=yes). gap_56=0: the in-market operating processes (T5) that ran the stores sat with the majority-controlled new entity together with that entity's own organization/management, so no process transferred apart from the people running it; RadioShack's store processes and store organization both stayed on RadioShack's side (neither T5 nor T6 crossed), so no T5-vs-T6 structural mismatch is documented. T1 coded imprint-share because both principals' intent are co-present in a jointly formed but counterparty-majority (51%/3-of-5-board) entity operating under the RadioShack brand."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "read-only",
+      "sigma_T3": "1-N",
+      "sigma_T4": "read-only",
+      "sigma_T5": "read-only",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing brand and product supply (T4) crossed the boundary via license and sourcing agreements, while the operational processes (T5) to run the stores did not transfer from RadioShack, creating a structural gap. This gap was mitigated at closing by the Master Sourcing Agreement and License Agreements. The operating processes and management (T6) for the new stores were aligned under the majority-controlled entity, so no T5/T6 gap existed."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "partial",
+      "sigma_T3": "N-1",
+      "sigma_T4": "read-only",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the customer-facing brand/product crossed solely by License Agreements (exclusive RadioShack brand/trademark rights in the four markets plus a branded-TV manufacture license) and a Master Sourcing Agreement designating RadioShack preferred supplier, while the slice expressly states RadioShack’s U.S. store-operating processes were not transferred and in-market retail operations sat with the majority-controlled new entity—establishing a documented T4-without-T5 mismatch (gap_45=1). The same closing language places both operating processes and management/organization of the in-market stores with the majority holder, so T5 and T6 neither moved from RadioShack nor were separated from each other (gap_56=0); the gap was contractually bridged at closing by the license, sourcing, and capital-contribution agreements."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"partial\", \"sigma_T3\": \"null\", \"sigma_T4\": \"read-only\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing RadioShack brand/product crossed the ownership boundary only by contract (exclusive trademark License Agreement plus a TV-manufacturing license and a Master Sourcing preferred-supplier agreement), while \\\"RadioShack's own U.S. store-operating processes and personnel were not transferred into it\\\" \\u2014 a documented product-vs-process mismatch at closing, though bridged contractually by the license/sourcing/capital-contribution agreements (gap_mitigated=yes). gap_56=0: the in-market operating processes (T5) that ran the stores sat with the majority-controlled new entity together with that entity's own organization/management, so no process transferred apart from the people running it; RadioShack's store processes and store organization both stayed on RadioShack's side (neither T5 nor T6 crossed), so no T5-vs-T6 structural mismatch is documented. T1 coded imprint-share because both principals' intent are co-present in a jointly formed but counterparty-majority (51%/3-of-5-board) entity operating under the RadioShack brand.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"read-only\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing brand and product supply (T4) crossed the boundary via license and sourcing agreements, while the operational processes (T5) to run the stores did not transfer from RadioShack, creating a structural gap. This gap was mitigated at closing by the Master Sourcing Agreement and License Agreements. The operating processes and management (T6) for the new stores were aligned under the majority-controlled entity, so no T5/T6 gap existed.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"read-only\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the customer-facing brand/product crossed solely by License Agreements (exclusive RadioShack brand/trademark rights in the four markets plus a branded-TV manufacture license) and a Master Sourcing Agreement designating RadioShack preferred supplier, while the slice expressly states RadioShack’s U.S. store-operating processes were not transferred and in-market retail operations sat with the majority-controlled new entity—establishing a documented T4-without-T5 mismatch (gap_45=1). The same closing language places both operating processes and management/organization of the in-market stores with the majority holder, so T5 and T6 neither moved from RadioShack nor were separated from each other (gap_56=0); the gap was contractually bridged at closing by the license, sourcing, and capital-contribution agreements.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "partial",
+    "sigma_T3": "null",
+    "sigma_T4": "read-only",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

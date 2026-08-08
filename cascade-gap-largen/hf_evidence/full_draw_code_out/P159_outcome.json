@@ -1,0 +1,58 @@
+{
+  "case_id": "P159",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The acquired company deregistered in December 2016 and its acquirer is a non-SEC-reporting foreign entity. Consequently, there is no public record of the acquired business's standalone post-close trajectory, making it impossible to determine if any product/process or process/organization disruptions occurred."
+    },
+    "grok": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that after December 2016 delisting and Form 15-12B deregistration, no public periodic reports or audited financials exist for the ~2019-2021 window, and the foreign acquirer does not separately disclose the acquired business. It explicitly records that no disruption at the product/process interface and no fracture at the process/organization interface can be sourced to any public primary filing, and that any such record is not publicly observable. Consequently both p4_pathway and p5_pathway are coded uncertain rather than affirmed or denied."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'not documented'}",
+      "rationale": "{'type': 'string', 'enum': 'The registrant terminated its reporting obligations in December 2016, and no audited public financial statements exist for the 2019–2021 outcome window. No standalone post-close trajectory or primary-source evidence of product/process disruption or process/organization fracture is publicly available, so both pathways are uncertain rather than documented as present or absent.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The acquired company deregistered in December 2016 and its acquirer is a non-SEC-reporting foreign entity. Consequently, there is no public record of the acquired business's standalone post-close trajectory, making it impossible to determine if any product/process or process/organization disruptions occurred.\"",
+    "grok": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that after December 2016 delisting and Form 15-12B deregistration, no public periodic reports or audited financials exist for the ~2019-2021 window, and the foreign acquirer does not separately disclose the acquired business. It explicitly records that no disruption at the product/process interface and no fracture at the process/organization interface can be sourced to any public primary filing, and that any such record is not publicly observable. Consequently both p4_pathway and p5_pathway are coded uncertain rather than affirmed or denied.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"uncertain\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"not documented\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The registrant terminated its reporting obligations in December 2016, and no audited public financial statements exist for the 2019–2021 outcome window. No standalone post-close trajectory or primary-source evidence of product/process disruption or process/organization fracture is publicly available, so both pathways are uncertain rather than documented as present or absent.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

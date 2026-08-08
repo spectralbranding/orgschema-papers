@@ -1,0 +1,58 @@
+{
+  "case_id": "P020",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "acquired for cash at $53.00/share by Merck KGaA on 2019-10-07; deregistered (Form 15-12B) 2019-10-18",
+      "rationale": "The slice documents that Versum was acquired for cash by Merck KGaA, after which its board and named officers departed and it delisted/deregistered, with no separate public operating record thereafter. The board/officer resignations and replacements are routine consequences of a completed cash acquisition, not documented evidence of a realized operations-vs-organization fracture over time, so p5 is coded 0. No documented product/process-interface disruption appears in the slice (the acquired operating trajectory is expressly \"uncertain/bounded\"), so p4 is coded 0. Because the post-acquisition operating record is unavailable in the registrant's own filings, the archetype channel is uncertain, while no business-model incompatibility is documented (t2=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "cash takeout at $53/share by Merck KGaA (Oct 2019); deregistered",
+      "rationale": "The slice documents no product/process alignment failure over the outcome window, so p4_pathway is 0. Board and officer departures at the Oct 7, 2019 effective time are recorded as ordinary closing replacements under the Merck cash merger (directors resigned; Novo/Bitto/Valente/Shober ceased; acquirer designees appointed), not as a realized multi-year fracture of operations against organization/culture; after the Oct 18, 2019 Form 15 no separate operating record exists, so p5_pathway is 0."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "0",
+      "t2_model": "uncertain",
+      "performance_metric": "Acquired by Merck KGaA for $53.00 per share in cash on October 7, 2019",
+      "rationale": "No realized product/process-interface disruption is documented, and the slice states that no separate post-acquisition operating record is available after the October 2019 deregistration, making p4 indeterminable. The incumbent directors and several officers departed at closing and were replaced, but the cited filing does not document that operations broke against management, people, or culture over time; the lack of a subsequent operating record therefore leaves p5 uncertain rather than establishing a realized fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"acquired for cash at $53.00/share by Merck KGaA on 2019-10-07; deregistered (Form 15-12B) 2019-10-18\", \"rationale\": \"The slice documents that Versum was acquired for cash by Merck KGaA, after which its board and named officers departed and it delisted/deregistered, with no separate public operating record thereafter. The board/officer resignations and replacements are routine consequences of a completed cash acquisition, not documented evidence of a realized operations-vs-organization fracture over time, so p5 is coded 0. No documented product/process-interface disruption appears in the slice (the acquired operating trajectory is expressly \\\"uncertain/bounded\\\"), so p4 is coded 0. Because the post-acquisition operating record is unavailable in the registrant's own filings, the archetype channel is uncertain, while no business-model incompatibility is documented (t2=0).\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"cash takeout at $53/share by Merck KGaA (Oct 2019); deregistered\",\n  \"rationale\": \"The slice documents no product/process alignment failure over the outcome window, so p4_pathway is 0. Board and officer departures at the Oct 7, 2019 effective time are recorded as ordinary closing replacements under the Merck cash merger (directors resigned; Novo/Bitto/Valente/Shober ceased; acquirer designees appointed), not as a realized multi-year fracture of operations against organization/culture; after the Oct 18, 2019 Form 15 no separate operating record exists, so p5_pathway is 0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"Acquired by Merck KGaA for $53.00 per share in cash on October 7, 2019\",\n  \"rationale\": \"No realized product/process-interface disruption is documented, and the slice states that no separate post-acquisition operating record is available after the October 2019 deregistration, making p4 indeterminable. The incumbent directors and several officers departed at closing and were replaced, but the cited filing does not document that operations broke against management, people, or culture over time; the lack of a subsequent operating record therefore leaves p5 uncertain rather than establishing a realized fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

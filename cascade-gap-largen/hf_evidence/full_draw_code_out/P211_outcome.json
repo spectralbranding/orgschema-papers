@@ -1,0 +1,58 @@
+{
+  "case_id": "P211",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Full divestiture of combined Eagle Ford position (incl. WildHorse/Brazos Valley acreage) across three 2023 transactions, ~$3.5bn aggregate consideration, ~$947m aggregate gains",
+      "rationale": "The slice documents only reporting-status and asset-tracking outcomes: the Brazos Valley area was disclosed distinctly through FY2020, folded into the combined \"Eagle Ford\" line by the FY2021 10-K \"does not state explicitly why,\" and the whole position was divested in 2023. Nothing in the slice documents a realized disruption at the product/process interface (product-operations incoherence), so p4 is left uncertain given the filings explicitly do not isolate cause or WildHorse-specific attribution. Likewise no documented operations-vs-organization/culture fracture is described; the Chapter 11 filing and reorganization are noted as outside the fixed window and are not tied to any process/organization integration breakdown, so p5 is uncertain rather than 0. The slice provides no evidence bearing on controlling-intent archetype coherence or business-model reconcilability."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "combined Eagle Ford (incl. acquired) fully divested 2023 ~$3.5bn",
+      "rationale": "The slice documents that Brazos Valley was carried as a distinct operating area through FY2019–FY2020, folded into combined Eagle Ford reporting by FY2021, and that the combined Eagle Ford position was fully divested in three 2023 transactions; it does not document any product/process misalignment or inability to align the acquired acreage with operating processes over time, so p4_pathway=0. No evidence is given of operations-versus-organization/culture fracture specific to integrating the acquired business (Chapter 11 naming of Brazos Valley entities is acquirer-wide insolvency context, not a realized process/organization interface disruption), so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Combined Eagle Ford position fully divested in 2023 for approximately $3.5 billion",
+      "rationale": "The FY2021 annual report shows that Brazos Valley had been folded into the combined Eagle Ford reporting line, but it gives no indication of product-line or operating-process incoherence. The FY2023 10-K documents the complete divestiture of the combined Eagle Ford position but does not attribute it to product/process failure or to conflict involving personnel, management, or culture. Accordingly, neither a p4 nor a p5 disruption is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Full divestiture of combined Eagle Ford position (incl. WildHorse/Brazos Valley acreage) across three 2023 transactions, ~$3.5bn aggregate consideration, ~$947m aggregate gains\", \"rationale\": \"The slice documents only reporting-status and asset-tracking outcomes: the Brazos Valley area was disclosed distinctly through FY2020, folded into the combined \\\"Eagle Ford\\\" line by the FY2021 10-K \\\"does not state explicitly why,\\\" and the whole position was divested in 2023. Nothing in the slice documents a realized disruption at the product/process interface (product-operations incoherence), so p4 is left uncertain given the filings explicitly do not isolate cause or WildHorse-specific attribution. Likewise no documented operations-vs-organization/culture fracture is described; the Chapter 11 filing and reorganization are noted as outside the fixed window and are not tied to any process/organization integration breakdown, so p5 is uncertain rather than 0. The slice provides no evidence bearing on controlling-intent archetype coherence or business-model reconcilability.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"combined Eagle Ford (incl. acquired) fully divested 2023 ~$3.5bn\",\n  \"rationale\": \"The slice documents that Brazos Valley was carried as a distinct operating area through FY2019–FY2020, folded into combined Eagle Ford reporting by FY2021, and that the combined Eagle Ford position was fully divested in three 2023 transactions; it does not document any product/process misalignment or inability to align the acquired acreage with operating processes over time, so p4_pathway=0. No evidence is given of operations-versus-organization/culture fracture specific to integrating the acquired business (Chapter 11 naming of Brazos Valley entities is acquirer-wide insolvency context, not a realized process/organization interface disruption), so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Combined Eagle Ford position fully divested in 2023 for approximately $3.5 billion\",\n  \"rationale\": \"The FY2021 annual report shows that Brazos Valley had been folded into the combined Eagle Ford reporting line, but it gives no indication of product-line or operating-process incoherence. The FY2023 10-K documents the complete divestiture of the combined Eagle Ford position but does not attribute it to product/process failure or to conflict involving personnel, management, or culture. Accordingly, neither a p4 nor a p5 disruption is documented.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

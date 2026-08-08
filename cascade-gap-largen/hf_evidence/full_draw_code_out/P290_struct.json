@@ -1,0 +1,85 @@
+{
+  "case_id": "P290",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "As structured, this is a cash-for-stock reverse triangular merger in which the entire CA corporate entity — including its software solutions (T4), operations, and workforce — becomes a wholly owned Broadcom subsidiary intact (CA \"continuing as the surviving corporation\"), so the customer-facing product and its producing processes cross the boundary together within the same surviving entity, yielding gap_45 = 0. Likewise T5 processes and T6 people move together within the surviving entity, and continuing-employee compensation, benefits, and service credit are contractually bridged for twelve months, so there is no documented process-vs-organization mismatch at closing (gap_56 = 0). Governance/board control is reserved to Broadcom effective at the effective time (director resignations, officer designations), indicating a T1 replace, but the operating tiers transfer whole one-to-one via the surviving corporation. Because no gap is coded, gap_mitigated is NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is structured as a reverse triangular merger where CA survives as a wholly owned subsidiary of Broadcom. The entire corporate entity, including its products (T4), operational processes (T5), and workforce (T6), transfers intact at closing, meaning there are no structural gaps between these tiers."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal is a cash-for-stock reverse triangular merger in which the entire CA entity survives as a wholly owned Broadcom subsidiary, so CA’s customer-facing software products (T4) and the operations that produce them (T5) cross together with the legal vehicle; no product-vs-process structural mismatch is documented at closing (gap_45=0). Rank-and-file workforce continuity is expressly bridged (benefits assumption, service credit, 12-month compensation parity) alongside that entity transfer, while only board/officer designations are replaced by Broadcom, so processes do not move without organization (gap_56=0). No transitional-services gap-absorption construct is required or described."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"As structured, this is a cash-for-stock reverse triangular merger in which the entire CA corporate entity \\u2014 including its software solutions (T4), operations, and workforce \\u2014 becomes a wholly owned Broadcom subsidiary intact (CA \\\"continuing as the surviving corporation\\\"), so the customer-facing product and its producing processes cross the boundary together within the same surviving entity, yielding gap_45 = 0. Likewise T5 processes and T6 people move together within the surviving entity, and continuing-employee compensation, benefits, and service credit are contractually bridged for twelve months, so there is no documented process-vs-organization mismatch at closing (gap_56 = 0). Governance/board control is reserved to Broadcom effective at the effective time (director resignations, officer designations), indicating a T1 replace, but the operating tiers transfer whole one-to-one via the surviving corporation. Because no gap is coded, gap_mitigated is NA.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is structured as a reverse triangular merger where CA survives as a wholly owned subsidiary of Broadcom. The entire corporate entity, including its products (T4), operational processes (T5), and workforce (T6), transfers intact at closing, meaning there are no structural gaps between these tiers.\"\n}\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal is a cash-for-stock reverse triangular merger in which the entire CA entity survives as a wholly owned Broadcom subsidiary, so CA’s customer-facing software products (T4) and the operations that produce them (T5) cross together with the legal vehicle; no product-vs-process structural mismatch is documented at closing (gap_45=0). Rank-and-file workforce continuity is expressly bridged (benefits assumption, service credit, 12-month compensation parity) alongside that entity transfer, while only board/officer designations are replaced by Broadcom, so processes do not move without organization (gap_56=0). No transitional-services gap-absorption construct is required or described.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

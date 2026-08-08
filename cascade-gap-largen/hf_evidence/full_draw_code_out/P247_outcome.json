@@ -1,0 +1,58 @@
+{
+  "case_id": "P247",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "CorePoint sold in going-private transaction for $15.99/share",
+      "rationale": "The slice documents the post-deal trajectory of the two successor entities (Wyndham and CorePoint). There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The management agreements were terminated for a fee upon CorePoint's sale, but the franchise agreements remained in place, and there is no mention of operational integration failures or cultural clashes."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "CorePoint going-private ~3.75 yrs; La Quinta brand retained/grew to 922 props",
+      "rationale": "The slice documents no product/process interface disruption: under Wyndham the La Quinta brand scaled modestly to 922 properties/90,098 rooms by FY2021 from ~890/~87,500 at spin-off, and franchise agreements with the CorePoint hotels were retained and assumed by the new owner rather than terminated. No process/organization fracture is documented either: LQ Management continued managing all CorePoint hotels under the 2018 agreements through FY2020 (earning a 5% fee), and those management agreements were terminated only concurrently with CorePoint’s March 2022 going-private sale for an ~$84–85 million termination fee, a commercial exit rather than an operational/cultural break."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "CorePoint sold for $15.99 per share after approximately 3.75 years",
+      "rationale": "No product/process disruption is documented: by FY2021, the La Quinta brand had grown to 922 properties, and the franchise agreements remained in place when CorePoint was sold. No process/organization fracture is documented: the Wyndham subsidiary continued managing all CorePoint hotels through FY2020, and the management agreements were terminated only in connection with CorePoint’s March 2022 sale, for an approximately $84–85 million fee."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"CorePoint sold in going-private transaction for $15.99/share\",\n\"rationale\": \"The slice documents the post-deal trajectory of the two successor entities (Wyndham and CorePoint). There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway). The management agreements were terminated for a fee upon CorePoint's sale, but the franchise agreements remained in place, and there is no mention of operational integration failures or cultural clashes.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"CorePoint going-private ~3.75 yrs; La Quinta brand retained/grew to 922 props\",\n  \"rationale\": \"The slice documents no product/process interface disruption: under Wyndham the La Quinta brand scaled modestly to 922 properties/90,098 rooms by FY2021 from ~890/~87,500 at spin-off, and franchise agreements with the CorePoint hotels were retained and assumed by the new owner rather than terminated. No process/organization fracture is documented either: LQ Management continued managing all CorePoint hotels under the 2018 agreements through FY2020 (earning a 5% fee), and those management agreements were terminated only concurrently with CorePoint’s March 2022 going-private sale for an ~$84–85 million termination fee, a commercial exit rather than an operational/cultural break.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"CorePoint sold for $15.99 per share after approximately 3.75 years\",\n  \"rationale\": \"No product/process disruption is documented: by FY2021, the La Quinta brand had grown to 922 properties, and the franchise agreements remained in place when CorePoint was sold. No process/organization fracture is documented: the Wyndham subsidiary continued managing all CorePoint hotels through FY2020, and the management agreements were terminated only in connection with CorePoint’s March 2022 sale, for an approximately $84–85 million fee.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

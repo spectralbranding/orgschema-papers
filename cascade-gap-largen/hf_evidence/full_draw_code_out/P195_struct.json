@@ -1,0 +1,85 @@
+{
+  "case_id": "P195",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was structured as a whole-company reverse triangular merger where the entire legal entity, product business, operations, and workforce would transfer intact to Fresenius Kabi. Because the entire company was the object of the transaction, there were no structural mismatches or carve-outs separating products from processes (gap_45 = 0) or processes from the organization (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "As structured, the April 2017 agreement was a whole-company reverse-triangular cash merger in which Merger Sub would merge into Akorn, leaving the entire Company (legal entity, specialty-generic/branded/OTC/animal-health product business, and workforce) as surviving corporation and wholly owned Fresenius Kabi subsidiary, with no partial-asset carve-out. T4 product and T5 processes were therefore slated to cross together inside the same surviving entity, so gap_45=0. T5 processes and T6 organization were likewise aligned by the entity-level transfer plus the one-year continuing-employee salary/severance/benefits commitment; no process-without-people mismatch or separate TSA was documented, so gap_56=0."
+    },
+    "openai": {
+      "sigma_T1": "continue",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the proposed whole-company merger was never consummated and that Akorn would move forward as an independent company; therefore, no product, process, or organizational tier actually crossed an ownership boundary at closing. Accordingly, no closing-stage product/process mismatch or process/organization mismatch occurred, so gap_45 and gap_56 are both coded 0."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was structured as a whole-company reverse triangular merger where the entire legal entity, product business, operations, and workforce would transfer intact to Fresenius Kabi. Because the entire company was the object of the transaction, there were no structural mismatches or carve-outs separating products from processes (gap_45 = 0) or processes from the organization (gap_56 = 0).\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"As structured, the April 2017 agreement was a whole-company reverse-triangular cash merger in which Merger Sub would merge into Akorn, leaving the entire Company (legal entity, specialty-generic/branded/OTC/animal-health product business, and workforce) as surviving corporation and wholly owned Fresenius Kabi subsidiary, with no partial-asset carve-out. T4 product and T5 processes were therefore slated to cross together inside the same surviving entity, so gap_45=0. T5 processes and T6 organization were likewise aligned by the entity-level transfer plus the one-year continuing-employee salary/severance/benefits commitment; no process-without-people mismatch or separate TSA was documented, so gap_56=0.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the proposed whole-company merger was never consummated and that Akorn would move forward as an independent company; therefore, no product, process, or organizational tier actually crossed an ownership boundary at closing. Accordingly, no closing-stage product/process mismatch or process/organization mismatch occurred, so gap_45 and gap_56 are both coded 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

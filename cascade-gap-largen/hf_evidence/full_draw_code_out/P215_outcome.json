@@ -1,0 +1,58 @@
+{
+  "case_id": "P215",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Blue Ribbon Chapter 11 (Jan 2020) then brands fully divested by Sept 2021; Ceridian sold down to ~5.3%; FY2021 net loss $(287.0)M",
+      "rationale": "This slice is a holding-company split-off in which the contributed businesses were separately disclosed and progressively divested (Ceridian sold down to ~5.3%; Blue Ribbon entered Chapter 11 and its brands were fully divested by September 2021), and the documented adverse driver of operating decline is exogenous (COVID-19 guest-count reduction and dining-room closures from late March 2020), not a documented product/process alignment failure or operations/organization fracture. No slice line documents disruption specifically at the product/process interface (p4) or an operations-vs-people/management/culture fracture (p5); the discontinuities described are portfolio divestitures and a pandemic shock rather than realized integration-interface breakdowns. Because the slice concerns a diversified holding-company vehicle rather than an integrating merger, it does not permit determination of these interface pathways, so p4 and p5 are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$(287.0) million net loss in FY2021",
+      "rationale": "The slice documents the progressive divestiture of Ceridian and the bankruptcy/reorganization of American Blue Ribbon Holdings, as well as COVID-19 impacts on the Restaurant Group. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) driving these outcomes."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Ceridian stake reduced to approximately 5.3% by the FY2021 filing date",
+      "rationale": "The slice documents divestitures, Blue Ribbon's Chapter 11 reorganization, and COVID-19-driven restaurant disruption, but it does not attribute these outcomes to an acquired-product/operating-process misalignment; therefore p4 is 0. It likewise provides no evidence that operational integration fractured against management, employees, or culture over time, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Blue Ribbon Chapter 11 (Jan 2020) then brands fully divested by Sept 2021; Ceridian sold down to ~5.3%; FY2021 net loss $(287.0)M\", \"rationale\": \"This slice is a holding-company split-off in which the contributed businesses were separately disclosed and progressively divested (Ceridian sold down to ~5.3%; Blue Ribbon entered Chapter 11 and its brands were fully divested by September 2021), and the documented adverse driver of operating decline is exogenous (COVID-19 guest-count reduction and dining-room closures from late March 2020), not a documented product/process alignment failure or operations/organization fracture. No slice line documents disruption specifically at the product/process interface (p4) or an operations-vs-people/management/culture fracture (p5); the discontinuities described are portfolio divestitures and a pandemic shock rather than realized integration-interface breakdowns. Because the slice concerns a diversified holding-company vehicle rather than an integrating merger, it does not permit determination of these interface pathways, so p4 and p5 are coded uncertain.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$(287.0) million net loss in FY2021\",\n  \"rationale\": \"The slice documents the progressive divestiture of Ceridian and the bankruptcy/reorganization of American Blue Ribbon Holdings, as well as COVID-19 impacts on the Restaurant Group. There is no documented evidence of product/process incoherence (p4) or process/organization fracture (p5) driving these outcomes.\"\n}\n",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Ceridian stake reduced to approximately 5.3% by the FY2021 filing date\",\n  \"rationale\": \"The slice documents divestitures, Blue Ribbon's Chapter 11 reorganization, and COVID-19-driven restaurant disruption, but it does not attribute these outcomes to an acquired-product/operating-process misalignment; therefore p4 is 0. It likewise provides no evidence that operational integration fractured against management, employees, or culture over time, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

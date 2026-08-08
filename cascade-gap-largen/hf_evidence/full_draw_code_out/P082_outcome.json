@@ -1,0 +1,58 @@
+{
+  "case_id": "P082",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "$3.85bn cash divestment; Inalum majority 51.24% vs FCX 48.76%, FCX retained ~81% economic interest and operating control",
+      "rationale": "The slice documents a smoothly executed ownership realignment closing Dec 21, 2018 on the announced terms, with no documented disruption at the product/process interface (mining operations continued under an FCX-controlled operating committee, new IUPK license replaced the Contract of Work) — hence p4=0. It likewise documents no fracture at the process/organization interface: FCX retained operating control via the Shareholders Agreement, continued to consolidate PT-FI, and reported continuity of ~23,400 Grasberg employees with union agreements intact — hence p5=0. On t1_archetype, the arrangement created a nominal state-majority (51.24%) that nonetheless operated under FCX control (~81% economic interest, consolidation), a divergence between nominal ownership and realized control that the slice does not characterize as a disputed or incoherent controlling intent, so this is coded uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FCX retained operating control/consolidation after 51.24% ownership realignment; $3.85bn cash; assets retained",
+      "rationale": "The slice documents workforce/operations continuity at the Grasberg district (approx. 23,400 employees at end-2018) with no product/process misalignment or disruption realized. It likewise records that FCX retained management control of mining operations via the shareholders agreement, continued to consolidate PT-FI, and reported no process/organization fracture over the window."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "$3.85 billion cash changed hands at completion",
+      "rationale": "No realized product/process disruption is documented; instead, mining operations continued under the new IUPK and FCX continued consolidating PT-FI. No process/organization fracture is documented, and FCX reported approximately 23,400 Grasberg-area employees at December 31, 2018."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"$3.85bn cash divestment; Inalum majority 51.24% vs FCX 48.76%, FCX retained ~81% economic interest and operating control\", \"rationale\": \"The slice documents a smoothly executed ownership realignment closing Dec 21, 2018 on the announced terms, with no documented disruption at the product/process interface (mining operations continued under an FCX-controlled operating committee, new IUPK license replaced the Contract of Work) \\u2014 hence p4=0. It likewise documents no fracture at the process/organization interface: FCX retained operating control via the Shareholders Agreement, continued to consolidate PT-FI, and reported continuity of ~23,400 Grasberg employees with union agreements intact \\u2014 hence p5=0. On t1_archetype, the arrangement created a nominal state-majority (51.24%) that nonetheless operated under FCX control (~81% economic interest, consolidation), a divergence between nominal ownership and realized control that the slice does not characterize as a disputed or incoherent controlling intent, so this is coded uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FCX retained operating control/consolidation after 51.24% ownership realignment; $3.85bn cash; assets retained\",\n  \"rationale\": \"The slice documents workforce/operations continuity at the Grasberg district (approx. 23,400 employees at end-2018) with no product/process misalignment or disruption realized. It likewise records that FCX retained management control of mining operations via the shareholders agreement, continued to consolidate PT-FI, and reported no process/organization fracture over the window.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"$3.85 billion cash changed hands at completion\",\n  \"rationale\": \"No realized product/process disruption is documented; instead, mining operations continued under the new IUPK and FCX continued consolidating PT-FI. No process/organization fracture is documented, and FCX reported approximately 23,400 Grasberg-area employees at December 31, 2018.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

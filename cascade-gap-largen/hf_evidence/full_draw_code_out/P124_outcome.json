@@ -1,0 +1,58 @@
+{
+  "case_id": "P124",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Total assets down ~25% ($6.39bn→$4.80bn 2010-2014); swung to net income by 2013-2014; 87 properties sold (~$1.24bn) since 2012; NYSE-listed going concern, no divestiture/bankruptcy",
+      "rationale": "The slice documents a going-concern REIT that renamed, listed on the NYSE, deleveraged via a disposition program (87 properties sold ~$1.24bn), and swung from net losses to net income by 2013-2014, with no documented disruption at the product/process interface — hence p4_pathway=0. Likewise, no documented operations-vs-organization fracture (culture/management/people conflict against integration) appears anywhere in the realized 2010-2014 record, so p5_pathway=0. The portfolio repositioning and eventual return to acquisitions read as an orderly, successful stabilization rather than interface breakdown."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no full divestiture; ~25% asset decline, 87 props sold ~$1.24bn, return to profitability",
+      "rationale": "The slice documents an intentional multi-year portfolio repositioning (87 properties sold since 2012 for ~$1.24bn, then selective acquisitions) and a swing from net losses to net income by 2013-2014, with the entity continuing as a going-concern NYSE-listed REIT; no realized product/process incoherence is described. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is documented in the 2010-2014 record."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "87 properties sold for approximately $1.24 billion since 2012",
+      "rationale": "The realized 2010-2014 record documents portfolio repositioning, including 87 property sales followed by 15 targeted acquisitions, but reports no acquired-product/operating-process incoherence. It also documents a swing from net losses to profits and continued operation as a public going concern, with no reported fracture between operations and people, management, or culture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"Total assets down ~25% ($6.39bn\\u2192$4.80bn 2010-2014); swung to net income by 2013-2014; 87 properties sold (~$1.24bn) since 2012; NYSE-listed going concern, no divestiture/bankruptcy\", \"rationale\": \"The slice documents a going-concern REIT that renamed, listed on the NYSE, deleveraged via a disposition program (87 properties sold ~$1.24bn), and swung from net losses to net income by 2013-2014, with no documented disruption at the product/process interface \\u2014 hence p4_pathway=0. Likewise, no documented operations-vs-organization fracture (culture/management/people conflict against integration) appears anywhere in the realized 2010-2014 record, so p5_pathway=0. The portfolio repositioning and eventual return to acquisitions read as an orderly, successful stabilization rather than interface breakdown.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no full divestiture; ~25% asset decline, 87 props sold ~$1.24bn, return to profitability\",\n  \"rationale\": \"The slice documents an intentional multi-year portfolio repositioning (87 properties sold since 2012 for ~$1.24bn, then selective acquisitions) and a swing from net losses to net income by 2013-2014, with the entity continuing as a going-concern NYSE-listed REIT; no realized product/process incoherence is described. Likewise, no fracture at the process/organization interface (operations vs people/management/culture) is documented in the 2010-2014 record.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"87 properties sold for approximately $1.24 billion since 2012\",\n  \"rationale\": \"The realized 2010-2014 record documents portfolio repositioning, including 87 property sales followed by 15 targeted acquisitions, but reports no acquired-product/operating-process incoherence. It also documents a swing from net losses to profits and continued operation as a public going concern, with no reported fracture between operations and people, management, or culture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

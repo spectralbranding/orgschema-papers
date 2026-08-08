@@ -1,0 +1,85 @@
+{
+  "case_id": "P298",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: this was a whole-company statutory absorption in which the target's branch network, deposits, and loan book (T4) and its operating structure/systems (T5) combined into the acquirer together (\"branch network and personnel were expected to combine into one operating structure\"; \"smooth integration of key personnel and systems\"); product and process moved into the same vehicle rather than splitting. gap_56=0: the operating processes and the workforce were structured to migrate together — a retention bonus pool, named-executive retention payments, and continuing operating employment for the Bank President/CCO bridged the people alongside the operations; the integration risks flagged are forward-looking risk-factor language, not a structural mismatch documented at closing. T3=terminate because both the target holding company and bank charters were absorbed and ceased separate existence; T6=partial because only a subset of board/executives carried into ongoing roles while the CEO's operating role ended."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company statutory merger where WashingtonFirst's branches, deposits, and loans (T4) and operating structures (T5) were absorbed into Sandy Spring's structure. The workforce and management (T6) were also integrated, with retention pools and some executives continuing, showing no structural mismatch at closing."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the Integrated Mergers and the bank-level merger absorbed WashingtonFirst Bank into Sandy Spring Bank, so the branch network, deposits, and loan book (T4) crossed together with the surviving bank’s combined operating structure rather than without processes (gap_45=0). Although T6 was only a subset—four directors and one named executive (Connors) took continuing roles, the CEO’s operating employment ended, and other named executives received severance—the deal simultaneously structured personnel combination via a retention bonus pool, Connors’s employment agreement, and stated complementary-culture/key-personnel integration, so processes were not transferred without organizational alignment at closing (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: this was a whole-company statutory absorption in which the target's branch network, deposits, and loan book (T4) and its operating structure/systems (T5) combined into the acquirer together (\\\"branch network and personnel were expected to combine into one operating structure\\\"; \\\"smooth integration of key personnel and systems\\\"); product and process moved into the same vehicle rather than splitting. gap_56=0: the operating processes and the workforce were structured to migrate together \\u2014 a retention bonus pool, named-executive retention payments, and continuing operating employment for the Bank President/CCO bridged the people alongside the operations; the integration risks flagged are forward-looking risk-factor language, not a structural mismatch documented at closing. T3=terminate because both the target holding company and bank charters were absorbed and ceased separate existence; T6=partial because only a subset of board/executives carried into ongoing roles while the CEO's operating role ended.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company statutory merger where WashingtonFirst's branches, deposits, and loans (T4) and operating structures (T5) were absorbed into Sandy Spring's structure. The workforce and management (T6) were also integrated, with retention pools and some executives continuing, showing no structural mismatch at closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the Integrated Mergers and the bank-level merger absorbed WashingtonFirst Bank into Sandy Spring Bank, so the branch network, deposits, and loan book (T4) crossed together with the surviving bank’s combined operating structure rather than without processes (gap_45=0). Although T6 was only a subset—four directors and one named executive (Connors) took continuing roles, the CEO’s operating employment ended, and other named executives received severance—the deal simultaneously structured personnel combination via a retention bonus pool, Connors’s employment agreement, and stated complementary-culture/key-personnel integration, so processes were not transferred without organizational alignment at closing (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

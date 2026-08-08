@@ -1,0 +1,85 @@
+{
+  "case_id": "P148",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice documents that both companies' met- and thermal-coal products (T4), mining/processing/blending operations (T5), and workforces (T6) were brought together into a single Contura-parent vehicle at closing. There is no evidence of a structural mismatch where products transferred without their underlying processes, or processes transferred without their operating personnel."
+    },
+    "grok": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the slice states both parties’ met- and thermal-coal products and their mining, processing and coal-blending operations combine into one operating footprint with ‘improved metallurgical coal blending capabilities,’ so T4 and T5 crossed together with no product-vs-process mismatch (gap_45=0). The same closing structure brings both workforces (Contura ~1,750; Alpha ~2,700) and a shared 5/4 board into the Contura-parent vehicle, so T5 and T6 likewise align with no process-vs-organization gap (gap_56=0); the pre-existing 2016 TSA is described only as an already-shared back-office bridge, not as mitigation of a closing transfer gap."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The customer-facing met- and thermal-coal products of both parties crossed the boundary together with both companies’ mining, processing, and coal-blending operations, which were combined into one operating footprint; therefore no product-process structural gap is documented at closing. The slice also states that both workforces were brought into the single Contura-parent structure and that the nine-member board included five Contura directors and four Alpha designees, so no process-organization structural gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice documents that both companies' met- and thermal-coal products (T4), mining/processing/blending operations (T5), and workforces (T6) were brought together into a single Contura-parent vehicle at closing. There is no evidence of a structural mismatch where products transferred without their underlying processes, or processes transferred without their operating personnel.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"mutual-replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the slice states both parties’ met- and thermal-coal products and their mining, processing and coal-blending operations combine into one operating footprint with ‘improved metallurgical coal blending capabilities,’ so T4 and T5 crossed together with no product-vs-process mismatch (gap_45=0). The same closing structure brings both workforces (Contura ~1,750; Alpha ~2,700) and a shared 5/4 board into the Contura-parent vehicle, so T5 and T6 likewise align with no process-vs-organization gap (gap_56=0); the pre-existing 2016 TSA is described only as an already-shared back-office bridge, not as mitigation of a closing transfer gap.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The customer-facing met- and thermal-coal products of both parties crossed the boundary together with both companies’ mining, processing, and coal-blending operations, which were combined into one operating footprint; therefore no product-process structural gap is documented at closing. The slice also states that both workforces were brought into the single Contura-parent structure and that the nine-member board included five Contura directors and four Alpha designees, so no process-organization structural gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

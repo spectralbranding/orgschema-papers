@@ -1,0 +1,58 @@
+{
+  "case_id": "P143",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net loss of $143.1 million in 2018",
+      "rationale": "The slice documents the retirement of the legacy iDEN network, but does not describe this as an integration failure between product and process. It also notes employee retention challenges due to a pending future sale, rather than a realized process/organization fracture stemming from the past transaction."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "sold last unit for $905M; planned dissolution after losses",
+      "rationale": "p4 is coded 0 because the slice’s product/network material (Nextel Brazil’s mid-2018 iDEN wind-down, subscriber disconnection, and related site-lease/impairment charges) describes retirement of the divestor’s own retained legacy network, not a realized failure to align an acquired product with operating processes. p5 is coded 0 because the only organization/people language is forward-looking risk-factor text about possible employee uncertainty during the pending 2019 Brazil sale to América Móvil, not a documented post-2015 fracture of operations against organization/culture."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': ['$143.1 million net loss in 2018']}",
+      "rationale": "{'type': 'string', 'enum': ['Product/process disruption is documented by the migration and disconnection of all remaining iDEN subscribers, early termination of approximately 600 site leases, and related asset impairments; the iDEN wind-down contributed $135.0 million to the 2018 revenue decrease (FY2018 Form 10-K, MD&A). No realized process/organization fracture is documented: the filing states only that employee retention “may be challenging” during the pending sale, describing prospective risk rather than an observed organizational breakdown (FY2018 Form 10-K, risk factors).']}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net loss of $143.1 million in 2018\",\n  \"rationale\": \"The slice documents the retirement of the legacy iDEN network, but does not describe this as an integration failure between product and process. It also notes employee retention challenges due to a pending future sale, rather than a realized process/organization fracture stemming from the past transaction.\"\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"sold last unit for $905M; planned dissolution after losses\",\n  \"rationale\": \"p4 is coded 0 because the slice’s product/network material (Nextel Brazil’s mid-2018 iDEN wind-down, subscriber disconnection, and related site-lease/impairment charges) describes retirement of the divestor’s own retained legacy network, not a realized failure to align an acquired product with operating processes. p5 is coded 0 because the only organization/people language is forward-looking risk-factor text about possible employee uncertainty during the pending 2019 Brazil sale to América Móvil, not a documented post-2015 fracture of operations against organization/culture.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"1\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"0\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"$143.1 million net loss in 2018\"\n    ]\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"Product/process disruption is documented by the migration and disconnection of all remaining iDEN subscribers, early termination of approximately 600 site leases, and related asset impairments; the iDEN wind-down contributed $135.0 million to the 2018 revenue decrease (FY2018 Form 10-K, MD&A). No realized process/organization fracture is documented: the filing states only that employee retention “may be challenging” during the pending sale, describing prospective risk rather than an observed organizational breakdown (FY2018 Form 10-K, risk factors).\"\n    ]\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

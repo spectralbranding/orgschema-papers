@@ -1,0 +1,58 @@
+{
+  "case_id": "P104",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2013: $4.5bn revenue, $478.0m net income, $5.0bn equity, $34.8bn assets; legacy blocks run off/ceded",
+      "rationale": "The realized record shows an orderly, profitable outcome at ~3 years: legacy non-marketed blocks were ring-fenced in a separately managed \"Other CNO Business\" segment, the Medicare supplement block was placed in run-off, and in-force blocks were ceded to reinsurers — administrative wind-down, not documented product/process incoherence (p4=0). On the process/organization interface, operations continued through three distribution channels and internal control over financial reporting was concluded effective, with no documented operations-versus-organization fracture (p5=0). The slice reports only financials and portfolio management, giving no evidence about the controlling-intent archetype (t1) or reconciliation of business models (t2), so both are uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; $4.5bn revenue, $478m NI FY2013",
+      "rationale": "The slice documents orderly portfolio management—legacy non-marketed blocks ring-fenced in an 'Other CNO Business' segment, Medicare supplement placed in run-off after Q4 2012 sales stop, and in-force cessions to reinsurers—without any realized product/process incoherence or inability to align products with operating processes, so p4_pathway=0. Actively marketed operations continued through three distribution channels and management concluded internal control over financial reporting was effective under COSO as of 31 Dec 2013, with no documented fracture between operations and organization/people/culture, so p5_pathway=0."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2013 net income of $478.0 million",
+      "rationale": "No product/process disruption is documented: legacy blocks were separately managed, placed in run-off, or ceded to reinsurers, but the slice does not state that products could not be aligned with operating processes over time. No process/organization fracture is documented; actively marketed operations continued through three distribution channels, and management concluded that internal control over financial reporting was effective as of December 31, 2013."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2013: $4.5bn revenue, $478.0m net income, $5.0bn equity, $34.8bn assets; legacy blocks run off/ceded\", \"rationale\": \"The realized record shows an orderly, profitable outcome at ~3 years: legacy non-marketed blocks were ring-fenced in a separately managed \\\"Other CNO Business\\\" segment, the Medicare supplement block was placed in run-off, and in-force blocks were ceded to reinsurers \\u2014 administrative wind-down, not documented product/process incoherence (p4=0). On the process/organization interface, operations continued through three distribution channels and internal control over financial reporting was concluded effective, with no documented operations-versus-organization fracture (p5=0). The slice reports only financials and portfolio management, giving no evidence about the controlling-intent archetype (t1) or reconciliation of business models (t2), so both are uncertain.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; $4.5bn revenue, $478m NI FY2013\",\n  \"rationale\": \"The slice documents orderly portfolio management—legacy non-marketed blocks ring-fenced in an 'Other CNO Business' segment, Medicare supplement placed in run-off after Q4 2012 sales stop, and in-force cessions to reinsurers—without any realized product/process incoherence or inability to align products with operating processes, so p4_pathway=0. Actively marketed operations continued through three distribution channels and management concluded internal control over financial reporting was effective under COSO as of 31 Dec 2013, with no documented fracture between operations and organization/people/culture, so p5_pathway=0.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2013 net income of $478.0 million\",\n  \"rationale\": \"No product/process disruption is documented: legacy blocks were separately managed, placed in run-off, or ceded to reinsurers, but the slice does not state that products could not be aligned with operating processes over time. No process/organization fracture is documented; actively marketed operations continued through three distribution channels, and management concluded that internal control over financial reporting was effective as of December 31, 2013.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

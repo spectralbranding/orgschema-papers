@@ -1,0 +1,58 @@
+{
+  "case_id": "P158",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "FY2019 net loss of $1,195M (incl. $468M goodwill/asset impairments); acquired by Eldorado on July 20, 2020, ceasing to exist as independent registrant",
+      "rationale": "The slice documents the reorganized registrant's post-emergence operating record (FY2019 net revenues of $8,742M, net loss of $1,195M, $468M in impairments) and its acquisition by Eldorado, but contains no evidence of disruption specifically at the product/process interface — no documented incoherence between an acquired product line and operating processes — so p4_pathway cannot be determined and is coded uncertain. Likewise, the slice describes triple-net leaseback operations, asset deconsolidations/dispositions (Horseshoe Baltimore, Rio), and a subsequent merger, but records no documented fracture between operations and the people/management/organization, so p5_pathway is also uncertain. The evidence is confined to financial scalars and corporate events without narrative on integration friction along either interface."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2019 net loss $1,195M; acquired by Eldorado Jul 2020",
+      "rationale": "The slice documents continued large-scale casino operations under triple-net leases, rising net revenues through FY2019, limited asset moves (Horseshoe Baltimore deconsolidation; Rio disposal agreement), and an eventual Eldorado acquisition, with no realized product/process misalignment described. No evidence is given of operations fracturing against people, management, or culture over the window; impairments and the net loss are reported as financial results without linkage to process/organization interface failure."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "FY2019 net loss attributable to Caesars of $1.195 billion",
+      "rationale": "The FY2019 filing documents continued large-scale operations with $8.742 billion in net revenues, followed by acquisition by Eldorado on July 20, 2020; it does not document acquired-product misalignment with operating processes, so p4 is 0. Although Caesars reported a $1.195 billion FY2019 net loss and $468 million in goodwill and asset impairments, the slice does not attribute these outcomes to a fracture between operations and people, management, or culture, so p5 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"FY2019 net loss of $1,195M (incl. $468M goodwill/asset impairments); acquired by Eldorado on July 20, 2020, ceasing to exist as independent registrant\", \"rationale\": \"The slice documents the reorganized registrant's post-emergence operating record (FY2019 net revenues of $8,742M, net loss of $1,195M, $468M in impairments) and its acquisition by Eldorado, but contains no evidence of disruption specifically at the product/process interface \\u2014 no documented incoherence between an acquired product line and operating processes \\u2014 so p4_pathway cannot be determined and is coded uncertain. Likewise, the slice describes triple-net leaseback operations, asset deconsolidations/dispositions (Horseshoe Baltimore, Rio), and a subsequent merger, but records no documented fracture between operations and the people/management/organization, so p5_pathway is also uncertain. The evidence is confined to financial scalars and corporate events without narrative on integration friction along either interface.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2019 net loss $1,195M; acquired by Eldorado Jul 2020\",\n  \"rationale\": \"The slice documents continued large-scale casino operations under triple-net leases, rising net revenues through FY2019, limited asset moves (Horseshoe Baltimore deconsolidation; Rio disposal agreement), and an eventual Eldorado acquisition, with no realized product/process misalignment described. No evidence is given of operations fracturing against people, management, or culture over the window; impairments and the net loss are reported as financial results without linkage to process/organization interface failure.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"FY2019 net loss attributable to Caesars of $1.195 billion\",\n  \"rationale\": \"The FY2019 filing documents continued large-scale operations with $8.742 billion in net revenues, followed by acquisition by Eldorado on July 20, 2020; it does not document acquired-product misalignment with operating processes, so p4 is 0. Although Caesars reported a $1.195 billion FY2019 net loss and $468 million in goodwill and asset impairments, the slice does not attribute these outcomes to a fracture between operations and people, management, or culture, so p5 is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

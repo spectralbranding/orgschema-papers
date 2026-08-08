@@ -1,0 +1,85 @@
+{
+  "case_id": "P019",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "reconstruct",
+      "sigma_T2": "subset",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing product (automotive seating and interiors, T4) crossed the boundary along with its manufacturing footprint and ~74,000 employees (T6), but the shared corporate service processes — accounting, IT, treasury, cash management, tax — did NOT transfer as an intact operating substrate and instead were \"allocations of corporate expenses from Johnson Controls,\" bridged via a transition services agreement; this documents a T4-vs-T5 product-vs-process mismatch at closing (gap_45=1), explicitly absorbed contractually (gap_mitigated=yes). By contrast, the operating people and manufacturing organization (~74,000 employees, ~230 facilities) moved coherently together with the seating operations, so no T5-vs-T6 mismatch is documented (gap_56=0). T1 is coded reconstruct because a new standalone public purpose (Adient plc) was formed while the parent's original controlling intent continued in the retained businesses; T3 swap reflects the new Irish-domiciled plc legal vehicle issued to shareholders."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing product (automotive seating) and its direct manufacturing processes transferred together, so there is no gap_45. However, the operational processes transferred without the shared corporate functions (IT, accounting, treasury) that historically supported them, creating a structural gap_56. This gap was mitigated at closing by a transition services agreement."
+    },
+    "openai": {
+      "sigma_T1": "uncertain",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The automotive seating and interiors product operation crossed with its manufacturing footprint, but shared operational-support processes—including IT, accounting, treasury, cash management, and other infrastructure—did not transfer intact, documenting a product-process gap at closing. That gap was contractually absorbed through the transition services agreement and related transitional agreements. Approximately 74,000 employees transferred alongside the manufacturing and assembly operations, while the retained corporate processes and their substrate remained with Johnson Controls, so no process-without-organization gap is documented."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"reconstruct\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"The customer-facing product (automotive seating and interiors, T4) crossed the boundary along with its manufacturing footprint and ~74,000 employees (T6), but the shared corporate service processes \\u2014 accounting, IT, treasury, cash management, tax \\u2014 did NOT transfer as an intact operating substrate and instead were \\\"allocations of corporate expenses from Johnson Controls,\\\" bridged via a transition services agreement; this documents a T4-vs-T5 product-vs-process mismatch at closing (gap_45=1), explicitly absorbed contractually (gap_mitigated=yes). By contrast, the operating people and manufacturing organization (~74,000 employees, ~230 facilities) moved coherently together with the seating operations, so no T5-vs-T6 mismatch is documented (gap_56=0). T1 is coded reconstruct because a new standalone public purpose (Adient plc) was formed while the parent's original controlling intent continued in the retained businesses; T3 swap reflects the new Irish-domiciled plc legal vehicle issued to shareholders.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The customer-facing product (automotive seating) and its direct manufacturing processes transferred together, so there is no gap_45. However, the operational processes transferred without the shared corporate functions (IT, accounting, treasury) that historically supported them, creating a structural gap_56. This gap was mitigated at closing by a transition services agreement.\"",
+    "openai": "{\n  \"sigma_T1\": \"uncertain\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-N\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The automotive seating and interiors product operation crossed with its manufacturing footprint, but shared operational-support processes—including IT, accounting, treasury, cash management, and other infrastructure—did not transfer intact, documenting a product-process gap at closing. That gap was contractually absorbed through the transition services agreement and related transitional agreements. Approximately 74,000 employees transferred alongside the manufacturing and assembly operations, while the retained corporate processes and their substrate remained with Johnson Controls, so no process-without-organization gap is documented.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "reconstruct",
+    "sigma_T2": "subset",
+    "sigma_T3": "swap",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P299",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing renewable-generation business, legal vehicle, and Nasdaq \"TERP\" listing continued intact (T4 stays), but the operational support processes (top management, O&M, asset management) that were formerly provided by SunEdison under a management services/O&M arrangement were severed and re-provided by Brookfield affiliates under a new master services agreement — a documented product-vs-process structural mismatch at closing where the delivering processes were swapped rather than moving intact with the product. gap_56=1: T5 processes were re-engineered/swapped to a new provider while the people running them changed — SunEdison-employed CEO/COO/CAO were replaced by Brookfield-arranged personnel (CEO, CFO, general counsel), so process transfer occurred without the same organization/people carrying it. gap_mitigated=yes: the shared substrate was contractually absorbed at closing via the new master services agreement (Sponsorship Agreements), the $500M sponsor line agreement, and the pipeline right of first offer, which allocate the management/operating support going forward."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that at closing the customer-facing renewable-energy-generation business continued intact with the surviving public company and Nasdaq listing, so T4 and its operating processes remained together inside the same vehicle (gap_45=0). Concurrently the deal installed Sponsorship Agreements under which Brookfield affiliates supply the CEO, CFO, GC and related services at closing, aligning the re-sourced top-management layer with the continuing operations rather than leaving processes without an organization (gap_56=0)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "swap",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structural summary states that the customer-facing renewable-energy-generation business continued intact, while operating support shifted from SunEdison arrangements to Brookfield affiliates under a new master services agreement; therefore, no product-versus-process mismatch is documented at closing (SEC accession 0001567619-17-001844, Form DEFM14A). The new agreement required Brookfield affiliates to arrange qualified personnel, including a full-time CEO, CFO, and general counsel dedicated primarily to the Company, aligning the restructured support processes with the organization responsible for running them; therefore, no process-versus-organization gap is documented (SEC accession 0001567619-17-001844, Form DEFM14A)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"swap\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing renewable-generation business, legal vehicle, and Nasdaq \\\"TERP\\\" listing continued intact (T4 stays), but the operational support processes (top management, O&M, asset management) that were formerly provided by SunEdison under a management services/O&M arrangement were severed and re-provided by Brookfield affiliates under a new master services agreement \\u2014 a documented product-vs-process structural mismatch at closing where the delivering processes were swapped rather than moving intact with the product. gap_56=1: T5 processes were re-engineered/swapped to a new provider while the people running them changed \\u2014 SunEdison-employed CEO/COO/CAO were replaced by Brookfield-arranged personnel (CEO, CFO, general counsel), so process transfer occurred without the same organization/people carrying it. gap_mitigated=yes: the shared substrate was contractually absorbed at closing via the new master services agreement (Sponsorship Agreements), the $500M sponsor line agreement, and the pipeline right of first offer, which allocate the management/operating support going forward.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that at closing the customer-facing renewable-energy-generation business continued intact with the surviving public company and Nasdaq listing, so T4 and its operating processes remained together inside the same vehicle (gap_45=0). Concurrently the deal installed Sponsorship Agreements under which Brookfield affiliates supply the CEO, CFO, GC and related services at closing, aligning the re-sourced top-management layer with the continuing operations rather than leaving processes without an organization (gap_56=0).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"swap\",\n  \"sigma_T6\": \"swap\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The structural summary states that the customer-facing renewable-energy-generation business continued intact, while operating support shifted from SunEdison arrangements to Brookfield affiliates under a new master services agreement; therefore, no product-versus-process mismatch is documented at closing (SEC accession 0001567619-17-001844, Form DEFM14A). The new agreement required Brookfield affiliates to arrange qualified personnel, including a full-time CEO, CFO, and general counsel dedicated primarily to the Company, aligning the restructured support processes with the organization responsible for running them; therefore, no process-versus-organization gap is documented (SEC accession 0001567619-17-001844, Form DEFM14A).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "swap",
+    "sigma_T6": "swap",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

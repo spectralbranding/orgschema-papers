@@ -1,0 +1,85 @@
+{
+  "case_id": "P131",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing acquiring/payments product of both parties was combined into the single surviving registrant at closing (\"deep payments capabilities, product and vertical expertise\"), yet the parties \"contractually deferred operational integration of the underlying processes\" to a post-closing joint integration team, so the T4 product crossed the boundary without T5 processes being aligned coherently at closing. gap_56=1: process integration was explicitly deferred and Vantiv agreed \"not contact or issue any communication to any employee of Worldpay\" pre-closing, keeping the T6 people/management substrate separate by contract; Worldpay's share-award arrangements were merely rolled over rather than conformed, indicating people/culture were not aligned alongside processes at closing. gap_mitigated=yes: the A&R Co-operation Agreement §§10-11 documents the transitional/operating allocation — a \"joint integration team,\" \"clean team\" arrangements, and rolled-over award terms — contractually absorbing the deferred integration substrate at closing. Governance was jointly structured (dual Co-CEO, expanded board from both sides, 41%/majority split), supporting a mutual-replace T1 with no documented T1 fusion."
+    },
+    "gemini": {
+      "sigma_T1": "mutual-replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a merger of equals (mutual-replace at T1) where both companies' products, processes, and organizations transferred intact (1-1). There is no documented structural mismatch at closing between the products and the processes that deliver them (gap_45 = 0), nor between the processes and the people/organization running them (gap_56 = 0). The explicit deferral of integration planning means the respective processes and organizations remained aligned with their own products at the moment of closing."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the scheme of arrangement transferred both operating companies whole into the surviving registrant (8-K Items 2.01/5.03), so customer-facing payments/acquiring product and the processes that produce it crossed ownership together; the announcement’s product-combination language does not separate product from process at closing. gap_56=0 because the same closing instruments that brought processes under common ownership also brought the people/management substrate (dual Co-CEOs, board seats from both sides, rolled-over employee awards) and expressly deferred operational and employee integration in parallel via the joint integration team and no-contact covenants (A&R Co-operation Agreement §§10.1–10.2), documenting no process-without-organization mismatch at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"mutual-replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing acquiring/payments product of both parties was combined into the single surviving registrant at closing (\\\"deep payments capabilities, product and vertical expertise\\\"), yet the parties \\\"contractually deferred operational integration of the underlying processes\\\" to a post-closing joint integration team, so the T4 product crossed the boundary without T5 processes being aligned coherently at closing. gap_56=1: process integration was explicitly deferred and Vantiv agreed \\\"not contact or issue any communication to any employee of Worldpay\\\" pre-closing, keeping the T6 people/management substrate separate by contract; Worldpay's share-award arrangements were merely rolled over rather than conformed, indicating people/culture were not aligned alongside processes at closing. gap_mitigated=yes: the A&R Co-operation Agreement \\u00a7\\u00a710-11 documents the transitional/operating allocation \\u2014 a \\\"joint integration team,\\\" \\\"clean team\\\" arrangements, and rolled-over award terms \\u2014 contractually absorbing the deferred integration substrate at closing. Governance was jointly structured (dual Co-CEO, expanded board from both sides, 41%/majority split), supporting a mutual-replace T1 with no documented T1 fusion.\"}",
+    "gemini": "{\n\"sigma_T1\": \"mutual-replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a merger of equals (mutual-replace at T1) where both companies' products, processes, and organizations transferred intact (1-1). There is no documented structural mismatch at closing between the products and the processes that deliver them (gap_45 = 0), nor between the processes and the people/organization running them (gap_56 = 0). The explicit deferral of integration planning means the respective processes and organizations remained aligned with their own products at the moment of closing.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the scheme of arrangement transferred both operating companies whole into the surviving registrant (8-K Items 2.01/5.03), so customer-facing payments/acquiring product and the processes that produce it crossed ownership together; the announcement’s product-combination language does not separate product from process at closing. gap_56=0 because the same closing instruments that brought processes under common ownership also brought the people/management substrate (dual Co-CEOs, board seats from both sides, rolled-over employee awards) and expressly deferred operational and employee integration in parallel via the joint integration team and no-contact covenants (A&R Co-operation Agreement §§10.1–10.2), documenting no process-without-organization mismatch at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "mutual-replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

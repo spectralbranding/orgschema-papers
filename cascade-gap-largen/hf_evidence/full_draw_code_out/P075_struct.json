@@ -1,0 +1,85 @@
+{
+  "case_id": "P075",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "null",
+      "sigma_T5": "partial",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the customer-facing asset (the distribution facility) \"did not exist at closing — it was to be constructed by the JV,\" so no product crossed the ownership boundary at all; there is no product-vs-process mismatch when neither an operating product nor its delivery processes moved. gap_56 is 0 because no going-concern operations, workforce, or people/organization transferred (\"no operating facility, workforce, or going-concern business crossed the ownership boundary\"); only capital, land, and entitlements entered the new development vehicle, and management authority was split by function within the JV rather than a process transferring without its organization. This is a newly formed 50/50 Delaware LLC with imprint-share intent (equal 50% partners), a swap into a new legal vehicle, and a lease (as amended) bridging the parties' roles."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is a 50/50 joint venture to develop a distribution facility. At closing, only land, entitlements, and cash were contributed to the new JV. No operating facility, workforce, or going-concern business crossed the boundary (T5 and T6 are null). Therefore, there are no structural gaps between product/asset and operations (gap_45 = 0) or operations and workforce (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "null",
+      "sigma_T3": "null",
+      "sigma_T4": "null",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that at closing 'no operating facility, workforce, or going-concern business crossed the ownership boundary; the transaction transferred capital, land, and entitlements into a new development vehicle,' and that the customer-facing distribution facility 'did not exist at closing — it was to be constructed by the JV.' Accordingly neither T4 product nor T5 processes moved (gap_45=0), and neither T5 processes nor T6 organization moved (gap_56=0); only a new 50/50 LLC and a contingent amended lease were put in place."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"null\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 is 0 because the customer-facing asset (the distribution facility) \\\"did not exist at closing \\u2014 it was to be constructed by the JV,\\\" so no product crossed the ownership boundary at all; there is no product-vs-process mismatch when neither an operating product nor its delivery processes moved. gap_56 is 0 because no going-concern operations, workforce, or people/organization transferred (\\\"no operating facility, workforce, or going-concern business crossed the ownership boundary\\\"); only capital, land, and entitlements entered the new development vehicle, and management authority was split by function within the JV rather than a process transferring without its organization. This is a newly formed 50/50 Delaware LLC with imprint-share intent (equal 50% partners), a swap into a new legal vehicle, and a lease (as amended) bridging the parties' roles.\"}",
+    "gemini": "{\n\"sigma_T1\": \"imprint-share\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"null\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is a 50/50 joint venture to develop a distribution facility. At closing, only land, entitlements, and cash were contributed to the new JV. No operating facility, workforce, or going-concern business crossed the boundary (T5 and T6 are null). Therefore, there are no structural gaps between product/asset and operations (gap_45 = 0) or operations and workforce (gap_56 = 0).\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"null\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"null\",\n  \"sigma_T5\": \"null\",\n  \"sigma_T6\": \"null\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that at closing 'no operating facility, workforce, or going-concern business crossed the ownership boundary; the transaction transferred capital, land, and entitlements into a new development vehicle,' and that the customer-facing distribution facility 'did not exist at closing — it was to be constructed by the JV.' Accordingly neither T4 product nor T5 processes moved (gap_45=0), and neither T5 processes nor T6 organization moved (gap_56=0); only a new 50/50 LLC and a contingent amended lease were put in place.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "null",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

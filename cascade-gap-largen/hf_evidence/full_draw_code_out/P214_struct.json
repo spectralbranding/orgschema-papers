@@ -1,0 +1,85 @@
+{
+  "case_id": "P214",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=0: both targets' customer-facing product platforms crossed intact as indirect subsidiaries together with their operating footprints (SourceHOV's ~120 delivery centers/~16,000 employees; Novitex's ~1,200 client sites/~7,000 employees), so product and its producing processes moved together at closing. gap_56=1: the deal combined two operating process bases into one, but T6 leadership was drawn \"primarily from SourceHOV's management\" and Novitex's pre-closing Executive Chairman/CEO Visentin does not appear on the post-closing roster, indicating processes were consolidated without coherent alignment of the running organization/people. gap_mitigated=no: the proxy identifies post-closing consolidation of shared services and cost synergies \"rather than a pre-closing transitional-services or shared-services agreement,\" so no TSA absorbed the mismatch at closing. T1=replace reflects the SPAC shell's controlling intent being displaced by the HGM Group's ~59.5% change of control with Quinpario directors/officers resigning."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction combined two whole operating businesses (SourceHOV and Novitex) into a single entity, so their products (T4) and processes (T5) crossed together, meaning no gap_45. However, the combined company's management was drawn primarily from SourceHOV, and Novitex's CEO did not transition to the combined company's executive roster, creating a structural mismatch between the transferred Novitex operations (T5) and its pre-closing leadership (T6), resulting in gap_56. No transitional services agreement was identified to mitigate this."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that both target businesses’ customer-facing platforms crossed into the combined company as indirect subsidiaries, while SourceHOV’s approximately 120 delivery centers and 16,000 employees and Novitex’s operations across approximately 1,200 client sites and 7,000 employees accompanied them. It further summarizes that the product platforms and headcount crossed intact, so no closing-stage product/process or process/organization mismatch is documented; the planned post-closing consolidation of IT, operations, facilities, and shared services does not itself establish a gap at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=0: both targets' customer-facing product platforms crossed intact as indirect subsidiaries together with their operating footprints (SourceHOV's ~120 delivery centers/~16,000 employees; Novitex's ~1,200 client sites/~7,000 employees), so product and its producing processes moved together at closing. gap_56=1: the deal combined two operating process bases into one, but T6 leadership was drawn \\\"primarily from SourceHOV's management\\\" and Novitex's pre-closing Executive Chairman/CEO Visentin does not appear on the post-closing roster, indicating processes were consolidated without coherent alignment of the running organization/people. gap_mitigated=no: the proxy identifies post-closing consolidation of shared services and cost synergies \\\"rather than a pre-closing transitional-services or shared-services agreement,\\\" so no TSA absorbed the mismatch at closing. T1=replace reflects the SPAC shell's controlling intent being displaced by the HGM Group's ~59.5% change of control with Quinpario directors/officers resigning.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"N-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"N-1\",\n\"sigma_T5\": \"N-1\",\n\"sigma_T6\": \"N-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction combined two whole operating businesses (SourceHOV and Novitex) into a single entity, so their products (T4) and processes (T5) crossed together, meaning no gap_45. However, the combined company's management was drawn primarily from SourceHOV, and Novitex's CEO did not transition to the combined company's executive roster, creating a structural mismatch between the transferred Novitex operations (T5) and its pre-closing leadership (T6), resulting in gap_56. No transitional services agreement was identified to mitigate this.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that both target businesses’ customer-facing platforms crossed into the combined company as indirect subsidiaries, while SourceHOV’s approximately 120 delivery centers and 16,000 employees and Novitex’s operations across approximately 1,200 client sites and 7,000 employees accompanied them. It further summarizes that the product platforms and headcount crossed intact, so no closing-stage product/process or process/organization mismatch is documented; the planned post-closing consolidation of IT, operations, facilities, and shared services does not itself establish a gap at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P032",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 = 0: the slice states the customer-facing frozen-potato products crossed alongside their producing/delivering processes — the manufacturing facilities, warehouses/distribution, R&D facility, 20,000+ acres of farmland, and grower/supply agreements all transferred with the product on an \"as is, where is\" basis. gap_56 = 0: the operational processes transferred together with the people who run them — ~6,400 employees, the employee matters agreement assigning employment/benefit liabilities to Lamb Weston, and operating-management continuity (CEO Werner, Executive Chairman McLevish). The only layer not transferred intact was ConAgra's centralized corporate/administrative services substrate (bridged by a ≤18-month TSA), which sits above T5/T6 rather than creating a product-process or process-people mismatch at closing. T3 coded swap given transfer into a newly created Delaware corporation as the independent legal vehicle."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice explicitly states that the producing/delivering processes crossed WITH the product, meaning there is no structural mismatch between T4 and T5. Furthermore, the people and organization crossed WITH the processes, meaning there is no structural mismatch between T5 and T6."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the slice states producing/delivering processes crossed WITH the product: manufacturing facilities, warehouses/distribution, R&D, farmland, and grower/supply agreements all transferred under the separation agreement alongside the frozen-potato product lines. gap_56 is 0 because people/organization likewise crossed WITH the processes: ~6,400 business employees and their employment/compensation/benefit liabilities moved under the employee matters agreement, with designated operating-management continuity (CEO Werner). The only non-transferred layer was ConAgra’s centralized corporate/administrative services, which is outside the T4–T6 operating chain and was bridged by a TSA; no product-vs-process or process-vs-organization structural mismatch existed at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45 = 0: the slice states the customer-facing frozen-potato products crossed alongside their producing/delivering processes \\u2014 the manufacturing facilities, warehouses/distribution, R&D facility, 20,000+ acres of farmland, and grower/supply agreements all transferred with the product on an \\\"as is, where is\\\" basis. gap_56 = 0: the operational processes transferred together with the people who run them \\u2014 ~6,400 employees, the employee matters agreement assigning employment/benefit liabilities to Lamb Weston, and operating-management continuity (CEO Werner, Executive Chairman McLevish). The only layer not transferred intact was ConAgra's centralized corporate/administrative services substrate (bridged by a \\u226418-month TSA), which sits above T5/T6 rather than creating a product-process or process-people mismatch at closing. T3 coded swap given transfer into a newly created Delaware corporation as the independent legal vehicle.\"}",
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"subset\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The slice explicitly states that the producing/delivering processes crossed WITH the product, meaning there is no structural mismatch between T4 and T5. Furthermore, the people and organization crossed WITH the processes, meaning there is no structural mismatch between T5 and T6.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the slice states producing/delivering processes crossed WITH the product: manufacturing facilities, warehouses/distribution, R&D, farmland, and grower/supply agreements all transferred under the separation agreement alongside the frozen-potato product lines. gap_56 is 0 because people/organization likewise crossed WITH the processes: ~6,400 business employees and their employment/compensation/benefit liabilities moved under the employee matters agreement, with designated operating-management continuity (CEO Werner). The only non-transferred layer was ConAgra’s centralized corporate/administrative services, which is outside the T4–T6 operating chain and was bridged by a TSA; no product-vs-process or process-vs-organization structural mismatch existed at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

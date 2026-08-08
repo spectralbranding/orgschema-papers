@@ -1,0 +1,58 @@
+{
+  "case_id": "P102",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "uncertain",
+      "t2_model": "0",
+      "performance_metric": "per-share NAV fell $10.08 → $9.37 → $8.65 (below $10.00 offering price); net income $79.4M (2017) → $37.3M (2018)",
+      "rationale": "The slice documents a passive, externally-advised REIT with no paid employees that maintained a large, stable, well-leased portfolio (890 properties, 96.2% leased) across the window; no product/process interface disruption is recorded, so p4=0. Likewise, no fracture between operations and people/management/culture is documented — the entity continued to rely on its advisor for day-to-day management with no integration breakdown described, so p5=0. The February 2018 change of control of the external advisor to CIM is recorded as an event without any documented operational or organizational rupture. NAV declined below offering price, but this is a performance scalar, not evidence of a specific pathway or business-model incompatibility."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "NAV declined to $8.65 per share by 2018",
+      "rationale": "The slice reports the company maintained a large portfolio (890 properties, 96.2% leased) and continued to operate with no paid employees, relying on its external advisor. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) during the 2016-2018 window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "NAV declined $10.08→$8.65; 890 properties retained",
+      "rationale": "The slice documents continued large-scale portfolio operation (890 properties, 26.5M sq ft, 96.2% leased) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. On the process/organization interface, the company continued to operate without paid employees via its external advisor after CIM’s Feb 2018 acquisition of CCO Group, with no documented fracture between operations and organization/culture, so p5_pathway is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"0\", \"performance_metric\": \"per-share NAV fell $10.08 \\u2192 $9.37 \\u2192 $8.65 (below $10.00 offering price); net income $79.4M (2017) \\u2192 $37.3M (2018)\", \"rationale\": \"The slice documents a passive, externally-advised REIT with no paid employees that maintained a large, stable, well-leased portfolio (890 properties, 96.2% leased) across the window; no product/process interface disruption is recorded, so p4=0. Likewise, no fracture between operations and people/management/culture is documented \\u2014 the entity continued to rely on its advisor for day-to-day management with no integration breakdown described, so p5=0. The February 2018 change of control of the external advisor to CIM is recorded as an event without any documented operational or organizational rupture. NAV declined below offering price, but this is a performance scalar, not evidence of a specific pathway or business-model incompatibility.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"NAV declined to $8.65 per share by 2018\",\n  \"rationale\": \"The slice reports the company maintained a large portfolio (890 properties, 96.2% leased) and continued to operate with no paid employees, relying on its external advisor. There is no documented evidence of product/process disruption (p4) or process/organization fracture (p5) during the 2016-2018 window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"NAV declined $10.08→$8.65; 890 properties retained\",\n  \"rationale\": \"The slice documents continued large-scale portfolio operation (890 properties, 26.5M sq ft, 96.2% leased) with no realized product/process misalignment or product-line/operations incoherence, so p4_pathway is 0. On the process/organization interface, the company continued to operate without paid employees via its external advisor after CIM’s Feb 2018 acquisition of CCO Group, with no documented fracture between operations and organization/culture, so p5_pathway is 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

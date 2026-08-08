@@ -1,0 +1,58 @@
+{
+  "case_id": "P299",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "deregistered in August 2020 following acquisition of remaining shares",
+      "rationale": "The evidence slice shows that TerraForm Power continued to operate, grow revenues, and make acquisitions through 2019 before Brookfield acquired the remaining public shares in 2020. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the post-deal period."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Class A deregistered Aug 2020 after Brookfield buyout; rev $610M→$941M with continued losses",
+      "rationale": "The slice documents continued operations through FY2019 with rising revenues ($610.5M to $941.2M), further renewable-asset acquisitions (Saeta 2018; WGL and X-Elio 2019), and no goodwill impairment on the Saeta balance, with no mention of product/process misalignment. Process/organization fracture is likewise undocumented: the Brookfield sponsor management-fee arrangement remained in the FY2019 Adjusted EBITDA reconciliation, and the entity progressed to a 2020 Reorganization Agreement and Form 15-12B deregistration without any cited operations-vs-organization breakdown."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Revenue grew from $610.5 million in 2017 to $941.2 million in 2019'}",
+      "rationale": "{'type': 'string', 'enum': 'The realized record documents continued renewable-asset acquisitions and revenue growth through 2019, with no reported product-line or operating-process incoherence; therefore p4 is 0. It also reports that the sponsor management-fee arrangement remained in place and does not document operational integration breaking against management, personnel, or culture, so p5 is 0. Public reporting ended in August 2020 following the successor merger and deregistration.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"deregistered in August 2020 following acquisition of remaining shares\",\n\"rationale\": \"The evidence slice shows that TerraForm Power continued to operate, grow revenues, and make acquisitions through 2019 before Brookfield acquired the remaining public shares in 2020. There is no documented evidence of product/process disruption (p4_pathway) or process/organization fracture (p5_pathway) in the post-deal period.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Class A deregistered Aug 2020 after Brookfield buyout; rev $610M→$941M with continued losses\",\n  \"rationale\": \"The slice documents continued operations through FY2019 with rising revenues ($610.5M to $941.2M), further renewable-asset acquisitions (Saeta 2018; WGL and X-Elio 2019), and no goodwill impairment on the Saeta balance, with no mention of product/process misalignment. Process/organization fracture is likewise undocumented: the Brookfield sponsor management-fee arrangement remained in the FY2019 Adjusted EBITDA reconciliation, and the entity progressed to a 2020 Reorganization Agreement and Form 15-12B deregistration without any cited operations-vs-organization breakdown.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Revenue grew from $610.5 million in 2017 to $941.2 million in 2019\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The realized record documents continued renewable-asset acquisitions and revenue growth through 2019, with no reported product-line or operating-process incoherence; therefore p4 is 0. It also reports that the sponsor management-fee arrangement remained in place and does not document operational integration breaking against management, personnel, or culture, so p5 is 0. Public reporting ended in August 2020 following the successor merger and deregistration.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

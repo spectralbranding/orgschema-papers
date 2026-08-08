@@ -1,0 +1,85 @@
+{
+  "case_id": "P333",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45 = 0: This is a whole-company all-stock absorption in which FCB merges into Synovus and FCB Bank merges into Synovus Bank; the customer-facing banking product and its producing operations moved together as one integrated combination rather than product crossing without its processes. The bank-level (operational) merger was left to a later-executed instrument (\"in a form to be mutually agreed upon\"), and the filing flags forward-looking \"facilities and systems consolidation costs\" — indicating process consolidation was re-engineered/deferred rather than complete at signing, but not decoupled from the product it delivers. gap_56 = 1: the operational/systems consolidation was set to occur while the people/organization tier was structurally disrupted — named executives had employment agreements terminated at the effective time with only two entering new Synovus agreements — creating a process-vs-organization mismatch at closing; this was partially absorbed via the one-year compensation/benefit continuity commitments, severance protection, and retention agreements (gap_mitigated = yes)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the deal structure transfers FCB’s customer banking franchise together with the bank-level operating vehicle: FCB Bank is to merge into Synovus Bank (surviving bank), so product and the processes that produce/deliver it are aligned to cross via the same bank merger rather than product moving alone [SRC: DEFM14A §1.13; Structural summary]. gap_56=0 because operational transfer is paired at closing with explicit people/organization provisions—one-year base-pay, incentive, benefits and severance continuity for continuing FCB employees, plus negotiated new Synovus employment agreements for key executives Ellert and Baiter—so processes are not structured to move without the organization that runs them [SRC: DEFM14A Employee Benefit Matters; Interests of FCB Directors and Executive Officers]."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "partial",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "The whole-company merger transferred FCB’s customer-facing business into Synovus, but the bank-level merger was left to a separate, later-executed agreement, while facilities and systems consolidation and integration of differing business models remained future work; this documents a product-process mismatch at closing. Continuing-employee compensation and benefit commitments, severance protections, and new Synovus agreements for selected executives show that people arrangements accompanied the operational transition, and the slice does not document a distinct process-organization structural gap. No transitional-services or operating agreement allocating the delayed operational substrate is identified."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45 = 0: This is a whole-company all-stock absorption in which FCB merges into Synovus and FCB Bank merges into Synovus Bank; the customer-facing banking product and its producing operations moved together as one integrated combination rather than product crossing without its processes. The bank-level (operational) merger was left to a later-executed instrument (\\\"in a form to be mutually agreed upon\\\"), and the filing flags forward-looking \\\"facilities and systems consolidation costs\\\" \\u2014 indicating process consolidation was re-engineered/deferred rather than complete at signing, but not decoupled from the product it delivers. gap_56 = 1: the operational/systems consolidation was set to occur while the people/organization tier was structurally disrupted \\u2014 named executives had employment agreements terminated at the effective time with only two entering new Synovus agreements \\u2014 creating a process-vs-organization mismatch at closing; this was partially absorbed via the one-year compensation/benefit continuity commitments, severance protection, and retention agreements (gap_mitigated = yes).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the deal structure transfers FCB’s customer banking franchise together with the bank-level operating vehicle: FCB Bank is to merge into Synovus Bank (surviving bank), so product and the processes that produce/deliver it are aligned to cross via the same bank merger rather than product moving alone [SRC: DEFM14A §1.13; Structural summary]. gap_56=0 because operational transfer is paired at closing with explicit people/organization provisions—one-year base-pay, incentive, benefits and severance continuity for continuing FCB employees, plus negotiated new Synovus employment agreements for key executives Ellert and Baiter—so processes are not structured to move without the organization that runs them [SRC: DEFM14A Employee Benefit Matters; Interests of FCB Directors and Executive Officers].\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"partial\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The whole-company merger transferred FCB’s customer-facing business into Synovus, but the bank-level merger was left to a separate, later-executed agreement, while facilities and systems consolidation and integration of differing business models remained future work; this documents a product-process mismatch at closing. Continuing-employee compensation and benefit commitments, severance protections, and new Synovus agreements for selected executives show that people arrangements accompanied the operational transition, and the slice does not document a distinct process-organization structural gap. No transitional-services or operating agreement allocating the delayed operational substrate is identified.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "N-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": true
+  },
+  "n_flags": 1
+}

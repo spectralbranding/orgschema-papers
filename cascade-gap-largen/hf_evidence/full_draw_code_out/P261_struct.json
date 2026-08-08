@@ -1,0 +1,85 @@
+{
+  "case_id": "P261",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This was structured as a whole-company merger in which Scripps continued as a wholly-owned surviving subsidiary of Discovery, so the customer-facing product tier (HGTV, Food Network, Travel Channel and related brands, T4) crossed the ownership boundary together with Scripps' entire operating entity and processes (T5) — product and processes moved together as one intact company, so gap_45 = 0. Likewise the operating/people tier (T6) transferred coherently alongside the processes: Discovery agreed to honor existing Scripps employment agreements, severance plans, and a fixed through-2018 compensation-continuation period with prior-service crediting, and only the top board and CEO were replaced, so processes did not transfer stripped of the organization that runs them (gap_56 = 0). Because no structural gap was coded, gap_mitigated is NA; the continuity mechanisms ran through Discovery honoring pre-existing arrangements rather than a standalone transition-services agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company merger in which Scripps survived as a wholly-owned Discovery subsidiary, so the customer-facing lifestyle brands (HGTV, Food Network, Travel Channel and related portfolio) and the operating processes that produce them crossed the ownership boundary together; gap_45 is therefore 0. Continuity of the people tier below the replaced board/CEO was contractually provided at closing (Discovery honoring existing employment agreements, severance plans, a through-2018 compensation continuation period, and service crediting), so processes did not transfer without an aligned organization substrate and gap_56 is 0; no TSA was used because the structure was not a carve-out."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The whole-company merger made Scripps a wholly owned Discovery subsidiary, carrying its lifestyle-network portfolio across the boundary rather than separating the customer-facing brands from their operating substrate (SEC accession 0001193125-18-072063; 0001193125-17-314122). Although Scripps' board and Chairman/CEO were replaced, Discovery agreed to honor existing employment, severance, and retention arrangements and provided compensation, benefits, service-credit, and severance continuity for continuing employees, so no closing-structure process-versus-organization gap is documented (SEC accession 0001193125-17-314122; 0001193125-18-072063)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This was structured as a whole-company merger in which Scripps continued as a wholly-owned surviving subsidiary of Discovery, so the customer-facing product tier (HGTV, Food Network, Travel Channel and related brands, T4) crossed the ownership boundary together with Scripps' entire operating entity and processes (T5) \\u2014 product and processes moved together as one intact company, so gap_45 = 0. Likewise the operating/people tier (T6) transferred coherently alongside the processes: Discovery agreed to honor existing Scripps employment agreements, severance plans, and a fixed through-2018 compensation-continuation period with prior-service crediting, and only the top board and CEO were replaced, so processes did not transfer stripped of the organization that runs them (gap_56 = 0). Because no structural gap was coded, gap_mitigated is NA; the continuity mechanisms ran through Discovery honoring pre-existing arrangements rather than a standalone transition-services agreement.\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The deal was a whole-company merger in which Scripps survived as a wholly-owned Discovery subsidiary, so the customer-facing lifestyle brands (HGTV, Food Network, Travel Channel and related portfolio) and the operating processes that produce them crossed the ownership boundary together; gap_45 is therefore 0. Continuity of the people tier below the replaced board/CEO was contractually provided at closing (Discovery honoring existing employment agreements, severance plans, a through-2018 compensation continuation period, and service crediting), so processes did not transfer without an aligned organization substrate and gap_56 is 0; no TSA was used because the structure was not a carve-out.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The whole-company merger made Scripps a wholly owned Discovery subsidiary, carrying its lifestyle-network portfolio across the boundary rather than separating the customer-facing brands from their operating substrate (SEC accession 0001193125-18-072063; 0001193125-17-314122). Although Scripps' board and Chairman/CEO were replaced, Discovery agreed to honor existing employment, severance, and retention arrangements and provided compensation, benefits, service-credit, and severance continuity for continuing employees, so no closing-structure process-versus-organization gap is documented (SEC accession 0001193125-17-314122; 0001193125-18-072063).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

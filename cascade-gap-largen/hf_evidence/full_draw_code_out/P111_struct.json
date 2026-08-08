@@ -1,0 +1,85 @@
+{
+  "case_id": "P111",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The registrant acquired fee title to real estate and in-place net leases (T4), but the asset management, property management, and leasing processes (T5) and personnel (T6) did not transfer; they were provided by affiliated Cole entities under advisory and property-management agreements. This creates a structural gap between the owned assets (T4) and the unowned processes/people (T5/T6), which was mitigated at closing by the advisory and property management agreements."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "N-1",
+      "sigma_T3": "null",
+      "sigma_T4": "N-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1 because the slice states that fee title to the real estate together with the in-place net leases crossed into the registrant while operating tenants and their businesses did not change, and asset-management/property-management processes were not owned by the registrant. gap_56=0 because those same processes and the operating personnel both remained outside the registrant in the sponsor/affiliates and were accessed together under the advisory and property-management agreements; neither tier transferred as owned substrate. gap_mitigated=yes because the slice documents that stack of affiliated advisory and property-management/leasing agreements as the closing-time contractual bridge."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "read-only",
+      "sigma_T6": "read-only",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The slice states that fee title and in-place net leases crossed into the registrant, while operating tenants remained and acquisition, asset-management, and property-management/leasing processes were provided by affiliated entities rather than transferred into the registrant. This documents a product-versus-process ownership mismatch at closing, but the advisory and property-management/leasing agreements contractually bridged that gap. No T5-T6 gap is documented because both the processes and the personnel performing them remained together in the sponsor organization and were supplied under those agreements."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"continue\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"read-only\",\n\"sigma_T6\": \"read-only\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The registrant acquired fee title to real estate and in-place net leases (T4), but the asset management, property management, and leasing processes (T5) and personnel (T6) did not transfer; they were provided by affiliated Cole entities under advisory and property-management agreements. This creates a structural gap between the owned assets (T4) and the unowned processes/people (T5/T6), which was mitigated at closing by the advisory and property management agreements.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=1 because the slice states that fee title to the real estate together with the in-place net leases crossed into the registrant while operating tenants and their businesses did not change, and asset-management/property-management processes were not owned by the registrant. gap_56=0 because those same processes and the operating personnel both remained outside the registrant in the sponsor/affiliates and were accessed together under the advisory and property-management agreements; neither tier transferred as owned substrate. gap_mitigated=yes because the slice documents that stack of affiliated advisory and property-management/leasing agreements as the closing-time contractual bridge.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"read-only\",\n  \"sigma_T6\": \"read-only\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The slice states that fee title and in-place net leases crossed into the registrant, while operating tenants remained and acquisition, asset-management, and property-management/leasing processes were provided by affiliated entities rather than transferred into the registrant. This documents a product-versus-process ownership mismatch at closing, but the advisory and property-management/leasing agreements contractually bridged that gap. No T5-T6 gap is documented because both the processes and the personnel performing them remained together in the sponsor organization and were supplied under those agreements.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "null",
+    "sigma_T4": "1-1",
+    "sigma_T5": "read-only",
+    "sigma_T6": "read-only",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

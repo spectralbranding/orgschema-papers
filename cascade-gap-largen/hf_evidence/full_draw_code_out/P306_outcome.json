@@ -1,0 +1,58 @@
+{
+  "case_id": "P306",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The entity ceased independent public reporting in mid-2019 (roughly 1.5 years post-closing) after being acquired by FIS, meaning there is no independent public record at the 3-5 year horizon. While the FY2018 10-K mentions ongoing integration challenges, the lack of data at the 3-5 year mark makes all pathways and performance metrics uncertain."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired by FIS ~18 mo post-close; independent reporting ceased",
+      "rationale": "The FY2018 10-K only records that integration of departments, systems, business units, operating procedures and IT ‘continue to present certain challenges’ and that synergies might not be realized—generic, prospective risk language, not a documented realized product/process (p4) failure. The same passages do not establish a realized operations-vs-organization fracture (p5); they note ongoing integration spend and unresolved challenges without evidence that process integration broke against people/management/culture. No independent public record exists past mid-2019 (~1.5 years post-close), so neither pathway is documented as a realized 3–5-year disruption."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string'}",
+      "rationale": "{'type': 'string'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"uncertain\",\n\"p5_pathway\": \"uncertain\",\n\"t1_archetype\": \"uncertain\",\n\"t2_model\": \"uncertain\",\n\"performance_metric\": \"not documented\",\n\"rationale\": \"The entity ceased independent public reporting in mid-2019 (roughly 1.5 years post-closing) after being acquired by FIS, meaning there is no independent public record at the 3-5 year horizon. While the FY2018 10-K mentions ongoing integration challenges, the lack of data at the 3-5 year mark makes all pathways and performance metrics uncertain.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired by FIS ~18 mo post-close; independent reporting ceased\",\n  \"rationale\": \"The FY2018 10-K only records that integration of departments, systems, business units, operating procedures and IT ‘continue to present certain challenges’ and that synergies might not be realized—generic, prospective risk language, not a documented realized product/process (p4) failure. The same passages do not establish a realized operations-vs-organization fracture (p5); they note ongoing integration spend and unresolved challenges without evidence that process integration broke against people/management/culture. No independent public record exists past mid-2019 (~1.5 years post-close), so neither pathway is documented as a realized 3–5-year disruption.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": [\n      \"uncertain\"\n    ]\n  },\n  \"performance_metric\": {\n    \"type\": \"string\"\n  },\n  \"rationale\": {\n    \"type\": \"string\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

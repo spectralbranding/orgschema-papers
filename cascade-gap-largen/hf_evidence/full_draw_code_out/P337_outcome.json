@@ -1,0 +1,58 @@
+{
+  "case_id": "P337",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "deregistered post-merger; no standalone trajectory (single-segment consolidation into Veritex)",
+      "rationale": "The slice documents that Green Bancorp deregistered (Form 25-NSE 2018-12-31; Form 15-12B 2019-01-10) and filed no further periodic reports, and that acquirer Veritex reports a single interrelated segment with no separate line-item or business-line disclosure isolating the former Green Bank business. Consequently there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5) — the only integration-related material located was pre-closing forward-looking risk boilerplate marked [UNVERIFIED]. With no documented post-closing trajectory for the acquired business, both interface pathways are coded uncertain rather than 0, consistent with the slice's own no-record determination."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice indicates that Green Bancorp deregistered and Veritex Holdings operates as a single reportable segment, providing no separate financial or operational disclosure for the acquired business. There is no documented evidence of product/process disruption or process/organization fracture in the post-deal period."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that general search located only pre-closing forward-looking integration-risk language and that 'no such documented outcome was retrieved from a primary source' for post-closing integration specific to the former Green business. Veritex's FY2021 10-K presents a single interrelated community-banking segment with no separate isolation of Green and no realized product/process or process/organization disruption is documented; absence of documented disruption codes p4_pathway and p5_pathway as 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"deregistered post-merger; no standalone trajectory (single-segment consolidation into Veritex)\", \"rationale\": \"The slice documents that Green Bancorp deregistered (Form 25-NSE 2018-12-31; Form 15-12B 2019-01-10) and filed no further periodic reports, and that acquirer Veritex reports a single interrelated segment with no separate line-item or business-line disclosure isolating the former Green Bank business. Consequently there is no realized-outcome evidence of product/process disruption (p4) or process/organization fracture (p5) \\u2014 the only integration-related material located was pre-closing forward-looking risk boilerplate marked [UNVERIFIED]. With no documented post-closing trajectory for the acquired business, both interface pathways are coded uncertain rather than 0, consistent with the slice's own no-record determination.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice indicates that Green Bancorp deregistered and Veritex Holdings operates as a single reportable segment, providing no separate financial or operational disclosure for the acquired business. There is no documented evidence of product/process disruption or process/organization fracture in the post-deal period.\"",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that general search located only pre-closing forward-looking integration-risk language and that 'no such documented outcome was retrieved from a primary source' for post-closing integration specific to the former Green business. Veritex's FY2021 10-K presents a single interrelated community-banking segment with no separate isolation of Green and no realized product/process or process/organization disruption is documented; absence of documented disruption codes p4_pathway and p5_pathway as 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

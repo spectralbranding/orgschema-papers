@@ -1,0 +1,85 @@
+{
+  "case_id": "P100",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The drawn accession (8-K Item 7.01) announces a merger whereby the entire TPG-controlled Nexeo distribution platform is to be acquired whole by WL Ross — the customer-facing asset (~23,000 products, ~1,300 suppliers, ~27,500 customers) is delivered through the same company's hub-and-spoke logistics network and value-added services (blending, re-packaging, testing) run by ~2,450 employees, all held within one integrated LLC holding structure. Because the product, the processes that deliver it, and the people who run them are all part of the same acquired operating entity moving together across the boundary, there is no documented product-vs-process split (gap_45=0) and no process-vs-organization split (gap_56=0). Controlling intent is coded replace: TPG (99.5% owner) exits and WL Ross is installed as the new controlling principal per the merger announcement. The March 31, 2011 Transition Services Agreement pertains to the earlier Ashland carve-out, not the closing-era WL Ross transaction, so gap_mitigated is NA given no gap coded."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction is the acquisition of Nexeo Solutions (a TPG-controlled distribution platform) by WL Ross Holding Corp. The entire business, including its products (T4), hub-and-spoke distribution operations (T5), and 2,450 employees (T6), is being acquired as a whole. There is no evidence of a structural mismatch between the product and process layers, or between the process and organization layers at the closing of this WL Ross acquisition."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The March 21, 2016 8-K announces an Agreement and Plan of Merger under which the entire Nexeo Solutions platform is to be acquired by WL Ross; the contemporaneous 10-K describes the customer-facing distribution asset (approx. 23,000 products to 27,500 customers), the hub-and-spoke operating processes and value-added services, and the approx. 2,450-employee organization as integrated components of that single acquired registrant. No closing-structure evidence separates the product layer from its delivery processes or the processes from the people/organization that run them, so neither gap_45 nor gap_56 is present. The Ashland Transition Services Agreement cited in the slice pertains only to the 2011 carve-out, not to the WL Ross acquisition boundary."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The drawn accession (8-K Item 7.01) announces a merger whereby the entire TPG-controlled Nexeo distribution platform is to be acquired whole by WL Ross \\u2014 the customer-facing asset (~23,000 products, ~1,300 suppliers, ~27,500 customers) is delivered through the same company's hub-and-spoke logistics network and value-added services (blending, re-packaging, testing) run by ~2,450 employees, all held within one integrated LLC holding structure. Because the product, the processes that deliver it, and the people who run them are all part of the same acquired operating entity moving together across the boundary, there is no documented product-vs-process split (gap_45=0) and no process-vs-organization split (gap_56=0). Controlling intent is coded replace: TPG (99.5% owner) exits and WL Ross is installed as the new controlling principal per the merger announcement. The March 31, 2011 Transition Services Agreement pertains to the earlier Ashland carve-out, not the closing-era WL Ross transaction, so gap_mitigated is NA given no gap coded.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction is the acquisition of Nexeo Solutions (a TPG-controlled distribution platform) by WL Ross Holding Corp. The entire business, including its products (T4), hub-and-spoke distribution operations (T5), and 2,450 employees (T6), is being acquired as a whole. There is no evidence of a structural mismatch between the product and process layers, or between the process and organization layers at the closing of this WL Ross acquisition.\"\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The March 21, 2016 8-K announces an Agreement and Plan of Merger under which the entire Nexeo Solutions platform is to be acquired by WL Ross; the contemporaneous 10-K describes the customer-facing distribution asset (approx. 23,000 products to 27,500 customers), the hub-and-spoke operating processes and value-added services, and the approx. 2,450-employee organization as integrated components of that single acquired registrant. No closing-structure evidence separates the product layer from its delivery processes or the processes from the people/organization that run them, so neither gap_45 nor gap_56 is present. The Ashland Transition Services Agreement cited in the slice pertains only to the 2011 carve-out, not to the WL Ross acquisition boundary.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

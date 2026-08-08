@@ -1,0 +1,85 @@
+{
+  "case_id": "P039",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing product/services operation (T4 — fabrication/product sales, contract operations, aftermarket services, plus the \"Exterran\" marks) crossed to the new company, but the operational corporate service substrate that produces/delivers it (finance, legal, tax, treasury, IT, HR, internal audit, real property, T5) \"had not been operated as a separate, stand-alone company\" and was \"historically provided centrally by the parent\" rather than transferred as an intact operating whole — a documented product-vs-process mismatch at closing. gap_mitigated=yes: that gap was contractually absorbed via the Transition Services Agreement (interim corporate services up to one year) plus the Separation/Distribution, Employee Matters, Supply and services agreements. gap_56=0: the ~7,000 employees and the processes moved together with the organization for the transferred businesses, and the Employee Matters Agreement transferred employment-related liabilities and account balances to post-distribution employers, so processes and people were aligned rather than mismatched at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replicate",
+      "sigma_T2": "1-N",
+      "sigma_T3": "1-N",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction was a spin-off where the international and fabrication businesses (T4) transferred along with their direct operations (T5), so there is no gap_45. However, the corporate functions (finance, IT, HR, etc.) were historically centralized and not transferred as an intact operating whole, creating a gap_56 (operations transferred without the full organizational substrate). This gap was mitigated by a Transition Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "partial",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the integrated customer-facing segments (international contract operations, international aftermarket services, and global fabrication/product sales) crossed together with their producing and delivering operations, so T4 and core T5 moved as one package and gap_45=0. The new company simultaneously received approximately 7,000 employees and employment-related liabilities under the Employee Matters Agreement, aligning T6 with those operations, so gap_56=0; the centralized corporate substrate that did not cross intact was separately bridged by the Transition Services Agreement and is reflected in the partial T5/T6 codes rather than as an unmitigated tier-transfer gap."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-N\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"subset\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing product/services operation (T4 \\u2014 fabrication/product sales, contract operations, aftermarket services, plus the \\\"Exterran\\\" marks) crossed to the new company, but the operational corporate service substrate that produces/delivers it (finance, legal, tax, treasury, IT, HR, internal audit, real property, T5) \\\"had not been operated as a separate, stand-alone company\\\" and was \\\"historically provided centrally by the parent\\\" rather than transferred as an intact operating whole \\u2014 a documented product-vs-process mismatch at closing. gap_mitigated=yes: that gap was contractually absorbed via the Transition Services Agreement (interim corporate services up to one year) plus the Separation/Distribution, Employee Matters, Supply and services agreements. gap_56=0: the ~7,000 employees and the processes moved together with the organization for the transferred businesses, and the Employee Matters Agreement transferred employment-related liabilities and account balances to post-distribution employers, so processes and people were aligned rather than mismatched at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replicate\",\n\"sigma_T2\": \"1-N\",\n\"sigma_T3\": \"1-N\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"partial\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction was a spin-off where the international and fabrication businesses (T4) transferred along with their direct operations (T5), so there is no gap_45. However, the corporate functions (finance, IT, HR, etc.) were historically centralized and not transferred as an intact operating whole, creating a gap_56 (operations transferred without the full organizational substrate). This gap was mitigated by a Transition Services Agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the integrated customer-facing segments (international contract operations, international aftermarket services, and global fabrication/product sales) crossed together with their producing and delivering operations, so T4 and core T5 moved as one package and gap_45=0. The new company simultaneously received approximately 7,000 employees and employment-related liabilities under the Employee Matters Agreement, aligning T6 with those operations, so gap_56=0; the centralized corporate substrate that did not cross intact was separately bridged by the Transition Services Agreement and is reflected in the partial T5/T6 codes rather than as an unmitigated tier-transfer gap.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-N",
+    "sigma_T4": "subset",
+    "sigma_T5": "partial",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": true,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

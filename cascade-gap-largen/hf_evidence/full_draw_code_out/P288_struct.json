@@ -1,0 +1,85 @@
+{
+  "case_id": "P288",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The customer-facing operating asset (T4) and its delivery processes/facilities (T5) remained aligned and in place at GCI Liberty, resulting in no gap_45. However, a gap_56 is evident because top executive leadership was replaced by Liberty executives and shared corporate functions (legal, tax, accounting) were not transferred whole, but rather bridged via a three-year services agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states that GCI's customer-facing Alaska communications products (wireless, data, video, voice, managed services under the GCI brand) remained in place together with the same delivery facilities and networks (undersea fiber-optic systems, statewide wireless network) inside GCI Liberty; Liberty contributed only equity stakes and cash, not a severed product. gap_56=0 because those operating processes stayed with GCI's existing management team, who were to continue running the operating business under new employment agreements effective at closing, so process and operating organization moved together; the services/facilities agreements bridge only shared corporate overhead (legal, tax, IR, insurance, offices), not a process-without-org mismatch at the operating layer."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states that GCI’s customer-facing Alaska communications business remained with its existing facilities, undersea fiber systems, and statewide wireless network, so the product and its delivery processes stayed together at closing. It also states that GCI’s existing operating management team was expected to continue under new employment agreements, while Liberty supplied the top leadership; therefore, no closing-time process-versus-organization mismatch is documented. Shared corporate functions were covered by three-year services and facilities-sharing agreements, but the slice does not identify their separation as a gap in the operating processes that produce or deliver GCI’s products."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"The customer-facing operating asset (T4) and its delivery processes/facilities (T5) remained aligned and in place at GCI Liberty, resulting in no gap_45. However, a gap_56 is evident because top executive leadership was replaced by Liberty executives and shared corporate functions (legal, tax, accounting) were not transferred whole, but rather bridged via a three-year services agreement.\"",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states that GCI's customer-facing Alaska communications products (wireless, data, video, voice, managed services under the GCI brand) remained in place together with the same delivery facilities and networks (undersea fiber-optic systems, statewide wireless network) inside GCI Liberty; Liberty contributed only equity stakes and cash, not a severed product. gap_56=0 because those operating processes stayed with GCI's existing management team, who were to continue running the operating business under new employment agreements effective at closing, so process and operating organization moved together; the services/facilities agreements bridge only shared corporate overhead (legal, tax, IR, insurance, offices), not a process-without-org mismatch at the operating layer.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The slice states that GCI’s customer-facing Alaska communications business remained with its existing facilities, undersea fiber systems, and statewide wireless network, so the product and its delivery processes stayed together at closing. It also states that GCI’s existing operating management team was expected to continue under new employment agreements, while Liberty supplied the top leadership; therefore, no closing-time process-versus-organization mismatch is documented. Shared corporate functions were covered by three-year services and facilities-sharing agreements, but the slice does not identify their separation as a gap in the operating processes that produce or deliver GCI’s products.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

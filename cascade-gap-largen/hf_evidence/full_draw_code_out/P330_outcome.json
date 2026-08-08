@@ -1,0 +1,58 @@
+{
+  "case_id": "P330",
+  "pass": "outcome",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy and sale of substantially all assets for $310 million",
+      "rationale": "The slice documents a massive financial failure, including a $3.2 billion net loss driven by asset impairments, followed by Chapter 11 bankruptcy and the sale of substantially all assets. However, there is no documented evidence in the slice specifically attributing this failure to product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "~$3.2bn impairment-driven loss; Chapter 11 then full asset sale for $310M ~24 mo",
+      "rationale": "The slice documents massive 2018 impairments ($3,205.1M upstream/midstream), a going-concern warning, Chapter 11 filings in 2019, and bankruptcy sales of substantially all upstream and midstream assets for $310M, followed by SEC deregistration in 2020. None of these realized-outcome lines describe product/process misalignment (p4) or operations-versus-organization/culture fracture (p5); the documented trajectory is financial distress and asset liquidation under commodity-price and indebtedness pressure, with no pathway-specific interface disruption recorded."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'substantially all operating assets sold in bankruptcy for $310 million'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice documents $3,205.1 million of impairments, a going-concern warning, Chapter 11 filings, and the bankruptcy sale of substantially all operating assets. It does not specifically document that an acquired product failed to align with operating processes, so p4 is 0. It also does not specifically attribute the operational collapse to conflict with management, personnel, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"Chapter 11 bankruptcy and sale of substantially all assets for $310 million\",\n\"rationale\": \"The slice documents a massive financial failure, including a $3.2 billion net loss driven by asset impairments, followed by Chapter 11 bankruptcy and the sale of substantially all assets. However, there is no documented evidence in the slice specifically attributing this failure to product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway).\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"~$3.2bn impairment-driven loss; Chapter 11 then full asset sale for $310M ~24 mo\",\n  \"rationale\": \"The slice documents massive 2018 impairments ($3,205.1M upstream/midstream), a going-concern warning, Chapter 11 filings in 2019, and bankruptcy sales of substantially all upstream and midstream assets for $310M, followed by SEC deregistration in 2020. None of these realized-outcome lines describe product/process misalignment (p4) or operations-versus-organization/culture fracture (p5); the documented trajectory is financial distress and asset liquidation under commodity-price and indebtedness pressure, with no pathway-specific interface disruption recorded.\"\n}",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"substantially all operating assets sold in bankruptcy for $310 million\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents $3,205.1 million of impairments, a going-concern warning, Chapter 11 filings, and the bankruptcy sale of substantially all operating assets. It does not specifically document that an acquired product failed to align with operating processes, so p4 is 0. It also does not specifically attribute the operational collapse to conflict with management, personnel, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

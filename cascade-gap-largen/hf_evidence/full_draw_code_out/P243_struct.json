@@ -1,0 +1,85 @@
+{
+  "case_id": "P243",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The structure folds Convergys directly into an existing operating subsidiary (Concentrix CVG Corporation) that the parties described as being in the same customer-engagement/BPO line of business, so the customer-facing product (T4, ~110,000 employees serving clients' customers) and the operational processes that deliver it (T5) moved together as an intact going concern rather than product-without-process — no product/process mismatch (gap_45=0). No transitional-services or carve-out agreement was identified because none was needed; the operations and their running organization crossed the boundary together into a single surviving entity, so T5 was not re-engineered apart from its people/organization (gap_56=0). T6 is coded partial because the board resigned and was replaced and the CEO's departure/separation terms were set pre-signing, indicating people-tier discontinuity at the top, but the operating workforce transferred with the business. Because both coded gaps are 0, gap_mitigated is NA."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence indicates that Convergys' entire business, including its customer-experience services (T4), operations (T5), and approximately 110,000 employees (T6), transferred completely to SYNNEX's subsidiary Concentrix CVG Corporation. No structural mismatch, carve-out, or separation of product from process or process from people was documented at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "Convergys’ customer-experience/BPO business was folded directly into SYNNEX’s existing Concentrix operating subsidiary, which already operated in the same customer-engagement services line; the stated plan contemplated cost reduction, geographic expansion, and use of both companies’ best practices, so no product-versus-process mismatch at closing is documented. Convergys was described as comprising approximately 110,000 employees, and the whole business was merged into the surviving operating subsidiary, while Convergys’ directors resigned and were replaced by that subsidiary’s directors; thus no process-versus-organization structural gap is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The structure folds Convergys directly into an existing operating subsidiary (Concentrix CVG Corporation) that the parties described as being in the same customer-engagement/BPO line of business, so the customer-facing product (T4, ~110,000 employees serving clients' customers) and the operational processes that deliver it (T5) moved together as an intact going concern rather than product-without-process \\u2014 no product/process mismatch (gap_45=0). No transitional-services or carve-out agreement was identified because none was needed; the operations and their running organization crossed the boundary together into a single surviving entity, so T5 was not re-engineered apart from its people/organization (gap_56=0). T6 is coded partial because the board resigned and was replaced and the CEO's departure/separation terms were set pre-signing, indicating people-tier discontinuity at the top, but the operating workforce transferred with the business. Because both coded gaps are 0, gap_mitigated is NA.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"N-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The evidence indicates that Convergys' entire business, including its customer-experience services (T4), operations (T5), and approximately 110,000 employees (T6), transferred completely to SYNNEX's subsidiary Concentrix CVG Corporation. No structural mismatch, carve-out, or separation of product from process or process from people was documented at closing.\"\n\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"Convergys’ customer-experience/BPO business was folded directly into SYNNEX’s existing Concentrix operating subsidiary, which already operated in the same customer-engagement services line; the stated plan contemplated cost reduction, geographic expansion, and use of both companies’ best practices, so no product-versus-process mismatch at closing is documented. Convergys was described as comprising approximately 110,000 employees, and the whole business was merged into the surviving operating subsidiary, while Convergys’ directors resigned and were replaced by that subsidiary’s directors; thus no process-versus-organization structural gap is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": true,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 2
+}

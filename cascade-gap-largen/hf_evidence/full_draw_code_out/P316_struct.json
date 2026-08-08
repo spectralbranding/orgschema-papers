@@ -1,0 +1,85 @@
+{
+  "case_id": "P316",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "This is an internal holding-company reorganization: the new entity's subsidiaries \"will own all of the businesses we currently own\" with no described change to how operating businesses produce or deliver products, so the customer-facing product (T4) and its operational processes (T5) moved together intact — gap_45=0. The proxy discloses continuity of board composition, executive officers, and the controlling shareholder, and no operating function is carved out or left behind, so processes (T5) and the people/organization running them (T6) transfer coherently together — gap_56=0. The only real change is the top-level publicly traded legal vehicle (T3 swap) and the creation of two share classes, with founder controlling intent expressly preserved (T1 continue)."
+    },
+    "gemini": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a holding company reorganization where all businesses, operations, and personnel transferred 1-1 to the new holding company structure. No structural gaps between product, process, or organization were documented."
+    },
+    "grok": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The proxy states New BH and its subsidiaries 'will own all of the businesses we currently own' and describes no change to how those operating businesses produce or deliver products, so T4 and T5 remained aligned with no product-vs-process mismatch at closing (gap_45=0). Board and executive officers of New BH were the same individuals as the pre-transaction Company, with no carve-out of operating functions or people, so T5 and T6 likewise moved together with no structural gap (gap_56=0); no TSA or similar bridging instrument is described because none was needed."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"This is an internal holding-company reorganization: the new entity's subsidiaries \\\"will own all of the businesses we currently own\\\" with no described change to how operating businesses produce or deliver products, so the customer-facing product (T4) and its operational processes (T5) moved together intact \\u2014 gap_45=0. The proxy discloses continuity of board composition, executive officers, and the controlling shareholder, and no operating function is carved out or left behind, so processes (T5) and the people/organization running them (T6) transfer coherently together \\u2014 gap_56=0. The only real change is the top-level publicly traded legal vehicle (T3 swap) and the creation of two share classes, with founder controlling intent expressly preserved (T1 continue).\"}",
+    "gemini": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a holding company reorganization where all businesses, operations, and personnel transferred 1-1 to the new holding company structure. No structural gaps between product, process, or organization were documented.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"continue\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The proxy states New BH and its subsidiaries 'will own all of the businesses we currently own' and describes no change to how those operating businesses produce or deliver products, so T4 and T5 remained aligned with no product-vs-process mismatch at closing (gap_45=0). Board and executive officers of New BH were the same individuals as the pre-transaction Company, with no carve-out of operating functions or people, so T5 and T6 likewise moved together with no structural gap (gap_56=0); no TSA or similar bridging instrument is described because none was needed.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "continue",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

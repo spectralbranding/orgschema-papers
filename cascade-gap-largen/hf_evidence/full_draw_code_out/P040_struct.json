@@ -1,0 +1,85 @@
+{
+  "case_id": "P040",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing publishing operation (90+ titles, ~45 websites) crossed the boundary as an assembled subsidiary, but shared operational processes that produce/deliver it (cash management, tax, treasury, IT/infrastructure) were NOT transferred as an intact operating whole — the slice states these \"corporate functions\" remained with the Parent and had to be \"establish[ed] or procure[d] separately,\" bridged only by a short-term Transition Services Agreement, evidencing a product-vs-process mismatch at closing (gap_mitigated=yes via TSA/Tax/Employee Matters agreements). gap_56=0: the ~7,900 employees and human-resources organization moved together with the business into the standalone entity (Employee Matters Agreement allocating employees/benefit plans), so the people/organization running operations transferred alongside rather than being separated from the processes."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "The slice documents that the magazine publishing business (T4) and its ~7,900 employees (T6) were transferred to Time Inc. However, the operational processes (T5) historically provided by Time Warner's corporate organization (cash management, tax, treasury, IT, HR) did not transfer whole, creating a structural gap between the transferred organization and the processes needed to run it (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=0 because the customer-facing magazine portfolio and related websites (T4) were assembled into Time Inc. together with the publishing operations that produce them, via the Internal Reorganization before distribution; no product-vs-process mismatch at closing is documented. gap_56=1 because the slice states the business was detached from Time Warner’s shared corporate service substrate (cash management, tax, treasury, IT, HR) that had historically run those processes, so those T5 functions did not transfer with the organization that performed them; the ~7,900 publishing employees moved with Time Inc. while parent corporate functions remained behind. That gap is contractually absorbed at closing by the documented short-term Transition Services Agreement (plus Tax Matters and Employee Matters Agreements) under which Time Warner would provide administrative, IT, HR, tax and treasury support while Time Inc. built internal capabilities."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"swap\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing publishing operation (90+ titles, ~45 websites) crossed the boundary as an assembled subsidiary, but shared operational processes that produce/deliver it (cash management, tax, treasury, IT/infrastructure) were NOT transferred as an intact operating whole \\u2014 the slice states these \\\"corporate functions\\\" remained with the Parent and had to be \\\"establish[ed] or procure[d] separately,\\\" bridged only by a short-term Transition Services Agreement, evidencing a product-vs-process mismatch at closing (gap_mitigated=yes via TSA/Tax/Employee Matters agreements). gap_56=0: the ~7,900 employees and human-resources organization moved together with the business into the standalone entity (Employee Matters Agreement allocating employees/benefit plans), so the people/organization running operations transferred alongside rather than being separated from the processes.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"partial\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The slice documents that the magazine publishing business (T4) and its ~7,900 employees (T6) were transferred to Time Inc. However, the operational processes (T5) historically provided by Time Warner's corporate organization (cash management, tax, treasury, IT, HR) did not transfer whole, creating a structural gap between the transferred organization and the processes needed to run it (gap_56 = 1). This gap was mitigated at closing by a Transition Services Agreement.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"partial\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"gap_45=0 because the customer-facing magazine portfolio and related websites (T4) were assembled into Time Inc. together with the publishing operations that produce them, via the Internal Reorganization before distribution; no product-vs-process mismatch at closing is documented. gap_56=1 because the slice states the business was detached from Time Warner’s shared corporate service substrate (cash management, tax, treasury, IT, HR) that had historically run those processes, so those T5 functions did not transfer with the organization that performed them; the ~7,900 publishing employees moved with Time Inc. while parent corporate functions remained behind. That gap is contractually absorbed at closing by the documented short-term Transition Services Agreement (plus Tax Matters and Employee Matters Agreements) under which Time Warner would provide administrative, IT, HR, tax and treasury support while Time Inc. built internal capabilities.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "partial",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "1",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

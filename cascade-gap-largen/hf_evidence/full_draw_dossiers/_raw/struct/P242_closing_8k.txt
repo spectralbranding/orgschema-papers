@@ -1,0 +1,216 @@
+ 
+ 8-K
+ 1
+ d581169d8k.htm
+ FORM 8-K
+
+ Form 8-K 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT
+REPORT Pursuant to Section 13 or 15(d) 
+ of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): May 29, 2018 
+ 
+ MICROSEMI CORPORATION 
+ (Exact name of registrant as specified in its charter) 
+
+ Delaware 
+ 
+ 0-8866 
+ 
+ 95-2110371 
+ 
+ (State or other jurisdiction 
+ of incorporation) 
+ 
+ (Commission 
+ File Number) 
+ 
+ (IRS Employer 
+ Identification No.) 
+
+ One Enterprise, Aliso Viejo, California 
+ 
+ 92656 
+ 
+ (Address of principal executive offices) 
+ 
+ (Zip Code) 
+ Registrant&#146;s telephone number, including area code 
+ (949) 380-6100 
+ Check the appropriate box below
+if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+
+ &#9744; 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR
+ 240.14d-2(b)) 
+
+ &#9744; 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR
+ 240.13e-4(c)) Indicate by check mark whether the registrant is an emerging growth company as
+defined in Rule 405 of the Securities Act of 1933 (&#167;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;240.12b-2 of this chapter).
+ Emerging Growth Company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or
+revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ INFORMATION TO BE INCLUDED IN THE REPORT 
+ Item 1.02. Termination of a Material Definitive Agreement. 
+ On May 29, 2018, in connection with the consummation of the Merger (as defined below), all outstanding obligations under the senior secured credit
+agreement of Microsemi Corporation, a Delaware corporation (the &#147;Company&#148;), dated as of January 15, 2016 (as amended, the &#147;Credit Agreement&#148;), with Morgan Stanley Senior Funding, Inc., as administrative agent and collateral
+agent, the other agents party thereto and the lenders from time to time party thereto, were repaid and the Credit Agreement was terminated. Credit facilities under the Credit Agreement included a term loan A facility and a revolving facility
+maturing on January 15, 2021, and a term loan B facility maturing on January 15, 2023. As of May 25, 2018, the aggregate outstanding indebtedness under the Credit Agreement was approximately $1.742 billion, plus accrued interest.
+ The foregoing summary of the Credit Agreement does not purport to be complete and is subject to, and qualified in its entirety by, the full text of the
+Credit Agreement, a copy of which is included as Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the Securities and Exchange Commission (the &#147;Commission&#148;) on
+January 19, 2016, Exhibit 10.1 and Exhibit 10.2 to the Company&#146;s Current Report on Form 8-K as filed with the Commission on June 30, 2016, Exhibit 10.1 and Exhibit 10.2 to the Company&#146;s
+Current Report on Form 8-K as filed with the Commission on January 26, 2017, Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the
+Commission on April 27, 2017, Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the Commission on May 22, 2017, Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the Commission on June 30, 2016, Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the Commission on January 26, 2017,
+and Exhibit 10.1 to the Company&#146;s Current Report on Form 8-K as filed with the Commission on November 27, 2017. 
+ Item 2.01. Completion of Acquisition or Disposition of Assets. 
+ As previously disclosed, on March 1, 2018, the Company, Microchip Technology Incorporated, a Delaware corporation (&#147;Parent&#148;), and Maple
+Acquisition Corporation, a Delaware corporation and a wholly owned subsidiary of Parent (&#147;Merger Subsidiary&#148;), entered into an Agreement and Plan of Merger (the &#147;Merger Agreement&#148;). On May 29, 2018, pursuant to the terms and
+conditions of the Merger Agreement, Merger Subsidiary was merged with and into the Company (the &#147;Merger&#148;), with the Company surviving as a wholly-owned subsidiary of Parent (the &#147;Surviving Corporation&#148;). 
+ Pursuant to the Merger Agreement, at the effective time of the Merger (the &#147;Effective Time&#148;), each share of common stock, par value $0.20, of the
+Company (&#147;Company Stock&#148;) (other than (1) treasury stock held by the Company or shares of Company Stock held by Parent or any subsidiary of the Company or Parent, which will be cancelled without consideration and (2) shares of
+Company Stock held by stockholders, if any, who properly exercise their appraisal rights under the General Corporation Law of the State of Delaware) outstanding immediately prior to the Merger) was automatically cancelled and converted into the
+right an amount equal to $68.78 in cash, without interest (the &#147;Merger Consideration&#148;). Pursuant to the Merger Agreement, as of the Effective
+Time: 
+
+ (a) 
+ each outstanding option to purchase shares of Company Stock (other than options held by individuals subject to China State Administration of Foreign Exchange (&#147;SAFE&#148;) regulations) and stock appreciation right
+(&#147;SAR&#148;) related to Company Stock, whether vested or unvested, was assumed by Parent and became subject to the same terms and conditions as applied to the related option or SAR immediately prior to the Effective Time, except that
+(i) the number of shares of Parent&#146;s common stock subject to each assumed option or assumed SAR became equal to the product of the number of shares of Company Stock underlying such assumed option or assumed SAR as of immediately prior to
+the Effective Time multiplied by the ratio of the Merger Consideration to the average closing sales price per share of Parent&#146;s common stock over the period of ten trading days ending on the last trading day before the closing of the Merger
+(the &#147;equity award exchange ratio&#148;) and (ii) the per share exercise price of each assumed option or assumed SAR was determined by dividing the per share exercise price of the assumed option or assumed SAR immediately prior to the
+Effective Time by the equity award exchange ratio; 
+
+ (b) 
+ each award of time-based vesting stock units with respect to shares of Company Stock (&#147;RSUs&#148;) that was outstanding and vested immediately prior to the Effective Time (including those RSUs that become vested by
+their terms immediately prior to or as of the Effective Time) was canceled and converted into the right to receive an amount in cash equal to (i) the number of vested RSUs subject to the award multiplied by (ii) the Merger Consideration;
+
+ (c) 
+ each award of RSUs that was outstanding and unvested at the Effective Time (other than outstanding and unvested RSUs held by individuals subject to SAFE regulations) was assumed by Parent and converted into a number of
+restricted stock units with respect to Parent&#146;s common stock determined by multiplying the number of unvested RSUs by the equity award exchange ratio; 
+
+ (d) 
+ each award of performance-based vesting stock units with respect to shares of Company Stock (&#147;PSUs&#148;) that was outstanding immediately prior to the Effective Time became vested as to a percentage of the total
+number of shares of Company Stock subject to such award to be determined prior to the Effective Time by the compensation committee of the Company&#146;s board of directors (the &#147;Board&#148;) (which percentage was not less than 100% or greater
+than the maximum possible vesting percentage under the terms of the award) and was canceled and converted into the right to receive an amount in cash equal to (i) the number of vested PSUs subject to the award multiplied by (ii) the Merger
+Consideration; 
+
+ (e) 
+ each share of Company Stock awarded pursuant to a Company restricted stock award that was outstanding and unvested as of immediately prior to the Effective Time was cancelled and converted into the right to receive an
+amount in cash equal to the Merger Consideration, provided that the right of the award holder to receive such cash payment was subject to the same vesting conditions (including any applicable acceleration provisions provided under the terms of the
+award) as applied to the share of Company Stock to which such payment of the Merger Consideration relates; 
+
+ (f) 
+ each option to purchase shares of Company Stock held by an individual subject to SAFE regulations that was outstanding and vested at the Effective Time was canceled and converted into the right to receive an amount in
+cash equal to the product of (i) the excess, if any, of the Merger Consideration over the exercise price per share of such vested option, multiplied by (ii) the number of shares of Company Stock issuable upon the exercise in full of such
+vested option; 
+
+ (g) 
+ each option to purchase shares of Company Stock held by an individual subject to SAFE regulations that was outstanding and unvested at the Effective Time was canceled and converted into the right to receive an amount in
+cash equal to the product of (i) the excess, if any, of the Merger Consideration over the exercise price per share of such unvested option, multiplied by (ii) the number of shares of Company Stock issuable upon the exercise in full of such
+unvested option; provided that the right of the award holder to receive such cash payment was subject to the same vesting conditions (including any applicable acceleration provisions provided under the terms of the award) as applied to the option to
+which such payment of the Merger Consideration relates; and 
+
+ (h) 
+ each award of RSUs that was outstanding and unvested at the Effective Time held by an individual subject to SAFE regulations was canceled and converted into the right to receive an amount in cash equal to the product of
+(i) the number of vested RSUs subject to the award multiplied by (ii) the Merger Consideration; provided that the right of the award holder to receive such cash payment was subject to the same vesting conditions (including any applicable
+acceleration provisions provided under the terms of the award) as applied to the RSU to which such payment of the Merger Consideration relates. 
+ The aggregate value of the cash merger consideration paid to former equityholders of the Company by Parent in the Merger at the Effective Time, including for
+PSUs, vested RSUs and certain vested options, was approximately $8.2 billion, without giving effect to related transaction fees and expenses. The
+foregoing summary description of the Merger Agreement does not purport to be complete and is qualified in its entirety by reference to the terms of the Merger Agreement, a copy of which was filed as Exhibit 2.1 to the Company&#146;s Current Report
+on Form 8-K filed with the SEC on March 2, 2018, which is incorporated herein by reference. 
+ Item 3.01. Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing. 
+ On May 29, 2018 in connection with the consummation of the Merger, the Company notified The Nasdaq Stock Market LLC (&#148;Nasdaq&#148;) of its intent to
+remove the shares of Company Stock from listing on Nasdaq and requested that Nasdaq suspend trading of the Company Stock and file a delisting application with the SEC to delist and deregister the shares of Company Stock. The Company expects that, in
+accordance with the Company&#146;s request, Nasdaq will file with the SEC a Notification of Removal from Listing and/or Registration under Section 12(b) of the Securities Exchange Act of 1934, as amended (the &#147;Exchange Act&#148;), on Form
+25 to delist and deregister the shares of Company Stock. The Company also expects that trading of the Company Stock will be suspended prior to the start of trading on March 29, 2018. 
+
+ The Company intends to file with the SEC a certification on Form 15 under the Exchange Act, requesting the
+deregistration of the shares of Company Stock and the suspension of the Company&#146;s reporting obligations under Sections 13 and 15(d) of the Exchange Act. 
+ Item 3.03. Material Modification to Rights of Security Holders. 
+ At the Effective Time, each share of Company Stock outstanding, other than treasury stock held by the Company or shares of Company Stock held by Parent or any
+subsidiary of the Company or Parent, was cancelled and converted into the right to receive the Merger Consideration. The information disclosed under Item
+2.01, Item 3.01 and Item 5.01 of this Current Report on Form 8-K is incorporated by reference in this Item 3.03. 
+ Item 5.01. Changes in Control of Registrant. As a
+result of the consummation of the Merger, on March 29, 2018, a change in control of the Company occurred. As of the Effective Time, the Company became a wholly-owned subsidiary of Parent. 
+ The information disclosed under Item 2.01, Item 3.01, Item 3.03, Item 5.02 and Item 5.03 of this Current Report on Form
+ 8-K is incorporated by reference in this Item 5.01. Item 5.02. Departure of Directors or Certain
+Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. In accordance with the terms of the
+Merger Agreement, at the Effective Time, the members of Merger Subsidiary&#146;s board of directors immediately prior to the Effective Time, which consisted of Steve Sanghi, Ganesh Moorthy and J. Eric Bjornholt, became the directors of the Surviving
+Corporation as of immediately after the Effective Time. In accordance with the terms of the Merger Agreement, at the Effective Time, the executive
+officers of Merger Subsidiary immediately prior to the Effective Time, which consisted of Steve Sanghi (Chief Executive Officer), Ganesh Moorthy (President), J. Eric Bjornholt (Chief Financial Officer), Kim van Herk (Secretary) and Alan Davis
+(Assistant Secretary), became the executive officers of the Surviving Corporation as of immediately after the Effective Time. Item 5.03.
+Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year. In connection with the consummation of the Merger, the Company&#146;s
+certificate of incorporation and bylaws were amended and restated to be the certificate of incorporation and the bylaws, respectively, of Merger Subsidiary in effect immediately prior to the Effective Time. 
+ The certificate of incorporation and bylaws as so amended and restated are attached hereto as Exhibit 3.1 and Exhibit 3.2, respectively, and are incorporated
+by reference herein. Item 8.01. Other Events. 
+ On May 10, 2018, the Company sent a conditional notice of optional redemption to U.S. Bank National Association, as trustee (the &#147;Trustee&#148;) for
+distribution to the holders of Notes, electing to effect an optional redemption of all of the Company&#146;s outstanding 9.125% Senior Notes due 2023 (CUSIP No. 595137AB6) (the &#147;Notes&#148;), at a cash redemption price equal to 100% of
+principal amount plus the Applicable Premium (as defined below), together with any accrued and unpaid interest thereon to the redemption date of June 15, 2018 (such date, the &#147;Redemption Date&#148;) (such amount, the &#147;Redemption
+Amount&#148;). The Applicable Premium with respect to any Note is equal to the excess of (a) the present value on the Redemption Date of (x) 106.844% of the outstanding principal amount of such Note, plus (y) all required scheduled
+interest payments due on such Note through January 15, 2019 (excluding accrued but unpaid interest to the Redemption Date), computed using a discount rate equal to the Treasury Rate as of such Redemption Date plus 50 basis points, over
+(b) the then-outstanding principal amount of such Note. The redemption is subject to the satisfaction of the following conditions precedent (the &#147;Conditions Precedent&#148;): (i) the consummation of the Merger and (ii) the Financing
+(as such term is defined in the Merger Agreement) being obtained pursuant to the terms of the Merger Agreement. As the Conditions Precedent have been satisfied, from and after the Redemption Date, (i) interest on the Notes will cease to accrue
+in accordance with the indenture governing the Notes (the &#147;Indenture&#148;), unless the Company defaults in paying the Redemption Amount to the holders of the Notes, and (ii) 
+
+the only remaining right of the holders of the Notes will be to receive payment of the Redemption Amount. The notice of optional redemption was sent by the Trustee to the registered holders of
+the Notes on May 10, 2016 in accordance with the requirements of the Indenture. A copy of the conditional notice of redemption is attached to this Current Report on Form 8-K as Exhibit 99.1 and is
+incorporated herein by reference. On May 29, 2018, the Company satisfied and discharged the Indenture in accordance with its terms by depositing an
+amount with the Trustee sufficient to pay and discharge the Notes (including principal, Applicable Premium, and accrued and unpaid interest to the Redemption Date) in full. Upon the deposit of such money with the Trustee, the Indenture was satisfied
+and discharged and is of no further force or effect. Item 9.01 Financial Statements and Exhibits. 
+ (d) Exhibits. 
+
+ Exhibit No. 
+
+ Description 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated as of March 
+1, 2018, among Microsemi Corporation, Microchip Technology Incorporated, and Maple Acquisition Corporation (incorporated by reference to Exhibit 2.1 to the Company&#146;s Current Report on Form 8-K filed March 2,
+ 2018)* 
+
+ 3.1 
+ 
+ Amended and Restated Certificate of Incorporation 
+
+ 3.2 
+ 
+ Amended and Restated Bylaws 
+
+ 99.1 
+ 
+ Conditional Notice of Redemption, dated May 10, 2018 
+
+ * 
+ All schedules to the Merger Agreement have been omitted pursuant to Item 601(b)(2) of Regulation S-K. The Company hereby agrees to furnish supplementally a copy of any omitted
+schedule to the SEC upon request. 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned
+hereunto duly authorized. 
+
+ MICROSEMI CORPORATION 
+ (Registrant) 
+
+ Date: May 29, 2018 
+ 
+ By: 
+ 
+ /s/ J. Eric Bjornholt 
+
+ J. Eric Bjornholt Chief Financial
+Officer 
+

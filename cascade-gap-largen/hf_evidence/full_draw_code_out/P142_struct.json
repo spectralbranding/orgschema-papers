@@ -1,0 +1,85 @@
+{
+  "case_id": "P142",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "1-1",
+      "sigma_T5": "partial",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because the customer-facing businesses (retail inserts, direct/in-store marketing — T4) were acquired as \"substantially all of the assets,\" yet the operational manufacturing/service platform (T5) was expressly not integrated or aligned at closing: \"The Company intends to announce its plans for integration following the completion of the sale process, including any changes to the combined companies' manufacturing and service platform.\" gap_56=1 because operating processes and platform were deferred while workforce/organization transfer (T6) had no committed contractual terms — \"Committed contractual terms for transfer of the workforce/operating organization ... were not set out,\" with only aspirational language (\"welcoming Vertis' clients and employees\"). No transitional-services or operating agreement absorbing the shared substrate at closing is documented, so gap_mitigated=no. This is a §363 distressed-asset carve-out (T3 subset; pension/retirement obligations not assumed) under a new controlling owner (T1 replace)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the deal transferred substantially all assets comprising Vertis' customer-facing retail-insert, direct-marketing and in-store businesses together with the operating asset base; post-close deferral of manufacturing/service-platform integration plans is alignment timing, not a product-without-process transfer mismatch at closing (8-K Item 1.01; completion 8-K Item 2.01). gap_56=0 because the slice does not document processes crossing without people: the buyer expressly framed continuity and welcoming of Vertis employees, Vertis sought authority to keep paying wages through the case, and at consummation the combined company was described as employing the combined workforce across the transferred facility base; absence of a detailed APA employee-transfer section in the drawn 8-K is a disclosure limit, not a coded process-without-organization structural gap (EX-99 signing and completion releases)."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "swap",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "uncertain",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The closing transferred substantially all assets comprising Vertis' customer-facing businesses, whose stated offerings included production, logistics, digital program management, and business-process outsourcing; no closing evidence documents separation of those products from their operating processes, so gap_45 is 0. Although manufacturing and service-platform integration was deferred, this does not establish that the acquired processes were structurally separated from the organization operating them at closing. The completion release described the combined company as employing approximately 25,000 people, while the slice provides no committed workforce-transfer terms or documented process-versus-organization mismatch; under the stated conservative rule, gap_56 is therefore 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"partial\", \"sigma_T6\": \"uncertain\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1 because the customer-facing businesses (retail inserts, direct/in-store marketing \\u2014 T4) were acquired as \\\"substantially all of the assets,\\\" yet the operational manufacturing/service platform (T5) was expressly not integrated or aligned at closing: \\\"The Company intends to announce its plans for integration following the completion of the sale process, including any changes to the combined companies' manufacturing and service platform.\\\" gap_56=1 because operating processes and platform were deferred while workforce/organization transfer (T6) had no committed contractual terms \\u2014 \\\"Committed contractual terms for transfer of the workforce/operating organization ... were not set out,\\\" with only aspirational language (\\\"welcoming Vertis' clients and employees\\\"). No transitional-services or operating agreement absorbing the shared substrate at closing is documented, so gap_mitigated=no. This is a \\u00a7363 distressed-asset carve-out (T3 subset; pension/retirement obligations not assumed) under a new controlling owner (T1 replace).\"}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the deal transferred substantially all assets comprising Vertis' customer-facing retail-insert, direct-marketing and in-store businesses together with the operating asset base; post-close deferral of manufacturing/service-platform integration plans is alignment timing, not a product-without-process transfer mismatch at closing (8-K Item 1.01; completion 8-K Item 2.01). gap_56=0 because the slice does not document processes crossing without people: the buyer expressly framed continuity and welcoming of Vertis employees, Vertis sought authority to keep paying wages through the case, and at consummation the combined company was described as employing the combined workforce across the transferred facility base; absence of a detailed APA employee-transfer section in the drawn 8-K is a disclosure limit, not a coded process-without-organization structural gap (EX-99 signing and completion releases).\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"swap\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"uncertain\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The closing transferred substantially all assets comprising Vertis' customer-facing businesses, whose stated offerings included production, logistics, digital program management, and business-process outsourcing; no closing evidence documents separation of those products from their operating processes, so gap_45 is 0. Although manufacturing and service-platform integration was deferred, this does not establish that the acquired processes were structurally separated from the organization operating them at closing. The completion release described the combined company as employing approximately 25,000 people, while the slice provides no committed workforce-transfer terms or documented process-versus-organization mismatch; under the stated conservative rule, gap_56 is therefore 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "swap",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "uncertain",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

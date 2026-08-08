@@ -1,0 +1,85 @@
+{
+  "case_id": "P251",
+  "pass": "struct",
+  "coders": [
+    "gemini",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire company (products, operations, entity) was acquired via a reverse triangular merger, meaning T4 and T5 transferred together (gap_45 = 0). While T6 was handled selectively (subset), there is no documented structural mismatch or gap_56 indicating operations transferred without the necessary people to run them; rather, specific retention agreements were put in place."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states the whole company (product/asset base, corporate entity, and outstanding equity) was acquired via reverse triangular merger with no carve-out or partial-business exclusion, so Cavium’s semiconductor-processor products and the operations that produce them crossed together. gap_56=0 because the same whole-entity structure left processes inside the surviving Cavium corporation as an indirect wholly owned Marvell subsidiary; selective executive retention bonuses, two contingent offer letters, and three board designees document partial T6 continuity arrangements, not a structural detachment of processes from organization at closing. No TSA or shared-substrate operating agreement was located."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The filing states that the whole company and its semiconductor product/asset base transferred with no identified carve-out, supporting coherent transfer of the customer-facing products and their associated operations and therefore gap_45=0. By contrast, management continuity was selective: only two named executive officers had post-closing offer letters, executive retention bonuses were conditional, and three Cavium designees joined Marvell’s board rather than Cavium’s management layer transferring wholesale. This documented process-versus-organization mismatch supports gap_56=1, and no cited transitional-services or operating agreement contractually absorbed that mismatch at closing."
+    }
+  },
+  "per_model_raw": {
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The entire company (products, operations, entity) was acquired via a reverse triangular merger, meaning T4 and T5 transferred together (gap_45 = 0). While T6 was handled selectively (subset), there is no documented structural mismatch or gap_56 indicating operations transferred without the necessary people to run them; rather, specific retention agreements were put in place.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states the whole company (product/asset base, corporate entity, and outstanding equity) was acquired via reverse triangular merger with no carve-out or partial-business exclusion, so Cavium’s semiconductor-processor products and the operations that produce them crossed together. gap_56=0 because the same whole-entity structure left processes inside the surviving Cavium corporation as an indirect wholly owned Marvell subsidiary; selective executive retention bonuses, two contingent offer letters, and three board designees document partial T6 continuity arrangements, not a structural detachment of processes from organization at closing. No TSA or shared-substrate operating agreement was located.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"1\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"The filing states that the whole company and its semiconductor product/asset base transferred with no identified carve-out, supporting coherent transfer of the customer-facing products and their associated operations and therefore gap_45=0. By contrast, management continuity was selective: only two named executive officers had post-closing offer letters, executive retention bonuses were conditional, and three Cavium designees joined Marvell’s board rather than Cavium’s management layer transferring wholesale. This documented process-versus-organization mismatch supports gap_56=1, and no cited transitional-services or operating agreement contractually absorbed that mismatch at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

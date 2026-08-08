@@ -1,0 +1,58 @@
+{
+  "case_id": "P035",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired whole and deregistered ~33 months after closing; operations absorbed into acquirer (40 facilities, 18 jurisdictions), one holder of record; no separate public trajectory thereafter",
+      "rationale": "The slice documents that Pinnacle was acquired whole by Penn National on 2018-10-15, delisted and deregistered with a single holder of record, and its operations folded into the acquirer's consolidated regional-gaming portfolio, with the acquirer touting an expanded 40-facility footprint. No line documents any product/process incoherence (p4) or any operations-versus-organization/culture fracture (p5) over time; the deeper post-acquisition financial trajectory is explicitly coded uncertain due to consolidation and absence of a stand-alone public record, but that is silence, not documented disruption. Absent affirmative evidence of realized disruption on either interface, both pathways are coded 0."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired whole by Penn National Gaming on October 15, 2018",
+      "rationale": "The slice documents that Pinnacle Entertainment was acquired whole by Penn National Gaming in October 2018 and subsequently deregistered. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) during the outcome window."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "acquired whole by Penn National Oct 2018; delisted/deregistered; trajectory uncertain",
+      "rationale": "The slice documents only that Pinnacle was acquired whole by Penn National on Oct 15 2018, delisted (Form 25-NSE) and deregistered (Form 15-12B, one holder), with operations folded into the acquirer's consolidated portfolio; no product/process misalignment or operations-vs-organization fracture is described. Absence of any realized-disruption evidence across the window yields p4_pathway=0 and p5_pathway=0; deeper stand-alone financial trajectory is explicitly uncertain due to deregistration."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"acquired whole and deregistered ~33 months after closing; operations absorbed into acquirer (40 facilities, 18 jurisdictions), one holder of record; no separate public trajectory thereafter\", \"rationale\": \"The slice documents that Pinnacle was acquired whole by Penn National on 2018-10-15, delisted and deregistered with a single holder of record, and its operations folded into the acquirer's consolidated regional-gaming portfolio, with the acquirer touting an expanded 40-facility footprint. No line documents any product/process incoherence (p4) or any operations-versus-organization/culture fracture (p5) over time; the deeper post-acquisition financial trajectory is explicitly coded uncertain due to consolidation and absence of a stand-alone public record, but that is silence, not documented disruption. Absent affirmative evidence of realized disruption on either interface, both pathways are coded 0.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"acquired whole by Penn National Gaming on October 15, 2018\",\n\"rationale\": \"The slice documents that Pinnacle Entertainment was acquired whole by Penn National Gaming in October 2018 and subsequently deregistered. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) during the outcome window.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"acquired whole by Penn National Oct 2018; delisted/deregistered; trajectory uncertain\",\n  \"rationale\": \"The slice documents only that Pinnacle was acquired whole by Penn National on Oct 15 2018, delisted (Form 25-NSE) and deregistered (Form 15-12B, one holder), with operations folded into the acquirer's consolidated portfolio; no product/process misalignment or operations-vs-organization fracture is described. Absence of any realized-disruption evidence across the window yields p4_pathway=0 and p5_pathway=0; deeper stand-alone financial trajectory is explicitly uncertain due to deregistration.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

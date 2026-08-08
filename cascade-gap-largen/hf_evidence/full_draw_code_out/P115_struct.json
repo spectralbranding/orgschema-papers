@@ -1,0 +1,85 @@
+{
+  "case_id": "P115",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "continue",
+      "sigma_T2": "read-only",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "null",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1: the customer-facing brand asset (name, website, phone numbers, tradename) crossed the ownership boundary while the operational processes producing/delivering rentals did NOT transfer as a going concern — the deal conveyed only \"rights... to use the Advantage brand name, website and phone numbers\" plus an option on selected leases/concessions, and the brand was run \"using the registrant's own car-rental substrate\" with \"24 corporate Advantage brand rental locations.\" This is a documented product-vs-process structural mismatch at closing. gap_56=0: no target operational processes (T5) or workforce (T6) transferred at all (T5=null), so no T5-without-T6 mismatch exists; the filings disclose no transition-services or shared-services agreement, so the T4/T5 gap was not contractually absorbed (gap_mitigated=no)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "null",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "The transaction was an asset acquisition of the Advantage brand name, website, phone numbers, and an option to assume certain leases and concession agreements, not a going-concern purchase. The customer-facing brand (T4) and selected assets (T5) crossed, but the operational processes and people (T6) did not cross as an intact going concern, creating structural gaps (gap_45 and gap_56). No transition services agreement was documented to mitigate these gaps."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "null",
+      "sigma_T4": "1-1",
+      "sigma_T5": "terminate",
+      "sigma_T6": "terminate",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "no",
+      "rationale": "gap_45=1 because the slice states the customer-facing Advantage brand identity (name, website, phone numbers, tradename, concession agreements) crossed at closing while 'Operational processes/people did NOT cross as an intact going concern' and the brand was 'operated using the registrant's own car-rental substrate.' gap_56=0 because T5 processes likewise did not transfer or get re-engineered as an acquired package—only an option on selected leases/fixed assets/agreements was obtained—so there was no process transfer lacking organizational alignment. Filings disclose no TSA or shared-services bridge; operations were absorbed into Hertz's existing substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"continue\", \"sigma_T2\": \"read-only\", \"sigma_T3\": \"null\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"null\", \"sigma_T6\": \"null\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45=1: the customer-facing brand asset (name, website, phone numbers, tradename) crossed the ownership boundary while the operational processes producing/delivering rentals did NOT transfer as a going concern \\u2014 the deal conveyed only \\\"rights... to use the Advantage brand name, website and phone numbers\\\" plus an option on selected leases/concessions, and the brand was run \\\"using the registrant's own car-rental substrate\\\" with \\\"24 corporate Advantage brand rental locations.\\\" This is a documented product-vs-process structural mismatch at closing. gap_56=0: no target operational processes (T5) or workforce (T6) transferred at all (T5=null), so no T5-without-T6 mismatch exists; the filings disclose no transition-services or shared-services agreement, so the T4/T5 gap was not contractually absorbed (gap_mitigated=no).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"null\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"null\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"1\",\n\"gap_mitigated\": \"no\",\n\"rationale\": \"The transaction was an asset acquisition of the Advantage brand name, website, phone numbers, and an option to assume certain leases and concession agreements, not a going-concern purchase. The customer-facing brand (T4) and selected assets (T5) crossed, but the operational processes and people (T6) did not cross as an intact going concern, creating structural gaps (gap_45 and gap_56). No transition services agreement was documented to mitigate these gaps.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"null\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"terminate\",\n  \"sigma_T6\": \"terminate\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"no\",\n  \"rationale\": \"gap_45=1 because the slice states the customer-facing Advantage brand identity (name, website, phone numbers, tradename, concession agreements) crossed at closing while 'Operational processes/people did NOT cross as an intact going concern' and the brand was 'operated using the registrant's own car-rental substrate.' gap_56=0 because T5 processes likewise did not transfer or get re-engineered as an acquired package—only an option on selected leases/fixed assets/agreements was obtained—so there was no process transfer lacking organizational alignment. Filings disclose no TSA or shared-services bridge; operations were absorbed into Hertz's existing substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "null",
+    "sigma_T4": "subset",
+    "sigma_T5": "null",
+    "sigma_T6": "null",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "no"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": true,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

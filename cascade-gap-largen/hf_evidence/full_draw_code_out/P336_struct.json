@@ -1,0 +1,85 @@
+{
+  "case_id": "P336",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "swap",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "1",
+      "gap_mitigated": "no",
+      "rationale": "gap_45 is 0 because CalAtlantic's customer-facing homebuilding, mortgage, title and escrow business transferred in full together with \"all assets, liabilities and operations\" into the surviving Lennar subsidiary as a whole-company merger, so the product and its producing operations crossed the boundary together with no disclosed carve-out. gap_56 is 1 because the filing describes the operational processes being re-engineered via \"Lennar's homebuilding techniques\" and cost-saving methods applied to CalAtlantic's operations (T5 swap) while the people who ran CalAtlantic's processes did not align coherently: CalAtlantic's senior management was understood to have \"no role\" and \"should expect their employment to terminate as of the closing date,\" with only Scott Stowell added to Lennar's board and Lennar's own management continuing unchanged. gap_mitigated is no because rank-and-file benefit continuity through November 30, 2018 was guaranteed but the senior management/process-ownership gap was not documented as bridged by any transitional-services or shared-substrate operating agreement (the slice affirmatively notes no such agreement)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company merger where CalAtlantic's entire corporate structure, homebuilding operations (T4), and operational processes (T5) transferred together into a Lennar subsidiary. There is no documented structural mismatch at closing between the product and process layers (gap_45 = 0), nor between the processes and the organization/employees (T6) who transferred with them (gap_56 = 0)."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0 because the slice states CalAtlantic’s entire corporate entity—including homebuilding, mortgage, title and escrow customer-facing operations—merged into Merger Sub with ‘no disclosed carve-out or transitional-services agreement dividing the operating substrate,’ so T4 product and T5 processes crossed together. gap_56=0 because the same whole-company closing transferred operations alongside rank-and-file people under a contractual commitment to continuing CalAtlantic employee compensation and benefits through November 30, 2018; senior-management exit was disclosed but did not structurally sever processes from the operating organization at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"N-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"swap\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"1\", \"gap_mitigated\": \"no\", \"rationale\": \"gap_45 is 0 because CalAtlantic's customer-facing homebuilding, mortgage, title and escrow business transferred in full together with \\\"all assets, liabilities and operations\\\" into the surviving Lennar subsidiary as a whole-company merger, so the product and its producing operations crossed the boundary together with no disclosed carve-out. gap_56 is 1 because the filing describes the operational processes being re-engineered via \\\"Lennar's homebuilding techniques\\\" and cost-saving methods applied to CalAtlantic's operations (T5 swap) while the people who ran CalAtlantic's processes did not align coherently: CalAtlantic's senior management was understood to have \\\"no role\\\" and \\\"should expect their employment to terminate as of the closing date,\\\" with only Scott Stowell added to Lennar's board and Lennar's own management continuing unchanged. gap_mitigated is no because rank-and-file benefit continuity through November 30, 2018 was guaranteed but the senior management/process-ownership gap was not documented as bridged by any transitional-services or shared-substrate operating agreement (the slice affirmatively notes no such agreement).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The transaction was a whole-company merger where CalAtlantic's entire corporate structure, homebuilding operations (T4), and operational processes (T5) transferred together into a Lennar subsidiary. There is no documented structural mismatch at closing between the product and process layers (gap_45 = 0), nor between the processes and the organization/employees (T6) who transferred with them (gap_56 = 0).\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45=0 because the slice states CalAtlantic’s entire corporate entity—including homebuilding, mortgage, title and escrow customer-facing operations—merged into Merger Sub with ‘no disclosed carve-out or transitional-services agreement dividing the operating substrate,’ so T4 product and T5 processes crossed together. gap_56=0 because the same whole-company closing transferred operations alongside rank-and-file people under a contractual commitment to continuing CalAtlantic employee compensation and benefits through November 30, 2018; senior-management exit was disclosed but did not structurally sever processes from the operating organization at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

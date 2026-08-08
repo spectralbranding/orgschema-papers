@@ -1,0 +1,173 @@
+ 
+
+csfl-8k_20200607.htm
+
+ false 
+ 0001102266 
+
+ 0001102266 
+
+ 2020-06-07 
+ 2020-06-07 
+
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON, D.C. 20549 
+ 
+ FORM 8-K 
+ 
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): June 8, 2020 ( June 7, 2020 ) 
+ 
+ CENTERSTATE BANK CORPORATION 
+ (SOUTH STATE CORPORATION, AS SUCCESSOR BY MERGER TO CENTERSTATE BANK CORPORATION) (Exact name of Registrant as Specified in Its Charter) 
+
+ Florida 
+ 
+ 000-32017 
+ 
+ 59-3606741 
+
+ (State or Other Jurisdiction 
+ of Incorporation) 
+ 
+ (Commission File Number) 
+ 
+ (IRS Employer 
+ Identification No.) 
+
+ 1101 First Street South , Suite 202 , 
+ Winter Haven , FL 
+
+ 33880 
+
+ (Address of Principal Executive Offices) 
+
+ (Zip Code) 
+
+ Registrant';s Telephone Number, Including Area Code: (863) 293-4710 
+ Not Applicable 
+ (Former Name or Former Address, if Changed Since Last Report) 
+ 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instructions A.2. below): 
+
+ &#9744; 
+ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+
+ &#9744; 
+ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+
+ &#9744; 
+ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+
+ Securities registered pursuant to Section 12(b) of the Act: 
+
+ Title of each class 
+
+ Trading 
+ Symbol(s) 
+
+ Name of each exchange on which registered 
+
+ Common stock 
+
+ CSFL 
+
+ NASDAQ 
+
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (&#167;&#8201;230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (&#167;&#8201;240.12b-2 of this chapter). 
+ Emerging growth company &#9744; 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &#9744; 
+
+ Introduction 
+
+ This Current Report on Form 8-K is being filed in connection with the completion on June 7, 2020 (the ";Closing Date";) of the previously announced merger of equals between CenterState Bank Corporation, a Florida corporation (";CenterState";) and South State Corporation, a South Carolina corporation (";South State";), pursuant to the Agreement and Plan of Merger, dated as of January 25, 2020 (the ";Merger Agreement";), by and between South State and CenterState. 
+ Pursuant to the Merger Agreement, (i) CenterState merged with and into South State, with South State continuing as the surviving corporation (the ";Merger";), and (ii) immediately following the Merger, South State Bank, a South Carolina banking corporation and wholly owned bank subsidiary of South State (";South State Bank";), merged with and into CenterState Bank, N.A., a national banking association and wholly owned bank subsidiary of CenterState (";CenterState Bank";), with CenterState Bank continuing as the surviving bank (the ";Bank Merger";). In connection with the Bank Merger, CenterState Bank changed its name to ";South State Bank, National Association"; (hereinafter referred to as the ";Bank";). 
+ Pursuant to the Merger Agreement, at the effective time of the Merger (the ";Effective Time";), each share of common stock, par value $0.01 per share, of CenterState (";CenterState Common Stock";) issued and outstanding immediately prior to the Effective Time, other than certain shares held by South State and CenterState, was converted into the right to receive 0.3001 shares (the ";Exchange Ratio";) of common stock, par value $2.50, of South State (";South State Common Stock";). Each holder of CenterState Common Stock converted pursuant to the Merger who would otherwise have been entitled to receive a fraction of a share of South State Common Stock (after taking into account all shares held by such holder) will instead receive cash (without interest) in lieu of such fractional share in accordance with the terms of the Merger Agreement. 
+ Pursuant to the Merger Agreement, at the Effective Time, each outstanding CenterState equity award granted under CenterState';s equity compensation plans and each outstanding CenterState warrant was converted into a corresponding award or warrant with respect to South State Common Stock, with the number of shares underlying each such award or warrant (and, in the case of stock options and warrants, the applicable exercise price) adjusted based on the Exchange Ratio. Each such converted South State equity award or warrant will continue to be subject to the same terms and conditions (including vesting and exercisability or payment terms) as applied to the corresponding CenterState equity award or warrant, except that (i) each CenterState stock option will vest and be converted into a vested South State stock option, (ii) each South State stock option or warrant will remain exercisable through the remainder of the original term of the corresponding CenterState stock option or warrant and (iii) each South State time-vesting restricted stock unit award issued in respect of a CenterState performance-vesting restricted stock unit award will continue to vest based solely on continued service following the Effective Time, with the number of shares underlying such South State time-vesting restricted stock unit award determined based on actual performance levels in the case of awards granted in 2017 and 2019 and target performance levels in the case of awards granted in 2018, as of immediately prior to the Effective Time and adjusted based on the Exchange Ratio. In addition, following the Effective Time, each South State equity award issued in respect of a converted CenterState equity award will vest on a ";double-trigger"; basis upon a termination of employment by South State without ";cause"; or by the holder of such award for ";good reason"; (as such terms are defined in the applicable award agreement) within three years following the Effective Time. 
+ The foregoing description of the Merger, the Bank Merger and the Merger Agreement does not purport to be complete and is qualified in its entirety by reference to the full text of the Merger Agreement, a copy of which is filed hereto as Exhibit 2.1 and incorporated herein by reference. 
+ The total aggregate consideration payable in the Merger was approximately 37.3 million shares of South State Common Stock. The issuance of shares of South State Common Stock in connection with the Merger was registered under the Securities Act of 1933, as amended (the ";Securities Act";), pursuant to a registration statement on Form S-4 (File No. 333-237214) filed by South State with the Securities and Exchange Commission (the ";Commission";) and declared effective on April 20, 2020 (the ";Registration Statement";). The joint proxy statement/prospectus included in the Registration Statement (the ";Joint Proxy Statement/Prospectus";) contains additional information about the Merger Agreement and the transactions contemplated thereby. 
+
+ Item 1.02. 
+ 
+ Termination of a Material Definitive Agreement. 
+
+ On the Closing Date, in connection with the Merger, CenterState caused to be terminated the Loan Agreement, dated as of April 8, 2015, between CenterState and NexBank SSB, as amended (the ";Loan Agreement";). There were no loans outstanding under such agreement on the Closing Date. No termination penalty or fee was incurred in connection with the termination of the Loan Agreement. 
+
+ Item 2.01. 
+ 
+ Completion of Acquisition or Disposition of Assets. 
+
+ The information set forth in the Introduction is incorporated herein by reference. 
+
+ Item 3.01. 
+ 
+ Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard&#894; Transfer of Listing. 
+
+ In connection with the consummation of the Merger, CenterState requested that the Nasdaq Stock Market (";Nasdaq";) suspend trading of CenterState Common Stock on Nasdaq and remove CenterState Common Stock from listing on Nasdaq, in each case, prior to the opening of the market on June 8, 2020. CenterState also requested that Nasdaq file a notification of removal from listing of CenterState Common Stock on Form 25 with the Commission. 
+ CenterState intends to file Forms 15 with the SEC to request the deregistration of CenterState';s Common Stock under Section 12 of the Securities Exchange Act of 1934, as amended (the ";Exchange Act";), and the suspension of CenterState';s reporting obligations under Sections 13 and 15(d) of the Exchange Act as promptly as practicable. 
+ The information set forth in Item 2.01 is incorporated by reference into this Item 3.01. 
+
+ Item 3.03. 
+ 
+ Material Modification to Rights of Security Holders. 
+
+ The information set forth in Item 2.01, Item 3.01, Item 5.01 and Item 5.02 are incorporated by reference into this Item 3.03. 
+
+ At the Effective Time, each holder of CenterState Common Stock immediately prior to the Effective Time ceased to have any rights as a shareholder of CenterState other than the right to receive the Merger Consideration (as defined in the Merger Agreement) pursuant to the Merger Agreement. 
+
+ Item 5.01. 
+ 
+ Changes in Control of Registrant. 
+
+ The information set forth in Item 2.01, Item 3.01, Item 3.03 and Item 5.02 is incorporated by reference into this Item 5.01. 
+
+ Item 5.02. 
+ 
+ Departure of Directors or Certain Officers&#59; Election of Directors&#59; Appointment of Certain Officers&#59; Compensatory Arrangements of Certain Officers. 
+
+ As of the Effective Time, CenterState';s directors and executive officers ceased serving in such capacities. As of the Effective Time, John C. Corbett, Charles W. McPherson, Ernest S. Pinner, John H. Holcomb, III, G. Ruffner Page, Jr., William K. Pou, Jr., David G. Salyers and Joshua A. Snively, all former directors of CenterState, were appointed as directors of South State. Additionally, (i) John C. Corbett, the Chief Executive Officer of CenterState prior to the Effective Time, was appointed to serve as the Chief Executive Officer of South State, (ii) Richard Murray, IV, the Chief Executive Officer of CenterState Bank prior to the Effective Time, was appointed to serve as the President of South State, (iii) William E. Matthews, V, the Chief Financial Officer of CenterState prior to the Effective Time, was appointed to serve as the Chief Financial Officer of South State, and (iv) Stephen D. Young, the Chief Operating Officer of CenterState prior to the Effective Time, was appointed to serve as Senior Executive Vice President and Chief Strategy Officer of South State. 
+
+ Item 9.01. 
+ 
+ Financial Statements and Exhibits. 
+
+ (d) Exhibits: 
+
+ Exhibit No. 
+ 
+ Description 
+
+ 2.1 
+ 
+ Agreement and Plan of Merger, dated as of January 25, 2020, by and between CenterState Bank Corporation and South State Corporation (incorporated by reference to Exhibit 2.1 to the Company';s Current Report on Form 8-K, filed with the Commission on January 29, 2020) 
+
+ 104 
+ 
+ Cover Page Interactive Data File (formatted as inline XBRL document) 
+
+ SIGNATURES 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. 
+
+ SOUTH STATE CORPORATION, as successor by merger to CenterState Bank Corporation 
+
+ By: 
+ 
+ /s/ William E. Matthews, V 
+
+ William E. Matthews, V 
+
+ Senior Executive Vice President and 
+
+ Chief Financial Officer 
+
+ Dated: June 8, 2020 
+

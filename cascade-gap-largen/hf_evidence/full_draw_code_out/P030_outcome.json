@@ -1,0 +1,58 @@
+{
+  "case_id": "P030",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 filed 2012-07-09; net loss deepened to $730.6M (FY2012)",
+      "rationale": "p5_pathway=1: the realized record centers on the operations/organization interface — the 10-K attributes rising liabilities to labor-related legacy liabilities and states the reorganization path depended on renegotiating wage, benefit, and retiree-healthcare obligations (Bankruptcy Code Sections 1113/1114) with the UMWA, with risk of labor disruptions/work stoppages, and documents a shift in workforce and UMWA representation over the window. p4_pathway=0: no documented disruption at the product/process interface (product-line/operations incoherence); the slice describes market and labor/legacy pressures, not an inability to align an acquired product with operating processes. t1 and t2 are uncertain because the slice provides no information about controlling-intent archetype coherence or business-model reconciliation."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy filing and $730.6 million net loss in FY2012",
+      "rationale": "The slice documents severe pressure at the operations and labor interface, noting that rising labor-related legacy liabilities and the need to renegotiate UMWA wage and benefit programs drove the company into Chapter 11 bankruptcy (p5_pathway = 1). There is no documented evidence of product/process integration failure (p4_pathway = 0)."
+    },
+    "openai": {
+      "p4_pathway": "0",
+      "p5_pathway": "1",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 filing; FY2012 net loss of $730.6 million",
+      "rationale": "No realized product/process alignment failure is documented, so p4 is coded 0. For p5, the 10-K attributed rising liabilities partly to labor-related legacy costs, and the company’s path through Chapter 11 depended on changing wage, benefit, and retiree-healthcare obligations through negotiations with the UMWA. These documented labor-and-legacy pressures coincided with the company operating as a debtor-in-possession and support a realized process/organization fracture."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"1\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 filed 2012-07-09; net loss deepened to $730.6M (FY2012)\", \"rationale\": \"p5_pathway=1: the realized record centers on the operations/organization interface \\u2014 the 10-K attributes rising liabilities to labor-related legacy liabilities and states the reorganization path depended on renegotiating wage, benefit, and retiree-healthcare obligations (Bankruptcy Code Sections 1113/1114) with the UMWA, with risk of labor disruptions/work stoppages, and documents a shift in workforce and UMWA representation over the window. p4_pathway=0: no documented disruption at the product/process interface (product-line/operations incoherence); the slice describes market and labor/legacy pressures, not an inability to align an acquired product with operating processes. t1 and t2 are uncertain because the slice provides no information about controlling-intent archetype coherence or business-model reconciliation.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 bankruptcy filing and $730.6 million net loss in FY2012\",\n  \"rationale\": \"The slice documents severe pressure at the operations and labor interface, noting that rising labor-related legacy liabilities and the need to renegotiate UMWA wage and benefit programs drove the company into Chapter 11 bankruptcy (p5_pathway = 1). There is no documented evidence of product/process integration failure (p4_pathway = 0).\"",
+    "openai": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"1\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Chapter 11 filing; FY2012 net loss of $730.6 million\",\n  \"rationale\": \"No realized product/process alignment failure is documented, so p4 is coded 0. For p5, the 10-K attributed rising liabilities partly to labor-related legacy costs, and the company’s path through Chapter 11 depended on changing wage, benefit, and retiree-healthcare obligations through negotiations with the UMWA. These documented labor-and-legacy pressures coincided with the company operating as a debtor-in-possession and support a realized process/organization fracture.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "1",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

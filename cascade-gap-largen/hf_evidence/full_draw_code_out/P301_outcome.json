@@ -1,0 +1,58 @@
+{
+  "case_id": "P301",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No goodwill impairment in FY2021/FY2022; one component (MATCHNow) divested Aug 2020 for $60.6M cash + up to ~$23M contingent, $58.7M gain",
+      "rationale": "The realized record shows the acquired business substantially integrated and retained: most \"Virtu ITG\"-branded subsidiaries continued in place three-to-four years post-close, ITG Net remained part of the product suite, and the Execution Services segment carrying the associated goodwill recognized no impairment in FY2021 or FY2022, with no intangible impairment even after the MATCHNow divestiture — indicating no documented product/process incoherence (p4=0). No documented operations-vs-organization/culture fracture appears; the only structural change noted is the routine renaming of the Canadian entity and a discrete voluntary divestiture of MATCHNow to Cboe for a $58.7M gain, which is not evidence of a process/organization fracture (p5=0). Persistent non-U.S. NOLs with valuation allowances are noted but not tied to any documented integration disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "No goodwill impairment recognized in FY2021 or FY2022",
+      "rationale": "The evidence slice documents that ITG's products, such as 'ITG Net,' continued to be offered as part of Virtu's product suite, and multiple subsidiaries continued operating under the 'Virtu ITG' name, showing no evidence of product/process disruption (p4=0). Furthermore, there is no mention of organizational fracture, management clashes, or cultural incompatibility in the years following the deal (p5=0)."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "MATCHNow divested Aug 2020 ($60.6M+gain); no goodwill impairment through FY2022",
+      "rationale": "The FY2022 10-K shows ITG-derived products and platforms (ITG Net; Virtu ITG Analytics/Platforms and multiple Virtu ITG-named foreign execution subsidiaries) still operating inside Virtu’s Execution Services segment roughly three to four years after closing, with no documented product–process misalignment or write-off of the associated intangibles beyond the discrete MATCHNow sale. No evidence is given of operations-versus-organization fracture: Execution Services goodwill of $393.6M carried no impairment in FY2021–FY2022, and the only realized exit (MATCHNow to Cboe) produced a $58.7M gain rather than an integration failure."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"No goodwill impairment in FY2021/FY2022; one component (MATCHNow) divested Aug 2020 for $60.6M cash + up to ~$23M contingent, $58.7M gain\", \"rationale\": \"The realized record shows the acquired business substantially integrated and retained: most \\\"Virtu ITG\\\"-branded subsidiaries continued in place three-to-four years post-close, ITG Net remained part of the product suite, and the Execution Services segment carrying the associated goodwill recognized no impairment in FY2021 or FY2022, with no intangible impairment even after the MATCHNow divestiture \\u2014 indicating no documented product/process incoherence (p4=0). No documented operations-vs-organization/culture fracture appears; the only structural change noted is the routine renaming of the Canadian entity and a discrete voluntary divestiture of MATCHNow to Cboe for a $58.7M gain, which is not evidence of a process/organization fracture (p5=0). Persistent non-U.S. NOLs with valuation allowances are noted but not tied to any documented integration disruption.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"No goodwill impairment recognized in FY2021 or FY2022\",\n  \"rationale\": \"The evidence slice documents that ITG's products, such as 'ITG Net,' continued to be offered as part of Virtu's product suite, and multiple subsidiaries continued operating under the 'Virtu ITG' name, showing no evidence of product/process disruption (p4=0). Furthermore, there is no mention of organizational fracture, management clashes, or cultural incompatibility in the years following the deal (p5=0).\"\n}\n}\n",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"MATCHNow divested Aug 2020 ($60.6M+gain); no goodwill impairment through FY2022\",\n  \"rationale\": \"The FY2022 10-K shows ITG-derived products and platforms (ITG Net; Virtu ITG Analytics/Platforms and multiple Virtu ITG-named foreign execution subsidiaries) still operating inside Virtu’s Execution Services segment roughly three to four years after closing, with no documented product–process misalignment or write-off of the associated intangibles beyond the discrete MATCHNow sale. No evidence is given of operations-versus-organization fracture: Execution Services goodwill of $393.6M carried no impairment in FY2021–FY2022, and the only realized exit (MATCHNow to Cboe) produced a $58.7M gain rather than an integration failure.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

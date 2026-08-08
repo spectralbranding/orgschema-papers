@@ -1,0 +1,85 @@
+{
+  "case_id": "P285",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "terminate",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The deal was a whole-company, going-concern statutory merger with a same-day merger of the two bank subsidiaries: the customer-facing product (EVB's 24 branches combined with SONA's 24 into a 47-location network) crossed the boundary together with the operating processes and personnel that run them (\"EVBS's operating personnel and branches were absorbed\"), so no product-vs-process mismatch exists (gap_45=0). Likewise, T5 processes moved together with the T6 organization/people — five EVBS directors plus an observer joined the SONA board and EVBS's CEO became president/CEO of Sonabank with named EVBS executives taking operating roles, under explicit benefit-harmonization, severance and retention provisions — so processes and the organization running them transferred coherently alongside each other (gap_56=0). Because no structural gap was coded, gap_mitigated is NA. T3 is coded terminate because EVBS's separate corporate existence ceased while SONA survived as the Continuing Corporation."
+    },
+    "gemini": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The transaction was a whole-company statutory merger where EVBS's branches (T4), operations (T5), and personnel (T6) were absorbed entirely by SONA at closing. There is no documented structural mismatch between the transferred products and their underlying processes, nor between the processes and the organization running them."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "N-1",
+      "sigma_T3": "N-1",
+      "sigma_T4": "N-1",
+      "sigma_T5": "N-1",
+      "sigma_T6": "N-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45 is 0 because the customer-facing branch network (T4) and the bank-subsidiary operating vehicles (T5) crossed together in a same-day holding-company and bank merger, with EVB merging into Sonabank as a going-concern combination rather than product assets moving without operating processes. gap_56 is 0 because the same closing structure absorbed EVBS operating personnel and named executives into continuing roles under benefit-harmonization, severance and retention provisions, with no documented separation of processes from the organization that runs them and no transitional-services arrangement indicating a retained external substrate."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"N-1\", \"sigma_T3\": \"terminate\", \"sigma_T4\": \"N-1\", \"sigma_T5\": \"N-1\", \"sigma_T6\": \"N-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The deal was a whole-company, going-concern statutory merger with a same-day merger of the two bank subsidiaries: the customer-facing product (EVB's 24 branches combined with SONA's 24 into a 47-location network) crossed the boundary together with the operating processes and personnel that run them (\\\"EVBS's operating personnel and branches were absorbed\\\"), so no product-vs-process mismatch exists (gap_45=0). Likewise, T5 processes moved together with the T6 organization/people \\u2014 five EVBS directors plus an observer joined the SONA board and EVBS's CEO became president/CEO of Sonabank with named EVBS executives taking operating roles, under explicit benefit-harmonization, severance and retention provisions \\u2014 so processes and the organization running them transferred coherently alongside each other (gap_56=0). Because no structural gap was coded, gap_mitigated is NA. T3 is coded terminate because EVBS's separate corporate existence ceased while SONA survived as the Continuing Corporation.\"}",
+    "gemini": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The transaction was a whole-company statutory merger where EVBS's branches (T4), operations (T5), and personnel (T6) were absorbed entirely by SONA at closing. There is no documented structural mismatch between the transferred products and their underlying processes, nor between the processes and the organization running them.\"\n}\n}\n",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"N-1\",\n  \"sigma_T3\": \"N-1\",\n  \"sigma_T4\": \"N-1\",\n  \"sigma_T5\": \"N-1\",\n  \"sigma_T6\": \"N-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"gap_45 is 0 because the customer-facing branch network (T4) and the bank-subsidiary operating vehicles (T5) crossed together in a same-day holding-company and bank merger, with EVB merging into Sonabank as a going-concern combination rather than product assets moving without operating processes. gap_56 is 0 because the same closing structure absorbed EVBS operating personnel and named executives into continuing roles under benefit-harmonization, severance and retention provisions, with no documented separation of processes from the organization that runs them and no transitional-services arrangement indicating a retained external substrate.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "N-1",
+    "sigma_T3": "terminate",
+    "sigma_T4": "N-1",
+    "sigma_T5": "N-1",
+    "sigma_T6": "N-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": true,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 1
+}

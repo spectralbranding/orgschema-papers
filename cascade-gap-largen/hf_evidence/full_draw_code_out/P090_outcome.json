@@ -1,0 +1,58 @@
+{
+  "case_id": "P090",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "Chapter 11 filing April 21, 2016; ~$3.82bn indebtedness accelerated; NYSE trading suspended same day",
+      "rationale": "The slice documents a financial/liquidity collapse — ceased filing audited 10-Ks after FY2014, missed the FY2015 deadline, filed Chapter 11 on April 21, 2016 with ~$3.82bn of debt accelerated and $231mm of First Wind acquisition payments coming due, operating under DIP financing with NYSE delisting. While First Wind acquisition obligations coming due are noted, the slice describes debt-service default, not disruption specifically at the product/process interface (p4) or a fracture at the process/organization interface (p5); no operational-integration or people/culture evidence is present. Because the realized-outcome evidence is confined to default/bankruptcy scalars and does not characterize which failure interface drove the collapse, both p4 and p5 are coded uncertain."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Chapter 11 bankruptcy and $3.82 billion debt default",
+      "rationale": "The slice documents the company's Chapter 11 bankruptcy filing, delisting, and default on $3.82 billion in debt, as well as $231 million in acquisition payments coming due. However, it does not document specific product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) as the realized mechanisms of disruption."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "{'type': 'string', 'enum': 'Chapter 11 filing with approximately $3.82 billion of indebtedness accelerated'}",
+      "rationale": "{'type': 'string', 'enum': 'The slice documents Chapter 11, accelerated debt, DIP financing, and $231 million of acquisition-related payments becoming due, but it does not document that an acquired product failed to align with operating processes; therefore p4 is 0. The restructuring activity and appointment of a Chief Restructuring Officer likewise do not specifically establish a realized fracture between operations and people, management, or culture, so p5 is 0.'}"
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"Chapter 11 filing April 21, 2016; ~$3.82bn indebtedness accelerated; NYSE trading suspended same day\", \"rationale\": \"The slice documents a financial/liquidity collapse \\u2014 ceased filing audited 10-Ks after FY2014, missed the FY2015 deadline, filed Chapter 11 on April 21, 2016 with ~$3.82bn of debt accelerated and $231mm of First Wind acquisition payments coming due, operating under DIP financing with NYSE delisting. While First Wind acquisition obligations coming due are noted, the slice describes debt-service default, not disruption specifically at the product/process interface (p4) or a fracture at the process/organization interface (p5); no operational-integration or people/culture evidence is present. Because the realized-outcome evidence is confined to default/bankruptcy scalars and does not characterize which failure interface drove the collapse, both p4 and p5 are coded uncertain.\"}",
+    "gemini": "{\n\"p4_pathway\": \"0\",\n\"p5_pathway\": \"0\",\n\"t1_archetype\": \"0\",\n\"t2_model\": \"0\",\n\"performance_metric\": \"Chapter 11 bankruptcy and $3.82 billion debt default\",\n\"rationale\": \"The slice documents the company's Chapter 11 bankruptcy filing, delisting, and default on $3.82 billion in debt, as well as $231 million in acquisition payments coming due. However, it does not document specific product/process incoherence (p4_pathway) or process/organization fracture (p5_pathway) as the realized mechanisms of disruption.\"\n}\n",
+    "openai": "{\n  \"p4_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"p5_pathway\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t1_archetype\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"t2_model\": {\n    \"type\": \"string\",\n    \"enum\": \"0\"\n  },\n  \"performance_metric\": {\n    \"type\": \"string\",\n    \"enum\": \"Chapter 11 filing with approximately $3.82 billion of indebtedness accelerated\"\n  },\n  \"rationale\": {\n    \"type\": \"string\",\n    \"enum\": \"The slice documents Chapter 11, accelerated debt, DIP financing, and $231 million of acquisition-related payments becoming due, but it does not document that an acquired product failed to align with operating processes; therefore p4 is 0. The restructuring activity and appointment of a Chief Restructuring Officer likewise do not specifically establish a realized fracture between operations and people, management, or culture, so p5 is 0.\"\n  }\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

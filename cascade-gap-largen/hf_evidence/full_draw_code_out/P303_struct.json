@@ -1,0 +1,85 @@
+{
+  "case_id": "P303",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The slice states RAI's product lines and operating processes carry forward intact within the surviving corporation with no divestiture contemplated (\"the combined company will continue to operate the businesses of RAI\"), so T4 and T5 moved together — gap_45 = 0. RAI's officers continue as officers of the surviving corporation and the workforce continues intact, so the processes (T5) transferred alongside the organization/people (T6) — gap_56 = 0. Only the board/governance layer (T1) changes hands as BAT's designees replace RAI's pre-merger board, coded as replace; a 42%-owned affiliate becomes a 100% subsidiary with the legal entity, model, product, process, and people transferring whole (1-1)."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The evidence slice states that RAI's legal entity, product lines, operating processes, and workforce continue intact within the surviving corporation (T2-T6 are 1-1). There is no documented structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing."
+    },
+    "openai": {
+      "sigma_T1": "replace",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "1-1",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The product/operating-continuity line states that the combined company would continue operating RAI's businesses and that no product-line divestiture was contemplated at closing; the bridging-arrangements line further states that RAI's product lines and operating processes continued intact, so gap_45 is 0. That same line states that RAI's workforce continued intact, while the governance line says RAI's officers continued in the surviving corporation, so the processes transferred coherently with the organization and gap_56 is 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"1-1\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"1-1\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"The slice states RAI's product lines and operating processes carry forward intact within the surviving corporation with no divestiture contemplated (\\\"the combined company will continue to operate the businesses of RAI\\\"), so T4 and T5 moved together \\u2014 gap_45 = 0. RAI's officers continue as officers of the surviving corporation and the workforce continues intact, so the processes (T5) transferred alongside the organization/people (T6) \\u2014 gap_56 = 0. Only the board/governance layer (T1) changes hands as BAT's designees replace RAI's pre-merger board, coded as replace; a 42%-owned affiliate becomes a 100% subsidiary with the legal entity, model, product, process, and people transferring whole (1-1).\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"1-1\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"1-1\",\n\"sigma_T5\": \"1-1\",\n\"sigma_T6\": \"1-1\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"0\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"NA\",\n\"rationale\": \"The evidence slice states that RAI's legal entity, product lines, operating processes, and workforce continue intact within the surviving corporation (T2-T6 are 1-1). There is no documented structural mismatch between product and process (gap_45 = 0) or process and organization (gap_56 = 0) at closing.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"1-1\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The product/operating-continuity line states that the combined company would continue operating RAI's businesses and that no product-line divestiture was contemplated at closing; the bridging-arrangements line further states that RAI's product lines and operating processes continued intact, so gap_45 is 0. That same line states that RAI's workforce continued intact, while the governance line says RAI's officers continued in the surviving corporation, so the processes transferred coherently with the organization and gap_56 is 0.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "1-1",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "P236",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents no realized post-deal trajectory for the acquired Paragon business: the target deregistered from SEC reporting in February 2018 and the acquirer TowneBank is FDIC-regulated and not an SEC filer, so no periodic-reporting record covers the ~2021-2023 window. No source separately discloses the former Paragon business's financial, operational, or personnel results, and no divestiture, impairment, or branch-closure scalar was located. With no realized-outcome evidence at the product/process or process/organization interfaces, both pathways are coded uncertain rather than 0."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that no SEC, FDIC, or press source discloses the former Paragon business's post-close financial, operational, or personnel trajectory within the ~2021-2023 window, and that no divestiture, impairment, branch-closure, or comparable outcome was located. Absence of any documented product/process or process/organization disruption therefore codes p4_pathway and p5_pathway as 0 (none documented). The same evidentiary gap yields no documented controlling-intent incoherence or business-model incompatibility."
+    },
+    "openai": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented",
+      "rationale": "No source separately documents the former Paragon business’s financial, operational, or personnel trajectory during 2021-2023. Because Paragon deregistered and TowneBank has no SEC-filed periodic reporting for the outcome window, the slice cannot determine whether product/process disruption or process/organization fracture occurred."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented\", \"rationale\": \"The slice documents no realized post-deal trajectory for the acquired Paragon business: the target deregistered from SEC reporting in February 2018 and the acquirer TowneBank is FDIC-regulated and not an SEC filer, so no periodic-reporting record covers the ~2021-2023 window. No source separately discloses the former Paragon business's financial, operational, or personnel results, and no divestiture, impairment, or branch-closure scalar was located. With no realized-outcome evidence at the product/process or process/organization interfaces, both pathways are coded uncertain rather than 0.\"}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that no SEC, FDIC, or press source discloses the former Paragon business's post-close financial, operational, or personnel trajectory within the ~2021-2023 window, and that no divestiture, impairment, branch-closure, or comparable outcome was located. Absence of any documented product/process or process/organization disruption therefore codes p4_pathway and p5_pathway as 0 (none documented). The same evidentiary gap yields no documented controlling-intent incoherence or business-model incompatibility.\"\n}",
+    "openai": "{\n  \"p4_pathway\": \"uncertain\",\n  \"p5_pathway\": \"uncertain\",\n  \"t1_archetype\": \"uncertain\",\n  \"t2_model\": \"uncertain\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"No source separately documents the former Paragon business’s financial, operational, or personnel trajectory during 2021-2023. Because Paragon deregistered and TowneBank has no SEC-filed periodic reporting for the outcome window, the slice cannot determine whether product/process disruption or process/organization fracture occurred.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "uncertain",
+    "p5_pathway": "uncertain",
+    "t1_archetype": "uncertain",
+    "t2_model": "uncertain"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

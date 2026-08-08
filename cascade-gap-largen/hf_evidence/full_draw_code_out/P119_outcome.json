@@ -1,0 +1,58 @@
+{
+  "case_id": "P119",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "rising net earnings to $618,199K on $8,138,365K revenue (2018); goodwill flat at $7,927K with no impairment; no divestiture",
+      "rationale": "The FY2018 record documents continued operation on \"the same transportation and accounting systems, running on a common hardware platform, in all of our full-service locations\" across ~490 sites, with no product-line/operations incoherence disclosed — supporting p4=0. It explicitly states no divestiture, write-down, restructuring, or acquisition-integration disruption occurred, and headcount grew to ~17,500 with no documented operations-vs-organization fracture — supporting p5=0. Goodwill was held flat with no impairment and earnings rose over the window, with no realized disruption at any interface documented."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "Net earnings attributable to shareholders were $618,199 thousand for 2018",
+      "rationale": "The evidence slice explicitly states the entity 'operates the same transportation and accounting systems, running on a common hardware platform' across all locations. Furthermore, it notes that no divestiture, asset write-down, impairment, restructuring, or acquisition-integration disruption is documented, indicating no realized fracture at either the product/process or process/organization interfaces."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "no divestiture; rising earnings to $618M; goodwill unimpaired",
+      "rationale": "The FY2018 10-K record states the entity continued operating the same transportation and accounting systems on a common hardware platform across all full-service locations, with no product/process alignment disruption disclosed. It likewise documents no restructuring, integration-disruption, or process/organization fracture; goodwill remained flat at $7,927 thousand with no impairment, and no divestiture or write-down is reported in the outcome window."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"0\", \"p5_pathway\": \"0\", \"t1_archetype\": \"0\", \"t2_model\": \"0\", \"performance_metric\": \"rising net earnings to $618,199K on $8,138,365K revenue (2018); goodwill flat at $7,927K with no impairment; no divestiture\", \"rationale\": \"The FY2018 record documents continued operation on \\\"the same transportation and accounting systems, running on a common hardware platform, in all of our full-service locations\\\" across ~490 sites, with no product-line/operations incoherence disclosed \\u2014 supporting p4=0. It explicitly states no divestiture, write-down, restructuring, or acquisition-integration disruption occurred, and headcount grew to ~17,500 with no documented operations-vs-organization fracture \\u2014 supporting p5=0. Goodwill was held flat with no impairment and earnings rose over the window, with no realized disruption at any interface documented.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"Net earnings attributable to shareholders were $618,199 thousand for 2018\",\n  \"rationale\": \"The evidence slice explicitly states the entity 'operates the same transportation and accounting systems, running on a common hardware platform' across all locations. Furthermore, it notes that no divestiture, asset write-down, impairment, restructuring, or acquisition-integration disruption is documented, indicating no realized fracture at either the product/process or process/organization interfaces.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"no divestiture; rising earnings to $618M; goodwill unimpaired\",\n  \"rationale\": \"The FY2018 10-K record states the entity continued operating the same transportation and accounting systems on a common hardware platform across all full-service locations, with no product/process alignment disruption disclosed. It likewise documents no restructuring, integration-disruption, or process/organization fracture; goodwill remained flat at $7,927 thousand with no impairment, and no divestiture or write-down is reported in the outcome window.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "P247",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "gap_45=1: the customer-facing hotel real estate (T4) did NOT cross to Wyndham but was spun into CorePoint, while the operating/franchise processes and brand (T5) crossed to the acquirer — an explicit product-vs-process split at closing (\"customer-facing hotel real estate crossed to a separate new public entity while the operating/franchise processes and the La Quinta brand crossed to the acquirer\"). This structural mismatch was contractually absorbed at closing via the Transaction Agreements — Transition Services Agreement and the CPLG Management and Franchise Agreements bridging the spun-off real estate to the retained management/franchise business — hence gap_mitigated=yes. gap_56=0: the operational processes and the organization/people ran on the same (Wyndham-retained) side with an Employee Matters Agreement allocating personnel, and although some executives were carved to CorePoint, the process tier and its running organization crossed together rather than being separated at closing."
+    },
+    "gemini": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "subset",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "The transaction structurally separated the physical hotel real estate (T4 product) from the management and franchise operations (T5 processes). The real estate was spun off into CorePoint, while the management/franchise business was acquired by Wyndham, creating a structural gap between product and process (gap_45 = 1). This gap was mitigated at closing via Management and Franchise Agreements and a Transition Services Agreement bridging the two entities."
+    },
+    "grok": {
+      "sigma_T1": "replace",
+      "sigma_T2": "subset",
+      "sigma_T3": "1-1",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "subset",
+      "collapse_state": "none",
+      "gap_45": "1",
+      "gap_56": "0",
+      "gap_mitigated": "yes",
+      "rationale": "At closing the owned-hotel real-estate product was conveyed to spun-off CorePoint and did not cross to Wyndham, while the management-and-franchise processes and brand did cross to Wyndham, creating a documented product-vs-process ownership mismatch (gap_45=1); that gap was contractually absorbed by the CPLG Management and Franchise Agreements plus the Transition Services Agreement executed with the Distribution. Organization was split in parallel via the Employee Matters Agreement and planned executive moves to CorePoint, with the surviving La Quinta board replaced by Merger Sub directors, so processes and people were allocated together across the two sides rather than processes moving without organization (gap_56=0)."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"replace\", \"sigma_T2\": \"subset\", \"sigma_T3\": \"1-1\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"1\", \"gap_56\": \"0\", \"gap_mitigated\": \"yes\", \"rationale\": \"gap_45=1: the customer-facing hotel real estate (T4) did NOT cross to Wyndham but was spun into CorePoint, while the operating/franchise processes and brand (T5) crossed to the acquirer \\u2014 an explicit product-vs-process split at closing (\\\"customer-facing hotel real estate crossed to a separate new public entity while the operating/franchise processes and the La Quinta brand crossed to the acquirer\\\"). This structural mismatch was contractually absorbed at closing via the Transaction Agreements \\u2014 Transition Services Agreement and the CPLG Management and Franchise Agreements bridging the spun-off real estate to the retained management/franchise business \\u2014 hence gap_mitigated=yes. gap_56=0: the operational processes and the organization/people ran on the same (Wyndham-retained) side with an Employee Matters Agreement allocating personnel, and although some executives were carved to CorePoint, the process tier and its running organization crossed together rather than being separated at closing.\"}",
+    "gemini": "{\n\"sigma_T1\": \"replace\",\n\"sigma_T2\": \"subset\",\n\"sigma_T3\": \"1-1\",\n\"sigma_T4\": \"subset\",\n\"sigma_T5\": \"subset\",\n\"sigma_T6\": \"subset\",\n\"collapse_state\": \"none\",\n\"gap_45\": \"1\",\n\"gap_56\": \"0\",\n\"gap_mitigated\": \"yes\",\n\"rationale\": \"The transaction structurally separated the physical hotel real estate (T4 product) from the management and franchise operations (T5 processes). The real estate was spun off into CorePoint, while the management/franchise business was acquired by Wyndham, creating a structural gap between product and process (gap_45 = 1). This gap was mitigated at closing via Management and Franchise Agreements and a Transition Services Agreement bridging the two entities.\"\n}",
+    "grok": "{\n  \"sigma_T1\": \"replace\",\n  \"sigma_T2\": \"subset\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"subset\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"subset\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"1\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"yes\",\n  \"rationale\": \"At closing the owned-hotel real-estate product was conveyed to spun-off CorePoint and did not cross to Wyndham, while the management-and-franchise processes and brand did cross to Wyndham, creating a documented product-vs-process ownership mismatch (gap_45=1); that gap was contractually absorbed by the CPLG Management and Franchise Agreements plus the Transition Services Agreement executed with the Distribution. Organization was split in parallel via the Employee Matters Agreement and planned executive moves to CorePoint, with the surviving La Quinta board replaced by Merger Sub directors, so processes and people were allocated together across the two sides rather than processes moving without organization (gap_56=0).\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "replace",
+    "sigma_T2": "subset",
+    "sigma_T3": "1-1",
+    "sigma_T4": "subset",
+    "sigma_T5": "1-1",
+    "sigma_T6": "subset",
+    "collapse_state": "none",
+    "gap_45": "1",
+    "gap_56": "0",
+    "gap_mitigated": "yes"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}

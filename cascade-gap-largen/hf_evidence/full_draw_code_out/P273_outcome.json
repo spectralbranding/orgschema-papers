@@ -1,0 +1,58 @@
+{
+  "case_id": "P273",
+  "pass": "outcome",
+  "coders": [
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "gemini": "gemini-3.1-pro-preview",
+    "grok": "grok-4.5"
+  },
+  "per_model": {
+    "claude": {
+      "p4_pathway": "uncertain",
+      "p5_pathway": "uncertain",
+      "t1_archetype": "uncertain",
+      "t2_model": "uncertain",
+      "performance_metric": "not documented (entity deregistered Oct 2018; no public post-closing outcome record)",
+      "rationale": "The entity was taken private and both BRE Glacier L.P. (successor by merger) and GPT Operating Partnership terminated SEC reporting via Form 15-12B/15-15D on October 22, 2018, with no successor registrant identified and no audited public statements for the ~2021-2023 window. The slice explicitly states \"no outcome scalar ... can be sourced to a public primary filing for this entity, and none is asserted,\" and the only later trade-press item (2023 Prologis/Blackstone deal) is expressly not traced to the Gramercy portfolio. With no documented realized product/process or process/organization disruption to cite, both pathways are coded uncertain rather than 0, since the absence reflects deregistration-driven non-traceability rather than affirmative evidence of no disruption."
+    },
+    "gemini": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice documents that the acquired entity was taken private and deregistered, with no subsequent public financial statements or periodic disclosures available. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon."
+    },
+    "grok": {
+      "p4_pathway": "0",
+      "p5_pathway": "0",
+      "t1_archetype": "0",
+      "t2_model": "0",
+      "performance_metric": "not documented",
+      "rationale": "The slice states that after the October 2018 going-private closing both the parent and operating partnership terminated SEC reporting and no successor registrant exists, so no public 3-5-year outcome record is traceable. No realized product/process interface disruption or process/organization fracture is documented; the outcome summary explicitly asserts that no outcome scalar of any kind can be sourced. Absence of documented pathway evidence is therefore coded 0."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"p4_pathway\": \"uncertain\", \"p5_pathway\": \"uncertain\", \"t1_archetype\": \"uncertain\", \"t2_model\": \"uncertain\", \"performance_metric\": \"not documented (entity deregistered Oct 2018; no public post-closing outcome record)\", \"rationale\": \"The entity was taken private and both BRE Glacier L.P. (successor by merger) and GPT Operating Partnership terminated SEC reporting via Form 15-12B/15-15D on October 22, 2018, with no successor registrant identified and no audited public statements for the ~2021-2023 window. The slice explicitly states \\\"no outcome scalar ... can be sourced to a public primary filing for this entity, and none is asserted,\\\" and the only later trade-press item (2023 Prologis/Blackstone deal) is expressly not traced to the Gramercy portfolio. With no documented realized product/process or process/organization disruption to cite, both pathways are coded uncertain rather than 0, since the absence reflects deregistration-driven non-traceability rather than affirmative evidence of no disruption.\"}",
+    "gemini": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice documents that the acquired entity was taken private and deregistered, with no subsequent public financial statements or periodic disclosures available. There is no documented evidence of disruption at the product/process interface (p4_pathway) or fracture at the process/organization interface (p5_pathway) over the 3-5 year horizon.\"\n}",
+    "grok": "{\n  \"p4_pathway\": \"0\",\n  \"p5_pathway\": \"0\",\n  \"t1_archetype\": \"0\",\n  \"t2_model\": \"0\",\n  \"performance_metric\": \"not documented\",\n  \"rationale\": \"The slice states that after the October 2018 going-private closing both the parent and operating partnership terminated SEC reporting and no successor registrant exists, so no public 3-5-year outcome record is traceable. No realized product/process interface disruption or process/organization fracture is documented; the outcome summary explicitly asserts that no outcome scalar of any kind can be sourced. Absence of documented pathway evidence is therefore coded 0.\"\n}"
+  },
+  "majority": {
+    "p4_pathway": "0",
+    "p5_pathway": "0",
+    "t1_archetype": "0",
+    "t2_model": "0"
+  },
+  "flags": {
+    "p4_pathway": false,
+    "p5_pathway": false,
+    "t1_archetype": false,
+    "t2_model": false
+  },
+  "n_flags": 0
+}

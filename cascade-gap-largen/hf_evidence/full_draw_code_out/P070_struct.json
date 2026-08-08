@@ -1,0 +1,85 @@
+{
+  "case_id": "P070",
+  "pass": "struct",
+  "coders": [
+    "claude",
+    "grok",
+    "openai"
+  ],
+  "models": {
+    "claude": "claude-opus-4-8",
+    "grok": "grok-4.5",
+    "openai": "gpt-5.6-sol"
+  },
+  "per_model": {
+    "claude": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "subset",
+      "sigma_T4": "subset",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "gap_45=0: the customer-facing asset (T4, the 13-property California shopping-center portfolio held through CapCo) and its operational control (T5) crossed together — Equity One \"took managing control\" and \"the asset and its management crossed to Equity One's control,\" with the joint venture \"managed by a board of managers elected by Equity One as holder of a majority of the Class A LLC Shares,\" so product and its operating processes moved coherently, not mismatched. gap_56=0: the process tier (management via board of managers controlled by Equity One) and the organization/people tier moved together within the same JV structure; LIH retained only limited minority consent rights and one board seat (David Fischel appointed), reflecting a jointly-owned governance rather than processes stranded from the people running them. T1 coded imprint-share because both principals remain co-present — Equity One holds majority Class B/board control while LIH/CSC retain redeemable Class A interest, consent rights, a board seat, and a special-voting Class A share bridged contractually rather than bought out."
+    },
+    "grok": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "1-1",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "At closing the 13-property CapCo portfolio (T4) and operational control of the JV (T5, board of managers elected by Equity One as majority Class A holder) crossed together into EQY-CSC LLC under Equity One management, so no product-vs-process mismatch is documented. Process control and the managing organization likewise aligned under Equity One at closing, with only limited LIH consent rights and one CSC board designee retained, yielding no structural process-vs-organization gap; gap_mitigated is therefore NA."
+    },
+    "openai": {
+      "sigma_T1": "imprint-share",
+      "sigma_T2": "uncertain",
+      "sigma_T3": "1-1",
+      "sigma_T4": "1-1",
+      "sigma_T5": "1-1",
+      "sigma_T6": "partial",
+      "collapse_state": "none",
+      "gap_45": "0",
+      "gap_56": "0",
+      "gap_mitigated": "NA",
+      "rationale": "The entire 13-property customer-facing portfolio was held in CapCo, all of whose outstanding common shares were contributed to EQY-CSC LLC, while Equity One obtained managing control through its right to elect the joint venture's board of managers (Form 8-K Item 1.01); thus the product and its operational control crossed coherently, supporting gap_45=0. The organization was also aligned through closing-time governance arrangements: Equity One controlled the managers, while LIH retained specified consent rights and CSC Group received an Equity One board seat (Form 8-K Items 1.01 and 5.02), so no process-versus-organization gap is documented at closing."
+    }
+  },
+  "per_model_raw": {
+    "claude": "{\"sigma_T1\": \"imprint-share\", \"sigma_T2\": \"1-1\", \"sigma_T3\": \"subset\", \"sigma_T4\": \"subset\", \"sigma_T5\": \"1-1\", \"sigma_T6\": \"partial\", \"collapse_state\": \"none\", \"gap_45\": \"0\", \"gap_56\": \"0\", \"gap_mitigated\": \"NA\", \"rationale\": \"gap_45=0: the customer-facing asset (T4, the 13-property California shopping-center portfolio held through CapCo) and its operational control (T5) crossed together \\u2014 Equity One \\\"took managing control\\\" and \\\"the asset and its management crossed to Equity One's control,\\\" with the joint venture \\\"managed by a board of managers elected by Equity One as holder of a majority of the Class A LLC Shares,\\\" so product and its operating processes moved coherently, not mismatched. gap_56=0: the process tier (management via board of managers controlled by Equity One) and the organization/people tier moved together within the same JV structure; LIH retained only limited minority consent rights and one board seat (David Fischel appointed), reflecting a jointly-owned governance rather than processes stranded from the people running them. T1 coded imprint-share because both principals remain co-present \\u2014 Equity One holds majority Class B/board control while LIH/CSC retain redeemable Class A interest, consent rights, a board seat, and a special-voting Class A share bridged contractually rather than bought out.\"}",
+    "grok": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"1-1\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"At closing the 13-property CapCo portfolio (T4) and operational control of the JV (T5, board of managers elected by Equity One as majority Class A holder) crossed together into EQY-CSC LLC under Equity One management, so no product-vs-process mismatch is documented. Process control and the managing organization likewise aligned under Equity One at closing, with only limited LIH consent rights and one CSC board designee retained, yielding no structural process-vs-organization gap; gap_mitigated is therefore NA.\"\n}",
+    "openai": "{\n  \"sigma_T1\": \"imprint-share\",\n  \"sigma_T2\": \"uncertain\",\n  \"sigma_T3\": \"1-1\",\n  \"sigma_T4\": \"1-1\",\n  \"sigma_T5\": \"1-1\",\n  \"sigma_T6\": \"partial\",\n  \"collapse_state\": \"none\",\n  \"gap_45\": \"0\",\n  \"gap_56\": \"0\",\n  \"gap_mitigated\": \"NA\",\n  \"rationale\": \"The entire 13-property customer-facing portfolio was held in CapCo, all of whose outstanding common shares were contributed to EQY-CSC LLC, while Equity One obtained managing control through its right to elect the joint venture's board of managers (Form 8-K Item 1.01); thus the product and its operational control crossed coherently, supporting gap_45=0. The organization was also aligned through closing-time governance arrangements: Equity One controlled the managers, while LIH retained specified consent rights and CSC Group received an Equity One board seat (Form 8-K Items 1.01 and 5.02), so no process-versus-organization gap is documented at closing.\"\n}"
+  },
+  "majority": {
+    "sigma_T1": "imprint-share",
+    "sigma_T2": "1-1",
+    "sigma_T3": "1-1",
+    "sigma_T4": "1-1",
+    "sigma_T5": "1-1",
+    "sigma_T6": "partial",
+    "collapse_state": "none",
+    "gap_45": "0",
+    "gap_56": "0",
+    "gap_mitigated": "NA"
+  },
+  "flags": {
+    "sigma_T1": false,
+    "sigma_T2": false,
+    "sigma_T3": false,
+    "sigma_T4": false,
+    "sigma_T5": false,
+    "sigma_T6": false,
+    "collapse_state": false,
+    "gap_45": false,
+    "gap_56": false,
+    "gap_mitigated": false
+  },
+  "n_flags": 0
+}
