@@ -1,5 +1,6 @@
 # ONTOLOGY.yaml module — multi-llm-coding-instrument (paper 2026bh)
 #
+# Per-paper ontology module per SPINE_FIRST_DRAFTING_PROTOCOL.md
 # §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
 # authority); imports = terms owned by other modules it uses. Linked into the
 # substrate `terms` graph by build_ontology.py; rendered by render_paper_glossary.py.

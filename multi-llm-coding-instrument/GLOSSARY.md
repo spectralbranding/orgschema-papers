@@ -2,7 +2,7 @@
 
 ## Glossary
 
-_Terms used by **multi-llm-coding-instrument** (A Blinded Multi-LLM Content-Coding Instrument with Registered-Before-Data Discipline and Inter-Coder Reliability Validation). Defined terms this paper introduces, refines, or imports from the corpus ontology._
+_Terms used by **multi-llm-coding-instrument** (A Blinded Multi-LLM Content-Coding Instrument: Protocol Specification and Inter-Coder Reliability Validation on an Organizational Corpus). Defined terms this paper introduces, refines, or imports from the corpus ontology._
 
 *Terms introduced by this paper*
 

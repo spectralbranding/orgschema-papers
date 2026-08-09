@@ -19,11 +19,13 @@ identifiers:
     description: "Zenodo version DOI (v1.0.0)"
 keywords:
   - content analysis
-  - inter-coder reliability
+  - intercoder reliability
   - large language models
+  - LLM-assisted coding
   - blinded coding
-  - registered-before-data
-  - Fleiss kappa
+  - pre-registration
+  - reproducibility
+  - research methods
 license:
   - CC-BY-4.0
   - MIT
