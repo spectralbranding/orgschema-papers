@@ -25,10 +25,7 @@ paper_key: "2026an"
 title: >-
   Specification Readiness: Measuring an Architectural Antecedent of Functional
   Friction and AI Returns
-status: >-
-  Retrofit spine extracted 2026-06-14 from completed paper.md (v1.0.0, May 2026).
-  Paper is a published working paper (Zenodo DOI 10.5281/zenodo.20384084);
-  archival execution flagged as the next deliverable (Paper B v2.0).
+status: "Not exported; see the paper's own version and DOI."
 
 thesis: |
   Specification readiness — the degree to which a firm's commitments are
@@ -111,6 +108,18 @@ boundary_conditions:
     observable: "Consumption-layer AI penetration α ≥ α*."
     excludes: "Out-of-window (pre-AI) phase-shift predictions are silent."
     body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)"]
+  - id: C7
+    statement: >-
+      Realized operating history: the measure is defined on a filer whose year
+      carries events that could have been reported otherwise. A filer with
+      structurally no operations produces maximal year-over-year similarity by
+      construction, so on that population the continuous SCI is uninformative
+      rather than merely noisy, and the theory is silent rather than falsified.
+      Blank-cheque vehicles before a business combination and pre-revenue
+      clinical-stage firms are the clean cases.
+    observable: "Non-zero operating activity in the filing year (revenue, operations, or reportable economic change)."
+    excludes: "Structurally zero-activity filers from the primary sample."
+    body_sections: ["§Theoretical Framework — Boundary conditions and scope (Table 1)", "§Data and Measurement — Specification Coherence Index (SCI)"]
 
 # ============================================================================
 # Observations — the author-produced simulation outputs the mechanism-test
@@ -509,6 +518,21 @@ robustness_checks:
     type: "simulation_robustness"
     sensitivity_of: [F1]
     body_sections: ["§Mechanism Tests — Monte Carlo phase shift confirmation"]
+  - id: RC4
+    statement: >-
+      An economic-change covariate vector (|ΔEPS|, |ΔCurrent ratio|, |ΔDebt due|,
+      |ΔLeverage|, |ΔFree cash flow|, return volatility, and acquisition and
+      downsizing indicators) enters the control set alongside continuous SCI, and
+      the SCI coefficient is reported with and without it; the covariate list
+      follows the specification on which the modification-score association with
+      economic change was originally established, keeping the control comparable
+      to that literature. A placebo computes the published index unchanged on a
+      panel of structurally zero-activity filers against matched operating firms:
+      if the zero-activity panel scores at or above the operating panel, the
+      event-absence confound is demonstrated on the paper's own measure.
+    type: "confound_control"
+    sensitivity_of: [P3, P4, P5, P6, P7]
+    body_sections: ["§Data and Measurement — Specification Coherence Index (SCI)", "§Identification Strategy — Continuous 10-K coherence as primary treatment", "§Identification Strategy — Threats register and Oster bounds (Table 2)"]
 
 # ============================================================================
 # Alternative explanations — rivals the design rules out
@@ -554,6 +578,28 @@ alternative_explanations:
       governed by within-firm year-over-year linguistic shifts, complements the
       sharp arm.
     body_sections: ["§Identification Strategy — Staggered DiD", "§Appendix A: Full Threats Register"]
+  - id: A4
+    statement: >-
+      Year-over-year narrative similarity is jointly produced by two sources, not
+      one: a firm whose commitments are codified into a coherent substrate
+      restates them consistently, and a firm to which nothing happened also
+      restates them consistently, because there is nothing new to state. If the
+      second source dominates, the continuous SCI is an inverse measure of event
+      density rather than a measure of codification, and the error is one-signed —
+      low-event-density firms are scored as highly ready.
+    rules_out_required: [P2, P3, P4, P5, P6, P7]
+    ruled_out_by: [RC4]
+    rules_out_status: "bounded-not-eliminated"
+    reasoning: >-
+      The association between year-over-year modification and economic change was
+      established in 2011 on the same cosine construct and is reliable but
+      economically small (R² = 5.8% pooled, N = 28,142; 6.4% with firm
+      characteristics), with year indicators inside that figure and no firm fixed
+      effects, so it does not by itself settle the within-firm case identified on
+      here. The covariate vector absorbs the measured part of event density and
+      the zero-activity placebo tests the extreme; neither removes the confound,
+      and the residual is stated as a limitation rather than claimed away.
+    body_sections: ["§Data and Measurement — Specification Coherence Index (SCI)", "§Identification Strategy — Threats register and Oster bounds (Table 2)", "§Discussion — Boundary conditions and limitations"]
 
 # ============================================================================
 # Limitations — honest scope of the design and the simulation evidence
@@ -616,6 +662,18 @@ limitations:
     severity: "latent-construct"
     affects: [P1]
     body_sections: ["§Discussion — Boundary conditions and limitations"]
+  - id: L7
+    statement: >-
+      The economic-change covariate vector absorbs the measured part of event
+      density, not all of it: unreported and unmeasured events remain in the
+      residual, and no residualised or expected-modification control exists in the
+      prior literature to adopt. The design can therefore bound the event-absence
+      confound and report its magnitude, not remove it, and the SCI coefficient
+      must be read as conditional on the covariate set rather than as purified of
+      event density.
+    severity: "residual-confound"
+    affects: [P2, P3, P4, P5, P6, P7]
+    body_sections: ["§Discussion — Boundary conditions and limitations", "§Data and Measurement — Specification Coherence Index (SCI)"]
 
 # ============================================================================
 # Negative findings — what the simulation surfaced against expectation
@@ -675,6 +733,15 @@ external_anchors:
   - {citation_key: radner-1993-decentralized-information, role: formal_lineage, spine_nodes: [P3], note: "Decentralized information processing — organizational layers as endogenous costs"}
   - {citation_key: choudhury-2021-work-from-anywhere, role: design_precedent, spine_nodes: [RC1], note: "Strategy-field Callaway-Sant'Anna staggered-policy precedent"}
   - {citation_key: nonaka-1994-knowledge-creation, role: scope_anchor, spine_nodes: [C3], note: "Codifiability scope condition (tacit vs codified knowledge)"}
+  - {citation_key: brown-2011-largesample-evidence-firms, role: measurement_lineage, spine_nodes: [P2, A4, RC4, C7], note: "Year-over-year MD&A modification as one minus a vector-space cosine — the same construct family as the continuous SCI; establishes that modification responds to economic change (Table 3, N = 28,142, R² = 5.8%), and supplies the economic-change covariate list. Descriptive association only; the paper builds no residualised or expected-modification control, and its main specification carries no firm fixed effects."}
+  - {citation_key: cohen-2020-lazy-prices, role: rival_reading, spine_nodes: [A4], note: "Reads high year-over-year filing similarity as the absence of news and trades on it — the competing interpretation of the same signal"}
+  - {citation_key: loughran-2016-textual-analysis-accounting, role: method_caution, spine_nodes: [P2, L7], note: "Methodological case against reading text-distance metrics as firm constructs without modelling the document-generating process"}
+  - {citation_key: keller-1993-conceptualizing-measuring-managing, role: contrasted_construct, spine_nodes: [P1, P4], note: "Customer-based brand equity — the dominant brand-measurement tradition, built from consumer-survey items on the rendering; the SCI measures substrate stability upstream of it"}
+  - {citation_key: grant-1996-toward-knowledgebased-theory, role: theoretical_anchor, spine_nodes: [P1], note: "Knowledge-based view — codification as the mechanism by which specialist knowledge becomes integrable; specification readiness is the firm-year observable of that codification"}
+  - {citation_key: penrose-1959-theory-growth-firm, role: theoretical_anchor, spine_nodes: [P1], note: "Resource-based foundations — administrative structure as the binding constraint on growth; the friction tax is that constraint priced"}
+  - {citation_key: barney-1991-firm-resources-sustained, role: theoretical_anchor, spine_nodes: [P1], note: "Resource-based view — the VRIN criteria against which a codified substrate is assessed as a resource rather than an administrative artifact"}
+  - {citation_key: pentland-2005-organizational-routines-as, role: theoretical_anchor, spine_nodes: [P1, P2], note: "Ostensive/performative duality in routines — the specification/execution split the substrate reading depends on, and the reason a codified substrate is not itself evidence of enactment"}
+  - {citation_key: cover-2006-elements-information-theory, role: formal_lineage, spine_nodes: [P1], note: "Canonical information-theory reference for the cross-entropy formalism the companion theoretical model rests on"}
 
 # ============================================================================
 # Open questions / boundary edges

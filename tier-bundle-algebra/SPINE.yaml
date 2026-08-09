@@ -77,22 +77,21 @@ propositions:
         citation_role: motivating_problem
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION (2026-07-29, review-stage gap closure). The
-          M&A-integration empirical tradition proper — /review-literature's
-          top finding was that this camp was under-covered (Larsson &
-          Finkelstein 1999 alone). State-of-field reviews establishing the
+          The M&A-integration empirical tradition proper, which the argument
+          had engaged only through Larsson and Finkelstein (1999).
+          State-of-field reviews establishing the
           M&A-taxonomy-as-atheoretical-enumeration claim from within the
           field's own literature, not asserted from outside it.
         citation_keys: [haleblian-2009-taking-stock-what, cartwright-2006-thirty-years-mergers, graebner-2017-process-postmerger-integration]
         citation_role: motivating_problem
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. The closest EXISTING management-journal attempts
-          at a typological/structural grammar for post-acquisition structure
-          — the genuine rivals to this paper's own taxonomic ambition, per
-          /review-literature's single most defensible missing-citation
-          finding. Engaging these substantively (not just citing) is required
-          to move off the Q6 "thin M&A-empirics engagement" finding.
+          The closest EXISTING management-journal attempts at a typological /
+          structural grammar for post-acquisition structure — the genuine
+          rivals to this paper's own taxonomic ambition. These are engaged
+          substantively rather than merely cited, because a taxonomy paper
+          that does not confront the field's own prior taxonomies has not
+          established its increment.
         citation_keys: [puranam-2007-what-they-know, puranam-2009-integrating-acquired-capabilities, zaheer-2013-synergy-sources-target, zollo-2004-deliberate-learning-corporate]
         citation_role: contrast_case
 
@@ -529,6 +528,55 @@ propositions:
       within-firm resource reallocation over time.
     body_sections: ["Boundary Conditions"]
 
+  - id: C2
+    statement: >-
+      Boundary condition: the predicate is defined over a target whose tier
+      records exist. A tier whose record is constituted by intention or forecast
+      rather than by realized events supports no separability reading, so the
+      predicate has no input rather than a permissive one, and a bundle forking
+      that tier is not admissible but UNEVALUATED. The distinction is one of
+      kind, not degree: identity fusion is a failure of the transaction's
+      structure that no evidence could repair, whereas non-realization is a
+      failure of the record that time repairs on its own. Because the predicate
+      is total and two-valued, the second case is presently returned as the
+      complement of the first, so its error runs in one direction only — it can
+      admit a bundle it should not, never the reverse — and that error
+      concentrates in the population where the predicate is most likely to be
+      consulted and least able to answer.
+    antecedents: [P6]
+    evidence:
+      - type: citation
+        anchor: >-
+          The intended-versus-realized distinction in its canonical form; the
+          scope condition is that pair applied to a tier record rather than to a
+          strategy, and says so rather than implying otherwise.
+        citation_keys: [mintzberg-1985-strategies-deliberate-emergent, mintzberg-1978-patterns-strategy-formation]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          The liability of newness — why the population in which the predicate
+          is unevaluated is also the population in which it is most often asked.
+        citation_keys: [stinchcombe-1965-social-structure-organizations]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          Discovery versus creation. The condition rests on a property that is
+          not yet enacted and therefore unavailable to either party, which is
+          not one party knowing what the other does not; without this the scope
+          condition collapses into an ordinary information-asymmetry argument.
+        citation_keys: [alvarez-2007-discovery-creation-alternative]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: >-
+          The stated counter. Effectuation's position is that early ventures do
+          not hold fixed intentions awaiting realization at all. That does not
+          rescue the predicate — it makes the Tier-1 read less determinate, not
+          more — but it is why the condition is worded on what the record
+          supports rather than on an intent presumed to exist.
+        citation_keys: [sarasvathy-2001-causation-effectuation-toward]
+        citation_role: contrast_case
+    body_sections: ["Boundary Conditions", "Discussion — Limitations"]
+
   - id: L1
     statement: >-
       This is a theoretical contribution; the cascade rule and admissibility
@@ -604,6 +652,20 @@ propositions:
           fixture self-check asserts these on the study's own 2×2 shape.
     body_sections: ["Discussion — Limitations"]
 
+  - id: L3
+    statement: >-
+      The paper does not supply the third verdict that C2's scope condition
+      implies. The predicate stays total and two-valued, no realization-state
+      variable is introduced, and no new term is created; naming the gap is
+      honest and cheap, and filling it is a separate question this paper does
+      not take up. The parallel item for the six-tier separability diagnostic —
+      that its per-tier cell on an unrealized tier returns an intention reading
+      in the same type as an evidence reading — belongs to the paper that owns
+      that instrument, not here.
+    antecedents: [C2, P6]
+    affects: [P6]
+    body_sections: ["Discussion — Limitations"]
+
 # ============================================================================
 # Cross-paper engagement (explicit, per protocol)
 # ============================================================================
@@ -666,6 +728,21 @@ external_anchors:
   - citation_key: sanchez-1996-modularity-flexibility-knowledge
     role: theoretical_predecessor
     spine_nodes: [P4]
+  - citation_key: mintzberg-1978-patterns-strategy-formation
+    role: theoretical_predecessor
+    spine_nodes: [C2]
+  - citation_key: mintzberg-1985-strategies-deliberate-emergent
+    role: theoretical_predecessor
+    spine_nodes: [C2]
+  - citation_key: stinchcombe-1965-social-structure-organizations
+    role: theoretical_predecessor
+    spine_nodes: [C2]
+  - citation_key: alvarez-2007-discovery-creation-alternative
+    role: theoretical_predecessor
+    spine_nodes: [C2]
+  - citation_key: sarasvathy-2001-causation-effectuation-toward
+    role: contrast_case
+    spine_nodes: [C2]
   - citation_key: colfer-2016-mirroring-hypothesis-theory-evidence
     role: theoretical_predecessor
     spine_nodes: [P4, P5]

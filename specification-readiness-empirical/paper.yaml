@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20384084
-  date: '2026-06-26'
+  date: '2026-08-09'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -267,6 +267,45 @@ dependencies:
 - relationship: extends
   claim: Codifiability scope condition (tacit vs codified knowledge)
   reference: nonaka-1994-knowledge-creation
+- relationship: extends
+  claim: Year-over-year MD&A modification as one minus a vector-space cosine — the same construct family
+    as the continuous SCI; establishes that modification responds to economic change (Table 3, N = 28,142,
+    R² = 5.8%), and supplies the economic-change covariate list. Descriptive association only; the paper
+    builds no residualised or expected-modification control, and its main specification carries no firm
+    fixed effects.
+  doi: 10.1111/j.1475-679X.2010.00396.x
+- relationship: extends
+  claim: Reads high year-over-year filing similarity as the absence of news and trades on it — the competing
+    interpretation of the same signal
+  doi: 10.1111/jofi.12885
+- relationship: extends
+  claim: Methodological case against reading text-distance metrics as firm constructs without modelling
+    the document-generating process
+  doi: 10.1111/1475-679X.12123
+- relationship: extends
+  claim: Customer-based brand equity — the dominant brand-measurement tradition, built from consumer-survey
+    items on the rendering; the SCI measures substrate stability upstream of it
+  doi: 10.1177/002224299305700101
+- relationship: extends
+  claim: Knowledge-based view — codification as the mechanism by which specialist knowledge becomes integrable;
+    specification readiness is the firm-year observable of that codification
+  doi: 10.1002/smj.4250171110
+- relationship: extends
+  claim: Resource-based foundations — administrative structure as the binding constraint on growth; the
+    friction tax is that constraint priced
+  doi: 10.1093/oso/9780198753940.003.0011
+- relationship: extends
+  claim: Resource-based view — the VRIN criteria against which a codified substrate is assessed as a resource
+    rather than an administrative artifact
+  doi: 10.1177/014920639101700108
+- relationship: extends
+  claim: Ostensive/performative duality in routines — the specification/execution split the substrate
+    reading depends on, and the reason a codified substrate is not itself evidence of enactment
+  doi: 10.1093/icc/dth070
+- relationship: extends
+  claim: Canonical information-theory reference for the cross-entropy formalism the companion theoretical
+    model rests on
+  doi: 10.1002/047174882x
 contradictions: []
 limitations:
 - description: 'The mechanism tests are simulations, not archival evidence: they establish that the design
@@ -301,6 +340,13 @@ limitations:
     the model's predictions only through their downstream consequences. Direct measurement (conjoint-analysis
     profiles of recipient classes) requires experimental methods outside the archival framework and is
     flagged as a complementary future contribution.
+  severity: moderate
+  addressable: true
+- description: 'The economic-change covariate vector absorbs the measured part of event density, not all
+    of it: unreported and unmeasured events remain in the residual, and no residualised or expected-modification
+    control exists in the prior literature to adopt. The design can therefore bound the event-absence
+    confound and report its magnitude, not remove it, and the SCI coefficient must be read as conditional
+    on the covariate set rather than as purified of event density.'
   severity: moderate
   addressable: true
 repositories:
