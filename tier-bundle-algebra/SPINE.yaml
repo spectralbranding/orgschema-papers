@@ -3,9 +3,11 @@
 # GENERATIVE spine (SPINE_FIRST_DRAFTING_PROTOCOL.md Phase 0.5). Locked BEFORE
 # paper.md prose, per the HARD rule: no drafting begins until this file exists
 # and every prose claim traces to a node here. v0.2.0 supersedes v0.1.0 (see
+# working memo (`[internal path removed]`, v0.2, 2026-05-19).
 # This is a PURE-THEORY conceptual contribution: no author-collected data, no
 # simulation, no computed table values — v0.1 SCHEMA (not to be confused with
 # the paper's own "v0.2" version label) — matching 2026ag's own disposition.
+# The empirical case-coding program (`[internal path removed]`) was
 # EXECUTED 2026-07-29 (triple blinded AI coders; Fleiss' κ = .838; pre-registered
 # Fisher's exact) and returns PRELIMINARY confirmatory support for P6 (see L1 +
 # changelog). The paper itself remains a pure-theory conceptual contribution;
@@ -348,7 +350,7 @@ propositions:
           formally distinct claim (operational/transfer co-dependence at an
           ownership-change event, not design-time independence), not a
           relabeling — per Gemini DR Q3 finding,
-          `research/tier-bundle-algebra/DR_GEMINI_Q3_BALDWIN_CLARK_INFO_HIDING.md`.
+          `[internal path removed]`.
         citation_keys: [baldwin-2000-design-rules-power]
         citation_role: rival_ruled_out
       - type: citation
@@ -468,10 +470,11 @@ propositions:
     evidence:
       - type: analytic
         anchor: >-
-          Constructed from the fresh review's own suggested
-          hybrid-example seed ("a partial T3/T4 fork that preserves T1
-          imprint") and three ready-made falsifiable predictions
-          ([internal doc], Second Grok pass).
+          Constructed from a hybrid-example seed ("a partial T3/T4 fork
+          that preserves T1 imprint") together with three ready-made
+          falsifiable predictions. Authoring provenance for this seed is
+          recorded in the changelog, not here — this field is rendered on
+          export.
     body_sections: ["A Hybrid Bundle the Existing Taxonomy Cannot Name"]
 
   - id: P8
