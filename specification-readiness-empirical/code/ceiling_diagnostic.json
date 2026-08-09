@@ -1,0 +1,17 @@
+{
+  "n_docs": 50,
+  "n_cross_pairs": 200,
+  "bert_within_zero": 0.9974970102310181,
+  "bert_within_operating": 0.9991595193743705,
+  "bert_cross_mean": 0.9793437214195728,
+  "bert_cross_sd": 0.012993397802102034,
+  "bert_separation": 0.01981579795479771,
+  "bow_within_zero": 0.9911073617288071,
+  "bow_within_operating": 0.9949248668515672,
+  "bow_cross_mean": 0.9245578895337754,
+  "bow_cross_sd": 0.03369621182751363,
+  "bow_separation": 0.07036697731779185,
+  "verdict": "NARROW",
+  "reason": "the measure separates unrelated firms only marginally; treat any small difference with suspicion",
+  "post_hoc": true
+}

@@ -1,0 +1,80 @@
+seed=20260809 model=bert-base-uncased target_n=30
+
+[1/5] zero-activity panel (SIC 6770 + no revenue reported in either year)
+  scanned 700 blank-check CIKs
+  +  1 26 Capital Acquisition Corp.                 2021-12-31 -> 2022-12-31  (2451/20597 words)
+  +  2 5:01 Acquisition Corp.                       2020-12-31 -> 2021-12-31  (2610/3477 words)
+  +  3 5V Inc.                                      2016-09-30 -> 2017-09-30  (1500/1500 words)
+  +  4 8i Enterprises Acquisition Corp.             2019-07-31 -> 2020-07-31  (1725/1968 words)
+  +  5 Accelerated Acquisition XVII, Inc.           2013-09-30 -> 2014-09-30  (1036/982 words)
+  +  6 ACCELERATED ACQUISITIONS II INC              2009-12-31 -> 2010-12-31  (756/792 words)
+  +  7 ACCRETION ACQUISITION CORP.                  2021-12-31 -> 2022-12-31  (2405/2728 words)
+  +  8 Ace Global Business Acquisition Ltd          2022-12-31 -> 2023-12-31  (2742/2855 words)
+  +  9 ACKRELL SPAC Partners I Co.                  2020-12-31 -> 2021-12-31  (1840/2324 words)
+  + 10 Acri Capital Acquisition Corp                2022-12-31 -> 2023-12-31  (3528/5184 words)
+  + 11 Advanced Water Technology Holdings, Inc.     2009-12-31 -> 2010-12-31  (2622/2451 words)
+  + 12 ADVANTAGE CAPITAL DEVELOPMENT CORP           2005-03-31 -> 2006-03-31  (4333/5509 words)
+  + 13 Aedan Financial Corp                         2017-12-31 -> 2018-12-31  (295/2103 words)
+  + 14 AERVISION HOLDINGS, INC.                     2012-03-31 -> 2013-03-31  (1312/989 words)
+  + 15 Aetherium Acquisition Corp                   2022-12-31 -> 2023-12-31  (2700/2796 words)
+  + 16 AFH Acquisition IX, Inc.                     2016-10-31 -> 2017-10-31  (958/942 words)
+  + 17 AFH Holding III, Inc.                        2011-12-31 -> 2012-12-31  (1004/1005 words)
+  + 18 AFH Holding IV, Inc.                         2011-12-31 -> 2012-12-31  (880/883 words)
+  + 19 AFH HOLDING V, INC                           2011-12-31 -> 2012-12-31  (470/469 words)
+  + 20 AFH HOLDING VI, INC.                         2011-12-31 -> 2012-12-31  (470/469 words)
+  + 21 AFH HOLDING VII, INC.                        2011-12-31 -> 2012-12-31  (470/469 words)
+  + 22 AfterNext HealthTech Acquisition Corp.       2021-12-31 -> 2022-12-31  (46859/50036 words)
+  + 23 AG Acquisition Group III, Inc.               2024-06-30 -> 2025-06-30  (1722/1728 words)
+  + 24 Ahren Acquisition Corp.                      2021-12-31 -> 2022-12-31  (4416/4192 words)
+  + 25 AIB Acquisition Corp                         2022-12-31 -> 2023-12-31  (14209/21819 words)
+  + 26 Alchemy Investments Acquisition Corp 1       2024-12-31 -> 2025-12-31  (1994/1970 words)
+  + 27 Aldel Financial II Inc.                      2024-12-31 -> 2025-12-31  (4533/4549 words)
+  + 28 ALEXANDER TECH CORP                          2024-04-30 -> 2025-04-30  (1229/1229 words)
+  + 29 Allegro Merger Corp.                         2024-12-31 -> 2025-12-31  (2782/2356 words)
+  + 30 ALPHA WASTEWATER, INC.                       2010-12-31 -> 2011-12-31  (3440/1130 words)
+  zero-activity panel n=30; rejected {'no pair / has revenue': 108, 'item 7 not extractable': 16}
+  fiscal-year distribution: {2006: 1, 2010: 2, 2011: 1, 2012: 5, 2013: 1, 2014: 1, 2017: 2, 2018: 1, 2020: 1, 2021: 2, 2022: 4, 2023: 4, 2025: 5}
+
+[2/5] operating panel (random 10-K filers, same years, revenue > $50M both years)
+  scanned 600 random 10-K filer CIKs
+  +  1 FIRST DATA CORP                              2017-12-31 -> 2018-12-31  (22901/23031 words)
+  +  2 Acadian Asset Management Inc.                2024-12-31 -> 2025-12-31  (28965/29911 words)
+  +  3 NPK International Inc.                       2024-12-31 -> 2025-12-31  (4644/4859 words)
+  +  4 CARPENTER TECHNOLOGY CORP                    2024-06-30 -> 2025-06-30  (11754/12713 words)
+  +  5 TRIPLE-S MANAGEMENT CORP                     2019-12-31 -> 2020-12-31  (19687/10138 words)
+  +  6 Fortune Brands Innovations, Inc.             2024-12-28 -> 2025-12-27  (10375/9941 words)
+  +  7 USA TRUCK INC                                2020-12-31 -> 2021-12-31  (4211/4272 words)
+  +  8 Orion S.A.                                   2024-12-31 -> 2025-12-31  (1433/735 words)
+  +  9 LODGENET INTERACTIVE CORP                    2011-12-31 -> 2012-12-31  (8304/9246 words)
+  + 10 PROJECT SAGE OLDCO, INC.                     2021-12-31 -> 2022-12-31  (7530/7424 words)
+  + 11 US XPRESS ENTERPRISES INC                    2021-12-31 -> 2022-12-31  (8350/8457 words)
+  + 12 DIGITAL RIVER INC /DE                        2012-12-31 -> 2013-12-31  (7916/6373 words)
+  + 13 Arriver Holdco, Inc.                         2020-12-31 -> 2021-12-31  (29872/29139 words)
+  + 14 Anaplan, Inc.                                2021-01-31 -> 2022-01-31  (32023/39644 words)
+  + 15 Pinnacle Summer Investments, Inc.            2010-12-31 -> 2011-12-31  (7174/7175 words)
+  + 16 MOMENTIVE GLOBAL INC.                        2021-12-31 -> 2022-12-31  (8676/8351 words)
+  + 17 BARRACUDA NETWORKS INC                       2016-02-29 -> 2017-02-28  (9361/8899 words)
+  + 18 Independence Contract Drilling, Inc.         2022-12-31 -> 2023-12-31  (16268/17369 words)
+  + 19 CSI Compressco LP                            2022-12-31 -> 2023-12-31  (6145/5263 words)
+  + 20 PETSMART INC                                 2013-02-03 -> 2014-02-02  (5700/5780 words)
+  operating panel n=20; rejected {'item 7 not extractable': 8, 'no pair / revenue below floor': 457, 'year already filled': 115}
+
+[3/5] embedding with bert-base-uncased (pinned; do not substitute)
+  zero-activity: 5/30
+  zero-activity: 10/30
+  zero-activity: 15/30
+  zero-activity: 20/30
+  zero-activity: 25/30
+  zero-activity: 30/30
+  operating: 5/20
+  operating: 10/20
+  operating: 15/20
+  operating: 20/20
+
+[4/5] statistics
+  SCI (BERT, Item 7) — PRIMARY: zero M=.997 (SD .005) vs operating M=.999 (SD .001); d=-.457, p = .065
+  SCI (bag-of-words, Item 7): zero M=.991 (SD .018) vs operating M=.995 (SD .009); d=-.248, p = .335
+  SCI (BERT, Item 1): zero M=.998 (SD .005) vs operating M=.998 (SD .004); d=-.005, p = .987
+  length-matched (middle tercile, 2082-7174 words): zero M=.998 vs operating M=.999, d=-.866, p = .036
+
+[5/5] VERDICT: INDETERMINATE — the difference does not reach the pre-registered threshold in either direction
