@@ -200,6 +200,26 @@ For each case in the v1.0 corpus, the coder needs:
 
 ## 3. Locked v1.0 protocol (partner-approved 2026-05-19; most academically robust path at each dimension)
 
+### Instrument pins — the exact model identifiers as called
+
+A family name is not an instrument. These are the identifiers the coding harness
+actually sent, recovered from the `model_version` field of every call record in
+the published call logs rather than from any human-written note:
+
+| Coder role | Identifier as called | Logged calls |
+|---|---|---|
+| Extractor / rater A | `claude-opus-4-8` | 84 |
+| Extractor / rater B | `gemini-3.1-pro-preview` | 104 |
+| Extractor / rater C | `grok-4.3` | 82 |
+
+**The `-preview` suffix is part of the served identifier, not a placeholder.** The
+bare `gemini-3.1-pro` is not served on this endpoint and returns 404, so a
+reproducer who types the short human-readable form the Acknowledgments use will
+get no response at all. Recorded here in 2026-08-09 because the run predates the
+convention of pinning literally in the protocol; the run itself is unaffected and
+no coded value changes. Being a pre-registered instrument, these pins are frozen:
+a newer model is a reason to keep them, never to change them.
+
 | Dimension | Locked choice | Rationale |
 |---|---|---|
 | Coding granularity | **Binary (1a) as baseline + ordinal (1b) on a 10-case sub-sample** | Binary 2×2 chi-square/Fisher's exact is the conventional analytic default; ordinal sub-sample acts as robustness check against reviewer pushback. |
