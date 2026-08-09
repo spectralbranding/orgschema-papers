@@ -338,7 +338,7 @@ propositions:
         citation_role: theoretical_predecessor
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION (2026-07-29, review-stage gap closure). Direct
+          Direct
           rival/near-neighbor the cascade rule must be argued against, not
           merely cited alongside: Baldwin & Clark's own visible/hidden
           information-hiding asymmetry already encodes a directional
@@ -352,7 +352,7 @@ propositions:
         citation_role: rival_ruled_out
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. Direct empirical bridge from Baldwin-Clark-style
+          Direct empirical bridge from Baldwin-Clark-style
           modularity to M&A specifically: acquired business units are more
           likely to be structurally recombined (split/merged/transferred)
           than internally developed ones — closest existing empirical anchor
@@ -362,7 +362,7 @@ propositions:
         citation_role: theoretical_predecessor
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. Precedent for information-hiding (visible
+          Precedent for information-hiding (visible
           standardized interfaces) as a PREREQUISITE for firm-boundary
           separation specifically (vertical disintegration in mortgage
           banking) — supports the cascade rule's claim that visibility and
@@ -371,7 +371,7 @@ propositions:
         citation_role: theoretical_predecessor
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. Direct empirical anchor for the cascade rule's
+          Direct empirical anchor for the cascade rule's
           predictive claim, replacing sole reliance on Larsson & Finkelstein
           (1999): structural recombination following acquisition is
           path-dependent, extending the "which components co-fork" question
@@ -414,7 +414,7 @@ propositions:
         citation_role: methodological_source
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION (2026-07-29). The genuine organization-theory
+          The genuine organization-theory
           anchor for reframing the admissibility predicate as a formal answer
           to "when does organizational identity become structurally
           inseparable from a component," per Gemini DR Q4 finding
@@ -425,7 +425,7 @@ propositions:
         citation_role: theoretical_predecessor
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. Identity as a coordinating mechanism; separating
+          Identity as a coordinating mechanism; separating
           an asset from its identity destroys the value that mechanism
           creates — direct theoretical support for why identity-fusion makes
           a tier structurally non-conveyable, not merely legally
@@ -434,7 +434,7 @@ propositions:
         citation_role: theoretical_predecessor
       - type: citation
         anchor: >-
-          PHASE-4 ADDITION. Interconnectedness of asset stocks as an
+          Interconnectedness of asset stocks as an
           isolating mechanism against imitation/transfer — the RBV-native
           precursor concept the admissibility predicate gives a structural
           geometry to (which pairs are interconnected, not merely that
@@ -510,13 +510,14 @@ propositions:
     ruled_out_by: [P1, P2, P3]
     rules_out_status: rejected
     reasoning: >-
-      A 2026-07-28 two-round adversarial deep-research stress test (Grok 4.3
-      + Gemini 3.1 Pro, independently run) tested the continuous-manifold
-      proposal and rejected it twice; in both rounds, unprompted, both
-      models independently proposed category theory / a typed
-      fork-merge-transfer algebra as the correct alternative for the
-      transaction side of the problem specifically — this paper's actual
-      proposal, not the one that was rejected.
+      The continuous-manifold proposal was tested twice against the discrete
+      structure of the object and failed on the same grounds each time:
+      institutional facts do not vary continuously, so there is nothing for a
+      derivative to be taken of, and the tier instruments are ordinal and
+      ipsative rather than Euclidean, so distance along them is not a metric
+      the kinematics would need. The typed algebra developed here is the
+      alternative that survives those two objections, and it is the
+      transaction-side formalism the rejection pointed toward.
     body_sections: ["Theoretical Foundations (rival ruled out)"]
 
   - id: C1
