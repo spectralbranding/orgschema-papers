@@ -11,6 +11,7 @@
 #
 # The worked-demonstration corpus is 30 documented public M&A cases coded with the
 # instrument; the coding artifacts (harness, per-call JSONL logs, adjudication
+# ledger, datasets) live at [internal path removed] and are published as the
 # paper's computational artifact per PAQS 37 WHEN the paper publishes. The paper is
 # deliberately CITATION-INDEPENDENT of the (held, unpublished) tier-bundle theory
 # paper it demonstrated on — the demonstration is described as an M&A-integration
@@ -23,9 +24,7 @@ provenance: generative
 title: >-
   A Blinded Multi-LLM Content-Coding Instrument: Protocol Specification and
   Inter-Coder Reliability Validation on an Organizational Corpus
-status: >-
-  Draft; not yet submitted. Authoring provenance recorded in the changelog
-  (internal record only).
+status: "Not exported; see the paper's own version and DOI."
 
 thesis: >-
   Content coding — converting documentary evidence into structured analyzable
