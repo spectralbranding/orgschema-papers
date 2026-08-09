@@ -349,6 +349,14 @@ limitations:
     on the covariate set rather than as purified of event density.'
   severity: moderate
   addressable: true
+- description: 'The index''s working range is narrow relative to its nominal scale: unrelated firms score
+    .979 under the primary construction against .999 within firm, so the between-firm variation every
+    hypothesis relies on is compressed into roughly the top two percent of the scale. At that resolution
+    a parsing or preprocessing choice can move the measure as much as a substantive change in the firm,
+    and the bag-of-words construction the design demotes to secondary carries materially more range than
+    the contextual-embedding primary. The primary/secondary ordering is therefore open rather than settled.'
+  severity: moderate
+  addressable: true
 repositories:
 - platform: GitHub
   url: https://github.com/spectralbranding/orgschema-papers/tree/main/specification-readiness-empirical

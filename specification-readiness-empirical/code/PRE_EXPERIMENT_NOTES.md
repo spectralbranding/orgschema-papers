@@ -1,7 +1,7 @@
 # Pre-experiment notes — the zero-activity-filer placebo (2026an)
 
-**Written 2026-08-09, BEFORE the run.** Anti-HARKing register, in the pattern of
-`research/papers/2026am/code/PRE_EXPERIMENT_NOTES.md`. Everything below is fixed before any result
+**Written 2026-08-09, BEFORE the run.** Anti-HARKing register, in the pattern of the pre-experiment
+notes for the companion theoretical paper (2026am). Everything below is fixed before any result
 is seen; the post-experiment report records what actually happened, including any deviation.
 
 ## Why this runs now
@@ -112,5 +112,5 @@ User-Agent.
 Run command:
 
 ```
-uv run python research/papers/2026an/code/zero_activity_placebo.py
+uv run python code/zero_activity_placebo.py
 ```

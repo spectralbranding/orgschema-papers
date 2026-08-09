@@ -23,7 +23,7 @@ unrelated firms in different years. Those pairs share nothing but the genre.
 Reuses the placebo's cached filings, so it re-runs offline in about a minute.
 
 Run:
-    uv run --with torch --with transformers python research/papers/2026an/code/ceiling_diagnostic.py
+    uv run --with torch --with transformers python code/ceiling_diagnostic.py
 """
 
 from __future__ import annotations

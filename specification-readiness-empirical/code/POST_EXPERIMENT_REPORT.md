@@ -130,8 +130,8 @@ here. It was written after seeing the ceiling and asks a question the pre-regist
 ## Reproduce
 
 ```
-uv run --with torch --with transformers python research/papers/2026an/code/zero_activity_placebo.py
-uv run --with torch --with transformers python research/papers/2026an/code/ceiling_diagnostic.py
+uv run --with torch --with transformers python code/zero_activity_placebo.py
+uv run --with torch --with transformers python code/ceiling_diagnostic.py
 ```
 
 Fixed seed 20260809; SEC EDGAR only, public and unauthenticated. The filing cache is git-ignored

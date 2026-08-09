@@ -11,8 +11,8 @@ Everything here is fixed in advance by `PRE_EXPERIMENT_NOTES.md`, which was writ
 the first run. Read it before changing anything in this file -- the measure is the PUBLISHED
 one and may not be tuned, and the decision rule is stated there in the paper's own words.
 
-MODEL PINNING: this is study code under `research/papers/`, so it pins its model literally
-(`bert-base-uncased`) and must NEVER import `research/code/model_registry.py`. A newer
+MODEL PINNING: this is study code for a pre-registered run, so it pins its model literally
+(`bert-base-uncased`) and must NEVER resolve it through the shared model registry. A newer
 embedding model is a reason to keep this pin, not to change it -- the point of the placebo is
 that it runs the index the paper published, not a better one.
 
@@ -20,9 +20,9 @@ Data: SEC EDGAR only. Public, no licence, no authentication. Fair-access rate li
 with a declared User-Agent per https://www.sec.gov/os/accessing-edgar-data.
 
 Run:
-    uv run --with torch --with transformers python research/papers/2026an/code/zero_activity_placebo.py
+    uv run --with torch --with transformers python code/zero_activity_placebo.py
 
-Outputs (all under research/papers/2026an/code/output/):
+Outputs (written to an `output/` directory beside this script):
     cache/            fetched filings + extracted sections, so re-analysis needs no re-fetch
     panel_zero.csv    the zero-activity panel, one row per firm-year pair
     panel_operating.csv

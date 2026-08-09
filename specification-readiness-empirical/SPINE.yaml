@@ -220,6 +220,22 @@ methods:
 # ============================================================================
 # Measurements — the headline numbers derived from the simulations
 # ============================================================================
+  - id: M_placebo
+    statement: >-
+      Zero-activity placebo and range diagnostic. Two consecutive annual filings
+      per firm are pulled from the public filings archive; the narrative
+      discussion section is extracted and the published index computed unchanged
+      over contextual embeddings, with a bag-of-words variant reported alongside.
+      The zero-activity panel is screened on blank-cheque industry classification
+      plus no revenue reported in either fiscal year; the comparison panel is a
+      seeded random draw of filers in the same fiscal years with revenue above a
+      fixed floor in both. Panels, decision rule and robustness arms were fixed in
+      writing before the run; the range diagnostic that followed is labelled
+      post-hoc.
+    type: "empirical_placebo"
+    preregistered: true
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Companion Computation Script"]
+
 measurements:
   - id: m_phase_shift
     statement: >-
@@ -485,6 +501,46 @@ findings:
     falsifier: "If the remediated estimator does not recover nominal Type I coverage, F3 fails."
     body_sections: ["§Mechanism Tests — Post-hoc deviation transparency"]
 
+  - id: F3
+    statement: >-
+      Structurally zero-activity filers do not score above matched operating firms
+      on the published index. On 30 blank-cheque filers reporting no revenue in
+      either year against 20 matched operating firms in the same fiscal years, the
+      primary measure returned M = .997 (SD = .005) for the zero-activity panel
+      against M = .999 (SD = .001) for the operating panel — Cohen's d = -.457,
+      Welch p = .065, verdict inconclusive against the pre-registered rule, with
+      the predicted direction not observed in any arm. The premise the confound
+      rested on does not hold in this population: a blank-cheque filer's narrative
+      section is short (median 2,032 words against 8,644) and composed almost
+      entirely of items that move year to year, while a large operating filer's is
+      long and dominated by boilerplate that does not.
+    type: "empirical_placebo"
+    generating_method: M_placebo
+    antecedents: [RC4, A4]
+    falsifier: >-
+      If a larger or differently-constructed zero-activity panel scores above
+      matched operating firms at the pre-registered threshold, F3 fails and the
+      original one-signed reading of A4 is restored.
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
+  - id: F4
+    statement: >-
+      The published index has a narrow working range. Scored across 200 pairs of
+      unrelated firms, the index returned M = .979 (SD = .013) under the primary
+      contextual-embedding construction and M = .925 (SD = .034) under the
+      bag-of-words construction, against within-firm values of .999 and .995
+      respectively. The measure therefore separates unrelated firms in the correct
+      direction and is not degenerate, but the separation available to it is
+      roughly two percent of its nominal scale under the primary construction and
+      seven percent under the secondary — so the secondary construction carries
+      about three and a half times the range of the primary.
+    type: "measurement_property"
+    generating_method: M_placebo
+    antecedents: [RC4]
+    falsifier: >-
+      If cross-firm scores under the primary construction fall well below
+      within-firm scores on a wider sample, the narrow-range reading is wrong.
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
+
 # ============================================================================
 # Robustness checks — the design's secondary arms
 # ============================================================================
@@ -529,8 +585,12 @@ robustness_checks:
       to that literature. A placebo computes the published index unchanged on a
       panel of structurally zero-activity filers against matched operating firms:
       if the zero-activity panel scores at or above the operating panel, the
-      event-absence confound is demonstrated on the paper's own measure.
+      event-absence confound is demonstrated on the paper's own measure. The
+      placebo has been executed (n = 30 zero-activity, n = 20 matched operating);
+      it returned an inconclusive verdict against its pre-registered rule and did
+      not observe the predicted direction. See F3 and F4.
     type: "confound_control"
+    executed: true
     sensitivity_of: [P3, P4, P5, P6, P7]
     body_sections: ["§Data and Measurement — Specification Coherence Index (SCI)", "§Identification Strategy — Continuous 10-K coherence as primary treatment", "§Identification Strategy — Threats register and Oster bounds (Table 2)"]
 
@@ -674,6 +734,19 @@ limitations:
     severity: "residual-confound"
     affects: [P2, P3, P4, P5, P6, P7]
     body_sections: ["§Discussion — Boundary conditions and limitations", "§Data and Measurement — Specification Coherence Index (SCI)"]
+  - id: L8
+    statement: >-
+      The index's working range is narrow relative to its nominal scale: unrelated
+      firms score .979 under the primary construction against .999 within firm, so
+      the between-firm variation every hypothesis relies on is compressed into
+      roughly the top two percent of the scale. At that resolution a parsing or
+      preprocessing choice can move the measure as much as a substantive change in
+      the firm, and the bag-of-words construction the design demotes to secondary
+      carries materially more range than the contextual-embedding primary. The
+      primary/secondary ordering is therefore open rather than settled.
+    severity: "measurement-resolution"
+    affects: [P2, P3, P4, P5, P6, P7]
+    body_sections: ["§Discussion — Boundary conditions and limitations", "§Identification Strategy — Robustness: four-event SCI + comment-letter exposure"]
 
 # ============================================================================
 # Negative findings — what the simulation surfaced against expectation

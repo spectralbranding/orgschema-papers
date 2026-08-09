@@ -1,0 +1,3 @@
+# Fetched SEC filings and XBRL responses, cached so the analysis re-runs without
+# re-fetching EDGAR. Reproducible by re-running the script (~1.6 GB), never committed.
+output/cache/
