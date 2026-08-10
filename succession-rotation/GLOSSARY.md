@@ -6,6 +6,9 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
 
 *Terms introduced by this paper*
 
+- **Acquirer operating posture** (write: `acquirer operating posture`)
+  - Whether a buyer supplies its own operating principal or must acquire the target's person-carried residual personally. The second of the two facts that generate the event space — the first being whether the going concern is conveyed to a counterparty — and therefore the index the persistence column is read against on the sale side. A buyer with a platform takes delivery of the artifact layer and writes off the person layer; a buyer without one (a search fund, an individual acquirer, a standalone-hold sponsor) must absorb the residual, and is rate-limited by exception arrival in doing so.
+  - first use: Which Tier Binds
 - **Divergence signature** (write: `divergence signature`)
   - The testable pattern the theory predicts: the pre-transition investments that predict a high realized sale price and those that predict a low-disruption handover are different investments. A crossover contrast rather than an average treatment effect, and the pattern that discriminates this account from the single-portfolio account under which one preparation programme raises both.
   - first use: The Testable Signature

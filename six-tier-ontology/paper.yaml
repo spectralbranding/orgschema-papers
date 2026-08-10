@@ -14,7 +14,7 @@ meta:
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19895813
   date: '2026-06-26'
-  venue: AMR-tradition conceptual theory journal
+  venue: Preprint
   license: CC-BY-4.0
   keywords:
   - mergers and acquisitions
@@ -24,22 +24,22 @@ meta:
   - integration failure
   - form-invariance
   - separability diagnostic
-  abstract: 'Mergers and acquisitions continue to destroy value at high rates because scholars and practitioners
-    lack a shared ontology specifying which organizational layers are transferred and how failures propagate
-    across them. This paper develops a six-tier ontology of the acquisition target — Owner Intent, Business
-    Model, Business Entity, Product, Process, and Organization — each characterized by a distinct governor,
-    specification surface, and transferability mode. The tiers form dual oppositely directed hierarchies:
-    a service hierarchy running upward from Organization to Intent and a constraint hierarchy running
-    downward from Intent to Organization. The constraint hierarchy determines integration sequencing;
-    shocks propagate bidirectionally, generating seven falsifiable propositions about failure cascades.
-    The framework is form-invariant across for-profit, NGO, and cooperative entities via explicit substitution
-    rules, with Tier 2, 4, and 5 substitutions provisional. The ontology connects previously siloed streams
-    — cultural distance, executive turnover, business-model misfit, and integration capabilities — under
-    a single transferability logic, explaining residual variance documented in meta-analyses [@king-2004-metaanalyses-postacquisition-performance;
+  abstract: 'Mergers and acquisitions destroy value at high rates because scholars and practitioners lack
+    a shared ontology specifying which organizational layers transfer and how failures propagate across
+    them. This paper develops a six-tier ontology of the acquisition target — Owner Intent, Business Model,
+    Business Entity, Product, Process, and Organization — each with a distinct governor, specification
+    surface, and transferability mode. The tiers form dual oppositely directed hierarchies: a service
+    hierarchy upward from Organization to Intent and a constraint hierarchy downward from Intent to Organization.
+    The constraint hierarchy determines integration sequencing; shocks propagate bidirectionally, generating
+    seven falsifiable propositions about failure cascades. The framework is form-invariant across for-profit,
+    NGO, and cooperative entities via substitution rules, with Tier 2, 4, and 5 provisional. The ontology
+    connects siloed streams — cultural distance, executive turnover, business-model misfit, integration
+    capabilities — under one transferability logic, explaining residual variance in meta-analyses [@king-2004-metaanalyses-postacquisition-performance;
     @king-2021-metaanalytic-integration-acquisition]. The primary contribution is a generalizable theory
     of organizational separability under ownership change, with implications for theory of the firm and
     dynamic capabilities. A Six-Tier Separability Diagnostic is derived as a theoretical implication;
-    propositions carry confirming and falsifying criteria.'
+    a companion large-N test bounds an adjacent structural claim to a pre-close screen for one failure
+    mode, not a general predictor.'
 claims:
 - id: SF1
   type: proposition
@@ -355,6 +355,31 @@ dependencies:
     that compounds the Product-Process disruption (P4).
   critical: false
   doi: 10.5281/zenodo.18945591
+- relationship: extends
+  claim: 'The compositional grammar over this paper''s tier graph: deal types as typed bundles of fork
+    operations, with cascade rules and admissibility conditions inherited from the collapse patterns.
+    The companion the Future-Research subsection announced, now published and cited.'
+  critical: false
+  doi: 10.5281/zenodo.21756077
+- relationship: tests
+  claim: Large-N confirmatory necessary-condition test of the closing-time cascade gap. The result BOUNDS
+    the propositions rather than confirming them, and reaches only P4F and P5F, by analogy (closing-time
+    transfer content versus acquirer-imposed post-close revision). It administered no separability diagnostic,
+    so it supplies no part of the STSD's predictive-validity evidence and is cited on that scope in the
+    propositions preamble, the validation agenda and Limitations.
+  critical: false
+  doi: 10.5281/zenodo.21755969
+- relationship: applies
+  claim: 'Supplies the measurement discipline the STSD validation agenda requires: coding scheme registered
+    before data, disjoint evidence per coder, reliability reported rather than assumed.'
+  critical: false
+  doi: 10.5281/zenodo.21756063
+- relationship: extends
+  claim: 'Derives a second, persistence column from this paper''s primitives for the case where nothing
+    is conveyed to a counterparty, and in doing so names the assumption Table 1''s transferability-mode
+    column left unstated: that the buyer supplies an operating principal (C3).'
+  critical: false
+  doi: 10.5281/zenodo.21868658
 - relationship: applies
   claim: The Projection Cascade supplies the formal junction-localized rank- deficiency bound + sub-additivity
     inequality the dual-hierarchy framework proposes at the ontological level (bidirectional propagation).
@@ -365,7 +390,14 @@ limitations:
 - description: 'The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end empirical support;
     P6F is partially documented but not as an end-to-end chain. The propositions are derived from the
     dual hierarchy and consistent with adjacent single-layer findings, not yet traced in one integrated
-    study.'
+    study. One adjacent structural claim has since been tested at large N, and the result BOUNDS rather
+    than confirms — a closing-time product-process / process-organization transfer gap is a necessary
+    condition for cascade-type failure only in a bounded form (failure rate conditional on no detected
+    gap is low but not zero; roughly half of failures carried a gap), so structural conformance is a pre-close
+    negative screen for one failure mode and not a general predictor. That bound reaches P4F and P5F by
+    ANALOGY only: its construct is closing-time transfer content, whereas every proposition here concerns
+    acquirer-imposed post-close revision. The remaining five propositions are untouched by it, and none
+    of the seven may be read as claiming more.'
   severity: moderate
   addressable: true
 - description: 'Form-invariance is provisional: only the Tier 1 and Tier 3 substitutions are externally
@@ -373,9 +405,14 @@ limitations:
     validation.'
   severity: moderate
   addressable: true
-- description: The STSD is currently a structured judgment instrument with no inter-rater reliability
-    data and no published predictive-validity evidence; validation (Cohen's kappa >= .70 per tier, then
-    predictive and cross-form studies) is the future-research agenda.
+- description: 'The STSD is currently a structured judgment instrument with no inter-rater reliability
+    data and no published predictive-validity evidence; validation (Cohen''s kappa >= .70 per tier, then
+    predictive and cross-form studies) is the future-research agenda. The large-N companion does NOT supply
+    any part of that evidence: it administered no diagnostic, coding a sibling structural construct from
+    closing documents against a different outcome. It constrains how the predictive-validity study should
+    be SPECIFIED — as a screen-validation design rather than a strong-predictor test — and the instrument
+    companion supplies a measurement discipline, itself an instance of an established external content-analysis
+    standard rather than a substitute for it.'
   severity: moderate
   addressable: true
 repositories:

@@ -1,7 +1,7 @@
 # Companion computation — 2026bm
 
-One script, one computation. It reproduces **Table 1** of the paper and the three figures quoted in
-the paragraph beneath it.
+One script, one computation. It reproduces **Table 2** of the paper — the power table — and the
+figures quoted in the paragraph beneath it.
 
 ## What is here
 
@@ -22,17 +22,20 @@ itself, so a clean checkout reproduces the published numbers exactly.
 
 ## What it reproduces
 
-**Table 1** — the smallest per-arm sample size reaching power of .80 for the crossover contrast, over
+**Table 2** — the smallest per-arm sample size reaching power of .80 for the crossover contrast, over
 three values of the correlation between the two investments and three per-arm standardised effects.
+Entries are the smallest value on the searched grid (40, 50, 60, 75, 100, 125, 150, 200, 300, 400 per
+arm), not the smallest value in principle.
 
-It also produces the three figures the paper quotes when reading that table: the equality of crossover
-power and single-slope power at zero correlation (.352 against .349 at n = 40; .719 against .720 at
-n = 100), which is why the paper states that the factor of two falls on the total sample rather than
-on the contrast.
+It also produces the figures the paper quotes when reading that table: the near-equality of crossover
+power and single-slope power at zero correlation in the beta = .25 column (.352 against .349 at
+n = 40; .719 against .720 at n = 100), which is why the paper states that the factor of two falls on
+the total sample rather than on the contrast. The equality is asymptotic, not exact — at beta = .45
+and n = 40 the same comparison is .854 against .865.
 
 The seed is fixed at `20260810` and the output is deterministic, so the recorded run in `output/`
 should match a fresh run byte for byte. Each cell is 20,000 replications at a two-sided alpha of .05.
-If a future revision changes any number, the paper's Table 1 must be updated in the same commit — the
+If a future revision changes any number, the paper's Table 2 must be updated in the same commit — the
 script is the ground truth for every value the paper calls simulated.
 
 ## Provenance

@@ -39,10 +39,12 @@ boundary_conditions:
       created_at: "2026-08-10"
   - id: C2
     statement: >-
-      The event is REPLACEMENT, not removal: the occupant of Tier 1 is replaced, the registered
-      entity persists, and nothing is conveyed to a counterparty. A leveraged handover that transfers
-      operating control and ownership together is a mixed event and is out of scope -- excluded, not
-      controlled for.
+      The event is REPLACEMENT, not removal: the occupant of Tier 1 is replaced, the going concern is
+      not conveyed to any counterparty, and the registered entity carries on operating the same
+      business. A leveraged handover that transfers operating control and ownership together is a
+      mixed event and is out of scope -- excluded, not controlled for. Per P9 this is one cell of a
+      two-by-two rather than one pole of a dichotomy: C2 selects the cell in which the GOING CONCERN
+      is NOT conveyed and the incoming operating principal MUST acquire the person-carried residual.
     provenance:
       created_by: "author"
       created_at: "2026-08-10"
@@ -50,6 +52,11 @@ boundary_conditions:
     statement: >-
       Exception resolution is not already fully delegated downward at the time of the transition.
       Where it is, the residual sits at Tier 6 rather than Tier 5 and is not disturbed by this event.
+      MEASUREMENT NOTE: unlike the other four frame conditions, this one is NOT verifiable from an
+      administrative record -- the locus of exception resolution is exactly the quantity NF2 reports
+      no dataset collects. The design must therefore carry it as a record-verifiable PROXY (the
+      absence of a separately titled operating manager on the register) and say that it is a proxy,
+      or establish it from an informant and forfeit the record-verifiability claim for this condition.
     provenance:
       created_by: "author"
       created_at: "2026-08-10"
@@ -220,9 +227,11 @@ findings:
     body_sections: ["The Testable Signature -- Power"]
   - id: F2
     statement: >-
-      At zero correlation between the two investments the crossover test has exactly the power of a
-      single standardised slope at the same per-arm n (.352 against .349 at n = 40; .719 against .720
-      at n = 100), because the contrast is twice the effect and carries four coefficient variances and
+      At zero correlation between the two investments the crossover test has ESSENTIALLY the power of
+      a single standardised slope at the same per-arm n. The quoted pairs are the beta = .25 column
+      (.352 against .349 at n = 40; .719 against .720 at n = 100), and the equality is asymptotic
+      rather than exact: at beta = .45 and n = 40 the same comparison is .854 against .865. The
+      mechanism is that the contrast is twice the effect and carries four coefficient variances, and
       the two cancel. The factor of two therefore falls on the TOTAL sample, not on the contrast.
     source_measurements: []
     generating_method: M1
@@ -244,7 +253,10 @@ negative_findings:
   - id: NF1
     statement: >-
       No firm-level dataset in the audited set measures process documentation coverage. The large
-      management-practice instruments all descend from a single questionnaire grid and each contains
+      management-practice instruments -- the World Management Survey interview grid and the
+      Management and Organizational Practices Survey re-fielded from it through national statistical
+      programmes, NAMED so the audit's key claim is checkable -- all descend from a single
+      questionnaire grid and each contains
       exactly one item touching operational problems, which in every case scores the RESPONSE MODE to
       a problem rather than the share of ordinary operation that is written down. BOUNDED CLAIM: the
       audit covered five frame families at instrument level, with unobtained sources recorded as
@@ -324,9 +336,12 @@ negative_findings:
   - id: NF6
     statement: >-
       The roughly 80/20 codification-versus-personalization split is a PRESCRIPTION in a practitioner
-      essay, not an observed equilibrium, and subsequent empirical work reports that firms do not hold
-      the ratio and that deviating from it does not degrade performance. It therefore cannot serve as
-      a phenomenon the theory explains.
+      essay, not an observed equilibrium, and subsequent empirical work measuring the two directly in
+      product-development units reports that firms do not hold the ratio. It therefore cannot serve as
+      a phenomenon the theory explains. NARROWED: the stronger companion claim -- that DEPARTING from
+      the ratio does not degrade performance -- is a different statement from a null on a moderator,
+      is not checked against the primary text at composition level, and is no longer relied on. The
+      "firms do not hold the ratio" clause alone carries the demotion from evidence to vocabulary.
     expected_observation: >-
       Evidence that firms converge on the ratio as an equilibrium outcome.
     source_method: "Phase-2 targeted literature search"
@@ -361,9 +376,11 @@ stylized_facts:
       competitive sectors.
     aggregates_findings: []
     aggregation_logic: >-
-      External result, single country (Italian SMEs), with mean-reversion controls and family-size
-      instruments. Carried as a boundary object because the two accounts predict it differently, not
-      as evidence generated here.
+      External result, single country (Italian SMEs). Carried as a boundary object because the two
+      accounts predict it differently, not as evidence generated here. NARROWED: the source's design
+      features -- mean-reversion controls and family-size instruments -- are recorded in the substrate
+      from a secondary synthesis and are NOT checked against the primary text, so prose describes the
+      finding and not the specification until they are.
     uniquely_explained_by: >-
       A competitive sector generates exceptions at a higher rate, so the person-carried Tier-5
       residual is drawn on more often and its loss bites harder and sooner; a previously good
@@ -493,6 +510,81 @@ derivations:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["Why the Design Cannot Yet Be Run"]
+  - id: D7
+    statement: >-
+      The two events the paper works with are not primitive. Each is a bundle of two independent
+      binary facts -- is the GOING CONCERN conveyed to a counterparty, and must the incoming operating
+      principal acquire the person-carried residual -- and the two facts generate a two-by-two rather
+      than a dichotomy. Removal as used here is (conveyed, residual not acquired); replacement is
+      (not conveyed, residual acquired); the fourth cell, (conveyed, acquired), is an ordinary
+      arm's-length sale to a buyer who brings no operating principal, and inherits BOTH disturbances
+      at once: legal continuity is disturbed and priced as under removal, and the person-carried
+      residual is at risk as under replacement.
+      FACT 1 IS ECONOMIC, NOT REGISTRAR-LEVEL, and the distinction decides the population's modal
+      case. In owner-operated firms the third-party sale is frequently an ASSET purchase: the buyer
+      takes assets, contracts and goodwill into a new vehicle and the seller's registered entity
+      persists as a shell. A fact stated as "is the entity conveyed" sorts that transaction with the
+      successions, which is backwards -- nothing about the seller's surviving shell keeps the
+      business's legal standing intact. Conveyance of the GOING CONCERN is satisfied by a share sale
+      and by an asset sale alike, and is what actually fires the legal disturbance: assignment,
+      consents, change-of-control, re-registration, licences that do not travel.
+      FACT 2 IS NOT THE BARE REPLACEMENT FACT, and the table says so rather than hiding it. What
+      person continuity turns on is whether the incoming principal must ACQUIRE the residual, which
+      is a judgment about the replacement's relation to the residual and not a registrar fact. A
+      platform acquirer that installs its own principal has replaced the principal while writing the
+      residual off; a management buy-in successor who already holds the residual has replaced the
+      principal without acquiring anything. The bare replacement fact is a separate, record-verifiable
+      third fact, and the design carries it as such.
+      THE TABLE IS NOT THE WHOLE EVENT SPACE. It crosses two facts over CLEAN CONTROL TRANSFERS.
+      Liquidation and dissolution, partial or staged conveyance (minority sale, gradual equity
+      release), and management buyouts are not binary on both facts and lie outside it; the frame
+      excludes buyouts explicitly, and dissolution is retained as an OUTCOME within an arm rather than
+      as a cell.
+    from: [P3]
+    to: P9
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Which Tier Binds"]
+  - id: D8
+    statement: >-
+      In the (conveyed, replaced) cell the buyer must absorb the person-carried residual personally,
+      and P5 says that absorption is rate-limited by exception arrival. An instrument that holds the
+      incumbent in place for a fixed period therefore supplies the one input no payment structure
+      otherwise supplies: elapsed operating time with the incumbent present. The retention window an
+      earn-out enforces is thus separable from the contingent payment it is bundled with, and the two
+      halves do different work. GROUNDED in the time-compression vocabulary already carrying P5, not
+      in a fresh mechanism: an asset accumulable only by elapsed exposure cannot be bought as a STOCK,
+      so a buyer who needs it has one remaining instrument -- purchase access to the FLOW that
+      produces it. A retention clause conveys a fixed quantity of operating time with the incumbent
+      present, which is that flow. Without this step P10 reads as an ad hoc rescue of a
+      counterexample.
+      RECONCILIATION WITH P5, required because the two read as contradictory on their face. P5 says
+      exposure cannot be purchased; P10 says a retention window is a priced purchase of it. Both hold
+      once the object of purchase is distinguished from its rate: money cannot COMPRESS elapsed
+      exposure time, because the exception-arrival rate is set by the business, but money can buy
+      ACCESS to the flow that produces it. A buyer can pay for the incumbent to be present for N
+      months; no buyer can pay to make N smaller. P5 denies the second, P10 asserts the first, and
+      the pair is consistent.
+      P10 IS ADDITIVE TO THE STANDARD READING, NOT A REPLACEMENT FOR IT. The established finance
+      treatment reads the earn-out as a response to valuation disagreement under information
+      asymmetry, and reads retention within the same instrument. That reading is the rival account's
+      home ground and reaches the observation first; P10 adds a second function to the retention half
+      rather than displacing the first.
+      THE OBSERVATION IS NOT DIAGNOSTIC ON ITS OWN. At least three further accounts predict
+      buyer-imposed retention: enforcement of the contingent payment itself (a seller who walks cannot
+      be held to an earn-out target, which interlocks the two halves), relationship and customer
+      continuity (conceded to the rival at A2), and hold-up prevention over relationship-specific
+      investment. Inferring the constraint from the prevalence of retention affirms the consequent,
+      and the derivation must say so.
+    from: [P5, P9]
+    to: P10
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Rival Account"]
 
 # ---------------------------------------------------------------------------
 # Propositions -- the theoretical claims. Two contributions, not three.
@@ -561,16 +653,24 @@ propositions:
       created_at: "2026-08-10"
   - id: P3
     statement: >-
-      Removal disturbs legal continuity and prices artifact continuity, while replacement disturbs
-      only person continuity. The two events therefore bind on different tiers, and preparation that
-      raises value under one does not thereby raise value under the other.
+      RESTRICTED TO TWO CELLS OF P9's PARTITION, and stated over the cells rather than over the event
+      names. Where the going concern is conveyed to a buyer who supplies its own operating principal,
+      the event disturbs legal continuity and prices artifact continuity; where the going concern is
+      not conveyed and the incoming principal must acquire the person-carried residual, the event
+      disturbs only person continuity. Those two events therefore bind on different tiers, and
+      preparation that raises value under one does not thereby raise value under the other. The claim
+      does NOT extend to the cell in which the going concern is conveyed AND the incoming principal
+      must acquire the residual: there both disturbances occur together, and the phrase "removal
+      prices artifact continuity and nothing else" is false.
     type: ontological
     conditions: "C1, C2"
     antecedents: [P2, D2]
     assumptions: [AA1]
     falsifier: >-
       A demonstration that replacement disturbs legal or artifact continuity materially, or that
-      removal leaves the person-carried residual at risk in a way preparation could address.
+      removal-with-a-platform-acquirer leaves the person-carried residual at risk in a way preparation
+      could address. A demonstration that the two disturbances co-occur in the fourth cell does NOT
+      falsify P3 as restricted; that co-occurrence is P9's own content.
     evidence:
       - type: analytic
         anchor: "Corollary of P2 applied twice, once per event."
@@ -594,7 +694,11 @@ propositions:
     evidence:
       - type: analytic
         anchor: "Tier-by-tier elimination on draw frequency among the person-carried residuals."
-    ruled_out_rivals: [A1]
+      - type: citation
+        anchor: "The succession-specific knowledge-transfer stream, engaged as the nearest prior claimant (A5) rather than as vocabulary: succession read through the transfer of tacit, firm-specific knowledge from predecessor to successor."
+        citation_keys: [cabrerasuarez-2001-succession-process-resource]
+        citation_role: theoretical_predecessor
+    ruled_out_rivals: [A1, A5]
     body_sections: ["Why Tier 5 Binds"]
     provenance:
       created_by: "author"
@@ -615,6 +719,10 @@ propositions:
     evidence:
       - type: analytic
         anchor: "Corollary of P4 via exposure-built capacity. NOT an independent contribution; folded into contribution 2's derivation."
+      - type: citation
+        anchor: "The mechanism's closest relatives: tacit-to-tacit transfer through shared experience over time, and firm-specific human capital accumulated by learning-by-doing."
+        citation_keys: [nonaka-1994-dynamic-theory-organizational, hatch-2004-human-capital-learning]
+        citation_role: theoretical_predecessor
     body_sections: ["Why Tier 5 Binds"]
     provenance:
       created_by: "author"
@@ -662,15 +770,38 @@ propositions:
     evidence:
       - type: archival_record
         anchor: "Instrument-level audit of candidate frames with a per-candidate fetch ledger; verdicts recorded per requirement."
+      - type: citation
+        anchor: "The audited instrument family, named rather than described: the World Management Survey grid and the Management and Organizational Practices Survey re-fielded from it. A reader can check the audit's central negative against these records."
+        citation_keys: [bloom-2012-organization-firms-across, bloom-2019-what-drives-differences]
+        citation_role: contrast_case
     body_sections: ["Why the Design Cannot Yet Be Run"]
     provenance:
       created_by: "author"
       created_at: "2026-08-10"
   - id: P8
     statement: >-
-      The account predicts a crossover: documentation coverage predicts realized sale price but not
-      handover disruption, and successor exposure predicts handover disruption but not sale price. The
-      null it must beat is not "no association" but "one portfolio raises both".
+      RESTRICTED, like P3, to the two cells the derivation runs on. Comparing the
+      platform-acquisition cell with the succession cell, the account predicts a crossover:
+      documentation coverage predicts realized sale price but not handover disruption, and successor
+      exposure predicts handover disruption but not sale price. IN THE FOURTH CELL THE SECOND CLAUSE
+      FAILS -- there successor exposure plausibly raises the price too, because the buyer is pricing
+      handover risk they are about to bear personally -- so an exit arm that mixes the two cells
+      attenuates the contrast (L8), and the confirmatory estimate is the platform-acquisition stratum
+      rather than the pooled arm. The
+      null it must beat is not "no association" but "one portfolio raises both". ESTIMAND: with the
+      non-matching investment carrying no effect within an arm under P3, the four standardised
+      coefficients are (beta, 0) in the exit arm and (0, beta) in the succession arm, so the two
+      within-arm differences are +beta and -beta and the difference-in-differences delta = 2*beta.
+      Under the single-portfolio account the two coefficients are EQUAL within each arm -- whatever
+      their common value, and it may differ between arms -- so each difference vanishes and delta = 0.
+      The contrast is therefore blind to how well-prepared a firm is and sensitive only to whether
+      preparation is route-specific, which is the claim in dispute.
+      SYMMETRY ASSUMPTIONS, stated rather than left implicit: delta = 2*beta requires (i) the same
+      standardised beta in both arms, (ii) the non-matching investment's true coefficient exactly zero
+      within each arm -- already conceded false in the fourth cell -- and (iii) equal per-arm n, which
+      no realised frame will deliver, since sales and successions do not arrive in equal numbers. The
+      estimand is defined without (i) and (iii); only the "2*beta" shorthand and the per-arm reading
+      of the power table depend on them.
     type: ontological
     conditions: "C1, C2, C3, C5"
     antecedents: [P3, P6]
@@ -679,10 +810,81 @@ propositions:
       Both investments predicting both outcomes with the same sign and comparable magnitude within the
       C5 scope, which is the single-portfolio account.
     evidence:
+      - type: analytic
+        anchor: "delta = 2*beta derived from the four standardised within-arm coefficients; delta = 0 under coefficient equality within each arm."
       - type: code_anchor
         anchor: "code/power_divergence_signature.py; seed 20260810"
     ruled_out_rivals: [A3]
     body_sections: ["The Testable Signature"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P9
+    statement: >-
+      Over clean control transfers, the event space is generated by two independent binary facts --
+      whether the GOING CONCERN is conveyed to a counterparty, and whether the incoming operating
+      principal must ACQUIRE the person-carried residual -- rather than by an event name. The
+      persistence column is therefore indexed to those two facts. The DERIVATION of P1-P8 runs on two
+      of the four cells; the design's exit arm, AS SAMPLED, spans two cells rather than one, because
+      the frame excludes buyouts but does not exclude the fourth cell. Those are different statements
+      about different objects and the paper states both. The fourth cell -- an arm's-length sale to a
+      buyer who supplies no operating principal -- inherits both disturbances at once. It is not a
+      corner case in the 10-250-employee owner-operated population; whether it is the MODAL exit there
+      is a conjecture this paper does not have the data to settle, and it is labelled as one wherever
+      it appears.
+    type: ontological
+    conditions: ""
+    antecedents: [P3, D7]
+    assumptions: [AA1]
+    falsifier: >-
+      A demonstration that the two facts are not independent in this population -- that conveyance of
+      the going concern and residual acquisition co-occur or exclude each other by construction --
+      which would collapse the two-by-two back to the paper's dichotomy. Alternatively, a
+      demonstration that the fourth cell is empty or negligible in the 10-250-employee owner-operated
+      population, which would make the refinement correct but idle. A demonstration that clean control
+      transfers are a small share of exits would not falsify P9 but would narrow what it covers.
+    evidence:
+      - type: analytic
+        anchor: "Cross-classification of the two facts; the paper's removal and replacement arms are recovered as two of the four cells."
+    ruled_out_rivals: []
+    body_sections: ["Which Tier Binds"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P10
+    statement: >-
+      An earn-out is two instruments bundled: a contingent payment, which moves risk and teaches no
+      one anything, and a retention window, which conveys elapsed operating time with the incumbent
+      present. In the fourth cell the second half carries a SECOND function alongside the standard
+      one -- it is a priced purchase of ACCESS to exposure, not of exposure compressed -- so it is
+      consistent with the capacity constraint rather than a counterexample to it. It is not evidence
+      FOR the constraint: enforcement of the contingent payment, relationship continuity and hold-up
+      prevention each predict buyer-imposed retention as well, so the prevalence of retention does not
+      discriminate between the accounts. What would discriminate is a CONTRAST BETWEEN CELLS: holding
+      the verifiability of the contingent metric fixed, retention windows should be longer where the
+      buyer supplies no operating principal than where the buyer supplies one, because only in the
+      first case must the incoming principal absorb the residual personally. Both terms of that
+      contrast are carried by transaction records; the SIZE of the uncodified residual is not, and P7
+      says no instrument measures it, so the residual-size version of the test is not available and is
+      withdrawn.
+    type: ontological
+    conditions: "C1, C3"
+    antecedents: [P5, P9, D8]
+    assumptions: [AA2]
+    falsifier: >-
+      Retention windows of the same length, holding contingent-metric verifiability fixed, in deals
+      where the buyer supplies its own operating principal as in deals where it does not -- which
+      would leave the exposure reading with no work to do. Or retention obligations systematically
+      discounted by buyers rather than sought.
+    evidence:
+      - type: analytic
+        anchor: "Separation of the two components of a single instrument; the retention half supplies access to exactly the input P5 says money cannot compress."
+      - type: citation
+        anchor: "The established reading of the earn-out, which P10 adds to rather than replaces: a response to valuation disagreement under information asymmetry, with retention carried in the same instrument."
+        citation_keys: [kohers-2000-earnouts-mergers-agreeing, ragozzino-2009-contingent-earnouts-acquisitions]
+        citation_role: contrast_case
+    ruled_out_rivals: []
+    body_sections: ["The Rival Account"]
     provenance:
       created_by: "author"
       created_at: "2026-08-10"
@@ -706,8 +908,16 @@ alternative_explanations:
       everything tellable still has not ACQUIRED the capacity to resolve exceptions, because capacity
       is built by exposure and not by disclosure; communication closes an information gap, not a
       capacity gap, and the rival has no term for the difference. (b) The two predict different
-      remedies: information asymmetry is closable by disclosure, warranty, escrow and earn-out, none
-      of which teaches anyone anything. (c) The two have different cross-sectional gradients:
+      remedies: information asymmetry is closable by disclosure, warranty, escrow and contingent
+      consideration, none of which teaches anyone anything. Per P10 the earn-out is the instructive
+      case rather than a clean example, because it is two instruments bundled and only its contingent
+      half belongs on that list; its retention half buys access to exposure and carries a second
+      function the list does not cover. NOTE that the rival reaches the earn-out FIRST: the
+      established finance reading of the instrument is a response to valuation disagreement under
+      information asymmetry, so P10 adds a function rather than recapturing the instrument. A THIRD
+      account is also live and was previously unnamed -- hold-up over relationship-specific investment
+      predicts retention covenants and staged consideration for reasons independent of both. (c) The
+      two have different cross-sectional gradients:
       asymmetry scales with the counterparty's distance from the firm, transfer capacity scales with
       the size of the uncodified residual and is invariant to who the counterparty is. Note the
       rival's own result runs the sharp way: internal handovers carry LOWER asymmetry, so on that
@@ -762,6 +972,29 @@ alternative_explanations:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["The Pre-Registered Design -- identification"]
+  - id: A5
+    statement: >-
+      The succession-specific knowledge-transfer account: succession is constrained by the transfer of
+      tacit, firm-specific knowledge from predecessor to successor, treated in the resource- and
+      knowledge-based view of the family firm. On that account what makes a handover hard is the
+      TACITNESS of what the incumbent knows.
+    rules_out_required: []
+    ruled_out_by: []
+    rules_out_status: "open"
+    reasoning: >-
+      NEAREST PRIOR CLAIMANT, and the paper is stronger for engaging it than for engaging the
+      information-asymmetry rival alone. It is not ruled out and is not contested; the derivation
+      shares its premise that a person-carried residual is what a handover puts at risk. TWO
+      DIFFERENTIATORS, both survivable. (i) DRAW FREQUENCY, not tacitness, is what selects the binding
+      tier here: tacitness is shared across Tier 2, Tier 4, Tier 5 and Tier 6, so it cannot
+      discriminate among them, and P4's elimination runs on how often the residual must be exercised
+      for the firm to keep operating. (ii) The knowledge-transfer account has no BUDGET term: it does
+      not predict that preparing for a handover and preparing for a sale are rivals, because it is not
+      a theory of allocation. P6 is where the two part company.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why Tier 5 Binds", "The Rival Account"]
 
 # ---------------------------------------------------------------------------
 # Robustness checks -- all PLANNED; the design is unrun.
@@ -809,6 +1042,21 @@ robustness_checks:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["The Pre-Registered Design -- scope tests"]
+  - id: RC4
+    statement: >-
+      Acquirer operating posture as a pre-registered moderator on the exit arm: does the buyer supply
+      an operating principal, or must the buyer acquire the person-carried residual personally? The
+      fact is verifiable from the transaction record, and the crossover is reported both pooled and
+      within the platform-acquisition stratum.
+    varied_parameter: "acquirer operating posture (principal supplied vs principal acquired)"
+    range_explored: "planned two-level moderator on the exit arm"
+    result_stability: "planned"
+    affects_nodes: [P8, P9, L8]
+    source_method: M3
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- identification"]
 
 # ---------------------------------------------------------------------------
 # Limitations.
@@ -911,6 +1159,83 @@ limitations:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["The Pre-Registered Design -- measurement"]
+  - id: L8
+    statement: >-
+      The exit arm as specified is not homogeneous. The frame excludes mixed leveraged handovers but
+      does NOT exclude the fourth cell of P9 -- an ordinary arm's-length sale to a buyer who supplies
+      no operating principal -- so the exit arm will contain such sales in unknown proportion. There
+      successor exposure plausibly raises the price too, because the buyer is pricing handover risk
+      they are about to bear personally, and the crossover attenuates toward zero as the fourth-cell
+      share of the arm rises.
+    affects: [P8, F1]
+    severity: "medium"
+    mitigation: >-
+      The contamination bias is CONSERVATIVE -- it works against this paper's own hypothesis, so a
+      positive finding survives it -- but it costs power that the reported power table does not
+      account for, since every cell there assumes a homogeneous exit arm. RC4 pre-registers acquirer
+      operating posture as a moderator so the share is measured rather than assumed, the
+      platform-acquisition stratum carries the CONFIRMATORY estimate and the pooled arm a secondary
+      one, and the raw frame must accordingly be inflated by the reciprocal of the platform share.
+      The power table is not re-computed here: the attenuation factor is the fourth-cell share, which
+      is itself unmeasured.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- identification", "Limitations"]
+  - id: L9
+    statement: >-
+      NOT ALL KNOWN BIAS IN THIS DESIGN IS CONSERVATIVE, and the paper must not imply that it is. The
+      two arms carry outcomes of unequal reliability: the exit arm's outcome is a realised transaction
+      price, measured with near-zero error, while the succession arm's outcome is operating disruption
+      over t+1 to t+3, measured with substantial error. Differential attenuation shrinks the succession
+      arm's coefficients relative to the exit arm's, and because delta is the exit-arm contrast minus
+      the succession-arm contrast, shrinking the second inflates delta. That bias runs TOWARD this
+      paper's hypothesis, in the opposite direction to L8.
+    affects: [P8, F1, L8]
+    severity: "high"
+    mitigation: >-
+      Declared rather than corrected: no reliability estimate for either outcome exists in advance,
+      so the magnitude cannot be bounded here. Any realised study should estimate outcome reliability
+      per arm and report the contrast corrected for attenuation alongside the raw one. A paper that
+      stakes its credibility on declaring its biases cannot declare only the flattering one.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L10
+    statement: >-
+      The GROUP-CARRIED residual conceded under AA4 has no consequence anywhere in the design. Nothing
+      measures or bounds the share of a firm's operating residual that is held jointly rather than by
+      the departing principal, so the share of the firm to which the analysis applies is itself
+      unmeasured.
+    affects: [AA4, P4, P6, M3]
+    severity: "medium"
+    mitigation: >-
+      Named as an open quantity rather than assumed small. The design cannot bound it without an
+      instrument that separates jointly held from individually held residual, which the audit did not
+      find either; the honest position is that the concession narrows the claim by an unknown amount.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L11
+    statement: >-
+      The POWER TABLE IS AN UPPER BOUND FOR MORE REASONS THAN THE EXIT ARM'S HETEROGENEITY. The
+      simulation also assumes no measurement error in either construct -- in a paper whose P7 says no
+      instrument measures either, so attenuation is certain -- no covariates, although pre-trend
+      controls and a relational-channel control are both mandatory in the design; balanced arms;
+      identical standardised effects in the two arms; and a standard-normal rather than t reference
+      for the test statistic, which is anti-conservative at the smallest sample sizes shown.
+    affects: [F1, M1]
+    severity: "medium"
+    mitigation: >-
+      Each of these pushes the required sample UP, so the table's entries are floors and the paper
+      states them as such. Re-computing under measurement error would require reliability estimates
+      that do not exist (P7), which is why the table is left stated for the ideal case and labelled.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
 
 # ---------------------------------------------------------------------------
 # Cross-paper engagement.
@@ -990,6 +1315,30 @@ external_anchors:
   - citation_key: wennberg-2010-reconceptualizing-entrepreneurial-exit
     role: theoretical_predecessor
     spine_nodes: [P0]
+  - citation_key: cabrerasuarez-2001-succession-process-resource
+    role: theoretical_predecessor
+    spine_nodes: [P4, A5]
+  - citation_key: nonaka-1994-dynamic-theory-organizational
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: hatch-2004-human-capital-learning
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: kohers-2000-earnouts-mergers-agreeing
+    role: contrast_case
+    spine_nodes: [P10, A1]
+  - citation_key: ragozzino-2009-contingent-earnouts-acquisitions
+    role: contrast_case
+    spine_nodes: [P10, A1]
+  - citation_key: williamson-1985-economic-institutions-capitalism
+    role: contrast_case
+    spine_nodes: [A1, P10]
+  - citation_key: bloom-2012-organization-firms-across
+    role: contrast_case
+    spine_nodes: [P7, NF1]
+  - citation_key: bloom-2019-what-drives-differences
+    role: contrast_case
+    spine_nodes: [P7, NF1]
 
 # ---------------------------------------------------------------------------
 # Open questions.

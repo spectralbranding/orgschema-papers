@@ -30,3 +30,9 @@ _Terms used by **2026ag** (Dual Hierarchies of Organizational Transferability: A
 - **Tier 6 (Organization)**
   - Who does the producing. Governed by CHRO (sometimes COO). Transfers only partially (retention contracts at best).
   - first use: §1
+
+*Imported terms (defined elsewhere)*
+
+- **Acquirer operating posture** (write: `acquirer operating posture`)
+  - Whether a buyer supplies its own operating principal or must acquire the target's person-carried residual personally. The second of the two facts that generate the event space — the first being whether the going concern is conveyed to a counterparty — and therefore the index the persistence column is read against on the sale side. A buyer with a platform takes delivery of the artifact layer and writes off the person layer; a buyer without one (a search fund, an individual acquirer, a standalone-hold sponsor) must absorb the residual, and is rate-limited by exception arrival in doing so.
+  - _defined by succession-rotation_

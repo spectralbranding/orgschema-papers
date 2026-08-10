@@ -45,6 +45,7 @@ imports:
   - {term_key: six-tier-ontology}
   - {term_key: tier-1-owner-intent}
   - {term_key: tier-4-product}
+  - {term_key: acquirer-operating-posture}
 
 refines: []
 

@@ -43,7 +43,7 @@ Run (from the paper directory):
     uv run python code/power_divergence_signature.py
 
 Seed is fixed at 20260810, so the output is deterministic and reproduces the
-paper's Table 1 exactly. A recorded run is kept alongside at
+paper's Table 2 exactly. A recorded run is kept alongside at
 code/output/power_divergence_signature.txt.
 """
 

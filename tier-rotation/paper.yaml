@@ -30,7 +30,7 @@ meta:
     trajectory governed by knowledge-externalization effort, a cold-start offset, and sector substitutability.
     Acquirer willingness-to-pay is piecewise in this share around a separability threshold: below it,
     founder-flight risk produces discounts and earnouts; above it, the brand commands a premium increasing
-    with sector substitutability. First, the model derives a non-monotonic value geometry with a slope
+    with sector substitutability. First, the model derives a convex-kinked value geometry with a slope
     discontinuity at the threshold, yielding within-founder longitudinal predictions unavailable to cross-sectional
     human-capital or succession-discount theories — a sharp empirical wedge. Second, it grounds accumulation
     in Nonaka and Takeuchi''s [-@nonaka-1995-knowledgecreating-company-how] SECI externalization mechanism
@@ -38,7 +38,7 @@ meta:
     composition — distinguishing it from quality-based accounts. Third, it endogenizes the RBV''s differential-mobility
     assumption for brand assets, extending the dynamic capabilities tradition [@teece-1997-dynamic-capabilities-strategic;
     @eisenhardt-2000-dynamic-capabilities-what] by specifying the mechanism, threshold, and sector moderator
-    governing when sticky brand resources become separable. Four boundary objects illustrate the theory,
+    governing when sticky brand resources become separable. Four illustrative cases exercise the theory,
     yielding five falsifiable propositions.'
 claims:
 - id: P1
@@ -68,6 +68,22 @@ claims:
   statement: 'Rotation effort intensity e is not exogenous to the founder: founder identity type (Darwinian
     / Communitarian / Missionary) sets the psychic cost of externalization, so a complete empirical specification
     must condition rotation rate on founder-identity type as a covariate.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P1
+- id: AA2
+  type: proposition
+  statement: 's is a SCALAR collapse of a construct the specification basis treats as eight-dimensional,
+    and treating it as scalar is an assumption rather than a result. A brand''s substrate composition
+    is in principle a vector — a Tier-4 share per dimension — so rotation may be dimension-heterogeneous:
+    Semiotic and Narrative signal plausibly codify into guidelines and marks more readily than Experiential
+    or Cultural signal does, in which case two brands at the same scalar s differ in WHICH dimensions
+    have rotated. The model assumes the collapse is admissible — that position on the separability path
+    is adequately summarized by one number — and maintains the assumption rather than defending it. It
+    interacts with the sector moderator, since the dimensions that resist codification are plausibly the
+    ones carrying credence signal.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -114,7 +130,8 @@ claims:
     separability kink κ, h = 1 − β·max(0, κ − s)/κ (discount, liquidation floor 1 − β at s = 0); above
     κ, h = 1 + γ·g(σ)·(s − κ)/(1 − κ) (premium, amplified by sector substitutability). h is CONTINUOUS
     in level at κ but has a DISCONTINUOUS first derivative there for any σ > 0 — this slope discontinuity,
-    not a level jump, is the geometric content of the non-monotonic value function.'
+    not a level jump and not a turning point, is the geometric content of the CONVEX-KINKED value function:
+    V rises monotonically throughout and what jumps at κ is the rate.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -158,11 +175,11 @@ claims:
   - D3
 - id: P_P1
   type: proposition
-  statement: '(Paper P1 — Non-Monotonicity of M&A Value) V(s) is non-monotonic: each increment of Tier-4
-    share below κ compresses the discount at a lower marginal rate than each increment above κ generates
-    premium; the slope is discontinuous at κ. Falsified if the rotation-proxy / deal-price-to- standalone
-    relationship is monotonic with no structural break (a linear or power-law fit matching a piecewise-kink
-    fit).'
+  statement: '(Paper P1 — The Convex Kink in M&A Value) V(s) is strictly increasing in s throughout but
+    convex-kinked at κ: each increment of Tier-4 share below κ compresses the discount at a lower marginal
+    rate than each increment above κ generates premium; the slope is discontinuous at κ. Falsified if
+    the rotation-proxy / deal-price-to-standalone relationship shows no structural break (a linear or
+    power-law fit matching a piecewise-kink fit).'
   testable: true
   tested_in_paper: false
   status: not_tested
@@ -171,11 +188,18 @@ claims:
   - D4
 - id: P_P2
   type: proposition
-  statement: '(Paper P2 — Within-Founder Longitudinal Divergence; THE EMPIRICAL WEDGE) For a fixed-quality
-    founder, M&A multiple varies with s at deal time: the same founder exiting below κ commands a multiple
-    below V_0 and above κ a multiple above V_0 — variation predicted by tier rotation but NOT by the human-capital
-    quality account. Falsified if, after controlling for founder human-capital metrics, the rotation-proxy
-    score loses significance, or identical founders at different rotation stages command identical multiples.'
+  statement: '(Paper P2 — Rotation-Stage Divergence Orthogonal to Founder Quality; THE EMPIRICAL WEDGE)
+    Holding founder human capital fixed, M&A multiple varies with s at deal time: an exit below κ commands
+    a multiple below V_0 and an exit above κ a multiple above V_0. What tier rotation predicts and the
+    human-capital quality account does not is ROTATION-STAGE VARIANCE IN THE MULTIPLE THAT IS ORTHOGONAL
+    TO HUMAN-CAPITAL OBSERVABLES. The within-founder longitudinal case — one founder, two exits, two rotation
+    stages — is the sharpest instance of that prediction because it holds founder quality fixed by construction
+    rather than by covariate; it is not the whole of it. The three designs that can supply the evidence
+    are NOT equivalent: founder fixed effects identify it under the weakest assumptions, an instrument
+    identifies it under an exclusion restriction, and matching on observable human-capital characteristics
+    identifies it only under selection on observables — the assumption the tier-rotation critique of cross-sectional
+    work says is usually violated here — so a matched result confirms or disconfirms conditionally and
+    must be reported as such.'
   testable: true
   tested_in_paper: false
   status: not_tested
@@ -267,17 +291,17 @@ methodology:
   design: Theoretical derivation.
 acceptance:
 - claim_id: P_P1
-  criterion: 'Holds if (Paper P1 — Non-Monotonicity of M&A Value) V(s) is non-monotonic: each increment
-    of Tier-4 share below κ compresses the discount at a lower marginal rate than each increment above
-    κ generates premium; the slope is discontinuous at κ.'
-  falsification: Monotonic rotation-proxy → deal-price relationship with no kink.
+  criterion: 'Holds if (Paper P1 — The Convex Kink in M&A Value) V(s) is strictly increasing in s throughout
+    but convex-kinked at κ: each increment of Tier-4 share below κ compresses the discount at a lower
+    marginal rate than each increment above κ generates premium; the slope is discontinuous at κ.'
+  falsification: Single-slope rotation-proxy → deal-price relationship with no kink.
 - claim_id: P_P2
-  criterion: 'Holds if (Paper P2 — Within-Founder Longitudinal Divergence; THE EMPIRICAL WEDGE) For a
-    fixed-quality founder, M&A multiple varies with s at deal time: the same founder exiting below κ commands
-    a multiple below V_0 and above κ a multiple above V_0 — variation predicted by tier rotation but NOT
-    by the human-capital quality account.'
-  falsification: Rotation-proxy score insignificant after human-capital controls; null within-founder
-    variation.
+  criterion: 'Holds if (Paper P2 — Rotation-Stage Divergence Orthogonal to Founder Quality; THE EMPIRICAL
+    WEDGE) Holding founder human capital fixed, M&A multiple varies with s at deal time: an exit below
+    κ commands a multiple below V_0 and an exit above κ a multiple above V_0.'
+  falsification: Rotation-proxy score insignificant after human-capital controls; a null under the within-founder
+    design (the strongest form — a null under matching is weaker, being also consistent with failed matching
+    on unobserved quality).
 - claim_id: P_P3
   criterion: Holds if (Paper P3 — Sector-Substitutability Moderation) The above-κ premium V(s)/V_0 is
     higher in credence-goods sectors than in search-goods sectors, because rebuilding brand trust from
@@ -316,6 +340,14 @@ dependencies:
     observer-projection-compatible instrument.
   critical: false
   doi: 10.5281/zenodo.18945912
+- relationship: extends
+  claim: 'Takes up the succession event this paper defers (C4) and derives a persistence column for it.
+    Its two-fact partition of the event space supplies the structure of the acquirer-side term this paper''s
+    value function lacks (C5): whether the entity is conveyed and whether the operating principal is replaced
+    by someone who must acquire the person-carried residual are independent facts, and the second is the
+    acquirer-side term.'
+  critical: false
+  doi: 10.5281/zenodo.21868658
 - relationship: applies
   claim: Invokes the projection-cascade rank-deficiency result (sharp upstream-tier specification narrows
     downstream Π_{4→5}, Π_{5→6} image space) to read the Tier-6 absorption / role-count compression as
@@ -430,6 +462,39 @@ dependencies:
 - relationship: extends
   claim: 'anchor: stahl-2008-do-cultural-differences'
   doi: 10.1287/orsc.1070.0270
+- relationship: extends
+  claim: 'anchor: coff-1997-human-assets-management'
+  doi: 10.2307/259327
+- relationship: extends
+  claim: 'anchor: puranam-2009-integrating-acquired-capabilities'
+  doi: 10.1287/orsc.1090.0422
+- relationship: extends
+  claim: 'anchor: graebner-2017-process-postmerger-integration'
+  doi: 10.5465/annals.2014.0078
+- relationship: extends
+  claim: 'anchor: king-2004-metaanalyses-postacquisition-performance'
+  doi: 10.1002/smj.371
+- relationship: extends
+  claim: 'anchor: haleblian-2009-taking-stock-what'
+  doi: 10.1177/0149206308330554
+- relationship: extends
+  claim: 'anchor: cartwright-2006-thirty-years-mergers'
+  doi: 10.1111/j.1467-8551.2006.00475.x
+- relationship: extends
+  claim: 'anchor: adidas-2024-full-year-results-yeezy'
+  reference: adidas-2024-full-year-results-yeezy
+- relationship: extends
+  claim: 'anchor: esteelauder-2022-acquisition-tom-ford'
+  reference: esteelauder-2022-acquisition-tom-ford
+- relationship: extends
+  claim: 'anchor: diageo-2017-acquire-superpremium-casamigos'
+  reference: diageo-2017-acquire-superpremium-casamigos
+- relationship: extends
+  claim: 'anchor: takamatsu-2026-history-and-changes'
+  reference: takamatsu-2026-history-and-changes
+- relationship: extends
+  claim: 'anchor: park-2026-millenniumlong-family-firms'
+  doi: 10.1108/JMH-03-2026-0041
 contradictions: []
 repositories:
 - platform: GitHub

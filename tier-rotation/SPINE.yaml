@@ -35,9 +35,11 @@ thesis: >-
   substitutability; acquirer willingness-to-pay is a piecewise function of
   Tier-4 share with a separability kink, below which founder-flight risk
   produces discounts and earnouts and above which the brand commands a premium
-  increasing with sector substitutability. The resulting non-monotonic value
+  increasing with sector substitutability. The resulting convex-kinked value
   geometry — value rising everywhere but with a discontinuous slope at the kink
-  — yields within-founder longitudinal predictions unavailable to
+  — yields predictions about rotation-stage variance orthogonal to
+  human-capital observables (sharpest in the within-founder longitudinal case)
+  that are unavailable to
   cross-sectional human-capital or succession-discount theories, grounds the
   accumulation in Nonaka and Takeuchi's SECI externalization mechanism with four
   observable proxies, and endogenizes the resource-based view's exogenous
@@ -80,6 +82,70 @@ boundary_conditions:
       Succession is a geometrically distinct event deferred to future work.
     observable: "A liquidity / acquisition event in which the originating principal exits the entity."
     excludes: "Succession events; platform stacked-instance acquisitions; the regulated-Tier-3 compression case."
+  - id: C5
+    statement: >-
+      V(s) holds ACQUIRER CAPABILITY fixed. The model prices what the target has rotated into a
+      separable substrate; it does not price what the buyer can do with it. The M&A-exit case as
+      modelled assumes the acquirer supplies its own operating principal, which is why Tier-5 process
+      knowledge can be treated as partially supplied by the acquirer's management capacity and why
+      the Tier-1 discontinuity is a property of s alone. Where the buyer supplies no operating
+      principal — a search fund, an individual acquirer, a standalone-hold sponsor — the buyer must
+      absorb the person-carried residual personally. Residual SIZE is a property of the target and
+      capacity to ABSORB it a property of the acquirer, so a brand may complete rotation on this
+      paper's own measure and still fail at exit without the measure being wrong. This supplies the
+      STRUCTURE of the acquirer-side term the value function lacks; it does not supply its
+      parameterization, and the illustrative case that would exhibit it is still owed.
+    observable: >-
+      Acquirer operating posture at deal time — whether the buyer brings an operating principal —
+      verifiable from the transaction record.
+    excludes: >-
+      Deals in which the buyer supplies no operating principal: V(s) is not wrong there, it is
+      incomplete, because the outcome depends on an acquirer-side term the model does not carry.
+  - id: C6
+    statement: >-
+      The model carries a STAGE variable and no FRAGILITY variable. s locates a brand on the rotation
+      path; it says nothing about the half-life of the substrate the signal has been rotated INTO. Two
+      brands at the same s need not decay at the same rate, and substrate fragility is orthogonal to
+      stage rather than a function of it. The clearest case is the family-carried substrate, whose
+      distinguishing feature is a half-life measured in generations rather than in one working life:
+      it is neither the personal substrate (which decays with one principal) nor the institutional one
+      (which the model treats as durable once established). Where the substrate is fragile, a brand may
+      sit above the separability threshold at deal time and fall back below it afterwards without any
+      of the model's parameters having changed.
+    observable: >-
+      Substrate half-life — the rate at which an established Tier-4 base loses signal absent continued
+      rotation investment — measured independently of the current stage.
+    excludes: >-
+      Comparisons of rotation state ACROSS substrate classes: the model compares positions on one
+      path, and a fragility axis is required before two paths can be compared.
+  - id: C7
+    statement: >-
+      The unit is a SINGLE brand asset nested in the focal firm. Where a firm holds several brand
+      assets, no aggregation rule to the firm level is supplied, and this is a narrowing of a stated
+      scope rather than an oversight: the firm-level multiple as a revenue-weighted sum of brand-level
+      values was the intended rule, and no precedent for aggregating brand-level constructs to the firm
+      unit was located. The absence of precedent is itself the finding; the single-brand case is what
+      the model holds.
+    observable: "One identifiable brand asset with its own Tier-4 substrate and its own rotation state."
+    excludes: >-
+      Multi-brand firms taken at the firm level. Applying the model brand by brand is admissible; summing
+      the results is not, absent an aggregation rule this paper does not supply.
+  - id: C8
+    statement: >-
+      The TIER-ALLOCATION portfolio is held fixed. Rotation effort enters the accumulation equation as a
+      scalar intensity e taken as exogenous, which suppresses the upstream question of where within the
+      six-tier portfolio that effort is deployed. Two firms with identical aggregate e but different
+      allocation across tiers would accumulate Tier-4 substrate at different rates from the same spend,
+      so the model compares rotation states at a given effort level and not investment policies. Like
+      acquirer capability and substrate half-life, this is a term the value function does not carry
+      rather than one it denies: where it varies, the model is incomplete and not wrong, and the geometry
+      of V(s) in s is unaffected.
+    observable: >-
+      The share of a firm's period investment landing at each tier, readable in principle from
+      capital-allocation disclosure.
+    excludes: >-
+      Comparisons of investment POLICY across firms; the spatial allocation problem is a distinct
+      decision margin whose formal extension is deferred.
 
 # ============================================================================
 # Propositions, derivations, and assumption atoms — the argument backbone
@@ -137,6 +203,25 @@ propositions:
         anchor: "Founder self-categorization into identity types predicts venture choices beyond economic optimization."
         citation_keys: ["fauchart-2011-darwinians-communitarians-missionaries"]
     body_sections: ["Theoretical Foundations — Knowledge Externalization as the Substrate-Conversion Mechanism"]
+
+  - id: AA2
+    statement: >-
+      s is a SCALAR collapse of a construct the specification basis treats as eight-dimensional, and
+      treating it as scalar is an assumption rather than a result. A brand's substrate composition is in
+      principle a vector — a Tier-4 share per dimension — so rotation may be dimension-heterogeneous:
+      Semiotic and Narrative signal plausibly codify into guidelines and marks more readily than
+      Experiential or Cultural signal does, in which case two brands at the same scalar s differ in WHICH
+      dimensions have rotated. The model assumes the collapse is admissible — that position on the
+      separability path is adequately summarized by one number — and maintains the assumption rather than
+      defending it. It interacts with the sector moderator, since the dimensions that resist codification
+      are plausibly the ones carrying credence signal.
+    conditions: "C1"
+    antecedents: [P1]
+    evidence:
+      - type: corpus
+        anchor: "The eight-dimension specification basis used as this paper's worked example (Semiotic, Narrative, Ideological, Experiential, Social, Economic, Cultural, Temporal)."
+        citation_keys: ["2026a"]
+    body_sections: ["Formal Model — Setup and Definitions", "Limitations — Specification Basis"]
 
   # --- The generative mechanism ---
   - id: P3
@@ -197,14 +282,16 @@ propositions:
       h = 1 + γ·g(σ)·(s − κ)/(1 − κ) (premium, amplified by sector
       substitutability). h is CONTINUOUS in level at κ but has a DISCONTINUOUS
       first derivative there for any σ > 0 — this slope discontinuity, not a
-      level jump, is the geometric content of the non-monotonic value function.
+      level jump and not a turning point, is the geometric content of the
+      CONVEX-KINKED value function: V rises monotonically throughout and what
+      jumps at κ is the rate.
     conditions: "C2"
     antecedents: [P1, D1]
     evidence:
       - type: analytic
         anchor: "Continuity in level and slope-discontinuity proof at κ (Appendix A.2: h(κ⁻)=h(κ⁺)=1; left slope β/κ, right slope γ·g(σ)/(1−κ))."
       - type: external
-        anchor: "Real-options negative optionality below κ; M&A synergy life-cycle typology localizing deal-time pricing."
+        anchor: "Below κ the acquirer cannot exercise the brand-asset option independently, so the option is unexercisable rather than negatively valued; M&A synergy life-cycle typology localizing deal-time pricing."
         citation_keys: ["dixit-1994-investment-under-uncertainty", "feldman-2022-synergy-mergers-acquisitions"]
     body_sections: ["Formal Model — The M&A Value Function", "Appendix A.2"]
 
@@ -252,38 +339,46 @@ propositions:
   # --- The five falsifiable propositions ---
   - id: P_P1
     statement: >-
-      (Paper P1 — Non-Monotonicity of M&A Value) V(s) is non-monotonic: each
-      increment of Tier-4 share below κ compresses the discount at a lower
-      marginal rate than each increment above κ generates premium; the slope is
-      discontinuous at κ. Falsified if the rotation-proxy / deal-price-to-
-      standalone relationship is monotonic with no structural break (a linear or
-      power-law fit matching a piecewise-kink fit).
+      (Paper P1 — The Convex Kink in M&A Value) V(s) is strictly increasing in s
+      throughout but convex-kinked at κ: each increment of Tier-4 share below κ
+      compresses the discount at a lower marginal rate than each increment above
+      κ generates premium; the slope is discontinuous at κ. Falsified if the
+      rotation-proxy / deal-price-to-standalone relationship shows no structural
+      break (a linear or power-law fit matching a piecewise-kink fit).
     conditions: "C1, C2"
     antecedents: [D3, D4]
     evidence:
       - type: analytic
-        anchor: "Direct corollary of the slope-discontinuity geometry (D3); illustrated by Yeezy/Adidas Stage-1 negative-optionality region."
-    falsifier: "Monotonic rotation-proxy → deal-price relationship with no kink."
-    body_sections: ["Propositions — P1", "Illustrative Boundary Objects — Yeezy/Adidas"]
+        anchor: "Direct corollary of the slope-discontinuity geometry (D3); illustrated by the Yeezy/Adidas Stage-1 discount region read at the liquidation floor."
+    falsifier: "Single-slope rotation-proxy → deal-price relationship with no kink."
+    body_sections: ["Propositions — P1", "Illustrative Cases — Yeezy/Adidas", "Limitations — The Threshold Is Not Identified on the Proxy Scale"]
 
   - id: P_P2
     statement: >-
-      (Paper P2 — Within-Founder Longitudinal Divergence; THE EMPIRICAL WEDGE)
-      For a fixed-quality founder, M&A multiple varies with s at deal time: the
-      same founder exiting below κ commands a multiple below V_0 and above κ a
-      multiple above V_0 — variation predicted by tier rotation but NOT by the
-      human-capital quality account. Falsified if, after controlling for
-      founder human-capital metrics, the rotation-proxy score loses
-      significance, or identical founders at different rotation stages command
-      identical multiples.
+      (Paper P2 — Rotation-Stage Divergence Orthogonal to Founder Quality; THE
+      EMPIRICAL WEDGE) Holding founder human capital fixed, M&A multiple varies
+      with s at deal time: an exit below κ commands a multiple below V_0 and an
+      exit above κ a multiple above V_0. What tier rotation predicts and the
+      human-capital quality account does not is ROTATION-STAGE VARIANCE IN THE
+      MULTIPLE THAT IS ORTHOGONAL TO HUMAN-CAPITAL OBSERVABLES. The
+      within-founder longitudinal case — one founder, two exits, two rotation
+      stages — is the sharpest instance of that prediction because it holds
+      founder quality fixed by construction rather than by covariate; it is not
+      the whole of it. The three designs that can supply the evidence are NOT
+      equivalent: founder fixed effects identify it under the weakest
+      assumptions, an instrument identifies it under an exclusion restriction,
+      and matching on observable human-capital characteristics identifies it only
+      under selection on observables — the assumption the tier-rotation critique
+      of cross-sectional work says is usually violated here — so a matched result
+      confirms or disconfirms conditionally and must be reported as such.
     conditions: "C1, C2"
     antecedents: [D3, P_P1]
     evidence:
       - type: analytic
-        anchor: "The within-founder, longitudinal contrast against cross-sectional human-capital / succession-discount accounts (the testable incremental claim)."
+        anchor: "The rotation-stage-versus-founder-quality contrast against cross-sectional human-capital / succession-discount accounts (the testable incremental claim); the within-founder design is its sharpest instance."
         citation_keys: ["chen-2021-generalist-versus-specialist", "bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "custodio-2017-do-general-managerial"]
-    falsifier: "Rotation-proxy score insignificant after human-capital controls; null within-founder variation."
-    body_sections: ["Propositions — P2", "Discussion — Theoretical Contribution"]
+    falsifier: "Rotation-proxy score insignificant after human-capital controls; a null under the within-founder design (the strongest form — a null under matching is weaker, being also consistent with failed matching on unobserved quality)."
+    body_sections: ["Propositions — P2", "Discussion — Theoretical Contribution", "Limitations — Formal Validation Agenda, Priority 2"]
 
   - id: P_P3
     statement: >-
@@ -298,10 +393,13 @@ propositions:
     antecedents: [D3, D4]
     evidence:
       - type: external
-        anchor: "Credence- vs search-goods structure; resistance to non-human substitutes; brand-belief updating sets substitution cost (σ)."
-        citation_keys: ["darby-1973-free-competition-optimal", "nelson-1970-information-consumer-behavior", "longoni-2019-resistance-medical-ai", "erdem-1996-decision-making-under", "erdem-2008-dynamic-model-brand"]
+        anchor: "Credence- vs search-goods structure; brand-belief updating sets substitution cost (σ)."
+        citation_keys: ["darby-1973-free-competition-optimal", "nelson-1970-information-consumer-behavior", "erdem-1996-decision-making-under", "erdem-2008-dynamic-model-brand"]
+      - type: external
+        anchor: "Resistance to non-human substitutes is established for MEDICAL decision-making, where patients prefer human to algorithmic providers because they perceive their own case as unique. Extending it to credence-goods sectors generally is an EXTRAPOLATION from that setting, carried as a conjecture about the sign of the effect and not as demonstrated magnitude."
+        citation_keys: ["longoni-2019-resistance-medical-ai"]
     falsifier: "Non-significant substitutability × rotation interaction with controls."
-    body_sections: ["Propositions — P3", "Illustrative Boundary Objects — Casamigos, Tom Ford"]
+    body_sections: ["Propositions — P3", "Illustrative Cases — Casamigos, Tom Ford"]
 
   - id: P_P4
     statement: >-
@@ -385,8 +483,11 @@ propositions:
     antecedents: [P_P2, D3]
     evidence:
       - type: external
-        anchor: "Succession-discount findings; stock-vs-flow value creation/appropriation; mergers cultural integration; family-ownership effects."
-        citation_keys: ["bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "mizik-2003-trading-off-between", "mizik-2009-valuing-branded-businesses", "stahl-2008-do-cultural-differences", "anderson-2003-founding-family-ownership", "villalonga-2006-how-do-family"]
+        anchor: "Succession-discount findings; mergers cultural integration; family-ownership effects."
+        citation_keys: ["bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "stahl-2008-do-cultural-differences", "anderson-2003-founding-family-ownership", "villalonga-2006-how-do-family"]
+      - type: external
+        anchor: "EMPIRICAL RESULT (theirs): firms trade off value creation against value appropriation and the market rewards managing it dynamically; a brand-capital stock measure constructed independently of current marketing spend explains incremental variance in valuation multiples. INTERPRETATION (this paper's, not attributed to them): a stock that prices independently of the flow that built it is what a substrate looks like from outside, so the result is CONSISTENT WITH — and does not test — Tier-4 value persisting independently of Tier-6 spend."
+        citation_keys: ["mizik-2003-trading-off-between", "mizik-2009-valuing-branded-businesses"]
     body_sections: ["Discussion — Succession as a Distinct Geometric Event", "Discussion — Tier-Allocation of Capital", "Table 5"]
 
 # ============================================================================
@@ -417,6 +518,15 @@ corpus_precedents:
       for the Tier-4 product-specification layer (perception cloud / observer
       spectral profiles); claims are basis-independent for any complete,
       observer-projection-compatible instrument.
+  - paper_key: succession-rotation
+    relationship: extends
+    spine_nodes: [C4, C5]
+    note: >-
+      Takes up the succession event this paper defers (C4) and derives a persistence column for it.
+      Its two-fact partition of the event space supplies the structure of the acquirer-side term this
+      paper's value function lacks (C5): whether the entity is conveyed and whether the operating
+      principal is replaced by someone who must acquire the person-carried residual are independent
+      facts, and the second is the acquirer-side term.
   - paper_key: 2026m
     relationship: applies
     spine_nodes: [P6]
@@ -465,6 +575,17 @@ external_anchors:
   - {citation_key: mizik-2003-trading-off-between, role: stock_flow_parallel, spine_nodes: [P6]}
   - {citation_key: mizik-2009-valuing-branded-businesses, role: stock_flow_parallel, spine_nodes: [P6]}
   - {citation_key: stahl-2008-do-cultural-differences, role: integration_moderator, spine_nodes: [P6]}
+  - {citation_key: coff-1997-human-assets-management, role: closest_prior_statement, spine_nodes: [P4]}
+  - {citation_key: puranam-2009-integrating-acquired-capabilities, role: closest_prior_statement, spine_nodes: [C5]}
+  - {citation_key: graebner-2017-process-postmerger-integration, role: prior_literature, spine_nodes: [C5]}
+  - {citation_key: king-2004-metaanalyses-postacquisition-performance, role: prior_literature, spine_nodes: [C5]}
+  - {citation_key: haleblian-2009-taking-stock-what, role: prior_literature, spine_nodes: [C5]}
+  - {citation_key: cartwright-2006-thirty-years-mergers, role: prior_literature, spine_nodes: [C5]}
+  - {citation_key: adidas-2024-full-year-results-yeezy, role: case_record, spine_nodes: [P_P1]}
+  - {citation_key: esteelauder-2022-acquisition-tom-ford, role: case_record, spine_nodes: [P_P3]}
+  - {citation_key: diageo-2017-acquire-superpremium-casamigos, role: case_record, spine_nodes: [P_P3]}
+  - {citation_key: takamatsu-2026-history-and-changes, role: case_record, spine_nodes: [C6]}
+  - {citation_key: park-2026-millenniumlong-family-firms, role: case_record, spine_nodes: [C6]}
 
 # ============================================================================
 # Open questions / boundary edges

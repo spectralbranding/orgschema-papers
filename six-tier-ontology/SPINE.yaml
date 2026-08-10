@@ -391,6 +391,30 @@ boundary_conditions:
       modified governors, specification surfaces, and transferability modes.
     excludes: "Two-sided markets and ecosystem orchestrators apply WITH modification, not without it."
     body_sections: ["Network and Platform Boundary Conditions"]
+  - id: C3
+    statement: >-
+      Table 1's transferability-mode column is indexed to ACQUIRER OPERATING POSTURE. Every entry
+      answers what would arrive in a buyer's possession on the unstated assumption that the buyer
+      supplies its own operating principal, so the person-carried part of Tiers 4, 5 and 6 is written
+      off because no buyer receives the occupant. That assumption holds for acquisition into an
+      existing operating platform. It fails where the entity is conveyed AND the operating principal
+      is replaced by someone who must acquire the residual personally — search-fund and individual
+      acquirers, standalone-hold private equity, a strategic buyer keeping a specialist practice
+      running as it is; those structures are a minority of global deal count and are concentrated in
+      a few markets. There the person-carried column is not written off; it is precisely what the
+      buyer must absorb. The conditioning alters no tier definition and no failure-propagation
+      mechanism. What it does alter is how three cells of the transferability-mode column READ under
+      the second index value: the person-carried components of Tiers 4, 5 and 6 are not written off
+      there but absorbed and priced by the incoming principal, and a retention window is one
+      instrument through which that absorption is paid for — a reading complementary to, not a
+      replacement for, the established account of contingent consideration as a response to
+      valuation disagreement under information asymmetry and as a retention and risk-allocation
+      device.
+    excludes: >-
+      Acquisitions in which the buyer supplies no operating principal: the column applies to those
+      only once read against this index, and their persistence reading is derived elsewhere in the
+      corpus rather than here.
+    body_sections: ["Limitations (Acquirer operating posture)", "The Six-Tier Ontology (Table 1 notes)"]
 
 # ============================================================================
 # Alternative frameworks the contribution rules out / distinguishes from
@@ -434,10 +458,17 @@ limitations:
       empirical support; P6F is partially documented but not as an end-to-end
       chain. The propositions are derived from the dual hierarchy and consistent
       with adjacent single-layer findings, not yet traced in one integrated
-      study.
+      study. One adjacent structural claim has since been tested at large N, and the result BOUNDS
+      rather than confirms — a closing-time product-process / process-organization transfer gap is a
+      necessary condition for cascade-type failure only in a bounded form (failure rate conditional
+      on no detected gap is low but not zero; roughly half of failures carried a gap), so structural
+      conformance is a pre-close negative screen for one failure mode and not a general predictor.
+      That bound reaches P4F and P5F by ANALOGY only: its construct is closing-time transfer content,
+      whereas every proposition here concerns acquirer-imposed post-close revision. The remaining
+      five propositions are untouched by it, and none of the seven may be read as claiming more.
     severity: "scope-bounding"
     affects: [P1F, P2F, P3F, P4F, P5F, P6F, P7F]
-    body_sections: ["Limitations (Cascade claim is theoretical)"]
+    body_sections: ["Limitations (Cascade claim is theoretical)", "Failure-Propagation Propositions", "Validation and Future Research Agenda"]
   - id: L2
     statement: >-
       Form-invariance is provisional: only the Tier 1 and Tier 3 substitutions
@@ -451,7 +482,12 @@ limitations:
       The STSD is currently a structured judgment instrument with no inter-rater
       reliability data and no published predictive-validity evidence; validation
       (Cohen's kappa >= .70 per tier, then predictive and cross-form studies) is
-      the future-research agenda.
+      the future-research agenda. The large-N companion does NOT supply any part of that evidence: it
+      administered no diagnostic, coding a sibling structural construct from closing documents
+      against a different outcome. It constrains how the predictive-validity study should be
+      SPECIFIED — as a screen-validation design rather than a strong-predictor test — and the
+      instrument companion supplies a measurement discipline, itself an instance of an established
+      external content-analysis standard rather than a substitute for it.
     severity: "future-work"
     affects: [P12]
     body_sections: ["Validation and Future Research Agenda"]
@@ -479,6 +515,35 @@ corpus_precedents:
     note: >-
       Specification Impossibility supplies the impossibility-of-full-Product-
       specification result that compounds the Product-Process disruption (P4).
+  - paper_key: tier-bundle-algebra
+    relationship: extends
+    spine_nodes: [P7, P8]
+    note: >-
+      The compositional grammar over this paper's tier graph: deal types as typed bundles of fork
+      operations, with cascade rules and admissibility conditions inherited from the collapse
+      patterns. The companion the Future-Research subsection announced, now published and cited.
+  - paper_key: 2026bi
+    relationship: tests
+    spine_nodes: [P4F, P5F, L1]
+    note: >-
+      Large-N confirmatory necessary-condition test of the closing-time cascade gap. The result
+      BOUNDS the propositions rather than confirming them, and reaches only P4F and P5F, by analogy
+      (closing-time transfer content versus acquirer-imposed post-close revision). It administered no
+      separability diagnostic, so it supplies no part of the STSD's predictive-validity evidence and
+      is cited on that scope in the propositions preamble, the validation agenda and Limitations.
+  - paper_key: multi-llm-coding-instrument
+    relationship: applies
+    spine_nodes: [P12, L3]
+    note: >-
+      Supplies the measurement discipline the STSD validation agenda requires: coding scheme
+      registered before data, disjoint evidence per coder, reliability reported rather than assumed.
+  - paper_key: succession-rotation
+    relationship: extends
+    spine_nodes: [C3]
+    note: >-
+      Derives a second, persistence column from this paper's primitives for the case where nothing is
+      conveyed to a counterparty, and in doing so names the assumption Table 1's transferability-mode
+      column left unstated: that the buyer supplies an operating principal (C3).
   - paper_key: 2026m
     relationship: applies
     spine_nodes: [P7]
@@ -502,6 +567,10 @@ external_anchors:
   - {citation_key: "", role: prior_layered_ontology, spine_nodes: [P3], note: "Zachman 1987 / Osterwalder 2004 / BIZBOK 2024 / Dietz 2006 — partial precedents distinguished from."}
   - {citation_key: "", role: form_invariance_anchor, spine_nodes: [P8, P13], note: "Hansmann 1996 + Battilana & Lee 2014 — ownership-form substitutions / hybrid mission drift."}
   - {citation_key: "", role: integration_pathology, spine_nodes: [P11], note: "Larsson & Finkelstein 1999 + Jemison & Sitkin 1986 — inadequate org integration / the activity trap (the inverted modal sequence)."}
+  - {citation_key: "", role: contingent_consideration, spine_nodes: [C3], note: "Kohers & Ang 2000 + Ragozzino & Reuer 2009 — earn-outs as a response to valuation disagreement and information asymmetry in privately held targets, and as a retention device; the established account the posture conditioning complements rather than reverses."}
+  - {citation_key: "", role: acquisition_entrepreneurship, spine_nodes: [C3], note: "Zettel & Nows 2026 — goals and motivations in entrepreneurship through acquisition; the buyer type in which an incoming principal must absorb the person-carried residual personally."}
+  - {citation_key: "", role: transfer_versus_postclose_management, spine_nodes: [L1, P4F, P5F], note: "Puranam et al. 2009 — structural integration as a post-close management decision distinct from what crossed the boundary; the external warrant for reading the large-N bound onto P4F/P5F as an analogy."}
+  - {citation_key: "", role: content_analysis_methodology, spine_nodes: [P12, L3], note: "Duriau et al. 2007 — content-analysis method in organization studies; the external standard that registered-before-data schemes, separated evidence and reported reliability instantiate."}
 
 # ============================================================================
 # Open questions / boundary edges

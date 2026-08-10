@@ -85,6 +85,7 @@ owns:
       applicable, is the native L0-L5 cascade. RU canonical form: Gran (Грань).
     first_section: "§1"
 
-imports: []
+imports:
+  - {term_key: acquirer-operating-posture}
 refines: []
 

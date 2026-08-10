@@ -28,6 +28,9 @@ _Terms used by **2026ai** (The Tier-Rotation Curve: A Theory of Brand-Substrate 
   - An irreversible negative-conviction basin: a cohort state from which the perception cloud cannot recover under ordinary signal emission.
   - _defined by 2026o_
   - _not_: locked cohort
+- **Acquirer operating posture** (write: `acquirer operating posture`)
+  - Whether a buyer supplies its own operating principal or must acquire the target's person-carried residual personally. The second of the two facts that generate the event space — the first being whether the going concern is conveyed to a counterparty — and therefore the index the persistence column is read against on the sale side. A buyer with a platform takes delivery of the artifact layer and writes off the person layer; a buyer without one (a search fund, an individual acquirer, a standalone-hold sponsor) must absorb the residual, and is rate-limited by exception arrival in doing so.
+  - _defined by succession-rotation_
 - **brand conviction**
   - An observer-relative held position about a brand on one or more spectral dimensions. Observer-relative, not dispositional (contrast: attitude).
   - _defined by 2026a_
