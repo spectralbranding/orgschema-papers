@@ -1,0 +1,136 @@
+# ONTOLOGY.yaml module - succession-rotation
+#
+# Per-paper ontology module per SPINE_FIRST_DRAFTING_PROTOCOL.md
+# §"ONTOLOGY.yaml schema (v0.1)". owns = terms THIS paper introduces (unique
+# authority); imports = terms owned by other modules it uses (reference only).
+# Linked into the substrate `terms` graph by build_ontology.py.
+#
+# Authored 2026-08-10 alongside SPINE.yaml, spine-first (rule 0aa), after the
+# owner selected route 1 in GAP_1_SAMPLING_FRAME.md §8.
+
+paper_key: succession-rotation
+schema_version: 0.1
+
+owns:
+  - term_key: persistence-column
+    label: "Persistence column"
+    canonical_form: "persistence column"
+    definition: >-
+      The second transfer-relevant column of the six-tier ontology: for each tier, the mechanism by
+      which it survives a control event in which nothing is conveyed to a counterparty. Distinct from
+      the ontology's published transfer column, which answers what would arrive in a buyer's
+      possession and is therefore indexed to a counterparty. An event with no counterparty needs its
+      own column, and that column is derivable from the same primitives.
+    first_section: "The Persistence Column"
+    relations:
+      - {type: contrasts, term_key: transfer-column, note: "The two columns disagree, and that disagreement is the paper's entry point: the transfer column is indexed to a counterparty, the persistence column is not."}
+
+  - term_key: transfer-column
+    label: "Transfer column"
+    canonical_form: "transfer column"
+    definition: >-
+      The six-tier ontology's published "what transfers" column, read as a transaction column: for
+      each tier, what would arrive in a buyer's possession were the firm to change hands. Named here
+      so that the persistence column can be contrasted with it; the column itself is inherited, not
+      introduced.
+    first_section: "The Persistence Column"
+
+  - term_key: persistence-mechanism
+    label: "Persistence mechanism"
+    canonical_form: "persistence mechanism"
+    definition: >-
+      The means by which a tier survives a control event. Exactly one of three, mutually exclusive
+      and, for the six-tier stack, exhaustive: legal continuity (L), where the tier is carried by the
+      registered entity; artifact continuity (A), where it is carried by an inspectable object
+      independent of any person; and person continuity (P), where it is carried in the state of a
+      particular human being and does not survive that person's departure.
+    first_section: "Three Modes of Persistence"
+
+  - term_key: person-carried-residual
+    label: "Person-carried residual"
+    canonical_form: "person-carried residual"
+    definition: >-
+      The portion of a tier that persists only by person continuity (P) — the part carried in a
+      particular individual's state rather than by the registered entity or by any inspectable
+      artifact. Under removal it is a quantity to be minimized, because no buyer receives it; under
+      replacement it is the only thing at risk.
+    first_section: "Three Modes of Persistence"
+    relations:
+      - {type: specializes, term_key: persistence-mechanism, note: "The (P) case of the three-mode trichotomy, named separately because it is the case both events act on."}
+
+  - term_key: draw-frequency
+    label: "Draw frequency"
+    canonical_form: "draw frequency"
+    definition: >-
+      The rate at which a tier's person-carried residual must actually be exercised for the firm to
+      keep operating — as against how tacit, how valuable, or how hard to articulate it is. The
+      discriminating property among person-carried residuals: a residual drawn at discretion can be
+      deferred past a transition, and one drawn at operating frequency cannot.
+    first_section: "Why Tier 5 Binds"
+
+  - term_key: exception-arrival-rate
+    label: "Exception arrival rate"
+    canonical_form: "exception arrival rate"
+    definition: >-
+      The rate at which ordinary operation throws a case the codified process does not cover and
+      which must therefore be resolved by a person. A property of the business rather than of the
+      preparation effort: it sets the pace at which a successor can acquire the Tier-5 residual, and
+      no amount of managerial attention makes a rare case arrive sooner.
+    first_section: "Why Tier 5 Binds"
+    relations:
+      - {type: specializes, term_key: draw-frequency, note: "Draw frequency instantiated at Tier 5, where the drawn residual is exception resolution."}
+
+  - term_key: succession-constrained-rotation
+    label: "Succession-constrained rotation"
+    canonical_form: "succession-constrained rotation"
+    definition: >-
+      Tier rotation constrained by the person-carried Tier-5 residual under Tier-1 replacement: the
+      case where the occupant of Tier 1 is replaced, the entity persists, and nothing is conveyed, so
+      the preparation that raises value under removal and the preparation that raises value under
+      replacement are different investments competing for one budget.
+    first_section: "Introduction"
+    relations:
+      - {type: contrasts, term_key: constrained-tier-rotation, note: "DISTINCT CONSTRAINT, similar phrase. The personal-brand case is constrained by tier COLLAPSE (intent, entity and product are fused in one person, so emphasis cannot rotate). This case has separable tiers and is constrained by the person-carried residual at Tier 5 under replacement. Do not conflate; the working title's phrasing invites exactly that error."}
+
+  - term_key: divergence-signature
+    label: "Divergence signature"
+    canonical_form: "divergence signature"
+    definition: >-
+      The testable pattern the theory predicts: the pre-transition investments that predict a high
+      realized sale price and those that predict a low-disruption handover are different investments.
+      A crossover contrast rather than an average treatment effect, and the pattern that discriminates
+      this account from the single-portfolio account under which one preparation programme raises
+      both.
+    first_section: "The Testable Signature"
+
+  - term_key: documentation-coverage
+    label: "Documentation coverage"
+    canonical_form: "documentation coverage"
+    definition: >-
+      The share of ordinary operation that is written down in artifacts independent of any person —
+      procedures, manuals, specifications, quality-system documentation, process encoded in systems.
+      The pre-transition investment that converts person-carried residual into artifact continuity
+      (A), and therefore the one that raises value under removal.
+    first_section: "The Testable Signature"
+
+  - term_key: successor-exposure
+    label: "Successor exposure"
+    canonical_form: "successor exposure"
+    definition: >-
+      The accumulated occasions on which a named successor has resolved live exceptions alongside or
+      in place of the incumbent. The pre-transition investment that moves person-carried residual from
+      one person into another, and therefore the one that raises value under replacement. Rate-limited
+      by exception arrival rather than by effort.
+    first_section: "The Testable Signature"
+
+imports:
+  - {term_key: six-tier-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
+  - {term_key: tier-rotation}
+  - {term_key: constrained-tier-rotation}
+

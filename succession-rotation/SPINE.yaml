@@ -1,0 +1,1000 @@
+spine_version: "0.2"
+spine_doc_version: "1.0.0"
+paper_key: "succession-rotation"
+# TITLE APPROVED by the author 2026-08-10, with "Different" sharpened to "Rival" -- the paper's own
+# word for the relation (complements as knowledge, rivals as investments). Deliberately NOT
+# "Succession Is Not an Exit": that is the title of the already-published practitioner article in
+# this corpus, and reusing it would collide on a public surface.
+title: "Preparing to Sell and Preparing to Hand Over Are Rival Investments: A Persistence Column for the Six-Tier Ontology"
+provenance: "new"
+thesis: |
+  An exit and a succession disturb different mechanisms of persistence in the six-tier stack, so they
+  bind on different tiers. The ontology's published transfer column answers what would arrive in a
+  buyer's possession and is therefore indexed to a counterparty; an event with no counterparty --
+  the occupant of Tier 1 is replaced, the entity persists, nothing is conveyed -- requires a second,
+  derivable column. Under that column, replacement disturbs only the person-carried residual, and
+  among the tiers it disturbs exactly one, Tier 5, is drawn at the firm's operating frequency rather
+  than at discretion, so its loss cannot be absorbed by deferring anything. In an owner-managed firm
+  the person holding that residual is simultaneously the only one who could document it and the only
+  one who could teach it, so the preparation that raises value under removal and the preparation that
+  raises value under replacement are rivals for one budget. The paper derives this, states the
+  crossover it predicts, supplies a pre-registered design with its power, and reports that the design
+  cannot currently be run because neither construct it requires is measured by the instruments the
+  field has built -- a bounded, instrument-level negative over five frame families, offered as part
+  of the contribution rather than as a limitation.
+
+# ---------------------------------------------------------------------------
+# Boundary conditions -- the theory does not apply outside these.
+# ---------------------------------------------------------------------------
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The firm is owner-OPERATED, not merely owner-owned: the outgoing principal both holds the
+      controlling or founder-family principal stake and is the operating decision-maker. Where the
+      owner does not operate, the Tier-5 residual sits with managers who are not being replaced and
+      the paper's constraint is simply absent. This is the sharpest boundary in the paper and belongs
+      in the first paragraph.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: C2
+    statement: >-
+      The event is REPLACEMENT, not removal: the occupant of Tier 1 is replaced, the registered
+      entity persists, and nothing is conveyed to a counterparty. A leveraged handover that transfers
+      operating control and ownership together is a mixed event and is out of scope -- excluded, not
+      controlled for.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: C3
+    statement: >-
+      Exception resolution is not already fully delegated downward at the time of the transition.
+      Where it is, the residual sits at Tier 6 rather than Tier 5 and is not disturbed by this event.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: C4
+    statement: >-
+      The firm is large enough that documented process is a meaningful variable and small enough that
+      the residual has not already devolved to a management layer the event does not replace. The
+      design operationalises this as 10-250 employees; the construct, not the headcount, is the
+      boundary.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: C5
+    statement: >-
+      NEGATIVE SCOPE -- the two observable conditions under which the trade-off VANISHES rather than
+      weakens, both observable BEFORE the transition. (i) The Tier-5 person-carried residual is empty
+      or near-empty, because the codified process already covers ordinary operation; both events then
+      bind on the same near-empty set. (ii) The budget does not bind -- sufficient managerial slack,
+      a deputy who can run operations while the incumbent documents, or a successor whose absorptive
+      capacity needs less exposure per unit of capability. The composite that matters for (i) is the
+      PRODUCT of documentation coverage and exception rate, not either alone: a heavily documented firm
+      in a high-variance environment still has a live residual, and a lightly documented firm in a
+      low-variance one may not.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+
+# ---------------------------------------------------------------------------
+# Assumption atoms -- premises taken without test; each is relaxable.
+# ---------------------------------------------------------------------------
+assumption_atoms:
+  - id: AA1
+    statement: >-
+      The six-tier ontology's published transfer column is correct AS a transaction column -- i.e.
+      it correctly answers what arrives in a buyer's possession.
+    type: "inherited_framework_trust"
+    relaxable: true
+    relaxation_consequence: >-
+      The persistence column is derived from the same primitives as the transfer column (the L/A/P
+      decomposition). If the transfer column is wrong, D1 does not go through and P1 loses its
+      derivation, though the persistence column could still be asserted directly at the cost of
+      contribution 1's status as a result.
+    affects: [D1, P1]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: AA2
+    statement: >-
+      Exception arrival is exogenous to preparation effort: the rate at which ordinary operation
+      throws uncovered cases is set by the business, not by how hard the incumbent tries.
+    type: "structural_exogeneity"
+    relaxable: true
+    relaxation_consequence: >-
+      This is the single most exposed link in the chain. If transfer duration responds strongly to
+      investment intensity -- more contact hours, structured rotation, simulated exception exposure --
+      then the bound is soft and P5's "differs in kind" claim weakens to "differs in parameter". The
+      honest fallback is to state exception-arrival rate as an unmeasured parameter rather than to
+      calibrate it.
+    affects: [P5, D4]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: AA4
+    statement: >-
+      The three persistence mechanisms are exhaustive over the six-tier stack because they classify by
+      CARRIER — an institution, an inspectable object, or a person — and the ontology admits no fourth
+      carrier.
+    type: "classification_completeness"
+    relaxable: true
+    relaxation_consequence: >-
+      The live boundary is a residual distributed across several people and held by none of them
+      individually. It is treated here as belonging to the organization tier rather than as a fourth
+      carrier. If a substantial share of what a firm needs to keep operating is group-carried in that
+      way, P4 applies to a smaller share of the firm than it appears to, and the trade-off is
+      correspondingly smaller. Conceded in the body rather than left for a reader to find.
+    affects: [P1, P3, P4]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: AA3
+    statement: >-
+      The incumbent's own time is the shared scarce input to both preparation channels, so the two
+      investments draw on one budget.
+    type: "resource_identity"
+    relaxable: true
+    relaxation_consequence: >-
+      This is what makes the constraint bind, and it is a consequence of C1 rather than a free
+      assumption: in an owner-managed firm the person who holds the residual is the person who would
+      document it and the person who would teach it. Relaxing it is exactly C5(ii), where the
+      trade-off dissolves -- so the assumption and the negative scope condition are the same statement
+      read in two directions.
+    affects: [P6, D5]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+
+# ---------------------------------------------------------------------------
+# Methods.
+# ---------------------------------------------------------------------------
+methods:
+  - id: M1
+    statement: >-
+      Monte Carlo power simulation for the crossover contrast, over per-arm sample size, per-arm
+      standardised effect, and the correlation between the two investments.
+    type: "simulation"
+    inputs: []
+    outputs: [F1, F2]
+    code_anchor: "code/power_divergence_signature.py"
+    reproducibility:
+      seed: "20260810"
+      version: "20,000 replications per cell; deterministic given the seed"
+      runtime_environment: "Python 3.12 + uv-managed dependencies; numpy only"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Testable Signature -- Power"]
+  - id: M2
+    statement: >-
+      Instrument-level audit of candidate sampling frames: for each candidate, read the survey
+      instrument or data dictionary at primary-document level and record whether it contains an item
+      measuring documentation coverage and an item measuring exception rate.
+    type: "archival_search"
+    inputs: []
+    outputs: [NF1, NF2, NF3]
+    reproducibility:
+      seed: "not applicable"
+      version: "candidate list and per-candidate verdicts recorded with a fetch ledger"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+  - id: M3
+    statement: >-
+      The pre-registered design itself: a two-arm matched-transition study measuring documentation
+      coverage and successor exposure at t-1 on one instrument, with realized price as the arm-A
+      outcome at t and operating disruption as the arm-B outcome over t+1 to t+3.
+    type: "survey_instrument"
+    inputs: []
+    outputs: []
+    reproducibility:
+      seed: "not applicable"
+      version: "specified, NOT executed -- see L1"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design"]
+
+# ---------------------------------------------------------------------------
+# Findings -- what is the case, from M1.
+# ---------------------------------------------------------------------------
+findings:
+  - id: F1
+    statement: >-
+      For the crossover contrast, .80 power is reached at 75 transitions per arm when the two
+      investments are uncorrelated and each carries a standardised effect of .35; at 100 per arm when
+      they correlate at +.30, and at 50 per arm when they correlate at -.30.
+    source_measurements: []
+    generating_method: M1
+    statistical_strength: "20,000 replications per cell; two-sided alpha .05"
+    conditions: "C1, C2, C4"
+    antecedents: [M1]
+    falsifier: >-
+      A simulation under the same estimand and error structure returning materially different
+      thresholds at the same seed and replication count.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Testable Signature -- Power"]
+  - id: F2
+    statement: >-
+      At zero correlation between the two investments the crossover test has exactly the power of a
+      single standardised slope at the same per-arm n (.352 against .349 at n = 40; .719 against .720
+      at n = 100), because the contrast is twice the effect and carries four coefficient variances and
+      the two cancel. The factor of two therefore falls on the TOTAL sample, not on the contrast.
+    source_measurements: []
+    generating_method: M1
+    statistical_strength: "identity, confirmed numerically at three sample sizes"
+    conditions: "correlation between investments = 0"
+    antecedents: [M1]
+    falsifier: >-
+      Any cell at rho = 0 in which crossover power and single-slope power at the same per-arm n differ
+      by more than simulation error.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Testable Signature -- Power"]
+
+# ---------------------------------------------------------------------------
+# Negative findings -- discoveries of absence. These carry the route-1 contribution.
+# ---------------------------------------------------------------------------
+negative_findings:
+  - id: NF1
+    statement: >-
+      No firm-level dataset in the audited set measures process documentation coverage. The large
+      management-practice instruments all descend from a single questionnaire grid and each contains
+      exactly one item touching operational problems, which in every case scores the RESPONSE MODE to
+      a problem rather than the share of ordinary operation that is written down. BOUNDED CLAIM: the
+      audit covered five frame families at instrument level, with unobtained sources recorded as
+      unobtained rather than assumed empty. This is a strong negative over a bounded search, not a
+      proof of non-existence, and the body says so before stating the result.
+    expected_observation: >-
+      A firm-level instrument with an item asking what proportion of ordinary operating procedure is
+      documented.
+    source_method: M2
+    affects_nodes: [M3, P6]
+    motivates: [P7]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+  - id: NF2
+    statement: >-
+      Exception rate is measured by no firm-level dataset examined, administrative or survey. It is a
+      shop-floor quantity that no statistical agency in the audited set collects. The absence is
+      uniform across all five families, which supports reading it as a property of what statistical
+      agencies measure rather than as an accident of which ones were reached -- but that reading is an
+      inference and is marked as one.
+    expected_observation: >-
+      A firm-level variable recording the frequency with which operation throws a case the documented
+      process does not cover.
+    source_method: M2
+    affects_nodes: [M3, C5]
+    motivates: [P7]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+  - id: NF3
+    statement: >-
+      No available pairing of sources measures both arms on one instrument. The best exit-side and
+      succession-side sources differ simultaneously in informant, unit of observation, country,
+      selection rule and outcome type, so a divergence estimated across them would be confounded with
+      the instrument rather than identified by the design.
+    expected_observation: >-
+      One instrument, administered before the owner knows which path they will take, scoring both
+      investments on firms subsequently observed to sell or to hand over.
+    source_method: M2
+    affects_nodes: [M3]
+    motivates: [P7]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+  - id: NF4
+    statement: >-
+      No empirical estimate exists of the opportunity cost of an incumbent's preparation time: no
+      study measures how contact hours with a successor reduce current firm performance. This is the
+      other half of the budget constraint and must be modelled theoretically and declared unmeasured.
+    expected_observation: >-
+      An estimate of the performance cost of incumbent time diverted to successor preparation.
+    source_method: "Phase-2 targeted literature search"
+    affects_nodes: [P6, AA3]
+    motivates: []
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-09"
+    body_sections: ["The Budget Constraint -- unmeasured parameters"]
+  - id: NF5
+    statement: >-
+      No defensible estimate exists of transfer duration as a function of investment intensity. The
+      elasticity of transfer duration to incumbent effort is unmeasured, so there is no equation to
+      calibrate and the paper must not imply one.
+    expected_observation: >-
+      An estimated duration-effort relationship for knowledge transfer to a named successor.
+    source_method: "Phase-2 targeted literature search"
+    affects_nodes: [P5, AA2]
+    motivates: []
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-09"
+    body_sections: ["The Budget Constraint -- unmeasured parameters"]
+  - id: NF6
+    statement: >-
+      The roughly 80/20 codification-versus-personalization split is a PRESCRIPTION in a practitioner
+      essay, not an observed equilibrium, and subsequent empirical work reports that firms do not hold
+      the ratio and that deviating from it does not degrade performance. It therefore cannot serve as
+      a phenomenon the theory explains.
+    expected_observation: >-
+      Evidence that firms converge on the ratio as an equilibrium outcome.
+    source_method: "Phase-2 targeted literature search"
+    affects_nodes: [P6]
+    motivates: []
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-09"
+    body_sections: ["Related Work -- what this paper does not claim"]
+  - id: NF7
+    statement: >-
+      No empirical work establishes that transfer stickiness varies with the stage of the RECIPIENT
+      RELATIONSHIP. The established result concerns variation across the stages of the transfer
+      PROCESS, which is a different variable; earlier framings in this line conflated them.
+    expected_observation: >-
+      A study measuring stickiness against recipient-relationship stage.
+    source_method: "Phase-2 targeted literature search"
+    affects_nodes: []
+    motivates: []
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-09"
+    body_sections: ["Related Work -- what this paper does not claim"]
+
+# ---------------------------------------------------------------------------
+# Stylized facts -- documented phenomena the constraint predicts.
+# ---------------------------------------------------------------------------
+stylized_facts:
+  - id: SF1
+    statement: >-
+      The succession penalty is not uniform: it is borne by previously good performers in highly
+      competitive sectors.
+    aggregates_findings: []
+    aggregation_logic: >-
+      External result, single country (Italian SMEs), with mean-reversion controls and family-size
+      instruments. Carried as a boundary object because the two accounts predict it differently, not
+      as evidence generated here.
+    uniquely_explained_by: >-
+      A competitive sector generates exceptions at a higher rate, so the person-carried Tier-5
+      residual is drawn on more often and its loss bites harder and sooner; a previously good
+      performer is precisely the firm whose performance depended on that residual being present. The
+      information-asymmetry account has no reason to predict a gradient in competitive intensity,
+      because counterparty verifiability is not a function of it.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Boundary Objects"]
+  - id: SF2
+    statement: >-
+      Under adult adoption, non-consanguineous successors outperform blood heirs.
+    aggregates_findings: []
+    aggregation_logic: >-
+      Single institutional setting. The features that make the natural experiment work -- son-in-law
+      adoption, the family registry, the social legitimacy of adopting an adult heir, permissive
+      adult-adoption law -- are absent elsewhere, and no replication outside that setting exists.
+    uniquely_explained_by: >-
+      Selection on the successor's capacity to absorb the residual, rather than on family membership.
+      MUST be cited as evidence from one institutional setting and never as a general regularity; the
+      transportability limit belongs in the same sentence as the finding.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Boundary Objects"]
+  - id: SF3
+    statement: >-
+      Family successions cause a decline in operating profitability on assets of at least four
+      percentage points around the transition, identified by the gender of the departing principal's
+      firstborn child.
+    aggregates_findings: []
+    aggregation_logic: >-
+      External causal estimate on Danish limited-liability firms. Carried as the magnitude anchor --
+      what a succession costs when it goes badly -- and as the identification precedent for the
+      design, not as a test of this paper's mechanism.
+    uniquely_explained_by: >-
+      Not uniquely explained by this account; the rival predicts a decline too. It anchors magnitude,
+      and the paper must say so rather than recruit it as support.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Boundary Objects"]
+
+# ---------------------------------------------------------------------------
+# Derivations -- the reasoning bridges.
+# ---------------------------------------------------------------------------
+derivations:
+  - id: D1
+    statement: >-
+      Decomposing the published transfer column into the three persistence mechanisms (L, A, P) shows
+      that the column is exactly the statement that L and A transfer to a buyer and P does not --
+      from which a second column, indexed to an event rather than to a counterparty, follows from the
+      same primitives.
+    from: []
+    to: P1
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Persistence Column"]
+  - id: D2
+    statement: >-
+      Applying P2 tier by tier to Tier-1 replacement with the entity persisting leaves only the
+      person-carried residual disturbed; applying it to removal with the entity conveyed leaves L
+      disturbed and A priced. The two events therefore bind on different tiers, and the divergence
+      result falls out as a corollary rather than standing as a second claim.
+    from: [P2]
+    to: P3
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Which Tier Binds"]
+  - id: D3
+    statement: >-
+      Among the person-carried residuals, draw frequency -- not tacitness -- discriminates. Tier 4's
+      tacit residual is drawn at discretion and constrains evolving the product rather than continuing
+      to ship it; Tier 2's relational residual arrives on a contract calendar and is re-formable by
+      introduction; Tier 6's is not replaced by this event at all; Tier 5's is drawn continuously,
+      because production happens every day and every uncovered case must be resolved now or output
+      degrades now.
+    from: [P3]
+    to: P4
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why Tier 5 Binds"]
+  - id: D4
+    statement: >-
+      Capacity to resolve novel exceptions is built by exposure to exceptions, and exceptions arrive
+      at a rate the business generates. The successor's acquisition of the residual is therefore
+      rate-limited by exception arrival, a property of the business rather than of the preparation
+      effort -- so money buys codification but does not buy elapsed operating time, and the bound
+      differs in KIND from a codification-rate bound rather than only in parameter.
+    from: [P4]
+    to: P5
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why Tier 5 Binds"]
+  - id: D5
+    statement: >-
+      Under C1 the person holding the residual is the only one who could document it and the only one
+      who could teach it, so the two preparation channels draw on one individual's time. Codification
+      and tacit transfer are complements AS KNOWLEDGE and rivals AS INVESTMENTS, and the rivalry is
+      structural rather than stipulated.
+    from: [P4]
+    to: P6
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Budget Constraint"]
+  - id: D6
+    statement: >-
+      A theory whose two terms are absent from every instrument the field has built is a theory the
+      field could not have tested. The measurement negative therefore explains the absence of prior
+      empirical work on the trade-off, and converts "this has not been shown" from an objection into a
+      prediction the audit confirms.
+    from: [P6]
+    to: P7
+    reasoning_type: "abductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+
+# ---------------------------------------------------------------------------
+# Propositions -- the theoretical claims. Two contributions, not three.
+# ---------------------------------------------------------------------------
+propositions:
+  - id: P1
+    statement: >-
+      The six-tier ontology's published transfer column is indexed to a counterparty, so an event with
+      no counterparty requires its own column -- the persistence column -- which is derivable from the
+      same primitives rather than posited alongside them.
+    type: ontological
+    conditions: "C2"
+    antecedents: [D1]
+    assumptions: [AA1]
+    falsifier: >-
+      If the transfer column already answers the no-counterparty question -- i.e. if for every tier
+      what a buyer would receive coincides with what survives a replacement -- the second column is
+      redundant and contribution 1 collapses into redescription.
+    evidence:
+      - type: analytic
+        anchor: "The L/A/P decomposition reproduces the published column exactly, then supports a second reading of it."
+    body_sections: ["The Persistence Column"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P0
+    statement: >-
+      The entrepreneurial-exit literature establishes that exit is a set of divergent ROUTES with
+      different drivers, and asks which route an owner takes. This paper asks the question that
+      literature leaves open: given that the routes diverge, what does preparing for one do to
+      readiness for the other? Preparation is where the divergence originates, not an undifferentiated
+      antecedent to it.
+    type: ontological
+    conditions: "C1, C2"
+    antecedents: []
+    assumptions: []
+    falsifier: >-
+      Existing exit-route work shown to already model preparation as route-specific and rivalrous, in
+      which case this paper's question is answered rather than open.
+    evidence:
+      - type: citation
+        anchor: "Exit as a constitutive part of the entrepreneurial process, and exit as divergent routes with different drivers."
+        citation_keys: [detienne-2010-entrepreneurial-exit-critical, wennberg-2010-reconceptualizing-entrepreneurial-exit]
+        citation_role: theoretical_predecessor
+    body_sections: ["Introduction"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P2
+    statement: >-
+      A tier whose persistence mechanism is undisturbed by an event cannot be the binding constraint
+      on value retained through that event.
+    type: ontological
+    conditions: ""
+    antecedents: []
+    assumptions: []
+    falsifier: >-
+      An event in which value is demonstrably lost at a tier whose persistence mechanism the event
+      leaves intact.
+    evidence:
+      - type: analytic
+        anchor: "Near-definitional: a constraint binds only where the event removes something. It does the work of narrowing the field to the person-carried residuals."
+    body_sections: ["Which Tier Binds"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P3
+    statement: >-
+      Removal disturbs legal continuity and prices artifact continuity, while replacement disturbs
+      only person continuity. The two events therefore bind on different tiers, and preparation that
+      raises value under one does not thereby raise value under the other.
+    type: ontological
+    conditions: "C1, C2"
+    antecedents: [P2, D2]
+    assumptions: [AA1]
+    falsifier: >-
+      A demonstration that replacement disturbs legal or artifact continuity materially, or that
+      removal leaves the person-carried residual at risk in a way preparation could address.
+    evidence:
+      - type: analytic
+        anchor: "Corollary of P2 applied twice, once per event."
+    ruled_out_rivals: []
+    body_sections: ["Which Tier Binds"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P4
+    statement: >-
+      Tier 5 is the unique tier whose person-carried residual is both destroyed by Tier-1 replacement
+      in the owner-operated population and exercised at operating frequency, so that its loss cannot be
+      absorbed by deferring anything. The discriminating property is draw frequency, not tacitness.
+    type: ontological
+    conditions: "C1, C2, C3"
+    antecedents: [P3, D3]
+    assumptions: []
+    falsifier: >-
+      Another tier's person-carried residual shown to be drawn at operating frequency under
+      replacement, or Tier 5's shown to be deferrable without production degrading.
+    evidence:
+      - type: analytic
+        anchor: "Tier-by-tier elimination on draw frequency among the person-carried residuals."
+    ruled_out_rivals: [A1]
+    body_sections: ["Why Tier 5 Binds"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P5
+    statement: >-
+      The successor's acquisition of the Tier-5 residual is rate-limited by exception arrival rather
+      than by preparation effort, so the transfer-rate bound differs in kind from a codification-rate
+      bound: money buys codification, and it does not buy elapsed operating time. A multi-decade
+      preparation window is therefore a structural feature, not a planning failure.
+    type: ontological
+    conditions: "C1, C2, C3"
+    antecedents: [P4, D4]
+    assumptions: [AA2]
+    falsifier: >-
+      Transfer duration shown to respond strongly to investment intensity -- contact hours, structured
+      rotation, simulated exception exposure -- which would weaken the claim to "differs in parameter".
+    evidence:
+      - type: analytic
+        anchor: "Corollary of P4 via exposure-built capacity. NOT an independent contribution; folded into contribution 2's derivation."
+    body_sections: ["Why Tier 5 Binds"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P6
+    statement: >-
+      Under a finite budget of managerial attention and capital, an owner allocates between converting
+      person-carried residual into artifact -- which raises value under removal -- and moving
+      person-carried residual into a specific successor, which raises value under replacement. The two
+      draw on the same scarce input, the incumbent's own time, and the second is additionally
+      rate-limited by exception arrival, which the budget cannot relax.
+    type: management_outcome
+    conditions: "C1, C2, C3, C5"
+    antecedents: [P4, P5, D5]
+    assumptions: [AA3]
+    falsifier: >-
+      Owner-operated firms shown to raise both investments together without trade-off outside the C5
+      conditions, or the documenter and the teacher shown to be separable persons within C1.
+    evidence:
+      - type: analytic
+        anchor: "Derived from the owner-managed identity of documenter and teacher, NOT from the codification/personalization literature."
+      - type: citation
+        anchor: "Vocabulary only -- codification versus personalization as a naming convention. No sample, no measure, no test is inherited with it."
+        citation_keys: [hansen-1999-whats-your-strategy]
+        citation_role: definitional_source
+    ruled_out_rivals: []
+    body_sections: ["The Budget Constraint"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P7
+    statement: >-
+      The trade-off has gone untested because neither of its terms is measured by any existing
+      instrument: the management-practice survey family scores response mode rather than documentation
+      coverage, and exception rate is collected by no statistical agency. The absence of prior evidence
+      is therefore predicted by the account rather than evidence against it.
+    type: ontological
+    conditions: ""
+    antecedents: [P6, D6, NF1, NF2, NF3]
+    assumptions: []
+    falsifier: >-
+      An existing firm-level instrument containing an item measuring documentation coverage or
+      exception rate, which would show the constructs were measurable and the trade-off simply
+      untested.
+    evidence:
+      - type: archival_record
+        anchor: "Instrument-level audit of candidate frames with a per-candidate fetch ledger; verdicts recorded per requirement."
+    body_sections: ["Why the Design Cannot Yet Be Run"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+  - id: P8
+    statement: >-
+      The account predicts a crossover: documentation coverage predicts realized sale price but not
+      handover disruption, and successor exposure predicts handover disruption but not sale price. The
+      null it must beat is not "no association" but "one portfolio raises both".
+    type: ontological
+    conditions: "C1, C2, C3, C5"
+    antecedents: [P3, P6]
+    assumptions: []
+    falsifier: >-
+      Both investments predicting both outcomes with the same sign and comparable magnitude within the
+      C5 scope, which is the single-portfolio account.
+    evidence:
+      - type: code_anchor
+        anchor: "code/power_divergence_signature.py; seed 20260810"
+    ruled_out_rivals: [A3]
+    body_sections: ["The Testable Signature"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+
+# ---------------------------------------------------------------------------
+# Alternative explanations.
+# ---------------------------------------------------------------------------
+alternative_explanations:
+  - id: A1
+    statement: >-
+      Generic information asymmetry, not transfer capacity at a specific layer, is the binding
+      constraint: succession is easier than sale because an internal successor and the incumbent know
+      more about each other than a stranger and the incumbent do.
+    rules_out_required: []
+    ruled_out_by: []
+    rules_out_status: "open"
+    reasoning: >-
+      THE STRUCTURAL RIVAL, and it is NOT ruled out empirically here -- the paper distinguishes it
+      rather than defeating it, and must say so. Three observable differences are stated instead.
+      (a) Zero information asymmetry does not imply zero transfer cost: an internal successor told
+      everything tellable still has not ACQUIRED the capacity to resolve exceptions, because capacity
+      is built by exposure and not by disclosure; communication closes an information gap, not a
+      capacity gap, and the rival has no term for the difference. (b) The two predict different
+      remedies: information asymmetry is closable by disclosure, warranty, escrow and earn-out, none
+      of which teaches anyone anything. (c) The two have different cross-sectional gradients:
+      asymmetry scales with the counterparty's distance from the firm, transfer capacity scales with
+      the size of the uncodified residual and is invariant to who the counterparty is. Note the
+      rival's own result runs the sharp way: internal handovers carry LOWER asymmetry, so on that
+      account succession is the easy case.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Rival Account"]
+  - id: A2
+    statement: >-
+      Revenue continuity through founder relationships, not retained productive capability, is what a
+      succession puts at risk.
+    rules_out_required: []
+    ruled_out_by: []
+    rules_out_status: "open"
+    reasoning: >-
+      CONCEDED, NOT CONTESTED. The relational residual is genuinely closer to the rival's territory,
+      it is well covered by the information and relational-capital literatures, and the design must
+      CONTROL for it rather than claim it. This paper's claim is about retained productive capability;
+      saying so in the introduction costs nothing and removes a reviewer's easiest objection.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Rival Account -- what this paper concedes"]
+  - id: A3
+    statement: >-
+      One preparation portfolio raises value under both events: well-run firms are simply better
+      prepared for everything, and the apparent divergence is an artifact of measuring two outcomes.
+    rules_out_required: [F1]
+    ruled_out_by: []
+    rules_out_status: "candidate"
+    reasoning: >-
+      This is the null the divergence test is built to beat, and it is the reason the estimand is a
+      crossover rather than two main effects. It remains a candidate because the design is unrun.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Testable Signature"]
+  - id: A4
+    statement: >-
+      The post-transition decline is mean reversion: firms that performed well before a transition
+      would have regressed anyway, and the transition merely marks the point of measurement.
+    rules_out_required: []
+    ruled_out_by: []
+    rules_out_status: "open"
+    reasoning: >-
+      Live and serious, because SF1's headline conditionality -- the penalty falls on PREVIOUSLY GOOD
+      performers -- is exactly the shape mean reversion produces. Handled by design rather than by
+      argument: pre-trend controls over t-3 to t-1 are mandatory, not a robustness check, and the
+      source result itself carries mean-reversion controls.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- identification"]
+
+# ---------------------------------------------------------------------------
+# Robustness checks -- all PLANNED; the design is unrun.
+# ---------------------------------------------------------------------------
+robustness_checks:
+  - id: RC1
+    statement: >-
+      Sudden-transition stratum: transitions triggered by death or sudden incapacity of the operating
+      owner, where the owner did not choose the timing, so selection into preparing for succession
+      versus exit cannot operate.
+    varied_parameter: "exogeneity of transition timing"
+    range_explored: "planned stratum alongside the main sample"
+    result_stability: "planned"
+    affects_nodes: [P8, L3]
+    source_method: M3
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- identification"]
+  - id: RC2
+    statement: >-
+      Externally-mandated codification contrast: franchise systems and certified or regulated process
+      regimes, where documentation coverage is set outside the owner's budget, should show the
+      trade-off attenuated or absent per C5(i).
+    varied_parameter: "source of documentation coverage (endogenous vs mandated)"
+    range_explored: "planned contrast group"
+    result_stability: "planned"
+    affects_nodes: [C5, P6]
+    source_method: M3
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- scope tests"]
+  - id: RC3
+    statement: >-
+      Alternative codification measures: the divergence should not depend on which operationalisation
+      of documentation coverage is used, and an externally recorded proxy such as dated certification
+      scope should recover the same pattern as the survey measure.
+    varied_parameter: "documentation-coverage operationalisation"
+    range_explored: "planned; at least one survey measure and one externally recorded proxy"
+    result_stability: "planned"
+    affects_nodes: [P8]
+    source_method: M3
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- scope tests"]
+
+# ---------------------------------------------------------------------------
+# Limitations.
+# ---------------------------------------------------------------------------
+limitations:
+  - id: L1
+    statement: >-
+      The design is specified and NOT run. Every proposition is derived; none is tested here.
+    affects: [P1, P2, P3, P4, P5, P6, P8]
+    severity: "high"
+    mitigation: >-
+      The design is pre-registered with its power stated, and the reason it is unrun is itself
+      established at instrument level (P7) rather than asserted. The paper must present it as a
+      specification; if the design section reads as an aspiration, the paper has drifted into a
+      theory-only fallback rather than chosen this shape.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L2
+    statement: >-
+      The exception-arrival bound is the most exposed link in the chain and rests on an unmeasured
+      parameter (AA2, NF5).
+    affects: [P5, AA2]
+    severity: "high"
+    mitigation: >-
+      State exception-arrival rate as an unmeasured parameter; the design's job is to bound it, not to
+      estimate it. Draft P5 as a derived structural claim, never as a calibrated one.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L3
+    statement: >-
+      Selection into succession versus exit is not bounded outside the sudden-transition stratum, and
+      that stratum is thin and cleans selection only WITHIN the succession arm -- a sudden transition
+      largely forecloses the exit arm.
+    affects: [P8]
+    severity: "medium"
+    mitigation: "RC1 bounds the succession side; the exit side rests on the matched design."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L4
+    statement: >-
+      SF2 holds in one institutional setting with no replication outside it, and the features that
+      make its natural experiment work do not travel.
+    affects: [SF2]
+    severity: "medium"
+    mitigation: "Cite with the transportability limit in the same sentence; never as a general regularity."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Boundary Objects", "Limitations"]
+  - id: L6
+    statement: >-
+      The evidence base and the proposed setting are different jurisdictions. The three documented
+      phenomena come from Italy, Denmark and Japan; the frame most likely to supply dated, identified
+      transitions with an unambiguous sold-versus-retained test is a common-law company register
+      elsewhere.
+    affects: [SF1, SF2, SF3, M3]
+    severity: "medium"
+    mitigation: >-
+      Nothing in the derivation is jurisdiction-specific -- draw frequency and one owner's time do not
+      depend on company law -- but the quoted succession-penalty magnitudes are not transportable
+      without argument and are used to anchor scale, never to predict a coefficient. A design fielded
+      in one country is powered and interpreted on its own.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["Limitations"]
+  - id: L7
+    statement: >-
+      The cross-sectional gradients that distinguish the two accounts are separable in principle but
+      not cleanly in practice: an insider is typically also more exposed, so counterparty distance and
+      exposure move together in most samples.
+    affects: [A1]
+    severity: "medium"
+    mitigation: >-
+      Stated as a demand on the design rather than a property of the world; separating the two is a
+      requirement the frame must meet, and the original phrasing overclaimed by implying the gradients
+      come apart on their own.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Rival Account"]
+  - id: L5
+    statement: >-
+      A documentary or artifact-count measure of documentation coverage behaves unknown-ly on
+      low-activity units, and the error plausibly runs toward "prepared".
+    affects: [M3]
+    severity: "medium"
+    mitigation: >-
+      The C5 composite (the product of coverage and exception rate) is the antidote and is fixed in the
+      pre-registration rather than left as an analysis choice; a zero-activity control belongs in any
+      documentary measure from the start. Note this corpus's one test of the analogous premise did NOT
+      confirm the confound, so it is carried as a design risk and not as an established effect.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-10"
+    body_sections: ["The Pre-Registered Design -- measurement"]
+
+# ---------------------------------------------------------------------------
+# Cross-paper engagement.
+# ---------------------------------------------------------------------------
+corpus_precedents:
+  - paper_key: 2026ai
+    relationship: extends
+    spine_nodes: [P1, P3, P5]
+  - paper_key: 2026ag
+    relationship: refines
+    spine_nodes: [P1, P2, P4]
+  - paper_key: 2026an
+    relationship: applies
+    spine_nodes: [L5]
+
+# ---------------------------------------------------------------------------
+# External anchors. Every key below is REGISTERED and primary-record verified.
+# ---------------------------------------------------------------------------
+external_anchors:
+  - citation_key: dehlen-2014-role-information-asymmetry
+    role: rival_ruled_out
+    spine_nodes: [A1]
+  - citation_key: howorth-2004-buyouts-information-asymmetry
+    role: rival_ruled_out
+    spine_nodes: [A1]
+  - citation_key: hansen-1999-whats-your-strategy
+    role: definitional_source
+    spine_nodes: [P6]
+  - citation_key: szulanski-1996-exploring-internal-stickiness
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: szulanski-2000-process-knowledge-transfer
+    role: contrast_case
+    spine_nodes: [NF7]
+  - citation_key: szulanski-2016-overcoming-stickiness-how
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: cucculelli-2008-family-succession-firm
+    role: boundary_anchor
+    spine_nodes: [SF1]
+  - citation_key: mehrotra-2013-adoptive-expectations-rising
+    role: boundary_anchor
+    spine_nodes: [SF2]
+  - citation_key: bennedsen-2007-inside-family-firm
+    role: boundary_anchor
+    spine_nodes: [SF3]
+  - citation_key: perezgonzalez-2006-inherited-control-firm
+    role: motivating_problem
+    spine_nodes: [SF3]
+  - citation_key: dierickx-1989-asset-stock-accumulation
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: penrose-1959-theory-growth-firm
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: polanyi-1966-the-tacit-dimension
+    role: canonical_reference
+    spine_nodes: [P4]
+  - citation_key: pentland-2005-organizational-routines-as
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: feldman-2003-reconceptualizing-organizational-routines
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: cohen-1990-absorptive-capacity-new
+    role: definitional_source
+    spine_nodes: [C5]
+  - citation_key: choi-2003-empirical-investigation-km-styles
+    role: contrast_case
+    spine_nodes: [P6]
+  - citation_key: kumar-2011-balancing-knowledge-strategy
+    role: contrast_case
+    spine_nodes: [P6, NF6]
+  - citation_key: detienne-2010-entrepreneurial-exit-critical
+    role: theoretical_predecessor
+    spine_nodes: [P0]
+  - citation_key: wennberg-2010-reconceptualizing-entrepreneurial-exit
+    role: theoretical_predecessor
+    spine_nodes: [P0]
+
+# ---------------------------------------------------------------------------
+# Open questions.
+# ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Changelog -- append-only.
+# ---------------------------------------------------------------------------

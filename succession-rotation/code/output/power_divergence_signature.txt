@@ -1,0 +1,68 @@
+Monte Carlo power, crossover divergence signature. sims=20000, alpha=0.05
+delta = (b_cod,A - b_exp,A) - (b_cod,B - b_exp,B); H0: delta = 0
+
+--- correlation between the two investments: rho = -0.30 ---
+  n/arm |   beta=0.25   beta=0.35   beta=0.45
+  -------------------------------------------
+     40  |      0.435      0.739      0.927
+     50  |      0.527      0.827      0.969
+     60  |      0.599      0.885      0.987
+     75  |      0.707      0.946      0.996
+    100  |      0.823      0.986      1.000
+    125  |      0.898      0.997      1.000
+    150  |      0.943      0.999      1.000
+    200  |      0.983      1.000      1.000
+    300  |      0.999      1.000      1.000
+    400  |      1.000      1.000      1.000
+
+--- correlation between the two investments: rho = +0.00 ---
+  n/arm |   beta=0.25   beta=0.35   beta=0.45
+  -------------------------------------------
+     40  |      0.352      0.620      0.854
+     50  |      0.424      0.723      0.923
+     60  |      0.498      0.798      0.962
+     75  |      0.591      0.881      0.987
+    100  |      0.719      0.952      0.998
+    125  |      0.812      0.983      1.000
+    150  |      0.875      0.994      1.000
+    200  |      0.950      0.999      1.000
+    300  |      0.994      1.000      1.000
+    400  |      1.000      1.000      1.000
+
+--- correlation between the two investments: rho = +0.30 ---
+  n/arm |   beta=0.25   beta=0.35   beta=0.45
+  -------------------------------------------
+     40  |      0.265      0.476      0.717
+     50  |      0.323      0.564      0.817
+     60  |      0.376      0.651      0.879
+     75  |      0.451      0.750      0.942
+    100  |      0.565      0.864      0.984
+    125  |      0.670      0.931      0.996
+    150  |      0.748      0.965      0.999
+    200  |      0.856      0.991      1.000
+    300  |      0.959      1.000      1.000
+    400  |      0.990      1.000      1.000
+
+Smallest n/arm reaching power >= .80 on this grid:
+  rho=-0.30  beta=0.25  ->  100 per arm
+  rho=-0.30  beta=0.35  ->   50 per arm
+  rho=-0.30  beta=0.45  ->   40 per arm
+  rho=+0.00  beta=0.25  ->  125 per arm
+  rho=+0.00  beta=0.35  ->   75 per arm
+  rho=+0.00  beta=0.45  ->   40 per arm
+  rho=+0.30  beta=0.25  ->  200 per arm
+  rho=+0.30  beta=0.35  ->  100 per arm
+  rho=+0.30  beta=0.45  ->   50 per arm
+
+For comparison -- the single-arm MAIN effect (b_cod in arm A alone),
+which is what a power calculation would report if the crossover were
+mistaken for a main effect:
+  beta=0.25  n= 40  ->  power 0.349
+  beta=0.25  n= 60  ->  power 0.496
+  beta=0.25  n=100  ->  power 0.720
+  beta=0.35  n= 40  ->  power 0.623
+  beta=0.35  n= 60  ->  power 0.805
+  beta=0.35  n=100  ->  power 0.957
+  beta=0.45  n= 40  ->  power 0.865
+  beta=0.45  n= 60  ->  power 0.967
+  beta=0.45  n=100  ->  power 0.999
