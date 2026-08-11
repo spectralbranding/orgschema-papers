@@ -1,0 +1,10 @@
+Emitting the paper's deterministic tables from their owning derivations.
+    wrote output/tables/table1_bracket_width_vs_union_bound.csv  (7 rows)
+    wrote output/tables/table3_reported_neff_vs_formula.csv  (4 rows)
+    wrote output/tables/table4_bracket_surviving.csv  (4 rows)
+    wrote output/tables/table5_dimensional_ceiling_typical.csv  (5 rows)
+    wrote output/tables/table6_transferable_share.csv  (5 rows)
+
+Tables 2 and A1, and the worst-case block of Table 5, are seeded Monte Carlo and
+are produced by phi_mapping.py, threat1_kill_test.py and formal_model_checks.py.
+Their stdout is captured by reproduce.sh into ../output/logs/.

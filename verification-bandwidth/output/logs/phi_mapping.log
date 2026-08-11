@@ -1,0 +1,106 @@
+phi mapping.  seed=20260811  GL nodes=400
+
+C1  QUADRATURE vs CLOSED FORM (1) vs MONTE CARLO
+         t     rho   P11 quad    P11 cdf     P11 mc
+     0.300   0.000   0.055612   0.055612   0.055453
+     0.300   0.391   0.060106   0.060106   0.060202
+     0.300   0.700   0.075760   0.075760   0.075982
+     0.300   0.900   0.113807   0.113807   0.113827
+     0.674   0.000   0.249689   0.249689   0.249480
+     0.674   0.391   0.264997   0.264997   0.264597
+     0.674   0.700   0.311377   0.311377   0.311198
+     0.674   0.900   0.385874   0.385874   0.386325
+     1.000   0.000   0.466065   0.466065   0.466535
+     1.000   0.391   0.484923   0.484923   0.485165
+     1.000   0.700   0.534363   0.534363   0.534434
+     1.000   0.900   0.596360   0.596360   0.596202
+     1.960   0.000   0.902508   0.902508   0.902895
+     1.960   0.391   0.906577   0.906577   0.906223
+     1.960   0.700   0.916555   0.916555   0.916570
+     1.960   0.900   0.929652   0.929652   0.929505
+    max |quad - cdf| = 2.09e-14   max |quad - mc| = 4.71e-04
+
+M1  EVEN in rho: max |P11(rho) - P11(-rho)| = 0.00e+00
+
+M2  MONOTONE: min dP11/drho over grid = +3.732e-08 at t=3.500 rho=0.001
+    analytic vs numeric derivative: max abs diff = 1.31e-10
+    heterogeneous (t_e != t_f): min derivative = +2.794e-63
+
+M3  FIXED ENDPOINTS: phi(0) = 0 and phi(rho) -> 1
+         t       q     phi(0)   1-phi@1e-02   1-phi@1e-04   1-phi@1e-06   1-phi@1e-09
+     0.150  0.1192   6.61e-17      4.18e-01      4.24e-02      4.24e-03      1.34e-04
+     0.300  0.2358   5.01e-16      2.39e-01      2.39e-02      2.39e-03      7.55e-05
+     0.674  0.4997   3.89e-15      1.44e-01      1.43e-02      1.43e-03      4.53e-05
+     1.000  0.6827   1.72e-14      1.26e-01      1.26e-02      1.26e-03      3.95e-05
+     1.960  0.9500   3.88e-13      1.39e-01      1.39e-02      1.39e-03      4.79e-05
+     3.000  0.9973   9.57e-12      1.84e-01      1.86e-02      1.86e-03      5.18e-05
+
+M4  QUADRATIC AT THE ORIGIN: phi ~ c rho^2, c = t^2 e^-t^2 / (pi q(1-q))
+    t=0.300  c analytic=0.14529  c numeric=0.14533
+    t=0.674  c analytic=0.36723  c numeric=0.36731
+    t=1.000  c analytic=0.54057  c numeric=0.54064
+    t=1.960  c analytic=0.55248  c numeric=0.55249
+    max relative discrepancy = 2.82e-04
+
+M5  ATTENUATION: phi(rho) < rho ?
+    homogeneous:   max (phi - rho) = -0.009935 at t=1.465 rho=0.010
+    heterogeneous: max (phi - rho) = -0.048376 at t_e=1.41 t_f=1.41 rho=0.05
+
+R1  SHARED ITEM DIFFICULTY: phi(rho=0) = Var_T(q(T)) / (q(1-q))
+      spread    q_bar   phi(0) direct   Var/q(1-q)
+        0.00   0.4997       -0.000000     0.000000
+        0.10   0.5008        0.007304     0.007304
+        0.25   0.5065        0.044352     0.044352
+        0.50   0.5198        0.151230     0.151230
+
+P1  PANEL RECOVERY under the map's own model (Gaussian deviations)
+       n   rho  phi_geom   phi_err  mapOfMean  meanOfMap    resid
+      10  0.00     0.271    0.0610     0.0391     0.0618  -0.0008
+      10  0.20     0.314    0.0834     0.0530     0.0828  +0.0006
+      10  0.50     0.610    0.2476     0.2227     0.2471  +0.0006
+      10  0.90     0.902    0.6050     0.6003     0.6049  +0.0001
+      40  0.00     0.119    0.0107     0.0073     0.0111  -0.0005
+      40  0.20     0.227    0.0355     0.0271     0.0359  -0.0004
+      40  0.50     0.539    0.1750     0.1680     0.1750  -0.0000
+      40  0.90     0.904    0.6058     0.6039     0.6058  +0.0001
+    max |phi_err - meanOfMap| = 0.0008   (map is exact)
+    max |meanOfMap - mapOfMean| = 0.0298   (Jensen; map pairwise)
+
+INVERSION — geometric correlation implied by Kohli's reported phi
+  (q = the panel's marginal error rate; observable, so the map is identified)
+    condition                   phi      q     rho  n_eff_vote  n_eff_rank
+    ----------------------------------------------------------------------
+    MNLI                      0.391   0.10  0.9805        2.18        1.02
+                                     0.25  0.9199        2.18        1.08
+                                     0.50  0.8175        2.18        1.19
+                                     0.68  0.7657        2.18        1.26
+    SNLI                      0.354   0.10  0.9763        2.35        1.02
+                                     0.25  0.9059        2.35        1.09
+                                     0.50  0.7921        2.35        1.23
+                                     0.68  0.7353        2.35        1.31
+    AlphaNLI                  0.328   0.10  0.9727        2.48        1.02
+                                     0.25  0.8945        2.48        1.10
+                                     0.50  0.7726        2.48        1.25
+                                     0.68  0.7124        2.48        1.34
+    MNLI (chain-of-thought)   0.456   0.10  0.9860        1.94        1.01
+                                     0.25  0.9395        1.94        1.06
+                                     0.50  0.8563        1.94        1.15
+                                     0.68  0.8138        1.94        1.20
+
+figure -> output/figures/phi_mapping.png
+
+VERDICT
+  PASS  C1 quadrature
+  PASS  M1 even
+  PASS  M2 monotone
+  PASS  M3 endpoints
+  PASS  M4 quadratic
+  PASS  M5 attenuation
+  PASS  R1 difficulty
+  PASS  P1 panel recovery
+
+  => SURVIVES: the map is exact, even in rho, strictly monotone, and
+     strictly attenuating, with fixed endpoints — so it is invertible
+     given the observed marginal error rate, and Kish n_eff on error
+     vectors is an upper bound on verification bandwidth regardless.
+     The design-effect reading holds.

@@ -1,0 +1,335 @@
+2026-08-11T16:20:38Z  reproduce.sh starting
+2026-08-11T16:20:38Z  python: 3.12.12
+2026-08-11T16:20:38Z  seed: 20260811 (fixed in every script)
+2026-08-11T16:20:38Z  quick mode: 0
+2026-08-11T16:20:38Z  --- running reported_neff_check.py
+2026-08-11T16:20:38Z      reported_neff_check.py OK -> output/logs/reported_neff_check.log
+Does the reported n_eff equal the design-effect formula at the reported phi?
+
+    condition                 k    phi   formula  reported     diff
+    MNLI                      9  0.391     2.180      2.18   +0.000
+    SNLI                      9  0.354     2.349      2.35   -0.001
+    AlphaNLI                  9  0.328     2.483      2.48   +0.003
+    MNLI (chain-of-thought)   9  0.456     1.936      1.94   -0.004
+
+    independence ratio: 2.18/9 = 0.242 against a reported 0.242 -- matches
+
+CONFIRMED: the reported effective sample sizes ARE the design-effect formula
+evaluated at the reported error correlations. Cite the estimator; do not claim it.
+2026-08-11T16:20:38Z  --- running phi_mapping.py
+2026-08-11T16:20:41Z      phi_mapping.py OK -> output/logs/phi_mapping.log
+phi mapping.  seed=20260811  GL nodes=400
+
+C1  QUADRATURE vs CLOSED FORM (1) vs MONTE CARLO
+         t     rho   P11 quad    P11 cdf     P11 mc
+     0.300   0.000   0.055612   0.055612   0.055453
+     0.300   0.391   0.060106   0.060106   0.060202
+     0.300   0.700   0.075760   0.075760   0.075982
+     0.300   0.900   0.113807   0.113807   0.113827
+     0.674   0.000   0.249689   0.249689   0.249480
+     0.674   0.391   0.264997   0.264997   0.264597
+     0.674   0.700   0.311377   0.311377   0.311198
+     0.674   0.900   0.385874   0.385874   0.386325
+     1.000   0.000   0.466065   0.466065   0.466535
+     1.000   0.391   0.484923   0.484923   0.485165
+     1.000   0.700   0.534363   0.534363   0.534434
+     1.000   0.900   0.596360   0.596360   0.596202
+     1.960   0.000   0.902508   0.902508   0.902895
+     1.960   0.391   0.906577   0.906577   0.906223
+     1.960   0.700   0.916555   0.916555   0.916570
+     1.960   0.900   0.929652   0.929652   0.929505
+    max |quad - cdf| = 2.09e-14   max |quad - mc| = 4.71e-04
+
+M1  EVEN in rho: max |P11(rho) - P11(-rho)| = 0.00e+00
+
+M2  MONOTONE: min dP11/drho over grid = +3.732e-08 at t=3.500 rho=0.001
+    analytic vs numeric derivative: max abs diff = 1.31e-10
+    heterogeneous (t_e != t_f): min derivative = +2.794e-63
+
+M3  FIXED ENDPOINTS: phi(0) = 0 and phi(rho) -> 1
+         t       q     phi(0)   1-phi@1e-02   1-phi@1e-04   1-phi@1e-06   1-phi@1e-09
+     0.150  0.1192   6.61e-17      4.18e-01      4.24e-02      4.24e-03      1.34e-04
+     0.300  0.2358   5.01e-16      2.39e-01      2.39e-02      2.39e-03      7.55e-05
+     0.674  0.4997   3.89e-15      1.44e-01      1.43e-02      1.43e-03      4.53e-05
+     1.000  0.6827   1.72e-14      1.26e-01      1.26e-02      1.26e-03      3.95e-05
+     1.960  0.9500   3.88e-13      1.39e-01      1.39e-02      1.39e-03      4.79e-05
+     3.000  0.9973   9.57e-12      1.84e-01      1.86e-02      1.86e-03      5.18e-05
+
+M4  QUADRATIC AT THE ORIGIN: phi ~ c rho^2, c = t^2 e^-t^2 / (pi q(1-q))
+    t=0.300  c analytic=0.14529  c numeric=0.14533
+    t=0.674  c analytic=0.36723  c numeric=0.36731
+    t=1.000  c analytic=0.54057  c numeric=0.54064
+    t=1.960  c analytic=0.55248  c numeric=0.55249
+    max relative discrepancy = 2.82e-04
+
+M5  ATTENUATION: phi(rho) < rho ?
+    homogeneous:   max (phi - rho) = -0.009935 at t=1.465 rho=0.010
+    heterogeneous: max (phi - rho) = -0.048376 at t_e=1.41 t_f=1.41 rho=0.05
+
+R1  SHARED ITEM DIFFICULTY: phi(rho=0) = Var_T(q(T)) / (q(1-q))
+      spread    q_bar   phi(0) direct   Var/q(1-q)
+        0.00   0.4997       -0.000000     0.000000
+        0.10   0.5008        0.007304     0.007304
+        0.25   0.5065        0.044352     0.044352
+        0.50   0.5198        0.151230     0.151230
+
+P1  PANEL RECOVERY under the map's own model (Gaussian deviations)
+       n   rho  phi_geom   phi_err  mapOfMean  meanOfMap    resid
+      10  0.00     0.271    0.0610     0.0391     0.0618  -0.0008
+      10  0.20     0.314    0.0834     0.0530     0.0828  +0.0006
+      10  0.50     0.610    0.2476     0.2227     0.2471  +0.0006
+      10  0.90     0.902    0.6050     0.6003     0.6049  +0.0001
+      40  0.00     0.119    0.0107     0.0073     0.0111  -0.0005
+      40  0.20     0.227    0.0355     0.0271     0.0359  -0.0004
+      40  0.50     0.539    0.1750     0.1680     0.1750  -0.0000
+      40  0.90     0.904    0.6058     0.6039     0.6058  +0.0001
+    max |phi_err - meanOfMap| = 0.0008   (map is exact)
+    max |meanOfMap - mapOfMean| = 0.0298   (Jensen; map pairwise)
+
+INVERSION — geometric correlation implied by Kohli's reported phi
+  (q = the panel's marginal error rate; observable, so the map is identified)
+    condition                   phi      q     rho  n_eff_vote  n_eff_rank
+    ----------------------------------------------------------------------
+    MNLI                      0.391   0.10  0.9805        2.18        1.02
+                                     0.25  0.9199        2.18        1.08
+                                     0.50  0.8175        2.18        1.19
+                                     0.68  0.7657        2.18        1.26
+    SNLI                      0.354   0.10  0.9763        2.35        1.02
+                                     0.25  0.9059        2.35        1.09
+                                     0.50  0.7921        2.35        1.23
+                                     0.68  0.7353        2.35        1.31
+    AlphaNLI                  0.328   0.10  0.9727        2.48        1.02
+                                     0.25  0.8945        2.48        1.10
+                                     0.50  0.7726        2.48        1.25
+                                     0.68  0.7124        2.48        1.34
+    MNLI (chain-of-thought)   0.456   0.10  0.9860        1.94        1.01
+                                     0.25  0.9395        1.94        1.06
+                                     0.50  0.8563        1.94        1.15
+                                     0.68  0.8138        1.94        1.20
+
+figure -> output/figures/phi_mapping.png
+
+VERDICT
+  PASS  C1 quadrature
+  PASS  M1 even
+  PASS  M2 monotone
+  PASS  M3 endpoints
+  PASS  M4 quadratic
+  PASS  M5 attenuation
+  PASS  R1 difficulty
+  PASS  P1 panel recovery
+
+  => SURVIVES: the map is exact, even in rho, strictly monotone, and
+     strictly attenuating, with fixed endpoints — so it is invertible
+     given the observed marginal error rate, and Kish n_eff on error
+     vectors is an upper bound on verification bandwidth regardless.
+     The design-effect reading holds.
+2026-08-11T16:20:41Z  --- running p2_exact.py
+2026-08-11T16:20:42Z      p2_exact.py OK -> output/logs/p2_exact.log
+P2 exact form.  seed=20260811  MC deviations=400,000  quadrature nodes=20001
+
+C1/C2  exact vs Monte Carlo, Gaussian deviations, k=9 n=10 t=.30
+       rho   W exact   W MC eq        d   W MC sf        d   AND ex  AND MC
+      0.00    0.9111    0.9102  -0.0009    0.8895  -0.0216   0.0889  0.0898
+      0.20    0.9038    0.9043  +0.0005    0.8959  -0.0079   0.0962  0.0957
+      0.50    0.8502    0.8499  -0.0003    0.8660  +0.0158   0.1498  0.1501
+      0.70    0.7628    0.7620  -0.0009    0.7671  +0.0042   0.2371  0.2379
+      0.90    0.5694    0.5714  +0.0021    0.5381  -0.0313   0.4277  0.4257
+      0.99    0.2264    0.2266  +0.0001    0.2034  -0.0230   0.6528  0.6521
+    C1 exact reproduces the equiangular panel; C2 the generic construction
+    tracks it, with the residual coming from its unequal pairwise angles.
+
+C3/C4  limits
+    rho=0    W exact 0.911130   1 - p^k - (1-p)^k = 0.911130
+    rho=0.99    W exact 0.226421
+    rho=0.999   W exact 0.071637
+    rho=0.9999  W exact 0.022655
+    rho->1   W exact 0.002267  (collapses, as P2(4) requires)
+
+C5     W strictly decreasing in rho: True
+
+C6/C7  exact value against the union bound (k=9, t=.30)
+       rho  phi_err   W exact     bound  bound/W  bound<1
+     0.000    0.000    0.9111    2.8834     3.16    False
+     0.200    0.006    0.9038    2.8661     3.17    False
+     0.500    0.044    0.8502    2.7556     3.24    False
+     0.700    0.112    0.7628    2.5610     3.36    False
+     0.900    0.323    0.5694    1.9523     3.43    False
+     0.950    0.480    0.4619    1.5002     3.25    False
+     0.990    0.761    0.2264    0.6891     3.04     True
+     0.999    0.924    0.0716    0.2178     3.04     True
+    C7 the exact value is informative at every rho; the union bound only
+    drops below 1 near phi ~ .88, which is the gap this closes.
+
+C8     collapse across panel sizes (exact W, t=.30)
+       rho       k=3       k=9      k=25     k=100
+      0.00    0.5406    0.9111    0.9988    1.0000
+      0.30    0.5331    0.8930    0.9920    0.9998
+      0.60    0.5023    0.8140    0.9288    0.9781
+      0.90    0.3660    0.5694    0.6615    0.7459
+      0.99    0.1292    0.2264    0.2990    0.3794
+    Bracket width GROWS with k at fixed correlation and collapses with
+    correlation at fixed k -- the two directions P1's asymmetry predicts.
+
+C9     single-factor phi against the bivariate-normal map
+        q      t    rho  phi (factor) phi (bvn map)          d
+     0.10  0.126   0.10      0.000554      0.000554  +1.02e-15
+     0.10  0.126   0.50      0.016965      0.016965  +5.62e-16
+     0.10  0.126   0.90      0.138252      0.138252  -2.22e-16
+     0.10  0.126   0.99      0.522341      0.522341  -2.33e-15
+     0.25  0.319   0.10      0.001568      0.001568  -8.88e-16
+     0.25  0.319   0.50      0.047410      0.047410  +5.20e-16
+     0.25  0.319   0.90      0.340090      0.340090  -2.50e-15
+     0.25  0.319   0.99      0.771629      0.771629  -1.22e-14
+     0.50  0.674   0.10      0.003695      0.003695  -4.00e-15
+     0.50  0.674   0.50      0.106406      0.106406  -5.11e-15
+     0.50  0.674   0.90      0.544891      0.544891  -1.55e-14
+     0.50  0.674   0.99      0.856506      0.856506  -2.53e-14
+    worst disagreement 2.53e-14 -- agree
+
+C10    bracket remaining at the correlations a real nine-judge panel shows
+    condition                 phi       q=0.10       q=0.25       q=0.50
+    MNLI                    0.391        42.5%        58.8%        76.1%
+    SNLI                    0.354        45.2%        61.6%        79.4%
+    AlphaNLI                0.328        47.2%        63.6%        81.6%
+    MNLI chain-of-thought   0.456        38.4%        53.9%        69.6%
+    Read as: percentage of the ZERO-CORRELATION bracket width that SURVIVES at
+    the panel's measured error correlation. Model-dependent and directional, not
+    a measurement. State the loss honestly: between roughly a quarter and three
+    fifths of the bracket is already gone, depending on the marginal error rate --
+    NOT 'most of it', and not zero. The union bound says nothing whatever at these
+    correlations, because it exceeds 1 until phi is near .88.
+
+ALL CHECKS PASSED
+2026-08-11T16:20:42Z  --- running formal_model_checks.py
+2026-08-11T16:20:43Z      formal_model_checks.py OK -> output/logs/formal_model_checks.log
+formal-model checks.  seed=20260811  deviations per panel=200,000
+
+P1  BRACKET
+    pointwise AND <= f <= OR over 400 random rules, all 2^5 inputs: True
+       rho   P(AND)    min f    max f    P(OR)   inside
+      0.00    0.005    0.005    0.864    0.917     True
+      0.40    0.008    0.008    0.833    0.888     True
+      0.80    0.133    0.133    0.599    0.678     True
+
+P2  COLLAPSE
+       rho  phi_err      p   W obs    bound  holds  useful
+     0.000   -0.018  0.370   0.992    3.797   True   False
+     0.200    0.019  0.371   0.975    3.663   True   False
+     0.500    0.149  0.371   0.929    3.178   True   False
+     0.700    0.260  0.370   0.858    2.760   True   False
+     0.900    0.609  0.371   0.475    1.460   True   False
+     0.990    0.883  0.371   0.142    0.436   True    True
+     0.999    0.963  0.370   0.045    0.138   True    True
+    bracket width falls 0.992 -> 0.045: True
+    identical evaluators (phi = 1): W = 0.000000  (exactly 0)
+
+P3  DIMENSIONAL CEILING
+    hard bound: n_eff <= min(k, n) for EVERY configuration
+       n     k   phibar   n_eff  min(k,n)  holds
+      10     5    0.023   4.579         5   True
+      10     9    0.100   5.005         9   True
+      10    40    0.102   8.061        10   True
+      10   200    0.118   8.194        10   True
+       4    50    0.256   3.688         4   True
+      25   200    0.059  15.644        25   True
+
+    typical case: randomly oriented evaluators, k -> infinity
+       n   E|<u,v>|  exact lim  sqrt(pi n/2)  n_eff k=200
+       4     0.4244      2.356         2.507        2.352
+      10     0.2587      3.866         3.963        3.803
+      25     0.1612      6.204         6.267        6.034
+      48     0.1158      8.638         8.683        8.236
+     100     0.0800     12.502        12.533       11.761
+
+P4  EXECUTOR-INVARIANCE CEILING (illustration; P4 is a definition plus P3)
+    OST cascade L0-L2 contract on the 8x6 = 48-dim specification space.
+       r     k   phibar   n_eff  transferable  residual
+       6     3     0.35    1.76        29.4%    70.6%
+       6     9     0.39    2.18        36.4%    63.6%
+      16     9     0.39    2.18        13.7%    86.3%
+      16    40     0.39    2.47        15.4%    84.6%
+      48   200     0.25    3.94         8.2%    91.8%
+    The residual column is the share of the stated contract that the
+    receiving panel cannot independently check -- the signatory's remit.
+
+VERDICT
+  PASS  P1 bracket
+  PASS  P2 collapse
+  PASS  P3 ceiling
+  PASS  P4 transfer
+  ----  P5 estimator: proved and checked in phi_mapping.py
+
+  => No proposition is contradicted by simulation.
+2026-08-11T16:20:43Z  --- running threat1_kill_test.py
+2026-08-11T16:20:43Z      threat1_kill_test.py OK -> output/logs/threat1_kill_test.log
+n_dim=10  k=9  tau=0.3  deviations=200,000  seed=20260811
+
+   rho  phi_bar  n_eff_eig  n_eff_kish      OR     MAJ     AND  single  bracket
+-------------------------------------------------------------------------------
+ 0.000    0.234       3.76        3.14   0.983   0.197   0.000   0.370    0.983
+ 0.100    0.266       3.18        2.88   0.983   0.201   0.000   0.369    0.983
+ 0.200    0.302       2.72        2.63   0.979   0.222   0.000   0.370    0.979
+ 0.300    0.345       2.32        2.39   0.976   0.228   0.001   0.368    0.974
+ 0.391    0.390       2.12        2.19   0.968   0.248   0.003   0.371    0.965
+ 0.500    0.478       1.83        1.87   0.966   0.249   0.010   0.370    0.956
+ 0.700    0.718       1.33        1.33   0.879   0.307   0.058   0.371    0.821
+ 0.900    0.903       1.09        1.09   0.652   0.347   0.158   0.370    0.494
+ 0.990    0.991       1.01        1.01   0.445   0.368   0.301   0.370    0.144
+
+VERDICT
+  P1 OR trend over rho:  -0.539  (predicted NEGATIVE)
+  P2 AND trend over rho: +0.301  (predicted POSITIVE)
+  P1/P2 opposite signs:  True
+  P3 MAJ strictly inside at rho=0: True
+  P4 bracket collapses: width 0.983 -> 0.144
+  P5 eff. rank 3.76 -> 1.01 (k=9); eigen vs Kish max abs diff 0.63
+
+  => SURVIVES: the two views are distinct regimes, not one quantity.
+
+
+ADDENDUM — the two correlations on the same panel
+  phi_geom: mean |<v_e, v_f>|      (geometric, what this test measured)
+  phi_err : mean pairwise phi on binary miss indicators   (Kohli's)
+  mapOfMean: phi_from_rho(phi_geom, t)   — the map applied to the average
+  meanOfMap: mean_ij phi_from_rho(|rho_ij|, t)  — the map applied PAIRWISE
+  The two differ because the map is convex at low rho (M4). meanOfMap is
+  correct; mapOfMean understates. t is taken from the observed miss rate.
+
+   rho    miss  phi_geom  phi_err  mapOfMean  meanOfMap  err-moM  n_eff_geom  n_eff_err
+---------------------------------------------------------------------------------------
+ 0.000   0.630     0.234   -0.011      0.027      0.046   -0.056        3.14       9.83
+ 0.100   0.630     0.266   -0.001      0.036      0.054   -0.055        2.88       9.11
+ 0.200   0.630     0.302    0.018      0.047      0.071   -0.053        2.63       7.85
+ 0.300   0.631     0.345    0.043      0.062      0.094   -0.051        2.39       6.69
+ 0.391   0.630     0.390    0.067      0.079      0.115   -0.048        2.19       5.86
+ 0.500   0.630     0.478    0.103      0.123      0.147   -0.044        1.87       4.94
+ 0.700   0.629     0.718    0.306      0.318      0.331   -0.025        1.33       2.61
+ 0.900   0.632     0.903    0.591      0.597      0.601   -0.010        1.09       1.57
+ 0.990   0.630     0.991    0.879      0.879      0.881   -0.002        1.01       1.12
+
+  max |phi_err - meanOfMap| = 0.056
+  NOTE: this panel draws UNIT-NORM deviations, so a negative radial term
+  (the counterpart of shared item difficulty, R1) sits on top of the map.
+  Under the map's own Gaussian model the residual falls to < .001 —
+  see phi_mapping.check_panel_recovery().
+  attenuation holds on every row: True
+  n_eff from error vectors >= n_eff from geometry on every row: True
+
+  figure -> output/figures/phi_geom_vs_phi_err.png
+2026-08-11T16:20:43Z  --- running emit_paper_tables.py
+2026-08-11T16:20:44Z      emit_paper_tables.py OK -> output/logs/emit_paper_tables.log
+Emitting the paper's deterministic tables from their owning derivations.
+    wrote output/tables/table1_bracket_width_vs_union_bound.csv  (7 rows)
+    wrote output/tables/table3_reported_neff_vs_formula.csv  (4 rows)
+    wrote output/tables/table4_bracket_surviving.csv  (4 rows)
+    wrote output/tables/table5_dimensional_ceiling_typical.csv  (5 rows)
+    wrote output/tables/table6_transferable_share.csv  (5 rows)
+
+Tables 2 and A1, and the worst-case block of Table 5, are seeded Monte Carlo and
+are produced by phi_mapping.py, threat1_kill_test.py and formal_model_checks.py.
+Their stdout is captured by reproduce.sh into ../output/logs/.
+2026-08-11T16:20:44Z  all steps completed
+2026-08-11T16:20:44Z  tables:  output/tables/*.csv
+2026-08-11T16:20:44Z  figures: output/figures/*.png
+2026-08-11T16:20:44Z  logs:    output/logs/*.log

@@ -1,0 +1,1090 @@
+spine_version: "0.2"
+spine_doc_version: "1.0.0"
+paper_key: "2026bn"
+title: "Verification Bandwidth Under Correlated Evaluators: What an Effective-Sample-Size Statistic Measures in an Acceptance Cascade"
+provenance: "new"
+thesis: |
+  Organizational verification is an orthogonal projection, and the rank of that projection bounds
+  what an organization can detect about itself. The single-evaluator case leaves open what a panel
+  buys: on one reading, adding diverse evaluators shrinks what is jointly accepted; on another, it
+  raises the number of dimensions checked. These are two aggregation rules moving in opposite
+  directions, and every rule that neither manufactures a flag no member raised nor clears one every
+  member raised is bracketed between them, with the bracket closing as evaluator errors become
+  correlated. The effective-sample-size statistic already used to audit evaluator panels therefore
+  measures something it was not introduced to measure: for evaluators whose inspection directions
+  carry a geometric correlation, a closed-form folded dichotomization maps that geometry to the
+  correlation of their errors, the map is strictly attenuating, and the statistic computed on error
+  vectors is an upper bound on the rank of the acceptance projection. Two ceilings follow. Randomly
+  constituted panels saturate near the square root of the state-space dimension rather than at
+  their own size, so diversity must be engineered rather than sampled; and the share of a
+  specification's acceptance conditions that a receiving executor can independently verify is capped
+  by that rank, leaving a residual that an accountable signatory, not a document, must underwrite.
+
+# ---------------------------------------------------------------------------
+# Boundary conditions -- the theory does not apply outside these.
+# ---------------------------------------------------------------------------
+boundary_conditions:
+  - id: C1
+    statement: >-
+      The panel verdict is a function of member verdicts alone, and it neither flags what no member
+      flagged nor clears what every member flagged. Rules with OVERRIDE AUTHORITY -- a chair's veto,
+      a regulator's override, a single-reviewer waiver -- violate this and the bracket genuinely
+      fails for them. This is an organizationally real exclusion and belongs in the first statement
+      of the result, not in a limitations paragraph.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: C2
+    statement: >-
+      Each evaluator inspects a ONE-DIMENSIONAL subspace. The bracket and the collapse do not depend
+      on this, but the dimensional ceiling's exact constant does, and the map from geometric to error
+      correlation is derived for it. Higher-rank inspection subspaces are flagged as an extension,
+      not claimed.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: C3
+    statement: >-
+      A deviation is present by construction, so an evaluator's error is a MISS. There is no
+      false-alarm arm, and a real acceptance cascade has both error types, which need not share a
+      correlation structure.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: C4
+    statement: >-
+      Empirical claims are scoped to the MACHINE-EVALUATOR regime on classification and pairwise
+      preference. Organizational acceptance tests are neither, and the human case is argued
+      separately or not at all. Human annotator panels are reported to reach roughly double the
+      effective independence of model panels, which is a difference in degree that the theory
+      accommodates and the evidence does not establish.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: C5
+    statement: >-
+      Estimating the quantity requires GOLD LABELS, because the correlation is computed on error
+      vectors. Correlating raw codes instead measures dependence but conflates shared signal with
+      shared error, which is the exact confound the construct exists to break. Where the only
+      adjudicated sample is conditioned on disagreement, or adjudicated by the same hand that
+      authored the instrument, the estimate is not available and the paper says so rather than
+      substituting a naive agreement rate. THE LABELS MUST ALSO BE GOOD, not merely present. Label
+      error correlated with the panel's own error attenuates the measured error correlation and
+      therefore INFLATES the effective sample size, which is the single direction that breaks the
+      upper bound; label error independent of the panel's attenuates too, but toward a conservative
+      reading. The condition the bound needs is therefore not an errorless gold standard but one that
+      does not fail in the directions the panel fails in.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+
+# ---------------------------------------------------------------------------
+# Assumption atoms -- relaxable, with consequences traced.
+# ---------------------------------------------------------------------------
+assumption_atoms:
+  - id: AA1
+    statement: >-
+      The projection is read in the orientation under which it represents WHAT THE AUDIT READS, with
+      the residual being discarded information rather than a detected failure.
+    type: "notational_convention"
+    relaxable: false
+    relaxation_consequence: >-
+      Under the opposite orientation every proposition inverts. The parent text uses both, and the
+      convention adopted here is the one its own central proposition, its residual arithmetic and its
+      published simulation all use, and the only one under which its multi-evaluator remark is true.
+      Disambiguating this is a contribution of the companion, not a criticism of the parent, and it
+      must appear early because a reader carrying the other reading finds every result inverted.
+    affects: [P1, P2, P3, P4, P5, P6]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: AA2
+    statement: >-
+      Deviations are isotropic and Gaussian, which makes the inspected components jointly normal with
+      correlation exactly equal to the geometric correlation of the inspection directions.
+    type: "distributional"
+    relaxable: true
+    relaxation_consequence: >-
+      The ATTENUATION result, and therefore the upper bound, survives on far weaker terms: it needs
+      only that the map be increasing and lie below the identity. What does not survive is the point
+      inversion from a measured error correlation back to a geometric one, which becomes
+      model-dependent. Organizations plausibly fail in preferred directions, so the anisotropic case
+      is the most likely place for the clean result to degrade, and it is untested.
+    affects: [P5, P6, F3, F4]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: AA3
+    statement: >-
+      Shared item difficulty is separable from shared inspection geometry, and is netted out before
+      any inversion.
+    type: "identification"
+    relaxable: true
+    relaxation_consequence: >-
+      A total-covariance decomposition splits the induced correlation exactly into a geometric term
+      and a difficulty term, so geometrically orthogonal evaluators still show correlated errors when
+      items differ in difficulty. Without the correction the recovered geometric correlation is
+      biased UPWARD, which makes the bandwidth estimate too pessimistic rather than too optimistic --
+      the safe direction, but still wrong.
+    affects: [P5, P6]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: AA4
+    statement: >-
+      The summary statistics reported by the nine-judge evaluation panel study are accurate as
+      published.
+    type: "data_source_trust"
+    relaxable: true
+    relaxation_consequence: >-
+      That study is a preprint and has not been peer reviewed; it is cited as such. Every use of it
+      here is either a re-derivation from its own reported figures, which is internally checkable, or
+      an illustration explicitly labelled as directional rather than as a measurement.
+    affects: [F1, F7]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+
+# ---------------------------------------------------------------------------
+# Observations -- raw events lifted into the spine.
+# ---------------------------------------------------------------------------
+observations:
+  - id: O1
+    statement: >-
+      A published evaluation-panel study reports, for nine judges across seven model families on
+      1,000 items: effective sample sizes of 2.18, 2.35, 2.48 and 1.99 across four benchmarks; mean
+      pairwise error correlations of .391, .354 and .328; an independence ratio of 24.2%; Condorcet
+      gaps of 22.0, 14.0 and 7.6 percentage points; that established aggregation closes at most 11%
+      of that gap even with oracle labels; that one judge per family REDUCES effective votes to 1.93;
+      and that chain-of-thought RAISES error correlation to .456.
+    instrument: "published preprint, single author, arXiv 2605.29800, 28 May 2026"
+    timestamp: "2026-05-28"
+    conditions_at_capture: "classification and pairwise-preference tasks; gold labels from the benchmarks"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Empirical Anchor"]
+  - id: O2
+    statement: >-
+      The parent paper states in print that multi-evaluator regimes are a natural extension requiring
+      separate treatment; that it does not provide a procedure for estimating the projection matrices
+      empirically; and that formal comparison with an adjacent bounded-verification framework
+      warrants dedicated treatment.
+    instrument: "the parent paper's own published text"
+    timestamp: "2026"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Introduction"]
+  - id: O3
+    statement: >-
+      A published blinded multi-model content-coding instrument in this corpus records 406 coded
+      cells over 30 cases with three heterogeneous pinned models, Fleiss kappa of .838, a 2.7% flag
+      rate, and adjudicated values for its 11 flagged cells only.
+    instrument: "corpus instrument, published"
+    timestamp: "2026"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Demonstration and Its Limits"]
+
+# ---------------------------------------------------------------------------
+# Methods.
+# ---------------------------------------------------------------------------
+methods:
+  - id: M1
+    statement: >-
+      Panel simulation: k evaluators with unit inspection directions carrying a shared-factor
+      geometric correlation, each flagging a deviation when the absolute inspected component exceeds
+      a threshold; detection rates computed for the unanimous rule, the disjunctive rule, a single
+      evaluator, and randomly generated aggregation rules.
+    type: "simulation"
+    inputs: []
+    outputs: [F2, F5]
+    code_anchor: "code/threat1_kill_test.py; code/formal_model_checks.py"
+    reproducibility:
+      seed: "20260811"
+      runtime_environment: "Python 3.12, numpy; 200,000 deviations per condition"
+    provenance:
+      created_by: "tool:threat1_kill_test.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket", "Simulation Appendix"]
+  - id: M2
+    statement: >-
+      Closed-form derivation of the induced error correlation as a folded dichotomization of a
+      bivariate normal, with an analytic sign proof of monotonicity via the reduction formula for the
+      derivative of the bivariate normal integral, checked against quadrature and Monte Carlo.
+    type: "formal_derivation"
+    inputs: []
+    outputs: [F3, F4, F8]
+    code_anchor: "code/phi_mapping.py"
+    reproducibility:
+      seed: "20260811"
+      runtime_environment: "Python 3.12, numpy + scipy; 2,000,000-draw Monte Carlo cross-check"
+    provenance:
+      created_by: "tool:phi_mapping.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: M3
+    statement: >-
+      Exact single-factor reduction of the bracket width: an equiangular panel makes the inspected
+      components conditionally independent given a common factor, collapsing a k-dimensional orthant
+      probability to a one-dimensional integral, evaluated by dense fixed-grid quadrature and
+      validated against direct Monte Carlo.
+    type: "formal_derivation"
+    inputs: []
+    outputs: [F6, F7, F8]
+    code_anchor: "code/p2_exact.py"
+    reproducibility:
+      seed: "20260811"
+      runtime_environment: "Python 3.12, numpy + scipy; 400,000 deviations per validation cell"
+    provenance:
+      created_by: "tool:p2_exact.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: M4
+    statement: >-
+      Re-derivation of a published panel's reported effective sample size from its own reported error
+      correlation and panel size, by direct evaluation of the design-effect formula.
+    type: "computation"
+    inputs: [O1]
+    outputs: [F1]
+    code_anchor: "code/reported_neff_check.py"
+    reproducibility:
+      seed: "deterministic (no RNG)"
+      runtime_environment: "arithmetic on published summary statistics"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What the Statistic Already Is"]
+  - id: M5
+    statement: >-
+      Prior-art sweep across the projection, ensemble-diversity, dichotomization, frame-coherence,
+      collective-intelligence and evaluator-panel literatures, with every candidate record confirmed
+      at composition level -- author string, year, venue, volume, issue and pages -- against the
+      publisher's or a library's own record rather than confirmed merely to exist.
+    type: "archival_search"
+    inputs: []
+    outputs: [NF1, NF2, F9]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Related Work"]
+
+# ---------------------------------------------------------------------------
+# Findings -- what is the case.
+# ---------------------------------------------------------------------------
+findings:
+  - id: F1
+    statement: >-
+      The effective sample sizes reported by the nine-judge panel study are the design-effect formula
+      evaluated at that study's own reported mean pairwise error correlations, agreeing to three
+      decimals in all four conditions (2.180 against 2.18; 2.349 against 2.35; 2.483 against 2.48;
+      1.936 against 1.94), and its reported independence ratio of 24.2% is the effective sample size
+      divided by the panel size.
+    source_observations: [O1]
+    generating_method: M4
+    statistical_strength: "exact arithmetic on published summary statistics; no inference"
+    conditions: "C4"
+    antecedents: [O1, M4]
+    falsifier: >-
+      A reading of that study establishing that its effective-sample-size figures are computed by a
+      different estimator that happens to agree to three decimals four times over.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What the Statistic Already Is"]
+  - id: F2
+    statement: >-
+      As evaluator correlation rises, disjunctive detection FALLS by .539 and unanimous detection
+      RISES by .301 over the same range, with a single evaluator's rate flat at about .370
+      throughout; every randomly generated aggregation rule falls inside the interval the two define.
+    source_observations: []
+    generating_method: M1
+    statistical_strength: "simulation, 200,000 deviations per condition, seeded"
+    conditions: "C1, C2, C3"
+    antecedents: [M1]
+    falsifier: "A detection model in which the two rules move in the same direction with diversity."
+    provenance:
+      created_by: "tool:threat1_kill_test.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket"]
+  - id: F3
+    statement: >-
+      The closed-form map applied pairwise and averaged reproduces the error correlation measured on
+      a simulated nine-evaluator panel to within .0008 across the full correlation range and two
+      state-space dimensions.
+    source_observations: []
+    generating_method: M2
+    statistical_strength: "simulation, 400,000 deviations per cell, seeded"
+    conditions: "C2, C3, AA2"
+    antecedents: [M2]
+    falsifier: "A panel under the stated model whose measured error correlation departs from the map by more than Monte Carlo error."
+    provenance:
+      created_by: "tool:phi_mapping.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: F4
+    statement: >-
+      The map is even in the geometric correlation, strictly increasing with an analytic sign proof
+      that holds under heterogeneous thresholds, fixes both endpoints, is quadratic at the origin,
+      and lies strictly below the identity everywhere on the open unit interval.
+    source_observations: []
+    generating_method: M2
+    statistical_strength: "analytic, with numerical confirmation on dense grids"
+    conditions: "C2, C3"
+    antecedents: [M2]
+    falsifier: "A threshold pair and correlation at which the map is non-monotone or exceeds the identity."
+    provenance:
+      created_by: "tool:phi_mapping.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: F5
+    statement: >-
+      Independently and uniformly oriented evaluators saturate at the reciprocal of the expected
+      absolute inner product, asymptotically the square root of pi n over 2, rather than at the panel
+      size; on a 48-dimensional specification space that is fewer than nine effective acceptance
+      predicates at a panel size of 200.
+    source_observations: []
+    generating_method: M1
+    statistical_strength: "analytic limit with simulation agreement at k = 200"
+    conditions: "C2"
+    antecedents: [M1]
+    falsifier: >-
+      A large randomly constituted panel whose measured effective rank materially exceeds the square
+      root of pi n over 2.
+    provenance:
+      created_by: "tool:formal_model_checks.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Dimensional Ceiling"]
+  - id: F6
+    statement: >-
+      The exact single-factor expression for the bracket width reproduces direct simulation on an
+      equiangular panel to within .0021, and the union bound over pairwise disagreements is loose by
+      a factor between 3.04 and 3.43 across the whole correlation range -- a stable rescaling rather
+      than a bound that degrades.
+    source_observations: []
+    generating_method: M3
+    statistical_strength: "quadrature against 400,000-deviation Monte Carlo, seeded"
+    conditions: "C1, C2, C3, AA2"
+    antecedents: [M3]
+    falsifier: "An equiangular panel under the stated model whose disagreement rate departs from the quadrature by more than Monte Carlo error."
+    provenance:
+      created_by: "tool:p2_exact.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: F7
+    statement: >-
+      At the error correlations the published nine-judge panel exhibits, between roughly a quarter
+      and three fifths of the zero-correlation bracket width has already been lost, depending on the
+      panel's marginal error rate, which the published record does not carry and which is therefore
+      bracketed rather than fixed.
+    source_observations: [O1]
+    generating_method: M3
+    statistical_strength: "model-dependent and directional; explicitly not a measurement"
+    conditions: "C4, AA2, AA4"
+    antecedents: [M3, O1]
+    falsifier: "A reported marginal error rate for that panel placing it outside the bracketed range."
+    provenance:
+      created_by: "tool:p2_exact.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: F8
+    statement: >-
+      The induced error correlation computed from the bivariate normal integral with reflection
+      identities and the same quantity computed by conditioning on a common factor agree to
+      2.5 times ten to the minus fourteen across a grid of thresholds and correlations -- two
+      derivations and two implementations, neither resting on the other.
+    source_observations: []
+    generating_method: M3
+    statistical_strength: "numerical identity at machine precision"
+    conditions: "AA2"
+    antecedents: [M2, M3]
+    falsifier: "A threshold and correlation at which the two implementations disagree materially."
+    provenance:
+      created_by: "tool:p2_exact.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: F9
+    statement: >-
+      The effective-sample-size correction is applied to sampled clusters in survey statistics, to
+      correlated tests in multiple-comparison work, and to evaluator panels in the machine-evaluation
+      literature, but its identification with the rank of a verification projection appears in none
+      of them.
+    source_observations: []
+    generating_method: M5
+    statistical_strength: "literature sweep; a negative over the searched space, not a proof of absence"
+    conditions: ""
+    antecedents: [M5]
+    falsifier: "A prior work identifying an effective-sample-size statistic with the rank of an acceptance or audit projection."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Related Work"]
+
+# ---------------------------------------------------------------------------
+# Negative findings -- discoveries of absence.
+# ---------------------------------------------------------------------------
+negative_findings:
+  - id: NF1
+    statement: >-
+      No prior work formalizes organizational verification as a projection family over multiple
+      correlated evaluators. The adjacent hits are role-based modelling of multi-agent systems, which
+      is a different sense of verification; cascaded verification layers in agent pipelines, which is
+      engineering; and the evaluator-panel literature, which is empirical and does not connect to
+      specification cascades.
+    expected_observation: "A paper deriving detection properties of an audit from the geometry of what its evaluators inspect."
+    source_method: M5
+    affects_nodes: [P1, P6]
+    motivates: [P6]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Related Work"]
+  - id: NF2
+    statement: >-
+      The classical result that diverse groups can outperform higher-ability groups requires an
+      effective aggregation mechanism and does not specify what makes one effective; the contemporary
+      result that locates a crossover between diversity helping and hurting supplies selector quality
+      as that mechanism. Neither bounds what any aggregation mechanism can deliver.
+    expected_observation: "A published bound on aggregation performance that holds across all rules rather than within one mechanism."
+    source_method: M5
+    affects_nodes: [P1, P2]
+    motivates: [P2]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Related Work", "The Bracket Closes"]
+
+# ---------------------------------------------------------------------------
+# Propositions.
+# ---------------------------------------------------------------------------
+propositions:
+  - id: P1
+    statement: >-
+      For every aggregation rule that neither flags what no member flagged nor clears what every
+      member flagged, the unanimous detection region is contained in the rule's detection region,
+      which is contained in the disjunctive detection region, for every deviation distribution.
+      Monotonicity of the rule is not required; only the two boundary values are. The content is the
+      asymmetry of the ends: the disjunctive blind spot is a subspace that shrinks as evaluators
+      diversify, while the unanimous blind spot is a union of subspaces that grows.
+    type: ontological
+    conditions: "C1"
+    antecedents: []
+    assumptions: [AA1]
+    falsifier: "A cascade whose panel flags a deviation no member flagged, or clears one every member flagged."
+    evidence:
+      - type: analytic
+        anchor: "Four-line proof from the two boundary values; complementation gives the blind-spot form."
+      - type: code_anchor
+        anchor: "code/formal_model_checks.py, seed 20260811 -- 400 random rules, pointwise and in detection probability"
+      - type: citation
+        anchor: "The bracket for monotone Boolean functions is elementary and is conceded as such."
+        citation_keys: [crama-2011-boolean-functions-theory-algorithms]
+        citation_role: canonical_reference
+    ruled_out_rivals: [A2]
+    body_sections: ["The Bracket"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: P2
+    statement: >-
+      The width of that bracket equals the probability that the panel disagrees. It admits an
+      assumption-free union bound in the pairwise disagreement probabilities, an exchangeable
+      corollary linear in one minus the mean error correlation, and -- under a single-factor panel
+      with Gaussian deviations -- an exact one-dimensional expression. The width is exactly zero at
+      perfect error correlation. Above a correlation level, therefore, no aggregation mechanism can
+      be effective however well designed, because every admissible rule is trapped in a bracket that
+      has already closed.
+    type: ontological
+    conditions: "C1, C3"
+    antecedents: [P1]
+    assumptions: [AA2]
+    falsifier: >-
+      A panel whose measured error correlation is high and whose choice of aggregation rule
+      nonetheless changes detection by more than the bracket permits.
+    evidence:
+      - type: analytic
+        anchor: "Union bound over pairwise disagreement events; exact form by conditioning on the common factor."
+      - type: code_anchor
+        anchor: "code/p2_exact.py, seed 20260811 -- exact against Monte Carlo to .0021"
+      - type: citation
+        anchor: "The equicorrelated reduction to a one-dimensional integral is classical and is attributed, not claimed."
+        citation_keys: []
+        citation_role: methodological_source
+      - type: citation
+        anchor: "Answers the question left open by the classical diversity result, which requires an effective aggregation mechanism without specifying one."
+        citation_keys: [hong-2004-groups-diverse-problem-solvers]
+        citation_role: motivating_problem
+    ruled_out_rivals: [A2]
+    body_sections: ["The Bracket Closes"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: P3
+    statement: >-
+      For rank-one evaluators the effective rank is at most the smaller of the panel size and the
+      state-space dimension, by a first-order coherence bound on the frame operator. More usefully,
+      independently and uniformly oriented evaluators saturate at approximately 1.25 times the square
+      root of the state-space dimension, not at the dimension itself. Evaluator diversity must
+      therefore be ENGINEERED by deliberately spreading inspection directions, not sampled by hiring
+      more reviewers.
+    type: ontological
+    conditions: "C2"
+    antecedents: []
+    assumptions: []
+    falsifier: >-
+      A panel whose independently measured effective rank exceeds the dimensionality of its state
+      space, or a large randomly constituted panel materially exceeding the square-root ceiling.
+    evidence:
+      - type: analytic
+        anchor: "Cauchy-Schwarz on the eigenvalues of the frame operator; the sphere-coordinate density for the typical case."
+      - type: code_anchor
+        anchor: "code/formal_model_checks.py, seed 20260811"
+      - type: citation
+        anchor: "The first-order coherence bound is Welch's and is conceded as such."
+        citation_keys: [welch-1974-lower-bounds-maximum-cross-correlation]
+        citation_role: methodological_source
+    ruled_out_rivals: []
+    body_sections: ["The Dimensional Ceiling"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: P4
+    statement: >-
+      If a contract specifies r independent acceptance conditions and the receiving executor verifies
+      with a panel of effective rank n, the share of the contract that executor can independently
+      verify is at most the smaller of n and r, divided by r. Executor-invariance of the acceptance
+      criteria AS STATED does not confer executor-invariance of their VERIFICATION: a specification
+      transfers its contract but not the capacity to check it, and the gap is what an accountable
+      signatory underwrites.
+    type: management_outcome
+    conditions: "C2"
+    antecedents: [P3, P6]
+    assumptions: []
+    falsifier: >-
+      An executor swap after which the receiving unit demonstrably verifies more independent
+      acceptance conditions than its panel's measured effective rank.
+    evidence:
+      - type: analytic
+        anchor: "A dimension count, presented as one: r conditions cannot be independently checked by a family spanning fewer than r independent directions."
+      - type: citation
+        anchor: "The visible-and-hidden information split is the classical statement of what travels with a specification."
+        citation_keys: [baldwin-2000-design-rules-power]
+        citation_role: theoretical_predecessor
+      - type: citation
+        anchor: "The residual is where augmentation is structurally required rather than culturally preferred."
+        citation_keys: [raisch-2021-artificial-intelligence-management]
+        citation_role: theoretical_predecessor
+    ruled_out_rivals: [A3]
+    body_sections: ["What Does Not Transfer"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: P5
+    statement: >-
+      For isotropic Gaussian deviations the geometric correlation between two inspection directions
+      IS the correlation of the inspected components, so the induced correlation of their binary
+      error indicators is a folded dichotomization of a bivariate normal, available in closed form,
+      strictly increasing, endpoint-fixing, and strictly below the identity.
+    type: ontological
+    conditions: "C2, C3"
+    antecedents: []
+    assumptions: [AA2]
+    falsifier: "A panel whose directly measured geometric effective rank exceeds the value computed on its error vectors."
+    evidence:
+      - type: analytic
+        anchor: "Inclusion-exclusion on the bivariate normal integral with reflection identities; sign proof via the reduction formula for its derivative."
+      - type: code_anchor
+        anchor: "code/phi_mapping.py, seed 20260811 -- panel recovery to .0008"
+      - type: citation
+        anchor: "Dichotomization attenuates correlation; the tetrachoric coefficient is the classical parent and the folded two-sided form is the only new element."
+        citation_keys:
+          - pearson-1900-mathematical-contributions-correlation-characters
+          - plackett-1954-reduction-formula-normal-multivariate
+          - divgi-1979-calculation-tetrachoric-correlation
+        citation_role: theoretical_predecessor
+    ruled_out_rivals: [A1]
+    body_sections: ["From Geometry to Error"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+  - id: P6
+    statement: >-
+      The effective-sample-size statistic already computed on evaluator error vectors is an UPPER
+      BOUND on the rank of the acceptance projection -- that is, on verification bandwidth -- and is
+      exactly invertible to it given the panel's marginal error rate and a shared-difficulty
+      correction. The statistic is borrowed; what is new is that it measures a rank, and therefore
+      that a quantity computed to audit a panel bounds a quantity defined to characterize an
+      organization's capacity to detect its own deviations.
+    type: ontological
+    conditions: "C2, C3, C5"
+    antecedents: [P5]
+    assumptions: [AA2, AA3]
+    falsifier: >-
+      A panel whose geometric effective rank, measured directly from its inspection directions,
+      exceeds the value computed from its error vectors.
+    evidence:
+      - type: analytic
+        anchor: "The design effect is decreasing in its argument and the map lies below the identity, so the ordering follows without inversion."
+      - type: citation
+        anchor: "The design effect and effective sample size are Kish's."
+        citation_keys: [kish-1965-survey-sampling, kalton-2001-leslie-kish-impact]
+        citation_role: methodological_source
+      - type: log_anchor
+        anchor: "F1 -- the published panel's own reported figures are that formula evaluated at its own reported correlation."
+    ruled_out_rivals: [A1]
+    body_sections: ["What the Statistic Already Is", "The Identification"]
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+
+# ---------------------------------------------------------------------------
+# Derivations -- reasoning bridges.
+# ---------------------------------------------------------------------------
+derivations:
+  - id: D1
+    statement: >-
+      From the bracket and its collapse it follows that above a correlation level the choice of
+      aggregation rule cannot recover detection the evaluator set does not collectively possess --
+      which answers, in the negative and for all mechanisms at once, the question the classical
+      diversity result leaves open.
+    from: [P1, P2]
+    to: "the bound on all aggregation mechanisms"
+    reasoning_type: "deductive"
+    formal_proof_anchor: "code/p2_exact.py"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: D2
+    statement: >-
+      From the map's attenuation and the monotonicity of the design effect in its argument, the
+      statistic computed on error vectors bounds the geometric effective rank from above; combined
+      with the parent's identification of that rank with verification bandwidth, the borrowed
+      statistic bounds the bandwidth.
+    from: [P5]
+    to: "P6"
+    reasoning_type: "formal_proof"
+    formal_proof_anchor: "code/phi_mapping.py"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["The Identification"]
+  - id: D3
+    statement: >-
+      From the dimensional ceiling and the identification, the transferable share of a specification's
+      acceptance conditions is bounded by a quantity that saturates with the square root of the state
+      space rather than with the size of the receiving panel.
+    from: [P3, P6]
+    to: "P4"
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What Does Not Transfer"]
+
+# ---------------------------------------------------------------------------
+# Alternative explanations.
+# ---------------------------------------------------------------------------
+alternative_explanations:
+  - id: A1
+    statement: >-
+      The low effective independence observed in evaluator panels reflects shared ITEM DIFFICULTY --
+      some items are hard for everyone -- rather than shared inspection geometry.
+    rules_out_required: [F3, F4]
+    ruled_out_by: []
+    rules_out_status: "partially_ruled_out"
+    reasoning: >-
+      A total-covariance decomposition separates the two exactly, and geometrically orthogonal
+      evaluators do show correlated errors when items differ in difficulty, so the rival names a real
+      channel rather than a confound to be dismissed. It is handled by netting the difficulty term
+      out before inversion, not by denying it. The published 6.8% figure sometimes read as this term
+      is a share of the Condorcet gap, not a decomposition of the error correlation, and must not be
+      reused as the correction.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error", "Identification"]
+  - id: A2
+    statement: >-
+      A better-designed aggregation rule would recover the detection a correlated panel appears to
+      lose.
+    rules_out_required: [F2]
+    ruled_out_by: [F2, F6]
+    rules_out_status: "rejected"
+    reasoning: >-
+      Every admissible rule lies inside the bracket, and the bracket closes with correlation
+      independently of which rule is chosen. The empirical counterpart is the finding that
+      established aggregation closes at most 11% of the Condorcet gap even with oracle labels.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: A3
+    statement: >-
+      The limit on what transfers with a specification is TACITNESS: some knowledge cannot be written
+      down, so it stays with the people.
+    rules_out_required: [F5]
+    ruled_out_by: [F5]
+    rules_out_status: "partially_ruled_out"
+    reasoning: >-
+      The mechanism derived here is not tacitness as such. Tacit domains have many dimensions along
+      which performance can deviate and no correspondingly engineered spread of inspection
+      directions, so the transferable share is small by the dimensional ceiling even when everything
+      relevant is written down. The rival is not refuted; it is given a mechanism that makes a
+      different prediction, since engineering the panel's directions should raise the transferable
+      share without making anything less tacit.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What Does Not Transfer"]
+  - id: A4
+    statement: >-
+      What is being described is MEASUREMENT INVARIANCE in the psychometric sense -- whether an
+      instrument functions equivalently across groups.
+    rules_out_required: []
+    ruled_out_by: []
+    rules_out_status: "rejected"
+    reasoning: >-
+      Executor-invariance is a property of an acceptance criterion under a change of the party
+      performing the work, not of a measurement model under a change of population. The collision is
+      verbal and needs one sentence of separation early, because the audience most likely to read
+      this paper is the audience for which invariance means the other thing.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What Does Not Transfer"]
+
+# ---------------------------------------------------------------------------
+# Robustness checks.
+# ---------------------------------------------------------------------------
+robustness_checks:
+  - id: RC1
+    statement: >-
+      Heterogeneous detection thresholds across evaluators, in the monotonicity proof and its
+      numerical confirmation.
+    varied_parameter: "per-evaluator threshold"
+    range_explored: "unequal threshold pairs over a dense grid"
+    result_stability: "confirmed"
+    affects_nodes: [F4, P5]
+    source_method: M2
+    provenance:
+      created_by: "tool:phi_mapping.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: RC2
+    statement: >-
+      Unit-norm versus Gaussian deviation magnitude, which switches the shared-difficulty channel off
+      and on.
+    varied_parameter: "radial distribution of the deviation"
+    range_explored: "unit sphere and isotropic Gaussian, dimensions 5 through 80"
+    result_stability: "confirmed -- pinning the magnitude removes the difficulty channel and pushes measured error correlation up to .056 below the map at low correlation, decaying with dimension"
+    affects_nodes: [F3, A1]
+    source_method: M2
+    provenance:
+      created_by: "tool:phi_mapping.py"
+      created_at: "2026-08-11"
+    body_sections: ["From Geometry to Error"]
+  - id: RC3
+    statement: >-
+      Equiangular versus generic shared-factor panel construction, for the exact bracket expression.
+    varied_parameter: "panel construction"
+    range_explored: "exactly equiangular and approximately equiangular, correlations 0 to .99"
+    result_stability: "confirmed -- exact to within .0021 on the equiangular panel and .031 on the generic construction, the residual being its unequal pairwise angles"
+    affects_nodes: [F6]
+    source_method: M3
+    provenance:
+      created_by: "tool:p2_exact.py"
+      created_at: "2026-08-11"
+    body_sections: ["The Bracket Closes"]
+  - id: RC4
+    statement: >-
+      Estimation of the quantity on a coding panel whose gold labels come from independent double
+      coding over the FULL item set, by coders who have never seen the adjudication record.
+    varied_parameter: "source of gold labels"
+    range_explored: "planned"
+    result_stability: "planned"
+    affects_nodes: [P6, L5]
+    source_method: M4
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Demonstration and Its Limits"]
+
+# ---------------------------------------------------------------------------
+# Limitations.
+# ---------------------------------------------------------------------------
+limitations:
+  - id: L1
+    statement: >-
+      There is no false-alarm arm. A real acceptance cascade has both error types and they need not
+      share a correlation structure.
+    affects: [P1, P2, P5, P6]
+    severity: "medium"
+    mitigation: "Stated as a scope condition (C3) rather than discovered in review; the extension is named, not attempted."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+  - id: L2
+    statement: >-
+      The dimensional ceiling's exact constant is derived for one-dimensional inspection subspaces.
+      The bound should generalize with the trace of the frame operator replaced by the summed ranks,
+      but the corresponding definition of mean correlation has not been worked out.
+    affects: [P3, F5]
+    severity: "medium"
+    mitigation: "Flagged as an extension and not claimed."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+  - id: L3
+    statement: >-
+      Anisotropic deviation distributions are untested, and organizations plausibly fail in preferred
+      directions. This is the most likely place for the clean mapping result to degrade.
+    affects: [P5, P6]
+    severity: "high"
+    mitigation: "The attenuation result, and therefore the bound, needs only monotonicity and sub-identity; the point inversion is the part at risk."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+  - id: L4
+    statement: >-
+      The executor-invariance ceiling has no mathematical content beyond the dimensional ceiling; its
+      work is interpretive.
+    affects: [P4]
+    severity: "low"
+    mitigation: "Presented as a dimension count in the text, so the reader is not invited to read it as a deeper theorem."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["What Does Not Transfer"]
+  - id: L5
+    statement: >-
+      The empirical spine is a re-analysis of one preprint's published summary statistics plus
+      simulation. No new evaluator panel was run, and the corpus instrument available for
+      demonstration has adjudicated values only for cells conditioned on disagreement.
+    affects: [P6, F1, F7]
+    severity: "high"
+    mitigation: >-
+      The scope is stated in the introduction rather than defended in a limitations paragraph: the
+      paper supplies an identification and its properties, with the published panel as an existence
+      demonstration. RC4 is the route to more.
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+  - id: L6
+    statement: >-
+      The evidence base is machine evaluators on classification and pairwise preference. Human
+      acceptance panels in organizations are neither, and the transfer of the empirical claim to them
+      is argued rather than demonstrated.
+    affects: [F1, F7, P6]
+    severity: "high"
+    mitigation: "C4 scopes the empirical claim; the theory is stated for any threshold evaluator and does not depend on the regime."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+  - id: L7
+    statement: >-
+      Evaluation of this work is single-author.
+    affects: []
+    severity: "medium"
+    mitigation: "Recorded as an accepted cost. Every computational claim is reproducible from seeded scripts, which is the substitute available."
+    provenance:
+      created_by: "author"
+      created_at: "2026-08-11"
+    body_sections: ["Scope and Limitations"]
+
+# ---------------------------------------------------------------------------
+# Corpus precedents.
+# ---------------------------------------------------------------------------
+corpus_precedents:
+  - paper_key: 2026ae
+    relationship: extends
+    spine_nodes: [O2, P1, P3, P6, AA1]
+  - paper_key: 2026i
+    relationship: refines
+    spine_nodes: [P4, A3]
+  - paper_key: multi-llm-coding-instrument
+    relationship: applies
+    spine_nodes: [O3, RC4, L5]
+  - paper_key: 2026ad
+    relationship: applies
+    spine_nodes: [P6]
+  - paper_key: 2026h
+    relationship: extends
+    spine_nodes: [P3]
+  - paper_key: 2026m
+    relationship: extends
+    spine_nodes: [P1]
+  - paper_key: 2026ag
+    relationship: applies
+    spine_nodes: [P4]
+  - paper_key: 2026t
+    relationship: applies
+    spine_nodes: [P4]
+  - paper_key: 2026af
+    relationship: applies
+    spine_nodes: [P1]
+  - paper_key: 2026ao
+    relationship: applies
+    spine_nodes: [O2, P6]
+  - paper_key: 2026ay
+    relationship: applies
+    spine_nodes: [RC1]
+
+# ---------------------------------------------------------------------------
+# External anchors. Only substrate-registered keys appear here; anchors still
+# owed registration are enumerated under `open`.
+# ---------------------------------------------------------------------------
+external_anchors:
+  - citation_key: kish-1965-survey-sampling
+    role: methodological_source
+    spine_nodes: [P6, F1]
+  - citation_key: kalton-2001-leslie-kish-impact
+    role: definitional_source
+    spine_nodes: [P6]
+  - citation_key: welch-1974-lower-bounds-maximum-cross-correlation
+    role: methodological_source
+    spine_nodes: [P3]
+  - citation_key: plackett-1954-reduction-formula-normal-multivariate
+    role: methodological_source
+    spine_nodes: [P5, F4]
+  - citation_key: pearson-1900-mathematical-contributions-correlation-characters
+    role: theoretical_predecessor
+    spine_nodes: [P5]
+  - citation_key: divgi-1979-calculation-tetrachoric-correlation
+    role: methodological_source
+    spine_nodes: [P5]
+  - citation_key: hong-2004-groups-diverse-problem-solvers
+    role: motivating_problem
+    spine_nodes: [P2, NF2]
+  - citation_key: austen-smith-1996-information-aggregation-condorcet-jury
+    role: theoretical_predecessor
+    spine_nodes: [P2, A2]
+  - citation_key: krogh-1994-neural-network-ensembles-cross-validation
+    role: theoretical_predecessor
+    spine_nodes: [P2]
+  - citation_key: kuncheva-2003-measures-diversity-classifier-ensembles
+    role: theoretical_predecessor
+    spine_nodes: [P2]
+  - citation_key: brown-2005-diversity-creation-methods-survey
+    role: canonical_reference
+    spine_nodes: [P2]
+  - citation_key: dietterich-2000-ensemble-methods-machine-learning
+    role: canonical_reference
+    spine_nodes: [P2]
+  - citation_key: kuncheva-2014-combining-pattern-classifiers
+    role: canonical_reference
+    spine_nodes: [P2]
+  - citation_key: crama-2011-boolean-functions-theory-algorithms
+    role: canonical_reference
+    spine_nodes: [P1]
+  - citation_key: cover-2006-elements-information-theory
+    role: canonical_reference
+    spine_nodes: [P6]
+  - citation_key: baldwin-2000-design-rules-power
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: raisch-2021-artificial-intelligence-management
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: polanyi-1966-the-tacit-dimension
+    role: rival_ruled_out
+    spine_nodes: [A3]
+  - citation_key: putnick-2016-measurement-invariance-conventions
+    role: contrast_case
+    spine_nodes: [A4]
+  - citation_key: dawid-1979-maximum-likelihood-observer-error
+    role: theoretical_predecessor
+    spine_nodes: [P6, A1]
+  - citation_key: csaszar-2013-organizational-decision-making
+    role: theoretical_predecessor
+    spine_nodes: [P1, P2]
+  - citation_key: lebovitz-levina-lifshitz-2021-ai-ground-truth
+    role: boundary_anchor
+    spine_nodes: [C5, L5]
+  - citation_key: gilardi-2023-chatgpt-outperforms-crowd
+    role: motivating_problem
+    spine_nodes: [C4]
+  - citation_key: ziems-2024-can-large-language-models
+    role: boundary_anchor
+    spine_nodes: [C4, L6]
+  - citation_key: li-2024-frontiers-determining-validity
+    role: boundary_anchor
+    spine_nodes: [C4]
+  - citation_key: flake-2020-measurement-schmeasurement-questionable
+    role: methodological_source
+    spine_nodes: [P6]
+  - citation_key: power-1997-audit-society-rituals
+    role: motivating_problem
+    spine_nodes: [P4]
+  - citation_key: power-2021-modelling-microfoundations-audit
+    role: theoretical_predecessor
+    spine_nodes: [P4]
+  - citation_key: kovalenko-2026-bounded-compositional-verification
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  - citation_key: fleiss-1971-measuring-nominal-scale
+    role: methodological_source
+    spine_nodes: [O3]
+  - citation_key: genest-zidek-1986-combining-probability-distributions
+    role: canonical_reference
+    spine_nodes: [P1, A2]
+  - citation_key: haldar-2025-rating-roulette-selfinconsistency
+    role: boundary_anchor
+    spine_nodes: [C4]
+  - citation_key: he-2025-can-we-hide-machines-crowd
+    role: boundary_anchor
+    spine_nodes: [C4]
+  - citation_key: kohli-2026-nine-judges-two-effective-votes
+    role: data_source
+    spine_nodes: [O1, F1, F7, P6, AA4]
+  - citation_key: maryanskyy-2026-when-agents-disagree
+    role: contrast_case
+    spine_nodes: [NF2, P2]
+  - citation_key: dunnett-1955-approximations-probability-integral
+    role: methodological_source
+    spine_nodes: [P2, F6]
+  - citation_key: stuart-1958-equally-correlated-variates
+    role: methodological_source
+    spine_nodes: [P2, F6]
+  - citation_key: curnow-1962-numerical-evaluation-multivariate-normal
+    role: methodological_source
+    spine_nodes: [P2]
+  - citation_key: gupta-1963-probability-integrals-multivariate-normal
+    role: canonical_reference
+    spine_nodes: [P2]
+  - citation_key: bock-1970-fitting-response-model-dichotomously
+    role: theoretical_predecessor
+    spine_nodes: [P2, F6]
+  - citation_key: genz-2009-computation-multivariate-normal-t
+    role: methodological_source
+    spine_nodes: [F6]
+  - citation_key: spearman-1910-correlation-calculated-faulty-data
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  - citation_key: brown-1910-experimental-results-correlation-mental-abilities
+    role: theoretical_predecessor
+    spine_nodes: [P6]
+  - citation_key: shrout-1979-intraclass-correlations-assessing-rater
+    role: contrast_case
+    spine_nodes: [P6, C5]
+  - citation_key: mcgraw-1996-forming-inferences-intraclass-correlation
+    role: methodological_source
+    spine_nodes: [P6]
+  - citation_key: lebreton-2008-answers-twenty-questions-interrater
+    role: contrast_case
+    spine_nodes: [P6, C5]
+
+# ---------------------------------------------------------------------------
+# Open -- what is not settled, including registration debts.
+# ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Changelog -- append-only.
+# ---------------------------------------------------------------------------

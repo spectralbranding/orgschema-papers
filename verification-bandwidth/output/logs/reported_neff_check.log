@@ -1,0 +1,12 @@
+Does the reported n_eff equal the design-effect formula at the reported phi?
+
+    condition                 k    phi   formula  reported     diff
+    MNLI                      9  0.391     2.180      2.18   +0.000
+    SNLI                      9  0.354     2.349      2.35   -0.001
+    AlphaNLI                  9  0.328     2.483      2.48   +0.003
+    MNLI (chain-of-thought)   9  0.456     1.936      1.94   -0.004
+
+    independence ratio: 2.18/9 = 0.242 against a reported 0.242 -- matches
+
+CONFIRMED: the reported effective sample sizes ARE the design-effect formula
+evaluated at the reported error correlations. Cite the estimator; do not claim it.

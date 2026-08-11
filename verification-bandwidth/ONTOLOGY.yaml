@@ -1,0 +1,127 @@
+paper_key: 2026bn
+schema_version: 0.1
+
+owns:
+  - term_key: inspection-subspace
+    label: "inspection subspace"
+    definition: >-
+      The subspace of the organizational state space that one evaluator can read: the range of that
+      evaluator's projection. An evaluator flags a deviation only when the component of it lying in
+      this subspace exceeds a threshold, so the subspace, not the evaluator's diligence, fixes what
+      that evaluator is capable of detecting at all. Naming it separately from the accepted subspace
+      is what keeps the two readings of a projection apart.
+    canonical_form: "inspection subspace"
+    replaces: ["invariant subspace", "what the evaluator checks"]
+    first_section: "The Model"
+
+  - term_key: evaluator-blind-spot
+    label: "evaluator blind spot"
+    definition: >-
+      The set of deviations one evaluator cannot detect: the kernel of its projection in the exact
+      case, and the region below its detection threshold in general. Blind spots compose differently
+      under different aggregation rules, and that difference is the whole content of the detection
+      bracket -- the disjunctive rule's blind spot is the intersection of the members' blind spots
+      and is a subspace, while the unanimous rule's is their union and in general is not.
+    canonical_form: "evaluator blind spot"
+    first_section: "The Model"
+    relations:
+      - {type: specializes, term_key: inspection-subspace, note: "the blind spot is the orthogonal complement of what the evaluator inspects"}
+      - {type: maps_to, term_key: organizational-metamerism, note: "a blind spot IS a metamerism set relative to one evaluator -- configurations it cannot tell apart -- so the panel case is a metamerism set indexed by an aggregation rule"}
+
+  - term_key: detection-bracket
+    label: "detection bracket"
+    definition: >-
+      The interval between the detection probability of the unanimous rule and that of the
+      disjunctive rule, within which every aggregation rule that neither flags what no member
+      flagged nor clears what every member flagged must lie, for every deviation distribution. Its
+      WIDTH is the probability that the panel disagrees, so it narrows as evaluator errors become
+      correlated and is exactly zero when they are perfectly correlated. Where the bracket has
+      closed, the choice of aggregation rule cannot change what the panel detects.
+    canonical_form: "detection bracket"
+    replaces: ["aggregation envelope"]
+    first_section: "The Bracket"
+    relations:
+      - {type: contrasts, term_key: evaluator-blind-spot, note: "the bracket is stated on detection regions; the same statement on blind spots inverts the inclusions and is where the asymmetry of the two ends becomes visible"}
+
+  - term_key: error-vector-design-effect
+    label: "error-vector design effect"
+    definition: >-
+      The design effect, and the effective sample size derived from it, computed on evaluators'
+      binary ERROR indicators against gold labels rather than on their raw judgements. Computing it
+      on errors rather than on codes is what separates shared signal -- items really do differ -- from
+      shared error, which is the dependence that costs a panel its independence. The quantity is
+      borrowed from survey sampling by way of the evaluation-panel literature; what is established
+      here is what it measures.
+    canonical_form: "error-vector design effect"
+    replaces: ["effective number of judges", "effective votes"]
+    first_section: "What the Statistic Already Is"
+    relations:
+      - {type: maps_to, term_key: verification-bandwidth, note: "an upper bound on it, exactly invertible to it given the marginal error rate and a shared-difficulty correction"}
+
+  - term_key: folded-dichotomization
+    label: "folded dichotomization"
+    definition: >-
+      The closed-form map carrying the geometric correlation between two evaluators' inspection
+      directions to the correlation of their binary error indicators, under a two-sided detection
+      rule that flags on absolute magnitude. It is the classical dichotomization of a bivariate
+      normal with the two tails folded together, and it is even in its argument, strictly
+      increasing, fixed at both endpoints, and strictly below the identity. That last property is
+      what makes the statistic computed on errors a bound rather than an estimate.
+    canonical_form: "folded dichotomization"
+    first_section: "From Geometry to Error"
+    relations:
+      - {type: specializes, term_key: error-vector-design-effect, note: "the map is what licenses reading the design effect as a statement about geometry"}
+
+  - term_key: engineered-evaluator-diversity
+    label: "engineered evaluator diversity"
+    definition: >-
+      The deliberate spreading of a panel's inspection directions, as opposed to enlarging the panel
+      and letting diversity arrive by sampling. The distinction is forced by a ceiling: independently
+      and uniformly oriented evaluators saturate near the square root of the state-space dimension
+      rather than at their own number, so beyond a modest size additional evaluators recruited
+      without regard to what they inspect add nominal capacity and no effective capacity.
+    canonical_form: "engineered evaluator diversity"
+    replaces: ["evaluator diversity", "panel heterogeneity"]
+    first_section: "The Dimensional Ceiling"
+
+  - term_key: accountable-signatory-residual
+    label: "accountable-signatory residual"
+    definition: >-
+      The share of a specification's stated acceptance conditions whose satisfaction a receiving
+      executor's panel cannot independently establish, and which some identified party must
+      therefore underwrite by assurance rather than by test. It is the complement of the
+      transferable share, it grows as the ratio of specified conditions to effective verification
+      rank grows, and it is what remains of a signature once verification is treated as a capacity
+      with a measurable ceiling rather than as an attestation.
+    canonical_form: "accountable-signatory residual"
+    replaces: ["sign-off", "the human in the loop"]
+    first_section: "What Does Not Transfer"
+    relations:
+      - {type: contrasts, term_key: executor-invariance, note: "executor-invariance holds of the acceptance criteria as stated; the residual is what it does not confer, namely invariance of their verification"}
+
+imports:
+  - {term_key: verification-as-operator}
+  - {term_key: spectral-projection-operator}
+  - {term_key: rank-1-audit}
+  - {term_key: cascade-consistency-condition}
+  - {term_key: executor-invariance}
+  - {term_key: six-level-tdd-cascade}
+  - {term_key: projection-cascade}
+  - {term_key: organizational-metamerism}
+
+refines:
+  - term_key: verification-bandwidth
+    narrows_to: >-
+      the multi-evaluator case, where the maximum number of independent specification conditions an
+      organization can evaluate per cycle is the effective RANK of its panel's family of inspection
+      directions -- and is therefore bounded above by the design effect computed on that panel's
+      error vectors, without inverting anything or assuming a distribution
+    note: >-
+      Compatible narrowing, not a redefinition. The inherited quantity is unchanged: it is still the
+      count of independent conditions evaluable per cycle, and it still bounds the projection rank
+      sustainable at steady state. What narrows is the case and what is added is a handle. The
+      inherited form is defined for one authoritative evaluator per cascade level and carries no
+      procedure for estimating it; this form applies to a panel of threshold evaluators and supplies
+      one, at the cost of the boundary conditions the estimate needs -- gold labels, one-dimensional
+      inspection subspaces, and no false-alarm arm.
+

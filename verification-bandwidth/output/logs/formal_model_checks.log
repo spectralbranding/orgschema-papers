@@ -1,0 +1,58 @@
+formal-model checks.  seed=20260811  deviations per panel=200,000
+
+P1  BRACKET
+    pointwise AND <= f <= OR over 400 random rules, all 2^5 inputs: True
+       rho   P(AND)    min f    max f    P(OR)   inside
+      0.00    0.005    0.005    0.864    0.917     True
+      0.40    0.008    0.008    0.833    0.888     True
+      0.80    0.133    0.133    0.599    0.678     True
+
+P2  COLLAPSE
+       rho  phi_err      p   W obs    bound  holds  useful
+     0.000   -0.018  0.370   0.992    3.797   True   False
+     0.200    0.019  0.371   0.975    3.663   True   False
+     0.500    0.149  0.371   0.929    3.178   True   False
+     0.700    0.260  0.370   0.858    2.760   True   False
+     0.900    0.609  0.371   0.475    1.460   True   False
+     0.990    0.883  0.371   0.142    0.436   True    True
+     0.999    0.963  0.370   0.045    0.138   True    True
+    bracket width falls 0.992 -> 0.045: True
+    identical evaluators (phi = 1): W = 0.000000  (exactly 0)
+
+P3  DIMENSIONAL CEILING
+    hard bound: n_eff <= min(k, n) for EVERY configuration
+       n     k   phibar   n_eff  min(k,n)  holds
+      10     5    0.023   4.579         5   True
+      10     9    0.100   5.005         9   True
+      10    40    0.102   8.061        10   True
+      10   200    0.118   8.194        10   True
+       4    50    0.256   3.688         4   True
+      25   200    0.059  15.644        25   True
+
+    typical case: randomly oriented evaluators, k -> infinity
+       n   E|<u,v>|  exact lim  sqrt(pi n/2)  n_eff k=200
+       4     0.4244      2.356         2.507        2.352
+      10     0.2587      3.866         3.963        3.803
+      25     0.1612      6.204         6.267        6.034
+      48     0.1158      8.638         8.683        8.236
+     100     0.0800     12.502        12.533       11.761
+
+P4  EXECUTOR-INVARIANCE CEILING (illustration; P4 is a definition plus P3)
+    OST cascade L0-L2 contract on the 8x6 = 48-dim specification space.
+       r     k   phibar   n_eff  transferable  residual
+       6     3     0.35    1.76        29.4%    70.6%
+       6     9     0.39    2.18        36.4%    63.6%
+      16     9     0.39    2.18        13.7%    86.3%
+      16    40     0.39    2.47        15.4%    84.6%
+      48   200     0.25    3.94         8.2%    91.8%
+    The residual column is the share of the stated contract that the
+    receiving panel cannot independently check -- the signatory's remit.
+
+VERDICT
+  PASS  P1 bracket
+  PASS  P2 collapse
+  PASS  P3 ceiling
+  PASS  P4 transfer
+  ----  P5 estimator: proved and checked in phi_mapping.py
+
+  => No proposition is contradicted by simulation.

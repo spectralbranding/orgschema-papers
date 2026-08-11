@@ -1,0 +1,6 @@
+r_conditions,k_evaluators,phi_bar,n_eff,transferable_pct,signatory_residual_pct
+6,3,0.35,1.76,29.4,70.6
+6,9,0.39,2.18,36.4,63.6
+16,9,0.39,2.18,13.7,86.3
+16,40,0.39,2.47,15.4,84.6
+48,200,0.25,3.94,8.2,91.8

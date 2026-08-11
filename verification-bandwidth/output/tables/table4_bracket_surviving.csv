@@ -1,0 +1,5 @@
+condition,phi,pct_surviving_q_.10,pct_surviving_q_.25,pct_surviving_q_.50
+MNLI,0.391,42.5,58.8,76.1
+SNLI,0.354,45.2,61.6,79.4
+AlphaNLI,0.328,47.2,63.6,81.6
+MNLI (chain-of-thought),0.456,38.4,53.9,69.6
