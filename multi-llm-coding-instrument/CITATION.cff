@@ -6,8 +6,8 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "A Blinded Multi-LLM Content-Coding Instrument: Protocol Specification and Inter-Coder Reliability Validation on an Organizational Corpus"
-version: 1.0.0
-date-released: 2026-08-02
+version: 1.1.0
+date-released: 2026-08-12
 url: "https://doi.org/10.5281/zenodo.21756063"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:
