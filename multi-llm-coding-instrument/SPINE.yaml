@@ -250,6 +250,17 @@ propositions:
       Its coder pins are exact model versions; results are conditional on those
       versions and are expected to drift as models change (mitigated, not removed, by
       the multi-model majority and the pinned provenance).
+    warrant_note: >-
+      The exclusion of open-ended extraction is not a modest disclaimer but the
+      condition the reliability rests on, and evidence outside this paper now
+      carries that weight. Where machine operators recover structure from prose
+      with no pre-committed schema, agreement between operators has failed
+      repeatedly and under a design built to rescue it. The pairing is a stronger
+      warrant for the design than the coefficient alone: a high coefficient on
+      one corpus could be a property of that corpus, whereas the contrast between
+      bounded coding into a schema fixed before any datum exists and unbounded
+      recovery of a schema that is itself at issue identifies WHICH feature of
+      the design the reliability is attributable to.
     body_sections: ["Boundary Conditions"]
 
   - id: L1
@@ -271,12 +282,26 @@ propositions:
     body_sections: ["Discussion — Limitations"]
 
 # ============================================================================
-# Cross-paper engagement — none. This methods paper is deliberately citation-
-# independent of the (held, unpublished) tier-bundle theory paper it demonstrated
-# on; the demonstration is described as an M&A-integration coding task, not grounded
-# on that paper's claims. No corpus self-citation.
+# Cross-paper engagement — the paper stays citation-independent of the (held,
+# unpublished) tier-bundle theory paper it demonstrated on; the demonstration is
+# described as an M&A-integration coding task, not grounded on that paper's
+# claims. The single precedent below is a CONTRAST, not a dependency: nothing in
+# this instrument rests on it, and it is cited to identify which feature of the
+# design the reliability is attributable to.
 # ============================================================================
-corpus_precedents: []
+corpus_precedents:
+  - paper_key: 2026bl
+    relationship: contrast_case
+    claim: >-
+      The unbounded counterpart of this design, measured. Machine operators
+      recovering dependency structure from prose with no pre-committed schema
+      failed edge-level agreement in every document-by-condition cell, including
+      those where the unit inventory was fixed and supplied identically to both
+      operators, and separated below their own within-operator noise floor. Cited
+      to establish that boundedness is doing the work here, not model capability
+      in general. Not a dependency and not a validation of this instrument: the
+      corpora, the coefficient and the task differ.
+    spine_nodes: [C1, P1, P3]
 
 # ============================================================================
 # External anchors — all Crossref-verified substrate sources. No self-citation.

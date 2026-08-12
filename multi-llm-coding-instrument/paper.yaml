@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.21756063
-  date: '2026-08-01'
+  date: '2026-08-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -149,6 +149,10 @@ methodology:
   type: theoretical
   design: Theoretical derivation.
 dependencies:
+- relationship: extends
+  claim: builds on 2026bl
+  critical: false
+  doi: 10.5281/zenodo.21830220
 - relationship: extends
   claim: 'anchor: gilardi-2023-chatgpt-outperforms-crowd'
   doi: 10.1073/pnas.2305016120
