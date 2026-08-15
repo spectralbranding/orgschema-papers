@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20072288
-  date: '2026-06-26'
+  date: '2026-08-15'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -28,7 +28,7 @@ meta:
   abstract: 'Why do two firms with identical revenues, margins, and aggregate investment generate exit
     multiples of 2× versus 9× — and why do identical AI investments produce divergent M&A multiples despite
     comparable short-run gains? This paper formalizes cross-tier allocation using a vector w over operating
-    tiers differing in asset durability, with decay rates δ_t ranging from .50/year at the organizational
+    tiers differing in asset durability, with decay rates $\delta_t$ ranging from .50/year at the organizational
     surface (advertising) to .05–.10/year at foundational layers. Long-run value is a discounted Cobb-Douglas
     aggregator with Jorgensonian user costs $(\delta_t + r)$; optimizing under the per-tier rental-rate
     budget yields the closed-form rule $w_t^*(r) = \alpha_t / (\delta_t + r)$ and the comparative static

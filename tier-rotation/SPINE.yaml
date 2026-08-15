@@ -1,7 +1,7 @@
 # SPINE.yaml — The Tier-Rotation Curve (2026ai)
 #
 # RETROFIT spine: extracted descriptively from the completed paper.md per
-# CLAUDE.md rule 0aa + the SPINE-for-all-active-canonical project (decision D4,
+# [internal ref removed] rule 0aa + the SPINE-for-all-active-canonical project (decision D4,
 # [internal path removed]). NOT authored
 # generatively before prose — this is a faithful backbone reconstruction of the
 # finished paper, marked provenance: retrofit.
@@ -146,6 +146,25 @@ boundary_conditions:
     excludes: >-
       Comparisons of investment POLICY across firms; the spatial allocation problem is a distinct
       decision margin whose formal extension is deferred.
+  - id: C9
+    statement: >-
+      TIER SEPARABILITY is assumed once a vehicle exists. C3 excludes the φ → 0 case on the ground
+      that no separate vehicle is present; it does not cover the case where a vehicle IS present and
+      the tiers are fused nonetheless. In a maximally tier-collapsed substrate — owner intent
+      (Tier 1), business entity (Tier 3) and product specification (Tier 4) all carried by one
+      natural person — φ > 0 can hold while rotation stays constrained rather than merely slow,
+      because the Tier-4 product cannot be divested without divesting the Tier-1 intent. The curve
+      DEGENERATES there rather than flattening, so the collapsed case is a distinct object and not a
+      slow traverse of this one. One unmodelled mechanism follows: the accumulation equation asks how
+      fast substrate accumulates inside an entity that exists, and does not model capital invested
+      where no separable substrate exists for it to become.
+    observable: >-
+      Whether the Tier-4 product specification survives removal of the Tier-1 principal — readable
+      from whether the offer can be delivered by anyone else.
+    excludes: >-
+      Tier-collapsed personal-brand substrates, where rotation is constrained by fusion rather than by
+      effort and the constrained-rotation curve is a different object from the separable-tier curve
+      modelled here.
 
 # ============================================================================
 # Propositions, derivations, and assumption atoms — the argument backbone

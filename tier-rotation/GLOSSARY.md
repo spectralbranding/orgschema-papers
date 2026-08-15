@@ -35,6 +35,9 @@ _Terms used by **2026ai** (The Tier-Rotation Curve: A Theory of Brand-Substrate 
   - An observer-relative held position about a brand on one or more spectral dimensions. Observer-relative, not dispositional (contrast: attitude).
   - _defined by 2026a_
   - _not_: brand attitude; brand belief
+- **Constrained tier rotation** (write: `constrained tier rotation`)
+  - The degenerate form of tier rotation that obtains under a personal-brand (tier-collapsed) substrate: because a person's Owner Intent, Entity, and Product are fused, emphasis cannot rotate freely across those tiers the way a separable firm's can, so the tier-rotation curve is constrained — a person cannot divest their Tier-4 product without divesting their Tier-1 intent. It is the boundary condition the separable-tier rotation curve (2026ai) does not cover.
+  - _defined by personal-brand-substrate_
 - **observer spectral profile**
   - The receiver-side object that collapses a brand signal into a conviction. Five components: spectrum, weights, tolerances, priors, and an identity gate. Cohorts are observers, not consumers.
   - _defined by 2026a_
@@ -43,6 +46,9 @@ _Terms used by **2026ai** (The Tier-Rotation Curve: A Theory of Brand-Substrate 
   - The distribution of brand convictions across an observer population for a brand. Distributional, not a single fixed referent; "cloud" alone is acceptable in context. Has a valence (positive / negative / ambivalent).
   - _defined by 2026a_
   - _not_: brand image; brand cloud
+- **Personal-brand substrate** (write: `personal-brand substrate`)
+  - A person modeled as a maximally tier-collapsed brand substrate: the case of the six-tier ontology in which Owner Intent (Tier 1), Business Entity (Tier 3), and Product (Tier 4) are all carried by one natural person and cannot be separated, so the person is simultaneously the brand's controlling intent and its product. It is the personal-brand boundary of the tier-collapse pattern named for the Domain Craftsman / sole-proprietor in the six-tier ontology (2026ag).
+  - _defined by personal-brand-substrate_
 - **six-tier ontology**
   - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
   - _defined by 2026ag_

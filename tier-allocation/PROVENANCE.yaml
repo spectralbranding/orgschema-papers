@@ -66,6 +66,37 @@ provenance:
         Staged for next Zenodo re-upload (v1.1.0). No version bump until upload
         is minted.
 
+    - version: "1.2.0"
+      date: "2026-08-15"
+      title: "Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and AI Penetration"
+      description: >
+        Typesetting-only release. Mathematical notation that was authored as
+        Unicode glyphs carrying literal `_` markers in prose set the underscore
+        on the page instead of a subscript under the pandoc-to-typst path, so
+        the published PDF printed "delta_t" where a tier subscript was intended.
+        Every such site is now real LaTeX: 185 Greek-glyph sites caught by the
+        render gate, the surrounding expressions absorbed so that no expression
+        is half-set, `\Sigma` corrected to the summation `\sum` already used
+        elsewhere in the paper, and roughly ninety Latin-base subscripts (V_LR,
+        w_t, q_t, m_t, S_t*) that the gate cannot flag without false-positiving
+        on every snake_case identifier in the corpus. Verified against the
+        rendered PDF rather than the source: literal underscores on the page
+        fell from 120 to 20, and all 20 that remain are file names inside URLs,
+        which must keep them. Currency dollar signs are now escaped. They had
+        been inert -- pandoc will not open math on `$1.2 billion to $`, whose
+        span ends in a space -- but the new delimiters changed the pairing, one
+        currency sign found a valid closer, and half a page of the
+        illustrative-cases section set as one math-italic run. Caught on the
+        page by the author; the PDF render gate now carries a MATH-SWALLOW check
+        for the class, which no source-level gate can see.
+      outcome: >
+        No claim, proposition, parameter, comparative static, table value or
+        reference changed. Every reported number is identical on the page
+        (1.93x, 1.12x, 1.72x, 5.3%, 7.8%, .119). The supplement is unchanged and
+        its file carries over from v1.1.0. Uploaded to Zenodo as a new version
+        because the prior version's files had passed the 40-day replacement
+        window.
+
   submissions: []
 
   forks: []

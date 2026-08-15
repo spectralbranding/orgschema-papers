@@ -46,6 +46,8 @@ imports:
   - {term_key: tier-1-owner-intent}
   - {term_key: tier-4-product}
   - {term_key: acquirer-operating-posture}
+  - {term_key: personal-brand-substrate}
+  - {term_key: constrained-tier-rotation}
 
 refines: []
 
