@@ -4,7 +4,7 @@ Dmitry Zharnikov
 
 ORCID: 0009-0000-6893-9231
 
-DOI (concept, all versions): [10.5281/zenodo.21756077](https://doi.org/10.5281/zenodo.21756077) · This version (v1.1.0): [10.5281/zenodo.21859802](https://doi.org/10.5281/zenodo.21859802)
+DOI: [10.5281/zenodo.21756077](https://doi.org/10.5281/zenodo.21756077)
 
 Working Paper v1.1.0 – August 2026
 

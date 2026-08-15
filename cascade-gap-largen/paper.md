@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 Concept DOI: [10.5281/zenodo.21755969](https://doi.org/10.5281/zenodo.21755969)
 
-Working Paper v1.0.0 — August 2026
+Working Paper v1.0.0 – August 2026
 
 ## Abstract
 
