@@ -112,12 +112,15 @@ boundary_conditions:
     statement: >-
       Realized operating history: the measure is defined on a filer whose year
       carries events that could have been reported otherwise. On a filer with
-      structurally no operations the disclosure is short and is dominated by
-      content that does move year to year — trust balances, deadline extensions,
-      redemptions, going-concern language — so the score there reflects narrative
-      churn rather than substrate coherence and cannot be read as codification in
-      either direction. On that population the continuous SCI is uninformative
-      rather than merely noisy, and the theory is silent rather than falsified.
+      structurally no operations the disclosure is short — median 3,223 words
+      against 9,396 for matched operating filers — and the index returns a reading
+      indistinguishable from an operating firm's, so the score there cannot be
+      read as codification in either direction. On that population the continuous
+      SCI is uninformative rather than merely noisy, and the theory is silent
+      rather than falsified. The powered placebo (F3) supports this exclusion
+      more directly than the first pass did: non-separation at n = 100 per panel
+      is what "uninformative" means, whereas an inversion would have implied the
+      measure carried information there and carried it backwards.
       Blank-cheque vehicles before a business combination and pre-revenue
       clinical-stage firms are the clean cases.
     observable: "Non-zero operating activity in the filing year (revenue, operations, or reportable economic change)."
@@ -507,23 +510,33 @@ findings:
   - id: F3
     statement: >-
       Structurally zero-activity filers do not score above matched operating firms
-      on the published index. On 30 blank-cheque filers reporting no revenue in
-      either year against 20 matched operating firms in the same fiscal years, the
-      primary measure returned M = .997 (SD = .005) for the zero-activity panel
-      against M = .999 (SD = .001) for the operating panel — Cohen's d = -.457,
-      Welch p = .065, verdict inconclusive against the pre-registered rule, with
-      the predicted direction not observed in any arm. The premise the confound
-      rested on does not hold in this population: a blank-cheque filer's narrative
-      section is short (median 2,032 words against 8,644) and composed almost
-      entirely of items that move year to year, while a large operating filer's is
-      long and dominated by boilerplate that does not.
+      on the published index, and at power they do not differ from them at all.
+      The placebo was run twice. Run 2 is the powered one and governs: 100
+      blank-cheque filers reporting no revenue in either fiscal year, each with a
+      us-gaap Assets fact at both year ends so the zero is reported rather than
+      missing, against 100 operating filers matched fiscal-year for fiscal-year.
+      The primary measure returned M = .998 (SD = .003) for the zero-activity
+      panel against M = .998 (SD = .005) for the operating panel — Cohen's
+      d = .166, Welch t(174.41) = 1.17, p = .243, Mann-Whitney p = .660. That
+      meets the pre-registered powered-null condition, so the finding is
+      NON-SEPARATION rather than a difference in either direction. Run 1
+      (n = 30 against 20) returned d = -.457, p = .065 and an inconclusive
+      verdict; its apparent inversion did not replicate — the sign flipped and
+      the magnitude collapsed on 3.3 times the sample, and its only significant
+      arm (a length-stratified subsample, d = -.866, p = .036) was computed on 18
+      pairs and fell to d = -.194, p = .438. Run 1's short-and-churny explanation
+      of the inversion is therefore not established, because at power there is no
+      inversion to explain; what survives of it is the length difference itself
+      (median 3,223 words against 9,396). The claim the placebo licenses is that
+      the index does not abstain: every one of 100 filers with no operations
+      behind its documents received a confident in-range reading.
     type: "empirical_placebo"
     generating_method: M_placebo
     antecedents: [RC4, A4]
     falsifier: >-
-      If a larger or differently-constructed zero-activity panel scores above
-      matched operating firms at the pre-registered threshold, F3 fails and the
-      original one-signed reading of A4 is restored.
+      If a zero-activity panel scores above matched operating firms at the
+      pre-registered threshold, F3 fails and the original one-signed reading of A4
+      is restored. Run 2 tested this at n = 100 per panel and it did not.
     body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
   - id: F4
     statement: >-
@@ -542,6 +555,28 @@ findings:
     falsifier: >-
       If cross-firm scores under the primary construction fall well below
       within-firm scores on a wider sample, the narrow-range reading is wrong.
+    body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
+  - id: F5
+    statement: >-
+      A trivial text statistic separates the two panels almost perfectly where the
+      published index does not separate them at all. Boilerplate share — the
+      fraction of a document's tetragram positions occupied by tetragrams
+      recurring in at least 5% of the union corpus, no model involved — returned
+      M = .411 (SD = .195) on the zero-activity panel against M = .104 (SD = .033)
+      on the operating panel, and orders a randomly drawn zero/operating pair
+      correctly 94.9% of the time (Cohen's d = 2.203). The published index orders
+      the same pairs correctly 51.8% of the time, which is chance. This is a
+      property of the index rather than of shell companies, and it bears on every
+      hypothesis rather than on the robustness battery alone. Boilerplate share
+      was pre-registered as a mechanism covariate and not as a classifier, so its
+      use as one here is post-hoc and is labelled as such.
+    type: "measurement_property"
+    generating_method: M_placebo
+    antecedents: [RC4]
+    falsifier: >-
+      If boilerplate share fails to separate the panels on a differently
+      constructed corpus, or if the index separates them appreciably better than
+      chance on a wider sample, F5 fails.
     body_sections: ["§Identification Strategy — Robustness: four-event SCI + comment-letter exposure", "§Discussion — Boundary conditions and limitations"]
 
 # ============================================================================

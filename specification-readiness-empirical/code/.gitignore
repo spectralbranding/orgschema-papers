@@ -1,3 +1,8 @@
 # Fetched SEC filings and XBRL responses, cached so the analysis re-runs without
 # re-fetching EDGAR. Reproducible by re-running the script (~1.6 GB), never committed.
 output/cache/
+# Powered re-run (run 2): the per-firm XBRL screening extracts are a reproducible
+# fetch cache keyed by CIK, and the progress logs are console transcripts. The
+# panels and results_powered.json ARE committed, exactly as run 1's are.
+output/powered/screen/
+output/powered/*_progress.log

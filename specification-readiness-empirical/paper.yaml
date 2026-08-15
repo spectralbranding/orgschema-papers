@@ -35,10 +35,11 @@ meta:
     [@callaway-2021-differenceindifferences-with-multiple; @goodmanbacon-2021-differenceindifferences-with-variation],
     regulatory-compliance instruments, and advertising-cessation event studies, with Oster [-@oster-2019-unobservable-selection-coefficient]
     bounds. Pre-registered Monte Carlo mechanism tests (12.96 million trials; $\alpha^* = .91$; Cohen''s
-    d = 88.4) confirm the friction-tax phase shift. Three contributions follow: a first scalable archival
-    measure of specification readiness, a reusable identification template pairing continuous textual
-    treatment with sharp codification events, and formal evidence that specification readiness moderates
-    the AI augmentation paradox.'
+    d = 88.4) confirm the friction-tax phase shift. A powered placebo bounds it: the index does not separate
+    100 zero-activity from 100 matched operating filers ($d = .166$, $p = .243$). Three contributions
+    follow: a first scalable archival measure of specification readiness, a reusable identification template
+    pairing continuous textual treatment with sharp codification events, and formal evidence that specification
+    readiness moderates the AI augmentation paradox.'
 claims:
 - id: P1
   type: proposition
