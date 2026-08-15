@@ -473,7 +473,11 @@ limitations:
     statement: >-
       Form-invariance is provisional: only the Tier 1 and Tier 3 substitutions
       are externally anchored; the Tier 2, 4, and 5 substitutions are logical
-      deductions requiring cross-form empirical validation.
+      deductions requiring cross-form empirical validation. The state-owned /
+      public column added in Table 2 is weaker still — all six of its entries
+      are deductions, only its Tier 1 entry carries an external anchor, and that
+      anchor establishes the political-principal objective rather than a
+      normative public-service mandate.
     severity: "scope-bounding"
     affects: [P8]
     body_sections: ["Limitations (Form-invariance is provisional)"]
@@ -565,6 +569,7 @@ external_anchors:
   - {citation_key: "", role: socioemotional_wealth, spine_nodes: [P9], note: "Berrone et al. 2012 — SEW reservation price making identity-bound firms unsellable to pure financial buyers."}
   - {citation_key: "", role: stock_flow_accumulation, spine_nodes: [P10], note: "Dierickx & Cool 1989 + Mizik & Jacobson 2003/2009 — stock-flow asset accumulation and equity-value consequences."}
   - {citation_key: "", role: prior_layered_ontology, spine_nodes: [P3], note: "Zachman 1987 / Osterwalder 2004 / BIZBOK 2024 / Dietz 2006 — partial precedents distinguished from."}
+  - {citation_key: "boycko-1996-theory-of-privatisation", role: goal_layer_substitution, spine_nodes: [L2], note: "Boycko, Shleifer & Vishny 1996 — the public enterprise pursues the objectives of the political principals controlling it, and privatisation replaces that objective function with profit-maximising ownership. Anchors the Tier 1 entry of the state-owned/public column as a goal-layer substitution with privatization as the substituting event. Supports the POLITICAL-PRINCIPAL reading only, not a normative public-service mandate."}
   - {citation_key: "", role: form_invariance_anchor, spine_nodes: [P8, P13], note: "Hansmann 1996 + Battilana & Lee 2014 — ownership-form substitutions / hybrid mission drift."}
   - {citation_key: "", role: integration_pathology, spine_nodes: [P11], note: "Larsson & Finkelstein 1999 + Jemison & Sitkin 1986 — inadequate org integration / the activity trap (the inverted modal sequence)."}
   - {citation_key: "", role: contingent_consideration, spine_nodes: [C3], note: "Kohers & Ang 2000 + Ragozzino & Reuer 2009 — earn-outs as a response to valuation disagreement and information asymmetry in privately held targets, and as a retention device; the established account the posture conditioning complements rather than reverses."}

@@ -32,14 +32,14 @@ meta:
     hierarchy upward from Organization to Intent and a constraint hierarchy downward from Intent to Organization.
     The constraint hierarchy determines integration sequencing; shocks propagate bidirectionally, generating
     seven falsifiable propositions about failure cascades. The framework is form-invariant across for-profit,
-    NGO, and cooperative entities via substitution rules, with Tier 2, 4, and 5 provisional. The ontology
-    connects siloed streams — cultural distance, executive turnover, business-model misfit, integration
-    capabilities — under one transferability logic, explaining residual variance in meta-analyses [@king-2004-metaanalyses-postacquisition-performance;
-    @king-2021-metaanalytic-integration-acquisition]. The primary contribution is a generalizable theory
-    of organizational separability under ownership change, with implications for theory of the firm and
-    dynamic capabilities. A Six-Tier Separability Diagnostic is derived as a theoretical implication;
-    a companion large-N test bounds an adjacent structural claim to a pre-close screen for one failure
-    mode, not a general predictor.'
+    NGO, cooperative, and state-owned entities via substitution rules, with Tier 2, 4, and 5 and the whole
+    state-owned column provisional. The ontology connects siloed streams — cultural distance, executive
+    turnover, business-model misfit, integration capabilities — under one transferability logic, explaining
+    residual variance in meta-analyses [@king-2004-metaanalyses-postacquisition-performance; @king-2021-metaanalytic-integration-acquisition].
+    The primary contribution is a generalizable theory of organizational separability under ownership
+    change, with implications for theory of the firm and dynamic capabilities. A Six-Tier Separability
+    Diagnostic is derived as a theoretical implication; a companion large-N test bounds an adjacent structural
+    claim to a pre-close screen for one failure mode, not a general predictor.'
 claims:
 - id: SF1
   type: proposition
@@ -385,6 +385,13 @@ dependencies:
     inequality the dual-hierarchy framework proposes at the ontological level (bidirectional propagation).
   critical: false
   doi: 10.5281/zenodo.19145205
+- relationship: extends
+  claim: Boycko, Shleifer & Vishny 1996 — the public enterprise pursues the objectives of the political
+    principals controlling it, and privatisation replaces that objective function with profit-maximising
+    ownership. Anchors the Tier 1 entry of the state-owned/public column as a goal-layer substitution
+    with privatization as the substituting event. Supports the POLITICAL-PRINCIPAL reading only, not a
+    normative public-service mandate.
+  doi: 10.2307/2235248
 contradictions: []
 limitations:
 - description: 'The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end empirical support;
@@ -402,7 +409,9 @@ limitations:
   addressable: true
 - description: 'Form-invariance is provisional: only the Tier 1 and Tier 3 substitutions are externally
     anchored; the Tier 2, 4, and 5 substitutions are logical deductions requiring cross-form empirical
-    validation.'
+    validation. The state-owned / public column added in Table 2 is weaker still — all six of its entries
+    are deductions, only its Tier 1 entry carries an external anchor, and that anchor establishes the
+    political-principal objective rather than a normative public-service mandate.'
   severity: moderate
   addressable: true
 - description: 'The STSD is currently a structured judgment instrument with no inter-rater reliability

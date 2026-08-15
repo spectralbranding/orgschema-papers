@@ -3,7 +3,7 @@
 # Owns the six-tier organizational ontology terms. Canonical source:
 # [internal path removed] §1. Naming convention: Tier 1-6
 # (the six-tier scheme), distinct from L0-L5 (OST config schema) per
-# memory/project_hierarchy_naming_convention.md. The ost-l05-vs-sixtier-note
+# memory/[internal ref removed]. The ost-l05-vs-sixtier-note
 # will later add an L0-L5 module and explicit maps-to / refines edges between
 # the two schemes; this module is the Tier-1-6 authority those edges resolve to.
 
