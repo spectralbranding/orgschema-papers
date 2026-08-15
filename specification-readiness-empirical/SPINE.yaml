@@ -111,9 +111,12 @@ boundary_conditions:
   - id: C7
     statement: >-
       Realized operating history: the measure is defined on a filer whose year
-      carries events that could have been reported otherwise. A filer with
-      structurally no operations produces maximal year-over-year similarity by
-      construction, so on that population the continuous SCI is uninformative
+      carries events that could have been reported otherwise. On a filer with
+      structurally no operations the disclosure is short and is dominated by
+      content that does move year to year — trust balances, deadline extensions,
+      redemptions, going-concern language — so the score there reflects narrative
+      churn rather than substrate coherence and cannot be read as codification in
+      either direction. On that population the continuous SCI is uninformative
       rather than merely noisy, and the theory is silent rather than falsified.
       Blank-cheque vehicles before a business combination and pre-revenue
       clinical-stage firms are the clean cases.
