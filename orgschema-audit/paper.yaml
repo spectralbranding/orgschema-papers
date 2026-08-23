@@ -199,7 +199,7 @@ dependencies:
   doi: 10.5281/zenodo.19207599
 - relationship: extends
   claim: TDD test-before-code = specify-experience-before-process
-  doi: 10.5555/579193
+  reference: beck-2002-testdriven-development-by
 - relationship: extends
   claim: Service-Dominant Logic — value defined by the beneficiary (L0 root)
   doi: 10.1509/jmkg.68.1.1.24036
