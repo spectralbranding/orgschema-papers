@@ -204,7 +204,7 @@ propositions:
     evidence:
       - type: analytic
         anchor: "Waste = V minus (vertices reverse-reachable from L0 sinks); computed by BFS/DFS from sinks."
-    falsifier: "A parameter with no upward trace that is nonetheless demonstrably required for an L0 outcome would refute the unjustified=wasteful identification."
+    falsifier: "A parameter with no upward trace that is nonetheless demonstrably required for an L0 outcome refutes the unjustified=wasteful identification. The refutation is recorded as such; it is not discharged by adding the missing edge, since any counterexample could be absorbed that way and the identification would carry no falsifying content."
     body_sections: ["Formal Model / Waste as Unreachability", "Analytical Evaluation"]
   - id: P3
     register: conceptual_formal
@@ -335,18 +335,24 @@ propositions:
 findings:
   - id: F1
     statement: >-
-      ANALYTICAL (primary). Against a systematic comparison of six adjacent
-      traditions on four properties (ex-ante vs ex-post; experience-layer vs
-      process-layer; machine-checkable vs manual; backward-traceable vs not), OST
-      is the only artifact for which all four hold jointly. Each named tradition
-      lacks the joint property for a stated structural reason, not by oversight.
-      This establishes the contribution as a graded increase in machine-checkable
-      experience-linkage coverage and a reduction in validation latency from
-      periodic to continuous — not a monolithic "none does X" claim.
-    type: "analytical_argument"
+      POSITIONING (not evaluation). Six adjacent traditions are compared on four
+      properties (ex-ante vs ex-post; experience-layer vs process-layer;
+      machine-checkable vs manual; backward-traceable vs not), and OST is the
+      only artifact for which all four hold jointly. The four-property axis is
+      the artifact's own contribution restated as criteria, so OST's row holds by
+      construction and the comparison carries no independent evidential weight.
+      What the comparison establishes is the shape of the claim — which
+      properties are asserted, which traditions supply which of them, and why
+      each shortfall is structural rather than an oversight — together with the
+      graded restatement (machine-checkable experience-linkage from a small
+      fraction of parameters toward near-complete coverage; validation latency
+      from periodic to continuous), which follows from the design principles and
+      the formal model rather than from the table. Evaluative weight rests on the
+      naturalistic strand, with the demonstration establishing feasibility only.
+    type: "positioning_argument"
     antecedents: [P1, P2, P3]
-    citation_role_in_paper: "primary_evaluation"
-    body_sections: ["Systematic Comparison", "Analytical Evaluation"]
+    citation_role_in_paper: "positioning"
+    body_sections: ["Systematic Comparison", "Analytical Positioning and Derivation"]
   - id: F2
     statement: >-
       NATURALISTIC-OBSERVATIONAL (ex-post corroboration). An independent, large,

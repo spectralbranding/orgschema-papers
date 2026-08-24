@@ -35,7 +35,7 @@ meta:
     and formalized as a typed directed acyclic justification graph on which traceability, waste, cascade-compression,
     and reference-class relativity are decidable or falsifiable properties; a smallest-sufficient model
     gives a compression-impossibility sketch. Following the design-science evaluation taxonomy, the artifact
-    is evaluated analytically, through independent industry convergence, and through a public demonstration
+    is positioned analytically and evaluated through independent industry convergence and a public demonstration
     corpus, with no controlled-outcome claim. The contribution is nascent design theory: acceptance testing
     operationalized as a tool-checkable invariant of organizational specification.'
 claims:
@@ -154,7 +154,9 @@ acceptance:
   criterion: Holds if specification waste is exactly the set of vertices from which no directed path reaches
     an L0 acceptance contract; it is identified by a single reverse reachability pass from the L0 sinks.
   falsification: A parameter with no upward trace that is nonetheless demonstrably required for an L0
-    outcome would refute the unjustified=wasteful identification.
+    outcome refutes the unjustified=wasteful identification. The refutation is recorded as such; it is
+    not discharged by adding the missing edge, since any counterexample could be absorbed that way and
+    the identification would carry no falsifying content.
 - claim_id: P3
   criterion: Holds if cascade-compression is lossy under asymmetric verifiability.
   falsification: A lossless level-collapsing map preserving completeness and executor-invariance at alpha
@@ -310,28 +312,43 @@ contradictions: []
 results:
 - claim_id: P1
   status: supported
-  notes: ANALYTICAL (primary). Against a systematic comparison of six adjacent traditions on four properties
-    (ex-ante vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable
-    vs not), OST is the only artifact for which all four hold jointly. Each named tradition lacks the
-    joint property for a stated structural reason, not by oversight. This establishes the contribution
-    as a graded increase in machine-checkable experience-linkage coverage and a reduction in validation
-    latency from periodic to continuous — not a monolithic "none does X" claim.
+  notes: POSITIONING (not evaluation). Six adjacent traditions are compared on four properties (ex-ante
+    vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable vs
+    not), and OST is the only artifact for which all four hold jointly. The four-property axis is the
+    artifact's own contribution restated as criteria, so OST's row holds by construction and the comparison
+    carries no independent evidential weight. What the comparison establishes is the shape of the claim
+    — which properties are asserted, which traditions supply which of them, and why each shortfall is
+    structural rather than an oversight — together with the graded restatement (machine-checkable experience-linkage
+    from a small fraction of parameters toward near-complete coverage; validation latency from periodic
+    to continuous), which follows from the design principles and the formal model rather than from the
+    table. Evaluative weight rests on the naturalistic strand, with the demonstration establishing feasibility
+    only.
 - claim_id: P2
   status: supported
-  notes: ANALYTICAL (primary). Against a systematic comparison of six adjacent traditions on four properties
-    (ex-ante vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable
-    vs not), OST is the only artifact for which all four hold jointly. Each named tradition lacks the
-    joint property for a stated structural reason, not by oversight. This establishes the contribution
-    as a graded increase in machine-checkable experience-linkage coverage and a reduction in validation
-    latency from periodic to continuous — not a monolithic "none does X" claim.
+  notes: POSITIONING (not evaluation). Six adjacent traditions are compared on four properties (ex-ante
+    vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable vs
+    not), and OST is the only artifact for which all four hold jointly. The four-property axis is the
+    artifact's own contribution restated as criteria, so OST's row holds by construction and the comparison
+    carries no independent evidential weight. What the comparison establishes is the shape of the claim
+    — which properties are asserted, which traditions supply which of them, and why each shortfall is
+    structural rather than an oversight — together with the graded restatement (machine-checkable experience-linkage
+    from a small fraction of parameters toward near-complete coverage; validation latency from periodic
+    to continuous), which follows from the design principles and the formal model rather than from the
+    table. Evaluative weight rests on the naturalistic strand, with the demonstration establishing feasibility
+    only.
 - claim_id: P3
   status: supported
-  notes: ANALYTICAL (primary). Against a systematic comparison of six adjacent traditions on four properties
-    (ex-ante vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable
-    vs not), OST is the only artifact for which all four hold jointly. Each named tradition lacks the
-    joint property for a stated structural reason, not by oversight. This establishes the contribution
-    as a graded increase in machine-checkable experience-linkage coverage and a reduction in validation
-    latency from periodic to continuous — not a monolithic "none does X" claim.
+  notes: POSITIONING (not evaluation). Six adjacent traditions are compared on four properties (ex-ante
+    vs ex-post; experience-layer vs process-layer; machine-checkable vs manual; backward-traceable vs
+    not), and OST is the only artifact for which all four hold jointly. The four-property axis is the
+    artifact's own contribution restated as criteria, so OST's row holds by construction and the comparison
+    carries no independent evidential weight. What the comparison establishes is the shape of the claim
+    — which properties are asserted, which traditions supply which of them, and why each shortfall is
+    structural rather than an oversight — together with the graded restatement (machine-checkable experience-linkage
+    from a small fraction of parameters toward near-complete coverage; validation latency from periodic
+    to continuous), which follows from the design principles and the formal model rather than from the
+    table. Evaluative weight rests on the naturalistic strand, with the demonstration establishing feasibility
+    only.
 - claim_id: P4
   status: supported
   notes: 'BOUNDARY OBJECTS. The artifact explains four phenomena that conformance checking, balanced scorecards,
