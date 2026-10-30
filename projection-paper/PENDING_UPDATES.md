@@ -2,15 +2,15 @@
 
 Status: pending; raised 2026-10-30; source: decision log dz30#l=11 and #l=15 (ARCHIVE/SMD_raw/Решения_Дмитрия_2026-10-30.md); term spec smd-engine/work/ontology_terms_spec.md (§3 rule, §5).
 
-Owner instruction (Dmitry, 30.10): do not edit the paper files now; record the required updates here. Concept DOI 10.5281/zenodo.19145205; current version v2.1.0. Line numbers refer to paper.md at commit 4d514d3. Depends on the six-tier-ontology release that owns the new terms (six-tier-ontology/PENDING_UPDATES.md item 6).
+Owner instruction (Dmitry, 30.10): do not edit the paper files now; record the required updates here. Concept DOI 10.5281/zenodo.19145205; current version v2.1.0 (version DOI 10.5281/zenodo.20961229, checked on Zenodo 2026-10-30). Line numbers refer to paper.md at commit 4d514d3. Depends on the six-tier-ontology release that owns the new terms (six-tier-ontology/PENDING_UPDATES.md item 6).
 
-Term rule: the Owner Ontology is the stakeholder ontology of the owner (the tier-1 stakeholder), not a separate kind beside stakeholder ontologies.
+Term rule: the Owner Ontology is the stakeholder ontology of the owner (the tier-1 stakeholder), not a separate kind beside stakeholder ontologies. Name the analyst's structure "six-tier ontology of a business" in full on first use and "six-tier ontology" after it; never bare "business ontology" (gate О4 В, term spec §10).
 
 ## 1. A translation step before T_1
 
 - Location: "The Projection Cascade" > "Six-Tier Vector-Space Construction", after the composite cascade Π, paper.md line 116-118.
-- Change: name the step that precedes the cascade. A stakeholder ontology is recorded in the position's own words; its translation into the six-tier ontology is a separate rank-reducing map with its own kernel, of the same kind as each junction Π_{i→i+1}.
-- Proposed text: "The cascade starts from T_1 as already written in the six-tier ontology. In practice T_1 content is first stated in a stakeholder ontology, for the controlling principal the Owner Ontology, in that position's own words. Let O_s be that content space and Θ_s: O_s → T_1 the translation into the six-tier ontology, with nullity r_0 = dim(O_s) − rank(Θ_s). Θ_s is a lossy step of the same kind as each junction: what lies in its kernel is absent from every tier below."
+- Change: name the step that precedes the cascade. A stakeholder ontology is recorded in the position's own words; its translation into the six-tier ontology of a business is a separate rank-reducing map with its own kernel, of the same kind as each junction Π_{i→i+1}.
+- Proposed text: "The cascade starts from T_1 as already written in the six-tier ontology of a business. In practice T_1 content is first stated in a stakeholder ontology, for the controlling principal the Owner Ontology, in that position's own words. Let O_s be that content space and Θ_s: O_s → T_1 the translation into the six-tier ontology, with nullity r_0 = dim(O_s) − rank(Θ_s). Θ_s is a lossy step of the same kind as each junction: what lies in its kernel is absent from every tier below."
 - Version: part of the minor release in item 4.
 
 ## 2. Corollary 1 extended by r_0

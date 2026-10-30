@@ -4,7 +4,7 @@ Status: pending; raised 2026-10-30; source: decision log dz30#l=11 and #l=15 (AR
 
 Owner instruction (Dmitry, 30.10): do not edit the paper files now; record the required updates here. Concept DOI 10.5281/zenodo.19895813; current version v1.3.0. Line numbers refer to paper.md at commit 4d514d3.
 
-Term rule for every item: the owner is the tier-1 stakeholder, so the Owner Ontology is the stakeholder ontology of the owner. Write "stakeholder ontologies, the Owner Ontology among them", never "owner and stakeholder ontologies" as two kinds.
+Term rule for every item: the owner is the tier-1 stakeholder, so the Owner Ontology is the stakeholder ontology of the owner. Write "stakeholder ontologies, the Owner Ontology among them", never "owner and stakeholder ontologies" as two kinds. Name the analyst's structure "six-tier ontology of a business" in full on first use and "six-tier ontology" after it; never bare "business ontology" (gate О4 В, term spec §10).
 
 ## 1. Tier 1 definition: Owner Intent is phrased in the Owner Ontology
 
@@ -17,7 +17,7 @@ Term rule for every item: the owner is the tier-1 stakeholder, so the Owner Onto
 
 - Location: Table 1, row 1 (paper.md line 53) and its notes (line 60).
 - Change: keep six rows. Add one sentence to the notes. Optional: extend the Tier 1 specification-surface cell.
-- Proposed text (notes): "The Owner Ontology, in which Owner Intent is phrased, is Tier 1 content and has no row of its own. Every stakeholder of the business (owner, managers, employees, customers, lenders, regulators, a buyer or successor) has a stakeholder ontology of it, the Owner Ontology among them; the six-tier ontology is the common language into which these stakeholder ontologies are translated."
+- Proposed text (notes): "The Owner Ontology, in which Owner Intent is phrased, is Tier 1 content and has no row of its own. Every stakeholder of the business (owner, managers, employees, customers, lenders, regulators, a buyer or successor) has a stakeholder ontology of it, the Owner Ontology among them; the six-tier ontology of a business is the common language into which these stakeholder ontologies are translated."
 - Optional cell text (Tier 1, Specification Surface): "Stated purpose + time horizon + exit criteria, phrased in the Owner Ontology".
 - Version: part of item 7.
 
@@ -53,6 +53,7 @@ Term rule for every item: the owner is the tier-1 stakeholder, so the Owner Onto
   - `owner-ontology-private-part`: "private part" (RU: закрытая часть онтологии собственника). What generates future records: deliberate absences, causal beliefs, sources of the edge, values, judgement of people. Stays with the owner; passes to a successor only by the owner's choice.
   - `ontology-dependent-records`: "ontology-dependent records" (RU: записи, зависимые от онтологии собственника). Records whose meaning depends on the Owner Ontology; their share is a readiness measure beside fusion.
 - Optional: extend the `tier-1-owner-intent` definition with "Phrased in the Owner Ontology." This changes its content hash and so touches every module that imports it (tier-bundle-algebra, succession-rotation, tier-rotation and others) at the next regeneration.
+- Naming (gate О4 В, term spec §10): keep `term_key: six-tier-ontology` and `canonical_form: "six-tier ontology"` as the short form; add the full form "six-tier ontology of a business" (RU: шестиуровневая онтология бизнеса) to its definition, to set it apart from a stakeholder ontology, which is a business's own ontology as one position writes it. Bare "business ontology" is not used.
 - Then: regenerate GLOSSARY.md (do not hand-edit); add the Tier 1 content claim of item 1 to SPINE.yaml and regenerate paper.yaml with code/generate_paper_yaml.py.
 - Version: part of item 7.
 
