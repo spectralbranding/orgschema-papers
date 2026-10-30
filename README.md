@@ -1,6 +1,6 @@
 [![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
 [![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](LICENSE-data)
-![Last Updated](https://img.shields.io/badge/updated-2026--07--03-success)
+![Last Updated](https://img.shields.io/badge/updated-2026--10--30-success)
 
 # Organizational Schema Theory -- Research Papers
 
@@ -10,19 +10,19 @@ Research publications on Organizational Schema Theory (orgschema), a reverse-des
 
 | Paper | Status |
 |-------|--------|
-| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | Working paper v1.3.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.18946043) |
-| [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | Working paper v1.0.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19555201) |
-| [The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't](projection-paper/paper.md) | Working paper — [DOI](https://doi.org/10.5281/zenodo.19145205) |
+| [The Organizational Schema Theory: Test-Driven Business Design](organizational-schema-theory/paper.md) | Working paper v2.1.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.18946043) |
+| [The OrgSchema Audit: A Six-Level Diagnostic for Specification-Driven Organizations](orgschema-audit/paper.md) | Working paper v1.1.0, Apr 2026 — [DOI](https://doi.org/10.5281/zenodo.19555201) |
+| [The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't](projection-paper/paper.md) | Working paper v2.1.0 — [DOI](https://doi.org/10.5281/zenodo.19145205) |
 | [Verification as Operator: Spectral Projection, Rank Deficiencies, and the Persistence of the Audit Society](verification-as-operator/paper.md) | Preprint v1.1.0, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19778588) |
 | [Organizational Metamerism: Observer-Relative State Equivalence in Organizational Configurations](org-as-metadata/paper.md) | Preprint v1.1.0, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19869871) |
-| [Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation](six-tier-ontology/paper.md) | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
-| [Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies](brand-as-modular-layer/paper.md) | Preprint v1.1.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
-| [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | Preprint v1.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20069605) |
-| [Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and AI Penetration](tier-allocation/paper.md) | Preprint v1.0.0 on Zenodo 2026-05-07 — [DOI](https://doi.org/10.5281/zenodo.20072288) |
-| [AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage](tier-penetration/paper.md) | [SUPERSEDED] Working paper — [DOI](https://doi.org/10.5281/zenodo.20087036) |
-| [Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure](capability-as-projection/paper.md) | Working paper v1.0.0 — [DOI](https://doi.org/10.5281/zenodo.20367459) |
-| [Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture](specification-readiness/paper.md) | Working paper v1.0.0 — [DOI](https://doi.org/10.5281/zenodo.20379981) |
-| [Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns](specification-readiness-empirical/paper.md) | Working paper v1.0.0 — [DOI](https://doi.org/10.5281/zenodo.20384084) |
+| [Dual Hierarchies of Organizational Transferability: A Six-Tier Ontology and Theory of Acquisition Failure Propagation](six-tier-ontology/paper.md) | Preprint v1.3.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19895813) |
+| [Brand as a Modular Layer: Tiered Organizational Architecture, Separability, and Firm Performance in Multi-Brand Strategies](brand-as-modular-layer/paper.md) | Preprint v1.2.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.19930157) |
+| [The Tier-Rotation Curve: A Theory of Brand-Substrate Decoupling and Its M&A-Value Geometry](tier-rotation/paper.md) | Preprint v2.0.0 on Zenodo, May 2026 — [DOI](https://doi.org/10.5281/zenodo.20069605) |
+| [Where to Invest Within the Firm: Organizational Tiers, Discount Rates, and AI Penetration](tier-allocation/paper.md) | Preprint v1.2.0 on Zenodo 2026-05-07 — [DOI](https://doi.org/10.5281/zenodo.20072288) |
+| [AI Tier Penetration: A Theory of Substrate-Dependent Competitive Advantage](tier-penetration/paper.md) | [SUPERSEDED] Working paper v1.0.0 — [DOI](https://doi.org/10.5281/zenodo.20087036) |
+| [Capability as Projection of an Append-Only Organizational Log: An Event-Sourced Substrate Theory of Organizational Capability and Transfer Failure](capability-as-projection/paper.md) | Working paper v1.1.0 — [DOI](https://doi.org/10.5281/zenodo.20367459) |
+| [Specification Readiness and Endogenous Friction: An Information-Theoretic Model of Multi-Interface Organizational Architecture](specification-readiness/paper.md) | Working paper v1.1.0 — [DOI](https://doi.org/10.5281/zenodo.20379981) |
+| [Specification Readiness: Measuring an Architectural Antecedent of Functional Friction and AI Returns](specification-readiness-empirical/paper.md) | Working paper v1.3.0 — [DOI](https://doi.org/10.5281/zenodo.20384084) |
 
 ### The Tier-Rotation Curve (Zharnikov 2026ai)
 
