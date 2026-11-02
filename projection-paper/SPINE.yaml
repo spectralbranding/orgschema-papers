@@ -273,8 +273,8 @@ propositions:
       - type: analytic
         anchor: "Position-triple definition (§4.7); unfolds v1's single-step Pi into three cascade-coordinated channels."
       - type: citation
-        anchor: "Refines Zharnikov 2026l's positions-as-projection-of-process claim (correct at T_5->T_6, silent on upstream)."
-        citation_keys: [zharnikov-2026l]
+        anchor: "Unfolds the v1.0.0 positions-as-projection-of-process claim of this paper (correct at T_5->T_6, silent on upstream)."
+        citation_keys: []
     body_sections: ["§4.7 Position Formal Definition"]
   - id: P9
     statement: >-
@@ -353,6 +353,53 @@ propositions:
         citation_keys: []
     falsifier: "Per-junction kernel sum equal to cascade kernel across a firm cross-section refutes the strict-inequality regime as modal."
     body_sections: ["§5 Proposition 4"]
+  - id: P13
+    statement: >-
+      Translation step before T_1: T_1 content is first stated in a stakeholder
+      ontology, for the owner as controlling principal the Owner Ontology, in
+      that position's own words. Let O_s be that content space, a
+      finite-dimensional real vector space, and Theta_s: O_s -> T_1 the linear
+      translation into the six-tier ontology of a business, with nullity
+      r_0 := dim(O_s) - rank(Theta_s), in the same notation as r_i :=
+      d_i - rank(Pi_{i->i+1}). Theta_s is a lossy step of the same kind as each
+      junction: content in ker(Theta_s) is absent from every tier below.
+    conditions: ""
+    antecedents: [P1]
+    evidence:
+      - type: analytic
+        anchor: "Linearity of Theta_s; dim ker(Theta_s) = r_0 by rank-nullity, the same relation that defines r_i for each junction."
+    body_sections: ["§3.1 Six-Tier Vector-Space Construction"]
+  - id: P14
+    statement: >-
+      Remark following Corollary 1 (extended cascade): for the extended cascade
+      Pi o Theta_s: O_s -> T_6, dim ker(Pi o Theta_s) <= r_0 + r_1 + ... + r_5.
+      The justification is the sub-additivity of nullity already used for
+      Corollary 1, dim ker(AB) <= dim ker A + dim ker B, applied once more with
+      A = Theta_s and B = Pi; it is a remark, not a new theorem. Content of the
+      Owner Ontology in ker(Theta_s) is lost before the first junction, and no
+      intervention at T_2 to T_6 recovers it.
+    conditions: ""
+    antecedents: [P6, P13]
+    evidence:
+      - type: derivation
+        anchor: "Kernel sub-additivity under composition (as in Corollary 1) with dim ker(Theta_s) = r_0 and dim ker(Pi) <= r_1 + ... + r_5."
+    body_sections: ["§3.3 Corollary 1 (remark)"]
+  - id: P15
+    statement: >-
+      Ownership change replaces Theta_s as well as the owner-intent input: the
+      incoming principal reads T_1 to T_6 through a different Owner Ontology,
+      and records written in the prior one become ontology-dependent records.
+      The translation Theta_s, and its nullity r_0, are not measured in this
+      paper; eliciting a stakeholder ontology in the position's own words and
+      comparing it with its rendering in the six-tier ontology would measure
+      r_0, and the same comparison applies to translating the Owner Ontology
+      into the ontologies of customers, regulators, and employees.
+    conditions: "C4"
+    antecedents: [P13]
+    evidence:
+      - type: analytic
+        anchor: "Theta_s is defined relative to the stakeholder ontology it translates from, so a change of principal changes the domain O_s and the map Theta_s."
+    body_sections: ["§7 Boundary conditions", "§7 Future research"]
 
 # ============================================================================
 # Methods — the companion numerical verification (§3.5) + restriction comparison (§4.6)
@@ -509,6 +556,14 @@ limitations:
     severity: "scope-bounding"
     affects: [P9, P10, P11, P12]
     body_sections: ["§7 Future research (Path B)"]
+  - id: L5
+    statement: >-
+      The nullity r_0 of the translation Theta_s from a stakeholder ontology
+      into the six-tier ontology is not measured in this paper; the extended
+      bound on dim ker(Pi o Theta_s) is stated but not estimated for any firm.
+    severity: "scope-bounding"
+    affects: [P13, P14, P15]
+    body_sections: ["§7 Future research"]
 
 # ============================================================================
 # Alternative explanations — the rival the apparatus must clear
@@ -547,14 +602,6 @@ alternative_explanations:
 # Cross-paper engagement
 # ============================================================================
 corpus_precedents:
-  - paper_key: 2026l
-    relationship: refines
-    spine_nodes: [P8]
-    note: >-
-      The Rendering Problem's central claim (positions are projections of
-      process) was correct at the T_5->T_6 junction but silent on the upstream
-      tiers; v2's position triple (§4.7) unfolds that single-step projection into
-      three cascade-coordinated channels (P_p via T_5, A_p via T_3, R_p via T_1).
   - paper_key: 2026ak
     relationship: extends
     spine_nodes: [P10]

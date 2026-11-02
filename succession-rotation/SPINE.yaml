@@ -1,5 +1,5 @@
 spine_version: "0.2"
-spine_doc_version: "1.0.0"
+spine_doc_version: "1.1.0"
 paper_key: "succession-rotation"
 # TITLE APPROVED by the author 2026-08-10, with "Different" sharpened to "Rival" -- the paper's own
 # word for the relation (complements as knowledge, rivals as investments). Deliberately NOT
@@ -203,6 +203,25 @@ methods:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["The Pre-Registered Design"]
+  - id: M4
+    statement: >-
+      Decision replay, a proposed measure of the owner-shaped residual. The incumbent selects 20 to
+      30 past exception decisions and records the choice made in each; an industry practitioner from
+      outside the firm decides the same cases without documentation and then with it. The share the
+      practitioner fails to reproduce without documentation estimates the owner-shaped residual; the
+      gain with documentation estimates what codification can carry; the remainder is what only
+      exposure transfers. It is a case-level measure, not the firm-level instrument that P7 says
+      does not exist.
+    type: "decision_replay"
+    inputs: []
+    outputs: []
+    reproducibility:
+      seed: "not applicable"
+      version: "proposed, NOT executed -- no result is reported"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["Why the Design Cannot Yet Be Run"]
 
 # ---------------------------------------------------------------------------
 # Findings -- what is the case, from M1.
@@ -585,6 +604,90 @@ derivations:
       created_by: "author"
       created_at: "2026-08-10"
     body_sections: ["The Rival Account"]
+  - id: D9
+    statement: >-
+      The Owner Ontology is the stakeholder ontology of the owner, who is the tier-1 stakeholder; it
+      is a different object from the six-tier ontology of a business, which is the analyst's
+      structure that the carrier classification is applied to. The Owner Ontology is a Tier-1
+      component that splits across two carriers instead of sitting under one. Its shareable part --
+      the owner's terms as used in the records, verbatim, together with the list of
+      ontology-dependent records -- is carried by an artifact once it is written down, and is
+      classed under A. Its private part -- deliberate absences, causal beliefs, sources of the edge,
+      values, and the owner's judgement of people -- is carried by the person, generates the firm's
+      future records, and is classed under P. Owner intent stays under P. The split applies the
+      carrier classification of P1 to one more component and adds no carrier, so AA4 is unaffected.
+    from: [P1]
+    to: P3
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["The Persistence Column"]
+  - id: D10
+    statement: >-
+      The two events need different parts of the Owner Ontology. Under removal, a buyer that
+      supplies its own operating principal needs the shareable part only, to read the records it
+      acquires; it then works in its own ontology, and the private part is written off with the rest
+      of the person-carried column. Under replacement, a successor needs the shareable part for the
+      same reason and, beyond it, as much of the private part as the incumbent chooses to pass on,
+      which is acquired by exposure and not by documents. The asymmetry follows from D9 together with
+      the disturbance map of P3: removal writes off every person-carried component, replacement
+      puts them at risk.
+    from: [P3]
+    to: P6
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["Which Tier Binds"]
+  - id: D11
+    statement: >-
+      Remark on P6; P6 itself is unchanged. Placing the two parts of the Owner Ontology on the two
+      sides of the trade-off: writing the shareable part converts person-carried residual into
+      artifact, and because both a buyer and a successor must read the existing records it serves
+      both arms; it counts toward documentation coverage. Passing on the private part is exposure
+      and serves only the succession arm.
+    from: [P5]
+    to: P6
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["The Budget Constraint"]
+  - id: D12
+    statement: >-
+      Remark on P6; P6 itself is unchanged. The process residual that binds under replacement is
+      relative to the successor. An owner-operated firm has been selected to run well under its
+      owner's own way of resolving exceptions, so the residual is the part of the owner's exception
+      handling that the successor's own rules do not reproduce. A successor from the same industry
+      already covers the decisions that industry practice resolves, and what remains is the
+      owner-shaped part. The same firm therefore carries a larger residual for a successor from
+      outside the industry than for one from inside it. This restates the absorptive-capacity
+      condition of C5 as a quantity that a measure could in principle estimate (M4).
+    from: [P4]
+    to: P6
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["The Budget Constraint"]
+  - id: D13
+    statement: >-
+      Remark on P6; P6 itself is unchanged and no proposition is added. P6 names two uses of the
+      incumbent's time: codification, which makes residual into artifact, and exposure, which moves
+      residual into a successor. A third use changes the firm instead of the knowledge about it: an
+      owner-shaped decision rule is replaced by one that ordinary industry practice already supplies
+      (a standard role, contract form, procedure or supplier). It shrinks the residual that either
+      event must carry, so it serves both arms, as writing the shareable part does (D11). Its cost
+      is that the firm may lose whatever edge the owner-shaped rule gave. The third use is stated
+      here and not tested.
+    from: [P4, P5]
+    to: P6
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-02"
+    body_sections: ["The Budget Constraint"]
 
 # ---------------------------------------------------------------------------
 # Propositions -- the theoretical claims. Two contributions, not three.
@@ -1246,7 +1349,7 @@ corpus_precedents:
     spine_nodes: [P1, P3, P5]
   - paper_key: 2026ag
     relationship: refines
-    spine_nodes: [P1, P2, P4]
+    spine_nodes: [P1, P2, P4, D9, D10, D11]
   - paper_key: 2026an
     relationship: applies
     spine_nodes: [L5]

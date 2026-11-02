@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.21756077
-  date: '2026-08-09'
+  date: '2026-11-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -217,6 +217,53 @@ claims:
   status: not_tested
   depends_on:
   - P6
+- id: C3
+  type: proposition
+  statement: 'Scope of Assumption A: the Owner Ontology — the stakeholder ontology of the owner, the tier-1
+    stakeholder, in which Owner Intent is phrased — is Tier 1 content and is replaced with it; the buyer
+    reads the asset in the buyer''s own ontology. Only the shareable part of the seller''s Owner Ontology
+    (the seller''s terms as used in the records, verbatim, together with the list of ontology-dependent
+    records) can cross the boundary, as a document; the private part (deliberate absences, causal beliefs,
+    sources of the edge, values, and the judgement of people) exits with the seller-principal. The Tier-1
+    tier record is accordingly stated as stated purpose, horizon, and exit criteria phrased in the Owner
+    Ontology.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P1
+  - P2
+- id: C4
+  type: proposition
+  statement: 'Remark on the replace token, outside the token''s definition: replace may carry one attachment,
+    a read-only fork of the shareable part of the seller''s Owner Ontology, taken as a document and not
+    as a fork of Tier 1, which lets the buyer read the Tier 2 to Tier 6 records that depend on it. The
+    attachment does not transfer the Owner Ontology itself, and its absence leaves those ontology-dependent
+    records forked but unreadable in the seller''s sense. No token is introduced; the fork operators,
+    the cascade rule, and the admissibility rules are unchanged.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P2
+  - C3
+- id: C5
+  type: proposition
+  statement: 'Third record case: a record that exists but whose meaning depends on the seller''s Owner
+    Ontology stands beside a record that exists and a record constituted by intention rather than by realized
+    events. The predicate has its input, but the buyer''s reading of that input depends on whether the
+    shareable part of the seller''s Owner Ontology was transferred with the replace token. The case adds
+    no verdict to the predicate and no term to the algebra. Replace also leaves the seller''s Owner Ontology
+    with the seller: where Tier 2 to Tier 6 records are ontology-dependent, the 1-1 forks carry records
+    the buyer reads only through the shareable part, or translates into its own ontology with loss.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - C2
+  - C3
+  - C4
+  - P6
 - id: L1
   type: proposition
   statement: 'This is a theoretical contribution; the cascade rule and admissibility predicate had no
@@ -273,14 +320,29 @@ claims:
   depends_on:
   - C2
   - P6
+- id: L4
+  type: proposition
+  statement: 'The registered-before-data ordering of the case-coding program rests on the commit record
+    of the author''s private working repository: the pre-registration was committed on 2026-05-19 and
+    the first coded result on 2026-07-29. Its first public copy appeared together with the results, so
+    the public record alone does not establish the ordering; the pre-registration''s Amendment 7 records
+    both commit identifiers.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P6
 methodology:
   type: theoretical
   design: Theoretical derivation.
 acceptance:
 - claim_id: P5
-  criterion: Holds if cascade rule (κ, total function from a fork operation to the set of forks it structurally
+  criterion: 'Holds if cascade rule (κ, total function from a fork operation to the set of forks it structurally
     implies under the service hierarchy) and its conformance predicate π (whether a bundle contains every
-    fork κ implies).
+    fork κ implies). κ is upward-implying along the service hierarchy and downward-non-implying: forking
+    a served tier (e.g., Product) entails forking the tier that serves it (Process), because the served
+    tier loses its productive substrate otherwise; the reverse does not hold, because substrate is replaceable
+    from below (the franchise case: a Tier-4 read-only fork does not cascade to a Tier-5 fork).'
   falsification: A documented roll-up (or other N-to-1 merge) in which a lower-tier fork produces no upward
     propagation despite a fused separability profile, holding target separability and integration approach
     comparable to cases that do exhibit it.
@@ -304,7 +366,7 @@ acceptance:
   falsification: Any of the three predictions failing systematically across matched cases (see P5's falsifier
     for the roll-up-specific case).
 - claim_id: L2
-  criterion: 'Holds if eXPLORATORY re-scoping of the n=26 empirical result to the reading the data actually
+  criterion: 'Holds if EXPLORATORY re-scoping of the n=26 empirical result to the reading the data actually
     support (POST-HOC, NOT pre-registered — the registered test in L1 tested sufficiency): a cascade gap
     is a NECESSARY condition for a cascade-type integration failure, and cascade-conformance is a structural
     safe harbor against it.'

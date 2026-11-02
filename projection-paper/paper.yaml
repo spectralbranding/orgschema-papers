@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19145205
-  date: '2026-06-27'
+  date: '2026-11-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -202,6 +202,45 @@ claims:
   status: not_tested
   depends_on:
   - P6
+- id: P13
+  type: proposition
+  statement: 'Translation step before T_1: T_1 content is first stated in a stakeholder ontology, for
+    the owner as controlling principal the Owner Ontology, in that position''s own words. Let O_s be that
+    content space, a finite-dimensional real vector space, and Theta_s: O_s -> T_1 the linear translation
+    into the six-tier ontology of a business, with nullity r_0 := dim(O_s) - rank(Theta_s), in the same
+    notation as r_i := d_i - rank(Pi_{i->i+1}). Theta_s is a lossy step of the same kind as each junction:
+    content in ker(Theta_s) is absent from every tier below.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P1
+- id: P14
+  type: proposition
+  statement: 'Remark following Corollary 1 (extended cascade): for the extended cascade Pi o Theta_s:
+    O_s -> T_6, dim ker(Pi o Theta_s) <= r_0 + r_1 + ... + r_5. The justification is the sub-additivity
+    of nullity already used for Corollary 1, dim ker(AB) <= dim ker A + dim ker B, applied once more with
+    A = Theta_s and B = Pi; it is a remark, not a new theorem. Content of the Owner Ontology in ker(Theta_s)
+    is lost before the first junction, and no intervention at T_2 to T_6 recovers it.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P6
+  - P13
+- id: P15
+  type: proposition
+  statement: 'Ownership change replaces Theta_s as well as the owner-intent input: the incoming principal
+    reads T_1 to T_6 through a different Owner Ontology, and records written in the prior one become ontology-dependent
+    records. The translation Theta_s, and its nullity r_0, are not measured in this paper; eliciting a
+    stakeholder ontology in the position''s own words and comparing it with its rendering in the six-tier
+    ontology would measure r_0, and the same comparison applies to translating the Owner Ontology into
+    the ontologies of customers, regulators, and employees.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P13
 methodology:
   type: mixed
   design: 'Explicit six-tier numerical construction with dimensions (d_1..d_6) = (4,4,3,3,2,2): all operator
@@ -220,12 +259,14 @@ acceptance:
   criterion: 'Holds if theorem 1 (cascade-equilibrium existence and uniqueness): under a uniform Banach
     contraction (C_i, constant kappa_i in [0,1)) and joint parameter Lipschitz condition (C_i'', constant
     L_i) at each junction, for every x_1 in B_1 a unique cascade-equilibrium trajectory exists, and the
-    fixed-point map x_1 -> (x_2*,.'
+    fixed-point map x_1 -> (x_2*,...,x_6*) is Lipschitz on B_1 with constant bounded above by Prod_{j=1..5}
+    L_j / (1 - kappa_j).'
   falsification: If a junction's F_i is not a uniform contraction on B_{i+1}, the global tuple is not
     well-defined as a function of x_1.
 - claim_id: P9
   criterion: 'Holds if (P1, predictive) Cascade-distance scaling: an intervention of magnitude Delta_i
-    at tier i registers at T_6 with magnitude bounded above by [Prod_{j=i.'
+    at tier i registers at T_6 with magnitude bounded above by [Prod_{j=i..5} L_j / (1 - kappa_j)] * ||Delta_i||,
+    so intervention efficacy is geometric in cascade depth (6 - i).'
   falsification: T_6-only interventions average-outperforming deeper-tier interventions falsifies P1.
 - claim_id: P10
   criterion: 'Holds if (P2, predictive) Strict downward propagation of basis rotation under AI deployment:
@@ -238,7 +279,8 @@ acceptance:
 - claim_id: P11
   criterion: 'Holds if (P3, predictive) Variance amplification with cascade distance: for an exogenous
     perturbation eps_i at tier i with variance sigma_i^2, the variance of the induced T_6 perturbation
-    is bounded by [Prod_{j=i.'
+    is bounded by [Prod_{j=i..5} L_j / (1 - kappa_j)]^2 * sigma_i^2, so T_6-outcome variance scales geometrically
+    with cascade-distance (6 - i).'
   falsification: Tighter T_6 confidence interval than T_4 for matched upstream shocks falsifies P3.
 - claim_id: P12
   criterion: 'Holds if (P4, predictive) Algebraic decoupling bound at layer junctions: the empirical re-statement
@@ -248,12 +290,6 @@ acceptance:
   falsification: Per-junction kernel sum equal to cascade kernel across a firm cross-section refutes the
     strict-inequality regime as modal.
 dependencies:
-- relationship: refines
-  claim: The Rendering Problem's central claim (positions are projections of process) was correct at the
-    T_5->T_6 junction but silent on the upstream tiers; v2's position triple (§4.7) unfolds that single-step
-    projection into three cascade-coordinated channels (P_p via T_5, A_p via T_3, R_p via T_1).
-  critical: false
-  doi: 10.5281/zenodo.19064426
 - relationship: extends
   claim: AI Tier Penetration develops the substrate-dependent boundary at which an AI deployment penetrates
     the T_3 legal-personhood floor — the regime transition outside scope condition (iv) that P2's falsifier
@@ -360,6 +396,11 @@ limitations:
 - description: The empirical illustration (Path B) is deferred to a companion empirical paper (PROJECTION_PAPER_PHASE2_EMPIRICAL_FRAMEWORK.md);
     this paper presents only the theoretical apparatus, so references to a §6 software-engineering illustration
     are forward pointers, and P1-P4 are framed for follow-on empirical work rather than tested here.
+  severity: moderate
+  addressable: true
+- description: The nullity r_0 of the translation Theta_s from a stakeholder ontology into the six-tier
+    ontology is not measured in this paper; the extended bound on dim ker(Pi o Theta_s) is stated but
+    not estimated for any firm.
   severity: moderate
   addressable: true
 repositories:

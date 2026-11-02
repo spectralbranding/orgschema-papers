@@ -39,6 +39,11 @@ owns:
 
 imports:
   - {term_key: six-tier-ontology}
+  - {term_key: stakeholder-ontology}
+  - {term_key: owner-ontology}
+  - {term_key: tier-1-owner-intent}
+  - {term_key: owner-ontology-shareable-part}
+  - {term_key: ontology-dependent-records}
 
 refines: []
 

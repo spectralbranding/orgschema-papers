@@ -13,7 +13,7 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
   - The testable pattern the theory predicts: the pre-transition investments that predict a high realized sale price and those that predict a low-disruption handover are different investments. A crossover contrast rather than an average treatment effect, and the pattern that discriminates this account from the single-portfolio account under which one preparation programme raises both.
   - first use: The Testable Signature
 - **Documentation coverage** (write: `documentation coverage`)
-  - The share of ordinary operation that is written down in artifacts independent of any person — procedures, manuals, specifications, quality-system documentation, process encoded in systems. The pre-transition investment that converts person-carried residual into artifact continuity (A), and therefore the one that raises value under removal.
+  - The share of ordinary operation that is written down in artifacts independent of any person — procedures, manuals, specifications, quality-system documentation, process encoded in systems. The pre-transition investment that converts person-carried residual into artifact continuity (A), and therefore the one that raises value under removal. It includes the shareable part of the Owner Ontology once that part is written down.
   - first use: The Testable Signature
 - **Draw frequency** (write: `draw frequency`)
   - The rate at which a tier's person-carried residual must actually be exercised for the firm to keep operating — as against how tacit, how valuable, or how hard to articulate it is. The discriminating property among person-carried residuals: a residual drawn at discretion can be deferred past a transition, and one drawn at operating frequency cannot.
@@ -45,8 +45,23 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
 - **Constrained tier rotation** (write: `constrained tier rotation`)
   - The degenerate form of tier rotation that obtains under a personal-brand (tier-collapsed) substrate: because a person's Owner Intent, Entity, and Product are fused, emphasis cannot rotate freely across those tiers the way a separable firm's can, so the tier-rotation curve is constrained — a person cannot divest their Tier-4 product without divesting their Tier-1 intent. It is the boundary condition the separable-tier rotation curve (2026ai) does not cover.
   - _defined by personal-brand-substrate_
+- **ontology-dependent records**
+  - Records whose meaning depends on the Owner Ontology, so that a reader outside the firm cannot read them correctly without it. Their share is a readiness measure beside fusion.
+  - _defined by 2026ag_
+- **Owner Ontology**
+  - The stakeholder ontology of the controlling party (the Tier 1 stakeholder): the terms in which Owner Intent is phrased and most of the firm's records are written. Tier 1 content carried by the same principal as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in which questions about the business are worded, and Owner Intent fixes which questions are asked.
+  - _defined by 2026ag_
+- **private part**
+  - The part of the Owner Ontology that generates future records: deliberate absences, causal beliefs, sources of the edge, values, and judgement of people. It stays with the owner and passes to a successor only by the owner's choice.
+  - _defined by 2026ag_
+- **shareable part**
+  - The part of the Owner Ontology that is the reading key to existing records: the owner's terms as used in the records, verbatim, and the list of ontology-dependent records. It can pass to a buyer or successor as a document.
+  - _defined by 2026ag_
 - **six-tier ontology**
-  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
+  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it.
+  - _defined by 2026ag_
+- **stakeholder ontology**
+  - A picture of what exists in an activity, what its basic terms mean, what is connected to what, and what is absent, as written from one named position (owner, manager, employee, customer, lender, regulator, buyer, successor), recorded in that position's own words.
   - _defined by 2026ag_
 - **Tier 1 (Owner Intent)**
   - Why the organization exists. Governed by founder / board chair / dominant shareholder; implicit or off-table in most professional-CEO companies. Transfers nothing directly, only its imprint on lower tiers.

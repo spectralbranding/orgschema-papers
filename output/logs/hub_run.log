@@ -1,6 +1,6 @@
 ==================================================
 Hub pipeline run: 2026-08-07T08:50:02Z
-Repo: /Users/d/projects/orgschema-papers
+Repo: <repo>
 Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 ==================================================
 >>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
@@ -8,18 +8,18 @@ Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 >>> [cascade-gap-largen] invoking per-paper reproduce.sh
 ==================================================
 Cascade-gap reproduction: 2026-08-07T08:50:03Z
-Repo: /Users/d/projects/orgschema-papers/cascade-gap-largen
+Repo: <repo>/cascade-gap-largen
 ==================================================
 >>> Checking dependencies...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Resolved 29 packages in 5ms
-   Building cascade-gap-largen @ file:///Users/d/projects/orgschema-papers/cascade-gap-largen
+   Building cascade-gap-largen @ file://<repo>/cascade-gap-largen
 Downloading mypy (13.3MiB)
 Downloading ruff (10.1MiB)
 Downloading ast-serialize (1.1MiB)
   × Failed to build `cascade-gap-largen @
-  │ file:///Users/d/projects/orgschema-papers/cascade-gap-largen`
+  │ file://<repo>/cascade-gap-largen`
   ├─▶ The build backend returned an error
   ╰─▶ Call to `hatchling.build.build_editable` failed (exit status: 1)
 
@@ -27,56 +27,56 @@ Downloading ast-serialize (1.1MiB)
       Traceback (most recent call last):
         File "<string>", line 11, in <module>
           wheel_filename =
-      backend.build_editable(__import__("os").fsdecode(b"/Users/d/.cache/uv/builds-v0/.tmpI6SI6G"),
+      backend.build_editable(__import__("os").fsdecode(b"<uv-cache>/builds-v0/.tmpI6SI6G"),
       {}, None)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/build.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/build.py",
       line 83, in build_editable
           return os.path.basename(next(builder.build(directory=wheel_directory,
       versions=["editable"])))
       
       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
       line 157, in build
           artifact = version_api[version](directory, **build_data)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 547, in build_editable
           return self.build_editable_detection(directory, **build_data)
                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 559, in build_editable_detection
           for included_file in self.recurse_selected_project_files():
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
       line 182, in recurse_selected_project_files
           if self.config.only_include:
              ^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
+      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
       line 1126, in __get__
           val = self.func(instance)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/config.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/config.py",
       line 715, in only_include
           only_include = only_include_config.get("only-include",
       self.default_only_include()) or self.packages
       
       ~~~~~~~~~~~~~~~~~~~~~~~~~^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 293, in default_only_include
           return self.default_file_selection_options.only_include
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
+      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
       line 1126, in __get__
           val = self.func(instance)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 281, in default_file_selection_options
           raise ValueError(message)
       ValueError: Unable to determine which files to ship
@@ -100,7 +100,7 @@ Downloading ast-serialize (1.1MiB)
 
 hint: Build failures usually indicate a problem with the package or the build environment==================================================
 Hub pipeline run: 2026-08-07T10:11:48Z
-Repo: /Users/d/projects/orgschema-papers
+Repo: <repo>
 Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 ==================================================
 >>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
@@ -108,18 +108,18 @@ Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 >>> [cascade-gap-largen] invoking per-paper reproduce.sh
 ==================================================
 Cascade-gap reproduction: 2026-08-07T10:11:48Z
-Repo: /Users/d/projects/orgschema-papers/cascade-gap-largen
+Repo: <repo>/cascade-gap-largen
 ==================================================
 >>> Checking dependencies...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Resolved 29 packages in 3ms
-   Building cascade-gap-largen @ file:///Users/d/projects/orgschema-papers/cascade-gap-largen
+   Building cascade-gap-largen @ file://<repo>/cascade-gap-largen
 Downloading ruff (10.1MiB)
 Downloading ast-serialize (1.1MiB)
 Downloading mypy (13.3MiB)
   × Failed to build `cascade-gap-largen @
-  │ file:///Users/d/projects/orgschema-papers/cascade-gap-largen`
+  │ file://<repo>/cascade-gap-largen`
   ├─▶ The build backend returned an error
   ╰─▶ Call to `hatchling.build.build_editable` failed (exit status: 1)
 
@@ -127,56 +127,56 @@ Downloading mypy (13.3MiB)
       Traceback (most recent call last):
         File "<string>", line 11, in <module>
           wheel_filename =
-      backend.build_editable(__import__("os").fsdecode(b"/Users/d/.cache/uv/builds-v0/.tmpga0btf"),
+      backend.build_editable(__import__("os").fsdecode(b"<uv-cache>/builds-v0/.tmpga0btf"),
       {}, None)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/build.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/build.py",
       line 83, in build_editable
           return os.path.basename(next(builder.build(directory=wheel_directory,
       versions=["editable"])))
       
       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
       line 157, in build
           artifact = version_api[version](directory, **build_data)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 547, in build_editable
           return self.build_editable_detection(directory, **build_data)
                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 559, in build_editable_detection
           for included_file in self.recurse_selected_project_files():
                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
       line 182, in recurse_selected_project_files
           if self.config.only_include:
              ^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
+      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
       line 1126, in __get__
           val = self.func(instance)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/config.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/config.py",
       line 715, in only_include
           only_include = only_include_config.get("only-include",
       self.default_only_include()) or self.packages
       
       ~~~~~~~~~~~~~~~~~~~~~~~~~^^
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 293, in default_only_include
           return self.default_file_selection_options.only_include
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         File
-      "/Users/d/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
+      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
       line 1126, in __get__
           val = self.func(instance)
         File
-      "/Users/d/.cache/uv/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
+      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
       line 281, in default_file_selection_options
           raise ValueError(message)
       ValueError: Unable to determine which files to ship
@@ -200,7 +200,7 @@ Downloading mypy (13.3MiB)
 
 hint: Build failures usually indicate a problem with the package or the build environment==================================================
 Hub pipeline run: 2026-08-07T11:03:22Z
-Repo: /Users/d/projects/orgschema-papers
+Repo: <repo>
 Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 ==================================================
 >>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
@@ -208,21 +208,21 @@ Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
 >>> [cascade-gap-largen] invoking per-paper reproduce.sh
 ==================================================
 Cascade-gap reproduction: 2026-08-07T11:03:22Z
-Repo: /Users/d/projects/orgschema-papers/cascade-gap-largen
+Repo: <repo>/cascade-gap-largen
 ==================================================
 >>> Checking dependencies...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Resolved 29 packages in 3ms
 Checked 27 packages in 2ms
 >>> Downloading evidence dataset from Hugging Face...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Fetching 3443 files:   0%|          | 0/3443 [00:00<?, ?it/s]Fetching 3443 files:   7%|▋         | 231/3443 [00:00<00:01, 2306.59it/s]Fetching 3443 files:  16%|█▌        | 542/3443 [00:00<00:01, 2759.48it/s]Fetching 3443 files:  25%|██▍       | 849/3443 [00:00<00:00, 2896.79it/s]Fetching 3443 files:  34%|███▍      | 1165/3443 [00:00<00:00, 2997.04it/s]Fetching 3443 files:  43%|████▎     | 1478/3443 [00:00<00:00, 3044.34it/s]Fetching 3443 files:  52%|█████▏    | 1784/3443 [00:00<00:00, 3048.07it/s]Fetching 3443 files:  61%|██████    | 2089/3443 [00:00<00:00, 3042.66it/s]Fetching 3443 files:  70%|██████▉   | 2394/3443 [00:00<00:00, 3031.32it/s]Fetching 3443 files:  78%|███████▊  | 2698/3443 [00:00<00:00, 3026.96it/s]Fetching 3443 files:  88%|████████▊ | 3013/3443 [00:01<00:00, 3050.09it/s]Fetching 3443 files:  97%|█████████▋| 3332/3443 [00:01<00:00, 3089.63it/s]Fetching 3443 files: 100%|██████████| 3443/3443 [00:01<00:00, 2993.38it/s]
-downloaded to /Users/d/projects/orgschema-papers/cascade-gap-largen/hf_evidence
+downloaded to <repo>/cascade-gap-largen/hf_evidence
 >>> Confirmatory necessary-condition analysis...
-warning: The `tool.uv.dev-dependencies` field (used in `/Users/d/projects/orgschema-papers/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `/Users/d/projects/orgschema-papers/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
+warning: The `tool.uv.dev-dependencies` field (used in `<repo>/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `<repo>/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
 === Full-draw confirmatory necessary-condition analysis (N=350 coded) ===
 2x2 (gap_any x p45_any), outcome-uncertain set aside (55):
   n11=15  n10=88  n01=14  n00=178
@@ -231,8 +231,8 @@ warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match 
   [reported, NOT headlined] sufficiency P(fail|gap) = 0.146
   NCA safe-harbor cell empty: False
 >>> Power analysis / registered N...
-warning: The `tool.uv.dev-dependencies` field (used in `/Users/d/projects/orgschema-papers/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `/Users/d/projects/orgschema-papers/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
+warning: The `tool.uv.dev-dependencies` field (used in `<repo>/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `<repo>/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
 ok  CP(0,60) = 0.0487 (~0.0487)
 ok  CP(0,100) = 0.0295 (~0.0295)
 ok  CP monotone in k: [0.0295, 0.0466, 0.0616, 0.0757, 0.0892, 0.1023]
@@ -246,7 +246,7 @@ Reproduction complete: 2026-08-07T11:03:26Z
 >>> [multi-llm-coding-instrument] invoking per-paper reproduce.sh
 === Instrument reproduction: 2026-08-07T11:03:27Z ===
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Resolved 17 packages in 4ms
 Checked 15 packages in 2ms
 >>> Fixture self-check...
@@ -351,7 +351,7 @@ Necessary-condition + safe-harbor re-analysis (EXPLORATORY; Fork E)
 >>> [tier-bundle-algebra] invoking per-paper reproduce.sh
 === tier-bundle-algebra reproduction: 2026-08-07T11:03:28Z ===
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=/Users/d/projects/spectral-branding/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 Resolved 17 packages in 4ms
 Checked 15 packages in 2ms
 >>> Fixture self-check...

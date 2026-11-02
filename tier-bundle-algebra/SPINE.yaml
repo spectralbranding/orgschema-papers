@@ -14,7 +14,7 @@
 # the empirical pass is supporting, not the core claim.
 
 spine_version: "0.1"
-spine_doc_version: "0.4.0"
+spine_doc_version: "0.5.0"
 paper_key: "tier-bundle-algebra"
 provenance: generative
 title: >-
@@ -578,6 +578,49 @@ propositions:
         citation_role: contrast_case
     body_sections: ["Boundary Conditions", "Discussion — Limitations"]
 
+  - id: C3
+    statement: >-
+      Scope of Assumption A: the Owner Ontology — the stakeholder ontology of
+      the owner, the tier-1 stakeholder, in which Owner Intent is phrased — is
+      Tier 1 content and is replaced with it; the buyer reads the asset in the
+      buyer's own ontology. Only the shareable part of the seller's Owner
+      Ontology (the seller's terms as used in the records, verbatim, together
+      with the list of ontology-dependent records) can cross the boundary, as a
+      document; the private part (deliberate absences, causal beliefs, sources
+      of the edge, values, and the judgement of people) exits with the
+      seller-principal. The Tier-1 tier record is accordingly stated as stated
+      purpose, horizon, and exit criteria phrased in the Owner Ontology.
+    antecedents: [P1, P2]
+    body_sections: ["Preliminaries (Assumption A)", "Fork Operations and Tier-Bundles (tier record)"]
+
+  - id: C4
+    statement: >-
+      Remark on the replace token, outside the token's definition: replace may
+      carry one attachment, a read-only fork of the shareable part of the
+      seller's Owner Ontology, taken as a document and not as a fork of Tier 1,
+      which lets the buyer read the Tier 2 to Tier 6 records that depend on it.
+      The attachment does not transfer the Owner Ontology itself, and its
+      absence leaves those ontology-dependent records forked but unreadable in
+      the seller's sense. No token is introduced; the fork operators, the
+      cascade rule, and the admissibility rules are unchanged.
+    antecedents: [P2, C3]
+    body_sections: ["Fork Operations and Tier-Bundles (Tier 1 tokens, remark)"]
+
+  - id: C5
+    statement: >-
+      Third record case: a record that exists but whose meaning depends on the
+      seller's Owner Ontology stands beside a record that exists and a record
+      constituted by intention rather than by realized events. The predicate
+      has its input, but the buyer's reading of that input depends on whether
+      the shareable part of the seller's Owner Ontology was transferred with
+      the replace token. The case adds no verdict to the predicate and no term
+      to the algebra. Replace also leaves the seller's Owner Ontology with the
+      seller: where Tier 2 to Tier 6 records are ontology-dependent, the 1-1
+      forks carry records the buyer reads only through the shareable part, or
+      translates into its own ontology with loss.
+    antecedents: [C2, C3, C4, P6]
+    body_sections: ["Bundle-Signature Taxonomy (Table 3 notes)", "Boundary Conditions"]
+
   - id: L1
     statement: >-
       This is a theoretical contribution; the cascade rule and admissibility
@@ -666,6 +709,17 @@ propositions:
     antecedents: [C2, P6]
     affects: [P6]
     body_sections: ["Discussion — Limitations"]
+  - id: L4
+    statement: >-
+      The registered-before-data ordering of the case-coding program rests on
+      the commit record of the author's private working repository: the
+      pre-registration was committed on 2026-05-19 and the first coded result
+      on 2026-07-29. Its first public copy appeared together with the results,
+      so the public record alone does not establish the ordering; the
+      pre-registration's Amendment 7 records both commit identifiers.
+    antecedents: [P6]
+    affects: [P6]
+    body_sections: ["Data and Code Availability"]
 
 # ============================================================================
 # Cross-paper engagement (explicit, per protocol)

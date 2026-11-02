@@ -110,7 +110,8 @@ owns:
       The share of ordinary operation that is written down in artifacts independent of any person —
       procedures, manuals, specifications, quality-system documentation, process encoded in systems.
       The pre-transition investment that converts person-carried residual into artifact continuity
-      (A), and therefore the one that raises value under removal.
+      (A), and therefore the one that raises value under removal. It includes the shareable part of
+      the Owner Ontology once that part is written down.
     first_section: "The Testable Signature"
 
   - term_key: acquirer-operating-posture
@@ -148,4 +149,9 @@ imports:
   - {term_key: tier-6-organization}
   - {term_key: tier-rotation}
   - {term_key: constrained-tier-rotation}
+  - {term_key: owner-ontology}
+  - {term_key: stakeholder-ontology}
+  - {term_key: owner-ontology-shareable-part}
+  - {term_key: owner-ontology-private-part}
+  - {term_key: ontology-dependent-records}
 

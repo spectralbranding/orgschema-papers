@@ -45,6 +45,11 @@ imports:
   - {term_key: tier-4-product}
   - {term_key: tier-5-process}
   - {term_key: tier-6-organization}
+  - {term_key: owner-ontology}
+  - {term_key: stakeholder-ontology}
+  - {term_key: owner-ontology-shareable-part}
+  - {term_key: owner-ontology-private-part}
+  - {term_key: ontology-dependent-records}
 
 refines: []
 

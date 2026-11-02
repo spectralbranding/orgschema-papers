@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.21868658](https://doi.org/10.5281/zenodo.21868658)
 
-Working Paper v1.0.0 – August 2026
+Working Paper v1.1.0 – August 2026 (revised November 2026)
 
 ---
 
@@ -52,9 +52,9 @@ One boundary of that claim should be conceded now. A residual distributed across
 
 **Legal continuity (L).** The component is carried by the registered entity in which the business sits, and survives any event in which the going concern is not conveyed to a counterparty: the same entity keeps its own contracts, permissions and standing. Conveyance disturbs it whether effected by transferring the shares or by transferring the assets into a new vehicle — in the second case the seller's registered entity survives the transaction, but the business it carried does not survive inside it. The business entity by construction; the contracted part of the business model.
 
-**Artifact continuity (A).** The component is carried by an inspectable object existing independent of any particular person — a specification, a document, a codebase, a standard operating procedure. The specified part of the product; the codified part of process.
+**Artifact continuity (A).** The component is carried by an inspectable object existing independent of any particular person — a specification, a document, a codebase, a standard operating procedure. The specified part of the product; the codified part of process. One component of Tier 1 is carried here once it is written down: the shareable part of the Owner Ontology. The Owner Ontology is the stakeholder ontology of the owner, who is the tier-1 stakeholder, and it is a different object from the six-tier ontology of a business, which is the analyst's structure this paper classifies. Its shareable part is the owner's terms as used in the records, verbatim, together with the list of ontology-dependent records, meaning the records whose meaning depends on the Owner Ontology.
 
-**Person continuity (P).** The component is carried in the state of a particular human being and does not survive that person's departure. Owner intent by definition; the tacit part of the product; the uncodified part of process; organization in the strong sense of the *particular* people.
+**Person continuity (P).** The component is carried in the state of a particular human being and does not survive that person's departure. Owner intent by definition; the tacit part of the product; the uncodified part of process; organization in the strong sense of the *particular* people. The private part of the Owner Ontology is carried here: deliberate absences, causal beliefs, sources of the edge, values and the owner's judgement of people, which generate the firm's future records. The Owner Ontology therefore splits between A and P, and owner intent stays under P.
 
 Nothing here is new. The published transfer column is exactly the statement that L and A arrive in a buyer's possession and P does not. It is decomposed this way so that the second column can be derived from the same primitives rather than asserted beside them.
 
@@ -71,6 +71,8 @@ Run the same test against removal — the going concern conveyed to an acquirer 
 **P3.** In the two cases just tested, removal — the going concern conveyed to an acquirer supplying its own operating principal — disturbs legal continuity and prices artifact continuity, while replacement disturbs only person continuity. Those two events therefore bind on different tiers. The claim is stated over the two cases and not over the event names: where the going concern is conveyed to a buyer who must acquire the person-carried residual instead, both disturbances occur together and neither clause of P3 holds alone.
 
 Under removal so understood, the person-carried column is not a constraint to be relieved but a quantity to be minimized. Under replacement it is the only thing at risk. The divergence result thus arrives as a corollary of P2 rather than as a second claim, which is strictly stronger than asserting it.
+
+The Owner Ontology divides along the same line. A buyer that supplies its own principal needs the shareable part only, to read the records it acquires; it then works in its own ontology, and the private part is written off with the rest of the person-carried column. A successor needs the shareable part for the same reason and, beyond it, as much of the private part as the incumbent chooses to pass on, which only exposure transfers.
 
 ### *Two facts, not two events.*
 
@@ -144,6 +146,12 @@ The second contribution is a resource-allocation claim, not a claim about knowle
 The shared input is the incumbent's own time, and its being shared is a consequence of the population rather than an assumption imposed on it: in an owner-operated firm the person who holds the residual is simultaneously the only person who could document it and the only person who could teach it. That identity does not hold in a large firm, which is precisely why this paper's population is not the executive-succession population.
 
 Codification and personal transfer are therefore **complements as knowledge and rivals as investments**. Both statements are needed. Dropping the first makes the claim false; dropping the second makes it uninteresting.
+
+**Remark on P6.** Three further points sit on P6 without changing it, and none is a new proposition. First, the two parts of the Owner Ontology fall on the two sides of the trade-off. Writing the shareable part is the one codification that serves both arms, because a buyer and a successor must each read the existing records; it converts person-carried residual into artifact and counts toward documentation coverage. Passing on the private part is exposure and serves only the succession arm.
+
+Second, the residual that binds under replacement is relative to the successor. An owner-operated firm has been selected to run well under its owner's own way of resolving exceptions, so the residual is the part of that handling which the successor's own rules do not reproduce. A successor from the same industry already covers the decisions that industry practice resolves, and what remains is the owner-shaped part. The same firm therefore carries a larger residual for a successor from outside the industry than for one from inside it. This restates the absorptive-capacity condition given below as a quantity that a measure could estimate.
+
+Third, P6 names two uses of the incumbent's time, and a third changes the firm instead of the knowledge about it: an owner-shaped decision rule is replaced by one that ordinary industry practice already supplies, such as a standard role, contract form, procedure or supplier. This shrinks the residual that either event must carry, so it serves both arms, as writing the shareable part does. Its cost is that the firm may lose whatever edge the owner-shaped rule gave. The third use is stated here and not tested.
 
 ### *What the vocabulary does and does not supply.*
 
@@ -293,6 +301,8 @@ A second obstacle is structural rather than a matter of gaps. The best available
 
 This is offered as part of the contribution and not as an apology. A theory whose two terms are invisible to every instrument the field has built is a theory the field could not have tested, and the audit converts "this has not been shown" from an objection into a prediction that the audit confirms. It also names what would have to be built: one instrument, administered before the path is known, measuring documented coverage of ordinary operation and the within-firm rate at which operation throws uncovered cases. The second of those has no precedent to adopt, and this paper does not design it.
 
+A different kind of measure is proposed for the owner-shaped part of the residual described in the remark on P6, and it has not been run. In a decision replay the incumbent selects 20 to 30 past exception decisions and records the choice made in each; an industry practitioner from outside the firm decides the same cases without documentation and then with it. The share the practitioner fails to reproduce without documentation estimates the owner-shaped residual, the gain with documentation estimates what codification can carry, and the remainder is what only exposure transfers. It is a case-level measure and not the firm-level instrument that P7 says does not exist, so P7 is unaffected; it is offered as a direct measure of one of the two terms that the existing instruments leave unmeasured, and no result is reported here.
+
 ## Discussion
 
 ### *What follows if the signature holds.*
@@ -339,7 +349,7 @@ Finally, a measurement risk that applies to any documentary operationalization o
 
 **Machine-readable specification.** The paper's structured record — propositions, derivations, boundary conditions, limitations and citation edges — is published alongside the text as `paper.yaml` in the same repository.
 
-**Archival identifiers.** Concept DOI (version-agnostic): [10.5281/zenodo.21868658](https://doi.org/10.5281/zenodo.21868658). Version DOI for v1.0.0: [10.5281/zenodo.21868659](https://doi.org/10.5281/zenodo.21868659). The version identifier is what an exact-version retrieval needs and appears nowhere else in this paper.
+**Archival identifiers.** Cite the concept DOI (version-agnostic): [10.5281/zenodo.21868658](https://doi.org/10.5281/zenodo.21868658). This text is v1.1.0, and the concept DOI resolves to the latest version. The version DOI of v1.1.0 is assigned when that version is deposited and is not stated here. Version DOI for v1.0.0, the earlier text: [10.5281/zenodo.21868659](https://doi.org/10.5281/zenodo.21868659). The version identifier is what an exact-version retrieval needs and appears nowhere else in this paper.
 
 ## Acknowledgments
 

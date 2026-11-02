@@ -6,8 +6,8 @@ authors:
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0000-6893-9231"
 title: "The Projection Cascade: Why Reorganizations Fail When the Specification Cascade Doesn't"
-version: 2.1.0
-date-released: 2026-06-27
+version: 2.2.0
+date-released: 2026-11-02
 url: "https://doi.org/10.5281/zenodo.19145205"
 repository-code: "https://github.com/spectralbranding/orgschema-papers"
 identifiers:

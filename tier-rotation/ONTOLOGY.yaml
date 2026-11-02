@@ -26,6 +26,8 @@ owns:
     canonical_form: "Tier-4 share s"
     definition: "The proportion s in [0,1] of a brand's total observable signal residing in a substrate an acquirer can hold independently of any individual."
     first_section: "Formal Model — Setup and Definitions"
+    relations:
+      - {type: contrasts, term_key: ontology-dependent-records, note: "written versus readable: s counts records the acquirer owns, ontology-dependent records are owned but readable only with the founder's Owner Ontology"}
   - term_key: separability-kink
     label: "Separability kink (kappa)"
     canonical_form: "separability kink kappa"
@@ -48,6 +50,11 @@ imports:
   - {term_key: acquirer-operating-posture}
   - {term_key: personal-brand-substrate}
   - {term_key: constrained-tier-rotation}
+  - {term_key: owner-ontology}
+  - {term_key: owner-ontology-private-part}
+  - {term_key: stakeholder-ontology}
+  - {term_key: owner-ontology-shareable-part}
+  - {term_key: ontology-dependent-records}
 
 refines: []
 
