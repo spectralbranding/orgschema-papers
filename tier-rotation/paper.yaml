@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20069605
-  date: '2026-06-27'
+  date: '2026-11-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -323,9 +323,10 @@ acceptance:
   falsification: Uncorrelated/contradictory observable movement; no association with exit multiple.
 dependencies:
 - relationship: extends
-  claim: Builds directly on the six-tier ontology of organizational transferability (Tier 1 = owner intent
+  claim: 'Builds directly on the six-tier ontology of organizational transferability (Tier 1 = owner intent
     … Tier 4 = product specification). Tier-rotation is the temporal-dynamics theory of how brand signal
-    migrates Tier-1 → Tier-4 that the static ontology presupposes.
+    migrates Tier-1 → Tier-4 that the static ontology presupposes. Also supplies the terms for the second
+    readiness measure d (C10): the Owner Ontology, its shareable part, and ontology-dependent records.'
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: extends
@@ -492,6 +493,9 @@ dependencies:
 - relationship: extends
   claim: 'anchor: takamatsu-2026-history-and-changes'
   reference: takamatsu-2026-history-and-changes
+- relationship: extends
+  claim: 'anchor: kongogumi-2026-company-history'
+  reference: kongogumi-2026-company-history
 - relationship: extends
   claim: 'anchor: park-2026-millenniumlong-family-firms'
   doi: 10.1108/JMH-03-2026-0041

@@ -18,7 +18,7 @@ companion_to:
 public_mirror_planned: "orgschema-papers/tier-bundle-algebra/PREREGISTRATION_V1.md (when public scaffold is created at v1.0)"
 target_venue: (working paper; venue omitted for the public release)
 
-backup_venue: [venue omitted] ([venue omitted])
+backup_venue: "(venue omitted for the public release)"
 amendments:
   - id: 1
     date: 2026-07-29
@@ -43,6 +43,10 @@ amendments:
     date: 2026-07-29
     type: sourcing-method
     summary: "Sourcing method SET (author decision 2026-07-29) to verified public-source dossiers. (1) EVIDENTIARY STANDARD: every coded field in a case dossier must be traceable to a cited public primary source (SEC EDGAR filing 8-K/S-4/DEFM14A/10-K; company release; or a reliable public press archive FT/WSJ/Reuters/Bloomberg/NYT); any fact not so verifiable is flagged UNVERIFIED and never guessed (corpus anti-fabrication HARD rule). (2) SAMPLING-FRAME SUBSTITUTION: the n=16 extension is drawn not from the inaccessible HBR case-collection catalogue but from the SEC-EDGAR-enumerable frame of completed US public-company acquisitions with an S-4 or DEFM14A filed 1995-2020 and disclosed deal value >= $1bn, enumerated via EDGAR full-text search (efts.sec.gov); seed unchanged (20260520), same Mersenne-Twister without-replacement procedure; sampled list committed to EXTENSION_SAMPLE_n16.md BEFORE any dossier is built. Non-US anchor cases (e.g. Daimler-Chrysler, elBulli) remain in the 14-anchor tier. (3) The performance-stratification and blinding provisions of CASE_CODING_PROTOCOL.md sec.5 are retained; blinding of the AI coders to anchor-vs-extension status is approximated by presenting each coder only the dossier, never this document. This is the path-(b) option named in the Coding-phase status section; it is a deviation from the sec.3 primary-source-dossier default recorded here transparently before coding begins."
+  - id: 7
+    date: 2026-11-02
+    type: anchor-verifiability
+    summary: "Verifiability of the registration anchor (correction; no design change). The frontmatter names as anchor a commit in the author's private working repository, which a reader cannot inspect. The record: this document was first committed on 2026-05-19T21:00:34+03:00 in commit a955811b82d39c22415dcbe2339fbf6daed4cc74 (git blob of this file at that commit: 72ca97d56126a25ca330c35864337bd461e0804b); the first commit that landed case-coding results is 057135f887c36b09dc1012a10dbe96d624bcb5a6 (2026-07-29T08:48:19+02:00). The locked body (sections 1-7 and Appendices A-C) is unchanged from the 2026-05-19 text. The first public copy, public mirror commit 8fcb295679dfd670a5df2d7f3a12785d38613a6b (2026-08-02T09:59:39+02:00), already contained the coded results, so the public record alone does not establish registered-before-data; the two private commits above are the evidence for the ordering and can be inspected only with access to that repository. Hypotheses, coding scheme, statistical plan and results unchanged."
 ---
 
 # Pre-registration: Tier-Bundle Algebra v1.0 empirical pass
@@ -342,6 +346,14 @@ block; summarized here for readability.
   1995-2020, >= $1bn), seed 20260520 unchanged. Resolves the
   Coding-phase status gate. Coding may begin once EXTENSION_SAMPLE_n16.md
   is drawn and dossiers are built to the evidentiary standard.
+- **Amendment 7 (2026-11-02, verifiability of the anchor).** The registration
+  anchor is a commit in the author's private working repository, so a reader
+  cannot check it. Recorded for verification: registration commit
+  `a955811b82d39c22415dcbe2339fbf6daed4cc74` (2026-05-19), first results commit
+  `057135f887c36b09dc1012a10dbe96d624bcb5a6` (2026-07-29); the locked body is
+  unchanged since 2026-05-19. The first public copy (mirror commit `8fcb295`,
+  2026-08-02) already contained the results, so the public record alone does
+  not establish registered-before-data. No design or result changed.
 
 ## Coding-phase status (2026-07-29) — document-access gate
 

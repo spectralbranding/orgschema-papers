@@ -374,6 +374,54 @@ propositions:
         anchor: "Battilana & Lee 2014 (mission drift on non-mission acquisition)."
         citation_keys: []
 
+  - id: P14
+    statement: >-
+      Owner Intent is phrased in the Owner Ontology: the controlling principal's account of
+      what exists in the business, what its basic terms mean, what is connected to what, and
+      what is absent. The Owner Ontology is one of the stakeholder ontologies of the business,
+      that of the Tier 1 stakeholder, and it is Tier 1 content carried by the same principal,
+      not a seventh tier. It fixes the terms in which questions about the business are worded;
+      Owner Intent fixes which questions are asked. Every stakeholder of the business has a
+      stakeholder ontology of it, and the six-tier ontology of a business is the common
+      language into which these stakeholder ontologies are translated. The Owner Ontology
+      differs from dominant logic, the schema shared by top managers through which they
+      conceptualize the business and allocate resources: it is the controlling principal's own
+      account, recorded in the principal's words, and the paper's interest in it is its division
+      into a shareable and a private part at transfer.
+    antecedents: [P4]
+    body_sections: ["The Six-Tier Ontology (Table 1 notes)", "Tier 1 — Owner Intent"]
+    evidence:
+      - type: citation
+        anchor: "Prahalad & Bettis 1986 define dominant logic as the way top managers conceptualize the business and make critical resource-allocation decisions; the distinction drawn here is from that construct."
+        citation_keys: ["prahalad-1986-dominant-logic-new"]
+
+  - id: P15
+    statement: >-
+      The Owner Ontology attaches to the principal and exits with the principal, as Owner
+      Intent does, with one qualification: records on Tiers 2 through 6 were written in its
+      terms, and some of them, the ontology-dependent records, cannot be read correctly without
+      it. The Owner Ontology therefore divides into a shareable part (the owner's terms as used
+      in the records, verbatim, and the list of ontology-dependent records), which can pass to
+      a buyer or successor as a document, and a private part (deliberate absences, causal
+      beliefs, sources of the edge, values, judgement of people), which generates future records
+      and stays with the principal unless the principal chooses to pass it on. Only the
+      shareable part can cross to the asset side.
+    antecedents: [P4, P14]
+    body_sections: ["Tier 1 — Owner Intent (Attribution refinement; Figure 1)"]
+    evidence: []
+
+  - id: P16
+    statement: >-
+      The Fused / Partial / Independent states of the diagnostic measure whether records exist
+      outside the owner's head; they do not measure whether written records can be read without
+      the Owner Ontology. A tier can be Independent and still depend on the Owner Ontology when
+      its records use the owner's terms in senses a reader outside the firm does not share. The
+      share of such ontology-dependent records is a second readiness measure beside fusion, and
+      the shareable part of the Owner Ontology is the instrument that lowers it.
+    antecedents: [P12, P15]
+    body_sections: ["The Six-Question Diagnostic (Table 4 notes)"]
+    evidence: []
+
 # ============================================================================
 # Boundary conditions — where the framework's claims hold cleanly
 # ============================================================================
@@ -495,6 +543,14 @@ limitations:
     severity: "future-work"
     affects: [P12]
     body_sections: ["Validation and Future Research Agenda"]
+  - id: L4
+    statement: >-
+      Dispersed ownership also multiplies ontologies: co-principals may word the same Intent in
+      different stakeholder ontologies, and the framework as stated assumes a single Owner
+      Ontology.
+    severity: "scope-bounding"
+    affects: [P14, P15, P16]
+    body_sections: ["Limitations (Multi-principal Intent configurations)"]
 
 # ============================================================================
 # Cross-paper engagement (real corpus keys)
@@ -570,6 +626,7 @@ external_anchors:
   - {citation_key: "", role: stock_flow_accumulation, spine_nodes: [P10], note: "Dierickx & Cool 1989 + Mizik & Jacobson 2003/2009 — stock-flow asset accumulation and equity-value consequences."}
   - {citation_key: "", role: prior_layered_ontology, spine_nodes: [P3], note: "Zachman 1987 / Osterwalder 2004 / BIZBOK 2024 / Dietz 2006 — partial precedents distinguished from."}
   - {citation_key: "boycko-1996-theory-of-privatisation", role: goal_layer_substitution, spine_nodes: [L2], note: "Boycko, Shleifer & Vishny 1996 — the public enterprise pursues the objectives of the political principals controlling it, and privatisation replaces that objective function with profit-maximising ownership. Anchors the Tier 1 entry of the state-owned/public column as a goal-layer substitution with privatization as the substituting event. Supports the POLITICAL-PRINCIPAL reading only, not a normative public-service mandate."}
+  - {citation_key: "prahalad-1986-dominant-logic-new", role: dominant_logic_distinction, spine_nodes: [P14], note: "Prahalad & Bettis 1986 — dominant logic, the way top managers conceptualize the business and make critical resource-allocation decisions. Used to distinguish the Owner Ontology (the controlling principal's own account, recorded in the principal's words) from the shared managerial schema; it supports nothing about transfer at exit or about stakeholder positions other than top management."}
   - {citation_key: "", role: form_invariance_anchor, spine_nodes: [P8, P13], note: "Hansmann 1996 + Battilana & Lee 2014 — ownership-form substitutions / hybrid mission drift."}
   - {citation_key: "", role: integration_pathology, spine_nodes: [P11], note: "Larsson & Finkelstein 1999 + Jemison & Sitkin 1986 — inadequate org integration / the activity trap (the inverted modal sequence)."}
   - {citation_key: "", role: contingent_consideration, spine_nodes: [C3], note: "Kohers & Ang 2000 + Ragozzino & Reuer 2009 — earn-outs as a response to valuation disagreement and information asymmetry in privately held targets, and as a retention device; the established account the posture conditioning complements rather than reverses."}

@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19895813
-  date: '2026-06-26'
+  date: '2026-11-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -290,49 +290,96 @@ claims:
   depends_on:
   - P8
   - P11
+- id: P14
+  type: proposition
+  statement: 'Owner Intent is phrased in the Owner Ontology: the controlling principal''s account of what
+    exists in the business, what its basic terms mean, what is connected to what, and what is absent.
+    The Owner Ontology is one of the stakeholder ontologies of the business, that of the Tier 1 stakeholder,
+    and it is Tier 1 content carried by the same principal, not a seventh tier. It fixes the terms in
+    which questions about the business are worded; Owner Intent fixes which questions are asked. Every
+    stakeholder of the business has a stakeholder ontology of it, and the six-tier ontology of a business
+    is the common language into which these stakeholder ontologies are translated. The Owner Ontology
+    differs from dominant logic, the schema shared by top managers through which they conceptualize the
+    business and allocate resources: it is the controlling principal''s own account, recorded in the principal''s
+    words, and the paper''s interest in it is its division into a shareable and a private part at transfer.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P4
+- id: P15
+  type: proposition
+  statement: 'The Owner Ontology attaches to the principal and exits with the principal, as Owner Intent
+    does, with one qualification: records on Tiers 2 through 6 were written in its terms, and some of
+    them, the ontology-dependent records, cannot be read correctly without it. The Owner Ontology therefore
+    divides into a shareable part (the owner''s terms as used in the records, verbatim, and the list of
+    ontology-dependent records), which can pass to a buyer or successor as a document, and a private part
+    (deliberate absences, causal beliefs, sources of the edge, values, judgement of people), which generates
+    future records and stays with the principal unless the principal chooses to pass it on. Only the shareable
+    part can cross to the asset side.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P4
+  - P14
+- id: P16
+  type: proposition
+  statement: The Fused / Partial / Independent states of the diagnostic measure whether records exist
+    outside the owner's head; they do not measure whether written records can be read without the Owner
+    Ontology. A tier can be Independent and still depend on the Owner Ontology when its records use the
+    owner's terms in senses a reader outside the firm does not share. The share of such ontology-dependent
+    records is a second readiness measure beside fusion, and the shareable part of the Owner Ontology
+    is the instrument that lowers it.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P12
+  - P15
 methodology:
   type: theoretical
   design: Theoretical derivation.
 acceptance:
 - claim_id: P1F
-  criterion: 'Holds if p1 (Intent-Model Misalignment): when an acquirer''s Owner Intent differs structurally
+  criterion: 'Holds if P1 (Intent-Model Misalignment): when an acquirer''s Owner Intent differs structurally
     from the target''s, the target''s Business Model requires fundamental revision, generating downstream
     Tier 4/Tier 5 friction not visible in pre-close due diligence.'
   falsification: For-profit acquisitions of mission-primary targets show no greater rate of Model revision
     / downstream disruption than financially equivalent for-profit-to-for-profit deals.
 - claim_id: P2F
-  criterion: 'Holds if p2 (Business Model-Product Friction): an imposed Model revision drifts the Product
+  criterion: 'Holds if P2 (Business Model-Product Friction): an imposed Model revision drifts the Product
     specification toward the new Model''s optimization criteria, and customers anchored in the prior dimensional
     configuration churn above pre-acquisition baselines.'
   falsification: No systematic association between Model revision and product attribute drift across completed
     acquisitions with matched pre/post-close data.
 - claim_id: P3F
-  criterion: 'Holds if p3 (Entity-Operations Disruption): Entity restructuring following close disrupts
+  criterion: 'Holds if P3 (Entity-Operations Disruption): Entity restructuring following close disrupts
     operational continuity at Tiers 5 and 4 via contract renegotiation, regulatory re-certification, and
     counterparty uncertainty disproportionate to the restructuring''s legal scope.'
   falsification: No significant association between Entity restructuring and operational-continuity disruption.
 - claim_id: P4F
-  criterion: 'Holds if p4 (Product-Process Disruption): revising the Product specification misaligns the
+  criterion: 'Holds if P4 (Product-Process Disruption): revising the Product specification misaligns the
     Process architecture built for the prior Product, generating quality failures or cost overruns until
     Process is rebuilt around the new spec — compounded by the impossibility of fully specifying Product
     requirements and the tacit residuals documentation cannot eliminate.'
   falsification: No systematic association between Product revision and quality/cost variance, controlling
     for baseline Process maturity.
 - claim_id: P5F
-  criterion: 'Holds if p5 (Process-Organization Fracture): imposing Process integration on the acquired
+  criterion: 'Holds if P5 (Process-Organization Fracture): imposing Process integration on the acquired
     Organization before Tier 4 specification clarity is established produces employee resistance and attrition
     exceeding rates when Process integration follows Product confirmation.'
   falsification: No systematic difference in attrition between Product-first and Process-first sequencings
     in matched samples.
 - claim_id: P6F
-  criterion: 'Holds if p6 (Organization Fracture to All-Layer Degradation): when key Organization members
+  criterion: 'Holds if P6 (Organization Fracture to All-Layer Degradation): when key Organization members
     exit post-acquisition, the tacit knowledge they carried degrades across all six tiers at rates retention
     bonuses or post-exit documentation cannot recover, because Tier 6 is the sole repository of tacit
     specification knowledge never externalized to Tier 4/5 surfaces.'
   falsification: Acquisitions with high pre-close codification show the same all-layer degradation rate
     following executive turnover as low-codification ones.
 - claim_id: P7F
-  criterion: 'Holds if p7 (Bidirectional Feedback): sustained lower-tier failure crossing a duration-and-severity
+  criterion: 'Holds if P7 (Bidirectional Feedback): sustained lower-tier failure crossing a duration-and-severity
     threshold (Tier 5/6 fracture >= 12 months depressing Tier 3 revenue >= 10% from deal thesis) forces
     upward revision — documented Tier 2 Model revision within 24 months, and conditionally documented
     Tier 1 Intent revision (write-down/divestiture/strategic-review) within a further 12 months.'
@@ -392,6 +439,12 @@ dependencies:
     with privatization as the substituting event. Supports the POLITICAL-PRINCIPAL reading only, not a
     normative public-service mandate.
   doi: 10.2307/2235248
+- relationship: extends
+  claim: Prahalad & Bettis 1986 — dominant logic, the way top managers conceptualize the business and
+    make critical resource-allocation decisions. Used to distinguish the Owner Ontology (the controlling
+    principal's own account, recorded in the principal's words) from the shared managerial schema; it
+    supports nothing about transfer at exit or about stakeholder positions other than top management.
+  doi: 10.1002/smj.4250070602
 contradictions: []
 limitations:
 - description: 'The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end empirical support;
@@ -422,6 +475,10 @@ limitations:
     be SPECIFIED — as a screen-validation design rather than a strong-predictor test — and the instrument
     companion supplies a measurement discipline, itself an instance of an established external content-analysis
     standard rather than a substitute for it.'
+  severity: moderate
+  addressable: true
+- description: 'Dispersed ownership also multiplies ontologies: co-principals may word the same Intent
+    in different stakeholder ontologies, and the framework as stated assumes a single Owner Ontology.'
   severity: moderate
   addressable: true
 repositories:

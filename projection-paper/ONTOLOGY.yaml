@@ -30,6 +30,9 @@ owns:
 imports:
   - {term_key: non-ergodic-perception}
   - {term_key: six-tier-ontology}
+  - {term_key: stakeholder-ontology}
+  - {term_key: owner-ontology}
+  - {term_key: ontology-dependent-records}
 
 refines: []
 

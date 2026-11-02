@@ -42,6 +42,18 @@ _Terms used by **2026ai** (The Tier-Rotation Curve: A Theory of Brand-Substrate 
   - The receiver-side object that collapses a brand signal into a conviction. Five components: spectrum, weights, tolerances, priors, and an identity gate. Cohorts are observers, not consumers.
   - _defined by 2026a_
   - _not_: consumer profile
+- **ontology-dependent records**
+  - Records whose meaning depends on the Owner Ontology, so that a reader outside the firm cannot read them correctly without it. Their share is a readiness measure beside fusion.
+  - _defined by 2026ag_
+- **Owner Ontology**
+  - The stakeholder ontology of the controlling party (the Tier 1 stakeholder): the terms in which Owner Intent is phrased and most of the firm's records are written. Tier 1 content carried by the same principal as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in which questions about the business are worded, and Owner Intent fixes which questions are asked.
+  - _defined by 2026ag_
+- **private part**
+  - The part of the Owner Ontology that generates future records: deliberate absences, causal beliefs, sources of the edge, values, and judgement of people. It stays with the owner and passes to a successor only by the owner's choice.
+  - _defined by 2026ag_
+- **shareable part**
+  - The part of the Owner Ontology that is the reading key to existing records: the owner's terms as used in the records, verbatim, and the list of ontology-dependent records. It can pass to a buyer or successor as a document.
+  - _defined by 2026ag_
 - **perception cloud**
   - The distribution of brand convictions across an observer population for a brand. Distributional, not a single fixed referent; "cloud" alone is acceptable in context. Has a valence (positive / negative / ambivalent).
   - _defined by 2026a_
@@ -50,7 +62,10 @@ _Terms used by **2026ai** (The Tier-Rotation Curve: A Theory of Brand-Substrate 
   - A person modeled as a maximally tier-collapsed brand substrate: the case of the six-tier ontology in which Owner Intent (Tier 1), Business Entity (Tier 3), and Product (Tier 4) are all carried by one natural person and cannot be separated, so the person is simultaneously the brand's controlling intent and its product. It is the personal-brand boundary of the tier-collapse pattern named for the Domain Craftsman / sole-proprietor in the six-tier ontology (2026ag).
   - _defined by personal-brand-substrate_
 - **six-tier ontology**
-  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
+  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it.
+  - _defined by 2026ag_
+- **stakeholder ontology**
+  - A picture of what exists in an activity, what its basic terms mean, what is connected to what, and what is absent, as written from one named position (owner, manager, employee, customer, lender, regulator, buyer, successor), recorded in that position's own words.
   - _defined by 2026ag_
 - **Tier 1 (Owner Intent)**
   - Why the organization exists. Governed by founder / board chair / dominant shareholder; implicit or off-table in most professional-CEO companies. Transfers nothing directly, only its imprint on lower tiers.

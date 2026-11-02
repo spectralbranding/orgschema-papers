@@ -166,6 +166,31 @@ boundary_conditions:
       effort and the constrained-rotation curve is a different object from the separable-tier curve
       modelled here.
 
+  - id: C10
+    statement: >-
+      READINESS has a second measure that the model does not carry. s counts signal in a substrate the
+      acquirer can own, and a Tier-4 record written in the founder's own terms is owned by the acquirer
+      and counted in s, but it is read correctly only with the founder's Owner Ontology — the
+      stakeholder ontology of the tier-1 stakeholder. The share d of Tier-4 records that are written
+      but depend on that ontology for their meaning is therefore a measure distinct from 1 - s, which
+      is signal not yet written into any separable substrate: 1 - s asks whether the signal is
+      written, d asks whether what is written is readable. The two can separate, so a brand with high
+      s and high d is further along the rotation path than it is separable in practice. The model
+      treats d as zero; equation 1, V(s) and P1-P5 are unchanged, and d does not enter V(s). The
+      shareable part of the Owner Ontology (the owner's terms as used in the records, verbatim, with
+      the list of ontology-dependent records) lowers d for a buyer. At M&A exit the buyer needs only
+      the shareable part; at succession the successor needs it as well, and also whatever part of the
+      private Owner Ontology the founder chooses to pass on. Codification in the founder's own terms is
+      a second signature of apparent rotation: it raises measured s without raising what a buyer can
+      read.
+    observable: >-
+      The share of key terms in specification documents that are defined only by the founder's usage,
+      and the share of founder-attributed terms in written specifications (founder-language salience
+      as a partial proxy for d as well as for 1 - s).
+    excludes: >-
+      Any use of d as an argument of V(s) or as a sixth proposition: the paper carries d as a stated
+      scope condition and a measurement note, not as a modelled variable.
+
 # ============================================================================
 # Propositions, derivations, and assumption atoms — the argument backbone
 # ============================================================================
@@ -515,12 +540,14 @@ propositions:
 corpus_precedents:
   - paper_key: 2026ag
     relationship: extends
-    spine_nodes: [P1, P4, P6]
+    spine_nodes: [P1, P4, P6, C10]
     note: >-
       Builds directly on the six-tier ontology of organizational transferability
       (Tier 1 = owner intent … Tier 4 = product specification). Tier-rotation is
       the temporal-dynamics theory of how brand signal migrates Tier-1 → Tier-4
-      that the static ontology presupposes.
+      that the static ontology presupposes. Also supplies the terms for the
+      second readiness measure d (C10): the Owner Ontology, its shareable part,
+      and ontology-dependent records.
   - paper_key: 2026ah
     relationship: extends
     spine_nodes: [P1, P2]
@@ -604,6 +631,7 @@ external_anchors:
   - {citation_key: esteelauder-2022-acquisition-tom-ford, role: case_record, spine_nodes: [P_P3]}
   - {citation_key: diageo-2017-acquire-superpremium-casamigos, role: case_record, spine_nodes: [P_P3]}
   - {citation_key: takamatsu-2026-history-and-changes, role: case_record, spine_nodes: [C6]}
+  - {citation_key: kongogumi-2026-company-history, role: case_record, spine_nodes: [C6]}
   - {citation_key: park-2026-millenniumlong-family-firms, role: case_record, spine_nodes: [C6]}
 
 # ============================================================================

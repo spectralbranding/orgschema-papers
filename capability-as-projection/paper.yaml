@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20367459
-  date: '2026-06-26'
+  date: '2026-11-02'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -212,6 +212,64 @@ claims:
   depends_on:
   - P_KAPPA
   - P_LOG
+- id: P_ONT_LOG
+  type: proposition
+  statement: 'Event payloads are written in the terms of the position that records them. In an owner-operated
+    firm most of the log is written in the Owner Ontology, the stakeholder ontology of the controlling
+    principal (what counts as an asset, a customer, a good deal, a risk). The taxonomy T classifies events
+    from the analyst''s position and does not translate their payloads. Each query q is worded in some
+    stakeholder ontology; the controlling principal''s queries are worded in the Owner Ontology, Owner
+    Intent decides which of them are asked, and the Owner Ontology decides how they are worded. The projection
+    pi thus sits in a chain: Owner Ontology, Owner Intent (which selects Q), log L, visible capability
+    C.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P_LOG
+  - P_PROJ
+- id: P_ONT_O2
+  type: proposition
+  statement: 'Determinism conditional on the log (O2) is qualified for ontology-dependent records. Evaluators
+    can produce different claims from the same L and q for four reasons: the log is incomplete, the query
+    is under-specified, an evaluator reads non-log state, or the evaluators read the payloads in different
+    ontologies. Records whose meaning depends on the Owner Ontology (ontology-dependent records) satisfy
+    O2 only for evaluators who have the shareable part of the Owner Ontology: the owner''s terms as used
+    in the records, verbatim, together with the list of such records.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P_PROJ
+  - P_ONT_LOG
+- id: P_ONT_KAPPA
+  type: proposition
+  statement: 'Term conflicts are a source of log incompatibility: two parties'' Owner Ontologies can define
+    the same noun (for example customer or quality) differently, which makes event pairs non-co-incorporable
+    and lowers kappa. A log transferred without the shareable part of the Owner Ontology lies between
+    a snapshot and a rendering: its records are present, but its ontology-dependent records can be re-rendered
+    only in the receiving party''s own terms, which is a translation with loss.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P_KAPPA
+  - P_SNAP
+  - P_ONT_O2
+- id: P_ONT_EDGE
+  type: proposition
+  statement: 'Conjecture, not derived from the formalism and not tested by the three cases. With the reader
+    pi held fixed, a canonical firm''s competitive edge sits in the log L, in the query space Q, and in
+    the ontology in which L is written and Q is asked. An imitator who adopts the canonical firm''s Owner
+    Ontology without its log still fails on novel queries q'', because an ontology can be copied (people
+    move, terms spread) while a log cannot. The conjectured durability ordering of the edge is: log, then
+    ontology, then reader.'
+  testable: true
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P4
+  - P_ONT_LOG
 methodology:
   type: mixed
   design: 'The ex-ante pre-registered event-coding protocol: a fixed five-type taxonomy committed before
@@ -232,19 +290,36 @@ methodology:
     method: Python 3.12 + uv (public mirror code/)
 acceptance:
 - claim_id: P1
-  criterion: Holds if (Paper Proposition P1 — Log-compatible merge preserves projection.
+  criterion: Holds if (Paper Proposition P1 — Log-compatible merge preserves projection.) If kappa(L_A,
+    L_B) > theta_high, post-merge projection continuity is at least .90 for t <= 5 years following the
+    merge for the same query.
   falsification: Clean high-kappa merger with substrate-query discontinuity within 5 years.
 - claim_id: P2
-  criterion: Holds if (Paper Proposition P2 — Snapshot import diverges.
+  criterion: Holds if (Paper Proposition P2 — Snapshot import diverges.) If the acquirer imports a snapshot
+    S_B without merging L_B (acquirer-supreme resolution discarding the target log), then for t > t_0
+    + 3 years the projection diverges from the log-merged counterfactual on any substrate-dependent query.
   falsification: Snapshot-import capability intact beyond 3 years on substrate queries.
 - claim_id: P3
-  criterion: Holds if (Paper Proposition P3 — Joint dependence on log compatibility and integration policy.
+  criterion: 'Holds if (Paper Proposition P3 — Joint dependence on log compatibility and integration policy.)
+    Writedown magnitude in a failed M&A is jointly determined by raw log incompatibility (1 - kappa) AND
+    the acquirer''s chosen conflict-resolution policy: acquirer-supreme amplifies low compatibility into
+    large writedowns; negotiated or target-preserving policies attenuate it. kappa alone underdetermines
+    the outcome; the policy choice is the multiplier.'
   falsification: Inverse kappa-writedown relation at fixed policy, or no attenuation under negotiated
     policy.
 - claim_id: P4
-  criterion: Holds if (Paper Proposition P4 — Projection-only imitation bound.
+  criterion: Holds if (Paper Proposition P4 — Projection-only imitation bound.) An imitator who observes
+    only the projection pi(L, q, t) of a substrate they do not possess cannot replicate capability responses
+    to novel queries q' outside the imitated projection's distribution; imitation success on the original
+    query is not evidence of transfer, only persistence under new q' is.
   falsification: Substrate-free imitator matches canonical on genuinely novel queries over a sustained
     interval.
+- claim_id: P_ONT_EDGE
+  criterion: Holds if conjecture, not derived from the formalism and not tested by the three cases. With
+    the reader pi held fixed, a canonical firm's competitive edge sits in the log L, in the query space
+    Q, and in the ontology in which L is written and Q is asked.
+  falsification: An imitator holding the canonical firm's Owner Ontology but no log matches the canonical
+    firm on genuinely novel queries over a sustained interval.
 dependencies:
 - relationship: extends
   claim: 'The Rendering Problem (brand perception as rendering): brand-as-projection is the special case
@@ -261,7 +336,8 @@ dependencies:
 - relationship: applies
   claim: 'Six-Tier Ontology and acquisition-failure propagation: the append-only log sits beneath all
     six tiers; this paper supplies the substrate layer whose transfer-failure mechanics the tier ontology
-    organizes.'
+    organizes. It also supplies the terms for the stakeholder ontologies, the Owner Ontology among them,
+    in which the log is written and the queries are asked.'
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: extends
@@ -355,6 +431,11 @@ limitations:
     making conflict identification and tie-breaking harder), and replay cost (querying decades of log
     is expensive; the lambda decay parameter is one response but introduces a free parameter that must
     be calibrated).'
+  severity: moderate
+  addressable: true
+- description: 'The Owner Ontology can change over time. A change of Owner Ontology is the owner-side
+    form of schema drift: the terms in which events are written change meaning, so the same recorded term
+    refers to different things before and after the change.'
   severity: moderate
   addressable: true
 repositories:

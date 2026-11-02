@@ -22,6 +22,15 @@ _Terms used by **2026m** (The Projection Cascade: Why Reorganizations Fail When 
   - The property that the time-average of a single observer's brand perception does not equal the ensemble-average across the cohort, so cross-sectional brand measures cannot be substituted for longitudinal ones. A distinct concept from non-stationarity; cite Peters (2019) when using the framing.
   - _defined by 2026o_
   - _not_: non-stationary
+- **ontology-dependent records**
+  - Records whose meaning depends on the Owner Ontology, so that a reader outside the firm cannot read them correctly without it. Their share is a readiness measure beside fusion.
+  - _defined by 2026ag_
+- **Owner Ontology**
+  - The stakeholder ontology of the controlling party (the Tier 1 stakeholder): the terms in which Owner Intent is phrased and most of the firm's records are written. Tier 1 content carried by the same principal as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in which questions about the business are worded, and Owner Intent fixes which questions are asked.
+  - _defined by 2026ag_
 - **six-tier ontology**
-  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
+  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it.
+  - _defined by 2026ag_
+- **stakeholder ontology**
+  - A picture of what exists in an activity, what its basic terms mean, what is connected to what, and what is absent, as written from one named position (owner, manager, employee, customer, lender, regulator, buyer, successor), recorded in that position's own words.
   - _defined by 2026ag_
