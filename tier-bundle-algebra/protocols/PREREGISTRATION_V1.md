@@ -52,7 +52,7 @@ case-coding pass that will test Proposition 6 of the Tier-Bundle
 Algebra paper (Zharnikov 2026, working memo v0.2). It follows the
 GitHub-stored-pre-registration discipline established for the
 Zharnikov corpus — the file is committed to the SSOT
-(`spectral-branding/[internal path omitted]PREREGISTRATION_V1.md`)
+(the author's private working copy)
 *before* any case-coding result is committed; the pre-analysis
 commit's SHA + timestamp is the verifiable anchor.
 

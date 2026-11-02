@@ -227,7 +227,7 @@ a newer model is a reason to keep them, never to change them.
 | Corpus size | **n = 30 cases (3b) as baseline; pre-registered extension to n = 50 if Fisher's exact at n = 30 returns 0.05 ≤ p < 0.20** | n = 30 + ordinal-sub-sample robustness gives ~80% power at moderate effect size; n = 50 extension is the pre-registered fallback. |
 | Statistical test | **Fisher's exact on 3 cells (P6/φ_4→φ_5; P6/φ_5→φ_6; P6/aggregate)** with **Bonferroni α = 0.025** for the two-cell family + **Cramér's V + 95% CI** for effect size. Additional ordinal regression (proportional odds) on the 10-case sub-sample. | Fisher's exact is the reviewer-default at small n; Bonferroni handles multiple testing; effect size + CI satisfy the reviewer expectation that "statistically significant" be paired with "practically meaningful." |
 | Sourcing | **3-5 page evidence dossier per case** drawn from public-record sources only (HBR cases, FT/WSJ/Bloomberg archives, SEC filings); **dossier preserved as supplementary online material** at v1.0 publication. | Allows reviewers to audit each coding decision against the verbatim source data;[venue omitted]reviewers explicitly request this kind of transparency for theoretical-empirical-hybrid papers. |
-| **Pre-registration** | **GitHub-stored pre-registration** at `orgschema-papers/tier-bundle-algebra/PREREGISTRATION_V1.md` (mirror) + `spectral-branding/[internal path omitted]PREREGISTRATION_V1.md` (SSOT). Pre-registered BEFORE any case-coding begins; cited from the v1.0 paper. | GitHub is the same public-SSOT mechanism the corpus already uses (zenodo-deposited papers cite GitHub for code + data). Adopts the pre-registration discipline without requiring an OSF or AsPredicted account. The PREREGISTRATION_V1.md document is git-stamped at the pre-analysis commit; that commit's SHA + timestamp is the verifiable "registered-before-data" anchor. |
+| **Pre-registration** | **GitHub-stored pre-registration** at `orgschema-papers/tier-bundle-algebra/PREREGISTRATION_V1.md` (mirror) + the author's private working copy (SSOT). Pre-registered BEFORE any case-coding begins; cited from the v1.0 paper. | GitHub is the same public-SSOT mechanism the corpus already uses (zenodo-deposited papers cite GitHub for code + data). Adopts the pre-registration discipline without requiring an OSF or AsPredicted account. The PREREGISTRATION_V1.md document is git-stamped at the pre-analysis commit; that commit's SHA + timestamp is the verifiable "registered-before-data" anchor. |
 
 Partner time estimate at the locked protocol: **60-80 partner hours
 total** (30 cases × 1-2 hr verification on majority-vote AI coding +
@@ -315,8 +315,8 @@ All five open questions answered. Locked decisions:
    the conditional fallback.
 3. ✓ **AI coder identity + triple-coding** — Claude + Gemini + Grok
    majority-vote-or-flag; partner adjudicates disagreements.
-4. ✓ **Pre-registration on GitHub** — `spectral-branding/[internal path omitted]
-   empirical_cases_v1/PREREGISTRATION_V1.md` as SSOT (drafted this
+4. ✓ **Pre-registration on GitHub** — the author's private working
+   copy as SSOT (drafted this
    session); mirrored at `orgschema-papers/tier-bundle-algebra/
    PREREGISTRATION_V1.md` when the public scaffold lands. The
    pre-analysis commit's SHA + timestamp is the verifiable
