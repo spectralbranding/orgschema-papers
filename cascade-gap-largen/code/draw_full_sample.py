@@ -57,10 +57,10 @@ Reproducibility (PAQS 37a-e): deterministic given the committed full_draw_frame_
 draw seed 20260729 (Python random.Random / MT19937). Standard library only.
 
 Run (from repo root):
-    uv run python research/cascade-gap-largen/draw_full_sample.py --fixture
-    uv run python research/cascade-gap-largen/draw_full_sample.py --enumerate   # network
-    uv run python research/cascade-gap-largen/draw_full_sample.py --draw
-    uv run python research/cascade-gap-largen/draw_full_sample.py --gate        # network
+    uv run python code/draw_full_sample.py --fixture
+    uv run python code/draw_full_sample.py --enumerate   # network
+    uv run python code/draw_full_sample.py --draw
+    uv run python code/draw_full_sample.py --gate        # network
 """
 
 from __future__ import annotations
@@ -135,7 +135,7 @@ MATERIALITY_MIN_USD = 1_000_000_000.0
 # "instant" -> the CY{year}Q4I balance-sheet frame; "duration" -> the CY{year} annual frame.
 # The proxy is computed from the SEC BULK `frames` API (one call per concept+year returns
 # every filer), NOT per-CIK `companyconcept` calls -- ~39 bulk calls total vs. thousands of
-# per-registrant calls (the pre-optimization bottleneck; see NEXT_SESSION operational note).
+# per-registrant calls (the pre-optimization bottleneck).
 SIZE_CONCEPTS: tuple[tuple[str, str], ...] = (
     ("Assets", "instant"),
     ("Revenues", "duration"),

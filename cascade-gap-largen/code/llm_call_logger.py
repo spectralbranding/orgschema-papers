@@ -1,6 +1,6 @@
 """LLM-call professional logger — single-source schema + JSONL writer + redaction.
 
-Implements feedback_llm_call_professional_logging.md (HARD RULE 2026-05-27):
+Implements the project LLM-call logging rule (adopted 2026-05-27):
 every LLM/model API call in this paper's research work is JSONL-logged in an
 academically-acceptable schema, published on the public GitHub mirror at
 Zenodo upload, and cited in paper.md by GitHub URL.
@@ -22,7 +22,7 @@ Pattern:
         logger.capture_response(response)
     # On exit: writes JSONL row to logs/3.5b_render_PB_abstract_to_chinese_calls.jsonl
 
-Schema (per feedback_llm_call_professional_logging.md):
+Schema (per the project LLM-call logging rule):
 - log_format_version + phase + operation + operator + operator_role + model_version
 - timestamp_utc + system_prompt + user_prompt + parameters
 
@@ -47,7 +47,7 @@ Redaction discipline enforced at write time:
 - Authorization headers stripped
 - Internal-file references (PENDING_UPDATES, SESSION_*_COMPLETION, etc.) flagged
 
-Logs land at <repo>/research/meaning-meaningfulness-empirical/logs/<jsonl-file>.
+Logs land at <paper>/logs/<jsonl-file>.
 """
 
 from __future__ import annotations

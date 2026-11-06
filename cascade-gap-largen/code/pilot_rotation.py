@@ -18,8 +18,8 @@ fills which slot) -- so it is a genuine pre-registration: committed BEFORE the E
 draw and BEFORE any coding call. Deterministic; re-running reproduces the same file.
 
 Run:
-    uv run python research/cascade-gap-largen/pilot_rotation.py --write
-    uv run python research/cascade-gap-largen/pilot_rotation.py --verify
+    uv run python code/pilot_rotation.py --write
+    uv run python code/pilot_rotation.py --verify
 """
 
 from __future__ import annotations

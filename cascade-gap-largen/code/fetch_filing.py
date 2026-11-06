@@ -11,12 +11,12 @@ User-Agent, at a polite 0.2s spacing under the 10 req/s limit.
 
 Usage (from repo root):
   # list a registrant's filings of a form type (optionally a year) to find sources:
-  uv run python research/cascade-gap-largen/fetch_filing.py list <cik> <form[,form]> [year]
+  uv run python code/fetch_filing.py list <cik> <form[,form]> [year]
   # fetch + strip a filing's primary document to pilot_dossiers/_raw/:
-  uv run python research/cascade-gap-largen/fetch_filing.py doc <cik> <accession> [out.txt]
+  uv run python code/fetch_filing.py doc <cik> <accession> [out.txt]
   # target a specific exhibit by filename substring (e.g. the EX-99.1 information
   # statement of a Form 10-12B carve-out, which is NOT the primaryDocument cover):
-  uv run python research/cascade-gap-largen/fetch_filing.py doc <cik> <accession> [out.txt] --name ex99
+  uv run python code/fetch_filing.py doc <cik> <accession> [out.txt] --name ex99
 
 Structural sources = closing-time filings (10-12B info statement / S-4 / DEFM14A /
 Form 10 / 8-K); outcome sources = the 3-5-year-later 10-K / 20-F + press. Fix which

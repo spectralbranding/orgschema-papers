@@ -16,9 +16,9 @@ determine a cell from the dossier must return "uncertain" (anti-fabrication HARD
 rule) -- it is never guessed.
 
 Every model call is logged as JSONL via the corpus llm_call_logger
-(feedback_llm_call_professional_logging: this coding is an EXPERIMENT whose codes
+(project LLM-call logging rule: this coding is an EXPERIMENT whose codes
 land in the paper's Results, so the calls are public-logged). Logs ->
-`research/empirical_cases_v1/logs/`.
+`logs/`.
 
 Outputs:
   - coding_raw/<case_id>_codes.json  (per-model codes + majority + per-cell flags)
@@ -35,7 +35,7 @@ Run (all three coders; injects BWS keys ANTHROPIC_API_KEY / GOOGLE_API_KEY_FreeT
 / GROK_API_KEY into the subprocess only, never the ambient shell):
 
     bws run -- uv run --with anthropic --with google-genai --with openai \\
-        --with matplotlib python research/empirical_cases_v1/triple_code_dossiers.py
+        --with matplotlib python code/triple_code_dossiers.py
 
 Flags:
     --limit N        code only the first N dossiers (smoke test)

@@ -1,228 +1,25 @@
 ==================================================
-Hub pipeline run: 2026-08-07T08:50:02Z
+Hub pipeline run: 2026-11-06T08:07:11Z
 Repo: <repo>
-Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
+Git SHA: 6e05e483ddaeafcfc50b2b36dffc573acb2d49d3
 ==================================================
 >>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
 >>> [capability-as-projection] no reproduce.sh — skipping (paper-only mirror)
 >>> [cascade-gap-largen] invoking per-paper reproduce.sh
 ==================================================
-Cascade-gap reproduction: 2026-08-07T08:50:03Z
+Cascade-gap reproduction: 2026-11-06T08:07:11Z
 Repo: <repo>/cascade-gap-largen
 ==================================================
 >>> Checking dependencies...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Resolved 29 packages in 5ms
-   Building cascade-gap-largen @ file://<repo>/cascade-gap-largen
-Downloading mypy (13.3MiB)
-Downloading ruff (10.1MiB)
-Downloading ast-serialize (1.1MiB)
-  × Failed to build `cascade-gap-largen @
-  │ file://<repo>/cascade-gap-largen`
-  ├─▶ The build backend returned an error
-  ╰─▶ Call to `hatchling.build.build_editable` failed (exit status: 1)
-
-      [stderr]
-      Traceback (most recent call last):
-        File "<string>", line 11, in <module>
-          wheel_filename =
-      backend.build_editable(__import__("os").fsdecode(b"<uv-cache>/builds-v0/.tmpI6SI6G"),
-      {}, None)
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/build.py",
-      line 83, in build_editable
-          return os.path.basename(next(builder.build(directory=wheel_directory,
-      versions=["editable"])))
-      
-      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
-      line 157, in build
-          artifact = version_api[version](directory, **build_data)
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 547, in build_editable
-          return self.build_editable_detection(directory, **build_data)
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 559, in build_editable_detection
-          for included_file in self.recurse_selected_project_files():
-                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
-      line 182, in recurse_selected_project_files
-          if self.config.only_include:
-             ^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
-      line 1126, in __get__
-          val = self.func(instance)
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/config.py",
-      line 715, in only_include
-          only_include = only_include_config.get("only-include",
-      self.default_only_include()) or self.packages
-      
-      ~~~~~~~~~~~~~~~~~~~~~~~~~^^
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 293, in default_only_include
-          return self.default_file_selection_options.only_include
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
-      line 1126, in __get__
-          val = self.func(instance)
-        File
-      "<uv-cache>/builds-v0/.tmpNYAjCk/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 281, in default_file_selection_options
-          raise ValueError(message)
-      ValueError: Unable to determine which files to ship
-      inside the wheel using the following heuristics:
-      https://hatch.pypa.io/latest/plugins/builder/wheel/#default-file-selection
-
-      The most likely cause of this is that there is no directory that matches
-      the name of your project (cascade_gap_largen).
-
-      At least one file selection option must be defined
-      in the `tool.hatch.build.targets.wheel` table, see:
-      https://hatch.pypa.io/latest/config/build/
-
-      As an example, if you intend to ship a directory named `foo` that
-      resides within a `src` directory located at the root of your project,
-      you can define the following:
-
-      [tool.hatch.build.targets.wheel]
-      packages = ["src/foo"]
-
-
-hint: Build failures usually indicate a problem with the package or the build environment==================================================
-Hub pipeline run: 2026-08-07T10:11:48Z
-Repo: <repo>
-Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
-==================================================
->>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
->>> [capability-as-projection] no reproduce.sh — skipping (paper-only mirror)
->>> [cascade-gap-largen] invoking per-paper reproduce.sh
-==================================================
-Cascade-gap reproduction: 2026-08-07T10:11:48Z
-Repo: <repo>/cascade-gap-largen
-==================================================
->>> Checking dependencies...
-warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Resolved 29 packages in 3ms
-   Building cascade-gap-largen @ file://<repo>/cascade-gap-largen
-Downloading ruff (10.1MiB)
-Downloading ast-serialize (1.1MiB)
-Downloading mypy (13.3MiB)
-  × Failed to build `cascade-gap-largen @
-  │ file://<repo>/cascade-gap-largen`
-  ├─▶ The build backend returned an error
-  ╰─▶ Call to `hatchling.build.build_editable` failed (exit status: 1)
-
-      [stderr]
-      Traceback (most recent call last):
-        File "<string>", line 11, in <module>
-          wheel_filename =
-      backend.build_editable(__import__("os").fsdecode(b"<uv-cache>/builds-v0/.tmpga0btf"),
-      {}, None)
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/build.py",
-      line 83, in build_editable
-          return os.path.basename(next(builder.build(directory=wheel_directory,
-      versions=["editable"])))
-      
-      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
-      line 157, in build
-          artifact = version_api[version](directory, **build_data)
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 547, in build_editable
-          return self.build_editable_detection(directory, **build_data)
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 559, in build_editable_detection
-          for included_file in self.recurse_selected_project_files():
-                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py",
-      line 182, in recurse_selected_project_files
-          if self.config.only_include:
-             ^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
-      line 1126, in __get__
-          val = self.func(instance)
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/config.py",
-      line 715, in only_include
-          only_include = only_include_config.get("only-include",
-      self.default_only_include()) or self.packages
-      
-      ~~~~~~~~~~~~~~~~~~~~~~~~~^^
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 293, in default_only_include
-          return self.default_file_selection_options.only_include
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File
-      "<uv-data>/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/functools.py",
-      line 1126, in __get__
-          val = self.func(instance)
-        File
-      "<uv-cache>/builds-v0/.tmpKcORmq/lib/python3.14/site-packages/hatchling/builders/wheel.py",
-      line 281, in default_file_selection_options
-          raise ValueError(message)
-      ValueError: Unable to determine which files to ship
-      inside the wheel using the following heuristics:
-      https://hatch.pypa.io/latest/plugins/builder/wheel/#default-file-selection
-
-      The most likely cause of this is that there is no directory that matches
-      the name of your project (cascade_gap_largen).
-
-      At least one file selection option must be defined
-      in the `tool.hatch.build.targets.wheel` table, see:
-      https://hatch.pypa.io/latest/config/build/
-
-      As an example, if you intend to ship a directory named `foo` that
-      resides within a `src` directory located at the root of your project,
-      you can define the following:
-
-      [tool.hatch.build.targets.wheel]
-      packages = ["src/foo"]
-
-
-hint: Build failures usually indicate a problem with the package or the build environment==================================================
-Hub pipeline run: 2026-08-07T11:03:22Z
-Repo: <repo>
-Git SHA: bff6ccc9c4e6026267c4534cf175ba7f53e33292
-==================================================
->>> [brand-as-modular-layer] no reproduce.sh — skipping (paper-only mirror)
->>> [capability-as-projection] no reproduce.sh — skipping (paper-only mirror)
->>> [cascade-gap-largen] invoking per-paper reproduce.sh
-==================================================
-Cascade-gap reproduction: 2026-08-07T11:03:22Z
-Repo: <repo>/cascade-gap-largen
-==================================================
->>> Checking dependencies...
-warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Resolved 29 packages in 3ms
-Checked 27 packages in 2ms
+Resolved 29 packages in 4ms
+Checked 27 packages in 0.68ms
 >>> Downloading evidence dataset from Hugging Face...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Fetching 3443 files:   0%|          | 0/3443 [00:00<?, ?it/s]Fetching 3443 files:   7%|▋         | 231/3443 [00:00<00:01, 2306.59it/s]Fetching 3443 files:  16%|█▌        | 542/3443 [00:00<00:01, 2759.48it/s]Fetching 3443 files:  25%|██▍       | 849/3443 [00:00<00:00, 2896.79it/s]Fetching 3443 files:  34%|███▍      | 1165/3443 [00:00<00:00, 2997.04it/s]Fetching 3443 files:  43%|████▎     | 1478/3443 [00:00<00:00, 3044.34it/s]Fetching 3443 files:  52%|█████▏    | 1784/3443 [00:00<00:00, 3048.07it/s]Fetching 3443 files:  61%|██████    | 2089/3443 [00:00<00:00, 3042.66it/s]Fetching 3443 files:  70%|██████▉   | 2394/3443 [00:00<00:00, 3031.32it/s]Fetching 3443 files:  78%|███████▊  | 2698/3443 [00:00<00:00, 3026.96it/s]Fetching 3443 files:  88%|████████▊ | 3013/3443 [00:01<00:00, 3050.09it/s]Fetching 3443 files:  97%|█████████▋| 3332/3443 [00:01<00:00, 3089.63it/s]Fetching 3443 files: 100%|██████████| 3443/3443 [00:01<00:00, 2993.38it/s]
+Fetching 3443 files:   0%|          | 0/3443 [00:00<?, ?it/s]Fetching 3443 files:   5%|▌         | 177/3443 [00:00<00:01, 1752.45it/s]Fetching 3443 files:  12%|█▏        | 398/3443 [00:00<00:01, 2014.25it/s]Fetching 3443 files:  18%|█▊        | 636/3443 [00:00<00:01, 2177.95it/s]Fetching 3443 files:  25%|██▌       | 870/3443 [00:00<00:01, 2241.07it/s]Fetching 3443 files:  32%|███▏      | 1110/3443 [00:00<00:01, 2296.44it/s]Fetching 3443 files:  39%|███▉      | 1346/3443 [00:00<00:00, 2315.27it/s]Fetching 3443 files:  46%|████▌     | 1580/3443 [00:00<00:00, 2320.69it/s]Fetching 3443 files:  53%|█████▎    | 1813/3443 [00:00<00:00, 2291.09it/s]Fetching 3443 files:  59%|█████▉    | 2043/3443 [00:00<00:00, 2280.11it/s]Fetching 3443 files:  66%|██████▌   | 2272/3443 [00:01<00:00, 2278.34it/s]Fetching 3443 files:  73%|███████▎  | 2500/3443 [00:09<00:10, 88.31it/s]  Fetching 3443 files:  77%|███████▋  | 2659/3443 [00:17<00:16, 48.69it/s]Fetching 3443 files:  80%|████████  | 2771/3443 [00:22<00:17, 38.47it/s]Fetching 3443 files:  83%|████████▎ | 2850/3443 [00:26<00:17, 34.46it/s]Fetching 3443 files:  84%|████████▍ | 2906/3443 [00:29<00:16, 31.62it/s]Fetching 3443 files:  86%|████████▌ | 2946/3443 [00:30<00:16, 30.00it/s]Fetching 3443 files:  86%|████████▋ | 2975/3443 [00:32<00:16, 28.46it/s]Fetching 3443 files:  87%|████████▋ | 2996/3443 [00:33<00:16, 27.44it/s]Fetching 3443 files:  87%|████████▋ | 3011/3443 [00:34<00:17, 25.25it/s]Fetching 3443 files:  88%|████████▊ | 3022/3443 [00:35<00:17, 24.16it/s]Fetching 3443 files:  88%|████████▊ | 3031/3443 [00:35<00:18, 21.71it/s]Fetching 3443 files:  88%|████████▊ | 3037/3443 [00:36<00:19, 21.31it/s]Fetching 3443 files:  88%|████████▊ | 3042/3443 [00:36<00:19, 20.78it/s]Fetching 3443 files:  88%|████████▊ | 3046/3443 [00:36<00:21, 18.37it/s]Fetching 3443 files:  89%|████████▊ | 3050/3443 [00:37<00:21, 18.67it/s]Fetching 3443 files:  89%|████████▊ | 3053/3443 [00:37<00:21, 18.14it/s]Fetching 3443 files:  89%|████████▉ | 3056/3443 [00:37<00:22, 17.45it/s]Fetching 3443 files:  89%|████████▉ | 3059/3443 [00:37<00:24, 15.62it/s]Fetching 3443 files:  89%|████████▉ | 3061/3443 [00:38<00:24, 15.40it/s]Fetching 3443 files:  89%|████████▉ | 3064/3443 [00:38<00:22, 16.50it/s]Fetching 3443 files:  89%|████████▉ | 3066/3443 [00:38<00:27, 13.84it/s]Fetching 3443 files:  89%|████████▉ | 3068/3443 [00:38<00:26, 14.18it/s]Fetching 3443 files:  89%|████████▉ | 3071/3443 [00:38<00:22, 16.74it/s]Fetching 3443 files:  89%|████████▉ | 3074/3443 [00:39<00:31, 11.82it/s]Fetching 3443 files:  89%|████████▉ | 3078/3443 [00:39<00:23, 15.83it/s]Fetching 3443 files:  89%|████████▉ | 3081/3443 [00:39<00:19, 18.24it/s]Fetching 3443 files:  90%|████████▉ | 3084/3443 [00:39<00:27, 13.29it/s]Fetching 3443 files:  90%|████████▉ | 3087/3443 [00:39<00:22, 15.74it/s]Fetching 3443 files:  90%|████████▉ | 3090/3443 [00:40<00:28, 12.31it/s]Fetching 3443 files:  90%|████████▉ | 3093/3443 [00:40<00:25, 13.82it/s]Fetching 3443 files:  90%|████████▉ | 3096/3443 [00:40<00:22, 15.24it/s]Fetching 3443 files:  90%|████████▉ | 3098/3443 [00:40<00:26, 13.25it/s]Fetching 3443 files:  90%|█████████ | 3100/3443 [00:40<00:26, 12.75it/s]Fetching 3443 files:  90%|█████████ | 3103/3443 [00:40<00:21, 15.56it/s]Fetching 3443 files:  90%|█████████ | 3106/3443 [00:41<00:23, 14.38it/s]Fetching 3443 files:  90%|█████████ | 3108/3443 [00:41<00:26, 12.80it/s]Fetching 3443 files:  90%|█████████ | 3111/3443 [00:41<00:22, 14.96it/s]Fetching 3443 files:  90%|█████████ | 3113/3443 [00:41<00:20, 15.83it/s]Fetching 3443 files:  90%|█████████ | 3115/3443 [00:41<00:29, 10.93it/s]Fetching 3443 files:  91%|█████████ | 3120/3443 [00:42<00:21, 15.20it/s]Fetching 3443 files:  91%|█████████ | 3123/3443 [00:42<00:25, 12.49it/s]Fetching 3443 files:  91%|█████████ | 3128/3443 [00:42<00:21, 14.93it/s]Fetching 3443 files:  91%|█████████ | 3131/3443 [00:43<00:23, 13.20it/s]Fetching 3443 files:  91%|█████████ | 3134/3443 [00:43<00:20, 14.91it/s]Fetching 3443 files:  91%|█████████ | 3137/3443 [00:43<00:18, 16.22it/s]Fetching 3443 files:  91%|█████████ | 3139/3443 [00:43<00:24, 12.37it/s]Fetching 3443 files:  91%|█████████ | 3141/3443 [00:43<00:25, 11.84it/s]Fetching 3443 files:  91%|█████████▏| 3147/3443 [00:44<00:20, 14.24it/s]Fetching 3443 files:  91%|█████████▏| 3149/3443 [00:44<00:22, 13.15it/s]Fetching 3443 files:  92%|█████████▏| 3152/3443 [00:44<00:19, 14.88it/s]Fetching 3443 files:  92%|█████████▏| 3155/3443 [00:44<00:19, 14.63it/s]Fetching 3443 files:  92%|█████████▏| 3157/3443 [00:44<00:21, 13.45it/s]Fetching 3443 files:  92%|█████████▏| 3162/3443 [00:45<00:15, 17.94it/s]Fetching 3443 files:  92%|█████████▏| 3164/3443 [00:45<00:17, 15.77it/s]Fetching 3443 files:  92%|█████████▏| 3170/3443 [00:45<00:12, 21.15it/s]Fetching 3443 files:  92%|█████████▏| 3173/3443 [00:45<00:13, 19.49it/s]Fetching 3443 files:  92%|█████████▏| 3176/3443 [00:45<00:13, 19.97it/s]Fetching 3443 files:  92%|█████████▏| 3179/3443 [00:45<00:14, 18.29it/s]Fetching 3443 files:  92%|█████████▏| 3184/3443 [00:46<00:11, 21.98it/s]Fetching 3443 files:  93%|█████████▎| 3187/3443 [00:46<00:13, 19.21it/s]Fetching 3443 files:  93%|█████████▎| 3192/3443 [00:46<00:10, 24.18it/s]Fetching 3443 files:  93%|█████████▎| 3195/3443 [00:46<00:12, 19.75it/s]Fetching 3443 files:  93%|█████████▎| 3200/3443 [00:46<00:09, 24.55it/s]Fetching 3443 files:  93%|█████████▎| 3203/3443 [00:47<00:11, 20.07it/s]Fetching 3443 files:  93%|█████████▎| 3208/3443 [00:47<00:09, 24.64it/s]Fetching 3443 files:  93%|█████████▎| 3211/3443 [00:47<00:11, 20.41it/s]Fetching 3443 files:  93%|█████████▎| 3216/3443 [00:47<00:09, 24.40it/s]Fetching 3443 files:  93%|█████████▎| 3219/3443 [00:47<00:10, 20.74it/s]Fetching 3443 files:  94%|█████████▎| 3224/3443 [00:47<00:08, 24.68it/s]Fetching 3443 files:  94%|█████████▎| 3227/3443 [00:48<00:10, 20.72it/s]Fetching 3443 files:  94%|█████████▍| 3230/3443 [00:48<00:09, 21.96it/s]Fetching 3443 files:  94%|█████████▍| 3233/3443 [00:48<00:10, 20.15it/s]Fetching 3443 files:  94%|█████████▍| 3236/3443 [00:48<00:10, 20.16it/s]Fetching 3443 files:  94%|█████████▍| 3241/3443 [00:48<00:09, 21.80it/s]Fetching 3443 files:  94%|█████████▍| 3244/3443 [00:48<00:09, 21.40it/s]Fetching 3443 files:  94%|█████████▍| 3248/3443 [00:49<00:08, 23.40it/s]Fetching 3443 files:  94%|█████████▍| 3251/3443 [00:49<00:08, 23.04it/s]Fetching 3443 files:  95%|█████████▍| 3254/3443 [00:49<00:08, 22.24it/s]Fetching 3443 files:  95%|█████████▍| 3257/3443 [00:49<00:08, 22.04it/s]Fetching 3443 files:  95%|█████████▍| 3260/3443 [00:49<00:08, 21.54it/s]Fetching 3443 files:  95%|█████████▍| 3263/3443 [00:49<00:08, 22.50it/s]Fetching 3443 files:  95%|█████████▍| 3266/3443 [00:49<00:08, 19.69it/s]Fetching 3443 files:  95%|█████████▌| 3271/3443 [00:50<00:08, 19.12it/s]Fetching 3443 files:  95%|█████████▌| 3273/3443 [00:50<00:09, 18.23it/s]Fetching 3443 files:  95%|█████████▌| 3278/3443 [00:50<00:07, 21.96it/s]Fetching 3443 files:  95%|█████████▌| 3281/3443 [00:50<00:08, 18.99it/s]Fetching 3443 files:  95%|█████████▌| 3285/3443 [00:50<00:07, 22.10it/s]Fetching 3443 files:  95%|█████████▌| 3288/3443 [00:51<00:08, 19.17it/s]Fetching 3443 files:  96%|█████████▌| 3292/3443 [00:51<00:06, 22.96it/s]Fetching 3443 files:  96%|█████████▌| 3295/3443 [00:51<00:06, 24.27it/s]Fetching 3443 files:  96%|█████████▌| 3298/3443 [00:51<00:06, 21.60it/s]Fetching 3443 files:  96%|█████████▌| 3303/3443 [00:51<00:05, 24.41it/s]Fetching 3443 files:  96%|█████████▌| 3306/3443 [00:51<00:06, 21.68it/s]Fetching 3443 files:  96%|█████████▌| 3311/3443 [00:51<00:05, 23.98it/s]Fetching 3443 files:  96%|█████████▋| 3314/3443 [00:52<00:05, 21.74it/s]Fetching 3443 files:  96%|█████████▋| 3318/3443 [00:52<00:06, 20.77it/s]Fetching 3443 files:  96%|█████████▋| 3321/3443 [00:52<00:05, 21.80it/s]Fetching 3443 files:  97%|█████████▋| 3324/3443 [00:52<00:05, 20.45it/s]Fetching 3443 files:  97%|█████████▋| 3327/3443 [00:52<00:06, 19.24it/s]Fetching 3443 files:  97%|█████████▋| 3331/3443 [00:52<00:04, 22.87it/s]Fetching 3443 files:  97%|█████████▋| 3334/3443 [00:53<00:05, 18.48it/s]Fetching 3443 files:  97%|█████████▋| 3338/3443 [00:53<00:04, 22.15it/s]Fetching 3443 files:  97%|█████████▋| 3341/3443 [00:53<00:04, 21.62it/s]Fetching 3443 files:  97%|█████████▋| 3345/3443 [00:53<00:04, 24.12it/s]Fetching 3443 files:  97%|█████████▋| 3348/3443 [00:53<00:04, 21.36it/s]Fetching 3443 files:  97%|█████████▋| 3351/3443 [00:53<00:04, 20.65it/s]Fetching 3443 files:  97%|█████████▋| 3354/3443 [00:53<00:04, 21.24it/s]Fetching 3443 files:  98%|█████████▊| 3357/3443 [00:54<00:04, 18.61it/s]Fetching 3443 files:  98%|█████████▊| 3361/3443 [00:54<00:04, 19.20it/s]Fetching 3443 files:  98%|█████████▊| 3364/3443 [00:54<00:03, 20.59it/s]Fetching 3443 files:  98%|█████████▊| 3368/3443 [00:54<00:03, 24.51it/s]Fetching 3443 files:  98%|█████████▊| 3371/3443 [00:54<00:03, 20.79it/s]Fetching 3443 files:  98%|█████████▊| 3375/3443 [00:54<00:03, 22.55it/s]Fetching 3443 files:  98%|█████████▊| 3378/3443 [00:55<00:03, 19.54it/s]Fetching 3443 files:  98%|█████████▊| 3383/3443 [00:55<00:02, 23.55it/s]Fetching 3443 files:  98%|█████████▊| 3386/3443 [00:55<00:02, 19.97it/s]Fetching 3443 files:  98%|█████████▊| 3390/3443 [00:55<00:02, 22.50it/s]Fetching 3443 files:  99%|█████████▊| 3393/3443 [00:55<00:02, 19.54it/s]Fetching 3443 files:  99%|█████████▊| 3397/3443 [00:55<00:01, 23.23it/s]Fetching 3443 files:  99%|█████████▉| 3400/3443 [00:56<00:02, 20.07it/s]Fetching 3443 files:  99%|█████████▉| 3403/3443 [00:56<00:01, 20.35it/s]Fetching 3443 files:  99%|█████████▉| 3408/3443 [00:56<00:01, 21.99it/s]Fetching 3443 files:  99%|█████████▉| 3411/3443 [00:56<00:01, 21.14it/s]Fetching 3443 files:  99%|█████████▉| 3416/3443 [00:56<00:01, 22.94it/s]Fetching 3443 files:  99%|█████████▉| 3419/3443 [00:57<00:01, 21.28it/s]Fetching 3443 files:  99%|█████████▉| 3424/3443 [00:57<00:00, 23.34it/s]Fetching 3443 files: 100%|█████████▉| 3427/3443 [00:57<00:00, 21.22it/s]Fetching 3443 files: 100%|█████████▉| 3432/3443 [00:57<00:00, 23.37it/s]Fetching 3443 files: 100%|█████████▉| 3435/3443 [00:57<00:00, 21.39it/s]Fetching 3443 files: 100%|█████████▉| 3439/3443 [00:57<00:00, 22.02it/s]Fetching 3443 files: 100%|█████████▉| 3442/3443 [00:58<00:00, 20.14it/s]Fetching 3443 files: 100%|██████████| 3443/3443 [00:58<00:00, 59.13it/s]
 downloaded to <repo>/cascade-gap-largen/hf_evidence
 >>> Confirmatory necessary-condition analysis...
 warning: The `tool.uv.dev-dependencies` field (used in `<repo>/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `<repo>/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
 === Full-draw confirmatory necessary-condition analysis (N=350 coded) ===
 2x2 (gap_any x p45_any), outcome-uncertain set aside (55):
   n11=15  n10=88  n01=14  n00=178
@@ -232,7 +29,6 @@ warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path 
   NCA safe-harbor cell empty: False
 >>> Power analysis / registered N...
 warning: The `tool.uv.dev-dependencies` field (used in `<repo>/cascade-gap-largen/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `<repo>/cascade-gap-largen/.venv` and will be ignored; use `--active` to target the active environment instead
 ok  CP(0,60) = 0.0487 (~0.0487)
 ok  CP(0,100) = 0.0295 (~0.0295)
 ok  CP monotone in k: [0.0295, 0.0466, 0.0616, 0.0757, 0.0892, 0.1023]
@@ -241,19 +37,18 @@ ok  cp_lower_vec: k=0 -> 0.0  k=5/200 -> 0.0099
 ok  sim @ N=300 (leak .005): P(upper_ok)=1.000 P(gaps_ok)=0.998 median_upper=0.0211 median_gaps=77
 FIXTURE PASS
 ==================================================
-Reproduction complete: 2026-08-07T11:03:26Z
+Reproduction complete: 2026-11-06T08:08:10Z
 ==================================================
 >>> [multi-llm-coding-instrument] invoking per-paper reproduce.sh
-=== Instrument reproduction: 2026-08-07T11:03:27Z ===
+=== Instrument reproduction: 2026-11-06T08:08:10Z ===
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Resolved 17 packages in 4ms
-Checked 15 packages in 2ms
+Resolved 17 packages in 3ms
+Checked 15 packages in 0.35ms
 >>> Fixture self-check...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
 Pipeline self-check (synthetic fixture; no study data)
 ======================================================================
-scipy 1.17.1
+scipy 1.18.0
 Fixture table [[3, 1], [1, 3]]: Fisher's exact p = 0.4857142857
   expected 0.4857142857
 Cramer's V = 0.5000; Clopper-Pearson CI on 3/4 = [0.1941, 0.9937]
@@ -264,7 +59,7 @@ SELF-CHECK OK: statistical implementation reproduces the known value.
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
 Tier-Bundle Algebra n=30 confirmatory analysis (Proposition 6)
 ======================================================================
-scipy 1.17.1
+scipy 1.18.0
 H6-eligible cases coded: 26
 
   H6a phi4->phi5 (alpha = 0.025):
@@ -339,7 +134,7 @@ Necessary-condition + safe-harbor re-analysis (EXPLORATORY; Fork E)
     SUFFICIENCY   P(fail | gap)   = 0.667  (2/3)  [the WEAK direction — stated explicitly]
     NCA ceiling   d = 0.250  [dichotomous CE-FDH; .25 = Dul's 'medium' band when the no-gap/failure cell is empty]
 
-=== complete: 2026-08-07T11:03:27Z ===
+=== complete: 2026-11-06T08:08:11Z ===
 >>> [org-as-metadata] no reproduce.sh — skipping (paper-only mirror)
 >>> [organizational-schema-theory] no reproduce.sh — skipping (paper-only mirror)
 >>> [orgschema-audit] no reproduce.sh — skipping (paper-only mirror)
@@ -347,18 +142,18 @@ Necessary-condition + safe-harbor re-analysis (EXPLORATORY; Fork E)
 >>> [six-tier-ontology] no reproduce.sh — skipping (paper-only mirror)
 >>> [specification-readiness-empirical] no reproduce.sh — skipping (paper-only mirror)
 >>> [specification-readiness] no reproduce.sh — skipping (paper-only mirror)
+>>> [succession-rotation] no reproduce.sh — skipping (paper-only mirror)
 >>> [tier-allocation] no reproduce.sh — skipping (paper-only mirror)
 >>> [tier-bundle-algebra] invoking per-paper reproduce.sh
-=== tier-bundle-algebra reproduction: 2026-08-07T11:03:28Z ===
+=== tier-bundle-algebra reproduction: 2026-11-06T08:08:11Z ===
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
-warning: `VIRTUAL_ENV=<local-venv>` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
-Resolved 17 packages in 4ms
-Checked 15 packages in 2ms
+Resolved 17 packages in 3ms
+Checked 15 packages in 0.36ms
 >>> Fixture self-check...
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
 Pipeline self-check (synthetic fixture; no study data)
 ======================================================================
-scipy 1.17.1
+scipy 1.18.0
 Fixture table [[3, 1], [1, 3]]: Fisher's exact p = 0.4857142857
   expected 0.4857142857
 Cramer's V = 0.5000; Clopper-Pearson CI on 3/4 = [0.1941, 0.9937]
@@ -369,7 +164,7 @@ SELF-CHECK OK: statistical implementation reproduces the known value.
 warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
 Tier-Bundle Algebra n=30 confirmatory analysis (Proposition 6)
 ======================================================================
-scipy 1.17.1
+scipy 1.18.0
 H6-eligible cases coded: 26
 
   H6a phi4->phi5 (alpha = 0.025):
@@ -444,13 +239,34 @@ Necessary-condition + safe-harbor re-analysis (EXPLORATORY; Fork E)
     SUFFICIENCY   P(fail | gap)   = 0.667  (2/3)  [the WEAK direction — stated explicitly]
     NCA ceiling   d = 0.250  [dichotomous CE-FDH; .25 = Dul's 'medium' band when the no-gap/failure cell is empty]
 
-=== complete: 2026-08-07T11:03:29Z ===
+=== complete: 2026-11-06T08:08:12Z ===
 >>> [tier-penetration] no reproduce.sh — skipping (paper-only mirror)
 >>> [tier-rotation] no reproduce.sh — skipping (paper-only mirror)
 >>> [verification-as-operator] no reproduce.sh — skipping (paper-only mirror)
+>>> [verification-bandwidth] invoking per-paper reproduce.sh
+2026-11-06T08:08:12Z  reproduce.sh starting
+2026-11-06T08:08:12Z  python: 3.14.9
+2026-11-06T08:08:12Z  seed: 20260811 (fixed in every script)
+2026-11-06T08:08:12Z  quick mode: 0
+2026-11-06T08:08:12Z  --- running reported_neff_check.py
+2026-11-06T08:08:12Z      reported_neff_check.py OK -> output/logs/reported_neff_check.log
+2026-11-06T08:08:12Z  --- running phi_mapping.py
+2026-11-06T08:08:15Z      phi_mapping.py OK -> output/logs/phi_mapping.log
+2026-11-06T08:08:15Z  --- running p2_exact.py
+2026-11-06T08:08:15Z      p2_exact.py OK -> output/logs/p2_exact.log
+2026-11-06T08:08:15Z  --- running formal_model_checks.py
+2026-11-06T08:08:17Z      formal_model_checks.py OK -> output/logs/formal_model_checks.log
+2026-11-06T08:08:17Z  --- running threat1_kill_test.py
+2026-11-06T08:08:17Z      threat1_kill_test.py OK -> output/logs/threat1_kill_test.log
+2026-11-06T08:08:17Z  --- running emit_paper_tables.py
+2026-11-06T08:08:18Z      emit_paper_tables.py OK -> output/logs/emit_paper_tables.log
+2026-11-06T08:08:18Z  all steps completed
+2026-11-06T08:08:18Z  tables:  output/tables/*.csv
+2026-11-06T08:08:18Z  figures: output/figures/*.png
+2026-11-06T08:08:18Z  logs:    output/logs/*.log
 ==================================================
-Hub pipeline complete: 2026-08-07T11:03:29Z
-Paper-slugs discovered: 16
-Per-paper reproduce.sh executed: 3
-Per-paper skipped (no orchestrator): 13
+Hub pipeline complete: 2026-11-06T08:08:18Z
+Paper-slugs discovered: 18
+Per-paper reproduce.sh executed: 4
+Per-paper skipped (no orchestrator): 14
 ==================================================

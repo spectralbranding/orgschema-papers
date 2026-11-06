@@ -20,8 +20,8 @@ OUTPUT : full_draw_curated_gap_deals.csv   (FRAME_HEADER rows; signal="curated:<
          + a printed per-stratum count vs the deficit + a RESOLUTION / EXCLUDED log.
 
 Run (network; EDGAR only, no paid API):
-    uv run python research/cascade-gap-largen/build_curated.py --build
-    uv run python research/cascade-gap-largen/build_curated.py --verify   # offline schema/logic
+    uv run python code/build_curated.py --build
+    uv run python code/build_curated.py --verify   # offline schema/logic
 
 The resolver reuses draw_full_sample's EDGAR helpers + inclusion filter so the curated pool
 passes exactly the same >=$1bn / operating-SIC gate as the FTS frame. Review the RESOLUTION

@@ -25,8 +25,8 @@ which slot) -- a genuine pre-registration, committed BEFORE the draw and BEFORE 
 call. Deterministic; re-running reproduces the same file.
 
 Run:
-    uv run python research/cascade-gap-largen/full_draw_rotation.py --verify
-    uv run python research/cascade-gap-largen/full_draw_rotation.py --write
+    uv run python code/full_draw_rotation.py --verify
+    uv run python code/full_draw_rotation.py --write
 """
 
 from __future__ import annotations

@@ -48,7 +48,7 @@ Outputs:
 Run (all three coders; injects BWS keys into the subprocess only):
 
     bws run -- uv run --with anthropic --with google-genai --with openai \\
-        python research/empirical_cases_v1/recode_separated_passes.py \\
+        python code/recode_separated_passes.py \\
         --only A01,A02,A03,A04,A05,A06,A07,A12,A13,A14,E01,E02,E03,E04,E05,E06,\\
 E07,E08,E09,E10,E11,E12,E13,E14,E15,E16
 
@@ -620,7 +620,7 @@ def code_with_gemini(case_id: str, pass_name: str, slice_text: str, cfg: dict):
 def code_with_openai(case_id: str, pass_name: str, slice_text: str, cfg: dict):
     """OpenAI gpt-5.x coder (4th coder). Pinned to gpt-5.6-sol (GPT-5.6 frontier).
 
-    gpt-5.x quirks (research/prism_core/provider.py): use max_completion_tokens (not
+    gpt-5.x quirks (the shared provider adapter): use max_completion_tokens (not
     max_tokens); temperature is default-only (do NOT pass it). gpt-5.6-sol is a
     reasoning model whose reasoning tokens count toward max_completion_tokens, so give
     the JSON verdict headroom. Same structured-JSON contract + JSONL logging as the
