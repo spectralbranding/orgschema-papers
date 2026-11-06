@@ -37,9 +37,9 @@ draw seed 20260729 (Python random.Random / MT19937). Standard library only.
 
 Run (from repo root):
     # phase 1 (network; writes the committed frame snapshot, blind to outcome):
-    uv run python research/cascade-gap-largen/draw_pilot_sample.py --enumerate
+    uv run python code/draw_pilot_sample.py --enumerate
     # phase 2 (deterministic; writes pilot_selection.csv):
-    uv run python research/cascade-gap-largen/draw_pilot_sample.py --draw
+    uv run python code/draw_pilot_sample.py --draw
 """
 
 from __future__ import annotations

@@ -9,7 +9,7 @@ triple (a different model omitted from each), so per-construct coding stays as s
 a 4-model pool allows. The rotation is seed-fixed and committed before any coding call.
 
 This runner REUSES the S4/pilot separated-pass harness
-(research/empirical_cases_v1/recode_separated_passes.py): the pass codebooks/schemas, the
+(code/recode_separated_passes.py): the pass codebooks/schemas, the
 four coder backends (incl. `code_with_openai`), validation, and majority-vote-or-flag. It
 differs from the pilot runner (pilot_code.py) only where the full-draw design requires:
   1. 3 rater-slots per construct (over the pilot's 2), driven by structural_triple /
@@ -28,7 +28,7 @@ coder cannot determine is "uncertain", never guessed. Every model call is JSONL-
 Run (keys injected into the subprocess only via BWS):
 
     bws run -- uv run --with anthropic --with google-genai --with openai \\
-        python research/cascade-gap-largen/full_draw_code.py
+        python code/full_draw_code.py
 
 Flags:
     --only S[,S]     code only the named slots/case_ids (e.g. 1,3 or P001,P003)

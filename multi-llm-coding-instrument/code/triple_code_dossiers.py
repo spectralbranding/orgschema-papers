@@ -16,7 +16,7 @@ determine a cell from the dossier must return "uncertain" (anti-fabrication HARD
 rule) -- it is never guessed.
 
 Every model call is logged as JSONL via the corpus llm_call_logger
-(feedback_llm_call_professional_logging: this coding is an EXPERIMENT whose codes
+(project LLM-call logging rule: this coding is an EXPERIMENT whose codes
 land in the paper's Results, so the calls are public-logged). Logs ->
 `data/coding_raw/`.
 

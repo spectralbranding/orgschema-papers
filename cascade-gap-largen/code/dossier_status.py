@@ -7,9 +7,9 @@ non-trivial) vs MISSING. Also lists the next MISSING case ids so a session can p
 the next batch mechanically. Read-only.
 
 Usage (from repo root):
-  uv run python research/cascade-gap-largen/dossier_status.py            # summary
-  uv run python research/cascade-gap-largen/dossier_status.py --missing  # list missing ids
-  uv run python research/cascade-gap-largen/dossier_status.py --next 20  # next 20 missing ids
+  uv run python code/dossier_status.py            # summary
+  uv run python code/dossier_status.py --missing  # list missing ids
+  uv run python code/dossier_status.py --next 20  # next 20 missing ids
 """
 
 from __future__ import annotations

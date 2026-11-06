@@ -6,7 +6,7 @@ Companion computation script for:
     Event-Sourced Theory of Organizational Capability. Working paper.
 
 Implements the minimal mathematical machinery specified in
-``research/capability_as_projection_paper/FORMALISM_v0.md``:
+``FORMALISM_v0.md``:
 
     1. The event log ``L = (E, <=)`` as a poset of typed events
        (FORMALISM Section 1.1)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Wave QC for the step-4 dossier grind (PROGRAM_PLAN S5).
 
-Runs the three NEXT_SESSION QC checks over a set of case ids and prints ONE terse
+Runs the three operational QC checks over a set of case ids and prints ONE terse
 line per case (PASS / FAIL: <reasons>), so a grinding session spends minimal context
 per wave. Read-only.
 
@@ -13,8 +13,8 @@ Checks per case P###:
                     (seller/target bankruptcy in a 363-deal struct is allowed context).
 
 Usage (from repo root):
-  uv run python research/cascade-gap-largen/qc_wave.py P014 P015 ...
-  uv run python research/cascade-gap-largen/qc_wave.py --all      # every built case
+  uv run python code/qc_wave.py P014 P015 ...
+  uv run python code/qc_wave.py --all      # every built case
 """
 
 from __future__ import annotations

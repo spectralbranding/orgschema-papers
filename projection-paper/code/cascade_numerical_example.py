@@ -18,16 +18,16 @@ Description:
     Lipschitz product) and P4 (strict-inequality nullity regime).
 
 Run commands:
-    uv run --with numpy python research/code/cascade_numerical_example.py
-    uv run --with numpy python research/code/cascade_numerical_example.py --compare
+    uv run --with numpy python code/cascade_numerical_example.py
+    uv run --with numpy python code/cascade_numerical_example.py --compare
 
 Reproduces:
-    - All numerical values cited in §3.5 of PROJECTION_PAPER_v2_DRAFT.md
+    - All numerical values cited in §3.5 of the paper
     - All entries of Table 3 (per-junction d_i, d_{i+1}, rank, r_i, kappa_i,
       L_i, iterations to convergence, ||x*_{i+1} - x_{i+1}^{(0)}||).
     - Sub-additivity verification: r_total, sum r_i, equality status.
     - Under --compare: the comparative-statics table cited in §4.6 of
-      PROJECTION_PAPER_v2_DRAFT.md showing that no single-theory
+      the paper showing that no single-theory
       restriction simultaneously reproduces P3 amplification and P4
       strict-inequality.
 
@@ -272,7 +272,7 @@ def verify_fixed_point(Pi_list, A_list, trajectory):
 #        least two cascaded rank-deficient junctions arranged so an
 #        upstream kernel is absorbed by the downstream image.
 #
-# Restriction r_i patterns (per §4 of PROJECTION_PAPER_v2_DRAFT.md):
+# Restriction r_i patterns (per §4 of the paper):
 #     Galbraith   : active = (Π_{2→3}, Π_{3→4}, Π_{5→6}); rank
 #                   deficiency only at Π_{5→6} (per Table 2: full-rank
 #                   assumed at active junctions, misalignment is

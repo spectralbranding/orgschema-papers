@@ -10,8 +10,8 @@ gap_prone vs control beyond what the subagent needs to source (controls need the
 no-record rule), and never prints hypotheses/constructs.
 
 Usage (from repo root):
-  uv run python research/cascade-gap-largen/emit_batch_rows.py P002 P003 P046
-  uv run python research/cascade-gap-largen/emit_batch_rows.py --next 8   # next 8 missing
+  uv run python code/emit_batch_rows.py P002 P003 P046
+  uv run python code/emit_batch_rows.py --next 8   # next 8 missing
 """
 
 from __future__ import annotations

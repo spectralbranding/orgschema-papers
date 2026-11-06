@@ -49,8 +49,8 @@ Nothing here is a coded datum: this is a design-time simulation. Registered-befo
 is intact (no draw, no dossier, no coding call is performed by this script).
 
 Run (fixed seed, reproducible; PAQS 37):
-    uv run --with scipy python research/cascade-gap-largen/power_analysis_s5.py
-    uv run --with scipy python research/cascade-gap-largen/power_analysis_s5.py --fixture
+    uv run --with scipy python code/power_analysis_s5.py
+    uv run --with scipy python code/power_analysis_s5.py --fixture
 """
 
 from __future__ import annotations

@@ -79,7 +79,7 @@ run formal_model_checks.py uv run --with numpy --with scipy python formal_model_
 
 # 5. The bracket simulation behind Table A1.
 if [[ $QUICK -eq 0 ]]; then
-    run threat1_kill_test.py uv run --with numpy python threat1_kill_test.py
+    run threat1_kill_test.py uv run --with numpy --with scipy --with matplotlib python threat1_kill_test.py
 else
     log "--- skipping threat1_kill_test.py (quick mode; Table A1 is not regenerated)"
 fi

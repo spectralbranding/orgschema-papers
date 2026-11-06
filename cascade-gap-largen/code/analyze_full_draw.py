@@ -20,8 +20,8 @@ This is analysis code, not a coded datum: --fixture is the only mode that runs u
 full-draw dataset + kappa files exist (registered-before-data).
 
 Run:
-    uv run --with scipy python research/cascade-gap-largen/analyze_full_draw.py --fixture
-    uv run --with scipy python research/cascade-gap-largen/analyze_full_draw.py
+    uv run --with scipy python code/analyze_full_draw.py --fixture
+    uv run --with scipy python code/analyze_full_draw.py
 """
 
 from __future__ import annotations

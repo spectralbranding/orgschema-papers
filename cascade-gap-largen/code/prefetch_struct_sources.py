@@ -16,9 +16,9 @@ The OUTCOME source (3-5-year 10-K/20-F) is NOT pre-fetched here -- it is not nam
 the draw and the subagent selects + fetches it via ``fetch_filing.py`` at build time.
 
 Usage (from repo root):
-  uv run python research/cascade-gap-largen/prefetch_struct_sources.py            # fetch all
-  uv run python research/cascade-gap-largen/prefetch_struct_sources.py P001 P044  # only these
-  uv run python research/cascade-gap-largen/prefetch_struct_sources.py --report   # manifest only
+  uv run python code/prefetch_struct_sources.py            # fetch all
+  uv run python code/prefetch_struct_sources.py P001 P044  # only these
+  uv run python code/prefetch_struct_sources.py --report   # manifest only
 
 Polite: 0.2s spacing (fetch_filing.get already sleeps), skips files already present.
 """

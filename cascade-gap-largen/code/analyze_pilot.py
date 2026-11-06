@@ -26,8 +26,8 @@ Modes:
   (default) : run on pilot_dataset.csv + pilot_code_out/kappa_*.json + pilot_dossiers/.
 
 Run:
-    uv run python research/cascade-gap-largen/analyze_pilot.py --fixture
-    uv run python research/cascade-gap-largen/analyze_pilot.py
+    uv run python code/analyze_pilot.py --fixture
+    uv run python code/analyze_pilot.py
 """
 
 from __future__ import annotations

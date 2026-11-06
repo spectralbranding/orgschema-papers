@@ -10,7 +10,7 @@ does which is fixed by the seed in pilot_rotation.json (committed before any cod
 call); across the 10 slots every model codes each construct 5x (balanced).
 
 This runner REUSES the S4 separated-pass harness
-(research/empirical_cases_v1/recode_separated_passes.py): the pass codebooks/schemas
+(code/recode_separated_passes.py): the pass codebooks/schemas
 (STRUCT_*, OUTCOME_*), the four coder backends (incl. the new `code_with_openai`),
 validation, and majority-vote-or-flag. It differs from the S4 harness in two ways
 required by the pilot design:
@@ -33,7 +33,7 @@ is JSONL-logged (phase s5-pilot-recode) via the corpus llm_call_logger.
 Run (keys injected into the subprocess only via BWS):
 
     bws run -- uv run --with anthropic --with google-genai --with openai \\
-        python research/cascade-gap-largen/pilot_code.py
+        python code/pilot_code.py
 
 Flags:
     --only S[,S]     code only the named slots/case_ids (e.g. 1,3 or P01,P03)
