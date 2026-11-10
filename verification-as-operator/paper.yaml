@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19778588
-  date: '2026-06-26'
+  date: '2026-11-10'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -165,7 +165,7 @@ acceptance:
 - claim_id: P1
   criterion: Holds if organizational verification is a projection operator P on the organizational state
     space, idempotent (P^2 = P) and self-adjoint (P* = P); a state s passes verification iff P(s) = s,
-    i.
+    i.e. iff s lies in the invariant subspace that acceptance criteria define.
   falsification: If acceptance cannot be stated as a closed linear constraint admitting an idempotent
     self-adjoint operator, the identity fails.
 - claim_id: P3
@@ -182,7 +182,9 @@ acceptance:
     would have rank >= 2 and refute the rank-1 characterization.
 - claim_id: P5
   criterion: Holds if (Proposition 2) An OST cascade with k >= 2 levels satisfying the cascade-consistency
-    condition (range(P_j) not subset of kernel(P_{j+1}) for all j) defines an invariant subspace T_0 ∩.
+    condition (range(P_j) not subset of kernel(P_{j+1}) for all j) defines an invariant subspace T_0 ∩
+    ... ∩ T_{k-1} of dimension strictly greater than 1; it is therefore a FULL-RANK projection that preserves
+    at least two independent dimensions of organizational performance.
   falsification: A cascade in which every P_k has rank 1, or range(P_j) subset of kernel(P_{j+1}) for
     some j, collapses to effective rank 1.
 - claim_id: P6

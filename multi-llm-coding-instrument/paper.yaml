@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.21756063
-  date: '2026-08-12'
+  date: '2026-11-10'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -183,6 +183,9 @@ dependencies:
 - relationship: extends
   claim: 'anchor: horton-2023-large-language-models'
   doi: 10.3386/w31122
+- relationship: extends
+  claim: 'anchor: kohli-2026-nine-judges-two-effective-votes'
+  doi: 10.48550/arXiv.2605.29800
 contradictions: []
 repositories:
 - platform: GitHub

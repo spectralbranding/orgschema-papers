@@ -337,6 +337,9 @@ external_anchors:
   - citation_key: horton-2023-large-language-models
     role: rival_ruled_out
     spine_nodes: [SF1]
+  - citation_key: kohli-2026-nine-judges-two-effective-votes
+    role: limiting_evidence
+    spine_nodes: [P1, P3, L1]
 
 # ============================================================================
 # Open questions / boundary edges
