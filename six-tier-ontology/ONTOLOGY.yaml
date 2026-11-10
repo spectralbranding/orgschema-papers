@@ -16,22 +16,54 @@ owns:
     canonical_form: "six-tier ontology"
     definition: >-
       The ontology that decomposes an organization into six nested
-      specification tiers, always in the order Owner Intent -> Business Model
+      specification tiers, always in the order Intent -> Business Model
       -> Business Entity -> Product -> Process -> Organization. Each tier
       answers a distinct governing question and transfers differently on sale.
       Full form: "six-tier ontology of a business". It is the analyst's common
       language for a business, set apart from a stakeholder ontology, which is
       the business's own ontology as one named position writes it.
+      Position-symmetric (every position has the same row: its intent at
+      Tier 1, its commitments at Tiers 2-6) but not observer-free: the
+      analyst's position configures it. Each position's Tier 1 content is its
+      Intent and its stakeholder ontology; the position reads the six tiers in
+      that ontology.
+    first_section: "§1"
+
+  - term_key: position
+    label: "position"
+    canonical_form: "position"
+    definition: >-
+      A standpoint from which a subject and an intent are formed: the
+      analyst's or a party's. A party's position is the one from which it deals
+      with the business (owner, lender, employees, union, customers, the state,
+      a potential buyer). Tiers are ordered by rank in the constraint
+      hierarchy, not by position.
+    first_section: "§1"
+
+  - term_key: tier-1-intent
+    label: "Tier 1 (Intent)"
+    canonical_form: "Tier 1 (Intent)"
+    definition: >-
+      The intent regarding the business of each position that deals with it
+      (owner, lender, employees, union, customers, the state, a potential
+      buyer): its purpose, what it wants from the business, its horizon and its
+      exit criteria. Tier 1 contains parameters of positions, never parameters
+      of the business. Position-bound: at a change of control the controlling
+      intent is replaced and the other positions' intents persist. Each
+      position's stakeholder ontology is Tier 1 content of that position.
     first_section: "§1"
 
   - term_key: tier-1-owner-intent
-    label: "Tier 1 (Owner Intent)"
-    canonical_form: "Tier 1 (Owner Intent)"
+    label: "Owner Intent"
+    canonical_form: "Owner Intent"
     definition: >-
-      Why the organization exists. Governed by founder / board chair / dominant
-      shareholder; implicit or off-table in most professional-CEO companies.
-      Transfers nothing directly, only its imprint on lower tiers.
+      The intent of the controlling position: the instance of Tier 1 (Intent)
+      that the business's bodies adopt by decision. The owner's special status
+      is control, a Tier 3 field. Replaced, not transferred, at a change of
+      control.
     first_section: "§1"
+    relations:
+      - {type: specializes, term_key: tier-1-intent}
 
   - term_key: stakeholder-ontology
     label: "stakeholder ontology"
@@ -40,15 +72,16 @@ owns:
       A picture of what exists in an activity, what its basic terms mean, what
       is connected to what, and what is absent, as written from one named
       position (owner, manager, employee, customer, lender, regulator, buyer,
-      successor), recorded in that position's own words.
+      successor), recorded in that position's own words. It is Tier 1 content
+      of its position.
     first_section: "§1"
 
   - term_key: owner-ontology
     label: "Owner Ontology"
     canonical_form: "Owner Ontology"
     definition: >-
-      The stakeholder ontology of the controlling party (the Tier 1
-      stakeholder): the terms in which Owner Intent is phrased and most of the
+      The stakeholder ontology of the controlling position: the terms in
+      which Owner Intent is phrased and most of the
       firm's records are written. Tier 1 content carried by the same principal
       as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in
       which questions about the business are worded, and Owner Intent fixes
@@ -90,8 +123,10 @@ owns:
     label: "Tier 2 (Business Model)"
     canonical_form: "Tier 2 (Business Model)"
     definition: >-
-      How value flows into resources. Governed by the CEO (founder-CEOs collapse
-      Tier 1 into Tier 2). Conceptually replicable; not legally owned.
+      How value flows into resources. Governed by the CEO (a founder-CEO holds
+      the controlling position and the chief-executive place). Conceptually
+      replicable; not legally owned. Customer concentration is a Tier 2
+      parameter.
     first_section: "§1"
 
   - term_key: tier-3-business-entity
@@ -101,15 +136,21 @@ owns:
       What is legally registered and saleable (IP, trademarks, contracts,
       corporate-legal personality). Governed by General Counsel / corporate
       treasury. Transfers by document. Often absent from AI-strategy meetings.
+      Includes control (residual decision rights fixed by the legal form:
+      charter, cap table) and the registered rights to use a sign (classes,
+      territory).
     first_section: "§1"
 
   - term_key: tier-4-product
     label: "Tier 4 (Product)"
     canonical_form: "Tier 4 (Product)"
     definition: >-
-      What is delivered to whom; includes the brand surface (per Brand-as-Tier-4).
-      CMO governs the brand sub-spec; CTO the technical sub-spec (canonical
-      collision at Tier 4). Transfers if specified; not if tacit.
+      What is delivered to whom; includes the brand's specification only (the
+      sign, its form and the rules for its use, and its dimensions as
+      specified), per Brand-as-Tier-4. Campaigns and PR are flow on Tier 2
+      channels; the perception the emissions produce lies outside the six
+      tiers. CMO governs the brand sub-spec; CTO the technical sub-spec
+      (canonical collision at Tier 4). Transfers if specified; not if tacit.
     first_section: "§1"
 
   - term_key: tier-5-process
@@ -124,21 +165,25 @@ owns:
     label: "Tier 6 (Organization)"
     canonical_form: "Tier 6 (Organization)"
     definition: >-
-      Who does the producing. Governed by CHRO (sometimes COO). Transfers only
-      partially (retention contracts at best).
+      The people, roles, culture, tacit knowledge and relational networks that
+      execute the Process; the Tier 6 part of marketing is the department's
+      people. Governed by CHRO (sometimes COO). Transfers only partially
+      (retention contracts at best).
     first_section: "§1"
 
   - term_key: facet
     label: "facet"
     canonical_form: "facet"
     definition: >-
-      An intrinsic constituent of a tier - what the tier is made of (its culture,
-      data, rules, quality standard, or spec surfaces), as distinct from the tier
-      itself (a stratum) and from an angle (how a tier is read). Additive OST/SBT
-      construct reconciled from the manda five-term method vocabulary 2026-08-01;
-      it does NOT replace "layer", which keeps its canonical corpus senses
-      (including the colloquial synonym for Tier). Its specification depth, where
-      applicable, is the native L0-L5 cascade. RU canonical form: Gran (Грань).
+      Observer-relative: the part of the business that one position reads, namely
+      the commitments in force on a date that the position authors, holds, accepts
+      or receives records of. It is not an intrinsic constituent of a tier;
+      culture, for example, is Tier 6 content and not a constituent of every
+      tier. Distinct from the tier itself (a stratum). Additive OST/SBT construct
+      reconciled from the manda five-term method vocabulary 2026-08-01; it does
+      NOT replace "layer", which keeps its canonical corpus senses (including the
+      colloquial synonym for Tier). Its specification depth, where applicable, is
+      the native L0-L5 cascade. RU canonical form: Gran (Грань).
     first_section: "§1"
 
 imports:

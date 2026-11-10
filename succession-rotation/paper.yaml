@@ -81,7 +81,7 @@ claims:
   - P2
 - id: P4
   type: proposition
-  statement: Tier 5 is the unique tier whose person-carried residual is both destroyed by Tier-1 replacement
+  statement: Tier 5 is the unique tier whose person-carried residual is both destroyed by replacement
     in the owner-operated population and exercised at operating frequency, so that its loss cannot be
     absorbed by deferring anything. The discriminating property is draw frequency, not tacitness.
   testable: true
@@ -227,9 +227,9 @@ acceptance:
     could address. A demonstration that the two disturbances co-occur in the fourth cell does NOT falsify
     P3 as restricted; that co-occurrence is P9's own content.
 - claim_id: P4
-  criterion: Holds if tier 5 is the unique tier whose person-carried residual is both destroyed by Tier-1
-    replacement in the owner-operated population and exercised at operating frequency, so that its loss
-    cannot be absorbed by deferring anything.
+  criterion: Holds if tier 5 is the unique tier whose person-carried residual is both destroyed by replacement
+    in the owner-operated population and exercised at operating frequency, so that its loss cannot be
+    absorbed by deferring anything.
   falsification: Another tier's person-carried residual shown to be drawn at operating frequency under
     replacement, or Tier 5's shown to be deferrable without production degrading.
 - claim_id: P5

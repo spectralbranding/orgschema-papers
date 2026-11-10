@@ -26,7 +26,7 @@ meta:
   - separability diagnostic
   abstract: 'Mergers and acquisitions destroy value at high rates because scholars and practitioners lack
     a shared ontology specifying which organizational layers transfer and how failures propagate across
-    them. This paper develops a six-tier ontology of the acquisition target — Owner Intent, Business Model,
+    them. This paper develops a six-tier ontology of the acquisition target — Intent, Business Model,
     Business Entity, Product, Process, and Organization — each with a distinct governor, specification
     surface, and transferability mode. The tiers form dual oppositely directed hierarchies: a service
     hierarchy upward from Organization to Intent and a constraint hierarchy downward from Intent to Organization.
@@ -62,7 +62,7 @@ claims:
   - SF1
 - id: P2
   type: proposition
-  statement: An acquisition target decomposes into exactly six tiers — Owner Intent, Business Model, Business
+  statement: An acquisition target decomposes into exactly six tiers — Intent, Business Model, Business
     Entity, Product, Process, Organization — each individuated by a distinct GOVERNOR (force that sets
     the tier's configuration), a distinct SPECIFICATION SURFACE (observable artifacts), and a distinct
     TRANSFERABILITY MODE (mechanism by which the tier does or does not cross an ownership boundary).
@@ -73,13 +73,16 @@ claims:
   - P1
 - id: P3
   type: proposition
-  statement: 'The six tiers are objects of heterogeneous ontological type (a latent psychological state,
-    an abstract projection, a legal artifact, operational realities) unified under a single instrumental
-    axis — transferability mode: the question is not "are they the same kind of thing?" but "what happens
-    to each kind of thing when it crosses a new-owner boundary?" This answers the ontological-mixing objection
-    and distinguishes the framework from prior layered firm ontologies (Zachman, Osterwalder, BIZBOK,
-    DEMO), none of which combine a distinct Owner-Intent tier above the Business Model, a distinct Business-Entity
-    legal tier, per-tier transferability modes, dual hierarchies, and an M&A application.'
+  statement: 'The six tiers are objects of heterogeneous ontological type (the intents of the positions
+    that deal with the business, an abstract projection, a legal artifact, operational realities) unified
+    under a single instrumental axis — transferability mode: the question is not "are they the same kind
+    of thing?" but "what happens to each kind of thing when it crosses a new-owner boundary?" This answers
+    the ontological-mixing objection and distinguishes the framework from prior layered firm ontologies
+    (Zachman, Osterwalder, BIZBOK, DEMO), none of which combine a distinct Intent tier above the Business
+    Model, a distinct Business-Entity legal tier, per-tier transferability modes, dual hierarchies, and
+    an M&A application. The six tiers are the configuration the analyst''s position chose for the transferability
+    task; six is not derived from transferability, and other positions read the same business in their
+    own ontologies, so translation into the six tiers loses content.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -87,11 +90,14 @@ claims:
   - P2
 - id: P4
   type: proposition
-  statement: 'Tier 1 (Owner Intent) attaches to the controlling principal, not to the asset, and only
-    IMPRINTS onto the asset''s downstream tiers. Consequently Tier 1 is REPLACED, not transferred, across
-    ownership change: a new principal supplies a new Tier 1 imprint while Tiers 2-6 carry forward (subject
-    to the integration cascade). A single principal controlling multiple assets carries a per-asset Tier
-    1, drawn from one archetype distribution but expressing differently per asset.'
+  statement: 'Tier 1 (Intent) is bound to positions, not to the asset. Each position that deals with the
+    business has an intent regarding it; the controlling position''s intent (Owner Intent) is the one
+    the business''s bodies adopt by decision, and it only IMPRINTS onto the asset''s downstream tiers.
+    At a change of control the controlling intent is REPLACED, not transferred: a new principal supplies
+    a new Tier 1 imprint while Tiers 2-6 carry forward (subject to the integration cascade), and the other
+    positions'' intents persist with those positions. A single principal controlling multiple assets carries
+    a per-asset controlling intent, drawn from one archetype distribution but expressing differently per
+    asset. That the business has no intent of its own restates the nexus-of-contracts view of the firm.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -134,9 +140,10 @@ claims:
   - P6
 - id: P1F
   type: proposition
-  statement: 'P1 (Intent-Model Misalignment): when an acquirer''s Owner Intent differs structurally from
-    the target''s, the target''s Business Model requires fundamental revision, generating downstream Tier
-    4/Tier 5 friction not visible in pre-close due diligence.'
+  statement: 'P1 (Intent-Model Misalignment): when an acquirer''s controlling intent differs structurally
+    from the target''s configuration and from the intents behind the commitments that carry over, the
+    target''s Business Model requires fundamental revision, generating downstream Tier 4/Tier 5 friction
+    not visible in pre-close due diligence.'
   testable: true
   tested_in_paper: false
   status: not_tested
@@ -240,11 +247,14 @@ claims:
   - P5
 - id: P10
   type: proposition
-  statement: 'Capital allocation across tiers carries a flow-versus-stock character that varies systematically
-    by tier position: Tier 6 spend (marketing, PR) is predominantly flow consumption (low transferable
-    value); Tier 2-5 spend (model architecture, governance, product/process codification) is predominantly
-    stock accumulation (high transferable value). Each tier carries a distinct half-life and substrate-accumulation
-    coefficient; the transferability and accumulation classifications ALIGN.'
+  statement: 'Capital allocation carries a flow-versus-stock character that varies systematically with
+    the tier a spend item labels. Spend is stock when it writes a specification on Tiers 2-5 (model architecture,
+    governance, product/process codification: high transferable value), partly stock on Tier 6 (abilities
+    that leave with people), and flow when it only runs functioning (low transferable value). Marketing
+    campaigns and public relations are flow on Tier 2 channels; a brand redesign that rewrites the brand
+    specification is Tier 4 stock; the Tier 6 part of marketing is the department''s people. Each spend
+    item carries a tier label and its own half-life and substrate-accumulation coefficient; the transferability
+    and accumulation classifications ALIGN.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -281,9 +291,10 @@ claims:
   type: proposition
   statement: Cross-form acquisitions face Tier 1 MISSPECIFICATION risk no standard due-diligence checklist
     captures, because financial due diligence examines Tier 3 and not Tier 1 compatibility. A cooperative's
-    collectively held, democratically governed Tier 1 cannot be transferred without being replaced by
-    a fundamentally different Intent (a credit union cannot be acquired by a bank without member consent).
-    Privatization is the most tractable natural experiment for testing the form-mismatch principle.
+    controlling intent is collectively held (the members are the controlling position) and democratically
+    governed; it cannot be transferred without being replaced by a fundamentally different Intent (a credit
+    union cannot be acquired by a bank without member consent). Privatization is the most tractable natural
+    experiment for testing the form-mismatch principle.
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -292,16 +303,18 @@ claims:
   - P11
 - id: P14
   type: proposition
-  statement: 'Owner Intent is phrased in the Owner Ontology: the controlling principal''s account of what
-    exists in the business, what its basic terms mean, what is connected to what, and what is absent.
-    The Owner Ontology is one of the stakeholder ontologies of the business, that of the Tier 1 stakeholder,
-    and it is Tier 1 content carried by the same principal, not a seventh tier. It fixes the terms in
-    which questions about the business are worded; Owner Intent fixes which questions are asked. Every
-    stakeholder of the business has a stakeholder ontology of it, and the six-tier ontology of a business
-    is the common language into which these stakeholder ontologies are translated. The Owner Ontology
-    differs from dominant logic, the schema shared by top managers through which they conceptualize the
-    business and allocate resources: it is the controlling principal''s own account, recorded in the principal''s
-    words, and the paper''s interest in it is its division into a shareable and a private part at transfer.'
+  statement: 'Owner Intent, the controlling position''s intent, is phrased in the Owner Ontology: the
+    controlling principal''s account of what exists in the business, what its basic terms mean, what is
+    connected to what, and what is absent. The Owner Ontology is one of the stakeholder ontologies of
+    the business, that of the controlling position, and it is Tier 1 content carried by the same principal,
+    not a seventh tier; the stakeholder ontology of every other position is Tier 1 content of that position.
+    It fixes the terms in which questions about the business are worded; Owner Intent fixes which questions
+    are asked. Every stakeholder of the business has a stakeholder ontology of it, and the six-tier ontology
+    of a business is the common language into which these stakeholder ontologies are translated. The Owner
+    Ontology differs from dominant logic, the schema shared by top managers through which they conceptualize
+    the business and allocate resources: it is the controlling principal''s own account, recorded in the
+    principal''s words, and the paper''s interest in it is its division into a shareable and a private
+    part at transfer.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -337,14 +350,99 @@ claims:
   depends_on:
   - P12
   - P15
+- id: P17
+  type: proposition
+  statement: 'Each position that deals with the business (the owner, a lender, the employees, a union,
+    customers, the state, a potential buyer) has Tier 1 content of two kinds: its Intent (what it wants
+    from the business, its horizon and its exit criteria) and its stakeholder ontology (the terms in which
+    it reads the business). Neither is a seventh tier or a separate axis. A position is a standpoint from
+    which a subject and an intent are formed: the analyst''s or a party''s. The six-tier matrix is position-symmetric
+    (every position has the same row: its intent at Tier 1, its commitments at Tiers 2-6) and not observer-free:
+    the analyst''s position configures it.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P4
+  - P14
+- id: P18
+  type: proposition
+  statement: 'The owner''s special status among the positions that deal with the business is control,
+    a Tier 3 field: the residual decision rights fixed by the legal form (charter, cap table). The controlling
+    intent is the one the business''s bodies adopt by decision; the other positions'' intents act through
+    the commitments the business accepts.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P4
+  - P5
+- id: P19
+  type: proposition
+  statement: The tier of a commitment is the tier of the field that reads its parameter; its author and
+    its recording document are recorded separately. Tier 1 contains only parameters of a position (what
+    the position wants from this business, and its terms), never parameters of the business. An aim that
+    a family keep at least a stated share of the capital is a Tier 3 parameter (the cap table); an aim
+    of making a stated sum on this business by a stated year is Tier 1. A loan is a Tier 3 obligation,
+    and a covenant in it on customer concentration constrains a Tier 2 parameter.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P17
+  - P18
+- id: P20
+  type: proposition
+  statement: 'A trademark is three objects on two tiers. The right to use a sign for given classes in
+    a given territory is a Tier 3 asset of the entity. The sign as specified (its form and the rules for
+    its use) is Tier 4, the brand specification only. The perception the emissions produce is held by
+    observers and lies outside the six tiers. Every Tier 4 parameter reads two ways, as acceptance (does
+    the product meet its specification) and as emission (what signal it sends), and both are objective
+    at the specification level: the business specifies what it emits, not what is perceived.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P2
+  - P18
+- id: P21
+  type: proposition
+  statement: 'Two cases illustrate the split in P20 without extending it. An API service reachable by
+    IP only, with no name and no certificate-bound name, has a complete acceptance specification at Tier
+    4. It has no sign, so no mark right at Tier 3; its emissions are its behaviour. An IP address is an
+    assigned locator, not a sign; a certificate-bound name is one. The name Pizza Napoletana is entered
+    in the EU register of traditional specialities guaranteed with reservation of the name: the right
+    to the reserved name is a Tier 3 right whose content is a Tier 4 specification, and before the reservation
+    one name could cover products made to many specifications, an arrangement analogous to metamerism.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P20
+- id: P22
+  type: proposition
+  statement: 'A machine or software agent that executes work is not Tier 6. Its specification (model,
+    prompts, policies, tools, workflow) is a codified record at Tier 5; contracts with model and platform
+    vendors are Tier 3 records; the persona a customer meets belongs to the Tier 4 specification where
+    it is specified. Tier 6 stays people and culture, including the people who set an agent''s norm, accept
+    its output and can stop it, because only persons and legal entities carry obligations. Replacing people
+    with an agent moves execution from Tier 6 to Tier 5, from tacit to codified: transferability rises,
+    and risk moves to the few people who maintain the agent (Tier 6) and to the vendor terms (Tier 3).'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P2
+  - P18
 methodology:
   type: theoretical
   design: Theoretical derivation.
 acceptance:
 - claim_id: P1F
-  criterion: 'Holds if P1 (Intent-Model Misalignment): when an acquirer''s Owner Intent differs structurally
-    from the target''s, the target''s Business Model requires fundamental revision, generating downstream
-    Tier 4/Tier 5 friction not visible in pre-close due diligence.'
+  criterion: 'Holds if P1 (Intent-Model Misalignment): when an acquirer''s controlling intent differs
+    structurally from the target''s configuration and from the intents behind the commitments that carry
+    over, the target''s Business Model requires fundamental revision, generating downstream Tier 4/Tier
+    5 friction not visible in pre-close due diligence.'
   falsification: For-profit acquisitions of mission-primary targets show no greater rate of Model revision
     / downstream disruption than financially equivalent for-profit-to-for-profit deals.
 - claim_id: P2F
@@ -405,7 +503,9 @@ dependencies:
 - relationship: extends
   claim: 'The compositional grammar over this paper''s tier graph: deal types as typed bundles of fork
     operations, with cascade rules and admissibility conditions inherited from the collapse patterns.
-    The companion the Future-Research subsection announced, now published and cited.'
+    The companion the Future-Research subsection announced, now published and cited. Its tables are the
+    formal source for the two deal types the text names: an asset deal leaves Tier 3 empty and forks Tier
+    6 partially; an acqui-hire forks Tier 6 one to one while the seller''s Tier 3 dissolves.'
   critical: false
   doi: 10.5281/zenodo.21756077
 - relationship: tests
@@ -428,6 +528,18 @@ dependencies:
   critical: false
   doi: 10.5281/zenodo.21868658
 - relationship: applies
+  claim: 'AI-native brand identity: machine observers read structured data and behaviour, and the cryptographic
+    signature is the machine-side identifier. Cited for the illustration of a product with no sign (an
+    API service reachable by IP only).'
+  critical: false
+  doi: 10.5281/zenodo.19391476
+- relationship: applies
+  claim: 'Spectral metamerism defines metamerism for a projection of 8D profiles onto a grade. Cited for
+    an analogy only: one category name over many specifications is analogous to metamerism, not an instance
+    of it.'
+  critical: false
+  doi: 10.5281/zenodo.18945352
+- relationship: applies
   claim: The Projection Cascade supplies the formal junction-localized rank- deficiency bound + sub-additivity
     inequality the dual-hierarchy framework proposes at the ontological level (bidirectional propagation).
   critical: false
@@ -440,11 +552,31 @@ dependencies:
     normative public-service mandate.
   doi: 10.2307/2235248
 - relationship: extends
+  claim: Jensen & Meckling 1976 — the firm as a nexus of contracts, and the personification of the firm
+    as misleading. Cited for the restatement that the business has no intent of its own; the placement
+    of intent at Tier 1 as a parameter of positions is this paper's addition.
+  reference: jensen-1976-theory-firm-managerial
+- relationship: extends
+  claim: Commission Implementing Regulation (EU) 2022/2313 entering the name Pizza Napoletana in the register
+    of traditional specialities guaranteed with reservation of the name; the product specification is
+    deemed the specification of that entry. Cited for the existence and form of the entry, not for any
+    specification parameter.
+  reference: eu-2022-reg-2313-pizza-napoletana
+- relationship: extends
   claim: Prahalad & Bettis 1986 — dominant logic, the way top managers conceptualize the business and
     make critical resource-allocation decisions. Used to distinguish the Owner Ontology (the controlling
     principal's own account, recorded in the principal's words) from the shared managerial schema; it
     supports nothing about transfer at exit or about stakeholder positions other than top management.
   doi: 10.1002/smj.4250070602
+- relationship: extends
+  claim: Shchedrovitsky 1981 essay (reprinted 1995), p. 98 — methodology works with the multiplicity of
+    an actor's positions toward one object and with different representations of that object. Precedent
+    for reading one business from several positions; it supports nothing about the six-tier configuration.
+  reference: shchedrovitsky-1995-izbrannye-trudy
+- relationship: extends
+  claim: Acemoglu & Restrepo 2018 — automation as the replacement of labor in tasks; the frame for moving
+    execution from people to an agent.
+  doi: 10.1257/aer.20160696
 contradictions: []
 limitations:
 - description: 'The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end empirical support;
@@ -479,6 +611,15 @@ limitations:
   addressable: true
 - description: 'Dispersed ownership also multiplies ontologies: co-principals may word the same Intent
     in different stakeholder ontologies, and the framework as stated assumes a single Owner Ontology.'
+  severity: moderate
+  addressable: true
+- description: 'Where ownership is dispersed the controlling intent is a vector, which differs from the
+    plurality of positions'' intents that every business has. In a VC-backed start-up the usual Tier 1
+    event is a change of the controlling intent without a sale: the investors exercise control, a Tier
+    3 field, through the board, and the founder''s intent persists as the intent of a non-controlling
+    position while the founder keeps equity and exits with the founder. The founder departure in Table
+    3 is a different case, the end of Tier 6 knowledge transfer after an acquisition. The extension to
+    dispersed-ownership structures is not worked through here.'
   severity: moderate
   addressable: true
 repositories:

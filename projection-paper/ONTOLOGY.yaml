@@ -14,7 +14,7 @@ owns:
   - term_key: projection-cascade
     label: "Projection Cascade"
     canonical_form: "projection cascade"
-    definition: "A six-tier sequence of rank-reducing linear projection operators linking owner intent, business model, governance, architecture, routines, and positions, in which each junction carries a rank deficiency that bounds downstream information loss."
+    definition: "A six-tier sequence of rank-reducing linear projection operators linking intent, business model, business entity and governance, product architecture, process routines, and organization, in which each junction carries a rank deficiency that bounds downstream information loss."
     first_section: "3. The Projection Cascade"
   - term_key: cascade-equilibrium
     label: "Cascade Equilibrium"
@@ -24,7 +24,7 @@ owns:
   - term_key: position-triple
     label: "Position Triple"
     canonical_form: "position triple"
-    definition: "The formal decomposition of any position as p = (P_p, A_p, R_p), where perceptual content inherits from routines, authority inherits from governance, and role expectation inherits from cultural commitments."
+    definition: "The formal decomposition of any position as p = (P_p, A_p, R_p), where perceptual content inherits from routines, authority inherits from governance, and role expectation descends from the controlling intent and is written into Tier 6 culture."
     first_section: "4 — Position Formalization"
 
 imports:
@@ -33,6 +33,11 @@ imports:
   - {term_key: stakeholder-ontology}
   - {term_key: owner-ontology}
   - {term_key: ontology-dependent-records}
+  - {term_key: tier-2-business-model}
+  - {term_key: tier-3-business-entity}
+  - {term_key: tier-4-product}
+  - {term_key: tier-5-process}
+  - {term_key: tier-6-organization}
 
 refines: []
 

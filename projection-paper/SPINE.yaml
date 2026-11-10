@@ -29,8 +29,9 @@ thesis: |
   achieve effect-sizes geometrically smaller than interventions at deeper tiers
   — each deeper tier carries content already compressed in transit to the
   surface. Organizations are formalized as a six-tier projection cascade linking
-  owner intent (T_1), business model (T_2), governance (T_3), architecture
-  (T_4), routines (T_5), and positions (T_6), where each junction is a
+  intent (T_1), business model (T_2), business entity and governance (T_3),
+  product architecture (T_4), process routines (T_5), and organization (T_6),
+  where each junction is a
   rank-reducing linear operator Pi_{i->i+1} with rank deficiency r_i >= 0. A
   unique cascade-equilibrium exists under tier-by-tier Banach contractions
   (Theorem 1); total information loss is bounded by the sum of local nullities,
@@ -41,7 +42,8 @@ thesis: |
   cascade restrictions, so the field's apparent fragmentation is a partial-view
   artifact rather than ontological disagreement. A position triple
   p = (P_p, A_p, R_p) decomposes any T_6 position into perceptual content from
-  T_5, authority from T_3, and role expectation from T_1. The apparatus entails
+  T_5, authority from T_3, and role expectation from the controlling intent at
+  T_1, written into T_6 culture. The apparatus entails
   four falsifiable propositions (P1 cascade-distance scaling, P2 strict downward
   propagation of basis rotation under AI deployment, P3 variance amplification,
   P4 algebraic decoupling) that no single tradition derives in isolation.
@@ -52,12 +54,13 @@ thesis: |
 boundary_conditions:
   - id: C1
     statement: >-
-      Bounded T_1 (cultural-choice space): B_1 must be bounded — firms operate
-      within a finite cultural-strategic envelope (Hofstede dimensional bounds;
-      Schein inertial bounds). Firms in existential transition (partnership in
-      dissolution, pre-product startup) admit no cascade-equilibrium.
-    observable: "Firm is a going concern with a defined, bounded owner-intent set."
-    excludes: "Firms whose owner intent is unbounded or undefined."
+      Bounded T_1 (intent space): B_1 must be bounded — an intent is specified
+      by finitely many parameters (purpose, horizon, exit criteria), with
+      bounded rationality (Csaszar) as the empirical anchor. Firms in
+      existential transition (partnership in dissolution, pre-product startup)
+      admit no cascade-equilibrium.
+    observable: "Firm is a going concern with a defined, bounded controlling intent."
+    excludes: "Firms whose controlling intent is unbounded or undefined."
     body_sections: ["§3.4 Scope conditions (i)"]
   - id: C2
     statement: >-
@@ -77,7 +80,7 @@ boundary_conditions:
     body_sections: ["§3.4 Scope conditions (iii)"]
   - id: C4
     statement: >-
-      Static-cascade frame: T_1 (owner intent) is exogenous to the cascade
+      Static-cascade frame: T_1 (the controlling intent) is exogenous to the cascade
       dynamics over the analysis horizon. Regime transitions in which T_6
       enactment retroactively reshapes T_1 (post-crisis re-foundation,
       generational succession, identity reformation) lie outside the apparatus.
@@ -145,7 +148,9 @@ propositions:
   - id: P1
     statement: >-
       Organizations are six finite-dimensional real content-tiers T_1..T_6
-      (deepest owner intent to shallowest org-chart position) linked by linear
+      (from the deepest, the controlling intent, to the shallowest empirical
+      surface, the org chart as one coordinate of the Organization tier) linked
+      by linear
       projection operators Pi_{i->i+1}: T_i -> T_{i+1} in the rank-reducing
       (not idempotent) sense, with rank deficiency r_i := d_i - rank(Pi_{i->i+1})
       >= 0. The composite cascade Pi := Pi_{5->6} o ... o Pi_{1->2} is
@@ -220,6 +225,8 @@ propositions:
     evidence:
       - type: derivation
         anchor: "Tier-by-tier parametric Banach contraction; inductive stacking of fixed points (Appendix A)."
+      - type: derivation
+        anchor: "Merger reading of the Lipschitz bound: the bound is stated for a perturbation of x_1, the controlling intent, so a merger in which the controlling intent changes most at closing (T_1) is the large-perturbation case. Only the controlling intent is replaced at closing; the intents of the other positions persist. That failure rates also rise where the cultures differ most (T_6) is an empirical expectation, not a consequence of the bound."
       - type: citation
         anchor: "Banach 1922; Smart 1974; Granas & Dugundji 2003 parametric fixed-point theorem."
         citation_keys: []
@@ -263,10 +270,12 @@ propositions:
       P_p is the image under Pi_{5->6} of a T_5 process-trajectory (what the
       position does), authority allocation A_p is a coordinate of Pi_{3->6}(x_3)
       (what the position can decide), and role expectation R_p is a coordinate of
-      the full composite Pi_{1->6}(x_1) (what the position means). Position is a
-      cascade-coordinate object whose three channels inherit from distinct
-      upstream tiers — the first formal decomposition respecting multi-channel
-      inheritance from culture, contract, and routine.
+      the full composite Pi_{1->6}(x_1) (what the position means). R_p descends
+      from the controlling intent at T_1 and is written into T_6 culture.
+      Position is a cascade-coordinate object whose three channels inherit from
+      distinct upstream tiers — the first formal decomposition respecting
+      multi-channel inheritance from the controlling intent (written into
+      culture), contract, and routine.
     conditions: ""
     antecedents: [P1, P3]
     evidence:
@@ -290,6 +299,8 @@ propositions:
     evidence:
       - type: derivation
         anchor: "Theorem 1 Lipschitz product restricted to the (i,6) coordinate pair; equation (5)."
+      - type: derivation
+        anchor: "Coding rule for tier-of-intervention: culture change belongs to T_6 and is coded as a separate item, so that it does not confound the T_6-only comparison."
       - type: citation
         anchor: "Testable on reorganization-outcome panels with tier-of-intervention coded (Kunisch et al.; Barkema-Schijven)."
         citation_keys: []
@@ -303,7 +314,8 @@ propositions:
       (perceptual content, via Pi_{5->6}) while leaving A_p (authority, via
       Pi_{3->6}) and R_p (role expectation, via Pi_{1->6}) invariant — provided
       the deployment does not penetrate the T_3 legal-personhood floor or the
-      T_1 cultural-constitutional floor.
+      T_1 intent floor. The AI shock changes T_6 practice (P_p), not the
+      controlling intent from which R_p descends, so R_p stays invariant.
     conditions: "C4"
     antecedents: [P3, P8]
     evidence:
@@ -356,8 +368,9 @@ propositions:
   - id: P13
     statement: >-
       Translation step before T_1: T_1 content is first stated in a stakeholder
-      ontology, for the owner as controlling principal the Owner Ontology, in
-      that position's own words. Let O_s be that content space, a
+      ontology, which is itself Tier 1 content of its position; for the
+      controlling position, the owner as controlling principal, it is the Owner
+      Ontology. The content is stated in that position's own words. Let O_s be that content space, a
       finite-dimensional real vector space, and Theta_s: O_s -> T_1 the linear
       translation into the six-tier ontology of a business, with nullity
       r_0 := dim(O_s) - rank(Theta_s), in the same notation as r_i :=
@@ -386,7 +399,7 @@ propositions:
     body_sections: ["§3.3 Corollary 1 (remark)"]
   - id: P15
     statement: >-
-      Ownership change replaces Theta_s as well as the owner-intent input: the
+      Ownership change replaces Theta_s as well as the controlling-intent input: the
       incoming principal reads T_1 to T_6 through a different Owner Ontology,
       and records written in the prior one become ontology-dependent records.
       The translation Theta_s, and its nullity r_0, are not measured in this
@@ -418,7 +431,7 @@ methods:
     type: "monte_carlo_construction"
     inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); target kappa vector"]
     outputs: ["per-junction kappa_i, L_i, rank, r_i, iterations, convergence distances; composite rank; sub-additivity gap"]
-    code_anchor: "code/cascade_numerical_example.py"
+    code_anchor: "https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper/code/cascade_numerical_example.py"
     reproducibility:
       seed: "2026"
       runtime_environment: "Python 3.12 + numpy via uv"
@@ -434,7 +447,7 @@ methods:
     type: "comparative_simulation"
     inputs: ["seed 2026; dimension profile (4,4,3,3,2,2); five restriction active-junction patterns"]
     outputs: ["per-restriction P3 Lipschitz product; P4 strict-inequality detectability flag"]
-    code_anchor: "code/cascade_numerical_example.py --compare"
+    code_anchor: "https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper/code/cascade_numerical_example.py --compare"
     reproducibility:
       seed: "2026"
       runtime_environment: "Python 3.12 + numpy via uv"
@@ -522,7 +535,8 @@ limitations:
   - id: L1
     statement: >-
       The apparatus is static (scope condition iv): regime transitions in which
-      T_6 enactment retroactively reshapes T_1 (Weick enactment) require a
+      T_6 enactment (structure and the culture written into it) retroactively
+      reshapes the intent at T_1 (Weick enactment) require a
       dynamic extension with a longer-horizon Pi_{6->1}-style operator that is
       outside the present paper and flagged as future work.
     severity: "scope-bounding"
@@ -624,6 +638,7 @@ external_anchors:
   - {citation_key: joseph-sengul-2025-organization-design, role: gap_diagnosis, spine_nodes: [P0], note: "Diagnoses the fragmentation the cascade resolves"}
   - {citation_key: pentland-feldman-2005-routines-unit-analysis, role: construct_basis, spine_nodes: [P3], note: "Ostensive/performative duality grounds the basis-rotation construct"}
   - {citation_key: barkema-schijven-2008-firms-learn-acquisitions, role: empirical_anchor, spine_nodes: [O3, P9], note: "~60% reorganization-failure meta-analytic estimate"}
+  - {citation_key: csaszar-2013-efficient-frontier-organization, role: empirical_anchor, spine_nodes: [C1], note: "Bounded-rationality account behind the finite-parameter bound on the intent space T_1"}
   - {citation_key: kunisch-2017-time-strategic-change, role: empirical_anchor, spine_nodes: [O3, P9], note: "Process reframing of strategic change; tier-of-intervention test anchor"}
   - {citation_key: brynjolfsson-2025-generative-ai-work, role: empirical_anchor, spine_nodes: [O2], note: "Content-shift within stable structure (15% gain, titles unchanged)"}
   - {citation_key: bloom-2019-management-practices, role: empirical_anchor, spine_nodes: [P11], note: "Cross-firm management-practice variance — antecedent to P3"}

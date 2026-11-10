@@ -103,10 +103,14 @@ propositions:
       upward service hierarchy (the same relationships viewed from opposite
       directions). The algebra rests on three structural assumptions, stated
       explicitly as axioms of this paper and taken as given (not established
-      here): (A) the Tier-1 attribution refinement — Tier 1 attaches to the
-      controlling-principal substrate, not the asset substrate, and is
-      replaced rather than transferred under any ownership-changing
-      transaction; (B) Tier-3 jurisdictional mutability — the legal vehicle
+      here): (A) the Tier-1 attribution refinement — Tier 1 is the intent of
+      every position that deals with the business and attaches to those
+      positions, not to the asset substrate; in the operators, tokens and
+      collapse states of the algebra Tier 1 denotes the controlling intent,
+      which attaches to the controlling-principal substrate and is replaced
+      rather than transferred under any ownership-changing transaction, while
+      the other positions' intents persist and are not operands (see C6);
+      (B) Tier-3 jurisdictional mutability — the legal vehicle
       can swap while Tiers 2, 4, 5, 6 continue undisrupted; (C) the
       tier-collapse states (T1≡T4 Domain Craftsman/Family Steward/Mission
       Founder; T1≡T3 sole-proprietor) at which the fused tier inherits
@@ -150,9 +154,11 @@ propositions:
       identity — the only well-typed lateral operation, reserved for Tier
       3), split-time (fork across a discrete time boundary within one
       continuing principal, no ownership-boundary crossing)}. φ_n is
-      well-typed only when source and target share the tier index; Tier 1
-      admits no well-typed fork under any direction other than replace,
-      because its transferability mode is imprint-only.
+      well-typed only when source and target share the tier index; the
+      controlling intent at Tier 1 admits no well-typed fork under any
+      direction other than replace, because its transferability mode is
+      imprint-only. The record over which φ_n operates is the record mapped
+      to a tier-n field; one record may carry labels of several fields.
     conditions: "Depends on P1 (the tier graph and its three imported premises)."
     antecedents: [P1]
     evidence:
@@ -199,7 +205,9 @@ propositions:
           canonical signature directly from that type's own operative
           definition — asset deal = {T4,T5,T6-partial} transfer; carve-out =
           subset of same; acqui-hire = {T6} alone; roll-up = {T4,T5} N-to-1
-          merge; spin-out = 1-to-N split; franchise = read-only {T4}; intra-
+          merge; spin-out = 1-to-N split; franchise = read-only {T4} with the franchisee's
+          controlling intent continuing at Tier 1 (the franchisor acts
+          through the Tier 3 licence); intra-
           business pivot = T4 split-time; redomiciliation = T3 swap alone;
           sole-proprietor wind-down = terminate+reconstruct; merger of
           equals / reverse merger / joint venture / asset swap = the
@@ -581,15 +589,17 @@ propositions:
   - id: C3
     statement: >-
       Scope of Assumption A: the Owner Ontology — the stakeholder ontology of
-      the owner, the tier-1 stakeholder, in which Owner Intent is phrased — is
-      Tier 1 content and is replaced with it; the buyer reads the asset in the
-      buyer's own ontology. Only the shareable part of the seller's Owner
-      Ontology (the seller's terms as used in the records, verbatim, together
-      with the list of ontology-dependent records) can cross the boundary, as a
-      document; the private part (deliberate absences, causal beliefs, sources
-      of the edge, values, and the judgement of people) exits with the
-      seller-principal. The Tier-1 tier record is accordingly stated as stated
-      purpose, horizon, and exit criteria phrased in the Owner Ontology.
+      the controlling position, in which the controlling intent is phrased —
+      is Tier 1 content of that position and is replaced with it; the buyer
+      reads the asset in the buyer's own ontology. Only the shareable part of
+      the seller's Owner Ontology (the seller's terms as used in the records,
+      verbatim, together with the list of ontology-dependent records) can
+      cross the boundary, as a document; the private part (deliberate
+      absences, causal beliefs, sources of the edge, values, and the judgement
+      of people) exits with the seller-principal. The Tier-1 tier record is
+      accordingly stated, for each position, as its purpose, what it wants
+      from the business, horizon, and exit criteria, phrased in its
+      stakeholder ontology (for the controlling position, the Owner Ontology).
     antecedents: [P1, P2]
     body_sections: ["Preliminaries (Assumption A)", "Fork Operations and Tier-Bundles (tier record)"]
 
@@ -620,6 +630,25 @@ propositions:
       translates into its own ontology with loss.
     antecedents: [C2, C3, C4, P6]
     body_sections: ["Bundle-Signature Taxonomy (Table 3 notes)", "Boundary Conditions"]
+
+  - id: C6
+    statement: >-
+      Scope of Tier 1 in the algebra: Tier 1 is the intent of every position
+      that deals with the business. In the operators, tokens and collapse
+      states of this paper, Tier 1 denotes the controlling intent, which is
+      replaced at a change of control. The intents of the other positions are
+      not operands: they stay with their positions, persist through every
+      bundle, and act on a deal through commitments recorded at Tiers 2-6
+      (change-of-control clauses, covenants, employment terms). In an
+      acqui-hire the cascade rule blocks any cascade from Tier 6 to the
+      controlling intent; the employees' own intents travel with them as their
+      position's Tier 1 content. In a franchise the franchisee's controlling
+      intent continues, and the franchisor is a non-controlling position
+      acting through the Tier 3 licence, so the franchise row carries the
+      Tier-1 token continue. The algebra (tokens, κ, α, the signature tables)
+      is otherwise unchanged.
+    antecedents: [P1, P2, P5]
+    body_sections: ["Preliminaries (Assumption A)", "Fork Operations and Tier-Bundles (Tier 1 tokens)", "Cascade Rule and Service-Hierarchy Asymmetry", "Bundle-Signature Taxonomy (Tables 2 and 4, franchise)"]
 
   - id: L1
     statement: >-

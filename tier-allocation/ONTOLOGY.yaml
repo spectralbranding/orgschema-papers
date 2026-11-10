@@ -24,12 +24,12 @@ owns:
   - term_key: tier-independence-overestimation
     label: "Tier-independence overestimation problem"
     canonical_form: "tier-independence overestimation problem"
-    definition: "The error of attributing durable-stock value to a target whose revenue-generating assets are constitutively flow-dependent (high Tier-6), producing goodwill premiums that exceed the substrate that actually transfers."
+    definition: "The error of attributing durable-stock value to a target whose revenue-generating assets are constitutively flow-dependent (high marketing flow on Tier 2 channels), producing goodwill premiums that exceed the substrate that actually transfers."
     first_section: "Six-Tier Architectural Scaffold"
 
 imports:
   - {term_key: six-tier-ontology}
-  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-1-intent}
   - {term_key: tier-2-business-model}
   - {term_key: tier-3-business-entity}
   - {term_key: tier-4-product}

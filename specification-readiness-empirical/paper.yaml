@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20384084
-  date: '2026-08-15'
+  date: '2026-11-11'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -181,32 +181,35 @@ acceptance:
 - claim_id: P3
   criterion: Holds if (H1) Within firms, after firm and year fixed-effects absorption, an increase in
     continuous SCI predicts a decrease in aggregate function-layer spending as a share of revenue (β ≈
-    −.
+    −.08; Cohen's d .5; negative).
   falsification: H1 is falsified if SCI is uncorrelated with functional spend share after firm-and-year
     FE, a one-year SCI lag, and the SOX/EEOC instrument supplements.
 - claim_id: P4
-  criterion: Holds if (H2) Conditional on revenue cohort and industry×year cell, an increase in continuous
+  criterion: 'Holds if (H2) Conditional on revenue cohort and industry×year cell, an increase in continuous
     SCI predicts an increase in brand-capital growth net of depreciation (Belo-Lin-Vitorino perpetual
-    inventory, δ₆ =.
+    inventory, δ₆ = .50): as codification rises, less marketing budget is consumed by interface-coherence
+    maintenance and more accrues to net brand-capital accumulation (β ≈ −.12 on the inverted functional-headcount-to-brand-capital
+    outcome; Cohen''s d .3).'
   falsification: H2 is falsified if functional-headcount growth predicts brand-capital accumulation positively
     after IV correction using regulatory-compliance shocks.
 - claim_id: P5
   criterion: Holds if (H3) Firms with documented cross-interface contradictions (mean pairwise NLP cosine
     distance across three interface pairs) exhibit higher cross-stakeholder valuation dispersion than
-    coherent-specification firms, after firm and year FE (β ≈ +.
+    coherent-specification firms, after firm and year FE (β ≈ +.10; Cohen's d .4; positive).
   falsification: H3 is falsified if the contradiction index does not predict dispersion after register-calibration
     distinguishing substantive contradictions from linguistic-register differences.
 - claim_id: P6
   criterion: Holds if (H4) Firms with high continuous SCI in the year before first major AI deployment
     realize higher AI-ROI (change in interface-maintaining functional headcount in [t+1,t+2] per AI-related
-    dollar) than low-SCI firms (β ≈ +.
+    dollar) than low-SCI firms (β ≈ +.15; Cohen's d .5; positive).
   falsification: H4 is falsified if pre-deployment SCI does not predict the functional- headcount-to-AI-spend
     ratio after CEO-transition IV correction, with the reduced-form CEO-transition effect on AI-ROI reported
     as placebo.
 - claim_id: P7
-  criterion: Holds if (H5) High-push-intensity firms (top XAD/SALE quintile) exhibit larger negative cumulative
-    abnormal returns following advertising-spend-cessation events than low-push-intensity firms (CAR differential
-    ≈ −15 pp in [0,+1yr]; Cohen's d.
+  criterion: 'Holds if (H5) High-push-intensity firms (top XAD/SALE quintile) exhibit larger negative
+    cumulative abnormal returns following advertising-spend-cessation events than low-push-intensity firms
+    (CAR differential ≈ −15 pp in [0,+1yr]; Cohen''s d .7; negative): push-dependent firms collapse faster
+    than pull-capable firms when force is withdrawn.'
   falsification: H5 is falsified if high-push firms do not show larger negative CARs after distress-event
     exclusion and propensity-score reweighting on pre-event fundamentals.
 dependencies:

@@ -14,7 +14,7 @@ owns:
   - term_key: tier-rotation
     label: "Tier rotation"
     canonical_form: "tier rotation"
-    definition: "The deliberate, multi-decade migration of brand signal from a founder-bound Tier-1 substrate into an institutionally separable Tier-4 product-brand substrate via knowledge externalization."
+    definition: "The deliberate, multi-decade migration of brand signal within the Tier-4 specification from the tacit, founder-held part to the written, institutionally separable part, via knowledge externalization."
     first_section: "Introduction"
   - term_key: tier-rotation-curve
     label: "Tier-Rotation Curve"
@@ -24,7 +24,7 @@ owns:
   - term_key: tier-4-share
     label: "Tier-4 share (s)"
     canonical_form: "Tier-4 share s"
-    definition: "The proportion s in [0,1] of a brand's total observable signal residing in a substrate an acquirer can hold independently of any individual."
+    definition: "The written share s in [0,1] of the Tier-4 brand specification: the part held in a substrate an acquirer can hold independently of any individual. The remainder 1 - s is held tacitly by the founder."
     first_section: "Formal Model — Setup and Definitions"
     relations:
       - {type: contrasts, term_key: ontology-dependent-records, note: "written versus readable: s counts records the acquirer owns, ontology-dependent records are owned but readable only with the founder's Owner Ontology"}
@@ -36,7 +36,7 @@ owns:
   - term_key: rotation-effort-intensity
     label: "Rotation effort intensity (e)"
     canonical_form: "rotation effort intensity e"
-    definition: "The firm's per-period investment in the knowledge-externalization loop that converts founder-bound Tier-1 brand signal into Tier-4 organizational substrate."
+    definition: "The firm's per-period investment in the knowledge-externalization loop that converts the tacit, founder-held part of the Tier-4 brand specification into written Tier-4 organizational substrate."
     first_section: "Formal Model — Setup and Definitions"
 
 imports:

@@ -31,7 +31,7 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
   - The portion of a tier that persists only by person continuity (P) — the part carried in a particular individual's state rather than by the registered entity or by any inspectable artifact. Under removal it is a quantity to be minimized, because no buyer receives it; under replacement it is the only thing at risk.
   - first use: Three Modes of Persistence
 - **Succession-constrained rotation** (write: `succession-constrained rotation`)
-  - Tier rotation constrained by the person-carried Tier-5 residual under Tier-1 replacement: the case where the occupant of Tier 1 is replaced, the entity persists, and nothing is conveyed, so the preparation that raises value under removal and the preparation that raises value under replacement are different investments competing for one budget.
+  - Tier rotation constrained by the person-carried Tier-5 residual under replacement of the controlling intent: the case where the holder of the controlling position is replaced, the entity persists, and nothing is conveyed, so the preparation that raises value under removal and the preparation that raises value under replacement are different investments competing for one budget.
   - first use: Introduction
 - **Successor exposure** (write: `successor exposure`)
   - The accumulated occasions on which a named successor has resolved live exceptions alongside or in place of the incumbent. The pre-transition investment that moves person-carried residual from one person into another, and therefore the one that raises value under replacement. Rate-limited by exception arrival rather than by effort.
@@ -49,7 +49,7 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
   - Records whose meaning depends on the Owner Ontology, so that a reader outside the firm cannot read them correctly without it. Their share is a readiness measure beside fusion.
   - _defined by 2026ag_
 - **Owner Ontology**
-  - The stakeholder ontology of the controlling party (the Tier 1 stakeholder): the terms in which Owner Intent is phrased and most of the firm's records are written. Tier 1 content carried by the same principal as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in which questions about the business are worded, and Owner Intent fixes which questions are asked.
+  - The stakeholder ontology of the controlling position: the terms in which Owner Intent is phrased and most of the firm's records are written. Tier 1 content carried by the same principal as Owner Intent, not a seventh tier: the Owner Ontology fixes the terms in which questions about the business are worded, and Owner Intent fixes which questions are asked.
   - _defined by 2026ag_
 - **private part**
   - The part of the Owner Ontology that generates future records: deliberate absences, causal beliefs, sources of the edge, values, and judgement of people. It stays with the owner and passes to a successor only by the owner's choice.
@@ -58,29 +58,29 @@ _Terms used by **succession-rotation** (Preparing to Sell and Preparing to Hand 
   - The part of the Owner Ontology that is the reading key to existing records: the owner's terms as used in the records, verbatim, and the list of ontology-dependent records. It can pass to a buyer or successor as a document.
   - _defined by 2026ag_
 - **six-tier ontology**
-  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it.
+  - The ontology that decomposes an organization into six nested specification tiers, always in the order Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it. Position-symmetric (every position has the same row: its intent at Tier 1, its commitments at Tiers 2-6) but not observer-free: the analyst's position configures it. Each position's Tier 1 content is its Intent and its stakeholder ontology; the position reads the six tiers in that ontology.
   - _defined by 2026ag_
 - **stakeholder ontology**
-  - A picture of what exists in an activity, what its basic terms mean, what is connected to what, and what is absent, as written from one named position (owner, manager, employee, customer, lender, regulator, buyer, successor), recorded in that position's own words.
+  - A picture of what exists in an activity, what its basic terms mean, what is connected to what, and what is absent, as written from one named position (owner, manager, employee, customer, lender, regulator, buyer, successor), recorded in that position's own words. It is Tier 1 content of its position.
   - _defined by 2026ag_
-- **Tier 1 (Owner Intent)**
-  - Why the organization exists. Governed by founder / board chair / dominant shareholder; implicit or off-table in most professional-CEO companies. Transfers nothing directly, only its imprint on lower tiers.
+- **Owner Intent**
+  - The intent of the controlling position: the instance of Tier 1 (Intent) that the business's bodies adopt by decision. The owner's special status is control, a Tier 3 field. Replaced, not transferred, at a change of control.
   - _defined by 2026ag_
 - **Tier 2 (Business Model)**
-  - How value flows into resources. Governed by the CEO (founder-CEOs collapse Tier 1 into Tier 2). Conceptually replicable; not legally owned.
+  - How value flows into resources. Governed by the CEO (a founder-CEO holds the controlling position and the chief-executive place). Conceptually replicable; not legally owned. Customer concentration is a Tier 2 parameter.
   - _defined by 2026ag_
 - **Tier 3 (Business Entity)**
-  - What is legally registered and saleable (IP, trademarks, contracts, corporate-legal personality). Governed by General Counsel / corporate treasury. Transfers by document. Often absent from AI-strategy meetings.
+  - What is legally registered and saleable (IP, trademarks, contracts, corporate-legal personality). Governed by General Counsel / corporate treasury. Transfers by document. Often absent from AI-strategy meetings. Includes control (residual decision rights fixed by the legal form: charter, cap table) and the registered rights to use a sign (classes, territory).
   - _defined by 2026ag_
 - **Tier 4 (Product)**
-  - What is delivered to whom; includes the brand surface (per Brand-as-Tier-4). CMO governs the brand sub-spec; CTO the technical sub-spec (canonical collision at Tier 4). Transfers if specified; not if tacit.
+  - What is delivered to whom; includes the brand's specification only (the sign, its form and the rules for its use, and its dimensions as specified), per Brand-as-Tier-4. Campaigns and PR are flow on Tier 2 channels; the perception the emissions produce lies outside the six tiers. CMO governs the brand sub-spec; CTO the technical sub-spec (canonical collision at Tier 4). Transfers if specified; not if tacit.
   - _defined by 2026ag_
 - **Tier 5 (Process)**
   - How the product is produced. CFO governs the financial sub-spec; COO the operational sub-spec (canonical collision at Tier 5). Transfers if codified.
   - _defined by 2026ag_
 - **Tier 6 (Organization)**
-  - Who does the producing. Governed by CHRO (sometimes COO). Transfers only partially (retention contracts at best).
+  - The people, roles, culture, tacit knowledge and relational networks that execute the Process; the Tier 6 part of marketing is the department's people. Governed by CHRO (sometimes COO). Transfers only partially (retention contracts at best).
   - _defined by 2026ag_
 - **Tier rotation** (write: `tier rotation`)
-  - The deliberate, multi-decade migration of brand signal from a founder-bound Tier-1 substrate into an institutionally separable Tier-4 product-brand substrate via knowledge externalization.
+  - The deliberate, multi-decade migration of brand signal within the Tier-4 specification from the tacit, founder-held part to the written, institutionally separable part, via knowledge externalization.
   - _defined by 2026ai_

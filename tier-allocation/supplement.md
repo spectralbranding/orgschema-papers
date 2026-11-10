@@ -6,7 +6,7 @@ ORCID: 0009-0000-6893-9231
 
 DOI: [10.5281/zenodo.20072288](https://doi.org/10.5281/zenodo.20072288)
 
-Working Paper v1.1.0 -- May 2026
+Working Paper v1.3.0 -- May 2026 (revised November 2026)
 
 *The main paper is published at https://doi.org/10.5281/zenodo.20072288 and at https://github.com/spectralbranding/orgschema-papers/tree/main/tier-allocation/. The companion computation script is at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py.*
 
@@ -50,7 +50,7 @@ $$w_t^*(r) = \alpha_t / (\delta_t + r)$$
 
 $$\text{dollar-share}_t^*(r) = w_t^*(r) / \Sigma_s \, w_s^*(r) = (\alpha_t / (\delta_t + r)) / \Sigma_s \, (\alpha_s / (\delta_s + r))$$
 
-**Step 6: Sign of $\partial(\text{dollar-share}_6^*)/\partial r$.** For the two-tier reduction (Tier 6 vs. aggregate stock tier $S$):
+**Step 6: Sign of $\partial(\text{dollar-share}_6^*)/\partial r$.** For the two-tier reduction (marketing flow, the item indexed 6, vs. aggregate stock tier $S$):
 
 $$\text{dollar-share}_6^*(r) = [\alpha_6/(\delta_6+r)] / \{[\alpha_6/(\delta_6+r)] + [\alpha_S/(\delta_S+r)]\}$$
 
@@ -70,11 +70,11 @@ The sign of the numerator equals the sign of $(\delta_6 - \delta_S)$. Since $\de
 
 $$\partial(\text{dollar-share}_6^*)/\partial r > 0$$
 
-The optimal Tier-6 dollar-share rises monotonically as $r$ rises. QED.
+The optimal marketing-flow dollar-share rises monotonically as $r$ rises. QED.
 
 **Numerical verification.** At $r = .15$: $\text{dollar-share}_6^* = (.12/.65)/[(.12/.65)+(.88/.269)] = .185/3.456 \approx .053$ (5.3%). At $r = .50$: $\text{dollar-share}_6^* = (.12/1.00)/[(.12/1.00)+(.88/.619)] = .120/1.542 \approx .078$ (7.8%). The predicted increase from 5.3% to 7.8% as $r$ rises from .15 to .50 confirms the comparative static.
 
-**Intuition.** As $r$ rises, the per-period rental cost $q_t = \delta_t + r$ increases for all tiers, but the proportional increase is larger for low-$\delta_t$ (stock) tiers because $r$ is a larger fraction of their smaller denominator. The planner responds by substituting away from the now-relatively-more-expensive stock tiers toward Tier 6, whose high base $\delta_6 = .50$ makes the proportional rental-cost increase smaller. The Jorgensonian rental-rate structure is the formal mechanism that generates the comparative static the paper's propositions rest on.
+**Intuition.** As $r$ rises, the per-period rental cost $q_t = \delta_t + r$ increases for all tiers, but the proportional increase is larger for low-$\delta_t$ (stock) tiers because $r$ is a larger fraction of their smaller denominator. The planner responds by substituting away from the now-relatively-more-expensive stock tiers toward marketing flow, whose high base $\delta_6 = .50$ makes the proportional rental-cost increase smaller. The Jorgensonian rental-rate structure is the formal mechanism that generates the comparative static the paper's propositions rest on.
 
 ## S2. Sensitivity of $V_{LR}$ Multiple Gap to $r$
 
@@ -118,6 +118,6 @@ for $\sigma \neq 1$, recovering the Cobb-Douglas maintained specification as $\s
 
 *Notes*: Values computed at $r = .15$ with baseline $\alpha$ calibration ($\alpha_6 = .12$; $\alpha_4 = \alpha_5 = .24$; $\alpha_2 = \alpha_3 = .20$). Reproducible from companion computation script (`back_of_envelope.py`, function `reproduce_appendix_a4_ces()`). The Cobb-Douglas ($\sigma = 1$) row matches the "Two-Tier Minimal Illustration" section of the main paper exactly. CES with $\sigma < 1$ attenuates the B/A ratio to 1.22× but does not reverse it: Profile B strictly dominates Profile A across all three elasticity values. CES with $\sigma > 1$ amplifies the ratio to 2.17×, closer to the empirical 4–6× range. A brief summary of the in-body CES check and the main qualitative finding appears in the main paper (Table 2); this supplement section provides the full derivation and sign verification.
 
-The comparative static $\partial(\text{dollar-share}_6^*)/\partial r$ is verified numerically under $\sigma \in \{.5, 1.5\}$ using a two-tier reduction (Tier 6 vs. aggregate stock tier, equal-weighted $\delta_S = .119$). Under the maintained Cobb-Douglas ($\sigma = 1$), the sign is established analytically in Section S1. Under $\sigma = 1.5$ (gross substitutes), numerical optimization confirms that the planner-optimal $w_6$ share rises monotonically: .017 at $r = .10$, .018 at $r = .15$, .019 at $r = .20$ — $\partial w_6^*/\partial r > 0$ confirmed. Under $\sigma = .5$ (gross complements), the two-tier numerical optimizer finds that the planner-optimal $w_6$ share declines slightly with $r$ in the two-tier reduction (.523 at $r = .10$, .507 at $r = .15$, .495 at $r = .20$), indicating that the comparative static sign is not preserved under strong gross complementarity in the simplified two-tier case. This reversal is specific to the two-tier reduction at $\sigma < 1$: under gross complementarity, the planner wants a more balanced portfolio, and as $r$ rises the high rental cost of all tiers shifts the interior optimum toward the symmetry point. In the full five-tier model with heterogeneous $\delta_t$ the directional propositions remain supported by the B/A ordering, which is robust across all $\sigma$ values examined. The maintained Cobb-Douglas ($\sigma = 1$) is therefore a conservative choice: the B/A ratio of 1.93× understates the magnitude under $\sigma > 1$ and overstates it under $\sigma < 1$, bracketing the empirical range symmetrically. Full five-tier CES optimization is identified as a future extension.
+The comparative static $\partial(\text{dollar-share}_6^*)/\partial r$ is verified numerically under $\sigma \in \{.5, 1.5\}$ using a two-tier reduction (marketing flow vs. aggregate stock tier, equal-weighted $\delta_S = .119$). Under the maintained Cobb-Douglas ($\sigma = 1$), the sign is established analytically in Section S1. Under $\sigma = 1.5$ (gross substitutes), numerical optimization confirms that the planner-optimal $w_6$ share rises monotonically: .017 at $r = .10$, .018 at $r = .15$, .019 at $r = .20$ — $\partial w_6^*/\partial r > 0$ confirmed. Under $\sigma = .5$ (gross complements), the two-tier numerical optimizer finds that the planner-optimal $w_6$ share declines slightly with $r$ in the two-tier reduction (.523 at $r = .10$, .507 at $r = .15$, .495 at $r = .20$), indicating that the comparative static sign is not preserved under strong gross complementarity in the simplified two-tier case. This reversal is specific to the two-tier reduction at $\sigma < 1$: under gross complementarity, the planner wants a more balanced portfolio, and as $r$ rises the high rental cost of all tiers shifts the interior optimum toward the symmetry point. In the full five-tier model with heterogeneous $\delta_t$ the directional propositions remain supported by the B/A ordering, which is robust across all $\sigma$ values examined. The maintained Cobb-Douglas ($\sigma = 1$) is therefore a conservative choice: the B/A ratio of 1.93× understates the magnitude under $\sigma > 1$ and overstates it under $\sigma < 1$, bracketing the empirical range symmetrically. Full five-tier CES optimization is identified as a future extension.
 
 All numerical values in this supplement are reproducible from the companion computation script published at https://github.com/spectralbranding/orgschema-papers/blob/main/tier-allocation/code/back_of_envelope.py and also available at the paper's Zenodo record at https://doi.org/10.5281/zenodo.20072288. Run with `uv run python back_of_envelope.py` (Python 3.10+; requires numpy, matplotlib, scipy).

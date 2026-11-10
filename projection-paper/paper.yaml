@@ -25,20 +25,20 @@ meta:
   - reorganization failure
   - AI deployment
   abstract: 'Most strategic reorganizations fail to deliver expected performance gains. We argue this
-    reflects a deeper architectural fact: interventions at the org-chart surface ($T_6$) achieve effect-sizes
+    reflects an architectural fact: interventions at the org-chart surface ($T_6$) achieve effect-sizes
     geometrically smaller than interventions at deeper tiers, because each deeper tier carries content
     already compressed in transit to the surface. We formalize this as a six-tier *projection cascade*
-    linking owner intent ($T_1$), business model ($T_2$), governance ($T_3$), architecture ($T_4$), routines
-    ($T_5$), and positions ($T_6$). Each junction is a linear operator $\Pi_{i\to i+1}$ with rank deficiency
-    $r_i \ge 0$. A unique cascade equilibrium exists under tier-by-tier Banach contractions (Theorem 1);
-    total information loss is bounded by the sum of local nullities, with equality only when kernels stack
-    independently (Corollary 1). Existing design theories — Galbraith''s star, Williamson''s governance
-    choice, Mintzberg''s configurations, Puranam''s microstructure, Burton-Obel-Håkonsson''s computational
-    optimization — are recovered as nested restrictions. A formal *position triple* $p = (P_p, A_p, R_p)$
-    decomposes any $T_6$ position into perceptual content from $T_5$, authority from $T_3$, and role expectation
-    from $T_1$. The apparatus yields four falsifiable propositions: P1 cascade-distance scaling of intervention
-    efficacy, P2 strict downward propagation of basis rotation under AI deployment, P3 variance amplification
-    with cumulative rank deficiency, and P4 algebraic decoupling at layer junctions.'
+    linking intent ($T_1$), business model ($T_2$), business entity and governance ($T_3$), product architecture
+    ($T_4$), process routines ($T_5$), and organization ($T_6$). Each junction is a linear operator $\Pi_{i\to
+    i+1}$ with rank deficiency $r_i \ge 0$. A unique cascade equilibrium exists under tier-by-tier Banach
+    contractions (Theorem 1); total information loss is bounded by the sum of local nullities, with equality
+    only when kernels stack independently (Corollary 1). Existing design theories — Galbraith''s star,
+    Williamson''s governance choice, Mintzberg''s configurations, Puranam''s microstructure, Burton-Obel-Håkonsson''s
+    computational optimization — are recovered as nested restrictions. A *position triple* $p = (P_p,
+    A_p, R_p)$ decomposes any $T_6$ position into perceptual content from $T_5$, authority from $T_3$,
+    and role expectation from $T_1$. The apparatus yields four falsifiable propositions: P1 cascade-distance
+    scaling of intervention efficacy, P2 strict downward propagation of basis rotation under AI deployment,
+    P3 variance amplification with cumulative rank deficiency, and P4 algebraic decoupling at layer junctions.'
 claims:
 - id: P0
   type: proposition
@@ -52,11 +52,11 @@ claims:
   status: not_tested
 - id: P1
   type: proposition
-  statement: 'Organizations are six finite-dimensional real content-tiers T_1..T_6 (deepest owner intent
-    to shallowest org-chart position) linked by linear projection operators Pi_{i->i+1}: T_i -> T_{i+1}
-    in the rank-reducing (not idempotent) sense, with rank deficiency r_i := d_i - rank(Pi_{i->i+1}) >=
-    0. The composite cascade Pi := Pi_{5->6} o ... o Pi_{1->2} is rank-non-increasing: rank(Pi) <= min_i
-    rank(Pi_{i->i+1}).'
+  statement: 'Organizations are six finite-dimensional real content-tiers T_1..T_6 (from the deepest,
+    the controlling intent, to the shallowest empirical surface, the org chart as one coordinate of the
+    Organization tier) linked by linear projection operators Pi_{i->i+1}: T_i -> T_{i+1} in the rank-reducing
+    (not idempotent) sense, with rank deficiency r_i := d_i - rank(Pi_{i->i+1}) >= 0. The composite cascade
+    Pi := Pi_{5->6} o ... o Pi_{1->2} is rank-non-increasing: rank(Pi) <= min_i rank(Pi_{i->i+1}).'
   testable: false
   tested_in_paper: true
   status: not_tested
@@ -143,9 +143,10 @@ claims:
   statement: A position is a triple p = (P_p, A_p, R_p) in T_6, where perceptual content P_p is the image
     under Pi_{5->6} of a T_5 process-trajectory (what the position does), authority allocation A_p is
     a coordinate of Pi_{3->6}(x_3) (what the position can decide), and role expectation R_p is a coordinate
-    of the full composite Pi_{1->6}(x_1) (what the position means). Position is a cascade-coordinate object
-    whose three channels inherit from distinct upstream tiers — the first formal decomposition respecting
-    multi-channel inheritance from culture, contract, and routine.
+    of the full composite Pi_{1->6}(x_1) (what the position means). R_p descends from the controlling
+    intent at T_1 and is written into T_6 culture. Position is a cascade-coordinate object whose three
+    channels inherit from distinct upstream tiers — the first formal decomposition respecting multi-channel
+    inheritance from the controlling intent (written into culture), contract, and routine.
   testable: false
   tested_in_paper: true
   status: not_tested
@@ -170,7 +171,8 @@ claims:
     basis rotation at Pi_{i->i+1} (i in {2,3,4,5}) that preserves rank manifests at T_6 as a rotation
     affecting P_p (perceptual content, via Pi_{5->6}) while leaving A_p (authority, via Pi_{3->6}) and
     R_p (role expectation, via Pi_{1->6}) invariant — provided the deployment does not penetrate the T_3
-    legal-personhood floor or the T_1 cultural-constitutional floor.'
+    legal-personhood floor or the T_1 intent floor. The AI shock changes T_6 practice (P_p), not the controlling
+    intent from which R_p descends, so R_p stays invariant.'
   testable: true
   tested_in_paper: true
   status: not_tested
@@ -204,12 +206,13 @@ claims:
   - P6
 - id: P13
   type: proposition
-  statement: 'Translation step before T_1: T_1 content is first stated in a stakeholder ontology, for
-    the owner as controlling principal the Owner Ontology, in that position''s own words. Let O_s be that
-    content space, a finite-dimensional real vector space, and Theta_s: O_s -> T_1 the linear translation
-    into the six-tier ontology of a business, with nullity r_0 := dim(O_s) - rank(Theta_s), in the same
-    notation as r_i := d_i - rank(Pi_{i->i+1}). Theta_s is a lossy step of the same kind as each junction:
-    content in ker(Theta_s) is absent from every tier below.'
+  statement: 'Translation step before T_1: T_1 content is first stated in a stakeholder ontology, which
+    is itself Tier 1 content of its position; for the controlling position, the owner as controlling principal,
+    it is the Owner Ontology. The content is stated in that position''s own words. Let O_s be that content
+    space, a finite-dimensional real vector space, and Theta_s: O_s -> T_1 the linear translation into
+    the six-tier ontology of a business, with nullity r_0 := dim(O_s) - rank(Theta_s), in the same notation
+    as r_i := d_i - rank(Pi_{i->i+1}). Theta_s is a lossy step of the same kind as each junction: content
+    in ker(Theta_s) is absent from every tier below.'
   testable: false
   tested_in_paper: true
   status: not_tested
@@ -230,12 +233,12 @@ claims:
   - P13
 - id: P15
   type: proposition
-  statement: 'Ownership change replaces Theta_s as well as the owner-intent input: the incoming principal
-    reads T_1 to T_6 through a different Owner Ontology, and records written in the prior one become ontology-dependent
-    records. The translation Theta_s, and its nullity r_0, are not measured in this paper; eliciting a
-    stakeholder ontology in the position''s own words and comparing it with its rendering in the six-tier
-    ontology would measure r_0, and the same comparison applies to translating the Owner Ontology into
-    the ontologies of customers, regulators, and employees.'
+  statement: 'Ownership change replaces Theta_s as well as the controlling-intent input: the incoming
+    principal reads T_1 to T_6 through a different Owner Ontology, and records written in the prior one
+    become ontology-dependent records. The translation Theta_s, and its nullity r_0, are not measured
+    in this paper; eliciting a stakeholder ontology in the position''s own words and comparing it with
+    its rendering in the six-tier ontology would measure r_0, and the same comparison applies to translating
+    the Owner Ontology into the ontologies of customers, regulators, and employees.'
   testable: false
   tested_in_paper: true
   status: not_tested
@@ -252,7 +255,7 @@ methodology:
     run on the same seed-2026 dimensions with its active-junction pattern, computing each restriction''s
     P3 amplification product and whether it can detect P4 strict inequality through its active junctions.'
   analysis:
-    software: code/cascade_numerical_example.py
+    software: https://github.com/spectralbranding/orgschema-papers/tree/main/projection-paper/code/cascade_numerical_example.py
     method: Python 3.12 + numpy via uv
 acceptance:
 - claim_id: P5
@@ -273,7 +276,7 @@ acceptance:
     an AI-induced basis rotation at Pi_{i->i+1} (i in {2,3,4,5}) that preserves rank manifests at T_6
     as a rotation affecting P_p (perceptual content, via Pi_{5->6}) while leaving A_p (authority, via
     Pi_{3->6}) and R_p (role expectation, via Pi_{1->6}) invariant — provided the deployment does not
-    penetrate the T_3 legal-personhood floor or the T_1 cultural-constitutional floor.'
+    penetrate the T_3 legal-personhood floor or the T_1 intent floor.'
   falsification: AI-driven authority reallocation moving A_p substantially within scope (iv) falsifies
     P2.
 - claim_id: P11
@@ -327,6 +330,9 @@ dependencies:
   claim: ~60% reorganization-failure meta-analytic estimate
   reference: barkema-schijven-2008-firms-learn-acquisitions
 - relationship: extends
+  claim: Bounded-rationality account behind the finite-parameter bound on the intent space T_1
+  doi: 10.1287/orsc.1120.0784
+- relationship: extends
   claim: Process reframing of strategic change; tier-of-intervention test anchor
   doi: 10.5465/annals.2015.0133
 - relationship: extends
@@ -378,8 +384,9 @@ results:
     asserted.
 limitations:
 - description: 'The apparatus is static (scope condition iv): regime transitions in which T_6 enactment
-    retroactively reshapes T_1 (Weick enactment) require a dynamic extension with a longer-horizon Pi_{6->1}-style
-    operator that is outside the present paper and flagged as future work.'
+    (structure and the culture written into it) retroactively reshapes the intent at T_1 (Weick enactment)
+    require a dynamic extension with a longer-horizon Pi_{6->1}-style operator that is outside the present
+    paper and flagged as future work.'
   severity: moderate
   addressable: true
 - description: Whether the strict-inequality (junction-interaction) regime is empirically modal across

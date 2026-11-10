@@ -234,6 +234,33 @@ propositions:
         anchor: "The three frames (Table 3) and the routines / pace-layering anchors."
         citation_keys: [gresov-1997-equifinality-functional-equivalence, fiss-2011-building-better-causal, pentland-2005-organizational-routines-as, beane-2025-pace-layering-as, puranam-2014-whats-new-about]
     body_sections: ["Equifinality and Its Limits (Table 1)", "Organizational Routines", "Pace Layering (Table 3)", "Discussion: Theoretical Implications"]
+  - id: P10
+    statement: >-
+      (Observer as position) An evaluative observer O is a party's position: a
+      standpoint from which a subject and an intent are formed. The same
+      configuration corresponds to different subjects for different observers,
+      because each observer forms its subject for its own task and reads the
+      configuration in the terms of its own stakeholder ontology; in the six-tier
+      ontology the observer's intent and this ontology are its Tier 1 content.
+      Two observers can therefore disagree about equivalence because they formed
+      their subjects for different tasks, not only because their evaluation
+      functions differ. This is a source of the observer-relativity in P2, not a
+      further condition on it. Illustrations (explain, do not model): one stick is
+      a toy, a digging tool, kindling or a sold art object depending on the
+      position, so the value of an object is a relation between a position and
+      the object; but a stick is not changed by how its users see it while an
+      organization is changed by what its parties commit to; a person is a child
+      to the parents, a pupil to the teachers and, from an outer position, a
+      subject for themself, keeping identity through changes of name, status or
+      profession.
+    antecedents: [P2]
+    evidence:
+      - type: citation
+        anchor: "Role-specific descriptions of one artifact (Zachman 1987, p. 281); one object carrying different meanings in different social worlds (Star and Griesemer 1989, p. 393)."
+        citation_keys: [zachman-1987-framework-information-systems, star-griesemer-1989-boundary-objects]
+      - type: corpus
+        anchor: "Tier 1 as the intent and stakeholder ontology of each position in the six-tier ontology (2026ag)."
+    body_sections: ["Organizational Metamerism: Definition and Observer-Relativity"]
 
 # ============================================================================
 # Formal derivations — Appendix A properties of M(P,O)
@@ -445,12 +472,12 @@ corpus_precedents:
       work to the derived determinants of set size.
   - paper_key: 2026ag
     relationship: extends
-    spine_nodes: [P3]
+    spine_nodes: [P3, P10]
     note: >-
       The six-tier ontology of organizational transferability is the finer
-      decomposition (Owner Intent / Business Model / Entity / Product / Process /
+      decomposition (Intent / Business Model / Entity / Product / Process /
       Organization) within which the coarse three-layer value-process-configuration
-      hierarchy here is embedded.
+      hierarchy here is embedded. Tier 1 is the intent and stakeholder ontology of each position.
   - paper_key: 2026ah
     relationship: extends
     spine_nodes: [P8]
@@ -479,6 +506,8 @@ external_anchors:
   - {citation_key: puranam-2014-whats-new-about, role: motivates, spine_nodes: [P9], note: "When are 'new' forms genuinely novel vs functionally equivalent — operationalized as non-membership in M(P,O)."}
   - {citation_key: spence-1973-job-market-signaling, role: supports, spine_nodes: [P6], note: "Organizational form as a signal of unobservable process quality, narrowing the set for inference-dependent observers."}
   - {citation_key: meyer-1977-institutionalized-organizations-formal, role: extends, spine_nodes: [P9], note: "Institutional decoupling reframed positively as structural flexibility for technically oriented observers."}
+  - {citation_key: zachman-1987-framework-information-systems, role: supports, spine_nodes: [P10], note: "Role-specific descriptions of one artifact: each role sees the same artifact through its own description."}
+  - {citation_key: star-griesemer-1989-boundary-objects, role: supports, spine_nodes: [P10], note: "One object holding different meanings across social worlds, with enough shared structure to travel between them."}
 
 # ============================================================================
 # Open questions / boundary edges

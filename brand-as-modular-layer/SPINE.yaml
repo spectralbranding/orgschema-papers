@@ -28,16 +28,16 @@ thesis: |
   from brand failure, and organize marketing — yet no theory specifies which
   organizational layer carries the brand boundary. This paper proposes that
   brand IS strictly the Tier-4 product specification surface in the six-tier
-  architecture of Zharnikov (2026ag); Tiers 1 (Owner Intent), 2 (Business
+  architecture of Zharnikov (2026ag); Tiers 1 (Intent), 2 (Business
   Model), 3 (Business Entity), 5 (Process), and 6 (Organization) are
   predominantly brand-agnostic. Three strategic outcomes follow from this single
   structural fact. Multi-brand capacity scales with Tier-3/5/6 separability
   rather than Business-Model diversification (P1); failed-brand recovery success
   scales with preserved brand-agnostic substrate (P2), supplying a mechanism for
   the equity-transfer-without-creation regularity of Marques et al. (2020);
-  marketing, advertising, and branding are Tier-6 functions that create, operate,
-  and retire Tier-4 instances, so centralization choices are separability choices
-  (P4). The Aaker-Joachimsthaler Brand Relationship Spectrum is operationalized
+  marketing, advertising, and branding create, operate, and retire Tier-4
+  instances through Tier-5 activity and Tier-6 teams, so centralization choices
+  are separability choices (P4). The Aaker-Joachimsthaler Brand Relationship Spectrum is operationalized
   as a continuous Tier-3-visibility-in-Tier-4 parameter V (P7), and axis-specific
   brand-extension predictions follow on the Cultural and Ideological SBT
   dimensions (P5). Two diagnostic instruments (Multi-Brand Capacity Diagnostic,
@@ -52,10 +52,11 @@ thesis: |
 boundary_conditions:
   - id: C1
     statement: >-
-      The firm has a non-diffuse Tier-1 Owner Intent. Firm forms where Tier 1
-      is diffuse — NGOs, cooperatives, state-owned enterprises, family-office
-      holding companies — require adaptation of the Owner-Intent construct
-      before the tier-level separability logic applies.
+      The firm has a non-diffuse controlling intent. Forms where control is
+      diffuse (a Tier-3 matter) — NGOs, cooperatives, state-owned enterprises,
+      family-office holding companies — require adaptation of the
+      controlling-intent construct before the tier-level separability logic
+      applies.
     body_sections: ["Discussion: Boundary conditions and scope", "Discussion: Limitations"]
   - id: C2
     statement: >-
@@ -84,9 +85,14 @@ propositions:
       or any equivalent complete observer-projection-compatible basis). Brand is
       NOT the perception (which lives downstream in the perception cloud after
       projection through the observer perceptual filter), NOT the legal trademark
-      (a Tier-3 entity artifact), and NOT the marketing communications (a Tier-6
-      function operating on Tier 4). This is the single structural claim from
-      which all seven propositions follow.
+      (the right to use the sign: a Tier-3 asset of the entity), and NOT the
+      marketing communications (flow on Tier-2 channels, produced by Tier-5
+      activity and Tier-6 people, operating on Tier 4). Tier 4 holds the
+      product's specification, which includes the specification of what the
+      product emits: the sign, its form and the rules for its use. The
+      perception the emissions produce is held by observers and lies outside the
+      six tiers. This is the single structural claim from which all seven
+      propositions follow.
     antecedents: []
     evidence:
       - type: analytic
@@ -94,7 +100,7 @@ propositions:
       - type: citation
         anchor: "Six-tier ontology supplies the layered substrate; SBT supplies the per-instance specification basis."
         citation_keys: [zharnikov-2026ag, zharnikov-2026a]
-    body_sections: ["Brand as Tier-4 Projection: The Tier-4 ontological surface"]
+    body_sections: ["Brand as Tier-4 Projection: The Tier-4 ontological surface", "Brand as Tier-4 instance versus trademark as Tier-3 artifact"]
   - id: P0b
     statement: >-
       Each of the six tiers contains a mix of brand-agnostic and brand-bound
@@ -103,7 +109,10 @@ propositions:
       construction (it IS the brand instance); the other five tiers admit both
       shared (brand-agnostic) and brand-specific (brand-bound) subcomponents.
       Multi-brand capacity is therefore a property of how separable the other
-      five tiers are.
+      five tiers are. Tier 1 (Intent) is low-separability because the
+      controlling intent is a single object that cannot be partitioned across
+      brands; a spokesperson role or a brand face is part of the brand's
+      specification (Tier 4, held by a person at Tier 6), not a Tier-1 parameter.
     antecedents: [P0]
     evidence:
       - type: analytic
@@ -126,6 +135,22 @@ propositions:
         anchor: "Observer spectral profile (SBT); no Tier-4 specification fully determines perceived brand (specification impossibility)."
         citation_keys: [zharnikov-2026a, zharnikov-2026h]
     body_sections: ["Brand as Tier-4 Projection: Projection through the observer perceptual filter", "Brand as Tier-4 instance versus trademark as Tier-3 artifact"]
+  - id: P0d
+    statement: >-
+      Tier-rotation valuation dynamics (forward direction). A brand's signal
+      strength during active ownership converts into M&A exit value only to the
+      extent the Tier-4 specification has been projected from its tacit,
+      founder-held part into its written part, which a buyer can acquire
+      independently of any individual. Four stages are distinguished by the
+      tacit, founder-held share of the specification (the complement of the
+      written share): approaching 100 percent (pure personal), 60 to 80 percent
+      (partial projection), 20 to 40 percent (substantial projection), and below
+      20 percent (institutional).
+    antecedents: [P0]
+    evidence:
+      - type: analytic
+        anchor: "Forward-direction account of how value at transfer depends on the share of the signal residing in a substrate the acquirer can hold; formalization is left to a companion paper."
+    body_sections: ["Discussion: Tier-rotation valuation dynamics: A forward direction"]
   - id: P1
     statement: >-
       Multi-Brand Capacity. Portfolio capacity — the number of Tier-4 brand
@@ -152,7 +177,9 @@ propositions:
       brand-agnostic infrastructure (Tier 1/2/3/5/6 components untouched by the
       failure) preserved through the failure. Mechanism: equity transfers along
       persisting substrate (Marques et al. 2020), but net-new equity creation
-      requires changes at Tier 1 or Tier 2. (Confirming: 36-month recovery rate
+      requires changes at Tier 1 or Tier 2. At a sale the controlling intent is
+      replaced by the buyer's; the other positions' intents persist.
+      (Confirming: 36-month recovery rate
       correlates r > .35 with a preserved-substrate-proportion score. Falsifying:
       recovery rate independent of preserved substrate, or primarily explained
       by post-failure marketing investment.)
@@ -171,7 +198,8 @@ propositions:
       Tier-4 instances from them. The risk-return profiles documented by Rao,
       Agarwal & Dahlhoff (2004) and Hsu, Fournier & Srinivasan (2016) are
       derivable from the Tier-3-visibility parameter V (high V = high propagation;
-      low V = isolation). (Falsifying: V is uncorrelated with risk concentration
+      low V = isolation). Tier-1 shocks are changes of the controlling intent.
+      (Falsifying: V is uncorrelated with risk concentration
       at Tier 1/Tier 2.)
     antecedents: [P0, P0b, P7]
     evidence:
@@ -184,8 +212,9 @@ propositions:
   - id: P4
     statement: >-
       Cross-Brand Marketing Effectiveness. Cross-brand marketing-function
-      effectiveness is a function of Tier-6 governance separation: shared
-      services for brand-agnostic functions (media buying, analytics,
+      effectiveness is a function of the separation of marketing teams (Tier 6)
+      and the activities they run (Tier 5): shared services for brand-agnostic
+      functions (media buying, analytics,
       marketing-mix modeling, platform tooling) and per-brand teams for
       brand-bound functions (creative, brand management, customer-service tone).
       Centralization-versus-decentralization is therefore a tier-level
@@ -196,8 +225,8 @@ propositions:
     antecedents: [P0, P0b]
     evidence:
       - type: analytic
-        anchor: "Marketing/advertising/branding as Tier-6 functions creating/operating/retiring Tier-4 instances; CMO as portfolio manager of Tier-4 configurations; resolves Whitler et al. (2025) misalignment + McAlister et al. (2023) taxonomy + Edeling et al. (2021) accountability gap as tier-scope mismatches."
-    body_sections: ["Marketing, Advertising, and Branding as Cross-Brand Tier-6 Functions: Tier-6 marketing function and Tier-4 brand instances; Centralization versus decentralization as tier-separability choice; P4"]
+        anchor: "Marketing/advertising/branding creating/operating/retiring Tier-4 instances (activity at Tier 5, people at Tier 6, spend as flow on Tier-2 channels unless it rewrites the brand specification, which is Tier-4 stock); CMO as portfolio manager of Tier-4 configurations; resolves Whitler et al. (2025) misalignment + McAlister et al. (2023) taxonomy + Edeling et al. (2021) accountability gap as tier-scope mismatches."
+    body_sections: ["Marketing, Advertising, and Branding as Cross-Brand Functions: Marketing function and Tier-4 brand instances; Centralization versus decentralization as tier-separability choice; P4"]
   - id: P5
     statement: >-
       Brand Extension SBT-Overlap. Brand-extension success scales with
@@ -220,10 +249,11 @@ propositions:
     body_sections: ["Failed-Brand Recovery as Tier-Level Salvage: P5", "Theoretical Foundations: Brand extension and dimensional transfer"]
   - id: P6
     statement: >-
-      Recovery Tier-1 Constraint. Brand recovery is more constrained by Tier-1
-      (Owner Intent) compatibility with the new Tier-4 configuration than by
+      Recovery Tier-1 Constraint. Brand recovery is more constrained by the
+      compatibility of the controlling intent (Owner Intent) with the new
+      Tier-4 configuration than by
       Tier-5/Tier-6 capacity availability. Owners whose Tier-1 commitments are
-      bound to the failed brand-face fail recovery even when substrate is fully
+      bound to the failed brand's purpose fail recovery even when substrate is fully
       preserved, because Tier 1 sits atop the constraint hierarchy and bounds
       admissible Tier-4 specifications. (Confirming: Tier-1 misalignment predicts
       failure independent of preserved Tier-5/6 substrate. Falsifying: Tier-1
@@ -235,7 +265,7 @@ propositions:
       - type: citation
         anchor: "Specification impossibility / upstream constraint hierarchy."
         citation_keys: [zharnikov-2026h]
-    body_sections: ["Failed-Brand Recovery as Tier-Level Salvage: Tier-1 Owner Intent as binding constraint on recovery; P6"]
+    body_sections: ["Failed-Brand Recovery as Tier-Level Salvage: Owner Intent as binding constraint on recovery; P6"]
   - id: P7
     statement: >-
       Aaker Spectrum Operationalization. The Aaker-Joachimsthaler (2000) Brand
@@ -352,7 +382,9 @@ corpus_precedents:
       structural foundation; this paper extends that same Tier-1..Tier-6 ontology
       from acquisition transferability to brand and the three downstream
       phenomena. The MBCD extends 2026ag's Six-Tier Separability Diagnostic; the
-      ontological-mixing pre-emption (A1) tracks 2026ag's.
+      ontological-mixing pre-emption (A1) tracks 2026ag's, and the split of the
+      trademark between Tier 3 (the right to use the sign) and Tier 4 (the sign
+      as specified) follows the same ontology.
   - paper_key: "2026a"
     relationship: applies
     spine_nodes: [P0, P0c, P5, P7]
@@ -406,13 +438,13 @@ external_anchors:
   - {citation_key: rao-agarwal-dahlhoff-2004-manifest-branding, role: reinterpreted, spine_nodes: [P3], note: "Corporate branding raises Tobin's q — derived from tier propagation."}
   - {citation_key: marques-2020-rebranding-private-label, role: mechanism_explained, spine_nodes: [P2, P6], note: "Equity transferred but not created — given a tier-level mechanism."}
   - {citation_key: whitler-rego-morgan-2025-cmo-role-design, role: reinterpreted, spine_nodes: [P4], note: "CMO-role misalignment — reframed as Tier-6/Tier-4 scope mismatch."}
-  - {citation_key: mcalister-2023-marketing-organizations, role: reinterpreted, spine_nodes: [P4], note: "Marketing-organization taxonomy — Marcom Leaders as Tier-6 signature."}
+  - {citation_key: mcalister-2023-marketing-organizations, role: reinterpreted, spine_nodes: [P4], note: "Marketing-organization taxonomy — Marcom Leaders as the signature of a marketing function (Tier-5 activity carried by Tier-6 people)."}
   - {citation_key: edeling-srinivasan-hanssens-2021-marketing-finance, role: reinterpreted, spine_nodes: [P4], note: "Accountability gap — predicted as tier-scope mismatch."}
   - {citation_key: park-milberg-lawson-1991-brand-extensions, role: precursor, spine_nodes: [P5], note: "Concept consistency dominates feature similarity for symbolic brands — closest axis-specific precursor."}
   - {citation_key: torelli-ahluwalia-2012-culturally-symbolic, role: supporting_evidence, spine_nodes: [P5], note: "Cultural-schema overlap overrides feature fit."}
   - {citation_key: peng-2023-brand-extension-meta-analysis, role: empirical_baseline, spine_nodes: [P5], note: "Meta-analytic baseline; P5 validation re-codes this on the SBT axes."}
   - {citation_key: baldwin-clark-2000-design-rules, role: theoretical_anchor, spine_nodes: [P0b, P1, P3], note: "Modularity / design-rule partition for the brand-agnostic vs brand-bound split."}
-  - {citation_key: teece-pisano-shuen-1997-dynamic-capabilities, role: theoretical_anchor, spine_nodes: [P4], note: "Tier-6 functions as sensing/seizing; multi-brand capacity as reconfiguring capability."}
+  - {citation_key: teece-pisano-shuen-1997-dynamic-capabilities, role: theoretical_anchor, spine_nodes: [P4], note: "Marketing functions (Tier-5 activity carried by Tier-6 people) as sensing/seizing; multi-brand capacity as reconfiguring capability."}
   - {citation_key: jacobides-cennamo-gawer-2018-ecosystems, role: theoretical_anchor, spine_nodes: [P0b], note: "Ecosystem architecture for platform multi-brand stacks."}
   - {citation_key: eisenhardt-graebner-2007-theory-building, role: methodological_anchor, spine_nodes: [P0], note: "Theory-building-from-cases tradition the paper writes in."}
   - {citation_key: fournier-eckhardt-2019-two-bodied-brand, role: precursor, spine_nodes: [P6], note: "Body-natural vs body-politic duality; tier rotation specifies its projection geometry (forward direction)."}

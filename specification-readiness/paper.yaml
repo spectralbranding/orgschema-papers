@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.20379981
-  date: '2026-06-26'
+  date: '2026-11-11'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -27,28 +27,30 @@ meta:
   abstract: 'Organizations incur substantial friction when guessing recipients'' need profiles and pushing
     outputs toward those guesses. This paper develops an information-theoretic theory treating alignment
     friction as endogenous to specification codification. Architecture decomposes into three layers: a
-    codified specification substrate encoding commitments across six ontological tiers, an interface layer
-    defined by recipient-class perception-weight vectors, and a function layer whose headcount and spend
-    constitute a measurable tax on specification gaps. In push regimes, energy loss scales with cross-entropy
-    between guessed and actual need profiles. In pull regimes, consumption-layer AI lets recipients query
-    the specification directly, collapsing misalignment toward zero as codification completeness rises.
-    Recipient classes are architectural primitives whose distinct perception geometries impose coherence
-    conditions across interfaces. Four contributions follow. First, push-pull cost asymmetry is formalized
-    as a structural analog to Shannon''s cross-entropy. Second, geometric machinery links specification
-    to interface rendering. Third, functional friction is a consequence of specification investment rather
-    than governance choice. Fourth, specification readiness is the critical moderator of AI returns, distinguishing
-    Substrate-Operator execution (specification-constrained, coherent across interfaces) from Surface-Operator
-    execution (locally fluent, globally inconsistent). Specification codification is architecturally prior
-    to governance and capability deployment; the theory generates predictions distinct from transaction-cost
-    economics, stakeholder theory, and existing AI-augmentation scholarship.'
+    codified specification substrate encoding commitments written at the ontological tiers, an interface
+    layer defined by recipient-class perception-weight vectors, and a function layer whose headcount and
+    spend constitute a measurable tax on specification gaps. In push regimes, energy loss scales with
+    cross-entropy between guessed and actual need profiles. In pull regimes, consumption-layer AI lets
+    recipients query the specification directly, collapsing misalignment toward zero as codification completeness
+    rises. Recipient classes are architectural primitives whose distinct perception geometries impose
+    coherence conditions across interfaces. Four contributions follow. First, push-pull cost asymmetry
+    is formalized as a structural analog to Shannon''s cross-entropy. Second, geometric machinery links
+    specification to interface rendering. Third, functional friction is a consequence of specification
+    investment rather than governance choice. Fourth, specification readiness is the critical moderator
+    of AI returns, distinguishing Substrate-Operator execution (specification-constrained, coherent across
+    interfaces) from Surface-Operator execution (locally fluent, globally inconsistent). Specification
+    codification is architecturally prior to governance and capability deployment; the theory generates
+    predictions distinct from transaction-cost economics, stakeholder theory, and existing AI-augmentation
+    scholarship.'
 claims:
 - id: P0
   type: proposition
   statement: Architectural decomposition. Organizational output architecture decomposes into three layers
-    — a specification substrate (what the firm actually is, across six tiers), an interface layer (N renderings
-    of the substrate to distinct recipient classes), and a function layer (capabilities that maintain
-    spec-to-interface alignment). The strategic variable is how completely to codify the substrate and
-    how to design the emission policy for each recipient class, not governance form.
+    — a specification substrate (what the firm actually is, as written in the tier specifications), an
+    interface layer (N renderings of the substrate to distinct recipient classes), and a function layer
+    (capabilities that maintain spec-to-interface alignment). The strategic variable is how completely
+    to codify the substrate and how to design the emission policy for each recipient class, not governance
+    form.
   testable: false
   tested_in_paper: true
   status: not_tested
@@ -173,9 +175,9 @@ dependencies:
   critical: false
   doi: 10.5281/zenodo.20384084
 - relationship: applies
-  claim: Six-Tier Organizational Ontology supplies the six tiers the specification substrate encodes (Tier
-    1 owner-intent ... Tier 6 capability/culture); the specification layer IS the full stack of commitments
-    across 2026ag's tiers.
+  claim: Six-Tier Organizational Ontology supplies the tiers at which the specification substrate is written
+    (Tier 2 business model ... Tier 6 organization, with its culture); Tier 1 intent supplies the commitments
+    that those specifications record, not a specification block of its own.
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: extends

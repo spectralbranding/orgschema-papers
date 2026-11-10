@@ -84,8 +84,8 @@ owns:
     label: "Succession-constrained rotation"
     canonical_form: "succession-constrained rotation"
     definition: >-
-      Tier rotation constrained by the person-carried Tier-5 residual under Tier-1 replacement: the
-      case where the occupant of Tier 1 is replaced, the entity persists, and nothing is conveyed, so
+      Tier rotation constrained by the person-carried Tier-5 residual under replacement of the
+      controlling intent: the case where the holder of the controlling position is replaced, the entity persists, and nothing is conveyed, so
       the preparation that raises value under removal and the preparation that raises value under
       replacement are different investments competing for one budget.
     first_section: "Introduction"

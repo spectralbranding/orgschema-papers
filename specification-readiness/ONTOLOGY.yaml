@@ -39,7 +39,7 @@ owns:
 
 imports:
   - {term_key: six-tier-ontology}
-  - {term_key: tier-1-owner-intent}
+  - {term_key: tier-1-intent}
   - {term_key: tier-2-business-model}
   - {term_key: tier-3-business-entity}
   - {term_key: tier-4-product}

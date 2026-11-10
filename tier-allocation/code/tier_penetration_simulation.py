@@ -25,7 +25,7 @@ directly traceable to an external published source:
 
 - Dollar-weighted shares (empirically observable renormalization to sum to 1).
 
-- Proposition 1 (Tier-6 Over-Allocation Paradox): sign and magnitude of
+- Proposition 1 (Marketing-Flow Over-Allocation Paradox): sign and magnitude of
   ∂(dollar-share_6*)/∂γ_6 < 0 across γ_6 ∈ {.5, .7, .9, 1.0}.
 
 - Proposition 2 (Substrate-Building Threshold at Tier 4): level shift in S_4*
@@ -53,7 +53,7 @@ Per-tier decay rates δ_t^0 (pre-AI persistence rates):
   δ_2 = .075  Wiggins and Ruefli (2002) extrapolation
 
 M&A separability factors m_t:
-  m_6 = .25   Tier 6 (Organizational Surface); paid artifacts transfer partially
+  m_6 = .25   marketing flow (item 6, on Tier 2 channels); paid artifacts transfer partially
   m_5 = 1.0   Tier 5 (Process and Operations)
   m_4 = 1.0   Tier 4 (Product Specification)
   m_3 = .60   Tier 3 (Business Entity)
@@ -144,7 +144,7 @@ ALPHA_CONCENTRATED: dict[int, float] = {
 DELTA_S = 0.119
 
 # Stylized profiles for CES robustness (inherited from 2026aj §4.2)
-# Profile A: Tier-6-heavy; Profile B: Tier-4/5-heavy
+# Profile A: marketing-flow-heavy; Profile B: Tier-4/5-heavy
 PROFILE_A: dict[int, float] = {6: 0.70, 4: 0.10, 5: 0.10, 2: 0.05, 3: 0.05}
 PROFILE_B: dict[int, float] = {6: 0.15, 4: 0.325, 5: 0.325, 2: 0.10, 3: 0.10}
 
@@ -249,16 +249,16 @@ def _no_shock_delta(tiers: list[int] | None = None) -> dict[int, float]:
 
 
 # ---------------------------------------------------------------------------
-# Proposition 1: Tier-6 Over-Allocation Paradox
+# Proposition 1: Marketing-Flow Over-Allocation Paradox
 # ---------------------------------------------------------------------------
 
 
-def proposition_1_tier6_paradox() -> dict[str, object]:
+def proposition_1_marketing_flow_paradox() -> dict[str, object]:
     """Demonstrate ∂(dollar-share_6*)/∂γ_6 < 0 (Proposition 1, body §5).
 
     Under γ_6 ∈ (0, 1) with γ_t = 1 for t ≤ 5 and all Δ_t = 0, the optimal
-    dollar-weighted Tier-6 share is monotonically DECREASING in γ_6. A lower
-    γ_6 (cheaper AI at the surface tier) raises the optimal Tier-6 share,
+    dollar-weighted marketing-flow share is monotonically DECREASING in γ_6. A lower
+    γ_6 (cheaper AI in marketing flow) raises the optimal marketing-flow share,
     shifting allocation toward the lowest-persistence tier (δ_6 = .50).
 
     The formal sign condition from Online Supplement S1, Proposition S1.1:
@@ -267,7 +267,7 @@ def proposition_1_tier6_paradox() -> dict[str, object]:
 
     This paradox means that even though V_LR may rise in the short run (γ_6
     cheapens per-resolution cost), the M&A multiple falls because optimal
-    allocation shifts toward the lowest-durability tier.
+    allocation shifts toward the lowest-durability item.
 
     Returns a dict with γ_6 grid, dollar_share_6 values, sign confirmation,
     and the empirical paradox magnitude at the γ_6 = .8 evaluation point.
@@ -387,10 +387,10 @@ def proposition_3_horizon_flip() -> dict[str, object]:
 
     Mechanism: as r rises, the low-δ substrate tiers (Tiers 2-5) see their
     denominators compress faster in percentage terms (r is relatively large
-    compared to small δ_t), squeezing their weights more than Tier 6, so the
-    normalized Tier-6 share rises with r.
+    compared to small δ_t), squeezing their weights more than marketing flow, so the
+    normalized marketing-flow share rises with r.
 
-    Proposition 3 adds the governance interpretation: surface-only AI that
+    Proposition 3 adds the governance interpretation: marketing-flow-only AI that
     compresses horizon raises effective r → dollar_share_6* rises → substrate
     depletes further. Deep-tier AI that extends horizon lowers effective r →
     dollar_share_6* falls → substrate accumulates.
@@ -495,7 +495,7 @@ def _optimal_w6_ces_twotier(sigma: float, r: float) -> float:
     """Planner-optimal dollar_share_6* under CES (2-tier reduction for sign check).
 
     Aggregates Tiers 2-5 into a single substrate tier S at equal-weighted
-    δ_S and m_S. Returns the optimal Tier-6 allocation share w_6*.
+    δ_S and m_S. Returns the optimal marketing-flow allocation share w_6*.
 
     Used for sign-verification of d(dollar_share_6*)/dr > 0 under σ ≠ 1.
     """
@@ -715,7 +715,7 @@ def boundary_object_cases() -> list[BoundaryCase]:
     """Qualitative (γ_t, Δ_t) vector and M&A-multiple direction for Table 1.
 
     Four boundary-object cases (body §3, Table 1):
-      1. Klarna AI customer-service chatbot: primary Tier 6; γ_6 < 1, Δ_6 ≈ 0
+      1. Klarna AI customer-service chatbot: primary Tier 5; γ_5 < 1, Δ_5 ≈ 0
       2. Spotify recommendation system: primary Tier 2; γ_2 < 1, Δ_2 → δ_2^0
       3. BloombergGPT proprietary fine-tune: primary Tier 5 (Tier 4 spillover);
          γ_5 < 1, Δ_5 > 0
@@ -727,10 +727,10 @@ def boundary_object_cases() -> list[BoundaryCase]:
     """
     # Illustrative shock magnitudes consistent with the paper's verbal description
     _gamma_klarna = {t: 1.0 for t in TIERS}
-    _gamma_klarna[6] = 0.60  # ~40% cost reduction per Klarna disclosure
+    _gamma_klarna[5] = 0.60  # ~40% cost reduction per Klarna disclosure
 
     _Delta_klarna = {t: 0.0 for t in TIERS}
-    # Δ_6 ≈ 0: no substrate accumulation at Tier 6
+    # Δ_5 ≈ 0: API-only vendor model, no proprietary AI substrate
 
     _gamma_spotify = {t: 1.0 for t in TIERS}
     _gamma_spotify[2] = 0.70  # cheaper recommendation generation per user-session
@@ -754,10 +754,10 @@ def boundary_object_cases() -> list[BoundaryCase]:
     return [
         BoundaryCase(
             name="Klarna AI customer-service chatbot",
-            primary_tier=6,
-            gamma_pattern="gamma_6 < 1 (700 FTE-equivalent labor substitution)",
-            Delta_pattern="Delta_6 approx 0 (no admissible substrate at Tier 6)",
-            mna_multiple_direction="NEGATIVE long-run via P1 Tier-6 paradox",
+            primary_tier=5,
+            gamma_pattern="gamma_5 < 1 (700 FTE-equivalent labor substitution; execution moves from Tier 6 to Tier 5)",
+            Delta_pattern="Delta_5 approx 0 (API-only vendor model; no proprietary AI substrate)",
+            mna_multiple_direction="QUALITATIVE: a Tier 5 and Tier 3 question (owned specification vs rented vendor agent); P1 marketing-flow paradox not operative",
             gamma_implied=_gamma_klarna,
             Delta_implied=_Delta_klarna,
         ),
@@ -848,12 +848,12 @@ def main() -> None:
     # ------------------------------------------------------------------
     print()
     print(sep)
-    print("Proposition 1 — Tier-6 Over-Allocation Paradox")
+    print("Proposition 1 — Marketing-Flow Over-Allocation Paradox")
     print("d(dollar-share_6*)/d(gamma_6) < 0")
     print("Evaluation: r = .15; gamma_t = 1 for t <= 5; all Delta_t = 0")
     print(sep)
 
-    p1 = proposition_1_tier6_paradox()
+    p1 = proposition_1_marketing_flow_paradox()
     print(f"{'gamma_6':>9}  {'dollar_share_6*':>16}  {'w6_unnorm':>12}")
     print(thin)
     for row in p1["results"]:

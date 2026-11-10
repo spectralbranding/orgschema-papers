@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.18946043
-  date: '2026-07-27'
+  date: '2026-11-11'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -158,7 +158,11 @@ acceptance:
     not discharged by adding the missing edge, since any counterexample could be absorbed that way and
     the identification would carry no falsifying content.
 - claim_id: P3
-  criterion: Holds if cascade-compression is lossy under asymmetric verifiability.
+  criterion: 'Holds if cascade-compression is lossy under asymmetric verifiability. In the smallest sufficient
+    model (levels L0, L2, L4; two negotiating modules; a binary human/AI executor; one information-asymmetry
+    parameter alpha governing how much of a lower level is inspectable from above), no many-to-one mapping
+    that collapses adjacent levels preserves both completeness (P1) and executor-invariance (DP3) whenever
+    alpha is below unity: collapsing L2 into L0 discards the executor-invariant/executor-dependent boundary.'
   falsification: A lossless level-collapsing map preserving completeness and executor-invariance at alpha
     < 1 would refute the compression bound.
 - claim_id: P4
@@ -169,13 +173,13 @@ acceptance:
     yet produces no differentiation utility for the specifying organization even before any member of
     R imitates it, would refute the UNCLAIMED-regime differentiation claim.
 - claim_id: H1
-  criterion: 'Holds if hYPOTHESIS (future research, not tested here): operations specified with backward
+  criterion: 'Holds if HYPOTHESIS (future research, not tested here): operations specified with backward
     traceability identify the operational parameter responsible for an experience failure faster than
     operations without it, because the justification graph makes the causal chain traversable.'
   falsification: See lead test above; also, no measured reduction in time-to-root-cause under matched
     conditions.
 - claim_id: H4
-  criterion: 'Holds if hYPOTHESIS (future research, not tested here): the differentiation utility an organization
+  criterion: 'Holds if HYPOTHESIS (future research, not tested here): the differentiation utility an organization
     captures from an UNCLAIMED L0 vertex (P4) decays as reference-class adoption moves the vertex toward
     CONTESTED and then FLOOR.'
   falsification: See lead test above; also, differentiation share attributable to v remaining flat or
@@ -200,7 +204,8 @@ dependencies:
   doi: 10.5281/zenodo.19778588
 - relationship: refines
   claim: 'Six-tier transferability ontology: the OST cascade nests inside its lower tiers; a non-isomorphism
-    disambiguation (L0-L5 reading direction vs T1-T6) is carried explicitly.'
+    disambiguation (L0-L5 reading direction vs T1-T6) is carried explicitly. The six-tier ontology''s
+    deepest stratum is intent (Tier 1, read from the inside out).'
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: applies
@@ -252,7 +257,7 @@ dependencies:
   doi: 10.1007/978-3-662-56509-4
 - relationship: extends
   claim: Conformance drift between measurement points.
-  reference: vanderaalst-2016-process-mining-data
+  doi: 10.1007/978-3-662-49851-4
 - relationship: extends
   claim: EA as classification, not validation-against-outcome — comparison target.
   doi: 10.1147/sj.263.0276

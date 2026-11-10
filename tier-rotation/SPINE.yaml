@@ -28,9 +28,9 @@ thesis: >-
   Deal outcomes for founder-led branded firms diverge sharply even among
   principals of comparable quality and brand strength, and that divergence is
   explained by the proportion of brand conviction that has been externalized
-  from the founder's personal judgment (Tier 1) into an organizational
-  substrate the acquirer can own independently (Tier 4). Brand signal
-  accumulates in the Tier-4 substrate along a logistic trajectory governed by
+  from the founder's tacit judgment into the written part of the Tier-4 brand
+  specification, a substrate the acquirer can own independently. Brand signal
+  accumulates in the written Tier-4 specification along a logistic trajectory governed by
   sustained knowledge-externalization effort, a cold-start offset, and sector
   substitutability; acquirer willingness-to-pay is a piecewise function of
   Tier-4 share with a separability kink, below which founder-flight risk
@@ -53,13 +53,15 @@ thesis: >-
 boundary_conditions:
   - id: C1
     statement: >-
-      The focal brand is founder-centric: Tier 1 is a single principal's
-      identity, not a diffuse set of principal relationships. Diffuse-Tier-1
-      forms (NGOs, cooperatives, state-owned enterprises, family offices)
-      require re-parameterizing s as a threshold in the dispersion of Tier-1
-      claims and are out of the core scope.
-    observable: "A single identifiable founder-principal carrying Tier-1 brand signal."
-    excludes: "Diffuse / collective Tier-1 ownership forms."
+      The focal brand is founder-centric: the controlling position is held by a
+      single principal, whose tacit judgment carries the unwritten part of the
+      brand specification, not by a diffuse set of principal relationships.
+      Forms with diffuse control (NGOs, cooperatives, state-owned enterprises,
+      family offices) require re-parameterizing s as a threshold in the
+      dispersion of control and are out of the core scope. Every business has
+      many Tier 1 intents; diffuseness lies in control, a Tier 3 field.
+    observable: "A single identifiable founder-principal holding the controlling position and carrying the tacit part of the brand specification."
+    excludes: "Forms with diffuse or collective control."
   - id: C2
     statement: >-
       The sector has meaningful substitutability (σ > 0). In the σ → 0 commodity
@@ -69,16 +71,18 @@ boundary_conditions:
     excludes: "Pure-commodity sectors with zero brand-specification substitutability."
   - id: C3
     statement: >-
-      A separate corporate vehicle exists (φ > 0): registered trademark,
-      corporate identity, legal entity. The φ → 0 sole-proprietor /
+      A separate corporate vehicle exists (φ > 0): registered marks (a Tier 3
+      right), the sign they specify (Tier 4), corporate identity, legal entity. The φ → 0 sole-proprietor /
       unincorporated case recovers an absorbing zero state with no rotation
       pathway and is a substrate transition, not a rotation transition.
-    observable: "Presence of an incorporated entity / registered marks providing a non-zero Tier-4 cold-start base."
+    observable: "Presence of an incorporated entity / registered marks (Tier 3 rights) and the sign specified for them (Tier 4), providing a non-zero cold-start base."
     excludes: "Unincorporated sole proprietors operating without a separate vehicle (Sub-Stage 0)."
   - id: C4
     statement: >-
-      The event modeled is an M&A exit (Tier-1 removed; founder departs with no
-      replacement), not a succession (Tier-1 occupant replaced P_old → P_new).
+      The event modeled is an M&A exit (the controlling intent is replaced by the
+      acquirer's; the founder departs with no replacement and the founder's tacit
+      brand knowledge leaves), not a succession (the holder of the controlling
+      position changes P_old → P_new within a continuing entity).
       Succession is a geometrically distinct event deferred to future work.
     observable: "A liquidity / acquisition event in which the originating principal exits the entity."
     excludes: "Succession events; platform stacked-instance acquisitions; the regulated-Tier-3 compression case."
@@ -88,7 +92,7 @@ boundary_conditions:
       separable substrate; it does not price what the buyer can do with it. The M&A-exit case as
       modelled assumes the acquirer supplies its own operating principal, which is why Tier-5 process
       knowledge can be treated as partially supplied by the acquirer's management capacity and why
-      the Tier-1 discontinuity is a property of s alone. Where the buyer supplies no operating
+      the discontinuity at the founder's departure is a property of s alone. Where the buyer supplies no operating
       principal — a search fund, an individual acquirer, a standalone-hold sponsor — the buyer must
       absorb the person-carried residual personally. Residual SIZE is a property of the target and
       capacity to ABSORB it a property of the acquirer, so a brand may complete rotation on this
@@ -150,16 +154,16 @@ boundary_conditions:
     statement: >-
       TIER SEPARABILITY is assumed once a vehicle exists. C3 excludes the φ → 0 case on the ground
       that no separate vehicle is present; it does not cover the case where a vehicle IS present and
-      the tiers are fused nonetheless. In a maximally tier-collapsed substrate — owner intent
+      the tiers are fused nonetheless. In a maximally tier-collapsed substrate — controlling intent
       (Tier 1), business entity (Tier 3) and product specification (Tier 4) all carried by one
       natural person — φ > 0 can hold while rotation stays constrained rather than merely slow,
-      because the Tier-4 product cannot be divested without divesting the Tier-1 intent. The curve
+      because the Tier-4 product cannot be divested without divesting the controlling intent. The curve
       DEGENERATES there rather than flattening, so the collapsed case is a distinct object and not a
       slow traverse of this one. One unmodelled mechanism follows: the accumulation equation asks how
       fast substrate accumulates inside an entity that exists, and does not model capital invested
       where no separable substrate exists for it to become.
     observable: >-
-      Whether the Tier-4 product specification survives removal of the Tier-1 principal — readable
+      Whether the Tier-4 product specification survives removal of the controlling principal — readable
       from whether the offer can be delivered by anyone else.
     excludes: >-
       Tier-collapsed personal-brand substrates, where rotation is constrained by fusion rather than by
@@ -169,9 +173,9 @@ boundary_conditions:
   - id: C10
     statement: >-
       READINESS has a second measure that the model does not carry. s counts signal in a substrate the
-      acquirer can own, and a Tier-4 record written in the founder's own terms is owned by the acquirer
+      acquirer can own, and a record mapped to a Tier 4 field and written in the founder's own terms is owned by the acquirer
       and counted in s, but it is read correctly only with the founder's Owner Ontology — the
-      stakeholder ontology of the tier-1 stakeholder. The share d of Tier-4 records that are written
+      stakeholder ontology of the controlling position. The share d of records mapped to a Tier 4 field that are written
       but depend on that ontology for their meaning is therefore a measure distinct from 1 - s, which
       is signal not yet written into any separable substrate: 1 - s asks whether the signal is
       written, d asks whether what is written is readable. The two can separate, so a brand with high
@@ -199,18 +203,23 @@ propositions:
   # --- Core constructs ---
   - id: P1
     statement: >-
-      Brand assets are Tier-4 projections of Tier-1 owner intent. The value a
-      buyer can acquire is precisely and only the brand signal projected from
-      Tier-1 into a Tier-4 specification layer (documented guidelines, trained
-      team decision rights, algorithmic brand rules, formal trademark
-      portfolios) that persists independent of any individual. The core
-      construct is s, the fraction of brand signal residing at Tier 4 rather
-      than Tier 1 at deal time.
+      Brand assets are Tier-4 specifications constrained by the controlling intent.
+      The value a buyer can acquire is precisely and only the part of the brand
+      specification written at Tier 4 (documented guidelines, trained team
+      decision rights over the specification, rules for the brand's use on
+      channels, the specification of the marks) that persists independent of any
+      individual; the rest is held tacitly by the founder. The registered marks
+      themselves are Tier 3 rights. Tier 4 holds the brand's specification,
+      including the specification of what the product emits (the sign, its form
+      and the rules for its use); the right to use the sign is a Tier 3 asset,
+      and the perception the emissions produce is held by observers and lies
+      outside the six tiers. The core construct is s, the written share of
+      the Tier-4 brand specification at deal time.
     conditions: "C1"
     antecedents: []
     evidence:
       - type: corpus
-        anchor: "Six-tier ontology of organizational transferability (Tier 1 = owner intent, Tier 4 = product specification)."
+        anchor: "Six-tier ontology of organizational transferability (Tier 1 = Intent, Tier 4 = product specification)."
         citation_keys: ["2026ag", "2026ah"]
       - type: external
         anchor: "Brand-architecture separability produces measurable firm-level risk/return differences."
@@ -222,8 +231,8 @@ propositions:
       The perception cloud (the aggregate of observer spectral profiles across
       cohorts) forms at the Tier-4 specification level; when the product layer
       is insufficiently differentiated from the founder's personal projection,
-      the perception cloud is implicitly Tier-1-dependent and re-collapses
-      toward Tier-1 quality if the founder is removed. Structural (substantive)
+      the perception cloud is implicitly dependent on the part of the specification
+      the founder holds tacitly and re-collapses if the founder is removed. Structural (substantive)
       rotation versus apparent (symbolic) rotation is diagnosed by whether the
       four P-OBS observables shift in COORDINATED versus partial fashion.
     conditions: "C1"
@@ -270,8 +279,8 @@ propositions:
   # --- The generative mechanism ---
   - id: P3
     statement: >-
-      The generative mechanism converting Tier-1 brand signal into Tier-4 brand
-      signal is knowledge externalization — the Externalization phase of the
+      The generative mechanism converting the founder's tacit brand signal into
+      written Tier-4 brand signal is knowledge externalization — the Externalization phase of the
       SECI cycle — by which tacit founder brand decision rules become explicit
       organizational artifacts (brand guidelines, creative briefs, decision
       frameworks, team review protocols, algorithmic substitutes), carried by
@@ -290,7 +299,7 @@ propositions:
     statement: >-
       Tier-4 share accumulates by the smallest-sufficient logistic dynamic
       ds/dt = α·e·(1 − s)·(s + φ)·g(σ): rotation effort converts remaining
-      Tier-1 signal (the 1 − s growth-room term) amplified by the current Tier-4
+      tacit signal (the 1 − s growth-room term) amplified by the current written Tier-4
       base plus cold-start offset (s + φ) and moderated by a monotone increasing
       g(σ). The form is chosen to capture bounded accumulation, non-linear
       (S-curve) dynamics, and the no-absorbing-zero cold-start property; results
@@ -501,7 +510,8 @@ propositions:
     statement: >-
       The Tier-Rotation Curve supplies the projection geometry that the
       two-bodied-brand construct lacks: it formalizes how the body politic
-      (Tier-4) is constructed from the body natural (Tier-1), its transition
+      (the written Tier-4 specification) is constructed from the body natural (the
+      founder's tacit specification), its transition
       path, feasibility, duration, and the path of acquirer willingness-to-pay.
       All four two-bodied-brand risk vectors (mortality, hubris,
       unpredictability, social embeddedness) are suppressed as s increases.
@@ -517,9 +527,15 @@ propositions:
     statement: >-
       M&A exit, succession, and tier-allocation are three geometrically distinct
       decision margins over the same six-tier substrate (Table 5). The present
-      model addresses M&A exit (Tier-1 removed); succession (Tier-1 replaced,
-      Tier-5 transfer bottleneck) and tier-allocation (spatial portfolio of new
-      investment across tiers) are distinct events deferred to future work. The
+      model addresses M&A exit (the controlling intent is replaced by the acquirer's and the
+      founder's tacit brand knowledge leaves); succession (the holder of the controlling
+      position is replaced, Tier-5 transfer bottleneck) and tier-allocation (spatial portfolio of new
+      investment across tiers) are distinct events deferred to future work. In
+      the tier-allocation margin, marketing spend is flow on Tier 2 channels;
+      spend is stock when it writes a specification on Tiers 2 through 5, is
+      partly stock on Tier 6 (abilities that leave with people), and is flow when
+      it only runs functioning; a brand redesign that rewrites the brand
+      specification is Tier 4 stock. The
       cross-sectional succession-discount findings (≈4pp ROA / ≈14% operating-
       return decline) are benchmarks against which tier rotation offers
       longitudinal refinement, not the signature of M&A substrate failure.
@@ -530,7 +546,7 @@ propositions:
         anchor: "Succession-discount findings; mergers cultural integration; family-ownership effects."
         citation_keys: ["bennedsen-2007-inside-family-firm", "perezgonzalez-2006-inherited-control", "stahl-2008-do-cultural-differences", "anderson-2003-founding-family-ownership", "villalonga-2006-how-do-family"]
       - type: external
-        anchor: "EMPIRICAL RESULT (theirs): firms trade off value creation against value appropriation and the market rewards managing it dynamically; a brand-capital stock measure constructed independently of current marketing spend explains incremental variance in valuation multiples. INTERPRETATION (this paper's, not attributed to them): a stock that prices independently of the flow that built it is what a substrate looks like from outside, so the result is CONSISTENT WITH — and does not test — Tier-4 value persisting independently of Tier-6 spend."
+        anchor: "EMPIRICAL RESULT (theirs): firms trade off value creation against value appropriation and the market rewards managing it dynamically; a brand-capital stock measure constructed independently of current marketing spend explains incremental variance in valuation multiples. INTERPRETATION (this paper's, not attributed to them): a stock that prices independently of the flow that built it is what a substrate looks like from outside, so the result is CONSISTENT WITH — and does not test — Tier-4 value persisting independently of the marketing flow on Tier 2 channels that built it."
         citation_keys: ["mizik-2003-trading-off-between", "mizik-2009-valuing-branded-businesses"]
     body_sections: ["Discussion — Succession as a Distinct Geometric Event", "Discussion — Tier-Allocation of Capital", "Table 5"]
 
@@ -543,9 +559,10 @@ corpus_precedents:
     spine_nodes: [P1, P4, P6, C10]
     note: >-
       Builds directly on the six-tier ontology of organizational transferability
-      (Tier 1 = owner intent … Tier 4 = product specification). Tier-rotation is
-      the temporal-dynamics theory of how brand signal migrates Tier-1 → Tier-4
-      that the static ontology presupposes. Also supplies the terms for the
+      (Tier 1 = Intent … Tier 4 = product specification). Tier-rotation is
+      the temporal-dynamics theory of how the brand specification moves from a tacit,
+      founder-held form to a written form within Tier 4, which the static ontology
+      presupposes. Also supplies the terms for the
       second readiness measure d (C10): the Owner Ontology, its shareable part,
       and ontology-dependent records.
   - paper_key: 2026ah
@@ -553,7 +570,7 @@ corpus_precedents:
     spine_nodes: [P1, P2]
     note: >-
       Applies and extends the brand-as-modular-layer result (brand identity binds
-      at Tier 4; acquirable value = the Tier-4-projected signal) by adding the
+      at Tier 4; acquirable value = the written Tier-4 specification) by adding the
       logistic accumulation dynamic, the separability kink, and the M&A value
       function.
   - paper_key: 2026a

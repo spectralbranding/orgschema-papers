@@ -13,7 +13,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19930157
-  date: '2026-06-26'
+  date: '2026-11-11'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -33,8 +33,8 @@ meta:
     rather than Business Model diversification (P1). Recovery success after brand failure scales with
     preserved brand-agnostic substrate (P2), providing a mechanism for the equity-transfer-without-creation
     regularity of Marques et al. [-@marques-2020-role-brand-equity]. Marketing, advertising, and branding
-    are Tier-6 functions that create, operate, and retire Tier-4 instances; centralization choices are
-    therefore separability choices (P4). The Aaker–Joachimsthaler Brand Relationship Spectrum is operationalized
+    create, operate, and retire Tier-4 instances via Tier-5 and Tier-6 work; centralization choices are
+    separability choices (P4). The Aaker–Joachimsthaler Brand Relationship Spectrum is operationalized
     as a continuous Tier-3-visibility-in-Tier-4 parameter V (P7), and axis-specific brand-extension predictions
     follow on the Cultural and Ideological dimensions (P5). Two diagnostic instruments — a Multi-Brand
     Capacity Diagnostic and a Recovery Salvage Matrix — translate the framework for practice. Seven falsifiable
@@ -48,9 +48,12 @@ claims:
     (a choice of positions on the SBT Semiotic, Narrative, Ideological, Experiential, Social, Economic,
     Cultural, and Temporal axes, or any equivalent complete observer-projection-compatible basis). Brand
     is NOT the perception (which lives downstream in the perception cloud after projection through the
-    observer perceptual filter), NOT the legal trademark (a Tier-3 entity artifact), and NOT the marketing
-    communications (a Tier-6 function operating on Tier 4). This is the single structural claim from which
-    all seven propositions follow.'
+    observer perceptual filter), NOT the legal trademark (the right to use the sign: a Tier-3 asset of
+    the entity), and NOT the marketing communications (flow on Tier-2 channels, produced by Tier-5 activity
+    and Tier-6 people, operating on Tier 4). Tier 4 holds the product''s specification, which includes
+    the specification of what the product emits: the sign, its form and the rules for its use. The perception
+    the emissions produce is held by observers and lies outside the six tiers. This is the single structural
+    claim from which all seven propositions follow.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -60,7 +63,10 @@ claims:
     mix determines how separable that tier is across multiple Tier-4 brand instances. Tier 4 alone has
     zero separability by construction (it IS the brand instance); the other five tiers admit both shared
     (brand-agnostic) and brand-specific (brand-bound) subcomponents. Multi-brand capacity is therefore
-    a property of how separable the other five tiers are.
+    a property of how separable the other five tiers are. Tier 1 (Intent) is low-separability because
+    the controlling intent is a single object that cannot be partitioned across brands; a spokesperson
+    role or a brand face is part of the brand's specification (Tier 4, held by a person at Tier 6), not
+    a Tier-1 parameter.
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -74,6 +80,19 @@ claims:
     cohort spectral profile controls the perception cloud (the output); diagnostics that conflate the
     two diagnose the wrong tier. This is consistent with — and bounded by — the specification-impossibility
     result.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P0
+- id: P0d
+  type: proposition
+  statement: 'Tier-rotation valuation dynamics (forward direction). A brand''s signal strength during
+    active ownership converts into M&A exit value only to the extent the Tier-4 specification has been
+    projected from its tacit, founder-held part into its written part, which a buyer can acquire independently
+    of any individual. Four stages are distinguished by the tacit, founder-held share of the specification
+    (the complement of the written share): approaching 100 percent (pure personal), 60 to 80 percent (partial
+    projection), 20 to 40 percent (substantial projection), and below 20 percent (institutional).'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -99,9 +118,10 @@ claims:
     instance on the salvaged substrate reaches the predecessor''s revenue band within ~36 months — scales
     with the proportion of brand-agnostic infrastructure (Tier 1/2/3/5/6 components untouched by the failure)
     preserved through the failure. Mechanism: equity transfers along persisting substrate (Marques et
-    al. 2020), but net-new equity creation requires changes at Tier 1 or Tier 2. (Confirming: 36-month
-    recovery rate correlates r > .35 with a preserved-substrate-proportion score. Falsifying: recovery
-    rate independent of preserved substrate, or primarily explained by post-failure marketing investment.)'
+    al. 2020), but net-new equity creation requires changes at Tier 1 or Tier 2. At a sale the controlling
+    intent is replaced by the buyer''s; the other positions'' intents persist. (Confirming: 36-month recovery
+    rate correlates r > .35 with a preserved-substrate-proportion score. Falsifying: recovery rate independent
+    of preserved substrate, or primarily explained by post-failure marketing investment.)'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -113,8 +133,9 @@ claims:
   statement: 'Architecture Risk-Return. Branded-house architectures expose all Tier-4 instances to Tier-1/Tier-2
     shocks; house-of-brands architectures isolate Tier-4 instances from them. The risk-return profiles
     documented by Rao, Agarwal & Dahlhoff (2004) and Hsu, Fournier & Srinivasan (2016) are derivable from
-    the Tier-3-visibility parameter V (high V = high propagation; low V = isolation). (Falsifying: V is
-    uncorrelated with risk concentration at Tier 1/Tier 2.)'
+    the Tier-3-visibility parameter V (high V = high propagation; low V = isolation). Tier-1 shocks are
+    changes of the controlling intent. (Falsifying: V is uncorrelated with risk concentration at Tier
+    1/Tier 2.)'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -125,12 +146,12 @@ claims:
 - id: P4
   type: proposition
   statement: 'Cross-Brand Marketing Effectiveness. Cross-brand marketing-function effectiveness is a function
-    of Tier-6 governance separation: shared services for brand-agnostic functions (media buying, analytics,
-    marketing-mix modeling, platform tooling) and per-brand teams for brand-bound functions (creative,
-    brand management, customer-service tone). Centralization-versus-decentralization is therefore a tier-level
-    separability choice. (Confirming: aligned organizations outperform misaligned ones by Cohen''s d >=
-    .30 on a validated marketing-effectiveness composite, controlling for size and sector. Falsifying:
-    no effect of partition alignment on effectiveness.)'
+    of the separation of marketing teams (Tier 6) and the activities they run (Tier 5): shared services
+    for brand-agnostic functions (media buying, analytics, marketing-mix modeling, platform tooling) and
+    per-brand teams for brand-bound functions (creative, brand management, customer-service tone). Centralization-versus-decentralization
+    is therefore a tier-level separability choice. (Confirming: aligned organizations outperform misaligned
+    ones by Cohen''s d >= .30 on a validated marketing-effectiveness composite, controlling for size and
+    sector. Falsifying: no effect of partition alignment on effectiveness.)'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -153,12 +174,13 @@ claims:
   - P0
 - id: P6
   type: proposition
-  statement: 'Recovery Tier-1 Constraint. Brand recovery is more constrained by Tier-1 (Owner Intent)
-    compatibility with the new Tier-4 configuration than by Tier-5/Tier-6 capacity availability. Owners
-    whose Tier-1 commitments are bound to the failed brand-face fail recovery even when substrate is fully
-    preserved, because Tier 1 sits atop the constraint hierarchy and bounds admissible Tier-4 specifications.
-    (Confirming: Tier-1 misalignment predicts failure independent of preserved Tier-5/6 substrate. Falsifying:
-    Tier-1 alignment uncorrelated with outcome once Tier-5/6 is controlled.)'
+  statement: 'Recovery Tier-1 Constraint. Brand recovery is more constrained by the compatibility of the
+    controlling intent (Owner Intent) with the new Tier-4 configuration than by Tier-5/Tier-6 capacity
+    availability. Owners whose Tier-1 commitments are bound to the failed brand''s purpose fail recovery
+    even when substrate is fully preserved, because Tier 1 sits atop the constraint hierarchy and bounds
+    admissible Tier-4 specifications. (Confirming: Tier-1 misalignment predicts failure independent of
+    preserved Tier-5/6 substrate. Falsifying: Tier-1 alignment uncorrelated with outcome once Tier-5/6
+    is controlled.)'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -189,7 +211,8 @@ dependencies:
   claim: The six-tier ontology of acquisition-target transferability is the direct structural foundation;
     this paper extends that same Tier-1..Tier-6 ontology from acquisition transferability to brand and
     the three downstream phenomena. The MBCD extends 2026ag's Six-Tier Separability Diagnostic; the ontological-mixing
-    pre-emption (A1) tracks 2026ag's.
+    pre-emption (A1) tracks 2026ag's, and the split of the trademark between Tier 3 (the right to use
+    the sign) and Tier 4 (the sign as specified) follows the same ontology.
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: applies
@@ -241,7 +264,8 @@ dependencies:
   claim: CMO-role misalignment — reframed as Tier-6/Tier-4 scope mismatch.
   reference: whitler-rego-morgan-2025-cmo-role-design
 - relationship: extends
-  claim: Marketing-organization taxonomy — Marcom Leaders as Tier-6 signature.
+  claim: Marketing-organization taxonomy — Marcom Leaders as the signature of a marketing function (Tier-5
+    activity carried by Tier-6 people).
   reference: mcalister-2023-marketing-organizations
 - relationship: extends
   claim: Accountability gap — predicted as tier-scope mismatch.
@@ -260,7 +284,8 @@ dependencies:
   claim: Modularity / design-rule partition for the brand-agnostic vs brand-bound split.
   reference: baldwin-clark-2000-design-rules
 - relationship: extends
-  claim: Tier-6 functions as sensing/seizing; multi-brand capacity as reconfiguring capability.
+  claim: Marketing functions (Tier-5 activity carried by Tier-6 people) as sensing/seizing; multi-brand
+    capacity as reconfiguring capability.
   reference: teece-pisano-shuen-1997-dynamic-capabilities
 - relationship: extends
   claim: Ecosystem architecture for platform multi-brand stacks.

@@ -39,8 +39,8 @@ Dollar-weighted (observable) investment share:
     dollar_share_t*(r) = w_t*(r) / Sum_s w_s*(r)
                        = (alpha_t / (delta_t + r)) / Sum_s (alpha_s / (delta_s + r))
 
-For Tier 6 (highest delta_t = .50), dollar_share_6* RISES as r rises because
-delta_6 dominates the Tier-6 denominator while r dominates the low-delta stock
+For item 6 (marketing flow on Tier 2 channels; highest delta_t = .50), dollar_share_6* RISES as r rises because
+delta_6 dominates the item-6 denominator while r dominates the low-delta stock
 tiers, compressing their weights faster. Sign condition: d(dollar_share_6)/dr > 0
 iff delta_6 > delta_S (holds since delta_6 = .50 > delta_S = .119).
 
@@ -152,7 +152,7 @@ class Profile:
 
 PROFILE_A = Profile(
     name="Profile A",
-    description="Tier-6-heavy D2C (stylized; e.g., Casper Sleep)",
+    description="Marketing-flow-heavy D2C (stylized; e.g., Casper Sleep)",
     w={6: 0.70, 4: 0.10, 5: 0.10, 2: 0.05, 3: 0.05},
 )
 
@@ -237,8 +237,8 @@ def optimal_dollar_share(r: float) -> dict[int, float]:
     share is w_t* renormalized to sum to 1:
         dollar_share_t*(r) = w_t*(r) / Sum_s w_s*(r)
 
-    For Tier 6 (highest delta_t = .50), dollar_share_6* rises as r rises
-    because delta_6 dominates the Tier-6 denominator while r dominates the
+    For item 6 (marketing flow on Tier 2 channels; highest delta_t = .50), dollar_share_6* rises as r rises
+    because delta_6 dominates the item-6 denominator while r dominates the
     low-delta stock tiers, compressing their weights faster. Sign condition:
     d(dollar_share_6)/dr > 0 iff delta_6 > delta_S (holds since .50 > .119).
     """
@@ -380,7 +380,7 @@ def reproduce_optimal_shares() -> None:
     print("FOC: w_t* = alpha_t / (delta_t + r); renormalized to sum to 1")
     print("=" * 72)
     print()
-    header = f"{'r':>6}  {'Tier2':>8}  {'Tier3':>8}  {'Tier4':>8}  {'Tier5':>8}  {'Tier6':>8}  {'Sum':>6}"
+    header = f"{'r':>6}  {'Tier2':>8}  {'Tier3':>8}  {'Tier4':>8}  {'Tier5':>8}  {'Item6':>8}  {'Sum':>6}"
     print(header)
     for r in [0.10, 0.15, 0.20]:
         shares = optimal_dollar_share(r)
@@ -396,7 +396,7 @@ def reproduce_optimal_shares() -> None:
         print(row)
     print()
     print(
-        "Tier-6 dollar-share rises with r: .046 (r=.10) -> .053 (r=.15) ->"
+        "Marketing-flow dollar-share rises with r: .046 (r=.10) -> .053 (r=.15) ->"
         " .058 (r=.20)"
     )
     print(
@@ -446,8 +446,8 @@ def _optimal_w6_ces(sigma: float, r: float) -> float:
     """Numerically solve for the planner-optimal dollar_share_6* under CES.
 
     Uses scipy.optimize.minimize_scalar on the 2-tier reduction:
-    Tier 6 vs. aggregate stock tier (Tiers 2-5 equal-weighted).
-    Returns the dollar-weighted (observable) share of Tier 6 at the optimum.
+    Marketing flow (item 6) vs. aggregate stock tier (Tiers 2-5 equal-weighted).
+    Returns the dollar-weighted (observable) share of marketing flow at the optimum.
 
     The full 5-tier minimization is not required for sign verification of
     d(dollar_share_6*)/dr > 0 --- the 2-tier reduction preserves the sign.
@@ -677,13 +677,23 @@ def generate_contour_plot(
         edgecolors="black",
         label=f"Planner optimum ({w4_opt:.2f}, {w6_opt:.2f})",
     )
+    # Placed DOWN-LEFT of the star, not up-right: the up-right offset put this
+    # label on top of the Profile B marker at (.33, .15) and its cyan callout,
+    # so both were unreadable in the rendered figure.
     ax.annotate(
-        f"  Planner optimum\n  ({w4_opt:.2f}, {w6_opt:.2f})",
+        f"Planner optimum\n({w4_opt:.2f}, {w6_opt:.2f})",
         xy=(w4_opt, w6_opt),
-        xytext=(w4_opt + 0.07, w6_opt + 0.06),
+        xytext=(w4_opt - 0.15, w6_opt + 0.10),
         fontsize=8,
-        color="gold",
-        arrowprops=dict(arrowstyle="->", color="gold", lw=1.2),
+        color="#6b4f00",
+        ha="center",
+        # The star sits inside the bright-yellow peak of the viridis fill, so
+        # gold text on gold ground was unreadable. Dark-gold type on a
+        # semi-opaque white plate keeps the label legible wherever the optimum
+        # lands, without restyling the other two callouts (tomato and cyan sit
+        # on dark fill and read fine as they are).
+        bbox=dict(facecolor="white", alpha=0.78, edgecolor="none", pad=1.8),
+        arrowprops=dict(arrowstyle="->", color="#6b4f00", lw=1.2),
     )
 
     # Profile A
@@ -696,15 +706,21 @@ def generate_contour_plot(
         zorder=5,
         edgecolors="black",
         linewidths=0.8,
-        label=f"Profile A  ({w4_A:.2f}, {w6_A:.2f}) -- Tier-6-heavy D2C",
+        label=f"Profile A  ({w4_A:.2f}, {w6_A:.2f}) -- marketing-flow-heavy D2C",
     )
+    # Same plate treatment as the planner callout: the bright marker colours are
+    # chosen to stand out against the viridis fill, which makes them poor TEXT
+    # colours on it -- tomato sits on dark purple in the low-V_LR corner and
+    # cyan sits on the yellow ridge. Marker faces stay bright; the type goes
+    # dark on a semi-opaque white plate so all three callouts read the same way.
     ax.annotate(
         f"Profile A ({w4_A:.2f}, {w6_A:.2f})",
         xy=(w4_A, w6_A),
         xytext=(w4_A + 0.05, w6_A - 0.07),
         fontsize=8,
-        color="tomato",
-        arrowprops=dict(arrowstyle="->", color="tomato", lw=1.2),
+        color="#8c1d0c",
+        bbox=dict(facecolor="white", alpha=0.78, edgecolor="none", pad=1.8),
+        arrowprops=dict(arrowstyle="->", color="#8c1d0c", lw=1.2),
     )
 
     # Profile B
@@ -724,8 +740,9 @@ def generate_contour_plot(
         xy=(w4_B, w6_B),
         xytext=(w4_B + 0.06, w6_B + 0.05),
         fontsize=8,
-        color="cyan",
-        arrowprops=dict(arrowstyle="->", color="cyan", lw=1.2),
+        color="#00565f",
+        bbox=dict(facecolor="white", alpha=0.78, edgecolor="none", pad=1.8),
+        arrowprops=dict(arrowstyle="->", color="#00565f", lw=1.2),
     )
 
     # Infeasible region shade (w4 + w6 > 1)
@@ -743,7 +760,7 @@ def generate_contour_plot(
     ax.set_xlim(0.0, 0.85)
     ax.set_ylim(0.0, 0.85)
     ax.set_xlabel("w_4  (Tier-4 share)", fontsize=12)
-    ax.set_ylabel("w_6  (Tier-6 share)", fontsize=12)
+    ax.set_ylabel("w_6  (marketing-flow share)", fontsize=12)
     ax.set_title(
         "Long-run value V_LR over the (w_4, w_6) plane at r = .15\n"
         "(w_2, w_3, w_5 held at planner-optimal relative shares .353, .353, .294)",

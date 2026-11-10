@@ -515,7 +515,8 @@ corpus_precedents:
     note: >-
       Six-tier transferability ontology: the OST cascade nests inside its lower
       tiers; a non-isomorphism disambiguation (L0-L5 reading direction vs T1-T6)
-      is carried explicitly.
+      is carried explicitly. The six-tier ontology's deepest stratum is intent
+      (Tier 1, read from the inside out).
   - paper_key: 2026af
     relationship: applies
     spine_nodes: [DP3, F4]

@@ -45,7 +45,7 @@ _Terms used by **2026i** (Machine-Checkable Acceptance Contracts for Organizatio
   - _defined by 2026a_
   - _not_: segment; target audience
 - **six-tier ontology**
-  - The ontology that decomposes an organization into six nested specification tiers, always in the order Owner Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale.
+  - The ontology that decomposes an organization into six nested specification tiers, always in the order Intent -> Business Model -> Business Entity -> Product -> Process -> Organization. Each tier answers a distinct governing question and transfers differently on sale. Full form: "six-tier ontology of a business". It is the analyst's common language for a business, set apart from a stakeholder ontology, which is the business's own ontology as one named position writes it. Position-symmetric (every position has the same row: its intent at Tier 1, its commitments at Tiers 2-6) but not observer-free: the analyst's position configures it. Each position's Tier 1 content is its Intent and its stakeholder ontology; the position reads the six tiers in that ontology.
   - _defined by 2026ag_
 - **Spectral Brand Theory**
   - The theory that a brand is not a property of an object but a signal completed in the observer: an 8-dimensional spectral profile that, when received by an observer cohort, collapses into a distribution of brand convictions (a perception cloud). Brand is measured, not managed.

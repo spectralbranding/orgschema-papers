@@ -12,7 +12,7 @@ meta:
     orcid: 0009-0000-6893-9231
     affiliation: Independent Researcher
   doi: 10.5281/zenodo.19869871
-  date: '2026-06-23'
+  date: '2026-11-11'
   venue: Preprint
   license: CC-BY-4.0
   keywords:
@@ -157,6 +157,25 @@ claims:
   - P1
   - P2
   - P3
+- id: P10
+  type: proposition
+  statement: '(Observer as position) An evaluative observer O is a party''s position: a standpoint from
+    which a subject and an intent are formed. The same configuration corresponds to different subjects
+    for different observers, because each observer forms its subject for its own task and reads the configuration
+    in the terms of its own stakeholder ontology; in the six-tier ontology the observer''s intent and
+    this ontology are its Tier 1 content. Two observers can therefore disagree about equivalence because
+    they formed their subjects for different tasks, not only because their evaluation functions differ.
+    This is a source of the observer-relativity in P2, not a further condition on it. Illustrations (explain,
+    do not model): one stick is a toy, a digging tool, kindling or a sold art object depending on the
+    position, so the value of an object is a relation between a position and the object; but a stick is
+    not changed by how its users see it while an organization is changed by what its parties commit to;
+    a person is a child to the parents, a pupil to the teachers and, from an outer position, a subject
+    for themself, keeping identity through changes of name, status or profession.'
+  testable: false
+  tested_in_paper: true
+  status: not_tested
+  depends_on:
+  - P2
 methodology:
   type: mixed
   design: 'Companion computation script (metamerism_set_simulation.py): a self-contained, fixed-seed (42)
@@ -219,9 +238,9 @@ dependencies:
   critical: false
   doi: 10.5281/zenodo.18945591
 - relationship: extends
-  claim: The six-tier ontology of organizational transferability is the finer decomposition (Owner Intent
-    / Business Model / Entity / Product / Process / Organization) within which the coarse three-layer
-    value-process-configuration hierarchy here is embedded.
+  claim: The six-tier ontology of organizational transferability is the finer decomposition (Intent /
+    Business Model / Entity / Product / Process / Organization) within which the coarse three-layer value-process-configuration
+    hierarchy here is embedded. Tier 1 is the intent and stakeholder ontology of each position.
   critical: false
   doi: 10.5281/zenodo.19895813
 - relationship: extends
@@ -288,6 +307,14 @@ dependencies:
   claim: Institutional decoupling reframed positively as structural flexibility for technically oriented
     observers.
   doi: 10.1086/226550
+- relationship: extends
+  claim: 'Role-specific descriptions of one artifact: each role sees the same artifact through its own
+    description.'
+  doi: 10.1147/sj.263.0276
+- relationship: extends
+  claim: One object holding different meanings across social worlds, with enough shared structure to travel
+    between them.
+  doi: 10.1177/030631289019003001
 contradictions: []
 limitations:
 - description: The framework applies most cleanly to economic organizations producing measurable outputs;

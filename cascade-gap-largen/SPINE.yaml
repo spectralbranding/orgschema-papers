@@ -359,7 +359,9 @@ propositions:
       - type: citation
         anchor: >-
           The six-tier failure-propagation ontology supplies the tier structure
-          and the collapse states the cascade gap specializes; cited as the
+          (ordered from intent through business model, legal entity, product,
+          process, and organization) and the collapse states the cascade gap
+          specializes; cited as the
           claim's provenance and motivation, with the tested hypothesis stated
           self-contained.
         citation_keys: [zharnikov-2026-dual-hierarchies-organizational-transferability-six]

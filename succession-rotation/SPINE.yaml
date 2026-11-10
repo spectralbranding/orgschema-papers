@@ -11,7 +11,7 @@ thesis: |
   An exit and a succession disturb different mechanisms of persistence in the six-tier stack, so they
   bind on different tiers. The ontology's published transfer column answers what would arrive in a
   buyer's possession and is therefore indexed to a counterparty; an event with no counterparty --
-  the occupant of Tier 1 is replaced, the entity persists, nothing is conveyed -- requires a second,
+  the holder of the controlling position is replaced, the entity persists, nothing is conveyed -- requires a second,
   derivable column. Under that column, replacement disturbs only the person-carried residual, and
   among the tiers it disturbs exactly one, Tier 5, is drawn at the firm's operating frequency rather
   than at discretion, so its loss cannot be absorbed by deferring anything. In an owner-managed firm
@@ -39,7 +39,7 @@ boundary_conditions:
       created_at: "2026-08-10"
   - id: C2
     statement: >-
-      The event is REPLACEMENT, not removal: the occupant of Tier 1 is replaced, the going concern is
+      The event is REPLACEMENT, not removal: the holder of the controlling position is replaced, the going concern is
       not conveyed to any counterparty, and the registered entity carries on operating the same
       business. A leveraged handover that transfers operating control and ownership together is a
       mixed event and is out of scope -- excluded, not controlled for. Per P9 this is one cell of a
@@ -463,7 +463,7 @@ derivations:
     body_sections: ["The Persistence Column"]
   - id: D2
     statement: >-
-      Applying P2 tier by tier to Tier-1 replacement with the entity persisting leaves only the
+      Applying P2 tier by tier to replacement of the controlling intent with the entity persisting leaves only the
       person-carried residual disturbed; applying it to removal with the entity conveyed leaves L
       disturbed and A priced. The two events therefore bind on different tiers, and the divergence
       result falls out as a corollary rather than standing as a second claim.
@@ -606,15 +606,15 @@ derivations:
     body_sections: ["The Rival Account"]
   - id: D9
     statement: >-
-      The Owner Ontology is the stakeholder ontology of the owner, who is the tier-1 stakeholder; it
-      is a different object from the six-tier ontology of a business, which is the analyst's
-      structure that the carrier classification is applied to. The Owner Ontology is a Tier-1
-      component that splits across two carriers instead of sitting under one. Its shareable part --
+      The Owner Ontology is the stakeholder ontology of the controlling position, and it is Tier-1
+      content of that position; it is a different object from the six-tier ontology of a business,
+      which is the analyst's structure that the carrier classification is applied to. The Owner
+      Ontology is a Tier-1 component that splits across two carriers instead of sitting under one. Its shareable part --
       the owner's terms as used in the records, verbatim, together with the list of
       ontology-dependent records -- is carried by an artifact once it is written down, and is
       classed under A. Its private part -- deliberate absences, causal beliefs, sources of the edge,
       values, and the owner's judgement of people -- is carried by the person, generates the firm's
-      future records, and is classed under P. Owner intent stays under P. The split applies the
+      future records, and is classed under P. The controlling intent stays under P. The split applies the
       carrier classification of P1 to one more component and adds no carrier, so AA4 is unaffected.
     from: [P1]
     to: P3
@@ -688,6 +688,41 @@ derivations:
       created_by: "author"
       created_at: "2026-11-02"
     body_sections: ["The Budget Constraint"]
+
+  - id: D14
+    statement: >-
+      Tier 1 is position-bound. Every position that deals with the business (owner, lender,
+      employees, customers) has an intent regarding it, and the controlling intent is the one the
+      business's bodies adopt by decision. At a change of control only the controlling intent is
+      replaced, not transferred; the other positions' intents persist. In an owner-operated firm the
+      controlling intent is carried by the person and is classed under P by definition. The intents
+      of the other positions are not components of the business: they are carried by those
+      positions (lender, employees, customers) and are not disturbed by a replacement. No fourth
+      carrier is needed, so the carrier classification of P1 and AA4 are unaffected. In the
+      replacement arm the controlling intent is therefore the treatment and not a constraint on it
+      (P2), and the commitments held by the other positions carry over to the successor.
+    from: [P1]
+    to: P3
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-10"
+    body_sections: ["The Persistence Column", "Which Tier Binds"]
+  - id: D15
+    statement: >-
+      At a sale the seller does not write new commitments for the buyer. The seller selects, among
+      the commitments in force (the seller's own and other parties'), those the buyer is asked to keep, and
+      they enter the sale agreement as the buyer's obligations or are amended. Commitments are a
+      routine of the business and not a deal device. Which of them the agreement conveys is decided
+      by the transfer form, share deal or asset purchase, which is the conveyance of the going
+      concern that legal continuity turns on (P9).
+    from: [P3]
+    to: P9
+    reasoning_type: "deductive"
+    provenance:
+      created_by: "author"
+      created_at: "2026-11-10"
+    body_sections: ["Which Tier Binds"]
 
 # ---------------------------------------------------------------------------
 # Propositions -- the theoretical claims. Two contributions, not three.
@@ -784,7 +819,7 @@ propositions:
       created_at: "2026-08-10"
   - id: P4
     statement: >-
-      Tier 5 is the unique tier whose person-carried residual is both destroyed by Tier-1 replacement
+      Tier 5 is the unique tier whose person-carried residual is both destroyed by replacement
       in the owner-operated population and exercised at operating frequency, so that its loss cannot be
       absorbed by deferring anything. The discriminating property is draw frequency, not tacitness.
     type: ontological
@@ -1349,7 +1384,7 @@ corpus_precedents:
     spine_nodes: [P1, P3, P5]
   - paper_key: 2026ag
     relationship: refines
-    spine_nodes: [P1, P2, P4, D9, D10, D11]
+    spine_nodes: [P1, P2, P4, D9, D10, D11, D14]
   - paper_key: 2026an
     relationship: applies
     spine_nodes: [L5]
