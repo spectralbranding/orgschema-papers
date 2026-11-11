@@ -617,7 +617,10 @@ propositions:
       formal rules (or their interpretation), caused by a changed external context; the
       paper reads a change in formal rules as a change in the commitments on the tier; the split is prior art. Pace
       layering orders layers by their own rates, whereas this account derives a tier's rate
-      from the commitments other parties hold on it.
+      from the commitments other parties hold on it. The nearest relational account of
+      speed sets the speed of adopting a mandated rule by the power balance between a firm
+      and one rule-setter; the bound here concerns one tier and every party that holds a
+      commitment on it.
     antecedents: [P25]
     body_sections: ["The Six-Tier Ontology (Table 1)", "Tier Tempo Is Relational"]
     evidence:
@@ -627,6 +630,9 @@ propositions:
       - type: citation
         anchor: "Brand 1999: layers of a civilization evolve at different rates. Beane & Leonardi 2025: the pace-layering idea applied to organizations. Cited as the neighboring account; the relation is complementary and no claim is made that it is replaced."
         citation_keys: ["brand-1999-clock-long-now", "beane-2025-pace-layering-as"]
+      - type: citation
+        anchor: "Zhang & Greve 2018: listed firms adopted a state-mandated governance reform sooner when their practice was far from the rule (exposure) and later when they had state links (cooptation); adoption speed follows the power balance between firm and rule-setter. Cited as the nearest relational account of speed; it concerns one rule-setter and the firm, not a tier or every party with a commitment on it."
+        citation_keys: ["zhang-2018-delayed-adoption-rules"]
 
   - id: P27
     statement: >-
@@ -961,6 +967,7 @@ external_anchors:
   - {citation_key: "tsebelis-2000-veto-players-institutional", role: added_required_party, spine_nodes: [P25], note: "Tsebelis 2000 — an added veto player can leave the set of feasible changes unchanged (absorption rule). The measure is the set of feasible changes, not time; supports the word possibility, not speed; no page."}
   - {citation_key: "williamson-2000-new-institutional-economics", role: renewal_interval, spine_nodes: [P25], note: "Williamson 2000, p. 599 — governance is re-examined periodically, often at contract or equipment renewal intervals. It does not support a carrier floor or a link between the term of a commitment and the interval of change; that link is this paper's reading."}
   - {citation_key: "galvin-2020-political-effects-drift", role: drift_versus_decided_change, spine_nodes: [P26], note: "Galvin & Hacker 2020, p. 217 — drift is a change in effects without a change in formal rules, due to a changed external context. The split between drift and decided change is theirs; the paper cites it and does not claim it."}
+  - {citation_key: "zhang-2018-delayed-adoption-rules", role: relational_adoption_speed, spine_nodes: [P26], note: "Zhang & Greve 2018 — the speed of adopting a state-mandated rule varies across firms with exposure to the rule and links to the state, i.e. with the power balance between firm and rule-setter. The nearest relational account of speed; it does not state a tier-level bound or a chain of re-acceptances."}
   - {citation_key: "brand-1999-clock-long-now", role: pace_layering_origin, spine_nodes: [P26], note: "Brand 1999 — layers of a civilization change at different rates. Cited as the origin of pace layering; the tempo account is complementary and derives a tier's rate from the commitments others hold on it."}
   - {citation_key: "beane-2025-pace-layering-as", role: pace_layering_organizations, spine_nodes: [P26], note: "Beane & Leonardi 2025 — pace layering applied to organizations: layers evolve at different rates. Cited as the neighboring account of rate differences between layers; it is not said to be replaced or contradicted."}
   - {citation_key: "barnard-1938-functions-executive", role: separate_economies, spine_nodes: [P28], note: "Barnard 1938 (1968 edition), pp. 254-255 — separate customer, labor, credit, supply and technological economies; exchanges cannot be measured completely in dollars; he keeps a common purpose (p. 89). Supports the exchange reading of the business model; it does not single out the customer, which is this paper's wording."}

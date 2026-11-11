@@ -494,7 +494,9 @@ claims:
     differs from drift, a change in effects without a change in formal rules (or their interpretation),
     caused by a changed external context; the paper reads a change in formal rules as a change in the
     commitments on the tier; the split is prior art. Pace layering orders layers by their own rates, whereas
-    this account derives a tier''s rate from the commitments other parties hold on it.'
+    this account derives a tier''s rate from the commitments other parties hold on it. The nearest relational
+    account of speed sets the speed of adopting a mandated rule by the power balance between a firm and
+    one rule-setter; the bound here concerns one tier and every party that holds a commitment on it.'
   testable: false
   tested_in_paper: false
   status: not_tested
@@ -740,6 +742,11 @@ dependencies:
     due to a changed external context. The split between drift and decided change is theirs; the paper
     cites it and does not claim it.
   doi: 10.1017/S0898588X2000005X
+- relationship: extends
+  claim: Zhang & Greve 2018 — the speed of adopting a state-mandated rule varies across firms with exposure
+    to the rule and links to the state, i.e. with the power balance between firm and rule-setter. The
+    nearest relational account of speed; it does not state a tier-level bound or a chain of re-acceptances.
+  doi: 10.1177/0149206316673719
 - relationship: extends
   claim: Brand 1999 — layers of a civilization change at different rates. Cited as the origin of pace
     layering; the tempo account is complementary and derives a tier's rate from the commitments others
