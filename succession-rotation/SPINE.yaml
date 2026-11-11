@@ -713,9 +713,13 @@ derivations:
       At a sale the seller does not write new commitments for the buyer. The seller selects, among
       the commitments in force (the seller's own and other parties'), those the buyer is asked to keep, and
       they enter the sale agreement as the buyer's obligations or are amended. Commitments are a
-      routine of the business and not a deal device. Which of them the agreement conveys is decided
-      by the transfer form, share deal or asset purchase, which is the conveyance of the going
-      concern that legal continuity turns on (P9).
+      routine of the business and not a deal device; many are relational, kept because the
+      relationship is worth continuing. Which of them the agreement conveys is decided by the
+      transfer form, share deal or asset purchase, which is the conveyance of the going concern
+      that legal continuity turns on (P9); union concessions follow asset purchases and not
+      takeovers. A commitment left outside the agreement is exposed to breach once control changes,
+      although the measured effect is modest on average. For family owners the selection is not
+      purely financial.
     from: [P3]
     to: P9
     reasoning_type: "deductive"
@@ -1393,6 +1397,24 @@ corpus_precedents:
 # External anchors. Every key below is REGISTERED and primary-record verified.
 # ---------------------------------------------------------------------------
 external_anchors:
+  - citation_key: baker-2002-relational-contracts-theory
+    role: theoretical_predecessor
+    spine_nodes: [D15]
+  - citation_key: lie-2019-union-concessions-following
+    role: supporting_evidence
+    spine_nodes: [D15]
+  - citation_key: shleifer-1988-breach-trust-hostile
+    role: theoretical_predecessor
+    spine_nodes: [D15]
+  - citation_key: bhagat-1990-hostile-takeovers-1980s
+    role: empirical_anchor
+    spine_nodes: [D15]
+  - citation_key: davis-2014-private-equity-jobs
+    role: empirical_anchor
+    spine_nodes: [D15]
+  - citation_key: gomezmejia-2007-socioemotional-wealth-business
+    role: theoretical_predecessor
+    spine_nodes: [D15]
   - citation_key: dehlen-2014-role-information-asymmetry
     role: rival_ruled_out
     spine_nodes: [A1]

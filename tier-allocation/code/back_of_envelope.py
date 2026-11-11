@@ -1,8 +1,8 @@
-"""Back-of-envelope arithmetic for the Tier-Allocation of Capital R-paper.
+"""Back-of-envelope arithmetic for Part I (tier allocation) of the paper.
 
 Companion script for:
-    Zharnikov, D. (2026). Tier-Allocation of Capital: A Theory of
-    Investment-Tier Choice and Long-Run Firm Value. Working Paper.
+    Zharnikov, D. (2026). Where to Invest Within the Firm: Organizational
+    Tiers, Discount Rates, and AI Penetration. Working Paper.
     https://doi.org/10.5281/zenodo.20072288
 
 Reproduces every computed numerical value in the paper:
@@ -21,7 +21,7 @@ Reproduces every computed numerical value in the paper:
 - Figure 1 Contour Plot: iso-V_LR contours over the (w_4, w_6) plane at
   r = .15, saved to figures/tier_allocation_contour.png.
 
-Maintained model specification --- Option (a) C-r3-2 resolution
+Maintained model specification
 (discounted-Cobb-Douglas with Jorgensonian user-cost-of-capital framing):
 
     V_LR(w; r) = A * I * Prod_t (m_t * w_t / (delta_t + r))^alpha_t,
@@ -210,7 +210,7 @@ def compute_v_lr_discounted(
 
     V_LR(w; r) = A * I * Prod_t (m_t * w_t / (delta_t + r))^alpha_t
 
-    This is the Option (a) C-r3-2 resolution: Equation 3 now carries explicit
+    Equation 3 carries explicit
     r-dependence through the Jorgensonian user-cost-of-capital framing.
     The per-tier productivity term m_t * w_t / (delta_t + r) folds the
     perpetuity-form valuation weight rho_t(r) = m_t * delta_t / (delta_t + r)
@@ -256,7 +256,7 @@ def reproduce_section_4_2() -> None:
     """Section 4.2 Two-Tier Minimal Illustration --- Profile A/B/C V_LR
     multipliers under the discounted-Cobb-Douglas maintained specification.
 
-    Maintained spec (Option a C-r3-2 resolution):
+    Maintained spec:
         V_LR(w; r) = A * I * Prod_t (m_t * w_t / (delta_t + r))^alpha_t
 
     Under CRS (Sigma alpha_t = 1), the B/A ratio is r-invariant at 1.93.
@@ -795,7 +795,7 @@ def main() -> None:
     print("=" * 72)
     print("Done. All values are deterministic; no RNG seeded.")
     print("Maintained specification: discounted-Cobb-Douglas with Jorgensonian")
-    print("user-cost-of-capital framing (Option a C-r3-2 resolution).")
+    print("user-cost-of-capital framing.")
     print("CES robustness check (sigma in {.5, 1.0, 1.5}) in Appendix A4.")
     print("Figure 1 contour plot saved to figures/tier_allocation_contour.png.")
     print("=" * 72)
