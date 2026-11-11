@@ -436,6 +436,128 @@ claims:
   depends_on:
   - P2
   - P18
+- id: P23
+  type: proposition
+  statement: 'The people a business organizes can come to hold goals as a collective. That collective
+    is a position: its intent is Tier 1 content of that position, and it is carried in the Tier 6 culture.
+    This leaves the statement that the business has no intent of its own unchanged, and adds no construct.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P4
+  - P17
+- id: P24
+  type: proposition
+  statement: 'The six tiers record what is committed. The reconciliation of the positions'' intents into
+    accepted commitments (offer, acceptance, rejection, revision) is a process outside the tiers, and
+    it leaves its trace as operations on commitments. It is not a tier: Table 1 defines a tier by a specification
+    surface and a transferability mode, and the process has neither of its own; the records it leaves
+    sit on the tiers. Several parties can steer one organization at the same time.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P2
+  - P17
+  - P19
+- id: P25
+  type: proposition
+  statement: 'Tier tempo is how often a tier completes a decided change, stated against a named reference
+    clock (the calendar, the environment''s cycle, another tier, or a party''s cycle). A commitment is
+    an offer by one party accepted by others, with an author, a corridor (a yes/no condition, a minimum,
+    a maximum, a range, or a per-norm condition) and a term. The carrier floor is the shortest cycle the
+    tier''s carrier allows: people learn and agree at human speed, law sets procedural minimums, a written
+    artifact changes at machine speed. The claim is a lower bound set by the longest chain, not the product
+    of the number of re-acceptances and the time each takes: a decided change on a tier cannot finish
+    before the longest chain of re-acceptances required from the parties that hold commitments on that
+    tier, and not faster than the carrier floor allows. Approvals can run in parallel, so total time is
+    bounded below by the longest chain of re-acceptances, not by the sum of all approvals. An added party
+    whose agreement is needed does not always reduce the possibility of change. Governance arrangements
+    are often re-examined at the renewal intervals of the contracts that carry them. The carrier floor
+    is this paper''s assumption; it was not found in print.'
+  testable: true
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P6
+  - P19
+  - P24
+- id: P26
+  type: proposition
+  statement: 'The Governor column of Table 1 names what constrains a tier; the parties whose commitments
+    sit on the tier set its tempo. The two overlap but differ: management governs Tier 5, while customer
+    qualification of a supplier sets its tempo in supplier industries. Commitments that must be re-accepted
+    include bank covenants (Tiers 2 and 3), license conditions (Tier 3), and customer qualification of
+    a supplier (Tiers 4 and 5). The "Tempo Set By" column of Table 1 carries only these examples and gives
+    no example for Tiers 1 and 6, which does not mean that no party sets their tempo. A decided change
+    differs from drift, a change in effects without a change in formal rules (or their interpretation),
+    caused by a changed external context; the paper reads a change in formal rules as a change in the
+    commitments on the tier; the split is prior art. Pace layering orders layers by their own rates, whereas
+    this account derives a tier''s rate from the commitments other parties hold on it.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P25
+- id: P27
+  type: proposition
+  statement: 'A testable implication of the tempo bound, stated as untested: an outside event that changes
+    the commitments on a tier with a low carrier floor and short re-acceptance chains shows on that tier
+    at once; a tier with long chains responds within the same year only if the event acts on its commitments
+    directly.'
+  testable: true
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P25
+  - P26
+- id: P28
+  type: proposition
+  statement: The business model is the exchange through which each position contributes to the business
+    and is paid in its own valuation; the customer is distinguished as the position whose acceptance releases
+    the inflow that pays the others. The customer clause is this paper's wording.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P17
+- id: P29
+  type: proposition
+  statement: Law makes commitments whose content sits on other tiers hold against third parties; this
+    is the guarantee role of Tier 3, beside the recording-document role stated in the assignment rule.
+    The statement is not generalized to every commitment of a business.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P18
+  - P19
+- id: P30
+  type: proposition
+  statement: 'The positions'' intents do not weigh equally on the business. The weight of a commitment
+    on a tier is defined here as the loss the business bears if its author uses the backing over it. The
+    kinds of backing are control, contract, law, exit and voice. Rights are tier-specific: control and
+    law-backed rights sit on Tier 3. A party that gains leverage on one tier can use it to obtain a right
+    on another by bargaining: a key employee, whose leverage sits on Tier 6, obtains equity, a Tier 3
+    right. Law can force a commitment whatever the position''s added value.'
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P18
+  - P19
+- id: P31
+  type: proposition
+  statement: A customer's requirement on the product is a Tier 4 commitment. What the customer wants from
+    the business itself, such as supply for a stated number of years, is Tier 1 content of the customer
+    position.
+  testable: false
+  tested_in_paper: false
+  status: not_tested
+  depends_on:
+  - P17
+  - P19
 methodology:
   type: theoretical
   design: Theoretical derivation.
@@ -486,6 +608,19 @@ acceptance:
   falsification: No systematic instances of threshold-crossing lower-tier failures precipitating Model/Intent
     revision under controlled exogenous shocks; or Model/Intent revisions as frequent below threshold
     as above.
+- claim_id: P25
+  criterion: Holds if tier tempo is how often a tier completes a decided change, stated against a named
+    reference clock (the calendar, the environment's cycle, another tier, or a party's cycle).
+  falsification: A decided change on a tier completes before the longest chain of required re-acceptances
+    by the parties holding commitments on it, or faster than its carrier allows.
+- claim_id: P27
+  criterion: 'Holds if A testable implication of the tempo bound, stated as untested: an outside event
+    that changes the commitments on a tier with a low carrier floor and short re-acceptance chains shows
+    on that tier at once; a tier with long chains responds within the same year only if the event acts
+    on its commitments directly.'
+  falsification: A tier with long re-acceptance chains and a high carrier floor responds within the same
+    year to an outside event that does not act on its commitments, or a tier with a low carrier floor
+    and short chains does not show an event that changes its commitments.
 dependencies:
 - relationship: applies
   claim: SBT's eight-dimension framework is cited as one example of a precision specification instrument
@@ -579,6 +714,80 @@ dependencies:
   claim: Acemoglu & Restrepo 2018 — automation as the replacement of labor in tasks; the frame for moving
     execution from people to an agent.
   doi: 10.1257/aer.20160696
+- relationship: extends
+  claim: Bernheim & Whinston 1986, pp. 923-924 — several principals simultaneously and independently attempt
+    to influence a common agent. Cited for several parties steering one organization at the same time;
+    it supports no equilibrium or efficiency result.
+  doi: 10.2307/1912844
+- relationship: extends
+  claim: Djankov et al. 2002, Data section — time is measured over a set of required procedures taken
+    as simultaneous whenever possible. Cited for the method by which total time is bounded below by the
+    longest chain and not by the sum, for procedures required to start a firm; no page; it says nothing
+    about change of a running business.
+  doi: 10.1162/003355302753399436
+- relationship: extends
+  claim: Tsebelis 2000 — an added veto player can leave the set of feasible changes unchanged (absorption
+    rule). The measure is the set of feasible changes, not time; supports the word possibility, not speed;
+    no page.
+  doi: 10.1111/0952-1895.00141
+- relationship: extends
+  claim: Williamson 2000, p. 599 — governance is re-examined periodically, often at contract or equipment
+    renewal intervals. It does not support a carrier floor or a link between the term of a commitment
+    and the interval of change; that link is this paper's reading.
+  doi: 10.1257/jel.38.3.595
+- relationship: extends
+  claim: Galvin & Hacker 2020, p. 217 — drift is a change in effects without a change in formal rules,
+    due to a changed external context. The split between drift and decided change is theirs; the paper
+    cites it and does not claim it.
+  doi: 10.1017/S0898588X2000005X
+- relationship: extends
+  claim: Brand 1999 — layers of a civilization change at different rates. Cited as the origin of pace
+    layering; the tempo account is complementary and derives a tier's rate from the commitments others
+    hold on it.
+  reference: brand-1999-clock-long-now
+- relationship: extends
+  claim: 'Beane & Leonardi 2025 — pace layering applied to organizations: layers evolve at different rates.
+    Cited as the neighboring account of rate differences between layers; it is not said to be replaced
+    or contradicted.'
+  doi: 10.1111/joms.12867
+- relationship: extends
+  claim: Barnard 1938 (1968 edition), pp. 254-255 — separate customer, labor, credit, supply and technological
+    economies; exchanges cannot be measured completely in dollars; he keeps a common purpose (p. 89).
+    Supports the exchange reading of the business model; it does not single out the customer, which is
+    this paper's wording.
+  reference: barnard-1938-functions-executive
+- relationship: extends
+  claim: Adner 2017, p. 42 — actors with different end goals and their alignment; p. 51 — a business model
+    is the focal firm's plan, a different level from the ecosystem. Supports nothing about the customer
+    position.
+  doi: 10.1177/0149206316678451
+- relationship: extends
+  claim: Pistor 2019, pp. 2, 14-15 — capital is an asset plus the legal code; legal coding makes claims
+    hold against anybody; a two-party agreement cannot bind others. Stated by Pistor for capital assets;
+    not generalized to every commitment of a business.
+  doi: 10.1515/9780691189437
+- relationship: extends
+  claim: Hansmann & Kraakman 2000, pp. 392-393 — a firm must bond its contracts credibly with a pool of
+    bonding assets over which its creditors have a prior claim. Supports the guarantee role of the legal
+    entity for contracts with creditors.
+  doi: 10.2307/797521
+- relationship: extends
+  claim: Emerson 1962, pp. 32-33 — power resides in the other's dependency; the power of A over B equals
+    the dependence of B upon A. Supports power as dependence; not a ranking of whose demands prevail.
+  doi: 10.2307/2089716
+- relationship: extends
+  claim: Mitchell, Agle & Wood 1997 — salience of a stakeholder from power, legitimacy and urgency. No
+    page; supports the salience attributes only.
+  doi: 10.5465/amr.1997.9711022105
+- relationship: extends
+  claim: Hirschman 1970, pp. 4, 30 — customers and members respond to decline by exit or voice; definition
+    of voice. Supports exit and voice as the backing available to customers and members; not loyalty.
+  reference: hirschman-1970-exit-voice-loyalty
+- relationship: extends
+  claim: Klein et al. 2012, pp. 306, 309 — residual decision rights held by each party affect what it
+    can claim; control goes to the parties whose specific investments matter most. Supports rights as
+    party-specific; not control assigned by layer or activity type.
+  doi: 10.1177/1476127012453108
 contradictions: []
 limitations:
 - description: 'The cascade claim is theoretical: P1F-P5F and P7F have no end-to-end empirical support;
@@ -622,6 +831,11 @@ limitations:
     position while the founder keeps equity and exits with the founder. The founder departure in Table
     3 is a different case, the end of Tier 6 knowledge transfer after an acquisition. The extension to
     dispersed-ownership structures is not worked through here.'
+  severity: moderate
+  addressable: true
+- description: The tempo bound is stated, not tested. The carrier floor is an assumption of this paper
+    and was not found in print. A test needs a named reference clock for each tier, because a tempo has
+    no value without one.
   severity: moderate
   addressable: true
 repositories:
