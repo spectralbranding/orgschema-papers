@@ -140,11 +140,11 @@ Creator of Organizational Schema Theory and Spectral Brand Theory. Background in
 
 ## License
 
-All papers are released under [MIT License](LICENSE). Use, cite, and build upon this work freely with attribution.
+Paper text, data, figures and tables are released under [CC BY 4.0](LICENSE-data); code is released under the [MIT License](LICENSE). Use, cite, and build upon this work freely with attribution (section 7).
 
 ## Trademarks
 
-"Organizational Schema Theory" and "orgschema" are trademarks of Dmitry Zharnikov. The MIT license applies to the source code and text only and does not grant permission to use the project trademarks.
+"Organizational Schema Theory" and "orgschema" are trademarks of Dmitry Zharnikov. The MIT and CC BY 4.0 licences apply to the code and the texts only and do not grant permission to use the project trademarks.
 
 ---
 
@@ -174,8 +174,8 @@ The project anchor at the hub root is `pyproject.toml` (`name = "orgschema-paper
 orgschema-papers/
 |-- README.md                          <- this file (hub index)
 |-- CITATION.cff                       <- machine-readable hub citation
-|-- LICENSE                            <- MIT (code, text)
-|-- LICENSE-data                       <- CC BY 4.0 (figures, tables, data)
+|-- LICENSE                            <- MIT (code)
+|-- LICENSE-data                       <- CC BY 4.0 (paper text, figures, tables, data)
 |-- pyproject.toml                     <- hub project anchor
 |-- reproduce.sh                       <- hub orchestrator (iterates paper subdirs)
 |-- .gitignore
